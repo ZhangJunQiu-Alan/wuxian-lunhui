@@ -28,13 +28,18 @@ func _process(delta: float) -> void:
 	_timer -= delta
 	if _timer > 0.0:
 		return
-	_timer = cooldown * player.cooldown_mult
-	_slash()
-
-
-func _slash() -> void:
 	var enemies := get_tree().get_nodes_in_group("enemies")
-	var aim := _aim_direction(enemies)
+	var target := _nearest_in_reach(enemies)
+	if target == null:
+		return  # 攻击范围内没有敌人就不出刀，冷却保持就绪，敌人一进入范围立刻出刀
+	_timer = cooldown * player.cooldown_mult
+	_slash(enemies, target)
+
+
+func _slash(enemies: Array[Node], target: Enemy) -> void:
+	var aim := global_position.direction_to(target.global_position)
+	if aim == Vector2.ZERO:
+		aim = player.facing
 	# 宫本武藏的被动「二天一流」：每第 4 刀变为双刀斩，前后同时斩击，伤害翻倍
 	_slash_count += 1
 	_niten = _slash_count % 4 == 0
@@ -55,17 +60,17 @@ func _slash() -> void:
 				break
 
 
-## 自动瞄准：攻击范围附近有敌人就砍最近的那个，否则朝移动方向砍
-func _aim_direction(enemies: Array[Node]) -> Vector2:
-	var best := (reach * 1.5) ** 2
-	var aim := player.facing
+## 找攻击范围内最近的敌人，没有就返回 null
+func _nearest_in_reach(enemies: Array[Node]) -> Enemy:
+	var nearest: Enemy = null
+	var best := INF
 	for node in enemies:
-		var offset := (node as Node2D).global_position - global_position
-		var d := offset.length_squared()
-		if d < best and d > 0.0:
+		var enemy := node as Enemy
+		var d := enemy.global_position.distance_to(global_position) - enemy.radius
+		if d <= reach and d < best:
 			best = d
-			aim = offset.normalized()
-	return aim
+			nearest = enemy
+	return nearest
 
 
 func _draw() -> void:

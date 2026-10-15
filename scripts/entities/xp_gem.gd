@@ -5,6 +5,7 @@ extends Node2D
 const FLY_SPEED := 450.0
 
 var value := 1
+var big := false  # 精英怪掉落的大宝石
 var player: Player
 var _attracted := false
 
@@ -23,5 +24,8 @@ func _process(delta: float) -> void:
 
 
 func _draw() -> void:
+	var s := 2.0 if big else 1.0
 	var pts := PackedVector2Array([Vector2(0, -6), Vector2(4, 0), Vector2(0, 6), Vector2(-4, 0)])
-	draw_colored_polygon(pts, Color(0.4, 0.85, 1.0))
+	for i in pts.size():
+		pts[i] *= s
+	draw_colored_polygon(pts, Color(1.0, 0.8, 0.3) if big else Color(0.4, 0.85, 1.0))

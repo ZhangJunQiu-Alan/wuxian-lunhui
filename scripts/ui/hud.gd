@@ -10,6 +10,7 @@ var _kills_label: Label
 var _faith_box: VBoxContainer
 var _ult_bar: ProgressBar
 var _ult_label: Label
+var _announce: Label
 var _game_over: Control
 var _result_label: Label
 
@@ -63,6 +64,16 @@ func _ready() -> void:
 	_ult_label.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
 	add_child(_ult_label)
 
+	# 屏幕上方的事件提示，例如「狼群包围！」
+	_announce = Label.new()
+	_announce.set_anchors_and_offsets_preset(Control.PRESET_TOP_WIDE)
+	_announce.offset_top = 70
+	_announce.offset_bottom = 110
+	_announce.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
+	_announce.add_theme_font_size_override("font_size", 26)
+	_announce.modulate = Color(1.0, 0.75, 0.4, 0.0)
+	add_child(_announce)
+
 	_build_game_over()
 
 
@@ -91,6 +102,16 @@ func set_ult(energy: float, cost: float) -> void:
 	_ult_bar.modulate = Color(1.0, 0.85, 0.3) if is_full else Color(0.55, 0.65, 1.0)
 	_ult_label.text = "次元斩 已就绪  [空格]" if is_full else "次元斩"
 	_ult_label.modulate = Color(1.0, 0.85, 0.3) if is_full else Color(1, 1, 1, 0.6)
+
+
+
+## 在屏幕上方显示一行提示，停留一会儿后淡出
+func announce(text: String) -> void:
+	_announce.text = text
+	var tween := create_tween()
+	tween.tween_property(_announce, "modulate:a", 1.0, 0.2)
+	tween.tween_interval(2.0)
+	tween.tween_property(_announce, "modulate:a", 0.0, 0.6)
 
 
 ## 左侧显示每位已信仰神明的信仰值，例如「托尔 ■■■□□」

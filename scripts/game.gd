@@ -5,18 +5,17 @@ const SPAWN_DISTANCE := 750.0  # 刷怪距离：略大于半个屏幕对角线�
 const GRID_SIZE := 64.0
 const GRID_COLOR := Color(1, 1, 1, 0.05)
 
-# 敌人数据表。以后会挪到独立的数据文件里，现在先放这里方便理解
-const ENEMY_TYPES := {
-	"draugr": {"name": "尸鬼", "hp": 10.0, "speed": 70.0, "damage": 8.0, "radius": 13.0, "xp": 1, "color": Color(0.45, 0.62, 0.5)},
-	"wolf": {"name": "狼", "hp": 6.0, "speed": 140.0, "damage": 5.0, "radius": 10.0, "xp": 1, "color": Color(0.62, 0.62, 0.72)},
-}
+const RING_RADIUS := 450.0     # 包围事件里那一圈敌人离玩家的距离
 
 var player: Player
 var hud: Hud
 var level_up_panel: LevelUpPanel
 var elapsed := 0.0
 var kills := 0
+var level_data: Dictionary = LevelDB.NORSE_1
 var _spawn_timer := 0.0
+var _next_event := 0  # 下一个要触发的定时事件序号
+var _next_elite_time := 0.0
 var _pending_level_ups := 0  # 一次吃到很多经验可能连升几级，逐个弹出选择
 
 
@@ -39,34 +38,84 @@ func _ready() -> void:
 	add_child(level_up_panel)
 	level_up_panel.chosen.connect(_on_upgrade_chosen)
 
+	process_physics_priority = -10  # 让推挤网格在所有敌人移动之前重建
+	_next_elite_time = level_data.elite_from
+
 
 func _process(delta: float) -> void:
 	elapsed += delta
+	var wave := _current_wave()
 	_spawn_timer -= delta
 	if _spawn_timer <= 0.0:
-		_spawn_timer = _spawn_interval()
-		_spawn_enemy()
+		_spawn_timer = wave.interval
+		if get_tree().get_node_count_in_group("enemies") < level_data.max_enemies:
+			_spawn_enemy(_pick_weighted(wave.weights), _random_spawn_position())
+	_update_elites(wave)
+	_update_events()
 	hud.set_stats(elapsed, kills)
 	queue_redraw()  # 背景网格跟着玩家重画
 
 
-## 刷怪间隔随时间缩短：开局 1.2 秒一只，约 2.5 分钟后到达下限 0.2 秒
-func _spawn_interval() -> float:
-	return maxf(0.2, 1.2 - elapsed / 150.0)
+func _physics_process(_delta: float) -> void:
+	Enemy.rebuild_grid(get_tree())
 
 
-func _spawn_enemy() -> void:
-	var type_id := "draugr"
-	if elapsed > 30.0 and randf() < 0.4:
-		type_id = "wolf"
+## 当前时间对应的刷怪阶段
+func _current_wave() -> Dictionary:
+	var current: Dictionary = level_data.waves[0]
+	for wave: Dictionary in level_data.waves:
+		if elapsed >= wave.from:
+			current = wave
+	return current
 
+
+## 按权重随机挑一种敌人，例如 {"draugr": 3, "wolf": 1} 有 75% 是尸鬼
+func _pick_weighted(weights: Dictionary) -> String:
+	var total := 0.0
+	for w in weights.values():
+		total += w
+	var roll := randf() * total
+	for id: String in weights:
+		roll -= weights[id]
+		if roll <= 0.0:
+			return id
+	return weights.keys()[0]
+
+
+func _random_spawn_position() -> Vector2:
+	return player.position + Vector2.from_angle(randf() * TAU) * SPAWN_DISTANCE
+
+
+func _update_elites(wave: Dictionary) -> void:
+	if elapsed < _next_elite_time:
+		return
+	_next_elite_time += level_data.elite_every
+	var pool: Array = level_data.elite_pool.filter(func(id: String) -> bool: return wave.weights.has(id))
+	if pool.is_empty():
+		return
+	var enemy := _spawn_enemy(pool.pick_random(), _random_spawn_position(), true)
+	hud.announce("%s 出现了！" % enemy.display_name)
+
+
+func _update_events() -> void:
+	while _next_event < level_data.events.size() and elapsed >= level_data.events[_next_event].time:
+		var event: Dictionary = level_data.events[_next_event]
+		_next_event += 1
+		if event.type == "ring":
+			for i in event.count:
+				var angle: float = TAU * i / event.count
+				_spawn_enemy(event.enemy, player.position + Vector2.from_angle(angle) * RING_RADIUS)
+		hud.announce(event.text)
+
+
+func _spawn_enemy(type_id: String, pos: Vector2, elite: bool = false) -> Enemy:
 	var enemy := Enemy.new()
-	enemy.setup(ENEMY_TYPES[type_id], 1.0 + elapsed / 180.0)  # 血量随时间变强
+	enemy.setup(EnemyDB.ALL[type_id], 1.0 + elapsed / level_data.hp_growth, elite)
 	enemy.target = player
-	var angle := randf() * TAU
-	enemy.position = player.position + Vector2.from_angle(angle) * SPAWN_DISTANCE
+	enemy.position = pos
 	enemy.killed.connect(_on_enemy_killed)
 	add_child(enemy)
+	return enemy
 
 
 func _on_enemy_killed(_enemy: Enemy) -> void:

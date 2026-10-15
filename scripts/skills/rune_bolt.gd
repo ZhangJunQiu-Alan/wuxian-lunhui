@@ -1,6 +1,8 @@
 class_name RuneBolt
 extends Node2D
-## 奥丁·符文飞弹：每隔一段时间向最近的几个敌人各发射一枚飞弹
+## 奥丁·符文飞弹：每隔一段时间向射程内最近的几个敌人各发射一枚飞弹
+
+const RANGE := 600.0  # 射程：约等于半个屏幕宽，敌人进入射程才会发射
 
 var cooldown := 0.8
 var damage := 12.0
@@ -35,9 +37,10 @@ func _process(delta: float) -> void:
 		get_tree().current_scene.add_child(p)
 
 
-func _find_nearest_enemies(n: int) -> Array[Node]:
-	var enemies := get_tree().get_nodes_in_group("enemies")
+func _find_nearest_enemies(n: int) -> Array:
 	var origin := global_position
+	var enemies := get_tree().get_nodes_in_group("enemies").filter(func(e: Node2D) -> bool:
+		return e.global_position.distance_to(origin) <= RANGE)
 	enemies.sort_custom(func(a: Node2D, b: Node2D) -> bool:
 		return a.global_position.distance_squared_to(origin) < b.global_position.distance_squared_to(origin))
 	return enemies.slice(0, n)
