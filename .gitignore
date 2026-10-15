@@ -1,0 +1,11 @@
+# Godot 4
+.godot/
+/android/
+export_presets.cfg
+*.translation
+
+# 导出产物
+/build/
+
+# 系统
+.DS_Store

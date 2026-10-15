@@ -1,0 +1,21 @@
+; Engine configuration file.
+; 可以直接在 Godot 编辑器的「项目 → 项目设置」里修改这些内容
+
+config_version=5
+
+[application]
+
+config/name="无限轮回"
+run/main_scene="res://scenes/main.tscn"
+
+[display]
+
+window/size/viewport_width=1280
+window/size/viewport_height=720
+window/stretch/mode="canvas_items"
+
+[rendering]
+
+renderer/rendering_method="gl_compatibility"
+renderer/rendering_method.mobile="gl_compatibility"
+environment/defaults/default_clear_color=Color(0.07, 0.09, 0.13, 1)
