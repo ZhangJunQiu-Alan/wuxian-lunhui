@@ -19,6 +19,7 @@ void fragment() {
 
 var target_level := 0.0
 var _level := 0.0
+var _started := false  # 真正变暗过之后，才会在恢复光明时删除自己
 var _material: ShaderMaterial
 
 
@@ -38,5 +39,7 @@ func _ready() -> void:
 func _process(delta: float) -> void:
 	_level = move_toward(_level, target_level, delta * 0.8)
 	_material.set_shader_parameter("level", _level)
-	if target_level <= 0.0 and _level <= 0.0:
+	if _level > 0.0:
+		_started = true
+	elif _started and target_level <= 0.0:
 		queue_free()

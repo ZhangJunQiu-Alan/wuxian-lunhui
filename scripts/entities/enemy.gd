@@ -37,6 +37,7 @@ var _flash_time := 0.0
 var _frozen_time := 0.0  # 被定住的剩余时间（次元斩、时间暂停）
 var _knockback := Vector2.ZERO
 var _sprite: Node2D  # 有素材时的图片节点，没有素材时为 null，用占位图形
+var _anim_t := randf() * 10.0  # 程序动画的时间，随机起点让怪物步伐错开
 var _dead := false
 
 
@@ -104,7 +105,11 @@ func _ready() -> void:
 	add_child(shape)
 
 	# 素材放在 assets/sprites/enemies/<敌人 id>.png（或 .tres 动画）就会自动使用
-	_sprite = SpriteVisual.create(sprite_dir + type_id, radius * 2.6)
+	# 精英怪优先使用 <id>_elite 素材，没有就用普通素材
+	var paths: Array[String] = [sprite_dir + type_id]
+	if is_elite:
+		paths.push_front(sprite_dir + type_id + "_elite")
+	_sprite = SpriteVisual.create_first(paths, radius * 2.6)
 	if _sprite:
 		add_child(_sprite)
 
@@ -130,8 +135,11 @@ func _physics_process(delta: float) -> void:
 		move = _ranged_move(dir, dist, delta)
 	position += move * speed * delta + _knockback * delta + _separation()
 	_knockback *= exp(-KNOCKBACK_DECAY * delta)
-	if _sprite and dir.x != 0.0:
-		_sprite.set("flip_h", dir.x < 0.0)  # 素材默认朝右，往左走时翻转
+	if _sprite:
+		if dir.x != 0.0:
+			_sprite.set("flip_h", dir.x < 0.0)  # 素材默认朝右，往左走时翻转
+		_anim_t += delta
+		SpriteVisual.animate(_sprite, _anim_t, maxf(0.25, move.length()))  # 站着不动时也轻微呼吸
 
 	if dist < radius + Player.RADIUS:
 		target.take_damage(contact_damage)
@@ -209,12 +217,13 @@ func _draw() -> void:
 	elif _frozen_time > 0.0:
 		tint = Color(0.6, 0.75, 1.3)  # 被定住时偏蓝
 	var pop := 1.0 + 0.15 * _flash_time / 0.08  # 受击时略微放大
+	if _sprite:
+		SpriteVisual.draw_shadow(self, radius, Color(1.0, 0.8, 0.3, 0.7) if is_elite else Color(0, 0, 0, 0.35))  # 精英怪是金色影子
+		_sprite.modulate = tint
+		return
 	if is_elite:
 		draw_circle(Vector2.ZERO, radius * pop + 4.0, Color(1.0, 0.8, 0.3, 0.9))  # 精英怪带金边
 
-	if _sprite:
-		_sprite.modulate = tint
-		return
 	draw_circle(Vector2.ZERO, radius * pop, color * tint if _flash_time <= 0.0 else Color.WHITE)
 	if behavior == "ranged":
 		draw_circle(Vector2.ZERO, radius * 0.45, Color(1, 1, 1, 0.8))  # 远程敌人中间有个亮核

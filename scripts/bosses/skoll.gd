@@ -43,7 +43,8 @@ func _ready() -> void:
 
 func _update_state(delta: float) -> void:
 	_fight_time += delta
-	_darkness.target_level = minf(1.0, _fight_time / DARKEN_TIME)
+	if is_instance_valid(_darkness):
+		_darkness.target_level = minf(1.0, _fight_time / DARKEN_TIME)
 
 	if not _enraged and hp < max_hp * 0.5:
 		_enraged = true
@@ -86,7 +87,8 @@ func _summon_wolves() -> void:
 
 
 func _die() -> void:
-	_darkness.target_level = 0.0  # 光明恢复
+	if is_instance_valid(_darkness):
+		_darkness.target_level = 0.0  # 光明恢复
 	super._die()
 
 

@@ -38,6 +38,12 @@ func _physics_process(delta: float) -> void:
 		_last_state = hati.state
 		if hati.state == "lunge_windup":
 			_aim_dir = global_position.direction_to(target.global_position)
+	if _sprite:
+		_sprite.set("flip_h", target.global_position.x < global_position.x)
+		_anim_t += delta
+		SpriteVisual.animate(_sprite, _anim_t * 0.6, 0.5)
+		if hati.state.ends_with("windup"):
+			SpriteVisual.windup_tremble(_sprite, hati.state_time)
 	match hati.state:
 		"lunge":
 			position += _aim_dir * Hati.LUNGE_SPEED * delta

@@ -38,6 +38,7 @@ func _init() -> void:
 func init_stats(hp_scale: float) -> void:
 	setup_boss("hati", "哈提", "逐月之狼", 650.0, hp_scale, 32.0, 165.0, 18.0)
 	color = Color(0.72, 0.78, 0.95)
+	casts_shadow = false  # 真身影子在 _draw_telegraph 里画，这是分辨真假的线索
 
 
 func _ready() -> void:

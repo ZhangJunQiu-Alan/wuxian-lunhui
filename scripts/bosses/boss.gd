@@ -17,6 +17,7 @@ var defeat_line := ""  # 击败台词
 var state := ""
 var state_time := 0.0
 var spawner: Callable  # 召唤小怪用，由 game.gd 传入：spawner.call(敌人id, 位置)
+var casts_shadow := true  # 哈提自己画「真身影子」，所以关掉通用影子
 var defeated_bosses: Array[String] = []  # 本关已击败的 Boss，由 game.gd 传入（哈提会因斯库尔之死狂暴）
 
 
@@ -59,6 +60,12 @@ func _physics_process(delta: float) -> void:
 	state_time += delta
 	_update_state(delta)
 	queue_redraw()
+	if _sprite:
+		_sprite.set("flip_h", target.global_position.x < global_position.x)  # 面向玩家
+		_anim_t += delta
+		SpriteVisual.animate(_sprite, _anim_t * 0.6, 0.5)  # Boss 动作慢而沉
+		if state.ends_with("windup"):  # 所有蓄力状态都以 windup 结尾
+			SpriteVisual.windup_tremble(_sprite, state_time)
 	if global_position.distance_to(target.global_position) < radius + Player.RADIUS:
 		target.take_damage(contact_damage)
 
@@ -117,6 +124,8 @@ func _draw() -> void:
 	if _frozen_time > 0.0:
 		tint = Color(0.6, 0.75, 1.3)
 	if _sprite:
+		if casts_shadow:
+			SpriteVisual.draw_shadow(self, radius)
 		_sprite.modulate = tint
 		return
 	draw_circle(Vector2.ZERO, radius + 3.0, Color(0.1, 0.05, 0.05))
