@@ -5,11 +5,14 @@ extends Area2D
 signal killed(enemy: Enemy)
 
 const GRID_CELL := 48.0  # 推挤用的网格大小，要不小于两个普通敌人的半径之和
+const KNOCKBACK_DECAY := 10.0  # 击退速度衰减，越大停得越快
+const SPRITE_DIR := "res://assets/sprites/enemies/"
 
 ## 网格坐标 -> 该格里的敌人。每个物理帧由 game.gd 重建一次，
 ## 这样每个敌人只需要检查周围 9 个格子，而不是所有敌人
 static var _grid := {}
 
+var type_id := ""
 var display_name := ""
 var behavior := "chase"
 var max_hp := 20.0
@@ -31,6 +34,8 @@ var _shoot_timer := 0.0
 
 var _flash_time := 0.0
 var _frozen_time := 0.0  # 被定住的剩余时间（次元斩、时间暂停）
+var _knockback := Vector2.ZERO
+var _sprite: Node2D  # 有素材时的图片节点，没有素材时为 null，用占位图形
 var _dead := false
 
 
@@ -46,15 +51,19 @@ static func rebuild_grid(tree: SceneTree) -> void:
 
 
 ## 对一个圆形范围内的所有敌人造成伤害（落雷、火焰等范围技能共用）
-static func damage_in_radius(tree: SceneTree, center: Vector2, radius: float, amount: float) -> void:
+## knockback 是把敌人从中心向外推开的力度
+static func damage_in_radius(tree: SceneTree, center: Vector2, radius: float, amount: float, knockback: float = 0.0) -> void:
 	for node in tree.get_nodes_in_group("enemies"):
 		var enemy := node as Enemy
-		if enemy.global_position.distance_to(center) <= radius + enemy.radius:
-			enemy.take_damage(amount)
+		var offset := enemy.global_position - center
+		if offset.length() <= radius + enemy.radius:
+			enemy.take_damage(amount, offset.normalized() * knockback)
 
 
-## 用数据表里的一行来初始化。hp_scale 让后期的怪更肉，elite 表示精英怪
-func setup(data: Dictionary, hp_scale: float, elite: bool = false) -> void:
+## 用 EnemyDB 里的数据初始化。hp_scale 让后期的怪更肉，elite 表示精英怪
+func setup(id: String, hp_scale: float, elite: bool = false) -> void:
+	var data: Dictionary = EnemyDB.ALL[id]
+	type_id = id
 	display_name = data.name
 	behavior = data.get("behavior", "chase")
 	max_hp = data.hp * hp_scale
@@ -93,6 +102,11 @@ func _ready() -> void:
 	shape.shape = circle
 	add_child(shape)
 
+	# 素材放在 assets/sprites/enemies/<敌人 id>.png（或 .tres 动画）就会自动使用
+	_sprite = SpriteVisual.create(SPRITE_DIR + type_id, radius * 2.6)
+	if _sprite:
+		add_child(_sprite)
+
 
 func _physics_process(delta: float) -> void:
 	if _flash_time > 0.0:
@@ -113,7 +127,10 @@ func _physics_process(delta: float) -> void:
 	var move := dir
 	if behavior == "ranged":
 		move = _ranged_move(dir, dist, delta)
-	position += move * speed * delta + _separation()
+	position += move * speed * delta + _knockback * delta + _separation()
+	_knockback *= exp(-KNOCKBACK_DECAY * delta)
+	if _sprite and dir.x != 0.0:
+		_sprite.set("flip_h", dir.x < 0.0)  # 素材默认朝右，往左走时翻转
 
 	if dist < radius + Player.RADIUS:
 		target.take_damage(contact_damage)
@@ -157,12 +174,15 @@ func freeze(duration: float) -> void:
 	queue_redraw()
 
 
-func take_damage(amount: float) -> void:
+## knockback 是击退方向乘以力度；crit 为 true 时伤害数字显示为金色大字
+func take_damage(amount: float, knockback: Vector2 = Vector2.ZERO, crit: bool = false) -> void:
 	if _dead:
 		return
 	hp -= amount
+	_knockback += knockback / mass  # 越重越难击退
 	_flash_time = 0.08
 	queue_redraw()
+	FxLayer.damage_number(global_position + Vector2(randf_range(-8, 8), -radius - 4), amount, crit)
 	if hp <= 0.0:
 		_die()
 
@@ -176,18 +196,26 @@ func _die() -> void:
 	gem.position = position
 	# 在物理回调中不能直接加碰撞体相关节点，所以用 call_deferred 延迟到帧末
 	get_parent().call_deferred("add_child", gem)
+	FxLayer.burst(global_position, color, 30 if is_elite else 8, 220.0 if is_elite else 150.0)
+	if is_elite:
+		target.shake(6.0, 0.2)
 	killed.emit(self)
 	queue_free()
 
 
 func _draw() -> void:
-	var c := color
+	var tint := Color.WHITE
 	if _flash_time > 0.0:
-		c = Color.WHITE
+		tint = Color(3, 3, 3)  # 受击闪白
 	elif _frozen_time > 0.0:
-		c = color.lerp(Color(0.6, 0.7, 1.0), 0.5)  # 被定住时偏蓝
+		tint = Color(0.6, 0.75, 1.3)  # 被定住时偏蓝
+	var pop := 1.0 + 0.15 * _flash_time / 0.08  # 受击时略微放大
 	if is_elite:
-		draw_circle(Vector2.ZERO, radius + 4.0, Color(1.0, 0.8, 0.3, 0.9))  # 精英怪带金边
-	draw_circle(Vector2.ZERO, radius, c)
+		draw_circle(Vector2.ZERO, radius * pop + 4.0, Color(1.0, 0.8, 0.3, 0.9))  # 精英怪带金边
+
+	if _sprite:
+		_sprite.modulate = tint
+		return
+	draw_circle(Vector2.ZERO, radius * pop, color * tint if _flash_time <= 0.0 else Color.WHITE)
 	if behavior == "ranged":
 		draw_circle(Vector2.ZERO, radius * 0.45, Color(1, 1, 1, 0.8))  # 远程敌人中间有个亮核

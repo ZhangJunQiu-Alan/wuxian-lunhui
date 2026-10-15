@@ -9,6 +9,8 @@ signal leveled_up(level: int)
 signal ult_changed(energy: float, cost: float)
 
 const CHARACTER_NAME := "宫本武藏"  # 角色系统做好之前，先固定为宫本武藏
+const SPRITE_PATH := "res://assets/sprites/characters/musashi"  # 放 musashi.png 或 musashi.tres 即可替换占位图形
+const SPRITE_HEIGHT := 48.0
 const RADIUS := 14.0
 const INVINCIBLE_DURATION := 0.5  # 受伤后的无敌时间，防止一瞬间被怪群秒杀
 
@@ -47,6 +49,7 @@ var feathers: FeatherOrbit
 
 var _invincible_time := 0.0
 var _camera: Camera2D
+var _sprite: Node2D
 var _shake_strength := 0.0
 var _shake_time := 0.0
 
@@ -63,6 +66,10 @@ func _ready() -> void:
 	_camera = Camera2D.new()
 	_camera.position_smoothing_enabled = true
 	add_child(_camera)
+
+	_sprite = SpriteVisual.create(SPRITE_PATH, SPRITE_HEIGHT)
+	if _sprite:
+		add_child(_sprite)
 
 	katana = Katana.new()  # 初始武器：太刀
 	add_child(katana)
@@ -131,6 +138,7 @@ func take_damage(amount: float) -> void:
 	if randf() < dodge_chance:
 		return
 	hp = maxf(0.0, hp - amount)
+	shake(4.0, 0.15)
 	hp_changed.emit(hp, max_hp)
 	if hp <= 0.0:
 		is_dead = true
@@ -153,9 +161,14 @@ func add_xp(amount: float) -> void:
 
 
 func _draw() -> void:
-	var color := Color(0.95, 0.85, 0.55)
-	if _invincible_time > 0.0 and int(_invincible_time * 20.0) % 2 == 0:
-		color = Color(1, 0.4, 0.4)  # 受伤闪烁
+	var hurt_blink := _invincible_time > 0.0 and int(_invincible_time * 20.0) % 2 == 0
+	if _sprite:
+		_sprite.modulate = Color(1, 0.4, 0.4) if hurt_blink else Color.WHITE
+		if facing.x != 0.0:
+			_sprite.set("flip_h", facing.x < 0.0)
+		draw_arc(Vector2.ZERO, pickup_radius, 0.0, TAU, 48, Color(1, 1, 1, 0.06))
+		return
+	var color := Color(1, 0.4, 0.4) if hurt_blink else Color(0.95, 0.85, 0.55)  # 受伤闪烁
 	draw_circle(Vector2.ZERO, RADIUS, color)
 	draw_line(Vector2.ZERO, facing * (RADIUS + 6.0), Color(1, 1, 1, 0.8), 3.0)  # 朝向指示
 	draw_arc(Vector2.ZERO, pickup_radius, 0.0, TAU, 48, Color(1, 1, 1, 0.06))

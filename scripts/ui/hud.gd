@@ -11,12 +11,21 @@ var _faith_box: VBoxContainer
 var _ult_bar: ProgressBar
 var _ult_label: Label
 var _announce: Label
+var _hurt_flash: ColorRect
+var _last_hp := -1.0
 var _game_over: Control
 var _result_label: Label
 
 
 func _ready() -> void:
 	process_mode = Node.PROCESS_MODE_ALWAYS  # 游戏暂停时界面仍然可以点击
+
+	# 受伤时整个屏幕闪一下红色
+	_hurt_flash = ColorRect.new()
+	_hurt_flash.color = Color(0.8, 0.0, 0.0, 0.0)
+	_hurt_flash.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
+	_hurt_flash.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	add_child(_hurt_flash)
 
 	_xp_bar = ProgressBar.new()
 	_xp_bar.show_percentage = false
@@ -87,6 +96,10 @@ func _make_label(pos: Vector2) -> Label:
 func set_hp(hp: float, max_hp: float) -> void:
 	_hp_bar.max_value = max_hp
 	_hp_bar.value = hp
+	if hp < _last_hp - 0.5:  # 回血不闪，只有掉血才闪
+		_hurt_flash.color.a = 0.25
+		create_tween().tween_property(_hurt_flash, "color:a", 0.0, 0.3)
+	_last_hp = hp
 
 
 func set_xp(xp: float, xp_to_next: int, level: int) -> void:

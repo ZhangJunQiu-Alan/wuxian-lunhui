@@ -20,6 +20,8 @@ var _pending_level_ups := 0  # 一次吃到很多经验可能连升几级，逐�
 
 
 func _ready() -> void:
+	add_child(FxLayer.new())  # 伤害数字和碎片特效
+
 	player = Player.new()
 	add_child(player)
 	player.died.connect(_on_player_died)
@@ -110,7 +112,7 @@ func _update_events() -> void:
 
 func _spawn_enemy(type_id: String, pos: Vector2, elite: bool = false) -> Enemy:
 	var enemy := Enemy.new()
-	enemy.setup(EnemyDB.ALL[type_id], 1.0 + elapsed / level_data.hp_growth, elite)
+	enemy.setup(type_id, 1.0 + elapsed / level_data.hp_growth, elite)
 	enemy.target = player
 	enemy.position = pos
 	enemy.killed.connect(_on_enemy_killed)

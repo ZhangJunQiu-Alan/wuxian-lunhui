@@ -36,7 +36,7 @@ func _process(delta: float) -> void:
 			if _time - _last_hit.get(id, -INF) < HIT_COOLDOWN:
 				continue
 			_last_hit[id] = _time
-			enemy.take_damage(dmg)
+			enemy.take_damage(dmg, (enemy.global_position - global_position).normalized() * 120.0)
 
 	if _last_hit.size() > 300:  # 清理早已过期的记录，避免越存越多
 		for id in _last_hit.keys():

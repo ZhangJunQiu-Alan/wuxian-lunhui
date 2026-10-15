@@ -52,7 +52,7 @@ func _burst() -> void:
 	_burst_done = true
 	var dmg := DAMAGE * player.damage_mult
 	for enemy in _enemies_on_screen():
-		enemy.take_damage(dmg)
+		enemy.take_damage(dmg, Vector2.ZERO, true)
 	player.shake(12.0, 0.35)
 
 

@@ -33,7 +33,7 @@ func _on_area_entered(area: Area2D) -> void:
 	var enemy := area as Enemy
 	if enemy == null or pierce <= 0:
 		return
-	enemy.take_damage(damage)
+	enemy.take_damage(damage, direction * 120.0)
 	pierce -= 1
 	if pierce <= 0:
 		queue_free()

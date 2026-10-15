@@ -4,6 +4,7 @@ extends Node2D
 
 const SLASH_DURATION := 0.15
 const HALF_ARC := 1.05  # 扇形半角（弧度），约 60°，整个扇形 120°
+const KNOCKBACK := 260.0
 
 var damage := 14.0
 var cooldown := 1.0
@@ -56,7 +57,7 @@ func _slash(enemies: Array[Node], target: Enemy) -> void:
 			continue
 		for dir in _slash_dirs:
 			if absf(dir.angle_to(offset)) <= HALF_ARC:
-				enemy.take_damage(dmg)
+				enemy.take_damage(dmg, offset.normalized() * KNOCKBACK, _niten)
 				break
 
 
