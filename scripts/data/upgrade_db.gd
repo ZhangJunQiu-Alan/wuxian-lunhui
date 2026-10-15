@@ -8,8 +8,11 @@ class_name UpgradeDB
 ##   requires  需要先拥有的升级 id（例如强化落雷前必须先获得落雷）
 ##   skill     true = 获得神明技能的卡，第一次升级只从这些卡里选
 ##   awaken    true = 觉醒卡，信仰值满了才会出现，且必定出现
+##
+## 信仰规则：选神明卡给该神 +1 信仰；一局最多信仰 MAX_GODS 位神
 
 const FAITH_MAX := 5
+const MAX_GODS := 3  # 一局最多信仰几位神（不算初始武器太刀）
 
 const UPGRADES := {
 	# ———— 太刀 ————
@@ -90,6 +93,8 @@ static func _is_available(id: String, player: Player) -> bool:
 		return false
 	if info.has("requires") and not player.upgrade_levels.has(info.requires):
 		return false
+	if info.god != "" and not player.faith.has(info.god) and player.faith.size() >= MAX_GODS:
+		return false  # 已经信仰了 3 位神，其他神的卡不再出现
 	if info.get("awaken", false) and player.faith.get(info.god, 0) < FAITH_MAX:
 		return false
 	return true
