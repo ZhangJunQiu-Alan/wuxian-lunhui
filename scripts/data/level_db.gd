@@ -5,6 +5,7 @@ class_name LevelDB
 ##   elite_* 精英怪：从 elite_from 秒开始，每 elite_every 秒出现一只，
 ##           从 elite_pool 里挑当前阶段已经出现的敌人种类
 ##   events  定时事件：ring = 在玩家周围刷出一圈敌人
+##   bosses  Boss 出场时间和 id（id 对应 BossDB）
 
 const NORSE_1 := {
 	"name": "芬布尔之冬",
@@ -22,7 +23,10 @@ const NORSE_1 := {
 	"elite_from": 60.0,
 	"elite_every": 60.0,
 	"elite_pool": ["draugr", "ice_spirit", "frost_giant"],
-	# Boss 登场时间（阶段 5 实现）：05:00 斯库尔、10:00 哈提、14:00 赫列姆
+	# Boss 出场表。哈提（10:00）和赫列姆（14:00）做好后加在这里
+	"bosses": [
+		{"time": 300.0, "id": "skoll"},
+	],
 	"events": [
 		{"time": 75.0, "type": "ring", "enemy": "wolf", "count": 12, "text": "狼群包围！"},
 		{"time": 200.0, "type": "ring", "enemy": "draugr", "count": 20, "text": "亡者从墓丘中爬出！"},

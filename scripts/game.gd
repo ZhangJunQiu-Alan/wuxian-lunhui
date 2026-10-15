@@ -16,7 +16,10 @@ var level_data: Dictionary = LevelDB.NORSE_1
 var _spawn_timer := 0.0
 var _next_event := 0  # 下一个要触发的定时事件序号
 var _next_elite_time := 0.0
-var _pending_level_ups := 0  # 一次吃到很多经验可能连升几级，逐个弹出选择
+var _pending_rewards: Array[String] = []  # 待选择的奖励（升级或宝箱），逐个弹出；内容是面板标题，空字符串 = 普通升级
+var boss: Boss
+var _alive_by_type := {}  # 敌人 id -> 当前存活数量
+var _next_boss := 0
 
 
 func _ready() -> void:
@@ -49,11 +52,15 @@ func _process(delta: float) -> void:
 	var wave := _current_wave()
 	_spawn_timer -= delta
 	if _spawn_timer <= 0.0:
-		_spawn_timer = wave.interval
+		_spawn_timer = wave.interval * (2.0 if is_instance_valid(boss) else 1.0)  # Boss 战时小怪减半
 		if get_tree().get_node_count_in_group("enemies") < level_data.max_enemies:
-			_spawn_enemy(_pick_weighted(wave.weights), _random_spawn_position())
+			var type_id := _pick_weighted(wave.weights)
+			if _alive_by_type.get(type_id, 0) >= EnemyDB.ALL[type_id].get("max_alive", INF):
+				type_id = "draugr"
+			_spawn_enemy(type_id, _random_spawn_position())
 	_update_elites(wave)
 	_update_events()
+	_update_bosses()
 	hud.set_stats(elapsed, kills)
 	queue_redraw()  # 背景网格跟着玩家重画
 
@@ -117,27 +124,73 @@ func _spawn_enemy(type_id: String, pos: Vector2, elite: bool = false) -> Enemy:
 	enemy.position = pos
 	enemy.killed.connect(_on_enemy_killed)
 	add_child(enemy)
+	_alive_by_type[type_id] = _alive_by_type.get(type_id, 0) + 1
 	return enemy
 
 
-func _on_enemy_killed(_enemy: Enemy) -> void:
+func _on_enemy_killed(enemy: Enemy) -> void:
+	_alive_by_type[enemy.type_id] = _alive_by_type.get(enemy.type_id, 1) - 1
 	kills += 1
 	player.add_ult_energy(1.0)
 
 
+func _update_bosses() -> void:
+	var bosses: Array = level_data.bosses
+	if _next_boss >= bosses.size() or elapsed < bosses[_next_boss].time:
+		return
+	var id: String = bosses[_next_boss].id
+	_next_boss += 1
+	boss = BossDB.create(id, 1.0 + elapsed / level_data.hp_growth)
+	if boss == null:
+		return
+	boss.target = player
+	boss.spawner = _spawn_enemy
+	boss.position = player.position + Vector2.from_angle(randf() * TAU) * 520.0
+	boss.killed.connect(_on_enemy_killed)
+	boss.hp_changed.connect(hud.set_boss_hp)
+	boss.defeated.connect(_on_boss_defeated)
+	add_child(boss)
+	hud.show_boss(boss.display_name, boss.title, boss.max_hp)
+	hud.announce(boss.intro_line)
+	player.shake(8.0, 0.4)
+
+
+func _on_boss_defeated(defeated_boss: Boss) -> void:
+	hud.hide_boss()
+	hud.announce(defeated_boss.defeat_line)
+	var chest := Chest.new()
+	chest.player = player
+	chest.position = defeated_boss.position
+	chest.opened.connect(_queue_reward.bind("宝箱！选择一项奖励"))
+	add_child.call_deferred(chest)
+	# 再撒一圈大经验宝石
+	for i in 5:
+		var gem := XpGem.new()
+		gem.value = EnemyDB.ELITE_XP
+		gem.big = true
+		gem.player = player
+		gem.position = defeated_boss.position + Vector2.from_angle(TAU * i / 5) * 60.0
+		add_child.call_deferred(gem)
+
+
 func _on_player_leveled_up(_level: int) -> void:
-	_pending_level_ups += 1
-	if _pending_level_ups == 1:
+	_queue_reward("")
+
+
+## 加入一次奖励选择。如果当前没有在选，就暂停游戏并弹出面板
+func _queue_reward(title: String) -> void:
+	_pending_rewards.append(title)
+	if _pending_rewards.size() == 1:
 		get_tree().paused = true
-		level_up_panel.open(UpgradeDB.get_choices(player, 3), player)
+		level_up_panel.open(UpgradeDB.get_choices(player, 3), player, title)
 
 
 func _on_upgrade_chosen(id: String) -> void:
 	UpgradeDB.apply(id, player)
 	hud.set_faith(player.faith)
-	_pending_level_ups -= 1
-	if _pending_level_ups > 0:
-		level_up_panel.open(UpgradeDB.get_choices(player, 3), player)
+	_pending_rewards.pop_front()
+	if not _pending_rewards.is_empty():
+		level_up_panel.open(UpgradeDB.get_choices(player, 3), player, _pending_rewards[0])
 	else:
 		get_tree().paused = false
 

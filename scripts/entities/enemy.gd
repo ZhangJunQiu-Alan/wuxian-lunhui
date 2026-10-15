@@ -13,6 +13,7 @@ const SPRITE_DIR := "res://assets/sprites/enemies/"
 static var _grid := {}
 
 var type_id := ""
+var sprite_dir := SPRITE_DIR  # Boss 会改成 bosses 目录
 var display_name := ""
 var behavior := "chase"
 var max_hp := 20.0
@@ -103,7 +104,7 @@ func _ready() -> void:
 	add_child(shape)
 
 	# 素材放在 assets/sprites/enemies/<敌人 id>.png（或 .tres 动画）就会自动使用
-	_sprite = SpriteVisual.create(SPRITE_DIR + type_id, radius * 2.6)
+	_sprite = SpriteVisual.create(sprite_dir + type_id, radius * 2.6)
 	if _sprite:
 		add_child(_sprite)
 
@@ -136,7 +137,7 @@ func _physics_process(delta: float) -> void:
 		target.take_damage(contact_damage)
 
 
-## 远程敌人：太远就靠近，太近就后退，在射程内定时射击
+## 远程敌人：太远就靠近，进入射程后停下定时射击（不会后退，近战角色可以追上去砍）
 func _ranged_move(dir: Vector2, dist: float, delta: float) -> Vector2:
 	if dist <= shoot_range:
 		_shoot_timer -= delta
@@ -145,8 +146,6 @@ func _ranged_move(dir: Vector2, dist: float, delta: float) -> Vector2:
 			EnemyProjectile.spawn(get_parent(), global_position, dir, projectile_damage)
 	if dist > shoot_range * 0.9:
 		return dir
-	if dist < shoot_range * 0.6:
-		return -dir
 	return Vector2.ZERO
 
 

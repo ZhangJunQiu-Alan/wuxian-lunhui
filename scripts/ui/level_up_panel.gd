@@ -46,9 +46,11 @@ func _ready() -> void:
 	box.add_child(hint)
 
 
-func open(ids: Array[String], player: Player) -> void:
+func open(ids: Array[String], player: Player, title: String = "") -> void:
 	_ids = ids
-	_title.text = "选择你的第一份信仰" if player.faith.is_empty() else "升级！等级 %d" % player.level
+	if title == "":
+		title = "选择你的第一份信仰" if player.faith.is_empty() else "升级！等级 %d" % player.level
+	_title.text = title
 	for child in _cards.get_children():
 		child.queue_free()
 	for i in ids.size():

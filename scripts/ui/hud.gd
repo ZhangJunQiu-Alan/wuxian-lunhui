@@ -11,6 +11,9 @@ var _faith_box: VBoxContainer
 var _ult_bar: ProgressBar
 var _ult_label: Label
 var _announce: Label
+var _boss_box: VBoxContainer
+var _boss_name: Label
+var _boss_bar: ProgressBar
 var _hurt_flash: ColorRect
 var _last_hp := -1.0
 var _game_over: Control
@@ -19,6 +22,7 @@ var _result_label: Label
 
 func _ready() -> void:
 	process_mode = Node.PROCESS_MODE_ALWAYS  # 游戏暂停时界面仍然可以点击
+	layer = 5  # 界面在最上层（画面变暗效果是 1，升级面板是 10）
 
 	# 受伤时整个屏幕闪一下红色
 	_hurt_flash = ColorRect.new()
@@ -76,12 +80,31 @@ func _ready() -> void:
 	# 屏幕上方的事件提示，例如「狼群包围！」
 	_announce = Label.new()
 	_announce.set_anchors_and_offsets_preset(Control.PRESET_TOP_WIDE)
-	_announce.offset_top = 70
-	_announce.offset_bottom = 110
+	_announce.offset_top = 120
+	_announce.offset_bottom = 160
 	_announce.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
 	_announce.add_theme_font_size_override("font_size", 26)
 	_announce.modulate = Color(1.0, 0.75, 0.4, 0.0)
 	add_child(_announce)
+
+	# 顶部中间：Boss 名字和血条，Boss 出场时才显示
+	_boss_box = VBoxContainer.new()
+	_boss_box.set_anchors_and_offsets_preset(Control.PRESET_CENTER_TOP)
+	_boss_box.offset_left = -260
+	_boss_box.offset_right = 260
+	_boss_box.offset_top = 58
+	_boss_box.visible = false
+	add_child(_boss_box)
+	_boss_name = Label.new()
+	_boss_name.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
+	_boss_name.add_theme_font_size_override("font_size", 18)
+	_boss_name.modulate = Color(1.0, 0.75, 0.6)
+	_boss_box.add_child(_boss_name)
+	_boss_bar = ProgressBar.new()
+	_boss_bar.show_percentage = false
+	_boss_bar.custom_minimum_size.y = 14
+	_boss_bar.modulate = Color(0.9, 0.25, 0.2)
+	_boss_box.add_child(_boss_bar)
 
 	_build_game_over()
 
@@ -116,6 +139,23 @@ func set_ult(energy: float, cost: float) -> void:
 	_ult_label.text = "次元斩 已就绪  [空格]" if is_full else "次元斩"
 	_ult_label.modulate = Color(1.0, 0.85, 0.3) if is_full else Color(1, 1, 1, 0.6)
 
+
+
+
+func show_boss(boss_name: String, title: String, max_hp: float) -> void:
+	_boss_name.text = "%s · %s" % [boss_name, title]
+	_boss_bar.max_value = max_hp
+	_boss_bar.value = max_hp
+	_boss_box.visible = true
+
+
+func set_boss_hp(hp: float, max_hp: float) -> void:
+	_boss_bar.max_value = max_hp
+	_boss_bar.value = hp
+
+
+func hide_boss() -> void:
+	_boss_box.visible = false
 
 
 ## 在屏幕上方显示一行提示，停留一会儿后淡出
