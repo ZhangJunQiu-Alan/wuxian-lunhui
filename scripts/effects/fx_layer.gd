@@ -25,6 +25,15 @@ static func damage_number(pos: Vector2, amount: float, crit: bool = false) -> vo
 	instance._numbers.append({"pos": pos, "text": str(maxi(1, roundi(amount))), "life": NUMBER_LIFE, "crit": crit})
 
 
+## 飘出一段文字，例如「格挡」
+static func floating_text(pos: Vector2, text: String, color: Color) -> void:
+	if instance == null:
+		return
+	if instance._numbers.size() >= MAX_NUMBERS:
+		instance._numbers.pop_front()
+	instance._numbers.append({"pos": pos, "text": text, "life": NUMBER_LIFE, "crit": false, "color": color})
+
+
 ## 在 pos 处炸出 count 个小碎片
 static func burst(pos: Vector2, color: Color, count: int, speed: float = 160.0, size: float = 3.0) -> void:
 	if instance == null:
@@ -39,7 +48,8 @@ static func burst(pos: Vector2, color: Color, count: int, speed: float = 160.0, 
 func _ready() -> void:
 	instance = self
 	z_index = 30  # 画在敌人和技能特效上面
-	_font = ThemeDB.fallback_font
+	var custom: String = ProjectSettings.get_setting("gui/theme/custom_font", "")
+	_font = load(custom) if custom != "" else ThemeDB.fallback_font  # 和界面用同一款字体
 
 
 func _exit_tree() -> void:
@@ -72,7 +82,7 @@ func _draw() -> void:
 		var t: float = n.life / NUMBER_LIFE                  # 1 → 0
 		var pop := 1.0 + 0.4 * maxf(0.0, t - 0.8) / 0.2      # 刚出现时放大一下再缩回
 		var font_size := int((22.0 if n.crit else 15.0) * pop)
-		var color := Color(1.0, 0.82, 0.3) if n.crit else Color(1, 1, 1)
+		var color: Color = n.get("color", Color(1.0, 0.82, 0.3) if n.crit else Color(1, 1, 1))
 		color.a = minf(1.0, t * 2.5)
 		var width := _font.get_string_size(n.text, HORIZONTAL_ALIGNMENT_LEFT, -1, font_size).x
 		var at: Vector2 = n.pos - Vector2(width * 0.5, 0)

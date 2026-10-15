@@ -17,6 +17,7 @@ var defeat_line := ""  # 击败台词
 var state := ""
 var state_time := 0.0
 var spawner: Callable  # 召唤小怪用，由 game.gd 传入：spawner.call(敌人id, 位置)
+var defeated_bosses: Array[String] = []  # 本关已击败的 Boss，由 game.gd 传入（哈提会因斯库尔之死狂暴）
 
 
 ## 初始化 Boss 属性。hp_scale 和普通敌人一样随时间增长
@@ -70,6 +71,22 @@ func _update_state(_delta: float) -> void:
 ## 子类实现：画技能预警（例如冲锋路线），会画在 Boss 身体下面
 func _draw_telegraph() -> void:
 	pass
+
+
+## 技能预警的通用画法（静态函数，Boss 和召唤物都能用：传入要画在哪个节点上）
+## 直线冲锋预警（长条）。t 从 0 到 1，越接近出招越亮
+static func draw_line_telegraph(canvas: CanvasItem, dir: Vector2, length: float, half_width: float, t: float, tint: Color = Color(1.0, 0.15, 0.1)) -> void:
+	var perp := dir.orthogonal() * half_width
+	var far := dir * length
+	canvas.draw_colored_polygon(PackedVector2Array([perp, perp + far, -perp + far, -perp]), Color(tint, 0.12 + 0.25 * t))
+	canvas.draw_polyline(PackedVector2Array([perp, perp + far, -perp + far, -perp, perp]), Color(tint.lightened(0.2), 0.6), 2.0)
+
+
+## 圆形范围预警。内圈逐渐扩大，碰到外圈的瞬间就是出招
+static func draw_circle_telegraph(canvas: CanvasItem, center: Vector2, r: float, t: float, tint: Color = Color(1.0, 0.15, 0.1)) -> void:
+	canvas.draw_circle(center, r, Color(tint, 0.08 + 0.2 * t))
+	canvas.draw_arc(center, r, 0.0, TAU, 64, Color(tint.lightened(0.2), 0.7), 2.0)
+	canvas.draw_arc(center, r * t, 0.0, TAU, 64, Color(tint.lightened(0.3), 0.5), 2.0)
 
 
 func chase(delta: float, speed_mult: float = 1.0) -> void:

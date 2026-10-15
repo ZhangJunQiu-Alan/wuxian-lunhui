@@ -95,12 +95,7 @@ func _draw_telegraph() -> void:
 		"windup":
 			# 冲锋路线：红色长条，越接近冲刺越亮
 			var t := state_time / (WINDUP_TIME_ENRAGED if _enraged else WINDUP_TIME)
-			var length := DASH_SPEED * DASH_TIME + radius
-			var perp := _dash_dir.orthogonal() * radius
-			var far := _dash_dir * length
-			var pts := PackedVector2Array([perp, perp + far, -perp + far, -perp])
-			draw_colored_polygon(pts, Color(1.0, 0.15, 0.1, 0.12 + 0.25 * t))
-			draw_polyline(PackedVector2Array([perp, perp + far, -perp + far, -perp, perp]), Color(1.0, 0.3, 0.2, 0.6), 2.0)
+			draw_line_telegraph(self, _dash_dir, DASH_SPEED * DASH_TIME + radius, radius, t)
 		"howl":
 			# 嚎叫：向外扩散的声波圈
 			var r := radius + state_time * 160.0

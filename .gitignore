@@ -9,3 +9,6 @@ export_presets.cfg
 
 # 系统
 .DS_Store
+
+# 压缩包不进仓库（源文件请解压后放入 assets/source）
+*.zip

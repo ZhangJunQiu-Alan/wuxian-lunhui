@@ -5,7 +5,7 @@ class_name LevelDB
 ##   elite_* 精英怪：从 elite_from 秒开始，每 elite_every 秒出现一只，
 ##           从 elite_pool 里挑当前阶段已经出现的敌人种类
 ##   events  定时事件：ring = 在玩家周围刷出一圈敌人
-##   bosses  Boss 出场时间和 id（id 对应 BossDB）
+##   bosses  Boss 出场时间和 id（id 对应 BossDB）；击败 final_boss 即通关，显示 clear_text
 
 const NORSE_1 := {
 	"name": "芬布尔之冬",
@@ -23,10 +23,14 @@ const NORSE_1 := {
 	"elite_from": 60.0,
 	"elite_every": 60.0,
 	"elite_pool": ["draugr", "ice_spirit", "frost_giant"],
-	# Boss 出场表。哈提（10:00）和赫列姆（14:00）做好后加在这里
+	# Boss 出场表。击败 final_boss 即通关
 	"bosses": [
 		{"time": 300.0, "id": "skoll"},
+		{"time": 600.0, "id": "hati"},
+		{"time": 840.0, "id": "hrym"},
 	],
+	"final_boss": "hrym",
+	"clear_text": "远方传来号角声。那是神域守门人海姆达尔吹响了加拉尔号角。\n诸神黄昏，正式开始。",
 	"events": [
 		{"time": 75.0, "type": "ring", "enemy": "wolf", "count": 12, "text": "狼群包围！"},
 		{"time": 200.0, "type": "ring", "enemy": "draugr", "count": 20, "text": "亡者从墓丘中爬出！"},

@@ -11,6 +11,7 @@ var _faith_box: VBoxContainer
 var _ult_bar: ProgressBar
 var _ult_label: Label
 var _announce: Label
+var _cutin: UltCutin
 var _boss_box: VBoxContainer
 var _boss_name: Label
 var _boss_bar: ProgressBar
@@ -77,11 +78,11 @@ func _ready() -> void:
 	_ult_label.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
 	add_child(_ult_label)
 
-	# 屏幕上方的事件提示，例如「狼群包围！」
+	# 屏幕下方的事件提示，例如「狼群包围！」
 	_announce = Label.new()
-	_announce.set_anchors_and_offsets_preset(Control.PRESET_TOP_WIDE)
-	_announce.offset_top = 120
-	_announce.offset_bottom = 160
+	_announce.set_anchors_and_offsets_preset(Control.PRESET_BOTTOM_WIDE)
+	_announce.offset_top = -150
+	_announce.offset_bottom = -110
 	_announce.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
 	_announce.add_theme_font_size_override("font_size", 26)
 	_announce.modulate = Color(1.0, 0.75, 0.4, 0.0)
@@ -105,6 +106,9 @@ func _ready() -> void:
 	_boss_bar.custom_minimum_size.y = 14
 	_boss_bar.modulate = Color(0.9, 0.25, 0.2)
 	_boss_box.add_child(_boss_bar)
+
+	_cutin = UltCutin.new()
+	add_child(_cutin)
 
 	_build_game_over()
 
@@ -136,7 +140,8 @@ func set_ult(energy: float, cost: float) -> void:
 	_ult_bar.value = energy
 	var is_full := energy >= cost
 	_ult_bar.modulate = Color(1.0, 0.85, 0.3) if is_full else Color(0.55, 0.65, 1.0)
-	_ult_label.text = "次元斩 已就绪  [空格]" if is_full else "次元斩"
+	var ult_name: String = CharacterDB.ALL[Player.CHARACTER_ID].ult_name
+	_ult_label.text = (ult_name + " 已就绪  [空格]") if is_full else ult_name
 	_ult_label.modulate = Color(1.0, 0.85, 0.3) if is_full else Color(1, 1, 1, 0.6)
 
 
@@ -156,6 +161,11 @@ func set_boss_hp(hp: float, max_hp: float) -> void:
 
 func hide_boss() -> void:
 	_boss_box.visible = false
+
+
+## 大招特写
+func show_cutin(character_id: String) -> void:
+	_cutin.play(character_id)
 
 
 ## 在屏幕上方显示一行提示，停留一会儿后淡出
@@ -186,8 +196,19 @@ func set_stats(elapsed: float, kills: int) -> void:
 
 
 func show_game_over(elapsed: float, kills: int, level: int) -> void:
-	_result_label.text = "你死了\n\n存活 %02d:%02d　等级 %d　击杀 %d" % [int(elapsed) / 60, int(elapsed) % 60, level, kills]
+	_result_label.text = "你死了\n\n" + _stats_text(elapsed, kills, level)
 	_game_over.visible = true
+
+
+func show_victory(level_name: String, story: String, elapsed: float, kills: int, level: int) -> void:
+	_result_label.text = "主线任务完成 · %s\n\n%s\n\n%s" % [level_name, _stats_text(elapsed, kills, level), story]
+	_result_label.modulate = Color(1.0, 0.88, 0.55)
+	hide_boss()
+	_game_over.visible = true
+
+
+func _stats_text(elapsed: float, kills: int, level: int) -> String:
+	return "用时 %02d:%02d　等级 %d　击杀 %d" % [int(elapsed) / 60, int(elapsed) % 60, level, kills]
 
 
 func _build_game_over() -> void:

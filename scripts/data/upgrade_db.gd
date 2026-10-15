@@ -2,7 +2,8 @@ class_name UpgradeDB
 ## 升级卡牌数据库：所有升级选项都在这里定义和生效
 ##
 ## 每张卡的字段：
-##   god       所属神明 id，选了会增加该神的信仰值；空字符串 = 太刀强化或通用属性
+##   kind      卡牌类别：weapon = 人物基础武器，stat = 通用属性，god = 神明卡
+##   god       所属神明 id（仅神明卡），选了会增加该神的信仰值
 ##   name/desc 卡牌标题和说明
 ##   max       最多能选几次
 ##   requires  需要先拥有的升级 id（例如强化落雷前必须先获得落雷）
@@ -15,51 +16,51 @@ const FAITH_MAX := 5
 const MAX_GODS := 3  # 一局最多信仰几位神（不算初始武器太刀）
 
 const UPGRADES := {
-	# ———— 太刀 ————
-	"katana_damage": {"god": "", "name": "太刀·锋利", "desc": "太刀伤害 +25%", "max": 5},
-	"katana_speed": {"god": "", "name": "太刀·居合", "desc": "太刀挥砍间隔 -12%", "max": 4},
-	"katana_range": {"god": "", "name": "太刀·长刃", "desc": "太刀攻击范围 +20%", "max": 3},
-	"katana_back": {"god": "", "name": "太刀·回身斩", "desc": "挥砍时同时斩向身后", "max": 1},
+	# ———— 人物基础武器：太刀（宫本武藏）————
+	"katana_damage": {"kind": "weapon", "god": "", "name": "太刀·锋利", "desc": "太刀伤害 +25%", "max": 5},
+	"katana_speed": {"kind": "weapon", "god": "", "name": "太刀·居合", "desc": "太刀挥砍间隔 -12%", "max": 4},
+	"katana_range": {"kind": "weapon", "god": "", "name": "太刀·长刃", "desc": "太刀攻击范围 +20%", "max": 3},
+	"katana_back": {"kind": "weapon", "god": "", "name": "太刀·回身斩", "desc": "挥砍时同时斩向身后", "max": 1},
 
-	# ———— 通用 ————
-	"might": {"god": "", "name": "力量", "desc": "所有伤害 +10%", "max": 5},
-	"swift": {"god": "", "name": "迅捷", "desc": "移动速度 +10%", "max": 3},
-	"vigor": {"god": "", "name": "体魄", "desc": "最大生命 +20，并回复 20 生命", "max": 5},
-	"magnet": {"god": "", "name": "引力", "desc": "拾取范围 +30%", "max": 3},
-	"haste": {"god": "", "name": "急速", "desc": "所有攻击冷却 -8%", "max": 3},
+	# ———— 通用属性 ————
+	"might": {"kind": "stat", "god": "", "name": "力量", "desc": "所有伤害 +10%", "max": 5},
+	"swift": {"kind": "stat", "god": "", "name": "迅捷", "desc": "移动速度 +10%", "max": 3},
+	"vigor": {"kind": "stat", "god": "", "name": "体魄", "desc": "最大生命 +20，并回复 20 生命", "max": 5},
+	"magnet": {"kind": "stat", "god": "", "name": "引力", "desc": "拾取范围 +30%", "max": 3},
+	"haste": {"kind": "stat", "god": "", "name": "急速", "desc": "所有攻击冷却 -8%", "max": 3},
+	"wisdom": {"kind": "stat", "god": "", "name": "智慧", "desc": "获得的经验 +15%", "max": 3},
+	"evasion": {"kind": "stat", "god": "", "name": "闪避", "desc": "受到攻击时有 15% 几率闪避", "max": 2},
+	"regen": {"kind": "stat", "god": "", "name": "再生", "desc": "每秒回复 1 点生命", "max": 3},
 
 	# ———— 托尔：雷电 ————
-	"thor_lightning": {"god": "thor", "name": "落雷", "desc": "周期性召唤雷电劈向附近的敌人，造成范围伤害", "max": 1, "skill": true},
-	"thor_damage": {"god": "thor", "name": "雷霆万钧", "desc": "落雷伤害 +30%", "max": 3, "requires": "thor_lightning"},
-	"thor_count": {"god": "thor", "name": "风暴", "desc": "每次多劈下 1 道雷", "max": 3, "requires": "thor_lightning"},
-	"thor_speed": {"god": "thor", "name": "疾雷", "desc": "落雷间隔 -15%", "max": 2, "requires": "thor_lightning"},
-	"thor_awaken": {"god": "thor", "name": "觉醒·雷神之锤", "desc": "落雷伤害翻倍，并连锁跳向附近 3 个敌人", "max": 1, "requires": "thor_lightning", "awaken": true},
+	"thor_lightning": {"kind": "god", "god": "thor", "name": "落雷", "desc": "周期性召唤雷电劈向附近的敌人，造成范围伤害", "max": 1, "skill": true},
+	"thor_damage": {"kind": "god", "god": "thor", "name": "雷霆万钧", "desc": "落雷伤害 +30%", "max": 3, "requires": "thor_lightning"},
+	"thor_count": {"kind": "god", "god": "thor", "name": "风暴", "desc": "每次多劈下 1 道雷", "max": 3, "requires": "thor_lightning"},
+	"thor_speed": {"kind": "god", "god": "thor", "name": "疾雷", "desc": "落雷间隔 -15%", "max": 2, "requires": "thor_lightning"},
+	"thor_awaken": {"kind": "god", "god": "thor", "name": "觉醒·雷神之锤", "desc": "落雷伤害翻倍，并连锁跳向附近 3 个敌人", "max": 1, "requires": "thor_lightning", "awaken": true},
 
 	# ———— 奥丁：符文与智慧 ————
-	"odin_bolt": {"god": "odin", "name": "符文飞弹", "desc": "向最近的敌人发射符文飞弹", "max": 1, "skill": true},
-	"odin_count": {"god": "odin", "name": "符文增殖", "desc": "每次多发射 1 枚符文", "max": 3, "requires": "odin_bolt"},
-	"odin_pierce": {"god": "odin", "name": "破甲符文", "desc": "符文穿透 +1", "max": 3, "requires": "odin_bolt"},
-	"odin_wisdom": {"god": "odin", "name": "智慧之泉", "desc": "获得的经验 +15%", "max": 3},
-	"odin_awaken": {"god": "odin", "name": "觉醒·冈格尼尔", "desc": "符文无限穿透，数量 +2，伤害 +50%", "max": 1, "requires": "odin_bolt", "awaken": true},
+	"odin_bolt": {"kind": "god", "god": "odin", "name": "符文飞弹", "desc": "向最近的敌人发射符文飞弹", "max": 1, "skill": true},
+	"odin_count": {"kind": "god", "god": "odin", "name": "符文增殖", "desc": "每次多发射 1 枚符文", "max": 3, "requires": "odin_bolt"},
+	"odin_pierce": {"kind": "god", "god": "odin", "name": "破甲符文", "desc": "符文穿透 +1", "max": 3, "requires": "odin_bolt"},
+	"odin_awaken": {"kind": "god", "god": "odin", "name": "觉醒·冈格尼尔", "desc": "符文无限穿透，数量 +2，伤害 +50%", "max": 1, "requires": "odin_bolt", "awaken": true},
 
 	# ———— 洛基：火焰与诡计 ————
-	"loki_aura": {"god": "loki", "name": "诡火", "desc": "身边燃起火焰，持续灼烧靠近的敌人", "max": 1, "skill": true},
-	"loki_radius": {"god": "loki", "name": "野火蔓延", "desc": "火焰范围 +20%", "max": 3, "requires": "loki_aura"},
-	"loki_damage": {"god": "loki", "name": "炽焰", "desc": "火焰伤害 +30%", "max": 3, "requires": "loki_aura"},
-	"loki_trick": {"god": "loki", "name": "幻影", "desc": "受到攻击时有 15% 几率闪避", "max": 2},
-	"loki_awaken": {"god": "loki", "name": "觉醒·诸神黄昏之火", "desc": "火焰范围 +50%，伤害翻倍", "max": 1, "requires": "loki_aura", "awaken": true},
+	"loki_aura": {"kind": "god", "god": "loki", "name": "诡火", "desc": "身边燃起火焰，持续灼烧靠近的敌人", "max": 1, "skill": true},
+	"loki_radius": {"kind": "god", "god": "loki", "name": "野火蔓延", "desc": "火焰范围 +20%", "max": 3, "requires": "loki_aura"},
+	"loki_damage": {"kind": "god", "god": "loki", "name": "炽焰", "desc": "火焰伤害 +30%", "max": 3, "requires": "loki_aura"},
+	"loki_awaken": {"kind": "god", "god": "loki", "name": "觉醒·诸神黄昏之火", "desc": "火焰范围 +50%，伤害翻倍", "max": 1, "requires": "loki_aura", "awaken": true},
 
 	# ———— 弗蕾亚：羽刃与生命 ————
-	"freyja_feathers": {"god": "freyja", "name": "女武神之羽", "desc": "2 片羽刃环绕身边，切割碰到的敌人", "max": 1, "skill": true},
-	"freyja_count": {"god": "freyja", "name": "羽翼丰满", "desc": "羽刃 +1", "max": 3, "requires": "freyja_feathers"},
-	"freyja_speed": {"god": "freyja", "name": "疾风之羽", "desc": "羽刃转速和伤害 +20%", "max": 3, "requires": "freyja_feathers"},
-	"freyja_regen": {"god": "freyja", "name": "生命女神", "desc": "每秒回复 1 点生命", "max": 3},
-	"freyja_awaken": {"god": "freyja", "name": "觉醒·弗尔克范格", "desc": "羽刃 +3，每秒额外回复 3 点生命", "max": 1, "requires": "freyja_feathers", "awaken": true},
+	"freyja_feathers": {"kind": "god", "god": "freyja", "name": "女武神之羽", "desc": "2 片羽刃环绕身边，切割碰到的敌人", "max": 1, "skill": true},
+	"freyja_count": {"kind": "god", "god": "freyja", "name": "羽翼丰满", "desc": "羽刃 +1", "max": 3, "requires": "freyja_feathers"},
+	"freyja_speed": {"kind": "god", "god": "freyja", "name": "疾风之羽", "desc": "羽刃转速和伤害 +20%", "max": 3, "requires": "freyja_feathers"},
+	"freyja_awaken": {"kind": "god", "god": "freyja", "name": "觉醒·弗尔克范格", "desc": "羽刃 +3，每秒额外回复 3 点生命", "max": 1, "requires": "freyja_feathers", "awaken": true},
 }
 
 ## 卡池抽空时的保底卡
 const FALLBACK := "mead"
-const FALLBACK_INFO := {"god": "", "name": "蜜酒", "desc": "回复 30 生命", "max": 0}
+const FALLBACK_INFO := {"kind": "stat", "god": "", "name": "蜜酒", "desc": "回复 30 生命", "max": 0}
 
 
 static func get_info(id: String) -> Dictionary:
@@ -152,7 +153,7 @@ static func apply(id: String, player: Player) -> void:
 			player.rune_bolt.count += 1
 		"odin_pierce":
 			player.rune_bolt.pierce += 1
-		"odin_wisdom":
+		"wisdom":
 			player.xp_mult += 0.15
 		"odin_awaken":
 			player.rune_bolt.pierce = 9999
@@ -166,7 +167,7 @@ static func apply(id: String, player: Player) -> void:
 			player.fire_aura.radius *= 1.2
 		"loki_damage":
 			player.fire_aura.damage *= 1.3
-		"loki_trick":
+		"evasion":
 			player.dodge_chance += 0.15
 		"loki_awaken":
 			player.fire_aura.radius *= 1.5
@@ -180,7 +181,7 @@ static func apply(id: String, player: Player) -> void:
 		"freyja_speed":
 			player.feathers.spin_speed *= 1.2
 			player.feathers.damage *= 1.2
-		"freyja_regen":
+		"regen":
 			player.regen += 1.0
 		"freyja_awaken":
 			player.feathers.count += 3

@@ -78,13 +78,15 @@ func _make_card(index: int, id: String, player: Player) -> Button:
 	var info := UpgradeDB.get_info(id)
 	var is_awaken: bool = info.get("awaken", false)
 	var color := NEUTRAL_COLOR
-	var tag := "通用"
-	if info.god != "":
-		var god: Dictionary = Gods.ALL[info.god]
-		color = god.color
-		tag = "%s · %s" % [god.name, god.title]
-	elif id.begins_with("katana"):
-		tag = "太刀"
+	var tag := "通用属性"
+	match info.kind:
+		"god":
+			var god: Dictionary = Gods.ALL[info.god]
+			color = god.color
+			tag = "神明 · %s · %s" % [god.name, god.title]
+		"weapon":
+			color = Color(0.85, 0.92, 1.0)
+			tag = "基础武器 · 太刀"
 
 	var card := Button.new()
 	card.custom_minimum_size = CARD_SIZE

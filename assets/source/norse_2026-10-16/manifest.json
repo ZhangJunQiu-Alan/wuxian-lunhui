@@ -1,0 +1,624 @@
+[
+  {
+    "id": "draugr",
+    "name": "尸鬼",
+    "source_file": "/Users/zhangjunqiu/Downloads/冰霜战斧亡灵维京战士.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGBA",
+    "true_alpha": true,
+    "visual_review": "静态造型通过；高分辨率像素质感；未进行游戏内尺寸验收",
+    "source": "ChatGPT 网页版，经 Chrome 生成并下载",
+    "file": "mobs/draugr.png",
+    "sha256": "eb4c2f71285b63b450cd60e136ee7a5f33dee4dbeaa6b4091fcb7634f9a07c6e",
+    "transparent_fraction": 0.4772,
+    "visible_bounds_alpha_128": [
+      123,
+      26,
+      1115,
+      1232
+    ],
+    "chat_url": "https://chatgpt.com/c/6ad11658-4fa0-83ea-bbf2-2168df52ae45",
+    "approval_scope": "静态造型候选：北欧题材、主体完整、无文字场景、真实透明 PNG",
+    "native_64px": false,
+    "animation_ready": false,
+    "game_integrated": false
+  },
+  {
+    "id": "wolf",
+    "name": "冬狼",
+    "source_file": "/Users/zhangjunqiu/Downloads/凶猛雪狼像素精灵.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGBA",
+    "true_alpha": true,
+    "visual_review": "静态造型通过；高分辨率像素质感；未进行游戏内尺寸验收",
+    "source": "ChatGPT 网页版，经 Chrome 生成并下载",
+    "file": "mobs/wolf.png",
+    "sha256": "febd70fb66131d78a164e1244c9357c032df13c3f1932059057664dd0d4a4112",
+    "transparent_fraction": 0.5751,
+    "visible_bounds_alpha_128": [
+      26,
+      142,
+      1222,
+      1154
+    ],
+    "chat_url": "https://chatgpt.com/c/6ad1165e-973c-83e9-811c-c1dd9015314f",
+    "approval_scope": "静态造型候选：北欧题材、主体完整、无文字场景、真实透明 PNG",
+    "native_64px": false,
+    "animation_ready": false,
+    "game_integrated": false
+  },
+  {
+    "id": "ice_spirit",
+    "name": "冰霜精魂",
+    "source_file": "/Users/zhangjunqiu/Downloads/冰霜幽魂巫妖 sprite.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGBA",
+    "true_alpha": true,
+    "visual_review": "静态造型通过；高分辨率像素质感；未进行游戏内尺寸验收",
+    "source": "ChatGPT 网页版，经 Chrome 生成并下载",
+    "file": "mobs/ice_spirit.png",
+    "sha256": "0a78347832ea26ef7c518955704f127dfceb3d206443bf802aa8f24a9d89fd8a",
+    "transparent_fraction": 0.5717,
+    "visible_bounds_alpha_128": [
+      97,
+      8,
+      1191,
+      1239
+    ],
+    "chat_url": "https://chatgpt.com/c/6ad11660-1388-83e9-92f2-359736a91c18",
+    "approval_scope": "静态造型候选：北欧题材、主体完整、无文字场景、真实透明 PNG",
+    "native_64px": false,
+    "animation_ready": false,
+    "game_integrated": false
+  },
+  {
+    "id": "frost_giant",
+    "name": "霜巨人斥候",
+    "source_file": "/Users/zhangjunqiu/Downloads/冰霜巨魔战士像.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGBA",
+    "true_alpha": true,
+    "visual_review": "静态造型通过；高分辨率像素质感；未进行游戏内尺寸验收",
+    "source": "ChatGPT 网页版，经 Chrome 生成并下载",
+    "file": "mobs/frost_giant.png",
+    "sha256": "da8072397d8e1dd8a457d932c0cc5bdbb258933176de516abf122b828dbb61ee",
+    "transparent_fraction": 0.4815,
+    "visible_bounds_alpha_128": [
+      73,
+      42,
+      1217,
+      1222
+    ],
+    "chat_url": "https://chatgpt.com/c/6ad11665-759c-83e9-a994-1a414813925e",
+    "approval_scope": "静态造型候选：北欧题材、主体完整、无文字场景、真实透明 PNG",
+    "native_64px": false,
+    "animation_ready": false,
+    "game_integrated": false
+  },
+  {
+    "id": "draugr_elite",
+    "name": "墓丘誓卫",
+    "source_file": "/Users/zhangjunqiu/Downloads/冰霜亡灵维京战士.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGBA",
+    "true_alpha": true,
+    "visual_review": "静态造型通过；高分辨率像素质感；未进行游戏内尺寸验收",
+    "source": "ChatGPT 网页版，经 Chrome 生成并下载",
+    "file": "elites/draugr_elite.png",
+    "sha256": "90ded422503a47453f3c7ffc29e884eb892f5934676520b82febc9253027123e",
+    "transparent_fraction": 0.449,
+    "visible_bounds_alpha_128": [
+      30,
+      10,
+      1235,
+      1242
+    ],
+    "chat_url": "https://chatgpt.com/c/6ad11658-4fa0-83ea-bbf2-2168df52ae45",
+    "approval_scope": "静态造型候选：北欧题材、主体完整、无文字场景、真实透明 PNG",
+    "native_64px": false,
+    "animation_ready": false,
+    "game_integrated": false
+  },
+  {
+    "id": "ice_spirit_elite",
+    "name": "凛冬咒灵",
+    "source_file": "/Users/zhangjunqiu/Downloads/冰霜幽魂战士 sprites.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGBA",
+    "true_alpha": true,
+    "visual_review": "静态造型通过；高分辨率像素质感；未进行游戏内尺寸验收",
+    "source": "ChatGPT 网页版，经 Chrome 生成并下载",
+    "file": "elites/ice_spirit_elite.png",
+    "sha256": "b483408e047717134d2fb5619999b23cfa8353a76f9214a6291884ad29fb3a51",
+    "transparent_fraction": 0.5405,
+    "visible_bounds_alpha_128": [
+      162,
+      14,
+      1174,
+      1239
+    ],
+    "chat_url": "https://chatgpt.com/c/6ad1165e-973c-83e9-811c-c1dd9015314f",
+    "approval_scope": "静态造型候选：北欧题材、主体完整、无文字场景、真实透明 PNG",
+    "native_64px": false,
+    "animation_ready": false,
+    "game_integrated": false
+  },
+  {
+    "id": "frost_giant_elite",
+    "name": "冰川破阵者",
+    "source_file": "/Users/zhangjunqiu/Downloads/冰霜巨人战士像.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGBA",
+    "true_alpha": true,
+    "visual_review": "静态造型通过；高分辨率像素质感；未进行游戏内尺寸验收",
+    "source": "ChatGPT 网页版，经 Chrome 生成并下载",
+    "file": "elites/frost_giant_elite.png",
+    "sha256": "2f249a3a3fe5c8cacc9d1d1f6e96f439e770776b3946f3bd17ba81ed3bc0488d",
+    "transparent_fraction": 0.4536,
+    "visible_bounds_alpha_128": [
+      34,
+      17,
+      1240,
+      1235
+    ],
+    "chat_url": "https://chatgpt.com/c/6ad11660-1388-83e9-92f2-359736a91c18",
+    "approval_scope": "静态造型候选：北欧题材、主体完整、无文字场景、真实透明 PNG",
+    "native_64px": false,
+    "animation_ready": false,
+    "game_integrated": false
+  },
+  {
+    "id": "skoll",
+    "name": "斯库尔",
+    "source_file": "/Users/zhangjunqiu/Downloads/熔金怒啸的地狱狼.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGBA",
+    "true_alpha": true,
+    "visual_review": "静态造型通过；高分辨率像素质感；未进行游戏内尺寸验收",
+    "source": "ChatGPT 网页版，经 Chrome 生成并下载",
+    "file": "bosses/skoll.png",
+    "sha256": "251e198ed06023e0e41a628ae4e901abe27efb89e74f1d61c5fb08dd4f69649a",
+    "transparent_fraction": 0.3862,
+    "visible_bounds_alpha_128": [
+      8,
+      17,
+      1235,
+      1229
+    ],
+    "chat_url": "https://chatgpt.com/c/6ad11665-759c-83e9-a994-1a414813925e",
+    "approval_scope": "静态造型候选：北欧题材、主体完整、无文字场景、真实透明 PNG",
+    "native_64px": false,
+    "animation_ready": false,
+    "game_integrated": false
+  },
+  {
+    "id": "hati",
+    "name": "哈提",
+    "source_file": "/Users/zhangjunqiu/Downloads/冰霜月痕狼王 sprite.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGBA",
+    "true_alpha": true,
+    "visual_review": "静态造型通过；高分辨率像素质感；未进行游戏内尺寸验收",
+    "source": "ChatGPT 网页版，经 Chrome 生成并下载",
+    "file": "bosses/hati.png",
+    "sha256": "69ef1c28d634694bc1a295be38d6fca1c18f28969432ec8ddae4b4e4153244d2",
+    "transparent_fraction": 0.3961,
+    "visible_bounds_alpha_128": [
+      12,
+      33,
+      1246,
+      1237
+    ],
+    "chat_url": "https://chatgpt.com/c/6ad11658-4fa0-83ea-bbf2-2168df52ae45",
+    "approval_scope": "静态造型候选：北欧题材、主体完整、无文字场景、真实透明 PNG",
+    "native_64px": false,
+    "animation_ready": false,
+    "game_integrated": false
+  },
+  {
+    "id": "hrym",
+    "name": "赫列姆",
+    "source_file": "/Users/zhangjunqiu/Downloads/冰霜矮人王与巨锤巨盾.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGBA",
+    "true_alpha": true,
+    "visual_review": "静态造型通过；高分辨率像素质感；未进行游戏内尺寸验收",
+    "source": "ChatGPT 网页版，经 Chrome 生成并下载",
+    "file": "bosses/hrym.png",
+    "sha256": "be9679033e3ff3ee39e0bb8739220232563105b53a8c849e8f9b95b94ed812e4",
+    "transparent_fraction": 0.3873,
+    "visible_bounds_alpha_128": [
+      42,
+      8,
+      1249,
+      1244
+    ],
+    "chat_url": "https://chatgpt.com/c/6ad1165e-973c-83e9-811c-c1dd9015314f",
+    "approval_scope": "静态造型候选：北欧题材、主体完整、无文字场景、真实透明 PNG",
+    "native_64px": false,
+    "animation_ready": false,
+    "game_integrated": false
+  },
+  {
+    "id": "dead",
+    "name": "亡者",
+    "source_file": "/Users/zhangjunqiu/Downloads/像素亡灵幽魂_sprite.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGBA",
+    "true_alpha": true,
+    "visual_review": "静态造型通过；高分辨率像素质感；未进行游戏内尺寸验收",
+    "source": "ChatGPT 网页版，经 Chrome 生成并下载",
+    "file": "mobs/dead.png",
+    "sha256": "5657522b5d99a6069267f0f82bd1411a98956f7afea4f1fbf82e7b7c3a8a9e21",
+    "transparent_fraction": 0.6187,
+    "visible_bounds_alpha_128": [
+      209,
+      9,
+      1182,
+      1246
+    ],
+    "chat_url": "https://chatgpt.com/c/6ad11660-1388-83e9-92f2-359736a91c18",
+    "approval_scope": "静态造型候选：北欧题材、主体完整、无文字场景、真实透明 PNG",
+    "native_64px": false,
+    "animation_ready": false,
+    "game_integrated": false
+  },
+  {
+    "id": "mist_ghost",
+    "name": "冥雾幽魂",
+    "source_file": "/Users/zhangjunqiu/Downloads/链冠幽魂：青焰死灵 sprite.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGBA",
+    "true_alpha": true,
+    "visual_review": "静态造型通过；高分辨率像素质感；未进行游戏内尺寸验收",
+    "source": "ChatGPT 网页版，经 Chrome 生成并下载",
+    "file": "mobs/mist_ghost.png",
+    "sha256": "25bebe1c065244c81ecbc6029fb848db0b06b52486c0791354ceb6075c7f1074",
+    "transparent_fraction": 0.499,
+    "visible_bounds_alpha_128": [
+      15,
+      21,
+      1248,
+      1235
+    ],
+    "chat_url": "https://chatgpt.com/c/6ad11665-759c-83e9-a994-1a414813925e",
+    "approval_scope": "静态造型候选：北欧题材、主体完整、无文字场景、真实透明 PNG",
+    "native_64px": false,
+    "animation_ready": false,
+    "game_integrated": false
+  },
+  {
+    "id": "dark_elf",
+    "name": "黑暗精灵弓手",
+    "source_file": "/Users/zhangjunqiu/Downloads/暗影精灵盗弓者 sprite.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGBA",
+    "true_alpha": true,
+    "visual_review": "静态造型通过；高分辨率像素质感；未进行游戏内尺寸验收",
+    "source": "ChatGPT 网页版，经 Chrome 生成并下载",
+    "file": "mobs/dark_elf.png",
+    "sha256": "04cd01cdb5d331d5e4576396a9e3764b4859451218dbd292dff0b22d864c156f",
+    "transparent_fraction": 0.5522,
+    "visible_bounds_alpha_128": [
+      40,
+      35,
+      1254,
+      1231
+    ],
+    "chat_url": "https://chatgpt.com/c/6ad11658-4fa0-83ea-bbf2-2168df52ae45",
+    "approval_scope": "静态造型候选：北欧题材、主体完整、无文字场景、真实透明 PNG",
+    "native_64px": false,
+    "animation_ready": false,
+    "game_integrated": false
+  },
+  {
+    "id": "nail_golem",
+    "name": "指甲傀儡",
+    "source_file": "/Users/zhangjunqiu/Downloads/船骸骨甲巨魔.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGBA",
+    "true_alpha": true,
+    "visual_review": "静态造型通过；高分辨率像素质感；未进行游戏内尺寸验收",
+    "source": "ChatGPT 网页版，经 Chrome 生成并下载",
+    "file": "mobs/nail_golem.png",
+    "sha256": "75c7719ac107e89d6eefc13130b9cbad33a5d40043c54dc40b08f6bd695c28c8",
+    "transparent_fraction": 0.5094,
+    "visible_bounds_alpha_128": [
+      8,
+      6,
+      1244,
+      1246
+    ],
+    "chat_url": "https://chatgpt.com/c/6ad1165e-973c-83e9-811c-c1dd9015314f",
+    "approval_scope": "静态造型候选：北欧题材、主体完整、无文字场景、真实透明 PNG",
+    "native_64px": false,
+    "animation_ready": false,
+    "game_integrated": false
+  },
+  {
+    "id": "garm",
+    "name": "加姆",
+    "source_file": "/Users/zhangjunqiu/Downloads/血染铁链地狱魔狼.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGBA",
+    "true_alpha": true,
+    "visual_review": "静态造型通过；高分辨率像素质感；未进行游戏内尺寸验收",
+    "source": "ChatGPT 网页版，经 Chrome 生成并下载",
+    "file": "bosses/garm.png",
+    "sha256": "a1036f3a82e9667b0891b1347ca7204e00e9a98dafab6dc953bc6ab845be726a",
+    "transparent_fraction": 0.3895,
+    "visible_bounds_alpha_128": [
+      9,
+      8,
+      1247,
+      1247
+    ],
+    "chat_url": "https://chatgpt.com/c/6ad11660-1388-83e9-92f2-359736a91c18",
+    "approval_scope": "静态造型候选：北欧题材、主体完整、无文字场景、真实透明 PNG",
+    "native_64px": false,
+    "animation_ready": false,
+    "game_integrated": false
+  },
+  {
+    "id": "nidhogg",
+    "name": "尼德霍格",
+    "source_file": "/Users/zhangjunqiu/Downloads/腐朽毒光巨龙像.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGBA",
+    "true_alpha": true,
+    "visual_review": "静态造型通过；高分辨率像素质感；未进行游戏内尺寸验收",
+    "source": "ChatGPT 网页版，经 Chrome 生成并下载",
+    "file": "bosses/nidhogg.png",
+    "sha256": "f1b36d04d954e5d5ae9a5694bde87cfc8b7f592a08254aac803ba3371f4bffbb",
+    "transparent_fraction": 0.3367,
+    "visible_bounds_alpha_128": [
+      5,
+      48,
+      1244,
+      1240
+    ],
+    "chat_url": "https://chatgpt.com/c/6ad11665-759c-83e9-a994-1a414813925e",
+    "approval_scope": "静态造型候选：北欧题材、主体完整、无文字场景、真实透明 PNG",
+    "native_64px": false,
+    "animation_ready": false,
+    "game_integrated": false
+  },
+  {
+    "id": "hel",
+    "name": "海拉",
+    "source_file": "/Users/zhangjunqiu/Downloads/暗影亡灵女王像.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGBA",
+    "true_alpha": true,
+    "visual_review": "静态造型通过；高分辨率像素质感；未进行游戏内尺寸验收",
+    "source": "ChatGPT 网页版，经 Chrome 生成并下载",
+    "file": "bosses/hel.png",
+    "sha256": "deeb417ab7a381625f7d252d09d9948c9c24baa18de24617b997d8f0bbd4332d",
+    "transparent_fraction": 0.3966,
+    "visible_bounds_alpha_128": [
+      7,
+      1,
+      1250,
+      1252
+    ],
+    "chat_url": "https://chatgpt.com/c/6ad11658-4fa0-83ea-bbf2-2168df52ae45",
+    "approval_scope": "静态造型候选：北欧题材、主体完整、无文字场景、真实透明 PNG",
+    "native_64px": false,
+    "animation_ready": false,
+    "game_integrated": false
+  },
+  {
+    "id": "fire_giant",
+    "name": "火焰巨人",
+    "source_file": "/Users/zhangjunqiu/Downloads/熔岩巨像战士像素立绘.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGBA",
+    "true_alpha": true,
+    "visual_review": "静态造型通过；高分辨率像素质感；未进行游戏内尺寸验收",
+    "source": "ChatGPT 网页版，经 Chrome 生成并下载",
+    "file": "mobs/fire_giant.png",
+    "sha256": "e9a2f4d01c7bc80c05a0af67e687aa3cf494d542556354ebe073964dfeeee83f",
+    "transparent_fraction": 0.422,
+    "visible_bounds_alpha_128": [
+      37,
+      15,
+      1239,
+      1244
+    ],
+    "chat_url": "https://chatgpt.com/c/6ad1165e-973c-83e9-811c-c1dd9015314f",
+    "approval_scope": "静态造型候选：北欧题材、主体完整、无文字场景、真实透明 PNG",
+    "native_64px": false,
+    "animation_ready": false,
+    "game_integrated": false
+  },
+  {
+    "id": "frost_veteran",
+    "name": "霜巨人精锐",
+    "source_file": "/Users/zhangjunqiu/Downloads/冰霜巨人战士：巨盾与战斧.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGBA",
+    "true_alpha": true,
+    "visual_review": "静态造型通过；高分辨率像素质感；未进行游戏内尺寸验收",
+    "source": "ChatGPT 网页版，经 Chrome 生成并下载",
+    "file": "mobs/frost_veteran.png",
+    "sha256": "c2e18d85d6de9efb1f93a21b654100b8edbe9f9f6e8b83fa0b766094fd2deec0",
+    "transparent_fraction": 0.4008,
+    "visible_bounds_alpha_128": [
+      17,
+      4,
+      1252,
+      1251
+    ],
+    "chat_url": "https://chatgpt.com/c/6ad11660-1388-83e9-92f2-359736a91c18",
+    "approval_scope": "静态造型候选：北欧题材、主体完整、无文字场景、真实透明 PNG",
+    "native_64px": false,
+    "animation_ready": false,
+    "game_integrated": false
+  },
+  {
+    "id": "berserker",
+    "name": "狂狼战士",
+    "source_file": "/Users/zhangjunqiu/Downloads/狼皮双斧狂战士.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGBA",
+    "true_alpha": true,
+    "visual_review": "静态造型通过；高分辨率像素质感；未进行游戏内尺寸验收",
+    "source": "ChatGPT 网页版，经 Chrome 生成并下载",
+    "file": "mobs/berserker.png",
+    "sha256": "eae11ce3d7d1ed419f4c4b8e7bf79e7644db2a05d9f344a2839636e562ea6cdc",
+    "transparent_fraction": 0.3707,
+    "visible_bounds_alpha_128": [
+      37,
+      24,
+      1253,
+      1254
+    ],
+    "chat_url": "https://chatgpt.com/c/6ad11665-759c-83e9-a994-1a414813925e",
+    "approval_scope": "静态造型候选：北欧题材、主体完整、无文字场景、真实透明 PNG",
+    "native_64px": false,
+    "animation_ready": false,
+    "game_integrated": false
+  },
+  {
+    "id": "jormungandr",
+    "name": "耶梦加得",
+    "source_file": "/Users/zhangjunqiu/Downloads/毒鳞深海巨蛇怒吼.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGBA",
+    "true_alpha": true,
+    "visual_review": "静态造型通过；高分辨率像素质感；未进行游戏内尺寸验收",
+    "source": "ChatGPT 网页版，经 Chrome 生成并下载",
+    "file": "bosses/jormungandr.png",
+    "sha256": "a6d1dd05116721d06b1a51f88c9ee75a3b488ba792482bdd2bea2254d7a8da3c",
+    "transparent_fraction": 0.296,
+    "visible_bounds_alpha_128": [
+      10,
+      3,
+      1254,
+      1254
+    ],
+    "chat_url": "https://chatgpt.com/c/6ad11658-4fa0-83ea-bbf2-2168df52ae45",
+    "approval_scope": "静态造型候选：北欧题材、主体完整、无文字场景、真实透明 PNG",
+    "native_64px": false,
+    "animation_ready": false,
+    "game_integrated": false,
+    "special_note": "完整造型样张；绕场玩法仍需单独制作蛇头、可连接蛇身和蛇尾"
+  },
+  {
+    "id": "fenrir",
+    "name": "芬里尔",
+    "source_file": "/Users/zhangjunqiu/Downloads/咆哮的锁链魔狼.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGBA",
+    "true_alpha": true,
+    "visual_review": "静态造型通过；高分辨率像素质感；未进行游戏内尺寸验收",
+    "source": "ChatGPT 网页版，经 Chrome 生成并下载",
+    "file": "bosses/fenrir.png",
+    "sha256": "a84abddb3e20d0f26900828ef90335768008bd87316adfaa6aac357e990edb63",
+    "transparent_fraction": 0.2977,
+    "visible_bounds_alpha_128": [
+      15,
+      2,
+      1250,
+      1244
+    ],
+    "chat_url": "https://chatgpt.com/c/6ad1165e-973c-83e9-811c-c1dd9015314f",
+    "approval_scope": "静态造型候选：北欧题材、主体完整、无文字场景、真实透明 PNG",
+    "native_64px": false,
+    "animation_ready": false,
+    "game_integrated": false
+  },
+  {
+    "id": "surtr",
+    "name": "苏尔特",
+    "source_file": "/Users/zhangjunqiu/Downloads/熔岩巨人骑士 sprite.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGBA",
+    "true_alpha": true,
+    "visual_review": "静态造型通过；高分辨率像素质感；未进行游戏内尺寸验收",
+    "source": "ChatGPT 网页版，经 Chrome 生成并下载",
+    "file": "bosses/surtr.png",
+    "sha256": "875c7cc12167b72cb601e715f630a03ae7c1838e30e0d3a27f73c81ed6033b9b",
+    "transparent_fraction": 0.4491,
+    "visible_bounds_alpha_128": [
+      72,
+      0,
+      1236,
+      1254
+    ],
+    "chat_url": "https://chatgpt.com/c/6ad11660-1388-83e9-92f2-359736a91c18",
+    "approval_scope": "静态造型候选：北欧题材、主体完整、无文字场景、真实透明 PNG",
+    "native_64px": false,
+    "animation_ready": false,
+    "game_integrated": false
+  }
+]

@@ -7,8 +7,10 @@ signal hp_changed(hp: float, max_hp: float)
 signal xp_changed(xp: float, xp_to_next: int, level: int)
 signal leveled_up(level: int)
 signal ult_changed(energy: float, cost: float)
+signal ult_cast(character_id: String)
 
-const CHARACTER_NAME := "宫本武藏"  # 角色系统做好之前，先固定为宫本武藏
+const CHARACTER_ID := "musashi"  # 角色系统做好之前，先固定为宫本武藏
+const CHARACTER_NAME := "宫本武藏"
 const SPRITE_PATH := "res://assets/sprites/characters/musashi"  # 放 musashi.png 或 musashi.tres 即可替换占位图形
 const SPRITE_HEIGHT := 48.0
 const RADIUS := 14.0
@@ -48,6 +50,8 @@ var fire_aura: FireAura
 var feathers: FeatherOrbit
 
 var _invincible_time := 0.0
+var _fear_time := 0.0  # 恐惧：不受控制地远离 _fear_from
+var _fear_from := Vector2.ZERO
 var _camera: Camera2D
 var _sprite: Node2D
 var _shake_strength := 0.0
@@ -83,6 +87,9 @@ func _physics_process(delta: float) -> void:
 	dir.x += float(Input.is_key_pressed(KEY_D)) - float(Input.is_key_pressed(KEY_A))
 	dir.y += float(Input.is_key_pressed(KEY_S)) - float(Input.is_key_pressed(KEY_W))
 	dir = dir.limit_length(1.0)
+	if _fear_time > 0.0:
+		_fear_time -= delta
+		dir = (global_position - _fear_from).normalized()
 	if dir != Vector2.ZERO:
 		facing = dir.normalized()
 	velocity = dir * move_speed
@@ -112,6 +119,7 @@ func try_ultimate() -> void:
 	ult_energy = 0.0
 	ult_changed.emit(ult_energy, ult_cost)
 	DimensionSlash.cast(self)
+	ult_cast.emit(CHARACTER_ID)
 
 
 ## 镜头震动，strength 是最大偏移像素
@@ -145,6 +153,14 @@ func take_damage(amount: float) -> void:
 		died.emit()
 
 
+## 恐惧：duration 秒内不受控制地远离 from
+func fear(from: Vector2, duration: float) -> void:
+	if is_dead:
+		return
+	_fear_from = from
+	_fear_time = duration
+
+
 func heal(amount: float) -> void:
 	hp = minf(max_hp, hp + amount)
 	hp_changed.emit(hp, max_hp)
@@ -162,6 +178,8 @@ func add_xp(amount: float) -> void:
 
 func _draw() -> void:
 	var hurt_blink := _invincible_time > 0.0 and int(_invincible_time * 20.0) % 2 == 0
+	if _fear_time > 0.0:  # 恐惧时头顶有紫色漩涡
+		draw_arc(Vector2(0, -RADIUS - 10), 7.0, _fear_time * 10.0, _fear_time * 10.0 + 4.5, 12, Color(0.75, 0.45, 1.0), 2.5)
 	if _sprite:
 		_sprite.modulate = Color(1, 0.4, 0.4) if hurt_blink else Color.WHITE
 		if facing.x != 0.0:

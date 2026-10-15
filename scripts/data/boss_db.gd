@@ -8,6 +8,10 @@ static func create(id: String, hp_scale: float) -> Boss:
 	match id:
 		"skoll":
 			boss = Skoll.new()
+		"hati":
+			boss = Hati.new()
+		"hrym":
+			boss = Hrym.new()
 		_:
 			push_error("未知的 Boss：" + id)
 			return null

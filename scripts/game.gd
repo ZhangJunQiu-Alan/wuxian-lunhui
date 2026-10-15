@@ -20,6 +20,7 @@ var _pending_rewards: Array[String] = []  # 待选择的奖励（升级或宝箱
 var boss: Boss
 var _alive_by_type := {}  # 敌人 id -> 当前存活数量
 var _next_boss := 0
+var _defeated_bosses: Array[String] = []
 
 
 func _ready() -> void:
@@ -35,6 +36,7 @@ func _ready() -> void:
 	player.hp_changed.connect(hud.set_hp)
 	player.xp_changed.connect(hud.set_xp)
 	player.ult_changed.connect(hud.set_ult)
+	player.ult_cast.connect(hud.show_cutin)
 	hud.set_hp(player.hp, player.max_hp)
 	hud.set_xp(player.xp, player.xp_to_next, player.level)
 	hud.set_ult(player.ult_energy, player.ult_cost)
@@ -145,6 +147,7 @@ func _update_bosses() -> void:
 		return
 	boss.target = player
 	boss.spawner = _spawn_enemy
+	boss.defeated_bosses = _defeated_bosses
 	boss.position = player.position + Vector2.from_angle(randf() * TAU) * 520.0
 	boss.killed.connect(_on_enemy_killed)
 	boss.hp_changed.connect(hud.set_boss_hp)
@@ -156,8 +159,12 @@ func _update_bosses() -> void:
 
 
 func _on_boss_defeated(defeated_boss: Boss) -> void:
+	_defeated_bosses.append(defeated_boss.type_id)
 	hud.hide_boss()
 	hud.announce(defeated_boss.defeat_line)
+	if defeated_boss.type_id == level_data.final_boss:
+		get_tree().create_timer(3.0).timeout.connect(_on_level_cleared)  # 留 3 秒看击败演出
+		return
 	var chest := Chest.new()
 	chest.player = player
 	chest.position = defeated_boss.position
@@ -193,6 +200,13 @@ func _on_upgrade_chosen(id: String) -> void:
 		level_up_panel.open(UpgradeDB.get_choices(player, 3), player, _pending_rewards[0])
 	else:
 		get_tree().paused = false
+
+
+func _on_level_cleared() -> void:
+	if player.is_dead:
+		return
+	get_tree().paused = true
+	hud.show_victory(level_data.name, level_data.clear_text, elapsed, kills, player.level)
 
 
 func _on_player_died() -> void:
