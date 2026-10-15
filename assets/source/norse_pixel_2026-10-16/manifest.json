@@ -1,10 +1,124 @@
 [
   {
+    "id": "draugr_elite",
+    "name": "墓丘誓卫",
+    "file": "64/elites/draugr_elite.png",
+    "source_file": "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/norse_2026-10-16/elites/draugr_elite.png",
+    "browser_download": "/Users/zhangjunqiu/Downloads/pixel-asset-64x64 (7).png",
+    "size": [
+      64,
+      64
+    ],
+    "mode": "RGBA",
+    "rgba_color_count": 46,
+    "alpha_levels": [
+      0,
+      255
+    ],
+    "bounds": [
+      4,
+      3,
+      60,
+      61
+    ],
+    "pixel_sha256": "3b694defd4312dd1969b78b2d5202fd7ac8c22257dee756b1e73c3ec3b3e536a",
+    "processor": "https://pixel-asset-studio.com/",
+    "settings": {
+      "logical_size": 64,
+      "palette": "Source",
+      "colour_budget": 32,
+      "dither": "None",
+      "frame_subject": true,
+      "clean_sprite": true,
+      "clean_transparent_edges": true,
+      "export_scale": 1
+    },
+    "review_scope": "尺寸与透明通道通过；保留为静态候选，尚未进行游戏内验收",
+    "animation_ready": false,
+    "game_integrated": false
+  },
+  {
+    "id": "ice_spirit_elite",
+    "name": "凛冬咒灵",
+    "file": "64/elites/ice_spirit_elite.png",
+    "source_file": "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/norse_2026-10-16/elites/ice_spirit_elite.png",
+    "browser_download": "/Users/zhangjunqiu/Downloads/pixel-asset-64x64 (8).png",
+    "size": [
+      64,
+      64
+    ],
+    "mode": "RGBA",
+    "rgba_color_count": 65,
+    "alpha_levels": [
+      0,
+      255
+    ],
+    "bounds": [
+      9,
+      4,
+      56,
+      60
+    ],
+    "pixel_sha256": "265e7df29f87d166c04a40ff9b15acfd2a9254e9ebfed2324d597f30f53bff4f",
+    "processor": "https://pixel-asset-studio.com/",
+    "settings": {
+      "logical_size": 64,
+      "palette": "Source",
+      "colour_budget": 32,
+      "dither": "None",
+      "frame_subject": true,
+      "clean_sprite": true,
+      "clean_transparent_edges": true,
+      "export_scale": 1
+    },
+    "review_scope": "尺寸与透明通道通过；保留为静态候选，尚未进行游戏内验收",
+    "animation_ready": false,
+    "game_integrated": false
+  },
+  {
+    "id": "frost_giant_elite",
+    "name": "冰川破阵者",
+    "file": "64/elites/frost_giant_elite.png",
+    "source_file": "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/norse_2026-10-16/elites/frost_giant_elite.png",
+    "browser_download": "/Users/zhangjunqiu/Downloads/pixel-asset-64x64 (9).png",
+    "size": [
+      64,
+      64
+    ],
+    "mode": "RGBA",
+    "rgba_color_count": 45,
+    "alpha_levels": [
+      0,
+      255
+    ],
+    "bounds": [
+      5,
+      4,
+      61,
+      60
+    ],
+    "pixel_sha256": "8f41d17a35ae6d9dc25c6753146fe365bb5f98a3529c85754660dede9f06ca36",
+    "processor": "https://pixel-asset-studio.com/",
+    "settings": {
+      "logical_size": 64,
+      "palette": "Source",
+      "colour_budget": 32,
+      "dither": "None",
+      "frame_subject": true,
+      "clean_sprite": true,
+      "clean_transparent_edges": true,
+      "export_scale": 1
+    },
+    "review_scope": "尺寸与透明通道通过；保留为静态候选，尚未进行游戏内验收",
+    "animation_ready": false,
+    "game_integrated": false
+  },
+  {
     "id": "draugr",
     "name": "尸鬼",
     "file": "64/mobs/draugr.png",
-    "source_file": "../norse_2026-10-16/mobs/draugr.png",
-    "browser_download": "/Users/zhangjunqiu/Downloads/pixel-asset-64x64.png",
+    "source_file": "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/norse_2026-10-16/mobs/draugr.png",
+    "browser_download": "/Users/zhangjunqiu/Downloads/pixel-asset-64x64 (10).png",
     "size": [
       64,
       64
@@ -15,48 +129,72 @@
       0,
       255
     ],
+    "bounds": [
+      8,
+      4,
+      55,
+      60
+    ],
+    "pixel_sha256": "1d439ab68e313c530ea6195c4e3e3ef9dd93ea05801a9ee19bfcbbf985ac74ba",
     "processor": "https://pixel-asset-studio.com/",
     "settings": {
       "logical_size": 64,
       "palette": "Source",
       "colour_budget": 32,
       "dither": "None",
+      "frame_subject": true,
+      "clean_sprite": true,
+      "clean_transparent_edges": true,
       "export_scale": 1
     },
-    "status": "批量转换候选；未进行游戏内验收"
+    "review_scope": "尺寸与透明通道通过；保留为静态候选，尚未进行游戏内验收",
+    "animation_ready": false,
+    "game_integrated": false
   },
   {
     "id": "wolf",
     "name": "冬狼",
     "file": "64/mobs/wolf.png",
-    "source_file": "../norse_2026-10-16/mobs/wolf.png",
-    "browser_download": "/Users/zhangjunqiu/Downloads/pixel-asset-64x64 (1).png",
+    "source_file": "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/norse_2026-10-16/mobs/wolf.png",
+    "browser_download": "/Users/zhangjunqiu/Downloads/pixel-asset-64x64 (11).png",
     "size": [
       64,
       64
     ],
     "mode": "RGBA",
-    "rgba_color_count": 22,
+    "rgba_color_count": 42,
     "alpha_levels": [
       0,
       255
     ],
+    "bounds": [
+      4,
+      9,
+      59,
+      55
+    ],
+    "pixel_sha256": "5530ead1c2a7bf1311f997af5ce9fb8ddf5260519a3e0b67a1bfe0ca53a10d90",
     "processor": "https://pixel-asset-studio.com/",
     "settings": {
       "logical_size": 64,
       "palette": "Source",
       "colour_budget": 32,
       "dither": "None",
+      "frame_subject": true,
+      "clean_sprite": true,
+      "clean_transparent_edges": true,
       "export_scale": 1
     },
-    "status": "批量转换候选；未进行游戏内验收"
+    "review_scope": "尺寸与透明通道通过；保留为静态候选，尚未进行游戏内验收",
+    "animation_ready": false,
+    "game_integrated": false
   },
   {
     "id": "ice_spirit",
     "name": "冰霜精魂",
     "file": "64/mobs/ice_spirit.png",
-    "source_file": "../norse_2026-10-16/mobs/ice_spirit.png",
-    "browser_download": "/Users/zhangjunqiu/Downloads/pixel-asset-64x64 (2).png",
+    "source_file": "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/norse_2026-10-16/mobs/ice_spirit.png",
+    "browser_download": "/Users/zhangjunqiu/Downloads/pixel-asset-64x64 (12).png",
     "size": [
       64,
       64
@@ -67,14 +205,672 @@
       0,
       255
     ],
+    "bounds": [
+      7,
+      4,
+      58,
+      60
+    ],
+    "pixel_sha256": "520539c8a6fe204b644f4f0826bac89faf69603ce763bb41c102a3558e00870f",
     "processor": "https://pixel-asset-studio.com/",
     "settings": {
       "logical_size": 64,
       "palette": "Source",
       "colour_budget": 32,
       "dither": "None",
+      "frame_subject": true,
+      "clean_sprite": true,
+      "clean_transparent_edges": true,
       "export_scale": 1
     },
-    "status": "批量转换候选；未进行游戏内验收"
+    "review_scope": "尺寸与透明通道通过；保留为静态候选，尚未进行游戏内验收",
+    "animation_ready": false,
+    "game_integrated": false
+  },
+  {
+    "id": "frost_giant",
+    "name": "霜巨人斥候",
+    "file": "64/mobs/frost_giant.png",
+    "source_file": "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/norse_2026-10-16/mobs/frost_giant.png",
+    "browser_download": "/Users/zhangjunqiu/Downloads/pixel-asset-64x64 (13).png",
+    "size": [
+      64,
+      64
+    ],
+    "mode": "RGBA",
+    "rgba_color_count": 46,
+    "alpha_levels": [
+      0,
+      255
+    ],
+    "bounds": [
+      6,
+      5,
+      59,
+      60
+    ],
+    "pixel_sha256": "96c1a47f819ad775c4ff6e0c77f7a18ea931cfaea86560f0a8949ec62b8019fb",
+    "processor": "https://pixel-asset-studio.com/",
+    "settings": {
+      "logical_size": 64,
+      "palette": "Source",
+      "colour_budget": 32,
+      "dither": "None",
+      "frame_subject": true,
+      "clean_sprite": true,
+      "clean_transparent_edges": true,
+      "export_scale": 1
+    },
+    "review_scope": "尺寸与透明通道通过；保留为静态候选，尚未进行游戏内验收",
+    "animation_ready": false,
+    "game_integrated": false
+  },
+  {
+    "id": "dead",
+    "name": "亡者",
+    "file": "64/mobs/dead.png",
+    "source_file": "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/norse_2026-10-16/mobs/dead.png",
+    "browser_download": "/Users/zhangjunqiu/Downloads/pixel-asset-64x64 (14).png",
+    "size": [
+      64,
+      64
+    ],
+    "mode": "RGBA",
+    "rgba_color_count": 50,
+    "alpha_levels": [
+      0,
+      255
+    ],
+    "bounds": [
+      9,
+      3,
+      55,
+      61
+    ],
+    "pixel_sha256": "a794003f3194baaacb386f702f21e013a138a659011aa032477a6bc62f1defdf",
+    "processor": "https://pixel-asset-studio.com/",
+    "settings": {
+      "logical_size": 64,
+      "palette": "Source",
+      "colour_budget": 32,
+      "dither": "None",
+      "frame_subject": true,
+      "clean_sprite": true,
+      "clean_transparent_edges": true,
+      "export_scale": 1
+    },
+    "review_scope": "尺寸与透明通道通过；保留为静态候选，尚未进行游戏内验收",
+    "animation_ready": false,
+    "game_integrated": false
+  },
+  {
+    "id": "mist_ghost",
+    "name": "冥雾幽魂",
+    "file": "64/mobs/mist_ghost.png",
+    "source_file": "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/norse_2026-10-16/mobs/mist_ghost.png",
+    "browser_download": "/Users/zhangjunqiu/Downloads/pixel-asset-64x64 (15).png",
+    "size": [
+      64,
+      64
+    ],
+    "mode": "RGBA",
+    "rgba_color_count": 78,
+    "alpha_levels": [
+      0,
+      255
+    ],
+    "bounds": [
+      4,
+      5,
+      61,
+      60
+    ],
+    "pixel_sha256": "d58d88258d2d75596197f6bd0f944371461e40a30a15059f35d25d2b39706f09",
+    "processor": "https://pixel-asset-studio.com/",
+    "settings": {
+      "logical_size": 64,
+      "palette": "Source",
+      "colour_budget": 32,
+      "dither": "None",
+      "frame_subject": true,
+      "clean_sprite": true,
+      "clean_transparent_edges": true,
+      "export_scale": 1
+    },
+    "review_scope": "尺寸与透明通道通过；保留为静态候选，尚未进行游戏内验收",
+    "animation_ready": false,
+    "game_integrated": false
+  },
+  {
+    "id": "dark_elf",
+    "name": "黑暗精灵弓手",
+    "file": "64/mobs/dark_elf.png",
+    "source_file": "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/norse_2026-10-16/mobs/dark_elf.png",
+    "browser_download": "/Users/zhangjunqiu/Downloads/pixel-asset-64x64 (16).png",
+    "size": [
+      64,
+      64
+    ],
+    "mode": "RGBA",
+    "rgba_color_count": 36,
+    "alpha_levels": [
+      0,
+      255
+    ],
+    "bounds": [
+      5,
+      5,
+      61,
+      60
+    ],
+    "pixel_sha256": "791632517e1528bb568e580f477162772e028d91880162e451ef656154a43760",
+    "processor": "https://pixel-asset-studio.com/",
+    "settings": {
+      "logical_size": 64,
+      "palette": "Source",
+      "colour_budget": 32,
+      "dither": "None",
+      "frame_subject": true,
+      "clean_sprite": true,
+      "clean_transparent_edges": true,
+      "export_scale": 1
+    },
+    "review_scope": "尺寸与透明通道通过；保留为静态候选，尚未进行游戏内验收",
+    "animation_ready": false,
+    "game_integrated": false
+  },
+  {
+    "id": "nail_golem",
+    "name": "指甲傀儡",
+    "file": "64/mobs/nail_golem.png",
+    "source_file": "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/norse_2026-10-16/mobs/nail_golem.png",
+    "browser_download": "/Users/zhangjunqiu/Downloads/pixel-asset-64x64 (17).png",
+    "size": [
+      64,
+      64
+    ],
+    "mode": "RGBA",
+    "rgba_color_count": 65,
+    "alpha_levels": [
+      0,
+      255
+    ],
+    "bounds": [
+      3,
+      3,
+      61,
+      61
+    ],
+    "pixel_sha256": "b9b3536307773992c5fb6703f90ba4f469f3b4086adaa3feaac24c9cd2884654",
+    "processor": "https://pixel-asset-studio.com/",
+    "settings": {
+      "logical_size": 64,
+      "palette": "Source",
+      "colour_budget": 32,
+      "dither": "None",
+      "frame_subject": true,
+      "clean_sprite": true,
+      "clean_transparent_edges": true,
+      "export_scale": 1
+    },
+    "review_scope": "尺寸与透明通道通过；保留为静态候选，尚未进行游戏内验收",
+    "animation_ready": false,
+    "game_integrated": false
+  },
+  {
+    "id": "fire_giant",
+    "name": "火焰巨人",
+    "file": "64/mobs/fire_giant.png",
+    "source_file": "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/norse_2026-10-16/mobs/fire_giant.png",
+    "browser_download": "/Users/zhangjunqiu/Downloads/pixel-asset-64x64 (18).png",
+    "size": [
+      64,
+      64
+    ],
+    "mode": "RGBA",
+    "rgba_color_count": 46,
+    "alpha_levels": [
+      0,
+      255
+    ],
+    "bounds": [
+      5,
+      4,
+      61,
+      61
+    ],
+    "pixel_sha256": "2e2c1e85d094eb7b44973f453db061ac0d89e72da4ac0f99c1a345e38475f755",
+    "processor": "https://pixel-asset-studio.com/",
+    "settings": {
+      "logical_size": 64,
+      "palette": "Source",
+      "colour_budget": 32,
+      "dither": "None",
+      "frame_subject": true,
+      "clean_sprite": true,
+      "clean_transparent_edges": true,
+      "export_scale": 1
+    },
+    "review_scope": "尺寸与透明通道通过；保留为静态候选，尚未进行游戏内验收",
+    "animation_ready": false,
+    "game_integrated": false
+  },
+  {
+    "id": "frost_veteran",
+    "name": "霜巨人精锐",
+    "file": "64/mobs/frost_veteran.png",
+    "source_file": "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/norse_2026-10-16/mobs/frost_veteran.png",
+    "browser_download": "/Users/zhangjunqiu/Downloads/pixel-asset-64x64 (19).png",
+    "size": [
+      64,
+      64
+    ],
+    "mode": "RGBA",
+    "rgba_color_count": 48,
+    "alpha_levels": [
+      0,
+      255
+    ],
+    "bounds": [
+      4,
+      4,
+      61,
+      61
+    ],
+    "pixel_sha256": "558fe60dbf0d818da7145bf8e1f9e685651cdba530f1d08f3f5f087670fd90df",
+    "processor": "https://pixel-asset-studio.com/",
+    "settings": {
+      "logical_size": 64,
+      "palette": "Source",
+      "colour_budget": 32,
+      "dither": "None",
+      "frame_subject": true,
+      "clean_sprite": true,
+      "clean_transparent_edges": true,
+      "export_scale": 1
+    },
+    "review_scope": "尺寸与透明通道通过；保留为静态候选，尚未进行游戏内验收",
+    "animation_ready": false,
+    "game_integrated": false
+  },
+  {
+    "id": "berserker",
+    "name": "狂狼战士",
+    "file": "64/mobs/berserker.png",
+    "source_file": "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/norse_2026-10-16/mobs/berserker.png",
+    "browser_download": "/Users/zhangjunqiu/Downloads/pixel-asset-64x64 (20).png",
+    "size": [
+      64,
+      64
+    ],
+    "mode": "RGBA",
+    "rgba_color_count": 56,
+    "alpha_levels": [
+      0,
+      255
+    ],
+    "bounds": [
+      5,
+      4,
+      61,
+      61
+    ],
+    "pixel_sha256": "e26f0068aa6ad4d19863daac1fdbf8c2bebbc4c964fd3200986407c0d7c04ef9",
+    "processor": "https://pixel-asset-studio.com/",
+    "settings": {
+      "logical_size": 64,
+      "palette": "Source",
+      "colour_budget": 32,
+      "dither": "None",
+      "frame_subject": true,
+      "clean_sprite": true,
+      "clean_transparent_edges": true,
+      "export_scale": 1
+    },
+    "review_scope": "尺寸与透明通道通过；保留为静态候选，尚未进行游戏内验收",
+    "animation_ready": false,
+    "game_integrated": false
+  },
+  {
+    "id": "skoll",
+    "name": "斯库尔",
+    "file": "128/bosses/skoll.png",
+    "source_file": "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/norse_2026-10-16/bosses/skoll.png",
+    "browser_download": "/Users/zhangjunqiu/Downloads/pixel-asset-128x128.png",
+    "size": [
+      128,
+      128
+    ],
+    "mode": "RGBA",
+    "rgba_color_count": 78,
+    "alpha_levels": [
+      0,
+      255
+    ],
+    "bounds": [
+      7,
+      8,
+      120,
+      118
+    ],
+    "pixel_sha256": "3a6c0e4002526abe050ce74cb1cb86a12ccd0e38956c51a0ad5ead8f791ccd2b",
+    "processor": "https://pixel-asset-studio.com/",
+    "settings": {
+      "logical_size": 128,
+      "palette": "Source",
+      "colour_budget": 32,
+      "dither": "None",
+      "frame_subject": true,
+      "clean_sprite": true,
+      "clean_transparent_edges": true,
+      "export_scale": 1
+    },
+    "review_scope": "尺寸与透明通道通过；保留为静态候选，尚未进行游戏内验收",
+    "animation_ready": false,
+    "game_integrated": false
+  },
+  {
+    "id": "hati",
+    "name": "哈提",
+    "file": "128/bosses/hati.png",
+    "source_file": "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/norse_2026-10-16/bosses/hati.png",
+    "browser_download": "/Users/zhangjunqiu/Downloads/pixel-asset-128x128 (1).png",
+    "size": [
+      128,
+      128
+    ],
+    "mode": "RGBA",
+    "rgba_color_count": 93,
+    "alpha_levels": [
+      0,
+      255
+    ],
+    "bounds": [
+      8,
+      10,
+      120,
+      119
+    ],
+    "pixel_sha256": "98479def4db82c3a2df9278f580339bdeffb677c0c3d563788f8f322045869f1",
+    "processor": "https://pixel-asset-studio.com/",
+    "settings": {
+      "logical_size": 128,
+      "palette": "Source",
+      "colour_budget": 32,
+      "dither": "None",
+      "frame_subject": true,
+      "clean_sprite": true,
+      "clean_transparent_edges": true,
+      "export_scale": 1
+    },
+    "review_scope": "尺寸与透明通道通过；保留为静态候选，尚未进行游戏内验收",
+    "animation_ready": false,
+    "game_integrated": false
+  },
+  {
+    "id": "hrym",
+    "name": "赫列姆",
+    "file": "128/bosses/hrym.png",
+    "source_file": "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/norse_2026-10-16/bosses/hrym.png",
+    "browser_download": "/Users/zhangjunqiu/Downloads/pixel-asset-128x128 (2).png",
+    "size": [
+      128,
+      128
+    ],
+    "mode": "RGBA",
+    "rgba_color_count": 72,
+    "alpha_levels": [
+      0,
+      255
+    ],
+    "bounds": [
+      11,
+      8,
+      121,
+      120
+    ],
+    "pixel_sha256": "85e357a2623a33129415820a332f766737f4364ccfb2e58e9d5fdce17c1b2667",
+    "processor": "https://pixel-asset-studio.com/",
+    "settings": {
+      "logical_size": 128,
+      "palette": "Source",
+      "colour_budget": 32,
+      "dither": "None",
+      "frame_subject": true,
+      "clean_sprite": true,
+      "clean_transparent_edges": true,
+      "export_scale": 1
+    },
+    "review_scope": "尺寸与透明通道通过；保留为静态候选，尚未进行游戏内验收",
+    "animation_ready": false,
+    "game_integrated": false
+  },
+  {
+    "id": "garm",
+    "name": "加姆",
+    "file": "128/bosses/garm.png",
+    "source_file": "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/norse_2026-10-16/bosses/garm.png",
+    "browser_download": "/Users/zhangjunqiu/Downloads/pixel-asset-128x128 (3).png",
+    "size": [
+      128,
+      128
+    ],
+    "mode": "RGBA",
+    "rgba_color_count": 79,
+    "alpha_levels": [
+      0,
+      255
+    ],
+    "bounds": [
+      8,
+      8,
+      120,
+      120
+    ],
+    "pixel_sha256": "4f70c2d7585bedf0a006816350c9cf5cf66d846c76d9d1206fcdece6c1054dc0",
+    "processor": "https://pixel-asset-studio.com/",
+    "settings": {
+      "logical_size": 128,
+      "palette": "Source",
+      "colour_budget": 32,
+      "dither": "None",
+      "frame_subject": true,
+      "clean_sprite": true,
+      "clean_transparent_edges": true,
+      "export_scale": 1
+    },
+    "review_scope": "尺寸与透明通道通过；保留为静态候选，尚未进行游戏内验收",
+    "animation_ready": false,
+    "game_integrated": false
+  },
+  {
+    "id": "nidhogg",
+    "name": "尼德霍格",
+    "file": "128/bosses/nidhogg.png",
+    "source_file": "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/norse_2026-10-16/bosses/nidhogg.png",
+    "browser_download": "/Users/zhangjunqiu/Downloads/pixel-asset-128x128 (4).png",
+    "size": [
+      128,
+      128
+    ],
+    "mode": "RGBA",
+    "rgba_color_count": 110,
+    "alpha_levels": [
+      0,
+      255
+    ],
+    "bounds": [
+      7,
+      11,
+      120,
+      120
+    ],
+    "pixel_sha256": "17651dbd936778e19b6dda8e52665a0038f1c649510bd62caee95f80a54f9cdc",
+    "processor": "https://pixel-asset-studio.com/",
+    "settings": {
+      "logical_size": 128,
+      "palette": "Source",
+      "colour_budget": 32,
+      "dither": "None",
+      "frame_subject": true,
+      "clean_sprite": true,
+      "clean_transparent_edges": true,
+      "export_scale": 1
+    },
+    "review_scope": "尺寸与透明通道通过；保留为静态候选，尚未进行游戏内验收",
+    "animation_ready": false,
+    "game_integrated": false
+  },
+  {
+    "id": "hel",
+    "name": "海拉",
+    "file": "128/bosses/hel.png",
+    "source_file": "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/norse_2026-10-16/bosses/hel.png",
+    "browser_download": "/Users/zhangjunqiu/Downloads/pixel-asset-128x128 (5).png",
+    "size": [
+      128,
+      128
+    ],
+    "mode": "RGBA",
+    "rgba_color_count": 136,
+    "alpha_levels": [
+      0,
+      255
+    ],
+    "bounds": [
+      7,
+      8,
+      121,
+      121
+    ],
+    "pixel_sha256": "0d85a5884b53f7bd6c1080cda51d62da3e7ced1e4a2751526d5fce17227ab443",
+    "processor": "https://pixel-asset-studio.com/",
+    "settings": {
+      "logical_size": 128,
+      "palette": "Source",
+      "colour_budget": 32,
+      "dither": "None",
+      "frame_subject": true,
+      "clean_sprite": true,
+      "clean_transparent_edges": true,
+      "export_scale": 1
+    },
+    "review_scope": "尺寸与透明通道通过；保留为静态候选，尚未进行游戏内验收",
+    "animation_ready": false,
+    "game_integrated": false
+  },
+  {
+    "id": "jormungandr",
+    "name": "耶梦加得",
+    "file": "128/bosses/jormungandr.png",
+    "source_file": "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/norse_2026-10-16/bosses/jormungandr.png",
+    "browser_download": "/Users/zhangjunqiu/Downloads/pixel-asset-128x128 (6).png",
+    "size": [
+      128,
+      128
+    ],
+    "mode": "RGBA",
+    "rgba_color_count": 81,
+    "alpha_levels": [
+      0,
+      255
+    ],
+    "bounds": [
+      8,
+      7,
+      121,
+      121
+    ],
+    "pixel_sha256": "60085e5dadc0f7d01fa4ef9c034c83cb69532eb76eacd8c1c2b9ca8b649c2b5b",
+    "processor": "https://pixel-asset-studio.com/",
+    "settings": {
+      "logical_size": 128,
+      "palette": "Source",
+      "colour_budget": 32,
+      "dither": "None",
+      "frame_subject": true,
+      "clean_sprite": true,
+      "clean_transparent_edges": true,
+      "export_scale": 1
+    },
+    "review_scope": "尺寸与透明通道通过；保留为静态候选，尚未进行游戏内验收",
+    "animation_ready": false,
+    "game_integrated": false
+  },
+  {
+    "id": "fenrir",
+    "name": "芬里尔",
+    "file": "128/bosses/fenrir.png",
+    "source_file": "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/norse_2026-10-16/bosses/fenrir.png",
+    "browser_download": "/Users/zhangjunqiu/Downloads/pixel-asset-128x128 (7).png",
+    "size": [
+      128,
+      128
+    ],
+    "mode": "RGBA",
+    "rgba_color_count": 104,
+    "alpha_levels": [
+      0,
+      255
+    ],
+    "bounds": [
+      8,
+      7,
+      121,
+      120
+    ],
+    "pixel_sha256": "251f046d04472a7642026b2e5266f8bdb0e46bb4e960b81caa7b107a99998987",
+    "processor": "https://pixel-asset-studio.com/",
+    "settings": {
+      "logical_size": 128,
+      "palette": "Source",
+      "colour_budget": 32,
+      "dither": "None",
+      "frame_subject": true,
+      "clean_sprite": true,
+      "clean_transparent_edges": true,
+      "export_scale": 1
+    },
+    "review_scope": "尺寸与透明通道通过；保留为静态候选，尚未进行游戏内验收",
+    "animation_ready": false,
+    "game_integrated": false
+  },
+  {
+    "id": "surtr",
+    "name": "苏尔特",
+    "file": "128/bosses/surtr.png",
+    "source_file": "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/norse_2026-10-16/bosses/surtr.png",
+    "browser_download": "/Users/zhangjunqiu/Downloads/pixel-asset-128x128 (8).png",
+    "size": [
+      128,
+      128
+    ],
+    "mode": "RGBA",
+    "rgba_color_count": 101,
+    "alpha_levels": [
+      0,
+      255
+    ],
+    "bounds": [
+      15,
+      7,
+      119,
+      121
+    ],
+    "pixel_sha256": "13fe951504411d8d914aadfd922311486869e1886302c86e6565b28e05994a96",
+    "processor": "https://pixel-asset-studio.com/",
+    "settings": {
+      "logical_size": 128,
+      "palette": "Source",
+      "colour_budget": 32,
+      "dither": "None",
+      "frame_subject": true,
+      "clean_sprite": true,
+      "clean_transparent_edges": true,
+      "export_scale": 1
+    },
+    "review_scope": "尺寸与透明通道通过；保留为静态候选，尚未进行游戏内验收",
+    "animation_ready": false,
+    "game_integrated": false
   }
 ]
