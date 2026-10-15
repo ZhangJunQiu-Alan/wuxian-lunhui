@@ -14,6 +14,7 @@ var xp_value := 1
 var color := Color.WHITE
 var target: Player
 var _flash_time := 0.0
+var _frozen_time := 0.0  # 被定住的剩余时间（次元斩、时间暂停）
 var _dead := false
 
 
@@ -53,6 +54,11 @@ func _ready() -> void:
 func _physics_process(delta: float) -> void:
 	if not is_instance_valid(target):
 		return
+	if _frozen_time > 0.0:  # 被定住时不移动、不造成伤害
+		_frozen_time -= delta
+		if _frozen_time <= 0.0:
+			queue_redraw()
+		return
 	var to_target := target.global_position - global_position
 	var dist := to_target.length()
 	if dist > 1.0:
@@ -63,6 +69,11 @@ func _physics_process(delta: float) -> void:
 	if _flash_time > 0.0:
 		_flash_time -= delta
 		queue_redraw()
+
+
+func freeze(duration: float) -> void:
+	_frozen_time = maxf(_frozen_time, duration)
+	queue_redraw()
 
 
 func take_damage(amount: float) -> void:
@@ -88,4 +99,9 @@ func _die() -> void:
 
 
 func _draw() -> void:
-	draw_circle(Vector2.ZERO, radius, Color.WHITE if _flash_time > 0.0 else color)
+	var c := color
+	if _flash_time > 0.0:
+		c = Color.WHITE
+	elif _frozen_time > 0.0:
+		c = color.lerp(Color(0.6, 0.7, 1.0), 0.5)  # 被定住时偏蓝
+	draw_circle(Vector2.ZERO, radius, c)

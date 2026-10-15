@@ -11,6 +11,8 @@ var reach := 110.0
 var back_slash := false  # 回身斩：同时斩向身后
 var player: Player
 var _timer := 0.3
+var _slash_count := 0
+var _niten := false  # 这一刀是否触发了二天一流
 var _slash_time := 0.0
 var _slash_dirs: Array[Vector2] = []
 
@@ -33,12 +35,15 @@ func _process(delta: float) -> void:
 func _slash() -> void:
 	var enemies := get_tree().get_nodes_in_group("enemies")
 	var aim := _aim_direction(enemies)
+	# 宫本武藏的被动「二天一流」：每第 4 刀变为双刀斩，前后同时斩击，伤害翻倍
+	_slash_count += 1
+	_niten = _slash_count % 4 == 0
 	_slash_dirs = [aim]
-	if back_slash:
+	if back_slash or _niten:
 		_slash_dirs.append(-aim)
 	_slash_time = SLASH_DURATION
 
-	var dmg := damage * player.damage_mult
+	var dmg := damage * player.damage_mult * (2.0 if _niten else 1.0)
 	for node in enemies:
 		var enemy := node as Enemy
 		var offset := enemy.global_position - global_position
@@ -72,5 +77,6 @@ func _draw() -> void:
 		var pts := PackedVector2Array([Vector2.ZERO])
 		for i in 13:
 			pts.append(Vector2.from_angle(a - HALF_ARC + HALF_ARC * 2.0 * i / 12.0) * reach)
-		draw_colored_polygon(pts, Color(0.85, 0.92, 1.0, 0.3 * alpha))
-		draw_arc(Vector2.ZERO, reach, a - HALF_ARC, a + HALF_ARC, 24, Color(1, 1, 1, alpha), 3.0)
+		var tint := Color(1.0, 0.85, 0.45) if _niten else Color(0.85, 0.92, 1.0)  # 二天一流的刀光是金色
+		draw_colored_polygon(pts, Color(tint, 0.3 * alpha))
+		draw_arc(Vector2.ZERO, reach, a - HALF_ARC, a + HALF_ARC, 24, Color(tint, alpha), 3.0)

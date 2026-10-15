@@ -8,6 +8,8 @@ var _level_label: Label
 var _time_label: Label
 var _kills_label: Label
 var _faith_box: VBoxContainer
+var _ult_bar: ProgressBar
+var _ult_label: Label
 var _game_over: Control
 var _result_label: Label
 
@@ -42,6 +44,25 @@ func _ready() -> void:
 	_faith_box.position = Vector2(16, 100)
 	add_child(_faith_box)
 
+	# 底部中间：大招能量条
+	_ult_bar = ProgressBar.new()
+	_ult_bar.show_percentage = false
+	_ult_bar.set_anchors_and_offsets_preset(Control.PRESET_CENTER_BOTTOM)
+	_ult_bar.offset_left = -160
+	_ult_bar.offset_right = 160
+	_ult_bar.offset_top = -40
+	_ult_bar.offset_bottom = -26
+	add_child(_ult_bar)
+
+	_ult_label = Label.new()
+	_ult_label.set_anchors_and_offsets_preset(Control.PRESET_CENTER_BOTTOM)
+	_ult_label.offset_left = -160
+	_ult_label.offset_right = 160
+	_ult_label.offset_top = -66
+	_ult_label.offset_bottom = -42
+	_ult_label.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
+	add_child(_ult_label)
+
 	_build_game_over()
 
 
@@ -60,7 +81,16 @@ func set_hp(hp: float, max_hp: float) -> void:
 func set_xp(xp: float, xp_to_next: int, level: int) -> void:
 	_xp_bar.max_value = xp_to_next
 	_xp_bar.value = xp
-	_level_label.text = "等级 %d" % level
+	_level_label.text = "%s  等级 %d" % [Player.CHARACTER_NAME, level]
+
+
+func set_ult(energy: float, cost: float) -> void:
+	_ult_bar.max_value = cost
+	_ult_bar.value = energy
+	var is_full := energy >= cost
+	_ult_bar.modulate = Color(1.0, 0.85, 0.3) if is_full else Color(0.55, 0.65, 1.0)
+	_ult_label.text = "次元斩 已就绪  [空格]" if is_full else "次元斩"
+	_ult_label.modulate = Color(1.0, 0.85, 0.3) if is_full else Color(1, 1, 1, 0.6)
 
 
 ## 左侧显示每位已信仰神明的信仰值，例如「托尔 ■■■□□」

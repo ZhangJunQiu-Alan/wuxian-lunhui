@@ -30,8 +30,10 @@ func _ready() -> void:
 	add_child(hud)
 	player.hp_changed.connect(hud.set_hp)
 	player.xp_changed.connect(hud.set_xp)
+	player.ult_changed.connect(hud.set_ult)
 	hud.set_hp(player.hp, player.max_hp)
 	hud.set_xp(player.xp, player.xp_to_next, player.level)
+	hud.set_ult(player.ult_energy, player.ult_cost)
 
 	level_up_panel = LevelUpPanel.new()
 	add_child(level_up_panel)
@@ -69,6 +71,7 @@ func _spawn_enemy() -> void:
 
 func _on_enemy_killed(_enemy: Enemy) -> void:
 	kills += 1
+	player.add_ult_energy(1.0)
 
 
 func _on_player_leveled_up(_level: int) -> void:
