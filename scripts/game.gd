@@ -38,12 +38,14 @@ func _ready() -> void:
 	add_child(FxLayer.new())  # 伤害数字和碎片特效
 
 	player = Player.new()
+	player.character_id = CharacterDB.selected()  # 主神空间里选的角色
 	add_child(player)
 	player.died.connect(_on_player_died)
 	player.leveled_up.connect(_on_player_leveled_up)
 	MetaDB.apply(player)  # 主神空间购买的永久强化
 
 	hud = Hud.new()
+	hud.character_id = player.character_id
 	add_child(hud)
 	player.hp_changed.connect(hud.set_hp)
 	player.xp_changed.connect(hud.set_xp)
@@ -147,6 +149,8 @@ func spawn_enemy(type_id: String, pos: Vector2, elite: bool = false) -> Enemy:
 
 
 func _on_enemy_killed(enemy: Enemy) -> void:
+	if player.frenzy_time > 0.0:  # 狂野西部秀：击杀回血
+		player.heal(1.0)
 	_alive_by_type[enemy.type_id] = _alive_by_type.get(enemy.type_id, 1) - 1
 	kills += 1
 	player.add_ult_energy(1.0)
@@ -219,7 +223,7 @@ func _finish_run(cleared: bool) -> String:
 		add_reward_points(int(elapsed / 60.0) * POINTS_PER_MINUTE)
 		if cleared:
 			add_reward_points(level_data.clear_reward)
-		Save.record_run(reward_points, story_points, cleared, elapsed, kills)
+		Save.record_run(reward_points, story_points, cleared, elapsed, kills, _quests_done)
 	return "支线完成 %d / %d\n本局获得：奖励点 +%d　支线剧情点 +%d\n累计：奖励点 %d　支线剧情点 %d" % [
 		_quests_done, _quests_seen, reward_points, story_points, Save.reward_points, Save.story_points]
 
@@ -257,7 +261,7 @@ func queue_reward(title: String) -> void:
 	_pending_rewards.append(title)
 	if _pending_rewards.size() == 1:
 		get_tree().paused = true
-		level_up_panel.open(UpgradeDB.get_choices(player, 3), player, title)
+		level_up_panel.open(UpgradeDB.get_choices(player, player.choice_count), player, title)
 
 
 func _on_upgrade_chosen(id: String) -> void:
@@ -265,7 +269,7 @@ func _on_upgrade_chosen(id: String) -> void:
 	hud.set_faith(player.faith)
 	_pending_rewards.pop_front()
 	if not _pending_rewards.is_empty():
-		level_up_panel.open(UpgradeDB.get_choices(player, 3), player, _pending_rewards[0])
+		level_up_panel.open(UpgradeDB.get_choices(player, player.choice_count), player, _pending_rewards[0])
 	else:
 		get_tree().paused = false
 
@@ -274,7 +278,7 @@ func _on_reroll_requested() -> void:
 	if player.rerolls <= 0 or _pending_rewards.is_empty():
 		return
 	player.rerolls -= 1
-	level_up_panel.open(UpgradeDB.get_choices(player, 3), player, _pending_rewards[0])
+	level_up_panel.open(UpgradeDB.get_choices(player, player.choice_count), player, _pending_rewards[0])
 
 
 func _on_level_cleared() -> void:

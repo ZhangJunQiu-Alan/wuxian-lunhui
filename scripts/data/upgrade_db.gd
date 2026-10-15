@@ -3,6 +3,7 @@ class_name UpgradeDB
 ##
 ## 每张卡的字段：
 ##   kind      卡牌类别：weapon = 人物基础武器，stat = 通用属性，god = 神明卡
+##   character 基础武器卡属于哪个角色，只有这个角色升级时才会出现
 ##   god       所属神明 id（仅神明卡），选了会增加该神的信仰值
 ##   name/desc 卡牌标题和说明
 ##   max       最多能选几次
@@ -17,10 +18,29 @@ const MAX_GODS := 3  # 一局最多信仰几位神（不算初始武器太刀）
 
 const UPGRADES := {
 	# ———— 人物基础武器：太刀（宫本武藏）————
-	"katana_damage": {"kind": "weapon", "god": "", "name": "太刀·锋利", "desc": "太刀伤害 +25%", "max": 5},
-	"katana_speed": {"kind": "weapon", "god": "", "name": "太刀·居合", "desc": "太刀挥砍间隔 -12%", "max": 4},
-	"katana_range": {"kind": "weapon", "god": "", "name": "太刀·长刃", "desc": "太刀攻击范围 +20%", "max": 3},
-	"katana_back": {"kind": "weapon", "god": "", "name": "太刀·回身斩", "desc": "挥砍时同时斩向身后", "max": 1},
+	"katana_damage": {"kind": "weapon", "character": "musashi", "god": "", "name": "太刀·锋利", "desc": "太刀伤害 +25%", "max": 5},
+	"katana_speed": {"kind": "weapon", "character": "musashi", "god": "", "name": "太刀·居合", "desc": "太刀挥砍间隔 -12%", "max": 4},
+	"katana_range": {"kind": "weapon", "character": "musashi", "god": "", "name": "太刀·长刃", "desc": "太刀攻击范围 +20%", "max": 3},
+	"katana_back": {"kind": "weapon", "character": "musashi", "god": "", "name": "太刀·回身斩", "desc": "挥砍时同时斩向身后", "max": 1},
+
+	# ———— 人物基础武器：左轮手枪（安妮·奥克利）————
+	"revolver_damage": {"kind": "weapon", "character": "annie", "god": "", "name": "左轮·重弹", "desc": "子弹伤害 +25%", "max": 5},
+	"revolver_rate": {"kind": "weapon", "character": "annie", "god": "", "name": "左轮·快拔", "desc": "射击间隔 -12%", "max": 4},
+	"revolver_mag": {"kind": "weapon", "character": "annie", "god": "", "name": "左轮·扩容", "desc": "弹匣 +2 发，换弹时间 -10%", "max": 3},
+	"revolver_pierce": {"kind": "weapon", "character": "annie", "god": "", "name": "左轮·穿甲", "desc": "子弹穿透 +1", "max": 2},
+	"revolver_twin": {"kind": "weapon", "character": "annie", "god": "", "name": "左轮·双枪", "desc": "双手持枪，每次同时射出两发", "max": 1},
+
+	# ———— 人物基础武器：双刃（兰陵王）————
+	"blades_damage": {"kind": "weapon", "character": "lanling", "god": "", "name": "双刃·淬锋", "desc": "双刃伤害 +25%", "max": 5},
+	"blades_speed": {"kind": "weapon", "character": "lanling", "god": "", "name": "双刃·疾袭", "desc": "出手间隔 -12%", "max": 4},
+	"blades_reach": {"kind": "weapon", "character": "lanling", "god": "", "name": "双刃·突进", "desc": "攻击范围 +15%", "max": 3},
+	"blades_flurry": {"kind": "weapon", "character": "lanling", "god": "", "name": "双刃·三连刺", "desc": "每次出手对目标追加一击（50% 伤害）", "max": 1},
+
+	# ———— 人物基础武器：奥术新星（梅林）————
+	"nova_damage": {"kind": "weapon", "character": "merlin", "god": "", "name": "新星·增幅", "desc": "新星伤害 +25%", "max": 5},
+	"nova_cooldown": {"kind": "weapon", "character": "merlin", "god": "", "name": "新星·吟唱", "desc": "新星间隔 -12%", "max": 4},
+	"nova_radius": {"kind": "weapon", "character": "merlin", "god": "", "name": "新星·扩散", "desc": "新星范围 +15%", "max": 3},
+	"nova_echo": {"kind": "weapon", "character": "merlin", "god": "", "name": "新星·回响", "desc": "每次释放后再放一圈新星", "max": 1},
 
 	# ———— 通用属性 ————
 	"might": {"kind": "stat", "god": "", "name": "力量", "desc": "所有伤害 +10%", "max": 5},
@@ -90,6 +110,8 @@ static func get_choices(player: Player, count: int) -> Array[String]:
 
 static func _is_available(id: String, player: Player) -> bool:
 	var info: Dictionary = UPGRADES[id]
+	if info.kind == "weapon" and info.character != player.character_id:
+		return false  # 别的角色的武器卡
 	if player.upgrade_levels.get(id, 0) >= info.max:
 		return false
 	if info.has("requires") and not player.upgrade_levels.has(info.requires):
@@ -120,6 +142,36 @@ static func apply(id: String, player: Player) -> void:
 			player.katana.reach *= 1.2
 		"katana_back":
 			player.katana.back_slash = true
+
+		"revolver_damage":
+			player.revolver.damage *= 1.25
+		"revolver_rate":
+			player.revolver.fire_interval *= 0.88
+		"revolver_mag":
+			player.revolver.magazine += 2
+			player.revolver.reload_time *= 0.9
+		"revolver_pierce":
+			player.revolver.pierce += 1
+		"revolver_twin":
+			player.revolver.twin = true
+
+		"blades_damage":
+			player.blades.damage *= 1.25
+		"blades_speed":
+			player.blades.cooldown *= 0.88
+		"blades_reach":
+			player.blades.reach *= 1.15
+		"blades_flurry":
+			player.blades.flurry = true
+
+		"nova_damage":
+			player.nova.damage *= 1.25
+		"nova_cooldown":
+			player.nova.cooldown *= 0.88
+		"nova_radius":
+			player.nova.radius *= 1.15
+		"nova_echo":
+			player.nova.echo = true
 
 		"might":
 			player.damage_mult += 0.1

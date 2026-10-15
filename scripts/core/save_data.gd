@@ -1,6 +1,6 @@
 extends Node
 ## 存档（自动加载：任何脚本都可以直接用 Save.xxx 访问）
-## 保存局外进度：奖励点、支线剧情点、主神空间的永久强化、战绩统计
+## 保存局外进度：奖励点、支线剧情点、主神空间的永久强化、角色选择与解锁、战绩统计
 ## 文件位置：user://save.json（Mac 上在 ~/Library/Application Support/Godot/app_userdata/无限轮回/）
 ## 测试时用命令行参数 --save-file=user://test_save.json 换一个文件，避免弄乱真实存档
 
@@ -11,7 +11,13 @@ var path := DEFAULT_PATH
 var reward_points := 0
 var story_points := 0
 var meta := {}  # 永久强化 id -> 等级
-var stats := {"runs": 0, "clears": 0, "best_time": 0.0, "best_clear_time": 0.0, "total_kills": 0}
+var stats := _default_stats()
+var selected_character := "musashi"
+var unlocked_characters: Array[String] = []  # 花点数解锁的角色（其他角色按条件自动解锁）
+
+
+static func _default_stats() -> Dictionary:
+	return {"runs": 0, "clears": 0, "best_time": 0.0, "best_clear_time": 0.0, "total_kills": 0, "quests_done": 0}
 
 
 ## 在节点创建时（而不是加入场景树后）就读取存档：
@@ -35,6 +41,8 @@ func load_game() -> void:
 	meta = {}
 	for id: String in data.get("meta", {}):
 		meta[id] = int(data.meta[id])
+	selected_character = data.get("selected_character", "musashi")
+	unlocked_characters.assign(data.get("unlocked_characters", []))
 	var saved_stats: Dictionary = data.get("stats", {})
 	for key: String in stats:
 		if saved_stats.has(key):
@@ -43,7 +51,8 @@ func load_game() -> void:
 
 ## 先写到临时文件再改名，写到一半断电也不会把原存档写坏
 func save_game() -> void:
-	var data := {"version": VERSION, "reward_points": reward_points, "story_points": story_points, "meta": meta, "stats": stats}
+	var data := {"version": VERSION, "reward_points": reward_points, "story_points": story_points, "meta": meta, "stats": stats,
+		"selected_character": selected_character, "unlocked_characters": unlocked_characters}
 	var tmp_path := path + ".tmp"
 	var file := FileAccess.open(tmp_path, FileAccess.WRITE)
 	if file == null:
@@ -72,11 +81,27 @@ func buy_meta(id: String) -> bool:
 	return true
 
 
+func select_character(id: String) -> void:
+	selected_character = id
+	save_game()
+
+
+## 花支线剧情点解锁角色，成功返回 true
+func unlock_character(id: String, cost: int) -> bool:
+	if id in unlocked_characters or story_points < cost:
+		return false
+	story_points -= cost
+	unlocked_characters.append(id)
+	save_game()
+	return true
+
+
 ## 一局结束时调用：把本局收获存进存档
-func record_run(points: int, story: int, cleared: bool, elapsed: float, kills: int) -> void:
+func record_run(points: int, story: int, cleared: bool, elapsed: float, kills: int, quests_done: int) -> void:
 	reward_points += points
 	story_points += story
 	stats.runs += 1
+	stats.quests_done += quests_done
 	stats.total_kills += kills
 	stats.best_time = maxf(stats.best_time, elapsed)
 	if cleared:
@@ -91,5 +116,7 @@ func reset() -> void:
 	reward_points = 0
 	story_points = 0
 	meta = {}
-	stats = {"runs": 0, "clears": 0, "best_time": 0.0, "best_clear_time": 0.0, "total_kills": 0}
+	stats = _default_stats()
+	selected_character = "musashi"
+	unlocked_characters = []
 	save_game()

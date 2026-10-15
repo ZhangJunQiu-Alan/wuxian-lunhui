@@ -1,5 +1,5 @@
 extends Control
-## 主神空间：局外大厅。查看奖励点和战绩，用奖励点购买永久强化，进入篇章
+## 主神空间：局外大厅。选择轮回者（角色）、用奖励点购买永久强化、查看战绩、进入篇章
 
 const BG := Color(0.045, 0.05, 0.075)
 const GOLD := Color(1.0, 0.85, 0.4)
@@ -11,6 +11,9 @@ var _points_label: Label
 var _story_label: Label
 var _stats_label: Label
 var _cards := {}  # 强化 id -> {panel, level, button}
+var _char_cards := {}  # 角色 id -> {panel, button}
+var _subtitle: Label
+var _start: Button
 var _time := 0.0
 
 
@@ -23,7 +26,7 @@ func _ready() -> void:
 		margin.add_theme_constant_override("margin_" + side, 40)
 	add_child(margin)
 	var root := VBoxContainer.new()
-	root.add_theme_constant_override("separation", 18)
+	root.add_theme_constant_override("separation", 12)
 	margin.add_child(root)
 
 	# ---- 顶部：标题 + 货币 ----
@@ -32,7 +35,8 @@ func _ready() -> void:
 	var title_box := VBoxContainer.new()
 	header.add_child(title_box)
 	title_box.add_child(_label("主神空间", 40, GOLD))
-	title_box.add_child(_label("轮回者：%s · %s" % [CharacterDB.ALL.musashi.name, CharacterDB.ALL.musashi.title], 16, DIM))
+	_subtitle = _label("", 16, DIM)
+	title_box.add_child(_subtitle)
 	var spacer := Control.new()
 	spacer.size_flags_horizontal = Control.SIZE_EXPAND_FILL
 	header.add_child(spacer)
@@ -43,19 +47,27 @@ func _ready() -> void:
 	money.add_child(_points_label)
 	money.add_child(_story_label)
 
-	# ---- 中间：永久强化 ----
-	root.add_child(_label("永久强化  ·  用奖励点兑换，每局开始时生效", 18, Color.WHITE))
+	# ---- 中间：两个分页「轮回者」「永久强化」 ----
+	var tabs := TabContainer.new()
+	tabs.size_flags_vertical = Control.SIZE_EXPAND_FILL
+	tabs.add_theme_stylebox_override("panel", StyleBoxEmpty.new())
+	root.add_child(tabs)
+
+	var chars := HBoxContainer.new()
+	chars.name = "轮回者"
+	chars.add_theme_constant_override("separation", 16)
+	tabs.add_child(chars)
+	for id: String in CharacterDB.ALL:
+		chars.add_child(_make_character_card(id))
+
 	var grid := GridContainer.new()
+	grid.name = "永久强化"
 	grid.columns = 3
 	grid.add_theme_constant_override("h_separation", 16)
 	grid.add_theme_constant_override("v_separation", 14)
-	root.add_child(grid)
+	tabs.add_child(grid)
 	for id: String in MetaDB.UPGRADES:
 		grid.add_child(_make_card(id))
-
-	var fill := Control.new()
-	fill.size_flags_vertical = Control.SIZE_EXPAND_FILL
-	root.add_child(fill)
 
 	# ---- 底部：战绩 + 进入篇章 ----
 	var footer := HBoxContainer.new()
@@ -76,8 +88,8 @@ func _ready() -> void:
 	push.size_flags_horizontal = Control.SIZE_EXPAND_FILL
 	footer.add_child(push)
 	var start := Button.new()
-	start.text = "进入篇章一 · 诸神黄昏\n第 1 关 · 芬布尔之冬    [Enter]"
-	start.custom_minimum_size = Vector2(340, 72)
+	_start = start
+	start.custom_minimum_size = Vector2(380, 72)
 	start.add_theme_font_size_override("font_size", 18)
 	start.add_theme_stylebox_override("normal", _style(Color(0.28, 0.2, 0.06), GOLD, 2))
 	start.add_theme_stylebox_override("hover", _style(Color(0.4, 0.29, 0.08), GOLD, 3))
@@ -102,6 +114,74 @@ func _unhandled_input(event: InputEvent) -> void:
 
 func _start_battle() -> void:
 	get_tree().change_scene_to_file(BATTLE_SCENE)
+
+
+## 角色卡：立绘、名字、武器、被动、大招，底部是选择 / 解锁按钮
+func _make_character_card(id: String) -> Control:
+	var info: Dictionary = CharacterDB.ALL[id]
+	var panel := PanelContainer.new()
+	panel.size_flags_horizontal = Control.SIZE_EXPAND_FILL
+	var box := VBoxContainer.new()
+	box.add_theme_constant_override("separation", 3)
+	panel.add_child(box)
+
+	# 立绘：有素材用素材，没有就用名字的第一个字做水墨风占位
+	var portrait := Control.new()
+	portrait.custom_minimum_size = Vector2(0, 76)
+	portrait.draw.connect(_draw_portrait.bind(portrait, id))
+	box.add_child(portrait)
+
+	box.add_child(_label(info.name, 22, info.color))
+	box.add_child(_label(info.title, 13, DIM))
+	for line in [["武器", info.weapon, info.weapon_desc], ["被动", info.passive, info.passive_desc], ["大招", info.ult_name, info.ult_desc]]:
+		var label := _label("%s · %s\n%s" % line, 13, Color(0.85, 0.87, 0.92))
+		label.autowrap_mode = TextServer.AUTOWRAP_ARBITRARY
+		label.custom_minimum_size = Vector2(240, 0)
+		box.add_child(label)
+
+	var fill := Control.new()
+	fill.size_flags_vertical = Control.SIZE_EXPAND_FILL
+	box.add_child(fill)
+	var button := Button.new()
+	button.custom_minimum_size = Vector2(0, 40)
+	button.focus_mode = Control.FOCUS_NONE
+	button.pressed.connect(_on_character_pressed.bind(id))
+	box.add_child(button)
+	_char_cards[id] = {"panel": panel, "button": button}
+	return panel
+
+
+func _draw_portrait(canvas: Control, id: String) -> void:
+	var info: Dictionary = CharacterDB.ALL[id]
+	var rect := Rect2(Vector2.ZERO, canvas.size)
+	canvas.draw_rect(rect, Color(info.color, 0.12))
+	var path: String = CharacterDB.CUTIN_DIR + id + ".png"
+	if ResourceLoader.exists(path):
+		var tex: Texture2D = load(path)
+		var zoom := maxf(1.0, floorf(rect.size.y / tex.get_height()))  # 像素画按整数倍放大
+		var draw_size := tex.get_size() * zoom
+		canvas.draw_texture_rect(tex, Rect2(rect.get_center() - draw_size / 2.0, draw_size), false)
+	else:
+		var font := ThemeDB.fallback_font
+		var custom: String = ProjectSettings.get_setting("gui/theme/custom_font", "")
+		if custom != "":
+			font = load(custom)
+		var glyph: String = info.name.substr(0, 1)
+		var glyph_size := 56
+		var w := font.get_string_size(glyph, HORIZONTAL_ALIGNMENT_LEFT, -1, glyph_size).x
+		canvas.draw_string(font, Vector2(rect.get_center().x - w / 2.0, rect.size.y * 0.78), glyph, HORIZONTAL_ALIGNMENT_LEFT, -1, glyph_size, Color(info.color, 0.85))
+	if not CharacterDB.is_unlocked(id):
+		canvas.draw_rect(rect, Color(0, 0, 0, 0.6))  # 未解锁：立绘压暗
+
+
+func _on_character_pressed(id: String) -> void:
+	if CharacterDB.is_unlocked(id):
+		Save.select_character(id)
+	else:
+		var unlock: Dictionary = CharacterDB.ALL[id].unlock
+		if unlock.type == "story" and Save.unlock_character(id, unlock.value):
+			Save.select_character(id)
+	_refresh()
 
 
 func _make_card(id: String) -> Control:
@@ -141,6 +221,33 @@ func _buy(id: String) -> void:
 
 
 func _refresh() -> void:
+	var selected := CharacterDB.selected()
+	var selected_info: Dictionary = CharacterDB.ALL[selected]
+	_subtitle.text = "轮回者：%s · %s" % [selected_info.name, selected_info.title]
+	_start.text = "以 %s 进入篇章一 · 诸神黄昏\n第 1 关 · 芬布尔之冬    [Enter]" % selected_info.name
+	for id: String in _char_cards:
+		var info: Dictionary = CharacterDB.ALL[id]
+		var card: Dictionary = _char_cards[id]
+		var unlocked := CharacterDB.is_unlocked(id)
+		var button: Button = card.button
+		if id == selected:
+			button.text = "已选择"
+			button.disabled = true
+		elif unlocked:
+			button.text = "选择"
+			button.disabled = false
+		elif info.unlock.type == "story":
+			button.text = "解锁（%d 支线剧情点）" % info.unlock.value
+			button.disabled = Save.story_points < info.unlock.value
+		else:
+			button.text = "未解锁：" + info.unlock.text
+			button.disabled = true
+		var border: Color = info.color if id == selected else (Color(0.4, 0.43, 0.52) if unlocked else Color(0.22, 0.24, 0.3))
+		(card.panel as PanelContainer).add_theme_stylebox_override("panel", _style(Color(0.08, 0.09, 0.13), border, 3 if id == selected else 2, 12))
+		(card.panel as Control).queue_redraw()
+		for child in (card.panel as Control).get_children():
+			(child as Control).get_child(0).queue_redraw()  # 重画立绘（解锁后不再压暗）
+
 	_points_label.text = "奖励点  %d" % Save.reward_points
 	_story_label.text = "支线剧情点  %d" % Save.story_points
 	var s: Dictionary = Save.stats

@@ -2,6 +2,7 @@ class_name Hud
 extends CanvasLayer
 ## 战斗界面：经验条、血条、计时、击杀数、死亡结算
 
+var character_id := CharacterDB.DEFAULT_ID  # 由 game.gd 在创建 HUD 前设置
 var _xp_bar: ProgressBar
 var _hp_bar: ProgressBar
 var _level_label: Label
@@ -159,7 +160,7 @@ func set_hp(hp: float, max_hp: float) -> void:
 func set_xp(xp: float, xp_to_next: int, level: int) -> void:
 	_xp_bar.max_value = xp_to_next
 	_xp_bar.value = xp
-	_level_label.text = "%s  等级 %d" % [Player.CHARACTER_NAME, level]
+	_level_label.text = "%s  等级 %d" % [CharacterDB.ALL[character_id].name, level]
 
 
 func set_ult(energy: float, cost: float) -> void:
@@ -167,7 +168,7 @@ func set_ult(energy: float, cost: float) -> void:
 	_ult_bar.value = energy
 	var is_full := energy >= cost
 	_ult_bar.modulate = Color(1.0, 0.85, 0.3) if is_full else Color(0.55, 0.65, 1.0)
-	var ult_name: String = CharacterDB.ALL[Player.CHARACTER_ID].ult_name
+	var ult_name: String = CharacterDB.ALL[character_id].ult_name
 	_ult_label.text = (ult_name + " 已就绪  [空格]") if is_full else ult_name
 	_ult_label.modulate = Color(1.0, 0.85, 0.3) if is_full else Color(1, 1, 1, 0.6)
 

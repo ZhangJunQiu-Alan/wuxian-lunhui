@@ -7,6 +7,10 @@ var speed := 500.0
 var damage := 10.0
 var pierce := 1
 var lifetime := 2.0
+var crit := false          # 暴击：伤害数字显示为金色
+var split_on_hit := false  # 命中后分裂成两发（安妮的纸牌神射）
+var color := Color(0.55, 0.9, 1.0)
+var size := 1.0
 
 
 func _ready() -> void:
@@ -33,7 +37,20 @@ func _on_area_entered(area: Area2D) -> void:
 	var enemy := area as Enemy
 	if enemy == null or pierce <= 0:
 		return
-	enemy.take_damage(damage, direction * 120.0)
+	enemy.take_damage(damage, direction * 120.0, crit)
+	if split_on_hit:
+		split_on_hit = false
+		for angle in [-0.45, 0.45]:  # 向两侧各分出一发，继续飞行
+			var shard := Projectile.new()
+			shard.global_position = global_position
+			shard.direction = direction.rotated(angle)
+			shard.speed = speed
+			shard.damage = damage * 0.5
+			shard.pierce = 1
+			shard.lifetime = 0.6
+			shard.color = color
+			shard.size = 0.7
+			get_parent().add_child.call_deferred(shard)
 	pierce -= 1
 	if pierce <= 0:
 		queue_free()
@@ -41,4 +58,6 @@ func _on_area_entered(area: Area2D) -> void:
 
 func _draw() -> void:
 	var pts := PackedVector2Array([Vector2(10, 0), Vector2(0, 4), Vector2(-8, 0), Vector2(0, -4)])
-	draw_colored_polygon(pts, Color(0.55, 0.9, 1.0))
+	for i in pts.size():
+		pts[i] *= size
+	draw_colored_polygon(pts, Color(1.0, 0.85, 0.3) if crit else color)

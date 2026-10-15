@@ -49,7 +49,7 @@ func _ready() -> void:
 	box.add_child(_reroll)
 
 	var hint := Label.new()
-	hint.text = "点击卡牌或按 1 / 2 / 3 选择"
+	hint.text = "点击卡牌或按数字键选择"
 	hint.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
 	hint.modulate = Color(1, 1, 1, 0.5)
 	box.add_child(hint)
@@ -80,7 +80,7 @@ func _input(event: InputEvent) -> void:
 	if not visible:
 		return
 	var key := event as InputEventKey
-	if key and key.pressed and not key.echo and key.keycode >= KEY_1 and key.keycode <= KEY_3:
+	if key and key.pressed and not key.echo and key.keycode >= KEY_1 and key.keycode <= KEY_4:
 		choose(key.keycode - KEY_1)
 		get_viewport().set_input_as_handled()
 	elif key and key.pressed and not key.echo and key.keycode == KEY_R and _reroll.visible:
@@ -100,7 +100,7 @@ func _make_card(index: int, id: String, player: Player) -> Button:
 			tag = "神明 · %s · %s" % [god.name, god.title]
 		"weapon":
 			color = Color(0.85, 0.92, 1.0)
-			tag = "基础武器 · 太刀"
+			tag = "基础武器 · " + CharacterDB.ALL[player.character_id].weapon
 
 	var card := Button.new()
 	card.custom_minimum_size = CARD_SIZE

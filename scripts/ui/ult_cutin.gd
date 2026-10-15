@@ -32,14 +32,16 @@ func _ready() -> void:
 	add_child(_portrait)
 
 	var text_x := SLANT + PORTRAIT_WIDTH + 14.0
-	_moment = _make_label(Vector2(text_x, 14), 13, Color(1, 1, 1, 0.6))
-	_line = _make_label(Vector2(text_x, 40), 17, Color.WHITE)
-	_ult_name = _make_label(Vector2(text_x, 108), 28, Color.WHITE)
+	_moment = _make_label(Vector2(text_x, 8), 13, Color(1, 1, 1, 0.6))     # 两行：角色名 / 时刻
+	_line = _make_label(Vector2(text_x, 48), 16, Color.WHITE)
+	_ult_name = _make_label(Vector2(text_x, 104), 28, Color.WHITE)
 
 
 func _make_label(pos: Vector2, font_size: int, color: Color) -> Label:
 	var label := Label.new()
 	label.position = pos
+	label.size = Vector2(PANEL_SIZE.x - pos.x - 10.0, 0)
+	label.clip_text = true  # 文字太长时裁掉，不会超出面板
 	label.add_theme_font_size_override("font_size", font_size)
 	label.add_theme_constant_override("outline_size", 4)
 	label.add_theme_color_override("font_outline_color", Color(0, 0, 0, 0.8))
@@ -51,7 +53,7 @@ func _make_label(pos: Vector2, font_size: int, color: Color) -> Label:
 func play(character_id: String) -> void:
 	var data: Dictionary = CharacterDB.ALL[character_id]
 	_accent = data.cutin_color
-	_moment.text = "%s · %s" % [data.name, data.cutin_moment]
+	_moment.text = "%s\n%s" % [data.name, data.cutin_moment]
 	_line.text = data.cutin_line
 	_ult_name.text = data.ult_name
 	_ult_name.modulate = _accent.lightened(0.3)
