@@ -7,8 +7,8 @@ const GRID_COLOR := Color(1, 1, 1, 0.05)
 
 # 敌人数据表。以后会挪到独立的数据文件里，现在先放这里方便理解
 const ENEMY_TYPES := {
-	"draugr": {"name": "尸鬼", "hp": 20.0, "speed": 70.0, "damage": 8.0, "radius": 13.0, "xp": 1, "color": Color(0.45, 0.62, 0.5)},
-	"wolf": {"name": "狼", "hp": 10.0, "speed": 140.0, "damage": 5.0, "radius": 10.0, "xp": 1, "color": Color(0.62, 0.62, 0.72)},
+	"draugr": {"name": "尸鬼", "hp": 10.0, "speed": 70.0, "damage": 8.0, "radius": 13.0, "xp": 1, "color": Color(0.45, 0.62, 0.5)},
+	"wolf": {"name": "狼", "hp": 6.0, "speed": 140.0, "damage": 5.0, "radius": 10.0, "xp": 1, "color": Color(0.62, 0.62, 0.72)},
 }
 
 var player: Player
@@ -41,9 +41,9 @@ func _process(delta: float) -> void:
 	queue_redraw()  # 背景网格跟着玩家重画
 
 
-## 刷怪间隔随时间缩短：开局 1 秒一只，2 分钟后到达下限 0.15 秒
+## 刷怪间隔随时间缩短：开局 1.2 秒一只，约 2.5 分钟后到达下限 0.2 秒
 func _spawn_interval() -> float:
-	return maxf(0.15, 1.0 - elapsed / 120.0)
+	return maxf(0.2, 1.2 - elapsed / 150.0)
 
 
 func _spawn_enemy() -> void:
@@ -52,7 +52,7 @@ func _spawn_enemy() -> void:
 		type_id = "wolf"
 
 	var enemy := Enemy.new()
-	enemy.setup(ENEMY_TYPES[type_id], 1.0 + elapsed / 90.0)  # 血量随时间变强
+	enemy.setup(ENEMY_TYPES[type_id], 1.0 + elapsed / 180.0)  # 血量随时间变强
 	enemy.target = player
 	var angle := randf() * TAU
 	enemy.position = player.position + Vector2.from_angle(angle) * SPAWN_DISTANCE

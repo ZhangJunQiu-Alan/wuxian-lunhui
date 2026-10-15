@@ -2,8 +2,8 @@ class_name RuneBolt
 extends Node2D
 ## 武器「符文飞弹」：每隔一段时间向最近的敌人发射一枚飞弹
 
-var cooldown := 0.8
-var damage := 10.0
+var cooldown := 0.6
+var damage := 12.0
 var projectile_speed := 520.0
 var pierce := 1  # 能穿透几个敌人
 var _timer := 0.0
