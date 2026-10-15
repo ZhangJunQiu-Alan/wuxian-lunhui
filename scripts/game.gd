@@ -12,6 +12,7 @@ const RING_RADIUS := 450.0     # 包围事件里那一圈敌人离玩家的距�
 var player: Player
 var hud: Hud
 var level_up_panel: LevelUpPanel
+var pause_menu: PauseMenu
 var elapsed := 0.0
 var kills := 0
 var level_data: Dictionary = LevelDB.NORSE_1
@@ -59,6 +60,11 @@ func _ready() -> void:
 	add_child(level_up_panel)
 	level_up_panel.chosen.connect(_on_upgrade_chosen)
 	level_up_panel.reroll_requested.connect(_on_reroll_requested)
+
+	pause_menu = PauseMenu.new()
+	pause_menu.game = self
+	pause_menu.abandon_requested.connect(_on_abandon_requested)
+	add_child(pause_menu)
 
 	process_physics_priority = -10  # 让推挤网格在所有敌人移动之前重建
 	_next_elite_time = level_data.elite_from
@@ -286,6 +292,11 @@ func _on_level_cleared() -> void:
 		return
 	get_tree().paused = true
 	hud.show_victory(level_data.name, level_data.clear_text, elapsed, kills, player.level, _finish_run(true))
+
+
+func _on_abandon_requested() -> void:
+	get_tree().paused = true
+	hud.show_game_over(elapsed, kills, player.level, _finish_run(false), "你放弃了本局")
 
 
 func _on_player_died() -> void:

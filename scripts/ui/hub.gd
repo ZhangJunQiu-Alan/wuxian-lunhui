@@ -11,9 +11,10 @@ var _points_label: Label
 var _story_label: Label
 var _stats_label: Label
 var _cards := {}  # 强化 id -> {panel, level, button}
-var _char_cards := {}  # 角色 id -> {panel, button}
+var _char_cards := {}  # 角色 id -> {panel, button, dim}
 var _subtitle: Label
 var _start: Button
+var _settings: SettingsPanel
 var _time := 0.0
 
 
@@ -76,6 +77,11 @@ func _ready() -> void:
 	footer.add_child(left)
 	_stats_label = _label("", 14, DIM)
 	left.add_child(_stats_label)
+	var links := HBoxContainer.new()
+	links.add_theme_constant_override("separation", 4)
+	left.add_child(links)
+	links.add_child(_link_button("设置  [Esc]", func() -> void: _settings.open()))
+	links.add_child(_link_button("退出游戏", func() -> void: get_tree().quit()))
 	var reset := Button.new()
 	reset.text = "重置存档"
 	reset.flat = true
@@ -98,6 +104,9 @@ func _ready() -> void:
 	start.pressed.connect(_start_battle)
 	footer.add_child(start)
 
+	_settings = SettingsPanel.new()
+	add_child(_settings)
+
 	_refresh()
 
 
@@ -108,8 +117,14 @@ func _process(delta: float) -> void:
 
 func _unhandled_input(event: InputEvent) -> void:
 	var key := event as InputEventKey
-	if key and key.pressed and not key.echo and (key.keycode == KEY_ENTER or key.keycode == KEY_KP_ENTER):
+	if not (key and key.pressed and not key.echo):
+		return
+	if _settings.visible:
+		return  # 设置打开时，按键交给设置面板
+	if key.keycode == KEY_ENTER or key.keycode == KEY_KP_ENTER:
 		_start_battle()
+	elif key.keycode == KEY_ESCAPE:
+		_settings.open()
 
 
 func _start_battle() -> void:
@@ -128,8 +143,28 @@ func _make_character_card(id: String) -> Control:
 	# 立绘：有素材用素材，没有就用名字的第一个字做水墨风占位
 	var portrait := Control.new()
 	portrait.custom_minimum_size = Vector2(0, 76)
+	portrait.clip_contents = true  # 立绘裁剪在这个区域里
 	portrait.draw.connect(_draw_portrait.bind(portrait, id))
 	box.add_child(portrait)
+	# 优先用大招特写立绘（裁出眼睛那一条），没有就用全身像素图
+	var cutin: String = CharacterDB.CUTIN_DIR + id + "_cutin.png"
+	var sprite: String = CharacterDB.CUTIN_DIR + id + ".png"
+	if ResourceLoader.exists(cutin) or ResourceLoader.exists(sprite):
+		var image := TextureRect.new()
+		image.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
+		image.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
+		if ResourceLoader.exists(cutin):
+			image.texture = load(cutin)
+			image.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_COVERED
+		else:
+			image.texture = load(sprite)
+			image.stretch_mode = TextureRect.STRETCH_KEEP_CENTERED  # 像素画按原尺寸居中显示
+		portrait.add_child(image)
+	var dim := ColorRect.new()  # 未解锁时压暗立绘
+	dim.color = Color(0, 0, 0, 0.6)
+	dim.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
+	dim.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	portrait.add_child(dim)
 
 	box.add_child(_label(info.name, 22, info.color))
 	box.add_child(_label(info.title, 13, DIM))
@@ -147,31 +182,25 @@ func _make_character_card(id: String) -> Control:
 	button.focus_mode = Control.FOCUS_NONE
 	button.pressed.connect(_on_character_pressed.bind(id))
 	box.add_child(button)
-	_char_cards[id] = {"panel": panel, "button": button}
+	_char_cards[id] = {"panel": panel, "button": button, "dim": dim}
 	return panel
 
 
+## 立绘背景；没有立绘素材时，用名字的第一个字做水墨风占位
 func _draw_portrait(canvas: Control, id: String) -> void:
 	var info: Dictionary = CharacterDB.ALL[id]
 	var rect := Rect2(Vector2.ZERO, canvas.size)
 	canvas.draw_rect(rect, Color(info.color, 0.12))
-	var path: String = CharacterDB.CUTIN_DIR + id + ".png"
-	if ResourceLoader.exists(path):
-		var tex: Texture2D = load(path)
-		var zoom := maxf(1.0, floorf(rect.size.y / tex.get_height()))  # 像素画按整数倍放大
-		var draw_size := tex.get_size() * zoom
-		canvas.draw_texture_rect(tex, Rect2(rect.get_center() - draw_size / 2.0, draw_size), false)
-	else:
-		var font := ThemeDB.fallback_font
-		var custom: String = ProjectSettings.get_setting("gui/theme/custom_font", "")
-		if custom != "":
-			font = load(custom)
-		var glyph: String = info.name.substr(0, 1)
-		var glyph_size := 56
-		var w := font.get_string_size(glyph, HORIZONTAL_ALIGNMENT_LEFT, -1, glyph_size).x
-		canvas.draw_string(font, Vector2(rect.get_center().x - w / 2.0, rect.size.y * 0.78), glyph, HORIZONTAL_ALIGNMENT_LEFT, -1, glyph_size, Color(info.color, 0.85))
-	if not CharacterDB.is_unlocked(id):
-		canvas.draw_rect(rect, Color(0, 0, 0, 0.6))  # 未解锁：立绘压暗
+	if ResourceLoader.exists(CharacterDB.CUTIN_DIR + id + "_cutin.png") or ResourceLoader.exists(CharacterDB.CUTIN_DIR + id + ".png"):
+		return
+	var font := ThemeDB.fallback_font
+	var custom: String = ProjectSettings.get_setting("gui/theme/custom_font", "")
+	if custom != "":
+		font = load(custom)
+	var glyph: String = info.name.substr(0, 1)
+	var glyph_size := 56
+	var w := font.get_string_size(glyph, HORIZONTAL_ALIGNMENT_LEFT, -1, glyph_size).x
+	canvas.draw_string(font, Vector2(rect.get_center().x - w / 2.0, rect.size.y * 0.78), glyph, HORIZONTAL_ALIGNMENT_LEFT, -1, glyph_size, Color(info.color, 0.85))
 
 
 func _on_character_pressed(id: String) -> void:
@@ -244,9 +273,7 @@ func _refresh() -> void:
 			button.disabled = true
 		var border: Color = info.color if id == selected else (Color(0.4, 0.43, 0.52) if unlocked else Color(0.22, 0.24, 0.3))
 		(card.panel as PanelContainer).add_theme_stylebox_override("panel", _style(Color(0.08, 0.09, 0.13), border, 3 if id == selected else 2, 12))
-		(card.panel as Control).queue_redraw()
-		for child in (card.panel as Control).get_children():
-			(child as Control).get_child(0).queue_redraw()  # 重画立绘（解锁后不再压暗）
+		(card.dim as Control).visible = not unlocked
 
 	_points_label.text = "奖励点  %d" % Save.reward_points
 	_story_label.text = "支线剧情点  %d" % Save.story_points
@@ -288,6 +315,15 @@ func _draw() -> void:
 		var r := 30.0 + i * 26.0 + pulse * 6.0
 		draw_circle(center, r, Color(1.0, 0.95, 0.8, 0.05 - i * 0.006))
 	draw_circle(center, 22.0 + pulse * 2.0, Color(1.0, 0.97, 0.88, 0.9))
+
+
+func _link_button(text: String, callback: Callable) -> Button:
+	var button := Button.new()
+	button.text = text
+	button.flat = true
+	button.focus_mode = Control.FOCUS_NONE
+	button.pressed.connect(callback)
+	return button
 
 
 func _label(text: String, font_size: int, color: Color, align := HORIZONTAL_ALIGNMENT_LEFT) -> Label:

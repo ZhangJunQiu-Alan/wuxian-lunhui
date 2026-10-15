@@ -13,6 +13,7 @@ var _ult_bar: ProgressBar
 var _ult_label: Label
 var _announce: Label
 var _cutin: UltCutin
+var _fps_label: Label
 var _quest_box: VBoxContainer
 var _quest_title: Label
 var _quest_objective: Label
@@ -112,6 +113,15 @@ func _ready() -> void:
 	_boss_bar.custom_minimum_size.y = 14
 	_boss_bar.modulate = Color(0.9, 0.25, 0.2)
 	_boss_box.add_child(_boss_bar)
+
+	_fps_label = Label.new()
+	_fps_label.set_anchors_and_offsets_preset(Control.PRESET_TOP_RIGHT)
+	_fps_label.offset_left = -120
+	_fps_label.offset_right = -12
+	_fps_label.offset_top = 8
+	_fps_label.horizontal_alignment = HORIZONTAL_ALIGNMENT_RIGHT
+	_fps_label.modulate = Color(1, 1, 1, 0.5)
+	add_child(_fps_label)
 
 	_cutin = UltCutin.new()
 	add_child(_cutin)
@@ -243,8 +253,14 @@ func set_stats(elapsed: float, kills: int) -> void:
 	_kills_label.text = "击杀 %d" % kills
 
 
-func show_game_over(elapsed: float, kills: int, level: int, rewards: String) -> void:
-	_result_label.text = "你死了\n\n" + _stats_text(elapsed, kills, level) + "\n" + rewards
+func _process(_delta: float) -> void:
+	_fps_label.visible = Settings.show_fps
+	if _fps_label.visible:
+		_fps_label.text = "%d FPS" % Engine.get_frames_per_second()
+
+
+func show_game_over(elapsed: float, kills: int, level: int, rewards: String, title: String = "你死了") -> void:
+	_result_label.text = title + "\n\n" + _stats_text(elapsed, kills, level) + "\n" + rewards
 	hide_quest()
 	_game_over.visible = true
 

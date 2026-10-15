@@ -18,7 +18,7 @@ var _font: Font
 
 
 static func damage_number(pos: Vector2, amount: float, crit: bool = false) -> void:
-	if instance == null:
+	if instance == null or not Settings.damage_numbers:  # 设置里可以关闭伤害数字
 		return
 	if instance._numbers.size() >= MAX_NUMBERS:
 		instance._numbers.pop_front()

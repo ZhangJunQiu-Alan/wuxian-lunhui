@@ -169,6 +169,9 @@ func try_ultimate() -> void:
 
 ## 镜头震动，strength 是最大偏移像素
 func shake(strength: float, duration: float) -> void:
+	strength *= Settings.screen_shake  # 设置里可以调低或关闭
+	if strength <= 0.0:
+		return
 	_shake_strength = maxf(_shake_strength, strength)
 	_shake_time = maxf(_shake_time, duration)
 

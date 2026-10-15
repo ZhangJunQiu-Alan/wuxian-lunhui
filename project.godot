@@ -17,6 +17,7 @@ config/features=PackedStringArray("4.7")
 [autoload]
 
 Save="*res://scripts/core/save_data.gd"
+Settings="*res://scripts/core/settings.gd"
 
 [display]
 
