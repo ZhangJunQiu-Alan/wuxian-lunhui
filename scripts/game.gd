@@ -1,3 +1,4 @@
+class_name Game
 extends Node2D
 ## 一局战斗的总控：创建玩家、按时间刷怪、更新 HUD、处理死亡
 
@@ -21,6 +22,14 @@ var boss: Boss
 var _alive_by_type := {}  # 敌人 id -> 当前存活数量
 var _next_boss := 0
 var _defeated_bosses: Array[String] = []
+var spawn_mult := 1.0  # 刷怪速度倍率（瓦尔基里的试炼会临时提高）
+var reward_points := 0   # 奖励点：局外货币（阶段 8 局外成长时使用）
+var story_points := 0    # 支线剧情点：稀有货币
+var quest: SideQuest     # 当前的支线（同一时间最多一个）
+var _quest_queue: Array = []
+var _next_quest_slot := 0
+var _quests_done := 0
+var _quests_seen := 0
 
 
 func _ready() -> void:
@@ -47,6 +56,8 @@ func _ready() -> void:
 
 	process_physics_priority = -10  # 让推挤网格在所有敌人移动之前重建
 	_next_elite_time = level_data.elite_from
+	_quest_queue = level_data.quests.duplicate()
+	_quest_queue.shuffle()
 
 
 func _process(delta: float) -> void:
@@ -54,15 +65,16 @@ func _process(delta: float) -> void:
 	var wave := _current_wave()
 	_spawn_timer -= delta
 	if _spawn_timer <= 0.0:
-		_spawn_timer = wave.interval * (2.0 if is_instance_valid(boss) else 1.0)  # Boss 战时小怪减半
+		_spawn_timer = wave.interval * (2.0 if is_instance_valid(boss) else 1.0) / spawn_mult  # Boss 战时小怪减半
 		if get_tree().get_node_count_in_group("enemies") < level_data.max_enemies:
 			var type_id := _pick_weighted(wave.weights)
 			if _alive_by_type.get(type_id, 0) >= EnemyDB.ALL[type_id].get("max_alive", INF):
 				type_id = "draugr"
-			_spawn_enemy(type_id, _random_spawn_position())
+			spawn_enemy(type_id, _random_spawn_position())
 	_update_elites(wave)
 	_update_events()
 	_update_bosses()
+	_update_quests()
 	hud.set_stats(elapsed, kills)
 	queue_redraw()  # 背景网格跟着玩家重画
 
@@ -104,7 +116,7 @@ func _update_elites(wave: Dictionary) -> void:
 	var pool: Array = level_data.elite_pool.filter(func(id: String) -> bool: return wave.weights.has(id))
 	if pool.is_empty():
 		return
-	var enemy := _spawn_enemy(pool.pick_random(), _random_spawn_position(), true)
+	var enemy := spawn_enemy(pool.pick_random(), _random_spawn_position(), true)
 	hud.announce("%s 出现了！" % enemy.display_name)
 
 
@@ -115,11 +127,11 @@ func _update_events() -> void:
 		if event.type == "ring":
 			for i in event.count:
 				var angle: float = TAU * i / event.count
-				_spawn_enemy(event.enemy, player.position + Vector2.from_angle(angle) * RING_RADIUS)
+				spawn_enemy(event.enemy, player.position + Vector2.from_angle(angle) * RING_RADIUS)
 		hud.announce(event.text)
 
 
-func _spawn_enemy(type_id: String, pos: Vector2, elite: bool = false) -> Enemy:
+func spawn_enemy(type_id: String, pos: Vector2, elite: bool = false) -> Enemy:
 	var enemy := Enemy.new()
 	enemy.setup(type_id, 1.0 + elapsed / level_data.hp_growth, elite)
 	enemy.target = player
@@ -146,7 +158,7 @@ func _update_bosses() -> void:
 	if boss == null:
 		return
 	boss.target = player
-	boss.spawner = _spawn_enemy
+	boss.spawner = spawn_enemy
 	boss.defeated_bosses = _defeated_bosses
 	boss.position = player.position + Vector2.from_angle(randf() * TAU) * 520.0
 	boss.killed.connect(_on_enemy_killed)
@@ -156,6 +168,48 @@ func _update_bosses() -> void:
 	hud.show_boss(boss.display_name, boss.title, boss.max_hp)
 	hud.announce(boss.intro_line)
 	player.shake(8.0, 0.4)
+
+
+func _update_quests() -> void:
+	if is_instance_valid(quest):
+		hud.show_quest(quest)
+		return
+	var slots: Array = level_data.quest_slots
+	if _next_quest_slot >= slots.size() or elapsed < slots[_next_quest_slot] or is_instance_valid(boss) or _quest_queue.is_empty():
+		return
+	_next_quest_slot += 1
+	quest = QuestDB.create(_quest_queue.pop_front())
+	if quest == null:
+		return
+	_quests_seen += 1
+	quest.game = self
+	quest.player = player
+	quest.finished.connect(_on_quest_finished)
+	add_child(quest)
+	hud.announce(quest.offer_text)
+
+
+func _on_quest_finished(finished_quest: SideQuest, success: bool) -> void:
+	hud.hide_quest()
+	if success:
+		_quests_done += 1
+		hud.announce("【主神】支线剧情完成：%s。%s" % [finished_quest.title, finished_quest._reward()])
+	elif finished_quest.was_accepted:
+		hud.announce("【主神】支线剧情失败：" + finished_quest.title)
+	else:
+		hud.announce("错过了支线剧情：" + finished_quest.title)
+
+
+func add_reward_points(amount: int) -> void:
+	reward_points += amount
+
+
+func add_story_points(amount: int) -> void:
+	story_points += amount
+
+
+func _reward_summary() -> String:
+	return "支线完成 %d / %d　奖励点 %d　支线剧情点 %d" % [_quests_done, _quests_seen, reward_points, story_points]
 
 
 func _on_boss_defeated(defeated_boss: Boss) -> void:
@@ -168,7 +222,7 @@ func _on_boss_defeated(defeated_boss: Boss) -> void:
 	var chest := Chest.new()
 	chest.player = player
 	chest.position = defeated_boss.position
-	chest.opened.connect(_queue_reward.bind("宝箱！选择一项奖励"))
+	chest.opened.connect(queue_reward.bind("宝箱！选择一项奖励"))
 	add_child.call_deferred(chest)
 	# 再撒一圈大经验宝石
 	for i in 5:
@@ -181,11 +235,11 @@ func _on_boss_defeated(defeated_boss: Boss) -> void:
 
 
 func _on_player_leveled_up(_level: int) -> void:
-	_queue_reward("")
+	queue_reward("")
 
 
 ## 加入一次奖励选择。如果当前没有在选，就暂停游戏并弹出面板
-func _queue_reward(title: String) -> void:
+func queue_reward(title: String) -> void:
 	_pending_rewards.append(title)
 	if _pending_rewards.size() == 1:
 		get_tree().paused = true
@@ -206,12 +260,12 @@ func _on_level_cleared() -> void:
 	if player.is_dead:
 		return
 	get_tree().paused = true
-	hud.show_victory(level_data.name, level_data.clear_text, elapsed, kills, player.level)
+	hud.show_victory(level_data.name, level_data.clear_text, elapsed, kills, player.level, _reward_summary())
 
 
 func _on_player_died() -> void:
 	get_tree().paused = true
-	hud.show_game_over(elapsed, kills, player.level)
+	hud.show_game_over(elapsed, kills, player.level, _reward_summary())
 
 
 func _draw() -> void:

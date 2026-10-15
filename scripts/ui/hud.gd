@@ -12,6 +12,11 @@ var _ult_bar: ProgressBar
 var _ult_label: Label
 var _announce: Label
 var _cutin: UltCutin
+var _quest_box: VBoxContainer
+var _quest_title: Label
+var _quest_objective: Label
+var _quest_timer: Label
+var _pointer: QuestPointer
 var _boss_box: VBoxContainer
 var _boss_name: Label
 var _boss_bar: ProgressBar
@@ -110,6 +115,28 @@ func _ready() -> void:
 	_cutin = UltCutin.new()
 	add_child(_cutin)
 
+	# 右侧：支线任务面板
+	_quest_box = VBoxContainer.new()
+	_quest_box.set_anchors_and_offsets_preset(Control.PRESET_TOP_RIGHT)
+	_quest_box.offset_left = -300
+	_quest_box.offset_right = -16
+	_quest_box.offset_top = 250
+	_quest_box.visible = false
+	add_child(_quest_box)
+	_quest_title = Label.new()
+	_quest_title.add_theme_font_size_override("font_size", 18)
+	_quest_objective = Label.new()
+	_quest_timer = Label.new()
+	_quest_timer.modulate = Color(1, 1, 1, 0.7)
+	for label in [_quest_title, _quest_objective, _quest_timer]:
+		label.horizontal_alignment = HORIZONTAL_ALIGNMENT_RIGHT
+		label.add_theme_constant_override("outline_size", 4)
+		label.add_theme_color_override("font_outline_color", Color(0, 0, 0, 0.8))
+		_quest_box.add_child(label)
+
+	_pointer = QuestPointer.new()
+	add_child(_pointer)
+
 	_build_game_over()
 
 
@@ -163,6 +190,26 @@ func hide_boss() -> void:
 	_boss_box.visible = false
 
 
+
+## 支线任务面板和指向箭头，每帧由 game.gd 更新
+func show_quest(quest: SideQuest) -> void:
+	_quest_box.visible = true
+	_quest_title.text = "支线剧情 · " + quest.title
+	_quest_title.modulate = quest.color
+	_quest_objective.text = quest.objective
+	if quest.state == "active":
+		_quest_timer.text = "剩余 %d 秒" % ceili(quest.time_left)
+	else:
+		_quest_timer.text = "标记 %d 秒后消失" % ceili(quest._offer_left)
+	_pointer.targets = quest.pointer_targets()
+	_pointer.color = quest.color
+
+
+func hide_quest() -> void:
+	_quest_box.visible = false
+	_pointer.targets = []
+
+
 ## 大招特写
 func show_cutin(character_id: String) -> void:
 	_cutin.play(character_id)
@@ -195,13 +242,15 @@ func set_stats(elapsed: float, kills: int) -> void:
 	_kills_label.text = "击杀 %d" % kills
 
 
-func show_game_over(elapsed: float, kills: int, level: int) -> void:
-	_result_label.text = "你死了\n\n" + _stats_text(elapsed, kills, level)
+func show_game_over(elapsed: float, kills: int, level: int, rewards: String) -> void:
+	_result_label.text = "你死了\n\n" + _stats_text(elapsed, kills, level) + "\n" + rewards
+	hide_quest()
 	_game_over.visible = true
 
 
-func show_victory(level_name: String, story: String, elapsed: float, kills: int, level: int) -> void:
-	_result_label.text = "主线任务完成 · %s\n\n%s\n\n%s" % [level_name, _stats_text(elapsed, kills, level), story]
+func show_victory(level_name: String, story: String, elapsed: float, kills: int, level: int, rewards: String) -> void:
+	_result_label.text = "主线任务完成 · %s\n\n%s\n%s\n\n%s" % [level_name, _stats_text(elapsed, kills, level), rewards, story]
+	hide_quest()
 	_result_label.modulate = Color(1.0, 0.88, 0.55)
 	hide_boss()
 	_game_over.visible = true

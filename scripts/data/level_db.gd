@@ -6,6 +6,7 @@ class_name LevelDB
 ##           从 elite_pool 里挑当前阶段已经出现的敌人种类
 ##   events  定时事件：ring = 在玩家周围刷出一圈敌人
 ##   bosses  Boss 出场时间和 id（id 对应 BossDB）；击败 final_boss 即通关，显示 clear_text
+##   quest_slots 支线出现的时间点（有 Boss 在场时会等 Boss 被击败），quests 是支线池（id 对应 QuestDB），随机顺序
 
 const NORSE_1 := {
 	"name": "芬布尔之冬",
@@ -30,6 +31,8 @@ const NORSE_1 := {
 		{"time": 840.0, "id": "hrym"},
 	],
 	"final_boss": "hrym",
+	"quest_slots": [150.0, 450.0, 720.0],
+	"quests": ["bonfire", "ravens", "valkyrie"],
 	"clear_text": "远方传来号角声。那是神域守门人海姆达尔吹响了加拉尔号角。\n诸神黄昏，正式开始。",
 	"events": [
 		{"time": 75.0, "type": "ring", "enemy": "wolf", "count": 12, "text": "狼群包围！"},
