@@ -1,0 +1,95 @@
+extends Node
+## 存档（自动加载：任何脚本都可以直接用 Save.xxx 访问）
+## 保存局外进度：奖励点、支线剧情点、主神空间的永久强化、战绩统计
+## 文件位置：user://save.json（Mac 上在 ~/Library/Application Support/Godot/app_userdata/无限轮回/）
+## 测试时用命令行参数 --save-file=user://test_save.json 换一个文件，避免弄乱真实存档
+
+const DEFAULT_PATH := "user://save.json"
+const VERSION := 1
+
+var path := DEFAULT_PATH
+var reward_points := 0
+var story_points := 0
+var meta := {}  # 永久强化 id -> 等级
+var stats := {"runs": 0, "clears": 0, "best_time": 0.0, "best_clear_time": 0.0, "total_kills": 0}
+
+
+## 在节点创建时（而不是加入场景树后）就读取存档：
+## 这样即使别的脚本在很早的时机访问 Save，拿到的也是正确的存档文件和数据
+func _init() -> void:
+	for arg in OS.get_cmdline_user_args():
+		if arg.begins_with("--save-file="):
+			path = arg.trim_prefix("--save-file=")
+	load_game()
+
+
+func load_game() -> void:
+	if not FileAccess.file_exists(path):
+		return
+	var data: Variant = JSON.parse_string(FileAccess.get_file_as_string(path))
+	if not data is Dictionary:
+		push_error("存档文件损坏，使用新存档：" + path)
+		return
+	reward_points = int(data.get("reward_points", 0))
+	story_points = int(data.get("story_points", 0))
+	meta = {}
+	for id: String in data.get("meta", {}):
+		meta[id] = int(data.meta[id])
+	var saved_stats: Dictionary = data.get("stats", {})
+	for key: String in stats:
+		if saved_stats.has(key):
+			stats[key] = type_convert(saved_stats[key], typeof(stats[key]))  # JSON 读出的数字都是小数，转回原来的类型
+
+
+## 先写到临时文件再改名，写到一半断电也不会把原存档写坏
+func save_game() -> void:
+	var data := {"version": VERSION, "reward_points": reward_points, "story_points": story_points, "meta": meta, "stats": stats}
+	var tmp_path := path + ".tmp"
+	var file := FileAccess.open(tmp_path, FileAccess.WRITE)
+	if file == null:
+		push_error("无法写入存档：" + tmp_path)
+		return
+	file.store_string(JSON.stringify(data, "\t"))
+	file.close()
+	DirAccess.rename_absolute(tmp_path, path)
+
+
+func meta_level(id: String) -> int:
+	return meta.get(id, 0)
+
+
+## 购买一级永久强化，成功返回 true
+func buy_meta(id: String) -> bool:
+	var level := meta_level(id)
+	if level >= MetaDB.UPGRADES[id].max:
+		return false
+	var cost := MetaDB.cost(id, level)
+	if reward_points < cost:
+		return false
+	reward_points -= cost
+	meta[id] = level + 1
+	save_game()
+	return true
+
+
+## 一局结束时调用：把本局收获存进存档
+func record_run(points: int, story: int, cleared: bool, elapsed: float, kills: int) -> void:
+	reward_points += points
+	story_points += story
+	stats.runs += 1
+	stats.total_kills += kills
+	stats.best_time = maxf(stats.best_time, elapsed)
+	if cleared:
+		stats.clears += 1
+		if stats.best_clear_time <= 0.0 or elapsed < stats.best_clear_time:
+			stats.best_clear_time = elapsed
+	save_game()
+
+
+## 清空存档（主神空间里的「重置存档」用）
+func reset() -> void:
+	reward_points = 0
+	story_points = 0
+	meta = {}
+	stats = {"runs": 0, "clears": 0, "best_time": 0.0, "best_clear_time": 0.0, "total_kills": 0}
+	save_game()

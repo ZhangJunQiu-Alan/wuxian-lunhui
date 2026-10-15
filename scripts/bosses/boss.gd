@@ -17,6 +17,7 @@ var defeat_line := ""  # 击败台词
 var state := ""
 var state_time := 0.0
 var spawner: Callable  # 召唤小怪用，由 game.gd 传入：spawner.call(敌人id, 位置)
+var reward_points := 100  # 击败后获得的奖励点
 var casts_shadow := true  # 哈提自己画「真身影子」，所以关掉通用影子
 var defeated_bosses: Array[String] = []  # 本关已击败的 Boss，由 game.gd 传入（哈提会因斯库尔之死狂暴）
 

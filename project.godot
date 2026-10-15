@@ -11,8 +11,12 @@ config_version=5
 [application]
 
 config/name="无限轮回"
-run/main_scene="res://scenes/main.tscn"
+run/main_scene="res://scenes/hub.tscn"
 config/features=PackedStringArray("4.7")
+
+[autoload]
+
+Save="*res://scripts/core/save_data.gd"
 
 [display]
 

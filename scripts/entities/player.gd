@@ -23,6 +23,8 @@ var hp := 100.0
 var pickup_radius := 90.0
 var regen := 0.0          # 每秒回复生命
 var dodge_chance := 0.0   # 闪避几率，0~1
+var rerolls := 0          # 本局还能重抽几次升级选项（主神空间购买）
+var revives := 0          # 本局还能复活几次（主神空间购买）
 
 # 全局加成，所有武器和技能共享
 var damage_mult := 1.0
@@ -151,6 +153,18 @@ func take_damage(amount: float) -> void:
 	if hp <= 0.0:
 		is_dead = true
 		died.emit()
+
+
+## 复活：恢复一半生命，短暂无敌，并震开身边的敌人
+func revive() -> void:
+	revives -= 1
+	is_dead = false
+	hp = max_hp * 0.5
+	_invincible_time = 2.0
+	hp_changed.emit(hp, max_hp)
+	shake(10.0, 0.4)
+	FxLayer.burst(global_position, Color(1.0, 0.9, 0.5), 50, 320.0, 4.0)
+	Enemy.damage_in_radius(get_tree(), global_position, 260.0, 0.0, 900.0)
 
 
 ## 恐惧：duration 秒内不受控制地远离 from

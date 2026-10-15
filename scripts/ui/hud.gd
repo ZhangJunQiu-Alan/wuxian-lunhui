@@ -280,10 +280,25 @@ func _build_game_over() -> void:
 	_result_label.add_theme_font_size_override("font_size", 28)
 	box.add_child(_result_label)
 
+	var buttons := HBoxContainer.new()
+	buttons.alignment = BoxContainer.ALIGNMENT_CENTER
+	buttons.add_theme_constant_override("separation", 24)
+	box.add_child(buttons)
 	var restart := Button.new()
-	restart.text = "重新开始"
+	restart.text = "再来一次"
+	restart.custom_minimum_size = Vector2(180, 44)
 	restart.pressed.connect(_on_restart_pressed)
-	box.add_child(restart)
+	buttons.add_child(restart)
+	var hub := Button.new()
+	hub.text = "返回主神空间"
+	hub.custom_minimum_size = Vector2(180, 44)
+	hub.pressed.connect(_on_hub_pressed)
+	buttons.add_child(hub)
+
+
+func _on_hub_pressed() -> void:
+	get_tree().paused = false
+	get_tree().change_scene_to_file("res://scenes/hub.tscn")
 
 
 func _on_restart_pressed() -> void:

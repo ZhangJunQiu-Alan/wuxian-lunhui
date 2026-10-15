@@ -189,7 +189,8 @@ func take_damage(amount: float, knockback: Vector2 = Vector2.ZERO, crit: bool = 
 	_knockback += knockback / mass  # 越重越难击退
 	_flash_time = 0.08
 	queue_redraw()
-	FxLayer.damage_number(global_position + Vector2(randf_range(-8, 8), -radius - 4), amount, crit)
+	if amount > 0.0:  # 只击退不造成伤害时（例如复活震开）不显示数字
+		FxLayer.damage_number(global_position + Vector2(randf_range(-8, 8), -radius - 4), amount, crit)
 	if hp <= 0.0:
 		_die()
 

@@ -31,6 +31,7 @@ const NORSE_1 := {
 		{"time": 840.0, "id": "hrym"},
 	],
 	"final_boss": "hrym",
+	"clear_reward": 300,  # 通关额外奖励点
 	"quest_slots": [150.0, 450.0, 720.0],
 	"quests": ["bonfire", "ravens", "valkyrie"],
 	"clear_text": "远方传来号角声。那是神域守门人海姆达尔吹响了加拉尔号角。\n诸神黄昏，正式开始。",

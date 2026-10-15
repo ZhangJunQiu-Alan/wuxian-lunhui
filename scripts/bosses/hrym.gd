@@ -36,6 +36,7 @@ func _init() -> void:
 func init_stats(hp_scale: float) -> void:
 	setup_boss("hrym", "赫列姆", "霜巨人之王", 750.0, hp_scale, 46.0, 75.0, 25.0)
 	color = Color(0.45, 0.58, 0.85)
+	reward_points = 300
 
 
 func _ready() -> void:

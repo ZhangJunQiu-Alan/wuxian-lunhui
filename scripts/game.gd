@@ -6,6 +6,7 @@ const SPAWN_DISTANCE := 750.0  # 刷怪距离：略大于半个屏幕对角线�
 const GRID_SIZE := 64.0
 const GRID_COLOR := Color(1, 1, 1, 0.05)
 
+const POINTS_PER_MINUTE := 10  # 每存活 1 分钟获得的奖励点
 const RING_RADIUS := 450.0     # 包围事件里那一圈敌人离玩家的距离
 
 var player: Player
@@ -30,6 +31,7 @@ var _quest_queue: Array = []
 var _next_quest_slot := 0
 var _quests_done := 0
 var _quests_seen := 0
+var _run_recorded := false
 
 
 func _ready() -> void:
@@ -39,6 +41,7 @@ func _ready() -> void:
 	add_child(player)
 	player.died.connect(_on_player_died)
 	player.leveled_up.connect(_on_player_leveled_up)
+	MetaDB.apply(player)  # 主神空间购买的永久强化
 
 	hud = Hud.new()
 	add_child(hud)
@@ -53,6 +56,7 @@ func _ready() -> void:
 	level_up_panel = LevelUpPanel.new()
 	add_child(level_up_panel)
 	level_up_panel.chosen.connect(_on_upgrade_chosen)
+	level_up_panel.reroll_requested.connect(_on_reroll_requested)
 
 	process_physics_priority = -10  # 让推挤网格在所有敌人移动之前重建
 	_next_elite_time = level_data.elite_from
@@ -208,14 +212,24 @@ func add_story_points(amount: int) -> void:
 	story_points += amount
 
 
-func _reward_summary() -> String:
-	return "支线完成 %d / %d　奖励点 %d　支线剧情点 %d" % [_quests_done, _quests_seen, reward_points, story_points]
+## 一局结束：结算存活时间和通关奖励，写进存档，返回结算界面上显示的文字
+func _finish_run(cleared: bool) -> String:
+	if not _run_recorded:
+		_run_recorded = true
+		add_reward_points(int(elapsed / 60.0) * POINTS_PER_MINUTE)
+		if cleared:
+			add_reward_points(level_data.clear_reward)
+		Save.record_run(reward_points, story_points, cleared, elapsed, kills)
+	return "支线完成 %d / %d\n本局获得：奖励点 +%d　支线剧情点 +%d\n累计：奖励点 %d　支线剧情点 %d" % [
+		_quests_done, _quests_seen, reward_points, story_points, Save.reward_points, Save.story_points]
 
 
 func _on_boss_defeated(defeated_boss: Boss) -> void:
 	_defeated_bosses.append(defeated_boss.type_id)
 	hud.hide_boss()
 	hud.announce(defeated_boss.defeat_line)
+	add_reward_points(defeated_boss.reward_points)
+	FxLayer.floating_text(defeated_boss.global_position + Vector2(0, -60), "奖励点 +%d" % defeated_boss.reward_points, Color(1.0, 0.85, 0.4))
 	if defeated_boss.type_id == level_data.final_boss:
 		get_tree().create_timer(3.0).timeout.connect(_on_level_cleared)  # 留 3 秒看击败演出
 		return
@@ -256,16 +270,27 @@ func _on_upgrade_chosen(id: String) -> void:
 		get_tree().paused = false
 
 
+func _on_reroll_requested() -> void:
+	if player.rerolls <= 0 or _pending_rewards.is_empty():
+		return
+	player.rerolls -= 1
+	level_up_panel.open(UpgradeDB.get_choices(player, 3), player, _pending_rewards[0])
+
+
 func _on_level_cleared() -> void:
 	if player.is_dead:
 		return
 	get_tree().paused = true
-	hud.show_victory(level_data.name, level_data.clear_text, elapsed, kills, player.level, _reward_summary())
+	hud.show_victory(level_data.name, level_data.clear_text, elapsed, kills, player.level, _finish_run(true))
 
 
 func _on_player_died() -> void:
+	if player.revives > 0:
+		player.revive()
+		hud.announce("【主神】主神的眷顾：复活！")
+		return
 	get_tree().paused = true
-	hud.show_game_over(elapsed, kills, player.level, _reward_summary())
+	hud.show_game_over(elapsed, kills, player.level, _finish_run(false))
 
 
 func _draw() -> void:

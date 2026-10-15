@@ -3,6 +3,7 @@ extends CanvasLayer
 ## 升级三选一界面：显示卡牌，鼠标点击或按 1/2/3 选择
 
 signal chosen(id: String)
+signal reroll_requested
 
 const CARD_SIZE := Vector2(260, 300)
 const NEUTRAL_COLOR := Color(0.75, 0.78, 0.85)
@@ -10,6 +11,7 @@ const NEUTRAL_COLOR := Color(0.75, 0.78, 0.85)
 var _title: Label
 var _cards: HBoxContainer
 var _ids: Array[String] = []
+var _reroll: Button
 
 
 func _ready() -> void:
@@ -39,6 +41,13 @@ func _ready() -> void:
 	_cards.add_theme_constant_override("separation", 24)
 	box.add_child(_cards)
 
+	_reroll = Button.new()
+	_reroll.focus_mode = Control.FOCUS_NONE
+	_reroll.size_flags_horizontal = Control.SIZE_SHRINK_CENTER
+	_reroll.custom_minimum_size = Vector2(220, 40)
+	_reroll.pressed.connect(func() -> void: reroll_requested.emit())
+	box.add_child(_reroll)
+
 	var hint := Label.new()
 	hint.text = "点击卡牌或按 1 / 2 / 3 选择"
 	hint.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
@@ -51,6 +60,8 @@ func open(ids: Array[String], player: Player, title: String = "") -> void:
 	if title == "":
 		title = "选择你的第一份信仰" if player.faith.is_empty() else "升级！等级 %d" % player.level
 	_title.text = title
+	_reroll.visible = player.rerolls > 0
+	_reroll.text = "重抽选项（剩余 %d 次）  [R]" % player.rerolls
 	for child in _cards.get_children():
 		child.queue_free()
 	for i in ids.size():
@@ -71,6 +82,9 @@ func _input(event: InputEvent) -> void:
 	var key := event as InputEventKey
 	if key and key.pressed and not key.echo and key.keycode >= KEY_1 and key.keycode <= KEY_3:
 		choose(key.keycode - KEY_1)
+		get_viewport().set_input_as_handled()
+	elif key and key.pressed and not key.echo and key.keycode == KEY_R and _reroll.visible:
+		reroll_requested.emit()
 		get_viewport().set_input_as_handled()
 
 
