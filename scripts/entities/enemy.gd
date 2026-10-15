@@ -17,6 +17,14 @@ var _flash_time := 0.0
 var _dead := false
 
 
+## 对一个圆形范围内的所有敌人造成伤害（落雷、火焰等范围技能共用）
+static func damage_in_radius(tree: SceneTree, center: Vector2, radius: float, amount: float) -> void:
+	for node in tree.get_nodes_in_group("enemies"):
+		var enemy := node as Enemy
+		if enemy.global_position.distance_to(center) <= radius + enemy.radius:
+			enemy.take_damage(amount)
+
+
 ## 用数据表里的一行来初始化，hp_scale 让后期的怪更肉
 func setup(data: Dictionary, hp_scale: float) -> void:
 	display_name = data.name

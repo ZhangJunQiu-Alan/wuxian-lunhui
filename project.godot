@@ -1,5 +1,10 @@
 ; Engine configuration file.
-; 可以直接在 Godot 编辑器的「项目 → 项目设置」里修改这些内容
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
 
 config_version=5
 
@@ -7,6 +12,7 @@ config_version=5
 
 config/name="无限轮回"
 run/main_scene="res://scenes/main.tscn"
+config/features=PackedStringArray("4.7")
 
 [display]
 

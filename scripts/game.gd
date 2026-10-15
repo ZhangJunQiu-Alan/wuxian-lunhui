@@ -13,15 +13,18 @@ const ENEMY_TYPES := {
 
 var player: Player
 var hud: Hud
+var level_up_panel: LevelUpPanel
 var elapsed := 0.0
 var kills := 0
 var _spawn_timer := 0.0
+var _pending_level_ups := 0  # 一次吃到很多经验可能连升几级，逐个弹出选择
 
 
 func _ready() -> void:
 	player = Player.new()
 	add_child(player)
 	player.died.connect(_on_player_died)
+	player.leveled_up.connect(_on_player_leveled_up)
 
 	hud = Hud.new()
 	add_child(hud)
@@ -29,6 +32,10 @@ func _ready() -> void:
 	player.xp_changed.connect(hud.set_xp)
 	hud.set_hp(player.hp, player.max_hp)
 	hud.set_xp(player.xp, player.xp_to_next, player.level)
+
+	level_up_panel = LevelUpPanel.new()
+	add_child(level_up_panel)
+	level_up_panel.chosen.connect(_on_upgrade_chosen)
 
 
 func _process(delta: float) -> void:
@@ -62,6 +69,23 @@ func _spawn_enemy() -> void:
 
 func _on_enemy_killed(_enemy: Enemy) -> void:
 	kills += 1
+
+
+func _on_player_leveled_up(_level: int) -> void:
+	_pending_level_ups += 1
+	if _pending_level_ups == 1:
+		get_tree().paused = true
+		level_up_panel.open(UpgradeDB.get_choices(player, 3), player)
+
+
+func _on_upgrade_chosen(id: String) -> void:
+	UpgradeDB.apply(id, player)
+	hud.set_faith(player.faith)
+	_pending_level_ups -= 1
+	if _pending_level_ups > 0:
+		level_up_panel.open(UpgradeDB.get_choices(player, 3), player)
+	else:
+		get_tree().paused = false
 
 
 func _on_player_died() -> void:

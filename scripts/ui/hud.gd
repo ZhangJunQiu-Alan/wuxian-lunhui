@@ -7,6 +7,7 @@ var _hp_bar: ProgressBar
 var _level_label: Label
 var _time_label: Label
 var _kills_label: Label
+var _faith_box: VBoxContainer
 var _game_over: Control
 var _result_label: Label
 
@@ -37,6 +38,10 @@ func _ready() -> void:
 	_time_label.add_theme_font_size_override("font_size", 28)
 	add_child(_time_label)
 
+	_faith_box = VBoxContainer.new()
+	_faith_box.position = Vector2(16, 100)
+	add_child(_faith_box)
+
 	_build_game_over()
 
 
@@ -52,10 +57,22 @@ func set_hp(hp: float, max_hp: float) -> void:
 	_hp_bar.value = hp
 
 
-func set_xp(xp: int, xp_to_next: int, level: int) -> void:
+func set_xp(xp: float, xp_to_next: int, level: int) -> void:
 	_xp_bar.max_value = xp_to_next
 	_xp_bar.value = xp
 	_level_label.text = "等级 %d" % level
+
+
+## 左侧显示每位已信仰神明的信仰值，例如「托尔 ■■■□□」
+func set_faith(faith: Dictionary) -> void:
+	for child in _faith_box.get_children():
+		child.queue_free()
+	for god_id: String in faith:
+		var god: Dictionary = Gods.ALL[god_id]
+		var label := Label.new()
+		label.text = "%s %s" % [god.name, LevelUpPanel.faith_bar(faith[god_id])]
+		label.modulate = god.color
+		_faith_box.add_child(label)
 
 
 func set_stats(elapsed: float, kills: int) -> void:
