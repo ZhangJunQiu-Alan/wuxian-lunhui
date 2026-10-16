@@ -80,9 +80,9 @@
 
 **第 1 关需要的素材已经全部完成。**
 
-### 现在的任务（A~D 互不依赖，可以同时开工）
+### 现在的任务（A~E 互不依赖，可以同时开工）
 
-每个任务用自己的 source 文件夹：`assets/source/taskA_cleanup_<日期>/`、`taskB_audio_<日期>/`、`taskC_helheim_enemies_<日期>/`、`taskD_helheim_bosses_<日期>/`。
+每个任务用自己的 source 文件夹：`assets/source/taskA_cleanup_<日期>/`、`taskB_audio_<日期>/`、`taskC_helheim_enemies_<日期>/`、`taskD_helheim_bosses_<日期>/`、`taskE_helheim_map_<日期>/`。
 
 #### 任务 A：删除原型人物名
 
@@ -208,6 +208,74 @@ Boss 物件与特效：
 | `poison_pool.png` | `effects/` | 96×48，4 帧循环（384×48） | 地面上冒泡的墨绿毒池 |
 | `nail_bolt.png` | `effects/` | 32×32，朝右 | 海拉第二阶段射出的指甲弹 |
 | `ground_crack.png` | `effects/` | 96×96，4 帧（384×96） | 尼德霍格钻出前地面裂开的预警，裂纹越来越大 |
+
+#### 任务 E：第 2 关地图
+
+先读 `docs/地图设计_第2关.md`（布局、每个地标的细节、边界）。做法和第 1 关第 4 批补做完全一样，可以打开 `assets/sprites/borders/midgard/`、`ground/midgard/`、`decals/midgard/` 对照格式。风格基准是 `ground/helheim/`、`props/helheim/` 里已有的素材：冷灰、墨绿、骨白、暗紫，磷火的青绿点缀；吉欧尔桥的金瓦是全图唯一的亮暖色。
+
+所有文件放在各文件夹的 `helheim/` 子文件夹里。
+
+**边界** `borders/helheim/`（和第 1 关一样：四边各一张可以重复拼接的长条，加四个转角；内侧边缘要参差，不要一条笔直的线）
+
+| 文件名 | 尺寸 | 内容 |
+| --- | --- | --- |
+| `dark_sea_01.png` | 256×192 | 北：漆黑的冥海，岸边有碎冰和雾气 |
+| `hel_wall_01.png` | 192×256 | 东：黑色的冥界高墙，墙头骨刺，墙根白骨 |
+| `fog_abyss_01.png` | 192×256 | 西：地面断开，下面是白雾深渊 |
+| `ice_cliff_01.png` | 256×192 | 南：灰黑岩壁，岩缝结冰 |
+| `border_corner_ne/nw/se/sw.png` | 192×192 | 四个转角，接上相邻两边 |
+| `gnipa_cave.png` | 256×192 | 南墙上加姆的洞窟入口，挂着断掉的铁链，能嵌进南边岩壁的长条里 |
+
+**地块** `ground/helheim/`（64×64，平铺无缝）
+
+| 文件名 | 内容 |
+| --- | --- |
+| `river_01.png`、`river_02.png` | 冥河：漆黑的河水，漂着碎冰；两张混用 |
+| `river_ice.png` | 浅滩上结冰的河面，冰下隐约有刀剑的暗影 |
+| `bone_path.png` | 骨头和碎石铺成的小路 |
+| `marsh.png` | 冥雾沼泽的灰绿泥地 |
+| `plaza.png` | 亡者广场破碎的黑色石板 |
+
+**过渡块**（64×64，每种 12 张：`<名字>_edge_n/e/s/w`、`_edge_outer_ne/nw/se/sw`、`_edge_inner_ne/nw/se/sw`，和第 1 关的 `ice_edge_*` 规则一样，边缘圆滑）：`river_edge_*`（河岸，冥河和普通石地之间）、`bone_path_edge_*`、`marsh_edge_*`
+
+**物件** `props/helheim/`（底边就是落地位置，光从左上来）
+
+| 区域 | 文件名 | 尺寸 | 内容 |
+| --- | --- | --- | --- |
+| 吉欧尔桥 | `gjoll_bridge.png` | 224×384 | 南北方向横跨冥河的长桥，桥顶金瓦（俯视 3/4 视角，玩家从桥面上走过，所以桥面中间要是能走的平地） |
+| | `bridge_booth.png` | 96×128 | 桥头守桥人的石亭 |
+| 亡者广场 | `soul_lamp.png`、`soul_lamp_lit.png` | 32×96 | 熄灭的和点亮的磷火灯柱（引魂灯支线） |
+| | `cane.png`、`straw_hat.png`、`wine_jug.png`、`wooden_horse.png` | 32×32 | 亡者丢下的随身物品 |
+| 港口 | `nail_pier.png` | 128×256 | 指甲铺成的栈桥 |
+| | `nail_basket.png`、`cargo_crate.png` | 48×48 | 装指甲的筐、装船的木箱 |
+| | `shield_spear.png` | 64×64 | 亡者士兵靠在一起的盾和矛 |
+| 海拉的大厅 | `hall_pillar.png` | 64×192 | 高大的黑色石柱 |
+| | `hall_arch_broken.png` | 192×160 | 倒塌的拱门 |
+| | `empty_throne.png` | 64×96 | 空着的王座 |
+| | `long_table.png` | 160×64 | 宴会长桌，上面只有空盘子 |
+| | `hall_carpet.png` | 96×256 | 大门前破旧的长毯（贴在地上） |
+| 世界树之根 | `world_root_arch.png` | 384×192 | 从地下拱起的一段世界树根，像一座拱桥，中间能从下面穿过 |
+| | `glow_mushroom.png` | 32×32 | 发光的蘑菇 |
+| 加姆的洞窟 | `small_cave.png` | 128×96 | 洞窟旁的小洞穴，里面有一个坐着的人影（隐藏支线） |
+| 指甲工坊 | `nail_heap_01.png`、`nail_heap_02.png` | 96×80 | 指甲堆成的小山 |
+| | `workbench.png` | 96×64 | 木工作台，放着刮刀和锤子 |
+| | `nail_plank.png` | 96×48 | 半成品的指甲船板 |
+| | `half_golem.png` | 64×64 | 拼到一半、倒在地上的指甲傀儡 |
+| 沼泽 | `sunken_tree.png` | 96×96 | 半沉在泥里的枯树 |
+| | `floating_bones.png` | 64×32 | 浮在泥水上的白骨 |
+| 过渡区域 | `luggage.png` | 48×48 | 亡者丢下的行李包袱 |
+
+**地面贴花** `decals/helheim/`（贴在地面上，可以被走过）
+
+| 文件名 | 尺寸 | 内容 |
+| --- | --- | --- |
+| `queue_tracks_01.png`、`_02.png` | 64×64 | 一列朝北的浅脚印（亡者排队） |
+| `hoof_tracks_01.png`、`_02.png` | 64×64 | 八足神驹的蹄印（每组 8 个蹄印） |
+| `paw_tracks_01.png` | 96×96 | 巨大的犬爪印 |
+| `dried_blood_01.png`、`_02.png` | 96×64 | 干涸的大片血迹 |
+| `drag_mark_01.png` | 64×128 | 搬运指甲的拖痕 |
+| `root_crack_01.png`、`_02.png` | 96×96 | 树根旁的地面裂缝 |
+| `moss_01.png`、`_02.png` | 64×64 | 石缝里的灰白苔藓 |
 
 ## 五、交付
 
