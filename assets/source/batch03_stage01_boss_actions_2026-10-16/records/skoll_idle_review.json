@@ -1,0 +1,59 @@
+{
+  "status": "self_check_passed_pending_batch_completion",
+  "version": "v02",
+  "candidate": "candidates/skoll_idle_v02.png",
+  "approved_copy": "approved/skoll_idle.png",
+  "frames": 4,
+  "frame_size": [
+    128,
+    128
+  ],
+  "size": [
+    512,
+    128
+  ],
+  "colors": 44,
+  "baseline": 117,
+  "generation_url": "https://chatgpt.com/c/6ad11665-759c-83e9-a994-1a414813925e",
+  "source": "references/skoll.png",
+  "tools": [
+    "Chrome Piskel actual pixel repair, clone and reorder",
+    "Pillow deterministic reference palette, technical QA and GIF preview"
+  ],
+  "checks": {
+    "rgba_binary_alpha_exact_size": true,
+    "shared_reference_palette": true,
+    "facing_right_and_centered": true,
+    "same_foot_baseline": true,
+    "margin_at_least_two": true,
+    "one_x_dark_background_review": true,
+    "four_x_contact_and_chrome_gif_review": true,
+    "head_and_feet_pixels_unchanged": true,
+    "new_internal_alpha_holes": 0,
+    "pixel_plan_differences_all_frames": 0,
+    "body_proportions_consistent": true,
+    "loop_A_B_C_B_no_global_translation": true,
+    "gif_four_x_eight_fps": true,
+    "no_text_watermark_ground_scene": true
+  },
+  "motion_review_note": "Actual exported PNG frames reviewed in contact sheet and Chrome GIF at two observed phases. Small chest/crest/tail-flame changes; stationary face and paws; smooth A-B-C-B seam.",
+  "proof": [
+    "records/skoll_idle_v02_gallery_phase_a.jpg",
+    "records/skoll_idle_v02_gallery_phase_b.jpg"
+  ],
+  "rejected_v01": "Rectangular transparent gaps left by local patch movement, including 16/32 chest pixels. Actual Piskel repairs in v02 eliminated new enclosed holes.",
+  "game_test": "not_performed",
+  "final_copied": false,
+  "id": "skoll_idle",
+  "preview": "previews/skoll_idle_v02.gif",
+  "editable": "candidates/skoll_idle_v02.piskel",
+  "palette": "records/skoll_reference_palette.json",
+  "gif_nominal_fps": 8,
+  "gif_duration_ms": [
+    120,
+    130,
+    120,
+    130
+  ],
+  "gif_actual_average_fps": 8
+}

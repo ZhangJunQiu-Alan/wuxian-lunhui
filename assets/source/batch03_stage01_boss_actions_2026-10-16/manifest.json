@@ -1,0 +1,1584 @@
+{
+  "batch": "batch03_stage01_boss_actions_2026-10-16",
+  "status": "complete_self_checked_pending_game_review",
+  "approved_count": 15,
+  "required_count": 15,
+  "final_copied_count": 15,
+  "assets": [
+    {
+      "id": "skoll_idle",
+      "frame_size": [
+        128,
+        128
+      ],
+      "expected_frames": 4,
+      "final_copied": true,
+      "status": "self_check_passed_pending_game_review",
+      "version": "v02",
+      "candidate": "candidates/skoll_idle_v02.png",
+      "approved_copy": "approved/skoll_idle.png",
+      "frames": 4,
+      "size": [
+        512,
+        128
+      ],
+      "colors": 44,
+      "baseline": 117,
+      "generation_url": "https://chatgpt.com/c/6ad11665-759c-83e9-a994-1a414813925e",
+      "source": "references/skoll.png",
+      "tools": [
+        "Chrome Piskel actual pixel repair, clone and reorder",
+        "Pillow deterministic reference palette, technical QA and GIF preview"
+      ],
+      "checks": {
+        "rgba_binary_alpha_exact_size": true,
+        "shared_reference_palette": true,
+        "facing_right_and_centered": true,
+        "same_foot_baseline": true,
+        "margin_at_least_two": true,
+        "one_x_dark_background_review": true,
+        "four_x_contact_and_chrome_gif_review": true,
+        "head_and_feet_pixels_unchanged": true,
+        "new_internal_alpha_holes": 0,
+        "pixel_plan_differences_all_frames": 0,
+        "body_proportions_consistent": true,
+        "loop_A_B_C_B_no_global_translation": true,
+        "gif_four_x_eight_fps": true,
+        "no_text_watermark_ground_scene": true
+      },
+      "motion_review_note": "Actual exported PNG frames reviewed in contact sheet and Chrome GIF at two observed phases. Small chest/crest/tail-flame changes; stationary face and paws; smooth A-B-C-B seam.",
+      "proof": [
+        "records/skoll_idle_v02_gallery_phase_a.jpg",
+        "records/skoll_idle_v02_gallery_phase_b.jpg"
+      ],
+      "rejected_v01": "Rectangular transparent gaps left by local patch movement, including 16/32 chest pixels. Actual Piskel repairs in v02 eliminated new enclosed holes.",
+      "game_test": "not_performed",
+      "approved_file": "approved/skoll_idle.png",
+      "review_record": "records/skoll_idle_review.json",
+      "preview": "previews/skoll_idle_v02.gif",
+      "editable": "candidates/skoll_idle_v02.piskel",
+      "palette": "records/skoll_reference_palette.json",
+      "gif_nominal_fps": 8,
+      "gif_duration_ms": [
+        120,
+        130,
+        120,
+        130
+      ],
+      "gif_actual_average_fps": 8,
+      "final_path": "sprites/bosses/skoll_idle.png",
+      "preview_gif": "previews/skoll_idle.gif",
+      "sha256": "19d76d98e3f5a8bb76f9bafb7e0239f069aaf14c175ff6fc5fee465a6421b8a3",
+      "license_record": "../../LICENSES.md"
+    },
+    {
+      "id": "skoll_move",
+      "frame_size": [
+        128,
+        128
+      ],
+      "expected_frames": "4-6",
+      "final_copied": true,
+      "status": "self_check_passed_pending_game_review",
+      "version": "v04_cc",
+      "source_job": "skoll_move_v04",
+      "source": "originals/skoll_move_v04_raw.png",
+      "generation_url": "https://chatgpt.com/c/6ad1ba53-d39c-83ea-a60f-c280937927e5",
+      "candidate": "candidates/skoll_move_v04_cc.png",
+      "preview": "previews/skoll_move_v04_cc.gif",
+      "frames": 4,
+      "palette": "records/skoll_reference_palette.json",
+      "colors": 48,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "baseline": 117,
+      "bboxes": [
+        [
+          5,
+          17,
+          123,
+          118
+        ],
+        [
+          7,
+          9,
+          121,
+          118
+        ],
+        [
+          7,
+          8,
+          121,
+          118
+        ],
+        [
+          6,
+          16,
+          121,
+          118
+        ]
+      ],
+      "scale": 0.2037037037037037,
+      "sha256": "fb543e7d226a3b4a86ab39f17f38fc8f8be13a4408db319383816d324749efe2",
+      "rejection_reasons": [
+        "近侧前爪持续前伸，缺少清楚交替迈步。"
+      ],
+      "size": [
+        512,
+        128
+      ],
+      "checks": {
+        "exact_png_rgba_horizontal_square_frames_no_gap": true,
+        "binary_alpha": true,
+        "common_reference_palette_at_most_48": true,
+        "feet_baseline_fixed_safe_margins": true,
+        "same_character_facing_right_and_view": true,
+        "complete_anatomy_no_stray_fragments": true,
+        "consistent_dark_outline_upper_left_light": true,
+        "1x_original_character_comparison": true,
+        "4x_every_frame_contact_reviewed": true,
+        "actual_chrome_multiple_animation_phases": true,
+        "no_text_watermark_background": true,
+        "no_per_frame_independent_scaling": true
+      },
+      "loop_seam": "checked_last_to_first",
+      "gif_nominal_fps": 8,
+      "gif_duration_ms": [
+        120,
+        130,
+        120,
+        130
+      ],
+      "gif_actual_average_fps": 8.0,
+      "proof": [
+        "records/wolf_final_v08_phase_a.jpg",
+        "records/wolf_final_v08_phase_b.jpg"
+      ],
+      "game_test": "not_performed",
+      "tools": [
+        "Chrome ChatGPT reference-guided generation",
+        "Pillow complete-component extraction, fixed shared palette and baseline normalization"
+      ],
+      "motion_interpretation": "四足快速追击步态",
+      "observations": [
+        "前肘屈曲与伸出、左右脚承重变化清楚，四帧采用快速追击节奏；头背随低伏/伸展有周期起伏，最后一帧与第一帧高度接近。",
+        "每组帧使用同一缩放，统一脚底基线，头部大小、毛色、额毛与卷尾保持；按快速移动审核，未声称达到提示词慢走身体起伏1像素目标。",
+        "不透明包围框顶部17→9→8→16；保留低伏-伸展-伸展-低伏节奏，正式移动速度与播放速度仍需代码代理游戏审核。"
+      ],
+      "approved_file": "approved/skoll_move.png",
+      "review_record": "records/skoll_move_review.json",
+      "final_path": "sprites/bosses/skoll_move.png",
+      "preview_gif": "previews/skoll_move.gif",
+      "license_record": "../../LICENSES.md"
+    },
+    {
+      "id": "skoll_windup",
+      "frame_size": [
+        128,
+        128
+      ],
+      "expected_frames": "2-3",
+      "final_copied": true,
+      "status": "self_check_passed_pending_game_review",
+      "candidate": "candidates/skoll_windup_v04_cc.png",
+      "frames": 3,
+      "source_job": "skoll_attack_sequence_v04",
+      "source": "originals/skoll_attack_sequence_v04_raw.png",
+      "generation_url": "https://chatgpt.com/c/6ad1be50-4c24-83ea-b5bc-29b29e6e0383",
+      "source_frame_indices_1based": [
+        1,
+        2,
+        3
+      ],
+      "baseline": 117,
+      "bboxes_exclusive": [
+        [
+          12,
+          16,
+          116,
+          118
+        ],
+        [
+          10,
+          24,
+          117,
+          118
+        ],
+        [
+          10,
+          31,
+          118,
+          118
+        ]
+      ],
+      "palette": "records/skoll_reference_palette.json",
+      "preview": "previews/skoll_windup_v04_cc.gif",
+      "loop": false,
+      "scale_common_to_raw_job": 0.23076923076923078,
+      "rejection_reasons": [
+        "实际不透明RGB色数49，超过48色门槛；参考色板补零引入额外黑色，后续规范化已改为重复首色补齐。",
+        "技能阶段头部角度/轮廓变化较大；暂不批准，需修正后重新审核。"
+      ],
+      "version": "v04_cc",
+      "colors": 48,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "bboxes": [
+        [
+          11,
+          18,
+          117,
+          118
+        ],
+        [
+          10,
+          27,
+          118,
+          118
+        ],
+        [
+          8,
+          31,
+          120,
+          118
+        ]
+      ],
+      "scale": 0.23346303501945526,
+      "sha256": "3dae968298052a7009939d1e7cdb07ad7e9146667ac8d2eebcf7d19629dbfa67",
+      "size": [
+        384,
+        128
+      ],
+      "checks": {
+        "exact_png_rgba_horizontal_square_frames_no_gap": true,
+        "binary_alpha": true,
+        "common_reference_palette_at_most_48": true,
+        "feet_baseline_fixed_safe_margins": true,
+        "same_character_facing_right_and_view": true,
+        "complete_anatomy_no_stray_fragments": true,
+        "consistent_dark_outline_upper_left_light": true,
+        "1x_original_character_comparison": true,
+        "4x_every_frame_contact_reviewed": true,
+        "actual_chrome_multiple_animation_phases": true,
+        "no_text_watermark_background": true,
+        "no_per_frame_independent_scaling": true
+      },
+      "loop_seam": "not_applicable_single_play_skill; full six-frame sequence checked",
+      "gif_nominal_fps": 8,
+      "gif_duration_ms": [
+        120,
+        130,
+        120
+      ],
+      "gif_actual_average_fps": 8.108108108108109,
+      "proof": [
+        "records/wolf_final_v08_phase_a.jpg",
+        "records/wolf_final_v08_phase_b.jpg"
+      ],
+      "game_test": "not_performed",
+      "tools": [
+        "Chrome ChatGPT reference-guided generation",
+        "Pillow complete-component extraction, fixed shared palette and baseline normalization"
+      ],
+      "observations": [
+        "同一黑灰金焰角色：低伏蓄力、短探头开合下颌、抬头收回，鼻口轮廓与火焰鬃毛保持可识别。",
+        "未沿用早期长身扑咬；六帧共用同一缩放、相同脚底基线、无跨格或游离碎片；身体相机保持三分之二朝右。"
+      ],
+      "approved_file": "approved/skoll_windup.png",
+      "review_record": "records/skoll_windup_review.json",
+      "final_path": "sprites/bosses/skoll_windup.png",
+      "preview_gif": "previews/skoll_windup.gif",
+      "license_record": "../../LICENSES.md"
+    },
+    {
+      "id": "skoll_attack",
+      "frame_size": [
+        128,
+        128
+      ],
+      "expected_frames": "2-3",
+      "final_copied": true,
+      "status": "self_check_passed_pending_game_review",
+      "candidate": "candidates/skoll_attack_v04_cc.png",
+      "frames": 3,
+      "source_job": "skoll_attack_sequence_v04",
+      "source": "originals/skoll_attack_sequence_v04_raw.png",
+      "generation_url": "https://chatgpt.com/c/6ad1be50-4c24-83ea-b5bc-29b29e6e0383",
+      "source_frame_indices_1based": [
+        4,
+        5,
+        6
+      ],
+      "baseline": 117,
+      "bboxes_exclusive": [
+        [
+          4,
+          31,
+          124,
+          118
+        ],
+        [
+          8,
+          37,
+          119,
+          118
+        ],
+        [
+          12,
+          16,
+          116,
+          118
+        ]
+      ],
+      "palette": "records/skoll_reference_palette.json",
+      "preview": "previews/skoll_attack_v04_cc.gif",
+      "loop": false,
+      "scale_common_to_raw_job": 0.23076923076923078,
+      "rejection_reasons": [
+        "实际不透明RGB色数49，超过48色门槛；参考色板补零引入额外黑色，后续规范化已改为重复首色补齐。",
+        "技能阶段头部角度/轮廓变化较大；暂不批准，需修正后重新审核。"
+      ],
+      "version": "v04_cc",
+      "colors": 48,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "bboxes": [
+        [
+          4,
+          23,
+          124,
+          118
+        ],
+        [
+          8,
+          29,
+          119,
+          118
+        ],
+        [
+          10,
+          18,
+          118,
+          118
+        ]
+      ],
+      "scale": 0.23346303501945526,
+      "sha256": "0872acb8d90ffadd172f854f120e4ea18089f7348cbf3138fac3f873a442d3c9",
+      "size": [
+        384,
+        128
+      ],
+      "checks": {
+        "exact_png_rgba_horizontal_square_frames_no_gap": true,
+        "binary_alpha": true,
+        "common_reference_palette_at_most_48": true,
+        "feet_baseline_fixed_safe_margins": true,
+        "same_character_facing_right_and_view": true,
+        "complete_anatomy_no_stray_fragments": true,
+        "consistent_dark_outline_upper_left_light": true,
+        "1x_original_character_comparison": true,
+        "4x_every_frame_contact_reviewed": true,
+        "actual_chrome_multiple_animation_phases": true,
+        "no_text_watermark_background": true,
+        "no_per_frame_independent_scaling": true
+      },
+      "loop_seam": "not_applicable_single_play_skill; full six-frame sequence checked",
+      "gif_nominal_fps": 8,
+      "gif_duration_ms": [
+        120,
+        130,
+        120
+      ],
+      "gif_actual_average_fps": 8.108108108108109,
+      "proof": [
+        "records/wolf_final_v08_phase_a.jpg",
+        "records/wolf_final_v08_phase_b.jpg"
+      ],
+      "game_test": "not_performed",
+      "tools": [
+        "Chrome ChatGPT reference-guided generation",
+        "Pillow complete-component extraction, fixed shared palette and baseline normalization"
+      ],
+      "observations": [
+        "同一黑灰金焰角色：低伏蓄力、短探头开合下颌、抬头收回，鼻口轮廓与火焰鬃毛保持可识别。",
+        "未沿用早期长身扑咬；六帧共用同一缩放、相同脚底基线、无跨格或游离碎片；身体相机保持三分之二朝右。"
+      ],
+      "approved_file": "approved/skoll_attack.png",
+      "review_record": "records/skoll_attack_review.json",
+      "final_path": "sprites/bosses/skoll_attack.png",
+      "preview_gif": "previews/skoll_attack.gif",
+      "license_record": "../../LICENSES.md"
+    },
+    {
+      "id": "hati_idle",
+      "frame_size": [
+        128,
+        128
+      ],
+      "expected_frames": 4,
+      "final_copied": true,
+      "status": "self_check_passed_pending_game_review",
+      "version": "v03",
+      "source_job": "hati_idle_v01",
+      "source": "originals/hati_idle_v01_raw.png",
+      "generation_url": "https://chatgpt.com/c/6ad1a5bd-66e8-83ea-9bcd-9356a6b6e6ea",
+      "candidate": "candidates/hati_idle_v03.png",
+      "preview": "previews/hati_idle_v03.gif",
+      "frames": 4,
+      "palette": "records/hati_reference_palette.json",
+      "colors": 48,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "baseline": 118,
+      "bboxes": [
+        [
+          6,
+          9,
+          122,
+          119
+        ],
+        [
+          6,
+          9,
+          122,
+          119
+        ],
+        [
+          6,
+          8,
+          122,
+          119
+        ],
+        [
+          6,
+          9,
+          122,
+          119
+        ]
+      ],
+      "scale": 0.20670391061452514,
+      "sha256": "c53939c493d9ed08e6bf9047fd28ce95c47efd99d50769a689b288715abb9287",
+      "editable": "candidates/hati_idle_v03.piskel",
+      "pixel_verification": "records/hati_idle_v03_export_verification.json",
+      "size": [
+        512,
+        128
+      ],
+      "checks": {
+        "exact_rgba_horizontal_four_frames": true,
+        "shared_character_palette_48_colors": true,
+        "binary_alpha_no_soft_edges": true,
+        "all_margins_at_least_2": true,
+        "all_feet_baseline_fixed": true,
+        "same_character_and_equipment": true,
+        "facing_right_same_view": true,
+        "dark_outline_upper_left_light": true,
+        "1x_reference_comparison": true,
+        "4x_all_frames_contact_inspected": true,
+        "actual_chrome_animation_phase_comparison": true,
+        "outside_local_breathing_region_pixel_diff_zero": true,
+        "no_whole_body_jitter": true,
+        "no_text_watermark_or_background": true
+      },
+      "observations": [
+        "通过 Chrome Piskel 选区复制固定胸部之外的像素，局部变化逻辑框[55, 48, 90, 86]；头部、脚、尾巴或锤盾逐帧一致。",
+        "实际PNG逐像素比对：固定区域差异0；4倍逐帧检查未见矩形透明切口，Chrome实际GIF复核局部明暗呼吸。"
+      ],
+      "loop_seam": "checked_subtle_local_breathing_no_global_jump",
+      "gif_nominal_fps": 8,
+      "gif_duration_ms": [
+        120,
+        130,
+        120,
+        130
+      ],
+      "gif_actual_average_fps": 8,
+      "proof": [
+        "records/idle_fixed_review_phase_a.jpg",
+        "records/idle_fixed_review_phase_b.jpg",
+        "previews/hati_idle_v03_contact_4x.png"
+      ],
+      "game_test": "not_performed",
+      "tools": [
+        "Chrome ChatGPT reference-guided generation",
+        "Chrome Piskel actual region copy/paste PNG and piskel export",
+        "Pillow normalization and actual export verification"
+      ],
+      "approved_file": "approved/hati_idle.png",
+      "review_record": "records/hati_idle_review.json",
+      "final_path": "sprites/bosses/hati_idle.png",
+      "preview_gif": "previews/hati_idle.gif",
+      "license_record": "../../LICENSES.md"
+    },
+    {
+      "id": "hati_move",
+      "frame_size": [
+        128,
+        128
+      ],
+      "expected_frames": "4-6",
+      "final_copied": true,
+      "status": "self_check_passed_pending_game_review",
+      "candidate": "candidates/hati_move_v08.png",
+      "frames": 4,
+      "source_job": "hati_move_v04",
+      "source": "originals/hati_move_v04_raw.png",
+      "generation_url": "https://chatgpt.com/c/6ad1ba59-6d0c-83e9-bfd8-5101b76040ca",
+      "source_frame_indices_1based": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "baseline": 118,
+      "bboxes_exclusive": [
+        [
+          6,
+          12,
+          122,
+          119
+        ],
+        [
+          6,
+          9,
+          122,
+          119
+        ],
+        [
+          6,
+          10,
+          122,
+          119
+        ],
+        [
+          6,
+          10,
+          122,
+          119
+        ]
+      ],
+      "palette": "records/hati_reference_palette.json",
+      "preview": "previews/hati_move_v08.gif",
+      "loop": true,
+      "scale_common_to_raw_job": 0.2071563088512241,
+      "rejection_reasons": [
+        "实际不透明RGB色数49，超过48色门槛；参考色板补零引入额外黑色，后续规范化已改为重复首色补齐。",
+        "斯库尔头躯干交替上下约8像素；哈提近侧前爪各帧持续前伸，缺少完整交替迈步。"
+      ],
+      "version": "v08",
+      "colors": 48,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "bboxes": [
+        [
+          6,
+          12,
+          122,
+          119
+        ],
+        [
+          5,
+          9,
+          122,
+          119
+        ],
+        [
+          6,
+          8,
+          122,
+          119
+        ],
+        [
+          6,
+          10,
+          122,
+          119
+        ]
+      ],
+      "scale": 0.20864661654135339,
+      "sha256": "9e9330787cad426086ff6372daf7baddeefcdf14bef55321bbc565c3836ad652",
+      "editable": "candidates/hati_move_v08.piskel",
+      "pixel_verification": "records/hati_move_v08_export_verification.json",
+      "size": [
+        512,
+        128
+      ],
+      "checks": {
+        "exact_png_rgba_horizontal_square_frames_no_gap": true,
+        "binary_alpha": true,
+        "common_reference_palette_at_most_48": true,
+        "feet_baseline_fixed_safe_margins": true,
+        "same_character_facing_right_and_view": true,
+        "complete_anatomy_no_stray_fragments": true,
+        "consistent_dark_outline_upper_left_light": true,
+        "1x_original_character_comparison": true,
+        "4x_every_frame_contact_reviewed": true,
+        "actual_chrome_multiple_animation_phases": true,
+        "no_text_watermark_background": true,
+        "no_per_frame_independent_scaling": true
+      },
+      "loop_seam": "checked_last_to_first",
+      "gif_nominal_fps": 8,
+      "gif_duration_ms": [
+        120,
+        130,
+        120,
+        130
+      ],
+      "gif_actual_average_fps": 8.0,
+      "proof": [
+        "records/wolf_final_v08_phase_a.jpg",
+        "records/wolf_final_v08_phase_b.jpg"
+      ],
+      "game_test": "not_performed",
+      "tools": [
+        "Chrome ChatGPT reference-guided generation",
+        "Pillow complete-component extraction, fixed shared palette and baseline normalization",
+        "Chrome Piskel native selection copy/move, temporary-frame deletion, actual PNG and piskel export"
+      ],
+      "motion_interpretation": "四足快速追击步态",
+      "observations": [
+        "前肘屈曲与伸出、左右脚承重变化清楚，四帧采用快速追击节奏；头背随低伏/伸展有周期起伏，最后一帧与第一帧高度接近。",
+        "每组帧使用同一缩放，统一脚底基线，头部大小、毛色、额毛与卷尾保持；按快速移动审核，未声称达到提示词慢走身体起伏1像素目标。",
+        "Piskel实际修正第1、4帧环形抬爪；验证限定区域差异，其他部位及第2、3帧不变，最终导出与确定性复制结果0像素差异。"
+      ],
+      "approved_file": "approved/hati_move.png",
+      "review_record": "records/hati_move_review.json",
+      "final_path": "sprites/bosses/hati_move.png",
+      "preview_gif": "previews/hati_move.gif",
+      "license_record": "../../LICENSES.md"
+    },
+    {
+      "id": "hati_windup",
+      "frame_size": [
+        128,
+        128
+      ],
+      "expected_frames": "2-3",
+      "final_copied": true,
+      "status": "self_check_passed_pending_game_review",
+      "candidate": "candidates/hati_windup_v03_cc.png",
+      "frames": 3,
+      "source_job": "hati_attack_sequence_v03",
+      "source": "originals/hati_attack_sequence_v03_raw.png",
+      "generation_url": "https://chatgpt.com/c/6ad1ba7d-68c0-83ea-916b-9c1109a23d15",
+      "source_frame_indices_1based": [
+        1,
+        2,
+        3
+      ],
+      "baseline": 118,
+      "bboxes_exclusive": [
+        [
+          11,
+          17,
+          116,
+          119
+        ],
+        [
+          9,
+          25,
+          118,
+          119
+        ],
+        [
+          9,
+          28,
+          118,
+          119
+        ]
+      ],
+      "palette": "records/hati_reference_palette.json",
+      "preview": "previews/hati_windup_v03_cc.gif",
+      "loop": false,
+      "scale_common_to_raw_job": 0.23391812865497075,
+      "rejection_reasons": [
+        "实际不透明RGB色数49，超过48色门槛；参考色板补零引入额外黑色，后续规范化已改为重复首色补齐。",
+        "技能阶段头部角度/轮廓变化较大；暂不批准，需修正后重新审核。"
+      ],
+      "version": "v03_cc",
+      "colors": 48,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "bboxes": [
+        [
+          10,
+          22,
+          118,
+          119
+        ],
+        [
+          7,
+          32,
+          121,
+          119
+        ],
+        [
+          9,
+          42,
+          118,
+          119
+        ]
+      ],
+      "scale": 0.23255813953488372,
+      "sha256": "9b2a724cfee5a161f571088945e8a4284a8bbbcc2aada6bbc46096fd272e4cff",
+      "size": [
+        384,
+        128
+      ],
+      "checks": {
+        "exact_rgba_three_square_frames_horizontal_no_gap": true,
+        "binary_alpha": true,
+        "common_reference_palette_at_most_48": true,
+        "fixed_ground_baseline_safe_margins": true,
+        "consistent_character_facing_right_and_camera": true,
+        "complete_anatomy_and_original_equipment": true,
+        "readable_1x_dark_background": true,
+        "all_frames_reviewed_at_4x": true,
+        "actual_chrome_phase_comparison": true,
+        "continuous_windup_to_attack_to_recovery_reviewed": true,
+        "no_text_watermark_scene": true,
+        "no_neighbor_sprite_fragments": true,
+        "no_cutoff_weapon_or_limbs": true
+      },
+      "tools": [
+        "Chrome ChatGPT reference-guided generation",
+        "Pillow connected-component frame extraction, fixed palette, exact size and binary alpha"
+      ],
+      "gif_nominal_fps": 8,
+      "gif_duration_ms": [
+        120,
+        130,
+        120
+      ],
+      "gif_actual_average_fps": 8.108108108108109,
+      "loop_seam": "not_applicable_single_play_skill; full six-frame sequence checked separately",
+      "proof": [
+        "records/wave05_components_review_phase_a.jpg",
+        "records/wave05_components_review_phase_b.jpg",
+        "previews/hati_windup_v03_cc_contact_4x.png"
+      ],
+      "observations": [
+        "保留银白额毛、冰蓝深毛、长卷尾和同一狼脸；弯肘低伏蓄力、探头张下颌咬合、抬头收回阶段明确。",
+        "攻击时头颈朝目标转动，身体相机仍为相同三分之二朝右视角；低伏高度变化为动作，不是逐帧重新缩放。",
+        "完整轮廓提取去除等宽切格带入的相邻尾部，六帧同一缩放与脚底基线。"
+      ],
+      "game_test": "not_performed",
+      "approved_file": "approved/hati_windup.png",
+      "review_record": "records/hati_windup_review.json",
+      "final_path": "sprites/bosses/hati_windup.png",
+      "preview_gif": "previews/hati_windup.gif",
+      "license_record": "../../LICENSES.md"
+    },
+    {
+      "id": "hati_attack",
+      "frame_size": [
+        128,
+        128
+      ],
+      "expected_frames": "2-3",
+      "final_copied": true,
+      "status": "self_check_passed_pending_game_review",
+      "candidate": "candidates/hati_attack_v03_cc.png",
+      "frames": 3,
+      "source_job": "hati_attack_sequence_v03",
+      "source": "originals/hati_attack_sequence_v03_raw.png",
+      "generation_url": "https://chatgpt.com/c/6ad1ba7d-68c0-83ea-916b-9c1109a23d15",
+      "source_frame_indices_1based": [
+        4,
+        5,
+        6
+      ],
+      "baseline": 118,
+      "bboxes_exclusive": [
+        [
+          4,
+          27,
+          124,
+          119
+        ],
+        [
+          9,
+          28,
+          119,
+          119
+        ],
+        [
+          11,
+          17,
+          116,
+          119
+        ]
+      ],
+      "palette": "records/hati_reference_palette.json",
+      "preview": "previews/hati_attack_v03_cc.gif",
+      "loop": false,
+      "scale_common_to_raw_job": 0.23391812865497075,
+      "rejection_reasons": [
+        "实际不透明RGB色数49，超过48色门槛；参考色板补零引入额外黑色，后续规范化已改为重复首色补齐。",
+        "技能阶段头部角度/轮廓变化较大；暂不批准，需修正后重新审核。"
+      ],
+      "version": "v03_cc",
+      "colors": 48,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "bboxes": [
+        [
+          4,
+          31,
+          124,
+          119
+        ],
+        [
+          9,
+          34,
+          119,
+          119
+        ],
+        [
+          10,
+          23,
+          117,
+          119
+        ]
+      ],
+      "scale": 0.23255813953488372,
+      "sha256": "8977c0bec88796ccc7ae37943f3ce85a594b25c1e13a1d48a6d83ecf3e714bee",
+      "size": [
+        384,
+        128
+      ],
+      "checks": {
+        "exact_rgba_three_square_frames_horizontal_no_gap": true,
+        "binary_alpha": true,
+        "common_reference_palette_at_most_48": true,
+        "fixed_ground_baseline_safe_margins": true,
+        "consistent_character_facing_right_and_camera": true,
+        "complete_anatomy_and_original_equipment": true,
+        "readable_1x_dark_background": true,
+        "all_frames_reviewed_at_4x": true,
+        "actual_chrome_phase_comparison": true,
+        "continuous_windup_to_attack_to_recovery_reviewed": true,
+        "no_text_watermark_scene": true,
+        "no_neighbor_sprite_fragments": true,
+        "no_cutoff_weapon_or_limbs": true
+      },
+      "tools": [
+        "Chrome ChatGPT reference-guided generation",
+        "Pillow connected-component frame extraction, fixed palette, exact size and binary alpha"
+      ],
+      "gif_nominal_fps": 8,
+      "gif_duration_ms": [
+        120,
+        130,
+        120
+      ],
+      "gif_actual_average_fps": 8.108108108108109,
+      "loop_seam": "not_applicable_single_play_skill; full six-frame sequence checked separately",
+      "proof": [
+        "records/wave05_components_review_phase_a.jpg",
+        "records/wave05_components_review_phase_b.jpg",
+        "previews/hati_attack_v03_cc_contact_4x.png"
+      ],
+      "observations": [
+        "保留银白额毛、冰蓝深毛、长卷尾和同一狼脸；弯肘低伏蓄力、探头张下颌咬合、抬头收回阶段明确。",
+        "攻击时头颈朝目标转动，身体相机仍为相同三分之二朝右视角；低伏高度变化为动作，不是逐帧重新缩放。",
+        "完整轮廓提取去除等宽切格带入的相邻尾部，六帧同一缩放与脚底基线。"
+      ],
+      "game_test": "not_performed",
+      "approved_file": "approved/hati_attack.png",
+      "review_record": "records/hati_attack_review.json",
+      "final_path": "sprites/bosses/hati_attack.png",
+      "preview_gif": "previews/hati_attack.gif",
+      "license_record": "../../LICENSES.md"
+    },
+    {
+      "id": "hrym_idle",
+      "frame_size": [
+        192,
+        192
+      ],
+      "expected_frames": 4,
+      "final_copied": true,
+      "status": "self_check_passed_pending_game_review",
+      "version": "v02",
+      "source_job": "hrym_idle_v01",
+      "source": "originals/hrym_idle_v01_raw.png",
+      "generation_url": "https://chatgpt.com/c/6ad1a5d5-2374-83ea-8793-b252542ee99f",
+      "candidate": "candidates/hrym_idle_v02.png",
+      "preview": "previews/hrym_idle_v02.gif",
+      "frames": 4,
+      "palette": "records/hrym_reference_palette.json",
+      "colors": 48,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "baseline": 189,
+      "bboxes": [
+        [
+          7,
+          8,
+          184,
+          190
+        ],
+        [
+          7,
+          8,
+          184,
+          190
+        ],
+        [
+          7,
+          8,
+          184,
+          190
+        ],
+        [
+          7,
+          8,
+          184,
+          190
+        ]
+      ],
+      "scale": 0.2969004893964111,
+      "sha256": "00d007b1720361d81556212bb79928b2a29f5f836c9de0b97246b7a3c48aef45",
+      "editable": "candidates/hrym_idle_v02.piskel",
+      "pixel_verification": "records/hrym_idle_v02_export_verification.json",
+      "size": [
+        768,
+        192
+      ],
+      "checks": {
+        "exact_rgba_horizontal_four_frames": true,
+        "shared_character_palette_48_colors": true,
+        "binary_alpha_no_soft_edges": true,
+        "all_margins_at_least_2": true,
+        "all_feet_baseline_fixed": true,
+        "same_character_and_equipment": true,
+        "facing_right_same_view": true,
+        "dark_outline_upper_left_light": true,
+        "1x_reference_comparison": true,
+        "4x_all_frames_contact_inspected": true,
+        "actual_chrome_animation_phase_comparison": true,
+        "outside_local_breathing_region_pixel_diff_zero": true,
+        "no_whole_body_jitter": true,
+        "no_text_watermark_or_background": true
+      },
+      "observations": [
+        "通过 Chrome Piskel 选区复制固定胸部之外的像素，局部变化逻辑框[70, 60, 125, 110]；头部、脚、尾巴或锤盾逐帧一致。",
+        "实际PNG逐像素比对：固定区域差异0；4倍逐帧检查未见矩形透明切口，Chrome实际GIF复核局部明暗呼吸。"
+      ],
+      "loop_seam": "checked_subtle_local_breathing_no_global_jump",
+      "gif_nominal_fps": 8,
+      "gif_duration_ms": [
+        120,
+        130,
+        120,
+        130
+      ],
+      "gif_actual_average_fps": 8,
+      "proof": [
+        "records/idle_fixed_review_phase_a.jpg",
+        "records/idle_fixed_review_phase_b.jpg",
+        "previews/hrym_idle_v02_contact_4x.png"
+      ],
+      "game_test": "not_performed",
+      "tools": [
+        "Chrome ChatGPT reference-guided generation",
+        "Chrome Piskel actual region copy/paste PNG and piskel export",
+        "Pillow normalization and actual export verification"
+      ],
+      "approved_file": "approved/hrym_idle.png",
+      "review_record": "records/hrym_idle_review.json",
+      "final_path": "sprites/bosses/hrym_idle.png",
+      "preview_gif": "previews/hrym_idle.gif",
+      "license_record": "../../LICENSES.md"
+    },
+    {
+      "id": "hrym_move",
+      "frame_size": [
+        192,
+        192
+      ],
+      "expected_frames": "4-6",
+      "final_copied": true,
+      "status": "self_check_passed_pending_game_review",
+      "version": "v01",
+      "source_job": "hrym_move_v01",
+      "source": "originals/hrym_move_v01_raw.png",
+      "generation_url": "https://chatgpt.com/c/6ad1a5ee-de04-83e9-aa28-536a3ba3e98b",
+      "candidate": "candidates/hrym_move_v01.png",
+      "preview": "previews/hrym_move_v01.gif",
+      "frames": 4,
+      "palette": "records/hrym_reference_palette.json",
+      "colors": 48,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "baseline": 189,
+      "bboxes": [
+        [
+          4,
+          9,
+          188,
+          190
+        ],
+        [
+          4,
+          11,
+          188,
+          190
+        ],
+        [
+          4,
+          11,
+          188,
+          190
+        ],
+        [
+          4,
+          11,
+          188,
+          190
+        ]
+      ],
+      "scale": 0.30976430976430974,
+      "sha256": "ccb6dc04c07265324c9b5d3e18036f0a00db1e07b11c655bff8e9456828a3390",
+      "checks": {
+        "png_rgba_exact_768x192": true,
+        "four_192x192_horizontal_frames_no_gaps": true,
+        "binary_alpha_0_255": true,
+        "shared_hrym_palette_48_colors": true,
+        "all_feet_baseline_y189": true,
+        "all_frame_margins_at_least_2px": true,
+        "facing_right_same_three_quarter_view": true,
+        "same_crown_beard_fur_armor_hammer_shield": true,
+        "complete_anatomy_and_equipment_no_crop": true,
+        "consistent_dark_outline_upper_left_light": true,
+        "readable_1x_on_121721": true,
+        "4x_contact_all_frames_inspected": true,
+        "actual_chrome_gif_different_phases_observed": true,
+        "alternating_left_right_step": true,
+        "loop_A_B_C_B_to_A_no_large_body_jump": true,
+        "no_text_watermark_background": true
+      },
+      "observations": [
+        "左右靴分别抬起，第二和第四帧为相近承重过渡姿态。",
+        "冰冠最高点相差2像素，身体未出现整段大幅抖动；锤盾始终完整，双脚底线固定。"
+      ],
+      "proof": [
+        "records/wave03_review_active_phase_a.jpg",
+        "previews/hrym_move_v01_contact_4x.png"
+      ],
+      "game_test": "not_performed",
+      "size": [
+        768,
+        192
+      ],
+      "approved_file": "approved/hrym_move.png",
+      "review_record": "records/hrym_move_review.json",
+      "final_path": "sprites/bosses/hrym_move.png",
+      "preview_gif": "previews/hrym_move.gif",
+      "tools": [],
+      "license_record": "../../LICENSES.md"
+    },
+    {
+      "id": "hrym_windup",
+      "frame_size": [
+        192,
+        192
+      ],
+      "expected_frames": "2-3",
+      "final_copied": true,
+      "status": "self_check_passed_pending_game_review",
+      "version": "v02_cc",
+      "source_job": "hrym_attack_sequence_v02",
+      "source": "originals/hrym_attack_sequence_v02_raw.png",
+      "generation_url": "https://chatgpt.com/c/6ad1ba6a-0a48-83ea-9aea-13025291b5f7",
+      "candidate": "candidates/hrym_windup_v02_cc.png",
+      "preview": "previews/hrym_windup_v02_cc.gif",
+      "frames": 3,
+      "palette": "records/hrym_reference_palette.json",
+      "colors": 48,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "baseline": 189,
+      "bboxes": [
+        [
+          8,
+          16,
+          183,
+          190
+        ],
+        [
+          4,
+          20,
+          188,
+          190
+        ],
+        [
+          7,
+          35,
+          184,
+          190
+        ]
+      ],
+      "scale": 0.3607843137254902,
+      "sha256": "f06ec697bd826dcccf28b9808164ff8331741fe6d269349a35df46d89ec6bddf",
+      "rejection_reasons": [
+        "横砸锤柄跨格，等分会截断武器；已要求新一轮改为屈肘短砸。"
+      ],
+      "size": [
+        576,
+        192
+      ],
+      "checks": {
+        "exact_rgba_three_square_frames_horizontal_no_gap": true,
+        "binary_alpha": true,
+        "common_reference_palette_at_most_48": true,
+        "fixed_ground_baseline_safe_margins": true,
+        "consistent_character_facing_right_and_camera": true,
+        "complete_anatomy_and_original_equipment": true,
+        "readable_1x_dark_background": true,
+        "all_frames_reviewed_at_4x": true,
+        "actual_chrome_phase_comparison": true,
+        "continuous_windup_to_attack_to_recovery_reviewed": true,
+        "no_text_watermark_scene": true,
+        "no_neighbor_sprite_fragments": true,
+        "no_cutoff_weapon_or_limbs": true
+      },
+      "tools": [
+        "Chrome ChatGPT reference-guided generation",
+        "Pillow connected-component frame extraction, fixed palette, exact size and binary alpha"
+      ],
+      "gif_nominal_fps": 8,
+      "gif_duration_ms": [
+        120,
+        130,
+        120
+      ],
+      "gif_actual_average_fps": 8.108108108108109,
+      "loop_seam": "not_applicable_single_play_skill; full six-frame sequence checked separately",
+      "proof": [
+        "records/wave05_components_review_phase_a.jpg",
+        "records/wave05_components_review_phase_b.jpg",
+        "previews/hrym_windup_v02_cc_contact_4x.png"
+      ],
+      "observations": [
+        "冰冠、白胡须、皮毛、厚甲、原锤与原盾保持；蓄力逐步收肘、砸击屈肘靠近身体，收回有明确过渡。",
+        "按完整相连角色提取替代等宽切格，去除混入的相邻盾边；同一源图六帧使用相同缩放。"
+      ],
+      "game_test": "not_performed",
+      "approved_file": "approved/hrym_windup.png",
+      "review_record": "records/hrym_windup_review.json",
+      "final_path": "sprites/bosses/hrym_windup.png",
+      "preview_gif": "previews/hrym_windup.gif",
+      "license_record": "../../LICENSES.md"
+    },
+    {
+      "id": "hrym_attack",
+      "frame_size": [
+        192,
+        192
+      ],
+      "expected_frames": "2-3",
+      "final_copied": true,
+      "status": "self_check_passed_pending_game_review",
+      "version": "v02_cc",
+      "source_job": "hrym_attack_sequence_v02",
+      "source": "originals/hrym_attack_sequence_v02_raw.png",
+      "generation_url": "https://chatgpt.com/c/6ad1ba6a-0a48-83ea-9aea-13025291b5f7",
+      "candidate": "candidates/hrym_attack_v02_cc.png",
+      "preview": "previews/hrym_attack_v02_cc.gif",
+      "frames": 3,
+      "palette": "records/hrym_reference_palette.json",
+      "colors": 48,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "baseline": 189,
+      "bboxes": [
+        [
+          11,
+          32,
+          181,
+          190
+        ],
+        [
+          14,
+          30,
+          178,
+          190
+        ],
+        [
+          8,
+          16,
+          183,
+          190
+        ]
+      ],
+      "scale": 0.3607843137254902,
+      "sha256": "427e2f8bf1911d39d59c33ef9b6fe72558792e2925d65af439ad628e5729e95b",
+      "rejection_reasons": [
+        "横砸锤柄跨格，等分会截断武器；已要求新一轮改为屈肘短砸。"
+      ],
+      "size": [
+        576,
+        192
+      ],
+      "checks": {
+        "exact_rgba_three_square_frames_horizontal_no_gap": true,
+        "binary_alpha": true,
+        "common_reference_palette_at_most_48": true,
+        "fixed_ground_baseline_safe_margins": true,
+        "consistent_character_facing_right_and_camera": true,
+        "complete_anatomy_and_original_equipment": true,
+        "readable_1x_dark_background": true,
+        "all_frames_reviewed_at_4x": true,
+        "actual_chrome_phase_comparison": true,
+        "continuous_windup_to_attack_to_recovery_reviewed": true,
+        "no_text_watermark_scene": true,
+        "no_neighbor_sprite_fragments": true,
+        "no_cutoff_weapon_or_limbs": true
+      },
+      "tools": [
+        "Chrome ChatGPT reference-guided generation",
+        "Pillow connected-component frame extraction, fixed palette, exact size and binary alpha"
+      ],
+      "gif_nominal_fps": 8,
+      "gif_duration_ms": [
+        120,
+        130,
+        120
+      ],
+      "gif_actual_average_fps": 8.108108108108109,
+      "loop_seam": "not_applicable_single_play_skill; full six-frame sequence checked separately",
+      "proof": [
+        "records/wave05_components_review_phase_a.jpg",
+        "records/wave05_components_review_phase_b.jpg",
+        "previews/hrym_attack_v02_cc_contact_4x.png"
+      ],
+      "observations": [
+        "冰冠、白胡须、皮毛、厚甲、原锤与原盾保持；蓄力逐步收肘、砸击屈肘靠近身体，收回有明确过渡。",
+        "按完整相连角色提取替代等宽切格，去除混入的相邻盾边；同一源图六帧使用相同缩放。"
+      ],
+      "game_test": "not_performed",
+      "approved_file": "approved/hrym_attack.png",
+      "review_record": "records/hrym_attack_review.json",
+      "final_path": "sprites/bosses/hrym_attack.png",
+      "preview_gif": "previews/hrym_attack.gif",
+      "license_record": "../../LICENSES.md"
+    },
+    {
+      "id": "hati_howl",
+      "frame_size": [
+        128,
+        128
+      ],
+      "expected_frames": 3,
+      "final_copied": true,
+      "status": "self_check_passed_pending_game_review",
+      "version": "v01",
+      "source_job": "hati_howl_v01",
+      "source": "originals/hati_howl_v01_raw.png",
+      "generation_url": "https://chatgpt.com/c/6ad1a5d5-2374-83ea-8793-b252542ee99f",
+      "candidate": "candidates/hati_howl_v02.png",
+      "preview": "previews/hati_howl_v02.gif",
+      "frames": 3,
+      "palette": "records/hati_reference_palette.json",
+      "colors": 48,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "baseline": 118,
+      "bboxes": [
+        [
+          5,
+          17,
+          122,
+          119
+        ],
+        [
+          5,
+          17,
+          119,
+          119
+        ],
+        [
+          5,
+          8,
+          115,
+          119
+        ]
+      ],
+      "scale": 0.17118402282453637,
+      "sha256": "83988f8b547efdd987b99fde535a7ba80df1f5ac48e55b469b6f4f4ff226edf8",
+      "rejection_reasons": [
+        "原生成帧身体漂移，已由Piskel固定身体并重新审核通过v02。"
+      ],
+      "tools": [
+        "Chrome ChatGPT reference-guided generation",
+        "Chrome Piskel actual selection copy/paste and PNG/piskel export",
+        "Pillow deterministic palette/alpha/size normalization and verification"
+      ],
+      "size": [
+        384,
+        128
+      ],
+      "checks": {
+        "exact_png_rgba_horizontal_frames_no_gaps": true,
+        "binary_alpha_no_semtransparent_edge": true,
+        "shared_character_palette_at_most_48": true,
+        "same_frame_size_baseline_and_safe_margins": true,
+        "same_character_anatomy_and_equipment": true,
+        "consistent_facing_right_three_quarter_view": true,
+        "dark_outline_and_upper_left_light": true,
+        "readable_on_121721_at_1x": true,
+        "all_frames_inspected_in_4x_contact": true,
+        "actual_chrome_different_animation_phases_observed": true,
+        "no_unintended_global_slide_or_detail_flicker_in_action": true,
+        "no_text_watermark_background": true,
+        "no_cut_weapons_or_limbs": true
+      },
+      "loop_seam": "not_applicable_single_play_skill",
+      "gif_nominal_fps": 8,
+      "gif_duration_ms": [
+        120,
+        130,
+        120
+      ],
+      "gif_actual_average_fps": 8.108108108108109,
+      "observations": [
+        "通过 Piskel 实际选区复制，y>=62 区域及 x<=62,y<62 区域在三帧间的 RGBA 差异均为0。",
+        "只在头颈区域保留逐步仰头、张嘴；4倍接缝与1倍识别均已检查。"
+      ],
+      "proof": [
+        "records/wave04_review_active_phase_a.png",
+        "records/wave04_review_active_phase_b.png"
+      ],
+      "game_test": "not_performed",
+      "editable": "candidates/hati_howl_v02.piskel",
+      "pixel_verification": "records/hati_howl_v02_export_verification.json",
+      "approved_file": "approved/hati_howl.png",
+      "review_record": "records/hati_howl_review.json",
+      "final_path": "sprites/bosses/hati_howl.png",
+      "preview_gif": "previews/hati_howl.gif",
+      "license_record": "../../LICENSES.md"
+    },
+    {
+      "id": "hrym_shield",
+      "frame_size": [
+        192,
+        192
+      ],
+      "expected_frames": 2,
+      "final_copied": true,
+      "status": "self_check_passed_pending_game_review",
+      "version": "v01",
+      "source_job": "hrym_shield_v01",
+      "source": "originals/hrym_shield_v01_raw.png",
+      "generation_url": "https://chatgpt.com/c/6ad1a5ee-de04-83e9-aa28-536a3ba3e98b",
+      "candidate": "candidates/hrym_shield_v01.png",
+      "preview": "previews/hrym_shield_v01.gif",
+      "frames": 2,
+      "palette": "records/hrym_reference_palette.json",
+      "colors": 48,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "baseline": 189,
+      "bboxes": [
+        [
+          8,
+          9,
+          183,
+          190
+        ],
+        [
+          16,
+          8,
+          175,
+          190
+        ]
+      ],
+      "scale": 0.2111368909512761,
+      "sha256": "cefc863ffd117b142cdbb2067d6a3c4a764c1a6347bfbb2ee61c4fd8d81c9ba3",
+      "tools": [
+        "Chrome ChatGPT reference-guided generation",
+        "Pillow deterministic palette/alpha/size normalization"
+      ],
+      "size": [
+        384,
+        192
+      ],
+      "checks": {
+        "exact_png_rgba_horizontal_frames_no_gaps": true,
+        "binary_alpha_no_semtransparent_edge": true,
+        "shared_character_palette_at_most_48": true,
+        "same_frame_size_baseline_and_safe_margins": true,
+        "same_character_anatomy_and_equipment": true,
+        "consistent_facing_right_three_quarter_view": true,
+        "dark_outline_and_upper_left_light": true,
+        "readable_on_121721_at_1x": true,
+        "all_frames_inspected_in_4x_contact": true,
+        "actual_chrome_different_animation_phases_observed": true,
+        "no_unintended_global_slide_or_detail_flicker_in_action": true,
+        "no_text_watermark_background": true,
+        "no_cut_weapons_or_limbs": true
+      },
+      "loop_seam": "not_applicable_single_play_skill",
+      "gif_nominal_fps": 8,
+      "gif_duration_ms": [
+        120,
+        130
+      ],
+      "gif_actual_average_fps": 8.0,
+      "observations": [
+        "原冰盾由身体侧面移至胸前防御，冰锤始终在同一持握手中，武器与盔甲完整。",
+        "两帧为单次举盾技能；举盾时身体随防御姿态后收，循环首尾接回不适用。"
+      ],
+      "proof": [
+        "records/wave04_review_active_phase_a.png",
+        "records/wave04_review_active_phase_b.png"
+      ],
+      "game_test": "not_performed",
+      "approved_file": "approved/hrym_shield.png",
+      "review_record": "records/hrym_shield_review.json",
+      "final_path": "sprites/bosses/hrym_shield.png",
+      "preview_gif": "previews/hrym_shield.gif",
+      "license_record": "../../LICENSES.md"
+    },
+    {
+      "id": "hrym_stomp",
+      "frame_size": [
+        192,
+        192
+      ],
+      "expected_frames": 3,
+      "final_copied": true,
+      "status": "self_check_passed_pending_game_review",
+      "version": "v01",
+      "source_job": "hrym_stomp_v01",
+      "source": "originals/hrym_stomp_v01_raw.png",
+      "generation_url": "https://chatgpt.com/c/6ad1a603-a8ac-83ea-becd-5b0363a00c70",
+      "candidate": "candidates/hrym_stomp_v01.png",
+      "preview": "previews/hrym_stomp_v01.gif",
+      "frames": 3,
+      "palette": "records/hrym_reference_palette.json",
+      "colors": 48,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "baseline": 189,
+      "bboxes": [
+        [
+          11,
+          8,
+          180,
+          190
+        ],
+        [
+          9,
+          41,
+          182,
+          190
+        ],
+        [
+          14,
+          28,
+          177,
+          190
+        ]
+      ],
+      "scale": 0.26725403817914833,
+      "sha256": "4be06a84c3a375de589567c335d725bc9095ee0b50367d40e109e16abfcf568e",
+      "tools": [
+        "Chrome ChatGPT reference-guided generation",
+        "Pillow deterministic palette/alpha/size normalization"
+      ],
+      "size": [
+        576,
+        192
+      ],
+      "checks": {
+        "exact_png_rgba_horizontal_frames_no_gaps": true,
+        "binary_alpha_no_semtransparent_edge": true,
+        "shared_character_palette_at_most_48": true,
+        "same_frame_size_baseline_and_safe_margins": true,
+        "same_character_anatomy_and_equipment": true,
+        "consistent_facing_right_three_quarter_view": true,
+        "dark_outline_and_upper_left_light": true,
+        "readable_on_121721_at_1x": true,
+        "all_frames_inspected_in_4x_contact": true,
+        "actual_chrome_different_animation_phases_observed": true,
+        "no_unintended_global_slide_or_detail_flicker_in_action": true,
+        "no_text_watermark_background": true,
+        "no_cut_weapons_or_limbs": true
+      },
+      "loop_seam": "not_applicable_single_play_skill",
+      "gif_nominal_fps": 8,
+      "gif_duration_ms": [
+        120,
+        130,
+        120
+      ],
+      "gif_actual_average_fps": 8.108108108108109,
+      "observations": [
+        "原锤抬至头侧、向脚边下砸、收回，三个动作阶段清楚。",
+        "头顶冰冠、白胡须、肩毛、厚甲和原冰盾保留，锤头全程在格内，未画技能背景或地裂特效。",
+        "砸击有下蹲与展开站姿，不能将动作包围框高度变化解释为固定站姿抖动。"
+      ],
+      "proof": [
+        "records/wave04_review_active_phase_a.png",
+        "records/wave04_review_active_phase_b.png"
+      ],
+      "game_test": "not_performed",
+      "approved_file": "approved/hrym_stomp.png",
+      "review_record": "records/hrym_stomp_review.json",
+      "final_path": "sprites/bosses/hrym_stomp.png",
+      "preview_gif": "previews/hrym_stomp.gif",
+      "license_record": "../../LICENSES.md"
+    }
+  ],
+  "generation_records": [
+    "records/generation_jobs_v01.json",
+    "records/generation_jobs_v02.json",
+    "records/generation_jobs_wave03.json",
+    "records/generation_jobs_wave04.json",
+    "records/generation_jobs_wave05.json",
+    "records/generation_jobs_wave06.json"
+  ],
+  "game_test": "not_performed",
+  "terrain_4x4": "not_applicable_no_terrain_in_batch_3",
+  "notes": [
+    "15条PNG全部复制到sprites/bosses，逐项哈希已复核。",
+    "移动为快速追击节奏；斯库尔包围框顶部17/9/8/16，未声称达到生成提示词慢走1像素起伏目标，游戏速度与帧速由代码代理审核。",
+    "单次技能阶段保持不循环；QA连续预览另作循环仅检查阶段衔接。",
+    "三帧GIF受10毫秒计时精度限制，120/130/120毫秒，名义8FPS，平均8.108FPS；PNG动作速度由游戏侧设置。",
+    "Piskel失败候选保留，只有approved及final_path是自检通过稿。"
+  ],
+  "original_png_count": 21,
+  "sprite_4x4_overview": "previews/batch03_4x4_contact.png"
+}

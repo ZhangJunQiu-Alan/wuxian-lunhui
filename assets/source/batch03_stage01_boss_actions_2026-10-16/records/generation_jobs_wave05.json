@@ -1,0 +1,214 @@
+[
+  {
+    "id": "skoll_move_v04",
+    "character": "skoll",
+    "frames": 4,
+    "layout": [
+      2,
+      2
+    ],
+    "frame_size": [
+      128,
+      128
+    ],
+    "identity_reference": "references/skoll.png",
+    "reference": "references/skoll_move_v03_layout_TEMPLATE.png",
+    "prompt": "records/skoll_move_v04_prompt.txt",
+    "status": "normalized_candidates_pending_review",
+    "tab_id": "1374361858",
+    "conversation_url": "https://chatgpt.com/c/6ad1ba53-d39c-83ea-a60f-c280937927e5",
+    "raw_file": "originals/skoll_move_v04_raw.png",
+    "downloaded_name": "像素风暗影巨狼行走循环四帧_sprite.png",
+    "raw_cell_bboxes": [
+      [
+        33,
+        45,
+        610,
+        541
+      ],
+      [
+        660,
+        46,
+        1221,
+        581
+      ],
+      [
+        33,
+        671,
+        594,
+        1211
+      ],
+      [
+        657,
+        671,
+        1221,
+        1174
+      ]
+    ]
+  },
+  {
+    "id": "hati_move_v04",
+    "character": "hati",
+    "frames": 4,
+    "layout": [
+      2,
+      2
+    ],
+    "frame_size": [
+      128,
+      128
+    ],
+    "identity_reference": "references/hati.png",
+    "reference": "references/hati_move_layout_TEMPLATE.png",
+    "prompt": "records/hati_move_v04_prompt.txt",
+    "status": "normalized_candidates_pending_review",
+    "tab_id": "1374361861",
+    "conversation_url": "https://chatgpt.com/c/6ad1ba59-6d0c-83e9-bfd8-5101b76040ca",
+    "raw_file": "originals/hati_move_v04_raw.png",
+    "downloaded_name": "冰霜狼行走循环精灵图.png",
+    "raw_cell_bboxes": [
+      [
+        39,
+        53,
+        597,
+        568
+      ],
+      [
+        662,
+        53,
+        1223,
+        580
+      ],
+      [
+        39,
+        669,
+        596,
+        1201
+      ],
+      [
+        667,
+        670,
+        1223,
+        1191
+      ]
+    ]
+  },
+  {
+    "id": "hrym_attack_sequence_v02",
+    "character": "hrym",
+    "frames": 6,
+    "layout": [
+      3,
+      2
+    ],
+    "frame_size": [
+      192,
+      192
+    ],
+    "identity_reference": "references/hrym.png",
+    "reference": "references/hrym_attack_sequence_v01_layout_TEMPLATE.png",
+    "prompt": "records/hrym_attack_sequence_v02_prompt.txt",
+    "status": "normalized_candidates_pending_review",
+    "tab_id": "1374361864",
+    "conversation_url": "https://chatgpt.com/c/6ad1ba6a-0a48-83ea-9aea-13025291b5f7",
+    "raw_file": "originals/hrym_attack_sequence_v02_raw.png",
+    "downloaded_name": "冰霜矮人战士锤击动作序列.png",
+    "raw_cell_bboxes": [
+      [
+        13,
+        17,
+        497,
+        499
+      ],
+      [
+        516,
+        30,
+        1026,
+        502
+      ],
+      [
+        1036,
+        72,
+        1527,
+        502
+      ],
+      [
+        53,
+        553,
+        523,
+        990
+      ],
+      [
+        550,
+        553,
+        1005,
+        997
+      ],
+      [
+        1028,
+        516,
+        1514,
+        997
+      ]
+    ]
+  },
+  {
+    "id": "hati_attack_sequence_v03",
+    "character": "hati",
+    "frames": 6,
+    "layout": [
+      3,
+      2
+    ],
+    "frame_size": [
+      128,
+      128
+    ],
+    "identity_reference": "references/hati.png",
+    "reference": "references/hati_attack_sequence_layout_TEMPLATE.png",
+    "prompt": "records/hati_attack_sequence_v03_prompt.txt",
+    "status": "normalized_candidates_pending_review",
+    "tab_id": "1374361867",
+    "conversation_url": "https://chatgpt.com/c/6ad1ba7d-68c0-83ea-916b-9c1109a23d15",
+    "raw_file": "originals/hati_attack_sequence_v03_raw.png",
+    "downloaded_name": "冰霜巨狼咬击动画精灵表.png",
+    "raw_cell_bboxes": [
+      [
+        24,
+        64,
+        490,
+        480
+      ],
+      [
+        533,
+        111,
+        1023,
+        483
+      ],
+      [
+        1050,
+        150,
+        1520,
+        483
+      ],
+      [
+        28,
+        590,
+        544,
+        969
+      ],
+      [
+        542,
+        605,
+        1015,
+        969
+      ],
+      [
+        1045,
+        558,
+        1507,
+        969
+      ]
+    ]
+  }
+]

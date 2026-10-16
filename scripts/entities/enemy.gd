@@ -34,6 +34,7 @@ var is_elite := false
 var target: Player
 var gait := "walk"
 var attack_kind := "claw"
+var actions := ACTIONS  # 要找的动作帧条，Boss 有更多动作
 
 # 远程敌人
 var shoot_range := 0.0
@@ -126,14 +127,12 @@ func _ready() -> void:
 		paths.push_front(sprite_dir + type_id + "_elite")
 	# 每个路径先找动作帧条，再找静态图；精英有自己的静态图时不会借用普通怪的动作
 	for path in paths:
-		_actions = SpriteVisual.create_actions(path, radius * 2.6, ACTIONS)
+		_actions = SpriteVisual.create_actions(path, radius * 2.6, actions)
 		_sprite = _actions if _actions else SpriteVisual.create(path, radius * 2.6)
 		if _sprite:
 			break
 	if _actions:
-		_actions.animation_finished.connect(func() -> void:
-			if _actions.animation == &"attack":
-				_actions.play(&"move" if _actions.sprite_frames.has_animation(&"move") else &"idle"))
+		_actions.animation_finished.connect(_on_action_finished)
 	if _sprite:
 		add_child(_sprite)
 
@@ -187,6 +186,12 @@ func _update_attack(dir: Vector2, dist: float, delta: float) -> void:
 		_attack_cd = ATTACK_COOLDOWN * randf_range(0.85, 1.15)
 		_attack_dir = dir
 		_play_attack_frames()
+
+
+## 攻击动作播完回到行走
+func _on_action_finished() -> void:
+	if _actions.animation == &"attack":
+		_actions.play(&"move" if _actions.sprite_frames.has_animation(&"move") else &"idle")
 
 
 ## 有 <id>_attack.png 就播放一遍，播完自动回到行走

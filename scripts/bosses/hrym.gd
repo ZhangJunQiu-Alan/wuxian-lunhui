@@ -37,6 +37,7 @@ func init_stats(hp_scale: float) -> void:
 	setup_boss("hrym", "赫列姆", "霜巨人之王", 750.0, hp_scale, 46.0, 75.0, 25.0)
 	gait = "heavy"
 	color = Color(0.45, 0.58, 0.85)
+	state_actions = {"shield": &"shield"}
 	reward_points = 300
 
 
@@ -73,6 +74,7 @@ func _update_state(delta: float) -> void:
 					var pos := _cage_center + Vector2.from_angle(TAU * i / CAGE_PILLARS) * CAGE_RADIUS
 					IcePillar.spawn(get_parent(), pos, CAGE_DURATION)
 				target.shake(5.0, 0.2)
+				play_once(&"attack")
 				change_state("chase")
 		"shield":
 			# 慢慢转向玩家：转得比玩家绕圈慢，所以绕到背后就能打
@@ -105,6 +107,7 @@ func _random_gaps() -> Array[float]:
 
 
 func _stomp() -> void:
+	play_once(&"stomp")
 	target.shake(10.0, 0.3)
 	FxLayer.burst(global_position, FROST_COLOR, 30, 260.0)
 	Shockwave.spawn(get_parent(), global_position, _gaps, target)

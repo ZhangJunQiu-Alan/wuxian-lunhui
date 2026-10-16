@@ -41,6 +41,7 @@ func init_stats(hp_scale: float) -> void:
 	color = Color(0.72, 0.78, 0.95)
 	reward_points = 150
 	casts_shadow = false  # 真身影子在 _draw_telegraph 里画，这是分辨真假的线索
+	state_actions = {"howl_windup": &"howl", "split": &"windup"}
 
 
 func _ready() -> void:

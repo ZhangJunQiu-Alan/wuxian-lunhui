@@ -1,0 +1,86 @@
+{
+  "id": "hati_attack",
+  "version": "v03_cc",
+  "source_job": "hati_attack_sequence_v03",
+  "source": "originals/hati_attack_sequence_v03_raw.png",
+  "generation_url": "https://chatgpt.com/c/6ad1ba7d-68c0-83ea-916b-9c1109a23d15",
+  "candidate": "candidates/hati_attack_v03_cc.png",
+  "preview": "previews/hati_attack_v03_cc.gif",
+  "frame_size": [
+    128,
+    128
+  ],
+  "frames": 3,
+  "palette": "records/hati_reference_palette.json",
+  "colors": 48,
+  "alpha_values": [
+    0,
+    255
+  ],
+  "baseline": 118,
+  "bboxes": [
+    [
+      4,
+      31,
+      124,
+      119
+    ],
+    [
+      9,
+      34,
+      119,
+      119
+    ],
+    [
+      10,
+      23,
+      117,
+      119
+    ]
+  ],
+  "scale": 0.23255813953488372,
+  "status": "self_check_passed_pending_batch_completion",
+  "sha256": "8977c0bec88796ccc7ae37943f3ce85a594b25c1e13a1d48a6d83ecf3e714bee",
+  "size": [
+    384,
+    128
+  ],
+  "checks": {
+    "exact_rgba_three_square_frames_horizontal_no_gap": true,
+    "binary_alpha": true,
+    "common_reference_palette_at_most_48": true,
+    "fixed_ground_baseline_safe_margins": true,
+    "consistent_character_facing_right_and_camera": true,
+    "complete_anatomy_and_original_equipment": true,
+    "readable_1x_dark_background": true,
+    "all_frames_reviewed_at_4x": true,
+    "actual_chrome_phase_comparison": true,
+    "continuous_windup_to_attack_to_recovery_reviewed": true,
+    "no_text_watermark_scene": true,
+    "no_neighbor_sprite_fragments": true,
+    "no_cutoff_weapon_or_limbs": true
+  },
+  "tools": [
+    "Chrome ChatGPT reference-guided generation",
+    "Pillow connected-component frame extraction, fixed palette, exact size and binary alpha"
+  ],
+  "gif_nominal_fps": 8,
+  "gif_duration_ms": [
+    120,
+    130,
+    120
+  ],
+  "gif_actual_average_fps": 8.108108108108109,
+  "loop_seam": "not_applicable_single_play_skill; full six-frame sequence checked separately",
+  "proof": [
+    "records/wave05_components_review_phase_a.jpg",
+    "records/wave05_components_review_phase_b.jpg",
+    "previews/hati_attack_v03_cc_contact_4x.png"
+  ],
+  "observations": [
+    "保留银白额毛、冰蓝深毛、长卷尾和同一狼脸；弯肘低伏蓄力、探头张下颌咬合、抬头收回阶段明确。",
+    "攻击时头颈朝目标转动，身体相机仍为相同三分之二朝右视角；低伏高度变化为动作，不是逐帧重新缩放。",
+    "完整轮廓提取去除等宽切格带入的相邻尾部，六帧同一缩放与脚底基线。"
+  ],
+  "game_test": "not_performed"
+}

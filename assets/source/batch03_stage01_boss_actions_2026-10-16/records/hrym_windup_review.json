@@ -1,0 +1,85 @@
+{
+  "id": "hrym_windup",
+  "version": "v02_cc",
+  "source_job": "hrym_attack_sequence_v02",
+  "source": "originals/hrym_attack_sequence_v02_raw.png",
+  "generation_url": "https://chatgpt.com/c/6ad1ba6a-0a48-83ea-9aea-13025291b5f7",
+  "candidate": "candidates/hrym_windup_v02_cc.png",
+  "preview": "previews/hrym_windup_v02_cc.gif",
+  "frame_size": [
+    192,
+    192
+  ],
+  "frames": 3,
+  "palette": "records/hrym_reference_palette.json",
+  "colors": 48,
+  "alpha_values": [
+    0,
+    255
+  ],
+  "baseline": 189,
+  "bboxes": [
+    [
+      8,
+      16,
+      183,
+      190
+    ],
+    [
+      4,
+      20,
+      188,
+      190
+    ],
+    [
+      7,
+      35,
+      184,
+      190
+    ]
+  ],
+  "scale": 0.3607843137254902,
+  "status": "self_check_passed_pending_batch_completion",
+  "sha256": "f06ec697bd826dcccf28b9808164ff8331741fe6d269349a35df46d89ec6bddf",
+  "size": [
+    576,
+    192
+  ],
+  "checks": {
+    "exact_rgba_three_square_frames_horizontal_no_gap": true,
+    "binary_alpha": true,
+    "common_reference_palette_at_most_48": true,
+    "fixed_ground_baseline_safe_margins": true,
+    "consistent_character_facing_right_and_camera": true,
+    "complete_anatomy_and_original_equipment": true,
+    "readable_1x_dark_background": true,
+    "all_frames_reviewed_at_4x": true,
+    "actual_chrome_phase_comparison": true,
+    "continuous_windup_to_attack_to_recovery_reviewed": true,
+    "no_text_watermark_scene": true,
+    "no_neighbor_sprite_fragments": true,
+    "no_cutoff_weapon_or_limbs": true
+  },
+  "tools": [
+    "Chrome ChatGPT reference-guided generation",
+    "Pillow connected-component frame extraction, fixed palette, exact size and binary alpha"
+  ],
+  "gif_nominal_fps": 8,
+  "gif_duration_ms": [
+    120,
+    130,
+    120
+  ],
+  "gif_actual_average_fps": 8.108108108108109,
+  "loop_seam": "not_applicable_single_play_skill; full six-frame sequence checked separately",
+  "proof": [
+    "records/wave05_components_review_phase_a.jpg",
+    "records/wave05_components_review_phase_b.jpg",
+    "previews/hrym_windup_v02_cc_contact_4x.png"
+  ],
+  "observations": [
+    "冰冠、白胡须、皮毛、厚甲、原锤与原盾保持；蓄力逐步收肘、砸击屈肘靠近身体，收回有明确过渡。",
+    "按完整相连角色提取替代等宽切格，去除混入的相邻盾边；同一源图六帧使用相同缩放。"
+  ],
+  "game_test": "not_performed"
+}

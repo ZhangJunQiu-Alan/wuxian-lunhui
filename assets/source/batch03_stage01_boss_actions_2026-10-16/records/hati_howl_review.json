@@ -1,0 +1,83 @@
+{
+  "id": "hati_howl",
+  "status": "self_check_passed_pending_batch_completion",
+  "candidate": "candidates/hati_howl_v02.png",
+  "preview": "previews/hati_howl_v02.gif",
+  "source": "originals/hati_howl_v01_raw.png",
+  "generation_url": "https://chatgpt.com/c/6ad1a5d5-2374-83ea-8793-b252542ee99f",
+  "tools": [
+    "Chrome ChatGPT reference-guided generation",
+    "Chrome Piskel actual selection copy/paste and PNG/piskel export",
+    "Pillow deterministic palette/alpha/size normalization and verification"
+  ],
+  "frame_size": [
+    128,
+    128
+  ],
+  "frames": 3,
+  "size": [
+    384,
+    128
+  ],
+  "colors": 48,
+  "alpha_values": [
+    0,
+    255
+  ],
+  "baseline": 118,
+  "bboxes": [
+    [
+      5,
+      17,
+      122,
+      119
+    ],
+    [
+      5,
+      17,
+      119,
+      119
+    ],
+    [
+      5,
+      8,
+      115,
+      119
+    ]
+  ],
+  "checks": {
+    "exact_png_rgba_horizontal_frames_no_gaps": true,
+    "binary_alpha_no_semtransparent_edge": true,
+    "shared_character_palette_at_most_48": true,
+    "same_frame_size_baseline_and_safe_margins": true,
+    "same_character_anatomy_and_equipment": true,
+    "consistent_facing_right_three_quarter_view": true,
+    "dark_outline_and_upper_left_light": true,
+    "readable_on_121721_at_1x": true,
+    "all_frames_inspected_in_4x_contact": true,
+    "actual_chrome_different_animation_phases_observed": true,
+    "no_unintended_global_slide_or_detail_flicker_in_action": true,
+    "no_text_watermark_background": true,
+    "no_cut_weapons_or_limbs": true
+  },
+  "loop_seam": "not_applicable_single_play_skill",
+  "gif_nominal_fps": 8,
+  "gif_duration_ms": [
+    120,
+    130,
+    120
+  ],
+  "gif_actual_average_fps": 8.108108108108109,
+  "observations": [
+    "通过 Piskel 实际选区复制，y>=62 区域及 x<=62,y<62 区域在三帧间的 RGBA 差异均为0。",
+    "只在头颈区域保留逐步仰头、张嘴；4倍接缝与1倍识别均已检查。"
+  ],
+  "proof": [
+    "records/wave04_review_active_phase_a.png",
+    "records/wave04_review_active_phase_b.png"
+  ],
+  "game_test": "not_performed",
+  "sha256": "83988f8b547efdd987b99fde535a7ba80df1f5ac48e55b469b6f4f4ff226edf8",
+  "editable": "candidates/hati_howl_v02.piskel",
+  "pixel_verification": "records/hati_howl_v02_export_verification.json"
+}

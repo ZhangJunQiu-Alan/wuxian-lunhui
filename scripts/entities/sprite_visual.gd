@@ -74,7 +74,7 @@ static func _pivot_at_feet(node: Node2D, tex_height: float) -> void:
 
 ## 角色动作：<base>_<动作>.png 每个都是一条横向帧条，合成一个带多个动画的 AnimatedSprite2D
 ## actions 是 动作名 -> 是否循环，例如 {"idle": true, "move": true, "hurt": false, "death": false}
-## 至少要有 idle 或 move 才返回节点，否则返回 null（这时改用 create() 的静态图）
+## 没有 idle 和 move 时，用静态图 <base>.png 当作只有一帧的 idle；连静态图也没有，或者一个动作都没有，返回 null
 static func create_actions(base_path: String, height: float, actions: Dictionary) -> AnimatedSprite2D:
 	var frames := SpriteFrames.new()
 	frames.remove_animation(&"default")
@@ -86,8 +86,14 @@ static func create_actions(base_path: String, height: float, actions: Dictionary
 		var strip: Texture2D = load(path)
 		_add_strip(frames, action, strip, actions[action])
 		tex_height = strip.get_height()
-	if not (frames.has_animation(&"idle") or frames.has_animation(&"move")):
+	if frames.get_animation_names().is_empty():
 		return null
+	if not (frames.has_animation(&"idle") or frames.has_animation(&"move")):
+		if not ResourceLoader.exists(base_path + ".png"):
+			return null
+		var still: Texture2D = load(base_path + ".png")
+		frames.add_animation(&"idle")
+		frames.add_frame(&"idle", still)
 	var anim := AnimatedSprite2D.new()
 	anim.sprite_frames = frames
 	anim.play(&"idle" if frames.has_animation(&"idle") else &"move")
@@ -116,7 +122,8 @@ static func _add_strip(frames: SpriteFrames, anim_name: StringName, strip: Textu
 static func animate(sprite: Node2D, t: float, amount: float, gait: String = "walk", lean_x: float = 0.0, offset: Vector2 = Vector2.ZERO) -> void:
 	var base: Vector2 = sprite.get_meta("base_scale", Vector2.ONE)
 	var pos: Vector2 = sprite.get_meta("base_pos", Vector2.ZERO) + offset
-	var has_frames := sprite is AnimatedSprite2D  # 有逐帧动画时，只保留前倾和轻微颠步
+	var anim := sprite as AnimatedSprite2D
+	var has_frames := anim != null and anim.sprite_frames.get_frame_count(anim.animation) > 1  # 有逐帧动画时，只保留前倾和轻微颠步
 	var lean := lean_x * 0.1 * amount
 	var bob := 0.0
 	var sway := 0.0     # 以脚为轴的左右摇摆（换脚）
@@ -152,10 +159,11 @@ static func animate(sprite: Node2D, t: float, amount: float, gait: String = "wal
 	sprite.scale = Vector2(base.x * (1.0 + squash), base.y * (1.0 - squash))
 
 
-## Boss 蓄力：颤抖并微微胀大，t 是蓄力已经持续的时间。在有蓄力姿势的帧动画之前先用它
-static func windup_tremble(sprite: Node2D, t: float) -> void:
+## Boss 蓄力：颤抖并微微胀大，t 是蓄力已经持续的时间。has_pose 表示正在播放蓄力姿势的帧动画，这时只颤抖不胀大
+static func windup_tremble(sprite: Node2D, t: float, has_pose: bool = false) -> void:
 	sprite.position.x = randf_range(-1.5, 1.5)
-	sprite.scale *= 1.0 + 0.08 * minf(1.0, t / 0.5)
+	if not has_pose:
+		sprite.scale *= 1.0 + 0.08 * minf(1.0, t / 0.5)
 
 
 ## 脚下的影子，让图片看起来站在地面上

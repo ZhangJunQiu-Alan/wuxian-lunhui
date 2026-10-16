@@ -1,0 +1,36 @@
+{
+  "id": "hrym_move",
+  "status": "self_check_passed_pending_batch_completion",
+  "candidate": "candidates/hrym_move_v01.png",
+  "preview": "previews/hrym_move_v01.gif",
+  "generation_url": "https://chatgpt.com/c/6ad1a5ee-de04-83e9-aa28-536a3ba3e98b",
+  "source": "originals/hrym_move_v01_raw.png",
+  "checks": {
+    "png_rgba_exact_768x192": true,
+    "four_192x192_horizontal_frames_no_gaps": true,
+    "binary_alpha_0_255": true,
+    "shared_hrym_palette_48_colors": true,
+    "all_feet_baseline_y189": true,
+    "all_frame_margins_at_least_2px": true,
+    "facing_right_same_three_quarter_view": true,
+    "same_crown_beard_fur_armor_hammer_shield": true,
+    "complete_anatomy_and_equipment_no_crop": true,
+    "consistent_dark_outline_upper_left_light": true,
+    "readable_1x_on_121721": true,
+    "4x_contact_all_frames_inspected": true,
+    "actual_chrome_gif_different_phases_observed": true,
+    "alternating_left_right_step": true,
+    "loop_A_B_C_B_to_A_no_large_body_jump": true,
+    "no_text_watermark_background": true
+  },
+  "observations": [
+    "左右靴分别抬起，第二和第四帧为相近承重过渡姿态。",
+    "冰冠最高点相差2像素，身体未出现整段大幅抖动；锤盾始终完整，双脚底线固定。"
+  ],
+  "proof": [
+    "records/wave03_review_active_phase_a.jpg",
+    "previews/hrym_move_v01_contact_4x.png"
+  ],
+  "game_test": "not_performed",
+  "sha256": "ccb6dc04c07265324c9b5d3e18036f0a00db1e07b11c655bff8e9456828a3390"
+}

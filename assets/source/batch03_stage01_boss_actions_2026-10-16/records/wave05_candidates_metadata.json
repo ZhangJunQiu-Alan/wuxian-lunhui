@@ -1,0 +1,278 @@
+[
+  {
+    "id": "skoll_move",
+    "version": "v04",
+    "source_job": "skoll_move_v04",
+    "source": "originals/skoll_move_v04_raw.png",
+    "generation_url": "https://chatgpt.com/c/6ad1ba53-d39c-83ea-a60f-c280937927e5",
+    "candidate": "candidates/skoll_move_v04.png",
+    "preview": "previews/skoll_move_v04.gif",
+    "frame_size": [
+      128,
+      128
+    ],
+    "frames": 4,
+    "palette": "records/skoll_reference_palette.json",
+    "colors": 48,
+    "alpha_values": [
+      0,
+      255
+    ],
+    "baseline": 117,
+    "bboxes": [
+      [
+        5,
+        17,
+        123,
+        118
+      ],
+      [
+        7,
+        9,
+        121,
+        118
+      ],
+      [
+        7,
+        8,
+        121,
+        118
+      ],
+      [
+        6,
+        16,
+        121,
+        118
+      ]
+    ],
+    "scale": 0.2037037037037037,
+    "status": "candidate_pending_visual_and_motion_review",
+    "sha256": "fb543e7d226a3b4a86ab39f17f38fc8f8be13a4408db319383816d324749efe2"
+  },
+  {
+    "id": "hati_move",
+    "version": "v04",
+    "source_job": "hati_move_v04",
+    "source": "originals/hati_move_v04_raw.png",
+    "generation_url": "https://chatgpt.com/c/6ad1ba59-6d0c-83e9-bfd8-5101b76040ca",
+    "candidate": "candidates/hati_move_v04.png",
+    "preview": "previews/hati_move_v04.gif",
+    "frame_size": [
+      128,
+      128
+    ],
+    "frames": 4,
+    "palette": "records/hati_reference_palette.json",
+    "colors": 48,
+    "alpha_values": [
+      0,
+      255
+    ],
+    "baseline": 118,
+    "bboxes": [
+      [
+        6,
+        12,
+        122,
+        119
+      ],
+      [
+        5,
+        9,
+        122,
+        119
+      ],
+      [
+        6,
+        8,
+        122,
+        119
+      ],
+      [
+        6,
+        10,
+        122,
+        119
+      ]
+    ],
+    "scale": 0.20864661654135339,
+    "status": "candidate_pending_visual_and_motion_review",
+    "sha256": "274d4b4ea72b2d7c183527435fa6424c4ac16ae0a95d395156bfb1aeb2b807aa"
+  },
+  {
+    "id": "hrym_windup",
+    "version": "v02",
+    "source_job": "hrym_attack_sequence_v02",
+    "source": "originals/hrym_attack_sequence_v02_raw.png",
+    "generation_url": "https://chatgpt.com/c/6ad1ba6a-0a48-83ea-9aea-13025291b5f7",
+    "candidate": "candidates/hrym_windup_v02.png",
+    "preview": "previews/hrym_windup_v02.gif",
+    "frame_size": [
+      192,
+      192
+    ],
+    "frames": 3,
+    "palette": "records/hrym_reference_palette.json",
+    "colors": 48,
+    "alpha_values": [
+      0,
+      255
+    ],
+    "baseline": 189,
+    "bboxes": [
+      [
+        8,
+        15,
+        183,
+        190
+      ],
+      [
+        4,
+        19,
+        188,
+        190
+      ],
+      [
+        5,
+        34,
+        187,
+        190
+      ]
+    ],
+    "scale": 0.36220472440944884,
+    "status": "candidate_pending_visual_and_motion_review",
+    "sha256": "c2aff4567c0f74290898f3fe95a96c9372f130320492ea11543ae62fff1a70e1"
+  },
+  {
+    "id": "hrym_attack",
+    "version": "v02",
+    "source_job": "hrym_attack_sequence_v02",
+    "source": "originals/hrym_attack_sequence_v02_raw.png",
+    "generation_url": "https://chatgpt.com/c/6ad1ba6a-0a48-83ea-9aea-13025291b5f7",
+    "candidate": "candidates/hrym_attack_v02.png",
+    "preview": "previews/hrym_attack_v02.gif",
+    "frame_size": [
+      192,
+      192
+    ],
+    "frames": 3,
+    "palette": "records/hrym_reference_palette.json",
+    "colors": 48,
+    "alpha_values": [
+      0,
+      255
+    ],
+    "baseline": 189,
+    "bboxes": [
+      [
+        13,
+        32,
+        179,
+        190
+      ],
+      [
+        6,
+        29,
+        185,
+        190
+      ],
+      [
+        8,
+        16,
+        184,
+        190
+      ]
+    ],
+    "scale": 0.36220472440944884,
+    "status": "candidate_pending_visual_and_motion_review",
+    "sha256": "dc4400532b9e1fae74f87e54462ce400cf75abe4610824640d8fdadc612e2432"
+  },
+  {
+    "id": "hati_windup",
+    "version": "v03",
+    "source_job": "hati_attack_sequence_v03",
+    "source": "originals/hati_attack_sequence_v03_raw.png",
+    "generation_url": "https://chatgpt.com/c/6ad1ba7d-68c0-83ea-916b-9c1109a23d15",
+    "candidate": "candidates/hati_windup_v03.png",
+    "preview": "previews/hati_windup_v03.gif",
+    "frame_size": [
+      128,
+      128
+    ],
+    "frames": 3,
+    "palette": "records/hati_reference_palette.json",
+    "colors": 48,
+    "alpha_values": [
+      0,
+      255
+    ],
+    "baseline": 118,
+    "bboxes": [
+      [
+        8,
+        20,
+        119,
+        119
+      ],
+      [
+        5,
+        30,
+        122,
+        119
+      ],
+      [
+        8,
+        40,
+        120,
+        119
+      ]
+    ],
+    "scale": 0.23856858846918488,
+    "status": "candidate_pending_visual_and_motion_review",
+    "sha256": "23d35ae6eac5181b42a39a03e36df3261decc94db97948dcfb4bf2b4dee31d19"
+  },
+  {
+    "id": "hati_attack",
+    "version": "v03",
+    "source_job": "hati_attack_sequence_v03",
+    "source": "originals/hati_attack_sequence_v03_raw.png",
+    "generation_url": "https://chatgpt.com/c/6ad1ba7d-68c0-83ea-916b-9c1109a23d15",
+    "candidate": "candidates/hati_attack_v03.png",
+    "preview": "previews/hati_attack_v03.gif",
+    "frame_size": [
+      128,
+      128
+    ],
+    "frames": 3,
+    "palette": "records/hati_reference_palette.json",
+    "colors": 48,
+    "alpha_values": [
+      0,
+      255
+    ],
+    "baseline": 118,
+    "bboxes": [
+      [
+        6,
+        29,
+        121,
+        119
+      ],
+      [
+        4,
+        32,
+        124,
+        119
+      ],
+      [
+        9,
+        21,
+        119,
+        119
+      ]
+    ],
+    "scale": 0.23856858846918488,
+    "status": "candidate_pending_visual_and_motion_review",
+    "sha256": "62980d0e085237517b261cf300412c3f5f3bd3c7ce0c9715ff4e57134ebdec89"
+  }
+]

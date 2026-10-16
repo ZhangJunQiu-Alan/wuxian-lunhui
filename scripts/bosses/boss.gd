@@ -10,6 +10,8 @@ signal hp_changed(hp: float, max_hp: float)
 signal defeated(boss: Boss)
 
 const ULT_ENERGY_PER_KILL := 30.0  # 打完一个 Boss 总共给多少大招能量（按伤害比例给）
+## 动作素材 bosses/<id>_<动作>.png：是否循环。不循环的动作播完停在最后一帧
+const BOSS_ACTIONS := {"idle": true, "move": true, "windup": false, "attack": false, "howl": false, "shield": false, "stomp": false}
 
 var title := ""        # 称号，例如「追日之狼」
 var intro_line := ""   # 登场台词
@@ -20,6 +22,10 @@ var spawner: Callable  # 召唤小怪用，由 game.gd 传入：spawner.call(敌
 var reward_points := 100  # 击败后获得的奖励点
 var casts_shadow := true  # 哈提自己画「真身影子」，所以关掉通用影子
 var defeated_bosses: Array[String] = []  # 本关已击败的 Boss，由 game.gd 传入（哈提会因斯库尔之死狂暴）
+## 状态 -> 动作。没写的状态：chase 播 move，recover 播 idle，以 windup 结尾的播 windup，其余播 attack
+var state_actions := {}
+var _oneshot := &""   # play_once() 正在播放的动作，播完回到状态动作
+var _playing := &""
 
 
 ## 初始化 Boss 属性。hp_scale 和普通敌人一样随时间增长
@@ -29,6 +35,7 @@ func setup_boss(id: String, boss_name: String, boss_title: String, base_hp: floa
 	display_name = boss_name
 	title = boss_title
 	sprite_dir = "res://assets/sprites/bosses/"
+	actions = BOSS_ACTIONS
 	max_hp = base_hp * hp_scale
 	hp = max_hp
 	radius = boss_radius
@@ -41,6 +48,12 @@ func setup_boss(id: String, boss_name: String, boss_title: String, base_hp: floa
 ## 子类实现：设置自己的属性（一般就是调用一次 setup_boss）
 func init_stats(_hp_scale: float) -> void:
 	pass
+
+
+func _ready() -> void:
+	super._ready()
+	if _actions and _actions.sprite_frames.has_animation(&"attack"):
+		_actions.sprite_frames.set_animation_speed(&"attack", SpriteVisual.STRIP_FPS)  # Boss 出招慢而重，和冲锋时长差不多
 
 
 func change_state(new_state: String) -> void:
@@ -66,9 +79,49 @@ func _physics_process(delta: float) -> void:
 		_anim_t += delta
 		SpriteVisual.animate(_sprite, _anim_t * 0.6, 0.5, gait, signf(target.global_position.x - global_position.x) * 0.5)  # Boss 动作慢而沉
 		if state.ends_with("windup"):  # 所有蓄力状态都以 windup 结尾
-			SpriteVisual.windup_tremble(_sprite, state_time)
+			SpriteVisual.windup_tremble(_sprite, state_time, _actions != null and _actions.animation != &"idle")
+		_update_action()
 	if global_position.distance_to(target.global_position) < radius + Player.RADIUS:
 		target.take_damage(contact_damage)
+
+
+## 当前状态对应的动作
+func state_action() -> StringName:
+	if state_actions.has(state):
+		return state_actions[state]
+	if state == "chase":
+		return &"move"
+	if state == "recover":
+		return &"idle"
+	if state.ends_with("windup"):
+		return &"windup"
+	return &"attack"
+
+
+## 插播一次动作（例如砸地瞬间），播完回到当前状态的动作
+func play_once(action: StringName) -> void:
+	if _actions and _actions.sprite_frames.has_animation(action):
+		_oneshot = action
+		_playing = &""
+
+
+func _update_action() -> void:
+	if not _actions:
+		return
+	var want := _oneshot if _oneshot else state_action()
+	if want == _playing:
+		return
+	_playing = want
+	var frames := _actions.sprite_frames
+	if not frames.has_animation(want):
+		want = &"idle" if frames.has_animation(&"idle") else &"move"
+	_actions.play(want)
+	_actions.frame = 0
+
+
+func _on_action_finished() -> void:
+	if _actions.animation == _oneshot:
+		_oneshot = &""
 
 
 ## 子类实现：每帧根据当前状态行动

@@ -33,6 +33,7 @@ func init_stats(hp_scale: float) -> void:
 	setup_boss("skoll", "斯库尔", "追日之狼", 650.0, hp_scale, 34.0, 150.0, 15.0)
 	gait = "quad"
 	color = Color(0.55, 0.5, 0.62)
+	state_actions = {"howl": &"windup"}
 
 
 func _ready() -> void:

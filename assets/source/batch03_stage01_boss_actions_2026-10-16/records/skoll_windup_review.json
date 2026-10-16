@@ -1,0 +1,83 @@
+{
+  "id": "skoll_windup",
+  "version": "v04_cc",
+  "source_job": "skoll_attack_sequence_v04",
+  "source": "originals/skoll_attack_sequence_v04_raw.png",
+  "generation_url": "https://chatgpt.com/c/6ad1be50-4c24-83ea-b5bc-29b29e6e0383",
+  "candidate": "candidates/skoll_windup_v04_cc.png",
+  "preview": "previews/skoll_windup_v04_cc.gif",
+  "frame_size": [
+    128,
+    128
+  ],
+  "frames": 3,
+  "palette": "records/skoll_reference_palette.json",
+  "colors": 48,
+  "alpha_values": [
+    0,
+    255
+  ],
+  "baseline": 117,
+  "bboxes": [
+    [
+      11,
+      18,
+      117,
+      118
+    ],
+    [
+      10,
+      27,
+      118,
+      118
+    ],
+    [
+      8,
+      31,
+      120,
+      118
+    ]
+  ],
+  "scale": 0.23346303501945526,
+  "status": "self_check_passed_pending_batch_completion",
+  "sha256": "3dae968298052a7009939d1e7cdb07ad7e9146667ac8d2eebcf7d19629dbfa67",
+  "size": [
+    384,
+    128
+  ],
+  "checks": {
+    "exact_png_rgba_horizontal_square_frames_no_gap": true,
+    "binary_alpha": true,
+    "common_reference_palette_at_most_48": true,
+    "feet_baseline_fixed_safe_margins": true,
+    "same_character_facing_right_and_view": true,
+    "complete_anatomy_no_stray_fragments": true,
+    "consistent_dark_outline_upper_left_light": true,
+    "1x_original_character_comparison": true,
+    "4x_every_frame_contact_reviewed": true,
+    "actual_chrome_multiple_animation_phases": true,
+    "no_text_watermark_background": true,
+    "no_per_frame_independent_scaling": true
+  },
+  "loop_seam": "not_applicable_single_play_skill; full six-frame sequence checked",
+  "gif_nominal_fps": 8,
+  "gif_duration_ms": [
+    120,
+    130,
+    120
+  ],
+  "gif_actual_average_fps": 8.108108108108109,
+  "proof": [
+    "records/wolf_final_v08_phase_a.jpg",
+    "records/wolf_final_v08_phase_b.jpg"
+  ],
+  "game_test": "not_performed",
+  "tools": [
+    "Chrome ChatGPT reference-guided generation",
+    "Pillow complete-component extraction, fixed shared palette and baseline normalization"
+  ],
+  "observations": [
+    "同一黑灰金焰角色：低伏蓄力、短探头开合下颌、抬头收回，鼻口轮廓与火焰鬃毛保持可识别。",
+    "未沿用早期长身扑咬；六帧共用同一缩放、相同脚底基线、无跨格或游离碎片；身体相机保持三分之二朝右。"
+  ]
+}

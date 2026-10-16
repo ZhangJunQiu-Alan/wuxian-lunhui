@@ -1,0 +1,73 @@
+{
+  "id": "hrym_shield",
+  "status": "self_check_passed_pending_batch_completion",
+  "candidate": "candidates/hrym_shield_v01.png",
+  "preview": "previews/hrym_shield_v01.gif",
+  "source": "originals/hrym_shield_v01_raw.png",
+  "generation_url": "https://chatgpt.com/c/6ad1a5ee-de04-83e9-aa28-536a3ba3e98b",
+  "tools": [
+    "Chrome ChatGPT reference-guided generation",
+    "Pillow deterministic palette/alpha/size normalization"
+  ],
+  "frame_size": [
+    192,
+    192
+  ],
+  "frames": 2,
+  "size": [
+    384,
+    192
+  ],
+  "colors": 48,
+  "alpha_values": [
+    0,
+    255
+  ],
+  "baseline": 189,
+  "bboxes": [
+    [
+      8,
+      9,
+      183,
+      190
+    ],
+    [
+      16,
+      8,
+      175,
+      190
+    ]
+  ],
+  "checks": {
+    "exact_png_rgba_horizontal_frames_no_gaps": true,
+    "binary_alpha_no_semtransparent_edge": true,
+    "shared_character_palette_at_most_48": true,
+    "same_frame_size_baseline_and_safe_margins": true,
+    "same_character_anatomy_and_equipment": true,
+    "consistent_facing_right_three_quarter_view": true,
+    "dark_outline_and_upper_left_light": true,
+    "readable_on_121721_at_1x": true,
+    "all_frames_inspected_in_4x_contact": true,
+    "actual_chrome_different_animation_phases_observed": true,
+    "no_unintended_global_slide_or_detail_flicker_in_action": true,
+    "no_text_watermark_background": true,
+    "no_cut_weapons_or_limbs": true
+  },
+  "loop_seam": "not_applicable_single_play_skill",
+  "gif_nominal_fps": 8,
+  "gif_duration_ms": [
+    120,
+    130
+  ],
+  "gif_actual_average_fps": 8.0,
+  "observations": [
+    "原冰盾由身体侧面移至胸前防御，冰锤始终在同一持握手中，武器与盔甲完整。",
+    "两帧为单次举盾技能；举盾时身体随防御姿态后收，循环首尾接回不适用。"
+  ],
+  "proof": [
+    "records/wave04_review_active_phase_a.png",
+    "records/wave04_review_active_phase_b.png"
+  ],
+  "game_test": "not_performed",
+  "sha256": "cefc863ffd117b142cdbb2067d6a3c4a764c1a6347bfbb2ee61c4fd8d81c9ba3"
+}

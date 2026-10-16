@@ -1,0 +1,90 @@
+[
+  {
+    "id": "skoll_windup",
+    "version": "v04_cc",
+    "source_job": "skoll_attack_sequence_v04",
+    "source": "originals/skoll_attack_sequence_v04_raw.png",
+    "generation_url": "https://chatgpt.com/c/6ad1be50-4c24-83ea-b5bc-29b29e6e0383",
+    "candidate": "candidates/skoll_windup_v04_cc.png",
+    "preview": "previews/skoll_windup_v04_cc.gif",
+    "frame_size": [
+      128,
+      128
+    ],
+    "frames": 3,
+    "palette": "records/skoll_reference_palette.json",
+    "colors": 48,
+    "alpha_values": [
+      0,
+      255
+    ],
+    "baseline": 117,
+    "bboxes": [
+      [
+        11,
+        18,
+        117,
+        118
+      ],
+      [
+        10,
+        27,
+        118,
+        118
+      ],
+      [
+        8,
+        31,
+        120,
+        118
+      ]
+    ],
+    "scale": 0.23346303501945526,
+    "status": "candidate_pending_visual_and_motion_review",
+    "sha256": "3dae968298052a7009939d1e7cdb07ad7e9146667ac8d2eebcf7d19629dbfa67"
+  },
+  {
+    "id": "skoll_attack",
+    "version": "v04_cc",
+    "source_job": "skoll_attack_sequence_v04",
+    "source": "originals/skoll_attack_sequence_v04_raw.png",
+    "generation_url": "https://chatgpt.com/c/6ad1be50-4c24-83ea-b5bc-29b29e6e0383",
+    "candidate": "candidates/skoll_attack_v04_cc.png",
+    "preview": "previews/skoll_attack_v04_cc.gif",
+    "frame_size": [
+      128,
+      128
+    ],
+    "frames": 3,
+    "palette": "records/skoll_reference_palette.json",
+    "colors": 48,
+    "alpha_values": [
+      0,
+      255
+    ],
+    "baseline": 117,
+    "bboxes": [
+      [
+        4,
+        23,
+        124,
+        118
+      ],
+      [
+        8,
+        29,
+        119,
+        118
+      ],
+      [
+        10,
+        18,
+        118,
+        118
+      ]
+    ],
+    "scale": 0.23346303501945526,
+    "status": "candidate_pending_visual_and_motion_review",
+    "sha256": "0872acb8d90ffadd172f854f120e4ea18089f7348cbf3138fac3f873a442d3c9"
+  }
+]

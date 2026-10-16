@@ -1,0 +1,246 @@
+[
+  {
+    "id": "skoll_move",
+    "version": "v03",
+    "source_job": "skoll_move_v03",
+    "source": "originals/skoll_move_v03_raw.png",
+    "generation_url": "https://chatgpt.com/c/6ad1a5bd-66e8-83ea-9bcd-9356a6b6e6ea",
+    "candidate": "candidates/skoll_move_v03.png",
+    "preview": "previews/skoll_move_v03.gif",
+    "frame_size": [
+      128,
+      128
+    ],
+    "frames": 4,
+    "palette": "records/skoll_reference_palette.json",
+    "colors": 48,
+    "alpha_values": [
+      0,
+      255
+    ],
+    "baseline": 117,
+    "bboxes": [
+      [
+        7,
+        11,
+        120,
+        118
+      ],
+      [
+        7,
+        8,
+        120,
+        118
+      ],
+      [
+        7,
+        8,
+        121,
+        118
+      ],
+      [
+        7,
+        9,
+        120,
+        118
+      ]
+    ],
+    "scale": 0.2037037037037037,
+    "status": "rejected_pending_leg_repair",
+    "sha256": "e6e60d18a24df34831d7ba8cb4b7ce3da43b79badabf649b5b74f1f9a02ecf76",
+    "rejection_reasons": [
+      "近侧前爪持续前伸，缺少清楚交替迈步。"
+    ]
+  },
+  {
+    "id": "hati_howl",
+    "version": "v01",
+    "source_job": "hati_howl_v01",
+    "source": "originals/hati_howl_v01_raw.png",
+    "generation_url": "https://chatgpt.com/c/6ad1a5d5-2374-83ea-8793-b252542ee99f",
+    "candidate": "candidates/hati_howl_v01.png",
+    "preview": "previews/hati_howl_v01.gif",
+    "frame_size": [
+      128,
+      128
+    ],
+    "frames": 3,
+    "palette": "records/hati_reference_palette.json",
+    "colors": 48,
+    "alpha_values": [
+      0,
+      255
+    ],
+    "baseline": 118,
+    "bboxes": [
+      [
+        5,
+        17,
+        122,
+        119
+      ],
+      [
+        4,
+        17,
+        124,
+        119
+      ],
+      [
+        10,
+        8,
+        118,
+        119
+      ]
+    ],
+    "scale": 0.17118402282453637,
+    "status": "superseded_by_piskel_v02",
+    "sha256": "19f470c3b301c413c2004efa6f8726af4429a3b05446b996791707cf326beb6f",
+    "rejection_reasons": [
+      "原生成帧身体漂移，已由Piskel固定身体并重新审核通过v02。"
+    ]
+  },
+  {
+    "id": "hrym_move",
+    "version": "v01",
+    "source_job": "hrym_move_v01",
+    "source": "originals/hrym_move_v01_raw.png",
+    "generation_url": "https://chatgpt.com/c/6ad1a5ee-de04-83e9-aa28-536a3ba3e98b",
+    "candidate": "candidates/hrym_move_v01.png",
+    "preview": "previews/hrym_move_v01.gif",
+    "frame_size": [
+      192,
+      192
+    ],
+    "frames": 4,
+    "palette": "records/hrym_reference_palette.json",
+    "colors": 48,
+    "alpha_values": [
+      0,
+      255
+    ],
+    "baseline": 189,
+    "bboxes": [
+      [
+        4,
+        9,
+        188,
+        190
+      ],
+      [
+        4,
+        11,
+        188,
+        190
+      ],
+      [
+        4,
+        11,
+        188,
+        190
+      ],
+      [
+        4,
+        11,
+        188,
+        190
+      ]
+    ],
+    "scale": 0.30976430976430974,
+    "status": "self_check_passed_pending_batch_completion",
+    "sha256": "ccb6dc04c07265324c9b5d3e18036f0a00db1e07b11c655bff8e9456828a3390"
+  },
+  {
+    "id": "hrym_windup",
+    "version": "v01",
+    "source_job": "hrym_attack_sequence_v01",
+    "source": "originals/hrym_attack_sequence_v01_raw.png",
+    "generation_url": "https://chatgpt.com/c/6ad1a603-a8ac-83ea-becd-5b0363a00c70",
+    "candidate": "candidates/hrym_windup_v01.png",
+    "preview": "previews/hrym_windup_v01.gif",
+    "frame_size": [
+      192,
+      192
+    ],
+    "frames": 3,
+    "palette": "records/hrym_reference_palette.json",
+    "colors": 48,
+    "alpha_values": [
+      0,
+      255
+    ],
+    "baseline": 189,
+    "bboxes": [
+      [
+        7,
+        19,
+        185,
+        190
+      ],
+      [
+        7,
+        24,
+        182,
+        190
+      ],
+      [
+        5,
+        37,
+        187,
+        190
+      ]
+    ],
+    "scale": 0.359375,
+    "status": "rejected",
+    "sha256": "46e808c3b7da26ce299ca7aacb1f1ddc9058c81c78fe0cdc97d61cda72d479f7",
+    "rejection_reasons": [
+      "横砸锤柄跨格，等分会截断武器；已要求新一轮改为屈肘短砸。"
+    ]
+  },
+  {
+    "id": "hrym_attack",
+    "version": "v01",
+    "source_job": "hrym_attack_sequence_v01",
+    "source": "originals/hrym_attack_sequence_v01_raw.png",
+    "generation_url": "https://chatgpt.com/c/6ad1a603-a8ac-83ea-becd-5b0363a00c70",
+    "candidate": "candidates/hrym_attack_v01.png",
+    "preview": "previews/hrym_attack_v01.gif",
+    "frame_size": [
+      192,
+      192
+    ],
+    "frames": 3,
+    "palette": "records/hrym_reference_palette.json",
+    "colors": 48,
+    "alpha_values": [
+      0,
+      255
+    ],
+    "baseline": 189,
+    "bboxes": [
+      [
+        15,
+        23,
+        177,
+        190
+      ],
+      [
+        4,
+        26,
+        188,
+        190
+      ],
+      [
+        7,
+        18,
+        185,
+        190
+      ]
+    ],
+    "scale": 0.359375,
+    "status": "rejected",
+    "sha256": "85fc5c1f21ab76911775f61d8d954bb6b9ea98fa18575ca1cc475eb3e664d205",
+    "rejection_reasons": [
+      "横砸锤柄跨格，等分会截断武器；已要求新一轮改为屈肘短砸。"
+    ]
+  }
+]

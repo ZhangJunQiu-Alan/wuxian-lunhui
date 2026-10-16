@@ -16,8 +16,9 @@ func _ready() -> void:
 	gait = "quad"
 	mass = 50.0
 	super._ready()
-	if _sprite == null:  # 有哈提的素材就用同一张图，看起来一模一样
-		_sprite = SpriteVisual.create("res://assets/sprites/bosses/hati", radius * 2.6)
+	if _sprite == null:  # 有哈提的素材就用同一套动作，看起来一模一样
+		_actions = SpriteVisual.create_actions("res://assets/sprites/bosses/hati", radius * 2.6, Boss.BOSS_ACTIONS)
+		_sprite = _actions if _actions else SpriteVisual.create("res://assets/sprites/bosses/hati", radius * 2.6)
 		if _sprite:
 			add_child(_sprite)
 
@@ -43,8 +44,10 @@ func _physics_process(delta: float) -> void:
 		_sprite.set("flip_h", target.global_position.x < global_position.x)
 		_anim_t += delta
 		SpriteVisual.animate(_sprite, _anim_t * 0.6, 0.5, gait, signf(target.global_position.x - global_position.x) * 0.5)
+		if _actions and hati._actions and _actions.animation != hati._actions.animation:
+			_actions.play(hati._actions.animation)  # 和本体同步动作
 		if hati.state.ends_with("windup"):
-			SpriteVisual.windup_tremble(_sprite, hati.state_time)
+			SpriteVisual.windup_tremble(_sprite, hati.state_time, _actions != null and _actions.animation != &"idle")
 	match hati.state:
 		"lunge":
 			position += _aim_dir * Hati.LUNGE_SPEED * delta

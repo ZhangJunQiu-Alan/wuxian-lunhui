@@ -1,0 +1,343 @@
+{
+  "approved_count": 15,
+  "final_hashes_verified": 15,
+  "all_gif_frames_decoded": true,
+  "original_pngs_verified": 21,
+  "assets": [
+    {
+      "id": "skoll_idle",
+      "final_path": "sprites/bosses/skoll_idle.png",
+      "sha256": "19d76d98e3f5a8bb76f9bafb7e0239f069aaf14c175ff6fc5fee465a6421b8a3",
+      "frames": 4,
+      "gif_durations": [
+        120,
+        130,
+        120,
+        130
+      ],
+      "validated": true
+    },
+    {
+      "id": "skoll_move",
+      "final_path": "sprites/bosses/skoll_move.png",
+      "sha256": "fb543e7d226a3b4a86ab39f17f38fc8f8be13a4408db319383816d324749efe2",
+      "frames": 4,
+      "gif_durations": [
+        120,
+        130,
+        120,
+        130
+      ],
+      "validated": true
+    },
+    {
+      "id": "skoll_windup",
+      "final_path": "sprites/bosses/skoll_windup.png",
+      "sha256": "3dae968298052a7009939d1e7cdb07ad7e9146667ac8d2eebcf7d19629dbfa67",
+      "frames": 3,
+      "gif_durations": [
+        120,
+        130,
+        120
+      ],
+      "validated": true
+    },
+    {
+      "id": "skoll_attack",
+      "final_path": "sprites/bosses/skoll_attack.png",
+      "sha256": "0872acb8d90ffadd172f854f120e4ea18089f7348cbf3138fac3f873a442d3c9",
+      "frames": 3,
+      "gif_durations": [
+        120,
+        130,
+        120
+      ],
+      "validated": true
+    },
+    {
+      "id": "hati_idle",
+      "final_path": "sprites/bosses/hati_idle.png",
+      "sha256": "c53939c493d9ed08e6bf9047fd28ce95c47efd99d50769a689b288715abb9287",
+      "frames": 4,
+      "gif_durations": [
+        120,
+        130,
+        120,
+        130
+      ],
+      "validated": true
+    },
+    {
+      "id": "hati_move",
+      "final_path": "sprites/bosses/hati_move.png",
+      "sha256": "9e9330787cad426086ff6372daf7baddeefcdf14bef55321bbc565c3836ad652",
+      "frames": 4,
+      "gif_durations": [
+        120,
+        130,
+        120,
+        130
+      ],
+      "validated": true
+    },
+    {
+      "id": "hati_windup",
+      "final_path": "sprites/bosses/hati_windup.png",
+      "sha256": "9b2a724cfee5a161f571088945e8a4284a8bbbcc2aada6bbc46096fd272e4cff",
+      "frames": 3,
+      "gif_durations": [
+        120,
+        130,
+        120
+      ],
+      "validated": true
+    },
+    {
+      "id": "hati_attack",
+      "final_path": "sprites/bosses/hati_attack.png",
+      "sha256": "8977c0bec88796ccc7ae37943f3ce85a594b25c1e13a1d48a6d83ecf3e714bee",
+      "frames": 3,
+      "gif_durations": [
+        120,
+        130,
+        120
+      ],
+      "validated": true
+    },
+    {
+      "id": "hrym_idle",
+      "final_path": "sprites/bosses/hrym_idle.png",
+      "sha256": "00d007b1720361d81556212bb79928b2a29f5f836c9de0b97246b7a3c48aef45",
+      "frames": 4,
+      "gif_durations": [
+        120,
+        130,
+        120,
+        130
+      ],
+      "validated": true
+    },
+    {
+      "id": "hrym_move",
+      "final_path": "sprites/bosses/hrym_move.png",
+      "sha256": "ccb6dc04c07265324c9b5d3e18036f0a00db1e07b11c655bff8e9456828a3390",
+      "frames": 4,
+      "gif_durations": [
+        120,
+        130,
+        120,
+        130
+      ],
+      "validated": true
+    },
+    {
+      "id": "hrym_windup",
+      "final_path": "sprites/bosses/hrym_windup.png",
+      "sha256": "f06ec697bd826dcccf28b9808164ff8331741fe6d269349a35df46d89ec6bddf",
+      "frames": 3,
+      "gif_durations": [
+        120,
+        130,
+        120
+      ],
+      "validated": true
+    },
+    {
+      "id": "hrym_attack",
+      "final_path": "sprites/bosses/hrym_attack.png",
+      "sha256": "427e2f8bf1911d39d59c33ef9b6fe72558792e2925d65af439ad628e5729e95b",
+      "frames": 3,
+      "gif_durations": [
+        120,
+        130,
+        120
+      ],
+      "validated": true
+    },
+    {
+      "id": "hati_howl",
+      "final_path": "sprites/bosses/hati_howl.png",
+      "sha256": "83988f8b547efdd987b99fde535a7ba80df1f5ac48e55b469b6f4f4ff226edf8",
+      "frames": 3,
+      "gif_durations": [
+        120,
+        130,
+        120
+      ],
+      "validated": true
+    },
+    {
+      "id": "hrym_shield",
+      "final_path": "sprites/bosses/hrym_shield.png",
+      "sha256": "cefc863ffd117b142cdbb2067d6a3c4a764c1a6347bfbb2ee61c4fd8d81c9ba3",
+      "frames": 2,
+      "gif_durations": [
+        120,
+        130
+      ],
+      "validated": true
+    },
+    {
+      "id": "hrym_stomp",
+      "final_path": "sprites/bosses/hrym_stomp.png",
+      "sha256": "4be06a84c3a375de589567c335d725bc9095ee0b50367d40e109e16abfcf568e",
+      "frames": 3,
+      "gif_durations": [
+        120,
+        130,
+        120
+      ],
+      "validated": true
+    }
+  ],
+  "originals": [
+    {
+      "file": "hati_attack_sequence_raw_v02.png",
+      "size": [
+        1536,
+        1024
+      ]
+    },
+    {
+      "file": "hati_attack_sequence_v03_raw.png",
+      "size": [
+        1536,
+        1024
+      ]
+    },
+    {
+      "file": "skoll_attack_sequence_raw_v02.png",
+      "size": [
+        1536,
+        1024
+      ]
+    },
+    {
+      "file": "hati_attack_sequence_raw_v01.png",
+      "size": [
+        1536,
+        1024
+      ]
+    },
+    {
+      "file": "skoll_attack_sequence_raw_v01.png",
+      "size": [
+        1536,
+        1024
+      ]
+    },
+    {
+      "file": "hati_move_v04_raw.png",
+      "size": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "file": "hrym_attack_sequence_v01_raw.png",
+      "size": [
+        1536,
+        1024
+      ]
+    },
+    {
+      "file": "hrym_shield_v01_raw.png",
+      "size": [
+        1774,
+        887
+      ]
+    },
+    {
+      "file": "skoll_move_raw_v02.png",
+      "size": [
+        1536,
+        1024
+      ]
+    },
+    {
+      "file": "skoll_move_v03_raw.png",
+      "size": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "file": "skoll_move_raw_v01.png",
+      "size": [
+        1536,
+        1024
+      ]
+    },
+    {
+      "file": "hrym_attack_sequence_v02_raw.png",
+      "size": [
+        1536,
+        1024
+      ]
+    },
+    {
+      "file": "hrym_stomp_v01_raw.png",
+      "size": [
+        2172,
+        724
+      ]
+    },
+    {
+      "file": "hrym_idle_v01_raw.png",
+      "size": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "file": "hati_move_raw_v02.png",
+      "size": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "file": "hati_move_raw_v01.png",
+      "size": [
+        1536,
+        1024
+      ]
+    },
+    {
+      "file": "skoll_attack_sequence_v04_raw.png",
+      "size": [
+        1536,
+        1024
+      ]
+    },
+    {
+      "file": "hrym_move_v01_raw.png",
+      "size": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "file": "hati_howl_v01_raw.png",
+      "size": [
+        2172,
+        724
+      ]
+    },
+    {
+      "file": "skoll_move_v04_raw.png",
+      "size": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "file": "hati_idle_v01_raw.png",
+      "size": [
+        1254,
+        1254
+      ]
+    }
+  ],
+  "game_test": "not_performed"
+}
