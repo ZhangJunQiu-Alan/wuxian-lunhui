@@ -10,6 +10,7 @@ extends Node2D
 ## 过渡块命名：<前缀>_n/e/s/w 是露出的那条边，_outer_ne 是凸出的外角，_inner_ne 是凹进去的内角
 ## 没有自己过渡块的地面写在 edge_masks 里，借另一套过渡块的轮廓（只取透明度），开局时生成
 ## overlay 里的地块半透明地叠在底下，alpha 是不透明度
+## 素材还没到的地块、物件、边界，写在 placeholders 里（名字 -> [颜色, 尺寸]），先用纯色块代替，素材放进来后自动换上
 
 const TILE := 64
 const OBSTACLE_CELL := 128.0  # 碰撞查询的网格大小，要大于 最大碰撞半径 + 最大敌人半径
@@ -25,6 +26,7 @@ const EDGE_TILES := {
 
 ## 格子坐标 -> 该格里的碰撞圆 Vector3(x, y, 半径)
 static var obstacles := {}
+static var current: MapLayer
 
 var map: Dictionary
 var ground_dir := ""
@@ -35,6 +37,7 @@ var edges := {}         # 有过渡块的地块名 -> 过渡块前缀，先写�
 var edge_masks := {}    # 地块名 -> 借用哪套过渡块的轮廓，例如 "snow_thin" -> "path_edge"
 var variants := {}      # 地块名 -> 铺满时随机换用的变化（例如另一种冰裂纹），连同原地块一起随机
 var overlay := {}       # 地块名 -> 不透明度
+var placeholders := {}  # 名字 -> [颜色, 尺寸]
 var rng := RandomNumberGenerator.new()
 var _cells := {}        # 格子 -> 地块名，_layout() 写好后一次性铺到 TileMapLayer
 var _overlay_cells := {}  # 格子 -> 叠加的地块名
@@ -49,6 +52,7 @@ var _props: Node2D
 
 
 func _ready() -> void:
+	current = self
 	z_index = -10  # 画在所有东西下面，包括支线的篝火、标记（它们是 -1）
 	rng.seed = 20261016
 	_tiles = TileSet.new()
@@ -56,6 +60,9 @@ func _ready() -> void:
 	for file in ResourceLoader.list_directory(ground_dir):
 		if file.ends_with(".png"):
 			_add_source(file.get_basename(), load(ground_dir + file))
+	for tile: String in placeholders:
+		if not _sources.has(tile) and placeholders[tile][1] == Vector2i(TILE, TILE):
+			_add_source(tile, _texture(ground_dir, tile))
 	for tile: String in edge_masks:
 		_make_edges(tile, edge_masks[tile])
 	for tile: String in edges:
@@ -138,9 +145,43 @@ func _paint_edges(tile: String) -> void:
 				layers[i].set_cell(at, _sources["%s_%s" % [edges[tile], parts[i]]], Vector2i.ZERO)
 
 
+func _exit_tree() -> void:
+	if current == self:
+		current = null
+
+
 ## 子类实现：铺地面、摆物件
 func _layout() -> void:
 	pass
+
+
+## 敌人从 from 去追 to 时下一步往哪走。有冥河这类只能从几处通过的障碍时，子类改成先走到过河点
+func waypoint(_from: Vector2, to: Vector2) -> Vector2:
+	return to
+
+
+## 素材有就加载，没有就按 placeholders 生成一张带深色边框的纯色图
+func _texture(dir: String, file: String) -> Texture2D:
+	var path := dir + file + ".png"
+	if ResourceLoader.exists(path):
+		return load(path)
+	var info: Array = placeholders.get(file, [Color.MAGENTA, Vector2i(32, 32)])
+	var color: Color = info[0]
+	var size: Vector2i = info[1]
+	var image := Image.create(size.x, size.y, false, Image.FORMAT_RGBA8)
+	image.fill(color)
+	if size != Vector2i(TILE, TILE):  # 物件加边框，地块不加（要能无缝平铺）
+		var edge := color.darkened(0.5)
+		for x in size.x:
+			image.set_pixel(x, 0, edge)
+			image.set_pixel(x, size.y - 1, edge)
+		for y in size.y:
+			image.set_pixel(0, y, edge)
+			image.set_pixel(size.x - 1, y, edge)
+	else:
+		for i in 40:  # 地块撒一点噪点，免得一大片纯色
+			image.set_pixel(rng.randi() % TILE, rng.randi() % TILE, color.lightened(0.08) if i % 2 else color.darkened(0.08))
+	return ImageTexture.create_from_image(image)
 
 
 ## 镜头能看到的所有格子
@@ -223,7 +264,7 @@ func border(north: String, east: String, south: String, west: String) -> void:
 
 func _border_sprite(file: String, top_left: Vector2) -> Sprite2D:
 	var sprite := Sprite2D.new()
-	sprite.texture = load(borders_dir + file + ".png")
+	sprite.texture = _texture(borders_dir, file)
 	sprite.centered = false
 	sprite.position = top_left
 	_borders.add_child(sprite)
@@ -233,7 +274,7 @@ func _border_sprite(file: String, top_left: Vector2) -> Sprite2D:
 ## 摆一个物件，pos 是图片底边中点。block 是碰撞半径（0 = 只是装饰，可以穿过）
 func prop(file: String, pos: Vector2, block: float = 0.0, flip := false) -> Sprite2D:
 	var sprite := Sprite2D.new()
-	sprite.texture = load(props_dir + file + ".png")
+	sprite.texture = _texture(props_dir, file)
 	sprite.offset = Vector2(0, -sprite.texture.get_height() * 0.5)
 	sprite.position = pos.round()
 	sprite.flip_h = flip
@@ -255,7 +296,7 @@ func wide_prop(file: String, pos: Vector2, width: float, block: float, flip := f
 ## 平贴在地面上的痕迹（车辙、脚印、血迹），pos 是图片中心，画在物件下面
 func decal(file: String, pos: Vector2, flip := false) -> Sprite2D:
 	var sprite := Sprite2D.new()
-	sprite.texture = load(decals_dir + file + ".png")
+	sprite.texture = _texture(decals_dir, file)
 	sprite.position = pos.round()
 	sprite.flip_h = flip
 	_decals.add_child(sprite)

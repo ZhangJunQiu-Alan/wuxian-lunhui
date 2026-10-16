@@ -1,12 +1,18 @@
 class_name EnemyDB
 ## 敌人数据表
 ##   hp/speed/damage/radius/xp/color  基础属性
-##   behavior  chase = 贴身追击（默认）；ranged = 保持距离射击；still = 不动也不攻击（支线里要打碎的目标）
+##   behavior  chase = 贴身追击（默认）；ranged = 保持距离射击；drain = 保持距离吸血（持续掉血，自己回血）；
+##             still = 不动也不攻击（支线里要打碎的目标）
 ##   mass      体重，越重越不容易被其他敌人挤开（默认 1）
-##   远程敌人额外字段：shoot_range 射程，shoot_cooldown 射击间隔，projectile_damage 子弹伤害
+##   远程敌人额外字段：shoot_range 射程，shoot_cooldown 射击间隔，projectile_damage 子弹伤害（吸血时是每秒伤害）
+##             projectile 子弹素材（assets/sprites/effects/<名字>.png，默认冰锥），projectile_speed 子弹速度
 ##   max_alive 同时存在的上限，超过时改刷尸鬼（防止远程怪越积越多）
 ##   gait      步态（程序动画）：walk 双足（默认）、quad 四足、heavy 巨人、float 飘浮
 ##   attack    近身攻击的特效：claw 爪击（默认）、bite 撕咬、slam 砸地
+##   pack      一次刷出几只（成群出现）
+##   ghost     穿过其他敌人、冥河和物件
+##   dodge     被打中时闪避的几率（闪开后 DODGE_COOLDOWN 秒内不会再闪）
+##   split     死亡时分裂成哪种敌人，split_count 分裂几只
 
 const ALL := {
 	# ———— 篇章一 · 第 1 关「芬布尔之冬」————
@@ -22,6 +28,22 @@ const ALL := {
 	# 支线「冰下的战士」的冰块：不会动，打碎它
 	"ice_block": {"name": "冰封的战士", "hp": 60.0, "speed": 0.0, "damage": 0.0, "radius": 18.0, "xp": 3,
 		"color": Color(0.6, 0.85, 1.0, 0.9), "behavior": "still", "mass": 1000.0},
+
+	# ———— 篇章一 · 第 2 关「亡者之船」————
+	"dead": {"name": "亡者", "hp": 7.0, "speed": 62.0, "damage": 6.0, "radius": 12.0, "xp": 1,
+		"color": Color(0.62, 0.62, 0.58), "pack": 6},
+	"mist_wraith": {"name": "冥雾幽魂", "hp": 9.0, "speed": 80.0, "damage": 4.0, "radius": 11.0, "xp": 2,
+		"color": Color(0.55, 0.75, 0.7), "behavior": "drain", "ghost": true,
+		"shoot_range": 200.0, "projectile_damage": 3.0, "max_alive": 25, "gait": "float"},
+	"dark_elf": {"name": "黑暗精灵", "hp": 10.0, "speed": 95.0, "damage": 5.0, "radius": 11.0, "xp": 2,
+		"color": Color(0.5, 0.42, 0.65), "behavior": "ranged", "dodge": 0.35,
+		"shoot_range": 380.0, "shoot_cooldown": 2.2, "projectile_damage": 8.0, "max_alive": 30,
+		"projectile": "dark_arrow", "projectile_speed": 340.0},
+	"nail_golem": {"name": "指甲傀儡", "hp": 45.0, "speed": 48.0, "damage": 16.0, "radius": 22.0, "xp": 5,
+		"color": Color(0.78, 0.72, 0.52), "mass": 3.5, "gait": "heavy", "attack": "slam",
+		"split": "nail_golem_small", "split_count": 3},
+	"nail_golem_small": {"name": "小指甲傀儡", "hp": 8.0, "speed": 90.0, "damage": 5.0, "radius": 10.0, "xp": 1,
+		"color": Color(0.78, 0.72, 0.52), "mass": 0.8},
 }
 
 ## 精英怪的属性倍率
@@ -29,3 +51,4 @@ const ELITE_HP := 6.0
 const ELITE_SIZE := 1.4
 const ELITE_DAMAGE := 1.5
 const ELITE_XP := 15
+const DODGE_COOLDOWN := 2.0

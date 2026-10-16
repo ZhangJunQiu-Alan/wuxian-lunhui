@@ -336,6 +336,18 @@ func take_damage(amount: float) -> void:
 		died.emit()
 
 
+## 持续伤害（吸血、冥雾）：不触发受伤后的无敌和闪烁，闪避也躲不掉
+func take_dot(amount: float) -> void:
+	if is_dead or shield_time > 0.0:
+		return
+	hp = maxf(0.0, hp - amount)
+	hp_changed.emit(hp, max_hp)
+	if hp <= 0.0:
+		is_dead = true
+		Audio.sfx("player_death")
+		died.emit()
+
+
 ## 复活：恢复一半生命，短暂无敌，并震开身边的敌人
 func revive() -> void:
 	revives -= 1

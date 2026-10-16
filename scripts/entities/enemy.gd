@@ -36,11 +36,20 @@ var gait := "walk"
 var attack_kind := "claw"
 var actions := ACTIONS  # 要找的动作帧条，Boss 有更多动作
 var flee_to := Vector2.INF  # 设置后不再追玩家，而是走向这里（支线「冰海来客」的霜巨人）
+var ghost := false  # 穿过其他敌人、冥河和物件
+var dodge := 0.0
+var split_into := ""
+var split_count := 0
+var slow := 1.0  # 环境减速（冥雾），每帧由环境重新设置
+var _dodge_cd := 0.0
+var _draining := false  # 吸血光束正连着玩家
 
 # 远程敌人
 var shoot_range := 0.0
 var shoot_cooldown := 0.0
 var projectile_damage := 0.0
+var projectile := ""
+var projectile_speed := 0.0
 var _shoot_timer := 0.0
 
 var _flash_time := 0.0
@@ -93,6 +102,12 @@ func setup(id: String, hp_scale: float, elite: bool = false) -> void:
 	shoot_range = data.get("shoot_range", 0.0)
 	shoot_cooldown = data.get("shoot_cooldown", 0.0)
 	projectile_damage = data.get("projectile_damage", 0.0)
+	projectile = data.get("projectile", "")
+	projectile_speed = data.get("projectile_speed", 0.0)
+	ghost = data.get("ghost", false)
+	dodge = data.get("dodge", 0.0)
+	split_into = data.get("split", "")
+	split_count = data.get("split_count", 0)
 	gait = data.get("gait", "walk")
 	attack_kind = data.get("attack", "claw")
 	_shoot_timer = shoot_cooldown * randf()  # 错开射击时机，避免同时开火
@@ -155,11 +170,18 @@ func _physics_process(delta: float) -> void:
 	var dir := to_target / dist if dist > 0.01 else Vector2.ZERO
 
 	var move := dir
+	if not ghost and MapLayer.current:  # 隔着冥河时先走向过河点
+		var next := MapLayer.current.waypoint(global_position, target.global_position)
+		if next != target.global_position:
+			move = global_position.direction_to(next)
 	if flee_to.is_finite():
 		move = global_position.direction_to(flee_to)
 	elif behavior == "ranged":
 		move = _ranged_move(dir, dist, delta)
-	position += move * speed * delta + _knockback * delta + _separation()
+	elif behavior == "drain":
+		move = _drain_move(dir, dist, delta)
+	_dodge_cd -= delta
+	position += move * speed * slow * delta + _knockback * delta + (Vector2.ZERO if ghost else _separation())
 	_knockback *= exp(-KNOCKBACK_DECAY * delta)
 	_update_attack(dir, dist, delta)
 	if _sprite:
@@ -251,14 +273,35 @@ func _ranged_move(dir: Vector2, dist: float, delta: float) -> Vector2:
 		if _shoot_timer <= 0.0:
 			_shoot_timer = shoot_cooldown
 			_casting = false
-			EnemyProjectile.spawn(get_parent(), global_position, dir, projectile_damage)
-			Audio.sfx("ice_shot", -4.0)
+			var shot := EnemyProjectile.spawn(get_parent(), global_position, dir, projectile_damage)
+			if projectile != "":
+				shot.texture = load("res://assets/sprites/effects/%s.png" % projectile) if ResourceLoader.exists("res://assets/sprites/effects/%s.png" % projectile) else null
+				shot.tint = color.lightened(0.3)
+			if projectile_speed > 0.0:
+				shot.speed = projectile_speed
+			Audio.sfx("ice_shot" if projectile == "" else "arrow_shot", -4.0)
 			FxLayer.burst(global_position + dir * radius, color.lightened(0.4), 6, 120.0, 3.0)
 	if _casting or was_casting:
 		queue_redraw()
 	if dist > shoot_range * 0.9:
 		return dir
 	return Vector2.ZERO
+
+
+## 吸血：进入射程后停下，光束连着玩家持续掉血，自己回血
+func _drain_move(dir: Vector2, dist: float, delta: float) -> Vector2:
+	var was := _draining
+	_draining = dist <= shoot_range
+	if _draining:
+		target.take_dot(projectile_damage * delta)
+		hp = minf(max_hp, hp + projectile_damage * delta)
+	if _draining != was:
+		queue_redraw()
+		if _draining:
+			_play_attack_frames()
+	if _draining:
+		queue_redraw()
+	return Vector2.ZERO if dist <= shoot_range * 0.8 else dir
 
 
 ## 推挤：和周围重叠的敌人互相推开，越重的越不容易被推动
@@ -289,6 +332,12 @@ func freeze(duration: float) -> void:
 func take_damage(amount: float, knockback: Vector2 = Vector2.ZERO, crit: bool = false) -> void:
 	if _dead:
 		return
+	if dodge > 0.0 and amount > 0.0 and _dodge_cd <= 0.0 and randf() < dodge:  # 黑暗精灵：侧身闪开
+		_dodge_cd = EnemyDB.DODGE_COOLDOWN
+		var side := Vector2.from_angle(randf() * TAU) if not is_instance_valid(target) else (target.global_position - global_position).orthogonal().normalized()
+		position += side * (40.0 if randf() < 0.5 else -40.0)
+		FxLayer.floating_text(global_position + Vector2(0, -radius - 4), "闪避", color.lightened(0.4))
+		return
 	hp -= amount
 	_knockback += knockback / mass  # 越重越难击退
 	_flash_time = 0.08
@@ -313,6 +362,11 @@ func _die() -> void:
 	Audio.sfx("big_death" if is_elite or radius >= 20.0 else "enemy_death", -2.0)
 	if is_elite:
 		target.shake(6.0, 0.2)
+	if split_into != "":  # 指甲傀儡：碎成几只小傀儡
+		var game := get_tree().current_scene
+		for i in split_count * (2 if is_elite else 1):
+			var pos := position + Vector2.from_angle(TAU * i / split_count) * radius
+			game.spawn_enemy.call_deferred(split_into, pos)
 	killed.emit(self)
 	queue_free()
 
@@ -330,6 +384,14 @@ func _draw() -> void:
 		draw_circle(orb, 3.0 + 7.0 * k, Color(color.lightened(0.3), 0.25 + 0.3 * k))
 		draw_circle(orb, 1.5 + 3.0 * k, Color(1, 1, 1, 0.6 + 0.4 * k))
 		tint = tint.lerp(Color(1.5, 1.7, 2.0), 0.5 * k)  # 身体也跟着变亮
+	if _draining and is_instance_valid(target):  # 吸血光束：从玩家身上抽出一道波动的光
+		var to := target.global_position - global_position
+		var points := PackedVector2Array()
+		for i in 9:
+			var k := i / 8.0
+			points.append(to * k + to.orthogonal().normalized() * sin(k * PI * 3.0 + _anim_t * 12.0) * 4.0 * sin(k * PI))
+		draw_polyline(points, Color(color.lightened(0.3), 0.6), 3.0)
+		draw_polyline(points, Color(0.7, 1.0, 0.85, 0.8), 1.0)
 	if _sprite:
 		SpriteVisual.draw_shadow(self, radius, Color(1.0, 0.8, 0.3, 0.7) if is_elite else Color(0, 0, 0, 0.35))  # 精英怪是金色影子
 		_sprite.modulate = tint
@@ -346,5 +408,5 @@ func _draw() -> void:
 		draw_circle(Vector2.ZERO, radius * pop + 4.0, Color(1.0, 0.8, 0.3, 0.9))  # 精英怪带金边
 
 	draw_circle(Vector2.ZERO, radius * pop, color * tint if _flash_time <= 0.0 else Color.WHITE)
-	if behavior == "ranged":
+	if behavior == "ranged" or behavior == "drain":
 		draw_circle(Vector2.ZERO, radius * 0.45, Color(1, 1, 1, 0.8))  # 远程敌人中间有个亮核

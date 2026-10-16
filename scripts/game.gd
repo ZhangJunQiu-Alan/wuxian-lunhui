@@ -63,6 +63,11 @@ func _ready() -> void:
 	player.died.connect(_on_player_died)
 	player.leveled_up.connect(_on_player_leveled_up)
 	MetaDB.apply(player)  # 主神空间购买的永久强化
+	if level_data.map.has("mist"):  # 第 2 关的冥雾
+		var mist := Mist.new()
+		mist.player = player
+		mist.setup(level_data.map.mist)
+		add_child(mist)
 
 	hud = Hud.new()
 	hud.character_id = player.character_id
@@ -111,8 +116,11 @@ func _process(delta: float) -> void:
 		if get_tree().get_node_count_in_group("enemies") < level_data.max_enemies:
 			var type_id := _pick_weighted(wave.weights)
 			if _alive_by_type.get(type_id, 0) >= EnemyDB.ALL[type_id].get("max_alive", INF):
-				type_id = "draugr"
-			spawn_enemy(type_id, _random_spawn_position())
+				type_id = level_data.get("base_enemy", "draugr")
+			var pos := _random_spawn_position()
+			var pack: int = EnemyDB.ALL[type_id].get("pack", 1)  # 成群出现的敌人一次刷一堆
+			for i in pack:
+				spawn_enemy(type_id, pos + Vector2.from_angle(TAU * i / pack) * (18.0 * sqrt(pack) if pack > 1 else 0.0))
 	_update_elites(wave)
 	_update_events()
 	_update_bosses()
@@ -124,7 +132,9 @@ func _process(delta: float) -> void:
 func _physics_process(_delta: float) -> void:
 	for node in get_tree().get_nodes_in_group("enemies"):  # 冲锋、击退都不能把敌人推出地图，也不能穿过长屋、岩石
 		var enemy := node as Enemy
-		enemy.position = MapLayer.push_out(clamp_to_map(enemy.position, enemy.radius), enemy.radius)
+		enemy.position = clamp_to_map(enemy.position, enemy.radius)
+		if not enemy.ghost:
+			enemy.position = MapLayer.push_out(enemy.position, enemy.radius)
 	Enemy.rebuild_grid(get_tree())
 
 
