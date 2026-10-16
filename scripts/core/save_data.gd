@@ -6,8 +6,6 @@ extends Node
 
 const DEFAULT_PATH := "user://save.json"
 const VERSION := 2
-## 第 1 版存档里的角色 id 是原型人物的名字，第 2 版改成职业名
-const RENAMED_CHARACTERS := {"musashi": "swordsman", "annie": "gunslinger", "lanling": "assassin", "merlin": "mage"}
 
 var path := DEFAULT_PATH
 var reward_points := 0
@@ -44,8 +42,7 @@ func load_game() -> void:
 	for id: String in data.get("meta", {}):
 		meta[id] = int(data.meta[id])
 	selected_character = data.get("selected_character", "swordsman")
-	selected_character = RENAMED_CHARACTERS.get(selected_character, selected_character)
-	unlocked_characters.assign(data.get("unlocked_characters", []).map(func(id: String) -> String: return RENAMED_CHARACTERS.get(id, id)))
+	unlocked_characters.assign(data.get("unlocked_characters", []))
 	var saved_stats: Dictionary = data.get("stats", {})
 	for key: String in stats:
 		if saved_stats.has(key):
