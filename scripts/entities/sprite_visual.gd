@@ -9,10 +9,12 @@ class_name SpriteVisual
 ## 玩家角色另有多动作约定：<id>_idle / _move / _hurt / _death.png，见 create_actions()
 ##
 ## 像素画只按整数倍缩放（1 倍、2 倍……），缩成 0.7 倍这种会丢像素、变糊
-## 静态图片没有帧动画时，用 animate() 做程序动画：走路上下颠、左右轻摆、轻微挤压
+## 静态图片没有帧动画时，用 animate() 做程序动画：按步态（双足、四足、巨人、飘浮）颠步、摇摆、前倾
+## 图片的轴心在脚底（不是图片中心），所以前倾、摇摆时脚站得稳，不会滑来滑去
 
 const EXTENSIONS := [".tres", "_move.png", ".png", ".webp"]
 const STRIP_FPS := 8.0  # 帧条的播放速度（帧/秒）
+const ACTION_FPS := {"attack": 16.0}  # 个别动作播放得更快（出刀要利落）
 
 
 ## 依次尝试多个路径，返回第一个找到的素材节点
@@ -57,9 +59,17 @@ static func create(base_path: String, height: float) -> Node2D:
 		else:
 			continue
 		node.scale = Vector2.ONE * maxf(1.0, roundf(height / tex_height))
-		node.set_meta("base_scale", node.scale)
+		_pivot_at_feet(node, tex_height)
 		return node
 	return null
+
+
+## 把轴心移到脚底：图片往上挪半个高度，节点再往下挪回来，画面位置不变
+static func _pivot_at_feet(node: Node2D, tex_height: float) -> void:
+	node.set("offset", Vector2(0, -tex_height * 0.5))
+	node.position = Vector2(0, tex_height * 0.5 * node.scale.y)
+	node.set_meta("base_scale", node.scale)
+	node.set_meta("base_pos", node.position)
 
 
 ## 角色动作：<base>_<动作>.png 每个都是一条横向帧条，合成一个带多个动画的 AnimatedSprite2D
@@ -82,7 +92,7 @@ static func create_actions(base_path: String, height: float, actions: Dictionary
 	anim.sprite_frames = frames
 	anim.play(&"idle" if frames.has_animation(&"idle") else &"move")
 	anim.scale = Vector2.ONE * maxf(1.0, roundf(height / tex_height))
-	anim.set_meta("base_scale", anim.scale)
+	_pivot_at_feet(anim, tex_height)
 	return anim
 
 
@@ -91,7 +101,7 @@ static func _add_strip(frames: SpriteFrames, anim_name: StringName, strip: Textu
 	var size := strip.get_height()
 	if not frames.has_animation(anim_name):
 		frames.add_animation(anim_name)
-	frames.set_animation_speed(anim_name, STRIP_FPS)
+	frames.set_animation_speed(anim_name, ACTION_FPS.get(String(anim_name), STRIP_FPS))
 	frames.set_animation_loop(anim_name, loop)
 	for i in strip.get_width() / size:
 		var frame := AtlasTexture.new()
@@ -101,12 +111,44 @@ static func _add_strip(frames: SpriteFrames, anim_name: StringName, strip: Textu
 
 
 ## 程序动画。t 是累计时间，amount 是动作幅度（0 = 静止，1 = 全速移动）
-static func animate(sprite: Node2D, t: float, amount: float) -> void:
+## gait 步态：walk 双足、quad 四足奔跑、heavy 巨人重步、float 飘浮
+## lean_x 是水平移动方向（-1 ~ 1），身体朝前进方向前倾；offset 是额外位移（攻击前扑）
+static func animate(sprite: Node2D, t: float, amount: float, gait: String = "walk", lean_x: float = 0.0, offset: Vector2 = Vector2.ZERO) -> void:
 	var base: Vector2 = sprite.get_meta("base_scale", Vector2.ONE)
-	var phase := t * 9.0
-	sprite.position = Vector2(0, -absf(sin(phase)) * 3.0 * amount)  # 走路上下颠
-	sprite.rotation = sin(phase) * 0.05 * amount                   # 左右轻摆
-	var squash := 0.03 * sin(phase * 2.0) * amount                 # 落地时轻微挤压
+	var pos: Vector2 = sprite.get_meta("base_pos", Vector2.ZERO) + offset
+	var has_frames := sprite is AnimatedSprite2D  # 有逐帧动画时，只保留前倾和轻微颠步
+	var lean := lean_x * 0.1 * amount
+	var bob := 0.0
+	var sway := 0.0     # 以脚为轴的左右摇摆（换脚）
+	var squash := 0.0   # 正数 = 压扁，负数 = 拉长
+	match gait:
+		"float":  # 慢慢上下浮动，没有步子
+			bob = -4.0 - sin(t * 3.0) * 3.0
+			sway = sin(t * 1.7) * 0.05
+			lean *= 0.5
+		"quad":  # 四足奔跑：步频快，身体一伸一缩，头一点一点
+			var phase := t * 14.0
+			bob = -absf(sin(phase)) * 4.0 * amount
+			sway = sin(phase) * 0.07 * amount
+			squash = -0.07 * sin(phase * 2.0) * amount
+		"heavy":  # 巨人：步子慢而沉，每一步落地都明显压扁
+			var phase := t * 5.0
+			bob = -absf(sin(phase)) * 2.5 * amount
+			sway = sin(phase) * 0.06 * amount
+			squash = 0.1 * pow(1.0 - absf(sin(phase)), 4.0) * amount
+			lean *= 0.6
+		_:  # 双足走路：一颠一颠，左右换脚
+			var phase := t * 9.0
+			bob = -absf(sin(phase)) * 3.5 * amount
+			sway = sin(phase) * 0.1 * amount
+			squash = 0.06 * pow(1.0 - absf(sin(phase)), 4.0) * amount - 0.03 * amount
+	if has_frames:
+		sway = 0.0
+		squash = 0.0
+		bob *= 0.4
+	sprite.position = pos + Vector2(0, bob)
+	sprite.rotation = lean
+	sprite.skew = sway
 	sprite.scale = Vector2(base.x * (1.0 + squash), base.y * (1.0 - squash))
 
 

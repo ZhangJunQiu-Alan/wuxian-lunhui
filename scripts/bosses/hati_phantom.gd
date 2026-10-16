@@ -13,6 +13,7 @@ var _last_state := ""
 
 func _ready() -> void:
 	type_id = "hati_phantom"
+	gait = "quad"
 	mass = 50.0
 	super._ready()
 	if _sprite == null:  # 有哈提的素材就用同一张图，看起来一模一样
@@ -41,7 +42,7 @@ func _physics_process(delta: float) -> void:
 	if _sprite:
 		_sprite.set("flip_h", target.global_position.x < global_position.x)
 		_anim_t += delta
-		SpriteVisual.animate(_sprite, _anim_t * 0.6, 0.5)
+		SpriteVisual.animate(_sprite, _anim_t * 0.6, 0.5, gait, signf(target.global_position.x - global_position.x) * 0.5)
 		if hati.state.ends_with("windup"):
 			SpriteVisual.windup_tremble(_sprite, hati.state_time)
 	match hati.state:

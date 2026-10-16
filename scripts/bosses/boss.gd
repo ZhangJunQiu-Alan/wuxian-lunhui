@@ -64,7 +64,7 @@ func _physics_process(delta: float) -> void:
 	if _sprite:
 		_sprite.set("flip_h", target.global_position.x < global_position.x)  # 面向玩家
 		_anim_t += delta
-		SpriteVisual.animate(_sprite, _anim_t * 0.6, 0.5)  # Boss 动作慢而沉
+		SpriteVisual.animate(_sprite, _anim_t * 0.6, 0.5, gait, signf(target.global_position.x - global_position.x) * 0.5)  # Boss 动作慢而沉
 		if state.ends_with("windup"):  # 所有蓄力状态都以 windup 结尾
 			SpriteVisual.windup_tremble(_sprite, state_time)
 	if global_position.distance_to(target.global_position) < radius + Player.RADIUS:

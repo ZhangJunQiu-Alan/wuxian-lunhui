@@ -45,6 +45,7 @@ func _process(delta: float) -> void:
 
 	var last_shot := _ammo == 1 and not frenzy
 	var dir := global_position.direction_to(target.global_position)
+	player.play_attack(dir, 2.0)
 	var spread := [-0.08, 0.08] if twin else [0.0]
 	for angle in spread:
 		var p := Projectile.new()

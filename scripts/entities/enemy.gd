@@ -7,6 +7,12 @@ signal killed(enemy: Enemy)
 const GRID_CELL := 48.0  # 推挤用的网格大小，要不小于两个普通敌人的半径之和
 const KNOCKBACK_DECAY := 10.0  # 击退速度衰减，越大停得越快
 const SPRITE_DIR := "res://assets/sprites/enemies/"
+const ACTIONS := {"move": true, "attack": false}  # 动作素材 <id>_move.png / <id>_attack.png：是否循环
+const ATTACK_TIME := 0.34      # 一次攻击动作：后撤蓄力 → 前扑 → 收回
+const ATTACK_STRIKE := 0.45    # 动作进行到这个比例时出手（播放爪痕等特效）
+const ATTACK_COOLDOWN := 1.0
+const ATTACK_REACH := 14.0     # 离玩家比接触距离再远这么多就开始出招
+const CAST_TIME := 0.45        # 远程敌人开火前的聚能时间
 
 ## 网格坐标 -> 该格里的敌人。每个物理帧由 game.gd 重建一次，
 ## 这样每个敌人只需要检查周围 9 个格子，而不是所有敌人
@@ -26,6 +32,8 @@ var xp_value := 1
 var color := Color.WHITE
 var is_elite := false
 var target: Player
+var gait := "walk"
+var attack_kind := "claw"
 
 # 远程敌人
 var shoot_range := 0.0
@@ -37,6 +45,11 @@ var _flash_time := 0.0
 var _frozen_time := 0.0  # 被定住的剩余时间（次元斩、时间暂停）
 var _knockback := Vector2.ZERO
 var _sprite: Node2D  # 有素材时的图片节点，没有素材时为 null，用占位图形
+var _actions: AnimatedSprite2D  # 有 move/attack 帧条时就是 _sprite
+var _attack_t := 0.0  # 攻击动作剩余时间
+var _attack_cd := randf() * ATTACK_COOLDOWN
+var _attack_dir := Vector2.RIGHT
+var _casting := false  # 远程敌人正在聚能
 var _anim_t := randf() * 10.0  # 程序动画的时间，随机起点让怪物步伐错开
 var _dead := false
 
@@ -78,6 +91,8 @@ func setup(id: String, hp_scale: float, elite: bool = false) -> void:
 	shoot_range = data.get("shoot_range", 0.0)
 	shoot_cooldown = data.get("shoot_cooldown", 0.0)
 	projectile_damage = data.get("projectile_damage", 0.0)
+	gait = data.get("gait", "walk")
+	attack_kind = data.get("attack", "claw")
 	_shoot_timer = shoot_cooldown * randf()  # 错开射击时机，避免同时开火
 
 	if elite:
@@ -104,12 +119,21 @@ func _ready() -> void:
 	shape.shape = circle
 	add_child(shape)
 
-	# 素材放在 assets/sprites/enemies/<敌人 id>.png（或 .tres 动画）就会自动使用
+	# 素材放在 assets/sprites/enemies/<敌人 id>.png（或 _move.png / _attack.png 帧条）就会自动使用
 	# 精英怪优先使用 <id>_elite 素材，没有就用普通素材
 	var paths: Array[String] = [sprite_dir + type_id]
 	if is_elite:
 		paths.push_front(sprite_dir + type_id + "_elite")
-	_sprite = SpriteVisual.create_first(paths, radius * 2.6)
+	# 每个路径先找动作帧条，再找静态图；精英有自己的静态图时不会借用普通怪的动作
+	for path in paths:
+		_actions = SpriteVisual.create_actions(path, radius * 2.6, ACTIONS)
+		_sprite = _actions if _actions else SpriteVisual.create(path, radius * 2.6)
+		if _sprite:
+			break
+	if _actions:
+		_actions.animation_finished.connect(func() -> void:
+			if _actions.animation == &"attack":
+				_actions.play(&"move" if _actions.sprite_frames.has_animation(&"move") else &"idle"))
 	if _sprite:
 		add_child(_sprite)
 
@@ -135,23 +159,94 @@ func _physics_process(delta: float) -> void:
 		move = _ranged_move(dir, dist, delta)
 	position += move * speed * delta + _knockback * delta + _separation()
 	_knockback *= exp(-KNOCKBACK_DECAY * delta)
+	_update_attack(dir, dist, delta)
 	if _sprite:
-		if dir.x != 0.0:
-			_sprite.set("flip_h", dir.x < 0.0)  # 素材默认朝右，往左走时翻转
+		var look := _attack_dir if _attack_t > 0.0 else dir
+		if look.x != 0.0:
+			_sprite.set("flip_h", look.x < 0.0)  # 素材默认朝右，往左走时翻转
 		_anim_t += delta
-		SpriteVisual.animate(_sprite, _anim_t, maxf(0.25, move.length()))  # 站着不动时也轻微呼吸
+		var lift := Vector2(0, -5.0) if _casting else Vector2.ZERO  # 聚能时浮起
+		SpriteVisual.animate(_sprite, _anim_t, maxf(0.25, move.length()), gait, move.x, _attack_offset() + lift)  # 站着不动时也轻微呼吸
 
 	if dist < radius + Player.RADIUS:
 		target.take_damage(contact_damage)
 
 
+## 近身攻击动作（纯表现，伤害仍按接触计算）：靠近玩家时后撤蓄力、前扑，出手瞬间播放特效
+## 有 <id>_attack.png 帧条就同时播放它
+func _update_attack(dir: Vector2, dist: float, delta: float) -> void:
+	_attack_cd -= delta
+	if _attack_t > 0.0:
+		var before := _attack_t
+		_attack_t -= delta
+		var strike_at := ATTACK_TIME * (1.0 - ATTACK_STRIKE)
+		if before > strike_at and _attack_t <= strike_at:
+			_strike()
+	elif _attack_cd <= 0.0 and dist < radius + Player.RADIUS + ATTACK_REACH:
+		_attack_t = ATTACK_TIME
+		_attack_cd = ATTACK_COOLDOWN * randf_range(0.85, 1.15)
+		_attack_dir = dir
+		_play_attack_frames()
+
+
+## 有 <id>_attack.png 就播放一遍，播完自动回到行走
+func _play_attack_frames() -> void:
+	if _actions and _actions.sprite_frames.has_animation(&"attack"):
+		_actions.play(&"attack")
+
+
+## 攻击动作的位移：先往后缩，再猛地扑出去，然后收回。巨人是慢慢举高再砸回地面
+func _attack_offset() -> Vector2:
+	if _attack_t <= 0.0:
+		return Vector2.ZERO
+	var k := 1.0 - _attack_t / ATTACK_TIME  # 0 → 1
+	var dist := radius * 0.5 + 5.0  # 体型越大扑得越远
+	if attack_kind == "slam":
+		return Vector2(0, -dist * k / ATTACK_STRIKE) if k < ATTACK_STRIKE else Vector2.ZERO
+	var reach: float
+	if k < ATTACK_STRIKE:
+		reach = -0.5 * k / ATTACK_STRIKE  # 后撤蓄力
+	elif k < ATTACK_STRIKE + 0.15:
+		reach = lerpf(-0.5, 1.0, (k - ATTACK_STRIKE) / 0.15)  # 前扑
+	else:
+		reach = 1.0 - (k - ATTACK_STRIKE - 0.15) / (0.85 - ATTACK_STRIKE)  # 收回
+	return _attack_dir * dist * reach
+
+
+## 出手瞬间的特效
+func _strike() -> void:
+	var at := global_position + _attack_dir * (radius + 4.0)
+	var size := radius * 2.0 + 10.0
+	match attack_kind:
+		"bite":
+			FxLayer.mark(at, _attack_dir.angle(), size * 0.7, Color(1.0, 0.9, 0.85), "bite")
+		"slam":
+			var ground := global_position + Vector2(0, radius * 0.6)
+			FxLayer.ring(ground, radius * 2.6, Color(0.7, 0.85, 1.0))
+			FxLayer.burst(ground, Color(0.75, 0.85, 1.0), 12, 200.0, 4.0)
+			if is_instance_valid(target) and target.global_position.distance_to(global_position) < radius * 3.0:
+				target.shake(3.0 if not is_elite else 5.0, 0.12)
+		_:
+			FxLayer.mark(at, _attack_dir.angle() + 0.9, size, Color(1.0, 0.35, 0.3), "claw")
+
+
 ## 远程敌人：太远就靠近，进入射程后停下定时射击（不会后退，近战角色可以追上去砍）
+## 开火前 CAST_TIME 秒聚能：身前亮起越来越大的冰光
 func _ranged_move(dir: Vector2, dist: float, delta: float) -> Vector2:
+	var was_casting := _casting
+	_casting = false
 	if dist <= shoot_range:
 		_shoot_timer -= delta
+		_casting = _shoot_timer < CAST_TIME
+		if _casting and not was_casting:
+			_play_attack_frames()  # 远程敌人的出招动作就是施法
 		if _shoot_timer <= 0.0:
 			_shoot_timer = shoot_cooldown
+			_casting = false
 			EnemyProjectile.spawn(get_parent(), global_position, dir, projectile_damage)
+			FxLayer.burst(global_position + dir * radius, color.lightened(0.4), 6, 120.0, 3.0)
+	if _casting or was_casting:
+		queue_redraw()
 	if dist > shoot_range * 0.9:
 		return dir
 	return Vector2.ZERO
@@ -218,6 +313,12 @@ func _draw() -> void:
 	elif _frozen_time > 0.0:
 		tint = Color(0.6, 0.75, 1.3)  # 被定住时偏蓝
 	var pop := 1.0 + 0.15 * _flash_time / 0.08  # 受击时略微放大
+	if _casting and is_instance_valid(target):
+		var k := 1.0 - maxf(0.0, _shoot_timer) / CAST_TIME  # 聚能进度 0 → 1
+		var orb := global_position.direction_to(target.global_position) * (radius + 2.0) + Vector2(0, -5.0)
+		draw_circle(orb, 3.0 + 7.0 * k, Color(color.lightened(0.3), 0.25 + 0.3 * k))
+		draw_circle(orb, 1.5 + 3.0 * k, Color(1, 1, 1, 0.6 + 0.4 * k))
+		tint = tint.lerp(Color(1.5, 1.7, 2.0), 0.5 * k)  # 身体也跟着变亮
 	if _sprite:
 		SpriteVisual.draw_shadow(self, radius, Color(1.0, 0.8, 0.3, 0.7) if is_elite else Color(0, 0, 0, 0.35))  # 精英怪是金色影子
 		_sprite.modulate = tint
