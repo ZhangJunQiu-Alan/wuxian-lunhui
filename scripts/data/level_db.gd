@@ -7,9 +7,25 @@ class_name LevelDB
 ##   events  定时事件：ring = 在玩家周围刷出一圈敌人
 ##   bosses  Boss 出场时间和 id（id 对应 BossDB）；击败 final_boss 即通关，显示 clear_text
 ##   quest_slots 支线出现的时间点（有 Boss 在场时会等 Boss 被击败），quests 是支线池（id 对应 QuestDB），随机顺序
+##   map     固定地图：size 是场地大小（中心在原点，玩家从中心出发），玩家和敌人都不能离开
+##           border 是四周屏障带的宽度（冰崖、冰海、松林），镜头看得到但走不进去
+##           landmarks 地标：pos 中心、radius 范围；写了 quest 的地标，该支线就出现在这里
 
 const NORSE_1 := {
 	"name": "芬布尔之冬",
+	# 布局草图见 docs/地图设计_第1关.md。北：峡湾冰崖，东：冰封的海，西：枯松林，南：山脚岩壁
+	"map": {
+		"size": Vector2(4608, 4608),
+		"border": 192.0,
+		"landmarks": [
+			{"id": "crossroads", "name": "十字路口", "pos": Vector2(0, 0), "radius": 320.0},
+			{"id": "village", "name": "被雪掩埋的村庄", "pos": Vector2(-1350, -1250), "radius": 650.0, "quest": "bonfire"},
+			{"id": "harbor", "name": "峡湾码头", "pos": Vector2(1450, -1400), "radius": 550.0},
+			{"id": "stones", "name": "奥丁的符文石阵", "pos": Vector2(-1500, 950), "radius": 420.0, "quest": "ravens"},
+			{"id": "mounds", "name": "古老的墓丘", "pos": Vector2(-100, 1450), "radius": 700.0, "quest": "valkyrie"},
+			{"id": "lake", "name": "冰湖", "pos": Vector2(1350, 1100), "radius": 650.0},
+		],
+	},
 	"hp_growth": 180.0,   # 每过这么多秒，敌人血量多 100%
 	"max_enemies": 350,   # 同时存在的敌人上限，防止卡顿
 	"waves": [

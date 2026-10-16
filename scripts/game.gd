@@ -1,6 +1,7 @@
 class_name Game
 extends Node2D
 ## 一局战斗的总控：创建玩家、按时间刷怪、更新 HUD、处理死亡
+## 地图是固定大小的方形场地（LevelDB 的 map），玩家和敌人都被限制在 bounds 里
 
 const SPAWN_DISTANCE := 750.0  # 刷怪距离：略大于半个屏幕对角线，让怪物在屏幕外出现
 const GRID_SIZE := 64.0
@@ -8,6 +9,16 @@ const GRID_COLOR := Color(1, 1, 1, 0.05)
 
 const POINTS_PER_MINUTE := 10  # 每存活 1 分钟获得的奖励点
 const RING_RADIUS := 450.0     # 包围事件里那一圈敌人离玩家的距离
+const EDGE_COLOR := Color(0.03, 0.04, 0.06)  # 屏障带（占位：以后换成冰崖、冰海、松林）
+# 地标的占位颜色，等地图素材做好后删除
+const LANDMARK_TINT := {
+	"crossroads": Color(0.45, 0.4, 0.35, 0.10), "village": Color(0.55, 0.4, 0.3, 0.14),
+	"harbor": Color(0.4, 0.5, 0.65, 0.14), "stones": Color(0.6, 0.5, 0.9, 0.12),
+	"mounds": Color(0.35, 0.5, 0.4, 0.14), "lake": Color(0.6, 0.8, 1.0, 0.12),
+}
+
+static var bounds := Rect2()       # 可以活动的范围
+static var view_bounds := Rect2()  # 镜头能看到的范围（活动范围再加四周的屏障带）
 
 var player: Player
 var hud: Hud
@@ -36,6 +47,8 @@ var _run_recorded := false
 
 
 func _ready() -> void:
+	view_bounds = Rect2(-level_data.map["size"] / 2.0, level_data.map["size"])
+	bounds = view_bounds.grow(-level_data.map.border)
 	add_child(FxLayer.new())  # 伤害数字和碎片特效
 
 	player = Player.new()
@@ -92,7 +105,27 @@ func _process(delta: float) -> void:
 
 
 func _physics_process(_delta: float) -> void:
+	for node in get_tree().get_nodes_in_group("enemies"):  # 冲锋、击退都不能把敌人推出地图
+		var enemy := node as Enemy
+		enemy.position = clamp_to_map(enemy.position, enemy.radius)
 	Enemy.rebuild_grid(get_tree())
+
+
+## 把位置限制在地图里，margin 是离边缘至少多远
+static func clamp_to_map(pos: Vector2, margin: float = 0.0) -> Vector2:
+	if not bounds.has_area():
+		return pos
+	return pos.clamp(bounds.position + Vector2.ONE * margin, bounds.end - Vector2.ONE * margin)
+
+
+## 在 center 周围 distance 远的地方找一个地图内的点（随机方向，靠墙时换方向再试）
+func _point_around(center: Vector2, distance: float) -> Vector2:
+	var inner := bounds.grow(-40.0)
+	for i in 12:
+		var p := center + Vector2.from_angle(randf() * TAU) * distance
+		if inner.has_point(p):
+			return p
+	return clamp_to_map(center + Vector2.from_angle(randf() * TAU) * distance, 40.0)
 
 
 ## 当前时间对应的刷怪阶段
@@ -118,7 +151,7 @@ func _pick_weighted(weights: Dictionary) -> String:
 
 
 func _random_spawn_position() -> Vector2:
-	return player.position + Vector2.from_angle(randf() * TAU) * SPAWN_DISTANCE
+	return _point_around(player.position, SPAWN_DISTANCE)
 
 
 func _update_elites(wave: Dictionary) -> void:
@@ -139,7 +172,7 @@ func _update_events() -> void:
 		if event.type == "ring":
 			for i in event.count:
 				var angle: float = TAU * i / event.count
-				spawn_enemy(event.enemy, player.position + Vector2.from_angle(angle) * RING_RADIUS)
+				spawn_enemy(event.enemy, clamp_to_map(player.position + Vector2.from_angle(angle) * RING_RADIUS, 40.0))
 		hud.announce(event.text)
 
 
@@ -174,7 +207,7 @@ func _update_bosses() -> void:
 	boss.target = player
 	boss.spawner = spawn_enemy
 	boss.defeated_bosses = _defeated_bosses
-	boss.position = player.position + Vector2.from_angle(randf() * TAU) * 520.0
+	boss.position = _point_around(player.position, 520.0)
 	boss.killed.connect(_on_enemy_killed)
 	boss.hp_changed.connect(hud.set_boss_hp)
 	boss.defeated.connect(_on_boss_defeated)
@@ -192,9 +225,13 @@ func _update_quests() -> void:
 	if _next_quest_slot >= slots.size() or elapsed < slots[_next_quest_slot] or is_instance_valid(boss) or _quest_queue.is_empty():
 		return
 	_next_quest_slot += 1
-	quest = QuestDB.create(_quest_queue.pop_front())
+	var quest_id: String = _quest_queue.pop_front()
+	quest = QuestDB.create(quest_id)
 	if quest == null:
 		return
+	for landmark: Dictionary in level_data.map.landmarks:  # 支线出现在对应的地标上
+		if landmark.get("quest", "") == quest_id:
+			quest.landmark = landmark
 	_quests_seen += 1
 	quest.game = self
 	quest.player = player
@@ -313,15 +350,28 @@ func _on_player_died() -> void:
 
 
 func _draw() -> void:
-	# 画一个跟随玩家的网格地面，这样移动时能看出位移
 	if player == null:
 		return
-	var c := player.position
-	var x := floorf((c.x - 700.0) / GRID_SIZE) * GRID_SIZE
-	while x < c.x + 700.0:
-		draw_line(Vector2(x, c.y - 420.0), Vector2(x, c.y + 420.0), GRID_COLOR)
+	var view := get_canvas_transform().affine_inverse() * get_viewport_rect()  # 镜头看到的范围
+	# 地标的占位底色
+	for landmark: Dictionary in level_data.map.landmarks:
+		if view.grow(landmark.radius).has_point(landmark.pos):
+			draw_circle(landmark.pos, landmark.radius, LANDMARK_TINT.get(landmark.id, Color(1, 1, 1, 0.05)))
+	# 地图内画网格，这样移动时能看出位移
+	var area := view.intersection(bounds)
+	var x := ceilf(area.position.x / GRID_SIZE) * GRID_SIZE
+	while x < area.end.x:
+		draw_line(Vector2(x, area.position.y), Vector2(x, area.end.y), GRID_COLOR)
 		x += GRID_SIZE
-	var y := floorf((c.y - 420.0) / GRID_SIZE) * GRID_SIZE
-	while y < c.y + 420.0:
-		draw_line(Vector2(c.x - 700.0, y), Vector2(c.x + 700.0, y), GRID_COLOR)
+	var y := ceilf(area.position.y / GRID_SIZE) * GRID_SIZE
+	while y < area.end.y:
+		draw_line(Vector2(area.position.x, y), Vector2(area.end.x, y), GRID_COLOR)
 		y += GRID_SIZE
+	# 屏障带涂暗（占位：以后换成冰崖、冰海、松林），边缘画一圈边线
+	for outside: Rect2 in [Rect2(view.position.x, view.position.y, view.size.x, bounds.position.y - view.position.y),
+			Rect2(view.position.x, bounds.end.y, view.size.x, view.end.y - bounds.end.y),
+			Rect2(view.position.x, view.position.y, bounds.position.x - view.position.x, view.size.y),
+			Rect2(bounds.end.x, view.position.y, view.end.x - bounds.end.x, view.size.y)]:
+		if outside.size.x > 0.0 and outside.size.y > 0.0:
+			draw_rect(outside, EDGE_COLOR)
+	draw_rect(bounds, Color(0.75, 0.85, 1.0, 0.35), false, 3.0)

@@ -22,6 +22,7 @@ func _on_accept() -> void:
 	var base := randf() * TAU
 	for i in 2:
 		var pos := marker_pos + Vector2.from_angle(base + PI * i + randf_range(-0.6, 0.6)) * randf_range(600.0, 850.0)
+		pos = Game.clamp_to_map(pos, 120.0)
 		_ravens.append({"name": ["福金（思想）", "雾尼（记忆）"][i], "pos": pos, "found": false, "calm": 0.0})
 		for g in GUARDS:
 			game.spawn_enemy("wolf", pos + Vector2.from_angle(TAU * g / GUARDS) * 90.0)

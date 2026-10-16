@@ -25,6 +25,7 @@ var color := Color(1.0, 0.85, 0.4)
 var game: Game
 var player: Player
 var marker_pos := Vector2.ZERO
+var landmark := {}  # 支线所在的地标（LevelDB 的 map.landmarks），为空时出现在玩家附近
 var state := "offered"
 var time_left := 0.0
 var was_accepted := false
@@ -34,7 +35,12 @@ var _time := 0.0
 
 func _ready() -> void:
 	z_index = -1  # 画在敌人和玩家下面
-	marker_pos = player.global_position + Vector2.from_angle(randf() * TAU) * MARKER_DISTANCE
+	if landmark.is_empty():
+		marker_pos = player.global_position + Vector2.from_angle(randf() * TAU) * MARKER_DISTANCE
+	else:
+		marker_pos = landmark.pos + Vector2.from_angle(randf() * TAU) * randf() * landmark.radius * 0.4
+		_offer_left += player.global_position.distance_to(marker_pos) / player.move_speed  # 地标越远，留给玩家赶路的时间越多
+	marker_pos = Game.clamp_to_map(marker_pos, 80.0)
 	objective = "前往标记处接受支线"
 
 

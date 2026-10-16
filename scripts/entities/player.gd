@@ -87,6 +87,11 @@ func _ready() -> void:
 
 	_camera = Camera2D.new()
 	_camera.position_smoothing_enabled = true
+	if Game.view_bounds.has_area():  # 镜头走到地图边缘就停住，不拍地图外面
+		_camera.limit_left = int(Game.view_bounds.position.x)
+		_camera.limit_top = int(Game.view_bounds.position.y)
+		_camera.limit_right = int(Game.view_bounds.end.x)
+		_camera.limit_bottom = int(Game.view_bounds.end.y)
 	add_child(_camera)
 
 	data = CharacterDB.ALL[character_id]
@@ -133,6 +138,7 @@ func _physics_process(delta: float) -> void:
 		facing = dir.normalized()
 	velocity = dir * move_speed * (1.3 if frenzy_time > 0.0 else 1.0)  # 狂野西部秀：移速 +30%
 	move_and_slide()
+	position = Game.clamp_to_map(position, RADIUS)
 
 	if regen > 0.0 and hp < max_hp:
 		heal(regen * delta)
