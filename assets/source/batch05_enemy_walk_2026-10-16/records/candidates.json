@@ -1,0 +1,1978 @@
+[
+  {
+    "id": "draugr_move",
+    "character": "draugr",
+    "candidate": "candidates/draugr_move_v01.png",
+    "version": "v01",
+    "source": "originals/draugr_move_v01_raw.png",
+    "tool": "built-in image_gen; Pillow format normalization",
+    "generation_record": "records/generation_draugr_move_v01.json",
+    "status": "art_self_check_passed_pending_game_review",
+    "frames": 6,
+    "frame_size": [
+      64,
+      64
+    ],
+    "size": [
+      384,
+      64
+    ],
+    "fps": 8,
+    "loop": true,
+    "baseline": 59,
+    "colors": 46,
+    "alpha_values": [
+      0,
+      255
+    ],
+    "bboxes": [
+      [
+        5,
+        5,
+        53,
+        60
+      ],
+      [
+        5,
+        4,
+        52,
+        60
+      ],
+      [
+        5,
+        4,
+        53,
+        60
+      ],
+      [
+        6,
+        5,
+        54,
+        60
+      ],
+      [
+        4,
+        4,
+        53,
+        60
+      ],
+      [
+        4,
+        4,
+        52,
+        60
+      ]
+    ],
+    "normalization_scale": 0.12472160356347439,
+    "raw_component_bboxes": [
+      [
+        108,
+        46,
+        496,
+        490
+      ],
+      [
+        597,
+        46,
+        973,
+        492
+      ],
+      [
+        1083,
+        46,
+        1464,
+        491
+      ],
+      [
+        107,
+        533,
+        493,
+        977
+      ],
+      [
+        591,
+        529,
+        985,
+        977
+      ],
+      [
+        1083,
+        528,
+        1465,
+        977
+      ]
+    ],
+    "offsets": [
+      [
+        5,
+        5
+      ],
+      [
+        5,
+        4
+      ],
+      [
+        5,
+        4
+      ],
+      [
+        6,
+        5
+      ],
+      [
+        4,
+        4
+      ],
+      [
+        4,
+        4
+      ]
+    ],
+    "margin_or_clipping_failure": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "reference_palette": "records/draugr_reference_palette.json",
+    "sha256": "a1ead0885be3041162107fce0f99b7fd49f84452f208d65a445a362c098be109",
+    "output": "assets/sprites/enemies/draugr_move.png",
+    "approved": "approved/draugr_move.png",
+    "checks": {
+      "exact_size_rgba_binary_alpha": true,
+      "same_reference_rgb_palette": true,
+      "right_facing_minimum2px_border": true,
+      "fixed_ground_baseline_every_frame": true,
+      "head_body_equipment_consistent_visual": true,
+      "six_distinct_contact_passing_lift_poses": true,
+      "near_far_legs_alternate_visibly": true,
+      "no_whole_body_only_bounce": true,
+      "loop_last_to_first_pose_continuous_visual": true,
+      "dark_background1x4x_reviewed": true,
+      "chrome8fps_and_paused_frame_reviewed": true,
+      "no_text_watermarks_scene_effects": true,
+      "game_tested": false
+    },
+    "review_note": "Six poses include opposite support half-cycle: frame4nearboot liftsback, frame5near knee forward. Original claws/armor retained. Ground59, original46RGB. Full contact sheet plus actualChrome1x/4x playback and paused phase4 inspected.",
+    "ground_tiling": "not_applicable_enemy_animation",
+    "previews": {
+      "contact_1x": "previews/draugr_move_v01_contact_1x.png",
+      "contact_4x": "previews/draugr_move_v01_contact_4x.png",
+      "loop8fps_4x": "previews/draugr_move_v01_8fps.gif"
+    }
+  },
+  {
+    "id": "draugr_elite_move",
+    "character": "draugr_elite",
+    "candidate": "candidates/draugr_elite_move_v01.png",
+    "version": "v01",
+    "source": "originals/draugr_elite_move_v01_raw.png",
+    "tool": "built-in image_gen; Pillow format normalization",
+    "generation_record": "records/generation_draugr_elite_move_v01.json",
+    "status": "rejected",
+    "frames": 6,
+    "frame_size": [
+      64,
+      64
+    ],
+    "size": [
+      384,
+      64
+    ],
+    "fps": 8,
+    "loop": true,
+    "baseline": 60,
+    "colors": 41,
+    "alpha_values": [
+      0,
+      255
+    ],
+    "bboxes": [
+      [
+        1,
+        4,
+        59,
+        61
+      ],
+      [
+        1,
+        4,
+        60,
+        61
+      ],
+      [
+        1,
+        4,
+        59,
+        61
+      ],
+      [
+        1,
+        3,
+        60,
+        61
+      ],
+      [
+        1,
+        4,
+        61,
+        61
+      ],
+      [
+        2,
+        3,
+        60,
+        61
+      ]
+    ],
+    "normalization_scale": 0.13975903614457832,
+    "raw_component_bboxes": [
+      [
+        57,
+        64,
+        471,
+        470
+      ],
+      [
+        552,
+        63,
+        971,
+        470
+      ],
+      [
+        1064,
+        63,
+        1482,
+        470
+      ],
+      [
+        49,
+        552,
+        474,
+        964
+      ],
+      [
+        552,
+        550,
+        980,
+        957
+      ],
+      [
+        1068,
+        549,
+        1480,
+        964
+      ]
+    ],
+    "offsets": [
+      [
+        1,
+        4
+      ],
+      [
+        1,
+        4
+      ],
+      [
+        1,
+        4
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        1,
+        4
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "margin_or_clipping_failure": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "reference_palette": "records/draugr_elite_reference_palette.json",
+    "sha256": "fccdb345a004d9228cfa33e1706c7a4038715edda59b15d1bba8c4be41f1eb9d",
+    "rejection_reason": "Leftedge1px only; uniform+1pxtranslation revisedcandidatev02."
+  },
+  {
+    "id": "wolf_move",
+    "character": "wolf",
+    "candidate": "candidates/wolf_move_v01.png",
+    "version": "v01",
+    "source": "originals/wolf_move_v01_raw.png",
+    "tool": "built-in image_gen; Pillow format normalization",
+    "generation_record": "records/generation_wolf_move_v01.json",
+    "status": "rejected",
+    "frames": 6,
+    "frame_size": [
+      64,
+      64
+    ],
+    "size": [
+      384,
+      64
+    ],
+    "fps": 8,
+    "loop": true,
+    "baseline": 54,
+    "colors": 41,
+    "alpha_values": [
+      0,
+      255
+    ],
+    "bboxes": [
+      [
+        2,
+        9,
+        61,
+        55
+      ],
+      [
+        2,
+        11,
+        61,
+        55
+      ],
+      [
+        2,
+        10,
+        61,
+        55
+      ],
+      [
+        2,
+        10,
+        63,
+        55
+      ],
+      [
+        2,
+        10,
+        62,
+        55
+      ],
+      [
+        3,
+        10,
+        62,
+        55
+      ]
+    ],
+    "normalization_scale": 0.12466124661246612,
+    "raw_component_bboxes": [
+      [
+        32,
+        124,
+        507,
+        493
+      ],
+      [
+        536,
+        125,
+        1008,
+        480
+      ],
+      [
+        1035,
+        124,
+        1511,
+        482
+      ],
+      [
+        20,
+        562,
+        507,
+        920
+      ],
+      [
+        530,
+        560,
+        1008,
+        920
+      ],
+      [
+        1034,
+        563,
+        1511,
+        921
+      ]
+    ],
+    "offsets": [
+      [
+        2,
+        9
+      ],
+      [
+        2,
+        11
+      ],
+      [
+        2,
+        10
+      ],
+      [
+        2,
+        10
+      ],
+      [
+        2,
+        10
+      ],
+      [
+        3,
+        10
+      ]
+    ],
+    "margin_or_clipping_failure": [
+      false,
+      false,
+      false,
+      true,
+      false,
+      false
+    ],
+    "reference_palette": "records/wolf_reference_palette.json",
+    "sha256": "3ab38e053ed6a6243f3f35e0c6054be456b94c9f199727f48769d414dba2d5b0",
+    "rejection_reason": "Nearfrontleg remainsforward in all6frames; frame4 paw breachesrightmargin. Targetedlegredrawrequired."
+  },
+  {
+    "id": "ice_spirit_move",
+    "character": "ice_spirit",
+    "candidate": "candidates/ice_spirit_move_v01.png",
+    "version": "v01",
+    "source": "originals/ice_spirit_move_v01_raw.png",
+    "tool": "built-in image_gen; Pillow format normalization",
+    "generation_record": "records/generation_ice_spirit_move_v01.json",
+    "status": "rejected",
+    "frames": 4,
+    "frame_size": [
+      64,
+      64
+    ],
+    "size": [
+      256,
+      64
+    ],
+    "fps": 8,
+    "loop": true,
+    "baseline": 59,
+    "colors": 48,
+    "alpha_values": [
+      0,
+      255
+    ],
+    "bboxes": [
+      [
+        0,
+        4,
+        60,
+        60
+      ],
+      [
+        0,
+        4,
+        60,
+        60
+      ],
+      [
+        0,
+        4,
+        61,
+        60
+      ],
+      [
+        0,
+        5,
+        61,
+        60
+      ]
+    ],
+    "normalization_scale": 0.13592233009708737,
+    "raw_component_bboxes": [
+      [
+        251,
+        26,
+        796,
+        437
+      ],
+      [
+        967,
+        26,
+        1511,
+        437
+      ],
+      [
+        304,
+        460,
+        800,
+        872
+      ],
+      [
+        967,
+        460,
+        1517,
+        865
+      ]
+    ],
+    "offsets": [
+      [
+        -14,
+        4
+      ],
+      [
+        -14,
+        4
+      ],
+      [
+        -6,
+        4
+      ],
+      [
+        -14,
+        5
+      ]
+    ],
+    "margin_or_clipping_failure": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "reference_palette": "records/ice_spirit_reference_palette.json",
+    "sha256": "df8b8d6f6013aeaa0524f05dce746448c3dfb9d3c424a6d1d29192418ad0a206",
+    "rejection_reason": "Invented wide upper-back streamers extend far outside original width and normalized canvas; not same silhouette."
+  },
+  {
+    "id": "draugr_elite_move",
+    "character": "draugr_elite",
+    "candidate": "candidates/draugr_elite_move_v02.png",
+    "version": "v02",
+    "source": "originals/draugr_elite_move_v01_raw.png",
+    "tool": "built-in image_gen; Pillow format normalization",
+    "generation_record": "records/generation_draugr_elite_move_v01.json",
+    "status": "art_self_check_passed_pending_game_review",
+    "frames": 6,
+    "frame_size": [
+      64,
+      64
+    ],
+    "size": [
+      384,
+      64
+    ],
+    "fps": 8,
+    "loop": true,
+    "baseline": 60,
+    "colors": 41,
+    "alpha_values": [
+      0,
+      255
+    ],
+    "bboxes": [
+      [
+        2,
+        4,
+        60,
+        61
+      ],
+      [
+        2,
+        4,
+        61,
+        61
+      ],
+      [
+        2,
+        4,
+        60,
+        61
+      ],
+      [
+        2,
+        3,
+        61,
+        61
+      ],
+      [
+        2,
+        4,
+        62,
+        61
+      ],
+      [
+        3,
+        3,
+        61,
+        61
+      ]
+    ],
+    "normalization_scale": 0.13975903614457832,
+    "raw_component_bboxes": [
+      [
+        57,
+        64,
+        471,
+        470
+      ],
+      [
+        552,
+        63,
+        971,
+        470
+      ],
+      [
+        1064,
+        63,
+        1482,
+        470
+      ],
+      [
+        49,
+        552,
+        474,
+        964
+      ],
+      [
+        552,
+        550,
+        980,
+        957
+      ],
+      [
+        1068,
+        549,
+        1480,
+        964
+      ]
+    ],
+    "offsets": [
+      [
+        2,
+        4
+      ],
+      [
+        2,
+        4
+      ],
+      [
+        2,
+        4
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        2,
+        4
+      ],
+      [
+        3,
+        3
+      ]
+    ],
+    "margin_or_clipping_failure": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "reference_palette": "records/draugr_elite_reference_palette.json",
+    "sha256": "354437191d490c73de8669def993730d19e4aecde8fb2771de575e2e7e86da53",
+    "normalization_note": "Uniform wholeframe translation+1x; no limb/costume pixels repainted. Original v01leftmost x1 movedto x2.",
+    "output": "assets/sprites/enemies/draugr_elite_move.png",
+    "approved": "approved/draugr_elite_move.png",
+    "checks": {
+      "exact_size_rgba_binary_alpha": true,
+      "same_reference_rgb_palette": true,
+      "right_facing_minimum2px_border": true,
+      "fixed_ground_baseline_every_frame": true,
+      "head_body_equipment_consistent_visual": true,
+      "six_distinct_contact_passing_lift_poses": true,
+      "near_far_legs_alternate_visibly": true,
+      "no_whole_body_only_bounce": true,
+      "loop_last_to_first_pose_continuous_visual": true,
+      "dark_background1x4x_reviewed": true,
+      "chrome8fps_and_paused_frame_reviewed": true,
+      "no_text_watermarks_scene_effects": true,
+      "game_tested": false
+    },
+    "review_note": "Axe/shield stay originalhands. Opposite support knee liftsforward inframe5; sixdistinctlegposes. Uniform+1pixel entire-frame translation fixesleftborder1->2 without repainting. Ground60, same originalRGB. Full contact and Chrome playback/pausedphase5 inspected.",
+    "ground_tiling": "not_applicable_enemy_animation",
+    "previews": {
+      "contact_1x": "previews/draugr_elite_move_v02_contact_1x.png",
+      "contact_4x": "previews/draugr_elite_move_v02_contact_4x.png",
+      "loop8fps_4x": "previews/draugr_elite_move_v02_8fps.gif"
+    }
+  },
+  {
+    "id": "frost_giant_move",
+    "character": "frost_giant",
+    "candidate": "candidates/frost_giant_move_v01.png",
+    "version": "v01",
+    "source": "originals/frost_giant_move_v01_raw.png",
+    "tool": "built-in image_gen; Pillow format normalization",
+    "generation_record": "records/generation_frost_giant_move_v01.json",
+    "status": "rejected",
+    "frames": 6,
+    "frame_size": [
+      96,
+      96
+    ],
+    "size": [
+      576,
+      96
+    ],
+    "fps": 8,
+    "loop": true,
+    "baseline": 93,
+    "colors": 48,
+    "alpha_values": [
+      0,
+      255
+    ],
+    "bboxes": [
+      [
+        5,
+        7,
+        92,
+        94
+      ],
+      [
+        5,
+        7,
+        92,
+        94
+      ],
+      [
+        6,
+        7,
+        92,
+        94
+      ],
+      [
+        4,
+        8,
+        92,
+        94
+      ],
+      [
+        8,
+        8,
+        95,
+        94
+      ],
+      [
+        6,
+        8,
+        94,
+        94
+      ]
+    ],
+    "normalization_scale": 0.1912087912087912,
+    "raw_component_bboxes": [
+      [
+        47,
+        42,
+        504,
+        495
+      ],
+      [
+        561,
+        41,
+        1015,
+        494
+      ],
+      [
+        1066,
+        41,
+        1516,
+        496
+      ],
+      [
+        48,
+        528,
+        510,
+        979
+      ],
+      [
+        569,
+        528,
+        1024,
+        976
+      ],
+      [
+        1070,
+        528,
+        1531,
+        980
+      ]
+    ],
+    "offsets": [
+      [
+        5,
+        7
+      ],
+      [
+        5,
+        7
+      ],
+      [
+        6,
+        7
+      ],
+      [
+        4,
+        8
+      ],
+      [
+        8,
+        8
+      ],
+      [
+        6,
+        8
+      ]
+    ],
+    "margin_or_clipping_failure": [
+      false,
+      false,
+      false,
+      false,
+      true,
+      false
+    ],
+    "reference_palette": "records/frost_giant_reference_palette.json",
+    "sha256": "f4caffe3e62459c935c3e4aec4bd5140f0bc8539902b298be958f7e496e5a71e",
+    "rejection_reason": "Frame5clubrightedgeleaves1px; uniform-1xtranslationcorrectedv02."
+  },
+  {
+    "id": "ice_spirit_elite_move",
+    "character": "ice_spirit_elite",
+    "candidate": "candidates/ice_spirit_elite_move_v01.png",
+    "version": "v01",
+    "source": "originals/ice_spirit_elite_move_v01_raw.png",
+    "tool": "built-in image_gen; Pillow format normalization",
+    "generation_record": "records/generation_ice_spirit_elite_move_v01.json",
+    "status": "art_self_check_passed_pending_game_review",
+    "frames": 4,
+    "frame_size": [
+      64,
+      64
+    ],
+    "size": [
+      256,
+      64
+    ],
+    "fps": 8,
+    "loop": true,
+    "baseline": 59,
+    "colors": 47,
+    "alpha_values": [
+      0,
+      255
+    ],
+    "bboxes": [
+      [
+        9,
+        4,
+        58,
+        60
+      ],
+      [
+        9,
+        4,
+        58,
+        60
+      ],
+      [
+        8,
+        4,
+        58,
+        60
+      ],
+      [
+        8,
+        5,
+        58,
+        60
+      ]
+    ],
+    "normalization_scale": 0.11067193675889328,
+    "raw_component_bboxes": [
+      [
+        226,
+        7,
+        673,
+        513
+      ],
+      [
+        891,
+        7,
+        1337,
+        513
+      ],
+      [
+        225,
+        513,
+        673,
+        1018
+      ],
+      [
+        891,
+        513,
+        1340,
+        1011
+      ]
+    ],
+    "offsets": [
+      [
+        9,
+        4
+      ],
+      [
+        9,
+        4
+      ],
+      [
+        8,
+        4
+      ],
+      [
+        8,
+        5
+      ]
+    ],
+    "margin_or_clipping_failure": [
+      false,
+      false,
+      false,
+      false
+    ],
+    "reference_palette": "records/ice_spirit_elite_reference_palette.json",
+    "sha256": "c15aedd8503604c4bae6f7e3ef32903c1fb599879423e7ff98c15a78d21a2d58",
+    "output": "assets/sprites/enemies/ice_spirit_elite_move.png",
+    "approved": "approved/ice_spirit_elite_move.png",
+    "checks": {
+      "exact_size_rgba_binary_alpha": true,
+      "same_reference_rgb_palette": true,
+      "right_facing_minimum2px_border": true,
+      "head_body_equipment_consistent_visual": true,
+      "no_whole_body_only_bounce": true,
+      "loop_last_to_first_pose_continuous_visual": true,
+      "dark_background1x4x_reviewed": true,
+      "chrome8fps_and_paused_frame_reviewed": true,
+      "no_text_watermarks_scene_effects": true,
+      "game_tested": false,
+      "four_distinct_lower_tail_curls": true,
+      "original_head_crown_upper_body_retained": true,
+      "no_added_upper_back_appendages": true,
+      "lowest_tail_y59_every_frame": true
+    },
+    "review_note": "Only original lower tendrils undulate, noleg redesign orupperbackextension. All4poses checked in contact sheet and Chrome1x/4x playback plus paused phases. Head/crown remainsstable within1pixel rasterquantization; actualtailcontourchanges, nottranslatedwholebody. Same originalRGB palette as batch07attack.",
+    "ground_tiling": "not_applicable_enemy_animation",
+    "previews": {
+      "contact_1x": "previews/ice_spirit_elite_move_v01_contact_1x.png",
+      "contact_4x": "previews/ice_spirit_elite_move_v01_contact_4x.png",
+      "loop8fps_4x": "previews/ice_spirit_elite_move_v01_8fps.gif"
+    }
+  },
+  {
+    "id": "ice_spirit_move",
+    "character": "ice_spirit",
+    "candidate": "candidates/ice_spirit_move_v02.png",
+    "version": "v02",
+    "source": "originals/ice_spirit_move_v02_raw.png",
+    "tool": "built-in image_gen; Pillow format normalization",
+    "generation_record": "records/generation_ice_spirit_move_v02.json",
+    "status": "art_self_check_passed_pending_game_review",
+    "frames": 4,
+    "frame_size": [
+      64,
+      64
+    ],
+    "size": [
+      256,
+      64
+    ],
+    "fps": 8,
+    "loop": true,
+    "baseline": 59,
+    "colors": 48,
+    "alpha_values": [
+      0,
+      255
+    ],
+    "bboxes": [
+      [
+        4,
+        4,
+        60,
+        60
+      ],
+      [
+        4,
+        4,
+        60,
+        60
+      ],
+      [
+        4,
+        5,
+        60,
+        60
+      ],
+      [
+        4,
+        5,
+        60,
+        60
+      ]
+    ],
+    "normalization_scale": 0.13559322033898305,
+    "raw_component_bboxes": [
+      [
+        383,
+        22,
+        794,
+        435
+      ],
+      [
+        1084,
+        23,
+        1497,
+        435
+      ],
+      [
+        382,
+        462,
+        794,
+        866
+      ],
+      [
+        1083,
+        462,
+        1497,
+        866
+      ]
+    ],
+    "offsets": [
+      [
+        4,
+        4
+      ],
+      [
+        4,
+        4
+      ],
+      [
+        4,
+        5
+      ],
+      [
+        4,
+        5
+      ]
+    ],
+    "margin_or_clipping_failure": [
+      false,
+      false,
+      false,
+      false
+    ],
+    "reference_palette": "records/ice_spirit_reference_palette.json",
+    "sha256": "1079bbe802dc060c376d34cc88e449e660d8b1ad05d4fe5dd86630db9193813a",
+    "output": "assets/sprites/enemies/ice_spirit_move.png",
+    "approved": "approved/ice_spirit_move.png",
+    "checks": {
+      "exact_size_rgba_binary_alpha": true,
+      "same_reference_rgb_palette": true,
+      "right_facing_minimum2px_border": true,
+      "head_body_equipment_consistent_visual": true,
+      "no_whole_body_only_bounce": true,
+      "loop_last_to_first_pose_continuous_visual": true,
+      "dark_background1x4x_reviewed": true,
+      "chrome8fps_and_paused_frame_reviewed": true,
+      "no_text_watermarks_scene_effects": true,
+      "game_tested": false,
+      "four_distinct_lower_tail_curls": true,
+      "original_head_crown_upper_body_retained": true,
+      "no_added_upper_back_appendages": true,
+      "lowest_tail_y59_every_frame": true
+    },
+    "review_note": "Only original lower tendrils undulate, noleg redesign orupperbackextension. All4poses checked in contact sheet and Chrome1x/4x playback plus paused phases. Head/crown remainsstable within1pixel rasterquantization; actualtailcontourchanges, nottranslatedwholebody. Same originalRGB palette as batch07attack.",
+    "ground_tiling": "not_applicable_enemy_animation",
+    "previews": {
+      "contact_1x": "previews/ice_spirit_move_v02_contact_1x.png",
+      "contact_4x": "previews/ice_spirit_move_v02_contact_4x.png",
+      "loop8fps_4x": "previews/ice_spirit_move_v02_8fps.gif"
+    }
+  },
+  {
+    "id": "frost_giant_move",
+    "character": "frost_giant",
+    "candidate": "candidates/frost_giant_move_v02.png",
+    "version": "v02",
+    "source": "originals/frost_giant_move_v01_raw.png",
+    "tool": "built-in image_gen; Pillow format normalization",
+    "generation_record": "records/generation_frost_giant_move_v01.json",
+    "status": "art_self_check_passed_pending_game_review",
+    "frames": 6,
+    "frame_size": [
+      96,
+      96
+    ],
+    "size": [
+      576,
+      96
+    ],
+    "fps": 8,
+    "loop": true,
+    "baseline": 93,
+    "colors": 48,
+    "alpha_values": [
+      0,
+      255
+    ],
+    "bboxes": [
+      [
+        4,
+        7,
+        91,
+        94
+      ],
+      [
+        4,
+        7,
+        91,
+        94
+      ],
+      [
+        5,
+        7,
+        91,
+        94
+      ],
+      [
+        3,
+        8,
+        91,
+        94
+      ],
+      [
+        7,
+        8,
+        94,
+        94
+      ],
+      [
+        5,
+        8,
+        93,
+        94
+      ]
+    ],
+    "normalization_scale": 0.1912087912087912,
+    "raw_component_bboxes": [
+      [
+        47,
+        42,
+        504,
+        495
+      ],
+      [
+        561,
+        41,
+        1015,
+        494
+      ],
+      [
+        1066,
+        41,
+        1516,
+        496
+      ],
+      [
+        48,
+        528,
+        510,
+        979
+      ],
+      [
+        569,
+        528,
+        1024,
+        976
+      ],
+      [
+        1070,
+        528,
+        1531,
+        980
+      ]
+    ],
+    "offsets": [
+      [
+        4,
+        7
+      ],
+      [
+        4,
+        7
+      ],
+      [
+        5,
+        7
+      ],
+      [
+        3,
+        8
+      ],
+      [
+        7,
+        8
+      ],
+      [
+        5,
+        8
+      ]
+    ],
+    "margin_or_clipping_failure": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "reference_palette": "records/frost_giant_reference_palette.json",
+    "sha256": "9c5ff93caf881c8fd0ddc45674468148d3641fcbe244c32b960ae5fd0c20d8da",
+    "normalization_note": "Uniform wholeframe translation-1x; club stays aboveboots. Fix rightmargin frame5from1to2px, no limb/equipment pixels repainted.",
+    "output": "assets/sprites/enemies/frost_giant_move.png",
+    "approved": "approved/frost_giant_move.png",
+    "checks": {
+      "exact_size_rgba_binary_alpha": true,
+      "same_reference_rgb_palette": true,
+      "right_facing_minimum2px_border": true,
+      "head_body_equipment_consistent_visual": true,
+      "no_whole_body_only_bounce": true,
+      "loop_last_to_first_pose_continuous_visual": true,
+      "dark_background1x4x_reviewed": true,
+      "chrome8fps_and_paused_frame_reviewed": true,
+      "no_text_watermarks_scene_effects": true,
+      "game_tested": false,
+      "six_distinct_contact_passing_lift_poses": true,
+      "near_far_legs_alternate_visibly": true,
+      "fixed_feet_baseline93": true,
+      "club_carried_above_support_foot_ground": true
+    },
+    "review_note": "Preserves87pxheight andmassiveproportions. Opposite support visiblephase4(rearnearbootlift)/phase5(near kneeforward). Originalclub/armor unchanged; all6frames uniformly translated-1x tofixframe5rightmargin. Wholeframeformat alignment only; no pixels repainted. Chrome phase3/4and1xstandingcomparison inspected.",
+    "ground_tiling": "not_applicable_enemy_animation",
+    "previews": {
+      "contact_1x": "previews/frost_giant_move_v02_contact_1x.png",
+      "contact_4x": "previews/frost_giant_move_v02_contact_4x.png",
+      "loop8fps_4x": "previews/frost_giant_move_v02_8fps.gif"
+    }
+  },
+  {
+    "id": "frost_giant_elite_move",
+    "character": "frost_giant_elite",
+    "candidate": "candidates/frost_giant_elite_move_v01.png",
+    "version": "v01",
+    "source": "originals/frost_giant_elite_move_v01_raw.png",
+    "tool": "built-in image_gen; Pillow format normalization",
+    "generation_record": "records/generation_frost_giant_elite_move_v01.json",
+    "status": "rejected",
+    "frames": 6,
+    "frame_size": [
+      96,
+      96
+    ],
+    "size": [
+      576,
+      96
+    ],
+    "fps": 8,
+    "loop": true,
+    "baseline": 93,
+    "colors": 48,
+    "alpha_values": [
+      0,
+      255
+    ],
+    "bboxes": [
+      [
+        0,
+        4,
+        94,
+        94
+      ],
+      [
+        0,
+        5,
+        93,
+        94
+      ],
+      [
+        0,
+        4,
+        92,
+        94
+      ],
+      [
+        0,
+        5,
+        94,
+        94
+      ],
+      [
+        0,
+        5,
+        92,
+        94
+      ],
+      [
+        0,
+        5,
+        93,
+        94
+      ]
+    ],
+    "normalization_scale": 0.19911504424778761,
+    "raw_component_bboxes": [
+      [
+        29,
+        41,
+        510,
+        493
+      ],
+      [
+        537,
+        41,
+        1008,
+        489
+      ],
+      [
+        1033,
+        41,
+        1504,
+        493
+      ],
+      [
+        30,
+        531,
+        514,
+        979
+      ],
+      [
+        537,
+        530,
+        1009,
+        976
+      ],
+      [
+        1033,
+        531,
+        1504,
+        979
+      ]
+    ],
+    "offsets": [
+      [
+        -2,
+        4
+      ],
+      [
+        -1,
+        5
+      ],
+      [
+        -2,
+        4
+      ],
+      [
+        -2,
+        5
+      ],
+      [
+        -2,
+        5
+      ],
+      [
+        -1,
+        5
+      ]
+    ],
+    "margin_or_clipping_failure": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "reference_palette": "records/frost_giant_elite_reference_palette.json",
+    "sha256": "fd7ebc4798fcb97957de2e7417fe00db6fdcc504e448d614d6b1fdc6b36fbaa7",
+    "rejection_reason": "Axe/club-hand plus shield too wide at original90pxheight; -2px leftclipping. Must bring equipment inward, not shrinkbody."
+  },
+  {
+    "id": "wolf_move",
+    "character": "wolf",
+    "candidate": "candidates/wolf_move_v02.png",
+    "version": "v02",
+    "source": "originals/wolf_move_v02_raw.png",
+    "tool": "built-in image_gen; Pillow format normalization",
+    "generation_record": "records/generation_wolf_move_v02.json",
+    "status": "rejected",
+    "frames": 6,
+    "frame_size": [
+      64,
+      64
+    ],
+    "size": [
+      384,
+      64
+    ],
+    "fps": 8,
+    "loop": true,
+    "baseline": 54,
+    "colors": 41,
+    "alpha_values": [
+      0,
+      255
+    ],
+    "bboxes": [
+      [
+        0,
+        9,
+        63,
+        55
+      ],
+      [
+        0,
+        9,
+        63,
+        55
+      ],
+      [
+        0,
+        10,
+        63,
+        55
+      ],
+      [
+        0,
+        11,
+        63,
+        55
+      ],
+      [
+        0,
+        11,
+        63,
+        55
+      ],
+      [
+        0,
+        10,
+        63,
+        55
+      ]
+    ],
+    "normalization_scale": 0.13142857142857142,
+    "raw_component_bboxes": [
+      [
+        26,
+        127,
+        506,
+        476
+      ],
+      [
+        538,
+        127,
+        1018,
+        477
+      ],
+      [
+        1050,
+        127,
+        1530,
+        471
+      ],
+      [
+        26,
+        597,
+        506,
+        932
+      ],
+      [
+        538,
+        597,
+        1018,
+        932
+      ],
+      [
+        1050,
+        597,
+        1530,
+        938
+      ]
+    ],
+    "offsets": [
+      [
+        0,
+        9
+      ],
+      [
+        0,
+        9
+      ],
+      [
+        0,
+        10
+      ],
+      [
+        0,
+        11
+      ],
+      [
+        0,
+        11
+      ],
+      [
+        0,
+        10
+      ]
+    ],
+    "margin_or_clipping_failure": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "reference_palette": "records/wolf_reference_palette.json",
+    "sha256": "540b94c7cdeb2fa10633eb8807fbf62b2a67ee98ef8c5bc3eca86a43c8edfad0",
+    "rejection_reason": "Nearfrontforeleg stillreachesforward throughout and wholewolf63pxwide violates2pxmargin. Generate isolated oppositehalfposes with explicitcoloredlegdiagram instead."
+  },
+  {
+    "id": "frost_giant_elite_move",
+    "character": "frost_giant_elite",
+    "candidate": "candidates/frost_giant_elite_move_v02.png",
+    "version": "v02",
+    "source": "originals/frost_giant_elite_move_v02_raw.png",
+    "tool": "built-in image_gen; Pillow format normalization",
+    "generation_record": "records/generation_frost_giant_elite_move_v02.json",
+    "status": "art_self_check_passed_pending_game_review",
+    "frames": 6,
+    "frame_size": [
+      96,
+      96
+    ],
+    "size": [
+      576,
+      96
+    ],
+    "fps": 8,
+    "loop": true,
+    "baseline": 93,
+    "colors": 48,
+    "alpha_values": [
+      0,
+      255
+    ],
+    "bboxes": [
+      [
+        4,
+        4,
+        93,
+        94
+      ],
+      [
+        5,
+        4,
+        93,
+        94
+      ],
+      [
+        6,
+        4,
+        93,
+        94
+      ],
+      [
+        2,
+        4,
+        94,
+        94
+      ],
+      [
+        2,
+        4,
+        93,
+        94
+      ],
+      [
+        3,
+        4,
+        93,
+        94
+      ]
+    ],
+    "normalization_scale": 0.1978021978021978,
+    "raw_component_bboxes": [
+      [
+        60,
+        41,
+        512,
+        495
+      ],
+      [
+        567,
+        42,
+        1012,
+        495
+      ],
+      [
+        1070,
+        41,
+        1508,
+        495
+      ],
+      [
+        52,
+        528,
+        515,
+        983
+      ],
+      [
+        554,
+        528,
+        1015,
+        983
+      ],
+      [
+        1055,
+        528,
+        1512,
+        983
+      ]
+    ],
+    "offsets": [
+      [
+        4,
+        4
+      ],
+      [
+        5,
+        4
+      ],
+      [
+        6,
+        4
+      ],
+      [
+        2,
+        4
+      ],
+      [
+        2,
+        4
+      ],
+      [
+        3,
+        4
+      ]
+    ],
+    "margin_or_clipping_failure": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "reference_palette": "records/frost_giant_elite_reference_palette.json",
+    "sha256": "15addd241638773aa31c815b6d60c3c121ce23b3374e1e062b7735f6ac163613",
+    "output": "assets/sprites/enemies/frost_giant_elite_move.png",
+    "approved": "approved/frost_giant_elite_move.png",
+    "checks": {
+      "exact_size_rgba_binary_alpha": true,
+      "same_reference_rgb_palette": true,
+      "right_facing_minimum2px_border": true,
+      "fixed_feet_baseline93": true,
+      "same90pxbodyheight": true,
+      "head_body_equipment_consistent_visual": true,
+      "shield_and_club_retained_no_shrink": true,
+      "six_distinct_contact_passing_lift_poses": true,
+      "near_far_legs_alternate_visibly": true,
+      "no_whole_body_only_bounce": true,
+      "loop_last_to_first_pose_continuous_visual": true,
+      "dark_background1x4x_reviewed": true,
+      "chrome8fps_and_paused_phase5_6_reviewed": true,
+      "no_text_watermarks_scene_effects": true,
+      "game_tested": false
+    },
+    "review_note": "Second generation bendselbows and brings clubhand/shieldinward, preserves90pxbodyheight andweaponsize. All6crowntopsy4 andbootground93, 2pxmargin passes. Opposite nearbootbackliftphase4 andnear kneeforwardphase5, recoverypassingphase6. Chrome1xstandingcomparison,4xplayback andpaused5/6 reviewed.",
+    "ground_tiling": "not_applicable_enemy_animation",
+    "previews": {
+      "contact_1x": "previews/frost_giant_elite_move_v02_contact_1x.png",
+      "contact_4x": "previews/frost_giant_elite_move_v02_contact_4x.png",
+      "loop8fps_4x": "previews/frost_giant_elite_move_v02_8fps.gif"
+    }
+  },
+  {
+    "id": "wolf_move",
+    "character": "wolf",
+    "candidate": "candidates/wolf_move_v03.png",
+    "version": "v03",
+    "source": "originals/wolf_move_v03_raw.png",
+    "tool": "built-in image_gen; Pillow format normalization",
+    "generation_record": "records/generation_wolf_move_v03.json",
+    "status": "rejected",
+    "frames": 4,
+    "frame_size": [
+      64,
+      64
+    ],
+    "size": [
+      256,
+      64
+    ],
+    "fps": 8,
+    "loop": true,
+    "baseline": 54,
+    "colors": 41,
+    "alpha_values": [
+      0,
+      255
+    ],
+    "bboxes": [
+      [
+        0,
+        9,
+        64,
+        55
+      ],
+      [
+        0,
+        9,
+        64,
+        55
+      ],
+      [
+        0,
+        9,
+        64,
+        55
+      ],
+      [
+        0,
+        9,
+        64,
+        55
+      ]
+    ],
+    "normalization_scale": 0.09850107066381156,
+    "raw_component_bboxes": [
+      [
+        88,
+        22,
+        744,
+        484
+      ],
+      [
+        856,
+        22,
+        1511,
+        484
+      ],
+      [
+        84,
+        524,
+        747,
+        991
+      ],
+      [
+        851,
+        525,
+        1514,
+        992
+      ]
+    ],
+    "offsets": [
+      [
+        0,
+        9
+      ],
+      [
+        0,
+        9
+      ],
+      [
+        0,
+        9
+      ],
+      [
+        0,
+        9
+      ]
+    ],
+    "margin_or_clipping_failure": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "reference_palette": "records/wolf_reference_palette.json",
+    "sha256": "23ae6b35252be0fb3ee4c55bd5a59cdf372c5f3d757b8011a9ff6e4aeb44e29d",
+    "rejection_reason": "Height-only scaling clips left/right fulloutline; commonisotropicwidth-fit v04corrects all4frameswithoutcropping."
+  },
+  {
+    "id": "wolf_move",
+    "character": "wolf",
+    "candidate": "candidates/wolf_move_v04.png",
+    "version": "v04",
+    "source": "originals/wolf_move_v03_raw.png",
+    "tool": "built-in image_gen; Pillow format normalization",
+    "generation_record": "records/generation_wolf_move_v03.json",
+    "status": "art_self_check_passed_pending_game_review",
+    "frames": 4,
+    "frame_size": [
+      64,
+      64
+    ],
+    "size": [
+      256,
+      64
+    ],
+    "fps": 8,
+    "loop": true,
+    "baseline": 54,
+    "colors": 41,
+    "alpha_values": [
+      0,
+      255
+    ],
+    "bboxes": [
+      [
+        2,
+        13,
+        61,
+        55
+      ],
+      [
+        2,
+        13,
+        61,
+        55
+      ],
+      [
+        2,
+        13,
+        62,
+        55
+      ],
+      [
+        2,
+        13,
+        62,
+        55
+      ]
+    ],
+    "normalization_scale": 0.09049773755656108,
+    "raw_component_bboxes": [
+      [
+        88,
+        22,
+        744,
+        484
+      ],
+      [
+        856,
+        22,
+        1511,
+        484
+      ],
+      [
+        84,
+        524,
+        747,
+        991
+      ],
+      [
+        851,
+        525,
+        1514,
+        992
+      ]
+    ],
+    "offsets": [
+      [
+        2,
+        13
+      ],
+      [
+        2,
+        13
+      ],
+      [
+        2,
+        13
+      ],
+      [
+        2,
+        13
+      ]
+    ],
+    "margin_or_clipping_failure": [
+      false,
+      false,
+      false,
+      false
+    ],
+    "reference_palette": "records/wolf_reference_palette.json",
+    "sha256": "ccff4611cc3cdfeb68fae2a8ad81bd4f1552549391012db5d740f23859be5211",
+    "normalization_fit": "fit",
+    "output": "assets/sprites/enemies/wolf_move.png",
+    "approved": "approved/wolf_move.png",
+    "checks": {
+      "exact_size_rgba_binary_alpha": true,
+      "same_original41rgb_palette": true,
+      "right_facing_minimum2px_border": true,
+      "fixed_paw_baseline54": true,
+      "four_distinct_diagonal_contact_passing_poses": true,
+      "near_front_foreleg_goes_back_under_belly_in_phase3_4": true,
+      "opposite_near_hind_and_far_foreleg_support_visibly_alternate": true,
+      "four_limb_anatomy_across_cycle_with_natural_occlusion": true,
+      "same_body_head_scale_every_frame": true,
+      "no_whole_body_only_bounce": true,
+      "loop_last_to_first_pose_continuous_visual": true,
+      "dark_background1x4x_reviewed": true,
+      "reference1x2x_comparison_reviewed": true,
+      "chrome8fps_and_paused_phase2_3_4_reviewed": true,
+      "no_text_watermarks_scene_effects": true,
+      "game_tested": false
+    },
+    "review_note": "Sixframe firsttworounds repeated nearforeleg. Explicitnear/farposeguides generated twooppositehalves, finalfourframe sheet preserves correctalternation. Oneuniformisotropicscale fits fullwidth60px, no perframe scaling orbody repaint. Allfourbboxes42pxhigh at y13..54 versusstatic46pxhigh y9..54; slightlylowerwalkingpose explicitly reviewed in referencecomparison. Allfourhead/bodyproportions stable. Rawv03height-onlynormalization clippedtail, rejected; v04fitscompleteoutlinewith2pxborder. Charactertransitioningame remains pending.",
+    "ground_tiling": "not_applicable_enemy_animation",
+    "previews": {
+      "contact_1x": "previews/wolf_move_v04_contact_1x.png",
+      "contact_4x": "previews/wolf_move_v04_contact_4x.png",
+      "loop8fps_4x": "previews/wolf_move_v04_8fps.gif"
+    }
+  }
+]

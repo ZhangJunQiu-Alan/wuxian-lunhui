@@ -1,0 +1,6 @@
+{
+  "failed_wave": "giants and elite spirit first dispatch",
+  "reason": "reference paths were not absolute because parallel job metadata had not persisted yet",
+  "generated_outputs_accepted": 0,
+  "corrected": "All prompts and working files moved under assets; invalid temporary directory removed. Re-dispatch uses explicit absolute reference paths."
+}

@@ -1,0 +1,15 @@
+{
+  "id": "wolf_move_first_half",
+  "character": "wolf",
+  "version": "v02",
+  "frames": 2,
+  "prompt": "Use case: identity-preserve / precise-object-edit. Input1 AUTHORITATIVEoriginal64x64wolf enlarged8x defines physicalbody proportions. Input2 is TWOlegposes EDITTARGET: the legalternation is now correct, KEEP thoselegposes and lightNEAR/darkFARlegidentity. But Input2bodywas tooSHORT/WIDE. Input3correctedPOSEDIAGRAM defines properoutlineheight andpositions; colorsin3areNOTfurcolors. CorrectONLYoverallbodyproportions to MATCHInput1: highhunchedback/spineTOPy9, headearneary16, longneck/snoutlow atx58y35, allsupportpawsy54. TOTALwolfheight46logicalpixels andtotalwidth55pixels, aspect~1.2, NOT shortflatwideanimalratio1.5. Keepactualhead/back/rump atreferenceproportions, hipsabove knees, no stretchingwholeimage/no croppedtail. Twoequal64x64logicalcells SIDE BY SIDE shown8xnearest-neighbor, bodywithin x4..59 andy9..54,min2pxclearborder. Samebothposes head/backposition andsize, ground54, drawatidenticalscale. True transparentPNG, sameoriginalgray/whitefurpattern, darkoutline, upperleftlight, fourleganatomy. Do notcopycyan/pinkguidecolors, groundline, labelsorbackground. No effects/shadows/text/grid. PoseA NEAR/BRIGHTFRONTpaw(53,54)forward, NEARBRIGHThindpaw(12,54)back; farforelegbackunderbelly/farhindforward. PoseB nearfrontVERTICALsupportx43y54, nearhindLIFTEDpaw(21,43), farfrontLIFTEDpaw(38,42), farhindverticalsupportx26y54. Keepforelegposechangefromforwardtoverticalsupport.",
+  "reference_paths": [
+    "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/batch05_enemy_walk_2026-10-16/references/wolf_8x.png",
+    "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/batch05_enemy_walk_2026-10-16/originals/wolf_move_first_half_v01_raw.png",
+    "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/batch05_enemy_walk_2026-10-16/references/wolf_first_half_pose_guide_v02.png"
+  ],
+  "generated_path": "/Users/zhangjunqiu/.codex/generated_images/01a14377-c537-7a10-b5df-10043f63fbe0/exec-c279592d-ae18-41d0-b6fa-b6eaf9b75d0c.png",
+  "raw": "originals/wolf_move_first_half_v02_raw.png",
+  "status": "generated_pending_review"
+}

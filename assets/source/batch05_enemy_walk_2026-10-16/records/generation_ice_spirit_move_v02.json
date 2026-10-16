@@ -1,0 +1,14 @@
+{
+  "id": "ice_spirit_move",
+  "character": "ice_spirit",
+  "frames": 4,
+  "version": "v02",
+  "prompt": "Use case: identity-preserve. Input1 authoritative64x64projectwraith enlarged8x; preserve EXACThead/crown/chest/arms, proportions, originaliceRGB, darkoutline/upperleftlight. Four64x64logicalcells2x2 sheet at8xnearest-neighbor, true transparentPNG. SAME56pixelheight, bottomtailtipy59, bodycenter/headpositionunchangedallframes. Keep silhouettecompactwithin x8..55 and y4..59, TWOpxclearminimumedge. ONLY lowerexisting3 icytendrils belowwaist(y33..59) change theircurls:1twoendsturnleft/centertipdown;2outerendsturninward2pixels/centertipstaysy59;3outerendscurlright2pixels/centerS-curvereverse;4between3and1. Hands stay inreferencepose, tiny1pixelfabric/crystalshiftallowed. Do not invent any longstreamer acrossupperback/shoulders; no extraappendageabove waist. No wings/rearfin, no extendedleftbacktentacle, no tailbeyondoriginalcharacterbounds. No wholebodyverticaltranslation, no particles/glow/projectiles/scene/text/grids. Make visible articulatedlower-tailshapemotion whileheadstaysfixed. Original ordinaryicywraith. Input2 is FAILED4posesheet: remove invented longupperbacktentacles ONLY; useInput1asauthoritativecorrectanatomy. Keep bottomtendrilmotioncompact.",
+  "reference_paths": [
+    "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/batch05_enemy_walk_2026-10-16/references/ice_spirit_8x.png",
+    "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/batch05_enemy_walk_2026-10-16/originals/ice_spirit_move_v01_raw.png"
+  ],
+  "generated_path": "/Users/zhangjunqiu/.codex/generated_images/01a14377-c537-7a10-b5df-10043f63fbe0/exec-d5119e5e-c6ce-4934-8668-d105988d0d58.png",
+  "raw": "originals/ice_spirit_move_v02_raw.png",
+  "status": "generated_pending_review"
+}

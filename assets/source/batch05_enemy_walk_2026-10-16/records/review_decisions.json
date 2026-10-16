@@ -1,0 +1,143 @@
+{
+  "candidates/draugr_move_v01.png": {
+    "decision": "pass",
+    "checks": {
+      "exact_size_rgba_binary_alpha": true,
+      "same_reference_rgb_palette": true,
+      "right_facing_minimum2px_border": true,
+      "fixed_ground_baseline_every_frame": true,
+      "head_body_equipment_consistent_visual": true,
+      "six_distinct_contact_passing_lift_poses": true,
+      "near_far_legs_alternate_visibly": true,
+      "no_whole_body_only_bounce": true,
+      "loop_last_to_first_pose_continuous_visual": true,
+      "dark_background1x4x_reviewed": true,
+      "chrome8fps_and_paused_frame_reviewed": true,
+      "no_text_watermarks_scene_effects": true,
+      "game_tested": false
+    },
+    "note": "Six poses include opposite support half-cycle: frame4nearboot liftsback, frame5near knee forward. Original claws/armor retained. Ground59, original46RGB. Full contact sheet plus actualChrome1x/4x playback and paused phase4 inspected."
+  },
+  "candidates/draugr_elite_move_v02.png": {
+    "decision": "pass",
+    "checks": {
+      "exact_size_rgba_binary_alpha": true,
+      "same_reference_rgb_palette": true,
+      "right_facing_minimum2px_border": true,
+      "fixed_ground_baseline_every_frame": true,
+      "head_body_equipment_consistent_visual": true,
+      "six_distinct_contact_passing_lift_poses": true,
+      "near_far_legs_alternate_visibly": true,
+      "no_whole_body_only_bounce": true,
+      "loop_last_to_first_pose_continuous_visual": true,
+      "dark_background1x4x_reviewed": true,
+      "chrome8fps_and_paused_frame_reviewed": true,
+      "no_text_watermarks_scene_effects": true,
+      "game_tested": false
+    },
+    "note": "Axe/shield stay originalhands. Opposite support knee liftsforward inframe5; sixdistinctlegposes. Uniform+1pixel entire-frame translation fixesleftborder1->2 without repainting. Ground60, same originalRGB. Full contact and Chrome playback/pausedphase5 inspected."
+  },
+  "candidates/ice_spirit_move_v02.png": {
+    "decision": "pass",
+    "checks": {
+      "exact_size_rgba_binary_alpha": true,
+      "same_reference_rgb_palette": true,
+      "right_facing_minimum2px_border": true,
+      "head_body_equipment_consistent_visual": true,
+      "no_whole_body_only_bounce": true,
+      "loop_last_to_first_pose_continuous_visual": true,
+      "dark_background1x4x_reviewed": true,
+      "chrome8fps_and_paused_frame_reviewed": true,
+      "no_text_watermarks_scene_effects": true,
+      "game_tested": false,
+      "four_distinct_lower_tail_curls": true,
+      "original_head_crown_upper_body_retained": true,
+      "no_added_upper_back_appendages": true,
+      "lowest_tail_y59_every_frame": true
+    },
+    "note": "Only original lower tendrils undulate, noleg redesign orupperbackextension. All4poses checked in contact sheet and Chrome1x/4x playback plus paused phases. Head/crown remainsstable within1pixel rasterquantization; actualtailcontourchanges, nottranslatedwholebody. Same originalRGB palette as batch07attack."
+  },
+  "candidates/ice_spirit_elite_move_v01.png": {
+    "decision": "pass",
+    "checks": {
+      "exact_size_rgba_binary_alpha": true,
+      "same_reference_rgb_palette": true,
+      "right_facing_minimum2px_border": true,
+      "head_body_equipment_consistent_visual": true,
+      "no_whole_body_only_bounce": true,
+      "loop_last_to_first_pose_continuous_visual": true,
+      "dark_background1x4x_reviewed": true,
+      "chrome8fps_and_paused_frame_reviewed": true,
+      "no_text_watermarks_scene_effects": true,
+      "game_tested": false,
+      "four_distinct_lower_tail_curls": true,
+      "original_head_crown_upper_body_retained": true,
+      "no_added_upper_back_appendages": true,
+      "lowest_tail_y59_every_frame": true
+    },
+    "note": "Only original lower tendrils undulate, noleg redesign orupperbackextension. All4poses checked in contact sheet and Chrome1x/4x playback plus paused phases. Head/crown remainsstable within1pixel rasterquantization; actualtailcontourchanges, nottranslatedwholebody. Same originalRGB palette as batch07attack."
+  },
+  "candidates/frost_giant_move_v02.png": {
+    "decision": "pass",
+    "checks": {
+      "exact_size_rgba_binary_alpha": true,
+      "same_reference_rgb_palette": true,
+      "right_facing_minimum2px_border": true,
+      "head_body_equipment_consistent_visual": true,
+      "no_whole_body_only_bounce": true,
+      "loop_last_to_first_pose_continuous_visual": true,
+      "dark_background1x4x_reviewed": true,
+      "chrome8fps_and_paused_frame_reviewed": true,
+      "no_text_watermarks_scene_effects": true,
+      "game_tested": false,
+      "six_distinct_contact_passing_lift_poses": true,
+      "near_far_legs_alternate_visibly": true,
+      "fixed_feet_baseline93": true,
+      "club_carried_above_support_foot_ground": true
+    },
+    "note": "Preserves87pxheight andmassiveproportions. Opposite support visiblephase4(rearnearbootlift)/phase5(near kneeforward). Originalclub/armor unchanged; all6frames uniformly translated-1x tofixframe5rightmargin. Wholeframeformat alignment only; no pixels repainted. Chrome phase3/4and1xstandingcomparison inspected."
+  },
+  "candidates/frost_giant_elite_move_v02.png": {
+    "decision": "pass",
+    "checks": {
+      "exact_size_rgba_binary_alpha": true,
+      "same_reference_rgb_palette": true,
+      "right_facing_minimum2px_border": true,
+      "fixed_feet_baseline93": true,
+      "same90pxbodyheight": true,
+      "head_body_equipment_consistent_visual": true,
+      "shield_and_club_retained_no_shrink": true,
+      "six_distinct_contact_passing_lift_poses": true,
+      "near_far_legs_alternate_visibly": true,
+      "no_whole_body_only_bounce": true,
+      "loop_last_to_first_pose_continuous_visual": true,
+      "dark_background1x4x_reviewed": true,
+      "chrome8fps_and_paused_phase5_6_reviewed": true,
+      "no_text_watermarks_scene_effects": true,
+      "game_tested": false
+    },
+    "note": "Second generation bendselbows and brings clubhand/shieldinward, preserves90pxbodyheight andweaponsize. All6crowntopsy4 andbootground93, 2pxmargin passes. Opposite nearbootbackliftphase4 andnear kneeforwardphase5, recoverypassingphase6. Chrome1xstandingcomparison,4xplayback andpaused5/6 reviewed."
+  },
+  "candidates/wolf_move_v04.png": {
+    "decision": "pass",
+    "checks": {
+      "exact_size_rgba_binary_alpha": true,
+      "same_original41rgb_palette": true,
+      "right_facing_minimum2px_border": true,
+      "fixed_paw_baseline54": true,
+      "four_distinct_diagonal_contact_passing_poses": true,
+      "near_front_foreleg_goes_back_under_belly_in_phase3_4": true,
+      "opposite_near_hind_and_far_foreleg_support_visibly_alternate": true,
+      "four_limb_anatomy_across_cycle_with_natural_occlusion": true,
+      "same_body_head_scale_every_frame": true,
+      "no_whole_body_only_bounce": true,
+      "loop_last_to_first_pose_continuous_visual": true,
+      "dark_background1x4x_reviewed": true,
+      "reference1x2x_comparison_reviewed": true,
+      "chrome8fps_and_paused_phase2_3_4_reviewed": true,
+      "no_text_watermarks_scene_effects": true,
+      "game_tested": false
+    },
+    "note": "Sixframe firsttworounds repeated nearforeleg. Explicitnear/farposeguides generated twooppositehalves, finalfourframe sheet preserves correctalternation. Oneuniformisotropicscale fits fullwidth60px, no perframe scaling orbody repaint. Allfourbboxes42pxhigh at y13..54 versusstatic46pxhigh y9..54; slightlylowerwalkingpose explicitly reviewed in referencecomparison. Allfourhead/bodyproportions stable. Rawv03height-onlynormalization clippedtail, rejected; v04fitscompleteoutlinewith2pxborder. Charactertransitioningame remains pending."
+  }
+}

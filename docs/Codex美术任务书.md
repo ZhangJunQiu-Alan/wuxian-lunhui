@@ -64,26 +64,12 @@
 | 第 2 批 | 霜巨人与精英 96×96；赫列姆、苏尔特、芬里尔 192×192；尘世巨蟒头、身、尾；火巨人、霜巨人老兵 96×96 | `sprites/enemies/`、`sprites/bosses/` |
 | 第 3 批 | 斯库尔、哈提、赫列姆的 idle、move、windup、attack，哈提嚎叫、赫列姆举盾和砸地 | `sprites/bosses/` |
 | 第 4 批（首批） | 第 1 关地块 7 种（`snow_01`~`04`、`snow_trampled`、`frozen_dirt`、`ice`）、物件 13 种；第 2 关、第 3 关的地块和物件各一批（关卡还没做，先放着） | `sprites/ground/`、`sprites/props/` |
+| 第 5 批 | 第 1 关小怪与精英的行走 `<id>_move.png`（尸鬼、冬狼、冰霜精魂、霜巨人及精英）；第 2、3 关的小怪等那两关开工后再做 | `sprites/enemies/` |
 | 第 7 批 | 剑士攻击；第 1 关小怪和精英的攻击；枪手 `gunslinger`、刺客 `assassin`、法师 `mage` 的全套动作和大招特写 | `sprites/characters/`、`sprites/enemies/` |
 
-**剩下的顺序：第 5 批 → 第 4 批补做 → 第 6 批。** 每一批都完成并自检后再做下一批。
+**剩下的顺序：第 4 批补做 → 第 6 批。** 每一批都完成并自检后再做下一批。
 
-### 第 5 批（最优先）：第 1 关小怪与精英的行走动画
-
-用户试玩反馈「怪物只会上下跳、没有移动感」，这是现在画面上最大的问题。`assets/source/batch05_enemy_walk_2026-10-16/` 里已经有参考图和调色板记录，可以接着做。
-
-放在 `assets/sprites/enemies/`，文件名 `<id>_move.png`，4~6 帧行走循环，帧尺寸与静态图相同：
-
-| id | 尺寸 | 要点 |
-| --- | --- | --- |
-| `draugr`、`draugr_elite` | 64×64 | 两条腿交替迈步，拖着脚走的亡者步态 |
-| `wolf` | 64×64 | 四条腿交替的小跑 |
-| `ice_spirit`、`ice_spirit_elite` | 64×64 | 没有腿，用飘带、冰晶的飘动表现前进 |
-| `frost_giant`、`frost_giant_elite` | 96×96 | 沉重的大步，身体随步伐起伏 |
-
-**要能看出腿在交替迈步**，不能只是整体上下移动。第 2、3 关的小怪等那两关开工后再做。
-
-### 第 4 批补做：第 1 关地图
+### 第 4 批补做（最优先）：第 1 关地图
 
 已有的不用重做。按下面的优先级补做缺少的部分，放在 `assets/sprites/ground/midgard/`、`props/midgard/`、`borders/midgard/`、`decals/midgard/`。规格：地块 64×64，可无缝平铺；物件、贴花为透明背景 PNG。物件按俯视略带正面（和角色同一视角）绘制，**底边就是物件的落地位置**。
 

@@ -1,0 +1,10 @@
+{
+  "id": "wolf_move_first_half",
+  "character": "wolf",
+  "version": "v01",
+  "frames": 2,
+  "prompt": "Use case: identity-preserve. Input1 EXACTwinterwolfpixelsprite enlarged8x, match itshead/torso/tail/furcolorsandsize, not a redesign. Input2 LEGPOSE DIAGRAM ONLY cyan=NEARlightlegs(frontlayer), pink=FARdarklegsbehind; useitforposes ONLY, no diagramcolors. TWO equal64x64logicalcells SIDE BY SIDE at8xnearest-neighbor, true transparentbackground. BodyheadcoordinatesfixedasInput1: earsnear y9, pawsgroundy54, silhouettewithin x4..59,2pxclearborder. PoseA contact: NEAR/BRIGHTFRONTleg stretchesFORWARDRIGHTpaw(53,54), NEAR/BRIGHThind reachesBACKLEFTpaw(12,54), FAR/DARKfrontbendsbackunderbellypaw(33,48), FAR/DARKhind forwardpaw(32,54). PoseB passing: NEAR/BRIGHTFRONT legsupportsVERTICAL shoulder(42,29)->paw(43,54); NEAR/BRIGHThindlegbentknee andPAWLIFTED at(21,43); FAR/DARKfrontpawLIFTEDunderchestat(38,42); FAR/DARKhindsupportat(26,54). Forelegshavecorrectshoulders,hindlegshavecorrecthips, FOURlegsFOURpaws,noextralimbs. Preserveexactwolfhead/back/tailposeand46pixeloverallheight, no torsoverticalshift/no stretch. Same originalgraywhitefur,darkoutlines,upperleftlight, lowrescrisp pixelclusters. No text/grid/groundlines/shadows/FX/newfurpatterns. Nearforelegmustchange fromextendedforwardinA toverticalsupportinB asdiagram.",
+  "generated_path": "/Users/zhangjunqiu/.codex/generated_images/01a14377-c537-7a10-b5df-10043f63fbe0/exec-ab10c39e-237f-47de-b596-e60bc5b21ddc.png",
+  "raw": "originals/wolf_move_first_half_v01_raw.png",
+  "status": "generated_pending_review"
+}

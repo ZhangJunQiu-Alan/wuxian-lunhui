@@ -1,0 +1,15 @@
+{
+  "id": "wolf_move_opposite_half",
+  "character": "wolf",
+  "version": "v02",
+  "frames": 2,
+  "prompt": "Use case: identity-preserve / precise-object-edit. Input1 AUTHORITATIVEoriginal64x64wolf enlarged8x defines physicalbody proportions. Input2 is TWOlegposes EDITTARGET: the legalternation is now correct, KEEP thoselegposes and lightNEAR/darkFARlegidentity. But Input2bodywas tooSHORT/WIDE. Input3correctedPOSEDIAGRAM defines properoutlineheight andpositions; colorsin3areNOTfurcolors. CorrectONLYoverallbodyproportions to MATCHInput1: highhunchedback/spineTOPy9, headearneary16, longneck/snoutlow atx58y35, allsupportpawsy54. TOTALwolfheight46logicalpixels andtotalwidth55pixels, aspect~1.2, NOT shortflatwideanimalratio1.5. Keepactualhead/back/rump atreferenceproportions, hipsabove knees, no stretchingwholeimage/no croppedtail. Twoequal64x64logicalcells SIDE BY SIDE shown8xnearest-neighbor, bodywithin x4..59 andy9..54,min2pxclearborder. Samebothposes head/backposition andsize, ground54, drawatidenticalscale. True transparentPNG, sameoriginalgray/whitefurpattern, darkoutline, upperleftlight, fourleganatomy. Do notcopycyan/pinkguidecolors, groundline, labelsorbackground. No effects/shadows/text/grid. BOTHposes: NEAR/BRIGHTFRONTleg goes BACKUNDERBELLY LEFT ofshoulder, FAR/DARKFRONTleg reachesFORWARDRIGHT. PoseA nearfrontpaw(31,48), farfrontpaw(54,54), nearhindpaw(32,54), farhindpaw(12,54). PoseB nearfrontpawLIFTED(37,42), farfrontsupportx54y54, nearhindverticalsupportx24y54, farhindpawliftedbehind. Keepnearfrontbackwardbendunmistakable.",
+  "reference_paths": [
+    "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/batch05_enemy_walk_2026-10-16/references/wolf_8x.png",
+    "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/batch05_enemy_walk_2026-10-16/originals/wolf_move_opposite_half_v01_raw.png",
+    "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/batch05_enemy_walk_2026-10-16/references/wolf_opposite_half_pose_guide_v02.png"
+  ],
+  "generated_path": "/Users/zhangjunqiu/.codex/generated_images/01a14377-c537-7a10-b5df-10043f63fbe0/exec-6875952c-6f01-4210-b1c6-55f0f4826051.png",
+  "raw": "originals/wolf_move_opposite_half_v02_raw.png",
+  "status": "generated_pending_review"
+}

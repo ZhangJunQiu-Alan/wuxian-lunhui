@@ -1,0 +1,431 @@
+{
+  "date": "2026-10-16",
+  "scope": "batch05 firststage7only",
+  "assets": 7,
+  "technical_checks_passed": true,
+  "visual_review_records": "records/review_decisions.json",
+  "ground_4x4_tiling": "not_applicable_enemy_animations",
+  "game_tested": false,
+  "items": [
+    {
+      "id": "draugr_move",
+      "size": [
+        384,
+        64
+      ],
+      "frames": 6,
+      "colors": 46,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "baseline": 59,
+      "bboxes": [
+        [
+          5,
+          5,
+          53,
+          60
+        ],
+        [
+          5,
+          4,
+          52,
+          60
+        ],
+        [
+          5,
+          4,
+          53,
+          60
+        ],
+        [
+          6,
+          5,
+          54,
+          60
+        ],
+        [
+          4,
+          4,
+          53,
+          60
+        ],
+        [
+          4,
+          4,
+          52,
+          60
+        ]
+      ],
+      "sha256": "a1ead0885be3041162107fce0f99b7fd49f84452f208d65a445a362c098be109",
+      "approved_candidate_output_identical": true,
+      "palette_all_original_rgb": true,
+      "all_frames_unique": true,
+      "gif_4x_pixels_equal_png_composite": true,
+      "gif_durations_ms": [
+        120,
+        130,
+        120,
+        130,
+        120,
+        130
+      ],
+      "technical_checks_passed": true
+    },
+    {
+      "id": "draugr_elite_move",
+      "size": [
+        384,
+        64
+      ],
+      "frames": 6,
+      "colors": 41,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "baseline": 60,
+      "bboxes": [
+        [
+          2,
+          4,
+          60,
+          61
+        ],
+        [
+          2,
+          4,
+          61,
+          61
+        ],
+        [
+          2,
+          4,
+          60,
+          61
+        ],
+        [
+          2,
+          3,
+          61,
+          61
+        ],
+        [
+          2,
+          4,
+          62,
+          61
+        ],
+        [
+          3,
+          3,
+          61,
+          61
+        ]
+      ],
+      "sha256": "354437191d490c73de8669def993730d19e4aecde8fb2771de575e2e7e86da53",
+      "approved_candidate_output_identical": true,
+      "palette_all_original_rgb": true,
+      "all_frames_unique": true,
+      "gif_4x_pixels_equal_png_composite": true,
+      "gif_durations_ms": [
+        120,
+        130,
+        120,
+        130,
+        120,
+        130
+      ],
+      "technical_checks_passed": true
+    },
+    {
+      "id": "ice_spirit_move",
+      "size": [
+        256,
+        64
+      ],
+      "frames": 4,
+      "colors": 48,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "baseline": 59,
+      "bboxes": [
+        [
+          4,
+          4,
+          60,
+          60
+        ],
+        [
+          4,
+          4,
+          60,
+          60
+        ],
+        [
+          4,
+          5,
+          60,
+          60
+        ],
+        [
+          4,
+          5,
+          60,
+          60
+        ]
+      ],
+      "sha256": "1079bbe802dc060c376d34cc88e449e660d8b1ad05d4fe5dd86630db9193813a",
+      "approved_candidate_output_identical": true,
+      "palette_all_original_rgb": true,
+      "all_frames_unique": true,
+      "gif_4x_pixels_equal_png_composite": true,
+      "gif_durations_ms": [
+        120,
+        130,
+        120,
+        130
+      ],
+      "technical_checks_passed": true
+    },
+    {
+      "id": "ice_spirit_elite_move",
+      "size": [
+        256,
+        64
+      ],
+      "frames": 4,
+      "colors": 47,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "baseline": 59,
+      "bboxes": [
+        [
+          9,
+          4,
+          58,
+          60
+        ],
+        [
+          9,
+          4,
+          58,
+          60
+        ],
+        [
+          8,
+          4,
+          58,
+          60
+        ],
+        [
+          8,
+          5,
+          58,
+          60
+        ]
+      ],
+      "sha256": "c15aedd8503604c4bae6f7e3ef32903c1fb599879423e7ff98c15a78d21a2d58",
+      "approved_candidate_output_identical": true,
+      "palette_all_original_rgb": true,
+      "all_frames_unique": true,
+      "gif_4x_pixels_equal_png_composite": true,
+      "gif_durations_ms": [
+        120,
+        130,
+        120,
+        130
+      ],
+      "technical_checks_passed": true
+    },
+    {
+      "id": "frost_giant_move",
+      "size": [
+        576,
+        96
+      ],
+      "frames": 6,
+      "colors": 48,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "baseline": 93,
+      "bboxes": [
+        [
+          4,
+          7,
+          91,
+          94
+        ],
+        [
+          4,
+          7,
+          91,
+          94
+        ],
+        [
+          5,
+          7,
+          91,
+          94
+        ],
+        [
+          3,
+          8,
+          91,
+          94
+        ],
+        [
+          7,
+          8,
+          94,
+          94
+        ],
+        [
+          5,
+          8,
+          93,
+          94
+        ]
+      ],
+      "sha256": "9c5ff93caf881c8fd0ddc45674468148d3641fcbe244c32b960ae5fd0c20d8da",
+      "approved_candidate_output_identical": true,
+      "palette_all_original_rgb": true,
+      "all_frames_unique": true,
+      "gif_4x_pixels_equal_png_composite": true,
+      "gif_durations_ms": [
+        120,
+        130,
+        120,
+        130,
+        120,
+        130
+      ],
+      "technical_checks_passed": true
+    },
+    {
+      "id": "frost_giant_elite_move",
+      "size": [
+        576,
+        96
+      ],
+      "frames": 6,
+      "colors": 48,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "baseline": 93,
+      "bboxes": [
+        [
+          4,
+          4,
+          93,
+          94
+        ],
+        [
+          5,
+          4,
+          93,
+          94
+        ],
+        [
+          6,
+          4,
+          93,
+          94
+        ],
+        [
+          2,
+          4,
+          94,
+          94
+        ],
+        [
+          2,
+          4,
+          93,
+          94
+        ],
+        [
+          3,
+          4,
+          93,
+          94
+        ]
+      ],
+      "sha256": "15addd241638773aa31c815b6d60c3c121ce23b3374e1e062b7735f6ac163613",
+      "approved_candidate_output_identical": true,
+      "palette_all_original_rgb": true,
+      "all_frames_unique": true,
+      "gif_4x_pixels_equal_png_composite": true,
+      "gif_durations_ms": [
+        120,
+        130,
+        120,
+        130,
+        120,
+        130
+      ],
+      "technical_checks_passed": true
+    },
+    {
+      "id": "wolf_move",
+      "size": [
+        256,
+        64
+      ],
+      "frames": 4,
+      "colors": 41,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "baseline": 54,
+      "bboxes": [
+        [
+          2,
+          13,
+          61,
+          55
+        ],
+        [
+          2,
+          13,
+          61,
+          55
+        ],
+        [
+          2,
+          13,
+          62,
+          55
+        ],
+        [
+          2,
+          13,
+          62,
+          55
+        ]
+      ],
+      "sha256": "ccff4611cc3cdfeb68fae2a8ad81bd4f1552549391012db5d740f23859be5211",
+      "approved_candidate_output_identical": true,
+      "palette_all_original_rgb": true,
+      "all_frames_unique": true,
+      "gif_4x_pixels_equal_png_composite": true,
+      "gif_durations_ms": [
+        120,
+        130,
+        120,
+        130
+      ],
+      "technical_checks_passed": true
+    }
+  ]
+}

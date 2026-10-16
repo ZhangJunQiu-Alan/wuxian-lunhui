@@ -74,3 +74,11 @@
 ### 角色文件改名（2026-10-16）
 
 角色素材的文件名从原型人物名改为职业名：`musashi_*` → `swordsman_*`，`annie_*` → `gunslinger_*`，`lanling_*` → `assassin_*`，`merlin_*` → `mage_*`。图片内容没有变化，上文各批记录里的旧文件名对应这些新文件。`assets/source/` 里的原稿保留当时的文件名。
+
+### 第5批第1关7种敌人行走（2026-10-16，制作中）
+
+用户明确授权本任务完成第1关7条行走动画，沿用已批准的内置image_gen路线及本台账同日核验的OpenAI输出所有权/商业使用条款（https://openai.com/policies/terms-of-use/）。仅上传本项目既有原创敌人精灵；若需修帧，沿用已核查的免费Piskel用户保留作品权利。Pillow继续按MIT-CMU用于尺寸、原图RGB固定色板、二值透明、整帧定位/排帧和预览，不在Python重画角色。实际原图、Prompt、候选与自检记录放在source/batch05_enemy_walk_2026-10-16。无新增工具、注册、付款或收费API；本条不代表验收完成。
+
+第5批第1关交付补记（2026-10-16）：7条行走完成美术自检，共36帧（四种双足6帧、冬狼及两种精魂4帧）；15张内置image_gen原图、实际Prompt、上传参考与失败候选均已归档。继续沿用本台账已核验OpenAI输出商业使用与所有权条款、Pillow MIT-CMU；Pillow另绘制原创四肢姿势线稿仅作提示参考，精灵改动由内置图像工具完成，未在Python重画身体。本批没有实际用Piskel修帧，没有新增第三方素材、登录注册、付费或收费API。7个PNG均使用原图RGB固定色板，与第7批攻击一致；7份GIF逐帧像素与PNG深色背景4倍合成完全相同。来源、自检和哈希见source/batch05_enemy_walk_2026-10-16/manifest.json及records/final_audit.json。状态为美术自检通过，尚未Godot实测；第2/3关另外7种敌人本次未做。
+
+Claude 验收（2026-10-16）：7 个帧条已在 Godot 内实测，切帧、朝向翻转、落脚线均正常，验收通过。

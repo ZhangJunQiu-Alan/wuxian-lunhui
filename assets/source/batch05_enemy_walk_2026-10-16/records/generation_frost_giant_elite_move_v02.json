@@ -1,0 +1,10 @@
+{
+  "id": "frost_giant_elite_move",
+  "character": "frost_giant_elite",
+  "version": "v02",
+  "frames": 6,
+  "prompt": "Use case: precise-object-edit / identity-preserve. Input1 authoritative96x96elitegiant sprite enlarged8x. Input2 SIXwalkingposes EDITTARGET. KEEP allsixlegposes, head/crown/body/armor size, originalcolors, sameclubandshield, unchanged90logicalpixelbodyheight andbootsgroundy93. Fix ONLY equipment span: left-side clubholdinghand extends2pixelsoutsidecanvaswhenheadaligned. Bendthatelbowand moveENTIREholdinghand/clubshaft/head RIGHTby4logicalpixels, andraiseclubjust3logicalpixels. RIGHTsideroundshield movesLEFTby3logicalpixels bybendingelbow. Do not shrinkbody, head, shieldorclub; do not replaceweapon. Final6cells96x96logical,3columns x2rows, showat6xnearest-neighbor pixelart. FaceRIGHT withoriginal3/4view. Same headcenterx48,crowntopy4,bootgroundy93allframes, unchangedmassive90pxheight. Allvisibleparts mustfitx5..90, soMINIMUM5pxleftandrightmargin; clubbottom atmosty89, nobelowboot. Armsbendnaturallybehindshield/clubhands atwaist, carrycompactlywhilewalking. SameNEARlegforwardinframe1, NEARlegbentbackliftedin4/FARlegforward, NEARkneeforwardliftedin5. Preservealternatingwalk. Maintain upperleftlight/darkoutline andsamefrostblue/fur/leatherpalette. True transparentPNG, no text/grid/effects/shadow/scene ornewaccessories.",
+  "generated_path": "/Users/zhangjunqiu/.codex/generated_images/01a14377-c537-7a10-b5df-10043f63fbe0/exec-36772f3d-0e41-4a7f-9d6c-aad0750d8fdd.png",
+  "raw": "originals/frost_giant_elite_move_v02_raw.png",
+  "status": "generated_pending_review"
+}
