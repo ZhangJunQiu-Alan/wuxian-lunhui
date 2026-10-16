@@ -11,6 +11,7 @@ class_name LevelDB
 ##   map     固定地图：size 是场地大小（中心在原点，玩家从中心出发），玩家和敌人都不能离开
 ##           border 是四周屏障带的宽度（冰崖、冰海、松林），镜头看得到但走不进去
 ##           landmarks 地标：pos 中心、radius 范围；写了 quest / hidden 的地标，该支线（隐藏支线）就出现在这里
+##           quest 可以是一个 id，也可以是几个 id 的数组；不在任何地标上的支线出现在玩家附近
 ##           layout 铺地面、摆物件的脚本（继承 MapLayer），没有就画网格
 
 const NORSE_1 := {
@@ -21,12 +22,12 @@ const NORSE_1 := {
 		"border": 192.0,
 		"layout": "res://scripts/world/midgard_map.gd",
 		"landmarks": [
-			{"id": "crossroads", "name": "十字路口", "pos": Vector2(0, 0), "radius": 320.0, "hidden": "runes"},
+			{"id": "crossroads", "name": "十字路口", "pos": Vector2(0, 0), "radius": 320.0, "quest": ["fate", "ember"], "hidden": "runes"},
 			{"id": "village", "name": "被雪掩埋的村庄", "pos": Vector2(-1350, -1250), "radius": 650.0, "quest": "bonfire"},
-			{"id": "harbor", "name": "峡湾码头", "pos": Vector2(1450, -1400), "radius": 550.0, "hidden": "sea_giant"},
+			{"id": "harbor", "name": "峡湾码头", "pos": Vector2(1450, -1400), "radius": 550.0, "quest": "priests", "hidden": "sea_giant"},
 			{"id": "stones", "name": "奥丁的符文石阵", "pos": Vector2(-1500, 950), "radius": 420.0, "quest": "ravens"},
-			{"id": "mounds", "name": "古老的墓丘", "pos": Vector2(-100, 1450), "radius": 700.0, "quest": "valkyrie", "hidden": "einherjar"},
-			{"id": "lake", "name": "冰湖", "pos": Vector2(1350, 1100), "radius": 650.0, "hidden": "fishing"},
+			{"id": "mounds", "name": "古老的墓丘", "pos": Vector2(-100, 1450), "radius": 700.0, "quest": ["valkyrie", "nails"], "hidden": "einherjar"},
+			{"id": "lake", "name": "冰湖", "pos": Vector2(1350, 1100), "radius": 650.0, "quest": "ice_warriors", "hidden": "fishing"},
 		],
 	},
 	"hp_growth": 180.0,   # 每过这么多秒，敌人血量多 100%
@@ -52,7 +53,7 @@ const NORSE_1 := {
 	"final_boss": "hrym",
 	"clear_reward": 300,  # 通关额外奖励点
 	"quest_slots": [150.0, 450.0, 720.0],
-	"quests": ["bonfire", "ravens", "valkyrie"],
+	"quests": ["bonfire", "ravens", "valkyrie", "nails", "ice_warriors", "priests", "cold_wave", "fate", "ember"],
 	"hidden_from": 30.0,
 	"hidden_quests": [
 		{"id": "fishing", "hint": 100.0},

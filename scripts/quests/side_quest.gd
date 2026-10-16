@@ -7,7 +7,8 @@ extends Node2D
 ##   _on_accept()    接受时做什么（刷怪、放置物件）
 ##   _on_update()    每帧检查目标，更新 objective，完成时调用 complete(true)
 ##   _reward()       完成后发奖励，返回奖励说明文字
-##   _draw_quest()   画任务物件（篝火、渡鸦……）
+##   _draw_quest()   画任务物件（篝火、渡鸦……），画在角色下面
+##   _draw_overlay() 画在角色上面的东西（文字、头顶的物件、风雪），用 overlay.draw_*()
 ##   _active_targets() 进行中时，屏幕边缘箭头要指向哪些位置
 ##
 ## 隐藏支线（is_hidden = true）：一开局就藏在地标里，没有光柱和箭头，也不会消失。
@@ -38,12 +39,17 @@ var blocked := false  # 隐藏支线：已经有别的隐藏支线在进行
 var state := "offered"
 var time_left := 0.0
 var was_accepted := false
+var overlay: Node2D  # 画在角色上面的图层
 var _offer_left := OFFER_TIME
 var _time := 0.0
 
 
 func _ready() -> void:
 	z_index = -1  # 画在敌人和玩家下面
+	overlay = Node2D.new()
+	overlay.z_index = 20
+	overlay.draw.connect(_draw_overlay)
+	add_child(overlay)
 	if is_hidden:
 		marker_pos = _hidden_spot()
 	elif landmark.is_empty():
@@ -58,6 +64,7 @@ func _ready() -> void:
 func _process(delta: float) -> void:
 	_time += delta
 	queue_redraw()
+	overlay.queue_redraw()
 	match state:
 		"offered":
 			if not is_hidden:
@@ -122,6 +129,10 @@ func _active_targets() -> Array[Vector2]:
 
 
 func _draw_quest() -> void:
+	pass
+
+
+func _draw_overlay() -> void:
 	pass
 
 

@@ -142,7 +142,7 @@ func _physics_process(delta: float) -> void:
 	if _flash_time > 0.0:
 		_flash_time -= delta
 		queue_redraw()
-	if not is_instance_valid(target):
+	if not is_instance_valid(target) or behavior == "still":
 		return
 	if _frozen_time > 0.0:  # 被定住时不移动、不攻击
 		_frozen_time -= delta
@@ -330,6 +330,14 @@ func _draw() -> void:
 	if _sprite:
 		SpriteVisual.draw_shadow(self, radius, Color(1.0, 0.8, 0.3, 0.7) if is_elite else Color(0, 0, 0, 0.35))  # 精英怪是金色影子
 		_sprite.modulate = tint
+		return
+	if behavior == "still":  # 没有素材的冰块：一块六边形的冰
+		var points := PackedVector2Array()
+		for i in 6:
+			points.append(Vector2.from_angle(TAU * i / 6.0 + PI / 6.0) * radius * pop * Vector2(1.0, 1.25))
+		draw_colored_polygon(points, color * tint if _flash_time <= 0.0 else Color.WHITE)
+		points.append(points[0])
+		draw_polyline(points, Color(0.9, 0.97, 1.0, 0.8), 2.0)
 		return
 	if is_elite:
 		draw_circle(Vector2.ZERO, radius * pop + 4.0, Color(1.0, 0.8, 0.3, 0.9))  # 精英怪带金边

@@ -1,7 +1,7 @@
 class_name EnemyDB
 ## 敌人数据表
 ##   hp/speed/damage/radius/xp/color  基础属性
-##   behavior  chase = 贴身追击（默认）；ranged = 保持距离射击
+##   behavior  chase = 贴身追击（默认）；ranged = 保持距离射击；still = 不动也不攻击（支线里要打碎的目标）
 ##   mass      体重，越重越不容易被其他敌人挤开（默认 1）
 ##   远程敌人额外字段：shoot_range 射程，shoot_cooldown 射击间隔，projectile_damage 子弹伤害
 ##   max_alive 同时存在的上限，超过时改刷尸鬼（防止远程怪越积越多）
@@ -19,6 +19,9 @@ const ALL := {
 		"shoot_range": 320.0, "shoot_cooldown": 2.5, "projectile_damage": 7.0, "max_alive": 30, "gait": "float"},
 	"frost_giant": {"name": "霜巨人斥候", "hp": 50.0, "speed": 45.0, "damage": 18.0, "radius": 24.0, "xp": 6,
 		"color": Color(0.45, 0.55, 0.85), "mass": 4.0, "gait": "heavy", "attack": "slam"},
+	# 支线「冰下的战士」的冰块：不会动，打碎它
+	"ice_block": {"name": "冰封的战士", "hp": 60.0, "speed": 0.0, "damage": 0.0, "radius": 18.0, "xp": 3,
+		"color": Color(0.6, 0.85, 1.0, 0.9), "behavior": "still", "mass": 1000.0},
 }
 
 ## 精英怪的属性倍率

@@ -30,6 +30,7 @@ var rerolls := 0          # 本局还能重抽几次升级选项（主神空间�
 var revives := 0          # 本局还能复活几次（主神空间购买）
 var choice_count := 3     # 升级时有几个选项（法师的被动「先知」是 4 个）
 var frenzy_time := 0.0    # 枪手「狂野西部秀」剩余时间
+var speed_mult := 1.0     # 支线临时改变的移速（寒潮里冻僵、搬运余烬）
 var shield_time := 0.0    # 无敌剩余时间（刺客「入阵曲」），和受伤后的无敌不同，不会闪烁
 
 # 全局加成，所有武器和技能共享
@@ -136,7 +137,7 @@ func _physics_process(delta: float) -> void:
 		dir = (global_position - _fear_from).normalized()
 	if dir != Vector2.ZERO:
 		facing = dir.normalized()
-	velocity = dir * move_speed * (1.3 if frenzy_time > 0.0 else 1.0)  # 狂野西部秀：移速 +30%
+	velocity = dir * move_speed * speed_mult * (1.3 if frenzy_time > 0.0 else 1.0)  # 狂野西部秀：移速 +30%
 	move_and_slide()
 	position = MapLayer.push_out(Game.clamp_to_map(position, RADIUS), RADIUS)
 

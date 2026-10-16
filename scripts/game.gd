@@ -1,5 +1,7 @@
 class_name Game
 extends Node2D
+
+signal enemy_killed(enemy: Enemy)
 ## 一局战斗的总控：创建玩家、按时间刷怪、更新 HUD、处理死亡
 ## 地图是固定大小的方形场地（LevelDB 的 map），玩家和敌人都被限制在 bounds 里
 
@@ -206,6 +208,7 @@ func _on_enemy_killed(enemy: Enemy) -> void:
 	_alive_by_type[enemy.type_id] = _alive_by_type.get(enemy.type_id, 1) - 1
 	kills += 1
 	player.add_ult_energy(1.0)
+	enemy_killed.emit(enemy)
 
 
 ## 不算击杀地移除一个敌人（例如逃走了），不掉经验
@@ -292,12 +295,17 @@ func _on_hidden_quest_accepted(secret: SideQuest) -> void:
 	hud.announce(secret.offer_text)
 
 
-## 写了 key = id 的地标（例如 "quest": "bonfire"），没有就返回空字典
+## 写了 key = id 的地标（例如 "quest": "bonfire"，或 "quest": ["valkyrie", "nails"]），没有就返回空字典
 func _landmark_with(key: String, id: String) -> Dictionary:
 	for landmark: Dictionary in level_data.map.landmarks:
-		if landmark.get(key, "") == id:
+		var value: Variant = landmark.get(key, "")
+		if value is Array and id in value or value is String and value == id:
 			return landmark
 	return {}
+
+
+func landmark_by_id(id: String) -> Dictionary:
+	return _landmark_with("id", id)
 
 
 func _on_quest_finished(finished_quest: SideQuest, success: bool) -> void:

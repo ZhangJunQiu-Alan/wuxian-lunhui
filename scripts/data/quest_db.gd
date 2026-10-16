@@ -11,6 +11,18 @@ static func create(id: String) -> SideQuest:
 			return RavensQuest.new()
 		"valkyrie":
 			return ValkyrieQuest.new()
+		"nails":
+			return NailsQuest.new()
+		"ice_warriors":
+			return IceWarriorsQuest.new()
+		"priests":
+			return PriestsQuest.new()
+		"cold_wave":
+			return ColdWaveQuest.new()
+		"fate":
+			return FateQuest.new()
+		"ember":
+			return EmberQuest.new()
 		"fishing":
 			return FishingQuest.new()
 		"sea_giant":
