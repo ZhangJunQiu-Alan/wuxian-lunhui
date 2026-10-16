@@ -1,0 +1,3499 @@
+{
+  "batch": 4,
+  "name": "maps_and_environment_props",
+  "date": "2026-10-16",
+  "status": "complete_self_checked_pending_game_review",
+  "scope": "batch04_only; batch07 handled in another task",
+  "ground_count": 20,
+  "prop_count": 23,
+  "final_count": 43,
+  "raw_count": 10,
+  "game_tested": false,
+  "commercial_use_record": "../../LICENSES.md",
+  "tools_actually_used": [
+    "Chrome ChatGPT web",
+    "Pillow 12.1.1",
+    "Python standard library, original project scripts"
+  ],
+  "piskel_used_in_this_batch": false,
+  "tool_choice": "Reuse the commercially verified generation and local normalization route; Piskel compared previously but not needed for this static batch. No new account/API/payment.",
+  "palette_policy": "one shared palette per map, at most48 opaque RGB colors across its ground and props",
+  "ground_alpha_exception": "Ground is fully opaque RGBA filling64x64; transparency and2px margin apply to props, not terrain",
+  "previews": {
+    "contexts": "previews/<level>_context_1x.png (local art composites, not game screenshots)",
+    "static_slideshow": "previews/map_preview.gif (3frames at1500ms, not animation)",
+    "scroll_qa": "previews/tile_scroll_8fps.gif (16frames alternating120/130ms; static terrain scrolling)",
+    "mixed": "previews/<level>_mixed_base_4x4.png"
+  },
+  "backups": [],
+  "originals": [
+    {
+      "file": "originals/helheim_ground_v01_raw.png",
+      "size": [
+        1774,
+        887
+      ],
+      "mode": "RGB",
+      "sha256": "2f9c3cad58abb10659ccfd6599d1d4804fa4951c323bbe779000cf7248ae6fbb"
+    },
+    {
+      "file": "originals/helheim_props_v01_raw.png",
+      "size": [
+        1536,
+        1024
+      ],
+      "mode": "RGB",
+      "sha256": "3615fea1f81a6740b2bc996307e9c95ca0c8e1637c33eb4f17ba90efa2df618f"
+    },
+    {
+      "file": "originals/midgard_ground_v01_raw.png",
+      "size": [
+        1774,
+        887
+      ],
+      "mode": "RGB",
+      "sha256": "b392470d5f4e260929dcc0a8da8140e23aef37ea6b62e66a423e25a0245d8018"
+    },
+    {
+      "file": "originals/midgard_props_a_v01_raw.png",
+      "size": [
+        1536,
+        1024
+      ],
+      "mode": "RGB",
+      "sha256": "74ae67018278455f88092e4a0b3f05727d5f70d26f096fe7c0d887f9bc60e57b"
+    },
+    {
+      "file": "originals/midgard_props_b_v01_raw.png",
+      "size": [
+        1774,
+        887
+      ],
+      "mode": "RGB",
+      "sha256": "9b9b5332c9f31e55dff04e04b25ffd49331ce98bedd95d68471f8781dcc5bbe3"
+    },
+    {
+      "file": "originals/midgard_snow_v02_variant1_raw.png",
+      "size": [
+        1254,
+        1254
+      ],
+      "mode": "RGB",
+      "sha256": "cee832065b90dfb276c1d68950741c505a895d04159912d5094dabb7266dfee7"
+    },
+    {
+      "file": "originals/midgard_snow_v02_variant2_raw.png",
+      "size": [
+        1254,
+        1254
+      ],
+      "mode": "RGB",
+      "sha256": "91d5eee4c975d4cdcc236c599a1d990550d84f88a13f18b14c6dd09e6a27eff4"
+    },
+    {
+      "file": "originals/pine_weapons_v02_raw.png",
+      "size": [
+        1774,
+        887
+      ],
+      "mode": "RGB",
+      "sha256": "8ee21ba20c8be4d45bb890fea027e466c36cd5825e792004c24d3df09c7ffaec"
+    },
+    {
+      "file": "originals/vigrid_ground_v01_raw.png",
+      "size": [
+        1774,
+        887
+      ],
+      "mode": "RGB",
+      "sha256": "5bea08ce04663b1e8dbac639ad04685a1f003d99567a75905e64ea2ff9d9967a"
+    },
+    {
+      "file": "originals/vigrid_props_v01_raw.png",
+      "size": [
+        1536,
+        1024
+      ],
+      "mode": "RGB",
+      "sha256": "4efa5f4f403fb7572b3d4f3628ed605c9dde0c3a50d5e647d3509212672278de"
+    }
+  ],
+  "assets": [
+    {
+      "id": "snow_01",
+      "level": "midgard",
+      "type": "ground",
+      "width": 64,
+      "height": 64,
+      "status": "self_check_passed_pending_game_review",
+      "candidate": "candidates/midgard_snow_01_v03.png",
+      "color_count": 10,
+      "alpha_values": [
+        255
+      ],
+      "bbox": [
+        0,
+        0,
+        64,
+        64
+      ],
+      "palette": "records/midgard_palette48.json",
+      "sha256": "5e667d35e6b54999ad939643a6614609f0a0f8d4af0e412112afc122ccfb328a",
+      "checks": {
+        "exact_size": true,
+        "png_rgba": true,
+        "binary_alpha": true,
+        "palette_limit": true,
+        "transparent_margin_2px": null,
+        "style_consistency": true,
+        "no_text_watermark_scene": true,
+        "dark_background_1x_readable": true,
+        "facing_right": "not_applicable_static_environment",
+        "fixed_feet_baseline": "not_applicable_static_environment",
+        "animation": "not_applicable_single_frame",
+        "opaque_full_ground": true,
+        "seamless_4x4_visual": true,
+        "subdued_below_character_visual": true,
+        "no_prominent_repeated_landmark": true
+      },
+      "seam_metrics": {
+        "opposing_edge_mean_x": 0.911,
+        "opposing_edge_mean_y": 1.292,
+        "interior_neighbor_mean_x": 1.248,
+        "interior_neighbor_mean_y": 1.539,
+        "edge_jump_outlier_at_1_5x": false
+      },
+      "mean_rgb": [
+        55.15,
+        65.46,
+        78.26
+      ],
+      "approved_file": "approved/ground/midgard/snow_01.png",
+      "final_file": "sprites/ground/midgard/snow_01.png",
+      "frame_count": 1,
+      "fps": null,
+      "source": {
+        "raw_file": "originals/midgard_snow_v02_variant2_raw.png",
+        "crop": [
+          4,
+          4,
+          623,
+          623
+        ],
+        "tool": "Chrome ChatGPT web image generation",
+        "chat_url": "https://chatgpt.com/c/6ad1cc3a-cb48-83ea-b7c0-214d99daa6d7",
+        "generation_record": "records/generation_jobs_wave03.json",
+        "prompt_file": "records/midgard_snow_v02_prompt.txt",
+        "input_references": [
+          "references/style_reference.png"
+        ]
+      },
+      "processing_tools": [
+        "Pillow 12.1.1",
+        "project-original deterministic normalization scripts"
+      ],
+      "visual_review": {
+        "passed": true,
+        "reviewed_candidate": "candidates/midgard_snow_01_v03.png",
+        "reviewed_at": "2026-10-16",
+        "viewed": "#121721背景1×/4×对照；地块4×4；基础4种混铺；关卡1×角色合成",
+        "note": "低密度细雪粒，亮度克制；4×4单铺及基础混铺未见硬接缝。",
+        "limitations": "未在Godot运行，游戏内验收由代码代理负责"
+      },
+      "tiling_preview": "previews/midgard_snow_01_4x4.png"
+    },
+    {
+      "id": "snow_02",
+      "level": "midgard",
+      "type": "ground",
+      "width": 64,
+      "height": 64,
+      "status": "self_check_passed_pending_game_review",
+      "candidate": "candidates/midgard_snow_02_v03.png",
+      "color_count": 10,
+      "alpha_values": [
+        255
+      ],
+      "bbox": [
+        0,
+        0,
+        64,
+        64
+      ],
+      "palette": "records/midgard_palette48.json",
+      "sha256": "814a4601851c2357e709f74dc7f668fba3f71b03f395f76afef55ea835db4ec7",
+      "checks": {
+        "exact_size": true,
+        "png_rgba": true,
+        "binary_alpha": true,
+        "palette_limit": true,
+        "transparent_margin_2px": null,
+        "style_consistency": true,
+        "no_text_watermark_scene": true,
+        "dark_background_1x_readable": true,
+        "facing_right": "not_applicable_static_environment",
+        "fixed_feet_baseline": "not_applicable_static_environment",
+        "animation": "not_applicable_single_frame",
+        "opaque_full_ground": true,
+        "seamless_4x4_visual": true,
+        "subdued_below_character_visual": true,
+        "no_prominent_repeated_landmark": true
+      },
+      "seam_metrics": {
+        "opposing_edge_mean_x": 0.995,
+        "opposing_edge_mean_y": 1.359,
+        "interior_neighbor_mean_x": 1.532,
+        "interior_neighbor_mean_y": 1.772,
+        "edge_jump_outlier_at_1_5x": false
+      },
+      "mean_rgb": [
+        55.64,
+        65.27,
+        77.85
+      ],
+      "approved_file": "approved/ground/midgard/snow_02.png",
+      "final_file": "sprites/ground/midgard/snow_02.png",
+      "frame_count": 1,
+      "fps": null,
+      "source": {
+        "raw_file": "originals/midgard_snow_v02_variant2_raw.png",
+        "crop": [
+          631,
+          4,
+          1250,
+          623
+        ],
+        "tool": "Chrome ChatGPT web image generation",
+        "chat_url": "https://chatgpt.com/c/6ad1cc3a-cb48-83ea-b7c0-214d99daa6d7",
+        "generation_record": "records/generation_jobs_wave03.json",
+        "prompt_file": "records/midgard_snow_v02_prompt.txt",
+        "input_references": [
+          "references/style_reference.png"
+        ]
+      },
+      "processing_tools": [
+        "Pillow 12.1.1",
+        "project-original deterministic normalization scripts"
+      ],
+      "visual_review": {
+        "passed": true,
+        "reviewed_candidate": "candidates/midgard_snow_02_v03.png",
+        "reviewed_at": "2026-10-16",
+        "viewed": "#121721背景1×/4×对照；地块4×4；基础4种混铺；关卡1×角色合成",
+        "note": "细雪簇分布与01不同，无大波纹；单铺及混铺检查。",
+        "limitations": "未在Godot运行，游戏内验收由代码代理负责"
+      },
+      "tiling_preview": "previews/midgard_snow_02_4x4.png"
+    },
+    {
+      "id": "snow_03",
+      "level": "midgard",
+      "type": "ground",
+      "width": 64,
+      "height": 64,
+      "status": "self_check_passed_pending_game_review",
+      "candidate": "candidates/midgard_snow_03_v03.png",
+      "color_count": 10,
+      "alpha_values": [
+        255
+      ],
+      "bbox": [
+        0,
+        0,
+        64,
+        64
+      ],
+      "palette": "records/midgard_palette48.json",
+      "sha256": "25558eeb41d850bf417abd0ff708adbaa4c6881af2a247899142db660abff42d",
+      "checks": {
+        "exact_size": true,
+        "png_rgba": true,
+        "binary_alpha": true,
+        "palette_limit": true,
+        "transparent_margin_2px": null,
+        "style_consistency": true,
+        "no_text_watermark_scene": true,
+        "dark_background_1x_readable": true,
+        "facing_right": "not_applicable_static_environment",
+        "fixed_feet_baseline": "not_applicable_static_environment",
+        "animation": "not_applicable_single_frame",
+        "opaque_full_ground": true,
+        "seamless_4x4_visual": true,
+        "subdued_below_character_visual": true,
+        "no_prominent_repeated_landmark": true
+      },
+      "seam_metrics": {
+        "opposing_edge_mean_x": 1.198,
+        "opposing_edge_mean_y": 0.969,
+        "interior_neighbor_mean_x": 1.262,
+        "interior_neighbor_mean_y": 1.602,
+        "edge_jump_outlier_at_1_5x": false
+      },
+      "mean_rgb": [
+        55.21,
+        65.34,
+        78.12
+      ],
+      "approved_file": "approved/ground/midgard/snow_03.png",
+      "final_file": "sprites/ground/midgard/snow_03.png",
+      "frame_count": 1,
+      "fps": null,
+      "source": {
+        "raw_file": "originals/midgard_snow_v02_variant2_raw.png",
+        "crop": [
+          4,
+          631,
+          623,
+          1250
+        ],
+        "tool": "Chrome ChatGPT web image generation",
+        "chat_url": "https://chatgpt.com/c/6ad1cc3a-cb48-83ea-b7c0-214d99daa6d7",
+        "generation_record": "records/generation_jobs_wave03.json",
+        "prompt_file": "records/midgard_snow_v02_prompt.txt",
+        "input_references": [
+          "references/style_reference.png"
+        ]
+      },
+      "processing_tools": [
+        "Pillow 12.1.1",
+        "project-original deterministic normalization scripts"
+      ],
+      "visual_review": {
+        "passed": true,
+        "reviewed_candidate": "candidates/midgard_snow_03_v03.png",
+        "reviewed_at": "2026-10-16",
+        "viewed": "#121721背景1×/4×对照；地块4×4；基础4种混铺；关卡1×角色合成",
+        "note": "稀疏霜粒，未出现集中亮斑地标；单铺及混铺检查。",
+        "limitations": "未在Godot运行，游戏内验收由代码代理负责"
+      },
+      "tiling_preview": "previews/midgard_snow_03_4x4.png"
+    },
+    {
+      "id": "snow_04",
+      "level": "midgard",
+      "type": "ground",
+      "width": 64,
+      "height": 64,
+      "status": "self_check_passed_pending_game_review",
+      "candidate": "candidates/midgard_snow_04_v03.png",
+      "color_count": 10,
+      "alpha_values": [
+        255
+      ],
+      "bbox": [
+        0,
+        0,
+        64,
+        64
+      ],
+      "palette": "records/midgard_palette48.json",
+      "sha256": "cce3cdb7e73ae608e887e3ca685e49ef608aa954c2939e37479f4b31803ca1b0",
+      "checks": {
+        "exact_size": true,
+        "png_rgba": true,
+        "binary_alpha": true,
+        "palette_limit": true,
+        "transparent_margin_2px": null,
+        "style_consistency": true,
+        "no_text_watermark_scene": true,
+        "dark_background_1x_readable": true,
+        "facing_right": "not_applicable_static_environment",
+        "fixed_feet_baseline": "not_applicable_static_environment",
+        "animation": "not_applicable_single_frame",
+        "opaque_full_ground": true,
+        "seamless_4x4_visual": true,
+        "subdued_below_character_visual": true,
+        "no_prominent_repeated_landmark": true
+      },
+      "seam_metrics": {
+        "opposing_edge_mean_x": 1.078,
+        "opposing_edge_mean_y": 0.578,
+        "interior_neighbor_mean_x": 1.204,
+        "interior_neighbor_mean_y": 1.491,
+        "edge_jump_outlier_at_1_5x": false
+      },
+      "mean_rgb": [
+        54.93,
+        65.69,
+        78.71
+      ],
+      "approved_file": "approved/ground/midgard/snow_04.png",
+      "final_file": "sprites/ground/midgard/snow_04.png",
+      "frame_count": 1,
+      "fps": null,
+      "source": {
+        "raw_file": "originals/midgard_snow_v02_variant2_raw.png",
+        "crop": [
+          631,
+          631,
+          1250,
+          1250
+        ],
+        "tool": "Chrome ChatGPT web image generation",
+        "chat_url": "https://chatgpt.com/c/6ad1cc3a-cb48-83ea-b7c0-214d99daa6d7",
+        "generation_record": "records/generation_jobs_wave03.json",
+        "prompt_file": "records/midgard_snow_v02_prompt.txt",
+        "input_references": [
+          "references/style_reference.png"
+        ]
+      },
+      "processing_tools": [
+        "Pillow 12.1.1",
+        "project-original deterministic normalization scripts"
+      ],
+      "visual_review": {
+        "passed": true,
+        "reviewed_candidate": "candidates/midgard_snow_04_v03.png",
+        "reviewed_at": "2026-10-16",
+        "viewed": "#121721背景1×/4×对照；地块4×4；基础4种混铺；关卡1×角色合成",
+        "note": "细颗粒雪面，亮度与另三张一致；单铺及混铺检查。",
+        "limitations": "未在Godot运行，游戏内验收由代码代理负责"
+      },
+      "tiling_preview": "previews/midgard_snow_04_4x4.png"
+    },
+    {
+      "id": "snow_trampled",
+      "level": "midgard",
+      "type": "ground",
+      "width": 64,
+      "height": 64,
+      "status": "self_check_passed_pending_game_review",
+      "candidate": "candidates/midgard_snow_trampled_v03.png",
+      "color_count": 24,
+      "alpha_values": [
+        255
+      ],
+      "bbox": [
+        0,
+        0,
+        64,
+        64
+      ],
+      "palette": "records/midgard_palette48.json",
+      "sha256": "329fd35f02df0534e237c71124fac70301b1f40703d42aed5785791d7713350e",
+      "checks": {
+        "exact_size": true,
+        "png_rgba": true,
+        "binary_alpha": true,
+        "palette_limit": true,
+        "transparent_margin_2px": null,
+        "style_consistency": true,
+        "no_text_watermark_scene": true,
+        "dark_background_1x_readable": true,
+        "facing_right": "not_applicable_static_environment",
+        "fixed_feet_baseline": "not_applicable_static_environment",
+        "animation": "not_applicable_single_frame",
+        "opaque_full_ground": true,
+        "seamless_4x4_visual": true,
+        "subdued_below_character_visual": true,
+        "no_prominent_repeated_landmark": true
+      },
+      "seam_metrics": {
+        "opposing_edge_mean_x": 6.745,
+        "opposing_edge_mean_y": 3.677,
+        "interior_neighbor_mean_x": 9.108,
+        "interior_neighbor_mean_y": 9.936,
+        "edge_jump_outlier_at_1_5x": false
+      },
+      "mean_rgb": [
+        54.54,
+        65.73,
+        77.6
+      ],
+      "approved_file": "approved/ground/midgard/snow_trampled.png",
+      "final_file": "sprites/ground/midgard/snow_trampled.png",
+      "frame_count": 1,
+      "fps": null,
+      "source": {
+        "raw_file": "originals/midgard_ground_v01_raw.png",
+        "crop": [
+          3,
+          447,
+          441,
+          884
+        ],
+        "tool": "Chrome ChatGPT web image generation",
+        "chat_url": "https://chatgpt.com/c/6ad1c979-9a34-83e9-baf1-b35fc9aa65b8",
+        "generation_record": "records/generation_jobs_wave01.json",
+        "prompt_file": "records/midgard_ground_prompt.txt",
+        "input_references": [
+          "references/style_reference.png"
+        ]
+      },
+      "processing_tools": [
+        "Pillow 12.1.1",
+        "project-original deterministic normalization scripts"
+      ],
+      "visual_review": {
+        "passed": true,
+        "reviewed_candidate": "candidates/midgard_snow_trampled_v03.png",
+        "reviewed_at": "2026-10-16",
+        "viewed": "#121721背景1×/4×对照；地块4×4；基础4种混铺；关卡1×角色合成",
+        "note": "凹凸压实雪，细碎磨损与基础雪可区分；无先前边缘条带。",
+        "limitations": "未在Godot运行，游戏内验收由代码代理负责"
+      },
+      "tiling_preview": "previews/midgard_snow_trampled_4x4.png"
+    },
+    {
+      "id": "ice",
+      "level": "midgard",
+      "type": "ground",
+      "width": 64,
+      "height": 64,
+      "status": "self_check_passed_pending_game_review",
+      "candidate": "candidates/midgard_ice_v03.png",
+      "color_count": 9,
+      "alpha_values": [
+        255
+      ],
+      "bbox": [
+        0,
+        0,
+        64,
+        64
+      ],
+      "palette": "records/midgard_palette48.json",
+      "sha256": "4f851b4b359197cca9bc4875c156d0608da036d0980ca2ffe0561dad0885f77d",
+      "checks": {
+        "exact_size": true,
+        "png_rgba": true,
+        "binary_alpha": true,
+        "palette_limit": true,
+        "transparent_margin_2px": null,
+        "style_consistency": true,
+        "no_text_watermark_scene": true,
+        "dark_background_1x_readable": true,
+        "facing_right": "not_applicable_static_environment",
+        "fixed_feet_baseline": "not_applicable_static_environment",
+        "animation": "not_applicable_single_frame",
+        "opaque_full_ground": true,
+        "seamless_4x4_visual": true,
+        "subdued_below_character_visual": true,
+        "no_prominent_repeated_landmark": true
+      },
+      "seam_metrics": {
+        "opposing_edge_mean_x": 2.318,
+        "opposing_edge_mean_y": 1.943,
+        "interior_neighbor_mean_x": 4.91,
+        "interior_neighbor_mean_y": 4.984,
+        "edge_jump_outlier_at_1_5x": false
+      },
+      "mean_rgb": [
+        45.99,
+        59.68,
+        72.56
+      ],
+      "approved_file": "approved/ground/midgard/ice.png",
+      "final_file": "sprites/ground/midgard/ice.png",
+      "frame_count": 1,
+      "fps": null,
+      "source": {
+        "raw_file": "originals/midgard_ground_v01_raw.png",
+        "crop": [
+          447,
+          447,
+          884,
+          884
+        ],
+        "tool": "Chrome ChatGPT web image generation",
+        "chat_url": "https://chatgpt.com/c/6ad1c979-9a34-83e9-baf1-b35fc9aa65b8",
+        "generation_record": "records/generation_jobs_wave01.json",
+        "prompt_file": "records/midgard_ground_prompt.txt",
+        "input_references": [
+          "references/style_reference.png"
+        ]
+      },
+      "processing_tools": [
+        "Pillow 12.1.1",
+        "project-original deterministic normalization scripts"
+      ],
+      "visual_review": {
+        "passed": true,
+        "reviewed_candidate": "candidates/midgard_ice_v03.png",
+        "reviewed_at": "2026-10-16",
+        "viewed": "#121721背景1×/4×对照；地块4×4；基础4种混铺；关卡1×角色合成",
+        "note": "蓝灰冰面保留细裂纹，亮度低于角色；4×4无硬边断线。",
+        "limitations": "未在Godot运行，游戏内验收由代码代理负责"
+      },
+      "tiling_preview": "previews/midgard_ice_4x4.png"
+    },
+    {
+      "id": "frozen_dirt",
+      "level": "midgard",
+      "type": "ground",
+      "width": 64,
+      "height": 64,
+      "status": "self_check_passed_pending_game_review",
+      "candidate": "candidates/midgard_frozen_dirt_v03.png",
+      "color_count": 14,
+      "alpha_values": [
+        255
+      ],
+      "bbox": [
+        0,
+        0,
+        64,
+        64
+      ],
+      "palette": "records/midgard_palette48.json",
+      "sha256": "241cb1b858fd80cff93331c72e935ce373048c60a208932459f06e4be87233fa",
+      "checks": {
+        "exact_size": true,
+        "png_rgba": true,
+        "binary_alpha": true,
+        "palette_limit": true,
+        "transparent_margin_2px": null,
+        "style_consistency": true,
+        "no_text_watermark_scene": true,
+        "dark_background_1x_readable": true,
+        "facing_right": "not_applicable_static_environment",
+        "fixed_feet_baseline": "not_applicable_static_environment",
+        "animation": "not_applicable_single_frame",
+        "opaque_full_ground": true,
+        "seamless_4x4_visual": true,
+        "subdued_below_character_visual": true,
+        "no_prominent_repeated_landmark": true
+      },
+      "seam_metrics": {
+        "opposing_edge_mean_x": 4.448,
+        "opposing_edge_mean_y": 3.224,
+        "interior_neighbor_mean_x": 7.376,
+        "interior_neighbor_mean_y": 7.498,
+        "edge_jump_outlier_at_1_5x": false
+      },
+      "mean_rgb": [
+        44.18,
+        42.78,
+        43.46
+      ],
+      "approved_file": "approved/ground/midgard/frozen_dirt.png",
+      "final_file": "sprites/ground/midgard/frozen_dirt.png",
+      "frame_count": 1,
+      "fps": null,
+      "source": {
+        "raw_file": "originals/midgard_ground_v01_raw.png",
+        "crop": [
+          890,
+          447,
+          1327,
+          884
+        ],
+        "tool": "Chrome ChatGPT web image generation",
+        "chat_url": "https://chatgpt.com/c/6ad1c979-9a34-83e9-baf1-b35fc9aa65b8",
+        "generation_record": "records/generation_jobs_wave01.json",
+        "prompt_file": "records/midgard_ground_prompt.txt",
+        "input_references": [
+          "references/style_reference.png"
+        ]
+      },
+      "processing_tools": [
+        "Pillow 12.1.1",
+        "project-original deterministic normalization scripts"
+      ],
+      "visual_review": {
+        "passed": true,
+        "reviewed_candidate": "candidates/midgard_frozen_dirt_v03.png",
+        "reviewed_at": "2026-10-16",
+        "viewed": "#121721背景1×/4×对照；地块4×4；基础4种混铺；关卡1×角色合成",
+        "note": "暗褐冻土含细霜粒，轮廓纹理不抢角色；4×4查看。",
+        "limitations": "未在Godot运行，游戏内验收由代码代理负责"
+      },
+      "tiling_preview": "previews/midgard_frozen_dirt_4x4.png"
+    },
+    {
+      "id": "dead_pine_01",
+      "level": "midgard",
+      "type": "props",
+      "width": 64,
+      "height": 96,
+      "status": "self_check_passed_pending_game_review",
+      "candidate": "candidates/midgard_dead_pine_01_v03.png",
+      "color_count": 43,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "bbox": [
+        2,
+        4,
+        62,
+        94
+      ],
+      "palette": "records/midgard_palette48.json",
+      "sha256": "6a756395f9fffbd11c21e42110cfc71fb06b0d9fec3e4296074459a8ba673815",
+      "checks": {
+        "exact_size": true,
+        "png_rgba": true,
+        "binary_alpha": true,
+        "palette_limit": true,
+        "transparent_margin_2px": true,
+        "style_consistency": true,
+        "no_text_watermark_scene": true,
+        "dark_background_1x_readable": true,
+        "facing_right": "not_applicable_static_environment",
+        "fixed_feet_baseline": "not_applicable_static_environment",
+        "animation": "not_applicable_single_frame"
+      },
+      "approved_file": "approved/props/midgard/dead_pine_01.png",
+      "final_file": "sprites/props/midgard/dead_pine_01.png",
+      "frame_count": 1,
+      "fps": null,
+      "source": {
+        "raw_file": "originals/midgard_props_a_v01_raw.png",
+        "crop": [
+          110,
+          10,
+          480,
+          525
+        ],
+        "tool": "Chrome ChatGPT web image generation",
+        "chat_url": "https://chatgpt.com/c/6ad1c9e8-9af0-83ea-b527-28aa41d2abda",
+        "generation_record": "records/generation_jobs_wave01.json",
+        "prompt_file": "records/midgard_props_a_prompt.txt",
+        "input_references": [
+          "references/style_reference.png"
+        ]
+      },
+      "processing_tools": [
+        "Pillow 12.1.1",
+        "project-original deterministic normalization scripts"
+      ],
+      "visual_review": {
+        "passed": true,
+        "reviewed_candidate": "candidates/midgard_dead_pine_01_v03.png",
+        "reviewed_at": "2026-10-16",
+        "viewed": "#121721背景1×/4×对照；地块4×4；基础4种混铺；关卡1×角色合成",
+        "note": "单主干下垂轮生枝、雪冠，64×96；完整硬边、无洋红。",
+        "limitations": "未在Godot运行，游戏内验收由代码代理负责"
+      }
+    },
+    {
+      "id": "dead_pine_02",
+      "level": "midgard",
+      "type": "props",
+      "width": 64,
+      "height": 96,
+      "status": "self_check_passed_pending_game_review",
+      "candidate": "candidates/midgard_dead_pine_02_v05.png",
+      "color_count": 41,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "bbox": [
+        3,
+        15,
+        60,
+        94
+      ],
+      "palette": "records/midgard_palette48.json",
+      "sha256": "435edce352e5980c37d067a6d8ae3344c7b8d5f59e7184f7d4352430eb03c424",
+      "checks": {
+        "exact_size": true,
+        "png_rgba": true,
+        "binary_alpha": true,
+        "palette_limit": true,
+        "transparent_margin_2px": true,
+        "style_consistency": true,
+        "no_text_watermark_scene": true,
+        "dark_background_1x_readable": true,
+        "facing_right": "not_applicable_static_environment",
+        "fixed_feet_baseline": "not_applicable_static_environment",
+        "animation": "not_applicable_single_frame"
+      },
+      "approved_file": "approved/props/midgard/dead_pine_02.png",
+      "final_file": "sprites/props/midgard/dead_pine_02.png",
+      "frame_count": 1,
+      "fps": null,
+      "source": {
+        "raw_file": "originals/pine_weapons_v02_raw.png",
+        "crop": [
+          170,
+          35,
+          835,
+          865
+        ],
+        "tool": "Chrome ChatGPT web image generation",
+        "chat_url": "https://chatgpt.com/c/6ad1d05c-b2c0-83ea-bf9c-9bea3317232b",
+        "generation_record": "records/generation_jobs_wave04.json",
+        "prompt_file": "records/pine_weapons_v02_prompt.txt",
+        "input_references": [
+          "references/style_reference.png",
+          "candidates/midgard_dead_pine_01_v03.png",
+          "candidates/vigrid_broken_weapons_v04.png"
+        ]
+      },
+      "processing_tools": [
+        "Pillow 12.1.1",
+        "project-original deterministic normalization scripts"
+      ],
+      "visual_review": {
+        "passed": true,
+        "reviewed_candidate": "candidates/midgard_dead_pine_02_v05.png",
+        "reviewed_at": "2026-10-16",
+        "viewed": "#121721背景1×/4×对照；地块4×4；基础4种混铺；关卡1×角色合成",
+        "note": "重做为折顶斜干枯松，下垂轮生枝区别于阔叶树；雪色与01一致。",
+        "limitations": "未在Godot运行，游戏内验收由代码代理负责"
+      }
+    },
+    {
+      "id": "rock_01",
+      "level": "midgard",
+      "type": "props",
+      "width": 32,
+      "height": 32,
+      "status": "self_check_passed_pending_game_review",
+      "candidate": "candidates/midgard_rock_01_v03.png",
+      "color_count": 40,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "bbox": [
+        2,
+        6,
+        30,
+        30
+      ],
+      "palette": "records/midgard_palette48.json",
+      "sha256": "6ef7f0058c54d3a8749ae7e6c71e03d78a29cd4c4d311fd3e576ba3620293441",
+      "checks": {
+        "exact_size": true,
+        "png_rgba": true,
+        "binary_alpha": true,
+        "palette_limit": true,
+        "transparent_margin_2px": true,
+        "style_consistency": true,
+        "no_text_watermark_scene": true,
+        "dark_background_1x_readable": true,
+        "facing_right": "not_applicable_static_environment",
+        "fixed_feet_baseline": "not_applicable_static_environment",
+        "animation": "not_applicable_single_frame"
+      },
+      "approved_file": "approved/props/midgard/rock_01.png",
+      "final_file": "sprites/props/midgard/rock_01.png",
+      "frame_count": 1,
+      "fps": null,
+      "source": {
+        "raw_file": "originals/midgard_props_a_v01_raw.png",
+        "crop": [
+          1140,
+          280,
+          1410,
+          510
+        ],
+        "tool": "Chrome ChatGPT web image generation",
+        "chat_url": "https://chatgpt.com/c/6ad1c9e8-9af0-83ea-b527-28aa41d2abda",
+        "generation_record": "records/generation_jobs_wave01.json",
+        "prompt_file": "records/midgard_props_a_prompt.txt",
+        "input_references": [
+          "references/style_reference.png"
+        ]
+      },
+      "processing_tools": [
+        "Pillow 12.1.1",
+        "project-original deterministic normalization scripts"
+      ],
+      "visual_review": {
+        "passed": true,
+        "reviewed_candidate": "candidates/midgard_rock_01_v03.png",
+        "reviewed_at": "2026-10-16",
+        "viewed": "#121721背景1×/4×对照；地块4×4；基础4种混铺；关卡1×角色合成",
+        "note": "32×32小型圆岩雪冠，留边完整。",
+        "limitations": "未在Godot运行，游戏内验收由代码代理负责"
+      }
+    },
+    {
+      "id": "rock_02",
+      "level": "midgard",
+      "type": "props",
+      "width": 48,
+      "height": 48,
+      "status": "self_check_passed_pending_game_review",
+      "candidate": "candidates/midgard_rock_02_v03.png",
+      "color_count": 44,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "bbox": [
+        2,
+        4,
+        46,
+        46
+      ],
+      "palette": "records/midgard_palette48.json",
+      "sha256": "73046ffc1102e2d799d8df84751444c5930671498dfbe284fdc19f750b12f03c",
+      "checks": {
+        "exact_size": true,
+        "png_rgba": true,
+        "binary_alpha": true,
+        "palette_limit": true,
+        "transparent_margin_2px": true,
+        "style_consistency": true,
+        "no_text_watermark_scene": true,
+        "dark_background_1x_readable": true,
+        "facing_right": "not_applicable_static_environment",
+        "fixed_feet_baseline": "not_applicable_static_environment",
+        "animation": "not_applicable_single_frame"
+      },
+      "approved_file": "approved/props/midgard/rock_02.png",
+      "final_file": "sprites/props/midgard/rock_02.png",
+      "frame_count": 1,
+      "fps": null,
+      "source": {
+        "raw_file": "originals/midgard_props_a_v01_raw.png",
+        "crop": [
+          80,
+          600,
+          455,
+          975
+        ],
+        "tool": "Chrome ChatGPT web image generation",
+        "chat_url": "https://chatgpt.com/c/6ad1c9e8-9af0-83ea-b527-28aa41d2abda",
+        "generation_record": "records/generation_jobs_wave01.json",
+        "prompt_file": "records/midgard_props_a_prompt.txt",
+        "input_references": [
+          "references/style_reference.png"
+        ]
+      },
+      "processing_tools": [
+        "Pillow 12.1.1",
+        "project-original deterministic normalization scripts"
+      ],
+      "visual_review": {
+        "passed": true,
+        "reviewed_candidate": "candidates/midgard_rock_02_v03.png",
+        "reviewed_at": "2026-10-16",
+        "viewed": "#121721背景1×/4×对照；地块4×4；基础4种混铺；关卡1×角色合成",
+        "note": "48×48尖岩簇，轮廓区别于01。",
+        "limitations": "未在Godot运行，游戏内验收由代码代理负责"
+      }
+    },
+    {
+      "id": "rock_03",
+      "level": "midgard",
+      "type": "props",
+      "width": 64,
+      "height": 64,
+      "status": "self_check_passed_pending_game_review",
+      "candidate": "candidates/midgard_rock_03_v03.png",
+      "color_count": 44,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "bbox": [
+        2,
+        14,
+        62,
+        62
+      ],
+      "palette": "records/midgard_palette48.json",
+      "sha256": "15ff0387c98bbcf96f5989f9b3c6ed272feb0eb5c844d1f2145b2e5324e9c4cb",
+      "checks": {
+        "exact_size": true,
+        "png_rgba": true,
+        "binary_alpha": true,
+        "palette_limit": true,
+        "transparent_margin_2px": true,
+        "style_consistency": true,
+        "no_text_watermark_scene": true,
+        "dark_background_1x_readable": true,
+        "facing_right": "not_applicable_static_environment",
+        "fixed_feet_baseline": "not_applicable_static_environment",
+        "animation": "not_applicable_single_frame"
+      },
+      "approved_file": "approved/props/midgard/rock_03.png",
+      "final_file": "sprites/props/midgard/rock_03.png",
+      "frame_count": 1,
+      "fps": null,
+      "source": {
+        "raw_file": "originals/midgard_props_a_v01_raw.png",
+        "crop": [
+          545,
+          570,
+          1050,
+          995
+        ],
+        "tool": "Chrome ChatGPT web image generation",
+        "chat_url": "https://chatgpt.com/c/6ad1c9e8-9af0-83ea-b527-28aa41d2abda",
+        "generation_record": "records/generation_jobs_wave01.json",
+        "prompt_file": "records/midgard_props_a_prompt.txt",
+        "input_references": [
+          "references/style_reference.png"
+        ]
+      },
+      "processing_tools": [
+        "Pillow 12.1.1",
+        "project-original deterministic normalization scripts"
+      ],
+      "visual_review": {
+        "passed": true,
+        "reviewed_candidate": "candidates/midgard_rock_03_v03.png",
+        "reviewed_at": "2026-10-16",
+        "viewed": "#121721背景1×/4×对照；地块4×4；基础4种混铺；关卡1×角色合成",
+        "note": "64×64低矮岩群，去除等分图集带入的邻图碎片。",
+        "limitations": "未在Godot运行，游戏内验收由代码代理负责"
+      }
+    },
+    {
+      "id": "runestone_01",
+      "level": "midgard",
+      "type": "props",
+      "width": 32,
+      "height": 64,
+      "status": "self_check_passed_pending_game_review",
+      "candidate": "candidates/midgard_runestone_01_v03.png",
+      "color_count": 42,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "bbox": [
+        2,
+        17,
+        30,
+        62
+      ],
+      "palette": "records/midgard_palette48.json",
+      "sha256": "560436764b346d2317e3f78828df11a97fff0f021835795771cccb3332b3e0c4",
+      "checks": {
+        "exact_size": true,
+        "png_rgba": true,
+        "binary_alpha": true,
+        "palette_limit": true,
+        "transparent_margin_2px": true,
+        "style_consistency": true,
+        "no_text_watermark_scene": true,
+        "dark_background_1x_readable": true,
+        "facing_right": "not_applicable_static_environment",
+        "fixed_feet_baseline": "not_applicable_static_environment",
+        "animation": "not_applicable_single_frame"
+      },
+      "approved_file": "approved/props/midgard/runestone_01.png",
+      "final_file": "sprites/props/midgard/runestone_01.png",
+      "frame_count": 1,
+      "fps": null,
+      "source": {
+        "raw_file": "originals/midgard_props_a_v01_raw.png",
+        "crop": [
+          1140,
+          570,
+          1420,
+          990
+        ],
+        "tool": "Chrome ChatGPT web image generation",
+        "chat_url": "https://chatgpt.com/c/6ad1c9e8-9af0-83ea-b527-28aa41d2abda",
+        "generation_record": "records/generation_jobs_wave01.json",
+        "prompt_file": "records/midgard_props_a_prompt.txt",
+        "input_references": [
+          "references/style_reference.png"
+        ]
+      },
+      "processing_tools": [
+        "Pillow 12.1.1",
+        "project-original deterministic normalization scripts"
+      ],
+      "visual_review": {
+        "passed": true,
+        "reviewed_candidate": "candidates/midgard_runestone_01_v03.png",
+        "reviewed_at": "2026-10-16",
+        "viewed": "#121721背景1×/4×对照；地块4×4；基础4种混铺；关卡1×角色合成",
+        "note": "32×64直立碑，完整裁切后主体不再缩成极小碎片；装饰刻痕无标签。",
+        "limitations": "未在Godot运行，游戏内验收由代码代理负责"
+      }
+    },
+    {
+      "id": "runestone_02",
+      "level": "midgard",
+      "type": "props",
+      "width": 32,
+      "height": 64,
+      "status": "self_check_passed_pending_game_review",
+      "candidate": "candidates/midgard_runestone_02_v03.png",
+      "color_count": 41,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "bbox": [
+        3,
+        22,
+        30,
+        62
+      ],
+      "palette": "records/midgard_palette48.json",
+      "sha256": "7f1d9bb88125883ac0e5ea00139871265d8bbe8f1cdac6a6f6083faa44a6ac34",
+      "checks": {
+        "exact_size": true,
+        "png_rgba": true,
+        "binary_alpha": true,
+        "palette_limit": true,
+        "transparent_margin_2px": true,
+        "style_consistency": true,
+        "no_text_watermark_scene": true,
+        "dark_background_1x_readable": true,
+        "facing_right": "not_applicable_static_environment",
+        "fixed_feet_baseline": "not_applicable_static_environment",
+        "animation": "not_applicable_single_frame"
+      },
+      "approved_file": "approved/props/midgard/runestone_02.png",
+      "final_file": "sprites/props/midgard/runestone_02.png",
+      "frame_count": 1,
+      "fps": null,
+      "source": {
+        "raw_file": "originals/midgard_props_b_v01_raw.png",
+        "crop": [
+          80,
+          80,
+          345,
+          430
+        ],
+        "tool": "Chrome ChatGPT web image generation",
+        "chat_url": "https://chatgpt.com/c/6ad1caa5-3e04-83ea-8bd8-4d2b22d85503",
+        "generation_record": "records/generation_jobs_wave02.json",
+        "prompt_file": "records/midgard_props_b_prompt.txt",
+        "input_references": [
+          "references/style_reference.png"
+        ]
+      },
+      "processing_tools": [
+        "Pillow 12.1.1",
+        "project-original deterministic normalization scripts"
+      ],
+      "visual_review": {
+        "passed": true,
+        "reviewed_candidate": "candidates/midgard_runestone_02_v03.png",
+        "reviewed_at": "2026-10-16",
+        "viewed": "#121721背景1×/4×对照；地块4×4；基础4种混铺；关卡1×角色合成",
+        "note": "32×64另一种碑型，积雪和抽象刻痕；无洋红边。",
+        "limitations": "未在Godot运行，游戏内验收由代码代理负责"
+      }
+    },
+    {
+      "id": "burial_mound",
+      "level": "midgard",
+      "type": "props",
+      "width": 96,
+      "height": 64,
+      "status": "self_check_passed_pending_game_review",
+      "candidate": "candidates/midgard_burial_mound_v03.png",
+      "color_count": 43,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "bbox": [
+        2,
+        12,
+        94,
+        62
+      ],
+      "palette": "records/midgard_palette48.json",
+      "sha256": "920d87c7989e358931fbc7121f776c86c5faf4e0228e6ace5e9aea2ac5a9abe3",
+      "checks": {
+        "exact_size": true,
+        "png_rgba": true,
+        "binary_alpha": true,
+        "palette_limit": true,
+        "transparent_margin_2px": true,
+        "style_consistency": true,
+        "no_text_watermark_scene": true,
+        "dark_background_1x_readable": true,
+        "facing_right": "not_applicable_static_environment",
+        "fixed_feet_baseline": "not_applicable_static_environment",
+        "animation": "not_applicable_single_frame"
+      },
+      "approved_file": "approved/props/midgard/burial_mound.png",
+      "final_file": "sprites/props/midgard/burial_mound.png",
+      "frame_count": 1,
+      "fps": null,
+      "source": {
+        "raw_file": "originals/midgard_props_b_v01_raw.png",
+        "crop": [
+          410,
+          140,
+          900,
+          425
+        ],
+        "tool": "Chrome ChatGPT web image generation",
+        "chat_url": "https://chatgpt.com/c/6ad1caa5-3e04-83ea-8bd8-4d2b22d85503",
+        "generation_record": "records/generation_jobs_wave02.json",
+        "prompt_file": "records/midgard_props_b_prompt.txt",
+        "input_references": [
+          "references/style_reference.png"
+        ]
+      },
+      "processing_tools": [
+        "Pillow 12.1.1",
+        "project-original deterministic normalization scripts"
+      ],
+      "visual_review": {
+        "passed": true,
+        "reviewed_candidate": "candidates/midgard_burial_mound_v03.png",
+        "reviewed_at": "2026-10-16",
+        "viewed": "#121721背景1×/4×对照；地块4×4；基础4种混铺；关卡1×角色合成",
+        "note": "低矮覆雪墓丘和石门，96×64，完整居中。",
+        "limitations": "未在Godot运行，游戏内验收由代码代理负责"
+      }
+    },
+    {
+      "id": "collapsed_cabin",
+      "level": "midgard",
+      "type": "props",
+      "width": 96,
+      "height": 96,
+      "status": "self_check_passed_pending_game_review",
+      "candidate": "candidates/midgard_collapsed_cabin_v03.png",
+      "color_count": 44,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "bbox": [
+        3,
+        25,
+        94,
+        94
+      ],
+      "palette": "records/midgard_palette48.json",
+      "sha256": "ed2857275e04a1f7bf3d5b433c493a74f2a595a9e70ecde97918f182f80b8205",
+      "checks": {
+        "exact_size": true,
+        "png_rgba": true,
+        "binary_alpha": true,
+        "palette_limit": true,
+        "transparent_margin_2px": true,
+        "style_consistency": true,
+        "no_text_watermark_scene": true,
+        "dark_background_1x_readable": true,
+        "facing_right": "not_applicable_static_environment",
+        "fixed_feet_baseline": "not_applicable_static_environment",
+        "animation": "not_applicable_single_frame"
+      },
+      "approved_file": "approved/props/midgard/collapsed_cabin.png",
+      "final_file": "sprites/props/midgard/collapsed_cabin.png",
+      "frame_count": 1,
+      "fps": null,
+      "source": {
+        "raw_file": "originals/midgard_props_b_v01_raw.png",
+        "crop": [
+          900,
+          80,
+          1385,
+          445
+        ],
+        "tool": "Chrome ChatGPT web image generation",
+        "chat_url": "https://chatgpt.com/c/6ad1caa5-3e04-83ea-8bd8-4d2b22d85503",
+        "generation_record": "records/generation_jobs_wave02.json",
+        "prompt_file": "records/midgard_props_b_prompt.txt",
+        "input_references": [
+          "references/style_reference.png"
+        ]
+      },
+      "processing_tools": [
+        "Pillow 12.1.1",
+        "project-original deterministic normalization scripts"
+      ],
+      "visual_review": {
+        "passed": true,
+        "reviewed_candidate": "candidates/midgard_collapsed_cabin_v03.png",
+        "reviewed_at": "2026-10-16",
+        "viewed": "#121721背景1×/4×对照；地块4×4；基础4种混铺；关卡1×角色合成",
+        "note": "96×96倒塌梁架和残屋顶，俯视角与其他物件一致。",
+        "limitations": "未在Godot运行，游戏内验收由代码代理负责"
+      }
+    },
+    {
+      "id": "fence",
+      "level": "midgard",
+      "type": "props",
+      "width": 64,
+      "height": 32,
+      "status": "self_check_passed_pending_game_review",
+      "candidate": "candidates/midgard_fence_v03.png",
+      "color_count": 38,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "bbox": [
+        7,
+        2,
+        56,
+        30
+      ],
+      "palette": "records/midgard_palette48.json",
+      "sha256": "a4a767514a4835ad9fc96f00e28203e00bf2e9089947e68025f0aa55bb254c06",
+      "checks": {
+        "exact_size": true,
+        "png_rgba": true,
+        "binary_alpha": true,
+        "palette_limit": true,
+        "transparent_margin_2px": true,
+        "style_consistency": true,
+        "no_text_watermark_scene": true,
+        "dark_background_1x_readable": true,
+        "facing_right": "not_applicable_static_environment",
+        "fixed_feet_baseline": "not_applicable_static_environment",
+        "animation": "not_applicable_single_frame"
+      },
+      "approved_file": "approved/props/midgard/fence.png",
+      "final_file": "sprites/props/midgard/fence.png",
+      "frame_count": 1,
+      "fps": null,
+      "source": {
+        "raw_file": "originals/midgard_props_b_v01_raw.png",
+        "crop": [
+          1405,
+          215,
+          1765,
+          435
+        ],
+        "tool": "Chrome ChatGPT web image generation",
+        "chat_url": "https://chatgpt.com/c/6ad1caa5-3e04-83ea-8bd8-4d2b22d85503",
+        "generation_record": "records/generation_jobs_wave02.json",
+        "prompt_file": "records/midgard_props_b_prompt.txt",
+        "input_references": [
+          "references/style_reference.png"
+        ]
+      },
+      "processing_tools": [
+        "Pillow 12.1.1",
+        "project-original deterministic normalization scripts"
+      ],
+      "visual_review": {
+        "passed": true,
+        "reviewed_candidate": "candidates/midgard_fence_v03.png",
+        "reviewed_at": "2026-10-16",
+        "viewed": "#121721背景1×/4×对照；地块4×4；基础4种混铺；关卡1×角色合成",
+        "note": "64×32木栅栏，横梁空隙真正透明。",
+        "limitations": "未在Godot运行，游戏内验收由代码代理负责"
+      }
+    },
+    {
+      "id": "longship_wreck",
+      "level": "midgard",
+      "type": "props",
+      "width": 128,
+      "height": 64,
+      "status": "self_check_passed_pending_game_review",
+      "candidate": "candidates/midgard_longship_wreck_v03.png",
+      "color_count": 44,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "bbox": [
+        5,
+        3,
+        124,
+        62
+      ],
+      "palette": "records/midgard_palette48.json",
+      "sha256": "0a26fc682167f68b241289d7d2ec2b900f5ebad835b3de78fcd4cc6cf64be501",
+      "checks": {
+        "exact_size": true,
+        "png_rgba": true,
+        "binary_alpha": true,
+        "palette_limit": true,
+        "transparent_margin_2px": true,
+        "style_consistency": true,
+        "no_text_watermark_scene": true,
+        "dark_background_1x_readable": true,
+        "facing_right": "not_applicable_static_environment",
+        "fixed_feet_baseline": "not_applicable_static_environment",
+        "animation": "not_applicable_single_frame"
+      },
+      "approved_file": "approved/props/midgard/longship_wreck.png",
+      "final_file": "sprites/props/midgard/longship_wreck.png",
+      "frame_count": 1,
+      "fps": null,
+      "source": {
+        "raw_file": "originals/midgard_props_b_v01_raw.png",
+        "crop": [
+          10,
+          490,
+          660,
+          835
+        ],
+        "tool": "Chrome ChatGPT web image generation",
+        "chat_url": "https://chatgpt.com/c/6ad1caa5-3e04-83ea-8bd8-4d2b22d85503",
+        "generation_record": "records/generation_jobs_wave02.json",
+        "prompt_file": "records/midgard_props_b_prompt.txt",
+        "input_references": [
+          "references/style_reference.png"
+        ]
+      },
+      "processing_tools": [
+        "Pillow 12.1.1",
+        "project-original deterministic normalization scripts"
+      ],
+      "visual_review": {
+        "passed": true,
+        "reviewed_candidate": "candidates/midgard_longship_wreck_v03.png",
+        "reviewed_at": "2026-10-16",
+        "viewed": "#121721背景1×/4×对照；地块4×4；基础4种混铺；关卡1×角色合成",
+        "note": "128×64维京船肋、龙首及半埋覆雪，按完整范围裁切，船首尾未截断。",
+        "limitations": "未在Godot运行，游戏内验收由代码代理负责"
+      }
+    },
+    {
+      "id": "snowdrift_01",
+      "level": "midgard",
+      "type": "props",
+      "width": 64,
+      "height": 32,
+      "status": "self_check_passed_pending_game_review",
+      "candidate": "candidates/midgard_snowdrift_01_v03.png",
+      "color_count": 39,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "bbox": [
+        2,
+        4,
+        62,
+        30
+      ],
+      "palette": "records/midgard_palette48.json",
+      "sha256": "d033e85ad1641887be297d93e21085d2abb0a6de18288e124ebd9c4609f89391",
+      "checks": {
+        "exact_size": true,
+        "png_rgba": true,
+        "binary_alpha": true,
+        "palette_limit": true,
+        "transparent_margin_2px": true,
+        "style_consistency": true,
+        "no_text_watermark_scene": true,
+        "dark_background_1x_readable": true,
+        "facing_right": "not_applicable_static_environment",
+        "fixed_feet_baseline": "not_applicable_static_environment",
+        "animation": "not_applicable_single_frame"
+      },
+      "approved_file": "approved/props/midgard/snowdrift_01.png",
+      "final_file": "sprites/props/midgard/snowdrift_01.png",
+      "frame_count": 1,
+      "fps": null,
+      "source": {
+        "raw_file": "originals/midgard_props_b_v01_raw.png",
+        "crop": [
+          680,
+          625,
+          1005,
+          800
+        ],
+        "tool": "Chrome ChatGPT web image generation",
+        "chat_url": "https://chatgpt.com/c/6ad1caa5-3e04-83ea-8bd8-4d2b22d85503",
+        "generation_record": "records/generation_jobs_wave02.json",
+        "prompt_file": "records/midgard_props_b_prompt.txt",
+        "input_references": [
+          "references/style_reference.png"
+        ]
+      },
+      "processing_tools": [
+        "Pillow 12.1.1",
+        "project-original deterministic normalization scripts"
+      ],
+      "visual_review": {
+        "passed": true,
+        "reviewed_candidate": "candidates/midgard_snowdrift_01_v03.png",
+        "reviewed_at": "2026-10-16",
+        "viewed": "#121721背景1×/4×对照；地块4×4；基础4种混铺；关卡1×角色合成",
+        "note": "64×32低矮雪堆，轮廓与底座透明边完整。",
+        "limitations": "未在Godot运行，游戏内验收由代码代理负责"
+      }
+    },
+    {
+      "id": "snowdrift_02",
+      "level": "midgard",
+      "type": "props",
+      "width": 64,
+      "height": 32,
+      "status": "self_check_passed_pending_game_review",
+      "candidate": "candidates/midgard_snowdrift_02_v03.png",
+      "color_count": 36,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "bbox": [
+        2,
+        10,
+        62,
+        30
+      ],
+      "palette": "records/midgard_palette48.json",
+      "sha256": "e1d87a992c12c56d0107a55cf77b7d098b280e17e9cefc6ca4bde547e5836fbe",
+      "checks": {
+        "exact_size": true,
+        "png_rgba": true,
+        "binary_alpha": true,
+        "palette_limit": true,
+        "transparent_margin_2px": true,
+        "style_consistency": true,
+        "no_text_watermark_scene": true,
+        "dark_background_1x_readable": true,
+        "facing_right": "not_applicable_static_environment",
+        "fixed_feet_baseline": "not_applicable_static_environment",
+        "animation": "not_applicable_single_frame"
+      },
+      "approved_file": "approved/props/midgard/snowdrift_02.png",
+      "final_file": "sprites/props/midgard/snowdrift_02.png",
+      "frame_count": 1,
+      "fps": null,
+      "source": {
+        "raw_file": "originals/midgard_props_b_v01_raw.png",
+        "crop": [
+          1040,
+          630,
+          1400,
+          800
+        ],
+        "tool": "Chrome ChatGPT web image generation",
+        "chat_url": "https://chatgpt.com/c/6ad1caa5-3e04-83ea-8bd8-4d2b22d85503",
+        "generation_record": "records/generation_jobs_wave02.json",
+        "prompt_file": "records/midgard_props_b_prompt.txt",
+        "input_references": [
+          "references/style_reference.png"
+        ]
+      },
+      "processing_tools": [
+        "Pillow 12.1.1",
+        "project-original deterministic normalization scripts"
+      ],
+      "visual_review": {
+        "passed": true,
+        "reviewed_candidate": "candidates/midgard_snowdrift_02_v03.png",
+        "reviewed_at": "2026-10-16",
+        "viewed": "#121721背景1×/4×对照；地块4×4；基础4种混铺；关卡1×角色合成",
+        "note": "64×32不同轮廓雪堆，冷色高光统一。",
+        "limitations": "未在Godot运行，游戏内验收由代码代理负责"
+      }
+    },
+    {
+      "id": "stone_01",
+      "level": "helheim",
+      "type": "ground",
+      "width": 64,
+      "height": 64,
+      "status": "self_check_passed_pending_game_review",
+      "candidate": "candidates/helheim_stone_01_v03.png",
+      "color_count": 25,
+      "alpha_values": [
+        255
+      ],
+      "bbox": [
+        0,
+        0,
+        64,
+        64
+      ],
+      "palette": "records/helheim_palette48.json",
+      "sha256": "32a7743feb27390e888ae4bc29f09888e843949f8c5f410074ff59494faa4efe",
+      "checks": {
+        "exact_size": true,
+        "png_rgba": true,
+        "binary_alpha": true,
+        "palette_limit": true,
+        "transparent_margin_2px": null,
+        "style_consistency": true,
+        "no_text_watermark_scene": true,
+        "dark_background_1x_readable": true,
+        "facing_right": "not_applicable_static_environment",
+        "fixed_feet_baseline": "not_applicable_static_environment",
+        "animation": "not_applicable_single_frame",
+        "opaque_full_ground": true,
+        "seamless_4x4_visual": true,
+        "subdued_below_character_visual": true,
+        "no_prominent_repeated_landmark": true
+      },
+      "seam_metrics": {
+        "opposing_edge_mean_x": 4.068,
+        "opposing_edge_mean_y": 3.766,
+        "interior_neighbor_mean_x": 7.597,
+        "interior_neighbor_mean_y": 8.08,
+        "edge_jump_outlier_at_1_5x": false
+      },
+      "mean_rgb": [
+        36.1,
+        46.0,
+        50.45
+      ],
+      "approved_file": "approved/ground/helheim/stone_01.png",
+      "final_file": "sprites/ground/helheim/stone_01.png",
+      "frame_count": 1,
+      "fps": null,
+      "source": {
+        "raw_file": "originals/helheim_ground_v01_raw.png",
+        "crop": [
+          3,
+          3,
+          441,
+          441
+        ],
+        "tool": "Chrome ChatGPT web image generation",
+        "chat_url": "https://chatgpt.com/c/6ad1c9ba-0f44-83ea-bdf4-ae8642240401",
+        "generation_record": "records/generation_jobs_wave01.json",
+        "prompt_file": "records/helheim_ground_prompt.txt",
+        "input_references": [
+          "references/style_reference.png"
+        ]
+      },
+      "processing_tools": [
+        "Pillow 12.1.1",
+        "project-original deterministic normalization scripts"
+      ],
+      "visual_review": {
+        "passed": true,
+        "reviewed_candidate": "candidates/helheim_stone_01_v03.png",
+        "reviewed_at": "2026-10-16",
+        "viewed": "#121721背景1×/4×对照；地块4×4；基础4种混铺；关卡1×角色合成",
+        "note": "不规则冥石裂隙，冷灰低对比；单铺与4种基础混铺查看。",
+        "limitations": "未在Godot运行，游戏内验收由代码代理负责"
+      },
+      "tiling_preview": "previews/helheim_stone_01_4x4.png"
+    },
+    {
+      "id": "stone_02",
+      "level": "helheim",
+      "type": "ground",
+      "width": 64,
+      "height": 64,
+      "status": "self_check_passed_pending_game_review",
+      "candidate": "candidates/helheim_stone_02_v03.png",
+      "color_count": 27,
+      "alpha_values": [
+        255
+      ],
+      "bbox": [
+        0,
+        0,
+        64,
+        64
+      ],
+      "palette": "records/helheim_palette48.json",
+      "sha256": "6531847cee77a2b2a5180736af3dfb9b8c9ac209ca7231f0c78a27d36de472c0",
+      "checks": {
+        "exact_size": true,
+        "png_rgba": true,
+        "binary_alpha": true,
+        "palette_limit": true,
+        "transparent_margin_2px": null,
+        "style_consistency": true,
+        "no_text_watermark_scene": true,
+        "dark_background_1x_readable": true,
+        "facing_right": "not_applicable_static_environment",
+        "fixed_feet_baseline": "not_applicable_static_environment",
+        "animation": "not_applicable_single_frame",
+        "opaque_full_ground": true,
+        "seamless_4x4_visual": true,
+        "subdued_below_character_visual": true,
+        "no_prominent_repeated_landmark": true
+      },
+      "seam_metrics": {
+        "opposing_edge_mean_x": 3.464,
+        "opposing_edge_mean_y": 3.594,
+        "interior_neighbor_mean_x": 7.899,
+        "interior_neighbor_mean_y": 8.167,
+        "edge_jump_outlier_at_1_5x": false
+      },
+      "mean_rgb": [
+        36.06,
+        45.96,
+        50.35
+      ],
+      "approved_file": "approved/ground/helheim/stone_02.png",
+      "final_file": "sprites/ground/helheim/stone_02.png",
+      "frame_count": 1,
+      "fps": null,
+      "source": {
+        "raw_file": "originals/helheim_ground_v01_raw.png",
+        "crop": [
+          447,
+          3,
+          884,
+          441
+        ],
+        "tool": "Chrome ChatGPT web image generation",
+        "chat_url": "https://chatgpt.com/c/6ad1c9ba-0f44-83ea-bdf4-ae8642240401",
+        "generation_record": "records/generation_jobs_wave01.json",
+        "prompt_file": "records/helheim_ground_prompt.txt",
+        "input_references": [
+          "references/style_reference.png"
+        ]
+      },
+      "processing_tools": [
+        "Pillow 12.1.1",
+        "project-original deterministic normalization scripts"
+      ],
+      "visual_review": {
+        "passed": true,
+        "reviewed_candidate": "candidates/helheim_stone_02_v03.png",
+        "reviewed_at": "2026-10-16",
+        "viewed": "#121721背景1×/4×对照；地块4×4；基础4种混铺；关卡1×角色合成",
+        "note": "冥石颗粒和裂隙分布不同，亮度匹配；单铺及混铺查看。",
+        "limitations": "未在Godot运行，游戏内验收由代码代理负责"
+      },
+      "tiling_preview": "previews/helheim_stone_02_4x4.png"
+    },
+    {
+      "id": "stone_03",
+      "level": "helheim",
+      "type": "ground",
+      "width": 64,
+      "height": 64,
+      "status": "self_check_passed_pending_game_review",
+      "candidate": "candidates/helheim_stone_03_v03.png",
+      "color_count": 26,
+      "alpha_values": [
+        255
+      ],
+      "bbox": [
+        0,
+        0,
+        64,
+        64
+      ],
+      "palette": "records/helheim_palette48.json",
+      "sha256": "03be07a947b21340d09e150fd46952d01031e210bb6ecd7a5f43f879e2ab38bc",
+      "checks": {
+        "exact_size": true,
+        "png_rgba": true,
+        "binary_alpha": true,
+        "palette_limit": true,
+        "transparent_margin_2px": null,
+        "style_consistency": true,
+        "no_text_watermark_scene": true,
+        "dark_background_1x_readable": true,
+        "facing_right": "not_applicable_static_environment",
+        "fixed_feet_baseline": "not_applicable_static_environment",
+        "animation": "not_applicable_single_frame",
+        "opaque_full_ground": true,
+        "seamless_4x4_visual": true,
+        "subdued_below_character_visual": true,
+        "no_prominent_repeated_landmark": true
+      },
+      "seam_metrics": {
+        "opposing_edge_mean_x": 3.521,
+        "opposing_edge_mean_y": 3.693,
+        "interior_neighbor_mean_x": 6.955,
+        "interior_neighbor_mean_y": 7.476,
+        "edge_jump_outlier_at_1_5x": false
+      },
+      "mean_rgb": [
+        36.02,
+        45.9,
+        50.36
+      ],
+      "approved_file": "approved/ground/helheim/stone_03.png",
+      "final_file": "sprites/ground/helheim/stone_03.png",
+      "frame_count": 1,
+      "fps": null,
+      "source": {
+        "raw_file": "originals/helheim_ground_v01_raw.png",
+        "crop": [
+          890,
+          3,
+          1327,
+          441
+        ],
+        "tool": "Chrome ChatGPT web image generation",
+        "chat_url": "https://chatgpt.com/c/6ad1c9ba-0f44-83ea-bdf4-ae8642240401",
+        "generation_record": "records/generation_jobs_wave01.json",
+        "prompt_file": "records/helheim_ground_prompt.txt",
+        "input_references": [
+          "references/style_reference.png"
+        ]
+      },
+      "processing_tools": [
+        "Pillow 12.1.1",
+        "project-original deterministic normalization scripts"
+      ],
+      "visual_review": {
+        "passed": true,
+        "reviewed_candidate": "candidates/helheim_stone_03_v03.png",
+        "reviewed_at": "2026-10-16",
+        "viewed": "#121721背景1×/4×对照；地块4×4；基础4种混铺；关卡1×角色合成",
+        "note": "较大片冥石断面，暗部仍低对比；单铺及混铺查看。",
+        "limitations": "未在Godot运行，游戏内验收由代码代理负责"
+      },
+      "tiling_preview": "previews/helheim_stone_03_4x4.png"
+    },
+    {
+      "id": "stone_04",
+      "level": "helheim",
+      "type": "ground",
+      "width": 64,
+      "height": 64,
+      "status": "self_check_passed_pending_game_review",
+      "candidate": "candidates/helheim_stone_04_v03.png",
+      "color_count": 26,
+      "alpha_values": [
+        255
+      ],
+      "bbox": [
+        0,
+        0,
+        64,
+        64
+      ],
+      "palette": "records/helheim_palette48.json",
+      "sha256": "bbce5b376cb4ff1224288ff4bfb67b840c6b0b0de83bc030014e1b4f7b5e309a",
+      "checks": {
+        "exact_size": true,
+        "png_rgba": true,
+        "binary_alpha": true,
+        "palette_limit": true,
+        "transparent_margin_2px": null,
+        "style_consistency": true,
+        "no_text_watermark_scene": true,
+        "dark_background_1x_readable": true,
+        "facing_right": "not_applicable_static_environment",
+        "fixed_feet_baseline": "not_applicable_static_environment",
+        "animation": "not_applicable_single_frame",
+        "opaque_full_ground": true,
+        "seamless_4x4_visual": true,
+        "subdued_below_character_visual": true,
+        "no_prominent_repeated_landmark": true
+      },
+      "seam_metrics": {
+        "opposing_edge_mean_x": 2.896,
+        "opposing_edge_mean_y": 4.229,
+        "interior_neighbor_mean_x": 8.025,
+        "interior_neighbor_mean_y": 8.396,
+        "edge_jump_outlier_at_1_5x": false
+      },
+      "mean_rgb": [
+        36.07,
+        45.94,
+        50.3
+      ],
+      "approved_file": "approved/ground/helheim/stone_04.png",
+      "final_file": "sprites/ground/helheim/stone_04.png",
+      "frame_count": 1,
+      "fps": null,
+      "source": {
+        "raw_file": "originals/helheim_ground_v01_raw.png",
+        "crop": [
+          1333,
+          3,
+          1771,
+          441
+        ],
+        "tool": "Chrome ChatGPT web image generation",
+        "chat_url": "https://chatgpt.com/c/6ad1c9ba-0f44-83ea-bdf4-ae8642240401",
+        "generation_record": "records/generation_jobs_wave01.json",
+        "prompt_file": "records/helheim_ground_prompt.txt",
+        "input_references": [
+          "references/style_reference.png"
+        ]
+      },
+      "processing_tools": [
+        "Pillow 12.1.1",
+        "project-original deterministic normalization scripts"
+      ],
+      "visual_review": {
+        "passed": true,
+        "reviewed_candidate": "candidates/helheim_stone_04_v03.png",
+        "reviewed_at": "2026-10-16",
+        "viewed": "#121721背景1×/4×对照；地块4×4；基础4种混铺；关卡1×角色合成",
+        "note": "细碎裂石变化，保持同一冷灰地面色；单铺及混铺查看。",
+        "limitations": "未在Godot运行，游戏内验收由代码代理负责"
+      },
+      "tiling_preview": "previews/helheim_stone_04_4x4.png"
+    },
+    {
+      "id": "fog_ground",
+      "level": "helheim",
+      "type": "ground",
+      "width": 64,
+      "height": 64,
+      "status": "self_check_passed_pending_game_review",
+      "candidate": "candidates/helheim_fog_ground_v03.png",
+      "color_count": 23,
+      "alpha_values": [
+        255
+      ],
+      "bbox": [
+        0,
+        0,
+        64,
+        64
+      ],
+      "palette": "records/helheim_palette48.json",
+      "sha256": "f780174ebc7d0b4879712d4e777590793534ed320bdf96e255c4282ff3499eba",
+      "checks": {
+        "exact_size": true,
+        "png_rgba": true,
+        "binary_alpha": true,
+        "palette_limit": true,
+        "transparent_margin_2px": null,
+        "style_consistency": true,
+        "no_text_watermark_scene": true,
+        "dark_background_1x_readable": true,
+        "facing_right": "not_applicable_static_environment",
+        "fixed_feet_baseline": "not_applicable_static_environment",
+        "animation": "not_applicable_single_frame",
+        "opaque_full_ground": true,
+        "seamless_4x4_visual": true,
+        "subdued_below_character_visual": true,
+        "no_prominent_repeated_landmark": true
+      },
+      "seam_metrics": {
+        "opposing_edge_mean_x": 2.292,
+        "opposing_edge_mean_y": 3.474,
+        "interior_neighbor_mean_x": 5.664,
+        "interior_neighbor_mean_y": 5.984,
+        "edge_jump_outlier_at_1_5x": false
+      },
+      "mean_rgb": [
+        35.77,
+        45.82,
+        50.34
+      ],
+      "approved_file": "approved/ground/helheim/fog_ground.png",
+      "final_file": "sprites/ground/helheim/fog_ground.png",
+      "frame_count": 1,
+      "fps": null,
+      "source": {
+        "raw_file": "originals/helheim_ground_v01_raw.png",
+        "crop": [
+          3,
+          447,
+          441,
+          884
+        ],
+        "tool": "Chrome ChatGPT web image generation",
+        "chat_url": "https://chatgpt.com/c/6ad1c9ba-0f44-83ea-bdf4-ae8642240401",
+        "generation_record": "records/generation_jobs_wave01.json",
+        "prompt_file": "records/helheim_ground_prompt.txt",
+        "input_references": [
+          "references/style_reference.png"
+        ]
+      },
+      "processing_tools": [
+        "Pillow 12.1.1",
+        "project-original deterministic normalization scripts"
+      ],
+      "visual_review": {
+        "passed": true,
+        "reviewed_candidate": "candidates/helheim_fog_ground_v03.png",
+        "reviewed_at": "2026-10-16",
+        "viewed": "#121721背景1×/4×对照；地块4×4；基础4种混铺；关卡1×角色合成",
+        "note": "雾色融入完整不透明地面，细青色涡纹；单铺无透明洞或硬缝。",
+        "limitations": "未在Godot运行，游戏内验收由代码代理负责"
+      },
+      "tiling_preview": "previews/helheim_fog_ground_4x4.png"
+    },
+    {
+      "id": "nail_deck_01",
+      "level": "helheim",
+      "type": "ground",
+      "width": 64,
+      "height": 64,
+      "status": "self_check_passed_pending_game_review",
+      "candidate": "candidates/helheim_nail_deck_01_v03.png",
+      "color_count": 16,
+      "alpha_values": [
+        255
+      ],
+      "bbox": [
+        0,
+        0,
+        64,
+        64
+      ],
+      "palette": "records/helheim_palette48.json",
+      "sha256": "be169aafe5a5eab0357983e77de0a290464071e38ebd51bf630cb65b6fa4f643",
+      "checks": {
+        "exact_size": true,
+        "png_rgba": true,
+        "binary_alpha": true,
+        "palette_limit": true,
+        "transparent_margin_2px": null,
+        "style_consistency": true,
+        "no_text_watermark_scene": true,
+        "dark_background_1x_readable": true,
+        "facing_right": "not_applicable_static_environment",
+        "fixed_feet_baseline": "not_applicable_static_environment",
+        "animation": "not_applicable_single_frame",
+        "opaque_full_ground": true,
+        "seamless_4x4_visual": true,
+        "subdued_below_character_visual": true,
+        "no_prominent_repeated_landmark": true
+      },
+      "seam_metrics": {
+        "opposing_edge_mean_x": 5.917,
+        "opposing_edge_mean_y": 4.979,
+        "interior_neighbor_mean_x": 10.186,
+        "interior_neighbor_mean_y": 9.062,
+        "edge_jump_outlier_at_1_5x": false
+      },
+      "mean_rgb": [
+        40.99,
+        41.43,
+        39.43
+      ],
+      "approved_file": "approved/ground/helheim/nail_deck_01.png",
+      "final_file": "sprites/ground/helheim/nail_deck_01.png",
+      "frame_count": 1,
+      "fps": null,
+      "source": {
+        "raw_file": "originals/helheim_ground_v01_raw.png",
+        "crop": [
+          447,
+          447,
+          884,
+          884
+        ],
+        "tool": "Chrome ChatGPT web image generation",
+        "chat_url": "https://chatgpt.com/c/6ad1c9ba-0f44-83ea-bdf4-ae8642240401",
+        "generation_record": "records/generation_jobs_wave01.json",
+        "prompt_file": "records/helheim_ground_prompt.txt",
+        "input_references": [
+          "references/style_reference.png"
+        ]
+      },
+      "processing_tools": [
+        "Pillow 12.1.1",
+        "project-original deterministic normalization scripts"
+      ],
+      "visual_review": {
+        "passed": true,
+        "reviewed_candidate": "candidates/helheim_nail_deck_01_v03.png",
+        "reviewed_at": "2026-10-16",
+        "viewed": "#121721背景1×/4×对照；地块4×4；基础4种混铺；关卡1×角色合成",
+        "note": "重叠弯曲角质指甲片，可辨尖端；降低亮度后4×4查看。",
+        "limitations": "未在Godot运行，游戏内验收由代码代理负责"
+      },
+      "tiling_preview": "previews/helheim_nail_deck_01_4x4.png"
+    },
+    {
+      "id": "nail_deck_02",
+      "level": "helheim",
+      "type": "ground",
+      "width": 64,
+      "height": 64,
+      "status": "self_check_passed_pending_game_review",
+      "candidate": "candidates/helheim_nail_deck_02_v03.png",
+      "color_count": 15,
+      "alpha_values": [
+        255
+      ],
+      "bbox": [
+        0,
+        0,
+        64,
+        64
+      ],
+      "palette": "records/helheim_palette48.json",
+      "sha256": "995a80417f14843b7990c25e4d9652e334a8836543356e9f210f7fb003a9363b",
+      "checks": {
+        "exact_size": true,
+        "png_rgba": true,
+        "binary_alpha": true,
+        "palette_limit": true,
+        "transparent_margin_2px": null,
+        "style_consistency": true,
+        "no_text_watermark_scene": true,
+        "dark_background_1x_readable": true,
+        "facing_right": "not_applicable_static_environment",
+        "fixed_feet_baseline": "not_applicable_static_environment",
+        "animation": "not_applicable_single_frame",
+        "opaque_full_ground": true,
+        "seamless_4x4_visual": true,
+        "subdued_below_character_visual": true,
+        "no_prominent_repeated_landmark": true
+      },
+      "seam_metrics": {
+        "opposing_edge_mean_x": 5.453,
+        "opposing_edge_mean_y": 3.62,
+        "interior_neighbor_mean_x": 9.519,
+        "interior_neighbor_mean_y": 8.081,
+        "edge_jump_outlier_at_1_5x": false
+      },
+      "mean_rgb": [
+        41.15,
+        41.32,
+        39.25
+      ],
+      "approved_file": "approved/ground/helheim/nail_deck_02.png",
+      "final_file": "sprites/ground/helheim/nail_deck_02.png",
+      "frame_count": 1,
+      "fps": null,
+      "source": {
+        "raw_file": "originals/helheim_ground_v01_raw.png",
+        "crop": [
+          890,
+          447,
+          1327,
+          884
+        ],
+        "tool": "Chrome ChatGPT web image generation",
+        "chat_url": "https://chatgpt.com/c/6ad1c9ba-0f44-83ea-bdf4-ae8642240401",
+        "generation_record": "records/generation_jobs_wave01.json",
+        "prompt_file": "records/helheim_ground_prompt.txt",
+        "input_references": [
+          "references/style_reference.png"
+        ]
+      },
+      "processing_tools": [
+        "Pillow 12.1.1",
+        "project-original deterministic normalization scripts"
+      ],
+      "visual_review": {
+        "passed": true,
+        "reviewed_candidate": "candidates/helheim_nail_deck_02_v03.png",
+        "reviewed_at": "2026-10-16",
+        "viewed": "#121721背景1×/4×对照；地块4×4；基础4种混铺；关卡1×角色合成",
+        "note": "另一组角质指甲片排布，材质/色调匹配；4×4查看。",
+        "limitations": "未在Godot运行，游戏内验收由代码代理负责"
+      },
+      "tiling_preview": "previews/helheim_nail_deck_02_4x4.png"
+    },
+    {
+      "id": "bone_pile",
+      "level": "helheim",
+      "type": "props",
+      "width": 64,
+      "height": 48,
+      "status": "self_check_passed_pending_game_review",
+      "candidate": "candidates/helheim_bone_pile_v03.png",
+      "color_count": 45,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "bbox": [
+        3,
+        4,
+        62,
+        46
+      ],
+      "palette": "records/helheim_palette48.json",
+      "sha256": "5e9304f2fc1271714fec93236111ab0425a059daf1638d66029ca33d60800ee7",
+      "checks": {
+        "exact_size": true,
+        "png_rgba": true,
+        "binary_alpha": true,
+        "palette_limit": true,
+        "transparent_margin_2px": true,
+        "style_consistency": true,
+        "no_text_watermark_scene": true,
+        "dark_background_1x_readable": true,
+        "facing_right": "not_applicable_static_environment",
+        "fixed_feet_baseline": "not_applicable_static_environment",
+        "animation": "not_applicable_single_frame"
+      },
+      "approved_file": "approved/props/helheim/bone_pile.png",
+      "final_file": "sprites/props/helheim/bone_pile.png",
+      "frame_count": 1,
+      "fps": null,
+      "source": {
+        "raw_file": "originals/helheim_props_v01_raw.png",
+        "crop": [
+          30,
+          130,
+          485,
+          455
+        ],
+        "tool": "Chrome ChatGPT web image generation",
+        "chat_url": "https://chatgpt.com/c/6ad1caa6-0004-83e9-a3bb-a19fdaed42c6",
+        "generation_record": "records/generation_jobs_wave02.json",
+        "prompt_file": "records/helheim_props_prompt.txt",
+        "input_references": [
+          "references/style_reference.png"
+        ]
+      },
+      "processing_tools": [
+        "Pillow 12.1.1",
+        "project-original deterministic normalization scripts"
+      ],
+      "visual_review": {
+        "passed": true,
+        "reviewed_candidate": "candidates/helheim_bone_pile_v03.png",
+        "reviewed_at": "2026-10-16",
+        "viewed": "#121721背景1×/4×对照；地块4×4；基础4种混铺；关卡1×角色合成",
+        "note": "头骨和肋骨可辨，无血腥器官；64×48透明物件。",
+        "limitations": "未在Godot运行，游戏内验收由代码代理负责"
+      }
+    },
+    {
+      "id": "broken_headstone",
+      "level": "helheim",
+      "type": "props",
+      "width": 48,
+      "height": 64,
+      "status": "self_check_passed_pending_game_review",
+      "candidate": "candidates/helheim_broken_headstone_v03.png",
+      "color_count": 46,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "bbox": [
+        2,
+        17,
+        46,
+        62
+      ],
+      "palette": "records/helheim_palette48.json",
+      "sha256": "65227cd51de987ee645ac16992a2849a897f38f224d75e07bb3327b88ef7f49c",
+      "checks": {
+        "exact_size": true,
+        "png_rgba": true,
+        "binary_alpha": true,
+        "palette_limit": true,
+        "transparent_margin_2px": true,
+        "style_consistency": true,
+        "no_text_watermark_scene": true,
+        "dark_background_1x_readable": true,
+        "facing_right": "not_applicable_static_environment",
+        "fixed_feet_baseline": "not_applicable_static_environment",
+        "animation": "not_applicable_single_frame"
+      },
+      "approved_file": "approved/props/helheim/broken_headstone.png",
+      "final_file": "sprites/props/helheim/broken_headstone.png",
+      "frame_count": 1,
+      "fps": null,
+      "source": {
+        "raw_file": "originals/helheim_props_v01_raw.png",
+        "crop": [
+          575,
+          40,
+          975,
+          465
+        ],
+        "tool": "Chrome ChatGPT web image generation",
+        "chat_url": "https://chatgpt.com/c/6ad1caa6-0004-83e9-a3bb-a19fdaed42c6",
+        "generation_record": "records/generation_jobs_wave02.json",
+        "prompt_file": "records/helheim_props_prompt.txt",
+        "input_references": [
+          "references/style_reference.png"
+        ]
+      },
+      "processing_tools": [
+        "Pillow 12.1.1",
+        "project-original deterministic normalization scripts"
+      ],
+      "visual_review": {
+        "passed": true,
+        "reviewed_candidate": "candidates/helheim_broken_headstone_v03.png",
+        "reviewed_at": "2026-10-16",
+        "viewed": "#121721背景1×/4×对照；地块4×4；基础4种混铺；关卡1×角色合成",
+        "note": "48×64不规则断碑，冷石材，无十字架或可读文字。",
+        "limitations": "未在Godot运行，游戏内验收由代码代理负责"
+      }
+    },
+    {
+      "id": "chain_pillar",
+      "level": "helheim",
+      "type": "props",
+      "width": 48,
+      "height": 96,
+      "status": "self_check_passed_pending_game_review",
+      "candidate": "candidates/helheim_chain_pillar_v03.png",
+      "color_count": 48,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "bbox": [
+        3,
+        22,
+        46,
+        94
+      ],
+      "palette": "records/helheim_palette48.json",
+      "sha256": "b2eef3c83a12d8579b0bfb7ac4e037012cde364452fdc061d2d7c080c020e4f8",
+      "checks": {
+        "exact_size": true,
+        "png_rgba": true,
+        "binary_alpha": true,
+        "palette_limit": true,
+        "transparent_margin_2px": true,
+        "style_consistency": true,
+        "no_text_watermark_scene": true,
+        "dark_background_1x_readable": true,
+        "facing_right": "not_applicable_static_environment",
+        "fixed_feet_baseline": "not_applicable_static_environment",
+        "animation": "not_applicable_single_frame"
+      },
+      "approved_file": "approved/props/helheim/chain_pillar.png",
+      "final_file": "sprites/props/helheim/chain_pillar.png",
+      "frame_count": 1,
+      "fps": null,
+      "source": {
+        "raw_file": "originals/helheim_props_v01_raw.png",
+        "crop": [
+          1145,
+          0,
+          1495,
+          510
+        ],
+        "tool": "Chrome ChatGPT web image generation",
+        "chat_url": "https://chatgpt.com/c/6ad1caa6-0004-83e9-a3bb-a19fdaed42c6",
+        "generation_record": "records/generation_jobs_wave02.json",
+        "prompt_file": "records/helheim_props_prompt.txt",
+        "input_references": [
+          "references/style_reference.png"
+        ]
+      },
+      "processing_tools": [
+        "Pillow 12.1.1",
+        "project-original deterministic normalization scripts"
+      ],
+      "visual_review": {
+        "passed": true,
+        "reviewed_candidate": "candidates/helheim_chain_pillar_v03.png",
+        "reviewed_at": "2026-10-16",
+        "viewed": "#121721背景1×/4×对照；地块4×4；基础4种混铺；关卡1×角色合成",
+        "note": "48×96链柱，柱体与链环可辨；链圈透明空隙。",
+        "limitations": "未在Godot运行，游戏内验收由代码代理负责"
+      }
+    },
+    {
+      "id": "mist_dead_tree",
+      "level": "helheim",
+      "type": "props",
+      "width": 64,
+      "height": 96,
+      "status": "self_check_passed_pending_game_review",
+      "candidate": "candidates/helheim_mist_dead_tree_v03.png",
+      "color_count": 48,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "bbox": [
+        2,
+        26,
+        60,
+        94
+      ],
+      "palette": "records/helheim_palette48.json",
+      "sha256": "2f2ad9ef6d15d2f860dd21b8f072f21de8f7bce518866bf27afd65364bb9baff",
+      "checks": {
+        "exact_size": true,
+        "png_rgba": true,
+        "binary_alpha": true,
+        "palette_limit": true,
+        "transparent_margin_2px": true,
+        "style_consistency": true,
+        "no_text_watermark_scene": true,
+        "dark_background_1x_readable": true,
+        "facing_right": "not_applicable_static_environment",
+        "fixed_feet_baseline": "not_applicable_static_environment",
+        "animation": "not_applicable_single_frame"
+      },
+      "approved_file": "approved/props/helheim/mist_dead_tree.png",
+      "final_file": "sprites/props/helheim/mist_dead_tree.png",
+      "frame_count": 1,
+      "fps": null,
+      "source": {
+        "raw_file": "originals/helheim_props_v01_raw.png",
+        "crop": [
+          10,
+          510,
+          490,
+          1020
+        ],
+        "tool": "Chrome ChatGPT web image generation",
+        "chat_url": "https://chatgpt.com/c/6ad1caa6-0004-83e9-a3bb-a19fdaed42c6",
+        "generation_record": "records/generation_jobs_wave02.json",
+        "prompt_file": "records/helheim_props_prompt.txt",
+        "input_references": [
+          "references/style_reference.png"
+        ]
+      },
+      "processing_tools": [
+        "Pillow 12.1.1",
+        "project-original deterministic normalization scripts"
+      ],
+      "visual_review": {
+        "passed": true,
+        "reviewed_candidate": "candidates/helheim_mist_dead_tree_v03.png",
+        "reviewed_at": "2026-10-16",
+        "viewed": "#121721背景1×/4×对照；地块4×4；基础4种混铺；关卡1×角色合成",
+        "note": "64×96画布内枯树，扭曲枝根；没有不透明雾背景。",
+        "limitations": "未在Godot运行，游戏内验收由代码代理负责"
+      }
+    },
+    {
+      "id": "gjoll_railing",
+      "level": "helheim",
+      "type": "props",
+      "width": 96,
+      "height": 48,
+      "status": "self_check_passed_pending_game_review",
+      "candidate": "candidates/helheim_gjoll_railing_v03.png",
+      "color_count": 48,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "bbox": [
+        15,
+        2,
+        80,
+        46
+      ],
+      "palette": "records/helheim_palette48.json",
+      "sha256": "f57ec49007b06c0dc54f21ae73c42757df08f518ef1196956a3d602c25456a7d",
+      "checks": {
+        "exact_size": true,
+        "png_rgba": true,
+        "binary_alpha": true,
+        "palette_limit": true,
+        "transparent_margin_2px": true,
+        "style_consistency": true,
+        "no_text_watermark_scene": true,
+        "dark_background_1x_readable": true,
+        "facing_right": "not_applicable_static_environment",
+        "fixed_feet_baseline": "not_applicable_static_environment",
+        "animation": "not_applicable_single_frame"
+      },
+      "approved_file": "approved/props/helheim/gjoll_railing.png",
+      "final_file": "sprites/props/helheim/gjoll_railing.png",
+      "frame_count": 1,
+      "fps": null,
+      "source": {
+        "raw_file": "originals/helheim_props_v01_raw.png",
+        "crop": [
+          525,
+          570,
+          1020,
+          930
+        ],
+        "tool": "Chrome ChatGPT web image generation",
+        "chat_url": "https://chatgpt.com/c/6ad1caa6-0004-83e9-a3bb-a19fdaed42c6",
+        "generation_record": "records/generation_jobs_wave02.json",
+        "prompt_file": "records/helheim_props_prompt.txt",
+        "input_references": [
+          "references/style_reference.png"
+        ]
+      },
+      "processing_tools": [
+        "Pillow 12.1.1",
+        "project-original deterministic normalization scripts"
+      ],
+      "visual_review": {
+        "passed": true,
+        "reviewed_candidate": "candidates/helheim_gjoll_railing_v03.png",
+        "reviewed_at": "2026-10-16",
+        "viewed": "#121721背景1×/4×对照；地块4×4；基础4种混铺；关卡1×角色合成",
+        "note": "96×48暗石和少量旧金构件；栏杆拱孔真正透明。",
+        "limitations": "未在Godot运行，游戏内验收由代码代理负责"
+      }
+    },
+    {
+      "id": "scorched_01",
+      "level": "vigrid",
+      "type": "ground",
+      "width": 64,
+      "height": 64,
+      "status": "self_check_passed_pending_game_review",
+      "candidate": "candidates/vigrid_scorched_01_v04.png",
+      "color_count": 21,
+      "alpha_values": [
+        255
+      ],
+      "bbox": [
+        0,
+        0,
+        64,
+        64
+      ],
+      "palette": "records/vigrid_palette48_v04.json",
+      "sha256": "3748580e22d48641ca2776b843445a7c10ae1385a4e3251000eae628ead89ba8",
+      "checks": {
+        "exact_size": true,
+        "png_rgba": true,
+        "binary_alpha": true,
+        "palette_limit": true,
+        "transparent_margin_2px": null,
+        "style_consistency": true,
+        "no_text_watermark_scene": true,
+        "dark_background_1x_readable": true,
+        "facing_right": "not_applicable_static_environment",
+        "fixed_feet_baseline": "not_applicable_static_environment",
+        "animation": "not_applicable_single_frame",
+        "opaque_full_ground": true,
+        "seamless_4x4_visual": true,
+        "subdued_below_character_visual": true,
+        "no_prominent_repeated_landmark": true
+      },
+      "seam_metrics": {
+        "opposing_edge_mean_x": 2.958,
+        "opposing_edge_mean_y": 2.922,
+        "interior_neighbor_mean_x": 6.708,
+        "interior_neighbor_mean_y": 6.932,
+        "edge_jump_outlier_at_1_5x": false
+      },
+      "mean_rgb": [
+        38.12,
+        31.2,
+        31.97
+      ],
+      "approved_file": "approved/ground/vigrid/scorched_01.png",
+      "final_file": "sprites/ground/vigrid/scorched_01.png",
+      "frame_count": 1,
+      "fps": null,
+      "source": {
+        "raw_file": "originals/vigrid_ground_v01_raw.png",
+        "crop": [
+          3,
+          3,
+          441,
+          441
+        ],
+        "tool": "Chrome ChatGPT web image generation",
+        "chat_url": "https://chatgpt.com/c/6ad1c9d7-dcc0-83e9-9f7b-6e7f52f047e5",
+        "generation_record": "records/generation_jobs_wave01.json",
+        "prompt_file": "records/vigrid_ground_prompt.txt",
+        "input_references": [
+          "references/style_reference.png"
+        ]
+      },
+      "processing_tools": [
+        "Pillow 12.1.1",
+        "project-original deterministic normalization scripts"
+      ],
+      "visual_review": {
+        "passed": true,
+        "reviewed_candidate": "candidates/vigrid_scorched_01_v04.png",
+        "reviewed_at": "2026-10-16",
+        "viewed": "#121721背景1×/4×对照；地块4×4；基础4种混铺；关卡1×角色合成",
+        "note": "暗色灰烬与少量余烬，单铺与混铺查看。",
+        "limitations": "未在Godot运行，游戏内验收由代码代理负责"
+      },
+      "tiling_preview": "previews/vigrid_scorched_01_4x4.png"
+    },
+    {
+      "id": "scorched_02",
+      "level": "vigrid",
+      "type": "ground",
+      "width": 64,
+      "height": 64,
+      "status": "self_check_passed_pending_game_review",
+      "candidate": "candidates/vigrid_scorched_02_v04.png",
+      "color_count": 24,
+      "alpha_values": [
+        255
+      ],
+      "bbox": [
+        0,
+        0,
+        64,
+        64
+      ],
+      "palette": "records/vigrid_palette48_v04.json",
+      "sha256": "33c892d8afe17ce56f34408bb015394ae7595f5d9ded6a5cc4a9e3c2b6befa22",
+      "checks": {
+        "exact_size": true,
+        "png_rgba": true,
+        "binary_alpha": true,
+        "palette_limit": true,
+        "transparent_margin_2px": null,
+        "style_consistency": true,
+        "no_text_watermark_scene": true,
+        "dark_background_1x_readable": true,
+        "facing_right": "not_applicable_static_environment",
+        "fixed_feet_baseline": "not_applicable_static_environment",
+        "animation": "not_applicable_single_frame",
+        "opaque_full_ground": true,
+        "seamless_4x4_visual": true,
+        "subdued_below_character_visual": true,
+        "no_prominent_repeated_landmark": true
+      },
+      "seam_metrics": {
+        "opposing_edge_mean_x": 3.177,
+        "opposing_edge_mean_y": 2.604,
+        "interior_neighbor_mean_x": 8.417,
+        "interior_neighbor_mean_y": 8.742,
+        "edge_jump_outlier_at_1_5x": false
+      },
+      "mean_rgb": [
+        38.08,
+        31.22,
+        32.01
+      ],
+      "approved_file": "approved/ground/vigrid/scorched_02.png",
+      "final_file": "sprites/ground/vigrid/scorched_02.png",
+      "frame_count": 1,
+      "fps": null,
+      "source": {
+        "raw_file": "originals/vigrid_ground_v01_raw.png",
+        "crop": [
+          890,
+          447,
+          1327,
+          884
+        ],
+        "tool": "Chrome ChatGPT web image generation",
+        "chat_url": "https://chatgpt.com/c/6ad1c9d7-dcc0-83e9-9f7b-6e7f52f047e5",
+        "generation_record": "records/generation_jobs_wave01.json",
+        "prompt_file": "records/vigrid_ground_prompt.txt",
+        "input_references": [
+          "references/style_reference.png"
+        ]
+      },
+      "processing_tools": [
+        "Pillow 12.1.1",
+        "project-original deterministic normalization scripts"
+      ],
+      "visual_review": {
+        "passed": true,
+        "reviewed_candidate": "candidates/vigrid_scorched_02_v04.png",
+        "reviewed_at": "2026-10-16",
+        "viewed": "#121721背景1×/4×对照；地块4×4；基础4种混铺；关卡1×角色合成",
+        "note": "改用较均匀灰烬区域，避开首稿显眼断枝地标；单铺与混铺查看。",
+        "limitations": "未在Godot运行，游戏内验收由代码代理负责"
+      },
+      "tiling_preview": "previews/vigrid_scorched_02_4x4.png"
+    },
+    {
+      "id": "scorched_03",
+      "level": "vigrid",
+      "type": "ground",
+      "width": 64,
+      "height": 64,
+      "status": "self_check_passed_pending_game_review",
+      "candidate": "candidates/vigrid_scorched_03_v04.png",
+      "color_count": 23,
+      "alpha_values": [
+        255
+      ],
+      "bbox": [
+        0,
+        0,
+        64,
+        64
+      ],
+      "palette": "records/vigrid_palette48_v04.json",
+      "sha256": "b307a804cd093754eb2ad1f7a9f31ec661981881576cd03ba821739f06127cd3",
+      "checks": {
+        "exact_size": true,
+        "png_rgba": true,
+        "binary_alpha": true,
+        "palette_limit": true,
+        "transparent_margin_2px": null,
+        "style_consistency": true,
+        "no_text_watermark_scene": true,
+        "dark_background_1x_readable": true,
+        "facing_right": "not_applicable_static_environment",
+        "fixed_feet_baseline": "not_applicable_static_environment",
+        "animation": "not_applicable_single_frame",
+        "opaque_full_ground": true,
+        "seamless_4x4_visual": true,
+        "subdued_below_character_visual": true,
+        "no_prominent_repeated_landmark": true
+      },
+      "seam_metrics": {
+        "opposing_edge_mean_x": 2.87,
+        "opposing_edge_mean_y": 2.469,
+        "interior_neighbor_mean_x": 7.275,
+        "interior_neighbor_mean_y": 7.502,
+        "edge_jump_outlier_at_1_5x": false
+      },
+      "mean_rgb": [
+        38.13,
+        31.22,
+        32.02
+      ],
+      "approved_file": "approved/ground/vigrid/scorched_03.png",
+      "final_file": "sprites/ground/vigrid/scorched_03.png",
+      "frame_count": 1,
+      "fps": null,
+      "source": {
+        "raw_file": "originals/vigrid_ground_v01_raw.png",
+        "crop": [
+          890,
+          3,
+          1327,
+          441
+        ],
+        "tool": "Chrome ChatGPT web image generation",
+        "chat_url": "https://chatgpt.com/c/6ad1c9d7-dcc0-83e9-9f7b-6e7f52f047e5",
+        "generation_record": "records/generation_jobs_wave01.json",
+        "prompt_file": "records/vigrid_ground_prompt.txt",
+        "input_references": [
+          "references/style_reference.png"
+        ]
+      },
+      "processing_tools": [
+        "Pillow 12.1.1",
+        "project-original deterministic normalization scripts"
+      ],
+      "visual_review": {
+        "passed": true,
+        "reviewed_candidate": "candidates/vigrid_scorched_03_v04.png",
+        "reviewed_at": "2026-10-16",
+        "viewed": "#121721背景1×/4×对照；地块4×4；基础4种混铺；关卡1×角色合成",
+        "note": "焦土碎块，暗反差；单铺与混铺查看。",
+        "limitations": "未在Godot运行，游戏内验收由代码代理负责"
+      },
+      "tiling_preview": "previews/vigrid_scorched_03_4x4.png"
+    },
+    {
+      "id": "scorched_04",
+      "level": "vigrid",
+      "type": "ground",
+      "width": 64,
+      "height": 64,
+      "status": "self_check_passed_pending_game_review",
+      "candidate": "candidates/vigrid_scorched_04_v04.png",
+      "color_count": 24,
+      "alpha_values": [
+        255
+      ],
+      "bbox": [
+        0,
+        0,
+        64,
+        64
+      ],
+      "palette": "records/vigrid_palette48_v04.json",
+      "sha256": "2d1f7e6bff2849a208e9f0abc52aeaa7a48ebcd0bf3f3128615ff9434e5727a0",
+      "checks": {
+        "exact_size": true,
+        "png_rgba": true,
+        "binary_alpha": true,
+        "palette_limit": true,
+        "transparent_margin_2px": null,
+        "style_consistency": true,
+        "no_text_watermark_scene": true,
+        "dark_background_1x_readable": true,
+        "facing_right": "not_applicable_static_environment",
+        "fixed_feet_baseline": "not_applicable_static_environment",
+        "animation": "not_applicable_single_frame",
+        "opaque_full_ground": true,
+        "seamless_4x4_visual": true,
+        "subdued_below_character_visual": true,
+        "no_prominent_repeated_landmark": true
+      },
+      "seam_metrics": {
+        "opposing_edge_mean_x": 2.026,
+        "opposing_edge_mean_y": 2.88,
+        "interior_neighbor_mean_x": 7.163,
+        "interior_neighbor_mean_y": 7.344,
+        "edge_jump_outlier_at_1_5x": false
+      },
+      "mean_rgb": [
+        38.16,
+        31.24,
+        32.03
+      ],
+      "approved_file": "approved/ground/vigrid/scorched_04.png",
+      "final_file": "sprites/ground/vigrid/scorched_04.png",
+      "frame_count": 1,
+      "fps": null,
+      "source": {
+        "raw_file": "originals/vigrid_ground_v01_raw.png",
+        "crop": [
+          1333,
+          3,
+          1771,
+          441
+        ],
+        "tool": "Chrome ChatGPT web image generation",
+        "chat_url": "https://chatgpt.com/c/6ad1c9d7-dcc0-83e9-9f7b-6e7f52f047e5",
+        "generation_record": "records/generation_jobs_wave01.json",
+        "prompt_file": "records/vigrid_ground_prompt.txt",
+        "input_references": [
+          "references/style_reference.png"
+        ]
+      },
+      "processing_tools": [
+        "Pillow 12.1.1",
+        "project-original deterministic normalization scripts"
+      ],
+      "visual_review": {
+        "passed": true,
+        "reviewed_candidate": "candidates/vigrid_scorched_04_v04.png",
+        "reviewed_at": "2026-10-16",
+        "viewed": "#121721背景1×/4×对照；地块4×4；基础4种混铺；关卡1×角色合成",
+        "note": "细焦屑变化，灰烬色一致；单铺与混铺查看。",
+        "limitations": "未在Godot运行，游戏内验收由代码代理负责"
+      },
+      "tiling_preview": "previews/vigrid_scorched_04_4x4.png"
+    },
+    {
+      "id": "cracked_lava",
+      "level": "vigrid",
+      "type": "ground",
+      "width": 64,
+      "height": 64,
+      "status": "self_check_passed_pending_game_review",
+      "candidate": "candidates/vigrid_cracked_lava_v04.png",
+      "color_count": 21,
+      "alpha_values": [
+        255
+      ],
+      "bbox": [
+        0,
+        0,
+        64,
+        64
+      ],
+      "palette": "records/vigrid_palette48_v04.json",
+      "sha256": "2782e6bacb893eaf12f9b17890585008e2dafeefe9ccf571d548ad77c0f39507",
+      "checks": {
+        "exact_size": true,
+        "png_rgba": true,
+        "binary_alpha": true,
+        "palette_limit": true,
+        "transparent_margin_2px": null,
+        "style_consistency": true,
+        "no_text_watermark_scene": true,
+        "dark_background_1x_readable": true,
+        "facing_right": "not_applicable_static_environment",
+        "fixed_feet_baseline": "not_applicable_static_environment",
+        "animation": "not_applicable_single_frame",
+        "opaque_full_ground": true,
+        "seamless_4x4_visual": true,
+        "subdued_below_character_visual": true,
+        "no_prominent_repeated_landmark": true
+      },
+      "seam_metrics": {
+        "opposing_edge_mean_x": 2.12,
+        "opposing_edge_mean_y": 2.438,
+        "interior_neighbor_mean_x": 5.441,
+        "interior_neighbor_mean_y": 5.702,
+        "edge_jump_outlier_at_1_5x": false
+      },
+      "mean_rgb": [
+        38.52,
+        31.59,
+        32.29
+      ],
+      "approved_file": "approved/ground/vigrid/cracked_lava.png",
+      "final_file": "sprites/ground/vigrid/cracked_lava.png",
+      "frame_count": 1,
+      "fps": null,
+      "source": {
+        "raw_file": "originals/vigrid_ground_v01_raw.png",
+        "crop": [
+          3,
+          447,
+          441,
+          884
+        ],
+        "tool": "Chrome ChatGPT web image generation",
+        "chat_url": "https://chatgpt.com/c/6ad1c9d7-dcc0-83e9-9f7b-6e7f52f047e5",
+        "generation_record": "records/generation_jobs_wave01.json",
+        "prompt_file": "records/vigrid_ground_prompt.txt",
+        "input_references": [
+          "references/style_reference.png"
+        ]
+      },
+      "processing_tools": [
+        "Pillow 12.1.1",
+        "project-original deterministic normalization scripts"
+      ],
+      "visual_review": {
+        "passed": true,
+        "reviewed_candidate": "candidates/vigrid_cracked_lava_v04.png",
+        "reviewed_at": "2026-10-16",
+        "viewed": "#121721背景1×/4×对照；地块4×4；基础4种混铺；关卡1×角色合成",
+        "note": "黑色冷却壳占主导，细暗红裂隙；4×4查看且角色仍醒目。",
+        "limitations": "未在Godot运行，游戏内验收由代码代理负责"
+      },
+      "tiling_preview": "previews/vigrid_cracked_lava_4x4.png"
+    },
+    {
+      "id": "burnt_grass",
+      "level": "vigrid",
+      "type": "ground",
+      "width": 64,
+      "height": 64,
+      "status": "self_check_passed_pending_game_review",
+      "candidate": "candidates/vigrid_burnt_grass_v04.png",
+      "color_count": 19,
+      "alpha_values": [
+        255
+      ],
+      "bbox": [
+        0,
+        0,
+        64,
+        64
+      ],
+      "palette": "records/vigrid_palette48_v04.json",
+      "sha256": "6f2333fe144ee0eff736c837ec2ae5ba546fa93e786c0bb009d0dd2392559999",
+      "checks": {
+        "exact_size": true,
+        "png_rgba": true,
+        "binary_alpha": true,
+        "palette_limit": true,
+        "transparent_margin_2px": null,
+        "style_consistency": true,
+        "no_text_watermark_scene": true,
+        "dark_background_1x_readable": true,
+        "facing_right": "not_applicable_static_environment",
+        "fixed_feet_baseline": "not_applicable_static_environment",
+        "animation": "not_applicable_single_frame",
+        "opaque_full_ground": true,
+        "seamless_4x4_visual": true,
+        "subdued_below_character_visual": true,
+        "no_prominent_repeated_landmark": true
+      },
+      "seam_metrics": {
+        "opposing_edge_mean_x": 2.479,
+        "opposing_edge_mean_y": 2.135,
+        "interior_neighbor_mean_x": 7.592,
+        "interior_neighbor_mean_y": 7.679,
+        "edge_jump_outlier_at_1_5x": false
+      },
+      "mean_rgb": [
+        38.03,
+        31.3,
+        32.15
+      ],
+      "approved_file": "approved/ground/vigrid/burnt_grass.png",
+      "final_file": "sprites/ground/vigrid/burnt_grass.png",
+      "frame_count": 1,
+      "fps": null,
+      "source": {
+        "raw_file": "originals/vigrid_ground_v01_raw.png",
+        "crop": [
+          447,
+          447,
+          884,
+          884
+        ],
+        "tool": "Chrome ChatGPT web image generation",
+        "chat_url": "https://chatgpt.com/c/6ad1c9d7-dcc0-83e9-9f7b-6e7f52f047e5",
+        "generation_record": "records/generation_jobs_wave01.json",
+        "prompt_file": "records/vigrid_ground_prompt.txt",
+        "input_references": [
+          "references/style_reference.png"
+        ]
+      },
+      "processing_tools": [
+        "Pillow 12.1.1",
+        "project-original deterministic normalization scripts"
+      ],
+      "visual_review": {
+        "passed": true,
+        "reviewed_candidate": "candidates/vigrid_burnt_grass_v04.png",
+        "reviewed_at": "2026-10-16",
+        "viewed": "#121721背景1×/4×对照；地块4×4；基础4种混铺；关卡1×角色合成",
+        "note": "稀疏焦草混入灰土，不引入绿色；4×4查看。",
+        "limitations": "未在Godot运行，游戏内验收由代码代理负责"
+      },
+      "tiling_preview": "previews/vigrid_burnt_grass_4x4.png"
+    },
+    {
+      "id": "broken_weapons",
+      "level": "vigrid",
+      "type": "props",
+      "width": 64,
+      "height": 64,
+      "status": "self_check_passed_pending_game_review",
+      "candidate": "candidates/vigrid_broken_weapons_v05.png",
+      "color_count": 40,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "bbox": [
+        4,
+        2,
+        59,
+        62
+      ],
+      "palette": "records/vigrid_palette48_v04.json",
+      "sha256": "79093911f77127c3554d1216806de76ff2101cf62153f5bc06f504d40b371667",
+      "checks": {
+        "exact_size": true,
+        "png_rgba": true,
+        "binary_alpha": true,
+        "palette_limit": true,
+        "transparent_margin_2px": true,
+        "style_consistency": true,
+        "no_text_watermark_scene": true,
+        "dark_background_1x_readable": true,
+        "facing_right": "not_applicable_static_environment",
+        "fixed_feet_baseline": "not_applicable_static_environment",
+        "animation": "not_applicable_single_frame"
+      },
+      "approved_file": "approved/props/vigrid/broken_weapons.png",
+      "final_file": "sprites/props/vigrid/broken_weapons.png",
+      "frame_count": 1,
+      "fps": null,
+      "source": {
+        "raw_file": "originals/pine_weapons_v02_raw.png",
+        "crop": [
+          1040,
+          235,
+          1625,
+          855
+        ],
+        "tool": "Chrome ChatGPT web image generation",
+        "chat_url": "https://chatgpt.com/c/6ad1d05c-b2c0-83ea-bf9c-9bea3317232b",
+        "generation_record": "records/generation_jobs_wave04.json",
+        "prompt_file": "records/pine_weapons_v02_prompt.txt",
+        "input_references": [
+          "references/style_reference.png",
+          "candidates/midgard_dead_pine_01_v03.png",
+          "candidates/vigrid_broken_weapons_v04.png"
+        ]
+      },
+      "processing_tools": [
+        "Pillow 12.1.1",
+        "project-original deterministic normalization scripts"
+      ],
+      "visual_review": {
+        "passed": true,
+        "reviewed_candidate": "candidates/vigrid_broken_weapons_v05.png",
+        "reviewed_at": "2026-10-16",
+        "viewed": "#121721背景1×/4×对照；地块4×4；基础4种混铺；关卡1×角色合成",
+        "note": "重做后可见断刃截面、无矛头的碎裂木杆及落地矛头；冬季蓝白残色已映射为灰烬色。",
+        "limitations": "未在Godot运行，游戏内验收由代码代理负责"
+      }
+    },
+    {
+      "id": "fallen_shield",
+      "level": "vigrid",
+      "type": "props",
+      "width": 48,
+      "height": 48,
+      "status": "self_check_passed_pending_game_review",
+      "candidate": "candidates/vigrid_fallen_shield_v04.png",
+      "color_count": 39,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "bbox": [
+        2,
+        7,
+        46,
+        46
+      ],
+      "palette": "records/vigrid_palette48_v04.json",
+      "sha256": "82f3244549a336404a11cbb2399cf064febafd9b513e2936ac92c768e5076f5d",
+      "checks": {
+        "exact_size": true,
+        "png_rgba": true,
+        "binary_alpha": true,
+        "palette_limit": true,
+        "transparent_margin_2px": true,
+        "style_consistency": true,
+        "no_text_watermark_scene": true,
+        "dark_background_1x_readable": true,
+        "facing_right": "not_applicable_static_environment",
+        "fixed_feet_baseline": "not_applicable_static_environment",
+        "animation": "not_applicable_single_frame"
+      },
+      "approved_file": "approved/props/vigrid/fallen_shield.png",
+      "final_file": "sprites/props/vigrid/fallen_shield.png",
+      "frame_count": 1,
+      "fps": null,
+      "source": {
+        "raw_file": "originals/vigrid_props_v01_raw.png",
+        "crop": [
+          540,
+          100,
+          920,
+          455
+        ],
+        "tool": "Chrome ChatGPT web image generation",
+        "chat_url": "https://chatgpt.com/c/6ad1caa6-fbe8-83ea-8344-846f9045c1e0",
+        "generation_record": "records/generation_jobs_wave02.json",
+        "prompt_file": "records/vigrid_props_prompt.txt",
+        "input_references": [
+          "references/style_reference.png"
+        ]
+      },
+      "processing_tools": [
+        "Pillow 12.1.1",
+        "project-original deterministic normalization scripts"
+      ],
+      "visual_review": {
+        "passed": true,
+        "reviewed_candidate": "candidates/vigrid_fallen_shield_v04.png",
+        "reviewed_at": "2026-10-16",
+        "viewed": "#121721背景1×/4×对照；地块4×4；基础4种混铺；关卡1×角色合成",
+        "note": "48×48圆盾、铁盾脐及破木板；移除相邻手臂造成的切图碎片。",
+        "limitations": "未在Godot运行，游戏内验收由代码代理负责"
+      }
+    },
+    {
+      "id": "giant_remains",
+      "level": "vigrid",
+      "type": "props",
+      "width": 96,
+      "height": 64,
+      "status": "self_check_passed_pending_game_review",
+      "candidate": "candidates/vigrid_giant_remains_v04.png",
+      "color_count": 39,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "bbox": [
+        9,
+        2,
+        87,
+        62
+      ],
+      "palette": "records/vigrid_palette48_v04.json",
+      "sha256": "6ae25e977fcbd8b4b4310ce4550e0024cc71c1728c2b9063e85c0e8b7dcb6998",
+      "checks": {
+        "exact_size": true,
+        "png_rgba": true,
+        "binary_alpha": true,
+        "palette_limit": true,
+        "transparent_margin_2px": true,
+        "style_consistency": true,
+        "no_text_watermark_scene": true,
+        "dark_background_1x_readable": true,
+        "facing_right": "not_applicable_static_environment",
+        "fixed_feet_baseline": "not_applicable_static_environment",
+        "animation": "not_applicable_single_frame"
+      },
+      "approved_file": "approved/props/vigrid/giant_remains.png",
+      "final_file": "sprites/props/vigrid/giant_remains.png",
+      "frame_count": 1,
+      "fps": null,
+      "source": {
+        "raw_file": "originals/vigrid_props_v01_raw.png",
+        "crop": [
+          950,
+          30,
+          1520,
+          480
+        ],
+        "tool": "Chrome ChatGPT web image generation",
+        "chat_url": "https://chatgpt.com/c/6ad1caa6-fbe8-83ea-8344-846f9045c1e0",
+        "generation_record": "records/generation_jobs_wave02.json",
+        "prompt_file": "records/vigrid_props_prompt.txt",
+        "input_references": [
+          "references/style_reference.png"
+        ]
+      },
+      "processing_tools": [
+        "Pillow 12.1.1",
+        "project-original deterministic normalization scripts"
+      ],
+      "visual_review": {
+        "passed": true,
+        "reviewed_candidate": "candidates/vigrid_giant_remains_v04.png",
+        "reviewed_at": "2026-10-16",
+        "viewed": "#121721背景1×/4×对照；地块4×4；基础4种混铺；关卡1×角色合成",
+        "note": "96×64巨人手臂局部与残布，无血腥脏器；完整手部和透明留边。",
+        "limitations": "未在Godot运行，游戏内验收由代码代理负责"
+      }
+    },
+    {
+      "id": "burning_wreckage",
+      "level": "vigrid",
+      "type": "props",
+      "width": 96,
+      "height": 96,
+      "status": "self_check_passed_pending_game_review",
+      "candidate": "candidates/vigrid_burning_wreckage_v04.png",
+      "color_count": 43,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "bbox": [
+        2,
+        7,
+        94,
+        94
+      ],
+      "palette": "records/vigrid_palette48_v04.json",
+      "sha256": "0db9ddab498cdfda609eef628c1128fd985aae113fb2315698c0cf1a4b21dffc",
+      "checks": {
+        "exact_size": true,
+        "png_rgba": true,
+        "binary_alpha": true,
+        "palette_limit": true,
+        "transparent_margin_2px": true,
+        "style_consistency": true,
+        "no_text_watermark_scene": true,
+        "dark_background_1x_readable": true,
+        "facing_right": "not_applicable_static_environment",
+        "fixed_feet_baseline": "not_applicable_static_environment",
+        "animation": "not_applicable_single_frame"
+      },
+      "approved_file": "approved/props/vigrid/burning_wreckage.png",
+      "final_file": "sprites/props/vigrid/burning_wreckage.png",
+      "frame_count": 1,
+      "fps": null,
+      "source": {
+        "raw_file": "originals/vigrid_props_v01_raw.png",
+        "crop": [
+          20,
+          485,
+          565,
+          1010
+        ],
+        "tool": "Chrome ChatGPT web image generation",
+        "chat_url": "https://chatgpt.com/c/6ad1caa6-fbe8-83ea-8344-846f9045c1e0",
+        "generation_record": "records/generation_jobs_wave02.json",
+        "prompt_file": "records/vigrid_props_prompt.txt",
+        "input_references": [
+          "references/style_reference.png"
+        ]
+      },
+      "processing_tools": [
+        "Pillow 12.1.1",
+        "project-original deterministic normalization scripts"
+      ],
+      "visual_review": {
+        "passed": true,
+        "reviewed_candidate": "candidates/vigrid_burning_wreckage_v04.png",
+        "reviewed_at": "2026-10-16",
+        "viewed": "#121721背景1×/4×对照；地块4×4；基础4种混铺；关卡1×角色合成",
+        "note": "96×96烧毁车轮梁架，v04恢复暖色火焰；单张静态，非火焰动画。",
+        "limitations": "未在Godot运行，游戏内验收由代码代理负责"
+      }
+    },
+    {
+      "id": "bifrost_fragment",
+      "level": "vigrid",
+      "type": "props",
+      "width": 96,
+      "height": 64,
+      "status": "self_check_passed_pending_game_review",
+      "candidate": "candidates/vigrid_bifrost_fragment_v04.png",
+      "color_count": 42,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "bbox": [
+        10,
+        2,
+        85,
+        62
+      ],
+      "palette": "records/vigrid_palette48_v04.json",
+      "sha256": "a3948b492c7bc55c0d6333c6804593c50eecae91cc8527d9593e8d5baaf1451d",
+      "checks": {
+        "exact_size": true,
+        "png_rgba": true,
+        "binary_alpha": true,
+        "palette_limit": true,
+        "transparent_margin_2px": true,
+        "style_consistency": true,
+        "no_text_watermark_scene": true,
+        "dark_background_1x_readable": true,
+        "facing_right": "not_applicable_static_environment",
+        "fixed_feet_baseline": "not_applicable_static_environment",
+        "animation": "not_applicable_single_frame"
+      },
+      "approved_file": "approved/props/vigrid/bifrost_fragment.png",
+      "final_file": "sprites/props/vigrid/bifrost_fragment.png",
+      "frame_count": 1,
+      "fps": null,
+      "source": {
+        "raw_file": "originals/vigrid_props_v01_raw.png",
+        "crop": [
+          570,
+          525,
+          1120,
+          1005
+        ],
+        "tool": "Chrome ChatGPT web image generation",
+        "chat_url": "https://chatgpt.com/c/6ad1caa6-fbe8-83ea-8344-846f9045c1e0",
+        "generation_record": "records/generation_jobs_wave02.json",
+        "prompt_file": "records/vigrid_props_prompt.txt",
+        "input_references": [
+          "references/style_reference.png"
+        ]
+      },
+      "processing_tools": [
+        "Pillow 12.1.1",
+        "project-original deterministic normalization scripts"
+      ],
+      "visual_review": {
+        "passed": true,
+        "reviewed_candidate": "candidates/vigrid_bifrost_fragment_v04.png",
+        "reviewed_at": "2026-10-16",
+        "viewed": "#121721背景1×/4×对照；地块4×4；基础4种混铺；关卡1×角色合成",
+        "note": "96×64破裂桥石，v04保留低饱和彩虹色脉；与首稿丢失虹色的v03区别明确。",
+        "limitations": "未在Godot运行，游戏内验收由代码代理负责"
+      }
+    }
+  ],
+  "generation_jobs": [
+    {
+      "id": "midgard_ground",
+      "prompt_file": "records/midgard_ground_prompt.txt",
+      "reference": "references/style_reference.png",
+      "status": "raw_downloaded_pending_review",
+      "tab_id": "1374362069",
+      "submitted_at": "2026-10-16T06:51:44.994Z",
+      "chat_url": "https://chatgpt.com/c/6ad1c979-9a34-83e9-baf1-b35fc9aa65b8",
+      "raw_file": "originals/midgard_ground_v01_raw.png",
+      "download_name": "冰雪地形像素纹理图集.png",
+      "raw_size": [
+        1774,
+        887
+      ],
+      "record_file": "records/generation_jobs_wave01.json"
+    },
+    {
+      "id": "helheim_ground",
+      "prompt_file": "records/helheim_ground_prompt.txt",
+      "reference": "references/style_reference.png",
+      "status": "raw_downloaded_pending_review",
+      "tab_id": "1374362072",
+      "submitted_at": "2026-10-16T06:52:51.459Z",
+      "chat_url": "https://chatgpt.com/c/6ad1c9ba-0f44-83ea-bdf4-ae8642240401",
+      "raw_file": "originals/helheim_ground_v01_raw.png",
+      "download_name": "暗色像素地形纹理图集.png",
+      "raw_size": [
+        1774,
+        887
+      ],
+      "record_file": "records/generation_jobs_wave01.json"
+    },
+    {
+      "id": "vigrid_ground",
+      "prompt_file": "records/vigrid_ground_prompt.txt",
+      "reference": "references/style_reference.png",
+      "status": "raw_downloaded_pending_review",
+      "tab_id": "1374362075",
+      "submitted_at": "2026-10-16T06:53:21.295Z",
+      "chat_url": "https://chatgpt.com/c/6ad1c9d7-dcc0-83e9-9f7b-6e7f52f047e5",
+      "raw_file": "originals/vigrid_ground_v01_raw.png",
+      "download_name": "暗黑火山灰烬地形纹理图集.png",
+      "raw_size": [
+        1774,
+        887
+      ],
+      "record_file": "records/generation_jobs_wave01.json"
+    },
+    {
+      "id": "midgard_props_a",
+      "prompt_file": "records/midgard_props_a_prompt.txt",
+      "reference": "references/style_reference.png",
+      "status": "raw_downloaded_pending_review",
+      "tab_id": "1374362078",
+      "submitted_at": "2026-10-16T06:53:35.100Z",
+      "chat_url": "https://chatgpt.com/c/6ad1c9e8-9af0-83ea-b527-28aa41d2abda",
+      "raw_file": "originals/midgard_props_a_v01_raw.png",
+      "download_name": "冬日荒原像素素材图集.png",
+      "raw_size": [
+        1536,
+        1024
+      ],
+      "record_file": "records/generation_jobs_wave01.json"
+    },
+    {
+      "id": "midgard_props_b",
+      "prompt_file": "records/midgard_props_b_prompt.txt",
+      "reference": "references/style_reference.png",
+      "status": "raw_downloaded_pending_review",
+      "tab_id": "1374362088",
+      "submitted_at": "2026-10-16T06:56:51.177Z",
+      "chat_url": "https://chatgpt.com/c/6ad1caa5-3e04-83ea-8bd8-4d2b22d85503",
+      "raw_file": "originals/midgard_props_b_v01_raw.png",
+      "download_name": "雪原维京遗迹像素图集.png",
+      "raw_size": [
+        1774,
+        887
+      ],
+      "record_file": "records/generation_jobs_wave02.json"
+    },
+    {
+      "id": "helheim_props",
+      "prompt_file": "records/helheim_props_prompt.txt",
+      "reference": "references/style_reference.png",
+      "status": "raw_downloaded_pending_review",
+      "tab_id": "1374362091",
+      "submitted_at": "2026-10-16T06:56:52.264Z",
+      "chat_url": "https://chatgpt.com/c/6ad1caa6-0004-83e9-a3bb-a19fdaed42c6",
+      "raw_file": "originals/helheim_props_v01_raw.png",
+      "download_name": "北欧暗影遗迹像素资产集.png",
+      "raw_size": [
+        1536,
+        1024
+      ],
+      "record_file": "records/generation_jobs_wave02.json"
+    },
+    {
+      "id": "vigrid_props",
+      "prompt_file": "records/vigrid_props_prompt.txt",
+      "reference": "references/style_reference.png",
+      "status": "raw_downloaded_pending_review",
+      "tab_id": "1374362094",
+      "submitted_at": "2026-10-16T06:56:52.730Z",
+      "chat_url": "https://chatgpt.com/c/6ad1caa6-fbe8-83ea-8344-846f9045c1e0",
+      "raw_file": "originals/vigrid_props_v01_raw.png",
+      "download_name": "北欧遗迹像素素材图集.png",
+      "raw_size": [
+        1536,
+        1024
+      ],
+      "record_file": "records/generation_jobs_wave02.json"
+    },
+    {
+      "id": "midgard_snow_v02",
+      "tab_id": "1374362116",
+      "prompt_file": "records/midgard_snow_v02_prompt.txt",
+      "reference": "references/style_reference.png",
+      "status": "two_variants_downloaded",
+      "submitted_at": "2026-10-16T07:03:54.512Z",
+      "chat_url": "https://chatgpt.com/c/6ad1cc3a-cb48-83ea-b7c0-214d99daa6d7",
+      "raw_files": [
+        "originals/midgard_snow_v02_variant1_raw.png",
+        "originals/midgard_snow_v02_variant2_raw.png"
+      ],
+      "selected_variant": 2,
+      "record_file": "records/generation_jobs_wave03.json"
+    },
+    {
+      "id": "pine_weapons_v02",
+      "tab_id": "1374362130",
+      "prompt_file": "records/pine_weapons_v02_prompt.txt",
+      "references": [
+        "references/style_reference.png",
+        "candidates/midgard_dead_pine_01_v03.png",
+        "candidates/vigrid_broken_weapons_v04.png"
+      ],
+      "status": "raw_downloaded_pending_review",
+      "submitted_at": "2026-10-16T07:21:34.650Z",
+      "chat_url": "https://chatgpt.com/c/6ad1d05c-b2c0-83ea-bf9c-9bea3317232b",
+      "download_name": "雪覆断树与残破武器堆.png",
+      "raw_file": "originals/pine_weapons_v02_raw.png",
+      "raw_size": [
+        1774,
+        887
+      ],
+      "record_file": "records/generation_jobs_wave04.json"
+    }
+  ],
+  "failures_and_resolutions": [
+    {
+      "version": "ground_v01",
+      "reason": "6px边缘混合出现条带；首轮雪地大波纹重复明显",
+      "resolution": "周期边界分解替代带状混合；基础雪地重生成并选择低纹理候选2"
+    },
+    {
+      "version": "props_v01",
+      "reason": "按图集等分截断宽轮廓并带入邻近物件；洋红抗锯齿边缘残留",
+      "resolution": "人工核对完整裁切范围，去底/去杂色，最近邻再固定色板"
+    },
+    {
+      "version": "vigrid_v03",
+      "reason": "统一色板吞掉虹色，火焰变暗",
+      "resolution": "v04保留火焰和虹色必要颜色，仍保持全关48色以内"
+    },
+    {
+      "version": "pine02_and_broken_weapons_initial",
+      "reason": "第二棵树偏阔叶，武器看起来完整",
+      "resolution": "重新上传3份现有参考图生成；v05采用折顶枯松和断刃/断杆，冬季蓝白粉尘映射为焦灰"
+    }
+  ]
+}

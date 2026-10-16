@@ -1,0 +1,742 @@
+[
+  {
+    "id": "snow_01",
+    "level": "midgard",
+    "type": "ground",
+    "source": "originals/midgard_ground_v01_raw.png",
+    "crop": [
+      3,
+      3,
+      441,
+      441
+    ],
+    "processing": "nearest64; subdued micro/macro contrast; 6px opposing-edge port blend; shared base ports",
+    "status": "candidate_pending_visual_review"
+  },
+  {
+    "id": "snow_02",
+    "level": "midgard",
+    "type": "ground",
+    "source": "originals/midgard_ground_v01_raw.png",
+    "crop": [
+      447,
+      3,
+      884,
+      441
+    ],
+    "processing": "nearest64; subdued micro/macro contrast; 6px opposing-edge port blend; shared base ports",
+    "status": "candidate_pending_visual_review"
+  },
+  {
+    "id": "snow_03",
+    "level": "midgard",
+    "type": "ground",
+    "source": "originals/midgard_ground_v01_raw.png",
+    "crop": [
+      890,
+      3,
+      1327,
+      441
+    ],
+    "processing": "nearest64; subdued micro/macro contrast; 6px opposing-edge port blend; shared base ports",
+    "status": "candidate_pending_visual_review"
+  },
+  {
+    "id": "snow_04",
+    "level": "midgard",
+    "type": "ground",
+    "source": "originals/midgard_ground_v01_raw.png",
+    "crop": [
+      1333,
+      3,
+      1771,
+      441
+    ],
+    "processing": "nearest64; subdued micro/macro contrast; 6px opposing-edge port blend; shared base ports",
+    "status": "candidate_pending_visual_review"
+  },
+  {
+    "id": "snow_trampled",
+    "level": "midgard",
+    "type": "ground",
+    "source": "originals/midgard_ground_v01_raw.png",
+    "crop": [
+      3,
+      447,
+      441,
+      884
+    ],
+    "processing": "nearest64; subdued micro/macro contrast; 6px opposing-edge port blend; shared base ports",
+    "status": "candidate_pending_visual_review"
+  },
+  {
+    "id": "ice",
+    "level": "midgard",
+    "type": "ground",
+    "source": "originals/midgard_ground_v01_raw.png",
+    "crop": [
+      447,
+      447,
+      884,
+      884
+    ],
+    "processing": "nearest64; subdued micro/macro contrast; 6px opposing-edge port blend; shared base ports",
+    "status": "candidate_pending_visual_review"
+  },
+  {
+    "id": "frozen_dirt",
+    "level": "midgard",
+    "type": "ground",
+    "source": "originals/midgard_ground_v01_raw.png",
+    "crop": [
+      890,
+      447,
+      1327,
+      884
+    ],
+    "processing": "nearest64; subdued micro/macro contrast; 6px opposing-edge port blend; shared base ports",
+    "status": "candidate_pending_visual_review"
+  },
+  {
+    "id": "stone_01",
+    "level": "helheim",
+    "type": "ground",
+    "source": "originals/helheim_ground_v01_raw.png",
+    "crop": [
+      3,
+      3,
+      441,
+      441
+    ],
+    "processing": "nearest64; subdued micro/macro contrast; 6px opposing-edge port blend; shared base ports",
+    "status": "candidate_pending_visual_review"
+  },
+  {
+    "id": "stone_02",
+    "level": "helheim",
+    "type": "ground",
+    "source": "originals/helheim_ground_v01_raw.png",
+    "crop": [
+      447,
+      3,
+      884,
+      441
+    ],
+    "processing": "nearest64; subdued micro/macro contrast; 6px opposing-edge port blend; shared base ports",
+    "status": "candidate_pending_visual_review"
+  },
+  {
+    "id": "stone_03",
+    "level": "helheim",
+    "type": "ground",
+    "source": "originals/helheim_ground_v01_raw.png",
+    "crop": [
+      890,
+      3,
+      1327,
+      441
+    ],
+    "processing": "nearest64; subdued micro/macro contrast; 6px opposing-edge port blend; shared base ports",
+    "status": "candidate_pending_visual_review"
+  },
+  {
+    "id": "stone_04",
+    "level": "helheim",
+    "type": "ground",
+    "source": "originals/helheim_ground_v01_raw.png",
+    "crop": [
+      1333,
+      3,
+      1771,
+      441
+    ],
+    "processing": "nearest64; subdued micro/macro contrast; 6px opposing-edge port blend; shared base ports",
+    "status": "candidate_pending_visual_review"
+  },
+  {
+    "id": "fog_ground",
+    "level": "helheim",
+    "type": "ground",
+    "source": "originals/helheim_ground_v01_raw.png",
+    "crop": [
+      3,
+      447,
+      441,
+      884
+    ],
+    "processing": "nearest64; subdued micro/macro contrast; 6px opposing-edge port blend; shared base ports",
+    "status": "candidate_pending_visual_review"
+  },
+  {
+    "id": "nail_deck_01",
+    "level": "helheim",
+    "type": "ground",
+    "source": "originals/helheim_ground_v01_raw.png",
+    "crop": [
+      447,
+      447,
+      884,
+      884
+    ],
+    "processing": "nearest64; subdued micro/macro contrast; 6px opposing-edge port blend; shared base ports",
+    "status": "candidate_pending_visual_review"
+  },
+  {
+    "id": "nail_deck_02",
+    "level": "helheim",
+    "type": "ground",
+    "source": "originals/helheim_ground_v01_raw.png",
+    "crop": [
+      890,
+      447,
+      1327,
+      884
+    ],
+    "processing": "nearest64; subdued micro/macro contrast; 6px opposing-edge port blend; shared base ports",
+    "status": "candidate_pending_visual_review"
+  },
+  {
+    "id": "scorched_01",
+    "level": "vigrid",
+    "type": "ground",
+    "source": "originals/vigrid_ground_v01_raw.png",
+    "crop": [
+      3,
+      3,
+      441,
+      441
+    ],
+    "processing": "nearest64; subdued micro/macro contrast; 6px opposing-edge port blend; shared base ports",
+    "status": "candidate_pending_visual_review"
+  },
+  {
+    "id": "scorched_02",
+    "level": "vigrid",
+    "type": "ground",
+    "source": "originals/vigrid_ground_v01_raw.png",
+    "crop": [
+      447,
+      3,
+      884,
+      441
+    ],
+    "processing": "nearest64; subdued micro/macro contrast; 6px opposing-edge port blend; shared base ports",
+    "status": "candidate_pending_visual_review"
+  },
+  {
+    "id": "scorched_03",
+    "level": "vigrid",
+    "type": "ground",
+    "source": "originals/vigrid_ground_v01_raw.png",
+    "crop": [
+      890,
+      3,
+      1327,
+      441
+    ],
+    "processing": "nearest64; subdued micro/macro contrast; 6px opposing-edge port blend; shared base ports",
+    "status": "candidate_pending_visual_review"
+  },
+  {
+    "id": "scorched_04",
+    "level": "vigrid",
+    "type": "ground",
+    "source": "originals/vigrid_ground_v01_raw.png",
+    "crop": [
+      1333,
+      3,
+      1771,
+      441
+    ],
+    "processing": "nearest64; subdued micro/macro contrast; 6px opposing-edge port blend; shared base ports",
+    "status": "candidate_pending_visual_review"
+  },
+  {
+    "id": "cracked_lava",
+    "level": "vigrid",
+    "type": "ground",
+    "source": "originals/vigrid_ground_v01_raw.png",
+    "crop": [
+      3,
+      447,
+      441,
+      884
+    ],
+    "processing": "nearest64; subdued micro/macro contrast; 6px opposing-edge port blend; shared base ports",
+    "status": "candidate_pending_visual_review"
+  },
+  {
+    "id": "burnt_grass",
+    "level": "vigrid",
+    "type": "ground",
+    "source": "originals/vigrid_ground_v01_raw.png",
+    "crop": [
+      447,
+      447,
+      884,
+      884
+    ],
+    "processing": "nearest64; subdued micro/macro contrast; 6px opposing-edge port blend; shared base ports",
+    "status": "candidate_pending_visual_review"
+  },
+  {
+    "id": "dead_pine_01",
+    "level": "midgard",
+    "type": "props",
+    "source": "originals/midgard_props_a_v01_raw.png",
+    "cell_crop": [
+      110,
+      10,
+      470,
+      525
+    ],
+    "content_bbox": [
+      26,
+      16,
+      345,
+      495
+    ],
+    "processing": "magenta matte removal; nearest scale preserving aspect; centered x and bottom2px",
+    "status": "candidate_pending_visual_review"
+  },
+  {
+    "id": "dead_pine_02",
+    "level": "midgard",
+    "type": "props",
+    "source": "originals/midgard_props_a_v01_raw.png",
+    "cell_crop": [
+      585,
+      20,
+      1000,
+      535
+    ],
+    "content_bbox": [
+      23,
+      25,
+      394,
+      498
+    ],
+    "processing": "magenta matte removal; nearest scale preserving aspect; centered x and bottom2px",
+    "status": "candidate_pending_visual_review"
+  },
+  {
+    "id": "rock_01",
+    "level": "midgard",
+    "type": "props",
+    "source": "originals/midgard_props_a_v01_raw.png",
+    "cell_crop": [
+      1024,
+      0,
+      1536,
+      512
+    ],
+    "content_bbox": [
+      140,
+      294,
+      368,
+      489
+    ],
+    "processing": "magenta matte removal; nearest scale preserving aspect; centered x and bottom2px",
+    "status": "candidate_pending_visual_review"
+  },
+  {
+    "id": "rock_02",
+    "level": "midgard",
+    "type": "props",
+    "source": "originals/midgard_props_a_v01_raw.png",
+    "cell_crop": [
+      0,
+      512,
+      512,
+      1024
+    ],
+    "content_bbox": [
+      97,
+      110,
+      438,
+      438
+    ],
+    "processing": "magenta matte removal; nearest scale preserving aspect; centered x and bottom2px",
+    "status": "candidate_pending_visual_review"
+  },
+  {
+    "id": "rock_03",
+    "level": "midgard",
+    "type": "props",
+    "source": "originals/midgard_props_a_v01_raw.png",
+    "cell_crop": [
+      512,
+      512,
+      1024,
+      1024
+    ],
+    "content_bbox": [
+      43,
+      0,
+      512,
+      460
+    ],
+    "processing": "magenta matte removal; nearest scale preserving aspect; centered x and bottom2px",
+    "status": "candidate_pending_visual_review"
+  },
+  {
+    "id": "runestone_01",
+    "level": "midgard",
+    "type": "props",
+    "source": "originals/midgard_props_a_v01_raw.png",
+    "cell_crop": [
+      1024,
+      512,
+      1536,
+      1024
+    ],
+    "content_bbox": [
+      0,
+      72,
+      377,
+      455
+    ],
+    "processing": "magenta matte removal; nearest scale preserving aspect; centered x and bottom2px",
+    "status": "candidate_pending_visual_review"
+  },
+  {
+    "id": "runestone_02",
+    "level": "midgard",
+    "type": "props",
+    "source": "originals/midgard_props_b_v01_raw.png",
+    "cell_crop": [
+      80,
+      80,
+      345,
+      430
+    ],
+    "content_bbox": [
+      14,
+      18,
+      241,
+      338
+    ],
+    "processing": "magenta matte removal; nearest scale preserving aspect; centered x and bottom2px",
+    "status": "candidate_pending_visual_review"
+  },
+  {
+    "id": "burial_mound",
+    "level": "midgard",
+    "type": "props",
+    "source": "originals/midgard_props_b_v01_raw.png",
+    "cell_crop": [
+      410,
+      140,
+      900,
+      425
+    ],
+    "content_bbox": [
+      15,
+      7,
+      473,
+      263
+    ],
+    "processing": "magenta matte removal; nearest scale preserving aspect; centered x and bottom2px",
+    "status": "candidate_pending_visual_review"
+  },
+  {
+    "id": "collapsed_cabin",
+    "level": "midgard",
+    "type": "props",
+    "source": "originals/midgard_props_b_v01_raw.png",
+    "cell_crop": [
+      900,
+      80,
+      1385,
+      445
+    ],
+    "content_bbox": [
+      13,
+      18,
+      467,
+      359
+    ],
+    "processing": "magenta matte removal; nearest scale preserving aspect; centered x and bottom2px",
+    "status": "candidate_pending_visual_review"
+  },
+  {
+    "id": "fence",
+    "level": "midgard",
+    "type": "props",
+    "source": "originals/midgard_props_b_v01_raw.png",
+    "cell_crop": [
+      1405,
+      215,
+      1765,
+      435
+    ],
+    "content_bbox": [
+      12,
+      15,
+      340,
+      200
+    ],
+    "processing": "magenta matte removal; nearest scale preserving aspect; centered x and bottom2px",
+    "status": "candidate_pending_visual_review"
+  },
+  {
+    "id": "longship_wreck",
+    "level": "midgard",
+    "type": "props",
+    "source": "originals/midgard_props_b_v01_raw.png",
+    "cell_crop": [
+      10,
+      490,
+      660,
+      835
+    ],
+    "content_bbox": [
+      13,
+      17,
+      630,
+      326
+    ],
+    "processing": "magenta matte removal; nearest scale preserving aspect; centered x and bottom2px",
+    "status": "candidate_pending_visual_review"
+  },
+  {
+    "id": "snowdrift_01",
+    "level": "midgard",
+    "type": "props",
+    "source": "originals/midgard_props_b_v01_raw.png",
+    "cell_crop": [
+      680,
+      625,
+      1005,
+      800
+    ],
+    "content_bbox": [
+      13,
+      27,
+      315,
+      156
+    ],
+    "processing": "magenta matte removal; nearest scale preserving aspect; centered x and bottom2px",
+    "status": "candidate_pending_visual_review"
+  },
+  {
+    "id": "snowdrift_02",
+    "level": "midgard",
+    "type": "props",
+    "source": "originals/midgard_props_b_v01_raw.png",
+    "cell_crop": [
+      1040,
+      630,
+      1400,
+      800
+    ],
+    "content_bbox": [
+      9,
+      38,
+      347,
+      149
+    ],
+    "processing": "magenta matte removal; nearest scale preserving aspect; centered x and bottom2px",
+    "status": "candidate_pending_visual_review"
+  },
+  {
+    "id": "bone_pile",
+    "level": "helheim",
+    "type": "props",
+    "source": "originals/helheim_props_v01_raw.png",
+    "cell_crop": [
+      0,
+      0,
+      512,
+      512
+    ],
+    "content_bbox": [
+      52,
+      143,
+      465,
+      432
+    ],
+    "processing": "magenta matte removal; nearest scale preserving aspect; centered x and bottom2px",
+    "status": "candidate_pending_visual_review"
+  },
+  {
+    "id": "broken_headstone",
+    "level": "helheim",
+    "type": "props",
+    "source": "originals/helheim_props_v01_raw.png",
+    "cell_crop": [
+      512,
+      0,
+      1024,
+      512
+    ],
+    "content_bbox": [
+      74,
+      64,
+      445,
+      442
+    ],
+    "processing": "magenta matte removal; nearest scale preserving aspect; centered x and bottom2px",
+    "status": "candidate_pending_visual_review"
+  },
+  {
+    "id": "chain_pillar",
+    "level": "helheim",
+    "type": "props",
+    "source": "originals/helheim_props_v01_raw.png",
+    "cell_crop": [
+      1024,
+      0,
+      1536,
+      512
+    ],
+    "content_bbox": [
+      147,
+      16,
+      440,
+      496
+    ],
+    "processing": "magenta matte removal; nearest scale preserving aspect; centered x and bottom2px",
+    "status": "candidate_pending_visual_review"
+  },
+  {
+    "id": "mist_dead_tree",
+    "level": "helheim",
+    "type": "props",
+    "source": "originals/helheim_props_v01_raw.png",
+    "cell_crop": [
+      0,
+      512,
+      512,
+      1024
+    ],
+    "content_bbox": [
+      45,
+      11,
+      469,
+      492
+    ],
+    "processing": "magenta matte removal; nearest scale preserving aspect; centered x and bottom2px",
+    "status": "candidate_pending_visual_review"
+  },
+  {
+    "id": "gjoll_railing",
+    "level": "helheim",
+    "type": "props",
+    "source": "originals/helheim_props_v01_raw.png",
+    "cell_crop": [
+      512,
+      512,
+      1024,
+      1024
+    ],
+    "content_bbox": [
+      26,
+      75,
+      496,
+      395
+    ],
+    "processing": "magenta matte removal; nearest scale preserving aspect; centered x and bottom2px",
+    "status": "candidate_pending_visual_review"
+  },
+  {
+    "id": "broken_weapons",
+    "level": "vigrid",
+    "type": "props",
+    "source": "originals/vigrid_props_v01_raw.png",
+    "cell_crop": [
+      0,
+      0,
+      512,
+      512
+    ],
+    "content_bbox": [
+      113,
+      25,
+      433,
+      512
+    ],
+    "processing": "magenta matte removal; nearest scale preserving aspect; centered x and bottom2px",
+    "status": "candidate_pending_visual_review"
+  },
+  {
+    "id": "fallen_shield",
+    "level": "vigrid",
+    "type": "props",
+    "source": "originals/vigrid_props_v01_raw.png",
+    "cell_crop": [
+      512,
+      0,
+      1024,
+      512
+    ],
+    "content_bbox": [
+      42,
+      120,
+      512,
+      431
+    ],
+    "processing": "magenta matte removal; nearest scale preserving aspect; centered x and bottom2px",
+    "status": "candidate_pending_visual_review"
+  },
+  {
+    "id": "giant_remains",
+    "level": "vigrid",
+    "type": "props",
+    "source": "originals/vigrid_props_v01_raw.png",
+    "cell_crop": [
+      1024,
+      0,
+      1536,
+      512
+    ],
+    "content_bbox": [
+      0,
+      51,
+      459,
+      447
+    ],
+    "processing": "magenta matte removal; nearest scale preserving aspect; centered x and bottom2px",
+    "status": "candidate_pending_visual_review"
+  },
+  {
+    "id": "burning_wreckage",
+    "level": "vigrid",
+    "type": "props",
+    "source": "originals/vigrid_props_v01_raw.png",
+    "cell_crop": [
+      0,
+      512,
+      512,
+      1024
+    ],
+    "content_bbox": [
+      39,
+      0,
+      512,
+      474
+    ],
+    "processing": "magenta matte removal; nearest scale preserving aspect; centered x and bottom2px",
+    "status": "candidate_pending_visual_review"
+  },
+  {
+    "id": "bifrost_fragment",
+    "level": "vigrid",
+    "type": "props",
+    "source": "originals/vigrid_props_v01_raw.png",
+    "cell_crop": [
+      512,
+      512,
+      1024,
+      1024
+    ],
+    "content_bbox": [
+      0,
+      37,
+      512,
+      441
+    ],
+    "processing": "magenta matte removal; nearest scale preserving aspect; centered x and bottom2px",
+    "status": "candidate_pending_visual_review"
+  }
+]

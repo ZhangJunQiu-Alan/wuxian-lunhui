@@ -1,0 +1,22 @@
+{
+  "midgard/dead_pine_02": {
+    "source": "originals/pine_weapons_v02_raw.png",
+    "crop": [
+      170,
+      35,
+      835,
+      865
+    ],
+    "processing": "magenta matte removal/despill; nearest sizing; existing fixed palette; vigrid inherited blue-white powder remapped to charcoal ash tones"
+  },
+  "vigrid/broken_weapons": {
+    "source": "originals/pine_weapons_v02_raw.png",
+    "crop": [
+      1040,
+      235,
+      1625,
+      855
+    ],
+    "processing": "magenta matte removal/despill; nearest sizing; existing fixed palette; vigrid inherited blue-white powder remapped to charcoal ash tones"
+  }
+}

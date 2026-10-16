@@ -138,7 +138,7 @@ func _physics_process(delta: float) -> void:
 		facing = dir.normalized()
 	velocity = dir * move_speed * (1.3 if frenzy_time > 0.0 else 1.0)  # 狂野西部秀：移速 +30%
 	move_and_slide()
-	position = Game.clamp_to_map(position, RADIUS)
+	position = MapLayer.push_out(Game.clamp_to_map(position, RADIUS), RADIUS)
 
 	if regen > 0.0 and hp < max_hp:
 		heal(regen * delta)

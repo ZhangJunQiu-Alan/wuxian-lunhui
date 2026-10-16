@@ -1,0 +1,372 @@
+{
+  "status": "art_visual_self_check_passed_pending_final_package_verification",
+  "game_tested": false,
+  "assets": {
+    "midgard/snow_01": {
+      "passed": true,
+      "reviewed_candidate": "candidates/midgard_snow_01_v03.png",
+      "reviewed_at": "2026-10-16",
+      "viewed": "#121721背景1×/4×对照；地块4×4；基础4种混铺；关卡1×角色合成",
+      "note": "低密度细雪粒，亮度克制；4×4单铺及基础混铺未见硬接缝。",
+      "limitations": "未在Godot运行，游戏内验收由代码代理负责"
+    },
+    "midgard/snow_02": {
+      "passed": true,
+      "reviewed_candidate": "candidates/midgard_snow_02_v03.png",
+      "reviewed_at": "2026-10-16",
+      "viewed": "#121721背景1×/4×对照；地块4×4；基础4种混铺；关卡1×角色合成",
+      "note": "细雪簇分布与01不同，无大波纹；单铺及混铺检查。",
+      "limitations": "未在Godot运行，游戏内验收由代码代理负责"
+    },
+    "midgard/snow_03": {
+      "passed": true,
+      "reviewed_candidate": "candidates/midgard_snow_03_v03.png",
+      "reviewed_at": "2026-10-16",
+      "viewed": "#121721背景1×/4×对照；地块4×4；基础4种混铺；关卡1×角色合成",
+      "note": "稀疏霜粒，未出现集中亮斑地标；单铺及混铺检查。",
+      "limitations": "未在Godot运行，游戏内验收由代码代理负责"
+    },
+    "midgard/snow_04": {
+      "passed": true,
+      "reviewed_candidate": "candidates/midgard_snow_04_v03.png",
+      "reviewed_at": "2026-10-16",
+      "viewed": "#121721背景1×/4×对照；地块4×4；基础4种混铺；关卡1×角色合成",
+      "note": "细颗粒雪面，亮度与另三张一致；单铺及混铺检查。",
+      "limitations": "未在Godot运行，游戏内验收由代码代理负责"
+    },
+    "midgard/snow_trampled": {
+      "passed": true,
+      "reviewed_candidate": "candidates/midgard_snow_trampled_v03.png",
+      "reviewed_at": "2026-10-16",
+      "viewed": "#121721背景1×/4×对照；地块4×4；基础4种混铺；关卡1×角色合成",
+      "note": "凹凸压实雪，细碎磨损与基础雪可区分；无先前边缘条带。",
+      "limitations": "未在Godot运行，游戏内验收由代码代理负责"
+    },
+    "midgard/ice": {
+      "passed": true,
+      "reviewed_candidate": "candidates/midgard_ice_v03.png",
+      "reviewed_at": "2026-10-16",
+      "viewed": "#121721背景1×/4×对照；地块4×4；基础4种混铺；关卡1×角色合成",
+      "note": "蓝灰冰面保留细裂纹，亮度低于角色；4×4无硬边断线。",
+      "limitations": "未在Godot运行，游戏内验收由代码代理负责"
+    },
+    "midgard/frozen_dirt": {
+      "passed": true,
+      "reviewed_candidate": "candidates/midgard_frozen_dirt_v03.png",
+      "reviewed_at": "2026-10-16",
+      "viewed": "#121721背景1×/4×对照；地块4×4；基础4种混铺；关卡1×角色合成",
+      "note": "暗褐冻土含细霜粒，轮廓纹理不抢角色；4×4查看。",
+      "limitations": "未在Godot运行，游戏内验收由代码代理负责"
+    },
+    "midgard/dead_pine_01": {
+      "passed": true,
+      "reviewed_candidate": "candidates/midgard_dead_pine_01_v03.png",
+      "reviewed_at": "2026-10-16",
+      "viewed": "#121721背景1×/4×对照；地块4×4；基础4种混铺；关卡1×角色合成",
+      "note": "单主干下垂轮生枝、雪冠，64×96；完整硬边、无洋红。",
+      "limitations": "未在Godot运行，游戏内验收由代码代理负责"
+    },
+    "midgard/dead_pine_02": {
+      "passed": true,
+      "reviewed_candidate": "candidates/midgard_dead_pine_02_v05.png",
+      "reviewed_at": "2026-10-16",
+      "viewed": "#121721背景1×/4×对照；地块4×4；基础4种混铺；关卡1×角色合成",
+      "note": "重做为折顶斜干枯松，下垂轮生枝区别于阔叶树；雪色与01一致。",
+      "limitations": "未在Godot运行，游戏内验收由代码代理负责"
+    },
+    "midgard/rock_01": {
+      "passed": true,
+      "reviewed_candidate": "candidates/midgard_rock_01_v03.png",
+      "reviewed_at": "2026-10-16",
+      "viewed": "#121721背景1×/4×对照；地块4×4；基础4种混铺；关卡1×角色合成",
+      "note": "32×32小型圆岩雪冠，留边完整。",
+      "limitations": "未在Godot运行，游戏内验收由代码代理负责"
+    },
+    "midgard/rock_02": {
+      "passed": true,
+      "reviewed_candidate": "candidates/midgard_rock_02_v03.png",
+      "reviewed_at": "2026-10-16",
+      "viewed": "#121721背景1×/4×对照；地块4×4；基础4种混铺；关卡1×角色合成",
+      "note": "48×48尖岩簇，轮廓区别于01。",
+      "limitations": "未在Godot运行，游戏内验收由代码代理负责"
+    },
+    "midgard/rock_03": {
+      "passed": true,
+      "reviewed_candidate": "candidates/midgard_rock_03_v03.png",
+      "reviewed_at": "2026-10-16",
+      "viewed": "#121721背景1×/4×对照；地块4×4；基础4种混铺；关卡1×角色合成",
+      "note": "64×64低矮岩群，去除等分图集带入的邻图碎片。",
+      "limitations": "未在Godot运行，游戏内验收由代码代理负责"
+    },
+    "midgard/runestone_01": {
+      "passed": true,
+      "reviewed_candidate": "candidates/midgard_runestone_01_v03.png",
+      "reviewed_at": "2026-10-16",
+      "viewed": "#121721背景1×/4×对照；地块4×4；基础4种混铺；关卡1×角色合成",
+      "note": "32×64直立碑，完整裁切后主体不再缩成极小碎片；装饰刻痕无标签。",
+      "limitations": "未在Godot运行，游戏内验收由代码代理负责"
+    },
+    "midgard/runestone_02": {
+      "passed": true,
+      "reviewed_candidate": "candidates/midgard_runestone_02_v03.png",
+      "reviewed_at": "2026-10-16",
+      "viewed": "#121721背景1×/4×对照；地块4×4；基础4种混铺；关卡1×角色合成",
+      "note": "32×64另一种碑型，积雪和抽象刻痕；无洋红边。",
+      "limitations": "未在Godot运行，游戏内验收由代码代理负责"
+    },
+    "midgard/burial_mound": {
+      "passed": true,
+      "reviewed_candidate": "candidates/midgard_burial_mound_v03.png",
+      "reviewed_at": "2026-10-16",
+      "viewed": "#121721背景1×/4×对照；地块4×4；基础4种混铺；关卡1×角色合成",
+      "note": "低矮覆雪墓丘和石门，96×64，完整居中。",
+      "limitations": "未在Godot运行，游戏内验收由代码代理负责"
+    },
+    "midgard/collapsed_cabin": {
+      "passed": true,
+      "reviewed_candidate": "candidates/midgard_collapsed_cabin_v03.png",
+      "reviewed_at": "2026-10-16",
+      "viewed": "#121721背景1×/4×对照；地块4×4；基础4种混铺；关卡1×角色合成",
+      "note": "96×96倒塌梁架和残屋顶，俯视角与其他物件一致。",
+      "limitations": "未在Godot运行，游戏内验收由代码代理负责"
+    },
+    "midgard/fence": {
+      "passed": true,
+      "reviewed_candidate": "candidates/midgard_fence_v03.png",
+      "reviewed_at": "2026-10-16",
+      "viewed": "#121721背景1×/4×对照；地块4×4；基础4种混铺；关卡1×角色合成",
+      "note": "64×32木栅栏，横梁空隙真正透明。",
+      "limitations": "未在Godot运行，游戏内验收由代码代理负责"
+    },
+    "midgard/longship_wreck": {
+      "passed": true,
+      "reviewed_candidate": "candidates/midgard_longship_wreck_v03.png",
+      "reviewed_at": "2026-10-16",
+      "viewed": "#121721背景1×/4×对照；地块4×4；基础4种混铺；关卡1×角色合成",
+      "note": "128×64维京船肋、龙首及半埋覆雪，按完整范围裁切，船首尾未截断。",
+      "limitations": "未在Godot运行，游戏内验收由代码代理负责"
+    },
+    "midgard/snowdrift_01": {
+      "passed": true,
+      "reviewed_candidate": "candidates/midgard_snowdrift_01_v03.png",
+      "reviewed_at": "2026-10-16",
+      "viewed": "#121721背景1×/4×对照；地块4×4；基础4种混铺；关卡1×角色合成",
+      "note": "64×32低矮雪堆，轮廓与底座透明边完整。",
+      "limitations": "未在Godot运行，游戏内验收由代码代理负责"
+    },
+    "midgard/snowdrift_02": {
+      "passed": true,
+      "reviewed_candidate": "candidates/midgard_snowdrift_02_v03.png",
+      "reviewed_at": "2026-10-16",
+      "viewed": "#121721背景1×/4×对照；地块4×4；基础4种混铺；关卡1×角色合成",
+      "note": "64×32不同轮廓雪堆，冷色高光统一。",
+      "limitations": "未在Godot运行，游戏内验收由代码代理负责"
+    },
+    "helheim/stone_01": {
+      "passed": true,
+      "reviewed_candidate": "candidates/helheim_stone_01_v03.png",
+      "reviewed_at": "2026-10-16",
+      "viewed": "#121721背景1×/4×对照；地块4×4；基础4种混铺；关卡1×角色合成",
+      "note": "不规则冥石裂隙，冷灰低对比；单铺与4种基础混铺查看。",
+      "limitations": "未在Godot运行，游戏内验收由代码代理负责"
+    },
+    "helheim/stone_02": {
+      "passed": true,
+      "reviewed_candidate": "candidates/helheim_stone_02_v03.png",
+      "reviewed_at": "2026-10-16",
+      "viewed": "#121721背景1×/4×对照；地块4×4；基础4种混铺；关卡1×角色合成",
+      "note": "冥石颗粒和裂隙分布不同，亮度匹配；单铺及混铺查看。",
+      "limitations": "未在Godot运行，游戏内验收由代码代理负责"
+    },
+    "helheim/stone_03": {
+      "passed": true,
+      "reviewed_candidate": "candidates/helheim_stone_03_v03.png",
+      "reviewed_at": "2026-10-16",
+      "viewed": "#121721背景1×/4×对照；地块4×4；基础4种混铺；关卡1×角色合成",
+      "note": "较大片冥石断面，暗部仍低对比；单铺及混铺查看。",
+      "limitations": "未在Godot运行，游戏内验收由代码代理负责"
+    },
+    "helheim/stone_04": {
+      "passed": true,
+      "reviewed_candidate": "candidates/helheim_stone_04_v03.png",
+      "reviewed_at": "2026-10-16",
+      "viewed": "#121721背景1×/4×对照；地块4×4；基础4种混铺；关卡1×角色合成",
+      "note": "细碎裂石变化，保持同一冷灰地面色；单铺及混铺查看。",
+      "limitations": "未在Godot运行，游戏内验收由代码代理负责"
+    },
+    "helheim/fog_ground": {
+      "passed": true,
+      "reviewed_candidate": "candidates/helheim_fog_ground_v03.png",
+      "reviewed_at": "2026-10-16",
+      "viewed": "#121721背景1×/4×对照；地块4×4；基础4种混铺；关卡1×角色合成",
+      "note": "雾色融入完整不透明地面，细青色涡纹；单铺无透明洞或硬缝。",
+      "limitations": "未在Godot运行，游戏内验收由代码代理负责"
+    },
+    "helheim/nail_deck_01": {
+      "passed": true,
+      "reviewed_candidate": "candidates/helheim_nail_deck_01_v03.png",
+      "reviewed_at": "2026-10-16",
+      "viewed": "#121721背景1×/4×对照；地块4×4；基础4种混铺；关卡1×角色合成",
+      "note": "重叠弯曲角质指甲片，可辨尖端；降低亮度后4×4查看。",
+      "limitations": "未在Godot运行，游戏内验收由代码代理负责"
+    },
+    "helheim/nail_deck_02": {
+      "passed": true,
+      "reviewed_candidate": "candidates/helheim_nail_deck_02_v03.png",
+      "reviewed_at": "2026-10-16",
+      "viewed": "#121721背景1×/4×对照；地块4×4；基础4种混铺；关卡1×角色合成",
+      "note": "另一组角质指甲片排布，材质/色调匹配；4×4查看。",
+      "limitations": "未在Godot运行，游戏内验收由代码代理负责"
+    },
+    "helheim/bone_pile": {
+      "passed": true,
+      "reviewed_candidate": "candidates/helheim_bone_pile_v03.png",
+      "reviewed_at": "2026-10-16",
+      "viewed": "#121721背景1×/4×对照；地块4×4；基础4种混铺；关卡1×角色合成",
+      "note": "头骨和肋骨可辨，无血腥器官；64×48透明物件。",
+      "limitations": "未在Godot运行，游戏内验收由代码代理负责"
+    },
+    "helheim/broken_headstone": {
+      "passed": true,
+      "reviewed_candidate": "candidates/helheim_broken_headstone_v03.png",
+      "reviewed_at": "2026-10-16",
+      "viewed": "#121721背景1×/4×对照；地块4×4；基础4种混铺；关卡1×角色合成",
+      "note": "48×64不规则断碑，冷石材，无十字架或可读文字。",
+      "limitations": "未在Godot运行，游戏内验收由代码代理负责"
+    },
+    "helheim/chain_pillar": {
+      "passed": true,
+      "reviewed_candidate": "candidates/helheim_chain_pillar_v03.png",
+      "reviewed_at": "2026-10-16",
+      "viewed": "#121721背景1×/4×对照；地块4×4；基础4种混铺；关卡1×角色合成",
+      "note": "48×96链柱，柱体与链环可辨；链圈透明空隙。",
+      "limitations": "未在Godot运行，游戏内验收由代码代理负责"
+    },
+    "helheim/mist_dead_tree": {
+      "passed": true,
+      "reviewed_candidate": "candidates/helheim_mist_dead_tree_v03.png",
+      "reviewed_at": "2026-10-16",
+      "viewed": "#121721背景1×/4×对照；地块4×4；基础4种混铺；关卡1×角色合成",
+      "note": "64×96画布内枯树，扭曲枝根；没有不透明雾背景。",
+      "limitations": "未在Godot运行，游戏内验收由代码代理负责"
+    },
+    "helheim/gjoll_railing": {
+      "passed": true,
+      "reviewed_candidate": "candidates/helheim_gjoll_railing_v03.png",
+      "reviewed_at": "2026-10-16",
+      "viewed": "#121721背景1×/4×对照；地块4×4；基础4种混铺；关卡1×角色合成",
+      "note": "96×48暗石和少量旧金构件；栏杆拱孔真正透明。",
+      "limitations": "未在Godot运行，游戏内验收由代码代理负责"
+    },
+    "vigrid/scorched_01": {
+      "passed": true,
+      "reviewed_candidate": "candidates/vigrid_scorched_01_v04.png",
+      "reviewed_at": "2026-10-16",
+      "viewed": "#121721背景1×/4×对照；地块4×4；基础4种混铺；关卡1×角色合成",
+      "note": "暗色灰烬与少量余烬，单铺与混铺查看。",
+      "limitations": "未在Godot运行，游戏内验收由代码代理负责"
+    },
+    "vigrid/scorched_02": {
+      "passed": true,
+      "reviewed_candidate": "candidates/vigrid_scorched_02_v04.png",
+      "reviewed_at": "2026-10-16",
+      "viewed": "#121721背景1×/4×对照；地块4×4；基础4种混铺；关卡1×角色合成",
+      "note": "改用较均匀灰烬区域，避开首稿显眼断枝地标；单铺与混铺查看。",
+      "limitations": "未在Godot运行，游戏内验收由代码代理负责"
+    },
+    "vigrid/scorched_03": {
+      "passed": true,
+      "reviewed_candidate": "candidates/vigrid_scorched_03_v04.png",
+      "reviewed_at": "2026-10-16",
+      "viewed": "#121721背景1×/4×对照；地块4×4；基础4种混铺；关卡1×角色合成",
+      "note": "焦土碎块，暗反差；单铺与混铺查看。",
+      "limitations": "未在Godot运行，游戏内验收由代码代理负责"
+    },
+    "vigrid/scorched_04": {
+      "passed": true,
+      "reviewed_candidate": "candidates/vigrid_scorched_04_v04.png",
+      "reviewed_at": "2026-10-16",
+      "viewed": "#121721背景1×/4×对照；地块4×4；基础4种混铺；关卡1×角色合成",
+      "note": "细焦屑变化，灰烬色一致；单铺与混铺查看。",
+      "limitations": "未在Godot运行，游戏内验收由代码代理负责"
+    },
+    "vigrid/cracked_lava": {
+      "passed": true,
+      "reviewed_candidate": "candidates/vigrid_cracked_lava_v04.png",
+      "reviewed_at": "2026-10-16",
+      "viewed": "#121721背景1×/4×对照；地块4×4；基础4种混铺；关卡1×角色合成",
+      "note": "黑色冷却壳占主导，细暗红裂隙；4×4查看且角色仍醒目。",
+      "limitations": "未在Godot运行，游戏内验收由代码代理负责"
+    },
+    "vigrid/burnt_grass": {
+      "passed": true,
+      "reviewed_candidate": "candidates/vigrid_burnt_grass_v04.png",
+      "reviewed_at": "2026-10-16",
+      "viewed": "#121721背景1×/4×对照；地块4×4；基础4种混铺；关卡1×角色合成",
+      "note": "稀疏焦草混入灰土，不引入绿色；4×4查看。",
+      "limitations": "未在Godot运行，游戏内验收由代码代理负责"
+    },
+    "vigrid/broken_weapons": {
+      "passed": true,
+      "reviewed_candidate": "candidates/vigrid_broken_weapons_v05.png",
+      "reviewed_at": "2026-10-16",
+      "viewed": "#121721背景1×/4×对照；地块4×4；基础4种混铺；关卡1×角色合成",
+      "note": "重做后可见断刃截面、无矛头的碎裂木杆及落地矛头；冬季蓝白残色已映射为灰烬色。",
+      "limitations": "未在Godot运行，游戏内验收由代码代理负责"
+    },
+    "vigrid/fallen_shield": {
+      "passed": true,
+      "reviewed_candidate": "candidates/vigrid_fallen_shield_v04.png",
+      "reviewed_at": "2026-10-16",
+      "viewed": "#121721背景1×/4×对照；地块4×4；基础4种混铺；关卡1×角色合成",
+      "note": "48×48圆盾、铁盾脐及破木板；移除相邻手臂造成的切图碎片。",
+      "limitations": "未在Godot运行，游戏内验收由代码代理负责"
+    },
+    "vigrid/giant_remains": {
+      "passed": true,
+      "reviewed_candidate": "candidates/vigrid_giant_remains_v04.png",
+      "reviewed_at": "2026-10-16",
+      "viewed": "#121721背景1×/4×对照；地块4×4；基础4种混铺；关卡1×角色合成",
+      "note": "96×64巨人手臂局部与残布，无血腥脏器；完整手部和透明留边。",
+      "limitations": "未在Godot运行，游戏内验收由代码代理负责"
+    },
+    "vigrid/burning_wreckage": {
+      "passed": true,
+      "reviewed_candidate": "candidates/vigrid_burning_wreckage_v04.png",
+      "reviewed_at": "2026-10-16",
+      "viewed": "#121721背景1×/4×对照；地块4×4；基础4种混铺；关卡1×角色合成",
+      "note": "96×96烧毁车轮梁架，v04恢复暖色火焰；单张静态，非火焰动画。",
+      "limitations": "未在Godot运行，游戏内验收由代码代理负责"
+    },
+    "vigrid/bifrost_fragment": {
+      "passed": true,
+      "reviewed_candidate": "candidates/vigrid_bifrost_fragment_v04.png",
+      "reviewed_at": "2026-10-16",
+      "viewed": "#121721背景1×/4×对照；地块4×4；基础4种混铺；关卡1×角色合成",
+      "note": "96×64破裂桥石，v04保留低饱和彩虹色脉；与首稿丢失虹色的v03区别明确。",
+      "limitations": "未在Godot运行，游戏内验收由代码代理负责"
+    }
+  },
+  "failures_and_resolutions": [
+    {
+      "version": "ground_v01",
+      "reason": "6px边缘混合出现条带；首轮雪地大波纹重复明显",
+      "resolution": "周期边界分解替代带状混合；基础雪地重生成并选择低纹理候选2"
+    },
+    {
+      "version": "props_v01",
+      "reason": "按图集等分截断宽轮廓并带入邻近物件；洋红抗锯齿边缘残留",
+      "resolution": "人工核对完整裁切范围，去底/去杂色，最近邻再固定色板"
+    },
+    {
+      "version": "vigrid_v03",
+      "reason": "统一色板吞掉虹色，火焰变暗",
+      "resolution": "v04保留火焰和虹色必要颜色，仍保持全关48色以内"
+    },
+    {
+      "version": "pine02_and_broken_weapons_initial",
+      "reason": "第二棵树偏阔叶，武器看起来完整",
+      "resolution": "重新上传3份现有参考图生成；v05采用折顶枯松和断刃/断杆，冬季蓝白粉尘映射为焦灰"
+    }
+  ]
+}

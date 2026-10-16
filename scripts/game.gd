@@ -9,13 +9,7 @@ const GRID_COLOR := Color(1, 1, 1, 0.05)
 
 const POINTS_PER_MINUTE := 10  # 每存活 1 分钟获得的奖励点
 const RING_RADIUS := 450.0     # 包围事件里那一圈敌人离玩家的距离
-const EDGE_COLOR := Color(0.03, 0.04, 0.06)  # 屏障带（占位：以后换成冰崖、冰海、松林）
-# 地标的占位颜色，等地图素材做好后删除
-const LANDMARK_TINT := {
-	"crossroads": Color(0.45, 0.4, 0.35, 0.10), "village": Color(0.55, 0.4, 0.3, 0.14),
-	"harbor": Color(0.4, 0.5, 0.65, 0.14), "stones": Color(0.6, 0.5, 0.9, 0.12),
-	"mounds": Color(0.35, 0.5, 0.4, 0.14), "lake": Color(0.6, 0.8, 1.0, 0.12),
-}
+const EDGE_COLOR := Color(0.03, 0.04, 0.06)  # 没有地图素材时，屏障带涂暗
 
 static var bounds := Rect2()       # 可以活动的范围
 static var view_bounds := Rect2()  # 镜头能看到的范围（活动范围再加四周的屏障带）
@@ -44,11 +38,17 @@ var _next_quest_slot := 0
 var _quests_done := 0
 var _quests_seen := 0
 var _run_recorded := false
+var _map_layer: MapLayer
 
 
 func _ready() -> void:
 	view_bounds = Rect2(-level_data.map["size"] / 2.0, level_data.map["size"])
 	bounds = view_bounds.grow(-level_data.map.border)
+	MapLayer.obstacles.clear()
+	if level_data.map.has("layout"):
+		_map_layer = load(level_data.map.layout).new()
+		_map_layer.map = level_data.map
+		add_child(_map_layer)
 	add_child(FxLayer.new())  # 伤害数字和碎片特效
 
 	player = Player.new()
@@ -105,9 +105,9 @@ func _process(delta: float) -> void:
 
 
 func _physics_process(_delta: float) -> void:
-	for node in get_tree().get_nodes_in_group("enemies"):  # 冲锋、击退都不能把敌人推出地图
+	for node in get_tree().get_nodes_in_group("enemies"):  # 冲锋、击退都不能把敌人推出地图，也不能穿过长屋、岩石
 		var enemy := node as Enemy
-		enemy.position = clamp_to_map(enemy.position, enemy.radius)
+		enemy.position = MapLayer.push_out(clamp_to_map(enemy.position, enemy.radius), enemy.radius)
 	Enemy.rebuild_grid(get_tree())
 
 
@@ -350,14 +350,10 @@ func _on_player_died() -> void:
 
 
 func _draw() -> void:
-	if player == null:
+	if player == null or _map_layer:
 		return
 	var view := get_canvas_transform().affine_inverse() * get_viewport_rect()  # 镜头看到的范围
-	# 地标的占位底色
-	for landmark: Dictionary in level_data.map.landmarks:
-		if view.grow(landmark.radius).has_point(landmark.pos):
-			draw_circle(landmark.pos, landmark.radius, LANDMARK_TINT.get(landmark.id, Color(1, 1, 1, 0.05)))
-	# 地图内画网格，这样移动时能看出位移
+	# 没有地图素材时，地图内画网格，这样移动时能看出位移
 	var area := view.intersection(bounds)
 	var x := ceilf(area.position.x / GRID_SIZE) * GRID_SIZE
 	while x < area.end.x:
@@ -367,7 +363,7 @@ func _draw() -> void:
 	while y < area.end.y:
 		draw_line(Vector2(area.position.x, y), Vector2(area.end.x, y), GRID_COLOR)
 		y += GRID_SIZE
-	# 屏障带涂暗（占位：以后换成冰崖、冰海、松林），边缘画一圈边线
+	# 屏障带涂暗，边缘画一圈边线
 	for outside: Rect2 in [Rect2(view.position.x, view.position.y, view.size.x, bounds.position.y - view.position.y),
 			Rect2(view.position.x, bounds.end.y, view.size.x, view.end.y - bounds.end.y),
 			Rect2(view.position.x, view.position.y, bounds.position.x - view.position.x, view.size.y),

@@ -1,0 +1,1449 @@
+[
+  {
+    "id": "snow_01",
+    "level": "midgard",
+    "type": "ground",
+    "width": 64,
+    "height": 64,
+    "status": "candidate_pending_final_visual_review",
+    "candidate": "candidates/midgard_snow_01_v03.png",
+    "color_count": 10,
+    "alpha_values": [
+      255
+    ],
+    "bbox": [
+      0,
+      0,
+      64,
+      64
+    ],
+    "palette": "records/midgard_palette48.json",
+    "sha256": "5e667d35e6b54999ad939643a6614609f0a0f8d4af0e412112afc122ccfb328a",
+    "checks": {
+      "exact_size": true,
+      "png_rgba": true,
+      "binary_alpha": true,
+      "palette_limit": true,
+      "transparent_margin_2px": null
+    },
+    "seam_metrics": {
+      "x": 0.911,
+      "y": 1.292,
+      "internal_x": 1.248,
+      "internal_y": 1.539
+    },
+    "mean_rgb": [
+      55.15,
+      65.46,
+      78.26
+    ]
+  },
+  {
+    "id": "snow_02",
+    "level": "midgard",
+    "type": "ground",
+    "width": 64,
+    "height": 64,
+    "status": "candidate_pending_final_visual_review",
+    "candidate": "candidates/midgard_snow_02_v03.png",
+    "color_count": 10,
+    "alpha_values": [
+      255
+    ],
+    "bbox": [
+      0,
+      0,
+      64,
+      64
+    ],
+    "palette": "records/midgard_palette48.json",
+    "sha256": "814a4601851c2357e709f74dc7f668fba3f71b03f395f76afef55ea835db4ec7",
+    "checks": {
+      "exact_size": true,
+      "png_rgba": true,
+      "binary_alpha": true,
+      "palette_limit": true,
+      "transparent_margin_2px": null
+    },
+    "seam_metrics": {
+      "x": 0.995,
+      "y": 1.359,
+      "internal_x": 1.532,
+      "internal_y": 1.772
+    },
+    "mean_rgb": [
+      55.64,
+      65.27,
+      77.85
+    ]
+  },
+  {
+    "id": "snow_03",
+    "level": "midgard",
+    "type": "ground",
+    "width": 64,
+    "height": 64,
+    "status": "candidate_pending_final_visual_review",
+    "candidate": "candidates/midgard_snow_03_v03.png",
+    "color_count": 10,
+    "alpha_values": [
+      255
+    ],
+    "bbox": [
+      0,
+      0,
+      64,
+      64
+    ],
+    "palette": "records/midgard_palette48.json",
+    "sha256": "25558eeb41d850bf417abd0ff708adbaa4c6881af2a247899142db660abff42d",
+    "checks": {
+      "exact_size": true,
+      "png_rgba": true,
+      "binary_alpha": true,
+      "palette_limit": true,
+      "transparent_margin_2px": null
+    },
+    "seam_metrics": {
+      "x": 1.198,
+      "y": 0.969,
+      "internal_x": 1.262,
+      "internal_y": 1.602
+    },
+    "mean_rgb": [
+      55.21,
+      65.34,
+      78.12
+    ]
+  },
+  {
+    "id": "snow_04",
+    "level": "midgard",
+    "type": "ground",
+    "width": 64,
+    "height": 64,
+    "status": "candidate_pending_final_visual_review",
+    "candidate": "candidates/midgard_snow_04_v03.png",
+    "color_count": 10,
+    "alpha_values": [
+      255
+    ],
+    "bbox": [
+      0,
+      0,
+      64,
+      64
+    ],
+    "palette": "records/midgard_palette48.json",
+    "sha256": "cce3cdb7e73ae608e887e3ca685e49ef608aa954c2939e37479f4b31803ca1b0",
+    "checks": {
+      "exact_size": true,
+      "png_rgba": true,
+      "binary_alpha": true,
+      "palette_limit": true,
+      "transparent_margin_2px": null
+    },
+    "seam_metrics": {
+      "x": 1.078,
+      "y": 0.578,
+      "internal_x": 1.204,
+      "internal_y": 1.491
+    },
+    "mean_rgb": [
+      54.93,
+      65.69,
+      78.71
+    ]
+  },
+  {
+    "id": "snow_trampled",
+    "level": "midgard",
+    "type": "ground",
+    "width": 64,
+    "height": 64,
+    "status": "candidate_pending_final_visual_review",
+    "candidate": "candidates/midgard_snow_trampled_v03.png",
+    "color_count": 24,
+    "alpha_values": [
+      255
+    ],
+    "bbox": [
+      0,
+      0,
+      64,
+      64
+    ],
+    "palette": "records/midgard_palette48.json",
+    "sha256": "329fd35f02df0534e237c71124fac70301b1f40703d42aed5785791d7713350e",
+    "checks": {
+      "exact_size": true,
+      "png_rgba": true,
+      "binary_alpha": true,
+      "palette_limit": true,
+      "transparent_margin_2px": null
+    },
+    "seam_metrics": {
+      "x": 6.745,
+      "y": 3.677,
+      "internal_x": 9.108,
+      "internal_y": 9.936
+    },
+    "mean_rgb": [
+      54.54,
+      65.73,
+      77.6
+    ]
+  },
+  {
+    "id": "ice",
+    "level": "midgard",
+    "type": "ground",
+    "width": 64,
+    "height": 64,
+    "status": "candidate_pending_final_visual_review",
+    "candidate": "candidates/midgard_ice_v03.png",
+    "color_count": 9,
+    "alpha_values": [
+      255
+    ],
+    "bbox": [
+      0,
+      0,
+      64,
+      64
+    ],
+    "palette": "records/midgard_palette48.json",
+    "sha256": "4f851b4b359197cca9bc4875c156d0608da036d0980ca2ffe0561dad0885f77d",
+    "checks": {
+      "exact_size": true,
+      "png_rgba": true,
+      "binary_alpha": true,
+      "palette_limit": true,
+      "transparent_margin_2px": null
+    },
+    "seam_metrics": {
+      "x": 2.318,
+      "y": 1.943,
+      "internal_x": 4.91,
+      "internal_y": 4.984
+    },
+    "mean_rgb": [
+      45.99,
+      59.68,
+      72.56
+    ]
+  },
+  {
+    "id": "frozen_dirt",
+    "level": "midgard",
+    "type": "ground",
+    "width": 64,
+    "height": 64,
+    "status": "candidate_pending_final_visual_review",
+    "candidate": "candidates/midgard_frozen_dirt_v03.png",
+    "color_count": 14,
+    "alpha_values": [
+      255
+    ],
+    "bbox": [
+      0,
+      0,
+      64,
+      64
+    ],
+    "palette": "records/midgard_palette48.json",
+    "sha256": "241cb1b858fd80cff93331c72e935ce373048c60a208932459f06e4be87233fa",
+    "checks": {
+      "exact_size": true,
+      "png_rgba": true,
+      "binary_alpha": true,
+      "palette_limit": true,
+      "transparent_margin_2px": null
+    },
+    "seam_metrics": {
+      "x": 4.448,
+      "y": 3.224,
+      "internal_x": 7.376,
+      "internal_y": 7.498
+    },
+    "mean_rgb": [
+      44.18,
+      42.78,
+      43.46
+    ]
+  },
+  {
+    "id": "dead_pine_01",
+    "level": "midgard",
+    "type": "props",
+    "width": 64,
+    "height": 96,
+    "status": "candidate_pending_final_visual_review",
+    "candidate": "candidates/midgard_dead_pine_01_v03.png",
+    "color_count": 43,
+    "alpha_values": [
+      0,
+      255
+    ],
+    "bbox": [
+      2,
+      4,
+      62,
+      94
+    ],
+    "palette": "records/midgard_palette48.json",
+    "sha256": "6a756395f9fffbd11c21e42110cfc71fb06b0d9fec3e4296074459a8ba673815",
+    "checks": {
+      "exact_size": true,
+      "png_rgba": true,
+      "binary_alpha": true,
+      "palette_limit": true,
+      "transparent_margin_2px": true
+    }
+  },
+  {
+    "id": "dead_pine_02",
+    "level": "midgard",
+    "type": "props",
+    "width": 64,
+    "height": 96,
+    "status": "candidate_pending_final_visual_review",
+    "candidate": "candidates/midgard_dead_pine_02_v03.png",
+    "color_count": 42,
+    "alpha_values": [
+      0,
+      255
+    ],
+    "bbox": [
+      2,
+      17,
+      62,
+      94
+    ],
+    "palette": "records/midgard_palette48.json",
+    "sha256": "b093f0cf3e26556b4bef31060b080bb79ba343dba3a1aa5383d75811340a4d15",
+    "checks": {
+      "exact_size": true,
+      "png_rgba": true,
+      "binary_alpha": true,
+      "palette_limit": true,
+      "transparent_margin_2px": true
+    }
+  },
+  {
+    "id": "rock_01",
+    "level": "midgard",
+    "type": "props",
+    "width": 32,
+    "height": 32,
+    "status": "candidate_pending_final_visual_review",
+    "candidate": "candidates/midgard_rock_01_v03.png",
+    "color_count": 40,
+    "alpha_values": [
+      0,
+      255
+    ],
+    "bbox": [
+      2,
+      6,
+      30,
+      30
+    ],
+    "palette": "records/midgard_palette48.json",
+    "sha256": "6ef7f0058c54d3a8749ae7e6c71e03d78a29cd4c4d311fd3e576ba3620293441",
+    "checks": {
+      "exact_size": true,
+      "png_rgba": true,
+      "binary_alpha": true,
+      "palette_limit": true,
+      "transparent_margin_2px": true
+    }
+  },
+  {
+    "id": "rock_02",
+    "level": "midgard",
+    "type": "props",
+    "width": 48,
+    "height": 48,
+    "status": "candidate_pending_final_visual_review",
+    "candidate": "candidates/midgard_rock_02_v03.png",
+    "color_count": 44,
+    "alpha_values": [
+      0,
+      255
+    ],
+    "bbox": [
+      2,
+      4,
+      46,
+      46
+    ],
+    "palette": "records/midgard_palette48.json",
+    "sha256": "73046ffc1102e2d799d8df84751444c5930671498dfbe284fdc19f750b12f03c",
+    "checks": {
+      "exact_size": true,
+      "png_rgba": true,
+      "binary_alpha": true,
+      "palette_limit": true,
+      "transparent_margin_2px": true
+    }
+  },
+  {
+    "id": "rock_03",
+    "level": "midgard",
+    "type": "props",
+    "width": 64,
+    "height": 64,
+    "status": "candidate_pending_final_visual_review",
+    "candidate": "candidates/midgard_rock_03_v03.png",
+    "color_count": 44,
+    "alpha_values": [
+      0,
+      255
+    ],
+    "bbox": [
+      2,
+      14,
+      62,
+      62
+    ],
+    "palette": "records/midgard_palette48.json",
+    "sha256": "15ff0387c98bbcf96f5989f9b3c6ed272feb0eb5c844d1f2145b2e5324e9c4cb",
+    "checks": {
+      "exact_size": true,
+      "png_rgba": true,
+      "binary_alpha": true,
+      "palette_limit": true,
+      "transparent_margin_2px": true
+    }
+  },
+  {
+    "id": "runestone_01",
+    "level": "midgard",
+    "type": "props",
+    "width": 32,
+    "height": 64,
+    "status": "candidate_pending_final_visual_review",
+    "candidate": "candidates/midgard_runestone_01_v03.png",
+    "color_count": 42,
+    "alpha_values": [
+      0,
+      255
+    ],
+    "bbox": [
+      2,
+      17,
+      30,
+      62
+    ],
+    "palette": "records/midgard_palette48.json",
+    "sha256": "560436764b346d2317e3f78828df11a97fff0f021835795771cccb3332b3e0c4",
+    "checks": {
+      "exact_size": true,
+      "png_rgba": true,
+      "binary_alpha": true,
+      "palette_limit": true,
+      "transparent_margin_2px": true
+    }
+  },
+  {
+    "id": "runestone_02",
+    "level": "midgard",
+    "type": "props",
+    "width": 32,
+    "height": 64,
+    "status": "candidate_pending_final_visual_review",
+    "candidate": "candidates/midgard_runestone_02_v03.png",
+    "color_count": 41,
+    "alpha_values": [
+      0,
+      255
+    ],
+    "bbox": [
+      3,
+      22,
+      30,
+      62
+    ],
+    "palette": "records/midgard_palette48.json",
+    "sha256": "7f1d9bb88125883ac0e5ea00139871265d8bbe8f1cdac6a6f6083faa44a6ac34",
+    "checks": {
+      "exact_size": true,
+      "png_rgba": true,
+      "binary_alpha": true,
+      "palette_limit": true,
+      "transparent_margin_2px": true
+    }
+  },
+  {
+    "id": "burial_mound",
+    "level": "midgard",
+    "type": "props",
+    "width": 96,
+    "height": 64,
+    "status": "candidate_pending_final_visual_review",
+    "candidate": "candidates/midgard_burial_mound_v03.png",
+    "color_count": 43,
+    "alpha_values": [
+      0,
+      255
+    ],
+    "bbox": [
+      2,
+      12,
+      94,
+      62
+    ],
+    "palette": "records/midgard_palette48.json",
+    "sha256": "920d87c7989e358931fbc7121f776c86c5faf4e0228e6ace5e9aea2ac5a9abe3",
+    "checks": {
+      "exact_size": true,
+      "png_rgba": true,
+      "binary_alpha": true,
+      "palette_limit": true,
+      "transparent_margin_2px": true
+    }
+  },
+  {
+    "id": "collapsed_cabin",
+    "level": "midgard",
+    "type": "props",
+    "width": 96,
+    "height": 96,
+    "status": "candidate_pending_final_visual_review",
+    "candidate": "candidates/midgard_collapsed_cabin_v03.png",
+    "color_count": 44,
+    "alpha_values": [
+      0,
+      255
+    ],
+    "bbox": [
+      3,
+      25,
+      94,
+      94
+    ],
+    "palette": "records/midgard_palette48.json",
+    "sha256": "ed2857275e04a1f7bf3d5b433c493a74f2a595a9e70ecde97918f182f80b8205",
+    "checks": {
+      "exact_size": true,
+      "png_rgba": true,
+      "binary_alpha": true,
+      "palette_limit": true,
+      "transparent_margin_2px": true
+    }
+  },
+  {
+    "id": "fence",
+    "level": "midgard",
+    "type": "props",
+    "width": 64,
+    "height": 32,
+    "status": "candidate_pending_final_visual_review",
+    "candidate": "candidates/midgard_fence_v03.png",
+    "color_count": 38,
+    "alpha_values": [
+      0,
+      255
+    ],
+    "bbox": [
+      7,
+      2,
+      56,
+      30
+    ],
+    "palette": "records/midgard_palette48.json",
+    "sha256": "a4a767514a4835ad9fc96f00e28203e00bf2e9089947e68025f0aa55bb254c06",
+    "checks": {
+      "exact_size": true,
+      "png_rgba": true,
+      "binary_alpha": true,
+      "palette_limit": true,
+      "transparent_margin_2px": true
+    }
+  },
+  {
+    "id": "longship_wreck",
+    "level": "midgard",
+    "type": "props",
+    "width": 128,
+    "height": 64,
+    "status": "candidate_pending_final_visual_review",
+    "candidate": "candidates/midgard_longship_wreck_v03.png",
+    "color_count": 44,
+    "alpha_values": [
+      0,
+      255
+    ],
+    "bbox": [
+      5,
+      3,
+      124,
+      62
+    ],
+    "palette": "records/midgard_palette48.json",
+    "sha256": "0a26fc682167f68b241289d7d2ec2b900f5ebad835b3de78fcd4cc6cf64be501",
+    "checks": {
+      "exact_size": true,
+      "png_rgba": true,
+      "binary_alpha": true,
+      "palette_limit": true,
+      "transparent_margin_2px": true
+    }
+  },
+  {
+    "id": "snowdrift_01",
+    "level": "midgard",
+    "type": "props",
+    "width": 64,
+    "height": 32,
+    "status": "candidate_pending_final_visual_review",
+    "candidate": "candidates/midgard_snowdrift_01_v03.png",
+    "color_count": 39,
+    "alpha_values": [
+      0,
+      255
+    ],
+    "bbox": [
+      2,
+      4,
+      62,
+      30
+    ],
+    "palette": "records/midgard_palette48.json",
+    "sha256": "d033e85ad1641887be297d93e21085d2abb0a6de18288e124ebd9c4609f89391",
+    "checks": {
+      "exact_size": true,
+      "png_rgba": true,
+      "binary_alpha": true,
+      "palette_limit": true,
+      "transparent_margin_2px": true
+    }
+  },
+  {
+    "id": "snowdrift_02",
+    "level": "midgard",
+    "type": "props",
+    "width": 64,
+    "height": 32,
+    "status": "candidate_pending_final_visual_review",
+    "candidate": "candidates/midgard_snowdrift_02_v03.png",
+    "color_count": 36,
+    "alpha_values": [
+      0,
+      255
+    ],
+    "bbox": [
+      2,
+      10,
+      62,
+      30
+    ],
+    "palette": "records/midgard_palette48.json",
+    "sha256": "e1d87a992c12c56d0107a55cf77b7d098b280e17e9cefc6ca4bde547e5836fbe",
+    "checks": {
+      "exact_size": true,
+      "png_rgba": true,
+      "binary_alpha": true,
+      "palette_limit": true,
+      "transparent_margin_2px": true
+    }
+  },
+  {
+    "id": "stone_01",
+    "level": "helheim",
+    "type": "ground",
+    "width": 64,
+    "height": 64,
+    "status": "candidate_pending_final_visual_review",
+    "candidate": "candidates/helheim_stone_01_v03.png",
+    "color_count": 25,
+    "alpha_values": [
+      255
+    ],
+    "bbox": [
+      0,
+      0,
+      64,
+      64
+    ],
+    "palette": "records/helheim_palette48.json",
+    "sha256": "32a7743feb27390e888ae4bc29f09888e843949f8c5f410074ff59494faa4efe",
+    "checks": {
+      "exact_size": true,
+      "png_rgba": true,
+      "binary_alpha": true,
+      "palette_limit": true,
+      "transparent_margin_2px": null
+    },
+    "seam_metrics": {
+      "x": 4.068,
+      "y": 3.766,
+      "internal_x": 7.597,
+      "internal_y": 8.08
+    },
+    "mean_rgb": [
+      36.1,
+      46.0,
+      50.45
+    ]
+  },
+  {
+    "id": "stone_02",
+    "level": "helheim",
+    "type": "ground",
+    "width": 64,
+    "height": 64,
+    "status": "candidate_pending_final_visual_review",
+    "candidate": "candidates/helheim_stone_02_v03.png",
+    "color_count": 27,
+    "alpha_values": [
+      255
+    ],
+    "bbox": [
+      0,
+      0,
+      64,
+      64
+    ],
+    "palette": "records/helheim_palette48.json",
+    "sha256": "6531847cee77a2b2a5180736af3dfb9b8c9ac209ca7231f0c78a27d36de472c0",
+    "checks": {
+      "exact_size": true,
+      "png_rgba": true,
+      "binary_alpha": true,
+      "palette_limit": true,
+      "transparent_margin_2px": null
+    },
+    "seam_metrics": {
+      "x": 3.464,
+      "y": 3.594,
+      "internal_x": 7.899,
+      "internal_y": 8.167
+    },
+    "mean_rgb": [
+      36.06,
+      45.96,
+      50.35
+    ]
+  },
+  {
+    "id": "stone_03",
+    "level": "helheim",
+    "type": "ground",
+    "width": 64,
+    "height": 64,
+    "status": "candidate_pending_final_visual_review",
+    "candidate": "candidates/helheim_stone_03_v03.png",
+    "color_count": 26,
+    "alpha_values": [
+      255
+    ],
+    "bbox": [
+      0,
+      0,
+      64,
+      64
+    ],
+    "palette": "records/helheim_palette48.json",
+    "sha256": "03be07a947b21340d09e150fd46952d01031e210bb6ecd7a5f43f879e2ab38bc",
+    "checks": {
+      "exact_size": true,
+      "png_rgba": true,
+      "binary_alpha": true,
+      "palette_limit": true,
+      "transparent_margin_2px": null
+    },
+    "seam_metrics": {
+      "x": 3.521,
+      "y": 3.693,
+      "internal_x": 6.955,
+      "internal_y": 7.476
+    },
+    "mean_rgb": [
+      36.02,
+      45.9,
+      50.36
+    ]
+  },
+  {
+    "id": "stone_04",
+    "level": "helheim",
+    "type": "ground",
+    "width": 64,
+    "height": 64,
+    "status": "candidate_pending_final_visual_review",
+    "candidate": "candidates/helheim_stone_04_v03.png",
+    "color_count": 26,
+    "alpha_values": [
+      255
+    ],
+    "bbox": [
+      0,
+      0,
+      64,
+      64
+    ],
+    "palette": "records/helheim_palette48.json",
+    "sha256": "bbce5b376cb4ff1224288ff4bfb67b840c6b0b0de83bc030014e1b4f7b5e309a",
+    "checks": {
+      "exact_size": true,
+      "png_rgba": true,
+      "binary_alpha": true,
+      "palette_limit": true,
+      "transparent_margin_2px": null
+    },
+    "seam_metrics": {
+      "x": 2.896,
+      "y": 4.229,
+      "internal_x": 8.025,
+      "internal_y": 8.396
+    },
+    "mean_rgb": [
+      36.07,
+      45.94,
+      50.3
+    ]
+  },
+  {
+    "id": "fog_ground",
+    "level": "helheim",
+    "type": "ground",
+    "width": 64,
+    "height": 64,
+    "status": "candidate_pending_final_visual_review",
+    "candidate": "candidates/helheim_fog_ground_v03.png",
+    "color_count": 23,
+    "alpha_values": [
+      255
+    ],
+    "bbox": [
+      0,
+      0,
+      64,
+      64
+    ],
+    "palette": "records/helheim_palette48.json",
+    "sha256": "f780174ebc7d0b4879712d4e777590793534ed320bdf96e255c4282ff3499eba",
+    "checks": {
+      "exact_size": true,
+      "png_rgba": true,
+      "binary_alpha": true,
+      "palette_limit": true,
+      "transparent_margin_2px": null
+    },
+    "seam_metrics": {
+      "x": 2.292,
+      "y": 3.474,
+      "internal_x": 5.664,
+      "internal_y": 5.984
+    },
+    "mean_rgb": [
+      35.77,
+      45.82,
+      50.34
+    ]
+  },
+  {
+    "id": "nail_deck_01",
+    "level": "helheim",
+    "type": "ground",
+    "width": 64,
+    "height": 64,
+    "status": "candidate_pending_final_visual_review",
+    "candidate": "candidates/helheim_nail_deck_01_v03.png",
+    "color_count": 16,
+    "alpha_values": [
+      255
+    ],
+    "bbox": [
+      0,
+      0,
+      64,
+      64
+    ],
+    "palette": "records/helheim_palette48.json",
+    "sha256": "be169aafe5a5eab0357983e77de0a290464071e38ebd51bf630cb65b6fa4f643",
+    "checks": {
+      "exact_size": true,
+      "png_rgba": true,
+      "binary_alpha": true,
+      "palette_limit": true,
+      "transparent_margin_2px": null
+    },
+    "seam_metrics": {
+      "x": 5.917,
+      "y": 4.979,
+      "internal_x": 10.186,
+      "internal_y": 9.062
+    },
+    "mean_rgb": [
+      40.99,
+      41.43,
+      39.43
+    ]
+  },
+  {
+    "id": "nail_deck_02",
+    "level": "helheim",
+    "type": "ground",
+    "width": 64,
+    "height": 64,
+    "status": "candidate_pending_final_visual_review",
+    "candidate": "candidates/helheim_nail_deck_02_v03.png",
+    "color_count": 15,
+    "alpha_values": [
+      255
+    ],
+    "bbox": [
+      0,
+      0,
+      64,
+      64
+    ],
+    "palette": "records/helheim_palette48.json",
+    "sha256": "995a80417f14843b7990c25e4d9652e334a8836543356e9f210f7fb003a9363b",
+    "checks": {
+      "exact_size": true,
+      "png_rgba": true,
+      "binary_alpha": true,
+      "palette_limit": true,
+      "transparent_margin_2px": null
+    },
+    "seam_metrics": {
+      "x": 5.453,
+      "y": 3.62,
+      "internal_x": 9.519,
+      "internal_y": 8.081
+    },
+    "mean_rgb": [
+      41.15,
+      41.32,
+      39.25
+    ]
+  },
+  {
+    "id": "bone_pile",
+    "level": "helheim",
+    "type": "props",
+    "width": 64,
+    "height": 48,
+    "status": "candidate_pending_final_visual_review",
+    "candidate": "candidates/helheim_bone_pile_v03.png",
+    "color_count": 45,
+    "alpha_values": [
+      0,
+      255
+    ],
+    "bbox": [
+      3,
+      4,
+      62,
+      46
+    ],
+    "palette": "records/helheim_palette48.json",
+    "sha256": "5e9304f2fc1271714fec93236111ab0425a059daf1638d66029ca33d60800ee7",
+    "checks": {
+      "exact_size": true,
+      "png_rgba": true,
+      "binary_alpha": true,
+      "palette_limit": true,
+      "transparent_margin_2px": true
+    }
+  },
+  {
+    "id": "broken_headstone",
+    "level": "helheim",
+    "type": "props",
+    "width": 48,
+    "height": 64,
+    "status": "candidate_pending_final_visual_review",
+    "candidate": "candidates/helheim_broken_headstone_v03.png",
+    "color_count": 46,
+    "alpha_values": [
+      0,
+      255
+    ],
+    "bbox": [
+      2,
+      17,
+      46,
+      62
+    ],
+    "palette": "records/helheim_palette48.json",
+    "sha256": "65227cd51de987ee645ac16992a2849a897f38f224d75e07bb3327b88ef7f49c",
+    "checks": {
+      "exact_size": true,
+      "png_rgba": true,
+      "binary_alpha": true,
+      "palette_limit": true,
+      "transparent_margin_2px": true
+    }
+  },
+  {
+    "id": "chain_pillar",
+    "level": "helheim",
+    "type": "props",
+    "width": 48,
+    "height": 96,
+    "status": "candidate_pending_final_visual_review",
+    "candidate": "candidates/helheim_chain_pillar_v03.png",
+    "color_count": 48,
+    "alpha_values": [
+      0,
+      255
+    ],
+    "bbox": [
+      3,
+      22,
+      46,
+      94
+    ],
+    "palette": "records/helheim_palette48.json",
+    "sha256": "b2eef3c83a12d8579b0bfb7ac4e037012cde364452fdc061d2d7c080c020e4f8",
+    "checks": {
+      "exact_size": true,
+      "png_rgba": true,
+      "binary_alpha": true,
+      "palette_limit": true,
+      "transparent_margin_2px": true
+    }
+  },
+  {
+    "id": "mist_dead_tree",
+    "level": "helheim",
+    "type": "props",
+    "width": 64,
+    "height": 96,
+    "status": "candidate_pending_final_visual_review",
+    "candidate": "candidates/helheim_mist_dead_tree_v03.png",
+    "color_count": 48,
+    "alpha_values": [
+      0,
+      255
+    ],
+    "bbox": [
+      2,
+      26,
+      60,
+      94
+    ],
+    "palette": "records/helheim_palette48.json",
+    "sha256": "2f2ad9ef6d15d2f860dd21b8f072f21de8f7bce518866bf27afd65364bb9baff",
+    "checks": {
+      "exact_size": true,
+      "png_rgba": true,
+      "binary_alpha": true,
+      "palette_limit": true,
+      "transparent_margin_2px": true
+    }
+  },
+  {
+    "id": "gjoll_railing",
+    "level": "helheim",
+    "type": "props",
+    "width": 96,
+    "height": 48,
+    "status": "candidate_pending_final_visual_review",
+    "candidate": "candidates/helheim_gjoll_railing_v03.png",
+    "color_count": 48,
+    "alpha_values": [
+      0,
+      255
+    ],
+    "bbox": [
+      15,
+      2,
+      80,
+      46
+    ],
+    "palette": "records/helheim_palette48.json",
+    "sha256": "f57ec49007b06c0dc54f21ae73c42757df08f518ef1196956a3d602c25456a7d",
+    "checks": {
+      "exact_size": true,
+      "png_rgba": true,
+      "binary_alpha": true,
+      "palette_limit": true,
+      "transparent_margin_2px": true
+    }
+  },
+  {
+    "id": "scorched_01",
+    "level": "vigrid",
+    "type": "ground",
+    "width": 64,
+    "height": 64,
+    "status": "candidate_pending_final_visual_review",
+    "candidate": "candidates/vigrid_scorched_01_v03.png",
+    "color_count": 32,
+    "alpha_values": [
+      255
+    ],
+    "bbox": [
+      0,
+      0,
+      64,
+      64
+    ],
+    "palette": "records/vigrid_palette48.json",
+    "sha256": "869fedd2f6c505ec36a8b8ebb3dbc98779c431bb0653f1730185e07b26b2dc13",
+    "checks": {
+      "exact_size": true,
+      "png_rgba": true,
+      "binary_alpha": true,
+      "palette_limit": true,
+      "transparent_margin_2px": null
+    },
+    "seam_metrics": {
+      "x": 2.812,
+      "y": 2.599,
+      "internal_x": 6.789,
+      "internal_y": 6.979
+    },
+    "mean_rgb": [
+      38.57,
+      32.37,
+      32.71
+    ]
+  },
+  {
+    "id": "scorched_02",
+    "level": "vigrid",
+    "type": "ground",
+    "width": 64,
+    "height": 64,
+    "status": "candidate_pending_final_visual_review",
+    "candidate": "candidates/vigrid_scorched_02_v03.png",
+    "color_count": 34,
+    "alpha_values": [
+      255
+    ],
+    "bbox": [
+      0,
+      0,
+      64,
+      64
+    ],
+    "palette": "records/vigrid_palette48.json",
+    "sha256": "8498d7de2780edbac85d9879894b75b61a8873dbb249d688dc254a6d9e538088",
+    "checks": {
+      "exact_size": true,
+      "png_rgba": true,
+      "binary_alpha": true,
+      "palette_limit": true,
+      "transparent_margin_2px": null
+    },
+    "seam_metrics": {
+      "x": 3.047,
+      "y": 2.37,
+      "internal_x": 8.604,
+      "internal_y": 8.934
+    },
+    "mean_rgb": [
+      38.66,
+      32.43,
+      32.78
+    ]
+  },
+  {
+    "id": "scorched_03",
+    "level": "vigrid",
+    "type": "ground",
+    "width": 64,
+    "height": 64,
+    "status": "candidate_pending_final_visual_review",
+    "candidate": "candidates/vigrid_scorched_03_v03.png",
+    "color_count": 33,
+    "alpha_values": [
+      255
+    ],
+    "bbox": [
+      0,
+      0,
+      64,
+      64
+    ],
+    "palette": "records/vigrid_palette48.json",
+    "sha256": "dc8ae701ad5ba82899731ab85b1ab82f38ee862310c7dd10c495f7aa28b3f335",
+    "checks": {
+      "exact_size": true,
+      "png_rgba": true,
+      "binary_alpha": true,
+      "palette_limit": true,
+      "transparent_margin_2px": null
+    },
+    "seam_metrics": {
+      "x": 2.766,
+      "y": 1.812,
+      "internal_x": 7.386,
+      "internal_y": 7.59
+    },
+    "mean_rgb": [
+      38.68,
+      32.44,
+      32.78
+    ]
+  },
+  {
+    "id": "scorched_04",
+    "level": "vigrid",
+    "type": "ground",
+    "width": 64,
+    "height": 64,
+    "status": "candidate_pending_final_visual_review",
+    "candidate": "candidates/vigrid_scorched_04_v03.png",
+    "color_count": 35,
+    "alpha_values": [
+      255
+    ],
+    "bbox": [
+      0,
+      0,
+      64,
+      64
+    ],
+    "palette": "records/vigrid_palette48.json",
+    "sha256": "f4482272addb4be695f7950ee5819be383f02273c09cc8b300d437cbecebc85e",
+    "checks": {
+      "exact_size": true,
+      "png_rgba": true,
+      "binary_alpha": true,
+      "palette_limit": true,
+      "transparent_margin_2px": null
+    },
+    "seam_metrics": {
+      "x": 2.026,
+      "y": 2.469,
+      "internal_x": 7.233,
+      "internal_y": 7.425
+    },
+    "mean_rgb": [
+      38.57,
+      32.42,
+      32.71
+    ]
+  },
+  {
+    "id": "cracked_lava",
+    "level": "vigrid",
+    "type": "ground",
+    "width": 64,
+    "height": 64,
+    "status": "candidate_pending_final_visual_review",
+    "candidate": "candidates/vigrid_cracked_lava_v03.png",
+    "color_count": 31,
+    "alpha_values": [
+      255
+    ],
+    "bbox": [
+      0,
+      0,
+      64,
+      64
+    ],
+    "palette": "records/vigrid_palette48.json",
+    "sha256": "431b8c1f0da72c6bfa7494ccd5e77bd3243bb5abb82467f5c069faec39891906",
+    "checks": {
+      "exact_size": true,
+      "png_rgba": true,
+      "binary_alpha": true,
+      "palette_limit": true,
+      "transparent_margin_2px": null
+    },
+    "seam_metrics": {
+      "x": 1.911,
+      "y": 2.167,
+      "internal_x": 5.13,
+      "internal_y": 5.372
+    },
+    "mean_rgb": [
+      38.88,
+      32.36,
+      32.78
+    ]
+  },
+  {
+    "id": "burnt_grass",
+    "level": "vigrid",
+    "type": "ground",
+    "width": 64,
+    "height": 64,
+    "status": "candidate_pending_final_visual_review",
+    "candidate": "candidates/vigrid_burnt_grass_v03.png",
+    "color_count": 30,
+    "alpha_values": [
+      255
+    ],
+    "bbox": [
+      0,
+      0,
+      64,
+      64
+    ],
+    "palette": "records/vigrid_palette48.json",
+    "sha256": "9bc757b58389e546c7971bd3866b10426de72f8c1873e881ee6dfeec7066e96a",
+    "checks": {
+      "exact_size": true,
+      "png_rgba": true,
+      "binary_alpha": true,
+      "palette_limit": true,
+      "transparent_margin_2px": null
+    },
+    "seam_metrics": {
+      "x": 2.068,
+      "y": 2.031,
+      "internal_x": 7.802,
+      "internal_y": 7.867
+    },
+    "mean_rgb": [
+      38.62,
+      32.48,
+      32.93
+    ]
+  },
+  {
+    "id": "broken_weapons",
+    "level": "vigrid",
+    "type": "props",
+    "width": 64,
+    "height": 64,
+    "status": "candidate_pending_final_visual_review",
+    "candidate": "candidates/vigrid_broken_weapons_v03.png",
+    "color_count": 45,
+    "alpha_values": [
+      0,
+      255
+    ],
+    "bbox": [
+      9,
+      2,
+      54,
+      62
+    ],
+    "palette": "records/vigrid_palette48.json",
+    "sha256": "b6738a06ea20217b11bab0abbfe491db1f2e91ce08aee5514bab247971086fa6",
+    "checks": {
+      "exact_size": true,
+      "png_rgba": true,
+      "binary_alpha": true,
+      "palette_limit": true,
+      "transparent_margin_2px": true
+    }
+  },
+  {
+    "id": "fallen_shield",
+    "level": "vigrid",
+    "type": "props",
+    "width": 48,
+    "height": 48,
+    "status": "candidate_pending_final_visual_review",
+    "candidate": "candidates/vigrid_fallen_shield_v03.png",
+    "color_count": 43,
+    "alpha_values": [
+      0,
+      255
+    ],
+    "bbox": [
+      2,
+      7,
+      46,
+      46
+    ],
+    "palette": "records/vigrid_palette48.json",
+    "sha256": "3dbd7b187ec23048ec1a9036b8f11078547125584965edd1e16bae91e7eae08d",
+    "checks": {
+      "exact_size": true,
+      "png_rgba": true,
+      "binary_alpha": true,
+      "palette_limit": true,
+      "transparent_margin_2px": true
+    }
+  },
+  {
+    "id": "giant_remains",
+    "level": "vigrid",
+    "type": "props",
+    "width": 96,
+    "height": 64,
+    "status": "candidate_pending_final_visual_review",
+    "candidate": "candidates/vigrid_giant_remains_v03.png",
+    "color_count": 44,
+    "alpha_values": [
+      0,
+      255
+    ],
+    "bbox": [
+      9,
+      2,
+      87,
+      62
+    ],
+    "palette": "records/vigrid_palette48.json",
+    "sha256": "74d992c73b1dcb9f48e86228c0061a0edf9b888e9011e76bd36391ec7f576e0e",
+    "checks": {
+      "exact_size": true,
+      "png_rgba": true,
+      "binary_alpha": true,
+      "palette_limit": true,
+      "transparent_margin_2px": true
+    }
+  },
+  {
+    "id": "burning_wreckage",
+    "level": "vigrid",
+    "type": "props",
+    "width": 96,
+    "height": 96,
+    "status": "candidate_pending_final_visual_review",
+    "candidate": "candidates/vigrid_burning_wreckage_v03.png",
+    "color_count": 46,
+    "alpha_values": [
+      0,
+      255
+    ],
+    "bbox": [
+      2,
+      7,
+      94,
+      94
+    ],
+    "palette": "records/vigrid_palette48.json",
+    "sha256": "1b7f59ad4e9b49752d189da8812fd1722c13d36088ed1bc24c582bf3d3e4a6ee",
+    "checks": {
+      "exact_size": true,
+      "png_rgba": true,
+      "binary_alpha": true,
+      "palette_limit": true,
+      "transparent_margin_2px": true
+    }
+  },
+  {
+    "id": "bifrost_fragment",
+    "level": "vigrid",
+    "type": "props",
+    "width": 96,
+    "height": 64,
+    "status": "candidate_pending_final_visual_review",
+    "candidate": "candidates/vigrid_bifrost_fragment_v03.png",
+    "color_count": 44,
+    "alpha_values": [
+      0,
+      255
+    ],
+    "bbox": [
+      10,
+      2,
+      85,
+      62
+    ],
+    "palette": "records/vigrid_palette48.json",
+    "sha256": "071dbe288ac550346ccb6a665b87c885a0281ed059295e61ba7ba5de56b333b5",
+    "checks": {
+      "exact_size": true,
+      "png_rgba": true,
+      "binary_alpha": true,
+      "palette_limit": true,
+      "transparent_margin_2px": true
+    }
+  }
+]

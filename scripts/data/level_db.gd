@@ -10,6 +10,7 @@ class_name LevelDB
 ##   map     固定地图：size 是场地大小（中心在原点，玩家从中心出发），玩家和敌人都不能离开
 ##           border 是四周屏障带的宽度（冰崖、冰海、松林），镜头看得到但走不进去
 ##           landmarks 地标：pos 中心、radius 范围；写了 quest 的地标，该支线就出现在这里
+##           layout 铺地面、摆物件的脚本（继承 MapLayer），没有就画网格
 
 const NORSE_1 := {
 	"name": "芬布尔之冬",
@@ -17,6 +18,7 @@ const NORSE_1 := {
 	"map": {
 		"size": Vector2(4608, 4608),
 		"border": 192.0,
+		"layout": "res://scripts/world/midgard_map.gd",
 		"landmarks": [
 			{"id": "crossroads", "name": "十字路口", "pos": Vector2(0, 0), "radius": 320.0},
 			{"id": "village", "name": "被雪掩埋的村庄", "pos": Vector2(-1350, -1250), "radius": 650.0, "quest": "bonfire"},
