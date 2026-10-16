@@ -17,26 +17,26 @@ const FAITH_MAX := 5
 const MAX_GODS := 3  # 一局最多信仰几位神（不算初始武器太刀）
 
 const UPGRADES := {
-	# ———— 人物基础武器：太刀（宫本武藏）————
+	# ———— 人物基础武器：太刀（剑士）————
 	"katana_damage": {"kind": "weapon", "character": "musashi", "god": "", "name": "太刀·锋利", "desc": "太刀伤害 +25%", "max": 5},
 	"katana_speed": {"kind": "weapon", "character": "musashi", "god": "", "name": "太刀·居合", "desc": "太刀挥砍间隔 -12%", "max": 4},
 	"katana_range": {"kind": "weapon", "character": "musashi", "god": "", "name": "太刀·长刃", "desc": "太刀攻击范围 +20%", "max": 3},
 	"katana_back": {"kind": "weapon", "character": "musashi", "god": "", "name": "太刀·回身斩", "desc": "挥砍时同时斩向身后", "max": 1},
 
-	# ———— 人物基础武器：左轮手枪（安妮·奥克利）————
+	# ———— 人物基础武器：左轮手枪（枪手）————
 	"revolver_damage": {"kind": "weapon", "character": "annie", "god": "", "name": "左轮·重弹", "desc": "子弹伤害 +25%", "max": 5},
 	"revolver_rate": {"kind": "weapon", "character": "annie", "god": "", "name": "左轮·快拔", "desc": "射击间隔 -12%", "max": 4},
 	"revolver_mag": {"kind": "weapon", "character": "annie", "god": "", "name": "左轮·扩容", "desc": "弹匣 +2 发，换弹时间 -10%", "max": 3},
 	"revolver_pierce": {"kind": "weapon", "character": "annie", "god": "", "name": "左轮·穿甲", "desc": "子弹穿透 +1", "max": 2},
 	"revolver_twin": {"kind": "weapon", "character": "annie", "god": "", "name": "左轮·双枪", "desc": "双手持枪，每次同时射出两发", "max": 1},
 
-	# ———— 人物基础武器：双刃（兰陵王）————
+	# ———— 人物基础武器：双刃（刺客）————
 	"blades_damage": {"kind": "weapon", "character": "lanling", "god": "", "name": "双刃·淬锋", "desc": "双刃伤害 +25%", "max": 5},
 	"blades_speed": {"kind": "weapon", "character": "lanling", "god": "", "name": "双刃·疾袭", "desc": "出手间隔 -12%", "max": 4},
 	"blades_reach": {"kind": "weapon", "character": "lanling", "god": "", "name": "双刃·突进", "desc": "攻击范围 +15%", "max": 3},
 	"blades_flurry": {"kind": "weapon", "character": "lanling", "god": "", "name": "双刃·三连刺", "desc": "每次出手对目标追加一击（50% 伤害）", "max": 1},
 
-	# ———— 人物基础武器：奥术新星（梅林）————
+	# ———— 人物基础武器：奥术新星（法师）————
 	"nova_damage": {"kind": "weapon", "character": "merlin", "god": "", "name": "新星·增幅", "desc": "新星伤害 +25%", "max": 5},
 	"nova_cooldown": {"kind": "weapon", "character": "merlin", "god": "", "name": "新星·吟唱", "desc": "新星间隔 -12%", "max": 4},
 	"nova_radius": {"kind": "weapon", "character": "merlin", "god": "", "name": "新星·扩散", "desc": "新星范围 +15%", "max": 3},

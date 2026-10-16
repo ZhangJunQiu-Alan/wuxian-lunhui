@@ -1,6 +1,6 @@
 class_name TwinBlades
 extends Node2D
-## 兰陵王的双刃：射程极短、出手极快的近身连刺，左右手交替
+## 刺客的双刃：射程极短、出手极快的近身连刺，左右手交替
 ## 被动「破阵」：身边每有 1 个敌人，伤害 +6%（最多 +60%）
 
 const SLASH_DURATION := 0.1

@@ -28,9 +28,9 @@ var regen := 0.0          # 每秒回复生命
 var dodge_chance := 0.0   # 闪避几率，0~1
 var rerolls := 0          # 本局还能重抽几次升级选项（主神空间购买）
 var revives := 0          # 本局还能复活几次（主神空间购买）
-var choice_count := 3     # 升级时有几个选项（梅林的被动「先知」是 4 个）
-var frenzy_time := 0.0    # 安妮「狂野西部秀」剩余时间
-var shield_time := 0.0    # 无敌剩余时间（兰陵王「入阵曲」），和受伤后的无敌不同，不会闪烁
+var choice_count := 3     # 升级时有几个选项（法师的被动「先知」是 4 个）
+var frenzy_time := 0.0    # 枪手「狂野西部秀」剩余时间
+var shield_time := 0.0    # 无敌剩余时间（刺客「入阵曲」），和受伤后的无敌不同，不会闪烁
 
 # 全局加成，所有武器和技能共享
 var damage_mult := 1.0
@@ -325,7 +325,7 @@ func _draw() -> void:
 	var hurt_blink := _invincible_time > 0.0 and int(_invincible_time * 20.0) % 2 == 0
 	if _fear_time > 0.0:  # 恐惧时头顶有紫色漩涡
 		draw_arc(Vector2(0, -RADIUS - 10), 7.0, _fear_time * 10.0, _fear_time * 10.0 + 4.5, 12, Color(0.75, 0.45, 1.0), 2.5)
-	if revolver and revolver.reload_progress() >= 0.0:  # 安妮换弹：头顶一圈进度
+	if revolver and revolver.reload_progress() >= 0.0:  # 枪手换弹：头顶一圈进度
 		draw_arc(Vector2(0, -RADIUS - 12), 6.0, -PI / 2, -PI / 2 + TAU * revolver.reload_progress(), 16, Revolver.COLOR, 3.0)
 	if _sprite:
 		_sprite.modulate = Color(0.3, 0.1, 0.12) if shield_time > 0.0 else (Color(1, 0.4, 0.4) if hurt_blink else Color.WHITE)

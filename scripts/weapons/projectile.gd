@@ -8,7 +8,7 @@ var damage := 10.0
 var pierce := 1
 var lifetime := 2.0
 var crit := false          # 暴击：伤害数字显示为金色
-var split_on_hit := false  # 命中后分裂成两发（安妮的纸牌神射）
+var split_on_hit := false  # 命中后分裂成两发（枪手的纸牌神射）
 var color := Color(0.55, 0.9, 1.0)
 var size := 1.0
 

@@ -15,7 +15,7 @@ var back_slash := false  # 回身斩：同时斩向身后
 var player: Player
 var _timer := 0.3
 var _slash_count := 0
-var _niten := false  # 这一刀是否触发了二天一流
+var _niten := false  # 这一刀是否触发了二刀流
 var _slash_time := 0.0
 var _slash_dirs: Array[Vector2] = []
 var _sweep_sign := 1.0  # 刀光扫动方向，每刀交替
@@ -45,7 +45,7 @@ func _slash(enemies: Array[Node], target: Enemy) -> void:
 	var aim := global_position.direction_to(target.global_position)
 	if aim == Vector2.ZERO:
 		aim = player.facing
-	# 宫本武藏的被动「二天一流」：每第 4 刀变为双刀斩，前后同时斩击，伤害翻倍
+	# 剑士的被动「二刀流」：每第 4 刀变为双刀斩，前后同时斩击，伤害翻倍
 	_slash_count += 1
 	_niten = _slash_count % 4 == 0
 	_slash_dirs = [aim]
@@ -82,7 +82,7 @@ func _nearest_in_reach(enemies: Array[Node]) -> Enemy:
 
 
 func _tint() -> Color:
-	return Color(1.0, 0.85, 0.45) if _niten else Color(0.8, 0.9, 1.0)  # 二天一流的刀光是金色
+	return Color(1.0, 0.85, 0.45) if _niten else Color(0.8, 0.9, 1.0)  # 二刀流的刀光是金色
 
 
 func _draw() -> void:

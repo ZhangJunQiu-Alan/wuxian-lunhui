@@ -21,17 +21,17 @@
 | Pixel Asset Studio / 本轮仅比较 | https://pixel-asset-studio.com/about/ | 页面说明免费、本地处理；本轮所读页面未明确写出输出所有权，沿用旧批次用户商用确认记录但不扩展为新的授权证明 | 2026-10-16 | 本轮暂不用于制作；不把免费或本地处理等同于明确授权 |
 | Pillow 11.1.0 / 本地 PNG 元数据检查与验收预览 | 已读安装包 LICENSE：`/opt/anaconda3/lib/python3.13/site-packages/pillow-11.1.0.dist-info/LICENSE`；https://pillow.readthedocs.io/en/stable/about.html#license | MIT-CMU，允许为任何目的免费使用、复制、修改与分发软件。仅作本地检查/预览，不提供第三方美术内容；作品权利不转移给工具 | 2026-10-16 | 已核查本地许可证；检查脚本为本项目原创，放在第 1 批 records/ |
 
-### 第 1 批宫本武藏：实际产出（进行中）
+### 第 1 批剑士（musashi）：实际产出（进行中）
 
 | 文件 / 范围 | 来源与工具 | 授权 / 所有权 | 来源链接 | 日期与凭证 |
 | --- | --- | --- | --- | --- |
-| source/batch01_musashi_2026-10-16/originals/（8 张原图） | 已登录的 Chrome ChatGPT 图像生成；站姿用既有北欧素材总览作画风参考，动作与特写均上传同一武藏参考 | OpenAI 内容所有权条款：在双方之间且在适用法律允许范围内，输出归用户；用于商业项目。不承诺纯 AI 内容必然获得版权保护 | https://openai.com/policies/terms-of-use/ | 2026-10-16；逐张会话与实际提示词见该批 manifest.json、records/ |
+| source/batch01_musashi_2026-10-16/originals/（8 张原图） | 已登录的 Chrome ChatGPT 图像生成；站姿用既有北欧素材总览作画风参考，动作与特写均上传同一剑士参考 | OpenAI 内容所有权条款：在双方之间且在适用法律允许范围内，输出归用户；用于商业项目。不承诺纯 AI 内容必然获得版权保护 | https://openai.com/policies/terms-of-use/ | 2026-10-16；逐张会话与实际提示词见该批 manifest.json、records/ |
 | source/batch01_musashi_2026-10-16/candidates/musashi_piskel_v01.png、.piskel | 上述站姿经 Piskel 导入、最近邻缩小、扩展画布及导出；只有候选，没有采用其颜色过多的版本 | Piskel 免费，用户保留作品全部权利；未使用网站示例素材 | https://www.piskelapp.com/terms/ | 2026-10-16；浏览器证据及实际 PNG 自检在该批 records/ |
 | sprites/characters/musashi.png、musashi_hurt.png、musashi_death.png、musashi_cutin.png；对应 approved/、previews/ | 上述自有 AI 原图经本地 Pillow 规范化、统一调色板、切帧与预览导出；脚本为项目原创 | 原图权利同上；Pillow MIT-CMU 不取得作品权利，允许商业目的使用。仅四项美术自检通过；idle/move 未通过，未放进最终目录 | https://pillow.readthedocs.io/en/stable/about.html#license | 2026-10-16；该批 manifest.json 记录哈希、颜色数、自检与非游戏验收边界 |
 
 ### 2026-10-16：第 1 批 Piskel 免费逐帧修复补记
 
-宫本武藏待机 v05、跑步 v06 在 Chrome 的 Piskel 免费网页编辑器中逐像素修正并导出 PNG、可编辑 .piskel 与 GIF；未使用 PixelLab API。沿用上文已核查的 Piskel 商用及输出权利条款。Pillow 仅用于读取导出文件、比对像素计划、切帧和生成最近邻预览/调整 GIF 计时。人工修正计划、失败候选、验证结果和网页截图均保存在 `source/batch01_musashi_2026-10-16/records/`。
+剑士待机 v05、跑步 v06 在 Chrome 的 Piskel 免费网页编辑器中逐像素修正并导出 PNG、可编辑 .piskel 与 GIF；未使用 PixelLab API。沿用上文已核查的 Piskel 商用及输出权利条款。Pillow 仅用于读取导出文件、比对像素计划、切帧和生成最近邻预览/调整 GIF 计时。人工修正计划、失败候选、验证结果和网页截图均保存在 `source/batch01_musashi_2026-10-16/records/`。
 
 ### 2026-10-16：第 2 批工具与原图补记
 
@@ -65,4 +65,4 @@
 
 ### 第7批 A/B 实际制作补记（2026-10-16）
 
-武藏及7种敌人攻击已完成美术自检，来源与工具逐项见 `source/batch07_combat_characters_2026-10-16/manifest.json`。后半B实际使用内置图像工具10次（4份初稿、3份紧凑姿势修正、2份落点修正、1份普通巨人第三帧修正），继续沿用本台账的OpenAI输出权利及商用条款；用户已明确批准路线变更。Chrome Piskel实际修帧工程及导出归档；Pillow仅用于尺寸、透明度、既有调色板、裁帧/排帧、预览和自检。输入参考均为项目已有或本批生成的原图，没有上传外部作品角色图。无注册、无付款、无收费API调用。
+剑士及7种敌人攻击已完成美术自检，来源与工具逐项见 `source/batch07_combat_characters_2026-10-16/manifest.json`。后半B实际使用内置图像工具10次（4份初稿、3份紧凑姿势修正、2份落点修正、1份普通巨人第三帧修正），继续沿用本台账的OpenAI输出权利及商用条款；用户已明确批准路线变更。Chrome Piskel实际修帧工程及导出归档；Pillow仅用于尺寸、透明度、既有调色板、裁帧/排帧、预览和自检。输入参考均为项目已有或本批生成的原图，没有上传外部作品角色图。无注册、无付款、无收费API调用。
