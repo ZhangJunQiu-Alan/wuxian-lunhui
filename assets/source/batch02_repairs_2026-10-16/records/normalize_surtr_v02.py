@@ -1,0 +1,9 @@
+from PIL import Image
+from pathlib import Path
+import json
+r=Path(__file__).resolve().parents[1]
+im=Image.open(r/'originals/surtr_repaired_raw_v02.png').convert('RGBA');im.putalpha(im.getchannel('A').point(lambda x:255 if x>=128 else 0));raw_box=im.getbbox();c=im.crop(raw_box);c.thumbnail((184,184),Image.Resampling.NEAREST)
+samples=[p[:3] for p in c.get_flattened_data() if p[3]];sample=Image.new('RGB',(len(samples),1));sample.putdata(samples);pal=sample.quantize(colors=48,method=Image.Quantize.MEDIANCUT,dither=Image.Dither.NONE);q=c.convert('RGB').quantize(palette=pal,dither=Image.Dither.NONE).convert('RGBA');q.putalpha(c.getchannel('A'));out=Image.new('RGBA',(192,192));out.alpha_composite(q,((192-q.width)//2,190-q.height));out.save(r/'candidates/surtr_v02.png')
+bg=Image.new('RGBA',out.size,'#121721');bg.alpha_composite(out);bg.resize((768,768),Image.Resampling.NEAREST).convert('RGB').save(r/'previews/surtr_4x_v02.png');bg.convert('RGB').save(r/'previews/surtr_1x_v02.png')
+meta={'id':'surtr','source':'originals/surtr_repaired_raw_v02.png','candidate':'candidates/surtr_v02.png','size':[192,192],'expected_final':'sprites/bosses/surtr.png','generation_url':'https://chatgpt.com/c/6ad13b09-f938-83e9-b649-32b928ad5cdf','prompt':'records/surtr_repair_prompt_v02.txt','references':['originals/surtr_repaired_raw_v01.png','assets/source/norse_pixel_2026-10-16/128/bosses/surtr.png'],'opaque_raw_bbox':raw_box,'normalization':'Pillow deterministic nearest sampling, alpha threshold 128, median-cut 48 colors with no dither, centered with baseline 189','bbox_exclusive':out.getbbox(),'colors':len(set(p[:3] for p in out.get_flattened_data() if p[3])),'visual_review':'pending'}
+(r/'records/surtr_metadata_v02.json').write_text(json.dumps(meta,ensure_ascii=False,indent=2)+'\n');print(json.dumps(meta,ensure_ascii=False))

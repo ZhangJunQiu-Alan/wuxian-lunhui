@@ -1,0 +1,86 @@
+[
+  {
+    "id": "jormungandr_head",
+    "source": "originals/jormungandr_head_v01.png",
+    "candidate": "candidates/jormungandr_head_v04.png",
+    "editable": "candidates/jormungandr_head_v04.piskel",
+    "size": [
+      128,
+      128
+    ],
+    "alpha": [
+      0,
+      255
+    ],
+    "colors": 48,
+    "bbox_exclusive": [
+      0,
+      8,
+      120,
+      108
+    ],
+    "edge_exception": "Left neck interface extends to x=0, aligned at local y=32..95.",
+    "method": "Chrome Piskel actual UI pixel edits; PNG exported and compared against saved pixel plan",
+    "sha256": "147c0b593f24bbe81719f52ac9d553fe9540ced163399a76aba44cd0b5006bfb",
+    "pixel_plan_diff_count": 0,
+    "connection_checks": "All RGBA port rows match; body left/right identical; visual 3x assembled and 4x4 repeating preview reviewed.",
+    "visual_one_x": "passed",
+    "visual_review_note": "Reviewed actual assembled export at 1x on dark background and nearest 3x, plus 4x4 body repeat. Continuous silhouette and scale rhythm; no v03 vertical bands."
+  },
+  {
+    "id": "jormungandr_body",
+    "source": "originals/jormungandr_body_v01.png",
+    "candidate": "candidates/jormungandr_body_v04.png",
+    "editable": "candidates/jormungandr_body_v04.piskel",
+    "size": [
+      64,
+      64
+    ],
+    "alpha": [
+      0,
+      255
+    ],
+    "colors": 42,
+    "bbox_exclusive": [
+      0,
+      8,
+      64,
+      46
+    ],
+    "edge_exception": "Left and right connection columns intentionally touch canvas edges.",
+    "method": "Chrome Piskel actual UI pixel edits; PNG exported and compared against saved pixel plan",
+    "sha256": "72df0600b5d9d4a19a9e6b72d8af097751109dd6807f6c9dc959a8082032b94c",
+    "pixel_plan_diff_count": 0,
+    "connection_checks": "All RGBA port rows match; body left/right identical; visual 3x assembled and 4x4 repeating preview reviewed.",
+    "visual_one_x": "passed",
+    "visual_review_note": "Reviewed actual assembled export at 1x on dark background and nearest 3x, plus 4x4 body repeat. Continuous silhouette and scale rhythm; no v03 vertical bands."
+  },
+  {
+    "id": "jormungandr_tail",
+    "source": "originals/jormungandr_tail_v01.png",
+    "candidate": "candidates/jormungandr_tail_v04.png",
+    "editable": "candidates/jormungandr_tail_v04.piskel",
+    "size": [
+      64,
+      64
+    ],
+    "alpha": [
+      0,
+      255
+    ],
+    "colors": 44,
+    "bbox_exclusive": [
+      2,
+      9,
+      64,
+      49
+    ],
+    "edge_exception": "Right root interface intentionally extends to x=63.",
+    "method": "Chrome Piskel actual UI pixel edits; PNG exported and compared against saved pixel plan",
+    "sha256": "02a5b4ddc3197735e27d0d2dbcdc10d71e1d8f12886351764f9c395dcd5c0936",
+    "pixel_plan_diff_count": 0,
+    "connection_checks": "All RGBA port rows match; body left/right identical; visual 3x assembled and 4x4 repeating preview reviewed.",
+    "visual_one_x": "passed",
+    "visual_review_note": "Reviewed actual assembled export at 1x on dark background and nearest 3x, plus 4x4 body repeat. Continuous silhouette and scale rhythm; no v03 vertical bands."
+  }
+]

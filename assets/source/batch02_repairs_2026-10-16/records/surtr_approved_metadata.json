@@ -1,0 +1,32 @@
+{
+  "id": "surtr",
+  "source": "originals/surtr_repaired_raw_v02.png",
+  "candidate": "candidates/surtr_v02.png",
+  "size": [
+    192,
+    192
+  ],
+  "expected_final": "sprites/bosses/surtr.png",
+  "generation_url": "https://chatgpt.com/c/6ad13b09-f938-83e9-b649-32b928ad5cdf",
+  "prompt": "records/surtr_repair_prompt_v02.txt",
+  "references": [
+    "originals/surtr_repaired_raw_v01.png",
+    "assets/source/norse_pixel_2026-10-16/128/bosses/surtr.png"
+  ],
+  "opaque_raw_bbox": [
+    182,
+    77,
+    1179,
+    1176
+  ],
+  "normalization": "Pillow deterministic nearest sampling, alpha threshold 128, median-cut 48 colors with no dither, centered with baseline 189",
+  "bbox_exclusive": [
+    12,
+    6,
+    179,
+    190
+  ],
+  "colors": 48,
+  "visual_review": "passed_actual_1x_and_nearest_4x",
+  "visual_review_note": "Both separated boots and soles clearly visible; full crown flame, cape ends and sword tip inside canvas; consistent helmet, magma armor and palette family; no ground/text/watermark."
+}

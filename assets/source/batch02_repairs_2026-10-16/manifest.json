@@ -1,0 +1,580 @@
+{
+  "batch": "batch02_repairs_2026-10-16",
+  "date": "2026-10-16",
+  "status": "complete_self_checked_pending_game_review",
+  "self_checked_assets": 10,
+  "pending_assets": 0,
+  "assets": [
+    {
+      "id": "frost_giant",
+      "candidate": "candidates/frost_giant_v01.png",
+      "size": [
+        96,
+        96
+      ],
+      "colors": 48,
+      "alpha": [
+        0,
+        255
+      ],
+      "bbox_exclusive": [
+        6,
+        7,
+        90,
+        94
+      ],
+      "baseline": 93,
+      "min_margin": 2,
+      "method": "Chrome Piskel nearest resize export",
+      "palette": "records/frost_palette_v01.json",
+      "source": "originals/frost_giant.png",
+      "expected_final": "sprites/enemies/frost_giant.png",
+      "visual_review": "passed_from_prior_recorded_1x_and_4x_review",
+      "approved_copy": "approved/frost_giant.png",
+      "sha256": "ba7bb0af917ec87e5dc77cbf15b10afc9582b9d28f69537135393f19196ede28",
+      "status": "self_check_passed_pending_game_review",
+      "final_copied": true,
+      "game_test": "not_performed",
+      "checks": {
+        "png_rgba": true,
+        "exact_size": true,
+        "alpha_binary": true,
+        "palette_at_most_48": true,
+        "one_x_visual_review": true,
+        "nearest_enlarged_visual_review": true,
+        "consistent_reference_style": true,
+        "no_text_watermark_ground_scene": true,
+        "outline_and_silhouette": "passed",
+        "margin": "at least 2 pixels",
+        "animation_and_loop": "not_applicable_static_repair",
+        "tile_seams": "not_applicable"
+      },
+      "frames": 1,
+      "generation_url": "https://chatgpt.com/c/6ad11665-759c-83e9-a994-1a414813925e",
+      "tools": [
+        "Chrome ChatGPT source generation",
+        "Chrome Piskel nearest export",
+        "Pillow deterministic normalization"
+      ],
+      "generation_record": "../norse_2026-10-16/manifest.json"
+    },
+    {
+      "id": "frost_giant_elite",
+      "candidate": "candidates/frost_giant_elite_v01.png",
+      "size": [
+        96,
+        96
+      ],
+      "colors": 48,
+      "alpha": [
+        0,
+        255
+      ],
+      "bbox_exclusive": [
+        3,
+        4,
+        92,
+        94
+      ],
+      "baseline": 93,
+      "min_margin": 2,
+      "method": "Chrome Piskel nearest resize export",
+      "palette": "records/frost_palette_v01.json",
+      "source": "originals/frost_giant_elite.png",
+      "expected_final": "sprites/enemies/frost_giant_elite.png",
+      "visual_review": "passed_from_prior_recorded_1x_and_4x_review",
+      "approved_copy": "approved/frost_giant_elite.png",
+      "sha256": "8461c2b1bc03ecd887db166d697972674ff436eedfcf9a5e927dd6e725b0129f",
+      "status": "self_check_passed_pending_game_review",
+      "final_copied": true,
+      "game_test": "not_performed",
+      "checks": {
+        "png_rgba": true,
+        "exact_size": true,
+        "alpha_binary": true,
+        "palette_at_most_48": true,
+        "one_x_visual_review": true,
+        "nearest_enlarged_visual_review": true,
+        "consistent_reference_style": true,
+        "no_text_watermark_ground_scene": true,
+        "outline_and_silhouette": "passed",
+        "margin": "at least 2 pixels",
+        "animation_and_loop": "not_applicable_static_repair",
+        "tile_seams": "not_applicable"
+      },
+      "frames": 1,
+      "generation_url": "https://chatgpt.com/c/6ad11660-1388-83e9-92f2-359736a91c18",
+      "tools": [
+        "Chrome ChatGPT source generation",
+        "Chrome Piskel nearest export",
+        "Pillow deterministic normalization"
+      ],
+      "generation_record": "../norse_2026-10-16/manifest.json"
+    },
+    {
+      "id": "fire_giant",
+      "candidate": "candidates/fire_giant_v01.png",
+      "size": [
+        96,
+        96
+      ],
+      "colors": 48,
+      "alpha": [
+        0,
+        255
+      ],
+      "bbox_exclusive": [
+        4,
+        4,
+        92,
+        94
+      ],
+      "baseline": 93,
+      "min_margin": 2,
+      "method": "Pillow deterministic nearest resize from archived high-resolution source",
+      "palette": "records/fire_palette_v01.json",
+      "source": "originals/fire_giant.png",
+      "expected_final": "sprites/enemies/fire_giant.png",
+      "visual_review": "passed_from_prior_recorded_1x_and_4x_review",
+      "approved_copy": "approved/fire_giant.png",
+      "sha256": "0a59ac1cb33fb98e1acfd0b0d68b1ad73d0084151689ef1af7f5a04e34d21e7a",
+      "status": "self_check_passed_pending_game_review",
+      "final_copied": true,
+      "game_test": "not_performed",
+      "checks": {
+        "png_rgba": true,
+        "exact_size": true,
+        "alpha_binary": true,
+        "palette_at_most_48": true,
+        "one_x_visual_review": true,
+        "nearest_enlarged_visual_review": true,
+        "consistent_reference_style": true,
+        "no_text_watermark_ground_scene": true,
+        "outline_and_silhouette": "passed",
+        "margin": "at least 2 pixels",
+        "animation_and_loop": "not_applicable_static_repair",
+        "tile_seams": "not_applicable"
+      },
+      "frames": 1,
+      "generation_url": "https://chatgpt.com/c/6ad1165e-973c-83e9-811c-c1dd9015314f",
+      "tools": [
+        "Chrome ChatGPT source generation",
+        "Pillow deterministic normalization"
+      ],
+      "generation_record": "../norse_2026-10-16/manifest.json"
+    },
+    {
+      "id": "frost_veteran",
+      "candidate": "candidates/frost_veteran_v01.png",
+      "size": [
+        96,
+        96
+      ],
+      "colors": 48,
+      "alpha": [
+        0,
+        255
+      ],
+      "bbox_exclusive": [
+        3,
+        2,
+        93,
+        94
+      ],
+      "baseline": 93,
+      "min_margin": 2,
+      "method": "Pillow deterministic nearest resize from archived high-resolution source",
+      "palette": "records/frost_palette_v01.json",
+      "source": "originals/frost_veteran.png",
+      "expected_final": "sprites/enemies/frost_veteran.png",
+      "visual_review": "passed_from_prior_recorded_1x_and_4x_review",
+      "approved_copy": "approved/frost_veteran.png",
+      "sha256": "6972714054f6181ee80249f0c5e42cac072e329a3bc063e04269ba00d9563e9c",
+      "status": "self_check_passed_pending_game_review",
+      "final_copied": true,
+      "game_test": "not_performed",
+      "checks": {
+        "png_rgba": true,
+        "exact_size": true,
+        "alpha_binary": true,
+        "palette_at_most_48": true,
+        "one_x_visual_review": true,
+        "nearest_enlarged_visual_review": true,
+        "consistent_reference_style": true,
+        "no_text_watermark_ground_scene": true,
+        "outline_and_silhouette": "passed",
+        "margin": "at least 2 pixels",
+        "animation_and_loop": "not_applicable_static_repair",
+        "tile_seams": "not_applicable"
+      },
+      "frames": 1,
+      "generation_url": "https://chatgpt.com/c/6ad11660-1388-83e9-92f2-359736a91c18",
+      "tools": [
+        "Chrome ChatGPT source generation",
+        "Pillow deterministic normalization"
+      ],
+      "generation_record": "../norse_2026-10-16/manifest.json"
+    },
+    {
+      "id": "hrym",
+      "candidate": "candidates/hrym_v01.png",
+      "size": [
+        192,
+        192
+      ],
+      "colors": 48,
+      "alpha": [
+        0,
+        255
+      ],
+      "bbox_exclusive": [
+        5,
+        6,
+        186,
+        190
+      ],
+      "baseline": 189,
+      "min_margin": 2,
+      "method": "Pillow deterministic nearest resize from archived high-resolution source",
+      "palette": "records/frost_palette_v01.json",
+      "source": "originals/hrym.png",
+      "expected_final": "sprites/bosses/hrym.png",
+      "visual_review": "passed_from_prior_recorded_1x_and_4x_review",
+      "approved_copy": "approved/hrym.png",
+      "sha256": "5134bcccf2690fcaaf1e3c6eadb8e5d772791878611a237442e985dd8f7fbe04",
+      "status": "self_check_passed_pending_game_review",
+      "final_copied": true,
+      "game_test": "not_performed",
+      "checks": {
+        "png_rgba": true,
+        "exact_size": true,
+        "alpha_binary": true,
+        "palette_at_most_48": true,
+        "one_x_visual_review": true,
+        "nearest_enlarged_visual_review": true,
+        "consistent_reference_style": true,
+        "no_text_watermark_ground_scene": true,
+        "outline_and_silhouette": "passed",
+        "margin": "at least 2 pixels",
+        "animation_and_loop": "not_applicable_static_repair",
+        "tile_seams": "not_applicable"
+      },
+      "frames": 1,
+      "generation_url": "https://chatgpt.com/c/6ad1165e-973c-83e9-811c-c1dd9015314f",
+      "tools": [
+        "Chrome ChatGPT source generation",
+        "Pillow deterministic normalization"
+      ],
+      "generation_record": "../norse_2026-10-16/manifest.json"
+    },
+    {
+      "id": "fenrir",
+      "candidate": "candidates/fenrir_v01.png",
+      "size": [
+        192,
+        192
+      ],
+      "colors": 48,
+      "alpha": [
+        0,
+        255
+      ],
+      "bbox_exclusive": [
+        3,
+        3,
+        188,
+        190
+      ],
+      "baseline": 189,
+      "min_margin": 2,
+      "method": "Pillow deterministic nearest resize from archived high-resolution source",
+      "palette": "records/fenrir_palette_v01.json",
+      "source": "originals/fenrir.png",
+      "expected_final": "sprites/bosses/fenrir.png",
+      "visual_review": "passed_from_prior_recorded_1x_and_4x_review",
+      "approved_copy": "approved/fenrir.png",
+      "sha256": "bcc4676a2d9526817aed6a43429e5b5fc5123004378fda9687d37bbbf14159da",
+      "status": "self_check_passed_pending_game_review",
+      "final_copied": true,
+      "game_test": "not_performed",
+      "checks": {
+        "png_rgba": true,
+        "exact_size": true,
+        "alpha_binary": true,
+        "palette_at_most_48": true,
+        "one_x_visual_review": true,
+        "nearest_enlarged_visual_review": true,
+        "consistent_reference_style": true,
+        "no_text_watermark_ground_scene": true,
+        "outline_and_silhouette": "passed",
+        "margin": "at least 2 pixels",
+        "animation_and_loop": "not_applicable_static_repair",
+        "tile_seams": "not_applicable"
+      },
+      "frames": 1,
+      "generation_url": "https://chatgpt.com/c/6ad1165e-973c-83e9-811c-c1dd9015314f",
+      "tools": [
+        "Chrome ChatGPT source generation",
+        "Pillow deterministic normalization"
+      ],
+      "generation_record": "../norse_2026-10-16/manifest.json"
+    },
+    {
+      "id": "jormungandr_head",
+      "source": "originals/jormungandr_head_v01.png",
+      "candidate": "candidates/jormungandr_head_v04.png",
+      "editable": "candidates/jormungandr_head_v04.piskel",
+      "size": [
+        128,
+        128
+      ],
+      "alpha": [
+        0,
+        255
+      ],
+      "colors": 48,
+      "bbox_exclusive": [
+        0,
+        8,
+        120,
+        108
+      ],
+      "edge_exception": "Left neck interface extends to x=0, aligned at local y=32..95.",
+      "method": "Chrome Piskel actual UI pixel edits; PNG exported and compared against saved pixel plan",
+      "sha256": "147c0b593f24bbe81719f52ac9d553fe9540ced163399a76aba44cd0b5006bfb",
+      "pixel_plan_diff_count": 0,
+      "connection_checks": "All RGBA port rows match; body left/right identical; visual 3x assembled and 4x4 repeating preview reviewed.",
+      "visual_one_x": "passed",
+      "visual_review_note": "Reviewed actual assembled export at 1x on dark background and nearest 3x, plus 4x4 body repeat. Continuous silhouette and scale rhythm; no v03 vertical bands.",
+      "expected_final": "sprites/bosses/jormungandr_head.png",
+      "visual_review": "passed_1x_3x_and_repeat",
+      "approved_copy": "approved/jormungandr_head.png",
+      "status": "self_check_passed_pending_game_review",
+      "final_copied": true,
+      "game_test": "not_performed",
+      "checks": {
+        "png_rgba": true,
+        "exact_size": true,
+        "alpha_binary": true,
+        "palette_at_most_48": true,
+        "one_x_visual_review": true,
+        "nearest_enlarged_visual_review": true,
+        "consistent_reference_style": true,
+        "no_text_watermark_ground_scene": true,
+        "outline_and_silhouette": "passed",
+        "margin": "connection-edge exception documented",
+        "animation_and_loop": "not_applicable_static_repair",
+        "tile_seams": "head-body-tail ports and repeated body visually checked"
+      },
+      "frames": 1,
+      "generation_url": "https://chatgpt.com/c/6ad13887-bd74-83ea-ac8e-d4856d77d773",
+      "tools": [
+        "Chrome ChatGPT",
+        "Chrome Piskel",
+        "Pillow preview and pixel QA"
+      ],
+      "generation_record": "records/segment_generation_records.json"
+    },
+    {
+      "id": "jormungandr_body",
+      "source": "originals/jormungandr_body_v01.png",
+      "candidate": "candidates/jormungandr_body_v04.png",
+      "editable": "candidates/jormungandr_body_v04.piskel",
+      "size": [
+        64,
+        64
+      ],
+      "alpha": [
+        0,
+        255
+      ],
+      "colors": 42,
+      "bbox_exclusive": [
+        0,
+        8,
+        64,
+        46
+      ],
+      "edge_exception": "Left and right connection columns intentionally touch canvas edges.",
+      "method": "Chrome Piskel actual UI pixel edits; PNG exported and compared against saved pixel plan",
+      "sha256": "72df0600b5d9d4a19a9e6b72d8af097751109dd6807f6c9dc959a8082032b94c",
+      "pixel_plan_diff_count": 0,
+      "connection_checks": "All RGBA port rows match; body left/right identical; visual 3x assembled and 4x4 repeating preview reviewed.",
+      "visual_one_x": "passed",
+      "visual_review_note": "Reviewed actual assembled export at 1x on dark background and nearest 3x, plus 4x4 body repeat. Continuous silhouette and scale rhythm; no v03 vertical bands.",
+      "expected_final": "sprites/bosses/jormungandr_body.png",
+      "visual_review": "passed_1x_3x_and_repeat",
+      "approved_copy": "approved/jormungandr_body.png",
+      "status": "self_check_passed_pending_game_review",
+      "final_copied": true,
+      "game_test": "not_performed",
+      "checks": {
+        "png_rgba": true,
+        "exact_size": true,
+        "alpha_binary": true,
+        "palette_at_most_48": true,
+        "one_x_visual_review": true,
+        "nearest_enlarged_visual_review": true,
+        "consistent_reference_style": true,
+        "no_text_watermark_ground_scene": true,
+        "outline_and_silhouette": "passed",
+        "margin": "connection-edge exception documented",
+        "animation_and_loop": "not_applicable_static_repair",
+        "tile_seams": "head-body-tail ports and repeated body visually checked"
+      },
+      "frames": 1,
+      "generation_url": "https://chatgpt.com/c/6ad13892-9774-83ea-affd-468606469dc8",
+      "tools": [
+        "Chrome ChatGPT",
+        "Chrome Piskel",
+        "Pillow preview and pixel QA"
+      ],
+      "generation_record": "records/segment_generation_records.json"
+    },
+    {
+      "id": "jormungandr_tail",
+      "source": "originals/jormungandr_tail_v01.png",
+      "candidate": "candidates/jormungandr_tail_v04.png",
+      "editable": "candidates/jormungandr_tail_v04.piskel",
+      "size": [
+        64,
+        64
+      ],
+      "alpha": [
+        0,
+        255
+      ],
+      "colors": 44,
+      "bbox_exclusive": [
+        2,
+        9,
+        64,
+        49
+      ],
+      "edge_exception": "Right root interface intentionally extends to x=63.",
+      "method": "Chrome Piskel actual UI pixel edits; PNG exported and compared against saved pixel plan",
+      "sha256": "02a5b4ddc3197735e27d0d2dbcdc10d71e1d8f12886351764f9c395dcd5c0936",
+      "pixel_plan_diff_count": 0,
+      "connection_checks": "All RGBA port rows match; body left/right identical; visual 3x assembled and 4x4 repeating preview reviewed.",
+      "visual_one_x": "passed",
+      "visual_review_note": "Reviewed actual assembled export at 1x on dark background and nearest 3x, plus 4x4 body repeat. Continuous silhouette and scale rhythm; no v03 vertical bands.",
+      "expected_final": "sprites/bosses/jormungandr_tail.png",
+      "visual_review": "passed_1x_3x_and_repeat",
+      "approved_copy": "approved/jormungandr_tail.png",
+      "status": "self_check_passed_pending_game_review",
+      "final_copied": true,
+      "game_test": "not_performed",
+      "checks": {
+        "png_rgba": true,
+        "exact_size": true,
+        "alpha_binary": true,
+        "palette_at_most_48": true,
+        "one_x_visual_review": true,
+        "nearest_enlarged_visual_review": true,
+        "consistent_reference_style": true,
+        "no_text_watermark_ground_scene": true,
+        "outline_and_silhouette": "passed",
+        "margin": "connection-edge exception documented",
+        "animation_and_loop": "not_applicable_static_repair",
+        "tile_seams": "head-body-tail ports and repeated body visually checked"
+      },
+      "frames": 1,
+      "generation_url": "https://chatgpt.com/c/6ad13894-da4c-83e9-8753-dcd74eb966ac",
+      "tools": [
+        "Chrome ChatGPT",
+        "Chrome Piskel",
+        "Pillow preview and pixel QA"
+      ],
+      "generation_record": "records/segment_generation_records.json"
+    },
+    {
+      "id": "surtr",
+      "source": "originals/surtr_repaired_raw_v02.png",
+      "candidate": "candidates/surtr_v02.png",
+      "size": [
+        192,
+        192
+      ],
+      "expected_final": "sprites/bosses/surtr.png",
+      "generation_url": "https://chatgpt.com/c/6ad13b09-f938-83e9-b649-32b928ad5cdf",
+      "prompt": "records/surtr_repair_prompt_v02.txt",
+      "references": [
+        "originals/surtr_repaired_raw_v01.png",
+        "assets/source/norse_pixel_2026-10-16/128/bosses/surtr.png"
+      ],
+      "opaque_raw_bbox": [
+        182,
+        77,
+        1179,
+        1176
+      ],
+      "normalization": "Pillow deterministic nearest sampling, alpha threshold 128, median-cut 48 colors with no dither, centered with baseline 189",
+      "bbox_exclusive": [
+        12,
+        6,
+        179,
+        190
+      ],
+      "colors": 48,
+      "visual_review": "passed_actual_1x_and_nearest_4x",
+      "visual_review_note": "Both separated boots and soles clearly visible; full crown flame, cape ends and sword tip inside canvas; consistent helmet, magma armor and palette family; no ground/text/watermark.",
+      "alpha": [
+        0,
+        255
+      ],
+      "approved_copy": "approved/surtr.png",
+      "sha256": "f5f705f6953e95ba014521ac47ae2f05b251e43bbea72ed7f30c6b68f3ec618d",
+      "status": "self_check_passed_pending_game_review",
+      "final_copied": true,
+      "game_test": "not_performed",
+      "checks": {
+        "png_rgba": true,
+        "exact_size": true,
+        "alpha_binary": true,
+        "palette_at_most_48": true,
+        "one_x_visual_review": true,
+        "nearest_enlarged_visual_review": true,
+        "consistent_reference_style": true,
+        "no_text_watermark_ground_scene": true,
+        "outline_and_silhouette": "passed",
+        "margin": "at least 2 pixels",
+        "animation_and_loop": "not_applicable_static_repair",
+        "tile_seams": "not_applicable"
+      },
+      "frames": 1,
+      "tools": [
+        "Chrome ChatGPT source generation",
+        "Pillow deterministic normalization"
+      ],
+      "generation_record": "records/surtr_repair_prompt_v02.txt"
+    }
+  ],
+  "preview_gif": {
+    "file": "previews/static_review_slideshow.gif",
+    "type": "static_asset_slideshow_not_character_animation",
+    "duration_per_slide_ms": 1000
+  },
+  "snake_assembly": "previews/jormungandr_assembled_v04.png",
+  "snake_body_4x4": "previews/jormungandr_body_4x4_v04.png",
+  "terrain_4x4": "not_applicable_no_terrain_in_batch_2",
+  "game_test": "not_performed",
+  "batch_order": {
+    "1": "complete_self_checked_pending_game_review",
+    "2": "complete_self_checked_pending_game_review",
+    "3": "not_started",
+    "4": "not_started",
+    "5": "not_started",
+    "6": "not_started"
+  },
+  "rejected_candidates": [
+    {
+      "id": "jormungandr_v02_v03",
+      "reason": "Color selection first-stroke errors; v02 tail coordinate offset; v03 visible vertical bands. Replaced by actual v04 Piskel export with zero pixel differences."
+    },
+    {
+      "id": "surtr_v01",
+      "reason": "Right boot occluded by giant sword; retained as rejected candidate."
+    }
+  ],
+  "chrome_recovery": "Mac unlocked; normal Chrome restart restored automatic connection. Local v03 backups reimported; full v04 plan applied and checked."
+}

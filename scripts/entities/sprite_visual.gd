@@ -6,6 +6,7 @@ class_name SpriteVisual
 ##   draugr_move.png   横向帧条：每帧是正方形，从左到右排列（4 帧 64×64 就是 256×64），自动切帧播放
 ##   draugr.png        静态图片
 ## 所以美术只要把文件按名字放进对应文件夹，不需要改任何代码
+## 玩家角色另有多动作约定：<id>_idle / _move / _hurt / _death.png，见 create_actions()
 ##
 ## 像素画只按整数倍缩放（1 倍、2 倍……），缩成 0.7 倍这种会丢像素、变糊
 ## 静态图片没有帧动画时，用 animate() 做程序动画：走路上下颠、左右轻摆、轻微挤压
@@ -42,7 +43,8 @@ static func create(base_path: String, height: float) -> Node2D:
 			node = anim
 		elif res is Texture2D and ext == "_move.png":
 			var anim := AnimatedSprite2D.new()
-			anim.sprite_frames = _frames_from_strip(res)
+			anim.sprite_frames = SpriteFrames.new()
+			_add_strip(anim.sprite_frames, &"default", res, true)
 			anim.play(&"default")
 			anim.frame = randi() % anim.sprite_frames.get_frame_count(&"default")  # 随机起始帧，怪物步伐错开
 			tex_height = res.get_height()
@@ -60,17 +62,42 @@ static func create(base_path: String, height: float) -> Node2D:
 	return null
 
 
-## 把横向帧条切成一帧一帧
-static func _frames_from_strip(strip: Texture2D) -> SpriteFrames:
-	var size := strip.get_height()
+## 角色动作：<base>_<动作>.png 每个都是一条横向帧条，合成一个带多个动画的 AnimatedSprite2D
+## actions 是 动作名 -> 是否循环，例如 {"idle": true, "move": true, "hurt": false, "death": false}
+## 至少要有 idle 或 move 才返回节点，否则返回 null（这时改用 create() 的静态图）
+static func create_actions(base_path: String, height: float, actions: Dictionary) -> AnimatedSprite2D:
 	var frames := SpriteFrames.new()
-	frames.set_animation_speed(&"default", STRIP_FPS)
+	frames.remove_animation(&"default")
+	var tex_height := 1.0
+	for action: String in actions:
+		var path := "%s_%s.png" % [base_path, action]
+		if not ResourceLoader.exists(path):
+			continue
+		var strip: Texture2D = load(path)
+		_add_strip(frames, action, strip, actions[action])
+		tex_height = strip.get_height()
+	if not (frames.has_animation(&"idle") or frames.has_animation(&"move")):
+		return null
+	var anim := AnimatedSprite2D.new()
+	anim.sprite_frames = frames
+	anim.play(&"idle" if frames.has_animation(&"idle") else &"move")
+	anim.scale = Vector2.ONE * maxf(1.0, roundf(height / tex_height))
+	anim.set_meta("base_scale", anim.scale)
+	return anim
+
+
+## 把横向帧条切成一帧一帧（每帧是正方形），加成 frames 里名为 anim_name 的动画
+static func _add_strip(frames: SpriteFrames, anim_name: StringName, strip: Texture2D, loop: bool) -> void:
+	var size := strip.get_height()
+	if not frames.has_animation(anim_name):
+		frames.add_animation(anim_name)
+	frames.set_animation_speed(anim_name, STRIP_FPS)
+	frames.set_animation_loop(anim_name, loop)
 	for i in strip.get_width() / size:
 		var frame := AtlasTexture.new()
 		frame.atlas = strip
 		frame.region = Rect2(i * size, 0, size, size)
-		frames.add_frame(&"default", frame)
-	return frames
+		frames.add_frame(anim_name, frame)
 
 
 ## 程序动画。t 是累计时间，amount 是动作幅度（0 = 静止，1 = 全速移动）

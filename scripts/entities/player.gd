@@ -13,6 +13,7 @@ signal ult_cast(character_id: String)
 const SPRITE_HEIGHT := 48.0
 const RADIUS := 14.0
 const INVINCIBLE_DURATION := 0.5  # 受伤后的无敌时间，防止一瞬间被怪群秒杀
+const ACTIONS := {"idle": true, "move": true, "hurt": false, "death": false}  # 动作素材：是否循环
 
 var character_id := CharacterDB.DEFAULT_ID
 var data: Dictionary  # 角色数据（CharacterDB 里的一项）
@@ -65,6 +66,8 @@ var _fear_time := 0.0  # 恐惧：不受控制地远离 _fear_from
 var _fear_from := Vector2.ZERO
 var _camera: Camera2D
 var _sprite: Node2D
+var _actions: AnimatedSprite2D  # 有多动作素材时就是 _sprite，否则为 null
+var _hurt_time := 0.0  # 受击动作剩余时间
 var _shake_strength := 0.0
 var _shake_time := 0.0
 
@@ -90,8 +93,9 @@ func _ready() -> void:
 	if character_id == "merlin":
 		choice_count = 4  # 先知
 
-	# 素材：assets/sprites/characters/<角色id>.png（或 _move.png 帧条）
-	_sprite = SpriteVisual.create(CharacterDB.CUTIN_DIR + character_id, SPRITE_HEIGHT)
+	# 素材：assets/sprites/characters/<角色id>_idle/_move/_hurt/_death.png 动作帧条，没有就用 <角色id>.png
+	_actions = SpriteVisual.create_actions(CharacterDB.CUTIN_DIR + character_id, SPRITE_HEIGHT, ACTIONS)
+	_sprite = _actions if _actions else SpriteVisual.create(CharacterDB.CUTIN_DIR + character_id, SPRITE_HEIGHT)
 	if _sprite:
 		add_child(_sprite)
 
@@ -130,6 +134,7 @@ func _physics_process(delta: float) -> void:
 		heal(regen * delta)
 	_invincible_time = maxf(0.0, _invincible_time - delta)
 	_tick_timers(delta)
+	_update_action(dir)
 	_update_shake(delta)
 	queue_redraw()
 
@@ -137,6 +142,41 @@ func _physics_process(delta: float) -> void:
 func _tick_timers(delta: float) -> void:
 	frenzy_time = maxf(0.0, frenzy_time - delta)
 	shield_time = maxf(0.0, shield_time - delta)
+	_hurt_time = maxf(0.0, _hurt_time - delta)
+
+
+## 按状态切换动作：受击 > 跑步 > 待机
+func _update_action(dir: Vector2) -> void:
+	if not _actions:
+		return
+	var action := &"idle"
+	if _hurt_time > 0.0:
+		action = &"hurt"
+	elif dir != Vector2.ZERO:
+		action = &"move"
+	if not _actions.sprite_frames.has_animation(action):
+		action = &"move" if action == &"idle" else &"idle"
+		if not _actions.sprite_frames.has_animation(action):
+			return
+	if _actions.animation != action:
+		_actions.play(action)
+
+
+## 倒地动作的时长（秒），没有倒地素材时为 0
+func death_duration() -> float:
+	if not (_actions and _actions.sprite_frames.has_animation(&"death")):
+		return 0.0
+	var frames := _actions.sprite_frames
+	return frames.get_frame_count(&"death") / frames.get_animation_speed(&"death")
+
+
+## 播放倒地动作。游戏会在玩家死亡时暂停，所以让精灵在暂停时也继续播放
+func play_death() -> void:
+	if death_duration() <= 0.0:
+		return
+	_actions.process_mode = Node.PROCESS_MODE_ALWAYS
+	_actions.modulate = Color.WHITE
+	_actions.play(&"death")
 
 
 func _unhandled_input(event: InputEvent) -> void:
@@ -194,6 +234,7 @@ func take_damage(amount: float) -> void:
 	if randf() < dodge_chance:
 		return
 	hp = maxf(0.0, hp - amount)
+	_hurt_time = 0.25
 	shake(4.0, 0.15)
 	hp_changed.emit(hp, max_hp)
 	if hp <= 0.0:
@@ -205,6 +246,9 @@ func take_damage(amount: float) -> void:
 func revive() -> void:
 	revives -= 1
 	is_dead = false
+	if _actions:
+		_actions.process_mode = Node.PROCESS_MODE_INHERIT
+		_actions.play(&"idle")
 	hp = max_hp * 0.5
 	_invincible_time = 2.0
 	hp_changed.emit(hp, max_hp)

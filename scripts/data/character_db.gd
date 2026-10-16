@@ -5,7 +5,7 @@ class_name CharacterDB
 ##   unlock         解锁方式：none = 初始可用；clears = 通关次数；quests = 累计完成支线数；story = 花费支线剧情点
 ##   cutin_moment   大招特写上显示的「最璀璨的时刻」
 ##   cutin_line     大招台词（用 \n 换行）
-##   素材：assets/sprites/characters/<id>.png（或 _move.png 帧条），特写立绘 <id>_cutin.png
+##   素材：assets/sprites/characters/<id>_idle/_move/_hurt/_death.png 动作帧条（没有就用 <id>.png），特写立绘 <id>_cutin.png
 
 const CUTIN_DIR := "res://assets/sprites/characters/"
 const DEFAULT_ID := "musashi"

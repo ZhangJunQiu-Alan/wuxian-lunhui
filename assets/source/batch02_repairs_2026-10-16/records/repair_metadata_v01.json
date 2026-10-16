@@ -1,0 +1,140 @@
+[
+  {
+    "id": "frost_giant",
+    "candidate": "candidates/frost_giant_v01.png",
+    "size": [
+      96,
+      96
+    ],
+    "colors": 48,
+    "alpha": [
+      0,
+      255
+    ],
+    "bbox_exclusive": [
+      6,
+      7,
+      90,
+      94
+    ],
+    "baseline": 93,
+    "min_margin": 2,
+    "method": "Chrome Piskel nearest resize export",
+    "palette": "records/frost_palette_v01.json"
+  },
+  {
+    "id": "frost_giant_elite",
+    "candidate": "candidates/frost_giant_elite_v01.png",
+    "size": [
+      96,
+      96
+    ],
+    "colors": 48,
+    "alpha": [
+      0,
+      255
+    ],
+    "bbox_exclusive": [
+      3,
+      4,
+      92,
+      94
+    ],
+    "baseline": 93,
+    "min_margin": 2,
+    "method": "Chrome Piskel nearest resize export",
+    "palette": "records/frost_palette_v01.json"
+  },
+  {
+    "id": "fire_giant",
+    "candidate": "candidates/fire_giant_v01.png",
+    "size": [
+      96,
+      96
+    ],
+    "colors": 48,
+    "alpha": [
+      0,
+      255
+    ],
+    "bbox_exclusive": [
+      4,
+      4,
+      92,
+      94
+    ],
+    "baseline": 93,
+    "min_margin": 2,
+    "method": "Pillow deterministic nearest resize from archived high-resolution source",
+    "palette": "records/fire_palette_v01.json"
+  },
+  {
+    "id": "frost_veteran",
+    "candidate": "candidates/frost_veteran_v01.png",
+    "size": [
+      96,
+      96
+    ],
+    "colors": 48,
+    "alpha": [
+      0,
+      255
+    ],
+    "bbox_exclusive": [
+      3,
+      2,
+      93,
+      94
+    ],
+    "baseline": 93,
+    "min_margin": 2,
+    "method": "Pillow deterministic nearest resize from archived high-resolution source",
+    "palette": "records/frost_palette_v01.json"
+  },
+  {
+    "id": "hrym",
+    "candidate": "candidates/hrym_v01.png",
+    "size": [
+      192,
+      192
+    ],
+    "colors": 48,
+    "alpha": [
+      0,
+      255
+    ],
+    "bbox_exclusive": [
+      5,
+      6,
+      186,
+      190
+    ],
+    "baseline": 189,
+    "min_margin": 2,
+    "method": "Pillow deterministic nearest resize from archived high-resolution source",
+    "palette": "records/frost_palette_v01.json"
+  },
+  {
+    "id": "fenrir",
+    "candidate": "candidates/fenrir_v01.png",
+    "size": [
+      192,
+      192
+    ],
+    "colors": 48,
+    "alpha": [
+      0,
+      255
+    ],
+    "bbox_exclusive": [
+      3,
+      3,
+      188,
+      190
+    ],
+    "baseline": 189,
+    "min_margin": 2,
+    "method": "Pillow deterministic nearest resize from archived high-resolution source",
+    "palette": "records/fenrir_palette_v01.json"
+  }
+]

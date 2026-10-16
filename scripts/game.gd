@@ -305,6 +305,10 @@ func _on_player_died() -> void:
 		hud.announce("【主神】主神的眷顾：复活！")
 		return
 	get_tree().paused = true
+	player.play_death()  # 画面定格，只有玩家播完倒地动作再结算
+	var delay := player.death_duration()
+	if delay > 0.0:
+		await get_tree().create_timer(delay + 0.4).timeout
 	hud.show_game_over(elapsed, kills, player.level, _finish_run(false))
 
 
