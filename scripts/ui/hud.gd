@@ -187,7 +187,7 @@ func set_ult(energy: float, cost: float) -> void:
 	var is_full := energy >= cost
 	_ult_bar.modulate = Color(1.0, 0.85, 0.3) if is_full else Color(0.55, 0.65, 1.0)
 	var ult_name: String = CharacterDB.ALL[character_id].ult_name
-	_ult_label.text = (ult_name + " 已就绪  [空格]") if is_full else ult_name
+	_ult_label.text = (ult_name + " 已就绪  [E]") if is_full else ult_name
 	_ult_label.modulate = Color(1.0, 0.85, 0.3) if is_full else Color(1, 1, 1, 0.6)
 
 

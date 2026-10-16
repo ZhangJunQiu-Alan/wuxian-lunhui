@@ -15,6 +15,10 @@ const RADIUS := 14.0
 const INVINCIBLE_DURATION := 0.5  # 受伤后的无敌时间，防止一瞬间被怪群秒杀
 const ACTIONS := {"idle": true, "move": true, "attack": false, "hurt": false, "death": false}  # 动作素材：是否循环
 const ATTACK_POSE := 0.2  # 没有出招素材时，程序前冲动作的时长
+const DASH_DISTANCE := 150.0
+const DASH_COOLDOWN := 2.0
+const DASH_INVINCIBLE := 0.2  # 闪现落地后短暂无敌，可以穿过怪群和弹幕
+const DASH_GHOSTS := 4  # 沿途留下几个残影
 
 var character_id := CharacterDB.DEFAULT_ID
 var data: Dictionary  # 角色数据（CharacterDB 里的一项）
@@ -44,7 +48,7 @@ var xp_to_next := 5
 var is_dead := false
 var facing := Vector2.RIGHT  # 最后移动的方向
 
-# 大招：击杀充能，满了按空格释放
+# 大招：击杀充能，满了按 E 释放
 var ult_energy := 0.0
 var ult_cost := 50.0
 
@@ -66,6 +70,8 @@ var feathers: FeatherOrbit
 var _invincible_time := 0.0
 var _fear_time := 0.0  # 恐惧：不受控制地远离 _fear_from
 var _fear_from := Vector2.ZERO
+var _dash_cooldown := 0.0
+var _dash_time := 0.0  # 闪现无敌剩余时间
 var _camera: Camera2D
 var _sprite: Node2D
 var _actions: AnimatedSprite2D  # 有多动作素材时就是 _sprite，否则为 null
@@ -155,6 +161,8 @@ func _tick_timers(delta: float) -> void:
 	shield_time = maxf(0.0, shield_time - delta)
 	_hurt_time = maxf(0.0, _hurt_time - delta)
 	_attack_time = maxf(0.0, _attack_time - delta)
+	_dash_cooldown = maxf(0.0, _dash_cooldown - delta)
+	_dash_time = maxf(0.0, _dash_time - delta)
 
 
 ## 武器出招时调用：转向出招方向；有 <角色id>_attack.png 就播放，否则身体朝出招方向前冲一下
@@ -228,8 +236,42 @@ func play_death() -> void:
 
 func _unhandled_input(event: InputEvent) -> void:
 	var key := event as InputEventKey
-	if key and key.pressed and not key.echo and key.keycode == KEY_SPACE:
+	if not (key and key.pressed and not key.echo):
+		return
+	if key.keycode == KEY_SPACE:
+		try_dash()
+	elif key.keycode == KEY_E:
 		try_ultimate()
+
+
+## 闪现：往移动方向瞬移一段距离，可以穿过怪物和物件，但出不了地图
+func try_dash() -> void:
+	if is_dead or _dash_cooldown > 0.0 or _fear_time > 0.0:
+		return
+	_dash_cooldown = DASH_COOLDOWN
+	_dash_time = DASH_INVINCIBLE
+	var from := position
+	position = MapLayer.push_out(Game.clamp_to_map(position + facing * DASH_DISTANCE, RADIUS), RADIUS)
+	_spawn_ghosts(from)
+	FxLayer.burst(global_position, Color(0.75, 0.9, 1.0), 12, 140.0, 3.0)
+	_camera.reset_smoothing()
+
+
+## 从 from 到当前位置留下一串渐隐的残影
+func _spawn_ghosts(from: Vector2) -> void:
+	if not _sprite:
+		return
+	for i in DASH_GHOSTS:
+		var ghost: Node2D = _sprite.duplicate()
+		if ghost is AnimatedSprite2D:
+			ghost.stop()
+			ghost.frame = _actions.frame
+		ghost.position = from.lerp(position, float(i) / DASH_GHOSTS) + _sprite.position
+		ghost.modulate = Color(0.6, 0.85, 1.0, 0.35 + 0.4 * i / DASH_GHOSTS)
+		get_parent().add_child(ghost)
+		var tween := ghost.create_tween()
+		tween.tween_property(ghost, "modulate:a", 0.0, 0.3)
+		tween.tween_callback(ghost.queue_free)
 
 
 func add_ult_energy(amount: float) -> void:
@@ -275,7 +317,7 @@ func _update_shake(delta: float) -> void:
 
 
 func take_damage(amount: float) -> void:
-	if is_dead or _invincible_time > 0.0 or shield_time > 0.0:
+	if is_dead or _invincible_time > 0.0 or shield_time > 0.0 or _dash_time > 0.0:
 		return
 	_invincible_time = INVINCIBLE_DURATION
 	if randf() < dodge_chance:
@@ -333,6 +375,10 @@ func _draw() -> void:
 		draw_arc(Vector2(0, -RADIUS - 10), 7.0, _fear_time * 10.0, _fear_time * 10.0 + 4.5, 12, Color(0.75, 0.45, 1.0), 2.5)
 	if revolver and revolver.reload_progress() >= 0.0:  # 枪手换弹：头顶一圈进度
 		draw_arc(Vector2(0, -RADIUS - 12), 6.0, -PI / 2, -PI / 2 + TAU * revolver.reload_progress(), 16, Revolver.COLOR, 3.0)
+	if _dash_cooldown > 0.0:  # 闪现冷却：脚下一条短进度条
+		var k := 1.0 - _dash_cooldown / DASH_COOLDOWN
+		draw_line(Vector2(-12, 30), Vector2(12, 30), Color(0, 0, 0, 0.5), 3.0)
+		draw_line(Vector2(-12, 30), Vector2(-12 + 24 * k, 30), Color(0.6, 0.85, 1.0, 0.8), 3.0)
 	if _sprite:
 		_sprite.modulate = Color(0.3, 0.1, 0.12) if shield_time > 0.0 else (Color(1, 0.4, 0.4) if hurt_blink else Color.WHITE)
 		var look := _attack_dir if _attack_time > 0.0 else facing  # 出招时面向敌人
