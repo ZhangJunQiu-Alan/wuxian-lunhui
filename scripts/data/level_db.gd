@@ -1,5 +1,6 @@
 class_name LevelDB
-## 关卡数据：刷怪节奏、精英怪、定时事件。新关卡照着这个格式加
+## 关卡数据：刷怪节奏、精英怪、定时事件。新关卡照着这个格式加，再登记到 ALL 里
+## 关卡按 ORDER 的顺序解锁：通关上一关才能进下一关；还没做的关卡在主神空间显示「制作中」
 ##
 ##   waves   刷怪阶段：从 from 秒开始生效，interval 是刷怪间隔，weights 是各敌人的出现权重
 ##   elite_* 精英怪：从 elite_from 秒开始，每 elite_every 秒出现一只，
@@ -13,6 +14,12 @@ class_name LevelDB
 ##           landmarks 地标：pos 中心、radius 范围；写了 quest / hidden 的地标，该支线（隐藏支线）就出现在这里
 ##           quest 可以是一个 id，也可以是几个 id 的数组；不在任何地标上的支线出现在玩家附近
 ##           layout 铺地面、摆物件的脚本（继承 MapLayer），没有就画网格
+
+const CHAPTER := "篇章一 · 诸神黄昏"
+const ORDER := ["midgard", "helheim", "vigrid"]
+const NAMES := {"midgard": "芬布尔之冬", "helheim": "亡者之船", "vigrid": "最后之战"}
+const PLACES := {"midgard": "米德加尔特", "helheim": "赫尔海姆", "vigrid": "维格利德"}
+const BOSS_NAMES := {"midgard": "斯库尔 · 哈提 · 赫列姆", "helheim": "加姆 · 尼德霍格 · 海拉", "vigrid": "耶梦加得 · 芬里尔 · 苏尔特"}
 
 const NORSE_1 := {
 	"name": "芬布尔之冬",
@@ -72,3 +79,26 @@ const NORSE_1 := {
 		{"time": 720.0, "type": "ring", "enemy": "ice_spirit", "count": 24, "text": "暴风雪中浮现出无数精魂！"},
 	],
 }
+
+const ALL := {"midgard": NORSE_1}
+
+
+static func is_built(id: String) -> bool:
+	return ALL.has(id)
+
+
+static func is_unlocked(id: String) -> bool:
+	var index := ORDER.find(id)
+	return index == 0 or (index > 0 and Save.cleared_levels.has(ORDER[index - 1]))
+
+
+## 这一关的下一关 id，没有就返回空字符串
+static func next_of(id: String) -> String:
+	var index := ORDER.find(id)
+	return ORDER[index + 1] if index >= 0 and index + 1 < ORDER.size() else ""
+
+
+## 主神空间里选的关卡；选的关还没做或没解锁时退回第 1 关
+static func selected() -> String:
+	var id: String = Save.selected_level
+	return id if is_built(id) and is_unlocked(id) else ORDER[0]

@@ -22,7 +22,8 @@ var level_up_panel: LevelUpPanel
 var pause_menu: PauseMenu
 var elapsed := 0.0
 var kills := 0
-var level_data: Dictionary = LevelDB.NORSE_1
+var level_id := LevelDB.selected()  # 主神空间里选的关卡
+var level_data: Dictionary = LevelDB.ALL[level_id]
 var _spawn_timer := 0.0
 var _next_event := 0  # 下一个要触发的定时事件序号
 var _next_elite_time := 0.0
@@ -338,7 +339,7 @@ func _finish_run(cleared: bool) -> String:
 		add_reward_points(int(elapsed / 60.0) * POINTS_PER_MINUTE)
 		if cleared:
 			add_reward_points(level_data.clear_reward)
-		Save.record_run(reward_points, story_points, cleared, elapsed, kills, _quests_done)
+		Save.record_run(level_id, reward_points, story_points, cleared, elapsed, kills, _quests_done)
 	return "支线完成 %d / %d　发现隐藏支线 %d / %d\n本局获得：奖励点 +%d　支线剧情点 +%d\n累计：奖励点 %d　支线剧情点 %d" % [
 		_quests_done, _quests_seen, _hidden_found, _hidden.size(), reward_points, story_points, Save.reward_points, Save.story_points]
 

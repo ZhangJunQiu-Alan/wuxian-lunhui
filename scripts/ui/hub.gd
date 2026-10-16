@@ -1,5 +1,5 @@
 extends Control
-## 主神空间：局外大厅。选择轮回者（角色）、用奖励点购买永久强化、查看战绩、进入篇章
+## 主神空间：局外大厅。选择轮回者（角色）、选择关卡、用奖励点购买永久强化、查看战绩、进入篇章
 
 const BG := Color(0.045, 0.05, 0.075)
 const GOLD := Color(1.0, 0.85, 0.4)
@@ -12,6 +12,7 @@ var _story_label: Label
 var _stats_label: Label
 var _cards := {}  # 强化 id -> {panel, level, button}
 var _char_cards := {}  # 角色 id -> {panel, button, dim}
+var _level_cards := {}  # 关卡 id -> {panel, button}
 var _subtitle: Label
 var _start: Button
 var _settings: SettingsPanel
@@ -49,7 +50,7 @@ func _ready() -> void:
 	money.add_child(_points_label)
 	money.add_child(_story_label)
 
-	# ---- 中间：两个分页「轮回者」「永久强化」 ----
+	# ---- 中间：三个分页「轮回者」「关卡」「永久强化」 ----
 	var tabs := TabContainer.new()
 	tabs.size_flags_vertical = Control.SIZE_EXPAND_FILL
 	tabs.add_theme_stylebox_override("panel", StyleBoxEmpty.new())
@@ -61,6 +62,13 @@ func _ready() -> void:
 	tabs.add_child(chars)
 	for id: String in CharacterDB.ALL:
 		chars.add_child(_make_character_card(id))
+
+	var levels := HBoxContainer.new()
+	levels.name = "关卡"
+	levels.add_theme_constant_override("separation", 16)
+	tabs.add_child(levels)
+	for i in LevelDB.ORDER.size():
+		levels.add_child(_make_level_card(LevelDB.ORDER[i], i))
 
 	var grid := GridContainer.new()
 	grid.name = "永久强化"
@@ -214,6 +222,31 @@ func _on_character_pressed(id: String) -> void:
 	_refresh()
 
 
+## 关卡卡片：第几关、关名、地点、三个 Boss，底部是选择按钮
+func _make_level_card(id: String, index: int) -> Control:
+	var panel := PanelContainer.new()
+	panel.size_flags_horizontal = Control.SIZE_EXPAND_FILL
+	var box := VBoxContainer.new()
+	box.add_theme_constant_override("separation", 6)
+	panel.add_child(box)
+	box.add_child(_label("第 %d 关" % (index + 1), 14, DIM))
+	box.add_child(_label(LevelDB.NAMES[id], 26, GOLD))
+	box.add_child(_label(LevelDB.PLACES[id], 14, DIM))
+	box.add_child(_label("Boss：" + LevelDB.BOSS_NAMES[id], 13, Color(0.85, 0.87, 0.92)))
+	var fill := Control.new()
+	fill.size_flags_vertical = Control.SIZE_EXPAND_FILL
+	box.add_child(fill)
+	var button := Button.new()
+	button.custom_minimum_size = Vector2(0, 40)
+	button.focus_mode = Control.FOCUS_NONE
+	button.pressed.connect(func() -> void:
+		Save.select_level(id)
+		_refresh())
+	box.add_child(button)
+	_level_cards[id] = {"panel": panel, "button": button}
+	return panel
+
+
 func _make_card(id: String) -> Control:
 	var info: Dictionary = MetaDB.UPGRADES[id]
 	var panel := PanelContainer.new()
@@ -254,7 +287,24 @@ func _refresh() -> void:
 	var selected := CharacterDB.selected()
 	var selected_info: Dictionary = CharacterDB.ALL[selected]
 	_subtitle.text = "轮回者：%s · %s" % [selected_info.name, selected_info.title]
-	_start.text = "以 %s 进入篇章一 · 诸神黄昏\n第 1 关 · 芬布尔之冬    [Enter]" % selected_info.name
+	var level := LevelDB.selected()
+	_start.text = "以 %s 进入%s\n第 %d 关 · %s    [Enter]" % [selected_info.name, LevelDB.CHAPTER, LevelDB.ORDER.find(level) + 1, LevelDB.NAMES[level]]
+	for id: String in _level_cards:
+		var card: Dictionary = _level_cards[id]
+		var button: Button = card.button
+		var open := LevelDB.is_built(id) and LevelDB.is_unlocked(id)
+		if id == level:
+			button.text = "已选择"
+		elif not LevelDB.is_built(id):
+			button.text = "制作中"
+		elif not LevelDB.is_unlocked(id):
+			button.text = "未解锁：通关上一关"
+		else:
+			button.text = "选择"
+		button.disabled = id == level or not open
+		var border := GOLD if id == level else (Color(0.4, 0.43, 0.52) if open else Color(0.22, 0.24, 0.3))
+		(card.panel as PanelContainer).add_theme_stylebox_override("panel", _style(Color(0.08, 0.09, 0.13), border, 3 if id == level else 2, 12))
+		(card.panel as Control).modulate = Color.WHITE if open else Color(1, 1, 1, 0.55)
 	for id: String in _char_cards:
 		var info: Dictionary = CharacterDB.ALL[id]
 		var card: Dictionary = _char_cards[id]
