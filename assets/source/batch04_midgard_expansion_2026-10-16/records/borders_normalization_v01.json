@@ -1,0 +1,198 @@
+[
+  {
+    "id": "cliff_ice_01",
+    "source": "originals/borders_straight_v01_raw.png",
+    "strip_crop": [
+      0,
+      30,
+      1448,
+      255
+    ],
+    "normalized_strip_size": [
+      1216,
+      192
+    ],
+    "subsection_start": 154,
+    "repeat_axis": "x",
+    "size": [
+      256,
+      192
+    ],
+    "seam_mean": 15.196,
+    "status": "candidate_pending_seam_review"
+  },
+  {
+    "id": "cliff_ice_02",
+    "source": "originals/borders_straight_v01_raw.png",
+    "strip_crop": [
+      0,
+      30,
+      1448,
+      255
+    ],
+    "normalized_strip_size": [
+      1216,
+      192
+    ],
+    "subsection_start": 702,
+    "repeat_axis": "x",
+    "size": [
+      256,
+      192
+    ],
+    "seam_mean": 16.757,
+    "status": "candidate_pending_seam_review"
+  },
+  {
+    "id": "frozen_sea_01",
+    "source": "originals/borders_straight_v01_raw.png",
+    "strip_crop": [
+      0,
+      294,
+      1448,
+      518
+    ],
+    "normalized_strip_size": [
+      192,
+      1216
+    ],
+    "subsection_start": 7,
+    "repeat_axis": "y",
+    "size": [
+      192,
+      256
+    ],
+    "seam_mean": 21.826,
+    "status": "candidate_pending_seam_review"
+  },
+  {
+    "id": "frozen_sea_02",
+    "source": "originals/borders_straight_v01_raw.png",
+    "strip_crop": [
+      0,
+      294,
+      1448,
+      518
+    ],
+    "normalized_strip_size": [
+      192,
+      1216
+    ],
+    "subsection_start": 832,
+    "repeat_axis": "y",
+    "size": [
+      192,
+      256
+    ],
+    "seam_mean": 35.342,
+    "status": "candidate_pending_seam_review"
+  },
+  {
+    "id": "dead_forest_01",
+    "source": "originals/border_west_v02_raw.png",
+    "repeat_axis": "y",
+    "size": [
+      192,
+      256
+    ],
+    "cyclic_offset": 0,
+    "variant_note": "second is cyclic phase variant, not separately generated",
+    "status": "candidate_pending_seam_review"
+  },
+  {
+    "id": "dead_forest_02",
+    "source": "originals/border_west_v02_raw.png",
+    "repeat_axis": "y",
+    "size": [
+      192,
+      256
+    ],
+    "cyclic_offset": 128,
+    "variant_note": "second is cyclic phase variant, not separately generated",
+    "status": "candidate_pending_seam_review"
+  },
+  {
+    "id": "rock_wall_01",
+    "source": "originals/border_south_v02_raw.png",
+    "repeat_axis": "x",
+    "size": [
+      512,
+      192
+    ],
+    "cyclic_offset": 0,
+    "variant_note": "second is cyclic phase variant, not separately generated",
+    "status": "candidate_pending_seam_review"
+  },
+  {
+    "id": "rock_wall_02",
+    "source": "originals/border_south_v02_raw.png",
+    "repeat_axis": "x",
+    "size": [
+      512,
+      192
+    ],
+    "cyclic_offset": 256,
+    "variant_note": "second is cyclic phase variant, not separately generated",
+    "status": "candidate_pending_seam_review"
+  },
+  {
+    "id": "border_corner_nw",
+    "source": "originals/borders_corners_v01_raw.png",
+    "crop": [
+      40,
+      20,
+      615,
+      575
+    ],
+    "size": [
+      192,
+      192
+    ],
+    "status": "candidate_pending_corner_join_review"
+  },
+  {
+    "id": "border_corner_ne",
+    "source": "originals/borders_corners_v01_raw.png",
+    "crop": [
+      670,
+      25,
+      1250,
+      575
+    ],
+    "size": [
+      192,
+      192
+    ],
+    "status": "candidate_pending_corner_join_review"
+  },
+  {
+    "id": "border_corner_sw",
+    "source": "originals/borders_corners_v01_raw.png",
+    "crop": [
+      38,
+      635,
+      615,
+      1183
+    ],
+    "size": [
+      192,
+      192
+    ],
+    "status": "candidate_pending_corner_join_review"
+  },
+  {
+    "id": "border_corner_se",
+    "source": "originals/borders_corners_v01_raw.png",
+    "crop": [
+      675,
+      635,
+      1252,
+      1183
+    ],
+    "size": [
+      192,
+      192
+    ],
+    "status": "candidate_pending_corner_join_review"
+  }
+]

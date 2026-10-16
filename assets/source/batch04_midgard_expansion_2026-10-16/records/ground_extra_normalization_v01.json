@@ -1,0 +1,38 @@
+[
+  {
+    "id": "snow_thin",
+    "type": "ground",
+    "size": [
+      64,
+      64
+    ],
+    "source": "originals/snow_thin_v02_raw.png",
+    "candidate": "candidates/snow_thin_v02.png",
+    "crop": [
+      0,
+      0,
+      1254,
+      1254
+    ],
+    "processing": "Nearest resize; shared palette; minimum error source-pixel overlap and crop on both axes",
+    "status": "candidate_pending_visual_review"
+  },
+  {
+    "id": "ice_02",
+    "type": "ground",
+    "size": [
+      64,
+      64
+    ],
+    "source": "originals/ground_extra_v01_raw.png",
+    "candidate": "candidates/ice_02_v01.png",
+    "crop": [
+      631,
+      0,
+      1263,
+      623
+    ],
+    "processing": "Nearest resize; shared palette; minimum error source-pixel overlap and crop on both axes",
+    "status": "candidate_pending_visual_review"
+  }
+]

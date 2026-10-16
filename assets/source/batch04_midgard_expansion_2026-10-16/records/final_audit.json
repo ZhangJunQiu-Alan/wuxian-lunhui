@@ -1,0 +1,27 @@
+{
+  "count": 112,
+  "published": true,
+  "checks": [
+    "PNG RGBA",
+    "expected dimensions",
+    "alpha0/255",
+    "nonempty",
+    ">=2px margins except repeats/ground",
+    "SHA256 candidate=approved=destination",
+    "1x/4x visual review",
+    "26 ground repeat previews and2 all12 transition assemblies",
+    "4 border repeats and full perimeter",
+    "snow/ice decal overlay",
+    "village and lake composition"
+  ],
+  "failures": [],
+  "game_tested": false,
+  "backups": [],
+  "midgard_environment_including_first_batch_rgb_union": 48,
+  "gif_frame_durations_ms": [
+    120,
+    130
+  ],
+  "gif_average_fps": 8,
+  "final_validation": "112 candidate/approved/destination triplets rechecked after single-hue blood palette pass; all matched"
+}

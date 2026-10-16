@@ -82,3 +82,17 @@
 第5批第1关交付补记（2026-10-16）：7条行走完成美术自检，共36帧（四种双足6帧、冬狼及两种精魂4帧）；15张内置image_gen原图、实际Prompt、上传参考与失败候选均已归档。继续沿用本台账已核验OpenAI输出商业使用与所有权条款、Pillow MIT-CMU；Pillow另绘制原创四肢姿势线稿仅作提示参考，精灵改动由内置图像工具完成，未在Python重画身体。本批没有实际用Piskel修帧，没有新增第三方素材、登录注册、付费或收费API。7个PNG均使用原图RGB固定色板，与第7批攻击一致；7份GIF逐帧像素与PNG深色背景4倍合成完全相同。来源、自检和哈希见source/batch05_enemy_walk_2026-10-16/manifest.json及records/final_audit.json。状态为美术自检通过，尚未Godot实测；第2/3关另外7种敌人本次未做。
 
 Claude 验收（2026-10-16）：7 个帧条已在 Godot 内实测，切帧、朝向翻转、落脚线均正常，验收通过。
+
+### 第4批第1关补做（2026-10-16，进行中）
+
+按新版任务书补做边界、过渡、地标物件及贴花。沿用已批准内置image_gen及此前核查OpenAI内容所有权/商业使用条款（https://openai.com/policies/terms-of-use/），仅上传本项目自有素材作风格参考，不引入外部作品造型。沿用Pillow MIT-CMU作尺寸、透明、色板、裁切排版与预览。原图、提示词和通过/退回记录保存于source/batch04_midgard_expansion_2026-10-16；本条不代表已验收。无新增登录注册、付费或API。
+
+### 第6批特效、拾取物与支线物件：开工（2026-10-16）
+
+用户指定本任务制作第6批，继续使用用户已批准的内置 image_gen 与本台账同日核查的 OpenAI 输出商业使用及所有权条款（https://openai.com/policies/terms-of-use/）。仅上传本项目自有素材作为风格或身份参考；不使用第三方作品角色图。Pillow 12.1.1 沿用 MIT-CMU，用于尺寸、二值透明、限定调色板、裁帧排帧与预览，不重画角色或特效。实际提示词、参考、原图、失败候选与自检记录放在 source/batch06_effects_pickups_quests_2026-10-16/。无新增工具、注册、付费或收费 API；本项为工具使用登记，不代表美术验收。
+
+第6批交付补记（2026-10-16）：34项完成美术自检（14条四帧动画、20张静态，共76个输出单元），成品位于sprites/effects/、pickups/、quests/及enemies/ice_block.png。实际使用已批准内置image_gen共43次，原始PNG、真实Prompt和上传参考保存在source/batch06_effects_pickups_quests_2026-10-16；Chrome免费Piskel实际修正篝火、铁火盆固定部分及英灵攻击残刃，三个可编辑工程和导出归档。Pillow仅作裁帧排版、最近邻尺寸、二值透明、共享调色板、整帧锚点定位及预览/像素核验，不重画角色/特效。渡鸦为3张独立姿势按上拍/平翼/下拍/平翼构成4相，参考一致；保留原图白眼RGB到色板，不伪称4张独立原画。商用依据沿用本台账同日核查OpenAI内容输出所有权与商业使用条款、Piskel用户保留作品权利及Pillow MIT-CMU。预览标题使用本项目OFL字体NotoSansSC。无外部作品人物参考、新注册、付费或收费API。34个PNG与approved和候选SHA256一致；14份8fps4倍GIF与PNG逐帧像素完全一致，实际逐项结果见该批records/final_audit.json。无地块，4×4平铺不适用。尚未本代理Godot实测，待Claude接入审核。
+
+第4批第1关补做交付补记（2026-10-16）：17张内置image_gen原图、实际Prompt和生成文件路径归档于`source/batch04_midgard_expansion_2026-10-16/records/generation_records.json`；仅使用项目自有素材参考。112张成品（8边界、26地块/过渡、62物件、16贴花）通过本批美术自检并复制到对应`sprites/*/midgard/`，未覆盖旧成品。继续沿用上文已核查的OpenAI输出所有权和商用依据（https://openai.com/policies/terms-of-use/），以及Pillow12.1.1 MIT-CMU，用于尺寸、alpha、色板、原像素重叠裁切、排版与预览；未重画角色。Chrome Piskel仅实际导入长屋检查，未手工改图或导出。本批未注册新账户、付款、使用第三方美术或收费API。原图、退回稿、来源和自检以本批manifest为准；状态为美术自检通过，尚未Godot游戏验收。普通资产沿用Midgard既有色表，三张血迹统一1种低饱和暗红，单图最多47色，本批环境合计48色；GIF是静态地图的平移/滚动检查，不是新游戏动画。
+
+Claude 验收（2026-10-16）：第 4 批补做已接入第 1 关地图并在 Godot 内实测：四边屏障、冰面和雪路过渡、各地标物件与贴花显示正常，验收通过。
