@@ -4,8 +4,7 @@ extends Control
 
 const MARGIN := 36.0
 
-var targets: Array[Vector2] = []  # 世界坐标
-var color := Color(1.0, 0.85, 0.4)
+var targets: Array = []  # 每项是 [世界坐标, 颜色]
 
 
 func _ready() -> void:
@@ -21,8 +20,9 @@ func _draw() -> void:
 	var screen := get_viewport_rect().size
 	var center := screen / 2.0
 	var to_screen := get_viewport().get_canvas_transform()  # 世界坐标 → 屏幕坐标（包含镜头位置）
-	for world_pos in targets:
-		var p := to_screen * world_pos
+	for target: Array in targets:
+		var p: Vector2 = to_screen * (target[0] as Vector2)
+		var color: Color = target[1]
 		if Rect2(Vector2.ZERO, screen).grow(-MARGIN).has_point(p):
 			continue  # 目标就在屏幕里，不用画箭头
 		var dir := (p - center).normalized()

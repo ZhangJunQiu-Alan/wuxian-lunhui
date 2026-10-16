@@ -7,9 +7,10 @@ class_name LevelDB
 ##   events  定时事件：ring = 在玩家周围刷出一圈敌人
 ##   bosses  Boss 出场时间和 id（id 对应 BossDB）；击败 final_boss 即通关，显示 clear_text
 ##   quest_slots 支线出现的时间点（有 Boss 在场时会等 Boss 被击败），quests 是支线池（id 对应 QuestDB），随机顺序
+##   hidden_quests 隐藏支线：开局就藏在地标里，hidden_from 秒之后才能触发；到了 hint 秒还没被发现，主神给一句提示
 ##   map     固定地图：size 是场地大小（中心在原点，玩家从中心出发），玩家和敌人都不能离开
 ##           border 是四周屏障带的宽度（冰崖、冰海、松林），镜头看得到但走不进去
-##           landmarks 地标：pos 中心、radius 范围；写了 quest 的地标，该支线就出现在这里
+##           landmarks 地标：pos 中心、radius 范围；写了 quest / hidden 的地标，该支线（隐藏支线）就出现在这里
 ##           layout 铺地面、摆物件的脚本（继承 MapLayer），没有就画网格
 
 const NORSE_1 := {
@@ -20,12 +21,12 @@ const NORSE_1 := {
 		"border": 192.0,
 		"layout": "res://scripts/world/midgard_map.gd",
 		"landmarks": [
-			{"id": "crossroads", "name": "十字路口", "pos": Vector2(0, 0), "radius": 320.0},
+			{"id": "crossroads", "name": "十字路口", "pos": Vector2(0, 0), "radius": 320.0, "hidden": "runes"},
 			{"id": "village", "name": "被雪掩埋的村庄", "pos": Vector2(-1350, -1250), "radius": 650.0, "quest": "bonfire"},
-			{"id": "harbor", "name": "峡湾码头", "pos": Vector2(1450, -1400), "radius": 550.0},
+			{"id": "harbor", "name": "峡湾码头", "pos": Vector2(1450, -1400), "radius": 550.0, "hidden": "sea_giant"},
 			{"id": "stones", "name": "奥丁的符文石阵", "pos": Vector2(-1500, 950), "radius": 420.0, "quest": "ravens"},
-			{"id": "mounds", "name": "古老的墓丘", "pos": Vector2(-100, 1450), "radius": 700.0, "quest": "valkyrie"},
-			{"id": "lake", "name": "冰湖", "pos": Vector2(1350, 1100), "radius": 650.0},
+			{"id": "mounds", "name": "古老的墓丘", "pos": Vector2(-100, 1450), "radius": 700.0, "quest": "valkyrie", "hidden": "einherjar"},
+			{"id": "lake", "name": "冰湖", "pos": Vector2(1350, 1100), "radius": 650.0, "hidden": "fishing"},
 		],
 	},
 	"hp_growth": 180.0,   # 每过这么多秒，敌人血量多 100%
@@ -52,6 +53,13 @@ const NORSE_1 := {
 	"clear_reward": 300,  # 通关额外奖励点
 	"quest_slots": [150.0, 450.0, 720.0],
 	"quests": ["bonfire", "ravens", "valkyrie"],
+	"hidden_from": 30.0,
+	"hidden_quests": [
+		{"id": "fishing", "hint": 100.0},
+		{"id": "runes", "hint": 260.0},
+		{"id": "sea_giant", "hint": 380.0},
+		{"id": "einherjar", "hint": 540.0},
+	],
 	"clear_text": "远方传来号角声。那是神域守门人海姆达尔吹响了加拉尔号角。\n诸神黄昏，正式开始。",
 	"events": [
 		{"time": 75.0, "type": "ring", "enemy": "wolf", "count": 12, "text": "狼群包围！"},

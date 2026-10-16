@@ -11,5 +11,13 @@ static func create(id: String) -> SideQuest:
 			return RavensQuest.new()
 		"valkyrie":
 			return ValkyrieQuest.new()
+		"fishing":
+			return FishingQuest.new()
+		"sea_giant":
+			return SeaGiantQuest.new()
+		"einherjar":
+			return EinherjarQuest.new()
+		"runes":
+			return RunesQuest.new()
 	push_error("未知的支线：" + id)
 	return null

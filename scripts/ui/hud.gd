@@ -15,9 +15,8 @@ var _announce: Label
 var _cutin: UltCutin
 var _fps_label: Label
 var _quest_box: VBoxContainer
-var _quest_title: Label
-var _quest_objective: Label
-var _quest_timer: Label
+var _quest_rows: Array[Array] = []  # 每个支线一组：[标题, 目标, 计时]
+var _clue_label: Label
 var _pointer: QuestPointer
 var _boss_box: VBoxContainer
 var _boss_name: Label
@@ -134,12 +133,21 @@ func _ready() -> void:
 	_quest_box.offset_top = 250
 	_quest_box.visible = false
 	add_child(_quest_box)
-	_quest_title = Label.new()
-	_quest_title.add_theme_font_size_override("font_size", 18)
-	_quest_objective = Label.new()
-	_quest_timer = Label.new()
-	_quest_timer.modulate = Color(1, 1, 1, 0.7)
-	for label in [_quest_title, _quest_objective, _quest_timer]:
+	for i in 2:  # 主神发布的一个 + 隐藏的一个
+		var title := Label.new()
+		title.add_theme_font_size_override("font_size", 18)
+		var timer := Label.new()
+		timer.modulate = Color(1, 1, 1, 0.7)
+		var row: Array[Label] = [title, Label.new(), timer]
+		if i > 0:  # 和上一个支线隔开一点
+			title.custom_minimum_size.y = 34
+			title.vertical_alignment = VERTICAL_ALIGNMENT_BOTTOM
+		_quest_rows.append(row)
+	_clue_label = Label.new()
+	_clue_label.modulate = Color(1, 1, 1, 0.55)
+	_clue_label.custom_minimum_size.y = 34
+	_clue_label.vertical_alignment = VERTICAL_ALIGNMENT_BOTTOM
+	for label: Label in _quest_rows[0] + _quest_rows[1] + [_clue_label]:
 		label.horizontal_alignment = HORIZONTAL_ALIGNMENT_RIGHT
 		label.add_theme_constant_override("outline_size", 4)
 		label.add_theme_color_override("font_outline_color", Color(0, 0, 0, 0.8))
@@ -202,18 +210,28 @@ func hide_boss() -> void:
 
 
 
-## 支线任务面板和指向箭头，每帧由 game.gd 更新
-func show_quest(quest: SideQuest) -> void:
-	_quest_box.visible = true
-	_quest_title.text = "支线剧情 · " + quest.title
-	_quest_title.modulate = quest.color
-	_quest_objective.text = quest.objective
-	if quest.state == "active":
-		_quest_timer.text = "剩余 %d 秒" % ceili(quest.time_left)
-	else:
-		_quest_timer.text = "标记 %d 秒后消失" % ceili(quest._offer_left)
-	_pointer.targets = quest.pointer_targets()
-	_pointer.color = quest.color
+## 支线任务面板和指向箭头，每帧由 game.gd 更新。clues 是还没发现的隐藏支线的提示
+func show_quests(quests: Array[SideQuest], clues: Array[String]) -> void:
+	_quest_box.visible = not quests.is_empty() or not clues.is_empty()
+	_pointer.targets = []
+	for i in _quest_rows.size():
+		var row: Array = _quest_rows[i]
+		for label: Label in row:
+			label.visible = i < quests.size()
+		if i >= quests.size():
+			continue
+		var quest := quests[i]
+		row[0].text = ("隐藏支线 · " if quest.is_hidden else "支线剧情 · ") + quest.title
+		row[0].modulate = quest.color
+		row[1].text = quest.objective
+		if quest.state == "active":
+			row[2].text = "剩余 %d 秒" % ceili(quest.time_left)
+		else:
+			row[2].text = "标记 %d 秒后消失" % ceili(quest._offer_left)
+		for target in quest.pointer_targets():
+			_pointer.targets.append([target, quest.color])
+	_clue_label.visible = not clues.is_empty()
+	_clue_label.text = "\n".join(clues.map(func(clue: String) -> String: return "线索：" + clue))
 
 
 func hide_quest() -> void:

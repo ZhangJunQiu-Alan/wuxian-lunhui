@@ -32,11 +32,13 @@ var _defeated_bosses: Array[String] = []
 var spawn_mult := 1.0  # 刷怪速度倍率（瓦尔基里的试炼会临时提高）
 var reward_points := 0   # 奖励点：局外货币（阶段 8 局外成长时使用）
 var story_points := 0    # 支线剧情点：稀有货币
-var quest: SideQuest     # 当前的支线（同一时间最多一个）
+var quest: SideQuest     # 主神发布的当前支线（同一时间最多一个）
 var _quest_queue: Array = []
 var _next_quest_slot := 0
 var _quests_done := 0
 var _quests_seen := 0
+var _hidden: Array[Dictionary] = []  # 隐藏支线：{"quest", "hint" 提示时间, "hinted"}
+var _hidden_found := 0
 var _run_recorded := false
 var _map_layer: MapLayer
 
@@ -83,6 +85,17 @@ func _ready() -> void:
 	_next_elite_time = level_data.elite_from
 	_quest_queue = level_data.quests.duplicate()
 	_quest_queue.shuffle()
+	for entry: Dictionary in level_data.get("hidden_quests", []):
+		var secret := QuestDB.create(entry.id)
+		if secret == null:
+			continue
+		secret.landmark = _landmark_with("hidden", entry.id)
+		secret.game = self
+		secret.player = player
+		secret.accepted.connect(_on_hidden_quest_accepted)
+		secret.finished.connect(_on_quest_finished)
+		add_child(secret)
+		_hidden.append({"quest": secret, "hint": entry.hint, "hinted": false})
 
 
 func _process(delta: float) -> void:
@@ -195,6 +208,12 @@ func _on_enemy_killed(enemy: Enemy) -> void:
 	player.add_ult_energy(1.0)
 
 
+## 不算击杀地移除一个敌人（例如逃走了），不掉经验
+func despawn_enemy(enemy: Enemy) -> void:
+	_alive_by_type[enemy.type_id] = _alive_by_type.get(enemy.type_id, 1) - 1
+	enemy.queue_free()
+
+
 func _update_bosses() -> void:
 	var bosses: Array = level_data.bosses
 	if _next_boss >= bosses.size() or elapsed < bosses[_next_boss].time:
@@ -218,8 +237,21 @@ func _update_bosses() -> void:
 
 
 func _update_quests() -> void:
+	_update_hidden_quests()
+	var shown: Array[SideQuest] = []
+	var clues: Array[String] = []
 	if is_instance_valid(quest):
-		hud.show_quest(quest)
+		shown.append(quest)
+	for entry in _hidden:
+		if not is_instance_valid(entry.quest):
+			continue
+		var secret: SideQuest = entry.quest
+		if secret.state == "active":
+			shown.append(secret)
+		elif entry.hinted:
+			clues.append(secret.hint_text.trim_prefix("【主神】"))
+	hud.show_quests(shown, clues)
+	if is_instance_valid(quest):
 		return
 	var slots: Array = level_data.quest_slots
 	if _next_quest_slot >= slots.size() or elapsed < slots[_next_quest_slot] or is_instance_valid(boss) or _quest_queue.is_empty():
@@ -229,9 +261,7 @@ func _update_quests() -> void:
 	quest = QuestDB.create(quest_id)
 	if quest == null:
 		return
-	for landmark: Dictionary in level_data.map.landmarks:  # 支线出现在对应的地标上
-		if landmark.get("quest", "") == quest_id:
-			quest.landmark = landmark
+	quest.landmark = _landmark_with("quest", quest_id)  # 支线出现在对应的地标上
 	_quests_seen += 1
 	quest.game = self
 	quest.player = player
@@ -240,8 +270,37 @@ func _update_quests() -> void:
 	hud.announce(quest.offer_text)
 
 
+## 隐藏支线：到时间才能触发；一个在进行时，其他的先等着；到了提示时间还没被发现，主神给一句提示
+func _update_hidden_quests() -> void:
+	var active: SideQuest = null
+	for entry in _hidden:
+		if is_instance_valid(entry.quest) and entry.quest.state == "active":
+			active = entry.quest
+	for entry in _hidden:
+		if not is_instance_valid(entry.quest) or entry.quest.state != "offered":
+			continue
+		var secret: SideQuest = entry.quest
+		secret.blocked = elapsed < level_data.hidden_from or active != null
+		if not entry.hinted and elapsed >= entry.hint:
+			entry.hinted = true
+			hud.announce(secret.hint_text)
+
+
+func _on_hidden_quest_accepted(secret: SideQuest) -> void:
+	_quests_seen += 1
+	_hidden_found += 1
+	hud.announce(secret.offer_text)
+
+
+## 写了 key = id 的地标（例如 "quest": "bonfire"），没有就返回空字典
+func _landmark_with(key: String, id: String) -> Dictionary:
+	for landmark: Dictionary in level_data.map.landmarks:
+		if landmark.get(key, "") == id:
+			return landmark
+	return {}
+
+
 func _on_quest_finished(finished_quest: SideQuest, success: bool) -> void:
-	hud.hide_quest()
 	if success:
 		_quests_done += 1
 		hud.announce("【主神】支线剧情完成：%s。%s" % [finished_quest.title, finished_quest._reward()])
@@ -267,8 +326,8 @@ func _finish_run(cleared: bool) -> String:
 		if cleared:
 			add_reward_points(level_data.clear_reward)
 		Save.record_run(reward_points, story_points, cleared, elapsed, kills, _quests_done)
-	return "支线完成 %d / %d\n本局获得：奖励点 +%d　支线剧情点 +%d\n累计：奖励点 %d　支线剧情点 %d" % [
-		_quests_done, _quests_seen, reward_points, story_points, Save.reward_points, Save.story_points]
+	return "支线完成 %d / %d　发现隐藏支线 %d / %d\n本局获得：奖励点 +%d　支线剧情点 +%d\n累计：奖励点 %d　支线剧情点 %d" % [
+		_quests_done, _quests_seen, _hidden_found, _hidden.size(), reward_points, story_points, Save.reward_points, Save.story_points]
 
 
 func _on_boss_defeated(defeated_boss: Boss) -> void:
