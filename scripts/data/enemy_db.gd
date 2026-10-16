@@ -13,6 +13,7 @@ class_name EnemyDB
 ##   ghost     穿过其他敌人、冥河和物件
 ##   dodge     被打中时闪避的几率（闪开后 DODGE_COOLDOWN 秒内不会再闪）
 ##   split     死亡时分裂成哪种敌人，split_count 分裂几只
+##   sprite_dir 素材不在 enemies/ 里时写素材所在的文件夹（Boss 战里要打断的锁桩）
 
 const ALL := {
 	# ———— 篇章一 · 第 1 关「芬布尔之冬」————
@@ -34,7 +35,7 @@ const ALL := {
 		"color": Color(0.62, 0.62, 0.58), "pack": 6},
 	"mist_wraith": {"name": "冥雾幽魂", "hp": 9.0, "speed": 80.0, "damage": 4.0, "radius": 11.0, "xp": 2,
 		"color": Color(0.55, 0.75, 0.7), "behavior": "drain", "ghost": true,
-		"shoot_range": 200.0, "projectile_damage": 3.0, "max_alive": 25, "gait": "float"},
+		"shoot_range": 180.0, "projectile_damage": 2.0, "max_alive": 12, "gait": "float"},
 	"dark_elf": {"name": "黑暗精灵", "hp": 10.0, "speed": 95.0, "damage": 5.0, "radius": 11.0, "xp": 2,
 		"color": Color(0.5, 0.42, 0.65), "behavior": "ranged", "dodge": 0.35,
 		"shoot_range": 380.0, "shoot_cooldown": 2.2, "projectile_damage": 8.0, "max_alive": 30,
@@ -44,6 +45,17 @@ const ALL := {
 		"split": "nail_golem_small", "split_count": 3},
 	"nail_golem_small": {"name": "小指甲傀儡", "hp": 8.0, "speed": 90.0, "damage": 5.0, "radius": 10.0, "xp": 1,
 		"color": Color(0.78, 0.72, 0.52), "mass": 0.8},
+	# Boss 加姆的锁桩：不会动，打断 4 根加姆就挣脱了
+	"chain_stake": {"name": "锁桩", "hp": 70.0, "speed": 0.0, "damage": 0.0, "radius": 16.0, "xp": 3,
+		"color": Color(0.45, 0.4, 0.38), "behavior": "still", "mass": 1000.0, "sprite_dir": "res://assets/sprites/props/helheim/"},
+	# 支线「斩断锚链」「指甲堆」要打碎的目标
+	"anchor_chain": {"name": "锚链", "hp": 110.0, "speed": 0.0, "damage": 0.0, "radius": 18.0, "xp": 3,
+		"color": Color(0.4, 0.38, 0.36), "behavior": "still", "mass": 1000.0, "sprite_dir": "res://assets/sprites/quests/"},
+	"nail_heap": {"name": "指甲堆", "hp": 60.0, "speed": 0.0, "damage": 0.0, "radius": 24.0, "xp": 3,
+		"color": Color(0.72, 0.66, 0.48), "behavior": "still", "mass": 1000.0, "sprite_dir": "res://assets/sprites/props/helheim/"},
+	# 隐藏支线「不肯哭泣的女巨人」：诡计之神变的老女巨人
+	"thokk": {"name": "不肯哭泣的女巨人", "hp": 90.0, "speed": 70.0, "damage": 14.0, "radius": 20.0, "xp": 10,
+		"color": Color(0.55, 0.45, 0.4), "mass": 4.0, "gait": "heavy"},
 }
 
 ## 精英怪的属性倍率

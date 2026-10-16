@@ -134,6 +134,8 @@
 | `enemy_death` ×3 | 普通敌人死亡 | 碎裂声 |
 | `big_death` | 大型敌人、精英死亡 | 更重的倒地 |
 | `ice_shot` | 冰霜精魂发射冰弹 | 冰晶嗖声 |
+| `arrow_shot` | 黑暗精灵射箭（第 2 关） | 短促的弓弦声 |
+| `golem_split` | 指甲傀儡碎成小傀儡（第 2 关） | 一堆硬片哗啦散开 |
 | `boss_warning` | Boss 登场 | 低沉的号角，约 2 秒 |
 | `boss_windup` | Boss 技能蓄力 | 短促的危险提示 |
 | `boss_slam` | Boss 砸地、冲击波 | 地面震动的重击 |

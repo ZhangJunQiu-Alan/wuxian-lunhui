@@ -11,7 +11,8 @@ signal defeated(boss: Boss)
 
 const ULT_ENERGY_PER_KILL := 30.0  # 打完一个 Boss 总共给多少大招能量（按伤害比例给）
 ## 动作素材 bosses/<id>_<动作>.png：是否循环。不循环的动作播完停在最后一帧
-const BOSS_ACTIONS := {"idle": true, "move": true, "windup": false, "attack": false, "howl": false, "shield": false, "stomp": false}
+const BOSS_ACTIONS := {"idle": true, "move": true, "windup": false, "attack": false, "howl": false, "shield": false, "stomp": false,
+	"burrow": false, "emerge": false, "gnaw": true, "summon": false}
 
 var title := ""        # 称号，例如「追日之狼」
 var intro_line := ""   # 登场台词
@@ -24,6 +25,7 @@ var casts_shadow := true  # 哈提自己画「真身影子」，所以关掉通�
 var defeated_bosses: Array[String] = []  # 本关已击败的 Boss，由 game.gd 传入（哈提会因斯库尔之死狂暴）
 ## 状态 -> 动作。没写的状态：chase 播 move，recover 播 idle，以 windup 结尾的播 windup，其余播 attack
 var state_actions := {}
+var untouchable := false  # 钻到地下时：不会被打到，也不会撞到玩家
 var _oneshot := &""   # play_once() 正在播放的动作，播完回到状态动作
 var _playing := &""
 
@@ -85,8 +87,19 @@ func _physics_process(delta: float) -> void:
 		if state.ends_with("windup"):  # 所有蓄力状态都以 windup 结尾
 			SpriteVisual.windup_tremble(_sprite, state_time, _actions != null and _actions.animation != &"idle")
 		_update_action()
-	if global_position.distance_to(target.global_position) < radius + Player.RADIUS:
+	if not untouchable and global_position.distance_to(target.global_position) < radius + Player.RADIUS:
 		target.take_damage(contact_damage)
+
+
+## 钻到地下（或回到地面）：离开敌人组，武器就不会再瞄准它
+func set_untouchable(value: bool) -> void:
+	untouchable = value
+	if value:
+		remove_from_group("enemies")
+	else:
+		add_to_group("enemies")
+	if _sprite:
+		_sprite.visible = not value
 
 
 ## 当前状态对应的动作
@@ -155,11 +168,14 @@ static func draw_circle_telegraph(canvas: CanvasItem, center: Vector2, r: float,
 
 
 func chase(delta: float, speed_mult: float = 1.0) -> void:
-	position += global_position.direction_to(target.global_position) * speed * speed_mult * delta
+	var to := target.global_position
+	if MapLayer.current:  # 隔着冥河时先走到过河点
+		to = MapLayer.current.waypoint(global_position, to)
+	position += global_position.direction_to(to) * speed * speed_mult * slow * delta
 
 
 func take_damage(amount: float, _knockback: Vector2 = Vector2.ZERO, crit: bool = false) -> void:
-	if _dead:
+	if _dead or untouchable:
 		return
 	super.take_damage(amount, Vector2.ZERO, crit)  # Boss 不会被击退
 	hp_changed.emit(maxf(hp, 0.0), max_hp)
@@ -182,6 +198,8 @@ func _draw() -> void:
 	var tint := Color(3, 3, 3) if _flash_time > 0.0 else Color.WHITE
 	if _frozen_time > 0.0:
 		tint = Color(0.6, 0.75, 1.3)
+	if untouchable:
+		return
 	if _sprite:
 		if casts_shadow:
 			SpriteVisual.draw_shadow(self, radius)

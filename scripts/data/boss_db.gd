@@ -12,6 +12,12 @@ static func create(id: String, hp_scale: float) -> Boss:
 			boss = Hati.new()
 		"hrym":
 			boss = Hrym.new()
+		"garm":
+			boss = Garm.new()
+		"nidhogg":
+			boss = Nidhogg.new()
+		"hel":
+			boss = Hel.new()
 		_:
 			push_error("未知的 Boss：" + id)
 			return null

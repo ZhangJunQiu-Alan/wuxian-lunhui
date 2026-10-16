@@ -108,6 +108,7 @@ func setup(id: String, hp_scale: float, elite: bool = false) -> void:
 	dodge = data.get("dodge", 0.0)
 	split_into = data.get("split", "")
 	split_count = data.get("split_count", 0)
+	sprite_dir = data.get("sprite_dir", sprite_dir)
 	gait = data.get("gait", "walk")
 	attack_kind = data.get("attack", "claw")
 	_shoot_timer = shoot_cooldown * randf()  # 错开射击时机，避免同时开火
@@ -363,6 +364,7 @@ func _die() -> void:
 	if is_elite:
 		target.shake(6.0, 0.2)
 	if split_into != "":  # 指甲傀儡：碎成几只小傀儡
+		Audio.sfx("golem_split", -2.0)
 		var game := get_tree().current_scene
 		for i in split_count * (2 if is_elite else 1):
 			var pos := position + Vector2.from_angle(TAU * i / split_count) * radius

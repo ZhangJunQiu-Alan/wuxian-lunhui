@@ -31,5 +31,23 @@ static func create(id: String) -> SideQuest:
 			return EinherjarQuest.new()
 		"runes":
 			return RunesQuest.new()
+		"soul_lamps":
+			return SoulLampsQuest.new()
+		"bridge_guard":
+			return BridgeGuardQuest.new()
+		"anchor_chains":
+			return AnchorChainsQuest.new()
+		"baldr":
+			return BaldrQuest.new()
+		"ratatoskr":
+			return RatatoskrQuest.new()
+		"nail_heaps":
+			return NailHeapsQuest.new()
+		"hoof_tracks":
+			return HoofTracksQuest.new()
+		"river_sword":
+			return RiverSwordQuest.new()
+		"thokk":
+			return ThokkQuest.new()
 	push_error("未知的支线：" + id)
 	return null

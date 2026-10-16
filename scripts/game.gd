@@ -33,6 +33,9 @@ var _alive_by_type := {}  # 敌人 id -> 当前存活数量
 var _next_boss := 0
 var _defeated_bosses: Array[String] = []
 var spawn_mult := 1.0  # 刷怪速度倍率（瓦尔基里的试炼会临时提高）
+var boss_delay := {}     # Boss id -> 推迟出场的秒数（支线「斩断锚链」）
+var boss_hp_mult := {}   # Boss id -> 血量倍率
+var boss_tweaks := {}    # Boss id -> {属性: 值}，出场时写到 Boss 身上（支线「指甲堆」减少海拉的弹幕）
 var reward_points := 0   # 奖励点：局外货币（阶段 8 局外成长时使用）
 var story_points := 0    # 支线剧情点：稀有货币
 var quest: SideQuest     # 主神发布的当前支线（同一时间最多一个）
@@ -231,13 +234,15 @@ func despawn_enemy(enemy: Enemy) -> void:
 
 func _update_bosses() -> void:
 	var bosses: Array = level_data.bosses
-	if _next_boss >= bosses.size() or elapsed < bosses[_next_boss].time:
+	if _next_boss >= bosses.size() or elapsed < bosses[_next_boss].time + boss_delay.get(bosses[_next_boss].id, 0.0):
 		return
 	var id: String = bosses[_next_boss].id
 	_next_boss += 1
-	boss = BossDB.create(id, 1.0 + elapsed / level_data.hp_growth)
+	boss = BossDB.create(id, (1.0 + elapsed / level_data.hp_growth) * boss_hp_mult.get(id, 1.0))
 	if boss == null:
 		return
+	for key: String in boss_tweaks.get(id, {}):
+		boss.set(key, boss_tweaks[id][key])
 	boss.target = player
 	boss.spawner = spawn_enemy
 	boss.defeated_bosses = _defeated_bosses
