@@ -2,6 +2,7 @@ class_name FeatherOrbit
 extends Node2D
 ## 弗蕾亚·女武神之羽：几片羽刃绕着玩家旋转，切割碰到的敌人
 
+const FEATHER := preload("res://assets/sprites/effects/feather_blade.png")
 const ORBIT_RADIUS := 85.0
 const FEATHER_SIZE := 10.0
 const HIT_COOLDOWN := 0.5  # 同一个敌人被羽刃连续伤害的最短间隔
@@ -51,7 +52,4 @@ func _feather_offset(i: int) -> Vector2:
 func _draw() -> void:
 	for i in count:
 		var p := _feather_offset(i)
-		var along := p.normalized().orthogonal()  # 羽毛沿旋转方向摆放
-		var side := p.normalized() * 4.0
-		var pts := PackedVector2Array([p + along * FEATHER_SIZE, p + side, p - along * FEATHER_SIZE, p - side])
-		draw_colored_polygon(pts, Color(1.0, 0.88, 0.45))
+		SpriteVisual.draw_frame(self, FEATHER, 1, 0, p, Vector2(16, 16), p.angle() + PI / 2)  # 羽刃顺着旋转方向

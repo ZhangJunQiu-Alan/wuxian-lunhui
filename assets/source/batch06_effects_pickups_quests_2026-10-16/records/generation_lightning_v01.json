@@ -1,0 +1,21 @@
+{
+  "id": "lightning",
+  "label": "落雷",
+  "folder": "effects",
+  "w": 64,
+  "h": 256,
+  "frames": 4,
+  "loop": false,
+  "anchor": "bottom",
+  "subject": "One tall narrow branching lightning bolt striking vertically down to a small impact point, electric ice blue and white. Four phases: thin leader, thick brilliant branched strike, narrower rebound with small sparks, short residual branches. No cloud, no ground or scenery. All share bottom impact anchor.",
+  "status": "pending",
+  "prompt": "Use case: stylized-concept. Asset type: production low-resolution pixel-art game sprite lightning. Input image 1 is ONLY project-owned style reference: match its cold northern palette, strong dark contours, upper-left highlights and broad readable pixel clusters; do not reproduce its characters or labels.\nSubject: One tall narrow branching lightning bolt striking vertically down to a small impact point, electric ice blue and white. Four phases: thin leader, thick brilliant branched strike, narrower rebound with small sparks, short residual branches. No cloud, no ground or scenery. All share bottom impact anchor.\nLayout: EXACTLY FOUR frames in ONE horizontal row, equal 64x256 logical cells, no gutters. Total logical sheet 256x256. Invisible cell boundaries; every cell has at least TWO LOGICAL PIXELS fully transparent border. Respect tiny logical resolution, use deliberately simple chunky pixel clusters; upscale with nearest neighbor only. No fine high-resolution painted details, no antialiasing. Fixed camera, identical common scale, fixed canvas and animation anchor across all four frames. Do not individually recenter or rescale phases.\nOutput: genuine transparent RGBA background, clean binary opacity, limited palette 24-32 colors, no dithering. No checkerboard painting, no frame outlines, no labels, text, watermark, signature or background scenery. Whole asset visible.",
+  "refs": [
+    "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/batch06_effects_pickups_quests_2026-10-16/refs/style_reference.png"
+  ],
+  "version": "v01",
+  "tool": "builtin image_gen",
+  "source": "/Users/zhangjunqiu/.codex/generated_images/01a14377-c537-7a10-b5df-10043f63fbe0/exec-779decbd-4b31-4960-b22a-4feaf8254cf6.png",
+  "saved": "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/batch06_effects_pickups_quests_2026-10-16/originals/lightning_v01_raw.png",
+  "output_hint": "Generated images are saved to /Users/zhangjunqiu/.codex/generated_images/01a14377-c537-7a10-b5df-10043f63fbe0 as /Users/zhangjunqiu/.codex/generated_images/01a14377-c537-7a10-b5df-10043f63fbe0/exec-779decbd-4b31-4960-b22a-4feaf8254cf6.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+}

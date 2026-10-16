@@ -1,8 +1,10 @@
 class_name Einherjar
 extends Node2D
 ## 英灵：支线「沉睡的英灵」唤醒的战士之魂。跟在玩家身边 60 秒，追砍玩家附近的敌人
-## 没有素材，先用半透明的金色剪影（圆盾 + 头盔 + 剑）
+## 素材：待机 4 帧循环，挥砍时播放攻击 4 帧（16 帧/秒），素材朝右
 
+const IDLE := preload("res://assets/sprites/quests/einherjar_idle.png")
+const ATTACK := preload("res://assets/sprites/quests/einherjar_attack.png")
 const DURATION := 60.0
 const FADE := 2.0         # 最后这几秒慢慢淡出
 const SPEED := 280.0
@@ -43,7 +45,7 @@ func _process(delta: float) -> void:
 	_swing_t = maxf(0.0, _swing_t - delta)
 	if foe and _swing_cd <= 0.0 and global_position.distance_to(foe.global_position) < REACH + foe.radius:
 		_swing_cd = SWING_EVERY
-		_swing_t = 0.15
+		_swing_t = 0.25
 		_swing_dir = global_position.direction_to(foe.global_position)
 		var at := global_position + _swing_dir * 24.0
 		Enemy.damage_in_radius(get_tree(), at, SWING_RADIUS, DAMAGE * power * player.damage_mult, 140.0)
@@ -66,15 +68,11 @@ func _nearest_enemy() -> Enemy:
 
 
 func _draw() -> void:
-	var a := clampf(_life / FADE, 0.0, 1.0) * (0.75 + 0.1 * sin(_time * 6.0))
-	var c := Color(COLOR, a)
-	var hover := Vector2(0, -4.0 + 2.0 * sin(_time * 3.0))
+	var a := clampf(_life / FADE, 0.0, 1.0) * (0.85 + 0.1 * sin(_time * 6.0))
+	var hover := Vector2(0, roundf(-4.0 + 2.0 * sin(_time * 3.0)))
 	draw_circle(Vector2(0, 14), 10.0, Color(COLOR, 0.15 * a))
-	draw_colored_polygon(PackedVector2Array([hover + Vector2(-9, 12), hover + Vector2(-7, -8), hover + Vector2(7, -8), hover + Vector2(9, 12)]), c)
-	draw_circle(hover + Vector2(0, -14), 7.0, c)
-	draw_line(hover + Vector2(-7, -18), hover + Vector2(-11, -26), c, 2.0)  # 头盔两侧的角
-	draw_line(hover + Vector2(7, -18), hover + Vector2(11, -26), c, 2.0)
-	var facing := -1.0 if _swing_dir.x < 0.0 else 1.0
-	draw_circle(hover + Vector2(-9 * facing, 2), 8.0, Color(COLOR.darkened(0.3), a))  # 圆盾
-	var blade := _swing_dir.rotated(-1.2 + 2.4 * (1.0 - _swing_t / 0.15)) if _swing_t > 0.0 else Vector2(facing * 0.4, -1).normalized()
-	draw_line(hover + Vector2(8 * facing, 0), hover + Vector2(8 * facing, 0) + blade * 22.0, Color(1, 1, 0.9, a), 2.5)
+	var flip := Vector2(-1.0 if _swing_dir.x < 0.0 else 1.0, 1.0)
+	if _swing_t > 0.0:
+		SpriteVisual.draw_frame(self, ATTACK, 4, mini(3, int((0.25 - _swing_t) * 16.0)), hover + Vector2(0, 14), Vector2(24, 46), 0.0, flip, Color(1, 1, 1, a))
+	else:
+		SpriteVisual.draw_frame(self, IDLE, 4, int(_time * 8.0), hover + Vector2(0, 14), Vector2(24, 46), 0.0, flip, Color(1, 1, 1, a))

@@ -1,0 +1,11 @@
+{
+  "id": "lightning",
+  "version": "v02",
+  "prompt": "Use case: precise-object-edit. Rebuild the reference pixel lightning effect as an EXACTLY SQUARE transparent sprite sheet. Input1 is previous lightning artwork: retain blue-white pixel style and 4 strike phases. Input2 is a SQUARE layout guide ONLY: put one bolt entirely INSIDE each of the four tall narrow guide rectangles, identical vertical centerline positions, bottom impact anchors exactly level. DO NOT draw the guide, numbers, rectangles, dark backdrop or centerlines. Overall image MUST be square, never landscape. Four cells form a single row, each cell logically64x256 pixels; sheet256x256. First bolt thin leader, second thick strike, third rebound thinner, fourth fading remnant. The tallest bolt occupies at least238 of its256 logical pixel height; all branches stay within50logicalpixels of width. Keep 3logicalpixels empty border all around every cell; no crossing cell boundaries. Exactly one small impact point centered at bottom of each cell. Transparent negative space, binary opacity, crisp pixel clusters, 24 colors, no fog, clouds, floor or text.",
+  "refs": [
+    "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/batch06_effects_pickups_quests_2026-10-16/originals/lightning_v01_raw.png",
+    "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/batch06_effects_pickups_quests_2026-10-16/refs/lightning_square_layout.png"
+  ],
+  "tool": "builtin image_gen",
+  "source": "/Users/zhangjunqiu/.codex/generated_images/01a14377-c537-7a10-b5df-10043f63fbe0/exec-b0543018-0ac4-451e-bc7b-38f04496ecc7.png"
+}

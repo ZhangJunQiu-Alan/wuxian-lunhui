@@ -1,0 +1,21 @@
+{
+  "id": "campfire",
+  "label": "篝火",
+  "folder": "quests",
+  "w": 64,
+  "h": 64,
+  "frames": 4,
+  "loop": true,
+  "anchor": "bottom",
+  "subject": "A modest northern winter campfire, compact pile of crossed charred brown firewood and gray stone ring, warm amber and orange flame with pale yellow core. Four looping phases changing only flame tongues and a few ember pixels; firewood and stone base remain pixel-identical and grounded. No snow patch or ground scene.",
+  "status": "pending",
+  "prompt": "Use case: stylized-concept. Asset type: production low-resolution pixel-art game sprite campfire. Input image 1 is ONLY project-owned style reference: match its cold northern palette, strong dark contours, upper-left highlights and broad readable pixel clusters; do not reproduce its characters or labels.\nSubject: A modest northern winter campfire, compact pile of crossed charred brown firewood and gray stone ring, warm amber and orange flame with pale yellow core. Four looping phases changing only flame tongues and a few ember pixels; firewood and stone base remain pixel-identical and grounded. No snow patch or ground scene.\nLayout: EXACTLY FOUR frames in a TWO BY TWO equal-cell grid, reading order top-left, top-right, bottom-left, bottom-right. Each cell 64x64 logical pixels. Total logical sheet 128x128. Invisible cell boundaries; every cell has at least TWO LOGICAL PIXELS fully transparent border. Respect tiny logical resolution, use deliberately simple chunky pixel clusters; upscale with nearest neighbor only. No fine high-resolution painted details, no antialiasing. Fixed camera, identical common scale, fixed canvas and animation anchor across all four frames. Do not individually recenter or rescale phases.\nOutput: genuine transparent RGBA background, clean binary opacity, limited palette 24-32 colors, no dithering. No checkerboard painting, no frame outlines, no labels, text, watermark, signature or background scenery. Whole asset visible.",
+  "refs": [
+    "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/batch06_effects_pickups_quests_2026-10-16/refs/style_reference.png"
+  ],
+  "version": "v01",
+  "tool": "builtin image_gen",
+  "source": "/Users/zhangjunqiu/.codex/generated_images/01a14377-c537-7a10-b5df-10043f63fbe0/exec-873cd051-4875-462c-b5f4-775ff81d1c2c.png",
+  "saved": "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/batch06_effects_pickups_quests_2026-10-16/originals/campfire_v01_raw.png",
+  "output_hint": "Generated images are saved to /Users/zhangjunqiu/.codex/generated_images/01a14377-c537-7a10-b5df-10043f63fbe0 as /Users/zhangjunqiu/.codex/generated_images/01a14377-c537-7a10-b5df-10043f63fbe0/exec-873cd051-4875-462c-b5f4-775ff81d1c2c.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+}

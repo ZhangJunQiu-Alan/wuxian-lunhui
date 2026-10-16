@@ -1,0 +1,68 @@
+{
+  "id": "lightning",
+  "version": "v01",
+  "original_size": [
+    1536,
+    1024
+  ],
+  "grid": [
+    4,
+    1
+  ],
+  "source_cell": [
+    384,
+    1024
+  ],
+  "union_crop": [
+    0,
+    51,
+    384,
+    984
+  ],
+  "scale": 0.15625,
+  "placement": [
+    2,
+    108,
+    60,
+    146
+  ],
+  "size": [
+    256,
+    256
+  ],
+  "colors": 29,
+  "alpha": [
+    0,
+    255
+  ],
+  "frame_boxes": [
+    [
+      25,
+      111,
+      47,
+      253
+    ],
+    [
+      4,
+      108,
+      62,
+      254
+    ],
+    [
+      2,
+      116,
+      55,
+      254
+    ],
+    [
+      23,
+      122,
+      46,
+      254
+    ]
+  ],
+  "unique_frames": 4,
+  "sha256": "c5327153625e78723be8c38663c27f0db7cb256070fceef09504f3cc360f7eef",
+  "palette_reference": "32 colors extracted from this generated original",
+  "status": "candidate_not_reviewed"
+}

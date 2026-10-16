@@ -4,6 +4,7 @@ extends SideQuest
 ## 守在冰洞旁累计 20 秒，冰下的动静会把怪物引过来。钓完随机钓上一样东西
 ## 信仰托尔时，钓上巨蟒鳞片的几率翻倍
 
+const HOLE := preload("res://assets/sprites/quests/ice_fishing_hole.png")  # 冰洞和插在旁边的鱼竿
 const ZONE_RADIUS := 70.0
 const HOLD_TIME := 20.0
 const WAVE_EVERY := 5.0
@@ -79,14 +80,4 @@ func _draw_quest() -> void:
 		draw_circle(p, ZONE_RADIUS, Color(color, 0.1 if inside else 0.04))
 		draw_arc(p, ZONE_RADIUS, 0.0, TAU, 48, Color(color, 0.8 if inside else 0.4), 3.0)
 		draw_arc(p, ZONE_RADIUS + 8.0, -PI / 2, -PI / 2 + TAU * _held / HOLD_TIME, 48, Color(0.85, 0.95, 1.0), 4.0)
-	# 冰洞、插在旁边的鱼竿和垂进洞里的钓线
-	draw_set_transform(p, 0.0, Vector2(1.0, 0.55))
-	draw_circle(Vector2.ZERO, 16.0, Color(0.1, 0.18, 0.26))
-	draw_arc(Vector2.ZERO, 16.0, 0.0, TAU, 24, Color(0.85, 0.95, 1.0, 0.6), 2.0)
-	draw_set_transform(Vector2.ZERO)
-	var butt := p + Vector2(20, 6)
-	var tip := p + Vector2(-6, -34)
-	draw_line(butt, tip, Color(0.45, 0.3, 0.16), 2.5)
-	var bob := sin(_time * (8.0 if state == "active" else 2.0)) * (2.5 if state == "active" else 1.0)
-	draw_line(tip, p + Vector2(-2, bob), Color(0.9, 0.9, 0.9, 0.5), 1.0)
-	draw_circle(p + Vector2(-2, bob), 2.0, Color(0.9, 0.3, 0.25))
+	draw_texture(HOLE, p - Vector2(32, 34))

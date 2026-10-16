@@ -1,0 +1,90 @@
+[
+  {
+    "asset": "lightning",
+    "versions": [
+      "v01",
+      "v02_grid_rejected"
+    ],
+    "reason": "四格固定网格会切开跨边界的长闪电分支，且均匀缩放使竖向主体过短；采用v02连通主干分离、火花归组、统一横纵比例与落点。"
+  },
+  {
+    "asset": "quest_beacon",
+    "versions": [
+      "v01"
+    ],
+    "reason": "生成画布为横图，光柱太短，未体现32x128竖向标记；v02使用窄柱排版参考重做。"
+  },
+  {
+    "asset": "campfire",
+    "versions": [
+      "v01"
+    ],
+    "reason": "石圈、木柴随帧改变和漂移；Piskel固定底座后采用v02。"
+  },
+  {
+    "asset": "iron_brazier",
+    "versions": [
+      "v01",
+      "first_piskel_region_attempt_undone"
+    ],
+    "reason": "实体铁盆变化；首次全宽高选区造成火焰平切，实际撤销6步后改为三个固定盆体选区，采用v02。撤销版本没有导出文件，不伪称留有导出。"
+  },
+  {
+    "asset": "rune_missile",
+    "versions": [
+      "v01_before_alignment"
+    ],
+    "reason": "亮核位置跨帧偏移；规范化时仅整帧平移固定亮核。"
+  },
+  {
+    "asset": "ice_pillar",
+    "versions": [
+      "v01_before_alignment"
+    ],
+    "reason": "四相底座高低偏移；整帧对齐底部y62，不裁切或重画。"
+  },
+  {
+    "asset": "sun_ember",
+    "versions": [
+      "v01"
+    ],
+    "reason": "热核跳动，整帧平移后采用v02。"
+  },
+  {
+    "asset": "fate_thread_gold",
+    "versions": [
+      "v01"
+    ],
+    "reason": "16x16下更像金块，线团纹理读不出；v02强调弯曲线带和线尾。"
+  },
+  {
+    "asset": "glowing_rune_02",
+    "versions": [
+      "v01"
+    ],
+    "reason": "与第三种同为菱形轮廓，不易区分；v02改折线。"
+  },
+  {
+    "asset": "einherjar_attack",
+    "versions": [
+      "v01"
+    ],
+    "reason": "第四帧有悬空残刃；Piskel选择清除，采用v02。"
+  },
+  {
+    "asset": "raven",
+    "versions": [
+      "v01",
+      "v02",
+      "v03"
+    ],
+    "reason": "躯干姿态、喙朝向和辨识度不一致；v04改为一姿势一生成，三张同一参考原图拼成四相回环。"
+  },
+  {
+    "asset": "raven",
+    "versions": [
+      "v04_before_palette_reservation"
+    ],
+    "reason": "自动减色把单白眼像素平均成蓝灰；保留原图白眼RGB到共享色板后重导出，非像素重画。"
+  }
+]

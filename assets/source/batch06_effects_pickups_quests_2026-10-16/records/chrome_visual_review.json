@@ -1,0 +1,48 @@
+{
+  "date": "2026-10-16",
+  "browser": "Chrome extension browser1",
+  "gallery": "http://127.0.0.1:8767/source/batch06_effects_pickups_quests_2026-10-16/gallery.html",
+  "checked_groups": [
+    [
+      "katana_slash",
+      "will_o_wisp_aura"
+    ],
+    [
+      "frost_shockwave",
+      "ice_pillar",
+      "ice_vortex"
+    ],
+    [
+      "rune_missile",
+      "campfire",
+      "iron_brazier",
+      "sun_ember",
+      "einherjar_idle",
+      "einherjar_attack"
+    ],
+    [
+      "lightning",
+      "quest_beacon"
+    ],
+    [
+      "raven"
+    ]
+  ],
+  "actions": [
+    "Loaded project-authored local gallery in Chrome",
+    "Paused animations and used global step control",
+    "Inspected1x and4x full-page screenshots for dark background readability and anchors",
+    "Ravenv04 specifically inspected raised,mid,down phases with fixed white eye"
+  ],
+  "other_visual_evidence": [
+    "previews/wave01_contact.png",
+    "previews/wave02_contact.png",
+    "previews/wave03_contact.png",
+    "previews/wave04_contact.png",
+    "previews/wave05_contact.png",
+    "previews/variants_contact.png",
+    "previews/raven_v04_review.png"
+  ],
+  "scope": "Art self-check; no Godot execution or code integration claimed",
+  "note": "Some wave/contact PNGs show rejected versions; final gallery, per-item review PNG and manifest select the adopted version. Chrome screenshots were actually viewed in tool output; this record does not claim screenshot files were saved."
+}

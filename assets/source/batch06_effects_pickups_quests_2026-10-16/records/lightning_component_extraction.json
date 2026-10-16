@@ -1,0 +1,66 @@
+{
+  "source": "originals/lightning_v02_raw.png",
+  "root_boxes": [
+    [
+      79,
+      111,
+      214,
+      1188
+    ],
+    [
+      277,
+      61,
+      725,
+      1188
+    ],
+    [
+      726,
+      143,
+      938,
+      1188
+    ],
+    [
+      1055,
+      411,
+      1179,
+      1188
+    ]
+  ],
+  "all_component_boxes": [
+    [
+      64,
+      111,
+      239,
+      1188
+    ],
+    [
+      277,
+      61,
+      725,
+      1188
+    ],
+    [
+      618,
+      143,
+      938,
+      1188
+    ],
+    [
+      1024,
+      191,
+      1191,
+      1188
+    ]
+  ],
+  "impact_x_anchors": [
+    151,
+    448,
+    801,
+    1105
+  ],
+  "cell": [
+    556,
+    1127
+  ],
+  "formatting": "Separate four long connected bolt components; assign detached sparks to nearest impact column, copy source pixels unchanged, align impact points. Use one common horizontal scale and one common vertical scale for all four effect frames to fit64x256. No branches clipped or redrawn."
+}

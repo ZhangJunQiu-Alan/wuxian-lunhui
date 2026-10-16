@@ -1,0 +1,10 @@
+{
+  "id": "raven",
+  "version": "v04_mid",
+  "prompt": "Use case: identity-preserve. Edit this SINGLE project raven reference into one other animation frame. Only change wing pose to both wings halfway outstretched sideways, seen edge-on, with near wing extending back toward left at a shallow upward angle and far wing small behind shoulder. CRITICAL INVARIANTS: exact same black raven, same LONG right-facing BEAK, tiny WHITE EYE, short neck, body and tail shape, horizontal body orientation, tucked feet, camera, blue-gray pixel palette and body scale. Head, eye and beak remain at exactly the same location and angle; do not tilt or roll the bird. Wings stay behind head, leave head and beak clearly readable. Keep upper-left highlights and dark outline. Keep whole bird including wings inside canvas with generous transparent margin; no cropping. Low logical32x32 game pixel art with bold clear clusters, no smooth painting. One single bird only, not a sheet, no duplicate, no text, no background. Genuine transparency.",
+  "refs": [
+    "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/batch06_effects_pickups_quests_2026-10-16/originals/raven_single_v04_raw.png"
+  ],
+  "tool": "builtin image_gen",
+  "source": "/Users/zhangjunqiu/.codex/generated_images/01a14377-c537-7a10-b5df-10043f63fbe0/exec-436d4c0f-ac25-43ae-a794-4853a1b07967.png"
+}

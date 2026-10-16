@@ -1,0 +1,1071 @@
+{
+  "batch": 6,
+  "expected_outputs": 34,
+  "accepted": 34,
+  "audited": 34,
+  "passed": 34,
+  "failed": [],
+  "all_complete_and_passed": true,
+  "tiling_4x4": "N/A - no ground tiles in batch6",
+  "game_tested": false,
+  "results": [
+    {
+      "id": "katana_slash",
+      "status": "passed",
+      "errors": [],
+      "size": [
+        512,
+        128
+      ],
+      "colors": 28,
+      "frame_boxes": [
+        [
+          40,
+          23,
+          105,
+          93
+        ],
+        [
+          3,
+          5,
+          119,
+          126
+        ],
+        [
+          21,
+          2,
+          124,
+          123
+        ],
+        [
+          38,
+          2,
+          119,
+          112
+        ]
+      ],
+      "sha256": "7bd81d28708a9f538306c26680e7520af1f5c7349ea52c634f341e95d5cc6d7a",
+      "notes": [
+        {
+          "gif_durations_ms": [
+            120,
+            130,
+            120,
+            130
+          ]
+        }
+      ]
+    },
+    {
+      "id": "lightning",
+      "status": "passed",
+      "errors": [],
+      "size": [
+        256,
+        256
+      ],
+      "colors": 30,
+      "frame_boxes": [
+        [
+          23,
+          13,
+          41,
+          254
+        ],
+        [
+          13,
+          2,
+          62,
+          254
+        ],
+        [
+          12,
+          20,
+          47,
+          254
+        ],
+        [
+          23,
+          31,
+          41,
+          254
+        ]
+      ],
+      "sha256": "9320096703e1e8fefee764b68507e7353f64e3775798397a30a68e5aac09d040",
+      "notes": [
+        {
+          "gif_durations_ms": [
+            120,
+            130,
+            120,
+            130
+          ]
+        }
+      ]
+    },
+    {
+      "id": "rune_missile",
+      "status": "passed",
+      "errors": [],
+      "size": [
+        128,
+        32
+      ],
+      "colors": 32,
+      "frame_boxes": [
+        [
+          10,
+          10,
+          29,
+          21
+        ],
+        [
+          6,
+          11,
+          30,
+          22
+        ],
+        [
+          5,
+          10,
+          29,
+          21
+        ],
+        [
+          8,
+          10,
+          29,
+          21
+        ]
+      ],
+      "sha256": "c199b65f5786029aba9fe4e60f84cb31d158b2267a91e93f9861122ef827de8d",
+      "notes": [
+        {
+          "gif_durations_ms": [
+            120,
+            130,
+            120,
+            130
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ice_shard",
+      "status": "passed",
+      "errors": [],
+      "size": [
+        32,
+        32
+      ],
+      "colors": 29,
+      "frame_boxes": [
+        [
+          2,
+          9,
+          30,
+          22
+        ]
+      ],
+      "sha256": "5ec86990907579daa953b28ac401a298711a38e71a51b4956805dadd0944e8ad",
+      "notes": []
+    },
+    {
+      "id": "will_o_wisp_aura",
+      "status": "passed",
+      "errors": [],
+      "size": [
+        512,
+        128
+      ],
+      "colors": 31,
+      "frame_boxes": [
+        [
+          6,
+          3,
+          122,
+          126
+        ],
+        [
+          5,
+          4,
+          124,
+          124
+        ],
+        [
+          6,
+          3,
+          123,
+          125
+        ],
+        [
+          5,
+          5,
+          123,
+          123
+        ]
+      ],
+      "sha256": "5f93271b5af23b4ce1f6a40b4986cca4c2c37b75cd6587098da2e2fd6bfe73d3",
+      "notes": [
+        {
+          "gif_durations_ms": [
+            120,
+            130,
+            120,
+            130
+          ]
+        }
+      ]
+    },
+    {
+      "id": "feather_blade",
+      "status": "passed",
+      "errors": [],
+      "size": [
+        32,
+        32
+      ],
+      "colors": 31,
+      "frame_boxes": [
+        [
+          2,
+          11,
+          29,
+          20
+        ]
+      ],
+      "sha256": "413b7c8c586e1e401f446370c82a695db02730d004735f6c8552c9b19c807039",
+      "notes": []
+    },
+    {
+      "id": "frost_shockwave",
+      "status": "passed",
+      "errors": [],
+      "size": [
+        512,
+        128
+      ],
+      "colors": 31,
+      "frame_boxes": [
+        [
+          43,
+          42,
+          85,
+          87
+        ],
+        [
+          28,
+          30,
+          101,
+          97
+        ],
+        [
+          18,
+          21,
+          111,
+          108
+        ],
+        [
+          2,
+          5,
+          126,
+          123
+        ]
+      ],
+      "sha256": "a0aa09571dec4959ee2a9f66dc6a6a038a2017fad3dea1140680bc837495c625",
+      "notes": [
+        {
+          "gif_durations_ms": [
+            120,
+            130,
+            120,
+            130
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ice_pillar",
+      "status": "passed",
+      "errors": [],
+      "size": [
+        192,
+        64
+      ],
+      "colors": 32,
+      "frame_boxes": [
+        [
+          15,
+          46,
+          34,
+          62
+        ],
+        [
+          14,
+          30,
+          34,
+          62
+        ],
+        [
+          12,
+          19,
+          36,
+          62
+        ],
+        [
+          10,
+          5,
+          38,
+          62
+        ]
+      ],
+      "sha256": "be48074a2340931126b63f15ddc6232e468c05f4a6537054e1f0cbe0f56efe7c",
+      "notes": [
+        {
+          "gif_durations_ms": [
+            120,
+            130,
+            120,
+            130
+          ]
+        }
+      ]
+    },
+    {
+      "id": "xp_gem",
+      "status": "passed",
+      "errors": [],
+      "size": [
+        16,
+        16
+      ],
+      "colors": 27,
+      "frame_boxes": [
+        [
+          3,
+          2,
+          13,
+          14
+        ]
+      ],
+      "sha256": "8c251fb428e33efba190e0698efbaccb1b80922a5cb6a1d119ba12fba811ad2f",
+      "notes": []
+    },
+    {
+      "id": "xp_gem_large",
+      "status": "passed",
+      "errors": [],
+      "size": [
+        24,
+        24
+      ],
+      "colors": 30,
+      "frame_boxes": [
+        [
+          3,
+          2,
+          20,
+          22
+        ]
+      ],
+      "sha256": "6535412bb442638feacfb28947cba9ea8146dd02247413b9417da8bb03dfc5c5",
+      "notes": []
+    },
+    {
+      "id": "chest_closed",
+      "status": "passed",
+      "errors": [],
+      "size": [
+        32,
+        32
+      ],
+      "colors": 32,
+      "frame_boxes": [
+        [
+          2,
+          6,
+          30,
+          30
+        ]
+      ],
+      "sha256": "859c78b0f3ba678abf973f6214169b14643aa4f2adacc8a2580a7f8c379cd192",
+      "notes": []
+    },
+    {
+      "id": "chest_open",
+      "status": "passed",
+      "errors": [],
+      "size": [
+        32,
+        32
+      ],
+      "colors": 30,
+      "frame_boxes": [
+        [
+          2,
+          2,
+          29,
+          30
+        ]
+      ],
+      "sha256": "c65d25a90f4e46705cc8c37350466ea5451dd5d1ac1178d3889623b379657ae8",
+      "notes": []
+    },
+    {
+      "id": "quest_beacon",
+      "status": "passed",
+      "errors": [],
+      "size": [
+        128,
+        128
+      ],
+      "colors": 31,
+      "frame_boxes": [
+        [
+          5,
+          2,
+          27,
+          126
+        ],
+        [
+          5,
+          5,
+          27,
+          126
+        ],
+        [
+          5,
+          5,
+          27,
+          126
+        ],
+        [
+          5,
+          5,
+          27,
+          126
+        ]
+      ],
+      "sha256": "fb9829d2f3e1a69e1bba18140cd6289a500e5039ad6f0434fad70cff8ecc4872",
+      "notes": [
+        {
+          "gif_durations_ms": [
+            120,
+            130,
+            120,
+            130
+          ]
+        }
+      ]
+    },
+    {
+      "id": "campfire",
+      "status": "passed",
+      "errors": [],
+      "size": [
+        256,
+        64
+      ],
+      "colors": 32,
+      "frame_boxes": [
+        [
+          7,
+          5,
+          58,
+          62
+        ],
+        [
+          7,
+          4,
+          58,
+          62
+        ],
+        [
+          7,
+          4,
+          58,
+          62
+        ],
+        [
+          7,
+          2,
+          58,
+          62
+        ]
+      ],
+      "sha256": "2b3fd338158ed38b8f37641030a9cb3e9e509106993b021313468f58ff5af031",
+      "notes": [
+        {
+          "gif_durations_ms": [
+            120,
+            130,
+            120,
+            130
+          ]
+        }
+      ]
+    },
+    {
+      "id": "raven",
+      "status": "passed",
+      "errors": [],
+      "size": [
+        128,
+        32
+      ],
+      "colors": 24,
+      "frame_boxes": [
+        [
+          3,
+          3,
+          29,
+          23
+        ],
+        [
+          2,
+          7,
+          29,
+          22
+        ],
+        [
+          3,
+          14,
+          29,
+          28
+        ],
+        [
+          2,
+          7,
+          29,
+          22
+        ]
+      ],
+      "sha256": "ef17ac95bcbdb78099470edc4949f704bd52c23ddc9b25a041bc41eb808f1018",
+      "notes": [
+        {
+          "gif_durations_ms": [
+            120,
+            130,
+            120,
+            130
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dead_nail",
+      "status": "passed",
+      "errors": [],
+      "size": [
+        16,
+        16
+      ],
+      "colors": 29,
+      "frame_boxes": [
+        [
+          2,
+          2,
+          14,
+          14
+        ]
+      ],
+      "sha256": "76e5bc3a50aafe0dc6026c68b45124b8c7cc989cf6270e73c023ee405d0618cd",
+      "notes": []
+    },
+    {
+      "id": "iron_brazier",
+      "status": "passed",
+      "errors": [],
+      "size": [
+        192,
+        48
+      ],
+      "colors": 31,
+      "frame_boxes": [
+        [
+          7,
+          4,
+          41,
+          46
+        ],
+        [
+          7,
+          7,
+          41,
+          46
+        ],
+        [
+          7,
+          8,
+          41,
+          46
+        ],
+        [
+          7,
+          11,
+          41,
+          46
+        ]
+      ],
+      "sha256": "fe6f8810f3eb4faf49cadcc36a0d7e63b287b5cd8f82102c1d2361330efad32a",
+      "notes": [
+        {
+          "gif_durations_ms": [
+            120,
+            130,
+            120,
+            130
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sun_ember",
+      "status": "passed",
+      "errors": [],
+      "size": [
+        128,
+        32
+      ],
+      "colors": 32,
+      "frame_boxes": [
+        [
+          6,
+          5,
+          23,
+          23
+        ],
+        [
+          6,
+          5,
+          25,
+          23
+        ],
+        [
+          6,
+          4,
+          26,
+          25
+        ],
+        [
+          7,
+          6,
+          25,
+          24
+        ]
+      ],
+      "sha256": "ed6c398e97115ac269bf767ad19e7d05803116b888132a63debba54c1fd4af34",
+      "notes": [
+        {
+          "gif_durations_ms": [
+            120,
+            130,
+            120,
+            130
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fate_thread_gold",
+      "status": "passed",
+      "errors": [],
+      "size": [
+        16,
+        16
+      ],
+      "colors": 27,
+      "frame_boxes": [
+        [
+          2,
+          2,
+          14,
+          13
+        ]
+      ],
+      "sha256": "7e2e606b141091242dd10e7f884f86bbb09d55214d3dccde3320c61a209fa53a",
+      "notes": []
+    },
+    {
+      "id": "fate_thread_silver",
+      "status": "passed",
+      "errors": [],
+      "size": [
+        16,
+        16
+      ],
+      "colors": 29,
+      "frame_boxes": [
+        [
+          2,
+          2,
+          14,
+          13
+        ]
+      ],
+      "sha256": "e0189e99feb68a1943a7ca1018dc37819707331d60328e3b043199733c617b62",
+      "notes": []
+    },
+    {
+      "id": "fate_thread_black",
+      "status": "passed",
+      "errors": [],
+      "size": [
+        16,
+        16
+      ],
+      "colors": 25,
+      "frame_boxes": [
+        [
+          2,
+          3,
+          14,
+          13
+        ]
+      ],
+      "sha256": "d96bb4b460e66644b7d92e6fd7603322100d7711e2ad00230b1d6ee50f88c88f",
+      "notes": []
+    },
+    {
+      "id": "fate_thread_white",
+      "status": "passed",
+      "errors": [],
+      "size": [
+        16,
+        16
+      ],
+      "colors": 27,
+      "frame_boxes": [
+        [
+          2,
+          3,
+          14,
+          13
+        ]
+      ],
+      "sha256": "c2fa2147e07f7b9d004b4f69c1753907f3a37b71b83f8be2e7944784b108e3b9",
+      "notes": []
+    },
+    {
+      "id": "fate_thread_gray",
+      "status": "passed",
+      "errors": [],
+      "size": [
+        16,
+        16
+      ],
+      "colors": 24,
+      "frame_boxes": [
+        [
+          2,
+          2,
+          14,
+          13
+        ]
+      ],
+      "sha256": "7aaf73edea70b265d90fb65302adc76aa2dc5e9cf48d76eb63ffcc3227066b77",
+      "notes": []
+    },
+    {
+      "id": "ice_vortex",
+      "status": "passed",
+      "errors": [],
+      "size": [
+        384,
+        96
+      ],
+      "colors": 32,
+      "frame_boxes": [
+        [
+          6,
+          7,
+          89,
+          90
+        ],
+        [
+          8,
+          6,
+          88,
+          91
+        ],
+        [
+          6,
+          8,
+          89,
+          88
+        ],
+        [
+          6,
+          6,
+          89,
+          89
+        ]
+      ],
+      "sha256": "b4489781cca5d29519e7d6e5d421991a2166d07101a346e6cdd166608becd578",
+      "notes": [
+        {
+          "gif_durations_ms": [
+            120,
+            130,
+            120,
+            130
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ice_fishing_hole",
+      "status": "passed",
+      "errors": [],
+      "size": [
+        64,
+        48
+      ],
+      "colors": 30,
+      "frame_boxes": [
+        [
+          6,
+          2,
+          58,
+          46
+        ]
+      ],
+      "sha256": "f6c80b86bf82bb1943ae84bd95cc80d5fcbad38891536b0c0f5a9238963b82fb",
+      "notes": []
+    },
+    {
+      "id": "giant_footprint",
+      "status": "passed",
+      "errors": [],
+      "size": [
+        32,
+        32
+      ],
+      "colors": 32,
+      "frame_boxes": [
+        [
+          6,
+          2,
+          25,
+          30
+        ]
+      ],
+      "sha256": "8d7749ae2295e12229eab2d3b1477c8ded2f19185312200c794d8b53a94ad2b9",
+      "notes": []
+    },
+    {
+      "id": "tombstone_dormant",
+      "status": "passed",
+      "errors": [],
+      "size": [
+        32,
+        48
+      ],
+      "colors": 32,
+      "frame_boxes": [
+        [
+          5,
+          2,
+          27,
+          46
+        ]
+      ],
+      "sha256": "6e5bb51d79226c3965e2556290f317fad3be5a3b913e7c7fb4a2c6052498a17d",
+      "notes": []
+    },
+    {
+      "id": "tombstone_awakened",
+      "status": "passed",
+      "errors": [],
+      "size": [
+        32,
+        48
+      ],
+      "colors": 32,
+      "frame_boxes": [
+        [
+          5,
+          2,
+          27,
+          46
+        ]
+      ],
+      "sha256": "693db308c5765b348a8d8cd7061ca3f52bb1d2d1964ab86ad008c937907227b4",
+      "notes": []
+    },
+    {
+      "id": "glowing_rune_01",
+      "status": "passed",
+      "errors": [],
+      "size": [
+        32,
+        32
+      ],
+      "colors": 32,
+      "frame_boxes": [
+        [
+          7,
+          2,
+          25,
+          30
+        ]
+      ],
+      "sha256": "1c33e6b8714e9ec6a21934f54eb43ef07779fcc91481b01440451a7d9894cd5a",
+      "notes": []
+    },
+    {
+      "id": "glowing_rune_02",
+      "status": "passed",
+      "errors": [],
+      "size": [
+        32,
+        32
+      ],
+      "colors": 31,
+      "frame_boxes": [
+        [
+          7,
+          2,
+          23,
+          30
+        ]
+      ],
+      "sha256": "30c3ec74c72f35f39229ee8af5294a942e8915eca54e2cd05e630a6a8b93701b",
+      "notes": []
+    },
+    {
+      "id": "glowing_rune_03",
+      "status": "passed",
+      "errors": [],
+      "size": [
+        32,
+        32
+      ],
+      "colors": 32,
+      "frame_boxes": [
+        [
+          6,
+          2,
+          25,
+          30
+        ]
+      ],
+      "sha256": "1c17b9e3ad54974f983b4096bd2a1795494071bfa2dc4b61288a572012352aa0",
+      "notes": []
+    },
+    {
+      "id": "ice_block",
+      "status": "passed",
+      "errors": [],
+      "size": [
+        64,
+        64
+      ],
+      "colors": 32,
+      "frame_boxes": [
+        [
+          10,
+          2,
+          54,
+          62
+        ]
+      ],
+      "sha256": "66772e616bf27a8245e9cb4298dcf71dc3c710c530f2878ac571a20f3997ca3d",
+      "notes": []
+    },
+    {
+      "id": "einherjar_idle",
+      "status": "passed",
+      "errors": [],
+      "size": [
+        192,
+        48
+      ],
+      "colors": 32,
+      "frame_boxes": [
+        [
+          7,
+          13,
+          42,
+          46
+        ],
+        [
+          6,
+          12,
+          42,
+          46
+        ],
+        [
+          7,
+          13,
+          42,
+          46
+        ],
+        [
+          4,
+          13,
+          43,
+          46
+        ]
+      ],
+      "sha256": "23fb36f1708384de4c94aa416ad9af4a02407d5a5a5e27d16552b2fbb8af6051",
+      "notes": [
+        {
+          "gif_durations_ms": [
+            120,
+            130,
+            120,
+            130
+          ]
+        }
+      ]
+    },
+    {
+      "id": "einherjar_attack",
+      "status": "passed",
+      "errors": [],
+      "size": [
+        192,
+        48
+      ],
+      "colors": 32,
+      "frame_boxes": [
+        [
+          7,
+          16,
+          40,
+          46
+        ],
+        [
+          10,
+          13,
+          38,
+          46
+        ],
+        [
+          5,
+          17,
+          43,
+          46
+        ],
+        [
+          12,
+          16,
+          45,
+          46
+        ]
+      ],
+      "sha256": "8991b666cfd3b3e1bf0d6df6b0b17875ad7c6a630d624479ed338c3c1d0bd25b",
+      "notes": [
+        {
+          "gif_durations_ms": [
+            120,
+            130,
+            120,
+            130
+          ]
+        }
+      ]
+    }
+  ]
+}

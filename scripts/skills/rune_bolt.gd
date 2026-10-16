@@ -3,6 +3,7 @@ extends Node2D
 ## 奥丁·符文飞弹：每隔一段时间向射程内最近的几个敌人各发射一枚飞弹
 
 const RANGE := 600.0  # 射程：约等于半个屏幕宽，敌人进入射程才会发射
+const MISSILE := preload("res://assets/sprites/effects/rune_missile.png")
 
 var cooldown := 0.8
 var damage := 12.0
@@ -34,6 +35,9 @@ func _process(delta: float) -> void:
 		p.speed = projectile_speed
 		p.damage = damage * player.damage_mult
 		p.pierce = pierce
+		p.texture = MISSILE
+		p.frames = 4
+		p.anchor = Vector2(21, 15)  # 飞弹的亮核
 		get_tree().current_scene.add_child(p)
 
 

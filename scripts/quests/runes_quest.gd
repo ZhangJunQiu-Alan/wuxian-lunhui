@@ -3,6 +3,7 @@ extends SideQuest
 ## 隐藏支线「路标石的符文」（十字路口）：路标石上有三个发亮的符文，各指向一处地标
 ## 限时内去那三处触摸对应的符文。每碰到一处奖励点 +30，三处都碰完获得符文之力：本局伤害 +15%、冷却 -10%
 
+const RUNES := [preload("res://assets/sprites/quests/glowing_rune_01.png"), preload("res://assets/sprites/quests/glowing_rune_02.png"), preload("res://assets/sprites/quests/glowing_rune_03.png")]
 const TOUCH_DISTANCE := 45.0
 const SPOTS := 3
 const POINTS_EACH := 30
@@ -69,22 +70,7 @@ func _draw_quest() -> void:
 		var c := Color(color, 0.25) if spot.done else Color(color, 0.6 + 0.4 * pulse)
 		if not spot.done:
 			draw_circle(spot.pos, TOUCH_DISTANCE, Color(color, 0.06 + 0.06 * pulse))
-		_draw_rune(spot.pos + Vector2(0, -16), i, c)
-		# 路标石上对应的符文，碰过的会暗下去
-		_draw_rune(marker_pos + Vector2((i - 1) * 16, -44), i, c)
-
-
-## 三个简单的符文：一根竖笔加不同的斜笔
-func _draw_rune(p: Vector2, kind: int, c: Color) -> void:
-	draw_line(p + Vector2(0, -10), p + Vector2(0, 10), c, 2.5)
-	match kind:
-		0:  # ᚠ
-			draw_line(p + Vector2(0, -4), p + Vector2(7, -10), c, 2.5)
-			draw_line(p + Vector2(0, 2), p + Vector2(7, -4), c, 2.5)
-		1:  # ᚱ
-			draw_line(p + Vector2(0, -10), p + Vector2(7, -4), c, 2.5)
-			draw_line(p + Vector2(7, -4), p + Vector2(0, 1), c, 2.5)
-			draw_line(p + Vector2(0, 1), p + Vector2(7, 10), c, 2.5)
-		_:  # ᛏ
-			draw_line(p + Vector2(0, -10), p + Vector2(-7, -3), c, 2.5)
-			draw_line(p + Vector2(0, -10), p + Vector2(7, -3), c, 2.5)
+		var tint := Color(1, 1, 1, c.a)
+		draw_texture(RUNES[i], spot.pos + Vector2(-16, -32), tint)
+		# 路标石上对应的小符文，碰过的会暗下去
+		SpriteVisual.draw_frame(self, RUNES[i], 1, 0, marker_pos + Vector2((i - 1) * 16, -44), Vector2(16, 16), 0.0, Vector2.ONE * 0.5, tint)

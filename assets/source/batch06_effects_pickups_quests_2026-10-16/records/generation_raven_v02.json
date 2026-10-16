@@ -1,0 +1,11 @@
+{
+  "id": "raven",
+  "version": "v02",
+  "refs": [
+    "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/batch06_effects_pickups_quests_2026-10-16/refs/raven_v01_reference.png",
+    "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/batch06_effects_pickups_quests_2026-10-16/refs/raven_fixed_body_guide.png"
+  ],
+  "prompt": "Use case: identity-preserve. Make a four-frame32x32 pixel-art raven wingbeat animation. Input1 is current project raven artwork for BLACK plumage and blue-gray highlight colors. Input2 is a technical POSE AND POSITION GUIDE ONLY, NOT final art: its fixed head/body and four wing directions are mandatory. Do not render its blue schematic lines, gray guides, borders or background. EXACT2x2 grid, logical whole sheet64x64, each cell32x32 with2logicalpixels transparent all around. The raven must face RIGHT with a clearly protruding long raven beak, tiny bright gray eye, slim fixed central body, short feet and tail. Head at same position in all4cells, body same size and same pose; ONLY the wings move up / diagonal / down / diagonal. Wings must not cover the head or beak. Use simple deliberate chunky shapes appropriate to32x32, not a miniature detailed painting. 16-color palette, dark outlines and upper-left light. Transparent RGBA background, no checkerboard, no scene, lettering or labels.",
+  "tool": "builtin image_gen",
+  "source": "/Users/zhangjunqiu/.codex/generated_images/01a14377-c537-7a10-b5df-10043f63fbe0/exec-4e12f93e-123c-41a6-beef-f11fbc1d6eff.png"
+}

@@ -12,13 +12,15 @@ const PARTICLE_LIFE := 0.45
 const MAX_MARKS := 120
 const MARK_LIFE := 0.22
 const RING_LIFE := 0.35
+const RING := preload("res://assets/sprites/effects/frost_shockwave.png")
+const RING_RADIUS := 62.0  # 素材最后一帧冰环的半径
 
 static var instance: FxLayer
 
 var _numbers := []    # 每项是字典：pos, text, life, crit
 var _particles := []  # 每项是字典：pos, vel, life, color, size
 var _marks := []      # 每项是字典：pos, angle, length, count, kind, color, life
-var _rings := []      # 每项是字典：pos, radius, color, life
+var _rings := []      # 每项是字典：pos, radius, life
 var _font: Font
 
 
@@ -59,11 +61,11 @@ static func mark(pos: Vector2, angle: float, length: float, color: Color, kind: 
 	instance._marks.append({"pos": pos, "angle": angle, "length": length, "kind": kind, "color": color, "life": MARK_LIFE})
 
 
-## 从 pos 向外扩散的冲击波圈，最大半径 radius
-static func ring(pos: Vector2, radius: float, color: Color) -> void:
+## 从 pos 向外扩散的霜冻冲击波圈（素材 4 帧，越来越大），最大半径 radius
+static func ring(pos: Vector2, radius: float) -> void:
 	if instance == null:
 		return
-	instance._rings.append({"pos": pos, "radius": radius, "color": color, "life": RING_LIFE})
+	instance._rings.append({"pos": pos, "radius": radius, "life": RING_LIFE})
 
 
 func _ready() -> void:
@@ -104,8 +106,7 @@ func _process(delta: float) -> void:
 func _draw() -> void:
 	for r in _rings:
 		var k: float = 1.0 - r.life / RING_LIFE  # 0 → 1
-		var rr: float = r.radius * (0.3 + 0.7 * sqrt(k))
-		draw_arc(r.pos, rr, 0.0, TAU, 48, Color(r.color, 1.0 - k), 6.0 * (1.0 - k) + 1.0)
+		SpriteVisual.draw_frame(self, RING, 4, mini(3, int(k * 4.0)), r.pos, Vector2(64, 64), 0.0, Vector2.ONE * r.radius / RING_RADIUS, Color(1, 1, 1, minf(1.0, 3.0 * (1.0 - k))))
 
 	for m in _marks:
 		_draw_mark(m)

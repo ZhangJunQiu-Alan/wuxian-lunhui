@@ -2,6 +2,7 @@ class_name EnemyProjectile
 extends Node2D
 ## 敌人发射的子弹（冰锥）：直线飞行，碰到玩家造成伤害
 
+const SHARD := preload("res://assets/sprites/effects/ice_shard.png")
 const SPEED := 230.0
 const LIFETIME := 4.0
 const HIT_RADIUS := 6.0
@@ -38,5 +39,4 @@ func _physics_process(delta: float) -> void:
 
 
 func _draw() -> void:
-	var pts := PackedVector2Array([Vector2(9, 0), Vector2(-3, 4), Vector2(-7, 0), Vector2(-3, -4)])
-	draw_colored_polygon(pts, Color(0.7, 0.92, 1.0))
+	draw_texture(SHARD, -Vector2(16, 16))

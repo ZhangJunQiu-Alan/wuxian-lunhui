@@ -1,0 +1,10 @@
+{
+  "id": "raven",
+  "version": "single_v04",
+  "prompt": "Use case: stylized-concept. ONE SINGLE black raven game sprite in side view FACING RIGHT. This is a bird, unmistakable large straight crow beak, one tiny white eye, stout dark head, SHORT neck, HORIZONTAL oval body, fan tail pointing left and feet tucked under. Both wings extended UP high, the near wing rising above body towards upper-left, far wing slightly behind. Crucial: raven HEAD and BEAK stand alone clearly on RIGHT, not connected to upward wing, no swan neck. Color: black charcoal feathers, blue-gray edge highlight from upper left, dark contours, no brown. Pixel art deliberately painted on a low32x32 logical grid, enlarged nearest neighbor: body occupies x10..23,y16..23, head x23..27,y12..17, beak points to x29,y15. Wings fit x3..22,y3..16; tail left x3..10,y22..25. Keep2logicalpixels transparent border. Simple bold bird silhouette rather than fine detailed illustration, max16color clusters. Transparent background, no scene, no text, no glyphs, no glow. Input only color and pixel style reference, do not copy its figures.",
+  "refs": [
+    "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/batch06_effects_pickups_quests_2026-10-16/refs/style_reference.png"
+  ],
+  "tool": "builtin image_gen",
+  "source": "/Users/zhangjunqiu/.codex/generated_images/01a14377-c537-7a10-b5df-10043f63fbe0/exec-d6a333c8-8a88-4009-ad15-2be444dc7710.png"
+}

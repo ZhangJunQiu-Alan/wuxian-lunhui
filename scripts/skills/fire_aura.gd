@@ -3,6 +3,8 @@ extends Node2D
 ## 洛基·诡火：玩家周围的火焰光环，每隔一小段时间灼烧范围内所有敌人
 
 const TICK := 0.5
+const AURA := preload("res://assets/sprites/effects/will_o_wisp_aura.png")
+const AURA_RADIUS := 60.0  # 素材里火环的半径，按光环范围缩放
 
 var radius := 80.0
 var damage := 6.0
@@ -27,6 +29,5 @@ func _process(delta: float) -> void:
 
 
 func _draw() -> void:
-	var pulse := 0.5 + 0.5 * sin(_time * 6.0)
-	draw_circle(Vector2.ZERO, radius, Color(1.0, 0.4, 0.1, 0.10 + 0.05 * pulse))
-	draw_arc(Vector2.ZERO, radius, 0.0, TAU, 64, Color(1.0, 0.55, 0.15, 0.5 + 0.3 * pulse), 2.0)
+	draw_circle(Vector2.ZERO, radius, Color(0.3, 1.0, 0.75, 0.06))
+	SpriteVisual.draw_frame(self, AURA, 4, int(_time * 8.0), Vector2.ZERO, Vector2(64, 64), 0.0, Vector2.ONE * radius / AURA_RADIUS)

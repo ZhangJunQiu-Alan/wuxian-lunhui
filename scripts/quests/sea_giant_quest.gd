@@ -6,6 +6,7 @@ extends SideQuest
 
 const GIANT_SPEED := 30.0
 const ESCAPE_REACH := 30.0
+const FOOTPRINT := preload("res://assets/sprites/quests/giant_footprint.png")  # 单个脚印，脚趾朝上；左脚是右脚翻转
 const STEP := 46.0  # 脚印间距
 
 var _giant: Enemy
@@ -84,9 +85,6 @@ func _draw_quest() -> void:
 	var steps := int(from.distance_to(_escape) / STEP)
 	for i in steps:
 		var p := from + dir * STEP * i + side * (1.0 if i % 2 == 0 else -1.0)
-		draw_set_transform(p, dir.angle(), Vector2.ONE)
-		draw_colored_polygon(PackedVector2Array([Vector2(-9, -5), Vector2(8, -6), Vector2(11, 0), Vector2(8, 6), Vector2(-9, 5), Vector2(-12, 0)]),
-			Color(0.3, 0.4, 0.55, 0.35))
-	draw_set_transform(Vector2.ZERO)
+		SpriteVisual.draw_frame(self, FOOTPRINT, 1, 0, p, Vector2(16, 16), dir.angle() + PI / 2, Vector2(1.0 if i % 2 == 0 else -1.0, 1.0), Color(1, 1, 1, 0.7))
 	if state == "active":
 		draw_arc(_escape, 40.0, 0.0, TAU, 32, Color(color, 0.5 + 0.3 * sin(_time * 5.0)), 3.0)

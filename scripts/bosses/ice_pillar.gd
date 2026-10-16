@@ -2,11 +2,12 @@ class_name IcePillar
 extends StaticBody2D
 ## 冰柱：实心障碍物，玩家无法穿过（敌人可以），持续一段时间后碎裂
 
+const PILLAR := preload("res://assets/sprites/effects/ice_pillar.png")  # 4 帧升起，停在最后一帧
 const RADIUS := 18.0
 const COLOR := Color(0.6, 0.88, 1.0)
 
 var _life := 3.0
-var _grow := 0.0
+var _age := 0.0
 
 
 ## 物理帧中途不能直接添加碰撞体，所以延迟到帧末添加
@@ -28,19 +29,14 @@ func _ready() -> void:
 
 
 func _process(delta: float) -> void:
-	_grow = minf(1.0, _grow + delta * 8.0)
+	_age += delta
 	_life -= delta
-	queue_redraw()
+	if _age < 0.3:
+		queue_redraw()
 	if _life <= 0.0:
 		FxLayer.burst(global_position, COLOR, 8, 120.0)
 		queue_free()
 
 
 func _draw() -> void:
-	var r := RADIUS * _grow
-	var pts := PackedVector2Array()
-	for i in 6:  # 六边形冰晶
-		pts.append(Vector2.from_angle(TAU * i / 6.0 + 0.5) * r)
-	draw_colored_polygon(pts, COLOR)
-	pts.append(pts[0])
-	draw_polyline(pts, Color(1, 1, 1, 0.8), 2.0)
+	SpriteVisual.draw_frame(self, PILLAR, 4, mini(3, int(_age * 16.0)), Vector2(0, RADIUS * 0.6), Vector2(24, 62))

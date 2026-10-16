@@ -1,0 +1,26 @@
+{
+  "id": "sun_ember",
+  "version": "v02",
+  "tool": "Pillow whole-frame positioning only",
+  "source": "originals/sun_ember_v01_raw.png",
+  "input": "candidates/sun_ember_v01.png",
+  "actions": "Translate whole frames to align charcoal core; no rotation, scale change, art drawing, or per-pixel changes",
+  "offsets": [
+    [
+      -3,
+      -6
+    ],
+    [
+      3,
+      -6
+    ],
+    [
+      -2,
+      2
+    ],
+    [
+      4,
+      2
+    ]
+  ]
+}

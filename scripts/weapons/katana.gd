@@ -1,10 +1,11 @@
 class_name Katana
 extends Node2D
 ## 太刀：朝面向方向挥出扇形斩击，命中范围内所有敌人
-## 画面：一道刀光从扇形一侧扫到另一侧（每刀换方向），命中的敌人身上留下刀痕
+## 画面：一道刀光从扇形一侧扫到另一侧（每刀换方向，素材 4 帧），命中的敌人身上留下刀痕
 
+const SLASH := preload("res://assets/sprites/effects/katana_slash.png")
+const SLASH_REACH := 58.0  # 刀光素材从中心到外缘的像素数，按攻击范围缩放
 const SLASH_DURATION := 0.24
-const SWEEP_TIME := 0.09  # 刀光扫过整个扇形用的时间，之后淡出
 const HALF_ARC := 1.05  # 扇形半角（弧度），约 60°，整个扇形 120°
 const KNOCKBACK := 260.0
 
@@ -88,29 +89,12 @@ func _tint() -> Color:
 func _draw() -> void:
 	if _slash_time <= 0.0:
 		return
-	var elapsed := SLASH_DURATION - _slash_time
-	var sweep := minf(1.0, elapsed / SWEEP_TIME)  # 刀光扫到了哪里（0 → 1）
-	var fade := 1.0 if elapsed < SWEEP_TIME else _slash_time / (SLASH_DURATION - SWEEP_TIME)
-	var tint := _tint()
+	var frame := mini(3, int((1.0 - _slash_time / SLASH_DURATION) * 4.0))
+	var tint := Color(1.0, 0.85, 0.45, 0.85) if _niten else Color(1, 1, 1, 0.85)
 	for dir in _slash_dirs:
-		var start := dir.angle() - HALF_ARC * _sweep_sign
-		var span := HALF_ARC * 2.0 * _sweep_sign
 		# 淡淡的扇形，提示攻击范围
 		var fan := PackedVector2Array([Vector2.ZERO])
 		for i in 13:
-			fan.append(Vector2.from_angle(start + span * i / 12.0) * reach)
-		draw_colored_polygon(fan, Color(tint, 0.1 * fade))
-		# 新月形刀光：两头尖，靠近刀尖处最宽
-		var head := start + span * sweep
-		var tail := start + span * maxf(0.0, sweep - 0.75)
-		var outer := PackedVector2Array()
-		var inner := PackedVector2Array()
-		for i in 17:
-			var k := i / 16.0
-			var a := lerpf(tail, head, k)
-			var width := reach * 0.3 * sin(PI * pow(k, 1.6)) * fade
-			outer.append(Vector2.from_angle(a) * (reach + 4.0))
-			inner.append(Vector2.from_angle(a) * (reach + 4.0 - width))
-		inner.reverse()
-		draw_colored_polygon(outer + inner, Color(tint, 0.75 * fade))
-		draw_polyline(outer, Color(1, 1, 1, fade), 2.0)
+			fan.append(Vector2.from_angle(dir.angle() - HALF_ARC + HALF_ARC * 2.0 * i / 12.0) * reach)
+		draw_colored_polygon(fan, Color(_tint(), 0.1 * _slash_time / SLASH_DURATION))
+		SpriteVisual.draw_frame(self, SLASH, 4, frame, Vector2.ZERO, Vector2(64, 64), dir.angle(), Vector2(1.0, _sweep_sign) * reach / SLASH_REACH, tint)

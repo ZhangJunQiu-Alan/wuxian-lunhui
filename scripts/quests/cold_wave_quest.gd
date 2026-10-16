@@ -4,6 +4,7 @@ extends SideQuest
 ## 火盆一个接一个点燃，每个只燃 12 秒；快熄灭前 3 秒，下一个在别处亮起，要赶过去。体温低于 30 时移速 -30%
 ## 奖励：奖励点 +100，额外一次升级
 
+const BRAZIER := preload("res://assets/sprites/quests/iron_brazier.png")  # 4 帧火焰循环
 const WARM_RADIUS := 90.0
 const BURN_TIME := 12.0
 const NEXT_EARLY := 3.0
@@ -79,14 +80,7 @@ func _draw_quest() -> void:
 		var inside := player.global_position.distance_to(p) < WARM_RADIUS
 		draw_circle(p, WARM_RADIUS, Color(color, (0.12 if inside else 0.06) * (0.4 + 0.6 * left)))
 		draw_arc(p, WARM_RADIUS, -PI / 2, -PI / 2 + TAU * left, 48, Color(color, 0.7), 3.0)
-		# 铁火盆 + 火焰
-		draw_colored_polygon(PackedVector2Array([p + Vector2(-14, -2), p + Vector2(14, -2), p + Vector2(9, 8), p + Vector2(-9, 8)]), Color(0.25, 0.22, 0.22))
-		draw_line(p + Vector2(-6, 8), p + Vector2(-9, 16), Color(0.25, 0.22, 0.22), 3.0)
-		draw_line(p + Vector2(6, 8), p + Vector2(9, 16), Color(0.25, 0.22, 0.22), 3.0)
-		for i in 3:
-			var h := (10.0 + 12.0 * left) + 4.0 * sin(_time * 9.0 + i * 2.0)
-			var x := (i - 1) * 6.0
-			draw_colored_polygon(PackedVector2Array([p + Vector2(x - 6, -2), p + Vector2(x, -2 - h), p + Vector2(x + 6, -2)]), Color(1.0, 0.45 + 0.15 * i, 0.1))
+		SpriteVisual.draw_frame(self, BRAZIER, 4, int(_time * 8.0 + p.x), p + Vector2(0, 16), Vector2(24, 46))
 
 
 ## 风雪和体温条画在角色上面

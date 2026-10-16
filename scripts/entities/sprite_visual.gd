@@ -171,3 +171,11 @@ static func draw_shadow(canvas: CanvasItem, radius: float, tint: Color = Color(0
 	canvas.draw_set_transform(Vector2(0, radius * 0.9), 0.0, Vector2(1.0, 0.35))
 	canvas.draw_circle(Vector2.ZERO, radius * 1.1, tint)
 	canvas.draw_set_transform(Vector2.ZERO)
+
+
+## 画帧条（横向排列 frames 帧）的第 frame 帧：单帧里的 anchor 点对准 pos，可以旋转、缩放（缩放取负数就是翻转）
+static func draw_frame(canvas: CanvasItem, strip: Texture2D, frames: int, frame: int, pos: Vector2, anchor: Vector2, rot := 0.0, scale := Vector2.ONE, tint := Color.WHITE) -> void:
+	var size := Vector2(strip.get_width() / frames, strip.get_height())
+	canvas.draw_set_transform(pos, rot, scale)
+	canvas.draw_texture_rect_region(strip, Rect2(-anchor, size), Rect2(Vector2(size.x * posmod(frame, frames), 0), size), tint)
+	canvas.draw_set_transform(Vector2.ZERO)

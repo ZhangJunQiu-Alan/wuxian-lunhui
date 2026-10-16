@@ -1,0 +1,19 @@
+{
+  "id": "campfire",
+  "version": "v02",
+  "tool": "Chrome Piskel",
+  "source": "originals/campfire_v01_raw.png",
+  "input": "candidates/campfire_v01_piskel_input.png",
+  "project": "originals/campfire_piskel_fixed.piskel",
+  "export": "originals/campfire_piskel_fixed.png",
+  "actions": [
+    "Select full-width rectangle y30..63 in frame1",
+    "Copy via Cmd+C",
+    "In frames2,3,4 clear the same rectangle with Backspace and paste frame1 base",
+    "Export256x64 PNG and editable Piskel",
+    "Whole-frame translation dx=-2 applied equally to all frames; no drawing in Pillow"
+  ],
+  "verified": "All lower34 rows byte-identical before translation",
+  "input_sha256": "380778011f53c7dce4a9dc8053befeeba167e0503c97b9babbe4c267eb17e93e",
+  "input_preservation_note": "Reconstructed exact pre-alignment formatting input by reversing recorded whole-frame translations, checked against original pre-alignment SHA256. No art edits."
+}

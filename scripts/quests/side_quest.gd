@@ -20,6 +20,7 @@ extends Node2D
 signal accepted(quest: SideQuest)
 signal finished(quest: SideQuest, success: bool)
 
+const BEACON := preload("res://assets/sprites/quests/quest_beacon.png")  # 光柱标记，4 帧循环
 const OFFER_TIME := 40.0        # 标记存在多久，没接就消失
 const ACCEPT_DISTANCE := 40.0
 const MARKER_DISTANCE := 380.0  # 标记出现在离玩家多远的地方
@@ -142,10 +143,10 @@ func _draw() -> void:
 		if not blocked:
 			draw_glimmer(marker_pos)
 	elif state == "offered":
-		# 光柱标记：一束上下浮动的光
+		# 光柱标记
 		var pulse := 0.5 + 0.5 * sin(_time * 4.0)
 		draw_circle(marker_pos, 30.0 + 6.0 * pulse, Color(color, 0.15))
-		draw_rect(Rect2(marker_pos + Vector2(-6, -140), Vector2(12, 140)), Color(color, 0.25 + 0.2 * pulse))
+		SpriteVisual.draw_frame(self, BEACON, 4, int(_time * 8.0), marker_pos, Vector2(16, 126))
 		draw_arc(marker_pos, ACCEPT_DISTANCE, 0.0, TAU, 32, Color(color, 0.8), 2.0)
 
 

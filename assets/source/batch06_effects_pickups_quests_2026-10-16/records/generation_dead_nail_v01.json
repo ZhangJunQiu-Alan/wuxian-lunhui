@@ -1,0 +1,21 @@
+{
+  "id": "dead_nail",
+  "label": "死者指甲",
+  "folder": "quests",
+  "w": 16,
+  "h": 16,
+  "frames": 1,
+  "loop": false,
+  "anchor": "center",
+  "subject": "One detached old human fingernail clipping as a tiny collectible, curved flattened tapering keratin plate, no finger or flesh. Desaturated ivory gray, dark gray outline and subtle pale-blue highlight. Clear curved nail shape at 16x16, body 9x10 pixels. No blood or sparkles.",
+  "status": "pending",
+  "prompt": "Use case: stylized-concept. Asset type: production low-resolution pixel-art game sprite dead_nail. Input image 1 is ONLY project-owned style reference: match its cold northern palette, strong dark contours, upper-left highlights and broad readable pixel clusters; do not reproduce its characters or labels.\nSubject: One detached old human fingernail clipping as a tiny collectible, curved flattened tapering keratin plate, no finger or flesh. Desaturated ivory gray, dark gray outline and subtle pale-blue highlight. Clear curved nail shape at 16x16, body 9x10 pixels. No blood or sparkles.\nLayout: ONE single sprite, target canvas 16x16 logical pixels. Invisible cell boundaries; every cell has at least TWO LOGICAL PIXELS fully transparent border. Respect tiny logical resolution, use deliberately simple chunky pixel clusters; upscale with nearest neighbor only. No fine high-resolution painted details, no antialiasing. \nOutput: genuine transparent RGBA background, clean binary opacity, limited palette 24-32 colors, no dithering. No checkerboard painting, no frame outlines, no labels, text, watermark, signature or background scenery. Whole asset visible.",
+  "refs": [
+    "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/batch06_effects_pickups_quests_2026-10-16/refs/style_reference.png"
+  ],
+  "version": "v01",
+  "tool": "builtin image_gen",
+  "source": "/Users/zhangjunqiu/.codex/generated_images/01a14377-c537-7a10-b5df-10043f63fbe0/exec-68d647c0-cce0-41b8-a195-97272af367bf.png",
+  "saved": "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/batch06_effects_pickups_quests_2026-10-16/originals/dead_nail_v01_raw.png",
+  "output_hint": "Generated images are saved to /Users/zhangjunqiu/.codex/generated_images/01a14377-c537-7a10-b5df-10043f63fbe0 as /Users/zhangjunqiu/.codex/generated_images/01a14377-c537-7a10-b5df-10043f63fbe0/exec-68d647c0-cce0-41b8-a195-97272af367bf.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+}

@@ -1,0 +1,11 @@
+{
+  "id": "raven",
+  "version": "v03",
+  "refs": [
+    "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/batch06_effects_pickups_quests_2026-10-16/refs/raven_single_reference.png",
+    "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/batch06_effects_pickups_quests_2026-10-16/refs/raven_fixed_body_guide.png"
+  ],
+  "prompt": "Use case: identity-preserve. Pixel game raven wingbeat sprite sheet with4frames in a2by2 grid. Reference1 is a single black raven with raised wings. Reference2 is a mandatory fixed-body technical positioning diagram, not final art. KEEP ITS HORIZONTAL BODY AND HEAD at the SAME EXACT position in EVERY cell. Make raven's head clearly visible on the right with a LONG HORIZONTAL BLACK BEAK and a single tiny pale gray EYE pixel. This raven has a short neck, no swan neck, not a bat. Each frame's body is a horizontal oval at center(18,20), head center(24,15), beak tip(28,16); tail points back-left. Only wings change: high on frame1, outstretched sideways on2, downwards on3, sideways on4. Do not tilt, roll, turn, shrink, move up/down or change the body between cells. Wings must not overlap head. Final artwork is exact logical32x32 per cell, whole sheet64x64, enlarged nearest-neighbor pixelart with broad pixel clusters,16colors. Black plumage with lighter blue gray outlines enough to read against #121721. Strict two-pixel transparent margin. True transparent background, do not draw schematic lines, frames, grid, checkerboard, text or label. Upper-left light, same character every frame.",
+  "tool": "builtin image_gen",
+  "source": "/Users/zhangjunqiu/.codex/generated_images/01a14377-c537-7a10-b5df-10043f63fbe0/exec-35a6af8f-082b-4453-a556-47a9aa6e4385.png"
+}

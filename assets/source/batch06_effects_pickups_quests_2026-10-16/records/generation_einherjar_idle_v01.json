@@ -1,0 +1,21 @@
+{
+  "id": "einherjar_idle",
+  "label": "英灵待机",
+  "folder": "quests",
+  "w": 48,
+  "h": 48,
+  "frames": 4,
+  "loop": true,
+  "anchor": "bottom",
+  "subject": "A golden spectral northern warrior facing right, horned iron helmet, short beard, round shield on near arm and single straight sword on other hand, compact 48x48 full-body silhouette. Restrained pale gold, amber and bronze shading with dark warm outlines. Four very subtle idle breathing phases, all have same helmet, shield design, sword and body proportions, stable feet baseline. No aura, blade trails or scenery.",
+  "status": "pending",
+  "prompt": "Use case: stylized-concept. Asset type: production low-resolution pixel-art game sprite einherjar_idle. Input image 1 is ONLY project-owned style reference: match its cold northern palette, strong dark contours, upper-left highlights and broad readable pixel clusters; do not reproduce its characters or labels.\nSubject: A golden spectral northern warrior facing right, horned iron helmet, short beard, round shield on near arm and single straight sword on other hand, compact 48x48 full-body silhouette. Restrained pale gold, amber and bronze shading with dark warm outlines. Four very subtle idle breathing phases, all have same helmet, shield design, sword and body proportions, stable feet baseline. No aura, blade trails or scenery.\nLayout: EXACTLY FOUR frames in a TWO BY TWO equal-cell grid, reading order top-left, top-right, bottom-left, bottom-right. Each cell 48x48 logical pixels. Total logical sheet 96x96. Invisible cell boundaries; every cell has at least TWO LOGICAL PIXELS fully transparent border. Respect tiny logical resolution, use deliberately simple chunky pixel clusters; upscale with nearest neighbor only. No fine high-resolution painted details, no antialiasing. Fixed camera, identical common scale, fixed canvas and animation anchor across all four frames. Do not individually recenter or rescale phases.\nOutput: genuine transparent RGBA background, clean binary opacity, limited palette 24-32 colors, no dithering. No checkerboard painting, no frame outlines, no labels, text, watermark, signature or background scenery. Whole asset visible.",
+  "refs": [
+    "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/batch06_effects_pickups_quests_2026-10-16/refs/style_reference.png"
+  ],
+  "version": "v01",
+  "tool": "builtin image_gen",
+  "source": "/Users/zhangjunqiu/.codex/generated_images/01a14377-c537-7a10-b5df-10043f63fbe0/exec-df03ee35-f402-4e89-9283-397e3337ed98.png",
+  "saved": "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/batch06_effects_pickups_quests_2026-10-16/originals/einherjar_idle_v01_raw.png",
+  "output_hint": "Generated images are saved to /Users/zhangjunqiu/.codex/generated_images/01a14377-c537-7a10-b5df-10043f63fbe0 as /Users/zhangjunqiu/.codex/generated_images/01a14377-c537-7a10-b5df-10043f63fbe0/exec-df03ee35-f402-4e89-9283-397e3337ed98.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+}

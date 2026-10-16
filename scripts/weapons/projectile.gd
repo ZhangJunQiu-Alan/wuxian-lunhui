@@ -11,6 +11,10 @@ var crit := false          # 暴击：伤害数字显示为金色
 var split_on_hit := false  # 命中后分裂成两发（枪手的纸牌神射）
 var color := Color(0.55, 0.9, 1.0)
 var size := 1.0
+var texture: Texture2D  # 有素材时画素材帧条（朝右），没有就画菱形
+var frames := 1
+var anchor := Vector2.ZERO
+var _time := 0.0
 
 
 func _ready() -> void:
@@ -29,6 +33,9 @@ func _ready() -> void:
 func _physics_process(delta: float) -> void:
 	position += direction * speed * delta
 	lifetime -= delta
+	if texture and frames > 1:
+		_time += delta
+		queue_redraw()
 	if lifetime <= 0.0:
 		queue_free()
 
@@ -57,6 +64,9 @@ func _on_area_entered(area: Area2D) -> void:
 
 
 func _draw() -> void:
+	if texture:
+		SpriteVisual.draw_frame(self, texture, frames, int(_time * 12.0), Vector2.ZERO, anchor, 0.0, Vector2.ONE * size)
+		return
 	var pts := PackedVector2Array([Vector2(10, 0), Vector2(0, 4), Vector2(-8, 0), Vector2(0, -4)])
 	for i in pts.size():
 		pts[i] *= size

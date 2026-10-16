@@ -4,6 +4,7 @@ extends SideQuest
 ## 50 秒内收集 30 片指甲：进行中尸鬼死后会掉一片（精英掉 3 片），8 秒后碎掉；墓丘里每 4 秒爬出一批尸鬼
 ## 奖励：支线剧情点 +1，奖励点 +80
 
+const NAIL := preload("res://assets/sprites/quests/dead_nail.png")
 const GOAL := 30
 const PICKUP := 40.0
 const NAIL_LIFE := 8.0
@@ -75,4 +76,4 @@ func _draw_quest() -> void:
 			continue  # 快碎了：闪烁
 		var p: Vector2 = nail.pos
 		draw_circle(p, 9.0, Color(color, 0.2))
-		draw_colored_polygon(PackedVector2Array([p + Vector2(-5, 3), p + Vector2(-3, -4), p + Vector2(3, -5), p + Vector2(5, 2), p + Vector2(0, 0)]), Color(0.85, 0.82, 0.7))
+		draw_texture(NAIL, (p - Vector2(8, 8)).round())

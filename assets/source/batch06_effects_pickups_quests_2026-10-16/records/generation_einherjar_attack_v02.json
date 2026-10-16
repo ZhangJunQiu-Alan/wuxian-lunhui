@@ -1,0 +1,14 @@
+{
+  "id": "einherjar_attack",
+  "version": "v02",
+  "tool": "Chrome Piskel",
+  "source": "originals/einherjar_attack_v01_raw.png",
+  "input": "candidates/einherjar_attack_v01.png",
+  "palette_reference": "candidates/einherjar_idle_v01.png",
+  "project": "originals/einherjar_attack_piskel_fixed.piskel",
+  "actions": [
+    "Frame4 selected rectangle x0..10,y26..31, Backspace to remove isolated blade fragment",
+    "All other character pixels unchanged",
+    "Export192x48 PNG and editable Piskel"
+  ]
+}

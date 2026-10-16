@@ -4,6 +4,7 @@ extends SideQuest
 ## 渡鸦受了惊吓：要在它身边停留 3 秒安抚它（离开就前功尽弃），同时守在旁边的冬狼会围攻你
 ## 奖励：支线剧情点 +1，奖励点 +80；信仰奥丁时额外获得一次升级选择，否则大招能量 +50%
 
+const RAVEN := preload("res://assets/sprites/quests/raven.png")  # 4 帧振翅，朝右
 const CALM_DISTANCE := 60.0
 const CALM_TIME := 3.0
 const GUARDS := 6
@@ -71,12 +72,8 @@ func _draw_quest() -> void:
 		if raven.found:
 			continue
 		var p: Vector2 = raven.pos
-		var flap := sin(_time * 10.0) * 6.0
 		draw_circle(p, 22.0, Color(color, 0.15))
 		draw_arc(p, CALM_DISTANCE, 0.0, TAU, 32, Color(color, 0.4), 2.0)
 		if raven.calm > 0.0:  # 安抚进度环
 			draw_arc(p, CALM_DISTANCE + 6.0, -PI / 2, -PI / 2 + TAU * raven.calm / CALM_TIME, 32, color, 4.0)
-		# 黑色渡鸦：身体 + 两只扇动的翅膀
-		draw_colored_polygon(PackedVector2Array([p + Vector2(-16, -4 - flap), p + Vector2(0, 2), p + Vector2(-4, 6)]), Color(0.08, 0.08, 0.12))
-		draw_colored_polygon(PackedVector2Array([p + Vector2(16, -4 - flap), p + Vector2(0, 2), p + Vector2(4, 6)]), Color(0.08, 0.08, 0.12))
-		draw_circle(p + Vector2(0, 3), 5.0, Color(0.1, 0.1, 0.14))
+		SpriteVisual.draw_frame(self, RAVEN, 4, int(_time * 8.0 + p.x), p, Vector2(16, 16))

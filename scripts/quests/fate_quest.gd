@@ -4,6 +4,10 @@ extends SideQuest
 ## 灰线一定会出现（什么代价也没有），另外两条从金、银、黑、白里随机。30 秒内不选，诺伦就把线收走了
 ## 只有金线是试炼（撑过 60 秒），其他线选了马上生效
 
+const BALLS := {
+	"gold": preload("res://assets/sprites/quests/fate_thread_gold.png"), "silver": preload("res://assets/sprites/quests/fate_thread_silver.png"), "black": preload("res://assets/sprites/quests/fate_thread_black.png"),
+	"white": preload("res://assets/sprites/quests/fate_thread_white.png"), "grey": preload("res://assets/sprites/quests/fate_thread_gray.png"),
+}
 const TOUCH := 30.0
 const SPACING := 120.0
 const THREADS := {
@@ -117,7 +121,7 @@ func _draw_quest() -> void:
 			points.append(bottom + Vector2(sin(_time * 2.0 + k * 0.6 + i) * 4.0 * (1.0 - k / 12.0), y))
 		draw_polyline(points, Color(c, 0.8), 2.0)
 		draw_circle(bottom, TOUCH, Color(c, 0.08))
-		draw_circle(bottom, 7.0, c)
+		draw_texture(BALLS[_options[i]], bottom - Vector2(8, 8))  # 线垂下来，底端是线团
 
 
 func _draw_overlay() -> void:

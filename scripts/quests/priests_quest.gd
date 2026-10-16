@@ -4,6 +4,7 @@ extends SideQuest
 ## 祭司是血量 3 倍的精英冰霜精魂：你靠近时它们往后退，离远了又回来朝你放冰锥；每个祭司身边每 6 秒冒出一圈护卫
 ## 奖励：奖励点 +120，最后一个祭司掉落宝箱
 
+const VORTEX := preload("res://assets/sprites/quests/ice_vortex.png")  # 4 帧旋转
 const COUNT := 3
 const HP_MULT := 3.0
 const SHY := 260.0       # 玩家进入这个距离，祭司就后退
@@ -87,12 +88,9 @@ func _active_targets() -> Array[Vector2]:
 func _draw_quest() -> void:
 	if state != "active":
 		return
-	# 祭司们把寒气输向码头中央的冰涡
+	# 祭司们把寒气输向码头中央的冰涡，冰涡越转越大
 	var grow := 1.0 - time_left / time_limit
-	for i in 3:
-		var r := (30.0 + 40.0 * grow) * (1.0 - i * 0.25)
-		var start := _time * (2.0 + i) + i * 2.0
-		draw_arc(marker_pos, r, start, start + PI * 1.3, 24, Color(color, 0.5 - i * 0.12), 3.0)
+	SpriteVisual.draw_frame(self, VORTEX, 4, int(_time * 8.0), marker_pos, Vector2(48, 48), 0.0, Vector2.ONE * (0.7 + 0.8 * grow))
 	for priest in _alive():
 		var k := 0.4 + 0.3 * sin(_time * 8.0 + priest.get_instance_id())
 		draw_line(priest.global_position, marker_pos, Color(color, 0.25 * k + 0.1), 2.0)

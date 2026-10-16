@@ -230,7 +230,7 @@ func _strike() -> void:
 			FxLayer.mark(at, _attack_dir.angle(), size * 0.7, Color(1.0, 0.9, 0.85), "bite")
 		"slam":
 			var ground := global_position + Vector2(0, radius * 0.6)
-			FxLayer.ring(ground, radius * 2.6, Color(0.7, 0.85, 1.0))
+			FxLayer.ring(ground, radius * 2.6)
 			FxLayer.burst(ground, Color(0.75, 0.85, 1.0), 12, 200.0, 4.0)
 			if is_instance_valid(target) and target.global_position.distance_to(global_position) < radius * 3.0:
 				target.shake(3.0 if not is_elite else 5.0, 0.12)

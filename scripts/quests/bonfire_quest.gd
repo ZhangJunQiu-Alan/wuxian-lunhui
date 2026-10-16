@@ -3,6 +3,7 @@ extends SideQuest
 ## 支线「最后的篝火」：村庄里还有幸存者。守在篝火旁累计 45 秒，期间亡者会一波波围上来
 ## 奖励：奖励点 +100，生命全部恢复
 
+const CAMPFIRE := preload("res://assets/sprites/quests/campfire.png")  # 4 帧火焰循环
 const ZONE_RADIUS := 150.0
 const HOLD_TIME := 45.0
 const WAVE_EVERY := 6.0
@@ -56,14 +57,7 @@ func _draw_quest() -> void:
 		draw_arc(marker_pos, ZONE_RADIUS, 0.0, TAU, 64, Color(color, 0.8 if inside else 0.4), 3.0)
 		# 进度环
 		draw_arc(marker_pos, ZONE_RADIUS + 8.0, -PI / 2, -PI / 2 + TAU * _held / HOLD_TIME, 64, Color(1.0, 0.9, 0.5), 4.0)
-	# 篝火：木柴 + 跳动的火焰
-	draw_line(marker_pos + Vector2(-14, 8), marker_pos + Vector2(14, 2), Color(0.4, 0.25, 0.12), 5.0)
-	draw_line(marker_pos + Vector2(-14, 2), marker_pos + Vector2(14, 8), Color(0.4, 0.25, 0.12), 5.0)
-	for i in 3:
-		var h := 18.0 + 6.0 * sin(_time * 9.0 + i * 2.0)
-		var x := (i - 1) * 6.0
-		draw_colored_polygon(PackedVector2Array([marker_pos + Vector2(x - 6, 4), marker_pos + Vector2(x, 4 - h), marker_pos + Vector2(x + 6, 4)]),
-			Color(1.0, 0.45 + 0.15 * i, 0.1))
+	SpriteVisual.draw_frame(self, CAMPFIRE, 4, int(_time * 8.0), marker_pos + Vector2(0, 12), Vector2(32, 62))
 	# 围着篝火的幸存者
 	for i in 4:
 		draw_circle(marker_pos + Vector2.from_angle(TAU * i / 4 + 0.4) * 34.0, 6.0, Color(0.85, 0.75, 0.6))

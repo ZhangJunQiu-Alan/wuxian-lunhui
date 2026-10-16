@@ -1,0 +1,19 @@
+{
+  "id": "fate_thread_silver",
+  "label": "银色线团",
+  "folder": "quests",
+  "w": 16,
+  "h": 16,
+  "frames": 1,
+  "loop": false,
+  "anchor": "center",
+  "subject": "Identical tiny yarn ball as reference, SILVER color variant. Same round silhouette, broad thread ridges and one short right-facing curled loose end, identical geometry and camera. Cool blue-silver light, mid silver and dark steel shadows. Clearly metallic silver rather than flat white.",
+  "status": "pending",
+  "version": "v01",
+  "refs": [
+    "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/batch06_effects_pickups_quests_2026-10-16/refs/fate_thread_gold_v02_reference.png"
+  ],
+  "prompt": "Use case: identity-preserve. Asset type: pixel-art game sprite. Input image1 is the EXACT project-owned design and pixel style to retain. It is an enlarged nearest-neighbor preview; preserve the low logical pixel resolution. Subject: Identical tiny yarn ball as reference, SILVER color variant. Same round silhouette, broad thread ridges and one short right-facing curled loose end, identical geometry and camera. Cool blue-silver light, mid silver and dark steel shadows. Clearly metallic silver rather than flat white.\nLayout: ONE standalone sprite, target logical canvas 16x16. True transparent background, binary opaque pixel clusters, no background image or checkerboard. Use same limited palette and dark outlines as reference, upper-left light. Whole subject including weapon or open lid must fit with2 logical pixels of clear margin. No names, letters, watermarks, labels or ground. \nCRITICAL: reproduce the same16x16 square pixel grid and yarn-ball curved thread bands. Input pixels are enlarged32times solely for legibility. Retain the exact12x11pixel silhouette, three curved bands with dark grooves, and curled loose thread. Change ONLY color. Do not rotate the yarn ball, add detail, or change shape.",
+  "tool": "builtin image_gen",
+  "source": "/Users/zhangjunqiu/.codex/generated_images/01a14377-c537-7a10-b5df-10043f63fbe0/exec-d29ba1a0-dd88-4dda-8a94-83219d8d49f2.png"
+}

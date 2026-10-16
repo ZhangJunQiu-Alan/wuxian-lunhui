@@ -1,0 +1,19 @@
+{
+  "id": "tombstone_awakened",
+  "label": "墓碑唤醒",
+  "folder": "quests",
+  "w": 32,
+  "h": 48,
+  "frames": 1,
+  "loop": false,
+  "anchor": "bottom",
+  "subject": "The exact same reference tombstone, awakened: same stone contour and chips, incised angular geometric strokes now bright amber gold, small gold edge accents. Keep same stone size, position, dark gray rock color and base. No added halo, no new large ornament, no ground scene.",
+  "status": "pending",
+  "version": "v01",
+  "refs": [
+    "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/batch06_effects_pickups_quests_2026-10-16/refs/tombstone_dormant_reference.png"
+  ],
+  "prompt": "Use case: identity-preserve. Asset type: pixel-art game sprite. Input image1 is the EXACT project-owned design and pixel style to retain. It is an enlarged nearest-neighbor preview; preserve the low logical pixel resolution. Subject: The exact same reference tombstone, awakened: same stone contour and chips, incised angular geometric strokes now bright amber gold, small gold edge accents. Keep same stone size, position, dark gray rock color and base. No added halo, no new large ornament, no ground scene.\nLayout: ONE standalone sprite, target logical canvas 32x48. True transparent background, binary opaque pixel clusters, no background image or checkerboard. Use same limited palette and dark outlines as reference, upper-left light. Whole subject including weapon or open lid must fit with2 logical pixels of clear margin. No names, letters, watermarks, labels or ground. ",
+  "source": "/Users/zhangjunqiu/.codex/generated_images/01a14377-c537-7a10-b5df-10043f63fbe0/exec-758f1e81-f46d-42d1-8c25-ec60367ac73c.png",
+  "tool": "builtin image_gen"
+}

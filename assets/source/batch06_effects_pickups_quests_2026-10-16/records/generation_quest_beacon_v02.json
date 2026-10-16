@@ -1,0 +1,10 @@
+{
+  "id": "quest_beacon",
+  "version": "v02",
+  "prompt": "Use case: stylized-concept. Create an EXACTLY SQUARE transparent sprite sheet containing four very TALL THIN golden quest-marker beams. Input1 is a layout guide ONLY. Each tall rectangle is one frame, with common bottom anchor and vertical centerline. Do not render any rectangles, numbers, centerlines, grid or backdrop from the guide. Four frames in ONE row, each logically32x128, whole square sheet128x128. Each golden column must occupy nearly120 of128 logicalpixels height, its small bottom elliptical ring maximum20pixels wide, column only5pixels wide. This is a tall marker extending vertically above characters, not a short candle. Four looping phases with same slender pillar and base ring, a few small light motes rise gently inside. Pale ivory center, gold middle, amber dark outline, solid pixel clusters separated by transparent gaps. No gradient haze or giant halo. Genuine transparent background. Binary alpha. No text, figure, flame, floor or scenery. Entire frame stays inside guide with3logicalpixels empty all around.",
+  "refs": [
+    "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/batch06_effects_pickups_quests_2026-10-16/refs/lightning_square_layout.png"
+  ],
+  "tool": "builtin image_gen",
+  "source": "/Users/zhangjunqiu/.codex/generated_images/01a14377-c537-7a10-b5df-10043f63fbe0/exec-cce204d9-a457-45c0-9fbb-0a3f3df347a4.png"
+}

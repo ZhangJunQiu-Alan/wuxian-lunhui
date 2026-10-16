@@ -1,0 +1,546 @@
+{
+  "katana_slash": {
+    "version": "v01",
+    "status": "accepted",
+    "review_kind": "art_self_check_only",
+    "checks": {
+      "dimensions_rgba_binary_alpha": "checked by local pixel audit",
+      "style_palette_light_outline": "checked beside project reference at1x and nearest4x; upper-left lighting",
+      "facing_and_anchor": "right where directional; bottom anchor checked for grounded animations; central effect origin otherwise",
+      "native_dark_background": "viewed on #121721 at1x and enlarged",
+      "no_text_watermark_scene": "visually checked",
+      "animation": "four-frame strip and GIF reviewed; common palette and anchor checked; cyclic transition reviewed",
+      "tiles_4x4": "not applicable - standalone sprite"
+    },
+    "visual_notes": "四相为短弧、展开扇面、尾弧、碎光；只作为单次特效，末相清除后结束。无角色或武器实体。",
+    "game_tested": false
+  },
+  "lightning": {
+    "version": "v02",
+    "status": "accepted",
+    "review_kind": "art_self_check_only",
+    "checks": {
+      "dimensions_rgba_binary_alpha": "checked by local pixel audit",
+      "style_palette_light_outline": "checked beside project reference at1x and nearest4x; upper-left lighting",
+      "facing_and_anchor": "right where directional; bottom anchor checked for grounded animations; central effect origin otherwise",
+      "native_dark_background": "viewed on #121721 at1x and enlarged",
+      "no_text_watermark_scene": "visually checked",
+      "animation": "four-frame strip and GIF reviewed; common palette and anchor checked; cyclic transition reviewed",
+      "tiles_4x4": "not applicable - standalone sprite"
+    },
+    "visual_notes": "首稿因横向画布导致分支跨单元，退回。v02按四条主连通闪电分离并保留相邻火花，统一纵横采样比例，保持同一落点。当前高约241/252/234/223像素。",
+    "game_tested": false
+  },
+  "rune_missile": {
+    "version": "v01",
+    "status": "accepted",
+    "review_kind": "art_self_check_only",
+    "checks": {
+      "dimensions_rgba_binary_alpha": "checked by local pixel audit",
+      "style_palette_light_outline": "checked beside project reference at1x and nearest4x; upper-left lighting",
+      "facing_and_anchor": "right where directional; bottom anchor checked for grounded animations; central effect origin otherwise",
+      "native_dark_background": "viewed on #121721 at1x and enlarged",
+      "no_text_watermark_scene": "visually checked",
+      "animation": "four-frame strip and GIF reviewed; common palette and anchor checked; cyclic transition reviewed",
+      "tiles_4x4": "not applicable - standalone sprite"
+    },
+    "visual_notes": "整帧平移使金色弹核保持固定，左侧尾迹长度随相位变化；弹核建议锚点(21,15)，不按尾迹边界重心定位。",
+    "game_tested": false
+  },
+  "ice_shard": {
+    "version": "v01",
+    "status": "accepted",
+    "review_kind": "art_self_check_only",
+    "checks": {
+      "dimensions_rgba_binary_alpha": "checked by local pixel audit",
+      "style_palette_light_outline": "checked beside project reference at1x and nearest4x; upper-left lighting",
+      "facing_and_anchor": "right where directional; bottom anchor checked for grounded animations; central effect origin otherwise",
+      "native_dark_background": "viewed on #121721 at1x and enlarged",
+      "no_text_watermark_scene": "visually checked",
+      "animation": "not applicable - static",
+      "tiles_4x4": "not applicable - standalone sprite"
+    },
+    "visual_notes": "单枚冰锥朝右，上亮下暗，冰晶尖端与主体在1倍清楚，无场景。",
+    "game_tested": false
+  },
+  "will_o_wisp_aura": {
+    "version": "v01",
+    "status": "accepted",
+    "review_kind": "art_self_check_only",
+    "checks": {
+      "dimensions_rgba_binary_alpha": "checked by local pixel audit",
+      "style_palette_light_outline": "checked beside project reference at1x and nearest4x; upper-left lighting",
+      "facing_and_anchor": "right where directional; bottom anchor checked for grounded animations; central effect origin otherwise",
+      "native_dark_background": "viewed on #121721 at1x and enlarged",
+      "no_text_watermark_scene": "visually checked",
+      "animation": "four-frame strip and GIF reviewed; common palette and anchor checked; cyclic transition reviewed",
+      "tiles_4x4": "not applicable - standalone sprite"
+    },
+    "visual_notes": "四相均为空心诡火环，整帧微移消除中心漂移。青绿火舌沿周向变化，环心保持透明。",
+    "game_tested": false
+  },
+  "feather_blade": {
+    "version": "v01",
+    "status": "accepted",
+    "review_kind": "art_self_check_only",
+    "checks": {
+      "dimensions_rgba_binary_alpha": "checked by local pixel audit",
+      "style_palette_light_outline": "checked beside project reference at1x and nearest4x; upper-left lighting",
+      "facing_and_anchor": "right where directional; bottom anchor checked for grounded animations; central effect origin otherwise",
+      "native_dark_background": "viewed on #121721 at1x and enlarged",
+      "no_text_watermark_scene": "visually checked",
+      "animation": "not applicable - static",
+      "tiles_4x4": "not applicable - standalone sprite"
+    },
+    "visual_notes": "羽片形金白刃朝右，能分辨羽轴与羽片，区别于蓝色冰锥。",
+    "game_tested": false
+  },
+  "frost_shockwave": {
+    "version": "v01",
+    "status": "accepted",
+    "review_kind": "art_self_check_only",
+    "checks": {
+      "dimensions_rgba_binary_alpha": "checked by local pixel audit",
+      "style_palette_light_outline": "checked beside project reference at1x and nearest4x; upper-left lighting",
+      "facing_and_anchor": "right where directional; bottom anchor checked for grounded animations; central effect origin otherwise",
+      "native_dark_background": "viewed on #121721 at1x and enlarged",
+      "no_text_watermark_scene": "visually checked",
+      "animation": "four-frame strip and GIF reviewed; common palette and anchor checked; cyclic transition reviewed",
+      "tiles_4x4": "not applicable - standalone sprite"
+    },
+    "visual_notes": "四相半径递增，空心环中心对齐；全程有透明环心，单次扩散后清除。扩张属设计变化，体型一致性条款不用于固定半径。",
+    "game_tested": false
+  },
+  "ice_pillar": {
+    "version": "v01",
+    "status": "accepted",
+    "review_kind": "art_self_check_only",
+    "checks": {
+      "dimensions_rgba_binary_alpha": "checked by local pixel audit",
+      "style_palette_light_outline": "checked beside project reference at1x and nearest4x; upper-left lighting",
+      "facing_and_anchor": "right where directional; bottom anchor checked for grounded animations; central effect origin otherwise",
+      "native_dark_background": "viewed on #121721 at1x and enlarged",
+      "no_text_watermark_scene": "visually checked",
+      "animation": "four-frame strip and GIF reviewed; common palette and anchor checked; cyclic transition reviewed",
+      "tiles_4x4": "not applicable - standalone sprite"
+    },
+    "visual_notes": "统一比例，四相从矮冰芽升至完整冰柱；整帧对齐后四相底部y62，生长方向向上。",
+    "game_tested": false
+  },
+  "xp_gem": {
+    "version": "v01",
+    "status": "accepted",
+    "review_kind": "art_self_check_only",
+    "checks": {
+      "dimensions_rgba_binary_alpha": "checked by local pixel audit",
+      "style_palette_light_outline": "checked beside project reference at1x and nearest4x; upper-left lighting",
+      "facing_and_anchor": "right where directional; bottom anchor checked for grounded animations; central effect origin otherwise",
+      "native_dark_background": "viewed on #121721 at1x and enlarged",
+      "no_text_watermark_scene": "visually checked",
+      "animation": "not applicable - static",
+      "tiles_4x4": "not applicable - standalone sprite"
+    },
+    "visual_notes": "16×16蓝色宝石，四向尖角和上左高光在1倍可辨，颜色与金色大宝石区分。",
+    "game_tested": false
+  },
+  "xp_gem_large": {
+    "version": "v01",
+    "status": "accepted",
+    "review_kind": "art_self_check_only",
+    "checks": {
+      "dimensions_rgba_binary_alpha": "checked by local pixel audit",
+      "style_palette_light_outline": "checked beside project reference at1x and nearest4x; upper-left lighting",
+      "facing_and_anchor": "right where directional; bottom anchor checked for grounded animations; central effect origin otherwise",
+      "native_dark_background": "viewed on #121721 at1x and enlarged",
+      "no_text_watermark_scene": "visually checked",
+      "animation": "not applicable - static",
+      "tiles_4x4": "not applicable - standalone sprite"
+    },
+    "visual_notes": "24×24金色宝石，大于蓝色经验宝石，黄色核心和琥珀切面可辨。",
+    "game_tested": false
+  },
+  "chest_closed": {
+    "version": "v01",
+    "status": "accepted",
+    "review_kind": "art_self_check_only",
+    "checks": {
+      "dimensions_rgba_binary_alpha": "checked by local pixel audit",
+      "style_palette_light_outline": "checked beside project reference at1x and nearest4x; upper-left lighting",
+      "facing_and_anchor": "right where directional; bottom anchor checked for grounded animations; central effect origin otherwise",
+      "native_dark_background": "viewed on #121721 at1x and enlarged",
+      "no_text_watermark_scene": "visually checked",
+      "animation": "not applicable - static",
+      "tiles_4x4": "not applicable - standalone sprite"
+    },
+    "visual_notes": "32×32闭合宝箱，深木板、黄铜包边、正面扣锁。与打开状态比较了朝向、箱身和落点。",
+    "game_tested": false
+  },
+  "chest_open": {
+    "version": "v01",
+    "status": "accepted",
+    "review_kind": "art_self_check_only",
+    "checks": {
+      "dimensions_rgba_binary_alpha": "checked by local pixel audit",
+      "style_palette_light_outline": "checked beside project reference at1x and nearest4x; upper-left lighting",
+      "facing_and_anchor": "right where directional; bottom anchor checked for grounded animations; central effect origin otherwise",
+      "native_dark_background": "viewed on #121721 at1x and enlarged",
+      "no_text_watermark_scene": "visually checked",
+      "animation": "not applicable - static",
+      "tiles_4x4": "not applicable - standalone sprite"
+    },
+    "visual_notes": "使用关闭宝箱作身份参考，保留木板、包边、视角；开盖和金币在32×32内完整可辨。",
+    "game_tested": false
+  },
+  "quest_beacon": {
+    "version": "v02",
+    "status": "accepted",
+    "review_kind": "art_self_check_only",
+    "checks": {
+      "dimensions_rgba_binary_alpha": "checked by local pixel audit",
+      "style_palette_light_outline": "checked beside project reference at1x and nearest4x; upper-left lighting",
+      "facing_and_anchor": "right where directional; bottom anchor checked for grounded animations; central effect origin otherwise",
+      "native_dark_background": "viewed on #121721 at1x and enlarged",
+      "no_text_watermark_scene": "visually checked",
+      "animation": "four-frame strip and GIF reviewed; common palette and anchor checked; cyclic transition reviewed",
+      "tiles_4x4": "not applicable - standalone sprite"
+    },
+    "visual_notes": "v01因画布宽高比例错误成短柱，退回。v02为32×128内的细长光柱，底部金环居中，四相只变亮点和柱顶光亮。",
+    "game_tested": false
+  },
+  "campfire": {
+    "version": "v02",
+    "status": "accepted",
+    "review_kind": "art_self_check_only",
+    "checks": {
+      "dimensions_rgba_binary_alpha": "checked by local pixel audit",
+      "style_palette_light_outline": "checked beside project reference at1x and nearest4x; upper-left lighting",
+      "facing_and_anchor": "right where directional; bottom anchor checked for grounded animations; central effect origin otherwise",
+      "native_dark_background": "viewed on #121721 at1x and enlarged",
+      "no_text_watermark_scene": "visually checked",
+      "animation": "four-frame strip and GIF reviewed; common palette and anchor checked; cyclic transition reviewed",
+      "tiles_4x4": "not applicable - standalone sprite"
+    },
+    "visual_notes": "v01石圈和木柴漂移退回；Chrome Piskel固定y30..63石圈/木柴，四相下34行字节完全相同。只保留上方火焰、火星变化；与首尾相比较过。",
+    "game_tested": false
+  },
+  "raven": {
+    "version": "v04",
+    "status": "accepted",
+    "review_kind": "art_self_check_only",
+    "checks": {
+      "dimensions_rgba_binary_alpha": "128x32 RGBA four32x32 cells, binary alpha,2px margin checked",
+      "style_palette_light_outline": "same project black/blue-gray plumage, upper-left light, shared24RGB colors; source white eye reserved during palette reduction",
+      "facing_and_anchor": "facing right; white eye pixel at(24,15) in all four phases; flying body uses fixed head anchor, feet baseline not applicable",
+      "native_dark_background": "Chrome local gallery viewed at1x and4x on #121721; all three wing poses and return phase checked",
+      "no_text_watermark_scene": "checked",
+      "animation": "Four phases up/mid/down/mid, intentionally3 unique drawings in reversible cycle,8fps GIF; common scale and eye anchor",
+      "tiles_4x4": "not applicable - standalone flying sprite"
+    },
+    "visual_notes": "v01-v03四格直接生成均因躯干转动或喙不清楚退回。v04先生成一张清晰侧面渡鸦，再上传同一张参考生成平翼/下拍；按源图白眼坐标对齐，共用同一比例和色板。第四帧复用平翼作为回程相。逐帧检查眼(24,15)、喙朝右、躯干和翅膀不裁切，Chrome检查首尾循环。未在Python重画鸟。",
+    "game_tested": false
+  },
+  "dead_nail": {
+    "version": "v01",
+    "status": "accepted",
+    "review_kind": "art_self_check_only",
+    "checks": {
+      "dimensions_rgba_binary_alpha": "checked by local pixel audit",
+      "style_palette_light_outline": "checked beside project reference at1x and nearest4x; upper-left lighting",
+      "facing_and_anchor": "right where directional; bottom anchor checked for grounded animations; central effect origin otherwise",
+      "native_dark_background": "viewed on #121721 at1x and enlarged",
+      "no_text_watermark_scene": "visually checked",
+      "animation": "not applicable - static",
+      "tiles_4x4": "not applicable - standalone sprite"
+    },
+    "visual_notes": "16×16灰白弯曲角质片，无手指和血肉，深底可辨。",
+    "game_tested": false
+  },
+  "iron_brazier": {
+    "version": "v02",
+    "status": "accepted",
+    "review_kind": "art_self_check_only",
+    "checks": {
+      "dimensions_rgba_binary_alpha": "checked by local pixel audit",
+      "style_palette_light_outline": "checked beside project reference at1x and nearest4x; upper-left lighting",
+      "facing_and_anchor": "right where directional; bottom anchor checked for grounded animations; central effect origin otherwise",
+      "native_dark_background": "viewed on #121721 at1x and enlarged",
+      "no_text_watermark_scene": "visually checked",
+      "animation": "four-frame strip and GIF reviewed; common palette and anchor checked; cyclic transition reviewed",
+      "tiles_4x4": "not applicable - standalone sprite"
+    },
+    "visual_notes": "原铁盆实体细节变化退回。Piskel逐帧固定下部及左右边缘三块选区，绕开中间火焰；首次大选区截断火焰的尝试已撤销。三个固定区域在四相字节相同。",
+    "game_tested": false
+  },
+  "sun_ember": {
+    "version": "v02",
+    "status": "accepted",
+    "review_kind": "art_self_check_only",
+    "checks": {
+      "dimensions_rgba_binary_alpha": "checked by local pixel audit",
+      "style_palette_light_outline": "checked beside project reference at1x and nearest4x; upper-left lighting",
+      "facing_and_anchor": "right where directional; bottom anchor checked for grounded animations; central effect origin otherwise",
+      "native_dark_background": "viewed on #121721 at1x and enlarged",
+      "no_text_watermark_scene": "visually checked",
+      "animation": "four-frame strip and GIF reviewed; common palette and anchor checked; cyclic transition reviewed",
+      "tiles_4x4": "not applicable - standalone sprite"
+    },
+    "visual_notes": "v01核心位置偏移退回；仅整帧平移对齐热核与炭石，未重绘。四相亮度从暗到亮再回暗，周围火星变化，深底轮廓可见。",
+    "game_tested": false
+  },
+  "fate_thread_gold": {
+    "version": "v02",
+    "status": "accepted",
+    "review_kind": "art_self_check_only",
+    "checks": {
+      "dimensions_rgba_binary_alpha": "checked by local pixel audit",
+      "style_palette_light_outline": "checked beside project reference at1x and nearest4x; upper-left lighting",
+      "facing_and_anchor": "right where directional; bottom anchor checked for grounded animations; central effect origin otherwise",
+      "native_dark_background": "viewed on #121721 at1x and enlarged",
+      "no_text_watermark_scene": "visually checked",
+      "animation": "not applicable - static",
+      "tiles_4x4": "not applicable - standalone sprite"
+    },
+    "visual_notes": "v01在16×16像金块，退回；v02加强三道弯曲线带与暗缝、右侧线尾，1倍能读为线团。",
+    "game_tested": false
+  },
+  "fate_thread_silver": {
+    "version": "v01",
+    "status": "accepted",
+    "review_kind": "art_self_check_only",
+    "checks": {
+      "dimensions_rgba_binary_alpha": "checked by local pixel audit",
+      "style_palette_light_outline": "checked beside project reference at1x and nearest4x; upper-left lighting",
+      "facing_and_anchor": "right where directional; bottom anchor checked for grounded animations; central effect origin otherwise",
+      "native_dark_background": "viewed on #121721 at1x and enlarged",
+      "no_text_watermark_scene": "visually checked",
+      "animation": "not applicable - static",
+      "tiles_4x4": "not applicable - standalone sprite"
+    },
+    "visual_notes": "以上一项v02为参考；冷银蓝高光和暗钢灰线缝，可与暖白和中灰区分。",
+    "game_tested": false
+  },
+  "fate_thread_black": {
+    "version": "v01",
+    "status": "accepted",
+    "review_kind": "art_self_check_only",
+    "checks": {
+      "dimensions_rgba_binary_alpha": "checked by local pixel audit",
+      "style_palette_light_outline": "checked beside project reference at1x and nearest4x; upper-left lighting",
+      "facing_and_anchor": "right where directional; bottom anchor checked for grounded animations; central effect origin otherwise",
+      "native_dark_background": "viewed on #121721 at1x and enlarged",
+      "no_text_watermark_scene": "visually checked",
+      "animation": "not applicable - static",
+      "tiles_4x4": "not applicable - standalone sprite"
+    },
+    "visual_notes": "黑线主体以近黑、蓝灰细亮边保持深底可辨，未把黑线做成白色大高光。",
+    "game_tested": false
+  },
+  "fate_thread_white": {
+    "version": "v01",
+    "status": "accepted",
+    "review_kind": "art_self_check_only",
+    "checks": {
+      "dimensions_rgba_binary_alpha": "checked by local pixel audit",
+      "style_palette_light_outline": "checked beside project reference at1x and nearest4x; upper-left lighting",
+      "facing_and_anchor": "right where directional; bottom anchor checked for grounded animations; central effect origin otherwise",
+      "native_dark_background": "viewed on #121721 at1x and enlarged",
+      "no_text_watermark_scene": "visually checked",
+      "animation": "not applicable - static",
+      "tiles_4x4": "not applicable - standalone sprite"
+    },
+    "visual_notes": "暖白线带和柔灰缝，区别于冷银色、深黑与中灰；小线尾完整。",
+    "game_tested": false
+  },
+  "fate_thread_gray": {
+    "version": "v01",
+    "status": "accepted",
+    "review_kind": "art_self_check_only",
+    "checks": {
+      "dimensions_rgba_binary_alpha": "checked by local pixel audit",
+      "style_palette_light_outline": "checked beside project reference at1x and nearest4x; upper-left lighting",
+      "facing_and_anchor": "right where directional; bottom anchor checked for grounded animations; central effect origin otherwise",
+      "native_dark_background": "viewed on #121721 at1x and enlarged",
+      "no_text_watermark_scene": "visually checked",
+      "animation": "not applicable - static",
+      "tiles_4x4": "not applicable - standalone sprite"
+    },
+    "visual_notes": "中性灰线带，亮度介于银白与黑之间；同类小线团的线带、线尾一致。",
+    "game_tested": false
+  },
+  "ice_vortex": {
+    "version": "v01",
+    "status": "accepted",
+    "review_kind": "art_self_check_only",
+    "checks": {
+      "dimensions_rgba_binary_alpha": "checked by local pixel audit",
+      "style_palette_light_outline": "checked beside project reference at1x and nearest4x; upper-left lighting",
+      "facing_and_anchor": "right where directional; bottom anchor checked for grounded animations; central effect origin otherwise",
+      "native_dark_background": "viewed on #121721 at1x and enlarged",
+      "no_text_watermark_scene": "visually checked",
+      "animation": "four-frame strip and GIF reviewed; common palette and anchor checked; cyclic transition reviewed",
+      "tiles_4x4": "not applicable - standalone sprite"
+    },
+    "visual_notes": "四相旋转，三臂结晶结构与蓝白色板一致；整帧微移固定环心，透明中心保留。",
+    "game_tested": false
+  },
+  "ice_fishing_hole": {
+    "version": "v01",
+    "status": "accepted",
+    "review_kind": "art_self_check_only",
+    "checks": {
+      "dimensions_rgba_binary_alpha": "checked by local pixel audit",
+      "style_palette_light_outline": "checked beside project reference at1x and nearest4x; upper-left lighting",
+      "facing_and_anchor": "right where directional; bottom anchor checked for grounded animations; central effect origin otherwise",
+      "native_dark_background": "viewed on #121721 at1x and enlarged",
+      "no_text_watermark_scene": "visually checked",
+      "animation": "not applicable - static",
+      "tiles_4x4": "not applicable - standalone sprite"
+    },
+    "visual_notes": "64×48中包括一个椭圆暗冰洞、冰缘、插在右侧的木鱼竿和入水细线；非完整湖面场景。",
+    "game_tested": false
+  },
+  "giant_footprint": {
+    "version": "v01",
+    "status": "accepted",
+    "review_kind": "art_self_check_only",
+    "checks": {
+      "dimensions_rgba_binary_alpha": "checked by local pixel audit",
+      "style_palette_light_outline": "checked beside project reference at1x and nearest4x; upper-left lighting",
+      "facing_and_anchor": "right where directional; bottom anchor checked for grounded animations; central effect origin otherwise",
+      "native_dark_background": "viewed on #121721 at1x and enlarged",
+      "no_text_watermark_scene": "visually checked",
+      "animation": "not applicable - static",
+      "tiles_4x4": "not applicable - standalone sprite"
+    },
+    "visual_notes": "单个宽脚掌与五趾凹痕，俯视；作为独立脚印而非重复脚印串，无雪地底图。",
+    "game_tested": false
+  },
+  "tombstone_dormant": {
+    "version": "v01",
+    "status": "accepted",
+    "review_kind": "art_self_check_only",
+    "checks": {
+      "dimensions_rgba_binary_alpha": "checked by local pixel audit",
+      "style_palette_light_outline": "checked beside project reference at1x and nearest4x; upper-left lighting",
+      "facing_and_anchor": "right where directional; bottom anchor checked for grounded animations; central effect origin otherwise",
+      "native_dark_background": "viewed on #121721 at1x and enlarged",
+      "no_text_watermark_scene": "visually checked",
+      "animation": "not applicable - static",
+      "tiles_4x4": "not applicable - standalone sprite"
+    },
+    "visual_notes": "石碑上左冷高光、灰暗刻痕、破损岩石底座；与唤醒版并排比较了轮廓、落点和纹理。",
+    "game_tested": false
+  },
+  "tombstone_awakened": {
+    "version": "v01",
+    "status": "accepted",
+    "review_kind": "art_self_check_only",
+    "checks": {
+      "dimensions_rgba_binary_alpha": "checked by local pixel audit",
+      "style_palette_light_outline": "checked beside project reference at1x and nearest4x; upper-left lighting",
+      "facing_and_anchor": "right where directional; bottom anchor checked for grounded animations; central effect origin otherwise",
+      "native_dark_background": "viewed on #121721 at1x and enlarged",
+      "no_text_watermark_scene": "visually checked",
+      "animation": "not applicable - static",
+      "tiles_4x4": "not applicable - standalone sprite"
+    },
+    "visual_notes": "上传暗淡版作参考；同一石碑，刻痕和局部边缘金亮，保持石块灰色和占地。",
+    "game_tested": false
+  },
+  "glowing_rune_01": {
+    "version": "v01",
+    "status": "accepted",
+    "review_kind": "art_self_check_only",
+    "checks": {
+      "dimensions_rgba_binary_alpha": "checked by local pixel audit",
+      "style_palette_light_outline": "checked beside project reference at1x and nearest4x; upper-left lighting",
+      "facing_and_anchor": "right where directional; bottom anchor checked for grounded animations; central effect origin otherwise",
+      "native_dark_background": "viewed on #121721 at1x and enlarged",
+      "no_text_watermark_scene": "visually checked",
+      "animation": "not applicable - static",
+      "tiles_4x4": "not applicable - standalone sprite"
+    },
+    "visual_notes": "树杈状竖干符印，金白核心、琥珀暗边；无字母、文字、水印。",
+    "game_tested": false
+  },
+  "glowing_rune_02": {
+    "version": "v02",
+    "status": "accepted",
+    "review_kind": "art_self_check_only",
+    "checks": {
+      "dimensions_rgba_binary_alpha": "checked by local pixel audit",
+      "style_palette_light_outline": "checked beside project reference at1x and nearest4x; upper-left lighting",
+      "facing_and_anchor": "right where directional; bottom anchor checked for grounded animations; central effect origin otherwise",
+      "native_dark_background": "viewed on #121721 at1x and enlarged",
+      "no_text_watermark_scene": "visually checked",
+      "animation": "not applicable - static",
+      "tiles_4x4": "not applicable - standalone sprite"
+    },
+    "visual_notes": "v01与第三种同为菱形，辨识度不足退回；v02改为两段错位折线，和树杈、菱形明显区分。",
+    "game_tested": false
+  },
+  "glowing_rune_03": {
+    "version": "v01",
+    "status": "accepted",
+    "review_kind": "art_self_check_only",
+    "checks": {
+      "dimensions_rgba_binary_alpha": "checked by local pixel audit",
+      "style_palette_light_outline": "checked beside project reference at1x and nearest4x; upper-left lighting",
+      "facing_and_anchor": "right where directional; bottom anchor checked for grounded animations; central effect origin otherwise",
+      "native_dark_background": "viewed on #121721 at1x and enlarged",
+      "no_text_watermark_scene": "visually checked",
+      "animation": "not applicable - static",
+      "tiles_4x4": "not applicable - standalone sprite"
+    },
+    "visual_notes": "菱形加垂尾符印，和树杈、折线的轮廓不同，32×32深底能辨。",
+    "game_tested": false
+  },
+  "ice_block": {
+    "version": "v01",
+    "status": "accepted",
+    "review_kind": "art_self_check_only",
+    "checks": {
+      "dimensions_rgba_binary_alpha": "checked by local pixel audit",
+      "style_palette_light_outline": "checked beside project reference at1x and nearest4x; upper-left lighting",
+      "facing_and_anchor": "right where directional; bottom anchor checked for grounded animations; central effect origin otherwise",
+      "native_dark_background": "viewed on #121721 at1x and enlarged",
+      "no_text_watermark_scene": "visually checked",
+      "animation": "not applicable - static",
+      "tiles_4x4": "not applicable - standalone sprite"
+    },
+    "visual_notes": "大块蓝冰内有与现有霜巨人相应的宽肩、白毛、胡须战士暗影。冰体内部采用不透明像素表现通透感，未用半透明背景。",
+    "game_tested": false
+  },
+  "einherjar_idle": {
+    "version": "v01",
+    "status": "accepted",
+    "review_kind": "art_self_check_only",
+    "checks": {
+      "dimensions_rgba_binary_alpha": "checked by local pixel audit",
+      "style_palette_light_outline": "checked beside project reference at1x and nearest4x; upper-left lighting",
+      "facing_and_anchor": "right where directional; bottom anchor checked for grounded animations; central effect origin otherwise",
+      "native_dark_background": "viewed on #121721 at1x and enlarged",
+      "no_text_watermark_scene": "visually checked",
+      "animation": "four-frame strip and GIF reviewed; common palette and anchor checked; cyclic transition reviewed",
+      "tiles_4x4": "not applicable - standalone sprite"
+    },
+    "visual_notes": "面朝右的金色战魂，角盔、圆盾、直剑；轻微呼吸，四相脚底y46，统一32色作为攻击唯一色板。",
+    "game_tested": false
+  },
+  "einherjar_attack": {
+    "version": "v02",
+    "status": "accepted",
+    "review_kind": "art_self_check_only",
+    "checks": {
+      "dimensions_rgba_binary_alpha": "checked by local pixel audit",
+      "style_palette_light_outline": "checked beside project reference at1x and nearest4x; upper-left lighting",
+      "facing_and_anchor": "right where directional; bottom anchor checked for grounded animations; central effect origin otherwise",
+      "native_dark_background": "viewed on #121721 at1x and enlarged",
+      "no_text_watermark_scene": "visually checked",
+      "animation": "four-frame strip and GIF reviewed; common palette and anchor checked; cyclic transition reviewed",
+      "tiles_4x4": "not applicable - standalone sprite"
+    },
+    "visual_notes": "原第四相有脱离人物的残刃，Piskel选择清除后通过；四相为准备、上举、朝右出剑、收势，脚底y46，无刀光等混入人物帧。攻击RGB色均来自待机帧条。",
+    "game_tested": false
+  }
+}

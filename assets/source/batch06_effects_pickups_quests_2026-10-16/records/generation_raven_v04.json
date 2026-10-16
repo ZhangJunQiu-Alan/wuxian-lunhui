@@ -1,0 +1,75 @@
+{
+  "id": "raven",
+  "version": "v04",
+  "tool": "builtin image_gen for three single poses; Pillow only common crop, nearest-neighbor scale, shared palette and frame layout",
+  "sources": [
+    "originals/raven_single_v04_raw.png",
+    "originals/raven_mid_v04_raw.png",
+    "originals/raven_down_v04_raw.png"
+  ],
+  "generation_records": [
+    "records/generation_raven_single_v04.json",
+    "records/generation_raven_mid_v04.json",
+    "records/generation_raven_down_v04.json"
+  ],
+  "reference": "originals/raven_single_v04_raw.png",
+  "sequence": [
+    "single",
+    "mid",
+    "down",
+    "mid"
+  ],
+  "note": "Four-phase reversible wingbeat up/mid/down/mid; three unique poses intentionally reused for upward return. Same scaling and fixed eye anchor for every pose; no body painting in Python. Source white eye RGB253,253,255 reserved in shared palette so a one-pixel feature is not averaged into blue-gray.",
+  "source_eyes": {
+    "single": [
+      1169,
+      632
+    ],
+    "mid": [
+      1169,
+      632
+    ],
+    "down": [
+      1159,
+      364
+    ]
+  },
+  "common_crop_size": [
+    1290,
+    1198
+  ],
+  "crops": [
+    [
+      133,
+      61,
+      1423,
+      1259
+    ],
+    [
+      133,
+      61,
+      1423,
+      1259
+    ],
+    [
+      123,
+      -207,
+      1413,
+      991
+    ],
+    [
+      133,
+      61,
+      1423,
+      1259
+    ]
+  ],
+  "scaled_cell": [
+    28,
+    26
+  ],
+  "placement": [
+    2,
+    3
+  ]
+}

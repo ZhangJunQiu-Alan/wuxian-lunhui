@@ -1,0 +1,21 @@
+{
+  "id": "feather_blade",
+  "label": "羽刃",
+  "folder": "effects",
+  "w": 32,
+  "h": 32,
+  "frames": 1,
+  "loop": false,
+  "anchor": "center",
+  "subject": "A single sharp wing-feather shaped magical blade pointed exactly right, tapered ivory feather vanes, one golden central quill, steel-gray lower edge. Clear feather silhouette and sharp pointed tip, no glow cloud, no bird.",
+  "status": "pending",
+  "prompt": "Use case: stylized-concept. Asset type: production low-resolution pixel-art game sprite feather_blade. Input image 1 is ONLY project-owned style reference: match its cold northern palette, strong dark contours, upper-left highlights and broad readable pixel clusters; do not reproduce its characters or labels.\nSubject: A single sharp wing-feather shaped magical blade pointed exactly right, tapered ivory feather vanes, one golden central quill, steel-gray lower edge. Clear feather silhouette and sharp pointed tip, no glow cloud, no bird.\nLayout: ONE single sprite, target canvas 32x32 logical pixels. Invisible cell boundaries; every cell has at least TWO LOGICAL PIXELS fully transparent border. Respect tiny logical resolution, use deliberately simple chunky pixel clusters; upscale with nearest neighbor only. No fine high-resolution painted details, no antialiasing. \nOutput: genuine transparent RGBA background, clean binary opacity, limited palette 24-32 colors, no dithering. No checkerboard painting, no frame outlines, no labels, text, watermark, signature or background scenery. Whole asset visible.",
+  "refs": [
+    "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/batch06_effects_pickups_quests_2026-10-16/refs/style_reference.png"
+  ],
+  "version": "v01",
+  "tool": "builtin image_gen",
+  "source": "/Users/zhangjunqiu/.codex/generated_images/01a14377-c537-7a10-b5df-10043f63fbe0/exec-b09b0187-7860-46e2-81e5-c7705c0d8395.png",
+  "saved": "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/batch06_effects_pickups_quests_2026-10-16/originals/feather_blade_v01_raw.png",
+  "output_hint": "Generated images are saved to /Users/zhangjunqiu/.codex/generated_images/01a14377-c537-7a10-b5df-10043f63fbe0 as /Users/zhangjunqiu/.codex/generated_images/01a14377-c537-7a10-b5df-10043f63fbe0/exec-b09b0187-7860-46e2-81e5-c7705c0d8395.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+}

@@ -110,6 +110,7 @@ func _stomp() -> void:
 	play_once(&"stomp")
 	target.shake(10.0, 0.3)
 	FxLayer.burst(global_position, FROST_COLOR, 30, 260.0)
+	FxLayer.ring(global_position, 150.0)
 	Shockwave.spawn(get_parent(), global_position, _gaps, target)
 
 

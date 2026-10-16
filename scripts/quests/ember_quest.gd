@@ -4,6 +4,7 @@ extends SideQuest
 ## 拿着余烬移速 -20%，狼群闻着光围过来（一半从前方包抄）；受伤时余烬会掉在地上，要回去捡（掉下后 1 秒内捡不起来）
 ## 奖励：大招能量充满，奖励点 +100
 
+const EMBER := preload("res://assets/sprites/quests/sun_ember.png")  # 4 帧闪烁
 const PICKUP := 30.0
 const ALTAR_RADIUS := 70.0
 const CARRY_SPEED := 0.8
@@ -104,5 +105,4 @@ func _draw_overlay() -> void:
 func _draw_ember(canvas: CanvasItem, p: Vector2) -> void:
 	var flicker := 0.8 + 0.2 * sin(_time * 13.0)
 	canvas.draw_circle(p, 20.0 * flicker, Color(color, 0.18))
-	canvas.draw_circle(p, 9.0, Color(1.0, 0.6, 0.2))
-	canvas.draw_circle(p, 5.0 * flicker, Color(1.0, 0.95, 0.7))
+	SpriteVisual.draw_frame(canvas, EMBER, 4, int(_time * 8.0), p.round(), Vector2(16, 16))

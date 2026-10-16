@@ -1,0 +1,19 @@
+{
+  "id": "einherjar_attack",
+  "label": "英灵攻击",
+  "folder": "quests",
+  "w": 48,
+  "h": 48,
+  "frames": 4,
+  "loop": false,
+  "anchor": "bottom",
+  "subject": "Animate the identical golden spectral northern warrior from reference, facing right. Four sword attack poses: ready, raised backswing, forward rightward sword strike, recovery. Keep same horned helmet, short beard, round shield design on near arm, single sword in other hand, identical gold palette and body size. All frames fit48x48 including sword with margins, stable feet baseline. No trails or effects.",
+  "status": "pending",
+  "version": "v01",
+  "refs": [
+    "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/batch06_effects_pickups_quests_2026-10-16/refs/einherjar_idle_reference.png"
+  ],
+  "prompt": "Use case: identity-preserve. Asset type: pixel-art game sprite. Input image1 is the EXACT project-owned design and pixel style to retain. It is an enlarged nearest-neighbor preview; preserve the low logical pixel resolution. Subject: Animate the identical golden spectral northern warrior from reference, facing right. Four sword attack poses: ready, raised backswing, forward rightward sword strike, recovery. Keep same horned helmet, short beard, round shield design on near arm, single sword in other hand, identical gold palette and body size. All frames fit48x48 including sword with margins, stable feet baseline. No trails or effects.\nLayout: EXACTLY FOUR frames in a 2 by 2 grid of equal 48x48 logical cells, reading order top-left, top-right, bottom-left, bottom-right. True transparent background, binary opaque pixel clusters, no background image or checkerboard. Use same limited palette and dark outlines as reference, upper-left light. Whole subject including weapon or open lid must fit with2 logical pixels of clear margin. No names, letters, watermarks, labels or ground. Keep identical sword length and helmet silhouette, no change in armor details or shield pattern. Stable foot baseline, clear anticipation and strike.",
+  "source": "/Users/zhangjunqiu/.codex/generated_images/01a14377-c537-7a10-b5df-10043f63fbe0/exec-da51f2e3-1e8e-4e0e-a9ee-227b7737a7d2.png",
+  "tool": "builtin image_gen"
+}

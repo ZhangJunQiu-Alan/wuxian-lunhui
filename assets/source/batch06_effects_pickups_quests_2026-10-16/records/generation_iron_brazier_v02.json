@@ -1,0 +1,14 @@
+{
+  "id": "iron_brazier",
+  "version": "v02",
+  "tool": "Chrome Piskel",
+  "source": "originals/iron_brazier_v01_raw.png",
+  "input": "candidates/iron_brazier_v01.png",
+  "project": "originals/iron_brazier_piskel_fixed.piskel",
+  "actions": [
+    "Initial full-width y19 replacement rejected visually because flame cutoff; reverted via6 Undo",
+    "Copy fixed body y27..47 plus left x0..17,y18..26 and right x31..47,y18..26 from frame1",
+    "Clear and paste each region into frames2,3,4; preserve central flame area",
+    "Export192x48 PNG and editable project"
+  ]
+}
