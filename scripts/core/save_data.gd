@@ -5,14 +5,16 @@ extends Node
 ## 测试时用命令行参数 --save-file=user://test_save.json 换一个文件，避免弄乱真实存档
 
 const DEFAULT_PATH := "user://save.json"
-const VERSION := 1
+const VERSION := 2
+## 第 1 版存档里的角色 id 是原型人物的名字，第 2 版改成职业名
+const RENAMED_CHARACTERS := {"musashi": "swordsman", "annie": "gunslinger", "lanling": "assassin", "merlin": "mage"}
 
 var path := DEFAULT_PATH
 var reward_points := 0
 var story_points := 0
 var meta := {}  # 永久强化 id -> 等级
 var stats := _default_stats()
-var selected_character := "musashi"
+var selected_character := "swordsman"
 var unlocked_characters: Array[String] = []  # 花点数解锁的角色（其他角色按条件自动解锁）
 
 
@@ -41,8 +43,9 @@ func load_game() -> void:
 	meta = {}
 	for id: String in data.get("meta", {}):
 		meta[id] = int(data.meta[id])
-	selected_character = data.get("selected_character", "musashi")
-	unlocked_characters.assign(data.get("unlocked_characters", []))
+	selected_character = data.get("selected_character", "swordsman")
+	selected_character = RENAMED_CHARACTERS.get(selected_character, selected_character)
+	unlocked_characters.assign(data.get("unlocked_characters", []).map(func(id: String) -> String: return RENAMED_CHARACTERS.get(id, id)))
 	var saved_stats: Dictionary = data.get("stats", {})
 	for key: String in stats:
 		if saved_stats.has(key):
@@ -117,6 +120,6 @@ func reset() -> void:
 	story_points = 0
 	meta = {}
 	stats = _default_stats()
-	selected_character = "musashi"
+	selected_character = "swordsman"
 	unlocked_characters = []
 	save_game()

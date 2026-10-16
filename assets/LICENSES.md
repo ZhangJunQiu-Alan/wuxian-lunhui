@@ -70,3 +70,7 @@
 第7批 C 进行中补记（2026-10-16）：用户批准内置生成路线后三位角色静态、待机、攻击与受击采用内置image_gen并上传本项目原图和精灵参考，沿用本台账的OpenAI商业输出使用与所有权依据。逐轮实际提示词/原图/失败候选存于batch07/records/builtin_C_*.json及originals。Pillow仅做固定RGB色板、二值透明、尺寸/整帧定位、裁排与预览，未在Python重画角色。无新增第三方角色素材、注册、付款或收费API；各项是否通过以manifest为准，当前20/29项通过美术自检。
 
 第7批交付补记（2026-10-16）：29项完成美术自检（23条动画、3张静态、3张特写），未游戏实测。A/B的Chrome ChatGPT原图与Piskel实际修帧、C的内置image_gen带项目自有参考生成，以及Pillow尺寸/二值透明/固定色板/整帧定位/裁排/预览均逐项列入batch07 manifest。实际提示词及原图保留；C未使用Piskel手工绘制。继续沿用上文已核查的OpenAI内容所有权及商用条款、Piskel用户保留作品权利、Pillow MIT-CMU，无新增工具、第三方角色美术、注册、付费或收费API。29个成品与approved和候选SHA256一致，技术核对见source/batch07_combat_characters_2026-10-16/records/final_audit.json；美术自检不替代游戏验收。
+
+### 角色文件改名（2026-10-16）
+
+角色素材的文件名从原型人物名改为职业名：`musashi_*` → `swordsman_*`，`annie_*` → `gunslinger_*`，`lanling_*` → `assassin_*`，`merlin_*` → `mage_*`。图片内容没有变化，上文各批记录里的旧文件名对应这些新文件。`assets/source/` 里的原稿保留当时的文件名。

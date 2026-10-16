@@ -99,7 +99,7 @@ func _ready() -> void:
 	hp = max_hp
 	move_speed = data.speed
 	ult_cost = data.ult_cost
-	if character_id == "merlin":
+	if character_id == "mage":
 		choice_count = 4  # 先知
 
 	# 素材：assets/sprites/characters/<角色id>_idle/_move/_hurt/_death.png 动作帧条，没有就用 <角色id>.png
@@ -109,16 +109,16 @@ func _ready() -> void:
 		add_child(_sprite)
 
 	match character_id:  # 角色的基础武器
-		"musashi":
+		"swordsman":
 			katana = Katana.new()
 			add_child(katana)
-		"annie":
+		"gunslinger":
 			revolver = Revolver.new()
 			add_child(revolver)
-		"lanling":
+		"assassin":
 			blades = TwinBlades.new()
 			add_child(blades)
-		"merlin":
+		"mage":
 			nova = ArcaneNova.new()
 			add_child(nova)
 
@@ -242,13 +242,13 @@ func try_ultimate() -> void:
 	ult_energy = 0.0
 	ult_changed.emit(ult_energy, ult_cost)
 	match character_id:
-		"musashi":
+		"swordsman":
 			DimensionSlash.cast(self)
-		"annie":
+		"gunslinger":
 			WildWestShow.cast(self)
-		"lanling":
+		"assassin":
 			EnterFormation.cast(self)
-		"merlin":
+		"mage":
 			Stonehenge.cast(self)
 	ult_cast.emit(character_id)
 

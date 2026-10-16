@@ -8,10 +8,10 @@ class_name CharacterDB
 ##   素材：assets/sprites/characters/<id>_idle/_move/_hurt/_death.png 动作帧条（没有就用 <id>.png），特写立绘 <id>_cutin.png
 
 const CUTIN_DIR := "res://assets/sprites/characters/"
-const DEFAULT_ID := "musashi"
+const DEFAULT_ID := "swordsman"
 
 const ALL := {
-	"musashi": {
+	"swordsman": {
 		"name": "剑士", "title": "东方剑客",
 		"hp": 110.0, "speed": 220.0, "color": Color(0.95, 0.85, 0.55),
 		"weapon": "太刀", "weapon_desc": "扇形斩击，自动砍向攻击范围内最近的敌人",
@@ -23,7 +23,7 @@ const ALL := {
 		"cutin_line": "千日为锻，万日为炼。\n这一刀，连天地也斩得开。",
 		"cutin_color": Color(0.55, 0.65, 1.0),
 	},
-	"annie": {
+	"gunslinger": {
 		"name": "枪手", "title": "西部神枪手",
 		"hp": 90.0, "speed": 230.0, "color": Color(0.95, 0.6, 0.35),
 		"weapon": "左轮手枪", "weapon_desc": "快速射击射程内最近的敌人，每打 6 发换一次弹",
@@ -35,7 +35,7 @@ const ALL := {
 		"cutin_line": "女士们，先生们——\n表演开始了。",
 		"cutin_color": Color(1.0, 0.65, 0.3),
 	},
-	"lanling": {
+	"assassin": {
 		"name": "刺客", "title": "鬼面刺客",
 		"hp": 85.0, "speed": 245.0, "color": Color(0.8, 0.3, 0.35),
 		"weapon": "双刃", "weapon_desc": "射程极短、出手极快的近身连刺",
@@ -47,7 +47,7 @@ const ALL := {
 		"cutin_line": "五百骑，随我入阵。",
 		"cutin_color": Color(0.9, 0.3, 0.3),
 	},
-	"merlin": {
+	"mage": {
 		"name": "法师", "title": "大魔法师",
 		"hp": 100.0, "speed": 210.0, "color": Color(0.6, 0.55, 1.0),
 		"weapon": "奥术新星", "weapon_desc": "以自身为中心扩散的魔法环，伤害并击退敌人",
