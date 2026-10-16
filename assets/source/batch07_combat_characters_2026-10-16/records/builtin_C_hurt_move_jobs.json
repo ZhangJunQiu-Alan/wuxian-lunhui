@@ -1,0 +1,42 @@
+[
+  {
+    "id": "annie_hurt",
+    "character": "annie",
+    "frames": 2,
+    "version": "v01",
+    "prompt": "Use case: identity-preserve. Input1 is authoritative64x64sprite enlarged8x. Create authentic low-resolution pixel animation of EXACT SAME character, unchanged head size/costume/palette/48px human height. All cells64x64logical at8x nearest-neighbor enlargement, transparent background, upper-left light, dark outline, head fixed near y12, soles y59, bodycenterx32, minimum2px clear border. Face/body right. No text/grid/effects/scene/ground shadows or added accessories. petite1880s western stage markswoman, brown wide-brim hat, burgundy blouse with brass medals, knee-length brown fringed skirt, tall brown boots, lowered steel revolver. TWO equalcells in ONE horizontalrow. Frame1 flinch: slight backward torso lean, shoulders tense, same feet stay planted at original x and y59; both weapons keep their exact length. Frame2 recover halfway to original neutral, torso/head restored and feet unchanged. Small controlled body reaction, no falling, no flash/tint/effects; do not move whole sprite backwards.",
+    "raw": "originals/annie_hurt_v01_raw.png",
+    "generated_path": "/Users/zhangjunqiu/.codex/generated_images/01a14377-c537-7a10-b5df-10043f63fbe0/exec-c439fe03-dc9e-446d-9336-9bdc5a86ccb6.png",
+    "status": "generated_pending_review"
+  },
+  {
+    "id": "lanling_hurt",
+    "character": "lanling",
+    "frames": 2,
+    "version": "v01",
+    "prompt": "Use case: identity-preserve. Input1 is authoritative64x64sprite enlarged8x. Create authentic low-resolution pixel animation of EXACT SAME character, unchanged head size/costume/palette/48px human height. All cells64x64logical at8x nearest-neighbor enlargement, transparent background, upper-left light, dark outline, head fixed near y12, soles y59, bodycenterx32, minimum2px clear border. Face/body right. No text/grid/effects/scene/ground shadows or added accessories. masked ancient eastern general, reddish carved wooden full-face demon mask, dark scale armor, red cloak, two short steel blades. TWO equalcells in ONE horizontalrow. Frame1 flinch: slight backward torso lean, shoulders tense, same feet stay planted at original x and y59; both weapons keep their exact length. Frame2 recover halfway to original neutral, torso/head restored and feet unchanged. Small controlled body reaction, no falling, no flash/tint/effects; do not move whole sprite backwards.",
+    "raw": "originals/lanling_hurt_v01_raw.png",
+    "generated_path": "/Users/zhangjunqiu/.codex/generated_images/01a14377-c537-7a10-b5df-10043f63fbe0/exec-ee243270-e55a-4db7-b433-75e5e6162092.png",
+    "status": "generated_pending_review"
+  },
+  {
+    "id": "merlin_hurt",
+    "character": "merlin",
+    "frames": 2,
+    "version": "v01",
+    "prompt": "Use case: identity-preserve. Input1 is authoritative64x64sprite enlarged8x. Create authentic low-resolution pixel animation of EXACT SAME character, unchanged head size/costume/palette/48px human height. All cells64x64logical at8x nearest-neighbor enlargement, transparent background, upper-left light, dark outline, head fixed near y12, soles y59, bodycenterx32, minimum2px clear border. Face/body right. No text/grid/effects/scene/ground shadows or added accessories. upright elderly mage, dark blue hooded long robe, white beard, same long plain wooden staff. TWO equalcells in ONE horizontalrow. Frame1 flinch: slight backward torso lean, shoulders tense, same feet stay planted at original x and y59; both weapons keep their exact length. Frame2 recover halfway to original neutral, torso/head restored and feet unchanged. Small controlled body reaction, no falling, no flash/tint/effects; do not move whole sprite backwards.",
+    "raw": "originals/merlin_hurt_v01_raw.png",
+    "generated_path": "/Users/zhangjunqiu/.codex/generated_images/01a14377-c537-7a10-b5df-10043f63fbe0/exec-ed0c400f-46ae-45d8-ae72-1826d0cb9f0f.png",
+    "status": "generated_pending_review"
+  },
+  {
+    "id": "lanling_move",
+    "character": "lanling",
+    "frames": 6,
+    "version": "v01",
+    "prompt": "Use case: identity-preserve. Input1 is authoritative64x64sprite enlarged8x. Create authentic low-resolution pixel animation of EXACT SAME character, unchanged head size/costume/palette/48px human height. All cells64x64logical at8x nearest-neighbor enlargement, transparent background, upper-left light, dark outline, head fixed near y12, soles y59, bodycenterx32, minimum2px clear border. Face/body right. No text/grid/effects/scene/ground shadows or added accessories. masked ancient eastern general, reddish carved wooden full-face demon mask, dark scale armor, red cloak, two short steel blades. SIX equalcells3columns x2rows LANDSCAPE3:2 sheet. Athletic walking cycle, head/torso stay level, arms with two short blades held safely low. The NEAR leg is visibly lighter/front and FAR leg darker/behind. Frames1-3: near leg swings forward then plants and passes back, far leg swings from behind through center to forward. Frames4-6: opposite support leg, FAR boot forward and NEAR boot trailing left, then center passing stance and return. Knees clearly bend and opposite leg must lead after half cycle. Never duplicate same boot forward six times. Boots baseline alwaysy59 but swinging foot may lift. No whole-body bounce, no cloak redesign.",
+    "raw": "originals/lanling_move_v01_raw.png",
+    "generated_path": "/Users/zhangjunqiu/.codex/generated_images/01a14377-c537-7a10-b5df-10043f63fbe0/exec-2f586cf1-1fb9-4e07-a3de-869b506f26f2.png",
+    "status": "generated_pending_review"
+  }
+]

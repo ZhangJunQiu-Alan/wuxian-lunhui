@@ -158,13 +158,16 @@ func _tick_timers(delta: float) -> void:
 
 ## 武器出招时调用：转向出招方向；有 <角色id>_attack.png 就播放，否则身体朝出招方向前冲一下
 ## lunge 是前冲的像素数（开枪只需要很小的动作）
-func play_attack(dir: Vector2, lunge: float = 7.0) -> void:
+## interval 是武器两次出手的间隔：出手比动作还快时（双刃、狂野西部秀）动作加速，保证每次都完整播一遍
+func play_attack(dir: Vector2, lunge: float = 7.0, interval: float = 0.0) -> void:
 	_attack_dir = dir
 	_attack_lunge = lunge
 	_attack_time = ATTACK_POSE
 	if _has_action(&"attack"):
 		var frames := _actions.sprite_frames
-		_attack_time = frames.get_frame_count(&"attack") / frames.get_animation_speed(&"attack")
+		var length := frames.get_frame_count(&"attack") / frames.get_animation_speed(&"attack")
+		_actions.speed_scale = maxf(1.0, length / interval) if interval > 0.0 else 1.0
+		_attack_time = length / _actions.speed_scale
 		_actions.play(&"attack")
 		_actions.frame = 0
 
@@ -200,6 +203,8 @@ func _update_action(dir: Vector2) -> void:
 		if not _actions.sprite_frames.has_animation(action):
 			return
 	if _actions.animation != action:
+		if action != &"attack":
+			_actions.speed_scale = 1.0
 		_actions.play(action)
 
 

@@ -52,7 +52,7 @@ func _process(delta: float) -> void:
 	_aim = global_position.direction_to(target.global_position)
 	if _aim == Vector2.ZERO:
 		_aim = player.facing
-	player.play_attack(_aim, 5.0)
+	player.play_attack(_aim, 5.0, _timer)
 
 	var siege := 1.0 + minf(SIEGE_MAX, nearby * SIEGE_PER_ENEMY)  # 破阵加成
 	var dmg := damage * player.damage_mult * siege

@@ -1,0 +1,35 @@
+[
+  {
+    "id": "annie_move",
+    "character": "annie",
+    "guide": "walk",
+    "frames": 6,
+    "prompt": "Use case: identity-preserve. Reference1 is the EXACT64x64 character enlarged8x. Reference2 is a motion DIAGRAM ONLY: cyan identifies the NEAR limb and pink the FAR limb, white blade lines or brown staff show positions; copy its POSES, never its colors, stick figures, grid, numbers or ground lines. Reference3 is original costume detail only. Make an authentic low-resolution pixel sprite sheet, unchanged character proportions/costume/head/equipment/palette, upper-left light, dark outline. All cells64x64logical at8xenlargement, body center x32, boots baseline y59, head at reference height,2px clear on all edges. True transparent background. NO effects, aura, shadows, text, grid, background gradient or checkerboard. SIX cells in3columns x2rows LANDSCAPE3:2 layout. Follow near/far LEG identity from diagram EXACTLY. Frame1 NEAR boot swings FORWARD to right and FAR boot trails BACK to left. Frame2 NEAR leg supports under body while FAR boot bends/lifts behind. Frame3 NEAR boot now swings BACK LEFT, FAR boot swings FORWARD RIGHT. Frame4 FAR boot forward right, NEAR boot back left (the OPPOSITE leg arrangement from frame1). Frame5 FAR leg supports under body, NEAR boot bends/lifts behind. Frame6 NEAR boot comes forward again, FAR boot trails back, then loop to1. Do NOT draw the same right boot forward in all six frames. Trace which hip belongs to each boot, visibly crossing/passing legs under the knee-length fringed skirt. Maintain near boot slightly lighter original brown, far boot darker by original shading, no colored leggings. Head/hat/torso fixed, no whole-body vertical bob. Arms swing gently, SAME revolver safely lowered and visible. Same burgundy blouse, medals, brown knee-length skirt and tall boots.",
+    "version": "v02",
+    "status": "generated_pending_review",
+    "raw_path": "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/batch07_combat_characters_2026-10-16/originals/annie_move_v02_raw.png",
+    "generated_path": "/Users/zhangjunqiu/.codex/generated_images/01a14377-c537-7a10-b5df-10043f63fbe0/exec-eaba21fe-372a-42c1-99e8-446b3afbd951.png"
+  },
+  {
+    "id": "lanling_attack",
+    "character": "lanling",
+    "guide": "blades",
+    "frames": 6,
+    "prompt": "Use case: identity-preserve. Reference1 is the EXACT64x64 character enlarged8x. Reference2 is a motion DIAGRAM ONLY: cyan identifies the NEAR limb and pink the FAR limb, white blade lines or brown staff show positions; copy its POSES, never its colors, stick figures, grid, numbers or ground lines. Reference3 is original costume detail only. Make an authentic low-resolution pixel sprite sheet, unchanged character proportions/costume/head/equipment/palette, upper-left light, dark outline. All cells64x64logical at8xenlargement, body center x32, boots baseline y59, head at reference height,2px clear on all edges. True transparent background. NO effects, aura, shadows, text, grid, background gradient or checkerboard. SIX cells3columns x2rows LANDSCAPE3:2. Follow cyan NEAR-arm and pink FAR-arm poses exactly, while keeping actual armor original colors. Frame1 low dual-blade guard. Frame2 NEAR ARM (shoulder at viewer-left) extends across torso into LOWER thrust, its hand at x45 y37 and blade tip x55 y37; FAR hand guards near shoulder with blade upward. Frame3 near arm retracts. Frame4 FAR ARM (shoulder at viewer-right) extends into UPPER thrust, hand x45 y28 and blade tip x55 y28; NEAR hand stays DOWN at waist, blade low. This must visibly alternate DIFFERENT arms, not repeat the same arm twice. Frame5 retract far arm. Frame6 original guard. Both blades SAME short10logicalpixel length, never beyond x56; bend elbows instead of shrinking body. Full wooden demon mask stays on face. Same NorthernQi scale armor/red cloak and boots planted fixed throughout. No projectile or blade trails.",
+    "version": "v02",
+    "status": "generated_pending_review",
+    "raw_path": "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/batch07_combat_characters_2026-10-16/originals/lanling_attack_v02_raw.png",
+    "generated_path": "/Users/zhangjunqiu/.codex/generated_images/01a14377-c537-7a10-b5df-10043f63fbe0/exec-57c52619-7484-4c4f-9cdf-d1a4243682f5.png"
+  },
+  {
+    "id": "merlin_attack",
+    "character": "merlin",
+    "guide": "staff",
+    "frames": 4,
+    "prompt": "Use case: identity-preserve. Reference1 is the EXACT64x64 character enlarged8x. Reference2 is a motion DIAGRAM ONLY: cyan identifies the NEAR limb and pink the FAR limb, white blade lines or brown staff show positions; copy its POSES, never its colors, stick figures, grid, numbers or ground lines. Reference3 is original costume detail only. Make an authentic low-resolution pixel sprite sheet, unchanged character proportions/costume/head/equipment/palette, upper-left light, dark outline. All cells64x64logical at8xenlargement, body center x32, boots baseline y59, head at reference height,2px clear on all edges. True transparent background. NO effects, aura, shadows, text, grid, background gradient or checkerboard. FOUR cells2x2. Follow the brown staff positions in diagram precisely: the wooden STAFF IS ALWAYS47logicalpixels LONG, never a short wand. Frame1 staff VERTICAL x44 from y3 to y50, hands on shaft at y26 and34; a long shaft section remains visibly BELOW hands down to y50. Frame2 SAME full staff x44 from y7 to54, lower it with both hands, keep hood/head size and height. Frame3 forcefully plant SAME full staff x47 from y12 to59, hands at y34 and42, torso leans slightly into ground strike. This third pose is unmistakably the attack. Frame4 original neutral staff x27 from y12 to59. Staff length47pixels in EVERY cell; only translation changes, never shrink or remove its lower shaft. Body stays48pixels tall, hood aroundy12 and bootsy59. Same dark-blue hooded robe, long white beard, plain knotted staff. No gem/glow or magic particles.",
+    "version": "v02",
+    "status": "generated_pending_review",
+    "raw_path": "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/batch07_combat_characters_2026-10-16/originals/merlin_attack_v02_raw.png",
+    "generated_path": "/Users/zhangjunqiu/.codex/generated_images/01a14377-c537-7a10-b5df-10043f63fbe0/exec-c9a0cc99-fa3d-45ff-8c94-bb0f61199946.png"
+  }
+]

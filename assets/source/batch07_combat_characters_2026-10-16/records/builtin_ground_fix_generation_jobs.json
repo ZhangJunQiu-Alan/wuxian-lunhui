@@ -1,0 +1,26 @@
+[
+  {
+    "id": "frost_giant",
+    "version": "v06",
+    "previous": "v05",
+    "prompt": "Precise surgical correction of this four-frame pixel sprite sheet. KEEP exact character pixel style, head/chest proportions and deep squat. Fix the ground contact ONLY: in frame2 top-right and frame3 bottom-left, the club head extends BELOW the bottom of the giant's front boot. This is wrong. Raise the club AND gripping forearms slightly so the LOWEST point of the club head is at exactly the SAME horizontal line as the bottom sole of the front-left boot. Rotate shaft more vertically and tuck hands near knees to move clubhead LEFT closer to right knee. The club head should be directly beside right boot, not far away. Preserve the same club design and shaft length in every frame. Across all four frames the FRONT-LEFT boot must be at exactly the same x/y position relative to its cell, with the same boot size. Keep feet anchored; knees and hips can bend. Keep body center fixed. Frame1 overhead deep crouch and frame4 neutral remain same pose. Four2x2cells, equal size, actual transparent background, NO ground line or effects, no text. Do not shrink body. Keep 6logicalpixels transparent on right side beyond the weapon in frames2/3. Fix club ground height and compact reach, do not change character.",
+    "tool": "built-in image_gen",
+    "raw": "originals/frost_giant_attack_v06_raw.png",
+    "tool_output_path": "/Users/zhangjunqiu/.codex/generated_images/01a14377-c537-7a10-b5df-10043f63fbe0/exec-d0158fbd-7047-40c0-b9d0-d434e88938de.png",
+    "reference": "originals/frost_giant_attack_v05_raw.png",
+    "date": "2026-10-16",
+    "status": "raw_saved_pending_review"
+  },
+  {
+    "id": "frost_giant_elite",
+    "version": "v04",
+    "previous": "v03",
+    "prompt": "Surgical correction of this four-frame elite frost giant animation. Same exact original character, ice crown/spiked armor/white beard/mace/strapped round shield, preserve original pixel style. Fix positional stability: keep the front-left boot sole in EXACTLY the SAME x/y position in ALL FOUR cells, matching the fourth upright frame. Match same boot size and chest/head proportions. Do not center each silhouette using weapon extent. Keep pelvis body horizontal center fixed. In frames2 top-right and3 bottom-left fold elbows and rotate the mace shaft more vertical so its head sits IMMEDIATELY NEXT TO right boot, leaving6logicalpixels transparent space to the right. The mace head lowest point touches same ground baseline as left boot; never below boots. Frame1 deep squatting two-handed overhead stance remains; frame3 decisive grounded slam; frame4 exact neutral recovery. Round shield visibly strapped to left forearm throughout. Four equal 96x96logical cells2x2 layout, genuine transparent background, original muted blue gray brown pixel palette/darkoutline, top-left light. No effects, no grid, no text. The only edit is anchored boots/body and more compact mace reach.",
+    "tool": "built-in image_gen",
+    "raw": "originals/frost_giant_elite_attack_v04_raw.png",
+    "tool_output_path": "/Users/zhangjunqiu/.codex/generated_images/01a14377-c537-7a10-b5df-10043f63fbe0/exec-3f6e57a3-1926-444e-9c18-e865bcc50b55.png",
+    "reference": "originals/frost_giant_elite_attack_v03_raw.png",
+    "date": "2026-10-16",
+    "status": "raw_saved_pending_review"
+  }
+]

@@ -1,0 +1,1557 @@
+{
+  "date": "2026-10-16",
+  "batch": "07",
+  "assets": 29,
+  "animation_strips": 23,
+  "static_sprites": 3,
+  "cutins": 3,
+  "technical_checks_passed": true,
+  "visual_review_records": "C_review_decisions.json plus manifest checks and A/B pixel export verification records",
+  "game_tested": false,
+  "ground_4x4_tiling": "not_applicable_no_ground_assets",
+  "items": [
+    {
+      "id": "musashi_attack",
+      "output": "assets/sprites/characters/musashi_attack.png",
+      "sha256": "8cba1a6ce1b76a439f2dec50fade5bfcc8dee5861e605b046f918c937bbdf512",
+      "size": [
+        384,
+        64
+      ],
+      "frames": 6,
+      "colors": 44,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "bboxes": [
+        [
+          19,
+          12,
+          43,
+          60
+        ],
+        [
+          13,
+          7,
+          45,
+          60
+        ],
+        [
+          16,
+          15,
+          62,
+          60
+        ],
+        [
+          17,
+          15,
+          57,
+          60
+        ],
+        [
+          18,
+          14,
+          46,
+          60
+        ],
+        [
+          20,
+          12,
+          44,
+          60
+        ]
+      ],
+      "source_and_generation_record_exist": true,
+      "approved_candidate_output_identical": true,
+      "gif": {
+        "frames": 6,
+        "size": [
+          256,
+          256
+        ],
+        "8fps_durations_ms": [
+          120,
+          130,
+          120,
+          130,
+          120,
+          130
+        ]
+      },
+      "technical_checks_passed": true
+    },
+    {
+      "id": "draugr_elite_attack",
+      "output": "assets/sprites/enemies/draugr_elite_attack.png",
+      "sha256": "3a312d2f4e4204d6d2fc1564f0541b98c7f1694c94dba77fc2f13ed6f573faf3",
+      "size": [
+        256,
+        64
+      ],
+      "frames": 4,
+      "colors": 45,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "bboxes": [
+        [
+          3,
+          3,
+          60,
+          61
+        ],
+        [
+          5,
+          3,
+          60,
+          61
+        ],
+        [
+          3,
+          4,
+          61,
+          61
+        ],
+        [
+          4,
+          3,
+          60,
+          61
+        ]
+      ],
+      "source_and_generation_record_exist": true,
+      "approved_candidate_output_identical": true,
+      "gif": {
+        "frames": 4,
+        "size": [
+          256,
+          256
+        ],
+        "8fps_durations_ms": [
+          120,
+          130,
+          120,
+          130
+        ]
+      },
+      "technical_checks_passed": true
+    },
+    {
+      "id": "draugr_attack",
+      "output": "assets/sprites/enemies/draugr_attack.png",
+      "sha256": "3cd520562752036437890a8aeab36f8f8604e4be33d5c2122383d49af6d33994",
+      "size": [
+        256,
+        64
+      ],
+      "frames": 4,
+      "colors": 46,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "bboxes": [
+        [
+          7,
+          6,
+          57,
+          60
+        ],
+        [
+          5,
+          6,
+          58,
+          60
+        ],
+        [
+          2,
+          6,
+          62,
+          60
+        ],
+        [
+          8,
+          4,
+          55,
+          60
+        ]
+      ],
+      "source_and_generation_record_exist": true,
+      "approved_candidate_output_identical": true,
+      "gif": {
+        "frames": 4,
+        "size": [
+          256,
+          256
+        ],
+        "8fps_durations_ms": [
+          120,
+          130,
+          120,
+          130
+        ]
+      },
+      "technical_checks_passed": true
+    },
+    {
+      "id": "wolf_attack",
+      "output": "assets/sprites/enemies/wolf_attack.png",
+      "sha256": "9901769148c8962da24a62cafddeb555dd09cbaea93b663665d50064f1b6eb65",
+      "size": [
+        256,
+        64
+      ],
+      "frames": 4,
+      "colors": 41,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "bboxes": [
+        [
+          4,
+          15,
+          59,
+          55
+        ],
+        [
+          3,
+          17,
+          60,
+          55
+        ],
+        [
+          2,
+          15,
+          62,
+          55
+        ],
+        [
+          4,
+          9,
+          59,
+          55
+        ]
+      ],
+      "source_and_generation_record_exist": true,
+      "approved_candidate_output_identical": true,
+      "gif": {
+        "frames": 4,
+        "size": [
+          256,
+          256
+        ],
+        "8fps_durations_ms": [
+          120,
+          130,
+          120,
+          130
+        ]
+      },
+      "technical_checks_passed": true
+    },
+    {
+      "id": "ice_spirit_attack",
+      "output": "assets/sprites/enemies/ice_spirit_attack.png",
+      "sha256": "3768af13492daecfc59467b5d2ead5d01f66547df679a55b21adee006555bf5a",
+      "size": [
+        256,
+        64
+      ],
+      "frames": 4,
+      "colors": 48,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "bboxes": [
+        [
+          7,
+          4,
+          53,
+          60
+        ],
+        [
+          7,
+          4,
+          58,
+          60
+        ],
+        [
+          8,
+          4,
+          58,
+          60
+        ],
+        [
+          7,
+          4,
+          60,
+          60
+        ]
+      ],
+      "source_and_generation_record_exist": true,
+      "approved_candidate_output_identical": true,
+      "gif": {
+        "frames": 4,
+        "size": [
+          256,
+          256
+        ],
+        "8fps_durations_ms": [
+          120,
+          130,
+          120,
+          130
+        ]
+      },
+      "technical_checks_passed": true
+    },
+    {
+      "id": "ice_spirit_elite_attack",
+      "output": "assets/sprites/enemies/ice_spirit_elite_attack.png",
+      "sha256": "1978cf92eb49fa87614434027f6dcee23e5151adb89c925f61dda2fa603fc3cd",
+      "size": [
+        256,
+        64
+      ],
+      "frames": 4,
+      "colors": 47,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "bboxes": [
+        [
+          12,
+          4,
+          53,
+          60
+        ],
+        [
+          13,
+          4,
+          52,
+          60
+        ],
+        [
+          12,
+          4,
+          53,
+          60
+        ],
+        [
+          10,
+          4,
+          56,
+          60
+        ]
+      ],
+      "source_and_generation_record_exist": true,
+      "approved_candidate_output_identical": true,
+      "gif": {
+        "frames": 4,
+        "size": [
+          256,
+          256
+        ],
+        "8fps_durations_ms": [
+          120,
+          130,
+          120,
+          130
+        ]
+      },
+      "technical_checks_passed": true
+    },
+    {
+      "id": "frost_giant_attack",
+      "output": "assets/sprites/enemies/frost_giant_attack.png",
+      "sha256": "ff8cc757fb6639e445c9e32105ea9fee6f5b8c2965b0977a6ad086d13de4d045",
+      "size": [
+        384,
+        96
+      ],
+      "frames": 4,
+      "colors": 48,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "bboxes": [
+        [
+          9,
+          7,
+          87,
+          94
+        ],
+        [
+          14,
+          25,
+          81,
+          94
+        ],
+        [
+          7,
+          25,
+          89,
+          94
+        ],
+        [
+          4,
+          10,
+          91,
+          94
+        ]
+      ],
+      "source_and_generation_record_exist": true,
+      "approved_candidate_output_identical": true,
+      "gif": {
+        "frames": 4,
+        "size": [
+          384,
+          384
+        ],
+        "8fps_durations_ms": [
+          120,
+          130,
+          120,
+          130
+        ]
+      },
+      "technical_checks_passed": true
+    },
+    {
+      "id": "frost_giant_elite_attack",
+      "output": "assets/sprites/enemies/frost_giant_elite_attack.png",
+      "sha256": "dd5bbe36ffec587e4ca2b1f8b96c0cf0e9e5fdc6b4e8dee11d250d71e261c991",
+      "size": [
+        384,
+        96
+      ],
+      "frames": 4,
+      "colors": 48,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "bboxes": [
+        [
+          12,
+          4,
+          83,
+          94
+        ],
+        [
+          11,
+          18,
+          85,
+          94
+        ],
+        [
+          11,
+          25,
+          84,
+          94
+        ],
+        [
+          9,
+          8,
+          87,
+          94
+        ]
+      ],
+      "source_and_generation_record_exist": true,
+      "approved_candidate_output_identical": true,
+      "gif": {
+        "frames": 4,
+        "size": [
+          384,
+          384
+        ],
+        "8fps_durations_ms": [
+          120,
+          130,
+          120,
+          130
+        ]
+      },
+      "technical_checks_passed": true
+    },
+    {
+      "id": "merlin",
+      "output": "assets/sprites/characters/merlin.png",
+      "sha256": "3cbb5f8a32b7cb79bdfa52f38c7dbce3c487d0d9b50f25470967f904cf2ed90b",
+      "size": [
+        64,
+        64
+      ],
+      "frames": 1,
+      "colors": 43,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "bboxes": [
+        [
+          20,
+          12,
+          43,
+          60
+        ]
+      ],
+      "source_and_generation_record_exist": true,
+      "approved_candidate_output_identical": true,
+      "gif": null,
+      "technical_checks_passed": true
+    },
+    {
+      "id": "annie",
+      "output": "assets/sprites/characters/annie.png",
+      "sha256": "754134580682ef324d1b7e90fd2849807fe4622bc702a61bcd305a449fef9f52",
+      "size": [
+        64,
+        64
+      ],
+      "frames": 1,
+      "colors": 46,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "bboxes": [
+        [
+          22,
+          12,
+          42,
+          60
+        ]
+      ],
+      "source_and_generation_record_exist": true,
+      "approved_candidate_output_identical": true,
+      "gif": null,
+      "technical_checks_passed": true
+    },
+    {
+      "id": "lanling",
+      "output": "assets/sprites/characters/lanling.png",
+      "sha256": "36f61e50bcfb173863e5abc69afc70ef10ae3d17bb6bf7bab8a31d42fcc2a772",
+      "size": [
+        64,
+        64
+      ],
+      "frames": 1,
+      "colors": 46,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "bboxes": [
+        [
+          13,
+          12,
+          51,
+          60
+        ]
+      ],
+      "source_and_generation_record_exist": true,
+      "approved_candidate_output_identical": true,
+      "gif": null,
+      "technical_checks_passed": true
+    },
+    {
+      "id": "annie_idle",
+      "output": "assets/sprites/characters/annie_idle.png",
+      "sha256": "bb0fa05e2a9c0d11e70d8948968b02c72997cefb6c36e7772f8d88797063386e",
+      "size": [
+        256,
+        64
+      ],
+      "frames": 4,
+      "colors": 46,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "bboxes": [
+        [
+          22,
+          12,
+          42,
+          60
+        ],
+        [
+          22,
+          12,
+          42,
+          60
+        ],
+        [
+          23,
+          12,
+          42,
+          60
+        ],
+        [
+          22,
+          12,
+          42,
+          60
+        ]
+      ],
+      "source_and_generation_record_exist": true,
+      "approved_candidate_output_identical": true,
+      "gif": {
+        "frames": 4,
+        "size": [
+          256,
+          256
+        ],
+        "8fps_durations_ms": [
+          120,
+          130,
+          120,
+          130
+        ]
+      },
+      "technical_checks_passed": true
+    },
+    {
+      "id": "lanling_idle",
+      "output": "assets/sprites/characters/lanling_idle.png",
+      "sha256": "7aa2181f518a20b7b1997824ec30821a05e563ba8f4df55bacadf46a4b56590f",
+      "size": [
+        256,
+        64
+      ],
+      "frames": 4,
+      "colors": 48,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "bboxes": [
+        [
+          13,
+          12,
+          50,
+          60
+        ],
+        [
+          13,
+          12,
+          50,
+          60
+        ],
+        [
+          13,
+          12,
+          50,
+          60
+        ],
+        [
+          13,
+          12,
+          50,
+          60
+        ]
+      ],
+      "source_and_generation_record_exist": true,
+      "approved_candidate_output_identical": true,
+      "gif": {
+        "frames": 4,
+        "size": [
+          256,
+          256
+        ],
+        "8fps_durations_ms": [
+          120,
+          130,
+          120,
+          130
+        ]
+      },
+      "technical_checks_passed": true
+    },
+    {
+      "id": "merlin_idle",
+      "output": "assets/sprites/characters/merlin_idle.png",
+      "sha256": "b482ea266385eef44670f9f4aee9f94a0e562646796af2cde01cd6b5e8313b33",
+      "size": [
+        256,
+        64
+      ],
+      "frames": 4,
+      "colors": 44,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "bboxes": [
+        [
+          20,
+          12,
+          43,
+          60
+        ],
+        [
+          20,
+          12,
+          43,
+          60
+        ],
+        [
+          20,
+          12,
+          43,
+          60
+        ],
+        [
+          20,
+          12,
+          43,
+          60
+        ]
+      ],
+      "source_and_generation_record_exist": true,
+      "approved_candidate_output_identical": true,
+      "gif": {
+        "frames": 4,
+        "size": [
+          256,
+          256
+        ],
+        "8fps_durations_ms": [
+          120,
+          130,
+          120,
+          130
+        ]
+      },
+      "technical_checks_passed": true
+    },
+    {
+      "id": "annie_attack",
+      "output": "assets/sprites/characters/annie_attack.png",
+      "sha256": "6520e49a7bc5a3eb4b86f18c2b113892da40378c98214016f33d04c1e1004889",
+      "size": [
+        256,
+        64
+      ],
+      "frames": 4,
+      "colors": 48,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "bboxes": [
+        [
+          22,
+          12,
+          45,
+          60
+        ],
+        [
+          22,
+          12,
+          55,
+          60
+        ],
+        [
+          21,
+          12,
+          50,
+          60
+        ],
+        [
+          22,
+          12,
+          43,
+          60
+        ]
+      ],
+      "source_and_generation_record_exist": true,
+      "approved_candidate_output_identical": true,
+      "gif": {
+        "frames": 4,
+        "size": [
+          256,
+          256
+        ],
+        "8fps_durations_ms": [
+          120,
+          130,
+          120,
+          130
+        ]
+      },
+      "technical_checks_passed": true
+    },
+    {
+      "id": "lanling_attack",
+      "output": "assets/sprites/characters/lanling_attack.png",
+      "sha256": "a53af26dfc7fbd12865d6d0d5f8d0a0b2f53a2e15a6030193f0a45f9c71ebf3a",
+      "size": [
+        384,
+        64
+      ],
+      "frames": 6,
+      "colors": 48,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "bboxes": [
+        [
+          10,
+          12,
+          51,
+          60
+        ],
+        [
+          13,
+          12,
+          54,
+          60
+        ],
+        [
+          10,
+          12,
+          59,
+          60
+        ],
+        [
+          10,
+          11,
+          52,
+          60
+        ],
+        [
+          9,
+          12,
+          51,
+          60
+        ],
+        [
+          11,
+          12,
+          52,
+          60
+        ]
+      ],
+      "source_and_generation_record_exist": true,
+      "approved_candidate_output_identical": true,
+      "gif": {
+        "frames": 6,
+        "size": [
+          256,
+          256
+        ],
+        "8fps_durations_ms": [
+          120,
+          130,
+          120,
+          130,
+          120,
+          130
+        ]
+      },
+      "technical_checks_passed": true
+    },
+    {
+      "id": "merlin_attack",
+      "output": "assets/sprites/characters/merlin_attack.png",
+      "sha256": "3bd167d2c7e55f0f6f20dcc20df938075ecdbb71425599871442b57a7ab49827",
+      "size": [
+        256,
+        64
+      ],
+      "frames": 4,
+      "colors": 43,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "bboxes": [
+        [
+          20,
+          5,
+          44,
+          60
+        ],
+        [
+          19,
+          12,
+          44,
+          60
+        ],
+        [
+          19,
+          15,
+          46,
+          60
+        ],
+        [
+          20,
+          12,
+          45,
+          60
+        ]
+      ],
+      "source_and_generation_record_exist": true,
+      "approved_candidate_output_identical": true,
+      "gif": {
+        "frames": 4,
+        "size": [
+          256,
+          256
+        ],
+        "8fps_durations_ms": [
+          120,
+          130,
+          120,
+          130
+        ]
+      },
+      "technical_checks_passed": true
+    },
+    {
+      "id": "annie_hurt",
+      "output": "assets/sprites/characters/annie_hurt.png",
+      "sha256": "90650b371f3ec7d5dcfcbad44ed27aef953bb05f57df0c539ac0f06c4e113354",
+      "size": [
+        128,
+        64
+      ],
+      "frames": 2,
+      "colors": 44,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "bboxes": [
+        [
+          18,
+          12,
+          42,
+          60
+        ],
+        [
+          22,
+          12,
+          42,
+          60
+        ]
+      ],
+      "source_and_generation_record_exist": true,
+      "approved_candidate_output_identical": true,
+      "gif": {
+        "frames": 2,
+        "size": [
+          256,
+          256
+        ],
+        "8fps_durations_ms": [
+          120,
+          130
+        ]
+      },
+      "technical_checks_passed": true
+    },
+    {
+      "id": "lanling_hurt",
+      "output": "assets/sprites/characters/lanling_hurt.png",
+      "sha256": "ca19b9b42e40834d9991856da973445113c257e9c5f93fdd5b0bbb80efbf6d05",
+      "size": [
+        128,
+        64
+      ],
+      "frames": 2,
+      "colors": 46,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "bboxes": [
+        [
+          12,
+          12,
+          53,
+          60
+        ],
+        [
+          12,
+          12,
+          52,
+          60
+        ]
+      ],
+      "source_and_generation_record_exist": true,
+      "approved_candidate_output_identical": true,
+      "gif": {
+        "frames": 2,
+        "size": [
+          256,
+          256
+        ],
+        "8fps_durations_ms": [
+          120,
+          130
+        ]
+      },
+      "technical_checks_passed": true
+    },
+    {
+      "id": "merlin_hurt",
+      "output": "assets/sprites/characters/merlin_hurt.png",
+      "sha256": "45e84108ff81b2841103eed3fc19da463898ea45e54fbdffe0505ed1cae1ecd6",
+      "size": [
+        128,
+        64
+      ],
+      "frames": 2,
+      "colors": 43,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "bboxes": [
+        [
+          16,
+          12,
+          44,
+          60
+        ],
+        [
+          20,
+          12,
+          44,
+          60
+        ]
+      ],
+      "source_and_generation_record_exist": true,
+      "approved_candidate_output_identical": true,
+      "gif": {
+        "frames": 2,
+        "size": [
+          256,
+          256
+        ],
+        "8fps_durations_ms": [
+          120,
+          130
+        ]
+      },
+      "technical_checks_passed": true
+    },
+    {
+      "id": "annie_death",
+      "output": "assets/sprites/characters/annie_death.png",
+      "sha256": "cb8eb20563d344a8cba45c1006cb02192621d0f6bfdb1ae1dc15af1a1e098ffa",
+      "size": [
+        384,
+        64
+      ],
+      "frames": 6,
+      "colors": 42,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "bboxes": [
+        [
+          21,
+          12,
+          43,
+          60
+        ],
+        [
+          19,
+          21,
+          45,
+          60
+        ],
+        [
+          15,
+          30,
+          49,
+          60
+        ],
+        [
+          11,
+          40,
+          52,
+          60
+        ],
+        [
+          9,
+          45,
+          54,
+          60
+        ],
+        [
+          7,
+          48,
+          57,
+          60
+        ]
+      ],
+      "source_and_generation_record_exist": true,
+      "approved_candidate_output_identical": true,
+      "gif": {
+        "frames": 6,
+        "size": [
+          256,
+          256
+        ],
+        "8fps_durations_ms": [
+          120,
+          130,
+          120,
+          130,
+          120,
+          130
+        ]
+      },
+      "technical_checks_passed": true
+    },
+    {
+      "id": "lanling_death",
+      "output": "assets/sprites/characters/lanling_death.png",
+      "sha256": "f4acaf108c92b4d0f47c676e0e5940c2551b7996a4013207f564e916862b0daf",
+      "size": [
+        384,
+        64
+      ],
+      "frames": 6,
+      "colors": 47,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "bboxes": [
+        [
+          10,
+          12,
+          53,
+          60
+        ],
+        [
+          12,
+          20,
+          52,
+          60
+        ],
+        [
+          9,
+          31,
+          54,
+          60
+        ],
+        [
+          6,
+          39,
+          58,
+          60
+        ],
+        [
+          7,
+          41,
+          57,
+          60
+        ],
+        [
+          5,
+          45,
+          58,
+          60
+        ]
+      ],
+      "source_and_generation_record_exist": true,
+      "approved_candidate_output_identical": true,
+      "gif": {
+        "frames": 6,
+        "size": [
+          256,
+          256
+        ],
+        "8fps_durations_ms": [
+          120,
+          130,
+          120,
+          130,
+          120,
+          130
+        ]
+      },
+      "technical_checks_passed": true
+    },
+    {
+      "id": "merlin_death",
+      "output": "assets/sprites/characters/merlin_death.png",
+      "sha256": "c380cef221b873779a091d48d18268ca43556cee3dd6b55ce4d18be615fe2c81",
+      "size": [
+        384,
+        64
+      ],
+      "frames": 6,
+      "colors": 46,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "bboxes": [
+        [
+          18,
+          12,
+          45,
+          60
+        ],
+        [
+          17,
+          20,
+          46,
+          60
+        ],
+        [
+          13,
+          24,
+          50,
+          60
+        ],
+        [
+          8,
+          32,
+          55,
+          60
+        ],
+        [
+          7,
+          44,
+          57,
+          60
+        ],
+        [
+          6,
+          47,
+          57,
+          60
+        ]
+      ],
+      "source_and_generation_record_exist": true,
+      "approved_candidate_output_identical": true,
+      "gif": {
+        "frames": 6,
+        "size": [
+          256,
+          256
+        ],
+        "8fps_durations_ms": [
+          120,
+          130,
+          120,
+          130,
+          120,
+          130
+        ]
+      },
+      "technical_checks_passed": true
+    },
+    {
+      "id": "annie_move",
+      "output": "assets/sprites/characters/annie_move.png",
+      "sha256": "6dc253eeaa78b55563b1ad9baca54c455cf115eebac4ff3fbd14304a8a28e97b",
+      "size": [
+        384,
+        64
+      ],
+      "frames": 6,
+      "colors": 47,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "bboxes": [
+        [
+          20,
+          12,
+          47,
+          60
+        ],
+        [
+          22,
+          12,
+          41,
+          60
+        ],
+        [
+          19,
+          12,
+          41,
+          60
+        ],
+        [
+          17,
+          13,
+          47,
+          60
+        ],
+        [
+          23,
+          13,
+          42,
+          60
+        ],
+        [
+          19,
+          13,
+          42,
+          60
+        ]
+      ],
+      "source_and_generation_record_exist": true,
+      "approved_candidate_output_identical": true,
+      "gif": {
+        "frames": 6,
+        "size": [
+          256,
+          256
+        ],
+        "8fps_durations_ms": [
+          120,
+          130,
+          120,
+          130,
+          120,
+          130
+        ]
+      },
+      "technical_checks_passed": true
+    },
+    {
+      "id": "lanling_move",
+      "output": "assets/sprites/characters/lanling_move.png",
+      "sha256": "5e54bf3e8e4b221d2997be0d3475f72b68fbf8ed53016b75599b07ee6d9b0fc8",
+      "size": [
+        384,
+        64
+      ],
+      "frames": 6,
+      "colors": 48,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "bboxes": [
+        [
+          8,
+          13,
+          53,
+          60
+        ],
+        [
+          9,
+          13,
+          52,
+          60
+        ],
+        [
+          9,
+          13,
+          53,
+          60
+        ],
+        [
+          9,
+          12,
+          54,
+          60
+        ],
+        [
+          9,
+          12,
+          54,
+          60
+        ],
+        [
+          8,
+          12,
+          53,
+          60
+        ]
+      ],
+      "source_and_generation_record_exist": true,
+      "approved_candidate_output_identical": true,
+      "gif": {
+        "frames": 6,
+        "size": [
+          256,
+          256
+        ],
+        "8fps_durations_ms": [
+          120,
+          130,
+          120,
+          130,
+          120,
+          130
+        ]
+      },
+      "technical_checks_passed": true
+    },
+    {
+      "id": "merlin_move",
+      "output": "assets/sprites/characters/merlin_move.png",
+      "sha256": "2bf96e800c4b074ed27c585c4178f37e17164e2396b718784dbc5f6d0830c556",
+      "size": [
+        384,
+        64
+      ],
+      "frames": 6,
+      "colors": 44,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "bboxes": [
+        [
+          15,
+          12,
+          47,
+          60
+        ],
+        [
+          15,
+          12,
+          44,
+          60
+        ],
+        [
+          14,
+          12,
+          44,
+          60
+        ],
+        [
+          13,
+          13,
+          47,
+          60
+        ],
+        [
+          17,
+          13,
+          46,
+          60
+        ],
+        [
+          15,
+          13,
+          45,
+          60
+        ]
+      ],
+      "source_and_generation_record_exist": true,
+      "approved_candidate_output_identical": true,
+      "gif": {
+        "frames": 6,
+        "size": [
+          256,
+          256
+        ],
+        "8fps_durations_ms": [
+          120,
+          130,
+          120,
+          130,
+          120,
+          130
+        ]
+      },
+      "technical_checks_passed": true
+    },
+    {
+      "id": "annie_cutin",
+      "output": "assets/sprites/characters/annie_cutin.png",
+      "sha256": "74a977226befd12863617b2b1f4888db04cf0090ad693ca33b444614bd2a03c6",
+      "size": [
+        400,
+        320
+      ],
+      "frames": 1,
+      "colors": 48,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "bboxes": [
+        [
+          8,
+          6,
+          390,
+          314
+        ]
+      ],
+      "source_and_generation_record_exist": true,
+      "approved_candidate_output_identical": true,
+      "gif": null,
+      "technical_checks_passed": true
+    },
+    {
+      "id": "lanling_cutin",
+      "output": "assets/sprites/characters/lanling_cutin.png",
+      "sha256": "c614a04f4fc5714e49534f968b1bd04810586855c35ca8c75e23dee5225278e6",
+      "size": [
+        400,
+        320
+      ],
+      "frames": 1,
+      "colors": 46,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "bboxes": [
+        [
+          8,
+          6,
+          392,
+          314
+        ]
+      ],
+      "source_and_generation_record_exist": true,
+      "approved_candidate_output_identical": true,
+      "gif": null,
+      "technical_checks_passed": true
+    },
+    {
+      "id": "merlin_cutin",
+      "output": "assets/sprites/characters/merlin_cutin.png",
+      "sha256": "e1d4c5f2c926b45c5efe032d91b3338d65b0e1399b4bad28c4dc783f7bb11545",
+      "size": [
+        400,
+        320
+      ],
+      "frames": 1,
+      "colors": 46,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "bboxes": [
+        [
+          6,
+          6,
+          394,
+          312
+        ]
+      ],
+      "source_and_generation_record_exist": true,
+      "approved_candidate_output_identical": true,
+      "gif": null,
+      "technical_checks_passed": true
+    }
+  ]
+}

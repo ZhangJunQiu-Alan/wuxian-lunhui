@@ -1,0 +1,24 @@
+[
+  {
+    "id": "ice_spirit",
+    "version": "v03",
+    "prompt": "Use case: identity-preserve. Asset type: 4-frame 64x64 pixel game sprite attack animation. Input image is the exact approved ice spirit character; preserve this exact design and pixel density. Create a transparent PNG square sheet containing precisely FOUR equally-sized 64x64 logical cells in a 2 by 2 grid, shown enlarged 8x with nearest-neighbor pixels. Each sprite faces RIGHT in the same three-quarter view. Same head size, shoulders, torso, chest crystal, pointed hood, and ghost tail in ALL FOUR frames. CRITICAL: head center and torso center stay at exactly the same coordinates in every cell. Keep the entire hood/head/chest/tail fixed; articulate ONLY the two arms and the held ice crystal. Frame 1 top-left: both elbows bent back, hands drawn close toward chest preparing to cast. Frame 2 top-right: both forearms extend toward the right. Frame 3 bottom-left: decisive forward push, both hands fully extended toward right, elbows still slightly bent so hands stay inside canvas. Frame 4 bottom-right: restore exact original standing/floating pose from input. All cells same scale, same lower tail tip y=59; at least TWO logical transparent pixels on every edge, including crystal. Frost-blue gray muted original palette and dark pixel outlines, upper-left light. Crisp authentic low-resolution pixel art, original sprite texture, no smoothing. No spell glow, no projectile, no effects, no shadows, no text or numbers, no grid lines, no drawn checkerboard. Actual transparent background. Do not center by weapon/arms extent: center by head and torso, keeping the original body anchor fixed. A push must not move the whole spirit sideways.",
+    "tool": "built-in image_gen",
+    "raw": "originals/ice_spirit_attack_v03_raw.png",
+    "tool_output_path": "/Users/zhangjunqiu/.codex/generated_images/01a14377-c537-7a10-b5df-10043f63fbe0/exec-7a00303e-866d-4f52-b7f6-4a48f5ba6a04.png",
+    "reference": "references/ice_spirit_8x.png",
+    "date": "2026-10-16",
+    "status": "raw_saved_pending_review"
+  },
+  {
+    "id": "ice_spirit_elite",
+    "version": "v02",
+    "prompt": "Use case: identity-preserve. Asset type: 4-frame 64x64 pixel game sprite attack animation. Input image is the exact approved elite ice spirit; preserve its pointed ice crown, armored torso, shoulder ice spikes, blue chest crystal and floating split tail, exactly the same silhouette/body proportions and detail as this reference. Make a genuine transparent PNG square sheet of FOUR equal 64x64 logical cells in 2x2 layout, enlarged 8x nearest-neighbor. Facing RIGHT in the original three-quarter view. All frames SAME SIZE, head center and torso center exactly fixed at original cell coordinates, bottom tail tip fixed y=59. Frame1 top-left: bend both elbows, draw hands toward chest gathering. Frame2 top-right: push forearms forward. Frame3 bottom-left: both crystal-covered hands thrust decisively to the right, arms at maximal compact reach. Frame4 bottom-right: exact original neutral floating pose. Change ONLY arms and hands; head/crown/shoulders/chest/tail must not slide, scale, warp or turn. Every part two logical pixels from cell borders, adjust elbows instead of shrinking entire character. Match original muted icy blue/gray/brown palette, dark crisp pixel outline, top-left lighting, original low-resolution pixel detail. No new magical orb, effects, ice projectile, aura, ground shadow, background scene, text, watermark, cell dividers or painted checkerboard. Actual alpha transparency. Do not center according to arm extent; keep torso/head anchor constant.",
+    "tool": "built-in image_gen",
+    "raw": "originals/ice_spirit_elite_attack_v02_raw.png",
+    "tool_output_path": "/Users/zhangjunqiu/.codex/generated_images/01a14377-c537-7a10-b5df-10043f63fbe0/exec-f2ab12e2-db6d-4117-a42f-a49fec5175fa.png",
+    "reference": "references/ice_spirit_elite_8x.png",
+    "date": "2026-10-16",
+    "status": "raw_saved_pending_review"
+  }
+]

@@ -1,0 +1,389 @@
+{
+  "candidates/annie_v02.png": {
+    "decision": "pass",
+    "checks": {
+      "exact_size_rgba_binary_alpha": true,
+      "same_character_fixed_palette": true,
+      "right_facing_margin2": true,
+      "body_height48_feet_y59": true,
+      "style_upper_left_light_dark_outline": true,
+      "dark_background1x4x_visual_review": true,
+      "no_text_watermarks_scene_effects": true,
+      "game_tested": false
+    },
+    "note": "Reserved three steel gray tones in fixed48-color palette, removed redundant near-black shades. Static silhouette, baseline and sizing unchanged. Reviewed enlarged static and original1x sprite.",
+    "generation_record": "records/builtin_C_static_jobs.json"
+  },
+  "candidates/lanling_v02.png": {
+    "decision": "pass",
+    "checks": {
+      "exact_size_rgba_binary_alpha": true,
+      "same_character_fixed_palette": true,
+      "right_facing_margin2": true,
+      "body_height48_feet_y59": true,
+      "style_upper_left_light_dark_outline": true,
+      "dark_background1x4x_visual_review": true,
+      "no_text_watermarks_scene_effects": true,
+      "game_tested": false
+    },
+    "note": "Reserved three steel gray tones in fixed48-color palette, removed redundant near-black shades. Static silhouette, baseline and sizing unchanged. Reviewed enlarged static and original1x sprite.",
+    "generation_record": "records/builtin_C_static_jobs.json"
+  },
+  "candidates/annie_idle_v01.png": {
+    "decision": "pass",
+    "checks": {
+      "exact_size_rgba_binary_alpha": true,
+      "same_character_fixed_palette": true,
+      "right_facing_margin2": true,
+      "body_height48_feet_y59": true,
+      "style_upper_left_light_dark_outline": true,
+      "dark_background1x4x_visual_review": true,
+      "no_text_watermarks_scene_effects": true,
+      "game_tested": false,
+      "foot_baseline_all_frames59": true,
+      "head_and_equipment_proportions_consistent": true,
+      "four_subtle_breathing_fabric_poses": true,
+      "loop_endpoints_visually_close": true,
+      "browser8fps_two_phases_reviewed": true
+    },
+    "note": "Four idle poses inspected at1x/4x and two actual Chrome playback phases. Feet baseline59, subtle chest/fabric variations, same head size; no whole-body bounce.",
+    "generation_record": "records/builtin_C_idle_jobs.json"
+  },
+  "candidates/lanling_idle_v02.png": {
+    "decision": "pass",
+    "checks": {
+      "exact_size_rgba_binary_alpha": true,
+      "same_character_fixed_palette": true,
+      "right_facing_margin2": true,
+      "body_height48_feet_y59": true,
+      "style_upper_left_light_dark_outline": true,
+      "dark_background1x4x_visual_review": true,
+      "no_text_watermarks_scene_effects": true,
+      "game_tested": false,
+      "foot_baseline_all_frames59": true,
+      "head_and_equipment_proportions_consistent": true,
+      "four_subtle_breathing_fabric_poses": true,
+      "loop_endpoints_visually_close": true,
+      "browser8fps_two_phases_reviewed": true
+    },
+    "note": "Four idle poses inspected at1x/4x and two actual Chrome playback phases. Feet baseline59, subtle chest/fabric variations, same head size; no whole-body bounce.",
+    "generation_record": "records/builtin_C_idle_jobs.json"
+  },
+  "candidates/merlin_idle_v01.png": {
+    "decision": "pass",
+    "checks": {
+      "exact_size_rgba_binary_alpha": true,
+      "same_character_fixed_palette": true,
+      "right_facing_margin2": true,
+      "body_height48_feet_y59": true,
+      "style_upper_left_light_dark_outline": true,
+      "dark_background1x4x_visual_review": true,
+      "no_text_watermarks_scene_effects": true,
+      "game_tested": false,
+      "foot_baseline_all_frames59": true,
+      "head_and_equipment_proportions_consistent": true,
+      "four_subtle_breathing_fabric_poses": true,
+      "loop_endpoints_visually_close": true,
+      "browser8fps_two_phases_reviewed": true
+    },
+    "note": "Four idle poses inspected at1x/4x and two actual Chrome playback phases. Feet baseline59, subtle chest/fabric variations, same head size; no whole-body bounce.",
+    "generation_record": "records/builtin_C_idle_jobs.json"
+  },
+  "candidates/annie_attack_v04.png": {
+    "decision": "pass",
+    "checks": {
+      "exact_size_rgba_binary_alpha": true,
+      "same_character_fixed_palette": true,
+      "right_facing_margin2": true,
+      "foot_baseline_all_frames59": true,
+      "horizontal_foot_center_aligned_to_reference": true,
+      "style_upper_left_light_dark_outline": true,
+      "body_head_equipment_consistent_visual": true,
+      "dark_background1x4x_visual_review": true,
+      "no_text_watermarks_scene_effects": true,
+      "game_tested": false,
+      "frame3_attack_pose_clear": true,
+      "one_shot_recovery_near_standing": true,
+      "browser16fps_phases_reviewed": true
+    },
+    "note": "Aim then visible upward recoil, lowered recovery. Whole-frame foot-anchor translation prevents head-based re-centering from sliding feet. Palette includes steel grays.",
+    "generation_record": "records/builtin_C_animation_jobs.json"
+  },
+  "candidates/lanling_attack_v05.png": {
+    "decision": "pass",
+    "checks": {
+      "exact_size_rgba_binary_alpha": true,
+      "same_character_fixed_palette": true,
+      "right_facing_margin2": true,
+      "foot_baseline_all_frames59": true,
+      "horizontal_foot_center_aligned_to_reference": true,
+      "style_upper_left_light_dark_outline": true,
+      "body_head_equipment_consistent_visual": true,
+      "dark_background1x4x_visual_review": true,
+      "no_text_watermarks_scene_effects": true,
+      "game_tested": false,
+      "frame3_attack_pose_clear": true,
+      "one_shot_recovery_near_standing": true,
+      "browser16fps_phases_reviewed": true
+    },
+    "note": "Distinct near-arm lower thrust and far-arm upper thrust, same two blades. Repacked wholeframes 1,2,4,3,5,6 so third frame is unmistakable attack. Whole-frame foot-anchor alignment; no pixels repainted.",
+    "generation_record": "records/builtin_C_wave1_fixes.json"
+  },
+  "candidates/merlin_attack_v04.png": {
+    "decision": "pass",
+    "checks": {
+      "exact_size_rgba_binary_alpha": true,
+      "same_character_fixed_palette": true,
+      "right_facing_margin2": true,
+      "foot_baseline_all_frames59": true,
+      "horizontal_foot_center_aligned_to_reference": true,
+      "style_upper_left_light_dark_outline": true,
+      "body_head_equipment_consistent_visual": true,
+      "dark_background1x4x_visual_review": true,
+      "no_text_watermarks_scene_effects": true,
+      "game_tested": false,
+      "frame3_attack_pose_clear": true,
+      "one_shot_recovery_near_standing": true,
+      "browser16fps_phases_reviewed": true
+    },
+    "note": "Third generation narrowed frame3 stance. Full-length staff lift/lower/plant/recover; no crossing footstep. Whole-frame foot-anchor alignment.",
+    "generation_record": "records/builtin_C_fix_move_jobs.json"
+  },
+  "candidates/annie_hurt_v02.png": {
+    "decision": "pass",
+    "checks": {
+      "exact_size_rgba_binary_alpha": true,
+      "same_character_fixed_palette": true,
+      "right_facing_margin2": true,
+      "foot_baseline_all_frames59": true,
+      "horizontal_foot_center_aligned_to_reference": true,
+      "style_upper_left_light_dark_outline": true,
+      "body_head_equipment_consistent_visual": true,
+      "dark_background1x4x_visual_review": true,
+      "no_text_watermarks_scene_effects": true,
+      "game_tested": false,
+      "two_distinct_flinch_recovery_poses": true,
+      "browser8fps_both_poses_reviewed": true
+    },
+    "note": "Head-based centering candidate superseded by whole-frame foot-center alignment: lean moves upper body back while support remains centered. Both flinch and partial recovery inspected in Chrome.",
+    "generation_record": "records/builtin_C_hurt_move_jobs.json"
+  },
+  "candidates/lanling_hurt_v02.png": {
+    "decision": "pass",
+    "checks": {
+      "exact_size_rgba_binary_alpha": true,
+      "same_character_fixed_palette": true,
+      "right_facing_margin2": true,
+      "foot_baseline_all_frames59": true,
+      "horizontal_foot_center_aligned_to_reference": true,
+      "style_upper_left_light_dark_outline": true,
+      "body_head_equipment_consistent_visual": true,
+      "dark_background1x4x_visual_review": true,
+      "no_text_watermarks_scene_effects": true,
+      "game_tested": false,
+      "two_distinct_flinch_recovery_poses": true,
+      "browser8fps_both_poses_reviewed": true
+    },
+    "note": "Head-based centering candidate superseded by whole-frame foot-center alignment: lean moves upper body back while support remains centered. Both flinch and partial recovery inspected in Chrome.",
+    "generation_record": "records/builtin_C_hurt_move_jobs.json"
+  },
+  "candidates/merlin_hurt_v02.png": {
+    "decision": "pass",
+    "checks": {
+      "exact_size_rgba_binary_alpha": true,
+      "same_character_fixed_palette": true,
+      "right_facing_margin2": true,
+      "foot_baseline_all_frames59": true,
+      "horizontal_foot_center_aligned_to_reference": true,
+      "style_upper_left_light_dark_outline": true,
+      "body_head_equipment_consistent_visual": true,
+      "dark_background1x4x_visual_review": true,
+      "no_text_watermarks_scene_effects": true,
+      "game_tested": false,
+      "two_distinct_flinch_recovery_poses": true,
+      "browser8fps_both_poses_reviewed": true
+    },
+    "note": "Head-based centering candidate superseded by whole-frame foot-center alignment: lean moves upper body back while support remains centered. Both flinch and partial recovery inspected in Chrome.",
+    "generation_record": "records/builtin_C_hurt_move_jobs.json"
+  },
+  "candidates/annie_death_v01.png": {
+    "decision": "pass",
+    "checks": {
+      "exact_size_rgba_binary_alpha": true,
+      "same_character_fixed_palette": true,
+      "right_facing_margin2": true,
+      "groundline_all_frames59": true,
+      "centered_full_silhouette": true,
+      "body_equipment_proportions_consistent_visual": true,
+      "dark_background1x4x_visual_review": true,
+      "no_text_watermarks_scene_effects": true,
+      "game_tested": false,
+      "six_progressive_collapse_poses": true,
+      "final_body_prone_still": true,
+      "browser8fps_phases_reviewed": true
+    },
+    "note": "Same single scale48px/body fromfirst pose, whole-frame center and groundline59; later poses shorten vertically as body rotates. Final prone pose keeps costume and weapon. Preview loops only for QA; game action plays once.",
+    "generation_record": "records/builtin_C_death_jobs.json"
+  },
+  "candidates/lanling_death_v01.png": {
+    "decision": "pass",
+    "checks": {
+      "exact_size_rgba_binary_alpha": true,
+      "same_character_fixed_palette": true,
+      "right_facing_margin2": true,
+      "groundline_all_frames59": true,
+      "centered_full_silhouette": true,
+      "body_equipment_proportions_consistent_visual": true,
+      "dark_background1x4x_visual_review": true,
+      "no_text_watermarks_scene_effects": true,
+      "game_tested": false,
+      "six_progressive_collapse_poses": true,
+      "final_body_prone_still": true,
+      "browser8fps_phases_reviewed": true
+    },
+    "note": "Same single scale48px/body fromfirst pose, whole-frame center and groundline59; later poses shorten vertically as body rotates. Final prone pose keeps costume and weapon. Preview loops only for QA; game action plays once.",
+    "generation_record": "records/builtin_C_death_jobs.json"
+  },
+  "candidates/merlin_death_v01.png": {
+    "decision": "pass",
+    "checks": {
+      "exact_size_rgba_binary_alpha": true,
+      "same_character_fixed_palette": true,
+      "right_facing_margin2": true,
+      "groundline_all_frames59": true,
+      "centered_full_silhouette": true,
+      "body_equipment_proportions_consistent_visual": true,
+      "dark_background1x4x_visual_review": true,
+      "no_text_watermarks_scene_effects": true,
+      "game_tested": false,
+      "six_progressive_collapse_poses": true,
+      "final_body_prone_still": true,
+      "browser8fps_phases_reviewed": true
+    },
+    "note": "Same single scale48px/body fromfirst pose, whole-frame center and groundline59; later poses shorten vertically as body rotates. Final prone pose keeps costume and weapon. Preview loops only for QA; game action plays once.",
+    "generation_record": "records/builtin_C_death_jobs.json"
+  },
+  "candidates/annie_move_v03.png": {
+    "decision": "pass",
+    "checks": {
+      "exact_size_rgba_binary_alpha": true,
+      "same_character_fixed_palette": true,
+      "right_facing_margin2": true,
+      "groundline_all_frames59": true,
+      "centered_full_silhouette": true,
+      "body_equipment_proportions_consistent_visual": true,
+      "dark_background1x4x_visual_review": true,
+      "no_text_watermarks_scene_effects": true,
+      "game_tested": false,
+      "six_distinct_gait_phases": true,
+      "near_far_legs_visibly_alternate": true,
+      "no_whole_body_bounce": true,
+      "loop_contact_passing_poses_continuous": true,
+      "browser8fps_phases_reviewed": true
+    },
+    "note": "Third generation corrects repeated leadleg: phase4nearboot visibly bendsback whilefarlegstepsforward, phase5near knee liftsforward. All6poses inspected in4x contact plus Chrome actual1x/4x animation.",
+    "generation_record": "records/builtin_C_fix_move_jobs.json"
+  },
+  "candidates/lanling_move_v02.png": {
+    "decision": "pass",
+    "checks": {
+      "exact_size_rgba_binary_alpha": true,
+      "same_character_fixed_palette": true,
+      "right_facing_margin2": true,
+      "body_equipment_proportions_consistent_visual": true,
+      "dark_background1x4x_visual_review": true,
+      "no_text_watermarks_scene_effects": true,
+      "game_tested": false,
+      "groundline_all_frames59": true,
+      "head_body_anchor_stable": true,
+      "six_distinct_gait_phases": true,
+      "near_far_legs_visibly_alternate": true,
+      "no_whole_body_bounce": true,
+      "loop_contact_passing_poses_continuous": true,
+      "browser8fps_and_paused_step_reviewed": true
+    },
+    "note": "Second generation fixes repeated leadleg. Phase4 near knee bendsback withbootraisedbehind, farlegforward; phase5 near knee liftsforward. Checked all6contactframes plus Chrome playback and paused nextframe.",
+    "generation_record": "records/builtin_C_cutin_walk_jobs.json"
+  },
+  "candidates/merlin_move_v02.png": {
+    "decision": "pass",
+    "checks": {
+      "exact_size_rgba_binary_alpha": true,
+      "same_character_fixed_palette": true,
+      "right_facing_margin2": true,
+      "body_equipment_proportions_consistent_visual": true,
+      "dark_background1x4x_visual_review": true,
+      "no_text_watermarks_scene_effects": true,
+      "game_tested": false,
+      "groundline_all_frames59": true,
+      "head_body_anchor_stable": true,
+      "six_distinct_gait_phases": true,
+      "near_far_legs_visibly_alternate": true,
+      "no_whole_body_bounce": true,
+      "loop_contact_passing_poses_continuous": true,
+      "browser8fps_and_paused_step_reviewed": true
+    },
+    "note": "Second generation fixes repeated leadleg. Phase4 near knee bendsback withbootraisedbehind, farlegforward; phase5 near knee liftsforward. Checked all6contactframes plus Chrome playback and paused nextframe.",
+    "generation_record": "records/builtin_C_merlin_walk_fix_jobs.json"
+  },
+  "candidates/annie_cutin_v01.png": {
+    "decision": "pass",
+    "checks": {
+      "exact_size_rgba_binary_alpha": true,
+      "same_character_fixed_palette": true,
+      "right_facing_margin2": true,
+      "body_equipment_proportions_consistent_visual": true,
+      "dark_background1x4x_visual_review": true,
+      "no_text_watermarks_scene_effects": true,
+      "game_tested": false,
+      "exact400x320": true,
+      "logical200x160_nearest2x": true,
+      "close_face_eyes_gaze_right": true,
+      "full_face_equipment_in_frame": true,
+      "transparent_background_composited_dark": true,
+      "defined_moment_visible": "revolver raised beside face, widehat/burgundy/medals"
+    },
+    "note": "Original portrait inspected for hand/face/equipment. Cropped/resized once to200x160 logical transparent canvas and nearest-neighbor2x to400x320. Same fixed48-color palette as own sprite animations. Reviewed actual1x/4x deepbackground composites.",
+    "generation_record": "records/builtin_C_cutin_walk_jobs.json"
+  },
+  "candidates/lanling_cutin_v01.png": {
+    "decision": "pass",
+    "checks": {
+      "exact_size_rgba_binary_alpha": true,
+      "same_character_fixed_palette": true,
+      "right_facing_margin2": true,
+      "body_equipment_proportions_consistent_visual": true,
+      "dark_background1x4x_visual_review": true,
+      "no_text_watermarks_scene_effects": true,
+      "game_tested": false,
+      "exact400x320": true,
+      "logical200x160_nearest2x": true,
+      "close_face_eyes_gaze_right": true,
+      "full_face_equipment_in_frame": true,
+      "transparent_background_composited_dark": true,
+      "defined_moment_visible": "woodenmask held off humanface, scale armor/redcloak"
+    },
+    "note": "Original portrait inspected for hand/face/equipment. Cropped/resized once to200x160 logical transparent canvas and nearest-neighbor2x to400x320. Same fixed48-color palette as own sprite animations. Reviewed actual1x/4x deepbackground composites.",
+    "generation_record": "records/builtin_C_cutin_walk_jobs.json"
+  },
+  "candidates/merlin_cutin_v01.png": {
+    "decision": "pass",
+    "checks": {
+      "exact_size_rgba_binary_alpha": true,
+      "same_character_fixed_palette": true,
+      "right_facing_margin2": true,
+      "body_equipment_proportions_consistent_visual": true,
+      "dark_background1x4x_visual_review": true,
+      "no_text_watermarks_scene_effects": true,
+      "game_tested": false,
+      "exact400x320": true,
+      "logical200x160_nearest2x": true,
+      "close_face_eyes_gaze_right": true,
+      "full_face_equipment_in_frame": true,
+      "transparent_background_composited_dark": true,
+      "defined_moment_visible": "raised fivefinger hand, whitebeard/bluehood/plainstaff and cropped stone"
+    },
+    "note": "Original portrait inspected for hand/face/equipment. Cropped/resized once to200x160 logical transparent canvas and nearest-neighbor2x to400x320. Same fixed48-color palette as own sprite animations. Reviewed actual1x/4x deepbackground composites.",
+    "generation_record": "records/builtin_C_cutin_walk_jobs.json"
+  }
+}

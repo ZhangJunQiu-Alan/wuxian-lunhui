@@ -1,0 +1,24 @@
+[
+  {
+    "id": "frost_giant",
+    "version": "v04",
+    "prompt": "Use case: identity-preserve. Game sprite animation EDIT of the input frost giant, retaining the exact original blue muscular skin, gray-white beard, fur shoulders, brown leather and metal belt, dark trousers, heavy boots and SAME short icy iron spiked club. Make precisely FOUR frames in 2x2 equally sized 96x96 logical square cells, enlarged 8x using nearest-neighbor, genuine transparent PNG. All frames face RIGHT three-quarter, feet baseline y=93, body horizontal anchor x=48. Preserve original large head and chest size: original upright giant fills about 86 logical pixels high. DO NOT shrink the character to fit raised weapon. Frame1 top-left: DEEP BENT KNEE crouch lowering head and hips about 18 logical pixels, two hands gripping club handle, club raised just above head with shaft diagonal right. This deep crouch provides room for overhead weapon inside 96x96. Frame2 top-right: bring club rapidly forward/down, body bent at waist, weapon diagonally down to right. Frame3 bottom-left: strong ground slam, same crouched knees, upper body leaning down-right, both hands together on SAME shaft, club head at lower-right nearly ground but at least two pixels inside cell. Frame4 bottom-right: original upright standing recovery with club low, near exact original image. All head/chest/limb proportions consistent, same feet contact positions and clothing details; only articulated limbs/torso rotation. Never scale whole sprite to fit any pose. Keep weapon entirely within each cell, shorten reach by bending elbows. Original low-resolution pixel texture, dark outline, muted icy blue gray and brown palette, upper-left illumination. No new weapons, no impact wave, no dust, no magical effects, no ground shadow, no scenery, no text, no numbers, no dividers, no painted checkerboard. Keep all edges at least TWO LOGICAL pixels clear.",
+    "tool": "built-in image_gen",
+    "raw": "originals/frost_giant_attack_v04_raw.png",
+    "tool_output_path": "/Users/zhangjunqiu/.codex/generated_images/01a14377-c537-7a10-b5df-10043f63fbe0/exec-0533424b-5e05-422d-9940-99be4def4534.png",
+    "reference": "references/frost_giant_8x.png",
+    "date": "2026-10-16",
+    "status": "raw_saved_pending_review"
+  },
+  {
+    "id": "frost_giant_elite",
+    "version": "v03",
+    "prompt": "Use case: identity-preserve. Make a FOUR-frame attack sprite sheet editing the exact input elite frost giant: same heavy blue-gray body, long white beard, pointed ice helmet, ice-spiked shoulders, brown heavy armor and boots. Preserve BOTH original equipment items: ice-studded mace/club AND the large round dark shield with metal rim/spikes. Shield remains strapped on LEFT forearm and visible on the outside of left arm in every pose; BOTH hands grip the club shaft while shield stays strapped. Never omit shield or replace club with an axe. Layout 2x2 identical logical96x96 square cells displayed 8x nearest-neighbor, genuine transparent background. Head and torso stay same large size as reference, feet baseline y=93 and body anchor x=48. Frame1 top-left: deep knee crouch lowers head/hips 18 pixels to make room for two-handed club held OVERHEAD. Bent elbows keep weapon inside canvas. Frame2 top-right: club swings down diagonally forward right, left forearm shield rotates with arm remaining visible. Frame3 bottom-left: decisive ground slam, crouched giant leaning forward, two hands on shaft, club head down at right near ground; round shield still strapped left forearm beside torso. Frame4 bottom-right: original neutral standing recovery, round shield and club in original positions. Keep identical head/chest size across all frames; DO NOT shrink upright recovery or shrink body to fit overhead weapon. Original crisp low-resolution pixel art, original muted icy steel/blue/brown palette, dark outline, upper-left light. Clear 2 logical pixels on every edge, no body/weapon clipping. No extra weapons, no projectiles, no slam effect, no aura, no shadow, no scenery, no text, no numbering, no grid or painted checkerboard.",
+    "tool": "built-in image_gen",
+    "raw": "originals/frost_giant_elite_attack_v03_raw.png",
+    "tool_output_path": "/Users/zhangjunqiu/.codex/generated_images/01a14377-c537-7a10-b5df-10043f63fbe0/exec-454d139e-a122-4f83-ad63-9a839e007890.png",
+    "reference": "references/frost_giant_elite_8x.png",
+    "date": "2026-10-16",
+    "status": "raw_saved_pending_review"
+  }
+]

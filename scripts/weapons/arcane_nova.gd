@@ -26,7 +26,7 @@ func _process(delta: float) -> void:
 	if _timer <= 0.0 and _enemy_in_range():
 		_timer = cooldown * player.cooldown_mult
 		_waves.append({"t": 0.0, "hit": {}})
-		player.play_attack(player.facing, 0.0)
+		player.play_attack(player.facing, 0.0, _timer)
 		if echo:
 			_waves.append({"t": -0.3, "hit": {}})  # 负数表示延迟出发
 

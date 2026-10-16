@@ -1,0 +1,32 @@
+[
+  {
+    "id": "annie_move",
+    "character": "annie",
+    "version": "v03",
+    "frames": 6,
+    "prompt": "Use case: identity-preserve. Reference1 is the authoritative64x64sprite enlarged8x. Preserve exact character, head/face proportions, original costume, muted palette and dark outline, upper-left light. Render true low-resolution pixel sprites with64x64logicalcells enlarged8x nearest-neighbor,48px bodyheight, boots y59,2px clear margin, face right, transparent background. No grids/labels/text/effects/shadows/scenes. SIX cells in3x2 sheet. Petite western stage woman in brown hat, burgundy blouse/medals, knee-length fringed skirt,tallboots, lowered revolver. Make SIX DISTINCT WALK phases: frame1 RIGHT/NEAR leg straight forward to screenright, LEFT/FAR leg behind left. Frame2 near leg vertical underhip, far knee bends behind with heel raised. Frame3 near leg begins bending BACK left while far foot passes underhip. Frame4 OPPOSITE: RIGHT/NEAR leg clearly BENT BACK LEFT with visible lifted sole and knee behind hip, LEFT/FAR leg stretched forward RIGHT with heel leading. Frame5 FAR leg vertical supporting, NEAR knee bends forward lifted. Frame6 NEAR leg passes underhip toward next forward stride. Distinguish near leg original lighterboot and far leg darkerboot. Show actual two boot identities crossing; frame4 must NOT repeat frame1. Keep torso/hat motionless, skirt hem does not conceal knee/boot joints. Camera/scale unchanged.",
+    "raw": "originals/annie_move_v03_raw.png",
+    "generated_path": "/Users/zhangjunqiu/.codex/generated_images/01a14377-c537-7a10-b5df-10043f63fbe0/exec-1bed9bf2-f236-40f1-996a-e82c74872a04.png",
+    "status": "generated_pending_review"
+  },
+  {
+    "id": "merlin_move",
+    "character": "merlin",
+    "version": "v01",
+    "frames": 6,
+    "prompt": "Use case: identity-preserve. Reference1 is the authoritative64x64sprite enlarged8x. Preserve exact character, head/face proportions, original costume, muted palette and dark outline, upper-left light. Render true low-resolution pixel sprites with64x64logicalcells enlarged8x nearest-neighbor,48px bodyheight, boots y59,2px clear margin, face right, transparent background. No grids/labels/text/effects/shadows/scenes. SIX cells3columns x2rows LANDSCAPE3:2. Upright elderly mage, blue hooded robe,long white beard, same long wooden walking staff. Slow purposeful walking cycle, torso/head level. Frame1 near boot forward right/far boot backleft.2near support/far boot liftingbehind.3near movingback/far movingforward.4far boot forwardright/near backleft.5far support/near liftedbehind.6feetpassing returns to1. Clearly alternate opposite legs; robe hem follows each separate knee, show the two distinct brownboots. Staff remains long, carried slightly raised with its tip never lower than soles; keep staff physical length unchanged. Slight staff arc with walking, no magical effects. No whole-body bounce.",
+    "raw": "originals/merlin_move_v01_raw.png",
+    "generated_path": "/Users/zhangjunqiu/.codex/generated_images/01a14377-c537-7a10-b5df-10043f63fbe0/exec-2b35c292-9063-4d29-8ccb-d9076d0642ea.png",
+    "status": "generated_pending_review"
+  },
+  {
+    "id": "merlin_attack",
+    "character": "merlin",
+    "version": "v03",
+    "frames": 4,
+    "prompt": "Use case: identity-preserve. Reference1 is the authoritative64x64sprite enlarged8x. Preserve exact character, head/face proportions, original costume, muted palette and dark outline, upper-left light. Render true low-resolution pixel sprites with64x64logicalcells enlarged8x nearest-neighbor,48px bodyheight, boots y59,2px clear margin, face right, transparent background. No grids/labels/text/effects/shadows/scenes. Reference2 is previous4pose sheet EDIT TARGET. Change ONLY frame3 lower body to keep BOTH BOOTS PLANTED in SAME narrow standing positions as frame4 and reference1. In frame3 DO NOT stretch rear foot or cloak leftward, don't take a step. His hood/head remains above same bodycenter, he bends just knees/upper torso into planted staff. Staff always47pixels long. FOUR cells2x2: frame1 lifts full staff up(vertical),frame2 begins lowering,frame3 full-length staff planted forward right and arms tense,frame4 neutral standing. Keep frame1,2,4 designs as previous sheet, allframes head48px body, original footspacing. Neutralfeet x24..42 at y59. No footsliding/no widening stance.",
+    "raw": "originals/merlin_attack_v03_raw.png",
+    "generated_path": "/Users/zhangjunqiu/.codex/generated_images/01a14377-c537-7a10-b5df-10043f63fbe0/exec-c073c837-c939-45ca-b427-295faff1da7b.png",
+    "status": "generated_pending_review"
+  }
+]

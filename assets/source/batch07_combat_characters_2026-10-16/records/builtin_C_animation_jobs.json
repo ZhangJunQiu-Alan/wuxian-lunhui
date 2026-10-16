@@ -1,0 +1,50 @@
+[
+  {
+    "id": "annie_attack",
+    "character": "annie",
+    "frames": 4,
+    "prompt": "Use case: identity-preserve. Edit the EXACT character from image1 (authoritative64x64 pixel sprite enlarged8x). Image2 shows only original costume/weapon details; do not increase the game sprite's pixel density. Keep identical hat/hood/mask, face, hair, proportions, costume, colors and equipment throughout. True transparent PNG sprite sheet, no effects, no text, no cell borders, no shadows. Every cell is logical64x64, shown enlarged8x nearest-neighbor. Face RIGHT in the same3/4camera, head and pelvis x position fixed at original cell coordinates, feet on y59 in ALL frames. Same48px character height and SAME head/chest size across all poses. At least2logicalpixels clear on every edge; fold elbows rather than shrinking body to fit weapons. Final frame near EXACT original neutral. FOUR equal cells in2x2square layout. Original petite1880s female sharpshooter. Frame1 top-left: raise the SAME silver six-shot revolver to chest height, preparing to aim right. Frame2 top-right: extend shooting forearm toward right, barrel horizontal, trigger pull posture, free hand braces wrist. Frame3 bottom-left: gun still extended clearly to right, recoil bends elbows slightly and tilts barrel upward10degrees, firm planted boots, clear shooting pose. Frame4 bottom-right: return original ready stance with revolver lowered. Revolver barrel visibly about6logicalpixels long and2pixels thick, steel-gray highlight and dark outline, clear cylinder, never a rifle. Keep skirt knee-length and both boots. No muzzle flash, smoke, bullet or any effect. All four poses must be clearly different and same character.",
+    "version": "v01",
+    "status": "raw_saved",
+    "tool_output_path": "/Users/zhangjunqiu/.codex/generated_images/01a14377-c537-7a10-b5df-10043f63fbe0/exec-c8b40dfa-63e2-44dc-9f7d-ac9da3afb40c.png",
+    "raw": "originals/annie_attack_v01_raw.png",
+    "tool": "built-in image_gen",
+    "date": "2026-10-16"
+  },
+  {
+    "id": "lanling_attack",
+    "character": "lanling",
+    "frames": 6,
+    "prompt": "Use case: identity-preserve. Edit the EXACT character from image1 (authoritative64x64 pixel sprite enlarged8x). Image2 shows only original costume/weapon details; do not increase the game sprite's pixel density. Keep identical hat/hood/mask, face, hair, proportions, costume, colors and equipment throughout. True transparent PNG sprite sheet, no effects, no text, no cell borders, no shadows. Every cell is logical64x64, shown enlarged8x nearest-neighbor. Face RIGHT in the same3/4camera, head and pelvis x position fixed at original cell coordinates, feet on y59 in ALL frames. Same48px character height and SAME head/chest size across all poses. At least2logicalpixels clear on every edge; fold elbows rather than shrinking body to fit weapons. Final frame near EXACT original neutral. SIX equal cells in3columns x2rows, LANDSCAPE3:2sheet. Young historical masked Chinese scale-armored warrior, full wooden demon mask covers face at every moment, two original short straight blades. Read LEFT TO RIGHT top row then bottom row. Frame1 brace both short blades low before attack. Frame2 thrust LEFT-hand blade decisively right while right-hand blade guards chest. Frame3 retract left blade close to waist. Frame4 thrust RIGHT-hand blade decisively right while left-hand blade guards chest. Frame5 retract right blade. Frame6 original low ready guard. Alternate blades must clearly move, no duplicate pose disguised as body bob. Boots planted at exact reference positions, body anchor fixed, torso can twist very slightly. Each blade only10-12logicalpixels long; thrusts fit inside x61 with bent elbow. Same mask, scale pattern and red cloak. No blade trails, sparks or projectiles.",
+    "version": "v01",
+    "status": "raw_saved",
+    "tool_output_path": "/Users/zhangjunqiu/.codex/generated_images/01a14377-c537-7a10-b5df-10043f63fbe0/exec-78c28315-e643-4ded-9918-af20856d7348.png",
+    "raw": "originals/lanling_attack_v01_raw.png",
+    "tool": "built-in image_gen",
+    "date": "2026-10-16"
+  },
+  {
+    "id": "merlin_attack",
+    "character": "merlin",
+    "frames": 4,
+    "prompt": "Use case: identity-preserve. Edit the EXACT character from image1 (authoritative64x64 pixel sprite enlarged8x). Image2 shows only original costume/weapon details; do not increase the game sprite's pixel density. Keep identical hat/hood/mask, face, hair, proportions, costume, colors and equipment throughout. True transparent PNG sprite sheet, no effects, no text, no cell borders, no shadows. Every cell is logical64x64, shown enlarged8x nearest-neighbor. Face RIGHT in the same3/4camera, head and pelvis x position fixed at original cell coordinates, feet on y59 in ALL frames. Same48px character height and SAME head/chest size across all poses. At least2logicalpixels clear on every edge; fold elbows rather than shrinking body to fit weapons. Final frame near EXACT original neutral. FOUR equal cells2x2square. Same elderly white-bearded hooded medieval mage and SAME plain knotted wooden staff without gem. Frame1 lift staff upward using both hands, tip may rise from y12 to y3, keep hood at original y12, do NOT shrink wizard. Frame2 drive staff downward in front-right, elbows flexed, slight forward lean. Frame3 planted staff end on y59 beside right boot, both hands grip wood strongly, shoulders lean into downward strike, unmistakable ground-strike pose. Frame4 original upright staff-holding stance. Head/chest/staff physical size constant, same hood and long beard. Staff stays short enough to fit64x64. No magic ring, glow, runes, dust or impact effect.",
+    "version": "v01",
+    "status": "raw_saved",
+    "tool_output_path": "/Users/zhangjunqiu/.codex/generated_images/01a14377-c537-7a10-b5df-10043f63fbe0/exec-c940a818-214f-4281-a39b-fe32ffe1527a.png",
+    "raw": "originals/merlin_attack_v01_raw.png",
+    "tool": "built-in image_gen",
+    "date": "2026-10-16"
+  },
+  {
+    "id": "annie_move",
+    "character": "annie",
+    "frames": 6,
+    "prompt": "Use case: identity-preserve. Edit the EXACT character from image1 (authoritative64x64 pixel sprite enlarged8x). Image2 shows only original costume/weapon details; do not increase the game sprite's pixel density. Keep identical hat/hood/mask, face, hair, proportions, costume, colors and equipment throughout. True transparent PNG sprite sheet, no effects, no text, no cell borders, no shadows. Every cell is logical64x64, shown enlarged8x nearest-neighbor. Face RIGHT in the same3/4camera, head and pelvis x position fixed at original cell coordinates, feet on y59 in ALL frames. Same48px character height and SAME head/chest size across all poses. At least2logicalpixels clear on every edge; fold elbows rather than shrinking body to fit weapons. Final frame near EXACT original neutral. SIX equal cells3columns x2rows LANDSCAPE3:2. A seamless RUNNING/WALKING loop with clear alternating boots and arm articulation. Frame1 left boot forward and right boot back. Frame2 left leg passes under pelvis, right knee lifts. Frame3 right boot reaches forward, left leg back. Frame4 right boot plants in front, left leg behind. Frame5 right leg passes under pelvis, left knee lifts. Frame6 left boot returns forward before frame1 contact. Keep head/hat and pelvis center stable, do not simulate walking by moving entire sprite up and down. Knee-length fringed skirt sways modestly and reveals separate alternating boots; do not become trousers or long dress. Hold original revolver safely lowered in one hand throughout. Same48px scale, no weapon changes, final pose flows into first, no ground shadow.",
+    "version": "v01",
+    "status": "raw_saved",
+    "tool_output_path": "/Users/zhangjunqiu/.codex/generated_images/01a14377-c537-7a10-b5df-10043f63fbe0/exec-d72026de-8aef-442a-8c80-22908339f70e.png",
+    "raw": "originals/annie_move_v01_raw.png",
+    "tool": "built-in image_gen",
+    "date": "2026-10-16"
+  }
+]

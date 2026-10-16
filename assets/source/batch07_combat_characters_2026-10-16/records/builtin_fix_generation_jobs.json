@@ -1,0 +1,38 @@
+[
+  {
+    "id": "ice_spirit",
+    "version": "v04",
+    "previous": "v03",
+    "prompt": "Precise local edit of this FOUR-frame sprite sheet. Preserve ALL existing head/hood/face/chest/cloak/tail pixels and their exact locations. Change ONLY the forearms and hands. The arms in frames 2 and 3 reach too far right to fit the game canvas. Fold both elbows much more tightly, HALVE the current shoulder-to-hand horizontal reach. In frame 3 bottom-left BOTH open palms should point right, but the fingertips must sit just beside the right edge of the torso, NOT at arm's length. The held little ice crystal stays beside its hand, within that compact silhouette. Frame1 hands drawn back to chest; frame2 elbows bent about90degrees and hands begin pushing; frame3 short powerful two-handed push with elbows still90degrees; frame4 keep reference neutral. Keep total frame3 width the SAME as frame4 width. Each frame has exactly the same fixed head/chest/tail center. No torso translation or scaling. True transparent background, preserve original low-resolution pixel art colors/details, no effects. Four cells in2x2 layout, no labels. Leave generous transparent space around each entire sprite. The only correction is tightly folding elbows to reduce reach.",
+    "tool": "built-in image_gen",
+    "raw": "originals/ice_spirit_attack_v04_raw.png",
+    "tool_output_path": "/Users/zhangjunqiu/.codex/generated_images/01a14377-c537-7a10-b5df-10043f63fbe0/exec-85560b95-5f7b-4208-91d1-d3bc88c59a6c.png",
+    "reference": "originals/ice_spirit_attack_v03_raw.png",
+    "date": "2026-10-16",
+    "status": "raw_saved_pending_review"
+  },
+  {
+    "id": "ice_spirit_elite",
+    "version": "v03",
+    "previous": "v02",
+    "prompt": "Precise local edit of this existing FOUR-frame elite ice spirit sprite sheet. Keep every pixel of crown/head/shoulders/chest/armor/tail fixed in exact original locations. Change ONLY arms and hands. Current extended arms in frame2 and frame3 are too long for64x64 cells. Fold both elbows tightly to90degrees and HALVE horizontal shoulder-to-hand reach. Frame3 bottom-left both open clawed palms push toward the right, with fingertips immediately beside the right flank of the torso, not a full arm's length away. The total third-frame silhouette width must equal the fourth-frame neutral silhouette width. Frame1 compact hands gathered at chest, frame2 short forward push, frame3 short powerful push with90degree bent elbows, frame4 neutralunchanged. Same original muted blue/gray/brown crisp low-resolution pixel detail. True transparent background, preserve4cells2x2layout, generous transparent space around every sprite. No effects, no new object, no text, no resizing or sideways movement of body. Only shorten reach by elbow articulation.",
+    "tool": "built-in image_gen",
+    "raw": "originals/ice_spirit_elite_attack_v03_raw.png",
+    "tool_output_path": "/Users/zhangjunqiu/.codex/generated_images/01a14377-c537-7a10-b5df-10043f63fbe0/exec-47c365b8-3614-42d3-8266-c9a4430e16cd.png",
+    "reference": "originals/ice_spirit_elite_attack_v02_raw.png",
+    "date": "2026-10-16",
+    "status": "raw_saved_pending_review"
+  },
+  {
+    "id": "frost_giant",
+    "version": "v05",
+    "previous": "v04",
+    "prompt": "Precise correction of this existing four-frame frost giant sprite sheet. Preserve the exact reference character and pixel style. Critical corrections: in frame1 top-left make the giant squat EXTREMELY LOW, thighs almost horizontal, hips near knee height. Lower the entire torso/head about another12 logical pixels while maintaining unchanged head/chest size. Fold elbows with hands near ears, keeping the SAME heavy club immediately overhead. This puts club head comfortably INSIDE the top border, about8logicalpixels below it. Frame2 top-right and frame3 bottom-left: bend elbows, keep the club head closer to the knees so it does NOT reach beyond the right border; the club should point diagonally down to the right, head beside right foot. Keep original shaft length by rotating it more vertical. Frame3 is strong deep squatting ground slam. Keep head and chest the SAME large dimensions as frame4 original upright recovery. All four feet on identical baseline, both hands grip same weapon, original blue skin gray beard fur shoulders brown clothing. Four equal2x2cells genuine transparent PNG, low-resolution pixel art dark outlines muted same palette. At least8logicalpixels clear space around all poses on the raw sheet. No effects,no text,no backgrounds. Never solve padding by shrinking the body. The fix is deeper squat and folded elbows with more vertical club.",
+    "tool": "built-in image_gen",
+    "raw": "originals/frost_giant_attack_v05_raw.png",
+    "tool_output_path": "/Users/zhangjunqiu/.codex/generated_images/01a14377-c537-7a10-b5df-10043f63fbe0/exec-a23e9fc2-77c0-4ad8-9b59-50e692fc8393.png",
+    "reference": "originals/frost_giant_attack_v04_raw.png",
+    "date": "2026-10-16",
+    "status": "raw_saved_pending_review"
+  }
+]
