@@ -109,6 +109,7 @@ func _random_gaps() -> Array[float]:
 func _stomp() -> void:
 	play_once(&"stomp")
 	target.shake(10.0, 0.3)
+	Audio.sfx("boss_slam")
 	FxLayer.burst(global_position, FROST_COLOR, 30, 260.0)
 	FxLayer.ring(global_position, 150.0)
 	Shockwave.spawn(get_parent(), global_position, _gaps, target)
@@ -125,6 +126,7 @@ func _summon_guards() -> void:
 func take_damage(amount: float, knockback: Vector2 = Vector2.ZERO, crit: bool = false) -> void:
 	if state == "shield" and absf(_facing.angle_to(target.global_position - global_position)) < SHIELD_HALF_ANGLE:
 		_flash_time = 0.05
+		Audio.sfx("boss_block", -4.0)
 		if randf() < 0.3:  # 不用每次都飘字，避免刷屏
 			FxLayer.floating_text(global_position + _facing * radius, "格挡", FROST_COLOR)
 		return

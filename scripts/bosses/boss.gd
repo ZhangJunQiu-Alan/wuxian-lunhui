@@ -57,6 +57,10 @@ func _ready() -> void:
 
 
 func change_state(new_state: String) -> void:
+	if new_state.contains("howl"):
+		Audio.sfx("boss_howl")
+	elif new_state.ends_with("windup"):
+		Audio.sfx("boss_windup")
 	state = new_state
 	state_time = 0.0
 	queue_redraw()
@@ -166,6 +170,7 @@ func _die() -> void:
 	_dead = true
 	FxLayer.burst(global_position, color, 60, 320.0, 5.0)
 	FxLayer.burst(global_position, Color(1.0, 0.85, 0.4), 40, 240.0, 4.0)
+	Audio.sfx("boss_death")
 	target.shake(14.0, 0.5)
 	defeated.emit(self)
 	killed.emit(self)

@@ -82,6 +82,7 @@ func _can_pause() -> bool:
 
 
 func open() -> void:
+	Audio.sfx("ui_open")
 	get_tree().paused = true
 	_abandon_armed = false
 	_abandon.text = "放弃本局"

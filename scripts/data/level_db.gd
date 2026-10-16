@@ -16,6 +16,7 @@ class_name LevelDB
 
 const NORSE_1 := {
 	"name": "芬布尔之冬",
+	"music": "midgard",  # assets/audio/music/<名字>.ogg
 	# 布局草图见 docs/地图设计_第1关.md。北：峡湾冰崖，东：冰封的海，西：枯松林，南：山脚岩壁
 	"map": {
 		"size": Vector2(4608, 4608),

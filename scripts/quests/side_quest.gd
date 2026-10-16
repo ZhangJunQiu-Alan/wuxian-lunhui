@@ -75,6 +75,7 @@ func _process(delta: float) -> void:
 				was_accepted = true
 				time_left = time_limit
 				_on_accept()
+				Audio.sfx("quest_start")
 				accepted.emit(self)
 			elif _offer_left <= 0.0:
 				complete(false)

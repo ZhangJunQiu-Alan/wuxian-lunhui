@@ -46,6 +46,7 @@ func _process(delta: float) -> void:
 	var last_shot := _ammo == 1 and not frenzy
 	var dir := global_position.direction_to(target.global_position)
 	player.play_attack(dir, 2.0, _timer)
+	Audio.sfx("revolver_shot", -3.0)
 	var spread := [-0.08, 0.08] if twin else [0.0]
 	for angle in spread:
 		var p := Projectile.new()
@@ -64,6 +65,7 @@ func _process(delta: float) -> void:
 		_ammo -= 1
 		if _ammo <= 0:
 			_reloading = reload_time * player.cooldown_mult
+			Audio.sfx("revolver_reload")
 
 
 ## 换弹进度（0~1），没在换弹时返回 -1。用来在玩家身边画换弹圈

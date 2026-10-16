@@ -54,6 +54,7 @@ func _ready() -> void:
 		_map_layer.map = level_data.map
 		add_child(_map_layer)
 	add_child(FxLayer.new())  # 伤害数字和碎片特效
+	Audio.music(level_data.music)
 
 	player = Player.new()
 	player.character_id = CharacterDB.selected()  # 主神空间里选的角色
@@ -236,6 +237,8 @@ func _update_bosses() -> void:
 	add_child(boss)
 	hud.show_boss(boss.display_name, boss.title, boss.max_hp)
 	hud.announce(boss.intro_line)
+	Audio.sfx("boss_warning")
+	Audio.music("boss")
 	player.shake(8.0, 0.4)
 
 
@@ -310,9 +313,11 @@ func landmark_by_id(id: String) -> Dictionary:
 
 func _on_quest_finished(finished_quest: SideQuest, success: bool) -> void:
 	if success:
+		Audio.sfx("quest_done")
 		_quests_done += 1
 		hud.announce("【主神】支线剧情完成：%s。%s" % [finished_quest.title, finished_quest._reward()])
 	elif finished_quest.was_accepted:
+		Audio.sfx("quest_fail")
 		hud.announce("【主神】支线剧情失败：" + finished_quest.title)
 	else:
 		hud.announce("错过了支线剧情：" + finished_quest.title)
@@ -341,6 +346,8 @@ func _finish_run(cleared: bool) -> String:
 func _on_boss_defeated(defeated_boss: Boss) -> void:
 	_defeated_bosses.append(defeated_boss.type_id)
 	hud.hide_boss()
+	if defeated_boss.type_id != level_data.final_boss:
+		Audio.music(level_data.music)
 	hud.announce(defeated_boss.defeat_line)
 	add_reward_points(defeated_boss.reward_points)
 	FxLayer.floating_text(defeated_boss.global_position + Vector2(0, -60), "奖励点 +%d" % defeated_boss.reward_points, Color(1.0, 0.85, 0.4))
@@ -363,6 +370,7 @@ func _on_boss_defeated(defeated_boss: Boss) -> void:
 
 
 func _on_player_leveled_up(_level: int) -> void:
+	Audio.sfx("level_up")
 	queue_reward("")
 
 
@@ -395,6 +403,7 @@ func _on_level_cleared() -> void:
 	if player.is_dead:
 		return
 	get_tree().paused = true
+	Audio.music("victory")
 	hud.show_victory(level_data.name, level_data.clear_text, elapsed, kills, player.level, _finish_run(true))
 
 
@@ -411,6 +420,7 @@ func _on_player_died() -> void:
 	get_tree().paused = true
 	player.play_death()  # 画面定格，只有玩家播完倒地动作再结算
 	var delay := player.death_duration()
+	Audio.music("defeat")
 	if delay > 0.0:
 		await get_tree().create_timer(delay + 0.4).timeout
 	hud.show_game_over(elapsed, kills, player.level, _finish_run(false))

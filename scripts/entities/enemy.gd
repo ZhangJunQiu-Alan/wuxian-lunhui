@@ -252,6 +252,7 @@ func _ranged_move(dir: Vector2, dist: float, delta: float) -> Vector2:
 			_shoot_timer = shoot_cooldown
 			_casting = false
 			EnemyProjectile.spawn(get_parent(), global_position, dir, projectile_damage)
+			Audio.sfx("ice_shot", -4.0)
 			FxLayer.burst(global_position + dir * radius, color.lightened(0.4), 6, 120.0, 3.0)
 	if _casting or was_casting:
 		queue_redraw()
@@ -293,6 +294,7 @@ func take_damage(amount: float, knockback: Vector2 = Vector2.ZERO, crit: bool = 
 	_flash_time = 0.08
 	queue_redraw()
 	if amount > 0.0:  # 只击退不造成伤害时（例如复活震开）不显示数字
+		Audio.sfx("enemy_hit", -4.0)
 		FxLayer.damage_number(global_position + Vector2(randf_range(-8, 8), -radius - 4), amount, crit)
 	if hp <= 0.0:
 		_die()
@@ -308,6 +310,7 @@ func _die() -> void:
 	# 在物理回调中不能直接加碰撞体相关节点，所以用 call_deferred 延迟到帧末
 	get_parent().call_deferred("add_child", gem)
 	FxLayer.burst(global_position, color, 30 if is_elite else 8, 220.0 if is_elite else 150.0)
+	Audio.sfx("big_death" if is_elite or radius >= 20.0 else "enemy_death", -2.0)
 	if is_elite:
 		target.shake(6.0, 0.2)
 	killed.emit(self)

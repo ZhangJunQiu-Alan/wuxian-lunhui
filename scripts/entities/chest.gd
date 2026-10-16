@@ -23,6 +23,7 @@ func _process(delta: float) -> void:
 			queue_free()
 	elif is_instance_valid(player) and global_position.distance_to(player.global_position) < PICKUP_DISTANCE:
 		_open_left = OPEN_TIME
+		Audio.sfx("chest_open")
 		FxLayer.burst(global_position, Color(1.0, 0.85, 0.4), 24, 200.0)
 		opened.emit()
 

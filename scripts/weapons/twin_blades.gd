@@ -53,6 +53,7 @@ func _process(delta: float) -> void:
 	if _aim == Vector2.ZERO:
 		_aim = player.facing
 	player.play_attack(_aim, 5.0, _timer)
+	Audio.sfx("blades_slash")
 
 	var siege := 1.0 + minf(SIEGE_MAX, nearby * SIEGE_PER_ENEMY)  # 破阵加成
 	var dmg := damage * player.damage_mult * siege

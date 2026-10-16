@@ -22,6 +22,7 @@ func _process(delta: float) -> void:
 		global_position = global_position.move_toward(player.global_position, FLY_SPEED * delta)
 		if dist < 12.0:
 			player.add_xp(value)
+			Audio.sfx("pickup_xp", -6.0, 0.15)
 			queue_free()
 
 

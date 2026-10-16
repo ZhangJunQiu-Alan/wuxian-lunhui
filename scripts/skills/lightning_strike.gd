@@ -40,6 +40,7 @@ func _strike(pos: Vector2) -> void:
 	Enemy.damage_in_radius(get_tree(), pos, BLAST_RADIUS, dmg, 180.0)
 	var sky := pos + Vector2(randf_range(-40.0, 40.0), -420.0)
 	LightningFx.spawn(get_tree().current_scene, sky, pos, BLAST_RADIUS)
+	Audio.sfx("lightning")
 
 	if chain <= 0:
 		return

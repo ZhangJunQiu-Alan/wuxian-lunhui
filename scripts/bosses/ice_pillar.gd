@@ -14,6 +14,7 @@ var _age := 0.0
 static func spawn(parent: Node, pos: Vector2, duration: float) -> void:
 	var pillar := IcePillar.new()
 	pillar.position = pos
+	Audio.sfx("ice_pillar")
 	pillar._life = duration
 	parent.add_child.call_deferred(pillar)
 

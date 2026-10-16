@@ -26,6 +26,7 @@ func _process(delta: float) -> void:
 		return
 	_timer = TICK
 	Enemy.damage_in_radius(get_tree(), global_position, radius, damage * player.damage_mult)
+	Audio.sfx("fire_burn", -6.0)
 
 
 func _draw() -> void:

@@ -27,6 +27,7 @@ func _process(delta: float) -> void:
 		_timer = cooldown * player.cooldown_mult
 		_waves.append({"t": 0.0, "hit": {}})
 		player.play_attack(player.facing, 0.0, _timer)
+		Audio.sfx("nova_cast")
 		if echo:
 			_waves.append({"t": -0.3, "hit": {}})  # 负数表示延迟出发
 

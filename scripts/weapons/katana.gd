@@ -55,6 +55,7 @@ func _slash(enemies: Array[Node], target: Enemy) -> void:
 	_slash_time = SLASH_DURATION
 	_sweep_sign = -_sweep_sign
 	player.play_attack(aim, 7.0, _timer)
+	Audio.sfx("katana_slash")
 
 	var dmg := damage * player.damage_mult * (2.0 if _niten else 1.0)
 	for node in enemies:

@@ -26,6 +26,7 @@ func _process(delta: float) -> void:
 	if targets.is_empty():
 		return
 	_timer = cooldown * player.cooldown_mult
+	Audio.sfx("rune_bolt")
 
 	for i in count:
 		var target: Node2D = targets[i % targets.size()]  # 敌人不够时重复瞄准

@@ -253,6 +253,7 @@ func try_dash() -> void:
 	var from := position
 	position = MapLayer.push_out(Game.clamp_to_map(position + facing * DASH_DISTANCE, RADIUS), RADIUS)
 	_spawn_ghosts(from)
+	Audio.sfx("dash")
 	FxLayer.burst(global_position, Color(0.75, 0.9, 1.0), 12, 140.0, 3.0)
 	_camera.reset_smoothing()
 
@@ -275,6 +276,8 @@ func _spawn_ghosts(from: Vector2) -> void:
 
 
 func add_ult_energy(amount: float) -> void:
+	if ult_energy < ult_cost and ult_energy + amount >= ult_cost:
+		Audio.sfx("ult_ready")
 	ult_energy = minf(ult_cost, ult_energy + amount)
 	ult_changed.emit(ult_energy, ult_cost)
 
@@ -284,6 +287,7 @@ func try_ultimate() -> void:
 		return
 	ult_energy = 0.0
 	ult_changed.emit(ult_energy, ult_cost)
+	Audio.sfx("ult_" + character_id)
 	match character_id:
 		"swordsman":
 			DimensionSlash.cast(self)
@@ -324,6 +328,7 @@ func take_damage(amount: float) -> void:
 		return
 	hp = maxf(0.0, hp - amount)
 	_hurt_time = 0.25
+	Audio.sfx("player_death" if hp <= 0.0 else "player_hurt")
 	shake(4.0, 0.15)
 	hp_changed.emit(hp, max_hp)
 	if hp <= 0.0:
@@ -342,6 +347,7 @@ func revive() -> void:
 	_invincible_time = 2.0
 	hp_changed.emit(hp, max_hp)
 	shake(10.0, 0.4)
+	Audio.sfx("revive")
 	FxLayer.burst(global_position, Color(1.0, 0.9, 0.5), 50, 320.0, 4.0)
 	Enemy.damage_in_radius(get_tree(), global_position, 260.0, 0.0, 900.0)
 

@@ -73,6 +73,7 @@ func choose(index: int) -> void:
 	if not visible or index >= _ids.size():
 		return
 	visible = false
+	Audio.sfx("card_pick")
 	chosen.emit(_ids[index])
 
 
@@ -108,6 +109,7 @@ func _make_card(index: int, id: String, player: Player) -> Button:
 	card.add_theme_stylebox_override("normal", _card_style(color, 0.12, 2 if not is_awaken else 4))
 	card.add_theme_stylebox_override("hover", _card_style(color, 0.2, 4))
 	card.add_theme_stylebox_override("pressed", _card_style(color, 0.28, 4))
+	card.set_meta("silent", true)
 	card.pressed.connect(choose.bind(index))
 
 	var box := VBoxContainer.new()

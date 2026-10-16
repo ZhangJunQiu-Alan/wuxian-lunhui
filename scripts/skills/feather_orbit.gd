@@ -38,6 +38,7 @@ func _process(delta: float) -> void:
 				continue
 			_last_hit[id] = _time
 			enemy.take_damage(dmg, (enemy.global_position - global_position).normalized() * 120.0)
+			Audio.sfx("feather_hit", -4.0)
 
 	if _last_hit.size() > 300:  # 清理早已过期的记录，避免越存越多
 		for id in _last_hit.keys():
