@@ -1,0 +1,23 @@
+{
+  "tool": "OpenAI built-in image generation",
+  "source": "/Users/zhangjunqiu/.codex/generated_images/01a14377-c537-7a10-b5df-10043f63fbe0/exec-907e5bc1-09a6-4e6c-b272-c499f5519ada.png",
+  "id": "hel_move",
+  "unit": "hel",
+  "label": "冥界女王 move",
+  "action": "move",
+  "folder": "bosses",
+  "w": 192,
+  "h": 192,
+  "frames": 4,
+  "task": "taskD_helheim_bosses_2026-10-17",
+  "loop": true,
+  "anchor": "bottom",
+  "body_h": 165,
+  "subject": "An imperious UNDERWORLD QUEEN whose body is split VERTICALLY into exactly two halves: one half a beautiful pale living young woman and the other half a decayed corpse with exposed cheekbone, hollow eye socket and skeletal forearm. Anatomical left/right half split must be obvious on face AND chest, not top/bottom. Bone crown, long black robes with muted dark purple trim. Three-quarter view turning slightly RIGHT while showing BOTH facial halves, full-body upright silhouette. Empty hands, no staff, no magic particles or aura.",
+  "status": "pending",
+  "version": "v02",
+  "refs": [
+    "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskD_helheim_bosses_2026-10-17/candidates/hel_v02.png"
+  ],
+  "prompt": "Use case: identity-preserve. EXACT reference character, all features, proportions, palette, cloth/chain details. FOUR-frame slow dignified walking cycle to RIGHT. Same165pixel height, fixed head height, same pelvis and shoulders. Both feet alternate near-contact,passing,far-contact,passing. Keep robe strands hanging DOWN close to legs, NO sideways billowing. Show both living and corpse face halves in every frame. Head remains near-frontal slightlyright. Exactly4 frames 2columns by2rows equal cells 192x192 logicalpx each. Fixed feet baseline, 2px clear margin, same scale in every frame. Pixel art same colors as input, upperleft lighting, darkoutline, binary transparent. No grid/text/ground/particles/FX or shadow."
+}

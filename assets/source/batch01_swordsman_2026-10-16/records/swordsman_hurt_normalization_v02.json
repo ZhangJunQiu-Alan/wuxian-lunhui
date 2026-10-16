@@ -1,0 +1,63 @@
+{
+  "action": "hurt",
+  "source_size": [
+    1774,
+    887
+  ],
+  "grid": [
+    2,
+    1
+  ],
+  "source_bboxes_exclusive": [
+    [
+      306,
+      177,
+      731,
+      832
+    ],
+    [
+      209,
+      129,
+      616,
+      832
+    ]
+  ],
+  "shared_scale_all_frames": 0.06774668630338733,
+  "palette_source": "candidates/swordsman_nearest_v02.png",
+  "frames": [
+    {
+      "index": 0,
+      "scaled_subject": [
+        29,
+        44
+      ],
+      "offset": [
+        17,
+        16
+      ],
+      "bbox_exclusive": [
+        17,
+        16,
+        46,
+        60
+      ]
+    },
+    {
+      "index": 1,
+      "scaled_subject": [
+        28,
+        48
+      ],
+      "offset": [
+        18,
+        12
+      ],
+      "bbox_exclusive": [
+        18,
+        12,
+        46,
+        60
+      ]
+    }
+  ]
+}

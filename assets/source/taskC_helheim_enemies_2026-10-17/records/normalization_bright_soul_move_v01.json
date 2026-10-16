@@ -1,0 +1,68 @@
+{
+  "source": "/Users/zhangjunqiu/Desktop/\u65e0\u9650\u6050\u6016/assets/source/taskC_helheim_enemies_2026-10-17/originals/bright_soul_move_v01_raw.png",
+  "raw_size": [
+    1254,
+    1254
+  ],
+  "grid": [
+    2,
+    2
+  ],
+  "crop_boxes": [
+    [
+      205,
+      79,
+      563,
+      577
+    ],
+    [
+      101,
+      79,
+      424,
+      574
+    ],
+    [
+      205,
+      61,
+      577,
+      553
+    ],
+    [
+      115,
+      61,
+      438,
+      552
+    ]
+  ],
+  "common_scale": 0.12048192771084337,
+  "target_body_height": 60,
+  "first_pose_reference_index": 0,
+  "placements": [
+    [
+      10,
+      2,
+      43,
+      60
+    ],
+    [
+      12,
+      2,
+      39,
+      60
+    ],
+    [
+      9,
+      3,
+      45,
+      59
+    ],
+    [
+      12,
+      3,
+      39,
+      59
+    ]
+  ],
+  "palette_reference": "/Users/zhangjunqiu/Desktop/\u65e0\u9650\u6050\u6016/assets/source/taskC_helheim_enemies_2026-10-17/candidates/bright_soul_v01.png",
+  "note": "One shared scale across all frames; whole-cell crop and placement only, no character drawing."
+}

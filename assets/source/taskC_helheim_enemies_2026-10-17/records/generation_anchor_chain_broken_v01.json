@@ -1,0 +1,22 @@
+{
+  "id": "anchor_chain_broken",
+  "label": "断开锚链",
+  "folder": "quests",
+  "w": 64,
+  "h": 96,
+  "frames": 1,
+  "task": "taskC_helheim_enemies_2026-10-17",
+  "subject": "The identical reference mooring peg and coarse anchor chain after being cut: peg/base unchanged, lower broken links lying slack beside it and upper chain end snapped short, clear two broken open links. Same iron material, perspective, base footprint, scale. No ground scene.",
+  "loop": false,
+  "anchor": "bottom",
+  "status": "pending",
+  "unit": null,
+  "action": "static",
+  "version": "v01",
+  "refs": [
+    "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskC_helheim_enemies_2026-10-17/candidates/anchor_chain_v01.png"
+  ],
+  "prompt": "Use case: identity-preserve. Input1 is the EXACT project prop to retain. The identical reference mooring peg and coarse anchor chain after being cut: peg/base unchanged, lower broken links lying slack beside it and upper chain end snapped short, clear two broken open links. Same iron material, perspective, base footprint, scale. No ground scene.\nOne single isolated game prop, logicalcanvas64x96. Preserve source pixel style, upper-left illumination, limited48colorpalette and original object's size in frame. DO NOT scale the broken remains up to fill canvas. Broken parts stay low near same original bottom ground line, leave transparent space above the destroyed object. True transparent RGBA background, binary opacity, at least2logicalpixels empty on all sides, crisp pixel clusters, no text, labels, scene or ground shadow.",
+  "tool": "builtin image_gen",
+  "source": "/Users/zhangjunqiu/.codex/generated_images/01a14377-c537-7a10-b5df-10043f63fbe0/exec-7d560d49-9581-4318-8376-eb89a11012e8.png"
+}

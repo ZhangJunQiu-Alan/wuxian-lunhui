@@ -1,0 +1,22 @@
+{
+  "id": "chain_stake_broken",
+  "label": "折断锁桩",
+  "folder": "props/helheim",
+  "w": 64,
+  "h": 96,
+  "frames": 1,
+  "task": "taskD_helheim_bosses_2026-10-17",
+  "subject": "The exact referenced iron chain stake after breaking, upper half snapped off and fallen diagonally right beside the intact low base, open broken chain link, jagged metal ends. Same base geometry, scale, iron rings and perspective; clear destroyed silhouette. No ground scene.",
+  "loop": false,
+  "anchor": "bottom",
+  "status": "pending",
+  "unit": null,
+  "action": "static",
+  "version": "v01",
+  "refs": [
+    "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskD_helheim_bosses_2026-10-17/candidates/chain_stake_v01.png"
+  ],
+  "prompt": "Use case: identity-preserve. Input1 is the EXACT project prop to retain. The exact referenced iron chain stake after breaking, upper half snapped off and fallen diagonally right beside the intact low base, open broken chain link, jagged metal ends. Same base geometry, scale, iron rings and perspective; clear destroyed silhouette. No ground scene.\nOne single isolated game prop, logicalcanvas64x96. Preserve source pixel style, upper-left illumination, limited48colorpalette and original object's size in frame. DO NOT scale the broken remains up to fill canvas. Broken parts stay low near same original bottom ground line, leave transparent space above the destroyed object. True transparent RGBA background, binary opacity, at least2logicalpixels empty on all sides, crisp pixel clusters, no text, labels, scene or ground shadow.",
+  "tool": "builtin image_gen",
+  "source": "/Users/zhangjunqiu/.codex/generated_images/01a14377-c537-7a10-b5df-10043f63fbe0/exec-f2f7128f-6c7e-4eb9-a12a-85386efbfad1.png"
+}

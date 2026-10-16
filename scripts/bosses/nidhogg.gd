@@ -22,7 +22,7 @@ const GNAW_HEAL := 0.025         # 每秒回复最大生命的比例
 const GNAW_MAX := 6.0
 const GNAW_BREAK := 0.06         # 啃的时候受到这么多比例的伤害就被打断
 const STAGGER_TIME := 2.0
-const ROOT_PATH := "res://assets/sprites/props/helheim/world_root_arch.png"
+const ROOT_PATH := "res://assets/sprites/props/helheim/world_tree_root.png"
 const CRACK_PATH := "res://assets/sprites/effects/ground_crack.png"  # 96×96 的 4 帧，裂纹越来越大
 const POISON := Color(0.4, 0.75, 0.3)
 
@@ -113,7 +113,7 @@ func _update_state(delta: float) -> void:
 			if state_time >= 0.6:
 				change_state("recover")
 		"go_root":
-			var to := _root.global_position + Vector2(0, 30)
+			var to := _root.global_position + Vector2(0, -50)
 			position = position.move_toward(to, speed * GNAW_RUN_SPEED * slow * delta)
 			if position.distance_to(to) < 8.0:
 				_gnaw_damage = 0.0

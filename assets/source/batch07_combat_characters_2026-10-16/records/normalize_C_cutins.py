@@ -3,7 +3,7 @@ from PIL import Image
 import json,hashlib
 r=Path(__file__).resolve().parents[1]
 items=json.loads((r/'records/candidates.json').read_text())
-for char in ['annie','lanling','merlin']:
+for char in ['gunslinger','assassin','mage']:
     raw=Image.open(r/'originals'/f'{char}_cutin_v01_raw.png').convert('RGBA')
     raw.putalpha(raw.getchannel('A').point(lambda v:255 if v>=128 else 0))
     crop=raw.crop(raw.getbbox());scale=min(194/crop.width,154/crop.height)

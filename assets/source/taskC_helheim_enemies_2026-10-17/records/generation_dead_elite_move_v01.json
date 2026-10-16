@@ -1,0 +1,23 @@
+{
+  "tool": "OpenAI built-in image generation",
+  "source": "/Users/zhangjunqiu/.codex/generated_images/01a14377-c537-7a10-b5df-10043f63fbe0/exec-88d4bbd4-19c1-4d8e-8ada-04bd9eaaf938.png",
+  "id": "dead_elite_move",
+  "unit": "dead_elite",
+  "label": "精英亡者 move",
+  "action": "move",
+  "folder": "enemies",
+  "w": 64,
+  "h": 64,
+  "frames": 6,
+  "task": "taskC_helheim_enemies_2026-10-17",
+  "loop": true,
+  "anchor": "bottom",
+  "body_h": 50,
+  "subject": "The same frail dead commoner, now wearing broken dark gray underworld iron armor, ragged gray cloth visible underneath. Retain thin body and elderly face, clearly armored elite without heroic bulk.",
+  "status": "pending",
+  "version": "v01",
+  "refs": [
+    "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskC_helheim_enemies_2026-10-17/candidates/dead_elite_v01.png"
+  ],
+  "prompt": "Use case: identity-preserve. Animate EXACT reference character; preserve face, equipment, proportions and colors. A real SIX-frame rightward walk cycle. Reading order:1 near leg forward/far leg back contact;2 near leg supports weight while far knee passes;3 far leg swings forward while near leg trails;4 far leg forward/near leg back opposite contact;5 far leg supports while near knee passes;6 near leg swings forward into pose1. Both arms swing in opposition to legs. Distinguish near and far leg throughout, keep them attached to same hips. No skating, no bouncing whole pasted figure, no repeating one forward foot in every frame.\n\nLayout EXACTLY 6 frames in 3 columns by 2 rows equal cells, reading order. Each cell logically 64x64px. Body height 50 logical pixels, fixed foot baseline and scale, facing RIGHT. Both legs alternate opposing contact for walk. Only same RGB palette as input1. Low-resolution pixel clusters, upper-left light, dark outline, binary transparent background, 2px clear margin. No text, grid, scenery, watermark, shadow, magic, slash or particles. Frame1 neutral reference size; compact action instead of resizing body."
+}

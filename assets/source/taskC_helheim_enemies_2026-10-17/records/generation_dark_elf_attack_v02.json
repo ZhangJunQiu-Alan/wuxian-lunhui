@@ -1,0 +1,23 @@
+{
+  "tool": "OpenAI built-in image generation",
+  "source": "/Users/zhangjunqiu/.codex/generated_images/01a14377-c537-7a10-b5df-10043f63fbe0/exec-db8ca846-ba5d-4c48-bf29-77a296cdfad7.png",
+  "id": "dark_elf_attack",
+  "unit": "dark_elf",
+  "label": "黑暗精灵 attack",
+  "action": "attack",
+  "folder": "enemies",
+  "w": 64,
+  "h": 64,
+  "frames": 4,
+  "task": "taskC_helheim_enemies_2026-10-17",
+  "loop": false,
+  "anchor": "bottom",
+  "body_h": 50,
+  "subject": "A pale-skinned underground elven archer, pointed ear, short black hood, dark leather armor and ragged charcoal cloak, carrying a compact recurved wooden bow and quiver. Restrained dark gray and muted purple, alert low standing stance. Both feet grounded, bow held ready, no released arrow.",
+  "status": "pending",
+  "version": "v02",
+  "refs": [
+    "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskC_helheim_enemies_2026-10-17/candidates/dark_elf_v01.png"
+  ],
+  "prompt": "Use case: identity-preserve. Animate EXACT reference character; preserve face, equipment, proportions and colors. Four poses:1 bow held at rest;2 raise bow to aim RIGHT while drawing string halfway;3 full draw string toward cheek, bow arm extended RIGHT;4 release string with pulling hand moving back, empty bow after shot. One identical bow, same fingers/arms and quiver, correct string connection. No floating released arrow or trail drawn inside character frames.\nCRITICAL compact silhouette: cloak hangs DOWN, never fans sideways. Bow and drawing hand kept close to chest. Same head-to-foot height as reference in every frame. Do not shrink the torso to accommodate bow. Four poses ready, partial draw, full draw, release if attack.\nLayout EXACTLY 4 frames in 2 columns by 2 rows equal cells, reading order. Each cell logically 64x64px. Body height 50 logical pixels, fixed foot baseline and scale, facing RIGHT. Both legs alternate opposing contact for walk. Only same RGB palette as input1. Low-resolution pixel clusters, upper-left light, dark outline, binary transparent background, 2px clear margin. No text, grid, scenery, watermark, shadow, magic, slash or particles. Frame1 neutral reference size; compact action instead of resizing body."
+}

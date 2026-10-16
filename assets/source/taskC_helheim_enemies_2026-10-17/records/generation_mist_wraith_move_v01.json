@@ -1,0 +1,23 @@
+{
+  "tool": "OpenAI built-in image generation",
+  "source": "/Users/zhangjunqiu/.codex/generated_images/01a14377-c537-7a10-b5df-10043f63fbe0/exec-7d711b2c-6b27-4fe8-8f3e-769c6f0c4133.png",
+  "id": "mist_wraith_move",
+  "unit": "mist_wraith",
+  "label": "冥雾幽魂 move",
+  "action": "move",
+  "folder": "enemies",
+  "w": 64,
+  "h": 64,
+  "frames": 6,
+  "task": "taskC_helheim_enemies_2026-10-17",
+  "loop": true,
+  "anchor": "float",
+  "body_h": 53,
+  "subject": "A slender mournful mist-shaped human ghost, cold-gray and dark jade ragged vapor silhouette, exactly two small phosphor-green eyes, lower body dispersing into a few chunky trailing mist ribbons instead of feet. No translucent pixels: convey ghostly depth using solid dark gray, muted green and pale gray edges.",
+  "status": "pending",
+  "version": "v01",
+  "refs": [
+    "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskC_helheim_enemies_2026-10-17/candidates/mist_wraith_v03.png"
+  ],
+  "prompt": "Use case: identity-preserve. Exact reference hollow hooded gray-green mist ghost with TWO emerald eyes. Preserve both bright emerald eye pixels through EVERY pose, near-frontal face looking slightly RIGHT. Preserve body, palette and no-feet fog ribbons. Six-phase ghost drifting loop, same upper torso, shoulders, two green eyes and head fixed, lower ragged mist ribbons sway left then right and back across6phases. It has no feet. Change the ribbon curl gradually, no rotating body or changing face, no magic circle or aura. EXACTLY 6 frames in 3columns by2rows, logical64x64 each. Body53px high, baseline62, opaque pixel art, same palette as reference, 2px transparent margin. Body remains same size, same camera, no new face, no scene/text/grid/particles/spells. Every frame shows both bright GREEN eyes."
+}

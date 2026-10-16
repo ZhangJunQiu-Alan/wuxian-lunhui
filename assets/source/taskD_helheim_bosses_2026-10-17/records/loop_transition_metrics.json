@@ -1,0 +1,101 @@
+{
+  "note": "Diagnostic only; last entry is final-to-first. This does not replace visual review.",
+  "animations": [
+    {
+      "id": "garm_idle",
+      "version": "v01",
+      "cyclic_changed_pixels": [
+        6670,
+        6682,
+        6557,
+        6478
+      ],
+      "wrap_to_largest_internal_ratio": 0.969,
+      "sha256": "7d1f46fb015debbdd1b4ebc815c70c6f74b7198a25c510b2c40b215b6ba47e51"
+    },
+    {
+      "id": "garm_move",
+      "version": "v02",
+      "cyclic_changed_pixels": [
+        7591,
+        7149,
+        6863,
+        7745
+      ],
+      "wrap_to_largest_internal_ratio": 1.02,
+      "sha256": "1d20a9276237a6ca79e80e15909054794f52b4f3dbf3b27b1d1c40ca855d68e5"
+    },
+    {
+      "id": "nidhogg_idle",
+      "version": "v01",
+      "cyclic_changed_pixels": [
+        8933,
+        9237,
+        9054,
+        8669
+      ],
+      "wrap_to_largest_internal_ratio": 0.939,
+      "sha256": "973370560c5c1878a3c95651e5de46d2c688ac684da7d44f399dd5c47c842924"
+    },
+    {
+      "id": "nidhogg_move",
+      "version": "v01",
+      "cyclic_changed_pixels": [
+        9419,
+        9401,
+        9595,
+        9371
+      ],
+      "wrap_to_largest_internal_ratio": 0.977,
+      "sha256": "13c0235849b14a448f4daedb0c8c1f3227b8b7bca7609b9798563ca0be14c4aa"
+    },
+    {
+      "id": "nidhogg_gnaw",
+      "version": "v01",
+      "cyclic_changed_pixels": [
+        8394,
+        9058,
+        8342,
+        6933
+      ],
+      "wrap_to_largest_internal_ratio": 0.765,
+      "sha256": "250ffdf7f259531238bce7d748dcbea6a6f1f60bd9e3f35a4ad95ac2ca5faf1d"
+    },
+    {
+      "id": "hel_idle",
+      "version": "v01",
+      "cyclic_changed_pixels": [
+        8819,
+        9257,
+        8770,
+        9166
+      ],
+      "wrap_to_largest_internal_ratio": 0.99,
+      "sha256": "681ef64f63ea5e98b900edd37c257145ada96579c5cbe6ec4cf03a8d50ed71a0"
+    },
+    {
+      "id": "hel_move",
+      "version": "v03",
+      "cyclic_changed_pixels": [
+        8657,
+        8242,
+        9153,
+        9369
+      ],
+      "wrap_to_largest_internal_ratio": 1.024,
+      "sha256": "933afa87c8ad8bfa60bbdcb84262b250e90978970e7d6212b0a4ad43050007ad"
+    },
+    {
+      "id": "poison_pool",
+      "version": "v01",
+      "cyclic_changed_pixels": [
+        1505,
+        1863,
+        1612,
+        1709
+      ],
+      "wrap_to_largest_internal_ratio": 0.917,
+      "sha256": "0284bb2e78321311e43248046a820d43920193764e68f64d662d25cd1516374f"
+    }
+  ]
+}

@@ -1,0 +1,2938 @@
+{
+  "task": "A",
+  "date": "2026-10-17",
+  "status": "complete_verified",
+  "text_files_changed": 78,
+  "paths_renamed": 491,
+  "protected_runtime_files_verified": 530,
+  "changes": [
+    {
+      "path": "LICENSES.md",
+      "before_sha256": "99fd5b75a598abe5022cc62687d83c0803fe32ec8fb5acc8e69b72a1d782d080",
+      "after_sha256": "cd02002c03a319d4e7dabeaefe3ce51cddfbf2a1c5b652902317b049a49da94f",
+      "action": "identifier paths updated; recorded proper names redacted in place"
+    },
+    {
+      "path": "source/batch07_combat_characters_2026-10-16/README.md",
+      "before_sha256": "c2fb8a3eb2e937990f815169b853897fb5a13fefaee98efaaee073ad0e4d5be0",
+      "after_sha256": "bd0835c79142a63f9787b9ed24b47b30cd6946007a866d698002de56d141fd86",
+      "action": "identifier paths updated; recorded proper names redacted in place"
+    },
+    {
+      "path": "source/batch07_combat_characters_2026-10-16/gallery.html",
+      "before_sha256": "376dacf32c99ac61a6fca6ac9f9d3b32f7b162408cc5e1d22d6e3c31e9eeead8",
+      "after_sha256": "aab2c7abf08868bf1dd16c21da094d7f6b63d98dfe337f0260cf697725adf9b4",
+      "action": "identifier paths updated; recorded proper names redacted in place"
+    },
+    {
+      "path": "source/batch07_combat_characters_2026-10-16/manifest.json",
+      "before_sha256": "32b26044cd62b52828ea65e89a64d92ab794d6485d92bf1b4ff89cdddda4755a",
+      "after_sha256": "f08b4f7d678742724a71b2ed3af833418980fbb916086bdb30c8235f8ad5de91",
+      "action": "identifier paths updated; recorded proper names redacted in place"
+    },
+    {
+      "path": "source/batch01_swordsman_2026-10-16/README.md",
+      "before_sha256": "43f1a1995c01d42ffddca22c896038de2d86f8e8c85f92bf136e855004d42d9a",
+      "after_sha256": "1ea00c91f42342511af8b9d489be1a9d29b6d9f43d3882d3c05b73f55b4fdd45",
+      "action": "identifier paths updated; recorded proper names redacted in place"
+    },
+    {
+      "path": "source/batch01_swordsman_2026-10-16/gallery.html",
+      "before_sha256": "c3831cc2ea8084282b12b10e8cec3b66d44f6302114c87f958de60ffdfb818e2",
+      "after_sha256": "7115b9f013ff97e32e82fdceee7d7ab2670645319097c2a296616cffaae00166",
+      "action": "identifier paths updated; recorded proper names redacted in place"
+    },
+    {
+      "path": "source/batch01_swordsman_2026-10-16/manifest.json",
+      "before_sha256": "3569a4ec315f8d95b95b57666e1880a3e02055ea875f676527e04f50f0020de5",
+      "after_sha256": "85ad30b7517868736c2c1cc7187932f1c8f0976064d1bc90088a36f1224f0018",
+      "action": "identifier paths updated; recorded proper names redacted in place"
+    },
+    {
+      "path": "source/batch03_stage01_boss_actions_2026-10-16/records/chrome_tab_cleanup.json",
+      "before_sha256": "901e93a565395a6107b2804546898a2c82aef2ba737b591d9be81a5e583a569a",
+      "after_sha256": "3e2bfbaccce1130b3906489806b847674990004bbd507bb7349017344e2c8dc0",
+      "action": "identifier paths updated; recorded proper names redacted in place"
+    },
+    {
+      "path": "source/batch01_swordsman_2026-10-16/candidates/swordsman_idle_v05.piskel",
+      "before_sha256": "fc05bc450c6c3cc1127e5d7033f30dbfe5089d415bf872d857fdd3be451f00b7",
+      "after_sha256": "e7380b34b0230069ea804ac5a113deb8958b8d4bdaac96a54d821be19c67de05",
+      "action": "identifier paths updated; recorded proper names redacted in place"
+    },
+    {
+      "path": "source/batch01_swordsman_2026-10-16/candidates/swordsman_move_v05.piskel",
+      "before_sha256": "58bd4373cb31b59dcea584364a58ea78518c9c7557fe4d12a4904e4d48081232",
+      "after_sha256": "545dac309cf6999d4b97f6bd95388f9ff61ef842120ce013663087b2c9edc004",
+      "action": "identifier paths updated; recorded proper names redacted in place"
+    },
+    {
+      "path": "source/batch01_swordsman_2026-10-16/candidates/swordsman_piskel_v01.piskel",
+      "before_sha256": "e4e5bf75980e2c6f3c2a40c973850b7ef9385d8e35d1a7ff0545d200461c0a87",
+      "after_sha256": "49e34fbee98b511b6cb5f8ea68c73df19264f00e4c7141302b3bc71707e1f42b",
+      "action": "identifier paths updated; recorded proper names redacted in place"
+    },
+    {
+      "path": "source/batch01_swordsman_2026-10-16/candidates/swordsman_idle_v04.piskel",
+      "before_sha256": "94d24b4590a95bc67ae1f567a68131eaf6a53d01a954901c6326348289cd818c",
+      "after_sha256": "dfd565b98642be3cb4b1a7cdf72f011c024385cbf0dc42ff31e7383a8252989c",
+      "action": "identifier paths updated; recorded proper names redacted in place"
+    },
+    {
+      "path": "source/batch01_swordsman_2026-10-16/candidates/swordsman_move_v06.piskel",
+      "before_sha256": "a739f2e38a6d5640a4cb1f2cdd09facae719c14ac0ef726297ecdeb22f5ca776",
+      "after_sha256": "15ac3154ec09c1a3d82f5147c425d3ad419472206241cb4cf8e60502ee541174",
+      "action": "identifier paths updated; recorded proper names redacted in place"
+    },
+    {
+      "path": "source/batch01_swordsman_2026-10-16/candidates/swordsman_move_v04.piskel",
+      "before_sha256": "633c3b6e2e77a1708942ff749c03c1fb033d0312b80cf2d7adc701c2604ae09a",
+      "after_sha256": "9a38eecaae2dd4a3f4f02048ad8718daa4feb1b95a45639bace093ce571f1c30",
+      "action": "identifier paths updated; recorded proper names redacted in place"
+    },
+    {
+      "path": "source/batch01_swordsman_2026-10-16/records/swordsman_cutin_prompt_v01.txt",
+      "before_sha256": "d40e444781da053d5b16d38514924b4dc7773cc8711b9446aab6de4dff8a15e6",
+      "after_sha256": "fe21c0e79dbe52fd135eebc0bdeafa1c93ace7b9cee354f358dc7db360cc8ccc",
+      "action": "identifier paths updated; recorded proper names redacted in place"
+    },
+    {
+      "path": "source/batch01_swordsman_2026-10-16/records/swordsman_batch_palette.json",
+      "before_sha256": "16bf3642f489a9a0bbd87ad3084a5af019e87e89ae5423d2a1597c68942add70",
+      "after_sha256": "8b04bcabd905eba65bd3470045d6614e12f50738dee6233ce748ac66993c015c",
+      "action": "identifier paths updated; recorded proper names redacted in place"
+    },
+    {
+      "path": "source/batch01_swordsman_2026-10-16/records/plan_move_manual_v04.py",
+      "before_sha256": "825e0d34fc7b0998262289071417195c956a6f974accae11eb984a9885d65b82",
+      "after_sha256": "7225d42bcb0d28fb25006628f8930887fbb87d58958df080ca437bb4ff002817",
+      "action": "identifier paths updated; recorded proper names redacted in place"
+    },
+    {
+      "path": "source/batch01_swordsman_2026-10-16/records/swordsman_death_normalization_v02.json",
+      "before_sha256": "142d6e16657407f594ed8635ae63155eaec1bf1eef91199255ac4dc08b5a6c30",
+      "after_sha256": "ef993e6006b2c74e196217d6cfd6f34b7e17cf511e477c9398c4ee3823cf872a",
+      "action": "identifier paths updated; recorded proper names redacted in place"
+    },
+    {
+      "path": "source/batch01_swordsman_2026-10-16/records/swordsman_base_prompt.txt",
+      "before_sha256": "40d159d0d042fff962600c0f39d8c4fd6f583f99fcfa20de6ac7deb33b1773ef",
+      "after_sha256": "6eeba3783f100461e4fa6c883759d4e5b0f6904b27ef1a46a5eb48ef8931af5d",
+      "action": "identifier paths updated; recorded proper names redacted in place"
+    },
+    {
+      "path": "source/batch01_swordsman_2026-10-16/records/idle_manual_v05_ui_verification.json",
+      "before_sha256": "793d058ac33916f294eae35eb0313e66805d911652a52b5f9a534d6ccb242560",
+      "after_sha256": "b5bd8147ae4f172b86d6bbbbeb5bb525c83dac757e031f3225990d8155e0dee5",
+      "action": "identifier paths updated; recorded proper names redacted in place"
+    },
+    {
+      "path": "source/batch01_swordsman_2026-10-16/records/move_manual_pixel_plan_v06.json",
+      "before_sha256": "8e22e9ed7828c657500206d4db1141ada38539ec33dcfd458c09ffd5ed834691",
+      "after_sha256": "111da799755775774ca6534eb5432818371279775aa30d32d79c708154ec1912",
+      "action": "identifier paths updated; recorded proper names redacted in place"
+    },
+    {
+      "path": "source/batch01_swordsman_2026-10-16/records/swordsman_nearest_audit.json",
+      "before_sha256": "0f6bb1055ed1f9445154e9b62109d389c95f6ce05b8dd8be84be5586f7c0eba1",
+      "after_sha256": "426e7f776b4bf897ccc8332afde6878cccc632081e29d1f682728a29ad134e3f",
+      "action": "identifier paths updated; recorded proper names redacted in place"
+    },
+    {
+      "path": "source/batch01_swordsman_2026-10-16/records/swordsman_death_prompt_v01.txt",
+      "before_sha256": "0dd2ae2a0c3f529ec220eb1b6597186df13c322c0db3fe5c81301c5efaeb8b34",
+      "after_sha256": "537f2e1307e0eaf1152008ccae7eb825eecdd422285a071aa2999c80bf7e4088",
+      "action": "identifier paths updated; recorded proper names redacted in place"
+    },
+    {
+      "path": "source/batch01_swordsman_2026-10-16/records/plan_move_manual_v05.py",
+      "before_sha256": "b1fa6c15a8f4e1fde5f16d08222111c4f0c529bc468603909bb83d4d96b65264",
+      "after_sha256": "4ad848becc65b7478f216cb066691f156d600619ea1abe3a56c07c9fbeeefdcb",
+      "action": "identifier paths updated; recorded proper names redacted in place"
+    },
+    {
+      "path": "source/batch01_swordsman_2026-10-16/records/normalize_static.py",
+      "before_sha256": "1fdf7ec58b42c836c9a3e95e5e4ed0107846c822706839ce6b01fb78714d5b09",
+      "after_sha256": "ff8bae769b1ef2e6b89ed9a6e81ff1fadcc8ca2df4edf48193a2bc3f6f43b30f",
+      "action": "identifier paths updated; recorded proper names redacted in place"
+    },
+    {
+      "path": "source/batch01_swordsman_2026-10-16/records/swordsman_idle_prompt_v01.txt",
+      "before_sha256": "52964a12d3a949f41a73ec26da94f90dfd03011cf0e9fa5211b4f53e8c6ba1f3",
+      "after_sha256": "bbfdf0c50affd58579dd33af22e00b41313f49c155b8e6d0123213c2c36470d5",
+      "action": "identifier paths updated; recorded proper names redacted in place"
+    },
+    {
+      "path": "source/batch01_swordsman_2026-10-16/records/generation_records.json",
+      "before_sha256": "58ed8e70a6c32db9f9aca04533785a08a8acfc1bd4ba4ef7a5262eb4527aa335",
+      "after_sha256": "473ce052562975f29dc6b6c5d706cd3c672806fd15252ecff3e7268767b3dd03",
+      "action": "identifier paths updated; recorded proper names redacted in place"
+    },
+    {
+      "path": "source/batch01_swordsman_2026-10-16/records/build_gallery.py",
+      "before_sha256": "16a7f05cda3b428fa6ed94a00a1b9610907ed2983cd0230c05c26f16abf8b156",
+      "after_sha256": "8ab77015ea9df823a69c831815a22d03e019af448dcaee6d3a7f1893c3ecaf7a",
+      "action": "identifier paths updated; recorded proper names redacted in place"
+    },
+    {
+      "path": "source/batch01_swordsman_2026-10-16/records/move_manual_pixel_plan_v05.json",
+      "before_sha256": "f2e1235268e8d6033a55c10c89991c31f702b0268f1e823d3a66e4572f3de895",
+      "after_sha256": "72aab13cd37856d47f1e2084df984f76a44d19c9a9c56f60ba2a9c9387f202da",
+      "action": "identifier paths updated; recorded proper names redacted in place"
+    },
+    {
+      "path": "source/batch01_swordsman_2026-10-16/records/plan_move_manual_v06.py",
+      "before_sha256": "ec8cb707efae720d31958d3863f717a9a30e5d34da3be1a6f9a5d23522f14240",
+      "after_sha256": "48490d3c843fcc17649fd6ea41525ae5eaf1e096bcffe6f7127849406ed832c6",
+      "action": "identifier paths updated; recorded proper names redacted in place"
+    },
+    {
+      "path": "source/batch01_swordsman_2026-10-16/records/package_progress.py",
+      "before_sha256": "9af2ea8476eb96473e84d1ef36dc4b33a1e8d381fd3783ad7764c69e752b86ee",
+      "after_sha256": "b29307b9f861759626bec7cd20089d80f48c47b1593e1f202587f1492304e381",
+      "action": "identifier paths updated; recorded proper names redacted in place"
+    },
+    {
+      "path": "source/batch01_swordsman_2026-10-16/records/normalize_motion.py",
+      "before_sha256": "5944cac9d3787ae65fc3035291cf21156a856c833ea07fe0ee21e268a6ab3418",
+      "after_sha256": "1dbe27075835e043fc25950aa54770c119e16e4c861a5e06f8f42c218aaaf69e",
+      "action": "identifier paths updated; recorded proper names redacted in place"
+    },
+    {
+      "path": "source/batch01_swordsman_2026-10-16/records/normalize_cutin.py",
+      "before_sha256": "fa2a953ed523dd1914af89b2953a48d69750a7aa7a9b8fb575177dc4c7356abd",
+      "after_sha256": "19bbc71238aa632fc4a7fd6f9cd9e89807f5a78b9599aef6e1845bcf7609e42a",
+      "action": "identifier paths updated; recorded proper names redacted in place"
+    },
+    {
+      "path": "source/batch01_swordsman_2026-10-16/records/swordsman_hurt_normalization_v02.json",
+      "before_sha256": "bcf20807ca360cbe43509fcd4683957de9657673cb16a583fe37675521f6d11a",
+      "after_sha256": "ede1c79b389ab80aea6cd60c1c67c73ccc90a088824351a1977d67c8b964d5b5",
+      "action": "identifier paths updated; recorded proper names redacted in place"
+    },
+    {
+      "path": "source/batch01_swordsman_2026-10-16/records/move_manual_pixel_plan_v04.json",
+      "before_sha256": "b212f6be4a161143f012a692e03b7c5d2e9773e0a4ca3959b2bc5a5beb77a587",
+      "after_sha256": "f8c91a8086d1b4c72db45728756c6a598196f794612037f7722c8d03092bea1e",
+      "action": "identifier paths updated; recorded proper names redacted in place"
+    },
+    {
+      "path": "source/batch01_swordsman_2026-10-16/records/swordsman_piskel_audit.json",
+      "before_sha256": "30757edfd8bc96663d79cdaa41cdd87cda24405c205f0d97f0f11e229eae59e0",
+      "after_sha256": "47b1b2c4eacd717db09bead1ce3d82bbcea38c084892ee56d6fa40e388497a45",
+      "action": "identifier paths updated; recorded proper names redacted in place"
+    },
+    {
+      "path": "source/batch01_swordsman_2026-10-16/records/swordsman_move_prompt_v01.txt",
+      "before_sha256": "225a7d95589936ed193004ff80501135acad6d8a5b75289cd48a56ff9fe857d4",
+      "after_sha256": "7aeb5f61898c96f22f0d6069012981bad4b5b284ce0c369e1b08eec1112f106f",
+      "action": "identifier paths updated; recorded proper names redacted in place"
+    },
+    {
+      "path": "source/batch01_swordsman_2026-10-16/records/idle_manual_pixel_plan_v04.json",
+      "before_sha256": "2492fbfd95da221c052388719b88b3226457b5f37f18a96161b22902ee4894f1",
+      "after_sha256": "605f4f504b18b4e32feb2c01231b83e5de3efdb00bfc90d5e66d582dfab30d7e",
+      "action": "identifier paths updated; recorded proper names redacted in place"
+    },
+    {
+      "path": "source/batch01_swordsman_2026-10-16/records/swordsman_hurt_prompt_v01.txt",
+      "before_sha256": "cdeff277e5398310db4034eb145e2718d3a9b77d08ab232860774a1c5ebf3e38",
+      "after_sha256": "c4d4f6565dc36dba5e0d5a703a687d85ff209095d18a1306508c1033023cfa32",
+      "action": "identifier paths updated; recorded proper names redacted in place"
+    },
+    {
+      "path": "source/batch01_swordsman_2026-10-16/records/swordsman_move_normalization_v03.json",
+      "before_sha256": "bb4667cde48f29f932c337437c78152e92de5cd0678af9f847b2b314b1af8a9d",
+      "after_sha256": "97e1821d3e5654cf7e0820589e8d05017cafa2b6f2d88c177cb023215147620a",
+      "action": "identifier paths updated; recorded proper names redacted in place"
+    },
+    {
+      "path": "source/batch01_swordsman_2026-10-16/records/swordsman_palette.json",
+      "before_sha256": "c70c9afa4ccec5c3497b8c0d367e68b9cc0bcc78718ecce664d8c2fea74ee6cf",
+      "after_sha256": "90c240968caf87d87d045fe7eaef418b3644e93561a18af92107e450c2baa2d9",
+      "action": "identifier paths updated; recorded proper names redacted in place"
+    },
+    {
+      "path": "source/batch01_swordsman_2026-10-16/records/swordsman_idle_normalization_v03.json",
+      "before_sha256": "031733101cf1e64198e2cb97640f09ad74de9f77f2a62f0343e18f032c804b54",
+      "after_sha256": "6efaba18216b2bdf5415c7e832bab861428631184090ba7a426f0ec62a118921",
+      "action": "identifier paths updated; recorded proper names redacted in place"
+    },
+    {
+      "path": "source/batch01_swordsman_2026-10-16/records/swordsman_idle_normalization_v02.json",
+      "before_sha256": "910b7104ce4d75849eefe31a3e7a6951962ac261a689acc5d25f2e49b499506c",
+      "after_sha256": "e67c3605fc8fd8add3a3ad7bac8526a49296c4c14e30eb9811349fd2d25fed08",
+      "action": "identifier paths updated; recorded proper names redacted in place"
+    },
+    {
+      "path": "source/batch01_swordsman_2026-10-16/records/swordsman_move_normalization_v02.json",
+      "before_sha256": "d490c4eb02445984b17a7263505b365cc6e488089bfce66eb6aa1e42626822cc",
+      "after_sha256": "d381338be67cd10c4bf902c5819145b7a2d05856a09bfcc65e26f4fdc5011981",
+      "action": "identifier paths updated; recorded proper names redacted in place"
+    },
+    {
+      "path": "source/batch07_combat_characters_2026-10-16/candidates/swordsman_attack_f03_piskel_v02-20261016-145539.piskel",
+      "before_sha256": "ff5efba661e104eef5bfa3895ffac3543e33ec5e26f0ef256631681d0a4929f6",
+      "after_sha256": "5b402556a286cc6c17419e5b6897bf7524b1da986feea35880f4bbda06a106d2",
+      "action": "identifier paths updated; recorded proper names redacted in place"
+    },
+    {
+      "path": "source/batch07_combat_characters_2026-10-16/candidates/swordsman_attack_f03_piskel_v03-20261016-145800.piskel",
+      "before_sha256": "3eef333e01efa46596cbfa4e8a8f8d84658e416835750381596699f9d471c5f8",
+      "after_sha256": "e08e1158685cbfeb00e8e0ab7bb21eb74f6e50dc157704868ef7616c9543c565",
+      "action": "identifier paths updated; recorded proper names redacted in place"
+    },
+    {
+      "path": "source/batch07_combat_characters_2026-10-16/records/candidates.json",
+      "before_sha256": "e2fca5a0a0b571881250cbd255ba475d89ff843d1a4eb82d3daaf9dc98091694",
+      "after_sha256": "0062181da4927173332a4957bc84ff1bfd6c08e0b7ed16a7585b32592dc5de03",
+      "action": "identifier paths updated; recorded proper names redacted in place"
+    },
+    {
+      "path": "source/batch07_combat_characters_2026-10-16/records/C_first_motion_review.html",
+      "before_sha256": "10318f8612310b43bf18a232cca61ee7901b6a6a6b1d79cd48b8b762c4a1f260",
+      "after_sha256": "28ea159e31e7c2c491742544f600322ca016f2cbd525951005e0b37c3d9476fe",
+      "action": "identifier paths updated; recorded proper names redacted in place"
+    },
+    {
+      "path": "source/batch07_combat_characters_2026-10-16/records/build_pose_guides.py",
+      "before_sha256": "e88bc8baac92c8b81ae0a44c8b8953c5810ce26b7880741f4896434f19ac3527",
+      "after_sha256": "96b185624f76f94da36eadb01997a0234eadd90ebc69f9b727a7873f327ebcf9",
+      "action": "identifier paths updated; recorded proper names redacted in place"
+    },
+    {
+      "path": "source/batch07_combat_characters_2026-10-16/records/C_death_move_review.html",
+      "before_sha256": "e8f08569a96d058244f29b0ba86392d78069451d271ea2af8cb8532b8fc010b9",
+      "after_sha256": "feb9656066be02abcbe1482201a2b07371133edaa59698959f338415b3d21e00",
+      "action": "identifier paths updated; recorded proper names redacted in place"
+    },
+    {
+      "path": "source/batch07_combat_characters_2026-10-16/records/gunslinger_prompt_v01_builtin.txt",
+      "before_sha256": "bb5166ffa4846f3412334b0eb615400ee46518f2d46854b5c8603312e96be584",
+      "after_sha256": "72e9c9781a27f5f0984770c15d94ae1ca7cc963323659beb0bb0541b54f24193",
+      "action": "identifier paths updated; recorded proper names redacted in place"
+    },
+    {
+      "path": "source/batch07_combat_characters_2026-10-16/records/C_wave1_rejections.json",
+      "before_sha256": "036b7bafec64d0edec1eade4a00651002ccb148d5a294331a440261c85a431ba",
+      "after_sha256": "e3cff72193e22cac3a496e1d65e499f79fad72e64cac9d9e80d0cfdf4d50b629",
+      "action": "identifier paths updated; recorded proper names redacted in place"
+    },
+    {
+      "path": "source/batch07_combat_characters_2026-10-16/records/normalize_C_cutins.py",
+      "before_sha256": "8500b8c1abf5c8f3afa030197bfa814b4c6b6bee53cc2befeb5560b5493d4a0d",
+      "after_sha256": "215978e6e7bbecca9fd5ebaa2448fecf9090e7691e67e67f427f92106840c32c",
+      "action": "identifier paths updated; recorded proper names redacted in place"
+    },
+    {
+      "path": "source/batch07_combat_characters_2026-10-16/records/builtin_C_idle_jobs.json",
+      "before_sha256": "ff7f5994b39cfcf0d44129d01229b650d78a5b8547b9e0a7bab047e1a7baca95",
+      "after_sha256": "ff4230ede1ab6146fa72e898392706ad18bbdf079d09b4dc9d5155f82c101f2e",
+      "action": "identifier paths updated; recorded proper names redacted in place"
+    },
+    {
+      "path": "source/batch07_combat_characters_2026-10-16/records/builtin_C_cutin_walk_jobs.json",
+      "before_sha256": "b7b66530c246cbbc9d2f1116188555ad956c8147b44327a2d3ec815b9d2341ca",
+      "after_sha256": "14c8b531e72c587d0a2d4eeffdb08204c91c70791249e3909a4126389fdbf261",
+      "action": "identifier paths updated; recorded proper names redacted in place"
+    },
+    {
+      "path": "source/batch07_combat_characters_2026-10-16/records/builtin_C_mage_walk_fix_jobs.json",
+      "before_sha256": "2ccd775733521f051cf0382062a81c59d3e244266768f553779fef4a6cc1d1a3",
+      "after_sha256": "3264cd53cd9c3b8b81e6bc5b9c61a06f7a455253db1a83cf9de8bf3849397d15",
+      "action": "identifier paths updated; recorded proper names redacted in place"
+    },
+    {
+      "path": "source/batch07_combat_characters_2026-10-16/records/C_final_walk_review.html",
+      "before_sha256": "86762d81c88fc8ae992022a2e1da4685ffda8f44171c903170be39378a131a44",
+      "after_sha256": "6108da795df81e780feb76de6b6f43823e75af6d854ff9028e130f197397ad4d",
+      "action": "identifier paths updated; recorded proper names redacted in place"
+    },
+    {
+      "path": "source/batch07_combat_characters_2026-10-16/records/normalize_swordsman_v01.py",
+      "before_sha256": "9f900f4fa595443142b3e79011914012b21afa77f7bba20b3156fcea089a8196",
+      "after_sha256": "2bf7b90c5351a1b4e21463acd8e854cfbbd67c0e62a79c769e4df5063a8f2d48",
+      "action": "identifier paths updated; recorded proper names redacted in place"
+    },
+    {
+      "path": "source/batch07_combat_characters_2026-10-16/records/mage_prompt_v01_builtin.txt",
+      "before_sha256": "f10cd0ffd1d83df55398636f1ec7e4c110befe40cf7d1673bb883699f95038c5",
+      "after_sha256": "1c4502b4351ac84b2445000842f2ac21be5fd6cdbfe052f3a5086c1fb5f1d906",
+      "action": "identifier paths updated; recorded proper names redacted in place"
+    },
+    {
+      "path": "source/batch07_combat_characters_2026-10-16/records/C_review_decisions.json",
+      "before_sha256": "64ec127d95a702453ad5501692aebe0d706279cd2f185fbb210e0819159ab459",
+      "after_sha256": "4f53325a5ca5bbea658f93d425d8a03c6c2e980a43a6932e6a0a44b0d73ec75b",
+      "action": "identifier paths updated; recorded proper names redacted in place"
+    },
+    {
+      "path": "source/batch07_combat_characters_2026-10-16/records/finalize_batch07.py",
+      "before_sha256": "0f6d74234fff530b79e318d62d2f235df2cd82035c9c0a7ce6e3008afeaa4258",
+      "after_sha256": "5d492c699ea708ace76fc5d56c8b0a7b39e6eeb47422d7cb8dc5153b2005590c",
+      "action": "identifier paths updated; recorded proper names redacted in place"
+    },
+    {
+      "path": "source/batch07_combat_characters_2026-10-16/records/production_plan.json",
+      "before_sha256": "c1707f415bbecb9e919db604d7240680c4eccdfb65fa271c942f2d6e32e75947",
+      "after_sha256": "a51459c1dcb1fcb11434899b8c0b04bb54c902f4b87d9d986210c7991a6bff6f",
+      "action": "identifier paths updated; recorded proper names redacted in place"
+    },
+    {
+      "path": "source/batch07_combat_characters_2026-10-16/records/revise_C_palette.py",
+      "before_sha256": "0d04915471e481eba6c04eb1374f5fc8e9676d2a9d93d963e355a77e9b391125",
+      "after_sha256": "c7cb90787f2d4d9c88af0e3840893aef55ddf5bb3fbfa6c73c72bd8345418921",
+      "action": "identifier paths updated; recorded proper names redacted in place"
+    },
+    {
+      "path": "source/batch07_combat_characters_2026-10-16/records/builtin_C_fix_move_jobs.json",
+      "before_sha256": "bedfff4d4a4e5ef7a8cf16920aa2ef92d3ea3b02ebfa57ba4428bc8751b9372d",
+      "after_sha256": "e2c9c379fe15aaff7033d97701c1bb2245ed53fddec7edf6fd3078b41a2f38cc",
+      "action": "identifier paths updated; recorded proper names redacted in place"
+    },
+    {
+      "path": "source/batch07_combat_characters_2026-10-16/records/builtin_C_hurt_move_jobs.json",
+      "before_sha256": "c5bc2f0d1547e895960cf21b05eea7d0323bece5e738a912070bc311974b636e",
+      "after_sha256": "cb6525775891ddfecc088b161bc93338d3af3cf7451df1f57718d5d23a98a732",
+      "action": "identifier paths updated; recorded proper names redacted in place"
+    },
+    {
+      "path": "source/batch07_combat_characters_2026-10-16/records/normalize_C_static.py",
+      "before_sha256": "0b56748feaca84a19a0fdc4a00b2c05b94f0d3878dca044ebfa3de75901a8064",
+      "after_sha256": "433f41546f2572582387d9a3dbd1421cee4d97b9cf6a652de22c7aaa9b8a6636",
+      "action": "identifier paths updated; recorded proper names redacted in place"
+    },
+    {
+      "path": "source/batch07_combat_characters_2026-10-16/records/gunslinger_palette_revision.json",
+      "before_sha256": "eb2ab1db501ea46fef9db51e713584cc91e04864fbbd684ab1f41454f9726682",
+      "after_sha256": "13bbf9773f788e277c5cabc77a7625907a7d4a0f487db02fbcef577f1ad13540",
+      "action": "identifier paths updated; recorded proper names redacted in place"
+    },
+    {
+      "path": "source/batch07_combat_characters_2026-10-16/records/normalize_C_animation.py",
+      "before_sha256": "6138ea2a805d2a2c5a2c826b7f363500f3562de05351c73a84a52f4f9dd3e824",
+      "after_sha256": "a40a36f2748c21869b8f86c90c3d023235d5a9bf91c7b16b78a9a81b0e1ea2fb",
+      "action": "identifier paths updated; recorded proper names redacted in place"
+    },
+    {
+      "path": "source/batch07_combat_characters_2026-10-16/records/assassin_prompt_v01_builtin.txt",
+      "before_sha256": "3a2dd1a1980dac19916fb76223a08bd3fe9130d0b9cfaaf515b7dd7da43aad89",
+      "after_sha256": "25942b9e9d6786f5c1e71788bcaf4280a47c0470e86cedb2074b7e14d651b73c",
+      "action": "identifier paths updated; recorded proper names redacted in place"
+    },
+    {
+      "path": "source/batch07_combat_characters_2026-10-16/records/generation_jobs.json",
+      "before_sha256": "7ab89a0a1d5ae8c7fa3e7066fec9ceda45adc560b9ca07fa79372faae9c630d1",
+      "after_sha256": "040c9bdaf839bd6584863272c83a55995333958e6dc824b3418f847a2b3b89cd",
+      "action": "identifier paths updated; recorded proper names redacted in place"
+    },
+    {
+      "path": "source/batch07_combat_characters_2026-10-16/records/builtin_C_death_jobs.json",
+      "before_sha256": "455a49cf28070a071fc8e492c0ab7d7bd736435fbdc5c97e0e238e247c6e8ab6",
+      "after_sha256": "c334e3227a0a7f1489b11b03b40af303fc416bbb1b1bc0a725e0395d5a28b5bf",
+      "action": "identifier paths updated; recorded proper names redacted in place"
+    },
+    {
+      "path": "source/batch07_combat_characters_2026-10-16/records/final_audit.json",
+      "before_sha256": "ae63f30d992675f3a387c85911241f36003767991ca52dc1241037f32a4e692b",
+      "after_sha256": "4f37f8977451d93ec505d0a2fabfc39435656569424e8f1f1af5b0bd7fe0dac2",
+      "action": "identifier paths updated; recorded proper names redacted in place"
+    },
+    {
+      "path": "source/batch07_combat_characters_2026-10-16/records/builtin_C_animation_jobs.json",
+      "before_sha256": "523872eb37e37d11573d442bfd15a3c037f386d3a8609a9b5eb39d959886a64d",
+      "after_sha256": "dcd2450d73b2d42f998211689e3da702ea479e5be485b5f94d7caa97f6404bf9",
+      "action": "identifier paths updated; recorded proper names redacted in place"
+    },
+    {
+      "path": "source/batch07_combat_characters_2026-10-16/records/builtin_C_static_jobs.json",
+      "before_sha256": "f5b587240300673363fa514ccbeb127dc7fb9e0811751dd28069d0d15f3569b0",
+      "after_sha256": "0c167645fb3ac28e9372b3fcb7336e38d705b692ab95f5138205f4184ce0957b",
+      "action": "identifier paths updated; recorded proper names redacted in place"
+    },
+    {
+      "path": "source/batch07_combat_characters_2026-10-16/records/publish_swordsman.py",
+      "before_sha256": "a6db00868ee9e473065e5811632aeb905c88a02f218a7b1d1c45060eeab9d361",
+      "after_sha256": "761699e1912c25cf7130f0e08839bb5fce182631879a17a48db44a77b2520f3f",
+      "action": "identifier paths updated; recorded proper names redacted in place"
+    },
+    {
+      "path": "source/batch07_combat_characters_2026-10-16/records/swordsman_attack_prompt_v01.txt",
+      "before_sha256": "5d5ab598258dae488b012dd23049df2339409b749738efe9df4849ffecfd85aa",
+      "after_sha256": "8bac89c8e8c8ae8486132db9e3d19a2f84f34ac74feab3014384377a42ab4342",
+      "action": "identifier paths updated; recorded proper names redacted in place"
+    },
+    {
+      "path": "source/batch07_combat_characters_2026-10-16/records/builtin_C_wave1_fixes.json",
+      "before_sha256": "0ae4ef096f377fa94fca775868d6c5d8f2e4caabc9b955eda663785dbd3ff50c",
+      "after_sha256": "bb7a50b40dd80a80dfddc5cdc252cd05ebbeb2904c5c17469c5150d654b26302",
+      "action": "identifier paths updated; recorded proper names redacted in place"
+    },
+    {
+      "path": "source/batch04_maps_2026-10-16/records/build_audit_gallery.py",
+      "before_sha256": "e90fd38e510f2fe4fbad4c22a0454a52057e2c252dcc238e0bc7e82bfc780c4d",
+      "after_sha256": "83310121a6450e3a9e426fb799a7efa7ed5bfd7240a1177ac5e979dfc5f8498a",
+      "action": "identifier paths updated; recorded proper names redacted in place"
+    }
+  ],
+  "renames": [
+    {
+      "removed_path_sha256": "fed7ed75812582d90af92a7cabb094a75735bd77f8678ade541fb52ea9759c48",
+      "new_path": "source/batch01_swordsman_2026-10-16/candidates/swordsman_idle_v05.piskel",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "bde0d7ad2d7e357c1a6cd94f6150bd2e8a6bb03d26d8367b22355e0fc01cf7be",
+      "new_path": "source/batch01_swordsman_2026-10-16/candidates/swordsman_idle_v05.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "929ac2ef28884debb76d3cba7da8aef6a0fe83030f3788b49b02ed4e1abfbd74",
+      "new_path": "source/batch01_swordsman_2026-10-16/candidates/swordsman_move_frame_05_v02.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "b09a83160faca9a00bc92f6e0a922e16e0a496c076b73521a9c21a30d3c6b994",
+      "new_path": "source/batch01_swordsman_2026-10-16/candidates/swordsman_death_frame_00_v02.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "6ce10cece33a379ad6c1557701445ad6eedc04f0dbcd676c6b2175d747797666",
+      "new_path": "source/batch01_swordsman_2026-10-16/candidates/swordsman_move_frame_05_v03.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "fd76d9e36a61cbb594763cda311e2c3aba19bbb9708313cba614eab3a99eaec1",
+      "new_path": "source/batch01_swordsman_2026-10-16/candidates/swordsman_idle_v04.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "f2a374c67b41e11b3c06337c9df58ac1ff884d8d680625bb1ca8f4e4759b922c",
+      "new_path": "source/batch01_swordsman_2026-10-16/candidates/swordsman_move_frame_04_v06.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "ba5d8cbe60ee503e6e44596a145f48ff0ba20850306e2aa23011c0e3a4382a70",
+      "new_path": "source/batch01_swordsman_2026-10-16/candidates/swordsman_move_frame_04_v04.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "166f6e7c573e4257fff58d7108f0c48771f194bad16bc8353efec9b92c3531a8",
+      "new_path": "source/batch01_swordsman_2026-10-16/candidates/swordsman_move_frame_04_v05.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "de4daa2ed96fa234b091bf83802b5807b485be13fba01687464977e19712ae2f",
+      "new_path": "source/batch01_swordsman_2026-10-16/candidates/swordsman_idle_v03.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "ff68753dc2dd9f4dc3a3373f7fbbfd23d69c13e6f6e5d54066ae5e112777695e",
+      "new_path": "source/batch01_swordsman_2026-10-16/candidates/swordsman_move_frame_05_v04.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "f994a4017ec16c8c8fcacf702d0af2ea9ede5056b6c1881fbbddf13e6dfd1d14",
+      "new_path": "source/batch01_swordsman_2026-10-16/candidates/swordsman_move_frame_05_v05.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "1306d636741d75e8575f97b97ca8cd7c399259fd0580a713a745d4ee3a984bbc",
+      "new_path": "source/batch01_swordsman_2026-10-16/candidates/swordsman_idle_v02.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "c71da347e2e63c0b365898dc8d302008aea482078e1aebbd3fc9aac5aa0dced4",
+      "new_path": "source/batch01_swordsman_2026-10-16/candidates/swordsman_move_frame_04_v02.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "f15d4cd72713d96e9296a6aa6136803d9317417109e8c0f3fee94fb1a7799ebc",
+      "new_path": "source/batch01_swordsman_2026-10-16/candidates/swordsman_death_frame_01_v02.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "6767baac5d4c25f143e00b4dcc38083c2080d22bcaad0c469db15829bb3019fc",
+      "new_path": "source/batch01_swordsman_2026-10-16/candidates/swordsman_move_frame_05_v06.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "42af421aa23fc60d275688c0e0898c1852a1fec4ddeb21e9063de149a4744304",
+      "new_path": "source/batch01_swordsman_2026-10-16/candidates/swordsman_move_frame_04_v03.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "80a73caa3586127f5de5da1fded075af408ee8c21a79e475d904be9f8c097ab4",
+      "new_path": "source/batch01_swordsman_2026-10-16/candidates/swordsman_move_v05.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "6b7e12a9efbdee55d0c7f6820af3191682c42bbc18d0a9398c3904e9ac0a286a",
+      "new_path": "source/batch01_swordsman_2026-10-16/candidates/swordsman_cutin_v02.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "eb0262b358547d9e218cf750a30ea73f1888b4b7aee01e30f8b74c6880624e87",
+      "new_path": "source/batch01_swordsman_2026-10-16/candidates/swordsman_move_v04.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "239b8cc0bcade6f2db9f6128c71479e28dc00c4aac74751bab54d1837d1306a3",
+      "new_path": "source/batch01_swordsman_2026-10-16/candidates/swordsman_move_v06.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "8f6d24da2aa50aca85a1e87be3eb36eecd1c0abc0b6f84004014eaa7a1ca014d",
+      "new_path": "source/batch01_swordsman_2026-10-16/candidates/swordsman_death_frame_03_v02.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "88b8c99c5b12637fafd5deca6e99a73b584676141c1b6137c76e86544331e1a4",
+      "new_path": "source/batch01_swordsman_2026-10-16/candidates/swordsman_move_v03.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "61833383dec7006a3a704b8ec9ec19db374cf9ca87bc7c9c221bfddfb6bafe32",
+      "new_path": "source/batch01_swordsman_2026-10-16/candidates/swordsman_move_v05.piskel",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "c1d08a5e090fee3764b88834814627eedebc6fbbd07edb79754ab72a1a8b0231",
+      "new_path": "source/batch01_swordsman_2026-10-16/candidates/swordsman_death_v02.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "9839614c021d91fe43d476a9a73e4b7f8048c02cc850706f292f44527d721fae",
+      "new_path": "source/batch01_swordsman_2026-10-16/candidates/swordsman_move_v02.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "552289db291c78dd84ac82a942a47d43fbe2c80051712de72ab92152bf0a1cf9",
+      "new_path": "source/batch01_swordsman_2026-10-16/candidates/swordsman_death_frame_02_v02.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "94074ce435fa9a00e4d09638e91488194f0b434835c45d8bd3e42f7c53c3db73",
+      "new_path": "source/batch01_swordsman_2026-10-16/candidates/swordsman_idle_frame_01_v05.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "675f997a82aa01f7c05c232fcd4cc229ea658b3131634b8fc5d5a86a5f2051ef",
+      "new_path": "source/batch01_swordsman_2026-10-16/candidates/swordsman_move_frame_03_v05.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "cd704444ef4309010927d147be78185bb5305bf1f4bf596878d87070214662bc",
+      "new_path": "source/batch01_swordsman_2026-10-16/candidates/swordsman_cutin_logical_v02.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "56d668233e9895565651fc996088f1d3c18d12f2ddf8a2fdfc13be82b26ec865",
+      "new_path": "source/batch01_swordsman_2026-10-16/candidates/swordsman_move_frame_03_v04.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "b3e3080ee1e59916c4418c948b7f9b4893d62d18627a14bc02fc3405eb76d76d",
+      "new_path": "source/batch01_swordsman_2026-10-16/candidates/swordsman_idle_frame_00_v03.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "1836ca1c01dd478f416e0d3b62530ab01fd5d2e878b0e921181c92835461df13",
+      "new_path": "source/batch01_swordsman_2026-10-16/candidates/swordsman_move_frame_02_v03.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "353fabbc0055127546aea4335349cb7a3471338bbc2b8a7ce9db0e20692839ef",
+      "new_path": "source/batch01_swordsman_2026-10-16/candidates/swordsman_move_frame_03_v06.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "eb9858450e2e31dd3e3fcc35bc5c18cdc168d3d0e7c52f58a0db5dc1e16d9cfc",
+      "new_path": "source/batch01_swordsman_2026-10-16/candidates/swordsman_piskel_v01.piskel",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "0e6f18bf5f9f6bb126a941bdbfdae509b460c2612fd071d958dd9e428154be1e",
+      "new_path": "source/batch01_swordsman_2026-10-16/candidates/swordsman_piskel_v01.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "83e2a60d0f4fa4354e9065dc9d8b9ab3f82040487487cd6f4c2bdf5f75a75962",
+      "new_path": "source/batch01_swordsman_2026-10-16/candidates/swordsman_idle_v04.piskel",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "cfee4804d514ecce52338d01101f98321745b975071e98697558a567b98559d8",
+      "new_path": "source/batch01_swordsman_2026-10-16/candidates/swordsman_hurt_frame_00_v02.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "e023b8d9603d123cd07eba032ed2d930150f75c6a75ab2b2c27727915b3db8f9",
+      "new_path": "source/batch01_swordsman_2026-10-16/candidates/swordsman_move_frame_02_v02.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "55d54347c7ad9e5cd34b605aa3836f65436ac785e6398a684abb7f0e86ef2c04",
+      "new_path": "source/batch01_swordsman_2026-10-16/candidates/swordsman_idle_frame_00_v02.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "cea50280b530138e0d606cc0efcdecba5522c5c2f10d134dfac7f496c110c6ee",
+      "new_path": "source/batch01_swordsman_2026-10-16/candidates/swordsman_lanczos_v02.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "1886bc734d71a398d4d47ebb18d995e90f5483e901bdf80b650fb32a7ce08418",
+      "new_path": "source/batch01_swordsman_2026-10-16/candidates/swordsman_move_frame_02_v06.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "f385cead8b25fb996b20ffc78e008ac5164af20ae6d49af69c86766765fa6781",
+      "new_path": "source/batch01_swordsman_2026-10-16/candidates/swordsman_move_frame_03_v03.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "1c4bce8a3c335632c866f13ba5509016b154d64206400be8111a5a1b9aab49e2",
+      "new_path": "source/batch01_swordsman_2026-10-16/candidates/swordsman_idle_frame_01_v03.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "e7d8b963e639baef3d17278736727688a07f9d195d5f02b7c34a5c3327a843f8",
+      "new_path": "source/batch01_swordsman_2026-10-16/candidates/swordsman_hurt_frame_01_v02.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "ea06190b77dec12865d04371b7852c0cd50c2123ca34a1974da34c08ef61ab7a",
+      "new_path": "source/batch01_swordsman_2026-10-16/candidates/swordsman_box_v02.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "828444dbe883060725a9191e00712f91d05c1f9aa14c52e14827ce55fa347799",
+      "new_path": "source/batch01_swordsman_2026-10-16/candidates/swordsman_idle_frame_01_v02.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "59dd680a05edf2347f376256a5847ac28d2bdfd4d5c26b199caf2e3a9ac2f43e",
+      "new_path": "source/batch01_swordsman_2026-10-16/candidates/swordsman_move_frame_03_v02.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "9a358f088321f19f899877998cefb6718ca9de17270bc0d23cf1a2d8d8c5886d",
+      "new_path": "source/batch01_swordsman_2026-10-16/candidates/swordsman_move_frame_02_v05.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "1caf101210189afa6a35970643f6e0a2653464c302a2549f7db03c8291c123aa",
+      "new_path": "source/batch01_swordsman_2026-10-16/candidates/swordsman_idle_frame_00_v05.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "77772b168a356fb74d4fcdd371e90fdb946bf551234c147f2878ebc098f22f0b",
+      "new_path": "source/batch01_swordsman_2026-10-16/candidates/swordsman_move_frame_02_v04.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "3484430a5cf94cf99e3f1f01dc921afeca5856f8a1167fd736b1a88f652ee663",
+      "new_path": "source/batch01_swordsman_2026-10-16/candidates/swordsman_death_frame_04_v02.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "35081a905a9081a2ee66a988c883aab7d916dc444c80471945a59e169f31fa77",
+      "new_path": "source/batch01_swordsman_2026-10-16/candidates/swordsman_move_frame_00_v06.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "b37c15f952fb2b75a959b42f623f3595f9a4abb6cdaa27dd36937687cc65ed70",
+      "new_path": "source/batch01_swordsman_2026-10-16/candidates/swordsman_idle_frame_03_v03.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "83befd3049f5b933ddf660bed22589efc2a2539641077ca6fa4a267aa32e9c1c",
+      "new_path": "source/batch01_swordsman_2026-10-16/candidates/swordsman_move_frame_01_v03.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "d1ca4bb474c5227b1b7b8ba3092647920fdc3bfad418122fcd2915a0a8bd0ec0",
+      "new_path": "source/batch01_swordsman_2026-10-16/candidates/swordsman_move_v06.piskel",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "42e2f2844cbcabca0c4b29ef30cf25ce654eee846d952fc962fc208aab6d0b20",
+      "new_path": "source/batch01_swordsman_2026-10-16/candidates/swordsman_move_frame_01_v02.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "7f9172957dd1b00f2624e49bfac5f0c880114fe723400e366a37f747dabc6984",
+      "new_path": "source/batch01_swordsman_2026-10-16/candidates/swordsman_idle_frame_03_v02.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "38152a3213ad8294e1bf6235a60ab66127574196211c3c7cf381a66597134bc8",
+      "new_path": "source/batch01_swordsman_2026-10-16/candidates/swordsman_hurt_v02.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "48bf2024cdce1fc814ed92f5c027f2c0b0bcd9baf3415d14c1e8231716bb5759",
+      "new_path": "source/batch01_swordsman_2026-10-16/candidates/swordsman_idle_frame_02_v05.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "3a9618873ef0d03e8dfa92449fa350a354f33b219733c3539a9cc8c4ccd27ce2",
+      "new_path": "source/batch01_swordsman_2026-10-16/candidates/swordsman_move_frame_00_v05.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "cd2f04d225d49f0cf98b29f2c9a3724bbbc01fa83e39574bd2bb822138fcc401",
+      "new_path": "source/batch01_swordsman_2026-10-16/candidates/swordsman_nearest_v02.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "a3549d339dedd1383106cd60ee3d7ac79ab31fda1bdc88322e7e4acabde2b1a4",
+      "new_path": "source/batch01_swordsman_2026-10-16/candidates/swordsman_move_frame_00_v04.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "ec2c3081ef52fad647876d8825d7981b5921e8cfed9e37325f5a990ba719149e",
+      "new_path": "source/batch01_swordsman_2026-10-16/candidates/swordsman_move_frame_01_v05.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "f8d59080f89426eee8ed5f206de3334427a81f9f595fe32021d30d5d15b15c36",
+      "new_path": "source/batch01_swordsman_2026-10-16/candidates/swordsman_idle_frame_03_v05.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "d473f2bdf69c5148cafa3ac8e2f731176e8d949d1b86cfde7ec463ef81597918",
+      "new_path": "source/batch01_swordsman_2026-10-16/candidates/swordsman_move_frame_01_v04.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "78beaf2e8366b3b2494ec3f6834d0228ce211242cbe51e01dde1ffa12b871427",
+      "new_path": "source/batch01_swordsman_2026-10-16/candidates/swordsman_death_frame_05_v02.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "23b3379fe6db7de9f5ca08b922cf20af1ede2810d36c8583be78ce27cac159a4",
+      "new_path": "source/batch01_swordsman_2026-10-16/candidates/swordsman_move_frame_00_v03.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "a716b32072754f298f073d9cdc602f80f3ccb80f0478b34ed896cf667edf3d2d",
+      "new_path": "source/batch01_swordsman_2026-10-16/candidates/swordsman_idle_frame_02_v03.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "7c63613eb5fe53bc4a5cfe5b037e90f9e744f4b522570efdf3d363e0fac7e013",
+      "new_path": "source/batch01_swordsman_2026-10-16/candidates/swordsman_move_frame_01_v06.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "d4b6cb3100fe9863cca71a99ddf2df9dd9c11d5e274dc67262abecab29c28f15",
+      "new_path": "source/batch01_swordsman_2026-10-16/candidates/swordsman_idle_frame_02_v02.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "a35576ed8aecb5853ee00f10f46eda03b34c46921387f91442106cf605f33294",
+      "new_path": "source/batch01_swordsman_2026-10-16/candidates/swordsman_move_frame_00_v02.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "4f308b69a2d3f369ddab20e4cb057ef6ea8387296566c0932bbeeca7959b289e",
+      "new_path": "source/batch01_swordsman_2026-10-16/candidates/swordsman_move_v05_partial.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "f11bde791854744fbae9212e79168c5ea0c67d466fc7b0f2d445b9bf11680794",
+      "new_path": "source/batch01_swordsman_2026-10-16/candidates/swordsman_move_v04.piskel",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "b86786ac4b4a9e4f8363cdaedfd6564f29dd884a0787bab442f8fe8fcdf8a2c2",
+      "new_path": "source/batch01_swordsman_2026-10-16/records/swordsman_cutin_prompt_v01.txt",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "d028d48036483bc4c2b5de41a4f98723457efab850b35957e6a642d345ba9f8d",
+      "new_path": "source/batch01_swordsman_2026-10-16/records/swordsman_batch_palette.json",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "829eb7699cd732b00aac9d30977bc824c58e998ca53847479a7d84c40952157e",
+      "new_path": "source/batch01_swordsman_2026-10-16/records/swordsman_death_browser_v01.jpg",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "161176f803f319ebab5365e332cb158f7c0bbb3adedfa0bf691cc5ab752888f9",
+      "new_path": "source/batch01_swordsman_2026-10-16/records/swordsman_death_normalization_v02.json",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "a160a8e18643771b2821bf5bfe980e12b489853974184c4d68fead247eb38161",
+      "new_path": "source/batch01_swordsman_2026-10-16/records/swordsman_base_prompt.txt",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "fe9cf70982db4c7989e72240c29563f03a8594018846feecb3009740ca812e88",
+      "new_path": "source/batch01_swordsman_2026-10-16/records/swordsman_nearest_audit.json",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "07c50bdd50b3135ffc16d90d59b8fc58938ad4fc5fdc80b2c659cf970ad35bac",
+      "new_path": "source/batch01_swordsman_2026-10-16/records/swordsman_death_prompt_v01.txt",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "b37a56017fc825aba7e76f1dc59cecc678a5050a5d7ad950312d7809bcec8d51",
+      "new_path": "source/batch01_swordsman_2026-10-16/records/swordsman_hurt_browser_v01.jpg",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "adba47fc754fb88ba41d5d9672b38c94cc6bf7c1911a5c9db80507d13276c543",
+      "new_path": "source/batch01_swordsman_2026-10-16/records/swordsman_idle_prompt_v01.txt",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "48dadc010ac27b489dbbc63f7643dcd4dd0e973aee2fa78a2a97184c870d9350",
+      "new_path": "source/batch01_swordsman_2026-10-16/records/swordsman_idle_prompt_v02.txt",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "5845152871556ee624563ba6004b3927eeef90bdd5b499e5ef7253dab8677cb8",
+      "new_path": "source/batch01_swordsman_2026-10-16/records/swordsman_move_prompt_v02.txt",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "5cb33b9e8225caf1288c8b554ea91b004d5cfc7ddbd895f1a73804b023e32733",
+      "new_path": "source/batch01_swordsman_2026-10-16/records/swordsman_hurt_normalization_v02.json",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "5d2ed9a61ef7a98e33c2cacd8cfda685077214a0c0807f2b188e50b48fcd48ec",
+      "new_path": "source/batch01_swordsman_2026-10-16/records/swordsman_move_browser_v01.jpg",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "a561b2ce26c7072665833eb2ab91df1056353cb3d05a71c36521ed81b5b20f9d",
+      "new_path": "source/batch01_swordsman_2026-10-16/records/swordsman_piskel_audit.json",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "932179ed683cab7cde88f2218414c8ff75e78ed749d89b0b0d772c5439a01667",
+      "new_path": "source/batch01_swordsman_2026-10-16/records/swordsman_move_prompt_v01.txt",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "db12827cc52a4558fb0ca4f41e1da79058884607e7e8383fb51a05038b80a597",
+      "new_path": "source/batch01_swordsman_2026-10-16/records/swordsman_move_browser_v02.jpg",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "6836af29ba7f9bee5c09356b65bbb358a460600745ec066b6c827b9ad287dc9b",
+      "new_path": "source/batch01_swordsman_2026-10-16/records/swordsman_hurt_prompt_v01.txt",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "9a87d044670bcc3024e758f8751fea024538f2c2674b83fe58ef689ec2730b07",
+      "new_path": "source/batch01_swordsman_2026-10-16/records/swordsman_idle_browser_v02.jpg",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "0da95e1b2e03919bbf5ef9d7470632ed3cabebfee030441b0b1b055de405d7d1",
+      "new_path": "source/batch01_swordsman_2026-10-16/records/swordsman_move_normalization_v03.json",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "0dc3c2e280a93b1c532291b4bd5424ad360db0e34a52ac29e2eefd22ea738257",
+      "new_path": "source/batch01_swordsman_2026-10-16/records/swordsman_palette.json",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "e306867f7df376e645f24627b181036cf4b22b13768de34785bafcda8de058f1",
+      "new_path": "source/batch01_swordsman_2026-10-16/records/swordsman_idle_browser_v01.jpg",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "002ed8b703143e0b2da70b47c98e250c0a44a54e46fad7f65f3f51a9fd7b92cd",
+      "new_path": "source/batch01_swordsman_2026-10-16/records/swordsman_idle_normalization_v03.json",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "d8782939c87b2b4985a6c1e436e7a4559c4c05148a05be3f757ea85e421bd514",
+      "new_path": "source/batch01_swordsman_2026-10-16/records/swordsman_idle_normalization_v02.json",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "b0211bd4af8aeabd25890e3c9ad07c46609ec7e54ec2c3253ead97b1a98ea9a9",
+      "new_path": "source/batch01_swordsman_2026-10-16/records/swordsman_move_normalization_v02.json",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "acfbc0dc2cbf45eb7858d6258ebdcacbc6a551b357ba9edc5767b2098f4ac587",
+      "new_path": "source/batch01_swordsman_2026-10-16/records/swordsman_cutin_browser_v01.jpg",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "2427bc1e312789f625ce0877cad0df0c8809db435984e7f92fe3b2c8e68328ee",
+      "new_path": "source/batch01_swordsman_2026-10-16/originals/swordsman_idle_v02.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "a5411c84687ba6ab85ac78b25919646cee64a414f210d577f9d0507f5611a927",
+      "new_path": "source/batch01_swordsman_2026-10-16/originals/swordsman_base_v01.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "41e01bf3d6aa4f5e709e6685ef2eef79ed2fa608fc312388f662fcee4b5b539a",
+      "new_path": "source/batch01_swordsman_2026-10-16/originals/swordsman_idle_v01.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "ec17ab1cc1d8ab7b73a35faf021ab4442d386f1c398964784c5507c27bca69e1",
+      "new_path": "source/batch01_swordsman_2026-10-16/originals/swordsman_cutin_v01.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "e03350c44d3724a24342cb8597e34386ebe5252869ed716b081390c7288b5f23",
+      "new_path": "source/batch01_swordsman_2026-10-16/originals/swordsman_move_v02.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "fe0db7cf1e303f09a12d4b86c9ee114fe558b4dc2bdc5d5e9c4b997e15db0b42",
+      "new_path": "source/batch01_swordsman_2026-10-16/originals/swordsman_death_v01.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "3c9925a45065324504c81def2bdc3a252e26a32b7054e3857c5c9cb117f313ba",
+      "new_path": "source/batch01_swordsman_2026-10-16/originals/swordsman_move_v01.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "8f67b70ad2f436155b13a90dea36b883b69b080554af2765b036985c960b708e",
+      "new_path": "source/batch01_swordsman_2026-10-16/originals/swordsman_hurt_v01.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "92c62a4129a1002fc6309b2e64b43fb61c0c395fb252ff2992c940d2983336de",
+      "new_path": "source/batch01_swordsman_2026-10-16/approved/swordsman_cutin.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "9c25ec3b10164ac61a47d79a9526f009d1e620021b137c122a6103399ca56f20",
+      "new_path": "source/batch01_swordsman_2026-10-16/approved/swordsman_death.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "40af6c2f0a1c470b98f968320f66763e92a245dd83135e25ca6d822f1ccac077",
+      "new_path": "source/batch01_swordsman_2026-10-16/approved/swordsman.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "d1162f103a538f2cb277c362a89e57ab8c84bb8f2f02cb45d8ba85614941c269",
+      "new_path": "source/batch01_swordsman_2026-10-16/approved/swordsman_idle.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "be118eb0be9cc7c0b9af680393166fbb8bc82336a3155f63b21d9c879de233f1",
+      "new_path": "source/batch01_swordsman_2026-10-16/approved/swordsman_move.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "9fb031546c96497fc93683498de0fb3dafd5790f1024979e0bc2cc4ce371dbba",
+      "new_path": "source/batch01_swordsman_2026-10-16/approved/swordsman_hurt.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "1f80f6f14169ae7b6ef616889d1ef4c8435ff6c9e6a7e0b9f9996b8dba56e683",
+      "new_path": "source/batch01_swordsman_2026-10-16/previews/swordsman_idle_contact_v05.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "9beb36f49e4df14419c3c44ec78117ee4a0d08d29a38ddd74bfab8de4fcced08",
+      "new_path": "source/batch01_swordsman_2026-10-16/previews/swordsman_sampling_comparison.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "202d9f1a07b8ce224e386121907e4563061a38839e83f1ebd0baa11e7ede2381",
+      "new_path": "source/batch01_swordsman_2026-10-16/previews/swordsman_idle_contact_v03.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "01fccbb8bff9b8e58f8538cb7959809840ce69d866944c812d291d53024fb6df",
+      "new_path": "source/batch01_swordsman_2026-10-16/previews/swordsman_idle_contact_v02.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "468c93166b89f65ea3648e8f4b017ec5d02e0e5a06f00fa7fa53fce4e4dba65b",
+      "new_path": "source/batch01_swordsman_2026-10-16/previews/swordsman_move_piskel_v06.gif",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "2d903c814bbc9a692f10c6ad6704652d05032acb3968d7885d90ae872b098c7e",
+      "new_path": "source/batch01_swordsman_2026-10-16/previews/swordsman_move_contact_v03.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "b1714a31651519dd9924e2efc34b784c33d966e6ec8f8dbf96ac6f4ce967bdcf",
+      "new_path": "source/batch01_swordsman_2026-10-16/previews/swordsman_move_piskel_v04.gif",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "fdd1b22e57d8aa46a6d6a0341ccb4d4a0395c52bafdfaa9bb6e385730c76e7db",
+      "new_path": "source/batch01_swordsman_2026-10-16/previews/swordsman_hurt_v02.gif",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "8ff9fa54adbb2eb3e669c69334c1dd144a1270148968ebc80b21a71fc46d2f8e",
+      "new_path": "source/batch01_swordsman_2026-10-16/previews/swordsman_move_piskel_v05.gif",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "fa0c052962fb62e8ddd2145b946651ad9562d4e8ee1a50f044339f497e8ab8ca",
+      "new_path": "source/batch01_swordsman_2026-10-16/previews/swordsman_move_contact_v02.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "f1fc9284cc0445297b64ed9ac81d9a060d06fe810bd99761125d65018cb46e72",
+      "new_path": "source/batch01_swordsman_2026-10-16/previews/swordsman_idle_piskel_v04.gif",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "cb189e62e4b2f12632e360098c2c3403c72c44cdba0236d21cffa3e039286533",
+      "new_path": "source/batch01_swordsman_2026-10-16/previews/swordsman_move_contact_v06.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "9d11c99d92ac58509edca1eacc7a7c33a5f75aa9040e74898367f0746961de33",
+      "new_path": "source/batch01_swordsman_2026-10-16/previews/swordsman_idle_piskel_v05.gif",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "46c0489b7e7a431157b5eadf4119328d801a5d936e82335c4221e0e17abc543d",
+      "new_path": "source/batch01_swordsman_2026-10-16/previews/swordsman_move_contact_v05.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "9728b7d5a71887d1a54467df41f142b0d98207d82835988769b9edf52798c071",
+      "new_path": "source/batch01_swordsman_2026-10-16/previews/swordsman_move_contact_v04.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "4888acd11f6304754636ee748efe0d6d5795d45bbf7344f8f5f2c95541a47a67",
+      "new_path": "source/batch01_swordsman_2026-10-16/previews/swordsman_idle_v05.gif",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "ef17ec31ab815bf3bb9eabc0f2c6f6f37b0330b6392fe8179e904c264be6bfb1",
+      "new_path": "source/batch01_swordsman_2026-10-16/previews/swordsman_hurt_contact_v02.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "427f4b57325d3793e1f623ac43dd1cb46bfa10bf2e6974bb0761f85fa7c96f2a",
+      "new_path": "source/batch01_swordsman_2026-10-16/previews/swordsman_idle_v03.gif",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "94251b3c3657d4bc750b4e04415e43f8eba8369b28405bbbd1e36ab88b96e05e",
+      "new_path": "source/batch01_swordsman_2026-10-16/previews/swordsman_idle_v02.gif",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "9ab17c3e699a5ae0f79434ae916f4fb203aaf31d3416f8ef1c770287ce524f2f",
+      "new_path": "source/batch01_swordsman_2026-10-16/previews/swordsman_move_v05.gif",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "70faaa59dcaf756b2d5ed8bd2cdc0175f0ba2d33221a4ef718495e739d1fcb97",
+      "new_path": "source/batch01_swordsman_2026-10-16/previews/swordsman_death_contact_v02.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "74583b33fffab26aeddd9692bf95df47cb9a404b5b0c70fb595fc96947ecea66",
+      "new_path": "source/batch01_swordsman_2026-10-16/previews/swordsman_move_v04.gif",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "b609c787fd6f378742bdece4c050e4188ccac1882a05ca4a81e7d712f301a04b",
+      "new_path": "source/batch01_swordsman_2026-10-16/previews/swordsman_move_v06.gif",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "e2a63cc2f6bde70d0c821cc604069396d7eea01722cfa1959a57187513360292",
+      "new_path": "source/batch01_swordsman_2026-10-16/previews/swordsman_move_v03.gif",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "95307970605ee399e26c8e503007abcdcf6e34e46df4706d20041feb3adbe7ef",
+      "new_path": "source/batch01_swordsman_2026-10-16/previews/swordsman_move_first_three_grid.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "0dfe5296d9a62c50799df135c776d9c47b807af3693c33d41a40f54efebe24de",
+      "new_path": "source/batch01_swordsman_2026-10-16/previews/swordsman_death_v02.gif",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "598b37dad25b7818e98a6dec78c4721a7c772b0862961617956eb63122f9e103",
+      "new_path": "source/batch01_swordsman_2026-10-16/previews/swordsman_move_v02.gif",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "c2ce6ddba25bc28f5ca1dd297482509619188216163ccaf9dee717a9dfbe3f9c",
+      "new_path": "source/batch07_combat_characters_2026-10-16/candidates/assassin_attack_v05.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "b71dde1045f8a8f2aee68268b03af25e31b3d40e7b99742439ce72ba09551f2a",
+      "new_path": "source/batch07_combat_characters_2026-10-16/candidates/mage_move_v02.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "6a55e99a78fca7c03512079e498339b16c49983115b7da280aad82fdf3e0920e",
+      "new_path": "source/batch07_combat_characters_2026-10-16/candidates/assassin_cutin_v01_logical.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "62d4e558664b1031850b8a36b006ae5eeba40f5f1d557d3234c62ec86d15cff5",
+      "new_path": "source/batch07_combat_characters_2026-10-16/candidates/gunslinger_idle_v01.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "cd580b7b6ae3ac29d7ad3d01ae9925d0981207858fd21dd5e61441cd0eb60138",
+      "new_path": "source/batch07_combat_characters_2026-10-16/candidates/assassin_attack_v04.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "fffa40224afb9cc9eb99e2fcdc6e0031bf0e8552a803c6e07556504645a7545b",
+      "new_path": "source/batch07_combat_characters_2026-10-16/candidates/mage_move_v01.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "d90800b55147770db777d8bf3ecf7feedca156a8f75bccdd1c8f5de0da5c033b",
+      "new_path": "source/batch07_combat_characters_2026-10-16/candidates/swordsman_attack_v03.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "0bf0295d9c4e81b3e9cbe0a0a5831d9fc48d536d36392cc4525089bc63e65e50",
+      "new_path": "source/batch07_combat_characters_2026-10-16/candidates/assassin_attack_v03.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "84072e55ed71f9dac2dbe84fbba6c75624d0e6a83e89c8bbc64c39ac6f131ae9",
+      "new_path": "source/batch07_combat_characters_2026-10-16/candidates/assassin_attack_v02.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "1f2de46334f8574a020b21b9348e205244835c132e7e2928811eeb8718f211fc",
+      "new_path": "source/batch07_combat_characters_2026-10-16/candidates/mage_cutin_v01_logical.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "cf0a983cece59c0e859690fef2e1f1844dc497c7d5362d0eb2a6a65699c7dec3",
+      "new_path": "source/batch07_combat_characters_2026-10-16/candidates/assassin_attack_v01.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "e7b8039b946089f0725d5794fab826b5745bfe1e6932c81e49bdc69d5d46378e",
+      "new_path": "source/batch07_combat_characters_2026-10-16/candidates/swordsman_attack_f03_piskel_v02-20261016-145539.piskel",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "8fa745db29f76edac38181f82248424b9c5177913f4a01284e6d41ea1f05339b",
+      "new_path": "source/batch07_combat_characters_2026-10-16/candidates/assassin_v02.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "27e04bf40ca51a3552eb59d8019846791c511e6b5b95e288b1715d2e62465038",
+      "new_path": "source/batch07_combat_characters_2026-10-16/candidates/gunslinger_move_v01.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "aae36155e8ede93e5165d40898d838fadab71dd5b15b0632cbea44ad84def065",
+      "new_path": "source/batch07_combat_characters_2026-10-16/candidates/gunslinger_attack_v04.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "02f73f2733ffd697e3f5cc5ccee2dc4b9b52779cbd01bf2abd8f0ba691dfef26",
+      "new_path": "source/batch07_combat_characters_2026-10-16/candidates/assassin_hurt_v02.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "a066de2202d9cdb7c99dc40544a6a25c025af33de5606d3465be2d5ef4a6512e",
+      "new_path": "source/batch07_combat_characters_2026-10-16/candidates/gunslinger_move_v03.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "9257f16a9b3a02af6382672825fd0f4c93b45ad3a5bfac9b60f4c78cdc6bceb5",
+      "new_path": "source/batch07_combat_characters_2026-10-16/candidates/mage_idle_v01.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "b5f0b8eb8313369eb92677e18a728dcf33785b12338a047118afa09d4e1aef76",
+      "new_path": "source/batch07_combat_characters_2026-10-16/candidates/assassin_v01.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "fde8bc0e4e5816f2fcc172aaeea3b0865dc702761d4fe6018f7c2ad9351aca4d",
+      "new_path": "source/batch07_combat_characters_2026-10-16/candidates/gunslinger_move_v02.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "dc155dd09b4c10fc5fcb3f604780e321d4bec85250e12ec72a9d5e0ef0a9c3b3",
+      "new_path": "source/batch07_combat_characters_2026-10-16/candidates/assassin_hurt_v01.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "f9e0cf005e09edf238cb5620a30d5f1baaf34a519d109e8213b7810315503c73",
+      "new_path": "source/batch07_combat_characters_2026-10-16/candidates/mage_v01.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "504443e0e04e88a96a9504b444da3c709039827270465ca5cdb7465dffd6b96a",
+      "new_path": "source/batch07_combat_characters_2026-10-16/candidates/gunslinger_attack_v03.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "dd47829bf7ace1fa7cf9392a8a87366e37a8909a585556837def0c61c291735d",
+      "new_path": "source/batch07_combat_characters_2026-10-16/candidates/gunslinger_attack_v02_box.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "a387cb288bffd4ed9f1f240eeb7380b24273d8a6cd657481a93f2dd4b9645352",
+      "new_path": "source/batch07_combat_characters_2026-10-16/candidates/gunslinger_cutin_v01_logical.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "b7d5f9b02703d8c7ae77a73a78baaee2a8315f87011a8d19259d98bb13982018",
+      "new_path": "source/batch07_combat_characters_2026-10-16/candidates/gunslinger_attack_v01.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "226df69339ba985ab41aea32dec042607d2c0992adaf2b1f24238358923f992c",
+      "new_path": "source/batch07_combat_characters_2026-10-16/candidates/swordsman_attack_frame01_wide_v01.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "f86fefeba4d60f7fa18d1cdd4b6c3b0b8041b5c30252f65299ab421392389ac6",
+      "new_path": "source/batch07_combat_characters_2026-10-16/candidates/swordsman_attack_frame06_wide_v01.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "16288cf5ed93723ea971803fc8bf933edf04ac764bccec2cc43ccd405029e530",
+      "new_path": "source/batch07_combat_characters_2026-10-16/candidates/swordsman_attack_frame04_wide_v01.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "568ffaa1d21129f9233fd0faf9556b98f95e9ee9e445a5720e13a68d5bd91157",
+      "new_path": "source/batch07_combat_characters_2026-10-16/candidates/swordsman_attack_frame03_wide_v01.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "e71d70b7f0a3ed10196aa8f134e502cb88f1f8966a4dff984f3a2e055129bdf9",
+      "new_path": "source/batch07_combat_characters_2026-10-16/candidates/swordsman_attack_f03_piskel_v02.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "3a287ac4c8e2b252ae48bcad3495e4fdc313ae4c845804ce466d4a7515d44770",
+      "new_path": "source/batch07_combat_characters_2026-10-16/candidates/assassin_idle_v01.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "43556662c7aa2ed1c8dd64acb68eac60dd71b7f4a4ef64838b6d0544f6a54ed2",
+      "new_path": "source/batch07_combat_characters_2026-10-16/candidates/mage_hurt_v01.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "bc132fc31b67a34b2429adf109ca8d9bae878873de3de3e7abfba262effe578c",
+      "new_path": "source/batch07_combat_characters_2026-10-16/candidates/swordsman_attack_f03_piskel_v03.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "094f28c81d6e6061bea15ea8765c82ced830072303686564429c8145c3a23aaa",
+      "new_path": "source/batch07_combat_characters_2026-10-16/candidates/swordsman_attack_frame02_wide_v01.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "cb0d867ca5ce85ef5d05f9f61ba1362cc54a0314bf0cc5a3f76e4d7fba95f36c",
+      "new_path": "source/batch07_combat_characters_2026-10-16/candidates/swordsman_attack_frame05_wide_v01.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "3de6379929512d463030905033c2b6fce5b86df9b1fc9888142d13ab42528739",
+      "new_path": "source/batch07_combat_characters_2026-10-16/candidates/assassin_idle_v02.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "4f0bfe59589235f615f7ca057f677ae18ff66f2e1eab3e5d8c4b5bce384182cf",
+      "new_path": "source/batch07_combat_characters_2026-10-16/candidates/mage_hurt_v02.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "98cfebd34f5878ea758ed04ebeee327d7f9cd71d5647912939553d4d8b48172e",
+      "new_path": "source/batch07_combat_characters_2026-10-16/candidates/mage_attack_v01.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "dc2243ac948e2ed5e4bcda3c56bb487935b635b971a980440e83927f1bf86ad7",
+      "new_path": "source/batch07_combat_characters_2026-10-16/candidates/gunslinger_death_v01.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "73c6aa743be7dc78894e4d7ac8edf04d6455f8dc5f241e9265270c406f437d5e",
+      "new_path": "source/batch07_combat_characters_2026-10-16/candidates/mage_cutin_v01.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "5caed1599bf6e0fe1e68aa4778ca6c94b15250716b824602fdf4395805bc7211",
+      "new_path": "source/batch07_combat_characters_2026-10-16/candidates/mage_attack_v02.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "0ecea305426c584939ccdac28e9e87d8698189d0af52e607c6876f408d920180",
+      "new_path": "source/batch07_combat_characters_2026-10-16/candidates/assassin_death_v01.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "74119194c02b6d77ddffcce5e38ad144d8ae78e1976b4b38428f01733e7512b1",
+      "new_path": "source/batch07_combat_characters_2026-10-16/candidates/gunslinger_hurt_v02.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "928ae652030ce8b7c2ad7b14d2db9ee8be046a9da15ffa0e6b217738ed9bea4a",
+      "new_path": "source/batch07_combat_characters_2026-10-16/candidates/assassin_move_v01.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "70c988a03ba893fc937ba6ee57d0f6804edc602502352ad2a229ecaf4d78f76c",
+      "new_path": "source/batch07_combat_characters_2026-10-16/candidates/swordsman_attack_f03_piskel_v03-20261016-145800.piskel",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "0e2599e34f1574c672d53dced067cf37056f6f6f2ab00ace79527c0f38852583",
+      "new_path": "source/batch07_combat_characters_2026-10-16/candidates/gunslinger_v02.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "004d1ef286285af06def0868942e31015d9b9eae2110b2717b67f4d3af8c610b",
+      "new_path": "source/batch07_combat_characters_2026-10-16/candidates/gunslinger_hurt_v01.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "a5defe14661e057f9e4d980d1adf386c2f4c7eb0a216b7853cb2992fadc0b902",
+      "new_path": "source/batch07_combat_characters_2026-10-16/candidates/assassin_cutin_v01.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "6db0f2f10be40ad8953f70e99916b66a2fee2d774418727bb95b799142b38663",
+      "new_path": "source/batch07_combat_characters_2026-10-16/candidates/assassin_move_v02.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "39077eabff7356e889e1a9c105b5cbc528c71a439f28f02b258f81fc6e9c476b",
+      "new_path": "source/batch07_combat_characters_2026-10-16/candidates/mage_attack_v04.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "675705562c2b14edea91512f66d4ce4eb01f6d0ae264d825b446649df861052d",
+      "new_path": "source/batch07_combat_characters_2026-10-16/candidates/gunslinger_v01.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "a1eeee7da786b0b32e30d1744bb79be30c3a6f56902bb24c4b3ddd040055b94a",
+      "new_path": "source/batch07_combat_characters_2026-10-16/candidates/mage_death_v01.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "00407ec99f93aa1c4f871af22a6984e168b56c2f483e27d5d8d5cad38028e65f",
+      "new_path": "source/batch07_combat_characters_2026-10-16/candidates/gunslinger_cutin_v01.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "c50ab65ae9f200c613d2c728d4f6b40e5d6e86d68f2f47915eac34693c254a70",
+      "new_path": "source/batch07_combat_characters_2026-10-16/records/assassin_attack_prompt_v01_builtin.txt",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "0853bcc6a5a722fcea48195b792b226d2c6eb839093803edb16b23b0355c33ae",
+      "new_path": "source/batch07_combat_characters_2026-10-16/records/mage_attack_prompt_v01_builtin.txt",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "853e59e1fafaed96c982ba1f8c4712d03945e176c036041ad9b319e4807e4238",
+      "new_path": "source/batch07_combat_characters_2026-10-16/records/gunslinger_cutin_prompt_v01_builtin.txt",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "d88f3b729d93db6ff777fb3baaa997e05d59da06afde050fcacf1c57b438f09a",
+      "new_path": "source/batch07_combat_characters_2026-10-16/records/mage_cutin_prompt_v01_builtin.txt",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "c277a27659a561de9f5833ea2b7bb2f98c16cfe18af71013afe63a3fb9625083",
+      "new_path": "source/batch07_combat_characters_2026-10-16/records/gunslinger_prompt_v01_builtin.txt",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "6b67ae73b053346702701575422083f0f1942e5c7711e740dceda1d694eefcba",
+      "new_path": "source/batch07_combat_characters_2026-10-16/records/builtin_C_mage_walk_fix_jobs.json",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "16cce2bbd0a0e5c7447338e8a0c373781f54883ff1cdffffd7a8b9c25366ba79",
+      "new_path": "source/batch07_combat_characters_2026-10-16/records/swordsman_attack_v01_browser.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "3cc1474c51f0d00e25667fbf047104c4bbe4065621674bd73ea78d1633e84086",
+      "new_path": "source/batch07_combat_characters_2026-10-16/records/normalize_swordsman_v01.py",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "72370be57bcf55d64b150486eb6957569152beb3478fd2d4a691aaca5d95906a",
+      "new_path": "source/batch07_combat_characters_2026-10-16/records/mage_prompt_v01_builtin.txt",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "bec111515b3c6b2d26ed751552d5bd98b8a490f0e7a0f48e70f03722b7ee3188",
+      "new_path": "source/batch07_combat_characters_2026-10-16/records/gunslinger_attack_prompt_v01_builtin.txt",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "5ab7df0349c4403b1d88510226844b79b756dd8df42f0e5425d9b5c8e25b124d",
+      "new_path": "source/batch07_combat_characters_2026-10-16/records/gunslinger_move_prompt_v03_builtin.txt",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "cdaa46e6fa0e7a182977889b36bf87f2485041143413cfe997a5121acff8ac63",
+      "new_path": "source/batch07_combat_characters_2026-10-16/records/assassin_palette.json",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "8630335b85675bd5897f712860f8e671e60555cd04100136f29aadbf80cd51dd",
+      "new_path": "source/batch07_combat_characters_2026-10-16/records/assassin_death_prompt_v01_builtin.txt",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "79941ad3df96aeebef653c337b316b81dbfe15e9c079456c1b74bc28a20ad35d",
+      "new_path": "source/batch07_combat_characters_2026-10-16/records/mage_attack_prompt_v02_builtin.txt",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "e724a2c10eec3732fec99084df9dbe989e102c57639f61bc587e8cc81a156bf5",
+      "new_path": "source/batch07_combat_characters_2026-10-16/records/assassin_attack_prompt_v02_builtin.txt",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "19a123f4cd2dc816fa89217216999a8cf07e6e4a187325e57e1a1ca00c637367",
+      "new_path": "source/batch07_combat_characters_2026-10-16/records/assassin_palette_v01_rejected.json",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "1b12f0bfd37641bc3296a7dc2d2b80f7c72a81cd5d71264fe6a34a1f6ca2a13f",
+      "new_path": "source/batch07_combat_characters_2026-10-16/records/swordsman_attack_playback_phase_a.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "1c1cb8d0bb49aa2bd8bb6309e95c9a1ca34a1d4583182460ba653a96a52e240e",
+      "new_path": "source/batch07_combat_characters_2026-10-16/records/gunslinger_move_prompt_v01_builtin.txt",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "e9872dcc597aac504945f70acddb8e63dc65b14be3f8960964151dd684851e81",
+      "new_path": "source/batch07_combat_characters_2026-10-16/records/gunslinger_palette_revision.json",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "e7cef212b6fcb1c322e95af93a30fe9dfdef0854b910388f7c2b35d862b2940a",
+      "new_path": "source/batch07_combat_characters_2026-10-16/records/assassin_cutin_prompt_v01_builtin.txt",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "7b9aa5aeb26acc5f60471fa64e64defd01c08e7976131b708aee6ddfedd6c1f0",
+      "new_path": "source/batch07_combat_characters_2026-10-16/records/gunslinger_palette_v01_rejected.json",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "5c3bff0d8a80e6e3ac08f91c5b2094bddbc0c86e0fe004dabf0313bb41be82bf",
+      "new_path": "source/batch07_combat_characters_2026-10-16/records/swordsman_attack_wide_audit.json",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "44566d85275e3a3e1823ef7082c9a49933e002424474bf018196ad0ecc33ec15",
+      "new_path": "source/batch07_combat_characters_2026-10-16/records/swordsman_attack_playback_phase_b.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "bef5a9d575efb2551ceca78a6159962ed7b0586d958ab76d1717c02c4c5fae45",
+      "new_path": "source/batch07_combat_characters_2026-10-16/records/gunslinger_idle_prompt_v01_builtin.txt",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "dd9c251fecc35cd24c22caed813a46209b8a444c3ec782e5f8e8fffb7dd1dc0e",
+      "new_path": "source/batch07_combat_characters_2026-10-16/records/assassin_move_prompt_v01_builtin.txt",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "7b50b74955c4e50bbffe4406b79d1abf65198e2ee6a8865ec1026a5e6ef0a138",
+      "new_path": "source/batch07_combat_characters_2026-10-16/records/mage_move_prompt_v01_builtin.txt",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "a4762201391a5fd51a616a299058cb88733f595d42478b6af06c838cc7626edf",
+      "new_path": "source/batch07_combat_characters_2026-10-16/records/swordsman_attack_f03_piskel_v03.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "2868494ab7f4d827aed08f9b8708bd02e81a9add61e3de2fc4f67156f7fe5d65",
+      "new_path": "source/batch07_combat_characters_2026-10-16/records/assassin_idle_prompt_v01_builtin.txt",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "e3ad722c5d99ed1c437e637d8ba995254bcff67dd801952f2f8eef218d152529",
+      "new_path": "source/batch07_combat_characters_2026-10-16/records/swordsman_attack_f03_ui_verification.json",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "7a738b21edc2daffd37005c8bb0249474c60ce91dbcbef5d36cf00d5a9fef914",
+      "new_path": "source/batch07_combat_characters_2026-10-16/records/assassin_prompt_v01_builtin.txt",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "06ba66c4883c71d26a5d8e569c8d1fe959e2bfdf43f8b6d2865f96bb0d424606",
+      "new_path": "source/batch07_combat_characters_2026-10-16/records/mage_idle_prompt_v01_builtin.txt",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "9c4e56b2cad93fc554bc23dd28883b01566adc62ed4e82ffe0cd8fb81c104924",
+      "new_path": "source/batch07_combat_characters_2026-10-16/records/mage_palette.json",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "b0502e34d02edee3d9fcef16978539299e6a55a12f0db1f42f37da7366e4bee8",
+      "new_path": "source/batch07_combat_characters_2026-10-16/records/mage_attack_prompt_v03_builtin.txt",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "a8e8a2d725b22b6bdbe6262be93e125b1795e87fb83951e7dadbf776977d89d0",
+      "new_path": "source/batch07_combat_characters_2026-10-16/records/mage_death_prompt_v01_builtin.txt",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "b39d1ba9d2b40368db57b38265069254a54603fbb73e52cc2c3198e8666d294a",
+      "new_path": "source/batch07_combat_characters_2026-10-16/records/gunslinger_death_prompt_v01_builtin.txt",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "fc3e67fb2020c61d9c5b6f01c2b2ba8c84bf0975c45355c15e6178cc42f53348",
+      "new_path": "source/batch07_combat_characters_2026-10-16/records/gunslinger_hurt_prompt_v01_builtin.txt",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "2a523600c1da40672ffe7d0530c2a2556a30c74d95c190cc43ca1dc9ac143aad",
+      "new_path": "source/batch07_combat_characters_2026-10-16/records/mage_move_prompt_v02_builtin.txt",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "6253cfb1e59b6bf6e939371550258121000ca5855fc6751ab5780855d46ffc22",
+      "new_path": "source/batch07_combat_characters_2026-10-16/records/assassin_move_prompt_v02_builtin.txt",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "b464edb263ed92a81ea8356ead6bd2b38d640e70d42d93f91a6f97ba1886da36",
+      "new_path": "source/batch07_combat_characters_2026-10-16/records/gunslinger_palette.json",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "f8d05c8f1df30051e6830416fb1bcf753af656c0884f7f1bb43fab6fc4ba4768",
+      "new_path": "source/batch07_combat_characters_2026-10-16/records/assassin_palette_revision.json",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "d367ad4d0077f1060717cc1a3113942318cd72d110217905ae90194c404c72d9",
+      "new_path": "source/batch07_combat_characters_2026-10-16/records/gunslinger_move_prompt_v02_builtin.txt",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "9b5251f2dfdb6ba229be8392ef643b700fb3a62fd57de8fff4cf366258c7fa35",
+      "new_path": "source/batch07_combat_characters_2026-10-16/records/assassin_hurt_prompt_v01_builtin.txt",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "67c916cbba6c2e5bd1a13bcfa6be5903bc06023994dd99768d75adedab43bcf1",
+      "new_path": "source/batch07_combat_characters_2026-10-16/records/publish_swordsman.py",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "4c0d02aa2127554a21a33994be0ee746d11e09a39fbfe5105e4b3a5fde38866b",
+      "new_path": "source/batch07_combat_characters_2026-10-16/records/swordsman_attack_prompt_v01.txt",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "32c9905e1e0d32f365624408d3afbce5bca5203743160ddc4e8402ec1c96092c",
+      "new_path": "source/batch07_combat_characters_2026-10-16/records/mage_hurt_prompt_v01_builtin.txt",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "f90f89333dc711ecbe3bbdb2b12fd2ea5998e41473eb518776c2afba97c03381",
+      "new_path": "source/batch07_combat_characters_2026-10-16/references/gunslinger.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "3797eedbb92a9c17d243e1e939ae4f6a902ceeed1eb98ff2699bad1278a55b36",
+      "new_path": "source/batch07_combat_characters_2026-10-16/references/swordsman_attack_layout.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "612a9469a375bd2b50afbd92735d9b2b0360af7ba778d271e2c4becb8e423649",
+      "new_path": "source/batch07_combat_characters_2026-10-16/references/assassin_8x.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "ac04f37e1f6e9e086de9e30a6f3e58b94df03a7faf786122ab6b8726fa747784",
+      "new_path": "source/batch07_combat_characters_2026-10-16/references/swordsman_8x.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "2e749d2436eb6e34ca1b3d4e37af00075aa5e22925562d8e2c387de1b846fcd0",
+      "new_path": "source/batch07_combat_characters_2026-10-16/references/mage.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "3930354800754d8a4745053c19b8d65a88aa41cd5cffcb6c215c5a61c1fcd053",
+      "new_path": "source/batch07_combat_characters_2026-10-16/references/swordsman.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "9f1c623810751cce4857bd2f735c9447798e18b5ad2f7e048f28233075233e56",
+      "new_path": "source/batch07_combat_characters_2026-10-16/references/mage_8x.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "828c3790d078b9c84851bbfd6bee2673b3b99c7f546bf9b2150ea4fff3e15065",
+      "new_path": "source/batch07_combat_characters_2026-10-16/references/gunslinger_8x.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "2e5ddcc6303447dd6146b2488fefe09a93afbd41ea38c35e857efbc2370b59eb",
+      "new_path": "source/batch07_combat_characters_2026-10-16/references/assassin.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "9aecdc0252ebb1e4e8b2f466935ae9d9144bc8fd0aa442061844fa53d547686c",
+      "new_path": "source/batch07_combat_characters_2026-10-16/originals/assassin_hurt_v01_raw.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "3b5dbf6139b7f3473005b05c413162e72b269a16f8489eacc27a4957ce22b5e4",
+      "new_path": "source/batch07_combat_characters_2026-10-16/originals/mage_hurt_v01_raw.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "ea5627675662904d69a1e5f47f8731549004eb2d2a3c3f0c5379c1eb725b271f",
+      "new_path": "source/batch07_combat_characters_2026-10-16/originals/assassin_attack_v01_raw.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "9a61d9ede4c1ebcd111cae0756cc7d32057d2755347b76321b4e12688ea0d1d9",
+      "new_path": "source/batch07_combat_characters_2026-10-16/originals/mage_cutin_v01_raw.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "41b3ec59d2fcff3ddb175dfbd0585b40f24b9b9d8fe86c90357078139321ca29",
+      "new_path": "source/batch07_combat_characters_2026-10-16/originals/mage_v01_raw.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "f4d25a8be813bd5bd558ba4978513da83fbadbc1736ae17e1186e3f3c6b3aa8b",
+      "new_path": "source/batch07_combat_characters_2026-10-16/originals/assassin_cutin_v01_raw.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "d44c50574d766dbf5a1f0c93d702c05af1942d12ee280b6fe65aea57d0f928f2",
+      "new_path": "source/batch07_combat_characters_2026-10-16/originals/assassin_attack_v02_raw.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "fce9ca4a1ba4cd305c627a11bff77b7e15845db6df74fcd0a31e15ac2b306c52",
+      "new_path": "source/batch07_combat_characters_2026-10-16/originals/gunslinger_v01_raw.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "f66e54f8e52baf3f1c3631ea117fe0a84225c59dc14ea507c72e8a42ed4cad79",
+      "new_path": "source/batch07_combat_characters_2026-10-16/originals/assassin_death_v01_raw.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "c56acd417fc83230f3c574c997ce12218836402eb99ad30fd647553b54812f10",
+      "new_path": "source/batch07_combat_characters_2026-10-16/originals/gunslinger_hurt_v01_raw.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "3c9f1c70943631fd62aa71e9938bf5421474cfb4b1ffd2a4079349f5f42dbe62",
+      "new_path": "source/batch07_combat_characters_2026-10-16/originals/assassin_v01_raw.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "e8f709b218cb939cfd294e965481bf66d173f96101611cf899e60c063c8b99b8",
+      "new_path": "source/batch07_combat_characters_2026-10-16/originals/mage_death_v01_raw.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "4298d9c643e28950a65f00de580ed23621e2acc21be9051c618b5ede884d7e01",
+      "new_path": "source/batch07_combat_characters_2026-10-16/originals/gunslinger_attack_v01_raw.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "e47acd20fe4fa571921e25e5af113018ae7ee4d4d45d17230152a84343a6b7b8",
+      "new_path": "source/batch07_combat_characters_2026-10-16/originals/gunslinger_idle_v01_raw.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "65740bb2de89d0eb0130ec9fe614359ac457164a2dac74953c810154a7ce9ecd",
+      "new_path": "source/batch07_combat_characters_2026-10-16/originals/assassin_move_v02_raw.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "940536383a0f44313947963fa5ffb1c1a881bdb66d38f96c15270fa6bf134577",
+      "new_path": "source/batch07_combat_characters_2026-10-16/originals/gunslinger_death_v01_raw.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "67dc5decd96cd6652ac0b6bb60831ede2dca10d13f1d27f6c961e546e53151e6",
+      "new_path": "source/batch07_combat_characters_2026-10-16/originals/mage_move_v02_raw.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "ead7db7d3b7c665d5c1683da0d035d39b83d8eff2d3c9bba0d620575071fbcc5",
+      "new_path": "source/batch07_combat_characters_2026-10-16/originals/gunslinger_move_v01_raw.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "91e58386e08dbac1c72443581148da41f29374850093430031841da8199010aa",
+      "new_path": "source/batch07_combat_characters_2026-10-16/originals/gunslinger_cutin_v01_raw.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "cc7506165f7c81d85008c41a52d229cf131ed7aa0c5db76d772767a41d09bce9",
+      "new_path": "source/batch07_combat_characters_2026-10-16/originals/mage_attack_v01_raw.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "0a5bbf19e37159f83b74adae014b19a0ad879f06f859410d27ad413b23c48bfd",
+      "new_path": "source/batch07_combat_characters_2026-10-16/originals/mage_move_v01_raw.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "482723315b477f3c637d54f2859e60620974e0215f0cfaf2a94484014cdde1ed",
+      "new_path": "source/batch07_combat_characters_2026-10-16/originals/assassin_move_v01_raw.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "a22ef4b50a970701ca22e108abe53a4d1b700635086efe707014b35043b981b3",
+      "new_path": "source/batch07_combat_characters_2026-10-16/originals/gunslinger_move_v03_raw.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "8ce7c3442a555d887ad2f19e0ad5d5bafb52b8e855c70f4369fc30ffac56a689",
+      "new_path": "source/batch07_combat_characters_2026-10-16/originals/mage_attack_v03_raw.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "66fd24993201822c873535ecaa8287aebf455b23a897593a173c105feb4584b9",
+      "new_path": "source/batch07_combat_characters_2026-10-16/originals/swordsman_attack_v01_raw.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "22ac52cd37cdda5ca0a8099d4727ee1a48d1301f037848b7ba7204b9d3800cec",
+      "new_path": "source/batch07_combat_characters_2026-10-16/originals/mage_attack_v02_raw.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "62294905014a56b8b9bce0fc25b5af524306f60d9a67c3f138f86f513d3470c2",
+      "new_path": "source/batch07_combat_characters_2026-10-16/originals/mage_idle_v01_raw.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "c9570da331b7cc751772b615257a61c2105792c7585d919cdf8f38dbf03e4d14",
+      "new_path": "source/batch07_combat_characters_2026-10-16/originals/assassin_idle_v01_raw.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "a60fde1c7fea720fd5a99446dae5c7f13811dfcd9482854e1553c3961620cd35",
+      "new_path": "source/batch07_combat_characters_2026-10-16/originals/gunslinger_move_v02_raw.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "9732b42a0604c787f13ad8456141a9f7201f18143d375e23190f1150fa988500",
+      "new_path": "source/batch07_combat_characters_2026-10-16/approved/mage_death.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "101b9830d03b4534d7c071bb33136cc721b3ec5fd37934ac04208e29dd870c1a",
+      "new_path": "source/batch07_combat_characters_2026-10-16/approved/gunslinger_death.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "f893546448528a0de7facccea884f73dc05d9a0c7cc1d10c5958ce00fb89dc20",
+      "new_path": "source/batch07_combat_characters_2026-10-16/approved/gunslinger.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "3577b42900cfca158ec05319a6f96552df19755a8b5bc1ed2a342ce1eb292c6b",
+      "new_path": "source/batch07_combat_characters_2026-10-16/approved/assassin_hurt.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "32d4fcac96e00d543493308db1eb861c7835265fe0622f686c42c38f03dbac64",
+      "new_path": "source/batch07_combat_characters_2026-10-16/approved/assassin_attack.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "d6dee284c4a32f218b73e2c3e4adb8782f613f0f565734548d2b4d582f756f30",
+      "new_path": "source/batch07_combat_characters_2026-10-16/approved/assassin_idle.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "15fdab1e850e3feb5a31b87d67cf327b607d4ee21fc4a563dbbe98add2a66692",
+      "new_path": "source/batch07_combat_characters_2026-10-16/approved/assassin_move.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "d5063a926bd8d818accf3ef12f1a718b28f768e3bec61c17bd1facfce8f427c1",
+      "new_path": "source/batch07_combat_characters_2026-10-16/approved/gunslinger_attack.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "781e0578360fc6801acf6438bdd77707f0ebd7724e99269195d0eae24d256c64",
+      "new_path": "source/batch07_combat_characters_2026-10-16/approved/assassin_cutin.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "72cf7f76d85ced2fc10a33cc0ca08e0d6abd81b9919341ebc4f708e4c7cad7d5",
+      "new_path": "source/batch07_combat_characters_2026-10-16/approved/mage_move.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "5b37e8f3b39f55f3af7eb9aac8d30f5b5e0cc8595c5f5a819b201c764347a851",
+      "new_path": "source/batch07_combat_characters_2026-10-16/approved/mage.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "86b5c81069cf5535c7910bc45b011d8cb6f5f3f737f18b7373cc854a6fd706fe",
+      "new_path": "source/batch07_combat_characters_2026-10-16/approved/mage_idle.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "505977f640f32af29a8064b516e13dda138c512c5f584c1d463c90ebea9459ff",
+      "new_path": "source/batch07_combat_characters_2026-10-16/approved/mage_hurt.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "dd3faedd075755cc87b0171d7baba7abb31e488fb0072ed81b1278e42979ce04",
+      "new_path": "source/batch07_combat_characters_2026-10-16/approved/gunslinger_idle.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "5f9819aec5465093210b7e82122175feff33856eedd99bbf1713d8183fb3601f",
+      "new_path": "source/batch07_combat_characters_2026-10-16/approved/gunslinger_cutin.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "827bcadff009818a389ccea35e03b9d07fa3806d4d81ae430c377bee916e2bbd",
+      "new_path": "source/batch07_combat_characters_2026-10-16/approved/gunslinger_move.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "29f9e3cc00adbc14591b62acd80556b490ce97cc7fa7e517f2dfc776c45568a5",
+      "new_path": "source/batch07_combat_characters_2026-10-16/approved/gunslinger_hurt.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "346268a3fdb8517a611546bf3fad79a30409d3702a0815ce3e14369458b4f529",
+      "new_path": "source/batch07_combat_characters_2026-10-16/approved/mage_cutin.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "2926b4a0b001a56585e7ec4253545534e1450feb2dbf95a1c0ca0bfbe6498d35",
+      "new_path": "source/batch07_combat_characters_2026-10-16/approved/swordsman_attack.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "1262379d1f39468056cd5fe2f7bdac546edaa5d0dc016bb51cc12d0c7b40ed25",
+      "new_path": "source/batch07_combat_characters_2026-10-16/approved/mage_attack.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "71d1dee49120ee142b16cac1d0adb312d25d202aae8122d96a28ffad35527c4a",
+      "new_path": "source/batch07_combat_characters_2026-10-16/approved/assassin_death.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "6a0a66ccc46a528869f47a0236323750a3e4ed8996655dbc70063e4793f6a51e",
+      "new_path": "source/batch07_combat_characters_2026-10-16/approved/assassin.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "b08bbe01b87705aefc547311671d38b4289f2d6c92102239aaea727ebcd55633",
+      "new_path": "source/batch07_combat_characters_2026-10-16/previews/assassin_hurt_v01_contact_1x.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "473e57b0dbd374080f77f5fac6e7add16200fa749025400410c0e98d2c42c2c2",
+      "new_path": "source/batch07_combat_characters_2026-10-16/previews/assassin_attack_v04_contact_4x.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "a8b304f6aa69db7f3ccca0af065504db94f203d71f583c43dec6ab75bb292f0d",
+      "new_path": "source/batch07_combat_characters_2026-10-16/previews/mage_cutin_v01_contact_1x.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "55fa5c146c88045afbd55ed541ae81dc3f9f09580943737d7cfdd1e77a156e5a",
+      "new_path": "source/batch07_combat_characters_2026-10-16/previews/gunslinger_move_v01_slow8fps.gif",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "5398d98b58e3ae22800c63084a0c4348a7d7adb7cad7337d24982f590424e7a6",
+      "new_path": "source/batch07_combat_characters_2026-10-16/previews/swordsman_attack_raw_v01_overview.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "7e6fd4cc07c7ab9c9ebd0dbef566600e7e2a40d9612736c64a326e96491d1b48",
+      "new_path": "source/batch07_combat_characters_2026-10-16/previews/assassin_idle_v01_contact_4x.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "632ff3e0f62917661a65238659e7c66cbea35874ef23949c56b096c83dd10957",
+      "new_path": "source/batch07_combat_characters_2026-10-16/previews/gunslinger_attack_v02_box_contact_4x.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "ff441f751b867bc5979819f4bcc395fc19ac4644f830777e1f6735731fced981",
+      "new_path": "source/batch07_combat_characters_2026-10-16/previews/mage_idle_v01_action8fps_QA_loop.gif",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "d693c7a2474be7766ced15659abcf1babf009583d40888ffa4717260b3efec7f",
+      "new_path": "source/batch07_combat_characters_2026-10-16/previews/assassin_hurt_v02_action8fps.gif",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "6319e8fbf006e0e87035a9ff547792269ff0da79205185eaa091deecb80a659a",
+      "new_path": "source/batch07_combat_characters_2026-10-16/previews/assassin_death_v01_action8fps_QA_loop.gif",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "8198f22be448d71efc0136cfeb6c2d233f8184dc5fc71929e0b56f44edcd3f03",
+      "new_path": "source/batch07_combat_characters_2026-10-16/previews/gunslinger_attack_v03_slow8fps.gif",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "87d2cc6500bff6fdc1bf35a5f75ef87223e81cb7229c097f8eff010e961c763e",
+      "new_path": "source/batch07_combat_characters_2026-10-16/previews/gunslinger_attack_v04_slow8fps.gif",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "424fe9f08fbebd5a55ffeae68b07ab77cc7c92f3b88e135fcf11f60c7eb49317",
+      "new_path": "source/batch07_combat_characters_2026-10-16/previews/assassin_move_v02_contact_4x.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "6826ced42890d72d11e1069c09ad96589be99263896e8d2fdb8b7fc3fd5d78d0",
+      "new_path": "source/batch07_combat_characters_2026-10-16/previews/mage_attack_v01_slow8fps.gif",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "66c61e63d5ac031f9ff9ca7110225761b2131d6a3021725f9c36c7988cbf1f17",
+      "new_path": "source/batch07_combat_characters_2026-10-16/previews/mage_move_v01_action8fps_QA_loop.gif",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "98de0708514c234ed0ec5292697a87560bb66903e4786bab33a40bbd9cf4564b",
+      "new_path": "source/batch07_combat_characters_2026-10-16/previews/gunslinger_hurt_v02_action8fps_QA_loop.gif",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "89d63343c327e3a8b5e33e673f28902ecfd9da0c5eb4a41643c806fdc3436fe9",
+      "new_path": "source/batch07_combat_characters_2026-10-16/previews/gunslinger_move_v03_contact_4x.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "d04d2ef7d6a0382208f09738a7e4db0f7e113448ab52775d6589afc78caccd57",
+      "new_path": "source/batch07_combat_characters_2026-10-16/previews/assassin_attack_v03_contact_4x.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "f68f6c4228eb3d181f3a9dbfd29049676720672aaf9b44292f719405ee54e735",
+      "new_path": "source/batch07_combat_characters_2026-10-16/previews/gunslinger_attack_v02_box_slow8fps.gif",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "258cfaf97fa92c540eac35f1a5834b960c9087dd31ed11ea0f5fac1513ea0f0e",
+      "new_path": "source/batch07_combat_characters_2026-10-16/previews/gunslinger_attack_v02_box_attack16fps_QA_loop.gif",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "58b6580b4c1bcae020051a3449122d4a343a8c3a7eefba2510b11378370ac788",
+      "new_path": "source/batch07_combat_characters_2026-10-16/previews/mage_attack_v02_contact_4x.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "15a0198df9a989e186de6ebeff82fdecb172062ba5ac63c39948b6ed5d0cbb59",
+      "new_path": "source/batch07_combat_characters_2026-10-16/previews/swordsman_attack_v03_attack16fps.gif",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "24ab3d5dc6eb59a7704f5b281650dadf27e883027c3e3e1c37c7d9ae8802428e",
+      "new_path": "source/batch07_combat_characters_2026-10-16/previews/swordsman_attack_v03_contact_4x.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "a2e7c0248ed0c7bbf81fa9ea107d78dcdb2e969ee68b1083013219b503209e6d",
+      "new_path": "source/batch07_combat_characters_2026-10-16/previews/gunslinger_death_v01_contact_4x.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "11a4728a1735b8689399511815d4a44431a1e5bdc2816134e4218620df4aa3bb",
+      "new_path": "source/batch07_combat_characters_2026-10-16/previews/assassin_hurt_v02_action8fps_QA_loop.gif",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "fc590916c2c25f63ff90d2316d678f68434e90f21f3805b41bb5d9b7ba71dae7",
+      "new_path": "source/batch07_combat_characters_2026-10-16/previews/assassin_idle_v01_slow8fps.gif",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "795bcbc04046da3465afa10377f5c5d4b97a8fed5ab5a5de835ba4e0851170d0",
+      "new_path": "source/batch07_combat_characters_2026-10-16/previews/gunslinger_attack_v03_attack16fps_QA_loop.gif",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "06d65f6813e9b31bfe0684776d67f2a5bbf3e481d9a9123bd5e94f47d058f4c6",
+      "new_path": "source/batch07_combat_characters_2026-10-16/previews/assassin_attack_v05_slow8fps.gif",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "718de3f41bbbd1a65ba57fae5a473a4fb0c453f9a89f6325f940c777529b33a1",
+      "new_path": "source/batch07_combat_characters_2026-10-16/previews/mage_attack_v04_attack16fps.gif",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "68344503abb5c29af9876105671ab7ac2c6d96b4bd6b1fe03f9b9a48edc9f276",
+      "new_path": "source/batch07_combat_characters_2026-10-16/previews/assassin_attack_v02_slow8fps.gif",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "38241a232ec256a930f750f96c4e3a0b2fe61d92904f6f6e742366445c2abc97",
+      "new_path": "source/batch07_combat_characters_2026-10-16/previews/assassin_hurt_v01_slow8fps.gif",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "8962f0c5845f2a05bfcbdeb7aeafa610b5d279309dc0f5e7546e2bed3ab0e7fb",
+      "new_path": "source/batch07_combat_characters_2026-10-16/previews/assassin_death_v01_action8fps.gif",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "4ea7b98fb917eff512cabf057d53c0f220dcf8bd7be9a3399d382f36f7ed98cc",
+      "new_path": "source/batch07_combat_characters_2026-10-16/previews/mage_idle_v01_action8fps.gif",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "ec0e44ad34ff7102ce67c96b5ded3e844d192fb1904cd106590072547e10675e",
+      "new_path": "source/batch07_combat_characters_2026-10-16/previews/gunslinger_v02_contact_4x.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "5b1a32d42d9f888726f6a5b34e2465f0d35489b2fd72c5df3c76863b6ddd858b",
+      "new_path": "source/batch07_combat_characters_2026-10-16/previews/mage_move_v02_action8fps_QA_loop.gif",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "49663b40bb6f16ba3bbb37f22e5e4ec40bbb54c21d7de2cd7a63fb54ab12cea2",
+      "new_path": "source/batch07_combat_characters_2026-10-16/previews/gunslinger_hurt_v01_action8fps_QA_loop.gif",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "8e7c4dcd54d6eb32e9e62d6a45e5086ea49b6ae9dd8127a1d88754ca6b444344",
+      "new_path": "source/batch07_combat_characters_2026-10-16/previews/gunslinger_attack_v01_contact_1x.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "7c59b62d75c13a2090cb3c5e794ba358d7c29ea39b9f7f78afcab7dfbe6d07c3",
+      "new_path": "source/batch07_combat_characters_2026-10-16/previews/assassin_attack_v02_contact_4x.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "b0176a437c03d4d43cde0b658e5e49e5c4f0df97963898788db9d67acdede0b3",
+      "new_path": "source/batch07_combat_characters_2026-10-16/previews/gunslinger_move_v02_contact_4x.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "618974aa3f3b011cb0d68d25d20a3576f57bbcc2b33a5c0da823284933564eaf",
+      "new_path": "source/batch07_combat_characters_2026-10-16/previews/mage_hurt_v01_slow8fps.gif",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "462d740ed22b383bb33cbd142dd0b663a64d332ba9bc941d04e57d29e51f32bf",
+      "new_path": "source/batch07_combat_characters_2026-10-16/previews/assassin_hurt_v01_action8fps_QA_loop.gif",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "048832242b84d4298534bd866e956cf4c074dd89a43ea0d9776ba95818a9d12a",
+      "new_path": "source/batch07_combat_characters_2026-10-16/previews/mage_hurt_v02_contact_4x.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "8afb3bcb695541ebccec1b10581ef132eb3b8345495a945ad83e9bb509dfece3",
+      "new_path": "source/batch07_combat_characters_2026-10-16/previews/mage_idle_v01_slow8fps.gif",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "8ba46345a3dc99a717f5f2da7efdc7916d81b8e40e3c7ebf08120c68a59e5f02",
+      "new_path": "source/batch07_combat_characters_2026-10-16/previews/mage_attack_v04_attack16fps_QA_loop.gif",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "fda07b9ce566a20887c259b5b0dbc580590359820f80d6a654bed6de75d6c121",
+      "new_path": "source/batch07_combat_characters_2026-10-16/previews/gunslinger_hurt_v02_action8fps.gif",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "278e6250552333cc27a3220b4d71aba2e2cd3ddd1d88d5dfe8af82b02239b177",
+      "new_path": "source/batch07_combat_characters_2026-10-16/previews/mage_move_v02_action8fps.gif",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "610d41439dcb3d3638aeeeac847c2befd9cf0b3b98a50615456a2b7a62e8d041",
+      "new_path": "source/batch07_combat_characters_2026-10-16/previews/assassin_attack_v03_slow8fps.gif",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "8247cf05a0abbfabf49c1d656fe8680f836e95b828492314c8348cf53f394a8d",
+      "new_path": "source/batch07_combat_characters_2026-10-16/previews/assassin_attack_v04_slow8fps.gif",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "ac7f0c570fb553a2b09b659fd35e191badf0dad35d7082cbe4b1ede7c8386ee9",
+      "new_path": "source/batch07_combat_characters_2026-10-16/previews/gunslinger_hurt_v01_contact_1x.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "f6766bd1d53d63eb5bfcba64361ab516f054808a7bd17764b751e989fd0037b9",
+      "new_path": "source/batch07_combat_characters_2026-10-16/previews/assassin_attack_v05_contact_4x.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "0687eef7f67665f897dd4f43dcd3e6f4c94b3e0bf66e476115f253b36eb56c50",
+      "new_path": "source/batch07_combat_characters_2026-10-16/previews/assassin_attack_v04_attack16fps_QA_loop.gif",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "65c8fabcfd540ac47454cc1bee7a47b068b0e4927c527429f8eb61ed7c1a9733",
+      "new_path": "source/batch07_combat_characters_2026-10-16/previews/gunslinger_idle_v01_contact_4x.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "09148f8f170cc2da71212292aa055cbfc2d58d0ce0dc476d651b2f9f247530ca",
+      "new_path": "source/batch07_combat_characters_2026-10-16/previews/mage_attack_v04_contact_4x.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "acdd5e14f9f8edf338cf0ce9e0d5b05baac176dece16196a74c302f68ce0e5a6",
+      "new_path": "source/batch07_combat_characters_2026-10-16/previews/assassin_cutin_v01_contact_4x.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "89c5b4ef5ebc3ee0ccf043345880565b787d513329c60f26462ead4cdcd8b3fd",
+      "new_path": "source/batch07_combat_characters_2026-10-16/previews/assassin_v02_contact_1x.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "958225ecb3a796398ce30212d247390912b2018f12d8a4bb0a7cfd35c71fa761",
+      "new_path": "source/batch07_combat_characters_2026-10-16/previews/mage_move_v01_contact_1x.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "1ef7310a715e68bcb294f271211ba4b75aa9ef877d93fbfe908ae2f3ec616c49",
+      "new_path": "source/batch07_combat_characters_2026-10-16/previews/gunslinger_static_v02_8x.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "f16c4fb4bf044496edfdfbc871fe7fec1e74b872a3ad22b8214b93dbd6db6355",
+      "new_path": "source/batch07_combat_characters_2026-10-16/previews/gunslinger_attack_v04_contact_1x.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "333b7a2999e382c4e1bedceb4ceee181242918fabf8c3fea7101556ab31a7525",
+      "new_path": "source/batch07_combat_characters_2026-10-16/previews/gunslinger_cutin_v01_contact_1x.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "196fd9166c713d414018b2096ae9f20fe263b54e11845571a306a209ac9fb859",
+      "new_path": "source/batch07_combat_characters_2026-10-16/previews/gunslinger_attack_v04_attack16fps_QA_loop.gif",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "5df74ea9a7c9a4dfab553c557b4d713aa7ab182b5f9b87c25ff88ca1d8e6d675",
+      "new_path": "source/batch07_combat_characters_2026-10-16/previews/mage_attack_v02_attack16fps.gif",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "84380ce4ccc294305e328a3a23010d5b112a8f820300c528e1d4bd4794a7e26f",
+      "new_path": "source/batch07_combat_characters_2026-10-16/previews/assassin_attack_v01_attack16fps.gif",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "6d7d7a7a0cc84a9f1686d2a623c0211ea3f811716f86a51c31f07ddbce37d3d9",
+      "new_path": "source/batch07_combat_characters_2026-10-16/previews/assassin_hurt_v01_action8fps.gif",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "d8ad80d2c6441c1f75f895752d612d793fefe2a2ac57d072f4589b994a67dde1",
+      "new_path": "source/batch07_combat_characters_2026-10-16/previews/assassin_idle_v02_contact_4x.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "096caeb1fcc68c2b75e9a51c6973c5bdbde2e375bd0d50c60bc93755f72559dd",
+      "new_path": "source/batch07_combat_characters_2026-10-16/previews/mage_move_v01_slow8fps.gif",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "42714c1f6f551056777e95ae189390cf9daf9f0fc6e46873c7fb5d65985b506b",
+      "new_path": "source/batch07_combat_characters_2026-10-16/previews/gunslinger_death_v01_slow8fps.gif",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "382c41528b9901f2864c1e56d51ae7ff0f26b4e5c73ee4e2966fd5181f1170db",
+      "new_path": "source/batch07_combat_characters_2026-10-16/previews/assassin_hurt_v02_contact_1x.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "c5b0d4f402d8d144f9007c18c3b239d82993be77e6e14e289e62360f644068d6",
+      "new_path": "source/batch07_combat_characters_2026-10-16/previews/gunslinger_attack_v03_contact_1x.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "5eef3c5f1281d8e51205fee90da16ee89baf1f4a07b090117eb3440ad368cb8a",
+      "new_path": "source/batch07_combat_characters_2026-10-16/previews/swordsman_attack_wide_v01_contact.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "c307e320da40bca7663c849029da71b1211884d1138ce19a57b6eea6fe17e10b",
+      "new_path": "source/batch07_combat_characters_2026-10-16/previews/mage_attack_v01_contact_4x.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "fae0c15c7f3c8664a97d53b4d6dcdefe6ca4eb35f503c4dfef86736ee78f674e",
+      "new_path": "source/batch07_combat_characters_2026-10-16/previews/mage_death_v01_contact_4x.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "0625f78d7d084cb48031b453ed1cd0fddd01065d619e6d3fbc0b4aece40d5f4d",
+      "new_path": "source/batch07_combat_characters_2026-10-16/previews/mage_death_v01_action8fps_QA_loop.gif",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "d2a8264175127c15e8fcdfacaf1456bd4b995d69268ee172c7f6dd3eb9ec7d9e",
+      "new_path": "source/batch07_combat_characters_2026-10-16/previews/gunslinger_attack_v03_attack16fps.gif",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "9d4baef56b8f0b54bd31ca520177f45b168e5df3d1e57acff1660e1eb9e5e119",
+      "new_path": "source/batch07_combat_characters_2026-10-16/previews/assassin_move_v01_contact_4x.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "25fcd7a09e195d58e985cb9d5d9da7f279f2251f36a07220d300387bef8be70a",
+      "new_path": "source/batch07_combat_characters_2026-10-16/previews/mage_v01_contact_4x.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "1661ba25721093d0a5592453aea39c35c5c59ba27e2d994c1224daed9cbea029",
+      "new_path": "source/batch07_combat_characters_2026-10-16/previews/assassin_attack_v03_attack16fps_QA_loop.gif",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "cc72a1b35005cb357aaa06ed661234d4ac6bffd4b3b8a305087a1bc9ad9ee3d7",
+      "new_path": "source/batch07_combat_characters_2026-10-16/previews/gunslinger_hurt_v01_slow8fps.gif",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "65b1b8468a0ecc9e2b04b200c0091a2a92d485cd9577dc9541ec7275c04a8ae2",
+      "new_path": "source/batch07_combat_characters_2026-10-16/previews/mage_hurt_v01_contact_4x.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "35b43f60d9c9d12a365c17e6db2a07fd89ecdaa03e28e006ceac3fe6d3311154",
+      "new_path": "source/batch07_combat_characters_2026-10-16/previews/assassin_attack_v01_contact_4x.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "84cefdb2873d71fbb4d51be7734b7fd2eedb5103d2a26fd49e15babd4ef6c9a9",
+      "new_path": "source/batch07_combat_characters_2026-10-16/previews/gunslinger_attack_v04_attack16fps.gif",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "dac2446b49bb27e95050c1a5c0904a863411e2b2c7e7b99d867319b4cb7c95bb",
+      "new_path": "source/batch07_combat_characters_2026-10-16/previews/mage_death_v01_slow8fps.gif",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "48c636c292f16c6518124dbd5b41165bdcfd255dbd27b8a24bbe2899f31258c7",
+      "new_path": "source/batch07_combat_characters_2026-10-16/previews/gunslinger_move_v01_contact_4x.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "1a8228ce710a9d508ac5b5785c8c344441e2d9001c6e0cf6243778a4296184ec",
+      "new_path": "source/batch07_combat_characters_2026-10-16/previews/mage_idle_v01_contact_1x.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "4fc5b68d8d90f971ac5abac9d10526e8ea2a75665d2b47b6e7b991323a7fb55b",
+      "new_path": "source/batch07_combat_characters_2026-10-16/previews/gunslinger_idle_v01_slow8fps.gif",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "4eb9b4a9d8039c75a223ddb32c4b705b4d32362f68e78d4a32ea6020c6c9f7df",
+      "new_path": "source/batch07_combat_characters_2026-10-16/previews/assassin_death_v01_contact_1x.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "f030a12def3c640e98d7bc1eefcf9778137954ef1392cb15f24760ec6f40b74a",
+      "new_path": "source/batch07_combat_characters_2026-10-16/previews/gunslinger_v01_contact_4x.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "a1fd516c4a42edbfaca358c6daea3decda53a605f7d9a897185d3f5c2e010592",
+      "new_path": "source/batch07_combat_characters_2026-10-16/previews/mage_move_v02_contact_1x.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "e9a6df93e37d2d5102b6ac261005b50f1f39d0b5e11ada41f87f22f219a519c9",
+      "new_path": "source/batch07_combat_characters_2026-10-16/previews/assassin_v01_contact_1x.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "29b15dd3bea4980869951d16159cac04029f4e5610fa91d9c47f020784ef2956",
+      "new_path": "source/batch07_combat_characters_2026-10-16/previews/gunslinger_hurt_v02_contact_1x.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "ef53efe2a368a9574342ecf5c7c2100e00ce40dd100f73de90139038ebd73de5",
+      "new_path": "source/batch07_combat_characters_2026-10-16/previews/gunslinger_death_v01_action8fps_QA_loop.gif",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "210384fc565d891c5d0707715e29855bd782e1a3cf28cc537c48a5d68d07617d",
+      "new_path": "source/batch07_combat_characters_2026-10-16/previews/mage_move_v01_action8fps.gif",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "6cfbaac163922830338c32880d78afd4abfffa126f66f31706206197be37832d",
+      "new_path": "source/batch07_combat_characters_2026-10-16/previews/assassin_move_v01_slow8fps.gif",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "609f71e0bf93d1b6220b299ad3afd3f88562830b8cba53d9b3b1cebc2f954af6",
+      "new_path": "source/batch07_combat_characters_2026-10-16/previews/gunslinger_hurt_v01_action8fps.gif",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "9cab5b11691a79e21eda4b538ba413f1dc1ccb7adbfd8d9939c5150bd8a7d680",
+      "new_path": "source/batch07_combat_characters_2026-10-16/previews/gunslinger_move_v01_action8fps.gif",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "625ae8f9804235f386fd42adecfb0558a57b3fef9bcba6ee501d856df553404b",
+      "new_path": "source/batch07_combat_characters_2026-10-16/previews/gunslinger_v02_contact_1x.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "1b46ecef5a0b44f3dcdb9bd93465ee8df031ce8a5218e62a9d673fc61a3c2ee2",
+      "new_path": "source/batch07_combat_characters_2026-10-16/previews/mage_hurt_v01_action8fps.gif",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "67fb25093fa50418d632e081fe9bff6c07d4f1419a7635c032cf8c7329202fe3",
+      "new_path": "source/batch07_combat_characters_2026-10-16/previews/assassin_attack_v05_attack16fps_QA_loop.gif",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "495576be30fd199f472a503b219f0b3d6e12070c08f9c7a7ff8a6af3f0b66bc0",
+      "new_path": "source/batch07_combat_characters_2026-10-16/previews/gunslinger_attack_v01_contact_4x.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "a0bb4f87df3aa8d4794f5431fb594d75d341c44398921604ab2248d6ab5e8ba1",
+      "new_path": "source/batch07_combat_characters_2026-10-16/previews/mage_move_v02_slow8fps.gif",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "3b34271b6d41b6ac28962885b96548cafbe9329aab2634c147280aca81d97856",
+      "new_path": "source/batch07_combat_characters_2026-10-16/previews/assassin_attack_v02_contact_1x.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "12c920af1d62654a087e271c8e3c58861b2cde265aad0cf9f0ab4f1175610307",
+      "new_path": "source/batch07_combat_characters_2026-10-16/previews/gunslinger_move_v02_contact_1x.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "ad7991190393355982adbf24e1bac2d5860b919f36d7a2e8067ab63dd91c7fd1",
+      "new_path": "source/batch07_combat_characters_2026-10-16/previews/assassin_attack_v03_attack16fps.gif",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "aff850694eafa7e54d3e4bbec6a91da6aeb4115970585fef1230b79d28020fb3",
+      "new_path": "source/batch07_combat_characters_2026-10-16/previews/mage_hurt_v02_contact_1x.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "b121d2942d0b8f097b6931301a33c5b6aebae541fb795831103271d22285aeae",
+      "new_path": "source/batch07_combat_characters_2026-10-16/previews/gunslinger_attack_v01_attack16fps.gif",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "47dbb3f70c63d4bce7a94efb3b2f1cb014658985c96a2933d7689162fd199682",
+      "new_path": "source/batch07_combat_characters_2026-10-16/previews/gunslinger_hurt_v01_contact_4x.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "a558b41d7382ce4b5f06e96e87dfccee9d51ee0fdacce48f96368a835792d813",
+      "new_path": "source/batch07_combat_characters_2026-10-16/previews/gunslinger_move_v03_action8fps_QA_loop.gif",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "3ac271b763dcfcfe743066ccef3a8a5d65615e7bc296e38ca6a7fb718db12629",
+      "new_path": "source/batch07_combat_characters_2026-10-16/previews/assassin_attack_v05_contact_1x.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "2a32b2662cc93f192d5da45eab9851bf07acb8e0c5497fbf871818399b745ffb",
+      "new_path": "source/batch07_combat_characters_2026-10-16/previews/gunslinger_idle_v01_contact_1x.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "c6c9435e706e7c452579dba5124589504871f014966ec9ce195c38c4345ec729",
+      "new_path": "source/batch07_combat_characters_2026-10-16/previews/mage_attack_v04_contact_1x.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "f7ea9d432eb39f3974bafd7f3c1ab76d0a3a57d0267b875d73007d147c096ec2",
+      "new_path": "source/batch07_combat_characters_2026-10-16/previews/assassin_v02_contact_4x.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "54f3e3c966494cebb2469e697a20c08141b64747a50239e6ca1ec76746df75bd",
+      "new_path": "source/batch07_combat_characters_2026-10-16/previews/assassin_cutin_v01_contact_1x.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "90d95e9d140eae18d3c38e3b74772f1b2c8b25e1cba62e7a007e2e3f1c24007b",
+      "new_path": "source/batch07_combat_characters_2026-10-16/previews/mage_move_v01_contact_4x.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "594464d0c74ea596853ef02daeeddf676b052adf2773aef6ff74d729c17e6b08",
+      "new_path": "source/batch07_combat_characters_2026-10-16/previews/assassin_attack_v04_contact_1x.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "ae4f73cca389df450a225365b15e37608944269335f6aff96ed92b04566cc7ac",
+      "new_path": "source/batch07_combat_characters_2026-10-16/previews/assassin_hurt_v01_contact_4x.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "08acea90a44f296392797a2f7875558b5a3c9f414e83bb921ed9f22823958a96",
+      "new_path": "source/batch07_combat_characters_2026-10-16/previews/mage_cutin_v01_contact_4x.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "4195c5d4bebf378190118a6e0bf5bbc0c38b1f80cc464ad3d477c852ca5fe180",
+      "new_path": "source/batch07_combat_characters_2026-10-16/previews/assassin_idle_v01_contact_1x.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "ce967a5b311598064eb83648c934d18e3aebc26b4a8d9be169c8a32b79a9169b",
+      "new_path": "source/batch07_combat_characters_2026-10-16/previews/gunslinger_attack_v02_box_contact_1x.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "c7af5ec1a56c1d661523909827efba48135eb49d90cc22cafef47357dbccb1da",
+      "new_path": "source/batch07_combat_characters_2026-10-16/previews/assassin_attack_v01_attack16fps_QA_loop.gif",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "ec0ccb249b63c4465e8c2f74fb78c147f4122355bef02d4f03e9d4892432808c",
+      "new_path": "source/batch07_combat_characters_2026-10-16/previews/assassin_idle_v02_action8fps.gif",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "47e2dc04192943bce9a0ca334857d702e0aa823af233a5a99477999ff39344af",
+      "new_path": "source/batch07_combat_characters_2026-10-16/previews/gunslinger_hurt_v02_slow8fps.gif",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "b1e3062a987f0a0df6fe59ff31cd0947ca40178a21a51a0d6cc0fb64d03b788b",
+      "new_path": "source/batch07_combat_characters_2026-10-16/previews/assassin_attack_v04_attack16fps.gif",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "08af2d3396bf6d48664f3c3d5550ab5d0bf827527ea534a4d628b26fe87faf37",
+      "new_path": "source/batch07_combat_characters_2026-10-16/previews/assassin_move_v02_contact_1x.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "22394ed37d7746c4b616e80b8416a408f5a16d0b26a358db6e9d09f979b8918a",
+      "new_path": "source/batch07_combat_characters_2026-10-16/previews/gunslinger_move_v03_contact_1x.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "1bba19c18859ce83509831293ac4b4a8464613d833c8870e27fb8dfbdde2ca2b",
+      "new_path": "source/batch07_combat_characters_2026-10-16/previews/assassin_move_v02_slow8fps.gif",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "ebf98607bdb46a7b57e538f295b4a544974022737fc2f435a85a7becc35d8350",
+      "new_path": "source/batch07_combat_characters_2026-10-16/previews/assassin_attack_v03_contact_1x.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "8affe830be44746548ef9fb5283b76bbd271ae240039939e4579038fc3eb43b7",
+      "new_path": "source/batch07_combat_characters_2026-10-16/previews/assassin_static_v02_8x.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "436a6290a86bb17872e74dd4c61d9dae8d40dab7e76a469fb82a66c0d79d3140",
+      "new_path": "source/batch07_combat_characters_2026-10-16/previews/mage_attack_v02_contact_1x.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "e13bf39cfe52b71348746b9cc2eefb7437f94275663a12870014ef555366d902",
+      "new_path": "source/batch07_combat_characters_2026-10-16/previews/swordsman_attack_v03_attack16fps_QA_loop.gif",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "cab4942e035b5ee32d47b0811fcd0c880eb5287bc8cb5f31c29633b252ec31dd",
+      "new_path": "source/batch07_combat_characters_2026-10-16/previews/gunslinger_attack_v02_box_attack16fps.gif",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "e0ee2f4835c84569ed88012098bf015f7a9808a105802f17819e0fdd2293013c",
+      "new_path": "source/batch07_combat_characters_2026-10-16/previews/swordsman_attack_v03_contact_1x.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "766a9f625ac2cceb08f25d9aa1ea344123a928ff2c817ad8b857df81e2bbb1ee",
+      "new_path": "source/batch07_combat_characters_2026-10-16/previews/mage_attack_v01_attack16fps_QA_loop.gif",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "2f5bfc203d4350edf5214c28c215b78bfa237128282a98035c5eb5042aec1077",
+      "new_path": "source/batch07_combat_characters_2026-10-16/previews/gunslinger_death_v01_contact_1x.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "47c4f0aeab095db1967e8836f2187e67beb46dda5c98b35592b162fbc81baf50",
+      "new_path": "source/batch07_combat_characters_2026-10-16/previews/assassin_move_v01_action8fps.gif",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "d6496e7748c9f420970eef91f261d3f2b3c1b2d2066fab3ee242a5d665013ddb",
+      "new_path": "source/batch07_combat_characters_2026-10-16/previews/mage_death_v01_action8fps.gif",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "5a97c34ab8d7d8f0340c8ccc87d5e002ce72e52b6f91db020c8f6eb12876f691",
+      "new_path": "source/batch07_combat_characters_2026-10-16/previews/assassin_idle_v01_action8fps_QA_loop.gif",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "72bab048b90fa53dfe078cdd2142963c4a5d7281fd72565891966c6a13646830",
+      "new_path": "source/batch07_combat_characters_2026-10-16/previews/mage_hurt_v01_contact_1x.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "49082a549ef7f0c7b4bba28f14964557951e6ebc0e911acc95d69e22a8895afd",
+      "new_path": "source/batch07_combat_characters_2026-10-16/previews/assassin_attack_v01_contact_1x.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "2ed6720259bef0f73b068cd49a1de45f6f1dd83fe74ace483a3917905dff75ea",
+      "new_path": "source/batch07_combat_characters_2026-10-16/previews/gunslinger_move_v01_contact_1x.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "58af0baca6b166cd358e8ab2ff0e8d06d3bb040f8763d398658c0214f1095c2c",
+      "new_path": "source/batch07_combat_characters_2026-10-16/previews/mage_idle_v01_contact_4x.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "6b101b620054b2e0d18e376f007114b6d0437892088292671abca55215caf97e",
+      "new_path": "source/batch07_combat_characters_2026-10-16/previews/assassin_death_v01_contact_4x.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "1c40e0fa494069ceeeded03e3bdcb721630b62e22a633b29d93973fd13cdaa2d",
+      "new_path": "source/batch07_combat_characters_2026-10-16/previews/mage_hurt_v02_action8fps.gif",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "0350e133988f98158a5bbbc692a53a8c7e222529a5d96f9c91564d978b48c509",
+      "new_path": "source/batch07_combat_characters_2026-10-16/previews/mage_attack_v02_attack16fps_QA_loop.gif",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "62d952c5227a7b5374e0ae423d03d41aaf62edf27a78ccb66fbb604e06857902",
+      "new_path": "source/batch07_combat_characters_2026-10-16/previews/gunslinger_idle_v01_action8fps_QA_loop.gif",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "a02cdfbb04e2d41fdc600f817fe7f50d516b01824b5cff45311b2e95ac29aad6",
+      "new_path": "source/batch07_combat_characters_2026-10-16/previews/gunslinger_move_v02_action8fps.gif",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "a3fd963a4ec06401194b70ee27f9776acf74a847206015bb0cb7b729ea21f76b",
+      "new_path": "source/batch07_combat_characters_2026-10-16/previews/gunslinger_move_v02_slow8fps.gif",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "89a9828bb085d13260e17dd0f1ab2803a2625a9a7a8f7099584510855f3fc8c7",
+      "new_path": "source/batch07_combat_characters_2026-10-16/previews/gunslinger_v01_contact_1x.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "45121bbd9a387456625794ce0b50eea3481ebfaa343ffd4a8a35303f6487201b",
+      "new_path": "source/batch07_combat_characters_2026-10-16/previews/mage_hurt_v02_action8fps_QA_loop.gif",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "918a908af5c01ebf83fd7f337cb46ed14ecbd76a48987f2b71372b4c68abc430",
+      "new_path": "source/batch07_combat_characters_2026-10-16/previews/gunslinger_move_v01_action8fps_QA_loop.gif",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "1e249cf0e007672edec045da2f0498d8f4bdded8111df03db1910d267583ad82",
+      "new_path": "source/batch07_combat_characters_2026-10-16/previews/assassin_attack_v01_slow8fps.gif",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "a697c3ca40392c0ba9c36a66b58c779dc4c9bed80a667857ca88480cdff10b50",
+      "new_path": "source/batch07_combat_characters_2026-10-16/previews/assassin_hurt_v02_slow8fps.gif",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "e48cbee297a95b754b7970664688d24014beb0c898c1dfa670faf2c938f03b15",
+      "new_path": "source/batch07_combat_characters_2026-10-16/previews/mage_move_v02_contact_4x.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "e21b201f5c2043b0b0a4c28d7347432f824323755e451d15383166f106e07cf0",
+      "new_path": "source/batch07_combat_characters_2026-10-16/previews/assassin_v01_contact_4x.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "a976e799bfae162aa77215e7f9019004e1a53a3e0b903f9cef16d9718bd6730a",
+      "new_path": "source/batch07_combat_characters_2026-10-16/previews/assassin_attack_v05_attack16fps.gif",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "e16d3723f6a21878a25fdf4b406f663eb42e444c249a937ba00a29f094c7ee29",
+      "new_path": "source/batch07_combat_characters_2026-10-16/previews/gunslinger_hurt_v02_contact_4x.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "62cbdce88b2a75f852238eebbea9fa944105df5d6ee23971cef4bb8d88ddef97",
+      "new_path": "source/batch07_combat_characters_2026-10-16/previews/gunslinger_attack_v01_attack16fps_QA_loop.gif",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "37a5221b047c72d2ee664c4bc682fbf0952211d6a25d17df850f420fa75a5ef4",
+      "new_path": "source/batch07_combat_characters_2026-10-16/previews/assassin_idle_v02_slow8fps.gif",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "89d6f44dc84958273aee5a6e21aeb4ffce3af236dd8815fbb412aac0164da533",
+      "new_path": "source/batch07_combat_characters_2026-10-16/previews/assassin_move_v01_action8fps_QA_loop.gif",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "853fcd9f23e2095e7bd8f83a3f9f9bd4f499eef10ff2389be1f0b6c831c4ece3",
+      "new_path": "source/batch07_combat_characters_2026-10-16/previews/gunslinger_idle_v01_action8fps.gif",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "35fd3a8f6d19c59dd84582410e9ec00742e8665c42b0245f1f780f8466567fe2",
+      "new_path": "source/batch07_combat_characters_2026-10-16/previews/assassin_attack_v02_attack16fps_QA_loop.gif",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "fe5461da057e87b8ed2999affc00054e64980fa845b74f82df75a16f6bc48aee",
+      "new_path": "source/batch07_combat_characters_2026-10-16/previews/mage_attack_v02_slow8fps.gif",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "2f8e3b1535325e0052719f5d9840c4c627c656bb41352c086df517aa027db94f",
+      "new_path": "source/batch07_combat_characters_2026-10-16/previews/swordsman_attack_v03_slow8fps.gif",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "fb50933a90e39388943b9522db7149a4ef1bb88ffaf7714f7bed045fbd26d95e",
+      "new_path": "source/batch07_combat_characters_2026-10-16/previews/gunslinger_cutin_v01_contact_4x.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "88c8c30721293b73e6efdae953c0248a358a19d8db90e67f97ff9b5bcde819ed",
+      "new_path": "source/batch07_combat_characters_2026-10-16/previews/gunslinger_attack_v04_contact_4x.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "b3ef1e773754aaeb4d5827515afdefc9f84415eefed13773746f8dc414ce0d55",
+      "new_path": "source/batch07_combat_characters_2026-10-16/previews/assassin_idle_v01_action8fps.gif",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "178ae8287a4c9ddb0a0e79453e2534dece9c011b4e99d0439d1155057f7a8b51",
+      "new_path": "source/batch07_combat_characters_2026-10-16/previews/gunslinger_move_v03_slow8fps.gif",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "e4d1fe5212a8f4ad0bf0904685509f886c290f5fc03c5017dab5ab830e97fbf9",
+      "new_path": "source/batch07_combat_characters_2026-10-16/previews/mage_hurt_v01_action8fps_QA_loop.gif",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "73db1204c800c82f8efd7df9598d98c11f512be67328a597150931b1ca18db09",
+      "new_path": "source/batch07_combat_characters_2026-10-16/previews/gunslinger_move_v02_action8fps_QA_loop.gif",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "400b4933592626d25ea96df25ab8a625c58956fa0de9b11fa1a7194f27e9eeca",
+      "new_path": "source/batch07_combat_characters_2026-10-16/previews/assassin_death_v01_slow8fps.gif",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "218435a70ea9de775d8e0150b82aeb73da69f488d405d5de38f38693b11241c5",
+      "new_path": "source/batch07_combat_characters_2026-10-16/previews/mage_hurt_v02_slow8fps.gif",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "5339784ca6f8b2d2364acc80c484eaaf7072a1083c1e9046434ef4477854559b",
+      "new_path": "source/batch07_combat_characters_2026-10-16/previews/assassin_idle_v02_contact_1x.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "543d3e3f4cad9c41e17f133ee2434e709c0fd263a98a3bd442c6d1ce3ea5b092",
+      "new_path": "source/batch07_combat_characters_2026-10-16/previews/mage_attack_v01_attack16fps.gif",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "b6240d3bcacc62d2441253fdaeab26268a9493515bd45cc388ee24eb626d8cdb",
+      "new_path": "source/batch07_combat_characters_2026-10-16/previews/gunslinger_attack_v01_slow8fps.gif",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "9b33b095f57d20fa32db3e488eb6504ef747cf553491c442256a52fc4be4f324",
+      "new_path": "source/batch07_combat_characters_2026-10-16/previews/assassin_attack_v02_attack16fps.gif",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "d70c44bdda5a76e8bd224a2da4b558462dc839860a85edbf53c6536a628a927a",
+      "new_path": "source/batch07_combat_characters_2026-10-16/previews/assassin_hurt_v02_contact_4x.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "5f0fac9a67db4d1cba0057d401b46d1ad2dbb65a947393c7e7fe7be8a313301f",
+      "new_path": "source/batch07_combat_characters_2026-10-16/previews/assassin_move_v02_action8fps_QA_loop.gif",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "27fa6ac18008e19830878d1f57ac8642598be345fa51242462a5000c1d256c36",
+      "new_path": "source/batch07_combat_characters_2026-10-16/previews/gunslinger_attack_v03_contact_4x.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "d9d6a16c27eaaf11d9429e90d864b506b862342e115f19ee7b83f1ee550044a8",
+      "new_path": "source/batch07_combat_characters_2026-10-16/previews/swordsman_attack_f03_actual_v02.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "362b7133c84ec1b3cfb5cf6dbc7fe3013736678a354c007a2b791bcd51a5f3d7",
+      "new_path": "source/batch07_combat_characters_2026-10-16/previews/mage_attack_v04_slow8fps.gif",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "15d4efc57b1eb29e482dd6d33bae665e45289a690798809ff4ce35ab26198bba",
+      "new_path": "source/batch07_combat_characters_2026-10-16/previews/assassin_idle_v02_action8fps_QA_loop.gif",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "23f8d2e2f8fa5c8c3225375fc91bcd1e414465adbeb5c0797c4ad2f77ba2405d",
+      "new_path": "source/batch07_combat_characters_2026-10-16/previews/gunslinger_move_v03_action8fps.gif",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "c8105243409fff2d0659e1ee6be907ec1d800ccdb4dde6c976146622058a3448",
+      "new_path": "source/batch07_combat_characters_2026-10-16/previews/assassin_move_v02_action8fps.gif",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "e62a87bd0525708713517330135849acbc97cbbb36296faaf722b0b0f191a966",
+      "new_path": "source/batch07_combat_characters_2026-10-16/previews/mage_death_v01_contact_1x.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "965f849437ccacd0b7200da7cc14f6bab47eededb4867284bb110e720f9ff095",
+      "new_path": "source/batch07_combat_characters_2026-10-16/previews/mage_attack_v01_contact_1x.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "d055fa0ea85f7a02dd07bd059434604f99153cc089bfc1dfde5e612bc9925371",
+      "new_path": "source/batch07_combat_characters_2026-10-16/previews/assassin_move_v01_contact_1x.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "4eb317b235bf854c68148507a77a58c48b407203c3582a0c0ab59a606e9c94f4",
+      "new_path": "source/batch07_combat_characters_2026-10-16/previews/gunslinger_death_v01_action8fps.gif",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "45fc005e8225e57f811061a344dc0e0bc8305df04c00be65b4bebef3ab8ac5db",
+      "new_path": "source/batch07_combat_characters_2026-10-16/previews/mage_v01_contact_1x.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "a18aac2215c23c694b4038abd508178b80b58bf2c76e79607931dd12fe4d76c7",
+      "new_path": "source/batch07_combat_characters_2026-10-16/backups/assassin_before_3a99fedd6f83.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "fd02f79fe923795aa69fd42db4914d1e2980b55894ba4ea033d511298e7d87f1",
+      "new_path": "source/batch07_combat_characters_2026-10-16/backups/assassin_reference_palette_v01.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "de9094c17ec5653c15f127648401ab10fb6c07efacb819e211fc2788808130a8",
+      "new_path": "source/batch07_combat_characters_2026-10-16/backups/gunslinger_before_9f798de6cd29.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "07393adb8848369a83d03914571149ad9c788026178ca2d46b8484adadf38f12",
+      "new_path": "source/batch07_combat_characters_2026-10-16/backups/gunslinger_reference_palette_v01.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "5708fe9519409805c1ba755893f262b25fce9b7ff9a74da01a6c7ebb543c6950",
+      "new_path": "source/batch04_maps_2026-10-16/references/context_swordsman.png",
+      "kind": "file"
+    },
+    {
+      "removed_path_sha256": "5ab05555d2caab3bbd0b35bb817211a59aa0ec8cf1828717870e2a4892d36b85",
+      "new_path": "source/batch01_swordsman_2026-10-16",
+      "kind": "directory"
+    }
+  ],
+  "original_art_bytes_changed": false,
+  "redaction_note": "Historical recorded prompts retain their original wording except proper-name redaction; old plaintext backups are intentionally not reintroduced.",
+  "audit": "audit.json"
+}

@@ -1,0 +1,22 @@
+{
+  "id": "ground_crack",
+  "label": "破土裂纹预警",
+  "folder": "effects",
+  "w": 96,
+  "h": 96,
+  "frames": 4,
+  "task": "taskD_helheim_bosses_2026-10-17",
+  "subject": "Overhead ground fissure WARNING decal, four phases where the same CENTRAL branching crack grows from a small narrow split to a larger jagged radial opening. Dark charcoal crack interior and restrained pale gray-green broken stone edge, a few tiny loose stone chips, transparent surroundings. Fixed center, visible irregular crack rays expanding. No full dirt tile, creature, smoke, magic circle or scenery.",
+  "loop": false,
+  "anchor": "center",
+  "status": "pending",
+  "unit": null,
+  "action": "static",
+  "version": "v01",
+  "refs": [
+    "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskD_helheim_bosses_2026-10-17/refs/style_helheim.png"
+  ],
+  "prompt": "Use case: stylized-concept. Asset type: production pixel-art northern underworld game sprite.\nInput1 is ONLY a project-owned style reference: use its pixel treatment, dark contours, upper-left illumination, readable clusters. Do not reproduce reference figures, scenes or labels.\nSubject: Overhead ground fissure WARNING decal, four phases where the same CENTRAL branching crack grows from a small narrow split to a larger jagged radial opening. Dark charcoal crack interior and restrained pale gray-green broken stone edge, a few tiny loose stone chips, transparent surroundings. Fixed center, visible irregular crack rays expanding. No full dirt tile, creature, smoke, magic circle or scenery.\nLayout: EXACTLY FOUR frames in a2by2 grid of equal 96x96 logical cells, reading order top-left, top-right, bottom-left, bottom-right. \nUse cold gray, charcoal, bone ivory, muted moss-green and dark purple, restrained phosphor turquoise accents; warm gold-white only for the young soul and russet only for squirrel. Same visual language as reference game sprites. True low-resolution pixelart at stated logical resolution, not tiny painted microdetails. Sharp square pixel clusters, no dithering, no smooth gradients, max32-48colors. Fixed camera, common exact scale and center across phases.\nGenuine transparent RGBA background, binary opaque artwork, at leastTWOlogicalpixels empty on every side of each cell. No anti-aliased transparent fringes, no checkerboard drawn in, no frame borders, names, letters, labels, signature, text, watermark, foreground ground shadows or background scene. Entire object visible, nothing cut off.",
+  "tool": "builtin image_gen",
+  "source": "/Users/zhangjunqiu/.codex/generated_images/01a14377-c537-7a10-b5df-10043f63fbe0/exec-d7d6fdf0-63fa-42d5-910b-2e9f45760bad.png"
+}

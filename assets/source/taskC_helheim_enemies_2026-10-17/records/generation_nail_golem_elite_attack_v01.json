@@ -1,0 +1,23 @@
+{
+  "tool": "OpenAI built-in image generation",
+  "source": "/Users/zhangjunqiu/.codex/generated_images/01a14377-c537-7a10-b5df-10043f63fbe0/exec-ed4dcd68-f7cc-4984-aea6-13f4e8481f59.png",
+  "id": "nail_golem_elite_attack",
+  "unit": "nail_golem_elite",
+  "label": "精英指甲傀儡 attack",
+  "action": "attack",
+  "folder": "enemies",
+  "w": 96,
+  "h": 96,
+  "frames": 4,
+  "task": "taskC_helheim_enemies_2026-10-17",
+  "loop": false,
+  "anchor": "bottom",
+  "body_h": 78,
+  "subject": "Same blocky fingernail-plate construct with bigger thicker overlapping gray-yellow keratin slabs and broad shoulders; restrained dark crimson visible only inside the gaps. Short legs and heavy arms, no aura or glowing particles. Same construction material and head, bigger than ordinary variant.",
+  "status": "pending",
+  "version": "v01",
+  "refs": [
+    "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskC_helheim_enemies_2026-10-17/candidates/nail_golem_elite_v01.png"
+  ],
+  "prompt": "Use case: identity-preserve. Animate EXACT reference character; preserve face, equipment, proportions and colors. Four poses:1 heavy ready stance;2 raise the near blocky keratin arm for a compact overhead backswing;3 slam that same arm down and forward RIGHT with slightly bent knees;4 settle back. Same fingernail-plate body, head, layer pattern and two legs. Keep arm compact enough to fit the same square frame without shrinking the torso. No shockwave, dust, debris or impact ring.\n\nLayout EXACTLY 4 frames in 2 columns by 2 rows equal cells, reading order. Each cell logically 96x96px. Body height 78 logical pixels, fixed foot baseline and scale, facing RIGHT. Both legs alternate opposing contact for walk. Only same RGB palette as input1. Low-resolution pixel clusters, upper-left light, dark outline, binary transparent background, 2px clear margin. No text, grid, scenery, watermark, shadow, magic, slash or particles. Frame1 neutral reference size; compact action instead of resizing body."
+}

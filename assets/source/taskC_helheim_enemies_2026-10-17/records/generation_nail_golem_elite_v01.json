@@ -1,0 +1,23 @@
+{
+  "id": "nail_golem_elite",
+  "unit": "nail_golem_elite",
+  "label": "精英指甲傀儡 static",
+  "action": "static",
+  "folder": "enemies",
+  "w": 96,
+  "h": 96,
+  "frames": 1,
+  "task": "taskC_helheim_enemies_2026-10-17",
+  "loop": false,
+  "anchor": "bottom",
+  "body_h": 78,
+  "subject": "Same blocky fingernail-plate construct with bigger thicker overlapping gray-yellow keratin slabs and broad shoulders; restrained dark crimson visible only inside the gaps. Short legs and heavy arms, no aura or glowing particles. Same construction material and head, bigger than ordinary variant.",
+  "status": "pending",
+  "version": "v01",
+  "refs": [
+    "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskC_helheim_enemies_2026-10-17/candidates/nail_golem_v01.png"
+  ],
+  "prompt": "Use case: identity-preserve. Create one ELITE version of the project fingernail construct in the reference. Preserve its head, four-limbed bipedal anatomy, blunt thick arms, overlapping flattened curved gray-yellow keratin HUMAN FINGERNAIL PLATES, short legs and right-facing three-quarter view. Make shoulder and torso plates slightly thicker and wider, and add muted DARK CRIMSON showing only in narrow gaps. No new skull, giant claws, horns, weapon, glowing aura or flames. Slightly bulkier than ordinary variant, body78pixels high on96x96logicalcanvas, two pixels clear all around. Same upper-left light, crisp dark outlined pixelart,48colors maximum. True transparent background, no ground shadow, labels or scene.",
+  "tool": "builtin image_gen",
+  "source": "/Users/zhangjunqiu/.codex/generated_images/01a14377-c537-7a10-b5df-10043f63fbe0/exec-bec7bf4b-a47d-46ad-a432-6d3457b21349.png"
+}

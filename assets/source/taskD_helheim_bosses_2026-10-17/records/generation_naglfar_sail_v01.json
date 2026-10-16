@@ -1,0 +1,22 @@
+{
+  "id": "naglfar_sail",
+  "label": "展帆巨船",
+  "folder": "props/helheim",
+  "w": 640,
+  "h": 320,
+  "frames": 1,
+  "task": "taskD_helheim_bosses_2026-10-17",
+  "subject": "The exact same reference fingernail-built longship, now its ONE dark gray rectangular square sail is FULLY UNFURLED below the same yardarm. Keep hull, prow, stern, nail rows, mast, camera, proportions and ground/water baseline pixel-consistent; only change sail rigging state. No figures, flags, lettering, water or scenery.",
+  "loop": false,
+  "anchor": "bottom",
+  "status": "pending",
+  "unit": null,
+  "action": "static",
+  "version": "v01",
+  "refs": [
+    "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskD_helheim_bosses_2026-10-17/candidates/naglfar_v01.png"
+  ],
+  "prompt": "Use case: identity-preserve. Input1 is the EXACT project prop to retain. The exact same reference fingernail-built longship, now its ONE dark gray rectangular square sail is FULLY UNFURLED below the same yardarm. Keep hull, prow, stern, nail rows, mast, camera, proportions and ground/water baseline pixel-consistent; only change sail rigging state. No figures, flags, lettering, water or scenery.\nOne single isolated game prop, logicalcanvas640x320. Preserve source pixel style, upper-left illumination, limited48colorpalette and original object's size in frame. DO NOT scale the broken remains up to fill canvas. The original hull and mast remain in EXACTLY the same frame positions; the unfurled sail must fit below existing yardarm inside the original canvas. True transparent RGBA background, binary opacity, at least2logicalpixels empty on all sides, crisp pixel clusters, no text, labels, scene or ground shadow.",
+  "tool": "builtin image_gen",
+  "source": "/Users/zhangjunqiu/.codex/generated_images/01a14377-c537-7a10-b5df-10043f63fbe0/exec-07b990f1-1229-482f-aa69-49f726888f3e.png"
+}

@@ -1,0 +1,176 @@
+[
+  {
+    "id": "hub",
+    "kind": "music",
+    "file": "candidates/music/hub.ogg",
+    "sources": [
+      "originals/music/dream_ambience.wav"
+    ],
+    "duration_s": 113.54267573696146,
+    "sample_rate": 44100,
+    "channels": 2,
+    "codec": "Vorbis",
+    "loop": true,
+    "source_repeat_count": 1,
+    "processing": "active-region trim and 0.5s overlap loop (boss 0.15s), or timed excerpt with fade; common 35Hz-10.5kHz bus; two-pass loudness normalization",
+    "excerpt_start_s": null,
+    "loudness_lufs": -16.01,
+    "true_peak_dbtp": -2.8,
+    "lra_lu": 5.2,
+    "seam_sample_delta": [
+      0.006172799039632082,
+      0.02145465277135372
+    ],
+    "normal_diff_p999": [
+      0.06414539366960526,
+      0.06300497055053711
+    ],
+    "status": "candidate_pending_listening",
+    "musical_cadence_review": "pending",
+    "sha256": "f63acc842e7607903d654d98e1b99ee788de028ef87cbdc6db20d35ec460b231"
+  },
+  {
+    "id": "midgard",
+    "kind": "music",
+    "file": "candidates/music/midgard.ogg",
+    "sources": [
+      "originals/music/opening.wav"
+    ],
+    "duration_s": 173.4530612244898,
+    "sample_rate": 44100,
+    "channels": 2,
+    "codec": "Vorbis",
+    "loop": true,
+    "source_repeat_count": 2,
+    "processing": "active-region trim and 0.5s overlap loop (boss 0.15s), or timed excerpt with fade; common 35Hz-10.5kHz bus; two-pass loudness normalization",
+    "excerpt_start_s": null,
+    "loudness_lufs": -16.01,
+    "true_peak_dbtp": -1.6,
+    "lra_lu": 5.2,
+    "seam_sample_delta": [
+      0.023913178592920303,
+      0.05548533797264099
+    ],
+    "normal_diff_p999": [
+      0.06302712112665176,
+      0.061690784990787506
+    ],
+    "status": "candidate_pending_listening",
+    "musical_cadence_review": "pending",
+    "sha256": "83added474817f1041de7c7cc170fa7726bbf6ae48a4a2ba468fb74ee4c84ab6"
+  },
+  {
+    "id": "boss",
+    "kind": "music",
+    "file": "candidates/music/boss.ogg",
+    "sources": [
+      "originals/music/boss_music.wav"
+    ],
+    "duration_s": 107.85088435374149,
+    "sample_rate": 44100,
+    "channels": 2,
+    "codec": "Vorbis",
+    "loop": true,
+    "source_repeat_count": 1,
+    "processing": "active-region trim and 0.5s overlap loop (boss 0.15s), or timed excerpt with fade; common 35Hz-10.5kHz bus; two-pass loudness normalization",
+    "excerpt_start_s": null,
+    "loudness_lufs": -16.01,
+    "true_peak_dbtp": -4.14,
+    "lra_lu": 3.8,
+    "seam_sample_delta": [
+      0.028497040271759033,
+      0.06927081942558289
+    ],
+    "normal_diff_p999": [
+      0.1329113095998764,
+      0.09035871922969818
+    ],
+    "status": "candidate_pending_listening",
+    "musical_cadence_review": "pending",
+    "sha256": "94f80a057ea9da7e8d0f1f1cae9142cf276d07d290491ec9c99522779eb69b8a"
+  },
+  {
+    "id": "helheim",
+    "kind": "music",
+    "file": "candidates/music/helheim.ogg",
+    "sources": [
+      "originals/music/mysterious.wav"
+    ],
+    "duration_s": 168.06748299319727,
+    "sample_rate": 44100,
+    "channels": 2,
+    "codec": "Vorbis",
+    "loop": true,
+    "source_repeat_count": 2,
+    "processing": "active-region trim and 0.5s overlap loop (boss 0.15s), or timed excerpt with fade; common 35Hz-10.5kHz bus; two-pass loudness normalization",
+    "excerpt_start_s": null,
+    "loudness_lufs": -16.0,
+    "true_peak_dbtp": -3.32,
+    "lra_lu": 2.9,
+    "seam_sample_delta": [
+      0.00035807339008897543,
+      0.0018187847454100847
+    ],
+    "normal_diff_p999": [
+      0.07058423012495041,
+      0.13322952389717102
+    ],
+    "status": "candidate_pending_listening",
+    "musical_cadence_review": "pending",
+    "sha256": "03692e840eafe0142284707a4446764d112ae522e787d67617cc223641b60b2b"
+  },
+  {
+    "id": "victory",
+    "kind": "music",
+    "file": "candidates/music/victory.ogg",
+    "sources": [
+      "originals/music/new_sunrise.wav"
+    ],
+    "duration_s": 8.000725623582767,
+    "sample_rate": 44100,
+    "channels": 2,
+    "codec": "Vorbis",
+    "loop": false,
+    "source_repeat_count": 1,
+    "processing": "active-region trim and 0.5s overlap loop (boss 0.15s), or timed excerpt with fade; common 35Hz-10.5kHz bus; two-pass loudness normalization",
+    "excerpt_start_s": 125,
+    "loudness_lufs": -16.0,
+    "true_peak_dbtp": -8.06,
+    "lra_lu": 23.7,
+    "seam_sample_delta": null,
+    "normal_diff_p999": [
+      0.03614822030067444,
+      0.031205136328935623
+    ],
+    "status": "candidate_pending_listening",
+    "musical_cadence_review": "pending",
+    "sha256": "614c5c369c527881b5e545e5d5d04c1003a2bd2ada60148557991abd0416ec1a"
+  },
+  {
+    "id": "defeat",
+    "kind": "music",
+    "file": "candidates/music/defeat.ogg",
+    "sources": [
+      "originals/music/lament.mp3"
+    ],
+    "duration_s": 6.000907029478458,
+    "sample_rate": 44100,
+    "channels": 2,
+    "codec": "Vorbis",
+    "loop": false,
+    "source_repeat_count": 1,
+    "processing": "active-region trim and 0.5s overlap loop (boss 0.15s), or timed excerpt with fade; common 35Hz-10.5kHz bus; two-pass loudness normalization",
+    "excerpt_start_s": 152,
+    "loudness_lufs": -16.92,
+    "true_peak_dbtp": -1.68,
+    "lra_lu": 20.3,
+    "seam_sample_delta": null,
+    "normal_diff_p999": [
+      0.023703275248408318,
+      0.024240823462605476
+    ],
+    "status": "candidate_pending_listening",
+    "musical_cadence_review": "pending",
+    "sha256": "2da0ed7f74dd7040f1291bec440ba9f9ff61ce6ee3b9448e4726ec0cf1a51b3d"
+  }
+]

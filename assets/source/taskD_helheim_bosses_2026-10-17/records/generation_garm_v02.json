@@ -1,0 +1,24 @@
+{
+  "id": "garm",
+  "unit": "garm",
+  "label": "冥府猎犬 static",
+  "action": "static",
+  "folder": "bosses",
+  "w": 128,
+  "h": 128,
+  "frames": 1,
+  "task": "taskD_helheim_bosses_2026-10-17",
+  "loop": false,
+  "anchor": "bottom",
+  "body_h": 99,
+  "subject": "A massive BLACK hellhound with powerful canine body, matted charcoal fur, dim ember-red eyes, blood-dark red staining only the chest fur, heavy BROKEN iron neck collar and a short dragging broken chain. Face right, four anatomically correct legs. Keep collar, blood patch and chain as essential silhouette details. Not a wolf with flames, no magical aura.",
+  "status": "pending",
+  "version": "v02",
+  "refs": [
+    "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskD_helheim_bosses_2026-10-17/refs/garm_static_reference.png",
+    "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskD_helheim_bosses_2026-10-17/refs/style_helheim.png"
+  ],
+  "prompt": "Use case: identity-preserve. Edit input1 project-owned massive hellhound pixel sprite. Preserve exactly its canine anatomy, four legs, powerful crouched body, fur silhouette, face, curled tail, blood-dark RED CHEST PATCH and broken iron neck collar. Make fur CHARCOAL BLACK with cool slate-gray upper-left highlights instead of brown. ADD the missing SHORT DRAGGING BROKEN IRON CHAIN attached to the collar:4-5large interlocking dark steel links hanging down from near side of neck to ground beside forepaw, ending in one clearly broken open link, fully inside canvas. No spikes added, no fire or aura. Input2 only style/palette reference, no copying its figures. One neutral full-body sprite FACING RIGHT, three-quarter side view, target128x128logicalpixels, complete silhouette with2pixelclearborder, max48colors, crisp low-resolution pixel clusters and dark outlines. Genuine transparent background, no ground plane, cast shadow, checkerboard, text or label.",
+  "tool": "builtin image_gen",
+  "source": "/Users/zhangjunqiu/.codex/generated_images/01a14377-c537-7a10-b5df-10043f63fbe0/exec-5205d342-786e-4ef0-8e31-93e2c2d7e4a2.png"
+}

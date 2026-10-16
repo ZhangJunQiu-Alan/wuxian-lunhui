@@ -1,0 +1,23 @@
+{
+  "id": "dark_elf_move",
+  "unit": "dark_elf",
+  "label": "黑暗精灵 move",
+  "action": "move",
+  "folder": "enemies",
+  "w": 64,
+  "h": 64,
+  "frames": 6,
+  "task": "taskC_helheim_enemies_2026-10-17",
+  "loop": true,
+  "anchor": "bottom",
+  "body_h": 50,
+  "subject": "A pale-skinned underground elven archer, pointed ear, short black hood, dark leather armor and ragged charcoal cloak, carrying a compact recurved wooden bow and quiver. Restrained dark gray and muted purple, alert low standing stance. Both feet grounded, bow held ready, no released arrow.",
+  "status": "pending",
+  "version": "v01",
+  "refs": [
+    "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskC_helheim_enemies_2026-10-17/candidates/dark_elf_v01.png"
+  ],
+  "prompt": "Use case: identity-preserve. Animate the EXACT project character in input1. Preserve head/face, proportions, materials, palette, clothing, armor and accessories. A real SIX-frame rightward walk cycle. Reading order:1 near leg forward/far leg back contact;2 near leg supports weight while far knee passes;3 far leg swings forward while near leg trails;4 far leg forward/near leg back opposite contact;5 far leg supports while near knee passes;6 near leg swings forward into pose1. Both arms swing in opposition to legs. Distinguish near and far leg throughout, keep them attached to same hips. No skating, no bouncing whole pasted figure, no repeating one forward foot in every frame.\nLayout: EXACTLY SIX frames in a3columns by2rows equal-cell grid, reading left-to-right then top-to-bottom. Each cell logically64x64pixels, with2logicalpixels of completely clear margin on every side. Fixed side-three-quarter camera facing RIGHT. Every cell has SAME scale, body size, foot ground line and lighting as reference. Frame1 has the original neutral body size for reference. Do not shrink the character to make extended poses fit: draw compact poses instead.\nStrong low-resolution pixel clusters, exactly the same limited RGB color palette as reference, upper-left light, dark outline, no dithering or smooth painting. Genuine transparent RGBA, binary alpha. No frame lines, text, labels, names, scene, separate object, ground shadow, aura, slash, dust or particle effects. Whole character/weapon fits inside every frame. No cut-off limbs or detached limbs.",
+  "tool": "builtin image_gen",
+  "source": "/Users/zhangjunqiu/.codex/generated_images/01a14377-c537-7a10-b5df-10043f63fbe0/exec-8715ee7f-74c9-46b8-9f91-075567e1cbb2.png"
+}

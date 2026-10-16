@@ -1,0 +1,37 @@
+{
+  "tool": "OpenAI built-in image generation",
+  "source": "/Users/zhangjunqiu/.codex/generated_images/01a14377-c537-7a10-b5df-10043f63fbe0/exec-2a1ee4cb-ab60-4e59-acdf-8067c2ccbdd3.png",
+  "id": "dead_elite_attack",
+  "unit": "dead_elite",
+  "label": "精英亡者 attack",
+  "action": "attack",
+  "folder": "enemies",
+  "w": 64,
+  "h": 64,
+  "frames": 4,
+  "task": "taskC_helheim_enemies_2026-10-17",
+  "loop": false,
+  "anchor": "bottom",
+  "body_h": 50,
+  "subject": "The same frail dead commoner, now wearing broken dark gray underworld iron armor, ragged gray cloth visible underneath. Retain thin body and elderly face, clearly armored elite without heroic bulk.",
+  "status": "pending",
+  "version": "v01",
+  "refs": [
+    "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskC_helheim_enemies_2026-10-17/candidates/dead_elite_v01.png"
+  ],
+  "prompt": "Use case: identity-preserve. Animate EXACT reference character; preserve face, equipment, proportions and colors. Four poses:1 neutral low hands;2 pull near hand back and lean slightly away;3 reach/grab sharply RIGHT with near arm extended and fingers spread, far arm follows;4 recoil to neutral. Same thin body and cloth in every frame. No large magic, weapon or trails.\n\nLayout EXACTLY 4 frames in 2 columns by 2 rows equal cells, reading order. Each cell logically 64x64px. Body height 50 logical pixels, fixed foot baseline and scale, facing RIGHT. Both legs alternate opposing contact for walk. Only same RGB palette as input1. Low-resolution pixel clusters, upper-left light, dark outline, binary transparent background, 2px clear margin. No text, grid, scenery, watermark, shadow, magic, slash or particles. Frame1 neutral reference size; compact action instead of resizing body.",
+  "postprocess": {
+    "tool": "Pillow",
+    "operation": "remove single isolated crop-boundary alpha speck and re-center whole last frame",
+    "frame_1based": 4,
+    "alpha_clear_bbox": [
+      6,
+      23,
+      7,
+      24
+    ],
+    "whole_frame_dx": -11,
+    "derived_from": "dead_elite_attack_v01.png",
+    "no_character_redrawing": true
+  }
+}

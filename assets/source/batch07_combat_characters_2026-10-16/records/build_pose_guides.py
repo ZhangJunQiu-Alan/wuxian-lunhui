@@ -26,7 +26,7 @@ def build(kind,count):
    line([(28,27),(31,32),hands[0]],near,2);line([(36,27),(40,33),hands[1]],far,2)
  out.resize((out.width*6,out.height*6),Image.Resampling.NEAREST).save(r/'references'/f'{kind}_pose_guide.png')
 for kind,n in [('walk',6),('blades',6),('staff',4)]:build(kind,n)
-rej=[{'candidate':'candidates/annie_move_v01.png','status':'rejected','reason':'Same leg repeats forward; near/far boots not visibly alternating.'},{'candidate':'candidates/lanling_attack_v01.png','status':'rejected','reason':'Both thrusts use same arm; fourth blade violates margin/clips.'},{'candidate':'candidates/merlin_attack_v01.png','status':'rejected','reason':'Raised staff becomes a short wand; rigid weapon length not preserved.'}]
+rej=[{'candidate':'candidates/gunslinger_move_v01.png','status':'rejected','reason':'Same leg repeats forward; near/far boots not visibly alternating.'},{'candidate':'candidates/assassin_attack_v01.png','status':'rejected','reason':'Both thrusts use same arm; fourth blade violates margin/clips.'},{'candidate':'candidates/mage_attack_v01.png','status':'rejected','reason':'Raised staff becomes a short wand; rigid weapon length not preserved.'}]
 (r/'records/C_wave1_rejections.json').write_text(json.dumps(rej,ensure_ascii=False,indent=2)+'\n')
 cs=json.loads((r/'records/candidates.json').read_text())
 for c in cs:

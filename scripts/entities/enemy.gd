@@ -369,6 +369,11 @@ func _die() -> void:
 		for i in split_count * (2 if is_elite else 1):
 			var pos := position + Vector2.from_angle(TAU * i / split_count) * radius
 			game.spawn_enemy.call_deferred(split_into, pos)
+	var remains := SpriteVisual.create(sprite_dir + type_id + "_broken", radius * 2.6) if behavior == "still" else null  # 锁桩、锚链：打断后留下残骸
+	if remains:
+		remains.position += position
+		remains.z_index = -1
+		get_parent().call_deferred("add_child", remains)
 	killed.emit(self)
 	queue_free()
 

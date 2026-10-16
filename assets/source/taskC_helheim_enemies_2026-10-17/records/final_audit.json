@@ -1,0 +1,1283 @@
+{
+  "task": "C",
+  "expected": 31,
+  "accepted": 31,
+  "passed": 31,
+  "failed": [],
+  "all_complete_and_passed": true,
+  "game_tested": false,
+  "results": [
+    {
+      "id": "dead",
+      "status": "passed",
+      "errors": [],
+      "size": [
+        64,
+        64
+      ],
+      "colors": 35,
+      "frame_boxes": [
+        [
+          12,
+          12,
+          52,
+          62
+        ]
+      ],
+      "sha256": "fcfada7817322ec67f6b6055bd4aa727c119c0256481921f857b6218b535d278",
+      "notes": []
+    },
+    {
+      "id": "dead_move",
+      "status": "passed",
+      "errors": [],
+      "size": [
+        384,
+        64
+      ],
+      "colors": 35,
+      "frame_boxes": [
+        [
+          12,
+          12,
+          51,
+          62
+        ],
+        [
+          15,
+          12,
+          48,
+          62
+        ],
+        [
+          13,
+          12,
+          51,
+          62
+        ],
+        [
+          11,
+          12,
+          52,
+          62
+        ],
+        [
+          14,
+          11,
+          50,
+          62
+        ],
+        [
+          11,
+          11,
+          52,
+          62
+        ]
+      ],
+      "sha256": "93a758a490782306128d6e11941d12662ead0f1251df8b8ebc8900964fce792c",
+      "notes": [
+        {
+          "gif_frames": 6,
+          "timings": [
+            120,
+            130,
+            120,
+            130,
+            120,
+            130
+          ],
+          "cycles_in_gif": 1,
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "dead_attack",
+      "status": "passed",
+      "errors": [],
+      "size": [
+        256,
+        64
+      ],
+      "colors": 35,
+      "frame_boxes": [
+        [
+          14,
+          12,
+          49,
+          62
+        ],
+        [
+          12,
+          14,
+          52,
+          62
+        ],
+        [
+          4,
+          15,
+          59,
+          62
+        ],
+        [
+          15,
+          12,
+          49,
+          62
+        ]
+      ],
+      "sha256": "59c404b403f193cd6f15c0ac52e9e85742119ead0a55791b8b7380de0089d8d7",
+      "notes": [
+        {
+          "gif_frames": 4,
+          "timings": [
+            120,
+            130,
+            120,
+            130
+          ],
+          "cycles_in_gif": 1,
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "dead_elite",
+      "status": "passed",
+      "errors": [],
+      "size": [
+        64,
+        64
+      ],
+      "colors": 46,
+      "frame_boxes": [
+        [
+          13,
+          12,
+          51,
+          62
+        ]
+      ],
+      "sha256": "447b0059564eca2974f738fb32158ea53901723f24f81927fbebb6aa86c5421f",
+      "notes": []
+    },
+    {
+      "id": "dead_elite_move",
+      "status": "passed",
+      "errors": [],
+      "size": [
+        384,
+        64
+      ],
+      "colors": 45,
+      "frame_boxes": [
+        [
+          12,
+          12,
+          51,
+          62
+        ],
+        [
+          12,
+          12,
+          51,
+          62
+        ],
+        [
+          11,
+          12,
+          52,
+          62
+        ],
+        [
+          11,
+          13,
+          52,
+          62
+        ],
+        [
+          13,
+          12,
+          51,
+          62
+        ],
+        [
+          11,
+          12,
+          52,
+          62
+        ]
+      ],
+      "sha256": "9c79d65281b31f5c8ca8a2202dfd2e5aa146c00cb2299e5bbee8f3f57fa681c7",
+      "notes": [
+        {
+          "gif_frames": 6,
+          "timings": [
+            120,
+            130,
+            120,
+            130,
+            120,
+            130
+          ],
+          "cycles_in_gif": 1,
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "dead_elite_attack",
+      "status": "passed",
+      "errors": [],
+      "size": [
+        256,
+        64
+      ],
+      "colors": 44,
+      "frame_boxes": [
+        [
+          17,
+          12,
+          46,
+          62
+        ],
+        [
+          15,
+          13,
+          48,
+          62
+        ],
+        [
+          6,
+          14,
+          57,
+          62
+        ],
+        [
+          17,
+          13,
+          47,
+          62
+        ]
+      ],
+      "sha256": "24e37895a72ad99798ff02f88ff24b8e20a476ad443f7b4ba5ae6ef161b0fac7",
+      "notes": [
+        {
+          "gif_frames": 4,
+          "timings": [
+            120,
+            130,
+            120,
+            130
+          ],
+          "cycles_in_gif": 1,
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "mist_wraith",
+      "status": "passed",
+      "errors": [],
+      "size": [
+        64,
+        64
+      ],
+      "colors": 41,
+      "frame_boxes": [
+        [
+          15,
+          9,
+          48,
+          62
+        ]
+      ],
+      "sha256": "9a6775b843b81a1f646a63ce122550abefa1eff44444f9d6b7181bfb9713302e",
+      "notes": []
+    },
+    {
+      "id": "mist_wraith_move",
+      "status": "passed",
+      "errors": [],
+      "size": [
+        384,
+        64
+      ],
+      "colors": 40,
+      "frame_boxes": [
+        [
+          12,
+          9,
+          51,
+          62
+        ],
+        [
+          12,
+          9,
+          51,
+          62
+        ],
+        [
+          15,
+          9,
+          48,
+          62
+        ],
+        [
+          13,
+          9,
+          51,
+          62
+        ],
+        [
+          11,
+          9,
+          52,
+          62
+        ],
+        [
+          11,
+          9,
+          52,
+          62
+        ]
+      ],
+      "sha256": "7beb9b6e943f218caf520593a976d98f3f9f8793e0de762ad218856c0d832213",
+      "notes": [
+        {
+          "gif_frames": 6,
+          "timings": [
+            120,
+            130,
+            120,
+            130,
+            120,
+            130
+          ],
+          "cycles_in_gif": 1,
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "mist_wraith_attack",
+      "status": "passed",
+      "errors": [],
+      "size": [
+        256,
+        64
+      ],
+      "colors": 37,
+      "frame_boxes": [
+        [
+          16,
+          9,
+          47,
+          62
+        ],
+        [
+          7,
+          9,
+          56,
+          62
+        ],
+        [
+          12,
+          9,
+          51,
+          62
+        ],
+        [
+          17,
+          9,
+          47,
+          62
+        ]
+      ],
+      "sha256": "cf5f10d0478e4d05e386a5038163d3db2674389261f107c18f2a23d64ad457f1",
+      "notes": [
+        {
+          "gif_frames": 4,
+          "timings": [
+            120,
+            130,
+            120,
+            130
+          ],
+          "cycles_in_gif": 1,
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "dark_elf",
+      "status": "passed",
+      "errors": [],
+      "size": [
+        64,
+        64
+      ],
+      "colors": 25,
+      "frame_boxes": [
+        [
+          6,
+          12,
+          57,
+          62
+        ]
+      ],
+      "sha256": "99734bb1ff8539ac24f91e76dceb9154b8e297e1d3e0a62801dfdc06347e632d",
+      "notes": []
+    },
+    {
+      "id": "dark_elf_move",
+      "status": "passed",
+      "errors": [],
+      "size": [
+        384,
+        64
+      ],
+      "colors": 25,
+      "frame_boxes": [
+        [
+          5,
+          12,
+          58,
+          62
+        ],
+        [
+          7,
+          12,
+          56,
+          62
+        ],
+        [
+          7,
+          12,
+          57,
+          62
+        ],
+        [
+          5,
+          11,
+          58,
+          62
+        ],
+        [
+          7,
+          11,
+          56,
+          62
+        ],
+        [
+          6,
+          11,
+          57,
+          62
+        ]
+      ],
+      "sha256": "80a21cc5c308a44d61690099dec9f86ee6ad9f9bea71618d6b61cf95021e3e0c",
+      "notes": [
+        {
+          "gif_frames": 6,
+          "timings": [
+            120,
+            130,
+            120,
+            130,
+            120,
+            130
+          ],
+          "cycles_in_gif": 1,
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "dark_elf_attack",
+      "status": "passed",
+      "errors": [],
+      "size": [
+        256,
+        64
+      ],
+      "colors": 24,
+      "frame_boxes": [
+        [
+          11,
+          12,
+          53,
+          62
+        ],
+        [
+          6,
+          10,
+          57,
+          62
+        ],
+        [
+          3,
+          6,
+          61,
+          62
+        ],
+        [
+          7,
+          6,
+          57,
+          62
+        ]
+      ],
+      "sha256": "c124087ea03c439aa297695a24e49065a13dcec76392a1381e1a8419c3038f6c",
+      "notes": [
+        {
+          "gif_frames": 4,
+          "timings": [
+            120,
+            130,
+            120,
+            130
+          ],
+          "cycles_in_gif": 1,
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "dark_elf_elite",
+      "status": "passed",
+      "errors": [],
+      "size": [
+        64,
+        64
+      ],
+      "colors": 48,
+      "frame_boxes": [
+        [
+          6,
+          13,
+          58,
+          62
+        ]
+      ],
+      "sha256": "82976443022b40813a518c885ecce662397ec0d7e61b85db775c1fea4379c93a",
+      "notes": []
+    },
+    {
+      "id": "dark_elf_elite_move",
+      "status": "passed",
+      "errors": [],
+      "size": [
+        384,
+        64
+      ],
+      "colors": 48,
+      "frame_boxes": [
+        [
+          7,
+          13,
+          56,
+          62
+        ],
+        [
+          10,
+          13,
+          54,
+          62
+        ],
+        [
+          8,
+          13,
+          56,
+          62
+        ],
+        [
+          8,
+          13,
+          55,
+          62
+        ],
+        [
+          9,
+          12,
+          54,
+          62
+        ],
+        [
+          6,
+          13,
+          57,
+          62
+        ]
+      ],
+      "sha256": "c786b9473be3eab564735f890fce8c4fd04cd3d4ba9017041b82b3590c567916",
+      "notes": [
+        {
+          "gif_frames": 6,
+          "timings": [
+            120,
+            130,
+            120,
+            130,
+            120,
+            130
+          ],
+          "cycles_in_gif": 1,
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "dark_elf_elite_attack",
+      "status": "passed",
+      "errors": [],
+      "size": [
+        256,
+        64
+      ],
+      "colors": 48,
+      "frame_boxes": [
+        [
+          13,
+          13,
+          51,
+          62
+        ],
+        [
+          8,
+          10,
+          54,
+          62
+        ],
+        [
+          7,
+          8,
+          56,
+          62
+        ],
+        [
+          9,
+          9,
+          54,
+          62
+        ]
+      ],
+      "sha256": "b2d7e06822b547959328b2fa7cc29b42cedbde878b1ab52a9f55c6fec91fca4f",
+      "notes": [
+        {
+          "gif_frames": 4,
+          "timings": [
+            120,
+            130,
+            120,
+            130
+          ],
+          "cycles_in_gif": 1,
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "nail_golem",
+      "status": "passed",
+      "errors": [],
+      "size": [
+        96,
+        96
+      ],
+      "colors": 48,
+      "frame_boxes": [
+        [
+          15,
+          22,
+          81,
+          94
+        ]
+      ],
+      "sha256": "becabf637ee6e8982fba2964f451ceb838077e71f3dcdc107f1c223b2e1c15b3",
+      "notes": []
+    },
+    {
+      "id": "nail_golem_move",
+      "status": "passed",
+      "errors": [],
+      "size": [
+        576,
+        96
+      ],
+      "colors": 48,
+      "frame_boxes": [
+        [
+          12,
+          22,
+          84,
+          94
+        ],
+        [
+          11,
+          21,
+          85,
+          94
+        ],
+        [
+          13,
+          23,
+          83,
+          94
+        ],
+        [
+          12,
+          22,
+          83,
+          94
+        ],
+        [
+          12,
+          20,
+          83,
+          94
+        ],
+        [
+          11,
+          20,
+          84,
+          94
+        ]
+      ],
+      "sha256": "550ba09cbf705b9b1166529f287c1b2dd95424da48a6e8df1aa28c5d2f040ba2",
+      "notes": [
+        {
+          "gif_frames": 6,
+          "timings": [
+            120,
+            130,
+            120,
+            130,
+            120,
+            130
+          ],
+          "cycles_in_gif": 1,
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "nail_golem_attack",
+      "status": "passed",
+      "errors": [],
+      "size": [
+        384,
+        96
+      ],
+      "colors": 48,
+      "frame_boxes": [
+        [
+          15,
+          22,
+          81,
+          94
+        ],
+        [
+          9,
+          9,
+          87,
+          94
+        ],
+        [
+          4,
+          34,
+          91,
+          94
+        ],
+        [
+          14,
+          22,
+          82,
+          94
+        ]
+      ],
+      "sha256": "5e67491e861582f13d96dd508534a2be665b6329a8ea20d80c0d87346d04d661",
+      "notes": [
+        {
+          "gif_frames": 4,
+          "timings": [
+            120,
+            130,
+            120,
+            130
+          ],
+          "cycles_in_gif": 1,
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "nail_golem_elite",
+      "status": "passed",
+      "errors": [],
+      "size": [
+        96,
+        96
+      ],
+      "colors": 47,
+      "frame_boxes": [
+        [
+          12,
+          16,
+          83,
+          94
+        ]
+      ],
+      "sha256": "55a414b971e12870843141e4f53420899de6f3da634ad6ccb32620126656860d",
+      "notes": []
+    },
+    {
+      "id": "nail_golem_elite_move",
+      "status": "passed",
+      "errors": [],
+      "size": [
+        576,
+        96
+      ],
+      "colors": 47,
+      "frame_boxes": [
+        [
+          7,
+          16,
+          88,
+          94
+        ],
+        [
+          8,
+          16,
+          87,
+          94
+        ],
+        [
+          7,
+          16,
+          89,
+          94
+        ],
+        [
+          7,
+          18,
+          89,
+          94
+        ],
+        [
+          5,
+          16,
+          90,
+          94
+        ],
+        [
+          8,
+          17,
+          88,
+          94
+        ]
+      ],
+      "sha256": "be7a720d31ae250eaf0ec005a92ba474e657f04503b76f432410ab96648568e4",
+      "notes": [
+        {
+          "gif_frames": 6,
+          "timings": [
+            120,
+            130,
+            120,
+            130,
+            120,
+            130
+          ],
+          "cycles_in_gif": 1,
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "nail_golem_elite_attack",
+      "status": "passed",
+      "errors": [],
+      "size": [
+        384,
+        96
+      ],
+      "colors": 47,
+      "frame_boxes": [
+        [
+          11,
+          19,
+          84,
+          94
+        ],
+        [
+          15,
+          4,
+          80,
+          94
+        ],
+        [
+          4,
+          26,
+          91,
+          94
+        ],
+        [
+          12,
+          19,
+          85,
+          94
+        ]
+      ],
+      "sha256": "c293b54fb7b999c5f417415a4857bd673143e7b547e9a1436f35a46ce4670513",
+      "notes": [
+        {
+          "gif_frames": 4,
+          "timings": [
+            120,
+            130,
+            120,
+            130
+          ],
+          "cycles_in_gif": 1,
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "nail_golem_small",
+      "status": "passed",
+      "errors": [],
+      "size": [
+        64,
+        64
+      ],
+      "colors": 45,
+      "frame_boxes": [
+        [
+          17,
+          30,
+          46,
+          62
+        ]
+      ],
+      "sha256": "988027db761ad5b3b413e2c0ab4ef2ad4743f06af6b443b7379a3e54a69829ed",
+      "notes": []
+    },
+    {
+      "id": "nail_golem_small_move",
+      "status": "passed",
+      "errors": [],
+      "size": [
+        384,
+        64
+      ],
+      "colors": 45,
+      "frame_boxes": [
+        [
+          16,
+          30,
+          48,
+          62
+        ],
+        [
+          15,
+          30,
+          48,
+          62
+        ],
+        [
+          16,
+          30,
+          47,
+          62
+        ],
+        [
+          16,
+          30,
+          48,
+          62
+        ],
+        [
+          16,
+          29,
+          48,
+          62
+        ],
+        [
+          16,
+          29,
+          48,
+          62
+        ]
+      ],
+      "sha256": "f4808b8ecdb65035e650d99cde1cea9bf2ae230fc25772607224a921d80168c9",
+      "notes": [
+        {
+          "gif_frames": 6,
+          "timings": [
+            120,
+            130,
+            120,
+            130,
+            120,
+            130
+          ],
+          "cycles_in_gif": 1,
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "nail_golem_small_attack",
+      "status": "passed",
+      "errors": [],
+      "size": [
+        256,
+        64
+      ],
+      "colors": 43,
+      "frame_boxes": [
+        [
+          16,
+          30,
+          47,
+          62
+        ],
+        [
+          15,
+          17,
+          49,
+          62
+        ],
+        [
+          10,
+          33,
+          54,
+          62
+        ],
+        [
+          16,
+          30,
+          47,
+          62
+        ]
+      ],
+      "sha256": "d270de0551b6c4d32936c358dcd3cd354f78c479ef83d4eb473d64932bc80efe",
+      "notes": [
+        {
+          "gif_frames": 4,
+          "timings": [
+            120,
+            130,
+            120,
+            130
+          ],
+          "cycles_in_gif": 1,
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "dark_arrow",
+      "status": "passed",
+      "errors": [],
+      "size": [
+        32,
+        32
+      ],
+      "colors": 30,
+      "frame_boxes": [
+        [
+          2,
+          13,
+          30,
+          18
+        ]
+      ],
+      "sha256": "461a5662286380ce3c15aa181d75e64b887689a587bf00bbbb35ea8a78beb9eb",
+      "notes": []
+    },
+    {
+      "id": "squirrel",
+      "status": "passed",
+      "errors": [],
+      "size": [
+        32,
+        32
+      ],
+      "colors": 47,
+      "frame_boxes": [
+        [
+          2,
+          6,
+          29,
+          30
+        ]
+      ],
+      "sha256": "d195e0d2e62517a323cec17fd7aad34e0d992a03d427ce68c89205a0d16d360a",
+      "notes": []
+    },
+    {
+      "id": "squirrel_move",
+      "status": "passed",
+      "errors": [],
+      "size": [
+        128,
+        32
+      ],
+      "colors": 41,
+      "frame_boxes": [
+        [
+          2,
+          7,
+          29,
+          30
+        ],
+        [
+          2,
+          7,
+          30,
+          30
+        ],
+        [
+          2,
+          6,
+          30,
+          30
+        ],
+        [
+          2,
+          6,
+          30,
+          30
+        ]
+      ],
+      "sha256": "34805e1f1526ff2081d6e94a094671d571e7b9bf5e365d163cfef8950f879884",
+      "notes": [
+        {
+          "gif_frames": 4,
+          "timings": [
+            120,
+            130,
+            120,
+            130
+          ],
+          "cycles_in_gif": 1,
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "anchor_chain",
+      "status": "passed",
+      "errors": [],
+      "size": [
+        64,
+        96
+      ],
+      "colors": 48,
+      "frame_boxes": [
+        [
+          8,
+          2,
+          55,
+          94
+        ]
+      ],
+      "sha256": "37cadc87e070b4699cca290b67c2a89eefea6f86758426b1238f4c5d552e292c",
+      "notes": []
+    },
+    {
+      "id": "anchor_chain_broken",
+      "status": "passed",
+      "errors": [],
+      "size": [
+        64,
+        96
+      ],
+      "colors": 43,
+      "frame_boxes": [
+        [
+          6,
+          75,
+          38,
+          94
+        ]
+      ],
+      "sha256": "f9b61f7b421c8da7635ca0ac534265bbd2d0d5035d90169e19f5fae7a24d0bd0",
+      "notes": []
+    },
+    {
+      "id": "bright_soul",
+      "status": "passed",
+      "errors": [],
+      "size": [
+        64,
+        64
+      ],
+      "colors": 48,
+      "frame_boxes": [
+        [
+          21,
+          6,
+          43,
+          62
+        ]
+      ],
+      "sha256": "1974ab9fa7d362de7052280366cc758e1d8bcaae7c524c92f89dc034e9bd3bfc",
+      "notes": []
+    },
+    {
+      "id": "bright_soul_move",
+      "status": "passed",
+      "errors": [],
+      "size": [
+        256,
+        64
+      ],
+      "colors": 44,
+      "frame_boxes": [
+        [
+          15,
+          6,
+          49,
+          62
+        ],
+        [
+          19,
+          6,
+          45,
+          62
+        ],
+        [
+          14,
+          6,
+          50,
+          62
+        ],
+        [
+          20,
+          6,
+          44,
+          62
+        ]
+      ],
+      "sha256": "9fdd1e04d355b1e5bda834e99239951df7ceb5f6149a58210afbabb449ab193b",
+      "notes": [
+        {
+          "gif_frames": 4,
+          "timings": [
+            120,
+            130,
+            120,
+            130
+          ],
+          "cycles_in_gif": 1,
+          "note": ""
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,168 @@
+[
+  {
+    "id": "mist_wraith",
+    "unit": "mist_wraith",
+    "label": "冥雾幽魂 static",
+    "action": "static",
+    "folder": "enemies",
+    "w": 64,
+    "h": 64,
+    "frames": 1,
+    "task": "taskC_helheim_enemies_2026-10-17",
+    "loop": false,
+    "anchor": "float",
+    "body_h": 53,
+    "subject": "A slender mournful mist-shaped human ghost, cold-gray and dark jade ragged vapor silhouette, exactly two small phosphor-green eyes, lower body dispersing into a few chunky trailing mist ribbons instead of feet. No translucent pixels: convey ghostly depth using solid dark gray, muted green and pale gray edges.",
+    "status": "pending",
+    "version": "v01",
+    "refs": [
+      "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskC_helheim_enemies_2026-10-17/refs/style_helheim.png"
+    ],
+    "prompt": "Use case: stylized-concept. Asset type: production pixel-art northern underworld game sprite.\nInput1 is ONLY a project-owned style reference: use its pixel treatment, dark contours, upper-left illumination, readable clusters. Do not reproduce reference figures, scenes or labels.\nSubject: A slender mournful mist-shaped human ghost, cold-gray and dark jade ragged vapor silhouette, exactly two small phosphor-green eyes, lower body dispersing into a few chunky trailing mist ribbons instead of feet. No translucent pixels: convey ghostly depth using solid dark gray, muted green and pale gray edges.\nLayout: ONE standalone sprite, target logical canvas 64x64. Full body facing RIGHT with three-quarter side view, common ground baseline at logical y61. Body in neutral rest stance, no attack pose. Leave room for future motion. Approximate upright body height 53logical pixels, keep limbs and accessories compact.\nUse cold gray, charcoal, bone ivory, muted moss-green and dark purple, restrained phosphor turquoise accents; warm gold-white only for the young soul and russet only for squirrel. Same visual language as reference game sprites. True low-resolution pixelart at stated logical resolution, not tiny painted microdetails. Sharp square pixel clusters, no dithering, no smooth gradients, max32-48colors. \nGenuine transparent RGBA background, binary opaque artwork, at leastTWOlogicalpixels empty on every side of each cell. No anti-aliased transparent fringes, no checkerboard drawn in, no frame borders, names, letters, labels, signature, text, watermark, foreground ground shadows or background scene. Entire object visible, nothing cut off."
+  },
+  {
+    "id": "nail_golem",
+    "unit": "nail_golem",
+    "label": "指甲傀儡 static",
+    "action": "static",
+    "folder": "enemies",
+    "w": 96,
+    "h": 96,
+    "frames": 1,
+    "task": "taskC_helheim_enemies_2026-10-17",
+    "loop": false,
+    "anchor": "bottom",
+    "body_h": 72,
+    "subject": "A heavy squat human-shaped construct assembled from MANY overlapping flattened yellow-gray HUMAN FINGERNAIL PLATES, broad blunt shingled shoulders, thick blocky arms, short legs. Curved keratin chips and small dark gaps, bone-white ridges, not a skeleton, not skeletal armor, no giant ornamental claws or skull mask. Small recessed dull green eyes, crude inhuman face.",
+    "status": "pending",
+    "version": "v01",
+    "refs": [
+      "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskC_helheim_enemies_2026-10-17/refs/style_helheim.png"
+    ],
+    "prompt": "Use case: stylized-concept. Asset type: production pixel-art northern underworld game sprite.\nInput1 is ONLY a project-owned style reference: use its pixel treatment, dark contours, upper-left illumination, readable clusters. Do not reproduce reference figures, scenes or labels.\nSubject: A heavy squat human-shaped construct assembled from MANY overlapping flattened yellow-gray HUMAN FINGERNAIL PLATES, broad blunt shingled shoulders, thick blocky arms, short legs. Curved keratin chips and small dark gaps, bone-white ridges, not a skeleton, not skeletal armor, no giant ornamental claws or skull mask. Small recessed dull green eyes, crude inhuman face.\nLayout: ONE standalone sprite, target logical canvas 96x96. Full body facing RIGHT with three-quarter side view, common ground baseline at logical y93. Body in neutral rest stance, no attack pose. Leave room for future motion. Approximate upright body height 72logical pixels, keep limbs and accessories compact.\nUse cold gray, charcoal, bone ivory, muted moss-green and dark purple, restrained phosphor turquoise accents; warm gold-white only for the young soul and russet only for squirrel. Same visual language as reference game sprites. True low-resolution pixelart at stated logical resolution, not tiny painted microdetails. Sharp square pixel clusters, no dithering, no smooth gradients, max32-48colors. \nGenuine transparent RGBA background, binary opaque artwork, at leastTWOlogicalpixels empty on every side of each cell. No anti-aliased transparent fringes, no checkerboard drawn in, no frame borders, names, letters, labels, signature, text, watermark, foreground ground shadows or background scene. Entire object visible, nothing cut off."
+  },
+  {
+    "id": "dark_arrow",
+    "label": "黑暗精灵箭",
+    "folder": "effects",
+    "w": 32,
+    "h": 32,
+    "frames": 1,
+    "task": "taskC_helheim_enemies_2026-10-17",
+    "subject": "A single right-facing narrow arrow with charcoal-black shaft, muted dark-purple triangular metal arrowhead and small gray-purple fletching. Readable at32x32. No bow or trail.",
+    "loop": false,
+    "anchor": "center",
+    "status": "pending",
+    "unit": null,
+    "action": "static",
+    "version": "v01",
+    "refs": [
+      "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskC_helheim_enemies_2026-10-17/refs/style_helheim.png"
+    ],
+    "prompt": "Use case: stylized-concept. Asset type: production pixel-art northern underworld game sprite.\nInput1 is ONLY a project-owned style reference: use its pixel treatment, dark contours, upper-left illumination, readable clusters. Do not reproduce reference figures, scenes or labels.\nSubject: A single right-facing narrow arrow with charcoal-black shaft, muted dark-purple triangular metal arrowhead and small gray-purple fletching. Readable at32x32. No bow or trail.\nLayout: ONE standalone sprite, target logical canvas 32x32. \nUse cold gray, charcoal, bone ivory, muted moss-green and dark purple, restrained phosphor turquoise accents; warm gold-white only for the young soul and russet only for squirrel. Same visual language as reference game sprites. True low-resolution pixelart at stated logical resolution, not tiny painted microdetails. Sharp square pixel clusters, no dithering, no smooth gradients, max32-48colors. \nGenuine transparent RGBA background, binary opaque artwork, at leastTWOlogicalpixels empty on every side of each cell. No anti-aliased transparent fringes, no checkerboard drawn in, no frame borders, names, letters, labels, signature, text, watermark, foreground ground shadows or background scene. Entire object visible, nothing cut off."
+  },
+  {
+    "id": "squirrel",
+    "label": "红褐松鼠",
+    "folder": "quests",
+    "w": 32,
+    "h": 32,
+    "frames": 1,
+    "task": "taskC_helheim_enemies_2026-10-17",
+    "subject": "A clever alert reddish-brown northern squirrel, long bushy curled tail behind, small pointed ears, tiny paws, bright eyes. Full-body side three-quarter facing right, ready to run. No acorn or branch.",
+    "loop": false,
+    "anchor": "bottom",
+    "status": "pending",
+    "unit": null,
+    "action": "static",
+    "version": "v01",
+    "refs": [
+      "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskC_helheim_enemies_2026-10-17/refs/style_helheim.png"
+    ],
+    "prompt": "Use case: stylized-concept. Asset type: production pixel-art northern underworld game sprite.\nInput1 is ONLY a project-owned style reference: use its pixel treatment, dark contours, upper-left illumination, readable clusters. Do not reproduce reference figures, scenes or labels.\nSubject: A clever alert reddish-brown northern squirrel, long bushy curled tail behind, small pointed ears, tiny paws, bright eyes. Full-body side three-quarter facing right, ready to run. No acorn or branch.\nLayout: ONE standalone sprite, target logical canvas 32x32. \nUse cold gray, charcoal, bone ivory, muted moss-green and dark purple, restrained phosphor turquoise accents; warm gold-white only for the young soul and russet only for squirrel. Same visual language as reference game sprites. True low-resolution pixelart at stated logical resolution, not tiny painted microdetails. Sharp square pixel clusters, no dithering, no smooth gradients, max32-48colors. \nGenuine transparent RGBA background, binary opaque artwork, at leastTWOlogicalpixels empty on every side of each cell. No anti-aliased transparent fringes, no checkerboard drawn in, no frame borders, names, letters, labels, signature, text, watermark, foreground ground shadows or background scene. Entire object visible, nothing cut off."
+  },
+  {
+    "id": "anchor_chain",
+    "label": "完整锚链",
+    "folder": "quests",
+    "w": 64,
+    "h": 96,
+    "frames": 1,
+    "task": "taskC_helheim_enemies_2026-10-17",
+    "subject": "A coarse thick iron ANCHOR CHAIN stretched diagonally UP-RIGHT from a stout iron mooring peg embedded low at bottom-center. Large interlocking dark iron links clearly readable, rusty riveted base collar. Whole chain and peg in64x96, no ship, ground scene or rope.",
+    "loop": false,
+    "anchor": "bottom",
+    "status": "pending",
+    "unit": null,
+    "action": "static",
+    "version": "v01",
+    "refs": [
+      "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskC_helheim_enemies_2026-10-17/refs/style_helheim.png"
+    ],
+    "prompt": "Use case: stylized-concept. Asset type: production pixel-art northern underworld game sprite.\nInput1 is ONLY a project-owned style reference: use its pixel treatment, dark contours, upper-left illumination, readable clusters. Do not reproduce reference figures, scenes or labels.\nSubject: A coarse thick iron ANCHOR CHAIN stretched diagonally UP-RIGHT from a stout iron mooring peg embedded low at bottom-center. Large interlocking dark iron links clearly readable, rusty riveted base collar. Whole chain and peg in64x96, no ship, ground scene or rope.\nLayout: ONE standalone sprite, target logical canvas 64x96. \nUse cold gray, charcoal, bone ivory, muted moss-green and dark purple, restrained phosphor turquoise accents; warm gold-white only for the young soul and russet only for squirrel. Same visual language as reference game sprites. True low-resolution pixelart at stated logical resolution, not tiny painted microdetails. Sharp square pixel clusters, no dithering, no smooth gradients, max32-48colors. \nGenuine transparent RGBA background, binary opaque artwork, at leastTWOlogicalpixels empty on every side of each cell. No anti-aliased transparent fringes, no checkerboard drawn in, no frame borders, names, letters, labels, signature, text, watermark, foreground ground shadows or background scene. Entire object visible, nothing cut off."
+  },
+  {
+    "id": "bright_soul",
+    "label": "温暖灵魂",
+    "folder": "quests",
+    "w": 64,
+    "h": 64,
+    "frames": 1,
+    "task": "taskC_helheim_enemies_2026-10-17",
+    "subject": "A warm GOLD-WHITE spectral young man with kind sorrowful face, long pale-gold tunic and simple mantle, young slim human body, empty hands and bare or simply wrapped feet, facing right three-quarter. Modest luminous ivory edge and amber solid-pixel shadow, no huge halo, no crown or modern clothing. Entire figure opaque pixels, transparency only outside. Stands out against gray underworld.",
+    "loop": false,
+    "anchor": "bottom",
+    "status": "pending",
+    "unit": null,
+    "action": "static",
+    "version": "v01",
+    "refs": [
+      "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskC_helheim_enemies_2026-10-17/refs/style_helheim.png"
+    ],
+    "prompt": "Use case: stylized-concept. Asset type: production pixel-art northern underworld game sprite.\nInput1 is ONLY a project-owned style reference: use its pixel treatment, dark contours, upper-left illumination, readable clusters. Do not reproduce reference figures, scenes or labels.\nSubject: A warm GOLD-WHITE spectral young man with kind sorrowful face, long pale-gold tunic and simple mantle, young slim human body, empty hands and bare or simply wrapped feet, facing right three-quarter. Modest luminous ivory edge and amber solid-pixel shadow, no huge halo, no crown or modern clothing. Entire figure opaque pixels, transparency only outside. Stands out against gray underworld.\nLayout: ONE standalone sprite, target logical canvas 64x64. \nUse cold gray, charcoal, bone ivory, muted moss-green and dark purple, restrained phosphor turquoise accents; warm gold-white only for the young soul and russet only for squirrel. Same visual language as reference game sprites. True low-resolution pixelart at stated logical resolution, not tiny painted microdetails. Sharp square pixel clusters, no dithering, no smooth gradients, max32-48colors. \nGenuine transparent RGBA background, binary opaque artwork, at leastTWOlogicalpixels empty on every side of each cell. No anti-aliased transparent fringes, no checkerboard drawn in, no frame borders, names, letters, labels, signature, text, watermark, foreground ground shadows or background scene. Entire object visible, nothing cut off."
+  },
+  {
+    "id": "dead_elite",
+    "unit": "dead_elite",
+    "label": "精英亡者 static",
+    "action": "static",
+    "folder": "enemies",
+    "w": 64,
+    "h": 64,
+    "frames": 1,
+    "task": "taskC_helheim_enemies_2026-10-17",
+    "loop": false,
+    "anchor": "bottom",
+    "body_h": 50,
+    "subject": "The same frail dead commoner, now wearing broken dark gray underworld iron armor, ragged gray cloth visible underneath. Retain thin body and elderly face, clearly armored elite without heroic bulk.",
+    "status": "pending",
+    "version": "v01",
+    "refs": [
+      "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskC_helheim_enemies_2026-10-17/refs/dead_static_reference.png",
+      "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskC_helheim_enemies_2026-10-17/refs/style_helheim.png"
+    ],
+    "prompt": "Use case: identity-preserve. Create ONE elite-variant pixel game sprite from input1 project character. Input2 is color/style environment context only. The same frail dead commoner, now wearing broken dark gray underworld iron armor, ragged gray cloth visible underneath. Retain thin body and elderly face, clearly armored elite without heroic bulk. Retain identity, anatomy, side-three-quarter view FACING RIGHT and same body size as input1, but add ONLY the elite equipment described. Logical64x64canvas, neutral grounded stance, body around50pixels tall, upper-left light, crisp dark outlines, limited48colorpalette, no dithering or smooth painting. True transparent RGBA background, two logicalpixel margin all sides. No magic effect, halo, ground shadow, text, labels or scene."
+  },
+  {
+    "id": "dark_elf_elite",
+    "unit": "dark_elf_elite",
+    "label": "精英黑暗精灵 static",
+    "action": "static",
+    "folder": "enemies",
+    "w": 64,
+    "h": 64,
+    "frames": 1,
+    "task": "taskC_helheim_enemies_2026-10-17",
+    "loop": false,
+    "anchor": "bottom",
+    "body_h": 50,
+    "subject": "Same pale underground elven archer with pointed ear and dark hood, finer layered dark leather armor, dark-purple shoulder trim and belt ornaments, curved bow and quiver. Same body scale and face, more ornate but restrained, no glowing spell effects.",
+    "status": "pending",
+    "version": "v01",
+    "refs": [
+      "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskC_helheim_enemies_2026-10-17/refs/dark_elf_static_reference.png",
+      "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskC_helheim_enemies_2026-10-17/refs/style_helheim.png"
+    ],
+    "prompt": "Use case: identity-preserve. Create ONE elite-variant pixel game sprite from input1 project character. Input2 is color/style environment context only. Same pale underground elven archer with pointed ear and dark hood, finer layered dark leather armor, dark-purple shoulder trim and belt ornaments, curved bow and quiver. Same body scale and face, more ornate but restrained, no glowing spell effects. Retain identity, anatomy, side-three-quarter view FACING RIGHT and same body size as input1, but add ONLY the elite equipment described. Logical64x64canvas, neutral grounded stance, body around50pixels tall, upper-left light, crisp dark outlines, limited48colorpalette, no dithering or smooth painting. True transparent RGBA background, two logicalpixel margin all sides. No magic effect, halo, ground shadow, text, labels or scene."
+  }
+]

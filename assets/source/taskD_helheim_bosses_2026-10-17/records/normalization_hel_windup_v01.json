@@ -1,0 +1,56 @@
+{
+  "source": "/Users/zhangjunqiu/Desktop/\u65e0\u9650\u6050\u6016/assets/source/taskD_helheim_bosses_2026-10-17/originals/hel_windup_v01_raw.png",
+  "raw_size": [
+    2172,
+    724
+  ],
+  "grid": [
+    3,
+    1
+  ],
+  "crop_boxes": [
+    [
+      87,
+      108,
+      682,
+      698
+    ],
+    [
+      72,
+      91,
+      676,
+      698
+    ],
+    [
+      52,
+      36,
+      669,
+      698
+    ]
+  ],
+  "common_scale": 0.2796610169491525,
+  "target_body_height": 165,
+  "first_pose_reference_index": 0,
+  "placements": [
+    [
+      13,
+      25,
+      166,
+      165
+    ],
+    [
+      11,
+      20,
+      169,
+      170
+    ],
+    [
+      9,
+      5,
+      173,
+      185
+    ]
+  ],
+  "palette_reference": "/Users/zhangjunqiu/Desktop/\u65e0\u9650\u6050\u6016/assets/source/taskD_helheim_bosses_2026-10-17/candidates/hel_v02.png",
+  "note": "One shared scale across all frames; whole-cell crop and placement only, no character drawing."
+}

@@ -1,0 +1,4128 @@
+{
+  "task": "B",
+  "date": "2026-10-17",
+  "status": "in_progress_candidates_pending_audition",
+  "expected_sfx_count": 54,
+  "expected_music_count": 6,
+  "candidate_sfx_count": 54,
+  "candidate_music_count": 6,
+  "runtime_files_published": [],
+  "missing_sfx": [],
+  "technical_failed_sfx": {},
+  "subjective_audition": "not_performed; no listening-capable tool available in this session",
+  "game_test": "not_performed; integration agent responsibility",
+  "tools": {
+    "processing": "Python 3 standard library; NumPy 2.4.3; FFmpeg 8.1.1",
+    "browser": "Google Chrome through native CUA",
+    "ai_generation_used": false
+  },
+  "license_default": "CC0-1.0; source composition/layers retained as separately listed provenance; no third-party exclusivity claim",
+  "sources": [
+    {
+      "id": "impact",
+      "page": "https://kenney.nl/assets/impact-sounds",
+      "url": "https://kenney.nl/media/pages/assets/impact-sounds/87b4ddecda-1677589768/kenney_impact-sounds.zip",
+      "author": "Kenney",
+      "license": "CC0-1.0",
+      "commercial": true,
+      "attribution_required": false,
+      "archive_sha256": "029d734af1582474edf3a694d1b0cebc97c1c152f2f39fa34d4c2bafc5de77f8",
+      "archive_saved": false,
+      "files": [
+        "originals/impact/Audio/footstep_carpet_000.ogg",
+        "originals/impact/Audio/footstep_carpet_001.ogg",
+        "originals/impact/Audio/footstep_carpet_002.ogg",
+        "originals/impact/Audio/footstep_carpet_003.ogg",
+        "originals/impact/Audio/footstep_carpet_004.ogg",
+        "originals/impact/Audio/footstep_concrete_000.ogg",
+        "originals/impact/Audio/footstep_concrete_001.ogg",
+        "originals/impact/Audio/footstep_concrete_002.ogg",
+        "originals/impact/Audio/footstep_concrete_003.ogg",
+        "originals/impact/Audio/footstep_concrete_004.ogg",
+        "originals/impact/Audio/footstep_grass_000.ogg",
+        "originals/impact/Audio/footstep_grass_001.ogg",
+        "originals/impact/Audio/footstep_grass_002.ogg",
+        "originals/impact/Audio/footstep_grass_003.ogg",
+        "originals/impact/Audio/footstep_grass_004.ogg",
+        "originals/impact/Audio/footstep_snow_000.ogg",
+        "originals/impact/Audio/footstep_snow_001.ogg",
+        "originals/impact/Audio/footstep_snow_002.ogg",
+        "originals/impact/Audio/footstep_snow_003.ogg",
+        "originals/impact/Audio/footstep_snow_004.ogg",
+        "originals/impact/Audio/footstep_wood_000.ogg",
+        "originals/impact/Audio/footstep_wood_001.ogg",
+        "originals/impact/Audio/footstep_wood_002.ogg",
+        "originals/impact/Audio/footstep_wood_003.ogg",
+        "originals/impact/Audio/footstep_wood_004.ogg",
+        "originals/impact/Audio/impactBell_heavy_000.ogg",
+        "originals/impact/Audio/impactBell_heavy_001.ogg",
+        "originals/impact/Audio/impactBell_heavy_002.ogg",
+        "originals/impact/Audio/impactBell_heavy_003.ogg",
+        "originals/impact/Audio/impactBell_heavy_004.ogg",
+        "originals/impact/Audio/impactGeneric_light_000.ogg",
+        "originals/impact/Audio/impactGeneric_light_001.ogg",
+        "originals/impact/Audio/impactGeneric_light_002.ogg",
+        "originals/impact/Audio/impactGeneric_light_003.ogg",
+        "originals/impact/Audio/impactGeneric_light_004.ogg",
+        "originals/impact/Audio/impactGlass_heavy_000.ogg",
+        "originals/impact/Audio/impactGlass_heavy_001.ogg",
+        "originals/impact/Audio/impactGlass_heavy_002.ogg",
+        "originals/impact/Audio/impactGlass_heavy_003.ogg",
+        "originals/impact/Audio/impactGlass_heavy_004.ogg",
+        "originals/impact/Audio/impactGlass_light_000.ogg",
+        "originals/impact/Audio/impactGlass_light_001.ogg",
+        "originals/impact/Audio/impactGlass_light_002.ogg",
+        "originals/impact/Audio/impactGlass_light_003.ogg",
+        "originals/impact/Audio/impactGlass_light_004.ogg",
+        "originals/impact/Audio/impactGlass_medium_000.ogg",
+        "originals/impact/Audio/impactGlass_medium_001.ogg",
+        "originals/impact/Audio/impactGlass_medium_002.ogg",
+        "originals/impact/Audio/impactGlass_medium_003.ogg",
+        "originals/impact/Audio/impactGlass_medium_004.ogg",
+        "originals/impact/Audio/impactMetal_heavy_000.ogg",
+        "originals/impact/Audio/impactMetal_heavy_001.ogg",
+        "originals/impact/Audio/impactMetal_heavy_002.ogg",
+        "originals/impact/Audio/impactMetal_heavy_003.ogg",
+        "originals/impact/Audio/impactMetal_heavy_004.ogg",
+        "originals/impact/Audio/impactMetal_light_000.ogg",
+        "originals/impact/Audio/impactMetal_light_001.ogg",
+        "originals/impact/Audio/impactMetal_light_002.ogg",
+        "originals/impact/Audio/impactMetal_light_003.ogg",
+        "originals/impact/Audio/impactMetal_light_004.ogg",
+        "originals/impact/Audio/impactMetal_medium_000.ogg",
+        "originals/impact/Audio/impactMetal_medium_001.ogg",
+        "originals/impact/Audio/impactMetal_medium_002.ogg",
+        "originals/impact/Audio/impactMetal_medium_003.ogg",
+        "originals/impact/Audio/impactMetal_medium_004.ogg",
+        "originals/impact/Audio/impactMining_000.ogg",
+        "originals/impact/Audio/impactMining_001.ogg",
+        "originals/impact/Audio/impactMining_002.ogg",
+        "originals/impact/Audio/impactMining_003.ogg",
+        "originals/impact/Audio/impactMining_004.ogg",
+        "originals/impact/Audio/impactPlank_medium_000.ogg",
+        "originals/impact/Audio/impactPlank_medium_001.ogg",
+        "originals/impact/Audio/impactPlank_medium_002.ogg",
+        "originals/impact/Audio/impactPlank_medium_003.ogg",
+        "originals/impact/Audio/impactPlank_medium_004.ogg",
+        "originals/impact/Audio/impactPlate_heavy_000.ogg",
+        "originals/impact/Audio/impactPlate_heavy_001.ogg",
+        "originals/impact/Audio/impactPlate_heavy_002.ogg",
+        "originals/impact/Audio/impactPlate_heavy_003.ogg",
+        "originals/impact/Audio/impactPlate_heavy_004.ogg",
+        "originals/impact/Audio/impactPlate_light_000.ogg",
+        "originals/impact/Audio/impactPlate_light_001.ogg",
+        "originals/impact/Audio/impactPlate_light_002.ogg",
+        "originals/impact/Audio/impactPlate_light_003.ogg",
+        "originals/impact/Audio/impactPlate_light_004.ogg",
+        "originals/impact/Audio/impactPlate_medium_000.ogg",
+        "originals/impact/Audio/impactPlate_medium_001.ogg",
+        "originals/impact/Audio/impactPlate_medium_002.ogg",
+        "originals/impact/Audio/impactPlate_medium_003.ogg",
+        "originals/impact/Audio/impactPlate_medium_004.ogg",
+        "originals/impact/Audio/impactPunch_heavy_000.ogg",
+        "originals/impact/Audio/impactPunch_heavy_001.ogg",
+        "originals/impact/Audio/impactPunch_heavy_002.ogg",
+        "originals/impact/Audio/impactPunch_heavy_003.ogg",
+        "originals/impact/Audio/impactPunch_heavy_004.ogg",
+        "originals/impact/Audio/impactPunch_medium_000.ogg",
+        "originals/impact/Audio/impactPunch_medium_001.ogg",
+        "originals/impact/Audio/impactPunch_medium_002.ogg",
+        "originals/impact/Audio/impactPunch_medium_003.ogg",
+        "originals/impact/Audio/impactPunch_medium_004.ogg",
+        "originals/impact/Audio/impactSoft_heavy_000.ogg",
+        "originals/impact/Audio/impactSoft_heavy_001.ogg",
+        "originals/impact/Audio/impactSoft_heavy_002.ogg",
+        "originals/impact/Audio/impactSoft_heavy_003.ogg",
+        "originals/impact/Audio/impactSoft_heavy_004.ogg",
+        "originals/impact/Audio/impactSoft_medium_000.ogg",
+        "originals/impact/Audio/impactSoft_medium_001.ogg",
+        "originals/impact/Audio/impactSoft_medium_002.ogg",
+        "originals/impact/Audio/impactSoft_medium_003.ogg",
+        "originals/impact/Audio/impactSoft_medium_004.ogg",
+        "originals/impact/Audio/impactTin_medium_000.ogg",
+        "originals/impact/Audio/impactTin_medium_001.ogg",
+        "originals/impact/Audio/impactTin_medium_002.ogg",
+        "originals/impact/Audio/impactTin_medium_003.ogg",
+        "originals/impact/Audio/impactTin_medium_004.ogg",
+        "originals/impact/Audio/impactWood_heavy_000.ogg",
+        "originals/impact/Audio/impactWood_heavy_001.ogg",
+        "originals/impact/Audio/impactWood_heavy_002.ogg",
+        "originals/impact/Audio/impactWood_heavy_003.ogg",
+        "originals/impact/Audio/impactWood_heavy_004.ogg",
+        "originals/impact/Audio/impactWood_light_000.ogg",
+        "originals/impact/Audio/impactWood_light_001.ogg",
+        "originals/impact/Audio/impactWood_light_002.ogg",
+        "originals/impact/Audio/impactWood_light_003.ogg",
+        "originals/impact/Audio/impactWood_light_004.ogg",
+        "originals/impact/Audio/impactWood_medium_000.ogg",
+        "originals/impact/Audio/impactWood_medium_001.ogg",
+        "originals/impact/Audio/impactWood_medium_002.ogg",
+        "originals/impact/Audio/impactWood_medium_003.ogg",
+        "originals/impact/Audio/impactWood_medium_004.ogg",
+        "originals/impact/License.txt"
+      ]
+    },
+    {
+      "id": "rpg",
+      "page": "https://kenney.nl/assets/rpg-audio",
+      "url": "https://kenney.nl/media/pages/assets/rpg-audio/8e99002d76-1677590336/kenney_rpg-audio.zip",
+      "author": "Kenney",
+      "license": "CC0-1.0",
+      "commercial": true,
+      "attribution_required": false,
+      "archive_sha256": "6dbeaf8544da958d8f2adcb4a4a4b76c1ade34a05f8ab9edccd327da7375f38b",
+      "archive_saved": false,
+      "files": [
+        "originals/rpg/License.txt",
+        "originals/rpg/Preview.ogg",
+        "originals/rpg/Audio/beltHandle1.ogg",
+        "originals/rpg/Audio/beltHandle2.ogg",
+        "originals/rpg/Audio/bookClose.ogg",
+        "originals/rpg/Audio/bookFlip1.ogg",
+        "originals/rpg/Audio/bookFlip2.ogg",
+        "originals/rpg/Audio/bookFlip3.ogg",
+        "originals/rpg/Audio/bookOpen.ogg",
+        "originals/rpg/Audio/bookPlace1.ogg",
+        "originals/rpg/Audio/bookPlace2.ogg",
+        "originals/rpg/Audio/bookPlace3.ogg",
+        "originals/rpg/Audio/chop.ogg",
+        "originals/rpg/Audio/cloth1.ogg",
+        "originals/rpg/Audio/cloth2.ogg",
+        "originals/rpg/Audio/cloth3.ogg",
+        "originals/rpg/Audio/cloth4.ogg",
+        "originals/rpg/Audio/clothBelt.ogg",
+        "originals/rpg/Audio/clothBelt2.ogg",
+        "originals/rpg/Audio/creak1.ogg",
+        "originals/rpg/Audio/creak2.ogg",
+        "originals/rpg/Audio/creak3.ogg",
+        "originals/rpg/Audio/doorClose_1.ogg",
+        "originals/rpg/Audio/doorClose_2.ogg",
+        "originals/rpg/Audio/doorClose_3.ogg",
+        "originals/rpg/Audio/doorClose_4.ogg",
+        "originals/rpg/Audio/doorOpen_1.ogg",
+        "originals/rpg/Audio/doorOpen_2.ogg",
+        "originals/rpg/Audio/drawKnife1.ogg",
+        "originals/rpg/Audio/drawKnife2.ogg",
+        "originals/rpg/Audio/drawKnife3.ogg",
+        "originals/rpg/Audio/dropLeather.ogg",
+        "originals/rpg/Audio/footstep00.ogg",
+        "originals/rpg/Audio/footstep01.ogg",
+        "originals/rpg/Audio/footstep02.ogg",
+        "originals/rpg/Audio/footstep03.ogg",
+        "originals/rpg/Audio/footstep04.ogg",
+        "originals/rpg/Audio/footstep05.ogg",
+        "originals/rpg/Audio/footstep06.ogg",
+        "originals/rpg/Audio/footstep07.ogg",
+        "originals/rpg/Audio/footstep08.ogg",
+        "originals/rpg/Audio/footstep09.ogg",
+        "originals/rpg/Audio/handleCoins.ogg",
+        "originals/rpg/Audio/handleCoins2.ogg",
+        "originals/rpg/Audio/handleSmallLeather.ogg",
+        "originals/rpg/Audio/handleSmallLeather2.ogg",
+        "originals/rpg/Audio/knifeSlice.ogg",
+        "originals/rpg/Audio/knifeSlice2.ogg",
+        "originals/rpg/Audio/metalClick.ogg",
+        "originals/rpg/Audio/metalLatch.ogg",
+        "originals/rpg/Audio/metalPot1.ogg",
+        "originals/rpg/Audio/metalPot2.ogg",
+        "originals/rpg/Audio/metalPot3.ogg"
+      ]
+    },
+    {
+      "id": "interface",
+      "page": "https://kenney.nl/assets/interface-sounds",
+      "url": "https://kenney.nl/media/pages/assets/interface-sounds/fa43c1dd4d-1677589452/kenney_interface-sounds.zip",
+      "author": "Kenney",
+      "license": "CC0-1.0",
+      "commercial": true,
+      "attribution_required": false,
+      "archive_sha256": "f2193d072726d6758a5f7871b2dcc54dcce0d5c35c6f0a62f92549b327c81232",
+      "archive_saved": false,
+      "files": [
+        "originals/interface/License.txt",
+        "originals/interface/Audio/back_001.ogg",
+        "originals/interface/Audio/back_002.ogg",
+        "originals/interface/Audio/back_003.ogg",
+        "originals/interface/Audio/back_004.ogg",
+        "originals/interface/Audio/bong_001.ogg",
+        "originals/interface/Audio/click_001.ogg",
+        "originals/interface/Audio/click_002.ogg",
+        "originals/interface/Audio/click_003.ogg",
+        "originals/interface/Audio/click_004.ogg",
+        "originals/interface/Audio/click_005.ogg",
+        "originals/interface/Audio/close_001.ogg",
+        "originals/interface/Audio/close_002.ogg",
+        "originals/interface/Audio/close_003.ogg",
+        "originals/interface/Audio/close_004.ogg",
+        "originals/interface/Audio/confirmation_001.ogg",
+        "originals/interface/Audio/confirmation_002.ogg",
+        "originals/interface/Audio/confirmation_003.ogg",
+        "originals/interface/Audio/confirmation_004.ogg",
+        "originals/interface/Audio/drop_001.ogg",
+        "originals/interface/Audio/drop_002.ogg",
+        "originals/interface/Audio/drop_003.ogg",
+        "originals/interface/Audio/drop_004.ogg",
+        "originals/interface/Audio/error_001.ogg",
+        "originals/interface/Audio/error_002.ogg",
+        "originals/interface/Audio/error_003.ogg",
+        "originals/interface/Audio/error_004.ogg",
+        "originals/interface/Audio/error_005.ogg",
+        "originals/interface/Audio/error_006.ogg",
+        "originals/interface/Audio/error_007.ogg",
+        "originals/interface/Audio/error_008.ogg",
+        "originals/interface/Audio/glass_001.ogg",
+        "originals/interface/Audio/glass_002.ogg",
+        "originals/interface/Audio/glass_003.ogg",
+        "originals/interface/Audio/glass_004.ogg",
+        "originals/interface/Audio/glass_005.ogg",
+        "originals/interface/Audio/glass_006.ogg",
+        "originals/interface/Audio/glitch_001.ogg",
+        "originals/interface/Audio/glitch_002.ogg",
+        "originals/interface/Audio/glitch_003.ogg",
+        "originals/interface/Audio/glitch_004.ogg",
+        "originals/interface/Audio/maximize_001.ogg",
+        "originals/interface/Audio/maximize_002.ogg",
+        "originals/interface/Audio/maximize_003.ogg",
+        "originals/interface/Audio/maximize_004.ogg",
+        "originals/interface/Audio/maximize_005.ogg",
+        "originals/interface/Audio/maximize_006.ogg",
+        "originals/interface/Audio/maximize_007.ogg",
+        "originals/interface/Audio/maximize_008.ogg",
+        "originals/interface/Audio/maximize_009.ogg",
+        "originals/interface/Audio/minimize_001.ogg",
+        "originals/interface/Audio/minimize_002.ogg",
+        "originals/interface/Audio/minimize_003.ogg",
+        "originals/interface/Audio/minimize_004.ogg",
+        "originals/interface/Audio/minimize_005.ogg",
+        "originals/interface/Audio/minimize_006.ogg",
+        "originals/interface/Audio/minimize_007.ogg",
+        "originals/interface/Audio/minimize_008.ogg",
+        "originals/interface/Audio/minimize_009.ogg",
+        "originals/interface/Audio/open_001.ogg",
+        "originals/interface/Audio/open_002.ogg",
+        "originals/interface/Audio/open_003.ogg",
+        "originals/interface/Audio/open_004.ogg",
+        "originals/interface/Audio/pluck_001.ogg",
+        "originals/interface/Audio/pluck_002.ogg",
+        "originals/interface/Audio/question_001.ogg",
+        "originals/interface/Audio/question_002.ogg",
+        "originals/interface/Audio/question_003.ogg",
+        "originals/interface/Audio/question_004.ogg",
+        "originals/interface/Audio/scratch_001.ogg",
+        "originals/interface/Audio/scratch_002.ogg",
+        "originals/interface/Audio/scratch_003.ogg",
+        "originals/interface/Audio/scratch_004.ogg",
+        "originals/interface/Audio/scratch_005.ogg",
+        "originals/interface/Audio/scroll_001.ogg",
+        "originals/interface/Audio/scroll_002.ogg",
+        "originals/interface/Audio/scroll_003.ogg",
+        "originals/interface/Audio/scroll_004.ogg",
+        "originals/interface/Audio/scroll_005.ogg",
+        "originals/interface/Audio/select_001.ogg",
+        "originals/interface/Audio/select_002.ogg",
+        "originals/interface/Audio/select_003.ogg",
+        "originals/interface/Audio/select_004.ogg",
+        "originals/interface/Audio/select_005.ogg",
+        "originals/interface/Audio/select_006.ogg",
+        "originals/interface/Audio/select_007.ogg",
+        "originals/interface/Audio/select_008.ogg",
+        "originals/interface/Audio/switch_001.ogg",
+        "originals/interface/Audio/switch_002.ogg",
+        "originals/interface/Audio/switch_003.ogg",
+        "originals/interface/Audio/switch_004.ogg",
+        "originals/interface/Audio/switch_005.ogg",
+        "originals/interface/Audio/switch_006.ogg",
+        "originals/interface/Audio/switch_007.ogg",
+        "originals/interface/Audio/tick_001.ogg",
+        "originals/interface/Audio/tick_002.ogg",
+        "originals/interface/Audio/tick_004.ogg",
+        "originals/interface/Audio/toggle_001.ogg",
+        "originals/interface/Audio/toggle_002.ogg",
+        "originals/interface/Audio/toggle_003.ogg",
+        "originals/interface/Audio/toggle_004.ogg"
+      ]
+    },
+    {
+      "id": "fantasy",
+      "page": "https://opengameart.org/content/80-cc0-rpg-sfx",
+      "url": "https://opengameart.org/sites/default/files/80-CC0-RPG-SFX_0.zip",
+      "author": "rubberduck",
+      "license": "CC0-1.0",
+      "commercial": true,
+      "attribution_required": false,
+      "archive_sha256": "1c2f06ff4e8563b5b8b745b23cf213c1474142a69bb82bd8f5e10d9b3f7a7bbd",
+      "archive_saved": false,
+      "files": [
+        "originals/fantasy/blade_01.ogg",
+        "originals/fantasy/blade_02.ogg",
+        "originals/fantasy/blade_03.ogg",
+        "originals/fantasy/book_01.ogg",
+        "originals/fantasy/book_02.ogg",
+        "originals/fantasy/book_03.ogg",
+        "originals/fantasy/book_04.ogg",
+        "originals/fantasy/chain_01.ogg",
+        "originals/fantasy/chain_02.ogg",
+        "originals/fantasy/chain_03.ogg",
+        "originals/fantasy/creature_die_01.ogg",
+        "originals/fantasy/creature_hurt_01.ogg",
+        "originals/fantasy/creature_hurt_02.ogg",
+        "originals/fantasy/creature_misc_01.ogg",
+        "originals/fantasy/creature_misc_02.ogg",
+        "originals/fantasy/creature_misc_03.ogg",
+        "originals/fantasy/creature_misc_04.ogg",
+        "originals/fantasy/creature_misc_05.ogg",
+        "originals/fantasy/creature_misc_06.ogg",
+        "originals/fantasy/creature_misc_07.ogg",
+        "originals/fantasy/creature_misc_08.ogg",
+        "originals/fantasy/creature_monster_01.ogg",
+        "originals/fantasy/creature_monster_02.ogg",
+        "originals/fantasy/creature_monster_03.ogg",
+        "originals/fantasy/creature_monster_04.ogg",
+        "originals/fantasy/creature_roar_01.ogg",
+        "originals/fantasy/creature_roar_02.ogg",
+        "originals/fantasy/creature_roar_03.ogg",
+        "originals/fantasy/creature_slime_01.ogg",
+        "originals/fantasy/creature_slime_02.ogg",
+        "originals/fantasy/creature_slime_03.ogg",
+        "originals/fantasy/creature_slime_04.ogg",
+        "originals/fantasy/item_coins_01.ogg",
+        "originals/fantasy/item_coins_02.ogg",
+        "originals/fantasy/item_coins_03.ogg",
+        "originals/fantasy/item_coins_04.ogg",
+        "originals/fantasy/item_gem_01.ogg",
+        "originals/fantasy/item_gem_02.ogg",
+        "originals/fantasy/item_gem_03.ogg",
+        "originals/fantasy/item_gem_04.ogg",
+        "originals/fantasy/item_misc_01.ogg",
+        "originals/fantasy/item_misc_02.ogg",
+        "originals/fantasy/item_misc_03.ogg",
+        "originals/fantasy/item_misc_04.ogg",
+        "originals/fantasy/item_misc_05.ogg",
+        "originals/fantasy/item_misc_06.ogg",
+        "originals/fantasy/item_stone_01.ogg",
+        "originals/fantasy/item_stone_02.ogg",
+        "originals/fantasy/item_stone_03.ogg",
+        "originals/fantasy/item_stone_04.ogg",
+        "originals/fantasy/item_wood_01.ogg",
+        "originals/fantasy/item_wood_02.ogg",
+        "originals/fantasy/item_wood_03.ogg",
+        "originals/fantasy/lock_01.ogg",
+        "originals/fantasy/lock_02.ogg",
+        "originals/fantasy/lock_03.ogg",
+        "originals/fantasy/metal_01.ogg",
+        "originals/fantasy/metal_02.ogg",
+        "originals/fantasy/metal_03.ogg",
+        "originals/fantasy/misc_01.ogg",
+        "originals/fantasy/misc_02.ogg",
+        "originals/fantasy/misc_03.ogg",
+        "originals/fantasy/spell_01.ogg",
+        "originals/fantasy/spell_02.ogg",
+        "originals/fantasy/spell_fire_01.ogg",
+        "originals/fantasy/spell_fire_02.ogg",
+        "originals/fantasy/spell_fire_03.ogg",
+        "originals/fantasy/spell_fire_04.ogg",
+        "originals/fantasy/spell_fire_05.ogg",
+        "originals/fantasy/spell_fire_06.ogg",
+        "originals/fantasy/spell_fire_07.ogg",
+        "originals/fantasy/stones_01.ogg",
+        "originals/fantasy/stones_02.ogg",
+        "originals/fantasy/stones_03.ogg",
+        "originals/fantasy/stones_04.ogg",
+        "originals/fantasy/wood_01.ogg",
+        "originals/fantasy/wood_02.ogg",
+        "originals/fantasy/wood_03.ogg",
+        "originals/fantasy/wood_04.ogg",
+        "originals/fantasy/wood_05.ogg"
+      ]
+    },
+    {
+      "id": "dream_ambience",
+      "page": "https://opengameart.org/content/dream-2-ambience",
+      "files": [
+        "https://opengameart.org/sites/default/files/Dream%202%20%28Ambience%29_0.mp3",
+        "https://opengameart.org/sites/default/files/Dream%202%20%28Ambience%29.ogg",
+        "https://opengameart.org/sites/default/files/Dream%202%20%28Ambience%29.wav"
+      ],
+      "license": "CC0-1.0",
+      "selected_url": "https://opengameart.org/sites/default/files/Dream%202%20%28Ambience%29.wav",
+      "author": "TokyoGeisha",
+      "raw_file": "originals/music/dream_ambience.wav",
+      "sha256": "b0c3433b866fed4a8a33391aceaa6c808d37e2dfc7225e08d6832ba2a2858db7",
+      "bytes": 22842598
+    },
+    {
+      "id": "boss_music",
+      "page": "https://opengameart.org/content/determined-pursuit-epic-orchestra-loop",
+      "files": [
+        "https://opengameart.org/sites/default/files/determined_pursuit_loop.wav"
+      ],
+      "license": "CC0-1.0",
+      "selected_url": "https://opengameart.org/sites/default/files/determined_pursuit_loop.wav",
+      "author": "Emma_MA",
+      "raw_file": "originals/music/boss_music.wav",
+      "sha256": "e4f3be098b50213b56a60aefe60fffae79cd9f7c9008088f93c187ef1bbc856b",
+      "bytes": 19052830
+    },
+    {
+      "id": "mysterious",
+      "page": "https://opengameart.org/content/mysterious",
+      "files": [
+        "https://opengameart.org/sites/default/files/Mysterious.wav"
+      ],
+      "license": "CC0-1.0",
+      "selected_url": "https://opengameart.org/sites/default/files/Mysterious.wav",
+      "author": "nene",
+      "raw_file": "originals/music/mysterious.wav",
+      "sha256": "8c2a346f60fbdfe4b22cf03487988a3a41568db07c2f3aa62773527d97ce78aa",
+      "bytes": 23020378
+    },
+    {
+      "id": "new_sunrise",
+      "page": "https://opengameart.org/content/new-sunrise",
+      "files": [
+        "https://opengameart.org/sites/default/files/New%20Sunrise.wav",
+        "https://opengameart.org/sites/default/files/new_sunrise_V2_0.wav"
+      ],
+      "license": "CC0-1.0",
+      "selected_url": "https://opengameart.org/sites/default/files/new_sunrise_V2_0.wav",
+      "author": "nene",
+      "raw_file": "originals/music/new_sunrise.wav",
+      "sha256": "2e3449c57fa70e1ca12639ce3412050a2a34309674adb264dc07f4d9126902b0",
+      "bytes": 36182320
+    },
+    {
+      "id": "rising_moon",
+      "page": "https://opengameart.org/content/fantasy-rising-moon",
+      "files": [
+        "https://opengameart.org/sites/default/files/Rising_Moon_0.mp3"
+      ],
+      "license": "CC0-1.0",
+      "selected_url": "https://opengameart.org/sites/default/files/Rising_Moon_0.mp3",
+      "author": "RandomMind",
+      "raw_file": "originals/music/rising_moon.mp3",
+      "sha256": "0e56e864d19ea50cf78851baa2edbeab319fc75527140c7be7ade6ecb4c8f4d2",
+      "bytes": 5397782
+    },
+    {
+      "id": "war_horns",
+      "page": "https://opengameart.org/content/war-horns",
+      "files": [
+        "https://opengameart.org/sites/default/files/war_horns.wav",
+        "https://opengameart.org/sites/default/files/war_horns.mp3"
+      ],
+      "license": "CC0-1.0",
+      "selected_url": "https://opengameart.org/sites/default/files/war_horns.wav",
+      "author": "Eldritch Grim",
+      "raw_file": "originals/music/war_horns.wav",
+      "sha256": "a9ab4ae25ab1ee3b3452cf1f6664548212a443faa78045ffa500c34506a2252f",
+      "bytes": 8643678
+    },
+    {
+      "id": "lament",
+      "page": "https://opengameart.org/content/fantasy-lament-for-a-warriors-soul",
+      "files": [
+        "https://opengameart.org/sites/default/files/Lament_for_a_Warriors_Soul.mp3",
+        "https://opengameart.org/sites/default/files/Lament_for_a_Warriors_Soul_REUPLOAD.mp3"
+      ],
+      "license": "CC0-1.0",
+      "selected_url": "https://opengameart.org/sites/default/files/Lament_for_a_Warriors_Soul_REUPLOAD.mp3",
+      "author": "RandomMind",
+      "raw_file": "originals/music/lament.mp3",
+      "sha256": "a754242196b16c9fc21f9c2d108d7022b56867e5503fe1c99cf85cc752d4176e",
+      "bytes": 6541073
+    },
+    {
+      "id": "opening",
+      "page": "https://opengameart.org/content/opening-theme-actionsuspense",
+      "files": [
+        "https://opengameart.org/sites/default/files/opening_theme.wav",
+        "https://opengameart.org/sites/default/files/opening_theme_V2.wav"
+      ],
+      "license": "CC0-1.0",
+      "selected_url": "https://opengameart.org/sites/default/files/opening_theme.wav",
+      "author": "nene",
+      "raw_file": "originals/music/opening.wav",
+      "sha256": "77eafe5090c0ab2e3de3bbf7963737a3684fcec4aea1932ff75d595b392ce221",
+      "bytes": 15876148
+    },
+    {
+      "page": "https://opengameart.org/content/the-free-firearm-sound-library",
+      "url": "https://opengameart.org/sites/default/files/Prepared%20SFX%20Library.7z",
+      "author": "Ben Jaszczak; Brian Nelson; Kevin Heras; Matthew Nanney",
+      "license": "CC0-1.0",
+      "archive_sha256": "cc1ab5a99a0a365105c7c5dd783f4b0b1fe90938114d3ceec53856bfe005f7d6",
+      "archive_saved": false,
+      "selected_files": [
+        "Prepared SFX Library/Ruger Single Six/S_11P.wav",
+        "Prepared SFX Library/Ruger Single Six/S_14P.wav",
+        "Prepared SFX Library/Smith & Wesson 642/V_22P.wav",
+        "Prepared SFX Library/Smith & Wesson 642/V_27P.wav",
+        "Prepared SFX Library/Prepared Master Sheet.csv"
+      ]
+    },
+    {
+      "id": "freesound_398430",
+      "page": "https://freesound.org/people/NaturesTemper/sounds/398430/",
+      "author": "NaturesTemper",
+      "license": "CC0-1.0",
+      "commercial": true,
+      "attribution_required": false,
+      "raw_file": "originals/freesound/398430__naturestemper__wolf-howl.mp3",
+      "sha256": "57095fd18dad317c0829bdeb1739e551e1b97c8f7af444088b42ce5a5f7f8e93",
+      "bytes": 330545,
+      "download_method": "Chrome authenticated Download sound button after user activated and logged in; original file"
+    },
+    {
+      "id": "freesound_540065",
+      "page": "https://freesound.org/people/Nox_Sound/sounds/540065/",
+      "author": "Nox_Sound",
+      "license": "CC0-1.0",
+      "commercial": true,
+      "attribution_required": false,
+      "raw_file": "originals/freesound/540065__nox_sound__weapon_revolver_hammer_mono.wav",
+      "sha256": "12e73013c998d9226e5079de740481ac57d6f4e9ee18e78c9085da1f11a7f08e",
+      "bytes": 907894,
+      "download_method": "Chrome authenticated Download sound button after user activated and logged in; original file"
+    },
+    {
+      "id": "freesound_722902",
+      "page": "https://freesound.org/people/tkane0512/sounds/722902/",
+      "author": "tkane0512",
+      "license": "CC0-1.0",
+      "commercial": true,
+      "attribution_required": false,
+      "raw_file": "originals/freesound/722902__tkane0512__revolver-reload-break-2.wav",
+      "sha256": "14be5ab18dd13fbaf72c7c3e1d9c3af56f6ebf3fc37937ba8517331ea2aca0d9",
+      "bytes": 997098,
+      "download_method": "Chrome authenticated Download sound button"
+    }
+  ],
+  "used_source_files": [
+    {
+      "file": "originals/fantasy/blade_02.ogg",
+      "bytes": 17776,
+      "sha256": "c770afec8f62f14d3d082d5437c5cec28e2751d393df645ddd938eabc2588abd"
+    },
+    {
+      "file": "originals/fantasy/item_gem_01.ogg",
+      "bytes": 14690,
+      "sha256": "8a5d2964febb0c69cc4df2ee5257d173f2cae6960d9534df0001dbf356f27028"
+    },
+    {
+      "file": "originals/fantasy/item_gem_04.ogg",
+      "bytes": 28423,
+      "sha256": "e12eb95d0458675c2692831454ed09c7a680de966e7c705ce67a7e12560aa73a"
+    },
+    {
+      "file": "originals/fantasy/metal_01.ogg",
+      "bytes": 25403,
+      "sha256": "433d7adf123f9de425047f6dec3f7b4da510c0fd0208d4893a22be8bd22d9e34"
+    },
+    {
+      "file": "originals/fantasy/spell_01.ogg",
+      "bytes": 29121,
+      "sha256": "09821a53c418c5eeeac4fa25bada9d245e822fed302eeeae9ae4151522a45ae5"
+    },
+    {
+      "file": "originals/fantasy/spell_02.ogg",
+      "bytes": 25118,
+      "sha256": "bf9c48b76921e56aa266172d969a2c08215d6ce0ffae7c3584f23fa05d3f8bd4"
+    },
+    {
+      "file": "originals/fantasy/spell_fire_03.ogg",
+      "bytes": 71801,
+      "sha256": "2e4edee4ff8d7898198f1ab5213e086965e14a665cb947d53759505e28ddd3e4"
+    },
+    {
+      "file": "originals/fantasy/stones_01.ogg",
+      "bytes": 27110,
+      "sha256": "d11ce95031c2c36ae2a00979620fa95a7a3f5c6d6f2ac86962ed292aa556be8d"
+    },
+    {
+      "file": "originals/fantasy/stones_02.ogg",
+      "bytes": 35982,
+      "sha256": "57dc6b85ee986e68ddc4b7fb2b41cc1c885151677d32439fdb299492a3103a65"
+    },
+    {
+      "file": "originals/fantasy/stones_03.ogg",
+      "bytes": 41046,
+      "sha256": "b86d143d7ef4974c2b97fda9e5d1861482646eec754e15935eeb3680ea0d71da"
+    },
+    {
+      "file": "originals/fantasy/stones_04.ogg",
+      "bytes": 20176,
+      "sha256": "66f1cef820f66d86414d481b37a48a7b7ea11f4a5d7358372ebcfb506af0e652"
+    },
+    {
+      "file": "originals/fantasy/wood_02.ogg",
+      "bytes": 10311,
+      "sha256": "e64b95a1ec7675f28f8837ee4e4e81aa8e5b28e272159a0b3ed124fed037fc4f"
+    },
+    {
+      "file": "originals/fantasy/wood_03.ogg",
+      "bytes": 14089,
+      "sha256": "64bc25ac915ded78136ef36f71867b08ac462b9178f7db9b461dafaea0a27fdd"
+    },
+    {
+      "file": "originals/fantasy/wood_05.ogg",
+      "bytes": 14208,
+      "sha256": "767fbe18abd5c37ced7d9fa86b36862f9680abb79bb0acda448f70850675e7bf"
+    },
+    {
+      "file": "originals/firearm/Prepared SFX Library/Smith & Wesson 642/V_27P.wav",
+      "bytes": 6034334,
+      "sha256": "dc9a11f7e6544139f38cadccf3373fed733f2e000caca1b2328575293838fc58"
+    },
+    {
+      "file": "originals/freesound/398430__naturestemper__wolf-howl.mp3",
+      "bytes": 330545,
+      "sha256": "57095fd18dad317c0829bdeb1739e551e1b97c8f7af444088b42ce5a5f7f8e93"
+    },
+    {
+      "file": "originals/freesound/722902__tkane0512__revolver-reload-break-2.wav",
+      "bytes": 997098,
+      "sha256": "14be5ab18dd13fbaf72c7c3e1d9c3af56f6ebf3fc37937ba8517331ea2aca0d9"
+    },
+    {
+      "file": "originals/impact/Audio/impactGlass_heavy_001.ogg",
+      "bytes": 8946,
+      "sha256": "58686e0e562612cc566791844a10e269f8d1921f4766c14ba43976fd0a429f4e"
+    },
+    {
+      "file": "originals/impact/Audio/impactGlass_heavy_003.ogg",
+      "bytes": 6956,
+      "sha256": "aed07b154f24410c17e5262bbef832842fb275d41fe297f721af7501d0e9c23a"
+    },
+    {
+      "file": "originals/impact/Audio/impactGlass_light_000.ogg",
+      "bytes": 6526,
+      "sha256": "d750cf88097d0c3e69920e6e14496e1444e1a9da01aa4cca8f5ec8cb44c57b4f"
+    },
+    {
+      "file": "originals/impact/Audio/impactGlass_medium_000.ogg",
+      "bytes": 8400,
+      "sha256": "9252d50bfb85edb17d6073c4a7806e10cdb9de56d3dbfc93a4b9727146d2df6d"
+    },
+    {
+      "file": "originals/impact/Audio/impactMetal_medium_002.ogg",
+      "bytes": 5857,
+      "sha256": "7e89ce2ca0dbda95ea2b78d4b50791cab35c10d20e9f5ccd45dd0b00e99ff548"
+    },
+    {
+      "file": "originals/impact/Audio/impactMining_001.ogg",
+      "bytes": 11481,
+      "sha256": "61235a18de3f3d92118235398222dbf51d448f1be70b1c8bc962b10b86f2d9c6"
+    },
+    {
+      "file": "originals/impact/Audio/impactMining_002.ogg",
+      "bytes": 11235,
+      "sha256": "059558ec751115ca6b1441e00f0adc837c1a3eeb0a066b109e0fd879fc5d0b0c"
+    },
+    {
+      "file": "originals/impact/Audio/impactMining_003.ogg",
+      "bytes": 12160,
+      "sha256": "4237fa2cd80364ad81cd0af44f67d7497f1c5edcc7bdb02cd22be2ba4580c83d"
+    },
+    {
+      "file": "originals/impact/Audio/impactPlate_heavy_002.ogg",
+      "bytes": 10188,
+      "sha256": "b0cab75d1befa32b4cf215d8ee7e1c400a39182e8b105963b8e310f825b198a1"
+    },
+    {
+      "file": "originals/impact/Audio/impactPunch_medium_000.ogg",
+      "bytes": 8800,
+      "sha256": "486988aa2d6440ffc4c62a0e8ccf3c23673ba84424bd4723378d451b7255eb5c"
+    },
+    {
+      "file": "originals/impact/Audio/impactPunch_medium_001.ogg",
+      "bytes": 8701,
+      "sha256": "e71d23abcc3f10d9d6bc9615b2a431fff70b12333a5fcdd9964457564ace4349"
+    },
+    {
+      "file": "originals/impact/Audio/impactPunch_medium_002.ogg",
+      "bytes": 10399,
+      "sha256": "6492f9ccbc8d24dcef607bb1b48790b7870961474561f7fe5601e1c73a3018ef"
+    },
+    {
+      "file": "originals/impact/Audio/impactSoft_heavy_000.ogg",
+      "bytes": 6570,
+      "sha256": "49e7ca88743fca974bb8676ea138b751cfd8f9033b5e7af8736c2a215d6edbc1"
+    },
+    {
+      "file": "originals/impact/Audio/impactSoft_heavy_001.ogg",
+      "bytes": 6689,
+      "sha256": "4d0096364ba9e46119d2ff6df493fdc101bd2e1efae061da5e5f77a53b3fdcb6"
+    },
+    {
+      "file": "originals/impact/Audio/impactWood_heavy_001.ogg",
+      "bytes": 6239,
+      "sha256": "f1b07a53ac10c615fff9ba470511fdeb722b5902e1a8520759fc20ad6f546015"
+    },
+    {
+      "file": "originals/interface/Audio/click_003.ogg",
+      "bytes": 4371,
+      "sha256": "2fa929138bc3a0f432696588f66eac94b8f6d463905ec8808c6461ce4b054292"
+    },
+    {
+      "file": "originals/music/boss_music.wav",
+      "bytes": 19052830,
+      "sha256": "e4f3be098b50213b56a60aefe60fffae79cd9f7c9008088f93c187ef1bbc856b"
+    },
+    {
+      "file": "originals/music/dream_ambience.wav",
+      "bytes": 22842598,
+      "sha256": "b0c3433b866fed4a8a33391aceaa6c808d37e2dfc7225e08d6832ba2a2858db7"
+    },
+    {
+      "file": "originals/music/lament.mp3",
+      "bytes": 6541073,
+      "sha256": "a754242196b16c9fc21f9c2d108d7022b56867e5503fe1c99cf85cc752d4176e"
+    },
+    {
+      "file": "originals/music/mysterious.wav",
+      "bytes": 23020378,
+      "sha256": "8c2a346f60fbdfe4b22cf03487988a3a41568db07c2f3aa62773527d97ce78aa"
+    },
+    {
+      "file": "originals/music/new_sunrise.wav",
+      "bytes": 36182320,
+      "sha256": "2e3449c57fa70e1ca12639ce3412050a2a34309674adb264dc07f4d9126902b0"
+    },
+    {
+      "file": "originals/music/opening.wav",
+      "bytes": 15876148,
+      "sha256": "77eafe5090c0ab2e3de3bbf7963737a3684fcec4aea1932ff75d595b392ce221"
+    },
+    {
+      "file": "originals/music/war_horns.wav",
+      "bytes": 8643678,
+      "sha256": "a9ab4ae25ab1ee3b3452cf1f6664548212a443faa78045ffa500c34506a2252f"
+    },
+    {
+      "file": "originals/rpg/Audio/bookOpen.ogg",
+      "bytes": 8273,
+      "sha256": "953390534377222bee89ac8cd9e60a58fdc037c71a4d7c18c43cd647c7f34ba8"
+    },
+    {
+      "file": "originals/rpg/Audio/cloth1.ogg",
+      "bytes": 16508,
+      "sha256": "ddb93a3671233f95da0e0b10367f082f7eb42fa6caaddcf776410aa8833c747d"
+    },
+    {
+      "file": "originals/rpg/Audio/cloth4.ogg",
+      "bytes": 11043,
+      "sha256": "e7ab9a6c4466dea874196c61f59bf1da05cfe58748f42fadd695d441a154a99b"
+    },
+    {
+      "file": "originals/rpg/Audio/creak1.ogg",
+      "bytes": 15761,
+      "sha256": "8a346186fd297254248cab8e8117060a52a5cf2a84f603153a762108550ea95e"
+    },
+    {
+      "file": "originals/rpg/Audio/drawKnife2.ogg",
+      "bytes": 12395,
+      "sha256": "d5df6a4130cbb016f97b4883769a418917b9629cb4c21717030b186e0c73281a"
+    },
+    {
+      "file": "originals/rpg/Audio/knifeSlice.ogg",
+      "bytes": 15532,
+      "sha256": "4cd96dc630bed9840c15f1dd2306da2cc56a4da26a5d3f1a03c5a7265ac5e54f"
+    },
+    {
+      "file": "originals/rpg/Audio/metalClick.ogg",
+      "bytes": 13615,
+      "sha256": "9851a69d0c613e13bceef08060ecc4148f098ef487927cbebe270d642398a3b3"
+    }
+  ],
+  "files": [
+    {
+      "id": "ui_click",
+      "kind": "sfx",
+      "file": "candidates/sfx/ui_click.wav",
+      "sources": [
+        "originals/interface/Audio/click_003.ogg"
+      ],
+      "recipe": "界面机械轻触，裁短，低通",
+      "frequent": false,
+      "lowpass_hz": 4000,
+      "status": "candidate_pending_listening",
+      "duration_s": 0.07501133786848073,
+      "peak_dbfs": -1.000151903819357,
+      "rms_dbfs": -22.374280727555444,
+      "onset_ms": 0.022675736961451247,
+      "sample_rate": 44100,
+      "channels": 1,
+      "bit_depth": 16,
+      "last_sample": 0.0,
+      "tail_10ms_rms_dbfs": -57.64059904487003,
+      "loudness_lufs": -27.05,
+      "loudness_measurement": "EBU R128 with silence padding to 1 second (not intrinsic short-event LUFS)",
+      "true_peak_dbtp": -0.97,
+      "sha256": "188e2b77d7017135f15f8c65cf33ba22d33c7d9eaca75c5497d74e263e2a5cd9",
+      "technical_checks": {
+        "pcm16_mono_44100": true,
+        "onset_within_10ms": true,
+        "last_sample_zero": true,
+        "no_clipped_samples": true,
+        "peak_minus_1_dbfs": true,
+        "frequent_under_300ms": true
+      },
+      "listening_checks": {
+        "no_click_or_unwanted_noise": "pending",
+        "natural_decay": "pending",
+        "intended_sound_identity": "pending",
+        "nordic_timbre": "pending",
+        "relative_loudness": "pending"
+      },
+      "source_details": [
+        {
+          "file": "originals/interface/Audio/click_003.ogg",
+          "author": "Kenney",
+          "page": "https://kenney.nl/assets/interface-sounds",
+          "license": "CC0-1.0",
+          "commercial": true,
+          "attribution_required": false
+        }
+      ],
+      "original_sound_design": "Self-authored DSP/layering as described in recipe; no external AI audio service used"
+    },
+    {
+      "id": "ui_open",
+      "kind": "sfx",
+      "file": "candidates/sfx/ui_open.wav",
+      "sources": [
+        "originals/rpg/Audio/bookOpen.ogg"
+      ],
+      "recipe": "书页展开与布料感",
+      "frequent": false,
+      "lowpass_hz": 4500,
+      "status": "candidate_pending_listening",
+      "duration_s": 0.22,
+      "peak_dbfs": -1.000151903819357,
+      "rms_dbfs": -19.502166050348567,
+      "onset_ms": 0.09070294784580499,
+      "sample_rate": 44100,
+      "channels": 1,
+      "bit_depth": 16,
+      "last_sample": 0.0,
+      "tail_10ms_rms_dbfs": -97.56260367011201,
+      "loudness_lufs": -23.05,
+      "loudness_measurement": "EBU R128 with silence padding to 1 second (not intrinsic short-event LUFS)",
+      "true_peak_dbtp": -0.95,
+      "sha256": "b1b410fb8a0662a099bde2c85dd3b70a10a816e804b748f7e98116730b01aaaf",
+      "technical_checks": {
+        "pcm16_mono_44100": true,
+        "onset_within_10ms": true,
+        "last_sample_zero": true,
+        "no_clipped_samples": true,
+        "peak_minus_1_dbfs": true,
+        "frequent_under_300ms": true
+      },
+      "listening_checks": {
+        "no_click_or_unwanted_noise": "pending",
+        "natural_decay": "pending",
+        "intended_sound_identity": "pending",
+        "nordic_timbre": "pending",
+        "relative_loudness": "pending"
+      },
+      "source_details": [
+        {
+          "file": "originals/rpg/Audio/bookOpen.ogg",
+          "author": "Kenney",
+          "page": "https://kenney.nl/assets/rpg-audio",
+          "license": "CC0-1.0",
+          "commercial": true,
+          "attribution_required": false
+        }
+      ],
+      "original_sound_design": "Self-authored DSP/layering as described in recipe; no external AI audio service used"
+    },
+    {
+      "id": "level_up",
+      "kind": "sfx",
+      "file": "candidates/sfx/level_up.wav",
+      "sources": [],
+      "recipe": "原创上行三音冰晶提示，短混响",
+      "frequent": false,
+      "lowpass_hz": 6500,
+      "status": "candidate_pending_listening",
+      "duration_s": 1.0,
+      "peak_dbfs": -1.000151903819357,
+      "rms_dbfs": -15.158015802416129,
+      "onset_ms": 0.09070294784580499,
+      "sample_rate": 44100,
+      "channels": 1,
+      "bit_depth": 16,
+      "last_sample": 0.0,
+      "tail_10ms_rms_dbfs": -99.0448644774513,
+      "loudness_lufs": -14.5,
+      "loudness_measurement": "EBU R128 integrated",
+      "true_peak_dbtp": -1.0,
+      "sha256": "48dc534643a20499e64b82d4ac5ef257876d750443b84c031ae4c98cf215bb31",
+      "technical_checks": {
+        "pcm16_mono_44100": true,
+        "onset_within_10ms": true,
+        "last_sample_zero": true,
+        "no_clipped_samples": true,
+        "peak_minus_1_dbfs": true,
+        "frequent_under_300ms": true
+      },
+      "listening_checks": {
+        "no_click_or_unwanted_noise": "pending",
+        "natural_decay": "pending",
+        "intended_sound_identity": "pending",
+        "nordic_timbre": "pending",
+        "relative_loudness": "pending"
+      },
+      "source_details": [],
+      "original_sound_design": "Self-authored DSP/layering as described in recipe; no external AI audio service used"
+    },
+    {
+      "id": "card_pick",
+      "kind": "sfx",
+      "file": "candidates/sfx/card_pick.wav",
+      "sources": [
+        "originals/rpg/Audio/metalClick.ogg"
+      ],
+      "recipe": "锁扣确认与原创双音",
+      "frequent": false,
+      "lowpass_hz": 5000,
+      "status": "candidate_pending_listening",
+      "duration_s": 0.32,
+      "peak_dbfs": -1.000151903819357,
+      "rms_dbfs": -13.032491958172862,
+      "onset_ms": 0.022675736961451247,
+      "sample_rate": 44100,
+      "channels": 1,
+      "bit_depth": 16,
+      "last_sample": 0.0,
+      "tail_10ms_rms_dbfs": -80.3326983204577,
+      "loudness_lufs": -15.92,
+      "loudness_measurement": "EBU R128 with silence padding to 1 second (not intrinsic short-event LUFS)",
+      "true_peak_dbtp": -1.0,
+      "sha256": "d940fb13bae77674446bf837abc4677d773a8e7a0951b56c56af2bd64e721e6a",
+      "technical_checks": {
+        "pcm16_mono_44100": true,
+        "onset_within_10ms": true,
+        "last_sample_zero": true,
+        "no_clipped_samples": true,
+        "peak_minus_1_dbfs": true,
+        "frequent_under_300ms": true
+      },
+      "listening_checks": {
+        "no_click_or_unwanted_noise": "pending",
+        "natural_decay": "pending",
+        "intended_sound_identity": "pending",
+        "nordic_timbre": "pending",
+        "relative_loudness": "pending"
+      },
+      "source_details": [
+        {
+          "file": "originals/rpg/Audio/metalClick.ogg",
+          "author": "Kenney",
+          "page": "https://kenney.nl/assets/rpg-audio",
+          "license": "CC0-1.0",
+          "commercial": true,
+          "attribution_required": false
+        }
+      ],
+      "original_sound_design": "Self-authored DSP/layering as described in recipe; no external AI audio service used"
+    },
+    {
+      "id": "ult_ready",
+      "kind": "sfx",
+      "file": "candidates/sfx/ult_ready.wav",
+      "sources": [],
+      "recipe": "原创间隔双音，与升级三音节奏区分",
+      "frequent": false,
+      "lowpass_hz": 5000,
+      "status": "candidate_pending_listening",
+      "duration_s": 0.65,
+      "peak_dbfs": -1.000151903819357,
+      "rms_dbfs": -12.880688805207942,
+      "onset_ms": 0.13605442176870747,
+      "sample_rate": 44100,
+      "channels": 1,
+      "bit_depth": 16,
+      "last_sample": 0.0,
+      "tail_10ms_rms_dbfs": -72.21515774346537,
+      "loudness_lufs": -13.12,
+      "loudness_measurement": "EBU R128 integrated",
+      "true_peak_dbtp": -1.0,
+      "sha256": "2ed0423de2c8325a00135126f9bc0f6a0594733dfa2b25498e78012f243c87ed",
+      "technical_checks": {
+        "pcm16_mono_44100": true,
+        "onset_within_10ms": true,
+        "last_sample_zero": true,
+        "no_clipped_samples": true,
+        "peak_minus_1_dbfs": true,
+        "frequent_under_300ms": true
+      },
+      "listening_checks": {
+        "no_click_or_unwanted_noise": "pending",
+        "natural_decay": "pending",
+        "intended_sound_identity": "pending",
+        "nordic_timbre": "pending",
+        "relative_loudness": "pending"
+      },
+      "source_details": [],
+      "original_sound_design": "Self-authored DSP/layering as described in recipe; no external AI audio service used"
+    },
+    {
+      "id": "dash",
+      "kind": "sfx",
+      "file": "candidates/sfx/dash.wav",
+      "sources": [
+        "originals/rpg/Audio/cloth4.ogg"
+      ],
+      "recipe": "布料掠过与短风声",
+      "frequent": false,
+      "lowpass_hz": 5000,
+      "status": "candidate_pending_listening",
+      "duration_s": 0.2,
+      "peak_dbfs": -1.000151903819357,
+      "rms_dbfs": -20.320982633742023,
+      "onset_ms": 0.06802721088435373,
+      "sample_rate": 44100,
+      "channels": 1,
+      "bit_depth": 16,
+      "last_sample": 0.0,
+      "tail_10ms_rms_dbfs": -61.87993595565126,
+      "loudness_lufs": -24.74,
+      "loudness_measurement": "EBU R128 with silence padding to 1 second (not intrinsic short-event LUFS)",
+      "true_peak_dbtp": -0.99,
+      "sha256": "7856b320917c4cf353d876c9e402e2c8548ea35ba86220d7d009dccc383a846a",
+      "technical_checks": {
+        "pcm16_mono_44100": true,
+        "onset_within_10ms": true,
+        "last_sample_zero": true,
+        "no_clipped_samples": true,
+        "peak_minus_1_dbfs": true,
+        "frequent_under_300ms": true
+      },
+      "listening_checks": {
+        "no_click_or_unwanted_noise": "pending",
+        "natural_decay": "pending",
+        "intended_sound_identity": "pending",
+        "nordic_timbre": "pending",
+        "relative_loudness": "pending"
+      },
+      "source_details": [
+        {
+          "file": "originals/rpg/Audio/cloth4.ogg",
+          "author": "Kenney",
+          "page": "https://kenney.nl/assets/rpg-audio",
+          "license": "CC0-1.0",
+          "commercial": true,
+          "attribution_required": false
+        }
+      ],
+      "original_sound_design": "Self-authored DSP/layering as described in recipe; no external AI audio service used"
+    },
+    {
+      "id": "player_hurt",
+      "kind": "sfx",
+      "file": "candidates/sfx/player_hurt.wav",
+      "sources": [
+        "originals/impact/Audio/impactPunch_medium_000.ogg"
+      ],
+      "recipe": "物理闷击，无人声",
+      "frequent": false,
+      "lowpass_hz": 2200,
+      "status": "candidate_pending_listening",
+      "duration_s": 0.22,
+      "peak_dbfs": -1.000151903819357,
+      "rms_dbfs": -14.854934508451008,
+      "onset_ms": 0.045351473922902494,
+      "sample_rate": 44100,
+      "channels": 1,
+      "bit_depth": 16,
+      "last_sample": 0.0,
+      "tail_10ms_rms_dbfs": -64.27451078957219,
+      "loudness_lufs": -18.45,
+      "loudness_measurement": "EBU R128 with silence padding to 1 second (not intrinsic short-event LUFS)",
+      "true_peak_dbtp": -1.0,
+      "sha256": "d0e998244f5176d9b83fec9811e9ab3158bef607fc981e6eeb786fc18892c986",
+      "technical_checks": {
+        "pcm16_mono_44100": true,
+        "onset_within_10ms": true,
+        "last_sample_zero": true,
+        "no_clipped_samples": true,
+        "peak_minus_1_dbfs": true,
+        "frequent_under_300ms": true
+      },
+      "listening_checks": {
+        "no_click_or_unwanted_noise": "pending",
+        "natural_decay": "pending",
+        "intended_sound_identity": "pending",
+        "nordic_timbre": "pending",
+        "relative_loudness": "pending"
+      },
+      "source_details": [
+        {
+          "file": "originals/impact/Audio/impactPunch_medium_000.ogg",
+          "author": "Kenney",
+          "page": "https://kenney.nl/assets/impact-sounds",
+          "license": "CC0-1.0",
+          "commercial": true,
+          "attribution_required": false
+        }
+      ],
+      "original_sound_design": "Self-authored DSP/layering as described in recipe; no external AI audio service used"
+    },
+    {
+      "id": "player_death",
+      "kind": "sfx",
+      "file": "candidates/sfx/player_death.wav",
+      "sources": [
+        "originals/impact/Audio/impactSoft_heavy_000.ogg",
+        "originals/impact/Audio/impactWood_heavy_001.ogg"
+      ],
+      "recipe": "沉重倒地，低鼓余音，无人声",
+      "frequent": false,
+      "lowpass_hz": 2800,
+      "status": "candidate_pending_listening",
+      "duration_s": 2.0,
+      "peak_dbfs": -1.000151903819357,
+      "rms_dbfs": -19.52787584707641,
+      "onset_ms": 0.022675736961451247,
+      "sample_rate": 44100,
+      "channels": 1,
+      "bit_depth": 16,
+      "last_sample": 0.0,
+      "tail_10ms_rms_dbfs": -71.39083118711427,
+      "loudness_lufs": -18.33,
+      "loudness_measurement": "EBU R128 integrated",
+      "true_peak_dbtp": -1.0,
+      "sha256": "9ea43a0e25e8c6223438dbbbc91a36e08588f5ac6206741db6217d3bbe20f365",
+      "technical_checks": {
+        "pcm16_mono_44100": true,
+        "onset_within_10ms": true,
+        "last_sample_zero": true,
+        "no_clipped_samples": true,
+        "peak_minus_1_dbfs": true,
+        "frequent_under_300ms": true
+      },
+      "listening_checks": {
+        "no_click_or_unwanted_noise": "pending",
+        "natural_decay": "pending",
+        "intended_sound_identity": "pending",
+        "nordic_timbre": "pending",
+        "relative_loudness": "pending"
+      },
+      "source_details": [
+        {
+          "file": "originals/impact/Audio/impactSoft_heavy_000.ogg",
+          "author": "Kenney",
+          "page": "https://kenney.nl/assets/impact-sounds",
+          "license": "CC0-1.0",
+          "commercial": true,
+          "attribution_required": false
+        },
+        {
+          "file": "originals/impact/Audio/impactWood_heavy_001.ogg",
+          "author": "Kenney",
+          "page": "https://kenney.nl/assets/impact-sounds",
+          "license": "CC0-1.0",
+          "commercial": true,
+          "attribution_required": false
+        }
+      ],
+      "original_sound_design": "Self-authored DSP/layering as described in recipe; no external AI audio service used"
+    },
+    {
+      "id": "revive",
+      "kind": "sfx",
+      "file": "candidates/sfx/revive.wav",
+      "sources": [],
+      "recipe": "原创明亮和声与扩散气流",
+      "frequent": false,
+      "lowpass_hz": 6500,
+      "status": "candidate_pending_listening",
+      "duration_s": 1.2,
+      "peak_dbfs": -1.000151903819357,
+      "rms_dbfs": -16.600486634945835,
+      "onset_ms": 0.06802721088435373,
+      "sample_rate": 44100,
+      "channels": 1,
+      "bit_depth": 16,
+      "last_sample": 0.0,
+      "tail_10ms_rms_dbfs": -92.29734256113676,
+      "loudness_lufs": -15.77,
+      "loudness_measurement": "EBU R128 integrated",
+      "true_peak_dbtp": -0.99,
+      "sha256": "de4be2bbd907d27406ef212946d28aad8d1bd1a3c040ce7bde86f4a6cf5465ed",
+      "technical_checks": {
+        "pcm16_mono_44100": true,
+        "onset_within_10ms": true,
+        "last_sample_zero": true,
+        "no_clipped_samples": true,
+        "peak_minus_1_dbfs": true,
+        "frequent_under_300ms": true
+      },
+      "listening_checks": {
+        "no_click_or_unwanted_noise": "pending",
+        "natural_decay": "pending",
+        "intended_sound_identity": "pending",
+        "nordic_timbre": "pending",
+        "relative_loudness": "pending"
+      },
+      "source_details": [],
+      "original_sound_design": "Self-authored DSP/layering as described in recipe; no external AI audio service used"
+    },
+    {
+      "id": "pickup_xp_01",
+      "kind": "sfx",
+      "file": "candidates/sfx/pickup_xp_01.wav",
+      "sources": [
+        "originals/fantasy/item_gem_01.ogg"
+      ],
+      "recipe": "同源水晶样本的小幅变调，短尾，抑制高频",
+      "frequent": true,
+      "lowpass_hz": 4800,
+      "status": "candidate_pending_listening",
+      "duration_s": 0.14,
+      "peak_dbfs": -1.000151903819357,
+      "rms_dbfs": -20.66219472499656,
+      "onset_ms": 0.45351473922902497,
+      "sample_rate": 44100,
+      "channels": 1,
+      "bit_depth": 16,
+      "last_sample": 0.0,
+      "tail_10ms_rms_dbfs": -70.39904981046509,
+      "loudness_lufs": -24.55,
+      "loudness_measurement": "EBU R128 with silence padding to 1 second (not intrinsic short-event LUFS)",
+      "true_peak_dbtp": -0.99,
+      "sha256": "4179cd2d0f24bd3d2ebb7568e0c23d0ad2ed31ea22ac258e2d06469de8905ac2",
+      "technical_checks": {
+        "pcm16_mono_44100": true,
+        "onset_within_10ms": true,
+        "last_sample_zero": true,
+        "no_clipped_samples": true,
+        "peak_minus_1_dbfs": true,
+        "frequent_under_300ms": true,
+        "variant_rms_spread_within_1_5_db": true
+      },
+      "listening_checks": {
+        "no_click_or_unwanted_noise": "pending",
+        "natural_decay": "pending",
+        "intended_sound_identity": "pending",
+        "nordic_timbre": "pending",
+        "relative_loudness": "pending",
+        "one_minute_not_fatiguing": "pending"
+      },
+      "source_details": [
+        {
+          "file": "originals/fantasy/item_gem_01.ogg",
+          "author": "rubberduck",
+          "page": "https://opengameart.org/content/80-cc0-rpg-sfx",
+          "license": "CC0-1.0",
+          "commercial": true,
+          "attribution_required": false
+        }
+      ],
+      "original_sound_design": "Self-authored DSP/layering as described in recipe; no external AI audio service used"
+    },
+    {
+      "id": "katana_slash_01",
+      "kind": "sfx",
+      "file": "candidates/sfx/katana_slash_01.wav",
+      "sources": [
+        "originals/fantasy/blade_02.ogg"
+      ],
+      "recipe": "同源刀刃样本的小幅变调，干净短促破空",
+      "frequent": true,
+      "lowpass_hz": 5200,
+      "status": "candidate_pending_listening",
+      "duration_s": 0.23,
+      "peak_dbfs": -1.000151903819357,
+      "rms_dbfs": -17.90734510127123,
+      "onset_ms": 0.18140589569160998,
+      "sample_rate": 44100,
+      "channels": 1,
+      "bit_depth": 16,
+      "last_sample": 0.0,
+      "tail_10ms_rms_dbfs": -77.10701755598774,
+      "loudness_lufs": -18.66,
+      "loudness_measurement": "EBU R128 with silence padding to 1 second (not intrinsic short-event LUFS)",
+      "true_peak_dbtp": -0.71,
+      "sha256": "3f0be34ab5d03424dc9bc99799c6694912643daa9e2970d57f94cbcdd3e4da19",
+      "technical_checks": {
+        "pcm16_mono_44100": true,
+        "onset_within_10ms": true,
+        "last_sample_zero": true,
+        "no_clipped_samples": true,
+        "peak_minus_1_dbfs": true,
+        "frequent_under_300ms": true,
+        "variant_rms_spread_within_1_5_db": true
+      },
+      "listening_checks": {
+        "no_click_or_unwanted_noise": "pending",
+        "natural_decay": "pending",
+        "intended_sound_identity": "pending",
+        "nordic_timbre": "pending",
+        "relative_loudness": "pending",
+        "one_minute_not_fatiguing": "pending"
+      },
+      "source_details": [
+        {
+          "file": "originals/fantasy/blade_02.ogg",
+          "author": "rubberduck",
+          "page": "https://opengameart.org/content/80-cc0-rpg-sfx",
+          "license": "CC0-1.0",
+          "commercial": true,
+          "attribution_required": false
+        }
+      ],
+      "original_sound_design": "Self-authored DSP/layering as described in recipe; no external AI audio service used"
+    },
+    {
+      "id": "blades_slash_01",
+      "kind": "sfx",
+      "file": "candidates/sfx/blades_slash_01.wav",
+      "sources": [
+        "originals/rpg/Audio/knifeSlice.ogg"
+      ],
+      "recipe": "刀片破空变速，快于太刀",
+      "frequent": true,
+      "lowpass_hz": 5600,
+      "status": "candidate_pending_listening",
+      "duration_s": 0.15,
+      "peak_dbfs": -1.000151903819357,
+      "rms_dbfs": -17.508842532896097,
+      "onset_ms": 0.022675736961451247,
+      "sample_rate": 44100,
+      "channels": 1,
+      "bit_depth": 16,
+      "last_sample": 0.0,
+      "tail_10ms_rms_dbfs": -36.497193145081624,
+      "loudness_lufs": -20.39,
+      "loudness_measurement": "EBU R128 with silence padding to 1 second (not intrinsic short-event LUFS)",
+      "true_peak_dbtp": -0.95,
+      "sha256": "62991a6058912a19fac4910e1de1ba96c8a2a8305cde3f7d5b0c894226a8a088",
+      "technical_checks": {
+        "pcm16_mono_44100": true,
+        "onset_within_10ms": true,
+        "last_sample_zero": true,
+        "no_clipped_samples": true,
+        "peak_minus_1_dbfs": true,
+        "frequent_under_300ms": true,
+        "variant_rms_spread_within_1_5_db": true
+      },
+      "listening_checks": {
+        "no_click_or_unwanted_noise": "pending",
+        "natural_decay": "pending",
+        "intended_sound_identity": "pending",
+        "nordic_timbre": "pending",
+        "relative_loudness": "pending",
+        "one_minute_not_fatiguing": "pending"
+      },
+      "source_details": [
+        {
+          "file": "originals/rpg/Audio/knifeSlice.ogg",
+          "author": "Kenney",
+          "page": "https://kenney.nl/assets/rpg-audio",
+          "license": "CC0-1.0",
+          "commercial": true,
+          "attribution_required": false
+        }
+      ],
+      "original_sound_design": "Self-authored DSP/layering as described in recipe; no external AI audio service used"
+    },
+    {
+      "id": "lightning_01",
+      "kind": "sfx",
+      "file": "candidates/sfx/lightning_01.wav",
+      "sources": [
+        "originals/impact/Audio/impactGlass_medium_000.ogg"
+      ],
+      "recipe": "玻璃裂纹、短电弧噪声和低频雷击",
+      "frequent": true,
+      "lowpass_hz": 6000,
+      "status": "candidate_pending_listening",
+      "duration_s": 0.22,
+      "peak_dbfs": -1.000151903819357,
+      "rms_dbfs": -17.877177306983004,
+      "onset_ms": 0.022675736961451247,
+      "sample_rate": 44100,
+      "channels": 1,
+      "bit_depth": 16,
+      "last_sample": 0.0,
+      "tail_10ms_rms_dbfs": -60.989706145703444,
+      "loudness_lufs": -24.11,
+      "loudness_measurement": "EBU R128 with silence padding to 1 second (not intrinsic short-event LUFS)",
+      "true_peak_dbtp": -0.98,
+      "sha256": "665f45accf813feccca7c046e7985f1d509380d5cb6d5302c51db7e5e4b9bdc3",
+      "technical_checks": {
+        "pcm16_mono_44100": true,
+        "onset_within_10ms": true,
+        "last_sample_zero": true,
+        "no_clipped_samples": true,
+        "peak_minus_1_dbfs": true,
+        "frequent_under_300ms": true,
+        "variant_rms_spread_within_1_5_db": true
+      },
+      "listening_checks": {
+        "no_click_or_unwanted_noise": "pending",
+        "natural_decay": "pending",
+        "intended_sound_identity": "pending",
+        "nordic_timbre": "pending",
+        "relative_loudness": "pending",
+        "one_minute_not_fatiguing": "pending"
+      },
+      "source_details": [
+        {
+          "file": "originals/impact/Audio/impactGlass_medium_000.ogg",
+          "author": "Kenney",
+          "page": "https://kenney.nl/assets/impact-sounds",
+          "license": "CC0-1.0",
+          "commercial": true,
+          "attribution_required": false
+        }
+      ],
+      "original_sound_design": "Self-authored DSP/layering as described in recipe; no external AI audio service used"
+    },
+    {
+      "id": "enemy_hit_01",
+      "kind": "sfx",
+      "file": "candidates/sfx/enemy_hit_01.wav",
+      "sources": [
+        "originals/impact/Audio/impactPunch_medium_000.ogg"
+      ],
+      "recipe": "三种独立闷击，短干低通",
+      "frequent": true,
+      "lowpass_hz": 2800,
+      "status": "candidate_pending_listening",
+      "duration_s": 0.12,
+      "peak_dbfs": -1.000151903819357,
+      "rms_dbfs": -12.715790617213433,
+      "onset_ms": 0.36281179138321995,
+      "sample_rate": 44100,
+      "channels": 1,
+      "bit_depth": 16,
+      "last_sample": 0.0,
+      "tail_10ms_rms_dbfs": -61.905704040507985,
+      "loudness_lufs": -18.85,
+      "loudness_measurement": "EBU R128 with silence padding to 1 second (not intrinsic short-event LUFS)",
+      "true_peak_dbtp": -1.0,
+      "sha256": "d624bb6b4218ae5c0c3f6344ceb725998ac855fcccee1040962a0ebf47d1115e",
+      "technical_checks": {
+        "pcm16_mono_44100": true,
+        "onset_within_10ms": true,
+        "last_sample_zero": true,
+        "no_clipped_samples": true,
+        "peak_minus_1_dbfs": true,
+        "frequent_under_300ms": true,
+        "variant_rms_spread_within_1_5_db": true
+      },
+      "listening_checks": {
+        "no_click_or_unwanted_noise": "pending",
+        "natural_decay": "pending",
+        "intended_sound_identity": "pending",
+        "nordic_timbre": "pending",
+        "relative_loudness": "pending",
+        "one_minute_not_fatiguing": "pending"
+      },
+      "source_details": [
+        {
+          "file": "originals/impact/Audio/impactPunch_medium_000.ogg",
+          "author": "Kenney",
+          "page": "https://kenney.nl/assets/impact-sounds",
+          "license": "CC0-1.0",
+          "commercial": true,
+          "attribution_required": false
+        }
+      ],
+      "original_sound_design": "Self-authored DSP/layering as described in recipe; no external AI audio service used"
+    },
+    {
+      "id": "enemy_death_01",
+      "kind": "sfx",
+      "file": "candidates/sfx/enemy_death_01.wav",
+      "sources": [
+        "originals/fantasy/stones_03.ogg",
+        "originals/impact/Audio/impactGlass_light_000.ogg"
+      ],
+      "recipe": "同源石块与冰裂小幅变调，短衰减",
+      "frequent": true,
+      "lowpass_hz": 4800,
+      "status": "candidate_pending_listening",
+      "duration_s": 0.25,
+      "peak_dbfs": -1.000151903819357,
+      "rms_dbfs": -23.597101366189396,
+      "onset_ms": 0.24943310657596374,
+      "sample_rate": 44100,
+      "channels": 1,
+      "bit_depth": 16,
+      "last_sample": 0.0,
+      "tail_10ms_rms_dbfs": -93.06122601977131,
+      "loudness_lufs": -23.84,
+      "loudness_measurement": "EBU R128 with silence padding to 1 second (not intrinsic short-event LUFS)",
+      "true_peak_dbtp": -1.0,
+      "sha256": "2487c49a22e630a91b5484898b0249c9d8f2f3092dcbb434b0b8fb3eb9fc4d21",
+      "technical_checks": {
+        "pcm16_mono_44100": true,
+        "onset_within_10ms": true,
+        "last_sample_zero": true,
+        "no_clipped_samples": true,
+        "peak_minus_1_dbfs": true,
+        "frequent_under_300ms": true,
+        "variant_rms_spread_within_1_5_db": true
+      },
+      "listening_checks": {
+        "no_click_or_unwanted_noise": "pending",
+        "natural_decay": "pending",
+        "intended_sound_identity": "pending",
+        "nordic_timbre": "pending",
+        "relative_loudness": "pending",
+        "one_minute_not_fatiguing": "pending"
+      },
+      "source_details": [
+        {
+          "file": "originals/fantasy/stones_03.ogg",
+          "author": "rubberduck",
+          "page": "https://opengameart.org/content/80-cc0-rpg-sfx",
+          "license": "CC0-1.0",
+          "commercial": true,
+          "attribution_required": false
+        },
+        {
+          "file": "originals/impact/Audio/impactGlass_light_000.ogg",
+          "author": "Kenney",
+          "page": "https://kenney.nl/assets/impact-sounds",
+          "license": "CC0-1.0",
+          "commercial": true,
+          "attribution_required": false
+        }
+      ],
+      "original_sound_design": "Self-authored DSP/layering as described in recipe; no external AI audio service used"
+    },
+    {
+      "id": "pickup_xp_02",
+      "kind": "sfx",
+      "file": "candidates/sfx/pickup_xp_02.wav",
+      "sources": [
+        "originals/fantasy/item_gem_01.ogg"
+      ],
+      "recipe": "同源水晶样本的小幅变调，短尾，抑制高频",
+      "frequent": true,
+      "lowpass_hz": 4800,
+      "status": "candidate_pending_listening",
+      "duration_s": 0.14,
+      "peak_dbfs": -1.000151903819357,
+      "rms_dbfs": -20.7803285673541,
+      "onset_ms": 0.4308390022675737,
+      "sample_rate": 44100,
+      "channels": 1,
+      "bit_depth": 16,
+      "last_sample": 0.0,
+      "tail_10ms_rms_dbfs": -72.20798474422455,
+      "loudness_lufs": -24.65,
+      "loudness_measurement": "EBU R128 with silence padding to 1 second (not intrinsic short-event LUFS)",
+      "true_peak_dbtp": -0.95,
+      "sha256": "4590287ede20714d12db10d463ad0f2b368e26645c838b151678becf73c9bbdd",
+      "technical_checks": {
+        "pcm16_mono_44100": true,
+        "onset_within_10ms": true,
+        "last_sample_zero": true,
+        "no_clipped_samples": true,
+        "peak_minus_1_dbfs": true,
+        "frequent_under_300ms": true,
+        "variant_rms_spread_within_1_5_db": true
+      },
+      "listening_checks": {
+        "no_click_or_unwanted_noise": "pending",
+        "natural_decay": "pending",
+        "intended_sound_identity": "pending",
+        "nordic_timbre": "pending",
+        "relative_loudness": "pending",
+        "one_minute_not_fatiguing": "pending"
+      },
+      "source_details": [
+        {
+          "file": "originals/fantasy/item_gem_01.ogg",
+          "author": "rubberduck",
+          "page": "https://opengameart.org/content/80-cc0-rpg-sfx",
+          "license": "CC0-1.0",
+          "commercial": true,
+          "attribution_required": false
+        }
+      ],
+      "original_sound_design": "Self-authored DSP/layering as described in recipe; no external AI audio service used"
+    },
+    {
+      "id": "katana_slash_02",
+      "kind": "sfx",
+      "file": "candidates/sfx/katana_slash_02.wav",
+      "sources": [
+        "originals/fantasy/blade_02.ogg"
+      ],
+      "recipe": "同源刀刃样本的小幅变调，干净短促破空",
+      "frequent": true,
+      "lowpass_hz": 5200,
+      "status": "candidate_pending_listening",
+      "duration_s": 0.23,
+      "peak_dbfs": -1.000151903819357,
+      "rms_dbfs": -18.21707867292211,
+      "onset_ms": 0.18140589569160998,
+      "sample_rate": 44100,
+      "channels": 1,
+      "bit_depth": 16,
+      "last_sample": 0.0,
+      "tail_10ms_rms_dbfs": -79.01113554518355,
+      "loudness_lufs": -19.04,
+      "loudness_measurement": "EBU R128 with silence padding to 1 second (not intrinsic short-event LUFS)",
+      "true_peak_dbtp": -0.64,
+      "sha256": "b87b543726136308cb46c8eee6a6c105b0e94de6b0ad86571c542c2a8a1cc2ff",
+      "technical_checks": {
+        "pcm16_mono_44100": true,
+        "onset_within_10ms": true,
+        "last_sample_zero": true,
+        "no_clipped_samples": true,
+        "peak_minus_1_dbfs": true,
+        "frequent_under_300ms": true,
+        "variant_rms_spread_within_1_5_db": true
+      },
+      "listening_checks": {
+        "no_click_or_unwanted_noise": "pending",
+        "natural_decay": "pending",
+        "intended_sound_identity": "pending",
+        "nordic_timbre": "pending",
+        "relative_loudness": "pending",
+        "one_minute_not_fatiguing": "pending"
+      },
+      "source_details": [
+        {
+          "file": "originals/fantasy/blade_02.ogg",
+          "author": "rubberduck",
+          "page": "https://opengameart.org/content/80-cc0-rpg-sfx",
+          "license": "CC0-1.0",
+          "commercial": true,
+          "attribution_required": false
+        }
+      ],
+      "original_sound_design": "Self-authored DSP/layering as described in recipe; no external AI audio service used"
+    },
+    {
+      "id": "blades_slash_02",
+      "kind": "sfx",
+      "file": "candidates/sfx/blades_slash_02.wav",
+      "sources": [
+        "originals/rpg/Audio/knifeSlice.ogg"
+      ],
+      "recipe": "刀片破空变速，快于太刀",
+      "frequent": true,
+      "lowpass_hz": 5600,
+      "status": "candidate_pending_listening",
+      "duration_s": 0.15,
+      "peak_dbfs": -1.000151903819357,
+      "rms_dbfs": -17.160905366940135,
+      "onset_ms": 0.06802721088435373,
+      "sample_rate": 44100,
+      "channels": 1,
+      "bit_depth": 16,
+      "last_sample": 0.0,
+      "tail_10ms_rms_dbfs": -37.38159268567919,
+      "loudness_lufs": -19.89,
+      "loudness_measurement": "EBU R128 with silence padding to 1 second (not intrinsic short-event LUFS)",
+      "true_peak_dbtp": -0.96,
+      "sha256": "d700517c384b510e03b672aa7082e8d4d772220eaacc51c77ba3b3a1243b7d48",
+      "technical_checks": {
+        "pcm16_mono_44100": true,
+        "onset_within_10ms": true,
+        "last_sample_zero": true,
+        "no_clipped_samples": true,
+        "peak_minus_1_dbfs": true,
+        "frequent_under_300ms": true,
+        "variant_rms_spread_within_1_5_db": true
+      },
+      "listening_checks": {
+        "no_click_or_unwanted_noise": "pending",
+        "natural_decay": "pending",
+        "intended_sound_identity": "pending",
+        "nordic_timbre": "pending",
+        "relative_loudness": "pending",
+        "one_minute_not_fatiguing": "pending"
+      },
+      "source_details": [
+        {
+          "file": "originals/rpg/Audio/knifeSlice.ogg",
+          "author": "Kenney",
+          "page": "https://kenney.nl/assets/rpg-audio",
+          "license": "CC0-1.0",
+          "commercial": true,
+          "attribution_required": false
+        }
+      ],
+      "original_sound_design": "Self-authored DSP/layering as described in recipe; no external AI audio service used"
+    },
+    {
+      "id": "lightning_02",
+      "kind": "sfx",
+      "file": "candidates/sfx/lightning_02.wav",
+      "sources": [
+        "originals/impact/Audio/impactGlass_medium_000.ogg"
+      ],
+      "recipe": "玻璃裂纹、短电弧噪声和低频雷击",
+      "frequent": true,
+      "lowpass_hz": 6000,
+      "status": "candidate_pending_listening",
+      "duration_s": 0.22,
+      "peak_dbfs": -1.000151903819357,
+      "rms_dbfs": -17.505699867651757,
+      "onset_ms": 0.022675736961451247,
+      "sample_rate": 44100,
+      "channels": 1,
+      "bit_depth": 16,
+      "last_sample": 0.0,
+      "tail_10ms_rms_dbfs": -60.67714040748477,
+      "loudness_lufs": -23.7,
+      "loudness_measurement": "EBU R128 with silence padding to 1 second (not intrinsic short-event LUFS)",
+      "true_peak_dbtp": -1.0,
+      "sha256": "70725f8885f3a66697232763b7bdb0a8e9f71af551538828760252d7e280ca9e",
+      "technical_checks": {
+        "pcm16_mono_44100": true,
+        "onset_within_10ms": true,
+        "last_sample_zero": true,
+        "no_clipped_samples": true,
+        "peak_minus_1_dbfs": true,
+        "frequent_under_300ms": true,
+        "variant_rms_spread_within_1_5_db": true
+      },
+      "listening_checks": {
+        "no_click_or_unwanted_noise": "pending",
+        "natural_decay": "pending",
+        "intended_sound_identity": "pending",
+        "nordic_timbre": "pending",
+        "relative_loudness": "pending",
+        "one_minute_not_fatiguing": "pending"
+      },
+      "source_details": [
+        {
+          "file": "originals/impact/Audio/impactGlass_medium_000.ogg",
+          "author": "Kenney",
+          "page": "https://kenney.nl/assets/impact-sounds",
+          "license": "CC0-1.0",
+          "commercial": true,
+          "attribution_required": false
+        }
+      ],
+      "original_sound_design": "Self-authored DSP/layering as described in recipe; no external AI audio service used"
+    },
+    {
+      "id": "enemy_hit_02",
+      "kind": "sfx",
+      "file": "candidates/sfx/enemy_hit_02.wav",
+      "sources": [
+        "originals/impact/Audio/impactPunch_medium_001.ogg"
+      ],
+      "recipe": "三种独立闷击，短干低通",
+      "frequent": true,
+      "lowpass_hz": 2800,
+      "status": "candidate_pending_listening",
+      "duration_s": 0.12,
+      "peak_dbfs": -1.000151903819357,
+      "rms_dbfs": -12.376117042985289,
+      "onset_ms": 0.022675736961451247,
+      "sample_rate": 44100,
+      "channels": 1,
+      "bit_depth": 16,
+      "last_sample": 0.0,
+      "tail_10ms_rms_dbfs": -55.273046462233346,
+      "loudness_lufs": -18.45,
+      "loudness_measurement": "EBU R128 with silence padding to 1 second (not intrinsic short-event LUFS)",
+      "true_peak_dbtp": -1.0,
+      "sha256": "8a368e3bd4a87932a7f58dcb8a48617dab62321c8d1dfd8e8aa599f53070d4b8",
+      "technical_checks": {
+        "pcm16_mono_44100": true,
+        "onset_within_10ms": true,
+        "last_sample_zero": true,
+        "no_clipped_samples": true,
+        "peak_minus_1_dbfs": true,
+        "frequent_under_300ms": true,
+        "variant_rms_spread_within_1_5_db": true
+      },
+      "listening_checks": {
+        "no_click_or_unwanted_noise": "pending",
+        "natural_decay": "pending",
+        "intended_sound_identity": "pending",
+        "nordic_timbre": "pending",
+        "relative_loudness": "pending",
+        "one_minute_not_fatiguing": "pending"
+      },
+      "source_details": [
+        {
+          "file": "originals/impact/Audio/impactPunch_medium_001.ogg",
+          "author": "Kenney",
+          "page": "https://kenney.nl/assets/impact-sounds",
+          "license": "CC0-1.0",
+          "commercial": true,
+          "attribution_required": false
+        }
+      ],
+      "original_sound_design": "Self-authored DSP/layering as described in recipe; no external AI audio service used"
+    },
+    {
+      "id": "enemy_death_02",
+      "kind": "sfx",
+      "file": "candidates/sfx/enemy_death_02.wav",
+      "sources": [
+        "originals/fantasy/stones_03.ogg",
+        "originals/impact/Audio/impactGlass_light_000.ogg"
+      ],
+      "recipe": "同源石块与冰裂小幅变调，短衰减",
+      "frequent": true,
+      "lowpass_hz": 4800,
+      "status": "candidate_pending_listening",
+      "duration_s": 0.25,
+      "peak_dbfs": -1.000151903819357,
+      "rms_dbfs": -23.39373488886523,
+      "onset_ms": 0.24943310657596374,
+      "sample_rate": 44100,
+      "channels": 1,
+      "bit_depth": 16,
+      "last_sample": 0.0,
+      "tail_10ms_rms_dbfs": -94.90647028569676,
+      "loudness_lufs": -23.99,
+      "loudness_measurement": "EBU R128 with silence padding to 1 second (not intrinsic short-event LUFS)",
+      "true_peak_dbtp": -0.82,
+      "sha256": "02b03958514051eae76241fb12b079b613e37080b896e781e4c430d836017a5a",
+      "technical_checks": {
+        "pcm16_mono_44100": true,
+        "onset_within_10ms": true,
+        "last_sample_zero": true,
+        "no_clipped_samples": true,
+        "peak_minus_1_dbfs": true,
+        "frequent_under_300ms": true,
+        "variant_rms_spread_within_1_5_db": true
+      },
+      "listening_checks": {
+        "no_click_or_unwanted_noise": "pending",
+        "natural_decay": "pending",
+        "intended_sound_identity": "pending",
+        "nordic_timbre": "pending",
+        "relative_loudness": "pending",
+        "one_minute_not_fatiguing": "pending"
+      },
+      "source_details": [
+        {
+          "file": "originals/fantasy/stones_03.ogg",
+          "author": "rubberduck",
+          "page": "https://opengameart.org/content/80-cc0-rpg-sfx",
+          "license": "CC0-1.0",
+          "commercial": true,
+          "attribution_required": false
+        },
+        {
+          "file": "originals/impact/Audio/impactGlass_light_000.ogg",
+          "author": "Kenney",
+          "page": "https://kenney.nl/assets/impact-sounds",
+          "license": "CC0-1.0",
+          "commercial": true,
+          "attribution_required": false
+        }
+      ],
+      "original_sound_design": "Self-authored DSP/layering as described in recipe; no external AI audio service used"
+    },
+    {
+      "id": "pickup_xp_03",
+      "kind": "sfx",
+      "file": "candidates/sfx/pickup_xp_03.wav",
+      "sources": [
+        "originals/fantasy/item_gem_01.ogg"
+      ],
+      "recipe": "同源水晶样本的小幅变调，短尾，抑制高频",
+      "frequent": true,
+      "lowpass_hz": 4800,
+      "status": "candidate_pending_listening",
+      "duration_s": 0.14,
+      "peak_dbfs": -1.000151903819357,
+      "rms_dbfs": -20.96667212117479,
+      "onset_ms": 0.4308390022675737,
+      "sample_rate": 44100,
+      "channels": 1,
+      "bit_depth": 16,
+      "last_sample": 0.0,
+      "tail_10ms_rms_dbfs": -65.9513781862738,
+      "loudness_lufs": -24.75,
+      "loudness_measurement": "EBU R128 with silence padding to 1 second (not intrinsic short-event LUFS)",
+      "true_peak_dbtp": -0.98,
+      "sha256": "45abd29cbc3a13fad86b59f86ebb449fcaa839de8e2de031b7361da0f7eb9ee3",
+      "technical_checks": {
+        "pcm16_mono_44100": true,
+        "onset_within_10ms": true,
+        "last_sample_zero": true,
+        "no_clipped_samples": true,
+        "peak_minus_1_dbfs": true,
+        "frequent_under_300ms": true,
+        "variant_rms_spread_within_1_5_db": true
+      },
+      "listening_checks": {
+        "no_click_or_unwanted_noise": "pending",
+        "natural_decay": "pending",
+        "intended_sound_identity": "pending",
+        "nordic_timbre": "pending",
+        "relative_loudness": "pending",
+        "one_minute_not_fatiguing": "pending"
+      },
+      "source_details": [
+        {
+          "file": "originals/fantasy/item_gem_01.ogg",
+          "author": "rubberduck",
+          "page": "https://opengameart.org/content/80-cc0-rpg-sfx",
+          "license": "CC0-1.0",
+          "commercial": true,
+          "attribution_required": false
+        }
+      ],
+      "original_sound_design": "Self-authored DSP/layering as described in recipe; no external AI audio service used"
+    },
+    {
+      "id": "katana_slash_03",
+      "kind": "sfx",
+      "file": "candidates/sfx/katana_slash_03.wav",
+      "sources": [
+        "originals/fantasy/blade_02.ogg"
+      ],
+      "recipe": "同源刀刃样本的小幅变调，干净短促破空",
+      "frequent": true,
+      "lowpass_hz": 5200,
+      "status": "candidate_pending_listening",
+      "duration_s": 0.23,
+      "peak_dbfs": -1.000151903819357,
+      "rms_dbfs": -18.617783863596426,
+      "onset_ms": 0.18140589569160998,
+      "sample_rate": 44100,
+      "channels": 1,
+      "bit_depth": 16,
+      "last_sample": 0.0,
+      "tail_10ms_rms_dbfs": -76.89552841614669,
+      "loudness_lufs": -19.54,
+      "loudness_measurement": "EBU R128 with silence padding to 1 second (not intrinsic short-event LUFS)",
+      "true_peak_dbtp": -0.85,
+      "sha256": "7e6140bffabf4b588d78924c0d243b2ea6d0da97799934176242e2cd68d4c16f",
+      "technical_checks": {
+        "pcm16_mono_44100": true,
+        "onset_within_10ms": true,
+        "last_sample_zero": true,
+        "no_clipped_samples": true,
+        "peak_minus_1_dbfs": true,
+        "frequent_under_300ms": true,
+        "variant_rms_spread_within_1_5_db": true
+      },
+      "listening_checks": {
+        "no_click_or_unwanted_noise": "pending",
+        "natural_decay": "pending",
+        "intended_sound_identity": "pending",
+        "nordic_timbre": "pending",
+        "relative_loudness": "pending",
+        "one_minute_not_fatiguing": "pending"
+      },
+      "source_details": [
+        {
+          "file": "originals/fantasy/blade_02.ogg",
+          "author": "rubberduck",
+          "page": "https://opengameart.org/content/80-cc0-rpg-sfx",
+          "license": "CC0-1.0",
+          "commercial": true,
+          "attribution_required": false
+        }
+      ],
+      "original_sound_design": "Self-authored DSP/layering as described in recipe; no external AI audio service used"
+    },
+    {
+      "id": "blades_slash_03",
+      "kind": "sfx",
+      "file": "candidates/sfx/blades_slash_03.wav",
+      "sources": [
+        "originals/rpg/Audio/knifeSlice.ogg"
+      ],
+      "recipe": "刀片破空变速，快于太刀",
+      "frequent": true,
+      "lowpass_hz": 5600,
+      "status": "candidate_pending_listening",
+      "duration_s": 0.15,
+      "peak_dbfs": -1.000151903819357,
+      "rms_dbfs": -16.89054332394104,
+      "onset_ms": 0.13605442176870747,
+      "sample_rate": 44100,
+      "channels": 1,
+      "bit_depth": 16,
+      "last_sample": 0.0,
+      "tail_10ms_rms_dbfs": -44.039088615780514,
+      "loudness_lufs": -19.56,
+      "loudness_measurement": "EBU R128 with silence padding to 1 second (not intrinsic short-event LUFS)",
+      "true_peak_dbtp": -0.94,
+      "sha256": "ccc40864f931fc29b3a5e2317a4103c065fd626621552bdd0dd58b19b7b73989",
+      "technical_checks": {
+        "pcm16_mono_44100": true,
+        "onset_within_10ms": true,
+        "last_sample_zero": true,
+        "no_clipped_samples": true,
+        "peak_minus_1_dbfs": true,
+        "frequent_under_300ms": true,
+        "variant_rms_spread_within_1_5_db": true
+      },
+      "listening_checks": {
+        "no_click_or_unwanted_noise": "pending",
+        "natural_decay": "pending",
+        "intended_sound_identity": "pending",
+        "nordic_timbre": "pending",
+        "relative_loudness": "pending",
+        "one_minute_not_fatiguing": "pending"
+      },
+      "source_details": [
+        {
+          "file": "originals/rpg/Audio/knifeSlice.ogg",
+          "author": "Kenney",
+          "page": "https://kenney.nl/assets/rpg-audio",
+          "license": "CC0-1.0",
+          "commercial": true,
+          "attribution_required": false
+        }
+      ],
+      "original_sound_design": "Self-authored DSP/layering as described in recipe; no external AI audio service used"
+    },
+    {
+      "id": "lightning_03",
+      "kind": "sfx",
+      "file": "candidates/sfx/lightning_03.wav",
+      "sources": [
+        "originals/impact/Audio/impactGlass_medium_000.ogg"
+      ],
+      "recipe": "玻璃裂纹、短电弧噪声和低频雷击",
+      "frequent": true,
+      "lowpass_hz": 6000,
+      "status": "candidate_pending_listening",
+      "duration_s": 0.22,
+      "peak_dbfs": -1.000151903819357,
+      "rms_dbfs": -18.773655234686746,
+      "onset_ms": 0.022675736961451247,
+      "sample_rate": 44100,
+      "channels": 1,
+      "bit_depth": 16,
+      "last_sample": 0.0,
+      "tail_10ms_rms_dbfs": -62.18873734181474,
+      "loudness_lufs": -24.81,
+      "loudness_measurement": "EBU R128 with silence padding to 1 second (not intrinsic short-event LUFS)",
+      "true_peak_dbtp": -1.0,
+      "sha256": "df114935a3f4d9298296ad32fa1f15568ffff411fc9945d0b1f1ea87edb5c615",
+      "technical_checks": {
+        "pcm16_mono_44100": true,
+        "onset_within_10ms": true,
+        "last_sample_zero": true,
+        "no_clipped_samples": true,
+        "peak_minus_1_dbfs": true,
+        "frequent_under_300ms": true,
+        "variant_rms_spread_within_1_5_db": true
+      },
+      "listening_checks": {
+        "no_click_or_unwanted_noise": "pending",
+        "natural_decay": "pending",
+        "intended_sound_identity": "pending",
+        "nordic_timbre": "pending",
+        "relative_loudness": "pending",
+        "one_minute_not_fatiguing": "pending"
+      },
+      "source_details": [
+        {
+          "file": "originals/impact/Audio/impactGlass_medium_000.ogg",
+          "author": "Kenney",
+          "page": "https://kenney.nl/assets/impact-sounds",
+          "license": "CC0-1.0",
+          "commercial": true,
+          "attribution_required": false
+        }
+      ],
+      "original_sound_design": "Self-authored DSP/layering as described in recipe; no external AI audio service used"
+    },
+    {
+      "id": "enemy_hit_03",
+      "kind": "sfx",
+      "file": "candidates/sfx/enemy_hit_03.wav",
+      "sources": [
+        "originals/impact/Audio/impactPunch_medium_002.ogg"
+      ],
+      "recipe": "三种独立闷击，短干低通",
+      "frequent": true,
+      "lowpass_hz": 2800,
+      "status": "candidate_pending_listening",
+      "duration_s": 0.12,
+      "peak_dbfs": -1.000151903819357,
+      "rms_dbfs": -12.257623175724518,
+      "onset_ms": 0.022675736961451247,
+      "sample_rate": 44100,
+      "channels": 1,
+      "bit_depth": 16,
+      "last_sample": 0.0,
+      "tail_10ms_rms_dbfs": -43.563424977888815,
+      "loudness_lufs": -18.45,
+      "loudness_measurement": "EBU R128 with silence padding to 1 second (not intrinsic short-event LUFS)",
+      "true_peak_dbtp": -1.0,
+      "sha256": "1291c8f80650269a9c611afd5d65a373bb9cbfab3ac65de8d9959869671f764b",
+      "technical_checks": {
+        "pcm16_mono_44100": true,
+        "onset_within_10ms": true,
+        "last_sample_zero": true,
+        "no_clipped_samples": true,
+        "peak_minus_1_dbfs": true,
+        "frequent_under_300ms": true,
+        "variant_rms_spread_within_1_5_db": true
+      },
+      "listening_checks": {
+        "no_click_or_unwanted_noise": "pending",
+        "natural_decay": "pending",
+        "intended_sound_identity": "pending",
+        "nordic_timbre": "pending",
+        "relative_loudness": "pending",
+        "one_minute_not_fatiguing": "pending"
+      },
+      "source_details": [
+        {
+          "file": "originals/impact/Audio/impactPunch_medium_002.ogg",
+          "author": "Kenney",
+          "page": "https://kenney.nl/assets/impact-sounds",
+          "license": "CC0-1.0",
+          "commercial": true,
+          "attribution_required": false
+        }
+      ],
+      "original_sound_design": "Self-authored DSP/layering as described in recipe; no external AI audio service used"
+    },
+    {
+      "id": "enemy_death_03",
+      "kind": "sfx",
+      "file": "candidates/sfx/enemy_death_03.wav",
+      "sources": [
+        "originals/fantasy/stones_03.ogg",
+        "originals/impact/Audio/impactGlass_light_000.ogg"
+      ],
+      "recipe": "同源石块与冰裂小幅变调，短衰减",
+      "frequent": true,
+      "lowpass_hz": 4800,
+      "status": "candidate_pending_listening",
+      "duration_s": 0.25,
+      "peak_dbfs": -1.000151903819357,
+      "rms_dbfs": -23.424330415822922,
+      "onset_ms": 0.3854875283446712,
+      "sample_rate": 44100,
+      "channels": 1,
+      "bit_depth": 16,
+      "last_sample": 0.0,
+      "tail_10ms_rms_dbfs": -97.56260367011201,
+      "loudness_lufs": -24.13,
+      "loudness_measurement": "EBU R128 with silence padding to 1 second (not intrinsic short-event LUFS)",
+      "true_peak_dbtp": -0.99,
+      "sha256": "454c347b8471e5f61a10322ef92992e93fda1387a39250c1f43016d72026157d",
+      "technical_checks": {
+        "pcm16_mono_44100": true,
+        "onset_within_10ms": true,
+        "last_sample_zero": true,
+        "no_clipped_samples": true,
+        "peak_minus_1_dbfs": true,
+        "frequent_under_300ms": true,
+        "variant_rms_spread_within_1_5_db": true
+      },
+      "listening_checks": {
+        "no_click_or_unwanted_noise": "pending",
+        "natural_decay": "pending",
+        "intended_sound_identity": "pending",
+        "nordic_timbre": "pending",
+        "relative_loudness": "pending",
+        "one_minute_not_fatiguing": "pending"
+      },
+      "source_details": [
+        {
+          "file": "originals/fantasy/stones_03.ogg",
+          "author": "rubberduck",
+          "page": "https://opengameart.org/content/80-cc0-rpg-sfx",
+          "license": "CC0-1.0",
+          "commercial": true,
+          "attribution_required": false
+        },
+        {
+          "file": "originals/impact/Audio/impactGlass_light_000.ogg",
+          "author": "Kenney",
+          "page": "https://kenney.nl/assets/impact-sounds",
+          "license": "CC0-1.0",
+          "commercial": true,
+          "attribution_required": false
+        }
+      ],
+      "original_sound_design": "Self-authored DSP/layering as described in recipe; no external AI audio service used"
+    },
+    {
+      "id": "chest_open",
+      "kind": "sfx",
+      "file": "candidates/sfx/chest_open.wav",
+      "sources": [
+        "originals/rpg/Audio/creak1.ogg",
+        "originals/fantasy/wood_02.ogg"
+      ],
+      "recipe": "木箱开启、木件活动与原创晶光",
+      "frequent": false,
+      "lowpass_hz": 5500,
+      "status": "candidate_pending_listening",
+      "duration_s": 0.9,
+      "peak_dbfs": -1.000151903819357,
+      "rms_dbfs": -19.885824336698054,
+      "onset_ms": 0.40816326530612246,
+      "sample_rate": 44100,
+      "channels": 1,
+      "bit_depth": 16,
+      "last_sample": 0.0,
+      "tail_10ms_rms_dbfs": -240.0,
+      "loudness_lufs": -15.53,
+      "loudness_measurement": "EBU R128 integrated",
+      "true_peak_dbtp": -0.91,
+      "sha256": "49c5e96e6ae81de49ba0b17f234c8a368114dce0e775fc1a440ca3638177fab5",
+      "technical_checks": {
+        "pcm16_mono_44100": true,
+        "onset_within_10ms": true,
+        "last_sample_zero": true,
+        "no_clipped_samples": true,
+        "peak_minus_1_dbfs": true,
+        "frequent_under_300ms": true
+      },
+      "listening_checks": {
+        "no_click_or_unwanted_noise": "pending",
+        "natural_decay": "pending",
+        "intended_sound_identity": "pending",
+        "nordic_timbre": "pending",
+        "relative_loudness": "pending"
+      },
+      "source_details": [
+        {
+          "file": "originals/rpg/Audio/creak1.ogg",
+          "author": "Kenney",
+          "page": "https://kenney.nl/assets/rpg-audio",
+          "license": "CC0-1.0",
+          "commercial": true,
+          "attribution_required": false
+        },
+        {
+          "file": "originals/fantasy/wood_02.ogg",
+          "author": "rubberduck",
+          "page": "https://opengameart.org/content/80-cc0-rpg-sfx",
+          "license": "CC0-1.0",
+          "commercial": true,
+          "attribution_required": false
+        }
+      ],
+      "original_sound_design": "Self-authored DSP/layering as described in recipe; no external AI audio service used"
+    },
+    {
+      "id": "nova_cast",
+      "kind": "sfx",
+      "file": "candidates/sfx/nova_cast.wav",
+      "sources": [
+        "originals/fantasy/spell_02.ogg"
+      ],
+      "recipe": "低频魔法能量与冰冷扩散",
+      "frequent": false,
+      "lowpass_hz": 5500,
+      "status": "candidate_pending_listening",
+      "duration_s": 0.9,
+      "peak_dbfs": -1.000151903819357,
+      "rms_dbfs": -21.574124103262093,
+      "onset_ms": 0.022675736961451247,
+      "sample_rate": 44100,
+      "channels": 1,
+      "bit_depth": 16,
+      "last_sample": 0.0,
+      "tail_10ms_rms_dbfs": -64.36730396501098,
+      "loudness_lufs": -19.95,
+      "loudness_measurement": "EBU R128 integrated",
+      "true_peak_dbtp": -0.83,
+      "sha256": "ee325d0f1ba63628877552ce332ab334aff9a16e7fa1fbee1a3291020daaf88c",
+      "technical_checks": {
+        "pcm16_mono_44100": true,
+        "onset_within_10ms": true,
+        "last_sample_zero": true,
+        "no_clipped_samples": true,
+        "peak_minus_1_dbfs": true,
+        "frequent_under_300ms": true
+      },
+      "listening_checks": {
+        "no_click_or_unwanted_noise": "pending",
+        "natural_decay": "pending",
+        "intended_sound_identity": "pending",
+        "nordic_timbre": "pending",
+        "relative_loudness": "pending"
+      },
+      "source_details": [
+        {
+          "file": "originals/fantasy/spell_02.ogg",
+          "author": "rubberduck",
+          "page": "https://opengameart.org/content/80-cc0-rpg-sfx",
+          "license": "CC0-1.0",
+          "commercial": true,
+          "attribution_required": false
+        }
+      ],
+      "original_sound_design": "Self-authored DSP/layering as described in recipe; no external AI audio service used"
+    },
+    {
+      "id": "rune_bolt",
+      "kind": "sfx",
+      "file": "candidates/sfx/rune_bolt.wav",
+      "sources": [
+        "originals/fantasy/spell_01.ogg"
+      ],
+      "recipe": "魔法样本变速与轻风",
+      "frequent": false,
+      "lowpass_hz": 5000,
+      "status": "candidate_pending_listening",
+      "duration_s": 0.22,
+      "peak_dbfs": -1.000151903819357,
+      "rms_dbfs": -16.053794647948532,
+      "onset_ms": 0.06802721088435373,
+      "sample_rate": 44100,
+      "channels": 1,
+      "bit_depth": 16,
+      "last_sample": 0.0,
+      "tail_10ms_rms_dbfs": -53.5246924351074,
+      "loudness_lufs": -20.17,
+      "loudness_measurement": "EBU R128 with silence padding to 1 second (not intrinsic short-event LUFS)",
+      "true_peak_dbtp": -0.97,
+      "sha256": "1eb43997e55e0d4c7fc85632078dd9e75026c44613f101defd3e2651ae1f0443",
+      "technical_checks": {
+        "pcm16_mono_44100": true,
+        "onset_within_10ms": true,
+        "last_sample_zero": true,
+        "no_clipped_samples": true,
+        "peak_minus_1_dbfs": true,
+        "frequent_under_300ms": true
+      },
+      "listening_checks": {
+        "no_click_or_unwanted_noise": "pending",
+        "natural_decay": "pending",
+        "intended_sound_identity": "pending",
+        "nordic_timbre": "pending",
+        "relative_loudness": "pending"
+      },
+      "source_details": [
+        {
+          "file": "originals/fantasy/spell_01.ogg",
+          "author": "rubberduck",
+          "page": "https://opengameart.org/content/80-cc0-rpg-sfx",
+          "license": "CC0-1.0",
+          "commercial": true,
+          "attribution_required": false
+        }
+      ],
+      "original_sound_design": "Self-authored DSP/layering as described in recipe; no external AI audio service used"
+    },
+    {
+      "id": "feather_hit",
+      "kind": "sfx",
+      "file": "candidates/sfx/feather_hit.wav",
+      "sources": [
+        "originals/rpg/Audio/drawKnife2.ogg"
+      ],
+      "recipe": "轻金属划动",
+      "frequent": false,
+      "lowpass_hz": 5000,
+      "status": "candidate_pending_listening",
+      "duration_s": 0.19,
+      "peak_dbfs": -1.000151903819357,
+      "rms_dbfs": -16.15190904409976,
+      "onset_ms": 0.22675736961451248,
+      "sample_rate": 44100,
+      "channels": 1,
+      "bit_depth": 16,
+      "last_sample": 0.0,
+      "tail_10ms_rms_dbfs": -67.29658194981224,
+      "loudness_lufs": -18.8,
+      "loudness_measurement": "EBU R128 with silence padding to 1 second (not intrinsic short-event LUFS)",
+      "true_peak_dbtp": -1.0,
+      "sha256": "1517c989c64361fa033361cf94633708e06734a6d5156577011ac3855143ff14",
+      "technical_checks": {
+        "pcm16_mono_44100": true,
+        "onset_within_10ms": true,
+        "last_sample_zero": true,
+        "no_clipped_samples": true,
+        "peak_minus_1_dbfs": true,
+        "frequent_under_300ms": true
+      },
+      "listening_checks": {
+        "no_click_or_unwanted_noise": "pending",
+        "natural_decay": "pending",
+        "intended_sound_identity": "pending",
+        "nordic_timbre": "pending",
+        "relative_loudness": "pending"
+      },
+      "source_details": [
+        {
+          "file": "originals/rpg/Audio/drawKnife2.ogg",
+          "author": "Kenney",
+          "page": "https://kenney.nl/assets/rpg-audio",
+          "license": "CC0-1.0",
+          "commercial": true,
+          "attribution_required": false
+        }
+      ],
+      "original_sound_design": "Self-authored DSP/layering as described in recipe; no external AI audio service used"
+    },
+    {
+      "id": "fire_burn",
+      "kind": "sfx",
+      "file": "candidates/sfx/fire_burn.wav",
+      "sources": [
+        "originals/fantasy/spell_fire_03.ogg"
+      ],
+      "recipe": "火焰颗粒裁短，抑制尖锐高频",
+      "frequent": false,
+      "lowpass_hz": 3200,
+      "status": "candidate_pending_listening",
+      "duration_s": 0.24,
+      "peak_dbfs": -1.000151903819357,
+      "rms_dbfs": -19.974140959598433,
+      "onset_ms": 0.045351473922902494,
+      "sample_rate": 44100,
+      "channels": 1,
+      "bit_depth": 16,
+      "last_sample": 0.0,
+      "tail_10ms_rms_dbfs": -42.81239295525487,
+      "loudness_lufs": -23.37,
+      "loudness_measurement": "EBU R128 with silence padding to 1 second (not intrinsic short-event LUFS)",
+      "true_peak_dbtp": -0.93,
+      "sha256": "24444e784fefaa7a3889a8c240a118244a7f1a0214e31f06ef46ce88041a6e45",
+      "technical_checks": {
+        "pcm16_mono_44100": true,
+        "onset_within_10ms": true,
+        "last_sample_zero": true,
+        "no_clipped_samples": true,
+        "peak_minus_1_dbfs": true,
+        "frequent_under_300ms": true
+      },
+      "listening_checks": {
+        "no_click_or_unwanted_noise": "pending",
+        "natural_decay": "pending",
+        "intended_sound_identity": "pending",
+        "nordic_timbre": "pending",
+        "relative_loudness": "pending"
+      },
+      "source_details": [
+        {
+          "file": "originals/fantasy/spell_fire_03.ogg",
+          "author": "rubberduck",
+          "page": "https://opengameart.org/content/80-cc0-rpg-sfx",
+          "license": "CC0-1.0",
+          "commercial": true,
+          "attribution_required": false
+        }
+      ],
+      "original_sound_design": "Self-authored DSP/layering as described in recipe; no external AI audio service used"
+    },
+    {
+      "id": "ult_swordsman",
+      "kind": "sfx",
+      "file": "candidates/sfx/ult_swordsman.wav",
+      "sources": [
+        "originals/fantasy/blade_02.ogg",
+        "originals/impact/Audio/impactMetal_medium_002.ogg"
+      ],
+      "recipe": "厚重低频破空、刀锋与空间余音",
+      "frequent": false,
+      "lowpass_hz": 5000,
+      "status": "candidate_pending_listening",
+      "duration_s": 1.5,
+      "peak_dbfs": -1.000151903819357,
+      "rms_dbfs": -22.61128076168597,
+      "onset_ms": 0.045351473922902494,
+      "sample_rate": 44100,
+      "channels": 1,
+      "bit_depth": 16,
+      "last_sample": 0.0,
+      "tail_10ms_rms_dbfs": -96.62501234682102,
+      "loudness_lufs": -21.49,
+      "loudness_measurement": "EBU R128 integrated",
+      "true_peak_dbtp": -1.0,
+      "sha256": "3124012a8a1a3c2a898359b5144dd481f0511b58f2cc62c43b17fbd10683c79a",
+      "technical_checks": {
+        "pcm16_mono_44100": true,
+        "onset_within_10ms": true,
+        "last_sample_zero": true,
+        "no_clipped_samples": true,
+        "peak_minus_1_dbfs": true,
+        "frequent_under_300ms": true
+      },
+      "listening_checks": {
+        "no_click_or_unwanted_noise": "pending",
+        "natural_decay": "pending",
+        "intended_sound_identity": "pending",
+        "nordic_timbre": "pending",
+        "relative_loudness": "pending"
+      },
+      "source_details": [
+        {
+          "file": "originals/fantasy/blade_02.ogg",
+          "author": "rubberduck",
+          "page": "https://opengameart.org/content/80-cc0-rpg-sfx",
+          "license": "CC0-1.0",
+          "commercial": true,
+          "attribution_required": false
+        },
+        {
+          "file": "originals/impact/Audio/impactMetal_medium_002.ogg",
+          "author": "Kenney",
+          "page": "https://kenney.nl/assets/impact-sounds",
+          "license": "CC0-1.0",
+          "commercial": true,
+          "attribution_required": false
+        }
+      ],
+      "original_sound_design": "Self-authored DSP/layering as described in recipe; no external AI audio service used"
+    },
+    {
+      "id": "ult_assassin",
+      "kind": "sfx",
+      "file": "candidates/sfx/ult_assassin.wav",
+      "sources": [],
+      "recipe": "原创低皮鼓双击与阴冷风声",
+      "frequent": false,
+      "lowpass_hz": 3800,
+      "status": "candidate_pending_listening",
+      "duration_s": 1.4,
+      "peak_dbfs": -1.000151903819357,
+      "rms_dbfs": -18.580694789198773,
+      "onset_ms": 0.022675736961451247,
+      "sample_rate": 44100,
+      "channels": 1,
+      "bit_depth": 16,
+      "last_sample": 0.0,
+      "tail_10ms_rms_dbfs": -73.98601000186113,
+      "loudness_lufs": -19.28,
+      "loudness_measurement": "EBU R128 integrated",
+      "true_peak_dbtp": -1.0,
+      "sha256": "2cfd1fccb63bc5d3d72602a8dfc41d74263eefbbdb939ad9b4df9411d8fc0543",
+      "technical_checks": {
+        "pcm16_mono_44100": true,
+        "onset_within_10ms": true,
+        "last_sample_zero": true,
+        "no_clipped_samples": true,
+        "peak_minus_1_dbfs": true,
+        "frequent_under_300ms": true
+      },
+      "listening_checks": {
+        "no_click_or_unwanted_noise": "pending",
+        "natural_decay": "pending",
+        "intended_sound_identity": "pending",
+        "nordic_timbre": "pending",
+        "relative_loudness": "pending"
+      },
+      "source_details": [],
+      "original_sound_design": "Self-authored DSP/layering as described in recipe; no external AI audio service used"
+    },
+    {
+      "id": "ult_mage",
+      "kind": "sfx",
+      "file": "candidates/sfx/ult_mage.wav",
+      "sources": [
+        "originals/impact/Audio/impactMining_001.ogg",
+        "originals/fantasy/stones_03.ogg"
+      ],
+      "recipe": "重石落地、岩屑与低频轰鸣",
+      "frequent": false,
+      "lowpass_hz": 4000,
+      "status": "candidate_pending_listening",
+      "duration_s": 1.8,
+      "peak_dbfs": -1.000151903819357,
+      "rms_dbfs": -23.175537263255404,
+      "onset_ms": 0.022675736961451247,
+      "sample_rate": 44100,
+      "channels": 1,
+      "bit_depth": 16,
+      "last_sample": 0.0,
+      "tail_10ms_rms_dbfs": -72.75855107882822,
+      "loudness_lufs": -25.99,
+      "loudness_measurement": "EBU R128 integrated",
+      "true_peak_dbtp": -1.0,
+      "sha256": "e3851de08604d91af55dcb6d9bf1bbcb0893b6281bebe91b2e5a3da51e5db08d",
+      "technical_checks": {
+        "pcm16_mono_44100": true,
+        "onset_within_10ms": true,
+        "last_sample_zero": true,
+        "no_clipped_samples": true,
+        "peak_minus_1_dbfs": true,
+        "frequent_under_300ms": true
+      },
+      "listening_checks": {
+        "no_click_or_unwanted_noise": "pending",
+        "natural_decay": "pending",
+        "intended_sound_identity": "pending",
+        "nordic_timbre": "pending",
+        "relative_loudness": "pending"
+      },
+      "source_details": [
+        {
+          "file": "originals/impact/Audio/impactMining_001.ogg",
+          "author": "Kenney",
+          "page": "https://kenney.nl/assets/impact-sounds",
+          "license": "CC0-1.0",
+          "commercial": true,
+          "attribution_required": false
+        },
+        {
+          "file": "originals/fantasy/stones_03.ogg",
+          "author": "rubberduck",
+          "page": "https://opengameart.org/content/80-cc0-rpg-sfx",
+          "license": "CC0-1.0",
+          "commercial": true,
+          "attribution_required": false
+        }
+      ],
+      "original_sound_design": "Self-authored DSP/layering as described in recipe; no external AI audio service used"
+    },
+    {
+      "id": "big_death",
+      "kind": "sfx",
+      "file": "candidates/sfx/big_death.wav",
+      "sources": [
+        "originals/impact/Audio/impactSoft_heavy_001.ogg",
+        "originals/fantasy/wood_03.ogg"
+      ],
+      "recipe": "大型躯体倒地与木石碎屑",
+      "frequent": false,
+      "lowpass_hz": 3200,
+      "status": "candidate_pending_listening",
+      "duration_s": 1.1,
+      "peak_dbfs": -1.000151903819357,
+      "rms_dbfs": -17.719652744370666,
+      "onset_ms": 0.022675736961451247,
+      "sample_rate": 44100,
+      "channels": 1,
+      "bit_depth": 16,
+      "last_sample": 0.0,
+      "tail_10ms_rms_dbfs": -66.43352666381679,
+      "loudness_lufs": -19.66,
+      "loudness_measurement": "EBU R128 integrated",
+      "true_peak_dbtp": -1.0,
+      "sha256": "a9deaee02c5b211d3225e3bb58b9e689cebd53f5def53f0eee37151717f68519",
+      "technical_checks": {
+        "pcm16_mono_44100": true,
+        "onset_within_10ms": true,
+        "last_sample_zero": true,
+        "no_clipped_samples": true,
+        "peak_minus_1_dbfs": true,
+        "frequent_under_300ms": true
+      },
+      "listening_checks": {
+        "no_click_or_unwanted_noise": "pending",
+        "natural_decay": "pending",
+        "intended_sound_identity": "pending",
+        "nordic_timbre": "pending",
+        "relative_loudness": "pending"
+      },
+      "source_details": [
+        {
+          "file": "originals/impact/Audio/impactSoft_heavy_001.ogg",
+          "author": "Kenney",
+          "page": "https://kenney.nl/assets/impact-sounds",
+          "license": "CC0-1.0",
+          "commercial": true,
+          "attribution_required": false
+        },
+        {
+          "file": "originals/fantasy/wood_03.ogg",
+          "author": "rubberduck",
+          "page": "https://opengameart.org/content/80-cc0-rpg-sfx",
+          "license": "CC0-1.0",
+          "commercial": true,
+          "attribution_required": false
+        }
+      ],
+      "original_sound_design": "Self-authored DSP/layering as described in recipe; no external AI audio service used"
+    },
+    {
+      "id": "ice_shot",
+      "kind": "sfx",
+      "file": "candidates/sfx/ice_shot.wav",
+      "sources": [
+        "originals/fantasy/item_gem_04.ogg"
+      ],
+      "recipe": "水晶颗粒与短风",
+      "frequent": false,
+      "lowpass_hz": 5800,
+      "status": "candidate_pending_listening",
+      "duration_s": 0.22,
+      "peak_dbfs": -1.000151903819357,
+      "rms_dbfs": -15.296483799268257,
+      "onset_ms": 0.045351473922902494,
+      "sample_rate": 44100,
+      "channels": 1,
+      "bit_depth": 16,
+      "last_sample": 0.0,
+      "tail_10ms_rms_dbfs": -66.4266330031793,
+      "loudness_lufs": -18.31,
+      "loudness_measurement": "EBU R128 with silence padding to 1 second (not intrinsic short-event LUFS)",
+      "true_peak_dbtp": -1.0,
+      "sha256": "23219305ede149c958bbd1b904ad760a010ccaaea815ea1365d17c939ad93701",
+      "technical_checks": {
+        "pcm16_mono_44100": true,
+        "onset_within_10ms": true,
+        "last_sample_zero": true,
+        "no_clipped_samples": true,
+        "peak_minus_1_dbfs": true,
+        "frequent_under_300ms": true
+      },
+      "listening_checks": {
+        "no_click_or_unwanted_noise": "pending",
+        "natural_decay": "pending",
+        "intended_sound_identity": "pending",
+        "nordic_timbre": "pending",
+        "relative_loudness": "pending"
+      },
+      "source_details": [
+        {
+          "file": "originals/fantasy/item_gem_04.ogg",
+          "author": "rubberduck",
+          "page": "https://opengameart.org/content/80-cc0-rpg-sfx",
+          "license": "CC0-1.0",
+          "commercial": true,
+          "attribution_required": false
+        }
+      ],
+      "original_sound_design": "Self-authored DSP/layering as described in recipe; no external AI audio service used"
+    },
+    {
+      "id": "arrow_shot",
+      "kind": "sfx",
+      "file": "candidates/sfx/arrow_shot.wav",
+      "sources": [
+        "originals/rpg/Audio/cloth1.ogg"
+      ],
+      "recipe": "紧短布料弓弦与原创低拨弦",
+      "frequent": false,
+      "lowpass_hz": 4500,
+      "status": "candidate_pending_listening",
+      "duration_s": 0.16,
+      "peak_dbfs": -1.000151903819357,
+      "rms_dbfs": -16.602034703012805,
+      "onset_ms": 0.15873015873015872,
+      "sample_rate": 44100,
+      "channels": 1,
+      "bit_depth": 16,
+      "last_sample": 0.0,
+      "tail_10ms_rms_dbfs": -55.64857841402624,
+      "loudness_lufs": -23.92,
+      "loudness_measurement": "EBU R128 with silence padding to 1 second (not intrinsic short-event LUFS)",
+      "true_peak_dbtp": -0.98,
+      "sha256": "9df19dd38a50ab2e202698718490126142b0bf107e8d07fc662092421caa32e7",
+      "technical_checks": {
+        "pcm16_mono_44100": true,
+        "onset_within_10ms": true,
+        "last_sample_zero": true,
+        "no_clipped_samples": true,
+        "peak_minus_1_dbfs": true,
+        "frequent_under_300ms": true
+      },
+      "listening_checks": {
+        "no_click_or_unwanted_noise": "pending",
+        "natural_decay": "pending",
+        "intended_sound_identity": "pending",
+        "nordic_timbre": "pending",
+        "relative_loudness": "pending"
+      },
+      "source_details": [
+        {
+          "file": "originals/rpg/Audio/cloth1.ogg",
+          "author": "Kenney",
+          "page": "https://kenney.nl/assets/rpg-audio",
+          "license": "CC0-1.0",
+          "commercial": true,
+          "attribution_required": false
+        }
+      ],
+      "original_sound_design": "Self-authored DSP/layering as described in recipe; no external AI audio service used"
+    },
+    {
+      "id": "golem_split",
+      "kind": "sfx",
+      "file": "candidates/sfx/golem_split.wav",
+      "sources": [
+        "originals/fantasy/stones_01.ogg",
+        "originals/fantasy/metal_01.ogg",
+        "originals/fantasy/stones_04.ogg"
+      ],
+      "recipe": "硬片错落散开",
+      "frequent": false,
+      "lowpass_hz": 5200,
+      "status": "candidate_pending_listening",
+      "duration_s": 0.7,
+      "peak_dbfs": -1.000151903819357,
+      "rms_dbfs": -29.416674826983584,
+      "onset_ms": 0.3401360544217687,
+      "sample_rate": 44100,
+      "channels": 1,
+      "bit_depth": 16,
+      "last_sample": 0.0,
+      "tail_10ms_rms_dbfs": -240.0,
+      "loudness_lufs": -25.95,
+      "loudness_measurement": "EBU R128 integrated",
+      "true_peak_dbtp": -0.97,
+      "sha256": "a2f93f82200aceede5677fb24811b8ec5b04cc769839493d5c9a6204098f9efc",
+      "technical_checks": {
+        "pcm16_mono_44100": true,
+        "onset_within_10ms": true,
+        "last_sample_zero": true,
+        "no_clipped_samples": true,
+        "peak_minus_1_dbfs": true,
+        "frequent_under_300ms": true
+      },
+      "listening_checks": {
+        "no_click_or_unwanted_noise": "pending",
+        "natural_decay": "pending",
+        "intended_sound_identity": "pending",
+        "nordic_timbre": "pending",
+        "relative_loudness": "pending"
+      },
+      "source_details": [
+        {
+          "file": "originals/fantasy/stones_01.ogg",
+          "author": "rubberduck",
+          "page": "https://opengameart.org/content/80-cc0-rpg-sfx",
+          "license": "CC0-1.0",
+          "commercial": true,
+          "attribution_required": false
+        },
+        {
+          "file": "originals/fantasy/metal_01.ogg",
+          "author": "rubberduck",
+          "page": "https://opengameart.org/content/80-cc0-rpg-sfx",
+          "license": "CC0-1.0",
+          "commercial": true,
+          "attribution_required": false
+        },
+        {
+          "file": "originals/fantasy/stones_04.ogg",
+          "author": "rubberduck",
+          "page": "https://opengameart.org/content/80-cc0-rpg-sfx",
+          "license": "CC0-1.0",
+          "commercial": true,
+          "attribution_required": false
+        }
+      ],
+      "original_sound_design": "Self-authored DSP/layering as described in recipe; no external AI audio service used"
+    },
+    {
+      "id": "boss_windup",
+      "kind": "sfx",
+      "file": "candidates/sfx/boss_windup.wav",
+      "sources": [],
+      "recipe": "原创不稳定低音与逆向风，短危险提示",
+      "frequent": false,
+      "lowpass_hz": 4000,
+      "status": "candidate_pending_listening",
+      "duration_s": 0.55,
+      "peak_dbfs": -1.000151903819357,
+      "rms_dbfs": -10.709749993079445,
+      "onset_ms": 0.022675736961451247,
+      "sample_rate": 44100,
+      "channels": 1,
+      "bit_depth": 16,
+      "last_sample": 0.0,
+      "tail_10ms_rms_dbfs": -42.01111206925222,
+      "loudness_lufs": -12.0,
+      "loudness_measurement": "EBU R128 integrated",
+      "true_peak_dbtp": -1.0,
+      "sha256": "78ae337e95ecfacb94f0a06e23bd918ba106197c33c7d7326e96c569a3f37d04",
+      "technical_checks": {
+        "pcm16_mono_44100": true,
+        "onset_within_10ms": true,
+        "last_sample_zero": true,
+        "no_clipped_samples": true,
+        "peak_minus_1_dbfs": true,
+        "frequent_under_300ms": true
+      },
+      "listening_checks": {
+        "no_click_or_unwanted_noise": "pending",
+        "natural_decay": "pending",
+        "intended_sound_identity": "pending",
+        "nordic_timbre": "pending",
+        "relative_loudness": "pending"
+      },
+      "source_details": [],
+      "original_sound_design": "Self-authored DSP/layering as described in recipe; no external AI audio service used"
+    },
+    {
+      "id": "boss_slam",
+      "kind": "sfx",
+      "file": "candidates/sfx/boss_slam.wav",
+      "sources": [
+        "originals/impact/Audio/impactMining_002.ogg",
+        "originals/fantasy/stones_04.ogg"
+      ],
+      "recipe": "砸地、碎石与低频震动",
+      "frequent": false,
+      "lowpass_hz": 4000,
+      "status": "candidate_pending_listening",
+      "duration_s": 1.3,
+      "peak_dbfs": -1.000151903819357,
+      "rms_dbfs": -21.189516575997033,
+      "onset_ms": 0.022675736961451247,
+      "sample_rate": 44100,
+      "channels": 1,
+      "bit_depth": 16,
+      "last_sample": 0.0,
+      "tail_10ms_rms_dbfs": -73.3246198059616,
+      "loudness_lufs": -24.13,
+      "loudness_measurement": "EBU R128 integrated",
+      "true_peak_dbtp": -1.0,
+      "sha256": "46175729a18b9fbc9d2b49f0e8619d4eca363c2096da26f4f413e55fb1cefe4e",
+      "technical_checks": {
+        "pcm16_mono_44100": true,
+        "onset_within_10ms": true,
+        "last_sample_zero": true,
+        "no_clipped_samples": true,
+        "peak_minus_1_dbfs": true,
+        "frequent_under_300ms": true
+      },
+      "listening_checks": {
+        "no_click_or_unwanted_noise": "pending",
+        "natural_decay": "pending",
+        "intended_sound_identity": "pending",
+        "nordic_timbre": "pending",
+        "relative_loudness": "pending"
+      },
+      "source_details": [
+        {
+          "file": "originals/impact/Audio/impactMining_002.ogg",
+          "author": "Kenney",
+          "page": "https://kenney.nl/assets/impact-sounds",
+          "license": "CC0-1.0",
+          "commercial": true,
+          "attribution_required": false
+        },
+        {
+          "file": "originals/fantasy/stones_04.ogg",
+          "author": "rubberduck",
+          "page": "https://opengameart.org/content/80-cc0-rpg-sfx",
+          "license": "CC0-1.0",
+          "commercial": true,
+          "attribution_required": false
+        }
+      ],
+      "original_sound_design": "Self-authored DSP/layering as described in recipe; no external AI audio service used"
+    },
+    {
+      "id": "boss_block",
+      "kind": "sfx",
+      "file": "candidates/sfx/boss_block.wav",
+      "sources": [
+        "originals/impact/Audio/impactPlate_heavy_002.ogg",
+        "originals/impact/Audio/impactGlass_heavy_001.ogg"
+      ],
+      "recipe": "金属盾与冰层碰撞",
+      "frequent": false,
+      "lowpass_hz": 5400,
+      "status": "candidate_pending_listening",
+      "duration_s": 0.6,
+      "peak_dbfs": -1.000151903819357,
+      "rms_dbfs": -24.584965023990897,
+      "onset_ms": 0.022675736961451247,
+      "sample_rate": 44100,
+      "channels": 1,
+      "bit_depth": 16,
+      "last_sample": 0.0,
+      "tail_10ms_rms_dbfs": -64.41274435117124,
+      "loudness_lufs": -26.95,
+      "loudness_measurement": "EBU R128 integrated",
+      "true_peak_dbtp": -0.97,
+      "sha256": "714814eb95a47bfd71ffc54daa56725554f0d2c63ff491ab53ac75562094781e",
+      "technical_checks": {
+        "pcm16_mono_44100": true,
+        "onset_within_10ms": true,
+        "last_sample_zero": true,
+        "no_clipped_samples": true,
+        "peak_minus_1_dbfs": true,
+        "frequent_under_300ms": true
+      },
+      "listening_checks": {
+        "no_click_or_unwanted_noise": "pending",
+        "natural_decay": "pending",
+        "intended_sound_identity": "pending",
+        "nordic_timbre": "pending",
+        "relative_loudness": "pending"
+      },
+      "source_details": [
+        {
+          "file": "originals/impact/Audio/impactPlate_heavy_002.ogg",
+          "author": "Kenney",
+          "page": "https://kenney.nl/assets/impact-sounds",
+          "license": "CC0-1.0",
+          "commercial": true,
+          "attribution_required": false
+        },
+        {
+          "file": "originals/impact/Audio/impactGlass_heavy_001.ogg",
+          "author": "Kenney",
+          "page": "https://kenney.nl/assets/impact-sounds",
+          "license": "CC0-1.0",
+          "commercial": true,
+          "attribution_required": false
+        }
+      ],
+      "original_sound_design": "Self-authored DSP/layering as described in recipe; no external AI audio service used"
+    },
+    {
+      "id": "ice_pillar",
+      "kind": "sfx",
+      "file": "candidates/sfx/ice_pillar.wav",
+      "sources": [
+        "originals/impact/Audio/impactGlass_heavy_003.ogg",
+        "originals/fantasy/stones_02.ogg"
+      ],
+      "recipe": "冰层破裂与破土石屑",
+      "frequent": false,
+      "lowpass_hz": 5400,
+      "status": "candidate_pending_listening",
+      "duration_s": 0.8,
+      "peak_dbfs": -1.000151903819357,
+      "rms_dbfs": -20.774069534150673,
+      "onset_ms": 0.022675736961451247,
+      "sample_rate": 44100,
+      "channels": 1,
+      "bit_depth": 16,
+      "last_sample": 0.0,
+      "tail_10ms_rms_dbfs": -50.74773382395952,
+      "loudness_lufs": -24.23,
+      "loudness_measurement": "EBU R128 integrated",
+      "true_peak_dbtp": -1.0,
+      "sha256": "7c949d4198cc0fad3b8f5056e8902fee89fe8434eb1cfe8d6477abe66dc57e6e",
+      "technical_checks": {
+        "pcm16_mono_44100": true,
+        "onset_within_10ms": true,
+        "last_sample_zero": true,
+        "no_clipped_samples": true,
+        "peak_minus_1_dbfs": true,
+        "frequent_under_300ms": true
+      },
+      "listening_checks": {
+        "no_click_or_unwanted_noise": "pending",
+        "natural_decay": "pending",
+        "intended_sound_identity": "pending",
+        "nordic_timbre": "pending",
+        "relative_loudness": "pending"
+      },
+      "source_details": [
+        {
+          "file": "originals/impact/Audio/impactGlass_heavy_003.ogg",
+          "author": "Kenney",
+          "page": "https://kenney.nl/assets/impact-sounds",
+          "license": "CC0-1.0",
+          "commercial": true,
+          "attribution_required": false
+        },
+        {
+          "file": "originals/fantasy/stones_02.ogg",
+          "author": "rubberduck",
+          "page": "https://opengameart.org/content/80-cc0-rpg-sfx",
+          "license": "CC0-1.0",
+          "commercial": true,
+          "attribution_required": false
+        }
+      ],
+      "original_sound_design": "Self-authored DSP/layering as described in recipe; no external AI audio service used"
+    },
+    {
+      "id": "boss_death",
+      "kind": "sfx",
+      "file": "candidates/sfx/boss_death.wav",
+      "sources": [
+        "originals/impact/Audio/impactMining_003.ogg",
+        "originals/fantasy/stones_03.ogg",
+        "originals/fantasy/wood_05.ogg"
+      ],
+      "recipe": "连续岩木倒塌与三秒低频衰减",
+      "frequent": false,
+      "lowpass_hz": 4000,
+      "status": "candidate_pending_listening",
+      "duration_s": 3.0,
+      "peak_dbfs": -1.000151903819357,
+      "rms_dbfs": -23.735082957911906,
+      "onset_ms": 0.022675736961451247,
+      "sample_rate": 44100,
+      "channels": 1,
+      "bit_depth": 16,
+      "last_sample": 0.0,
+      "tail_10ms_rms_dbfs": -80.10884530806116,
+      "loudness_lufs": -25.44,
+      "loudness_measurement": "EBU R128 integrated",
+      "true_peak_dbtp": -1.0,
+      "sha256": "a8fda9395e531474380cfd3d0a1e3dac537e0f4cbb6c387d5094636853112535",
+      "technical_checks": {
+        "pcm16_mono_44100": true,
+        "onset_within_10ms": true,
+        "last_sample_zero": true,
+        "no_clipped_samples": true,
+        "peak_minus_1_dbfs": true,
+        "frequent_under_300ms": true
+      },
+      "listening_checks": {
+        "no_click_or_unwanted_noise": "pending",
+        "natural_decay": "pending",
+        "intended_sound_identity": "pending",
+        "nordic_timbre": "pending",
+        "relative_loudness": "pending"
+      },
+      "source_details": [
+        {
+          "file": "originals/impact/Audio/impactMining_003.ogg",
+          "author": "Kenney",
+          "page": "https://kenney.nl/assets/impact-sounds",
+          "license": "CC0-1.0",
+          "commercial": true,
+          "attribution_required": false
+        },
+        {
+          "file": "originals/fantasy/stones_03.ogg",
+          "author": "rubberduck",
+          "page": "https://opengameart.org/content/80-cc0-rpg-sfx",
+          "license": "CC0-1.0",
+          "commercial": true,
+          "attribution_required": false
+        },
+        {
+          "file": "originals/fantasy/wood_05.ogg",
+          "author": "rubberduck",
+          "page": "https://opengameart.org/content/80-cc0-rpg-sfx",
+          "license": "CC0-1.0",
+          "commercial": true,
+          "attribution_required": false
+        }
+      ],
+      "original_sound_design": "Self-authored DSP/layering as described in recipe; no external AI audio service used"
+    },
+    {
+      "id": "quest_start",
+      "kind": "sfx",
+      "file": "candidates/sfx/quest_start.wav",
+      "sources": [],
+      "recipe": "原创空五度神秘提示",
+      "frequent": false,
+      "lowpass_hz": 5000,
+      "status": "candidate_pending_listening",
+      "duration_s": 0.85,
+      "peak_dbfs": -1.000151903819357,
+      "rms_dbfs": -14.05881485585198,
+      "onset_ms": 0.06802721088435373,
+      "sample_rate": 44100,
+      "channels": 1,
+      "bit_depth": 16,
+      "last_sample": 0.0,
+      "tail_10ms_rms_dbfs": -69.43830275791248,
+      "loudness_lufs": -14.35,
+      "loudness_measurement": "EBU R128 integrated",
+      "true_peak_dbtp": -1.0,
+      "sha256": "ac589d1f55f2a8e5016b0b642d3f8f6252e3a7eebda1f5608ba811f6f42f2b8e",
+      "technical_checks": {
+        "pcm16_mono_44100": true,
+        "onset_within_10ms": true,
+        "last_sample_zero": true,
+        "no_clipped_samples": true,
+        "peak_minus_1_dbfs": true,
+        "frequent_under_300ms": true
+      },
+      "listening_checks": {
+        "no_click_or_unwanted_noise": "pending",
+        "natural_decay": "pending",
+        "intended_sound_identity": "pending",
+        "nordic_timbre": "pending",
+        "relative_loudness": "pending"
+      },
+      "source_details": [],
+      "original_sound_design": "Self-authored DSP/layering as described in recipe; no external AI audio service used"
+    },
+    {
+      "id": "quest_fail",
+      "kind": "sfx",
+      "file": "candidates/sfx/quest_fail.wav",
+      "sources": [],
+      "recipe": "原创低沉下行三音",
+      "frequent": false,
+      "lowpass_hz": 3800,
+      "status": "candidate_pending_listening",
+      "duration_s": 0.9,
+      "peak_dbfs": -1.000151903819357,
+      "rms_dbfs": -11.830098112940806,
+      "onset_ms": 0.06802721088435373,
+      "sample_rate": 44100,
+      "channels": 1,
+      "bit_depth": 16,
+      "last_sample": 0.0,
+      "tail_10ms_rms_dbfs": -68.26878377905027,
+      "loudness_lufs": -12.78,
+      "loudness_measurement": "EBU R128 integrated",
+      "true_peak_dbtp": -1.0,
+      "sha256": "f17c297209ca160d9f7e6508dea03c611f166c0d2f4a8c92794d215a3e1f180a",
+      "technical_checks": {
+        "pcm16_mono_44100": true,
+        "onset_within_10ms": true,
+        "last_sample_zero": true,
+        "no_clipped_samples": true,
+        "peak_minus_1_dbfs": true,
+        "frequent_under_300ms": true
+      },
+      "listening_checks": {
+        "no_click_or_unwanted_noise": "pending",
+        "natural_decay": "pending",
+        "intended_sound_identity": "pending",
+        "nordic_timbre": "pending",
+        "relative_loudness": "pending"
+      },
+      "source_details": [],
+      "original_sound_design": "Self-authored DSP/layering as described in recipe; no external AI audio service used"
+    },
+    {
+      "id": "boss_warning",
+      "kind": "sfx",
+      "file": "candidates/sfx/boss_warning.wav",
+      "sources": [
+        "originals/music/war_horns.wav"
+      ],
+      "recipe": "CC0号角最强能量段，降调、两秒衰减；待试听段落",
+      "frequent": false,
+      "lowpass_hz": 3500,
+      "status": "candidate_pending_listening",
+      "duration_s": 2.0,
+      "peak_dbfs": -1.000151903819357,
+      "rms_dbfs": -10.423900468710618,
+      "onset_ms": 0.022675736961451247,
+      "sample_rate": 44100,
+      "channels": 1,
+      "bit_depth": 16,
+      "last_sample": 0.0,
+      "tail_10ms_rms_dbfs": -59.70244848839401,
+      "loudness_lufs": -11.87,
+      "loudness_measurement": "EBU R128 integrated",
+      "true_peak_dbtp": -1.0,
+      "sha256": "d9372493b2c8c532fb784d5e378ac0a8d430cfde9178736fdeda3f2efa607489",
+      "technical_checks": {
+        "pcm16_mono_44100": true,
+        "onset_within_10ms": true,
+        "last_sample_zero": true,
+        "no_clipped_samples": true,
+        "peak_minus_1_dbfs": true,
+        "frequent_under_300ms": true
+      },
+      "listening_checks": {
+        "no_click_or_unwanted_noise": "pending",
+        "natural_decay": "pending",
+        "intended_sound_identity": "pending",
+        "nordic_timbre": "pending",
+        "relative_loudness": "pending"
+      },
+      "source_details": [
+        {
+          "file": "originals/music/war_horns.wav",
+          "author": "Eldritch Grim",
+          "page": "https://opengameart.org/content/war-horns",
+          "license": "CC0-1.0",
+          "commercial": true,
+          "attribution_required": false
+        }
+      ],
+      "original_sound_design": "Self-authored DSP/layering as described in recipe; no external AI audio service used"
+    },
+    {
+      "id": "quest_done",
+      "kind": "sfx",
+      "file": "candidates/sfx/quest_done.wav",
+      "sources": [
+        "originals/music/war_horns.wav"
+      ],
+      "recipe": "同一号角的短高音变体；待试听旋律完整性",
+      "frequent": false,
+      "lowpass_hz": 4200,
+      "status": "candidate_pending_listening",
+      "duration_s": 0.85,
+      "peak_dbfs": -1.000151903819357,
+      "rms_dbfs": -10.630152029553434,
+      "onset_ms": 0.022675736961451247,
+      "sample_rate": 44100,
+      "channels": 1,
+      "bit_depth": 16,
+      "last_sample": 0.0,
+      "tail_10ms_rms_dbfs": -58.55607685809403,
+      "loudness_lufs": -11.3,
+      "loudness_measurement": "EBU R128 integrated",
+      "true_peak_dbtp": -1.0,
+      "sha256": "ff90b06438c868f7a4aea0ab6aca6f74a2eff6fb9564e574ab6699e1b18eee37",
+      "technical_checks": {
+        "pcm16_mono_44100": true,
+        "onset_within_10ms": true,
+        "last_sample_zero": true,
+        "no_clipped_samples": true,
+        "peak_minus_1_dbfs": true,
+        "frequent_under_300ms": true
+      },
+      "listening_checks": {
+        "no_click_or_unwanted_noise": "pending",
+        "natural_decay": "pending",
+        "intended_sound_identity": "pending",
+        "nordic_timbre": "pending",
+        "relative_loudness": "pending"
+      },
+      "source_details": [
+        {
+          "file": "originals/music/war_horns.wav",
+          "author": "Eldritch Grim",
+          "page": "https://opengameart.org/content/war-horns",
+          "license": "CC0-1.0",
+          "commercial": true,
+          "attribution_required": false
+        }
+      ],
+      "original_sound_design": "Self-authored DSP/layering as described in recipe; no external AI audio service used"
+    },
+    {
+      "id": "revolver_reload",
+      "kind": "sfx",
+      "file": "candidates/sfx/revolver_reload.wav",
+      "sources": [
+        "originals/freesound/722902__tkane0512__revolver-reload-break-2.wav"
+      ],
+      "recipe": "CC0真实左轮开膛、快速装弹与闭合录音，完整保留顺序",
+      "frequent": false,
+      "lowpass_hz": 5000,
+      "status": "candidate_pending_listening",
+      "duration_s": 2.3729931972789116,
+      "peak_dbfs": -1.000151903819357,
+      "rms_dbfs": -34.01096220695464,
+      "onset_ms": 0.3401360544217687,
+      "sample_rate": 44100,
+      "channels": 1,
+      "bit_depth": 16,
+      "last_sample": 0.0,
+      "tail_10ms_rms_dbfs": -86.5167454118948,
+      "loudness_lufs": -30.73,
+      "loudness_measurement": "EBU R128 integrated",
+      "true_peak_dbtp": -0.77,
+      "sha256": "fee4a4f38ca8c3f4acbde19b14296faaae975ef13a367f1f6b23ca5783bda18e",
+      "technical_checks": {
+        "pcm16_mono_44100": true,
+        "onset_within_10ms": true,
+        "last_sample_zero": true,
+        "no_clipped_samples": true,
+        "peak_minus_1_dbfs": true,
+        "frequent_under_300ms": true
+      },
+      "listening_checks": {
+        "no_click_or_unwanted_noise": "pending",
+        "natural_decay": "pending",
+        "intended_sound_identity": "pending",
+        "nordic_timbre": "pending",
+        "relative_loudness": "pending"
+      },
+      "source_details": [
+        {
+          "file": "originals/freesound/722902__tkane0512__revolver-reload-break-2.wav",
+          "author": "tkane0512",
+          "page": "https://freesound.org/people/tkane0512/sounds/722902/",
+          "license": "CC0-1.0",
+          "commercial": true,
+          "attribution_required": false
+        }
+      ],
+      "original_sound_design": "Self-authored DSP/layering as described in recipe; no external AI audio service used"
+    },
+    {
+      "id": "boss_howl",
+      "kind": "sfx",
+      "file": "candidates/sfx/boss_howl.wav",
+      "sources": [
+        "originals/freesound/398430__naturestemper__wolf-howl.mp3"
+      ],
+      "recipe": "作者自制狼嚎，保留整句，去低频直流与过亮高频；未伪称野狼实录",
+      "frequent": false,
+      "lowpass_hz": 5500,
+      "status": "candidate_pending_listening",
+      "duration_s": 6.910952380952381,
+      "peak_dbfs": -1.000151903819357,
+      "rms_dbfs": -11.671829259728417,
+      "onset_ms": 0.3401360544217687,
+      "sample_rate": 44100,
+      "channels": 1,
+      "bit_depth": 16,
+      "last_sample": 0.0,
+      "tail_10ms_rms_dbfs": -93.9887665521403,
+      "loudness_lufs": -12.22,
+      "loudness_measurement": "EBU R128 integrated",
+      "true_peak_dbtp": -1.0,
+      "sha256": "8b72e4e5d7623a60ee4971d2215f7040762f5b5d8c0782354d03aaa54e9d8c85",
+      "technical_checks": {
+        "pcm16_mono_44100": true,
+        "onset_within_10ms": true,
+        "last_sample_zero": true,
+        "no_clipped_samples": true,
+        "peak_minus_1_dbfs": true,
+        "frequent_under_300ms": true
+      },
+      "listening_checks": {
+        "no_click_or_unwanted_noise": "pending",
+        "natural_decay": "pending",
+        "intended_sound_identity": "pending",
+        "nordic_timbre": "pending",
+        "relative_loudness": "pending"
+      },
+      "source_details": [
+        {
+          "file": "originals/freesound/398430__naturestemper__wolf-howl.mp3",
+          "author": "NaturesTemper",
+          "page": "https://freesound.org/people/NaturesTemper/sounds/398430/",
+          "license": "CC0-1.0",
+          "commercial": true,
+          "attribution_required": false
+        }
+      ],
+      "original_sound_design": "Self-authored DSP/layering as described in recipe; no external AI audio service used"
+    },
+    {
+      "id": "revolver_shot_01",
+      "kind": "sfx",
+      "file": "candidates/sfx/revolver_shot_01.wav",
+      "sources": [
+        "originals/firearm/Prepared SFX Library/Smith & Wesson 642/V_27P.wav"
+      ],
+      "recipe": "CC0 .38左轮第一发近距离录音，保留起爆、裁短尾音，小幅变调",
+      "frequent": true,
+      "lowpass_hz": 4800,
+      "status": "candidate_pending_listening",
+      "duration_s": 0.25,
+      "peak_dbfs": -1.000151903819357,
+      "rms_dbfs": -23.622274563836065,
+      "onset_ms": 0.22675736961451248,
+      "sample_rate": 44100,
+      "channels": 1,
+      "bit_depth": 16,
+      "last_sample": 0.0,
+      "tail_10ms_rms_dbfs": -81.38780016815744,
+      "loudness_lufs": -26.05,
+      "loudness_measurement": "EBU R128 with silence padding to 1 second (not intrinsic short-event LUFS)",
+      "true_peak_dbtp": -0.99,
+      "sha256": "3b96bdacf9c74791778cef50c39285bae28554a39ad91c030c26c907ced6a163",
+      "technical_checks": {
+        "pcm16_mono_44100": true,
+        "onset_within_10ms": true,
+        "last_sample_zero": true,
+        "no_clipped_samples": true,
+        "peak_minus_1_dbfs": true,
+        "frequent_under_300ms": true,
+        "variant_rms_spread_within_1_5_db": true
+      },
+      "listening_checks": {
+        "no_click_or_unwanted_noise": "pending",
+        "natural_decay": "pending",
+        "intended_sound_identity": "pending",
+        "nordic_timbre": "pending",
+        "relative_loudness": "pending",
+        "one_minute_not_fatiguing": "pending"
+      },
+      "source_details": [
+        {
+          "file": "originals/firearm/Prepared SFX Library/Smith & Wesson 642/V_27P.wav",
+          "author": "Ben Jaszczak; Brian Nelson; Kevin Heras; Matthew Nanney",
+          "page": "https://opengameart.org/content/the-free-firearm-sound-library",
+          "license": "CC0-1.0",
+          "commercial": true,
+          "attribution_required": false
+        }
+      ],
+      "original_sound_design": "Self-authored DSP/layering as described in recipe; no external AI audio service used"
+    },
+    {
+      "id": "revolver_shot_02",
+      "kind": "sfx",
+      "file": "candidates/sfx/revolver_shot_02.wav",
+      "sources": [
+        "originals/firearm/Prepared SFX Library/Smith & Wesson 642/V_27P.wav"
+      ],
+      "recipe": "CC0 .38左轮第一发近距离录音，保留起爆、裁短尾音，小幅变调",
+      "frequent": true,
+      "lowpass_hz": 4800,
+      "status": "candidate_pending_listening",
+      "duration_s": 0.25,
+      "peak_dbfs": -1.000151903819357,
+      "rms_dbfs": -23.76756430188957,
+      "onset_ms": 0.22675736961451248,
+      "sample_rate": 44100,
+      "channels": 1,
+      "bit_depth": 16,
+      "last_sample": 0.0,
+      "tail_10ms_rms_dbfs": -83.5560796505705,
+      "loudness_lufs": -26.15,
+      "loudness_measurement": "EBU R128 with silence padding to 1 second (not intrinsic short-event LUFS)",
+      "true_peak_dbtp": -1.0,
+      "sha256": "993459ce2309204047d6ecc3d80edad2f2afc2feec09d09b9772e8fbfe414609",
+      "technical_checks": {
+        "pcm16_mono_44100": true,
+        "onset_within_10ms": true,
+        "last_sample_zero": true,
+        "no_clipped_samples": true,
+        "peak_minus_1_dbfs": true,
+        "frequent_under_300ms": true,
+        "variant_rms_spread_within_1_5_db": true
+      },
+      "listening_checks": {
+        "no_click_or_unwanted_noise": "pending",
+        "natural_decay": "pending",
+        "intended_sound_identity": "pending",
+        "nordic_timbre": "pending",
+        "relative_loudness": "pending",
+        "one_minute_not_fatiguing": "pending"
+      },
+      "source_details": [
+        {
+          "file": "originals/firearm/Prepared SFX Library/Smith & Wesson 642/V_27P.wav",
+          "author": "Ben Jaszczak; Brian Nelson; Kevin Heras; Matthew Nanney",
+          "page": "https://opengameart.org/content/the-free-firearm-sound-library",
+          "license": "CC0-1.0",
+          "commercial": true,
+          "attribution_required": false
+        }
+      ],
+      "original_sound_design": "Self-authored DSP/layering as described in recipe; no external AI audio service used"
+    },
+    {
+      "id": "revolver_shot_03",
+      "kind": "sfx",
+      "file": "candidates/sfx/revolver_shot_03.wav",
+      "sources": [
+        "originals/firearm/Prepared SFX Library/Smith & Wesson 642/V_27P.wav"
+      ],
+      "recipe": "CC0 .38左轮第一发近距离录音，保留起爆、裁短尾音，小幅变调",
+      "frequent": true,
+      "lowpass_hz": 4800,
+      "status": "candidate_pending_listening",
+      "duration_s": 0.25,
+      "peak_dbfs": -1.000151903819357,
+      "rms_dbfs": -23.89149186917369,
+      "onset_ms": 0.20408163265306123,
+      "sample_rate": 44100,
+      "channels": 1,
+      "bit_depth": 16,
+      "last_sample": 0.0,
+      "tail_10ms_rms_dbfs": -91.13045594930799,
+      "loudness_lufs": -26.25,
+      "loudness_measurement": "EBU R128 with silence padding to 1 second (not intrinsic short-event LUFS)",
+      "true_peak_dbtp": -1.0,
+      "sha256": "912d4b281cffa670898c4efb06a625e12cda4f7ecd5b8bfc0a8a9a27bc52575c",
+      "technical_checks": {
+        "pcm16_mono_44100": true,
+        "onset_within_10ms": true,
+        "last_sample_zero": true,
+        "no_clipped_samples": true,
+        "peak_minus_1_dbfs": true,
+        "frequent_under_300ms": true,
+        "variant_rms_spread_within_1_5_db": true
+      },
+      "listening_checks": {
+        "no_click_or_unwanted_noise": "pending",
+        "natural_decay": "pending",
+        "intended_sound_identity": "pending",
+        "nordic_timbre": "pending",
+        "relative_loudness": "pending",
+        "one_minute_not_fatiguing": "pending"
+      },
+      "source_details": [
+        {
+          "file": "originals/firearm/Prepared SFX Library/Smith & Wesson 642/V_27P.wav",
+          "author": "Ben Jaszczak; Brian Nelson; Kevin Heras; Matthew Nanney",
+          "page": "https://opengameart.org/content/the-free-firearm-sound-library",
+          "license": "CC0-1.0",
+          "commercial": true,
+          "attribution_required": false
+        }
+      ],
+      "original_sound_design": "Self-authored DSP/layering as described in recipe; no external AI audio service used"
+    },
+    {
+      "id": "ult_gunslinger",
+      "kind": "sfx",
+      "file": "candidates/sfx/ult_gunslinger.wav",
+      "sources": [
+        "originals/firearm/Prepared SFX Library/Smith & Wesson 642/V_27P.wav"
+      ],
+      "recipe": "同源左轮五连发与原创低拨弦滑音收尾，西部音色目标待试听",
+      "frequent": false,
+      "lowpass_hz": 5000,
+      "status": "candidate_pending_listening",
+      "duration_s": 1.6,
+      "peak_dbfs": -1.000151903819357,
+      "rms_dbfs": -18.103570690316463,
+      "onset_ms": 0.24943310657596374,
+      "sample_rate": 44100,
+      "channels": 1,
+      "bit_depth": 16,
+      "last_sample": 0.0,
+      "tail_10ms_rms_dbfs": -240.0,
+      "loudness_lufs": -17.35,
+      "loudness_measurement": "EBU R128 integrated",
+      "true_peak_dbtp": -1.0,
+      "sha256": "410ab03311a474d4f69f083d972bae479e5b5c795a864be85b40dd0203f3c312",
+      "technical_checks": {
+        "pcm16_mono_44100": true,
+        "onset_within_10ms": true,
+        "last_sample_zero": true,
+        "no_clipped_samples": true,
+        "peak_minus_1_dbfs": true,
+        "frequent_under_300ms": true
+      },
+      "listening_checks": {
+        "no_click_or_unwanted_noise": "pending",
+        "natural_decay": "pending",
+        "intended_sound_identity": "pending",
+        "nordic_timbre": "pending",
+        "relative_loudness": "pending"
+      },
+      "source_details": [
+        {
+          "file": "originals/firearm/Prepared SFX Library/Smith & Wesson 642/V_27P.wav",
+          "author": "Ben Jaszczak; Brian Nelson; Kevin Heras; Matthew Nanney",
+          "page": "https://opengameart.org/content/the-free-firearm-sound-library",
+          "license": "CC0-1.0",
+          "commercial": true,
+          "attribution_required": false
+        }
+      ],
+      "original_sound_design": "Self-authored DSP/layering as described in recipe; no external AI audio service used"
+    },
+    {
+      "id": "hub",
+      "kind": "music",
+      "file": "candidates/music/hub.ogg",
+      "sources": [
+        "originals/music/dream_ambience.wav"
+      ],
+      "duration_s": 113.54267573696146,
+      "sample_rate": 44100,
+      "channels": 2,
+      "codec": "Vorbis",
+      "loop": true,
+      "source_repeat_count": 1,
+      "processing": "active-region trim and 0.5s overlap loop (boss 0.15s), or timed excerpt with fade; common 35Hz-10.5kHz bus; two-pass loudness normalization",
+      "excerpt_start_s": null,
+      "loudness_lufs": -16.01,
+      "true_peak_dbtp": -2.8,
+      "lra_lu": 5.2,
+      "seam_sample_delta": [
+        0.006172799039632082,
+        0.02145465277135372
+      ],
+      "normal_diff_p999": [
+        0.06414539366960526,
+        0.06300497055053711
+      ],
+      "status": "candidate_pending_listening",
+      "musical_cadence_review": "pending",
+      "sha256": "f63acc842e7607903d654d98e1b99ee788de028ef87cbdc6db20d35ec460b231",
+      "source_details": [
+        {
+          "file": "originals/music/dream_ambience.wav",
+          "author": "TokyoGeisha",
+          "page": "https://opengameart.org/content/dream-2-ambience",
+          "license": "CC0-1.0",
+          "commercial": true,
+          "attribution_required": false
+        }
+      ],
+      "original_sound_design": "Licensed composition edit only, not a new original composition claim",
+      "technical_checks": {
+        "vorbis_44100_stereo": true,
+        "duration_in_range": true,
+        "loudness_minus16_plusminus1": true,
+        "true_peak_below_minus1": true,
+        "seam_delta_below_normal_p999": true
+      },
+      "listening_checks": {
+        "mood_and_identity": "pending",
+        "nordic_instrumentation": "pending",
+        "chapter_timbre_coherence": "pending",
+        "musical_phrase_complete": "pending",
+        "three_repetitions_inaudible_seam": "pending"
+      },
+      "peak_dbfs": -2.799053430557251
+    },
+    {
+      "id": "midgard",
+      "kind": "music",
+      "file": "candidates/music/midgard.ogg",
+      "sources": [
+        "originals/music/opening.wav"
+      ],
+      "duration_s": 173.4530612244898,
+      "sample_rate": 44100,
+      "channels": 2,
+      "codec": "Vorbis",
+      "loop": true,
+      "source_repeat_count": 2,
+      "processing": "active-region trim and 0.5s overlap loop (boss 0.15s), or timed excerpt with fade; common 35Hz-10.5kHz bus; two-pass loudness normalization",
+      "excerpt_start_s": null,
+      "loudness_lufs": -16.01,
+      "true_peak_dbtp": -1.6,
+      "lra_lu": 5.2,
+      "seam_sample_delta": [
+        0.023913178592920303,
+        0.05548533797264099
+      ],
+      "normal_diff_p999": [
+        0.06302712112665176,
+        0.061690784990787506
+      ],
+      "status": "candidate_pending_listening",
+      "musical_cadence_review": "pending",
+      "sha256": "83added474817f1041de7c7cc170fa7726bbf6ae48a4a2ba468fb74ee4c84ab6",
+      "source_details": [
+        {
+          "file": "originals/music/opening.wav",
+          "author": "nene",
+          "page": "https://opengameart.org/content/opening-theme-actionsuspense",
+          "license": "CC0-1.0",
+          "commercial": true,
+          "attribution_required": false
+        }
+      ],
+      "original_sound_design": "Licensed composition edit only, not a new original composition claim",
+      "technical_checks": {
+        "vorbis_44100_stereo": true,
+        "duration_in_range": true,
+        "loudness_minus16_plusminus1": true,
+        "true_peak_below_minus1": true,
+        "seam_delta_below_normal_p999": true
+      },
+      "listening_checks": {
+        "mood_and_identity": "pending",
+        "nordic_instrumentation": "pending",
+        "chapter_timbre_coherence": "pending",
+        "musical_phrase_complete": "pending",
+        "three_repetitions_inaudible_seam": "pending"
+      },
+      "peak_dbfs": -1.6163876056671143
+    },
+    {
+      "id": "boss",
+      "kind": "music",
+      "file": "candidates/music/boss.ogg",
+      "sources": [
+        "originals/music/boss_music.wav"
+      ],
+      "duration_s": 107.85088435374149,
+      "sample_rate": 44100,
+      "channels": 2,
+      "codec": "Vorbis",
+      "loop": true,
+      "source_repeat_count": 1,
+      "processing": "active-region trim and 0.5s overlap loop (boss 0.15s), or timed excerpt with fade; common 35Hz-10.5kHz bus; two-pass loudness normalization",
+      "excerpt_start_s": null,
+      "loudness_lufs": -16.01,
+      "true_peak_dbtp": -4.14,
+      "lra_lu": 3.8,
+      "seam_sample_delta": [
+        0.028497040271759033,
+        0.06927081942558289
+      ],
+      "normal_diff_p999": [
+        0.1329113095998764,
+        0.09035871922969818
+      ],
+      "status": "candidate_pending_listening",
+      "musical_cadence_review": "pending",
+      "sha256": "94f80a057ea9da7e8d0f1f1cae9142cf276d07d290491ec9c99522779eb69b8a",
+      "source_details": [
+        {
+          "file": "originals/music/boss_music.wav",
+          "author": "Emma_MA",
+          "page": "https://opengameart.org/content/determined-pursuit-epic-orchestra-loop",
+          "license": "CC0-1.0",
+          "commercial": true,
+          "attribution_required": false
+        }
+      ],
+      "original_sound_design": "Licensed composition edit only, not a new original composition claim",
+      "technical_checks": {
+        "vorbis_44100_stereo": true,
+        "duration_in_range": true,
+        "loudness_minus16_plusminus1": true,
+        "true_peak_below_minus1": true,
+        "seam_delta_below_normal_p999": true
+      },
+      "listening_checks": {
+        "mood_and_identity": "pending",
+        "nordic_instrumentation": "pending",
+        "chapter_timbre_coherence": "pending",
+        "musical_phrase_complete": "pending",
+        "three_repetitions_inaudible_seam": "pending"
+      },
+      "peak_dbfs": -4.178716659545898
+    },
+    {
+      "id": "helheim",
+      "kind": "music",
+      "file": "candidates/music/helheim.ogg",
+      "sources": [
+        "originals/music/mysterious.wav"
+      ],
+      "duration_s": 168.06748299319727,
+      "sample_rate": 44100,
+      "channels": 2,
+      "codec": "Vorbis",
+      "loop": true,
+      "source_repeat_count": 2,
+      "processing": "active-region trim and 0.5s overlap loop (boss 0.15s), or timed excerpt with fade; common 35Hz-10.5kHz bus; two-pass loudness normalization",
+      "excerpt_start_s": null,
+      "loudness_lufs": -16.0,
+      "true_peak_dbtp": -3.32,
+      "lra_lu": 2.9,
+      "seam_sample_delta": [
+        0.00035807339008897543,
+        0.0018187847454100847
+      ],
+      "normal_diff_p999": [
+        0.07058423012495041,
+        0.13322952389717102
+      ],
+      "status": "candidate_pending_listening",
+      "musical_cadence_review": "pending",
+      "sha256": "03692e840eafe0142284707a4446764d112ae522e787d67617cc223641b60b2b",
+      "source_details": [
+        {
+          "file": "originals/music/mysterious.wav",
+          "author": "nene",
+          "page": "https://opengameart.org/content/mysterious",
+          "license": "CC0-1.0",
+          "commercial": true,
+          "attribution_required": false
+        }
+      ],
+      "original_sound_design": "Licensed composition edit only, not a new original composition claim",
+      "technical_checks": {
+        "vorbis_44100_stereo": true,
+        "duration_in_range": true,
+        "loudness_minus16_plusminus1": true,
+        "true_peak_below_minus1": true,
+        "seam_delta_below_normal_p999": true
+      },
+      "listening_checks": {
+        "mood_and_identity": "pending",
+        "nordic_instrumentation": "pending",
+        "chapter_timbre_coherence": "pending",
+        "musical_phrase_complete": "pending",
+        "three_repetitions_inaudible_seam": "pending"
+      },
+      "peak_dbfs": -3.340087890625
+    },
+    {
+      "id": "victory",
+      "kind": "music",
+      "file": "candidates/music/victory.ogg",
+      "sources": [
+        "originals/music/new_sunrise.wav"
+      ],
+      "duration_s": 8.000725623582767,
+      "sample_rate": 44100,
+      "channels": 2,
+      "codec": "Vorbis",
+      "loop": false,
+      "source_repeat_count": 1,
+      "processing": "active-region trim and 0.5s overlap loop (boss 0.15s), or timed excerpt with fade; common 35Hz-10.5kHz bus; two-pass loudness normalization",
+      "excerpt_start_s": 125,
+      "loudness_lufs": -16.0,
+      "true_peak_dbtp": -8.06,
+      "lra_lu": 23.7,
+      "seam_sample_delta": null,
+      "normal_diff_p999": [
+        0.03614822030067444,
+        0.031205136328935623
+      ],
+      "status": "candidate_pending_listening",
+      "musical_cadence_review": "pending",
+      "sha256": "614c5c369c527881b5e545e5d5d04c1003a2bd2ada60148557991abd0416ec1a",
+      "source_details": [
+        {
+          "file": "originals/music/new_sunrise.wav",
+          "author": "nene",
+          "page": "https://opengameart.org/content/new-sunrise",
+          "license": "CC0-1.0",
+          "commercial": true,
+          "attribution_required": false
+        }
+      ],
+      "original_sound_design": "Licensed composition edit only, not a new original composition claim",
+      "technical_checks": {
+        "vorbis_44100_stereo": true,
+        "duration_in_range": true,
+        "loudness_minus16_plusminus1": true,
+        "true_peak_below_minus1": true
+      },
+      "listening_checks": {
+        "mood_and_identity": "pending",
+        "nordic_instrumentation": "pending",
+        "chapter_timbre_coherence": "pending",
+        "musical_phrase_complete": "pending"
+      },
+      "peak_dbfs": -8.061729431152344
+    },
+    {
+      "id": "defeat",
+      "kind": "music",
+      "file": "candidates/music/defeat.ogg",
+      "sources": [
+        "originals/music/lament.mp3"
+      ],
+      "duration_s": 6.000907029478458,
+      "sample_rate": 44100,
+      "channels": 2,
+      "codec": "Vorbis",
+      "loop": false,
+      "source_repeat_count": 1,
+      "processing": "active-region trim and 0.5s overlap loop (boss 0.15s), or timed excerpt with fade; common 35Hz-10.5kHz bus; two-pass loudness normalization",
+      "excerpt_start_s": 152,
+      "loudness_lufs": -16.92,
+      "true_peak_dbtp": -1.68,
+      "lra_lu": 20.3,
+      "seam_sample_delta": null,
+      "normal_diff_p999": [
+        0.023703275248408318,
+        0.024240823462605476
+      ],
+      "status": "candidate_pending_listening",
+      "musical_cadence_review": "pending",
+      "sha256": "2da0ed7f74dd7040f1291bec440ba9f9ff61ce6ee3b9448e4726ec0cf1a51b3d",
+      "source_details": [
+        {
+          "file": "originals/music/lament.mp3",
+          "author": "RandomMind",
+          "page": "https://opengameart.org/content/fantasy-lament-for-a-warriors-soul",
+          "license": "CC0-1.0",
+          "commercial": true,
+          "attribution_required": false
+        }
+      ],
+      "original_sound_design": "Licensed composition edit only, not a new original composition claim",
+      "technical_checks": {
+        "vorbis_44100_stereo": true,
+        "duration_in_range": true,
+        "loudness_minus16_plusminus1": true,
+        "true_peak_below_minus1": true
+      },
+      "listening_checks": {
+        "mood_and_identity": "pending",
+        "nordic_instrumentation": "pending",
+        "chapter_timbre_coherence": "pending",
+        "musical_phrase_complete": "pending"
+      },
+      "peak_dbfs": -1.6800497770309448
+    }
+  ],
+  "previews": [
+    {
+      "id": "pickup_xp_60s",
+      "file": "previews/pickup_xp_60s.wav",
+      "duration_s": 60,
+      "event_rate_hz": 8,
+      "preview_gain_db": -18,
+      "listening_status": "pending",
+      "purpose": "one-minute fatigue audition; this gain is for preview only"
+    },
+    {
+      "id": "katana_slash_60s",
+      "file": "previews/katana_slash_60s.wav",
+      "duration_s": 60,
+      "event_rate_hz": 4,
+      "preview_gain_db": -12,
+      "listening_status": "pending",
+      "purpose": "one-minute fatigue audition; this gain is for preview only"
+    },
+    {
+      "id": "blades_slash_60s",
+      "file": "previews/blades_slash_60s.wav",
+      "duration_s": 60,
+      "event_rate_hz": 4,
+      "preview_gain_db": -12,
+      "listening_status": "pending",
+      "purpose": "one-minute fatigue audition; this gain is for preview only"
+    },
+    {
+      "id": "lightning_60s",
+      "file": "previews/lightning_60s.wav",
+      "duration_s": 60,
+      "event_rate_hz": 4,
+      "preview_gain_db": -12,
+      "listening_status": "pending",
+      "purpose": "one-minute fatigue audition; this gain is for preview only"
+    },
+    {
+      "id": "enemy_hit_60s",
+      "file": "previews/enemy_hit_60s.wav",
+      "duration_s": 60,
+      "event_rate_hz": 8,
+      "preview_gain_db": -12,
+      "listening_status": "pending",
+      "purpose": "one-minute fatigue audition; this gain is for preview only"
+    },
+    {
+      "id": "enemy_death_60s",
+      "file": "previews/enemy_death_60s.wav",
+      "duration_s": 60,
+      "event_rate_hz": 4,
+      "preview_gain_db": -12,
+      "listening_status": "pending",
+      "purpose": "one-minute fatigue audition; this gain is for preview only"
+    },
+    {
+      "id": "revolver_shot_60s",
+      "file": "previews/revolver_shot_60s.wav",
+      "duration_s": 60,
+      "event_rate_hz": 4,
+      "preview_gain_db": -12,
+      "listening_status": "pending",
+      "purpose": "one-minute fatigue audition; this gain is for preview only"
+    },
+    {
+      "id": "hub_3loops",
+      "file": "previews/hub_3loops.flac",
+      "duration_s": 340.6280272108844,
+      "loop_join_times_s": [
+        113.54267573696146,
+        227.0853514739229
+      ],
+      "listening_status": "pending",
+      "purpose": "three repetitions of decoded candidate, no crossfade added between repetitions"
+    },
+    {
+      "id": "midgard_3loops",
+      "file": "previews/midgard_3loops.flac",
+      "duration_s": 520.3591836734694,
+      "loop_join_times_s": [
+        173.4530612244898,
+        346.9061224489796
+      ],
+      "listening_status": "pending",
+      "purpose": "three repetitions of decoded candidate, no crossfade added between repetitions"
+    },
+    {
+      "id": "boss_3loops",
+      "file": "previews/boss_3loops.flac",
+      "duration_s": 323.5526530612245,
+      "loop_join_times_s": [
+        107.85088435374149,
+        215.70176870748298
+      ],
+      "listening_status": "pending",
+      "purpose": "three repetitions of decoded candidate, no crossfade added between repetitions"
+    },
+    {
+      "id": "helheim_3loops",
+      "file": "previews/helheim_3loops.flac",
+      "duration_s": 504.20244897959185,
+      "loop_join_times_s": [
+        168.06748299319727,
+        336.13496598639455
+      ],
+      "listening_status": "pending",
+      "purpose": "three repetitions of decoded candidate, no crossfade added between repetitions"
+    }
+  ]
+}

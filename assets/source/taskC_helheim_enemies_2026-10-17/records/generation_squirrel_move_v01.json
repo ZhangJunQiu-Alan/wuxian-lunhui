@@ -1,0 +1,22 @@
+{
+  "id": "squirrel_move",
+  "label": "松鼠行走",
+  "folder": "quests",
+  "w": 32,
+  "h": 32,
+  "frames": 4,
+  "task": "taskC_helheim_enemies_2026-10-17",
+  "subject": "Animate the exact reference red-brown squirrel running RIGHT,4looping phases: crouch with near foreleg forward and opposite hind leg back, gathered support, opposite legs stride, gathered return. Same big curled tail, face, proportions, grounded paw baseline; real changing legs, no simple translated copies.",
+  "loop": true,
+  "anchor": "bottom",
+  "status": "pending",
+  "unit": "squirrel",
+  "action": "move",
+  "version": "v01",
+  "refs": [
+    "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskC_helheim_enemies_2026-10-17/candidates/squirrel_v01.png"
+  ],
+  "prompt": "Use case: identity-preserve. Animate the EXACT project character in input1. Preserve head/face, proportions, materials, palette, clothing, armor and accessories. Animate the exact reference red-brown squirrel running RIGHT,4looping phases: crouch with near foreleg forward and opposite hind leg back, gathered support, opposite legs stride, gathered return. Same big curled tail, face, proportions, grounded paw baseline; real changing legs, no simple translated copies.\nLayout: EXACTLY FOUR frames in a2by2equal-cell grid, reading left-to-right then top-to-bottom. Each cell logically32x32pixels, with2logicalpixels of completely clear margin on every side. Fixed side-three-quarter camera facing RIGHT. Every cell has SAME scale, body size, foot ground line and lighting as reference. Frame1 has the original neutral body size for reference. Do not shrink the character to make extended poses fit: draw compact poses instead.\nStrong low-resolution pixel clusters, exactly the same limited RGB color palette as reference, upper-left light, dark outline, no dithering or smooth painting. Genuine transparent RGBA, binary alpha. No frame lines, text, labels, names, scene, separate object, ground shadow, aura, slash, dust or particle effects. Whole character/weapon fits inside every frame. No cut-off limbs or detached limbs.",
+  "tool": "builtin image_gen",
+  "source": "/Users/zhangjunqiu/.codex/generated_images/01a14377-c537-7a10-b5df-10043f63fbe0/exec-160f8fc8-939e-4b55-9f8d-2eb8f2a7b3b6.png"
+}

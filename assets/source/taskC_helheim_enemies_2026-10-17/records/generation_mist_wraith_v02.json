@@ -1,0 +1,23 @@
+{
+  "id": "mist_wraith",
+  "unit": "mist_wraith",
+  "label": "冥雾幽魂 static",
+  "action": "static",
+  "folder": "enemies",
+  "w": 64,
+  "h": 64,
+  "frames": 1,
+  "task": "taskC_helheim_enemies_2026-10-17",
+  "loop": false,
+  "anchor": "float",
+  "body_h": 53,
+  "subject": "A slender mournful mist-shaped human ghost, cold-gray and dark jade ragged vapor silhouette, exactly two small phosphor-green eyes, lower body dispersing into a few chunky trailing mist ribbons instead of feet. No translucent pixels: convey ghostly depth using solid dark gray, muted green and pale gray edges.",
+  "status": "pending",
+  "version": "v02",
+  "refs": [
+    "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskC_helheim_enemies_2026-10-17/candidates/mist_wraith_v01.png"
+  ],
+  "prompt": "Use case: precise-object-edit. Keep the exact project mist ghost body, gray-green ragged vapor silhouette and lower fog ribbons. Change ONLY head and eye readability: head turns to near-FRONTAL three-quarter angle slightly RIGHT so BOTH eye sockets can be seen. The head is a DARK HOLLOW HOOD or shadowed skull-shaped void, NOT a pale human woman's face. Exactly TWO CLEAR SMALL BRIGHT JADE-GREEN eye lights, each2logicalpixels wide, separated by2darkpixels, enough contrast to remain visible at64x64. No nose, mouth or exposed pale face skin. Preserve the narrow hunched shoulders and thin spectral torso, no legs, upper-left gray highlight, solid opaque pixels convey ghostly mist. One single64x64logicalsprite, body53pixels high, true transparent outside, 2pixelmargin. No beams, aura, magic, floor or text.",
+  "tool": "builtin image_gen",
+  "source": "/Users/zhangjunqiu/.codex/generated_images/01a14377-c537-7a10-b5df-10043f63fbe0/exec-3ef625a1-d16f-4381-bde7-b5d42c0171f5.png"
+}

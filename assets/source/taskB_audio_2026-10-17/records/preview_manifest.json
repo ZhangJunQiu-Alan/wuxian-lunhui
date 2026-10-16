@@ -1,0 +1,109 @@
+[
+  {
+    "id": "pickup_xp_60s",
+    "file": "previews/pickup_xp_60s.wav",
+    "duration_s": 60,
+    "event_rate_hz": 8,
+    "preview_gain_db": -18,
+    "listening_status": "pending",
+    "purpose": "one-minute fatigue audition; this gain is for preview only"
+  },
+  {
+    "id": "katana_slash_60s",
+    "file": "previews/katana_slash_60s.wav",
+    "duration_s": 60,
+    "event_rate_hz": 4,
+    "preview_gain_db": -12,
+    "listening_status": "pending",
+    "purpose": "one-minute fatigue audition; this gain is for preview only"
+  },
+  {
+    "id": "blades_slash_60s",
+    "file": "previews/blades_slash_60s.wav",
+    "duration_s": 60,
+    "event_rate_hz": 4,
+    "preview_gain_db": -12,
+    "listening_status": "pending",
+    "purpose": "one-minute fatigue audition; this gain is for preview only"
+  },
+  {
+    "id": "lightning_60s",
+    "file": "previews/lightning_60s.wav",
+    "duration_s": 60,
+    "event_rate_hz": 4,
+    "preview_gain_db": -12,
+    "listening_status": "pending",
+    "purpose": "one-minute fatigue audition; this gain is for preview only"
+  },
+  {
+    "id": "enemy_hit_60s",
+    "file": "previews/enemy_hit_60s.wav",
+    "duration_s": 60,
+    "event_rate_hz": 8,
+    "preview_gain_db": -12,
+    "listening_status": "pending",
+    "purpose": "one-minute fatigue audition; this gain is for preview only"
+  },
+  {
+    "id": "enemy_death_60s",
+    "file": "previews/enemy_death_60s.wav",
+    "duration_s": 60,
+    "event_rate_hz": 4,
+    "preview_gain_db": -12,
+    "listening_status": "pending",
+    "purpose": "one-minute fatigue audition; this gain is for preview only"
+  },
+  {
+    "id": "revolver_shot_60s",
+    "file": "previews/revolver_shot_60s.wav",
+    "duration_s": 60,
+    "event_rate_hz": 4,
+    "preview_gain_db": -12,
+    "listening_status": "pending",
+    "purpose": "one-minute fatigue audition; this gain is for preview only"
+  },
+  {
+    "id": "hub_3loops",
+    "file": "previews/hub_3loops.flac",
+    "duration_s": 340.6280272108844,
+    "loop_join_times_s": [
+      113.54267573696146,
+      227.0853514739229
+    ],
+    "listening_status": "pending",
+    "purpose": "three repetitions of decoded candidate, no crossfade added between repetitions"
+  },
+  {
+    "id": "midgard_3loops",
+    "file": "previews/midgard_3loops.flac",
+    "duration_s": 520.3591836734694,
+    "loop_join_times_s": [
+      173.4530612244898,
+      346.9061224489796
+    ],
+    "listening_status": "pending",
+    "purpose": "three repetitions of decoded candidate, no crossfade added between repetitions"
+  },
+  {
+    "id": "boss_3loops",
+    "file": "previews/boss_3loops.flac",
+    "duration_s": 323.5526530612245,
+    "loop_join_times_s": [
+      107.85088435374149,
+      215.70176870748298
+    ],
+    "listening_status": "pending",
+    "purpose": "three repetitions of decoded candidate, no crossfade added between repetitions"
+  },
+  {
+    "id": "helheim_3loops",
+    "file": "previews/helheim_3loops.flac",
+    "duration_s": 504.20244897959185,
+    "loop_join_times_s": [
+      168.06748299319727,
+      336.13496598639455
+    ],
+    "listening_status": "pending",
+    "purpose": "three repetitions of decoded candidate, no crossfade added between repetitions"
+  }
+]

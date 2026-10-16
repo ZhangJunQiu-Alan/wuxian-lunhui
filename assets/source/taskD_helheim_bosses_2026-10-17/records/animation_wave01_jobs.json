@@ -1,0 +1,107 @@
+[
+  {
+    "id": "garm_idle",
+    "unit": "garm",
+    "label": "冥府猎犬 idle",
+    "action": "idle",
+    "folder": "bosses",
+    "w": 128,
+    "h": 128,
+    "frames": 4,
+    "task": "taskD_helheim_bosses_2026-10-17",
+    "loop": true,
+    "anchor": "bottom",
+    "body_h": 99,
+    "subject": "A massive BLACK hellhound with powerful canine body, matted charcoal fur, dim ember-red eyes, blood-dark red staining only the chest fur, heavy BROKEN iron neck collar and a short dragging broken chain. Face right, four anatomically correct legs. Keep collar, blood patch and chain as essential silhouette details. Not a wolf with flames, no magical aura.",
+    "status": "pending",
+    "version": "v01",
+    "refs": [
+      "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskD_helheim_bosses_2026-10-17/candidates/garm_v02.png"
+    ],
+    "prompt": "Use case: identity-preserve. Animate the EXACT project character in input1. Preserve head/face, proportions, materials, palette, clothing, armor and accessories. Four subtle breathing poses in a seamless idle loop: rest, inhale, rest-mid, exhale. Keep head scale, limb length, equipment details, silhouette proportions and foot baseline stable. Same body, not four redesigns.\nLayout: EXACTLY FOUR frames in a2by2equal-cell grid, reading left-to-right then top-to-bottom. Each cell logically128x128pixels, with2logicalpixels of completely clear margin on every side. Fixed side-three-quarter camera facing RIGHT. Every cell has SAME scale, body size, foot ground line and lighting as reference. Frame1 has the original neutral body size for reference. Do not shrink the character to make extended poses fit: draw compact poses instead.\nStrong low-resolution pixel clusters, exactly the same limited RGB color palette as reference, upper-left light, dark outline, no dithering or smooth painting. Genuine transparent RGBA, binary alpha. No frame lines, text, labels, names, scene, separate object, ground shadow, aura, slash, dust or particle effects. Whole character/weapon fits inside every frame. No cut-off limbs or detached limbs."
+  },
+  {
+    "id": "garm_move",
+    "unit": "garm",
+    "label": "冥府猎犬 move",
+    "action": "move",
+    "folder": "bosses",
+    "w": 128,
+    "h": 128,
+    "frames": 4,
+    "task": "taskD_helheim_bosses_2026-10-17",
+    "loop": true,
+    "anchor": "bottom",
+    "body_h": 99,
+    "subject": "A massive BLACK hellhound with powerful canine body, matted charcoal fur, dim ember-red eyes, blood-dark red staining only the chest fur, heavy BROKEN iron neck collar and a short dragging broken chain. Face right, four anatomically correct legs. Keep collar, blood patch and chain as essential silhouette details. Not a wolf with flames, no magical aura.",
+    "status": "pending",
+    "version": "v01",
+    "refs": [
+      "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskD_helheim_bosses_2026-10-17/candidates/garm_v02.png"
+    ],
+    "prompt": "Use case: identity-preserve. Animate the EXACT project character in input1. Preserve head/face, proportions, materials, palette, clothing, armor and accessories. Four-phase real canine walk/trot cycle: near forepaw forward with near hindpaw back, passing under body, opposite fore/hind contact, passing return. Far paws alternate in opposition, all4legs anatomically attached. Same head, chest blood stain, broken collar and dragging chain. No disappearing collar/chain, no same near foreleg perpetually forward.\nLayout: EXACTLY FOUR frames in a2by2equal-cell grid, reading left-to-right then top-to-bottom. Each cell logically128x128pixels, with2logicalpixels of completely clear margin on every side. Fixed side-three-quarter camera facing RIGHT. Every cell has SAME scale, body size, foot ground line and lighting as reference. Frame1 has the original neutral body size for reference. Do not shrink the character to make extended poses fit: draw compact poses instead.\nStrong low-resolution pixel clusters, exactly the same limited RGB color palette as reference, upper-left light, dark outline, no dithering or smooth painting. Genuine transparent RGBA, binary alpha. No frame lines, text, labels, names, scene, separate object, ground shadow, aura, slash, dust or particle effects. Whole character/weapon fits inside every frame. No cut-off limbs or detached limbs."
+  },
+  {
+    "id": "garm_windup",
+    "unit": "garm",
+    "label": "冥府猎犬 windup",
+    "action": "windup",
+    "folder": "bosses",
+    "w": 128,
+    "h": 128,
+    "frames": 3,
+    "task": "taskD_helheim_bosses_2026-10-17",
+    "loop": false,
+    "anchor": "bottom",
+    "body_h": 99,
+    "subject": "A massive BLACK hellhound with powerful canine body, matted charcoal fur, dim ember-red eyes, blood-dark red staining only the chest fur, heavy BROKEN iron neck collar and a short dragging broken chain. Face right, four anatomically correct legs. Keep collar, blood patch and chain as essential silhouette details. Not a wolf with flames, no magical aura.",
+    "status": "pending",
+    "version": "v01",
+    "refs": [
+      "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskD_helheim_bosses_2026-10-17/candidates/garm_v02.png"
+    ],
+    "prompt": "Use case: identity-preserve. Animate the EXACT project character in input1. Preserve head/face, proportions, materials, palette, clothing, armor and accessories. Three anticipation poses:1 lower weight and tense body;2 draw back the striking head/arm into a clear ready position;3 deepest held preparation before release. Fixed scale and grounded feet, no explosive effect or target.\nLayout: EXACTLY THREE frames in ONE horizontal row of equal cells, reading left-to-right then top-to-bottom. Each cell logically128x128pixels, with2logicalpixels of completely clear margin on every side. Fixed side-three-quarter camera facing RIGHT. Every cell has SAME scale, body size, foot ground line and lighting as reference. Frame1 has the original neutral body size for reference. Do not shrink the character to make extended poses fit: draw compact poses instead.\nStrong low-resolution pixel clusters, exactly the same limited RGB color palette as reference, upper-left light, dark outline, no dithering or smooth painting. Genuine transparent RGBA, binary alpha. No frame lines, text, labels, names, scene, separate object, ground shadow, aura, slash, dust or particle effects. Whole character/weapon fits inside every frame. No cut-off limbs or detached limbs."
+  },
+  {
+    "id": "garm_attack",
+    "unit": "garm",
+    "label": "冥府猎犬 attack",
+    "action": "attack",
+    "folder": "bosses",
+    "w": 128,
+    "h": 128,
+    "frames": 3,
+    "task": "taskD_helheim_bosses_2026-10-17",
+    "loop": false,
+    "anchor": "bottom",
+    "body_h": 99,
+    "subject": "A massive BLACK hellhound with powerful canine body, matted charcoal fur, dim ember-red eyes, blood-dark red staining only the chest fur, heavy BROKEN iron neck collar and a short dragging broken chain. Face right, four anatomically correct legs. Keep collar, blood patch and chain as essential silhouette details. Not a wolf with flames, no magical aura.",
+    "status": "pending",
+    "version": "v01",
+    "refs": [
+      "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskD_helheim_bosses_2026-10-17/candidates/garm_v02.png"
+    ],
+    "prompt": "Use case: identity-preserve. Animate the EXACT project character in input1. Preserve head/face, proportions, materials, palette, clothing, armor and accessories. Three compact rightward biting lunge poses:1 crouch jaw starting open;2 thrust chest and muzzle RIGHT with jaws wide, front near paw reaches while rear paws brace;3 bite jaws closing and gather front paws into recovery. Stay inside canvas and do not lengthen the whole body. Keep chest blood, collar and dragging chain. No slash, shockwave, ground or blood spray.\nLayout: EXACTLY THREE frames in ONE horizontal row of equal cells, reading left-to-right then top-to-bottom. Each cell logically128x128pixels, with2logicalpixels of completely clear margin on every side. Fixed side-three-quarter camera facing RIGHT. Every cell has SAME scale, body size, foot ground line and lighting as reference. Frame1 has the original neutral body size for reference. Do not shrink the character to make extended poses fit: draw compact poses instead.\nStrong low-resolution pixel clusters, exactly the same limited RGB color palette as reference, upper-left light, dark outline, no dithering or smooth painting. Genuine transparent RGBA, binary alpha. No frame lines, text, labels, names, scene, separate object, ground shadow, aura, slash, dust or particle effects. Whole character/weapon fits inside every frame. No cut-off limbs or detached limbs."
+  },
+  {
+    "id": "garm_howl",
+    "unit": "garm",
+    "label": "冥府猎犬 howl",
+    "action": "howl",
+    "folder": "bosses",
+    "w": 128,
+    "h": 128,
+    "frames": 3,
+    "task": "taskD_helheim_bosses_2026-10-17",
+    "loop": false,
+    "anchor": "bottom",
+    "body_h": 99,
+    "subject": "A massive BLACK hellhound with powerful canine body, matted charcoal fur, dim ember-red eyes, blood-dark red staining only the chest fur, heavy BROKEN iron neck collar and a short dragging broken chain. Face right, four anatomically correct legs. Keep collar, blood patch and chain as essential silhouette details. Not a wolf with flames, no magical aura.",
+    "status": "pending",
+    "version": "v01",
+    "refs": [
+      "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskD_helheim_bosses_2026-10-17/candidates/garm_v02.png"
+    ],
+    "prompt": "Use case: identity-preserve. Animate the EXACT project character in input1. Preserve head/face, proportions, materials, palette, clothing, armor and accessories. Three barking/howling poses:1 head partly raised, jaw starting to open;2 head lifted upward with open jaws;3 head slightly lowers and jaws close into recovery. Same four grounded paws, collar, chest stain, short chain and body proportions. Keep upward muzzle inside canvas. No sound wave or aura.\nLayout: EXACTLY THREE frames in ONE horizontal row of equal cells, reading left-to-right then top-to-bottom. Each cell logically128x128pixels, with2logicalpixels of completely clear margin on every side. Fixed side-three-quarter camera facing RIGHT. Every cell has SAME scale, body size, foot ground line and lighting as reference. Frame1 has the original neutral body size for reference. Do not shrink the character to make extended poses fit: draw compact poses instead.\nStrong low-resolution pixel clusters, exactly the same limited RGB color palette as reference, upper-left light, dark outline, no dithering or smooth painting. Genuine transparent RGBA, binary alpha. No frame lines, text, labels, names, scene, separate object, ground shadow, aura, slash, dust or particle effects. Whole character/weapon fits inside every frame. No cut-off limbs or detached limbs."
+  }
+]

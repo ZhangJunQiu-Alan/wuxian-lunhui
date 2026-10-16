@@ -1,0 +1,11 @@
+{
+  "tool": "OpenAI built-in image generation",
+  "source": "/Users/zhangjunqiu/.codex/generated_images/01a14377-c537-7a10-b5df-10043f63fbe0/exec-4ab79422-bef0-4b16-be96-0f6cecde4ccb.png",
+  "id": "bright_soul_move",
+  "version": "v02",
+  "refs": [
+    "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskC_helheim_enemies_2026-10-17/candidates/bright_soul_v02.png",
+    "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskC_helheim_enemies_2026-10-17/refs/walk6_leg_kinematics_guide.png"
+  ],
+  "prompt": "Use case: identity-preserve. Animate EXACT input1 young adult male gold-and-ivory soul. Keep short wavy hair, masculine flat chest and brow, tunic/belt/trousers/boots, head/torso proportions, upperleft highlights and exact palette. FOUR FRAME gentle rightward walk: frame1 near leg forward farlegbackcontact, frame2nearlegsupport farlegpassing, frame3farlegforward nearlegbackoppositecontact, frame4farlegsupport nearlegpassing. Input2 is leg guide only: use its phases1,2,4,5 respectively; do NOT copy diagram colors/text. Arms swing oppositely, torso stays upright, head height fixed with at most1px bob. Exact4poses in2columns by2rows equal cells64x64logicalpx each, body56pxhigh and fixedfeetbaseline62;2pxclear margin. Opaque pixel clusters, binary transparent background, no grid/text/shadow/aura/particles or scenery. Preserve readable male appearance every frame."
+}

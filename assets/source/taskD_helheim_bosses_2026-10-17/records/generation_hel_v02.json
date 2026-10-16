@@ -1,0 +1,11 @@
+{
+  "id": "hel",
+  "version": "v02",
+  "task": "taskD_helheim_bosses_2026-10-17",
+  "refs": [
+    "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskD_helheim_bosses_2026-10-17/candidates/hel_v01.png"
+  ],
+  "prompt": "Use case: precise-object-edit. Input is the project underworld queen sprite. Change ONLY her HEAD orientation and facial structure so BOTH halves of her face are plainly visible. Head mostly FACES THE VIEWER with a slight turn RIGHT, while body stays same3/4right-facing stance. Her face must be split exactly vertically at the nose: viewer LEFT half a beautiful pale young living woman with one normal eye; viewer RIGHT half an unmistakable EXPOSED DECAYED HUMAN SKULL with a black hollow eye socket, exposed cheekbone and bared teeth. Give enough width to face so each half occupies at least4logicalpixels. Keep same bone crown, pale long hair on living side, black robe with muted purple trim, living arm and bare leg on viewer left, skeletal arm and leg and exposed ribs on viewer right, same body size and position. Do not add staff or effects. ONE full-body sprite for192x192logicalcanvas, about165pixels high, crisp pixel-art shading, upper-left light, max48colors. Transparent background,2logicalpixelmargin, no text, ground shadow or scene.",
+  "tool": "builtin image_gen",
+  "source": "/Users/zhangjunqiu/.codex/generated_images/01a14377-c537-7a10-b5df-10043f63fbe0/exec-1c57199f-9500-442b-bc82-b0732b9d288b.png"
+}

@@ -6,7 +6,7 @@ t=ast.parse((r/'records/extract_enemy_candidates.py').read_text());fn=next(n for
 items=json.loads((r/'records/candidates.json').read_text())
 for arg in sys.argv[1:]:
     parts=arg.split(':');ident,ver=parts[:2];outver=parts[2] if len(parts)>2 else ver;method=parts[3] if len(parts)>3 else 'nearest';anchor=parts[4] if len(parts)>4 else 'head';char,action=ident.split('_',1)
-    count={'idle':4,'move':6,'hurt':2,'death':6,'attack':6 if char=='lanling' else 4}[action]
+    count={'idle':4,'move':6,'hurt':2,'death':6,'attack':6 if char=='assassin' else 4}[action]
     raw=Image.open(r/'originals'/f'{ident}_{ver}_raw.png').convert('RGBA');cs=scope['components'](raw)
     roots=cs[:count];assert len(roots)==count
     roots=sorted(roots,key=lambda c:((c['bbox'][1]+c['bbox'][3])/2>=raw.height/2 if count>=4 else False,(c['bbox'][0]+c['bbox'][2])/2))
@@ -20,7 +20,7 @@ for arg in sys.argv[1:]:
     scale=48/(hs[-1] if action=='attack' else hs[0] if action=='death' else max(hs))
     def head_anchor(im):
         b=im.getbbox()
-        if char=='merlin':
+        if char=='mage':
             pts=[(x,y) for y in range(b[1],min(b[3],b[1]+22)) for x in range(im.width) if (p:=im.getpixel((x,y)))[3] and p[2]>p[0]+4 and p[2]>p[1]+1]
             if pts:
                 top=min(y for x,y in pts);xs=[x for x,y in pts if y<top+5];return sum(xs)/len(xs)

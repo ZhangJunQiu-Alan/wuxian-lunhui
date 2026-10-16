@@ -1,0 +1,23 @@
+{
+  "tool": "OpenAI built-in image generation",
+  "source": "/Users/zhangjunqiu/.codex/generated_images/01a14377-c537-7a10-b5df-10043f63fbe0/exec-456f1f1e-114d-4d89-bb40-3c2ec4c87ffa.png",
+  "id": "garm_move",
+  "unit": "garm",
+  "label": "冥府猎犬 move",
+  "action": "move",
+  "folder": "bosses",
+  "w": 128,
+  "h": 128,
+  "frames": 4,
+  "task": "taskD_helheim_bosses_2026-10-17",
+  "loop": true,
+  "anchor": "bottom",
+  "body_h": 99,
+  "subject": "A massive BLACK hellhound with powerful canine body, matted charcoal fur, dim ember-red eyes, blood-dark red staining only the chest fur, heavy BROKEN iron neck collar and a short dragging broken chain. Face right, four anatomically correct legs. Keep collar, blood patch and chain as essential silhouette details. Not a wolf with flames, no magical aura.",
+  "status": "pending",
+  "version": "v02",
+  "refs": [
+    "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskD_helheim_bosses_2026-10-17/candidates/garm_v02.png"
+  ],
+  "prompt": "Use case: identity-preserve. EXACT reference character, all features, proportions, palette, cloth/chain details. COMPACT FOUR FRAME canine walk. Same huge shoulders, leg length, head size, hunch height99px as reference. Avoid galloping/sprawling. Feet take short alternating steps directly under hips and shoulders; tuck long tail close to rear. Frame1 near foreleg forward near hindleg back;frame2passing;frame3nearforelegback nearhindlegforward;frame4oppositepassing. Four paws and dragging broken iron chain visible. Width at most110logicalpixels, no pose wider than static. Exactly4 frames 2columns by2rows equal cells 128x128 logicalpx each. Fixed feet baseline, 2px clear margin, same scale in every frame. Pixel art same colors as input, upperleft lighting, darkoutline, binary transparent. No grid/text/ground/particles/FX or shadow."
+}

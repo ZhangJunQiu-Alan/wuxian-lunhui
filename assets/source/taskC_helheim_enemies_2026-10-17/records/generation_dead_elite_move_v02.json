@@ -1,0 +1,24 @@
+{
+  "tool": "OpenAI built-in image generation",
+  "source": "/Users/zhangjunqiu/.codex/generated_images/01a14377-c537-7a10-b5df-10043f63fbe0/exec-5213aaa4-1fb0-41e9-b780-a81df94c9f04.png",
+  "id": "dead_elite_move",
+  "unit": "dead_elite",
+  "label": "精英亡者 move",
+  "action": "move",
+  "folder": "enemies",
+  "w": 64,
+  "h": 64,
+  "frames": 6,
+  "task": "taskC_helheim_enemies_2026-10-17",
+  "loop": true,
+  "anchor": "bottom",
+  "body_h": 50,
+  "subject": "The same frail dead commoner, now wearing broken dark gray underworld iron armor, ragged gray cloth visible underneath. Retain thin body and elderly face, clearly armored elite without heroic bulk.",
+  "status": "pending",
+  "version": "v02",
+  "refs": [
+    "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskC_helheim_enemies_2026-10-17/candidates/dead_elite_v01.png",
+    "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskC_helheim_enemies_2026-10-17/refs/walk6_leg_kinematics_guide.png"
+  ],
+  "prompt": "Use case: identity-preserve. Input1 is the EXACT pixel character. Input2 is ONLY a six-phase leg-motion diagram, RED means same near leg and BLUE means same far leg; do NOT copy its colors, text, mannequin or style. Draw the input1 character with the leg phases of input2, matching camera, head/torso size, palette, outfit and accessories throughout. The near leg MUST move from FORWARD-right in frame1 to BACK-left in frame4, while far leg does opposite. Inframe2 nearlegsupportsunderhips farfootlifted,inframe3nearlegtrailsleft farfootadvancesright,inframe5farlegsupports nearfootlifted,inframe6nearlegadvancesright farlegtrailsleft. Feet point RIGHT even while leg is behind hips. Arms swing oppositely; retain weapon in hand for archer. NO repeating same bright near foot forward in both contact poses.  Exactly SIX poses 3columns by2rows readingorder, each logical64x64px with2pxtransparentmargin, body50px high; fixed footbaseline and exact identical scale. Compact stride fits frame. Transparent binarypixelart, exact input1 RGB palette, no scene/text/grid/shadow/FX/particles, no redblue guide colors."
+}

@@ -1,0 +1,68 @@
+{
+  "source": "/Users/zhangjunqiu/Desktop/\u65e0\u9650\u6050\u6016/assets/source/taskC_helheim_enemies_2026-10-17/originals/mist_wraith_attack_v01_raw.png",
+  "raw_size": [
+    1254,
+    1254
+  ],
+  "grid": [
+    2,
+    2
+  ],
+  "crop_boxes": [
+    [
+      155,
+      28,
+      489,
+      606
+    ],
+    [
+      32,
+      28,
+      568,
+      606
+    ],
+    [
+      152,
+      19,
+      578,
+      600
+    ],
+    [
+      129,
+      19,
+      460,
+      600
+    ]
+  ],
+  "common_scale": 0.09169550173010381,
+  "target_body_height": 53,
+  "first_pose_reference_index": 0,
+  "placements": [
+    [
+      16,
+      9,
+      31,
+      53
+    ],
+    [
+      7,
+      9,
+      49,
+      53
+    ],
+    [
+      12,
+      9,
+      39,
+      53
+    ],
+    [
+      17,
+      9,
+      30,
+      53
+    ]
+  ],
+  "palette_reference": "/Users/zhangjunqiu/Desktop/\u65e0\u9650\u6050\u6016/assets/source/taskC_helheim_enemies_2026-10-17/candidates/mist_wraith_v03.png",
+  "note": "One shared scale across all frames; whole-cell crop and placement only, no character drawing."
+}

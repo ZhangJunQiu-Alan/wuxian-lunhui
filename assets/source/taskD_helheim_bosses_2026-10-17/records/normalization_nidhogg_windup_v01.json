@@ -1,0 +1,56 @@
+{
+  "source": "/Users/zhangjunqiu/Desktop/\u65e0\u9650\u6050\u6016/assets/source/taskD_helheim_bosses_2026-10-17/originals/nidhogg_windup_v01_raw.png",
+  "raw_size": [
+    2172,
+    724
+  ],
+  "grid": [
+    3,
+    1
+  ],
+  "crop_boxes": [
+    [
+      18,
+      296,
+      721,
+      662
+    ],
+    [
+      19,
+      220,
+      724,
+      661
+    ],
+    [
+      0,
+      172,
+      704,
+      661
+    ]
+  ],
+  "common_scale": 0.26666666666666666,
+  "target_body_height": 104,
+  "first_pose_reference_index": 0,
+  "placements": [
+    [
+      2,
+      92,
+      187,
+      98
+    ],
+    [
+      2,
+      72,
+      188,
+      118
+    ],
+    [
+      2,
+      60,
+      188,
+      130
+    ]
+  ],
+  "palette_reference": "/Users/zhangjunqiu/Desktop/\u65e0\u9650\u6050\u6016/assets/source/taskD_helheim_bosses_2026-10-17/candidates/nidhogg_v01.png",
+  "note": "One shared scale across all frames; whole-cell crop and placement only, no character drawing."
+}

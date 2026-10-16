@@ -1,0 +1,23 @@
+{
+  "id": "garm_idle",
+  "unit": "garm",
+  "label": "冥府猎犬 idle",
+  "action": "idle",
+  "folder": "bosses",
+  "w": 128,
+  "h": 128,
+  "frames": 4,
+  "task": "taskD_helheim_bosses_2026-10-17",
+  "loop": true,
+  "anchor": "bottom",
+  "body_h": 99,
+  "subject": "A massive BLACK hellhound with powerful canine body, matted charcoal fur, dim ember-red eyes, blood-dark red staining only the chest fur, heavy BROKEN iron neck collar and a short dragging broken chain. Face right, four anatomically correct legs. Keep collar, blood patch and chain as essential silhouette details. Not a wolf with flames, no magical aura.",
+  "status": "pending",
+  "version": "v01",
+  "refs": [
+    "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskD_helheim_bosses_2026-10-17/candidates/garm_v02.png"
+  ],
+  "prompt": "Use case: identity-preserve. Animate the EXACT project character in input1. Preserve head/face, proportions, materials, palette, clothing, armor and accessories. Four subtle breathing poses in a seamless idle loop: rest, inhale, rest-mid, exhale. Keep head scale, limb length, equipment details, silhouette proportions and foot baseline stable. Same body, not four redesigns.\nLayout: EXACTLY FOUR frames in a2by2equal-cell grid, reading left-to-right then top-to-bottom. Each cell logically128x128pixels, with2logicalpixels of completely clear margin on every side. Fixed side-three-quarter camera facing RIGHT. Every cell has SAME scale, body size, foot ground line and lighting as reference. Frame1 has the original neutral body size for reference. Do not shrink the character to make extended poses fit: draw compact poses instead.\nStrong low-resolution pixel clusters, exactly the same limited RGB color palette as reference, upper-left light, dark outline, no dithering or smooth painting. Genuine transparent RGBA, binary alpha. No frame lines, text, labels, names, scene, separate object, ground shadow, aura, slash, dust or particle effects. Whole character/weapon fits inside every frame. No cut-off limbs or detached limbs.",
+  "tool": "builtin image_gen",
+  "source": "/Users/zhangjunqiu/.codex/generated_images/01a14377-c537-7a10-b5df-10043f63fbe0/exec-3d32ec16-a0bd-41fe-a158-9d0aa9004c18.png"
+}

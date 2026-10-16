@@ -21,17 +21,17 @@
 | Pixel Asset Studio / 本轮仅比较 | https://pixel-asset-studio.com/about/ | 页面说明免费、本地处理；本轮所读页面未明确写出输出所有权，沿用旧批次用户商用确认记录但不扩展为新的授权证明 | 2026-10-16 | 本轮暂不用于制作；不把免费或本地处理等同于明确授权 |
 | Pillow 11.1.0 / 本地 PNG 元数据检查与验收预览 | 已读安装包 LICENSE：`/opt/anaconda3/lib/python3.13/site-packages/pillow-11.1.0.dist-info/LICENSE`；https://pillow.readthedocs.io/en/stable/about.html#license | MIT-CMU，允许为任何目的免费使用、复制、修改与分发软件。仅作本地检查/预览，不提供第三方美术内容；作品权利不转移给工具 | 2026-10-16 | 已核查本地许可证；检查脚本为本项目原创，放在第 1 批 records/ |
 
-### 第 1 批剑士（musashi）：实际产出（进行中）
+### 第 1 批剑士（swordsman）：实际产出（进行中）
 
 | 文件 / 范围 | 来源与工具 | 授权 / 所有权 | 来源链接 | 日期与凭证 |
 | --- | --- | --- | --- | --- |
-| source/batch01_musashi_2026-10-16/originals/（8 张原图） | 已登录的 Chrome ChatGPT 图像生成；站姿用既有北欧素材总览作画风参考，动作与特写均上传同一剑士参考 | OpenAI 内容所有权条款：在双方之间且在适用法律允许范围内，输出归用户；用于商业项目。不承诺纯 AI 内容必然获得版权保护 | https://openai.com/policies/terms-of-use/ | 2026-10-16；逐张会话与实际提示词见该批 manifest.json、records/ |
-| source/batch01_musashi_2026-10-16/candidates/musashi_piskel_v01.png、.piskel | 上述站姿经 Piskel 导入、最近邻缩小、扩展画布及导出；只有候选，没有采用其颜色过多的版本 | Piskel 免费，用户保留作品全部权利；未使用网站示例素材 | https://www.piskelapp.com/terms/ | 2026-10-16；浏览器证据及实际 PNG 自检在该批 records/ |
-| sprites/characters/musashi.png、musashi_hurt.png、musashi_death.png、musashi_cutin.png；对应 approved/、previews/ | 上述自有 AI 原图经本地 Pillow 规范化、统一调色板、切帧与预览导出；脚本为项目原创 | 原图权利同上；Pillow MIT-CMU 不取得作品权利，允许商业目的使用。仅四项美术自检通过；idle/move 未通过，未放进最终目录 | https://pillow.readthedocs.io/en/stable/about.html#license | 2026-10-16；该批 manifest.json 记录哈希、颜色数、自检与非游戏验收边界 |
+| source/batch01_swordsman_2026-10-16/originals/（8 张原图） | 已登录的 Chrome ChatGPT 图像生成；站姿用既有北欧素材总览作画风参考，动作与特写均上传同一剑士参考 | OpenAI 内容所有权条款：在双方之间且在适用法律允许范围内，输出归用户；用于商业项目。不承诺纯 AI 内容必然获得版权保护 | https://openai.com/policies/terms-of-use/ | 2026-10-16；逐张会话与实际提示词见该批 manifest.json、records/ |
+| source/batch01_swordsman_2026-10-16/candidates/swordsman_piskel_v01.png、.piskel | 上述站姿经 Piskel 导入、最近邻缩小、扩展画布及导出；只有候选，没有采用其颜色过多的版本 | Piskel 免费，用户保留作品全部权利；未使用网站示例素材 | https://www.piskelapp.com/terms/ | 2026-10-16；浏览器证据及实际 PNG 自检在该批 records/ |
+| sprites/characters/swordsman.png、swordsman_hurt.png、swordsman_death.png、swordsman_cutin.png；对应 approved/、previews/ | 上述自有 AI 原图经本地 Pillow 规范化、统一调色板、切帧与预览导出；脚本为项目原创 | 原图权利同上；Pillow MIT-CMU 不取得作品权利，允许商业目的使用。仅四项美术自检通过；idle/move 未通过，未放进最终目录 | https://pillow.readthedocs.io/en/stable/about.html#license | 2026-10-16；该批 manifest.json 记录哈希、颜色数、自检与非游戏验收边界 |
 
 ### 2026-10-16：第 1 批 Piskel 免费逐帧修复补记
 
-剑士待机 v05、跑步 v06 在 Chrome 的 Piskel 免费网页编辑器中逐像素修正并导出 PNG、可编辑 .piskel 与 GIF；未使用 PixelLab API。沿用上文已核查的 Piskel 商用及输出权利条款。Pillow 仅用于读取导出文件、比对像素计划、切帧和生成最近邻预览/调整 GIF 计时。人工修正计划、失败候选、验证结果和网页截图均保存在 `source/batch01_musashi_2026-10-16/records/`。
+剑士待机 v05、跑步 v06 在 Chrome 的 Piskel 免费网页编辑器中逐像素修正并导出 PNG、可编辑 .piskel 与 GIF；未使用 PixelLab API。沿用上文已核查的 Piskel 商用及输出权利条款。Pillow 仅用于读取导出文件、比对像素计划、切帧和生成最近邻预览/调整 GIF 计时。人工修正计划、失败候选、验证结果和网页截图均保存在 `source/batch01_swordsman_2026-10-16/records/`。
 
 ### 2026-10-16：第 2 批工具与原图补记
 
@@ -73,7 +73,7 @@
 
 ### 角色文件改名（2026-10-16）
 
-角色素材的文件名从原型人物名改为职业名：`musashi_*` → `swordsman_*`，`annie_*` → `gunslinger_*`，`lanling_*` → `assassin_*`，`merlin_*` → `mage_*`。图片内容没有变化，上文各批记录里的旧文件名对应这些新文件。`assets/source/` 里的原稿保留当时的文件名。
+早期文件名用了原型人物名，已统一改为职业名。历史提示词只遮盖人物名，未改写成新的生成提示词。
 
 ### 第5批第1关7种敌人行走（2026-10-16，制作中）
 
@@ -98,3 +98,43 @@ Claude 验收（2026-10-16）：7 个帧条已在 Godot 内实测，切帧、朝
 Claude 验收（2026-10-16）：第 4 批补做已接入第 1 关地图并在 Godot 内实测：四边屏障、冰面和雪路过渡、各地标物件与贴花显示正常，验收通过。
 
 Claude 验收（2026-10-16）：第 6 批 34 项已接入并在 Godot 内实测，验收通过。霜冻冲击波环用在霜巨人和赫列姆砸地的起手冲击；赫列姆带缺口的扩散冲击波仍由程序绘制，因为完整的环看不出缺口方向。
+
+### 任务 C：第2关美术开工（2026-10-17）
+
+用户明确分配本任务负责C+D。C的原图、实际Prompt、参考、自检和失败稿单独放在source/taskC_helheim_enemies_2026-10-17/。继续使用用户已批准的内置image_gen，沿用本台账已核查的OpenAI输出商业使用及所有权条款（https://openai.com/policies/terms-of-use/）；只上传本项目自有参考。若需逐帧修正，使用已核验免费Piskel（https://www.piskelapp.com/terms/），用户保留作品权利。Pillow沿用MIT-CMU用于尺寸、原图色板、二值透明、裁排、整帧定位及预览，不重画角色。旧素材格式不符时先备份再规范化；不引入第三方作品造型、新账号、付款或收费API。本项为工具使用登记，不代表通过自检。
+
+### 任务 D：第2关美术开工（2026-10-17）
+
+用户明确分配本任务负责C+D。D的原图、实际Prompt、参考、自检和失败稿单独放在source/taskD_helheim_bosses_2026-10-17/。继续使用用户已批准的内置image_gen，沿用本台账已核查的OpenAI输出商业使用及所有权条款（https://openai.com/policies/terms-of-use/）；只上传本项目自有参考。若需逐帧修正，使用已核验免费Piskel（https://www.piskelapp.com/terms/），用户保留作品权利。Pillow沿用MIT-CMU用于尺寸、原图色板、二值透明、裁排、整帧定位及预览，不重画角色。旧素材格式不符时先备份再规范化；不引入第三方作品造型、新账号、付款或收费API。本项为工具使用登记，不代表通过自检。
+
+
+### 任务A：历史标识清理（2026-10-17）
+
+按最新版任务书将历史源目录、文件名、记录标识和内部引用统一为职业名；历史Prompt只遮盖人物名，未重写其余内容。78份文字记录修改、491个路径改名，清理前530个游戏素材文件SHA256不变；没有新增美术来源、修改游戏图像、注册或付款。逐项审计见`source/taskA_cleanup_2026-10-17/`。历史原图授权依据沿用原记录，本项不改变其授权状态。
+
+
+### 任务B：音效与音乐来源核验（2026-10-17，制作中）
+
+已在官方页面核对Kenney Impact Sounds、RPG Audio、Interface Sounds及OpenGameArt的rubberduck「80 CC0 RPG SFX」、Emma_MA「Determined Pursuit」、nene「Opening Theme」为CC0，可商用、改编和随游戏分发、无需署名；只从这些明确授权的页面取得候选，是否采用以本任务manifest为准。来源链接分别为https://kenney.nl/assets/impact-sounds 、https://kenney.nl/assets/rpg-audio 、https://kenney.nl/assets/interface-sounds 、https://opengameart.org/content/80-cc0-rpg-sfx 、https://opengameart.org/content/determined-pursuit-epic-orchestra-loop 、https://opengameart.org/content/opening-theme-actionsuspense 。CC0依据：https://creativecommons.org/publicdomain/zero/1.0/ 。本机FFmpeg8.1.1的`ffmpeg -L`确认此安装按GPLv3或以后版本许可，允许商业使用；仅用其离线处理音频，不把程序包含进游戏，音频本身的权利取决于输入源授权。任务自编脚本不引入外部音频。未登录注册、付费或使用AI音乐服务；此条不代表候选已通过试听或验收。
+
+
+任务B音源核验续记（2026-10-17）：官网来源另核对TokyoGeisha「Dream 2 Ambience」、nene「Mysterious」与「New Sunrise」、RandomMind「Fantasy: Rising Moon」与「Fantasy: Lament for a Warrior’s Soul」、Eldritch Grim「War Horns」均标注CC0，无需注册即可取得其公开音频链接；允许商业使用与改编，署名非强制。来源分别为https://opengameart.org/content/dream-2-ambience 、https://opengameart.org/content/mysterious 、https://opengameart.org/content/new-sunrise 、https://opengameart.org/content/fantasy-rising-moon 、https://opengameart.org/content/fantasy-lament-for-a-warriors-soul 、https://opengameart.org/content/war-horns 。另核对The Free Firearm Sound Library官方归档页https://opengameart.org/content/the-free-firearm-sound-library ：团队明确CC0、商业或专业应用免版税且无需署名。候选原件会保存作者与链接；是否入选以manifest为准。Freesound原文件需登录，已向用户询问，在答复前不登录、注册或下载其需登录原件。
+
+
+任务B处理工具核验（2026-10-17）：本机NumPy2.4.3随附LICENSE.txt为BSD三条款，允许商业使用与修改；用于离线波形分析、混音、削波/起音检查和包络处理，不随游戏分发程序。许可文件已读：`/opt/homebrew/lib/python3.14/site-packages/numpy-2.4.3.dist-info/licenses/LICENSE.txt`。音频输入仍按各自CC0来源记录，不把库软件许可误当作音源授权。
+
+任务B Freesound原件补记（2026-10-17）：用户手动激活并登录后，实际通过Chrome页面的Download sound按钮下载NaturesTemper「Wolf howl」https://freesound.org/people/NaturesTemper/sounds/398430/ 和Nox_Sound「Weapon_Revolver_Hammer_Mono.wav」https://freesound.org/people/Nox_Sound/sounds/540065/ 。两页均明确CC0，允许商用、改编与分发，无需署名。前者为作者自制狼嚎音效，不伪称野生狼实录；后者为击锤机械声，不伪称开枪或转轮装弹。原件与SHA256存于本任务originals/freesound及records/freesound_downloads.json。另已从前述CC0枪械库提取Ruger Single Six和Smith & Wesson 642四份原WAV及说明CSV；归档未保存，文件来源见records/firearm_download.json。当前仅为候选音频制作，未声称通过听感或游戏验收。
+
+任务B换弹来源补记（2026-10-17）：tkane0512「Revolver Reload Break 2」https://freesound.org/people/tkane0512/sounds/722902/ ，页面明确CC0、可商用和改编，无需署名；作者说明为自己在半声学处理房间录制并编辑的开膛、快速装弹与闭合声。用户已手动登录，原WAV由Chrome下载。用于替换机械锁扣占位候选，不把击锤声冒充转轮装弹。原件与来源哈希存本任务originals/freesound和records/freesound_downloads.json。
+
+任务B候选制作与检查记录（2026-10-17）：已实际导出54条WAV音效及6首OGG Vorbis音乐候选，并生成7份一分钟音效连播和4份三遍音乐循环FLAC。候选来源、每条授权页、改编配方、哈希和测量值见source/taskB_audio_2026-10-17/manifest.json；全部采用已登记CC0输入，音效含自编DSP层，音乐为授权曲目剪辑，不宣称独占原创。文件格式、起音、样本峰值/尾零、同组RMS和音乐响度/时长已做技术核验；本会话未实际听辨，主观自检全部pending，未放入assets/audio自动接入目录，未宣称完成听感或Godot验收。下载归档在内存或匿名临时文件中解包后关闭，仅保留原音频、文本许可和来源记录，没有保存压缩包。
+
+
+### 任务 C 交付补记（2026-10-17）
+
+第2关小怪、精英、箭和支线物件31项完成美术自检（18条动画、101个帧格），来源、实际Prompt、参考、失败稿和最终版本见`source/taskC_helheim_enemies_2026-10-17/manifest.json`及records。新造型/动作实际使用用户已批准的OpenAI内置图像工具，输入仅为项目自有参考和原创动作线稿，沿用本台账已核查的OpenAI输出商业使用与所有权条款：https://openai.com/policies/terms-of-use/ 。亡者和普通弓手复用项目既有源图并逐项记录；小傀儡静态/最终行走从同族素材按共同尺度缩小。Pillow按MIT-CMU仅做尺寸、固定静态RGB色板、二值透明、裁排、透明边缘残片清理、整帧定位与预览，没有在Python重画角色；本任务C未用Piskel手绘角色。31项正式文件、approved与候选SHA256一致，RGBA/尺寸/alpha0或255/2px留白/角色色板/GIF像素与8fps时序检查全部通过，记录在`source/taskC_helheim_enemies_2026-10-17/records/final_audit.json`。无地块，4×4平铺不适用。无新增第三方角色素材、账号、付款或收费API；未在Godot测试，仍需Claude审核接入与实测。
+
+
+### 任务 D 交付补记（2026-10-17）
+
+第2关三位Boss及专属物件/特效28项完成美术自检（19条动画、77个帧格）。逐项原图、实际Prompt、项目自有上传参考、失败候选、加工来源与最终版本见`source/taskD_helheim_bosses_2026-10-17/manifest.json`及records。实际使用用户已批准的OpenAI内置图像工具，沿用本台账已核查的OpenAI输出商业使用与所有权条款：https://openai.com/policies/terms-of-use/ 。巨船展帆版实际在免费Chrome Piskel中逐区域复制原船身，只保留中央帆布变化；工程、导出和截图已归档，Piskel依据：https://www.piskelapp.com/terms/ ，用户保留作品权利。Pillow按MIT-CMU仅做尺寸、固定静态RGB色板、二值透明、裁排、透明边缘残片清理、整帧定位和预览，没有在Python重画Boss或巨船。28项正式文件/approved/候选SHA256一致，RGBA/尺寸/alpha0或255/2px留白/角色色板/GIF像素与平均8fps时序检查全部通过；船体固定区域逐像素一致，见final_audit.json和ship_state_audit.json。三相位PNG仍是3格，预览GIF重复两次以兼容10ms时基并保持平均8fps。无地块，4×4平铺不适用。没有引入第三方作品造型、新账号、付款或收费API；未在Godot测试，待Claude审核、接入并实测。

@@ -1,0 +1,23 @@
+{
+  "id": "nidhogg_gnaw",
+  "unit": "nidhogg",
+  "label": "噬根巨龙 gnaw",
+  "action": "gnaw",
+  "folder": "bosses",
+  "w": 192,
+  "h": 192,
+  "frames": 4,
+  "task": "taskD_helheim_bosses_2026-10-17",
+  "loop": true,
+  "anchor": "bottom",
+  "body_h": 140,
+  "subject": "An ancient WINGLESS black root-gnawing dragon, long low reptilian body, four strong clawed legs, tapering curled tail, ridged charcoal scales with rotting dark green gaps, crooked horns, earthy worn teeth. No full wings, no giant fire breath or glowing aura. A long predatory muzzle facing right and compact curved tail to fit square frame. Body length more prominent than height.",
+  "status": "pending",
+  "version": "v01",
+  "refs": [
+    "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskD_helheim_bosses_2026-10-17/candidates/nidhogg_v01.png"
+  ],
+  "prompt": "Use case: identity-preserve. Animate EXACTLY the project character in input1. Retain every identifying feature and the exact anatomy, scale, colors, material, body proportions, equipment and camera angle of the reference. Four-phase gnawing loop: head lowered toward an invisible root directly below-front, jaws open, bite closed, slight tug, reopen. Root will be a SEPARATE game prop; do not draw a root or other object in these frames. Keep all4legs grounded, long body, curved tail and head scale stable. Only jaw and slight neck motion.\nKeep the dragon WINGLESS, four-legged, long low black body, dark green scale gaps, curled tail, same horn count and long snout. Do not make it a biped or add wings.\nLayout: EXACTLY FOUR frames in a2by2equal-cell grid, all cells equal192x192logicalpixels, reading order left-to-right then top-to-bottom. TWOlogicalpixelclearborder around EVERY cell, no cropped horns, tail, fingers or robe. Common exact scale and fixed foot ground line at logical y189. Frame1 keeps neutral source body size; draw compact motion to fit, never shrink the torso or redesign to fit poses.\nUse exact limited reference RGBpalette, crisp low-resolution pixelart, upper-left light, dark outlines, no dithering or smooth shading. True transparent background, binary alpha, no frame lines, label, name, text, watermark, cast ground shadow, scene, root, stone, effect, smoke, poison cloud, spell circle, particle or aura.",
+  "tool": "builtin image_gen",
+  "source": "/Users/zhangjunqiu/.codex/generated_images/01a14377-c537-7a10-b5df-10043f63fbe0/exec-5bc97dfa-3e74-4080-afe5-968711a48b0f.png"
+}

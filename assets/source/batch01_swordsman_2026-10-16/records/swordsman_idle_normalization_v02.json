@@ -1,0 +1,109 @@
+{
+  "action": "idle",
+  "source_size": [
+    1254,
+    1254
+  ],
+  "grid": [
+    2,
+    2
+  ],
+  "source_bboxes_exclusive": [
+    [
+      213,
+      62,
+      501,
+      631
+    ],
+    [
+      147,
+      62,
+      437,
+      631
+    ],
+    [
+      212,
+      7,
+      504,
+      580
+    ],
+    [
+      148,
+      7,
+      438,
+      580
+    ]
+  ],
+  "shared_scale_all_frames": 0.0840630472854641,
+  "palette_source": "candidates/swordsman_nearest_v02.png",
+  "frames": [
+    {
+      "index": 0,
+      "scaled_subject": [
+        24,
+        48
+      ],
+      "offset": [
+        20,
+        12
+      ],
+      "bbox_exclusive": [
+        20,
+        12,
+        44,
+        60
+      ]
+    },
+    {
+      "index": 1,
+      "scaled_subject": [
+        24,
+        48
+      ],
+      "offset": [
+        20,
+        12
+      ],
+      "bbox_exclusive": [
+        20,
+        12,
+        44,
+        60
+      ]
+    },
+    {
+      "index": 2,
+      "scaled_subject": [
+        25,
+        48
+      ],
+      "offset": [
+        19,
+        12
+      ],
+      "bbox_exclusive": [
+        19,
+        12,
+        44,
+        60
+      ]
+    },
+    {
+      "index": 3,
+      "scaled_subject": [
+        24,
+        48
+      ],
+      "offset": [
+        20,
+        12
+      ],
+      "bbox_exclusive": [
+        20,
+        12,
+        44,
+        60
+      ]
+    }
+  ]
+}

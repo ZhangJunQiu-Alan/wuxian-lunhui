@@ -18,16 +18,16 @@ for a in m['assets']:
     for j in items:
         if j['candidate']==a['candidate']:j.update(a)
         elif j['id']==a['id'] and j['status'].startswith('candidate_pending'):j.update(status='superseded_not_selected',selection_note='Only manifest-listed candidate is delivered; earlier intermediate retains its original production record.')
-    if a['id']=='merlin_move':
+    if a['id']=='mage_move':
         for j in items:
-            if j['candidate']=='candidates/merlin_move_v01.png':j.update(status='rejected',rejection_reason='Repeated first half-cycle; near boot did not visibly lead opposite half.')
+            if j['candidate']=='candidates/mage_move_v01.png':j.update(status='rejected',rejection_reason='Repeated first half-cycle; near boot did not visibly lead opposite half.')
 m['approved_assets']=len(m['assets']);assert m['approved_assets']==29
 m['status']='art_self_check_passed_pending_game_review';m['ground_tiling']='not_applicable_no_ground_tiles_in_batch07';m['final_audit']='records/final_audit.json'
 (r/'manifest.json').write_text(json.dumps(m,ensure_ascii=False,indent=2)+'\n')
 (r/'records/candidates.json').write_text(json.dumps(items,ensure_ascii=False,indent=2)+'\n')
 canvas=Image.new('RGB',(1200,760),'#121721');draw=ImageDraw.Draw(canvas)
 draw.text((20,12),'BATCH07 - 29 assets - art self-check complete / game review pending',fill='#e0e7ef')
-for col,c in enumerate(['annie','lanling','merlin']):
+for col,c in enumerate(['gunslinger','assassin','mage']):
     x=col*400
     im=Image.open(project/'assets/sprites/characters'/f'{c}_cutin.png').convert('RGBA');canvas.paste(im,(x,40),im)
     draw.text((x+16,370),c+' - static / walk / attack / death',fill='#e0e7ef')

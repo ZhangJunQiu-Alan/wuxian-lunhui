@@ -1,0 +1,68 @@
+{
+  "source": "/Users/zhangjunqiu/Desktop/\u65e0\u9650\u6050\u6016/assets/source/taskC_helheim_enemies_2026-10-17/originals/squirrel_move_v01_raw.png",
+  "raw_size": [
+    1254,
+    1254
+  ],
+  "grid": [
+    2,
+    2
+  ],
+  "crop_boxes": [
+    [
+      81,
+      98,
+      606,
+      550
+    ],
+    [
+      51,
+      113,
+      594,
+      550
+    ],
+    [
+      81,
+      64,
+      615,
+      522
+    ],
+    [
+      60,
+      62,
+      595,
+      523
+    ]
+  ],
+  "common_scale": 0.05156537753222836,
+  "target_body_height": 24,
+  "first_pose_reference_index": 0,
+  "placements": [
+    [
+      2,
+      7,
+      27,
+      23
+    ],
+    [
+      2,
+      7,
+      28,
+      23
+    ],
+    [
+      2,
+      6,
+      28,
+      24
+    ],
+    [
+      2,
+      6,
+      28,
+      24
+    ]
+  ],
+  "palette_reference": "/Users/zhangjunqiu/Desktop/\u65e0\u9650\u6050\u6016/assets/source/taskC_helheim_enemies_2026-10-17/candidates/squirrel_v01.png",
+  "note": "One shared scale across all frames; whole-cell crop and placement only, no character drawing."
+}

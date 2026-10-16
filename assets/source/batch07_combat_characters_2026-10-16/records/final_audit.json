@@ -11,8 +11,8 @@
   "ground_4x4_tiling": "not_applicable_no_ground_assets",
   "items": [
     {
-      "id": "musashi_attack",
-      "output": "assets/sprites/characters/musashi_attack.png",
+      "id": "swordsman_attack",
+      "output": "assets/sprites/characters/swordsman_attack.png",
       "sha256": "8cba1a6ce1b76a439f2dec50fade5bfcc8dee5861e605b046f918c937bbdf512",
       "size": [
         384,
@@ -481,8 +481,8 @@
       "technical_checks_passed": true
     },
     {
-      "id": "merlin",
-      "output": "assets/sprites/characters/merlin.png",
+      "id": "mage",
+      "output": "assets/sprites/characters/mage.png",
       "sha256": "3cbb5f8a32b7cb79bdfa52f38c7dbce3c487d0d9b50f25470967f904cf2ed90b",
       "size": [
         64,
@@ -508,8 +508,8 @@
       "technical_checks_passed": true
     },
     {
-      "id": "annie",
-      "output": "assets/sprites/characters/annie.png",
+      "id": "gunslinger",
+      "output": "assets/sprites/characters/gunslinger.png",
       "sha256": "754134580682ef324d1b7e90fd2849807fe4622bc702a61bcd305a449fef9f52",
       "size": [
         64,
@@ -535,8 +535,8 @@
       "technical_checks_passed": true
     },
     {
-      "id": "lanling",
-      "output": "assets/sprites/characters/lanling.png",
+      "id": "assassin",
+      "output": "assets/sprites/characters/assassin.png",
       "sha256": "36f61e50bcfb173863e5abc69afc70ef10ae3d17bb6bf7bab8a31d42fcc2a772",
       "size": [
         64,
@@ -562,8 +562,8 @@
       "technical_checks_passed": true
     },
     {
-      "id": "annie_idle",
-      "output": "assets/sprites/characters/annie_idle.png",
+      "id": "gunslinger_idle",
+      "output": "assets/sprites/characters/gunslinger_idle.png",
       "sha256": "bb0fa05e2a9c0d11e70d8948968b02c72997cefb6c36e7772f8d88797063386e",
       "size": [
         256,
@@ -619,8 +619,8 @@
       "technical_checks_passed": true
     },
     {
-      "id": "lanling_idle",
-      "output": "assets/sprites/characters/lanling_idle.png",
+      "id": "assassin_idle",
+      "output": "assets/sprites/characters/assassin_idle.png",
       "sha256": "7aa2181f518a20b7b1997824ec30821a05e563ba8f4df55bacadf46a4b56590f",
       "size": [
         256,
@@ -676,8 +676,8 @@
       "technical_checks_passed": true
     },
     {
-      "id": "merlin_idle",
-      "output": "assets/sprites/characters/merlin_idle.png",
+      "id": "mage_idle",
+      "output": "assets/sprites/characters/mage_idle.png",
       "sha256": "b482ea266385eef44670f9f4aee9f94a0e562646796af2cde01cd6b5e8313b33",
       "size": [
         256,
@@ -733,8 +733,8 @@
       "technical_checks_passed": true
     },
     {
-      "id": "annie_attack",
-      "output": "assets/sprites/characters/annie_attack.png",
+      "id": "gunslinger_attack",
+      "output": "assets/sprites/characters/gunslinger_attack.png",
       "sha256": "6520e49a7bc5a3eb4b86f18c2b113892da40378c98214016f33d04c1e1004889",
       "size": [
         256,
@@ -790,8 +790,8 @@
       "technical_checks_passed": true
     },
     {
-      "id": "lanling_attack",
-      "output": "assets/sprites/characters/lanling_attack.png",
+      "id": "assassin_attack",
+      "output": "assets/sprites/characters/assassin_attack.png",
       "sha256": "a53af26dfc7fbd12865d6d0d5f8d0a0b2f53a2e15a6030193f0a45f9c71ebf3a",
       "size": [
         384,
@@ -861,8 +861,8 @@
       "technical_checks_passed": true
     },
     {
-      "id": "merlin_attack",
-      "output": "assets/sprites/characters/merlin_attack.png",
+      "id": "mage_attack",
+      "output": "assets/sprites/characters/mage_attack.png",
       "sha256": "3bd167d2c7e55f0f6f20dcc20df938075ecdbb71425599871442b57a7ab49827",
       "size": [
         256,
@@ -918,8 +918,8 @@
       "technical_checks_passed": true
     },
     {
-      "id": "annie_hurt",
-      "output": "assets/sprites/characters/annie_hurt.png",
+      "id": "gunslinger_hurt",
+      "output": "assets/sprites/characters/gunslinger_hurt.png",
       "sha256": "90650b371f3ec7d5dcfcbad44ed27aef953bb05f57df0c539ac0f06c4e113354",
       "size": [
         128,
@@ -961,8 +961,8 @@
       "technical_checks_passed": true
     },
     {
-      "id": "lanling_hurt",
-      "output": "assets/sprites/characters/lanling_hurt.png",
+      "id": "assassin_hurt",
+      "output": "assets/sprites/characters/assassin_hurt.png",
       "sha256": "ca19b9b42e40834d9991856da973445113c257e9c5f93fdd5b0bbb80efbf6d05",
       "size": [
         128,
@@ -1004,8 +1004,8 @@
       "technical_checks_passed": true
     },
     {
-      "id": "merlin_hurt",
-      "output": "assets/sprites/characters/merlin_hurt.png",
+      "id": "mage_hurt",
+      "output": "assets/sprites/characters/mage_hurt.png",
       "sha256": "45e84108ff81b2841103eed3fc19da463898ea45e54fbdffe0505ed1cae1ecd6",
       "size": [
         128,
@@ -1047,8 +1047,8 @@
       "technical_checks_passed": true
     },
     {
-      "id": "annie_death",
-      "output": "assets/sprites/characters/annie_death.png",
+      "id": "gunslinger_death",
+      "output": "assets/sprites/characters/gunslinger_death.png",
       "sha256": "cb8eb20563d344a8cba45c1006cb02192621d0f6bfdb1ae1dc15af1a1e098ffa",
       "size": [
         384,
@@ -1118,8 +1118,8 @@
       "technical_checks_passed": true
     },
     {
-      "id": "lanling_death",
-      "output": "assets/sprites/characters/lanling_death.png",
+      "id": "assassin_death",
+      "output": "assets/sprites/characters/assassin_death.png",
       "sha256": "f4acaf108c92b4d0f47c676e0e5940c2551b7996a4013207f564e916862b0daf",
       "size": [
         384,
@@ -1189,8 +1189,8 @@
       "technical_checks_passed": true
     },
     {
-      "id": "merlin_death",
-      "output": "assets/sprites/characters/merlin_death.png",
+      "id": "mage_death",
+      "output": "assets/sprites/characters/mage_death.png",
       "sha256": "c380cef221b873779a091d48d18268ca43556cee3dd6b55ce4d18be615fe2c81",
       "size": [
         384,
@@ -1260,8 +1260,8 @@
       "technical_checks_passed": true
     },
     {
-      "id": "annie_move",
-      "output": "assets/sprites/characters/annie_move.png",
+      "id": "gunslinger_move",
+      "output": "assets/sprites/characters/gunslinger_move.png",
       "sha256": "6dc253eeaa78b55563b1ad9baca54c455cf115eebac4ff3fbd14304a8a28e97b",
       "size": [
         384,
@@ -1331,8 +1331,8 @@
       "technical_checks_passed": true
     },
     {
-      "id": "lanling_move",
-      "output": "assets/sprites/characters/lanling_move.png",
+      "id": "assassin_move",
+      "output": "assets/sprites/characters/assassin_move.png",
       "sha256": "5e54bf3e8e4b221d2997be0d3475f72b68fbf8ed53016b75599b07ee6d9b0fc8",
       "size": [
         384,
@@ -1402,8 +1402,8 @@
       "technical_checks_passed": true
     },
     {
-      "id": "merlin_move",
-      "output": "assets/sprites/characters/merlin_move.png",
+      "id": "mage_move",
+      "output": "assets/sprites/characters/mage_move.png",
       "sha256": "2bf96e800c4b074ed27c585c4178f37e17164e2396b718784dbc5f6d0830c556",
       "size": [
         384,
@@ -1473,8 +1473,8 @@
       "technical_checks_passed": true
     },
     {
-      "id": "annie_cutin",
-      "output": "assets/sprites/characters/annie_cutin.png",
+      "id": "gunslinger_cutin",
+      "output": "assets/sprites/characters/gunslinger_cutin.png",
       "sha256": "74a977226befd12863617b2b1f4888db04cf0090ad693ca33b444614bd2a03c6",
       "size": [
         400,
@@ -1500,8 +1500,8 @@
       "technical_checks_passed": true
     },
     {
-      "id": "lanling_cutin",
-      "output": "assets/sprites/characters/lanling_cutin.png",
+      "id": "assassin_cutin",
+      "output": "assets/sprites/characters/assassin_cutin.png",
       "sha256": "c614a04f4fc5714e49534f968b1bd04810586855c35ca8c75e23dee5225278e6",
       "size": [
         400,
@@ -1527,8 +1527,8 @@
       "technical_checks_passed": true
     },
     {
-      "id": "merlin_cutin",
-      "output": "assets/sprites/characters/merlin_cutin.png",
+      "id": "mage_cutin",
+      "output": "assets/sprites/characters/mage_cutin.png",
       "sha256": "e1d4c5f2c926b45c5efe032d91b3338d65b0e1399b4bad28c4dc783f7bb11545",
       "size": [
         400,

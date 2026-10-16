@@ -1,5 +1,5 @@
 {
-  "candidates/annie_v02.png": {
+  "candidates/gunslinger_v02.png": {
     "decision": "pass",
     "checks": {
       "exact_size_rgba_binary_alpha": true,
@@ -14,7 +14,7 @@
     "note": "Reserved three steel gray tones in fixed48-color palette, removed redundant near-black shades. Static silhouette, baseline and sizing unchanged. Reviewed enlarged static and original1x sprite.",
     "generation_record": "records/builtin_C_static_jobs.json"
   },
-  "candidates/lanling_v02.png": {
+  "candidates/assassin_v02.png": {
     "decision": "pass",
     "checks": {
       "exact_size_rgba_binary_alpha": true,
@@ -29,7 +29,7 @@
     "note": "Reserved three steel gray tones in fixed48-color palette, removed redundant near-black shades. Static silhouette, baseline and sizing unchanged. Reviewed enlarged static and original1x sprite.",
     "generation_record": "records/builtin_C_static_jobs.json"
   },
-  "candidates/annie_idle_v01.png": {
+  "candidates/gunslinger_idle_v01.png": {
     "decision": "pass",
     "checks": {
       "exact_size_rgba_binary_alpha": true,
@@ -49,7 +49,7 @@
     "note": "Four idle poses inspected at1x/4x and two actual Chrome playback phases. Feet baseline59, subtle chest/fabric variations, same head size; no whole-body bounce.",
     "generation_record": "records/builtin_C_idle_jobs.json"
   },
-  "candidates/lanling_idle_v02.png": {
+  "candidates/assassin_idle_v02.png": {
     "decision": "pass",
     "checks": {
       "exact_size_rgba_binary_alpha": true,
@@ -69,7 +69,7 @@
     "note": "Four idle poses inspected at1x/4x and two actual Chrome playback phases. Feet baseline59, subtle chest/fabric variations, same head size; no whole-body bounce.",
     "generation_record": "records/builtin_C_idle_jobs.json"
   },
-  "candidates/merlin_idle_v01.png": {
+  "candidates/mage_idle_v01.png": {
     "decision": "pass",
     "checks": {
       "exact_size_rgba_binary_alpha": true,
@@ -89,7 +89,7 @@
     "note": "Four idle poses inspected at1x/4x and two actual Chrome playback phases. Feet baseline59, subtle chest/fabric variations, same head size; no whole-body bounce.",
     "generation_record": "records/builtin_C_idle_jobs.json"
   },
-  "candidates/annie_attack_v04.png": {
+  "candidates/gunslinger_attack_v04.png": {
     "decision": "pass",
     "checks": {
       "exact_size_rgba_binary_alpha": true,
@@ -109,7 +109,7 @@
     "note": "Aim then visible upward recoil, lowered recovery. Whole-frame foot-anchor translation prevents head-based re-centering from sliding feet. Palette includes steel grays.",
     "generation_record": "records/builtin_C_animation_jobs.json"
   },
-  "candidates/lanling_attack_v05.png": {
+  "candidates/assassin_attack_v05.png": {
     "decision": "pass",
     "checks": {
       "exact_size_rgba_binary_alpha": true,
@@ -129,7 +129,7 @@
     "note": "Distinct near-arm lower thrust and far-arm upper thrust, same two blades. Repacked wholeframes 1,2,4,3,5,6 so third frame is unmistakable attack. Whole-frame foot-anchor alignment; no pixels repainted.",
     "generation_record": "records/builtin_C_wave1_fixes.json"
   },
-  "candidates/merlin_attack_v04.png": {
+  "candidates/mage_attack_v04.png": {
     "decision": "pass",
     "checks": {
       "exact_size_rgba_binary_alpha": true,
@@ -149,7 +149,7 @@
     "note": "Third generation narrowed frame3 stance. Full-length staff lift/lower/plant/recover; no crossing footstep. Whole-frame foot-anchor alignment.",
     "generation_record": "records/builtin_C_fix_move_jobs.json"
   },
-  "candidates/annie_hurt_v02.png": {
+  "candidates/gunslinger_hurt_v02.png": {
     "decision": "pass",
     "checks": {
       "exact_size_rgba_binary_alpha": true,
@@ -168,7 +168,7 @@
     "note": "Head-based centering candidate superseded by whole-frame foot-center alignment: lean moves upper body back while support remains centered. Both flinch and partial recovery inspected in Chrome.",
     "generation_record": "records/builtin_C_hurt_move_jobs.json"
   },
-  "candidates/lanling_hurt_v02.png": {
+  "candidates/assassin_hurt_v02.png": {
     "decision": "pass",
     "checks": {
       "exact_size_rgba_binary_alpha": true,
@@ -187,7 +187,7 @@
     "note": "Head-based centering candidate superseded by whole-frame foot-center alignment: lean moves upper body back while support remains centered. Both flinch and partial recovery inspected in Chrome.",
     "generation_record": "records/builtin_C_hurt_move_jobs.json"
   },
-  "candidates/merlin_hurt_v02.png": {
+  "candidates/mage_hurt_v02.png": {
     "decision": "pass",
     "checks": {
       "exact_size_rgba_binary_alpha": true,
@@ -206,7 +206,7 @@
     "note": "Head-based centering candidate superseded by whole-frame foot-center alignment: lean moves upper body back while support remains centered. Both flinch and partial recovery inspected in Chrome.",
     "generation_record": "records/builtin_C_hurt_move_jobs.json"
   },
-  "candidates/annie_death_v01.png": {
+  "candidates/gunslinger_death_v01.png": {
     "decision": "pass",
     "checks": {
       "exact_size_rgba_binary_alpha": true,
@@ -225,7 +225,7 @@
     "note": "Same single scale48px/body fromfirst pose, whole-frame center and groundline59; later poses shorten vertically as body rotates. Final prone pose keeps costume and weapon. Preview loops only for QA; game action plays once.",
     "generation_record": "records/builtin_C_death_jobs.json"
   },
-  "candidates/lanling_death_v01.png": {
+  "candidates/assassin_death_v01.png": {
     "decision": "pass",
     "checks": {
       "exact_size_rgba_binary_alpha": true,
@@ -244,7 +244,7 @@
     "note": "Same single scale48px/body fromfirst pose, whole-frame center and groundline59; later poses shorten vertically as body rotates. Final prone pose keeps costume and weapon. Preview loops only for QA; game action plays once.",
     "generation_record": "records/builtin_C_death_jobs.json"
   },
-  "candidates/merlin_death_v01.png": {
+  "candidates/mage_death_v01.png": {
     "decision": "pass",
     "checks": {
       "exact_size_rgba_binary_alpha": true,
@@ -263,7 +263,7 @@
     "note": "Same single scale48px/body fromfirst pose, whole-frame center and groundline59; later poses shorten vertically as body rotates. Final prone pose keeps costume and weapon. Preview loops only for QA; game action plays once.",
     "generation_record": "records/builtin_C_death_jobs.json"
   },
-  "candidates/annie_move_v03.png": {
+  "candidates/gunslinger_move_v03.png": {
     "decision": "pass",
     "checks": {
       "exact_size_rgba_binary_alpha": true,
@@ -284,7 +284,7 @@
     "note": "Third generation corrects repeated leadleg: phase4nearboot visibly bendsback whilefarlegstepsforward, phase5near knee liftsforward. All6poses inspected in4x contact plus Chrome actual1x/4x animation.",
     "generation_record": "records/builtin_C_fix_move_jobs.json"
   },
-  "candidates/lanling_move_v02.png": {
+  "candidates/assassin_move_v02.png": {
     "decision": "pass",
     "checks": {
       "exact_size_rgba_binary_alpha": true,
@@ -305,7 +305,7 @@
     "note": "Second generation fixes repeated leadleg. Phase4 near knee bendsback withbootraisedbehind, farlegforward; phase5 near knee liftsforward. Checked all6contactframes plus Chrome playback and paused nextframe.",
     "generation_record": "records/builtin_C_cutin_walk_jobs.json"
   },
-  "candidates/merlin_move_v02.png": {
+  "candidates/mage_move_v02.png": {
     "decision": "pass",
     "checks": {
       "exact_size_rgba_binary_alpha": true,
@@ -324,9 +324,9 @@
       "browser8fps_and_paused_step_reviewed": true
     },
     "note": "Second generation fixes repeated leadleg. Phase4 near knee bendsback withbootraisedbehind, farlegforward; phase5 near knee liftsforward. Checked all6contactframes plus Chrome playback and paused nextframe.",
-    "generation_record": "records/builtin_C_merlin_walk_fix_jobs.json"
+    "generation_record": "records/builtin_C_mage_walk_fix_jobs.json"
   },
-  "candidates/annie_cutin_v01.png": {
+  "candidates/gunslinger_cutin_v01.png": {
     "decision": "pass",
     "checks": {
       "exact_size_rgba_binary_alpha": true,
@@ -346,7 +346,7 @@
     "note": "Original portrait inspected for hand/face/equipment. Cropped/resized once to200x160 logical transparent canvas and nearest-neighbor2x to400x320. Same fixed48-color palette as own sprite animations. Reviewed actual1x/4x deepbackground composites.",
     "generation_record": "records/builtin_C_cutin_walk_jobs.json"
   },
-  "candidates/lanling_cutin_v01.png": {
+  "candidates/assassin_cutin_v01.png": {
     "decision": "pass",
     "checks": {
       "exact_size_rgba_binary_alpha": true,
@@ -366,7 +366,7 @@
     "note": "Original portrait inspected for hand/face/equipment. Cropped/resized once to200x160 logical transparent canvas and nearest-neighbor2x to400x320. Same fixed48-color palette as own sprite animations. Reviewed actual1x/4x deepbackground composites.",
     "generation_record": "records/builtin_C_cutin_walk_jobs.json"
   },
-  "candidates/merlin_cutin_v01.png": {
+  "candidates/mage_cutin_v01.png": {
     "decision": "pass",
     "checks": {
       "exact_size_rgba_binary_alpha": true,

@@ -1,0 +1,6 @@
+{
+  "dark_arrow_v01": "Points left; rejected and imagegen mirrored as v02, then inspected right-pointing purple tip.",
+  "mist_wraith_v01": "Two jade-green eye lights missing; rejected, v02 pending.",
+  "dark_elf_attack_v01": "Full draw plus flared cloak exceeds64x64 margin at static body scale; initial fit shrinks neutral pose to40px vs50px static. Reject and regenerate compact cape/bow poses.",
+  "animation_palette_padding": "Palette padding with zero introduced black not in some static RGB sets. Replaced unused entries with existing first source RGB; reran normalization."
+}

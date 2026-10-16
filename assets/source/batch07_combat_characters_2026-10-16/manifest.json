@@ -6,8 +6,8 @@
   "approved_assets": 29,
   "assets": [
     {
-      "id": "musashi_attack",
-      "candidate": "candidates/musashi_attack_v03.png",
+      "id": "swordsman_attack",
+      "candidate": "candidates/swordsman_attack_v03.png",
       "version": "v03",
       "status": "art_self_check_passed_pending_game_review",
       "size": [
@@ -60,13 +60,13 @@
           60
         ]
       ],
-      "source": "originals/musashi_attack_v01_raw.png",
+      "source": "originals/swordsman_attack_v01_raw.png",
       "generation_url": "https://chatgpt.com/c/6ad1c93d-40a8-83ea-acbe-c3ea3923605c",
-      "pixel_edit": "candidates/musashi_attack_f03_piskel_v03.png",
-      "return_pose": "references/musashi.png, exact copy in frame6",
+      "pixel_edit": "candidates/swordsman_attack_f03_piskel_v03.png",
+      "return_pose": "references/swordsman.png, exact copy in frame6",
       "sha256": "8cba1a6ce1b76a439f2dec50fade5bfcc8dee5861e605b046f918c937bbdf512",
-      "output": "assets/sprites/characters/musashi_attack.png",
-      "approved": "approved/musashi_attack.png",
+      "output": "assets/sprites/characters/swordsman_attack.png",
+      "approved": "approved/swordsman_attack.png",
       "checks": {
         "exact_dimensions_rgba_binary_alpha": true,
         "reference_palette_and_upper_left_light": true,
@@ -83,11 +83,11 @@
         "game_tested": false
       },
       "previews": {
-        "contact_1x": "previews/musashi_attack_v03_contact_1x.png",
-        "contact_4x": "previews/musashi_attack_v03_contact_4x.png",
-        "slow8fps": "previews/musashi_attack_v03_slow8fps.gif",
-        "target_fps_one_shot": "previews/musashi_attack_v03_attack16fps.gif",
-        "target_fps_QA_loop": "previews/musashi_attack_v03_attack16fps_QA_loop.gif"
+        "contact_1x": "previews/swordsman_attack_v03_contact_1x.png",
+        "contact_4x": "previews/swordsman_attack_v03_contact_4x.png",
+        "slow8fps": "previews/swordsman_attack_v03_slow8fps.gif",
+        "target_fps_one_shot": "previews/swordsman_attack_v03_attack16fps.gif",
+        "target_fps_QA_loop": "previews/swordsman_attack_v03_attack16fps_QA_loop.gif"
       },
       "gif_timing_note": "GIF uses10ms timing. 8fps preview alternates120/130ms. Game uses PNG at exact16fps attack /8fps other actions. QA loop may repeat non-looping attacks/deaths.",
       "ground_tiling": "not_applicable_character_asset",
@@ -979,11 +979,11 @@
       "gif_timing_note": "GIF uses10ms timing. 8fps preview alternates120/130ms. Game uses PNG at exact16fps attack /8fps other actions. QA loop may repeat non-looping attacks/deaths."
     },
     {
-      "id": "merlin",
-      "candidate": "candidates/merlin_v01.png",
+      "id": "mage",
+      "candidate": "candidates/mage_v01.png",
       "version": "v01",
       "status": "art_self_check_passed_pending_game_review",
-      "source": "originals/merlin_v01_raw.png",
+      "source": "originals/mage_v01_raw.png",
       "tool": "built-in image_gen; Pillow format normalization",
       "generation_record": "records/builtin_C_static_jobs.json",
       "frames": 1,
@@ -1006,20 +1006,20 @@
         ]
       ],
       "colors": 43,
-      "reference_palette": "records/merlin_palette.json",
+      "reference_palette": "records/mage_palette.json",
       "alpha_values": [
         0,
         255
       ],
       "sha256": "3cbb5f8a32b7cb79bdfa52f38c7dbce3c487d0d9b50f25470967f904cf2ed90b",
-      "output": "assets/sprites/characters/merlin.png",
-      "approved": "approved/merlin.png",
+      "output": "assets/sprites/characters/mage.png",
+      "approved": "approved/mage.png",
       "checks": {
         "exact_size_rgba_binary_alpha": true,
         "body_height_about48_feet_y59": true,
         "right_facing_centered_margin2": true,
         "costume_attributes_compared_with_task_book": true,
-        "style_scale_compared_to_musashi": true,
+        "style_scale_compared_to_swordsman": true,
         "dark_background_actual1x4x_local_contact_reviewed": true,
         "no_text_watermarks_background_effects": true,
         "game_tested": false
@@ -1027,16 +1027,16 @@
       "review_image": "previews/C_static_compare_1x_and_4x.png",
       "ground_tiling": "not_applicable_character_asset",
       "previews": {
-        "contact_1x": "previews/merlin_v01_contact_1x.png",
-        "contact_4x": "previews/merlin_v01_contact_4x.png"
+        "contact_1x": "previews/mage_v01_contact_1x.png",
+        "contact_4x": "previews/mage_v01_contact_4x.png"
       }
     },
     {
-      "id": "annie",
-      "candidate": "candidates/annie_v02.png",
+      "id": "gunslinger",
+      "candidate": "candidates/gunslinger_v02.png",
       "version": "v02",
       "status": "art_self_check_passed_pending_game_review",
-      "source": "originals/annie_v01_raw.png",
+      "source": "originals/gunslinger_v01_raw.png",
       "tool": "built-in image_gen; Pillow format normalization",
       "generation_record": "records/builtin_C_static_jobs.json",
       "frames": 1,
@@ -1059,14 +1059,14 @@
         ]
       ],
       "colors": 46,
-      "reference_palette": "records/annie_palette.json",
+      "reference_palette": "records/gunslinger_palette.json",
       "alpha_values": [
         0,
         255
       ],
       "sha256": "754134580682ef324d1b7e90fd2849807fe4622bc702a61bcd305a449fef9f52",
-      "output": "assets/sprites/characters/annie.png",
-      "approved": "approved/annie.png",
+      "output": "assets/sprites/characters/gunslinger.png",
+      "approved": "approved/gunslinger.png",
       "checks": {
         "exact_size_rgba_binary_alpha": true,
         "same_character_fixed_palette": true,
@@ -1081,16 +1081,16 @@
       "review_note": "Reserved three steel gray tones in fixed48-color palette, removed redundant near-black shades. Static silhouette, baseline and sizing unchanged. Reviewed enlarged static and original1x sprite.",
       "ground_tiling": "not_applicable_character_asset",
       "previews": {
-        "contact_1x": "previews/annie_v02_contact_1x.png",
-        "contact_4x": "previews/annie_v02_contact_4x.png"
+        "contact_1x": "previews/gunslinger_v02_contact_1x.png",
+        "contact_4x": "previews/gunslinger_v02_contact_4x.png"
       }
     },
     {
-      "id": "lanling",
-      "candidate": "candidates/lanling_v02.png",
+      "id": "assassin",
+      "candidate": "candidates/assassin_v02.png",
       "version": "v02",
       "status": "art_self_check_passed_pending_game_review",
-      "source": "originals/lanling_v01_raw.png",
+      "source": "originals/assassin_v01_raw.png",
       "tool": "built-in image_gen; Pillow format normalization",
       "generation_record": "records/builtin_C_static_jobs.json",
       "frames": 1,
@@ -1113,14 +1113,14 @@
         ]
       ],
       "colors": 46,
-      "reference_palette": "records/lanling_palette.json",
+      "reference_palette": "records/assassin_palette.json",
       "alpha_values": [
         0,
         255
       ],
       "sha256": "36f61e50bcfb173863e5abc69afc70ef10ae3d17bb6bf7bab8a31d42fcc2a772",
-      "output": "assets/sprites/characters/lanling.png",
-      "approved": "approved/lanling.png",
+      "output": "assets/sprites/characters/assassin.png",
+      "approved": "approved/assassin.png",
       "checks": {
         "exact_size_rgba_binary_alpha": true,
         "same_character_fixed_palette": true,
@@ -1135,15 +1135,15 @@
       "review_note": "Reserved three steel gray tones in fixed48-color palette, removed redundant near-black shades. Static silhouette, baseline and sizing unchanged. Reviewed enlarged static and original1x sprite.",
       "ground_tiling": "not_applicable_character_asset",
       "previews": {
-        "contact_1x": "previews/lanling_v02_contact_1x.png",
-        "contact_4x": "previews/lanling_v02_contact_4x.png"
+        "contact_1x": "previews/assassin_v02_contact_1x.png",
+        "contact_4x": "previews/assassin_v02_contact_4x.png"
       }
     },
     {
-      "id": "annie_idle",
-      "candidate": "candidates/annie_idle_v01.png",
+      "id": "gunslinger_idle",
+      "candidate": "candidates/gunslinger_idle_v01.png",
       "version": "v01",
-      "source": "originals/annie_idle_v01_raw.png",
+      "source": "originals/gunslinger_idle_v01_raw.png",
       "tool": "built-in image_gen; Pillow format normalization",
       "generation_record": "records/builtin_C_idle_jobs.json",
       "status": "art_self_check_passed_pending_game_review",
@@ -1241,11 +1241,11 @@
         false,
         false
       ],
-      "reference_palette": "records/annie_palette.json",
+      "reference_palette": "records/gunslinger_palette.json",
       "sha256": "bb0fa05e2a9c0d11e70d8948968b02c72997cefb6c36e7772f8d88797063386e",
       "downsample_method": "nearest",
-      "output": "assets/sprites/characters/annie_idle.png",
-      "approved": "approved/annie_idle.png",
+      "output": "assets/sprites/characters/gunslinger_idle.png",
+      "approved": "approved/gunslinger_idle.png",
       "checks": {
         "exact_size_rgba_binary_alpha": true,
         "same_character_fixed_palette": true,
@@ -1264,19 +1264,19 @@
       "review_note": "Four idle poses inspected at1x/4x and two actual Chrome playback phases. Feet baseline59, subtle chest/fabric variations, same head size; no whole-body bounce.",
       "ground_tiling": "not_applicable_character_asset",
       "previews": {
-        "contact_1x": "previews/annie_idle_v01_contact_1x.png",
-        "contact_4x": "previews/annie_idle_v01_contact_4x.png",
-        "slow8fps": "previews/annie_idle_v01_slow8fps.gif",
-        "target_fps_one_shot": "previews/annie_idle_v01_action8fps.gif",
-        "target_fps_QA_loop": "previews/annie_idle_v01_action8fps_QA_loop.gif"
+        "contact_1x": "previews/gunslinger_idle_v01_contact_1x.png",
+        "contact_4x": "previews/gunslinger_idle_v01_contact_4x.png",
+        "slow8fps": "previews/gunslinger_idle_v01_slow8fps.gif",
+        "target_fps_one_shot": "previews/gunslinger_idle_v01_action8fps.gif",
+        "target_fps_QA_loop": "previews/gunslinger_idle_v01_action8fps_QA_loop.gif"
       },
       "gif_timing_note": "GIF uses10ms timing. 8fps preview alternates120/130ms. Game uses PNG at exact16fps attack /8fps other actions. QA loop may repeat non-looping attacks/deaths."
     },
     {
-      "id": "lanling_idle",
-      "candidate": "candidates/lanling_idle_v02.png",
+      "id": "assassin_idle",
+      "candidate": "candidates/assassin_idle_v02.png",
       "version": "v02",
-      "source": "originals/lanling_idle_v01_raw.png",
+      "source": "originals/assassin_idle_v01_raw.png",
       "tool": "built-in image_gen; Pillow format normalization",
       "generation_record": "records/builtin_C_idle_jobs.json",
       "status": "art_self_check_passed_pending_game_review",
@@ -1374,11 +1374,11 @@
         false,
         false
       ],
-      "reference_palette": "records/lanling_palette.json",
+      "reference_palette": "records/assassin_palette.json",
       "sha256": "7aa2181f518a20b7b1997824ec30821a05e563ba8f4df55bacadf46a4b56590f",
       "downsample_method": "nearest",
-      "output": "assets/sprites/characters/lanling_idle.png",
-      "approved": "approved/lanling_idle.png",
+      "output": "assets/sprites/characters/assassin_idle.png",
+      "approved": "approved/assassin_idle.png",
       "checks": {
         "exact_size_rgba_binary_alpha": true,
         "same_character_fixed_palette": true,
@@ -1397,19 +1397,19 @@
       "review_note": "Four idle poses inspected at1x/4x and two actual Chrome playback phases. Feet baseline59, subtle chest/fabric variations, same head size; no whole-body bounce.",
       "ground_tiling": "not_applicable_character_asset",
       "previews": {
-        "contact_1x": "previews/lanling_idle_v02_contact_1x.png",
-        "contact_4x": "previews/lanling_idle_v02_contact_4x.png",
-        "slow8fps": "previews/lanling_idle_v02_slow8fps.gif",
-        "target_fps_one_shot": "previews/lanling_idle_v02_action8fps.gif",
-        "target_fps_QA_loop": "previews/lanling_idle_v02_action8fps_QA_loop.gif"
+        "contact_1x": "previews/assassin_idle_v02_contact_1x.png",
+        "contact_4x": "previews/assassin_idle_v02_contact_4x.png",
+        "slow8fps": "previews/assassin_idle_v02_slow8fps.gif",
+        "target_fps_one_shot": "previews/assassin_idle_v02_action8fps.gif",
+        "target_fps_QA_loop": "previews/assassin_idle_v02_action8fps_QA_loop.gif"
       },
       "gif_timing_note": "GIF uses10ms timing. 8fps preview alternates120/130ms. Game uses PNG at exact16fps attack /8fps other actions. QA loop may repeat non-looping attacks/deaths."
     },
     {
-      "id": "merlin_idle",
-      "candidate": "candidates/merlin_idle_v01.png",
+      "id": "mage_idle",
+      "candidate": "candidates/mage_idle_v01.png",
       "version": "v01",
-      "source": "originals/merlin_idle_v01_raw.png",
+      "source": "originals/mage_idle_v01_raw.png",
       "tool": "built-in image_gen; Pillow format normalization",
       "generation_record": "records/builtin_C_idle_jobs.json",
       "status": "art_self_check_passed_pending_game_review",
@@ -1507,11 +1507,11 @@
         false,
         false
       ],
-      "reference_palette": "records/merlin_palette.json",
+      "reference_palette": "records/mage_palette.json",
       "sha256": "b482ea266385eef44670f9f4aee9f94a0e562646796af2cde01cd6b5e8313b33",
       "downsample_method": "nearest",
-      "output": "assets/sprites/characters/merlin_idle.png",
-      "approved": "approved/merlin_idle.png",
+      "output": "assets/sprites/characters/mage_idle.png",
+      "approved": "approved/mage_idle.png",
       "checks": {
         "exact_size_rgba_binary_alpha": true,
         "same_character_fixed_palette": true,
@@ -1530,19 +1530,19 @@
       "review_note": "Four idle poses inspected at1x/4x and two actual Chrome playback phases. Feet baseline59, subtle chest/fabric variations, same head size; no whole-body bounce.",
       "ground_tiling": "not_applicable_character_asset",
       "previews": {
-        "contact_1x": "previews/merlin_idle_v01_contact_1x.png",
-        "contact_4x": "previews/merlin_idle_v01_contact_4x.png",
-        "slow8fps": "previews/merlin_idle_v01_slow8fps.gif",
-        "target_fps_one_shot": "previews/merlin_idle_v01_action8fps.gif",
-        "target_fps_QA_loop": "previews/merlin_idle_v01_action8fps_QA_loop.gif"
+        "contact_1x": "previews/mage_idle_v01_contact_1x.png",
+        "contact_4x": "previews/mage_idle_v01_contact_4x.png",
+        "slow8fps": "previews/mage_idle_v01_slow8fps.gif",
+        "target_fps_one_shot": "previews/mage_idle_v01_action8fps.gif",
+        "target_fps_QA_loop": "previews/mage_idle_v01_action8fps_QA_loop.gif"
       },
       "gif_timing_note": "GIF uses10ms timing. 8fps preview alternates120/130ms. Game uses PNG at exact16fps attack /8fps other actions. QA loop may repeat non-looping attacks/deaths."
     },
     {
-      "id": "annie_attack",
-      "candidate": "candidates/annie_attack_v04.png",
+      "id": "gunslinger_attack",
+      "candidate": "candidates/gunslinger_attack_v04.png",
       "version": "v04",
-      "source": "originals/annie_attack_v01_raw.png",
+      "source": "originals/gunslinger_attack_v01_raw.png",
       "tool": "built-in image_gen; Pillow format normalization",
       "generation_record": "records/builtin_C_animation_jobs.json",
       "status": "art_self_check_passed_pending_game_review",
@@ -1640,12 +1640,12 @@
         false,
         false
       ],
-      "reference_palette": "records/annie_palette.json",
+      "reference_palette": "records/gunslinger_palette.json",
       "sha256": "6520e49a7bc5a3eb4b86f18c2b113892da40378c98214016f33d04c1e1004889",
       "downsample_method": "nearest",
       "horizontal_anchor": "feet",
-      "output": "assets/sprites/characters/annie_attack.png",
-      "approved": "approved/annie_attack.png",
+      "output": "assets/sprites/characters/gunslinger_attack.png",
+      "approved": "approved/gunslinger_attack.png",
       "checks": {
         "exact_size_rgba_binary_alpha": true,
         "same_character_fixed_palette": true,
@@ -1664,19 +1664,19 @@
       "review_note": "Aim then visible upward recoil, lowered recovery. Whole-frame foot-anchor translation prevents head-based re-centering from sliding feet. Palette includes steel grays.",
       "ground_tiling": "not_applicable_character_asset",
       "previews": {
-        "contact_1x": "previews/annie_attack_v04_contact_1x.png",
-        "contact_4x": "previews/annie_attack_v04_contact_4x.png",
-        "slow8fps": "previews/annie_attack_v04_slow8fps.gif",
-        "target_fps_one_shot": "previews/annie_attack_v04_attack16fps.gif",
-        "target_fps_QA_loop": "previews/annie_attack_v04_attack16fps_QA_loop.gif"
+        "contact_1x": "previews/gunslinger_attack_v04_contact_1x.png",
+        "contact_4x": "previews/gunslinger_attack_v04_contact_4x.png",
+        "slow8fps": "previews/gunslinger_attack_v04_slow8fps.gif",
+        "target_fps_one_shot": "previews/gunslinger_attack_v04_attack16fps.gif",
+        "target_fps_QA_loop": "previews/gunslinger_attack_v04_attack16fps_QA_loop.gif"
       },
       "gif_timing_note": "GIF uses10ms timing. 8fps preview alternates120/130ms. Game uses PNG at exact16fps attack /8fps other actions. QA loop may repeat non-looping attacks/deaths."
     },
     {
-      "id": "lanling_attack",
-      "candidate": "candidates/lanling_attack_v05.png",
+      "id": "assassin_attack",
+      "candidate": "candidates/assassin_attack_v05.png",
       "version": "v05",
-      "source": "originals/lanling_attack_v02_raw.png",
+      "source": "originals/assassin_attack_v02_raw.png",
       "tool": "built-in image_gen; Pillow format normalization",
       "generation_record": "records/builtin_C_wave1_fixes.json",
       "status": "art_self_check_passed_pending_game_review",
@@ -1808,7 +1808,7 @@
         false,
         false
       ],
-      "reference_palette": "records/lanling_palette.json",
+      "reference_palette": "records/assassin_palette.json",
       "sha256": "a53af26dfc7fbd12865d6d0d5f8d0a0b2f53a2e15a6030193f0a45f9c71ebf3a",
       "downsample_method": "nearest",
       "horizontal_anchor": "feet",
@@ -1821,8 +1821,8 @@
         6
       ],
       "edit_note": "Repacked existing wholeframes so distinct far-arm thrust is clear atframe3; no pixels repainted.",
-      "output": "assets/sprites/characters/lanling_attack.png",
-      "approved": "approved/lanling_attack.png",
+      "output": "assets/sprites/characters/assassin_attack.png",
+      "approved": "approved/assassin_attack.png",
       "checks": {
         "exact_size_rgba_binary_alpha": true,
         "same_character_fixed_palette": true,
@@ -1841,19 +1841,19 @@
       "review_note": "Distinct near-arm lower thrust and far-arm upper thrust, same two blades. Repacked wholeframes 1,2,4,3,5,6 so third frame is unmistakable attack. Whole-frame foot-anchor alignment; no pixels repainted.",
       "ground_tiling": "not_applicable_character_asset",
       "previews": {
-        "contact_1x": "previews/lanling_attack_v05_contact_1x.png",
-        "contact_4x": "previews/lanling_attack_v05_contact_4x.png",
-        "slow8fps": "previews/lanling_attack_v05_slow8fps.gif",
-        "target_fps_one_shot": "previews/lanling_attack_v05_attack16fps.gif",
-        "target_fps_QA_loop": "previews/lanling_attack_v05_attack16fps_QA_loop.gif"
+        "contact_1x": "previews/assassin_attack_v05_contact_1x.png",
+        "contact_4x": "previews/assassin_attack_v05_contact_4x.png",
+        "slow8fps": "previews/assassin_attack_v05_slow8fps.gif",
+        "target_fps_one_shot": "previews/assassin_attack_v05_attack16fps.gif",
+        "target_fps_QA_loop": "previews/assassin_attack_v05_attack16fps_QA_loop.gif"
       },
       "gif_timing_note": "GIF uses10ms timing. 8fps preview alternates120/130ms. Game uses PNG at exact16fps attack /8fps other actions. QA loop may repeat non-looping attacks/deaths."
     },
     {
-      "id": "merlin_attack",
-      "candidate": "candidates/merlin_attack_v04.png",
+      "id": "mage_attack",
+      "candidate": "candidates/mage_attack_v04.png",
       "version": "v04",
-      "source": "originals/merlin_attack_v03_raw.png",
+      "source": "originals/mage_attack_v03_raw.png",
       "tool": "built-in image_gen; Pillow format normalization",
       "generation_record": "records/builtin_C_fix_move_jobs.json",
       "status": "art_self_check_passed_pending_game_review",
@@ -1951,12 +1951,12 @@
         false,
         false
       ],
-      "reference_palette": "records/merlin_palette.json",
+      "reference_palette": "records/mage_palette.json",
       "sha256": "3bd167d2c7e55f0f6f20dcc20df938075ecdbb71425599871442b57a7ab49827",
       "downsample_method": "nearest",
       "horizontal_anchor": "feet",
-      "output": "assets/sprites/characters/merlin_attack.png",
-      "approved": "approved/merlin_attack.png",
+      "output": "assets/sprites/characters/mage_attack.png",
+      "approved": "approved/mage_attack.png",
       "checks": {
         "exact_size_rgba_binary_alpha": true,
         "same_character_fixed_palette": true,
@@ -1975,19 +1975,19 @@
       "review_note": "Third generation narrowed frame3 stance. Full-length staff lift/lower/plant/recover; no crossing footstep. Whole-frame foot-anchor alignment.",
       "ground_tiling": "not_applicable_character_asset",
       "previews": {
-        "contact_1x": "previews/merlin_attack_v04_contact_1x.png",
-        "contact_4x": "previews/merlin_attack_v04_contact_4x.png",
-        "slow8fps": "previews/merlin_attack_v04_slow8fps.gif",
-        "target_fps_one_shot": "previews/merlin_attack_v04_attack16fps.gif",
-        "target_fps_QA_loop": "previews/merlin_attack_v04_attack16fps_QA_loop.gif"
+        "contact_1x": "previews/mage_attack_v04_contact_1x.png",
+        "contact_4x": "previews/mage_attack_v04_contact_4x.png",
+        "slow8fps": "previews/mage_attack_v04_slow8fps.gif",
+        "target_fps_one_shot": "previews/mage_attack_v04_attack16fps.gif",
+        "target_fps_QA_loop": "previews/mage_attack_v04_attack16fps_QA_loop.gif"
       },
       "gif_timing_note": "GIF uses10ms timing. 8fps preview alternates120/130ms. Game uses PNG at exact16fps attack /8fps other actions. QA loop may repeat non-looping attacks/deaths."
     },
     {
-      "id": "annie_hurt",
-      "candidate": "candidates/annie_hurt_v02.png",
+      "id": "gunslinger_hurt",
+      "candidate": "candidates/gunslinger_hurt_v02.png",
       "version": "v02",
-      "source": "originals/annie_hurt_v01_raw.png",
+      "source": "originals/gunslinger_hurt_v01_raw.png",
       "tool": "built-in image_gen; Pillow format normalization",
       "generation_record": "records/builtin_C_hurt_move_jobs.json",
       "status": "art_self_check_passed_pending_game_review",
@@ -2051,12 +2051,12 @@
         false,
         false
       ],
-      "reference_palette": "records/annie_palette.json",
+      "reference_palette": "records/gunslinger_palette.json",
       "sha256": "90650b371f3ec7d5dcfcbad44ed27aef953bb05f57df0c539ac0f06c4e113354",
       "downsample_method": "nearest",
       "horizontal_anchor": "feet",
-      "output": "assets/sprites/characters/annie_hurt.png",
-      "approved": "approved/annie_hurt.png",
+      "output": "assets/sprites/characters/gunslinger_hurt.png",
+      "approved": "approved/gunslinger_hurt.png",
       "checks": {
         "exact_size_rgba_binary_alpha": true,
         "same_character_fixed_palette": true,
@@ -2074,19 +2074,19 @@
       "review_note": "Head-based centering candidate superseded by whole-frame foot-center alignment: lean moves upper body back while support remains centered. Both flinch and partial recovery inspected in Chrome.",
       "ground_tiling": "not_applicable_character_asset",
       "previews": {
-        "contact_1x": "previews/annie_hurt_v02_contact_1x.png",
-        "contact_4x": "previews/annie_hurt_v02_contact_4x.png",
-        "slow8fps": "previews/annie_hurt_v02_slow8fps.gif",
-        "target_fps_one_shot": "previews/annie_hurt_v02_action8fps.gif",
-        "target_fps_QA_loop": "previews/annie_hurt_v02_action8fps_QA_loop.gif"
+        "contact_1x": "previews/gunslinger_hurt_v02_contact_1x.png",
+        "contact_4x": "previews/gunslinger_hurt_v02_contact_4x.png",
+        "slow8fps": "previews/gunslinger_hurt_v02_slow8fps.gif",
+        "target_fps_one_shot": "previews/gunslinger_hurt_v02_action8fps.gif",
+        "target_fps_QA_loop": "previews/gunslinger_hurt_v02_action8fps_QA_loop.gif"
       },
       "gif_timing_note": "GIF uses10ms timing. 8fps preview alternates120/130ms. Game uses PNG at exact16fps attack /8fps other actions. QA loop may repeat non-looping attacks/deaths."
     },
     {
-      "id": "lanling_hurt",
-      "candidate": "candidates/lanling_hurt_v02.png",
+      "id": "assassin_hurt",
+      "candidate": "candidates/assassin_hurt_v02.png",
       "version": "v02",
-      "source": "originals/lanling_hurt_v01_raw.png",
+      "source": "originals/assassin_hurt_v01_raw.png",
       "tool": "built-in image_gen; Pillow format normalization",
       "generation_record": "records/builtin_C_hurt_move_jobs.json",
       "status": "art_self_check_passed_pending_game_review",
@@ -2150,12 +2150,12 @@
         false,
         false
       ],
-      "reference_palette": "records/lanling_palette.json",
+      "reference_palette": "records/assassin_palette.json",
       "sha256": "ca19b9b42e40834d9991856da973445113c257e9c5f93fdd5b0bbb80efbf6d05",
       "downsample_method": "nearest",
       "horizontal_anchor": "feet",
-      "output": "assets/sprites/characters/lanling_hurt.png",
-      "approved": "approved/lanling_hurt.png",
+      "output": "assets/sprites/characters/assassin_hurt.png",
+      "approved": "approved/assassin_hurt.png",
       "checks": {
         "exact_size_rgba_binary_alpha": true,
         "same_character_fixed_palette": true,
@@ -2173,19 +2173,19 @@
       "review_note": "Head-based centering candidate superseded by whole-frame foot-center alignment: lean moves upper body back while support remains centered. Both flinch and partial recovery inspected in Chrome.",
       "ground_tiling": "not_applicable_character_asset",
       "previews": {
-        "contact_1x": "previews/lanling_hurt_v02_contact_1x.png",
-        "contact_4x": "previews/lanling_hurt_v02_contact_4x.png",
-        "slow8fps": "previews/lanling_hurt_v02_slow8fps.gif",
-        "target_fps_one_shot": "previews/lanling_hurt_v02_action8fps.gif",
-        "target_fps_QA_loop": "previews/lanling_hurt_v02_action8fps_QA_loop.gif"
+        "contact_1x": "previews/assassin_hurt_v02_contact_1x.png",
+        "contact_4x": "previews/assassin_hurt_v02_contact_4x.png",
+        "slow8fps": "previews/assassin_hurt_v02_slow8fps.gif",
+        "target_fps_one_shot": "previews/assassin_hurt_v02_action8fps.gif",
+        "target_fps_QA_loop": "previews/assassin_hurt_v02_action8fps_QA_loop.gif"
       },
       "gif_timing_note": "GIF uses10ms timing. 8fps preview alternates120/130ms. Game uses PNG at exact16fps attack /8fps other actions. QA loop may repeat non-looping attacks/deaths."
     },
     {
-      "id": "merlin_hurt",
-      "candidate": "candidates/merlin_hurt_v02.png",
+      "id": "mage_hurt",
+      "candidate": "candidates/mage_hurt_v02.png",
       "version": "v02",
-      "source": "originals/merlin_hurt_v01_raw.png",
+      "source": "originals/mage_hurt_v01_raw.png",
       "tool": "built-in image_gen; Pillow format normalization",
       "generation_record": "records/builtin_C_hurt_move_jobs.json",
       "status": "art_self_check_passed_pending_game_review",
@@ -2249,12 +2249,12 @@
         false,
         false
       ],
-      "reference_palette": "records/merlin_palette.json",
+      "reference_palette": "records/mage_palette.json",
       "sha256": "45e84108ff81b2841103eed3fc19da463898ea45e54fbdffe0505ed1cae1ecd6",
       "downsample_method": "nearest",
       "horizontal_anchor": "feet",
-      "output": "assets/sprites/characters/merlin_hurt.png",
-      "approved": "approved/merlin_hurt.png",
+      "output": "assets/sprites/characters/mage_hurt.png",
+      "approved": "approved/mage_hurt.png",
       "checks": {
         "exact_size_rgba_binary_alpha": true,
         "same_character_fixed_palette": true,
@@ -2272,19 +2272,19 @@
       "review_note": "Head-based centering candidate superseded by whole-frame foot-center alignment: lean moves upper body back while support remains centered. Both flinch and partial recovery inspected in Chrome.",
       "ground_tiling": "not_applicable_character_asset",
       "previews": {
-        "contact_1x": "previews/merlin_hurt_v02_contact_1x.png",
-        "contact_4x": "previews/merlin_hurt_v02_contact_4x.png",
-        "slow8fps": "previews/merlin_hurt_v02_slow8fps.gif",
-        "target_fps_one_shot": "previews/merlin_hurt_v02_action8fps.gif",
-        "target_fps_QA_loop": "previews/merlin_hurt_v02_action8fps_QA_loop.gif"
+        "contact_1x": "previews/mage_hurt_v02_contact_1x.png",
+        "contact_4x": "previews/mage_hurt_v02_contact_4x.png",
+        "slow8fps": "previews/mage_hurt_v02_slow8fps.gif",
+        "target_fps_one_shot": "previews/mage_hurt_v02_action8fps.gif",
+        "target_fps_QA_loop": "previews/mage_hurt_v02_action8fps_QA_loop.gif"
       },
       "gif_timing_note": "GIF uses10ms timing. 8fps preview alternates120/130ms. Game uses PNG at exact16fps attack /8fps other actions. QA loop may repeat non-looping attacks/deaths."
     },
     {
-      "id": "annie_death",
-      "candidate": "candidates/annie_death_v01.png",
+      "id": "gunslinger_death",
+      "candidate": "candidates/gunslinger_death_v01.png",
       "version": "v01",
-      "source": "originals/annie_death_v01_raw.png",
+      "source": "originals/gunslinger_death_v01_raw.png",
       "tool": "built-in image_gen; Pillow format normalization",
       "generation_record": "records/builtin_C_death_jobs.json",
       "status": "art_self_check_passed_pending_game_review",
@@ -2416,12 +2416,12 @@
         false,
         false
       ],
-      "reference_palette": "records/annie_palette.json",
+      "reference_palette": "records/gunslinger_palette.json",
       "sha256": "cb8eb20563d344a8cba45c1006cb02192621d0f6bfdb1ae1dc15af1a1e098ffa",
       "downsample_method": "nearest",
       "horizontal_anchor": "head",
-      "output": "assets/sprites/characters/annie_death.png",
-      "approved": "approved/annie_death.png",
+      "output": "assets/sprites/characters/gunslinger_death.png",
+      "approved": "approved/gunslinger_death.png",
       "checks": {
         "exact_size_rgba_binary_alpha": true,
         "same_character_fixed_palette": true,
@@ -2439,19 +2439,19 @@
       "review_note": "Same single scale48px/body fromfirst pose, whole-frame center and groundline59; later poses shorten vertically as body rotates. Final prone pose keeps costume and weapon. Preview loops only for QA; game action plays once.",
       "ground_tiling": "not_applicable_character_asset",
       "previews": {
-        "contact_1x": "previews/annie_death_v01_contact_1x.png",
-        "contact_4x": "previews/annie_death_v01_contact_4x.png",
-        "slow8fps": "previews/annie_death_v01_slow8fps.gif",
-        "target_fps_one_shot": "previews/annie_death_v01_action8fps.gif",
-        "target_fps_QA_loop": "previews/annie_death_v01_action8fps_QA_loop.gif"
+        "contact_1x": "previews/gunslinger_death_v01_contact_1x.png",
+        "contact_4x": "previews/gunslinger_death_v01_contact_4x.png",
+        "slow8fps": "previews/gunslinger_death_v01_slow8fps.gif",
+        "target_fps_one_shot": "previews/gunslinger_death_v01_action8fps.gif",
+        "target_fps_QA_loop": "previews/gunslinger_death_v01_action8fps_QA_loop.gif"
       },
       "gif_timing_note": "GIF uses10ms timing. 8fps preview alternates120/130ms. Game uses PNG at exact16fps attack /8fps other actions. QA loop may repeat non-looping attacks/deaths."
     },
     {
-      "id": "lanling_death",
-      "candidate": "candidates/lanling_death_v01.png",
+      "id": "assassin_death",
+      "candidate": "candidates/assassin_death_v01.png",
       "version": "v01",
-      "source": "originals/lanling_death_v01_raw.png",
+      "source": "originals/assassin_death_v01_raw.png",
       "tool": "built-in image_gen; Pillow format normalization",
       "generation_record": "records/builtin_C_death_jobs.json",
       "status": "art_self_check_passed_pending_game_review",
@@ -2583,12 +2583,12 @@
         false,
         false
       ],
-      "reference_palette": "records/lanling_palette.json",
+      "reference_palette": "records/assassin_palette.json",
       "sha256": "f4acaf108c92b4d0f47c676e0e5940c2551b7996a4013207f564e916862b0daf",
       "downsample_method": "nearest",
       "horizontal_anchor": "head",
-      "output": "assets/sprites/characters/lanling_death.png",
-      "approved": "approved/lanling_death.png",
+      "output": "assets/sprites/characters/assassin_death.png",
+      "approved": "approved/assassin_death.png",
       "checks": {
         "exact_size_rgba_binary_alpha": true,
         "same_character_fixed_palette": true,
@@ -2606,19 +2606,19 @@
       "review_note": "Same single scale48px/body fromfirst pose, whole-frame center and groundline59; later poses shorten vertically as body rotates. Final prone pose keeps costume and weapon. Preview loops only for QA; game action plays once.",
       "ground_tiling": "not_applicable_character_asset",
       "previews": {
-        "contact_1x": "previews/lanling_death_v01_contact_1x.png",
-        "contact_4x": "previews/lanling_death_v01_contact_4x.png",
-        "slow8fps": "previews/lanling_death_v01_slow8fps.gif",
-        "target_fps_one_shot": "previews/lanling_death_v01_action8fps.gif",
-        "target_fps_QA_loop": "previews/lanling_death_v01_action8fps_QA_loop.gif"
+        "contact_1x": "previews/assassin_death_v01_contact_1x.png",
+        "contact_4x": "previews/assassin_death_v01_contact_4x.png",
+        "slow8fps": "previews/assassin_death_v01_slow8fps.gif",
+        "target_fps_one_shot": "previews/assassin_death_v01_action8fps.gif",
+        "target_fps_QA_loop": "previews/assassin_death_v01_action8fps_QA_loop.gif"
       },
       "gif_timing_note": "GIF uses10ms timing. 8fps preview alternates120/130ms. Game uses PNG at exact16fps attack /8fps other actions. QA loop may repeat non-looping attacks/deaths."
     },
     {
-      "id": "merlin_death",
-      "candidate": "candidates/merlin_death_v01.png",
+      "id": "mage_death",
+      "candidate": "candidates/mage_death_v01.png",
       "version": "v01",
-      "source": "originals/merlin_death_v01_raw.png",
+      "source": "originals/mage_death_v01_raw.png",
       "tool": "built-in image_gen; Pillow format normalization",
       "generation_record": "records/builtin_C_death_jobs.json",
       "status": "art_self_check_passed_pending_game_review",
@@ -2750,12 +2750,12 @@
         false,
         false
       ],
-      "reference_palette": "records/merlin_palette.json",
+      "reference_palette": "records/mage_palette.json",
       "sha256": "c380cef221b873779a091d48d18268ca43556cee3dd6b55ce4d18be615fe2c81",
       "downsample_method": "nearest",
       "horizontal_anchor": "head",
-      "output": "assets/sprites/characters/merlin_death.png",
-      "approved": "approved/merlin_death.png",
+      "output": "assets/sprites/characters/mage_death.png",
+      "approved": "approved/mage_death.png",
       "checks": {
         "exact_size_rgba_binary_alpha": true,
         "same_character_fixed_palette": true,
@@ -2773,19 +2773,19 @@
       "review_note": "Same single scale48px/body fromfirst pose, whole-frame center and groundline59; later poses shorten vertically as body rotates. Final prone pose keeps costume and weapon. Preview loops only for QA; game action plays once.",
       "ground_tiling": "not_applicable_character_asset",
       "previews": {
-        "contact_1x": "previews/merlin_death_v01_contact_1x.png",
-        "contact_4x": "previews/merlin_death_v01_contact_4x.png",
-        "slow8fps": "previews/merlin_death_v01_slow8fps.gif",
-        "target_fps_one_shot": "previews/merlin_death_v01_action8fps.gif",
-        "target_fps_QA_loop": "previews/merlin_death_v01_action8fps_QA_loop.gif"
+        "contact_1x": "previews/mage_death_v01_contact_1x.png",
+        "contact_4x": "previews/mage_death_v01_contact_4x.png",
+        "slow8fps": "previews/mage_death_v01_slow8fps.gif",
+        "target_fps_one_shot": "previews/mage_death_v01_action8fps.gif",
+        "target_fps_QA_loop": "previews/mage_death_v01_action8fps_QA_loop.gif"
       },
       "gif_timing_note": "GIF uses10ms timing. 8fps preview alternates120/130ms. Game uses PNG at exact16fps attack /8fps other actions. QA loop may repeat non-looping attacks/deaths."
     },
     {
-      "id": "annie_move",
-      "candidate": "candidates/annie_move_v03.png",
+      "id": "gunslinger_move",
+      "candidate": "candidates/gunslinger_move_v03.png",
       "version": "v03",
-      "source": "originals/annie_move_v03_raw.png",
+      "source": "originals/gunslinger_move_v03_raw.png",
       "tool": "built-in image_gen; Pillow format normalization",
       "generation_record": "records/builtin_C_fix_move_jobs.json",
       "status": "art_self_check_passed_pending_game_review",
@@ -2917,12 +2917,12 @@
         false,
         false
       ],
-      "reference_palette": "records/annie_palette.json",
+      "reference_palette": "records/gunslinger_palette.json",
       "sha256": "6dc253eeaa78b55563b1ad9baca54c455cf115eebac4ff3fbd14304a8a28e97b",
       "downsample_method": "nearest",
       "horizontal_anchor": "head",
-      "output": "assets/sprites/characters/annie_move.png",
-      "approved": "approved/annie_move.png",
+      "output": "assets/sprites/characters/gunslinger_move.png",
+      "approved": "approved/gunslinger_move.png",
       "checks": {
         "exact_size_rgba_binary_alpha": true,
         "same_character_fixed_palette": true,
@@ -2942,19 +2942,19 @@
       "review_note": "Third generation corrects repeated leadleg: phase4nearboot visibly bendsback whilefarlegstepsforward, phase5near knee liftsforward. All6poses inspected in4x contact plus Chrome actual1x/4x animation.",
       "ground_tiling": "not_applicable_character_asset",
       "previews": {
-        "contact_1x": "previews/annie_move_v03_contact_1x.png",
-        "contact_4x": "previews/annie_move_v03_contact_4x.png",
-        "slow8fps": "previews/annie_move_v03_slow8fps.gif",
-        "target_fps_one_shot": "previews/annie_move_v03_action8fps.gif",
-        "target_fps_QA_loop": "previews/annie_move_v03_action8fps_QA_loop.gif"
+        "contact_1x": "previews/gunslinger_move_v03_contact_1x.png",
+        "contact_4x": "previews/gunslinger_move_v03_contact_4x.png",
+        "slow8fps": "previews/gunslinger_move_v03_slow8fps.gif",
+        "target_fps_one_shot": "previews/gunslinger_move_v03_action8fps.gif",
+        "target_fps_QA_loop": "previews/gunslinger_move_v03_action8fps_QA_loop.gif"
       },
       "gif_timing_note": "GIF uses10ms timing. 8fps preview alternates120/130ms. Game uses PNG at exact16fps attack /8fps other actions. QA loop may repeat non-looping attacks/deaths."
     },
     {
-      "id": "lanling_move",
-      "candidate": "candidates/lanling_move_v02.png",
+      "id": "assassin_move",
+      "candidate": "candidates/assassin_move_v02.png",
       "version": "v02",
-      "source": "originals/lanling_move_v02_raw.png",
+      "source": "originals/assassin_move_v02_raw.png",
       "tool": "built-in image_gen; Pillow format normalization",
       "generation_record": "records/builtin_C_cutin_walk_jobs.json",
       "status": "art_self_check_passed_pending_game_review",
@@ -3086,12 +3086,12 @@
         false,
         false
       ],
-      "reference_palette": "records/lanling_palette.json",
+      "reference_palette": "records/assassin_palette.json",
       "sha256": "5e54bf3e8e4b221d2997be0d3475f72b68fbf8ed53016b75599b07ee6d9b0fc8",
       "downsample_method": "nearest",
       "horizontal_anchor": "head",
-      "output": "assets/sprites/characters/lanling_move.png",
-      "approved": "approved/lanling_move.png",
+      "output": "assets/sprites/characters/assassin_move.png",
+      "approved": "approved/assassin_move.png",
       "checks": {
         "exact_size_rgba_binary_alpha": true,
         "same_character_fixed_palette": true,
@@ -3111,21 +3111,21 @@
       "review_note": "Second generation fixes repeated leadleg. Phase4 near knee bendsback withbootraisedbehind, farlegforward; phase5 near knee liftsforward. Checked all6contactframes plus Chrome playback and paused nextframe.",
       "ground_tiling": "not_applicable_character_asset",
       "previews": {
-        "contact_1x": "previews/lanling_move_v02_contact_1x.png",
-        "contact_4x": "previews/lanling_move_v02_contact_4x.png",
-        "slow8fps": "previews/lanling_move_v02_slow8fps.gif",
-        "target_fps_one_shot": "previews/lanling_move_v02_action8fps.gif",
-        "target_fps_QA_loop": "previews/lanling_move_v02_action8fps_QA_loop.gif"
+        "contact_1x": "previews/assassin_move_v02_contact_1x.png",
+        "contact_4x": "previews/assassin_move_v02_contact_4x.png",
+        "slow8fps": "previews/assassin_move_v02_slow8fps.gif",
+        "target_fps_one_shot": "previews/assassin_move_v02_action8fps.gif",
+        "target_fps_QA_loop": "previews/assassin_move_v02_action8fps_QA_loop.gif"
       },
       "gif_timing_note": "GIF uses10ms timing. 8fps preview alternates120/130ms. Game uses PNG at exact16fps attack /8fps other actions. QA loop may repeat non-looping attacks/deaths."
     },
     {
-      "id": "merlin_move",
-      "candidate": "candidates/merlin_move_v02.png",
+      "id": "mage_move",
+      "candidate": "candidates/mage_move_v02.png",
       "version": "v02",
-      "source": "originals/merlin_move_v02_raw.png",
+      "source": "originals/mage_move_v02_raw.png",
       "tool": "built-in image_gen; Pillow format normalization",
-      "generation_record": "records/builtin_C_merlin_walk_fix_jobs.json",
+      "generation_record": "records/builtin_C_mage_walk_fix_jobs.json",
       "status": "art_self_check_passed_pending_game_review",
       "frames": 6,
       "frame_size": [
@@ -3255,12 +3255,12 @@
         false,
         false
       ],
-      "reference_palette": "records/merlin_palette.json",
+      "reference_palette": "records/mage_palette.json",
       "sha256": "2bf96e800c4b074ed27c585c4178f37e17164e2396b718784dbc5f6d0830c556",
       "downsample_method": "nearest",
       "horizontal_anchor": "head",
-      "output": "assets/sprites/characters/merlin_move.png",
-      "approved": "approved/merlin_move.png",
+      "output": "assets/sprites/characters/mage_move.png",
+      "approved": "approved/mage_move.png",
       "checks": {
         "exact_size_rgba_binary_alpha": true,
         "same_character_fixed_palette": true,
@@ -3280,20 +3280,20 @@
       "review_note": "Second generation fixes repeated leadleg. Phase4 near knee bendsback withbootraisedbehind, farlegforward; phase5 near knee liftsforward. Checked all6contactframes plus Chrome playback and paused nextframe.",
       "ground_tiling": "not_applicable_character_asset",
       "previews": {
-        "contact_1x": "previews/merlin_move_v02_contact_1x.png",
-        "contact_4x": "previews/merlin_move_v02_contact_4x.png",
-        "slow8fps": "previews/merlin_move_v02_slow8fps.gif",
-        "target_fps_one_shot": "previews/merlin_move_v02_action8fps.gif",
-        "target_fps_QA_loop": "previews/merlin_move_v02_action8fps_QA_loop.gif"
+        "contact_1x": "previews/mage_move_v02_contact_1x.png",
+        "contact_4x": "previews/mage_move_v02_contact_4x.png",
+        "slow8fps": "previews/mage_move_v02_slow8fps.gif",
+        "target_fps_one_shot": "previews/mage_move_v02_action8fps.gif",
+        "target_fps_QA_loop": "previews/mage_move_v02_action8fps_QA_loop.gif"
       },
       "gif_timing_note": "GIF uses10ms timing. 8fps preview alternates120/130ms. Game uses PNG at exact16fps attack /8fps other actions. QA loop may repeat non-looping attacks/deaths."
     },
     {
-      "id": "annie_cutin",
-      "candidate": "candidates/annie_cutin_v01.png",
+      "id": "gunslinger_cutin",
+      "candidate": "candidates/gunslinger_cutin_v01.png",
       "version": "v01",
       "status": "art_self_check_passed_pending_game_review",
-      "source": "originals/annie_cutin_v01_raw.png",
+      "source": "originals/gunslinger_cutin_v01_raw.png",
       "tool": "built-in image_gen; Pillow format normalization",
       "generation_record": "records/builtin_C_cutin_walk_jobs.json",
       "frames": 1,
@@ -3309,7 +3309,7 @@
         200,
         160
       ],
-      "logical_candidate": "candidates/annie_cutin_v01_logical.png",
+      "logical_candidate": "candidates/gunslinger_cutin_v01_logical.png",
       "fps": null,
       "baseline": null,
       "bboxes": [
@@ -3325,10 +3325,10 @@
         0,
         255
       ],
-      "reference_palette": "records/annie_palette.json",
+      "reference_palette": "records/gunslinger_palette.json",
       "sha256": "74a977226befd12863617b2b1f4888db04cf0090ad693ca33b444614bd2a03c6",
-      "output": "assets/sprites/characters/annie_cutin.png",
-      "approved": "approved/annie_cutin.png",
+      "output": "assets/sprites/characters/gunslinger_cutin.png",
+      "approved": "approved/gunslinger_cutin.png",
       "checks": {
         "exact_size_rgba_binary_alpha": true,
         "same_character_fixed_palette": true,
@@ -3347,16 +3347,16 @@
       "review_note": "Original portrait inspected for hand/face/equipment. Cropped/resized once to200x160 logical transparent canvas and nearest-neighbor2x to400x320. Same fixed48-color palette as own sprite animations. Reviewed actual1x/4x deepbackground composites.",
       "ground_tiling": "not_applicable_character_asset",
       "previews": {
-        "contact_1x": "previews/annie_cutin_v01_contact_1x.png",
-        "contact_4x": "previews/annie_cutin_v01_contact_4x.png"
+        "contact_1x": "previews/gunslinger_cutin_v01_contact_1x.png",
+        "contact_4x": "previews/gunslinger_cutin_v01_contact_4x.png"
       }
     },
     {
-      "id": "lanling_cutin",
-      "candidate": "candidates/lanling_cutin_v01.png",
+      "id": "assassin_cutin",
+      "candidate": "candidates/assassin_cutin_v01.png",
       "version": "v01",
       "status": "art_self_check_passed_pending_game_review",
-      "source": "originals/lanling_cutin_v01_raw.png",
+      "source": "originals/assassin_cutin_v01_raw.png",
       "tool": "built-in image_gen; Pillow format normalization",
       "generation_record": "records/builtin_C_cutin_walk_jobs.json",
       "frames": 1,
@@ -3372,7 +3372,7 @@
         200,
         160
       ],
-      "logical_candidate": "candidates/lanling_cutin_v01_logical.png",
+      "logical_candidate": "candidates/assassin_cutin_v01_logical.png",
       "fps": null,
       "baseline": null,
       "bboxes": [
@@ -3388,10 +3388,10 @@
         0,
         255
       ],
-      "reference_palette": "records/lanling_palette.json",
+      "reference_palette": "records/assassin_palette.json",
       "sha256": "c614a04f4fc5714e49534f968b1bd04810586855c35ca8c75e23dee5225278e6",
-      "output": "assets/sprites/characters/lanling_cutin.png",
-      "approved": "approved/lanling_cutin.png",
+      "output": "assets/sprites/characters/assassin_cutin.png",
+      "approved": "approved/assassin_cutin.png",
       "checks": {
         "exact_size_rgba_binary_alpha": true,
         "same_character_fixed_palette": true,
@@ -3410,16 +3410,16 @@
       "review_note": "Original portrait inspected for hand/face/equipment. Cropped/resized once to200x160 logical transparent canvas and nearest-neighbor2x to400x320. Same fixed48-color palette as own sprite animations. Reviewed actual1x/4x deepbackground composites.",
       "ground_tiling": "not_applicable_character_asset",
       "previews": {
-        "contact_1x": "previews/lanling_cutin_v01_contact_1x.png",
-        "contact_4x": "previews/lanling_cutin_v01_contact_4x.png"
+        "contact_1x": "previews/assassin_cutin_v01_contact_1x.png",
+        "contact_4x": "previews/assassin_cutin_v01_contact_4x.png"
       }
     },
     {
-      "id": "merlin_cutin",
-      "candidate": "candidates/merlin_cutin_v01.png",
+      "id": "mage_cutin",
+      "candidate": "candidates/mage_cutin_v01.png",
       "version": "v01",
       "status": "art_self_check_passed_pending_game_review",
-      "source": "originals/merlin_cutin_v01_raw.png",
+      "source": "originals/mage_cutin_v01_raw.png",
       "tool": "built-in image_gen; Pillow format normalization",
       "generation_record": "records/builtin_C_cutin_walk_jobs.json",
       "frames": 1,
@@ -3435,7 +3435,7 @@
         200,
         160
       ],
-      "logical_candidate": "candidates/merlin_cutin_v01_logical.png",
+      "logical_candidate": "candidates/mage_cutin_v01_logical.png",
       "fps": null,
       "baseline": null,
       "bboxes": [
@@ -3451,10 +3451,10 @@
         0,
         255
       ],
-      "reference_palette": "records/merlin_palette.json",
+      "reference_palette": "records/mage_palette.json",
       "sha256": "e1d4c5f2c926b45c5efe032d91b3338d65b0e1399b4bad28c4dc783f7bb11545",
-      "output": "assets/sprites/characters/merlin_cutin.png",
-      "approved": "approved/merlin_cutin.png",
+      "output": "assets/sprites/characters/mage_cutin.png",
+      "approved": "approved/mage_cutin.png",
       "checks": {
         "exact_size_rgba_binary_alpha": true,
         "same_character_fixed_palette": true,
@@ -3473,8 +3473,8 @@
       "review_note": "Original portrait inspected for hand/face/equipment. Cropped/resized once to200x160 logical transparent canvas and nearest-neighbor2x to400x320. Same fixed48-color palette as own sprite animations. Reviewed actual1x/4x deepbackground composites.",
       "ground_tiling": "not_applicable_character_asset",
       "previews": {
-        "contact_1x": "previews/merlin_cutin_v01_contact_1x.png",
-        "contact_4x": "previews/merlin_cutin_v01_contact_4x.png"
+        "contact_1x": "previews/mage_cutin_v01_contact_1x.png",
+        "contact_4x": "previews/mage_cutin_v01_contact_4x.png"
       }
     }
   ],

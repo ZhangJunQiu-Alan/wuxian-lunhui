@@ -1,0 +1,86 @@
+[
+  {
+    "id": "swordsman_base_v01",
+    "url": "https://chatgpt.com/c/6ad124f1-7878-83ea-8bfa-0dba7d08a575",
+    "source": "originals/swordsman_base_v01.png",
+    "prompt": "records/swordsman_base_prompt.txt",
+    "status": "downloaded_normalized_static_approved"
+  },
+  {
+    "id": "swordsman_idle_v01",
+    "url": "https://chatgpt.com/c/6ad126f3-2310-83ea-9f8a-87eb0067729f",
+    "source": "originals/swordsman_idle_v01.png",
+    "prompt": "records/swordsman_idle_prompt_v01.txt",
+    "references": [
+      "candidates/swordsman_nearest_v02.png",
+      "originals/swordsman_base_v01.png"
+    ],
+    "status": "downloaded_rejected_after_frame_review"
+  },
+  {
+    "id": "swordsman_idle_v02",
+    "url": "https://chatgpt.com/c/6ad126f3-2310-83ea-9f8a-87eb0067729f",
+    "source": "originals/swordsman_idle_v02.png",
+    "prompt": "records/swordsman_idle_prompt_v02.txt",
+    "references": [
+      "candidates/swordsman_nearest_v02.png",
+      "originals/swordsman_base_v01.png"
+    ],
+    "status": "downloaded_rejected_after_frame_review"
+  },
+  {
+    "id": "swordsman_move_v01",
+    "url": "https://chatgpt.com/c/6ad126f6-3358-83e9-b928-4d3bee281d32",
+    "source": "originals/swordsman_move_v01.png",
+    "prompt": "records/swordsman_move_prompt_v01.txt",
+    "references": [
+      "candidates/swordsman_nearest_v02.png",
+      "originals/swordsman_base_v01.png"
+    ],
+    "status": "downloaded_rejected_after_frame_review"
+  },
+  {
+    "id": "swordsman_move_v02",
+    "url": "https://chatgpt.com/c/6ad126f6-3358-83e9-b928-4d3bee281d32",
+    "source": "originals/swordsman_move_v02.png",
+    "prompt": "records/swordsman_move_prompt_v02.txt",
+    "references": [
+      "candidates/swordsman_nearest_v02.png",
+      "originals/swordsman_base_v01.png"
+    ],
+    "status": "downloaded_rejected_after_frame_review"
+  },
+  {
+    "id": "swordsman_hurt_v01",
+    "url": "https://chatgpt.com/c/6ad126f7-f0c0-83ea-937a-df5b31c06206",
+    "source": "originals/swordsman_hurt_v01.png",
+    "prompt": "records/swordsman_hurt_prompt_v01.txt",
+    "references": [
+      "candidates/swordsman_nearest_v02.png",
+      "originals/swordsman_base_v01.png"
+    ],
+    "status": "downloaded_normalized_approved"
+  },
+  {
+    "id": "swordsman_death_v01",
+    "url": "https://chatgpt.com/c/6ad126fd-c038-83e9-b13d-75730a5e36e5",
+    "source": "originals/swordsman_death_v01.png",
+    "prompt": "records/swordsman_death_prompt_v01.txt",
+    "references": [
+      "candidates/swordsman_nearest_v02.png",
+      "originals/swordsman_base_v01.png"
+    ],
+    "status": "downloaded_normalized_approved"
+  },
+  {
+    "id": "swordsman_cutin_v01",
+    "url": "https://chatgpt.com/c/6ad127a5-eac0-83ea-a876-c3136be322e3",
+    "source": "originals/swordsman_cutin_v01.png",
+    "prompt": "records/swordsman_cutin_prompt_v01.txt",
+    "references": [
+      "candidates/swordsman_nearest_v02.png",
+      "originals/swordsman_base_v01.png"
+    ],
+    "status": "downloaded_normalized_approved"
+  }
+]

@@ -1,0 +1,68 @@
+{
+  "source": "/Users/zhangjunqiu/Desktop/\u65e0\u9650\u6050\u6016/assets/source/taskC_helheim_enemies_2026-10-17/originals/dead_attack_v01_raw.png",
+  "raw_size": [
+    1254,
+    1254
+  ],
+  "grid": [
+    2,
+    2
+  ],
+  "crop_boxes": [
+    [
+      169,
+      142,
+      472,
+      577
+    ],
+    [
+      92,
+      161,
+      444,
+      579
+    ],
+    [
+      149,
+      123,
+      627,
+      531
+    ],
+    [
+      0,
+      102,
+      438,
+      536
+    ]
+  ],
+  "common_scale": 0.11494252873563218,
+  "target_body_height": 50,
+  "first_pose_reference_index": 0,
+  "placements": [
+    [
+      14,
+      12,
+      35,
+      50
+    ],
+    [
+      12,
+      14,
+      40,
+      48
+    ],
+    [
+      4,
+      15,
+      55,
+      47
+    ],
+    [
+      7,
+      12,
+      50,
+      50
+    ]
+  ],
+  "palette_reference": "/Users/zhangjunqiu/Desktop/\u65e0\u9650\u6050\u6016/assets/source/taskC_helheim_enemies_2026-10-17/candidates/dead_v01.png",
+  "note": "One shared scale across all frames; whole-cell crop and placement only, no character drawing."
+}

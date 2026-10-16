@@ -1,0 +1,22 @@
+{
+  "tool": "OpenAI built-in image generation",
+  "source": "/Users/zhangjunqiu/.codex/generated_images/01a14377-c537-7a10-b5df-10043f63fbe0/exec-d307a756-aeb6-4912-8af8-3f65b17e7625.png",
+  "id": "bright_soul_move",
+  "label": "温暖灵魂行走",
+  "folder": "quests",
+  "w": 64,
+  "h": 64,
+  "frames": 4,
+  "task": "taskC_helheim_enemies_2026-10-17",
+  "subject": "Animate exact referenced gold-white young male soul walking right, four clear grounded phases with alternating near/far feet and gentle opposite arm swing. Same face, tunic, mantle and gold palette, no aura or trails. Fixed foot baseline, body scale and camera.",
+  "loop": true,
+  "anchor": "bottom",
+  "status": "pending",
+  "unit": "bright_soul",
+  "action": "move",
+  "version": "v01",
+  "refs": [
+    "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskC_helheim_enemies_2026-10-17/candidates/bright_soul_v01.png"
+  ],
+  "prompt": "Use case: identity-preserve. Animate EXACT reference character; preserve face, equipment, proportions and colors. Four-frame gentle rightward walk cycle: near foot forward contact, passing, far foot forward contact, passing. Upright warm young-man soul, no new aura.\n\nLayout EXACTLY 4 frames in 2 columns by 2 rows equal cells, reading order. Each cell logically 64x64px. Body height 50 logical pixels, fixed foot baseline and scale, facing RIGHT. Both legs alternate opposing contact for walk. Only same RGB palette as input1. Low-resolution pixel clusters, upper-left light, dark outline, binary transparent background, 2px clear margin. No text, grid, scenery, watermark, shadow, magic, slash or particles. Frame1 neutral reference size; compact action instead of resizing body."
+}

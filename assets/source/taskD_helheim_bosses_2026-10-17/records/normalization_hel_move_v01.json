@@ -1,0 +1,68 @@
+{
+  "source": "/Users/zhangjunqiu/Desktop/\u65e0\u9650\u6050\u6016/assets/source/taskD_helheim_bosses_2026-10-17/originals/hel_move_v01_raw.png",
+  "raw_size": [
+    1536,
+    1024
+  ],
+  "grid": [
+    2,
+    2
+  ],
+  "crop_boxes": [
+    [
+      300,
+      8,
+      641,
+      512
+    ],
+    [
+      99,
+      8,
+      464,
+      512
+    ],
+    [
+      219,
+      0,
+      634,
+      477
+    ],
+    [
+      96,
+      0,
+      519,
+      479
+    ]
+  ],
+  "common_scale": 0.3273809523809524,
+  "target_body_height": 165,
+  "first_pose_reference_index": 0,
+  "placements": [
+    [
+      40,
+      25,
+      112,
+      165
+    ],
+    [
+      36,
+      25,
+      119,
+      165
+    ],
+    [
+      28,
+      34,
+      136,
+      156
+    ],
+    [
+      27,
+      33,
+      138,
+      157
+    ]
+  ],
+  "palette_reference": "/Users/zhangjunqiu/Desktop/\u65e0\u9650\u6050\u6016/assets/source/taskD_helheim_bosses_2026-10-17/candidates/hel_v02.png",
+  "note": "One shared scale across all frames; whole-cell crop and placement only, no character drawing."
+}

@@ -1,0 +1,50 @@
+{
+  "tool": "Pillow nearest-neighbor size conversion and frame packing only",
+  "source": "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskC_helheim_enemies_2026-10-17/candidates/nail_golem_move_v02.png",
+  "source_generation_record": "records/generation_nail_golem_move_v02.json",
+  "operation": "same fingernail construct family; six frames resized at one common scale32/72, whole-frame feet aligned62, remapped to small static RGB palette",
+  "scale": 0.4444444444444444,
+  "placements": [
+    [
+      16,
+      30,
+      32,
+      32
+    ],
+    [
+      15,
+      30,
+      33,
+      32
+    ],
+    [
+      16,
+      30,
+      31,
+      32
+    ],
+    [
+      16,
+      30,
+      32,
+      32
+    ],
+    [
+      16,
+      29,
+      32,
+      33
+    ],
+    [
+      16,
+      29,
+      32,
+      33
+    ]
+  ],
+  "no_new_generation": true,
+  "no_character_redrawing": true,
+  "rejected_versions": {
+    "v02": "Unrequested bow-like accessory; do not publish"
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "source": "/Users/zhangjunqiu/Desktop/\u65e0\u9650\u6050\u6016/assets/source/taskC_helheim_enemies_2026-10-17/originals/dark_elf_attack_v01_raw.png",
+  "raw_size": [
+    1774,
+    887
+  ],
+  "grid": [
+    2,
+    2
+  ],
+  "crop_boxes": [
+    [
+      319,
+      81,
+      689,
+      427
+    ],
+    [
+      112,
+      28,
+      631,
+      427
+    ],
+    [
+      238,
+      25,
+      756,
+      426
+    ],
+    [
+      122,
+      19,
+      606,
+      426
+    ]
+  ],
+  "common_scale": 0.11560693641618497,
+  "target_body_height": 50,
+  "first_pose_reference_index": 0,
+  "placements": [
+    [
+      10,
+      22,
+      43,
+      40
+    ],
+    [
+      2,
+      16,
+      60,
+      46
+    ],
+    [
+      2,
+      16,
+      60,
+      46
+    ],
+    [
+      4,
+      15,
+      56,
+      47
+    ]
+  ],
+  "palette_reference": "/Users/zhangjunqiu/Desktop/\u65e0\u9650\u6050\u6016/assets/source/taskC_helheim_enemies_2026-10-17/candidates/dark_elf_v01.png",
+  "note": "One shared scale across all frames; whole-cell crop and placement only, no character drawing."
+}

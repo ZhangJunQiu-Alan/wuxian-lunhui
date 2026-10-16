@@ -4,7 +4,7 @@ import json,random,html,shutil
 R=Path(__file__).resolve().parents[1];ASSETS=R.parents[1];rows=json.loads((R/'records/staged_final_checks.json').read_text())
 # Snapshot existing characters, because another task may edit their actions concurrently.
 refs={}
-for name,p in [('musashi',ASSETS/'sprites/characters/musashi.png'),('draugr',ASSETS/'source/norse_pixel_2026-10-16/64/mobs/draugr.png'),('wolf',ASSETS/'source/norse_pixel_2026-10-16/64/mobs/wolf.png'),('ice_spirit',ASSETS/'source/norse_pixel_2026-10-16/64/mobs/ice_spirit.png'),('dead',ASSETS/'source/norse_pixel_2026-10-16/64/mobs/dead.png'),('dark_elf',ASSETS/'source/norse_pixel_2026-10-16/64/mobs/dark_elf.png'),('nail_golem',ASSETS/'source/norse_pixel_2026-10-16/64/mobs/nail_golem.png'),('fire_giant',ASSETS/'sprites/enemies/fire_giant.png'),('berserker',ASSETS/'source/norse_pixel_2026-10-16/64/mobs/berserker.png')]:
+for name,p in [('swordsman',ASSETS/'sprites/characters/swordsman.png'),('draugr',ASSETS/'source/norse_pixel_2026-10-16/64/mobs/draugr.png'),('wolf',ASSETS/'source/norse_pixel_2026-10-16/64/mobs/wolf.png'),('ice_spirit',ASSETS/'source/norse_pixel_2026-10-16/64/mobs/ice_spirit.png'),('dead',ASSETS/'source/norse_pixel_2026-10-16/64/mobs/dead.png'),('dark_elf',ASSETS/'source/norse_pixel_2026-10-16/64/mobs/dark_elf.png'),('nail_golem',ASSETS/'source/norse_pixel_2026-10-16/64/mobs/nail_golem.png'),('fire_giant',ASSETS/'sprites/enemies/fire_giant.png'),('berserker',ASSETS/'source/norse_pixel_2026-10-16/64/mobs/berserker.png')]:
  q=R/f'references/context_{name}.png'
  if not q.exists():shutil.copy2(p,q)
  refs[name]=Image.open(q).convert('RGBA')
@@ -22,7 +22,7 @@ for level in ['midgard','helheim','vigrid']:
   x=230+(i%6)*145+(i%3)*8;y=170+(i//6)*118
   if 540<x<710 and 270<y<410:continue
   im=refs[enemies[i%len(enemies)]];layers.append((y+im.height,x,y,im))
- im=refs['musashi'];layers.append((360+im.height,610,360,im))
+ im=refs['swordsman'];layers.append((360+im.height,610,360,im))
  for z,x,y,im in sorted(layers,key=lambda a:a[0]):scene.alpha_composite(im,(x,y))
  ImageDraw.Draw(scene).text((12,8),level+' | LOCAL ART COMPOSITE - NOT A GODOT SCREENSHOT',fill='white');scene.convert('RGB').save(R/f'previews/{level}_context_1x.png');scene_frames.append(scene.convert('RGB'))
  # Final exact tile previews, recomputed after palette changes.

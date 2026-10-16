@@ -1,0 +1,53 @@
+{
+  "expected_sfx": 54,
+  "present_sfx": 54,
+  "missing_sfx": [],
+  "unexpected_sfx": [],
+  "technical_failed": {},
+  "variant_groups": {
+    "pickup_xp": {
+      "rms_spread_db": 0.30447739617822833,
+      "all_three_exist": true,
+      "rms_spread_within_1_5_db": true,
+      "note": "RMS is an objective comparison only; perceived loudness remains pending"
+    },
+    "katana_slash": {
+      "rms_spread_db": 0.7104387623251966,
+      "all_three_exist": true,
+      "rms_spread_within_1_5_db": true,
+      "note": "RMS is an objective comparison only; perceived loudness remains pending"
+    },
+    "revolver_shot": {
+      "rms_spread_db": 0.26921730533762656,
+      "all_three_exist": true,
+      "rms_spread_within_1_5_db": true,
+      "note": "RMS is an objective comparison only; perceived loudness remains pending"
+    },
+    "blades_slash": {
+      "rms_spread_db": 0.6182992089550581,
+      "all_three_exist": true,
+      "rms_spread_within_1_5_db": true,
+      "note": "RMS is an objective comparison only; perceived loudness remains pending"
+    },
+    "lightning": {
+      "rms_spread_db": 1.2679553670349897,
+      "all_three_exist": true,
+      "rms_spread_within_1_5_db": true,
+      "note": "RMS is an objective comparison only; perceived loudness remains pending"
+    },
+    "enemy_hit": {
+      "rms_spread_db": 0.4581674414889143,
+      "all_three_exist": true,
+      "rms_spread_within_1_5_db": true,
+      "note": "RMS is an objective comparison only; perceived loudness remains pending"
+    },
+    "enemy_death": {
+      "rms_spread_db": 0.2033664773241668,
+      "all_three_exist": true,
+      "rms_spread_within_1_5_db": true,
+      "note": "RMS is an objective comparison only; perceived loudness remains pending"
+    }
+  },
+  "subjective_audition": "not_performed",
+  "game_test": "not_performed"
+}

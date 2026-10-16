@@ -1,0 +1,1109 @@
+{
+  "task": "D",
+  "expected": 28,
+  "accepted": 28,
+  "passed": 28,
+  "failed": [],
+  "all_complete_and_passed": true,
+  "game_tested": false,
+  "results": [
+    {
+      "id": "garm",
+      "status": "passed",
+      "errors": [],
+      "size": [
+        128,
+        128
+      ],
+      "colors": 47,
+      "frame_boxes": [
+        [
+          12,
+          27,
+          116,
+          126
+        ]
+      ],
+      "sha256": "23e629a34921e815b0d45fb05b4f703ddfa6b1fdec13e4a74cc4888382f50c1e",
+      "notes": []
+    },
+    {
+      "id": "garm_idle",
+      "status": "passed",
+      "errors": [],
+      "size": [
+        512,
+        128
+      ],
+      "colors": 47,
+      "frame_boxes": [
+        [
+          7,
+          27,
+          120,
+          126
+        ],
+        [
+          6,
+          24,
+          121,
+          126
+        ],
+        [
+          7,
+          25,
+          120,
+          126
+        ],
+        [
+          7,
+          28,
+          121,
+          126
+        ]
+      ],
+      "sha256": "7d1f46fb015debbdd1b4ebc815c70c6f74b7198a25c510b2c40b215b6ba47e51",
+      "notes": [
+        {
+          "gif_frames": 4,
+          "timings": [
+            120,
+            130,
+            120,
+            130
+          ],
+          "cycles_in_gif": 1,
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "garm_move",
+      "status": "passed",
+      "errors": [],
+      "size": [
+        512,
+        128
+      ],
+      "colors": 47,
+      "frame_boxes": [
+        [
+          2,
+          32,
+          126,
+          126
+        ],
+        [
+          6,
+          32,
+          121,
+          126
+        ],
+        [
+          3,
+          31,
+          124,
+          126
+        ],
+        [
+          6,
+          31,
+          121,
+          126
+        ]
+      ],
+      "sha256": "1d20a9276237a6ca79e80e15909054794f52b4f3dbf3b27b1d1c40ca855d68e5",
+      "notes": [
+        {
+          "gif_frames": 4,
+          "timings": [
+            120,
+            130,
+            120,
+            130
+          ],
+          "cycles_in_gif": 1,
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "garm_windup",
+      "status": "passed",
+      "errors": [],
+      "size": [
+        384,
+        128
+      ],
+      "colors": 47,
+      "frame_boxes": [
+        [
+          9,
+          27,
+          118,
+          126
+        ],
+        [
+          5,
+          35,
+          122,
+          126
+        ],
+        [
+          6,
+          34,
+          122,
+          126
+        ]
+      ],
+      "sha256": "635f7b40c4398b2f6f1df8246472251aceb06f148db6764eb243c42e2639cd9c",
+      "notes": [
+        {
+          "gif_frames": 6,
+          "timings": [
+            120,
+            130,
+            120,
+            130,
+            120,
+            130
+          ],
+          "cycles_in_gif": 2,
+          "note": "Odd3phase clips preview2cycles to achieve exact8fps average with GIF10ms timing granularity"
+        }
+      ]
+    },
+    {
+      "id": "garm_attack",
+      "status": "passed",
+      "errors": [],
+      "size": [
+        384,
+        128
+      ],
+      "colors": 47,
+      "frame_boxes": [
+        [
+          6,
+          32,
+          122,
+          126
+        ],
+        [
+          2,
+          38,
+          126,
+          126
+        ],
+        [
+          6,
+          33,
+          122,
+          126
+        ]
+      ],
+      "sha256": "b6f099979885076f8a1ff1f9eba392d1980f86520da6d8f1ec3d3d8cb2c4d334",
+      "notes": [
+        {
+          "gif_frames": 6,
+          "timings": [
+            120,
+            130,
+            120,
+            130,
+            120,
+            130
+          ],
+          "cycles_in_gif": 2,
+          "note": "Odd3phase clips preview2cycles to achieve exact8fps average with GIF10ms timing granularity"
+        }
+      ]
+    },
+    {
+      "id": "garm_howl",
+      "status": "passed",
+      "errors": [],
+      "size": [
+        384,
+        128
+      ],
+      "colors": 47,
+      "frame_boxes": [
+        [
+          4,
+          27,
+          124,
+          126
+        ],
+        [
+          6,
+          23,
+          121,
+          126
+        ],
+        [
+          2,
+          30,
+          126,
+          126
+        ]
+      ],
+      "sha256": "9a08e1caaf09bdce44538e15733ed0594cebab06418db0b59c39ebe0ac18c668",
+      "notes": [
+        {
+          "gif_frames": 6,
+          "timings": [
+            120,
+            130,
+            120,
+            130,
+            120,
+            130
+          ],
+          "cycles_in_gif": 2,
+          "note": "Odd3phase clips preview2cycles to achieve exact8fps average with GIF10ms timing granularity"
+        }
+      ]
+    },
+    {
+      "id": "nidhogg",
+      "status": "passed",
+      "errors": [],
+      "size": [
+        192,
+        192
+      ],
+      "colors": 48,
+      "frame_boxes": [
+        [
+          2,
+          86,
+          190,
+          190
+        ]
+      ],
+      "sha256": "0803670460c6da41c98d3da8d41f9a8b62f02bae30cdacb39c7236b797a047f8",
+      "notes": []
+    },
+    {
+      "id": "nidhogg_idle",
+      "status": "passed",
+      "errors": [],
+      "size": [
+        768,
+        192
+      ],
+      "colors": 48,
+      "frame_boxes": [
+        [
+          2,
+          96,
+          190,
+          190
+        ],
+        [
+          2,
+          91,
+          189,
+          190
+        ],
+        [
+          2,
+          95,
+          190,
+          190
+        ],
+        [
+          2,
+          97,
+          190,
+          190
+        ]
+      ],
+      "sha256": "973370560c5c1878a3c95651e5de46d2c688ac684da7d44f399dd5c47c842924",
+      "notes": [
+        {
+          "gif_frames": 4,
+          "timings": [
+            120,
+            130,
+            120,
+            130
+          ],
+          "cycles_in_gif": 1,
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "nidhogg_move",
+      "status": "passed",
+      "errors": [],
+      "size": [
+        768,
+        192
+      ],
+      "colors": 48,
+      "frame_boxes": [
+        [
+          4,
+          97,
+          187,
+          190
+        ],
+        [
+          2,
+          100,
+          190,
+          190
+        ],
+        [
+          2,
+          99,
+          190,
+          190
+        ],
+        [
+          2,
+          98,
+          190,
+          190
+        ]
+      ],
+      "sha256": "13c0235849b14a448f4daedb0c8c1f3227b8b7bca7609b9798563ca0be14c4aa",
+      "notes": [
+        {
+          "gif_frames": 4,
+          "timings": [
+            120,
+            130,
+            120,
+            130
+          ],
+          "cycles_in_gif": 1,
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "nidhogg_windup",
+      "status": "passed",
+      "errors": [],
+      "size": [
+        576,
+        192
+      ],
+      "colors": 48,
+      "frame_boxes": [
+        [
+          2,
+          92,
+          189,
+          190
+        ],
+        [
+          2,
+          72,
+          190,
+          190
+        ],
+        [
+          8,
+          60,
+          183,
+          190
+        ]
+      ],
+      "sha256": "622f9c64742b2ba7741b104a65044e5e05e6a59701bff2de535f49b181714c25",
+      "notes": [
+        {
+          "gif_frames": 6,
+          "timings": [
+            120,
+            130,
+            120,
+            130,
+            120,
+            130
+          ],
+          "cycles_in_gif": 2,
+          "note": "Odd3phase clips preview2cycles to achieve exact8fps average with GIF10ms timing granularity"
+        }
+      ]
+    },
+    {
+      "id": "nidhogg_attack",
+      "status": "passed",
+      "errors": [],
+      "size": [
+        576,
+        192
+      ],
+      "colors": 48,
+      "frame_boxes": [
+        [
+          11,
+          86,
+          180,
+          190
+        ],
+        [
+          7,
+          97,
+          184,
+          190
+        ],
+        [
+          11,
+          88,
+          180,
+          190
+        ]
+      ],
+      "sha256": "547352eeb9be24692f6bb213c4aade13620442c874c97192cca12d61137a9823",
+      "notes": [
+        {
+          "gif_frames": 6,
+          "timings": [
+            120,
+            130,
+            120,
+            130,
+            120,
+            130
+          ],
+          "cycles_in_gif": 2,
+          "note": "Odd3phase clips preview2cycles to achieve exact8fps average with GIF10ms timing granularity"
+        }
+      ]
+    },
+    {
+      "id": "nidhogg_burrow",
+      "status": "passed",
+      "errors": [],
+      "size": [
+        768,
+        192
+      ],
+      "colors": 48,
+      "frame_boxes": [
+        [
+          8,
+          86,
+          183,
+          190
+        ],
+        [
+          25,
+          89,
+          168,
+          190
+        ],
+        [
+          36,
+          68,
+          155,
+          190
+        ],
+        [
+          72,
+          129,
+          120,
+          190
+        ]
+      ],
+      "sha256": "fb3056c998413fbe0ce16d3098d345704204527e5c0b3bb05ffc8bce482ab2cf",
+      "notes": [
+        {
+          "gif_frames": 4,
+          "timings": [
+            120,
+            130,
+            120,
+            130
+          ],
+          "cycles_in_gif": 1,
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "nidhogg_emerge",
+      "status": "passed",
+      "errors": [],
+      "size": [
+        768,
+        192
+      ],
+      "colors": 48,
+      "frame_boxes": [
+        [
+          62,
+          164,
+          130,
+          190
+        ],
+        [
+          31,
+          135,
+          161,
+          190
+        ],
+        [
+          2,
+          106,
+          189,
+          190
+        ],
+        [
+          2,
+          102,
+          190,
+          190
+        ]
+      ],
+      "sha256": "e2f72a549346291172614dc43f29fdf2542036916400bea12955e41e5f8c18c6",
+      "notes": [
+        {
+          "gif_frames": 4,
+          "timings": [
+            120,
+            130,
+            120,
+            130
+          ],
+          "cycles_in_gif": 1,
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "nidhogg_gnaw",
+      "status": "passed",
+      "errors": [],
+      "size": [
+        768,
+        192
+      ],
+      "colors": 48,
+      "frame_boxes": [
+        [
+          3,
+          113,
+          190,
+          190
+        ],
+        [
+          4,
+          112,
+          188,
+          190
+        ],
+        [
+          2,
+          111,
+          190,
+          190
+        ],
+        [
+          3,
+          112,
+          190,
+          190
+        ]
+      ],
+      "sha256": "250ffdf7f259531238bce7d748dcbea6a6f1f60bd9e3f35a4ad95ac2ca5faf1d",
+      "notes": [
+        {
+          "gif_frames": 4,
+          "timings": [
+            120,
+            130,
+            120,
+            130
+          ],
+          "cycles_in_gif": 1,
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "hel",
+      "status": "passed",
+      "errors": [],
+      "size": [
+        192,
+        192
+      ],
+      "colors": 47,
+      "frame_boxes": [
+        [
+          40,
+          25,
+          152,
+          190
+        ]
+      ],
+      "sha256": "0c1e0a49f57e6a80535bc2c382e4f68cd882810f18dc35f79fd6befa2c558aa9",
+      "notes": []
+    },
+    {
+      "id": "hel_idle",
+      "status": "passed",
+      "errors": [],
+      "size": [
+        768,
+        192
+      ],
+      "colors": 47,
+      "frame_boxes": [
+        [
+          36,
+          25,
+          155,
+          190
+        ],
+        [
+          36,
+          25,
+          156,
+          190
+        ],
+        [
+          37,
+          26,
+          156,
+          190
+        ],
+        [
+          36,
+          26,
+          156,
+          190
+        ]
+      ],
+      "sha256": "681ef64f63ea5e98b900edd37c257145ada96579c5cbe6ec4cf03a8d50ed71a0",
+      "notes": [
+        {
+          "gif_frames": 4,
+          "timings": [
+            120,
+            130,
+            120,
+            130
+          ],
+          "cycles_in_gif": 1,
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "hel_move",
+      "status": "passed",
+      "errors": [],
+      "size": [
+        768,
+        192
+      ],
+      "colors": 47,
+      "frame_boxes": [
+        [
+          43,
+          25,
+          148,
+          190
+        ],
+        [
+          45,
+          25,
+          146,
+          190
+        ],
+        [
+          45,
+          25,
+          147,
+          190
+        ],
+        [
+          42,
+          25,
+          149,
+          190
+        ]
+      ],
+      "sha256": "933afa87c8ad8bfa60bbdcb84262b250e90978970e7d6212b0a4ad43050007ad",
+      "notes": [
+        {
+          "gif_frames": 4,
+          "timings": [
+            120,
+            130,
+            120,
+            130
+          ],
+          "cycles_in_gif": 1,
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "hel_windup",
+      "status": "passed",
+      "errors": [],
+      "size": [
+        576,
+        192
+      ],
+      "colors": 47,
+      "frame_boxes": [
+        [
+          13,
+          25,
+          179,
+          190
+        ],
+        [
+          11,
+          20,
+          180,
+          190
+        ],
+        [
+          9,
+          5,
+          182,
+          190
+        ]
+      ],
+      "sha256": "5de69a95b36236c6d06cca3f0b1c35fb96451bdf413054a2f95fc2f4069b6312",
+      "notes": [
+        {
+          "gif_frames": 6,
+          "timings": [
+            120,
+            130,
+            120,
+            130,
+            120,
+            130
+          ],
+          "cycles_in_gif": 2,
+          "note": "Odd3phase clips preview2cycles to achieve exact8fps average with GIF10ms timing granularity"
+        }
+      ]
+    },
+    {
+      "id": "hel_attack",
+      "status": "passed",
+      "errors": [],
+      "size": [
+        576,
+        192
+      ],
+      "colors": 47,
+      "frame_boxes": [
+        [
+          37,
+          25,
+          155,
+          190
+        ],
+        [
+          27,
+          27,
+          164,
+          190
+        ],
+        [
+          37,
+          25,
+          154,
+          190
+        ]
+      ],
+      "sha256": "1062699e1ea5087f5d9ae37443003b2c14200a3a3f542cd47868cec706f50be6",
+      "notes": [
+        {
+          "gif_frames": 6,
+          "timings": [
+            120,
+            130,
+            120,
+            130,
+            120,
+            130
+          ],
+          "cycles_in_gif": 2,
+          "note": "Odd3phase clips preview2cycles to achieve exact8fps average with GIF10ms timing granularity"
+        }
+      ]
+    },
+    {
+      "id": "hel_summon",
+      "status": "passed",
+      "errors": [],
+      "size": [
+        576,
+        192
+      ],
+      "colors": 47,
+      "frame_boxes": [
+        [
+          35,
+          25,
+          158,
+          190
+        ],
+        [
+          32,
+          26,
+          161,
+          190
+        ],
+        [
+          26,
+          32,
+          166,
+          190
+        ]
+      ],
+      "sha256": "573b7fe4b850f1c634b72e18d5636618c6511bd3ef07f9ea67547ef523f395d8",
+      "notes": [
+        {
+          "gif_frames": 6,
+          "timings": [
+            120,
+            130,
+            120,
+            130,
+            120,
+            130
+          ],
+          "cycles_in_gif": 2,
+          "note": "Odd3phase clips preview2cycles to achieve exact8fps average with GIF10ms timing granularity"
+        }
+      ]
+    },
+    {
+      "id": "chain_stake",
+      "status": "passed",
+      "errors": [],
+      "size": [
+        64,
+        96
+      ],
+      "colors": 46,
+      "frame_boxes": [
+        [
+          5,
+          2,
+          59,
+          94
+        ]
+      ],
+      "sha256": "091eadaeed19fb093a55dedbf03395ee19e05be3125a2e45a2b59e2d4ad9822e",
+      "notes": []
+    },
+    {
+      "id": "chain_stake_broken",
+      "status": "passed",
+      "errors": [],
+      "size": [
+        64,
+        96
+      ],
+      "colors": 43,
+      "frame_boxes": [
+        [
+          8,
+          53,
+          54,
+          94
+        ]
+      ],
+      "sha256": "79af2c427f5fcb82460f3aacd2b1d14a3aa88c8e6f1ba3f7b597af183911e9f9",
+      "notes": []
+    },
+    {
+      "id": "world_tree_root",
+      "status": "passed",
+      "errors": [],
+      "size": [
+        256,
+        128
+      ],
+      "colors": 48,
+      "frame_boxes": [
+        [
+          2,
+          18,
+          254,
+          126
+        ]
+      ],
+      "sha256": "ad0be6ffda8d30837747e846ead43346be76fd93883d56bbcc5f2a8a7842f56f",
+      "notes": []
+    },
+    {
+      "id": "naglfar",
+      "status": "passed",
+      "errors": [],
+      "size": [
+        640,
+        320
+      ],
+      "colors": 48,
+      "frame_boxes": [
+        [
+          2,
+          21,
+          638,
+          318
+        ]
+      ],
+      "sha256": "1c1e12442b47ac6a191baf47111dd9c1429b57f0e603bcc04b919d4d598edf86",
+      "notes": []
+    },
+    {
+      "id": "naglfar_sail",
+      "status": "passed",
+      "errors": [],
+      "size": [
+        640,
+        320
+      ],
+      "colors": 48,
+      "frame_boxes": [
+        [
+          2,
+          21,
+          638,
+          318
+        ]
+      ],
+      "sha256": "8718331265be3b6765cf18f5302ab2d73e6a6f0347ee8f69dc85dffc6f7542d4",
+      "notes": []
+    },
+    {
+      "id": "poison_pool",
+      "status": "passed",
+      "errors": [],
+      "size": [
+        384,
+        48
+      ],
+      "colors": 45,
+      "frame_boxes": [
+        [
+          2,
+          4,
+          94,
+          43
+        ],
+        [
+          2,
+          4,
+          94,
+          43
+        ],
+        [
+          2,
+          4,
+          94,
+          43
+        ],
+        [
+          2,
+          4,
+          94,
+          43
+        ]
+      ],
+      "sha256": "0284bb2e78321311e43248046a820d43920193764e68f64d662d25cd1516374f",
+      "notes": [
+        {
+          "gif_frames": 4,
+          "timings": [
+            120,
+            130,
+            120,
+            130
+          ],
+          "cycles_in_gif": 1,
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "nail_bolt",
+      "status": "passed",
+      "errors": [],
+      "size": [
+        32,
+        32
+      ],
+      "colors": 48,
+      "frame_boxes": [
+        [
+          2,
+          9,
+          30,
+          22
+        ]
+      ],
+      "sha256": "bc7425acc5319f0140f503058d240e44c30db2fdb1ad6fe11a9bb6458881b08f",
+      "notes": []
+    },
+    {
+      "id": "ground_crack",
+      "status": "passed",
+      "errors": [],
+      "size": [
+        384,
+        96
+      ],
+      "colors": 47,
+      "frame_boxes": [
+        [
+          34,
+          25,
+          63,
+          72
+        ],
+        [
+          19,
+          7,
+          77,
+          76
+        ],
+        [
+          9,
+          11,
+          87,
+          85
+        ],
+        [
+          2,
+          4,
+          92,
+          91
+        ]
+      ],
+      "sha256": "c7178cac3ba5662cfa99d2bef22d62249762a564143b504c66e8d59bd71ffbf8",
+      "notes": [
+        {
+          "gif_frames": 4,
+          "timings": [
+            120,
+            130,
+            120,
+            130
+          ],
+          "cycles_in_gif": 1,
+          "note": ""
+        }
+      ]
+    }
+  ]
+}

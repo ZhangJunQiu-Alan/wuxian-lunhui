@@ -84,15 +84,9 @@
 
 每个任务用自己的 source 文件夹：`assets/source/taskA_cleanup_<日期>/`、`taskB_audio_<日期>/`、`taskC_helheim_enemies_<日期>/`、`taskD_helheim_bosses_<日期>/`、`taskE_helheim_map_<日期>/`。
 
-#### 任务 A：删除原型人物名
+#### 任务 A：删除原型人物名（已完成）
 
-早期素材记录里用了真实或传说人物的名字（`musashi`、`annie`、`lanling`、`merlin`，以及提示词里的人物全名），违反第一节第 6 条。全部清理：
-
-1. 在 `assets/` 里搜索这些名字（文件名、文件夹名、文件内容都要搜，大小写都算，包括 `.piskel`、`.json`、`.html`、`.py`、`.txt`、`.md`）
-2. 文件名、文件夹名、文件内的标识符换成职业名：`musashi` → `swordsman`，`annie` → `gunslinger`，`lanling` → `assassin`，`merlin` → `mage`。例如 `batch01_musashi_2026-10-16/` 改为 `batch01_swordsman_2026-10-16/`。文件之间的引用（manifest 里的路径、html 里的图片地址、脚本里的路径）要一起改，改完不能有失效的链接
-3. 提示词记录里的人物全名和「某某风格」的说法，替换为 `[已删除人物名]`。**不要改写成别的提示词**，记录要如实反映当时用了什么，只是把名字涂掉
-4. `assets/LICENSES.md` 里提到这些名字的地方同样处理（第 76 行那段说明旧文件名的话改成「早期文件名用了原型人物名，已统一改为职业名」）
-5. 只改 `assets/` 里的文件，不要动 `assets/sprites/`、`assets/audio/` 里的游戏素材本身。改完再搜一遍，确认 `assets/` 里一个都不剩，把搜索命令和结果写进 README
+早期素材记录里的原型人物名已统一改为职业名（swordsman、gunslinger、assassin、mage），记录见 `assets/source/taskA_cleanup_2026-10-17/`。以后的文件名和提示词都不要再出现真实或传说人物的名字。
 
 #### 任务 B：音效与音乐
 

@@ -1,0 +1,24 @@
+{
+  "tool": "OpenAI built-in image generation",
+  "source": "/Users/zhangjunqiu/.codex/generated_images/01a14377-c537-7a10-b5df-10043f63fbe0/exec-0d1d6b4e-ab4d-4748-b9a3-d09968afdf32.png",
+  "id": "nail_golem_elite_move",
+  "unit": "nail_golem_elite",
+  "label": "精英指甲傀儡 move",
+  "action": "move",
+  "folder": "enemies",
+  "w": 96,
+  "h": 96,
+  "frames": 6,
+  "task": "taskC_helheim_enemies_2026-10-17",
+  "loop": true,
+  "anchor": "bottom",
+  "body_h": 78,
+  "subject": "Same blocky fingernail-plate construct with bigger thicker overlapping gray-yellow keratin slabs and broad shoulders; restrained dark crimson visible only inside the gaps. Short legs and heavy arms, no aura or glowing particles. Same construction material and head, bigger than ordinary variant.",
+  "status": "pending",
+  "version": "v02",
+  "refs": [
+    "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskC_helheim_enemies_2026-10-17/candidates/nail_golem_elite_v01.png",
+    "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskC_helheim_enemies_2026-10-17/refs/walk6_leg_kinematics_guide.png"
+  ],
+  "prompt": "Use case: identity-preserve. Input1 is the EXACT pixel character. Input2 is ONLY a six-phase leg-motion diagram, RED means same near leg and BLUE means same far leg; do NOT copy its colors, text, mannequin or style. Draw the input1 character with the leg phases of input2, matching camera, head/torso size, palette, outfit and accessories throughout. The near leg MUST move from FORWARD-right in frame1 to BACK-left in frame4, while far leg does opposite. Inframe2 nearlegsupportsunderhips farfootlifted,inframe3nearlegtrailsleft farfootadvancesright,inframe5farlegsupports nearfootlifted,inframe6nearlegadvancesright farlegtrailsleft. Feet point RIGHT even while leg is behind hips. Arms swing oppositely; retain weapon in hand for archer. NO repeating same bright near foot forward in both contact poses. Construct keeps blunt blocky nail-plate arms, broad keratin shoulders and SHORT LEGS, tiny deliberate heavy steps, no shrinking torso. Exactly SIX poses 3columns by2rows readingorder, each logical96x96px with2pxtransparentmargin, body78px high; fixed footbaseline and exact identical scale. Compact stride fits frame. Transparent binarypixelart, exact input1 RGB palette, no scene/text/grid/shadow/FX/particles, no redblue guide colors."
+}

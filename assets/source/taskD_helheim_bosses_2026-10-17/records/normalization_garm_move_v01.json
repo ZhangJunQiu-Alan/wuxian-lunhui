@@ -1,0 +1,68 @@
+{
+  "source": "/Users/zhangjunqiu/Desktop/\u65e0\u9650\u6050\u6016/assets/source/taskD_helheim_bosses_2026-10-17/originals/garm_move_v01_raw.png",
+  "raw_size": [
+    1536,
+    1024
+  ],
+  "grid": [
+    2,
+    2
+  ],
+  "crop_boxes": [
+    [
+      127,
+      70,
+      645,
+      482
+    ],
+    [
+      72,
+      78,
+      643,
+      453
+    ],
+    [
+      116,
+      55,
+      676,
+      446
+    ],
+    [
+      74,
+      51,
+      672,
+      438
+    ]
+  ],
+  "common_scale": 0.20735785953177258,
+  "target_body_height": 99,
+  "first_pose_reference_index": 0,
+  "placements": [
+    [
+      10,
+      41,
+      107,
+      85
+    ],
+    [
+      5,
+      48,
+      118,
+      78
+    ],
+    [
+      6,
+      45,
+      116,
+      81
+    ],
+    [
+      2,
+      46,
+      124,
+      80
+    ]
+  ],
+  "palette_reference": "/Users/zhangjunqiu/Desktop/\u65e0\u9650\u6050\u6016/assets/source/taskD_helheim_bosses_2026-10-17/candidates/garm_v02.png",
+  "note": "One shared scale across all frames; whole-cell crop and placement only, no character drawing."
+}

@@ -1,0 +1,56 @@
+{
+  "source": "/Users/zhangjunqiu/Desktop/\u65e0\u9650\u6050\u6016/assets/source/taskD_helheim_bosses_2026-10-17/originals/garm_attack_v01_raw.png",
+  "raw_size": [
+    2172,
+    724
+  ],
+  "grid": [
+    3,
+    1
+  ],
+  "crop_boxes": [
+    [
+      40,
+      145,
+      681,
+      665
+    ],
+    [
+      28,
+      161,
+      724,
+      665
+    ],
+    [
+      0,
+      171,
+      686,
+      645
+    ]
+  ],
+  "common_scale": 0.1781609195402299,
+  "target_body_height": 99,
+  "first_pose_reference_index": 0,
+  "placements": [
+    [
+      7,
+      33,
+      114,
+      93
+    ],
+    [
+      2,
+      36,
+      124,
+      90
+    ],
+    [
+      3,
+      42,
+      122,
+      84
+    ]
+  ],
+  "palette_reference": "/Users/zhangjunqiu/Desktop/\u65e0\u9650\u6050\u6016/assets/source/taskD_helheim_bosses_2026-10-17/candidates/garm_v02.png",
+  "note": "One shared scale across all frames; whole-cell crop and placement only, no character drawing."
+}

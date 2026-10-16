@@ -1,0 +1,23 @@
+{
+  "id": "mist_wraith",
+  "unit": "mist_wraith",
+  "label": "冥雾幽魂 static",
+  "action": "static",
+  "folder": "enemies",
+  "w": 64,
+  "h": 64,
+  "frames": 1,
+  "task": "taskC_helheim_enemies_2026-10-17",
+  "loop": false,
+  "anchor": "float",
+  "body_h": 53,
+  "subject": "A slender mournful mist-shaped human ghost, cold-gray and dark jade ragged vapor silhouette, exactly two small phosphor-green eyes, lower body dispersing into a few chunky trailing mist ribbons instead of feet. No translucent pixels: convey ghostly depth using solid dark gray, muted green and pale gray edges.",
+  "status": "pending",
+  "version": "v01",
+  "refs": [
+    "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskC_helheim_enemies_2026-10-17/refs/style_helheim.png"
+  ],
+  "prompt": "Use case: stylized-concept. Asset type: production pixel-art northern underworld game sprite.\nInput1 is ONLY a project-owned style reference: use its pixel treatment, dark contours, upper-left illumination, readable clusters. Do not reproduce reference figures, scenes or labels.\nSubject: A slender mournful mist-shaped human ghost, cold-gray and dark jade ragged vapor silhouette, exactly two small phosphor-green eyes, lower body dispersing into a few chunky trailing mist ribbons instead of feet. No translucent pixels: convey ghostly depth using solid dark gray, muted green and pale gray edges.\nLayout: ONE standalone sprite, target logical canvas 64x64. Full body facing RIGHT with three-quarter side view, common ground baseline at logical y61. Body in neutral rest stance, no attack pose. Leave room for future motion. Approximate upright body height 53logical pixels, keep limbs and accessories compact.\nUse cold gray, charcoal, bone ivory, muted moss-green and dark purple, restrained phosphor turquoise accents; warm gold-white only for the young soul and russet only for squirrel. Same visual language as reference game sprites. True low-resolution pixelart at stated logical resolution, not tiny painted microdetails. Sharp square pixel clusters, no dithering, no smooth gradients, max32-48colors. \nGenuine transparent RGBA background, binary opaque artwork, at leastTWOlogicalpixels empty on every side of each cell. No anti-aliased transparent fringes, no checkerboard drawn in, no frame borders, names, letters, labels, signature, text, watermark, foreground ground shadows or background scene. Entire object visible, nothing cut off.",
+  "tool": "builtin image_gen",
+  "source": "/Users/zhangjunqiu/.codex/generated_images/01a14377-c537-7a10-b5df-10043f63fbe0/exec-23b7a495-7c66-40ac-ade7-4619a60d3c21.png"
+}

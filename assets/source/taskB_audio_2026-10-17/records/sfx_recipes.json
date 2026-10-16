@@ -1,0 +1,651 @@
+[
+  {
+    "id": "ui_click",
+    "kind": "sfx",
+    "file": "candidates/sfx/ui_click.wav",
+    "sources": [
+      "originals/interface/Audio/click_003.ogg"
+    ],
+    "recipe": "界面机械轻触，裁短，低通",
+    "frequent": false,
+    "lowpass_hz": 4000,
+    "status": "candidate_pending_listening"
+  },
+  {
+    "id": "ui_open",
+    "kind": "sfx",
+    "file": "candidates/sfx/ui_open.wav",
+    "sources": [
+      "originals/rpg/Audio/bookOpen.ogg"
+    ],
+    "recipe": "书页展开与布料感",
+    "frequent": false,
+    "lowpass_hz": 4500,
+    "status": "candidate_pending_listening"
+  },
+  {
+    "id": "level_up",
+    "kind": "sfx",
+    "file": "candidates/sfx/level_up.wav",
+    "sources": [],
+    "recipe": "原创上行三音冰晶提示，短混响",
+    "frequent": false,
+    "lowpass_hz": 6500,
+    "status": "candidate_pending_listening"
+  },
+  {
+    "id": "card_pick",
+    "kind": "sfx",
+    "file": "candidates/sfx/card_pick.wav",
+    "sources": [
+      "originals/rpg/Audio/metalClick.ogg"
+    ],
+    "recipe": "锁扣确认与原创双音",
+    "frequent": false,
+    "lowpass_hz": 5000,
+    "status": "candidate_pending_listening"
+  },
+  {
+    "id": "ult_ready",
+    "kind": "sfx",
+    "file": "candidates/sfx/ult_ready.wav",
+    "sources": [],
+    "recipe": "原创间隔双音，与升级三音节奏区分",
+    "frequent": false,
+    "lowpass_hz": 5000,
+    "status": "candidate_pending_listening"
+  },
+  {
+    "id": "dash",
+    "kind": "sfx",
+    "file": "candidates/sfx/dash.wav",
+    "sources": [
+      "originals/rpg/Audio/cloth4.ogg"
+    ],
+    "recipe": "布料掠过与短风声",
+    "frequent": false,
+    "lowpass_hz": 5000,
+    "status": "candidate_pending_listening"
+  },
+  {
+    "id": "player_hurt",
+    "kind": "sfx",
+    "file": "candidates/sfx/player_hurt.wav",
+    "sources": [
+      "originals/impact/Audio/impactPunch_medium_000.ogg"
+    ],
+    "recipe": "物理闷击，无人声",
+    "frequent": false,
+    "lowpass_hz": 2200,
+    "status": "candidate_pending_listening"
+  },
+  {
+    "id": "player_death",
+    "kind": "sfx",
+    "file": "candidates/sfx/player_death.wav",
+    "sources": [
+      "originals/impact/Audio/impactSoft_heavy_000.ogg",
+      "originals/impact/Audio/impactWood_heavy_001.ogg"
+    ],
+    "recipe": "沉重倒地，低鼓余音，无人声",
+    "frequent": false,
+    "lowpass_hz": 2800,
+    "status": "candidate_pending_listening"
+  },
+  {
+    "id": "revive",
+    "kind": "sfx",
+    "file": "candidates/sfx/revive.wav",
+    "sources": [],
+    "recipe": "原创明亮和声与扩散气流",
+    "frequent": false,
+    "lowpass_hz": 6500,
+    "status": "candidate_pending_listening"
+  },
+  {
+    "id": "pickup_xp_01",
+    "kind": "sfx",
+    "file": "candidates/sfx/pickup_xp_01.wav",
+    "sources": [
+      "originals/fantasy/item_gem_01.ogg"
+    ],
+    "recipe": "同源水晶样本的小幅变调，短尾，抑制高频",
+    "frequent": true,
+    "lowpass_hz": 4800,
+    "status": "candidate_pending_listening"
+  },
+  {
+    "id": "katana_slash_01",
+    "kind": "sfx",
+    "file": "candidates/sfx/katana_slash_01.wav",
+    "sources": [
+      "originals/fantasy/blade_02.ogg"
+    ],
+    "recipe": "同源刀刃样本的小幅变调，干净短促破空",
+    "frequent": true,
+    "lowpass_hz": 5200,
+    "status": "candidate_pending_listening"
+  },
+  {
+    "id": "blades_slash_01",
+    "kind": "sfx",
+    "file": "candidates/sfx/blades_slash_01.wav",
+    "sources": [
+      "originals/rpg/Audio/knifeSlice.ogg"
+    ],
+    "recipe": "刀片破空变速，快于太刀",
+    "frequent": true,
+    "lowpass_hz": 5600,
+    "status": "candidate_pending_listening"
+  },
+  {
+    "id": "lightning_01",
+    "kind": "sfx",
+    "file": "candidates/sfx/lightning_01.wav",
+    "sources": [
+      "originals/impact/Audio/impactGlass_medium_000.ogg"
+    ],
+    "recipe": "玻璃裂纹、短电弧噪声和低频雷击",
+    "frequent": true,
+    "lowpass_hz": 6000,
+    "status": "candidate_pending_listening"
+  },
+  {
+    "id": "enemy_hit_01",
+    "kind": "sfx",
+    "file": "candidates/sfx/enemy_hit_01.wav",
+    "sources": [
+      "originals/impact/Audio/impactPunch_medium_000.ogg"
+    ],
+    "recipe": "三种独立闷击，短干低通",
+    "frequent": true,
+    "lowpass_hz": 2800,
+    "status": "candidate_pending_listening"
+  },
+  {
+    "id": "enemy_death_01",
+    "kind": "sfx",
+    "file": "candidates/sfx/enemy_death_01.wav",
+    "sources": [
+      "originals/fantasy/stones_03.ogg",
+      "originals/impact/Audio/impactGlass_light_000.ogg"
+    ],
+    "recipe": "同源石块与冰裂小幅变调，短衰减",
+    "frequent": true,
+    "lowpass_hz": 4800,
+    "status": "candidate_pending_listening"
+  },
+  {
+    "id": "pickup_xp_02",
+    "kind": "sfx",
+    "file": "candidates/sfx/pickup_xp_02.wav",
+    "sources": [
+      "originals/fantasy/item_gem_01.ogg"
+    ],
+    "recipe": "同源水晶样本的小幅变调，短尾，抑制高频",
+    "frequent": true,
+    "lowpass_hz": 4800,
+    "status": "candidate_pending_listening"
+  },
+  {
+    "id": "katana_slash_02",
+    "kind": "sfx",
+    "file": "candidates/sfx/katana_slash_02.wav",
+    "sources": [
+      "originals/fantasy/blade_02.ogg"
+    ],
+    "recipe": "同源刀刃样本的小幅变调，干净短促破空",
+    "frequent": true,
+    "lowpass_hz": 5200,
+    "status": "candidate_pending_listening"
+  },
+  {
+    "id": "blades_slash_02",
+    "kind": "sfx",
+    "file": "candidates/sfx/blades_slash_02.wav",
+    "sources": [
+      "originals/rpg/Audio/knifeSlice.ogg"
+    ],
+    "recipe": "刀片破空变速，快于太刀",
+    "frequent": true,
+    "lowpass_hz": 5600,
+    "status": "candidate_pending_listening"
+  },
+  {
+    "id": "lightning_02",
+    "kind": "sfx",
+    "file": "candidates/sfx/lightning_02.wav",
+    "sources": [
+      "originals/impact/Audio/impactGlass_medium_000.ogg"
+    ],
+    "recipe": "玻璃裂纹、短电弧噪声和低频雷击",
+    "frequent": true,
+    "lowpass_hz": 6000,
+    "status": "candidate_pending_listening"
+  },
+  {
+    "id": "enemy_hit_02",
+    "kind": "sfx",
+    "file": "candidates/sfx/enemy_hit_02.wav",
+    "sources": [
+      "originals/impact/Audio/impactPunch_medium_001.ogg"
+    ],
+    "recipe": "三种独立闷击，短干低通",
+    "frequent": true,
+    "lowpass_hz": 2800,
+    "status": "candidate_pending_listening"
+  },
+  {
+    "id": "enemy_death_02",
+    "kind": "sfx",
+    "file": "candidates/sfx/enemy_death_02.wav",
+    "sources": [
+      "originals/fantasy/stones_03.ogg",
+      "originals/impact/Audio/impactGlass_light_000.ogg"
+    ],
+    "recipe": "同源石块与冰裂小幅变调，短衰减",
+    "frequent": true,
+    "lowpass_hz": 4800,
+    "status": "candidate_pending_listening"
+  },
+  {
+    "id": "pickup_xp_03",
+    "kind": "sfx",
+    "file": "candidates/sfx/pickup_xp_03.wav",
+    "sources": [
+      "originals/fantasy/item_gem_01.ogg"
+    ],
+    "recipe": "同源水晶样本的小幅变调，短尾，抑制高频",
+    "frequent": true,
+    "lowpass_hz": 4800,
+    "status": "candidate_pending_listening"
+  },
+  {
+    "id": "katana_slash_03",
+    "kind": "sfx",
+    "file": "candidates/sfx/katana_slash_03.wav",
+    "sources": [
+      "originals/fantasy/blade_02.ogg"
+    ],
+    "recipe": "同源刀刃样本的小幅变调，干净短促破空",
+    "frequent": true,
+    "lowpass_hz": 5200,
+    "status": "candidate_pending_listening"
+  },
+  {
+    "id": "blades_slash_03",
+    "kind": "sfx",
+    "file": "candidates/sfx/blades_slash_03.wav",
+    "sources": [
+      "originals/rpg/Audio/knifeSlice.ogg"
+    ],
+    "recipe": "刀片破空变速，快于太刀",
+    "frequent": true,
+    "lowpass_hz": 5600,
+    "status": "candidate_pending_listening"
+  },
+  {
+    "id": "lightning_03",
+    "kind": "sfx",
+    "file": "candidates/sfx/lightning_03.wav",
+    "sources": [
+      "originals/impact/Audio/impactGlass_medium_000.ogg"
+    ],
+    "recipe": "玻璃裂纹、短电弧噪声和低频雷击",
+    "frequent": true,
+    "lowpass_hz": 6000,
+    "status": "candidate_pending_listening"
+  },
+  {
+    "id": "enemy_hit_03",
+    "kind": "sfx",
+    "file": "candidates/sfx/enemy_hit_03.wav",
+    "sources": [
+      "originals/impact/Audio/impactPunch_medium_002.ogg"
+    ],
+    "recipe": "三种独立闷击，短干低通",
+    "frequent": true,
+    "lowpass_hz": 2800,
+    "status": "candidate_pending_listening"
+  },
+  {
+    "id": "enemy_death_03",
+    "kind": "sfx",
+    "file": "candidates/sfx/enemy_death_03.wav",
+    "sources": [
+      "originals/fantasy/stones_03.ogg",
+      "originals/impact/Audio/impactGlass_light_000.ogg"
+    ],
+    "recipe": "同源石块与冰裂小幅变调，短衰减",
+    "frequent": true,
+    "lowpass_hz": 4800,
+    "status": "candidate_pending_listening"
+  },
+  {
+    "id": "chest_open",
+    "kind": "sfx",
+    "file": "candidates/sfx/chest_open.wav",
+    "sources": [
+      "originals/rpg/Audio/creak1.ogg",
+      "originals/fantasy/wood_02.ogg"
+    ],
+    "recipe": "木箱开启、木件活动与原创晶光",
+    "frequent": false,
+    "lowpass_hz": 5500,
+    "status": "candidate_pending_listening"
+  },
+  {
+    "id": "nova_cast",
+    "kind": "sfx",
+    "file": "candidates/sfx/nova_cast.wav",
+    "sources": [
+      "originals/fantasy/spell_02.ogg"
+    ],
+    "recipe": "低频魔法能量与冰冷扩散",
+    "frequent": false,
+    "lowpass_hz": 5500,
+    "status": "candidate_pending_listening"
+  },
+  {
+    "id": "rune_bolt",
+    "kind": "sfx",
+    "file": "candidates/sfx/rune_bolt.wav",
+    "sources": [
+      "originals/fantasy/spell_01.ogg"
+    ],
+    "recipe": "魔法样本变速与轻风",
+    "frequent": false,
+    "lowpass_hz": 5000,
+    "status": "candidate_pending_listening"
+  },
+  {
+    "id": "feather_hit",
+    "kind": "sfx",
+    "file": "candidates/sfx/feather_hit.wav",
+    "sources": [
+      "originals/rpg/Audio/drawKnife2.ogg"
+    ],
+    "recipe": "轻金属划动",
+    "frequent": false,
+    "lowpass_hz": 5000,
+    "status": "candidate_pending_listening"
+  },
+  {
+    "id": "fire_burn",
+    "kind": "sfx",
+    "file": "candidates/sfx/fire_burn.wav",
+    "sources": [
+      "originals/fantasy/spell_fire_03.ogg"
+    ],
+    "recipe": "火焰颗粒裁短，抑制尖锐高频",
+    "frequent": false,
+    "lowpass_hz": 3200,
+    "status": "candidate_pending_listening"
+  },
+  {
+    "id": "ult_swordsman",
+    "kind": "sfx",
+    "file": "candidates/sfx/ult_swordsman.wav",
+    "sources": [
+      "originals/fantasy/blade_02.ogg",
+      "originals/impact/Audio/impactMetal_medium_002.ogg"
+    ],
+    "recipe": "厚重低频破空、刀锋与空间余音",
+    "frequent": false,
+    "lowpass_hz": 5000,
+    "status": "candidate_pending_listening"
+  },
+  {
+    "id": "ult_assassin",
+    "kind": "sfx",
+    "file": "candidates/sfx/ult_assassin.wav",
+    "sources": [],
+    "recipe": "原创低皮鼓双击与阴冷风声",
+    "frequent": false,
+    "lowpass_hz": 3800,
+    "status": "candidate_pending_listening"
+  },
+  {
+    "id": "ult_mage",
+    "kind": "sfx",
+    "file": "candidates/sfx/ult_mage.wav",
+    "sources": [
+      "originals/impact/Audio/impactMining_001.ogg",
+      "originals/fantasy/stones_03.ogg"
+    ],
+    "recipe": "重石落地、岩屑与低频轰鸣",
+    "frequent": false,
+    "lowpass_hz": 4000,
+    "status": "candidate_pending_listening"
+  },
+  {
+    "id": "big_death",
+    "kind": "sfx",
+    "file": "candidates/sfx/big_death.wav",
+    "sources": [
+      "originals/impact/Audio/impactSoft_heavy_001.ogg",
+      "originals/fantasy/wood_03.ogg"
+    ],
+    "recipe": "大型躯体倒地与木石碎屑",
+    "frequent": false,
+    "lowpass_hz": 3200,
+    "status": "candidate_pending_listening"
+  },
+  {
+    "id": "ice_shot",
+    "kind": "sfx",
+    "file": "candidates/sfx/ice_shot.wav",
+    "sources": [
+      "originals/fantasy/item_gem_04.ogg"
+    ],
+    "recipe": "水晶颗粒与短风",
+    "frequent": false,
+    "lowpass_hz": 5800,
+    "status": "candidate_pending_listening"
+  },
+  {
+    "id": "arrow_shot",
+    "kind": "sfx",
+    "file": "candidates/sfx/arrow_shot.wav",
+    "sources": [
+      "originals/rpg/Audio/cloth1.ogg"
+    ],
+    "recipe": "紧短布料弓弦与原创低拨弦",
+    "frequent": false,
+    "lowpass_hz": 4500,
+    "status": "candidate_pending_listening"
+  },
+  {
+    "id": "golem_split",
+    "kind": "sfx",
+    "file": "candidates/sfx/golem_split.wav",
+    "sources": [
+      "originals/fantasy/stones_01.ogg",
+      "originals/fantasy/metal_01.ogg",
+      "originals/fantasy/stones_04.ogg"
+    ],
+    "recipe": "硬片错落散开",
+    "frequent": false,
+    "lowpass_hz": 5200,
+    "status": "candidate_pending_listening"
+  },
+  {
+    "id": "boss_windup",
+    "kind": "sfx",
+    "file": "candidates/sfx/boss_windup.wav",
+    "sources": [],
+    "recipe": "原创不稳定低音与逆向风，短危险提示",
+    "frequent": false,
+    "lowpass_hz": 4000,
+    "status": "candidate_pending_listening"
+  },
+  {
+    "id": "boss_slam",
+    "kind": "sfx",
+    "file": "candidates/sfx/boss_slam.wav",
+    "sources": [
+      "originals/impact/Audio/impactMining_002.ogg",
+      "originals/fantasy/stones_04.ogg"
+    ],
+    "recipe": "砸地、碎石与低频震动",
+    "frequent": false,
+    "lowpass_hz": 4000,
+    "status": "candidate_pending_listening"
+  },
+  {
+    "id": "boss_block",
+    "kind": "sfx",
+    "file": "candidates/sfx/boss_block.wav",
+    "sources": [
+      "originals/impact/Audio/impactPlate_heavy_002.ogg",
+      "originals/impact/Audio/impactGlass_heavy_001.ogg"
+    ],
+    "recipe": "金属盾与冰层碰撞",
+    "frequent": false,
+    "lowpass_hz": 5400,
+    "status": "candidate_pending_listening"
+  },
+  {
+    "id": "ice_pillar",
+    "kind": "sfx",
+    "file": "candidates/sfx/ice_pillar.wav",
+    "sources": [
+      "originals/impact/Audio/impactGlass_heavy_003.ogg",
+      "originals/fantasy/stones_02.ogg"
+    ],
+    "recipe": "冰层破裂与破土石屑",
+    "frequent": false,
+    "lowpass_hz": 5400,
+    "status": "candidate_pending_listening"
+  },
+  {
+    "id": "boss_death",
+    "kind": "sfx",
+    "file": "candidates/sfx/boss_death.wav",
+    "sources": [
+      "originals/impact/Audio/impactMining_003.ogg",
+      "originals/fantasy/stones_03.ogg",
+      "originals/fantasy/wood_05.ogg"
+    ],
+    "recipe": "连续岩木倒塌与三秒低频衰减",
+    "frequent": false,
+    "lowpass_hz": 4000,
+    "status": "candidate_pending_listening"
+  },
+  {
+    "id": "quest_start",
+    "kind": "sfx",
+    "file": "candidates/sfx/quest_start.wav",
+    "sources": [],
+    "recipe": "原创空五度神秘提示",
+    "frequent": false,
+    "lowpass_hz": 5000,
+    "status": "candidate_pending_listening"
+  },
+  {
+    "id": "quest_fail",
+    "kind": "sfx",
+    "file": "candidates/sfx/quest_fail.wav",
+    "sources": [],
+    "recipe": "原创低沉下行三音",
+    "frequent": false,
+    "lowpass_hz": 3800,
+    "status": "candidate_pending_listening"
+  },
+  {
+    "id": "boss_warning",
+    "kind": "sfx",
+    "file": "candidates/sfx/boss_warning.wav",
+    "sources": [
+      "originals/music/war_horns.wav"
+    ],
+    "recipe": "CC0号角最强能量段，降调、两秒衰减；待试听段落",
+    "frequent": false,
+    "lowpass_hz": 3500,
+    "status": "candidate_pending_listening"
+  },
+  {
+    "id": "quest_done",
+    "kind": "sfx",
+    "file": "candidates/sfx/quest_done.wav",
+    "sources": [
+      "originals/music/war_horns.wav"
+    ],
+    "recipe": "同一号角的短高音变体；待试听旋律完整性",
+    "frequent": false,
+    "lowpass_hz": 4200,
+    "status": "candidate_pending_listening"
+  },
+  {
+    "id": "revolver_reload",
+    "kind": "sfx",
+    "file": "candidates/sfx/revolver_reload.wav",
+    "sources": [
+      "originals/freesound/722902__tkane0512__revolver-reload-break-2.wav"
+    ],
+    "recipe": "CC0真实左轮开膛、快速装弹与闭合录音，完整保留顺序",
+    "frequent": false,
+    "lowpass_hz": 5000,
+    "status": "candidate_pending_listening"
+  },
+  {
+    "id": "boss_howl",
+    "kind": "sfx",
+    "file": "candidates/sfx/boss_howl.wav",
+    "sources": [
+      "originals/freesound/398430__naturestemper__wolf-howl.mp3"
+    ],
+    "recipe": "作者自制狼嚎，保留整句，去低频直流与过亮高频；未伪称野狼实录",
+    "frequent": false,
+    "lowpass_hz": 5500,
+    "status": "candidate_pending_listening"
+  },
+  {
+    "id": "revolver_shot_01",
+    "kind": "sfx",
+    "file": "candidates/sfx/revolver_shot_01.wav",
+    "sources": [
+      "originals/firearm/Prepared SFX Library/Smith & Wesson 642/V_27P.wav"
+    ],
+    "recipe": "CC0 .38左轮第一发近距离录音，保留起爆、裁短尾音，小幅变调",
+    "frequent": true,
+    "lowpass_hz": 4800,
+    "status": "candidate_pending_listening"
+  },
+  {
+    "id": "revolver_shot_02",
+    "kind": "sfx",
+    "file": "candidates/sfx/revolver_shot_02.wav",
+    "sources": [
+      "originals/firearm/Prepared SFX Library/Smith & Wesson 642/V_27P.wav"
+    ],
+    "recipe": "CC0 .38左轮第一发近距离录音，保留起爆、裁短尾音，小幅变调",
+    "frequent": true,
+    "lowpass_hz": 4800,
+    "status": "candidate_pending_listening"
+  },
+  {
+    "id": "revolver_shot_03",
+    "kind": "sfx",
+    "file": "candidates/sfx/revolver_shot_03.wav",
+    "sources": [
+      "originals/firearm/Prepared SFX Library/Smith & Wesson 642/V_27P.wav"
+    ],
+    "recipe": "CC0 .38左轮第一发近距离录音，保留起爆、裁短尾音，小幅变调",
+    "frequent": true,
+    "lowpass_hz": 4800,
+    "status": "candidate_pending_listening"
+  },
+  {
+    "id": "ult_gunslinger",
+    "kind": "sfx",
+    "file": "candidates/sfx/ult_gunslinger.wav",
+    "sources": [
+      "originals/firearm/Prepared SFX Library/Smith & Wesson 642/V_27P.wav"
+    ],
+    "recipe": "同源左轮五连发与原创低拨弦滑音收尾，西部音色目标待试听",
+    "frequent": false,
+    "lowpass_hz": 5000,
+    "status": "candidate_pending_listening"
+  }
+]

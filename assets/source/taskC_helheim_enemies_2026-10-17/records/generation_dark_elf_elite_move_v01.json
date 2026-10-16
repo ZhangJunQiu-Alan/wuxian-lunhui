@@ -1,0 +1,23 @@
+{
+  "tool": "OpenAI built-in image generation",
+  "source": "/Users/zhangjunqiu/.codex/generated_images/01a14377-c537-7a10-b5df-10043f63fbe0/exec-2db55d16-a7a4-4a61-acce-136841feb96b.png",
+  "id": "dark_elf_elite_move",
+  "unit": "dark_elf_elite",
+  "label": "精英黑暗精灵 move",
+  "action": "move",
+  "folder": "enemies",
+  "w": 64,
+  "h": 64,
+  "frames": 6,
+  "task": "taskC_helheim_enemies_2026-10-17",
+  "loop": true,
+  "anchor": "bottom",
+  "body_h": 50,
+  "subject": "Same pale underground elven archer with pointed ear and dark hood, finer layered dark leather armor, dark-purple shoulder trim and belt ornaments, curved bow and quiver. Same body scale and face, more ornate but restrained, no glowing spell effects.",
+  "status": "pending",
+  "version": "v01",
+  "refs": [
+    "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskC_helheim_enemies_2026-10-17/candidates/dark_elf_elite_v01.png"
+  ],
+  "prompt": "Use case: identity-preserve. Animate EXACT reference character; preserve face, equipment, proportions and colors. A real SIX-frame rightward walk cycle. Reading order:1 near leg forward/far leg back contact;2 near leg supports weight while far knee passes;3 far leg swings forward while near leg trails;4 far leg forward/near leg back opposite contact;5 far leg supports while near knee passes;6 near leg swings forward into pose1. Both arms swing in opposition to legs. Distinguish near and far leg throughout, keep them attached to same hips. No skating, no bouncing whole pasted figure, no repeating one forward foot in every frame.\nCRITICAL compact silhouette: cloak hangs DOWN, never fans sideways. Bow and drawing hand kept close to chest. Same head-to-foot height as reference in every frame. Do not shrink the torso to accommodate bow. Four poses ready, partial draw, full draw, release if attack.\nLayout EXACTLY 6 frames in 3 columns by 2 rows equal cells, reading order. Each cell logically 64x64px. Body height 50 logical pixels, fixed foot baseline and scale, facing RIGHT. Both legs alternate opposing contact for walk. Only same RGB palette as input1. Low-resolution pixel clusters, upper-left light, dark outline, binary transparent background, 2px clear margin. No text, grid, scenery, watermark, shadow, magic, slash or particles. Frame1 neutral reference size; compact action instead of resizing body."
+}

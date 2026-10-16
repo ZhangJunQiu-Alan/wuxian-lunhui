@@ -1,0 +1,24 @@
+{
+  "tool": "OpenAI built-in image generation",
+  "source": "/Users/zhangjunqiu/.codex/generated_images/01a14377-c537-7a10-b5df-10043f63fbe0/exec-19f4020b-1823-441c-a796-eef99e701365.png",
+  "id": "garm_attack",
+  "version": "v02",
+  "refs": [
+    "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskD_helheim_bosses_2026-10-17/candidates/garm_v02.png"
+  ],
+  "prompt": "Use case: identity-preserve. EXACT reference giant black hellhound, same head/fur/claws, broken iron collar, BLOODY CHEST and short dragging chain. THREE compact rightward bite-attack poses in ONE ROW with3EXACT equal-width cells. Frame1 ready crouch. Frame2 short forward bite with open jaws, legs TUCKED CLOSE UNDER BODY not sprawled outward, curled tail compact against rear; same head/torso scale. Frame3 land crouched and close mouth, recover rightward. The ENTIRE character including each of FOUR attached paws, chain, muzzle and tail must be FULLY WITHIN ITS OWN CELL. Reserve large completely TRANSPARENT gap between sprites: each silhouette only central80percent of cell width. No limb crosses a cell boundary, no detached paw in neighboring cell. Each cell logically128x128px, head/body same size as reference, upperleftlighting, same exact RGB palette. Pixelart with sharp clusters and opaque pixels, genuine transparent canvas. No text/grid/lines/scenery/aura/blood spray/particles/ground shadows or other FX. Keep all paws attached, never truncate far forepaw.",
+  "postprocess": {
+    "tool": "Pillow",
+    "operation": "isolated boundary-alpha speck cleanup and whole-frame positioning only",
+    "frame_1based": 1,
+    "alpha_clear_bbox": [
+      69,
+      35,
+      70,
+      36
+    ],
+    "whole_frame_dx": 0,
+    "derived_from": "garm_attack_v02.png",
+    "no_character_redrawing": true
+  }
+}
