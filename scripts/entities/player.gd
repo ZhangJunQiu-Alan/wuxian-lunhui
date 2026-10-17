@@ -11,6 +11,8 @@ signal ult_changed(energy: float, cost: float)
 signal ult_cast(character_id: String)
 
 const SPRITE_HEIGHT := 48.0
+const MAX_LEVEL := 30
+const XP_STEP := 6  # 每升一级，下一级多要这么多经验（2 级要 5，3 级要 11，4 级要 17……）
 const RADIUS := 14.0
 const INVINCIBLE_DURATION := 0.5  # 受伤后的无敌时间，防止一瞬间被怪群秒杀
 const ACTIONS := {"idle": true, "move": true, "attack": false, "hurt": false, "death": false}  # 动作素材：是否循环
@@ -414,12 +416,16 @@ func heal(amount: float) -> void:
 
 
 func add_xp(amount: float) -> void:
+	if level >= MAX_LEVEL:
+		return
 	xp += amount * xp_mult
-	while xp >= xp_to_next:
+	while level < MAX_LEVEL and xp >= xp_to_next:
 		xp -= xp_to_next
 		level += 1
-		xp_to_next = int(xp_to_next * 1.25) + 3
+		xp_to_next += XP_STEP
 		leveled_up.emit(level)
+	if level >= MAX_LEVEL:
+		xp = 0.0
 	xp_changed.emit(xp, xp_to_next, level)
 
 

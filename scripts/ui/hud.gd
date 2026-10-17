@@ -178,7 +178,7 @@ func set_hp(hp: float, max_hp: float) -> void:
 
 func set_xp(xp: float, xp_to_next: int, level: int) -> void:
 	_xp_bar.max_value = xp_to_next
-	_xp_bar.value = xp
+	_xp_bar.value = xp_to_next if level >= Player.MAX_LEVEL else xp
 	_level_label.text = tr("%s  等级 %d") % [tr(CharacterDB.ALL[character_id].name), level]
 
 
