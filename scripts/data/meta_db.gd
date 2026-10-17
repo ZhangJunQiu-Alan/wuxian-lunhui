@@ -11,6 +11,7 @@ const UPGRADES := {
 	"recovery": {"name": "恢复", "desc": "每秒回复 0.2 生命", "max": 3, "cost": 80},
 	"sense": {"name": "感知", "desc": "拾取范围 +10%", "max": 3, "cost": 40},
 	"growth": {"name": "成长", "desc": "获得的经验 +5%", "max": 5, "cost": 70},
+	"fortune": {"name": "命运的偏爱", "desc": "抽到高稀有度卡的几率 +2%", "max": 5, "cost": 80},
 	"reroll": {"name": "命运重抽", "desc": "每局可以重抽升级选项 1 次", "max": 3, "cost": 120},
 	"revive": {"name": "主神的眷顾", "desc": "每局可以复活 1 次（恢复一半生命）", "max": 1, "cost": 500},
 }
@@ -31,5 +32,6 @@ static func apply(player: Player) -> void:
 	player.regen += 0.2 * Save.meta_level("recovery")
 	player.pickup_radius *= 1.0 + 0.1 * Save.meta_level("sense")
 	player.xp_mult += 0.05 * Save.meta_level("growth")
+	player.luck += 2.0 * Save.meta_level("fortune")
 	player.rerolls = Save.meta_level("reroll")
 	player.revives = Save.meta_level("revive")

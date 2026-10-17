@@ -41,7 +41,7 @@ func _process(delta: float) -> void:
 	var target := _nearest_in_range()
 	if target == null:
 		return  # 射程内没有敌人就不开枪
-	_timer = fire_interval * player.cooldown_mult / (FRENZY_RATE if frenzy else 1.0)
+	_timer = fire_interval * player.weapon_cooldown() / (FRENZY_RATE if frenzy else 1.0)
 
 	var last_shot := _ammo == 1 and not frenzy
 	var dir := global_position.direction_to(target.global_position)
@@ -64,7 +64,7 @@ func _process(delta: float) -> void:
 	if not frenzy:
 		_ammo -= 1
 		if _ammo <= 0:
-			_reloading = reload_time * player.cooldown_mult
+			_reloading = reload_time * player.weapon_cooldown()
 			Audio.sfx("revolver_reload")
 
 
@@ -72,7 +72,7 @@ func _process(delta: float) -> void:
 func reload_progress() -> float:
 	if _reloading <= 0.0:
 		return -1.0
-	return 1.0 - _reloading / (reload_time * player.cooldown_mult)
+	return 1.0 - _reloading / (reload_time * player.weapon_cooldown())
 
 
 func _nearest_in_range() -> Node2D:

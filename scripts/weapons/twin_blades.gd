@@ -46,7 +46,7 @@ func _process(delta: float) -> void:
 			target = enemy
 	if target == null:
 		return  # 攻击范围内没有敌人就不出手
-	_timer = cooldown * player.cooldown_mult
+	_timer = cooldown * player.weapon_cooldown()
 	_left_hand = not _left_hand
 	_slash_time = SLASH_DURATION
 	_aim = global_position.direction_to(target.global_position)

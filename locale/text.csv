@@ -237,93 +237,46 @@ Every god and every giant is marching toward the same plain."
 主神的眷顾,Lord God's Favor
 每局可以复活 1 次（恢复一半生命）,Revive once per run (with half HP)
 太刀·锋利,Tachi · Keen Edge
-太刀伤害 +25%,Tachi damage +25%
 太刀·居合,Tachi · Iaijutsu
-太刀挥砍间隔 -12%,Tachi slash interval -12%
 太刀·长刃,Tachi · Long Blade
-太刀攻击范围 +20%,Tachi attack range +20%
 太刀·回身斩,Tachi · Turning Cut
 挥砍时同时斩向身后,Each slash also cuts behind you
 太刀·震退,Tachi · Shockwave
-太刀击退距离 +40%,Tachi knockback +40%
 太刀·断筋,Tachi · Hamstring
-"被太刀砍中的敌人移速 -20%，持续 2 秒",Enemies hit by the tachi are slowed by 20% for 2s
 左轮·重弹,Revolver · Heavy Rounds
-子弹伤害 +25%,Bullet damage +25%
 左轮·快拔,Revolver · Quick Draw
-射击间隔 -12%,Fire interval -12%
 左轮·扩容,Revolver · Extended Cylinder
-弹匣 +2 发，换弹时间 -10%,"Magazine +2 rounds, reload time -10%"
 左轮·穿甲,Revolver · Armor Piercing
-子弹穿透 +1,Bullet pierce +1
 左轮·双枪,Revolver · Dual Wield
 双手持枪，每次同时射出两发,Wield two guns and fire two shots at once
 双刃·淬锋,Twin Blades · Tempered Edge
-双刃伤害 +25%,Twin Blades damage +25%
 双刃·疾袭,Twin Blades · Swift Strike
-出手间隔 -12%,Attack interval -12%
 双刃·突进,Twin Blades · Lunge
-攻击范围 +15%,Attack range +15%
 双刃·三连刺,Twin Blades · Triple Thrust
 每次出手对目标追加一击（50% 伤害）,Each attack adds an extra hit on the target (50% damage)
 新星·增幅,Nova · Amplify
-新星伤害 +25%,Nova damage +25%
 新星·吟唱,Nova · Chant
-新星间隔 -12%,Nova interval -12%
 新星·扩散,Nova · Expand
-新星范围 +15%,Nova radius +15%
 新星·回响,Nova · Echo
 每次释放后再放一圈新星,Casts a second nova after each one
 力量,Might
-所有伤害 +10%,All damage +10%
 迅捷,Swiftness
-移动速度 +10%,Move speed +10%
 体魄,Vigor
-最大生命 +20，并回复 20 生命,Max HP +20 and heal 20 HP
 引力,Magnetism
-拾取范围 +30%,Pickup range +30%
 急速,Haste
-所有攻击冷却 -8%,All attack cooldowns -8%
 智慧,Wisdom
-获得的经验 +15%,XP gained +15%
 闪避,Evasion
-受到攻击时有 15% 几率闪避,15% chance to dodge incoming attacks
 再生,Regeneration
-每秒回复 1 点生命,Regenerate 1 HP per second
 落雷,Lightning Strike
-周期性召唤雷电劈向附近的敌人，造成范围伤害,"Periodically calls down lightning on nearby enemies, dealing area damage"
-雷霆万钧,Thunderous Might
-落雷伤害 +30%,Lightning damage +30%
 风暴,Storm
-每次多劈下 1 道雷,One extra bolt per strike
-疾雷,Quick Thunder
-落雷间隔 -15%,Lightning interval -15%
-觉醒·雷神之锤,Awakening · Mjölnir
-落雷伤害翻倍，并连锁跳向附近 3 个敌人,"Double lightning damage, and it chains to 3 nearby enemies"
 符文飞弹,Rune Bolt
-向最近的敌人发射符文飞弹,Fires rune bolts at the nearest enemy
 符文增殖,Rune Multiplication
-每次多发射 1 枚符文,One extra rune per volley
 破甲符文,Armor-Breaking Runes
-符文穿透 +1,Rune pierce +1
-觉醒·冈格尼尔,Awakening · Gungnir
-符文无限穿透，数量 +2，伤害 +50%,"Runes pierce infinitely, +2 runes, +50% damage"
 诡火,Will-o'-Wisp
-身边燃起火焰，持续灼烧靠近的敌人,"Flames burst around you, burning enemies that come close"
 野火蔓延,Spreading Wildfire
-火焰范围 +20%,Flame radius +20%
-炽焰,Blazing Fire
-火焰伤害 +30%,Flame damage +30%
-觉醒·诸神黄昏之火,Awakening · Fire of Ragnarök
-火焰范围 +50%，伤害翻倍,Flame radius +50% and double damage
 女武神之羽,Valkyrie Feathers
-2 片羽刃环绕身边，切割碰到的敌人,"2 feather blades orbit you, slicing enemies they touch"
 羽翼丰满,Full Plumage
-羽刃 +1,Feather blades +1
-疾风之羽,Gale Feathers
-羽刃转速和伤害 +20%,Feather blade spin speed and damage +20%
 觉醒·弗尔克范格,Awakening · Fólkvangr
-羽刃 +3，每秒额外回复 3 点生命,"Feather blades +3, and regenerate 3 extra HP per second"
 蜜酒,Mead
 回复 30 生命,Heal 30 HP
 精英%s,Elite %s
@@ -483,7 +436,6 @@ Reward Points +60"
 %s（%s）,%s (%s)
 神明 · %s · %s,God · %s · %s
 通用属性,General
-神之觉醒：信仰积满后出现,Divine Awakening: appears once your faith is full
 最多选择 %d 次,Can be chosen up to %d times
 还没有获得过。,Not obtained yet.
 制作人 · 游戏设计,Producer · Game Design
@@ -559,14 +511,11 @@ Stage %d · %s    [Enter]"
 再来一次,Try Again
 返回主神空间,Return to Lord God's Space
 点击卡牌或按数字键选择,Click a card or press a number key
-选择你的第一份信仰,Choose your first faith
 升级！等级 %d,Level Up! Lv %d
 重抽选项（剩余 %d 次）  [R],Reroll choices (%d left)  [R]
 基础武器 · ,Base Weapon · 
 ★ 神之觉醒 ★,★ Divine Awakening ★
-信仰 %s %d/%d,Faith %s %d/%d
 等级 %d → %d / %d,Lv %d → %d / %d
-新技能,New Skill
 本局构筑,Current Build
 暂停,Paused
 继续游戏  [Esc],Resume  [Esc]
@@ -578,7 +527,6 @@ Stage %d · %s    [Enter]"
 信仰　,Faith   
 　,   
 基础武器,Base Weapon
-神明,Gods
 %s：%s,%s: %s
 、,", "
 还没有选择任何强化,No upgrades chosen yet
@@ -601,3 +549,261 @@ Stage %d · %s    [Enter]"
 冥雾：站在雾里会持续掉血，但敌人在雾里会变慢,"Mist: standing in it drains your health, but enemies in the mist are slowed"
 未解锁,Locked
 「%s」,“%s”
+每 2 秒向附近的敌人劈下一道雷，被劈中的敌人感电,"Every 2s, a bolt strikes a nearby enemy and leaves it Shocked"
+向最近的敌人发射符文。符文印记叠到 3 层时引爆,Fires runes at the nearest enemy. Rune Marks detonate at 3 stacks
+身边燃起火焰，靠近的敌人被灼烧，离开火焰后继续掉血,"Flames surround you. Enemies who come close Burn, and keep burning after they leave"
+2 片羽刃环绕身边。被拣选的敌人死亡时可能掉下回复生命的金羽,2 feather blades circle you. Chosen enemies may drop a healing golden feather when they die
+巴德尔,Baldr
+光明之神,God of Light
+圣光,Holy Light
+每 2.5 秒朝敌人最多的方向射出一道贯穿光束。带光痕的敌人死亡时爆出一圈光,"Every 2.5s, fires a piercing beam toward the thickest crowd. Light-marked enemies burst into light when they die"
+澜,Rán
+海之女神,Goddess of the Sea
+澜之网,Rán's Net
+每 3.5 秒向敌人最密集的地方抛出大网，把敌人拉到一起定住。溺水的敌人受到的范围伤害 +20%,"Every 3.5s, casts a net into the densest crowd, dragging enemies together and holding them. Drowning enemies take +20% area damage"
+弗雷,Freyr
+丰饶之神,God of Plenty
+自战之剑,Self-Fighting Sword
+一把飞剑自动追砍敌人。被它杀死的敌人掉落的经验 +50%，偶尔掉下苹果,A flying sword hunts enemies on its own. Its kills drop +50% XP and sometimes an apple
+斯卡蒂,Skaði
+冬与狩猎女神,Goddess of Winter and the Hunt
+霜猎之箭,Frost Hunter's Arrow
+每 1.8 秒向最远的敌人射出穿透的冰箭。霜冻叠到 5 层时冻结,"Every 1.8s, fires a piercing ice arrow at the farthest enemy. Frost freezes at 5 stacks"
+父子雷符,Father and Son
+落雷劈中带符文印记的敌人时立刻引爆印记，并给周围的敌人叠 1 层印记,Lightning detonates Rune Marks instantly and spreads 1 Mark to nearby enemies
+乌特加尔德之旅,Journey to Útgarðr
+落雷劈中灼烧的敌人时引发火雷爆炸；诡火范围内的敌人每秒被小雷击中一次,Lightning on Burning enemies triggers a fiery blast; enemies in the Wildfire are struck by a small bolt every second
+假新娘,The False Bride
+闪现后隐身 2 秒，敌人跟丢你；隐身结束时在身边降下一道巨雷,"After a dash you vanish for 2s and enemies lose you; when it ends, a huge bolt falls around you"
+碎冰之雷,Shattering Thunder
+冻结的敌人被雷劈中时碎裂，冰片伤害周围的敌人并叠 2 层霜冻,"Frozen enemies hit by lightning shatter, damaging nearby enemies and adding 2 Frost"
+血誓兄弟,Blood Brothers
+符文命中时点燃敌人；被迷惑的敌人每秒叠 1 层符文印记,Runes set enemies Burning; Charmed enemies gain 1 Rune Mark per second
+英灵殿与弗尔克范格,Valhalla and Fólkvangr
+每个精英死亡时召唤一位英灵，并肩作战 15 秒,Every elite that dies summons an Einherjar to fight beside you for 15s
+巴德尔之梦,Baldr's Dreams
+光束命中带符文印记的敌人时立刻引爆印记；符文命中时给敌人挂上光痕,Beams detonate Rune Marks instantly; runes leave a Light Mark
+槲寄生,Mistletoe
+光束点燃敌人；带光痕又在灼烧的敌人死亡时，射出一支贯穿的槲寄生之箭,Beams set enemies Burning; Light-marked Burning enemies loose a piercing mistletoe arrow when they die
+毒蛇之刑,The Serpent's Venom
+灼烧的敌人每秒叠 1 层霜冻；冻结的敌人受到的灼烧伤害翻倍,Burning enemies gain 1 Frost per second; Frozen enemies take double burn damage
+安德瓦利,Andvari
+网里的敌人被点燃；网里被烧死的敌人有几率掉落奖励点,Netted enemies catch fire; those burned to death in the net may drop Reward Points
+华纳双子,Vanir Twins
+每 3 秒一片羽刃离身追击敌人再飞回；飞剑命中的敌人被拣选,Every 3s a feather blade flies out to strike an enemy and returns; sword hits mark enemies as Chosen
+钓巨蛇,Fishing for the Serpent
+落雷劈中溺水的敌人时，所有溺水的敌人一起挨雷,Lightning on a Drowning enemy strikes every Drowning enemy
+命运的偏爱,Fate's Favor
+抽到高稀有度卡的几率 +2%,Chance of higher-rarity cards +2%
+普通,Common
+稀有,Rare
+史诗,Epic
+传说,Legendary
+太刀伤害 +{v}%,Tachi damage +{v}%
+太刀挥砍间隔 -{v}%,Tachi swing interval -{v}%
+太刀攻击范围 +{v}%,Tachi range +{v}%
+太刀击退距离 +{v}%,Tachi knockback +{v}%
+被太刀砍中的敌人移速 -{v}%，持续 2 秒,Enemies hit by the tachi are slowed by {v}% for 2s
+子弹伤害 +{v}%,Bullet damage +{v}%
+射击间隔 -{v}%,Fire interval -{v}%
+弹匣 +{v} 发，换弹时间 -10%,"Magazine +{v}, reload time -10%"
+子弹穿透 +{v},Bullet pierce +{v}
+双刃伤害 +{v}%,Twin blade damage +{v}%
+出手间隔 -{v}%,Strike interval -{v}%
+攻击范围 +{v}%,Attack range +{v}%
+新星伤害 +{v}%,Nova damage +{v}%
+新星间隔 -{v}%,Nova interval -{v}%
+新星范围 +{v}%,Nova radius +{v}%
+所有伤害 +{v}%,All damage +{v}%
+暴击,Critical
+所有攻击的暴击率 +{v}%（暴击伤害 ×2）,Critical chance on all attacks +{v}% (crits deal ×2)
+冷却缩短,Cooldown
+所有神术的冷却 -{v}%,All divine skill cooldowns -{v}%
+基础武器的冷却 -{v}%,Base weapon cooldown -{v}%
+幸运,Luck
+抽到高稀有度卡的几率 +{v}%,Chance of higher-rarity cards +{v}%
+移动速度 +{v}%,Move speed +{v}%
+最大生命 +{v}，并回复同样多的生命,"Max HP +{v}, and heal the same amount"
+拾取范围 +{v}%,Pickup range +{v}%
+获得的经验 +{v}%,XP gained +{v}%
+受到攻击时有 {v}% 几率闪避,{v}% chance to dodge attacks
+每秒回复 {v} 点生命,Regenerate {v} HP per second
+每次多劈 {v} 道雷,+{v} bolt per strike
+每次多劈 1 道雷，落雷范围 +10%,"+1 bolt per strike, lightning radius +10%"
+雷域,Thunder Field
+落雷范围 +{v}%,Lightning radius +{v}%
+麻痹,Paralysis
+被雷劈中的敌人有 {v}% 几率麻痹 0.6 秒，停止移动和攻击,"Enemies struck have a {v}% chance to be paralyzed for 0.6s, unable to move or attack"
+回响,Echo
+落雷有 {v}% 几率在 0.5 秒后原地再劈一次,{v}% chance for a bolt to strike the same spot again 0.5s later
+妙尔尼尔,Mjölnir
+改为每 3 秒向敌人掷出战锤，飞出去再飞回手里，一路落雷。风暴 = 多掷一把锤；回响 = 回手时有几率立刻再掷,"Every 3s, hurl the hammer at enemies; it flies out and back, calling lightning along its path. Storm = more hammers; Echo = chance to throw again on return"
+雷暴云,Thundercloud
+头顶跟着一团雷云，每秒向周围劈 3 道小雷。风暴 = 每秒多劈 1 道；雷域 = 雷云更大,"A thundercloud follows overhead, striking 3 small bolts per second. Storm = +1 bolt per second; Thunder Field = bigger cloud"
+静电场,Static Field
+落雷改为给敌人叠感电；相邻的感电敌人连成电网，每秒互相电击。雷域 = 电网连得更远,Lightning now stacks Shock; nearby Shocked enemies link into a web and zap each other every second. Thunder Field = longer links
+觉醒·妙尔尼尔归来,Awakening · Mjölnir Returns
+多掷 2 把战锤；战锤飞回手里的瞬间在身边引发大雷爆。受到攻击时 30% 几率反劈一道雷,+2 hammers; each returning hammer sets off a great thunderclap around you. 30% chance to strike back with lightning when hit
+觉醒·山羊战车,Awakening · The Goat Chariot
+雷云覆盖整个屏幕，落雷速度翻倍。受到攻击时 30% 几率反劈一道雷,The thundercloud covers the screen and strikes twice as fast. 30% chance to strike back with lightning when hit
+觉醒·雷神之域,Awakening · Domain of Thunder
+感电的敌人死亡时，引爆电网上所有相连的敌人。受到攻击时 30% 几率反劈一道雷,"When a Shocked enemy dies, every enemy linked to it in the web explodes. 30% chance to strike back with lightning when hit"
+每次多发射 {v} 枚符文,+{v} rune per volley
+符文穿透 +{v},Rune pierce +{v}
+符文共鸣,Rune Resonance
+印记引爆时波及半径 +{v} 内的敌人，并给它们叠 1 层印记,Detonations also hit enemies within +{v} radius and give them 1 Mark
+回旋符文,Returning Runes
+符文飞到尽头后折返；折返时分裂成 2 枚的几率 +{v}%,Runes fly back after reaching their range; +{v}% chance to split in two on the way back
+冈格尼尔,Gungnir
+改为每 2.5 秒掷出长枪，贯穿一条直线上的所有敌人，命中直接引爆印记。增殖 = 多掷一支；破甲 = 长枪更宽,"Every 2.5s, throw a spear that pierces everything in a line and detonates Marks on hit. Rune Multiplication = more spears; Armor-Breaking Runes = wider spear"
+渡鸦,Ravens
+福金和雾尼绕身飞行，轮流俯冲啄向印记最多的敌人，每啄一下叠 2 层。增殖 = 多一只渡鸦,"Huginn and Muninn circle you, taking turns to dive at the most-marked enemy and adding 2 Marks per peck. Rune Multiplication = +1 raven"
+九夜符文,Runes of the Nine Nights
+符文落地变成符文阵，停留 3 秒，阵里的敌人每秒叠 1 层印记。破甲 = 符文阵更大,Runes land as rune circles for 3s; enemies inside gain 1 Mark per second. Armor-Breaking Runes = bigger circles
+觉醒·永不落空,Awakening · Never Misses
+长枪贯穿后自动转向下一个敌人，连续贯穿 3 次。每击杀 100 个敌人召唤一位英灵 20 秒,"After piercing, the spear turns to the next enemy, up to 3 times. Every 100 kills summons an Einherjar for 20s"
+觉醒·至高王座,Awakening · Hliðskjálf
+渡鸦 +2；被渡鸦啄死的精英化作英灵为你战斗 15 秒。每击杀 100 个敌人召唤一位英灵 20 秒,+2 ravens; elites killed by ravens rise as Einherjar for 15s. Every 100 kills summons an Einherjar for 20s
+觉醒·世界树之秘,Awakening · Secret of the World Tree
+符文阵变大、停留更久；一处印记引爆时，所有符文阵里的敌人叠 1 层。每击杀 100 个敌人召唤一位英灵 20 秒,"Bigger, longer rune circles; any detonation gives 1 Mark to every enemy in a circle. Every 100 kills summons an Einherjar for 20s"
+火焰范围 +{v}%,Flame radius +{v}%
+余烬,Embers
+灼烧持续时间 +{v} 秒,Burn duration +{v}s
+银舌,Silver Tongue
+灼烧的敌人每秒有 {v}% 几率被迷惑 3 秒，去咬身边的同伴,Burning enemies have a {v}% chance per second to be Charmed for 3s and attack their allies
+火种,Kindling
+灼烧的敌人死亡时点燃身边 {v} 个敌人,Burning enemies ignite {v} nearby enemies when they die
+狼之父,Father of Wolves
+火焰收拢成一只芬里尔幼狼，跟着你扑咬附近的敌人并点燃它们。野火 = 扑咬范围更大,"The flames gather into a Fenrir cub that follows you, biting and igniting nearby enemies. Spreading Wildfire = bigger bites"
+变形者,Shapeshifter
+每 4 秒在原地留下一个火焰分身，吸引附近的敌人，带着火焰燃烧 4 秒。火种 = 分身消失时爆炸,"Every 4s, leave a fiery double that lures nearby enemies and burns for 4s. Kindling = doubles explode when they fade"
+纳吉尔法尔之路,Path of Naglfar
+火焰改为你走过的地方燃起火路，持续 4 秒。野火 = 火路更宽；余烬 = 火路更久,Your footsteps leave a trail of fire for 4s. Spreading Wildfire = wider trail; Embers = longer trail
+觉醒·芬里尔,Awakening · Fenrir
+幼狼长成巨狼，每 10 秒喷出一道狼嚎火焰，迷惑一路的敌人。被迷惑的敌人死亡时爆炸,"The cub grows into a giant wolf that breathes a howling flame every 10s, charming all in its path. Charmed enemies explode on death"
+觉醒·千面,Awakening · Thousand Faces
+同时存在 3 个分身，分身消失时迷惑周围的敌人。被迷惑的敌人死亡时爆炸,Up to 3 doubles at once; fading doubles charm nearby enemies. Charmed enemies explode on death
+觉醒·苏尔特之火,Awakening · Surtr's Fire
+火路持续更久，宽度随击杀不断变大（每 50 击杀 +5%）。被迷惑的敌人死亡时爆炸,The trail lasts longer and widens with every kill (+5% per 50 kills). Charmed enemies explode on death
+羽刃 +{v},Feather blades +{v}
+展翼,Spread Wings
+羽刃环绕半径和转速 +{v}%,Feather orbit radius and spin +{v}%
+金羽,Golden Feathers
+被拣选的敌人死亡时掉落金羽的几率 +{v}%，捡起回复生命,Chosen enemies are +{v}% more likely to drop a healing golden feather
+羽盾,Feather Shield
+羽刃碰到飞向你的子弹时，有 {v}% 几率把它挡下,Feather blades have a {v}% chance to block projectiles they touch
+鹰羽披风,Falcon Cloak
+羽刃改为每 2 秒向四周射出，飞到尽头再飞回身边，往返都能切。展翼 = 射得更远,"Every 2s the feathers shoot outward and fly back, cutting both ways. Spread Wings = farther reach"
+布里辛嘉曼,Brísingamen
+羽刃化成一圈金色光环：环上的敌人减速 30%，你每切到一个敌人回复少量生命。丰满 = 光环更粗,"The feathers become a golden ring: enemies on it are slowed 30%, and each cut heals you a little. Full Plumage = thicker ring"
+战猫车,Cat Chariot
+两只战猫在身边巡逻，扑向靠近的敌人并拣选它们。丰满 = 多一只战猫,"Two war cats patrol around you, pouncing on enemies and marking them Chosen. Full Plumage = +1 cat"
+射出的羽刃第一次命中时分裂成 3 片小羽刃。本局获得一次复活,Thrown feathers split into 3 on their first hit. Gain one revive this run
+觉醒·金泪,Awakening · Tears of Gold
+受到伤害时掉下一颗金色眼泪，捡起回复 15% 生命。本局获得一次复活,Taking damage drops a golden tear that heals 15% HP. Gain one revive this run
+觉醒·女神出征,Awakening · The Goddess Rides
+每 15 秒，弗蕾亚乘猫车从屏幕一侧冲到另一侧，撞飞路上的敌人。本局获得一次复活,"Every 15s, Freyja's cat chariot charges across the screen, scattering enemies. Gain one revive this run"
+棱光,Prism
+每次多射 {v} 道光束，扇形散开,"+{v} beam per cast, fanned out"
+光辉,Radiance
+光束长度和宽度 +{v}%,Beam length and width +{v}%
+余晖,Afterglow
+光束消失后地上留下光带 {v} 秒，走进去的敌人持续受伤,Beams leave a strip of light for {v}s that keeps hurting enemies
+折射,Refraction
+光束命中带光痕的敌人时，有 {v}% 几率折射出一道小光束,{v}% chance for a beam to refract off Light-marked enemies
+光明之矛,Spear of Light
+光束收成一支光矛，飞过整个屏幕，伤害 ×2.5，间隔 ×1.5。棱光 = 多掷一支,"The beam becomes a spear that crosses the whole screen: damage ×2.5, interval ×1.5. Prism = more spears"
+白昼,Daylight
+光束改为绕着你旋转的光柱，扫到的敌人持续受伤。棱光 = 多一道光柱；余晖 = 扫过的地方留光带,The beam becomes a pillar of light sweeping around you. Prism = +1 pillar; Afterglow = sweeps leave light behind
+万物之誓,Oath of All Things
+光束每命中一个敌人，你得到 1 层誓言护盾（最多 3 层，每层挡一次伤害）；护盾满时光束伤害 ×2,"Each enemy hit grants 1 Oath Ward (max 3, each blocks one hit); at full wards, beams deal ×2"
+觉醒·神之光矛,Awakening · Divine Spear
+光矛命中第一个敌人时炸开十字光。每 30 秒全屏闪光，所有敌人挂上光痕,The spear bursts into a cross of light on its first hit. Every 30s a flash marks every enemy with Light
+觉醒·永昼,Awakening · Endless Day
+光柱 +2。每 30 秒全屏闪光，所有敌人挂上光痕,+2 pillars. Every 30s a flash marks every enemy with Light
+觉醒·无伤之神,Awakening · The Unharmed
+护盾叠满时 3 秒无敌，期间光束伤害翻倍。每 30 秒全屏闪光，所有敌人挂上光痕,"At full wards, become invulnerable for 3s with double beam damage. Every 30s a flash marks every enemy with Light"
+大网,Great Net
+网的半径 +{v}%,Net radius +{v}%
+双网,Twin Nets
+每次多抛 {v} 张网,+{v} net per cast
+漩涡,Whirlpool
+收网后原地留下漩涡 {v} 秒，继续把附近的敌人吸进来,Closing a net leaves a whirlpool for {v}s that keeps pulling enemies in
+拖曳,Undertow
+被网住的敌人多定住 {v} 秒,Netted enemies are held {v}s longer
+九浪,Nine Waves
+网改为向前推出一道巨浪，卷走路上的敌人冲到尽头再拍下。大网 = 浪更宽；双网 = 多推一道浪,"Instead of a net, push a great wave that sweeps enemies along and slams them down. Great Net = wider wave; Twin Nets = more waves"
+安德瓦利之网,Andvari's Net
+网留在地上 3 秒，网里的敌人每秒受伤；网里被打死的敌人掉落的经验翻倍,"Nets stay for 3s, hurting enemies inside every second; enemies killed inside drop double XP"
+溺亡者,The Drowned
+网里被打死的敌人变成溺亡者，为你作战 8 秒（最多 6 个）,Enemies killed in the net rise as Drowned and fight for you for 8s (max 6)
+觉醒·九位浪女,Awakening · The Nine Wave Maidens
+每 12 秒，九道浪从四面八方冲向你所在的位置。受到伤害时 20% 几率把攻击者拖进网里,"Every 12s, nine waves crash in toward you from every side. 20% chance to net attackers when hit"
+觉醒·安德瓦利的黄金,Awakening · Andvari's Gold
+网变成金网，网里的敌人受到的伤害 +50%，偶尔掉落奖励点。受到伤害时 20% 几率把攻击者拖进网里,Golden nets: enemies inside take +50% damage and sometimes drop Reward Points. 20% chance to net attackers when hit
+觉醒·澜的殿堂,Awakening · Rán's Hall
+溺亡者最多 12 个，并且不会消失。受到伤害时 20% 几率把攻击者拖进网里,"Up to 12 Drowned, and they never fade. 20% chance to net attackers when hit"
+双生剑,Twin Swords
+飞剑 +{v},Flying swords +{v}
+剑之舞,Sword Dance
+飞剑速度 +{v}%,Sword speed +{v}%
+丰饶,Bounty
+被飞剑杀死的敌人经验再 +{v}%,Sword kills drop another +{v}% XP
+苹果,Apples
+掉落苹果的几率 +{v}%，捡起回复生命,Apple drop chance +{v}%; apples heal
+古林博斯帝,Gullinbursti
+飞剑换成金鬃野猪，每 4 秒冲向敌人最多的方向，撞飞一路的敌人。双生 = 多一头野猪,"The sword becomes the golden boar, charging into the thickest crowd every 4s. Twin Swords = more boars"
+丰收之地,Harvest Field
+飞剑每砍 10 下，插进地里长出一片麦田 8 秒：站在里面回复生命，敌人减速,"Every 10 sword hits, a wheat field grows for 8s: heal while inside, enemies are slowed"
+阳光之剑,Sword of Sunlight
+飞剑飞过的地方留下一道灼热的光痕，碰到的敌人灼烧,The sword leaves a scorching trail that sets enemies Burning
+觉醒·金鬃冲锋,Awakening · Golden Stampede
+每 15 秒，野猪群从屏幕边缘一起冲过来。每分钟回复 15% 生命,"Every 15s, a herd of boars stampedes across the screen. Heal 15% HP every minute"
+觉醒·华纳海姆之春,Awakening · Spring of Vanaheim
+一片麦田跟着你移动。每分钟回复 15% 生命,A wheat field follows you. Heal 15% HP every minute
+觉醒·三柄阳剑,Awakening · Three Suns
+飞剑 +2，光痕留得更久。每分钟回复 15% 生命,"+2 swords, longer trails. Heal 15% HP every minute"
+连珠,Volley
+每次多射 {v} 支冰箭，扇形散开,"+{v} ice arrow per shot, fanned out"
+寒意,Chill
+每支冰箭多叠 {v} 层霜冻,Each arrow adds +{v} Frost
+冰原,Ice Field
+冰箭飞过的地面结冰 {v} 秒，踩上去的敌人叠霜冻,"Arrows freeze the ground along their path for {v}s, adding Frost to enemies on it"
+碎冰,Shatter
+冻结的敌人被打死时爆出 {v} 片冰片,Frozen enemies burst into {v} ice shards when killed
+狩猎本能,Hunter's Instinct
+标记屏幕内最强的敌人，冰箭改为蓄力狙击它：伤害 ×3，直接冻结。连珠 = 狙击后追加普通箭,"Mark the strongest enemy on screen and snipe it with a charged arrow: ×3 damage, instant freeze. Volley = extra arrows after each snipe"
+雪鞋,Snowshoes
+移动时每走 150 像素自动射一支箭，跑得越多射得越多，站着不动就不射,"Fire an arrow every 150 px you move: the more you run, the more you shoot. Standing still fires nothing"
+永冬,Endless Winter
+冰箭改为身边一圈暴风雪，持续给范围内的敌人叠霜冻。连珠 = 暴风雪更大,Arrows become a blizzard around you that keeps adding Frost. Volley = bigger blizzard
+觉醒·群山之女,Awakening · Daughter of the Mountains
+狙击箭贯穿整个屏幕，冻结一路上的所有敌人。免疫减速,"The snipe pierces across the whole screen, freezing everything in its path. Immune to slows"
+觉醒·滑雪猎手,Awakening · Ski Hunter
+闪现后 3 秒内箭的数量翻倍。免疫减速,Arrows are doubled for 3s after a dash. Immune to slows
+觉醒·芬布尔之冬,Awakening · Fimbulwinter
+暴风雪扩大到整个屏幕。免疫减速,The blizzard covers the whole screen. Immune to slows
+，武器伤害 +%d%%,", weapon damage +%d%%"
+融合技 · ,Fusion · 
+两位神都觉醒后出现,Appears once both gods have awakened
+融合技,Fusion
+神术：选择这位神时获得,Divine skill: gained when you choose this god
+质变：信仰达到 %d 时三选一,Path: choose one of three at Faith %d
+神之觉醒：选了「%s」后，信仰达到 %d 时出现,"Awakening: after choosing “%s”, appears at Faith %d"
+　普通 / 稀有 / 史诗 / 传说：%s,  Common / Rare / Epic / Legendary: %s
+选择你的第一位神,Choose Your First God
+等级 %d：选择第 %d 位神,Level %d: Choose God #%d
+%s的信仰达到 %d：选择一条道路,%s's Faith reached %d: Choose a Path
+%s的信仰达到 %d：神之觉醒,%s's Faith reached %d: Awakening
+两位神同时觉醒：融合技,Two Gods Awakened: Fusion
+%s · 强化,%s · Boon
+%s · 质变,%s · Path
+%s · 觉醒,%s · Awakening
+融合技 · %s + %s,Fusion · %s + %s
+★ 融合技 ★,★ Fusion ★
+三条道路只能选一条,Only one path can be chosen
+新的神明（一局最多 %d 位）,New god (up to %d per run)
+（选择道路）, (choose a path)
+（觉醒）, (awaken)
+信仰 %d → %d / %d,Faith %d → %d / %d
+神明强化,God Boons

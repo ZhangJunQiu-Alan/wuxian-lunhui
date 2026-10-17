@@ -254,15 +254,14 @@ func announce(text: String) -> void:
 	tween.tween_property(_announce, "modulate:a", 0.0, 0.6)
 
 
-## 左侧显示每位已信仰神明的信仰值，例如「托尔 ■■■□□」
-func set_faith(faith: Dictionary) -> void:
+## 左侧显示每位已信仰神明的信仰，例如「托尔 ■■■■■■■□□□□□ 雷暴云」
+func set_faith(player: Player) -> void:
 	for child in _faith_box.get_children():
 		child.queue_free()
-	for god_id: String in faith:
-		var god: Dictionary = Gods.ALL[god_id]
+	for god_id: String in player.faith:
 		var label := Label.new()
-		label.text = "%s %s" % [tr(god.name), LevelUpPanel.faith_bar(faith[god_id])]
-		label.modulate = god.color
+		label.text = LevelUpPanel.faith_line(player, god_id)
+		label.modulate = Gods.ALL[god_id].color
 		_faith_box.add_child(label)
 
 

@@ -32,7 +32,8 @@ var level_data: Dictionary = LevelDB.ALL[level_id]
 var _spawn_timer := 0.0
 var _next_event := 0  # 下一个要触发的定时事件序号
 var _next_elite_time := 0.0
-var _pending_rewards: Array[String] = []  # 待选择的奖励（升级或宝箱），逐个弹出；内容是面板标题，空字符串 = 普通升级
+## 待选择的奖励，逐个弹出。kind：level 升级或宝箱（title 是面板标题）、god 选神、path 质变、awaken 觉醒、fusion 融合技
+var _pending_rewards: Array[Dictionary] = []
 var boss: Boss
 var _alive_by_type := {}  # 敌人 id -> 当前存活数量
 var _next_boss := 0
@@ -100,6 +101,9 @@ func _ready() -> void:
 	add_child(pause_menu)
 
 	process_physics_priority = -10  # 让推挤网格在所有敌人移动之前重建
+	Enemy.crit_chance = 0.0
+	GodPower.fusions.clear()
+	_queue_reward.call_deferred({"kind": "god"})  # 开局先选第一位神
 	_next_elite_time = level_data.elite_from
 	_quest_queue = level_data.quests.duplicate()
 	_quest_queue.shuffle()
@@ -416,35 +420,107 @@ func _on_boss_defeated(defeated_boss: Boss) -> void:
 		add_child.call_deferred(gem)
 
 
-func _on_player_leveled_up(_level: int) -> void:
+func _on_player_leveled_up(level: int) -> void:
 	Audio.sfx("level_up")
-	queue_reward("")
+	if UpgradeDB.GOD_LEVELS.has(level) and player.faith.size() < UpgradeDB.MAX_GODS:
+		_queue_reward({"kind": "god"})  # 5 级、10 级：选一位新的神
+	else:
+		queue_reward("")
+
+
+## 加入一次升级选择（宝箱、支线奖励也用它），title 是面板标题，空字符串 = 普通升级
+func queue_reward(title: String) -> void:
+	_queue_reward({"kind": "level", "title": title})
 
 
 ## 加入一次奖励选择。如果当前没有在选，就暂停游戏并弹出面板
-func queue_reward(title: String) -> void:
-	_pending_rewards.append(title)
+func _queue_reward(entry: Dictionary) -> void:
+	_pending_rewards.append(entry)
 	if _pending_rewards.size() == 1:
 		get_tree().paused = true
-		level_up_panel.open(UpgradeDB.get_choices(player, player.choice_count), player, title)
+		_open_reward()
 
 
-func _on_upgrade_chosen(id: String) -> void:
-	UpgradeDB.apply(id, player)
-	_note("upgrades", id, 1)
-	hud.set_faith(player.faith)
+func _open_reward() -> void:
+	var entry: Dictionary = _pending_rewards[0]
+	level_up_panel.open(_offers(entry), player, entry)
+	match entry.kind:  # 选神、质变、觉醒、融合技各有一段提示音，没有素材时借用升级音效
+		"god", "path":
+			Audio.sfx_or(entry.kind + "_choose", "level_up")
+		"awaken", "fusion":
+			Audio.sfx_or(entry.kind, "level_up")
+
+
+func _offers(entry: Dictionary) -> Array[Dictionary]:
+	match entry.kind:
+		"god":
+			return UpgradeDB.god_choices(player, player.choice_count)
+		"path":
+			return UpgradeDB.path_choices(entry.god)
+		"awaken":
+			return UpgradeDB.awaken_choice(player.gods[entry.god].path)
+		"fusion":
+			return [{"id": "fusion_" + entry.fusion, "rarity": -1}]
+	return UpgradeDB.get_choices(player, player.choice_count, elapsed / 60.0)
+
+
+func _on_upgrade_chosen(offer: Dictionary) -> void:
+	UpgradeDB.apply(offer, player)
+	_note("upgrades", offer.id, 1)
 	_pending_rewards.pop_front()
+	_check_faith()
+	hud.set_faith(player)
 	if not _pending_rewards.is_empty():
-		level_up_panel.open(UpgradeDB.get_choices(player, player.choice_count), player, _pending_rewards[0])
+		_open_reward()
 	else:
 		get_tree().paused = false
 
 
+## 信仰到 6 弹出质变、到 12 弹出觉醒；两位神都觉醒后弹出他们的融合技。插在其他奖励前面
+func _check_faith() -> void:
+	var at := 1 if level_up_panel.visible else 0  # 面板正开着时，排在当前这一次后面
+	for god: String in player.faith:
+		var power: GodPower = player.gods[god]
+		var faith: int = player.faith[god]
+		if faith >= UpgradeDB.FAITH_PATH and power.path == "" and not _is_pending("path", god):
+			_pending_rewards.insert(at, {"kind": "path", "god": god})
+			at += 1
+		elif faith >= UpgradeDB.FAITH_AWAKEN and power.path != "" and not power.awakened and not _is_pending("awaken", god):
+			_pending_rewards.insert(at, {"kind": "awaken", "god": god})
+			at += 1
+	var gods: Array = player.gods.keys()
+	for i in gods.size():
+		for j in range(i + 1, gods.size()):
+			var fusion := Gods.fusion_between(gods[i], gods[j])
+			if fusion == "" or GodPower.has_fusion(fusion) or _is_pending("fusion", fusion):
+				continue
+			if player.gods[gods[i]].awakened and player.gods[gods[j]].awakened:
+				_pending_rewards.insert(at, {"kind": "fusion", "fusion": fusion})
+				at += 1
+
+
+func _is_pending(kind: String, key: String) -> bool:
+	return _pending_rewards.any(func(e: Dictionary) -> bool: return e.kind == kind and (e.get("god", "") == key or e.get("fusion", "") == key))
+
+
+## 支线奖励直接加信仰
+func add_faith(god: String, amount: int) -> void:
+	if not player.faith.has(god):
+		return
+	player.faith[god] = mini(player.faith[god] + amount, UpgradeDB.FAITH_MAX)
+	hud.set_faith(player)
+	var was_empty := _pending_rewards.is_empty()
+	_check_faith()
+	if was_empty and not _pending_rewards.is_empty():
+		get_tree().paused = true
+		_open_reward()
+
+
 func _on_reroll_requested() -> void:
-	if player.rerolls <= 0 or _pending_rewards.is_empty():
+	if player.rerolls <= 0 or _pending_rewards.is_empty() or not ["level", "god"].has(_pending_rewards[0].kind):
 		return
 	player.rerolls -= 1
-	level_up_panel.open(UpgradeDB.get_choices(player, player.choice_count), player, _pending_rewards[0])
+	_open_reward()
 
 
 func _on_level_cleared() -> void:

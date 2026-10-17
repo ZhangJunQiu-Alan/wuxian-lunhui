@@ -13,10 +13,17 @@ const ATTACK_STRIKE := 0.45    # 动作进行到这个比例时出手（播放�
 const ATTACK_COOLDOWN := 1.0
 const ATTACK_REACH := 14.0     # 离玩家比接触距离再远这么多就开始出招
 const CAST_TIME := 0.45        # 远程敌人开火前的聚能时间
+const FROST_SLOW := 0.1        # 霜冻：每层减速 10%
+const FROST_FREEZE := 5        # 霜冻叠到这么多层时冻结
+const FROST_FREEZE_TIME := 1.5
+const DROWN_AREA_BONUS := 0.2  # 溺水的敌人受到的范围伤害 +20%
+const GOLD_NET_BONUS := 0.5    # 澜觉醒「安德瓦利的黄金」：金网里的敌人受到的伤害 +50%
+const CHARM_HIT_EVERY := 0.5   # 迷惑的敌人每隔多久咬一次同伴
 
 ## 网格坐标 -> 该格里的敌人。每个物理帧由 game.gd 重建一次，
 ## 这样每个敌人只需要检查周围 9 个格子，而不是所有敌人
 static var _grid := {}
+static var crit_chance := 0.0  # 通用卡「暴击」：对敌人的所有伤害都有这个几率翻倍，每局开始时清零
 
 var type_id := ""
 var sprite_dir := SPRITE_DIR  # Boss 会改成 bosses 目录
@@ -46,6 +53,16 @@ var _hit_slow := 0.0  # 被攻击附带的减速（太刀·断筋），和环境
 var _hit_slow_time := 0.0
 var _dodge_cd := 0.0
 var _draining := false  # 吸血光束正连着玩家
+
+# 神明给敌人挂的状态（神印），见 add_status / add_stacks
+var statuses := {}  # 状态 -> 剩余秒数：shock 感电、light 光痕、drown 溺水、chosen 拣选、charm 迷惑、burn 灼烧、gold_net 金网
+var stacks := {}    # 叠层状态 -> 层数：rune 符文印记、frost 霜冻、shock 感电层数（静电场）
+var burn_dps := 0.0
+var lure: Node2D  # 诱饵（洛基的火焰分身）：离得够近时追它，不追玩家
+var _burn_acc := 0.0
+var _burn_tick := 0.0
+var _charm_cd := 0.0
+var _quiet := false  # 持续伤害不播受击音效
 
 # 远程敌人
 var shoot_range := 0.0
@@ -79,14 +96,110 @@ static func rebuild_grid(tree: SceneTree) -> void:
 			_grid[cell] = [enemy]
 
 
-## 对一个圆形范围内的所有敌人造成伤害（落雷、火焰等范围技能共用）
-## knockback 是把敌人从中心向外推开的力度
-static func damage_in_radius(tree: SceneTree, center: Vector2, radius: float, amount: float, knockback: float = 0.0) -> void:
+## 对一个圆形范围内的所有敌人造成伤害（落雷、火焰等范围技能共用），返回被打到的敌人
+## knockback 是把敌人从中心向外推开的力度。溺水的敌人受到的范围伤害更高
+static func damage_in_radius(tree: SceneTree, center: Vector2, radius: float, amount: float, knockback: float = 0.0) -> Array[Enemy]:
+	var hit: Array[Enemy] = []
 	for node in tree.get_nodes_in_group("enemies"):
 		var enemy := node as Enemy
 		var offset := enemy.global_position - center
 		if offset.length() <= radius + enemy.radius:
-			enemy.take_damage(amount, offset.normalized() * knockback)
+			hit.append(enemy)
+			enemy.take_damage(amount * enemy.area_mult(), offset.normalized() * knockback)
+	return hit
+
+
+## 范围伤害的倍率：溺水 +20%
+func area_mult() -> float:
+	return 1.0 + (DROWN_AREA_BONUS if has_status("drown") else 0.0)
+
+
+# ———— 状态（神印）————
+
+func add_status(id: String, duration: float) -> void:
+	statuses[id] = maxf(statuses.get(id, 0.0), duration)
+
+
+func has_status(id: String) -> bool:
+	return statuses.get(id, 0.0) > 0.0
+
+
+func stack_count(id: String) -> int:
+	return stacks.get(id, 0)
+
+
+## 叠 n 层，duration 秒内没有再叠就全部消失；返回叠完后的层数
+func add_stacks(id: String, n: int, duration: float = 4.0) -> int:
+	stacks[id] = stacks.get(id, 0) + n
+	statuses[id] = duration
+	return stacks[id]
+
+
+func clear_stacks(id: String) -> void:
+	stacks.erase(id)
+	statuses.erase(id)
+
+
+## 灼烧：离开火焰后继续每秒掉 dps 点血，持续 duration 秒
+func burn(dps: float, duration: float) -> void:
+	burn_dps = maxf(burn_dps if has_status("burn") else 0.0, dps)
+	add_status("burn", duration)
+
+
+## 定身 / 麻痹 / 冻结：不移动、不攻击。精英和 Boss 只受一部分影响
+func stun(duration: float) -> void:
+	_frozen_time = maxf(_frozen_time, duration * control_mult())
+	queue_redraw()
+
+
+func control_mult() -> float:
+	return 0.6 if is_elite else 1.0
+
+
+func is_frozen() -> bool:
+	return _frozen_time > 0.0
+
+
+## 霜冻：每层减速，叠满冻结
+func add_frost(n: int) -> void:
+	if add_stacks("frost", n) >= FROST_FREEZE:
+		clear_stacks("frost")
+		stun(FROST_FREEZE_TIME)
+		add_status("frozen", FROST_FREEZE_TIME * control_mult())
+
+
+## 迷惑：去咬身边的同伴，不再攻击玩家（Boss 不受影响）
+func charm(duration: float) -> void:
+	add_status("charm", duration)
+
+
+## 持续伤害（灼烧、电网）：不播受击音效
+func take_dot(amount: float) -> void:
+	_quiet = true
+	take_damage(amount)
+	_quiet = false
+
+
+## 移动速度倍率：环境减速 × 攻击附带的减速 / 霜冻（取最强的）
+func move_mult() -> float:
+	return slow * (1.0 - maxf(_hit_slow, minf(0.8, stack_count("frost") * FROST_SLOW)))
+
+
+func _tick_statuses(delta: float) -> void:
+	if statuses.is_empty():
+		return
+	for id: String in statuses.keys():
+		statuses[id] -= delta
+		if statuses[id] <= 0.0:
+			statuses.erase(id)
+			stacks.erase(id)
+	if has_status("burn"):
+		_burn_acc += burn_dps * delta
+		_burn_tick -= delta
+		if _burn_tick <= 0.0:
+			_burn_tick = 0.5
+			take_dot(_burn_acc * (2.0 if GodPower.has_fusion("venom") and is_frozen() else 1.0))  # 融合技「毒蛇之刑」
+			_burn_acc = 0.0
 
 
 ## 用 EnemyDB 里的数据初始化。hp_scale、damage_scale 让后期的怪更肉、更疼，elite 表示精英怪
@@ -170,7 +283,8 @@ func _physics_process(delta: float) -> void:
 	if _flash_time > 0.0:
 		_flash_time -= delta
 		queue_redraw()
-	if not is_instance_valid(target) or behavior == "still":
+	_tick_statuses(delta)
+	if _dead or not is_instance_valid(target) or behavior == "still":
 		return
 	if _frozen_time > 0.0:  # 被定住时不移动、不攻击
 		_frozen_time -= delta
@@ -178,7 +292,14 @@ func _physics_process(delta: float) -> void:
 			queue_redraw()
 		return
 
-	var to_target := target.global_position - global_position
+	var player_dist := global_position.distance_to(target.global_position)
+	if has_status("charm"):
+		_charmed_move(delta)
+		return
+	var goal := target.global_position
+	if is_instance_valid(lure) and lure.global_position.distance_to(global_position) < 320.0:
+		goal = lure.global_position
+	var to_target := goal - global_position
 	var dist := to_target.length()
 	var dir := to_target / dist if dist > 0.01 else Vector2.ZERO
 
@@ -197,7 +318,7 @@ func _physics_process(delta: float) -> void:
 	_hit_slow_time -= delta
 	if _hit_slow_time <= 0.0:
 		_hit_slow = 0.0
-	position += move * speed * slow * (1.0 - _hit_slow) * delta + _knockback * delta + (Vector2.ZERO if ghost else _separation())
+	position += move * speed * move_mult() * delta + _knockback * delta + (Vector2.ZERO if ghost else _separation())
 	_knockback *= exp(-KNOCKBACK_DECAY * delta)
 	_update_attack(dir, dist, delta)
 	if _sprite:
@@ -208,8 +329,34 @@ func _physics_process(delta: float) -> void:
 		var lift := Vector2(0, -5.0) if _casting else Vector2.ZERO  # 聚能时浮起
 		SpriteVisual.animate(_sprite, _anim_t, maxf(0.25, move.length()), gait, move.x, _attack_offset() + lift)  # 站着不动时也轻微呼吸
 
-	if dist < radius + Player.RADIUS:
+	if player_dist < radius + Player.RADIUS:
 		target.take_damage(contact_damage)
+
+
+## 被迷惑：走向最近的同伴去咬它
+func _charmed_move(delta: float) -> void:
+	_charm_cd -= delta
+	var victim: Enemy = null
+	var best := 260.0
+	for node in get_tree().get_nodes_in_group("enemies"):
+		var other := node as Enemy
+		if other == self:
+			continue
+		var d := other.global_position.distance_to(global_position)
+		if d < best:
+			best = d
+			victim = other
+	if victim == null:
+		return
+	position += global_position.direction_to(victim.global_position) * speed * move_mult() * delta + _knockback * delta
+	_knockback *= exp(-KNOCKBACK_DECAY * delta)
+	if best < radius + victim.radius + 4.0 and _charm_cd <= 0.0:
+		_charm_cd = CHARM_HIT_EVERY
+		victim.take_damage(contact_damage * 2.0)
+		FxLayer.mark(victim.global_position, randf() * TAU, victim.radius * 2.0, Color(1.0, 0.5, 0.8), "bite")
+	if _sprite:
+		_anim_t += delta
+		SpriteVisual.animate(_sprite, _anim_t, 1.0, gait, victim.global_position.x - global_position.x)
 
 
 ## 近身攻击动作（纯表现，伤害仍按接触计算）：靠近玩家时后撤蓄力、前扑，出手瞬间播放特效
@@ -357,6 +504,12 @@ func apply_slow(amount: float, duration: float) -> void:
 func take_damage(amount: float, knockback: Vector2 = Vector2.ZERO, crit: bool = false) -> void:
 	if _dead:
 		return
+	if amount > 0.0:
+		if has_status("gold_net"):
+			amount *= 1.0 + GOLD_NET_BONUS
+		if not crit and crit_chance > 0.0 and randf() < crit_chance:
+			amount *= 2.0
+			crit = true
 	if dodge > 0.0 and amount > 0.0 and _dodge_cd <= 0.0 and randf() < dodge:  # 黑暗精灵：侧身闪开
 		_dodge_cd = EnemyDB.DODGE_COOLDOWN
 		var side := Vector2.from_angle(randf() * TAU) if not is_instance_valid(target) else (target.global_position - global_position).orthogonal().normalized()
@@ -368,7 +521,8 @@ func take_damage(amount: float, knockback: Vector2 = Vector2.ZERO, crit: bool = 
 	_flash_time = 0.08
 	queue_redraw()
 	if amount > 0.0:  # 只击退不造成伤害时（例如复活震开）不显示数字
-		Audio.sfx("enemy_hit", -4.0)
+		if not _quiet:
+			Audio.sfx("enemy_hit", -4.0)
 		FxLayer.damage_number(global_position + Vector2(randf_range(-8, 8), -radius - 4), amount, crit)
 	if hp <= 0.0:
 		_die()
@@ -398,12 +552,14 @@ func _die() -> void:
 		remains.position += position
 		remains.z_index = -1
 		get_parent().call_deferred("add_child", remains)
+	get_tree().call_group("god_powers", "on_enemy_died", self)
 	killed.emit(self)
 	queue_free()
 
 
 func _draw() -> void:
-	var tint := Color.WHITE
+	draw_status()
+	var tint := status_tint()
 	if _flash_time > 0.0:
 		tint = Color(3, 3, 3)  # 受击闪白
 	elif _frozen_time > 0.0:
@@ -441,3 +597,37 @@ func _draw() -> void:
 	draw_circle(Vector2.ZERO, radius * pop, color * tint if _flash_time <= 0.0 else Color.WHITE)
 	if behavior == "ranged" or behavior == "drain":
 		draw_circle(Vector2.ZERO, radius * 0.45, Color(1, 1, 1, 0.8))  # 远程敌人中间有个亮核
+
+
+## 状态带来的颜色：灼烧偏橙、霜冻偏蓝、迷惑偏粉
+func status_tint() -> Color:
+	if statuses.is_empty():
+		return Color.WHITE
+	if has_status("charm"):
+		return Color(1.4, 0.7, 1.2)
+	if has_status("burn"):
+		return Color(1.35, 0.85, 0.6)
+	var frost := stack_count("frost")
+	if frost > 0:
+		return Color.WHITE.lerp(Color(0.7, 0.85, 1.4), frost / float(FROST_FREEZE))
+	return Color.WHITE
+
+
+## 状态标记画在脚下和头顶：溺水的水圈、光痕的金圈、感电的电光、符文印记的点
+func draw_status() -> void:
+	if statuses.is_empty():
+		return
+	var feet := Vector2(0, radius * 0.7)
+	if has_status("drown"):
+		draw_arc(feet, radius + 4.0, 0.0, TAU, 20, Color(0.35, 0.65, 1.0, 0.7), 2.0)
+	if has_status("light"):
+		draw_arc(feet, radius + 7.0, 0.0, TAU, 20, Color(1.0, 0.9, 0.5, 0.6), 1.5)
+	if has_status("chosen"):
+		draw_arc(feet, radius + 2.0, PI, TAU, 12, Color(1.0, 0.8, 0.35, 0.7), 2.0)
+	var top := Vector2(0, -radius - 10.0)
+	if has_status("shock"):
+		var t := Time.get_ticks_msec() * 0.02
+		draw_polyline(PackedVector2Array([top + Vector2(-6, -2), top + Vector2(-1, 2 + sin(t)), top + Vector2(2, -3), top + Vector2(6, 1)]), Color(0.6, 0.85, 1.0, 0.9), 1.5)
+	var runes := stack_count("rune")
+	for i in runes:
+		draw_circle(top + Vector2((i - (runes - 1) * 0.5) * 6.0, -6.0), 2.0, Color(0.8, 0.6, 1.0))

@@ -40,7 +40,7 @@ func _process(delta: float) -> void:
 	var target := _nearest_in_reach(enemies)
 	if target == null:
 		return  # 攻击范围内没有敌人就不出刀，冷却保持就绪，敌人一进入范围立刻出刀
-	_timer = cooldown * player.cooldown_mult
+	_timer = cooldown * player.weapon_cooldown()
 	_slash(enemies, target)
 
 

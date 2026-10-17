@@ -229,18 +229,40 @@ func _sections(category: String) -> Array:
 			for god_id: String in Gods.ALL:
 				var god: Dictionary = Gods.ALL[god_id]
 				var title := tr("神明 · %s · %s") % [tr(god.name), tr(god.title)]
-				sections.append({"title": title, "items": _upgrade_items(func(info: Dictionary) -> bool: return info.god == god_id, title, god.color)})
+				sections.append({"title": title, "items": _upgrade_items(func(info: Dictionary) -> bool: return info.get("god", "") == god_id, title, god.color)})
 			sections.append({"title": tr("通用属性"), "items": _upgrade_items(func(info: Dictionary) -> bool: return info.kind == "stat", tr("通用属性"), DIM)})
+			var fusions := []
+			for fusion: String in Gods.FUSIONS:
+				var info := UpgradeDB.get_info("fusion_" + fusion)
+				var pair := "%s + %s" % [tr(Gods.ALL[info.gods[0]].name), tr(Gods.ALL[info.gods[1]].name)]
+				fusions.append(_item("upgrades", "fusion_" + fusion, tr(info.name), tr("融合技 · ") + pair, tr(info.desc),
+					tr("两位神都觉醒后出现"), "", Gods.ALL[info.gods[0]].color, "还没有获得过。"))
+			sections.append({"title": tr("融合技"), "items": fusions})
 	return sections
 
 
 func _upgrade_items(belongs: Callable, subtitle: String, color: Color) -> Array:
 	var items := []
 	for id: String in UpgradeDB.UPGRADES:
-		var info: Dictionary = UpgradeDB.UPGRADES[id]
-		if belongs.call(info):
-			var extra := tr("神之觉醒：信仰积满后出现") if info.get("awaken", false) else (tr("最多选择 %d 次") % info.max)
-			items.append(_item("upgrades", id, tr(info.name), subtitle, tr(info.desc), extra, "", color, "还没有获得过。"))
+		var info := UpgradeDB.get_info(id)
+		if not belongs.call(info):
+			continue
+		var extra: String
+		match info.kind:
+			"skill":
+				extra = tr("神术：选择这位神时获得")
+			"path":
+				extra = tr("质变：信仰达到 %d 时三选一") % UpgradeDB.FAITH_PATH
+			"awaken":
+				extra = tr("神之觉醒：选了「%s」后，信仰达到 %d 时出现") % [tr(UpgradeDB.UPGRADES[info.path].name), UpgradeDB.FAITH_AWAKEN]
+			_:
+				extra = tr("最多选择 %d 次") % info.max
+				if info.has("values"):
+					var values: Array[String] = []
+					for v: float in info.values:
+						values.append(str(int(v)) if is_equal_approx(v, roundf(v)) else str(v))
+					extra += tr("　普通 / 稀有 / 史诗 / 传说：%s") % " / ".join(values)
+		items.append(_item("upgrades", id, tr(info.name), subtitle, UpgradeDB.describe(id, 0), extra, "", color, "还没有获得过。"))
 	return items
 
 

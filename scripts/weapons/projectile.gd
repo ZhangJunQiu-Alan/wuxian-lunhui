@@ -14,6 +14,7 @@ var size := 1.0
 var texture: Texture2D  # 有素材时画素材帧条（朝右），没有就画菱形
 var frames := 1
 var anchor := Vector2.ZERO
+var on_hit: Callable  # 命中敌人后调用 on_hit(敌人, 这发子弹)，神术用来挂神印
 var _time := 0.0
 
 
@@ -45,6 +46,8 @@ func _on_area_entered(area: Area2D) -> void:
 	if enemy == null or pierce <= 0:
 		return
 	enemy.take_damage(damage, direction * 120.0, crit)
+	if on_hit.is_valid():
+		on_hit.call(enemy, self)
 	if split_on_hit:
 		split_on_hit = false
 		for angle in [-0.45, 0.45]:  # 向两侧各分出一发，继续飞行

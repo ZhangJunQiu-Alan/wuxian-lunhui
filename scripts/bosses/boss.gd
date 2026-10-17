@@ -71,6 +71,7 @@ func change_state(new_state: String) -> void:
 func _physics_process(delta: float) -> void:
 	if _flash_time > 0.0:
 		_flash_time -= delta
+	_tick_statuses(delta)
 	if _dead or not is_instance_valid(target):  # 同一帧里被打死后不再行动
 		return
 	if _frozen_time > 0.0:  # 次元斩、时间暂停对 Boss 同样有效
@@ -89,6 +90,15 @@ func _physics_process(delta: float) -> void:
 		_update_action()
 	if not untouchable and global_position.distance_to(target.global_position) < radius + Player.RADIUS:
 		target.take_damage(contact_damage)
+
+
+## Boss 只受 25% 的控制时间，也不会被迷惑
+func control_mult() -> float:
+	return 0.25
+
+
+func charm(_duration: float) -> void:
+	pass
 
 
 ## 钻到地下（或回到地面）：离开敌人组，武器就不会再瞄准它
@@ -171,7 +181,7 @@ func chase(delta: float, speed_mult: float = 1.0) -> void:
 	var to := target.global_position
 	if MapLayer.current:  # 隔着冥河时先走到过河点
 		to = MapLayer.current.waypoint(global_position, to)
-	position += global_position.direction_to(to) * speed * speed_mult * slow * delta
+	position += global_position.direction_to(to) * speed * speed_mult * move_mult() * delta
 
 
 func take_damage(amount: float, _knockback: Vector2 = Vector2.ZERO, crit: bool = false) -> void:
@@ -188,6 +198,7 @@ func _die() -> void:
 	FxLayer.burst(global_position, Color(1.0, 0.85, 0.4), 40, 240.0, 4.0)
 	Audio.sfx("boss_death")
 	target.shake(14.0, 0.5)
+	get_tree().call_group("god_powers", "on_enemy_died", self)
 	defeated.emit(self)
 	killed.emit(self)
 	queue_free()
@@ -195,7 +206,9 @@ func _die() -> void:
 
 func _draw() -> void:
 	_draw_telegraph()
-	var tint := Color(3, 3, 3) if _flash_time > 0.0 else Color.WHITE
+	if not untouchable:
+		draw_status()
+	var tint := Color(3, 3, 3) if _flash_time > 0.0 else status_tint()
 	if _frozen_time > 0.0:
 		tint = Color(0.6, 0.75, 1.3)
 	if untouchable:

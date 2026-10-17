@@ -58,9 +58,8 @@ func _reward() -> String:
 	game.add_story_points(1)
 	game.add_reward_points(100)
 	var text := tr("支线剧情点 +1，奖励点 +100")
-	if player.faith.get("loki", 0) > 0:
-		player.faith["loki"] = mini(player.faith["loki"] + 1, UpgradeDB.FAITH_MAX)
-		game.hud.set_faith(player.faith)
+	if player.faith.has("loki"):
+		game.add_faith("loki", 1)
 		text += tr("，洛基的信仰 +1")
 	return text
 

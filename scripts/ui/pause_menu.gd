@@ -118,16 +118,16 @@ func _build_text() -> String:
 	if not p.faith.is_empty():
 		var faiths: Array[String] = []
 		for god_id: String in p.faith:
-			faiths.append("%s %s" % [tr(Gods.ALL[god_id].name), LevelUpPanel.faith_bar(p.faith[god_id])])
+			faiths.append(LevelUpPanel.faith_line(p, god_id))
 		lines.append(tr("信仰　") + tr("　").join(faiths))
 	lines.append("")
-	for kind in [["weapon", tr("基础武器")], ["god", tr("神明")], ["stat", tr("通用属性")]]:
+	for kind in [["weapon", tr("基础武器")], ["boon", tr("神明强化")], ["stat", tr("通用属性")], ["fusion", tr("融合技")]]:
 		var names: Array[String] = []
 		for id: String in p.upgrade_levels:
 			var info := UpgradeDB.get_info(id)
 			if info.kind == kind[0]:
 				var lv: int = p.upgrade_levels[id]
-				names.append(tr(info.name) + ("" if info.max <= 1 else " Lv%d" % lv))
+				names.append(tr(info.name) + ("" if info.get("max", 1) <= 1 else " Lv%d" % lv))
 		if not names.is_empty():
 			lines.append(tr("%s：%s") % [kind[1], tr("、").join(names)])
 	if p.upgrade_levels.is_empty():

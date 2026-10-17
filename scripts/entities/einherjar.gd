@@ -18,7 +18,8 @@ const COLOR := Color(1.0, 0.85, 0.5)
 
 var player: Player
 var power := 1.0  # 伤害跟着敌人血量一起成长，由支线设置
-var _life := DURATION
+var life := DURATION  # 存在多久（奥丁的英灵、澜的溺亡者会改短），INF 表示不会消失
+var _life := 0.0
 var _swing_cd := 0.0
 var _swing_t := 0.0
 var _swing_dir := Vector2.RIGHT
@@ -26,6 +27,7 @@ var _time := 0.0
 
 
 func _ready() -> void:
+	_life = life
 	FxLayer.burst(global_position, COLOR, 30, 220.0)
 
 

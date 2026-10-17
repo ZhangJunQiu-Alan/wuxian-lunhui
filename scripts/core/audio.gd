@@ -60,6 +60,12 @@ static func sfx(sound: String, volume_db: float = 0.0, pitch: float = 0.06) -> v
 	_shared()._play_sfx(sound, volume_db, pitch)
 
 
+## 播放 sound；还没有这个素材时改放 fallback（空字符串 = 不放）。新神术的音效先借用旧音效，素材到了自动换
+static func sfx_or(sound: String, fallback: String, volume_db: float = 0.0, pitch: float = 0.06) -> void:
+	var audio := _shared()
+	audio._play_sfx(sound if not audio._find(sound, SFX_DIR, ["wav", "ogg"]).is_empty() or fallback == "" else fallback, volume_db, pitch)
+
+
 static func music(track: String) -> void:
 	_shared()._play_music(track)
 

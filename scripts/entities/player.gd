@@ -43,8 +43,14 @@ var shield_time := 0.0    # 无敌剩余时间（刺客「入阵曲」），和�
 
 # 全局加成，所有武器和技能共享
 var damage_mult := 1.0
-var cooldown_mult := 1.0
+var cooldown_mult := 1.0         # 所有攻击（永久强化「专注」、支线奖励）
+var weapon_cooldown_mult := 1.0  # 只管基础武器（通用卡「急速」）
+var god_cooldown_mult := 1.0     # 只管神术（通用卡「冷却缩短」）
 var xp_mult := 1.0
+var luck := 0.0           # 抽到高稀有度卡的几率加成（%）
+var ward := 0             # 誓言护盾层数（巴德尔「万物之誓」）：每层挡一次伤害
+var immune_time := 0.0    # 无敌剩余时间（巴德尔觉醒「无伤之神」）
+var slow_immune := false  # 免疫减速（斯卡蒂觉醒）
 
 var level := 1
 var xp := 0.0
@@ -58,18 +64,13 @@ var ult_cost := 50.0
 
 var upgrade_levels := {}  # 升级 id -> 已选次数
 var faith := {}           # 神明 id -> 信仰值
+var gods := {}            # 神明 id -> 神术节点（GodPower）
 
 # 角色的基础武器（只有其中一个不为 null）
 var katana: Katana
 var revolver: Revolver
 var blades: TwinBlades
 var nova: ArcaneNova
-
-# 神明技能，还没获得时为 null
-var lightning: LightningStrike
-var rune_bolt: RuneBolt
-var fire_aura: FireAura
-var feathers: FeatherOrbit
 
 var _invincible_time := 0.0
 var _fear_time := 0.0  # 恐惧：不受控制地远离 _fear_from
@@ -154,7 +155,8 @@ func _physics_process(delta: float) -> void:
 	if _dash_t >= 0.0:
 		_update_dash(delta)
 	else:
-		velocity = dir * move_speed * speed_mult * (1.3 if frenzy_time > 0.0 else 1.0)  # 狂野西部秀：移速 +30%
+		var slowed := maxf(speed_mult, 1.0) if slow_immune else speed_mult
+		velocity = dir * move_speed * slowed * (1.3 if frenzy_time > 0.0 else 1.0)  # 狂野西部秀：移速 +30%
 		move_and_slide()
 		position = MapLayer.push_out(Game.clamp_to_map(position, RADIUS), RADIUS)
 
@@ -170,6 +172,7 @@ func _physics_process(delta: float) -> void:
 func _tick_timers(delta: float) -> void:
 	frenzy_time = maxf(0.0, frenzy_time - delta)
 	shield_time = maxf(0.0, shield_time - delta)
+	immune_time = maxf(0.0, immune_time - delta)
 	_hurt_time = maxf(0.0, _hurt_time - delta)
 	_attack_time = maxf(0.0, _attack_time - delta)
 	_dash_cooldown = maxf(0.0, _dash_cooldown - delta)
@@ -270,6 +273,7 @@ func try_dash() -> void:
 	FxLayer.burst(global_position, Color(0.75, 0.9, 1.0), 10, 110.0, 2.5)
 	for i in 6:  # 起步的气流向身后喷出
 		FxLayer.burst(global_position - facing * 10.0, Color(0.85, 0.95, 1.0, 0.8), 1, 60.0 + i * 25.0, 2.0)
+	get_tree().call_group("god_powers", "on_dash")
 
 
 func _update_dash(delta: float) -> void:
@@ -359,10 +363,14 @@ func _update_shake(delta: float) -> void:
 
 
 func take_damage(amount: float) -> void:
-	if is_dead or _invincible_time > 0.0 or shield_time > 0.0 or _dash_time > 0.0:
+	if is_dead or _invincible_time > 0.0 or shield_time > 0.0 or _dash_time > 0.0 or immune_time > 0.0:
 		return
 	_invincible_time = INVINCIBLE_DURATION
 	if randf() < dodge_chance:
+		return
+	if ward > 0:  # 誓言护盾挡下这一次
+		ward -= 1
+		FxLayer.burst(global_position, Color(1.0, 0.92, 0.6), 12, 140.0, 3.0)
 		return
 	hp = maxf(0.0, hp - amount)
 	_hurt_time = 0.25
@@ -372,6 +380,28 @@ func take_damage(amount: float) -> void:
 	if hp <= 0.0:
 		is_dead = true
 		died.emit()
+	else:
+		get_tree().call_group("god_powers", "on_player_hurt")
+
+
+## 信仰一位新的神：信仰 1，获得他的神术
+func add_god(god_id: String) -> void:
+	faith[god_id] = 1
+	var power := GodPower.create(god_id)
+	gods[god_id] = power
+	add_child(power)
+
+
+## 基础武器的冷却倍率
+func weapon_cooldown() -> float:
+	return cooldown_mult * weapon_cooldown_mult
+
+
+## 基础武器伤害 +bonus（没有数值的武器卡抽到高稀有度时的附带加成）
+func weapon_damage_bonus(bonus: float) -> void:
+	for weapon: Node in [katana, revolver, blades, nova]:
+		if weapon:
+			weapon.damage *= 1.0 + bonus
 
 
 ## 持续伤害（吸血、冥雾）：不触发受伤后的无敌和闪烁，闪避也躲不掉

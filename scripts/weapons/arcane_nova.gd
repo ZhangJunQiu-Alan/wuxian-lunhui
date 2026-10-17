@@ -24,7 +24,7 @@ func _ready() -> void:
 func _process(delta: float) -> void:
 	_timer -= delta
 	if _timer <= 0.0 and _enemy_in_range():
-		_timer = cooldown * player.cooldown_mult
+		_timer = cooldown * player.weapon_cooldown()
 		_waves.append({"t": 0.0, "hit": {}})
 		player.play_attack(player.facing, 0.0, _timer)
 		Audio.sfx("nova_cast")
