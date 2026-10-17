@@ -42,8 +42,6 @@ func _ready() -> void:
 	_slider(grid, "主音量", "master_volume")
 	_slider(grid, "音乐", "music_volume")
 	_slider(grid, "音效", "sfx_volume")
-	var note := _title("音乐和音效素材还没有加入，加入后会按这里的音量播放", 12, Color(1, 1, 1, 0.4))
-	box.add_child(note)
 
 	box.add_child(_title("画面", 15, Color(0.7, 0.73, 0.8)))
 	grid = _grid(box)
