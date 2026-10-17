@@ -299,7 +299,7 @@ func _ranged_move(dir: Vector2, dist: float, delta: float) -> Vector2:
 ## 吸血：进入射程后停下，光束连着玩家持续掉血，自己回血
 func _drain_move(dir: Vector2, dist: float, delta: float) -> Vector2:
 	var was := _draining
-	_draining = dist <= shoot_range
+	_draining = dist <= shoot_range and not Stonehenge.shields(get_tree(), target.global_position)  # 巨石阵挡住吸血
 	if _draining:
 		target.take_dot(projectile_damage * delta)
 		hp = minf(max_hp, hp + projectile_damage * delta)

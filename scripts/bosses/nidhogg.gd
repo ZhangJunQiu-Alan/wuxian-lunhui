@@ -146,7 +146,8 @@ func take_damage(amount: float, knockback: Vector2 = Vector2.ZERO, crit: bool = 
 func _breathe() -> void:
 	Audio.sfx("boss_slam", -4.0)
 	var offset := target.global_position - global_position
-	if offset.length() < BREATH_RANGE + Player.RADIUS and absf(_breath_dir.angle_to(offset)) < BREATH_HALF_ANGLE:
+	if offset.length() < BREATH_RANGE + Player.RADIUS and absf(_breath_dir.angle_to(offset)) < BREATH_HALF_ANGLE \
+			and not Stonehenge.shields(get_tree(), target.global_position):  # 法师的巨石阵挡得住毒息
 		target.take_damage(BREATH_DAMAGE)
 	for i in 3:
 		var at := global_position + _breath_dir.rotated(randf_range(-0.3, 0.3)) * (110.0 + i * 85.0)

@@ -3,6 +3,7 @@ extends Node2D
 ## 法师的大招「巨石阵」
 ## 1. 一圈巨石从天而降，落地时重创石阵内和石阵附近的敌人，并把它们震开
 ## 2. 之后 8 秒，敌人无法进入石阵（被挡在圈外）；玩家可以自由进出
+## 3. 结界挡下所有远程攻击：飞进圈内的子弹（冰锥、箭、Boss 的弹幕）被击碎，圈外的幽魂吸不到圈内玩家的血
 
 const RADIUS := 140.0
 const STONES := 10
@@ -27,6 +28,16 @@ static func cast(caster: Player) -> void:
 
 func _ready() -> void:
 	z_index = -1  # 石阵在地面上，画在敌人和玩家下面
+	add_to_group("stonehenge")
+
+
+## pos 是否在某个已经落地的巨石阵里（远程攻击打不进去）
+static func shields(tree: SceneTree, pos: Vector2) -> bool:
+	for node in tree.get_nodes_in_group("stonehenge"):
+		var henge := node as Stonehenge
+		if henge._landed and henge.global_position.distance_to(pos) < RADIUS:
+			return true
+	return false
 
 
 func _process(delta: float) -> void:
@@ -54,6 +65,10 @@ func _physics_process(_delta: float) -> void:
 			if offset == Vector2.ZERO:
 				offset = Vector2.RIGHT
 			enemy.global_position = global_position + offset.normalized() * limit
+	for shot in get_tree().get_nodes_in_group("enemy_projectiles"):  # 挡下飞进来的子弹
+		if (shot as Node2D).global_position.distance_to(global_position) < RADIUS:
+			FxLayer.burst(shot.global_position, MAGIC_COLOR, 5, 90.0, 2.5)
+			shot.queue_free()
 
 
 func _stone_offset(i: int) -> Vector2:
