@@ -60,7 +60,9 @@ const ALL := {
 
 ## 精英怪的属性倍率
 const ELITE_HP := 6.0
-const ELITE_SIZE := 1.4
+const ELITE_SIZE := 1.4    # 碰撞半径和影子
+const ELITE_VISUAL := 1.2  # 画面上比普通怪大多少（像素画平时只按整数倍放大，精英怪单独再放大）
+const ELITE_SPEED := 1.2
 const ELITE_DAMAGE := 1.5
 const ELITE_XP := 15
 const DODGE_COOLDOWN := 2.0

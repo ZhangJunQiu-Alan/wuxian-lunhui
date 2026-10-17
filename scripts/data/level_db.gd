@@ -6,7 +6,7 @@ class_name LevelDB
 ##   elite_* 精英怪：从 elite_from 秒开始，每 elite_every 秒出现一只，
 ##           从 elite_pool 里挑当前阶段已经出现的敌人种类
 ##   events  定时事件：ring = 在玩家周围刷出一圈敌人
-##   bosses  Boss 出场时间和 id（id 对应 BossDB）；击败 final_boss 即通关，显示 clear_text
+##   bosses  Boss 出场时间和 id（id 对应 BossDB）；上一个 Boss 还活着时，下一个等它被击败再出场；全部击败即通关，显示 clear_text
 ##   quest_slots 支线出现的时间点（有 Boss 在场时会等 Boss 被击败），quests 是支线池（id 对应 QuestDB），随机顺序
 ##   hidden_quests 隐藏支线：开局就藏在地标里，hidden_from 秒之后才能触发；到了 hint 秒还没被发现，主神给一句提示
 ##   map     固定地图：size 是场地大小（中心在原点，玩家从中心出发），玩家和敌人都不能离开
@@ -38,45 +38,44 @@ const NORSE_1 := {
 			{"id": "lake", "name": "冰湖", "pos": Vector2(1350, 1100), "radius": 650.0, "quest": "ice_warriors", "hidden": "fishing"},
 		],
 	},
-	"hp_growth": 180.0,   # 每过这么多秒，敌人血量多 100%
+	"boss_hp_growth": 116.0,  # Boss 的血量：每过这么多秒多 100%（小怪的成长见 game.gd 的 enemy_hp_scale）
 	"max_enemies": 350,   # 同时存在的敌人上限，防止卡顿
 	"waves": [
 		{"from": 0, "interval": 1.2, "weights": {"draugr": 1}},
-		{"from": 30, "interval": 0.9, "weights": {"draugr": 3, "wolf": 2}},
-		{"from": 90, "interval": 0.7, "weights": {"draugr": 3, "wolf": 2, "ice_spirit": 1}},
-		{"from": 180, "interval": 0.55, "weights": {"draugr": 3, "wolf": 2, "ice_spirit": 2, "frost_giant": 1}},
-		{"from": 300, "interval": 0.45, "weights": {"draugr": 2, "wolf": 3, "ice_spirit": 2, "frost_giant": 1}},
-		{"from": 480, "interval": 0.35, "weights": {"draugr": 3, "wolf": 3, "ice_spirit": 2, "frost_giant": 1}},
-		{"from": 660, "interval": 0.28, "weights": {"draugr": 3, "wolf": 3, "ice_spirit": 3, "frost_giant": 1}},
+		{"from": 20, "interval": 0.9, "weights": {"draugr": 3, "wolf": 2}},
+		{"from": 60, "interval": 0.7, "weights": {"draugr": 3, "wolf": 2, "ice_spirit": 1}},
+		{"from": 120, "interval": 0.55, "weights": {"draugr": 3, "wolf": 2, "ice_spirit": 2, "frost_giant": 1}},
+		{"from": 200, "interval": 0.45, "weights": {"draugr": 2, "wolf": 3, "ice_spirit": 2, "frost_giant": 1}},
+		{"from": 320, "interval": 0.35, "weights": {"draugr": 3, "wolf": 3, "ice_spirit": 2, "frost_giant": 1}},
+		{"from": 440, "interval": 0.28, "weights": {"draugr": 3, "wolf": 3, "ice_spirit": 3, "frost_giant": 1}},
 	],
-	"elite_from": 60.0,
-	"elite_every": 60.0,
+	"elite_from": 40.0,
+	"elite_every": 40.0,
 	"elite_pool": ["draugr", "ice_spirit", "frost_giant"],
-	# Boss 出场表。击败 final_boss 即通关
+	# Boss 出场表（一关 10 分钟：3、6、9 分钟各一个）。全部击败即通关
 	"bosses": [
-		{"time": 300.0, "id": "skoll"},
-		{"time": 600.0, "id": "hati"},
-		{"time": 840.0, "id": "hrym"},
+		{"time": 180.0, "id": "skoll"},
+		{"time": 360.0, "id": "hati"},
+		{"time": 540.0, "id": "hrym"},
 	],
-	"final_boss": "hrym",
 	"clear_reward": 300,  # 通关额外奖励点
-	"quest_slots": [150.0, 450.0, 720.0],
+	"quest_slots": [100.0, 270.0, 450.0],
 	"quests": ["bonfire", "ravens", "valkyrie", "nails", "ice_warriors", "priests", "cold_wave", "fate", "ember"],
 	"hidden_from": 30.0,
 	"hidden_quests": [
-		{"id": "fishing", "hint": 100.0},
-		{"id": "runes", "hint": 260.0},
-		{"id": "sea_giant", "hint": 380.0},
-		{"id": "einherjar", "hint": 540.0},
+		{"id": "fishing", "hint": 70.0},
+		{"id": "runes", "hint": 170.0},
+		{"id": "sea_giant", "hint": 250.0},
+		{"id": "einherjar", "hint": 330.0},
 	],
 	"clear_text": "远方传来号角声。那是神域守门人海姆达尔吹响了加拉尔号角。\n诸神黄昏，正式开始。",
 	"events": [
-		{"time": 75.0, "type": "ring", "enemy": "wolf", "count": 12, "text": "狼群包围！"},
-		{"time": 200.0, "type": "ring", "enemy": "draugr", "count": 20, "text": "亡者从墓丘中爬出！"},
-		{"time": 270.0, "type": "ring", "enemy": "wolf", "count": 20, "text": "狼群包围！"},
-		{"time": 420.0, "type": "ring", "enemy": "frost_giant", "count": 8, "text": "霜巨人的先锋到了！"},
-		{"time": 570.0, "type": "ring", "enemy": "wolf", "count": 30, "text": "狼群包围！"},
-		{"time": 720.0, "type": "ring", "enemy": "ice_spirit", "count": 24, "text": "暴风雪中浮现出无数精魂！"},
+		{"time": 50.0, "type": "ring", "enemy": "wolf", "count": 12, "text": "狼群包围！"},
+		{"time": 130.0, "type": "ring", "enemy": "draugr", "count": 20, "text": "亡者从墓丘中爬出！"},
+		{"time": 230.0, "type": "ring", "enemy": "wolf", "count": 20, "text": "狼群包围！"},
+		{"time": 300.0, "type": "ring", "enemy": "frost_giant", "count": 8, "text": "霜巨人的先锋到了！"},
+		{"time": 410.0, "type": "ring", "enemy": "wolf", "count": 30, "text": "狼群包围！"},
+		{"time": 480.0, "type": "ring", "enemy": "ice_spirit", "count": 24, "text": "暴风雪中浮现出无数精魂！"},
 	],
 }
 
@@ -104,42 +103,41 @@ const NORSE_2 := {
 			{"id": "ford", "name": "结冰的浅滩", "pos": Vector2(-1600, -800), "radius": 250.0, "hidden": "river_sword"},
 		],
 	},
-	"hp_growth": 165.0,
+	"boss_hp_growth": 106.0,
 	"max_enemies": 350,
 	"waves": [
 		{"from": 0, "interval": 3.0, "weights": {"dead": 1}},
-		{"from": 40, "interval": 1.6, "weights": {"dead": 1, "dark_elf": 1}},
-		{"from": 100, "interval": 1.2, "weights": {"dead": 1, "dark_elf": 2, "mist_wraith": 1}},
-		{"from": 180, "interval": 0.95, "weights": {"dead": 1, "dark_elf": 2, "mist_wraith": 1, "nail_golem": 1}},
-		{"from": 300, "interval": 0.8, "weights": {"dead": 1, "dark_elf": 2, "mist_wraith": 2, "nail_golem": 1}},
-		{"from": 480, "interval": 0.65, "weights": {"dead": 1, "dark_elf": 3, "mist_wraith": 2, "nail_golem": 2}},
-		{"from": 660, "interval": 0.5, "weights": {"dead": 2, "dark_elf": 3, "mist_wraith": 2, "nail_golem": 2}},
+		{"from": 25, "interval": 1.6, "weights": {"dead": 1, "dark_elf": 1}},
+		{"from": 65, "interval": 1.2, "weights": {"dead": 1, "dark_elf": 2, "mist_wraith": 1}},
+		{"from": 120, "interval": 0.95, "weights": {"dead": 1, "dark_elf": 2, "mist_wraith": 1, "nail_golem": 1}},
+		{"from": 200, "interval": 0.8, "weights": {"dead": 1, "dark_elf": 2, "mist_wraith": 2, "nail_golem": 1}},
+		{"from": 320, "interval": 0.65, "weights": {"dead": 1, "dark_elf": 3, "mist_wraith": 2, "nail_golem": 2}},
+		{"from": 440, "interval": 0.5, "weights": {"dead": 2, "dark_elf": 3, "mist_wraith": 2, "nail_golem": 2}},
 	],
-	"elite_from": 60.0,
-	"elite_every": 55.0,
+	"elite_from": 40.0,
+	"elite_every": 37.0,
 	"elite_pool": ["dead", "dark_elf", "nail_golem"],
 	"bosses": [
-		{"time": 300.0, "id": "garm"},
-		{"time": 600.0, "id": "nidhogg"},
-		{"time": 840.0, "id": "hel"},
+		{"time": 180.0, "id": "garm"},
+		{"time": 360.0, "id": "nidhogg"},
+		{"time": 540.0, "id": "hel"},
 	],
-	"final_boss": "hel",
 	"clear_reward": 400,
-	"quest_slots": [150.0, 450.0, 720.0],
+	"quest_slots": [100.0, 270.0, 450.0],
 	"quests": ["soul_lamps", "bridge_guard", "anchor_chains", "baldr", "ratatoskr", "nail_heaps"],
 	"hidden_from": 30.0,
 	"hidden_quests": [
-		{"id": "hoof_tracks", "hint": 150.0},
-		{"id": "river_sword", "hint": 280.0},
-		{"id": "thokk", "hint": 480.0},
+		{"id": "hoof_tracks", "hint": 100.0},
+		{"id": "river_sword", "hint": 190.0},
+		{"id": "thokk", "hint": 320.0},
 	],
 	"clear_text": "纳吉尔法尔在火光中沉没。但远方的天空已经燃烧起来，彩虹桥正在崩塌。\n所有的神与所有的巨人，都在走向同一片平原。",
 	"events": [
-		{"time": 70.0, "type": "ring", "enemy": "dead", "count": 30, "text": "亡者的队伍涌了过来！"},
-		{"time": 210.0, "type": "ring", "enemy": "dark_elf", "count": 14, "text": "黑暗精灵从雾中现身！"},
-		{"time": 400.0, "type": "ring", "enemy": "nail_golem", "count": 8, "text": "指甲傀儡围了上来！"},
-		{"time": 540.0, "type": "ring", "enemy": "mist_wraith", "count": 18, "text": "冥雾中浮现出无数幽魂！"},
-		{"time": 720.0, "type": "ring", "enemy": "dead", "count": 60, "text": "海拉的亡者大军！"},
+		{"time": 50.0, "type": "ring", "enemy": "dead", "count": 30, "text": "亡者的队伍涌了过来！"},
+		{"time": 140.0, "type": "ring", "enemy": "dark_elf", "count": 14, "text": "黑暗精灵从雾中现身！"},
+		{"time": 270.0, "type": "ring", "enemy": "nail_golem", "count": 8, "text": "指甲傀儡围了上来！"},
+		{"time": 330.0, "type": "ring", "enemy": "mist_wraith", "count": 18, "text": "冥雾中浮现出无数幽魂！"},
+		{"time": 480.0, "type": "ring", "enemy": "dead", "count": 60, "text": "海拉的亡者大军！"},
 	],
 }
 

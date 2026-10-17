@@ -57,7 +57,7 @@ func _reward() -> String:
 	game.add_reward_points(50)
 	var ally := Einherjar.new()
 	ally.player = player
-	ally.power = 1.0 + game.elapsed / game.level_data.hp_growth
+	ally.power = game.enemy_hp_scale()
 	ally.position = _stones[0]
 	game.add_child(ally)
 	return tr("奖励点 +50，英灵与你并肩作战 60 秒")

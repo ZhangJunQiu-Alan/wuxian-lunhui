@@ -17,8 +17,10 @@ const ACTIONS := {"idle": true, "move": true, "attack": false, "hurt": false, "d
 const ATTACK_POSE := 0.2  # 没有出招素材时，程序前冲动作的时长
 const DASH_DISTANCE := 150.0
 const DASH_COOLDOWN := 2.0
-const DASH_INVINCIBLE := 0.2  # 闪现落地后短暂无敌，可以穿过怪群和弹幕
-const DASH_GHOSTS := 4  # 沿途留下几个残影
+const DASH_TIME := 0.14       # 冲出去用的时间：先快后慢地滑过去，而不是瞬间出现在终点
+const DASH_INVINCIBLE := 0.12  # 落地后额外的无敌时间；冲刺过程中一直无敌，可以穿过怪群和弹幕
+const DASH_GHOST_EVERY := 0.022  # 冲刺途中每隔多久留下一个残影
+const DASH_STRETCH := Vector2(1.22, 0.82)  # 冲刺时身体顺着方向拉长、压扁（这是横着冲的比例）
 
 var character_id := CharacterDB.DEFAULT_ID
 var data: Dictionary  # 角色数据（CharacterDB 里的一项）
@@ -72,6 +74,10 @@ var _fear_time := 0.0  # 恐惧：不受控制地远离 _fear_from
 var _fear_from := Vector2.ZERO
 var _dash_cooldown := 0.0
 var _dash_time := 0.0  # 闪现无敌剩余时间
+var _dash_t := -1.0   # 冲刺进行了多久；小于 0 表示没在冲刺
+var _dash_from := Vector2.ZERO
+var _dash_to := Vector2.ZERO
+var _ghost_timer := 0.0
 var _camera: Camera2D
 var _sprite: Node2D
 var _actions: AnimatedSprite2D  # 有多动作素材时就是 _sprite，否则为 null
@@ -143,9 +149,12 @@ func _physics_process(delta: float) -> void:
 		dir = (global_position - _fear_from).normalized()
 	if dir != Vector2.ZERO:
 		facing = dir.normalized()
-	velocity = dir * move_speed * speed_mult * (1.3 if frenzy_time > 0.0 else 1.0)  # 狂野西部秀：移速 +30%
-	move_and_slide()
-	position = MapLayer.push_out(Game.clamp_to_map(position, RADIUS), RADIUS)
+	if _dash_t >= 0.0:
+		_update_dash(delta)
+	else:
+		velocity = dir * move_speed * speed_mult * (1.3 if frenzy_time > 0.0 else 1.0)  # 狂野西部秀：移速 +30%
+		move_and_slide()
+		position = MapLayer.push_out(Game.clamp_to_map(position, RADIUS), RADIUS)
 
 	if regen > 0.0 and hp < max_hp:
 		heal(regen * delta)
@@ -244,35 +253,62 @@ func _unhandled_input(event: InputEvent) -> void:
 		try_ultimate()
 
 
-## 闪现：往移动方向瞬移一段距离，可以穿过怪物和物件，但出不了地图
+## 闪现：往移动方向快速冲出一段距离（DASH_TIME 秒内先快后慢地滑过去），可以穿过怪物和物件，但出不了地图
+## 起步时身体拉长、脚下扬起一圈气流，途中留下一串残影，落地时身体回弹
 func try_dash() -> void:
-	if is_dead or _dash_cooldown > 0.0 or _fear_time > 0.0:
+	if is_dead or _dash_t >= 0.0 or _dash_cooldown > 0.0 or _fear_time > 0.0:
 		return
 	_dash_cooldown = DASH_COOLDOWN
-	_dash_time = DASH_INVINCIBLE
-	var from := position
-	position = MapLayer.push_out(Game.clamp_to_map(position + facing * DASH_DISTANCE, RADIUS), RADIUS)
-	_spawn_ghosts(from)
+	_dash_time = DASH_TIME + DASH_INVINCIBLE
+	_dash_from = position
+	_dash_to = MapLayer.push_out(Game.clamp_to_map(position + facing * DASH_DISTANCE, RADIUS), RADIUS)
+	_dash_t = 0.0
+	_ghost_timer = 0.0
 	Audio.sfx("dash")
-	FxLayer.burst(global_position, Color(0.75, 0.9, 1.0), 12, 140.0, 3.0)
-	_camera.reset_smoothing()
+	FxLayer.burst(global_position, Color(0.75, 0.9, 1.0), 10, 110.0, 2.5)
+	for i in 6:  # 起步的气流向身后喷出
+		FxLayer.burst(global_position - facing * 10.0, Color(0.85, 0.95, 1.0, 0.8), 1, 60.0 + i * 25.0, 2.0)
 
 
-## 从 from 到当前位置留下一串渐隐的残影
-func _spawn_ghosts(from: Vector2) -> void:
+func _update_dash(delta: float) -> void:
+	_dash_t += delta
+	var k := minf(1.0, _dash_t / DASH_TIME)
+	position = _dash_from.lerp(_dash_to, 1.0 - pow(1.0 - k, 3.0))
+	velocity = Vector2.ZERO
+	_ghost_timer -= delta
+	if _ghost_timer <= 0.0:
+		_ghost_timer = DASH_GHOST_EVERY
+		_spawn_ghost(0.6 * (1.0 - k) + 0.3)
+	if _sprite:
+		var base: Vector2 = _sprite.get_meta("base_scale", Vector2.ONE)
+		var vertical := absf((_dash_to - _dash_from).normalized().y)  # 上下冲刺时竖着拉长
+		var stretch := Vector2(lerpf(DASH_STRETCH.x, DASH_STRETCH.y, vertical), lerpf(DASH_STRETCH.y, DASH_STRETCH.x, vertical))
+		_sprite.scale = base * Vector2.ONE.lerp(stretch, 1.0 - k * k)
+	if k >= 1.0:
+		_dash_t = -1.0
+		FxLayer.burst(global_position, Color(0.75, 0.9, 1.0), 8, 90.0, 2.0)
+		if _sprite:  # 落地回弹：先压扁一点，再弹回原样
+			var base: Vector2 = _sprite.get_meta("base_scale", Vector2.ONE)
+			_sprite.scale = base * Vector2(0.9, 1.1)
+			var tween := create_tween()
+			tween.tween_property(_sprite, "scale", base, 0.12).set_trans(Tween.TRANS_BACK).set_ease(Tween.EASE_OUT)
+
+
+## 在当前位置留下一个渐隐的蓝色残影
+func _spawn_ghost(alpha: float) -> void:
 	if not _sprite:
 		return
-	for i in DASH_GHOSTS:
-		var ghost: Node2D = _sprite.duplicate()
-		if ghost is AnimatedSprite2D:
-			ghost.stop()
-			ghost.frame = _actions.frame
-		ghost.position = from.lerp(position, float(i) / DASH_GHOSTS) + _sprite.position
-		ghost.modulate = Color(0.6, 0.85, 1.0, 0.35 + 0.4 * i / DASH_GHOSTS)
-		get_parent().add_child(ghost)
-		var tween := ghost.create_tween()
-		tween.tween_property(ghost, "modulate:a", 0.0, 0.3)
-		tween.tween_callback(ghost.queue_free)
+	var ghost: Node2D = _sprite.duplicate()
+	if ghost is AnimatedSprite2D:
+		ghost.stop()
+		ghost.frame = _actions.frame
+	ghost.position = position + _sprite.position
+	ghost.modulate = Color(0.7, 1.1, 1.6, alpha)  # 大于 1 的颜色让残影发亮
+	ghost.z_index = -1
+	get_parent().add_child(ghost)
+	var tween := ghost.create_tween()
+	tween.tween_property(ghost, "modulate:a", 0.0, 0.25)
+	tween.tween_callback(ghost.queue_free)
 
 
 func add_ult_energy(amount: float) -> void:
@@ -388,6 +424,12 @@ func add_xp(amount: float) -> void:
 
 
 func _draw() -> void:
+	if _dash_t >= 0.0:  # 冲刺途中：从起点到身体的一道渐细的光
+		var tail := _dash_from - position
+		var side := tail.normalized().orthogonal() * 9.0
+		var fade := 1.0 - minf(1.0, _dash_t / DASH_TIME)
+		draw_colored_polygon(PackedVector2Array([tail, side, -side]), Color(0.6, 0.85, 1.0, 0.28 * fade + 0.1))
+		draw_line(tail * 0.6, Vector2.ZERO, Color(0.9, 0.97, 1.0, 0.45 * fade + 0.15), 2.0)
 	var hurt_blink := _invincible_time > 0.0 and int(_invincible_time * 20.0) % 2 == 0
 	if _fear_time > 0.0:  # 恐惧时头顶有紫色漩涡
 		draw_arc(Vector2(0, -RADIUS - 10), 7.0, _fear_time * 10.0, _fear_time * 10.0 + 4.5, 12, Color(0.75, 0.45, 1.0), 2.5)

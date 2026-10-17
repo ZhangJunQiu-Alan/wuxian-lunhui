@@ -86,22 +86,22 @@ static func damage_in_radius(tree: SceneTree, center: Vector2, radius: float, am
 			enemy.take_damage(amount, offset.normalized() * knockback)
 
 
-## 用 EnemyDB 里的数据初始化。hp_scale 让后期的怪更肉，elite 表示精英怪
-func setup(id: String, hp_scale: float, elite: bool = false) -> void:
+## 用 EnemyDB 里的数据初始化。hp_scale、damage_scale 让后期的怪更肉、更疼，elite 表示精英怪
+func setup(id: String, hp_scale: float, elite: bool = false, damage_scale: float = 1.0) -> void:
 	var data: Dictionary = EnemyDB.ALL[id]
 	type_id = id
 	display_name = tr(data.name)
 	behavior = data.get("behavior", "chase")
 	max_hp = data.hp * hp_scale
 	speed = data.speed
-	contact_damage = data.damage
+	contact_damage = data.damage * damage_scale
 	radius = data.radius
 	mass = data.get("mass", 1.0)
 	xp_value = data.xp
 	color = data.color
 	shoot_range = data.get("shoot_range", 0.0)
 	shoot_cooldown = data.get("shoot_cooldown", 0.0)
-	projectile_damage = data.get("projectile_damage", 0.0)
+	projectile_damage = data.get("projectile_damage", 0.0) * damage_scale
 	projectile = data.get("projectile", "")
 	projectile_speed = data.get("projectile_speed", 0.0)
 	ghost = data.get("ghost", false)
@@ -118,6 +118,7 @@ func setup(id: String, hp_scale: float, elite: bool = false) -> void:
 		display_name = tr("精英%s") % display_name
 		max_hp *= EnemyDB.ELITE_HP
 		radius *= EnemyDB.ELITE_SIZE
+		speed *= EnemyDB.ELITE_SPEED
 		contact_damage *= EnemyDB.ELITE_DAMAGE
 		projectile_damage *= EnemyDB.ELITE_DAMAGE
 		mass *= 3.0
@@ -143,14 +144,20 @@ func _ready() -> void:
 	if is_elite:
 		paths.push_front(sprite_dir + type_id + "_elite")
 	# 每个路径先找动作帧条，再找静态图；精英有自己的静态图时不会借用普通怪的动作
+	var height := radius * 2.6 / (EnemyDB.ELITE_SIZE if is_elite else 1.0)
 	for path in paths:
-		_actions = SpriteVisual.create_actions(path, radius * 2.6, actions)
-		_sprite = _actions if _actions else SpriteVisual.create(path, radius * 2.6)
+		_actions = SpriteVisual.create_actions(path, height, actions)
+		_sprite = _actions if _actions else SpriteVisual.create(path, height)
 		if _sprite:
 			break
 	if _actions:
 		_actions.animation_finished.connect(_on_action_finished)
 	if _sprite:
+		if is_elite:  # 精英怪按普通怪的大小算好整数倍，再整体放大 ELITE_VISUAL 倍
+			for key in ["base_scale", "base_pos"]:
+				_sprite.set_meta(key, _sprite.get_meta(key) * EnemyDB.ELITE_VISUAL)
+			_sprite.scale *= EnemyDB.ELITE_VISUAL
+			_sprite.position *= EnemyDB.ELITE_VISUAL
 		add_child(_sprite)
 
 

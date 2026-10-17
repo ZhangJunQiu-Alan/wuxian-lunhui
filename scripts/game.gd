@@ -9,8 +9,13 @@ const SPAWN_DISTANCE := 750.0  # 刷怪距离：略大于半个屏幕对角线�
 const GRID_SIZE := 64.0
 const GRID_COLOR := Color(1, 1, 1, 0.05)
 
-const POINTS_PER_MINUTE := 10  # 每存活 1 分钟获得的奖励点
+const POINTS_PER_MINUTE := 15  # 每存活 1 分钟获得的奖励点（一关 10 分钟）
 const RING_RADIUS := 450.0     # 包围事件里那一圈敌人离玩家的距离
+## 小怪和精英随时间变强（m 是分钟数）：血量 = 1 + HP_LINEAR × m + HP_SQUARE × m²，先慢后快，
+## 3 分钟约 2.4 倍、6 分钟约 4.6 倍、9 分钟约 7.8 倍；攻击力每分钟 +DAMAGE_PER_MINUTE（10 分钟 2 倍）
+const HP_LINEAR := 0.3
+const HP_SQUARE := 0.05
+const DAMAGE_PER_MINUTE := 0.1
 const EDGE_COLOR := Color(0.03, 0.04, 0.06)  # 没有地图素材时，屏障带涂暗
 
 static var bounds := Rect2()       # 可以活动的范围
@@ -209,7 +214,7 @@ func _update_events() -> void:
 
 func spawn_enemy(type_id: String, pos: Vector2, elite: bool = false) -> Enemy:
 	var enemy := Enemy.new()
-	enemy.setup(type_id, 1.0 + elapsed / level_data.hp_growth, elite)
+	enemy.setup(type_id, enemy_hp_scale(), elite, enemy_damage_scale())
 	enemy.target = player
 	enemy.position = pos
 	enemy.killed.connect(_on_enemy_killed)
@@ -229,6 +234,15 @@ func _on_enemy_killed(enemy: Enemy) -> void:
 	enemy_killed.emit(enemy)
 
 
+func enemy_hp_scale() -> float:
+	var m := elapsed / 60.0
+	return 1.0 + HP_LINEAR * m + HP_SQUARE * m * m
+
+
+func enemy_damage_scale() -> float:
+	return 1.0 + DAMAGE_PER_MINUTE * elapsed / 60.0
+
+
 ## 不算击杀地移除一个敌人（例如逃走了），不掉经验
 func despawn_enemy(enemy: Enemy) -> void:
 	_alive_by_type[enemy.type_id] = _alive_by_type.get(enemy.type_id, 1) - 1
@@ -239,9 +253,11 @@ func _update_bosses() -> void:
 	var bosses: Array = level_data.bosses
 	if _next_boss >= bosses.size() or elapsed < bosses[_next_boss].time + boss_delay.get(bosses[_next_boss].id, 0.0):
 		return
+	if is_instance_valid(boss):
+		return  # 上一个 Boss 还没被击败，等它
 	var id: String = bosses[_next_boss].id
 	_next_boss += 1
-	boss = BossDB.create(id, (1.0 + elapsed / level_data.hp_growth) * boss_hp_mult.get(id, 1.0))
+	boss = BossDB.create(id, (1.0 + elapsed / level_data.boss_hp_growth) * boss_hp_mult.get(id, 1.0))
 	if boss == null:
 		return
 	for key: String in boss_tweaks.get(id, {}):
@@ -376,12 +392,13 @@ func _on_boss_defeated(defeated_boss: Boss) -> void:
 	_defeated_bosses.append(defeated_boss.type_id)
 	_note("bosses", defeated_boss.type_id, 1)
 	hud.hide_boss()
-	if defeated_boss.type_id != level_data.final_boss:
+	var all_defeated: bool = _defeated_bosses.size() >= level_data.bosses.size()
+	if not all_defeated:
 		Audio.music(level_data.music)
 	hud.announce(defeated_boss.defeat_line)
 	add_reward_points(defeated_boss.reward_points)
 	FxLayer.floating_text(defeated_boss.global_position + Vector2(0, -60), tr("奖励点 +%d") % defeated_boss.reward_points, Color(1.0, 0.85, 0.4))
-	if defeated_boss.type_id == level_data.final_boss:
+	if all_defeated:
 		get_tree().create_timer(3.0).timeout.connect(_on_level_cleared)  # 留 3 秒看击败演出
 		return
 	var chest := Chest.new()
