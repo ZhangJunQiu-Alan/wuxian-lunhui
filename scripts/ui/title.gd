@@ -334,17 +334,8 @@ func _draw_title() -> void:
 
 	# 主神：光球从一点展开，两道光环带着光点缓缓转动
 	var grow := _ease((_time - 0.6) / 1.4)
-	var pulse := 0.5 + 0.5 * sin(_time * 1.4)
+	GodSphere.draw(self, center, _time, grow)
 	if grow > 0.0:
-		for i in 7:
-			draw_circle(center, (40.0 + i * 30.0 + pulse * 8.0) * grow, Color(1.0, 0.92, 0.75, (0.045 - i * 0.005) * grow))
-		for tilt: float in [-0.35, 0.3]:
-			draw_set_transform(center, tilt, Vector2(1.0, 0.28))
-			draw_arc(Vector2.ZERO, 230.0 * grow, 0.0, TAU, 96, Color(1.0, 0.88, 0.6, 0.18 * grow), 2.0)
-			for k in 6:
-				var a := _time * (0.35 if tilt > 0 else -0.28) + k * TAU / 6.0
-				draw_circle(Vector2.from_angle(a) * 230.0 * grow, 6.0, Color(1.0, 0.9, 0.65, 0.5 * grow))
-		draw_set_transform(Vector2.ZERO)
 		var flash := clampf(1.0 - absf(_time - 1.6) / 0.5, 0.0, 1.0)  # 光球展开到最大时闪一下
 		draw_circle(center, 34.0 * grow + flash * 40.0, Color(1.0, 0.97, 0.9, 0.12 + flash * 0.25))
 
