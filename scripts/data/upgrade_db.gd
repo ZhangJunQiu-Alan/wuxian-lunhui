@@ -22,6 +22,8 @@ const UPGRADES := {
 	"katana_speed": {"kind": "weapon", "character": "swordsman", "god": "", "name": "太刀·居合", "desc": "太刀挥砍间隔 -12%", "max": 4},
 	"katana_range": {"kind": "weapon", "character": "swordsman", "god": "", "name": "太刀·长刃", "desc": "太刀攻击范围 +20%", "max": 3},
 	"katana_back": {"kind": "weapon", "character": "swordsman", "god": "", "name": "太刀·回身斩", "desc": "挥砍时同时斩向身后", "max": 1},
+	"katana_knockback": {"kind": "weapon", "character": "swordsman", "god": "", "name": "太刀·震退", "desc": "太刀击退距离 +40%", "max": 3},
+	"katana_hamstring": {"kind": "weapon", "character": "swordsman", "god": "", "name": "太刀·断筋", "desc": "被太刀砍中的敌人移速 -20%，持续 2 秒", "max": 2},
 
 	# ———— 人物基础武器：左轮手枪（枪手）————
 	"revolver_damage": {"kind": "weapon", "character": "gunslinger", "god": "", "name": "左轮·重弹", "desc": "子弹伤害 +25%", "max": 5},
@@ -142,6 +144,10 @@ static func apply(id: String, player: Player) -> void:
 			player.katana.reach *= 1.2
 		"katana_back":
 			player.katana.back_slash = true
+		"katana_knockback":
+			player.katana.knockback *= 1.4
+		"katana_hamstring":
+			player.katana.hamstring += 0.2
 
 		"revolver_damage":
 			player.revolver.damage *= 1.25

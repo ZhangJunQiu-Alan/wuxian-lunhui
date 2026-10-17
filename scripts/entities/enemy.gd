@@ -42,6 +42,8 @@ var dodge := 0.0
 var split_into := ""
 var split_count := 0
 var slow := 1.0  # 环境减速（冥雾），每帧由环境重新设置
+var _hit_slow := 0.0  # 被攻击附带的减速（太刀·断筋），和环境减速相乘
+var _hit_slow_time := 0.0
 var _dodge_cd := 0.0
 var _draining := false  # 吸血光束正连着玩家
 
@@ -192,7 +194,10 @@ func _physics_process(delta: float) -> void:
 	elif behavior == "drain":
 		move = _drain_move(dir, dist, delta)
 	_dodge_cd -= delta
-	position += move * speed * slow * delta + _knockback * delta + (Vector2.ZERO if ghost else _separation())
+	_hit_slow_time -= delta
+	if _hit_slow_time <= 0.0:
+		_hit_slow = 0.0
+	position += move * speed * slow * (1.0 - _hit_slow) * delta + _knockback * delta + (Vector2.ZERO if ghost else _separation())
 	_knockback *= exp(-KNOCKBACK_DECAY * delta)
 	_update_attack(dir, dist, delta)
 	if _sprite:
@@ -337,6 +342,15 @@ func _separation() -> Vector2:
 func freeze(duration: float) -> void:
 	_frozen_time = maxf(_frozen_time, duration)
 	queue_redraw()
+
+
+## 减速 amount（0.2 = 移速 -20%），持续 duration 秒；同时有几个减速时取最强的
+func apply_slow(amount: float, duration: float) -> void:
+	if amount >= _hit_slow:
+		_hit_slow = minf(amount, 0.8)
+		_hit_slow_time = duration
+	else:
+		_hit_slow_time = maxf(_hit_slow_time, duration)
 
 
 ## knockback 是击退方向乘以力度；crit 为 true 时伤害数字显示为金色大字

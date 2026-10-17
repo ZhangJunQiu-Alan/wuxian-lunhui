@@ -7,12 +7,14 @@ const SLASH := preload("res://assets/sprites/effects/katana_slash.png")
 const SLASH_REACH := 58.0  # 刀光素材从中心到外缘的像素数，按攻击范围缩放
 const SLASH_DURATION := 0.24
 const HALF_ARC := 1.05  # 扇形半角（弧度），约 60°，整个扇形 120°
-const KNOCKBACK := 260.0
+const HAMSTRING_TIME := 2.0  # 断筋减速持续的秒数
 
 var damage := 14.0
 var cooldown := 1.0
 var reach := 110.0
 var back_slash := false  # 回身斩：同时斩向身后
+var knockback := 260.0
+var hamstring := 0.0  # 断筋：砍中的敌人减速这么多（0.2 = 移速 -20%）
 var player: Player
 var _timer := 0.3
 var _slash_count := 0
@@ -65,7 +67,9 @@ func _slash(enemies: Array[Node], target: Enemy) -> void:
 			continue
 		for dir in _slash_dirs:
 			if absf(dir.angle_to(offset)) <= HALF_ARC:
-				enemy.take_damage(dmg, offset.normalized() * KNOCKBACK, _niten)
+				enemy.take_damage(dmg, offset.normalized() * knockback, _niten)
+				if hamstring > 0.0:
+					enemy.apply_slow(hamstring, HAMSTRING_TIME)
 				FxLayer.mark(enemy.global_position, dir.angle() + PI * 0.5 * _sweep_sign * 0.6, enemy.radius * 2.0 + 30.0, _tint())
 				break
 
