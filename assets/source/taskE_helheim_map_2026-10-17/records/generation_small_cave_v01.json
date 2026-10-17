@@ -1,0 +1,15 @@
+{
+  "tool": "OpenAI built-in image generation",
+  "source": "/Users/zhangjunqiu/.codex/generated_images/01a14377-c537-7a10-b5df-10043f63fbe0/exec-16d7eac6-962f-4277-97fd-2e2881122373.png",
+  "type": "props",
+  "id": "small_cave",
+  "w": 128,
+  "h": 96,
+  "subject": "A SMALL dark cave in gray-black ice-cracked rock, wide rock surround with tunnel opening. Deep inside is ONE subtle seated large humanoid SHADOW with knees drawn up, dark tiny eyes, indistinct hidden NPC, no monster at entrance. Freestanding rock-mouth object, no landscape.",
+  "version": "v01",
+  "refs": [
+    "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskE_helheim_map_2026-10-17/refs/style_helheim.png"
+  ],
+  "prompt": "Use case: stylized-concept. Asset type: production lowresolution pixel art environment asset for a topdown3quarter dark underworld survival game.\nInput1 is STYLE REFERENCE ONLY: match its existing coldgray, deepgreen, boneivory and charcoal environments, pixel clusters, dark outlines and upperleft lighting; do not copy characters or contact-sheet layout. Other input if present is MATERIAL/FORM REFERENCE only.\nPrimary request: A SMALL dark cave in gray-black ice-cracked rock, wide rock surround with tunnel opening. Deep inside is ONE subtle seated large humanoid SHADOW with knees drawn up, dark tiny eyes, indistinct hidden NPC, no monster at entrance. Freestanding rock-mouth object, no landscape.\nEXACTLY ONE isolated environment OBJECT, target logicalcanvas128x96px. Preserve full 128:96 aspect ratio. True transparent RGBA outside silhouette. Entire object fits within2logicalpixelclear margins, horizontalcenter and bottomgroundbaseline at heightminus2.\nStyle: handmade low-resolution PIXEL ART, crisp coarse pixel clusters and restrained48colors, no smooth painting or antialiasing, upperleft highlights and lower-rightshade, same rendering as reference. NO brightgold, orange or warm glow; restrained underworld colors. \nAvoid: any text, names, letters, runes, labels, grid, watermark, logo, sheet with multiple objects, extra characters, modern objects, scenery/background panel, drop shadow outside silhouette, magic particles or bloom. Opaque solidpixelart, never semi-transparent alpha.",
+  "transparent": true
+}

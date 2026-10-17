@@ -1,0 +1,27 @@
+{
+  "tool": "OpenAI built-in image generation",
+  "source": "/Users/zhangjunqiu/.codex/generated_images/01a14377-c537-7a10-b5df-10043f63fbe0/exec-f916d427-d5ba-4886-a3e1-79526334b454.png",
+  "type": "borders",
+  "id": "gnipa_cave",
+  "w": 256,
+  "h": 192,
+  "subject": "A huge dark cave mouth IN a SOUTHERN dark gray-black ice-cracked rock cliff, low wide tunnel entrance centered, two massive severed iron chain ends hanging around opening, very dark interior, no visible beast. Rock cliff extends completely to left/right borders as connector. Playable TOP edge transparent.",
+  "inner": "n",
+  "cave": true,
+  "version": "v02",
+  "refs": [
+    "/Users/zhangjunqiu/Desktop/\u65e0\u9650\u6050\u6016/assets/source/taskE_helheim_map_2026-10-17/refs/style_helheim.png"
+  ],
+  "prompt": "Use case: stylized-concept. Asset type: production lowresolution pixel art environment asset for a topdown3quarter dark underworld survival game.\nInput1 is STYLE REFERENCE ONLY: match its existing coldgray, deepgreen, boneivory and charcoal environments, pixel clusters, dark outlines and upperleft lighting; do not copy characters or contact-sheet layout. Other input if present is MATERIAL/FORM REFERENCE only.\nPrimary request: A huge dark cave mouth IN a SOUTHERN dark gray-black ice-cracked rock cliff, low wide tunnel entrance centered, two massive severed iron chain ends hanging around opening, very dark interior, no visible beast. Rock cliff extends completely to left/right borders as connector. Playable TOP edge transparent.\nEXACTLY ONE boundary module, logical256x192px. Rock extends to left/right connector ends, top playable area clear.\nStyle: handmade low-resolution PIXEL ART, crisp coarse pixel clusters and restrained48colors, no smooth painting or antialiasing, upperleft highlights and lower-rightshade, same rendering as reference. NO brightgold, orange or warm glow; restrained underworld colors. \nAvoid: any text, names, letters, runes, labels, grid, watermark, logo, sheet with multiple objects, extra characters, modern objects, scenery/background panel, drop shadow outside silhouette, magic particles or bloom. Opaque solidpixelart, never semi-transparent alpha.",
+  "transparent": true,
+  "derived_from": "candidates/gnipa_cave_v01.png",
+  "formatting": {
+    "crop": [
+      0,
+      0,
+      256,
+      161
+    ],
+    "operation": "Crop offscreen outer padding only; whole-image nearest resize, no new pixels painted"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "type": "props",
+  "id": "gjoll_bridge",
+  "w": 224,
+  "h": 384,
+  "subject": "A LONG NORTH-SOUTH walkable bridge deck seen from TOPDOWN threequarter, extending from image BOTTOM to TOP. Broad FLAT central WALKWAY around170logicalpixels wide with rows of old GOLD roof-tile-like metal plates as paving. Narrow low dark stone side rails with a few rag strips, no roof, no overhead arch, no towers blocking middle, no river/background. Grounded full bridge, long vertical silhouette. The central path must be clear and walkable. This is the ONLY BRIGHT WARM GOLD landmark in the environment.",
+  "version": "v02",
+  "refs": [
+    "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskE_helheim_map_2026-10-17/refs/style_helheim.png",
+    "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskE_helheim_map_2026-10-17/refs/gjoll_railing.png"
+  ],
+  "prompt": "Use case: stylized-concept. Production pixelart bridge OBJECT, EXACT224x384logicalcanvas. TOPDOWN nearlyORTHOGRAPHIC camera, long NORTH-SOUTH bridge rectangle. GOLD WALKWAY must be VERY BROAD:180logicalpixels wide, fromx22tox202, at both top and bottom, almost no perspective taper. Low side rails only12pxwide per side. ENTIRE silhouette220pxwide by380pxtall, fill canvas within2pxclear margin. Central walkway is absolutely FLAT old gold metal rectangular paving tiles, worn tiny seams, NOT convex roof, no roof, no arch/towers. Dull darkgraystone side rails and occasional grayrag strips; goldonlyonflatpaving. Reference existingpixelart/darkcoldmaterials frominput1. Brightwarmgold unique landmark. Sharp limitedpalette pixelclusters, upperleftlight, genuine binarytransparent background, no river/scenery/text/grid/people/shadows outside. Clear unobstructed wide WALKABLE CENTER and open ends at top/bottom.",
+  "transparent": true,
+  "tool": "OpenAI builtin image_gen",
+  "source": "/Users/zhangjunqiu/.codex/generated_images/01a14377-c537-7a10-b5df-10043f63fbe0/exec-b6faa60a-bc54-42d8-814f-62bb3e4fd53c.png"
+}

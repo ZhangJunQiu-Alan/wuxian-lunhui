@@ -1,0 +1,678 @@
+[
+  {
+    "type": "borders",
+    "id": "dark_sea_01",
+    "w": 256,
+    "h": 192,
+    "subject": "Northern boundary: black underworld sea filling upper area, slate-dark waves, a few broken gray ice chips, pale gray distant fog concentrated at TOP. Irregular rocky shoreline at lower edge, playable inner side at BOTTOM fully transparent.",
+    "axis": "x",
+    "inner": "s",
+    "version": "v01",
+    "refs": [
+      "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskE_helheim_map_2026-10-17/refs/style_helheim.png"
+    ],
+    "prompt": "Use case: stylized-concept. Asset type: production lowresolution pixel art environment asset for a topdown3quarter dark underworld survival game.\nInput1 is STYLE REFERENCE ONLY: match its existing coldgray, deepgreen, boneivory and charcoal environments, pixel clusters, dark outlines and upperleft lighting; do not copy characters or contact-sheet layout. Other input if present is MATERIAL/FORM REFERENCE only.\nPrimary request: Northern boundary: black underworld sea filling upper area, slate-dark waves, a few broken gray ice chips, pale gray distant fog concentrated at TOP. Irregular rocky shoreline at lower edge, playable inner side at BOTTOM fully transparent.\nEXACTLY ONE boundary module, logical320x192px. Repeat seamlessly along HORIZONTAL LEFT-RIGHT axis. Material continues through both connection ends with NO 2px empty end gaps. Inner playable edge fully transparent, irregular rocky edge, not straight line. Outer area opaque. No isolated-object rounded vignette.\nStyle: handmade low-resolution PIXEL ART, crisp coarse pixel clusters and restrained48colors, no smooth painting or antialiasing, upperleft highlights and lower-rightshade, same rendering as reference. NO brightgold, orange or warm glow; restrained underworld colors. \nAvoid: any text, names, letters, runes, labels, grid, watermark, logo, sheet with multiple objects, extra characters, modern objects, scenery/background panel, drop shadow outside silhouette, magic particles or bloom. Opaque solidpixelart, never semi-transparent alpha.",
+    "transparent": true
+  },
+  {
+    "type": "borders",
+    "id": "hel_wall_01",
+    "w": 192,
+    "h": 256,
+    "subject": "Eastern boundary: massive black masonry wall filling RIGHT side, worn bone spikes on wall top, small bone piles at wall foot. Tall vertical strip seen in matching topdown3quarter game camera. Playable LEFT inner edge irregular and fully transparent.",
+    "axis": "y",
+    "inner": "w",
+    "version": "v01",
+    "refs": [
+      "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskE_helheim_map_2026-10-17/refs/style_helheim.png"
+    ],
+    "prompt": "Use case: stylized-concept. Asset type: production lowresolution pixel art environment asset for a topdown3quarter dark underworld survival game.\nInput1 is STYLE REFERENCE ONLY: match its existing coldgray, deepgreen, boneivory and charcoal environments, pixel clusters, dark outlines and upperleft lighting; do not copy characters or contact-sheet layout. Other input if present is MATERIAL/FORM REFERENCE only.\nPrimary request: Eastern boundary: massive black masonry wall filling RIGHT side, worn bone spikes on wall top, small bone piles at wall foot. Tall vertical strip seen in matching topdown3quarter game camera. Playable LEFT inner edge irregular and fully transparent.\nEXACTLY ONE boundary module, logical192x320px. Repeat seamlessly along VERTICAL TOP-BOTTOM axis. Material continues through both connection ends with NO 2px empty end gaps. Inner playable edge fully transparent, irregular rocky edge, not straight line. Outer area opaque. No isolated-object rounded vignette.\nStyle: handmade low-resolution PIXEL ART, crisp coarse pixel clusters and restrained48colors, no smooth painting or antialiasing, upperleft highlights and lower-rightshade, same rendering as reference. NO brightgold, orange or warm glow; restrained underworld colors. \nAvoid: any text, names, letters, runes, labels, grid, watermark, logo, sheet with multiple objects, extra characters, modern objects, scenery/background panel, drop shadow outside silhouette, magic particles or bloom. Opaque solidpixelart, never semi-transparent alpha.",
+    "transparent": true
+  },
+  {
+    "type": "borders",
+    "id": "fog_abyss_01",
+    "w": 192,
+    "h": 256,
+    "subject": "Western boundary: ground breaks away into pale cold white-gray mist abyss on LEFT. Jagged charcoal stone lip along RIGHT edge, thin gray-green roots hanging down, abyss below opaque pixel fog. Playable RIGHT inner edge fully transparent.",
+    "axis": "y",
+    "inner": "e",
+    "version": "v01",
+    "refs": [
+      "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskE_helheim_map_2026-10-17/refs/style_helheim.png"
+    ],
+    "prompt": "Use case: stylized-concept. Asset type: production lowresolution pixel art environment asset for a topdown3quarter dark underworld survival game.\nInput1 is STYLE REFERENCE ONLY: match its existing coldgray, deepgreen, boneivory and charcoal environments, pixel clusters, dark outlines and upperleft lighting; do not copy characters or contact-sheet layout. Other input if present is MATERIAL/FORM REFERENCE only.\nPrimary request: Western boundary: ground breaks away into pale cold white-gray mist abyss on LEFT. Jagged charcoal stone lip along RIGHT edge, thin gray-green roots hanging down, abyss below opaque pixel fog. Playable RIGHT inner edge fully transparent.\nEXACTLY ONE boundary module, logical192x320px. Repeat seamlessly along VERTICAL TOP-BOTTOM axis. Material continues through both connection ends with NO 2px empty end gaps. Inner playable edge fully transparent, irregular rocky edge, not straight line. Outer area opaque. No isolated-object rounded vignette.\nStyle: handmade low-resolution PIXEL ART, crisp coarse pixel clusters and restrained48colors, no smooth painting or antialiasing, upperleft highlights and lower-rightshade, same rendering as reference. NO brightgold, orange or warm glow; restrained underworld colors. \nAvoid: any text, names, letters, runes, labels, grid, watermark, logo, sheet with multiple objects, extra characters, modern objects, scenery/background panel, drop shadow outside silhouette, magic particles or bloom. Opaque solidpixelart, never semi-transparent alpha.",
+    "transparent": true
+  },
+  {
+    "type": "borders",
+    "id": "ice_cliff_01",
+    "w": 256,
+    "h": 192,
+    "subject": "Southern boundary: dark gray-black rock cliff filling LOWER area, muted icy seams in cracks, small bone shards near rock. Playable TOP inner edge irregular fully transparent, viewed from topdown3quarter.",
+    "axis": "x",
+    "inner": "n",
+    "version": "v01",
+    "refs": [
+      "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskE_helheim_map_2026-10-17/refs/style_helheim.png"
+    ],
+    "prompt": "Use case: stylized-concept. Asset type: production lowresolution pixel art environment asset for a topdown3quarter dark underworld survival game.\nInput1 is STYLE REFERENCE ONLY: match its existing coldgray, deepgreen, boneivory and charcoal environments, pixel clusters, dark outlines and upperleft lighting; do not copy characters or contact-sheet layout. Other input if present is MATERIAL/FORM REFERENCE only.\nPrimary request: Southern boundary: dark gray-black rock cliff filling LOWER area, muted icy seams in cracks, small bone shards near rock. Playable TOP inner edge irregular fully transparent, viewed from topdown3quarter.\nEXACTLY ONE boundary module, logical320x192px. Repeat seamlessly along HORIZONTAL LEFT-RIGHT axis. Material continues through both connection ends with NO 2px empty end gaps. Inner playable edge fully transparent, irregular rocky edge, not straight line. Outer area opaque. No isolated-object rounded vignette.\nStyle: handmade low-resolution PIXEL ART, crisp coarse pixel clusters and restrained48colors, no smooth painting or antialiasing, upperleft highlights and lower-rightshade, same rendering as reference. NO brightgold, orange or warm glow; restrained underworld colors. \nAvoid: any text, names, letters, runes, labels, grid, watermark, logo, sheet with multiple objects, extra characters, modern objects, scenery/background panel, drop shadow outside silhouette, magic particles or bloom. Opaque solidpixelart, never semi-transparent alpha.",
+    "transparent": true
+  },
+  {
+    "type": "borders",
+    "id": "gnipa_cave",
+    "w": 256,
+    "h": 192,
+    "subject": "A huge dark cave mouth IN a SOUTHERN dark gray-black ice-cracked rock cliff, low wide tunnel entrance centered, two massive severed iron chain ends hanging around opening, very dark interior, no visible beast. Rock cliff extends completely to left/right borders as connector. Playable TOP edge transparent.",
+    "inner": "n",
+    "cave": true,
+    "version": "v01",
+    "refs": [
+      "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskE_helheim_map_2026-10-17/refs/style_helheim.png"
+    ],
+    "prompt": "Use case: stylized-concept. Asset type: production lowresolution pixel art environment asset for a topdown3quarter dark underworld survival game.\nInput1 is STYLE REFERENCE ONLY: match its existing coldgray, deepgreen, boneivory and charcoal environments, pixel clusters, dark outlines and upperleft lighting; do not copy characters or contact-sheet layout. Other input if present is MATERIAL/FORM REFERENCE only.\nPrimary request: A huge dark cave mouth IN a SOUTHERN dark gray-black ice-cracked rock cliff, low wide tunnel entrance centered, two massive severed iron chain ends hanging around opening, very dark interior, no visible beast. Rock cliff extends completely to left/right borders as connector. Playable TOP edge transparent.\nEXACTLY ONE boundary module, logical256x192px. Rock extends to left/right connector ends, top playable area clear.\nStyle: handmade low-resolution PIXEL ART, crisp coarse pixel clusters and restrained48colors, no smooth painting or antialiasing, upperleft highlights and lower-rightshade, same rendering as reference. NO brightgold, orange or warm glow; restrained underworld colors. \nAvoid: any text, names, letters, runes, labels, grid, watermark, logo, sheet with multiple objects, extra characters, modern objects, scenery/background panel, drop shadow outside silhouette, magic particles or bloom. Opaque solidpixelart, never semi-transparent alpha.",
+    "transparent": true
+  },
+  {
+    "type": "ground",
+    "id": "river_01",
+    "w": 64,
+    "h": 64,
+    "subject": "Pitch-black underworld river water, muted charcoal ripples, a FEW small dull gray broken ice chips. No shore, no objects, no vortex, even density.",
+    "tile": true,
+    "version": "v01",
+    "refs": [
+      "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskE_helheim_map_2026-10-17/refs/style_helheim.png"
+    ],
+    "prompt": "Use case: stylized-concept. Asset type: production lowresolution pixel art environment asset for a topdown3quarter dark underworld survival game.\nInput1 is STYLE REFERENCE ONLY: match its existing coldgray, deepgreen, boneivory and charcoal environments, pixel clusters, dark outlines and upperleft lighting; do not copy characters or contact-sheet layout. Other input if present is MATERIAL/FORM REFERENCE only.\nPrimary request: Pitch-black underworld river water, muted charcoal ripples, a FEW small dull gray broken ice chips. No shore, no objects, no vortex, even density.\nEXACTLY ONE seamless fully OPAQUE square ground texture, fill ENTIRE canvas edge-to-edge. Logical96x96px surface, no transparent border, identical lowcontrast throughout; no vignette, lighting gradient, border, framing, grid, centered focal object or checker background. All four edges must tile seamlessly. Ground midtones DARKER than character. Do not paint tall objects.\nStyle: handmade low-resolution PIXEL ART, crisp coarse pixel clusters and restrained48colors, no smooth painting or antialiasing, upperleft highlights and lower-rightshade, same rendering as reference. NO brightgold, orange or warm glow; restrained underworld colors. \nAvoid: any text, names, letters, runes, labels, grid, watermark, logo, sheet with multiple objects, extra characters, modern objects, scenery/background panel, drop shadow outside silhouette, magic particles or bloom. Opaque solidpixelart, never semi-transparent alpha.",
+    "transparent": false
+  },
+  {
+    "type": "ground",
+    "id": "river_02",
+    "w": 64,
+    "h": 64,
+    "subject": "Second pitch-black underworld river surface, same water value and ripple scale as companion, differently distributed tiny gray ice chips. No shore or large focal motif.",
+    "tile": true,
+    "version": "v01",
+    "refs": [
+      "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskE_helheim_map_2026-10-17/refs/style_helheim.png"
+    ],
+    "prompt": "Use case: stylized-concept. Asset type: production lowresolution pixel art environment asset for a topdown3quarter dark underworld survival game.\nInput1 is STYLE REFERENCE ONLY: match its existing coldgray, deepgreen, boneivory and charcoal environments, pixel clusters, dark outlines and upperleft lighting; do not copy characters or contact-sheet layout. Other input if present is MATERIAL/FORM REFERENCE only.\nPrimary request: Second pitch-black underworld river surface, same water value and ripple scale as companion, differently distributed tiny gray ice chips. No shore or large focal motif.\nEXACTLY ONE seamless fully OPAQUE square ground texture, fill ENTIRE canvas edge-to-edge. Logical96x96px surface, no transparent border, identical lowcontrast throughout; no vignette, lighting gradient, border, framing, grid, centered focal object or checker background. All four edges must tile seamlessly. Ground midtones DARKER than character. Do not paint tall objects.\nStyle: handmade low-resolution PIXEL ART, crisp coarse pixel clusters and restrained48colors, no smooth painting or antialiasing, upperleft highlights and lower-rightshade, same rendering as reference. NO brightgold, orange or warm glow; restrained underworld colors. \nAvoid: any text, names, letters, runes, labels, grid, watermark, logo, sheet with multiple objects, extra characters, modern objects, scenery/background panel, drop shadow outside silhouette, magic particles or bloom. Opaque solidpixelart, never semi-transparent alpha.",
+    "transparent": false
+  },
+  {
+    "type": "ground",
+    "id": "river_ice",
+    "w": 64,
+    "h": 64,
+    "subject": "Walkable shallow frozen river: dark desaturated blue-gray ice, a few fine lowcontrast cracks, two faint medieval sword/blade silhouettes trapped BENEATH ice, low contrast, no bright magical sword or large object.",
+    "tile": true,
+    "version": "v01",
+    "refs": [
+      "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskE_helheim_map_2026-10-17/refs/style_helheim.png"
+    ],
+    "prompt": "Use case: stylized-concept. Asset type: production lowresolution pixel art environment asset for a topdown3quarter dark underworld survival game.\nInput1 is STYLE REFERENCE ONLY: match its existing coldgray, deepgreen, boneivory and charcoal environments, pixel clusters, dark outlines and upperleft lighting; do not copy characters or contact-sheet layout. Other input if present is MATERIAL/FORM REFERENCE only.\nPrimary request: Walkable shallow frozen river: dark desaturated blue-gray ice, a few fine lowcontrast cracks, two faint medieval sword/blade silhouettes trapped BENEATH ice, low contrast, no bright magical sword or large object.\nEXACTLY ONE seamless fully OPAQUE square ground texture, fill ENTIRE canvas edge-to-edge. Logical96x96px surface, no transparent border, identical lowcontrast throughout; no vignette, lighting gradient, border, framing, grid, centered focal object or checker background. All four edges must tile seamlessly. Ground midtones DARKER than character. Do not paint tall objects.\nStyle: handmade low-resolution PIXEL ART, crisp coarse pixel clusters and restrained48colors, no smooth painting or antialiasing, upperleft highlights and lower-rightshade, same rendering as reference. NO brightgold, orange or warm glow; restrained underworld colors. \nAvoid: any text, names, letters, runes, labels, grid, watermark, logo, sheet with multiple objects, extra characters, modern objects, scenery/background panel, drop shadow outside silhouette, magic particles or bloom. Opaque solidpixelart, never semi-transparent alpha.",
+    "transparent": false
+  },
+  {
+    "type": "ground",
+    "id": "bone_path",
+    "w": 64,
+    "h": 64,
+    "subject": "A walkable path surface of small worn gray bone fragments and dark gray gravel, densely mixed subtle texture, bones are small broken slivers, not skulls. Flat muted gray-green overall, no curb or path border.",
+    "tile": true,
+    "version": "v01",
+    "refs": [
+      "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskE_helheim_map_2026-10-17/refs/style_helheim.png"
+    ],
+    "prompt": "Use case: stylized-concept. Asset type: production lowresolution pixel art environment asset for a topdown3quarter dark underworld survival game.\nInput1 is STYLE REFERENCE ONLY: match its existing coldgray, deepgreen, boneivory and charcoal environments, pixel clusters, dark outlines and upperleft lighting; do not copy characters or contact-sheet layout. Other input if present is MATERIAL/FORM REFERENCE only.\nPrimary request: A walkable path surface of small worn gray bone fragments and dark gray gravel, densely mixed subtle texture, bones are small broken slivers, not skulls. Flat muted gray-green overall, no curb or path border.\nEXACTLY ONE seamless fully OPAQUE square ground texture, fill ENTIRE canvas edge-to-edge. Logical96x96px surface, no transparent border, identical lowcontrast throughout; no vignette, lighting gradient, border, framing, grid, centered focal object or checker background. All four edges must tile seamlessly. Ground midtones DARKER than character. Do not paint tall objects.\nStyle: handmade low-resolution PIXEL ART, crisp coarse pixel clusters and restrained48colors, no smooth painting or antialiasing, upperleft highlights and lower-rightshade, same rendering as reference. NO brightgold, orange or warm glow; restrained underworld colors. \nAvoid: any text, names, letters, runes, labels, grid, watermark, logo, sheet with multiple objects, extra characters, modern objects, scenery/background panel, drop shadow outside silhouette, magic particles or bloom. Opaque solidpixelart, never semi-transparent alpha.",
+    "transparent": false
+  },
+  {
+    "type": "ground",
+    "id": "marsh",
+    "w": 64,
+    "h": 64,
+    "subject": "Low flat gray-green marsh mud, shallow nearly black wet patches, tiny muted moss flecks, no reeds/trees/largeobjects. Dark desaturated mud texture, evenly distributed.",
+    "tile": true,
+    "version": "v01",
+    "refs": [
+      "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskE_helheim_map_2026-10-17/refs/style_helheim.png"
+    ],
+    "prompt": "Use case: stylized-concept. Asset type: production lowresolution pixel art environment asset for a topdown3quarter dark underworld survival game.\nInput1 is STYLE REFERENCE ONLY: match its existing coldgray, deepgreen, boneivory and charcoal environments, pixel clusters, dark outlines and upperleft lighting; do not copy characters or contact-sheet layout. Other input if present is MATERIAL/FORM REFERENCE only.\nPrimary request: Low flat gray-green marsh mud, shallow nearly black wet patches, tiny muted moss flecks, no reeds/trees/largeobjects. Dark desaturated mud texture, evenly distributed.\nEXACTLY ONE seamless fully OPAQUE square ground texture, fill ENTIRE canvas edge-to-edge. Logical96x96px surface, no transparent border, identical lowcontrast throughout; no vignette, lighting gradient, border, framing, grid, centered focal object or checker background. All four edges must tile seamlessly. Ground midtones DARKER than character. Do not paint tall objects.\nStyle: handmade low-resolution PIXEL ART, crisp coarse pixel clusters and restrained48colors, no smooth painting or antialiasing, upperleft highlights and lower-rightshade, same rendering as reference. NO brightgold, orange or warm glow; restrained underworld colors. \nAvoid: any text, names, letters, runes, labels, grid, watermark, logo, sheet with multiple objects, extra characters, modern objects, scenery/background panel, drop shadow outside silhouette, magic particles or bloom. Opaque solidpixelart, never semi-transparent alpha.",
+    "transparent": false
+  },
+  {
+    "type": "ground",
+    "id": "plaza",
+    "w": 64,
+    "h": 64,
+    "subject": "Broken black plaza flagstones, broad irregular flat worn stone slabs, thin cracks and subtle gray-white moss inside cracks, lowcontrast darkgray floor, no raised obstacles.",
+    "tile": true,
+    "version": "v01",
+    "refs": [
+      "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskE_helheim_map_2026-10-17/refs/style_helheim.png"
+    ],
+    "prompt": "Use case: stylized-concept. Asset type: production lowresolution pixel art environment asset for a topdown3quarter dark underworld survival game.\nInput1 is STYLE REFERENCE ONLY: match its existing coldgray, deepgreen, boneivory and charcoal environments, pixel clusters, dark outlines and upperleft lighting; do not copy characters or contact-sheet layout. Other input if present is MATERIAL/FORM REFERENCE only.\nPrimary request: Broken black plaza flagstones, broad irregular flat worn stone slabs, thin cracks and subtle gray-white moss inside cracks, lowcontrast darkgray floor, no raised obstacles.\nEXACTLY ONE seamless fully OPAQUE square ground texture, fill ENTIRE canvas edge-to-edge. Logical96x96px surface, no transparent border, identical lowcontrast throughout; no vignette, lighting gradient, border, framing, grid, centered focal object or checker background. All four edges must tile seamlessly. Ground midtones DARKER than character. Do not paint tall objects.\nStyle: handmade low-resolution PIXEL ART, crisp coarse pixel clusters and restrained48colors, no smooth painting or antialiasing, upperleft highlights and lower-rightshade, same rendering as reference. NO brightgold, orange or warm glow; restrained underworld colors. \nAvoid: any text, names, letters, runes, labels, grid, watermark, logo, sheet with multiple objects, extra characters, modern objects, scenery/background panel, drop shadow outside silhouette, magic particles or bloom. Opaque solidpixelart, never semi-transparent alpha.",
+    "transparent": false
+  },
+  {
+    "type": "props",
+    "id": "gjoll_bridge",
+    "w": 224,
+    "h": 384,
+    "subject": "A LONG NORTH-SOUTH walkable bridge deck seen from TOPDOWN threequarter, extending from image BOTTOM to TOP. Broad FLAT central WALKWAY around170logicalpixels wide with rows of old GOLD roof-tile-like metal plates as paving. Narrow low dark stone side rails with a few rag strips, no roof, no overhead arch, no towers blocking middle, no river/background. Grounded full bridge, long vertical silhouette. The central path must be clear and walkable. This is the ONLY BRIGHT WARM GOLD landmark in the environment.",
+    "version": "v01",
+    "refs": [
+      "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskE_helheim_map_2026-10-17/refs/style_helheim.png",
+      "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskE_helheim_map_2026-10-17/refs/gjoll_railing.png"
+    ],
+    "prompt": "Use case: stylized-concept. Asset type: production lowresolution pixel art environment asset for a topdown3quarter dark underworld survival game.\nInput1 is STYLE REFERENCE ONLY: match its existing coldgray, deepgreen, boneivory and charcoal environments, pixel clusters, dark outlines and upperleft lighting; do not copy characters or contact-sheet layout. Other input if present is MATERIAL/FORM REFERENCE only.\nPrimary request: A LONG NORTH-SOUTH walkable bridge deck seen from TOPDOWN threequarter, extending from image BOTTOM to TOP. Broad FLAT central WALKWAY around170logicalpixels wide with rows of old GOLD roof-tile-like metal plates as paving. Narrow low dark stone side rails with a few rag strips, no roof, no overhead arch, no towers blocking middle, no river/background. Grounded full bridge, long vertical silhouette. The central path must be clear and walkable. This is the ONLY BRIGHT WARM GOLD landmark in the environment.\nEXACTLY ONE isolated environment OBJECT, target logicalcanvas224x384px. Preserve full 224:384 aspect ratio. True transparent RGBA outside silhouette. Entire object fits within2logicalpixelclear margins, horizontalcenter and bottomgroundbaseline at heightminus2.\nStyle: handmade low-resolution PIXEL ART, crisp coarse pixel clusters and restrained48colors, no smooth painting or antialiasing, upperleft highlights and lower-rightshade, same rendering as reference. Warm gold paving is allowed as specified. \nAvoid: any text, names, letters, runes, labels, grid, watermark, logo, sheet with multiple objects, extra characters, modern objects, scenery/background panel, drop shadow outside silhouette, magic particles or bloom. Opaque solidpixelart, never semi-transparent alpha.",
+    "transparent": true
+  },
+  {
+    "type": "props",
+    "id": "bridge_booth",
+    "w": 96,
+    "h": 128,
+    "subject": "Small worn dark stone toll booth beside an underworld bridge, squat stone pavilion with open front, simple stone roof, a strip of old faded gray cloth on post, hollow dark interior, no person. Compact freestanding structure.",
+    "version": "v01",
+    "refs": [
+      "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskE_helheim_map_2026-10-17/refs/style_helheim.png",
+      "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskE_helheim_map_2026-10-17/refs/gjoll_railing.png"
+    ],
+    "prompt": "Use case: stylized-concept. Asset type: production lowresolution pixel art environment asset for a topdown3quarter dark underworld survival game.\nInput1 is STYLE REFERENCE ONLY: match its existing coldgray, deepgreen, boneivory and charcoal environments, pixel clusters, dark outlines and upperleft lighting; do not copy characters or contact-sheet layout. Other input if present is MATERIAL/FORM REFERENCE only.\nPrimary request: Small worn dark stone toll booth beside an underworld bridge, squat stone pavilion with open front, simple stone roof, a strip of old faded gray cloth on post, hollow dark interior, no person. Compact freestanding structure.\nEXACTLY ONE isolated environment OBJECT, target logicalcanvas96x128px. Preserve full 96:128 aspect ratio. True transparent RGBA outside silhouette. Entire object fits within2logicalpixelclear margins, horizontalcenter and bottomgroundbaseline at heightminus2.\nStyle: handmade low-resolution PIXEL ART, crisp coarse pixel clusters and restrained48colors, no smooth painting or antialiasing, upperleft highlights and lower-rightshade, same rendering as reference. NO brightgold, orange or warm glow; restrained underworld colors. \nAvoid: any text, names, letters, runes, labels, grid, watermark, logo, sheet with multiple objects, extra characters, modern objects, scenery/background panel, drop shadow outside silhouette, magic particles or bloom. Opaque solidpixelart, never semi-transparent alpha.",
+    "transparent": true
+  },
+  {
+    "type": "props",
+    "id": "soul_lamp",
+    "w": 32,
+    "h": 96,
+    "subject": "Unlit tall slim gray-black stone soul-lamp column, skeletal stone base, small iron brazier bowl at top with EMPTY dark center. No flame or glow. Keep exact upright structure for lit-state matching.",
+    "version": "v01",
+    "refs": [
+      "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskE_helheim_map_2026-10-17/refs/style_helheim.png"
+    ],
+    "prompt": "Use case: stylized-concept. Asset type: production lowresolution pixel art environment asset for a topdown3quarter dark underworld survival game.\nInput1 is STYLE REFERENCE ONLY: match its existing coldgray, deepgreen, boneivory and charcoal environments, pixel clusters, dark outlines and upperleft lighting; do not copy characters or contact-sheet layout. Other input if present is MATERIAL/FORM REFERENCE only.\nPrimary request: Unlit tall slim gray-black stone soul-lamp column, skeletal stone base, small iron brazier bowl at top with EMPTY dark center. No flame or glow. Keep exact upright structure for lit-state matching.\nEXACTLY ONE isolated environment OBJECT, target logicalcanvas32x96px. Preserve full 32:96 aspect ratio. True transparent RGBA outside silhouette. Entire object fits within2logicalpixelclear margins, horizontalcenter and bottomgroundbaseline at heightminus2.\nStyle: handmade low-resolution PIXEL ART, crisp coarse pixel clusters and restrained48colors, no smooth painting or antialiasing, upperleft highlights and lower-rightshade, same rendering as reference. NO brightgold, orange or warm glow; restrained underworld colors. \nAvoid: any text, names, letters, runes, labels, grid, watermark, logo, sheet with multiple objects, extra characters, modern objects, scenery/background panel, drop shadow outside silhouette, magic particles or bloom. Opaque solidpixelart, never semi-transparent alpha.",
+    "transparent": true
+  },
+  {
+    "type": "props",
+    "id": "cane",
+    "w": 32,
+    "h": 32,
+    "subject": "An old deceased commoner's discarded curved wooden walking cane, slender weathered gray-brown hooked stick lying diagonally on ground, no hands or person.",
+    "version": "v01",
+    "refs": [
+      "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskE_helheim_map_2026-10-17/refs/style_helheim.png"
+    ],
+    "prompt": "Use case: stylized-concept. Asset type: production lowresolution pixel art environment asset for a topdown3quarter dark underworld survival game.\nInput1 is STYLE REFERENCE ONLY: match its existing coldgray, deepgreen, boneivory and charcoal environments, pixel clusters, dark outlines and upperleft lighting; do not copy characters or contact-sheet layout. Other input if present is MATERIAL/FORM REFERENCE only.\nPrimary request: An old deceased commoner's discarded curved wooden walking cane, slender weathered gray-brown hooked stick lying diagonally on ground, no hands or person.\nEXACTLY ONE isolated environment OBJECT, target logicalcanvas32x32px. Preserve full 32:32 aspect ratio. True transparent RGBA outside silhouette. Entire object fits within2logicalpixelclear margins, horizontalcenter and bottomgroundbaseline at heightminus2.\nStyle: handmade low-resolution PIXEL ART, crisp coarse pixel clusters and restrained48colors, no smooth painting or antialiasing, upperleft highlights and lower-rightshade, same rendering as reference. NO brightgold, orange or warm glow; restrained underworld colors. \nAvoid: any text, names, letters, runes, labels, grid, watermark, logo, sheet with multiple objects, extra characters, modern objects, scenery/background panel, drop shadow outside silhouette, magic particles or bloom. Opaque solidpixelart, never semi-transparent alpha.",
+    "transparent": true
+  },
+  {
+    "type": "props",
+    "id": "straw_hat",
+    "w": 32,
+    "h": 32,
+    "subject": "A discarded broken straw hat, faded gray-brown woven straw, bent broad brim with missing corner, lying on ground, not worn.",
+    "version": "v01",
+    "refs": [
+      "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskE_helheim_map_2026-10-17/refs/style_helheim.png"
+    ],
+    "prompt": "Use case: stylized-concept. Asset type: production lowresolution pixel art environment asset for a topdown3quarter dark underworld survival game.\nInput1 is STYLE REFERENCE ONLY: match its existing coldgray, deepgreen, boneivory and charcoal environments, pixel clusters, dark outlines and upperleft lighting; do not copy characters or contact-sheet layout. Other input if present is MATERIAL/FORM REFERENCE only.\nPrimary request: A discarded broken straw hat, faded gray-brown woven straw, bent broad brim with missing corner, lying on ground, not worn.\nEXACTLY ONE isolated environment OBJECT, target logicalcanvas32x32px. Preserve full 32:32 aspect ratio. True transparent RGBA outside silhouette. Entire object fits within2logicalpixelclear margins, horizontalcenter and bottomgroundbaseline at heightminus2.\nStyle: handmade low-resolution PIXEL ART, crisp coarse pixel clusters and restrained48colors, no smooth painting or antialiasing, upperleft highlights and lower-rightshade, same rendering as reference. NO brightgold, orange or warm glow; restrained underworld colors. \nAvoid: any text, names, letters, runes, labels, grid, watermark, logo, sheet with multiple objects, extra characters, modern objects, scenery/background panel, drop shadow outside silhouette, magic particles or bloom. Opaque solidpixelart, never semi-transparent alpha.",
+    "transparent": true
+  },
+  {
+    "type": "props",
+    "id": "wine_jug",
+    "w": 32,
+    "h": 32,
+    "subject": "Empty squat weathered clay wine jug lying tilted on ground, tiny handle and open dark mouth, muted gray-brown clay, no gold or liquid.",
+    "version": "v01",
+    "refs": [
+      "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskE_helheim_map_2026-10-17/refs/style_helheim.png"
+    ],
+    "prompt": "Use case: stylized-concept. Asset type: production lowresolution pixel art environment asset for a topdown3quarter dark underworld survival game.\nInput1 is STYLE REFERENCE ONLY: match its existing coldgray, deepgreen, boneivory and charcoal environments, pixel clusters, dark outlines and upperleft lighting; do not copy characters or contact-sheet layout. Other input if present is MATERIAL/FORM REFERENCE only.\nPrimary request: Empty squat weathered clay wine jug lying tilted on ground, tiny handle and open dark mouth, muted gray-brown clay, no gold or liquid.\nEXACTLY ONE isolated environment OBJECT, target logicalcanvas32x32px. Preserve full 32:32 aspect ratio. True transparent RGBA outside silhouette. Entire object fits within2logicalpixelclear margins, horizontalcenter and bottomgroundbaseline at heightminus2.\nStyle: handmade low-resolution PIXEL ART, crisp coarse pixel clusters and restrained48colors, no smooth painting or antialiasing, upperleft highlights and lower-rightshade, same rendering as reference. NO brightgold, orange or warm glow; restrained underworld colors. \nAvoid: any text, names, letters, runes, labels, grid, watermark, logo, sheet with multiple objects, extra characters, modern objects, scenery/background panel, drop shadow outside silhouette, magic particles or bloom. Opaque solidpixelart, never semi-transparent alpha.",
+    "transparent": true
+  },
+  {
+    "type": "props",
+    "id": "wooden_horse",
+    "w": 32,
+    "h": 32,
+    "subject": "A child's discarded little carved WOODEN TOY HORSE with four short rigid carved legs and simple curved rocker underneath, worn dull wood, recognizable toy, not living horse.",
+    "version": "v01",
+    "refs": [
+      "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskE_helheim_map_2026-10-17/refs/style_helheim.png"
+    ],
+    "prompt": "Use case: stylized-concept. Asset type: production lowresolution pixel art environment asset for a topdown3quarter dark underworld survival game.\nInput1 is STYLE REFERENCE ONLY: match its existing coldgray, deepgreen, boneivory and charcoal environments, pixel clusters, dark outlines and upperleft lighting; do not copy characters or contact-sheet layout. Other input if present is MATERIAL/FORM REFERENCE only.\nPrimary request: A child's discarded little carved WOODEN TOY HORSE with four short rigid carved legs and simple curved rocker underneath, worn dull wood, recognizable toy, not living horse.\nEXACTLY ONE isolated environment OBJECT, target logicalcanvas32x32px. Preserve full 32:32 aspect ratio. True transparent RGBA outside silhouette. Entire object fits within2logicalpixelclear margins, horizontalcenter and bottomgroundbaseline at heightminus2.\nStyle: handmade low-resolution PIXEL ART, crisp coarse pixel clusters and restrained48colors, no smooth painting or antialiasing, upperleft highlights and lower-rightshade, same rendering as reference. NO brightgold, orange or warm glow; restrained underworld colors. \nAvoid: any text, names, letters, runes, labels, grid, watermark, logo, sheet with multiple objects, extra characters, modern objects, scenery/background panel, drop shadow outside silhouette, magic particles or bloom. Opaque solidpixelart, never semi-transparent alpha.",
+    "transparent": true
+  },
+  {
+    "type": "props",
+    "id": "nail_pier",
+    "w": 128,
+    "h": 256,
+    "subject": "A narrow NORTH-SOUTH dock pier composed of overlapping flattened GRAY-YELLOW HUMAN FINGERNAIL PLATES layered over dark wood supports. Vertical long flat walkway, a few broken edge pieces, no rails blocking center, no water/background.",
+    "version": "v01",
+    "refs": [
+      "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskE_helheim_map_2026-10-17/refs/style_helheim.png",
+      "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskE_helheim_map_2026-10-17/refs/nail_golem.png"
+    ],
+    "prompt": "Use case: stylized-concept. Asset type: production lowresolution pixel art environment asset for a topdown3quarter dark underworld survival game.\nInput1 is STYLE REFERENCE ONLY: match its existing coldgray, deepgreen, boneivory and charcoal environments, pixel clusters, dark outlines and upperleft lighting; do not copy characters or contact-sheet layout. Other input if present is MATERIAL/FORM REFERENCE only.\nPrimary request: A narrow NORTH-SOUTH dock pier composed of overlapping flattened GRAY-YELLOW HUMAN FINGERNAIL PLATES layered over dark wood supports. Vertical long flat walkway, a few broken edge pieces, no rails blocking center, no water/background.\nEXACTLY ONE isolated environment OBJECT, target logicalcanvas128x256px. Preserve full 128:256 aspect ratio. True transparent RGBA outside silhouette. Entire object fits within2logicalpixelclear margins, horizontalcenter and bottomgroundbaseline at heightminus2.\nStyle: handmade low-resolution PIXEL ART, crisp coarse pixel clusters and restrained48colors, no smooth painting or antialiasing, upperleft highlights and lower-rightshade, same rendering as reference. NO brightgold, orange or warm glow; restrained underworld colors. \nAvoid: any text, names, letters, runes, labels, grid, watermark, logo, sheet with multiple objects, extra characters, modern objects, scenery/background panel, drop shadow outside silhouette, magic particles or bloom. Opaque solidpixelart, never semi-transparent alpha.",
+    "transparent": true
+  },
+  {
+    "type": "props",
+    "id": "nail_basket",
+    "w": 48,
+    "h": 48,
+    "subject": "A coarse old woven gray-brown basket filled with many small dull gray-yellow curved HUMAN FINGERNAIL CLIPPINGS, keratin chips, no gems/skulls.",
+    "version": "v01",
+    "refs": [
+      "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskE_helheim_map_2026-10-17/refs/style_helheim.png",
+      "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskE_helheim_map_2026-10-17/refs/nail_golem.png"
+    ],
+    "prompt": "Use case: stylized-concept. Asset type: production lowresolution pixel art environment asset for a topdown3quarter dark underworld survival game.\nInput1 is STYLE REFERENCE ONLY: match its existing coldgray, deepgreen, boneivory and charcoal environments, pixel clusters, dark outlines and upperleft lighting; do not copy characters or contact-sheet layout. Other input if present is MATERIAL/FORM REFERENCE only.\nPrimary request: A coarse old woven gray-brown basket filled with many small dull gray-yellow curved HUMAN FINGERNAIL CLIPPINGS, keratin chips, no gems/skulls.\nEXACTLY ONE isolated environment OBJECT, target logicalcanvas48x48px. Preserve full 48:48 aspect ratio. True transparent RGBA outside silhouette. Entire object fits within2logicalpixelclear margins, horizontalcenter and bottomgroundbaseline at heightminus2.\nStyle: handmade low-resolution PIXEL ART, crisp coarse pixel clusters and restrained48colors, no smooth painting or antialiasing, upperleft highlights and lower-rightshade, same rendering as reference. NO brightgold, orange or warm glow; restrained underworld colors. \nAvoid: any text, names, letters, runes, labels, grid, watermark, logo, sheet with multiple objects, extra characters, modern objects, scenery/background panel, drop shadow outside silhouette, magic particles or bloom. Opaque solidpixelart, never semi-transparent alpha.",
+    "transparent": true
+  },
+  {
+    "type": "props",
+    "id": "cargo_crate",
+    "w": 48,
+    "h": 48,
+    "subject": "One worn closed gray-brown wooden cargo crate for underworld harbor, rough dark planks, dull iron strapping, simple threequarter top view, no emblem or text.",
+    "version": "v01",
+    "refs": [
+      "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskE_helheim_map_2026-10-17/refs/style_helheim.png"
+    ],
+    "prompt": "Use case: stylized-concept. Asset type: production lowresolution pixel art environment asset for a topdown3quarter dark underworld survival game.\nInput1 is STYLE REFERENCE ONLY: match its existing coldgray, deepgreen, boneivory and charcoal environments, pixel clusters, dark outlines and upperleft lighting; do not copy characters or contact-sheet layout. Other input if present is MATERIAL/FORM REFERENCE only.\nPrimary request: One worn closed gray-brown wooden cargo crate for underworld harbor, rough dark planks, dull iron strapping, simple threequarter top view, no emblem or text.\nEXACTLY ONE isolated environment OBJECT, target logicalcanvas48x48px. Preserve full 48:48 aspect ratio. True transparent RGBA outside silhouette. Entire object fits within2logicalpixelclear margins, horizontalcenter and bottomgroundbaseline at heightminus2.\nStyle: handmade low-resolution PIXEL ART, crisp coarse pixel clusters and restrained48colors, no smooth painting or antialiasing, upperleft highlights and lower-rightshade, same rendering as reference. NO brightgold, orange or warm glow; restrained underworld colors. \nAvoid: any text, names, letters, runes, labels, grid, watermark, logo, sheet with multiple objects, extra characters, modern objects, scenery/background panel, drop shadow outside silhouette, magic particles or bloom. Opaque solidpixelart, never semi-transparent alpha.",
+    "transparent": true
+  },
+  {
+    "type": "props",
+    "id": "shield_spear",
+    "w": 64,
+    "h": 64,
+    "subject": "A deceased soldier's worn dark round wooden shield propped against two lean iron-headed spears, dull metal boss, chipped muted gray-green planks, clear crossed spear tips, no person.",
+    "version": "v01",
+    "refs": [
+      "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskE_helheim_map_2026-10-17/refs/style_helheim.png"
+    ],
+    "prompt": "Use case: stylized-concept. Asset type: production lowresolution pixel art environment asset for a topdown3quarter dark underworld survival game.\nInput1 is STYLE REFERENCE ONLY: match its existing coldgray, deepgreen, boneivory and charcoal environments, pixel clusters, dark outlines and upperleft lighting; do not copy characters or contact-sheet layout. Other input if present is MATERIAL/FORM REFERENCE only.\nPrimary request: A deceased soldier's worn dark round wooden shield propped against two lean iron-headed spears, dull metal boss, chipped muted gray-green planks, clear crossed spear tips, no person.\nEXACTLY ONE isolated environment OBJECT, target logicalcanvas64x64px. Preserve full 64:64 aspect ratio. True transparent RGBA outside silhouette. Entire object fits within2logicalpixelclear margins, horizontalcenter and bottomgroundbaseline at heightminus2.\nStyle: handmade low-resolution PIXEL ART, crisp coarse pixel clusters and restrained48colors, no smooth painting or antialiasing, upperleft highlights and lower-rightshade, same rendering as reference. NO brightgold, orange or warm glow; restrained underworld colors. \nAvoid: any text, names, letters, runes, labels, grid, watermark, logo, sheet with multiple objects, extra characters, modern objects, scenery/background panel, drop shadow outside silhouette, magic particles or bloom. Opaque solidpixelart, never semi-transparent alpha.",
+    "transparent": true
+  },
+  {
+    "type": "props",
+    "id": "hall_pillar",
+    "w": 64,
+    "h": 192,
+    "subject": "Tall freestanding BLACK STONE palace column, severe worn faceted shaft, modest bone-carved top and square base, dark muted purple-gray edges, upperleft light. No gold, no torches.",
+    "version": "v01",
+    "refs": [
+      "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskE_helheim_map_2026-10-17/refs/style_helheim.png"
+    ],
+    "prompt": "Use case: stylized-concept. Asset type: production lowresolution pixel art environment asset for a topdown3quarter dark underworld survival game.\nInput1 is STYLE REFERENCE ONLY: match its existing coldgray, deepgreen, boneivory and charcoal environments, pixel clusters, dark outlines and upperleft lighting; do not copy characters or contact-sheet layout. Other input if present is MATERIAL/FORM REFERENCE only.\nPrimary request: Tall freestanding BLACK STONE palace column, severe worn faceted shaft, modest bone-carved top and square base, dark muted purple-gray edges, upperleft light. No gold, no torches.\nEXACTLY ONE isolated environment OBJECT, target logicalcanvas64x192px. Preserve full 64:192 aspect ratio. True transparent RGBA outside silhouette. Entire object fits within2logicalpixelclear margins, horizontalcenter and bottomgroundbaseline at heightminus2.\nStyle: handmade low-resolution PIXEL ART, crisp coarse pixel clusters and restrained48colors, no smooth painting or antialiasing, upperleft highlights and lower-rightshade, same rendering as reference. NO brightgold, orange or warm glow; restrained underworld colors. \nAvoid: any text, names, letters, runes, labels, grid, watermark, logo, sheet with multiple objects, extra characters, modern objects, scenery/background panel, drop shadow outside silhouette, magic particles or bloom. Opaque solidpixelart, never semi-transparent alpha.",
+    "transparent": true
+  },
+  {
+    "type": "props",
+    "id": "hall_arch_broken",
+    "w": 192,
+    "h": 160,
+    "subject": "A collapsed BLACK STONE palace arch, two ruined pillars and partially broken arch curve with gap, chipped blocks piled around base, sparse dull bone ornamentation, no doorway background or wall panel.",
+    "version": "v01",
+    "refs": [
+      "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskE_helheim_map_2026-10-17/refs/style_helheim.png"
+    ],
+    "prompt": "Use case: stylized-concept. Asset type: production lowresolution pixel art environment asset for a topdown3quarter dark underworld survival game.\nInput1 is STYLE REFERENCE ONLY: match its existing coldgray, deepgreen, boneivory and charcoal environments, pixel clusters, dark outlines and upperleft lighting; do not copy characters or contact-sheet layout. Other input if present is MATERIAL/FORM REFERENCE only.\nPrimary request: A collapsed BLACK STONE palace arch, two ruined pillars and partially broken arch curve with gap, chipped blocks piled around base, sparse dull bone ornamentation, no doorway background or wall panel.\nEXACTLY ONE isolated environment OBJECT, target logicalcanvas192x160px. Preserve full 192:160 aspect ratio. True transparent RGBA outside silhouette. Entire object fits within2logicalpixelclear margins, horizontalcenter and bottomgroundbaseline at heightminus2.\nStyle: handmade low-resolution PIXEL ART, crisp coarse pixel clusters and restrained48colors, no smooth painting or antialiasing, upperleft highlights and lower-rightshade, same rendering as reference. NO brightgold, orange or warm glow; restrained underworld colors. \nAvoid: any text, names, letters, runes, labels, grid, watermark, logo, sheet with multiple objects, extra characters, modern objects, scenery/background panel, drop shadow outside silhouette, magic particles or bloom. Opaque solidpixelart, never semi-transparent alpha.",
+    "transparent": true
+  },
+  {
+    "type": "props",
+    "id": "empty_throne",
+    "w": 64,
+    "h": 96,
+    "subject": "An EMPTY severe dark stone throne, tall angular back, armrests of carved weathered bone, dark muted purple seatcloth torn at edge, no crown/king/figure, no gold.",
+    "version": "v01",
+    "refs": [
+      "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskE_helheim_map_2026-10-17/refs/style_helheim.png"
+    ],
+    "prompt": "Use case: stylized-concept. Asset type: production lowresolution pixel art environment asset for a topdown3quarter dark underworld survival game.\nInput1 is STYLE REFERENCE ONLY: match its existing coldgray, deepgreen, boneivory and charcoal environments, pixel clusters, dark outlines and upperleft lighting; do not copy characters or contact-sheet layout. Other input if present is MATERIAL/FORM REFERENCE only.\nPrimary request: An EMPTY severe dark stone throne, tall angular back, armrests of carved weathered bone, dark muted purple seatcloth torn at edge, no crown/king/figure, no gold.\nEXACTLY ONE isolated environment OBJECT, target logicalcanvas64x96px. Preserve full 64:96 aspect ratio. True transparent RGBA outside silhouette. Entire object fits within2logicalpixelclear margins, horizontalcenter and bottomgroundbaseline at heightminus2.\nStyle: handmade low-resolution PIXEL ART, crisp coarse pixel clusters and restrained48colors, no smooth painting or antialiasing, upperleft highlights and lower-rightshade, same rendering as reference. NO brightgold, orange or warm glow; restrained underworld colors. \nAvoid: any text, names, letters, runes, labels, grid, watermark, logo, sheet with multiple objects, extra characters, modern objects, scenery/background panel, drop shadow outside silhouette, magic particles or bloom. Opaque solidpixelart, never semi-transparent alpha.",
+    "transparent": true
+  },
+  {
+    "type": "props",
+    "id": "long_table",
+    "w": 160,
+    "h": 64,
+    "subject": "A long low dark wooden banquet table seen topdownthreequarter, exactly a few EMPTY dark gray ceramic plates sitting on tabletop, no food, cups or banquet guests, no gold.",
+    "version": "v01",
+    "refs": [
+      "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskE_helheim_map_2026-10-17/refs/style_helheim.png"
+    ],
+    "prompt": "Use case: stylized-concept. Asset type: production lowresolution pixel art environment asset for a topdown3quarter dark underworld survival game.\nInput1 is STYLE REFERENCE ONLY: match its existing coldgray, deepgreen, boneivory and charcoal environments, pixel clusters, dark outlines and upperleft lighting; do not copy characters or contact-sheet layout. Other input if present is MATERIAL/FORM REFERENCE only.\nPrimary request: A long low dark wooden banquet table seen topdownthreequarter, exactly a few EMPTY dark gray ceramic plates sitting on tabletop, no food, cups or banquet guests, no gold.\nEXACTLY ONE isolated environment OBJECT, target logicalcanvas160x64px. Preserve full 160:64 aspect ratio. True transparent RGBA outside silhouette. Entire object fits within2logicalpixelclear margins, horizontalcenter and bottomgroundbaseline at heightminus2.\nStyle: handmade low-resolution PIXEL ART, crisp coarse pixel clusters and restrained48colors, no smooth painting or antialiasing, upperleft highlights and lower-rightshade, same rendering as reference. NO brightgold, orange or warm glow; restrained underworld colors. \nAvoid: any text, names, letters, runes, labels, grid, watermark, logo, sheet with multiple objects, extra characters, modern objects, scenery/background panel, drop shadow outside silhouette, magic particles or bloom. Opaque solidpixelart, never semi-transparent alpha.",
+    "transparent": true
+  },
+  {
+    "type": "props",
+    "id": "hall_carpet",
+    "w": 96,
+    "h": 256,
+    "subject": "A long NARROW faded DARK PURPLE palace carpet lying FLAT on ground NORTH-SOUTH, frayed edges and a few tears, faint worn geometric border, no insignia or text, restrained colors.",
+    "version": "v01",
+    "refs": [
+      "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskE_helheim_map_2026-10-17/refs/style_helheim.png"
+    ],
+    "prompt": "Use case: stylized-concept. Asset type: production lowresolution pixel art environment asset for a topdown3quarter dark underworld survival game.\nInput1 is STYLE REFERENCE ONLY: match its existing coldgray, deepgreen, boneivory and charcoal environments, pixel clusters, dark outlines and upperleft lighting; do not copy characters or contact-sheet layout. Other input if present is MATERIAL/FORM REFERENCE only.\nPrimary request: A long NARROW faded DARK PURPLE palace carpet lying FLAT on ground NORTH-SOUTH, frayed edges and a few tears, faint worn geometric border, no insignia or text, restrained colors.\nEXACTLY ONE isolated environment OBJECT, target logicalcanvas96x256px. Preserve full 96:256 aspect ratio. True transparent RGBA outside silhouette. Entire object fits within2logicalpixelclear margins, horizontalcenter and bottomgroundbaseline at heightminus2.\nStyle: handmade low-resolution PIXEL ART, crisp coarse pixel clusters and restrained48colors, no smooth painting or antialiasing, upperleft highlights and lower-rightshade, same rendering as reference. NO brightgold, orange or warm glow; restrained underworld colors. \nAvoid: any text, names, letters, runes, labels, grid, watermark, logo, sheet with multiple objects, extra characters, modern objects, scenery/background panel, drop shadow outside silhouette, magic particles or bloom. Opaque solidpixelart, never semi-transparent alpha.",
+    "transparent": true
+  },
+  {
+    "type": "props",
+    "id": "world_root_arch",
+    "w": 384,
+    "h": 192,
+    "subject": "Enormous ancient gray-black tree ROOT rises from ground into an ARCH like a low bridge. Two thick root ends planted at far LEFT and RIGHT, center underside OPEN enough for player to pass beneath, transparent hole at least140logicalpixels wide and70high. Gnarled wet bark, clear gnawed tooth notches and dark tree sap. No foliage, no ground/background.",
+    "version": "v01",
+    "refs": [
+      "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskE_helheim_map_2026-10-17/refs/style_helheim.png",
+      "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskE_helheim_map_2026-10-17/refs/world_tree_root.png"
+    ],
+    "prompt": "Use case: stylized-concept. Asset type: production lowresolution pixel art environment asset for a topdown3quarter dark underworld survival game.\nInput1 is STYLE REFERENCE ONLY: match its existing coldgray, deepgreen, boneivory and charcoal environments, pixel clusters, dark outlines and upperleft lighting; do not copy characters or contact-sheet layout. Other input if present is MATERIAL/FORM REFERENCE only.\nPrimary request: Enormous ancient gray-black tree ROOT rises from ground into an ARCH like a low bridge. Two thick root ends planted at far LEFT and RIGHT, center underside OPEN enough for player to pass beneath, transparent hole at least140logicalpixels wide and70high. Gnarled wet bark, clear gnawed tooth notches and dark tree sap. No foliage, no ground/background.\nEXACTLY ONE isolated environment OBJECT, target logicalcanvas384x192px. Preserve full 384:192 aspect ratio. True transparent RGBA outside silhouette. Entire object fits within2logicalpixelclear margins, horizontalcenter and bottomgroundbaseline at heightminus2.\nStyle: handmade low-resolution PIXEL ART, crisp coarse pixel clusters and restrained48colors, no smooth painting or antialiasing, upperleft highlights and lower-rightshade, same rendering as reference. NO brightgold, orange or warm glow; restrained underworld colors. \nAvoid: any text, names, letters, runes, labels, grid, watermark, logo, sheet with multiple objects, extra characters, modern objects, scenery/background panel, drop shadow outside silhouette, magic particles or bloom. Opaque solidpixelart, never semi-transparent alpha.",
+    "transparent": true
+  },
+  {
+    "type": "props",
+    "id": "glow_mushroom",
+    "w": 32,
+    "h": 32,
+    "subject": "A small cluster of three damp gray-green mushrooms with phosphor JADE-GREEN cap highlights, slender dark stems, no floating particles or aura.",
+    "version": "v01",
+    "refs": [
+      "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskE_helheim_map_2026-10-17/refs/style_helheim.png"
+    ],
+    "prompt": "Use case: stylized-concept. Asset type: production lowresolution pixel art environment asset for a topdown3quarter dark underworld survival game.\nInput1 is STYLE REFERENCE ONLY: match its existing coldgray, deepgreen, boneivory and charcoal environments, pixel clusters, dark outlines and upperleft lighting; do not copy characters or contact-sheet layout. Other input if present is MATERIAL/FORM REFERENCE only.\nPrimary request: A small cluster of three damp gray-green mushrooms with phosphor JADE-GREEN cap highlights, slender dark stems, no floating particles or aura.\nEXACTLY ONE isolated environment OBJECT, target logicalcanvas32x32px. Preserve full 32:32 aspect ratio. True transparent RGBA outside silhouette. Entire object fits within2logicalpixelclear margins, horizontalcenter and bottomgroundbaseline at heightminus2.\nStyle: handmade low-resolution PIXEL ART, crisp coarse pixel clusters and restrained48colors, no smooth painting or antialiasing, upperleft highlights and lower-rightshade, same rendering as reference. NO brightgold, orange or warm glow; restrained underworld colors. \nAvoid: any text, names, letters, runes, labels, grid, watermark, logo, sheet with multiple objects, extra characters, modern objects, scenery/background panel, drop shadow outside silhouette, magic particles or bloom. Opaque solidpixelart, never semi-transparent alpha.",
+    "transparent": true
+  },
+  {
+    "type": "props",
+    "id": "small_cave",
+    "w": 128,
+    "h": 96,
+    "subject": "A SMALL dark cave in gray-black ice-cracked rock, wide rock surround with tunnel opening. Deep inside is ONE subtle seated large humanoid SHADOW with knees drawn up, dark tiny eyes, indistinct hidden NPC, no monster at entrance. Freestanding rock-mouth object, no landscape.",
+    "version": "v01",
+    "refs": [
+      "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskE_helheim_map_2026-10-17/refs/style_helheim.png"
+    ],
+    "prompt": "Use case: stylized-concept. Asset type: production lowresolution pixel art environment asset for a topdown3quarter dark underworld survival game.\nInput1 is STYLE REFERENCE ONLY: match its existing coldgray, deepgreen, boneivory and charcoal environments, pixel clusters, dark outlines and upperleft lighting; do not copy characters or contact-sheet layout. Other input if present is MATERIAL/FORM REFERENCE only.\nPrimary request: A SMALL dark cave in gray-black ice-cracked rock, wide rock surround with tunnel opening. Deep inside is ONE subtle seated large humanoid SHADOW with knees drawn up, dark tiny eyes, indistinct hidden NPC, no monster at entrance. Freestanding rock-mouth object, no landscape.\nEXACTLY ONE isolated environment OBJECT, target logicalcanvas128x96px. Preserve full 128:96 aspect ratio. True transparent RGBA outside silhouette. Entire object fits within2logicalpixelclear margins, horizontalcenter and bottomgroundbaseline at heightminus2.\nStyle: handmade low-resolution PIXEL ART, crisp coarse pixel clusters and restrained48colors, no smooth painting or antialiasing, upperleft highlights and lower-rightshade, same rendering as reference. NO brightgold, orange or warm glow; restrained underworld colors. \nAvoid: any text, names, letters, runes, labels, grid, watermark, logo, sheet with multiple objects, extra characters, modern objects, scenery/background panel, drop shadow outside silhouette, magic particles or bloom. Opaque solidpixelart, never semi-transparent alpha.",
+    "transparent": true
+  },
+  {
+    "type": "props",
+    "id": "nail_heap_01",
+    "w": 96,
+    "h": 80,
+    "subject": "A low mound of many discarded flattened gray-yellow HUMAN FINGERNAILS, curved keratin plates of different sizes stacked loosely. Low broad mountain-like heap, not rocks/skulls/coins, no gold glint.",
+    "version": "v01",
+    "refs": [
+      "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskE_helheim_map_2026-10-17/refs/style_helheim.png",
+      "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskE_helheim_map_2026-10-17/refs/nail_golem.png"
+    ],
+    "prompt": "Use case: stylized-concept. Asset type: production lowresolution pixel art environment asset for a topdown3quarter dark underworld survival game.\nInput1 is STYLE REFERENCE ONLY: match its existing coldgray, deepgreen, boneivory and charcoal environments, pixel clusters, dark outlines and upperleft lighting; do not copy characters or contact-sheet layout. Other input if present is MATERIAL/FORM REFERENCE only.\nPrimary request: A low mound of many discarded flattened gray-yellow HUMAN FINGERNAILS, curved keratin plates of different sizes stacked loosely. Low broad mountain-like heap, not rocks/skulls/coins, no gold glint.\nEXACTLY ONE isolated environment OBJECT, target logicalcanvas96x80px. Preserve full 96:80 aspect ratio. True transparent RGBA outside silhouette. Entire object fits within2logicalpixelclear margins, horizontalcenter and bottomgroundbaseline at heightminus2.\nStyle: handmade low-resolution PIXEL ART, crisp coarse pixel clusters and restrained48colors, no smooth painting or antialiasing, upperleft highlights and lower-rightshade, same rendering as reference. NO brightgold, orange or warm glow; restrained underworld colors. \nAvoid: any text, names, letters, runes, labels, grid, watermark, logo, sheet with multiple objects, extra characters, modern objects, scenery/background panel, drop shadow outside silhouette, magic particles or bloom. Opaque solidpixelart, never semi-transparent alpha.",
+    "transparent": true
+  },
+  {
+    "type": "props",
+    "id": "nail_heap_02",
+    "w": 96,
+    "h": 80,
+    "subject": "Second irregular mound of flattened gray-yellow HUMAN FINGERNAILS and keratin clippings, taller jagged pile with a lower collapsed flank. Same material/colors as first pile, distinct outline, no coins/skulls.",
+    "version": "v01",
+    "refs": [
+      "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskE_helheim_map_2026-10-17/refs/style_helheim.png",
+      "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskE_helheim_map_2026-10-17/refs/nail_golem.png"
+    ],
+    "prompt": "Use case: stylized-concept. Asset type: production lowresolution pixel art environment asset for a topdown3quarter dark underworld survival game.\nInput1 is STYLE REFERENCE ONLY: match its existing coldgray, deepgreen, boneivory and charcoal environments, pixel clusters, dark outlines and upperleft lighting; do not copy characters or contact-sheet layout. Other input if present is MATERIAL/FORM REFERENCE only.\nPrimary request: Second irregular mound of flattened gray-yellow HUMAN FINGERNAILS and keratin clippings, taller jagged pile with a lower collapsed flank. Same material/colors as first pile, distinct outline, no coins/skulls.\nEXACTLY ONE isolated environment OBJECT, target logicalcanvas96x80px. Preserve full 96:80 aspect ratio. True transparent RGBA outside silhouette. Entire object fits within2logicalpixelclear margins, horizontalcenter and bottomgroundbaseline at heightminus2.\nStyle: handmade low-resolution PIXEL ART, crisp coarse pixel clusters and restrained48colors, no smooth painting or antialiasing, upperleft highlights and lower-rightshade, same rendering as reference. NO brightgold, orange or warm glow; restrained underworld colors. \nAvoid: any text, names, letters, runes, labels, grid, watermark, logo, sheet with multiple objects, extra characters, modern objects, scenery/background panel, drop shadow outside silhouette, magic particles or bloom. Opaque solidpixelart, never semi-transparent alpha.",
+    "transparent": true
+  },
+  {
+    "type": "props",
+    "id": "workbench",
+    "w": 96,
+    "h": 64,
+    "subject": "A rough old dark wooden workbench seen topdownthreequarter, lying on top one blunt iron HAMMER and one curved SCRAPER tool for assembling nail plates, a few pale keratin scraps. No person or clutter beyond tools.",
+    "version": "v01",
+    "refs": [
+      "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskE_helheim_map_2026-10-17/refs/style_helheim.png"
+    ],
+    "prompt": "Use case: stylized-concept. Asset type: production lowresolution pixel art environment asset for a topdown3quarter dark underworld survival game.\nInput1 is STYLE REFERENCE ONLY: match its existing coldgray, deepgreen, boneivory and charcoal environments, pixel clusters, dark outlines and upperleft lighting; do not copy characters or contact-sheet layout. Other input if present is MATERIAL/FORM REFERENCE only.\nPrimary request: A rough old dark wooden workbench seen topdownthreequarter, lying on top one blunt iron HAMMER and one curved SCRAPER tool for assembling nail plates, a few pale keratin scraps. No person or clutter beyond tools.\nEXACTLY ONE isolated environment OBJECT, target logicalcanvas96x64px. Preserve full 96:64 aspect ratio. True transparent RGBA outside silhouette. Entire object fits within2logicalpixelclear margins, horizontalcenter and bottomgroundbaseline at heightminus2.\nStyle: handmade low-resolution PIXEL ART, crisp coarse pixel clusters and restrained48colors, no smooth painting or antialiasing, upperleft highlights and lower-rightshade, same rendering as reference. NO brightgold, orange or warm glow; restrained underworld colors. \nAvoid: any text, names, letters, runes, labels, grid, watermark, logo, sheet with multiple objects, extra characters, modern objects, scenery/background panel, drop shadow outside silhouette, magic particles or bloom. Opaque solidpixelart, never semi-transparent alpha.",
+    "transparent": true
+  },
+  {
+    "type": "props",
+    "id": "nail_plank",
+    "w": 96,
+    "h": 48,
+    "subject": "A half-finished long boat PLANK assembled from overlapping flattened gray-yellow HUMAN FINGERNAIL plates lashed to dark supporting strips, lies diagonally almost horizontally flat, no ship, no wood plank mistaken for nail material.",
+    "version": "v01",
+    "refs": [
+      "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskE_helheim_map_2026-10-17/refs/style_helheim.png",
+      "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskE_helheim_map_2026-10-17/refs/nail_golem.png"
+    ],
+    "prompt": "Use case: stylized-concept. Asset type: production lowresolution pixel art environment asset for a topdown3quarter dark underworld survival game.\nInput1 is STYLE REFERENCE ONLY: match its existing coldgray, deepgreen, boneivory and charcoal environments, pixel clusters, dark outlines and upperleft lighting; do not copy characters or contact-sheet layout. Other input if present is MATERIAL/FORM REFERENCE only.\nPrimary request: A half-finished long boat PLANK assembled from overlapping flattened gray-yellow HUMAN FINGERNAIL plates lashed to dark supporting strips, lies diagonally almost horizontally flat, no ship, no wood plank mistaken for nail material.\nEXACTLY ONE isolated environment OBJECT, target logicalcanvas96x48px. Preserve full 96:48 aspect ratio. True transparent RGBA outside silhouette. Entire object fits within2logicalpixelclear margins, horizontalcenter and bottomgroundbaseline at heightminus2.\nStyle: handmade low-resolution PIXEL ART, crisp coarse pixel clusters and restrained48colors, no smooth painting or antialiasing, upperleft highlights and lower-rightshade, same rendering as reference. NO brightgold, orange or warm glow; restrained underworld colors. \nAvoid: any text, names, letters, runes, labels, grid, watermark, logo, sheet with multiple objects, extra characters, modern objects, scenery/background panel, drop shadow outside silhouette, magic particles or bloom. Opaque solidpixelart, never semi-transparent alpha.",
+    "transparent": true
+  },
+  {
+    "type": "props",
+    "id": "half_golem",
+    "w": 64,
+    "h": 64,
+    "subject": "An UNFINISHED fingernail construct collapsed on ground: chunky overlapping gray-yellow keratin-plate torso, crude small head, ONE ATTACHED heavy arm, other arm and legs unfinished/absent with exposed lashings. Lying on side inactive, not standing intact, no face glow/FX.",
+    "version": "v01",
+    "refs": [
+      "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskE_helheim_map_2026-10-17/refs/style_helheim.png",
+      "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskE_helheim_map_2026-10-17/refs/nail_golem.png"
+    ],
+    "prompt": "Use case: stylized-concept. Asset type: production lowresolution pixel art environment asset for a topdown3quarter dark underworld survival game.\nInput1 is STYLE REFERENCE ONLY: match its existing coldgray, deepgreen, boneivory and charcoal environments, pixel clusters, dark outlines and upperleft lighting; do not copy characters or contact-sheet layout. Other input if present is MATERIAL/FORM REFERENCE only.\nPrimary request: An UNFINISHED fingernail construct collapsed on ground: chunky overlapping gray-yellow keratin-plate torso, crude small head, ONE ATTACHED heavy arm, other arm and legs unfinished/absent with exposed lashings. Lying on side inactive, not standing intact, no face glow/FX.\nEXACTLY ONE isolated environment OBJECT, target logicalcanvas64x64px. Preserve full 64:64 aspect ratio. True transparent RGBA outside silhouette. Entire object fits within2logicalpixelclear margins, horizontalcenter and bottomgroundbaseline at heightminus2.\nStyle: handmade low-resolution PIXEL ART, crisp coarse pixel clusters and restrained48colors, no smooth painting or antialiasing, upperleft highlights and lower-rightshade, same rendering as reference. NO brightgold, orange or warm glow; restrained underworld colors. \nAvoid: any text, names, letters, runes, labels, grid, watermark, logo, sheet with multiple objects, extra characters, modern objects, scenery/background panel, drop shadow outside silhouette, magic particles or bloom. Opaque solidpixelart, never semi-transparent alpha.",
+    "transparent": true
+  },
+  {
+    "type": "props",
+    "id": "sunken_tree",
+    "w": 96,
+    "h": 96,
+    "subject": "A dead gray-black marsh tree half submerged: twisted leafless branches, truncated trunk disappears into small dark gray-green mud collar, visible damp roots, no large puddle or ground tile.",
+    "version": "v01",
+    "refs": [
+      "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskE_helheim_map_2026-10-17/refs/style_helheim.png",
+      "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskE_helheim_map_2026-10-17/refs/mist_dead_tree.png"
+    ],
+    "prompt": "Use case: stylized-concept. Asset type: production lowresolution pixel art environment asset for a topdown3quarter dark underworld survival game.\nInput1 is STYLE REFERENCE ONLY: match its existing coldgray, deepgreen, boneivory and charcoal environments, pixel clusters, dark outlines and upperleft lighting; do not copy characters or contact-sheet layout. Other input if present is MATERIAL/FORM REFERENCE only.\nPrimary request: A dead gray-black marsh tree half submerged: twisted leafless branches, truncated trunk disappears into small dark gray-green mud collar, visible damp roots, no large puddle or ground tile.\nEXACTLY ONE isolated environment OBJECT, target logicalcanvas96x96px. Preserve full 96:96 aspect ratio. True transparent RGBA outside silhouette. Entire object fits within2logicalpixelclear margins, horizontalcenter and bottomgroundbaseline at heightminus2.\nStyle: handmade low-resolution PIXEL ART, crisp coarse pixel clusters and restrained48colors, no smooth painting or antialiasing, upperleft highlights and lower-rightshade, same rendering as reference. NO brightgold, orange or warm glow; restrained underworld colors. \nAvoid: any text, names, letters, runes, labels, grid, watermark, logo, sheet with multiple objects, extra characters, modern objects, scenery/background panel, drop shadow outside silhouette, magic particles or bloom. Opaque solidpixelart, never semi-transparent alpha.",
+    "transparent": true
+  },
+  {
+    "type": "props",
+    "id": "floating_bones",
+    "w": 64,
+    "h": 32,
+    "subject": "A small loose group of gray-white rib pieces and long bone shards lying/floating flat, partly darkened as underwater, no skull focal point, no water background.",
+    "version": "v01",
+    "refs": [
+      "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskE_helheim_map_2026-10-17/refs/style_helheim.png"
+    ],
+    "prompt": "Use case: stylized-concept. Asset type: production lowresolution pixel art environment asset for a topdown3quarter dark underworld survival game.\nInput1 is STYLE REFERENCE ONLY: match its existing coldgray, deepgreen, boneivory and charcoal environments, pixel clusters, dark outlines and upperleft lighting; do not copy characters or contact-sheet layout. Other input if present is MATERIAL/FORM REFERENCE only.\nPrimary request: A small loose group of gray-white rib pieces and long bone shards lying/floating flat, partly darkened as underwater, no skull focal point, no water background.\nEXACTLY ONE isolated environment OBJECT, target logicalcanvas64x32px. Preserve full 64:32 aspect ratio. True transparent RGBA outside silhouette. Entire object fits within2logicalpixelclear margins, horizontalcenter and bottomgroundbaseline at heightminus2.\nStyle: handmade low-resolution PIXEL ART, crisp coarse pixel clusters and restrained48colors, no smooth painting or antialiasing, upperleft highlights and lower-rightshade, same rendering as reference. NO brightgold, orange or warm glow; restrained underworld colors. \nAvoid: any text, names, letters, runes, labels, grid, watermark, logo, sheet with multiple objects, extra characters, modern objects, scenery/background panel, drop shadow outside silhouette, magic particles or bloom. Opaque solidpixelart, never semi-transparent alpha.",
+    "transparent": true
+  },
+  {
+    "type": "props",
+    "id": "luggage",
+    "w": 48,
+    "h": 48,
+    "subject": "A deceased commoner's discarded small gray-brown cloth bundle tied with coarse rope, worn dull traveling luggage, no person/emblem/text.",
+    "version": "v01",
+    "refs": [
+      "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskE_helheim_map_2026-10-17/refs/style_helheim.png"
+    ],
+    "prompt": "Use case: stylized-concept. Asset type: production lowresolution pixel art environment asset for a topdown3quarter dark underworld survival game.\nInput1 is STYLE REFERENCE ONLY: match its existing coldgray, deepgreen, boneivory and charcoal environments, pixel clusters, dark outlines and upperleft lighting; do not copy characters or contact-sheet layout. Other input if present is MATERIAL/FORM REFERENCE only.\nPrimary request: A deceased commoner's discarded small gray-brown cloth bundle tied with coarse rope, worn dull traveling luggage, no person/emblem/text.\nEXACTLY ONE isolated environment OBJECT, target logicalcanvas48x48px. Preserve full 48:48 aspect ratio. True transparent RGBA outside silhouette. Entire object fits within2logicalpixelclear margins, horizontalcenter and bottomgroundbaseline at heightminus2.\nStyle: handmade low-resolution PIXEL ART, crisp coarse pixel clusters and restrained48colors, no smooth painting or antialiasing, upperleft highlights and lower-rightshade, same rendering as reference. NO brightgold, orange or warm glow; restrained underworld colors. \nAvoid: any text, names, letters, runes, labels, grid, watermark, logo, sheet with multiple objects, extra characters, modern objects, scenery/background panel, drop shadow outside silhouette, magic particles or bloom. Opaque solidpixelart, never semi-transparent alpha.",
+    "transparent": true
+  },
+  {
+    "type": "decals",
+    "id": "queue_tracks_01",
+    "w": 64,
+    "h": 64,
+    "subject": "One narrow COLUMN of SIX faded small HUMAN FOOTPRINT impressions, three left/right pairs, walking toward image TOP/NORTH. Toes point UP. Dark gray shallow dirt marks, no visible feet or shoes.",
+    "version": "v01",
+    "refs": [
+      "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskE_helheim_map_2026-10-17/refs/style_helheim.png"
+    ],
+    "prompt": "Use case: stylized-concept. Asset type: production lowresolution pixel art environment asset for a topdown3quarter dark underworld survival game.\nInput1 is STYLE REFERENCE ONLY: match its existing coldgray, deepgreen, boneivory and charcoal environments, pixel clusters, dark outlines and upperleft lighting; do not copy characters or contact-sheet layout. Other input if present is MATERIAL/FORM REFERENCE only.\nPrimary request: One narrow COLUMN of SIX faded small HUMAN FOOTPRINT impressions, three left/right pairs, walking toward image TOP/NORTH. Toes point UP. Dark gray shallow dirt marks, no visible feet or shoes.\nEXACTLY ONE isolated flat GROUND DECAL, target logicalcanvas64x64px. Preserve full 64:64 aspect ratio. True transparent RGBA outside silhouette. Entire object fits within2logicalpixelclear margins, centered flat impression, no groundtile.\nStyle: handmade low-resolution PIXEL ART, crisp coarse pixel clusters and restrained48colors, no smooth painting or antialiasing, upperleft highlights and lower-rightshade, same rendering as reference. NO brightgold, orange or warm glow; restrained underworld colors. \nAvoid: any text, names, letters, runes, labels, grid, watermark, logo, sheet with multiple objects, extra characters, modern objects, scenery/background panel, drop shadow outside silhouette, magic particles or bloom. Opaque solidpixelart, never semi-transparent alpha.",
+    "transparent": true
+  },
+  {
+    "type": "decals",
+    "id": "queue_tracks_02",
+    "w": 64,
+    "h": 64,
+    "subject": "Second narrow northbound COLUMN of EIGHT faded small HUMAN FOOTPRINT impressions, four irregular left/right pairs, toes UP, slightly shuffling elderly stride. Darkgray dirt marks.",
+    "version": "v01",
+    "refs": [
+      "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskE_helheim_map_2026-10-17/refs/style_helheim.png"
+    ],
+    "prompt": "Use case: stylized-concept. Asset type: production lowresolution pixel art environment asset for a topdown3quarter dark underworld survival game.\nInput1 is STYLE REFERENCE ONLY: match its existing coldgray, deepgreen, boneivory and charcoal environments, pixel clusters, dark outlines and upperleft lighting; do not copy characters or contact-sheet layout. Other input if present is MATERIAL/FORM REFERENCE only.\nPrimary request: Second narrow northbound COLUMN of EIGHT faded small HUMAN FOOTPRINT impressions, four irregular left/right pairs, toes UP, slightly shuffling elderly stride. Darkgray dirt marks.\nEXACTLY ONE isolated flat GROUND DECAL, target logicalcanvas64x64px. Preserve full 64:64 aspect ratio. True transparent RGBA outside silhouette. Entire object fits within2logicalpixelclear margins, centered flat impression, no groundtile.\nStyle: handmade low-resolution PIXEL ART, crisp coarse pixel clusters and restrained48colors, no smooth painting or antialiasing, upperleft highlights and lower-rightshade, same rendering as reference. NO brightgold, orange or warm glow; restrained underworld colors. \nAvoid: any text, names, letters, runes, labels, grid, watermark, logo, sheet with multiple objects, extra characters, modern objects, scenery/background panel, drop shadow outside silhouette, magic particles or bloom. Opaque solidpixelart, never semi-transparent alpha.",
+    "transparent": true
+  },
+  {
+    "type": "decals",
+    "id": "hoof_tracks_01",
+    "w": 64,
+    "h": 64,
+    "subject": "EXACTLY EIGHT separate horseshoe-shaped HOOF PRINT impressions arranged as four pairs in two columns, clearly countable, pointing UP/NORTH, irregular stride. No horse, no extra ninth mark, no human footprints.",
+    "version": "v01",
+    "refs": [
+      "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskE_helheim_map_2026-10-17/refs/style_helheim.png"
+    ],
+    "prompt": "Use case: stylized-concept. Asset type: production lowresolution pixel art environment asset for a topdown3quarter dark underworld survival game.\nInput1 is STYLE REFERENCE ONLY: match its existing coldgray, deepgreen, boneivory and charcoal environments, pixel clusters, dark outlines and upperleft lighting; do not copy characters or contact-sheet layout. Other input if present is MATERIAL/FORM REFERENCE only.\nPrimary request: EXACTLY EIGHT separate horseshoe-shaped HOOF PRINT impressions arranged as four pairs in two columns, clearly countable, pointing UP/NORTH, irregular stride. No horse, no extra ninth mark, no human footprints.\nEXACTLY ONE isolated flat GROUND DECAL, target logicalcanvas64x64px. Preserve full 64:64 aspect ratio. True transparent RGBA outside silhouette. Entire object fits within2logicalpixelclear margins, centered flat impression, no groundtile.\nStyle: handmade low-resolution PIXEL ART, crisp coarse pixel clusters and restrained48colors, no smooth painting or antialiasing, upperleft highlights and lower-rightshade, same rendering as reference. NO brightgold, orange or warm glow; restrained underworld colors. \nAvoid: any text, names, letters, runes, labels, grid, watermark, logo, sheet with multiple objects, extra characters, modern objects, scenery/background panel, drop shadow outside silhouette, magic particles or bloom. Opaque solidpixelart, never semi-transparent alpha.",
+    "transparent": true
+  },
+  {
+    "type": "decals",
+    "id": "hoof_tracks_02",
+    "w": 64,
+    "h": 64,
+    "subject": "EXACTLY EIGHT separate horseshoe-shaped HOOF PRINT impressions arranged in staggered four pairs/two columns, all pointing UP/NORTH; every mark clearly separated and countable. Alternate stride arrangement, no extra marks.",
+    "version": "v01",
+    "refs": [
+      "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskE_helheim_map_2026-10-17/refs/style_helheim.png"
+    ],
+    "prompt": "Use case: stylized-concept. Asset type: production lowresolution pixel art environment asset for a topdown3quarter dark underworld survival game.\nInput1 is STYLE REFERENCE ONLY: match its existing coldgray, deepgreen, boneivory and charcoal environments, pixel clusters, dark outlines and upperleft lighting; do not copy characters or contact-sheet layout. Other input if present is MATERIAL/FORM REFERENCE only.\nPrimary request: EXACTLY EIGHT separate horseshoe-shaped HOOF PRINT impressions arranged in staggered four pairs/two columns, all pointing UP/NORTH; every mark clearly separated and countable. Alternate stride arrangement, no extra marks.\nEXACTLY ONE isolated flat GROUND DECAL, target logicalcanvas64x64px. Preserve full 64:64 aspect ratio. True transparent RGBA outside silhouette. Entire object fits within2logicalpixelclear margins, centered flat impression, no groundtile.\nStyle: handmade low-resolution PIXEL ART, crisp coarse pixel clusters and restrained48colors, no smooth painting or antialiasing, upperleft highlights and lower-rightshade, same rendering as reference. NO brightgold, orange or warm glow; restrained underworld colors. \nAvoid: any text, names, letters, runes, labels, grid, watermark, logo, sheet with multiple objects, extra characters, modern objects, scenery/background panel, drop shadow outside silhouette, magic particles or bloom. Opaque solidpixelart, never semi-transparent alpha.",
+    "transparent": true
+  },
+  {
+    "type": "decals",
+    "id": "paw_tracks_01",
+    "w": 96,
+    "h": 96,
+    "subject": "Two HUGE DOG PAWPRINT ground impressions, each clearly FOUR rounded toe pads ahead of ONE broad central heel pad, walking diagonally upwardright. Dark charcoal marks, no claws as long scratches, no animal.",
+    "version": "v01",
+    "refs": [
+      "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskE_helheim_map_2026-10-17/refs/style_helheim.png"
+    ],
+    "prompt": "Use case: stylized-concept. Asset type: production lowresolution pixel art environment asset for a topdown3quarter dark underworld survival game.\nInput1 is STYLE REFERENCE ONLY: match its existing coldgray, deepgreen, boneivory and charcoal environments, pixel clusters, dark outlines and upperleft lighting; do not copy characters or contact-sheet layout. Other input if present is MATERIAL/FORM REFERENCE only.\nPrimary request: Two HUGE DOG PAWPRINT ground impressions, each clearly FOUR rounded toe pads ahead of ONE broad central heel pad, walking diagonally upwardright. Dark charcoal marks, no claws as long scratches, no animal.\nEXACTLY ONE isolated flat GROUND DECAL, target logicalcanvas96x96px. Preserve full 96:96 aspect ratio. True transparent RGBA outside silhouette. Entire object fits within2logicalpixelclear margins, centered flat impression, no groundtile.\nStyle: handmade low-resolution PIXEL ART, crisp coarse pixel clusters and restrained48colors, no smooth painting or antialiasing, upperleft highlights and lower-rightshade, same rendering as reference. NO brightgold, orange or warm glow; restrained underworld colors. \nAvoid: any text, names, letters, runes, labels, grid, watermark, logo, sheet with multiple objects, extra characters, modern objects, scenery/background panel, drop shadow outside silhouette, magic particles or bloom. Opaque solidpixelart, never semi-transparent alpha.",
+    "transparent": true
+  },
+  {
+    "type": "decals",
+    "id": "dried_blood_01",
+    "w": 96,
+    "h": 64,
+    "subject": "A subdued dark dried blood stain on ground, irregular flattened low puddle with small isolated old droplets nearby, deep DARK WINE RED/BROWN only, no bright fresh blood, no body or gore.",
+    "version": "v01",
+    "refs": [
+      "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskE_helheim_map_2026-10-17/refs/style_helheim.png"
+    ],
+    "prompt": "Use case: stylized-concept. Asset type: production lowresolution pixel art environment asset for a topdown3quarter dark underworld survival game.\nInput1 is STYLE REFERENCE ONLY: match its existing coldgray, deepgreen, boneivory and charcoal environments, pixel clusters, dark outlines and upperleft lighting; do not copy characters or contact-sheet layout. Other input if present is MATERIAL/FORM REFERENCE only.\nPrimary request: A subdued dark dried blood stain on ground, irregular flattened low puddle with small isolated old droplets nearby, deep DARK WINE RED/BROWN only, no bright fresh blood, no body or gore.\nEXACTLY ONE isolated flat GROUND DECAL, target logicalcanvas96x64px. Preserve full 96:64 aspect ratio. True transparent RGBA outside silhouette. Entire object fits within2logicalpixelclear margins, centered flat impression, no groundtile.\nStyle: handmade low-resolution PIXEL ART, crisp coarse pixel clusters and restrained48colors, no smooth painting or antialiasing, upperleft highlights and lower-rightshade, same rendering as reference. NO brightgold, orange or warm glow; restrained underworld colors. Only very dark wine-redbrown stain.\nAvoid: any text, names, letters, runes, labels, grid, watermark, logo, sheet with multiple objects, extra characters, modern objects, scenery/background panel, drop shadow outside silhouette, magic particles or bloom. Opaque solidpixelart, never semi-transparent alpha.",
+    "transparent": true
+  },
+  {
+    "type": "decals",
+    "id": "dried_blood_02",
+    "w": 96,
+    "h": 64,
+    "subject": "Second larger old dried blood smear on ground, dragged uneven shape and sparse small droplets, dark wine-redbrown, no bright red blood, no body.",
+    "version": "v01",
+    "refs": [
+      "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskE_helheim_map_2026-10-17/refs/style_helheim.png"
+    ],
+    "prompt": "Use case: stylized-concept. Asset type: production lowresolution pixel art environment asset for a topdown3quarter dark underworld survival game.\nInput1 is STYLE REFERENCE ONLY: match its existing coldgray, deepgreen, boneivory and charcoal environments, pixel clusters, dark outlines and upperleft lighting; do not copy characters or contact-sheet layout. Other input if present is MATERIAL/FORM REFERENCE only.\nPrimary request: Second larger old dried blood smear on ground, dragged uneven shape and sparse small droplets, dark wine-redbrown, no bright red blood, no body.\nEXACTLY ONE isolated flat GROUND DECAL, target logicalcanvas96x64px. Preserve full 96:64 aspect ratio. True transparent RGBA outside silhouette. Entire object fits within2logicalpixelclear margins, centered flat impression, no groundtile.\nStyle: handmade low-resolution PIXEL ART, crisp coarse pixel clusters and restrained48colors, no smooth painting or antialiasing, upperleft highlights and lower-rightshade, same rendering as reference. NO brightgold, orange or warm glow; restrained underworld colors. Only very dark wine-redbrown stain.\nAvoid: any text, names, letters, runes, labels, grid, watermark, logo, sheet with multiple objects, extra characters, modern objects, scenery/background panel, drop shadow outside silhouette, magic particles or bloom. Opaque solidpixelart, never semi-transparent alpha.",
+    "transparent": true
+  },
+  {
+    "type": "decals",
+    "id": "drag_mark_01",
+    "w": 64,
+    "h": 128,
+    "subject": "Two parallel elongated shallow scraping/drAG grooves running NORTH-SOUTH from dragging cargo on ground, interrupted scratch strokes and a few tiny keratin debris specks, dark gray, transparent between marks, no groundtile.",
+    "version": "v01",
+    "refs": [
+      "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskE_helheim_map_2026-10-17/refs/style_helheim.png"
+    ],
+    "prompt": "Use case: stylized-concept. Asset type: production lowresolution pixel art environment asset for a topdown3quarter dark underworld survival game.\nInput1 is STYLE REFERENCE ONLY: match its existing coldgray, deepgreen, boneivory and charcoal environments, pixel clusters, dark outlines and upperleft lighting; do not copy characters or contact-sheet layout. Other input if present is MATERIAL/FORM REFERENCE only.\nPrimary request: Two parallel elongated shallow scraping/drAG grooves running NORTH-SOUTH from dragging cargo on ground, interrupted scratch strokes and a few tiny keratin debris specks, dark gray, transparent between marks, no groundtile.\nEXACTLY ONE isolated flat GROUND DECAL, target logicalcanvas64x128px. Preserve full 64:128 aspect ratio. True transparent RGBA outside silhouette. Entire object fits within2logicalpixelclear margins, centered flat impression, no groundtile.\nStyle: handmade low-resolution PIXEL ART, crisp coarse pixel clusters and restrained48colors, no smooth painting or antialiasing, upperleft highlights and lower-rightshade, same rendering as reference. NO brightgold, orange or warm glow; restrained underworld colors. \nAvoid: any text, names, letters, runes, labels, grid, watermark, logo, sheet with multiple objects, extra characters, modern objects, scenery/background panel, drop shadow outside silhouette, magic particles or bloom. Opaque solidpixelart, never semi-transparent alpha.",
+    "transparent": true
+  },
+  {
+    "type": "decals",
+    "id": "root_crack_01",
+    "w": 96,
+    "h": 96,
+    "subject": "Irregular branching ground fissure caused by massive underground tree roots, thin jagged black-gray cracks with muted stone-gray chipped edges, low contrast, no glowing lava or raised rocks.",
+    "version": "v01",
+    "refs": [
+      "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskE_helheim_map_2026-10-17/refs/style_helheim.png"
+    ],
+    "prompt": "Use case: stylized-concept. Asset type: production lowresolution pixel art environment asset for a topdown3quarter dark underworld survival game.\nInput1 is STYLE REFERENCE ONLY: match its existing coldgray, deepgreen, boneivory and charcoal environments, pixel clusters, dark outlines and upperleft lighting; do not copy characters or contact-sheet layout. Other input if present is MATERIAL/FORM REFERENCE only.\nPrimary request: Irregular branching ground fissure caused by massive underground tree roots, thin jagged black-gray cracks with muted stone-gray chipped edges, low contrast, no glowing lava or raised rocks.\nEXACTLY ONE isolated flat GROUND DECAL, target logicalcanvas96x96px. Preserve full 96:96 aspect ratio. True transparent RGBA outside silhouette. Entire object fits within2logicalpixelclear margins, centered flat impression, no groundtile.\nStyle: handmade low-resolution PIXEL ART, crisp coarse pixel clusters and restrained48colors, no smooth painting or antialiasing, upperleft highlights and lower-rightshade, same rendering as reference. NO brightgold, orange or warm glow; restrained underworld colors. \nAvoid: any text, names, letters, runes, labels, grid, watermark, logo, sheet with multiple objects, extra characters, modern objects, scenery/background panel, drop shadow outside silhouette, magic particles or bloom. Opaque solidpixelart, never semi-transparent alpha.",
+    "transparent": true
+  },
+  {
+    "type": "decals",
+    "id": "root_crack_02",
+    "w": 96,
+    "h": 96,
+    "subject": "Second distinct irregular branching ground fissure, diagonal main split with short crooked branches, dark charcoal and muted stonegray edges, no glow/FX.",
+    "version": "v01",
+    "refs": [
+      "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskE_helheim_map_2026-10-17/refs/style_helheim.png"
+    ],
+    "prompt": "Use case: stylized-concept. Asset type: production lowresolution pixel art environment asset for a topdown3quarter dark underworld survival game.\nInput1 is STYLE REFERENCE ONLY: match its existing coldgray, deepgreen, boneivory and charcoal environments, pixel clusters, dark outlines and upperleft lighting; do not copy characters or contact-sheet layout. Other input if present is MATERIAL/FORM REFERENCE only.\nPrimary request: Second distinct irregular branching ground fissure, diagonal main split with short crooked branches, dark charcoal and muted stonegray edges, no glow/FX.\nEXACTLY ONE isolated flat GROUND DECAL, target logicalcanvas96x96px. Preserve full 96:96 aspect ratio. True transparent RGBA outside silhouette. Entire object fits within2logicalpixelclear margins, centered flat impression, no groundtile.\nStyle: handmade low-resolution PIXEL ART, crisp coarse pixel clusters and restrained48colors, no smooth painting or antialiasing, upperleft highlights and lower-rightshade, same rendering as reference. NO brightgold, orange or warm glow; restrained underworld colors. \nAvoid: any text, names, letters, runes, labels, grid, watermark, logo, sheet with multiple objects, extra characters, modern objects, scenery/background panel, drop shadow outside silhouette, magic particles or bloom. Opaque solidpixelart, never semi-transparent alpha.",
+    "transparent": true
+  },
+  {
+    "type": "decals",
+    "id": "moss_01",
+    "w": 64,
+    "h": 64,
+    "subject": "A low flat sparse patch of gray-white damp moss flecks following a stone crack, tiny restrained graygreen clusters, muted not bright, no stonebackground.",
+    "version": "v01",
+    "refs": [
+      "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskE_helheim_map_2026-10-17/refs/style_helheim.png"
+    ],
+    "prompt": "Use case: stylized-concept. Asset type: production lowresolution pixel art environment asset for a topdown3quarter dark underworld survival game.\nInput1 is STYLE REFERENCE ONLY: match its existing coldgray, deepgreen, boneivory and charcoal environments, pixel clusters, dark outlines and upperleft lighting; do not copy characters or contact-sheet layout. Other input if present is MATERIAL/FORM REFERENCE only.\nPrimary request: A low flat sparse patch of gray-white damp moss flecks following a stone crack, tiny restrained graygreen clusters, muted not bright, no stonebackground.\nEXACTLY ONE isolated flat GROUND DECAL, target logicalcanvas64x64px. Preserve full 64:64 aspect ratio. True transparent RGBA outside silhouette. Entire object fits within2logicalpixelclear margins, centered flat impression, no groundtile.\nStyle: handmade low-resolution PIXEL ART, crisp coarse pixel clusters and restrained48colors, no smooth painting or antialiasing, upperleft highlights and lower-rightshade, same rendering as reference. NO brightgold, orange or warm glow; restrained underworld colors. \nAvoid: any text, names, letters, runes, labels, grid, watermark, logo, sheet with multiple objects, extra characters, modern objects, scenery/background panel, drop shadow outside silhouette, magic particles or bloom. Opaque solidpixelart, never semi-transparent alpha.",
+    "transparent": true
+  },
+  {
+    "type": "decals",
+    "id": "moss_02",
+    "w": 64,
+    "h": 64,
+    "subject": "Second irregular sparse gray-white moss ground patch, broken lichen-like clusters with dark wet centers, low flat mutedgraygreen, no backgroundtile.",
+    "version": "v01",
+    "refs": [
+      "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskE_helheim_map_2026-10-17/refs/style_helheim.png"
+    ],
+    "prompt": "Use case: stylized-concept. Asset type: production lowresolution pixel art environment asset for a topdown3quarter dark underworld survival game.\nInput1 is STYLE REFERENCE ONLY: match its existing coldgray, deepgreen, boneivory and charcoal environments, pixel clusters, dark outlines and upperleft lighting; do not copy characters or contact-sheet layout. Other input if present is MATERIAL/FORM REFERENCE only.\nPrimary request: Second irregular sparse gray-white moss ground patch, broken lichen-like clusters with dark wet centers, low flat mutedgraygreen, no backgroundtile.\nEXACTLY ONE isolated flat GROUND DECAL, target logicalcanvas64x64px. Preserve full 64:64 aspect ratio. True transparent RGBA outside silhouette. Entire object fits within2logicalpixelclear margins, centered flat impression, no groundtile.\nStyle: handmade low-resolution PIXEL ART, crisp coarse pixel clusters and restrained48colors, no smooth painting or antialiasing, upperleft highlights and lower-rightshade, same rendering as reference. NO brightgold, orange or warm glow; restrained underworld colors. \nAvoid: any text, names, letters, runes, labels, grid, watermark, logo, sheet with multiple objects, extra characters, modern objects, scenery/background panel, drop shadow outside silhouette, magic particles or bloom. Opaque solidpixelart, never semi-transparent alpha.",
+    "transparent": true
+  }
+]

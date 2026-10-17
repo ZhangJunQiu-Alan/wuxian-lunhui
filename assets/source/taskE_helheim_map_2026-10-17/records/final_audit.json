@@ -1,0 +1,560 @@
+{
+  "task": "E",
+  "count": 91,
+  "technical_passed": 91,
+  "formal_approved_candidate_equal": true,
+  "missing_links": [],
+  "palette_rgb_union": 47,
+  "game_tested": false,
+  "files": [
+    {
+      "id": "dark_sea_01",
+      "same_bytes": true,
+      "sha256": "0037d7f92b58383fae5ebdc8a34e80839b65729e2705e984719b622a3405cef8",
+      "path": "assets/sprites/borders/helheim/dark_sea_01.png"
+    },
+    {
+      "id": "hel_wall_01",
+      "same_bytes": true,
+      "sha256": "29ee055046b74110783ab2bb15c3e3c7d67d31e4c0dad66bf6af9634931dbee4",
+      "path": "assets/sprites/borders/helheim/hel_wall_01.png"
+    },
+    {
+      "id": "fog_abyss_01",
+      "same_bytes": true,
+      "sha256": "fc96f322bc8c0e8291741c01828d115070232f6c2a7ce5b3b90febafeb4e41dd",
+      "path": "assets/sprites/borders/helheim/fog_abyss_01.png"
+    },
+    {
+      "id": "ice_cliff_01",
+      "same_bytes": true,
+      "sha256": "21412c517042dacadcbb2f4b966441dd07b2f2246df999df8e4411a5085b51f7",
+      "path": "assets/sprites/borders/helheim/ice_cliff_01.png"
+    },
+    {
+      "id": "border_corner_ne",
+      "same_bytes": true,
+      "sha256": "0ebc4a656909e354a4eabcb2b4dd0dc0aa151d358f72f9c9cfe86f74b0eb458c",
+      "path": "assets/sprites/borders/helheim/border_corner_ne.png"
+    },
+    {
+      "id": "border_corner_nw",
+      "same_bytes": true,
+      "sha256": "ef6258577b81392c0c230623976960be7c5adeff4888839811d7bd27a0da70d3",
+      "path": "assets/sprites/borders/helheim/border_corner_nw.png"
+    },
+    {
+      "id": "border_corner_se",
+      "same_bytes": true,
+      "sha256": "222492c52e1e5f58396577c26d5aef56a0495c2b12fbb1d01790b429856d9c1f",
+      "path": "assets/sprites/borders/helheim/border_corner_se.png"
+    },
+    {
+      "id": "border_corner_sw",
+      "same_bytes": true,
+      "sha256": "b9f08009693fc37287bb635e1c7deccfe364e55e0d577f4fc4ad30da0fd8d1fd",
+      "path": "assets/sprites/borders/helheim/border_corner_sw.png"
+    },
+    {
+      "id": "gnipa_cave",
+      "same_bytes": true,
+      "sha256": "70c8d57f6f50188deb54994b42d320a0b2dca8805bf0ded1bf91ac828ebad341",
+      "path": "assets/sprites/borders/helheim/gnipa_cave.png"
+    },
+    {
+      "id": "river_01",
+      "same_bytes": true,
+      "sha256": "e3912b01971c46907d8c8f0a3cb52f2f47ff886341bf493b72df777bb0118d45",
+      "path": "assets/sprites/ground/helheim/river_01.png"
+    },
+    {
+      "id": "river_02",
+      "same_bytes": true,
+      "sha256": "ff8f06f430d99be0f2b1332839da0b2ca01112db93d88df4276800b373d09151",
+      "path": "assets/sprites/ground/helheim/river_02.png"
+    },
+    {
+      "id": "river_ice",
+      "same_bytes": true,
+      "sha256": "e6519ab2cc9a787ee74f61ea43b3e0dab7638423783bb3f6146d11c5939c6888",
+      "path": "assets/sprites/ground/helheim/river_ice.png"
+    },
+    {
+      "id": "bone_path",
+      "same_bytes": true,
+      "sha256": "54233c94310931b0d5166ad0fc0d6e3aa042cd9c8cdc99fb6b9a5b7c619f54c8",
+      "path": "assets/sprites/ground/helheim/bone_path.png"
+    },
+    {
+      "id": "marsh",
+      "same_bytes": true,
+      "sha256": "5bb7bb4c34580cb8bdc354f21cbbe045fd3f38b1eb7619ebeb06140864751d49",
+      "path": "assets/sprites/ground/helheim/marsh.png"
+    },
+    {
+      "id": "plaza",
+      "same_bytes": true,
+      "sha256": "4b4cd0c34d5bcbfbd27d0f03da73babba8f8a247a26dcf060b5dc650e637fc52",
+      "path": "assets/sprites/ground/helheim/plaza.png"
+    },
+    {
+      "id": "gjoll_bridge",
+      "same_bytes": true,
+      "sha256": "057753f7aeff480ead091eb4475f17212ee0f47b76b99f8b0dd70f8d80d70b33",
+      "path": "assets/sprites/props/helheim/gjoll_bridge.png"
+    },
+    {
+      "id": "bridge_booth",
+      "same_bytes": true,
+      "sha256": "9be90bd6e7cfcab7d6a2d8ae49f664a6f7d978bc1e93b7a5662cd75ef60c32f8",
+      "path": "assets/sprites/props/helheim/bridge_booth.png"
+    },
+    {
+      "id": "soul_lamp",
+      "same_bytes": true,
+      "sha256": "4d38ead6747f350ed1364e2e525136dd73ca2cbbeee65a75b9d6d5b543712b7a",
+      "path": "assets/sprites/props/helheim/soul_lamp.png"
+    },
+    {
+      "id": "soul_lamp_lit",
+      "same_bytes": true,
+      "sha256": "c0a8b94bb1853ae54dae5e28ee6b14bef1150763ee85ae454194820c1ada3663",
+      "path": "assets/sprites/props/helheim/soul_lamp_lit.png"
+    },
+    {
+      "id": "cane",
+      "same_bytes": true,
+      "sha256": "03de6fd1e399a7b40a9cbbbc9dff53339d8d6f463f50df649aa10de1d6828147",
+      "path": "assets/sprites/props/helheim/cane.png"
+    },
+    {
+      "id": "straw_hat",
+      "same_bytes": true,
+      "sha256": "3d3c54c158864d5aa4aa2bf1e0b1f139edbc475a7e670dfbe544d71697409e85",
+      "path": "assets/sprites/props/helheim/straw_hat.png"
+    },
+    {
+      "id": "wine_jug",
+      "same_bytes": true,
+      "sha256": "3e66ab651e6452e2e10719d09242407af87b9b2fa272375289625c9d3da5b016",
+      "path": "assets/sprites/props/helheim/wine_jug.png"
+    },
+    {
+      "id": "wooden_horse",
+      "same_bytes": true,
+      "sha256": "cfe57f75213b3f769bc565c1d8f0da5a8c99083542bebfc6695192633a65a521",
+      "path": "assets/sprites/props/helheim/wooden_horse.png"
+    },
+    {
+      "id": "nail_pier",
+      "same_bytes": true,
+      "sha256": "e80b3b29414c104db9d44858a15c89f99e326a747ab4a1a70d7f5150cb6d9a8f",
+      "path": "assets/sprites/props/helheim/nail_pier.png"
+    },
+    {
+      "id": "nail_basket",
+      "same_bytes": true,
+      "sha256": "42a1af81d99d5b23b47f50c146138f165d2833ab58f1c19a253dcf0287be57d1",
+      "path": "assets/sprites/props/helheim/nail_basket.png"
+    },
+    {
+      "id": "cargo_crate",
+      "same_bytes": true,
+      "sha256": "140763c3b25aaa023bd333911f08246a1d9373b0c4a0db3e1c204781fe06c034",
+      "path": "assets/sprites/props/helheim/cargo_crate.png"
+    },
+    {
+      "id": "shield_spear",
+      "same_bytes": true,
+      "sha256": "56066d6c2e692c522a0e68321fbdb4e48bacc74ceffcd9e64a949de1756daee3",
+      "path": "assets/sprites/props/helheim/shield_spear.png"
+    },
+    {
+      "id": "hall_pillar",
+      "same_bytes": true,
+      "sha256": "18e6222f75168637235497c8387c1224686391660833bc74c9b2fc00a54d88f8",
+      "path": "assets/sprites/props/helheim/hall_pillar.png"
+    },
+    {
+      "id": "hall_arch_broken",
+      "same_bytes": true,
+      "sha256": "bd04f8488e6b37004c7ea1231d3defbd48821c533ac186c092c957d065773620",
+      "path": "assets/sprites/props/helheim/hall_arch_broken.png"
+    },
+    {
+      "id": "empty_throne",
+      "same_bytes": true,
+      "sha256": "444fd43acd5c77bcdc13024499f4dc90f1127d82f1db619dd3a775b425a09078",
+      "path": "assets/sprites/props/helheim/empty_throne.png"
+    },
+    {
+      "id": "long_table",
+      "same_bytes": true,
+      "sha256": "07e69233c5609e34f6002eaba8f4a800bbc844200a93325b674f721dbf179c06",
+      "path": "assets/sprites/props/helheim/long_table.png"
+    },
+    {
+      "id": "hall_carpet",
+      "same_bytes": true,
+      "sha256": "4443b6037fa6611bd21dc946c8f02532ae89a9f7326472a513408648b89c53dd",
+      "path": "assets/sprites/props/helheim/hall_carpet.png"
+    },
+    {
+      "id": "world_root_arch",
+      "same_bytes": true,
+      "sha256": "c424abbb6f13c94d51a5ab477df0e2c582e889c6665073b9fb788f3c334f08b9",
+      "path": "assets/sprites/props/helheim/world_root_arch.png"
+    },
+    {
+      "id": "glow_mushroom",
+      "same_bytes": true,
+      "sha256": "c9fb32e23aabfce1d7935319f1aa0a11584445726a4e5050178d41805ac1b48d",
+      "path": "assets/sprites/props/helheim/glow_mushroom.png"
+    },
+    {
+      "id": "small_cave",
+      "same_bytes": true,
+      "sha256": "2be6b5c76cc3f8a02fc6b3f2352410345e330b7783a3534185a871bfc5068d0f",
+      "path": "assets/sprites/props/helheim/small_cave.png"
+    },
+    {
+      "id": "nail_heap_01",
+      "same_bytes": true,
+      "sha256": "0ac5883b397dc1f3cee7566ae3d182d7d92d916e3ff23e68430fa1b27a26dd81",
+      "path": "assets/sprites/props/helheim/nail_heap_01.png"
+    },
+    {
+      "id": "nail_heap_02",
+      "same_bytes": true,
+      "sha256": "051ec13f29f04a188a0ae1438bb29900516355bcf8e34ccfe3fd0e46e16cb247",
+      "path": "assets/sprites/props/helheim/nail_heap_02.png"
+    },
+    {
+      "id": "workbench",
+      "same_bytes": true,
+      "sha256": "a4753c197e69c254af316306a36ac0acaacbad7a70ed44af243f3c2051c7d316",
+      "path": "assets/sprites/props/helheim/workbench.png"
+    },
+    {
+      "id": "nail_plank",
+      "same_bytes": true,
+      "sha256": "18e89b55fb004c8244e586be8c4315aeef7273d52dfab9aec19ef0316bdcbb4d",
+      "path": "assets/sprites/props/helheim/nail_plank.png"
+    },
+    {
+      "id": "half_golem",
+      "same_bytes": true,
+      "sha256": "18f4df4d50ef976774056ab035dc9ee598b55c55755357c50c61221062dbb426",
+      "path": "assets/sprites/props/helheim/half_golem.png"
+    },
+    {
+      "id": "sunken_tree",
+      "same_bytes": true,
+      "sha256": "8aa0f27c56c55354168a8a60a3a0bfd4d022adddba4a41b18c1372319d0fd18f",
+      "path": "assets/sprites/props/helheim/sunken_tree.png"
+    },
+    {
+      "id": "floating_bones",
+      "same_bytes": true,
+      "sha256": "69c38dc78a4bb7301a614553d6a67c98b2e42f8a0b6e37c1e8684b6f29d19129",
+      "path": "assets/sprites/props/helheim/floating_bones.png"
+    },
+    {
+      "id": "luggage",
+      "same_bytes": true,
+      "sha256": "da0dd54cbb2823c9a3187bd53d8b71bbaf84cad36988e09683918b463a1118f5",
+      "path": "assets/sprites/props/helheim/luggage.png"
+    },
+    {
+      "id": "queue_tracks_01",
+      "same_bytes": true,
+      "sha256": "a803f707791ae7a33870ab2b180f95e0cb50a9a85a828c5b0fe7b719ce8a2659",
+      "path": "assets/sprites/decals/helheim/queue_tracks_01.png"
+    },
+    {
+      "id": "queue_tracks_02",
+      "same_bytes": true,
+      "sha256": "a9a1ea78284de842d425500ceea55342ec01a72a442b30f256ac123871ee0571",
+      "path": "assets/sprites/decals/helheim/queue_tracks_02.png"
+    },
+    {
+      "id": "hoof_tracks_01",
+      "same_bytes": true,
+      "sha256": "fa27750e423dc221c9fc1b94eddc6ea71df32935ce68de79c945a7e7362197f1",
+      "path": "assets/sprites/decals/helheim/hoof_tracks_01.png"
+    },
+    {
+      "id": "hoof_tracks_02",
+      "same_bytes": true,
+      "sha256": "e046dec634965627b48bc305943cc78c4bebdfc2e9db2e0faaaceb2eaf15e86e",
+      "path": "assets/sprites/decals/helheim/hoof_tracks_02.png"
+    },
+    {
+      "id": "paw_tracks_01",
+      "same_bytes": true,
+      "sha256": "e382f1ca769a53b539b2253390723084c05b013d611dfc06d7e02c90e5e957d0",
+      "path": "assets/sprites/decals/helheim/paw_tracks_01.png"
+    },
+    {
+      "id": "dried_blood_01",
+      "same_bytes": true,
+      "sha256": "f5bb4f073c70922b9a94fb41e6022c708c7572c5d80e6f91d1be21211a0e4953",
+      "path": "assets/sprites/decals/helheim/dried_blood_01.png"
+    },
+    {
+      "id": "dried_blood_02",
+      "same_bytes": true,
+      "sha256": "e39f9a6aa51faba364fb03618665ce22527516630e88c4b6edb3a5782c7ad824",
+      "path": "assets/sprites/decals/helheim/dried_blood_02.png"
+    },
+    {
+      "id": "drag_mark_01",
+      "same_bytes": true,
+      "sha256": "8526f49f0d6af7affa6740aee52f30d9bbf747ad347dafe3ff83ea55dba804f0",
+      "path": "assets/sprites/decals/helheim/drag_mark_01.png"
+    },
+    {
+      "id": "root_crack_01",
+      "same_bytes": true,
+      "sha256": "a49bccb6adbae0da698313f3e363ae1b693600425faf904211ad45e5f86cc729",
+      "path": "assets/sprites/decals/helheim/root_crack_01.png"
+    },
+    {
+      "id": "root_crack_02",
+      "same_bytes": true,
+      "sha256": "20b0e5d1d91eaaa3c52c36949e8f44f47f7a911a718bc7c66106aca317ad8eea",
+      "path": "assets/sprites/decals/helheim/root_crack_02.png"
+    },
+    {
+      "id": "moss_01",
+      "same_bytes": true,
+      "sha256": "08affa9ebaf52b9f6450d340821d56cae9033db5edca938e969ec92b7edf0dfb",
+      "path": "assets/sprites/decals/helheim/moss_01.png"
+    },
+    {
+      "id": "moss_02",
+      "same_bytes": true,
+      "sha256": "6ebd82e5c4788f6cb4b32694f6ef75465c57d0587f5344b5e6185fbf93f2457a",
+      "path": "assets/sprites/decals/helheim/moss_02.png"
+    },
+    {
+      "id": "river_edge_n",
+      "same_bytes": true,
+      "sha256": "013f46db7fdd2be88c4549dbd3b0bfdc152d1737483538f54367b7f388aba1c7",
+      "path": "assets/sprites/ground/helheim/river_edge_n.png"
+    },
+    {
+      "id": "river_edge_e",
+      "same_bytes": true,
+      "sha256": "91417c5e46a3e19a83caf7d80263d7e86f9a8cbfb209d18055e45742735be41c",
+      "path": "assets/sprites/ground/helheim/river_edge_e.png"
+    },
+    {
+      "id": "river_edge_s",
+      "same_bytes": true,
+      "sha256": "62d099d40d579314b893f0817028752a47f189c8a79f782bc2e14d66bf4b33e9",
+      "path": "assets/sprites/ground/helheim/river_edge_s.png"
+    },
+    {
+      "id": "river_edge_w",
+      "same_bytes": true,
+      "sha256": "d6e7173c485bbe53d74f351bf2a3705451a0d4831a62edb3ae46818dc2ad66ca",
+      "path": "assets/sprites/ground/helheim/river_edge_w.png"
+    },
+    {
+      "id": "river_edge_outer_ne",
+      "same_bytes": true,
+      "sha256": "a0c42652c8d07a819630f9bb8ca65f03d8201f49af232d1bbc945744b92ddc55",
+      "path": "assets/sprites/ground/helheim/river_edge_outer_ne.png"
+    },
+    {
+      "id": "river_edge_outer_nw",
+      "same_bytes": true,
+      "sha256": "a79fc6d8f9d489ae008f18417634c90953f64b897c48eccc33146fcad8b92c68",
+      "path": "assets/sprites/ground/helheim/river_edge_outer_nw.png"
+    },
+    {
+      "id": "river_edge_outer_se",
+      "same_bytes": true,
+      "sha256": "763e0d4fd59489ca101d248dc81f924ecef8e78eefb4f55a61661f9eddb426be",
+      "path": "assets/sprites/ground/helheim/river_edge_outer_se.png"
+    },
+    {
+      "id": "river_edge_outer_sw",
+      "same_bytes": true,
+      "sha256": "1015dab7244a57e0611a67654df14f91bc043039b5546e34dda600558296e91f",
+      "path": "assets/sprites/ground/helheim/river_edge_outer_sw.png"
+    },
+    {
+      "id": "river_edge_inner_ne",
+      "same_bytes": true,
+      "sha256": "e0365ebbfdf13f8b7a0135aeb803e3d2cecb40f0d1d9ba42b90dc669d6138187",
+      "path": "assets/sprites/ground/helheim/river_edge_inner_ne.png"
+    },
+    {
+      "id": "river_edge_inner_nw",
+      "same_bytes": true,
+      "sha256": "c41d8526e3a9637ebbefca86d4048d56f8ed79b7b192d76ad6bf1b8be08bd25f",
+      "path": "assets/sprites/ground/helheim/river_edge_inner_nw.png"
+    },
+    {
+      "id": "river_edge_inner_se",
+      "same_bytes": true,
+      "sha256": "cb7c2501ad327a828ba193884ae1054925ee7504839bfd9515d7af94f8be453e",
+      "path": "assets/sprites/ground/helheim/river_edge_inner_se.png"
+    },
+    {
+      "id": "river_edge_inner_sw",
+      "same_bytes": true,
+      "sha256": "177198b039cc07d2d7b02c00e6b58af32a8c5dceb6d6426d73e343ccd541f5fb",
+      "path": "assets/sprites/ground/helheim/river_edge_inner_sw.png"
+    },
+    {
+      "id": "bone_path_edge_n",
+      "same_bytes": true,
+      "sha256": "1e8cfd3fe8f15bf02b0f38669cc5b5846fb6329e93e5bce40bf8b3b28552c055",
+      "path": "assets/sprites/ground/helheim/bone_path_edge_n.png"
+    },
+    {
+      "id": "bone_path_edge_e",
+      "same_bytes": true,
+      "sha256": "2128c02127cb4eede9b3684e25249f8d9778adecb28dcf162668acffaf358a8c",
+      "path": "assets/sprites/ground/helheim/bone_path_edge_e.png"
+    },
+    {
+      "id": "bone_path_edge_s",
+      "same_bytes": true,
+      "sha256": "e9552bbc6a7562ae9070a326eeebe62267ae95de443151317fd3affe610d27a3",
+      "path": "assets/sprites/ground/helheim/bone_path_edge_s.png"
+    },
+    {
+      "id": "bone_path_edge_w",
+      "same_bytes": true,
+      "sha256": "bcb2f7b89e82b92e573adacdcd9587b26b779f3aa4a7ff16009ca6b3d4c9ed71",
+      "path": "assets/sprites/ground/helheim/bone_path_edge_w.png"
+    },
+    {
+      "id": "bone_path_edge_outer_ne",
+      "same_bytes": true,
+      "sha256": "fc1d640ead93426d5cac01c91bc4a03ed0e10331fd04117c235e0a4b000a24c8",
+      "path": "assets/sprites/ground/helheim/bone_path_edge_outer_ne.png"
+    },
+    {
+      "id": "bone_path_edge_outer_nw",
+      "same_bytes": true,
+      "sha256": "c6de6324cc9bf3b2492fe79f49bb85c3eb4e2038562b216eb03e90e59c4ec2e2",
+      "path": "assets/sprites/ground/helheim/bone_path_edge_outer_nw.png"
+    },
+    {
+      "id": "bone_path_edge_outer_se",
+      "same_bytes": true,
+      "sha256": "5e56ea083102cfd1bda2189bd8d44e248a504159dbe97dcc129fcd0062e1b67f",
+      "path": "assets/sprites/ground/helheim/bone_path_edge_outer_se.png"
+    },
+    {
+      "id": "bone_path_edge_outer_sw",
+      "same_bytes": true,
+      "sha256": "f129768957912f6e43e3f393c01ec671dec81e303db64f1368be1062f3b41ccd",
+      "path": "assets/sprites/ground/helheim/bone_path_edge_outer_sw.png"
+    },
+    {
+      "id": "bone_path_edge_inner_ne",
+      "same_bytes": true,
+      "sha256": "632ddd6167395060c0f29ddd1ec6b5a11dec6dd0f09a2c2cf0695be7ca361e37",
+      "path": "assets/sprites/ground/helheim/bone_path_edge_inner_ne.png"
+    },
+    {
+      "id": "bone_path_edge_inner_nw",
+      "same_bytes": true,
+      "sha256": "fd98f557bb1c7ba1fadcca54846b4188c62ae832e588683d7823706fb2d75f20",
+      "path": "assets/sprites/ground/helheim/bone_path_edge_inner_nw.png"
+    },
+    {
+      "id": "bone_path_edge_inner_se",
+      "same_bytes": true,
+      "sha256": "b0a60d46d1d4766cf3eb6aea876ed1c0b9d1021f945a1adce9c064753e18208a",
+      "path": "assets/sprites/ground/helheim/bone_path_edge_inner_se.png"
+    },
+    {
+      "id": "bone_path_edge_inner_sw",
+      "same_bytes": true,
+      "sha256": "ed226b6d138cf23797aa7ea64a132fbe312d2371733b2f83169d047af408bc45",
+      "path": "assets/sprites/ground/helheim/bone_path_edge_inner_sw.png"
+    },
+    {
+      "id": "marsh_edge_n",
+      "same_bytes": true,
+      "sha256": "a90a17b12e555dcf125eb3333f3e23597a3a64c14b42bb648718e64c37692404",
+      "path": "assets/sprites/ground/helheim/marsh_edge_n.png"
+    },
+    {
+      "id": "marsh_edge_e",
+      "same_bytes": true,
+      "sha256": "21b37cf61ae99d129f6232bd01b7bcbb5f4b74275d82435d38b249674402b35a",
+      "path": "assets/sprites/ground/helheim/marsh_edge_e.png"
+    },
+    {
+      "id": "marsh_edge_s",
+      "same_bytes": true,
+      "sha256": "dda45264fa22a2ec6cf5bc5cdbd72dc453fd854293f1c172617ac63f63111095",
+      "path": "assets/sprites/ground/helheim/marsh_edge_s.png"
+    },
+    {
+      "id": "marsh_edge_w",
+      "same_bytes": true,
+      "sha256": "54379d6aac7447c936bc3ac843a81f5a5a3aea531cebca6497d6935e61b4412e",
+      "path": "assets/sprites/ground/helheim/marsh_edge_w.png"
+    },
+    {
+      "id": "marsh_edge_outer_ne",
+      "same_bytes": true,
+      "sha256": "64a4197ec9be2e6c366f271f37ef5efec1306f16b90657f1f1f90068315ea92d",
+      "path": "assets/sprites/ground/helheim/marsh_edge_outer_ne.png"
+    },
+    {
+      "id": "marsh_edge_outer_nw",
+      "same_bytes": true,
+      "sha256": "f9d21d9253f25e5e3c90ab364a069d8ce42bb80577fbef1715c985fad152077b",
+      "path": "assets/sprites/ground/helheim/marsh_edge_outer_nw.png"
+    },
+    {
+      "id": "marsh_edge_outer_se",
+      "same_bytes": true,
+      "sha256": "b78710b3972ebce8ec48b0b359a2fbb3db030454ddb9c52c7da17f7464082769",
+      "path": "assets/sprites/ground/helheim/marsh_edge_outer_se.png"
+    },
+    {
+      "id": "marsh_edge_outer_sw",
+      "same_bytes": true,
+      "sha256": "dd3f2f17222f22e6697dc1ac0d530edd84663564f2cd75bfbce705e9d7b84667",
+      "path": "assets/sprites/ground/helheim/marsh_edge_outer_sw.png"
+    },
+    {
+      "id": "marsh_edge_inner_ne",
+      "same_bytes": true,
+      "sha256": "3a45497b367f44ef726d9797dab4781021d662ddff90442ecb373c729c8eccaf",
+      "path": "assets/sprites/ground/helheim/marsh_edge_inner_ne.png"
+    },
+    {
+      "id": "marsh_edge_inner_nw",
+      "same_bytes": true,
+      "sha256": "b5d616c0a71e5f3489956b9d7d60663d13aa8d79b8f31100b34f94012da6d393",
+      "path": "assets/sprites/ground/helheim/marsh_edge_inner_nw.png"
+    },
+    {
+      "id": "marsh_edge_inner_se",
+      "same_bytes": true,
+      "sha256": "f0164ed86876ba478f6eac9c111c9acfff50f744fa91be1ec017896c31bac573",
+      "path": "assets/sprites/ground/helheim/marsh_edge_inner_se.png"
+    },
+    {
+      "id": "marsh_edge_inner_sw",
+      "same_bytes": true,
+      "sha256": "61b4b9d2e6141c19406e7cfa8a7f849886b6e757e4e2ed5f16fb5de3c5aa2428",
+      "path": "assets/sprites/ground/helheim/marsh_edge_inner_sw.png"
+    }
+  ],
+  "browser_review": "records/browser_review.json",
+  "source_inventory": "records/source_inventory.json",
+  "license_record": "assets/LICENSES.md Task E delivery2026-10-17"
+}

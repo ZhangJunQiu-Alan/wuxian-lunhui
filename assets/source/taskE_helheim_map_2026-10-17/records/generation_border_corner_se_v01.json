@@ -1,0 +1,18 @@
+{
+  "type": "borders",
+  "id": "border_corner_se",
+  "w": 192,
+  "h": 192,
+  "subject": "SOUTHEAST boundary corner joining BLACK BONE-SPIKED WALL at RIGHT with ICE-CRACKED DARK CLIFF at BOTTOM. Inner playable upper-left quadrant transparent.",
+  "corner": "se",
+  "version": "v01",
+  "refs": [
+    "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskE_helheim_map_2026-10-17/refs/style_helheim.png",
+    "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskE_helheim_map_2026-10-17/candidates/ice_cliff_01_v01.png",
+    "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskE_helheim_map_2026-10-17/candidates/hel_wall_01_v02.png"
+  ],
+  "transparent": true,
+  "prompt": "Use case: stylized-concept. One pixelart CORNER border module,192x192logicalpixels. Match materials and exact lefttop light and 48coldgray/green/bonewhite palette of provided project refs. JOIN SOUTH grayblackicecliff along BOTTOM with EAST blackbonewall along RIGHT. The TOPLEFT clear playable floor must be genuinely fully transparent, irregular natural inner boundaries. Outer two edges must be opaque completely to the canvas edges; strip thickness about100logicalpixels of192; clear innerquadrant about80x80. Use reference2 horizontal boundary and reference3 vertical boundary. Combine naturally at their corner, consistent rock heights, no diagonal dividing line, no island, no backdrop/floor behind empty playable zone, no text/grid/shadow. Hard pixelclusters, no antialias, no blur/bloom/dither. One CORNER only, no multiple versions or labels.",
+  "tool": "OpenAI builtin image_gen",
+  "source": "/Users/zhangjunqiu/.codex/generated_images/01a14377-c537-7a10-b5df-10043f63fbe0/exec-e8dffa00-88ec-4a48-9f7b-1c4a780efb99.png"
+}

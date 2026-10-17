@@ -1,0 +1,17 @@
+{
+  "type": "ground",
+  "id": "bone_path",
+  "w": 64,
+  "h": 64,
+  "subject": "A walkable path surface of small worn gray bone fragments and dark gray gravel, densely mixed subtle texture, bones are small broken slivers, not skulls. Flat muted gray-green overall, no curb or path border.",
+  "tile": true,
+  "version": "v04",
+  "refs": [
+    "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskE_helheim_map_2026-10-17/refs/style_helheim.png",
+    "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskE_helheim_map_2026-10-17/refs/stone_01.png"
+  ],
+  "transparent": false,
+  "prompt": "Use case: stylized-concept. ONE actual low-resolution64x64 game floor tile, displayed enlarged with each source pixel drawn as a clearly visible16x16square. DO NOT add subpixel texture or tiny dots or filmgrain; at most12 colors, big connected 2-4pixel clusters. Full opaque seamless square tile, darkcoldgray-green upperleftlight,90percent flat quiet darkground averageRGB35. Only FOUR small clearly identifiable gray bone fragments spread irregularly on quiet darkgravel; two curved thin ribs and two short dogbone-ended slivers. Each fragment12logicalpixels long and2pixelsthick, mutedbonegrayRGB115 againstRGB35. No skulls, no giantbones, no denseparticles. No border/frame/vignette/gradients/3D/antialias/dither/text/characters. Must remain readable at64x64. Reference suppliedprojectfloorstyle anddarkpalette, simplify texture instead of highdetail.",
+  "tool": "OpenAI builtin image_gen",
+  "source": "/Users/zhangjunqiu/.codex/generated_images/01a14377-c537-7a10-b5df-10043f63fbe0/exec-5a0eb7fd-082f-4929-bb58-dc2723d139b0.png"
+}

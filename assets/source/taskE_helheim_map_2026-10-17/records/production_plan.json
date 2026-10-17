@@ -1,0 +1,807 @@
+{
+  "task": "E",
+  "date": "2026-10-17",
+  "assets": [
+    {
+      "type": "borders",
+      "id": "dark_sea_01",
+      "w": 256,
+      "h": 192,
+      "subject": "Northern boundary: black underworld sea filling upper area, slate-dark waves, a few broken gray ice chips, pale gray distant fog concentrated at TOP. Irregular rocky shoreline at lower edge, playable inner side at BOTTOM fully transparent.",
+      "axis": "x",
+      "inner": "s"
+    },
+    {
+      "type": "borders",
+      "id": "hel_wall_01",
+      "w": 192,
+      "h": 256,
+      "subject": "Eastern boundary: massive black masonry wall filling RIGHT side, worn bone spikes on wall top, small bone piles at wall foot. Tall vertical strip seen in matching topdown3quarter game camera. Playable LEFT inner edge irregular and fully transparent.",
+      "axis": "y",
+      "inner": "w"
+    },
+    {
+      "type": "borders",
+      "id": "fog_abyss_01",
+      "w": 192,
+      "h": 256,
+      "subject": "Western boundary: ground breaks away into pale cold white-gray mist abyss on LEFT. Jagged charcoal stone lip along RIGHT edge, thin gray-green roots hanging down, abyss below opaque pixel fog. Playable RIGHT inner edge fully transparent.",
+      "axis": "y",
+      "inner": "e"
+    },
+    {
+      "type": "borders",
+      "id": "ice_cliff_01",
+      "w": 256,
+      "h": 192,
+      "subject": "Southern boundary: dark gray-black rock cliff filling LOWER area, muted icy seams in cracks, small bone shards near rock. Playable TOP inner edge irregular fully transparent, viewed from topdown3quarter.",
+      "axis": "x",
+      "inner": "n"
+    },
+    {
+      "type": "borders",
+      "id": "border_corner_ne",
+      "w": 192,
+      "h": 192,
+      "subject": "NORTHEAST boundary corner joining black SEA at TOP with BLACK BONE-SPIKED WALL at RIGHT. Inner playable lower-left quadrant transparent.",
+      "corner": "ne"
+    },
+    {
+      "type": "borders",
+      "id": "border_corner_nw",
+      "w": 192,
+      "h": 192,
+      "subject": "NORTHWEST boundary corner joining black SEA at TOP with WHITE MIST ABYSS at LEFT. Inner playable lower-right quadrant transparent.",
+      "corner": "nw"
+    },
+    {
+      "type": "borders",
+      "id": "border_corner_se",
+      "w": 192,
+      "h": 192,
+      "subject": "SOUTHEAST boundary corner joining BLACK BONE-SPIKED WALL at RIGHT with ICE-CRACKED DARK CLIFF at BOTTOM. Inner playable upper-left quadrant transparent.",
+      "corner": "se"
+    },
+    {
+      "type": "borders",
+      "id": "border_corner_sw",
+      "w": 192,
+      "h": 192,
+      "subject": "SOUTHWEST boundary corner joining WHITE MIST ABYSS at LEFT with ICE-CRACKED DARK CLIFF at BOTTOM. Inner playable upper-right quadrant transparent.",
+      "corner": "sw"
+    },
+    {
+      "type": "borders",
+      "id": "gnipa_cave",
+      "w": 256,
+      "h": 192,
+      "subject": "A huge dark cave mouth IN a SOUTHERN dark gray-black ice-cracked rock cliff, low wide tunnel entrance centered, two massive severed iron chain ends hanging around opening, very dark interior, no visible beast. Rock cliff extends completely to left/right borders as connector. Playable TOP edge transparent.",
+      "inner": "n",
+      "cave": true
+    },
+    {
+      "type": "ground",
+      "id": "river_01",
+      "w": 64,
+      "h": 64,
+      "subject": "Pitch-black underworld river water, muted charcoal ripples, a FEW small dull gray broken ice chips. No shore, no objects, no vortex, even density.",
+      "tile": true
+    },
+    {
+      "type": "ground",
+      "id": "river_02",
+      "w": 64,
+      "h": 64,
+      "subject": "Second pitch-black underworld river surface, same water value and ripple scale as companion, differently distributed tiny gray ice chips. No shore or large focal motif.",
+      "tile": true
+    },
+    {
+      "type": "ground",
+      "id": "river_ice",
+      "w": 64,
+      "h": 64,
+      "subject": "Walkable shallow frozen river: dark desaturated blue-gray ice, a few fine lowcontrast cracks, two faint medieval sword/blade silhouettes trapped BENEATH ice, low contrast, no bright magical sword or large object.",
+      "tile": true
+    },
+    {
+      "type": "ground",
+      "id": "bone_path",
+      "w": 64,
+      "h": 64,
+      "subject": "A walkable path surface of small worn gray bone fragments and dark gray gravel, densely mixed subtle texture, bones are small broken slivers, not skulls. Flat muted gray-green overall, no curb or path border.",
+      "tile": true
+    },
+    {
+      "type": "ground",
+      "id": "marsh",
+      "w": 64,
+      "h": 64,
+      "subject": "Low flat gray-green marsh mud, shallow nearly black wet patches, tiny muted moss flecks, no reeds/trees/largeobjects. Dark desaturated mud texture, evenly distributed.",
+      "tile": true
+    },
+    {
+      "type": "ground",
+      "id": "plaza",
+      "w": 64,
+      "h": 64,
+      "subject": "Broken black plaza flagstones, broad irregular flat worn stone slabs, thin cracks and subtle gray-white moss inside cracks, lowcontrast darkgray floor, no raised obstacles.",
+      "tile": true
+    },
+    {
+      "type": "props",
+      "id": "gjoll_bridge",
+      "w": 224,
+      "h": 384,
+      "subject": "A LONG NORTH-SOUTH walkable bridge deck seen from TOPDOWN threequarter, extending from image BOTTOM to TOP. Broad FLAT central WALKWAY around170logicalpixels wide with rows of old GOLD roof-tile-like metal plates as paving. Narrow low dark stone side rails with a few rag strips, no roof, no overhead arch, no towers blocking middle, no river/background. Grounded full bridge, long vertical silhouette. The central path must be clear and walkable. This is the ONLY BRIGHT WARM GOLD landmark in the environment."
+    },
+    {
+      "type": "props",
+      "id": "bridge_booth",
+      "w": 96,
+      "h": 128,
+      "subject": "Small worn dark stone toll booth beside an underworld bridge, squat stone pavilion with open front, simple stone roof, a strip of old faded gray cloth on post, hollow dark interior, no person. Compact freestanding structure."
+    },
+    {
+      "type": "props",
+      "id": "soul_lamp",
+      "w": 32,
+      "h": 96,
+      "subject": "Unlit tall slim gray-black stone soul-lamp column, skeletal stone base, small iron brazier bowl at top with EMPTY dark center. No flame or glow. Keep exact upright structure for lit-state matching."
+    },
+    {
+      "type": "props",
+      "id": "soul_lamp_lit",
+      "w": 32,
+      "h": 96,
+      "subject": "Lit version of an IDENTICAL slim gray-black stone soul-lamp column, skeletal stone base, small iron brazier bowl, small concentrated JADE-GREEN phosphor flame in bowl. Flame opaque pixels, no aura or particles outside bowl. Structure and base position exact same as unlit."
+    },
+    {
+      "type": "props",
+      "id": "cane",
+      "w": 32,
+      "h": 32,
+      "subject": "An old deceased commoner's discarded curved wooden walking cane, slender weathered gray-brown hooked stick lying diagonally on ground, no hands or person."
+    },
+    {
+      "type": "props",
+      "id": "straw_hat",
+      "w": 32,
+      "h": 32,
+      "subject": "A discarded broken straw hat, faded gray-brown woven straw, bent broad brim with missing corner, lying on ground, not worn."
+    },
+    {
+      "type": "props",
+      "id": "wine_jug",
+      "w": 32,
+      "h": 32,
+      "subject": "Empty squat weathered clay wine jug lying tilted on ground, tiny handle and open dark mouth, muted gray-brown clay, no gold or liquid."
+    },
+    {
+      "type": "props",
+      "id": "wooden_horse",
+      "w": 32,
+      "h": 32,
+      "subject": "A child's discarded little carved WOODEN TOY HORSE with four short rigid carved legs and simple curved rocker underneath, worn dull wood, recognizable toy, not living horse."
+    },
+    {
+      "type": "props",
+      "id": "nail_pier",
+      "w": 128,
+      "h": 256,
+      "subject": "A narrow NORTH-SOUTH dock pier composed of overlapping flattened GRAY-YELLOW HUMAN FINGERNAIL PLATES layered over dark wood supports. Vertical long flat walkway, a few broken edge pieces, no rails blocking center, no water/background."
+    },
+    {
+      "type": "props",
+      "id": "nail_basket",
+      "w": 48,
+      "h": 48,
+      "subject": "A coarse old woven gray-brown basket filled with many small dull gray-yellow curved HUMAN FINGERNAIL CLIPPINGS, keratin chips, no gems/skulls."
+    },
+    {
+      "type": "props",
+      "id": "cargo_crate",
+      "w": 48,
+      "h": 48,
+      "subject": "One worn closed gray-brown wooden cargo crate for underworld harbor, rough dark planks, dull iron strapping, simple threequarter top view, no emblem or text."
+    },
+    {
+      "type": "props",
+      "id": "shield_spear",
+      "w": 64,
+      "h": 64,
+      "subject": "A deceased soldier's worn dark round wooden shield propped against two lean iron-headed spears, dull metal boss, chipped muted gray-green planks, clear crossed spear tips, no person."
+    },
+    {
+      "type": "props",
+      "id": "hall_pillar",
+      "w": 64,
+      "h": 192,
+      "subject": "Tall freestanding BLACK STONE palace column, severe worn faceted shaft, modest bone-carved top and square base, dark muted purple-gray edges, upperleft light. No gold, no torches."
+    },
+    {
+      "type": "props",
+      "id": "hall_arch_broken",
+      "w": 192,
+      "h": 160,
+      "subject": "A collapsed BLACK STONE palace arch, two ruined pillars and partially broken arch curve with gap, chipped blocks piled around base, sparse dull bone ornamentation, no doorway background or wall panel."
+    },
+    {
+      "type": "props",
+      "id": "empty_throne",
+      "w": 64,
+      "h": 96,
+      "subject": "An EMPTY severe dark stone throne, tall angular back, armrests of carved weathered bone, dark muted purple seatcloth torn at edge, no crown/king/figure, no gold."
+    },
+    {
+      "type": "props",
+      "id": "long_table",
+      "w": 160,
+      "h": 64,
+      "subject": "A long low dark wooden banquet table seen topdownthreequarter, exactly a few EMPTY dark gray ceramic plates sitting on tabletop, no food, cups or banquet guests, no gold."
+    },
+    {
+      "type": "props",
+      "id": "hall_carpet",
+      "w": 96,
+      "h": 256,
+      "subject": "A long NARROW faded DARK PURPLE palace carpet lying FLAT on ground NORTH-SOUTH, frayed edges and a few tears, faint worn geometric border, no insignia or text, restrained colors."
+    },
+    {
+      "type": "props",
+      "id": "world_root_arch",
+      "w": 384,
+      "h": 192,
+      "subject": "Enormous ancient gray-black tree ROOT rises from ground into an ARCH like a low bridge. Two thick root ends planted at far LEFT and RIGHT, center underside OPEN enough for player to pass beneath, transparent hole at least140logicalpixels wide and70high. Gnarled wet bark, clear gnawed tooth notches and dark tree sap. No foliage, no ground/background."
+    },
+    {
+      "type": "props",
+      "id": "glow_mushroom",
+      "w": 32,
+      "h": 32,
+      "subject": "A small cluster of three damp gray-green mushrooms with phosphor JADE-GREEN cap highlights, slender dark stems, no floating particles or aura."
+    },
+    {
+      "type": "props",
+      "id": "small_cave",
+      "w": 128,
+      "h": 96,
+      "subject": "A SMALL dark cave in gray-black ice-cracked rock, wide rock surround with tunnel opening. Deep inside is ONE subtle seated large humanoid SHADOW with knees drawn up, dark tiny eyes, indistinct hidden NPC, no monster at entrance. Freestanding rock-mouth object, no landscape."
+    },
+    {
+      "type": "props",
+      "id": "nail_heap_01",
+      "w": 96,
+      "h": 80,
+      "subject": "A low mound of many discarded flattened gray-yellow HUMAN FINGERNAILS, curved keratin plates of different sizes stacked loosely. Low broad mountain-like heap, not rocks/skulls/coins, no gold glint."
+    },
+    {
+      "type": "props",
+      "id": "nail_heap_02",
+      "w": 96,
+      "h": 80,
+      "subject": "Second irregular mound of flattened gray-yellow HUMAN FINGERNAILS and keratin clippings, taller jagged pile with a lower collapsed flank. Same material/colors as first pile, distinct outline, no coins/skulls."
+    },
+    {
+      "type": "props",
+      "id": "workbench",
+      "w": 96,
+      "h": 64,
+      "subject": "A rough old dark wooden workbench seen topdownthreequarter, lying on top one blunt iron HAMMER and one curved SCRAPER tool for assembling nail plates, a few pale keratin scraps. No person or clutter beyond tools."
+    },
+    {
+      "type": "props",
+      "id": "nail_plank",
+      "w": 96,
+      "h": 48,
+      "subject": "A half-finished long boat PLANK assembled from overlapping flattened gray-yellow HUMAN FINGERNAIL plates lashed to dark supporting strips, lies diagonally almost horizontally flat, no ship, no wood plank mistaken for nail material."
+    },
+    {
+      "type": "props",
+      "id": "half_golem",
+      "w": 64,
+      "h": 64,
+      "subject": "An UNFINISHED fingernail construct collapsed on ground: chunky overlapping gray-yellow keratin-plate torso, crude small head, ONE ATTACHED heavy arm, other arm and legs unfinished/absent with exposed lashings. Lying on side inactive, not standing intact, no face glow/FX."
+    },
+    {
+      "type": "props",
+      "id": "sunken_tree",
+      "w": 96,
+      "h": 96,
+      "subject": "A dead gray-black marsh tree half submerged: twisted leafless branches, truncated trunk disappears into small dark gray-green mud collar, visible damp roots, no large puddle or ground tile."
+    },
+    {
+      "type": "props",
+      "id": "floating_bones",
+      "w": 64,
+      "h": 32,
+      "subject": "A small loose group of gray-white rib pieces and long bone shards lying/floating flat, partly darkened as underwater, no skull focal point, no water background."
+    },
+    {
+      "type": "props",
+      "id": "luggage",
+      "w": 48,
+      "h": 48,
+      "subject": "A deceased commoner's discarded small gray-brown cloth bundle tied with coarse rope, worn dull traveling luggage, no person/emblem/text."
+    },
+    {
+      "type": "decals",
+      "id": "queue_tracks_01",
+      "w": 64,
+      "h": 64,
+      "subject": "One narrow COLUMN of SIX faded small HUMAN FOOTPRINT impressions, three left/right pairs, walking toward image TOP/NORTH. Toes point UP. Dark gray shallow dirt marks, no visible feet or shoes."
+    },
+    {
+      "type": "decals",
+      "id": "queue_tracks_02",
+      "w": 64,
+      "h": 64,
+      "subject": "Second narrow northbound COLUMN of EIGHT faded small HUMAN FOOTPRINT impressions, four irregular left/right pairs, toes UP, slightly shuffling elderly stride. Darkgray dirt marks."
+    },
+    {
+      "type": "decals",
+      "id": "hoof_tracks_01",
+      "w": 64,
+      "h": 64,
+      "subject": "EXACTLY EIGHT separate horseshoe-shaped HOOF PRINT impressions arranged as four pairs in two columns, clearly countable, pointing UP/NORTH, irregular stride. No horse, no extra ninth mark, no human footprints."
+    },
+    {
+      "type": "decals",
+      "id": "hoof_tracks_02",
+      "w": 64,
+      "h": 64,
+      "subject": "EXACTLY EIGHT separate horseshoe-shaped HOOF PRINT impressions arranged in staggered four pairs/two columns, all pointing UP/NORTH; every mark clearly separated and countable. Alternate stride arrangement, no extra marks."
+    },
+    {
+      "type": "decals",
+      "id": "paw_tracks_01",
+      "w": 96,
+      "h": 96,
+      "subject": "Two HUGE DOG PAWPRINT ground impressions, each clearly FOUR rounded toe pads ahead of ONE broad central heel pad, walking diagonally upwardright. Dark charcoal marks, no claws as long scratches, no animal."
+    },
+    {
+      "type": "decals",
+      "id": "dried_blood_01",
+      "w": 96,
+      "h": 64,
+      "subject": "A subdued dark dried blood stain on ground, irregular flattened low puddle with small isolated old droplets nearby, deep DARK WINE RED/BROWN only, no bright fresh blood, no body or gore."
+    },
+    {
+      "type": "decals",
+      "id": "dried_blood_02",
+      "w": 96,
+      "h": 64,
+      "subject": "Second larger old dried blood smear on ground, dragged uneven shape and sparse small droplets, dark wine-redbrown, no bright red blood, no body."
+    },
+    {
+      "type": "decals",
+      "id": "drag_mark_01",
+      "w": 64,
+      "h": 128,
+      "subject": "Two parallel elongated shallow scraping/drAG grooves running NORTH-SOUTH from dragging cargo on ground, interrupted scratch strokes and a few tiny keratin debris specks, dark gray, transparent between marks, no groundtile."
+    },
+    {
+      "type": "decals",
+      "id": "root_crack_01",
+      "w": 96,
+      "h": 96,
+      "subject": "Irregular branching ground fissure caused by massive underground tree roots, thin jagged black-gray cracks with muted stone-gray chipped edges, low contrast, no glowing lava or raised rocks."
+    },
+    {
+      "type": "decals",
+      "id": "root_crack_02",
+      "w": 96,
+      "h": 96,
+      "subject": "Second distinct irregular branching ground fissure, diagonal main split with short crooked branches, dark charcoal and muted stonegray edges, no glow/FX."
+    },
+    {
+      "type": "decals",
+      "id": "moss_01",
+      "w": 64,
+      "h": 64,
+      "subject": "A low flat sparse patch of gray-white damp moss flecks following a stone crack, tiny restrained graygreen clusters, muted not bright, no stonebackground."
+    },
+    {
+      "type": "decals",
+      "id": "moss_02",
+      "w": 64,
+      "h": 64,
+      "subject": "Second irregular sparse gray-white moss ground patch, broken lichen-like clusters with dark wet centers, low flat mutedgraygreen, no backgroundtile."
+    },
+    {
+      "type": "ground",
+      "id": "river_edge_n",
+      "w": 64,
+      "h": 64,
+      "subject": "Alpha-only crop of original seamless surface; exact original texture colors.",
+      "transition": true,
+      "family": "river",
+      "kind": "edge",
+      "dir": "n"
+    },
+    {
+      "type": "ground",
+      "id": "river_edge_e",
+      "w": 64,
+      "h": 64,
+      "subject": "Alpha-only crop of original seamless surface; exact original texture colors.",
+      "transition": true,
+      "family": "river",
+      "kind": "edge",
+      "dir": "e"
+    },
+    {
+      "type": "ground",
+      "id": "river_edge_s",
+      "w": 64,
+      "h": 64,
+      "subject": "Alpha-only crop of original seamless surface; exact original texture colors.",
+      "transition": true,
+      "family": "river",
+      "kind": "edge",
+      "dir": "s"
+    },
+    {
+      "type": "ground",
+      "id": "river_edge_w",
+      "w": 64,
+      "h": 64,
+      "subject": "Alpha-only crop of original seamless surface; exact original texture colors.",
+      "transition": true,
+      "family": "river",
+      "kind": "edge",
+      "dir": "w"
+    },
+    {
+      "type": "ground",
+      "id": "river_edge_outer_ne",
+      "w": 64,
+      "h": 64,
+      "subject": "Alpha-only crop of original seamless surface; exact original texture colors.",
+      "transition": true,
+      "family": "river",
+      "kind": "outer",
+      "dir": "ne"
+    },
+    {
+      "type": "ground",
+      "id": "river_edge_outer_nw",
+      "w": 64,
+      "h": 64,
+      "subject": "Alpha-only crop of original seamless surface; exact original texture colors.",
+      "transition": true,
+      "family": "river",
+      "kind": "outer",
+      "dir": "nw"
+    },
+    {
+      "type": "ground",
+      "id": "river_edge_outer_se",
+      "w": 64,
+      "h": 64,
+      "subject": "Alpha-only crop of original seamless surface; exact original texture colors.",
+      "transition": true,
+      "family": "river",
+      "kind": "outer",
+      "dir": "se"
+    },
+    {
+      "type": "ground",
+      "id": "river_edge_outer_sw",
+      "w": 64,
+      "h": 64,
+      "subject": "Alpha-only crop of original seamless surface; exact original texture colors.",
+      "transition": true,
+      "family": "river",
+      "kind": "outer",
+      "dir": "sw"
+    },
+    {
+      "type": "ground",
+      "id": "river_edge_inner_ne",
+      "w": 64,
+      "h": 64,
+      "subject": "Alpha-only crop of original seamless surface; exact original texture colors.",
+      "transition": true,
+      "family": "river",
+      "kind": "inner",
+      "dir": "ne"
+    },
+    {
+      "type": "ground",
+      "id": "river_edge_inner_nw",
+      "w": 64,
+      "h": 64,
+      "subject": "Alpha-only crop of original seamless surface; exact original texture colors.",
+      "transition": true,
+      "family": "river",
+      "kind": "inner",
+      "dir": "nw"
+    },
+    {
+      "type": "ground",
+      "id": "river_edge_inner_se",
+      "w": 64,
+      "h": 64,
+      "subject": "Alpha-only crop of original seamless surface; exact original texture colors.",
+      "transition": true,
+      "family": "river",
+      "kind": "inner",
+      "dir": "se"
+    },
+    {
+      "type": "ground",
+      "id": "river_edge_inner_sw",
+      "w": 64,
+      "h": 64,
+      "subject": "Alpha-only crop of original seamless surface; exact original texture colors.",
+      "transition": true,
+      "family": "river",
+      "kind": "inner",
+      "dir": "sw"
+    },
+    {
+      "type": "ground",
+      "id": "bone_path_edge_n",
+      "w": 64,
+      "h": 64,
+      "subject": "Alpha-only crop of original seamless surface; exact original texture colors.",
+      "transition": true,
+      "family": "bone_path",
+      "kind": "edge",
+      "dir": "n"
+    },
+    {
+      "type": "ground",
+      "id": "bone_path_edge_e",
+      "w": 64,
+      "h": 64,
+      "subject": "Alpha-only crop of original seamless surface; exact original texture colors.",
+      "transition": true,
+      "family": "bone_path",
+      "kind": "edge",
+      "dir": "e"
+    },
+    {
+      "type": "ground",
+      "id": "bone_path_edge_s",
+      "w": 64,
+      "h": 64,
+      "subject": "Alpha-only crop of original seamless surface; exact original texture colors.",
+      "transition": true,
+      "family": "bone_path",
+      "kind": "edge",
+      "dir": "s"
+    },
+    {
+      "type": "ground",
+      "id": "bone_path_edge_w",
+      "w": 64,
+      "h": 64,
+      "subject": "Alpha-only crop of original seamless surface; exact original texture colors.",
+      "transition": true,
+      "family": "bone_path",
+      "kind": "edge",
+      "dir": "w"
+    },
+    {
+      "type": "ground",
+      "id": "bone_path_edge_outer_ne",
+      "w": 64,
+      "h": 64,
+      "subject": "Alpha-only crop of original seamless surface; exact original texture colors.",
+      "transition": true,
+      "family": "bone_path",
+      "kind": "outer",
+      "dir": "ne"
+    },
+    {
+      "type": "ground",
+      "id": "bone_path_edge_outer_nw",
+      "w": 64,
+      "h": 64,
+      "subject": "Alpha-only crop of original seamless surface; exact original texture colors.",
+      "transition": true,
+      "family": "bone_path",
+      "kind": "outer",
+      "dir": "nw"
+    },
+    {
+      "type": "ground",
+      "id": "bone_path_edge_outer_se",
+      "w": 64,
+      "h": 64,
+      "subject": "Alpha-only crop of original seamless surface; exact original texture colors.",
+      "transition": true,
+      "family": "bone_path",
+      "kind": "outer",
+      "dir": "se"
+    },
+    {
+      "type": "ground",
+      "id": "bone_path_edge_outer_sw",
+      "w": 64,
+      "h": 64,
+      "subject": "Alpha-only crop of original seamless surface; exact original texture colors.",
+      "transition": true,
+      "family": "bone_path",
+      "kind": "outer",
+      "dir": "sw"
+    },
+    {
+      "type": "ground",
+      "id": "bone_path_edge_inner_ne",
+      "w": 64,
+      "h": 64,
+      "subject": "Alpha-only crop of original seamless surface; exact original texture colors.",
+      "transition": true,
+      "family": "bone_path",
+      "kind": "inner",
+      "dir": "ne"
+    },
+    {
+      "type": "ground",
+      "id": "bone_path_edge_inner_nw",
+      "w": 64,
+      "h": 64,
+      "subject": "Alpha-only crop of original seamless surface; exact original texture colors.",
+      "transition": true,
+      "family": "bone_path",
+      "kind": "inner",
+      "dir": "nw"
+    },
+    {
+      "type": "ground",
+      "id": "bone_path_edge_inner_se",
+      "w": 64,
+      "h": 64,
+      "subject": "Alpha-only crop of original seamless surface; exact original texture colors.",
+      "transition": true,
+      "family": "bone_path",
+      "kind": "inner",
+      "dir": "se"
+    },
+    {
+      "type": "ground",
+      "id": "bone_path_edge_inner_sw",
+      "w": 64,
+      "h": 64,
+      "subject": "Alpha-only crop of original seamless surface; exact original texture colors.",
+      "transition": true,
+      "family": "bone_path",
+      "kind": "inner",
+      "dir": "sw"
+    },
+    {
+      "type": "ground",
+      "id": "marsh_edge_n",
+      "w": 64,
+      "h": 64,
+      "subject": "Alpha-only crop of original seamless surface; exact original texture colors.",
+      "transition": true,
+      "family": "marsh",
+      "kind": "edge",
+      "dir": "n"
+    },
+    {
+      "type": "ground",
+      "id": "marsh_edge_e",
+      "w": 64,
+      "h": 64,
+      "subject": "Alpha-only crop of original seamless surface; exact original texture colors.",
+      "transition": true,
+      "family": "marsh",
+      "kind": "edge",
+      "dir": "e"
+    },
+    {
+      "type": "ground",
+      "id": "marsh_edge_s",
+      "w": 64,
+      "h": 64,
+      "subject": "Alpha-only crop of original seamless surface; exact original texture colors.",
+      "transition": true,
+      "family": "marsh",
+      "kind": "edge",
+      "dir": "s"
+    },
+    {
+      "type": "ground",
+      "id": "marsh_edge_w",
+      "w": 64,
+      "h": 64,
+      "subject": "Alpha-only crop of original seamless surface; exact original texture colors.",
+      "transition": true,
+      "family": "marsh",
+      "kind": "edge",
+      "dir": "w"
+    },
+    {
+      "type": "ground",
+      "id": "marsh_edge_outer_ne",
+      "w": 64,
+      "h": 64,
+      "subject": "Alpha-only crop of original seamless surface; exact original texture colors.",
+      "transition": true,
+      "family": "marsh",
+      "kind": "outer",
+      "dir": "ne"
+    },
+    {
+      "type": "ground",
+      "id": "marsh_edge_outer_nw",
+      "w": 64,
+      "h": 64,
+      "subject": "Alpha-only crop of original seamless surface; exact original texture colors.",
+      "transition": true,
+      "family": "marsh",
+      "kind": "outer",
+      "dir": "nw"
+    },
+    {
+      "type": "ground",
+      "id": "marsh_edge_outer_se",
+      "w": 64,
+      "h": 64,
+      "subject": "Alpha-only crop of original seamless surface; exact original texture colors.",
+      "transition": true,
+      "family": "marsh",
+      "kind": "outer",
+      "dir": "se"
+    },
+    {
+      "type": "ground",
+      "id": "marsh_edge_outer_sw",
+      "w": 64,
+      "h": 64,
+      "subject": "Alpha-only crop of original seamless surface; exact original texture colors.",
+      "transition": true,
+      "family": "marsh",
+      "kind": "outer",
+      "dir": "sw"
+    },
+    {
+      "type": "ground",
+      "id": "marsh_edge_inner_ne",
+      "w": 64,
+      "h": 64,
+      "subject": "Alpha-only crop of original seamless surface; exact original texture colors.",
+      "transition": true,
+      "family": "marsh",
+      "kind": "inner",
+      "dir": "ne"
+    },
+    {
+      "type": "ground",
+      "id": "marsh_edge_inner_nw",
+      "w": 64,
+      "h": 64,
+      "subject": "Alpha-only crop of original seamless surface; exact original texture colors.",
+      "transition": true,
+      "family": "marsh",
+      "kind": "inner",
+      "dir": "nw"
+    },
+    {
+      "type": "ground",
+      "id": "marsh_edge_inner_se",
+      "w": 64,
+      "h": 64,
+      "subject": "Alpha-only crop of original seamless surface; exact original texture colors.",
+      "transition": true,
+      "family": "marsh",
+      "kind": "inner",
+      "dir": "se"
+    },
+    {
+      "type": "ground",
+      "id": "marsh_edge_inner_sw",
+      "w": 64,
+      "h": 64,
+      "subject": "Alpha-only crop of original seamless surface; exact original texture colors.",
+      "transition": true,
+      "family": "marsh",
+      "kind": "inner",
+      "dir": "sw"
+    }
+  ]
+}

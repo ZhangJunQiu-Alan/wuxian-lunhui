@@ -2,11 +2,12 @@ class_name HelheimMap
 extends MapLayer
 ## 第 2 关「亡者之船」的地图，布局和各地标的细节见 docs/地图设计_第2关.md
 ## 冥河横贯北部，只能从吉欧尔桥和结冰的浅滩过河；敌人隔着河追玩家时会先绕到过河点
-## 任务 E 的素材还没到的部分先用 placeholders 的纯色块代替
 
 const STONE := ["stone_01", "stone_01", "stone_02", "stone_02", "stone_03", "stone_04"]
 const CLEAR_SPAWN := 300.0
 const RIVER_STEP := 50.0  # 冥河碰撞圆的间距
+const ARCH_CROWN := 75    # 世界树根拱顶（图片上方这么多像素）画在角色上面，看起来像从根下穿过
+const BELONGINGS := ["cane", "straw_hat", "wine_jug", "wooden_horse"]
 
 var _river: Dictionary
 
@@ -16,30 +17,9 @@ func _init() -> void:
 	props_dir = "res://assets/sprites/props/helheim/"
 	decals_dir = "res://assets/sprites/decals/helheim/"
 	borders_dir = "res://assets/sprites/borders/helheim/"
-	var t := Vector2i(TILE, TILE)
-	placeholders = {
-		"river_01": [Color(0.07, 0.08, 0.11), t], "river_ice": [Color(0.42, 0.5, 0.56), t],
-		"bridge_deck": [Color(0.45, 0.36, 0.2), t], "bone_path": [Color(0.24, 0.25, 0.26), t],
-		"plaza": [Color(0.2, 0.2, 0.23), t],
-		"dark_sea_01": [Color(0.04, 0.05, 0.07), Vector2i(256, 192)],
-		"hel_wall_01": [Color(0.13, 0.11, 0.15), Vector2i(192, 256)],
-		"fog_abyss_01": [Color(0.72, 0.75, 0.77), Vector2i(192, 256)],
-		"ice_cliff_01": [Color(0.24, 0.25, 0.28), Vector2i(256, 192)],
-		"border_corner_ne": [Color(0.09, 0.08, 0.11), Vector2i(192, 192)],
-		"border_corner_nw": [Color(0.3, 0.32, 0.35), Vector2i(192, 192)],
-		"border_corner_se": [Color(0.18, 0.17, 0.2), Vector2i(192, 192)],
-		"border_corner_sw": [Color(0.45, 0.47, 0.5), Vector2i(192, 192)],
-		"naglfar": [Color(0.62, 0.56, 0.4), Vector2i(640, 320)],
-		"soul_lamp": [Color(0.3, 0.45, 0.42), Vector2i(32, 96)],
-		"hall_pillar": [Color(0.12, 0.11, 0.14), Vector2i(64, 192)],
-		"empty_throne": [Color(0.22, 0.18, 0.24), Vector2i(64, 96)],
-		"long_table": [Color(0.3, 0.22, 0.16), Vector2i(160, 64)],
-		"world_root_arch": [Color(0.28, 0.22, 0.16), Vector2i(384, 192)],
-		"nail_heap_01": [Color(0.7, 0.64, 0.46), Vector2i(96, 80)],
-		"workbench": [Color(0.38, 0.28, 0.18), Vector2i(96, 64)],
-		"small_cave": [Color(0.1, 0.1, 0.12), Vector2i(128, 96)],
-		"gnipa_cave": [Color(0.06, 0.06, 0.07), Vector2i(256, 192)],
-	}
+	edges = {"bone_path": "bone_path_edge", "marsh": "marsh_edge", "river_01": "river_edge"}
+	edge_masks = {"plaza": "bone_path_edge", "river_ice": "river_edge"}  # 浅滩的冰叠在河水上面
+	variants = {"river_01": ["river_02"]}
 
 
 func _layout() -> void:
@@ -58,12 +38,14 @@ func _layout() -> void:
 	for to in [Vector2(0, y0 + h), lm.hall.pos, lm.root.pos, lm.cave.pos]:
 		paint_path(Vector2.ZERO, to, rng.randf_range(-200.0, 200.0), 80.0, "bone_path")
 	paint_path(Vector2(0, y0 - h), lm.harbor.pos, 120.0, 80.0, "bone_path")
-	paint_path(lm.harbor.pos, lm.workshop.pos, -150.0, 70.0, "bone_path")
+	var haul := paint_path(lm.harbor.pos, lm.workshop.pos, -150.0, 70.0, "bone_path")
 	paint_path(lm.workshop.pos, Vector2((ford.x + ford.y) / 2.0, y0 - h), 80.0, 70.0, "bone_path")
 	paint_path(Vector2((ford.x + ford.y) / 2.0, y0 + h), lm.marsh.pos, -60.0, 70.0, "bone_path")
 	paint_path(lm.marsh.pos, lm.root.pos, 150.0, 70.0, "bone_path")
 	paint_path(lm.hall.pos, lm.cave.pos, -120.0, 70.0, "bone_path")
-	_paint_river(y0, h, bridge, ford)
+	for i in range(4, haul.size() - 4, 5):  # 搬运指甲的拖痕：从工坊一路拖到港口
+		decal("drag_mark_01", haul[i]).rotation = (haul[i + 1] - haul[i]).angle() - PI / 2
+	_paint_river(y0, h, ford)
 	_plaza(lm.plaza.pos)
 	_bridge(Vector2(0, y0), h, bridge)
 	_harbor(lm.harbor.pos)
@@ -75,19 +57,16 @@ func _layout() -> void:
 	_scatter()
 
 
-## 冥河：整条河铺河水，桥下铺桥面，浅滩铺冰；除了两处过河点，沿河排一串碰撞圆
-func _paint_river(y0: float, h: float, bridge: Vector2, ford: Vector2) -> void:
+## 冥河：整条河铺河水（桥下也是，桥是盖在上面的物件），浅滩再叠一层冰；除了两处过河点，沿河排一串碰撞圆
+func _paint_river(y0: float, h: float, ford: Vector2) -> void:
 	var from := cell_at(Vector2(Game.view_bounds.position.x, y0 - h))
 	var to := cell_at(Vector2(Game.view_bounds.end.x, y0 + h - 1.0))
 	for x in range(from.x, to.x + 1):
 		for y in range(from.y, to.y + 1):
+			set_ground(Vector2i(x, y), "river_01")
 			var cx := x * TILE + TILE * 0.5
-			var tile := "river_01"
-			if cx > bridge.x and cx < bridge.y:
-				tile = "bridge_deck"
-			elif cx > ford.x and cx < ford.y:
-				tile = "river_ice"
-			set_ground(Vector2i(x, y), tile)
+			if cx > ford.x and cx < ford.y:
+				set_ground(Vector2i(x, y), "river_ice")
 	var x := Game.bounds.position.x
 	while x <= Game.bounds.end.x:
 		if not _in_crossing(x, h):
@@ -128,19 +107,25 @@ func _plaza(c: Vector2) -> void:
 	fill_disc(c, 230.0, "plaza", 0.15)
 	for corner in [Vector2(-170, -150), Vector2(170, -150), Vector2(-170, 170), Vector2(170, 170)]:
 		prop("soul_lamp", c + corner, 8.0)
+	for column in [-90.0, 0.0, 90.0]:  # 亡者排队的脚印，一列列朝北走向桥
+		for row in 4:
+			decal("queue_tracks_0%d" % (1 + row % 2), c + Vector2(column + rng.randf_range(-8, 8), 120.0 - row * 72.0))
+	for i in 6:
+		decal("moss_0%d" % rng.randi_range(1, 2), c + Vector2.from_angle(rng.randf() * TAU) * rng.randf_range(80.0, 220.0), rng.randf() < 0.5)
+	for i in BELONGINGS.size():
+		prop(BELONGINGS[i], c + Vector2.from_angle(TAU * i / BELONGINGS.size() + 0.6) * rng.randf_range(140.0, 200.0), 0.0, rng.randf() < 0.5)
 	prop("broken_headstone", c + Vector2(-60, 110), 0.0, true)
-	prop("bone_pile", c + Vector2(90, 60))
 
 
-## ① 吉欧尔桥：桥面两侧一排栏杆
+## ① 吉欧尔桥：金瓦长桥横跨冥河（桥面中间能走），南桥头是守桥人的石亭，两岸沿河一段栏杆
 func _bridge(c: Vector2, h: float, crossing: Vector2) -> void:
-	var y := c.y - h + 24.0
-	while y < c.y + h + 24.0:
-		prop("gjoll_railing", Vector2(crossing.x + 4.0, y)).rotation = PI / 2
-		prop("gjoll_railing", Vector2(crossing.y - 4.0, y)).rotation = PI / 2
-		y += 90.0
-	prop("chain_pillar", Vector2(crossing.x - 40.0, c.y + h + 70.0), 10.0)
-	prop("chain_pillar", Vector2(crossing.y + 40.0, c.y + h + 70.0), 10.0, true)
+	prop("gjoll_bridge", Vector2((crossing.x + crossing.y) / 2.0, c.y + 192.0))
+	prop("bridge_booth", Vector2(crossing.y + 90.0, c.y + h + 110.0), 30.0)
+	for side in [-1.0, 1.0]:
+		for i in 2:
+			var x: float = (crossing.y + 70.0 + i * 96.0) if side > 0 else (crossing.x - 70.0 - i * 96.0)
+			prop("gjoll_railing", Vector2(x, c.y + h + 26.0))
+	prop("chain_pillar", Vector2(crossing.x - 40.0, c.y + h + 90.0), 10.0)
 
 
 ## ② 纳吉尔法尔港：岸边停着指甲拼成的巨船，指甲铺的码头
@@ -150,34 +135,66 @@ func _harbor(c: Vector2) -> void:
 		for y in range(0, 4):
 			set_ground(cell_at(Vector2(c.x + x * TILE, shore + y * TILE + 4.0)), "nail_deck_0%d" % rng.randi_range(1, 2))
 	wide_prop("naglfar", Vector2(c.x, shore + 60.0), 560.0, 40.0)
-	for i in 5:
-		prop("bone_pile", c + Vector2(rng.randf_range(-350, 350), rng.randf_range(0, 250)), 0.0, rng.randf() < 0.5)
+	prop("nail_pier", Vector2(c.x + 400.0, shore + 300.0))
+	for i in 10:  # 岸上堆着指甲筐、木箱、亡者士兵的盾和矛
+		var at := c + Vector2(rng.randf_range(-380, 380), rng.randf_range(-40, 260))
+		if is_free(at, 22.0):
+			var file: String = ["nail_basket", "cargo_crate", "shield_spear", "bone_pile"][i % 4]
+			prop(file, at, 16.0 if file == "cargo_crate" else 0.0, rng.randf() < 0.5)
 
 
-## ③ 冥雾沼泽：灰绿的泥地，半沉的枯树
+## ③ 冥雾沼泽：灰绿的泥地，半沉在泥里的枯树，浮在水面的白骨，迷路亡者丢下的行李
 func _marsh(c: Vector2) -> void:
-	fill_disc(c, 560.0, "fog_ground", 0.3)
-	for i in 14:
+	fill_disc(c, 560.0, "marsh", 0.3)
+	for i in 22:
 		var at := c + Vector2.from_angle(rng.randf() * TAU) * rng.randf_range(120.0, 520.0)
-		if is_free(at, 26.0):
-			prop("mist_dead_tree", at, 10.0, rng.randf() < 0.5)
+		if not is_free(at, 26.0):
+			continue
+		match i % 3:
+			0:
+				prop("sunken_tree", at, 14.0, rng.randf() < 0.5)
+			1:
+				prop("floating_bones", at, 0.0, rng.randf() < 0.5)
+			2:
+				prop("luggage" if i % 2 == 0 else "mist_dead_tree", at, 0.0 if i % 2 == 0 else 10.0, rng.randf() < 0.5)
 
 
-## ④ 海拉的大厅：两排黑色石柱，空着的王座和长桌
+## ④ 海拉的大厅：两排黑色石柱，南边是倒塌的拱门和门前的长毯，深处是空着的王座和长桌；
+## 一串八只蹄的马蹄印从南边一直延伸进大门
 func _hall(c: Vector2) -> void:
 	fill_disc(c, 300.0, "plaza", 0.1)
 	for i in 4:
 		prop("hall_pillar", c + Vector2(-160, -220 + i * 120), 22.0)
 		prop("hall_pillar", c + Vector2(160, -220 + i * 120), 22.0)
+	prop("hall_carpet", c + Vector2(0, 280))  # 平铺在地上的长毯，没有碰撞
+	prop("hall_arch_broken", c + Vector2(0, 300))
+	add_obstacle(c + Vector2(-80, 280), 24.0)  # 拱门两侧的残柱挡路，中间能走
+	add_obstacle(c + Vector2(80, 280), 24.0)
 	prop("empty_throne", c + Vector2(0, -260), 20.0)
 	wide_prop("long_table", c + Vector2(0, 10), 110.0, 16.0)
+	for i in 5:
+		decal("hoof_tracks_0%d" % (1 + i % 2), c + Vector2(30.0 + sin(i) * 14.0, 360.0 + i * 80.0))
 
 
-## ⑤ 世界树之根：拱出地面的巨根，两端挡路，中间可以穿过
+## ⑤ 世界树之根：拱出地面的巨根，两端挡路，中间可以穿过（拱顶画在角色上面）；根旁有裂缝和发光的蘑菇
 func _root(c: Vector2) -> void:
-	prop("world_root_arch", c + Vector2(0, 60))
+	var arch := prop("world_root_arch", c + Vector2(0, 60))
+	var crown := Sprite2D.new()
+	crown.texture = arch.texture
+	crown.region_enabled = true
+	crown.region_rect = Rect2(0, 0, arch.texture.get_width(), ARCH_CROWN)
+	crown.centered = false
+	crown.position = arch.position - Vector2(arch.texture.get_width() * 0.5, arch.texture.get_height())
+	crown.z_index = 20  # 地图整体是 -10，这里算下来比角色高
+	add_child(crown)
 	add_obstacle(c + Vector2(-150, 30), 36.0)
 	add_obstacle(c + Vector2(150, 30), 36.0)
+	for i in 4:
+		decal("root_crack_0%d" % (1 + i % 2), c + Vector2.from_angle(rng.randf() * TAU) * rng.randf_range(160.0, 320.0), rng.randf() < 0.5)
+	for i in 10:
+		var at := c + Vector2.from_angle(rng.randf() * TAU) * rng.randf_range(200.0, 420.0)
+		if is_free(at, 12.0):
+			prop("glow_mushroom", at, 0.0, rng.randf() < 0.5)
 
 
 ## ⑥ 加姆的洞窟：南墙上的洞口，断掉的铁链，满地骨头
@@ -189,13 +206,20 @@ func _cave(c: Vector2) -> void:
 	prop("small_cave", c + Vector2(-300, 330), 30.0)
 	for i in 6:
 		prop("bone_pile", c + Vector2(rng.randf_range(-200, 200), rng.randf_range(0, 250)), 0.0, rng.randf() < 0.5)
+	for i in 3:
+		decal("dried_blood_0%d" % (1 + i % 2), c + Vector2(rng.randf_range(-160, 160), rng.randf_range(160, 320)), rng.randf() < 0.5)
+	decal("paw_tracks_01", c + Vector2(-40, 120))
+	decal("paw_tracks_01", c + Vector2(50, 40), true)
 
 
-## ⑦ 指甲工坊：指甲堆成的小山、工作台
+## ⑦ 指甲工坊：指甲堆成的小山、工作台、半成品的船板、拼到一半倒在地上的指甲傀儡
 func _workshop(c: Vector2) -> void:
 	for i in 5:
-		prop("nail_heap_01", c + Vector2.from_angle(TAU * i / 5.0 + 0.3) * 230.0, 26.0, i % 2 == 0)
+		prop("nail_heap_0%d" % (1 + i % 2), c + Vector2.from_angle(TAU * i / 5.0 + 0.3) * 230.0, 26.0, i % 2 == 0)
 	prop("workbench", c + Vector2(-40, 20), 18.0)
+	prop("nail_plank", c + Vector2(70, 60))
+	prop("nail_plank", c + Vector2(-110, 90), 0.0, true)
+	prop("half_golem", c + Vector2(40, -80))
 
 
 func _scatter() -> void:
@@ -216,6 +240,14 @@ func _scatter() -> void:
 		var at := _free_spot(inner, 30.0)
 		if at.is_finite():
 			prop("chain_pillar", at, 10.0, rng.randf() < 0.5)
+	for i in 20:  # 亡者丢下的行李和随身物品
+		var at := _free_spot(inner, 20.0)
+		if at.is_finite():
+			prop("luggage" if i % 3 == 0 else BELONGINGS[i % BELONGINGS.size()], at, 0.0, rng.randf() < 0.5)
+	for i in 40:
+		var at := _free_spot(inner, 20.0)
+		if at.is_finite():
+			decal("moss_0%d" % rng.randi_range(1, 2), at, rng.randf() < 0.5)
 
 
 ## 随机找一处空地，找不到返回 Vector2.INF

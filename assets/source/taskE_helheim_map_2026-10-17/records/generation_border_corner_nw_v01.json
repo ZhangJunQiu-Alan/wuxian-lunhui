@@ -1,0 +1,18 @@
+{
+  "type": "borders",
+  "id": "border_corner_nw",
+  "w": 192,
+  "h": 192,
+  "subject": "NORTHWEST boundary corner joining black SEA at TOP with WHITE MIST ABYSS at LEFT. Inner playable lower-right quadrant transparent.",
+  "corner": "nw",
+  "version": "v01",
+  "refs": [
+    "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskE_helheim_map_2026-10-17/refs/style_helheim.png",
+    "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskE_helheim_map_2026-10-17/candidates/dark_sea_01_v01.png",
+    "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskE_helheim_map_2026-10-17/candidates/fog_abyss_01_v02.png"
+  ],
+  "transparent": true,
+  "prompt": "Use case: stylized-concept. One pixelart CORNER border module,192x192logicalpixels. Match materials and exact lefttop light and 48coldgray/green/bonewhite palette of provided project refs. JOIN NORTH black sea across TOP with WEST whitefogabyss along LEFT. The BOTTOMRIGHT clear playable floor must be genuinely fully transparent, irregular natural inner boundaries. Outer two edges must be opaque completely to the canvas edges; strip thickness about100logicalpixels of192; clear innerquadrant about80x80. Use reference2 horizontal boundary and reference3 vertical boundary. Combine naturally at their corner, consistent rock heights, no diagonal dividing line, no island, no backdrop/floor behind empty playable zone, no text/grid/shadow. Hard pixelclusters, no antialias, no blur/bloom/dither. One CORNER only, no multiple versions or labels.",
+  "tool": "OpenAI builtin image_gen",
+  "source": "/Users/zhangjunqiu/.codex/generated_images/01a14377-c537-7a10-b5df-10043f63fbe0/exec-fc773a5d-f8f1-4773-a9db-dd6ce2004042.png"
+}

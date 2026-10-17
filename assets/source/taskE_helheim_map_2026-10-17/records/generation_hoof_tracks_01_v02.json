@@ -1,0 +1,16 @@
+{
+  "type": "decals",
+  "id": "hoof_tracks_01",
+  "w": 64,
+  "h": 64,
+  "subject": "EXACTLY EIGHT separate horseshoe-shaped HOOF PRINT impressions arranged as four pairs in two columns, clearly countable, pointing UP/NORTH, irregular stride. No horse, no extra ninth mark, no human footprints.",
+  "version": "v02",
+  "refs": [
+    "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskE_helheim_map_2026-10-17/candidates/hoof_tracks_01_v01.png",
+    "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskE_helheim_map_2026-10-17/refs/style_helheim.png"
+  ],
+  "transparent": true,
+  "prompt": "Use case: edit pixelart decal. One64x64logicalpixel transparentgame grounddecal. EXACTLY EIGHT separate HORSE HOOF PRINTS, count8, arranged in TWO COLUMNS of FOUR PRINTS. Left centers at(20,8),(20,24),(20,40),(20,56); Rightcenters(44,8),(44,24),(44,40),(44,56). All8must becomplete withspacebetweenprints, no extra marks or incompleteprint. Each print is a SMALL U SHAPED horseshoe8pixelwide9pixelhigh, open atBOTTOM, roundednorthend. AllpointtowardNORTH(topimage). Slightdifferent wornshapeeach, weatheredmutedgray maxRGB90. Match pixelart darkgrounddecalcolors fromreference1. Genuinebinarytransparent background, no floor, no shadows, no text,numbers,grid. Clear2pxmargin. EXACTLY4rows*2columns=8visiblehoofprints.",
+  "tool": "OpenAI builtin image_gen",
+  "source": "/Users/zhangjunqiu/.codex/generated_images/01a14377-c537-7a10-b5df-10043f63fbe0/exec-d259777c-a0e2-4ed8-9c7c-94c270d5437e.png"
+}

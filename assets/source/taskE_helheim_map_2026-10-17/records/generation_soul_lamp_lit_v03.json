@@ -1,0 +1,20 @@
+{
+  "type": "props",
+  "id": "soul_lamp_lit",
+  "w": 32,
+  "h": 96,
+  "subject": "Lit version of an IDENTICAL slim gray-black stone soul-lamp column, skeletal stone base, small iron brazier bowl, small concentrated JADE-GREEN phosphor flame in bowl. Flame opaque pixels, no aura or particles outside bowl. Structure and base position exact same as unlit.",
+  "version": "v03",
+  "refs": [
+    "/Users/zhangjunqiu/Desktop/\u65e0\u9650\u6050\u6016/assets/source/taskE_helheim_map_2026-10-17/candidates/soul_lamp_v01.png",
+    "/Users/zhangjunqiu/Desktop/\u65e0\u9650\u6050\u6016/assets/source/taskE_helheim_map_2026-10-17/refs/style_helheim.png"
+  ],
+  "transparent": true,
+  "prompt": "Use case: edit sprite. EDIT reference1 the32x96 pixelart unlit soul lamp. Preserve absolutely identical entire stone/bone column, bowl, foot, placement and dimensions. Add ONLY a tiny muted jade-green ghost flame INSIDE the top bowl, occupying about8x8 logical pixels nearx16,y5. Do not change column, bowl, background, silhouette outside top12px. Same crisp pixel clusters, cold48-color lowcontrast environment palette asreference2. Transparent background. No aura, cast shadow, bloom, scene, text, extra objects. Same exact32x96 canvas and2pxpadding, smallflamefittinginsideexistingpadding. This must overlay perfectly with unlit reference in game. Output only one lit lamp.",
+  "tool": "OpenAI builtin image_gen",
+  "source": "/Users/zhangjunqiu/.codex/generated_images/01a14377-c537-7a10-b5df-10043f63fbe0/exec-53a25c96-f8fe-4ef9-af01-b021a5860e91.png",
+  "manual_tool": "Piskel",
+  "source_piskel": "originals/lamp_pair_v03.piskel",
+  "source_export": "originals/lamp_pair_piskel_v03.png",
+  "operations": "Piskel copy unlit frame1 rectangles y10..95, x0..11 y0..9, x20..31 y0..9 into litframe2, clear selection before paste. Only central8x10 flame area can differ."
+}

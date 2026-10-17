@@ -20,6 +20,7 @@ static var _grid := {}
 
 var type_id := ""
 var sprite_dir := SPRITE_DIR  # Boss 会改成 bosses 目录
+var sprite_name := ""  # 素材文件名，默认和 type_id 一样
 var display_name := ""
 var behavior := "chase"
 var max_hp := 20.0
@@ -109,6 +110,7 @@ func setup(id: String, hp_scale: float, elite: bool = false, damage_scale: float
 	split_into = data.get("split", "")
 	split_count = data.get("split_count", 0)
 	sprite_dir = data.get("sprite_dir", sprite_dir)
+	sprite_name = data.get("sprite", id)
 	gait = data.get("gait", "walk")
 	attack_kind = data.get("attack", "claw")
 	_shoot_timer = shoot_cooldown * randf()  # 错开射击时机，避免同时开火
@@ -140,9 +142,10 @@ func _ready() -> void:
 
 	# 素材放在 assets/sprites/enemies/<敌人 id>.png（或 _move.png / _attack.png 帧条）就会自动使用
 	# 精英怪优先使用 <id>_elite 素材，没有就用普通素材
-	var paths: Array[String] = [sprite_dir + type_id]
+	var base := sprite_dir + (sprite_name if sprite_name != "" else type_id)
+	var paths: Array[String] = [base]
 	if is_elite:
-		paths.push_front(sprite_dir + type_id + "_elite")
+		paths.push_front(base + "_elite")
 	# 每个路径先找动作帧条，再找静态图；精英有自己的静态图时不会借用普通怪的动作
 	var height := radius * 2.6 / (EnemyDB.ELITE_SIZE if is_elite else 1.0)
 	for path in paths:

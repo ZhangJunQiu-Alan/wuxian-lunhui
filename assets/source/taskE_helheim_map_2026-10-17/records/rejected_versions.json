@@ -1,0 +1,62 @@
+[
+  {
+    "id": "gjoll_bridge",
+    "versions": [
+      "v01",
+      "v02"
+    ],
+    "reason": "Uniform fit left walkablegold deck too narrow; v03 sizes center andrails separately."
+  },
+  {
+    "id": "bone_path",
+    "versions": [
+      "v01",
+      "v02",
+      "v04"
+    ],
+    "reason": "Warmgravel, lostbone motifs, or overlyrecognizable repeatedcurvedbones; v03 retained."
+  },
+  {
+    "id": "river_ice",
+    "versions": [
+      "v01",
+      "v02",
+      "v03",
+      "v04",
+      "v05",
+      "v06"
+    ],
+    "reason": "Large/repeated swords or no readablesword; v06 failedmanualcoordinates producedstrayconnectedlines; v05 retained only asbaseforv07."
+  },
+  {
+    "id": "world_root_arch",
+    "versions": [
+      "v01",
+      "v02"
+    ],
+    "reason": "v01 openingtoonarrow; v02 whole-object fitnotyetfullrequestedheight. v03fitsandhas140x70clearopening."
+  },
+  {
+    "id": "hoof_tracks_01",
+    "versions": [
+      "v01"
+    ],
+    "reason": "Count7 not8."
+  },
+  {
+    "id": "soul_lamp_lit",
+    "versions": [
+      "v01",
+      "v02",
+      "v03"
+    ],
+    "reason": "Generatedbodydrift or insufficientlylegiblegreenflame; finalv04Piskelcorrected."
+  },
+  {
+    "id": "sunken_tree",
+    "versions": [
+      "v01"
+    ],
+    "reason": "Exposedfullroot system didnotread assubmerged."
+  }
+]

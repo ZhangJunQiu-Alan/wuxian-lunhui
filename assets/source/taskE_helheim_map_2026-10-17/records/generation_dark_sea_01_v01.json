@@ -1,0 +1,17 @@
+{
+  "tool": "OpenAI built-in image generation",
+  "source": "/Users/zhangjunqiu/.codex/generated_images/01a14377-c537-7a10-b5df-10043f63fbe0/exec-e9d8c387-ad1d-42c4-a355-7f3a0d3b2f94.png",
+  "type": "borders",
+  "id": "dark_sea_01",
+  "w": 256,
+  "h": 192,
+  "subject": "Northern boundary: black underworld sea filling upper area, slate-dark waves, a few broken gray ice chips, pale gray distant fog concentrated at TOP. Irregular rocky shoreline at lower edge, playable inner side at BOTTOM fully transparent.",
+  "axis": "x",
+  "inner": "s",
+  "version": "v01",
+  "refs": [
+    "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskE_helheim_map_2026-10-17/refs/style_helheim.png"
+  ],
+  "prompt": "Use case: stylized-concept. Asset type: production lowresolution pixel art environment asset for a topdown3quarter dark underworld survival game.\nInput1 is STYLE REFERENCE ONLY: match its existing coldgray, deepgreen, boneivory and charcoal environments, pixel clusters, dark outlines and upperleft lighting; do not copy characters or contact-sheet layout. Other input if present is MATERIAL/FORM REFERENCE only.\nPrimary request: Northern boundary: black underworld sea filling upper area, slate-dark waves, a few broken gray ice chips, pale gray distant fog concentrated at TOP. Irregular rocky shoreline at lower edge, playable inner side at BOTTOM fully transparent.\nEXACTLY ONE boundary module, logical320x192px. Repeat seamlessly along HORIZONTAL LEFT-RIGHT axis. Material continues through both connection ends with NO 2px empty end gaps. Inner playable edge fully transparent, irregular rocky edge, not straight line. Outer area opaque. No isolated-object rounded vignette.\nStyle: handmade low-resolution PIXEL ART, crisp coarse pixel clusters and restrained48colors, no smooth painting or antialiasing, upperleft highlights and lower-rightshade, same rendering as reference. NO brightgold, orange or warm glow; restrained underworld colors. \nAvoid: any text, names, letters, runes, labels, grid, watermark, logo, sheet with multiple objects, extra characters, modern objects, scenery/background panel, drop shadow outside silhouette, magic particles or bloom. Opaque solidpixelart, never semi-transparent alpha.",
+  "transparent": true
+}

@@ -1,0 +1,9 @@
+{
+  "tool": "Pillow binary alpha crop only",
+  "source": "candidates/marsh_v01.png",
+  "source_generation_record": "records/generation_marsh_v01.json",
+  "operation": "Original texture RGB unchanged, same pixel coordinates; rounded connected edge/corner binary alpha crop, matches prior delivered transition orientation",
+  "kind": "inner",
+  "direction": "se",
+  "mask_rotation_degrees": 180
+}

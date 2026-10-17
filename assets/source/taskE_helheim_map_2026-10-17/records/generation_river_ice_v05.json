@@ -1,0 +1,17 @@
+{
+  "type": "ground",
+  "id": "river_ice",
+  "w": 64,
+  "h": 64,
+  "subject": "Walkable shallow frozen river: dark desaturated blue-gray ice, a few fine lowcontrast cracks, two faint medieval sword/blade silhouettes trapped BENEATH ice, low contrast, no bright magical sword or large object.",
+  "tile": true,
+  "version": "v05",
+  "refs": [
+    "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskE_helheim_map_2026-10-17/refs/stone_01.png",
+    "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskE_helheim_map_2026-10-17/refs/style_helheim.png"
+  ],
+  "transparent": false,
+  "prompt": "Use case: stylized-concept. A quiet seamless64x64pixel ICE FLOOR tile. True lowresolutionpixelart, enlarged to1024x1024 but everylogicalpixel is a16x16square, no subpixels. Mostly uniform coldblackishbluegray ice, quiet clusters with only6darkcolors, avgRGB35..45. ONE VERY SMALL FAINT buried SWORD SHADOW near center: diagonal lengthONLY10logicalpixels, tiny crossguard3logicalpixels, two tone blade, verylowcontrast darkgrayRGB55..65. 95percentemptyice, a FEW short subtlehairlinecracks, NO big cracks crossingtile, no large diagonal swirls, no pebbles/dots/particles/dither/noise. Keepweapon shadow small and mostlyfrostobscured. Seamless all4edges, no central spotlight/vignette/border/frame. Topdown3/4 existingcoldgraygamefloorstyle fromrefs. No people, objects aboveice, magic, text or watermark. Only oneopaque texturetile, no sprite sheet.",
+  "tool": "OpenAI builtin image_gen",
+  "source": "/Users/zhangjunqiu/.codex/generated_images/01a14377-c537-7a10-b5df-10043f63fbe0/exec-fea002b2-3351-43b9-ac6a-69b923c28d93.png"
+}

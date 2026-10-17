@@ -151,3 +151,8 @@ Claude 验收（2026-10-16）：第 6 批 34 项已接入并在 Godot 内实测�
 ### 任务F交付补记（2026-10-17）
 
 9张必做非像素升级卡完成美术自检并复制至sprites/cards/，PNG RGB720×1200；14次内置image_gen生成的原图、真实Prompt和项目自有输入参考已完整归档，5份失败中间稿保留并记录原因。四张角色卡逐项上传现有cutin，四张神明与通用卡使用本批原创厚涂基准，没有外部角色造型或作品名提示。授权沿用上文已核验OpenAI输出商业使用与所有权依据：https://openai.com/policies/terms-of-use/ ；Pillow12.1.1沿用MIT-CMU，仅作RGB/尺寸规范化、Lanczos缩小、预览与90级离线PNG尺寸链，不在Python重画人物或武器。逐项记录见source/taskF_card_art_2026-10-17/manifest.json和records/generation_jobs.json。实际检查了原图手/脸/武器、260×433、下45%90%深色遮罩、四神同套对照、角色cutin一致性；正式文件/approved/候选哈希一致，尺寸模式和90级缩小链及gallery本地链接检查零错误。未生成可选觉醒卡，未配置Godot导入mipmap、未游戏实测；由用户接入并设置平滑过滤。没有注册、付费、收费API或新增第三方美术。
+
+
+### 任务 E 交付补记（2026-10-17）
+
+第2关地图91项完成本代理美术自检（9边界/转角/洞口、6地块、36过渡、28物件、12贴花），已复制到对应sprites/*/helheim/。实际使用用户已批准的内置image_gen共65次，65张原始PNG、真实Prompt、项目自有参考与失败版本均保存在source/taskE_helheim_map_2026-10-17/；没有新增第三方作品造型。商用及输出所有权沿用本台账已核验的OpenAI条款：https://openai.com/policies/terms-of-use/ 。免费Chrome Piskel实际统一熄灭/点亮灵魂灯的固定像素并手绘小磷火，工程和PNG导出归档；冰下剑影的Piskel修正v06未通过并保留为失败稿，最终浅冰v07由内置工具编辑项目自有地块完成。Piskel用户保留作品权利：https://www.piskelapp.com/terms/ 。Pillow沿用MIT-CMU，仅作最近邻尺寸、二值alpha、既有/限定色表、整块裁排、源像素最小误差重叠拼接、透明裁切、预览及检查，没有在Python重画角色；金桥整块桥面及栏杆分别最近邻排布，36过渡仅改变最终地块alpha、同坐标RGB不变。91张正式文件、approved与候选SHA256一致，尺寸/RGBA/alpha0或255/共享色表/来源链接及普通物件2px留白核验通过；色表预算48、实际最终RGB并集47。逐项记录见本批manifest.json、records/reviews.json、audit.json、final_audit.json及source_inventory.json。已查看1×/4×、6张4×4、冥河混铺、完整边界含四角和洞口、36过渡组装与1280×720角色合成；Chrome验收页实际加载91项182个画布，6张平铺图无加载失败，分类筛选可用。map_scroll.gif为静态合成的窗口移动检查，不是游戏动画；合成不代表最终地图布局。无新增账号、注册、付款或收费API；未修改代码或游戏场景，未提交git，尚未Godot实测，待Claude接入、配置碰撞遮挡并验收。

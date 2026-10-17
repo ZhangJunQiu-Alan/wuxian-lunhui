@@ -1,0 +1,17 @@
+{
+  "tool": "OpenAI built-in image generation",
+  "source": "/Users/zhangjunqiu/.codex/generated_images/01a14377-c537-7a10-b5df-10043f63fbe0/exec-51ea4557-3ad2-436d-9c96-e04551954a9f.png",
+  "type": "borders",
+  "id": "ice_cliff_01",
+  "w": 256,
+  "h": 192,
+  "subject": "Southern boundary: dark gray-black rock cliff filling LOWER area, muted icy seams in cracks, small bone shards near rock. Playable TOP inner edge irregular fully transparent, viewed from topdown3quarter.",
+  "axis": "x",
+  "inner": "n",
+  "version": "v01",
+  "refs": [
+    "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskE_helheim_map_2026-10-17/refs/style_helheim.png"
+  ],
+  "prompt": "Use case: stylized-concept. Asset type: production lowresolution pixel art environment asset for a topdown3quarter dark underworld survival game.\nInput1 is STYLE REFERENCE ONLY: match its existing coldgray, deepgreen, boneivory and charcoal environments, pixel clusters, dark outlines and upperleft lighting; do not copy characters or contact-sheet layout. Other input if present is MATERIAL/FORM REFERENCE only.\nPrimary request: Southern boundary: dark gray-black rock cliff filling LOWER area, muted icy seams in cracks, small bone shards near rock. Playable TOP inner edge irregular fully transparent, viewed from topdown3quarter.\nEXACTLY ONE boundary module, logical320x192px. Repeat seamlessly along HORIZONTAL LEFT-RIGHT axis. Material continues through both connection ends with NO 2px empty end gaps. Inner playable edge fully transparent, irregular rocky edge, not straight line. Outer area opaque. No isolated-object rounded vignette.\nStyle: handmade low-resolution PIXEL ART, crisp coarse pixel clusters and restrained48colors, no smooth painting or antialiasing, upperleft highlights and lower-rightshade, same rendering as reference. NO brightgold, orange or warm glow; restrained underworld colors. \nAvoid: any text, names, letters, runes, labels, grid, watermark, logo, sheet with multiple objects, extra characters, modern objects, scenery/background panel, drop shadow outside silhouette, magic particles or bloom. Opaque solidpixelart, never semi-transparent alpha.",
+  "transparent": true
+}

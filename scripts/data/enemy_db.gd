@@ -13,7 +13,7 @@ class_name EnemyDB
 ##   ghost     穿过其他敌人、冥河和物件
 ##   dodge     被打中时闪避的几率（闪开后 DODGE_COOLDOWN 秒内不会再闪）
 ##   split     死亡时分裂成哪种敌人，split_count 分裂几只
-##   sprite_dir 素材不在 enemies/ 里时写素材所在的文件夹（Boss 战里要打断的锁桩）
+##   sprite_dir 素材不在 enemies/ 里时写素材所在的文件夹（Boss 战里要打断的锁桩）；sprite 是素材文件名和 id 不一样时的文件名
 
 const ALL := {
 	# ———— 篇章一 · 第 1 关「芬布尔之冬」————
@@ -52,7 +52,8 @@ const ALL := {
 	"anchor_chain": {"name": "锚链", "hp": 110.0, "speed": 0.0, "damage": 0.0, "radius": 18.0, "xp": 3,
 		"color": Color(0.4, 0.38, 0.36), "behavior": "still", "mass": 1000.0, "sprite_dir": "res://assets/sprites/quests/"},
 	"nail_heap": {"name": "指甲堆", "hp": 60.0, "speed": 0.0, "damage": 0.0, "radius": 24.0, "xp": 3,
-		"color": Color(0.72, 0.66, 0.48), "behavior": "still", "mass": 1000.0, "sprite_dir": "res://assets/sprites/props/helheim/"},
+		"color": Color(0.72, 0.66, 0.48), "behavior": "still", "mass": 1000.0, "sprite_dir": "res://assets/sprites/props/helheim/",
+		"sprite": "nail_heap_02"},
 	# 隐藏支线「不肯哭泣的女巨人」：诡计之神变的老女巨人
 	"thokk": {"name": "不肯哭泣的女巨人", "hp": 90.0, "speed": 70.0, "damage": 14.0, "radius": 20.0, "xp": 10,
 		"color": Color(0.55, 0.45, 0.4), "mass": 4.0, "gait": "heavy"},
