@@ -1,0 +1,323 @@
+[
+  {
+    "id": "thor",
+    "version": "v01",
+    "prompt": "Use case: stylized-concept. Asset: full-bleed upgrade card illustration, single vertical painting, intended final 720x1200 (3:5). Paint one monumental red-bearded thunder warrior, stocky muscular mature man, coarse linen and brown leather armor with dark fur mantle, no helmet. Thick textured digital oil painting, rugged visible brushwork, cold desaturated charcoal and deep brown with restrained tarnished gold knots. Slight low angle, centered waist-up portrait. His entire face at y15-29%, both hands and short-handled blockheaded stone warhammer clearly readable at y32-49%, hammer head engraved with a few small abstract rune-like cuts (not writing). One anatomically correct hand grips the continuous short handle; second hand relaxed, five natural fingers. Ice blue #8CC7FF electrical arcs around forearm and hammer, upper area only. Strong warm-neutral upper-left key light, right side deep cool shadows. Fully original ancient northern ceremonial-warrior design described from traditional motifs. No reference to any modern character. Upper 55% contains every important identifier, eyes and hammer; bottom 40% mostly very dark plain fur folds fading into charcoal haze, minimal detail and no bright effects. IMPORTANT generous blank dark 40px-equivalent left/right safety margins (6% each); face and hammer away from edges; head not cropped. Full painted background subtle dark smoke, no detailed scenery. Serious epic weight, realistic hand anatomy, handsome rough face, no glossy 3D, no pixel art, no anime, no comic outlines. No text, words, legible inscription, border, logo, signature or watermark. One image only.",
+    "tool": "image_gen.imagegen built-in",
+    "generated_path": "/Users/zhangjunqiu/.codex/generated_images/01a14093-604c-72e3-b0c2-585e428c4824/exec-5af1ffc9-1ed8-4194-9602-395b375cfac5.png",
+    "references": [],
+    "source_file": "originals/thor_v01.png",
+    "generation_url": null,
+    "provenance_note": "Generated in this Codex task; no public conversation URL produced",
+    "selected": false,
+    "review_status": "rejected",
+    "review_note": "质感偏写实而非厚涂；低处额外手形/锤位置不利卡片遮罩，改v02。",
+    "reference_sha256": []
+  },
+  {
+    "id": "thor",
+    "version": "v02",
+    "prompt": "Use case: stylized-concept. Asset: full-bleed upgrade card illustration, single vertical painting, intended final 720x1200 (3:5). Paint one monumental red-bearded thunder warrior, stocky muscular mature man, coarse linen and brown leather armor with dark fur mantle, no helmet. Thick textured digital oil painting, rugged visible brushwork, cold desaturated charcoal and deep brown with restrained tarnished gold knots. Slight low angle, centered waist-up portrait. His entire face at y15-29%, both hands and short-handled blockheaded stone warhammer clearly readable at y32-49%, hammer head engraved with a few small abstract rune-like cuts (not writing). One anatomically correct hand grips the continuous short handle; second hand relaxed, five natural fingers. Ice blue #8CC7FF electrical arcs around forearm and hammer, upper area only. Strong warm-neutral upper-left key light, right side deep cool shadows. Fully original ancient northern ceremonial-warrior design described from traditional motifs. No reference to any modern character. Upper 55% contains every important identifier, eyes and hammer; bottom 40% mostly very dark plain fur folds fading into charcoal haze, minimal detail and no bright effects. IMPORTANT generous blank dark 40px-equivalent left/right safety margins (6% each); face and hammer away from edges; head not cropped. Full painted background subtle dark smoke, no detailed scenery. Serious epic weight, realistic hand anatomy, handsome rough face, no glossy 3D, no pixel art, no anime, no comic outlines. No text, words, legible inscription, border, logo, signature or watermark. One image only.\nRefine this reference painting while preserving the warrior's face, hammer identity, palette and upper-left light. Make the medium clearly a thick digital OIL PAINTING: large broken planes, tactile broad impasto strokes on skin, fur, cloudy background; less photographic microdetail. Raise and slightly reduce the hammer so its entire head and gripping hand sit ABOVE the 52% horizontal line, lower the secondary relaxed hand out of sight under the plain mantle. Keep every important detail in upper half. Bottom 40% plain very dark folds and haze. Same 3:5 vertical full canvas, no text, border or letters.",
+    "tool": "image_gen.imagegen built-in",
+    "generated_path": "/Users/zhangjunqiu/.codex/generated_images/01a14093-604c-72e3-b0c2-585e428c4824/exec-b1b656bc-b8c4-4a9c-9924-169dfeec4fe6.png",
+    "references": [
+      "/Users/zhangjunqiu/.codex/generated_images/01a14093-604c-72e3-b0c2-585e428c4824/exec-5af1ffc9-1ed8-4194-9602-395b375cfac5.png"
+    ],
+    "source_file": "originals/thor_v02.png",
+    "generation_url": null,
+    "provenance_note": "Generated in this Codex task; no public conversation URL produced",
+    "selected": true,
+    "review_status": "selected_after_visual_review",
+    "review_note": "红胡子、粗布皮甲毛皮；冰蓝电弧及连续短柄方头锤可辨；握持手无明显多指或融合，次手已隐藏。",
+    "reference_sha256": [
+      {
+        "path": "/Users/zhangjunqiu/.codex/generated_images/01a14093-604c-72e3-b0c2-585e428c4824/exec-5af1ffc9-1ed8-4194-9602-395b375cfac5.png",
+        "sha256": "0677541189d53446c6e3b2f0490b2300f8ef80a52e1bb78cecb0dfd60df14b60"
+      }
+    ]
+  },
+  {
+    "id": "odin",
+    "version": "v01",
+    "prompt": "Create a single 3:5 vertical full-bleed upgrade-card painting, 720x1200 final. Use reference solely for the exact digital oil paint medium, broad rugged brushwork, dark cold-brown palette and upper-left lighting. Depict a DIFFERENT original northern deity-like elder: one-eyed ancient man with a clearly visible worn black eyepatch over HIS left eye, other eye sharp; long grey beard, battered broad-brim dark felt hat, wool and leather robes with muted old gold knotwork. Two black ravens, one on each shoulder, both full recognizable head/beak/wings silhouettes inside safety margins. He grips ONE long wooden spear with continuous shaft and leaf metal tip, tip at top left of his head, shaft vertical but not crossing his face; fingers natural around shaft. Violet #BF99FF abstract magical rune-like lights by spear tip and eyepatch; no legible writing. Slight low-angle waist-up, centered head y16-28%, ravens and hand at y30-46%; every identifier fully above y52%. Bottom40% plain dark robe fading into charcoal fog. Keep left/right6% safe, no important object at edge. Exactly same scale face and painterly lighting as reference. Epic stern wisdom, thick expressive brushstrokes, not photography, no pixelart, no glossy3D, no comic. No words, frame, signature, watermark. Do not copy the reference's face, hammer, beard color or blue lightning.",
+    "tool": "image_gen.imagegen built-in",
+    "generated_path": "/Users/zhangjunqiu/.codex/generated_images/01a14093-604c-72e3-b0c2-585e428c4824/exec-033fc2b7-6bbe-4c3f-942d-27efda12206b.png",
+    "references": [
+      "/Users/zhangjunqiu/.codex/generated_images/01a14093-604c-72e3-b0c2-585e428c4824/exec-b1b656bc-b8c4-4a9c-9924-169dfeec4fe6.png"
+    ],
+    "source_file": "originals/odin_v01.png",
+    "generation_url": null,
+    "provenance_note": "Generated in this Codex task; no public conversation URL produced",
+    "selected": false,
+    "review_status": "rejected",
+    "review_note": "长枪枪尖触及上沿被裁切，改v02。",
+    "reference_sha256": [
+      {
+        "path": "/Users/zhangjunqiu/.codex/generated_images/01a14093-604c-72e3-b0c2-585e428c4824/exec-b1b656bc-b8c4-4a9c-9924-169dfeec4fe6.png",
+        "sha256": "32a4b75d7993518e9d9a45a989199f75754fbc4e8b7637f384e36e8cc22cf30e"
+      }
+    ]
+  },
+  {
+    "id": "odin",
+    "version": "v02",
+    "prompt": "Precise correction of the supplied painting: preserve the exact same one-eyed elderly face, two shoulder ravens, hat, hand, thick oil brushwork, violet accent and composition. The top of the spear is cropped. SHORTEN ONLY THE VISIBLE SPEAR TIP ASSEMBLY: move the entire leaf-shaped metal spearhead DOWN so its point sits at y=7% canvas height, leaving clearly painted dark background above it; shorten the shaft below its socket correspondingly so the gripping hand remains exactly where it is. Keep continuous straight wooden shaft, one coherent spearhead/socket, natural five-finger hand. Keep every important object at least 6% from canvas left/right; keep ravens' beaks inside safety area. Bottom40% remains dark low-detail robe. No new symbols, no text, no border. Vertical3:5 same image.",
+    "tool": "image_gen.imagegen built-in",
+    "generated_path": "/Users/zhangjunqiu/.codex/generated_images/01a14093-604c-72e3-b0c2-585e428c4824/exec-2930c9cf-f016-4fe7-a80f-b37b3ecfd0a4.png",
+    "references": [
+      "/Users/zhangjunqiu/.codex/generated_images/01a14093-604c-72e3-b0c2-585e428c4824/exec-033fc2b7-6bbe-4c3f-942d-27efda12206b.png"
+    ],
+    "source_file": "originals/odin_v02.png",
+    "generation_url": null,
+    "provenance_note": "Generated in this Codex task; no public conversation URL produced",
+    "selected": true,
+    "review_status": "selected_after_visual_review",
+    "review_note": "独眼眼罩、灰长须、旧宽檐帽、两只渡鸦和紫色长枪光；v02枪尖完整留白，握持手与枪杆连接合理。",
+    "reference_sha256": [
+      {
+        "path": "/Users/zhangjunqiu/.codex/generated_images/01a14093-604c-72e3-b0c2-585e428c4824/exec-033fc2b7-6bbe-4c3f-942d-27efda12206b.png",
+        "sha256": "e4e0e759e2f5dc071f0fad9d404a6ca775fe446ccd3668c0882d9dd5449f6537"
+      }
+    ]
+  },
+  {
+    "id": "loki",
+    "version": "v01",
+    "prompt": "Create ONE original 3:5 vertical 720x1200 full-bleed upgrade card digital oil painting. Input is ONLY style/lighting/brushwork/composition reference, not character. A lean wiry pale adult trickster man, angular handsome face, faint sly asymmetrical smile, tousled dark auburn-black hair, no beard, no headwear. Dark charcoal and deep brown northern wool/leather tunic, simple knotwork cuffs, no green clothing. Both forearms held loosely near chest at y38-49%, wrists clearly showing old healed chain-pressure scar bands, no fresh wounds. Fingers relaxed and anatomically natural. Restrained orange #FF8C33 ghost-fire coils around open palm and shoulders in upper half, warm orange light contrasts upper-left neutral key. No fire in lower40%. Same tactile broad impasto background and brushy fur/cloth as reference; not photograph. Centered waist-up, slight low angle, full head y12-28%, all identifiers upper52%; left and right6% safe negative margins. Bottom40% plain near-black mantle and soft dark smoke with low detail. Stern mythic gravitas under cunning expression. No horned helmet, no green/gold outfit, no armor copied from existing entertainment characters. No text, readable writing, frame, border, logo, watermark or signature. One figure only; no weapon needed. Full dark painted backdrop.",
+    "tool": "image_gen.imagegen built-in",
+    "generated_path": "/Users/zhangjunqiu/.codex/generated_images/01a14093-604c-72e3-b0c2-585e428c4824/exec-5815b5fe-ab5b-4198-8369-1b9b4a1e7304.png",
+    "references": [
+      "/Users/zhangjunqiu/.codex/generated_images/01a14093-604c-72e3-b0c2-585e428c4824/exec-b1b656bc-b8c4-4a9c-9924-169dfeec4fe6.png"
+    ],
+    "source_file": "originals/loki_v01.png",
+    "generation_url": null,
+    "provenance_note": "Generated in this Codex task; no public conversation URL produced",
+    "selected": true,
+    "review_status": "selected_after_visual_review",
+    "review_note": "瘦削面部与微笑、深红黑乱发、橙色诡火、双腕旧疤可见；双手结构无明显多指或断指，未采用角盔或绿金衣。",
+    "reference_sha256": [
+      {
+        "path": "/Users/zhangjunqiu/.codex/generated_images/01a14093-604c-72e3-b0c2-585e428c4824/exec-b1b656bc-b8c4-4a9c-9924-169dfeec4fe6.png",
+        "sha256": "32a4b75d7993518e9d9a45a989199f75754fbc4e8b7637f384e36e8cc22cf30e"
+      }
+    ]
+  },
+  {
+    "id": "freyja",
+    "version": "v01",
+    "prompt": "One vertical 3:5 full-bleed game upgrade card painting, final720x1200. Reference image ONLY sets the shared tactile thick digital oil painting, broad impasto, cold desaturated dark palette, upper-left warm-neutral key and waist-up low-angle composition. Paint an original golden-haired woman warrior goddess: mature strong dignified face, centered y16-28%, long braided golden hair, fully covered weathered steel and dark leather breastplate with restrained ancient knotwork. A broad old-gold ornate necklace with interlinked amber/gold pendants rests high on the chest ABOVE y40%. Dark hawk-feather mantle on shoulders, unmistakably overlapping long falcon feathers, not fur. One armored gauntlet held calmly at chest near necklace, five natural fingers; other arm concealed. Several luminous gold #FFD966 feathers circle shoulders/head, kept entirely within middle88% width and upper50% height. Proud severe authority, no sexy pose, no cleavage, no bare midriff, no revealing armor, no crown needed. Same face scale and painterly brushwork as the reference, not photo, not pixels, not glossy3D. Important necklace, face, feather silhouettes above y52%; bottom40% simple near-black feather cloak fading to smoke. Left/right6% safe, full head and all floating feathers uncut. Dark quiet background. No text, letters, border, signature, logos or watermark; one figure.",
+    "tool": "image_gen.imagegen built-in",
+    "generated_path": "/Users/zhangjunqiu/.codex/generated_images/01a14093-604c-72e3-b0c2-585e428c4824/exec-67b913fd-8b67-4012-8f17-9674be9cdffe.png",
+    "references": [
+      "/Users/zhangjunqiu/.codex/generated_images/01a14093-604c-72e3-b0c2-585e428c4824/exec-b1b656bc-b8c4-4a9c-9924-169dfeec4fe6.png"
+    ],
+    "source_file": "originals/freyja_v01.png",
+    "generation_url": null,
+    "provenance_note": "Generated in this Codex task; no public conversation URL produced",
+    "selected": true,
+    "review_status": "selected_after_visual_review",
+    "review_note": "金发、完整覆甲、鹰羽披风、胸前金项链与金色羽毛清楚；手套与胸甲关系合理，非暴露服装。",
+    "reference_sha256": [
+      {
+        "path": "/Users/zhangjunqiu/.codex/generated_images/01a14093-604c-72e3-b0c2-585e428c4824/exec-b1b656bc-b8c4-4a9c-9924-169dfeec4fe6.png",
+        "sha256": "32a4b75d7993518e9d9a45a989199f75754fbc4e8b7637f384e36e8cc22cf30e"
+      }
+    ]
+  },
+  {
+    "id": "general",
+    "version": "v01",
+    "prompt": "One single 3:5 vertical full-bleed game upgrade-card painting, final720x1200. Input style reference ONLY: match tactile thick digital oil paint, broad rugged impasto, dark muted neutral cold grey and deep brown, upper-left light, epic weight. NO PERSON. A single ancient upright weatherworn grey stone stele beneath gigantic gnarled root arch, ancient northern knotwork carvings and short abstract rune-like geometric marks glow COLD WHITE, not readable words. Stele compact centered x50%, from y19% to y50%, its entire identifying carved face above y52%. Roots frame it but keep central stone face uncluttered; mysterious snowy ash and charcoal fog; no large distant scenery. No colorful magic, no gold highlights other than tiny worn metal specks. Soft pale upper-left light on stone, deep shadows on right. Bottom40% near-black soil/root shadow and haze, very few details, generous text space. All important stone and marks inside6% left/right safety margins. Strong readable stone silhouette at260pxwidth. Painterly not pixel, not photo, no glossy3D. No typography, legible writing, letters, card border, logo, signature or watermark.",
+    "tool": "image_gen.imagegen built-in",
+    "generated_path": "/Users/zhangjunqiu/.codex/generated_images/01a14093-604c-72e3-b0c2-585e428c4824/exec-9a3918a3-77bd-4230-86a7-a4f99a84f0f7.png",
+    "references": [
+      "/Users/zhangjunqiu/.codex/generated_images/01a14093-604c-72e3-b0c2-585e428c4824/exec-b1b656bc-b8c4-4a9c-9924-169dfeec4fe6.png"
+    ],
+    "source_file": "originals/general_v01.png",
+    "generation_url": null,
+    "provenance_note": "Generated in this Codex task; no public conversation URL produced",
+    "selected": true,
+    "review_status": "selected_after_visual_review",
+    "review_note": "树根拱下冷白发光几何刻纹石碑，无人物；刻纹作为装饰符号，无标题或连续排版文字。",
+    "reference_sha256": [
+      {
+        "path": "/Users/zhangjunqiu/.codex/generated_images/01a14093-604c-72e3-b0c2-585e428c4824/exec-b1b656bc-b8c4-4a9c-9924-169dfeec4fe6.png",
+        "sha256": "32a4b75d7993518e9d9a45a989199f75754fbc4e8b7637f384e36e8cc22cf30e"
+      }
+    ]
+  },
+  {
+    "id": "swordsman",
+    "version": "v01",
+    "prompt": "Generate one full-bleed vertical3:5 720x1200 upgrade-card digital oil painting. Image1 is STRICT character identity reference: preserve same young clean-shaven East Asian male swordsman, long black hair in high tied back ponytail/topknot, loose black side locks, sharp brows and serious rightward three-quarter gaze, navy/charcoal open-collar robe. Do NOT change to older man, beard, brown hair, fur-clad warrior or red outfit. Image2 is ONLY shared style: tactile heavy digital oil painting, coarse impasto, dark cool grey/deep brown background, upper-left dramatic neutral light, epic waist-up slightly low angle. Show referenced swordsman half-length holding a SINGLE traditional curved steel sword, dark handle and small simple guard, wrapped with both natural hands near chest y35-47%. Continuous blade rises diagonally beside his head, tip fully visible with top and side6% safety margins, never crosses face; blade/guard/handle coherent. Keep face y15-28%, head and complete weapon above y53%; same identity with realistic painterly detail rather than pixels. Lower40% plain near-black navy robe folds fading into charcoal haze, no bright details. Subtle ancient knot motif only in background, keep Japanese clothing plain as reference. No extra armor, no fur mantle. No text, names, logo, border, watermark, signature, no photoreal camera finish, no pixelart. Important details centered with6% lateral safety.",
+    "tool": "image_gen.imagegen built-in",
+    "generated_path": "/Users/zhangjunqiu/.codex/generated_images/01a14093-604c-72e3-b0c2-585e428c4824/exec-f10f3fa8-8feb-4fa7-9312-4bc4efa24a49.png",
+    "references": [
+      "/Users/zhangjunqiu/Desktop/无限恐怖/assets/sprites/characters/swordsman_cutin.png",
+      "/Users/zhangjunqiu/.codex/generated_images/01a14093-604c-72e3-b0c2-585e428c4824/exec-b1b656bc-b8c4-4a9c-9924-169dfeec4fe6.png"
+    ],
+    "source_file": "originals/swordsman_v01.png",
+    "generation_url": null,
+    "provenance_note": "Generated in this Codex task; no public conversation URL produced",
+    "selected": false,
+    "review_status": "rejected",
+    "review_note": "刀尖靠右边且双手/刀柄过低，改v02。",
+    "reference_sha256": [
+      {
+        "path": "/Users/zhangjunqiu/Desktop/无限恐怖/assets/sprites/characters/swordsman_cutin.png",
+        "sha256": "378d640f4a0d8c1c8cf29406f850cd5599f24e681d4bd6852e0f260c6a742420"
+      },
+      {
+        "path": "/Users/zhangjunqiu/.codex/generated_images/01a14093-604c-72e3-b0c2-585e428c4824/exec-b1b656bc-b8c4-4a9c-9924-169dfeec4fe6.png",
+        "sha256": "32a4b75d7993518e9d9a45a989199f75754fbc4e8b7637f384e36e8cc22cf30e"
+      }
+    ]
+  },
+  {
+    "id": "swordsman",
+    "version": "v02",
+    "prompt": "Correct ONLY composition in supplied swordsman oil painting, preserve exact young clean-shaven face, black topknot/ponytail, navy robe, rough oil brushwork and light. Current sword too close to top/right edge and hands too low. Repose the sword as a compact diagonal across the UPPER CHEST, lower-left grip to upper-right tip: both hands at x40-56%, y37-47%; guard at x55%,y36%; BLADE TIP at x80%,y11%, leaving clear 20% right margin and11% top margin. Blade entire from guard to tip is continuous modest curved steel with ONE cutting edge and a coherent tip. Shorten apparent blade by perspective so it fits, natural two-hand long hilt, do not overlap face. Face centered y18-31%, topknot inside x25-65%. Pose head as reference. Absolutely NO weapon or hands below y52%. Bottom45% consists only of dark plain navy robe and charcoal haze. Remove busy belt and lower arm details. Single figure, same3:5 full canvas. No text, border, watermark, extra weapon. Keep full weapon and hands well inside safe region.",
+    "tool": "image_gen.imagegen built-in",
+    "generated_path": "/Users/zhangjunqiu/.codex/generated_images/01a14093-604c-72e3-b0c2-585e428c4824/exec-7e66ea4b-43d5-48bc-a676-21ac7e50c844.png",
+    "references": [
+      "/Users/zhangjunqiu/.codex/generated_images/01a14093-604c-72e3-b0c2-585e428c4824/exec-f10f3fa8-8feb-4fa7-9312-4bc4efa24a49.png"
+    ],
+    "source_file": "originals/swordsman_v02.png",
+    "generation_url": null,
+    "provenance_note": "Generated in this Codex task; no public conversation URL produced",
+    "selected": false,
+    "review_status": "rejected",
+    "review_note": "下方握持手仍落入文字遮罩区，改v03。",
+    "reference_sha256": [
+      {
+        "path": "/Users/zhangjunqiu/.codex/generated_images/01a14093-604c-72e3-b0c2-585e428c4824/exec-f10f3fa8-8feb-4fa7-9312-4bc4efa24a49.png",
+        "sha256": "287e10e64a7d8f0bd301f13d46ff4a2cea64c47a9619a7f49eede402243ebdc7"
+      }
+    ]
+  },
+  {
+    "id": "gunslinger",
+    "version": "v01",
+    "prompt": "One full-bleed 3:5 vertical game upgrade card720x1200, thick digital oil painting. Image1 STRICT character identity reference: same young woman gunslinger with long wavy medium brown hair, brown wide-brim weathered cowboy hat, burgundy/maroon red coat with round antique brass buttons, dark brown neck bow/scarf, youthful determined face and brown eyes, no beard. Preserve reference outfit colors and feminine identity; not a male northern warrior. Image2 ONLY oil paint medium/upper-left dramatic light and backdrop reference, match coarse impasto, cold charcoal background, low-angle upper-body portrait. CRITICAL composition: camera pulled back enough: hat silhouette entirely within x10-90%, y8-25%; face y23-34%; right hand near cheek at y31-43% holds ONE short antique steel revolver upright with recognizable cylinder, barrel tip at y19%, fingers and grip coherent, index finger safely along frame, no extra firearm. Complete revolver inside x20-80%; no clipped hat/weapon. Shoulders end above55%; bottom45% is ONLY near-black burgundy coat drape and charcoal fog, no hands, gun or bright jewelry there. No large belt, no feet, no second hand below55%. Same character as reference translated to oil painting, natural anatomy. Not pixelart, not anime, no photographic finish. No text, card frame, logo, signature, watermark, no other person.",
+    "tool": "image_gen.imagegen built-in",
+    "generated_path": "/Users/zhangjunqiu/.codex/generated_images/01a14093-604c-72e3-b0c2-585e428c4824/exec-9cd825af-cb8a-4d75-9f34-becfb846d33d.png",
+    "references": [
+      "/Users/zhangjunqiu/Desktop/无限恐怖/assets/sprites/characters/gunslinger_cutin.png",
+      "/Users/zhangjunqiu/.codex/generated_images/01a14093-604c-72e3-b0c2-585e428c4824/exec-b1b656bc-b8c4-4a9c-9924-169dfeec4fe6.png"
+    ],
+    "source_file": "originals/gunslinger_v01.png",
+    "generation_url": null,
+    "provenance_note": "Generated in this Codex task; no public conversation URL produced",
+    "selected": true,
+    "review_status": "selected_after_visual_review",
+    "review_note": "直接核对项目特写：女性、棕色长卷发和宽檐帽、酒红外套、铜纽扣及深色领结；单左轮、握持手和转轮结构连贯。",
+    "reference_sha256": [
+      {
+        "path": "/Users/zhangjunqiu/Desktop/无限恐怖/assets/sprites/characters/gunslinger_cutin.png",
+        "sha256": "74a977226befd12863617b2b1f4888db04cf0090ad693ca33b444614bd2a03c6"
+      },
+      {
+        "path": "/Users/zhangjunqiu/.codex/generated_images/01a14093-604c-72e3-b0c2-585e428c4824/exec-b1b656bc-b8c4-4a9c-9924-169dfeec4fe6.png",
+        "sha256": "32a4b75d7993518e9d9a45a989199f75754fbc4e8b7637f384e36e8cc22cf30e"
+      }
+    ]
+  },
+  {
+    "id": "assassin",
+    "version": "v01",
+    "prompt": "Create single vertical3:5 720x1200 full-bleed game upgrade-card oil painting. Image1 STRICT character identity reference: same young East Asian man with stern angular clean-shaven face, straight black hair in high topknot, burgundy red tie and trailing cloth, red-brown scarf, dark lamellar samurai-style armor with red cords and antique gold small fittings. Preserve exact identity/hair/clothes palette. He may have red carved demon-face mask hanging high beside one shoulder as seen in reference, not worn over face. Image2 style reference ONLY: thick coarse impasto oil brushwork, charcoal cold backdrop, strong upper-left neutral key, dark epic low-angle portrait. Must visibly hold TWO distinct short curved steel blades, one in each natural gloved hand, crossing shallow X high at chest y35-46%, blade tips point outward/up but each stops inside x12-88%, y27-38%. Both separate handles, guards and five-finger grips clear, no merged blades, no third weapon. Face centered y15-28%, entire topknot within canvas, hands above y49%, mask above50%. Crop is half-length upper-body. Bottom45% only near-black dark red cloth drape/haze, very low detail, NO hands or weapons there. Left/right6% safe. Weapons and face must remain clear at260px wide. Painted not pixel, no photoreal, no comic. No letters, readable writing, border, logo, signature, watermark; one character.",
+    "tool": "image_gen.imagegen built-in",
+    "generated_path": "/Users/zhangjunqiu/.codex/generated_images/01a14093-604c-72e3-b0c2-585e428c4824/exec-c95609e5-7fc5-4c6d-9eef-66d5ef28a20d.png",
+    "references": [
+      "/Users/zhangjunqiu/Desktop/无限恐怖/assets/sprites/characters/assassin_cutin.png",
+      "/Users/zhangjunqiu/.codex/generated_images/01a14093-604c-72e3-b0c2-585e428c4824/exec-b1b656bc-b8c4-4a9c-9924-169dfeec4fe6.png"
+    ],
+    "source_file": "originals/assassin_v01.png",
+    "generation_url": null,
+    "provenance_note": "Generated in this Codex task; no public conversation URL produced",
+    "selected": false,
+    "review_status": "rejected",
+    "review_note": "双刃横向安全余量偏小、刀柄过低，改v02。",
+    "reference_sha256": [
+      {
+        "path": "/Users/zhangjunqiu/Desktop/无限恐怖/assets/sprites/characters/assassin_cutin.png",
+        "sha256": "c614a04f4fc5714e49534f968b1bd04810586855c35ca8c75e23dee5225278e6"
+      },
+      {
+        "path": "/Users/zhangjunqiu/.codex/generated_images/01a14093-604c-72e3-b0c2-585e428c4824/exec-b1b656bc-b8c4-4a9c-9924-169dfeec4fe6.png",
+        "sha256": "32a4b75d7993518e9d9a45a989199f75754fbc4e8b7637f384e36e8cc22cf30e"
+      }
+    ]
+  },
+  {
+    "id": "mage",
+    "version": "v01",
+    "prompt": "One full-bleed vertical3:5 final720x1200 digital oil painting upgrade-card. Image1 STRICT character identity: same very old male mage, long white beard, deep navy/slate hood and heavy navy robe, thin weathered sharp nose, grey brows, expressive old face, a crooked bare WOOD staff with forked natural tip, no metal spear, no wide hat, no eyepatch. Preserve reference head/robe colors and staff shape. Image2 ONLY shared medium/light: thick coarse impasto digital oil, charcoal/desaturated brown painted backdrop, upper-left directional neutral light, stern epic low-angle half-length portrait. COMPOSITION: upper52% must contain his FULL hood, face, crooked staff tip and hands. Head y15-30%; one natural hand grips wooden staff near chin y32-43%, staff tip at y8-18% and x20-35%, full visible with6% margin. Other hand raised beside chest y30-45% with exactly5 anatomically connected fingers, casting a restrained pale cold grey light (not bright lightning). Face and gesture fully readable at260px. Bottom45% very dark plain navy robe folds and soft charcoal fog, no hands or luminous orbs there. No armor, no fur, no sword, no fire, no decorative crown. Same man as reference translated from pixels to painterly realism, not anime or photo. No text, border, name, signature, logo or watermark.",
+    "tool": "image_gen.imagegen built-in",
+    "generated_path": "/Users/zhangjunqiu/.codex/generated_images/01a14093-604c-72e3-b0c2-585e428c4824/exec-97ca144c-2851-4515-8009-c05d90097fe0.png",
+    "references": [
+      "/Users/zhangjunqiu/Desktop/无限恐怖/assets/sprites/characters/mage_cutin.png",
+      "/Users/zhangjunqiu/.codex/generated_images/01a14093-604c-72e3-b0c2-585e428c4824/exec-b1b656bc-b8c4-4a9c-9924-169dfeec4fe6.png"
+    ],
+    "source_file": "originals/mage_v01.png",
+    "generation_url": null,
+    "provenance_note": "Generated in this Codex task; no public conversation URL produced",
+    "selected": true,
+    "review_status": "selected_after_visual_review",
+    "review_note": "直接核对项目特写：年老长白须、深蓝兜帽袍及弯曲木杖；举手可见五指，无明显融合，手杖连贯。",
+    "reference_sha256": [
+      {
+        "path": "/Users/zhangjunqiu/Desktop/无限恐怖/assets/sprites/characters/mage_cutin.png",
+        "sha256": "e1d4c5f2c926b45c5efe032d91b3338d65b0e1399b4bad28c4dc783f7bb11545"
+      },
+      {
+        "path": "/Users/zhangjunqiu/.codex/generated_images/01a14093-604c-72e3-b0c2-585e428c4824/exec-b1b656bc-b8c4-4a9c-9924-169dfeec4fe6.png",
+        "sha256": "32a4b75d7993518e9d9a45a989199f75754fbc4e8b7637f384e36e8cc22cf30e"
+      }
+    ]
+  },
+  {
+    "id": "swordsman",
+    "version": "v03",
+    "prompt": "Precise composition correction, preserve exact face, topknot, navy robe, sword shape, painterly style and lighting. Move BOTH gripping hands, the entire guard and ENTIRE hilt UPWARD by 12% of canvas height, closer to chin. Hand group should fit between y32% and y45%. Put the sword pommel at y47%, never below50%. Adjust sleeves naturally to raised grip, right forearm crosses upper chest, second wrist aligned. Keep face where it is. Keep blade diagonal to upper right with tip FULLY INSIDE x83%, y10%, shorten its apparent length by perspective if required. Preserve one coherent continuous sword and natural two hands. Below y53% there must ONLY be plain dark navy robe drapery, no hands, weapon hilt, wrists or bright foreground elements. Entire bottom45% dark low-detail. Same single vertical3:5 image, no text, border, watermark.",
+    "tool": "image_gen.imagegen built-in",
+    "generated_path": "/Users/zhangjunqiu/.codex/generated_images/01a14093-604c-72e3-b0c2-585e428c4824/exec-a7fe74eb-4497-464b-9597-d968eb2c3cd7.png",
+    "references": [
+      "/Users/zhangjunqiu/.codex/generated_images/01a14093-604c-72e3-b0c2-585e428c4824/exec-7e66ea4b-43d5-48bc-a676-21ac7e50c844.png"
+    ],
+    "source_file": "originals/swordsman_v03.png",
+    "generation_url": null,
+    "provenance_note": "Generated in this Codex task; no public conversation URL produced",
+    "selected": true,
+    "review_status": "selected_after_visual_review",
+    "review_note": "直接核对项目特写：年轻无须面容、黑发束髻、深蓝开领袍；v03双手和刀柄上移，完整刀尖留边。",
+    "reference_sha256": [
+      {
+        "path": "/Users/zhangjunqiu/.codex/generated_images/01a14093-604c-72e3-b0c2-585e428c4824/exec-7e66ea4b-43d5-48bc-a676-21ac7e50c844.png",
+        "sha256": "5f5e79406d86610766df3b4a5a4fcd5a2ade2a62cf1acde7f5fa34251925c541"
+      }
+    ]
+  },
+  {
+    "id": "assassin",
+    "version": "v02",
+    "prompt": "Precise correction of this SAME assassin painting. Preserve face, black topknot with red tie, red scarf, dark lamellar armor, shoulder red carved mask, two-blade design, upper-left light and impasto medium. Important: both blade tips are too close to lateral edges, and hilts too low. Repose ONLY both arms and blades: raise both gloved fists 7% canvas height and bring them closer together at x38% and x62%, y43%; blade guards at y40%; pommels at y50%. The two short blades cross above fists, shortening visible length so LEFT tip ends at x16%,y24% and RIGHT tip ends at x84%,y26%. Entire pair of weapons must fit inside x13-87% and above y52%. Natural distinct five-finger grips, no blade/handle fusion, continuous two blades and exactly two handles. No part of weapon or hands in bottom45%; there only dark plain red-black cloak folds and smoke. Keep face and mask same, no added gear or third sword. Vertical3:5 full image, no text, watermark or border.",
+    "tool": "image_gen.imagegen built-in",
+    "generated_path": "/Users/zhangjunqiu/.codex/generated_images/01a14093-604c-72e3-b0c2-585e428c4824/exec-1bc134ae-1dd7-4b96-a754-fca70237551e.png",
+    "references": [
+      "/Users/zhangjunqiu/.codex/generated_images/01a14093-604c-72e3-b0c2-585e428c4824/exec-c95609e5-7fc5-4c6d-9eef-66d5ef28a20d.png"
+    ],
+    "source_file": "originals/assassin_v02.png",
+    "generation_url": null,
+    "provenance_note": "Generated in this Codex task; no public conversation URL produced",
+    "selected": true,
+    "review_status": "selected_after_visual_review",
+    "review_note": "直接核对项目特写：黑发红绳、红围巾、深色层甲和红面具；v02双刃及双手上移收紧，刀尖未被裁切。",
+    "reference_sha256": [
+      {
+        "path": "/Users/zhangjunqiu/.codex/generated_images/01a14093-604c-72e3-b0c2-585e428c4824/exec-c95609e5-7fc5-4c6d-9eef-66d5ef28a20d.png",
+        "sha256": "1944fff8e3ba8b82b892ea47f5f5374206ba7249c7fe3eaf3c4c58a4e13646af"
+      }
+    ]
+  }
+]

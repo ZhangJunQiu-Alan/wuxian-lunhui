@@ -1,0 +1,875 @@
+[
+  {
+    "id": "thor",
+    "base": "approved/thor.png",
+    "levels": [
+      {
+        "level": 1,
+        "size": [
+          360,
+          600
+        ],
+        "file": "mipmaps/thor/level_01_360x600.png",
+        "sha256": "cd4bbdee1368d6bdfe6139f62d7e3ab14ffea0167d8ccf1b81f4d0106c01957b"
+      },
+      {
+        "level": 2,
+        "size": [
+          180,
+          300
+        ],
+        "file": "mipmaps/thor/level_02_180x300.png",
+        "sha256": "90db3d670b86539f3952268089d1e5512548b99dd7555087e524341261778e4f"
+      },
+      {
+        "level": 3,
+        "size": [
+          90,
+          150
+        ],
+        "file": "mipmaps/thor/level_03_90x150.png",
+        "sha256": "c8fc855a01aa0fef65e3ad6bc721d4b117b89f82df8b49e28dafc1107cb4d0b8"
+      },
+      {
+        "level": 4,
+        "size": [
+          45,
+          75
+        ],
+        "file": "mipmaps/thor/level_04_45x75.png",
+        "sha256": "c8945bf5594e443d1fbf774f822656beb01b22f227b4a8e44f334855e65f3a44"
+      },
+      {
+        "level": 5,
+        "size": [
+          22,
+          37
+        ],
+        "file": "mipmaps/thor/level_05_22x37.png",
+        "sha256": "7535a2cf51198bf638e81eefecb5006796980d151acab2a1fd8ebce436d024b7"
+      },
+      {
+        "level": 6,
+        "size": [
+          11,
+          18
+        ],
+        "file": "mipmaps/thor/level_06_11x18.png",
+        "sha256": "59a6aced9b1a716fd3d917404b8a15a85c5a55ae8e4310794a154eb8eeac56cf"
+      },
+      {
+        "level": 7,
+        "size": [
+          5,
+          9
+        ],
+        "file": "mipmaps/thor/level_07_5x9.png",
+        "sha256": "63b81290581f3257301ae9833739af8bcb72fae1434a7b4022436d1ac1429909"
+      },
+      {
+        "level": 8,
+        "size": [
+          2,
+          4
+        ],
+        "file": "mipmaps/thor/level_08_2x4.png",
+        "sha256": "87886c7e9f583dc32e528b30d32732b6114c9278c3e4fc1394ce945b2184ac7f"
+      },
+      {
+        "level": 9,
+        "size": [
+          1,
+          2
+        ],
+        "file": "mipmaps/thor/level_09_1x2.png",
+        "sha256": "f5fd8566b93e6683c23987bbfcc0117c3c887c97edde5adb303cc017f91e6c61"
+      },
+      {
+        "level": 10,
+        "size": [
+          1,
+          1
+        ],
+        "file": "mipmaps/thor/level_10_1x1.png",
+        "sha256": "a51b92998b3fb3a69df8f5a0893b09cabf8f80d1861338797a3a3a6bec73334a"
+      }
+    ],
+    "note": "Offline RGB PNG resolution pyramid for inspection. PNG contains no embedded GPU mip levels; does not configure Godot import."
+  },
+  {
+    "id": "odin",
+    "base": "approved/odin.png",
+    "levels": [
+      {
+        "level": 1,
+        "size": [
+          360,
+          600
+        ],
+        "file": "mipmaps/odin/level_01_360x600.png",
+        "sha256": "5a5b6b5ef5c00d1016722efa1821d169397d8296745701f5642d95357c431fb8"
+      },
+      {
+        "level": 2,
+        "size": [
+          180,
+          300
+        ],
+        "file": "mipmaps/odin/level_02_180x300.png",
+        "sha256": "c82fa3eef72bc429d98027c9d70d0f0581f4b461c2acbe3dc7c09e6cadc3e877"
+      },
+      {
+        "level": 3,
+        "size": [
+          90,
+          150
+        ],
+        "file": "mipmaps/odin/level_03_90x150.png",
+        "sha256": "d44b7d786b7cc0e23db3a6f2a70f15c54c3e3cc157c46fb6d9f218bbad8da301"
+      },
+      {
+        "level": 4,
+        "size": [
+          45,
+          75
+        ],
+        "file": "mipmaps/odin/level_04_45x75.png",
+        "sha256": "6e58549be4207fafc298ba1ac53632e7a63f14699aa991475fb2fcc5777d7ab5"
+      },
+      {
+        "level": 5,
+        "size": [
+          22,
+          37
+        ],
+        "file": "mipmaps/odin/level_05_22x37.png",
+        "sha256": "5eb83588656eb4564d99df5894740c2be56588c2aeb6fed7afdbdef2643008fc"
+      },
+      {
+        "level": 6,
+        "size": [
+          11,
+          18
+        ],
+        "file": "mipmaps/odin/level_06_11x18.png",
+        "sha256": "7890a9b6b7ec0654a3ad6dc13bf4932a3234fe3c75115ddd2339bc695b313de2"
+      },
+      {
+        "level": 7,
+        "size": [
+          5,
+          9
+        ],
+        "file": "mipmaps/odin/level_07_5x9.png",
+        "sha256": "eaa6c6b6500d4681adc9dffaa903d3dc83ec06752603c740dc32bc338e8e0ddc"
+      },
+      {
+        "level": 8,
+        "size": [
+          2,
+          4
+        ],
+        "file": "mipmaps/odin/level_08_2x4.png",
+        "sha256": "92994b267fce22b75161aabcc28fd1d89d548766e3e8af68b20cecea89e31d42"
+      },
+      {
+        "level": 9,
+        "size": [
+          1,
+          2
+        ],
+        "file": "mipmaps/odin/level_09_1x2.png",
+        "sha256": "1600a4a2a1da0836634c5091d5669f1c8d8830e93fa9788cac727db705069693"
+      },
+      {
+        "level": 10,
+        "size": [
+          1,
+          1
+        ],
+        "file": "mipmaps/odin/level_10_1x1.png",
+        "sha256": "f14bd94c31f94f4040fe1a44dcf4cf76656121d4393a044607516c6f27b01fc5"
+      }
+    ],
+    "note": "Offline RGB PNG resolution pyramid for inspection. PNG contains no embedded GPU mip levels; does not configure Godot import."
+  },
+  {
+    "id": "loki",
+    "base": "approved/loki.png",
+    "levels": [
+      {
+        "level": 1,
+        "size": [
+          360,
+          600
+        ],
+        "file": "mipmaps/loki/level_01_360x600.png",
+        "sha256": "6aa8589da1fa83e19e4f17fe2f0498c81bfdd7d2ac7b8a8d6a36f1f304d71864"
+      },
+      {
+        "level": 2,
+        "size": [
+          180,
+          300
+        ],
+        "file": "mipmaps/loki/level_02_180x300.png",
+        "sha256": "7663ebf541d2abe8262186c45fce4a60de8e073e3c3481796b2ec79c7f14b2ea"
+      },
+      {
+        "level": 3,
+        "size": [
+          90,
+          150
+        ],
+        "file": "mipmaps/loki/level_03_90x150.png",
+        "sha256": "6d016a0604d427a2b9cf99e10b89137daa6cabf92405bb6ea7bc1d26f308958b"
+      },
+      {
+        "level": 4,
+        "size": [
+          45,
+          75
+        ],
+        "file": "mipmaps/loki/level_04_45x75.png",
+        "sha256": "f9edb70672490db0c045b14bd526989d41a5551579f4174977d186497637f1f6"
+      },
+      {
+        "level": 5,
+        "size": [
+          22,
+          37
+        ],
+        "file": "mipmaps/loki/level_05_22x37.png",
+        "sha256": "8a935343043f4d35817efab052526968315b6cf38e1ae9af84a9f86fbe087ba9"
+      },
+      {
+        "level": 6,
+        "size": [
+          11,
+          18
+        ],
+        "file": "mipmaps/loki/level_06_11x18.png",
+        "sha256": "044965f37950eb7f0b7194345d84f5d8e6bc2ce1203067727b6787298b9b8949"
+      },
+      {
+        "level": 7,
+        "size": [
+          5,
+          9
+        ],
+        "file": "mipmaps/loki/level_07_5x9.png",
+        "sha256": "d77bc4c1546de7decd7136d44e2cdd4f0b99a2c55c5d64016ffd0932b40d2df0"
+      },
+      {
+        "level": 8,
+        "size": [
+          2,
+          4
+        ],
+        "file": "mipmaps/loki/level_08_2x4.png",
+        "sha256": "b493cc965e45c4b36bfaa60c4dcbb2977e7ae7c8528f313c9642838b828b6fa7"
+      },
+      {
+        "level": 9,
+        "size": [
+          1,
+          2
+        ],
+        "file": "mipmaps/loki/level_09_1x2.png",
+        "sha256": "0d4da74ce15c7f73578004415e3ede2658d5e4abc0ff69bdb16e8e1d260751e5"
+      },
+      {
+        "level": 10,
+        "size": [
+          1,
+          1
+        ],
+        "file": "mipmaps/loki/level_10_1x1.png",
+        "sha256": "8d9b6f0f1eac5fc152cdc7d0474e7f103d856c32502371e56b7908f4a54818d3"
+      }
+    ],
+    "note": "Offline RGB PNG resolution pyramid for inspection. PNG contains no embedded GPU mip levels; does not configure Godot import."
+  },
+  {
+    "id": "freyja",
+    "base": "approved/freyja.png",
+    "levels": [
+      {
+        "level": 1,
+        "size": [
+          360,
+          600
+        ],
+        "file": "mipmaps/freyja/level_01_360x600.png",
+        "sha256": "4f3fc34ba0cfe5a9d34391f7c8c8a2512babd0184ed0dd69b187edea1de38c1f"
+      },
+      {
+        "level": 2,
+        "size": [
+          180,
+          300
+        ],
+        "file": "mipmaps/freyja/level_02_180x300.png",
+        "sha256": "792358d8350f84c043b531d125e8f63dcee88db0c0070d680b4c1a7027c77e71"
+      },
+      {
+        "level": 3,
+        "size": [
+          90,
+          150
+        ],
+        "file": "mipmaps/freyja/level_03_90x150.png",
+        "sha256": "9d3cdff62f22ad21d41680eaeda0e6ef53271eb8b6221c234dfc16530ec7a800"
+      },
+      {
+        "level": 4,
+        "size": [
+          45,
+          75
+        ],
+        "file": "mipmaps/freyja/level_04_45x75.png",
+        "sha256": "feeaeff17d1f7df5d56791ad60e8be72a51da5400e6a809a64c6df8696ecb4c6"
+      },
+      {
+        "level": 5,
+        "size": [
+          22,
+          37
+        ],
+        "file": "mipmaps/freyja/level_05_22x37.png",
+        "sha256": "068396464029e71037b67623ee3ec889042289a4b4e86be77d4b302bcfb373f9"
+      },
+      {
+        "level": 6,
+        "size": [
+          11,
+          18
+        ],
+        "file": "mipmaps/freyja/level_06_11x18.png",
+        "sha256": "5e500540a006f253e7a9400c9c2d65d2e09acf59ea506a77a5bf0eb119a29849"
+      },
+      {
+        "level": 7,
+        "size": [
+          5,
+          9
+        ],
+        "file": "mipmaps/freyja/level_07_5x9.png",
+        "sha256": "b1e9369bc0dd1522bd484b9cdff8d56953f2a0f193ef8c292d366262dee35713"
+      },
+      {
+        "level": 8,
+        "size": [
+          2,
+          4
+        ],
+        "file": "mipmaps/freyja/level_08_2x4.png",
+        "sha256": "9df8ef18eabfe0299767a6a707bc93f0d034c243053690615197f3a46171bee3"
+      },
+      {
+        "level": 9,
+        "size": [
+          1,
+          2
+        ],
+        "file": "mipmaps/freyja/level_09_1x2.png",
+        "sha256": "be7d82f312f30f91175037d027b87cd1dc407e2176e1c1590f49f80c84de9a89"
+      },
+      {
+        "level": 10,
+        "size": [
+          1,
+          1
+        ],
+        "file": "mipmaps/freyja/level_10_1x1.png",
+        "sha256": "ecc6c11ad76578c7890e8a9864f9177204be66546d0f97e06c8423f0be2f6fa1"
+      }
+    ],
+    "note": "Offline RGB PNG resolution pyramid for inspection. PNG contains no embedded GPU mip levels; does not configure Godot import."
+  },
+  {
+    "id": "general",
+    "base": "approved/general.png",
+    "levels": [
+      {
+        "level": 1,
+        "size": [
+          360,
+          600
+        ],
+        "file": "mipmaps/general/level_01_360x600.png",
+        "sha256": "7722510d9caf25f58e67d70b3e0c4b8bd4bec308340ae92488204859a1719954"
+      },
+      {
+        "level": 2,
+        "size": [
+          180,
+          300
+        ],
+        "file": "mipmaps/general/level_02_180x300.png",
+        "sha256": "d6e90308a3e6208fae30cde79afddf278d65c35cbb778babbae55c182eaf881e"
+      },
+      {
+        "level": 3,
+        "size": [
+          90,
+          150
+        ],
+        "file": "mipmaps/general/level_03_90x150.png",
+        "sha256": "5859977edca6d2b5d1b92d14690d82de4f7d8343552967017782ec84a33d1eaa"
+      },
+      {
+        "level": 4,
+        "size": [
+          45,
+          75
+        ],
+        "file": "mipmaps/general/level_04_45x75.png",
+        "sha256": "27b8ba20069eb6e680c9253218242b930b820e9ed261bacc7d3b6faa59d3e029"
+      },
+      {
+        "level": 5,
+        "size": [
+          22,
+          37
+        ],
+        "file": "mipmaps/general/level_05_22x37.png",
+        "sha256": "7b7270be4afd6262109222ac7013a7b6293e353c36f4c10e5ff3ca21bf24e358"
+      },
+      {
+        "level": 6,
+        "size": [
+          11,
+          18
+        ],
+        "file": "mipmaps/general/level_06_11x18.png",
+        "sha256": "2018755bf464661e1169475dc140bbcd5d3e0e242b8e0c001d40e520a9b803f9"
+      },
+      {
+        "level": 7,
+        "size": [
+          5,
+          9
+        ],
+        "file": "mipmaps/general/level_07_5x9.png",
+        "sha256": "7d512b68912f9fdac951fa390b75e08ceacb5c5e8169caf680cc354ebb661c64"
+      },
+      {
+        "level": 8,
+        "size": [
+          2,
+          4
+        ],
+        "file": "mipmaps/general/level_08_2x4.png",
+        "sha256": "af023db0537f05903cea37167f85778d283f39c2d1765fd746616244995775fa"
+      },
+      {
+        "level": 9,
+        "size": [
+          1,
+          2
+        ],
+        "file": "mipmaps/general/level_09_1x2.png",
+        "sha256": "f088195b5872d0fcdbd12623569d5c8caabc2be5daa2e3b3bd4f9e531f003645"
+      },
+      {
+        "level": 10,
+        "size": [
+          1,
+          1
+        ],
+        "file": "mipmaps/general/level_10_1x1.png",
+        "sha256": "e215958784423545e626faa9b3f74078358eabf7343aaa61aea9d62ead9643a9"
+      }
+    ],
+    "note": "Offline RGB PNG resolution pyramid for inspection. PNG contains no embedded GPU mip levels; does not configure Godot import."
+  },
+  {
+    "id": "swordsman",
+    "base": "approved/swordsman.png",
+    "levels": [
+      {
+        "level": 1,
+        "size": [
+          360,
+          600
+        ],
+        "file": "mipmaps/swordsman/level_01_360x600.png",
+        "sha256": "b86545002eb88a44fb449bbe71944386003fa127e713505941880a648c8e7e31"
+      },
+      {
+        "level": 2,
+        "size": [
+          180,
+          300
+        ],
+        "file": "mipmaps/swordsman/level_02_180x300.png",
+        "sha256": "f69a913cc0264a47b0cfd17e524caad80c53c4a0c3e0d6391c942475bcb22aba"
+      },
+      {
+        "level": 3,
+        "size": [
+          90,
+          150
+        ],
+        "file": "mipmaps/swordsman/level_03_90x150.png",
+        "sha256": "6d2a9ed74f07551d30a5c7a2c9ea1cb4153a34925cb10161ef5d6ab401104dc9"
+      },
+      {
+        "level": 4,
+        "size": [
+          45,
+          75
+        ],
+        "file": "mipmaps/swordsman/level_04_45x75.png",
+        "sha256": "d9a7f094618fc742bf9e7f051c7d95269857cf7c08c6ed0adeb97bb5604d9162"
+      },
+      {
+        "level": 5,
+        "size": [
+          22,
+          37
+        ],
+        "file": "mipmaps/swordsman/level_05_22x37.png",
+        "sha256": "3b53eedee622d92670c9ade73020ecd744a525c5928b58443565559424885aec"
+      },
+      {
+        "level": 6,
+        "size": [
+          11,
+          18
+        ],
+        "file": "mipmaps/swordsman/level_06_11x18.png",
+        "sha256": "2f124bffd3c7ea67f099050e68e731a648f607b60316af2f5bb15a8bb6fb41d5"
+      },
+      {
+        "level": 7,
+        "size": [
+          5,
+          9
+        ],
+        "file": "mipmaps/swordsman/level_07_5x9.png",
+        "sha256": "686b0c20362359c27961d9eb802ef77b50fecd86bff39ae81fccd10010ddc26d"
+      },
+      {
+        "level": 8,
+        "size": [
+          2,
+          4
+        ],
+        "file": "mipmaps/swordsman/level_08_2x4.png",
+        "sha256": "6ad361fc7d17a6b1eb03ca245c9985e530d3cdbddd09f7f72fada99ced483292"
+      },
+      {
+        "level": 9,
+        "size": [
+          1,
+          2
+        ],
+        "file": "mipmaps/swordsman/level_09_1x2.png",
+        "sha256": "596de752674dfa8568ff134e99fcb10c6bee85fa2b6bdbdd5e5451a243ba5b89"
+      },
+      {
+        "level": 10,
+        "size": [
+          1,
+          1
+        ],
+        "file": "mipmaps/swordsman/level_10_1x1.png",
+        "sha256": "877c0d9bd394724798223bea1020b23c1b84d03497f4de0626dbac0e3f5123fc"
+      }
+    ],
+    "note": "Offline RGB PNG resolution pyramid for inspection. PNG contains no embedded GPU mip levels; does not configure Godot import."
+  },
+  {
+    "id": "gunslinger",
+    "base": "approved/gunslinger.png",
+    "levels": [
+      {
+        "level": 1,
+        "size": [
+          360,
+          600
+        ],
+        "file": "mipmaps/gunslinger/level_01_360x600.png",
+        "sha256": "8fc7cbf24a095fbfc8fb075fc81ab1864c05466cbb841048830a5b9b2d5cc3b9"
+      },
+      {
+        "level": 2,
+        "size": [
+          180,
+          300
+        ],
+        "file": "mipmaps/gunslinger/level_02_180x300.png",
+        "sha256": "8b184b0326e001c8c197267b5166bd6343c0521d66355516ee83acbfd4c18fc9"
+      },
+      {
+        "level": 3,
+        "size": [
+          90,
+          150
+        ],
+        "file": "mipmaps/gunslinger/level_03_90x150.png",
+        "sha256": "ce9d2fe1adb345cb9c33ecc82fab72d4901b8873c21349125a63f64da4c873fc"
+      },
+      {
+        "level": 4,
+        "size": [
+          45,
+          75
+        ],
+        "file": "mipmaps/gunslinger/level_04_45x75.png",
+        "sha256": "014cf4910f3f51e54095db8dedf6e57338ae3483e57567156ea09327bd17a824"
+      },
+      {
+        "level": 5,
+        "size": [
+          22,
+          37
+        ],
+        "file": "mipmaps/gunslinger/level_05_22x37.png",
+        "sha256": "c445fbfd380a6983ddb1267907929d7d74a64acb6947cc772c5951ac8d154516"
+      },
+      {
+        "level": 6,
+        "size": [
+          11,
+          18
+        ],
+        "file": "mipmaps/gunslinger/level_06_11x18.png",
+        "sha256": "ccf9dbddf2494847dc7925ced4cbb074b2b084126b88d69d009ce745fc656be6"
+      },
+      {
+        "level": 7,
+        "size": [
+          5,
+          9
+        ],
+        "file": "mipmaps/gunslinger/level_07_5x9.png",
+        "sha256": "a1d91d6a8e899a028284169c035c255f0ccc5440c94405721eb7c92d3d1d1191"
+      },
+      {
+        "level": 8,
+        "size": [
+          2,
+          4
+        ],
+        "file": "mipmaps/gunslinger/level_08_2x4.png",
+        "sha256": "a6b84e3f985f43ec3ef83859e1aa7df3ae94dd56b0df7599751d9ec4bf73966e"
+      },
+      {
+        "level": 9,
+        "size": [
+          1,
+          2
+        ],
+        "file": "mipmaps/gunslinger/level_09_1x2.png",
+        "sha256": "8a6bf25776a096e2789cf89f197b39d186cf1bea5c2e893915ca055308d25a33"
+      },
+      {
+        "level": 10,
+        "size": [
+          1,
+          1
+        ],
+        "file": "mipmaps/gunslinger/level_10_1x1.png",
+        "sha256": "b0c18f782f71b97103af24caccb8d3da54c6598d5ee0f54d90e3a520d66409b1"
+      }
+    ],
+    "note": "Offline RGB PNG resolution pyramid for inspection. PNG contains no embedded GPU mip levels; does not configure Godot import."
+  },
+  {
+    "id": "assassin",
+    "base": "approved/assassin.png",
+    "levels": [
+      {
+        "level": 1,
+        "size": [
+          360,
+          600
+        ],
+        "file": "mipmaps/assassin/level_01_360x600.png",
+        "sha256": "07def736863cfcdfbb1f370f30e1fcc69581b52e1f8cdc5b4a74e4abfad41fa2"
+      },
+      {
+        "level": 2,
+        "size": [
+          180,
+          300
+        ],
+        "file": "mipmaps/assassin/level_02_180x300.png",
+        "sha256": "34295098e2aefc97b3dd56f452ae96f6410ac681285d5f59459695c0c819e628"
+      },
+      {
+        "level": 3,
+        "size": [
+          90,
+          150
+        ],
+        "file": "mipmaps/assassin/level_03_90x150.png",
+        "sha256": "97c35f245155ca1b1a6a932ef90f0ceb54e9e48b7ac9fd2cb547f4d8a040915d"
+      },
+      {
+        "level": 4,
+        "size": [
+          45,
+          75
+        ],
+        "file": "mipmaps/assassin/level_04_45x75.png",
+        "sha256": "eb235cb7f98c4d093e193759110fcdb24fa01191a356b7b189954bf46abc588a"
+      },
+      {
+        "level": 5,
+        "size": [
+          22,
+          37
+        ],
+        "file": "mipmaps/assassin/level_05_22x37.png",
+        "sha256": "f19ba735ddc4d3518db43eea382937f018e2caa3e244819a68a55ee17c0c371c"
+      },
+      {
+        "level": 6,
+        "size": [
+          11,
+          18
+        ],
+        "file": "mipmaps/assassin/level_06_11x18.png",
+        "sha256": "737cdc4d130195d3d02db06c0914efa4a6c5d25a9407db0e82da21012962fa0e"
+      },
+      {
+        "level": 7,
+        "size": [
+          5,
+          9
+        ],
+        "file": "mipmaps/assassin/level_07_5x9.png",
+        "sha256": "fe7b51c9a06fcf11f310babfdcd802074b6853e1d7b74e9d95e5e17fd6d87229"
+      },
+      {
+        "level": 8,
+        "size": [
+          2,
+          4
+        ],
+        "file": "mipmaps/assassin/level_08_2x4.png",
+        "sha256": "327eaaa101a503c83ed2b6d3ca2a7b12ab1de88a80ac8242fa3b8ffe171dfba2"
+      },
+      {
+        "level": 9,
+        "size": [
+          1,
+          2
+        ],
+        "file": "mipmaps/assassin/level_09_1x2.png",
+        "sha256": "3223b8ada391cbe077856fb28c2febd9cf1f0f4b94283b691e6ea42a183768b5"
+      },
+      {
+        "level": 10,
+        "size": [
+          1,
+          1
+        ],
+        "file": "mipmaps/assassin/level_10_1x1.png",
+        "sha256": "eae48ea5c21cbf48bb3d535ba7965a9b79e86d7668dcb0379d8ed96f6f72109c"
+      }
+    ],
+    "note": "Offline RGB PNG resolution pyramid for inspection. PNG contains no embedded GPU mip levels; does not configure Godot import."
+  },
+  {
+    "id": "mage",
+    "base": "approved/mage.png",
+    "levels": [
+      {
+        "level": 1,
+        "size": [
+          360,
+          600
+        ],
+        "file": "mipmaps/mage/level_01_360x600.png",
+        "sha256": "bfdfab07dc3ce422c985cdb8f5a8431a820214b78f9aaa75157f969f7e7ad060"
+      },
+      {
+        "level": 2,
+        "size": [
+          180,
+          300
+        ],
+        "file": "mipmaps/mage/level_02_180x300.png",
+        "sha256": "212324e77fdcce2d7e31c6150e3307a3bcb6b63f0cb2fc8984d87c6747a525fa"
+      },
+      {
+        "level": 3,
+        "size": [
+          90,
+          150
+        ],
+        "file": "mipmaps/mage/level_03_90x150.png",
+        "sha256": "06b21974cc1755c1b61ef28d605221c725f4e295f9a528c293991e6badf86cf5"
+      },
+      {
+        "level": 4,
+        "size": [
+          45,
+          75
+        ],
+        "file": "mipmaps/mage/level_04_45x75.png",
+        "sha256": "0cb571e5528f54a2f776c7ee484942c60e3fbffd849daa8d7d1148ead4958fde"
+      },
+      {
+        "level": 5,
+        "size": [
+          22,
+          37
+        ],
+        "file": "mipmaps/mage/level_05_22x37.png",
+        "sha256": "e5f074a1f58bd65a26cccd3d82052812e7cf626e329bd86c2e289ab6a753a265"
+      },
+      {
+        "level": 6,
+        "size": [
+          11,
+          18
+        ],
+        "file": "mipmaps/mage/level_06_11x18.png",
+        "sha256": "f4721ccdf558ffa40b9b94360737a88137efcd7cc82d420c79974a63c756342c"
+      },
+      {
+        "level": 7,
+        "size": [
+          5,
+          9
+        ],
+        "file": "mipmaps/mage/level_07_5x9.png",
+        "sha256": "a9b37d1fea01a7e69ebf62558685aa014d50047c9dfe030d01ec1a8864f97ae6"
+      },
+      {
+        "level": 8,
+        "size": [
+          2,
+          4
+        ],
+        "file": "mipmaps/mage/level_08_2x4.png",
+        "sha256": "400a69491fb009e53f4ba3f496c687584edce6d78de381d1796f843aec8de904"
+      },
+      {
+        "level": 9,
+        "size": [
+          1,
+          2
+        ],
+        "file": "mipmaps/mage/level_09_1x2.png",
+        "sha256": "e9a6e66d98dfcb8c2e6f155798536d00ab3c11a7b4a21e1216f47627f9661133"
+      },
+      {
+        "level": 10,
+        "size": [
+          1,
+          1
+        ],
+        "file": "mipmaps/mage/level_10_1x1.png",
+        "sha256": "6794e477140a1b5a3edcdab225e01a54abd73ae24d407b349a9b1fb709240b4d"
+      }
+    ],
+    "note": "Offline RGB PNG resolution pyramid for inspection. PNG contains no embedded GPU mip levels; does not configure Godot import."
+  }
+]

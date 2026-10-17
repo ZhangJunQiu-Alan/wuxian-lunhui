@@ -138,3 +138,16 @@ Claude 验收（2026-10-16）：第 6 批 34 项已接入并在 Godot 内实测�
 ### 任务 D 交付补记（2026-10-17）
 
 第2关三位Boss及专属物件/特效28项完成美术自检（19条动画、77个帧格）。逐项原图、实际Prompt、项目自有上传参考、失败候选、加工来源与最终版本见`source/taskD_helheim_bosses_2026-10-17/manifest.json`及records。实际使用用户已批准的OpenAI内置图像工具，沿用本台账已核查的OpenAI输出商业使用与所有权条款：https://openai.com/policies/terms-of-use/ 。巨船展帆版实际在免费Chrome Piskel中逐区域复制原船身，只保留中央帆布变化；工程、导出和截图已归档，Piskel依据：https://www.piskelapp.com/terms/ ，用户保留作品权利。Pillow按MIT-CMU仅做尺寸、固定静态RGB色板、二值透明、裁排、透明边缘残片清理、整帧定位和预览，没有在Python重画Boss或巨船。28项正式文件/approved/候选SHA256一致，RGBA/尺寸/alpha0或255/2px留白/角色色板/GIF像素与平均8fps时序检查全部通过；船体固定区域逐像素一致，见final_audit.json和ship_state_audit.json。三相位PNG仍是3格，预览GIF重复两次以兼容10ms时基并保持平均8fps。无地块，4×4平铺不适用。没有引入第三方作品造型、新账号、付款或收费API；未在Godot测试，待Claude审核、接入并实测。
+
+
+### 任务 E：第2关地图开工（2026-10-17）
+
+用户明确授权本任务开始E。独立目录source/taskE_helheim_map_2026-10-17/，仅动assets/。继续采用用户已批准、任务书明确允许的内置image_gen及项目自有冥界风格参考；沿用本台账已核验OpenAI输出商业使用与所有权依据：https://openai.com/policies/terms-of-use/ 。如需手动修图使用免费Piskel：https://www.piskelapp.com/terms/ ，用户保留作品权利。Pillow沿用MIT-CMU，仅用于尺寸、二值alpha、固定色板、源像素重叠裁排、整帧定位、预览和检查，不在Python重画角色。地块过渡沿用已交付第1关的原纹理RGB不变、仅alpha裁切方案。原图、Prompt、候选、自检和失败记录在本任务独立目录；无新增第三方造型、账号、付款或收费API。本条为开工授权记录，不代表验收完成。
+
+### 任务F：非像素升级卡插画开工（2026-10-17）
+
+沿用任务书第二节用户已批准的内置image_gen路线和本台账已核验OpenAI内容所有权与商业使用依据：https://openai.com/policies/terms-of-use/ 。仅使用本项目自有角色特写及本批原创插画作参考，提示词只描述外观，不写真实、传说人物或影视、游戏、漫画、画师名字。Pillow沿用已核验MIT-CMU，仅作RGB/尺寸规范化、抗锯齿缩小、预览排版及图像测量，不重画插画。工作目录source/taskF_card_art_2026-10-17；只发布通过逐图检查的PNG到sprites/cards。未调用收费API、注册或付费。本条为制作登记，不代表验收。
+
+### 任务F交付补记（2026-10-17）
+
+9张必做非像素升级卡完成美术自检并复制至sprites/cards/，PNG RGB720×1200；14次内置image_gen生成的原图、真实Prompt和项目自有输入参考已完整归档，5份失败中间稿保留并记录原因。四张角色卡逐项上传现有cutin，四张神明与通用卡使用本批原创厚涂基准，没有外部角色造型或作品名提示。授权沿用上文已核验OpenAI输出商业使用与所有权依据：https://openai.com/policies/terms-of-use/ ；Pillow12.1.1沿用MIT-CMU，仅作RGB/尺寸规范化、Lanczos缩小、预览与90级离线PNG尺寸链，不在Python重画人物或武器。逐项记录见source/taskF_card_art_2026-10-17/manifest.json和records/generation_jobs.json。实际检查了原图手/脸/武器、260×433、下45%90%深色遮罩、四神同套对照、角色cutin一致性；正式文件/approved/候选哈希一致，尺寸模式和90级缩小链及gallery本地链接检查零错误。未生成可选觉醒卡，未配置Godot导入mipmap、未游戏实测；由用户接入并设置平滑过滤。没有注册、付费、收费API或新增第三方美术。

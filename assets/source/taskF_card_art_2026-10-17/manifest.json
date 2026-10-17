@@ -1,0 +1,504 @@
+{
+  "task": "F upgrade-card nonpixel illustrations",
+  "date": "2026-10-17",
+  "status": "required_nine_art_self_check_passed_pending_user_integration",
+  "required_count": 9,
+  "delivered_count": 9,
+  "generation_calls": 14,
+  "rejected_candidates": [
+    {
+      "id": "thor",
+      "version": "v01",
+      "file": "originals/thor_v01.png",
+      "reason": "质感偏写实而非厚涂；低处额外手形/锤位置不利卡片遮罩，改v02。"
+    },
+    {
+      "id": "odin",
+      "version": "v01",
+      "file": "originals/odin_v01.png",
+      "reason": "长枪枪尖触及上沿被裁切，改v02。"
+    },
+    {
+      "id": "swordsman",
+      "version": "v01",
+      "file": "originals/swordsman_v01.png",
+      "reason": "刀尖靠右边且双手/刀柄过低，改v02。"
+    },
+    {
+      "id": "swordsman",
+      "version": "v02",
+      "file": "originals/swordsman_v02.png",
+      "reason": "下方握持手仍落入文字遮罩区，改v03。"
+    },
+    {
+      "id": "assassin",
+      "version": "v01",
+      "file": "originals/assassin_v01.png",
+      "reason": "双刃横向安全余量偏小、刀柄过低，改v02。"
+    }
+  ],
+  "optional_awaken_cards": "not_produced; optional third priority",
+  "user_integration_note": "User handles Godot import mipmap generation and smooth downscale filtering. Offline PNG pyramid and260px previews supplied; no import/scenes/scripts/project settings changed.",
+  "checks_performed": "Individual generated originals inspected; 260px set, 90% dark lower45% masks, gods side-by-side and character references visually inspected; exact dimensions/mode/hashes verified. No Godot runtime test.",
+  "files": [
+    {
+      "id": "thor",
+      "runtime_file": "assets/sprites/cards/thor.png",
+      "approved_file": "approved/thor.png",
+      "candidate_file": "candidates/thor.png",
+      "original_file": "originals/thor_v02.png",
+      "selected_version": "v02",
+      "source": "Built-in OpenAI image generation; original project references only",
+      "license_record": "assets/LICENSES.md task F",
+      "tool": "image_gen.imagegen; Pillow12.1.1 for RGB/resize/preview/pyramid only",
+      "generation_record": "records/generation_jobs.json",
+      "generation_url": null,
+      "size": [
+        720,
+        1200
+      ],
+      "mode": "RGB",
+      "frames": 1,
+      "color_count": 167522,
+      "sha256": "a9e773d2fae33a9c885a320a0c64d7f58f5b63ecb0e05fab8d7cbe61e727edb6",
+      "checks": {
+        "png_720x1200_rgb": true,
+        "face_and_identifiers_readable_at_260x433": true,
+        "important_content_survives_lower45_percent_90_percent_mask": true,
+        "important_content_inside_40px_side_safe_area": true,
+        "upper_left_light_and_thick_oil_medium": true,
+        "lower40_percent_dark_subdued": true,
+        "no_text_frame_signature_watermark_observed": true,
+        "no_obvious_anatomy_or_weapon_errors_observed": true,
+        "character_identity_matches_cutin": "not_applicable",
+        "gods_set_consistent": true
+      },
+      "visual_review_note": "红胡子、粗布皮甲毛皮；冰蓝电弧及连续短柄方头锤可辨；握持手无明显多指或融合，次手已隐藏。",
+      "bottom40_percent_tone": {
+        "mean_luma_0_255": 18.933744212962964,
+        "stddev_luma": 8.989610913918748
+      },
+      "masked_bottom45_percent_tone": {
+        "mean_luma_0_255": 16.949585798816567,
+        "stddev_luma": 1.1327746154569218
+      },
+      "previews": {
+        "small": "previews/thor_260.png",
+        "masked": "previews/thor_masked.png",
+        "cover_crop": "previews/thor_260x450_crop.png",
+        "safe": "previews/thor_safe.png"
+      },
+      "status": "art_self_check_passed_pending_user_integration",
+      "game_test": "not_performed"
+    },
+    {
+      "id": "odin",
+      "runtime_file": "assets/sprites/cards/odin.png",
+      "approved_file": "approved/odin.png",
+      "candidate_file": "candidates/odin.png",
+      "original_file": "originals/odin_v02.png",
+      "selected_version": "v02",
+      "source": "Built-in OpenAI image generation; original project references only",
+      "license_record": "assets/LICENSES.md task F",
+      "tool": "image_gen.imagegen; Pillow12.1.1 for RGB/resize/preview/pyramid only",
+      "generation_record": "records/generation_jobs.json",
+      "generation_url": null,
+      "size": [
+        720,
+        1200
+      ],
+      "mode": "RGB",
+      "frames": 1,
+      "color_count": 125850,
+      "sha256": "423cab0736c5d60b840e7ba3d293901eba6d9f48025defc9fda56425cbf76fc2",
+      "checks": {
+        "png_720x1200_rgb": true,
+        "face_and_identifiers_readable_at_260x433": true,
+        "important_content_survives_lower45_percent_90_percent_mask": true,
+        "important_content_inside_40px_side_safe_area": true,
+        "upper_left_light_and_thick_oil_medium": true,
+        "lower40_percent_dark_subdued": true,
+        "no_text_frame_signature_watermark_observed": true,
+        "no_obvious_anatomy_or_weapon_errors_observed": true,
+        "character_identity_matches_cutin": "not_applicable",
+        "gods_set_consistent": true
+      },
+      "visual_review_note": "独眼眼罩、灰长须、旧宽檐帽、两只渡鸦和紫色长枪光；v02枪尖完整留白，握持手与枪杆连接合理。",
+      "bottom40_percent_tone": {
+        "mean_luma_0_255": 22.424716435185186,
+        "stddev_luma": 10.720161980778466
+      },
+      "masked_bottom45_percent_tone": {
+        "mean_luma_0_255": 17.340927021696253,
+        "stddev_luma": 1.260115492264799
+      },
+      "previews": {
+        "small": "previews/odin_260.png",
+        "masked": "previews/odin_masked.png",
+        "cover_crop": "previews/odin_260x450_crop.png",
+        "safe": "previews/odin_safe.png"
+      },
+      "status": "art_self_check_passed_pending_user_integration",
+      "game_test": "not_performed"
+    },
+    {
+      "id": "loki",
+      "runtime_file": "assets/sprites/cards/loki.png",
+      "approved_file": "approved/loki.png",
+      "candidate_file": "candidates/loki.png",
+      "original_file": "originals/loki_v01.png",
+      "selected_version": "v01",
+      "source": "Built-in OpenAI image generation; original project references only",
+      "license_record": "assets/LICENSES.md task F",
+      "tool": "image_gen.imagegen; Pillow12.1.1 for RGB/resize/preview/pyramid only",
+      "generation_record": "records/generation_jobs.json",
+      "generation_url": null,
+      "size": [
+        720,
+        1200
+      ],
+      "mode": "RGB",
+      "frames": 1,
+      "color_count": 154690,
+      "sha256": "dbae4dd1d0d3c103b3c0fd2f5f1d668a9a71248a7d13f14832a1530e27431314",
+      "checks": {
+        "png_720x1200_rgb": true,
+        "face_and_identifiers_readable_at_260x433": true,
+        "important_content_survives_lower45_percent_90_percent_mask": true,
+        "important_content_inside_40px_side_safe_area": true,
+        "upper_left_light_and_thick_oil_medium": true,
+        "lower40_percent_dark_subdued": true,
+        "no_text_frame_signature_watermark_observed": true,
+        "no_obvious_anatomy_or_weapon_errors_observed": true,
+        "character_identity_matches_cutin": "not_applicable",
+        "gods_set_consistent": true
+      },
+      "visual_review_note": "瘦削面部与微笑、深红黑乱发、橙色诡火、双腕旧疤可见；双手结构无明显多指或断指，未采用角盔或绿金衣。",
+      "bottom40_percent_tone": {
+        "mean_luma_0_255": 17.677337962962962,
+        "stddev_luma": 9.22106637736553
+      },
+      "masked_bottom45_percent_tone": {
+        "mean_luma_0_255": 16.780907297830375,
+        "stddev_luma": 1.0314991509010878
+      },
+      "previews": {
+        "small": "previews/loki_260.png",
+        "masked": "previews/loki_masked.png",
+        "cover_crop": "previews/loki_260x450_crop.png",
+        "safe": "previews/loki_safe.png"
+      },
+      "status": "art_self_check_passed_pending_user_integration",
+      "game_test": "not_performed"
+    },
+    {
+      "id": "freyja",
+      "runtime_file": "assets/sprites/cards/freyja.png",
+      "approved_file": "approved/freyja.png",
+      "candidate_file": "candidates/freyja.png",
+      "original_file": "originals/freyja_v01.png",
+      "selected_version": "v01",
+      "source": "Built-in OpenAI image generation; original project references only",
+      "license_record": "assets/LICENSES.md task F",
+      "tool": "image_gen.imagegen; Pillow12.1.1 for RGB/resize/preview/pyramid only",
+      "generation_record": "records/generation_jobs.json",
+      "generation_url": null,
+      "size": [
+        720,
+        1200
+      ],
+      "mode": "RGB",
+      "frames": 1,
+      "color_count": 151654,
+      "sha256": "43720f46be69b092a375a443c7e43d07285fd36ad7017e9397c3eb7293e09410",
+      "checks": {
+        "png_720x1200_rgb": true,
+        "face_and_identifiers_readable_at_260x433": true,
+        "important_content_survives_lower45_percent_90_percent_mask": true,
+        "important_content_inside_40px_side_safe_area": true,
+        "upper_left_light_and_thick_oil_medium": true,
+        "lower40_percent_dark_subdued": true,
+        "no_text_frame_signature_watermark_observed": true,
+        "no_obvious_anatomy_or_weapon_errors_observed": true,
+        "character_identity_matches_cutin": "not_applicable",
+        "gods_set_consistent": true
+      },
+      "visual_review_note": "金发、完整覆甲、鹰羽披风、胸前金项链与金色羽毛清楚；手套与胸甲关系合理，非暴露服装。",
+      "bottom40_percent_tone": {
+        "mean_luma_0_255": 22.839192708333332,
+        "stddev_luma": 11.781170256480001
+      },
+      "masked_bottom45_percent_tone": {
+        "mean_luma_0_255": 17.304595660749506,
+        "stddev_luma": 1.2433263999075295
+      },
+      "previews": {
+        "small": "previews/freyja_260.png",
+        "masked": "previews/freyja_masked.png",
+        "cover_crop": "previews/freyja_260x450_crop.png",
+        "safe": "previews/freyja_safe.png"
+      },
+      "status": "art_self_check_passed_pending_user_integration",
+      "game_test": "not_performed"
+    },
+    {
+      "id": "general",
+      "runtime_file": "assets/sprites/cards/general.png",
+      "approved_file": "approved/general.png",
+      "candidate_file": "candidates/general.png",
+      "original_file": "originals/general_v01.png",
+      "selected_version": "v01",
+      "source": "Built-in OpenAI image generation; original project references only",
+      "license_record": "assets/LICENSES.md task F",
+      "tool": "image_gen.imagegen; Pillow12.1.1 for RGB/resize/preview/pyramid only",
+      "generation_record": "records/generation_jobs.json",
+      "generation_url": null,
+      "size": [
+        720,
+        1200
+      ],
+      "mode": "RGB",
+      "frames": 1,
+      "color_count": 105739,
+      "sha256": "71b27acbf314bac9edc61a3709262d9509b2f4362f61d4ad5a990f3145f50868",
+      "checks": {
+        "png_720x1200_rgb": true,
+        "face_and_identifiers_readable_at_260x433": true,
+        "important_content_survives_lower45_percent_90_percent_mask": true,
+        "important_content_inside_40px_side_safe_area": true,
+        "upper_left_light_and_thick_oil_medium": true,
+        "lower40_percent_dark_subdued": true,
+        "no_text_frame_signature_watermark_observed": true,
+        "no_obvious_anatomy_or_weapon_errors_observed": true,
+        "character_identity_matches_cutin": "not_applicable",
+        "gods_set_consistent": "not_applicable"
+      },
+      "visual_review_note": "树根拱下冷白发光几何刻纹石碑，无人物；刻纹作为装饰符号，无标题或连续排版文字。",
+      "bottom40_percent_tone": {
+        "mean_luma_0_255": 21.40691550925926,
+        "stddev_luma": 12.964486913323322
+      },
+      "masked_bottom45_percent_tone": {
+        "mean_luma_0_255": 17.396153846153847,
+        "stddev_luma": 1.8975550031917565
+      },
+      "previews": {
+        "small": "previews/general_260.png",
+        "masked": "previews/general_masked.png",
+        "cover_crop": "previews/general_260x450_crop.png",
+        "safe": "previews/general_safe.png"
+      },
+      "status": "art_self_check_passed_pending_user_integration",
+      "game_test": "not_performed"
+    },
+    {
+      "id": "swordsman",
+      "runtime_file": "assets/sprites/cards/swordsman.png",
+      "approved_file": "approved/swordsman.png",
+      "candidate_file": "candidates/swordsman.png",
+      "original_file": "originals/swordsman_v03.png",
+      "selected_version": "v03",
+      "source": "Built-in OpenAI image generation; original project references only",
+      "license_record": "assets/LICENSES.md task F",
+      "tool": "image_gen.imagegen; Pillow12.1.1 for RGB/resize/preview/pyramid only",
+      "generation_record": "records/generation_jobs.json",
+      "generation_url": null,
+      "size": [
+        720,
+        1200
+      ],
+      "mode": "RGB",
+      "frames": 1,
+      "color_count": 88206,
+      "sha256": "72d10b43add714092674a3326162509c686dafe46ce4031c74fafe86ad45f5c7",
+      "checks": {
+        "png_720x1200_rgb": true,
+        "face_and_identifiers_readable_at_260x433": true,
+        "important_content_survives_lower45_percent_90_percent_mask": true,
+        "important_content_inside_40px_side_safe_area": true,
+        "upper_left_light_and_thick_oil_medium": true,
+        "lower40_percent_dark_subdued": true,
+        "no_text_frame_signature_watermark_observed": true,
+        "no_obvious_anatomy_or_weapon_errors_observed": true,
+        "character_identity_matches_cutin": true,
+        "gods_set_consistent": "not_applicable"
+      },
+      "visual_review_note": "直接核对项目特写：年轻无须面容、黑发束髻、深蓝开领袍；v03双手和刀柄上移，完整刀尖留边。",
+      "bottom40_percent_tone": {
+        "mean_luma_0_255": 12.653295717592593,
+        "stddev_luma": 5.442179379181653
+      },
+      "masked_bottom45_percent_tone": {
+        "mean_luma_0_255": 16.280512820512822,
+        "stddev_luma": 0.6443587192751064
+      },
+      "previews": {
+        "small": "previews/swordsman_260.png",
+        "masked": "previews/swordsman_masked.png",
+        "cover_crop": "previews/swordsman_260x450_crop.png",
+        "safe": "previews/swordsman_safe.png"
+      },
+      "status": "art_self_check_passed_pending_user_integration",
+      "game_test": "not_performed"
+    },
+    {
+      "id": "gunslinger",
+      "runtime_file": "assets/sprites/cards/gunslinger.png",
+      "approved_file": "approved/gunslinger.png",
+      "candidate_file": "candidates/gunslinger.png",
+      "original_file": "originals/gunslinger_v01.png",
+      "selected_version": "v01",
+      "source": "Built-in OpenAI image generation; original project references only",
+      "license_record": "assets/LICENSES.md task F",
+      "tool": "image_gen.imagegen; Pillow12.1.1 for RGB/resize/preview/pyramid only",
+      "generation_record": "records/generation_jobs.json",
+      "generation_url": null,
+      "size": [
+        720,
+        1200
+      ],
+      "mode": "RGB",
+      "frames": 1,
+      "color_count": 120138,
+      "sha256": "2e7d9e68f11033c9807d4033ab4109ab15d100168489f11c15f8e94646c9ed78",
+      "checks": {
+        "png_720x1200_rgb": true,
+        "face_and_identifiers_readable_at_260x433": true,
+        "important_content_survives_lower45_percent_90_percent_mask": true,
+        "important_content_inside_40px_side_safe_area": true,
+        "upper_left_light_and_thick_oil_medium": true,
+        "lower40_percent_dark_subdued": true,
+        "no_text_frame_signature_watermark_observed": true,
+        "no_obvious_anatomy_or_weapon_errors_observed": true,
+        "character_identity_matches_cutin": true,
+        "gods_set_consistent": "not_applicable"
+      },
+      "visual_review_note": "直接核对项目特写：女性、棕色长卷发和宽檐帽、酒红外套、铜纽扣及深色领结；单左轮、握持手和转轮结构连贯。",
+      "bottom40_percent_tone": {
+        "mean_luma_0_255": 19.26767650462963,
+        "stddev_luma": 7.6755293946374366
+      },
+      "masked_bottom45_percent_tone": {
+        "mean_luma_0_255": 17.027889546351084,
+        "stddev_luma": 0.8708807143169678
+      },
+      "previews": {
+        "small": "previews/gunslinger_260.png",
+        "masked": "previews/gunslinger_masked.png",
+        "cover_crop": "previews/gunslinger_260x450_crop.png",
+        "safe": "previews/gunslinger_safe.png"
+      },
+      "status": "art_self_check_passed_pending_user_integration",
+      "game_test": "not_performed"
+    },
+    {
+      "id": "assassin",
+      "runtime_file": "assets/sprites/cards/assassin.png",
+      "approved_file": "approved/assassin.png",
+      "candidate_file": "candidates/assassin.png",
+      "original_file": "originals/assassin_v02.png",
+      "selected_version": "v02",
+      "source": "Built-in OpenAI image generation; original project references only",
+      "license_record": "assets/LICENSES.md task F",
+      "tool": "image_gen.imagegen; Pillow12.1.1 for RGB/resize/preview/pyramid only",
+      "generation_record": "records/generation_jobs.json",
+      "generation_url": null,
+      "size": [
+        720,
+        1200
+      ],
+      "mode": "RGB",
+      "frames": 1,
+      "color_count": 137165,
+      "sha256": "c6e15a52af973acc2a3cf0753c24978981e23d1d4d2d9e373e3e8aee5394d046",
+      "checks": {
+        "png_720x1200_rgb": true,
+        "face_and_identifiers_readable_at_260x433": true,
+        "important_content_survives_lower45_percent_90_percent_mask": true,
+        "important_content_inside_40px_side_safe_area": true,
+        "upper_left_light_and_thick_oil_medium": true,
+        "lower40_percent_dark_subdued": true,
+        "no_text_frame_signature_watermark_observed": true,
+        "no_obvious_anatomy_or_weapon_errors_observed": true,
+        "character_identity_matches_cutin": true,
+        "gods_set_consistent": "not_applicable"
+      },
+      "visual_review_note": "直接核对项目特写：黑发红绳、红围巾、深色层甲和红面具；v02双刃及双手上移收紧，刀尖未被裁切。",
+      "bottom40_percent_tone": {
+        "mean_luma_0_255": 17.713833912037035,
+        "stddev_luma": 10.1098302369117
+      },
+      "masked_bottom45_percent_tone": {
+        "mean_luma_0_255": 16.85,
+        "stddev_luma": 1.2087962454107526
+      },
+      "previews": {
+        "small": "previews/assassin_260.png",
+        "masked": "previews/assassin_masked.png",
+        "cover_crop": "previews/assassin_260x450_crop.png",
+        "safe": "previews/assassin_safe.png"
+      },
+      "status": "art_self_check_passed_pending_user_integration",
+      "game_test": "not_performed"
+    },
+    {
+      "id": "mage",
+      "runtime_file": "assets/sprites/cards/mage.png",
+      "approved_file": "approved/mage.png",
+      "candidate_file": "candidates/mage.png",
+      "original_file": "originals/mage_v01.png",
+      "selected_version": "v01",
+      "source": "Built-in OpenAI image generation; original project references only",
+      "license_record": "assets/LICENSES.md task F",
+      "tool": "image_gen.imagegen; Pillow12.1.1 for RGB/resize/preview/pyramid only",
+      "generation_record": "records/generation_jobs.json",
+      "generation_url": null,
+      "size": [
+        720,
+        1200
+      ],
+      "mode": "RGB",
+      "frames": 1,
+      "color_count": 104402,
+      "sha256": "e979cd2de0eb0e9ab9ccfeef3ac65c6ea1b7233639cd53be80826d4266b3afd6",
+      "checks": {
+        "png_720x1200_rgb": true,
+        "face_and_identifiers_readable_at_260x433": true,
+        "important_content_survives_lower45_percent_90_percent_mask": true,
+        "important_content_inside_40px_side_safe_area": true,
+        "upper_left_light_and_thick_oil_medium": true,
+        "lower40_percent_dark_subdued": true,
+        "no_text_frame_signature_watermark_observed": true,
+        "no_obvious_anatomy_or_weapon_errors_observed": true,
+        "character_identity_matches_cutin": true,
+        "gods_set_consistent": "not_applicable"
+      },
+      "visual_review_note": "直接核对项目特写：年老长白须、深蓝兜帽袍及弯曲木杖；举手可见五指，无明显融合，手杖连贯。",
+      "bottom40_percent_tone": {
+        "mean_luma_0_255": 22.257578125,
+        "stddev_luma": 10.029366840788809
+      },
+      "masked_bottom45_percent_tone": {
+        "mean_luma_0_255": 17.199289940828404,
+        "stddev_luma": 1.1499110199507399
+      },
+      "previews": {
+        "small": "previews/mage_260.png",
+        "masked": "previews/mage_masked.png",
+        "cover_crop": "previews/mage_260x450_crop.png",
+        "safe": "previews/mage_safe.png"
+      },
+      "status": "art_self_check_passed_pending_user_integration",
+      "game_test": "not_performed"
+    }
+  ],
+  "mipmap_manifest": "records/mipmap_manifest.json",
+  "generation_records": "records/generation_jobs.json",
+  "comparisons": [
+    "previews/gods_comparison.png",
+    "previews/gods_masked_comparison.png",
+    "previews/weapons_comparison.png",
+    "previews/weapons_masked_comparison.png",
+    "previews/all_comparison.png"
+  ]
+}
