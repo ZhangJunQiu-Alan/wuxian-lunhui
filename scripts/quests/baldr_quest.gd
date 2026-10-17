@@ -20,8 +20,8 @@ var _strip: Texture2D
 
 
 func _init() -> void:
-	title = "巴德尔的低语"
-	offer_text = "【主神】支线剧情：海拉的大厅深处，有一点温暖的光。找到他，带他离开"
+	title = tr("巴德尔的低语")
+	offer_text = tr("【主神】支线剧情：海拉的大厅深处，有一点温暖的光。找到他，带他离开")
 	time_limit = 70.0
 	color = LIGHT
 
@@ -51,7 +51,7 @@ func _on_update(delta: float) -> void:
 		FxLayer.burst(_soul, LIGHT, 30, 200.0, 4.0)
 		complete(false)
 		return
-	objective = "护送巴德尔的灵魂  %d / %d 秒%s" % [int(_escorted), int(ESCORT_TIME), "" if near else "（离他太远了）"]
+	objective = tr("护送巴德尔的灵魂  %d / %d 秒%s") % [int(_escorted), int(ESCORT_TIME), "" if near else tr("（离他太远了）")]
 	if _escorted >= ESCORT_TIME:
 		complete(true)
 
@@ -59,7 +59,7 @@ func _on_update(delta: float) -> void:
 func _reward() -> String:
 	game.add_reward_points(80)
 	player.revives += 1
-	return "奖励点 +80，本局获得一次复活"
+	return tr("奖励点 +80，本局获得一次复活")
 
 
 func _active_targets() -> Array[Vector2]:

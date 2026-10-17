@@ -11,9 +11,9 @@ var _fleeing := false
 
 
 func _init() -> void:
-	title = "不肯哭泣的女巨人"
-	offer_text = "【主神】隐藏支线：「我只会流干涩的眼泪。」她不是普通的女巨人"
-	hint_text = "【主神】洞窟旁的小洞里，有人在冷笑"
+	title = tr("不肯哭泣的女巨人")
+	offer_text = tr("【主神】隐藏支线：「我只会流干涩的眼泪。」她不是普通的女巨人")
+	hint_text = tr("【主神】洞窟旁的小洞里，有人在冷笑")
 	is_hidden = true
 	time_limit = 60.0
 	color = Color(1.0, 0.55, 0.2)
@@ -34,7 +34,7 @@ func _on_giant_killed(_e: Enemy) -> void:
 		return
 	_fleeing = true  # 第一次被打倒：化作一道火光逃走
 	var at := _giant.global_position
-	FxLayer.floating_text(at + Vector2(0, -40), "「你抓不住我！」", color)
+	FxLayer.floating_text(at + Vector2(0, -40), tr("「你抓不住我！」"), color)
 	FxLayer.burst(at, color, 30, 260.0, 4.0)
 	_giant = game.spawn_enemy("thokk", at, true)
 	_giant.speed *= 1.6
@@ -43,9 +43,9 @@ func _on_giant_killed(_e: Enemy) -> void:
 
 
 func _on_update(_delta: float) -> void:
-	objective = "追上她，击败她" if _fleeing else "击败不肯哭泣的女巨人"
+	objective = tr("追上她，击败她") if _fleeing else tr("击败不肯哭泣的女巨人")
 	if _fleeing and is_instance_valid(_giant) and _giant.global_position.distance_to(_giant.flee_to) < 20.0:
-		FxLayer.floating_text(_giant.global_position + Vector2(0, -40), "哈哈哈……", color)
+		FxLayer.floating_text(_giant.global_position + Vector2(0, -40), tr("哈哈哈……"), color)
 		complete(false)
 
 
@@ -57,11 +57,11 @@ func _on_end() -> void:
 func _reward() -> String:
 	game.add_story_points(1)
 	game.add_reward_points(100)
-	var text := "支线剧情点 +1，奖励点 +100"
+	var text := tr("支线剧情点 +1，奖励点 +100")
 	if player.faith.get("loki", 0) > 0:
 		player.faith["loki"] = mini(player.faith["loki"] + 1, UpgradeDB.FAITH_MAX)
 		game.hud.set_faith(player.faith)
-		text += "，洛基的信仰 +1"
+		text += tr("，洛基的信仰 +1")
 	return text
 
 

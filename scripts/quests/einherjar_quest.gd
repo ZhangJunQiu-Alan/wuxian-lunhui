@@ -18,9 +18,9 @@ var _wave_timer := 2.0
 
 
 func _init() -> void:
-	title = "沉睡的英灵"
-	offer_text = "【主神】发现隐藏支线：沉睡的英灵。依次唤醒三块墓碑"
-	hint_text = "【主神】墓丘之中，有一座始终没有裂开"
+	title = tr("沉睡的英灵")
+	offer_text = tr("【主神】发现隐藏支线：沉睡的英灵。依次唤醒三块墓碑")
+	hint_text = tr("【主神】墓丘之中，有一座始终没有裂开")
 	time_limit = 45.0
 	color = Color(1.0, 0.82, 0.5)
 	is_hidden = true
@@ -50,7 +50,7 @@ func _on_update(delta: float) -> void:
 		_wave_timer = WAVE_EVERY
 		for i in WAVE_SIZE:
 			game.spawn_enemy("draugr", Game.clamp_to_map(stone + Vector2.from_angle(TAU * i / WAVE_SIZE + _time) * 260.0, 40.0))
-	objective = "唤醒墓碑  %d / %d" % [_lit, _stones.size()]
+	objective = tr("唤醒墓碑  %d / %d") % [_lit, _stones.size()]
 
 
 func _reward() -> String:
@@ -60,7 +60,7 @@ func _reward() -> String:
 	ally.power = 1.0 + game.elapsed / game.level_data.hp_growth
 	ally.position = _stones[0]
 	game.add_child(ally)
-	return "奖励点 +50，英灵与你并肩作战 60 秒"
+	return tr("奖励点 +50，英灵与你并肩作战 60 秒")
 
 
 func _active_targets() -> Array[Vector2]:

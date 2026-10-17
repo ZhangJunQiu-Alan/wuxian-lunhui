@@ -14,9 +14,9 @@ var _wave_timer := 2.0
 
 
 func _init() -> void:
-	title = "冥河里的刀剑"
-	offer_text = "【主神】隐藏支线：浅滩的冰下冻着一把发光的剑。把它凿出来"
-	hint_text = "【主神】浅滩的冰下，冻着一把还在发光的剑"
+	title = tr("冥河里的刀剑")
+	offer_text = tr("【主神】隐藏支线：浅滩的冰下冻着一把发光的剑。把它凿出来")
+	hint_text = tr("【主神】浅滩的冰下，冻着一把还在发光的剑")
 	is_hidden = true
 	time_limit = 45.0
 	color = Color(0.7, 0.9, 1.0)
@@ -30,7 +30,7 @@ func _on_update(delta: float) -> void:
 		_wave_timer = WAVE_EVERY
 		for i in WAVE_SIZE:
 			game.spawn_enemy("mist_wraith", marker_pos + Vector2(randf_range(-400, 400), randf_range(-60, 60)))
-	objective = "凿冰取剑  %d / %d 秒" % [int(_dug), int(DIG_TIME)]
+	objective = tr("凿冰取剑  %d / %d 秒") % [int(_dug), int(DIG_TIME)]
 	if _dug >= DIG_TIME:
 		complete(true)
 
@@ -40,7 +40,7 @@ func _reward() -> String:
 		if weapon:
 			weapon.damage *= 1.2
 	game.add_reward_points(40)
-	return "本局基础武器伤害 +20%，奖励点 +40"
+	return tr("本局基础武器伤害 +20%，奖励点 +40")
 
 
 func _active_targets() -> Array[Vector2]:

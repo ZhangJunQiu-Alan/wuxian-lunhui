@@ -13,8 +13,8 @@ var _ravens: Array[Dictionary] = []
 
 
 func _init() -> void:
-	title = "奥丁的渡鸦"
-	offer_text = "【主神】支线剧情：奥丁的渡鸦在风雪中迷路了"
+	title = tr("奥丁的渡鸦")
+	offer_text = tr("【主神】支线剧情：奥丁的渡鸦在风雪中迷路了")
 	time_limit = 45.0
 	color = Color(0.75, 0.6, 1.0)
 
@@ -24,7 +24,7 @@ func _on_accept() -> void:
 	for i in 2:
 		var pos := marker_pos + Vector2.from_angle(base + PI * i + randf_range(-0.6, 0.6)) * randf_range(600.0, 850.0)
 		pos = Game.clamp_to_map(pos, 120.0)
-		_ravens.append({"name": ["福金（思想）", "雾尼（记忆）"][i], "pos": pos, "found": false, "calm": 0.0})
+		_ravens.append({"name": [tr("福金（思想）"), tr("雾尼（记忆）")][i], "pos": pos, "found": false, "calm": 0.0})
 		for g in GUARDS:
 			game.spawn_enemy("wolf", pos + Vector2.from_angle(TAU * g / GUARDS) * 90.0)
 
@@ -42,9 +42,9 @@ func _on_update(delta: float) -> void:
 		if raven.calm >= CALM_TIME:
 			raven.found = true
 			FxLayer.burst(raven.pos, color, 20, 180.0)
-			FxLayer.floating_text(raven.pos + Vector2(0, -30), "找到了" + raven.name, color)
+			FxLayer.floating_text(raven.pos + Vector2(0, -30), tr("找到了%s") % raven.name, color)
 			found += 1
-	objective = "安抚奥丁的渡鸦  %d / 2" % found
+	objective = tr("安抚奥丁的渡鸦  %d / 2") % found
 	if found == 2:
 		complete(true)
 
@@ -53,10 +53,10 @@ func _reward() -> String:
 	game.add_reward_points(80)
 	game.add_story_points(1)
 	if player.faith.has("odin"):
-		game.queue_reward("奥丁的赏赐！选择一项奖励")
-		return "支线剧情点 +1，奖励点 +80，奥丁的赏赐（额外一次升级）"
+		game.queue_reward(tr("奥丁的赏赐！选择一项奖励"))
+		return tr("支线剧情点 +1，奖励点 +80，奥丁的赏赐（额外一次升级）")
 	player.add_ult_energy(player.ult_cost * 0.5)
-	return "支线剧情点 +1，奖励点 +80，大招能量 +50%"
+	return tr("支线剧情点 +1，奖励点 +80，大招能量 +50%")
 
 
 func _active_targets() -> Array[Vector2]:

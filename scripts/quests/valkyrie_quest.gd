@@ -11,8 +11,8 @@ var _start_kills := 0
 
 
 func _init() -> void:
-	title = "瓦尔基里的试炼"
-	offer_text = "【主神】支线剧情：女武神在空中注视，接受她的试炼吗？"
+	title = tr("瓦尔基里的试炼")
+	offer_text = tr("【主神】支线剧情：女武神在空中注视，接受她的试炼吗？")
 	time_limit = 60.0
 	color = Color(1.0, 0.85, 0.4)
 
@@ -24,7 +24,7 @@ func _on_accept() -> void:
 
 func _on_update(_delta: float) -> void:
 	var count := game.kills - _start_kills
-	objective = "击杀敌人  %d / %d" % [mini(count, KILL_GOAL), KILL_GOAL]
+	objective = tr("击杀敌人  %d / %d") % [mini(count, KILL_GOAL), KILL_GOAL]
 	if count >= KILL_GOAL:
 		complete(true)
 
@@ -35,8 +35,8 @@ func _on_end() -> void:
 
 func _reward() -> String:
 	game.add_reward_points(100)
-	game.queue_reward("瓦尔基里的赠礼！选择一项奖励")
-	return "奖励点 +100，瓦尔基里的赠礼（额外一次升级）"
+	game.queue_reward(tr("瓦尔基里的赠礼！选择一项奖励"))
+	return tr("奖励点 +100，瓦尔基里的赠礼（额外一次升级）")
 
 
 func _draw_quest() -> void:

@@ -17,8 +17,8 @@ var _guard_timer := 2.0
 
 
 func _init() -> void:
-	title = "霜巨人的祭司"
-	offer_text = "【主神】支线剧情：霜巨人的祭司正在码头召唤寒潮。击杀全部祭司"
+	title = tr("霜巨人的祭司")
+	offer_text = tr("【主神】支线剧情：霜巨人的祭司正在码头召唤寒潮。击杀全部祭司")
 	time_limit = 60.0
 	color = Color(0.55, 0.8, 1.0)
 
@@ -27,7 +27,7 @@ func _on_accept() -> void:
 	for i in COUNT:
 		var pos := marker_pos + Vector2.from_angle(TAU * i / COUNT + randf()) * randf_range(220.0, 320.0)
 		var priest := game.spawn_enemy("ice_spirit", Game.clamp_to_map(pos, 60.0), true)
-		priest.display_name = "霜巨人祭司"
+		priest.display_name = tr("霜巨人祭司")
 		priest.max_hp *= HP_MULT
 		priest.hp = priest.max_hp
 		priest.killed.connect(_on_priest_killed)
@@ -41,7 +41,7 @@ func _on_priest_killed(priest: Enemy) -> void:
 	var chest := Chest.new()
 	chest.player = player
 	chest.position = priest.position
-	chest.opened.connect(game.queue_reward.bind("祭司的遗物！选择一项奖励"))
+	chest.opened.connect(game.queue_reward.bind(tr("祭司的遗物！选择一项奖励")))
 	game.add_child.call_deferred(chest)
 	complete(true)
 
@@ -57,7 +57,7 @@ func _on_update(delta: float) -> void:
 		if guard:
 			for i in GUARDS.size():
 				game.spawn_enemy(GUARDS[i], Game.clamp_to_map(priest.global_position + Vector2.from_angle(TAU * i / GUARDS.size()) * 70.0, 40.0))
-	objective = "击杀祭司  %d / %d" % [_killed, COUNT]
+	objective = tr("击杀祭司  %d / %d") % [_killed, COUNT]
 
 
 func _on_end() -> void:
@@ -75,7 +75,7 @@ func _alive() -> Array[Enemy]:
 
 func _reward() -> String:
 	game.add_reward_points(120)
-	return "奖励点 +120，祭司的遗物（宝箱）"
+	return tr("奖励点 +120，祭司的遗物（宝箱）")
 
 
 func _active_targets() -> Array[Vector2]:

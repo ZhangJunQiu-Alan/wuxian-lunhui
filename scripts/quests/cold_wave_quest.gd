@@ -19,8 +19,8 @@ var _fires: Array[Dictionary] = []  # {"pos", "t" 已经燃了多久}
 
 
 func _init() -> void:
-	title = "芬布尔寒潮"
-	offer_text = "【主神】支线剧情：芬布尔之冬的寒潮要来了。守着火盆撑过 60 秒"
+	title = tr("芬布尔寒潮")
+	offer_text = tr("【主神】支线剧情：芬布尔之冬的寒潮要来了。守着火盆撑过 60 秒")
 	time_limit = 60.0
 	color = Color(1.0, 0.65, 0.3)
 
@@ -50,9 +50,9 @@ func _on_update(delta: float) -> void:
 	var warm := _fires.any(func(fire: Dictionary) -> bool: return player.global_position.distance_to(fire.pos) < WARM_RADIUS)
 	_heat = clampf(_heat + (WARM_RATE if warm else -COOL_RATE) * delta, 0.0, 100.0)
 	player.speed_mult = 0.7 if _heat < CHILLED else 1.0
-	objective = "撑过寒潮  体温 %d" % ceili(_heat)
+	objective = tr("撑过寒潮  体温 %d") % ceili(_heat)
 	if _heat <= 0.0:
-		FxLayer.floating_text(player.global_position + Vector2(0, -50), "冻僵了", Color(0.7, 0.85, 1.0))
+		FxLayer.floating_text(player.global_position + Vector2(0, -50), tr("冻僵了"), Color(0.7, 0.85, 1.0))
 		complete(false)
 
 
@@ -62,8 +62,8 @@ func _on_end() -> void:
 
 func _reward() -> String:
 	game.add_reward_points(100)
-	game.queue_reward("熬过了寒潮！选择一项奖励")
-	return "奖励点 +100，额外一次升级"
+	game.queue_reward(tr("熬过了寒潮！选择一项奖励"))
+	return tr("奖励点 +100，额外一次升级")
 
 
 func _active_targets() -> Array[Vector2]:

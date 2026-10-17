@@ -1,11 +1,11 @@
 extends Node
 ## 存档（自动加载：任何脚本都可以直接用 Save.xxx 访问）
-## 保存局外进度：奖励点、支线剧情点、主神空间的永久强化、角色选择与解锁、关卡选择与通关记录、战绩统计
+## 保存局外进度：奖励点、支线剧情点、主神空间的永久强化、角色选择与解锁、关卡选择与通关记录、战绩统计、图鉴
 ## 文件位置：user://save.json（Mac 上在 ~/Library/Application Support/Godot/app_userdata/无限轮回/）
 ## 测试时用命令行参数 --save-file=user://test_save.json 换一个文件，避免弄乱真实存档
 
 const DEFAULT_PATH := "user://save.json"
-const VERSION := 3
+const VERSION := 4
 
 var path := DEFAULT_PATH
 var reward_points := 0
@@ -16,6 +16,13 @@ var selected_character := "swordsman"
 var unlocked_characters: Array[String] = []  # 花点数解锁的角色（其他角色按条件自动解锁）
 var selected_level := "midgard"
 var cleared_levels: Array[String] = []  # 通关过的关卡 id
+## 图鉴：分类 -> {id: 次数}。敌人记击杀数，Boss 记击败次数，强化记选择次数，支线记完成次数
+## 遇到过但次数为 0 的（例如遭遇过还没打败的 Boss）也记下来，图鉴里算已发现
+var codex := _empty_codex()
+
+
+static func _empty_codex() -> Dictionary:
+	return {"enemies": {}, "bosses": {}, "upgrades": {}, "quests": {}}
 
 
 static func _default_stats() -> Dictionary:
@@ -53,13 +60,22 @@ func load_game() -> void:
 			stats[key] = type_convert(saved_stats[key], typeof(stats[key]))  # JSON 读出的数字都是小数，转回原来的类型
 	if not data.has("cleared_levels") and stats.clears > 0:
 		cleared_levels.append("midgard")  # 第 2 版存档只有第 1 关，通关次数都是第 1 关的
+	codex = _empty_codex()
+	var saved_codex: Dictionary = data.get("codex", {})
+	for category: String in codex:
+		for id: String in saved_codex.get(category, {}):
+			codex[category][id] = int(saved_codex[category][id])
+	if not data.has("codex"):  # 第 3 版存档没有图鉴：通关过的关卡，Boss 算击败过一次
+		for level_id in cleared_levels:
+			for boss: Dictionary in LevelDB.ALL[level_id].bosses:
+				codex.bosses[boss.id] = 1
 
 
 ## 先写到临时文件再改名，写到一半断电也不会把原存档写坏
 func save_game() -> void:
 	var data := {"version": VERSION, "reward_points": reward_points, "story_points": story_points, "meta": meta, "stats": stats,
 		"selected_character": selected_character, "unlocked_characters": unlocked_characters,
-		"selected_level": selected_level, "cleared_levels": cleared_levels}
+		"selected_level": selected_level, "cleared_levels": cleared_levels, "codex": codex}
 	var tmp_path := path + ".tmp"
 	var file := FileAccess.open(tmp_path, FileAccess.WRITE)
 	if file == null:
@@ -108,6 +124,18 @@ func unlock_character(id: String, cost: int) -> bool:
 	return true
 
 
+## 图鉴里的次数，没遇到过返回 -1
+func codex_count(category: String, id: String) -> int:
+	return codex[category].get(id, -1)
+
+
+## 一局结束时调用（在 record_run 之前）：把本局的图鉴记录累加进来，由 record_run 一起保存
+func record_codex(found: Dictionary) -> void:
+	for category: String in found:
+		for id: String in found[category]:
+			codex[category][id] = codex[category].get(id, 0) + found[category][id]
+
+
 ## 一局结束时调用：把本局收获存进存档。第一次通关某一关时，自动选好下一关
 func record_run(level_id: String, points: int, story: int, cleared: bool, elapsed: float, kills: int, quests_done: int) -> void:
 	reward_points += points
@@ -137,4 +165,5 @@ func reset() -> void:
 	unlocked_characters = []
 	selected_level = "midgard"
 	cleared_levels = []
+	codex = _empty_codex()
 	save_game()

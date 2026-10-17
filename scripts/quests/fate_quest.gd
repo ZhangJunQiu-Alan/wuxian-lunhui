@@ -27,8 +27,8 @@ var _font: Font
 
 
 func _init() -> void:
-	title = "命运之线"
-	offer_text = "【主神】支线剧情：命运三女神在十字路口纺线。去选一条你的命运"
+	title = tr("命运之线")
+	offer_text = tr("【主神】支线剧情：命运三女神在十字路口纺线。去选一条你的命运")
 	time_limit = 30.0
 	color = Color(0.85, 0.75, 1.0)
 	var custom: String = ProjectSettings.get_setting("gui/theme/custom_font", "")
@@ -46,14 +46,14 @@ func _on_accept() -> void:
 
 func _on_update(_delta: float) -> void:
 	if _chosen == "":
-		objective = "走进一条命运之线"
+		objective = tr("走进一条命运之线")
 		for i in _options.size():
 			if player.global_position.distance_to(_spots[i]) < TOUCH:
 				_choose(_options[i])
 				return
 		return
 	# 只有金线会走到这里：荣耀试炼
-	objective = "荣耀试炼：撑过去"
+	objective = tr("荣耀试炼：撑过去")
 	if time_left <= 0.0:
 		complete(true)
 
@@ -89,16 +89,16 @@ func _reward() -> String:
 	match _chosen:
 		"gold":
 			game.add_reward_points(200)
-			return "荣耀试炼完成，奖励点 +200"
+			return tr("荣耀试炼完成，奖励点 +200")
 		"silver":
-			game.queue_reward("银线的力量！选择一项奖励")
-			return "以血换力：额外一次升级"
+			game.queue_reward(tr("银线的力量！选择一项奖励"))
+			return tr("以血换力：额外一次升级")
 		"black":
-			return "向死而生：获得一次复活"
+			return tr("向死而生：获得一次复活")
 		"white":
-			return "远见：本局升级选项 +1"
+			return tr("远见：本局升级选项 +1")
 	game.add_reward_points(60)
-	return "平静：奖励点 +60"
+	return tr("平静：奖励点 +60")
 
 
 func _active_targets() -> Array[Vector2]:
@@ -130,10 +130,10 @@ func _draw_overlay() -> void:
 	for i in _options.size():
 		var thread: Dictionary = THREADS[_options[i]]
 		var at := _spots[i] + Vector2(-SPACING / 2.0, 30.0)
-		overlay.draw_string_outline(_font, at, thread.name, HORIZONTAL_ALIGNMENT_CENTER, SPACING, 14, 4, Color(0, 0, 0, 0.8))
-		overlay.draw_string(_font, at, thread.name, HORIZONTAL_ALIGNMENT_CENTER, SPACING, 14, thread.color)
+		overlay.draw_string_outline(_font, at, tr(thread.name), HORIZONTAL_ALIGNMENT_CENTER, SPACING, 14, 4, Color(0, 0, 0, 0.8))
+		overlay.draw_string(_font, at, tr(thread.name), HORIZONTAL_ALIGNMENT_CENTER, SPACING, 14, thread.color)
 		var line_y := 18.0
-		for line: String in thread.desc.split("\n"):
+		for line: String in tr(thread.desc).split("\n"):
 			overlay.draw_string_outline(_font, at + Vector2(0, line_y), line, HORIZONTAL_ALIGNMENT_CENTER, SPACING, 11, 3, Color(0, 0, 0, 0.8))
 			overlay.draw_string(_font, at + Vector2(0, line_y), line, HORIZONTAL_ALIGNMENT_CENTER, SPACING, 11, Color(1, 1, 1, 0.85))
 			line_y += 14.0

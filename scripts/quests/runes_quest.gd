@@ -12,9 +12,9 @@ var _spots: Array[Dictionary] = []  # {"name", "pos", "done"}
 
 
 func _init() -> void:
-	title = "路标石的符文"
-	offer_text = "【主神】发现隐藏支线：路标石的符文。去触摸三处地标的符文"
-	hint_text = "【主神】十字路口的路标石上，符文在微微发亮"
+	title = tr("路标石的符文")
+	offer_text = tr("【主神】发现隐藏支线：路标石的符文。去触摸三处地标的符文")
+	hint_text = tr("【主神】十字路口的路标石上，符文在微微发亮")
 	time_limit = 150.0
 	color = Color(0.55, 0.95, 0.75)
 	is_hidden = true
@@ -29,7 +29,7 @@ func _on_accept() -> void:
 	others.shuffle()
 	for l: Dictionary in others.slice(0, SPOTS):
 		var pos: Vector2 = l.pos + Vector2.from_angle(randf() * TAU) * randf() * l.radius * 0.3
-		_spots.append({"name": l.name, "pos": MapLayer.push_out(pos, Player.RADIUS + 10.0), "done": false})
+		_spots.append({"name": tr(l.name), "pos": MapLayer.push_out(pos, Player.RADIUS + 10.0), "done": false})
 
 
 func _on_update(_delta: float) -> void:
@@ -39,10 +39,10 @@ func _on_update(_delta: float) -> void:
 			spot.done = true
 			game.add_reward_points(POINTS_EACH)
 			FxLayer.burst(spot.pos, color, 18, 160.0)
-			FxLayer.floating_text(spot.pos + Vector2(0, -40), "%s的符文  奖励点 +%d" % [spot.name, POINTS_EACH], color)
+			FxLayer.floating_text(spot.pos + Vector2(0, -40), tr("%s的符文  奖励点 +%d") % [spot.name, POINTS_EACH], color)
 		if spot.done:
 			done += 1
-	objective = "触摸符文  %d / %d" % [done, SPOTS]
+	objective = tr("触摸符文  %d / %d") % [done, SPOTS]
 	if done == SPOTS:
 		complete(true)
 
@@ -50,7 +50,7 @@ func _on_update(_delta: float) -> void:
 func _reward() -> String:
 	player.damage_mult += 0.15
 	player.cooldown_mult *= 0.9
-	return "获得符文之力：本局伤害 +15%，冷却 -10%"
+	return tr("获得符文之力：本局伤害 +15%，冷却 -10%")
 
 
 func _active_targets() -> Array[Vector2]:

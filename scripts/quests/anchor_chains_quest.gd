@@ -11,8 +11,8 @@ var _chains: Array[Enemy] = []
 
 
 func _init() -> void:
-	title = "斩断锚链"
-	offer_text = "【主神】支线剧情：纳吉尔法尔被锚链拴在港口。在它起航前，斩断锚链"
+	title = tr("斩断锚链")
+	offer_text = tr("【主神】支线剧情：纳吉尔法尔被锚链拴在港口。在它起航前，斩断锚链")
 	time_limit = 75.0
 	color = Color(0.7, 0.68, 0.62)
 
@@ -26,7 +26,7 @@ func _on_accept() -> void:
 
 
 func _on_update(_delta: float) -> void:
-	objective = "打断锚链  %d / %d" % [CHAINS - _chains.size(), CHAINS]
+	objective = tr("打断锚链  %d / %d") % [CHAINS - _chains.size(), CHAINS]
 	if _chains.is_empty():
 		complete(true)
 
@@ -40,7 +40,7 @@ func _on_end() -> void:
 func _reward() -> String:
 	game.boss_delay["hel"] = BOSS_DELAY
 	game.boss_hp_mult["hel"] = BOSS_HP
-	return "纳吉尔法尔推迟起航：海拉晚 45 秒登场，血量 -20%"
+	return tr("纳吉尔法尔推迟起航：海拉晚 45 秒登场，血量 -20%")
 
 
 func _active_targets() -> Array[Vector2]:

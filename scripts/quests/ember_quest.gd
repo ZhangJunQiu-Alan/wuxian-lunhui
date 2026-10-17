@@ -21,8 +21,8 @@ var _wave_timer := 2.0
 
 
 func _init() -> void:
-	title = "太阳的余烬"
-	offer_text = "【主神】支线剧情：斯库尔咬下了一块太阳的余烬。把它送到符文石阵的祭坛"
+	title = tr("太阳的余烬")
+	offer_text = tr("【主神】支线剧情：斯库尔咬下了一块太阳的余烬。把它送到符文石阵的祭坛")
 	time_limit = 45.0
 	color = Color(1.0, 0.75, 0.35)
 
@@ -39,7 +39,7 @@ func _on_hp_changed(hp: float, _max_hp: float) -> void:
 		_ember = player.global_position
 		_cooldown = DROP_COOLDOWN
 		FxLayer.burst(_ember, color, 14, 140.0)
-		FxLayer.floating_text(_ember + Vector2(0, -40), "余烬掉了", color)
+		FxLayer.floating_text(_ember + Vector2(0, -40), tr("余烬掉了"), color)
 	_last_hp = hp
 
 
@@ -64,9 +64,9 @@ func _on_update(delta: float) -> void:
 			var angle := ahead + randf_range(-0.6, 0.6) if i % 2 == 0 else randf() * TAU
 			game.spawn_enemy("wolf", Game.clamp_to_map(_ember + Vector2.from_angle(angle) * 420.0, 40.0))
 	if _carried:
-		objective = "把余烬送到符文石阵  还有 %d 米" % ceili(player.global_position.distance_to(_altar) / 20.0)
+		objective = tr("把余烬送到符文石阵  还有 %d 米") % ceili(player.global_position.distance_to(_altar) / 20.0)
 	else:
-		objective = "余烬掉了！回去捡起来"
+		objective = tr("余烬掉了！回去捡起来")
 
 
 func _on_end() -> void:
@@ -78,7 +78,7 @@ func _on_end() -> void:
 func _reward() -> String:
 	player.add_ult_energy(player.ult_cost)
 	game.add_reward_points(100)
-	return "太阳的力量：大招能量充满，奖励点 +100"
+	return tr("太阳的力量：大招能量充满，奖励点 +100")
 
 
 func _active_targets() -> Array[Vector2]:

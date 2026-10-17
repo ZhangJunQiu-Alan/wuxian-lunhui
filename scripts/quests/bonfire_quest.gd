@@ -14,8 +14,8 @@ var _wave_timer := 2.0
 
 
 func _init() -> void:
-	title = "最后的篝火"
-	offer_text = "【主神】支线剧情：村庄里还有幸存者。前往篝火，守护他们"
+	title = tr("最后的篝火")
+	offer_text = tr("【主神】支线剧情：村庄里还有幸存者。前往篝火，守护他们")
 	time_limit = 90.0
 	color = Color(1.0, 0.6, 0.25)
 
@@ -28,7 +28,7 @@ func _on_update(delta: float) -> void:
 		_wave_timer = WAVE_EVERY
 		for i in WAVE_SIZE:  # 一圈亡者从四面八方围向篝火
 			game.spawn_enemy("draugr", marker_pos + Vector2.from_angle(TAU * i / WAVE_SIZE) * 320.0)
-	objective = "守在篝火旁  %d / %d 秒" % [int(_held), int(HOLD_TIME)]
+	objective = tr("守在篝火旁  %d / %d 秒") % [int(_held), int(HOLD_TIME)]
 	if _held >= HOLD_TIME:
 		complete(true)
 
@@ -40,7 +40,7 @@ func _player_in_zone() -> bool:
 func _reward() -> String:
 	game.add_reward_points(100)
 	player.heal(player.max_hp)
-	return "奖励点 +100，生命全部恢复"
+	return tr("奖励点 +100，生命全部恢复")
 
 
 func _active_targets() -> Array[Vector2]:

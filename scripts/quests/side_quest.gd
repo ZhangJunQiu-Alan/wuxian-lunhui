@@ -25,6 +25,7 @@ const OFFER_TIME := 40.0        # 标记存在多久，没接就消失
 const ACCEPT_DISTANCE := 40.0
 const MARKER_DISTANCE := 380.0  # 标记出现在离玩家多远的地方
 
+var quest_id := ""       # QuestDB 里的 id，图鉴记录用
 var title := ""
 var offer_text := ""     # 标记出现时（隐藏支线是被发现时）主神的播报
 var hint_text := ""      # 隐藏支线：主神的提示
@@ -59,7 +60,7 @@ func _ready() -> void:
 		marker_pos = landmark.pos + Vector2.from_angle(randf() * TAU) * randf() * landmark.radius * 0.4
 		_offer_left += player.global_position.distance_to(marker_pos) / player.move_speed  # 地标越远，留给玩家赶路的时间越多
 	marker_pos = Game.clamp_to_map(marker_pos, 80.0)
-	objective = "前往标记处接受支线"
+	objective = tr("前往标记处接受支线")
 
 
 func _process(delta: float) -> void:

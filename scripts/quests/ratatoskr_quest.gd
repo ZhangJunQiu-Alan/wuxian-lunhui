@@ -19,8 +19,8 @@ var _strip: Texture2D
 
 
 func _init() -> void:
-	title = "拉塔托斯克的流言"
-	offer_text = "【主神】支线剧情：一只松鼠正在世界树下散布流言。抓住它"
+	title = tr("拉塔托斯克的流言")
+	offer_text = tr("【主神】支线剧情：一只松鼠正在世界树下散布流言。抓住它")
 	time_limit = 50.0
 	color = Color(0.85, 0.5, 0.3)
 
@@ -51,19 +51,19 @@ func _on_update(delta: float) -> void:
 		_dir = _pos.direction_to(landmark.get("pos", marker_pos))
 	if player.global_position.distance_to(_pos) < CATCH_DISTANCE + Player.RADIUS:
 		_caught += 1
-		FxLayer.floating_text(_pos + Vector2(0, -20), "吱！", color.lightened(0.3))
+		FxLayer.floating_text(_pos + Vector2(0, -20), tr("吱！"), color.lightened(0.3))
 		Audio.sfx("card_pick")
 		if _caught >= CATCHES:
 			complete(true)
 			return
 		_pos = Game.clamp_to_map(_pos + Vector2.from_angle(randf() * TAU) * HOP, 40.0)
-	objective = "抓住松鼠  %d / %d" % [_caught, CATCHES]
+	objective = tr("抓住松鼠  %d / %d") % [_caught, CATCHES]
 
 
 func _reward() -> String:
 	game.add_story_points(1)
-	game.queue_reward("松鼠吐出了一样珍藏！选择一项奖励")
-	return "支线剧情点 +1，一次升级"
+	game.queue_reward(tr("松鼠吐出了一样珍藏！选择一项奖励"))
+	return tr("支线剧情点 +1，一次升级")
 
 
 func _active_targets() -> Array[Vector2]:

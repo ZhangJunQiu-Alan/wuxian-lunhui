@@ -90,7 +90,7 @@ static func damage_in_radius(tree: SceneTree, center: Vector2, radius: float, am
 func setup(id: String, hp_scale: float, elite: bool = false) -> void:
 	var data: Dictionary = EnemyDB.ALL[id]
 	type_id = id
-	display_name = data.name
+	display_name = tr(data.name)
 	behavior = data.get("behavior", "chase")
 	max_hp = data.hp * hp_scale
 	speed = data.speed
@@ -115,7 +115,7 @@ func setup(id: String, hp_scale: float, elite: bool = false) -> void:
 
 	if elite:
 		is_elite = true
-		display_name = "精英" + display_name
+		display_name = tr("精英%s") % display_name
 		max_hp *= EnemyDB.ELITE_HP
 		radius *= EnemyDB.ELITE_SIZE
 		contact_damage *= EnemyDB.ELITE_DAMAGE
@@ -337,7 +337,7 @@ func take_damage(amount: float, knockback: Vector2 = Vector2.ZERO, crit: bool = 
 		_dodge_cd = EnemyDB.DODGE_COOLDOWN
 		var side := Vector2.from_angle(randf() * TAU) if not is_instance_valid(target) else (target.global_position - global_position).orthogonal().normalized()
 		position += side * (40.0 if randf() < 0.5 else -40.0)
-		FxLayer.floating_text(global_position + Vector2(0, -radius - 4), "闪避", color.lightened(0.4))
+		FxLayer.floating_text(global_position + Vector2(0, -radius - 4), tr("闪避"), color.lightened(0.4))
 		return
 	hp -= amount
 	_knockback += knockback / mass  # 越重越难击退

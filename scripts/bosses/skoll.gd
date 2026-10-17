@@ -25,12 +25,12 @@ var _howl_timer := 0.0
 
 
 func _init() -> void:
-	intro_line = "斯库尔 · 追日之狼 —— 它追上了太阳"
-	defeat_line = "「太阳……还是逃走了吗……」"
+	intro_line = tr("斯库尔 · 追日之狼 —— 它追上了太阳")
+	defeat_line = tr("「太阳……还是逃走了吗……」")
 
 
 func init_stats(hp_scale: float) -> void:
-	setup_boss("skoll", "斯库尔", "追日之狼", 650.0, hp_scale, 34.0, 150.0, 15.0)
+	setup_boss("skoll", tr("斯库尔"), tr("追日之狼"), 650.0, hp_scale, 34.0, 150.0, 15.0)
 	gait = "quad"
 	color = Color(0.55, 0.5, 0.62)
 	state_actions = {"howl": &"windup"}

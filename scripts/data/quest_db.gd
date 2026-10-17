@@ -4,6 +4,13 @@ class_name QuestDB
 
 
 static func create(id: String) -> SideQuest:
+	var quest := _new(id)
+	if quest:
+		quest.quest_id = id
+	return quest
+
+
+static func _new(id: String) -> SideQuest:
 	match id:
 		"bonfire":
 			return BonfireQuest.new()

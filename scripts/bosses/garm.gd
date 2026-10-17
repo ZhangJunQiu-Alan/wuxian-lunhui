@@ -34,12 +34,12 @@ var _free := false
 
 
 func _init() -> void:
-	intro_line = "加姆 · 冥府猎犬 —— 锁链的另一头，是诸神黄昏"
-	defeat_line = "「提尔……不是你……杀死了我？」"
+	intro_line = tr("加姆 · 冥府猎犬 —— 锁链的另一头，是诸神黄昏")
+	defeat_line = tr("「提尔……不是你……杀死了我？」")
 
 
 func init_stats(hp_scale: float) -> void:
-	setup_boss("garm", "加姆", "冥府猎犬", 750.0, hp_scale, 34.0, 135.0, 16.0)
+	setup_boss("garm", tr("加姆"), tr("冥府猎犬"), 750.0, hp_scale, 34.0, 135.0, 16.0)
 	gait = "quad"
 	color = Color(0.35, 0.22, 0.22)
 	reward_points = 120
@@ -60,7 +60,7 @@ func _ready() -> void:
 func _on_stake_broken(stake: Enemy) -> void:
 	_stakes.erase(stake)
 	Audio.sfx("boss_block")
-	FxLayer.floating_text(stake.global_position + Vector2(0, -30), "锁桩断了！", CHAIN_COLOR.lightened(0.4))
+	FxLayer.floating_text(stake.global_position + Vector2(0, -30), tr("锁桩断了！"), CHAIN_COLOR.lightened(0.4))
 	if _stakes.is_empty() and not _free:
 		_free = true
 		speed *= FREE_SPEED
@@ -68,7 +68,7 @@ func _on_stake_broken(stake: Enemy) -> void:
 		target.shake(8.0, 0.4)
 		var game := get_tree().current_scene
 		if game.get("hud"):
-			game.hud.announce("加姆挣脱了锁链！它更快了，但也更脆弱")
+			game.hud.announce(tr("加姆挣脱了锁链！它更快了，但也更脆弱"))
 
 
 func take_damage(amount: float, knockback: Vector2 = Vector2.ZERO, crit: bool = false) -> void:
@@ -127,7 +127,7 @@ func _howl() -> void:
 	if target.frenzy_time > 0.0 or target.shield_time > 0.0:
 		target.frenzy_time = 0.0
 		target.shield_time = 0.0
-		FxLayer.floating_text(target.global_position + Vector2(0, -40), "增益被驱散", Color(0.9, 0.5, 0.5))
+		FxLayer.floating_text(target.global_position + Vector2(0, -40), tr("增益被驱散"), Color(0.9, 0.5, 0.5))
 
 
 func _draw_telegraph() -> void:

@@ -31,12 +31,12 @@ var _speed_mult := 1.0          # 狂暴时出招更快
 
 
 func _init() -> void:
-	intro_line = "哈提 · 逐月之狼 —— 月光越暗，它越强"
-	defeat_line = "「兄弟……月亮……还给你们了……」"
+	intro_line = tr("哈提 · 逐月之狼 —— 月光越暗，它越强")
+	defeat_line = tr("「兄弟……月亮……还给你们了……」")
 
 
 func init_stats(hp_scale: float) -> void:
-	setup_boss("hati", "哈提", "逐月之狼", 650.0, hp_scale, 32.0, 165.0, 18.0)
+	setup_boss("hati", tr("哈提"), tr("逐月之狼"), 650.0, hp_scale, 32.0, 165.0, 18.0)
 	gait = "quad"
 	color = Color(0.72, 0.78, 0.95)
 	reward_points = 150
@@ -50,7 +50,7 @@ func _ready() -> void:
 		_enraged = true
 		_speed_mult = 1.4
 		speed *= 1.25
-		intro_line = "哈提 · 逐月之狼 —— 兄弟之死让它陷入狂暴！"
+		intro_line = tr("哈提 · 逐月之狼 —— 兄弟之死让它陷入狂暴！")
 	change_state("chase")
 
 

@@ -14,8 +14,8 @@ var _zone := Rect2()
 
 
 func _init() -> void:
-	title = "守桥人的盘问"
-	offer_text = "【主神】支线剧情：吉欧尔桥的守桥人拦住了你。在桥上证明你的决心"
+	title = tr("守桥人的盘问")
+	offer_text = tr("【主神】支线剧情：吉欧尔桥的守桥人拦住了你。在桥上证明你的决心")
 	time_limit = 70.0
 	color = Color(1.0, 0.82, 0.4)
 
@@ -38,15 +38,15 @@ func _on_update(delta: float) -> void:
 			for i in WAVE_SIZE / 2:
 				var pos := Vector2(_zone.get_center().x + randf_range(-60, 60), _zone.get_center().y + end * (_zone.size.y / 2.0 + 160.0 + i * 20.0))
 				game.spawn_enemy("dead", pos)
-	objective = "守在桥上  %d / %d 秒" % [int(_held), int(HOLD_TIME)]
+	objective = tr("守在桥上  %d / %d 秒") % [int(_held), int(HOLD_TIME)]
 	if _held >= HOLD_TIME:
 		complete(true)
 
 
 func _reward() -> String:
 	game.add_reward_points(100)
-	game.queue_reward("守桥人放行了你！选择一项奖励")
-	return "奖励点 +100，一次升级"
+	game.queue_reward(tr("守桥人放行了你！选择一项奖励"))
+	return tr("奖励点 +100，一次升级")
 
 
 func _active_targets() -> Array[Vector2]:

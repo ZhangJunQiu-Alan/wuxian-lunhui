@@ -17,8 +17,8 @@ var _lit_texture: Texture2D
 
 
 func _init() -> void:
-	title = "引魂灯"
-	offer_text = "【主神】支线剧情：广场上的引魂灯熄灭了，亡者找不到路。依次点亮它们"
+	title = tr("引魂灯")
+	offer_text = tr("【主神】支线剧情：广场上的引魂灯熄灭了，亡者找不到路。依次点亮它们")
 	time_limit = 60.0
 	color = GLOW
 
@@ -47,14 +47,14 @@ func _on_update(delta: float) -> void:
 				return
 	else:
 		_charge = maxf(0.0, _charge - delta)
-	objective = "点亮引魂灯  %d / %d" % [_lit, _lamps.size()]
+	objective = tr("点亮引魂灯  %d / %d") % [_lit, _lamps.size()]
 
 
 func _reward() -> String:
 	game.add_reward_points(80)
 	if Mist.instance:
 		Mist.instance.damage_scale = 0.5
-	return "奖励点 +80，本局冥雾伤害减半"
+	return tr("奖励点 +80，本局冥雾伤害减半")
 
 
 func _active_targets() -> Array[Vector2]:

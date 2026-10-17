@@ -1,11 +1,14 @@
 class_name SettingsPanel
 extends Control
-## 设置面板：主神空间和暂停菜单共用。所有修改立即生效并保存，按 Esc 或「返回」关闭
+## 设置面板：标题画面、主神空间和暂停菜单共用。所有修改立即生效并保存，按 Esc 或「返回」关闭
+## 切换语言后，打开它的界面要重新创建自己（Settings.language_changed），战斗中不能切换语言
 
 signal closed
 
 const PANEL_WIDTH := 560.0
 const GOLD := Color(1.0, 0.85, 0.4)
+
+var allow_language := true  # 战斗中关掉：局内很多文字是开局时生成的，中途换语言会中英混杂
 
 
 func _ready() -> void:
@@ -35,27 +38,36 @@ func _ready() -> void:
 	var box := VBoxContainer.new()
 	box.add_theme_constant_override("separation", 14)
 	panel.add_child(box)
-	box.add_child(_title("设置", 28, GOLD))
+	box.add_child(_title(tr("设置"), 28, GOLD))
 
-	box.add_child(_title("声音", 15, Color(0.7, 0.73, 0.8)))
-	var grid := _grid(box)
-	_slider(grid, "主音量", "master_volume")
-	_slider(grid, "音乐", "music_volume")
-	_slider(grid, "音效", "sfx_volume")
+	var grid: GridContainer
+	if allow_language:
+		grid = _grid(box)
+		var codes: Array = Settings.LANGUAGES.keys()
+		_option(grid, tr("语言"), codes.map(func(code: String) -> String: return Settings.LANGUAGES[code]), codes.find(Settings.current_language()),
+			func(index: int) -> void: Settings.change("language", codes[index]))
 
-	box.add_child(_title("画面", 15, Color(0.7, 0.73, 0.8)))
+	box.add_child(_title(tr("声音"), 15, Color(0.7, 0.73, 0.8)))
 	grid = _grid(box)
-	_toggle(grid, "全屏", "fullscreen")
-	_toggle(grid, "垂直同步", "vsync")
-	_toggle(grid, "显示帧率", "show_fps")
+	_slider(grid, tr("主音量"), "master_volume")
+	_slider(grid, tr("音乐"), "music_volume")
+	_slider(grid, tr("音效"), "sfx_volume")
 
-	box.add_child(_title("战斗", 15, Color(0.7, 0.73, 0.8)))
+	box.add_child(_title(tr("画面"), 15, Color(0.7, 0.73, 0.8)))
 	grid = _grid(box)
-	_toggle(grid, "伤害数字", "damage_numbers")
-	_slider(grid, "屏幕震动", "screen_shake")
+	_option(grid, tr("窗口大小"), Settings.WINDOW_SIZES.map(func(v: Vector2i) -> String: return "%d × %d" % [v.x, v.y]), Settings.window_size,
+		func(index: int) -> void: Settings.change("window_size", index))
+	_toggle(grid, tr("全屏"), "fullscreen")
+	_toggle(grid, tr("垂直同步"), "vsync")
+	_toggle(grid, tr("显示帧率"), "show_fps")
+
+	box.add_child(_title(tr("战斗"), 15, Color(0.7, 0.73, 0.8)))
+	grid = _grid(box)
+	_toggle(grid, tr("伤害数字"), "damage_numbers")
+	_slider(grid, tr("屏幕震动"), "screen_shake")
 
 	var back := Button.new()
-	back.text = "返回  [Esc]"
+	back.text = tr("返回  [Esc]")
 	back.custom_minimum_size = Vector2(200, 44)
 	back.size_flags_horizontal = Control.SIZE_SHRINK_CENTER
 	back.focus_mode = Control.FOCUS_NONE
@@ -118,6 +130,21 @@ func _toggle(grid: GridContainer, text: String, key: String) -> void:
 	check.toggled.connect(func(on: bool) -> void: Settings.change(key, on))
 	grid.add_child(check)
 	grid.add_child(Control.new())  # 占位，保持三列对齐
+
+
+## 下拉选项：items 是显示的文字，selected 是当前选中的序号
+func _option(grid: GridContainer, text: String, items: Array, selected: int, on_select: Callable) -> void:
+	grid.add_child(_row_label(text))
+	var option := OptionButton.new()
+	option.auto_translate_mode = Node.AUTO_TRANSLATE_MODE_DISABLED  # 语言名用各自的文字显示
+	for item: String in items:
+		option.add_item(item)
+	option.select(selected)
+	option.focus_mode = Control.FOCUS_NONE
+	option.size_flags_horizontal = Control.SIZE_SHRINK_BEGIN
+	option.item_selected.connect(on_select)
+	grid.add_child(option)
+	grid.add_child(Control.new())
 
 
 func _row_label(text: String) -> Label:

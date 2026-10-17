@@ -34,8 +34,8 @@ var _playing := &""
 func setup_boss(id: String, boss_name: String, boss_title: String, base_hp: float, hp_scale: float,
 		boss_radius: float, move_speed: float, damage: float) -> void:
 	type_id = id
-	display_name = boss_name
-	title = boss_title
+	display_name = tr(boss_name)
+	title = tr(boss_title)
 	sprite_dir = "res://assets/sprites/bosses/"
 	actions = BOSS_ACTIONS
 	max_hp = base_hp * hp_scale

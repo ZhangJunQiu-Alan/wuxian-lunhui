@@ -13,9 +13,9 @@ var _found := 0
 
 
 func _init() -> void:
-	title = "八足的蹄印"
-	offer_text = "【主神】隐藏支线：这串蹄印通往冥界之外。沿着它，找回掉落的马蹄铁"
-	hint_text = "【主神】大厅门前，有一串不属于这里的马蹄印"
+	title = tr("八足的蹄印")
+	offer_text = tr("【主神】隐藏支线：这串蹄印通往冥界之外。沿着它，找回掉落的马蹄铁")
+	hint_text = tr("【主神】大厅门前，有一串不属于这里的马蹄印")
 	is_hidden = true
 	time_limit = 60.0
 	color = Color(0.85, 0.85, 0.75)
@@ -42,7 +42,7 @@ func _on_update(_delta: float) -> void:
 			FxLayer.burst(shoe, color, 12, 120.0, 3.0)
 			Audio.sfx("pickup_xp")
 			break
-	objective = "找回马蹄铁  %d / %d" % [_found, SHOES]
+	objective = tr("找回马蹄铁  %d / %d") % [_found, SHOES]
 	if _found >= SHOES:
 		complete(true)
 
@@ -50,7 +50,7 @@ func _on_update(_delta: float) -> void:
 func _reward() -> String:
 	player.move_speed *= 1.15
 	game.add_reward_points(60)
-	return "本局移速 +15%，奖励点 +60"
+	return tr("本局移速 +15%，奖励点 +60")
 
 
 func _active_targets() -> Array[Vector2]:

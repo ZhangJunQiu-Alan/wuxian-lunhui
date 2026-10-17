@@ -46,6 +46,7 @@ var _quests_seen := 0
 var _hidden: Array[Dictionary] = []  # 隐藏支线：{"quest", "hint" 提示时间, "hinted"}
 var _hidden_found := 0
 var _run_recorded := false
+var _codex := {"enemies": {}, "bosses": {}, "upgrades": {}, "quests": {}}  # 本局的图鉴记录，见 _note()
 var _map_layer: MapLayer
 
 
@@ -192,7 +193,7 @@ func _update_elites(wave: Dictionary) -> void:
 	if pool.is_empty():
 		return
 	var enemy := spawn_enemy(pool.pick_random(), _random_spawn_position(), true)
-	hud.announce("%s 出现了！" % enemy.display_name)
+	hud.announce(tr("%s 出现了！") % enemy.display_name)
 
 
 func _update_events() -> void:
@@ -203,7 +204,7 @@ func _update_events() -> void:
 			for i in event.count:
 				var angle: float = TAU * i / event.count
 				spawn_enemy(event.enemy, clamp_to_map(player.position + Vector2.from_angle(angle) * RING_RADIUS, 40.0))
-		hud.announce(event.text)
+		hud.announce(tr(event.text))
 
 
 func spawn_enemy(type_id: String, pos: Vector2, elite: bool = false) -> Enemy:
@@ -218,6 +219,8 @@ func spawn_enemy(type_id: String, pos: Vector2, elite: bool = false) -> Enemy:
 
 
 func _on_enemy_killed(enemy: Enemy) -> void:
+	if not enemy is Boss:
+		_note("enemies", enemy.type_id, 1)
 	if player.frenzy_time > 0.0:  # 狂野西部秀：击杀回血
 		player.heal(1.0)
 	_alive_by_type[enemy.type_id] = _alive_by_type.get(enemy.type_id, 1) - 1
@@ -251,6 +254,7 @@ func _update_bosses() -> void:
 	boss.hp_changed.connect(hud.set_boss_hp)
 	boss.defeated.connect(_on_boss_defeated)
 	add_child(boss)
+	_note("bosses", id, 0)
 	hud.show_boss(boss.display_name, boss.title, boss.max_hp)
 	hud.announce(boss.intro_line)
 	Audio.sfx("boss_warning")
@@ -271,7 +275,7 @@ func _update_quests() -> void:
 		if secret.state == "active":
 			shown.append(secret)
 		elif entry.hinted:
-			clues.append(secret.hint_text.trim_prefix("【主神】"))
+			clues.append(secret.hint_text.trim_prefix(tr("【主神】")))
 	hud.show_quests(shown, clues)
 	if is_instance_valid(quest):
 		return
@@ -311,6 +315,7 @@ func _update_hidden_quests() -> void:
 func _on_hidden_quest_accepted(secret: SideQuest) -> void:
 	_quests_seen += 1
 	_hidden_found += 1
+	_note("quests", secret.quest_id, 0)
 	hud.announce(secret.offer_text)
 
 
@@ -328,15 +333,22 @@ func landmark_by_id(id: String) -> Dictionary:
 
 
 func _on_quest_finished(finished_quest: SideQuest, success: bool) -> void:
+	if success or finished_quest.was_accepted:
+		_note("quests", finished_quest.quest_id, 1 if success else 0)
 	if success:
 		Audio.sfx("quest_done")
 		_quests_done += 1
-		hud.announce("【主神】支线剧情完成：%s。%s" % [finished_quest.title, finished_quest._reward()])
+		hud.announce(tr("【主神】支线剧情完成：%s。%s") % [finished_quest.title, finished_quest._reward()])
 	elif finished_quest.was_accepted:
 		Audio.sfx("quest_fail")
-		hud.announce("【主神】支线剧情失败：" + finished_quest.title)
+		hud.announce(tr("【主神】支线剧情失败：") + finished_quest.title)
 	else:
-		hud.announce("错过了支线剧情：" + finished_quest.title)
+		hud.announce(tr("错过了支线剧情：") + finished_quest.title)
+
+
+## 图鉴记录：本局遇到的东西，一局结束时写进存档
+func _note(category: String, id: String, count: int) -> void:
+	_codex[category][id] = _codex[category].get(id, 0) + count
 
 
 func add_reward_points(amount: int) -> void:
@@ -354,26 +366,28 @@ func _finish_run(cleared: bool) -> String:
 		add_reward_points(int(elapsed / 60.0) * POINTS_PER_MINUTE)
 		if cleared:
 			add_reward_points(level_data.clear_reward)
+		Save.record_codex(_codex)
 		Save.record_run(level_id, reward_points, story_points, cleared, elapsed, kills, _quests_done)
-	return "支线完成 %d / %d　发现隐藏支线 %d / %d\n本局获得：奖励点 +%d　支线剧情点 +%d\n累计：奖励点 %d　支线剧情点 %d" % [
+	return tr("支线完成 %d / %d　发现隐藏支线 %d / %d\n本局获得：奖励点 +%d　支线剧情点 +%d\n累计：奖励点 %d　支线剧情点 %d") % [
 		_quests_done, _quests_seen, _hidden_found, _hidden.size(), reward_points, story_points, Save.reward_points, Save.story_points]
 
 
 func _on_boss_defeated(defeated_boss: Boss) -> void:
 	_defeated_bosses.append(defeated_boss.type_id)
+	_note("bosses", defeated_boss.type_id, 1)
 	hud.hide_boss()
 	if defeated_boss.type_id != level_data.final_boss:
 		Audio.music(level_data.music)
 	hud.announce(defeated_boss.defeat_line)
 	add_reward_points(defeated_boss.reward_points)
-	FxLayer.floating_text(defeated_boss.global_position + Vector2(0, -60), "奖励点 +%d" % defeated_boss.reward_points, Color(1.0, 0.85, 0.4))
+	FxLayer.floating_text(defeated_boss.global_position + Vector2(0, -60), tr("奖励点 +%d") % defeated_boss.reward_points, Color(1.0, 0.85, 0.4))
 	if defeated_boss.type_id == level_data.final_boss:
 		get_tree().create_timer(3.0).timeout.connect(_on_level_cleared)  # 留 3 秒看击败演出
 		return
 	var chest := Chest.new()
 	chest.player = player
 	chest.position = defeated_boss.position
-	chest.opened.connect(queue_reward.bind("宝箱！选择一项奖励"))
+	chest.opened.connect(queue_reward.bind(tr("宝箱！选择一项奖励")))
 	add_child.call_deferred(chest)
 	# 再撒一圈大经验宝石
 	for i in 5:
@@ -400,6 +414,7 @@ func queue_reward(title: String) -> void:
 
 func _on_upgrade_chosen(id: String) -> void:
 	UpgradeDB.apply(id, player)
+	_note("upgrades", id, 1)
 	hud.set_faith(player.faith)
 	_pending_rewards.pop_front()
 	if not _pending_rewards.is_empty():
@@ -420,18 +435,18 @@ func _on_level_cleared() -> void:
 		return
 	get_tree().paused = true
 	Audio.music("victory")
-	hud.show_victory(level_data.name, level_data.clear_text, elapsed, kills, player.level, _finish_run(true))
+	hud.show_victory(tr(level_data.name), tr(level_data.clear_text), elapsed, kills, player.level, _finish_run(true))
 
 
 func _on_abandon_requested() -> void:
 	get_tree().paused = true
-	hud.show_game_over(elapsed, kills, player.level, _finish_run(false), "你放弃了本局")
+	hud.show_game_over(elapsed, kills, player.level, _finish_run(false), tr("你放弃了本局"))
 
 
 func _on_player_died() -> void:
 	if player.revives > 0:
 		player.revive()
-		hud.announce("【主神】主神的眷顾：复活！")
+		hud.announce(tr("【主神】主神的眷顾：复活！"))
 		return
 	get_tree().paused = true
 	player.play_death()  # 画面定格，只有玩家播完倒地动作再结算

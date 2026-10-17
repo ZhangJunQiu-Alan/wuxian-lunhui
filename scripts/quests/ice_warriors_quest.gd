@@ -12,8 +12,8 @@ var _broken := 0
 
 
 func _init() -> void:
-	title = "冰下的战士"
-	offer_text = "【主神】支线剧情：冰湖下冻着霜巨人的战士，冰正在融化。在它们醒来之前打碎冰块"
+	title = tr("冰下的战士")
+	offer_text = tr("【主神】支线剧情：冰湖下冻着霜巨人的战士，冰正在融化。在它们醒来之前打碎冰块")
 	time_limit = 45.0
 	color = Color(0.6, 0.85, 1.0)
 
@@ -34,7 +34,7 @@ func _on_block_broken(_block: Enemy) -> void:
 
 
 func _on_update(_delta: float) -> void:
-	objective = "打碎冰块  %d / %d" % [_broken, COUNT]
+	objective = tr("打碎冰块  %d / %d") % [_broken, COUNT]
 
 
 func _on_end() -> void:
@@ -46,8 +46,8 @@ func _on_end() -> void:
 
 func _reward() -> String:
 	game.add_reward_points(100)
-	game.queue_reward("冰下的宝藏！选择一项奖励")
-	return "奖励点 +100，额外一次升级"
+	game.queue_reward(tr("冰下的宝藏！选择一项奖励"))
+	return tr("奖励点 +100，额外一次升级")
 
 
 func _active_targets() -> Array[Vector2]:

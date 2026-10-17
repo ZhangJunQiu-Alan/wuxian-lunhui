@@ -16,9 +16,9 @@ var _wave_timer := 1.0
 
 
 func _init() -> void:
-	title = "遗落的鱼竿"
-	offer_text = "【主神】发现隐藏支线：遗落的鱼竿。守在冰洞旁，看看能钓上什么"
-	hint_text = "【主神】冰湖的冰面下，似乎有什么东西在动"
+	title = tr("遗落的鱼竿")
+	offer_text = tr("【主神】发现隐藏支线：遗落的鱼竿。守在冰洞旁，看看能钓上什么")
+	hint_text = tr("【主神】冰湖的冰面下，似乎有什么东西在动")
 	time_limit = 50.0
 	color = Color(0.5, 0.85, 0.95)
 	is_hidden = true
@@ -36,7 +36,7 @@ func _on_update(delta: float) -> void:
 		_wave_timer = WAVE_EVERY
 		for i in WAVE.size():
 			game.spawn_enemy(WAVE[i], Game.clamp_to_map(marker_pos + Vector2.from_angle(TAU * i / WAVE.size() + _time) * 340.0, 40.0))
-	objective = "守在冰洞旁  %d / %d 秒" % [int(_held), int(HOLD_TIME)]
+	objective = tr("守在冰洞旁  %d / %d 秒") % [int(_held), int(HOLD_TIME)]
 	if _held >= HOLD_TIME:
 		complete(true)
 
@@ -54,16 +54,16 @@ func _reward() -> String:
 		"fish":
 			player.heal(player.max_hp)
 			game.add_reward_points(50)
-			return "钓上来一条冻僵的大鱼！生命全部恢复，奖励点 +50"
+			return tr("钓上来一条冻僵的大鱼！生命全部恢复，奖励点 +50")
 		"purse":
 			game.add_reward_points(150)
-			return "钓上来一个沉在湖底的钱袋！奖励点 +150"
+			return tr("钓上来一个沉在湖底的钱袋！奖励点 +150")
 		"chest":
-			game.queue_reward("冰封的宝箱！选择一项奖励")
-			return "钓上来一只冰封的宝箱！额外一次升级"
+			game.queue_reward(tr("冰封的宝箱！选择一项奖励"))
+			return tr("钓上来一只冰封的宝箱！额外一次升级")
 	game.add_story_points(1)
 	game.add_reward_points(50)
-	return "钓上来一片尘世巨蟒的鳞片！支线剧情点 +1，奖励点 +50"
+	return tr("钓上来一片尘世巨蟒的鳞片！支线剧情点 +1，奖励点 +50")
 
 
 func _active_targets() -> Array[Vector2]:

@@ -17,8 +17,8 @@ var _wave_timer := 0.0
 
 
 func _init() -> void:
-	title = "死者的指甲"
-	offer_text = "【主神】支线剧情：亡者之船正在用死人的指甲建造。去墓丘收集尸鬼的指甲"
+	title = tr("死者的指甲")
+	offer_text = tr("【主神】支线剧情：亡者之船正在用死人的指甲建造。去墓丘收集尸鬼的指甲")
 	time_limit = 50.0
 	color = Color(0.8, 0.85, 0.7)
 
@@ -47,7 +47,7 @@ func _on_update(delta: float) -> void:
 		_wave_timer = WAVE_EVERY
 		for i in WAVE_SIZE:  # 尸鬼从墓丘里爬出来
 			game.spawn_enemy("draugr", Game.clamp_to_map(marker_pos + Vector2.from_angle(TAU * i / WAVE_SIZE + _time) * 280.0, 40.0))
-	objective = "收集指甲  %d / %d" % [mini(_got, GOAL), GOAL]
+	objective = tr("收集指甲  %d / %d") % [mini(_got, GOAL), GOAL]
 	if _got >= GOAL:
 		complete(true)
 
@@ -60,7 +60,7 @@ func _on_end() -> void:
 func _reward() -> String:
 	game.add_reward_points(80)
 	game.add_story_points(1)
-	return "支线剧情点 +1，奖励点 +80。纳吉尔法尔的完工又推迟了一点"
+	return tr("支线剧情点 +1，奖励点 +80。纳吉尔法尔的完工又推迟了一点")
 
 
 func _active_targets() -> Array[Vector2]:

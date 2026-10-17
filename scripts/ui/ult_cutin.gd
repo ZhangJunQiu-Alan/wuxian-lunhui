@@ -53,9 +53,9 @@ func _make_label(pos: Vector2, font_size: int, color: Color) -> Label:
 func play(character_id: String) -> void:
 	var data: Dictionary = CharacterDB.ALL[character_id]
 	_accent = data.cutin_color
-	_moment.text = "%s\n%s" % [data.name, data.cutin_moment]
-	_line.text = data.cutin_line
-	_ult_name.text = data.ult_name
+	_moment.text = "%s\n%s" % [tr(data.name), tr(data.cutin_moment)]
+	_line.text = tr(data.cutin_line)
+	_ult_name.text = tr(data.ult_name)
 	_ult_name.modulate = _accent.lightened(0.3)
 
 	var path: String = CharacterDB.CUTIN_DIR + character_id + "_cutin.png"

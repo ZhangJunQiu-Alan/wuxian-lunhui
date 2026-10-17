@@ -15,9 +15,9 @@ var _escape := Vector2.ZERO
 
 
 func _init() -> void:
-	title = "冰海来客"
-	offer_text = "【主神】发现隐藏支线：冰海来客。别让霜巨人逃回冰海"
-	hint_text = "【主神】码头的冰面上，有一串不属于人类的脚印"
+	title = tr("冰海来客")
+	offer_text = tr("【主神】发现隐藏支线：冰海来客。别让霜巨人逃回冰海")
+	hint_text = tr("【主神】码头的冰面上，有一串不属于人类的脚印")
 	time_limit = 90.0
 	color = Color(0.6, 0.75, 1.0)
 	is_hidden = true
@@ -40,10 +40,10 @@ func _on_update(_delta: float) -> void:
 	if not is_instance_valid(_giant):
 		return
 	var left := _giant.global_position.distance_to(_escape)
-	objective = "击杀霜巨人  离冰海还有 %d 米" % ceili(left / 20.0)
+	objective = tr("击杀霜巨人  离冰海还有 %d 米") % ceili(left / 20.0)
 	if left < ESCAPE_REACH:
 		FxLayer.burst(_giant.global_position, color, 20, 160.0)
-		FxLayer.floating_text(_giant.global_position + Vector2(0, -50), "霜巨人逃回了冰海", color)
+		FxLayer.floating_text(_giant.global_position + Vector2(0, -50), tr("霜巨人逃回了冰海"), color)
 		game.despawn_enemy(_giant)
 		_giant = null
 		complete(false)
@@ -53,7 +53,7 @@ func _on_giant_killed(giant: Enemy) -> void:
 	var chest := Chest.new()
 	chest.player = player
 	chest.position = giant.position
-	chest.opened.connect(game.queue_reward.bind("霜巨人的战利品！选择一项奖励"))
+	chest.opened.connect(game.queue_reward.bind(tr("霜巨人的战利品！选择一项奖励")))
 	game.add_child.call_deferred(chest)
 	_giant = null
 	complete(true)
@@ -67,7 +67,7 @@ func _on_end() -> void:
 func _reward() -> String:
 	game.add_reward_points(80)
 	game.add_story_points(1)
-	return "支线剧情点 +1，奖励点 +80，霜巨人的战利品（宝箱）"
+	return tr("支线剧情点 +1，奖励点 +80，霜巨人的战利品（宝箱）")
 
 
 func _active_targets() -> Array[Vector2]:

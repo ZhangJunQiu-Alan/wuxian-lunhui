@@ -36,12 +36,12 @@ var _crack_strip: Texture2D
 
 
 func _init() -> void:
-	intro_line = "尼德霍格 · 噬根之龙 —— 世界树在颤抖"
-	defeat_line = "「世界树……终究……会枯萎……」"
+	intro_line = tr("尼德霍格 · 噬根之龙 —— 世界树在颤抖")
+	defeat_line = tr("「世界树……终究……会枯萎……」")
 
 
 func init_stats(hp_scale: float) -> void:
-	setup_boss("nidhogg", "尼德霍格", "噬根之龙", 1100.0, hp_scale, 44.0, 95.0, 20.0)
+	setup_boss("nidhogg", tr("尼德霍格"), tr("噬根之龙"), 1100.0, hp_scale, 44.0, 95.0, 20.0)
 	gait = "heavy"
 	color = Color(0.2, 0.28, 0.2)
 	reward_points = 150
@@ -138,7 +138,7 @@ func take_damage(amount: float, knockback: Vector2 = Vector2.ZERO, crit: bool = 
 		_gnaw_damage += amount
 		if _gnaw_damage >= max_hp * GNAW_BREAK:  # 打断啃食
 			_gnaw_timer = GNAW_EVERY
-			FxLayer.floating_text(global_position + Vector2(0, -radius - 20), "打断！", Color(1.0, 0.85, 0.4))
+			FxLayer.floating_text(global_position + Vector2(0, -radius - 20), tr("打断！"), Color(1.0, 0.85, 0.4))
 			Audio.sfx("boss_block")
 			change_state("stagger")
 

@@ -49,7 +49,7 @@ func _ready() -> void:
 	box.add_child(_reroll)
 
 	var hint := Label.new()
-	hint.text = "点击卡牌或按数字键选择"
+	hint.text = tr("点击卡牌或按数字键选择")
 	hint.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
 	hint.modulate = Color(1, 1, 1, 0.5)
 	box.add_child(hint)
@@ -58,10 +58,10 @@ func _ready() -> void:
 func open(ids: Array[String], player: Player, title: String = "") -> void:
 	_ids = ids
 	if title == "":
-		title = "选择你的第一份信仰" if player.faith.is_empty() else "升级！等级 %d" % player.level
+		title = tr("选择你的第一份信仰") if player.faith.is_empty() else tr("升级！等级 %d") % player.level
 	_title.text = title
 	_reroll.visible = player.rerolls > 0
-	_reroll.text = "重抽选项（剩余 %d 次）  [R]" % player.rerolls
+	_reroll.text = tr("重抽选项（剩余 %d 次）  [R]") % player.rerolls
 	for child in _cards.get_children():
 		child.queue_free()
 	for i in ids.size():
@@ -93,15 +93,15 @@ func _make_card(index: int, id: String, player: Player) -> Button:
 	var info := UpgradeDB.get_info(id)
 	var is_awaken: bool = info.get("awaken", false)
 	var color := NEUTRAL_COLOR
-	var tag := "通用属性"
+	var tag := tr("通用属性")
 	match info.kind:
 		"god":
 			var god: Dictionary = Gods.ALL[info.god]
 			color = god.color
-			tag = "神明 · %s · %s" % [god.name, god.title]
+			tag = tr("神明 · %s · %s") % [tr(god.name), tr(god.title)]
 		"weapon":
 			color = Color(0.85, 0.92, 1.0)
-			tag = "基础武器 · " + CharacterDB.ALL[player.character_id].weapon
+			tag = tr("基础武器 · ") + tr(CharacterDB.ALL[player.character_id].weapon)
 
 	var card := Button.new()
 	card.custom_minimum_size = CARD_SIZE
@@ -123,8 +123,8 @@ func _make_card(index: int, id: String, player: Player) -> Button:
 	card.add_child(box)
 
 	_add_line(box, "[%d]  %s" % [index + 1, tag], 15, color)
-	_add_line(box, info.name, 26, Color.WHITE if not is_awaken else color)
-	_add_line(box, info.desc, 17, Color(0.85, 0.87, 0.92))
+	_add_line(box, tr(info.name), 26, Color.WHITE if not is_awaken else color)
+	_add_line(box, tr(info.desc), 17, Color(0.85, 0.87, 0.92))
 
 	var spacer := Control.new()
 	spacer.size_flags_vertical = Control.SIZE_EXPAND_FILL
@@ -133,21 +133,21 @@ func _make_card(index: int, id: String, player: Player) -> Button:
 
 	var current: int = player.upgrade_levels.get(id, 0)
 	if is_awaken:
-		_add_line(box, "★ 神之觉醒 ★", 16, color)
+		_add_line(box, tr("★ 神之觉醒 ★"), 16, color)
 	elif info.god != "":
 		var next := mini(player.faith.get(info.god, 0) + 1, UpgradeDB.FAITH_MAX)
-		_add_line(box, "信仰 %s %d/%d" % [faith_bar(next), next, UpgradeDB.FAITH_MAX], 15, color)
+		_add_line(box, tr("信仰 %s %d/%d") % [faith_bar(next), next, UpgradeDB.FAITH_MAX], 15, color)
 	if info.max > 1:
-		_add_line(box, "等级 %d → %d / %d" % [current, current + 1, info.max], 14, Color(1, 1, 1, 0.6))
+		_add_line(box, tr("等级 %d → %d / %d") % [current, current + 1, info.max], 14, Color(1, 1, 1, 0.6))
 	elif current == 0 and info.get("skill", false):
-		_add_line(box, "新技能", 14, Color(1, 1, 1, 0.6))
+		_add_line(box, tr("新技能"), 14, Color(1, 1, 1, 0.6))
 	return card
 
 
 func _add_line(parent: Control, text: String, font_size: int, color: Color) -> void:
 	var label := Label.new()
 	label.text = text
-	label.autowrap_mode = TextServer.AUTOWRAP_ARBITRARY  # 中文按字换行
+	label.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART  # 中文按字、英文按词换行
 	label.add_theme_font_size_override("font_size", font_size)
 	label.modulate = color
 	label.mouse_filter = Control.MOUSE_FILTER_IGNORE

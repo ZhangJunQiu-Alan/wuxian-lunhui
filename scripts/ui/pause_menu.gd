@@ -39,9 +39,9 @@ func _ready() -> void:
 	var build_box := VBoxContainer.new()
 	build_box.custom_minimum_size = Vector2(420, 0)
 	row.add_child(build_box)
-	build_box.add_child(_label("本局构筑", 22, GOLD))
+	build_box.add_child(_label(tr("本局构筑"), 22, GOLD))
 	_build_label = _label("", 15, Color.WHITE)
-	_build_label.autowrap_mode = TextServer.AUTOWRAP_ARBITRARY
+	_build_label.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
 	build_box.add_child(_build_label)
 
 	# 右：按钮
@@ -49,13 +49,14 @@ func _ready() -> void:
 	buttons.add_theme_constant_override("separation", 14)
 	buttons.alignment = BoxContainer.ALIGNMENT_CENTER
 	row.add_child(buttons)
-	buttons.add_child(_label("暂停", 36, Color.WHITE))
-	buttons.add_child(_button("继续游戏  [Esc]", close))
-	buttons.add_child(_button("设置", _open_settings))
-	_abandon = _button("放弃本局", _on_abandon_pressed)
+	buttons.add_child(_label(tr("暂停"), 36, Color.WHITE))
+	buttons.add_child(_button(tr("继续游戏  [Esc]"), close))
+	buttons.add_child(_button(tr("设置"), _open_settings))
+	_abandon = _button(tr("放弃本局"), _on_abandon_pressed)
 	buttons.add_child(_abandon)
 
 	_settings = SettingsPanel.new()
+	_settings.allow_language = false
 	add_child(_settings)
 
 
@@ -85,7 +86,7 @@ func open() -> void:
 	Audio.sfx("ui_open")
 	get_tree().paused = true
 	_abandon_armed = false
-	_abandon.text = "放弃本局"
+	_abandon.text = tr("放弃本局")
 	_build_label.text = _build_text()
 	_root.visible = true
 
@@ -103,7 +104,7 @@ func _open_settings() -> void:
 func _on_abandon_pressed() -> void:
 	if not _abandon_armed:
 		_abandon_armed = true
-		_abandon.text = "确定放弃？（已获得的奖励点会保留）"
+		_abandon.text = tr("确定放弃？（已获得的奖励点会保留）")
 		return
 	_root.visible = false
 	abandon_requested.emit()
@@ -112,25 +113,25 @@ func _on_abandon_pressed() -> void:
 func _build_text() -> String:
 	var p := game.player
 	var lines: Array[String] = []
-	lines.append("%s · %s　等级 %d" % [p.data.name, p.data.title, p.level])
-	lines.append("用时 %02d:%02d　击杀 %d　生命 %d / %d" % [int(game.elapsed) / 60, int(game.elapsed) % 60, game.kills, ceili(p.hp), int(p.max_hp)])
+	lines.append(tr("%s · %s　等级 %d") % [tr(p.data.name), tr(p.data.title), p.level])
+	lines.append(tr("用时 %02d:%02d　击杀 %d　生命 %d / %d") % [int(game.elapsed) / 60, int(game.elapsed) % 60, game.kills, ceili(p.hp), int(p.max_hp)])
 	if not p.faith.is_empty():
 		var faiths: Array[String] = []
 		for god_id: String in p.faith:
-			faiths.append("%s %s" % [Gods.ALL[god_id].name, LevelUpPanel.faith_bar(p.faith[god_id])])
-		lines.append("信仰　" + "　".join(faiths))
+			faiths.append("%s %s" % [tr(Gods.ALL[god_id].name), LevelUpPanel.faith_bar(p.faith[god_id])])
+		lines.append(tr("信仰　") + tr("　").join(faiths))
 	lines.append("")
-	for kind in [["weapon", "基础武器"], ["god", "神明"], ["stat", "通用属性"]]:
+	for kind in [["weapon", tr("基础武器")], ["god", tr("神明")], ["stat", tr("通用属性")]]:
 		var names: Array[String] = []
 		for id: String in p.upgrade_levels:
 			var info := UpgradeDB.get_info(id)
 			if info.kind == kind[0]:
 				var lv: int = p.upgrade_levels[id]
-				names.append(info.name + ("" if info.max <= 1 else " Lv%d" % lv))
+				names.append(tr(info.name) + ("" if info.max <= 1 else " Lv%d" % lv))
 		if not names.is_empty():
-			lines.append("%s：%s" % [kind[1], "、".join(names)])
+			lines.append(tr("%s：%s") % [kind[1], tr("、").join(names)])
 	if p.upgrade_levels.is_empty():
-		lines.append("还没有选择任何强化")
+		lines.append(tr("还没有选择任何强化"))
 	return "\n".join(lines)
 
 

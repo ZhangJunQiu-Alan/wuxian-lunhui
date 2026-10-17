@@ -69,7 +69,7 @@ func _physics_process(delta: float) -> void:
 			_warned = true
 			var game := get_tree().current_scene
 			if game.get("hud"):
-				game.hud.announce("冥雾：站在雾里会持续掉血，但敌人在雾里会变慢")
+				game.hud.announce(tr("冥雾：站在雾里会持续掉血，但敌人在雾里会变慢"))
 	queue_redraw()
 
 

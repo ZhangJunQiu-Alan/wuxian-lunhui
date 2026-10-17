@@ -128,7 +128,7 @@ func _ready() -> void:
 	# 右侧：支线任务面板
 	_quest_box = VBoxContainer.new()
 	_quest_box.set_anchors_and_offsets_preset(Control.PRESET_TOP_RIGHT)
-	_quest_box.offset_left = -300
+	_quest_box.offset_left = -356
 	_quest_box.offset_right = -16
 	_quest_box.offset_top = 250
 	_quest_box.visible = false
@@ -149,6 +149,7 @@ func _ready() -> void:
 	_clue_label.vertical_alignment = VERTICAL_ALIGNMENT_BOTTOM
 	for label: Label in _quest_rows[0] + _quest_rows[1] + [_clue_label]:
 		label.horizontal_alignment = HORIZONTAL_ALIGNMENT_RIGHT
+		label.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART  # 文字长时换行，不伸出屏幕
 		label.add_theme_constant_override("outline_size", 4)
 		label.add_theme_color_override("font_outline_color", Color(0, 0, 0, 0.8))
 		_quest_box.add_child(label)
@@ -178,7 +179,7 @@ func set_hp(hp: float, max_hp: float) -> void:
 func set_xp(xp: float, xp_to_next: int, level: int) -> void:
 	_xp_bar.max_value = xp_to_next
 	_xp_bar.value = xp
-	_level_label.text = "%s  等级 %d" % [CharacterDB.ALL[character_id].name, level]
+	_level_label.text = tr("%s  等级 %d") % [tr(CharacterDB.ALL[character_id].name), level]
 
 
 func set_ult(energy: float, cost: float) -> void:
@@ -186,8 +187,8 @@ func set_ult(energy: float, cost: float) -> void:
 	_ult_bar.value = energy
 	var is_full := energy >= cost
 	_ult_bar.modulate = Color(1.0, 0.85, 0.3) if is_full else Color(0.55, 0.65, 1.0)
-	var ult_name: String = CharacterDB.ALL[character_id].ult_name
-	_ult_label.text = (ult_name + " 已就绪  [E]") if is_full else ult_name
+	var ult_name: String = tr(CharacterDB.ALL[character_id].ult_name)
+	_ult_label.text = (ult_name + tr(" 已就绪  [E]")) if is_full else ult_name
 	_ult_label.modulate = Color(1.0, 0.85, 0.3) if is_full else Color(1, 1, 1, 0.6)
 
 
@@ -221,17 +222,17 @@ func show_quests(quests: Array[SideQuest], clues: Array[String]) -> void:
 		if i >= quests.size():
 			continue
 		var quest := quests[i]
-		row[0].text = ("隐藏支线 · " if quest.is_hidden else "支线剧情 · ") + quest.title
+		row[0].text = (tr("隐藏支线 · ") if quest.is_hidden else tr("支线剧情 · ")) + quest.title
 		row[0].modulate = quest.color
 		row[1].text = quest.objective
 		if quest.state == "active":
-			row[2].text = "剩余 %d 秒" % ceili(quest.time_left)
+			row[2].text = tr("剩余 %d 秒") % ceili(quest.time_left)
 		else:
-			row[2].text = "标记 %d 秒后消失" % ceili(quest._offer_left)
+			row[2].text = tr("标记 %d 秒后消失") % ceili(quest._offer_left)
 		for target in quest.pointer_targets():
 			_pointer.targets.append([target, quest.color])
 	_clue_label.visible = not clues.is_empty()
-	_clue_label.text = "\n".join(clues.map(func(clue: String) -> String: return "线索：" + clue))
+	_clue_label.text = "\n".join(clues.map(func(clue: String) -> String: return tr("线索：") + clue))
 
 
 func hide_quest() -> void:
@@ -260,7 +261,7 @@ func set_faith(faith: Dictionary) -> void:
 	for god_id: String in faith:
 		var god: Dictionary = Gods.ALL[god_id]
 		var label := Label.new()
-		label.text = "%s %s" % [god.name, LevelUpPanel.faith_bar(faith[god_id])]
+		label.text = "%s %s" % [tr(god.name), LevelUpPanel.faith_bar(faith[god_id])]
 		label.modulate = god.color
 		_faith_box.add_child(label)
 
@@ -268,7 +269,7 @@ func set_faith(faith: Dictionary) -> void:
 func set_stats(elapsed: float, kills: int) -> void:
 	_time_label.text = "%02d:%02d" % [int(elapsed) / 60, int(elapsed) % 60]
 	_time_label.offset_left = -_time_label.size.x / 2.0
-	_kills_label.text = "击杀 %d" % kills
+	_kills_label.text = tr("击杀 %d") % kills
 
 
 func _process(_delta: float) -> void:
@@ -278,13 +279,13 @@ func _process(_delta: float) -> void:
 
 
 func show_game_over(elapsed: float, kills: int, level: int, rewards: String, title: String = "你死了") -> void:
-	_result_label.text = title + "\n\n" + _stats_text(elapsed, kills, level) + "\n" + rewards
+	_result_label.text = tr(title) + "\n\n" + _stats_text(elapsed, kills, level) + "\n" + rewards
 	hide_quest()
 	_game_over.visible = true
 
 
 func show_victory(level_name: String, story: String, elapsed: float, kills: int, level: int, rewards: String) -> void:
-	_result_label.text = "主线任务完成 · %s\n\n%s\n%s\n\n%s" % [level_name, _stats_text(elapsed, kills, level), rewards, story]
+	_result_label.text = tr("主线任务完成 · %s\n\n%s\n%s\n\n%s") % [level_name, _stats_text(elapsed, kills, level), rewards, story]
 	hide_quest()
 	_result_label.modulate = Color(1.0, 0.88, 0.55)
 	hide_boss()
@@ -292,7 +293,7 @@ func show_victory(level_name: String, story: String, elapsed: float, kills: int,
 
 
 func _stats_text(elapsed: float, kills: int, level: int) -> String:
-	return "用时 %02d:%02d　等级 %d　击杀 %d" % [int(elapsed) / 60, int(elapsed) % 60, level, kills]
+	return tr("用时 %02d:%02d　等级 %d　击杀 %d") % [int(elapsed) / 60, int(elapsed) % 60, level, kills]
 
 
 func _build_game_over() -> void:
@@ -320,12 +321,12 @@ func _build_game_over() -> void:
 	buttons.add_theme_constant_override("separation", 24)
 	box.add_child(buttons)
 	var restart := Button.new()
-	restart.text = "再来一次"
+	restart.text = tr("再来一次")
 	restart.custom_minimum_size = Vector2(180, 44)
 	restart.pressed.connect(_on_restart_pressed)
 	buttons.add_child(restart)
 	var hub := Button.new()
-	hub.text = "返回主神空间"
+	hub.text = tr("返回主神空间")
 	hub.custom_minimum_size = Vector2(180, 44)
 	hub.pressed.connect(_on_hub_pressed)
 	buttons.add_child(hub)

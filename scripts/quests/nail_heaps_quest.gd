@@ -10,8 +10,8 @@ var _heaps: Array[Enemy] = []
 
 
 func _init() -> void:
-	title = "指甲堆"
-	offer_text = "【主神】支线剧情：亡者在工坊里用指甲造船。烧掉那些指甲堆"
+	title = tr("指甲堆")
+	offer_text = tr("【主神】支线剧情：亡者在工坊里用指甲造船。烧掉那些指甲堆")
 	time_limit = 90.0
 	color = Color(0.85, 0.6, 0.3)
 
@@ -32,7 +32,7 @@ func _on_heap_burned(_e: Enemy, heap: Enemy) -> void:
 
 
 func _on_update(_delta: float) -> void:
-	objective = "烧掉指甲堆  %d / %d" % [HEAPS - _heaps.size(), HEAPS]
+	objective = tr("烧掉指甲堆  %d / %d") % [HEAPS - _heaps.size(), HEAPS]
 	if _heaps.is_empty():
 		complete(true)
 
@@ -46,7 +46,7 @@ func _on_end() -> void:
 func _reward() -> String:
 	game.add_reward_points(60)
 	game.boss_tweaks["hel"] = {"barrage_mult": 0.7}
-	return "奖励点 +60，海拉的指甲弹幕减少 30%"
+	return tr("奖励点 +60，海拉的指甲弹幕减少 30%")
 
 
 func _active_targets() -> Array[Vector2]:

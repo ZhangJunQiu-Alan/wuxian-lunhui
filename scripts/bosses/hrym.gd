@@ -29,12 +29,12 @@ var _gaps: Array[float] = []     # 下一圈冲击波的缺口角度，预警时
 
 
 func _init() -> void:
-	intro_line = "赫列姆 · 霜巨人之王 —— 他从冰封的海上走来"
-	defeat_line = "「无所谓……纳吉尔法尔……已经起航了……」"
+	intro_line = tr("赫列姆 · 霜巨人之王 —— 他从冰封的海上走来")
+	defeat_line = tr("「无所谓……纳吉尔法尔……已经起航了……」")
 
 
 func init_stats(hp_scale: float) -> void:
-	setup_boss("hrym", "赫列姆", "霜巨人之王", 750.0, hp_scale, 46.0, 75.0, 25.0)
+	setup_boss("hrym", tr("赫列姆"), tr("霜巨人之王"), 750.0, hp_scale, 46.0, 75.0, 25.0)
 	gait = "heavy"
 	color = Color(0.45, 0.58, 0.85)
 	state_actions = {"shield": &"shield"}
@@ -117,7 +117,7 @@ func _stomp() -> void:
 
 func _summon_guards() -> void:
 	target.shake(8.0, 0.4)
-	FxLayer.floating_text(global_position + Vector2(0, -radius - 20), "霜巨人卫队！", FROST_COLOR)
+	FxLayer.floating_text(global_position + Vector2(0, -radius - 20), tr("霜巨人卫队！"), FROST_COLOR)
 	for i in GUARDS:
 		spawner.call("frost_giant", global_position + Vector2.from_angle(TAU * i / GUARDS) * (radius + 60.0))
 
@@ -128,7 +128,7 @@ func take_damage(amount: float, knockback: Vector2 = Vector2.ZERO, crit: bool = 
 		_flash_time = 0.05
 		Audio.sfx("boss_block", -4.0)
 		if randf() < 0.3:  # 不用每次都飘字，避免刷屏
-			FxLayer.floating_text(global_position + _facing * radius, "格挡", FROST_COLOR)
+			FxLayer.floating_text(global_position + _facing * radius, tr("格挡"), FROST_COLOR)
 		return
 	super.take_damage(amount, knockback, crit)
 

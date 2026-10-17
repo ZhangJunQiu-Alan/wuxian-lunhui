@@ -1,11 +1,12 @@
 extends Control
-## 主神空间：局外大厅。选择轮回者（角色）、选择关卡、用奖励点购买永久强化、查看战绩、进入篇章
+## 主神空间：局外大厅。选择轮回者（角色）、选择关卡、用奖励点购买永久强化、看图鉴、查看战绩、进入篇章
 
 const BG := Color(0.045, 0.05, 0.075)
 const GOLD := Color(1.0, 0.85, 0.4)
 const DIM := Color(0.7, 0.73, 0.8)
 const CARD_SIZE := Vector2(380, 104)
 const BATTLE_SCENE := "res://scenes/main.tscn"
+const TITLE_SCENE := "res://scenes/title.tscn"
 
 var _points_label: Label
 var _story_label: Label
@@ -17,6 +18,7 @@ var _subtitle: Label
 var _start: Button
 var _settings: SettingsPanel
 var _time := 0.0
+static var _reopen_settings := false  # 切换语言后重建界面，再把设置面板打开
 
 
 func _ready() -> void:
@@ -37,7 +39,7 @@ func _ready() -> void:
 	root.add_child(header)
 	var title_box := VBoxContainer.new()
 	header.add_child(title_box)
-	title_box.add_child(_label("主神空间", 40, GOLD))
+	title_box.add_child(_label(tr("主神空间"), 40, GOLD))
 	_subtitle = _label("", 16, DIM)
 	title_box.add_child(_subtitle)
 	var spacer := Control.new()
@@ -50,34 +52,38 @@ func _ready() -> void:
 	money.add_child(_points_label)
 	money.add_child(_story_label)
 
-	# ---- 中间：三个分页「轮回者」「关卡」「永久强化」 ----
+	# ---- 中间：四个分页「轮回者」「关卡」「永久强化」「图鉴」 ----
 	var tabs := TabContainer.new()
 	tabs.size_flags_vertical = Control.SIZE_EXPAND_FILL
 	tabs.add_theme_stylebox_override("panel", StyleBoxEmpty.new())
 	root.add_child(tabs)
 
 	var chars := HBoxContainer.new()
-	chars.name = "轮回者"
+	chars.name = tr("轮回者")
 	chars.add_theme_constant_override("separation", 16)
 	tabs.add_child(chars)
 	for id: String in CharacterDB.ALL:
 		chars.add_child(_make_character_card(id))
 
 	var levels := HBoxContainer.new()
-	levels.name = "关卡"
+	levels.name = tr("关卡")
 	levels.add_theme_constant_override("separation", 16)
 	tabs.add_child(levels)
 	for i in LevelDB.ORDER.size():
 		levels.add_child(_make_level_card(LevelDB.ORDER[i], i))
 
 	var grid := GridContainer.new()
-	grid.name = "永久强化"
+	grid.name = tr("永久强化")
 	grid.columns = 3
 	grid.add_theme_constant_override("h_separation", 16)
 	grid.add_theme_constant_override("v_separation", 14)
 	tabs.add_child(grid)
 	for id: String in MetaDB.UPGRADES:
 		grid.add_child(_make_card(id))
+
+	var codex := CodexView.new()
+	codex.name = tr("图鉴")
+	tabs.add_child(codex)
 
 	# ---- 底部：战绩 + 进入篇章 ----
 	var footer := HBoxContainer.new()
@@ -89,10 +95,11 @@ func _ready() -> void:
 	var links := HBoxContainer.new()
 	links.add_theme_constant_override("separation", 4)
 	left.add_child(links)
-	links.add_child(_link_button("设置  [Esc]", func() -> void: _settings.open()))
-	links.add_child(_link_button("退出游戏", func() -> void: get_tree().quit()))
+	links.add_child(_link_button(tr("设置  [Esc]"), func() -> void: _settings.open()))
+	links.add_child(_link_button(tr("返回标题"), func() -> void: get_tree().change_scene_to_file(TITLE_SCENE)))
+	links.add_child(_link_button(tr("退出游戏"), func() -> void: get_tree().quit()))
 	var reset := Button.new()
-	reset.text = "重置存档"
+	reset.text = tr("重置存档")
 	reset.flat = true
 	reset.focus_mode = Control.FOCUS_NONE
 	reset.modulate = Color(1, 1, 1, 0.45)
@@ -115,6 +122,12 @@ func _ready() -> void:
 
 	_settings = SettingsPanel.new()
 	add_child(_settings)
+	Settings.language_changed.connect(func() -> void:
+		_reopen_settings = true
+		get_tree().reload_current_scene())
+	if _reopen_settings:
+		_reopen_settings = false
+		_settings.open()
 
 	_refresh()
 
@@ -175,11 +188,11 @@ func _make_character_card(id: String) -> Control:
 	dim.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	portrait.add_child(dim)
 
-	box.add_child(_label(info.name, 22, info.color))
-	box.add_child(_label(info.title, 13, DIM))
-	for line in [["武器", info.weapon, info.weapon_desc], ["被动", info.passive, info.passive_desc], ["大招", info.ult_name, info.ult_desc]]:
+	box.add_child(_label(tr(info.name), 22, info.color))
+	box.add_child(_label(tr(info.title), 13, DIM))
+	for line in [[tr("武器"), tr(info.weapon), tr(info.weapon_desc)], [tr("被动"), tr(info.passive), tr(info.passive_desc)], [tr("大招"), tr(info.ult_name), tr(info.ult_desc)]]:
 		var label := _label("%s · %s\n%s" % line, 13, Color(0.85, 0.87, 0.92))
-		label.autowrap_mode = TextServer.AUTOWRAP_ARBITRARY
+		label.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
 		label.custom_minimum_size = Vector2(240, 0)
 		box.add_child(label)
 
@@ -206,7 +219,7 @@ func _draw_portrait(canvas: Control, id: String) -> void:
 	var custom: String = ProjectSettings.get_setting("gui/theme/custom_font", "")
 	if custom != "":
 		font = load(custom)
-	var glyph: String = info.name.substr(0, 1)
+	var glyph: String = tr(info.name).substr(0, 1)
 	var glyph_size := 56
 	var w := font.get_string_size(glyph, HORIZONTAL_ALIGNMENT_LEFT, -1, glyph_size).x
 	canvas.draw_string(font, Vector2(rect.get_center().x - w / 2.0, rect.size.y * 0.78), glyph, HORIZONTAL_ALIGNMENT_LEFT, -1, glyph_size, Color(info.color, 0.85))
@@ -229,10 +242,10 @@ func _make_level_card(id: String, index: int) -> Control:
 	var box := VBoxContainer.new()
 	box.add_theme_constant_override("separation", 6)
 	panel.add_child(box)
-	box.add_child(_label("第 %d 关" % (index + 1), 14, DIM))
-	box.add_child(_label(LevelDB.NAMES[id], 26, GOLD))
-	box.add_child(_label(LevelDB.PLACES[id], 14, DIM))
-	box.add_child(_label("Boss：" + LevelDB.BOSS_NAMES[id], 13, Color(0.85, 0.87, 0.92)))
+	box.add_child(_label(tr("第 %d 关") % (index + 1), 14, DIM))
+	box.add_child(_label(tr(LevelDB.NAMES[id]), 26, GOLD))
+	box.add_child(_label(tr(LevelDB.PLACES[id]), 14, DIM))
+	box.add_child(_label(tr("Boss：") + tr(LevelDB.BOSS_NAMES[id]), 13, Color(0.85, 0.87, 0.92)))
 	var fill := Control.new()
 	fill.size_flags_vertical = Control.SIZE_EXPAND_FILL
 	box.add_child(fill)
@@ -260,8 +273,8 @@ func _make_card(id: String) -> Control:
 	text.size_flags_horizontal = Control.SIZE_EXPAND_FILL
 	text.add_theme_constant_override("separation", 4)
 	row.add_child(text)
-	text.add_child(_label(info.name, 18, Color.WHITE))
-	text.add_child(_label(info.desc, 13, DIM))
+	text.add_child(_label(tr(info.name), 18, Color.WHITE))
+	text.add_child(_label(tr(info.desc), 13, DIM))
 	var level := _label("", 14, GOLD)
 	text.add_child(level)
 
@@ -286,21 +299,21 @@ func _buy(id: String) -> void:
 func _refresh() -> void:
 	var selected := CharacterDB.selected()
 	var selected_info: Dictionary = CharacterDB.ALL[selected]
-	_subtitle.text = "轮回者：%s · %s" % [selected_info.name, selected_info.title]
+	_subtitle.text = tr("轮回者：%s · %s") % [tr(selected_info.name), tr(selected_info.title)]
 	var level := LevelDB.selected()
-	_start.text = "以 %s 进入%s\n第 %d 关 · %s    [Enter]" % [selected_info.name, LevelDB.CHAPTER, LevelDB.ORDER.find(level) + 1, LevelDB.NAMES[level]]
+	_start.text = tr("以 %s 进入%s\n第 %d 关 · %s    [Enter]") % [tr(selected_info.name), tr(LevelDB.CHAPTER), LevelDB.ORDER.find(level) + 1, tr(LevelDB.NAMES[level])]
 	for id: String in _level_cards:
 		var card: Dictionary = _level_cards[id]
 		var button: Button = card.button
 		var open := LevelDB.is_built(id) and LevelDB.is_unlocked(id)
 		if id == level:
-			button.text = "已选择"
+			button.text = tr("已选择")
 		elif not LevelDB.is_built(id):
-			button.text = "制作中"
+			button.text = tr("制作中")
 		elif not LevelDB.is_unlocked(id):
-			button.text = "未解锁：通关上一关"
+			button.text = tr("未解锁：通关上一关")
 		else:
-			button.text = "选择"
+			button.text = tr("选择")
 		button.disabled = id == level or not open
 		var border := GOLD if id == level else (Color(0.4, 0.43, 0.52) if open else Color(0.22, 0.24, 0.3))
 		(card.panel as PanelContainer).add_theme_stylebox_override("panel", _style(Color(0.08, 0.09, 0.13), border, 3 if id == level else 2, 12))
@@ -311,25 +324,25 @@ func _refresh() -> void:
 		var unlocked := CharacterDB.is_unlocked(id)
 		var button: Button = card.button
 		if id == selected:
-			button.text = "已选择"
+			button.text = tr("已选择")
 			button.disabled = true
 		elif unlocked:
-			button.text = "选择"
+			button.text = tr("选择")
 			button.disabled = false
 		elif info.unlock.type == "story":
-			button.text = "解锁（%d 支线剧情点）" % info.unlock.value
+			button.text = tr("解锁（%d 支线剧情点）") % info.unlock.value
 			button.disabled = Save.story_points < info.unlock.value
 		else:
-			button.text = "未解锁：" + info.unlock.text
+			button.text = tr("未解锁：") + tr(info.unlock.text)
 			button.disabled = true
 		var border: Color = info.color if id == selected else (Color(0.4, 0.43, 0.52) if unlocked else Color(0.22, 0.24, 0.3))
 		(card.panel as PanelContainer).add_theme_stylebox_override("panel", _style(Color(0.08, 0.09, 0.13), border, 3 if id == selected else 2, 12))
 		(card.dim as Control).visible = not unlocked
 
-	_points_label.text = "奖励点  %d" % Save.reward_points
-	_story_label.text = "支线剧情点  %d" % Save.story_points
+	_points_label.text = tr("奖励点  %d") % Save.reward_points
+	_story_label.text = tr("支线剧情点  %d") % Save.story_points
 	var s: Dictionary = Save.stats
-	_stats_label.text = "轮回 %d 次　通关 %d 次　最久存活 %s　最快通关 %s　累计击杀 %d" % [
+	_stats_label.text = tr("轮回 %d 次　通关 %d 次　最久存活 %s　最快通关 %s　累计击杀 %d") % [
 		s.runs, s.clears, _format_time(s.best_time), _format_time(s.best_clear_time) if s.best_clear_time > 0.0 else "—", s.total_kills]
 	for id: String in _cards:
 		var info: Dictionary = MetaDB.UPGRADES[id]
@@ -338,7 +351,7 @@ func _refresh() -> void:
 		var cost := MetaDB.cost(id, lv)
 		var card: Dictionary = _cards[id]
 		card.level.text = "■".repeat(lv) + "□".repeat(info.max - lv) + "  %d / %d" % [lv, info.max]
-		card.button.text = "已满级" if maxed else "强化\n%d 点" % cost
+		card.button.text = tr("已满级") if maxed else tr("强化\n%d 点") % cost
 		card.button.disabled = maxed or Save.reward_points < cost
 		var border := GOLD if maxed else (Color(0.55, 0.6, 0.75) if lv > 0 else Color(0.3, 0.33, 0.42))
 		(card.panel as PanelContainer).add_theme_stylebox_override("panel", _style(Color(0.08, 0.09, 0.13), border, 2, 12))
@@ -346,10 +359,10 @@ func _refresh() -> void:
 
 func _confirm_reset() -> void:
 	var dialog := ConfirmationDialog.new()
-	dialog.title = "重置存档"
-	dialog.dialog_text = "确定要清空所有奖励点、永久强化和战绩吗？此操作无法撤销。"
-	dialog.ok_button_text = "清空"
-	dialog.cancel_button_text = "取消"
+	dialog.title = tr("重置存档")
+	dialog.dialog_text = tr("确定要清空所有奖励点、永久强化和战绩吗？此操作无法撤销。")
+	dialog.ok_button_text = tr("清空")
+	dialog.cancel_button_text = tr("取消")
 	dialog.confirmed.connect(func() -> void:
 		Save.reset()
 		_refresh())

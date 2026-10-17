@@ -55,12 +55,12 @@ var _nail: Texture2D
 
 
 func _init() -> void:
-	intro_line = "海拉 · 冥界女王 —— 纳吉尔法尔即将起航"
-	defeat_line = "「父亲……你说过……我们会赢的……」"
+	intro_line = tr("海拉 · 冥界女王 —— 纳吉尔法尔即将起航")
+	defeat_line = tr("「父亲……你说过……我们会赢的……」")
 
 
 func init_stats(hp_scale: float) -> void:
-	setup_boss("hel", "海拉", "冥界女王", 1600.0, hp_scale, 44.0, 80.0, 18.0)
+	setup_boss("hel", tr("海拉"), tr("冥界女王"), 1600.0, hp_scale, 44.0, 80.0, 18.0)
 	color = Color(0.5, 0.45, 0.55)
 	reward_points = 300
 	state_actions = {"army_windup": &"summon", "army": &"summon", "cast_windup": &"windup", "ship": &"idle"}
@@ -198,7 +198,7 @@ func _enter_phase2() -> void:
 	change_state("ship")
 	var game := get_tree().current_scene
 	if game.get("hud"):
-		game.hud.announce("海拉登上了纳吉尔法尔！船帆展开，指甲如雨落下")
+		game.hud.announce(tr("海拉登上了纳吉尔法尔！船帆展开，指甲如雨落下"))
 
 
 func _barrage() -> void:
