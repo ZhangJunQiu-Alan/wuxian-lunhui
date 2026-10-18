@@ -1,0 +1,44 @@
+{
+  "source_size": [
+    1536,
+    1024
+  ],
+  "output_size": [
+    96,
+    96
+  ],
+  "placements": [
+    {
+      "crop": [
+        152,
+        230,
+        1371,
+        912
+      ],
+      "size": [
+        92,
+        51
+      ],
+      "position": [
+        2,
+        43
+      ]
+    }
+  ],
+  "scale": 0.07547169811320754,
+  "rgb_count": 48,
+  "alpha_values": [
+    0,
+    255
+  ],
+  "unique_frames": 1,
+  "sha256": "d4077296f0eaf73ffe5954deb30bee4c86ddecc962d4082c88da975ceb3b6a19",
+  "operations": [
+    "alpha threshold 128",
+    "equal-width frame crop",
+    "common nearest-neighbor scale",
+    "48-color source palette",
+    "whole-frame bottom/center placement"
+  ],
+  "status": "awaiting visual review"
+}

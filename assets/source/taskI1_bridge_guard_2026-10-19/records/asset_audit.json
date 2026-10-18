@@ -1,0 +1,921 @@
+{
+  "files": 7,
+  "frames": 16,
+  "failures": [],
+  "assets": [
+    {
+      "task_id": "I1",
+      "file": "assets/sprites/quests/bridge_guard.png",
+      "source_tool": "OpenAI built-in image_gen",
+      "license": "https://openai.com/policies/terms-of-use/",
+      "frame_size": [
+        64,
+        64
+      ],
+      "frames": 1,
+      "fps": 0,
+      "loop": false,
+      "anchor": [
+        32,
+        62
+      ],
+      "alpha_strategy": "binary 0/255; solid object and feather silhouette",
+      "rgb_count": 43,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "sha256": "a74174b4903bb1313d3a5c83071007c12c1f1e777cc297c2db44a9ebf7d03b9c",
+      "frame_bboxes": [
+        [
+          15,
+          2,
+          48,
+          62
+        ]
+      ],
+      "unique_frames": 1,
+      "actual_self_checks": {
+        "rgba_dimensions_padding_colors_alpha_hash": "passed",
+        "native_and_4x_dark_background": "visually reviewed",
+        "all_frames_and_loop_transition": "not applicable",
+        "gif_decode_pixels_and_average_fps": "not applicable",
+        "visual_notes": "年轻女性、暗金布衣、深灰斗篷、发辫与朝右轮廓已看；正式静态取自待机第0帧，避免静/动尺寸切换。"
+      },
+      "normalization": {
+        "source_size": [
+          1254,
+          1254
+        ],
+        "output_size": [
+          64,
+          64
+        ],
+        "placements": [
+          {
+            "crop": [
+              358,
+              93,
+              913,
+              1185
+            ],
+            "size": [
+              30,
+              60
+            ],
+            "position": [
+              17,
+              2
+            ]
+          }
+        ],
+        "scale": 0.054945054945054944,
+        "rgb_count": 44,
+        "alpha_values": [
+          0,
+          255
+        ],
+        "unique_frames": 1,
+        "sha256": "af7ba861341a889c6856c95a6be75c7c89d433e75988b6a94cbd96ae185abaff",
+        "operations": [
+          "alpha threshold 128",
+          "equal-width frame crop",
+          "common nearest-neighbor scale",
+          "48-color source palette",
+          "whole-frame bottom/center placement"
+        ],
+        "status": "awaiting visual review"
+      },
+      "selected_candidate": "candidates/bridge_guard_from_idle.png",
+      "selected_approved": "approved/bridge_guard.png",
+      "additional_source_operations": [
+        "最终静态从同源待机原图规范化第0格裁得；首次独立静态保留为角色设计输入和候选，未冒称独立静态原图直接成为成品。"
+      ],
+      "previews": [],
+      "failed_candidates": [],
+      "code_integration": "integrated",
+      "runtime_acceptance": "pending controlled review",
+      "manual_game_acceptance": "not performed",
+      "remaining_problems": [
+        "完整手动通关与密集实战遮挡未测。"
+      ],
+      "tiling_preview": "not applicable: isolated non-tile quest asset"
+    },
+    {
+      "task_id": "I1",
+      "file": "assets/sprites/quests/bridge_guard_idle.png",
+      "source_tool": "OpenAI built-in image_gen",
+      "license": "https://openai.com/policies/terms-of-use/",
+      "frame_size": [
+        64,
+        64
+      ],
+      "frames": 4,
+      "fps": 8,
+      "loop": true,
+      "anchor": [
+        32,
+        62
+      ],
+      "alpha_strategy": "binary 0/255; solid object and feather silhouette",
+      "rgb_count": 43,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "sha256": "d47997d366b033a04617db4f559332bfb772fcc35dbfb0072cc2e84e2d73566c",
+      "frame_bboxes": [
+        [
+          15,
+          2,
+          48,
+          62
+        ],
+        [
+          15,
+          2,
+          48,
+          62
+        ],
+        [
+          15,
+          2,
+          48,
+          62
+        ],
+        [
+          15,
+          2,
+          48,
+          62
+        ]
+      ],
+      "unique_frames": 4,
+      "actual_self_checks": {
+        "rgba_dimensions_padding_colors_alpha_hash": "passed",
+        "native_and_4x_dark_background": "visually reviewed",
+        "all_frames_and_loop_transition": "reviewed",
+        "gif_decode_pixels_and_average_fps": "passed",
+        "visual_notes": "四帧逐格查看，面部/服装/发辫一致；双靴落地基线固定y61，细小呼吸与披风变化，循环回接无大幅跳转。脚边像素存在1px以内轮廓变化，未宣称逐像素完全相同。"
+      },
+      "normalization": {
+        "source_size": [
+          1983,
+          793
+        ],
+        "output_size": [
+          256,
+          64
+        ],
+        "placements": [
+          {
+            "crop": [
+              98,
+              57,
+              481,
+              758
+            ],
+            "size": [
+              33,
+              60
+            ],
+            "position": [
+              15,
+              2
+            ]
+          },
+          {
+            "crop": [
+              77,
+              57,
+              462,
+              759
+            ],
+            "size": [
+              33,
+              60
+            ],
+            "position": [
+              15,
+              2
+            ]
+          },
+          {
+            "crop": [
+              56,
+              61,
+              443,
+              759
+            ],
+            "size": [
+              33,
+              60
+            ],
+            "position": [
+              15,
+              2
+            ]
+          },
+          {
+            "crop": [
+              22,
+              57,
+              409,
+              759
+            ],
+            "size": [
+              33,
+              60
+            ],
+            "position": [
+              15,
+              2
+            ]
+          }
+        ],
+        "scale": 0.08547008547008547,
+        "rgb_count": 43,
+        "alpha_values": [
+          0,
+          255
+        ],
+        "unique_frames": 4,
+        "sha256": "d47997d366b033a04617db4f559332bfb772fcc35dbfb0072cc2e84e2d73566c",
+        "operations": [
+          "alpha threshold 128",
+          "equal-width frame crop",
+          "common nearest-neighbor scale",
+          "48-color source palette",
+          "whole-frame bottom/center placement"
+        ],
+        "status": "awaiting visual review"
+      },
+      "selected_candidate": "candidates/bridge_guard_idle_v01.png",
+      "selected_approved": "approved/bridge_guard_idle.png",
+      "additional_source_operations": [],
+      "previews": [
+        "previews/bridge_guard_idle_native_1x.gif",
+        "previews/bridge_guard_idle_slow8fps_1x.gif",
+        "previews/bridge_guard_idle_native_4x.gif",
+        "previews/bridge_guard_idle_slow8fps_4x.gif"
+      ],
+      "failed_candidates": [],
+      "code_integration": "integrated",
+      "runtime_acceptance": "pending controlled review",
+      "manual_game_acceptance": "not performed",
+      "remaining_problems": [
+        "完整手动通关与密集实战遮挡未测。"
+      ],
+      "tiling_preview": "not applicable: isolated non-tile quest asset"
+    },
+    {
+      "task_id": "I2",
+      "file": "assets/sprites/quests/bonfire_survivors.png",
+      "source_tool": "OpenAI built-in image_gen",
+      "license": "https://openai.com/policies/terms-of-use/",
+      "frame_size": [
+        128,
+        64
+      ],
+      "frames": 1,
+      "fps": 0,
+      "loop": false,
+      "anchor": [
+        64,
+        62
+      ],
+      "alpha_strategy": "binary 0/255; solid object and feather silhouette",
+      "rgb_count": 42,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "sha256": "b2960a0583db3b6ee5a6a76fac62a2232b046ba649c9a8b2f29c4edc8b1c3846",
+      "frame_bboxes": [
+        [
+          2,
+          39,
+          126,
+          62
+        ]
+      ],
+      "unique_frames": 1,
+      "actual_self_checks": {
+        "rgba_dimensions_padding_colors_alpha_hash": "passed",
+        "native_and_4x_dark_background": "visually reviewed",
+        "all_frames_and_loop_transition": "not applicable",
+        "gif_decode_pixels_and_average_fps": "not applicable",
+        "visual_notes": "四名蹲坐者可分辨；左右两组35px宽，中心54px透明；已叠加现有64px画布篝火，实体最大51px，不重画火焰。"
+      },
+      "normalization": {
+        "source_size": [
+          1774,
+          887
+        ],
+        "output_size": [
+          128,
+          64
+        ],
+        "placements": [
+          {
+            "crop": [
+              14,
+              306,
+              744,
+              775
+            ],
+            "size": [
+              35,
+              22
+            ],
+            "position": [
+              2,
+              40
+            ]
+          },
+          {
+            "crop": [
+              151,
+              302,
+              873,
+              775
+            ],
+            "size": [
+              35,
+              23
+            ],
+            "position": [
+              91,
+              39
+            ]
+          }
+        ],
+        "scale": 0.04794520547945205,
+        "rgb_count": 42,
+        "alpha_values": [
+          0,
+          255
+        ],
+        "unique_frames": 1,
+        "sha256": "b2960a0583db3b6ee5a6a76fac62a2232b046ba649c9a8b2f29c4edc8b1c3846",
+        "operations": [
+          "alpha threshold 128",
+          "equal-width frame crop",
+          "common nearest-neighbor scale",
+          "48-color source palette",
+          "whole-frame bottom/center placement"
+        ],
+        "status": "awaiting visual review"
+      },
+      "selected_candidate": "candidates/bonfire_survivors_v01.png",
+      "selected_approved": "approved/bonfire_survivors.png",
+      "additional_source_operations": [
+        "初版间隙24px退回；36px间隙叠实际51px火焰仍触碰披风退回；最终左右两组整体裁排/统一最近邻缩小，间隙54px。"
+      ],
+      "previews": [],
+      "failed_candidates": [
+        "bonfire_survivors_rejected_gap24.png",
+        "bonfire_survivors_rejected_gap36.png"
+      ],
+      "code_integration": "integrated",
+      "runtime_acceptance": "pending controlled review",
+      "manual_game_acceptance": "not performed",
+      "remaining_problems": [
+        "完整手动通关与密集实战遮挡未测。"
+      ],
+      "tiling_preview": "not applicable: isolated non-tile quest asset"
+    },
+    {
+      "task_id": "I3",
+      "file": "assets/sprites/quests/valkyrie_wings.png",
+      "source_tool": "OpenAI built-in image_gen",
+      "license": "https://openai.com/policies/terms-of-use/",
+      "frame_size": [
+        64,
+        32
+      ],
+      "frames": 4,
+      "fps": 8,
+      "loop": true,
+      "anchor": [
+        32,
+        16
+      ],
+      "alpha_strategy": "binary 0/255; solid object and feather silhouette",
+      "rgb_count": 44,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "sha256": "0335287f7cdb4751d034c6f3923c34a02e0d6000eaec177786a62909561a4260",
+      "frame_bboxes": [
+        [
+          3,
+          2,
+          61,
+          30
+        ],
+        [
+          2,
+          6,
+          62,
+          26
+        ],
+        [
+          2,
+          3,
+          61,
+          28
+        ],
+        [
+          2,
+          3,
+          62,
+          28
+        ]
+      ],
+      "unique_frames": 4,
+      "actual_self_checks": {
+        "rgba_dimensions_padding_colors_alpha_hash": "passed",
+        "native_and_4x_dark_background": "visually reviewed",
+        "all_frames_and_loop_transition": "reviewed",
+        "gif_decode_pixels_and_average_fps": "passed",
+        "visual_notes": "四种张合角度可分辨，只有两翼，中心13px以上透明；整体中心(32,16)，无人体或大光晕。"
+      },
+      "normalization": {
+        "source_size": [
+          1983,
+          793
+        ],
+        "output_size": [
+          256,
+          32
+        ],
+        "placements": [
+          {
+            "crop": [
+              32,
+              240,
+              454,
+              450
+            ],
+            "size": [
+              56,
+              28
+            ],
+            "position": [
+              4,
+              2
+            ]
+          },
+          {
+            "crop": [
+              27,
+              300,
+              463,
+              451
+            ],
+            "size": [
+              58,
+              20
+            ],
+            "position": [
+              3,
+              6
+            ]
+          },
+          {
+            "crop": [
+              32,
+              328,
+              459,
+              519
+            ],
+            "size": [
+              57,
+              25
+            ],
+            "position": [
+              3,
+              3
+            ]
+          },
+          {
+            "crop": [
+              28,
+              265,
+              464,
+              450
+            ],
+            "size": [
+              58,
+              25
+            ],
+            "position": [
+              3,
+              3
+            ]
+          }
+        ],
+        "scale": 0.13333333333333333,
+        "rgb_count": 44,
+        "alpha_values": [
+          0,
+          255
+        ],
+        "unique_frames": 4,
+        "sha256": "58a17e8e368dbe92e050e382e8fec24260c81a264492a8fc68e780f282865fee",
+        "operations": [
+          "alpha threshold 128",
+          "equal-width frame crop",
+          "common nearest-neighbor scale",
+          "48-color source palette",
+          "whole-frame bottom/center placement"
+        ],
+        "status": "awaiting visual review"
+      },
+      "selected_candidate": "candidates/valkyrie_wings_registered.png",
+      "selected_approved": "approved/valkyrie_wings.png",
+      "additional_source_operations": [
+        "左右整翼分别向外平移1px，保持2px四周留白，扩大透明中心。"
+      ],
+      "previews": [
+        "previews/valkyrie_wings_native_1x.gif",
+        "previews/valkyrie_wings_slow8fps_1x.gif",
+        "previews/valkyrie_wings_native_4x.gif",
+        "previews/valkyrie_wings_slow8fps_4x.gif"
+      ],
+      "failed_candidates": [],
+      "code_integration": "integrated",
+      "runtime_acceptance": "pending controlled review",
+      "manual_game_acceptance": "not performed",
+      "remaining_problems": [
+        "完整手动通关与密集实战遮挡未测。"
+      ],
+      "tiling_preview": "not applicable: isolated non-tile quest asset"
+    },
+    {
+      "task_id": "I4",
+      "file": "assets/sprites/quests/iron_horseshoe.png",
+      "source_tool": "OpenAI built-in image_gen",
+      "license": "https://openai.com/policies/terms-of-use/",
+      "frame_size": [
+        16,
+        16
+      ],
+      "frames": 1,
+      "fps": 0,
+      "loop": false,
+      "anchor": [
+        8,
+        14
+      ],
+      "alpha_strategy": "binary 0/255; solid object and feather silhouette",
+      "rgb_count": 29,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "sha256": "1356781db1b3c19af8c0e63d31d0ec3086fcb01c9673dd6d4005b086f320b407",
+      "frame_bboxes": [
+        [
+          2,
+          2,
+          14,
+          14
+        ]
+      ],
+      "unique_frames": 1,
+      "actual_self_checks": {
+        "rgba_dimensions_padding_colors_alpha_hash": "passed",
+        "native_and_4x_dark_background": "visually reviewed",
+        "all_frames_and_loop_transition": "not applicable",
+        "gif_decode_pixels_and_average_fps": "not applicable",
+        "visual_notes": "16px原尺寸U型铁物件有厚度与高亮，和暗色3px蹄印可区分。"
+      },
+      "normalization": {
+        "source_size": [
+          1278,
+          1230
+        ],
+        "output_size": [
+          16,
+          16
+        ],
+        "placements": [
+          {
+            "crop": [
+              265,
+              284,
+              1013,
+              1016
+            ],
+            "size": [
+              12,
+              12
+            ],
+            "position": [
+              2,
+              2
+            ]
+          }
+        ],
+        "scale": 0.016042780748663103,
+        "rgb_count": 29,
+        "alpha_values": [
+          0,
+          255
+        ],
+        "unique_frames": 1,
+        "sha256": "1356781db1b3c19af8c0e63d31d0ec3086fcb01c9673dd6d4005b086f320b407",
+        "operations": [
+          "alpha threshold 128",
+          "equal-width frame crop",
+          "common nearest-neighbor scale",
+          "48-color source palette",
+          "whole-frame bottom/center placement"
+        ],
+        "status": "awaiting visual review"
+      },
+      "selected_candidate": "candidates/iron_horseshoe_v01.png",
+      "selected_approved": "approved/iron_horseshoe.png",
+      "additional_source_operations": [],
+      "previews": [],
+      "failed_candidates": [],
+      "code_integration": "integrated",
+      "runtime_acceptance": "pending controlled review",
+      "manual_game_acceptance": "not performed",
+      "remaining_problems": [
+        "完整手动通关与密集实战遮挡未测。"
+      ],
+      "tiling_preview": "not applicable: isolated non-tile quest asset"
+    },
+    {
+      "task_id": "I5",
+      "file": "assets/sprites/quests/river_sword.png",
+      "source_tool": "OpenAI built-in image_gen",
+      "license": "https://openai.com/policies/terms-of-use/",
+      "frame_size": [
+        32,
+        64
+      ],
+      "frames": 4,
+      "fps": 8,
+      "loop": true,
+      "anchor": [
+        16,
+        62
+      ],
+      "alpha_strategy": "binary 0/255; solid object and feather silhouette",
+      "rgb_count": 46,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "sha256": "424f1b00485382fec3840d915f889069a6d90627e82ed73a9e0d783f9749d13c",
+      "frame_bboxes": [
+        [
+          7,
+          2,
+          25,
+          61
+        ],
+        [
+          6,
+          2,
+          25,
+          61
+        ],
+        [
+          6,
+          2,
+          26,
+          61
+        ],
+        [
+          9,
+          2,
+          25,
+          62
+        ]
+      ],
+      "unique_frames": 4,
+      "actual_self_checks": {
+        "rgba_dimensions_padding_colors_alpha_hash": "passed",
+        "native_and_4x_dark_background": "visually reviewed",
+        "all_frames_and_loop_transition": "reviewed",
+        "gif_decode_pixels_and_average_fps": "passed",
+        "visual_notes": "实体刀身、横护手、柄和圆形柄头可分辨，四帧微弱冷色闪光/涟漪；刀尖整帧定位在顶边y2，刀身中心x16附近，非整身旋转。"
+      },
+      "normalization": {
+        "source_size": [
+          1774,
+          887
+        ],
+        "output_size": [
+          128,
+          64
+        ],
+        "placements": [
+          {
+            "crop": [
+              97,
+              56,
+              352,
+              855
+            ],
+            "size": [
+              19,
+              60
+            ],
+            "position": [
+              7,
+              2
+            ]
+          },
+          {
+            "crop": [
+              88,
+              56,
+              348,
+              855
+            ],
+            "size": [
+              20,
+              60
+            ],
+            "position": [
+              6,
+              2
+            ]
+          },
+          {
+            "crop": [
+              91,
+              56,
+              356,
+              855
+            ],
+            "size": [
+              20,
+              60
+            ],
+            "position": [
+              6,
+              2
+            ]
+          },
+          {
+            "crop": [
+              87,
+              56,
+              338,
+              855
+            ],
+            "size": [
+              19,
+              60
+            ],
+            "position": [
+              6,
+              2
+            ]
+          }
+        ],
+        "scale": 0.07509386733416772,
+        "rgb_count": 46,
+        "alpha_values": [
+          0,
+          255
+        ],
+        "unique_frames": 4,
+        "sha256": "e25545a0a9b97bf57a7cfdf378eb17ea6c62a85b96dd427d4552307236b79687",
+        "operations": [
+          "alpha threshold 128",
+          "equal-width frame crop",
+          "common nearest-neighbor scale",
+          "48-color source palette",
+          "whole-frame bottom/center placement"
+        ],
+        "status": "awaiting visual review"
+      },
+      "selected_candidate": "candidates/river_sword_registered.png",
+      "selected_approved": "approved/river_sword.png",
+      "additional_source_operations": [
+        "原bbox居中使刀尖漂移1px；按上方刀身定位整帧，刀尖顶行y2；旧候选保留。"
+      ],
+      "previews": [
+        "previews/river_sword_native_1x.gif",
+        "previews/river_sword_slow8fps_1x.gif",
+        "previews/river_sword_native_4x.gif",
+        "previews/river_sword_slow8fps_4x.gif"
+      ],
+      "failed_candidates": [
+        "river_sword_rejected_registration.png"
+      ],
+      "code_integration": "integrated",
+      "runtime_acceptance": "pending controlled review",
+      "manual_game_acceptance": "not performed",
+      "remaining_problems": [
+        "完整手动通关与密集实战遮挡未测。"
+      ],
+      "tiling_preview": "not applicable: isolated non-tile quest asset"
+    },
+    {
+      "task_id": "I6",
+      "file": "assets/sprites/quests/sun_altar.png",
+      "source_tool": "OpenAI built-in image_gen",
+      "license": "https://openai.com/policies/terms-of-use/",
+      "frame_size": [
+        96,
+        96
+      ],
+      "frames": 1,
+      "fps": 0,
+      "loop": false,
+      "anchor": [
+        48,
+        94
+      ],
+      "alpha_strategy": "binary 0/255; solid object and feather silhouette",
+      "rgb_count": 48,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "sha256": "d4077296f0eaf73ffe5954deb30bee4c86ddecc962d4082c88da975ceb3b6a19",
+      "frame_bboxes": [
+        [
+          2,
+          43,
+          94,
+          94
+        ]
+      ],
+      "unique_frames": 1,
+      "actual_self_checks": {
+        "rgba_dimensions_padding_colors_alpha_hash": "passed",
+        "native_and_4x_dark_background": "visually reviewed",
+        "all_frames_and_loop_transition": "not applicable",
+        "gif_decode_pixels_and_average_fps": "not applicable",
+        "visual_notes": "低矮台阶和空白台面可辨认；源图外围低alpha背景经实体alpha阈值去除，正式图无底色/光晕；现有余烬叠图可置于台面。"
+      },
+      "normalization": {
+        "source_size": [
+          1536,
+          1024
+        ],
+        "output_size": [
+          96,
+          96
+        ],
+        "placements": [
+          {
+            "crop": [
+              152,
+              230,
+              1371,
+              912
+            ],
+            "size": [
+              92,
+              51
+            ],
+            "position": [
+              2,
+              43
+            ]
+          }
+        ],
+        "scale": 0.07547169811320754,
+        "rgb_count": 48,
+        "alpha_values": [
+          0,
+          255
+        ],
+        "unique_frames": 1,
+        "sha256": "d4077296f0eaf73ffe5954deb30bee4c86ddecc962d4082c88da975ceb3b6a19",
+        "operations": [
+          "alpha threshold 128",
+          "equal-width frame crop",
+          "common nearest-neighbor scale",
+          "48-color source palette",
+          "whole-frame bottom/center placement"
+        ],
+        "status": "awaiting visual review"
+      },
+      "selected_candidate": "candidates/sun_altar_v01.png",
+      "selected_approved": "approved/sun_altar.png",
+      "additional_source_operations": [],
+      "previews": [],
+      "failed_candidates": [],
+      "code_integration": "integrated",
+      "runtime_acceptance": "pending controlled review",
+      "manual_game_acceptance": "not performed",
+      "remaining_problems": [
+        "完整手动通关与密集实战遮挡未测。"
+      ],
+      "tiling_preview": "not applicable: isolated non-tile quest asset"
+    }
+  ]
+}

@@ -7,6 +7,7 @@ extends SideQuest
 const SHOES := 5
 const STEP := 260.0
 const PICK_DISTANCE := 30.0
+const HORSESHOE := preload("res://assets/sprites/quests/iron_horseshoe.png")
 
 var _shoes: Array[Vector2] = []
 var _found := 0
@@ -69,5 +70,5 @@ func _draw_quest() -> void:
 			var p := prev.lerp(shoe, k / 6.0)
 			draw_circle(p + Vector2(5, 0).rotated(k), 3.0, Color(0.15, 0.13, 0.12, 0.6))
 		prev = shoe
-		draw_arc(shoe, 9.0, PI * 0.15, PI * 1.85, 12, Color(0.75, 0.72, 0.65), 3.0)
+		SpriteVisual.draw_frame(self, HORSESHOE, 1, 0, (shoe + Vector2(0, 6)).round(), Vector2(8, 14))
 		draw_circle(shoe, 18.0 + sin(_time * 4.0) * 3.0, Color(color, 0.12))

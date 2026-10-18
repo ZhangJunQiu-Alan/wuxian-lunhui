@@ -1,0 +1,16 @@
+{
+  "tool": "OpenAI built-in image_gen",
+  "prompt": "Create an isolated transparent pixel-art sprite sheet of ONE straight ancient northern iron longsword emerging vertically point-up from dark river ice, exactly FOUR equal vertical 32x64 cells arranged in ONE HORIZONTAL row. Sword fully visible in each cell: slim sharp steel blade, simple crossguard, dark leather grip and small round pommel, no hand/person. Blade points UP, hilt at bottom, sword rigid, same shape, same x center and same bottom baseline in all frames; do not rotate or stretch it. Four subtle looping phases of a very faint pale icy edge glint and tiny water ripple around bottom, without a large light aura. Solid sword readable even without glow; no flames, spark cloud, fog cloud, scenery or ground slab. Pixel density and cold metal shading match attached game prop; upper-left highlights, dark blue-grey outlines, <=40 colors. True transparent background, hard square pixels, no antialiasing, no text or frame borders, 2 pixel clear margins. At game scale blade should be 4-6px wide, whole sword about52px tall and crossguard20px wide, faint light never obscures steel. Four unique 8fps loop frames.",
+  "references": [
+    {
+      "input": "/Users/zhangjunqiu/Desktop/无限恐怖/assets/sprites/props/helheim/empty_throne.png",
+      "archive": "references/empty_throne.png",
+      "sha256": "444fd43acd5c77bcdc13024499f4dc90f1127d82f1db619dd3a775b425a09078"
+    }
+  ],
+  "original": "originals/river_sword_v01.png",
+  "sha256": "74c149ce3c6a4194533ed109329d060cd227610e53e7fd9cbdc59b33eed605bb",
+  "source_path": "/Users/zhangjunqiu/.codex/generated_images/01a14093-604c-72e3-b0c2-585e428c4824/exec-b8c014c3-2638-41f8-8c14-46819754120b.png",
+  "commercial_basis": "https://openai.com/policies/terms-of-use/",
+  "status": "candidate"
+}

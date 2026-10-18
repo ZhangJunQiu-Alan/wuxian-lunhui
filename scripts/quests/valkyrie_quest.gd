@@ -6,6 +6,7 @@ extends SideQuest
 
 const KILL_GOAL := 150
 const SPAWN_MULT := 3.0
+const WINGS := preload("res://assets/sprites/quests/valkyrie_wings.png")
 
 var _start_kills := 0
 
@@ -39,11 +40,8 @@ func _reward() -> String:
 	return tr("奖励点 +100，瓦尔基里的赠礼（额外一次升级）")
 
 
-func _draw_quest() -> void:
-	# 女武神的注视：玩家头顶一对金色羽翼
+func _draw_overlay() -> void:
 	if state != "active":
 		return
 	var p := player.global_position + Vector2(0, -34)
-	var spread := 4.0 * sin(_time * 3.0)
-	for side in [-1.0, 1.0]:
-		draw_colored_polygon(PackedVector2Array([p, p + Vector2(side * (30.0 + spread), -10), p + Vector2(side * 22.0, 4)]), Color(color, 0.8))
+	SpriteVisual.draw_frame(overlay, WINGS, 4, int(_time * 8.0), p.round(), Vector2(32, 16))

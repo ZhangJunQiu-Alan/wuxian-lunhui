@@ -1,0 +1,124 @@
+{
+  "task_id": "I2",
+  "assets": [
+    {
+      "task_id": "I2",
+      "file": "assets/sprites/quests/bonfire_survivors.png",
+      "source_tool": "OpenAI built-in image_gen",
+      "license": "https://openai.com/policies/terms-of-use/",
+      "frame_size": [
+        128,
+        64
+      ],
+      "frames": 1,
+      "fps": 0,
+      "loop": false,
+      "anchor": [
+        64,
+        62
+      ],
+      "alpha_strategy": "binary 0/255; solid object and feather silhouette",
+      "rgb_count": 42,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "sha256": "b2960a0583db3b6ee5a6a76fac62a2232b046ba649c9a8b2f29c4edc8b1c3846",
+      "frame_bboxes": [
+        [
+          2,
+          39,
+          126,
+          62
+        ]
+      ],
+      "unique_frames": 1,
+      "actual_self_checks": {
+        "rgba_dimensions_padding_colors_alpha_hash": "passed",
+        "native_and_4x_dark_background": "visually reviewed",
+        "all_frames_and_loop_transition": "not applicable",
+        "gif_decode_pixels_and_average_fps": "not applicable",
+        "visual_notes": "四名蹲坐者可分辨；左右两组35px宽，中心54px透明；已叠加现有64px画布篝火，实体最大51px，不重画火焰。",
+        "game_engine_rendering": "reviewed all four animation poses and offered/active/prop context; 18 screenshots across six tasks"
+      },
+      "normalization": {
+        "source_size": [
+          1774,
+          887
+        ],
+        "output_size": [
+          128,
+          64
+        ],
+        "placements": [
+          {
+            "crop": [
+              14,
+              306,
+              744,
+              775
+            ],
+            "size": [
+              35,
+              22
+            ],
+            "position": [
+              2,
+              40
+            ]
+          },
+          {
+            "crop": [
+              151,
+              302,
+              873,
+              775
+            ],
+            "size": [
+              35,
+              23
+            ],
+            "position": [
+              91,
+              39
+            ]
+          }
+        ],
+        "scale": 0.04794520547945205,
+        "rgb_count": 42,
+        "alpha_values": [
+          0,
+          255
+        ],
+        "unique_frames": 1,
+        "sha256": "b2960a0583db3b6ee5a6a76fac62a2232b046ba649c9a8b2f29c4edc8b1c3846",
+        "operations": [
+          "alpha threshold 128",
+          "equal-width frame crop",
+          "common nearest-neighbor scale",
+          "48-color source palette",
+          "whole-frame bottom/center placement"
+        ],
+        "status": "awaiting visual review"
+      },
+      "selected_candidate": "candidates/bonfire_survivors_v01.png",
+      "selected_approved": "approved/bonfire_survivors.png",
+      "additional_source_operations": [
+        "初版间隙24px退回；36px间隙叠实际51px火焰仍触碰披风退回；最终左右两组整体裁排/统一最近邻缩小，间隙54px。"
+      ],
+      "previews": [],
+      "failed_candidates": [
+        "bonfire_survivors_rejected_gap24.png",
+        "bonfire_survivors_rejected_gap36.png"
+      ],
+      "code_integration": "integrated",
+      "runtime_acceptance": "controlled_runtime_verified",
+      "manual_game_acceptance": "not performed",
+      "remaining_problems": [
+        "完整手动通关与密集实战遮挡未测。"
+      ],
+      "tiling_preview": "not applicable: isolated non-tile quest asset",
+      "runtime_evidence": "../taskI1_bridge_guard_2026-10-19/runtime/runtime_checks.json"
+    }
+  ]
+}

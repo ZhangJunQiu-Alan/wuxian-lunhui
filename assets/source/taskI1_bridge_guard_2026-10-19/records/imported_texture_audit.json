@@ -1,0 +1,42 @@
+{
+  "checked": 7,
+  "failures": [],
+  "assets": [
+    {
+      "asset": "iron_horseshoe",
+      "visible_rgba_mismatch": 0,
+      "alpha_mismatch": 0
+    },
+    {
+      "asset": "bridge_guard_idle",
+      "visible_rgba_mismatch": 0,
+      "alpha_mismatch": 0
+    },
+    {
+      "asset": "sun_altar",
+      "visible_rgba_mismatch": 0,
+      "alpha_mismatch": 0
+    },
+    {
+      "asset": "bridge_guard",
+      "visible_rgba_mismatch": 0,
+      "alpha_mismatch": 0
+    },
+    {
+      "asset": "valkyrie_wings",
+      "visible_rgba_mismatch": 0,
+      "alpha_mismatch": 0
+    },
+    {
+      "asset": "river_sword",
+      "visible_rgba_mismatch": 0,
+      "alpha_mismatch": 0
+    },
+    {
+      "asset": "bonfire_survivors",
+      "visible_rgba_mismatch": 0,
+      "alpha_mismatch": 0
+    }
+  ],
+  "note": "Transparent-pixel RGB ignored: Godot fix_alpha_border may fill hidden RGB; all alpha and visible RGB exactly match formal PNGs."
+}

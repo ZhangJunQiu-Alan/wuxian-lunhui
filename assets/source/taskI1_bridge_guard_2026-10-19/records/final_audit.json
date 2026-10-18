@@ -1,0 +1,104 @@
+{
+  "files": 7,
+  "frames": 16,
+  "failures": [],
+  "assets": [
+    {
+      "file": "assets/sprites/quests/bridge_guard.png",
+      "sha256": "a74174b4903bb1313d3a5c83071007c12c1f1e777cc297c2db44a9ebf7d03b9c",
+      "rgb": 43,
+      "alpha": [
+        0,
+        255
+      ],
+      "frames": 1
+    },
+    {
+      "file": "assets/sprites/quests/bridge_guard_idle.png",
+      "sha256": "d47997d366b033a04617db4f559332bfb772fcc35dbfb0072cc2e84e2d73566c",
+      "rgb": 43,
+      "alpha": [
+        0,
+        255
+      ],
+      "frames": 4
+    },
+    {
+      "file": "assets/sprites/quests/bonfire_survivors.png",
+      "sha256": "b2960a0583db3b6ee5a6a76fac62a2232b046ba649c9a8b2f29c4edc8b1c3846",
+      "rgb": 42,
+      "alpha": [
+        0,
+        255
+      ],
+      "frames": 1
+    },
+    {
+      "file": "assets/sprites/quests/valkyrie_wings.png",
+      "sha256": "0335287f7cdb4751d034c6f3923c34a02e0d6000eaec177786a62909561a4260",
+      "rgb": 44,
+      "alpha": [
+        0,
+        255
+      ],
+      "frames": 4
+    },
+    {
+      "file": "assets/sprites/quests/iron_horseshoe.png",
+      "sha256": "1356781db1b3c19af8c0e63d31d0ec3086fcb01c9673dd6d4005b086f320b407",
+      "rgb": 29,
+      "alpha": [
+        0,
+        255
+      ],
+      "frames": 1
+    },
+    {
+      "file": "assets/sprites/quests/river_sword.png",
+      "sha256": "424f1b00485382fec3840d915f889069a6d90627e82ed73a9e0d783f9749d13c",
+      "rgb": 46,
+      "alpha": [
+        0,
+        255
+      ],
+      "frames": 4
+    },
+    {
+      "file": "assets/sprites/quests/sun_altar.png",
+      "sha256": "d4077296f0eaf73ffe5954deb30bee4c86ddecc962d4082c88da975ceb3b6a19",
+      "rgb": 48,
+      "alpha": [
+        0,
+        255
+      ],
+      "frames": 1
+    }
+  ],
+  "code": [
+    {
+      "file": "scripts/quests/bridge_guard_quest.gd",
+      "sha256": "6158549bcddee6dc93aa0426d8ce9c40260eedfe9bdcb987d4e311c65490bb1d"
+    },
+    {
+      "file": "scripts/quests/bonfire_quest.gd",
+      "sha256": "83ff5d77c18993a249aced7f4e7408e988dadede7f6ce3f06701a6ed3d613a38"
+    },
+    {
+      "file": "scripts/quests/valkyrie_quest.gd",
+      "sha256": "e1307b58aa6f0010c9688e1dc1d5f47f62b0c95418a0ba941ee2ae9cbdabd671"
+    },
+    {
+      "file": "scripts/quests/hoof_tracks_quest.gd",
+      "sha256": "9a6eb43c6c64dbd4514391bb549446365aac44bc8823af7f9e7b7248a49ed9b8"
+    },
+    {
+      "file": "scripts/quests/river_sword_quest.gd",
+      "sha256": "d89745fd71d1e9f069196b9ecf743f2bba3615b11382213e9698886674cefaea"
+    },
+    {
+      "file": "scripts/quests/ember_quest.gd",
+      "sha256": "5e10fbf49a9e476398ce370e482da322446473f02e03e7d7f8e71791fa0d5a19"
+    }
+  ],
+  "note": "Final manifests/approved/formal hashes match; all six non-visual function bodies match the initial backups; external concurrent UI changes are preserved."
+}

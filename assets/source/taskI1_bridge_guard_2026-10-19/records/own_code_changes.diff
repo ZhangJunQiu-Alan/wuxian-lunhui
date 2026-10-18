@@ -1,0 +1,116 @@
+--- before/scripts/quests/bridge_guard_quest.gd
++++ after/scripts/quests/bridge_guard_quest.gd
+@@ -7,6 +7,8 @@
+ const HOLD_TIME := 40.0
+ const WAVE_EVERY := 4.0
+ const WAVE_SIZE := 6
++const GUARD := preload("res://assets/sprites/quests/bridge_guard.png")
++const GUARD_IDLE := preload("res://assets/sprites/quests/bridge_guard_idle.png")
+ 
+ var _held := 0.0
+ var _wave_timer := 1.0
+@@ -62,7 +64,5 @@
+ 		draw_rect(_zone, Color(color, 0.12 if inside else 0.05))
+ 		draw_rect(_zone, Color(color, 0.8 if inside else 0.4), false, 3.0)
+ 		draw_rect(Rect2(_zone.position + Vector2(0, -12), Vector2(_zone.size.x * _held / HOLD_TIME, 6)), Color(1.0, 0.9, 0.5))
+-	# 守桥的少女：桥头的金色人影
+ 	var guard := Vector2(_zone.end.x + 34.0, _zone.end.y + 30.0)
+-	draw_circle(guard + Vector2(0, -26), 6.0, Color(0.95, 0.85, 0.6))
+-	draw_rect(Rect2(guard + Vector2(-6, -20), Vector2(12, 22)), Color(0.85, 0.7, 0.35))
++	SpriteVisual.draw_frame(self, GUARD_IDLE if state == "active" else GUARD, 4 if state == "active" else 1, int(_time * 8.0), guard.round(), Vector2(32, 62))
+--- before/scripts/quests/bonfire_quest.gd
++++ after/scripts/quests/bonfire_quest.gd
+@@ -4,6 +4,7 @@
+ ## 奖励：奖励点 +100，生命全部恢复
+ 
+ const CAMPFIRE := preload("res://assets/sprites/quests/campfire.png")  # 4 帧火焰循环
++const SURVIVORS := preload("res://assets/sprites/quests/bonfire_survivors.png")
+ const ZONE_RADIUS := 150.0
+ const HOLD_TIME := 45.0
+ const WAVE_EVERY := 6.0
+@@ -57,7 +58,5 @@
+ 		draw_arc(marker_pos, ZONE_RADIUS, 0.0, TAU, 64, Color(color, 0.8 if inside else 0.4), 3.0)
+ 		# 进度环
+ 		draw_arc(marker_pos, ZONE_RADIUS + 8.0, -PI / 2, -PI / 2 + TAU * _held / HOLD_TIME, 64, Color(1.0, 0.9, 0.5), 4.0)
++	SpriteVisual.draw_frame(self, SURVIVORS, 1, 0, (marker_pos + Vector2(0, 12)).round(), Vector2(64, 62))
+ 	SpriteVisual.draw_frame(self, CAMPFIRE, 4, int(_time * 8.0), marker_pos + Vector2(0, 12), Vector2(32, 62))
+-	# 围着篝火的幸存者
+-	for i in 4:
+-		draw_circle(marker_pos + Vector2.from_angle(TAU * i / 4 + 0.4) * 34.0, 6.0, Color(0.85, 0.75, 0.6))
+--- before/scripts/quests/valkyrie_quest.gd
++++ after/scripts/quests/valkyrie_quest.gd
+@@ -6,6 +6,7 @@
+ 
+ const KILL_GOAL := 150
+ const SPAWN_MULT := 3.0
++const WINGS := preload("res://assets/sprites/quests/valkyrie_wings.png")
+ 
+ var _start_kills := 0
+ 
+@@ -39,11 +40,8 @@
+ 	return tr("奖励点 +100，瓦尔基里的赠礼（额外一次升级）")
+ 
+ 
+-func _draw_quest() -> void:
+-	# 女武神的注视：玩家头顶一对金色羽翼
++func _draw_overlay() -> void:
+ 	if state != "active":
+ 		return
+ 	var p := player.global_position + Vector2(0, -34)
+-	var spread := 4.0 * sin(_time * 3.0)
+-	for side in [-1.0, 1.0]:
+-		draw_colored_polygon(PackedVector2Array([p, p + Vector2(side * (30.0 + spread), -10), p + Vector2(side * 22.0, 4)]), Color(color, 0.8))
++	SpriteVisual.draw_frame(overlay, WINGS, 4, int(_time * 8.0), p.round(), Vector2(32, 16))
+--- before/scripts/quests/hoof_tracks_quest.gd
++++ after/scripts/quests/hoof_tracks_quest.gd
+@@ -7,6 +7,7 @@
+ const SHOES := 5
+ const STEP := 260.0
+ const PICK_DISTANCE := 30.0
++const HORSESHOE := preload("res://assets/sprites/quests/iron_horseshoe.png")
+ 
+ var _shoes: Array[Vector2] = []
+ var _found := 0
+@@ -69,5 +70,5 @@
+ 			var p := prev.lerp(shoe, k / 6.0)
+ 			draw_circle(p + Vector2(5, 0).rotated(k), 3.0, Color(0.15, 0.13, 0.12, 0.6))
+ 		prev = shoe
+-		draw_arc(shoe, 9.0, PI * 0.15, PI * 1.85, 12, Color(0.75, 0.72, 0.65), 3.0)
++		SpriteVisual.draw_frame(self, HORSESHOE, 1, 0, (shoe + Vector2(0, 6)).round(), Vector2(8, 14))
+ 		draw_circle(shoe, 18.0 + sin(_time * 4.0) * 3.0, Color(color, 0.12))
+--- before/scripts/quests/river_sword_quest.gd
++++ after/scripts/quests/river_sword_quest.gd
+@@ -8,6 +8,7 @@
+ const ZONE_RADIUS := 90.0
+ const WAVE_EVERY := 4.0
+ const WAVE_SIZE := 4
++const SWORD := preload("res://assets/sprites/quests/river_sword.png")
+ 
+ var _dug := 0.0
+ var _wave_timer := 2.0
+@@ -58,5 +59,5 @@
+ 	draw_arc(marker_pos, ZONE_RADIUS, -PI / 2, -PI / 2 + TAU * k, 48, color, 4.0)
+ 	for i in 6:  # 冰面裂纹越来越长
+ 		var dir := Vector2.from_angle(i * 1.05 + 0.3)
+-		draw_line(marker_pos, marker_pos + dir * ZONE_RADIUS * k, Color(0.9, 0.97, 1.0, 0.7), 2.0)
+-	draw_line(marker_pos + Vector2(-10, 10), marker_pos + Vector2(12, -12), Color(1.0, 1.0, 0.85, 0.5 + 0.5 * k), 3.0)
++		draw_line(marker_pos, marker_pos + dir * ZONE_RADIUS * k, Color(0.9, 0.97, 1.0, 0.35), 1.0)
++	SpriteVisual.draw_frame(self, SWORD, 4, int(_time * 8.0), (marker_pos + Vector2(0, 12)).round(), Vector2(16, 62))
+--- before/scripts/quests/ember_quest.gd
++++ after/scripts/quests/ember_quest.gd
+@@ -5,6 +5,7 @@
+ ## 奖励：大招能量充满，奖励点 +100
+ 
+ const EMBER := preload("res://assets/sprites/quests/sun_ember.png")  # 4 帧闪烁
++const ALTAR := preload("res://assets/sprites/quests/sun_altar.png")
+ const PICKUP := 30.0
+ const ALTAR_RADIUS := 70.0
+ const CARRY_SPEED := 0.8
+@@ -92,6 +93,7 @@
+ 	var pulse := 0.5 + 0.5 * sin(_time * 4.0)
+ 	draw_circle(_altar, ALTAR_RADIUS, Color(color, 0.05 + 0.05 * pulse))
+ 	draw_arc(_altar, ALTAR_RADIUS, 0.0, TAU, 48, Color(color, 0.5), 3.0)
++	SpriteVisual.draw_frame(self, ALTAR, 1, 0, (_altar + Vector2(0, 16)).round(), Vector2(48, 94))
+ 	if not _carried:
+ 		_draw_ember(self, _ember + Vector2(0, -6))
+ 

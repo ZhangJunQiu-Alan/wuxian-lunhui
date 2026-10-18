@@ -1,0 +1,92 @@
+{
+  "source_size": [
+    1774,
+    887
+  ],
+  "output_size": [
+    128,
+    64
+  ],
+  "placements": [
+    {
+      "crop": [
+        97,
+        56,
+        352,
+        855
+      ],
+      "size": [
+        19,
+        60
+      ],
+      "position": [
+        7,
+        2
+      ]
+    },
+    {
+      "crop": [
+        88,
+        56,
+        348,
+        855
+      ],
+      "size": [
+        20,
+        60
+      ],
+      "position": [
+        6,
+        2
+      ]
+    },
+    {
+      "crop": [
+        91,
+        56,
+        356,
+        855
+      ],
+      "size": [
+        20,
+        60
+      ],
+      "position": [
+        6,
+        2
+      ]
+    },
+    {
+      "crop": [
+        87,
+        56,
+        338,
+        855
+      ],
+      "size": [
+        19,
+        60
+      ],
+      "position": [
+        6,
+        2
+      ]
+    }
+  ],
+  "scale": 0.07509386733416772,
+  "rgb_count": 46,
+  "alpha_values": [
+    0,
+    255
+  ],
+  "unique_frames": 4,
+  "sha256": "e25545a0a9b97bf57a7cfdf378eb17ea6c62a85b96dd427d4552307236b79687",
+  "operations": [
+    "alpha threshold 128",
+    "equal-width frame crop",
+    "common nearest-neighbor scale",
+    "48-color source palette",
+    "whole-frame bottom/center placement"
+  ],
+  "status": "awaiting visual review"
+}

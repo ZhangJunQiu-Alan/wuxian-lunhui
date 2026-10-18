@@ -1,0 +1,401 @@
+{
+  "task": "Part I / I1-I6",
+  "files": 7,
+  "frames": 16,
+  "generated_originals": 7,
+  "production": "complete",
+  "file_audit": "passed",
+  "code_integration": "integrated",
+  "controlled_runtime_checks": 77,
+  "controlled_runtime_failures": 0,
+  "screenshots": 18,
+  "combat_regression_checks": 997,
+  "combat_regression_failures": 0,
+  "manual_playthrough": "not performed",
+  "remaining": [
+    "完整手动通关、长时间平衡与密集实战遮挡未测。"
+  ],
+  "browser_used": false,
+  "git_commit": false,
+  "git_push": false,
+  "visual_review": [
+    {
+      "asset_screen": [
+        884.0,
+        445.0
+      ],
+      "file": "I1_offered.png",
+      "level": "helheim",
+      "marker_screen": [
+        750.0,
+        315.0
+      ],
+      "pause_visible": false,
+      "player_screen": [
+        640.0,
+        360.0
+      ],
+      "state": "offered",
+      "time": 0.0,
+      "sha256": "b346975fa011d36c1a0b261dca4455aba338779071f86be9f9105aaca9e1bd5c",
+      "scope": "controlled actual Game scene, exact quest landmark; individual frames, interaction tests; not full manual playthrough"
+    },
+    {
+      "asset_screen": [
+        884.0,
+        445.0
+      ],
+      "file": "I1_idle_0.png",
+      "level": "helheim",
+      "marker_screen": [
+        750.0,
+        315.0
+      ],
+      "pause_visible": false,
+      "player_screen": [
+        640.0,
+        360.0
+      ],
+      "state": "active",
+      "time": 0.0,
+      "sha256": "81d9d4399e37525e72b9041cbc9897c44ed35414b900cc5f7c84f36e09a5dd67",
+      "scope": "controlled actual Game scene, exact quest landmark; individual frames, interaction tests; not full manual playthrough"
+    },
+    {
+      "asset_screen": [
+        884.0,
+        445.0
+      ],
+      "file": "I1_idle_1.png",
+      "level": "helheim",
+      "marker_screen": [
+        750.0,
+        315.0
+      ],
+      "pause_visible": false,
+      "player_screen": [
+        640.0,
+        360.0
+      ],
+      "state": "active",
+      "time": 0.125,
+      "sha256": "d586e22b5bda0e3a47044bcf0c03de6185c3ea9f8c376f202efa56653603ab13",
+      "scope": "controlled actual Game scene, exact quest landmark; individual frames, interaction tests; not full manual playthrough"
+    },
+    {
+      "asset_screen": [
+        884.0,
+        445.0
+      ],
+      "file": "I1_idle_2.png",
+      "level": "helheim",
+      "marker_screen": [
+        750.0,
+        315.0
+      ],
+      "pause_visible": false,
+      "player_screen": [
+        640.0,
+        360.0
+      ],
+      "state": "active",
+      "time": 0.25,
+      "sha256": "b6223256e638cd28b2ebfe1b529f89d3414a4cec37c3d398b2f7ece70ce778d5",
+      "scope": "controlled actual Game scene, exact quest landmark; individual frames, interaction tests; not full manual playthrough"
+    },
+    {
+      "asset_screen": [
+        884.0,
+        445.0
+      ],
+      "file": "I1_idle_3.png",
+      "level": "helheim",
+      "marker_screen": [
+        750.0,
+        315.0
+      ],
+      "pause_visible": false,
+      "player_screen": [
+        640.0,
+        360.0
+      ],
+      "state": "active",
+      "time": 0.375,
+      "sha256": "a3612cd6f816a20fa8689ca619f52b3dc1b2a8ccecb348f4bc7ebbeda780f93c",
+      "scope": "controlled actual Game scene, exact quest landmark; individual frames, interaction tests; not full manual playthrough"
+    },
+    {
+      "asset_screen": [
+        750.0,
+        315.0
+      ],
+      "file": "I2_offered.png",
+      "level": "midgard",
+      "marker_screen": [
+        750.0,
+        315.0
+      ],
+      "pause_visible": false,
+      "player_screen": [
+        640.0,
+        360.0
+      ],
+      "state": "offered",
+      "time": 0.0,
+      "sha256": "d5ad1820bf88da9729cfee4ea261e7c183af28405843de163de26210c9af82cb",
+      "scope": "controlled actual Game scene, exact quest landmark; individual frames, interaction tests; not full manual playthrough"
+    },
+    {
+      "asset_screen": [
+        750.0,
+        315.0
+      ],
+      "file": "I2_active.png",
+      "level": "midgard",
+      "marker_screen": [
+        750.0,
+        315.0
+      ],
+      "pause_visible": false,
+      "player_screen": [
+        640.0,
+        360.0
+      ],
+      "state": "active",
+      "time": 0.0,
+      "sha256": "67902db5a7c6706f4d254aa58bffee37ba5f15b5db595f9d0e596c73ef128ae3",
+      "scope": "controlled actual Game scene, exact quest landmark; individual frames, interaction tests; not full manual playthrough"
+    },
+    {
+      "asset_screen": [
+        640.0,
+        326.0
+      ],
+      "file": "I3_wings_0.png",
+      "level": "midgard",
+      "marker_screen": [
+        750.0,
+        315.0
+      ],
+      "pause_visible": false,
+      "player_screen": [
+        640.0,
+        360.0
+      ],
+      "state": "active",
+      "time": 0.0,
+      "sha256": "8a2ae5778b0dc6e2b57e2db731fe5941ff41280ac27ef96d3b42ec45c95fbb06",
+      "scope": "controlled actual Game scene, exact quest landmark; individual frames, interaction tests; not full manual playthrough"
+    },
+    {
+      "asset_screen": [
+        640.0,
+        326.0
+      ],
+      "file": "I3_wings_1.png",
+      "level": "midgard",
+      "marker_screen": [
+        750.0,
+        315.0
+      ],
+      "pause_visible": false,
+      "player_screen": [
+        640.0,
+        360.0
+      ],
+      "state": "active",
+      "time": 0.125,
+      "sha256": "464814a28ba980c6d7bdce8d85481f678f2baaa91913dbf6bbcdcf9dc4278678",
+      "scope": "controlled actual Game scene, exact quest landmark; individual frames, interaction tests; not full manual playthrough"
+    },
+    {
+      "asset_screen": [
+        640.0,
+        326.0
+      ],
+      "file": "I3_wings_2.png",
+      "level": "midgard",
+      "marker_screen": [
+        750.0,
+        315.0
+      ],
+      "pause_visible": false,
+      "player_screen": [
+        640.0,
+        360.0
+      ],
+      "state": "active",
+      "time": 0.25,
+      "sha256": "983789fa5a0fd7bcea590b88c1849079ae7745bd7c56fc0c367a8c2cdd860df1",
+      "scope": "controlled actual Game scene, exact quest landmark; individual frames, interaction tests; not full manual playthrough"
+    },
+    {
+      "asset_screen": [
+        640.0,
+        326.0
+      ],
+      "file": "I3_wings_3.png",
+      "level": "midgard",
+      "marker_screen": [
+        750.0,
+        315.0
+      ],
+      "pause_visible": false,
+      "player_screen": [
+        640.0,
+        360.0
+      ],
+      "state": "active",
+      "time": 0.375,
+      "sha256": "77ef69d9f25ee8954583810ebd7258a7a583d480b01ef14ef3929b9f962b6573",
+      "scope": "controlled actual Game scene, exact quest landmark; individual frames, interaction tests; not full manual playthrough"
+    },
+    {
+      "asset_screen": [
+        750.0,
+        315.0
+      ],
+      "file": "I4_horseshoe.png",
+      "level": "helheim",
+      "marker_screen": [
+        944.826049804688,
+        487.170837402344
+      ],
+      "pause_visible": false,
+      "player_screen": [
+        640.0,
+        360.0
+      ],
+      "state": "active",
+      "time": 0.0,
+      "sha256": "bc815269c4150f7ad86290e2b2ee037f484c037e259c70868eb0896f71c53a10",
+      "scope": "controlled actual Game scene, exact quest landmark; individual frames, interaction tests; not full manual playthrough"
+    },
+    {
+      "asset_screen": [
+        704.0,
+        315.0
+      ],
+      "file": "I5_sword_0.png",
+      "level": "helheim",
+      "marker_screen": [
+        704.0,
+        315.0
+      ],
+      "pause_visible": false,
+      "player_screen": [
+        594.0,
+        360.0
+      ],
+      "state": "active",
+      "time": 0.0,
+      "sha256": "5d0abab97f9454cbd2fa035fcdfbd8d11c6ab1c85b179007482df4df67e32a9c",
+      "scope": "controlled actual Game scene, exact quest landmark; individual frames, interaction tests; not full manual playthrough"
+    },
+    {
+      "asset_screen": [
+        704.0,
+        315.0
+      ],
+      "file": "I5_sword_1.png",
+      "level": "helheim",
+      "marker_screen": [
+        704.0,
+        315.0
+      ],
+      "pause_visible": false,
+      "player_screen": [
+        594.0,
+        360.0
+      ],
+      "state": "active",
+      "time": 0.125,
+      "sha256": "56be2aeed8281858e1d3c34adf0d3cbb9701f7ef43edcad2ad4bb16cfa2b1592",
+      "scope": "controlled actual Game scene, exact quest landmark; individual frames, interaction tests; not full manual playthrough"
+    },
+    {
+      "asset_screen": [
+        704.0,
+        315.0
+      ],
+      "file": "I5_sword_2.png",
+      "level": "helheim",
+      "marker_screen": [
+        704.0,
+        315.0
+      ],
+      "pause_visible": false,
+      "player_screen": [
+        594.0,
+        360.0
+      ],
+      "state": "active",
+      "time": 0.25,
+      "sha256": "7f88f59b966db8d8ea694f0015d8563e5c704f6c888e57c35e1ad5d9756a5053",
+      "scope": "controlled actual Game scene, exact quest landmark; individual frames, interaction tests; not full manual playthrough"
+    },
+    {
+      "asset_screen": [
+        704.0,
+        315.0
+      ],
+      "file": "I5_sword_3.png",
+      "level": "helheim",
+      "marker_screen": [
+        704.0,
+        315.0
+      ],
+      "pause_visible": false,
+      "player_screen": [
+        594.0,
+        360.0
+      ],
+      "state": "active",
+      "time": 0.375,
+      "sha256": "d827973392f2ae8f6647bfdb58c2fed30e560ff78abfef697662333020ff876a",
+      "scope": "controlled actual Game scene, exact quest landmark; individual frames, interaction tests; not full manual playthrough"
+    },
+    {
+      "asset_screen": [
+        750.0,
+        315.0
+      ],
+      "file": "I6_altar.png",
+      "level": "midgard",
+      "marker_screen": [
+        2227.5888671875,
+        -657.439819335938
+      ],
+      "pause_visible": false,
+      "player_screen": [
+        640.0,
+        360.0
+      ],
+      "state": "active",
+      "time": 0.0,
+      "sha256": "49addb1ab6d15749057ac9f125bca4741ca456a69b59d97b5f076f298f46abb9",
+      "scope": "controlled actual Game scene, exact quest landmark; individual frames, interaction tests; not full manual playthrough"
+    },
+    {
+      "asset_screen": [
+        640.0,
+        340.0
+      ],
+      "file": "I6_carry_overlay.png",
+      "level": "midgard",
+      "marker_screen": [
+        2117.5888671875,
+        -632.439819335938
+      ],
+      "pause_visible": false,
+      "player_screen": [
+        640.0,
+        360.0
+      ],
+      "state": "active",
+      "time": 0.0,
+      "sha256": "9da85320052dcdab51df8eec357fefc243e65435d4cd09d9467ccff344ba5381",
+      "scope": "controlled actual Game scene, exact quest landmark; individual frames, interaction tests; not full manual playthrough"
+    }
+  ]
+}

@@ -1,0 +1,391 @@
+{
+	"checks": [
+		{
+			"actual": null,
+			"label": "texture bridge_guard",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "texture bridge_guard_idle",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "texture bonfire_survivors",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "texture valkyrie_wings",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "texture iron_horseshoe",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "texture river_sword",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "texture sun_altar",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "actual level helheim",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "capture I1_offered",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "bridge accepts at original marker and timer",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "capture I1_idle_0",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "capture I1_idle_1",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "capture I1_idle_2",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "capture I1_idle_3",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "bridge accumulation inside",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "bridge outside no accumulation and pointer",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "bridge original 40 second completion",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "actual level midgard",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "capture I2_offered",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "bonfire accepts and timer",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "capture I2_active",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "bonfire original 150 radius and pointer",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "bonfire original 45 second completion",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "wings retains trial spawn rate and timer",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "wings player foreground overlay",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "capture I3_wings_0",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "capture I3_wings_1",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "capture I3_wings_2",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "capture I3_wings_3",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "trial 149 kills incomplete",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "trial 150 kills and spawn cleanup",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "actual level helheim",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "hoof quest five collectibles and timer",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "capture I4_horseshoe",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "horseshoe outside pickup radius",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "horseshoe pickup removes one",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "horseshoe pointer advances",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "horseshoe original five-item completion",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "sword accepts original timer",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "capture I5_sword_0",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "capture I5_sword_1",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "capture I5_sword_2",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "capture I5_sword_3",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "sword original 90 radius and pointer",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "sword original 15 second completion",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "actual level midgard",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "ember accepts original timer",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "ember carrying speed unchanged",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "capture I6_altar",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "capture I6_carry_overlay",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "ember damage drop and cooldown unchanged",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "ember cooldown prevents pickup restores speed",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "ember pickup after cooldown",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "ember original altar radius completion and cleanup",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "ember disconnects signal",
+			"pass": true
+		}
+	],
+	"failures": [],
+	"scope": "controlled actual Game rendering and quest interaction, not a manual playthrough",
+	"screenshots": [
+		{
+			"file": "I1_offered.png",
+			"level": "helheim",
+			"state": "offered",
+			"time": 0.0
+		},
+		{
+			"file": "I1_idle_0.png",
+			"level": "helheim",
+			"state": "active",
+			"time": 0.0
+		},
+		{
+			"file": "I1_idle_1.png",
+			"level": "helheim",
+			"state": "active",
+			"time": 0.125
+		},
+		{
+			"file": "I1_idle_2.png",
+			"level": "helheim",
+			"state": "active",
+			"time": 0.25
+		},
+		{
+			"file": "I1_idle_3.png",
+			"level": "helheim",
+			"state": "active",
+			"time": 0.375
+		},
+		{
+			"file": "I2_offered.png",
+			"level": "midgard",
+			"state": "offered",
+			"time": 0.0
+		},
+		{
+			"file": "I2_active.png",
+			"level": "midgard",
+			"state": "active",
+			"time": 0.0
+		},
+		{
+			"file": "I3_wings_0.png",
+			"level": "midgard",
+			"state": "active",
+			"time": 0.0
+		},
+		{
+			"file": "I3_wings_1.png",
+			"level": "midgard",
+			"state": "active",
+			"time": 0.125
+		},
+		{
+			"file": "I3_wings_2.png",
+			"level": "midgard",
+			"state": "active",
+			"time": 0.25
+		},
+		{
+			"file": "I3_wings_3.png",
+			"level": "midgard",
+			"state": "active",
+			"time": 0.375
+		},
+		{
+			"file": "I4_horseshoe.png",
+			"level": "helheim",
+			"state": "active",
+			"time": 0.0
+		},
+		{
+			"file": "I5_sword_0.png",
+			"level": "helheim",
+			"state": "active",
+			"time": 0.0
+		},
+		{
+			"file": "I5_sword_1.png",
+			"level": "helheim",
+			"state": "active",
+			"time": 0.125
+		},
+		{
+			"file": "I5_sword_2.png",
+			"level": "helheim",
+			"state": "active",
+			"time": 0.25
+		},
+		{
+			"file": "I5_sword_3.png",
+			"level": "helheim",
+			"state": "active",
+			"time": 0.375
+		},
+		{
+			"file": "I6_altar.png",
+			"level": "midgard",
+			"state": "active",
+			"time": 0.0
+		},
+		{
+			"file": "I6_carry_overlay.png",
+			"level": "midgard",
+			"state": "active",
+			"time": 0.0
+		}
+	]
+}

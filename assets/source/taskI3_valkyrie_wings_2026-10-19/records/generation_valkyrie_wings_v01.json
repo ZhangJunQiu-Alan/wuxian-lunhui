@@ -1,0 +1,16 @@
+{
+  "tool": "OpenAI built-in image_gen",
+  "prompt": "Create a horizontal sprite sheet, exactly FOUR equal 64x32 pixel-art frames left to right on true transparent background. Only one matched PAIR OF PALE GOLD FEATHER WINGS per frame, for a tiny overhead quest marker. NO body, head, person, heart, gem, cross, center object, halo, words, background or particles. Clear transparent central gap at least 12 game pixels wide around x32, all feathers remain outside that gap. Left wing mirrors right wing, each with 5-7 readable feather shapes and dark ochre outlines, cream/pale gold tops and subdued brown shadows. Four gentle flap phases: raised, halfway down, lowered, halfway up with distinct feather angles; fixed inner wing roots at x24 and x40,y16 in every frame, total width fits60pixels and height28 with2px margins. Feather masses remain legible at 1x, no sprawling bloom. Hard square pixel clusters, crisp contour, top-left illumination, restrained <=32-color palette consistent with attached existing game gold sprite. Transparent center must remain transparent in every frame. No extra scene or characters. Gentle looping 8fps.",
+  "references": [
+    {
+      "input": "/Users/zhangjunqiu/Desktop/无限恐怖/assets/sprites/quests/einherjar_idle.png",
+      "archive": "references/einherjar_idle.png",
+      "sha256": "23fb36f1708384de4c94aa416ad9af4a02407d5a5a5e27d16552b2fbb8af6051"
+    }
+  ],
+  "original": "originals/valkyrie_wings_v01.png",
+  "sha256": "c4ef31d3843220bcd3c648f744f16c0482f65bb1ecd741e0c1615f5e0bdec618",
+  "source_path": "/Users/zhangjunqiu/.codex/generated_images/01a14093-604c-72e3-b0c2-585e428c4824/exec-af73aaf9-003a-4f1e-97b5-67adcd926350.png",
+  "commercial_basis": "https://openai.com/policies/terms-of-use/",
+  "status": "candidate"
+}

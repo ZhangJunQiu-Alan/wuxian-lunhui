@@ -7,6 +7,8 @@ extends SideQuest
 const HOLD_TIME := 40.0
 const WAVE_EVERY := 4.0
 const WAVE_SIZE := 6
+const GUARD := preload("res://assets/sprites/quests/bridge_guard.png")
+const GUARD_IDLE := preload("res://assets/sprites/quests/bridge_guard_idle.png")
 
 var _held := 0.0
 var _wave_timer := 1.0
@@ -62,7 +64,5 @@ func _draw_quest() -> void:
 		draw_rect(_zone, Color(color, 0.12 if inside else 0.05))
 		draw_rect(_zone, Color(color, 0.8 if inside else 0.4), false, 3.0)
 		draw_rect(Rect2(_zone.position + Vector2(0, -12), Vector2(_zone.size.x * _held / HOLD_TIME, 6)), Color(1.0, 0.9, 0.5))
-	# 守桥的少女：桥头的金色人影
 	var guard := Vector2(_zone.end.x + 34.0, _zone.end.y + 30.0)
-	draw_circle(guard + Vector2(0, -26), 6.0, Color(0.95, 0.85, 0.6))
-	draw_rect(Rect2(guard + Vector2(-6, -20), Vector2(12, 22)), Color(0.85, 0.7, 0.35))
+	SpriteVisual.draw_frame(self, GUARD_IDLE if state == "active" else GUARD, 4 if state == "active" else 1, int(_time * 8.0), guard.round(), Vector2(32, 62))

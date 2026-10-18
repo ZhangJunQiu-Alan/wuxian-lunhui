@@ -1,0 +1,16 @@
+{
+  "tool": "OpenAI built-in image_gen",
+  "prompt": "Create ONE original low-resolution pixel-art game NPC, full body, isolated on true transparent background. A stern young female bridge keeper in an ancient northern underworld: pale cool skin, dark ash-brown braided hair, plain muted ochre/dark-gold long wool tunic with charcoal cloak, leather belt and worn boots. No crown, no armor, no weapon, no jewelry spectacle. Face turned three-quarter right, both feet planted, arms calmly relaxed. Readable compact youthful human proportions matching reference game's small sprite rendering, not its male warrior identity. Cold grey shadow palette with restrained gold clothing; hard square pixels, top-left lighting, dark crisp contour, no antialiasing, no gradients or painterly blur. Design as a 64x64 sprite with visible face, shoulders, two boots and 2-pixel margin. One centered figure only, no platform, no text, no background, no scenery. Reference is only for pixel density, contrast and material shading.",
+  "references": [
+    {
+      "input": "/Users/zhangjunqiu/Desktop/无限恐怖/assets/sprites/quests/einherjar_idle.png",
+      "archive": "references/einherjar_idle.png",
+      "sha256": "23fb36f1708384de4c94aa416ad9af4a02407d5a5a5e27d16552b2fbb8af6051"
+    }
+  ],
+  "original": "originals/bridge_guard_v01.png",
+  "sha256": "2ea69c9d4eec7a10eb49250d9dc8219701c8a09f6739f3c404bfb824b9efbb65",
+  "source_path": "/Users/zhangjunqiu/.codex/generated_images/01a14093-604c-72e3-b0c2-585e428c4824/exec-a13f7208-4581-4f24-8da5-6ec8a4e3013d.png",
+  "commercial_basis": "https://openai.com/policies/terms-of-use/",
+  "status": "candidate"
+}

@@ -1,0 +1,103 @@
+{
+  "task_id": "I6",
+  "assets": [
+    {
+      "task_id": "I6",
+      "file": "assets/sprites/quests/sun_altar.png",
+      "source_tool": "OpenAI built-in image_gen",
+      "license": "https://openai.com/policies/terms-of-use/",
+      "frame_size": [
+        96,
+        96
+      ],
+      "frames": 1,
+      "fps": 0,
+      "loop": false,
+      "anchor": [
+        48,
+        94
+      ],
+      "alpha_strategy": "binary 0/255; solid object and feather silhouette",
+      "rgb_count": 48,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "sha256": "d4077296f0eaf73ffe5954deb30bee4c86ddecc962d4082c88da975ceb3b6a19",
+      "frame_bboxes": [
+        [
+          2,
+          43,
+          94,
+          94
+        ]
+      ],
+      "unique_frames": 1,
+      "actual_self_checks": {
+        "rgba_dimensions_padding_colors_alpha_hash": "passed",
+        "native_and_4x_dark_background": "visually reviewed",
+        "all_frames_and_loop_transition": "not applicable",
+        "gif_decode_pixels_and_average_fps": "not applicable",
+        "visual_notes": "低矮台阶和空白台面可辨认；源图外围低alpha背景经实体alpha阈值去除，正式图无底色/光晕；现有余烬叠图可置于台面。",
+        "game_engine_rendering": "reviewed all four animation poses and offered/active/prop context; 18 screenshots across six tasks"
+      },
+      "normalization": {
+        "source_size": [
+          1536,
+          1024
+        ],
+        "output_size": [
+          96,
+          96
+        ],
+        "placements": [
+          {
+            "crop": [
+              152,
+              230,
+              1371,
+              912
+            ],
+            "size": [
+              92,
+              51
+            ],
+            "position": [
+              2,
+              43
+            ]
+          }
+        ],
+        "scale": 0.07547169811320754,
+        "rgb_count": 48,
+        "alpha_values": [
+          0,
+          255
+        ],
+        "unique_frames": 1,
+        "sha256": "d4077296f0eaf73ffe5954deb30bee4c86ddecc962d4082c88da975ceb3b6a19",
+        "operations": [
+          "alpha threshold 128",
+          "equal-width frame crop",
+          "common nearest-neighbor scale",
+          "48-color source palette",
+          "whole-frame bottom/center placement"
+        ],
+        "status": "awaiting visual review"
+      },
+      "selected_candidate": "candidates/sun_altar_v01.png",
+      "selected_approved": "approved/sun_altar.png",
+      "additional_source_operations": [],
+      "previews": [],
+      "failed_candidates": [],
+      "code_integration": "integrated",
+      "runtime_acceptance": "controlled_runtime_verified",
+      "manual_game_acceptance": "not performed",
+      "remaining_problems": [
+        "完整手动通关与密集实战遮挡未测。"
+      ],
+      "tiling_preview": "not applicable: isolated non-tile quest asset",
+      "runtime_evidence": "../taskI1_bridge_guard_2026-10-19/runtime/runtime_checks.json"
+    }
+  ]
+}

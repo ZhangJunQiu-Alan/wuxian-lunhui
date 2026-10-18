@@ -1,0 +1,176 @@
+{
+  "task_id": "I3",
+  "assets": [
+    {
+      "task_id": "I3",
+      "file": "assets/sprites/quests/valkyrie_wings.png",
+      "source_tool": "OpenAI built-in image_gen",
+      "license": "https://openai.com/policies/terms-of-use/",
+      "frame_size": [
+        64,
+        32
+      ],
+      "frames": 4,
+      "fps": 8,
+      "loop": true,
+      "anchor": [
+        32,
+        16
+      ],
+      "alpha_strategy": "binary 0/255; solid object and feather silhouette",
+      "rgb_count": 44,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "sha256": "0335287f7cdb4751d034c6f3923c34a02e0d6000eaec177786a62909561a4260",
+      "frame_bboxes": [
+        [
+          3,
+          2,
+          61,
+          30
+        ],
+        [
+          2,
+          6,
+          62,
+          26
+        ],
+        [
+          2,
+          3,
+          61,
+          28
+        ],
+        [
+          2,
+          3,
+          62,
+          28
+        ]
+      ],
+      "unique_frames": 4,
+      "actual_self_checks": {
+        "rgba_dimensions_padding_colors_alpha_hash": "passed",
+        "native_and_4x_dark_background": "visually reviewed",
+        "all_frames_and_loop_transition": "reviewed",
+        "gif_decode_pixels_and_average_fps": "passed",
+        "visual_notes": "四种张合角度可分辨，只有两翼，中心13px以上透明；整体中心(32,16)，无人体或大光晕。",
+        "game_engine_rendering": "reviewed all four animation poses and offered/active/prop context; 18 screenshots across six tasks"
+      },
+      "normalization": {
+        "source_size": [
+          1983,
+          793
+        ],
+        "output_size": [
+          256,
+          32
+        ],
+        "placements": [
+          {
+            "crop": [
+              32,
+              240,
+              454,
+              450
+            ],
+            "size": [
+              56,
+              28
+            ],
+            "position": [
+              4,
+              2
+            ]
+          },
+          {
+            "crop": [
+              27,
+              300,
+              463,
+              451
+            ],
+            "size": [
+              58,
+              20
+            ],
+            "position": [
+              3,
+              6
+            ]
+          },
+          {
+            "crop": [
+              32,
+              328,
+              459,
+              519
+            ],
+            "size": [
+              57,
+              25
+            ],
+            "position": [
+              3,
+              3
+            ]
+          },
+          {
+            "crop": [
+              28,
+              265,
+              464,
+              450
+            ],
+            "size": [
+              58,
+              25
+            ],
+            "position": [
+              3,
+              3
+            ]
+          }
+        ],
+        "scale": 0.13333333333333333,
+        "rgb_count": 44,
+        "alpha_values": [
+          0,
+          255
+        ],
+        "unique_frames": 4,
+        "sha256": "58a17e8e368dbe92e050e382e8fec24260c81a264492a8fc68e780f282865fee",
+        "operations": [
+          "alpha threshold 128",
+          "equal-width frame crop",
+          "common nearest-neighbor scale",
+          "48-color source palette",
+          "whole-frame bottom/center placement"
+        ],
+        "status": "awaiting visual review"
+      },
+      "selected_candidate": "candidates/valkyrie_wings_registered.png",
+      "selected_approved": "approved/valkyrie_wings.png",
+      "additional_source_operations": [
+        "左右整翼分别向外平移1px，保持2px四周留白，扩大透明中心。"
+      ],
+      "previews": [
+        "previews/valkyrie_wings_native_1x.gif",
+        "previews/valkyrie_wings_slow8fps_1x.gif",
+        "previews/valkyrie_wings_native_4x.gif",
+        "previews/valkyrie_wings_slow8fps_4x.gif"
+      ],
+      "failed_candidates": [],
+      "code_integration": "integrated",
+      "runtime_acceptance": "controlled_runtime_verified",
+      "manual_game_acceptance": "not performed",
+      "remaining_problems": [
+        "完整手动通关与密集实战遮挡未测。"
+      ],
+      "tiling_preview": "not applicable: isolated non-tile quest asset",
+      "runtime_evidence": "../taskI1_bridge_guard_2026-10-19/runtime/runtime_checks.json"
+    }
+  ]
+}

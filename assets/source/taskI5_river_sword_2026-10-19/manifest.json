@@ -1,0 +1,178 @@
+{
+  "task_id": "I5",
+  "assets": [
+    {
+      "task_id": "I5",
+      "file": "assets/sprites/quests/river_sword.png",
+      "source_tool": "OpenAI built-in image_gen",
+      "license": "https://openai.com/policies/terms-of-use/",
+      "frame_size": [
+        32,
+        64
+      ],
+      "frames": 4,
+      "fps": 8,
+      "loop": true,
+      "anchor": [
+        16,
+        62
+      ],
+      "alpha_strategy": "binary 0/255; solid object and feather silhouette",
+      "rgb_count": 46,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "sha256": "424f1b00485382fec3840d915f889069a6d90627e82ed73a9e0d783f9749d13c",
+      "frame_bboxes": [
+        [
+          7,
+          2,
+          25,
+          61
+        ],
+        [
+          6,
+          2,
+          25,
+          61
+        ],
+        [
+          6,
+          2,
+          26,
+          61
+        ],
+        [
+          9,
+          2,
+          25,
+          62
+        ]
+      ],
+      "unique_frames": 4,
+      "actual_self_checks": {
+        "rgba_dimensions_padding_colors_alpha_hash": "passed",
+        "native_and_4x_dark_background": "visually reviewed",
+        "all_frames_and_loop_transition": "reviewed",
+        "gif_decode_pixels_and_average_fps": "passed",
+        "visual_notes": "实体刀身、横护手、柄和圆形柄头可分辨，四帧微弱冷色闪光/涟漪；刀尖整帧定位在顶边y2，刀身中心x16附近，非整身旋转。",
+        "game_engine_rendering": "reviewed all four animation poses and offered/active/prop context; 18 screenshots across six tasks"
+      },
+      "normalization": {
+        "source_size": [
+          1774,
+          887
+        ],
+        "output_size": [
+          128,
+          64
+        ],
+        "placements": [
+          {
+            "crop": [
+              97,
+              56,
+              352,
+              855
+            ],
+            "size": [
+              19,
+              60
+            ],
+            "position": [
+              7,
+              2
+            ]
+          },
+          {
+            "crop": [
+              88,
+              56,
+              348,
+              855
+            ],
+            "size": [
+              20,
+              60
+            ],
+            "position": [
+              6,
+              2
+            ]
+          },
+          {
+            "crop": [
+              91,
+              56,
+              356,
+              855
+            ],
+            "size": [
+              20,
+              60
+            ],
+            "position": [
+              6,
+              2
+            ]
+          },
+          {
+            "crop": [
+              87,
+              56,
+              338,
+              855
+            ],
+            "size": [
+              19,
+              60
+            ],
+            "position": [
+              6,
+              2
+            ]
+          }
+        ],
+        "scale": 0.07509386733416772,
+        "rgb_count": 46,
+        "alpha_values": [
+          0,
+          255
+        ],
+        "unique_frames": 4,
+        "sha256": "e25545a0a9b97bf57a7cfdf378eb17ea6c62a85b96dd427d4552307236b79687",
+        "operations": [
+          "alpha threshold 128",
+          "equal-width frame crop",
+          "common nearest-neighbor scale",
+          "48-color source palette",
+          "whole-frame bottom/center placement"
+        ],
+        "status": "awaiting visual review"
+      },
+      "selected_candidate": "candidates/river_sword_registered.png",
+      "selected_approved": "approved/river_sword.png",
+      "additional_source_operations": [
+        "原bbox居中使刀尖漂移1px；按上方刀身定位整帧，刀尖顶行y2；旧候选保留。"
+      ],
+      "previews": [
+        "previews/river_sword_native_1x.gif",
+        "previews/river_sword_slow8fps_1x.gif",
+        "previews/river_sword_native_4x.gif",
+        "previews/river_sword_slow8fps_4x.gif"
+      ],
+      "failed_candidates": [
+        "river_sword_rejected_registration.png"
+      ],
+      "code_integration": "integrated",
+      "runtime_acceptance": "controlled_runtime_verified",
+      "manual_game_acceptance": "not performed",
+      "remaining_problems": [
+        "完整手动通关与密集实战遮挡未测。"
+      ],
+      "tiling_preview": "not applicable: isolated non-tile quest asset",
+      "runtime_evidence": "../taskI1_bridge_guard_2026-10-19/runtime/runtime_checks.json"
+    }
+  ]
+}

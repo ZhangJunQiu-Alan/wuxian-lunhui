@@ -5,6 +5,7 @@ extends SideQuest
 ## 奖励：大招能量充满，奖励点 +100
 
 const EMBER := preload("res://assets/sprites/quests/sun_ember.png")  # 4 帧闪烁
+const ALTAR := preload("res://assets/sprites/quests/sun_altar.png")
 const PICKUP := 30.0
 const ALTAR_RADIUS := 70.0
 const CARRY_SPEED := 0.8
@@ -92,6 +93,7 @@ func _draw_quest() -> void:
 	var pulse := 0.5 + 0.5 * sin(_time * 4.0)
 	draw_circle(_altar, ALTAR_RADIUS, Color(color, 0.05 + 0.05 * pulse))
 	draw_arc(_altar, ALTAR_RADIUS, 0.0, TAU, 48, Color(color, 0.5), 3.0)
+	SpriteVisual.draw_frame(self, ALTAR, 1, 0, (_altar + Vector2(0, 16)).round(), Vector2(48, 94))
 	if not _carried:
 		_draw_ember(self, _ember + Vector2(0, -6))
 

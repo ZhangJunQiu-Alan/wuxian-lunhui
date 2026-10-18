@@ -4,6 +4,7 @@ extends SideQuest
 ## 奖励：奖励点 +100，生命全部恢复
 
 const CAMPFIRE := preload("res://assets/sprites/quests/campfire.png")  # 4 帧火焰循环
+const SURVIVORS := preload("res://assets/sprites/quests/bonfire_survivors.png")
 const ZONE_RADIUS := 150.0
 const HOLD_TIME := 45.0
 const WAVE_EVERY := 6.0
@@ -57,7 +58,5 @@ func _draw_quest() -> void:
 		draw_arc(marker_pos, ZONE_RADIUS, 0.0, TAU, 64, Color(color, 0.8 if inside else 0.4), 3.0)
 		# 进度环
 		draw_arc(marker_pos, ZONE_RADIUS + 8.0, -PI / 2, -PI / 2 + TAU * _held / HOLD_TIME, 64, Color(1.0, 0.9, 0.5), 4.0)
+	SpriteVisual.draw_frame(self, SURVIVORS, 1, 0, (marker_pos + Vector2(0, 12)).round(), Vector2(64, 62))
 	SpriteVisual.draw_frame(self, CAMPFIRE, 4, int(_time * 8.0), marker_pos + Vector2(0, 12), Vector2(32, 62))
-	# 围着篝火的幸存者
-	for i in 4:
-		draw_circle(marker_pos + Vector2.from_angle(TAU * i / 4 + 0.4) * 34.0, 6.0, Color(0.85, 0.75, 0.6))

@@ -1,0 +1,60 @@
+{
+  "changed_existing_files": [
+    "scripts/quests/ember_quest.gd",
+    "scripts/quests/river_sword_quest.gd",
+    "scripts/quests/bridge_guard_quest.gd",
+    "scripts/quests/bonfire_quest.gd",
+    "scripts/quests/hoof_tracks_quest.gd",
+    "scripts/quests/valkyrie_quest.gd",
+    "scripts/ui/title.gd",
+    "scripts/ui/hub.gd"
+  ],
+  "expected_files": [
+    "scripts/quests/bridge_guard_quest.gd",
+    "scripts/quests/bonfire_quest.gd",
+    "scripts/quests/valkyrie_quest.gd",
+    "scripts/quests/hoof_tracks_quest.gd",
+    "scripts/quests/river_sword_quest.gd",
+    "scripts/quests/ember_quest.gd"
+  ],
+  "non_visual_functions": [
+    {
+      "file": "scripts/quests/bridge_guard_quest.gd",
+      "non_visual_functions_identical": true
+    },
+    {
+      "file": "scripts/quests/bonfire_quest.gd",
+      "non_visual_functions_identical": true
+    },
+    {
+      "file": "scripts/quests/valkyrie_quest.gd",
+      "non_visual_functions_identical": true
+    },
+    {
+      "file": "scripts/quests/hoof_tracks_quest.gd",
+      "non_visual_functions_identical": true
+    },
+    {
+      "file": "scripts/quests/river_sword_quest.gd",
+      "non_visual_functions_identical": true
+    },
+    {
+      "file": "scripts/quests/ember_quest.gd",
+      "non_visual_functions_identical": true
+    }
+  ],
+  "project_and_scenes_unchanged": true,
+  "concurrent_external_changes": [
+    "scripts/ui/hub.gd",
+    "scripts/ui/title.gd"
+  ],
+  "concurrent_external_note": "本代理未编辑 scripts/ui/hub.gd、scripts/ui/title.gd；检测到相对本轮基线的并发变化，保留不回滚。",
+  "our_existing_code_changes": [
+    "scripts/quests/bridge_guard_quest.gd",
+    "scripts/quests/bonfire_quest.gd",
+    "scripts/quests/valkyrie_quest.gd",
+    "scripts/quests/hoof_tracks_quest.gd",
+    "scripts/quests/river_sword_quest.gd",
+    "scripts/quests/ember_quest.gd"
+  ]
+}

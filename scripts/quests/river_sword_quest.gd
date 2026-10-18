@@ -8,6 +8,7 @@ const DIG_TIME := 15.0
 const ZONE_RADIUS := 90.0
 const WAVE_EVERY := 4.0
 const WAVE_SIZE := 4
+const SWORD := preload("res://assets/sprites/quests/river_sword.png")
 
 var _dug := 0.0
 var _wave_timer := 2.0
@@ -58,5 +59,5 @@ func _draw_quest() -> void:
 	draw_arc(marker_pos, ZONE_RADIUS, -PI / 2, -PI / 2 + TAU * k, 48, color, 4.0)
 	for i in 6:  # 冰面裂纹越来越长
 		var dir := Vector2.from_angle(i * 1.05 + 0.3)
-		draw_line(marker_pos, marker_pos + dir * ZONE_RADIUS * k, Color(0.9, 0.97, 1.0, 0.7), 2.0)
-	draw_line(marker_pos + Vector2(-10, 10), marker_pos + Vector2(12, -12), Color(1.0, 1.0, 0.85, 0.5 + 0.5 * k), 3.0)
+		draw_line(marker_pos, marker_pos + dir * ZONE_RADIUS * k, Color(0.9, 0.97, 1.0, 0.35), 1.0)
+	SpriteVisual.draw_frame(self, SWORD, 4, int(_time * 8.0), (marker_pos + Vector2(0, 12)).round(), Vector2(16, 62))

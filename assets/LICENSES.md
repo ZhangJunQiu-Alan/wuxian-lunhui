@@ -174,3 +174,15 @@ G4、G5各13个PNG，共26文件完成本代理美术自检，已复制至sprite
 ### 任务G1～G3交付补记（2026-10-18）
 
 G1、G2、G3各4张，共12张厚涂非像素画像完成本代理美术自检并复制到sprites/cards/，均PNG RGB720×1200。三个独立目录source/taskG1_light_sea_2026-10-18、taskG2_harvest_hunt_2026-10-18、taskG3_original_awaken_2026-10-18分别保留7/11/6张原始生成图，共24张，其中12份退回稿均记录原因。新四神普通画像上传项目自有原四神卡作画风参考；觉醒版直接编辑对应普通画像，只用项目自有输入，无外部角色造型，提示词不含人物或作品/画师名。工具沿用已批准内置image_gen和已核验OpenAI输出商业使用/所有权依据：https://openai.com/policies/terms-of-use/ ；Pillow沿用MIT-CMU，仅作RGB/尺寸、Lanczos缩小、预览、120级离线PNG尺寸链及核验，不在Python重画角色。原图、实际Prompt、输入参考快照/哈希、选中/退回记录及检查见各组manifest.json、records/generation_jobs.json和final_audit.json。实际查看原图手/脸/武器与动物、260×433、下45%90%深色遮罩、旧四神对照及普通/觉醒配对；文件格式、正式/approved/候选哈希、原图及参考哈希、每组40级尺寸链和本地gallery链接审计全部零错误；原四神普通卡与参考快照字节一致。此前磁盘满仅暂停写入，用户清理后已补齐交付，未删除原图或失败稿。没有新增注册、付费、收费API、脚本/场景/项目设置修改或Git提交。未配置Godot导入mipmap、未游戏实测；由用户/代码代理接入、设置平滑过滤并验收。
+
+
+### Part I 开工登记（2026-10-19）
+
+I1～I6共7项PNG，沿用用户与当前任务书明确批准的OpenAI内置image_gen及本台账已核验商用依据 https://openai.com/policies/terms-of-use/ 。只使用项目已有自有像素图及本批自产角色作输入，不写人物、作品或画师名；不新增账号、注册、付款或收费API。Pillow沿用MIT-CMU，仅作源像素裁排、最近邻尺度/色表/alpha规范化、预览和核验，不重画人物或道具。原图、实际Prompt和输入、退回原因、哈希与交接分别记录六个taskI目录。此为开工登记，不代表制作、自检、代码接入或游戏验收完成；G6/J/K/L不接管。
+
+
+### Part I / I1～I6 交付与代码接入补记（2026-10-19）
+
+7张正式RGBA PNG、16个帧格已交付到sprites/quests/：bridge_guard、bridge_guard_idle、bonfire_survivors、valkyrie_wings、iron_horseshoe、river_sword、sun_altar。实际7次已批准内置image_gen生成，7张原图及真实Prompt/输入参考/哈希保存在六个taskI独立目录；沿用本台账OpenAI输出商用依据 https://openai.com/policies/terms-of-use/ ，没有外部作品/人物/画师名提示、新账号、注册、购买或收费API。静态少女最终取同源待机第0格，最初独立静态保留为设计参考候选；未重复帧凑动画。Pillow只作整帧/整组裁排、最近邻统一尺度、来源色表限色、alpha二值规范化与预览/核验，未重画人物道具。幸存者24/36px空隙候选退回保留，最终54px中央透明容纳现有最大51px篝火；翼对整侧外移1px保证透明中心；剑尖依据原像素整帧定位，旧定位候选保留。所有实体二值alpha、精确尺寸、>=2px边距、RGB<=48（实际29～48色）、正式/approved/manifest哈希通过，3条4帧8fps循环提供12份最终原速/8fps慢放GIF，解码逐像素及平均帧率通过，深色底1倍/4倍/人物脚底和躯干中心、四帧回接/篝火与余烬叠图已审。非平铺独立物件，4×4地块平铺不适用。
+
+六份支线绘制已接入；羽翼在原有z20前景层，篝火与余烬复用原正式图。冥河裂纹只减细/减淡以突出剑身；六个支线所有非绘制函数与开工备份完全相同，互动圈/计时/指示/成功条件/奖励/刷怪逻辑保留。Godot4.7.2实际Game场景、真实关卡和地标，专项77项0失败，18张无暂停遮挡实际渲染截图逐帧复查；现有战斗回归997项0失败。早期通用地标fixture、自动暂停遮挡和裂纹抢眼截图保留。Godot使用沿用已核验MIT许可 https://godotengine.org/license/ 。制作、文件自检、代码接入及受控运行验证完成；完整手动通关、长时平衡、密集实战遮挡与其他硬件未测，不标游戏整体验收通过。证据入口source/taskI1_bridge_guard_2026-10-19/index.html和completion.json，每个I目录具备manifest/README/gallery/integration。未改场景、项目配置或docs，未接管G6/J/K/L，未操作浏览器或更改其设置，未提交/推送Git。检测到并发代理修改ui/hub.gd和ui/title.gd，原样保留不回滚。

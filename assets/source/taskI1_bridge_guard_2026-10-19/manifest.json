@@ -1,0 +1,313 @@
+{
+  "task_id": "I1",
+  "assets": [
+    {
+      "task_id": "I1",
+      "file": "assets/sprites/quests/bridge_guard.png",
+      "source_tool": "OpenAI built-in image_gen",
+      "license": "https://openai.com/policies/terms-of-use/",
+      "frame_size": [
+        64,
+        64
+      ],
+      "frames": 1,
+      "fps": 0,
+      "loop": false,
+      "anchor": [
+        32,
+        62
+      ],
+      "alpha_strategy": "binary 0/255; solid object and feather silhouette",
+      "rgb_count": 43,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "sha256": "a74174b4903bb1313d3a5c83071007c12c1f1e777cc297c2db44a9ebf7d03b9c",
+      "frame_bboxes": [
+        [
+          15,
+          2,
+          48,
+          62
+        ]
+      ],
+      "unique_frames": 1,
+      "actual_self_checks": {
+        "rgba_dimensions_padding_colors_alpha_hash": "passed",
+        "native_and_4x_dark_background": "visually reviewed",
+        "all_frames_and_loop_transition": "not applicable",
+        "gif_decode_pixels_and_average_fps": "not applicable",
+        "visual_notes": "年轻女性、暗金布衣、深灰斗篷、发辫与朝右轮廓已看；正式静态取自待机第0帧，避免静/动尺寸切换。",
+        "game_engine_rendering": "reviewed all four animation poses and offered/active/prop context; 18 screenshots across six tasks"
+      },
+      "normalization": {
+        "source_size": [
+          1254,
+          1254
+        ],
+        "output_size": [
+          64,
+          64
+        ],
+        "placements": [
+          {
+            "crop": [
+              358,
+              93,
+              913,
+              1185
+            ],
+            "size": [
+              30,
+              60
+            ],
+            "position": [
+              17,
+              2
+            ]
+          }
+        ],
+        "scale": 0.054945054945054944,
+        "rgb_count": 44,
+        "alpha_values": [
+          0,
+          255
+        ],
+        "unique_frames": 1,
+        "sha256": "af7ba861341a889c6856c95a6be75c7c89d433e75988b6a94cbd96ae185abaff",
+        "operations": [
+          "alpha threshold 128",
+          "equal-width frame crop",
+          "common nearest-neighbor scale",
+          "48-color source palette",
+          "whole-frame bottom/center placement"
+        ],
+        "status": "awaiting visual review"
+      },
+      "selected_candidate": "candidates/bridge_guard_from_idle.png",
+      "selected_approved": "approved/bridge_guard.png",
+      "additional_source_operations": [
+        "最终静态从同源待机原图规范化第0格裁得；首次独立静态保留为角色设计输入和候选，未冒称独立静态原图直接成为成品。"
+      ],
+      "previews": [],
+      "failed_candidates": [],
+      "code_integration": "integrated",
+      "runtime_acceptance": "controlled_runtime_verified",
+      "manual_game_acceptance": "not performed",
+      "remaining_problems": [
+        "完整手动通关与密集实战遮挡未测。"
+      ],
+      "tiling_preview": "not applicable: isolated non-tile quest asset",
+      "runtime_evidence": "../taskI1_bridge_guard_2026-10-19/runtime/runtime_checks.json"
+    },
+    {
+      "task_id": "I1",
+      "file": "assets/sprites/quests/bridge_guard_idle.png",
+      "source_tool": "OpenAI built-in image_gen",
+      "license": "https://openai.com/policies/terms-of-use/",
+      "frame_size": [
+        64,
+        64
+      ],
+      "frames": 4,
+      "fps": 8,
+      "loop": true,
+      "anchor": [
+        32,
+        62
+      ],
+      "alpha_strategy": "binary 0/255; solid object and feather silhouette",
+      "rgb_count": 43,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "sha256": "d47997d366b033a04617db4f559332bfb772fcc35dbfb0072cc2e84e2d73566c",
+      "frame_bboxes": [
+        [
+          15,
+          2,
+          48,
+          62
+        ],
+        [
+          15,
+          2,
+          48,
+          62
+        ],
+        [
+          15,
+          2,
+          48,
+          62
+        ],
+        [
+          15,
+          2,
+          48,
+          62
+        ]
+      ],
+      "unique_frames": 4,
+      "actual_self_checks": {
+        "rgba_dimensions_padding_colors_alpha_hash": "passed",
+        "native_and_4x_dark_background": "visually reviewed",
+        "all_frames_and_loop_transition": "reviewed",
+        "gif_decode_pixels_and_average_fps": "passed",
+        "visual_notes": "四帧逐格查看，面部/服装/发辫一致；双靴落地基线固定y61，细小呼吸与披风变化，循环回接无大幅跳转。脚边像素存在1px以内轮廓变化，未宣称逐像素完全相同。",
+        "game_engine_rendering": "reviewed all four animation poses and offered/active/prop context; 18 screenshots across six tasks",
+        "body_registration": {
+          "foot_bottom_y": [
+            61,
+            61,
+            61,
+            61
+          ],
+          "torso_bbox_y24_to44": [
+            [
+              16,
+              0,
+              46,
+              20
+            ],
+            [
+              16,
+              0,
+              46,
+              20
+            ],
+            [
+              16,
+              0,
+              46,
+              20
+            ],
+            [
+              16,
+              0,
+              46,
+              20
+            ]
+          ],
+          "torso_x_center": 31,
+          "world_anchor": [
+            32,
+            62
+          ]
+        }
+      },
+      "normalization": {
+        "source_size": [
+          1983,
+          793
+        ],
+        "output_size": [
+          256,
+          64
+        ],
+        "placements": [
+          {
+            "crop": [
+              98,
+              57,
+              481,
+              758
+            ],
+            "size": [
+              33,
+              60
+            ],
+            "position": [
+              15,
+              2
+            ]
+          },
+          {
+            "crop": [
+              77,
+              57,
+              462,
+              759
+            ],
+            "size": [
+              33,
+              60
+            ],
+            "position": [
+              15,
+              2
+            ]
+          },
+          {
+            "crop": [
+              56,
+              61,
+              443,
+              759
+            ],
+            "size": [
+              33,
+              60
+            ],
+            "position": [
+              15,
+              2
+            ]
+          },
+          {
+            "crop": [
+              22,
+              57,
+              409,
+              759
+            ],
+            "size": [
+              33,
+              60
+            ],
+            "position": [
+              15,
+              2
+            ]
+          }
+        ],
+        "scale": 0.08547008547008547,
+        "rgb_count": 43,
+        "alpha_values": [
+          0,
+          255
+        ],
+        "unique_frames": 4,
+        "sha256": "d47997d366b033a04617db4f559332bfb772fcc35dbfb0072cc2e84e2d73566c",
+        "operations": [
+          "alpha threshold 128",
+          "equal-width frame crop",
+          "common nearest-neighbor scale",
+          "48-color source palette",
+          "whole-frame bottom/center placement"
+        ],
+        "status": "awaiting visual review"
+      },
+      "selected_candidate": "candidates/bridge_guard_idle_v01.png",
+      "selected_approved": "approved/bridge_guard_idle.png",
+      "additional_source_operations": [],
+      "previews": [
+        "previews/bridge_guard_idle_native_1x.gif",
+        "previews/bridge_guard_idle_slow8fps_1x.gif",
+        "previews/bridge_guard_idle_native_4x.gif",
+        "previews/bridge_guard_idle_slow8fps_4x.gif"
+      ],
+      "failed_candidates": [],
+      "code_integration": "integrated",
+      "runtime_acceptance": "controlled_runtime_verified",
+      "manual_game_acceptance": "not performed",
+      "remaining_problems": [
+        "完整手动通关与密集实战遮挡未测。"
+      ],
+      "tiling_preview": "not applicable: isolated non-tile quest asset",
+      "runtime_evidence": "../taskI1_bridge_guard_2026-10-19/runtime/runtime_checks.json"
+    }
+  ]
+}
