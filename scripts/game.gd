@@ -379,8 +379,8 @@ func add_story_points(amount: int) -> void:
 	story_points += amount
 
 
-## 一局结束：结算存活时间和通关奖励，写进存档，返回结算界面上显示的文字
-func _finish_run(cleared: bool) -> String:
+## 一局结束：结算存活时间和通关奖励，写进存档，返回结算界面要显示的数据
+func _finish_run(cleared: bool) -> Dictionary:
 	if not _run_recorded:
 		_run_recorded = true
 		add_reward_points(int(elapsed / 60.0) * POINTS_PER_MINUTE)
@@ -388,8 +388,9 @@ func _finish_run(cleared: bool) -> String:
 			add_reward_points(level_data.clear_reward)
 		Save.record_codex(_codex)
 		Save.record_run(level_id, reward_points, story_points, cleared, elapsed, kills, _quests_done)
-	return tr("支线完成 %d / %d　发现隐藏支线 %d / %d\n本局获得：奖励点 +%d　支线剧情点 +%d\n累计：奖励点 %d　支线剧情点 %d") % [
-		_quests_done, _quests_seen, _hidden_found, _hidden.size(), reward_points, story_points, Save.reward_points, Save.story_points]
+	return {"elapsed": elapsed, "kills": kills, "level": player.level,
+		"quests_done": _quests_done, "quests_seen": _quests_seen, "hidden_found": _hidden_found, "hidden_total": _hidden.size(),
+		"reward_points": reward_points, "story_points": story_points, "reward_total": Save.reward_points, "story_total": Save.story_points}
 
 
 func _on_boss_defeated(defeated_boss: Boss) -> void:
@@ -528,12 +529,12 @@ func _on_level_cleared() -> void:
 		return
 	get_tree().paused = true
 	Audio.music("victory")
-	hud.show_victory(tr(level_data.name), tr(level_data.clear_text), elapsed, kills, player.level, _finish_run(true))
+	hud.show_result("victory", tr(level_data.name), tr(level_data.clear_text), _finish_run(true), player)
 
 
 func _on_abandon_requested() -> void:
 	get_tree().paused = true
-	hud.show_game_over(elapsed, kills, player.level, _finish_run(false), tr("你放弃了本局"))
+	hud.show_result("abandon", tr(level_data.name), "", _finish_run(false), player)
 
 
 func _on_player_died() -> void:
@@ -547,7 +548,7 @@ func _on_player_died() -> void:
 	Audio.music("defeat")
 	if delay > 0.0:
 		await get_tree().create_timer(delay + 0.4).timeout
-	hud.show_game_over(elapsed, kills, player.level, _finish_run(false))
+	hud.show_result("death", tr(level_data.name), "", _finish_run(false), player)
 
 
 func _draw() -> void:

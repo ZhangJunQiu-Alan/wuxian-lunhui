@@ -285,11 +285,6 @@ Every god and every giant is marching toward the same plain."
 【主神】支线剧情完成：%s。%s,[Lord God] Side story complete: %s. %s
 【主神】支线剧情失败：,[Lord God] Side story failed: 
 错过了支线剧情：,Missed side story: 
-"支线完成 %d / %d　发现隐藏支线 %d / %d
-本局获得：奖励点 +%d　支线剧情点 +%d
-累计：奖励点 %d　支线剧情点 %d","Side stories %d / %d   Hidden stories found %d / %d
-This run: Reward Points +%d   Story Points +%d
-Total: Reward Points %d   Story Points %d"
 奖励点 +%d,Reward Points +%d
 宝箱！选择一项奖励,A chest! Choose a reward
 你放弃了本局,You abandoned the run
@@ -496,18 +491,6 @@ Stage %d · %s    [Enter]"
 标记 %d 秒后消失,Marker disappears in %d s
 线索：,Clue: 
 你死了,You Died
-"主线任务完成 · %s
-
-%s
-%s
-
-%s","Main Quest Complete · %s
-
-%s
-%s
-
-%s"
-用时 %02d:%02d　等级 %d　击杀 %d,Time %02d:%02d   Level %d   Kills %d
 再来一次,Try Again
 返回主神空间,Return to Lord God's Space
 点击卡牌或按数字键选择,Click a card or press a number key
@@ -807,3 +790,14 @@ Stage %d · %s    [Enter]"
 （觉醒）, (awaken)
 信仰 %d → %d / %d,Faith %d → %d / %d
 神明强化,God Boons
+主线任务完成,Main Quest Complete
+信仰 %d,Faith %d
+融合技 · %s,Fusion · %s
+用时,Time
+等级,Level
+击杀,Kills
+支线完成,Side Stories
+发现隐藏支线,Hidden Found
+奖励点,Reward Points
+累计 %d,Total %d
+支线剧情点,Story Points

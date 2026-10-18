@@ -2,6 +2,15 @@ class_name Hud
 extends CanvasLayer
 ## 战斗界面：经验条、血条、计时、击杀数、死亡结算
 
+const GOLD := Color(1.0, 0.85, 0.4)
+const RESULT_DIM := Color(0.62, 0.65, 0.72)
+const RESULT_CARD := Vector2(88, 132)
+const RESULT_KINDS := {
+	"victory": {"title": "主线任务完成", "color": Color(1.0, 0.85, 0.4)},
+	"death": {"title": "你死了", "color": Color(0.95, 0.38, 0.32)},
+	"abandon": {"title": "你放弃了本局", "color": Color(0.7, 0.74, 0.82)},
+}
+
 var character_id := CharacterDB.DEFAULT_ID  # 由 game.gd 在创建 HUD 前设置
 var _xp_bar: ProgressBar
 var _hp_bar: ProgressBar
@@ -23,8 +32,6 @@ var _boss_name: Label
 var _boss_bar: ProgressBar
 var _hurt_flash: ColorRect
 var _last_hp := -1.0
-var _game_over: Control
-var _result_label: Label
 
 
 func _ready() -> void:
@@ -157,7 +164,6 @@ func _ready() -> void:
 	_pointer = QuestPointer.new()
 	add_child(_pointer)
 
-	_build_game_over()
 
 
 func _make_label(pos: Vector2) -> Label:
@@ -277,58 +283,235 @@ func _process(_delta: float) -> void:
 		_fps_label.text = "%d FPS" % Engine.get_frames_per_second()
 
 
-func show_game_over(elapsed: float, kills: int, level: int, rewards: String, title: String = "你死了") -> void:
-	_result_label.text = tr(title) + "\n\n" + _stats_text(elapsed, kills, level) + "\n" + rewards
-	hide_quest()
-	_game_over.visible = true
+## 结算界面。kind：victory 通关、death 死亡、abandon 放弃；run 是 game.gd 结算出来的数据
+func show_result(kind: String, level_name: String, story: String, run: Dictionary, player: Player) -> void:
+	for child in get_children():
+		if child is CanvasItem:
+			child.visible = false  # 其余战斗界面全部收起，只留结算
+	var accent: Color = RESULT_KINDS[kind].color
 
-
-func show_victory(level_name: String, story: String, elapsed: float, kills: int, level: int, rewards: String) -> void:
-	_result_label.text = tr("主线任务完成 · %s\n\n%s\n%s\n\n%s") % [level_name, _stats_text(elapsed, kills, level), rewards, story]
-	hide_quest()
-	_result_label.modulate = Color(1.0, 0.88, 0.55)
-	hide_boss()
-	_game_over.visible = true
-
-
-func _stats_text(elapsed: float, kills: int, level: int) -> String:
-	return tr("用时 %02d:%02d　等级 %d　击杀 %d") % [int(elapsed) / 60, int(elapsed) % 60, level, kills]
-
-
-func _build_game_over() -> void:
-	_game_over = ColorRect.new()
-	(_game_over as ColorRect).color = Color(0, 0, 0, 0.7)
-	_game_over.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
-	_game_over.visible = false
-	add_child(_game_over)
-
+	var screen := ColorRect.new()
+	screen.color = Color(0.02, 0.03, 0.05, 0.88)
+	screen.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
+	add_child(screen)
 	var center := CenterContainer.new()
 	center.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
-	_game_over.add_child(center)
+	screen.add_child(center)
+	var column := VBoxContainer.new()
+	column.custom_minimum_size.x = 900
+	column.add_theme_constant_override("separation", 14)
+	center.add_child(column)
 
-	var box := VBoxContainer.new()
-	box.add_theme_constant_override("separation", 24)
-	center.add_child(box)
+	column.add_child(_result_title(tr(RESULT_KINDS[kind].title), accent))
+	column.add_child(_result_text(level_name, 18, RESULT_DIM))
 
-	_result_label = Label.new()
-	_result_label.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
-	_result_label.add_theme_font_size_override("font_size", 28)
-	box.add_child(_result_label)
+	# 主体：左边本局构筑，右边数据
+	var panel := PanelContainer.new()
+	panel.add_theme_stylebox_override("panel", _result_style(Color(0.06, 0.07, 0.1, 0.96), Color(accent, 0.5), 1, 20))
+	column.add_child(panel)
+	var body := HBoxContainer.new()
+	body.add_theme_constant_override("separation", 24)
+	panel.add_child(body)
+	body.add_child(_build_column(player))
+	var divider := ColorRect.new()
+	divider.color = Color(1, 1, 1, 0.08)
+	divider.custom_minimum_size.x = 1
+	body.add_child(divider)
+	body.add_child(_numbers_column(run))
 
+	if story != "":
+		var story_label := _result_text(story, 17, Color(0.86, 0.8, 0.66))
+		story_label.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
+		column.add_child(story_label)
+
+	var gap := Control.new()
+	gap.custom_minimum_size.y = 4
+	column.add_child(gap)
 	var buttons := HBoxContainer.new()
 	buttons.alignment = BoxContainer.ALIGNMENT_CENTER
 	buttons.add_theme_constant_override("separation", 24)
-	box.add_child(buttons)
-	var restart := Button.new()
-	restart.text = tr("再来一次")
-	restart.custom_minimum_size = Vector2(180, 44)
+	column.add_child(buttons)
+	var restart := _result_button(tr("再来一次"), accent, true)
 	restart.pressed.connect(_on_restart_pressed)
 	buttons.add_child(restart)
-	var hub := Button.new()
-	hub.text = tr("返回主神空间")
-	hub.custom_minimum_size = Vector2(180, 44)
+	var hub := _result_button(tr("返回主神空间"), accent, false)
 	hub.pressed.connect(_on_hub_pressed)
 	buttons.add_child(hub)
+	restart.grab_focus()
+
+	# 入场：整体淡入并上浮
+	screen.modulate.a = 0.0
+	center.position.y = 24.0
+	var tween := create_tween().set_parallel().set_ease(Tween.EASE_OUT).set_trans(Tween.TRANS_CUBIC)
+	tween.tween_property(screen, "modulate:a", 1.0, 0.35)
+	tween.tween_property(center, "position:y", 0.0, 0.45)
+
+
+## 左栏：角色和信仰的神各一张小卡，下面列出融合技
+func _build_column(player: Player) -> Control:
+	var box := VBoxContainer.new()
+	box.add_theme_constant_override("separation", 10)
+	box.add_child(_result_text(tr("本局构筑"), 15, RESULT_DIM, HORIZONTAL_ALIGNMENT_LEFT))
+	var cards := HBoxContainer.new()
+	cards.add_theme_constant_override("separation", 10)
+	box.add_child(cards)
+	var character: Dictionary = CharacterDB.ALL[player.character_id]
+	cards.add_child(_mini_card(player.character_id, tr(character.name), tr(character.ult_name), Color(0.8, 0.84, 0.95), false))
+	for god_id: String in player.faith:
+		var power: GodPower = player.gods.get(god_id)
+		var awakened := power != null and power.awakened
+		var line := tr(UpgradeDB.UPGRADES[power.path].name) if power and power.path != "" else tr("信仰 %d") % player.faith[god_id]
+		cards.add_child(_mini_card(god_id + ("_awaken" if awakened else ""), tr(Gods.ALL[god_id].name), line, Gods.ALL[god_id].color, awakened))
+	for i in cards.get_child_count():  # 卡片逐张亮起
+		var card := cards.get_child(i) as Control
+		card.modulate.a = 0.0
+		create_tween().tween_property(card, "modulate:a", 1.0, 0.3).set_delay(0.25 + i * 0.1)
+	for id: String in GodPower.fusions:
+		box.add_child(_result_text(tr("融合技 · %s") % tr(Gods.FUSIONS[id].name), 15, Color(0.88, 0.75, 1.0), HORIZONTAL_ALIGNMENT_LEFT))
+	return box
+
+
+func _mini_card(art: String, title: String, line: String, color: Color, awakened: bool) -> Control:
+	var card := VBoxContainer.new()
+	card.custom_minimum_size.x = RESULT_CARD.x
+	card.add_theme_constant_override("separation", 2)
+	var frame := PanelContainer.new()
+	frame.custom_minimum_size = RESULT_CARD
+	frame.clip_contents = true
+	frame.add_theme_stylebox_override("panel", _result_style(Color(color.darkened(0.75), 1.0), GOLD if awakened else Color(color, 0.8), 2, 2))
+	card.add_child(frame)
+	var path := LevelUpPanel.ART_DIR + art + ".png"
+	if ResourceLoader.exists(path):
+		var image := TextureRect.new()
+		image.texture = load(path)
+		image.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
+		image.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_COVERED
+		image.texture_filter = CanvasItem.TEXTURE_FILTER_LINEAR_WITH_MIPMAPS
+		frame.add_child(image)
+	else:
+		frame.add_child(_result_text(title.substr(0, 1), 44, Color(color, 0.6)))
+	card.add_child(_result_text(title, 15, color.lightened(0.2)))
+	var sub := _result_text(line + (" ★" if awakened else ""), 12, GOLD if awakened else RESULT_DIM)
+	sub.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
+	card.add_child(sub)
+	return card
+
+
+## 右栏：用时、等级、击杀；支线；奖励
+func _numbers_column(run: Dictionary) -> Control:
+	var box := VBoxContainer.new()
+	box.size_flags_horizontal = Control.SIZE_EXPAND_FILL
+	box.add_theme_constant_override("separation", 16)
+	var elapsed := int(run.elapsed)
+	box.add_child(_tile_row([
+		_stat_tile(tr("用时"), "%02d:%02d" % [elapsed / 60, elapsed % 60], Color.WHITE),
+		_stat_tile(tr("等级"), str(run.level), Color.WHITE),
+		_count_up(_stat_tile(tr("击杀"), "", Color.WHITE), run.kills, "%d"),
+	]))
+	box.add_child(_rule())
+	box.add_child(_tile_row([
+		_stat_tile(tr("支线完成"), "%d / %d" % [run.quests_done, run.quests_seen], Color(0.75, 0.9, 1.0)),
+		_stat_tile(tr("发现隐藏支线"), "%d / %d" % [run.hidden_found, run.hidden_total], Color(0.88, 0.75, 1.0)),
+	]))
+	box.add_child(_rule())
+	box.add_child(_tile_row([
+		_count_up(_stat_tile(tr("奖励点"), "", GOLD, tr("累计 %d") % run.reward_total), run.reward_points, "+%d"),
+		_count_up(_stat_tile(tr("支线剧情点"), "", Color(0.88, 0.75, 1.0), tr("累计 %d") % run.story_total), run.story_points, "+%d"),
+	]))
+	return box
+
+
+func _tile_row(tiles: Array) -> HBoxContainer:
+	var row := HBoxContainer.new()
+	for tile: Control in tiles:
+		row.add_child(tile)
+	return row
+
+
+## 一格数据：大号数值在上，说明在下，可选再加一行小字
+func _stat_tile(caption: String, value: String, color: Color, note: String = "") -> VBoxContainer:
+	var tile := VBoxContainer.new()
+	tile.size_flags_horizontal = Control.SIZE_EXPAND_FILL
+	tile.add_theme_constant_override("separation", 0)
+	tile.add_child(_result_text(value, 32, color))
+	tile.add_child(_result_text(caption, 14, RESULT_DIM))
+	if note != "":
+		tile.add_child(_result_text(note, 12, Color(RESULT_DIM, 0.7)))
+	return tile
+
+
+## 数值从 0 滚动到 target
+func _count_up(tile: VBoxContainer, target: int, format: String) -> VBoxContainer:
+	var label := tile.get_child(0) as Label
+	label.text = format % 0
+	create_tween().tween_method(func(v: float) -> void: label.text = format % int(v), 0.0, float(target), 0.9) \
+		.set_delay(0.3).set_ease(Tween.EASE_OUT).set_trans(Tween.TRANS_CUBIC)
+	return tile
+
+
+func _rule() -> ColorRect:
+	var rule := ColorRect.new()
+	rule.color = Color(1, 1, 1, 0.08)
+	rule.custom_minimum_size.y = 1
+	return rule
+
+
+## 标题：两侧各一条渐隐的装饰线
+func _result_title(text: String, color: Color) -> HBoxContainer:
+	var row := HBoxContainer.new()
+	row.alignment = BoxContainer.ALIGNMENT_CENTER
+	row.add_theme_constant_override("separation", 20)
+	for side in 2:
+		var line := TextureRect.new()
+		var gradient := Gradient.new()
+		gradient.colors = PackedColorArray([Color(color, 0.0), Color(color, 0.7)] if side == 0 else [Color(color, 0.7), Color(color, 0.0)])
+		var texture := GradientTexture2D.new()
+		texture.gradient = gradient
+		texture.width = 160
+		texture.height = 2
+		line.texture = texture
+		line.size_flags_vertical = Control.SIZE_SHRINK_CENTER
+		row.add_child(line)
+	var label := _result_text(text, 40, color)
+	label.add_theme_constant_override("outline_size", 6)
+	label.add_theme_color_override("font_outline_color", Color(0, 0, 0, 0.6))
+	row.add_child(label)
+	row.move_child(label, 1)
+	return row
+
+
+func _result_text(text: String, font_size: int, color: Color, align: HorizontalAlignment = HORIZONTAL_ALIGNMENT_CENTER) -> Label:
+	var label := Label.new()
+	label.text = text
+	label.horizontal_alignment = align
+	label.vertical_alignment = VERTICAL_ALIGNMENT_CENTER
+	label.add_theme_font_size_override("font_size", font_size)
+	label.add_theme_color_override("font_color", color)
+	return label
+
+
+func _result_button(text: String, accent: Color, primary: bool) -> Button:
+	var button := Button.new()
+	button.text = text
+	button.custom_minimum_size = Vector2(200, 48)
+	button.add_theme_font_size_override("font_size", 18)
+	var base := Color(accent.darkened(0.72), 0.95) if primary else Color(0.07, 0.08, 0.11, 0.95)
+	button.add_theme_stylebox_override("normal", _result_style(base, Color(accent, 0.9 if primary else 0.35), 2 if primary else 1, 8))
+	var hover := _result_style(Color(accent.darkened(0.55), 0.95), accent, 2, 8)
+	button.add_theme_stylebox_override("hover", hover)
+	button.add_theme_stylebox_override("focus", hover)
+	button.add_theme_stylebox_override("pressed", _result_style(Color(accent.darkened(0.4), 0.95), accent, 2, 8))
+	return button
+
+
+func _result_style(bg: Color, border: Color, width: int, padding: int) -> StyleBoxFlat:
+	var style := StyleBoxFlat.new()
+	style.bg_color = bg
+	style.border_color = border
+	style.set_border_width_all(width)
+	style.set_corner_radius_all(6)
+	style.set_content_margin_all(padding)
+	return style
 
 
 func _on_hub_pressed() -> void:
