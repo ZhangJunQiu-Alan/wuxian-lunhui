@@ -1,0 +1,164 @@
+{
+  "finished_at": "2026-10-18T11:19:40.960622+08:00",
+  "status": "pass",
+  "deleted_long_audition_files": 11,
+  "deleted_bytecode_files": 10,
+  "deleted_logical_bytes": 309291456,
+  "deleted_allocated_bytes": 309346304,
+  "protected_files_hash_checked": 1248,
+  "original_reference_hash_checked": 923,
+  "protected_files_unchanged": true,
+  "originals_and_references_unchanged": true,
+  "audio_gallery_broken_local_links": [],
+  "deleted_files": [
+    {
+      "file": "assets/source/taskB_audio_2026-10-17/previews/pickup_xp_60s.wav",
+      "bytes": 5292044,
+      "allocated_bytes": 5296128,
+      "sha256": "d867480b795245c6438c6d29187b3543f34dccefd0e07c43fcdb30e5060e2152",
+      "reason": "rebuildable long audition cache"
+    },
+    {
+      "file": "assets/source/taskB_audio_2026-10-17/previews/katana_slash_60s.wav",
+      "bytes": 5292044,
+      "allocated_bytes": 5296128,
+      "sha256": "38573d033dfc9c44ee9f0e275ca57f287a8086408a8b77e48a45ea16fcf991d6",
+      "reason": "rebuildable long audition cache"
+    },
+    {
+      "file": "assets/source/taskB_audio_2026-10-17/previews/blades_slash_60s.wav",
+      "bytes": 5292044,
+      "allocated_bytes": 5296128,
+      "sha256": "7c7633f1649bc85f245f7ce7da8a9c96735e7a87e12efeccc0b64484e109c43f",
+      "reason": "rebuildable long audition cache"
+    },
+    {
+      "file": "assets/source/taskB_audio_2026-10-17/previews/lightning_60s.wav",
+      "bytes": 5292044,
+      "allocated_bytes": 5296128,
+      "sha256": "d91383a0c9b3b9382333016475b43ea0f18d37b92cc5fdb08f66cc22c78cd4de",
+      "reason": "rebuildable long audition cache"
+    },
+    {
+      "file": "assets/source/taskB_audio_2026-10-17/previews/enemy_hit_60s.wav",
+      "bytes": 5292044,
+      "allocated_bytes": 5296128,
+      "sha256": "f2861726abcd1d4dc567e6f8e3a35993d27b58f2fc28efff21387fd6c57693a1",
+      "reason": "rebuildable long audition cache"
+    },
+    {
+      "file": "assets/source/taskB_audio_2026-10-17/previews/enemy_death_60s.wav",
+      "bytes": 5292044,
+      "allocated_bytes": 5296128,
+      "sha256": "0992e92c320d77bd02e1fb04c78a581cc33e52e63349ebc074444fcc18ac7963",
+      "reason": "rebuildable long audition cache"
+    },
+    {
+      "file": "assets/source/taskB_audio_2026-10-17/previews/revolver_shot_60s.wav",
+      "bytes": 5292044,
+      "allocated_bytes": 5296128,
+      "sha256": "d646a10601271ddeb288c665246e5dc3810068729982a670ed166bc181cc504d",
+      "reason": "rebuildable long audition cache"
+    },
+    {
+      "file": "assets/source/taskB_audio_2026-10-17/previews/hub_3loops.flac",
+      "bytes": 45060282,
+      "allocated_bytes": 45064192,
+      "sha256": "00d8fd617755caa2dbc2e94424b6636f60c27f0ab0a3c2ca746d906ed2bed409",
+      "reason": "rebuildable long audition cache"
+    },
+    {
+      "file": "assets/source/taskB_audio_2026-10-17/previews/midgard_3loops.flac",
+      "bytes": 88263820,
+      "allocated_bytes": 88264704,
+      "sha256": "0d55d12ebe1d08685ddc4c43f94bd0f5e8aa17361a18f979518e3202de0b7f09",
+      "reason": "rebuildable long audition cache"
+    },
+    {
+      "file": "assets/source/taskB_audio_2026-10-17/previews/boss_3loops.flac",
+      "bytes": 62029853,
+      "allocated_bytes": 62033920,
+      "sha256": "8c4a935742a24e98433a20b0f5e9ce7323e211f2ad8dc03cf94c77e710ce5fc7",
+      "reason": "rebuildable long audition cache"
+    },
+    {
+      "file": "assets/source/taskB_audio_2026-10-17/previews/helheim_3loops.flac",
+      "bytes": 76726807,
+      "allocated_bytes": 76730368,
+      "sha256": "6c60a8f649062be0bbb0746e920798353a2d5f2a93f1b81bb3eff3fe39adad0e",
+      "reason": "rebuildable long audition cache"
+    },
+    {
+      "file": "assets/source/batch06_effects_pickups_quests_2026-10-16/records/__pycache__/normalize.cpython-314.pyc",
+      "bytes": 15757,
+      "allocated_bytes": 16384,
+      "sha256": "31b5a1661984d86c680a968ef6974c4a0a55be1b69de4ba2aca097d9f198b6e0",
+      "reason": "Python bytecode cache"
+    },
+    {
+      "file": "assets/source/batch06_effects_pickups_quests_2026-10-16/records/__pycache__/refresh_previews.cpython-314.pyc",
+      "bytes": 5476,
+      "allocated_bytes": 8192,
+      "sha256": "03cf00bfae30b5cadc03bea3bc6278bea1e33f276ce4a049a445361ab6d58536",
+      "reason": "Python bytecode cache"
+    },
+    {
+      "file": "assets/source/taskB_audio_2026-10-17/__pycache__/build_audio.cpython-314.pyc",
+      "bytes": 25943,
+      "allocated_bytes": 28672,
+      "sha256": "c540485ab3bfdfd573c13e4f881d893b53ec0d678cff7bad6fbba78e86974766",
+      "reason": "Python bytecode cache"
+    },
+    {
+      "file": "assets/source/taskC_helheim_enemies_2026-10-17/records/__pycache__/pipeline.cpython-313.pyc",
+      "bytes": 16146,
+      "allocated_bytes": 16384,
+      "sha256": "e0c3e0b2f9f4f37955d98efb75faca96d3a878dc7af83142d5f7898ddece58a8",
+      "reason": "Python bytecode cache"
+    },
+    {
+      "file": "assets/source/taskC_helheim_enemies_2026-10-17/records/__pycache__/pipeline.cpython-314.pyc",
+      "bytes": 15711,
+      "allocated_bytes": 16384,
+      "sha256": "4a90978c808d151e34c590578090d6938c561de3c74ff54f538a41a644474882",
+      "reason": "Python bytecode cache"
+    },
+    {
+      "file": "assets/source/taskD_helheim_bosses_2026-10-17/records/__pycache__/pipeline.cpython-313.pyc",
+      "bytes": 16145,
+      "allocated_bytes": 16384,
+      "sha256": "6350b11e9506ef927cebaded250cd010de61dc7478388164b96d46789e4661f0",
+      "reason": "Python bytecode cache"
+    },
+    {
+      "file": "assets/source/taskD_helheim_bosses_2026-10-17/records/__pycache__/pipeline.cpython-314.pyc",
+      "bytes": 15251,
+      "allocated_bytes": 16384,
+      "sha256": "ee25a7f044f8daf896e24513eb8fc64f5007c91e9400e9475bba0d5bc26e00bf",
+      "reason": "Python bytecode cache"
+    },
+    {
+      "file": "assets/source/taskE_helheim_map_2026-10-17/records/__pycache__/pipeline.cpython-314.pyc",
+      "bytes": 20446,
+      "allocated_bytes": 20480,
+      "sha256": "fdd357048f8699067c4c71430697ba2edada407a259f987d153c35e842908472",
+      "reason": "Python bytecode cache"
+    },
+    {
+      "file": "assets/source/taskG4_original_gods_fx_2026-10-18/records/__pycache__/pipeline.cpython-314.pyc",
+      "bytes": 17758,
+      "allocated_bytes": 20480,
+      "sha256": "bb17a89742bba17bdbe6bac2e2863eefa84d4f98642063f0a8ec136d353bbecb",
+      "reason": "Python bytecode cache"
+    },
+    {
+      "file": "assets/source/taskG5_new_gods_fx_2026-10-18/records/__pycache__/pipeline.cpython-314.pyc",
+      "bytes": 17753,
+      "allocated_bytes": 20480,
+      "sha256": "8445398004b4052e839e0237f01fb61d523570ab938b7fbc2ed94272bfcfa152",
+      "reason": "Python bytecode cache"
+    }
+  ],
+  "game_test": "not_performed",
+  "git_commit_push": "not_performed"
+}
