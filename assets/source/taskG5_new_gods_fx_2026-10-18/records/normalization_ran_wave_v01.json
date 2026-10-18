@@ -1,0 +1,24 @@
+{
+  "raw_size": [
+    1774,
+    887
+  ],
+  "source": "originals/ran_wave_v01_raw.png",
+  "frame_boxes": [
+    [
+      0,
+      260,
+      1774,
+      659
+    ]
+  ],
+  "target_perframe": [
+    64,
+    32
+  ],
+  "frames": 1,
+  "alpha": "preserve generatedalpha, quantized8levels/cappedforground",
+  "tool": "Pillow formatting only",
+  "operation": "Whole strip nearest resize; identical4px sourcecolumn endports, transparent2px top/bottom",
+  "alpha_cap": 230
+}

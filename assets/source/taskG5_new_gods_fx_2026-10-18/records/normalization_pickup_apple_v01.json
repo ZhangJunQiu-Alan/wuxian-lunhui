@@ -1,0 +1,32 @@
+{
+  "raw_size": [
+    1536,
+    1024
+  ],
+  "source": "originals/pickup_apple_v01_raw.png",
+  "frame_boxes": [
+    [
+      616,
+      345,
+      923,
+      692
+    ]
+  ],
+  "target_perframe": [
+    16,
+    16
+  ],
+  "frames": 1,
+  "alpha": "binary128threshold",
+  "tool": "Pillow formatting only",
+  "common_scale": 0.0345821325648415,
+  "operation": "Equalcell cuts, whole silhouette crop, common nearest scale, shared32RGBpalette, anchorplacement; no bodyredrawing",
+  "placements": [
+    [
+      2,
+      2,
+      11,
+      12
+    ]
+  ]
+}

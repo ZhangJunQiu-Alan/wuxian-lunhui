@@ -1,0 +1,32 @@
+{
+  "raw_size": [
+    1261,
+    1247
+  ],
+  "source": "originals/pickup_feather_v01_raw.png",
+  "frame_boxes": [
+    [
+      277,
+      242,
+      1071,
+      1051
+    ]
+  ],
+  "target_perframe": [
+    16,
+    16
+  ],
+  "frames": 1,
+  "alpha": "binary128threshold",
+  "tool": "Pillow formatting only",
+  "common_scale": 0.014833127317676144,
+  "operation": "Equalcell cuts, whole silhouette crop, common nearest scale, shared32RGBpalette, anchorplacement; no bodyredrawing",
+  "placements": [
+    [
+      2,
+      2,
+      12,
+      12
+    ]
+  ]
+}

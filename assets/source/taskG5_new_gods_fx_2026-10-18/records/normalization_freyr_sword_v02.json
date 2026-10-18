@@ -1,0 +1,32 @@
+{
+  "raw_size": [
+    2048,
+    768
+  ],
+  "source": "originals/freyr_sword_v02_raw.png",
+  "frame_boxes": [
+    [
+      271,
+      211,
+      1777,
+      613
+    ]
+  ],
+  "target_perframe": [
+    32,
+    12
+  ],
+  "frames": 1,
+  "alpha": "binary128threshold",
+  "tool": "Pillow formatting only",
+  "common_scale": 0.01859229747675963,
+  "operation": "Equalcell cuts, whole silhouette crop, common nearest scale, shared32RGBpalette, anchorplacement; no bodyredrawing",
+  "placements": [
+    [
+      2,
+      2,
+      28,
+      7
+    ]
+  ]
+}

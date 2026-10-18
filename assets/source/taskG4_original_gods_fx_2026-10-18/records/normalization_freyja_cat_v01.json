@@ -1,0 +1,44 @@
+{
+  "raw_size": [
+    1774,
+    887
+  ],
+  "source": "originals/freyja_cat_v01_raw.png",
+  "frame_boxes": [
+    [
+      98,
+      235,
+      860,
+      735
+    ],
+    [
+      70,
+      235,
+      804,
+      748
+    ]
+  ],
+  "target_perframe": [
+    24,
+    24
+  ],
+  "frames": 2,
+  "alpha": "binary128threshold",
+  "tool": "Pillow formatting only",
+  "common_scale": 0.026246719160104987,
+  "operation": "Equalcell cuts, whole silhouette crop, common nearest scale, shared32RGBpalette, anchorplacement; no bodyredrawing",
+  "placements": [
+    [
+      2,
+      6,
+      20,
+      13
+    ],
+    [
+      2,
+      6,
+      19,
+      13
+    ]
+  ]
+}

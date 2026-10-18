@@ -1,0 +1,40 @@
+{
+  "group": "G5",
+  "id": "skadi_arrow",
+  "w": 32,
+  "h": 8,
+  "frames": 1,
+  "anchor": [
+    28,
+    4
+  ],
+  "flags": "rotate tip",
+  "subject": "One veryTHIN ICEARROW pointingRIGHT, tipat(28,4), shaftx3..24aty4, smallicebluebarbedarrowhead, tinytwofeatherfletchingsLEFTx4..7, palecyan3toneice. Actual8pxheightwith2pxpaddingtop/bottom, soarrowoccupiesONLYy2..5. No trailingparticles/glow/castshadow.",
+  "version": "v04",
+  "fps": 8,
+  "root": "/Users/zhangjunqiu/Desktop/\u65e0\u9650\u6050\u6016/assets/source/taskG5_new_gods_fx_2026-10-18",
+  "refs": [
+    "/Users/zhangjunqiu/Desktop/\u65e0\u9650\u6050\u6016/assets/source/taskG5_new_gods_fx_2026-10-18/refs/effects_style.png",
+    "/Users/zhangjunqiu/Desktop/\u65e0\u9650\u6050\u6016/assets/source/taskG5_new_gods_fx_2026-10-18/originals/skadi_arrow_v01_raw.png"
+  ],
+  "prompt": "Use case: stylized-concept. Production 2Dpixelart effect. ONE 32x8logicalpixel ICEARROW, verysimplelowres. ArrowtipRIGHTat(28,4), BIGclearTRIANGULARBARBEDarrowheadoccupiesx24..28,y2..5, pointatx28. Thin1pxstraightshaftx5..24,y4. FletchingLEFTatx3..7,y2..5 madeof twodarkbluebarbs, notlargerthanhead. Totalallpixelswithin x3..28,y2..5. Iceblue3colors withwhiteheadhighlight. Correctasymmetry: clearlyarrowheadRIGHT, tailLEFT. Actualsilhouette26x4, notspreadingglow/no outlineorparticlesorbackground. RenderlargeascrispchunkyPIXELARTwithsourcepixels, keepaspect4:1canvas. Input1 styleonly; input2 rejectedpreviousdraft forsubjectcolors. Improve readability. No text/grid/watermark. Genuine transparentbackground. No otherobjects. Upperleftlightsmallhighlights, no castshadow.",
+  "tool": "OpenAI builtin image_gen",
+  "source": "/Users/zhangjunqiu/.codex/generated_images/01a14377-c537-7a10-b5df-10043f63fbe0/exec-01e1ba29-09be-4ac7-8536-f6d23d3e733c.png",
+  "formatting": {
+    "source_crop": [
+      240,
+      137,
+      1932,
+      537
+    ],
+    "resize": [
+      26,
+      4
+    ],
+    "placement": [
+      3,
+      2
+    ],
+    "purpose": "Nearest samplingphase atshafty387 retained1pxshaft atanchorrow4; no pixelpainting"
+  }
+}

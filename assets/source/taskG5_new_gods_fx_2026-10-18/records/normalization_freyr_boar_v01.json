@@ -1,0 +1,44 @@
+{
+  "raw_size": [
+    2120,
+    742
+  ],
+  "source": "originals/freyr_boar_v01_raw.png",
+  "frame_boxes": [
+    [
+      78,
+      134,
+      1034,
+      659
+    ],
+    [
+      138,
+      167,
+      1017,
+      669
+    ]
+  ],
+  "target_perframe": [
+    40,
+    28
+  ],
+  "frames": 2,
+  "alpha": "binary128threshold",
+  "tool": "Pillow formatting only",
+  "common_scale": 0.03619047619047619,
+  "operation": "Equalcell cuts, whole silhouette crop, common nearest scale, shared32RGBpalette, anchorplacement; no bodyredrawing",
+  "placements": [
+    [
+      2,
+      2,
+      35,
+      19
+    ],
+    [
+      4,
+      3,
+      32,
+      18
+    ]
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "group": "G5",
+  "id": "ran_wave",
+  "w": 64,
+  "h": 32,
+  "frames": 1,
+  "anchor": [
+    32,
+    16
+  ],
+  "flags": "stretch wave",
+  "subject": "A HORIZONTAL BLUE WAVE CREST extendsx0..63. Crestpoints UP towardTOPofimage, darknavybase withseaBlueface andwhitefoamlineupperedge, transparentbelowandabove. Cleanbroadcurvedwaveface, simplefoamshapes, no spraydots/no boat/floor. LEFT/RIGHTedgecrosssections match soextendhorizontallywithoutvisiblecaps.",
+  "version": "v02",
+  "fps": 8,
+  "root": "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskG5_new_gods_fx_2026-10-18",
+  "refs": [
+    "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskG5_new_gods_fx_2026-10-18/refs/effects_style.png"
+  ],
+  "prompt": "Use case: stylized-concept.\nAsset type: production pixelart 2D game magical effect sprite 64x32 logical pixels PERFRAME, 1frame(s).\nInput1 is STYLE REFERENCE of project's existingpixel effects, match crisp clusters andlimitedpalette.\nSubject: A HORIZONTAL BLUE WAVE CREST extendsx0..63. Crestpoints UP towardTOPofimage, darknavybase withseaBlueface andwhitefoamlineupperedge, transparentbelowandabove. Cleanbroadcurvedwaveface, simplefoamshapes, no spraydots/no boat/floor. LEFT/RIGHTedgecrosssections match soextendhorizontallywithoutvisiblecaps.\nLayout: ONE isolatedsprite on exactlogical64x32 canvas, subject centered withminimum2logicalpxclear margin, excepthorizontalstretchable strips extendLEFTandRIGHTfully. Preserve specifiedanchor.\nStyle: genuineLOWRESPIXELART, hardconnected1..3pixelclusters, NO detailedillustration/no3D/noantialias/no dither/no blur. Allow translucent EDGEPIXELS and faintinterior for scalablegroundeffect; use simpleclean shapes, keepenemiesreadable.\nBackground genuinely TRANSPARENT, not black or checkerboard. No scene/groundplane/text/watermark. Direction RIGHT forweaponsandanimals. No copiedexternalcharacters.",
+  "tool": "OpenAI builtin image_gen",
+  "source": "/Users/zhangjunqiu/.codex/generated_images/01a14377-c537-7a10-b5df-10043f63fbe0/exec-8418f7f8-d11e-458e-ac89-d4c53d7b8b22.png",
+  "formatting": {
+    "source": "originals/ran_wave_v01_raw.png",
+    "operations": [
+      "whole silhouette crop",
+      "nearest resize",
+      "32 RGB palette",
+      "alpha cap",
+      "2px vertical padding"
+    ],
+    "purpose": "Preserve original natural strip ends; remove artificial endport blocks. No body drawing."
+  }
+}

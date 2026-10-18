@@ -1,0 +1,777 @@
+[
+  {
+    "path": "README.md",
+    "bytes": 4514,
+    "sha256": "500f8b2558f997c1a95853becebad267bed1ee088571b4da06c0db42dbea2830"
+  },
+  {
+    "path": "approved/baldr_beam.png",
+    "bytes": 1242,
+    "sha256": "fd622c0316347028ef57fca0e99cfa8cb1cde3902b7e8bfa3fe41bdc13bce15b"
+  },
+  {
+    "path": "approved/baldr_glow.png",
+    "bytes": 1320,
+    "sha256": "bf995863a23e90e91f80a89ddf279ca3e814441dfadf647c4bf826c4e84f18b2"
+  },
+  {
+    "path": "approved/baldr_spear.png",
+    "bytes": 306,
+    "sha256": "a20972e27ad511bd3565c98d18827f311c8d59ce46f4975e9c47c7a1c8f15edf"
+  },
+  {
+    "path": "approved/freyr_boar.png",
+    "bytes": 1756,
+    "sha256": "25dc49955244339d80f2307af74ab07d870cc718314f0d7ddd6fb127b6a9a1a2"
+  },
+  {
+    "path": "approved/freyr_field.png",
+    "bytes": 12500,
+    "sha256": "84f7853e87caaac62dde6e32270316c2991a171da9e6dcc5a5057f78b9d7eeb5"
+  },
+  {
+    "path": "approved/freyr_sword.png",
+    "bytes": 300,
+    "sha256": "1707c608cb0dc178a0f3abcdca7ee92342b20ff87b52e17bcc06d18a66998649"
+  },
+  {
+    "path": "approved/pickup_apple.png",
+    "bytes": 370,
+    "sha256": "fbf4887468e4a1be760c276a735d26116b7136438373e8988f7aa6f8384ce7ee"
+  },
+  {
+    "path": "approved/ran_net.png",
+    "bytes": 8343,
+    "sha256": "652edec4d0806a0ee437430743f777dd66a5107f5ab5316ea69cf99ab08e4e1d"
+  },
+  {
+    "path": "approved/ran_wave.png",
+    "bytes": 2583,
+    "sha256": "0d871efb7c7dbd1ed8f662fa7b0d0d35548ec5754621a0782cab37f331f08874"
+  },
+  {
+    "path": "approved/ran_whirl.png",
+    "bytes": 8162,
+    "sha256": "58e795d38cb0aaee30520288369b94ce96b7ac5d888ea46431ab0e2691f69280"
+  },
+  {
+    "path": "approved/skadi_arrow.png",
+    "bytes": 204,
+    "sha256": "7fe0da1b44a8f8840af1e27ca96741a1cccba2ded90813008a60c5653d24bc86"
+  },
+  {
+    "path": "approved/skadi_blizzard.png",
+    "bytes": 8133,
+    "sha256": "051ceef7bb36067a5f2b9490b7cfc8ef31ce4917f2abfcbe40d0bbaf55b4dc48"
+  },
+  {
+    "path": "approved/skadi_ice.png",
+    "bytes": 1410,
+    "sha256": "ef71ea96c03b891402cd4ff00663e9876a17b479b52d5b6456b3567ceb415cfc"
+  },
+  {
+    "path": "candidates/baldr_beam_uncapped.png",
+    "bytes": 2291,
+    "sha256": "c13e2f8b77eb66106040aa855d60d097e2f486f587dece205f4b7f67a9062ce7"
+  },
+  {
+    "path": "candidates/baldr_beam_v01.png",
+    "bytes": 1242,
+    "sha256": "fd622c0316347028ef57fca0e99cfa8cb1cde3902b7e8bfa3fe41bdc13bce15b"
+  },
+  {
+    "path": "candidates/baldr_glow_uncapped.png",
+    "bytes": 2359,
+    "sha256": "5c1d50085f26c3fa266b04405af021fe891208b3b44e7b992b669b4cc1acccd7"
+  },
+  {
+    "path": "candidates/baldr_glow_v01.png",
+    "bytes": 1421,
+    "sha256": "0f8d924c34d7e5523bec5ed86b47fdcaf788e805542cfdfb8f570abde8923a51"
+  },
+  {
+    "path": "candidates/baldr_glow_v02.png",
+    "bytes": 1320,
+    "sha256": "bf995863a23e90e91f80a89ddf279ca3e814441dfadf647c4bf826c4e84f18b2"
+  },
+  {
+    "path": "candidates/baldr_spear_v01.png",
+    "bytes": 306,
+    "sha256": "a20972e27ad511bd3565c98d18827f311c8d59ce46f4975e9c47c7a1c8f15edf"
+  },
+  {
+    "path": "candidates/freyr_boar_v01.png",
+    "bytes": 1756,
+    "sha256": "25dc49955244339d80f2307af74ab07d870cc718314f0d7ddd6fb127b6a9a1a2"
+  },
+  {
+    "path": "candidates/freyr_field_v01.png",
+    "bytes": 12500,
+    "sha256": "84f7853e87caaac62dde6e32270316c2991a171da9e6dcc5a5057f78b9d7eeb5"
+  },
+  {
+    "path": "candidates/freyr_sword_v01.png",
+    "bytes": 195,
+    "sha256": "8c0e9807f91865c89d0effa69ae4ae7468b565f2b51556279c232276a0f5841c"
+  },
+  {
+    "path": "candidates/freyr_sword_v02.png",
+    "bytes": 300,
+    "sha256": "1707c608cb0dc178a0f3abcdca7ee92342b20ff87b52e17bcc06d18a66998649"
+  },
+  {
+    "path": "candidates/pickup_apple_v01.png",
+    "bytes": 370,
+    "sha256": "fbf4887468e4a1be760c276a735d26116b7136438373e8988f7aa6f8384ce7ee"
+  },
+  {
+    "path": "candidates/ran_net_v01.png",
+    "bytes": 8343,
+    "sha256": "652edec4d0806a0ee437430743f777dd66a5107f5ab5316ea69cf99ab08e4e1d"
+  },
+  {
+    "path": "candidates/ran_wave_uncapped.png",
+    "bytes": 3568,
+    "sha256": "30a890de67376caca5ec6783f8a9a3736ea077169a48c355a57a776aca4526d6"
+  },
+  {
+    "path": "candidates/ran_wave_v01.png",
+    "bytes": 2521,
+    "sha256": "03e57ad02eeaac711d3928e843656accf97a469f26aa067895d7570a3258e17a"
+  },
+  {
+    "path": "candidates/ran_wave_v02.png",
+    "bytes": 2583,
+    "sha256": "0d871efb7c7dbd1ed8f662fa7b0d0d35548ec5754621a0782cab37f331f08874"
+  },
+  {
+    "path": "candidates/ran_whirl_v01.png",
+    "bytes": 8162,
+    "sha256": "58e795d38cb0aaee30520288369b94ce96b7ac5d888ea46431ab0e2691f69280"
+  },
+  {
+    "path": "candidates/skadi_arrow_v01.png",
+    "bytes": 178,
+    "sha256": "fc5ed338c33abee7f0f38c1a9f219e283ef4b2035fdb6feca64c79cb61186e21"
+  },
+  {
+    "path": "candidates/skadi_arrow_v02.png",
+    "bytes": 147,
+    "sha256": "6b3209b8e78590ccb8ec151ab3b223b6547ed04eccbeabc5436616985c7371a1"
+  },
+  {
+    "path": "candidates/skadi_arrow_v03.png",
+    "bytes": 130,
+    "sha256": "c73119d3f13da6ed6875ef3f0859e8b02dc59a67c47f47b249150e95871cb53c"
+  },
+  {
+    "path": "candidates/skadi_arrow_v04.png",
+    "bytes": 204,
+    "sha256": "7fe0da1b44a8f8840af1e27ca96741a1cccba2ded90813008a60c5653d24bc86"
+  },
+  {
+    "path": "candidates/skadi_blizzard_v01.png",
+    "bytes": 8133,
+    "sha256": "051ceef7bb36067a5f2b9490b7cfc8ef31ce4917f2abfcbe40d0bbaf55b4dc48"
+  },
+  {
+    "path": "candidates/skadi_ice_uncapped.png",
+    "bytes": 1892,
+    "sha256": "248f77248fbddce3eb276bd9796c1600c092095ad55288c539dc58d1ef8c4f7c"
+  },
+  {
+    "path": "candidates/skadi_ice_v01.png",
+    "bytes": 1386,
+    "sha256": "9e6e1ba9b8ed942fdf6fabdabbdb22642563d025e9e1c7b8b0370a8c0445babe"
+  },
+  {
+    "path": "candidates/skadi_ice_v02.png",
+    "bytes": 1410,
+    "sha256": "ef71ea96c03b891402cd4ff00663e9876a17b479b52d5b6456b3567ceb415cfc"
+  },
+  {
+    "path": "gallery.html",
+    "bytes": 20096,
+    "sha256": "89c018f113d0fe610bd5151f5fd27503da002207f9f520d390bd0bf8cd9eaa2a"
+  },
+  {
+    "path": "manifest.json",
+    "bytes": 34189,
+    "sha256": "801c496f9b3bdc64b26b7d04ccf2b5686da7a613e8a1af58ad315e7a29c093a5"
+  },
+  {
+    "path": "originals/baldr_beam_v01_raw.png",
+    "bytes": 644816,
+    "sha256": "7a1b2a176e217a56464333b097c2e61600d51baac1e786bf4bc0b146adbee59e"
+  },
+  {
+    "path": "originals/baldr_glow_v01_raw.png",
+    "bytes": 486762,
+    "sha256": "b005af0f074f7b3bcd44c243de577ccec333ef7dbae37eca999b98c7066e8755"
+  },
+  {
+    "path": "originals/baldr_spear_v01_raw.png",
+    "bytes": 223990,
+    "sha256": "bc5b72e4927cf9b7bcdb18d3d54f540a00d468ac1fcd96f33a87eeed5dc5598d"
+  },
+  {
+    "path": "originals/freyr_boar_v01_raw.png",
+    "bytes": 807003,
+    "sha256": "ad930bcdbc2f53584a4a79c1766e218bd4365a696e0b41ce36d0f65c77ac5a9e"
+  },
+  {
+    "path": "originals/freyr_field_v01_raw.png",
+    "bytes": 1579334,
+    "sha256": "fd5693b5d279c1ce7946e924e71497da124086143b67ad723d1e4211f878f76f"
+  },
+  {
+    "path": "originals/freyr_sword_v01_raw.png",
+    "bytes": 1009652,
+    "sha256": "99c9b2229557213b67a1a9d720247c9e7beb6bbbb678d37dc6bb0754f8efe944"
+  },
+  {
+    "path": "originals/freyr_sword_v02_raw.png",
+    "bytes": 835679,
+    "sha256": "abaf8df652a188fd8a7d6240cc296f83faa72d50ccf91a3aa53206493084cec5"
+  },
+  {
+    "path": "originals/pickup_apple_v01_raw.png",
+    "bytes": 696015,
+    "sha256": "95bc64649d12c5c0a53d8337285ed9b326dd59f34faaa937e8a4e8ceae5e81af"
+  },
+  {
+    "path": "originals/ran_net_v01_raw.png",
+    "bytes": 908510,
+    "sha256": "c2cb27144061800e984c138b6dec58d2bec422777ecfdfbc9df901b4c11c0cf8"
+  },
+  {
+    "path": "originals/ran_wave_v01_raw.png",
+    "bytes": 645321,
+    "sha256": "17b56fe130fb767cbd72f2eb76a7e4cb8a27415dc04cffa1772fa0b301d9f84b"
+  },
+  {
+    "path": "originals/ran_whirl_v01_raw.png",
+    "bytes": 751774,
+    "sha256": "2a5806118ac3d6fedc146da483497b6f8c3d6e17d62a69e634410af4f9cd4344"
+  },
+  {
+    "path": "originals/skadi_arrow_v01_raw.png",
+    "bytes": 137671,
+    "sha256": "a0a36a6359cd6ecfa85b36b4054a432f007c4388d9620cb881888989fbdcbc4f"
+  },
+  {
+    "path": "originals/skadi_arrow_v02_raw.png",
+    "bytes": 187979,
+    "sha256": "c5ecfd0d890e2261a9b101dffe825b3c85394b15f395f562e63e3731139662a8"
+  },
+  {
+    "path": "originals/skadi_blizzard_v01_raw.png",
+    "bytes": 1434409,
+    "sha256": "98d7f633ffcc49b20fbc5987c4f45b5f1fa9b9cb5c2b3986111b7bc4b3aa0cc6"
+  },
+  {
+    "path": "originals/skadi_ice_v01_raw.png",
+    "bytes": 493934,
+    "sha256": "a603c89ee0ee379b310ae85df95519f43bcd1aa719321b974287d21b432a000e"
+  },
+  {
+    "path": "previews/animation_overview.gif",
+    "bytes": 203887,
+    "sha256": "910ab2df2dde13809946f6aedb6429883441184a14f7fc851706ae9cb5d03708"
+  },
+  {
+    "path": "previews/baldr_beam_v01_review.png",
+    "bytes": 5252,
+    "sha256": "048b97d1df047bc5b79799940b8d2618c28284441956621e744ac5ed73e462f6"
+  },
+  {
+    "path": "previews/baldr_beam_v01_stretch.png",
+    "bytes": 11869,
+    "sha256": "614895283cf25bc908079ed634a3ade964e4583c196195efdb0cf05c002f9806"
+  },
+  {
+    "path": "previews/baldr_glow_v01_review.png",
+    "bytes": 5047,
+    "sha256": "1ee466aba00ce043bcd485236155eefc5c3430857f19c3de4d9e6f24fe5280cf"
+  },
+  {
+    "path": "previews/baldr_glow_v01_stretch.png",
+    "bytes": 9125,
+    "sha256": "7421ad2bfb2f54779f34876baac8c57bde7d1696bd7c582c8e7b853d58901c15"
+  },
+  {
+    "path": "previews/baldr_glow_v02_review.png",
+    "bytes": 5054,
+    "sha256": "7f28869bcb4519aca0f4bf49794b254799f5f59de6153d760e1a7d9d466774ff"
+  },
+  {
+    "path": "previews/baldr_glow_v02_stretch.png",
+    "bytes": 8910,
+    "sha256": "ce9936656f8c769849f8eeba263bf3a3b914d9377449ffe59df20d095cef623f"
+  },
+  {
+    "path": "previews/baldr_spear_v01_review.png",
+    "bytes": 2934,
+    "sha256": "98078e98f9851b1032a678daba9528ead0a8a3fe04f617caa7da5d3ebc783631"
+  },
+  {
+    "path": "previews/baldr_spear_v01_rotations.png",
+    "bytes": 2089,
+    "sha256": "9d5445a6679079c7a3f9e546d04ed8fc5456f2ef1d2817d068d0976513f04e84"
+  },
+  {
+    "path": "previews/final_animation_frames.png",
+    "bytes": 6383,
+    "sha256": "59e2df9f4a87aa76d7d512905c3641efebc2a2c08ecba054bb6551d9ca34afe0"
+  },
+  {
+    "path": "previews/final_contact.png",
+    "bytes": 72865,
+    "sha256": "344de6b0100e0ec6ed42574bb63ddf3f927b5089e569dcefa81d8d5a4ca52928"
+  },
+  {
+    "path": "previews/freyr_boar_v01.gif",
+    "bytes": 12909,
+    "sha256": "684807fe615eeb0954e68f494d862ce0f003089bbe94367cecac40bbc7c0ace4"
+  },
+  {
+    "path": "previews/freyr_boar_v01_review.png",
+    "bytes": 7415,
+    "sha256": "41dcabdb6eb7ee4ec2e4adb927f3128f6cfafd0645263bde331fe71040ab7040"
+  },
+  {
+    "path": "previews/freyr_field_v01_ground.png",
+    "bytes": 168245,
+    "sha256": "f56e02141875750c21883ce576283e1ac1f709e59ffbc7a344edeb7e51293f30"
+  },
+  {
+    "path": "previews/freyr_field_v01_review.png",
+    "bytes": 37855,
+    "sha256": "bcd37f892d054ff2b8dd0f086be9cb1bb9afd4b1c224d272d3a4143fd95ae90d"
+  },
+  {
+    "path": "previews/freyr_sword_v01_review.png",
+    "bytes": 2926,
+    "sha256": "cfa00a8023e99f46f4756aa6abd8a1415bd3e97e706097f393c22869b489bc93"
+  },
+  {
+    "path": "previews/freyr_sword_v01_rotations.png",
+    "bytes": 1428,
+    "sha256": "6496c8593d86fda4eed514dc1ee09d2d69caa44f6d9ecc2bfae1795d26f568d3"
+  },
+  {
+    "path": "previews/freyr_sword_v02_review.png",
+    "bytes": 3059,
+    "sha256": "e03172f860973595898f68ac6cacc161abcff54cc8482d6a0818a73d790e0deb"
+  },
+  {
+    "path": "previews/freyr_sword_v02_rotations.png",
+    "bytes": 1657,
+    "sha256": "90e4125c2b4ba31a473b64833d8302400cb6b7741d6f20fb3734ce09d4ad3feb"
+  },
+  {
+    "path": "previews/initial_contact.png",
+    "bytes": 105263,
+    "sha256": "b93dcb04c93d80db7235be5ff84ff29bb2b7e3d3c07cd02206ba0052bc5a70f9"
+  },
+  {
+    "path": "previews/pickup_apple_v01_review.png",
+    "bytes": 3066,
+    "sha256": "1af2a84afe42664edc2ae2c9c63f4b3cb377ed022fc8603b214f584e9ac83a4f"
+  },
+  {
+    "path": "previews/ran_net_v01_ground.png",
+    "bytes": 122840,
+    "sha256": "ad83f337ac5df17ac4a887bdc21225e5be794c1659baa2388726b27846bd0553"
+  },
+  {
+    "path": "previews/ran_net_v01_review.png",
+    "bytes": 24308,
+    "sha256": "fc3df43c2bd700ce7835a711b582be6b2be21885a7682286b3be672f6543ffe5"
+  },
+  {
+    "path": "previews/ran_wave_v01_review.png",
+    "bytes": 9008,
+    "sha256": "4042d23a8033e8386b298f282fe69d4e21de12431025f2f2b61b732a85bb7445"
+  },
+  {
+    "path": "previews/ran_wave_v01_stretch.png",
+    "bytes": 23099,
+    "sha256": "8ccf55b6a3be72c562c6e93c2a054d78d65ff3c49257d3a7a7c7ddfaa4a45769"
+  },
+  {
+    "path": "previews/ran_wave_v02_review.png",
+    "bytes": 9335,
+    "sha256": "d0a3577770ea78eb368163e836ef6cc0ae18165d31d10796be28ed14fcc0f240"
+  },
+  {
+    "path": "previews/ran_wave_v02_stretch.png",
+    "bytes": 24510,
+    "sha256": "1f7267139e5807d4ef5c03a81667cd3178f50cc9d72288332703379eda402f45"
+  },
+  {
+    "path": "previews/ran_whirl_v01_ground.png",
+    "bytes": 125791,
+    "sha256": "9ea665d91db462c3d4cc6bf86d2b2b82ead1556e38c220b27d8dbe810816b534"
+  },
+  {
+    "path": "previews/ran_whirl_v01_review.png",
+    "bytes": 24049,
+    "sha256": "9b9d0839b38972d6ec7dd936f6a405e44dace4e7da2a877cce2ce928a90b4a84"
+  },
+  {
+    "path": "previews/skadi_arrow_v01_review.png",
+    "bytes": 2743,
+    "sha256": "127e7d2d9febff64ecdbf1f09bb3e7a34f2384e5fa7e34f5776448118bc4fec3"
+  },
+  {
+    "path": "previews/skadi_arrow_v01_rotations.png",
+    "bytes": 1253,
+    "sha256": "a918012ffa2e6e42681b259cf1c88b2b45a0250e7ecafdeb8398068694631825"
+  },
+  {
+    "path": "previews/skadi_arrow_v02_review.png",
+    "bytes": 2696,
+    "sha256": "15a4150a75eeefde769d77c933cc3a6ff37c8efeb58e33e633c6423c1a55e889"
+  },
+  {
+    "path": "previews/skadi_arrow_v02_rotations.png",
+    "bytes": 1152,
+    "sha256": "462a80af69df6f977ac2fb1366f435938c584deb86b818408735d46a0d82a650"
+  },
+  {
+    "path": "previews/skadi_arrow_v03_review.png",
+    "bytes": 2668,
+    "sha256": "6624e78cd4bf40ede5468fb65f54ef1e22fa77bd7070fe24a366fb29db9e30d4"
+  },
+  {
+    "path": "previews/skadi_arrow_v03_rotations.png",
+    "bytes": 1145,
+    "sha256": "ba6516a8c3a2aba4246771ad6072dbce38da6a3804d309f9ecc3b8a48fd83fdb"
+  },
+  {
+    "path": "previews/skadi_arrow_v04_review.png",
+    "bytes": 2785,
+    "sha256": "7bb0cb0d6c08137979f7154bd64ef18fc520fa10939804518737f011224c4e4b"
+  },
+  {
+    "path": "previews/skadi_arrow_v04_rotations.png",
+    "bytes": 1382,
+    "sha256": "fcbcc29d625ba75055f9056243cec58c39795a1b2c317a4ffb0245a699c9696c"
+  },
+  {
+    "path": "previews/skadi_blizzard_v01_ground.png",
+    "bytes": 152309,
+    "sha256": "0730c09de45a09cafabccbd2ad681c03e1434416a0e4329ba79d976ce92328b1"
+  },
+  {
+    "path": "previews/skadi_blizzard_v01_review.png",
+    "bytes": 27157,
+    "sha256": "8ab55b984347d0e3ebe7d48e4305ba6f5730130abc389ea684c5bfedbf4ec8ab"
+  },
+  {
+    "path": "previews/skadi_blizzard_v01_rotations.png",
+    "bytes": 26402,
+    "sha256": "550b386af263051d4e113793784c12af454acf3ea9737f7919005e0708ebee45"
+  },
+  {
+    "path": "previews/skadi_ice_v01_review.png",
+    "bytes": 5427,
+    "sha256": "851bdf688aed38a06912547bf0d3732fab3a73d5b1f27a479363bb15a445fce4"
+  },
+  {
+    "path": "previews/skadi_ice_v01_stretch.png",
+    "bytes": 11609,
+    "sha256": "d2e0e0d4cfb2df8b0e14f806eac6b16c97bca08f5f5a6ee11fff8cdea20c3402"
+  },
+  {
+    "path": "previews/skadi_ice_v02_review.png",
+    "bytes": 5695,
+    "sha256": "bd754039b8b20a7969dbe0699a23ccc68000066e8173277e21cd139175d21097"
+  },
+  {
+    "path": "previews/skadi_ice_v02_stretch.png",
+    "bytes": 12240,
+    "sha256": "a2802fcba999776243c3d5d7462eaa555269c5c7c8390eff480915f1d2addff0"
+  },
+  {
+    "path": "previews/uncapped_contact.png",
+    "bytes": 18099,
+    "sha256": "9076ebab32f98751c4df268d52079c8edce0d372ddda13923fb57a5d1a43f7ad"
+  },
+  {
+    "path": "records/browser_review.json",
+    "bytes": 328,
+    "sha256": "a099dc69e559eec0fe5ce5f0a0fab44fb303f065bfade4e042d90f975a903e29"
+  },
+  {
+    "path": "records/delivery_audit.json",
+    "bytes": 285,
+    "sha256": "b338a0ddb93a56009b2088d83d08f869222f11603e80c2874a5037f3a508b24b"
+  },
+  {
+    "path": "records/final_audit.json",
+    "bytes": 321,
+    "sha256": "8eec9ae9f084b3aaf70bb55ce1efcc817ed2b6a00ea2c1e08bb31254510fc5c7"
+  },
+  {
+    "path": "records/final_versions.json",
+    "bytes": 304,
+    "sha256": "9b2f79937102bc2d7170ab72a4d1de1dce17e1e00ff9e393a37cbbf249ef726a"
+  },
+  {
+    "path": "records/gallery_script.js",
+    "bytes": 1862,
+    "sha256": "f415b80fe9f64df6c4ab0219c6bd7af2249d0e86eed4af2841bcf18e7ad1cbc8"
+  },
+  {
+    "path": "records/generation_baldr_beam_v01.json",
+    "bytes": 2048,
+    "sha256": "7b56802ab0e30f376be3e3751e7efff4b0fe296e71f1020550d9482ada5e480f"
+  },
+  {
+    "path": "records/generation_baldr_glow_v01.json",
+    "bytes": 1998,
+    "sha256": "68b2dd34e2bd7e5ba656054656a31ca48a52b9b4268556781b678f6254e144bc"
+  },
+  {
+    "path": "records/generation_baldr_glow_v02.json",
+    "bytes": 2331,
+    "sha256": "f4a150154d35aa6acda0d8394fc8304c3a963d5a20b316f2f2a179f2b99bcd70"
+  },
+  {
+    "path": "records/generation_baldr_spear_v01.json",
+    "bytes": 1882,
+    "sha256": "fe4151ceae6fb8971c40456ddd3f7ae27be29b1ba87594b7e8dd75c970c54803"
+  },
+  {
+    "path": "records/generation_freyr_boar_v01.json",
+    "bytes": 2173,
+    "sha256": "31de720bee14cf9e67a55ecb9e1e64b92c16a4826b10d36afd7e7e833af41fa8"
+  },
+  {
+    "path": "records/generation_freyr_field_v01.json",
+    "bytes": 2083,
+    "sha256": "c511209d1a65251ecb3f8052ffe8d4859e23b6636add6570a8d9b6ae5ccda866"
+  },
+  {
+    "path": "records/generation_freyr_sword_v01.json",
+    "bytes": 1934,
+    "sha256": "0628650dddd65015d0c7cea2d45d598556a87c8173b10346ceed1526c44b257c"
+  },
+  {
+    "path": "records/generation_freyr_sword_v02.json",
+    "bytes": 1599,
+    "sha256": "7772fd337d851ca4320b89f0e02b3b36bcddbc9d16327be86250740aba5b0791"
+  },
+  {
+    "path": "records/generation_pickup_apple_v01.json",
+    "bytes": 1852,
+    "sha256": "60ec8d6d5fa8ff3315432c583eb7b103f64baaa43ce9f5f2217e4e0467797030"
+  },
+  {
+    "path": "records/generation_ran_net_v01.json",
+    "bytes": 2023,
+    "sha256": "82a8a92cb1d93f95f8cd46bb926fa25f01389eebd544bc4382592ceafd88c0ed"
+  },
+  {
+    "path": "records/generation_ran_wave_v01.json",
+    "bytes": 2064,
+    "sha256": "7ec96a62ca1a6ab972992e714266c1e6a524bd779bdd064207ff4ef58e6c5eb2"
+  },
+  {
+    "path": "records/generation_ran_wave_v02.json",
+    "bytes": 2395,
+    "sha256": "c62ff4c6a32d3c0c465aa4e74bb746eaecd8285146757bd9b2b56aadb82c7d78"
+  },
+  {
+    "path": "records/generation_ran_whirl_v01.json",
+    "bytes": 2009,
+    "sha256": "826c3d65d8fdb135f994480afb4be09dece8c113235f7ac504a71cb75d92eed2"
+  },
+  {
+    "path": "records/generation_skadi_arrow_v01.json",
+    "bytes": 1955,
+    "sha256": "b036e2b9e9d3709deec6602db3ab57f661fd858493ccff5c3d902e7ab5807221"
+  },
+  {
+    "path": "records/generation_skadi_arrow_v02.json",
+    "bytes": 1758,
+    "sha256": "ee79600386c7f2bfe80fe5a4aa47ce6e1eb023ddb82bbf7c59eb0ac6b9b9d51f"
+  },
+  {
+    "path": "records/generation_skadi_arrow_v03.json",
+    "bytes": 2047,
+    "sha256": "338c3a3f772468fa7388e592385f0fca978c804c2b189a41344a6c31cd3ef668"
+  },
+  {
+    "path": "records/generation_skadi_arrow_v04.json",
+    "bytes": 2072,
+    "sha256": "d28ef4e507a5653a762d01d394537e26b9d258ef10e6b4cdc5fdc15265d671a4"
+  },
+  {
+    "path": "records/generation_skadi_blizzard_v01.json",
+    "bytes": 2000,
+    "sha256": "348aacf64b2c2378b72c588e48f3ab39a8119a0df0a6ec373494287e04927ac6"
+  },
+  {
+    "path": "records/generation_skadi_ice_v01.json",
+    "bytes": 2054,
+    "sha256": "23db9c2bb5f0eb89360fb677d3a39db2c4e4de66576bdcfe09df87134daf9e10"
+  },
+  {
+    "path": "records/generation_skadi_ice_v02.json",
+    "bytes": 2386,
+    "sha256": "c10355a20ca4ce952bc779f6fb41e8722b2f0fcd1992c23befc18f2396c25a30"
+  },
+  {
+    "path": "records/normalization_baldr_beam_v01.json",
+    "bytes": 461,
+    "sha256": "4371b4be6905757644e5ab6f37ad5a526e53d43a2192f3f4a8f1b37d6d97a121"
+  },
+  {
+    "path": "records/normalization_baldr_glow_v01.json",
+    "bytes": 460,
+    "sha256": "77ac61d444bd6af9ff2431c7ddb603d918f468916dd477dc3cc673428e87f6cb"
+  },
+  {
+    "path": "records/normalization_baldr_glow_v02.json",
+    "bytes": 295,
+    "sha256": "f2bc3ee9018fb168db3b88a44105d686c7c58870ceedc03826e8f34554ef429a"
+  },
+  {
+    "path": "records/normalization_baldr_spear_v01.json",
+    "bytes": 539,
+    "sha256": "a79025296cf838706b5c0bb82198b2a5d2318b32ebf5bebfb1e6add6a92f6ff7"
+  },
+  {
+    "path": "records/normalization_freyr_boar_v01.json",
+    "bytes": 646,
+    "sha256": "7003f38a439ce0ada2336b17706e07d5bc276ccbefab45f598501ef00a164823"
+  },
+  {
+    "path": "records/normalization_freyr_field_v01.json",
+    "bytes": 605,
+    "sha256": "7508c77fd095672bf8af8509447e48e934ebbfd2998e62ab2b7b4d660bd6c81d"
+  },
+  {
+    "path": "records/normalization_freyr_sword_v01.json",
+    "bytes": 540,
+    "sha256": "97e6d543f857e37ecd3a6ed865c2cf4284cd4a2fbb805c98836f63100536ddaf"
+  },
+  {
+    "path": "records/normalization_freyr_sword_v02.json",
+    "bytes": 540,
+    "sha256": "58d1dd2b84c2b4b698ecdbef75ab4a6521bd37dfe9cca7b12922a3c084dcf4ae"
+  },
+  {
+    "path": "records/normalization_pickup_apple_v01.json",
+    "bytes": 541,
+    "sha256": "ea2fe497d8d04dc250ad2905a4d545035fbe9865fc6ad4889882c1ca99957504"
+  },
+  {
+    "path": "records/normalization_ran_net_v01.json",
+    "bytes": 597,
+    "sha256": "3aa96eb9cc1dbc5371ba870ad94c69fe609344259da406a65ddae33ce96385a9"
+  },
+  {
+    "path": "records/normalization_ran_wave_v01.json",
+    "bytes": 459,
+    "sha256": "f7e2b379417e9f777b5e328c44659fb151d7df65424961a46258437b1ddedbf8"
+  },
+  {
+    "path": "records/normalization_ran_wave_v02.json",
+    "bytes": 293,
+    "sha256": "375a7bfa5b83bb8d939522b5d1428f1825e8fc11aa6e7f2b5793194e557c609c"
+  },
+  {
+    "path": "records/normalization_ran_whirl_v01.json",
+    "bytes": 600,
+    "sha256": "232bb144a18e4b6bac63d1b1ed9185a87d16df408ed21d9a8c67fede622a6c99"
+  },
+  {
+    "path": "records/normalization_skadi_arrow_v01.json",
+    "bytes": 540,
+    "sha256": "ab6e2687853bb7ebb0e41f85f2f7a41b0f481bae111a4f827e0b93bf75a14c24"
+  },
+  {
+    "path": "records/normalization_skadi_arrow_v02.json",
+    "bytes": 540,
+    "sha256": "9b30ba4c51adb19f5e61a91079be1ff014d5796c211e479464ad8629f11b306a"
+  },
+  {
+    "path": "records/normalization_skadi_blizzard_v01.json",
+    "bytes": 607,
+    "sha256": "5a1a755d06924e44741192c15904c32d72adfebfc05c8f3faec41cb3b9c4f23f"
+  },
+  {
+    "path": "records/normalization_skadi_ice_v01.json",
+    "bytes": 461,
+    "sha256": "7d3c019f3f3d9644340ba2f03278af3b31fa71baf8c02fe6472b9382ac05ec08"
+  },
+  {
+    "path": "records/normalization_skadi_ice_v02.json",
+    "bytes": 294,
+    "sha256": "bbcbd04a642a08a745490ecdc422f22a28933cf6ffca72326baad2411a99ad42"
+  },
+  {
+    "path": "records/pipeline.py",
+    "bytes": 5723,
+    "sha256": "e47efbdf8b875c766afb641e66a983563432d650a1871e2fcd2a90fec3735fa9"
+  },
+  {
+    "path": "records/production_plan.json",
+    "bytes": 24875,
+    "sha256": "eb1ddd3c8451db7cad9effb257aa806c6f43f43938dab82a13b71b2b9b7a5762"
+  },
+  {
+    "path": "records/rejected_candidates.json",
+    "bytes": 547,
+    "sha256": "feacd6adb0a1e8feec00ef3cbe8449ed30fe3de3b4b40035ce8c5b3a26e378fd"
+  },
+  {
+    "path": "records/reviews.json",
+    "bytes": 5047,
+    "sha256": "0f574fc49a73eb970b979f359a8bdcb1d4aa69434f9c58b76b3d56bee712b809"
+  },
+  {
+    "path": "refs/effects_style.png",
+    "bytes": 106885,
+    "sha256": "ad79bc8846952dfb8309dfa676903c81eb98b4cf0d092472b475790c511e3989"
+  },
+  {
+    "path": "refs/enemy.png",
+    "bytes": 4858,
+    "sha256": "d1a43e34e34968eac7c058583e5e3a2e1b0453cc2e3dbdf629167dd6ac626d9b"
+  },
+  {
+    "path": "refs/feather_blade.png",
+    "bytes": 495,
+    "sha256": "413b7c8c586e1e401f446370c82a695db02730d004735f6c8552c9b19c807039"
+  },
+  {
+    "path": "refs/lightning.png",
+    "bytes": 17505,
+    "sha256": "9320096703e1e8fefee764b68507e7353f64e3775798397a30a68e5aac09d040"
+  },
+  {
+    "path": "refs/midgard_ground.png",
+    "bytes": 3655,
+    "sha256": "5e667d35e6b54999ad939643a6614609f0a0f8d4af0e412112afc122ccfb328a"
+  },
+  {
+    "path": "refs/rune_missile.png",
+    "bytes": 960,
+    "sha256": "c199b65f5786029aba9fe4e60f84cb31d158b2267a91e93f9861122ef827de8d"
+  },
+  {
+    "path": "refs/swordsman.png",
+    "bytes": 2535,
+    "sha256": "93ffceadeceda21ba869017db71412302a79a529068e4c2580d6ef798fff11b9"
+  },
+  {
+    "path": "refs/will_o_wisp_aura.png",
+    "bytes": 42399,
+    "sha256": "5f93271b5af23b4ce1f6a40b4986cca4c2c37b75cd6587098da2e2fd6bfe73d3"
+  }
+]

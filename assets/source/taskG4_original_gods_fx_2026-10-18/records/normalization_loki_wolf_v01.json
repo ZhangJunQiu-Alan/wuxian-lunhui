@@ -1,0 +1,44 @@
+{
+  "raw_size": [
+    1774,
+    887
+  ],
+  "source": "originals/loki_wolf_v01_raw.png",
+  "frame_boxes": [
+    [
+      27,
+      235,
+      887,
+      731
+    ],
+    [
+      0,
+      261,
+      863,
+      731
+    ]
+  ],
+  "target_perframe": [
+    32,
+    32
+  ],
+  "frames": 2,
+  "alpha": "binary128threshold",
+  "tool": "Pillow formatting only",
+  "common_scale": 0.03244495944380069,
+  "operation": "Equalcell cuts, whole silhouette crop, common nearest scale, shared32RGBpalette, anchorplacement; no bodyredrawing",
+  "placements": [
+    [
+      2,
+      9,
+      28,
+      16
+    ],
+    [
+      2,
+      10,
+      28,
+      15
+    ]
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "raw_size": [
+    1983,
+    793
+  ],
+  "source": "originals/baldr_spear_v01_raw.png",
+  "frame_boxes": [
+    [
+      23,
+      280,
+      1945,
+      514
+    ]
+  ],
+  "target_perframe": [
+    64,
+    16
+  ],
+  "frames": 1,
+  "alpha": "binary128threshold",
+  "tool": "Pillow formatting only",
+  "common_scale": 0.02861602497398543,
+  "operation": "Equalcell cuts, whole silhouette crop, common nearest scale, shared32RGBpalette, anchorplacement; no bodyredrawing",
+  "placements": [
+    [
+      2,
+      5,
+      55,
+      7
+    ]
+  ]
+}

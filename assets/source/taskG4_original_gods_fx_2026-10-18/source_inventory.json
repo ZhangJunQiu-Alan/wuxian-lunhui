@@ -1,0 +1,802 @@
+[
+  {
+    "path": "README.md",
+    "bytes": 4532,
+    "sha256": "0f8248aa3adc2177ea66d424316cf1a1c4e5971565cdf56b5e5567b85011f08b"
+  },
+  {
+    "path": "approved/freyja_cat.png",
+    "bytes": 683,
+    "sha256": "d6ca2191fbf66cce738db8ff63c5e05c8e4a449fd4cbcceb9b7ed8b0342573c4"
+  },
+  {
+    "path": "approved/freyja_chariot.png",
+    "bytes": 3018,
+    "sha256": "432d4cb590429fc99a338e0ff68195476c3ec3739055cba7e4eaa9e5c7620b66"
+  },
+  {
+    "path": "approved/freyja_ring.png",
+    "bytes": 10289,
+    "sha256": "63fdf5560ee273789d6fe8888beb67c8241c2852e3d9b463723dc7491f2245b4"
+  },
+  {
+    "path": "approved/loki_decoy.png",
+    "bytes": 3886,
+    "sha256": "f703cf340028d13d49285d168cacc770c9a0989efa1c979d86c57a06508d61e4"
+  },
+  {
+    "path": "approved/loki_fire_patch.png",
+    "bytes": 2781,
+    "sha256": "a5773032ad2af278c32e3079399b7c8c4205cb0cc8f90b12a1a784c81d3f4ec4"
+  },
+  {
+    "path": "approved/loki_wolf.png",
+    "bytes": 1216,
+    "sha256": "32c9c603d7cde4c620e07704a2df3e42b50c9587e4cae4f4729edd94d7bef13f"
+  },
+  {
+    "path": "approved/odin_raven.png",
+    "bytes": 898,
+    "sha256": "523a542fffee9fe05292dd50b825a993282312d65943ebf16086e24b089af7b0"
+  },
+  {
+    "path": "approved/odin_rune_circle.png",
+    "bytes": 6625,
+    "sha256": "286138576830d33617e3fcff77ea31fe7f2729e896fcaef32e8b317172d4b003"
+  },
+  {
+    "path": "approved/odin_spear.png",
+    "bytes": 301,
+    "sha256": "1c8b81380b3e61dab9255e5a7592ab961571c6ba136fe37e5b775e4a48e74815"
+  },
+  {
+    "path": "approved/pickup_feather.png",
+    "bytes": 309,
+    "sha256": "4aada24fb40f67df2151185dd5b648528d9d121ceb3aab9b2d1b529b59e3ab9a"
+  },
+  {
+    "path": "approved/pickup_tear.png",
+    "bytes": 259,
+    "sha256": "487e8ced3d776630edccfbfd3d57917586d4bb89e715ae8116c7014f1d56daee"
+  },
+  {
+    "path": "approved/thor_cloud.png",
+    "bytes": 5338,
+    "sha256": "46771823ba537d4592ca5d5087b2afd214e7d556313c1697ef99174c05c81bb8"
+  },
+  {
+    "path": "approved/thor_hammer.png",
+    "bytes": 792,
+    "sha256": "4a143fdceac2e85c1303a42b0212b6eb69c5f2b2e4400cd55d6931dfb165d950"
+  },
+  {
+    "path": "candidates/freyja_cat_v01.png",
+    "bytes": 683,
+    "sha256": "d6ca2191fbf66cce738db8ff63c5e05c8e4a449fd4cbcceb9b7ed8b0342573c4"
+  },
+  {
+    "path": "candidates/freyja_chariot_v01.png",
+    "bytes": 3018,
+    "sha256": "432d4cb590429fc99a338e0ff68195476c3ec3739055cba7e4eaa9e5c7620b66"
+  },
+  {
+    "path": "candidates/freyja_ring_v01.png",
+    "bytes": 10289,
+    "sha256": "63fdf5560ee273789d6fe8888beb67c8241c2852e3d9b463723dc7491f2245b4"
+  },
+  {
+    "path": "candidates/loki_decoy_v01.png",
+    "bytes": 3886,
+    "sha256": "f703cf340028d13d49285d168cacc770c9a0989efa1c979d86c57a06508d61e4"
+  },
+  {
+    "path": "candidates/loki_fire_patch_v01.png",
+    "bytes": 2781,
+    "sha256": "a5773032ad2af278c32e3079399b7c8c4205cb0cc8f90b12a1a784c81d3f4ec4"
+  },
+  {
+    "path": "candidates/loki_wolf_v01.png",
+    "bytes": 1017,
+    "sha256": "e925aa9ed8211f3cd265e97cbeefc7dbada352012c2bd60081134b4b1a782f4a"
+  },
+  {
+    "path": "candidates/loki_wolf_v02.png",
+    "bytes": 928,
+    "sha256": "0bb1db8ea020f253a9a51b57ded2bf9932bf259fe2dcdd8cb30916c7a241586e"
+  },
+  {
+    "path": "candidates/loki_wolf_v03.png",
+    "bytes": 1028,
+    "sha256": "3692bbddf455ad2a7ce8a5354e7fbde71b04dec2734cc5b4c3736502cc31147f"
+  },
+  {
+    "path": "candidates/loki_wolf_v04.png",
+    "bytes": 1216,
+    "sha256": "32c9c603d7cde4c620e07704a2df3e42b50c9587e4cae4f4729edd94d7bef13f"
+  },
+  {
+    "path": "candidates/odin_raven_v01.png",
+    "bytes": 614,
+    "sha256": "220824d2555462450d7d7d1db03e819d15279a61792f7c9ca45fde2059e16879"
+  },
+  {
+    "path": "candidates/odin_raven_v02.png",
+    "bytes": 731,
+    "sha256": "42a5ff2b6a7662aff2f377f90e5e9246bdd33bf6efe3adf47523d61dd84027f5"
+  },
+  {
+    "path": "candidates/odin_raven_v03.png",
+    "bytes": 750,
+    "sha256": "0caebf35dde09e17bfbfe6a1ec6888a340b434c0e3a0ee893d2622db8bb2320d"
+  },
+  {
+    "path": "candidates/odin_raven_v04.png",
+    "bytes": 943,
+    "sha256": "05b234bc007299b195230b8bd43086d34f74d7e935f028e637bb110640acef09"
+  },
+  {
+    "path": "candidates/odin_raven_v05.png",
+    "bytes": 898,
+    "sha256": "523a542fffee9fe05292dd50b825a993282312d65943ebf16086e24b089af7b0"
+  },
+  {
+    "path": "candidates/odin_rune_circle_v01.png",
+    "bytes": 6625,
+    "sha256": "286138576830d33617e3fcff77ea31fe7f2729e896fcaef32e8b317172d4b003"
+  },
+  {
+    "path": "candidates/odin_spear_v01.png",
+    "bytes": 301,
+    "sha256": "1c8b81380b3e61dab9255e5a7592ab961571c6ba136fe37e5b775e4a48e74815"
+  },
+  {
+    "path": "candidates/pickup_feather_v01.png",
+    "bytes": 309,
+    "sha256": "4aada24fb40f67df2151185dd5b648528d9d121ceb3aab9b2d1b529b59e3ab9a"
+  },
+  {
+    "path": "candidates/pickup_tear_v01.png",
+    "bytes": 259,
+    "sha256": "487e8ced3d776630edccfbfd3d57917586d4bb89e715ae8116c7014f1d56daee"
+  },
+  {
+    "path": "candidates/thor_cloud_v01.png",
+    "bytes": 5338,
+    "sha256": "46771823ba537d4592ca5d5087b2afd214e7d556313c1697ef99174c05c81bb8"
+  },
+  {
+    "path": "candidates/thor_hammer_v01.png",
+    "bytes": 744,
+    "sha256": "a7b319d9f7034bd55730d2ba4d78493205df2b11b4d08673459074d76cb666fe"
+  },
+  {
+    "path": "candidates/thor_hammer_v02.png",
+    "bytes": 792,
+    "sha256": "4a143fdceac2e85c1303a42b0212b6eb69c5f2b2e4400cd55d6931dfb165d950"
+  },
+  {
+    "path": "gallery.html",
+    "bytes": 19287,
+    "sha256": "3afcf66ea30732f9c957b597cf3648a20eec0330adba308e20e290254b871147"
+  },
+  {
+    "path": "manifest.json",
+    "bytes": 34708,
+    "sha256": "ebb867a661bd4201b2e31f2e3f0b802e1676a7ce48d6cbf90ecd28607b308399"
+  },
+  {
+    "path": "originals/freyja_cat_v01_raw.png",
+    "bytes": 490955,
+    "sha256": "5bcde420cd5aaed55b1bcb1ba4cba666799dd4626bed358c85ebc3f634650040"
+  },
+  {
+    "path": "originals/freyja_chariot_v01_raw.png",
+    "bytes": 874304,
+    "sha256": "f58a5f0d2b661f611faf2bd7dab1376242c3f26176ec3e97f8984023e22e0325"
+  },
+  {
+    "path": "originals/freyja_ring_v01_raw.png",
+    "bytes": 1561115,
+    "sha256": "5d974a4e890cd8a598491d1cd2ca1a898f80120fbd48fe29e2bf526a327783e3"
+  },
+  {
+    "path": "originals/loki_decoy_v01_raw.png",
+    "bytes": 1204142,
+    "sha256": "cb3647ca53369142e79bf3e0a528a1198a33b8e45c2aa1d0f73b03fd62fd38a9"
+  },
+  {
+    "path": "originals/loki_fire_patch_v01_raw.png",
+    "bytes": 716071,
+    "sha256": "f98723413eec457b1337116b24f45a77fd8c7cfa79b29b267123ede6c9485f2e"
+  },
+  {
+    "path": "originals/loki_wolf_v01_raw.png",
+    "bytes": 879059,
+    "sha256": "e4f95e666e857da0f218084e47e5deb7fd93a899920ba3ed3c59c2629a5da338"
+  },
+  {
+    "path": "originals/loki_wolf_v02_raw.png",
+    "bytes": 818226,
+    "sha256": "486c1982baf3c78f25f767d0a6d9d965b53f9f1a998e0c0be8116b56f20c01c3"
+  },
+  {
+    "path": "originals/loki_wolf_v03_raw.png",
+    "bytes": 634508,
+    "sha256": "c6d645298e48f09ec0c03facdcff41a7e2be23ad0f86d633fa1d4ac32f9c915f"
+  },
+  {
+    "path": "originals/loki_wolf_v04_raw.png",
+    "bytes": 457350,
+    "sha256": "d14df2a49e83c7ab76764aad2a305fc2aa1fb66db2ad12c108512cef1d39a79b"
+  },
+  {
+    "path": "originals/odin_raven_v01_raw.png",
+    "bytes": 450581,
+    "sha256": "ab9b72bcbd5207f6933b818be59b2ab933ba7bd24306d3459cef72b34d07549c"
+  },
+  {
+    "path": "originals/odin_raven_v02_raw.png",
+    "bytes": 455356,
+    "sha256": "fca9c9deb11c62060e40cb7eb10a7a5f25b1cb24a4c8b6b774114ef0676e5bf8"
+  },
+  {
+    "path": "originals/odin_raven_v04_raw.png",
+    "bytes": 247188,
+    "sha256": "b3ba30ce931cbed9a58cb5b0c26dbcd59f737facd592f81593c16c89deb655ca"
+  },
+  {
+    "path": "originals/odin_rune_circle_v01_raw.png",
+    "bytes": 723290,
+    "sha256": "7c6ff2f42c4bed7028e308f5705e5bba38b5b2c993953057f7ccba366951336c"
+  },
+  {
+    "path": "originals/odin_spear_v01_raw.png",
+    "bytes": 276931,
+    "sha256": "4cd79938af93a6ab19ae0d3f4c12e7834fe0c91453b18ce916cf0afa881165b9"
+  },
+  {
+    "path": "originals/pickup_feather_v01_raw.png",
+    "bytes": 375292,
+    "sha256": "4adf45a7cd9e059020a83daaeac474e421c1917d41acacae8593b674ce7e4f04"
+  },
+  {
+    "path": "originals/pickup_tear_v01_raw.png",
+    "bytes": 657259,
+    "sha256": "68bf272aa99f7cb4ff236be4a53622ff53cce140ddcccfa0a8a0c629fcae3935"
+  },
+  {
+    "path": "originals/thor_cloud_v01_raw.png",
+    "bytes": 796118,
+    "sha256": "92fc456cf28a637269587188798962367ab63c2aff9e2523c013c9cee98d8051"
+  },
+  {
+    "path": "originals/thor_hammer_v01_raw.png",
+    "bytes": 1145495,
+    "sha256": "ba85e0e9a570650b5324cf5824c9ce6ebfa4dd981051bc53e1bceaaf6a8cac26"
+  },
+  {
+    "path": "originals/thor_hammer_v02_raw.png",
+    "bytes": 828057,
+    "sha256": "339d5e55fc01105e21d0fec2435565d66436d8a4b4ea0700bc991ac5619ff1f3"
+  },
+  {
+    "path": "previews/animation_overview.gif",
+    "bytes": 203887,
+    "sha256": "910ab2df2dde13809946f6aedb6429883441184a14f7fc851706ae9cb5d03708"
+  },
+  {
+    "path": "previews/detail_contact.png",
+    "bytes": 53496,
+    "sha256": "b4eb606c4f3e560912cc1f25f074572a47620443d735dfb95058e9115dc98d1c"
+  },
+  {
+    "path": "previews/final_animation_frames.png",
+    "bytes": 27030,
+    "sha256": "11cecfa896da17320f3c97d195efdbf82525000fb6e9bc2f1983cce79cb6ba69"
+  },
+  {
+    "path": "previews/final_contact.png",
+    "bytes": 64558,
+    "sha256": "d84c4be403063eb75110c03384ef2a2583d30890810adef913e86925ca91f783"
+  },
+  {
+    "path": "previews/freyja_cat_v01.gif",
+    "bytes": 3679,
+    "sha256": "3ffbda1caa4cf02721213447cedcc99a2dcfcd07437d8f080c446e6d28c53e5e"
+  },
+  {
+    "path": "previews/freyja_cat_v01_review.png",
+    "bytes": 4453,
+    "sha256": "01779d039be65dec10b87d67658f1d006f52dc5c1423b3450f24a17b9e662794"
+  },
+  {
+    "path": "previews/freyja_chariot_v01_review.png",
+    "bytes": 12366,
+    "sha256": "5703b6a01452b91b4c5ff652be7369cef97f1ba713c1be94209f2a5e1284ddac"
+  },
+  {
+    "path": "previews/freyja_ring_v01_ground.png",
+    "bytes": 158949,
+    "sha256": "7189ffdd6ce0ab61144ff065d3178da3fac8c5cb86610cf4430007029861ea8c"
+  },
+  {
+    "path": "previews/freyja_ring_v01_review.png",
+    "bytes": 32247,
+    "sha256": "eff9ca84f2652cf1b1f6b3dd15fe3464cad53bb32c308b6c94fb5157ae69a78b"
+  },
+  {
+    "path": "previews/initial_contact.png",
+    "bytes": 115279,
+    "sha256": "49293c297a7b6b416c672e78f3a6e43ec038b2041b3ddcd000894ebd47c0b55b"
+  },
+  {
+    "path": "previews/loki_decoy_v01.gif",
+    "bytes": 24391,
+    "sha256": "f9b0a9448a08928cc0b5e7778c6d303b4c1dc1af6e805be86002a1c449b45608"
+  },
+  {
+    "path": "previews/loki_decoy_v01_review.png",
+    "bytes": 17415,
+    "sha256": "9fc9849eadf6d8b80b0f8b39626fe6cbdd32529fd3cc0c21dd42da5a55a9b22e"
+  },
+  {
+    "path": "previews/loki_fire_patch_v01_ground.png",
+    "bytes": 73458,
+    "sha256": "afd6dd88b0da2dd31bb44da4a79e0676c82d82ad2613c8b2a58d43e53eac867a"
+  },
+  {
+    "path": "previews/loki_fire_patch_v01_review.png",
+    "bytes": 10395,
+    "sha256": "7d3f34ab2ba8e1328ef0e77556b1c596430ebcf2c6f720263f3f73274ca0012d"
+  },
+  {
+    "path": "previews/loki_wolf_v01.gif",
+    "bytes": 5981,
+    "sha256": "a3a40cf1d38f917cb995df14e0fdfc185f0f7686c72a8b59bddc3c352760bbf1"
+  },
+  {
+    "path": "previews/loki_wolf_v01_review.png",
+    "bytes": 6027,
+    "sha256": "13ce16aa16a9f8e587ad09f55fa2c499205d374c704ba3455fee5a1c3ba86e8f"
+  },
+  {
+    "path": "previews/loki_wolf_v02.gif",
+    "bytes": 5817,
+    "sha256": "1a0a65897cd827c2d31ba069c3a12f8b788fd1863344d1ba6e5fe46bc58d632b"
+  },
+  {
+    "path": "previews/loki_wolf_v02_review.png",
+    "bytes": 5708,
+    "sha256": "2fc00141ecb19327ab47d6dbe8c5565c0b22d93195627af1ce2eda5256bf24e1"
+  },
+  {
+    "path": "previews/loki_wolf_v03.gif",
+    "bytes": 6277,
+    "sha256": "7f61c92645ea2b7d13a040bef63960f09f543fa73ad266e675f7219abc5f3613"
+  },
+  {
+    "path": "previews/loki_wolf_v03_review.png",
+    "bytes": 5960,
+    "sha256": "167ad5035ece9c84b6beff57613cc482abf9866ec82dc1fd8c1713d901060f82"
+  },
+  {
+    "path": "previews/loki_wolf_v04.gif",
+    "bytes": 6465,
+    "sha256": "49f01d75bbc23b86d11c86fef195e346d125c7bd9139f8d79f2930018c878309"
+  },
+  {
+    "path": "previews/loki_wolf_v04_review.png",
+    "bytes": 5947,
+    "sha256": "29e2700ae4bb8699cf6b14baa0a89b0bdee1e7be75e7163b6acb857dd9e7ae6d"
+  },
+  {
+    "path": "previews/odin_raven_v01.gif",
+    "bytes": 3261,
+    "sha256": "527cfbb3f0139d5a69d35b9627d2b508ec476b3dd0cacbf526f38954156304b0"
+  },
+  {
+    "path": "previews/odin_raven_v01_review.png",
+    "bytes": 4109,
+    "sha256": "be0236fbd97f777d692ba4e2d4367b1998136d861d59c4ef67de9728b97ffd9d"
+  },
+  {
+    "path": "previews/odin_raven_v02.gif",
+    "bytes": 3867,
+    "sha256": "1ec9539d3f5dbfe181e5b61a59204e5261df031e0b1e09adf2afa1769b8a1dce"
+  },
+  {
+    "path": "previews/odin_raven_v02_review.png",
+    "bytes": 4584,
+    "sha256": "1e50a6590bf2600211252fb77e2bdad56927d58435dee3c77e551784850a11b4"
+  },
+  {
+    "path": "previews/odin_raven_v03.gif",
+    "bytes": 3857,
+    "sha256": "3f4ac1e63f6d43211feabc7d0a277dae2ac4ed8b39794c37716399e414c5ac3e"
+  },
+  {
+    "path": "previews/odin_raven_v03_review.png",
+    "bytes": 4677,
+    "sha256": "a7a9b7c109dc744382d3d1bd947b1c39bab5a591a18f7293d4a00a2991d45a69"
+  },
+  {
+    "path": "previews/odin_raven_v04.gif",
+    "bytes": 3995,
+    "sha256": "11eed76b9b7e5ce6133ed1811f76ba8e176e82f66142eb3dddd75b79f721f984"
+  },
+  {
+    "path": "previews/odin_raven_v04_review.png",
+    "bytes": 4469,
+    "sha256": "c099a5b19feeb86c177ed70c5755c3c293b18a38edd37c75acbf010855b24f1b"
+  },
+  {
+    "path": "previews/odin_raven_v05.gif",
+    "bytes": 3717,
+    "sha256": "58fc5914fcaf18b4516853298eb75226e9e02959af65f80042232e76de455fc0"
+  },
+  {
+    "path": "previews/odin_raven_v05_review.png",
+    "bytes": 4510,
+    "sha256": "390494c34627eb190245266dc6e47199ca77530802b8259b36051fc5e83b31cc"
+  },
+  {
+    "path": "previews/odin_rune_circle_v01_ground.png",
+    "bytes": 113556,
+    "sha256": "6c758ea3f2323a0fcf63311bbf63932e6015088ef97acb7e82cdcf3a2be39937"
+  },
+  {
+    "path": "previews/odin_rune_circle_v01_review.png",
+    "bytes": 20937,
+    "sha256": "bfa6c7bf80839e824ca3de83dbdf880d1ff739f2809562b2419495d5f9b92058"
+  },
+  {
+    "path": "previews/odin_spear_v01_review.png",
+    "bytes": 3173,
+    "sha256": "4e3ba215a0ed4cf9fc6c7d28225515439c2020b71386cb710a1dbfd4932ea5a6"
+  },
+  {
+    "path": "previews/odin_spear_v01_rotations.png",
+    "bytes": 2330,
+    "sha256": "883619f6166bd33edea401f05b0c373d935968a7f5b5e961b59de4ffbeb265ab"
+  },
+  {
+    "path": "previews/pickup_feather_v01_review.png",
+    "bytes": 3181,
+    "sha256": "311424c25a8888e308bcdf409bb781f6d09fdf698c583c7dc543fb8fcced92c7"
+  },
+  {
+    "path": "previews/pickup_tear_v01_review.png",
+    "bytes": 2862,
+    "sha256": "5761e55d0394860921fe58673ca91bea97080aaea05792ca04100405a6483cd5"
+  },
+  {
+    "path": "previews/thor_cloud_v01_review.png",
+    "bytes": 17399,
+    "sha256": "38de25e6234fcf77f56286227a8e245098a87c2dc05504d3a550c3916a7a700c"
+  },
+  {
+    "path": "previews/thor_hammer_v01_review.png",
+    "bytes": 4626,
+    "sha256": "dd1d601bccd6b517c0b10e9a33c62f6dca326079eebda6a16e12c2092dc684a3"
+  },
+  {
+    "path": "previews/thor_hammer_v01_rotations.png",
+    "bytes": 2952,
+    "sha256": "e2dd325212b6d97bb7d41cbdcdd439fc10352b67538fd064e3192917c86c9918"
+  },
+  {
+    "path": "previews/thor_hammer_v02_review.png",
+    "bytes": 4525,
+    "sha256": "14e3d55cb44a6efc34b4fa79a4907de167420852fd648851f3b32eb463d36959"
+  },
+  {
+    "path": "previews/thor_hammer_v02_rotations.png",
+    "bytes": 2781,
+    "sha256": "02ba2366275522bc0eef6e455279da569b58291f4717241caba0326cc539d7cd"
+  },
+  {
+    "path": "records/browser_review.json",
+    "bytes": 328,
+    "sha256": "a099dc69e559eec0fe5ce5f0a0fab44fb303f065bfade4e042d90f975a903e29"
+  },
+  {
+    "path": "records/build_delivery.py",
+    "bytes": 21119,
+    "sha256": "852aec3d17268d1136fab90fe4df2ce007c7a1a658ff309da6a556048f88a908"
+  },
+  {
+    "path": "records/delivery_audit.json",
+    "bytes": 285,
+    "sha256": "c228a817bc68900291ceaaa084f7a882e7f217a8d612cd63eefbd354f99f3d49"
+  },
+  {
+    "path": "records/final_audit.json",
+    "bytes": 568,
+    "sha256": "3f79f80f1e40a1066dc0fc3de25808cad0c7537c01caa8b9843daabae86109e8"
+  },
+  {
+    "path": "records/final_versions.json",
+    "bytes": 322,
+    "sha256": "ec06547a1a9f54e8c5d91e34ba86196bb5129ab33d5493333d6341dbdce85b5b"
+  },
+  {
+    "path": "records/gallery_script.js",
+    "bytes": 1862,
+    "sha256": "f415b80fe9f64df6c4ab0219c6bd7af2249d0e86eed4af2841bcf18e7ad1cbc8"
+  },
+  {
+    "path": "records/generation_freyja_cat_v01.json",
+    "bytes": 2119,
+    "sha256": "3220fb1b66a0bb7bb398bdb218941969a75fd85a19b9ef261e90ea705759239d"
+  },
+  {
+    "path": "records/generation_freyja_chariot_v01.json",
+    "bytes": 2163,
+    "sha256": "dd5c32c10554ef9a62853891bd21d3ef9e218a4e2865bd90857eaab3d2043093"
+  },
+  {
+    "path": "records/generation_freyja_ring_v01.json",
+    "bytes": 1978,
+    "sha256": "07afd26da433214dd7a3ba5c867f5bc23880dc59453b1a16f1eef214fbde3e6d"
+  },
+  {
+    "path": "records/generation_loki_decoy_v01.json",
+    "bytes": 2114,
+    "sha256": "7d6ec721b49b06f6be2d4c4d926d6c3c828816d91337a5eec2221f9c9ed1aaee"
+  },
+  {
+    "path": "records/generation_loki_fire_patch_v01.json",
+    "bytes": 1905,
+    "sha256": "21fd488d52d4329f4465d9eb881a7472d0c2ee4702c5e412a87dc68ca4691f2d"
+  },
+  {
+    "path": "records/generation_loki_wolf_v01.json",
+    "bytes": 2090,
+    "sha256": "1cb6cefbc374885dfc4798c37e8c67c73e7dd9802cf994d1e8a29a692a6e3039"
+  },
+  {
+    "path": "records/generation_loki_wolf_v02.json",
+    "bytes": 1834,
+    "sha256": "9c54103ec0928129d995f67459bd9a1f2ad476c119a278b7d9cbb225f5985a88"
+  },
+  {
+    "path": "records/generation_loki_wolf_v03.json",
+    "bytes": 1781,
+    "sha256": "a56b3ba6d7cb5c7f5885867095853f4fb1f95d07db09b4e85edd8d2a27e2c3fa"
+  },
+  {
+    "path": "records/generation_loki_wolf_v04.json",
+    "bytes": 2141,
+    "sha256": "4c305579734731a6c01953613010043299b5b0785114b2c3ec980d2ea209022f"
+  },
+  {
+    "path": "records/generation_odin_raven_v01.json",
+    "bytes": 2061,
+    "sha256": "c2f4b1f2a25f4b3d156000653f17d1c06a47e7a04863c80d87b53e7d257f391f"
+  },
+  {
+    "path": "records/generation_odin_raven_v02.json",
+    "bytes": 1854,
+    "sha256": "9c391e5c7e334787362836bf287f2a522bfade48bcbf2550803a87936b336281"
+  },
+  {
+    "path": "records/generation_odin_raven_v03.json",
+    "bytes": 2158,
+    "sha256": "a510cc0bbad87967c8dcc9fbf7276effe9da3880cbecc958290e8cf3b13e8724"
+  },
+  {
+    "path": "records/generation_odin_raven_v04.json",
+    "bytes": 1909,
+    "sha256": "741001734089fe241f47fa8b1b9a13ada4dc11d34c567cc53aa0cf44a452e476"
+  },
+  {
+    "path": "records/generation_odin_raven_v05.json",
+    "bytes": 2618,
+    "sha256": "a7b9bca8a5613b090ed9cde2700274a967cc8725604e42eee84105c1874940ee"
+  },
+  {
+    "path": "records/generation_odin_rune_circle_v01.json",
+    "bytes": 1989,
+    "sha256": "b2884b0ab49f9e7c97a4b5adaddbb38dd7dbdd365f07c8fbb8c0ea129fb5f087"
+  },
+  {
+    "path": "records/generation_odin_spear_v01.json",
+    "bytes": 1867,
+    "sha256": "ee5b97db4ebebb1fc97ced06d12c54f2ad3819cdeb0bbffc7183be8697533d59"
+  },
+  {
+    "path": "records/generation_pickup_feather_v01.json",
+    "bytes": 1896,
+    "sha256": "c82751baa729eb6988c5c72415b3d64eabe8784b2cac7999f850cca4b0aef55a"
+  },
+  {
+    "path": "records/generation_pickup_tear_v01.json",
+    "bytes": 1835,
+    "sha256": "9fc0246383231841043a76fee7fb8582038abb41dbf50054b5b2e15182ffe94d"
+  },
+  {
+    "path": "records/generation_thor_cloud_v01.json",
+    "bytes": 1827,
+    "sha256": "f2a4e060849dcb11c97aeae1ce92c787cba496ac3bb29159f499df501c2f42eb"
+  },
+  {
+    "path": "records/generation_thor_hammer_v01.json",
+    "bytes": 1983,
+    "sha256": "e6358fe3817e436949c3a9c3d32f77f1d9aa2da7513bb7cb28537d2f7387d872"
+  },
+  {
+    "path": "records/generation_thor_hammer_v02.json",
+    "bytes": 1607,
+    "sha256": "e465d153a908475991ea5c8b64d9b992258d6eaa7483432d579c624bcc7be458"
+  },
+  {
+    "path": "records/normalization_freyja_cat_v01.json",
+    "bytes": 644,
+    "sha256": "ba218493b2460d5f2b6fbaf17f2d5ff7acd1d6d03ba85489d1772bc0365edd92"
+  },
+  {
+    "path": "records/normalization_freyja_chariot_v01.json",
+    "bytes": 544,
+    "sha256": "e8cd59d82e001ac0bae139afcaf9d6d169617f74325822a04d87ad55273fc1af"
+  },
+  {
+    "path": "records/normalization_freyja_ring_v01.json",
+    "bytes": 604,
+    "sha256": "49160a60ca79a21f20edd315f1955ae6f88cbd1a671a7f3de10aed3451b19371"
+  },
+  {
+    "path": "records/normalization_loki_decoy_v01.json",
+    "bytes": 851,
+    "sha256": "a7cbf3b721c91479cfb95b590af3e78c2c017c899f30223ab7935948e04f95f7"
+  },
+  {
+    "path": "records/normalization_loki_fire_patch_v01.json",
+    "bytes": 606,
+    "sha256": "18f74c4f3728689aed9a677194869b3421d3460d1ce72bd5a9c25716775ba5bc"
+  },
+  {
+    "path": "records/normalization_loki_wolf_v01.json",
+    "bytes": 642,
+    "sha256": "b7ee3ad4cbad20cee40e7157020c79664f52aaf76642cab23f67fb6544669b63"
+  },
+  {
+    "path": "records/normalization_loki_wolf_v02.json",
+    "bytes": 643,
+    "sha256": "12077efc4e960919e6b93bfbd57cdf8a2160136bd0771c2a1f45c0fc68106639"
+  },
+  {
+    "path": "records/normalization_loki_wolf_v03.json",
+    "bytes": 632,
+    "sha256": "1aa5a9c074dd818f277fd481df4b6f54d42738ef41f3ff1d28e2df252f84f1d5"
+  },
+  {
+    "path": "records/normalization_loki_wolf_v04.json",
+    "bytes": 647,
+    "sha256": "551511985e29d5ae2d45a5cd9f6e31666332f64db14e36a7a536a62b6f0b025c"
+  },
+  {
+    "path": "records/normalization_odin_raven_v01.json",
+    "bytes": 644,
+    "sha256": "955a58bdf7b4f3275b652ac29d2973a0f5df0b5ebec4b342b1d57cd1dec9d5cd"
+  },
+  {
+    "path": "records/normalization_odin_raven_v02.json",
+    "bytes": 644,
+    "sha256": "e7ffc122a94e5500b80fd6f4bcfc9e79595446aabbe45d72a23180ae5ea195f2"
+  },
+  {
+    "path": "records/normalization_odin_raven_v04.json",
+    "bytes": 645,
+    "sha256": "4d1a805df846fb31edf3ec3d99671c5b9259c6f473950e44f61c606907cf8676"
+  },
+  {
+    "path": "records/normalization_odin_raven_v05.json",
+    "bytes": 609,
+    "sha256": "20343be19db6e3f78e37f2375b34c26ab77f7547e5fcfd56870425b2d4969778"
+  },
+  {
+    "path": "records/normalization_odin_rune_circle_v01.json",
+    "bytes": 605,
+    "sha256": "ccce18ecd0b82ae0b1e70189e4f4fba66c057571c3cb4a63e26a95677ec3b71d"
+  },
+  {
+    "path": "records/normalization_odin_spear_v01.json",
+    "bytes": 539,
+    "sha256": "eb636186fa667ed3c9d7eb3586a3e79e095afe6b81ae971a3ec135a82c7981a8"
+  },
+  {
+    "path": "records/normalization_pickup_feather_v01.json",
+    "bytes": 547,
+    "sha256": "588302658d77131e44f4668ff5dbcb3d28e071cc59cfa921e125b92c53c6d8c2"
+  },
+  {
+    "path": "records/normalization_pickup_tear_v01.json",
+    "bytes": 541,
+    "sha256": "e8cc8851bb0fa5d1d665e0680d85d42ff1d4d3a476e38ac1a9e7d80b5e732642"
+  },
+  {
+    "path": "records/normalization_thor_cloud_v01.json",
+    "bytes": 542,
+    "sha256": "17b0a0b42695e3344884c4d1783fb3cf3923d42e5a80103442bb5e4133152e2a"
+  },
+  {
+    "path": "records/normalization_thor_hammer_v01.json",
+    "bytes": 543,
+    "sha256": "bc3a5063f9548818dee7a830e7cb7875d9858901ab774f370a59a18c9af57dfc"
+  },
+  {
+    "path": "records/normalization_thor_hammer_v02.json",
+    "bytes": 542,
+    "sha256": "5f765427f8706874423a117640bd80a870147345509fe473773ab7cf14ace146"
+  },
+  {
+    "path": "records/pipeline.py",
+    "bytes": 5723,
+    "sha256": "e47efbdf8b875c766afb641e66a983563432d650a1871e2fcd2a90fec3735fa9"
+  },
+  {
+    "path": "records/prepare_final.py",
+    "bytes": 3623,
+    "sha256": "b7d0c3b88c5fb450ede977f47e212a55b74ef9937ac00f45aa36f79c74527b1a"
+  },
+  {
+    "path": "records/production_plan.json",
+    "bytes": 24627,
+    "sha256": "145c26ed66481780e2c2becf93bcca8deb8de24591422ede0e67c1b7cafd9ffb"
+  },
+  {
+    "path": "records/rejected_candidates.json",
+    "bytes": 633,
+    "sha256": "87c82dc98890efab77dbe0351bedbf124e095d4648cd813b0827fd1b1fc88516"
+  },
+  {
+    "path": "records/reviews.json",
+    "bytes": 5031,
+    "sha256": "6d3a8ffce14654d05b60f19d626b44122f314666bb332f1447a320e0bfaede54"
+  },
+  {
+    "path": "refs/effects_style.png",
+    "bytes": 106885,
+    "sha256": "ad79bc8846952dfb8309dfa676903c81eb98b4cf0d092472b475790c511e3989"
+  },
+  {
+    "path": "refs/enemy.png",
+    "bytes": 4858,
+    "sha256": "d1a43e34e34968eac7c058583e5e3a2e1b0453cc2e3dbdf629167dd6ac626d9b"
+  },
+  {
+    "path": "refs/feather_blade.png",
+    "bytes": 495,
+    "sha256": "413b7c8c586e1e401f446370c82a695db02730d004735f6c8552c9b19c807039"
+  },
+  {
+    "path": "refs/lightning.png",
+    "bytes": 17505,
+    "sha256": "9320096703e1e8fefee764b68507e7353f64e3775798397a30a68e5aac09d040"
+  },
+  {
+    "path": "refs/midgard_ground.png",
+    "bytes": 3655,
+    "sha256": "5e667d35e6b54999ad939643a6614609f0a0f8d4af0e412112afc122ccfb328a"
+  },
+  {
+    "path": "refs/rune_missile.png",
+    "bytes": 960,
+    "sha256": "c199b65f5786029aba9fe4e60f84cb31d158b2267a91e93f9861122ef827de8d"
+  },
+  {
+    "path": "refs/swordsman.png",
+    "bytes": 2535,
+    "sha256": "93ffceadeceda21ba869017db71412302a79a529068e4c2580d6ef798fff11b9"
+  },
+  {
+    "path": "refs/will_o_wisp_aura.png",
+    "bytes": 42399,
+    "sha256": "5f93271b5af23b4ce1f6a40b4986cca4c2c37b75cd6587098da2e2fd6bfe73d3"
+  },
+  {
+    "path": "previews/animation_overview_first_frame.png",
+    "bytes": 10807,
+    "sha256": "f8231e4f146ab530dfaa65783dabefcf1c6872b4f1139965334b7cb0188b6016"
+  }
+]

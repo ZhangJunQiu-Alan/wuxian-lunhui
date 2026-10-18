@@ -1,0 +1,33 @@
+{
+  "raw_size": [
+    1254,
+    1254
+  ],
+  "source": "originals/ran_net_v01_raw.png",
+  "frame_boxes": [
+    [
+      77,
+      127,
+      1207,
+      1128
+    ]
+  ],
+  "target_perframe": [
+    96,
+    96
+  ],
+  "frames": 1,
+  "alpha": "preserve generatedalpha, quantized8levels/cappedforground",
+  "tool": "Pillow formatting only",
+  "common_scale": 0.08141592920353982,
+  "operation": "Equalcell cuts, whole silhouette crop, common nearest scale, shared32RGBpalette, anchorplacement; no bodyredrawing",
+  "placements": [
+    [
+      2,
+      7,
+      92,
+      81
+    ]
+  ],
+  "alpha_cap": 110
+}

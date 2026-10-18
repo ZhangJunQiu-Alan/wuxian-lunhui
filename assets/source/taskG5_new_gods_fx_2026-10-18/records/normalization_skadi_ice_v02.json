@@ -1,0 +1,11 @@
+{
+  "source": "originals/skadi_ice_v01_raw.png",
+  "operations": [
+    "whole silhouette crop",
+    "nearest resize",
+    "32 RGB palette",
+    "alpha cap",
+    "2px vertical padding"
+  ],
+  "purpose": "Preserve original natural strip ends; remove artificial endport blocks. No body drawing."
+}

@@ -1,0 +1,68 @@
+{
+  "raw_size": [
+    1983,
+    793
+  ],
+  "source": "originals/loki_decoy_v01_raw.png",
+  "frame_boxes": [
+    [
+      114,
+      61,
+      458,
+      739
+    ],
+    [
+      111,
+      69,
+      464,
+      738
+    ],
+    [
+      99,
+      69,
+      445,
+      739
+    ],
+    [
+      93,
+      96,
+      445,
+      739
+    ]
+  ],
+  "target_perframe": [
+    32,
+    48
+  ],
+  "frames": 4,
+  "alpha": "binary128threshold",
+  "tool": "Pillow formatting only",
+  "common_scale": 0.06342182890855458,
+  "operation": "Equalcell cuts, whole silhouette crop, common nearest scale, shared32RGBpalette, anchorplacement; no bodyredrawing",
+  "placements": [
+    [
+      5,
+      2,
+      22,
+      43
+    ],
+    [
+      5,
+      3,
+      22,
+      42
+    ],
+    [
+      5,
+      3,
+      22,
+      42
+    ],
+    [
+      5,
+      4,
+      22,
+      41
+    ]
+  ]
+}

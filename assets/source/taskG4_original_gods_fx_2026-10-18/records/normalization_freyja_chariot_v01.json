@@ -1,0 +1,32 @@
+{
+  "raw_size": [
+    1774,
+    887
+  ],
+  "source": "originals/freyja_chariot_v01_raw.png",
+  "frame_boxes": [
+    [
+      55,
+      241,
+      1733,
+      744
+    ]
+  ],
+  "target_perframe": [
+    96,
+    48
+  ],
+  "frames": 1,
+  "alpha": "binary128threshold",
+  "tool": "Pillow formatting only",
+  "common_scale": 0.054827175208581644,
+  "operation": "Equalcell cuts, whole silhouette crop, common nearest scale, shared32RGBpalette, anchorplacement; no bodyredrawing",
+  "placements": [
+    [
+      2,
+      5,
+      92,
+      28
+    ]
+  ]
+}

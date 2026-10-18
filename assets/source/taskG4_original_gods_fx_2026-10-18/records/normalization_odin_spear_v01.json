@@ -1,0 +1,32 @@
+{
+  "raw_size": [
+    2172,
+    724
+  ],
+  "source": "originals/odin_spear_v01_raw.png",
+  "frame_boxes": [
+    [
+      80,
+      264,
+      2074,
+      460
+    ]
+  ],
+  "target_perframe": [
+    64,
+    16
+  ],
+  "frames": 1,
+  "alpha": "binary128threshold",
+  "tool": "Pillow formatting only",
+  "common_scale": 0.027582748244734202,
+  "operation": "Equalcell cuts, whole silhouette crop, common nearest scale, shared32RGBpalette, anchorplacement; no bodyredrawing",
+  "placements": [
+    [
+      2,
+      6,
+      55,
+      5
+    ]
+  ]
+}

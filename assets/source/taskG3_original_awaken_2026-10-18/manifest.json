@@ -1,0 +1,211 @@
+{
+  "task": "G3",
+  "date": "2026-10-18",
+  "status": "four_art_self_check_passed_pending_game_review",
+  "expected_count": 4,
+  "delivered_count": 4,
+  "generation_calls": 6,
+  "rejected_candidates": [
+    {
+      "id": "loki_awaken",
+      "version": "v01",
+      "file": "originals/loki_awaken_v01.png",
+      "reason": "双手和人物相对普通版偏低。"
+    },
+    {
+      "id": "odin_awaken",
+      "version": "v01",
+      "file": "originals/odin_awaken_v01.png",
+      "reason": "展开鸟翼被侧边裁切。"
+    }
+  ],
+  "files": [
+    {
+      "id": "thor_awaken",
+      "version": "v01",
+      "status": "art_self_check_passed_pending_game_review",
+      "runtime_file": "assets/sprites/cards/thor_awaken.png",
+      "approved_file": "approved/thor_awaken.png",
+      "candidate_file": "candidates/thor_awaken.png",
+      "original_file": "originals/thor_awaken_v01.png",
+      "size": [
+        720,
+        1200
+      ],
+      "mode": "RGB",
+      "frames": 1,
+      "color_count": 220776,
+      "sha256": "aa1e6bf48cc11194b87848a9162a3ca78dbcaa56b0ff8cce85609a9b313ad33f",
+      "backup": null,
+      "source": "Built-in OpenAI imagegen, project-owned references only",
+      "tools": [
+        "image_gen.imagegen",
+        "Pillow12.1.1 resize/RGB/preview only"
+      ],
+      "generation_url": null,
+      "generation_record": "records/generation_jobs.json",
+      "checks": {
+        "png_rgb_720x1200": true,
+        "readable_at_260x433": true,
+        "main_identifiers_survive_lower45_90percent_overlay": true,
+        "critical_face_weapon_tips_in_side_safe_area": true,
+        "upper_left_light_shared_oil_style": true,
+        "lower40_dark_subdued": true,
+        "no_obvious_anatomy_or_weapon_errors_observed": true,
+        "no_text_frame_signature_watermark_observed": true,
+        "normal_awaken_identity_consistent": true
+      },
+      "visual_review": "原有同红须/毛皮/皮甲/锤型，高举锤、雷光及云中山羊战车。",
+      "lower40_mean_luma_0_255": 18.901440972222222,
+      "previews": {
+        "260": "previews/thor_awaken_260.png",
+        "masked": "previews/thor_awaken_masked.png",
+        "cover": "previews/thor_awaken_cover.png",
+        "safe": "previews/thor_awaken_safe.png"
+      },
+      "game_test": "not_performed"
+    },
+    {
+      "id": "odin_awaken",
+      "version": "v02",
+      "status": "art_self_check_passed_pending_game_review",
+      "runtime_file": "assets/sprites/cards/odin_awaken.png",
+      "approved_file": "approved/odin_awaken.png",
+      "candidate_file": "candidates/odin_awaken.png",
+      "original_file": "originals/odin_awaken_v02.png",
+      "size": [
+        720,
+        1200
+      ],
+      "mode": "RGB",
+      "frames": 1,
+      "color_count": 255454,
+      "sha256": "92ee6a39bbca548d8bf99b75d9fa2009532008420d0107d7769a3a2e2b3a1354",
+      "backup": null,
+      "source": "Built-in OpenAI imagegen, project-owned references only",
+      "tools": [
+        "image_gen.imagegen",
+        "Pillow12.1.1 resize/RGB/preview only"
+      ],
+      "generation_url": null,
+      "generation_record": "records/generation_jobs.json",
+      "checks": {
+        "png_rgb_720x1200": true,
+        "readable_at_260x433": true,
+        "main_identifiers_survive_lower45_90percent_overlay": true,
+        "critical_face_weapon_tips_in_side_safe_area": true,
+        "upper_left_light_shared_oil_style": true,
+        "lower40_dark_subdued": true,
+        "no_obvious_anatomy_or_weapon_errors_observed": true,
+        "no_text_frame_signature_watermark_observed": true,
+        "normal_awaken_identity_consistent": true
+      },
+      "visual_review": "原有同灰须旧帽眼罩，单只可见眼紫光；长枪、两只部分展开翼的渡鸦、世界树枝与抽象符光。",
+      "lower40_mean_luma_0_255": 19.664913194444445,
+      "previews": {
+        "260": "previews/odin_awaken_260.png",
+        "masked": "previews/odin_awaken_masked.png",
+        "cover": "previews/odin_awaken_cover.png",
+        "safe": "previews/odin_awaken_safe.png"
+      },
+      "game_test": "not_performed"
+    },
+    {
+      "id": "loki_awaken",
+      "version": "v02",
+      "status": "art_self_check_passed_pending_game_review",
+      "runtime_file": "assets/sprites/cards/loki_awaken.png",
+      "approved_file": "approved/loki_awaken.png",
+      "candidate_file": "candidates/loki_awaken.png",
+      "original_file": "originals/loki_awaken_v02.png",
+      "size": [
+        720,
+        1200
+      ],
+      "mode": "RGB",
+      "frames": 1,
+      "color_count": 183236,
+      "sha256": "9a432bcca7692ff9f8dfec4227b0220b8a7bd05a7a2e9ab45fa36d3cd67d2261",
+      "backup": null,
+      "source": "Built-in OpenAI imagegen, project-owned references only",
+      "tools": [
+        "image_gen.imagegen",
+        "Pillow12.1.1 resize/RGB/preview only"
+      ],
+      "generation_url": null,
+      "generation_record": "records/generation_jobs.json",
+      "checks": {
+        "png_rgb_720x1200": true,
+        "readable_at_260x433": true,
+        "main_identifiers_survive_lower45_90percent_overlay": true,
+        "critical_face_weapon_tips_in_side_safe_area": true,
+        "upper_left_light_shared_oil_style": true,
+        "lower40_dark_subdued": true,
+        "no_obvious_anatomy_or_weapon_errors_observed": true,
+        "no_text_frame_signature_watermark_observed": true,
+        "normal_awaken_identity_consistent": true
+      },
+      "visual_review": "原有同瘦削面容、深红黑发、暗衣与旧腕疤；诡火和巨大火狼轮廓增强。",
+      "lower40_mean_luma_0_255": 12.674337384259259,
+      "previews": {
+        "260": "previews/loki_awaken_260.png",
+        "masked": "previews/loki_awaken_masked.png",
+        "cover": "previews/loki_awaken_cover.png",
+        "safe": "previews/loki_awaken_safe.png"
+      },
+      "game_test": "not_performed"
+    },
+    {
+      "id": "freyja_awaken",
+      "version": "v01",
+      "status": "art_self_check_passed_pending_game_review",
+      "runtime_file": "assets/sprites/cards/freyja_awaken.png",
+      "approved_file": "approved/freyja_awaken.png",
+      "candidate_file": "candidates/freyja_awaken.png",
+      "original_file": "originals/freyja_awaken_v01.png",
+      "size": [
+        720,
+        1200
+      ],
+      "mode": "RGB",
+      "frames": 1,
+      "color_count": 181495,
+      "sha256": "c0e0a6fb4c24a8ffae2077caa6025a241ed9b53beedbc5f0b00cd67c3788ce98",
+      "backup": null,
+      "source": "Built-in OpenAI imagegen, project-owned references only",
+      "tools": [
+        "image_gen.imagegen",
+        "Pillow12.1.1 resize/RGB/preview only"
+      ],
+      "generation_url": null,
+      "generation_record": "records/generation_jobs.json",
+      "checks": {
+        "png_rgb_720x1200": true,
+        "readable_at_260x433": true,
+        "main_identifiers_survive_lower45_90percent_overlay": true,
+        "critical_face_weapon_tips_in_side_safe_area": true,
+        "upper_left_light_shared_oil_style": true,
+        "lower40_dark_subdued": true,
+        "no_obvious_anatomy_or_weapon_errors_observed": true,
+        "no_text_frame_signature_watermark_observed": true,
+        "normal_awaken_identity_consistent": true
+      },
+      "visual_review": "原有同金发双辫、覆甲、项链和胸前手势；鹰羽披风展开、金羽风暴及两只灰白战猫。",
+      "lower40_mean_luma_0_255": 20.20041087962963,
+      "previews": {
+        "260": "previews/freyja_awaken_260.png",
+        "masked": "previews/freyja_awaken_masked.png",
+        "cover": "previews/freyja_awaken_cover.png",
+        "safe": "previews/freyja_awaken_safe.png"
+      },
+      "game_test": "not_performed"
+    }
+  ],
+  "generation_records": "records/generation_jobs.json",
+  "mipmap_manifest": "records/mipmap_manifest.json",
+  "godot_mipmaps_configured": false,
+  "game_test": "not_performed",
+  "license_record": "assets/LICENSES.md G1-G3",
+  "optional_fusion_art": "not_in_scope",
+  "note": "Half-length card prioritizes face and primary identifiers. Snowshoe is dark secondary equipment below copy area; boar head above copy, body partly below. No claim of pixel-identical composition across generated variants."
+}

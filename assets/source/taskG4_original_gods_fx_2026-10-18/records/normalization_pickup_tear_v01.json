@@ -1,0 +1,32 @@
+{
+  "raw_size": [
+    1536,
+    1024
+  ],
+  "source": "originals/pickup_tear_v01_raw.png",
+  "frame_boxes": [
+    [
+      629,
+      339,
+      907,
+      733
+    ]
+  ],
+  "target_perframe": [
+    16,
+    16
+  ],
+  "frames": 1,
+  "alpha": "binary128threshold",
+  "tool": "Pillow formatting only",
+  "common_scale": 0.030456852791878174,
+  "operation": "Equalcell cuts, whole silhouette crop, common nearest scale, shared32RGBpalette, anchorplacement; no bodyredrawing",
+  "placements": [
+    [
+      4,
+      2,
+      8,
+      12
+    ]
+  ]
+}

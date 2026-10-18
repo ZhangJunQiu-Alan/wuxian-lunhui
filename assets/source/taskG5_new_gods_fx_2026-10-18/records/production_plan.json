@@ -1,0 +1,266 @@
+{
+  "group": "G5",
+  "date": "2026-10-18",
+  "assets": [
+    {
+      "group": "G5",
+      "id": "baldr_beam",
+      "w": 64,
+      "h": 16,
+      "frames": 1,
+      "anchor": [
+        0,
+        8
+      ],
+      "flags": "stretch beam",
+      "subject": "A straight HORIZONTAL warmWHITEGOLD LIGHT BEAM occupyingx0..63, luminouscreamcenterstripe aty7..8, goldsoftedges fadestransparenttowardy0andy15. Simplestraight constantwidth bands, no startcap/endcap/spark/taper; LEFTandRIGHTends samecrosssection seamlessrepeat. Transparentaroundbeam, notweapon.",
+      "version": "v01",
+      "fps": 8,
+      "root": "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskG5_new_gods_fx_2026-10-18",
+      "refs": [
+        "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskG5_new_gods_fx_2026-10-18/refs/effects_style.png"
+      ],
+      "prompt": "Use case: stylized-concept.\nAsset type: production pixelart 2D game magical effect sprite 64x16 logical pixels PERFRAME, 1frame(s).\nInput1 is STYLE REFERENCE of project's existingpixel effects, match crisp clusters andlimitedpalette.\nSubject: A straight HORIZONTAL warmWHITEGOLD LIGHT BEAM occupyingx0..63, luminouscreamcenterstripe aty7..8, goldsoftedges fadestransparenttowardy0andy15. Simplestraight constantwidth bands, no startcap/endcap/spark/taper; LEFTandRIGHTends samecrosssection seamlessrepeat. Transparentaroundbeam, notweapon.\nLayout: ONE isolatedsprite on exactlogical64x16 canvas, subject centered withminimum2logicalpxclear margin, excepthorizontalstretchable strips extendLEFTandRIGHTfully. Preserve specifiedanchor.\nStyle: genuineLOWRESPIXELART, hardconnected1..3pixelclusters, NO detailedillustration/no3D/noantialias/no dither/no blur. Allow translucent EDGEPIXELS and faintinterior for scalablegroundeffect; use simpleclean shapes, keepenemiesreadable.\nBackground genuinely TRANSPARENT, not black or checkerboard. No scene/groundplane/text/watermark. Direction RIGHT forweaponsandanimals. No copiedexternalcharacters."
+    },
+    {
+      "group": "G5",
+      "id": "baldr_spear",
+      "w": 64,
+      "h": 16,
+      "frames": 1,
+      "anchor": [
+        56,
+        8
+      ],
+      "flags": "rotate tip",
+      "subject": "One long spear MADEONLYOFwarmWHITEGOLDLIGHT, brightpointedhead onRIGHT tipat(56,8), thinlightshaftx3..50aty8, tinycrosspiece, luminousivorycore andgoldedge. Nometal/brownwood, no motiontrail or surroundingparticles.",
+      "version": "v01",
+      "fps": 8,
+      "root": "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskG5_new_gods_fx_2026-10-18",
+      "refs": [
+        "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskG5_new_gods_fx_2026-10-18/refs/effects_style.png"
+      ],
+      "prompt": "Use case: stylized-concept.\nAsset type: production pixelart 2D game magical effect sprite 64x16 logical pixels PERFRAME, 1frame(s).\nInput1 is STYLE REFERENCE of project's existingpixel effects, match crisp clusters andlimitedpalette.\nSubject: One long spear MADEONLYOFwarmWHITEGOLDLIGHT, brightpointedhead onRIGHT tipat(56,8), thinlightshaftx3..50aty8, tinycrosspiece, luminousivorycore andgoldedge. Nometal/brownwood, no motiontrail or surroundingparticles.\nLayout: ONE isolatedsprite on exactlogical64x16 canvas, subject centered withminimum2logicalpxclear margin, excepthorizontalstretchable strips extendLEFTandRIGHTfully. Preserve specifiedanchor.\nStyle: genuineLOWRESPIXELART, hardconnected1..3pixelclusters, NO detailedillustration/no3D/noantialias/no dither/no blur. Binarytransparentbackground, alphahardedges, no externalcastshadow. Ifmagicglowusecrispcoloredpixelsinsidebounds.\nBackground genuinely TRANSPARENT, not black or checkerboard. No scene/groundplane/text/watermark. Direction RIGHT forweaponsandanimals. No copiedexternalcharacters."
+    },
+    {
+      "group": "G5",
+      "id": "baldr_glow",
+      "w": 64,
+      "h": 16,
+      "frames": 1,
+      "anchor": [
+        0,
+        8
+      ],
+      "flags": "stretch beam faint",
+      "subject": "A faintPALEGOLD HORIZONTAL afterglowstripLEFTONFLOOR afterlightbeam, x0..63 constantprofile, narrowcenterwarmgoldbutDARKERandMUCHFainterthanthebeam, broadfeatherytranslucentedges fadeaty0and15. ExactmatchingLEFT/RIGHTcrosssection, no endcaps, sparks, objectorvignette.",
+      "version": "v01",
+      "fps": 8,
+      "root": "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskG5_new_gods_fx_2026-10-18",
+      "refs": [
+        "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskG5_new_gods_fx_2026-10-18/refs/effects_style.png"
+      ],
+      "prompt": "Use case: stylized-concept.\nAsset type: production pixelart 2D game magical effect sprite 64x16 logical pixels PERFRAME, 1frame(s).\nInput1 is STYLE REFERENCE of project's existingpixel effects, match crisp clusters andlimitedpalette.\nSubject: A faintPALEGOLD HORIZONTAL afterglowstripLEFTONFLOOR afterlightbeam, x0..63 constantprofile, narrowcenterwarmgoldbutDARKERandMUCHFainterthanthebeam, broadfeatherytranslucentedges fadeaty0and15. ExactmatchingLEFT/RIGHTcrosssection, no endcaps, sparks, objectorvignette.\nLayout: ONE isolatedsprite on exactlogical64x16 canvas, subject centered withminimum2logicalpxclear margin, excepthorizontalstretchable strips extendLEFTandRIGHTfully. Preserve specifiedanchor.\nStyle: genuineLOWRESPIXELART, hardconnected1..3pixelclusters, NO detailedillustration/no3D/noantialias/no dither/no blur. Allow translucent EDGEPIXELS and faintinterior for scalablegroundeffect; use simpleclean shapes, keepenemiesreadable.\nBackground genuinely TRANSPARENT, not black or checkerboard. No scene/groundplane/text/watermark. Direction RIGHT forweaponsandanimals. No copiedexternalcharacters."
+    },
+    {
+      "group": "G5",
+      "id": "ran_net",
+      "w": 96,
+      "h": 96,
+      "frames": 1,
+      "anchor": [
+        48,
+        48
+      ],
+      "flags": "area",
+      "subject": "TOPDOWN one circularFISHINGNET with darkmarineblue ropes, simpleconnectedwideDIAMONDmesh, meshholes FULLYtransparent, outerrope at radius42. 3tinymutedshells knottedtoouteredge, subduedgoldentinyknots. Restrainedopacity, cleanbroadlines, not magicalsolidshield/disk, no floor/boat/humans.",
+      "version": "v01",
+      "fps": 8,
+      "root": "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskG5_new_gods_fx_2026-10-18",
+      "refs": [
+        "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskG5_new_gods_fx_2026-10-18/refs/effects_style.png"
+      ],
+      "prompt": "Use case: stylized-concept.\nAsset type: production pixelart 2D game magical effect sprite 96x96 logical pixels PERFRAME, 1frame(s).\nInput1 is STYLE REFERENCE of project's existingpixel effects, match crisp clusters andlimitedpalette.\nSubject: TOPDOWN one circularFISHINGNET with darkmarineblue ropes, simpleconnectedwideDIAMONDmesh, meshholes FULLYtransparent, outerrope at radius42. 3tinymutedshells knottedtoouteredge, subduedgoldentinyknots. Restrainedopacity, cleanbroadlines, not magicalsolidshield/disk, no floor/boat/humans.\nLayout: ONE isolatedsprite on exactlogical96x96 canvas, subject centered withminimum2logicalpxclear margin, excepthorizontalstretchable strips extendLEFTandRIGHTfully. Preserve specifiedanchor.\nStyle: genuineLOWRESPIXELART, hardconnected1..3pixelclusters, NO detailedillustration/no3D/noantialias/no dither/no blur. Allow translucent EDGEPIXELS and faintinterior for scalablegroundeffect; use simpleclean shapes, keepenemiesreadable.\nBackground genuinely TRANSPARENT, not black or checkerboard. No scene/groundplane/text/watermark. Direction RIGHT forweaponsandanimals. No copiedexternalcharacters."
+    },
+    {
+      "group": "G5",
+      "id": "ran_wave",
+      "w": 64,
+      "h": 32,
+      "frames": 1,
+      "anchor": [
+        32,
+        16
+      ],
+      "flags": "stretch wave",
+      "subject": "A HORIZONTAL BLUE WAVE CREST extendsx0..63. Crestpoints UP towardTOPofimage, darknavybase withseaBlueface andwhitefoamlineupperedge, transparentbelowandabove. Cleanbroadcurvedwaveface, simplefoamshapes, no spraydots/no boat/floor. LEFT/RIGHTedgecrosssections match soextendhorizontallywithoutvisiblecaps.",
+      "version": "v01",
+      "fps": 8,
+      "root": "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskG5_new_gods_fx_2026-10-18",
+      "refs": [
+        "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskG5_new_gods_fx_2026-10-18/refs/effects_style.png"
+      ],
+      "prompt": "Use case: stylized-concept.\nAsset type: production pixelart 2D game magical effect sprite 64x32 logical pixels PERFRAME, 1frame(s).\nInput1 is STYLE REFERENCE of project's existingpixel effects, match crisp clusters andlimitedpalette.\nSubject: A HORIZONTAL BLUE WAVE CREST extendsx0..63. Crestpoints UP towardTOPofimage, darknavybase withseaBlueface andwhitefoamlineupperedge, transparentbelowandabove. Cleanbroadcurvedwaveface, simplefoamshapes, no spraydots/no boat/floor. LEFT/RIGHTedgecrosssections match soextendhorizontallywithoutvisiblecaps.\nLayout: ONE isolatedsprite on exactlogical64x32 canvas, subject centered withminimum2logicalpxclear margin, excepthorizontalstretchable strips extendLEFTandRIGHTfully. Preserve specifiedanchor.\nStyle: genuineLOWRESPIXELART, hardconnected1..3pixelclusters, NO detailedillustration/no3D/noantialias/no dither/no blur. Allow translucent EDGEPIXELS and faintinterior for scalablegroundeffect; use simpleclean shapes, keepenemiesreadable.\nBackground genuinely TRANSPARENT, not black or checkerboard. No scene/groundplane/text/watermark. Direction RIGHT forweaponsandanimals. No copiedexternalcharacters."
+    },
+    {
+      "group": "G5",
+      "id": "ran_whirl",
+      "w": 96,
+      "h": 96,
+      "frames": 1,
+      "anchor": [
+        48,
+        48
+      ],
+      "flags": "area",
+      "subject": "TOPDOWN circular blueWATERWHIRLPOOL, deepnavyandmutedseaBlue with3simplecurvedwhitebluewaterstreaks windinginward, visibletransparentgapsbetweenbroadcurves. Lowopacitywholeeffect andverydarkfaintcenter, nofilledbrightdisk, no oceanbackground, no bubbles/splashes/particleconfetti.",
+      "version": "v01",
+      "fps": 8,
+      "root": "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskG5_new_gods_fx_2026-10-18",
+      "refs": [
+        "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskG5_new_gods_fx_2026-10-18/refs/effects_style.png"
+      ],
+      "prompt": "Use case: stylized-concept.\nAsset type: production pixelart 2D game magical effect sprite 96x96 logical pixels PERFRAME, 1frame(s).\nInput1 is STYLE REFERENCE of project's existingpixel effects, match crisp clusters andlimitedpalette.\nSubject: TOPDOWN circular blueWATERWHIRLPOOL, deepnavyandmutedseaBlue with3simplecurvedwhitebluewaterstreaks windinginward, visibletransparentgapsbetweenbroadcurves. Lowopacitywholeeffect andverydarkfaintcenter, nofilledbrightdisk, no oceanbackground, no bubbles/splashes/particleconfetti.\nLayout: ONE isolatedsprite on exactlogical96x96 canvas, subject centered withminimum2logicalpxclear margin, excepthorizontalstretchable strips extendLEFTandRIGHTfully. Preserve specifiedanchor.\nStyle: genuineLOWRESPIXELART, hardconnected1..3pixelclusters, NO detailedillustration/no3D/noantialias/no dither/no blur. Allow translucent EDGEPIXELS and faintinterior for scalablegroundeffect; use simpleclean shapes, keepenemiesreadable.\nBackground genuinely TRANSPARENT, not black or checkerboard. No scene/groundplane/text/watermark. Direction RIGHT forweaponsandanimals. No copiedexternalcharacters."
+    },
+    {
+      "group": "G5",
+      "id": "freyr_sword",
+      "w": 32,
+      "h": 12,
+      "frames": 1,
+      "anchor": [
+        16,
+        6
+      ],
+      "flags": "rotate",
+      "subject": "One straight slender LONGSWORD pointingRIGHT, doubleedgeblade inmutedgoldandpalegreenmagiclight, greenwrappedhiltLEFT, smallcrossguardx9, bladetiptox29aty6. Crisp2..3pxwideblade, distinctswordnotspear/dagger, no glowoutsidecanvas/shadow/trail.",
+      "version": "v01",
+      "fps": 8,
+      "root": "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskG5_new_gods_fx_2026-10-18",
+      "refs": [
+        "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskG5_new_gods_fx_2026-10-18/refs/effects_style.png"
+      ],
+      "prompt": "Use case: stylized-concept.\nAsset type: production pixelart 2D game magical effect sprite 32x12 logical pixels PERFRAME, 1frame(s).\nInput1 is STYLE REFERENCE of project's existingpixel effects, match crisp clusters andlimitedpalette.\nSubject: One straight slender LONGSWORD pointingRIGHT, doubleedgeblade inmutedgoldandpalegreenmagiclight, greenwrappedhiltLEFT, smallcrossguardx9, bladetiptox29aty6. Crisp2..3pxwideblade, distinctswordnotspear/dagger, no glowoutsidecanvas/shadow/trail.\nLayout: ONE isolatedsprite on exactlogical32x12 canvas, subject centered withminimum2logicalpxclear margin, excepthorizontalstretchable strips extendLEFTandRIGHTfully. Preserve specifiedanchor.\nStyle: genuineLOWRESPIXELART, hardconnected1..3pixelclusters, NO detailedillustration/no3D/noantialias/no dither/no blur. Binarytransparentbackground, alphahardedges, no externalcastshadow. Ifmagicglowusecrispcoloredpixelsinsidebounds.\nBackground genuinely TRANSPARENT, not black or checkerboard. No scene/groundplane/text/watermark. Direction RIGHT forweaponsandanimals. No copiedexternalcharacters."
+    },
+    {
+      "group": "G5",
+      "id": "freyr_boar",
+      "w": 40,
+      "h": 28,
+      "frames": 2,
+      "anchor": [
+        20,
+        20
+      ],
+      "flags": "feet boar",
+      "subject": "TWO consecutive charging WILD BOAR poses facingRIGHT, stockyheavybody, compactsnoutwithONEvisibleivorytusk, bristling GOLDENMANEoverback, darkearthybrownfur, smalllegs. Frame1frontandrearlegsstridingwide, frame2gatheredundertorso; samebody/head/proportions, feetaty20. No saddle/armor/rider/fire/trail/groundshadow.",
+      "version": "v01",
+      "fps": 12,
+      "root": "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskG5_new_gods_fx_2026-10-18",
+      "refs": [
+        "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskG5_new_gods_fx_2026-10-18/refs/effects_style.png"
+      ],
+      "prompt": "Use case: stylized-concept.\nAsset type: production pixelart 2D game magical effect sprite 40x28 logical pixels PERFRAME, 2frame(s).\nInput1 is STYLE REFERENCE of project's existingpixel effects, match crisp clusters andlimitedpalette.\nSubject: TWO consecutive charging WILD BOAR poses facingRIGHT, stockyheavybody, compactsnoutwithONEvisibleivorytusk, bristling GOLDENMANEoverback, darkearthybrownfur, smalllegs. Frame1frontandrearlegsstridingwide, frame2gatheredundertorso; samebody/head/proportions, feetaty20. No saddle/armor/rider/fire/trail/groundshadow.\nLayout: EXACTLY 2 equally sized frames in ONE HORIZONTAL row, eachsamecanvas 40x28, blankseparator NOT allowed, consistent scale andanchor. Entireimage logical80x28. No labels/numbers/grid/borders. Eachframeindependently isolated with2pxtransparentmargin. No overlappingbetweenframes.\nStyle: genuineLOWRESPIXELART, hardconnected1..3pixelclusters, NO detailedillustration/no3D/noantialias/no dither/no blur. Binarytransparentbackground, alphahardedges, no externalcastshadow. Ifmagicglowusecrispcoloredpixelsinsidebounds.\nBackground genuinely TRANSPARENT, not black or checkerboard. No scene/groundplane/text/watermark. Direction RIGHT forweaponsandanimals. No copiedexternalcharacters."
+    },
+    {
+      "group": "G5",
+      "id": "freyr_field",
+      "w": 128,
+      "h": 128,
+      "frames": 1,
+      "anchor": [
+        64,
+        64
+      ],
+      "flags": "area",
+      "subject": "TOPDOWN roundPATCHof GOLDENWHEATfield, naturallyraggedcircularboundary radius55, quietthinwheatstalksilhouettes clusteredlightly aroundouteredge, centerveryfaintandsparse toseeenemies. Mutedgoldandolivegreen, lowopacityentirepatch, nofloorbackground/notbasket/notflowers, bigsimplifiedpixelclusters nottinydither.",
+      "version": "v01",
+      "fps": 8,
+      "root": "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskG5_new_gods_fx_2026-10-18",
+      "refs": [
+        "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskG5_new_gods_fx_2026-10-18/refs/effects_style.png"
+      ],
+      "prompt": "Use case: stylized-concept.\nAsset type: production pixelart 2D game magical effect sprite 128x128 logical pixels PERFRAME, 1frame(s).\nInput1 is STYLE REFERENCE of project's existingpixel effects, match crisp clusters andlimitedpalette.\nSubject: TOPDOWN roundPATCHof GOLDENWHEATfield, naturallyraggedcircularboundary radius55, quietthinwheatstalksilhouettes clusteredlightly aroundouteredge, centerveryfaintandsparse toseeenemies. Mutedgoldandolivegreen, lowopacityentirepatch, nofloorbackground/notbasket/notflowers, bigsimplifiedpixelclusters nottinydither.\nLayout: ONE isolatedsprite on exactlogical128x128 canvas, subject centered withminimum2logicalpxclear margin, excepthorizontalstretchable strips extendLEFTandRIGHTfully. Preserve specifiedanchor.\nStyle: genuineLOWRESPIXELART, hardconnected1..3pixelclusters, NO detailedillustration/no3D/noantialias/no dither/no blur. Allow translucent EDGEPIXELS and faintinterior for scalablegroundeffect; use simpleclean shapes, keepenemiesreadable.\nBackground genuinely TRANSPARENT, not black or checkerboard. No scene/groundplane/text/watermark. Direction RIGHT forweaponsandanimals. No copiedexternalcharacters."
+    },
+    {
+      "group": "G5",
+      "id": "skadi_arrow",
+      "w": 32,
+      "h": 8,
+      "frames": 1,
+      "anchor": [
+        28,
+        4
+      ],
+      "flags": "rotate tip",
+      "subject": "One veryTHIN ICEARROW pointingRIGHT, tipat(28,4), shaftx3..24aty4, smallicebluebarbedarrowhead, tinytwofeatherfletchingsLEFTx4..7, palecyan3toneice. Actual8pxheightwith2pxpaddingtop/bottom, soarrowoccupiesONLYy2..5. No trailingparticles/glow/castshadow.",
+      "version": "v01",
+      "fps": 8,
+      "root": "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskG5_new_gods_fx_2026-10-18",
+      "refs": [
+        "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskG5_new_gods_fx_2026-10-18/refs/effects_style.png"
+      ],
+      "prompt": "Use case: stylized-concept.\nAsset type: production pixelart 2D game magical effect sprite 32x8 logical pixels PERFRAME, 1frame(s).\nInput1 is STYLE REFERENCE of project's existingpixel effects, match crisp clusters andlimitedpalette.\nSubject: One veryTHIN ICEARROW pointingRIGHT, tipat(28,4), shaftx3..24aty4, smallicebluebarbedarrowhead, tinytwofeatherfletchingsLEFTx4..7, palecyan3toneice. Actual8pxheightwith2pxpaddingtop/bottom, soarrowoccupiesONLYy2..5. No trailingparticles/glow/castshadow.\nLayout: ONE isolatedsprite on exactlogical32x8 canvas, subject centered withminimum2logicalpxclear margin, excepthorizontalstretchable strips extendLEFTandRIGHTfully. Preserve specifiedanchor.\nStyle: genuineLOWRESPIXELART, hardconnected1..3pixelclusters, NO detailedillustration/no3D/noantialias/no dither/no blur. Binarytransparentbackground, alphahardedges, no externalcastshadow. Ifmagicglowusecrispcoloredpixelsinsidebounds.\nBackground genuinely TRANSPARENT, not black or checkerboard. No scene/groundplane/text/watermark. Direction RIGHT forweaponsandanimals. No copiedexternalcharacters."
+    },
+    {
+      "group": "G5",
+      "id": "skadi_blizzard",
+      "w": 128,
+      "h": 128,
+      "frames": 1,
+      "anchor": [
+        64,
+        64
+      ],
+      "flags": "area hole rotate",
+      "subject": "TOPDOWN circular BLIZZARD RING of icewhite/bluishsnowflakesand3broadcurvedwindstreaks, center radius40of64 COMPLETELYtransparent. Sparsecleanfewlargeflakesonlyaroundringradius43..58, lowopacity, no centralicecrystalorfilleddisk/cloudbackground. Circularnotellipse.",
+      "version": "v01",
+      "fps": 8,
+      "root": "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskG5_new_gods_fx_2026-10-18",
+      "refs": [
+        "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskG5_new_gods_fx_2026-10-18/refs/effects_style.png"
+      ],
+      "prompt": "Use case: stylized-concept.\nAsset type: production pixelart 2D game magical effect sprite 128x128 logical pixels PERFRAME, 1frame(s).\nInput1 is STYLE REFERENCE of project's existingpixel effects, match crisp clusters andlimitedpalette.\nSubject: TOPDOWN circular BLIZZARD RING of icewhite/bluishsnowflakesand3broadcurvedwindstreaks, center radius40of64 COMPLETELYtransparent. Sparsecleanfewlargeflakesonlyaroundringradius43..58, lowopacity, no centralicecrystalorfilleddisk/cloudbackground. Circularnotellipse.\nLayout: ONE isolatedsprite on exactlogical128x128 canvas, subject centered withminimum2logicalpxclear margin, excepthorizontalstretchable strips extendLEFTandRIGHTfully. Preserve specifiedanchor.\nStyle: genuineLOWRESPIXELART, hardconnected1..3pixelclusters, NO detailedillustration/no3D/noantialias/no dither/no blur. Allow translucent EDGEPIXELS and faintinterior for scalablegroundeffect; use simpleclean shapes, keepenemiesreadable.\nBackground genuinely TRANSPARENT, not black or checkerboard. No scene/groundplane/text/watermark. Direction RIGHT forweaponsandanimals. No copiedexternalcharacters."
+    },
+    {
+      "group": "G5",
+      "id": "skadi_ice",
+      "w": 64,
+      "h": 16,
+      "frames": 1,
+      "anchor": [
+        0,
+        8
+      ],
+      "flags": "stretch ice",
+      "subject": "HORIZONTAL narrow ICE STRIP LEFTONFLOOR byanarrow, x0..63 fullwidth, paleiceblueandgraybluefrozenfloor withONLY2longthincracks. Flatcleanbands lowcontrast/translucent, no floatingicicles/weapon/crystals. Topandbottomfadeclear; LEFTandRIGHTcrosssectionidentical no endcaps, seamlesslyextendhorizontal.",
+      "version": "v01",
+      "fps": 8,
+      "root": "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskG5_new_gods_fx_2026-10-18",
+      "refs": [
+        "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskG5_new_gods_fx_2026-10-18/refs/effects_style.png"
+      ],
+      "prompt": "Use case: stylized-concept.\nAsset type: production pixelart 2D game magical effect sprite 64x16 logical pixels PERFRAME, 1frame(s).\nInput1 is STYLE REFERENCE of project's existingpixel effects, match crisp clusters andlimitedpalette.\nSubject: HORIZONTAL narrow ICE STRIP LEFTONFLOOR byanarrow, x0..63 fullwidth, paleiceblueandgraybluefrozenfloor withONLY2longthincracks. Flatcleanbands lowcontrast/translucent, no floatingicicles/weapon/crystals. Topandbottomfadeclear; LEFTandRIGHTcrosssectionidentical no endcaps, seamlesslyextendhorizontal.\nLayout: ONE isolatedsprite on exactlogical64x16 canvas, subject centered withminimum2logicalpxclear margin, excepthorizontalstretchable strips extendLEFTandRIGHTfully. Preserve specifiedanchor.\nStyle: genuineLOWRESPIXELART, hardconnected1..3pixelclusters, NO detailedillustration/no3D/noantialias/no dither/no blur. Allow translucent EDGEPIXELS and faintinterior for scalablegroundeffect; use simpleclean shapes, keepenemiesreadable.\nBackground genuinely TRANSPARENT, not black or checkerboard. No scene/groundplane/text/watermark. Direction RIGHT forweaponsandanimals. No copiedexternalcharacters."
+    },
+    {
+      "group": "G5",
+      "id": "pickup_apple",
+      "w": 16,
+      "h": 16,
+      "frames": 1,
+      "anchor": [
+        8,
+        8
+      ],
+      "flags": "",
+      "subject": "One tiny GOLDEN APPLE pickup, roundapplewithcleartopcleft, shortbrownstem andONEsmallgreenleaf, warmgoldbodyandcreamupperlefthighlight. Compact12x12readableapple notcoin/gem, no face/particles/glow/shadow.",
+      "version": "v01",
+      "fps": 8,
+      "root": "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskG5_new_gods_fx_2026-10-18",
+      "refs": [
+        "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskG5_new_gods_fx_2026-10-18/refs/effects_style.png"
+      ],
+      "prompt": "Use case: stylized-concept.\nAsset type: production pixelart 2D game magical effect sprite 16x16 logical pixels PERFRAME, 1frame(s).\nInput1 is STYLE REFERENCE of project's existingpixel effects, match crisp clusters andlimitedpalette.\nSubject: One tiny GOLDEN APPLE pickup, roundapplewithcleartopcleft, shortbrownstem andONEsmallgreenleaf, warmgoldbodyandcreamupperlefthighlight. Compact12x12readableapple notcoin/gem, no face/particles/glow/shadow.\nLayout: ONE isolatedsprite on exactlogical16x16 canvas, subject centered withminimum2logicalpxclear margin, excepthorizontalstretchable strips extendLEFTandRIGHTfully. Preserve specifiedanchor.\nStyle: genuineLOWRESPIXELART, hardconnected1..3pixelclusters, NO detailedillustration/no3D/noantialias/no dither/no blur. Binarytransparentbackground, alphahardedges, no externalcastshadow. Ifmagicglowusecrispcoloredpixelsinsidebounds.\nBackground genuinely TRANSPARENT, not black or checkerboard. No scene/groundplane/text/watermark. Direction RIGHT forweaponsandanimals. No copiedexternalcharacters."
+    }
+  ]
+}

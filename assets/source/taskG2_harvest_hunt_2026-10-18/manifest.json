@@ -1,0 +1,241 @@
+{
+  "task": "G2",
+  "date": "2026-10-18",
+  "status": "four_art_self_check_passed_pending_game_review",
+  "expected_count": 4,
+  "delivered_count": 4,
+  "generation_calls": 11,
+  "rejected_candidates": [
+    {
+      "id": "freyr_awaken",
+      "version": "v01",
+      "file": "originals/freyr_awaken_v01.png",
+      "reason": "冲锋野猪和亮色延入文字区，缩小抬高并压暗。"
+    },
+    {
+      "id": "freyr",
+      "version": "v01",
+      "file": "originals/freyr_v01.png",
+      "reason": "野猪偏低且靠边，长剑过长。"
+    },
+    {
+      "id": "skadi_awaken",
+      "version": "v01",
+      "file": "originals/skadi_awaken_v01.png",
+      "reason": "冰箭头靠左边。"
+    },
+    {
+      "id": "skadi_awaken",
+      "version": "v02",
+      "file": "originals/skadi_awaken_v02.png",
+      "reason": "箭头仍需余量，下半部雪地偏亮。"
+    },
+    {
+      "id": "skadi",
+      "version": "v01",
+      "file": "originals/skadi_v01.png",
+      "reason": "弓上端被裁切、下端过低。"
+    },
+    {
+      "id": "skadi",
+      "version": "v02",
+      "file": "originals/skadi_v02.png",
+      "reason": "箭尖侧边安全余量不足。"
+    },
+    {
+      "id": "skadi",
+      "version": "v03",
+      "file": "originals/skadi_v03.png",
+      "reason": "下方雪地过亮且纹理多。"
+    }
+  ],
+  "files": [
+    {
+      "id": "freyr",
+      "version": "v02",
+      "status": "art_self_check_passed_pending_game_review",
+      "runtime_file": "assets/sprites/cards/freyr.png",
+      "approved_file": "approved/freyr.png",
+      "candidate_file": "candidates/freyr.png",
+      "original_file": "originals/freyr_v02.png",
+      "size": [
+        720,
+        1200
+      ],
+      "mode": "RGB",
+      "frames": 1,
+      "color_count": 214943,
+      "sha256": "41d177886430c6b5fb72bcbcd17ee79907f54cec9f02cda087f892cb5bc7fa49",
+      "backup": null,
+      "source": "Built-in OpenAI imagegen, project-owned references only",
+      "tools": [
+        "image_gen.imagegen",
+        "Pillow12.1.1 resize/RGB/preview only"
+      ],
+      "generation_url": null,
+      "generation_record": "records/generation_jobs.json",
+      "checks": {
+        "png_rgb_720x1200": true,
+        "readable_at_260x433": true,
+        "main_identifiers_survive_lower45_90percent_overlay": true,
+        "critical_face_weapon_tips_in_side_safe_area": true,
+        "upper_left_light_shared_oil_style": true,
+        "lower40_dark_subdued": true,
+        "no_obvious_anatomy_or_weapon_errors_observed": true,
+        "no_text_frame_signature_watermark_observed": true,
+        "normal_awaken_identity_consistent": true
+      },
+      "visual_review": "金发须、麦穗冠、绿金衣皮甲、一柄独立浮剑和金鬃野猪；野猪头部高置以适配半身卡。",
+      "lower40_mean_luma_0_255": 18.75347511574074,
+      "previews": {
+        "260": "previews/freyr_260.png",
+        "masked": "previews/freyr_masked.png",
+        "cover": "previews/freyr_cover.png",
+        "safe": "previews/freyr_safe.png"
+      },
+      "game_test": "not_performed"
+    },
+    {
+      "id": "freyr_awaken",
+      "version": "v02",
+      "status": "art_self_check_passed_pending_game_review",
+      "runtime_file": "assets/sprites/cards/freyr_awaken.png",
+      "approved_file": "approved/freyr_awaken.png",
+      "candidate_file": "candidates/freyr_awaken.png",
+      "original_file": "originals/freyr_awaken_v02.png",
+      "size": [
+        720,
+        1200
+      ],
+      "mode": "RGB",
+      "frames": 1,
+      "color_count": 286770,
+      "sha256": "eba13f1029eae537717c2b81f924575386ba1a14bb9a218f1733b133392b09f8",
+      "backup": null,
+      "source": "Built-in OpenAI imagegen, project-owned references only",
+      "tools": [
+        "image_gen.imagegen",
+        "Pillow12.1.1 resize/RGB/preview only"
+      ],
+      "generation_url": null,
+      "generation_record": "records/generation_jobs.json",
+      "checks": {
+        "png_rgb_720x1200": true,
+        "readable_at_260x433": true,
+        "main_identifiers_survive_lower45_90percent_overlay": true,
+        "critical_face_weapon_tips_in_side_safe_area": true,
+        "upper_left_light_shared_oil_style": true,
+        "lower40_dark_subdued": true,
+        "no_obvious_anatomy_or_weapon_errors_observed": true,
+        "no_text_frame_signature_watermark_observed": true,
+        "normal_awaken_identity_consistent": true
+      },
+      "visual_review": "普通同一面容/冠/衣袍，三柄浮剑可数，野猪向前冲与金麦浪增强。",
+      "lower40_mean_luma_0_255": 8.563559027777778,
+      "previews": {
+        "260": "previews/freyr_awaken_260.png",
+        "masked": "previews/freyr_awaken_masked.png",
+        "cover": "previews/freyr_awaken_cover.png",
+        "safe": "previews/freyr_awaken_safe.png"
+      },
+      "game_test": "not_performed"
+    },
+    {
+      "id": "skadi",
+      "version": "v04",
+      "status": "art_self_check_passed_pending_game_review",
+      "runtime_file": "assets/sprites/cards/skadi.png",
+      "approved_file": "approved/skadi.png",
+      "candidate_file": "candidates/skadi.png",
+      "original_file": "originals/skadi_v04.png",
+      "size": [
+        720,
+        1200
+      ],
+      "mode": "RGB",
+      "frames": 1,
+      "color_count": 140546,
+      "sha256": "944db9fd75a5c885242d446ec67f34d03449deccf4a01cee5800638673dfa162",
+      "backup": null,
+      "source": "Built-in OpenAI imagegen, project-owned references only",
+      "tools": [
+        "image_gen.imagegen",
+        "Pillow12.1.1 resize/RGB/preview only"
+      ],
+      "generation_url": null,
+      "generation_record": "records/generation_jobs.json",
+      "checks": {
+        "png_rgb_720x1200": true,
+        "readable_at_260x433": true,
+        "main_identifiers_survive_lower45_90percent_overlay": true,
+        "critical_face_weapon_tips_in_side_safe_area": true,
+        "upper_left_light_shared_oil_style": true,
+        "lower40_dark_subdued": true,
+        "no_obvious_anatomy_or_weapon_errors_observed": true,
+        "no_text_frame_signature_watermark_observed": true,
+        "normal_awaken_identity_consistent": true
+      },
+      "visual_review": "银白双辫、冷傲面部、皮甲兽皮、完整弓和一支冰箭；弓弦两段在箭尾拉弦手交会。",
+      "lower40_mean_luma_0_255": 16.610622106481483,
+      "previews": {
+        "260": "previews/skadi_260.png",
+        "masked": "previews/skadi_masked.png",
+        "cover": "previews/skadi_cover.png",
+        "safe": "previews/skadi_safe.png"
+      },
+      "game_test": "not_performed"
+    },
+    {
+      "id": "skadi_awaken",
+      "version": "v03",
+      "status": "art_self_check_passed_pending_game_review",
+      "runtime_file": "assets/sprites/cards/skadi_awaken.png",
+      "approved_file": "approved/skadi_awaken.png",
+      "candidate_file": "candidates/skadi_awaken.png",
+      "original_file": "originals/skadi_awaken_v03.png",
+      "size": [
+        720,
+        1200
+      ],
+      "mode": "RGB",
+      "frames": 1,
+      "color_count": 193222,
+      "sha256": "f1e2848019c91fd3d42ffd78b9551f4dbf3822a4490a09a8564ef7d7eee275b0",
+      "backup": null,
+      "source": "Built-in OpenAI imagegen, project-owned references only",
+      "tools": [
+        "image_gen.imagegen",
+        "Pillow12.1.1 resize/RGB/preview only"
+      ],
+      "generation_url": null,
+      "generation_record": "records/generation_jobs.json",
+      "checks": {
+        "png_rgb_720x1200": true,
+        "readable_at_260x433": true,
+        "main_identifiers_survive_lower45_90percent_overlay": true,
+        "critical_face_weapon_tips_in_side_safe_area": true,
+        "upper_left_light_shared_oil_style": true,
+        "lower40_dark_subdued": true,
+        "no_obvious_anatomy_or_weapon_errors_observed": true,
+        "no_text_frame_signature_watermark_observed": true,
+        "normal_awaken_identity_consistent": true
+      },
+      "visual_review": "普通同一面容/双辫/衣甲/弓姿，更亮大型冰箭及暴风雪；下方披风雪雾压暗。",
+      "lower40_mean_luma_0_255": 20.334973958333332,
+      "previews": {
+        "260": "previews/skadi_awaken_260.png",
+        "masked": "previews/skadi_awaken_masked.png",
+        "cover": "previews/skadi_awaken_cover.png",
+        "safe": "previews/skadi_awaken_safe.png"
+      },
+      "game_test": "not_performed"
+    }
+  ],
+  "generation_records": "records/generation_jobs.json",
+  "mipmap_manifest": "records/mipmap_manifest.json",
+  "godot_mipmaps_configured": false,
+  "game_test": "not_performed",
+  "license_record": "assets/LICENSES.md G1-G3",
+  "optional_fusion_art": "not_in_scope",
+  "note": "Half-length card prioritizes face and primary identifiers. Snowshoe is dark secondary equipment below copy area; boar head above copy, body partly below. No claim of pixel-identical composition across generated variants."
+}

@@ -1,0 +1,33 @@
+{
+  "raw_size": [
+    1254,
+    1254
+  ],
+  "source": "originals/ran_whirl_v01_raw.png",
+  "frame_boxes": [
+    [
+      137,
+      131,
+      1157,
+      1137
+    ]
+  ],
+  "target_perframe": [
+    96,
+    96
+  ],
+  "frames": 1,
+  "alpha": "preserve generatedalpha, quantized8levels/cappedforground",
+  "tool": "Pillow formatting only",
+  "common_scale": 0.09019607843137255,
+  "operation": "Equalcell cuts, whole silhouette crop, common nearest scale, shared32RGBpalette, anchorplacement; no bodyredrawing",
+  "placements": [
+    [
+      2,
+      2,
+      92,
+      91
+    ]
+  ],
+  "alpha_cap": 110
+}

@@ -1,0 +1,33 @@
+{
+  "raw_size": [
+    1402,
+    1122
+  ],
+  "source": "originals/freyr_field_v01_raw.png",
+  "frame_boxes": [
+    [
+      46,
+      32,
+      1361,
+      1089
+    ]
+  ],
+  "target_perframe": [
+    128,
+    128
+  ],
+  "frames": 1,
+  "alpha": "preserve generatedalpha, quantized8levels/cappedforground",
+  "tool": "Pillow formatting only",
+  "common_scale": 0.09429657794676806,
+  "operation": "Equalcell cuts, whole silhouette crop, common nearest scale, shared32RGBpalette, anchorplacement; no bodyredrawing",
+  "placements": [
+    [
+      2,
+      14,
+      124,
+      100
+    ]
+  ],
+  "alpha_cap": 110
+}

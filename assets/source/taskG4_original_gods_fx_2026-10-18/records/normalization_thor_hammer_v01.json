@@ -1,0 +1,32 @@
+{
+  "raw_size": [
+    1536,
+    1024
+  ],
+  "source": "originals/thor_hammer_v01_raw.png",
+  "frame_boxes": [
+    [
+      297,
+      242,
+      1245,
+      793
+    ]
+  ],
+  "target_perframe": [
+    32,
+    32
+  ],
+  "frames": 1,
+  "alpha": "binary128threshold",
+  "tool": "Pillow formatting only",
+  "common_scale": 0.029535864978902954,
+  "operation": "Equalcell cuts, whole silhouette crop, common nearest scale, shared32RGBpalette, anchorplacement; no bodyredrawing",
+  "placements": [
+    [
+      2,
+      8,
+      28,
+      16
+    ]
+  ]
+}

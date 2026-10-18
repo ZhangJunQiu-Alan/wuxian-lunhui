@@ -1,0 +1,22 @@
+{
+  "group": "G4",
+  "id": "thor_hammer",
+  "w": 32,
+  "h": 32,
+  "frames": 1,
+  "anchor": [
+    16,
+    16
+  ],
+  "flags": "rotate",
+  "subject": "One solid iron SQUARE-headed short-handled warhammer, broad rectangular hammerhead on RIGHT, short leatherwrapped handle extends towardLEFT. Iceblue tiny electric edgeaccents, Norse engraved knotband, no chain or motiontrail. Balanced compactdiagonal silhouette.",
+  "version": "v01",
+  "fps": 8,
+  "root": "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskG4_original_gods_fx_2026-10-18",
+  "refs": [
+    "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskG4_original_gods_fx_2026-10-18/refs/effects_style.png"
+  ],
+  "prompt": "Use case: stylized-concept.\nAsset type: production pixelart 2D game magical effect sprite 32x32 logical pixels PERFRAME, 1frame(s).\nInput1 is STYLE REFERENCE of project's existingpixel effects, match crisp clusters andlimitedpalette.\nSubject: One solid iron SQUARE-headed short-handled warhammer, broad rectangular hammerhead on RIGHT, short leatherwrapped handle extends towardLEFT. Iceblue tiny electric edgeaccents, Norse engraved knotband, no chain or motiontrail. Balanced compactdiagonal silhouette.\nLayout: ONE isolatedsprite on exactlogical32x32 canvas, subject centered withminimum2logicalpxclear margin, excepthorizontalstretchable strips extendLEFTandRIGHTfully. Preserve specifiedanchor.\nStyle: genuineLOWRESPIXELART, hardconnected1..3pixelclusters, NO detailedillustration/no3D/noantialias/no dither/no blur. Binarytransparentbackground, alphahardedges, no externalcastshadow. Ifmagicglowusecrispcoloredpixelsinsidebounds.\nBackground genuinely TRANSPARENT, not black or checkerboard. No scene/groundplane/text/watermark. Direction RIGHT forweaponsandanimals. No copiedexternalcharacters.",
+  "tool": "OpenAI builtin image_gen",
+  "source": "/Users/zhangjunqiu/.codex/generated_images/01a14377-c537-7a10-b5df-10043f63fbe0/exec-6775917f-491b-456c-9b09-08d5fea149be.png"
+}

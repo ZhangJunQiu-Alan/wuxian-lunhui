@@ -1,0 +1,22 @@
+{
+  "group": "G4",
+  "id": "loki_fire_patch",
+  "w": 64,
+  "h": 64,
+  "frames": 1,
+  "anchor": [
+    32,
+    32
+  ],
+  "flags": "area",
+  "subject": "TOPDOWN small circularpatchof tealgreenandorange trickyfire, lowtranslucentflamesaroundunevenring, centerlargelyclearwithafewflamestreaks. Simplesmoothcleanedges withnobusyspots; veryfaint groundarea, nocastshadow/floor.",
+  "version": "v01",
+  "fps": 8,
+  "root": "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskG4_original_gods_fx_2026-10-18",
+  "refs": [
+    "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskG4_original_gods_fx_2026-10-18/refs/effects_style.png"
+  ],
+  "prompt": "Use case: stylized-concept.\nAsset type: production pixelart 2D game magical effect sprite 64x64 logical pixels PERFRAME, 1frame(s).\nInput1 is STYLE REFERENCE of project's existingpixel effects, match crisp clusters andlimitedpalette.\nSubject: TOPDOWN small circularpatchof tealgreenandorange trickyfire, lowtranslucentflamesaroundunevenring, centerlargelyclearwithafewflamestreaks. Simplesmoothcleanedges withnobusyspots; veryfaint groundarea, nocastshadow/floor.\nLayout: ONE isolatedsprite on exactlogical64x64 canvas, subject centered withminimum2logicalpxclear margin, excepthorizontalstretchable strips extendLEFTandRIGHTfully. Preserve specifiedanchor.\nStyle: genuineLOWRESPIXELART, hardconnected1..3pixelclusters, NO detailedillustration/no3D/noantialias/no dither/no blur. Allow translucent EDGEPIXELS and faintinterior for scalablegroundeffect; use simpleclean shapes, keepenemiesreadable.\nBackground genuinely TRANSPARENT, not black or checkerboard. No scene/groundplane/text/watermark. Direction RIGHT forweaponsandanimals. No copiedexternalcharacters.",
+  "tool": "OpenAI builtin image_gen",
+  "source": "/Users/zhangjunqiu/.codex/generated_images/01a14377-c537-7a10-b5df-10043f63fbe0/exec-9c0bdbbf-fb01-4e01-80c7-d5e98283492d.png"
+}

@@ -1,0 +1,22 @@
+{
+  "group": "G5",
+  "id": "freyr_boar",
+  "w": 40,
+  "h": 28,
+  "frames": 2,
+  "anchor": [
+    20,
+    20
+  ],
+  "flags": "feet boar",
+  "subject": "TWO consecutive charging WILD BOAR poses facingRIGHT, stockyheavybody, compactsnoutwithONEvisibleivorytusk, bristling GOLDENMANEoverback, darkearthybrownfur, smalllegs. Frame1frontandrearlegsstridingwide, frame2gatheredundertorso; samebody/head/proportions, feetaty20. No saddle/armor/rider/fire/trail/groundshadow.",
+  "version": "v01",
+  "fps": 12,
+  "root": "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskG5_new_gods_fx_2026-10-18",
+  "refs": [
+    "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskG5_new_gods_fx_2026-10-18/refs/effects_style.png"
+  ],
+  "prompt": "Use case: stylized-concept.\nAsset type: production pixelart 2D game magical effect sprite 40x28 logical pixels PERFRAME, 2frame(s).\nInput1 is STYLE REFERENCE of project's existingpixel effects, match crisp clusters andlimitedpalette.\nSubject: TWO consecutive charging WILD BOAR poses facingRIGHT, stockyheavybody, compactsnoutwithONEvisibleivorytusk, bristling GOLDENMANEoverback, darkearthybrownfur, smalllegs. Frame1frontandrearlegsstridingwide, frame2gatheredundertorso; samebody/head/proportions, feetaty20. No saddle/armor/rider/fire/trail/groundshadow.\nLayout: EXACTLY 2 equally sized frames in ONE HORIZONTAL row, eachsamecanvas 40x28, blankseparator NOT allowed, consistent scale andanchor. Entireimage logical80x28. No labels/numbers/grid/borders. Eachframeindependently isolated with2pxtransparentmargin. No overlappingbetweenframes.\nStyle: genuineLOWRESPIXELART, hardconnected1..3pixelclusters, NO detailedillustration/no3D/noantialias/no dither/no blur. Binarytransparentbackground, alphahardedges, no externalcastshadow. Ifmagicglowusecrispcoloredpixelsinsidebounds.\nBackground genuinely TRANSPARENT, not black or checkerboard. No scene/groundplane/text/watermark. Direction RIGHT forweaponsandanimals. No copiedexternalcharacters.",
+  "tool": "OpenAI builtin image_gen",
+  "source": "/Users/zhangjunqiu/.codex/generated_images/01a14377-c537-7a10-b5df-10043f63fbe0/exec-b81fed2c-37f7-4a42-9ada-0ee8b022467f.png"
+}

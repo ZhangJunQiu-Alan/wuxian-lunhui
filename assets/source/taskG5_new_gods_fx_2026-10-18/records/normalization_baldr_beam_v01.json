@@ -1,0 +1,24 @@
+{
+  "raw_size": [
+    2172,
+    724
+  ],
+  "source": "originals/baldr_beam_v01_raw.png",
+  "frame_boxes": [
+    [
+      0,
+      282,
+      2172,
+      489
+    ]
+  ],
+  "target_perframe": [
+    64,
+    16
+  ],
+  "frames": 1,
+  "alpha": "preserve generatedalpha, quantized8levels/cappedforground",
+  "tool": "Pillow formatting only",
+  "operation": "Whole strip nearest resize; identical4px sourcecolumn endports, transparent2px top/bottom",
+  "alpha_cap": 230
+}

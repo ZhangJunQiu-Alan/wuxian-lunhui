@@ -1,0 +1,1147 @@
+{
+  "task": "G5",
+  "date": "2026-10-18",
+  "status": "published_after_art_self_check",
+  "scope": "G4/G5 pixel god effects only",
+  "game_test": "not_performed",
+  "browser_review": "not_performed; local browser control disabled in Work settings",
+  "tile_4x4": "not applicable: no ground tiles in G4/G5; use stretch and ground overlay previews instead",
+  "asset_count": 13,
+  "files": [
+    {
+      "id": "baldr_beam",
+      "file": "sprites/effects/gods/baldr_beam.png",
+      "approved": "approved/baldr_beam.png",
+      "candidate": "candidates/baldr_beam_v01.png",
+      "sha256": "fd622c0316347028ef57fca0e99cfa8cb1cde3902b7e8bfa3fe41bdc13bce15b",
+      "source": {
+        "raw": "originals/baldr_beam_v01_raw.png",
+        "raw_sha256": "7a1b2a176e217a56464333b097c2e61600d51baac1e786bf4bc0b146adbee59e",
+        "tool": "OpenAI built-in image_gen",
+        "generation_record": "records/generation_baldr_beam_v01.json",
+        "generation_link": null,
+        "link_note": "Built-in tool provides local output path, no public generation-session URL. Actual prompt and uploaded references retained in record.",
+        "references": [
+          "refs/effects_style.png"
+        ]
+      },
+      "selected_version": "v01",
+      "width": 64,
+      "height": 16,
+      "frame_size": [
+        64,
+        16
+      ],
+      "frames": 1,
+      "fps": null,
+      "anchor": [
+        0,
+        8
+      ],
+      "alpha_rule": "semi-transparent permitted by task G for scaled areas/strips",
+      "measurements": {
+        "frame_bboxes": [
+          [
+            0,
+            2,
+            64,
+            14
+          ]
+        ],
+        "rgb_colors": 26,
+        "rgba_values": 50,
+        "alpha_values": [
+          0,
+          16,
+          32,
+          48,
+          64,
+          80,
+          192,
+          208,
+          224
+        ],
+        "padding_exception": "stretchable strip left/right ends"
+      },
+      "technical_checks": {
+        "exact_size": true,
+        "png_rgba": true,
+        "nonempty_all_frames": true,
+        "transparent_background": true,
+        "alpha_rule": true,
+        "palette_budget_32_rgb": true,
+        "padding": true,
+        "zero_rgb_where_alpha_zero": true,
+        "generation_record_exists": true,
+        "matching_beam_endports": true
+      },
+      "visual_review": {
+        "version": "v01",
+        "status": "pass",
+        "reviewed": [
+          "native on #121721",
+          "nearest 4x",
+          "style reference comparison",
+          "no text/watermark/scene",
+          "right facing where applicable",
+          "4x length / 2x width stretch"
+        ],
+        "notes": "暖白金色亮芯及柔和侧缘；两端4列一致，4倍长2倍宽预览连续。"
+      },
+      "previews": {
+        "review": "previews/baldr_beam_v01_review.png",
+        "stretch": "previews/baldr_beam_v01_stretch.png"
+      },
+      "rejected_candidates": {},
+      "status": "self_check_passed",
+      "game_test": "not_performed"
+    },
+    {
+      "id": "baldr_spear",
+      "file": "sprites/effects/gods/baldr_spear.png",
+      "approved": "approved/baldr_spear.png",
+      "candidate": "candidates/baldr_spear_v01.png",
+      "sha256": "a20972e27ad511bd3565c98d18827f311c8d59ce46f4975e9c47c7a1c8f15edf",
+      "source": {
+        "raw": "originals/baldr_spear_v01_raw.png",
+        "raw_sha256": "bc5b72e4927cf9b7bcdb18d3d54f540a00d468ac1fcd96f33a87eeed5dc5598d",
+        "tool": "OpenAI built-in image_gen",
+        "generation_record": "records/generation_baldr_spear_v01.json",
+        "generation_link": null,
+        "link_note": "Built-in tool provides local output path, no public generation-session URL. Actual prompt and uploaded references retained in record.",
+        "references": [
+          "refs/effects_style.png"
+        ]
+      },
+      "selected_version": "v01",
+      "width": 64,
+      "height": 16,
+      "frame_size": [
+        64,
+        16
+      ],
+      "frames": 1,
+      "fps": null,
+      "anchor": [
+        56,
+        8
+      ],
+      "alpha_rule": "0 or255",
+      "measurements": {
+        "frame_bboxes": [
+          [
+            2,
+            5,
+            57,
+            12
+          ]
+        ],
+        "rgb_colors": 19,
+        "rgba_values": 19,
+        "alpha_values": [
+          0,
+          255
+        ],
+        "padding_exception": null
+      },
+      "technical_checks": {
+        "exact_size": true,
+        "png_rgba": true,
+        "nonempty_all_frames": true,
+        "transparent_background": true,
+        "alpha_rule": true,
+        "palette_budget_32_rgb": true,
+        "padding": true,
+        "zero_rgb_where_alpha_zero": true,
+        "generation_record_exists": true,
+        "tip_on_anchor": true
+      },
+      "visual_review": {
+        "version": "v01",
+        "status": "pass",
+        "reviewed": [
+          "native on #121721",
+          "nearest 4x",
+          "style reference comparison",
+          "no text/watermark/scene",
+          "right facing where applicable",
+          "0/90/180 rotation"
+        ],
+        "notes": "金白光矛朝右，最右矛尖位于(56,8)。"
+      },
+      "previews": {
+        "review": "previews/baldr_spear_v01_review.png",
+        "rotations": "previews/baldr_spear_v01_rotations.png"
+      },
+      "rejected_candidates": {},
+      "status": "self_check_passed",
+      "game_test": "not_performed"
+    },
+    {
+      "id": "baldr_glow",
+      "file": "sprites/effects/gods/baldr_glow.png",
+      "approved": "approved/baldr_glow.png",
+      "candidate": "candidates/baldr_glow_v02.png",
+      "sha256": "bf995863a23e90e91f80a89ddf279ca3e814441dfadf647c4bf826c4e84f18b2",
+      "source": {
+        "raw": "originals/baldr_glow_v01_raw.png",
+        "raw_sha256": "b005af0f074f7b3bcd44c243de577ccec333ef7dbae37eca999b98c7066e8755",
+        "tool": "OpenAI built-in image_gen",
+        "generation_record": "records/generation_baldr_glow_v02.json",
+        "generation_link": null,
+        "link_note": "Built-in tool provides local output path, no public generation-session URL. Actual prompt and uploaded references retained in record.",
+        "references": [
+          "refs/effects_style.png"
+        ]
+      },
+      "selected_version": "v02",
+      "width": 64,
+      "height": 16,
+      "frame_size": [
+        64,
+        16
+      ],
+      "frames": 1,
+      "fps": null,
+      "anchor": [
+        0,
+        8
+      ],
+      "alpha_rule": "semi-transparent permitted by task G for scaled areas/strips",
+      "measurements": {
+        "frame_bboxes": [
+          [
+            1,
+            2,
+            63,
+            14
+          ]
+        ],
+        "rgb_colors": 25,
+        "rgba_values": 68,
+        "alpha_values": [
+          0,
+          16,
+          32,
+          48,
+          64
+        ],
+        "padding_exception": "stretchable strip left/right ends"
+      },
+      "technical_checks": {
+        "exact_size": true,
+        "png_rgba": true,
+        "nonempty_all_frames": true,
+        "transparent_background": true,
+        "alpha_rule": true,
+        "palette_budget_32_rgb": true,
+        "padding": true,
+        "zero_rgb_where_alpha_zero": true,
+        "generation_record_exists": true
+      },
+      "visual_review": {
+        "version": "v02",
+        "status": "pass",
+        "reviewed": [
+          "native on #121721",
+          "nearest 4x",
+          "style reference comparison",
+          "no text/watermark/scene",
+          "right facing where applicable",
+          "4x length / 2x width stretch"
+        ],
+        "notes": "保留原图自然渐淡端部；整体比主光束暗且透明，拉伸后无硬端块。"
+      },
+      "previews": {
+        "review": "previews/baldr_glow_v02_review.png",
+        "stretch": "previews/baldr_glow_v02_stretch.png"
+      },
+      "rejected_candidates": {
+        "v01": "复制的端口过于规整，与自然淡出光带不一致。"
+      },
+      "status": "self_check_passed",
+      "game_test": "not_performed"
+    },
+    {
+      "id": "ran_net",
+      "file": "sprites/effects/gods/ran_net.png",
+      "approved": "approved/ran_net.png",
+      "candidate": "candidates/ran_net_v01.png",
+      "sha256": "652edec4d0806a0ee437430743f777dd66a5107f5ab5316ea69cf99ab08e4e1d",
+      "source": {
+        "raw": "originals/ran_net_v01_raw.png",
+        "raw_sha256": "c2cb27144061800e984c138b6dec58d2bec422777ecfdfbc9df901b4c11c0cf8",
+        "tool": "OpenAI built-in image_gen",
+        "generation_record": "records/generation_ran_net_v01.json",
+        "generation_link": null,
+        "link_note": "Built-in tool provides local output path, no public generation-session URL. Actual prompt and uploaded references retained in record.",
+        "references": [
+          "refs/effects_style.png"
+        ]
+      },
+      "selected_version": "v01",
+      "width": 96,
+      "height": 96,
+      "frame_size": [
+        96,
+        96
+      ],
+      "frames": 1,
+      "fps": null,
+      "anchor": [
+        48,
+        48
+      ],
+      "alpha_rule": "semi-transparent permitted by task G for scaled areas/strips",
+      "measurements": {
+        "frame_bboxes": [
+          [
+            2,
+            7,
+            94,
+            88
+          ]
+        ],
+        "rgb_colors": 31,
+        "rgba_values": 120,
+        "alpha_values": [
+          0,
+          16,
+          32,
+          48,
+          64,
+          80,
+          96,
+          112
+        ],
+        "padding_exception": null
+      },
+      "technical_checks": {
+        "exact_size": true,
+        "png_rgba": true,
+        "nonempty_all_frames": true,
+        "transparent_background": true,
+        "alpha_rule": true,
+        "palette_budget_32_rgb": true,
+        "padding": true,
+        "zero_rgb_where_alpha_zero": true,
+        "generation_record_exists": true
+      },
+      "visual_review": {
+        "version": "v01",
+        "status": "pass",
+        "reviewed": [
+          "native on #121721",
+          "nearest 4x",
+          "style reference comparison",
+          "no text/watermark/scene",
+          "right facing where applicable",
+          "Midgard ground: characters above and below effect; scale1 and1.6"
+        ],
+        "notes": "俯视蓝色圆形渔网、透明菱形孔及贝壳；地块叠加人物轮廓可辨。"
+      },
+      "previews": {
+        "review": "previews/ran_net_v01_review.png",
+        "ground": "previews/ran_net_v01_ground.png"
+      },
+      "rejected_candidates": {},
+      "status": "self_check_passed",
+      "game_test": "not_performed"
+    },
+    {
+      "id": "ran_wave",
+      "file": "sprites/effects/gods/ran_wave.png",
+      "approved": "approved/ran_wave.png",
+      "candidate": "candidates/ran_wave_v02.png",
+      "sha256": "0d871efb7c7dbd1ed8f662fa7b0d0d35548ec5754621a0782cab37f331f08874",
+      "source": {
+        "raw": "originals/ran_wave_v01_raw.png",
+        "raw_sha256": "17b56fe130fb767cbd72f2eb76a7e4cb8a27415dc04cffa1772fa0b301d9f84b",
+        "tool": "OpenAI built-in image_gen",
+        "generation_record": "records/generation_ran_wave_v02.json",
+        "generation_link": null,
+        "link_note": "Built-in tool provides local output path, no public generation-session URL. Actual prompt and uploaded references retained in record.",
+        "references": [
+          "refs/effects_style.png"
+        ]
+      },
+      "selected_version": "v02",
+      "width": 64,
+      "height": 32,
+      "frame_size": [
+        64,
+        32
+      ],
+      "frames": 1,
+      "fps": null,
+      "anchor": [
+        32,
+        16
+      ],
+      "alpha_rule": "semi-transparent permitted by task G for scaled areas/strips",
+      "measurements": {
+        "frame_bboxes": [
+          [
+            0,
+            2,
+            64,
+            30
+          ]
+        ],
+        "rgb_colors": 28,
+        "rgba_values": 130,
+        "alpha_values": [
+          0,
+          16,
+          32,
+          48,
+          64,
+          80,
+          96,
+          112,
+          128,
+          144,
+          160,
+          176,
+          192,
+          208,
+          224
+        ],
+        "padding_exception": "stretchable strip left/right ends"
+      },
+      "technical_checks": {
+        "exact_size": true,
+        "png_rgba": true,
+        "nonempty_all_frames": true,
+        "transparent_background": true,
+        "alpha_rule": true,
+        "palette_budget_32_rgb": true,
+        "padding": true,
+        "zero_rgb_where_alpha_zero": true,
+        "generation_record_exists": true
+      },
+      "visual_review": {
+        "version": "v02",
+        "status": "pass",
+        "reviewed": [
+          "native on #121721",
+          "nearest 4x",
+          "style reference comparison",
+          "no text/watermark/scene",
+          "right facing where applicable",
+          "4x length / 2x width stretch"
+        ],
+        "notes": "蓝白浪头朝上；去掉排版产生的竖直端块，整段拉长后形状连续。"
+      },
+      "previews": {
+        "review": "previews/ran_wave_v02_review.png",
+        "stretch": "previews/ran_wave_v02_stretch.png"
+      },
+      "rejected_candidates": {
+        "v01": "端口排版复制中央高浪列，在两端形成竖块。"
+      },
+      "status": "self_check_passed",
+      "game_test": "not_performed"
+    },
+    {
+      "id": "ran_whirl",
+      "file": "sprites/effects/gods/ran_whirl.png",
+      "approved": "approved/ran_whirl.png",
+      "candidate": "candidates/ran_whirl_v01.png",
+      "sha256": "58e795d38cb0aaee30520288369b94ce96b7ac5d888ea46431ab0e2691f69280",
+      "source": {
+        "raw": "originals/ran_whirl_v01_raw.png",
+        "raw_sha256": "2a5806118ac3d6fedc146da483497b6f8c3d6e17d62a69e634410af4f9cd4344",
+        "tool": "OpenAI built-in image_gen",
+        "generation_record": "records/generation_ran_whirl_v01.json",
+        "generation_link": null,
+        "link_note": "Built-in tool provides local output path, no public generation-session URL. Actual prompt and uploaded references retained in record.",
+        "references": [
+          "refs/effects_style.png"
+        ]
+      },
+      "selected_version": "v01",
+      "width": 96,
+      "height": 96,
+      "frame_size": [
+        96,
+        96
+      ],
+      "frames": 1,
+      "fps": null,
+      "anchor": [
+        48,
+        48
+      ],
+      "alpha_rule": "semi-transparent permitted by task G for scaled areas/strips",
+      "measurements": {
+        "frame_bboxes": [
+          [
+            2,
+            2,
+            94,
+            93
+          ]
+        ],
+        "rgb_colors": 28,
+        "rgba_values": 140,
+        "alpha_values": [
+          0,
+          16,
+          32,
+          48,
+          64,
+          80,
+          96,
+          112
+        ],
+        "padding_exception": null
+      },
+      "technical_checks": {
+        "exact_size": true,
+        "png_rgba": true,
+        "nonempty_all_frames": true,
+        "transparent_background": true,
+        "alpha_rule": true,
+        "palette_budget_32_rgb": true,
+        "padding": true,
+        "zero_rgb_where_alpha_zero": true,
+        "generation_record_exists": true
+      },
+      "visual_review": {
+        "version": "v01",
+        "status": "pass",
+        "reviewed": [
+          "native on #121721",
+          "nearest 4x",
+          "style reference comparison",
+          "no text/watermark/scene",
+          "right facing where applicable",
+          "Midgard ground: characters above and below effect; scale1 and1.6"
+        ],
+        "notes": "深蓝与白色水纹漩涡；单张96px，整体淡入淡出由程序控制。"
+      },
+      "previews": {
+        "review": "previews/ran_whirl_v01_review.png",
+        "ground": "previews/ran_whirl_v01_ground.png"
+      },
+      "rejected_candidates": {},
+      "status": "self_check_passed",
+      "game_test": "not_performed"
+    },
+    {
+      "id": "freyr_sword",
+      "file": "sprites/effects/gods/freyr_sword.png",
+      "approved": "approved/freyr_sword.png",
+      "candidate": "candidates/freyr_sword_v02.png",
+      "sha256": "1707c608cb0dc178a0f3abcdca7ee92342b20ff87b52e17bcc06d18a66998649",
+      "source": {
+        "raw": "originals/freyr_sword_v02_raw.png",
+        "raw_sha256": "abaf8df652a188fd8a7d6240cc296f83faa72d50ccf91a3aa53206493084cec5",
+        "tool": "OpenAI built-in image_gen",
+        "generation_record": "records/generation_freyr_sword_v02.json",
+        "generation_link": null,
+        "link_note": "Built-in tool provides local output path, no public generation-session URL. Actual prompt and uploaded references retained in record.",
+        "references": [
+          "refs/effects_style.png"
+        ]
+      },
+      "selected_version": "v02",
+      "width": 32,
+      "height": 12,
+      "frame_size": [
+        32,
+        12
+      ],
+      "frames": 1,
+      "fps": null,
+      "anchor": [
+        16,
+        6
+      ],
+      "alpha_rule": "0 or255",
+      "measurements": {
+        "frame_bboxes": [
+          [
+            2,
+            2,
+            30,
+            9
+          ]
+        ],
+        "rgb_colors": 18,
+        "rgba_values": 18,
+        "alpha_values": [
+          0,
+          255
+        ],
+        "padding_exception": null
+      },
+      "technical_checks": {
+        "exact_size": true,
+        "png_rgba": true,
+        "nonempty_all_frames": true,
+        "transparent_background": true,
+        "alpha_rule": true,
+        "palette_budget_32_rgb": true,
+        "padding": true,
+        "zero_rgb_where_alpha_zero": true,
+        "generation_record_exists": true
+      },
+      "visual_review": {
+        "version": "v02",
+        "status": "pass",
+        "reviewed": [
+          "native on #121721",
+          "nearest 4x",
+          "style reference comparison",
+          "no text/watermark/scene",
+          "right facing where applicable",
+          "0/90/180 rotation"
+        ],
+        "notes": "第一稿缩小成细线而退回；新版绿金厚刃、金色护手，剑尖朝右。"
+      },
+      "previews": {
+        "review": "previews/freyr_sword_v02_review.png",
+        "rotations": "previews/freyr_sword_v02_rotations.png"
+      },
+      "rejected_candidates": {
+        "v01": "缩小后剑刃仅细线，护手和长剑轮廓不够清楚。"
+      },
+      "status": "self_check_passed",
+      "game_test": "not_performed"
+    },
+    {
+      "id": "freyr_boar",
+      "file": "sprites/effects/gods/freyr_boar.png",
+      "approved": "approved/freyr_boar.png",
+      "candidate": "candidates/freyr_boar_v01.png",
+      "sha256": "25dc49955244339d80f2307af74ab07d870cc718314f0d7ddd6fb127b6a9a1a2",
+      "source": {
+        "raw": "originals/freyr_boar_v01_raw.png",
+        "raw_sha256": "ad930bcdbc2f53584a4a79c1766e218bd4365a696e0b41ce36d0f65c77ac5a9e",
+        "tool": "OpenAI built-in image_gen",
+        "generation_record": "records/generation_freyr_boar_v01.json",
+        "generation_link": null,
+        "link_note": "Built-in tool provides local output path, no public generation-session URL. Actual prompt and uploaded references retained in record.",
+        "references": [
+          "refs/effects_style.png"
+        ]
+      },
+      "selected_version": "v01",
+      "width": 80,
+      "height": 28,
+      "frame_size": [
+        40,
+        28
+      ],
+      "frames": 2,
+      "fps": 12,
+      "anchor": [
+        20,
+        20
+      ],
+      "alpha_rule": "0 or255",
+      "measurements": {
+        "frame_bboxes": [
+          [
+            2,
+            2,
+            37,
+            21
+          ],
+          [
+            5,
+            3,
+            36,
+            21
+          ]
+        ],
+        "rgb_colors": 30,
+        "rgba_values": 30,
+        "alpha_values": [
+          0,
+          255
+        ],
+        "padding_exception": null,
+        "gif_frames": 6,
+        "gif_duration_ms": [
+          80,
+          90,
+          80,
+          80,
+          90,
+          80
+        ],
+        "gif_average_fps": 12.0,
+        "gif_scale": 4
+      },
+      "technical_checks": {
+        "exact_size": true,
+        "png_rgba": true,
+        "nonempty_all_frames": true,
+        "transparent_background": true,
+        "alpha_rule": true,
+        "palette_budget_32_rgb": true,
+        "padding": true,
+        "zero_rgb_where_alpha_zero": true,
+        "generation_record_exists": true,
+        "baseline_matches_anchor": true,
+        "distinct_frames": true,
+        "gif_pixels_match_sheet": true,
+        "gif_loops": true,
+        "gif_average_fps": true
+      },
+      "visual_review": {
+        "version": "v01",
+        "status": "pass",
+        "reviewed": [
+          "native on #121721",
+          "nearest 4x",
+          "style reference comparison",
+          "no text/watermark/scene",
+          "right facing where applicable",
+          "all animation frames, body proportions, head alignment, first/last transition"
+        ],
+        "notes": "金鬃野猪朝右，两相冲锋；脚底统一y20，GIF平均12fps。"
+      },
+      "previews": {
+        "review": "previews/freyr_boar_v01_review.png",
+        "gif": "previews/freyr_boar_v01.gif"
+      },
+      "rejected_candidates": {},
+      "status": "self_check_passed",
+      "game_test": "not_performed"
+    },
+    {
+      "id": "freyr_field",
+      "file": "sprites/effects/gods/freyr_field.png",
+      "approved": "approved/freyr_field.png",
+      "candidate": "candidates/freyr_field_v01.png",
+      "sha256": "84f7853e87caaac62dde6e32270316c2991a171da9e6dcc5a5057f78b9d7eeb5",
+      "source": {
+        "raw": "originals/freyr_field_v01_raw.png",
+        "raw_sha256": "fd5693b5d279c1ce7946e924e71497da124086143b67ad723d1e4211f878f76f",
+        "tool": "OpenAI built-in image_gen",
+        "generation_record": "records/generation_freyr_field_v01.json",
+        "generation_link": null,
+        "link_note": "Built-in tool provides local output path, no public generation-session URL. Actual prompt and uploaded references retained in record.",
+        "references": [
+          "refs/effects_style.png"
+        ]
+      },
+      "selected_version": "v01",
+      "width": 128,
+      "height": 128,
+      "frame_size": [
+        128,
+        128
+      ],
+      "frames": 1,
+      "fps": null,
+      "anchor": [
+        64,
+        64
+      ],
+      "alpha_rule": "semi-transparent permitted by task G for scaled areas/strips",
+      "measurements": {
+        "frame_bboxes": [
+          [
+            2,
+            14,
+            126,
+            114
+          ]
+        ],
+        "rgb_colors": 23,
+        "rgba_values": 142,
+        "alpha_values": [
+          0,
+          16,
+          32,
+          48,
+          64,
+          80,
+          96,
+          112
+        ],
+        "padding_exception": null
+      },
+      "technical_checks": {
+        "exact_size": true,
+        "png_rgba": true,
+        "nonempty_all_frames": true,
+        "transparent_background": true,
+        "alpha_rule": true,
+        "palette_budget_32_rgb": true,
+        "padding": true,
+        "zero_rgb_where_alpha_zero": true,
+        "generation_record_exists": true
+      },
+      "visual_review": {
+        "version": "v01",
+        "status": "pass",
+        "reviewed": [
+          "native on #121721",
+          "nearest 4x",
+          "style reference comparison",
+          "no text/watermark/scene",
+          "right facing where applicable",
+          "Midgard ground: characters above and below effect; scale1 and1.6"
+        ],
+        "notes": "俯视圆形金色麦田，自然边缘、中心较淡；角色上下层叠加均可辨。"
+      },
+      "previews": {
+        "review": "previews/freyr_field_v01_review.png",
+        "ground": "previews/freyr_field_v01_ground.png"
+      },
+      "rejected_candidates": {},
+      "status": "self_check_passed",
+      "game_test": "not_performed"
+    },
+    {
+      "id": "skadi_arrow",
+      "file": "sprites/effects/gods/skadi_arrow.png",
+      "approved": "approved/skadi_arrow.png",
+      "candidate": "candidates/skadi_arrow_v04.png",
+      "sha256": "7fe0da1b44a8f8840af1e27ca96741a1cccba2ded90813008a60c5653d24bc86",
+      "source": {
+        "raw": "originals/skadi_arrow_v02_raw.png",
+        "raw_sha256": "c5ecfd0d890e2261a9b101dffe825b3c85394b15f395f562e63e3731139662a8",
+        "tool": "OpenAI built-in image_gen",
+        "generation_record": "records/generation_skadi_arrow_v04.json",
+        "generation_link": null,
+        "link_note": "Built-in tool provides local output path, no public generation-session URL. Actual prompt and uploaded references retained in record.",
+        "references": [
+          "refs/effects_style.png",
+          "originals/skadi_arrow_v01_raw.png"
+        ]
+      },
+      "selected_version": "v04",
+      "width": 32,
+      "height": 8,
+      "frame_size": [
+        32,
+        8
+      ],
+      "frames": 1,
+      "fps": null,
+      "anchor": [
+        28,
+        4
+      ],
+      "alpha_rule": "0 or255",
+      "measurements": {
+        "frame_bboxes": [
+          [
+            3,
+            3,
+            29,
+            6
+          ]
+        ],
+        "rgb_colors": 29,
+        "rgba_values": 29,
+        "alpha_values": [
+          0,
+          255
+        ],
+        "padding_exception": null
+      },
+      "technical_checks": {
+        "exact_size": true,
+        "png_rgba": true,
+        "nonempty_all_frames": true,
+        "transparent_background": true,
+        "alpha_rule": true,
+        "palette_budget_32_rgb": true,
+        "padding": true,
+        "zero_rgb_where_alpha_zero": true,
+        "generation_record_exists": true,
+        "tip_on_anchor": true
+      },
+      "visual_review": {
+        "version": "v04",
+        "status": "pass",
+        "reviewed": [
+          "native on #121721",
+          "nearest 4x",
+          "style reference comparison",
+          "no text/watermark/scene",
+          "right facing where applicable",
+          "0/90/180 rotation"
+        ],
+        "notes": "原稿v02重新取样，保留完整箭杆和箭羽；最终箭尖(28,4)。"
+      },
+      "previews": {
+        "review": "previews/skadi_arrow_v04_review.png",
+        "rotations": "previews/skadi_arrow_v04_rotations.png"
+      },
+      "rejected_candidates": {
+        "v01": "小尺寸箭头不清楚。",
+        "v02": "最近邻取样丢失细箭杆。",
+        "v03": "改变纵向取样仍未保住完整箭杆。"
+      },
+      "status": "self_check_passed",
+      "game_test": "not_performed"
+    },
+    {
+      "id": "skadi_blizzard",
+      "file": "sprites/effects/gods/skadi_blizzard.png",
+      "approved": "approved/skadi_blizzard.png",
+      "candidate": "candidates/skadi_blizzard_v01.png",
+      "sha256": "051ceef7bb36067a5f2b9490b7cfc8ef31ce4917f2abfcbe40d0bbaf55b4dc48",
+      "source": {
+        "raw": "originals/skadi_blizzard_v01_raw.png",
+        "raw_sha256": "98d7f633ffcc49b20fbc5987c4f45b5f1fa9b9cb5c2b3986111b7bc4b3aa0cc6",
+        "tool": "OpenAI built-in image_gen",
+        "generation_record": "records/generation_skadi_blizzard_v01.json",
+        "generation_link": null,
+        "link_note": "Built-in tool provides local output path, no public generation-session URL. Actual prompt and uploaded references retained in record.",
+        "references": [
+          "refs/effects_style.png"
+        ]
+      },
+      "selected_version": "v01",
+      "width": 128,
+      "height": 128,
+      "frame_size": [
+        128,
+        128
+      ],
+      "frames": 1,
+      "fps": null,
+      "anchor": [
+        64,
+        64
+      ],
+      "alpha_rule": "semi-transparent permitted by task G for scaled areas/strips",
+      "measurements": {
+        "frame_bboxes": [
+          [
+            2,
+            4,
+            126,
+            123
+          ]
+        ],
+        "rgb_colors": 17,
+        "rgba_values": 84,
+        "alpha_values": [
+          0,
+          16,
+          32,
+          48,
+          64,
+          80,
+          96,
+          112
+        ],
+        "padding_exception": null,
+        "fully_transparent_center_radius_exclusive": 29.068883707497267
+      },
+      "technical_checks": {
+        "exact_size": true,
+        "png_rgba": true,
+        "nonempty_all_frames": true,
+        "transparent_background": true,
+        "alpha_rule": true,
+        "palette_budget_32_rgb": true,
+        "padding": true,
+        "zero_rgb_where_alpha_zero": true,
+        "generation_record_exists": true,
+        "transparent_center_disk": true
+      },
+      "visual_review": {
+        "version": "v01",
+        "status": "pass",
+        "reviewed": [
+          "native on #121721",
+          "nearest 4x",
+          "style reference comparison",
+          "no text/watermark/scene",
+          "right facing where applicable",
+          "0/90/180 rotation",
+          "Midgard ground: characters above and below effect; scale1 and1.6"
+        ],
+        "notes": "冰蓝雪片与风纹环，中心透明；旋转和地面叠加均已查看。"
+      },
+      "previews": {
+        "review": "previews/skadi_blizzard_v01_review.png",
+        "rotations": "previews/skadi_blizzard_v01_rotations.png",
+        "ground": "previews/skadi_blizzard_v01_ground.png"
+      },
+      "rejected_candidates": {},
+      "status": "self_check_passed",
+      "game_test": "not_performed"
+    },
+    {
+      "id": "skadi_ice",
+      "file": "sprites/effects/gods/skadi_ice.png",
+      "approved": "approved/skadi_ice.png",
+      "candidate": "candidates/skadi_ice_v02.png",
+      "sha256": "ef71ea96c03b891402cd4ff00663e9876a17b479b52d5b6456b3567ceb415cfc",
+      "source": {
+        "raw": "originals/skadi_ice_v01_raw.png",
+        "raw_sha256": "a603c89ee0ee379b310ae85df95519f43bcd1aa719321b974287d21b432a000e",
+        "tool": "OpenAI built-in image_gen",
+        "generation_record": "records/generation_skadi_ice_v02.json",
+        "generation_link": null,
+        "link_note": "Built-in tool provides local output path, no public generation-session URL. Actual prompt and uploaded references retained in record.",
+        "references": [
+          "refs/effects_style.png"
+        ]
+      },
+      "selected_version": "v02",
+      "width": 64,
+      "height": 16,
+      "frame_size": [
+        64,
+        16
+      ],
+      "frames": 1,
+      "fps": null,
+      "anchor": [
+        0,
+        8
+      ],
+      "alpha_rule": "semi-transparent permitted by task G for scaled areas/strips",
+      "measurements": {
+        "frame_bboxes": [
+          [
+            0,
+            2,
+            64,
+            14
+          ]
+        ],
+        "rgb_colors": 27,
+        "rgba_values": 86,
+        "alpha_values": [
+          0,
+          16,
+          32,
+          48,
+          64,
+          80,
+          96,
+          112,
+          128,
+          144
+        ],
+        "padding_exception": "stretchable strip left/right ends"
+      },
+      "technical_checks": {
+        "exact_size": true,
+        "png_rgba": true,
+        "nonempty_all_frames": true,
+        "transparent_background": true,
+        "alpha_rule": true,
+        "palette_budget_32_rgb": true,
+        "padding": true,
+        "zero_rgb_where_alpha_zero": true,
+        "generation_record_exists": true
+      },
+      "visual_review": {
+        "version": "v02",
+        "status": "pass",
+        "reviewed": [
+          "native on #121721",
+          "nearest 4x",
+          "style reference comparison",
+          "no text/watermark/scene",
+          "right facing where applicable",
+          "4x length / 2x width stretch"
+        ],
+        "notes": "自然渐淡冰面带、少量裂纹；移除硬端块，拉伸后连续。"
+      },
+      "previews": {
+        "review": "previews/skadi_ice_v02_review.png",
+        "stretch": "previews/skadi_ice_v02_stretch.png"
+      },
+      "rejected_candidates": {
+        "v01": "端口出现不自然的平直色块。"
+      },
+      "status": "self_check_passed",
+      "game_test": "not_performed"
+    },
+    {
+      "id": "pickup_apple",
+      "file": "sprites/effects/gods/pickup_apple.png",
+      "approved": "approved/pickup_apple.png",
+      "candidate": "candidates/pickup_apple_v01.png",
+      "sha256": "fbf4887468e4a1be760c276a735d26116b7136438373e8988f7aa6f8384ce7ee",
+      "source": {
+        "raw": "originals/pickup_apple_v01_raw.png",
+        "raw_sha256": "95bc64649d12c5c0a53d8337285ed9b326dd59f34faaa937e8a4e8ceae5e81af",
+        "tool": "OpenAI built-in image_gen",
+        "generation_record": "records/generation_pickup_apple_v01.json",
+        "generation_link": null,
+        "link_note": "Built-in tool provides local output path, no public generation-session URL. Actual prompt and uploaded references retained in record.",
+        "references": [
+          "refs/effects_style.png"
+        ]
+      },
+      "selected_version": "v01",
+      "width": 16,
+      "height": 16,
+      "frame_size": [
+        16,
+        16
+      ],
+      "frames": 1,
+      "fps": null,
+      "anchor": [
+        8,
+        8
+      ],
+      "alpha_rule": "0 or255",
+      "measurements": {
+        "frame_bboxes": [
+          [
+            2,
+            2,
+            13,
+            14
+          ]
+        ],
+        "rgb_colors": 26,
+        "rgba_values": 26,
+        "alpha_values": [
+          0,
+          255
+        ],
+        "padding_exception": null
+      },
+      "technical_checks": {
+        "exact_size": true,
+        "png_rgba": true,
+        "nonempty_all_frames": true,
+        "transparent_background": true,
+        "alpha_rule": true,
+        "palette_budget_32_rgb": true,
+        "padding": true,
+        "zero_rgb_where_alpha_zero": true,
+        "generation_record_exists": true
+      },
+      "visual_review": {
+        "version": "v01",
+        "status": "pass",
+        "reviewed": [
+          "native on #121721",
+          "nearest 4x",
+          "style reference comparison",
+          "no text/watermark/scene",
+          "right facing where applicable"
+        ],
+        "notes": "16px金色苹果及绿叶，1倍可辨。"
+      },
+      "previews": {
+        "review": "previews/pickup_apple_v01_review.png"
+      },
+      "rejected_candidates": {},
+      "status": "self_check_passed",
+      "game_test": "not_performed"
+    }
+  ]
+}

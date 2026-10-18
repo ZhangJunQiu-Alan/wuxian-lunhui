@@ -1,0 +1,33 @@
+{
+  "raw_size": [
+    1254,
+    1254
+  ],
+  "source": "originals/loki_fire_patch_v01_raw.png",
+  "frame_boxes": [
+    [
+      62,
+      299,
+      1212,
+      1005
+    ]
+  ],
+  "target_perframe": [
+    64,
+    64
+  ],
+  "frames": 1,
+  "alpha": "preserve generatedalpha, quantized8levels/cappedforground",
+  "tool": "Pillow formatting only",
+  "common_scale": 0.05217391304347826,
+  "operation": "Equalcell cuts, whole silhouette crop, common nearest scale, shared32RGBpalette, anchorplacement; no bodyredrawing",
+  "placements": [
+    [
+      2,
+      13,
+      60,
+      37
+    ]
+  ],
+  "alpha_cap": 110
+}

@@ -1,0 +1,31 @@
+{
+  "status": "pass",
+  "file_count": 13,
+  "errors": [],
+  "all_technical_checks": true,
+  "candidate_approved_runtime_sha256_match": true,
+  "game_test": "not_performed",
+  "browser_review": "not_performed",
+  "animation_gifs": [
+    {
+      "id": "odin_raven",
+      "fps": 8.0,
+      "pixel_match": true
+    },
+    {
+      "id": "loki_wolf",
+      "fps": 8.0,
+      "pixel_match": true
+    },
+    {
+      "id": "loki_decoy",
+      "fps": 8.0,
+      "pixel_match": true
+    },
+    {
+      "id": "freyja_cat",
+      "fps": 8.0,
+      "pixel_match": true
+    }
+  ]
+}

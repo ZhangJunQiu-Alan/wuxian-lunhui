@@ -1,0 +1,42 @@
+{
+  "source": "originals/odin_raven_v04_raw.png",
+  "operations": [
+    "binary alpha",
+    "per-frame whole silhouette crop X, COMMON source Y bounds",
+    "common nearest scale",
+    "shared 32RGB palette"
+  ],
+  "source_frame_boxes": [
+    [
+      454,
+      147,
+      933,
+      563
+    ],
+    [
+      160,
+      349,
+      634,
+      648
+    ]
+  ],
+  "common_y": [
+    147,
+    648
+  ],
+  "placements": [
+    [
+      2,
+      2,
+      19,
+      20
+    ],
+    [
+      2,
+      2,
+      19,
+      20
+    ]
+  ],
+  "purpose": "Preserve generated fixed head/body Y through both wing poses; no body drawing"
+}

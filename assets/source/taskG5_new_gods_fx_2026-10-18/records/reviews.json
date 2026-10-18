@@ -1,0 +1,171 @@
+{
+  "baldr_beam": {
+    "version": "v01",
+    "status": "pass",
+    "reviewed": [
+      "native on #121721",
+      "nearest 4x",
+      "style reference comparison",
+      "no text/watermark/scene",
+      "right facing where applicable",
+      "4x length / 2x width stretch"
+    ],
+    "notes": "暖白金色亮芯及柔和侧缘；两端4列一致，4倍长2倍宽预览连续。"
+  },
+  "baldr_spear": {
+    "version": "v01",
+    "status": "pass",
+    "reviewed": [
+      "native on #121721",
+      "nearest 4x",
+      "style reference comparison",
+      "no text/watermark/scene",
+      "right facing where applicable",
+      "0/90/180 rotation"
+    ],
+    "notes": "金白光矛朝右，最右矛尖位于(56,8)。"
+  },
+  "baldr_glow": {
+    "version": "v02",
+    "status": "pass",
+    "reviewed": [
+      "native on #121721",
+      "nearest 4x",
+      "style reference comparison",
+      "no text/watermark/scene",
+      "right facing where applicable",
+      "4x length / 2x width stretch"
+    ],
+    "notes": "保留原图自然渐淡端部；整体比主光束暗且透明，拉伸后无硬端块。"
+  },
+  "ran_net": {
+    "version": "v01",
+    "status": "pass",
+    "reviewed": [
+      "native on #121721",
+      "nearest 4x",
+      "style reference comparison",
+      "no text/watermark/scene",
+      "right facing where applicable",
+      "Midgard ground: characters above and below effect; scale1 and1.6"
+    ],
+    "notes": "俯视蓝色圆形渔网、透明菱形孔及贝壳；地块叠加人物轮廓可辨。"
+  },
+  "ran_wave": {
+    "version": "v02",
+    "status": "pass",
+    "reviewed": [
+      "native on #121721",
+      "nearest 4x",
+      "style reference comparison",
+      "no text/watermark/scene",
+      "right facing where applicable",
+      "4x length / 2x width stretch"
+    ],
+    "notes": "蓝白浪头朝上；去掉排版产生的竖直端块，整段拉长后形状连续。"
+  },
+  "ran_whirl": {
+    "version": "v01",
+    "status": "pass",
+    "reviewed": [
+      "native on #121721",
+      "nearest 4x",
+      "style reference comparison",
+      "no text/watermark/scene",
+      "right facing where applicable",
+      "Midgard ground: characters above and below effect; scale1 and1.6"
+    ],
+    "notes": "深蓝与白色水纹漩涡；单张96px，整体淡入淡出由程序控制。"
+  },
+  "freyr_sword": {
+    "version": "v02",
+    "status": "pass",
+    "reviewed": [
+      "native on #121721",
+      "nearest 4x",
+      "style reference comparison",
+      "no text/watermark/scene",
+      "right facing where applicable",
+      "0/90/180 rotation"
+    ],
+    "notes": "第一稿缩小成细线而退回；新版绿金厚刃、金色护手，剑尖朝右。"
+  },
+  "freyr_boar": {
+    "version": "v01",
+    "status": "pass",
+    "reviewed": [
+      "native on #121721",
+      "nearest 4x",
+      "style reference comparison",
+      "no text/watermark/scene",
+      "right facing where applicable",
+      "all animation frames, body proportions, head alignment, first/last transition"
+    ],
+    "notes": "金鬃野猪朝右，两相冲锋；脚底统一y20，GIF平均12fps。"
+  },
+  "freyr_field": {
+    "version": "v01",
+    "status": "pass",
+    "reviewed": [
+      "native on #121721",
+      "nearest 4x",
+      "style reference comparison",
+      "no text/watermark/scene",
+      "right facing where applicable",
+      "Midgard ground: characters above and below effect; scale1 and1.6"
+    ],
+    "notes": "俯视圆形金色麦田，自然边缘、中心较淡；角色上下层叠加均可辨。"
+  },
+  "skadi_arrow": {
+    "version": "v04",
+    "status": "pass",
+    "reviewed": [
+      "native on #121721",
+      "nearest 4x",
+      "style reference comparison",
+      "no text/watermark/scene",
+      "right facing where applicable",
+      "0/90/180 rotation"
+    ],
+    "notes": "原稿v02重新取样，保留完整箭杆和箭羽；最终箭尖(28,4)。"
+  },
+  "skadi_blizzard": {
+    "version": "v01",
+    "status": "pass",
+    "reviewed": [
+      "native on #121721",
+      "nearest 4x",
+      "style reference comparison",
+      "no text/watermark/scene",
+      "right facing where applicable",
+      "0/90/180 rotation",
+      "Midgard ground: characters above and below effect; scale1 and1.6"
+    ],
+    "notes": "冰蓝雪片与风纹环，中心透明；旋转和地面叠加均已查看。"
+  },
+  "skadi_ice": {
+    "version": "v02",
+    "status": "pass",
+    "reviewed": [
+      "native on #121721",
+      "nearest 4x",
+      "style reference comparison",
+      "no text/watermark/scene",
+      "right facing where applicable",
+      "4x length / 2x width stretch"
+    ],
+    "notes": "自然渐淡冰面带、少量裂纹；移除硬端块，拉伸后连续。"
+  },
+  "pickup_apple": {
+    "version": "v01",
+    "status": "pass",
+    "reviewed": [
+      "native on #121721",
+      "nearest 4x",
+      "style reference comparison",
+      "no text/watermark/scene",
+      "right facing where applicable"
+    ],
+    "notes": "16px金色苹果及绿叶，1倍可辨。"
+  }
+}

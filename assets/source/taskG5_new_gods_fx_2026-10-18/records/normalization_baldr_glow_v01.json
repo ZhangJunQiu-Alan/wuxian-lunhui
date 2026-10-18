@@ -1,0 +1,24 @@
+{
+  "raw_size": [
+    1983,
+    793
+  ],
+  "source": "originals/baldr_glow_v01_raw.png",
+  "frame_boxes": [
+    [
+      0,
+      333,
+      1983,
+      485
+    ]
+  ],
+  "target_perframe": [
+    64,
+    16
+  ],
+  "frames": 1,
+  "alpha": "preserve generatedalpha, quantized8levels/cappedforground",
+  "tool": "Pillow formatting only",
+  "operation": "Whole strip nearest resize; identical4px sourcecolumn endports, transparent2px top/bottom",
+  "alpha_cap": 72
+}

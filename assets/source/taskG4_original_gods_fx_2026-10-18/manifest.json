@@ -1,0 +1,1174 @@
+{
+  "task": "G4",
+  "date": "2026-10-18",
+  "status": "published_after_art_self_check",
+  "scope": "G4/G5 pixel god effects only",
+  "game_test": "not_performed",
+  "browser_review": "not_performed; local browser control disabled in Work settings",
+  "tile_4x4": "not applicable: no ground tiles in G4/G5; use stretch and ground overlay previews instead",
+  "asset_count": 13,
+  "files": [
+    {
+      "id": "thor_hammer",
+      "file": "sprites/effects/gods/thor_hammer.png",
+      "approved": "approved/thor_hammer.png",
+      "candidate": "candidates/thor_hammer_v02.png",
+      "sha256": "4a143fdceac2e85c1303a42b0212b6eb69c5f2b2e4400cd55d6931dfb165d950",
+      "source": {
+        "raw": "originals/thor_hammer_v02_raw.png",
+        "raw_sha256": "339d5e55fc01105e21d0fec2435565d66436d8a4b4ea0700bc991ac5619ff1f3",
+        "tool": "OpenAI built-in image_gen",
+        "generation_record": "records/generation_thor_hammer_v02.json",
+        "generation_link": null,
+        "link_note": "Built-in tool provides local output path, no public generation-session URL. Actual prompt and uploaded references retained in record.",
+        "references": [
+          "refs/effects_style.png"
+        ]
+      },
+      "selected_version": "v02",
+      "width": 32,
+      "height": 32,
+      "frame_size": [
+        32,
+        32
+      ],
+      "frames": 1,
+      "fps": null,
+      "anchor": [
+        16,
+        16
+      ],
+      "alpha_rule": "0 or255",
+      "measurements": {
+        "frame_bboxes": [
+          [
+            2,
+            9,
+            30,
+            23
+          ]
+        ],
+        "rgb_colors": 26,
+        "rgba_values": 26,
+        "alpha_values": [
+          0,
+          255
+        ],
+        "padding_exception": null
+      },
+      "technical_checks": {
+        "exact_size": true,
+        "png_rgba": true,
+        "nonempty_all_frames": true,
+        "transparent_background": true,
+        "alpha_rule": true,
+        "palette_budget_32_rgb": true,
+        "padding": true,
+        "zero_rgb_where_alpha_zero": true,
+        "generation_record_exists": true
+      },
+      "visual_review": {
+        "version": "v02",
+        "status": "pass",
+        "reviewed": [
+          "native on #121721",
+          "nearest 4x",
+          "style reference comparison",
+          "no text/watermark/scene",
+          "right facing where applicable",
+          "0/90/180 rotation"
+        ],
+        "notes": "重做为方块锤头和短柄；锤头向右，旋转预览未见独立地面投影。"
+      },
+      "previews": {
+        "review": "previews/thor_hammer_v02_review.png",
+        "rotations": "previews/thor_hammer_v02_rotations.png"
+      },
+      "rejected_candidates": {
+        "v01": "缩小后锤头过窄，方头短柄特征不够明确。"
+      },
+      "status": "self_check_passed",
+      "game_test": "not_performed"
+    },
+    {
+      "id": "thor_cloud",
+      "file": "sprites/effects/gods/thor_cloud.png",
+      "approved": "approved/thor_cloud.png",
+      "candidate": "candidates/thor_cloud_v01.png",
+      "sha256": "46771823ba537d4592ca5d5087b2afd214e7d556313c1697ef99174c05c81bb8",
+      "source": {
+        "raw": "originals/thor_cloud_v01_raw.png",
+        "raw_sha256": "92fc456cf28a637269587188798962367ab63c2aff9e2523c013c9cee98d8051",
+        "tool": "OpenAI built-in image_gen",
+        "generation_record": "records/generation_thor_cloud_v01.json",
+        "generation_link": null,
+        "link_note": "Built-in tool provides local output path, no public generation-session URL. Actual prompt and uploaded references retained in record.",
+        "references": [
+          "refs/effects_style.png"
+        ]
+      },
+      "selected_version": "v01",
+      "width": 128,
+      "height": 64,
+      "frame_size": [
+        128,
+        64
+      ],
+      "frames": 1,
+      "fps": null,
+      "anchor": [
+        64,
+        32
+      ],
+      "alpha_rule": "0 or255",
+      "measurements": {
+        "frame_bboxes": [
+          [
+            2,
+            6,
+            126,
+            58
+          ]
+        ],
+        "rgb_colors": 27,
+        "rgba_values": 27,
+        "alpha_values": [
+          0,
+          255
+        ],
+        "padding_exception": null
+      },
+      "technical_checks": {
+        "exact_size": true,
+        "png_rgba": true,
+        "nonempty_all_frames": true,
+        "transparent_background": true,
+        "alpha_rule": true,
+        "palette_budget_32_rgb": true,
+        "padding": true,
+        "zero_rgb_where_alpha_zero": true,
+        "generation_record_exists": true
+      },
+      "visual_review": {
+        "version": "v01",
+        "status": "pass",
+        "reviewed": [
+          "native on #121721",
+          "nearest 4x",
+          "style reference comparison",
+          "no text/watermark/scene",
+          "right facing where applicable"
+        ],
+        "notes": "深灰云团及冰蓝电光；1倍可辨，边缘完整。"
+      },
+      "previews": {
+        "review": "previews/thor_cloud_v01_review.png"
+      },
+      "rejected_candidates": {},
+      "status": "self_check_passed",
+      "game_test": "not_performed"
+    },
+    {
+      "id": "odin_spear",
+      "file": "sprites/effects/gods/odin_spear.png",
+      "approved": "approved/odin_spear.png",
+      "candidate": "candidates/odin_spear_v01.png",
+      "sha256": "1c8b81380b3e61dab9255e5a7592ab961571c6ba136fe37e5b775e4a48e74815",
+      "source": {
+        "raw": "originals/odin_spear_v01_raw.png",
+        "raw_sha256": "4cd79938af93a6ab19ae0d3f4c12e7834fe0c91453b18ce916cf0afa881165b9",
+        "tool": "OpenAI built-in image_gen",
+        "generation_record": "records/generation_odin_spear_v01.json",
+        "generation_link": null,
+        "link_note": "Built-in tool provides local output path, no public generation-session URL. Actual prompt and uploaded references retained in record.",
+        "references": [
+          "refs/effects_style.png"
+        ]
+      },
+      "selected_version": "v01",
+      "width": 64,
+      "height": 16,
+      "frame_size": [
+        64,
+        16
+      ],
+      "frames": 1,
+      "fps": null,
+      "anchor": [
+        56,
+        8
+      ],
+      "alpha_rule": "0 or255",
+      "measurements": {
+        "frame_bboxes": [
+          [
+            2,
+            6,
+            57,
+            11
+          ]
+        ],
+        "rgb_colors": 24,
+        "rgba_values": 24,
+        "alpha_values": [
+          0,
+          255
+        ],
+        "padding_exception": null
+      },
+      "technical_checks": {
+        "exact_size": true,
+        "png_rgba": true,
+        "nonempty_all_frames": true,
+        "transparent_background": true,
+        "alpha_rule": true,
+        "palette_budget_32_rgb": true,
+        "padding": true,
+        "zero_rgb_where_alpha_zero": true,
+        "generation_record_exists": true,
+        "tip_on_anchor": true
+      },
+      "visual_review": {
+        "version": "v01",
+        "status": "pass",
+        "reviewed": [
+          "native on #121721",
+          "nearest 4x",
+          "style reference comparison",
+          "no text/watermark/scene",
+          "right facing where applicable",
+          "0/90/180 rotation"
+        ],
+        "notes": "紫色长枪朝右，最右枪尖精确位于(56,8)。"
+      },
+      "previews": {
+        "review": "previews/odin_spear_v01_review.png",
+        "rotations": "previews/odin_spear_v01_rotations.png"
+      },
+      "rejected_candidates": {},
+      "status": "self_check_passed",
+      "game_test": "not_performed"
+    },
+    {
+      "id": "odin_raven",
+      "file": "sprites/effects/gods/odin_raven.png",
+      "approved": "approved/odin_raven.png",
+      "candidate": "candidates/odin_raven_v05.png",
+      "sha256": "523a542fffee9fe05292dd50b825a993282312d65943ebf16086e24b089af7b0",
+      "source": {
+        "raw": "originals/odin_raven_v04_raw.png",
+        "raw_sha256": "b3ba30ce931cbed9a58cb5b0c26dbcd59f737facd592f81593c16c89deb655ca",
+        "tool": "OpenAI built-in image_gen",
+        "generation_record": "records/generation_odin_raven_v05.json",
+        "generation_link": null,
+        "link_note": "Built-in tool provides local output path, no public generation-session URL. Actual prompt and uploaded references retained in record.",
+        "references": [
+          "refs/effects_style.png"
+        ]
+      },
+      "selected_version": "v05",
+      "width": 48,
+      "height": 24,
+      "frame_size": [
+        24,
+        24
+      ],
+      "frames": 2,
+      "fps": 8,
+      "anchor": [
+        12,
+        12
+      ],
+      "alpha_rule": "0 or255",
+      "measurements": {
+        "frame_bboxes": [
+          [
+            2,
+            2,
+            21,
+            19
+          ],
+          [
+            2,
+            10,
+            21,
+            22
+          ]
+        ],
+        "rgb_colors": 25,
+        "rgba_values": 25,
+        "alpha_values": [
+          0,
+          255
+        ],
+        "padding_exception": null,
+        "gif_frames": 4,
+        "gif_duration_ms": [
+          120,
+          130,
+          130,
+          120
+        ],
+        "gif_average_fps": 8.0,
+        "gif_scale": 4
+      },
+      "technical_checks": {
+        "exact_size": true,
+        "png_rgba": true,
+        "nonempty_all_frames": true,
+        "transparent_background": true,
+        "alpha_rule": true,
+        "palette_budget_32_rgb": true,
+        "padding": true,
+        "zero_rgb_where_alpha_zero": true,
+        "generation_record_exists": true,
+        "distinct_frames": true,
+        "gif_pixels_match_sheet": true,
+        "gif_loops": true,
+        "gif_average_fps": true
+      },
+      "visual_review": {
+        "version": "v05",
+        "status": "pass",
+        "reviewed": [
+          "native on #121721",
+          "nearest 4x",
+          "style reference comparison",
+          "no text/watermark/scene",
+          "right facing where applicable",
+          "all animation frames, body proportions, head alignment, first/last transition"
+        ],
+        "notes": "重新生成大头短喙渡鸦，两帧共用原图纵向裁切范围；头身位置保持，翼上拍/下拍变化。"
+      },
+      "previews": {
+        "review": "previews/odin_raven_v05_review.png",
+        "gif": "previews/odin_raven_v05.gif"
+      },
+      "rejected_candidates": {
+        "v01": "头翼轮廓弱、原图分帧边界不干净。",
+        "v02": "独立裁切缩放导致头身纵向位置不同。",
+        "v03": "平移后仍显破碎、头喙在小尺寸下不够清楚。",
+        "v04": "原图可用，按各帧单独裁切排版会使头部上下跳动；改用v05共用纵向边界。"
+      },
+      "status": "self_check_passed",
+      "game_test": "not_performed"
+    },
+    {
+      "id": "odin_rune_circle",
+      "file": "sprites/effects/gods/odin_rune_circle.png",
+      "approved": "approved/odin_rune_circle.png",
+      "candidate": "candidates/odin_rune_circle_v01.png",
+      "sha256": "286138576830d33617e3fcff77ea31fe7f2729e896fcaef32e8b317172d4b003",
+      "source": {
+        "raw": "originals/odin_rune_circle_v01_raw.png",
+        "raw_sha256": "7c6ff2f42c4bed7028e308f5705e5bba38b5b2c993953057f7ccba366951336c",
+        "tool": "OpenAI built-in image_gen",
+        "generation_record": "records/generation_odin_rune_circle_v01.json",
+        "generation_link": null,
+        "link_note": "Built-in tool provides local output path, no public generation-session URL. Actual prompt and uploaded references retained in record.",
+        "references": [
+          "refs/effects_style.png"
+        ]
+      },
+      "selected_version": "v01",
+      "width": 96,
+      "height": 96,
+      "frame_size": [
+        96,
+        96
+      ],
+      "frames": 1,
+      "fps": null,
+      "anchor": [
+        48,
+        48
+      ],
+      "alpha_rule": "semi-transparent permitted by task G for scaled areas/strips",
+      "measurements": {
+        "frame_bboxes": [
+          [
+            2,
+            3,
+            94,
+            93
+          ]
+        ],
+        "rgb_colors": 27,
+        "rgba_values": 116,
+        "alpha_values": [
+          0,
+          16,
+          32,
+          48,
+          64,
+          80,
+          96,
+          112
+        ],
+        "padding_exception": null,
+        "fully_transparent_center_radius_exclusive": 24.0
+      },
+      "technical_checks": {
+        "exact_size": true,
+        "png_rgba": true,
+        "nonempty_all_frames": true,
+        "transparent_background": true,
+        "alpha_rule": true,
+        "palette_budget_32_rgb": true,
+        "padding": true,
+        "zero_rgb_where_alpha_zero": true,
+        "generation_record_exists": true,
+        "transparent_center_disk": true
+      },
+      "visual_review": {
+        "version": "v01",
+        "status": "pass",
+        "reviewed": [
+          "native on #121721",
+          "nearest 4x",
+          "style reference comparison",
+          "no text/watermark/scene",
+          "right facing where applicable",
+          "Midgard ground: characters above and below effect; scale1 and1.6"
+        ],
+        "notes": "紫色环和角形符号；中心透明，地块叠加可辨角色。"
+      },
+      "previews": {
+        "review": "previews/odin_rune_circle_v01_review.png",
+        "ground": "previews/odin_rune_circle_v01_ground.png"
+      },
+      "rejected_candidates": {},
+      "status": "self_check_passed",
+      "game_test": "not_performed"
+    },
+    {
+      "id": "loki_wolf",
+      "file": "sprites/effects/gods/loki_wolf.png",
+      "approved": "approved/loki_wolf.png",
+      "candidate": "candidates/loki_wolf_v04.png",
+      "sha256": "32c9c603d7cde4c620e07704a2df3e42b50c9587e4cae4f4729edd94d7bef13f",
+      "source": {
+        "raw": "originals/loki_wolf_v04_raw.png",
+        "raw_sha256": "d14df2a49e83c7ab76764aad2a305fc2aa1fb66db2ad12c108512cef1d39a79b",
+        "tool": "OpenAI built-in image_gen",
+        "generation_record": "records/generation_loki_wolf_v04.json",
+        "generation_link": null,
+        "link_note": "Built-in tool provides local output path, no public generation-session URL. Actual prompt and uploaded references retained in record.",
+        "references": [
+          "refs/effects_style.png"
+        ]
+      },
+      "selected_version": "v04",
+      "width": 64,
+      "height": 32,
+      "frame_size": [
+        32,
+        32
+      ],
+      "frames": 2,
+      "fps": 8,
+      "anchor": [
+        16,
+        24
+      ],
+      "alpha_rule": "0 or255",
+      "measurements": {
+        "frame_bboxes": [
+          [
+            2,
+            10,
+            30,
+            25
+          ],
+          [
+            2,
+            10,
+            30,
+            25
+          ]
+        ],
+        "rgb_colors": 30,
+        "rgba_values": 30,
+        "alpha_values": [
+          0,
+          255
+        ],
+        "padding_exception": null,
+        "gif_frames": 4,
+        "gif_duration_ms": [
+          120,
+          130,
+          130,
+          120
+        ],
+        "gif_average_fps": 8.0,
+        "gif_scale": 4
+      },
+      "technical_checks": {
+        "exact_size": true,
+        "png_rgba": true,
+        "nonempty_all_frames": true,
+        "transparent_background": true,
+        "alpha_rule": true,
+        "palette_budget_32_rgb": true,
+        "padding": true,
+        "zero_rgb_where_alpha_zero": true,
+        "generation_record_exists": true,
+        "baseline_matches_anchor": true,
+        "distinct_frames": true,
+        "gif_pixels_match_sheet": true,
+        "gif_loops": true,
+        "gif_average_fps": true
+      },
+      "visual_review": {
+        "version": "v04",
+        "status": "pass",
+        "reviewed": [
+          "native on #121721",
+          "nearest 4x",
+          "style reference comparison",
+          "no text/watermark/scene",
+          "right facing where applicable",
+          "all animation frames, body proportions, head alignment, first/last transition"
+        ],
+        "notes": "前三稿退回；第四原稿连续青绿色躯干、少量橙色火尖，伸腿/收腿，脚底统一y24。"
+      },
+      "previews": {
+        "review": "previews/loki_wolf_v04_review.png",
+        "gif": "previews/loki_wolf_v04.gif"
+      },
+      "rejected_candidates": {
+        "v01": "火星相连、帧边界不干净，躯干破碎。",
+        "v02": "原图幼狼贴边，分帧会切到嘴部。",
+        "v03": "缩小后躯干仍过于破碎。"
+      },
+      "status": "self_check_passed",
+      "game_test": "not_performed"
+    },
+    {
+      "id": "loki_decoy",
+      "file": "sprites/effects/gods/loki_decoy.png",
+      "approved": "approved/loki_decoy.png",
+      "candidate": "candidates/loki_decoy_v01.png",
+      "sha256": "f703cf340028d13d49285d168cacc770c9a0989efa1c979d86c57a06508d61e4",
+      "source": {
+        "raw": "originals/loki_decoy_v01_raw.png",
+        "raw_sha256": "cb3647ca53369142e79bf3e0a528a1198a33b8e45c2aa1d0f73b03fd62fd38a9",
+        "tool": "OpenAI built-in image_gen",
+        "generation_record": "records/generation_loki_decoy_v01.json",
+        "generation_link": null,
+        "link_note": "Built-in tool provides local output path, no public generation-session URL. Actual prompt and uploaded references retained in record.",
+        "references": [
+          "refs/effects_style.png"
+        ]
+      },
+      "selected_version": "v01",
+      "width": 128,
+      "height": 48,
+      "frame_size": [
+        32,
+        48
+      ],
+      "frames": 4,
+      "fps": 8,
+      "anchor": [
+        16,
+        44
+      ],
+      "alpha_rule": "0 or255",
+      "measurements": {
+        "frame_bboxes": [
+          [
+            5,
+            2,
+            27,
+            45
+          ],
+          [
+            5,
+            3,
+            27,
+            45
+          ],
+          [
+            5,
+            3,
+            27,
+            45
+          ],
+          [
+            5,
+            4,
+            27,
+            45
+          ]
+        ],
+        "rgb_colors": 29,
+        "rgba_values": 29,
+        "alpha_values": [
+          0,
+          255
+        ],
+        "padding_exception": null,
+        "gif_frames": 8,
+        "gif_duration_ms": [
+          120,
+          130,
+          130,
+          120,
+          120,
+          130,
+          130,
+          120
+        ],
+        "gif_average_fps": 8.0,
+        "gif_scale": 4
+      },
+      "technical_checks": {
+        "exact_size": true,
+        "png_rgba": true,
+        "nonempty_all_frames": true,
+        "transparent_background": true,
+        "alpha_rule": true,
+        "palette_budget_32_rgb": true,
+        "padding": true,
+        "zero_rgb_where_alpha_zero": true,
+        "generation_record_exists": true,
+        "baseline_matches_anchor": true,
+        "distinct_frames": true,
+        "gif_pixels_match_sheet": true,
+        "gif_loops": true,
+        "gif_average_fps": true
+      },
+      "visual_review": {
+        "version": "v01",
+        "status": "pass",
+        "reviewed": [
+          "native on #121721",
+          "nearest 4x",
+          "style reference comparison",
+          "no text/watermark/scene",
+          "right facing where applicable",
+          "all animation frames, body proportions, head alignment, first/last transition"
+        ],
+        "notes": "四帧青绿橙色火焰人形；火苗变化、脚底统一y44，不含实体服装武器。"
+      },
+      "previews": {
+        "review": "previews/loki_decoy_v01_review.png",
+        "gif": "previews/loki_decoy_v01.gif"
+      },
+      "rejected_candidates": {},
+      "status": "self_check_passed",
+      "game_test": "not_performed"
+    },
+    {
+      "id": "loki_fire_patch",
+      "file": "sprites/effects/gods/loki_fire_patch.png",
+      "approved": "approved/loki_fire_patch.png",
+      "candidate": "candidates/loki_fire_patch_v01.png",
+      "sha256": "a5773032ad2af278c32e3079399b7c8c4205cb0cc8f90b12a1a784c81d3f4ec4",
+      "source": {
+        "raw": "originals/loki_fire_patch_v01_raw.png",
+        "raw_sha256": "f98723413eec457b1337116b24f45a77fd8c7cfa79b29b267123ede6c9485f2e",
+        "tool": "OpenAI built-in image_gen",
+        "generation_record": "records/generation_loki_fire_patch_v01.json",
+        "generation_link": null,
+        "link_note": "Built-in tool provides local output path, no public generation-session URL. Actual prompt and uploaded references retained in record.",
+        "references": [
+          "refs/effects_style.png"
+        ]
+      },
+      "selected_version": "v01",
+      "width": 64,
+      "height": 64,
+      "frame_size": [
+        64,
+        64
+      ],
+      "frames": 1,
+      "fps": null,
+      "anchor": [
+        32,
+        32
+      ],
+      "alpha_rule": "semi-transparent permitted by task G for scaled areas/strips",
+      "measurements": {
+        "frame_bboxes": [
+          [
+            2,
+            14,
+            62,
+            50
+          ]
+        ],
+        "rgb_colors": 29,
+        "rgba_values": 84,
+        "alpha_values": [
+          0,
+          16,
+          32,
+          48,
+          64,
+          80,
+          96,
+          112
+        ],
+        "padding_exception": null
+      },
+      "technical_checks": {
+        "exact_size": true,
+        "png_rgba": true,
+        "nonempty_all_frames": true,
+        "transparent_background": true,
+        "alpha_rule": true,
+        "palette_budget_32_rgb": true,
+        "padding": true,
+        "zero_rgb_where_alpha_zero": true,
+        "generation_record_exists": true
+      },
+      "visual_review": {
+        "version": "v01",
+        "status": "pass",
+        "reviewed": [
+          "native on #121721",
+          "nearest 4x",
+          "style reference comparison",
+          "no text/watermark/scene",
+          "right facing where applicable",
+          "Midgard ground: characters above and below effect; scale1 and1.6"
+        ],
+        "notes": "青绿与橙色诡火，低透明度；叠在角色上方仍可辨其轮廓。"
+      },
+      "previews": {
+        "review": "previews/loki_fire_patch_v01_review.png",
+        "ground": "previews/loki_fire_patch_v01_ground.png"
+      },
+      "rejected_candidates": {},
+      "status": "self_check_passed",
+      "game_test": "not_performed"
+    },
+    {
+      "id": "freyja_cat",
+      "file": "sprites/effects/gods/freyja_cat.png",
+      "approved": "approved/freyja_cat.png",
+      "candidate": "candidates/freyja_cat_v01.png",
+      "sha256": "d6ca2191fbf66cce738db8ff63c5e05c8e4a449fd4cbcceb9b7ed8b0342573c4",
+      "source": {
+        "raw": "originals/freyja_cat_v01_raw.png",
+        "raw_sha256": "5bcde420cd5aaed55b1bcb1ba4cba666799dd4626bed358c85ebc3f634650040",
+        "tool": "OpenAI built-in image_gen",
+        "generation_record": "records/generation_freyja_cat_v01.json",
+        "generation_link": null,
+        "link_note": "Built-in tool provides local output path, no public generation-session URL. Actual prompt and uploaded references retained in record.",
+        "references": [
+          "refs/effects_style.png"
+        ]
+      },
+      "selected_version": "v01",
+      "width": 48,
+      "height": 24,
+      "frame_size": [
+        24,
+        24
+      ],
+      "frames": 2,
+      "fps": 8,
+      "anchor": [
+        12,
+        18
+      ],
+      "alpha_rule": "0 or255",
+      "measurements": {
+        "frame_bboxes": [
+          [
+            2,
+            6,
+            22,
+            19
+          ],
+          [
+            2,
+            6,
+            21,
+            19
+          ]
+        ],
+        "rgb_colors": 29,
+        "rgba_values": 29,
+        "alpha_values": [
+          0,
+          255
+        ],
+        "padding_exception": null,
+        "gif_frames": 4,
+        "gif_duration_ms": [
+          120,
+          130,
+          130,
+          120
+        ],
+        "gif_average_fps": 8.0,
+        "gif_scale": 4
+      },
+      "technical_checks": {
+        "exact_size": true,
+        "png_rgba": true,
+        "nonempty_all_frames": true,
+        "transparent_background": true,
+        "alpha_rule": true,
+        "palette_budget_32_rgb": true,
+        "padding": true,
+        "zero_rgb_where_alpha_zero": true,
+        "generation_record_exists": true,
+        "baseline_matches_anchor": true,
+        "distinct_frames": true,
+        "gif_pixels_match_sheet": true,
+        "gif_loops": true,
+        "gif_average_fps": true
+      },
+      "visual_review": {
+        "version": "v01",
+        "status": "pass",
+        "reviewed": [
+          "native on #121721",
+          "nearest 4x",
+          "style reference comparison",
+          "no text/watermark/scene",
+          "right facing where applicable",
+          "all animation frames, body proportions, head alignment, first/last transition"
+        ],
+        "notes": "灰白战猫朝右，伸腿/收腿两相，脚底统一y18。"
+      },
+      "previews": {
+        "review": "previews/freyja_cat_v01_review.png",
+        "gif": "previews/freyja_cat_v01.gif"
+      },
+      "rejected_candidates": {},
+      "status": "self_check_passed",
+      "game_test": "not_performed"
+    },
+    {
+      "id": "freyja_chariot",
+      "file": "sprites/effects/gods/freyja_chariot.png",
+      "approved": "approved/freyja_chariot.png",
+      "candidate": "candidates/freyja_chariot_v01.png",
+      "sha256": "432d4cb590429fc99a338e0ff68195476c3ec3739055cba7e4eaa9e5c7620b66",
+      "source": {
+        "raw": "originals/freyja_chariot_v01_raw.png",
+        "raw_sha256": "f58a5f0d2b661f611faf2bd7dab1376242c3f26176ec3e97f8984023e22e0325",
+        "tool": "OpenAI built-in image_gen",
+        "generation_record": "records/generation_freyja_chariot_v01.json",
+        "generation_link": null,
+        "link_note": "Built-in tool provides local output path, no public generation-session URL. Actual prompt and uploaded references retained in record.",
+        "references": [
+          "refs/effects_style.png"
+        ]
+      },
+      "selected_version": "v01",
+      "width": 96,
+      "height": 48,
+      "frame_size": [
+        96,
+        48
+      ],
+      "frames": 1,
+      "fps": null,
+      "anchor": [
+        48,
+        32
+      ],
+      "alpha_rule": "0 or255",
+      "measurements": {
+        "frame_bboxes": [
+          [
+            2,
+            5,
+            94,
+            33
+          ]
+        ],
+        "rgb_colors": 30,
+        "rgba_values": 30,
+        "alpha_values": [
+          0,
+          255
+        ],
+        "padding_exception": null
+      },
+      "technical_checks": {
+        "exact_size": true,
+        "png_rgba": true,
+        "nonempty_all_frames": true,
+        "transparent_background": true,
+        "alpha_rule": true,
+        "palette_budget_32_rgb": true,
+        "padding": true,
+        "zero_rgb_where_alpha_zero": true,
+        "generation_record_exists": true,
+        "baseline_matches_anchor": true
+      },
+      "visual_review": {
+        "version": "v01",
+        "status": "pass",
+        "reviewed": [
+          "native on #121721",
+          "nearest 4x",
+          "style reference comparison",
+          "no text/watermark/scene",
+          "right facing where applicable"
+        ],
+        "notes": "两只灰白猫拉金色空战车朝右；轮/脚底落y32，无驾驶人物。"
+      },
+      "previews": {
+        "review": "previews/freyja_chariot_v01_review.png"
+      },
+      "rejected_candidates": {},
+      "status": "self_check_passed",
+      "game_test": "not_performed"
+    },
+    {
+      "id": "freyja_ring",
+      "file": "sprites/effects/gods/freyja_ring.png",
+      "approved": "approved/freyja_ring.png",
+      "candidate": "candidates/freyja_ring_v01.png",
+      "sha256": "63fdf5560ee273789d6fe8888beb67c8241c2852e3d9b463723dc7491f2245b4",
+      "source": {
+        "raw": "originals/freyja_ring_v01_raw.png",
+        "raw_sha256": "5d974a4e890cd8a598491d1cd2ca1a898f80120fbd48fe29e2bf526a327783e3",
+        "tool": "OpenAI built-in image_gen",
+        "generation_record": "records/generation_freyja_ring_v01.json",
+        "generation_link": null,
+        "link_note": "Built-in tool provides local output path, no public generation-session URL. Actual prompt and uploaded references retained in record.",
+        "references": [
+          "refs/effects_style.png"
+        ]
+      },
+      "selected_version": "v01",
+      "width": 128,
+      "height": 128,
+      "frame_size": [
+        128,
+        128
+      ],
+      "frames": 1,
+      "fps": null,
+      "anchor": [
+        64,
+        64
+      ],
+      "alpha_rule": "semi-transparent permitted by task G for scaled areas/strips",
+      "measurements": {
+        "frame_bboxes": [
+          [
+            2,
+            4,
+            126,
+            124
+          ]
+        ],
+        "rgb_colors": 24,
+        "rgba_values": 98,
+        "alpha_values": [
+          0,
+          16,
+          32,
+          48,
+          64,
+          80,
+          96,
+          112
+        ],
+        "padding_exception": null,
+        "fully_transparent_center_radius_exclusive": 32.55764119219941
+      },
+      "technical_checks": {
+        "exact_size": true,
+        "png_rgba": true,
+        "nonempty_all_frames": true,
+        "transparent_background": true,
+        "alpha_rule": true,
+        "palette_budget_32_rgb": true,
+        "padding": true,
+        "zero_rgb_where_alpha_zero": true,
+        "generation_record_exists": true,
+        "transparent_center_disk": true
+      },
+      "visual_review": {
+        "version": "v01",
+        "status": "pass",
+        "reviewed": [
+          "native on #121721",
+          "nearest 4x",
+          "style reference comparison",
+          "no text/watermark/scene",
+          "right facing where applicable",
+          "Midgard ground: characters above and below effect; scale1 and1.6"
+        ],
+        "notes": "金色链节构成环形；中心透明，地块叠加不遮住角色。"
+      },
+      "previews": {
+        "review": "previews/freyja_ring_v01_review.png",
+        "ground": "previews/freyja_ring_v01_ground.png"
+      },
+      "rejected_candidates": {},
+      "status": "self_check_passed",
+      "game_test": "not_performed"
+    },
+    {
+      "id": "pickup_feather",
+      "file": "sprites/effects/gods/pickup_feather.png",
+      "approved": "approved/pickup_feather.png",
+      "candidate": "candidates/pickup_feather_v01.png",
+      "sha256": "4aada24fb40f67df2151185dd5b648528d9d121ceb3aab9b2d1b529b59e3ab9a",
+      "source": {
+        "raw": "originals/pickup_feather_v01_raw.png",
+        "raw_sha256": "4adf45a7cd9e059020a83daaeac474e421c1917d41acacae8593b674ce7e4f04",
+        "tool": "OpenAI built-in image_gen",
+        "generation_record": "records/generation_pickup_feather_v01.json",
+        "generation_link": null,
+        "link_note": "Built-in tool provides local output path, no public generation-session URL. Actual prompt and uploaded references retained in record.",
+        "references": [
+          "refs/effects_style.png"
+        ]
+      },
+      "selected_version": "v01",
+      "width": 16,
+      "height": 16,
+      "frame_size": [
+        16,
+        16
+      ],
+      "frames": 1,
+      "fps": null,
+      "anchor": [
+        8,
+        8
+      ],
+      "alpha_rule": "0 or255",
+      "measurements": {
+        "frame_bboxes": [
+          [
+            2,
+            2,
+            14,
+            14
+          ]
+        ],
+        "rgb_colors": 19,
+        "rgba_values": 19,
+        "alpha_values": [
+          0,
+          255
+        ],
+        "padding_exception": null
+      },
+      "technical_checks": {
+        "exact_size": true,
+        "png_rgba": true,
+        "nonempty_all_frames": true,
+        "transparent_background": true,
+        "alpha_rule": true,
+        "palette_budget_32_rgb": true,
+        "padding": true,
+        "zero_rgb_where_alpha_zero": true,
+        "generation_record_exists": true
+      },
+      "visual_review": {
+        "version": "v01",
+        "status": "pass",
+        "reviewed": [
+          "native on #121721",
+          "nearest 4x",
+          "style reference comparison",
+          "no text/watermark/scene",
+          "right facing where applicable"
+        ],
+        "notes": "16px金色羽毛，斜向，1倍可辨。"
+      },
+      "previews": {
+        "review": "previews/pickup_feather_v01_review.png"
+      },
+      "rejected_candidates": {},
+      "status": "self_check_passed",
+      "game_test": "not_performed"
+    },
+    {
+      "id": "pickup_tear",
+      "file": "sprites/effects/gods/pickup_tear.png",
+      "approved": "approved/pickup_tear.png",
+      "candidate": "candidates/pickup_tear_v01.png",
+      "sha256": "487e8ced3d776630edccfbfd3d57917586d4bb89e715ae8116c7014f1d56daee",
+      "source": {
+        "raw": "originals/pickup_tear_v01_raw.png",
+        "raw_sha256": "68bf272aa99f7cb4ff236be4a53622ff53cce140ddcccfa0a8a0c629fcae3935",
+        "tool": "OpenAI built-in image_gen",
+        "generation_record": "records/generation_pickup_tear_v01.json",
+        "generation_link": null,
+        "link_note": "Built-in tool provides local output path, no public generation-session URL. Actual prompt and uploaded references retained in record.",
+        "references": [
+          "refs/effects_style.png"
+        ]
+      },
+      "selected_version": "v01",
+      "width": 16,
+      "height": 16,
+      "frame_size": [
+        16,
+        16
+      ],
+      "frames": 1,
+      "fps": null,
+      "anchor": [
+        8,
+        8
+      ],
+      "alpha_rule": "0 or255",
+      "measurements": {
+        "frame_bboxes": [
+          [
+            4,
+            3,
+            12,
+            14
+          ]
+        ],
+        "rgb_colors": 18,
+        "rgba_values": 18,
+        "alpha_values": [
+          0,
+          255
+        ],
+        "padding_exception": null
+      },
+      "technical_checks": {
+        "exact_size": true,
+        "png_rgba": true,
+        "nonempty_all_frames": true,
+        "transparent_background": true,
+        "alpha_rule": true,
+        "palette_budget_32_rgb": true,
+        "padding": true,
+        "zero_rgb_where_alpha_zero": true,
+        "generation_record_exists": true
+      },
+      "visual_review": {
+        "version": "v01",
+        "status": "pass",
+        "reviewed": [
+          "native on #121721",
+          "nearest 4x",
+          "style reference comparison",
+          "no text/watermark/scene",
+          "right facing where applicable"
+        ],
+        "notes": "16px竖直金色泪滴，二值透明，无外部光晕。"
+      },
+      "previews": {
+        "review": "previews/pickup_tear_v01_review.png"
+      },
+      "rejected_candidates": {},
+      "status": "self_check_passed",
+      "game_test": "not_performed"
+    }
+  ]
+}

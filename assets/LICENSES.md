@@ -156,3 +156,21 @@ Claude 验收（2026-10-16）：第 6 批 34 项已接入并在 Godot 内实测�
 ### 任务 E 交付补记（2026-10-17）
 
 第2关地图91项完成本代理美术自检（9边界/转角/洞口、6地块、36过渡、28物件、12贴花），已复制到对应sprites/*/helheim/。实际使用用户已批准的内置image_gen共65次，65张原始PNG、真实Prompt、项目自有参考与失败版本均保存在source/taskE_helheim_map_2026-10-17/；没有新增第三方作品造型。商用及输出所有权沿用本台账已核验的OpenAI条款：https://openai.com/policies/terms-of-use/ 。免费Chrome Piskel实际统一熄灭/点亮灵魂灯的固定像素并手绘小磷火，工程和PNG导出归档；冰下剑影的Piskel修正v06未通过并保留为失败稿，最终浅冰v07由内置工具编辑项目自有地块完成。Piskel用户保留作品权利：https://www.piskelapp.com/terms/ 。Pillow沿用MIT-CMU，仅作最近邻尺寸、二值alpha、既有/限定色表、整块裁排、源像素最小误差重叠拼接、透明裁切、预览及检查，没有在Python重画角色；金桥整块桥面及栏杆分别最近邻排布，36过渡仅改变最终地块alpha、同坐标RGB不变。91张正式文件、approved与候选SHA256一致，尺寸/RGBA/alpha0或255/共享色表/来源链接及普通物件2px留白核验通过；色表预算48、实际最终RGB并集47。逐项记录见本批manifest.json、records/reviews.json、audit.json、final_audit.json及source_inventory.json。已查看1×/4×、6张4×4、冥河混铺、完整边界含四角和洞口、36过渡组装与1280×720角色合成；Chrome验收页实际加载91项182个画布，6张平铺图无加载失败，分类筛选可用。map_scroll.gif为静态合成的窗口移动检查，不是游戏动画；合成不代表最终地图布局。无新增账号、注册、付款或收费API；未修改代码或游戏场景，未提交git，尚未Godot实测，待Claude接入、配置碰撞遮挡并验收。
+
+
+### 任务 G4、G5：神术像素特效开工（2026-10-18）
+
+用户明确分配本任务负责G4和G5，共26文件。独立目录source/taskG4_original_gods_fx_2026-10-18及source/taskG5_new_gods_fx_2026-10-18。沿用任务书允许并经用户批准的内置image_gen、已核验OpenAI输出所有权及商用依据：https://openai.com/policies/terms-of-use/ 。仅上传项目自有特效与本批生成稿；提示词只描述物件和外观，不含人物名或外部作品名。若需修正使用既有免费Piskel用户保留作品权利条款：https://www.piskelapp.com/terms/ 。Pillow沿用MIT-CMU用于尺寸、alpha、色表、裁排、整帧定位、预览和核验，不重画角色。缩放区域按G4/G5专门规定允许半透明；其他图保持二值alpha。无注册、付款或收费API；当前开工记录不表示通过验收。
+
+### 任务G1～G3：信仰画像制作开工（2026-10-18）
+
+用户指定制作G1、G2、G3，共12张厚涂插画；三个子任务独立source目录。沿用任务书第二节已批准内置image_gen及本台账已核验的OpenAI内容输出商业使用与所有权依据：https://openai.com/policies/terms-of-use/ 。仅上传项目已有四神画像及本批自产普通画像作参考；提示词仅描述外观，不写人物/作品/画师名。Pillow沿用MIT-CMU，仅作RGB/尺寸规范化、Lanczos缩小、预览和检查，不重画插画。原图、实际提示词、参考、失败稿和自检逐项记录；不注册、付费或使用收费API。本条为开工登记，不代表验收。
+
+
+### 任务 G4、G5 交付补记（2026-10-18）
+
+G4、G5各13个PNG，共26文件完成本代理美术自检，已复制至sprites/effects/gods/。34张互不重复的生成原图（G4为19张、G5为15张）、实际Prompt、输入参考、格式修正、失败候选、1倍/4倍预览、旋转/拉伸/地块叠加及SHA256保存在source/taskG4_original_gods_fx_2026-10-18/和source/taskG5_new_gods_fx_2026-10-18/。实际使用用户已批准的OpenAI内置image_gen，沿用已核验内容输出所有权及商业使用依据：https://openai.com/policies/terms-of-use/ 。仅上传项目自有素材及本批自产候选，无外部作品人物参考，提示词无人物或作品名。Pillow沿用MIT-CMU，仅作最近邻尺寸、alpha、32RGB限色、整帧裁排/定位、预览和核验，没有在Python重画角色、武器或特效。G4/G5未实际使用Piskel。5条横向动画：渡鸦、幼狼、分身、战猫8fps，野猪12fps；各4倍GIF解码像素与PNG逐帧一致，整周期平均帧率准确。26张正式文件/approved/候选SHA256一致；每图尺寸、PNG RGBA、透明底、2px留白（拉伸条左右端除外）、枪/箭尖及脚底锚点核验通过，实际每图非透明RGB不超过31色。地面区域与条带按任务G专门规定允许半透明，其余alpha仅0/255；本批无地块，4×4平铺不适用。浏览器控制被Work设置禁用，Chrome图集实测未完成；仅完成本地文件、解码帧、相对链接和JavaScript语法核验。无新注册、付款、收费API、代码/场景修改或git提交；尚未Godot实测，待Claude接入验收。
+
+### 任务G1～G3交付补记（2026-10-18）
+
+G1、G2、G3各4张，共12张厚涂非像素画像完成本代理美术自检并复制到sprites/cards/，均PNG RGB720×1200。三个独立目录source/taskG1_light_sea_2026-10-18、taskG2_harvest_hunt_2026-10-18、taskG3_original_awaken_2026-10-18分别保留7/11/6张原始生成图，共24张，其中12份退回稿均记录原因。新四神普通画像上传项目自有原四神卡作画风参考；觉醒版直接编辑对应普通画像，只用项目自有输入，无外部角色造型，提示词不含人物或作品/画师名。工具沿用已批准内置image_gen和已核验OpenAI输出商业使用/所有权依据：https://openai.com/policies/terms-of-use/ ；Pillow沿用MIT-CMU，仅作RGB/尺寸、Lanczos缩小、预览、120级离线PNG尺寸链及核验，不在Python重画角色。原图、实际Prompt、输入参考快照/哈希、选中/退回记录及检查见各组manifest.json、records/generation_jobs.json和final_audit.json。实际查看原图手/脸/武器与动物、260×433、下45%90%深色遮罩、旧四神对照及普通/觉醒配对；文件格式、正式/approved/候选哈希、原图及参考哈希、每组40级尺寸链和本地gallery链接审计全部零错误；原四神普通卡与参考快照字节一致。此前磁盘满仅暂停写入，用户清理后已补齐交付，未删除原图或失败稿。没有新增注册、付费、收费API、脚本/场景/项目设置修改或Git提交。未配置Godot导入mipmap、未游戏实测；由用户/代码代理接入、设置平滑过滤并验收。

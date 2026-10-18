@@ -1,0 +1,32 @@
+{
+  "raw_size": [
+    2172,
+    724
+  ],
+  "source": "originals/skadi_arrow_v01_raw.png",
+  "frame_boxes": [
+    [
+      252,
+      265,
+      1920,
+      451
+    ]
+  ],
+  "target_perframe": [
+    32,
+    8
+  ],
+  "frames": 1,
+  "alpha": "binary128threshold",
+  "tool": "Pillow formatting only",
+  "common_scale": 0.016786570743405275,
+  "operation": "Equalcell cuts, whole silhouette crop, common nearest scale, shared32RGBpalette, anchorplacement; no bodyredrawing",
+  "placements": [
+    [
+      1,
+      3,
+      28,
+      3
+    ]
+  ]
+}

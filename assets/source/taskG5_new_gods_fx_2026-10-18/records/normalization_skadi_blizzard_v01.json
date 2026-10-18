@@ -1,0 +1,33 @@
+{
+  "raw_size": [
+    1536,
+    1024
+  ],
+  "source": "originals/skadi_blizzard_v01_raw.png",
+  "frame_boxes": [
+    [
+      279,
+      31,
+      1272,
+      983
+    ]
+  ],
+  "target_perframe": [
+    128,
+    128
+  ],
+  "frames": 1,
+  "alpha": "preserve generatedalpha, quantized8levels/cappedforground",
+  "tool": "Pillow formatting only",
+  "common_scale": 0.12487411883182276,
+  "operation": "Equalcell cuts, whole silhouette crop, common nearest scale, shared32RGBpalette, anchorplacement; no bodyredrawing",
+  "placements": [
+    [
+      2,
+      4,
+      124,
+      119
+    ]
+  ],
+  "alpha_cap": 110
+}

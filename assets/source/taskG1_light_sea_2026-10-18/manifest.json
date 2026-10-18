@@ -1,0 +1,217 @@
+{
+  "task": "G1",
+  "date": "2026-10-18",
+  "status": "four_art_self_check_passed_pending_game_review",
+  "expected_count": 4,
+  "delivered_count": 4,
+  "generation_calls": 7,
+  "rejected_candidates": [
+    {
+      "id": "baldr",
+      "version": "v01",
+      "file": "originals/baldr_v01.png",
+      "reason": "发色偏金，修正为白金。"
+    },
+    {
+      "id": "ran_awaken",
+      "version": "v01",
+      "file": "originals/ran_awaken_v01.png",
+      "reason": "金网发光不足，补足金光并抬网中心。"
+    },
+    {
+      "id": "ran",
+      "version": "v01",
+      "file": "originals/ran_v01.png",
+      "reason": "渔网/遗物过低，双手与网收紧上移。"
+    }
+  ],
+  "files": [
+    {
+      "id": "baldr",
+      "version": "v02",
+      "status": "art_self_check_passed_pending_game_review",
+      "runtime_file": "assets/sprites/cards/baldr.png",
+      "approved_file": "approved/baldr.png",
+      "candidate_file": "candidates/baldr.png",
+      "original_file": "originals/baldr_v02.png",
+      "size": [
+        720,
+        1200
+      ],
+      "mode": "RGB",
+      "frames": 1,
+      "color_count": 149277,
+      "sha256": "85328fed93ed46d1e18e81e40972d657673905e9a597d40d741e93ed01151c6c",
+      "backup": null,
+      "source": "Built-in OpenAI imagegen, project-owned references only",
+      "tools": [
+        "image_gen.imagegen",
+        "Pillow12.1.1 resize/RGB/preview only"
+      ],
+      "generation_url": null,
+      "generation_record": "records/generation_jobs.json",
+      "checks": {
+        "png_rgb_720x1200": true,
+        "readable_at_260x433": true,
+        "main_identifiers_survive_lower45_90percent_overlay": true,
+        "critical_face_weapon_tips_in_side_safe_area": true,
+        "upper_left_light_shared_oil_style": true,
+        "lower40_dark_subdued": true,
+        "no_obvious_anatomy_or_weapon_errors_observed": true,
+        "no_text_frame_signature_watermark_observed": true,
+        "normal_awaken_identity_consistent": true
+      },
+      "visual_review": "白金及肩发、柔和稍悲伤面部、白浅金衣甲、持光与槲寄生。",
+      "lower40_mean_luma_0_255": 28.362152777777776,
+      "previews": {
+        "260": "previews/baldr_260.png",
+        "masked": "previews/baldr_masked.png",
+        "cover": "previews/baldr_cover.png",
+        "safe": "previews/baldr_safe.png"
+      },
+      "game_test": "not_performed"
+    },
+    {
+      "id": "baldr_awaken",
+      "version": "v01",
+      "status": "art_self_check_passed_pending_game_review",
+      "runtime_file": "assets/sprites/cards/baldr_awaken.png",
+      "approved_file": "approved/baldr_awaken.png",
+      "candidate_file": "candidates/baldr_awaken.png",
+      "original_file": "originals/baldr_awaken_v01.png",
+      "size": [
+        720,
+        1200
+      ],
+      "mode": "RGB",
+      "frames": 1,
+      "color_count": 156954,
+      "sha256": "d5ee02588db614fe8240743f695a66b921fcdcaace1af2f22319fc0df15dbf9b",
+      "backup": null,
+      "source": "Built-in OpenAI imagegen, project-owned references only",
+      "tools": [
+        "image_gen.imagegen",
+        "Pillow12.1.1 resize/RGB/preview only"
+      ],
+      "generation_url": null,
+      "generation_record": "records/generation_jobs.json",
+      "checks": {
+        "png_rgb_720x1200": true,
+        "readable_at_260x433": true,
+        "main_identifiers_survive_lower45_90percent_overlay": true,
+        "critical_face_weapon_tips_in_side_safe_area": true,
+        "upper_left_light_shared_oil_style": true,
+        "lower40_dark_subdued": true,
+        "no_obvious_anatomy_or_weapon_errors_observed": true,
+        "no_text_frame_signature_watermark_observed": true,
+        "normal_awaken_identity_consistent": true
+      },
+      "visual_review": "同普通面部、衣甲、持光构图，强光柱和放射光，脸与手仍可辨。",
+      "lower40_mean_luma_0_255": 34.716646412037036,
+      "previews": {
+        "260": "previews/baldr_awaken_260.png",
+        "masked": "previews/baldr_awaken_masked.png",
+        "cover": "previews/baldr_awaken_cover.png",
+        "safe": "previews/baldr_awaken_safe.png"
+      },
+      "game_test": "not_performed"
+    },
+    {
+      "id": "ran",
+      "version": "v02",
+      "status": "art_self_check_passed_pending_game_review",
+      "runtime_file": "assets/sprites/cards/ran.png",
+      "approved_file": "approved/ran.png",
+      "candidate_file": "candidates/ran.png",
+      "original_file": "originals/ran_v02.png",
+      "size": [
+        720,
+        1200
+      ],
+      "mode": "RGB",
+      "frames": 1,
+      "color_count": 149783,
+      "sha256": "7c1cd8ad824d24219c95a76e5bb1f62546c274674ae7315c6c940690cb446a0e",
+      "backup": null,
+      "source": "Built-in OpenAI imagegen, project-owned references only",
+      "tools": [
+        "image_gen.imagegen",
+        "Pillow12.1.1 resize/RGB/preview only"
+      ],
+      "generation_url": null,
+      "generation_record": "records/generation_jobs.json",
+      "checks": {
+        "png_rgb_720x1200": true,
+        "readable_at_260x433": true,
+        "main_identifiers_survive_lower45_90percent_overlay": true,
+        "critical_face_weapon_tips_in_side_safe_area": true,
+        "upper_left_light_shared_oil_style": true,
+        "lower40_dark_subdued": true,
+        "no_obvious_anatomy_or_weapon_errors_observed": true,
+        "no_text_frame_signature_watermark_observed": true,
+        "normal_awaken_identity_consistent": true
+      },
+      "visual_review": "湿深发、苍白冷峻面部、遮体衣袍、双手拉网、贝壳碎金及溺亡者遗物，沉船暗影。",
+      "lower40_mean_luma_0_255": 20.20242476851852,
+      "previews": {
+        "260": "previews/ran_260.png",
+        "masked": "previews/ran_masked.png",
+        "cover": "previews/ran_cover.png",
+        "safe": "previews/ran_safe.png"
+      },
+      "game_test": "not_performed"
+    },
+    {
+      "id": "ran_awaken",
+      "version": "v02",
+      "status": "art_self_check_passed_pending_game_review",
+      "runtime_file": "assets/sprites/cards/ran_awaken.png",
+      "approved_file": "approved/ran_awaken.png",
+      "candidate_file": "candidates/ran_awaken.png",
+      "original_file": "originals/ran_awaken_v02.png",
+      "size": [
+        720,
+        1200
+      ],
+      "mode": "RGB",
+      "frames": 1,
+      "color_count": 249276,
+      "sha256": "aadb666a8a14011c6c41cccfd4ce9e5795aa683f8cc7dafe4783820f0f1aa09f",
+      "backup": null,
+      "source": "Built-in OpenAI imagegen, project-owned references only",
+      "tools": [
+        "image_gen.imagegen",
+        "Pillow12.1.1 resize/RGB/preview only"
+      ],
+      "generation_url": null,
+      "generation_record": "records/generation_jobs.json",
+      "checks": {
+        "png_rgb_720x1200": true,
+        "readable_at_260x433": true,
+        "main_identifiers_survive_lower45_90percent_overlay": true,
+        "critical_face_weapon_tips_in_side_safe_area": true,
+        "upper_left_light_shared_oil_style": true,
+        "lower40_dark_subdued": true,
+        "no_obvious_anatomy_or_weapon_errors_observed": true,
+        "no_text_frame_signature_watermark_observed": true,
+        "normal_awaken_identity_consistent": true
+      },
+      "visual_review": "同一面容/衣袍/网具；巨浪与金光网线增强，主要遗物在遮罩以上。",
+      "lower40_mean_luma_0_255": 21.64607638888889,
+      "previews": {
+        "260": "previews/ran_awaken_260.png",
+        "masked": "previews/ran_awaken_masked.png",
+        "cover": "previews/ran_awaken_cover.png",
+        "safe": "previews/ran_awaken_safe.png"
+      },
+      "game_test": "not_performed"
+    }
+  ],
+  "generation_records": "records/generation_jobs.json",
+  "mipmap_manifest": "records/mipmap_manifest.json",
+  "godot_mipmaps_configured": false,
+  "game_test": "not_performed",
+  "license_record": "assets/LICENSES.md G1-G3",
+  "optional_fusion_art": "not_in_scope",
+  "note": "Half-length card prioritizes face and primary identifiers. Snowshoe is dark secondary equipment below copy area; boar head above copy, body partly below. No claim of pixel-identical composition across generated variants."
+}

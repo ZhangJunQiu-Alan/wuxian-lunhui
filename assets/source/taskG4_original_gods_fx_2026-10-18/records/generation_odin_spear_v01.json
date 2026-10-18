@@ -1,0 +1,22 @@
+{
+  "group": "G4",
+  "id": "odin_spear",
+  "w": 64,
+  "h": 16,
+  "frames": 1,
+  "anchor": [
+    56,
+    8
+  ],
+  "flags": "rotate tip",
+  "subject": "One straight slender darkwood andiron longspear, pointedleafshaped silver spearhead pointsRIGHT tipat(56,8), shaftreachesx3,y8, subtle violet carvedgeometricruneglow onshaft/head; no extra shafts/trails.",
+  "version": "v01",
+  "fps": 8,
+  "root": "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskG4_original_gods_fx_2026-10-18",
+  "refs": [
+    "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskG4_original_gods_fx_2026-10-18/refs/effects_style.png"
+  ],
+  "prompt": "Use case: stylized-concept.\nAsset type: production pixelart 2D game magical effect sprite 64x16 logical pixels PERFRAME, 1frame(s).\nInput1 is STYLE REFERENCE of project's existingpixel effects, match crisp clusters andlimitedpalette.\nSubject: One straight slender darkwood andiron longspear, pointedleafshaped silver spearhead pointsRIGHT tipat(56,8), shaftreachesx3,y8, subtle violet carvedgeometricruneglow onshaft/head; no extra shafts/trails.\nLayout: ONE isolatedsprite on exactlogical64x16 canvas, subject centered withminimum2logicalpxclear margin, excepthorizontalstretchable strips extendLEFTandRIGHTfully. Preserve specifiedanchor.\nStyle: genuineLOWRESPIXELART, hardconnected1..3pixelclusters, NO detailedillustration/no3D/noantialias/no dither/no blur. Binarytransparentbackground, alphahardedges, no externalcastshadow. Ifmagicglowusecrispcoloredpixelsinsidebounds.\nBackground genuinely TRANSPARENT, not black or checkerboard. No scene/groundplane/text/watermark. Direction RIGHT forweaponsandanimals. No copiedexternalcharacters.",
+  "tool": "OpenAI builtin image_gen",
+  "source": "/Users/zhangjunqiu/.codex/generated_images/01a14377-c537-7a10-b5df-10043f63fbe0/exec-5c25f14a-2ecd-4987-bfee-bc4303694902.png"
+}

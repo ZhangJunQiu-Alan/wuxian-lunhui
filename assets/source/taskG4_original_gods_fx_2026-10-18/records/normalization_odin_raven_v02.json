@@ -1,0 +1,44 @@
+{
+  "raw_size": [
+    1774,
+    887
+  ],
+  "source": "originals/odin_raven_v02_raw.png",
+  "frame_boxes": [
+    [
+      145,
+      112,
+      819,
+      742
+    ],
+    [
+      86,
+      496,
+      745,
+      849
+    ]
+  ],
+  "target_perframe": [
+    24,
+    24
+  ],
+  "frames": 2,
+  "alpha": "binary128threshold",
+  "tool": "Pillow formatting only",
+  "common_scale": 0.02967359050445104,
+  "operation": "Equalcell cuts, whole silhouette crop, common nearest scale, shared32RGBpalette, anchorplacement; no bodyredrawing",
+  "placements": [
+    [
+      2,
+      2,
+      20,
+      19
+    ],
+    [
+      2,
+      7,
+      20,
+      10
+    ]
+  ]
+}

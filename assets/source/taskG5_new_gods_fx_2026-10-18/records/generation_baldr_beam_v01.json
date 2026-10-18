@@ -1,0 +1,22 @@
+{
+  "group": "G5",
+  "id": "baldr_beam",
+  "w": 64,
+  "h": 16,
+  "frames": 1,
+  "anchor": [
+    0,
+    8
+  ],
+  "flags": "stretch beam",
+  "subject": "A straight HORIZONTAL warmWHITEGOLD LIGHT BEAM occupyingx0..63, luminouscreamcenterstripe aty7..8, goldsoftedges fadestransparenttowardy0andy15. Simplestraight constantwidth bands, no startcap/endcap/spark/taper; LEFTandRIGHTends samecrosssection seamlessrepeat. Transparentaroundbeam, notweapon.",
+  "version": "v01",
+  "fps": 8,
+  "root": "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskG5_new_gods_fx_2026-10-18",
+  "refs": [
+    "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskG5_new_gods_fx_2026-10-18/refs/effects_style.png"
+  ],
+  "prompt": "Use case: stylized-concept.\nAsset type: production pixelart 2D game magical effect sprite 64x16 logical pixels PERFRAME, 1frame(s).\nInput1 is STYLE REFERENCE of project's existingpixel effects, match crisp clusters andlimitedpalette.\nSubject: A straight HORIZONTAL warmWHITEGOLD LIGHT BEAM occupyingx0..63, luminouscreamcenterstripe aty7..8, goldsoftedges fadestransparenttowardy0andy15. Simplestraight constantwidth bands, no startcap/endcap/spark/taper; LEFTandRIGHTends samecrosssection seamlessrepeat. Transparentaroundbeam, notweapon.\nLayout: ONE isolatedsprite on exactlogical64x16 canvas, subject centered withminimum2logicalpxclear margin, excepthorizontalstretchable strips extendLEFTandRIGHTfully. Preserve specifiedanchor.\nStyle: genuineLOWRESPIXELART, hardconnected1..3pixelclusters, NO detailedillustration/no3D/noantialias/no dither/no blur. Allow translucent EDGEPIXELS and faintinterior for scalablegroundeffect; use simpleclean shapes, keepenemiesreadable.\nBackground genuinely TRANSPARENT, not black or checkerboard. No scene/groundplane/text/watermark. Direction RIGHT forweaponsandanimals. No copiedexternalcharacters.",
+  "tool": "OpenAI builtin image_gen",
+  "source": "/Users/zhangjunqiu/.codex/generated_images/01a14377-c537-7a10-b5df-10043f63fbe0/exec-cb608feb-6c46-498e-916a-5909ba6572d9.png"
+}

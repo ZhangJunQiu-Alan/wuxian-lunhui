@@ -1,0 +1,22 @@
+{
+  "group": "G4",
+  "id": "loki_wolf",
+  "w": 32,
+  "h": 32,
+  "frames": 2,
+  "anchor": [
+    16,
+    24
+  ],
+  "flags": "feet",
+  "subject": "TWO consecutive running poses of a SMALL WOLF entirely formedof magicFIRE, head RIGHT, longsnout pointedears, tealgreeninnerfire and orangeflametips. Samebodyheadsize inboth, frame1extendedfore/hindlegs frame2gatheredlegs, feet at y24; no floor/shadow/trail, no normalfur.",
+  "version": "v04",
+  "fps": 8,
+  "root": "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskG4_original_gods_fx_2026-10-18",
+  "refs": [
+    "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskG4_original_gods_fx_2026-10-18/refs/effects_style.png"
+  ],
+  "prompt": "Use case: stylized-concept.\nCreate ONE horizontal two-frame low-resolution pixel game sprite sheet: each frame 32 by 32 logical pixels. Transparent background. Each cell contains one small running flame wolf facing RIGHT. Connected, SOLID, filled turquoise body silhouette; a compact oval torso at least 14 pixels long and 7 pixels thick, readable muzzle, two triangular ears, four chunky legs, raised tail. Exactly THREE tiny orange flame tips along the back. Main body is opaque teal, dark teal outline, pale mint face highlight; limited eight colors. Never draw a hollow outline or fragmented sparks, never draw interior transparent holes. Each wolf occupies approximately 24 by 18 pixels within its cell, with four pixels of clear space at both ends. Entire animal fully visible, very generous empty space between the two animals and at outer image edges. Two running poses: stretched legs then gathered legs, head and torso exactly same size and position in both frames, feet aligned. Match the attached project's pixel effect palette and crisp connected pixel clusters. Do not add text, panels, labels, borders, shadow, scene, floor, smoke or trail. Prioritize a recognizable miniature wolf silhouette at 1x. One clean two-frame row only.",
+  "tool": "OpenAI built-in image generation",
+  "source_path": "/Users/zhangjunqiu/.codex/generated_images/01a14377-c537-7a10-b5df-10043f63fbe0/exec-d7ce8572-8aeb-4163-baf6-94a581cc71dd.png"
+}

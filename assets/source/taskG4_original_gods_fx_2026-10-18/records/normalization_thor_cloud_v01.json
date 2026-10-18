@@ -1,0 +1,32 @@
+{
+  "raw_size": [
+    1774,
+    887
+  ],
+  "source": "originals/thor_cloud_v01_raw.png",
+  "frame_boxes": [
+    [
+      102,
+      121,
+      1682,
+      780
+    ]
+  ],
+  "target_perframe": [
+    128,
+    64
+  ],
+  "frames": 1,
+  "alpha": "binary128threshold",
+  "tool": "Pillow formatting only",
+  "common_scale": 0.07848101265822785,
+  "operation": "Equalcell cuts, whole silhouette crop, common nearest scale, shared32RGBpalette, anchorplacement; no bodyredrawing",
+  "placements": [
+    [
+      2,
+      6,
+      124,
+      52
+    ]
+  ]
+}

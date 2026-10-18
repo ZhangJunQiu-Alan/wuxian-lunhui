@@ -1,0 +1,167 @@
+{
+  "thor_hammer": {
+    "version": "v02",
+    "status": "pass",
+    "reviewed": [
+      "native on #121721",
+      "nearest 4x",
+      "style reference comparison",
+      "no text/watermark/scene",
+      "right facing where applicable",
+      "0/90/180 rotation"
+    ],
+    "notes": "重做为方块锤头和短柄；锤头向右，旋转预览未见独立地面投影。"
+  },
+  "thor_cloud": {
+    "version": "v01",
+    "status": "pass",
+    "reviewed": [
+      "native on #121721",
+      "nearest 4x",
+      "style reference comparison",
+      "no text/watermark/scene",
+      "right facing where applicable"
+    ],
+    "notes": "深灰云团及冰蓝电光；1倍可辨，边缘完整。"
+  },
+  "odin_spear": {
+    "version": "v01",
+    "status": "pass",
+    "reviewed": [
+      "native on #121721",
+      "nearest 4x",
+      "style reference comparison",
+      "no text/watermark/scene",
+      "right facing where applicable",
+      "0/90/180 rotation"
+    ],
+    "notes": "紫色长枪朝右，最右枪尖精确位于(56,8)。"
+  },
+  "odin_raven": {
+    "version": "v05",
+    "status": "pass",
+    "reviewed": [
+      "native on #121721",
+      "nearest 4x",
+      "style reference comparison",
+      "no text/watermark/scene",
+      "right facing where applicable",
+      "all animation frames, body proportions, head alignment, first/last transition"
+    ],
+    "notes": "重新生成大头短喙渡鸦，两帧共用原图纵向裁切范围；头身位置保持，翼上拍/下拍变化。"
+  },
+  "odin_rune_circle": {
+    "version": "v01",
+    "status": "pass",
+    "reviewed": [
+      "native on #121721",
+      "nearest 4x",
+      "style reference comparison",
+      "no text/watermark/scene",
+      "right facing where applicable",
+      "Midgard ground: characters above and below effect; scale1 and1.6"
+    ],
+    "notes": "紫色环和角形符号；中心透明，地块叠加可辨角色。"
+  },
+  "loki_wolf": {
+    "version": "v04",
+    "status": "pass",
+    "reviewed": [
+      "native on #121721",
+      "nearest 4x",
+      "style reference comparison",
+      "no text/watermark/scene",
+      "right facing where applicable",
+      "all animation frames, body proportions, head alignment, first/last transition"
+    ],
+    "notes": "前三稿退回；第四原稿连续青绿色躯干、少量橙色火尖，伸腿/收腿，脚底统一y24。"
+  },
+  "loki_decoy": {
+    "version": "v01",
+    "status": "pass",
+    "reviewed": [
+      "native on #121721",
+      "nearest 4x",
+      "style reference comparison",
+      "no text/watermark/scene",
+      "right facing where applicable",
+      "all animation frames, body proportions, head alignment, first/last transition"
+    ],
+    "notes": "四帧青绿橙色火焰人形；火苗变化、脚底统一y44，不含实体服装武器。"
+  },
+  "loki_fire_patch": {
+    "version": "v01",
+    "status": "pass",
+    "reviewed": [
+      "native on #121721",
+      "nearest 4x",
+      "style reference comparison",
+      "no text/watermark/scene",
+      "right facing where applicable",
+      "Midgard ground: characters above and below effect; scale1 and1.6"
+    ],
+    "notes": "青绿与橙色诡火，低透明度；叠在角色上方仍可辨其轮廓。"
+  },
+  "freyja_cat": {
+    "version": "v01",
+    "status": "pass",
+    "reviewed": [
+      "native on #121721",
+      "nearest 4x",
+      "style reference comparison",
+      "no text/watermark/scene",
+      "right facing where applicable",
+      "all animation frames, body proportions, head alignment, first/last transition"
+    ],
+    "notes": "灰白战猫朝右，伸腿/收腿两相，脚底统一y18。"
+  },
+  "freyja_chariot": {
+    "version": "v01",
+    "status": "pass",
+    "reviewed": [
+      "native on #121721",
+      "nearest 4x",
+      "style reference comparison",
+      "no text/watermark/scene",
+      "right facing where applicable"
+    ],
+    "notes": "两只灰白猫拉金色空战车朝右；轮/脚底落y32，无驾驶人物。"
+  },
+  "freyja_ring": {
+    "version": "v01",
+    "status": "pass",
+    "reviewed": [
+      "native on #121721",
+      "nearest 4x",
+      "style reference comparison",
+      "no text/watermark/scene",
+      "right facing where applicable",
+      "Midgard ground: characters above and below effect; scale1 and1.6"
+    ],
+    "notes": "金色链节构成环形；中心透明，地块叠加不遮住角色。"
+  },
+  "pickup_feather": {
+    "version": "v01",
+    "status": "pass",
+    "reviewed": [
+      "native on #121721",
+      "nearest 4x",
+      "style reference comparison",
+      "no text/watermark/scene",
+      "right facing where applicable"
+    ],
+    "notes": "16px金色羽毛，斜向，1倍可辨。"
+  },
+  "pickup_tear": {
+    "version": "v01",
+    "status": "pass",
+    "reviewed": [
+      "native on #121721",
+      "nearest 4x",
+      "style reference comparison",
+      "no text/watermark/scene",
+      "right facing where applicable"
+    ],
+    "notes": "16px竖直金色泪滴，二值透明，无外部光晕。"
+  }
+}
