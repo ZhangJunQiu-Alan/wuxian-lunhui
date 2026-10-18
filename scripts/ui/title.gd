@@ -1,7 +1,7 @@
 extends Control
 ## 标题画面（游戏启动后的第一个画面）
 ## 开场动画：从黑暗中亮起 → 主神光球展开 → 标题逐字浮现 → 副标题、篇章名 → 「按任意键开始」
-## 背景动画：夜空、极光、星星、飘雪、三层远山缓慢平移；两头巨狼在天边追逐太阳和月亮；四位轮回者站在山崖上
+## 背景动画：夜空、极光、星星、飘雪、三层远山缓慢平移；两头巨狼在天边追逐太阳和月亮；四个化身站在山崖上
 ## 菜单：开始游戏、图鉴、设置、制作人员、退出游戏
 
 const HUB_SCENE := "res://scenes/hub.tscn"
@@ -24,7 +24,7 @@ const AURORAS := [  # 极光：[中心高度, 厚度, 颜色, 相位]
 ]
 const HEROES := ["swordsman", "gunslinger", "assassin", "mage"]
 const HERO_X := [0.1, 0.19, 0.81, 0.9]
-const CLIFF_Y := 0.93          # 轮回者脚下山崖的高度
+const CLIFF_Y := 0.93          # 化身脚下山崖的高度
 
 static var _intro_seen := false       # 同一次启动里再回到标题（切换语言、从主神空间返回）时跳过开场动画
 static var _reopen_settings := false
@@ -311,7 +311,7 @@ func _draw_ridge(index: int) -> void:
 	draw_colored_polygon(points, ridge[2])
 
 
-## 轮回者脚下的山崖：两侧高、中间低，给菜单留出位置
+## 化身脚下的山崖：两侧高、中间低，给菜单留出位置
 func _draw_cliff() -> void:
 	var y := size.y * CLIFF_Y
 	var color := Color(0.02, 0.025, 0.04)

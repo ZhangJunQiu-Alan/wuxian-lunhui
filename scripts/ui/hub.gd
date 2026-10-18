@@ -1,6 +1,6 @@
 extends Control
-## 主神空间：局外大厅。选择轮回者（角色）、选择关卡、用奖励点购买永久强化、看图鉴、查看战绩、进入篇章
-## 背景是主神光球和缓缓上升的光点；「轮回者」页左边是角色插画，右边是能力介绍和四位轮回者的头像
+## 主神空间：局外大厅。选择化身（角色）、选择关卡、用奖励点购买永久强化、看图鉴、查看战绩、进入篇章
+## 背景是主神光球和缓缓上升的光点；「化身」页左边是角色插画，右边是能力介绍和四个化身的头像
 
 const BG_TOP := Color(0.03, 0.035, 0.06)
 const BG_BOTTOM := Color(0.07, 0.06, 0.07)
@@ -24,8 +24,8 @@ var _start: Button
 var _settings: SettingsPanel
 var _tabs: TabContainer
 var _tab_buttons: Array[Button] = []
-var _viewing := ""  # 「轮回者」页正在看的角色（默认是已选择的角色）
-var _hero := {}     # 「轮回者」页右侧的各个控件
+var _viewing := ""  # 「化身」页正在看的角色（默认是已选择的角色）
+var _hero := {}     # 「化身」页右侧的各个控件
 var _faces := {}    # 角色 id -> 头像按钮
 var _motes := []    # 上升的光点：[x 比例, 起始相位, 速度, 大小]
 var _time := 0.0
@@ -70,7 +70,7 @@ func _ready() -> void:
 	money.add_child(_points_label)
 	money.add_child(_story_label)
 
-	# ---- 分页按钮 + 四个分页「轮回者」「关卡」「永久强化」「图鉴」 ----
+	# ---- 分页按钮 + 四个分页「化身」「关卡」「永久强化」「图鉴」 ----
 	var nav := HBoxContainer.new()
 	nav.add_theme_constant_override("separation", 6)
 	root.add_child(nav)
@@ -79,7 +79,7 @@ func _ready() -> void:
 	_tabs.size_flags_vertical = Control.SIZE_EXPAND_FILL
 	_tabs.add_theme_stylebox_override("panel", StyleBoxEmpty.new())
 	root.add_child(_tabs)
-	for page_name in [tr("轮回者"), tr("关卡"), tr("永久强化"), tr("图鉴")]:
+	for page_name in [tr("化身"), tr("关卡"), tr("永久强化"), tr("图鉴")]:
 		var button := Button.new()
 		button.text = page_name
 		button.focus_mode = Control.FOCUS_NONE
@@ -196,7 +196,7 @@ func _start_battle() -> void:
 	get_tree().change_scene_to_file(BATTLE_SCENE)
 
 
-## 「轮回者」页：左边是正在看的角色的插画，右边是名字、三项能力，下面是四位轮回者的头像和选择 / 解锁按钮
+## 「化身」页：左边是正在看的角色的插画，右边是名字、三项能力，下面是四个化身的头像和选择 / 解锁按钮
 func _make_character_page() -> Control:
 	var page := HBoxContainer.new()
 	page.add_theme_constant_override("separation", 26)
@@ -335,7 +335,7 @@ func _on_character_pressed(id: String) -> void:
 	_refresh()
 
 
-## 「轮回者」页：按正在看的角色刷新插画、能力、头像边框和按钮
+## 「化身」页：按正在看的角色刷新插画、能力、头像边框和按钮
 func _refresh_character_page(selected: String) -> void:
 	var info: Dictionary = CharacterDB.ALL[_viewing]
 	var unlocked := CharacterDB.is_unlocked(_viewing)
@@ -461,7 +461,7 @@ func _buy(id: String) -> void:
 func _refresh() -> void:
 	var selected := CharacterDB.selected()
 	var selected_info: Dictionary = CharacterDB.ALL[selected]
-	_subtitle.text = tr("轮回者：%s · %s") % [tr(selected_info.name), tr(selected_info.title)]
+	_subtitle.text = tr("化身：%s · %s") % [tr(selected_info.name), tr(selected_info.title)]
 	var level := LevelDB.selected()
 	_start.text = tr("以 %s 进入%s\n第 %d 关 · %s    [Enter]") % [tr(selected_info.name), tr(LevelDB.CHAPTER), LevelDB.ORDER.find(level) + 1, tr(LevelDB.NAMES[level])]
 	for id: String in _level_cards:
