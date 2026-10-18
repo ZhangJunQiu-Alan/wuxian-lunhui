@@ -1,0 +1,113 @@
+{
+  "name": "blades_slash",
+  "raw": "originals/blades_slash_v01.png",
+  "raw_sha256": "4b2f35eecb59602704995d201cae257f4eb59b3b34b4b8a695df158b563fcf0a",
+  "raw_size": [
+    1402,
+    1122
+  ],
+  "grid": [
+    2,
+    2
+  ],
+  "cell_rects": [
+    [
+      0,
+      0,
+      701,
+      561
+    ],
+    [
+      701,
+      0,
+      1402,
+      561
+    ],
+    [
+      0,
+      561,
+      701,
+      1122
+    ],
+    [
+      701,
+      561,
+      1402,
+      1122
+    ]
+  ],
+  "alpha_bbox_threshold": 16,
+  "cell_content_bboxes": [
+    [
+      397,
+      104,
+      595,
+      507
+    ],
+    [
+      266,
+      104,
+      603,
+      515
+    ],
+    [
+      410,
+      82,
+      660,
+      471
+    ],
+    [
+      443,
+      95,
+      629,
+      465
+    ]
+  ],
+  "uniform_nearest_factor": 0.0830860534124629,
+  "placements": [
+    [
+      34,
+      15,
+      16,
+      33
+    ],
+    [
+      34,
+      15,
+      28,
+      34
+    ],
+    [
+      34,
+      16,
+      21,
+      32
+    ],
+    [
+      34,
+      16,
+      15,
+      31
+    ]
+  ],
+  "shared_rgb_palette_max": 32,
+  "alpha_policy": [
+    0,
+    32,
+    64,
+    96,
+    128,
+    160,
+    208,
+    255
+  ],
+  "alpha_cap": 255,
+  "target_frame_size": [
+    64,
+    64
+  ],
+  "frame_count": 4,
+  "candidate": "candidates/blades_slash_v01.png",
+  "candidate_sha256": "dc3c9e6bc59235c17acd401b3d170b416df7f600977f0191ca7e9da62a1bfb8e",
+  "operation_scope": "crop, uniform nearest scaling, register, shared color and alpha specification; no painted pixels or duplicated animation frames"
+}

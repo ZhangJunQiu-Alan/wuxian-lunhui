@@ -1,0 +1,104 @@
+{
+  "task": "J4",
+  "status": "pass_offline_asset_checks",
+  "files": [
+    {
+      "name": "stonehenge_stone",
+      "checks": {
+        "png_rgba": true,
+        "exact_strip_dimensions": true,
+        "rgb_le48": true,
+        "unique_frames": true,
+        "margin_ge2": true,
+        "alpha_policy": true
+      },
+      "frame_bboxes": [
+        [
+          12,
+          2,
+          36,
+          62
+        ]
+      ],
+      "rgb_colors": 31,
+      "alpha_levels": [
+        0,
+        255
+      ],
+      "gifs": [],
+      "visual_frame_review": "灰紫粗砺立石，左上高光、平整落地端；没有地面底板或外部投影。",
+      "visual_review_scope": "actual native1x overview and each4x frame-strip image, offline only; not browser playback or game",
+      "browser_playback": "not_performed_Work_browser_disabled",
+      "game_test": "not_performed"
+    },
+    {
+      "name": "stonehenge_lintel",
+      "checks": {
+        "png_rgba": true,
+        "exact_strip_dimensions": true,
+        "rgb_le48": true,
+        "unique_frames": true,
+        "margin_ge2": true,
+        "alpha_policy": true
+      },
+      "frame_bboxes": [
+        [
+          2,
+          8,
+          62,
+          22
+        ]
+      ],
+      "rgb_colors": 31,
+      "alpha_levels": [
+        0,
+        255
+      ],
+      "gifs": [],
+      "visual_frame_review": "同色系横石，长度与厚度可独立缩放用于两立石连接，无支架或底色。",
+      "visual_review_scope": "actual native1x overview and each4x frame-strip image, offline only; not browser playback or game",
+      "browser_playback": "not_performed_Work_browser_disabled",
+      "game_test": "not_performed"
+    },
+    {
+      "name": "stonehenge_circle",
+      "checks": {
+        "png_rgba": true,
+        "exact_strip_dimensions": true,
+        "rgb_le48": true,
+        "unique_frames": true,
+        "margin_ge2": true,
+        "alpha_policy": true,
+        "center_clear": true
+      },
+      "frame_bboxes": [
+        [
+          2,
+          6,
+          126,
+          122
+        ]
+      ],
+      "rgb_colors": 25,
+      "alpha_levels": [
+        0,
+        32,
+        64,
+        96,
+        128,
+        160,
+        208
+      ],
+      "gifs": [],
+      "visual_frame_review": "灰紫符文阵留透明中心，细环和稀疏装饰不形成满屏底色；外缘另由原程序保持精确。",
+      "visual_review_scope": "actual native1x overview and each4x frame-strip image, offline only; not browser playback or game",
+      "browser_playback": "not_performed_Work_browser_disabled",
+      "game_test": "not_performed"
+    }
+  ],
+  "browser": "in-app bootstrap missing browser-client.mjs; Chrome control returned Local browser use is disabled in Work settings; no setting changed or bypass",
+  "code_integration": "not_performed",
+  "game_test": "not_performed",
+  "native_size_all_frames_review": "Actual all49 native frames viewed in taskJ1/previews/all_J_all_frames_native1x.png",
+  "gallery_javascript_syntax": "node --check passed"
+}

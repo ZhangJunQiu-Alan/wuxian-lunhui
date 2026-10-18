@@ -1,0 +1,9 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+OpenGL API 4.1 Metal - 90.5 - Compatibility - Using Device: Apple - Apple M2
+
+2026-10-19 05:27:35.449 godot[10680:3296430] error messaging the mach port for IMKCFRunLoopWakeUpReliable
+NEW GAME assassin
+BENCH { "phase": "old_geometry", "frames": 148, "mean_ms": 27.1311418918919, "p95_ms": 29.947, "fps": 36.85801371666, "enemies": 350, "marks_peak": 88, "nodes": 1985, "42_cavalry": true }
+BENCH { "phase": "new_art", "frames": 195, "mean_ms": 20.5224153846154, "p95_ms": 24.347, "fps": 48.7272078485289, "enemies": 350, "marks_peak": 112, "nodes": 1985, "42_cavalry": true }
+BENCH { "phase": "old_geometry_repeat", "frames": 147, "mean_ms": 27.2790884353742, "p95_ms": 30.019, "fps": 36.6581164311653, "enemies": 350, "marks_peak": 88, "nodes": 1985, "42_cavalry": true }
+BENCH { "phase": "new_art_repeat", "frames": 196, "mean_ms": 20.4843928571429, "p95_ms": 24.418, "fps": 48.8176538584253, "enemies": 350, "marks_peak": 112, "nodes": 1985, "42_cavalry": true }

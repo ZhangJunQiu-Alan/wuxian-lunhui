@@ -1,0 +1,73 @@
+{
+  "task": "J8",
+  "date": "2026-10-19",
+  "status": "production_started",
+  "assets": [
+    {
+      "task": "J8",
+      "name": "loki_wolf_breath",
+      "frame_size": [
+        96,
+        64
+      ],
+      "frames": 4,
+      "fps": 16,
+      "loop": false,
+      "formal_path": "assets/sprites/effects/gods/loki_wolf_breath.png",
+      "batch": "assets/source/taskJ8_god_feedback_2026-10-19",
+      "status": "planned",
+      "anchor": [
+        4,
+        32
+      ],
+      "references": [
+        {
+          "project_path": "assets/sprites/effects/katana_slash.png",
+          "copy": "references/katana_slash.png",
+          "sha256": "7bd81d28708a9f538306c26680e7520af1f5c7349ea52c634f341e95d5cc6d7a",
+          "role": "project-owned style reference; no external character design"
+        },
+        {
+          "project_path": "assets/sprites/effects/gods/odin_rune_circle.png",
+          "copy": "references/odin_rune_circle.png",
+          "sha256": "286138576830d33617e3fcff77ea31fe7f2729e896fcaef32e8b317172d4b003",
+          "role": "project-owned style reference; no external character design"
+        },
+        {
+          "project_path": "assets/sprites/effects/gods/loki_fire_patch.png",
+          "copy": "references/loki_fire_patch.png",
+          "sha256": "a5773032ad2af278c32e3079399b7c8c4205cb0cc8f90b12a1a784c81d3f4ec4",
+          "role": "project-owned style reference; no external character design"
+        },
+        {
+          "project_path": "assets/sprites/effects/bosses/garm_bite.png",
+          "copy": "references/garm_bite.png",
+          "sha256": "95402ffcaec4881b71e39ce05ba1d8f97cf31c6fe838733dd5259c7cee55eb62",
+          "role": "project-owned style reference; no external character design"
+        },
+        {
+          "project_path": "assets/sprites/characters/assassin.png",
+          "copy": "references/assassin.png",
+          "sha256": "36f61e50bcfb173863e5abc69afc70ef10ae3d17bb6bf7bab8a31d42fcc2a772",
+          "role": "project-owned style reference; no external character design"
+        },
+        {
+          "project_path": "assets/sprites/characters/gunslinger.png",
+          "copy": "references/gunslinger.png",
+          "sha256": "754134580682ef324d1b7e90fd2849807fe4622bc702a61bcd305a449fef9f52",
+          "role": "project-owned style reference; no external character design"
+        },
+        {
+          "project_path": "assets/sprites/characters/mage.png",
+          "copy": "references/mage.png",
+          "sha256": "3cbb5f8a32b7cb79bdfa52f38c7dbce3c487d0d9b50f25470967f904cf2ed90b",
+          "role": "project-owned style reference; no external character design"
+        }
+      ]
+    }
+  ],
+  "tool": "OpenAI built-in image_gen",
+  "license": "OpenAI Terms of Use, content ownership; project-owned reference images",
+  "license_url": "https://openai.com/policies/terms-of-use/",
+  "game_test": "not_performed"
+}

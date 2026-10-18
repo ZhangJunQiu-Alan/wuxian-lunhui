@@ -1,0 +1,56 @@
+{
+  "task": "J4",
+  "date": "2026-10-19",
+  "generator": "OpenAI built-in image_gen",
+  "generator_model": "not exposed by tool; not asserted",
+  "commercial_basis_url": "https://openai.com/policies/terms-of-use/",
+  "commercial_basis_checked": "2026-10-19",
+  "basis": "Content Ownership assigns OpenAI rights, if any, in output to user subject to terms and applicable law; project-owned references; no outside film/game/artist design references",
+  "other_tools": [
+    {
+      "tool": "Pillow12.1.1",
+      "license": "MIT-CMU, previously verified in assets/LICENSES.md",
+      "use": "crop, registration, nearest scaling, shared RGB and alpha formatting, audit and previews; no repainting"
+    },
+    {
+      "tool": "Node.js",
+      "license": "MIT plus included dependency licenses",
+      "license_url": "https://raw.githubusercontent.com/nodejs/node/main/LICENSE",
+      "use": "local node --check only; not embedded or distributed with game"
+    }
+  ],
+  "raw_outputs": [
+    {
+      "path": "originals/stonehenge_circle_v01.png",
+      "sha256": "dfe843fc8420c414b40ab91146df03914cef96d648f7e85ba025ecac123a7002"
+    },
+    {
+      "path": "originals/stonehenge_lintel_v01.png",
+      "sha256": "c8ed0f6b6e84d631f0fe96ff2d499ee2734f3fc092115d89056b8016232fe9b9"
+    },
+    {
+      "path": "originals/stonehenge_stone_v01.png",
+      "sha256": "3cfa3fe4f82172f592fd69b5c019bc003048f9e94c59d650be60d1ae141e93d4"
+    }
+  ],
+  "actual_prompts": [
+    {
+      "path": "records/stonehenge_circle_v01_prompt.txt",
+      "sha256": "7ee8cc5e27f69d8fb5625ab0362165a24a6ec65545f443301a960731837c157e"
+    },
+    {
+      "path": "records/stonehenge_lintel_v01_prompt.txt",
+      "sha256": "f5ea24534d6f60ca455d16af8d2255a757975145676139af50106d1bb4dd2bfd"
+    },
+    {
+      "path": "records/stonehenge_stone_v01_prompt.txt",
+      "sha256": "a473b063fd43175c46d85546f0129b7bde646d79839c1a2e748eef7be5f7c503"
+    }
+  ],
+  "new_accounts": false,
+  "payment": false,
+  "external_art_downloads": false,
+  "generated_images_not_exclusive": true,
+  "code_integration": "not_performed",
+  "game_test": "not_performed"
+}

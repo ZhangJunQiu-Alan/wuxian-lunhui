@@ -1,0 +1,48 @@
+{
+  "task": "J3",
+  "date": "2026-10-19",
+  "generator": "OpenAI built-in image_gen",
+  "generator_model": "not exposed by tool; not asserted",
+  "commercial_basis_url": "https://openai.com/policies/terms-of-use/",
+  "commercial_basis_checked": "2026-10-19",
+  "basis": "Content Ownership assigns OpenAI rights, if any, in output to user subject to terms and applicable law; project-owned references; no outside film/game/artist design references",
+  "other_tools": [
+    {
+      "tool": "Pillow12.1.1",
+      "license": "MIT-CMU, previously verified in assets/LICENSES.md",
+      "use": "crop, registration, nearest scaling, shared RGB and alpha formatting, audit and previews; no repainting"
+    },
+    {
+      "tool": "Node.js",
+      "license": "MIT plus included dependency licenses",
+      "license_url": "https://raw.githubusercontent.com/nodejs/node/main/LICENSE",
+      "use": "local node --check only; not embedded or distributed with game"
+    }
+  ],
+  "raw_outputs": [
+    {
+      "path": "originals/formation_cavalry_v01.png",
+      "sha256": "fc7f8289d3ed6b08a885f4b6bb8980526626feac9398d6a14ee342d22c0a268c"
+    },
+    {
+      "path": "originals/formation_slash_v01.png",
+      "sha256": "49945d24c94d73549c481c7470124fc6da6a2817a053fec23b97f86fb6fc1c9a"
+    }
+  ],
+  "actual_prompts": [
+    {
+      "path": "records/formation_cavalry_v01_prompt.txt",
+      "sha256": "71bdff782c35778ab54a2ad70b1d2ea1a0537e2726159fd5d9497b7127395be6"
+    },
+    {
+      "path": "records/formation_slash_v01_prompt.txt",
+      "sha256": "73c10379e348398b43761ed8a45eb53be9b0a2a22e61158f346d6599eabace2c"
+    }
+  ],
+  "new_accounts": false,
+  "payment": false,
+  "external_art_downloads": false,
+  "generated_images_not_exclusive": true,
+  "code_integration": "not_performed",
+  "game_test": "not_performed"
+}

@@ -1,0 +1,22 @@
+{
+  "task": "J1-J8",
+  "date": "2026-10-19",
+  "status": "art_code_and_controlled_runtime_passed",
+  "png": 14,
+  "frames": 49,
+  "all_png_hashes_unchanged": true,
+  "source_and_approved_hashes_match": true,
+  "local_html_links": 180,
+  "missing_links": [],
+  "gallery_syntax": "8 node --check pass",
+  "runtime_checks": 626,
+  "runtime_check_failures": 0,
+  "working_tree_regressions": 997,
+  "working_tree_regression_failures": 0,
+  "actual_game_screenshots": 46,
+  "before_after_pairs": 18,
+  "gameplay_functions_unchanged_except_death_visual_dispatch": true,
+  "full_manual_playthrough": "not_performed",
+  "scope_patch": "J_code_only.patch",
+  "head_before_commit": "cff5bbd4d52e7425a6b3eb5a9b285b364c50c7a8"
+}

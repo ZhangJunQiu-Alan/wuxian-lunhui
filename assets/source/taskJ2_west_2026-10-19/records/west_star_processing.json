@@ -1,0 +1,113 @@
+{
+  "name": "west_star",
+  "raw": "originals/west_star_v01.png",
+  "raw_sha256": "58b8ba80bcc59cacbf82acb9d531da473fee5ac76accf63cc00df8da51c3fbbc",
+  "raw_size": [
+    1402,
+    1122
+  ],
+  "grid": [
+    2,
+    2
+  ],
+  "cell_rects": [
+    [
+      0,
+      0,
+      701,
+      561
+    ],
+    [
+      701,
+      0,
+      1402,
+      561
+    ],
+    [
+      0,
+      561,
+      701,
+      1122
+    ],
+    [
+      701,
+      561,
+      1402,
+      1122
+    ]
+  ],
+  "alpha_bbox_threshold": 16,
+  "cell_content_bboxes": [
+    [
+      363,
+      286,
+      486,
+      422
+    ],
+    [
+      159,
+      258,
+      348,
+      465
+    ],
+    [
+      330,
+      87,
+      573,
+      356
+    ],
+    [
+      205,
+      171,
+      322,
+      310
+    ]
+  ],
+  "uniform_nearest_factor": 0.10408921933085502,
+  "placements": [
+    [
+      9,
+      9,
+      13,
+      14
+    ],
+    [
+      6,
+      5,
+      20,
+      22
+    ],
+    [
+      3,
+      2,
+      25,
+      28
+    ],
+    [
+      10,
+      9,
+      12,
+      14
+    ]
+  ],
+  "shared_rgb_palette_max": 32,
+  "alpha_policy": [
+    0,
+    32,
+    64,
+    96,
+    128,
+    160,
+    208,
+    255
+  ],
+  "alpha_cap": 255,
+  "target_frame_size": [
+    32,
+    32
+  ],
+  "frame_count": 4,
+  "candidate": "candidates/west_star_v01.png",
+  "candidate_sha256": "1bbb1daa44fa577e23d29649a343a7e80d0cdd80723eaa11f35e404e38a8c697",
+  "operation_scope": "crop, uniform nearest scaling, register, shared color and alpha specification; no painted pixels or duplicated animation frames"
+}

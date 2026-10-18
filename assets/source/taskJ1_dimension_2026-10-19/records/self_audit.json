@@ -1,0 +1,95 @@
+{
+  "task": "J1",
+  "status": "pass_offline_asset_checks",
+  "files": [
+    {
+      "name": "dimension_cut",
+      "checks": {
+        "png_rgba": true,
+        "exact_strip_dimensions": true,
+        "rgb_le48": true,
+        "unique_frames": true,
+        "margin_ge2": true,
+        "alpha_policy": true,
+        "gif_frame_counts": true,
+        "gif_exact_pixels": true,
+        "gif_average_fps": true,
+        "gif_loop_contract": true
+      },
+      "frame_bboxes": [
+        [
+          23,
+          9,
+          86,
+          22
+        ],
+        [
+          20,
+          4,
+          107,
+          29
+        ],
+        [
+          22,
+          3,
+          106,
+          30
+        ],
+        [
+          28,
+          6,
+          90,
+          25
+        ]
+      ],
+      "rgb_colors": 29,
+      "alpha_levels": [
+        0,
+        32,
+        64,
+        96,
+        128,
+        160,
+        208,
+        255
+      ],
+      "gifs": [
+        {
+          "path": "previews/dimension_cut_normal.gif",
+          "frames": 4,
+          "durations_ms": [
+            60,
+            70,
+            60,
+            60
+          ],
+          "average_fps": 16.0,
+          "decoded_pixels_match_source_composite": true,
+          "loop": null
+        },
+        {
+          "path": "previews/dimension_cut_slow8.gif",
+          "frames": 4,
+          "durations_ms": [
+            120,
+            130,
+            120,
+            130
+          ],
+          "average_fps": 8.0,
+          "decoded_pixels_match_source_composite": true,
+          "loop": null
+        }
+      ],
+      "visual_frame_review": "四帧由薄裂痕到亮核爆发再碎裂衰减，冷蓝紫配色与现有刀光相容，无人物或全屏底色。",
+      "visual_review_scope": "actual native1x overview and each4x frame-strip image, offline only; not browser playback or game",
+      "browser_playback": "not_performed_Work_browser_disabled",
+      "game_test": "not_performed"
+    }
+  ],
+  "browser": "in-app bootstrap missing browser-client.mjs; Chrome control returned Local browser use is disabled in Work settings; no setting changed or bypass",
+  "code_integration": "not_performed",
+  "game_test": "not_performed",
+  "native_size_all_frames_review": "Actual all49 native frames viewed in taskJ1/previews/all_J_all_frames_native1x.png",
+  "gallery_javascript_syntax": "node --check passed"
+}

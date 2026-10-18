@@ -36,9 +36,14 @@ func _process(delta: float) -> void:
 
 func _draw() -> void:
 	var fade := minf(1.0, player.frenzy_time / 0.5)  # 最后半秒淡出
-	draw_arc(Vector2.ZERO, 34.0, 0.0, TAU, 32, Color(COLOR, 0.5 * fade), 2.0)
+	if not CombatFx.draw(self, "west_aura", _time, Vector2.ZERO, 0.0, Vector2.ONE * 34.0 / 46.573, Color(1, 1, 1, fade)):
+		draw_arc(Vector2.ZERO, 34.0, 0.0, TAU, 32, Color(COLOR, 0.5 * fade), 2.0)
+	if _time >= 0.25 and CombatFx.texture("west_star") != null:
+		return
 	for i in 5:  # 五颗绕身旋转的星
 		var p := Vector2.from_angle(_time * 4.0 + TAU * i / 5) * 34.0
+		if CombatFx.draw(self, "west_star", _time, p, 0.0, Vector2.ONE * 0.45, Color(1, 1, 1, fade)):
+			continue
 		var star := PackedVector2Array()
 		for k in 10:
 			star.append(p + Vector2.from_angle(TAU * k / 10 - PI / 2) * (6.0 if k % 2 == 0 else 2.5))

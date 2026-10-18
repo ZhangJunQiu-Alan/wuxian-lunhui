@@ -108,8 +108,10 @@ func _cavalry_x() -> float:
 func _draw() -> void:
 	for trail in _trails:  # 瞬移的残影：一道红黑色的刀痕
 		var a: float = trail.life / 0.35
-		draw_line(trail.from, trail.to, Color(0.1, 0.0, 0.0, 0.7 * a), 8.0)
-		draw_line(trail.from, trail.to, Color(COLOR, a), 2.0)
+		var dir: Vector2 = trail.to - trail.from
+		if not CombatFx.draw(self, "formation_slash", 0.35 - trail.life, (trail.from + trail.to) * 0.5, dir.angle(), Vector2(dir.length() / 56.0, 1.0), Color(1, 1, 1, a)):
+			draw_line(trail.from, trail.to, Color(0.1, 0.0, 0.0, 0.7 * a), 8.0)
+			draw_line(trail.from, trail.to, Color(COLOR, a), 2.0)
 	if _phase != "cavalry":
 		return
 	# 五百骑幻影：一列列向右冲锋的鬼影骑兵
@@ -121,6 +123,8 @@ func _draw() -> void:
 		for k in 3:
 			var p := Vector2(x + jitter - k * 70.0, y)
 			var alpha := 0.55 - k * 0.15
+			if CombatFx.draw(self, "formation_cavalry", _cavalry_t + i * 0.07 + k * 0.13, p + Vector2(0, 6), 0.0, Vector2.ONE, Color(1, 1, 1, alpha)):
+				continue
 			# 骑兵剪影：马身 + 骑手 + 前伸的长枪
 			draw_colored_polygon(PackedVector2Array([p + Vector2(-22, 6), p + Vector2(18, 6), p + Vector2(24, -2), p + Vector2(-16, -4)]), Color(0.25, 0.02, 0.04, alpha))
 			draw_colored_polygon(PackedVector2Array([p + Vector2(-4, -4), p + Vector2(4, -4), p + Vector2(2, -18), p + Vector2(-4, -16)]), Color(0.3, 0.02, 0.05, alpha))

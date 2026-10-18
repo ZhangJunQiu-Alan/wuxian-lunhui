@@ -1,0 +1,50 @@
+{
+  "name": "stonehenge_stone",
+  "raw": "originals/stonehenge_stone_v01.png",
+  "raw_sha256": "3cfa3fe4f82172f592fd69b5c019bc003048f9e94c59d650be60d1ae141e93d4",
+  "raw_size": [
+    1086,
+    1448
+  ],
+  "grid": [
+    1,
+    1
+  ],
+  "cell_rects": [
+    [
+      0,
+      0,
+      1086,
+      1448
+    ]
+  ],
+  "alpha_bbox_threshold": 16,
+  "cell_content_bboxes": [
+    [
+      395,
+      319,
+      763,
+      1253
+    ]
+  ],
+  "uniform_nearest_factor": 0.06423982869379015,
+  "placements": [
+    [
+      12,
+      2,
+      24,
+      60
+    ]
+  ],
+  "shared_rgb_palette_max": 32,
+  "alpha_policy": "binary_0_255",
+  "alpha_cap": 255,
+  "target_frame_size": [
+    48,
+    64
+  ],
+  "frame_count": 1,
+  "candidate": "candidates/stonehenge_stone_v01.png",
+  "candidate_sha256": "405569397918a2c6f2ae7f1b3340d09809236c4a88a97e012cde3e008dca226f",
+  "operation_scope": "crop, uniform nearest scaling, register, shared color and alpha specification; no painted pixels or duplicated animation frames"
+}

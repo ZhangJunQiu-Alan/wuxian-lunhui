@@ -81,7 +81,8 @@ func _draw() -> void:
 	var fade := clampf(remain, 0.0, 1.0)  # 最后一秒淡出
 	if _landed:
 		var pulse := 0.5 + 0.5 * sin(_time * 3.0)
-		draw_circle(Vector2.ZERO, RADIUS, Color(MAGIC_COLOR, (0.06 + 0.04 * pulse) * fade))
+		if not CombatFx.draw(self, "stonehenge_circle", 0.0, Vector2.ZERO, 0.0, Vector2.ONE * RADIUS / 62.0, Color(1, 1, 1, (0.25 + 0.12 * pulse) * fade), RADIUS):
+			draw_circle(Vector2.ZERO, RADIUS, Color(MAGIC_COLOR, (0.06 + 0.04 * pulse) * fade))
 		draw_arc(Vector2.ZERO, RADIUS, 0.0, TAU, 64, Color(MAGIC_COLOR, 0.6 * fade), 3.0)
 	for i in STONES:
 		var base := _stone_offset(i)
@@ -91,9 +92,11 @@ func _draw() -> void:
 		draw_circle(Vector2.ZERO, 14.0, Color(0, 0, 0, 0.4 * fall))
 		draw_set_transform(Vector2.ZERO)
 		var color := Color(STONE_COLOR, fade)
-		draw_rect(Rect2(base + drop + Vector2(-9, -30), Vector2(18, 44)), color)
-		draw_rect(Rect2(base + drop + Vector2(-9, -30), Vector2(18, 44)), Color(0.25, 0.26, 0.3, fade), false, 2.0)
+		if not CombatFx.draw(self, "stonehenge_stone", 0.0, base + drop + Vector2(0, 14), 0.0, Vector2.ONE * 0.75, Color(1, 1, 1, fade)):
+			draw_rect(Rect2(base + drop + Vector2(-9, -30), Vector2(18, 44)), color)
+			draw_rect(Rect2(base + drop + Vector2(-9, -30), Vector2(18, 44)), Color(0.25, 0.26, 0.3, fade), false, 2.0)
 		# 每两根立石上架一块横石，组成巨石阵的「三石塔」
 		if i % 2 == 0 and _landed:
 			var next := _stone_offset(i + 1)
-			draw_line(base + Vector2(0, -32), next + Vector2(0, -32), Color(0.48, 0.49, 0.55, fade), 9.0)
+			if not CombatFx.draw(self, "stonehenge_lintel", 0.0, (base + next) * 0.5 + Vector2(0, -32), (next - base).angle(), Vector2(base.distance_to(next) / 60.0, 9.0 / 14.0), Color(1, 1, 1, fade)):
+				draw_line(base + Vector2(0, -32), next + Vector2(0, -32), Color(0.48, 0.49, 0.55, fade), 9.0)

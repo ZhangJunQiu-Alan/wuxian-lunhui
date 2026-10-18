@@ -1,0 +1,190 @@
+{
+  "task": "J3",
+  "status": "pass_offline_asset_checks",
+  "files": [
+    {
+      "name": "formation_cavalry",
+      "checks": {
+        "png_rgba": true,
+        "exact_strip_dimensions": true,
+        "rgb_le48": true,
+        "unique_frames": true,
+        "margin_ge2": true,
+        "alpha_policy": true,
+        "fixed_hoof_baseline": true,
+        "gif_frame_counts": true,
+        "gif_exact_pixels": true,
+        "gif_average_fps": true,
+        "gif_loop_contract": true
+      },
+      "frame_bboxes": [
+        [
+          4,
+          3,
+          88,
+          62
+        ],
+        [
+          5,
+          4,
+          91,
+          62
+        ],
+        [
+          4,
+          3,
+          91,
+          62
+        ],
+        [
+          6,
+          3,
+          90,
+          62
+        ],
+        [
+          5,
+          3,
+          90,
+          62
+        ],
+        [
+          6,
+          4,
+          89,
+          62
+        ]
+      ],
+      "rgb_colors": 32,
+      "alpha_levels": [
+        0,
+        255
+      ],
+      "gifs": [
+        {
+          "path": "previews/formation_cavalry_normal.gif",
+          "frames": 6,
+          "durations_ms": [
+            120,
+            130,
+            120,
+            130,
+            120,
+            130
+          ],
+          "average_fps": 8.0,
+          "decoded_pixels_match_source_composite": true,
+          "loop": 0
+        },
+        {
+          "path": "previews/formation_cavalry_slow8.gif",
+          "frames": 6,
+          "durations_ms": [
+            120,
+            130,
+            120,
+            130,
+            120,
+            130
+          ],
+          "average_fps": 8.0,
+          "decoded_pixels_match_source_composite": true,
+          "loop": 0
+        }
+      ],
+      "visual_frame_review": "六个不同的右向奔驰姿势；同一骑手、盔甲、红披布、马和长枪。伸展、收腿和落蹄可辨，实体没有半透明白边。",
+      "visual_review_scope": "actual native1x overview and each4x frame-strip image, offline only; not browser playback or game",
+      "browser_playback": "not_performed_Work_browser_disabled",
+      "game_test": "not_performed"
+    },
+    {
+      "name": "formation_slash",
+      "checks": {
+        "png_rgba": true,
+        "exact_strip_dimensions": true,
+        "rgb_le48": true,
+        "unique_frames": true,
+        "margin_ge2": true,
+        "alpha_policy": true,
+        "gif_frame_counts": true,
+        "gif_exact_pixels": true,
+        "gif_average_fps": true,
+        "gif_loop_contract": true
+      },
+      "frame_bboxes": [
+        [
+          22,
+          10,
+          40,
+          22
+        ],
+        [
+          3,
+          9,
+          59,
+          23
+        ],
+        [
+          7,
+          9,
+          55,
+          22
+        ],
+        [
+          14,
+          11,
+          50,
+          21
+        ]
+      ],
+      "rgb_colors": 31,
+      "alpha_levels": [
+        0,
+        32,
+        64,
+        96,
+        128,
+        160,
+        208,
+        255
+      ],
+      "gifs": [
+        {
+          "path": "previews/formation_slash_normal.gif",
+          "frames": 4,
+          "durations_ms": [
+            60,
+            70,
+            60,
+            60
+          ],
+          "average_fps": 16.0,
+          "decoded_pixels_match_source_composite": true,
+          "loop": null
+        },
+        {
+          "path": "previews/formation_slash_slow8.gif",
+          "frames": 4,
+          "durations_ms": [
+            120,
+            130,
+            120,
+            130
+          ],
+          "average_fps": 8.0,
+          "decoded_pixels_match_source_composite": true,
+          "loop": null
+        }
+      ],
+      "visual_frame_review": "短起笔、红白峰值、破碎拖痕与低亮残粒清楚；不包含身体。",
+      "visual_review_scope": "actual native1x overview and each4x frame-strip image, offline only; not browser playback or game",
+      "browser_playback": "not_performed_Work_browser_disabled",
+      "game_test": "not_performed"
+    }
+  ],
+  "browser": "in-app bootstrap missing browser-client.mjs; Chrome control returned Local browser use is disabled in Work settings; no setting changed or bypass",
+  "code_integration": "not_performed",
+  "game_test": "not_performed",
+  "native_size_all_frames_review": "Actual all49 native frames viewed in taskJ1/previews/all_J_all_frames_native1x.png",
+  "gallery_javascript_syntax": "node --check passed"
+}

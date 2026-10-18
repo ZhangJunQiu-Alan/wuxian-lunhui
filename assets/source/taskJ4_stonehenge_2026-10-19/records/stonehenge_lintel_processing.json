@@ -1,0 +1,50 @@
+{
+  "name": "stonehenge_lintel",
+  "raw": "originals/stonehenge_lintel_v01.png",
+  "raw_sha256": "c8ed0f6b6e84d631f0fe96ff2d499ee2734f3fc092115d89056b8016232fe9b9",
+  "raw_size": [
+    2048,
+    768
+  ],
+  "grid": [
+    1,
+    1
+  ],
+  "cell_rects": [
+    [
+      0,
+      0,
+      2048,
+      768
+    ]
+  ],
+  "alpha_bbox_threshold": 16,
+  "cell_content_bboxes": [
+    [
+      281,
+      268,
+      1785,
+      618
+    ]
+  ],
+  "uniform_nearest_factor": 0.0398936170212766,
+  "placements": [
+    [
+      2,
+      8,
+      60,
+      14
+    ]
+  ],
+  "shared_rgb_palette_max": 32,
+  "alpha_policy": "binary_0_255",
+  "alpha_cap": 255,
+  "target_frame_size": [
+    64,
+    24
+  ],
+  "frame_count": 1,
+  "candidate": "candidates/stonehenge_lintel_v01.png",
+  "candidate_sha256": "45ea2219fd7400588eb1b9362aa66f4da2bef295310478aac73540b0a0c31cab",
+  "operation_scope": "crop, uniform nearest scaling, register, shared color and alpha specification; no painted pixels or duplicated animation frames"
+}

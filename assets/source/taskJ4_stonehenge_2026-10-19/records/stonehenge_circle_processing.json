@@ -1,0 +1,59 @@
+{
+  "name": "stonehenge_circle",
+  "raw": "originals/stonehenge_circle_v01.png",
+  "raw_sha256": "dfe843fc8420c414b40ab91146df03914cef96d648f7e85ba025ecac123a7002",
+  "raw_size": [
+    1254,
+    1254
+  ],
+  "grid": [
+    1,
+    1
+  ],
+  "cell_rects": [
+    [
+      0,
+      0,
+      1254,
+      1254
+    ]
+  ],
+  "alpha_bbox_threshold": 16,
+  "cell_content_bboxes": [
+    [
+      94,
+      96,
+      1160,
+      1153
+    ]
+  ],
+  "uniform_nearest_factor": 0.11632270168855535,
+  "placements": [
+    [
+      2,
+      2,
+      124,
+      123
+    ]
+  ],
+  "shared_rgb_palette_max": 32,
+  "alpha_policy": [
+    0,
+    32,
+    64,
+    96,
+    128,
+    160,
+    208,
+    255
+  ],
+  "alpha_cap": 208,
+  "target_frame_size": [
+    128,
+    128
+  ],
+  "frame_count": 1,
+  "candidate": "candidates/stonehenge_circle_v01.png",
+  "candidate_sha256": "725561e1e9b1b36ebf50b8c7888a66a4d9b3ec3d6825b09cdcaac2b1efba6df9",
+  "operation_scope": "crop, uniform nearest scaling, register, shared color and alpha specification; no painted pixels or duplicated animation frames"
+}

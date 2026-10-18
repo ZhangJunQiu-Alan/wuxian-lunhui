@@ -1,0 +1,140 @@
+{
+  "name": "formation_cavalry",
+  "raw": "originals/formation_cavalry_v01.png",
+  "raw_sha256": "fc7f8289d3ed6b08a885f4b6bb8980526626feac9398d6a14ee342d22c0a268c",
+  "raw_size": [
+    1536,
+    1024
+  ],
+  "grid": [
+    3,
+    2
+  ],
+  "cell_rects": [
+    [
+      0,
+      0,
+      512,
+      512
+    ],
+    [
+      512,
+      0,
+      1024,
+      512
+    ],
+    [
+      1024,
+      0,
+      1536,
+      512
+    ],
+    [
+      0,
+      512,
+      512,
+      1024
+    ],
+    [
+      512,
+      512,
+      1024,
+      1024
+    ],
+    [
+      1024,
+      512,
+      1536,
+      1024
+    ]
+  ],
+  "alpha_bbox_threshold": 16,
+  "cell_content_bboxes": [
+    [
+      26,
+      142,
+      507,
+      474
+    ],
+    [
+      21,
+      142,
+      497,
+      471
+    ],
+    [
+      14,
+      142,
+      494,
+      474
+    ],
+    [
+      15,
+      75,
+      499,
+      405
+    ],
+    [
+      14,
+      81,
+      495,
+      409
+    ],
+    [
+      13,
+      76,
+      493,
+      405
+    ]
+  ],
+  "uniform_nearest_factor": 0.18072289156626506,
+  "placements": [
+    [
+      4,
+      2,
+      87,
+      60
+    ],
+    [
+      5,
+      3,
+      86,
+      59
+    ],
+    [
+      4,
+      2,
+      87,
+      60
+    ],
+    [
+      4,
+      2,
+      87,
+      60
+    ],
+    [
+      4,
+      3,
+      87,
+      59
+    ],
+    [
+      4,
+      3,
+      87,
+      59
+    ]
+  ],
+  "shared_rgb_palette_max": 32,
+  "alpha_policy": "binary_0_255",
+  "alpha_cap": 255,
+  "target_frame_size": [
+    96,
+    64
+  ],
+  "frame_count": 6,
+  "candidate": "candidates/formation_cavalry_v01.png",
+  "candidate_sha256": "e90f55f3ba2c7fe52a8bd809b7d9ae6b652fb9dfdae2a1fc0968ba7c82487049",
+  "operation_scope": "crop, uniform nearest scaling, register, shared color and alpha specification; no painted pixels or duplicated animation frames"
+}

@@ -62,5 +62,8 @@ func _draw() -> void:
 		var k := minf(1.0, wave.t / EXPAND_TIME)
 		var r := radius * k
 		var alpha := 1.0 - maxf(0.0, wave.t - EXPAND_TIME) / 0.15
-		draw_arc(Vector2.ZERO, r, 0.0, TAU, 64, Color(COLOR, 0.9 * alpha), 6.0 * (1.0 - k) + 2.0)
-		draw_circle(Vector2.ZERO, r, Color(COLOR, 0.08 * alpha))
+		if CombatFx.draw(self, "arcane_nova", wave.t, Vector2.ZERO, 0.0, Vector2.ONE * r / 62.514, Color(1, 1, 1, alpha), r):
+			draw_arc(Vector2.ZERO, r, 0.0, TAU, 64, Color(COLOR, 0.35 * alpha), 1.0)
+		else:
+			draw_arc(Vector2.ZERO, r, 0.0, TAU, 64, Color(COLOR, 0.9 * alpha), 6.0 * (1.0 - k) + 2.0)
+			draw_circle(Vector2.ZERO, r, Color(COLOR, 0.08 * alpha))

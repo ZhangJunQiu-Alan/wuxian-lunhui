@@ -1,0 +1,113 @@
+{
+  "name": "west_aura",
+  "raw": "originals/west_aura_v02.png",
+  "raw_sha256": "4371c1100eeaa2cea9faf31cc0abe929b92cc68154262426aabb14eaa2ad1323",
+  "raw_size": [
+    1278,
+    1230
+  ],
+  "grid": [
+    2,
+    2
+  ],
+  "cell_rects": [
+    [
+      0,
+      0,
+      639,
+      615
+    ],
+    [
+      639,
+      0,
+      1278,
+      615
+    ],
+    [
+      0,
+      615,
+      639,
+      1230
+    ],
+    [
+      639,
+      615,
+      1278,
+      1230
+    ]
+  ],
+  "alpha_bbox_threshold": 16,
+  "cell_content_bboxes": [
+    [
+      126,
+      89,
+      561,
+      518
+    ],
+    [
+      88,
+      92,
+      519,
+      518
+    ],
+    [
+      125,
+      85,
+      561,
+      512
+    ],
+    [
+      86,
+      85,
+      523,
+      513
+    ]
+  ],
+  "uniform_nearest_factor": 0.21052631578947367,
+  "placements": [
+    [
+      2,
+      3,
+      92,
+      90
+    ],
+    [
+      2,
+      3,
+      91,
+      90
+    ],
+    [
+      2,
+      3,
+      92,
+      90
+    ],
+    [
+      2,
+      3,
+      92,
+      90
+    ]
+  ],
+  "shared_rgb_palette_max": 32,
+  "alpha_policy": [
+    0,
+    32,
+    64,
+    96,
+    128,
+    160,
+    208,
+    255
+  ],
+  "alpha_cap": 160,
+  "target_frame_size": [
+    96,
+    96
+  ],
+  "frame_count": 4,
+  "candidate": "candidates/west_aura_v02.png",
+  "candidate_sha256": "a08a9488ec108bfa9c3b00cffe884efad89137f19ea51846d0acb821825d3294",
+  "operation_scope": "crop, uniform nearest scaling, register, shared color and alpha specification; no painted pixels or duplicated animation frames"
+}

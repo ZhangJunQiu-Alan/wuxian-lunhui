@@ -1,0 +1,522 @@
+{
+	"engine": {
+		"build": "official",
+		"hash": "ed1daf0bf001b61586d9930840f2f1394092c079",
+		"hex": 263938,
+		"major": 4,
+		"minor": 7,
+		"patch": 2,
+		"status": "stable",
+		"string": "4.7.2-stable (official)",
+		"timestamp": 0
+	},
+	"scope": "actual Game viewport, controlled skill states; full manual playthrough not tested",
+	"screenshots": [
+		{
+			"description": "pre-burst space cuts; preserve darkening; original geometry fallback",
+			"file": "J1_dimension_charge_before.png",
+			"game_scene": "scripts/game.gd",
+			"level": "midgard",
+			"viewport": [
+				1280,
+				720
+			],
+			"write_error": 0
+		},
+		{
+			"description": "pre-burst space cuts; preserve darkening; integrated J art",
+			"file": "J1_dimension_charge_after.png",
+			"game_scene": "scripts/game.gd",
+			"level": "midgard",
+			"viewport": [
+				1280,
+				720
+			],
+			"write_error": 0
+		},
+		{
+			"description": "burst stage; preserve white flash; original geometry fallback",
+			"file": "J1_dimension_burst_before.png",
+			"game_scene": "scripts/game.gd",
+			"level": "midgard",
+			"viewport": [
+				1280,
+				720
+			],
+			"write_error": 0
+		},
+		{
+			"description": "burst stage; preserve white flash; integrated J art",
+			"file": "J1_dimension_burst_after.png",
+			"game_scene": "scripts/game.gd",
+			"level": "midgard",
+			"viewport": [
+				1280,
+				720
+			],
+			"write_error": 0
+		},
+		{
+			"description": "final strip frame fades until original end",
+			"file": "J1_dimension_decay.png",
+			"game_scene": "scripts/game.gd",
+			"level": "midgard",
+			"viewport": [
+				1280,
+				720
+			],
+			"write_error": 0
+		},
+		{
+			"description": "five single-shot badges plus looping aura; original geometry fallback",
+			"file": "J2_west_entry_before.png",
+			"game_scene": "scripts/game.gd",
+			"level": "midgard",
+			"viewport": [
+				1280,
+				720
+			],
+			"write_error": 0
+		},
+		{
+			"description": "five single-shot badges plus looping aura; integrated J art",
+			"file": "J2_west_entry_after.png",
+			"game_scene": "scripts/game.gd",
+			"level": "midgard",
+			"viewport": [
+				1280,
+				720
+			],
+			"write_error": 0
+		},
+		{
+			"description": "loop phase; actor and bullets remain visible",
+			"file": "J2_west_loop_0.png",
+			"game_scene": "scripts/game.gd",
+			"level": "midgard",
+			"viewport": [
+				1280,
+				720
+			],
+			"write_error": 0
+		},
+		{
+			"description": "loop phase; actor and bullets remain visible",
+			"file": "J2_west_loop_1.png",
+			"game_scene": "scripts/game.gd",
+			"level": "midgard",
+			"viewport": [
+				1280,
+				720
+			],
+			"write_error": 0
+		},
+		{
+			"description": "loop phase; actor and bullets remain visible",
+			"file": "J2_west_loop_2.png",
+			"game_scene": "scripts/game.gd",
+			"level": "midgard",
+			"viewport": [
+				1280,
+				720
+			],
+			"write_error": 0
+		},
+		{
+			"description": "loop phase; actor and bullets remain visible",
+			"file": "J2_west_loop_3.png",
+			"game_scene": "scripts/game.gd",
+			"level": "midgard",
+			"viewport": [
+				1280,
+				720
+			],
+			"write_error": 0
+		},
+		{
+			"description": "instant-strike trail follows actual from/to; original geometry fallback",
+			"file": "J3_formation_slash_before.png",
+			"game_scene": "scripts/game.gd",
+			"level": "midgard",
+			"viewport": [
+				1280,
+				720
+			],
+			"write_error": 0
+		},
+		{
+			"description": "instant-strike trail follows actual from/to; integrated J art",
+			"file": "J3_formation_slash_after.png",
+			"game_scene": "scripts/game.gd",
+			"level": "midgard",
+			"viewport": [
+				1280,
+				720
+			],
+			"write_error": 0
+		},
+		{
+			"description": "42 riders in existing14x3 loop; no child sprite nodes; original geometry fallback",
+			"file": "J3_cavalry_before.png",
+			"game_scene": "scripts/game.gd",
+			"level": "midgard",
+			"viewport": [
+				1280,
+				720
+			],
+			"write_error": 0
+		},
+		{
+			"description": "42 riders in existing14x3 loop; no child sprite nodes; integrated J art",
+			"file": "J3_cavalry_after.png",
+			"game_scene": "scripts/game.gd",
+			"level": "midgard",
+			"viewport": [
+				1280,
+				720
+			],
+			"write_error": 0
+		},
+		{
+			"description": "rider gait phase within original advance",
+			"file": "J3_cavalry_phase_0.png",
+			"game_scene": "scripts/game.gd",
+			"level": "midgard",
+			"viewport": [
+				1280,
+				720
+			],
+			"write_error": 0
+		},
+		{
+			"description": "rider gait phase within original advance",
+			"file": "J3_cavalry_phase_2.png",
+			"game_scene": "scripts/game.gd",
+			"level": "midgard",
+			"viewport": [
+				1280,
+				720
+			],
+			"write_error": 0
+		},
+		{
+			"description": "rider gait phase within original advance",
+			"file": "J3_cavalry_phase_4.png",
+			"game_scene": "scripts/game.gd",
+			"level": "midgard",
+			"viewport": [
+				1280,
+				720
+			],
+			"write_error": 0
+		},
+		{
+			"description": "standing stones keep falling trajectory and shadow; original geometry fallback",
+			"file": "J4_henge_drop_before.png",
+			"game_scene": "scripts/game.gd",
+			"level": "midgard",
+			"viewport": [
+				1280,
+				720
+			],
+			"write_error": 0
+		},
+		{
+			"description": "standing stones keep falling trajectory and shadow; integrated J art",
+			"file": "J4_henge_drop_after.png",
+			"game_scene": "scripts/game.gd",
+			"level": "midgard",
+			"viewport": [
+				1280,
+				720
+			],
+			"write_error": 0
+		},
+		{
+			"description": "10 stones and5 connecting lintels; exact shield ring remains; original geometry fallback",
+			"file": "J4_henge_landed_before.png",
+			"game_scene": "scripts/game.gd",
+			"level": "midgard",
+			"viewport": [
+				1280,
+				720
+			],
+			"write_error": 0
+		},
+		{
+			"description": "10 stones and5 connecting lintels; exact shield ring remains; integrated J art",
+			"file": "J4_henge_landed_after.png",
+			"game_scene": "scripts/game.gd",
+			"level": "midgard",
+			"viewport": [
+				1280,
+				720
+			],
+			"write_error": 0
+		},
+		{
+			"description": "original final-second fade",
+			"file": "J4_henge_decay.png",
+			"game_scene": "scripts/game.gd",
+			"level": "midgard",
+			"viewport": [
+				1280,
+				720
+			],
+			"write_error": 0
+		},
+		{
+			"description": "clipped to actual aim cone despite alternating offset; original geometry fallback",
+			"file": "J5_blades_0_before.png",
+			"game_scene": "scripts/game.gd",
+			"level": "midgard",
+			"viewport": [
+				1280,
+				720
+			],
+			"write_error": 0
+		},
+		{
+			"description": "clipped to actual aim cone despite alternating offset; integrated J art",
+			"file": "J5_blades_0_after.png",
+			"game_scene": "scripts/game.gd",
+			"level": "midgard",
+			"viewport": [
+				1280,
+				720
+			],
+			"write_error": 0
+		},
+		{
+			"description": "clipped to actual aim cone despite alternating offset; original geometry fallback",
+			"file": "J5_blades_80_before.png",
+			"game_scene": "scripts/game.gd",
+			"level": "midgard",
+			"viewport": [
+				1280,
+				720
+			],
+			"write_error": 0
+		},
+		{
+			"description": "clipped to actual aim cone despite alternating offset; integrated J art",
+			"file": "J5_blades_80_after.png",
+			"game_scene": "scripts/game.gd",
+			"level": "midgard",
+			"viewport": [
+				1280,
+				720
+			],
+			"write_error": 0
+		},
+		{
+			"description": "clipped to actual aim cone despite alternating offset; original geometry fallback",
+			"file": "J5_blades_314_before.png",
+			"game_scene": "scripts/game.gd",
+			"level": "midgard",
+			"viewport": [
+				1280,
+				720
+			],
+			"write_error": 0
+		},
+		{
+			"description": "clipped to actual aim cone despite alternating offset; integrated J art",
+			"file": "J5_blades_314_after.png",
+			"game_scene": "scripts/game.gd",
+			"level": "midgard",
+			"viewport": [
+				1280,
+				720
+			],
+			"write_error": 0
+		},
+		{
+			"description": "same code radius; transparent center; original geometry fallback",
+			"file": "J6_nova_10_before.png",
+			"game_scene": "scripts/game.gd",
+			"level": "midgard",
+			"viewport": [
+				1280,
+				720
+			],
+			"write_error": 0
+		},
+		{
+			"description": "same code radius; transparent center; integrated J art",
+			"file": "J6_nova_10_after.png",
+			"game_scene": "scripts/game.gd",
+			"level": "midgard",
+			"viewport": [
+				1280,
+				720
+			],
+			"write_error": 0
+		},
+		{
+			"description": "same code radius; transparent center; original geometry fallback",
+			"file": "J6_nova_25_before.png",
+			"game_scene": "scripts/game.gd",
+			"level": "midgard",
+			"viewport": [
+				1280,
+				720
+			],
+			"write_error": 0
+		},
+		{
+			"description": "same code radius; transparent center; integrated J art",
+			"file": "J6_nova_25_after.png",
+			"game_scene": "scripts/game.gd",
+			"level": "midgard",
+			"viewport": [
+				1280,
+				720
+			],
+			"write_error": 0
+		},
+		{
+			"description": "same code radius; transparent center; original geometry fallback",
+			"file": "J6_nova_40_before.png",
+			"game_scene": "scripts/game.gd",
+			"level": "midgard",
+			"viewport": [
+				1280,
+				720
+			],
+			"write_error": 0
+		},
+		{
+			"description": "same code radius; transparent center; integrated J art",
+			"file": "J6_nova_40_after.png",
+			"game_scene": "scripts/game.gd",
+			"level": "midgard",
+			"viewport": [
+				1280,
+				720
+			],
+			"write_error": 0
+		},
+		{
+			"description": "actual central FxLayer mark; original geometry fallback",
+			"file": "J7_claw_before.png",
+			"game_scene": "scripts/game.gd",
+			"level": "midgard",
+			"viewport": [
+				1280,
+				720
+			],
+			"write_error": 0
+		},
+		{
+			"description": "actual central FxLayer mark; integrated J art",
+			"file": "J7_claw_after.png",
+			"game_scene": "scripts/game.gd",
+			"level": "midgard",
+			"viewport": [
+				1280,
+				720
+			],
+			"write_error": 0
+		},
+		{
+			"description": "actual central FxLayer mark; original geometry fallback",
+			"file": "J7_bite_before.png",
+			"game_scene": "scripts/game.gd",
+			"level": "midgard",
+			"viewport": [
+				1280,
+				720
+			],
+			"write_error": 0
+		},
+		{
+			"description": "actual central FxLayer mark; integrated J art",
+			"file": "J7_bite_after.png",
+			"game_scene": "scripts/game.gd",
+			"level": "midgard",
+			"viewport": [
+				1280,
+				720
+			],
+			"write_error": 0
+		},
+		{
+			"description": "real enemy death emits one central animated shard mark",
+			"file": "J7_death_after.png",
+			"game_scene": "scripts/game.gd",
+			"level": "midgard",
+			"viewport": [
+				1280,
+				720
+			],
+			"write_error": 0
+		},
+		{
+			"description": "sprite clipped to original220-length0.45-half-angle cone; original geometry fallback",
+			"file": "J8_wolf_breath_0_before.png",
+			"game_scene": "scripts/game.gd",
+			"level": "midgard",
+			"viewport": [
+				1280,
+				720
+			],
+			"write_error": 0
+		},
+		{
+			"description": "sprite clipped to original220-length0.45-half-angle cone; integrated J art",
+			"file": "J8_wolf_breath_0_after.png",
+			"game_scene": "scripts/game.gd",
+			"level": "midgard",
+			"viewport": [
+				1280,
+				720
+			],
+			"write_error": 0
+		},
+		{
+			"description": "sprite clipped to original220-length0.45-half-angle cone; original geometry fallback",
+			"file": "J8_wolf_breath_80_before.png",
+			"game_scene": "scripts/game.gd",
+			"level": "midgard",
+			"viewport": [
+				1280,
+				720
+			],
+			"write_error": 0
+		},
+		{
+			"description": "sprite clipped to original220-length0.45-half-angle cone; integrated J art",
+			"file": "J8_wolf_breath_80_after.png",
+			"game_scene": "scripts/game.gd",
+			"level": "midgard",
+			"viewport": [
+				1280,
+				720
+			],
+			"write_error": 0
+		},
+		{
+			"description": "sprite clipped to original220-length0.45-half-angle cone; original geometry fallback",
+			"file": "J8_wolf_breath_314_before.png",
+			"game_scene": "scripts/game.gd",
+			"level": "midgard",
+			"viewport": [
+				1280,
+				720
+			],
+			"write_error": 0
+		},
+		{
+			"description": "sprite clipped to original220-length0.45-half-angle cone; integrated J art",
+			"file": "J8_wolf_breath_314_after.png",
+			"game_scene": "scripts/game.gd",
+			"level": "midgard",
+			"viewport": [
+				1280,
+				720
+			],
+			"write_error": 0
+		}
+	]
+}

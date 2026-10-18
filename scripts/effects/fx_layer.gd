@@ -58,7 +58,15 @@ static func mark(pos: Vector2, angle: float, length: float, color: Color, kind: 
 		return
 	if instance._marks.size() >= MAX_MARKS:
 		instance._marks.pop_front()
-	instance._marks.append({"pos": pos, "angle": angle, "length": length, "kind": kind, "color": color, "life": MARK_LIFE})
+	var duration := 0.25 if kind in ["claw", "bite", "death"] else MARK_LIFE
+	instance._marks.append({"pos": pos, "angle": angle, "length": length, "kind": kind, "color": color, "life": duration, "duration": duration})
+
+
+static func death(pos: Vector2, color: Color, elite: bool = false) -> bool:
+	if instance == null or CombatFx.texture("death_shards") == null:
+		return false
+	mark(pos, randf() * TAU, 88.0 if elite else 56.0, color.lightened(0.3), "death")
+	return true
 
 
 ## 从 pos 向外扩散的霜冻冲击波圈（素材 4 帧，越来越大），最大半径 radius
@@ -129,7 +137,13 @@ func _draw() -> void:
 
 ## 痕迹先快速划出（前 30% 的时间），然后变细淡出
 func _draw_mark(m: Dictionary) -> void:
-	var k: float = 1.0 - m.life / MARK_LIFE           # 0 → 1
+	var duration: float = m.get("duration", MARK_LIFE)
+	var id: String = {"claw": "hit_claw", "bite": "hit_bite", "death": "death_shards"}.get(m.kind, "")
+	if id != "":
+		var width := 50.0 if m.kind == "bite" else 28.0
+		if CombatFx.draw(self, id, duration - m.life, m.pos, m.angle, Vector2.ONE * m.length / width, m.color):
+			return
+	var k: float = 1.0 - m.life / duration           # 0 → 1
 	var grow := minf(1.0, k / 0.3)
 	var fade := 1.0 - maxf(0.0, (k - 0.3) / 0.7)
 	var dir := Vector2.from_angle(m.angle)

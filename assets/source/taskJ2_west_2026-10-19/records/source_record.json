@@ -1,0 +1,56 @@
+{
+  "task": "J2",
+  "date": "2026-10-19",
+  "generator": "OpenAI built-in image_gen",
+  "generator_model": "not exposed by tool; not asserted",
+  "commercial_basis_url": "https://openai.com/policies/terms-of-use/",
+  "commercial_basis_checked": "2026-10-19",
+  "basis": "Content Ownership assigns OpenAI rights, if any, in output to user subject to terms and applicable law; project-owned references; no outside film/game/artist design references",
+  "other_tools": [
+    {
+      "tool": "Pillow12.1.1",
+      "license": "MIT-CMU, previously verified in assets/LICENSES.md",
+      "use": "crop, registration, nearest scaling, shared RGB and alpha formatting, audit and previews; no repainting"
+    },
+    {
+      "tool": "Node.js",
+      "license": "MIT plus included dependency licenses",
+      "license_url": "https://raw.githubusercontent.com/nodejs/node/main/LICENSE",
+      "use": "local node --check only; not embedded or distributed with game"
+    }
+  ],
+  "raw_outputs": [
+    {
+      "path": "originals/west_aura_v01.png",
+      "sha256": "c5ef95bf32307b4baf74b4ddded5781aa53394eb7438eba66eba173f35ca7bde"
+    },
+    {
+      "path": "originals/west_aura_v02.png",
+      "sha256": "4371c1100eeaa2cea9faf31cc0abe929b92cc68154262426aabb14eaa2ad1323"
+    },
+    {
+      "path": "originals/west_star_v01.png",
+      "sha256": "58b8ba80bcc59cacbf82acb9d531da473fee5ac76accf63cc00df8da51c3fbbc"
+    }
+  ],
+  "actual_prompts": [
+    {
+      "path": "records/west_aura_v01_prompt.txt",
+      "sha256": "6b88e2f0a5e7eaff07d475223ac2837a6e08b812cddaaef0894d56fea8b2da92"
+    },
+    {
+      "path": "records/west_aura_v02_prompt.txt",
+      "sha256": "b6e477737bb0c4aed9e892074c2f6dbe4e1ec1da79769ba04292c5a7ffef0565"
+    },
+    {
+      "path": "records/west_star_v01_prompt.txt",
+      "sha256": "7863b92b757e1549200d5aa1050f40e58bbb082c71edf0c89c938ea4569825b2"
+    }
+  ],
+  "new_accounts": false,
+  "payment": false,
+  "external_art_downloads": false,
+  "generated_images_not_exclusive": true,
+  "code_integration": "not_performed",
+  "game_test": "not_performed"
+}

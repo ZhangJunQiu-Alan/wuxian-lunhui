@@ -1,0 +1,684 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+TextServer: Added interface "Dummy"
+TextServer: Added interface "ICU / HarfBuzz / Graphite (Built-in)"
+SDL: Init OK!
+Using "default" pen tablet driver...
+
+TextServer: Primary interface set to: "ICU / HarfBuzz / Graphite (Built-in)".
+Loading resource: res://assets/fonts/NotoSansSC-Regular.otf remapped: res://assets/fonts/NotoSansSC-Regular.otf
+Loading resource: res://.godot/imported/NotoSansSC-Regular.otf-c0c85f3b3b2ad6d96b65df5f3103bb43.fontdata remapped: res://.godot/imported/NotoSansSC-Regular.otf-c0c85f3b3b2ad6d96b65df5f3103bb43.fontdata
+Completed load for: 'res://assets/fonts/NotoSansSC-Regular.otf' remapped 'res://assets/fonts/NotoSansSC-Regular.otf' at thread -1
+CORE API HASH: 2004498165
+EDITOR API HASH: 1696660745
+Loading resource: res://tools/test_combat_art.gd remapped: res://tools/test_combat_art.gd
+Completed load for: 'res://tools/test_combat_art.gd' remapped 'res://tools/test_combat_art.gd' at thread -1
+SceneTreeFTI: traversal method DEFAULT
+Loading resource: res://scripts/core/save_data.gd remapped: res://scripts/core/save_data.gd
+Loading resource: res://assets/sprites/effects/katana_slash.png remapped: res://assets/sprites/effects/katana_slash.png
+Loading resource: res://.godot/imported/katana_slash.png-489771f1ae9bae334e546eb023316738.ctex remapped: res://.godot/imported/katana_slash.png-489771f1ae9bae334e546eb023316738.ctex
+Completed load for: 'res://assets/sprites/effects/katana_slash.png' remapped 'res://assets/sprites/effects/katana_slash.png' at thread -1
+Loading resource: res://assets/sprites/effects/ice_shard.png remapped: res://assets/sprites/effects/ice_shard.png
+Loading resource: res://.godot/imported/ice_shard.png-5300ffb999264e2263facc9f425435af.ctex remapped: res://.godot/imported/ice_shard.png-5300ffb999264e2263facc9f425435af.ctex
+Completed load for: 'res://assets/sprites/effects/ice_shard.png' remapped 'res://assets/sprites/effects/ice_shard.png' at thread -1
+Loading resource: res://assets/sprites/quests/quest_beacon.png remapped: res://assets/sprites/quests/quest_beacon.png
+Loading resource: res://.godot/imported/quest_beacon.png-70702480b890270ac04074025cc7a6d8.ctex remapped: res://.godot/imported/quest_beacon.png-70702480b890270ac04074025cc7a6d8.ctex
+Completed load for: 'res://assets/sprites/quests/quest_beacon.png' remapped 'res://assets/sprites/quests/quest_beacon.png' at thread -1
+Loading resource: res://assets/sprites/effects/frost_shockwave.png remapped: res://assets/sprites/effects/frost_shockwave.png
+Loading resource: res://.godot/imported/frost_shockwave.png-5d1509a49828a26601346bc026ed8452.ctex remapped: res://.godot/imported/frost_shockwave.png-5d1509a49828a26601346bc026ed8452.ctex
+Completed load for: 'res://assets/sprites/effects/frost_shockwave.png' remapped 'res://assets/sprites/effects/frost_shockwave.png' at thread -1
+Loading resource: res://assets/sprites/quests/campfire.png remapped: res://assets/sprites/quests/campfire.png
+Loading resource: res://.godot/imported/campfire.png-217c89c94925036eddb52ed2c3fd97b5.ctex remapped: res://.godot/imported/campfire.png-217c89c94925036eddb52ed2c3fd97b5.ctex
+Completed load for: 'res://assets/sprites/quests/campfire.png' remapped 'res://assets/sprites/quests/campfire.png' at thread -1
+Loading resource: res://assets/sprites/quests/bonfire_survivors.png remapped: res://assets/sprites/quests/bonfire_survivors.png
+Loading resource: res://.godot/imported/bonfire_survivors.png-8c7e180b6fc20d27b7f735befcb7e576.ctex remapped: res://.godot/imported/bonfire_survivors.png-8c7e180b6fc20d27b7f735befcb7e576.ctex
+Completed load for: 'res://assets/sprites/quests/bonfire_survivors.png' remapped 'res://assets/sprites/quests/bonfire_survivors.png' at thread -1
+Loading resource: res://assets/sprites/quests/raven.png remapped: res://assets/sprites/quests/raven.png
+Loading resource: res://.godot/imported/raven.png-54005793b54d6cf8efe32abf30939b13.ctex remapped: res://.godot/imported/raven.png-54005793b54d6cf8efe32abf30939b13.ctex
+Completed load for: 'res://assets/sprites/quests/raven.png' remapped 'res://assets/sprites/quests/raven.png' at thread -1
+Loading resource: res://assets/sprites/quests/valkyrie_wings.png remapped: res://assets/sprites/quests/valkyrie_wings.png
+Loading resource: res://.godot/imported/valkyrie_wings.png-faf290c445502b936673f15cf13ef10f.ctex remapped: res://.godot/imported/valkyrie_wings.png-faf290c445502b936673f15cf13ef10f.ctex
+Completed load for: 'res://assets/sprites/quests/valkyrie_wings.png' remapped 'res://assets/sprites/quests/valkyrie_wings.png' at thread -1
+Loading resource: res://assets/sprites/quests/dead_nail.png remapped: res://assets/sprites/quests/dead_nail.png
+Loading resource: res://.godot/imported/dead_nail.png-cd2a162e7d13436f4426389afe30e8b0.ctex remapped: res://.godot/imported/dead_nail.png-cd2a162e7d13436f4426389afe30e8b0.ctex
+Completed load for: 'res://assets/sprites/quests/dead_nail.png' remapped 'res://assets/sprites/quests/dead_nail.png' at thread -1
+Loading resource: res://assets/sprites/quests/ice_vortex.png remapped: res://assets/sprites/quests/ice_vortex.png
+Loading resource: res://.godot/imported/ice_vortex.png-5614a7e1466b688db6b79b6260e0e2c8.ctex remapped: res://.godot/imported/ice_vortex.png-5614a7e1466b688db6b79b6260e0e2c8.ctex
+Completed load for: 'res://assets/sprites/quests/ice_vortex.png' remapped 'res://assets/sprites/quests/ice_vortex.png' at thread -1
+Loading resource: res://assets/sprites/pickups/chest_closed.png remapped: res://assets/sprites/pickups/chest_closed.png
+Loading resource: res://.godot/imported/chest_closed.png-750add2a573fd2fa8e1bf1333f355d54.ctex remapped: res://.godot/imported/chest_closed.png-750add2a573fd2fa8e1bf1333f355d54.ctex
+Completed load for: 'res://assets/sprites/pickups/chest_closed.png' remapped 'res://assets/sprites/pickups/chest_closed.png' at thread -1
+Loading resource: res://assets/sprites/pickups/chest_open.png remapped: res://assets/sprites/pickups/chest_open.png
+Loading resource: res://.godot/imported/chest_open.png-37158494c222dda51ff77ace9f0798c1.ctex remapped: res://.godot/imported/chest_open.png-37158494c222dda51ff77ace9f0798c1.ctex
+Completed load for: 'res://assets/sprites/pickups/chest_open.png' remapped 'res://assets/sprites/pickups/chest_open.png' at thread -1
+Loading resource: res://assets/sprites/quests/iron_brazier.png remapped: res://assets/sprites/quests/iron_brazier.png
+Loading resource: res://.godot/imported/iron_brazier.png-bcaf8d858fe7c7e0ea0082fee0ec4a25.ctex remapped: res://.godot/imported/iron_brazier.png-bcaf8d858fe7c7e0ea0082fee0ec4a25.ctex
+Completed load for: 'res://assets/sprites/quests/iron_brazier.png' remapped 'res://assets/sprites/quests/iron_brazier.png' at thread -1
+Loading resource: res://assets/sprites/quests/fate_thread_gold.png remapped: res://assets/sprites/quests/fate_thread_gold.png
+Loading resource: res://.godot/imported/fate_thread_gold.png-f69157894f056ba931603aed026027c5.ctex remapped: res://.godot/imported/fate_thread_gold.png-f69157894f056ba931603aed026027c5.ctex
+Completed load for: 'res://assets/sprites/quests/fate_thread_gold.png' remapped 'res://assets/sprites/quests/fate_thread_gold.png' at thread -1
+Loading resource: res://assets/sprites/quests/fate_thread_silver.png remapped: res://assets/sprites/quests/fate_thread_silver.png
+Loading resource: res://.godot/imported/fate_thread_silver.png-2bc8051d30a1adc30a8d606e719e920b.ctex remapped: res://.godot/imported/fate_thread_silver.png-2bc8051d30a1adc30a8d606e719e920b.ctex
+Completed load for: 'res://assets/sprites/quests/fate_thread_silver.png' remapped 'res://assets/sprites/quests/fate_thread_silver.png' at thread -1
+Loading resource: res://assets/sprites/quests/fate_thread_black.png remapped: res://assets/sprites/quests/fate_thread_black.png
+Loading resource: res://.godot/imported/fate_thread_black.png-5f5ae4241507e75622559edc58cdfaab.ctex remapped: res://.godot/imported/fate_thread_black.png-5f5ae4241507e75622559edc58cdfaab.ctex
+Completed load for: 'res://assets/sprites/quests/fate_thread_black.png' remapped 'res://assets/sprites/quests/fate_thread_black.png' at thread -1
+Loading resource: res://assets/sprites/quests/fate_thread_white.png remapped: res://assets/sprites/quests/fate_thread_white.png
+Loading resource: res://.godot/imported/fate_thread_white.png-d2e3dd54ce58f25c1e123a226c373473.ctex remapped: res://.godot/imported/fate_thread_white.png-d2e3dd54ce58f25c1e123a226c373473.ctex
+Completed load for: 'res://assets/sprites/quests/fate_thread_white.png' remapped 'res://assets/sprites/quests/fate_thread_white.png' at thread -1
+Loading resource: res://assets/sprites/quests/fate_thread_gray.png remapped: res://assets/sprites/quests/fate_thread_gray.png
+Loading resource: res://.godot/imported/fate_thread_gray.png-f87bc8c29acae81ae48648524850c217.ctex remapped: res://.godot/imported/fate_thread_gray.png-f87bc8c29acae81ae48648524850c217.ctex
+Completed load for: 'res://assets/sprites/quests/fate_thread_gray.png' remapped 'res://assets/sprites/quests/fate_thread_gray.png' at thread -1
+Loading resource: res://assets/sprites/quests/sun_ember.png remapped: res://assets/sprites/quests/sun_ember.png
+Loading resource: res://.godot/imported/sun_ember.png-d1c3af94269f4387ea9ba5576bde78a5.ctex remapped: res://.godot/imported/sun_ember.png-d1c3af94269f4387ea9ba5576bde78a5.ctex
+Completed load for: 'res://assets/sprites/quests/sun_ember.png' remapped 'res://assets/sprites/quests/sun_ember.png' at thread -1
+Loading resource: res://assets/sprites/quests/sun_altar.png remapped: res://assets/sprites/quests/sun_altar.png
+Loading resource: res://.godot/imported/sun_altar.png-47ad18584b17559aae1b580f4154a87f.ctex remapped: res://.godot/imported/sun_altar.png-47ad18584b17559aae1b580f4154a87f.ctex
+Completed load for: 'res://assets/sprites/quests/sun_altar.png' remapped 'res://assets/sprites/quests/sun_altar.png' at thread -1
+Loading resource: res://assets/sprites/quests/ice_fishing_hole.png remapped: res://assets/sprites/quests/ice_fishing_hole.png
+Loading resource: res://.godot/imported/ice_fishing_hole.png-21569ae5f8e54df5777bba4a789a7c36.ctex remapped: res://.godot/imported/ice_fishing_hole.png-21569ae5f8e54df5777bba4a789a7c36.ctex
+Completed load for: 'res://assets/sprites/quests/ice_fishing_hole.png' remapped 'res://assets/sprites/quests/ice_fishing_hole.png' at thread -1
+Loading resource: res://assets/sprites/quests/giant_footprint.png remapped: res://assets/sprites/quests/giant_footprint.png
+Loading resource: res://.godot/imported/giant_footprint.png-7f7b1a13035b6444798ce12219678370.ctex remapped: res://.godot/imported/giant_footprint.png-7f7b1a13035b6444798ce12219678370.ctex
+Completed load for: 'res://assets/sprites/quests/giant_footprint.png' remapped 'res://assets/sprites/quests/giant_footprint.png' at thread -1
+Loading resource: res://assets/sprites/quests/tombstone_dormant.png remapped: res://assets/sprites/quests/tombstone_dormant.png
+Loading resource: res://.godot/imported/tombstone_dormant.png-5404f16027dd73a8bde1fc8a3e844c1b.ctex remapped: res://.godot/imported/tombstone_dormant.png-5404f16027dd73a8bde1fc8a3e844c1b.ctex
+Completed load for: 'res://assets/sprites/quests/tombstone_dormant.png' remapped 'res://assets/sprites/quests/tombstone_dormant.png' at thread -1
+Loading resource: res://assets/sprites/quests/tombstone_awakened.png remapped: res://assets/sprites/quests/tombstone_awakened.png
+Loading resource: res://.godot/imported/tombstone_awakened.png-2def9609d77f8e98375a005dd9ce64d7.ctex remapped: res://.godot/imported/tombstone_awakened.png-2def9609d77f8e98375a005dd9ce64d7.ctex
+Completed load for: 'res://assets/sprites/quests/tombstone_awakened.png' remapped 'res://assets/sprites/quests/tombstone_awakened.png' at thread -1
+Loading resource: res://assets/sprites/quests/einherjar_idle.png remapped: res://assets/sprites/quests/einherjar_idle.png
+Loading resource: res://.godot/imported/einherjar_idle.png-92f3fe143fb893a4f8060f861fbf3a8b.ctex remapped: res://.godot/imported/einherjar_idle.png-92f3fe143fb893a4f8060f861fbf3a8b.ctex
+Completed load for: 'res://assets/sprites/quests/einherjar_idle.png' remapped 'res://assets/sprites/quests/einherjar_idle.png' at thread -1
+Loading resource: res://assets/sprites/quests/einherjar_attack.png remapped: res://assets/sprites/quests/einherjar_attack.png
+Loading resource: res://.godot/imported/einherjar_attack.png-81bb34b34ef2c48f820067e6ea0807e9.ctex remapped: res://.godot/imported/einherjar_attack.png-81bb34b34ef2c48f820067e6ea0807e9.ctex
+Completed load for: 'res://assets/sprites/quests/einherjar_attack.png' remapped 'res://assets/sprites/quests/einherjar_attack.png' at thread -1
+Loading resource: res://assets/sprites/quests/glowing_rune_01.png remapped: res://assets/sprites/quests/glowing_rune_01.png
+Loading resource: res://.godot/imported/glowing_rune_01.png-f88343085030ea4fe29fde60eb2536b9.ctex remapped: res://.godot/imported/glowing_rune_01.png-f88343085030ea4fe29fde60eb2536b9.ctex
+Completed load for: 'res://assets/sprites/quests/glowing_rune_01.png' remapped 'res://assets/sprites/quests/glowing_rune_01.png' at thread -1
+Loading resource: res://assets/sprites/quests/glowing_rune_02.png remapped: res://assets/sprites/quests/glowing_rune_02.png
+Loading resource: res://.godot/imported/glowing_rune_02.png-7b496cea53195e4e3e483d129eb2711f.ctex remapped: res://.godot/imported/glowing_rune_02.png-7b496cea53195e4e3e483d129eb2711f.ctex
+Completed load for: 'res://assets/sprites/quests/glowing_rune_02.png' remapped 'res://assets/sprites/quests/glowing_rune_02.png' at thread -1
+Loading resource: res://assets/sprites/quests/glowing_rune_03.png remapped: res://assets/sprites/quests/glowing_rune_03.png
+Loading resource: res://.godot/imported/glowing_rune_03.png-969f98b1eed1d0b0d3fc735c8739a51f.ctex remapped: res://.godot/imported/glowing_rune_03.png-969f98b1eed1d0b0d3fc735c8739a51f.ctex
+Completed load for: 'res://assets/sprites/quests/glowing_rune_03.png' remapped 'res://assets/sprites/quests/glowing_rune_03.png' at thread -1
+Loading resource: res://assets/sprites/quests/bridge_guard.png remapped: res://assets/sprites/quests/bridge_guard.png
+Loading resource: res://.godot/imported/bridge_guard.png-1b07c6e455076c31c8df053036804a6d.ctex remapped: res://.godot/imported/bridge_guard.png-1b07c6e455076c31c8df053036804a6d.ctex
+Completed load for: 'res://assets/sprites/quests/bridge_guard.png' remapped 'res://assets/sprites/quests/bridge_guard.png' at thread -1
+Loading resource: res://assets/sprites/quests/bridge_guard_idle.png remapped: res://assets/sprites/quests/bridge_guard_idle.png
+Loading resource: res://.godot/imported/bridge_guard_idle.png-373d9c0f0745eebd9055fd495eca3ae1.ctex remapped: res://.godot/imported/bridge_guard_idle.png-373d9c0f0745eebd9055fd495eca3ae1.ctex
+Completed load for: 'res://assets/sprites/quests/bridge_guard_idle.png' remapped 'res://assets/sprites/quests/bridge_guard_idle.png' at thread -1
+Loading resource: res://assets/sprites/quests/iron_horseshoe.png remapped: res://assets/sprites/quests/iron_horseshoe.png
+Loading resource: res://.godot/imported/iron_horseshoe.png-b8d4433183c31f2832c03bc817c47c27.ctex remapped: res://.godot/imported/iron_horseshoe.png-b8d4433183c31f2832c03bc817c47c27.ctex
+Completed load for: 'res://assets/sprites/quests/iron_horseshoe.png' remapped 'res://assets/sprites/quests/iron_horseshoe.png' at thread -1
+Loading resource: res://assets/sprites/quests/river_sword.png remapped: res://assets/sprites/quests/river_sword.png
+Loading resource: res://.godot/imported/river_sword.png-a0aa799d69170daeca962a1460071515.ctex remapped: res://.godot/imported/river_sword.png-a0aa799d69170daeca962a1460071515.ctex
+Completed load for: 'res://assets/sprites/quests/river_sword.png' remapped 'res://assets/sprites/quests/river_sword.png' at thread -1
+Loading resource: res://assets/sprites/effects/ice_pillar.png remapped: res://assets/sprites/effects/ice_pillar.png
+Loading resource: res://.godot/imported/ice_pillar.png-6391da424ed0bb6e330ec1955b5f307b.ctex remapped: res://.godot/imported/ice_pillar.png-6391da424ed0bb6e330ec1955b5f307b.ctex
+Completed load for: 'res://assets/sprites/effects/ice_pillar.png' remapped 'res://assets/sprites/effects/ice_pillar.png' at thread -1
+Loading resource: res://assets/sprites/pickups/xp_gem.png remapped: res://assets/sprites/pickups/xp_gem.png
+Loading resource: res://.godot/imported/xp_gem.png-4df29aee9d65b0843f3017c64d5131ad.ctex remapped: res://.godot/imported/xp_gem.png-4df29aee9d65b0843f3017c64d5131ad.ctex
+Completed load for: 'res://assets/sprites/pickups/xp_gem.png' remapped 'res://assets/sprites/pickups/xp_gem.png' at thread -1
+Loading resource: res://assets/sprites/pickups/xp_gem_large.png remapped: res://assets/sprites/pickups/xp_gem_large.png
+Loading resource: res://.godot/imported/xp_gem_large.png-d020e7daa98364f82b282f1463293bf9.ctex remapped: res://.godot/imported/xp_gem_large.png-d020e7daa98364f82b282f1463293bf9.ctex
+Completed load for: 'res://assets/sprites/pickups/xp_gem_large.png' remapped 'res://assets/sprites/pickups/xp_gem_large.png' at thread -1
+Loading resource: res://assets/sprites/effects/lightning.png remapped: res://assets/sprites/effects/lightning.png
+Loading resource: res://.godot/imported/lightning.png-fb4a83ee8e21efc2824b2864baff9f83.ctex remapped: res://.godot/imported/lightning.png-fb4a83ee8e21efc2824b2864baff9f83.ctex
+Completed load for: 'res://assets/sprites/effects/lightning.png' remapped 'res://assets/sprites/effects/lightning.png' at thread -1
+Completed load for: 'res://scripts/core/save_data.gd' remapped 'res://scripts/core/save_data.gd' at thread -1
+Loading resource: res://locale/text.en.translation remapped: res://locale/text.en.translation
+Completed load for: 'res://locale/text.en.translation' remapped 'res://locale/text.en.translation' at thread -1
+Loaded system CA certificates
+Loading resource: res://scripts/world/midgard_map.gd remapped: res://scripts/world/midgard_map.gd
+Completed load for: 'res://scripts/world/midgard_map.gd' remapped 'res://scripts/world/midgard_map.gd' at thread -1
+Loading resource: res://assets/sprites/ground/midgard/frozen_dirt.png remapped: res://assets/sprites/ground/midgard/frozen_dirt.png
+Loading resource: res://.godot/imported/frozen_dirt.png-f90ff1309d386d9ed341bd6cbed6f742.ctex remapped: res://.godot/imported/frozen_dirt.png-f90ff1309d386d9ed341bd6cbed6f742.ctex
+Completed load for: 'res://assets/sprites/ground/midgard/frozen_dirt.png' remapped 'res://assets/sprites/ground/midgard/frozen_dirt.png' at thread -1
+Loading resource: res://assets/sprites/ground/midgard/ice.png remapped: res://assets/sprites/ground/midgard/ice.png
+Loading resource: res://.godot/imported/ice.png-3989605587c3a51a029a546852ac46c7.ctex remapped: res://.godot/imported/ice.png-3989605587c3a51a029a546852ac46c7.ctex
+Completed load for: 'res://assets/sprites/ground/midgard/ice.png' remapped 'res://assets/sprites/ground/midgard/ice.png' at thread -1
+Loading resource: res://assets/sprites/ground/midgard/ice_02.png remapped: res://assets/sprites/ground/midgard/ice_02.png
+Loading resource: res://.godot/imported/ice_02.png-f4255021780aaf8b69eb409f672aa912.ctex remapped: res://.godot/imported/ice_02.png-f4255021780aaf8b69eb409f672aa912.ctex
+Completed load for: 'res://assets/sprites/ground/midgard/ice_02.png' remapped 'res://assets/sprites/ground/midgard/ice_02.png' at thread -1
+Loading resource: res://assets/sprites/ground/midgard/ice_edge_e.png remapped: res://assets/sprites/ground/midgard/ice_edge_e.png
+Loading resource: res://.godot/imported/ice_edge_e.png-30d2f0109224ee13839c638203ba4037.ctex remapped: res://.godot/imported/ice_edge_e.png-30d2f0109224ee13839c638203ba4037.ctex
+Completed load for: 'res://assets/sprites/ground/midgard/ice_edge_e.png' remapped 'res://assets/sprites/ground/midgard/ice_edge_e.png' at thread -1
+Loading resource: res://assets/sprites/ground/midgard/ice_edge_inner_ne.png remapped: res://assets/sprites/ground/midgard/ice_edge_inner_ne.png
+Loading resource: res://.godot/imported/ice_edge_inner_ne.png-e4d5247cad2cdfe808cc9092a466c737.ctex remapped: res://.godot/imported/ice_edge_inner_ne.png-e4d5247cad2cdfe808cc9092a466c737.ctex
+Completed load for: 'res://assets/sprites/ground/midgard/ice_edge_inner_ne.png' remapped 'res://assets/sprites/ground/midgard/ice_edge_inner_ne.png' at thread -1
+Loading resource: res://assets/sprites/ground/midgard/ice_edge_inner_nw.png remapped: res://assets/sprites/ground/midgard/ice_edge_inner_nw.png
+Loading resource: res://.godot/imported/ice_edge_inner_nw.png-17b5bf5a75c7645739e3efea8abd725a.ctex remapped: res://.godot/imported/ice_edge_inner_nw.png-17b5bf5a75c7645739e3efea8abd725a.ctex
+Completed load for: 'res://assets/sprites/ground/midgard/ice_edge_inner_nw.png' remapped 'res://assets/sprites/ground/midgard/ice_edge_inner_nw.png' at thread -1
+Loading resource: res://assets/sprites/ground/midgard/ice_edge_inner_se.png remapped: res://assets/sprites/ground/midgard/ice_edge_inner_se.png
+Loading resource: res://.godot/imported/ice_edge_inner_se.png-22dc9cd58ec580ebbeda6cef88185596.ctex remapped: res://.godot/imported/ice_edge_inner_se.png-22dc9cd58ec580ebbeda6cef88185596.ctex
+Completed load for: 'res://assets/sprites/ground/midgard/ice_edge_inner_se.png' remapped 'res://assets/sprites/ground/midgard/ice_edge_inner_se.png' at thread -1
+Loading resource: res://assets/sprites/ground/midgard/ice_edge_inner_sw.png remapped: res://assets/sprites/ground/midgard/ice_edge_inner_sw.png
+Loading resource: res://.godot/imported/ice_edge_inner_sw.png-9a19dec6c2d774ef666f5655efd19cd5.ctex remapped: res://.godot/imported/ice_edge_inner_sw.png-9a19dec6c2d774ef666f5655efd19cd5.ctex
+Completed load for: 'res://assets/sprites/ground/midgard/ice_edge_inner_sw.png' remapped 'res://assets/sprites/ground/midgard/ice_edge_inner_sw.png' at thread -1
+Loading resource: res://assets/sprites/ground/midgard/ice_edge_n.png remapped: res://assets/sprites/ground/midgard/ice_edge_n.png
+Loading resource: res://.godot/imported/ice_edge_n.png-ba7384ac3a21f18610b87f57cc899e7c.ctex remapped: res://.godot/imported/ice_edge_n.png-ba7384ac3a21f18610b87f57cc899e7c.ctex
+Completed load for: 'res://assets/sprites/ground/midgard/ice_edge_n.png' remapped 'res://assets/sprites/ground/midgard/ice_edge_n.png' at thread -1
+Loading resource: res://assets/sprites/ground/midgard/ice_edge_outer_ne.png remapped: res://assets/sprites/ground/midgard/ice_edge_outer_ne.png
+Loading resource: res://.godot/imported/ice_edge_outer_ne.png-55080848773b32f644653bac9b140b93.ctex remapped: res://.godot/imported/ice_edge_outer_ne.png-55080848773b32f644653bac9b140b93.ctex
+Completed load for: 'res://assets/sprites/ground/midgard/ice_edge_outer_ne.png' remapped 'res://assets/sprites/ground/midgard/ice_edge_outer_ne.png' at thread -1
+Loading resource: res://assets/sprites/ground/midgard/ice_edge_outer_nw.png remapped: res://assets/sprites/ground/midgard/ice_edge_outer_nw.png
+Loading resource: res://.godot/imported/ice_edge_outer_nw.png-1bc87079f279f639f19f0b5d1212940e.ctex remapped: res://.godot/imported/ice_edge_outer_nw.png-1bc87079f279f639f19f0b5d1212940e.ctex
+Completed load for: 'res://assets/sprites/ground/midgard/ice_edge_outer_nw.png' remapped 'res://assets/sprites/ground/midgard/ice_edge_outer_nw.png' at thread -1
+Loading resource: res://assets/sprites/ground/midgard/ice_edge_outer_se.png remapped: res://assets/sprites/ground/midgard/ice_edge_outer_se.png
+Loading resource: res://.godot/imported/ice_edge_outer_se.png-a294ccf11e935909a1980029ec2b2c6e.ctex remapped: res://.godot/imported/ice_edge_outer_se.png-a294ccf11e935909a1980029ec2b2c6e.ctex
+Completed load for: 'res://assets/sprites/ground/midgard/ice_edge_outer_se.png' remapped 'res://assets/sprites/ground/midgard/ice_edge_outer_se.png' at thread -1
+Loading resource: res://assets/sprites/ground/midgard/ice_edge_outer_sw.png remapped: res://assets/sprites/ground/midgard/ice_edge_outer_sw.png
+Loading resource: res://.godot/imported/ice_edge_outer_sw.png-86a2f1fdcb680628582683ec8a4d018f.ctex remapped: res://.godot/imported/ice_edge_outer_sw.png-86a2f1fdcb680628582683ec8a4d018f.ctex
+Completed load for: 'res://assets/sprites/ground/midgard/ice_edge_outer_sw.png' remapped 'res://assets/sprites/ground/midgard/ice_edge_outer_sw.png' at thread -1
+Loading resource: res://assets/sprites/ground/midgard/ice_edge_s.png remapped: res://assets/sprites/ground/midgard/ice_edge_s.png
+Loading resource: res://.godot/imported/ice_edge_s.png-c83236ee02f4d01f304c008de7572f9c.ctex remapped: res://.godot/imported/ice_edge_s.png-c83236ee02f4d01f304c008de7572f9c.ctex
+Completed load for: 'res://assets/sprites/ground/midgard/ice_edge_s.png' remapped 'res://assets/sprites/ground/midgard/ice_edge_s.png' at thread -1
+Loading resource: res://assets/sprites/ground/midgard/ice_edge_w.png remapped: res://assets/sprites/ground/midgard/ice_edge_w.png
+Loading resource: res://.godot/imported/ice_edge_w.png-a9f5f2e8883090809a228ea8dcb7b94e.ctex remapped: res://.godot/imported/ice_edge_w.png-a9f5f2e8883090809a228ea8dcb7b94e.ctex
+Completed load for: 'res://assets/sprites/ground/midgard/ice_edge_w.png' remapped 'res://assets/sprites/ground/midgard/ice_edge_w.png' at thread -1
+Loading resource: res://assets/sprites/ground/midgard/path_edge_e.png remapped: res://assets/sprites/ground/midgard/path_edge_e.png
+Loading resource: res://.godot/imported/path_edge_e.png-5f9fc6a8978956db7ab820b23f10ee50.ctex remapped: res://.godot/imported/path_edge_e.png-5f9fc6a8978956db7ab820b23f10ee50.ctex
+Completed load for: 'res://assets/sprites/ground/midgard/path_edge_e.png' remapped 'res://assets/sprites/ground/midgard/path_edge_e.png' at thread -1
+Loading resource: res://assets/sprites/ground/midgard/path_edge_inner_ne.png remapped: res://assets/sprites/ground/midgard/path_edge_inner_ne.png
+Loading resource: res://.godot/imported/path_edge_inner_ne.png-f2db6457622922dae7b5b644536c2820.ctex remapped: res://.godot/imported/path_edge_inner_ne.png-f2db6457622922dae7b5b644536c2820.ctex
+Completed load for: 'res://assets/sprites/ground/midgard/path_edge_inner_ne.png' remapped 'res://assets/sprites/ground/midgard/path_edge_inner_ne.png' at thread -1
+Loading resource: res://assets/sprites/ground/midgard/path_edge_inner_nw.png remapped: res://assets/sprites/ground/midgard/path_edge_inner_nw.png
+Loading resource: res://.godot/imported/path_edge_inner_nw.png-d07f43ed1e96065567a98377c432a023.ctex remapped: res://.godot/imported/path_edge_inner_nw.png-d07f43ed1e96065567a98377c432a023.ctex
+Completed load for: 'res://assets/sprites/ground/midgard/path_edge_inner_nw.png' remapped 'res://assets/sprites/ground/midgard/path_edge_inner_nw.png' at thread -1
+Loading resource: res://assets/sprites/ground/midgard/path_edge_inner_se.png remapped: res://assets/sprites/ground/midgard/path_edge_inner_se.png
+Loading resource: res://.godot/imported/path_edge_inner_se.png-cd846faec6fdb0ca107823068ee47aee.ctex remapped: res://.godot/imported/path_edge_inner_se.png-cd846faec6fdb0ca107823068ee47aee.ctex
+Completed load for: 'res://assets/sprites/ground/midgard/path_edge_inner_se.png' remapped 'res://assets/sprites/ground/midgard/path_edge_inner_se.png' at thread -1
+Loading resource: res://assets/sprites/ground/midgard/path_edge_inner_sw.png remapped: res://assets/sprites/ground/midgard/path_edge_inner_sw.png
+Loading resource: res://.godot/imported/path_edge_inner_sw.png-e5de1c08613b639a78151650519cc1b0.ctex remapped: res://.godot/imported/path_edge_inner_sw.png-e5de1c08613b639a78151650519cc1b0.ctex
+Completed load for: 'res://assets/sprites/ground/midgard/path_edge_inner_sw.png' remapped 'res://assets/sprites/ground/midgard/path_edge_inner_sw.png' at thread -1
+Loading resource: res://assets/sprites/ground/midgard/path_edge_n.png remapped: res://assets/sprites/ground/midgard/path_edge_n.png
+Loading resource: res://.godot/imported/path_edge_n.png-f1c5323f61a8b964af69fe2fa9a4c8ce.ctex remapped: res://.godot/imported/path_edge_n.png-f1c5323f61a8b964af69fe2fa9a4c8ce.ctex
+Completed load for: 'res://assets/sprites/ground/midgard/path_edge_n.png' remapped 'res://assets/sprites/ground/midgard/path_edge_n.png' at thread -1
+Loading resource: res://assets/sprites/ground/midgard/path_edge_outer_ne.png remapped: res://assets/sprites/ground/midgard/path_edge_outer_ne.png
+Loading resource: res://.godot/imported/path_edge_outer_ne.png-db7267d58cd7b37b033062d536dc6bfc.ctex remapped: res://.godot/imported/path_edge_outer_ne.png-db7267d58cd7b37b033062d536dc6bfc.ctex
+Completed load for: 'res://assets/sprites/ground/midgard/path_edge_outer_ne.png' remapped 'res://assets/sprites/ground/midgard/path_edge_outer_ne.png' at thread -1
+Loading resource: res://assets/sprites/ground/midgard/path_edge_outer_nw.png remapped: res://assets/sprites/ground/midgard/path_edge_outer_nw.png
+Loading resource: res://.godot/imported/path_edge_outer_nw.png-aac14c5f5d9352639e7298b114c77029.ctex remapped: res://.godot/imported/path_edge_outer_nw.png-aac14c5f5d9352639e7298b114c77029.ctex
+Completed load for: 'res://assets/sprites/ground/midgard/path_edge_outer_nw.png' remapped 'res://assets/sprites/ground/midgard/path_edge_outer_nw.png' at thread -1
+Loading resource: res://assets/sprites/ground/midgard/path_edge_outer_se.png remapped: res://assets/sprites/ground/midgard/path_edge_outer_se.png
+Loading resource: res://.godot/imported/path_edge_outer_se.png-78f6eceefd4ee1325fddd93cf6557b56.ctex remapped: res://.godot/imported/path_edge_outer_se.png-78f6eceefd4ee1325fddd93cf6557b56.ctex
+Completed load for: 'res://assets/sprites/ground/midgard/path_edge_outer_se.png' remapped 'res://assets/sprites/ground/midgard/path_edge_outer_se.png' at thread -1
+Loading resource: res://assets/sprites/ground/midgard/path_edge_outer_sw.png remapped: res://assets/sprites/ground/midgard/path_edge_outer_sw.png
+Loading resource: res://.godot/imported/path_edge_outer_sw.png-b75c20353e6f037e3fb30dfd309316eb.ctex remapped: res://.godot/imported/path_edge_outer_sw.png-b75c20353e6f037e3fb30dfd309316eb.ctex
+Completed load for: 'res://assets/sprites/ground/midgard/path_edge_outer_sw.png' remapped 'res://assets/sprites/ground/midgard/path_edge_outer_sw.png' at thread -1
+Loading resource: res://assets/sprites/ground/midgard/path_edge_s.png remapped: res://assets/sprites/ground/midgard/path_edge_s.png
+Loading resource: res://.godot/imported/path_edge_s.png-df10ae52d6fa345cf90868e496605596.ctex remapped: res://.godot/imported/path_edge_s.png-df10ae52d6fa345cf90868e496605596.ctex
+Completed load for: 'res://assets/sprites/ground/midgard/path_edge_s.png' remapped 'res://assets/sprites/ground/midgard/path_edge_s.png' at thread -1
+Loading resource: res://assets/sprites/ground/midgard/path_edge_w.png remapped: res://assets/sprites/ground/midgard/path_edge_w.png
+Loading resource: res://.godot/imported/path_edge_w.png-b13ad4983333fce850d217811a6a65b1.ctex remapped: res://.godot/imported/path_edge_w.png-b13ad4983333fce850d217811a6a65b1.ctex
+Completed load for: 'res://assets/sprites/ground/midgard/path_edge_w.png' remapped 'res://assets/sprites/ground/midgard/path_edge_w.png' at thread -1
+Loading resource: res://assets/sprites/ground/midgard/snow_01.png remapped: res://assets/sprites/ground/midgard/snow_01.png
+Loading resource: res://.godot/imported/snow_01.png-7b1e72f61e32ceff4d58645036ae99fb.ctex remapped: res://.godot/imported/snow_01.png-7b1e72f61e32ceff4d58645036ae99fb.ctex
+Completed load for: 'res://assets/sprites/ground/midgard/snow_01.png' remapped 'res://assets/sprites/ground/midgard/snow_01.png' at thread -1
+Loading resource: res://assets/sprites/ground/midgard/snow_02.png remapped: res://assets/sprites/ground/midgard/snow_02.png
+Loading resource: res://.godot/imported/snow_02.png-f0cc0a529515eb5068d3e0a6137a6cc4.ctex remapped: res://.godot/imported/snow_02.png-f0cc0a529515eb5068d3e0a6137a6cc4.ctex
+Completed load for: 'res://assets/sprites/ground/midgard/snow_02.png' remapped 'res://assets/sprites/ground/midgard/snow_02.png' at thread -1
+Loading resource: res://assets/sprites/ground/midgard/snow_03.png remapped: res://assets/sprites/ground/midgard/snow_03.png
+Loading resource: res://.godot/imported/snow_03.png-528338dbdee73c37fc3f6da347aa124e.ctex remapped: res://.godot/imported/snow_03.png-528338dbdee73c37fc3f6da347aa124e.ctex
+Completed load for: 'res://assets/sprites/ground/midgard/snow_03.png' remapped 'res://assets/sprites/ground/midgard/snow_03.png' at thread -1
+Loading resource: res://assets/sprites/ground/midgard/snow_04.png remapped: res://assets/sprites/ground/midgard/snow_04.png
+Loading resource: res://.godot/imported/snow_04.png-0506f382d884c03444384d733cd17ea1.ctex remapped: res://.godot/imported/snow_04.png-0506f382d884c03444384d733cd17ea1.ctex
+Completed load for: 'res://assets/sprites/ground/midgard/snow_04.png' remapped 'res://assets/sprites/ground/midgard/snow_04.png' at thread -1
+Loading resource: res://assets/sprites/ground/midgard/snow_thin.png remapped: res://assets/sprites/ground/midgard/snow_thin.png
+Loading resource: res://.godot/imported/snow_thin.png-f8f47ee1c9a77ed45d248a32efd786e6.ctex remapped: res://.godot/imported/snow_thin.png-f8f47ee1c9a77ed45d248a32efd786e6.ctex
+Completed load for: 'res://assets/sprites/ground/midgard/snow_thin.png' remapped 'res://assets/sprites/ground/midgard/snow_thin.png' at thread -1
+Loading resource: res://assets/sprites/ground/midgard/snow_trampled.png remapped: res://assets/sprites/ground/midgard/snow_trampled.png
+Loading resource: res://.godot/imported/snow_trampled.png-d6ca884bdbf30ac394be7419ee90e535.ctex remapped: res://.godot/imported/snow_trampled.png-d6ca884bdbf30ac394be7419ee90e535.ctex
+Completed load for: 'res://assets/sprites/ground/midgard/snow_trampled.png' remapped 'res://assets/sprites/ground/midgard/snow_trampled.png' at thread -1
+Loading resource: res://assets/sprites/borders/midgard/cliff_ice_01.png remapped: res://assets/sprites/borders/midgard/cliff_ice_01.png
+Loading resource: res://.godot/imported/cliff_ice_01.png-cd4df0cdb0d79b31ca71d5df30630b07.ctex remapped: res://.godot/imported/cliff_ice_01.png-cd4df0cdb0d79b31ca71d5df30630b07.ctex
+Completed load for: 'res://assets/sprites/borders/midgard/cliff_ice_01.png' remapped 'res://assets/sprites/borders/midgard/cliff_ice_01.png' at thread -1
+Loading resource: res://assets/sprites/borders/midgard/rock_wall_01.png remapped: res://assets/sprites/borders/midgard/rock_wall_01.png
+Loading resource: res://.godot/imported/rock_wall_01.png-9fbbcb8c81f0f1ed174e0bc0888e0b3b.ctex remapped: res://.godot/imported/rock_wall_01.png-9fbbcb8c81f0f1ed174e0bc0888e0b3b.ctex
+Completed load for: 'res://assets/sprites/borders/midgard/rock_wall_01.png' remapped 'res://assets/sprites/borders/midgard/rock_wall_01.png' at thread -1
+Loading resource: res://assets/sprites/borders/midgard/dead_forest_01.png remapped: res://assets/sprites/borders/midgard/dead_forest_01.png
+Loading resource: res://.godot/imported/dead_forest_01.png-7709df5b61f79045c623ecb2966c9a27.ctex remapped: res://.godot/imported/dead_forest_01.png-7709df5b61f79045c623ecb2966c9a27.ctex
+Completed load for: 'res://assets/sprites/borders/midgard/dead_forest_01.png' remapped 'res://assets/sprites/borders/midgard/dead_forest_01.png' at thread -1
+Loading resource: res://assets/sprites/borders/midgard/frozen_sea_01.png remapped: res://assets/sprites/borders/midgard/frozen_sea_01.png
+Loading resource: res://.godot/imported/frozen_sea_01.png-1bd43f0b2d64187fd828436f5b40d212.ctex remapped: res://.godot/imported/frozen_sea_01.png-1bd43f0b2d64187fd828436f5b40d212.ctex
+Completed load for: 'res://assets/sprites/borders/midgard/frozen_sea_01.png' remapped 'res://assets/sprites/borders/midgard/frozen_sea_01.png' at thread -1
+Loading resource: res://assets/sprites/borders/midgard/border_corner_nw.png remapped: res://assets/sprites/borders/midgard/border_corner_nw.png
+Loading resource: res://.godot/imported/border_corner_nw.png-0908586207cfb45af0dc4680bec1613e.ctex remapped: res://.godot/imported/border_corner_nw.png-0908586207cfb45af0dc4680bec1613e.ctex
+Completed load for: 'res://assets/sprites/borders/midgard/border_corner_nw.png' remapped 'res://assets/sprites/borders/midgard/border_corner_nw.png' at thread -1
+Loading resource: res://assets/sprites/borders/midgard/border_corner_ne.png remapped: res://assets/sprites/borders/midgard/border_corner_ne.png
+Loading resource: res://.godot/imported/border_corner_ne.png-b647eb0a74a04519bd8581e26fe5fe8e.ctex remapped: res://.godot/imported/border_corner_ne.png-b647eb0a74a04519bd8581e26fe5fe8e.ctex
+Completed load for: 'res://assets/sprites/borders/midgard/border_corner_ne.png' remapped 'res://assets/sprites/borders/midgard/border_corner_ne.png' at thread -1
+Loading resource: res://assets/sprites/borders/midgard/border_corner_sw.png remapped: res://assets/sprites/borders/midgard/border_corner_sw.png
+Loading resource: res://.godot/imported/border_corner_sw.png-a8de477649eed41605e21bf9757070cb.ctex remapped: res://.godot/imported/border_corner_sw.png-a8de477649eed41605e21bf9757070cb.ctex
+Completed load for: 'res://assets/sprites/borders/midgard/border_corner_sw.png' remapped 'res://assets/sprites/borders/midgard/border_corner_sw.png' at thread -1
+Loading resource: res://assets/sprites/borders/midgard/border_corner_se.png remapped: res://assets/sprites/borders/midgard/border_corner_se.png
+Loading resource: res://.godot/imported/border_corner_se.png-25ee741b4f790204530050a94d1f1f63.ctex remapped: res://.godot/imported/border_corner_se.png-25ee741b4f790204530050a94d1f1f63.ctex
+Completed load for: 'res://assets/sprites/borders/midgard/border_corner_se.png' remapped 'res://assets/sprites/borders/midgard/border_corner_se.png' at thread -1
+Loading resource: res://assets/sprites/decals/midgard/cart_ruts_02.png remapped: res://assets/sprites/decals/midgard/cart_ruts_02.png
+Loading resource: res://.godot/imported/cart_ruts_02.png-4a1d5e98248a2f7d1f1cdcbe438a63fa.ctex remapped: res://.godot/imported/cart_ruts_02.png-4a1d5e98248a2f7d1f1cdcbe438a63fa.ctex
+Completed load for: 'res://assets/sprites/decals/midgard/cart_ruts_02.png' remapped 'res://assets/sprites/decals/midgard/cart_ruts_02.png' at thread -1
+Loading resource: res://assets/sprites/decals/midgard/human_tracks_02.png remapped: res://assets/sprites/decals/midgard/human_tracks_02.png
+Loading resource: res://.godot/imported/human_tracks_02.png-7c2af81c69c1280c72105e2b088d9dde.ctex remapped: res://.godot/imported/human_tracks_02.png-7c2af81c69c1280c72105e2b088d9dde.ctex
+Completed load for: 'res://assets/sprites/decals/midgard/human_tracks_02.png' remapped 'res://assets/sprites/decals/midgard/human_tracks_02.png' at thread -1
+Loading resource: res://assets/sprites/decals/midgard/human_tracks_01.png remapped: res://assets/sprites/decals/midgard/human_tracks_01.png
+Loading resource: res://.godot/imported/human_tracks_01.png-2dc44093e31cff608a142273d8bb2fcd.ctex remapped: res://.godot/imported/human_tracks_01.png-2dc44093e31cff608a142273d8bb2fcd.ctex
+Completed load for: 'res://assets/sprites/decals/midgard/human_tracks_01.png' remapped 'res://assets/sprites/decals/midgard/human_tracks_01.png' at thread -1
+Loading resource: res://assets/sprites/decals/midgard/cart_ruts_01.png remapped: res://assets/sprites/decals/midgard/cart_ruts_01.png
+Loading resource: res://.godot/imported/cart_ruts_01.png-bcc568401c0c6904e2cc3295f07765f7.ctex remapped: res://.godot/imported/cart_ruts_01.png-bcc568401c0c6904e2cc3295f07765f7.ctex
+Completed load for: 'res://assets/sprites/decals/midgard/cart_ruts_01.png' remapped 'res://assets/sprites/decals/midgard/cart_ruts_01.png' at thread -1
+Loading resource: res://assets/sprites/decals/midgard/wolf_tracks_02.png remapped: res://assets/sprites/decals/midgard/wolf_tracks_02.png
+Loading resource: res://.godot/imported/wolf_tracks_02.png-3371983acbec4d911aeb480804407a3a.ctex remapped: res://.godot/imported/wolf_tracks_02.png-3371983acbec4d911aeb480804407a3a.ctex
+Completed load for: 'res://assets/sprites/decals/midgard/wolf_tracks_02.png' remapped 'res://assets/sprites/decals/midgard/wolf_tracks_02.png' at thread -1
+Loading resource: res://assets/sprites/decals/midgard/wolf_tracks_01.png remapped: res://assets/sprites/decals/midgard/wolf_tracks_01.png
+Loading resource: res://.godot/imported/wolf_tracks_01.png-e65a5152381b4bff89d2bb97e64e891d.ctex remapped: res://.godot/imported/wolf_tracks_01.png-e65a5152381b4bff89d2bb97e64e891d.ctex
+Completed load for: 'res://assets/sprites/decals/midgard/wolf_tracks_01.png' remapped 'res://assets/sprites/decals/midgard/wolf_tracks_01.png' at thread -1
+Loading resource: res://assets/sprites/props/midgard/runestone_01.png remapped: res://assets/sprites/props/midgard/runestone_01.png
+Loading resource: res://.godot/imported/runestone_01.png-0145fc49a16b0942e301be2acbe5392c.ctex remapped: res://.godot/imported/runestone_01.png-0145fc49a16b0942e301be2acbe5392c.ctex
+Completed load for: 'res://assets/sprites/props/midgard/runestone_01.png' remapped 'res://assets/sprites/props/midgard/runestone_01.png' at thread -1
+Loading resource: res://assets/sprites/props/midgard/rock_01.png remapped: res://assets/sprites/props/midgard/rock_01.png
+Loading resource: res://.godot/imported/rock_01.png-21dc82d01aea5cb2d3d73b0ef3885d61.ctex remapped: res://.godot/imported/rock_01.png-21dc82d01aea5cb2d3d73b0ef3885d61.ctex
+Completed load for: 'res://assets/sprites/props/midgard/rock_01.png' remapped 'res://assets/sprites/props/midgard/rock_01.png' at thread -1
+Loading resource: res://assets/sprites/props/midgard/cart_overturned.png remapped: res://assets/sprites/props/midgard/cart_overturned.png
+Loading resource: res://.godot/imported/cart_overturned.png-a2d845aa0dc2752f9fee9fe068785e42.ctex remapped: res://.godot/imported/cart_overturned.png-a2d845aa0dc2752f9fee9fe068785e42.ctex
+Completed load for: 'res://assets/sprites/props/midgard/cart_overturned.png' remapped 'res://assets/sprites/props/midgard/cart_overturned.png' at thread -1
+Loading resource: res://assets/sprites/props/midgard/barrel_01.png remapped: res://assets/sprites/props/midgard/barrel_01.png
+Loading resource: res://.godot/imported/barrel_01.png-29ef1ca3c76e01589ae9d2abd0555f7a.ctex remapped: res://.godot/imported/barrel_01.png-29ef1ca3c76e01589ae9d2abd0555f7a.ctex
+Completed load for: 'res://assets/sprites/props/midgard/barrel_01.png' remapped 'res://assets/sprites/props/midgard/barrel_01.png' at thread -1
+Loading resource: res://assets/sprites/props/midgard/barrel_02.png remapped: res://assets/sprites/props/midgard/barrel_02.png
+Loading resource: res://.godot/imported/barrel_02.png-edb48f3bd331fd19ec75cf744c68922a.ctex remapped: res://.godot/imported/barrel_02.png-edb48f3bd331fd19ec75cf744c68922a.ctex
+Completed load for: 'res://assets/sprites/props/midgard/barrel_02.png' remapped 'res://assets/sprites/props/midgard/barrel_02.png' at thread -1
+Loading resource: res://assets/sprites/props/midgard/sack_01.png remapped: res://assets/sprites/props/midgard/sack_01.png
+Loading resource: res://.godot/imported/sack_01.png-0bc997f957112a775e7641053c67129a.ctex remapped: res://.godot/imported/sack_01.png-0bc997f957112a775e7641053c67129a.ctex
+Completed load for: 'res://assets/sprites/props/midgard/sack_01.png' remapped 'res://assets/sprites/props/midgard/sack_01.png' at thread -1
+Loading resource: res://assets/sprites/props/midgard/sack_02.png remapped: res://assets/sprites/props/midgard/sack_02.png
+Loading resource: res://.godot/imported/sack_02.png-d1c8ef32a1fe0918bc839dec52b4f2f1.ctex remapped: res://.godot/imported/sack_02.png-d1c8ef32a1fe0918bc839dec52b4f2f1.ctex
+Completed load for: 'res://assets/sprites/props/midgard/sack_02.png' remapped 'res://assets/sprites/props/midgard/sack_02.png' at thread -1
+Loading resource: res://assets/sprites/props/midgard/signpost_01.png remapped: res://assets/sprites/props/midgard/signpost_01.png
+Loading resource: res://.godot/imported/signpost_01.png-b4a997dbf90508017a7f998e945b0b77.ctex remapped: res://.godot/imported/signpost_01.png-b4a997dbf90508017a7f998e945b0b77.ctex
+Completed load for: 'res://assets/sprites/props/midgard/signpost_01.png' remapped 'res://assets/sprites/props/midgard/signpost_01.png' at thread -1
+Loading resource: res://assets/sprites/props/midgard/signpost_02.png remapped: res://assets/sprites/props/midgard/signpost_02.png
+Loading resource: res://.godot/imported/signpost_02.png-54cc55a8d2ab549086f3138fe5c0ce92.ctex remapped: res://.godot/imported/signpost_02.png-54cc55a8d2ab549086f3138fe5c0ce92.ctex
+Completed load for: 'res://assets/sprites/props/midgard/signpost_02.png' remapped 'res://assets/sprites/props/midgard/signpost_02.png' at thread -1
+Loading resource: res://assets/sprites/props/midgard/snowdrift_01.png remapped: res://assets/sprites/props/midgard/snowdrift_01.png
+Loading resource: res://.godot/imported/snowdrift_01.png-023691810ffe4e5e2190ae40f5cde046.ctex remapped: res://.godot/imported/snowdrift_01.png-023691810ffe4e5e2190ae40f5cde046.ctex
+Completed load for: 'res://assets/sprites/props/midgard/snowdrift_01.png' remapped 'res://assets/sprites/props/midgard/snowdrift_01.png' at thread -1
+Loading resource: res://assets/sprites/props/midgard/snowdrift_02.png remapped: res://assets/sprites/props/midgard/snowdrift_02.png
+Loading resource: res://.godot/imported/snowdrift_02.png-ecfb2587e26a43b319cb07f9ac8eefc5.ctex remapped: res://.godot/imported/snowdrift_02.png-ecfb2587e26a43b319cb07f9ac8eefc5.ctex
+Completed load for: 'res://assets/sprites/props/midgard/snowdrift_02.png' remapped 'res://assets/sprites/props/midgard/snowdrift_02.png' at thread -1
+Loading resource: res://assets/sprites/props/midgard/longhouse_snow.png remapped: res://assets/sprites/props/midgard/longhouse_snow.png
+Loading resource: res://.godot/imported/longhouse_snow.png-70f6e101563f69281bc291b00356cedf.ctex remapped: res://.godot/imported/longhouse_snow.png-70f6e101563f69281bc291b00356cedf.ctex
+Completed load for: 'res://assets/sprites/props/midgard/longhouse_snow.png' remapped 'res://assets/sprites/props/midgard/longhouse_snow.png' at thread -1
+Loading resource: res://assets/sprites/props/midgard/longhouse_frame.png remapped: res://assets/sprites/props/midgard/longhouse_frame.png
+Loading resource: res://.godot/imported/longhouse_frame.png-7517c62cb6116b67b6843f4f92f4cdec.ctex remapped: res://.godot/imported/longhouse_frame.png-7517c62cb6116b67b6843f4f92f4cdec.ctex
+Completed load for: 'res://assets/sprites/props/midgard/longhouse_frame.png' remapped 'res://assets/sprites/props/midgard/longhouse_frame.png' at thread -1
+Loading resource: res://assets/sprites/props/midgard/longhouse_ridge.png remapped: res://assets/sprites/props/midgard/longhouse_ridge.png
+Loading resource: res://.godot/imported/longhouse_ridge.png-146ead8a6b36c2fdd08bff7658029cda.ctex remapped: res://.godot/imported/longhouse_ridge.png-146ead8a6b36c2fdd08bff7658029cda.ctex
+Completed load for: 'res://assets/sprites/props/midgard/longhouse_ridge.png' remapped 'res://assets/sprites/props/midgard/longhouse_ridge.png' at thread -1
+Loading resource: res://assets/sprites/props/midgard/collapsed_cabin.png remapped: res://assets/sprites/props/midgard/collapsed_cabin.png
+Loading resource: res://.godot/imported/collapsed_cabin.png-319a99388f254446dad92a2f1a0d435d.ctex remapped: res://.godot/imported/collapsed_cabin.png-319a99388f254446dad92a2f1a0d435d.ctex
+Completed load for: 'res://assets/sprites/props/midgard/collapsed_cabin.png' remapped 'res://assets/sprites/props/midgard/collapsed_cabin.png' at thread -1
+Loading resource: res://assets/sprites/props/midgard/fence_broken_01.png remapped: res://assets/sprites/props/midgard/fence_broken_01.png
+Loading resource: res://.godot/imported/fence_broken_01.png-9212753212d551be35c8ee5710237f3d.ctex remapped: res://.godot/imported/fence_broken_01.png-9212753212d551be35c8ee5710237f3d.ctex
+Completed load for: 'res://assets/sprites/props/midgard/fence_broken_01.png' remapped 'res://assets/sprites/props/midgard/fence_broken_01.png' at thread -1
+Loading resource: res://assets/sprites/props/midgard/fence.png remapped: res://assets/sprites/props/midgard/fence.png
+Loading resource: res://.godot/imported/fence.png-4b113a26050acd079342c0520df768a1.ctex remapped: res://.godot/imported/fence.png-4b113a26050acd079342c0520df768a1.ctex
+Completed load for: 'res://assets/sprites/props/midgard/fence.png' remapped 'res://assets/sprites/props/midgard/fence.png' at thread -1
+Loading resource: res://assets/sprites/props/midgard/fence_broken_02.png remapped: res://assets/sprites/props/midgard/fence_broken_02.png
+Loading resource: res://.godot/imported/fence_broken_02.png-7a48516ec8cbbecac70269a2959d60d0.ctex remapped: res://.godot/imported/fence_broken_02.png-7a48516ec8cbbecac70269a2959d60d0.ctex
+Completed load for: 'res://assets/sprites/props/midgard/fence_broken_02.png' remapped 'res://assets/sprites/props/midgard/fence_broken_02.png' at thread -1
+Loading resource: res://assets/sprites/props/midgard/fence_gate.png remapped: res://assets/sprites/props/midgard/fence_gate.png
+Loading resource: res://.godot/imported/fence_gate.png-70692df45f9124ea71f6b33a467b12db.ctex remapped: res://.godot/imported/fence_gate.png-70692df45f9124ea71f6b33a467b12db.ctex
+Completed load for: 'res://assets/sprites/props/midgard/fence_gate.png' remapped 'res://assets/sprites/props/midgard/fence_gate.png' at thread -1
+Loading resource: res://assets/sprites/decals/midgard/blood_03.png remapped: res://assets/sprites/decals/midgard/blood_03.png
+Loading resource: res://.godot/imported/blood_03.png-98c557524cb2e091a5f58db7f026acf9.ctex remapped: res://.godot/imported/blood_03.png-98c557524cb2e091a5f58db7f026acf9.ctex
+Completed load for: 'res://assets/sprites/decals/midgard/blood_03.png' remapped 'res://assets/sprites/decals/midgard/blood_03.png' at thread -1
+Loading resource: res://assets/sprites/decals/midgard/blood_01.png remapped: res://assets/sprites/decals/midgard/blood_01.png
+Loading resource: res://.godot/imported/blood_01.png-53648fcf6c320d252055243b1debc3d3.ctex remapped: res://.godot/imported/blood_01.png-53648fcf6c320d252055243b1debc3d3.ctex
+Completed load for: 'res://assets/sprites/decals/midgard/blood_01.png' remapped 'res://assets/sprites/decals/midgard/blood_01.png' at thread -1
+Loading resource: res://assets/sprites/props/midgard/broken_shield_02.png remapped: res://assets/sprites/props/midgard/broken_shield_02.png
+Loading resource: res://.godot/imported/broken_shield_02.png-8c4da97bfc0cabe1ece3989e2b1c540a.ctex remapped: res://.godot/imported/broken_shield_02.png-8c4da97bfc0cabe1ece3989e2b1c540a.ctex
+Completed load for: 'res://assets/sprites/props/midgard/broken_shield_02.png' remapped 'res://assets/sprites/props/midgard/broken_shield_02.png' at thread -1
+Loading resource: res://assets/sprites/props/midgard/weapons_in_snow.png remapped: res://assets/sprites/props/midgard/weapons_in_snow.png
+Loading resource: res://.godot/imported/weapons_in_snow.png-b1cce538f16daf032f2366bb00b1e5c7.ctex remapped: res://.godot/imported/weapons_in_snow.png-b1cce538f16daf032f2366bb00b1e5c7.ctex
+Completed load for: 'res://assets/sprites/props/midgard/weapons_in_snow.png' remapped 'res://assets/sprites/props/midgard/weapons_in_snow.png' at thread -1
+Loading resource: res://assets/sprites/decals/midgard/blood_02.png remapped: res://assets/sprites/decals/midgard/blood_02.png
+Loading resource: res://.godot/imported/blood_02.png-60d3b41b1c2c1ee0b13f29609bf590ca.ctex remapped: res://.godot/imported/blood_02.png-60d3b41b1c2c1ee0b13f29609bf590ca.ctex
+Completed load for: 'res://assets/sprites/decals/midgard/blood_02.png' remapped 'res://assets/sprites/decals/midgard/blood_02.png' at thread -1
+Loading resource: res://assets/sprites/props/midgard/broken_shield_01.png remapped: res://assets/sprites/props/midgard/broken_shield_01.png
+Loading resource: res://.godot/imported/broken_shield_01.png-16b4b15bd97cc69fa237e3b35f13cc1e.ctex remapped: res://.godot/imported/broken_shield_01.png-16b4b15bd97cc69fa237e3b35f13cc1e.ctex
+Completed load for: 'res://assets/sprites/props/midgard/broken_shield_01.png' remapped 'res://assets/sprites/props/midgard/broken_shield_01.png' at thread -1
+Loading resource: res://assets/sprites/props/midgard/frozen_well.png remapped: res://assets/sprites/props/midgard/frozen_well.png
+Loading resource: res://.godot/imported/frozen_well.png-8e7a4930025262bba9d3351bd09888f9.ctex remapped: res://.godot/imported/frozen_well.png-8e7a4930025262bba9d3351bd09888f9.ctex
+Completed load for: 'res://assets/sprites/props/midgard/frozen_well.png' remapped 'res://assets/sprites/props/midgard/frozen_well.png' at thread -1
+Loading resource: res://assets/sprites/props/midgard/fish_rack.png remapped: res://assets/sprites/props/midgard/fish_rack.png
+Loading resource: res://.godot/imported/fish_rack.png-19ba2e16a5eb0fd921c639ee0a6c25cf.ctex remapped: res://.godot/imported/fish_rack.png-19ba2e16a5eb0fd921c639ee0a6c25cf.ctex
+Completed load for: 'res://assets/sprites/props/midgard/fish_rack.png' remapped 'res://assets/sprites/props/midgard/fish_rack.png' at thread -1
+Loading resource: res://assets/sprites/props/midgard/chopping_block.png remapped: res://assets/sprites/props/midgard/chopping_block.png
+Loading resource: res://.godot/imported/chopping_block.png-dc5b0ef543bdb6db9e88cc1ced40a847.ctex remapped: res://.godot/imported/chopping_block.png-dc5b0ef543bdb6db9e88cc1ced40a847.ctex
+Completed load for: 'res://assets/sprites/props/midgard/chopping_block.png' remapped 'res://assets/sprites/props/midgard/chopping_block.png' at thread -1
+Loading resource: res://assets/sprites/props/midgard/sheep_pen.png remapped: res://assets/sprites/props/midgard/sheep_pen.png
+Loading resource: res://.godot/imported/sheep_pen.png-b36938a294e3331ecd13a326bdbde31c.ctex remapped: res://.godot/imported/sheep_pen.png-b36938a294e3331ecd13a326bdbde31c.ctex
+Completed load for: 'res://assets/sprites/props/midgard/sheep_pen.png' remapped 'res://assets/sprites/props/midgard/sheep_pen.png' at thread -1
+Loading resource: res://assets/sprites/props/midgard/campfire_unlit.png remapped: res://assets/sprites/props/midgard/campfire_unlit.png
+Loading resource: res://.godot/imported/campfire_unlit.png-e4994f0a0e90b2091ea0706838be9527.ctex remapped: res://.godot/imported/campfire_unlit.png-e4994f0a0e90b2091ea0706838be9527.ctex
+Completed load for: 'res://assets/sprites/props/midgard/campfire_unlit.png' remapped 'res://assets/sprites/props/midgard/campfire_unlit.png' at thread -1
+Loading resource: res://assets/sprites/props/midgard/snowdrift_03.png remapped: res://assets/sprites/props/midgard/snowdrift_03.png
+Loading resource: res://.godot/imported/snowdrift_03.png-e169c9120baec98bae62b185bf1d8b1f.ctex remapped: res://.godot/imported/snowdrift_03.png-e169c9120baec98bae62b185bf1d8b1f.ctex
+Completed load for: 'res://assets/sprites/props/midgard/snowdrift_03.png' remapped 'res://assets/sprites/props/midgard/snowdrift_03.png' at thread -1
+Loading resource: res://assets/sprites/props/midgard/longship_wreck.png remapped: res://assets/sprites/props/midgard/longship_wreck.png
+Loading resource: res://.godot/imported/longship_wreck.png-1ec3e4bc81420dadc89c00150d0fcfa3.ctex remapped: res://.godot/imported/longship_wreck.png-1ec3e4bc81420dadc89c00150d0fcfa3.ctex
+Completed load for: 'res://assets/sprites/props/midgard/longship_wreck.png' remapped 'res://assets/sprites/props/midgard/longship_wreck.png' at thread -1
+Loading resource: res://assets/sprites/props/midgard/pier_straight_01.png remapped: res://assets/sprites/props/midgard/pier_straight_01.png
+Loading resource: res://.godot/imported/pier_straight_01.png-392a02758a375cdcb425f9d3781de3ce.ctex remapped: res://.godot/imported/pier_straight_01.png-392a02758a375cdcb425f9d3781de3ce.ctex
+Completed load for: 'res://assets/sprites/props/midgard/pier_straight_01.png' remapped 'res://assets/sprites/props/midgard/pier_straight_01.png' at thread -1
+Loading resource: res://assets/sprites/props/midgard/pier_straight_02.png remapped: res://assets/sprites/props/midgard/pier_straight_02.png
+Loading resource: res://.godot/imported/pier_straight_02.png-42a6010cda93b8c1131e1c9469195195.ctex remapped: res://.godot/imported/pier_straight_02.png-42a6010cda93b8c1131e1c9469195195.ctex
+Completed load for: 'res://assets/sprites/props/midgard/pier_straight_02.png' remapped 'res://assets/sprites/props/midgard/pier_straight_02.png' at thread -1
+Loading resource: res://assets/sprites/props/midgard/pier_broken.png remapped: res://assets/sprites/props/midgard/pier_broken.png
+Loading resource: res://.godot/imported/pier_broken.png-0eae4b57d94f5dd41b3e2932c890efcd.ctex remapped: res://.godot/imported/pier_broken.png-0eae4b57d94f5dd41b3e2932c890efcd.ctex
+Completed load for: 'res://assets/sprites/props/midgard/pier_broken.png' remapped 'res://assets/sprites/props/midgard/pier_broken.png' at thread -1
+Loading resource: res://assets/sprites/props/midgard/mooring_post_02.png remapped: res://assets/sprites/props/midgard/mooring_post_02.png
+Loading resource: res://.godot/imported/mooring_post_02.png-4e69d10b7af8a572932352663539790f.ctex remapped: res://.godot/imported/mooring_post_02.png-4e69d10b7af8a572932352663539790f.ctex
+Completed load for: 'res://assets/sprites/props/midgard/mooring_post_02.png' remapped 'res://assets/sprites/props/midgard/mooring_post_02.png' at thread -1
+Loading resource: res://assets/sprites/props/midgard/mooring_post_01.png remapped: res://assets/sprites/props/midgard/mooring_post_01.png
+Loading resource: res://.godot/imported/mooring_post_01.png-6c5a8ba99a7414bf94e9afad979e6612.ctex remapped: res://.godot/imported/mooring_post_01.png-6c5a8ba99a7414bf94e9afad979e6612.ctex
+Completed load for: 'res://assets/sprites/props/midgard/mooring_post_01.png' remapped 'res://assets/sprites/props/midgard/mooring_post_01.png' at thread -1
+Loading resource: res://assets/sprites/props/midgard/fishing_net_01.png remapped: res://assets/sprites/props/midgard/fishing_net_01.png
+Loading resource: res://.godot/imported/fishing_net_01.png-80abeba8ae64741445a8c3bba5267e97.ctex remapped: res://.godot/imported/fishing_net_01.png-80abeba8ae64741445a8c3bba5267e97.ctex
+Completed load for: 'res://assets/sprites/props/midgard/fishing_net_01.png' remapped 'res://assets/sprites/props/midgard/fishing_net_01.png' at thread -1
+Loading resource: res://assets/sprites/props/midgard/fishing_net_02.png remapped: res://assets/sprites/props/midgard/fishing_net_02.png
+Loading resource: res://.godot/imported/fishing_net_02.png-d817db427caaca3fb4c271d2c25808a8.ctex remapped: res://.godot/imported/fishing_net_02.png-d817db427caaca3fb4c271d2c25808a8.ctex
+Completed load for: 'res://assets/sprites/props/midgard/fishing_net_02.png' remapped 'res://assets/sprites/props/midgard/fishing_net_02.png' at thread -1
+Loading resource: res://assets/sprites/props/midgard/boat_overturned.png remapped: res://assets/sprites/props/midgard/boat_overturned.png
+Loading resource: res://.godot/imported/boat_overturned.png-851b71b6296749d8343bda677d189c5e.ctex remapped: res://.godot/imported/boat_overturned.png-851b71b6296749d8343bda677d189c5e.ctex
+Completed load for: 'res://assets/sprites/props/midgard/boat_overturned.png' remapped 'res://assets/sprites/props/midgard/boat_overturned.png' at thread -1
+Loading resource: res://assets/sprites/props/midgard/crate_stack_01.png remapped: res://assets/sprites/props/midgard/crate_stack_01.png
+Loading resource: res://.godot/imported/crate_stack_01.png-50c719ab242cd8423f686e999a7d1148.ctex remapped: res://.godot/imported/crate_stack_01.png-50c719ab242cd8423f686e999a7d1148.ctex
+Completed load for: 'res://assets/sprites/props/midgard/crate_stack_01.png' remapped 'res://assets/sprites/props/midgard/crate_stack_01.png' at thread -1
+Loading resource: res://assets/sprites/props/midgard/crate_stack_02.png remapped: res://assets/sprites/props/midgard/crate_stack_02.png
+Loading resource: res://.godot/imported/crate_stack_02.png-56c12e1fd28d4790249499ef60394efa.ctex remapped: res://.godot/imported/crate_stack_02.png-56c12e1fd28d4790249499ef60394efa.ctex
+Completed load for: 'res://assets/sprites/props/midgard/crate_stack_02.png' remapped 'res://assets/sprites/props/midgard/crate_stack_02.png' at thread -1
+Loading resource: res://assets/sprites/props/midgard/rock_02.png remapped: res://assets/sprites/props/midgard/rock_02.png
+Loading resource: res://.godot/imported/rock_02.png-df079338b4bdd5e9c6eb3650c76c85c0.ctex remapped: res://.godot/imported/rock_02.png-df079338b4bdd5e9c6eb3650c76c85c0.ctex
+Completed load for: 'res://assets/sprites/props/midgard/rock_02.png' remapped 'res://assets/sprites/props/midgard/rock_02.png' at thread -1
+Loading resource: res://assets/sprites/props/midgard/runestone_02.png remapped: res://assets/sprites/props/midgard/runestone_02.png
+Loading resource: res://.godot/imported/runestone_02.png-0a4dd994d15a0c9b4c48f7f0eeced57d.ctex remapped: res://.godot/imported/runestone_02.png-0a4dd994d15a0c9b4c48f7f0eeced57d.ctex
+Completed load for: 'res://assets/sprites/props/midgard/runestone_02.png' remapped 'res://assets/sprites/props/midgard/runestone_02.png' at thread -1
+Loading resource: res://assets/sprites/props/midgard/runestone_03.png remapped: res://assets/sprites/props/midgard/runestone_03.png
+Loading resource: res://.godot/imported/runestone_03.png-8f545fa9c49a2fdd58f8b5bf0f5c4260.ctex remapped: res://.godot/imported/runestone_03.png-8f545fa9c49a2fdd58f8b5bf0f5c4260.ctex
+Completed load for: 'res://assets/sprites/props/midgard/runestone_03.png' remapped 'res://assets/sprites/props/midgard/runestone_03.png' at thread -1
+Loading resource: res://assets/sprites/props/midgard/altar_01.png remapped: res://assets/sprites/props/midgard/altar_01.png
+Loading resource: res://.godot/imported/altar_01.png-11178cf7d11aa09d78a3b9ff3ae26dc6.ctex remapped: res://.godot/imported/altar_01.png-11178cf7d11aa09d78a3b9ff3ae26dc6.ctex
+Completed load for: 'res://assets/sprites/props/midgard/altar_01.png' remapped 'res://assets/sprites/props/midgard/altar_01.png' at thread -1
+Loading resource: res://assets/sprites/props/midgard/drinking_horn_01.png remapped: res://assets/sprites/props/midgard/drinking_horn_01.png
+Loading resource: res://.godot/imported/drinking_horn_01.png-4275ef88c6e0ce9dfb6aab0a8f8edfa6.ctex remapped: res://.godot/imported/drinking_horn_01.png-4275ef88c6e0ce9dfb6aab0a8f8edfa6.ctex
+Completed load for: 'res://assets/sprites/props/midgard/drinking_horn_01.png' remapped 'res://assets/sprites/props/midgard/drinking_horn_01.png' at thread -1
+Loading resource: res://assets/sprites/props/midgard/mistletoe_02.png remapped: res://assets/sprites/props/midgard/mistletoe_02.png
+Loading resource: res://.godot/imported/mistletoe_02.png-e5ea2c29facb1e0de60be3d903fc5147.ctex remapped: res://.godot/imported/mistletoe_02.png-e5ea2c29facb1e0de60be3d903fc5147.ctex
+Completed load for: 'res://assets/sprites/props/midgard/mistletoe_02.png' remapped 'res://assets/sprites/props/midgard/mistletoe_02.png' at thread -1
+Loading resource: res://assets/sprites/props/midgard/drinking_horn_02.png remapped: res://assets/sprites/props/midgard/drinking_horn_02.png
+Loading resource: res://.godot/imported/drinking_horn_02.png-ecc14d7bc810f0cae8b891d6894b3b8b.ctex remapped: res://.godot/imported/drinking_horn_02.png-ecc14d7bc810f0cae8b891d6894b3b8b.ctex
+Completed load for: 'res://assets/sprites/props/midgard/drinking_horn_02.png' remapped 'res://assets/sprites/props/midgard/drinking_horn_02.png' at thread -1
+Loading resource: res://assets/sprites/props/midgard/mistletoe_01.png remapped: res://assets/sprites/props/midgard/mistletoe_01.png
+Loading resource: res://.godot/imported/mistletoe_01.png-30c2cedc929715eb5a1161e3f402235f.ctex remapped: res://.godot/imported/mistletoe_01.png-30c2cedc929715eb5a1161e3f402235f.ctex
+Completed load for: 'res://assets/sprites/props/midgard/mistletoe_01.png' remapped 'res://assets/sprites/props/midgard/mistletoe_01.png' at thread -1
+Loading resource: res://assets/sprites/props/midgard/raven_feathers.png remapped: res://assets/sprites/props/midgard/raven_feathers.png
+Loading resource: res://.godot/imported/raven_feathers.png-2d621a6885e989d4ef955f129eef547b.ctex remapped: res://.godot/imported/raven_feathers.png-2d621a6885e989d4ef955f129eef547b.ctex
+Completed load for: 'res://assets/sprites/props/midgard/raven_feathers.png' remapped 'res://assets/sprites/props/midgard/raven_feathers.png' at thread -1
+Loading resource: res://assets/sprites/props/midgard/burial_mound_open.png remapped: res://assets/sprites/props/midgard/burial_mound_open.png
+Loading resource: res://.godot/imported/burial_mound_open.png-2b8eb23b5c95be68d2411d242f19b905.ctex remapped: res://.godot/imported/burial_mound_open.png-2b8eb23b5c95be68d2411d242f19b905.ctex
+Completed load for: 'res://assets/sprites/props/midgard/burial_mound_open.png' remapped 'res://assets/sprites/props/midgard/burial_mound_open.png' at thread -1
+Loading resource: res://assets/sprites/decals/midgard/drag_mark_01.png remapped: res://assets/sprites/decals/midgard/drag_mark_01.png
+Loading resource: res://.godot/imported/drag_mark_01.png-f264427f411f34a0a3c613fbe24c03f2.ctex remapped: res://.godot/imported/drag_mark_01.png-f264427f411f34a0a3c613fbe24c03f2.ctex
+Completed load for: 'res://assets/sprites/decals/midgard/drag_mark_01.png' remapped 'res://assets/sprites/decals/midgard/drag_mark_01.png' at thread -1
+Loading resource: res://assets/sprites/props/midgard/burial_mound.png remapped: res://assets/sprites/props/midgard/burial_mound.png
+Loading resource: res://.godot/imported/burial_mound.png-5dfbec2d1c446d41e3576b2ba9db8fb0.ctex remapped: res://.godot/imported/burial_mound.png-5dfbec2d1c446d41e3576b2ba9db8fb0.ctex
+Completed load for: 'res://assets/sprites/props/midgard/burial_mound.png' remapped 'res://assets/sprites/props/midgard/burial_mound.png' at thread -1
+Loading resource: res://assets/sprites/props/midgard/burial_mound_collapsed.png remapped: res://assets/sprites/props/midgard/burial_mound_collapsed.png
+Loading resource: res://.godot/imported/burial_mound_collapsed.png-df03a18fe8a27d70b54ccc3abf325794.ctex remapped: res://.godot/imported/burial_mound_collapsed.png-df03a18fe8a27d70b54ccc3abf325794.ctex
+Completed load for: 'res://assets/sprites/props/midgard/burial_mound_collapsed.png' remapped 'res://assets/sprites/props/midgard/burial_mound_collapsed.png' at thread -1
+Loading resource: res://assets/sprites/decals/midgard/drag_mark_02.png remapped: res://assets/sprites/decals/midgard/drag_mark_02.png
+Loading resource: res://.godot/imported/drag_mark_02.png-762d65d85aca47f3120a32a3bf52c9b6.ctex remapped: res://.godot/imported/drag_mark_02.png-762d65d85aca47f3120a32a3bf52c9b6.ctex
+Completed load for: 'res://assets/sprites/decals/midgard/drag_mark_02.png' remapped 'res://assets/sprites/decals/midgard/drag_mark_02.png' at thread -1
+Loading resource: res://assets/sprites/props/midgard/grave_stone_small_02.png remapped: res://assets/sprites/props/midgard/grave_stone_small_02.png
+Loading resource: res://.godot/imported/grave_stone_small_02.png-51449ff5532950d6a8517bd3de3fa7d5.ctex remapped: res://.godot/imported/grave_stone_small_02.png-51449ff5532950d6a8517bd3de3fa7d5.ctex
+Completed load for: 'res://assets/sprites/props/midgard/grave_stone_small_02.png' remapped 'res://assets/sprites/props/midgard/grave_stone_small_02.png' at thread -1
+Loading resource: res://assets/sprites/props/midgard/grave_stone_small_01.png remapped: res://assets/sprites/props/midgard/grave_stone_small_01.png
+Loading resource: res://.godot/imported/grave_stone_small_01.png-f4d8d977117da9b54d740d46aa4be362.ctex remapped: res://.godot/imported/grave_stone_small_01.png-f4d8d977117da9b54d740d46aa4be362.ctex
+Completed load for: 'res://assets/sprites/props/midgard/grave_stone_small_01.png' remapped 'res://assets/sprites/props/midgard/grave_stone_small_01.png' at thread -1
+Loading resource: res://assets/sprites/props/midgard/headstone_fallen_01.png remapped: res://assets/sprites/props/midgard/headstone_fallen_01.png
+Loading resource: res://.godot/imported/headstone_fallen_01.png-8ed6dde9657bc55cc3f0e2883f19fce4.ctex remapped: res://.godot/imported/headstone_fallen_01.png-8ed6dde9657bc55cc3f0e2883f19fce4.ctex
+Completed load for: 'res://assets/sprites/props/midgard/headstone_fallen_01.png' remapped 'res://assets/sprites/props/midgard/headstone_fallen_01.png' at thread -1
+Loading resource: res://assets/sprites/props/midgard/headstone_fallen_02.png remapped: res://assets/sprites/props/midgard/headstone_fallen_02.png
+Loading resource: res://.godot/imported/headstone_fallen_02.png-a945a147dd74baf3f2adae987b75eba0.ctex remapped: res://.godot/imported/headstone_fallen_02.png-a945a147dd74baf3f2adae987b75eba0.ctex
+Completed load for: 'res://assets/sprites/props/midgard/headstone_fallen_02.png' remapped 'res://assets/sprites/props/midgard/headstone_fallen_02.png' at thread -1
+Loading resource: res://assets/sprites/props/midgard/burial_sword_01.png remapped: res://assets/sprites/props/midgard/burial_sword_01.png
+Loading resource: res://.godot/imported/burial_sword_01.png-b910403ac6a74796bd3e8bdcd480beb2.ctex remapped: res://.godot/imported/burial_sword_01.png-b910403ac6a74796bd3e8bdcd480beb2.ctex
+Completed load for: 'res://assets/sprites/props/midgard/burial_sword_01.png' remapped 'res://assets/sprites/props/midgard/burial_sword_01.png' at thread -1
+Loading resource: res://assets/sprites/props/midgard/burial_sword_02.png remapped: res://assets/sprites/props/midgard/burial_sword_02.png
+Loading resource: res://.godot/imported/burial_sword_02.png-cac42d0f235ee8889f251ee8ed8b8eaf.ctex remapped: res://.godot/imported/burial_sword_02.png-cac42d0f235ee8889f251ee8ed8b8eaf.ctex
+Completed load for: 'res://assets/sprites/props/midgard/burial_sword_02.png' remapped 'res://assets/sprites/props/midgard/burial_sword_02.png' at thread -1
+Loading resource: res://assets/sprites/props/midgard/bone_pile_01.png remapped: res://assets/sprites/props/midgard/bone_pile_01.png
+Loading resource: res://.godot/imported/bone_pile_01.png-d76284f160e9080a66e73cd9e0724362.ctex remapped: res://.godot/imported/bone_pile_01.png-d76284f160e9080a66e73cd9e0724362.ctex
+Completed load for: 'res://assets/sprites/props/midgard/bone_pile_01.png' remapped 'res://assets/sprites/props/midgard/bone_pile_01.png' at thread -1
+Loading resource: res://assets/sprites/props/midgard/bone_pile_02.png remapped: res://assets/sprites/props/midgard/bone_pile_02.png
+Loading resource: res://.godot/imported/bone_pile_02.png-57c0d182c731ac7aa1df52829ca99f69.ctex remapped: res://.godot/imported/bone_pile_02.png-57c0d182c731ac7aa1df52829ca99f69.ctex
+Completed load for: 'res://assets/sprites/props/midgard/bone_pile_02.png' remapped 'res://assets/sprites/props/midgard/bone_pile_02.png' at thread -1
+Loading resource: res://assets/sprites/props/midgard/fishing_boat_frozen.png remapped: res://assets/sprites/props/midgard/fishing_boat_frozen.png
+Loading resource: res://.godot/imported/fishing_boat_frozen.png-a2f8af621f5beea01fb7cb242e240a91.ctex remapped: res://.godot/imported/fishing_boat_frozen.png-a2f8af621f5beea01fb7cb242e240a91.ctex
+Completed load for: 'res://assets/sprites/props/midgard/fishing_boat_frozen.png' remapped 'res://assets/sprites/props/midgard/fishing_boat_frozen.png' at thread -1
+Loading resource: res://assets/sprites/decals/midgard/ice_crack_01.png remapped: res://assets/sprites/decals/midgard/ice_crack_01.png
+Loading resource: res://.godot/imported/ice_crack_01.png-372fb4c53d8f3a4ceb3b90cb54e05136.ctex remapped: res://.godot/imported/ice_crack_01.png-372fb4c53d8f3a4ceb3b90cb54e05136.ctex
+Completed load for: 'res://assets/sprites/decals/midgard/ice_crack_01.png' remapped 'res://assets/sprites/decals/midgard/ice_crack_01.png' at thread -1
+Loading resource: res://assets/sprites/decals/midgard/ice_crack_02.png remapped: res://assets/sprites/decals/midgard/ice_crack_02.png
+Loading resource: res://.godot/imported/ice_crack_02.png-93dbf427930561a15bc3d4c32bbbf859.ctex remapped: res://.godot/imported/ice_crack_02.png-93dbf427930561a15bc3d4c32bbbf859.ctex
+Completed load for: 'res://assets/sprites/decals/midgard/ice_crack_02.png' remapped 'res://assets/sprites/decals/midgard/ice_crack_02.png' at thread -1
+Loading resource: res://assets/sprites/decals/midgard/ice_crack_03.png remapped: res://assets/sprites/decals/midgard/ice_crack_03.png
+Loading resource: res://.godot/imported/ice_crack_03.png-761d7bb303cf1d7ebed8bbc9a0e02a66.ctex remapped: res://.godot/imported/ice_crack_03.png-761d7bb303cf1d7ebed8bbc9a0e02a66.ctex
+Completed load for: 'res://assets/sprites/decals/midgard/ice_crack_03.png' remapped 'res://assets/sprites/decals/midgard/ice_crack_03.png' at thread -1
+Loading resource: res://assets/sprites/props/midgard/underice_fish_01.png remapped: res://assets/sprites/props/midgard/underice_fish_01.png
+Loading resource: res://.godot/imported/underice_fish_01.png-6f9e9153017abd481bb4f3c5931fc985.ctex remapped: res://.godot/imported/underice_fish_01.png-6f9e9153017abd481bb4f3c5931fc985.ctex
+Completed load for: 'res://assets/sprites/props/midgard/underice_fish_01.png' remapped 'res://assets/sprites/props/midgard/underice_fish_01.png' at thread -1
+Loading resource: res://assets/sprites/props/midgard/underice_fish_02.png remapped: res://assets/sprites/props/midgard/underice_fish_02.png
+Loading resource: res://.godot/imported/underice_fish_02.png-9554dde6d3792d12e6858963d8f2f24b.ctex remapped: res://.godot/imported/underice_fish_02.png-9554dde6d3792d12e6858963d8f2f24b.ctex
+Completed load for: 'res://assets/sprites/props/midgard/underice_fish_02.png' remapped 'res://assets/sprites/props/midgard/underice_fish_02.png' at thread -1
+Loading resource: res://assets/sprites/props/midgard/underice_weeds_01.png remapped: res://assets/sprites/props/midgard/underice_weeds_01.png
+Loading resource: res://.godot/imported/underice_weeds_01.png-24b6635ee56b53a2d2fd2f0e93ac0422.ctex remapped: res://.godot/imported/underice_weeds_01.png-24b6635ee56b53a2d2fd2f0e93ac0422.ctex
+Completed load for: 'res://assets/sprites/props/midgard/underice_weeds_01.png' remapped 'res://assets/sprites/props/midgard/underice_weeds_01.png' at thread -1
+Loading resource: res://assets/sprites/props/midgard/underice_weeds_02.png remapped: res://assets/sprites/props/midgard/underice_weeds_02.png
+Loading resource: res://.godot/imported/underice_weeds_02.png-3ce9ee96775d59b12c0653cb9944ff97.ctex remapped: res://.godot/imported/underice_weeds_02.png-3ce9ee96775d59b12c0653cb9944ff97.ctex
+Completed load for: 'res://assets/sprites/props/midgard/underice_weeds_02.png' remapped 'res://assets/sprites/props/midgard/underice_weeds_02.png' at thread -1
+Loading resource: res://assets/sprites/decals/midgard/snow_shadow_01.png remapped: res://assets/sprites/decals/midgard/snow_shadow_01.png
+Loading resource: res://.godot/imported/snow_shadow_01.png-19cd57235e1dfec723191cab9f980588.ctex remapped: res://.godot/imported/snow_shadow_01.png-19cd57235e1dfec723191cab9f980588.ctex
+Completed load for: 'res://assets/sprites/decals/midgard/snow_shadow_01.png' remapped 'res://assets/sprites/decals/midgard/snow_shadow_01.png' at thread -1
+Loading resource: res://assets/sprites/props/midgard/dead_pine_02.png remapped: res://assets/sprites/props/midgard/dead_pine_02.png
+Loading resource: res://.godot/imported/dead_pine_02.png-70104617506c580e76fdf60d117ccec1.ctex remapped: res://.godot/imported/dead_pine_02.png-70104617506c580e76fdf60d117ccec1.ctex
+Completed load for: 'res://assets/sprites/props/midgard/dead_pine_02.png' remapped 'res://assets/sprites/props/midgard/dead_pine_02.png' at thread -1
+Loading resource: res://assets/sprites/props/midgard/dead_pine_01.png remapped: res://assets/sprites/props/midgard/dead_pine_01.png
+Loading resource: res://.godot/imported/dead_pine_01.png-b2fe29e9389c5f40f663a569df1f57d1.ctex remapped: res://.godot/imported/dead_pine_01.png-b2fe29e9389c5f40f663a569df1f57d1.ctex
+Completed load for: 'res://assets/sprites/props/midgard/dead_pine_01.png' remapped 'res://assets/sprites/props/midgard/dead_pine_01.png' at thread -1
+Loading resource: res://assets/sprites/props/midgard/raven_branch.png remapped: res://assets/sprites/props/midgard/raven_branch.png
+Loading resource: res://.godot/imported/raven_branch.png-3dc30024196d05f2e749ca984ed33dc1.ctex remapped: res://.godot/imported/raven_branch.png-3dc30024196d05f2e749ca984ed33dc1.ctex
+Completed load for: 'res://assets/sprites/props/midgard/raven_branch.png' remapped 'res://assets/sprites/props/midgard/raven_branch.png' at thread -1
+Loading resource: res://assets/sprites/decals/midgard/snow_shadow_02.png remapped: res://assets/sprites/decals/midgard/snow_shadow_02.png
+Loading resource: res://.godot/imported/snow_shadow_02.png-ece5d0a0e76fac85c0152f15c6a34aa8.ctex remapped: res://.godot/imported/snow_shadow_02.png-ece5d0a0e76fac85c0152f15c6a34aa8.ctex
+Completed load for: 'res://assets/sprites/decals/midgard/snow_shadow_02.png' remapped 'res://assets/sprites/decals/midgard/snow_shadow_02.png' at thread -1
+Loading resource: res://assets/sprites/props/midgard/dead_pine_03.png remapped: res://assets/sprites/props/midgard/dead_pine_03.png
+Loading resource: res://.godot/imported/dead_pine_03.png-7d3b867ca653c6f0036f73c0f56c8f51.ctex remapped: res://.godot/imported/dead_pine_03.png-7d3b867ca653c6f0036f73c0f56c8f51.ctex
+Completed load for: 'res://assets/sprites/props/midgard/dead_pine_03.png' remapped 'res://assets/sprites/props/midgard/dead_pine_03.png' at thread -1
+Loading resource: res://assets/sprites/props/midgard/rock_04.png remapped: res://assets/sprites/props/midgard/rock_04.png
+Loading resource: res://.godot/imported/rock_04.png-d569d83b7f281e60f408afcdf660b150.ctex remapped: res://.godot/imported/rock_04.png-d569d83b7f281e60f408afcdf660b150.ctex
+Completed load for: 'res://assets/sprites/props/midgard/rock_04.png' remapped 'res://assets/sprites/props/midgard/rock_04.png' at thread -1
+Loading resource: res://assets/sprites/props/midgard/rock_03.png remapped: res://assets/sprites/props/midgard/rock_03.png
+Loading resource: res://.godot/imported/rock_03.png-745810b7965092d1c1b2f57f90b19982.ctex remapped: res://.godot/imported/rock_03.png-745810b7965092d1c1b2f57f90b19982.ctex
+Completed load for: 'res://assets/sprites/props/midgard/rock_03.png' remapped 'res://assets/sprites/props/midgard/rock_03.png' at thread -1
+Loading resource: res://assets/sprites/props/midgard/fallen_log.png remapped: res://assets/sprites/props/midgard/fallen_log.png
+Loading resource: res://.godot/imported/fallen_log.png-ee1b4df1d3c175a1215032894e5bdd21.ctex remapped: res://.godot/imported/fallen_log.png-ee1b4df1d3c175a1215032894e5bdd21.ctex
+Completed load for: 'res://assets/sprites/props/midgard/fallen_log.png' remapped 'res://assets/sprites/props/midgard/fallen_log.png' at thread -1
+Loading resource: res://assets/sprites/props/midgard/bush_02.png remapped: res://assets/sprites/props/midgard/bush_02.png
+Loading resource: res://.godot/imported/bush_02.png-313acf75eb62cfa3e80176b29fb44d68.ctex remapped: res://.godot/imported/bush_02.png-313acf75eb62cfa3e80176b29fb44d68.ctex
+Completed load for: 'res://assets/sprites/props/midgard/bush_02.png' remapped 'res://assets/sprites/props/midgard/bush_02.png' at thread -1
+Loading resource: res://assets/sprites/props/midgard/bush_01.png remapped: res://assets/sprites/props/midgard/bush_01.png
+Loading resource: res://.godot/imported/bush_01.png-6d1bd6e69d4a91077c5e886e26a9d2dc.ctex remapped: res://.godot/imported/bush_01.png-6d1bd6e69d4a91077c5e886e26a9d2dc.ctex
+Completed load for: 'res://assets/sprites/props/midgard/bush_01.png' remapped 'res://assets/sprites/props/midgard/bush_01.png' at thread -1
+Loading resource: res://assets/sprites/props/midgard/frozen_horse.png remapped: res://assets/sprites/props/midgard/frozen_horse.png
+Loading resource: res://.godot/imported/frozen_horse.png-1c210a49958ccb83bf790bb6eeb951ca.ctex remapped: res://.godot/imported/frozen_horse.png-1c210a49958ccb83bf790bb6eeb951ca.ctex
+Completed load for: 'res://assets/sprites/props/midgard/frozen_horse.png' remapped 'res://assets/sprites/props/midgard/frozen_horse.png' at thread -1
+Loading resource: res://assets/audio/music/midgard.ogg remapped: res://assets/audio/music/midgard.ogg
+Loading resource: res://.godot/imported/midgard.ogg-78122fa20dfb427d383ed738a04f1ac6.oggvorbisstr remapped: res://.godot/imported/midgard.ogg-78122fa20dfb427d383ed738a04f1ac6.oggvorbisstr
+Completed load for: 'res://assets/audio/music/midgard.ogg' remapped 'res://assets/audio/music/midgard.ogg' at thread -1
+Loading resource: res://assets/sprites/characters/swordsman_idle.png remapped: res://assets/sprites/characters/swordsman_idle.png
+Loading resource: res://.godot/imported/swordsman_idle.png-075decd9626eb8bfbd2de59b7b233207.ctex remapped: res://.godot/imported/swordsman_idle.png-075decd9626eb8bfbd2de59b7b233207.ctex
+Completed load for: 'res://assets/sprites/characters/swordsman_idle.png' remapped 'res://assets/sprites/characters/swordsman_idle.png' at thread -1
+Loading resource: res://assets/sprites/characters/swordsman_move.png remapped: res://assets/sprites/characters/swordsman_move.png
+Loading resource: res://.godot/imported/swordsman_move.png-9f8e84d8f4b06f9a82f3d8f553ba44fa.ctex remapped: res://.godot/imported/swordsman_move.png-9f8e84d8f4b06f9a82f3d8f553ba44fa.ctex
+Completed load for: 'res://assets/sprites/characters/swordsman_move.png' remapped 'res://assets/sprites/characters/swordsman_move.png' at thread -1
+Loading resource: res://assets/sprites/characters/swordsman_attack.png remapped: res://assets/sprites/characters/swordsman_attack.png
+Loading resource: res://.godot/imported/swordsman_attack.png-f250eced4c4938a05e07ef804a080494.ctex remapped: res://.godot/imported/swordsman_attack.png-f250eced4c4938a05e07ef804a080494.ctex
+Completed load for: 'res://assets/sprites/characters/swordsman_attack.png' remapped 'res://assets/sprites/characters/swordsman_attack.png' at thread -1
+Loading resource: res://assets/sprites/characters/swordsman_hurt.png remapped: res://assets/sprites/characters/swordsman_hurt.png
+Loading resource: res://.godot/imported/swordsman_hurt.png-85d9bf67581584ea31520b73b8b492f3.ctex remapped: res://.godot/imported/swordsman_hurt.png-85d9bf67581584ea31520b73b8b492f3.ctex
+Completed load for: 'res://assets/sprites/characters/swordsman_hurt.png' remapped 'res://assets/sprites/characters/swordsman_hurt.png' at thread -1
+Loading resource: res://assets/sprites/characters/swordsman_death.png remapped: res://assets/sprites/characters/swordsman_death.png
+Loading resource: res://.godot/imported/swordsman_death.png-20d935ba0e226f661b3643d35a1741ef.ctex remapped: res://.godot/imported/swordsman_death.png-20d935ba0e226f661b3643d35a1741ef.ctex
+Completed load for: 'res://assets/sprites/characters/swordsman_death.png' remapped 'res://assets/sprites/characters/swordsman_death.png' at thread -1
+Loading resource: res://assets/sprites/cards/baldr.png remapped: res://assets/sprites/cards/baldr.png
+Loading resource: res://.godot/imported/baldr.png-8cb08353cf1508b608fcbbc6d1296b1a.ctex remapped: res://.godot/imported/baldr.png-8cb08353cf1508b608fcbbc6d1296b1a.ctex
+Completed load for: 'res://assets/sprites/cards/baldr.png' remapped 'res://assets/sprites/cards/baldr.png' at thread -1
+Loading resource: res://assets/sprites/cards/skadi.png remapped: res://assets/sprites/cards/skadi.png
+Loading resource: res://.godot/imported/skadi.png-e5cedb8e6a4cc29e5f176710b549e345.ctex remapped: res://.godot/imported/skadi.png-e5cedb8e6a4cc29e5f176710b549e345.ctex
+Completed load for: 'res://assets/sprites/cards/skadi.png' remapped 'res://assets/sprites/cards/skadi.png' at thread -1
+Loading resource: res://assets/sprites/cards/freyja.png remapped: res://assets/sprites/cards/freyja.png
+Loading resource: res://.godot/imported/freyja.png-f6b6289514ab8abc4ee052cb42e6cfd0.ctex remapped: res://.godot/imported/freyja.png-f6b6289514ab8abc4ee052cb42e6cfd0.ctex
+Completed load for: 'res://assets/sprites/cards/freyja.png' remapped 'res://assets/sprites/cards/freyja.png' at thread -1
+Loading resource: res://assets/audio/sfx/god_choose.wav remapped: res://assets/audio/sfx/god_choose.wav
+Loading resource: res://.godot/imported/god_choose.wav-dc03ab6705919419865ac0fb5206125d.sample remapped: res://.godot/imported/god_choose.wav-dc03ab6705919419865ac0fb5206125d.sample
+Completed load for: 'res://assets/audio/sfx/god_choose.wav' remapped 'res://assets/audio/sfx/god_choose.wav' at thread -1
+Loading resource: res://assets/audio/sfx/card_pick.wav remapped: res://assets/audio/sfx/card_pick.wav
+Loading resource: res://.godot/imported/card_pick.wav-7d728e26cec528a49ee055a0a45af8cb.sample remapped: res://.godot/imported/card_pick.wav-7d728e26cec528a49ee055a0a45af8cb.sample
+Completed load for: 'res://assets/audio/sfx/card_pick.wav' remapped 'res://assets/audio/sfx/card_pick.wav' at thread -1
+Loading resource: res://scripts/gods/baldr.gd remapped: res://scripts/gods/baldr.gd
+Completed load for: 'res://scripts/gods/baldr.gd' remapped 'res://scripts/gods/baldr.gd' at thread -1
+Loading resource: res://assets/sprites/effects/ultimates/dimension_cut.png remapped: res://assets/sprites/effects/ultimates/dimension_cut.png
+Loading resource: res://.godot/imported/dimension_cut.png-0de21b91e52009b699d841e8880acd49.ctex remapped: res://.godot/imported/dimension_cut.png-0de21b91e52009b699d841e8880acd49.ctex
+Completed load for: 'res://assets/sprites/effects/ultimates/dimension_cut.png' remapped 'res://assets/sprites/effects/ultimates/dimension_cut.png' at thread -1
+Loading resource: res://assets/sprites/effects/ultimates/west_star.png remapped: res://assets/sprites/effects/ultimates/west_star.png
+Loading resource: res://.godot/imported/west_star.png-3068449aba1f170705b31eb6c2603491.ctex remapped: res://.godot/imported/west_star.png-3068449aba1f170705b31eb6c2603491.ctex
+Completed load for: 'res://assets/sprites/effects/ultimates/west_star.png' remapped 'res://assets/sprites/effects/ultimates/west_star.png' at thread -1
+Loading resource: res://assets/sprites/effects/ultimates/west_aura.png remapped: res://assets/sprites/effects/ultimates/west_aura.png
+Loading resource: res://.godot/imported/west_aura.png-8a3e1768a65cfb4936cfec333ba9b079.ctex remapped: res://.godot/imported/west_aura.png-8a3e1768a65cfb4936cfec333ba9b079.ctex
+Completed load for: 'res://assets/sprites/effects/ultimates/west_aura.png' remapped 'res://assets/sprites/effects/ultimates/west_aura.png' at thread -1
+Loading resource: res://assets/sprites/effects/ultimates/formation_cavalry.png remapped: res://assets/sprites/effects/ultimates/formation_cavalry.png
+Loading resource: res://.godot/imported/formation_cavalry.png-f5be88db09f583db686b72897351cd91.ctex remapped: res://.godot/imported/formation_cavalry.png-f5be88db09f583db686b72897351cd91.ctex
+Completed load for: 'res://assets/sprites/effects/ultimates/formation_cavalry.png' remapped 'res://assets/sprites/effects/ultimates/formation_cavalry.png' at thread -1
+Loading resource: res://assets/sprites/effects/ultimates/formation_slash.png remapped: res://assets/sprites/effects/ultimates/formation_slash.png
+Loading resource: res://.godot/imported/formation_slash.png-62faecee4d3e951dec1323b6cf8a6388.ctex remapped: res://.godot/imported/formation_slash.png-62faecee4d3e951dec1323b6cf8a6388.ctex
+Completed load for: 'res://assets/sprites/effects/ultimates/formation_slash.png' remapped 'res://assets/sprites/effects/ultimates/formation_slash.png' at thread -1
+Loading resource: res://assets/sprites/effects/ultimates/stonehenge_stone.png remapped: res://assets/sprites/effects/ultimates/stonehenge_stone.png
+Loading resource: res://.godot/imported/stonehenge_stone.png-9985845bcce0442aa9c15970844a63da.ctex remapped: res://.godot/imported/stonehenge_stone.png-9985845bcce0442aa9c15970844a63da.ctex
+Completed load for: 'res://assets/sprites/effects/ultimates/stonehenge_stone.png' remapped 'res://assets/sprites/effects/ultimates/stonehenge_stone.png' at thread -1
+Loading resource: res://assets/sprites/effects/ultimates/stonehenge_lintel.png remapped: res://assets/sprites/effects/ultimates/stonehenge_lintel.png
+Loading resource: res://.godot/imported/stonehenge_lintel.png-f8ea4e5b1e675e81ad1e6dbffa38a920.ctex remapped: res://.godot/imported/stonehenge_lintel.png-f8ea4e5b1e675e81ad1e6dbffa38a920.ctex
+Completed load for: 'res://assets/sprites/effects/ultimates/stonehenge_lintel.png' remapped 'res://assets/sprites/effects/ultimates/stonehenge_lintel.png' at thread -1
+Loading resource: res://assets/sprites/effects/ultimates/stonehenge_circle.png remapped: res://assets/sprites/effects/ultimates/stonehenge_circle.png
+Loading resource: res://.godot/imported/stonehenge_circle.png-c793f6170231698d6fe7c266e368a7b6.ctex remapped: res://.godot/imported/stonehenge_circle.png-c793f6170231698d6fe7c266e368a7b6.ctex
+Completed load for: 'res://assets/sprites/effects/ultimates/stonehenge_circle.png' remapped 'res://assets/sprites/effects/ultimates/stonehenge_circle.png' at thread -1
+Loading resource: res://assets/sprites/effects/blades_slash.png remapped: res://assets/sprites/effects/blades_slash.png
+Loading resource: res://.godot/imported/blades_slash.png-88180c2d01a621a536e1d184e0be25e1.ctex remapped: res://.godot/imported/blades_slash.png-88180c2d01a621a536e1d184e0be25e1.ctex
+Completed load for: 'res://assets/sprites/effects/blades_slash.png' remapped 'res://assets/sprites/effects/blades_slash.png' at thread -1
+Loading resource: res://assets/sprites/effects/arcane_nova.png remapped: res://assets/sprites/effects/arcane_nova.png
+Loading resource: res://.godot/imported/arcane_nova.png-f478d57069f72e3d8a98aafaafd0b34a.ctex remapped: res://.godot/imported/arcane_nova.png-f478d57069f72e3d8a98aafaafd0b34a.ctex
+Completed load for: 'res://assets/sprites/effects/arcane_nova.png' remapped 'res://assets/sprites/effects/arcane_nova.png' at thread -1
+Loading resource: res://assets/sprites/effects/hit_claw.png remapped: res://assets/sprites/effects/hit_claw.png
+Loading resource: res://.godot/imported/hit_claw.png-62b82cd28ce3e4de2512e758f981edcb.ctex remapped: res://.godot/imported/hit_claw.png-62b82cd28ce3e4de2512e758f981edcb.ctex
+Completed load for: 'res://assets/sprites/effects/hit_claw.png' remapped 'res://assets/sprites/effects/hit_claw.png' at thread -1
+Loading resource: res://assets/sprites/effects/hit_bite.png remapped: res://assets/sprites/effects/hit_bite.png
+Loading resource: res://.godot/imported/hit_bite.png-9a92f7d4970b5e0bcbe7aa5c05d310d5.ctex remapped: res://.godot/imported/hit_bite.png-9a92f7d4970b5e0bcbe7aa5c05d310d5.ctex
+Completed load for: 'res://assets/sprites/effects/hit_bite.png' remapped 'res://assets/sprites/effects/hit_bite.png' at thread -1
+Loading resource: res://assets/sprites/effects/death_shards.png remapped: res://assets/sprites/effects/death_shards.png
+Loading resource: res://.godot/imported/death_shards.png-f14aa5f625b4c9a23e175cbabdde6ebb.ctex remapped: res://.godot/imported/death_shards.png-f14aa5f625b4c9a23e175cbabdde6ebb.ctex
+Completed load for: 'res://assets/sprites/effects/death_shards.png' remapped 'res://assets/sprites/effects/death_shards.png' at thread -1
+Loading resource: res://assets/sprites/effects/gods/loki_wolf_breath.png remapped: res://assets/sprites/effects/gods/loki_wolf_breath.png
+Loading resource: res://.godot/imported/loki_wolf_breath.png-5204b67dace4e68e7f9349d28baec708.ctex remapped: res://.godot/imported/loki_wolf_breath.png-5204b67dace4e68e7f9349d28baec708.ctex
+Completed load for: 'res://assets/sprites/effects/gods/loki_wolf_breath.png' remapped 'res://assets/sprites/effects/gods/loki_wolf_breath.png' at thread -1
+Loading resource: res://assets/sprites/enemies/draugr_move.png remapped: res://assets/sprites/enemies/draugr_move.png
+Loading resource: res://.godot/imported/draugr_move.png-a15f5204e43aeb936742ec7beffb70d7.ctex remapped: res://.godot/imported/draugr_move.png-a15f5204e43aeb936742ec7beffb70d7.ctex
+Completed load for: 'res://assets/sprites/enemies/draugr_move.png' remapped 'res://assets/sprites/enemies/draugr_move.png' at thread -1
+Loading resource: res://assets/sprites/enemies/draugr_attack.png remapped: res://assets/sprites/enemies/draugr_attack.png
+Loading resource: res://.godot/imported/draugr_attack.png-5321371144a147e2c75bf84878ce6903.ctex remapped: res://.godot/imported/draugr_attack.png-5321371144a147e2c75bf84878ce6903.ctex
+Completed load for: 'res://assets/sprites/enemies/draugr_attack.png' remapped 'res://assets/sprites/enemies/draugr_attack.png' at thread -1
+Loading resource: res://assets/audio/sfx/blades_slash_01.wav remapped: res://assets/audio/sfx/blades_slash_01.wav
+Loading resource: res://.godot/imported/blades_slash_01.wav-aca73c075614118ebcde7ed939d81967.sample remapped: res://.godot/imported/blades_slash_01.wav-aca73c075614118ebcde7ed939d81967.sample
+Completed load for: 'res://assets/audio/sfx/blades_slash_01.wav' remapped 'res://assets/audio/sfx/blades_slash_01.wav' at thread -1
+Loading resource: res://assets/audio/sfx/blades_slash_02.wav remapped: res://assets/audio/sfx/blades_slash_02.wav
+Loading resource: res://.godot/imported/blades_slash_02.wav-f4b1283604a67d4455fbe10fd2ba36f0.sample remapped: res://.godot/imported/blades_slash_02.wav-f4b1283604a67d4455fbe10fd2ba36f0.sample
+Completed load for: 'res://assets/audio/sfx/blades_slash_02.wav' remapped 'res://assets/audio/sfx/blades_slash_02.wav' at thread -1
+Loading resource: res://assets/audio/sfx/blades_slash_03.wav remapped: res://assets/audio/sfx/blades_slash_03.wav
+Loading resource: res://.godot/imported/blades_slash_03.wav-179a079532b9374e06efee4592c7b327.sample remapped: res://.godot/imported/blades_slash_03.wav-179a079532b9374e06efee4592c7b327.sample
+Completed load for: 'res://assets/audio/sfx/blades_slash_03.wav' remapped 'res://assets/audio/sfx/blades_slash_03.wav' at thread -1
+Loading resource: res://assets/audio/sfx/enemy_hit_01.wav remapped: res://assets/audio/sfx/enemy_hit_01.wav
+Loading resource: res://.godot/imported/enemy_hit_01.wav-f8bc79cad607069f47a0a67bd825f080.sample remapped: res://.godot/imported/enemy_hit_01.wav-f8bc79cad607069f47a0a67bd825f080.sample
+Completed load for: 'res://assets/audio/sfx/enemy_hit_01.wav' remapped 'res://assets/audio/sfx/enemy_hit_01.wav' at thread -1
+Loading resource: res://assets/audio/sfx/enemy_hit_02.wav remapped: res://assets/audio/sfx/enemy_hit_02.wav
+Loading resource: res://.godot/imported/enemy_hit_02.wav-254f5e53ed1e99096cbe861c2c4a1b1a.sample remapped: res://.godot/imported/enemy_hit_02.wav-254f5e53ed1e99096cbe861c2c4a1b1a.sample
+Completed load for: 'res://assets/audio/sfx/enemy_hit_02.wav' remapped 'res://assets/audio/sfx/enemy_hit_02.wav' at thread -1
+Loading resource: res://assets/audio/sfx/enemy_hit_03.wav remapped: res://assets/audio/sfx/enemy_hit_03.wav
+Loading resource: res://.godot/imported/enemy_hit_03.wav-8eebaa66db6da54fa8262e0a335e2522.sample remapped: res://.godot/imported/enemy_hit_03.wav-8eebaa66db6da54fa8262e0a335e2522.sample
+Completed load for: 'res://assets/audio/sfx/enemy_hit_03.wav' remapped 'res://assets/audio/sfx/enemy_hit_03.wav' at thread -1
+Loading resource: res://assets/sprites/enemies/draugr_move.png remapped: res://assets/sprites/enemies/draugr_move.png
+Loading resource: res://.godot/imported/draugr_move.png-a15f5204e43aeb936742ec7beffb70d7.ctex remapped: res://.godot/imported/draugr_move.png-a15f5204e43aeb936742ec7beffb70d7.ctex
+Completed load for: 'res://assets/sprites/enemies/draugr_move.png' remapped 'res://assets/sprites/enemies/draugr_move.png' at thread -1
+Loading resource: res://assets/sprites/enemies/draugr_attack.png remapped: res://assets/sprites/enemies/draugr_attack.png
+Loading resource: res://.godot/imported/draugr_attack.png-5321371144a147e2c75bf84878ce6903.ctex remapped: res://.godot/imported/draugr_attack.png-5321371144a147e2c75bf84878ce6903.ctex
+Completed load for: 'res://assets/sprites/enemies/draugr_attack.png' remapped 'res://assets/sprites/enemies/draugr_attack.png' at thread -1
+Loading resource: res://assets/audio/sfx/nova_cast.wav remapped: res://assets/audio/sfx/nova_cast.wav
+Loading resource: res://.godot/imported/nova_cast.wav-9990f67778a81061ef22661815176540.sample remapped: res://.godot/imported/nova_cast.wav-9990f67778a81061ef22661815176540.sample
+Completed load for: 'res://assets/audio/sfx/nova_cast.wav' remapped 'res://assets/audio/sfx/nova_cast.wav' at thread -1
+Loading resource: res://assets/sprites/enemies/draugr_move.png remapped: res://assets/sprites/enemies/draugr_move.png
+Loading resource: res://.godot/imported/draugr_move.png-a15f5204e43aeb936742ec7beffb70d7.ctex remapped: res://.godot/imported/draugr_move.png-a15f5204e43aeb936742ec7beffb70d7.ctex
+Completed load for: 'res://assets/sprites/enemies/draugr_move.png' remapped 'res://assets/sprites/enemies/draugr_move.png' at thread -1
+Loading resource: res://assets/sprites/enemies/draugr_attack.png remapped: res://assets/sprites/enemies/draugr_attack.png
+Loading resource: res://.godot/imported/draugr_attack.png-5321371144a147e2c75bf84878ce6903.ctex remapped: res://.godot/imported/draugr_attack.png-5321371144a147e2c75bf84878ce6903.ctex
+Completed load for: 'res://assets/sprites/enemies/draugr_attack.png' remapped 'res://assets/sprites/enemies/draugr_attack.png' at thread -1
+Loading resource: res://assets/sprites/enemies/draugr_move.png remapped: res://assets/sprites/enemies/draugr_move.png
+Loading resource: res://.godot/imported/draugr_move.png-a15f5204e43aeb936742ec7beffb70d7.ctex remapped: res://.godot/imported/draugr_move.png-a15f5204e43aeb936742ec7beffb70d7.ctex
+Completed load for: 'res://assets/sprites/enemies/draugr_move.png' remapped 'res://assets/sprites/enemies/draugr_move.png' at thread -1
+Loading resource: res://assets/sprites/enemies/draugr_attack.png remapped: res://assets/sprites/enemies/draugr_attack.png
+Loading resource: res://.godot/imported/draugr_attack.png-5321371144a147e2c75bf84878ce6903.ctex remapped: res://.godot/imported/draugr_attack.png-5321371144a147e2c75bf84878ce6903.ctex
+Completed load for: 'res://assets/sprites/enemies/draugr_attack.png' remapped 'res://assets/sprites/enemies/draugr_attack.png' at thread -1
+Loading resource: res://assets/sprites/enemies/draugr_move.png remapped: res://assets/sprites/enemies/draugr_move.png
+Loading resource: res://.godot/imported/draugr_move.png-a15f5204e43aeb936742ec7beffb70d7.ctex remapped: res://.godot/imported/draugr_move.png-a15f5204e43aeb936742ec7beffb70d7.ctex
+Completed load for: 'res://assets/sprites/enemies/draugr_move.png' remapped 'res://assets/sprites/enemies/draugr_move.png' at thread -1
+Loading resource: res://assets/sprites/enemies/draugr_attack.png remapped: res://assets/sprites/enemies/draugr_attack.png
+Loading resource: res://.godot/imported/draugr_attack.png-5321371144a147e2c75bf84878ce6903.ctex remapped: res://.godot/imported/draugr_attack.png-5321371144a147e2c75bf84878ce6903.ctex
+Completed load for: 'res://assets/sprites/enemies/draugr_attack.png' remapped 'res://assets/sprites/enemies/draugr_attack.png' at thread -1
+Loading resource: res://scripts/gods/loki.gd remapped: res://scripts/gods/loki.gd
+Loading resource: res://assets/sprites/effects/will_o_wisp_aura.png remapped: res://assets/sprites/effects/will_o_wisp_aura.png
+Loading resource: res://.godot/imported/will_o_wisp_aura.png-b12c3900b7b31434882bab0aace96b51.ctex remapped: res://.godot/imported/will_o_wisp_aura.png-b12c3900b7b31434882bab0aace96b51.ctex
+Completed load for: 'res://assets/sprites/effects/will_o_wisp_aura.png' remapped 'res://assets/sprites/effects/will_o_wisp_aura.png' at thread -1
+Completed load for: 'res://scripts/gods/loki.gd' remapped 'res://scripts/gods/loki.gd' at thread -1
+Loading resource: res://assets/sprites/enemies/draugr_move.png remapped: res://assets/sprites/enemies/draugr_move.png
+Loading resource: res://.godot/imported/draugr_move.png-a15f5204e43aeb936742ec7beffb70d7.ctex remapped: res://.godot/imported/draugr_move.png-a15f5204e43aeb936742ec7beffb70d7.ctex
+Completed load for: 'res://assets/sprites/enemies/draugr_move.png' remapped 'res://assets/sprites/enemies/draugr_move.png' at thread -1
+Loading resource: res://assets/sprites/enemies/draugr_attack.png remapped: res://assets/sprites/enemies/draugr_attack.png
+Loading resource: res://.godot/imported/draugr_attack.png-5321371144a147e2c75bf84878ce6903.ctex remapped: res://.godot/imported/draugr_attack.png-5321371144a147e2c75bf84878ce6903.ctex
+Completed load for: 'res://assets/sprites/enemies/draugr_attack.png' remapped 'res://assets/sprites/enemies/draugr_attack.png' at thread -1
+Loading resource: res://assets/audio/sfx/wolf_breath.wav remapped: res://assets/audio/sfx/wolf_breath.wav
+Loading resource: res://.godot/imported/wolf_breath.wav-5ef49648eda1584c8189e5138e990f99.sample remapped: res://.godot/imported/wolf_breath.wav-5ef49648eda1584c8189e5138e990f99.sample
+Completed load for: 'res://assets/audio/sfx/wolf_breath.wav' remapped 'res://assets/audio/sfx/wolf_breath.wav' at thread -1
+Loading resource: res://assets/sprites/enemies/draugr_move.png remapped: res://assets/sprites/enemies/draugr_move.png
+Loading resource: res://.godot/imported/draugr_move.png-a15f5204e43aeb936742ec7beffb70d7.ctex remapped: res://.godot/imported/draugr_move.png-a15f5204e43aeb936742ec7beffb70d7.ctex
+Completed load for: 'res://assets/sprites/enemies/draugr_move.png' remapped 'res://assets/sprites/enemies/draugr_move.png' at thread -1
+Loading resource: res://assets/sprites/enemies/draugr_attack.png remapped: res://assets/sprites/enemies/draugr_attack.png
+Loading resource: res://.godot/imported/draugr_attack.png-5321371144a147e2c75bf84878ce6903.ctex remapped: res://.godot/imported/draugr_attack.png-5321371144a147e2c75bf84878ce6903.ctex
+Completed load for: 'res://assets/sprites/enemies/draugr_attack.png' remapped 'res://assets/sprites/enemies/draugr_attack.png' at thread -1
+Loading resource: res://assets/audio/sfx/enemy_death_01.wav remapped: res://assets/audio/sfx/enemy_death_01.wav
+Loading resource: res://.godot/imported/enemy_death_01.wav-fb5f147a57b666c4073500e74fad52c8.sample remapped: res://.godot/imported/enemy_death_01.wav-fb5f147a57b666c4073500e74fad52c8.sample
+Completed load for: 'res://assets/audio/sfx/enemy_death_01.wav' remapped 'res://assets/audio/sfx/enemy_death_01.wav' at thread -1
+Loading resource: res://assets/audio/sfx/enemy_death_02.wav remapped: res://assets/audio/sfx/enemy_death_02.wav
+Loading resource: res://.godot/imported/enemy_death_02.wav-d14eb695bffd71eb873281c402a0dbaf.sample remapped: res://.godot/imported/enemy_death_02.wav-d14eb695bffd71eb873281c402a0dbaf.sample
+Completed load for: 'res://assets/audio/sfx/enemy_death_02.wav' remapped 'res://assets/audio/sfx/enemy_death_02.wav' at thread -1
+Loading resource: res://assets/audio/sfx/enemy_death_03.wav remapped: res://assets/audio/sfx/enemy_death_03.wav
+Loading resource: res://.godot/imported/enemy_death_03.wav-59e1f9a1aeaa388692712365897e6d3c.sample remapped: res://.godot/imported/enemy_death_03.wav-59e1f9a1aeaa388692712365897e6d3c.sample
+Completed load for: 'res://assets/audio/sfx/enemy_death_03.wav' remapped 'res://assets/audio/sfx/enemy_death_03.wav' at thread -1
+RESULT J ART 621 checks 0 failures

@@ -1,0 +1,96 @@
+{
+  "task": "J5",
+  "status": "pass_offline_asset_checks",
+  "files": [
+    {
+      "name": "blades_slash",
+      "checks": {
+        "png_rgba": true,
+        "exact_strip_dimensions": true,
+        "rgb_le48": true,
+        "unique_frames": true,
+        "margin_ge2": true,
+        "alpha_policy": true,
+        "left_half_clear": true,
+        "gif_frame_counts": true,
+        "gif_exact_pixels": true,
+        "gif_average_fps": true,
+        "gif_loop_contract": true
+      },
+      "frame_bboxes": [
+        [
+          34,
+          15,
+          50,
+          48
+        ],
+        [
+          35,
+          15,
+          62,
+          49
+        ],
+        [
+          34,
+          16,
+          55,
+          48
+        ],
+        [
+          34,
+          16,
+          49,
+          47
+        ]
+      ],
+      "rgb_colors": 29,
+      "alpha_levels": [
+        0,
+        32,
+        64,
+        96,
+        128,
+        160,
+        208,
+        255
+      ],
+      "gifs": [
+        {
+          "path": "previews/blades_slash_normal.gif",
+          "frames": 4,
+          "durations_ms": [
+            60,
+            70,
+            60,
+            60
+          ],
+          "average_fps": 16.0,
+          "decoded_pixels_match_source_composite": true,
+          "loop": null
+        },
+        {
+          "path": "previews/blades_slash_slow8.gif",
+          "frames": 4,
+          "durations_ms": [
+            120,
+            130,
+            120,
+            130
+          ],
+          "average_fps": 8.0,
+          "decoded_pixels_match_source_composite": true,
+          "loop": null
+        }
+      ],
+      "visual_frame_review": "红白相邻双弧，主体在中心右侧，左半透明；四帧强弱变化清楚。按原判伤扇形裁切的预览另存。",
+      "visual_review_scope": "actual native1x overview and each4x frame-strip image, offline only; not browser playback or game",
+      "browser_playback": "not_performed_Work_browser_disabled",
+      "game_test": "not_performed"
+    }
+  ],
+  "browser": "in-app bootstrap missing browser-client.mjs; Chrome control returned Local browser use is disabled in Work settings; no setting changed or bypass",
+  "code_integration": "not_performed",
+  "game_test": "not_performed",
+  "native_size_all_frames_review": "Actual all49 native frames viewed in taskJ1/previews/all_J_all_frames_native1x.png",
+  "gallery_javascript_syntax": "node --check passed"
+}

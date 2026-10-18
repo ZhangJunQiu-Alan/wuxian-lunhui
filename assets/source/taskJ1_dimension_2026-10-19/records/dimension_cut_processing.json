@@ -1,0 +1,113 @@
+{
+  "name": "dimension_cut",
+  "raw": "originals/dimension_cut_v01.png",
+  "raw_sha256": "1c6615b966ed5573c5d18a5ee011b76e15e3de1233facf45d74f5e55eb0893c4",
+  "raw_size": [
+    1774,
+    887
+  ],
+  "grid": [
+    2,
+    2
+  ],
+  "cell_rects": [
+    [
+      0,
+      0,
+      887,
+      444
+    ],
+    [
+      887,
+      0,
+      1774,
+      444
+    ],
+    [
+      0,
+      444,
+      887,
+      887
+    ],
+    [
+      887,
+      444,
+      1774,
+      887
+    ]
+  ],
+  "alpha_bbox_threshold": 16,
+  "cell_content_bboxes": [
+    [
+      65,
+      235,
+      809,
+      346
+    ],
+    [
+      78,
+      163,
+      826,
+      388
+    ],
+    [
+      87,
+      124,
+      813,
+      365
+    ],
+    [
+      99,
+      178,
+      756,
+      340
+    ]
+  ],
+  "uniform_nearest_factor": 0.11618257261410789,
+  "placements": [
+    [
+      21,
+      9,
+      86,
+      13
+    ],
+    [
+      20,
+      3,
+      87,
+      26
+    ],
+    [
+      22,
+      2,
+      84,
+      28
+    ],
+    [
+      26,
+      6,
+      76,
+      19
+    ]
+  ],
+  "shared_rgb_palette_max": 32,
+  "alpha_policy": [
+    0,
+    32,
+    64,
+    96,
+    128,
+    160,
+    208,
+    255
+  ],
+  "alpha_cap": 255,
+  "target_frame_size": [
+    128,
+    32
+  ],
+  "frame_count": 4,
+  "candidate": "candidates/dimension_cut_v01.png",
+  "candidate_sha256": "912118a5997b000b5835f307eff316cac7928830d16cf8a2236d470845b30943",
+  "operation_scope": "crop, uniform nearest scaling, register, shared color and alpha specification; no painted pixels or duplicated animation frames"
+}

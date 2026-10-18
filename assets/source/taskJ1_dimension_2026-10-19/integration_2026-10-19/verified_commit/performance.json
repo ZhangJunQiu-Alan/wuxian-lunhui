@@ -1,0 +1,70 @@
+{
+	"engine": {
+		"build": "official",
+		"hash": "ed1daf0bf001b61586d9930840f2f1394092c079",
+		"hex": 263938,
+		"major": 4,
+		"minor": 7,
+		"patch": 2,
+		"status": "stable",
+		"string": "4.7.2-stable (official)",
+		"timestamp": 0
+	},
+	"measurements": [
+		{
+			"42_cavalry": true,
+			"enemies": 350,
+			"fps": 57.0221679280435,
+			"frames": 229,
+			"marks_peak": 120,
+			"mean_ms": 17.53703930131,
+			"nodes": 1985,
+			"p95_ms": 19.292,
+			"phase": "old_geometry"
+		},
+		{
+			"42_cavalry": true,
+			"enemies": 350,
+			"fps": 94.7439127036088,
+			"frames": 379,
+			"marks_peak": 120,
+			"mean_ms": 10.5547678100264,
+			"nodes": 1985,
+			"p95_ms": 11.46,
+			"phase": "new_art"
+		},
+		{
+			"42_cavalry": true,
+			"enemies": 350,
+			"fps": 57.7309776428667,
+			"frames": 231,
+			"marks_peak": 120,
+			"mean_ms": 17.3217229437229,
+			"nodes": 1985,
+			"p95_ms": 19.292,
+			"phase": "old_geometry_repeat"
+		},
+		{
+			"42_cavalry": true,
+			"enemies": 350,
+			"fps": 77.6075772854561,
+			"frames": 312,
+			"marks_peak": 120,
+			"mean_ms": 12.8853397435897,
+			"nodes": 1985,
+			"p95_ms": 20.142,
+			"phase": "new_art_repeat"
+		},
+		{
+			"marks": 0,
+			"nodes": 1985,
+			"particles": 0,
+			"phase": "cleanup"
+		}
+	],
+	"scope": "local rendered350 animated enemies,42 cavalry,exactly120 central marks at draw;manual render loop1draw per sample;1s warmup and4s phases; no long-session guarantee",
+	"viewport": [
+		1280,
+		720
+	]
+}

@@ -1,0 +1,184 @@
+--- a/scripts/ultimates/dimension_slash.gd
++++ b/scripts/ultimates/dimension_slash.gd
+@@ -74,8 +74,10 @@
+ 		draw_rect(cover, Color(0.02, 0.02, 0.08, 0.55 * minf(1.0, _time / 0.2)))
+ 		for cut in _cuts:
+ 			if _time >= cut.appear:
+-				draw_line(cut.from, cut.to, Color(0, 0, 0, 0.9), 6.0)
+-				draw_line(cut.from, cut.to, Color(0.8, 0.85, 1.0), 1.5)
++				var dir: Vector2 = cut.to - cut.from
++				if not CombatFx.draw(self, "dimension_cut", 0.0, (cut.from + cut.to) * 0.5, dir.angle(), Vector2(dir.length() / 87.0, 0.45)):
++					draw_line(cut.from, cut.to, Color(0, 0, 0, 0.9), 6.0)
++					draw_line(cut.from, cut.to, Color(0.8, 0.85, 1.0), 1.5)
+ 		return
+ 
+ 	# 爆开阶段：白光一闪，裂痕变宽后淡出
+@@ -83,5 +85,7 @@
+ 	draw_rect(cover, Color(1, 1, 1, 0.6 * (1.0 - t) * (1.0 - t)))
+ 	for cut in _cuts:
+ 		var width := lerpf(4.0, 22.0, t)
+-		draw_line(cut.from, cut.to, Color(0.55, 0.65, 1.0, 0.8 * (1.0 - t)), width)
+-		draw_line(cut.from, cut.to, Color(1, 1, 1, 1.0 - t), width * 0.3)
++		var dir: Vector2 = cut.to - cut.from
++		if not CombatFx.draw(self, "dimension_cut", _time - BURST_AT, (cut.from + cut.to) * 0.5, dir.angle(), Vector2(dir.length() / 87.0, lerpf(12.0, 22.0, t) / 27.0), Color(1, 1, 1, 1.0 - t)):
++			draw_line(cut.from, cut.to, Color(0.55, 0.65, 1.0, 0.8 * (1.0 - t)), width)
++			draw_line(cut.from, cut.to, Color(1, 1, 1, 1.0 - t), width * 0.3)
+--- a/scripts/ultimates/wild_west_show.gd
++++ b/scripts/ultimates/wild_west_show.gd
+@@ -36,9 +36,14 @@
+ 
+ func _draw() -> void:
+ 	var fade := minf(1.0, player.frenzy_time / 0.5)  # 最后半秒淡出
+-	draw_arc(Vector2.ZERO, 34.0, 0.0, TAU, 32, Color(COLOR, 0.5 * fade), 2.0)
++	if not CombatFx.draw(self, "west_aura", _time, Vector2.ZERO, 0.0, Vector2.ONE * 34.0 / 46.573, Color(1, 1, 1, fade)):
++		draw_arc(Vector2.ZERO, 34.0, 0.0, TAU, 32, Color(COLOR, 0.5 * fade), 2.0)
++	if _time >= 0.25 and CombatFx.texture("west_star") != null:
++		return
+ 	for i in 5:  # 五颗绕身旋转的星
+ 		var p := Vector2.from_angle(_time * 4.0 + TAU * i / 5) * 34.0
++		if CombatFx.draw(self, "west_star", _time, p, 0.0, Vector2.ONE * 0.45, Color(1, 1, 1, fade)):
++			continue
+ 		var star := PackedVector2Array()
+ 		for k in 10:
+ 			star.append(p + Vector2.from_angle(TAU * k / 10 - PI / 2) * (6.0 if k % 2 == 0 else 2.5))
+--- a/scripts/ultimates/enter_formation.gd
++++ b/scripts/ultimates/enter_formation.gd
+@@ -108,8 +108,10 @@
+ func _draw() -> void:
+ 	for trail in _trails:  # 瞬移的残影：一道红黑色的刀痕
+ 		var a: float = trail.life / 0.35
+-		draw_line(trail.from, trail.to, Color(0.1, 0.0, 0.0, 0.7 * a), 8.0)
+-		draw_line(trail.from, trail.to, Color(COLOR, a), 2.0)
++		var dir: Vector2 = trail.to - trail.from
++		if not CombatFx.draw(self, "formation_slash", 0.35 - trail.life, (trail.from + trail.to) * 0.5, dir.angle(), Vector2(dir.length() / 56.0, 1.0), Color(1, 1, 1, a)):
++			draw_line(trail.from, trail.to, Color(0.1, 0.0, 0.0, 0.7 * a), 8.0)
++			draw_line(trail.from, trail.to, Color(COLOR, a), 2.0)
+ 	if _phase != "cavalry":
+ 		return
+ 	# 五百骑幻影：一列列向右冲锋的鬼影骑兵
+@@ -121,6 +123,8 @@
+ 		for k in 3:
+ 			var p := Vector2(x + jitter - k * 70.0, y)
+ 			var alpha := 0.55 - k * 0.15
++			if CombatFx.draw(self, "formation_cavalry", _cavalry_t + i * 0.07 + k * 0.13, p + Vector2(0, 6), 0.0, Vector2.ONE, Color(1, 1, 1, alpha)):
++				continue
+ 			# 骑兵剪影：马身 + 骑手 + 前伸的长枪
+ 			draw_colored_polygon(PackedVector2Array([p + Vector2(-22, 6), p + Vector2(18, 6), p + Vector2(24, -2), p + Vector2(-16, -4)]), Color(0.25, 0.02, 0.04, alpha))
+ 			draw_colored_polygon(PackedVector2Array([p + Vector2(-4, -4), p + Vector2(4, -4), p + Vector2(2, -18), p + Vector2(-4, -16)]), Color(0.3, 0.02, 0.05, alpha))
+--- a/scripts/ultimates/stonehenge.gd
++++ b/scripts/ultimates/stonehenge.gd
+@@ -81,7 +81,8 @@
+ 	var fade := clampf(remain, 0.0, 1.0)  # 最后一秒淡出
+ 	if _landed:
+ 		var pulse := 0.5 + 0.5 * sin(_time * 3.0)
+-		draw_circle(Vector2.ZERO, RADIUS, Color(MAGIC_COLOR, (0.06 + 0.04 * pulse) * fade))
++		if not CombatFx.draw(self, "stonehenge_circle", 0.0, Vector2.ZERO, 0.0, Vector2.ONE * RADIUS / 62.0, Color(1, 1, 1, (0.25 + 0.12 * pulse) * fade), RADIUS):
++			draw_circle(Vector2.ZERO, RADIUS, Color(MAGIC_COLOR, (0.06 + 0.04 * pulse) * fade))
+ 		draw_arc(Vector2.ZERO, RADIUS, 0.0, TAU, 64, Color(MAGIC_COLOR, 0.6 * fade), 3.0)
+ 	for i in STONES:
+ 		var base := _stone_offset(i)
+@@ -91,9 +92,11 @@
+ 		draw_circle(Vector2.ZERO, 14.0, Color(0, 0, 0, 0.4 * fall))
+ 		draw_set_transform(Vector2.ZERO)
+ 		var color := Color(STONE_COLOR, fade)
+-		draw_rect(Rect2(base + drop + Vector2(-9, -30), Vector2(18, 44)), color)
+-		draw_rect(Rect2(base + drop + Vector2(-9, -30), Vector2(18, 44)), Color(0.25, 0.26, 0.3, fade), false, 2.0)
++		if not CombatFx.draw(self, "stonehenge_stone", 0.0, base + drop + Vector2(0, 14), 0.0, Vector2.ONE * 0.75, Color(1, 1, 1, fade)):
++			draw_rect(Rect2(base + drop + Vector2(-9, -30), Vector2(18, 44)), color)
++			draw_rect(Rect2(base + drop + Vector2(-9, -30), Vector2(18, 44)), Color(0.25, 0.26, 0.3, fade), false, 2.0)
+ 		# 每两根立石上架一块横石，组成巨石阵的「三石塔」
+ 		if i % 2 == 0 and _landed:
+ 			var next := _stone_offset(i + 1)
+-			draw_line(base + Vector2(0, -32), next + Vector2(0, -32), Color(0.48, 0.49, 0.55, fade), 9.0)
++			if not CombatFx.draw(self, "stonehenge_lintel", 0.0, (base + next) * 0.5 + Vector2(0, -32), (next - base).angle(), Vector2(base.distance_to(next) / 60.0, 9.0 / 14.0), Color(1, 1, 1, fade)):
++				draw_line(base + Vector2(0, -32), next + Vector2(0, -32), Color(0.48, 0.49, 0.55, fade), 9.0)
+--- a/scripts/weapons/twin_blades.gd
++++ b/scripts/weapons/twin_blades.gd
+@@ -3,7 +3,7 @@
+ ## 刺客的双刃：射程极短、出手极快的近身连刺，左右手交替
+ ## 被动「破阵」：身边每有 1 个敌人，伤害 +6%（最多 +60%）
+ 
+-const SLASH_DURATION := 0.1
++const SLASH_DURATION := 0.25
+ const HALF_ARC := 0.7         # 扇形半角（弧度），约 40°，比太刀窄
+ const KNOCKBACK := 120.0
+ const SIEGE_RADIUS := 150.0   # 破阵：统计这个范围内的敌人
+@@ -72,5 +72,7 @@
+ 	var alpha := _slash_time / SLASH_DURATION
+ 	# 左右手交替：刀光稍微偏向一侧
+ 	var a := _aim.angle() + (0.25 if _left_hand else -0.25)
++	if CombatFx.draw(self, "blades_slash", SLASH_DURATION - _slash_time, Vector2.ZERO, a, Vector2.ONE * reach * 0.9 / 30.5, Color.WHITE, reach, HALF_ARC, _aim.angle()):
++		return
+ 	draw_arc(Vector2.ZERO, reach * 0.9, a - HALF_ARC, a + HALF_ARC, 16, Color(1.0, 0.45, 0.45, alpha), 3.0)
+ 	draw_line(Vector2.ZERO, Vector2.from_angle(a) * reach, Color(1, 1, 1, alpha), 2.0)
+--- a/scripts/weapons/arcane_nova.gd
++++ b/scripts/weapons/arcane_nova.gd
+@@ -62,5 +62,8 @@
+ 		var k := minf(1.0, wave.t / EXPAND_TIME)
+ 		var r := radius * k
+ 		var alpha := 1.0 - maxf(0.0, wave.t - EXPAND_TIME) / 0.15
+-		draw_arc(Vector2.ZERO, r, 0.0, TAU, 64, Color(COLOR, 0.9 * alpha), 6.0 * (1.0 - k) + 2.0)
+-		draw_circle(Vector2.ZERO, r, Color(COLOR, 0.08 * alpha))
++		if CombatFx.draw(self, "arcane_nova", wave.t, Vector2.ZERO, 0.0, Vector2.ONE * r / 62.514, Color(1, 1, 1, alpha), r):
++			draw_arc(Vector2.ZERO, r, 0.0, TAU, 64, Color(COLOR, 0.35 * alpha), 1.0)
++		else:
++			draw_arc(Vector2.ZERO, r, 0.0, TAU, 64, Color(COLOR, 0.9 * alpha), 6.0 * (1.0 - k) + 2.0)
++			draw_circle(Vector2.ZERO, r, Color(COLOR, 0.08 * alpha))
+--- a/scripts/effects/fx_layer.gd
++++ b/scripts/effects/fx_layer.gd
+@@ -58,7 +58,15 @@
+ 		return
+ 	if instance._marks.size() >= MAX_MARKS:
+ 		instance._marks.pop_front()
+-	instance._marks.append({"pos": pos, "angle": angle, "length": length, "kind": kind, "color": color, "life": MARK_LIFE})
++	var duration := 0.25 if kind in ["claw", "bite", "death"] else MARK_LIFE
++	instance._marks.append({"pos": pos, "angle": angle, "length": length, "kind": kind, "color": color, "life": duration, "duration": duration})
++
++
++static func death(pos: Vector2, color: Color, elite: bool = false) -> bool:
++	if instance == null or CombatFx.texture("death_shards") == null:
++		return false
++	mark(pos, randf() * TAU, 88.0 if elite else 56.0, color.lightened(0.3), "death")
++	return true
+ 
+ 
+ ## 从 pos 向外扩散的霜冻冲击波圈（素材 4 帧，越来越大），最大半径 radius
+@@ -129,7 +137,13 @@
+ 
+ ## 痕迹先快速划出（前 30% 的时间），然后变细淡出
+ func _draw_mark(m: Dictionary) -> void:
+-	var k: float = 1.0 - m.life / MARK_LIFE           # 0 → 1
++	var duration: float = m.get("duration", MARK_LIFE)
++	var id: String = {"claw": "hit_claw", "bite": "hit_bite", "death": "death_shards"}.get(m.kind, "")
++	if id != "":
++		var width := 50.0 if m.kind == "bite" else 28.0
++		if CombatFx.draw(self, id, duration - m.life, m.pos, m.angle, Vector2.ONE * m.length / width, m.color):
++			return
++	var k: float = 1.0 - m.life / duration           # 0 → 1
+ 	var grow := minf(1.0, k / 0.3)
+ 	var fade := 1.0 - maxf(0.0, (k - 0.3) / 0.7)
+ 	var dir := Vector2.from_angle(m.angle)
+--- a/scripts/entities/enemy.gd
++++ b/scripts/entities/enemy.gd
+@@ -537,7 +537,8 @@
+ 	gem.position = position
+ 	# 在物理回调中不能直接加碰撞体相关节点，所以用 call_deferred 延迟到帧末
+ 	get_parent().call_deferred("add_child", gem)
+-	FxLayer.burst(global_position, color, 30 if is_elite else 8, 220.0 if is_elite else 150.0)
++	if not FxLayer.death(global_position, color, is_elite):
++		FxLayer.burst(global_position, color, 30 if is_elite else 8, 220.0 if is_elite else 150.0)
+ 	Audio.sfx("big_death" if is_elite or radius >= 20.0 else "enemy_death", -2.0)
+ 	if is_elite:
+ 		target.shake(6.0, 0.2)
+--- a/scripts/gods/loki.gd
++++ b/scripts/gods/loki.gd
+@@ -228,6 +228,9 @@
+ 		draw_circle(p + Vector2(7 * face, -5) * scale, 5.0 * scale, Color(1.0, 0.7, 0.3, 0.9))
+ 	draw_circle(p, 14.0 * scale, Color(1.0, 0.55, 0.2, 0.15))
+ 	if _breath_flash > 0.0:
++		var fade := minf(1.0, _breath_flash / 0.15)
++		if CombatFx.draw(self, "loki_wolf_breath", 0.4 - _breath_flash, p, _breath_dir.angle(), Vector2.ONE * BREATH_LENGTH / 88.0, Color(1, 1, 1, fade), BREATH_LENGTH, 0.45):
++			return
+ 		var cone := PackedVector2Array([p])
+ 		for i in 9:
+ 			cone.append(p + _breath_dir.rotated(-0.45 + 0.9 * i / 8.0) * BREATH_LENGTH)

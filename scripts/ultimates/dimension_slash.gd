@@ -74,8 +74,10 @@ func _draw() -> void:
 		draw_rect(cover, Color(0.02, 0.02, 0.08, 0.55 * minf(1.0, _time / 0.2)))
 		for cut in _cuts:
 			if _time >= cut.appear:
-				draw_line(cut.from, cut.to, Color(0, 0, 0, 0.9), 6.0)
-				draw_line(cut.from, cut.to, Color(0.8, 0.85, 1.0), 1.5)
+				var dir: Vector2 = cut.to - cut.from
+				if not CombatFx.draw(self, "dimension_cut", 0.0, (cut.from + cut.to) * 0.5, dir.angle(), Vector2(dir.length() / 87.0, 0.45)):
+					draw_line(cut.from, cut.to, Color(0, 0, 0, 0.9), 6.0)
+					draw_line(cut.from, cut.to, Color(0.8, 0.85, 1.0), 1.5)
 		return
 
 	# 爆开阶段：白光一闪，裂痕变宽后淡出
@@ -83,5 +85,7 @@ func _draw() -> void:
 	draw_rect(cover, Color(1, 1, 1, 0.6 * (1.0 - t) * (1.0 - t)))
 	for cut in _cuts:
 		var width := lerpf(4.0, 22.0, t)
-		draw_line(cut.from, cut.to, Color(0.55, 0.65, 1.0, 0.8 * (1.0 - t)), width)
-		draw_line(cut.from, cut.to, Color(1, 1, 1, 1.0 - t), width * 0.3)
+		var dir: Vector2 = cut.to - cut.from
+		if not CombatFx.draw(self, "dimension_cut", _time - BURST_AT, (cut.from + cut.to) * 0.5, dir.angle(), Vector2(dir.length() / 87.0, lerpf(12.0, 22.0, t) / 27.0), Color(1, 1, 1, 1.0 - t)):
+			draw_line(cut.from, cut.to, Color(0.55, 0.65, 1.0, 0.8 * (1.0 - t)), width)
+			draw_line(cut.from, cut.to, Color(1, 1, 1, 1.0 - t), width * 0.3)

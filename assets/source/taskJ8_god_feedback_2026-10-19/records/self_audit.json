@@ -1,0 +1,95 @@
+{
+  "task": "J8",
+  "status": "pass_offline_asset_checks",
+  "files": [
+    {
+      "name": "loki_wolf_breath",
+      "checks": {
+        "png_rgba": true,
+        "exact_strip_dimensions": true,
+        "rgb_le48": true,
+        "unique_frames": true,
+        "margin_ge2": true,
+        "alpha_policy": true,
+        "gif_frame_counts": true,
+        "gif_exact_pixels": true,
+        "gif_average_fps": true,
+        "gif_loop_contract": true
+      },
+      "frame_bboxes": [
+        [
+          4,
+          19,
+          52,
+          45
+        ],
+        [
+          4,
+          14,
+          92,
+          50
+        ],
+        [
+          4,
+          17,
+          82,
+          46
+        ],
+        [
+          4,
+          23,
+          59,
+          40
+        ]
+      ],
+      "rgb_colors": 26,
+      "alpha_levels": [
+        0,
+        32,
+        64,
+        96,
+        128,
+        160,
+        208,
+        255
+      ],
+      "gifs": [
+        {
+          "path": "previews/loki_wolf_breath_normal.gif",
+          "frames": 4,
+          "durations_ms": [
+            60,
+            70,
+            60,
+            60
+          ],
+          "average_fps": 16.0,
+          "decoded_pixels_match_source_composite": true,
+          "loop": null
+        },
+        {
+          "path": "previews/loki_wolf_breath_slow8.gif",
+          "frames": 4,
+          "durations_ms": [
+            120,
+            130,
+            120,
+            130
+          ],
+          "average_fps": 8.0,
+          "decoded_pixels_match_source_composite": true,
+          "loop": null
+        }
+      ],
+      "visual_frame_review": "固定左侧喷口、右向火舌、峰值和余烬衰减可辨；透明间隙充足，无狼身体或满扇形实色。",
+      "visual_review_scope": "actual native1x overview and each4x frame-strip image, offline only; not browser playback or game",
+      "browser_playback": "not_performed_Work_browser_disabled",
+      "game_test": "not_performed"
+    }
+  ],
+  "browser": "in-app bootstrap missing browser-client.mjs; Chrome control returned Local browser use is disabled in Work settings; no setting changed or bypass",
+  "code_integration": "not_performed",
+  "game_test": "not_performed",
+  "native_size_all_frames_review": "Actual all49 native frames viewed in taskJ1/previews/all_J_all_frames_native1x.png",
+  "gallery_javascript_syntax": "node --check passed"
+}

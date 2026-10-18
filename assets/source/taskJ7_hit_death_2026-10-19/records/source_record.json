@@ -1,0 +1,56 @@
+{
+  "task": "J7",
+  "date": "2026-10-19",
+  "generator": "OpenAI built-in image_gen",
+  "generator_model": "not exposed by tool; not asserted",
+  "commercial_basis_url": "https://openai.com/policies/terms-of-use/",
+  "commercial_basis_checked": "2026-10-19",
+  "basis": "Content Ownership assigns OpenAI rights, if any, in output to user subject to terms and applicable law; project-owned references; no outside film/game/artist design references",
+  "other_tools": [
+    {
+      "tool": "Pillow12.1.1",
+      "license": "MIT-CMU, previously verified in assets/LICENSES.md",
+      "use": "crop, registration, nearest scaling, shared RGB and alpha formatting, audit and previews; no repainting"
+    },
+    {
+      "tool": "Node.js",
+      "license": "MIT plus included dependency licenses",
+      "license_url": "https://raw.githubusercontent.com/nodejs/node/main/LICENSE",
+      "use": "local node --check only; not embedded or distributed with game"
+    }
+  ],
+  "raw_outputs": [
+    {
+      "path": "originals/death_shards_v01.png",
+      "sha256": "61511c4e319ad93f0476aee70821553f17de72df1f46a86c002dc060bb0c3aa6"
+    },
+    {
+      "path": "originals/hit_bite_v01.png",
+      "sha256": "d7c9a0a5e6f7404d45b8507ff74057c019ffc650d06238bc534ec83fd464d30f"
+    },
+    {
+      "path": "originals/hit_claw_v01.png",
+      "sha256": "5ec9ef432d39de0113bc1e0edb6d745599c0a2f9487be6d834f5a8a9a8dc1c98"
+    }
+  ],
+  "actual_prompts": [
+    {
+      "path": "records/death_shards_v01_prompt.txt",
+      "sha256": "6bb8b7f28402fc2d25549493d2bd56227e3cd1f3ba5a069d457cb20f4b5e8966"
+    },
+    {
+      "path": "records/hit_bite_v01_prompt.txt",
+      "sha256": "1f78dd9927aa94b308933698d5667d7756a4cc9e33fcf595b5975462238e8db2"
+    },
+    {
+      "path": "records/hit_claw_v01_prompt.txt",
+      "sha256": "b5e4ec9a8e87677bd9a694e538f74a8d92f41e139845e3c14cb06c54da67b947"
+    }
+  ],
+  "new_accounts": false,
+  "payment": false,
+  "external_art_downloads": false,
+  "generated_images_not_exclusive": true,
+  "code_integration": "not_performed",
+  "game_test": "not_performed"
+}

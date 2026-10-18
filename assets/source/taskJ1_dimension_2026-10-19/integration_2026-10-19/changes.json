@@ -1,0 +1,84 @@
+{
+  "scripts/ultimates/dimension_slash.gd": [
+    {
+      "old": "\t\t\t\tdraw_line(cut.from, cut.to, Color(0, 0, 0, 0.9), 6.0)\n\t\t\t\tdraw_line(cut.from, cut.to, Color(0.8, 0.85, 1.0), 1.5)",
+      "new": "\t\t\t\tvar dir: Vector2 = cut.to - cut.from\n\t\t\t\tif not CombatFx.draw(self, \"dimension_cut\", 0.0, (cut.from + cut.to) * 0.5, dir.angle(), Vector2(dir.length() / 87.0, 0.45)):\n\t\t\t\t\tdraw_line(cut.from, cut.to, Color(0, 0, 0, 0.9), 6.0)\n\t\t\t\t\tdraw_line(cut.from, cut.to, Color(0.8, 0.85, 1.0), 1.5)"
+    },
+    {
+      "old": "\t\tdraw_line(cut.from, cut.to, Color(0.55, 0.65, 1.0, 0.8 * (1.0 - t)), width)\n\t\tdraw_line(cut.from, cut.to, Color(1, 1, 1, 1.0 - t), width * 0.3)",
+      "new": "\t\tvar dir: Vector2 = cut.to - cut.from\n\t\tif not CombatFx.draw(self, \"dimension_cut\", _time - BURST_AT, (cut.from + cut.to) * 0.5, dir.angle(), Vector2(dir.length() / 87.0, lerpf(12.0, 22.0, t) / 27.0), Color(1, 1, 1, 1.0 - t)):\n\t\t\tdraw_line(cut.from, cut.to, Color(0.55, 0.65, 1.0, 0.8 * (1.0 - t)), width)\n\t\t\tdraw_line(cut.from, cut.to, Color(1, 1, 1, 1.0 - t), width * 0.3)"
+    }
+  ],
+  "scripts/ultimates/wild_west_show.gd": [
+    {
+      "old": "\tdraw_arc(Vector2.ZERO, 34.0, 0.0, TAU, 32, Color(COLOR, 0.5 * fade), 2.0)",
+      "new": "\tif not CombatFx.draw(self, \"west_aura\", _time, Vector2.ZERO, 0.0, Vector2.ONE * 34.0 / 46.573, Color(1, 1, 1, fade)):\n\t\tdraw_arc(Vector2.ZERO, 34.0, 0.0, TAU, 32, Color(COLOR, 0.5 * fade), 2.0)\n\tif _time >= 0.25 and CombatFx.texture(\"west_star\") != null:\n\t\treturn"
+    },
+    {
+      "old": "\t\tvar star := PackedVector2Array()",
+      "new": "\t\tif CombatFx.draw(self, \"west_star\", _time, p, 0.0, Vector2.ONE * 0.45, Color(1, 1, 1, fade)):\n\t\t\tcontinue\n\t\tvar star := PackedVector2Array()"
+    }
+  ],
+  "scripts/ultimates/enter_formation.gd": [
+    {
+      "old": "\t\tdraw_line(trail.from, trail.to, Color(0.1, 0.0, 0.0, 0.7 * a), 8.0)\n\t\tdraw_line(trail.from, trail.to, Color(COLOR, a), 2.0)",
+      "new": "\t\tvar dir: Vector2 = trail.to - trail.from\n\t\tif not CombatFx.draw(self, \"formation_slash\", 0.35 - trail.life, (trail.from + trail.to) * 0.5, dir.angle(), Vector2(dir.length() / 56.0, 1.0), Color(1, 1, 1, a)):\n\t\t\tdraw_line(trail.from, trail.to, Color(0.1, 0.0, 0.0, 0.7 * a), 8.0)\n\t\t\tdraw_line(trail.from, trail.to, Color(COLOR, a), 2.0)"
+    },
+    {
+      "old": "\t\t\t# 骑兵剪影：马身 + 骑手 + 前伸的长枪",
+      "new": "\t\t\tif CombatFx.draw(self, \"formation_cavalry\", _cavalry_t + i * 0.07 + k * 0.13, p + Vector2(0, 6), 0.0, Vector2.ONE, Color(1, 1, 1, alpha)):\n\t\t\t\tcontinue\n\t\t\t# 骑兵剪影：马身 + 骑手 + 前伸的长枪"
+    }
+  ],
+  "scripts/ultimates/stonehenge.gd": [
+    {
+      "old": "\t\tdraw_circle(Vector2.ZERO, RADIUS, Color(MAGIC_COLOR, (0.06 + 0.04 * pulse) * fade))",
+      "new": "\t\tif not CombatFx.draw(self, \"stonehenge_circle\", 0.0, Vector2.ZERO, 0.0, Vector2.ONE * RADIUS / 62.0, Color(1, 1, 1, (0.25 + 0.12 * pulse) * fade), RADIUS):\n\t\t\tdraw_circle(Vector2.ZERO, RADIUS, Color(MAGIC_COLOR, (0.06 + 0.04 * pulse) * fade))"
+    },
+    {
+      "old": "\t\tdraw_rect(Rect2(base + drop + Vector2(-9, -30), Vector2(18, 44)), color)\n\t\tdraw_rect(Rect2(base + drop + Vector2(-9, -30), Vector2(18, 44)), Color(0.25, 0.26, 0.3, fade), false, 2.0)",
+      "new": "\t\tif not CombatFx.draw(self, \"stonehenge_stone\", 0.0, base + drop + Vector2(0, 14), 0.0, Vector2.ONE * 0.75, Color(1, 1, 1, fade)):\n\t\t\tdraw_rect(Rect2(base + drop + Vector2(-9, -30), Vector2(18, 44)), color)\n\t\t\tdraw_rect(Rect2(base + drop + Vector2(-9, -30), Vector2(18, 44)), Color(0.25, 0.26, 0.3, fade), false, 2.0)"
+    },
+    {
+      "old": "\t\t\tdraw_line(base + Vector2(0, -32), next + Vector2(0, -32), Color(0.48, 0.49, 0.55, fade), 9.0)",
+      "new": "\t\t\tif not CombatFx.draw(self, \"stonehenge_lintel\", 0.0, (base + next) * 0.5 + Vector2(0, -32), (next - base).angle(), Vector2(base.distance_to(next) / 60.0, 9.0 / 14.0), Color(1, 1, 1, fade)):\n\t\t\t\tdraw_line(base + Vector2(0, -32), next + Vector2(0, -32), Color(0.48, 0.49, 0.55, fade), 9.0)"
+    }
+  ],
+  "scripts/weapons/twin_blades.gd": [
+    {
+      "old": "const SLASH_DURATION := 0.1",
+      "new": "const SLASH_DURATION := 0.25"
+    },
+    {
+      "old": "\tdraw_arc(Vector2.ZERO, reach * 0.9, a - HALF_ARC, a + HALF_ARC, 16, Color(1.0, 0.45, 0.45, alpha), 3.0)",
+      "new": "\tif CombatFx.draw(self, \"blades_slash\", SLASH_DURATION - _slash_time, Vector2.ZERO, a, Vector2.ONE * reach * 0.9 / 30.5, Color.WHITE, reach, HALF_ARC, _aim.angle()):\n\t\treturn\n\tdraw_arc(Vector2.ZERO, reach * 0.9, a - HALF_ARC, a + HALF_ARC, 16, Color(1.0, 0.45, 0.45, alpha), 3.0)"
+    }
+  ],
+  "scripts/weapons/arcane_nova.gd": [
+    {
+      "old": "\t\tdraw_arc(Vector2.ZERO, r, 0.0, TAU, 64, Color(COLOR, 0.9 * alpha), 6.0 * (1.0 - k) + 2.0)\n\t\tdraw_circle(Vector2.ZERO, r, Color(COLOR, 0.08 * alpha))",
+      "new": "\t\tif CombatFx.draw(self, \"arcane_nova\", wave.t, Vector2.ZERO, 0.0, Vector2.ONE * r / 62.514, Color(1, 1, 1, alpha), r):\n\t\t\tdraw_arc(Vector2.ZERO, r, 0.0, TAU, 64, Color(COLOR, 0.35 * alpha), 1.0)\n\t\telse:\n\t\t\tdraw_arc(Vector2.ZERO, r, 0.0, TAU, 64, Color(COLOR, 0.9 * alpha), 6.0 * (1.0 - k) + 2.0)\n\t\t\tdraw_circle(Vector2.ZERO, r, Color(COLOR, 0.08 * alpha))"
+    }
+  ],
+  "scripts/effects/fx_layer.gd": [
+    {
+      "old": "\tinstance._marks.append({\"pos\": pos, \"angle\": angle, \"length\": length, \"kind\": kind, \"color\": color, \"life\": MARK_LIFE})",
+      "new": "\tvar duration := 0.25 if kind in [\"claw\", \"bite\", \"death\"] else MARK_LIFE\n\tinstance._marks.append({\"pos\": pos, \"angle\": angle, \"length\": length, \"kind\": kind, \"color\": color, \"life\": duration, \"duration\": duration})\n\n\nstatic func death(pos: Vector2, color: Color, elite: bool = false) -> bool:\n\tif instance == null or CombatFx.texture(\"death_shards\") == null:\n\t\treturn false\n\tmark(pos, randf() * TAU, 88.0 if elite else 56.0, color.lightened(0.3), \"death\")\n\treturn true"
+    },
+    {
+      "old": "\tvar k: float = 1.0 - m.life / MARK_LIFE           # 0 → 1",
+      "new": "\tvar duration: float = m.get(\"duration\", MARK_LIFE)\n\tvar id: String = {\"claw\": \"hit_claw\", \"bite\": \"hit_bite\", \"death\": \"death_shards\"}.get(m.kind, \"\")\n\tif id != \"\":\n\t\tvar width := 50.0 if m.kind == \"bite\" else 28.0\n\t\tif CombatFx.draw(self, id, duration - m.life, m.pos, m.angle, Vector2.ONE * m.length / width, m.color):\n\t\t\treturn\n\tvar k: float = 1.0 - m.life / duration           # 0 → 1"
+    }
+  ],
+  "scripts/entities/enemy.gd": [
+    {
+      "old": "\tFxLayer.burst(global_position, color, 30 if is_elite else 8, 220.0 if is_elite else 150.0)",
+      "new": "\tif not FxLayer.death(global_position, color, is_elite):\n\t\tFxLayer.burst(global_position, color, 30 if is_elite else 8, 220.0 if is_elite else 150.0)"
+    }
+  ],
+  "scripts/gods/loki.gd": [
+    {
+      "old": "\tif _breath_flash > 0.0:\n\t\tvar cone := PackedVector2Array([p])",
+      "new": "\tif _breath_flash > 0.0:\n\t\tvar fade := minf(1.0, _breath_flash / 0.15)\n\t\tif CombatFx.draw(self, \"loki_wolf_breath\", 0.4 - _breath_flash, p, _breath_dir.angle(), Vector2.ONE * BREATH_LENGTH / 88.0, Color(1, 1, 1, fade), BREATH_LENGTH, 0.45):\n\t\t\treturn\n\t\tvar cone := PackedVector2Array([p])"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+--- a/assets/LICENSES.md
++++ b/assets/LICENSES.md
+@@ -181,8 +181,25 @@
+ I1～I6共7项PNG，沿用用户与当前任务书明确批准的OpenAI内置image_gen及本台账已核验商用依据 https://openai.com/policies/terms-of-use/ 。只使用项目已有自有像素图及本批自产角色作输入，不写人物、作品或画师名；不新增账号、注册、付款或收费API。Pillow沿用MIT-CMU，仅作源像素裁排、最近邻尺度/色表/alpha规范化、预览和核验，不重画人物或道具。原图、实际Prompt和输入、退回原因、哈希与交接分别记录六个taskI目录。此为开工登记，不代表制作、自检、代码接入或游戏验收完成；G6/J/K/L不接管。
+ 
+ 
++### J1～J8 开工登记（2026-10-19）
++
++用户明确授权制作现有战斗表现升级。J1～J7按后续任务要求规划13张PNG，J8先做逐项效果草案和integration.md；不重复G4/G5主体效果。使用已批准的OpenAI内置image_gen，2026-10-19重新核查官方条款 https://openai.com/policies/terms-of-use/ Content/Ownership：用户在适用法律范围内拥有输出，可用于本游戏商用；不将输出权属表述为独占或版权保护保证。只用本项目已有自有像素图作输入，不使用人物、影视游戏角色或画师名，不新增账号、付费API或付款。Pillow12.1.1沿用既有已核验MIT-CMU许可，仅作裁帧、排帧、最近邻尺寸和色表/alpha规格处理、自检和预览，不重画角色。逐项原图、实际提示词、参考图哈希、失败候选、来源和交接保存在taskJ1～taskJ8独立目录。此为开工记录，尚不代表素材自检、代码接入或游戏验收完成。只写本J任务assets及台账追加，不接管H/I/G6/K/L，不改代码、场景、docs、项目配置或导入设置，不提交或推送Git。
++
++
+ ### Part I / I1～I6 交付与代码接入补记（2026-10-19）
+ 
+ 7张正式RGBA PNG、16个帧格已交付到sprites/quests/：bridge_guard、bridge_guard_idle、bonfire_survivors、valkyrie_wings、iron_horseshoe、river_sword、sun_altar。实际7次已批准内置image_gen生成，7张原图及真实Prompt/输入参考/哈希保存在六个taskI独立目录；沿用本台账OpenAI输出商用依据 https://openai.com/policies/terms-of-use/ ，没有外部作品/人物/画师名提示、新账号、注册、购买或收费API。静态少女最终取同源待机第0格，最初独立静态保留为设计参考候选；未重复帧凑动画。Pillow只作整帧/整组裁排、最近邻统一尺度、来源色表限色、alpha二值规范化与预览/核验，未重画人物道具。幸存者24/36px空隙候选退回保留，最终54px中央透明容纳现有最大51px篝火；翼对整侧外移1px保证透明中心；剑尖依据原像素整帧定位，旧定位候选保留。所有实体二值alpha、精确尺寸、>=2px边距、RGB<=48（实际29～48色）、正式/approved/manifest哈希通过，3条4帧8fps循环提供12份最终原速/8fps慢放GIF，解码逐像素及平均帧率通过，深色底1倍/4倍/人物脚底和躯干中心、四帧回接/篝火与余烬叠图已审。非平铺独立物件，4×4地块平铺不适用。
+ 
+ 六份支线绘制已接入；羽翼在原有z20前景层，篝火与余烬复用原正式图。冥河裂纹只减细/减淡以突出剑身；六个支线所有非绘制函数与开工备份完全相同，互动圈/计时/指示/成功条件/奖励/刷怪逻辑保留。Godot4.7.2实际Game场景、真实关卡和地标，专项77项0失败，18张无暂停遮挡实际渲染截图逐帧复查；现有战斗回归997项0失败。早期通用地标fixture、自动暂停遮挡和裂纹抢眼截图保留。Godot使用沿用已核验MIT许可 https://godotengine.org/license/ 。制作、文件自检、代码接入及受控运行验证完成；完整手动通关、长时平衡、密集实战遮挡与其他硬件未测，不标游戏整体验收通过。证据入口source/taskI1_bridge_guard_2026-10-19/index.html和completion.json，每个I目录具备manifest/README/gallery/integration。未改场景、项目配置或docs，未接管G6/J/K/L，未操作浏览器或更改其设置，未提交/推送Git。检测到并发代理修改ui/hub.gd和ui/title.gd，原样保留不回滚。
++
++
++### J1～J8 素材交付与离线自检（2026-10-19）
++
++实际生成16张原图，定稿14 PNG/49独立帧；J2光环与J6新星首轮退回并保留原图、候选、旧预览和原因，定稿v02径向主峰各四帧一致。J8按先方案/integration再固定文件的顺序，仅新增loki_wolf_breath；静电、护体/闪光、猎物标记保留动态程序反馈，不重复G4/G5，不制作未定义融合套装。原图、实际Prompt、实际工具输入/参考库及SHA256、全部正式/候选/approved、清单、自检、图库、原速/慢放GIF及逐项接入说明在八个taskJ目录；总交接source/taskJ1_dimension_2026-10-19/handoff.md。沿用本节开工时核验的OpenAI输出商用依据 https://openai.com/policies/terms-of-use/ 及Pillow MIT-CMU；补充本机Node.js仅用于八份图库脚本node --check，官方许可 https://raw.githubusercontent.com/nodejs/node/main/LICENSE 主体MIT及随附依赖许可允许商用，未将Node或Pillow程序嵌入/分发游戏。没有新增账号、付款或外部作品美术。
++
++实际检查全部49帧1倍暗底、每条4倍逐帧，RGBA/尺寸/RGB<=48/独立alpha/2像素边距/独立帧/实体二值alpha/骑兵基线/中心留白/GIF像素往返及平均8或16fps/循环方式通过；14正式与approved/候选哈希一致，八份图库脚本语法检查通过。内置浏览器组件缺失，Chrome控制返回Work禁用；未绕过或改设置，浏览器连续播放/交互未测。全部代码接入、游戏新旧对照、真实边界/遮挡/密集性能/节点回收未测，不标记游戏验收通过。代码接入需按integration替代局部几何，保留原判伤、AI、冷却和集中绘制；J7可按实际性能保留程序方案。只写本J任务assets及追加台账，未改代码、场景、docs、项目配置或导入设置，未接管H/I/G6/K/L，未Git提交或推送。
++
++
++### J1～J8 代码接入与受控运行验收（2026-10-19）
++
++用户追加授权代码接入、验收、commit和push。14正式PNG像素与生成来源不变；新增项目自有CombatFx帧相位/锚点/扇形裁切及9处既有脚本局部接入，集中标记上限120且零新增标记节点；保留原判伤/AI/范围/冷却。Godot4.7.2仅作实际引擎导入、测试、截图与短测，官方 https://godotengine.org/license/ MIT许可已重新核验，未来分发引擎须保留许可；Pillow只拼实际截图对照，不重画。没有新外部美术、账号、购买或收费API。固定提交候选626专项0失败，工作区997现有回归0失败；46张实际Game截图已复查，350动画敌人+42骑兵+120标记固定绘制负载测试和回收记录保留；完整手动通关、长期平衡和其他设备未测，不标记全游戏发行验收通过。原错误crit测试预期、角色回退/暂停覆盖/副本API差异及早期导入记录保留，最终采用修正fixture和干净运行日志。证据source/taskJ1_dimension_2026-10-19/integration_2026-10-19/。提交仅包含J素材与J接入变更，不接管H/I/G6/K/L或其他未提交玩法改动。

@@ -1,0 +1,113 @@
+{
+  "name": "arcane_nova",
+  "raw": "originals/arcane_nova_v02.png",
+  "raw_sha256": "c85b8ef0e77043a3c80fb2452b2b910c59b9c08986708c4986851c8c475ee3e9",
+  "raw_size": [
+    1536,
+    1024
+  ],
+  "grid": [
+    2,
+    2
+  ],
+  "cell_rects": [
+    [
+      0,
+      0,
+      768,
+      512
+    ],
+    [
+      768,
+      0,
+      1536,
+      512
+    ],
+    [
+      0,
+      512,
+      768,
+      1024
+    ],
+    [
+      768,
+      512,
+      1536,
+      1024
+    ]
+  ],
+  "alpha_bbox_threshold": 16,
+  "cell_content_bboxes": [
+    [
+      324,
+      77,
+      743,
+      490
+    ],
+    [
+      20,
+      77,
+      435,
+      489
+    ],
+    [
+      323,
+      22,
+      739,
+      434
+    ],
+    [
+      23,
+      20,
+      437,
+      433
+    ]
+  ],
+  "uniform_nearest_factor": 0.29594272076372313,
+  "placements": [
+    [
+      2,
+      3,
+      124,
+      122
+    ],
+    [
+      2,
+      3,
+      123,
+      122
+    ],
+    [
+      2,
+      3,
+      123,
+      122
+    ],
+    [
+      2,
+      3,
+      123,
+      122
+    ]
+  ],
+  "shared_rgb_palette_max": 32,
+  "alpha_policy": [
+    0,
+    32,
+    64,
+    96,
+    128,
+    160,
+    208,
+    255
+  ],
+  "alpha_cap": 255,
+  "target_frame_size": [
+    128,
+    128
+  ],
+  "frame_count": 4,
+  "candidate": "candidates/arcane_nova_v02.png",
+  "candidate_sha256": "b2333a956024f575b10a0c47d9630bd5e7beda0b545275b51120c0b6768cb5d8",
+  "operation_scope": "crop, uniform nearest scaling, register, shared color and alpha specification; no painted pixels or duplicated animation frames"
+}

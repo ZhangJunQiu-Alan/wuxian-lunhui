@@ -1,0 +1,100 @@
+{
+  "task": "J1-J8",
+  "date": "2026-10-19",
+  "status": "pass_offline_assets_handoff",
+  "tasks": [
+    {
+      "task": "J1",
+      "png": 1,
+      "frames": 4,
+      "gallery_links": 13,
+      "offline_checks": "pass",
+      "code_integration": "not_performed",
+      "game_test": "not_performed"
+    },
+    {
+      "task": "J2",
+      "png": 2,
+      "frames": 8,
+      "gallery_links": 22,
+      "offline_checks": "pass",
+      "code_integration": "not_performed",
+      "game_test": "not_performed"
+    },
+    {
+      "task": "J3",
+      "png": 2,
+      "frames": 10,
+      "gallery_links": 22,
+      "offline_checks": "pass",
+      "code_integration": "not_performed",
+      "game_test": "not_performed"
+    },
+    {
+      "task": "J4",
+      "png": 3,
+      "frames": 3,
+      "gallery_links": 25,
+      "offline_checks": "pass",
+      "code_integration": "not_performed",
+      "game_test": "not_performed"
+    },
+    {
+      "task": "J5",
+      "png": 1,
+      "frames": 4,
+      "gallery_links": 13,
+      "offline_checks": "pass",
+      "code_integration": "not_performed",
+      "game_test": "not_performed"
+    },
+    {
+      "task": "J6",
+      "png": 1,
+      "frames": 4,
+      "gallery_links": 13,
+      "offline_checks": "pass",
+      "code_integration": "not_performed",
+      "game_test": "not_performed"
+    },
+    {
+      "task": "J7",
+      "png": 3,
+      "frames": 12,
+      "gallery_links": 31,
+      "offline_checks": "pass",
+      "code_integration": "not_performed",
+      "game_test": "not_performed"
+    },
+    {
+      "task": "J8",
+      "png": 1,
+      "frames": 4,
+      "gallery_links": 13,
+      "offline_checks": "pass",
+      "code_integration": "not_performed",
+      "game_test": "not_performed"
+    }
+  ],
+  "total_png": 14,
+  "total_frames": 49,
+  "all_formal_approved_candidate_hashes_match": true,
+  "gallery_local_links": 152,
+  "missing_links": [],
+  "browser_playback": "not_performed_Work_browser_disabled",
+  "code_integration": "not_performed",
+  "game_test": "not_performed",
+  "gallery_javascript_syntax": "all8 node --check passed",
+  "native_frames_visually_reviewed": 49,
+  "four_times_frame_strips_visually_reviewed": 14,
+  "generated_original_images": 16,
+  "rejected_first_versions": 2,
+  "protected_snapshot_files": 211,
+  "protected_snapshot_changed_paths": [
+    "scripts/quests/river_sword_quest.gd",
+    "docs/小说_第零号展品.md",
+    "docs/世界观设定.md"
+  ],
+  "scope_note": "Protected source snapshot includes concurrent edits in river_sword_quest.gd and story/world docs; this agent did not write them. No J target script changed since start.",
+  "integration_review": "J5 and J7 now explicitly use a separate0.25s visual lifetime for16fps; gameplay timing unchanged"
+}

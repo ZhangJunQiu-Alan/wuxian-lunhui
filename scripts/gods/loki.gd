@@ -228,6 +228,9 @@ func _draw_wolf() -> void:
 		draw_circle(p + Vector2(7 * face, -5) * scale, 5.0 * scale, Color(1.0, 0.7, 0.3, 0.9))
 	draw_circle(p, 14.0 * scale, Color(1.0, 0.55, 0.2, 0.15))
 	if _breath_flash > 0.0:
+		var fade := minf(1.0, _breath_flash / 0.15)
+		if CombatFx.draw(self, "loki_wolf_breath", 0.4 - _breath_flash, p, _breath_dir.angle(), Vector2.ONE * BREATH_LENGTH / 88.0, Color(1, 1, 1, fade), BREATH_LENGTH, 0.45):
+			return
 		var cone := PackedVector2Array([p])
 		for i in 9:
 			cone.append(p + _breath_dir.rotated(-0.45 + 0.9 * i / 8.0) * BREATH_LENGTH)

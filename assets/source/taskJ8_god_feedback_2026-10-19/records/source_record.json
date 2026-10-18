@@ -1,0 +1,40 @@
+{
+  "task": "J8",
+  "date": "2026-10-19",
+  "generator": "OpenAI built-in image_gen",
+  "generator_model": "not exposed by tool; not asserted",
+  "commercial_basis_url": "https://openai.com/policies/terms-of-use/",
+  "commercial_basis_checked": "2026-10-19",
+  "basis": "Content Ownership assigns OpenAI rights, if any, in output to user subject to terms and applicable law; project-owned references; no outside film/game/artist design references",
+  "other_tools": [
+    {
+      "tool": "Pillow12.1.1",
+      "license": "MIT-CMU, previously verified in assets/LICENSES.md",
+      "use": "crop, registration, nearest scaling, shared RGB and alpha formatting, audit and previews; no repainting"
+    },
+    {
+      "tool": "Node.js",
+      "license": "MIT plus included dependency licenses",
+      "license_url": "https://raw.githubusercontent.com/nodejs/node/main/LICENSE",
+      "use": "local node --check only; not embedded or distributed with game"
+    }
+  ],
+  "raw_outputs": [
+    {
+      "path": "originals/loki_wolf_breath_v01.png",
+      "sha256": "b68ad2dc08d1de12cefa272569b1adccd58bab9e7508165926daa6ef7ecb0dac"
+    }
+  ],
+  "actual_prompts": [
+    {
+      "path": "records/loki_wolf_breath_v01_prompt.txt",
+      "sha256": "b092f8ea1eb30dc38eaf4d2fda70228eba053f1100f834b7403991dfea02e5b0"
+    }
+  ],
+  "new_accounts": false,
+  "payment": false,
+  "external_art_downloads": false,
+  "generated_images_not_exclusive": true,
+  "code_integration": "not_performed",
+  "game_test": "not_performed"
+}

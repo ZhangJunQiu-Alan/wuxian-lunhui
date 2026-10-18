@@ -1,0 +1,564 @@
+{
+  "task": "J7",
+  "date": "2026-10-19",
+  "status": "art_and_code_integrated_controlled_runtime_checks_passed",
+  "files": [
+    {
+      "task": "J7",
+      "name": "hit_claw",
+      "formal_path": "assets/sprites/effects/hit_claw.png",
+      "version": "v01",
+      "frame_size": [
+        32,
+        32
+      ],
+      "frames": 4,
+      "fps": 16,
+      "loop": false,
+      "anchor": [
+        16.0,
+        16.0
+      ],
+      "orientation": "right",
+      "alpha_policy": "8_level_source_alpha_or_lower_cap",
+      "rgb_colors": 26,
+      "alpha_levels": [
+        0,
+        32,
+        64,
+        96,
+        128,
+        160,
+        208,
+        255
+      ],
+      "sha256": "671207266a071a053c2b9799f84001a7b09723b8ac7dbc6e75a5c058db7dce4b",
+      "raw": "originals/hit_claw_v01.png",
+      "raw_sha256": "5ec9ef432d39de0113bc1e0edb6d745599c0a2f9487be6d834f5a8a9a8dc1c98",
+      "prompt": "records/hit_claw_v01_prompt.txt",
+      "prompt_sha256": "b5e4ec9a8e87677bd9a694e538f74a8d92f41e139845e3c14cb06c54da67b947",
+      "reference_library": [
+        {
+          "project_path": "assets/sprites/effects/katana_slash.png",
+          "copy": "references/katana_slash.png",
+          "sha256": "7bd81d28708a9f538306c26680e7520af1f5c7349ea52c634f341e95d5cc6d7a",
+          "role": "project-owned style reference; no external character design"
+        },
+        {
+          "project_path": "assets/sprites/effects/gods/odin_rune_circle.png",
+          "copy": "references/odin_rune_circle.png",
+          "sha256": "286138576830d33617e3fcff77ea31fe7f2729e896fcaef32e8b317172d4b003",
+          "role": "project-owned style reference; no external character design"
+        },
+        {
+          "project_path": "assets/sprites/effects/gods/loki_fire_patch.png",
+          "copy": "references/loki_fire_patch.png",
+          "sha256": "a5773032ad2af278c32e3079399b7c8c4205cb0cc8f90b12a1a784c81d3f4ec4",
+          "role": "project-owned style reference; no external character design"
+        },
+        {
+          "project_path": "assets/sprites/effects/bosses/garm_bite.png",
+          "copy": "references/garm_bite.png",
+          "sha256": "95402ffcaec4881b71e39ce05ba1d8f97cf31c6fe838733dd5259c7cee55eb62",
+          "role": "project-owned style reference; no external character design"
+        },
+        {
+          "project_path": "assets/sprites/characters/assassin.png",
+          "copy": "references/assassin.png",
+          "sha256": "36f61e50bcfb173863e5abc69afc70ef10ae3d17bb6bf7bab8a31d42fcc2a772",
+          "role": "project-owned style reference; no external character design"
+        },
+        {
+          "project_path": "assets/sprites/characters/gunslinger.png",
+          "copy": "references/gunslinger.png",
+          "sha256": "754134580682ef324d1b7e90fd2849807fe4622bc702a61bcd305a449fef9f52",
+          "role": "project-owned style reference; no external character design"
+        },
+        {
+          "project_path": "assets/sprites/characters/mage.png",
+          "copy": "references/mage.png",
+          "sha256": "3cbb5f8a32b7cb79bdfa52f38c7dbce3c487d0d9b50f25470967f904cf2ed90b",
+          "role": "project-owned style reference; no external character design"
+        }
+      ],
+      "generation_inputs": [
+        {
+          "path": "references/style_board.png",
+          "role": "style reference collage made from reference_library",
+          "sha256": "85543eeeca694fadb1d87a6b2e09c58948da2e092a25c693617673d17851f691"
+        }
+      ],
+      "tool": "OpenAI built-in image_gen; model identity not exposed",
+      "license_url": "https://openai.com/policies/terms-of-use/",
+      "license": "OpenAI output rights per applicable terms; project-owned input references; not exclusive copyright guarantee",
+      "processing_record": "records/hit_claw_processing.json",
+      "self_checks": {
+        "checks": {
+          "png_rgba": true,
+          "exact_strip_dimensions": true,
+          "rgb_le48": true,
+          "unique_frames": true,
+          "margin_ge2": true,
+          "alpha_policy": true,
+          "gif_frame_counts": true,
+          "gif_exact_pixels": true,
+          "gif_average_fps": true,
+          "gif_loop_contract": true
+        },
+        "frame_bboxes": [
+          [
+            8,
+            8,
+            23,
+            23
+          ],
+          [
+            3,
+            2,
+            28,
+            30
+          ],
+          [
+            4,
+            5,
+            27,
+            28
+          ],
+          [
+            9,
+            6,
+            22,
+            25
+          ]
+        ],
+        "rgb_colors": 26,
+        "alpha_levels": [
+          0,
+          32,
+          64,
+          96,
+          128,
+          160,
+          208,
+          255
+        ],
+        "gifs": [
+          {
+            "path": "previews/hit_claw_normal.gif",
+            "frames": 4,
+            "durations_ms": [
+              60,
+              70,
+              60,
+              60
+            ],
+            "average_fps": 16.0,
+            "decoded_pixels_match_source_composite": true,
+            "loop": null
+          },
+          {
+            "path": "previews/hit_claw_slow8.gif",
+            "frames": 4,
+            "durations_ms": [
+              120,
+              130,
+              120,
+              130
+            ],
+            "average_fps": 8.0,
+            "decoded_pixels_match_source_composite": true,
+            "loop": null
+          }
+        ],
+        "visual_frame_review": "三道并列爪痕，无爪掌或敌人身体，峰值与碎裂尾帧清楚。",
+        "visual_review_scope": "Actual all49 native1x frames and every4x frame strip viewed; range/rotation previews are offline illustrations; not browser playback or game",
+        "browser_playback": "not_performed_Work_browser_disabled",
+        "game_test": "not_performed"
+      },
+      "source_reference_role": "style only; revised v02 also uses retained v01 candidate as edit target",
+      "integration": {
+        "document": "integration.md",
+        "target_script": "scripts/effects/fx_layer.gd",
+        "function": "_draw_mark",
+        "status": "implemented_and_controlled_runtime_verified",
+        "runtime_test": "controlled_Game_viewport_and626_checks_passed"
+      },
+      "game_test": "controlled_runtime_passed_full_playthrough_unmeasured",
+      "import_descriptor_sha256": "5b1c8e55b67395ef74fdea1447290aeb28d35041dfb3262b3934b9deef0d3204"
+    },
+    {
+      "task": "J7",
+      "name": "hit_bite",
+      "formal_path": "assets/sprites/effects/hit_bite.png",
+      "version": "v01",
+      "frame_size": [
+        64,
+        64
+      ],
+      "frames": 4,
+      "fps": 16,
+      "loop": false,
+      "anchor": [
+        32.0,
+        32.0
+      ],
+      "orientation": "right",
+      "alpha_policy": "8_level_source_alpha_or_lower_cap",
+      "rgb_colors": 28,
+      "alpha_levels": [
+        0,
+        32,
+        64,
+        96,
+        128,
+        160,
+        208,
+        255
+      ],
+      "sha256": "1e0e0b18432621b5d502d6936867c51cd5b306683651c3cd097a86e28c6feadc",
+      "raw": "originals/hit_bite_v01.png",
+      "raw_sha256": "d7c9a0a5e6f7404d45b8507ff74057c019ffc650d06238bc534ec83fd464d30f",
+      "prompt": "records/hit_bite_v01_prompt.txt",
+      "prompt_sha256": "1f78dd9927aa94b308933698d5667d7756a4cc9e33fcf595b5975462238e8db2",
+      "reference_library": [
+        {
+          "project_path": "assets/sprites/effects/katana_slash.png",
+          "copy": "references/katana_slash.png",
+          "sha256": "7bd81d28708a9f538306c26680e7520af1f5c7349ea52c634f341e95d5cc6d7a",
+          "role": "project-owned style reference; no external character design"
+        },
+        {
+          "project_path": "assets/sprites/effects/gods/odin_rune_circle.png",
+          "copy": "references/odin_rune_circle.png",
+          "sha256": "286138576830d33617e3fcff77ea31fe7f2729e896fcaef32e8b317172d4b003",
+          "role": "project-owned style reference; no external character design"
+        },
+        {
+          "project_path": "assets/sprites/effects/gods/loki_fire_patch.png",
+          "copy": "references/loki_fire_patch.png",
+          "sha256": "a5773032ad2af278c32e3079399b7c8c4205cb0cc8f90b12a1a784c81d3f4ec4",
+          "role": "project-owned style reference; no external character design"
+        },
+        {
+          "project_path": "assets/sprites/effects/bosses/garm_bite.png",
+          "copy": "references/garm_bite.png",
+          "sha256": "95402ffcaec4881b71e39ce05ba1d8f97cf31c6fe838733dd5259c7cee55eb62",
+          "role": "project-owned style reference; no external character design"
+        },
+        {
+          "project_path": "assets/sprites/characters/assassin.png",
+          "copy": "references/assassin.png",
+          "sha256": "36f61e50bcfb173863e5abc69afc70ef10ae3d17bb6bf7bab8a31d42fcc2a772",
+          "role": "project-owned style reference; no external character design"
+        },
+        {
+          "project_path": "assets/sprites/characters/gunslinger.png",
+          "copy": "references/gunslinger.png",
+          "sha256": "754134580682ef324d1b7e90fd2849807fe4622bc702a61bcd305a449fef9f52",
+          "role": "project-owned style reference; no external character design"
+        },
+        {
+          "project_path": "assets/sprites/characters/mage.png",
+          "copy": "references/mage.png",
+          "sha256": "3cbb5f8a32b7cb79bdfa52f38c7dbce3c487d0d9b50f25470967f904cf2ed90b",
+          "role": "project-owned style reference; no external character design"
+        }
+      ],
+      "generation_inputs": [
+        {
+          "path": "references/style_board.png",
+          "role": "style reference collage made from reference_library",
+          "sha256": "85543eeeca694fadb1d87a6b2e09c58948da2e092a25c693617673d17851f691"
+        }
+      ],
+      "tool": "OpenAI built-in image_gen; model identity not exposed",
+      "license_url": "https://openai.com/policies/terms-of-use/",
+      "license": "OpenAI output rights per applicable terms; project-owned input references; not exclusive copyright guarantee",
+      "processing_record": "records/hit_bite_processing.json",
+      "self_checks": {
+        "checks": {
+          "png_rgba": true,
+          "exact_strip_dimensions": true,
+          "rgb_le48": true,
+          "unique_frames": true,
+          "margin_ge2": true,
+          "alpha_policy": true,
+          "gif_frame_counts": true,
+          "gif_exact_pixels": true,
+          "gif_average_fps": true,
+          "gif_loop_contract": true
+        },
+        "frame_bboxes": [
+          [
+            8,
+            2,
+            55,
+            62
+          ],
+          [
+            7,
+            9,
+            57,
+            54
+          ],
+          [
+            8,
+            3,
+            55,
+            61
+          ],
+          [
+            14,
+            5,
+            50,
+            58
+          ]
+        ],
+        "rgb_colors": 28,
+        "alpha_levels": [
+          0,
+          32,
+          64,
+          96,
+          128,
+          160,
+          208,
+          255
+        ],
+        "gifs": [
+          {
+            "path": "previews/hit_bite_normal.gif",
+            "frames": 4,
+            "durations_ms": [
+              60,
+              70,
+              60,
+              60
+            ],
+            "average_fps": 16.0,
+            "decoded_pixels_match_source_composite": true,
+            "loop": null
+          },
+          {
+            "path": "previews/hit_bite_slow8.gif",
+            "frames": 4,
+            "durations_ms": [
+              120,
+              130,
+              120,
+              130
+            ],
+            "average_fps": 8.0,
+            "decoded_pixels_match_source_composite": true,
+            "loop": null
+          }
+        ],
+        "visual_frame_review": "上下对合的抽象牙弧及接触闪痕，无嘴部实体或血肉；中心留白。",
+        "visual_review_scope": "Actual all49 native1x frames and every4x frame strip viewed; range/rotation previews are offline illustrations; not browser playback or game",
+        "browser_playback": "not_performed_Work_browser_disabled",
+        "game_test": "not_performed"
+      },
+      "source_reference_role": "style only; revised v02 also uses retained v01 candidate as edit target",
+      "integration": {
+        "document": "integration.md",
+        "target_script": "scripts/effects/fx_layer.gd",
+        "function": "_draw_mark",
+        "status": "implemented_and_controlled_runtime_verified",
+        "runtime_test": "controlled_Game_viewport_and626_checks_passed"
+      },
+      "game_test": "controlled_runtime_passed_full_playthrough_unmeasured",
+      "import_descriptor_sha256": "3a1685e497c2bcb9778b615010f8680170febbc1e9c78be51f294fe1119975ca"
+    },
+    {
+      "task": "J7",
+      "name": "death_shards",
+      "formal_path": "assets/sprites/effects/death_shards.png",
+      "version": "v01",
+      "frame_size": [
+        32,
+        32
+      ],
+      "frames": 4,
+      "fps": 16,
+      "loop": false,
+      "anchor": [
+        16.0,
+        16.0
+      ],
+      "orientation": "right",
+      "alpha_policy": "8_level_source_alpha_or_lower_cap",
+      "rgb_colors": 29,
+      "alpha_levels": [
+        0,
+        32,
+        64,
+        96,
+        128,
+        160,
+        208,
+        255
+      ],
+      "sha256": "7e8fd5876468702299206d8f6183aafb42f90a1d25e304a10492340e33eda0e8",
+      "raw": "originals/death_shards_v01.png",
+      "raw_sha256": "61511c4e319ad93f0476aee70821553f17de72df1f46a86c002dc060bb0c3aa6",
+      "prompt": "records/death_shards_v01_prompt.txt",
+      "prompt_sha256": "6bb8b7f28402fc2d25549493d2bd56227e3cd1f3ba5a069d457cb20f4b5e8966",
+      "reference_library": [
+        {
+          "project_path": "assets/sprites/effects/katana_slash.png",
+          "copy": "references/katana_slash.png",
+          "sha256": "7bd81d28708a9f538306c26680e7520af1f5c7349ea52c634f341e95d5cc6d7a",
+          "role": "project-owned style reference; no external character design"
+        },
+        {
+          "project_path": "assets/sprites/effects/gods/odin_rune_circle.png",
+          "copy": "references/odin_rune_circle.png",
+          "sha256": "286138576830d33617e3fcff77ea31fe7f2729e896fcaef32e8b317172d4b003",
+          "role": "project-owned style reference; no external character design"
+        },
+        {
+          "project_path": "assets/sprites/effects/gods/loki_fire_patch.png",
+          "copy": "references/loki_fire_patch.png",
+          "sha256": "a5773032ad2af278c32e3079399b7c8c4205cb0cc8f90b12a1a784c81d3f4ec4",
+          "role": "project-owned style reference; no external character design"
+        },
+        {
+          "project_path": "assets/sprites/effects/bosses/garm_bite.png",
+          "copy": "references/garm_bite.png",
+          "sha256": "95402ffcaec4881b71e39ce05ba1d8f97cf31c6fe838733dd5259c7cee55eb62",
+          "role": "project-owned style reference; no external character design"
+        },
+        {
+          "project_path": "assets/sprites/characters/assassin.png",
+          "copy": "references/assassin.png",
+          "sha256": "36f61e50bcfb173863e5abc69afc70ef10ae3d17bb6bf7bab8a31d42fcc2a772",
+          "role": "project-owned style reference; no external character design"
+        },
+        {
+          "project_path": "assets/sprites/characters/gunslinger.png",
+          "copy": "references/gunslinger.png",
+          "sha256": "754134580682ef324d1b7e90fd2849807fe4622bc702a61bcd305a449fef9f52",
+          "role": "project-owned style reference; no external character design"
+        },
+        {
+          "project_path": "assets/sprites/characters/mage.png",
+          "copy": "references/mage.png",
+          "sha256": "3cbb5f8a32b7cb79bdfa52f38c7dbce3c487d0d9b50f25470967f904cf2ed90b",
+          "role": "project-owned style reference; no external character design"
+        }
+      ],
+      "generation_inputs": [
+        {
+          "path": "references/style_board.png",
+          "role": "style reference collage made from reference_library",
+          "sha256": "85543eeeca694fadb1d87a6b2e09c58948da2e092a25c693617673d17851f691"
+        }
+      ],
+      "tool": "OpenAI built-in image_gen; model identity not exposed",
+      "license_url": "https://openai.com/policies/terms-of-use/",
+      "license": "OpenAI output rights per applicable terms; project-owned input references; not exclusive copyright guarantee",
+      "processing_record": "records/death_shards_processing.json",
+      "self_checks": {
+        "checks": {
+          "png_rgba": true,
+          "exact_strip_dimensions": true,
+          "rgb_le48": true,
+          "unique_frames": true,
+          "margin_ge2": true,
+          "alpha_policy": true,
+          "gif_frame_counts": true,
+          "gif_exact_pixels": true,
+          "gif_average_fps": true,
+          "gif_loop_contract": true
+        },
+        "frame_bboxes": [
+          [
+            10,
+            10,
+            25,
+            23
+          ],
+          [
+            3,
+            4,
+            29,
+            28
+          ],
+          [
+            2,
+            3,
+            30,
+            28
+          ],
+          [
+            7,
+            8,
+            25,
+            23
+          ]
+        ],
+        "rgb_colors": 29,
+        "alpha_levels": [
+          0,
+          32,
+          64,
+          96,
+          128,
+          160,
+          208,
+          255
+        ],
+        "gifs": [
+          {
+            "path": "previews/death_shards_normal.gif",
+            "frames": 4,
+            "durations_ms": [
+              60,
+              70,
+              60,
+              60
+            ],
+            "average_fps": 16.0,
+            "decoded_pixels_match_source_composite": true,
+            "loop": null
+          },
+          {
+            "path": "previews/death_shards_slow8.gif",
+            "frames": 4,
+            "durations_ms": [
+              120,
+              130,
+              120,
+              130
+            ],
+            "average_fps": 8.0,
+            "decoded_pixels_match_source_composite": true,
+            "loop": null
+          }
+        ],
+        "visual_frame_review": "抽象中性碎片由近到远扩散，末帧稀疏；无肢体、血液或烟幕。",
+        "visual_review_scope": "Actual all49 native1x frames and every4x frame strip viewed; range/rotation previews are offline illustrations; not browser playback or game",
+        "browser_playback": "not_performed_Work_browser_disabled",
+        "game_test": "not_performed"
+      },
+      "source_reference_role": "style only; revised v02 also uses retained v01 candidate as edit target",
+      "integration": {
+        "document": "integration.md",
+        "target_script": "scripts/effects/fx_layer.gd",
+        "function": "_draw / burst",
+        "status": "implemented_and_controlled_runtime_verified",
+        "runtime_test": "controlled_Game_viewport_and626_checks_passed"
+      },
+      "game_test": "controlled_runtime_passed_full_playthrough_unmeasured",
+      "import_descriptor_sha256": "89c8eb63dd97643e49bb2120923183dec5dfc750b7313c1321587d53cf1c77d8"
+    }
+  ],
+  "sources": "Each file records actual raw image, prompt, project reference copies, SHA256 and OpenAI commercial-use basis; assets/LICENSES.md contains task license entry.",
+  "rejected_candidates": [],
+  "code_integration": "completed",
+  "game_test": "controlled_runtime_acceptance_passed",
+  "browser_playback": "not_performed_Work_browser_disabled",
+  "four_by_four_tiling": "not_applicable_no_ground_tiles_in_J",
+  "full_manual_playthrough": "not_performed",
+  "acceptance_evidence": "../taskJ1_dimension_2026-10-19/integration_2026-10-19/acceptance.json"
+}

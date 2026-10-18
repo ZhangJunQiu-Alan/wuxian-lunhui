@@ -1,0 +1,263 @@
+{
+  "task": "J7",
+  "status": "pass_offline_asset_checks",
+  "files": [
+    {
+      "name": "hit_claw",
+      "checks": {
+        "png_rgba": true,
+        "exact_strip_dimensions": true,
+        "rgb_le48": true,
+        "unique_frames": true,
+        "margin_ge2": true,
+        "alpha_policy": true,
+        "gif_frame_counts": true,
+        "gif_exact_pixels": true,
+        "gif_average_fps": true,
+        "gif_loop_contract": true
+      },
+      "frame_bboxes": [
+        [
+          8,
+          8,
+          23,
+          23
+        ],
+        [
+          3,
+          2,
+          28,
+          30
+        ],
+        [
+          4,
+          5,
+          27,
+          28
+        ],
+        [
+          9,
+          6,
+          22,
+          25
+        ]
+      ],
+      "rgb_colors": 26,
+      "alpha_levels": [
+        0,
+        32,
+        64,
+        96,
+        128,
+        160,
+        208,
+        255
+      ],
+      "gifs": [
+        {
+          "path": "previews/hit_claw_normal.gif",
+          "frames": 4,
+          "durations_ms": [
+            60,
+            70,
+            60,
+            60
+          ],
+          "average_fps": 16.0,
+          "decoded_pixels_match_source_composite": true,
+          "loop": null
+        },
+        {
+          "path": "previews/hit_claw_slow8.gif",
+          "frames": 4,
+          "durations_ms": [
+            120,
+            130,
+            120,
+            130
+          ],
+          "average_fps": 8.0,
+          "decoded_pixels_match_source_composite": true,
+          "loop": null
+        }
+      ],
+      "visual_frame_review": "三道并列爪痕，无爪掌或敌人身体，峰值与碎裂尾帧清楚。",
+      "visual_review_scope": "actual native1x overview and each4x frame-strip image, offline only; not browser playback or game",
+      "browser_playback": "not_performed_Work_browser_disabled",
+      "game_test": "not_performed"
+    },
+    {
+      "name": "hit_bite",
+      "checks": {
+        "png_rgba": true,
+        "exact_strip_dimensions": true,
+        "rgb_le48": true,
+        "unique_frames": true,
+        "margin_ge2": true,
+        "alpha_policy": true,
+        "gif_frame_counts": true,
+        "gif_exact_pixels": true,
+        "gif_average_fps": true,
+        "gif_loop_contract": true
+      },
+      "frame_bboxes": [
+        [
+          8,
+          2,
+          55,
+          62
+        ],
+        [
+          7,
+          9,
+          57,
+          54
+        ],
+        [
+          8,
+          3,
+          55,
+          61
+        ],
+        [
+          14,
+          5,
+          50,
+          58
+        ]
+      ],
+      "rgb_colors": 28,
+      "alpha_levels": [
+        0,
+        32,
+        64,
+        96,
+        128,
+        160,
+        208,
+        255
+      ],
+      "gifs": [
+        {
+          "path": "previews/hit_bite_normal.gif",
+          "frames": 4,
+          "durations_ms": [
+            60,
+            70,
+            60,
+            60
+          ],
+          "average_fps": 16.0,
+          "decoded_pixels_match_source_composite": true,
+          "loop": null
+        },
+        {
+          "path": "previews/hit_bite_slow8.gif",
+          "frames": 4,
+          "durations_ms": [
+            120,
+            130,
+            120,
+            130
+          ],
+          "average_fps": 8.0,
+          "decoded_pixels_match_source_composite": true,
+          "loop": null
+        }
+      ],
+      "visual_frame_review": "上下对合的抽象牙弧及接触闪痕，无嘴部实体或血肉；中心留白。",
+      "visual_review_scope": "actual native1x overview and each4x frame-strip image, offline only; not browser playback or game",
+      "browser_playback": "not_performed_Work_browser_disabled",
+      "game_test": "not_performed"
+    },
+    {
+      "name": "death_shards",
+      "checks": {
+        "png_rgba": true,
+        "exact_strip_dimensions": true,
+        "rgb_le48": true,
+        "unique_frames": true,
+        "margin_ge2": true,
+        "alpha_policy": true,
+        "gif_frame_counts": true,
+        "gif_exact_pixels": true,
+        "gif_average_fps": true,
+        "gif_loop_contract": true
+      },
+      "frame_bboxes": [
+        [
+          10,
+          10,
+          25,
+          23
+        ],
+        [
+          3,
+          4,
+          29,
+          28
+        ],
+        [
+          2,
+          3,
+          30,
+          28
+        ],
+        [
+          7,
+          8,
+          25,
+          23
+        ]
+      ],
+      "rgb_colors": 29,
+      "alpha_levels": [
+        0,
+        32,
+        64,
+        96,
+        128,
+        160,
+        208,
+        255
+      ],
+      "gifs": [
+        {
+          "path": "previews/death_shards_normal.gif",
+          "frames": 4,
+          "durations_ms": [
+            60,
+            70,
+            60,
+            60
+          ],
+          "average_fps": 16.0,
+          "decoded_pixels_match_source_composite": true,
+          "loop": null
+        },
+        {
+          "path": "previews/death_shards_slow8.gif",
+          "frames": 4,
+          "durations_ms": [
+            120,
+            130,
+            120,
+            130
+          ],
+          "average_fps": 8.0,
+          "decoded_pixels_match_source_composite": true,
+          "loop": null
+        }
+      ],
+      "visual_frame_review": "抽象中性碎片由近到远扩散，末帧稀疏；无肢体、血液或烟幕。",
+      "visual_review_scope": "actual native1x overview and each4x frame-strip image, offline only; not browser playback or game",
+      "browser_playback": "not_performed_Work_browser_disabled",
+      "game_test": "not_performed"
+    }
+  ],
+  "browser": "in-app bootstrap missing browser-client.mjs; Chrome control returned Local browser use is disabled in Work settings; no setting changed or bypass",
+  "code_integration": "not_performed",
+  "game_test": "not_performed",
+  "native_size_all_frames_review": "Actual all49 native frames viewed in taskJ1/previews/all_J_all_frames_native1x.png",
+  "gallery_javascript_syntax": "node --check passed"
+}

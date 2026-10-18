@@ -1,0 +1,384 @@
+{
+  "task": "J2",
+  "date": "2026-10-19",
+  "status": "art_and_code_integrated_controlled_runtime_checks_passed",
+  "files": [
+    {
+      "task": "J2",
+      "name": "west_star",
+      "formal_path": "assets/sprites/effects/ultimates/west_star.png",
+      "version": "v01",
+      "frame_size": [
+        32,
+        32
+      ],
+      "frames": 4,
+      "fps": 16,
+      "loop": false,
+      "anchor": [
+        16.0,
+        16.0
+      ],
+      "orientation": "right",
+      "alpha_policy": "8_level_source_alpha_or_lower_cap",
+      "rgb_colors": 27,
+      "alpha_levels": [
+        0,
+        32,
+        64,
+        96,
+        128,
+        160,
+        208,
+        255
+      ],
+      "sha256": "1bbb1daa44fa577e23d29649a343a7e80d0cdd80723eaa11f35e404e38a8c697",
+      "raw": "originals/west_star_v01.png",
+      "raw_sha256": "58b8ba80bcc59cacbf82acb9d531da473fee5ac76accf63cc00df8da51c3fbbc",
+      "prompt": "records/west_star_v01_prompt.txt",
+      "prompt_sha256": "7863b92b757e1549200d5aa1050f40e58bbb082c71edf0c89c938ea4569825b2",
+      "reference_library": [
+        {
+          "project_path": "assets/sprites/effects/katana_slash.png",
+          "copy": "references/katana_slash.png",
+          "sha256": "7bd81d28708a9f538306c26680e7520af1f5c7349ea52c634f341e95d5cc6d7a",
+          "role": "project-owned style reference; no external character design"
+        },
+        {
+          "project_path": "assets/sprites/effects/gods/odin_rune_circle.png",
+          "copy": "references/odin_rune_circle.png",
+          "sha256": "286138576830d33617e3fcff77ea31fe7f2729e896fcaef32e8b317172d4b003",
+          "role": "project-owned style reference; no external character design"
+        },
+        {
+          "project_path": "assets/sprites/effects/gods/loki_fire_patch.png",
+          "copy": "references/loki_fire_patch.png",
+          "sha256": "a5773032ad2af278c32e3079399b7c8c4205cb0cc8f90b12a1a784c81d3f4ec4",
+          "role": "project-owned style reference; no external character design"
+        },
+        {
+          "project_path": "assets/sprites/effects/bosses/garm_bite.png",
+          "copy": "references/garm_bite.png",
+          "sha256": "95402ffcaec4881b71e39ce05ba1d8f97cf31c6fe838733dd5259c7cee55eb62",
+          "role": "project-owned style reference; no external character design"
+        },
+        {
+          "project_path": "assets/sprites/characters/assassin.png",
+          "copy": "references/assassin.png",
+          "sha256": "36f61e50bcfb173863e5abc69afc70ef10ae3d17bb6bf7bab8a31d42fcc2a772",
+          "role": "project-owned style reference; no external character design"
+        },
+        {
+          "project_path": "assets/sprites/characters/gunslinger.png",
+          "copy": "references/gunslinger.png",
+          "sha256": "754134580682ef324d1b7e90fd2849807fe4622bc702a61bcd305a449fef9f52",
+          "role": "project-owned style reference; no external character design"
+        },
+        {
+          "project_path": "assets/sprites/characters/mage.png",
+          "copy": "references/mage.png",
+          "sha256": "3cbb5f8a32b7cb79bdfa52f38c7dbce3c487d0d9b50f25470967f904cf2ed90b",
+          "role": "project-owned style reference; no external character design"
+        }
+      ],
+      "generation_inputs": [
+        {
+          "path": "references/style_board.png",
+          "role": "style reference collage made from reference_library",
+          "sha256": "85543eeeca694fadb1d87a6b2e09c58948da2e092a25c693617673d17851f691"
+        }
+      ],
+      "tool": "OpenAI built-in image_gen; model identity not exposed",
+      "license_url": "https://openai.com/policies/terms-of-use/",
+      "license": "OpenAI output rights per applicable terms; project-owned input references; not exclusive copyright guarantee",
+      "processing_record": "records/west_star_processing.json",
+      "self_checks": {
+        "checks": {
+          "png_rgba": true,
+          "exact_strip_dimensions": true,
+          "rgb_le48": true,
+          "unique_frames": true,
+          "margin_ge2": true,
+          "alpha_policy": true,
+          "gif_frame_counts": true,
+          "gif_exact_pixels": true,
+          "gif_average_fps": true,
+          "gif_loop_contract": true
+        },
+        "frame_bboxes": [
+          [
+            9,
+            9,
+            22,
+            23
+          ],
+          [
+            6,
+            5,
+            26,
+            27
+          ],
+          [
+            3,
+            2,
+            28,
+            30
+          ],
+          [
+            10,
+            9,
+            22,
+            23
+          ]
+        ],
+        "rgb_colors": 27,
+        "alpha_levels": [
+          0,
+          32,
+          64,
+          96,
+          128,
+          160,
+          208,
+          255
+        ],
+        "gifs": [
+          {
+            "path": "previews/west_star_normal.gif",
+            "frames": 4,
+            "durations_ms": [
+              60,
+              70,
+              60,
+              60
+            ],
+            "average_fps": 16.0,
+            "decoded_pixels_match_source_composite": true,
+            "loop": null
+          },
+          {
+            "path": "previews/west_star_slow8.gif",
+            "frames": 4,
+            "durations_ms": [
+              120,
+              130,
+              120,
+              130
+            ],
+            "average_fps": 8.0,
+            "decoded_pixels_match_source_composite": true,
+            "loop": null
+          }
+        ],
+        "visual_frame_review": "小尺寸警星形点缀清楚，峰值帧与末尾零散金粒不同；不含文字或完整纸牌。",
+        "visual_review_scope": "Actual all49 native1x frames and every4x frame strip viewed; range/rotation previews are offline illustrations; not browser playback or game",
+        "browser_playback": "not_performed_Work_browser_disabled",
+        "game_test": "not_performed"
+      },
+      "source_reference_role": "style only; revised v02 also uses retained v01 candidate as edit target",
+      "integration": {
+        "document": "integration.md",
+        "target_script": "scripts/ultimates/wild_west_show.gd",
+        "function": "_draw",
+        "status": "implemented_and_controlled_runtime_verified",
+        "runtime_test": "controlled_Game_viewport_and626_checks_passed"
+      },
+      "game_test": "controlled_runtime_passed_full_playthrough_unmeasured",
+      "import_descriptor_sha256": "32f63040f52994b7e5b38e49fc2ae40ef9e259922b1c7b66c1d03ba69aadf1ba"
+    },
+    {
+      "task": "J2",
+      "name": "west_aura",
+      "formal_path": "assets/sprites/effects/ultimates/west_aura.png",
+      "version": "v02",
+      "frame_size": [
+        96,
+        96
+      ],
+      "frames": 4,
+      "fps": 8,
+      "loop": true,
+      "anchor": [
+        48.0,
+        48.0
+      ],
+      "orientation": "top_down_center",
+      "alpha_policy": "8_level_source_alpha_or_lower_cap",
+      "rgb_colors": 25,
+      "alpha_levels": [
+        0,
+        32,
+        64,
+        96,
+        128,
+        160
+      ],
+      "sha256": "a08a9488ec108bfa9c3b00cffe884efad89137f19ea51846d0acb821825d3294",
+      "raw": "originals/west_aura_v02.png",
+      "raw_sha256": "4371c1100eeaa2cea9faf31cc0abe929b92cc68154262426aabb14eaa2ad1323",
+      "prompt": "records/west_aura_v02_prompt.txt",
+      "prompt_sha256": "b6e477737bb0c4aed9e892074c2f6dbe4e1ec1da79769ba04292c5a7ffef0565",
+      "reference_library": [
+        {
+          "project_path": "assets/sprites/effects/katana_slash.png",
+          "copy": "references/katana_slash.png",
+          "sha256": "7bd81d28708a9f538306c26680e7520af1f5c7349ea52c634f341e95d5cc6d7a",
+          "role": "project-owned style reference; no external character design"
+        },
+        {
+          "project_path": "assets/sprites/effects/gods/odin_rune_circle.png",
+          "copy": "references/odin_rune_circle.png",
+          "sha256": "286138576830d33617e3fcff77ea31fe7f2729e896fcaef32e8b317172d4b003",
+          "role": "project-owned style reference; no external character design"
+        },
+        {
+          "project_path": "assets/sprites/effects/gods/loki_fire_patch.png",
+          "copy": "references/loki_fire_patch.png",
+          "sha256": "a5773032ad2af278c32e3079399b7c8c4205cb0cc8f90b12a1a784c81d3f4ec4",
+          "role": "project-owned style reference; no external character design"
+        },
+        {
+          "project_path": "assets/sprites/effects/bosses/garm_bite.png",
+          "copy": "references/garm_bite.png",
+          "sha256": "95402ffcaec4881b71e39ce05ba1d8f97cf31c6fe838733dd5259c7cee55eb62",
+          "role": "project-owned style reference; no external character design"
+        },
+        {
+          "project_path": "assets/sprites/characters/assassin.png",
+          "copy": "references/assassin.png",
+          "sha256": "36f61e50bcfb173863e5abc69afc70ef10ae3d17bb6bf7bab8a31d42fcc2a772",
+          "role": "project-owned style reference; no external character design"
+        },
+        {
+          "project_path": "assets/sprites/characters/gunslinger.png",
+          "copy": "references/gunslinger.png",
+          "sha256": "754134580682ef324d1b7e90fd2849807fe4622bc702a61bcd305a449fef9f52",
+          "role": "project-owned style reference; no external character design"
+        },
+        {
+          "project_path": "assets/sprites/characters/mage.png",
+          "copy": "references/mage.png",
+          "sha256": "3cbb5f8a32b7cb79bdfa52f38c7dbce3c487d0d9b50f25470967f904cf2ed90b",
+          "role": "project-owned style reference; no external character design"
+        }
+      ],
+      "generation_inputs": [
+        {
+          "path": "candidates/west_aura_v01.png",
+          "role": "edit target",
+          "sha256": "29b29b69cbccf77b0f5d216798eea5d653773e10e158f1bdf0e16e5d343a0cdc"
+        }
+      ],
+      "tool": "OpenAI built-in image_gen; model identity not exposed",
+      "license_url": "https://openai.com/policies/terms-of-use/",
+      "license": "OpenAI output rights per applicable terms; project-owned input references; not exclusive copyright guarantee",
+      "processing_record": "records/west_aura_processing.json",
+      "self_checks": {
+        "checks": {
+          "png_rgba": true,
+          "exact_strip_dimensions": true,
+          "rgb_le48": true,
+          "unique_frames": true,
+          "margin_ge2": true,
+          "alpha_policy": true,
+          "center_clear": true,
+          "gif_frame_counts": true,
+          "gif_exact_pixels": true,
+          "gif_average_fps": true,
+          "gif_loop_contract": true
+        },
+        "frame_bboxes": [
+          [
+            2,
+            3,
+            94,
+            93
+          ],
+          [
+            2,
+            3,
+            93,
+            93
+          ],
+          [
+            2,
+            3,
+            94,
+            93
+          ],
+          [
+            2,
+            3,
+            94,
+            93
+          ]
+        ],
+        "rgb_colors": 25,
+        "alpha_levels": [
+          0,
+          32,
+          64,
+          96,
+          128,
+          160
+        ],
+        "gifs": [
+          {
+            "path": "previews/west_aura_normal.gif",
+            "frames": 4,
+            "durations_ms": [
+              120,
+              130,
+              120,
+              130
+            ],
+            "average_fps": 8.0,
+            "decoded_pixels_match_source_composite": true,
+            "loop": 0
+          },
+          {
+            "path": "previews/west_aura_slow8.gif",
+            "frames": 4,
+            "durations_ms": [
+              120,
+              130,
+              120,
+              130
+            ],
+            "average_fps": 8.0,
+            "decoded_pixels_match_source_composite": true,
+            "loop": 0
+          }
+        ],
+        "visual_frame_review": "复审固定薄环，中心透明，四个方位的亮段依次循环；首轮不均匀版本退回。",
+        "visual_review_scope": "Actual all49 native1x frames and every4x frame strip viewed; range/rotation previews are offline illustrations; not browser playback or game",
+        "browser_playback": "not_performed_Work_browser_disabled",
+        "game_test": "not_performed"
+      },
+      "source_reference_role": "style only; revised v02 also uses retained v01 candidate as edit target",
+      "integration": {
+        "document": "integration.md",
+        "target_script": "scripts/ultimates/wild_west_show.gd",
+        "function": "_draw",
+        "status": "implemented_and_controlled_runtime_verified",
+        "runtime_test": "controlled_Game_viewport_and626_checks_passed"
+      },
+      "outer_radius_reference_pixels": 46.57252408878007,
+      "radial_mode_pixels": 43,
+      "center_clear_radius_min_pixels": 39.81205847478876,
+      "radius_measurement_record": "records/west_aura_v02_radius_check.json",
+      "game_test": "controlled_runtime_passed_full_playthrough_unmeasured",
+      "import_descriptor_sha256": "d9f8703f4ec3a46b8d524207af1be082dc1e27fec5fdc2360b7df4cf2cbb0b2f"
+    }
+  ],
+  "sources": "Each file records actual raw image, prompt, project reference copies, SHA256 and OpenAI commercial-use basis; assets/LICENSES.md contains task license entry.",
+  "rejected_candidates": [
+    "records/west_aura_v01_rejected.json"
+  ],
+  "code_integration": "completed",
+  "game_test": "controlled_runtime_acceptance_passed",
+  "browser_playback": "not_performed_Work_browser_disabled",
+  "four_by_four_tiling": "not_applicable_no_ground_tiles_in_J",
+  "full_manual_playthrough": "not_performed",
+  "acceptance_evidence": "../taskJ1_dimension_2026-10-19/integration_2026-10-19/acceptance.json"
+}

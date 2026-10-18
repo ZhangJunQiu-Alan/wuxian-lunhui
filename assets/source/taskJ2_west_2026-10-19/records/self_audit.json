@@ -1,0 +1,178 @@
+{
+  "task": "J2",
+  "status": "pass_offline_asset_checks",
+  "files": [
+    {
+      "name": "west_star",
+      "checks": {
+        "png_rgba": true,
+        "exact_strip_dimensions": true,
+        "rgb_le48": true,
+        "unique_frames": true,
+        "margin_ge2": true,
+        "alpha_policy": true,
+        "gif_frame_counts": true,
+        "gif_exact_pixels": true,
+        "gif_average_fps": true,
+        "gif_loop_contract": true
+      },
+      "frame_bboxes": [
+        [
+          9,
+          9,
+          22,
+          23
+        ],
+        [
+          6,
+          5,
+          26,
+          27
+        ],
+        [
+          3,
+          2,
+          28,
+          30
+        ],
+        [
+          10,
+          9,
+          22,
+          23
+        ]
+      ],
+      "rgb_colors": 27,
+      "alpha_levels": [
+        0,
+        32,
+        64,
+        96,
+        128,
+        160,
+        208,
+        255
+      ],
+      "gifs": [
+        {
+          "path": "previews/west_star_normal.gif",
+          "frames": 4,
+          "durations_ms": [
+            60,
+            70,
+            60,
+            60
+          ],
+          "average_fps": 16.0,
+          "decoded_pixels_match_source_composite": true,
+          "loop": null
+        },
+        {
+          "path": "previews/west_star_slow8.gif",
+          "frames": 4,
+          "durations_ms": [
+            120,
+            130,
+            120,
+            130
+          ],
+          "average_fps": 8.0,
+          "decoded_pixels_match_source_composite": true,
+          "loop": null
+        }
+      ],
+      "visual_frame_review": "小尺寸警星形点缀清楚，峰值帧与末尾零散金粒不同；不含文字或完整纸牌。",
+      "visual_review_scope": "actual native1x overview and each4x frame-strip image, offline only; not browser playback or game",
+      "browser_playback": "not_performed_Work_browser_disabled",
+      "game_test": "not_performed"
+    },
+    {
+      "name": "west_aura",
+      "checks": {
+        "png_rgba": true,
+        "exact_strip_dimensions": true,
+        "rgb_le48": true,
+        "unique_frames": true,
+        "margin_ge2": true,
+        "alpha_policy": true,
+        "center_clear": true,
+        "gif_frame_counts": true,
+        "gif_exact_pixels": true,
+        "gif_average_fps": true,
+        "gif_loop_contract": true
+      },
+      "frame_bboxes": [
+        [
+          2,
+          3,
+          94,
+          93
+        ],
+        [
+          2,
+          3,
+          93,
+          93
+        ],
+        [
+          2,
+          3,
+          94,
+          93
+        ],
+        [
+          2,
+          3,
+          94,
+          93
+        ]
+      ],
+      "rgb_colors": 25,
+      "alpha_levels": [
+        0,
+        32,
+        64,
+        96,
+        128,
+        160
+      ],
+      "gifs": [
+        {
+          "path": "previews/west_aura_normal.gif",
+          "frames": 4,
+          "durations_ms": [
+            120,
+            130,
+            120,
+            130
+          ],
+          "average_fps": 8.0,
+          "decoded_pixels_match_source_composite": true,
+          "loop": 0
+        },
+        {
+          "path": "previews/west_aura_slow8.gif",
+          "frames": 4,
+          "durations_ms": [
+            120,
+            130,
+            120,
+            130
+          ],
+          "average_fps": 8.0,
+          "decoded_pixels_match_source_composite": true,
+          "loop": 0
+        }
+      ],
+      "visual_frame_review": "复审固定薄环，中心透明，四个方位的亮段依次循环；首轮不均匀版本退回。",
+      "visual_review_scope": "actual native1x overview and each4x frame-strip image, offline only; not browser playback or game",
+      "browser_playback": "not_performed_Work_browser_disabled",
+      "game_test": "not_performed"
+    }
+  ],
+  "browser": "in-app bootstrap missing browser-client.mjs; Chrome control returned Local browser use is disabled in Work settings; no setting changed or bypass",
+  "code_integration": "not_performed",
+  "game_test": "not_performed",
+  "native_size_all_frames_review": "Actual all49 native frames viewed in taskJ1/previews/all_J_all_frames_native1x.png",
+  "gallery_javascript_syntax": "node --check passed"
+}

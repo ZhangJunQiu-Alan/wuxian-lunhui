@@ -1,0 +1,113 @@
+{
+  "name": "loki_wolf_breath",
+  "raw": "originals/loki_wolf_breath_v01.png",
+  "raw_sha256": "b68ad2dc08d1de12cefa272569b1adccd58bab9e7508165926daa6ef7ecb0dac",
+  "raw_size": [
+    1536,
+    1024
+  ],
+  "grid": [
+    2,
+    2
+  ],
+  "cell_rects": [
+    [
+      0,
+      0,
+      768,
+      512
+    ],
+    [
+      768,
+      0,
+      1536,
+      512
+    ],
+    [
+      0,
+      512,
+      768,
+      1024
+    ],
+    [
+      768,
+      512,
+      1536,
+      1024
+    ]
+  ],
+  "alpha_bbox_threshold": 16,
+  "cell_content_bboxes": [
+    [
+      60,
+      190,
+      435,
+      399
+    ],
+    [
+      28,
+      167,
+      722,
+      451
+    ],
+    [
+      60,
+      146,
+      675,
+      376
+    ],
+    [
+      60,
+      199,
+      493,
+      341
+    ]
+  ],
+  "uniform_nearest_factor": 0.12680115273775217,
+  "placements": [
+    [
+      4,
+      18,
+      48,
+      27
+    ],
+    [
+      4,
+      14,
+      88,
+      36
+    ],
+    [
+      4,
+      17,
+      78,
+      29
+    ],
+    [
+      4,
+      23,
+      55,
+      18
+    ]
+  ],
+  "shared_rgb_palette_max": 32,
+  "alpha_policy": [
+    0,
+    32,
+    64,
+    96,
+    128,
+    160,
+    208,
+    255
+  ],
+  "alpha_cap": 255,
+  "target_frame_size": [
+    96,
+    64
+  ],
+  "frame_count": 4,
+  "candidate": "candidates/loki_wolf_breath_v01.png",
+  "candidate_sha256": "acfa9f957ef6bdb8ca6116441418c2769930eac45790a3077796bc0eb392242f",
+  "operation_scope": "crop, uniform nearest scaling, register, shared color and alpha specification; no painted pixels or duplicated animation frames"
+}

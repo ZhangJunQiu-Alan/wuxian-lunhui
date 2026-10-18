@@ -1,0 +1,113 @@
+{
+  "name": "death_shards",
+  "raw": "originals/death_shards_v01.png",
+  "raw_sha256": "61511c4e319ad93f0476aee70821553f17de72df1f46a86c002dc060bb0c3aa6",
+  "raw_size": [
+    1402,
+    1122
+  ],
+  "grid": [
+    2,
+    2
+  ],
+  "cell_rects": [
+    [
+      0,
+      0,
+      701,
+      561
+    ],
+    [
+      701,
+      0,
+      1402,
+      561
+    ],
+    [
+      0,
+      561,
+      701,
+      1122
+    ],
+    [
+      701,
+      561,
+      1402,
+      1122
+    ]
+  ],
+  "alpha_bbox_threshold": 16,
+  "cell_content_bboxes": [
+    [
+      262,
+      227,
+      469,
+      428
+    ],
+    [
+      179,
+      193,
+      491,
+      478
+    ],
+    [
+      228,
+      135,
+      559,
+      429
+    ],
+    [
+      208,
+      197,
+      423,
+      379
+    ]
+  ],
+  "uniform_nearest_factor": 0.08459214501510574,
+  "placements": [
+    [
+      7,
+      7,
+      18,
+      17
+    ],
+    [
+      3,
+      4,
+      26,
+      24
+    ],
+    [
+      2,
+      3,
+      28,
+      25
+    ],
+    [
+      7,
+      8,
+      18,
+      15
+    ]
+  ],
+  "shared_rgb_palette_max": 32,
+  "alpha_policy": [
+    0,
+    32,
+    64,
+    96,
+    128,
+    160,
+    208,
+    255
+  ],
+  "alpha_cap": 255,
+  "target_frame_size": [
+    32,
+    32
+  ],
+  "frame_count": 4,
+  "candidate": "candidates/death_shards_v01.png",
+  "candidate_sha256": "7e8fd5876468702299206d8f6183aafb42f90a1d25e304a10492340e33eda0e8",
+  "operation_scope": "crop, uniform nearest scaling, register, shared color and alpha specification; no painted pixels or duplicated animation frames"
+}

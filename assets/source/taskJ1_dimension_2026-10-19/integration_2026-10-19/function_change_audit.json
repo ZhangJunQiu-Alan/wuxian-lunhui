@@ -1,0 +1,32 @@
+{
+  "scripts/ultimates/dimension_slash.gd": [
+    "func _draw"
+  ],
+  "scripts/ultimates/wild_west_show.gd": [
+    "func _draw"
+  ],
+  "scripts/ultimates/enter_formation.gd": [
+    "func _draw"
+  ],
+  "scripts/ultimates/stonehenge.gd": [
+    "func _draw"
+  ],
+  "scripts/weapons/twin_blades.gd": [
+    "func _draw",
+    "header"
+  ],
+  "scripts/weapons/arcane_nova.gd": [
+    "func _draw"
+  ],
+  "scripts/effects/fx_layer.gd": [
+    "func _draw_mark",
+    "static func death",
+    "static func mark"
+  ],
+  "scripts/entities/enemy.gd": [
+    "func _die"
+  ],
+  "scripts/gods/loki.gd": [
+    "func _draw_wolf"
+  ]
+}

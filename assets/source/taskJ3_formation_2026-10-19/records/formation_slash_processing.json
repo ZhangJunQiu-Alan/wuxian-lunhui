@@ -1,0 +1,113 @@
+{
+  "name": "formation_slash",
+  "raw": "originals/formation_slash_v01.png",
+  "raw_sha256": "49945d24c94d73549c481c7470124fc6da6a2817a053fec23b97f86fb6fc1c9a",
+  "raw_size": [
+    1774,
+    887
+  ],
+  "grid": [
+    2,
+    2
+  ],
+  "cell_rects": [
+    [
+      0,
+      0,
+      887,
+      444
+    ],
+    [
+      887,
+      0,
+      1774,
+      444
+    ],
+    [
+      0,
+      444,
+      887,
+      887
+    ],
+    [
+      887,
+      444,
+      1774,
+      887
+    ]
+  ],
+  "alpha_bbox_threshold": 16,
+  "cell_content_bboxes": [
+    [
+      283,
+      191,
+      508,
+      348
+    ],
+    [
+      57,
+      185,
+      774,
+      348
+    ],
+    [
+      183,
+      138,
+      784,
+      296
+    ],
+    [
+      235,
+      165,
+      688,
+      279
+    ]
+  ],
+  "uniform_nearest_factor": 0.08368200836820083,
+  "placements": [
+    [
+      22,
+      9,
+      19,
+      13
+    ],
+    [
+      2,
+      9,
+      60,
+      14
+    ],
+    [
+      7,
+      9,
+      50,
+      13
+    ],
+    [
+      13,
+      11,
+      38,
+      10
+    ]
+  ],
+  "shared_rgb_palette_max": 32,
+  "alpha_policy": [
+    0,
+    32,
+    64,
+    96,
+    128,
+    160,
+    208,
+    255
+  ],
+  "alpha_cap": 255,
+  "target_frame_size": [
+    64,
+    32
+  ],
+  "frame_count": 4,
+  "candidate": "candidates/formation_slash_v01.png",
+  "candidate_sha256": "2d90b362fd9306f76747e27cadf00c9f27f3bc4dd1bb70ac6cc9779f93bbc5ce",
+  "operation_scope": "crop, uniform nearest scaling, register, shared color and alpha specification; no painted pixels or duplicated animation frames"
+}

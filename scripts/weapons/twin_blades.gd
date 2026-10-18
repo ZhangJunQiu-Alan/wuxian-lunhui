@@ -3,7 +3,7 @@ extends Node2D
 ## 刺客的双刃：射程极短、出手极快的近身连刺，左右手交替
 ## 被动「破阵」：身边每有 1 个敌人，伤害 +6%（最多 +60%）
 
-const SLASH_DURATION := 0.1
+const SLASH_DURATION := 0.25
 const HALF_ARC := 0.7         # 扇形半角（弧度），约 40°，比太刀窄
 const KNOCKBACK := 120.0
 const SIEGE_RADIUS := 150.0   # 破阵：统计这个范围内的敌人
@@ -72,5 +72,7 @@ func _draw() -> void:
 	var alpha := _slash_time / SLASH_DURATION
 	# 左右手交替：刀光稍微偏向一侧
 	var a := _aim.angle() + (0.25 if _left_hand else -0.25)
+	if CombatFx.draw(self, "blades_slash", SLASH_DURATION - _slash_time, Vector2.ZERO, a, Vector2.ONE * reach * 0.9 / 30.5, Color.WHITE, reach, HALF_ARC, _aim.angle()):
+		return
 	draw_arc(Vector2.ZERO, reach * 0.9, a - HALF_ARC, a + HALF_ARC, 16, Color(1.0, 0.45, 0.45, alpha), 3.0)
 	draw_line(Vector2.ZERO, Vector2.from_angle(a) * reach, Color(1, 1, 1, alpha), 2.0)

@@ -1,0 +1,116 @@
+{
+  "task": "J1-J8",
+  "date": "2026-10-19",
+  "status": "integrated_controlled_runtime_acceptance_passed",
+  "assets": 14,
+  "frames": 49,
+  "engine": {
+    "build": "official",
+    "hash": "ed1daf0bf001b61586d9930840f2f1394092c079",
+    "hex": 263938,
+    "major": 4,
+    "minor": 7,
+    "patch": 2,
+    "status": "stable",
+    "string": "4.7.2-stable (official)",
+    "timestamp": 0
+  },
+  "runtime_checks": {
+    "count": 626,
+    "failures": 0,
+    "evidence": "verified_commit/combat_art_checks.json",
+    "project": "Git HEAD cff5bbd plus only J changes; no uncommitted H/G6/gameplay dependencies"
+  },
+  "working_tree_regressions": {
+    "count": 997,
+    "failures": 0,
+    "evidence": "regressions_working.log",
+    "scope": "current shared working tree including independent uncommitted gameplay changes; not included in this J commit"
+  },
+  "real_game_render": {
+    "captures": 46,
+    "reviewed_all_after_images": 28,
+    "before_after_pairs": 18,
+    "scope": "actual Game viewport, controlled skill states; full manual playthrough not tested",
+    "evidence": "verified_commit/render_review.json"
+  },
+  "performance": {
+    "engine": {
+      "build": "official",
+      "hash": "ed1daf0bf001b61586d9930840f2f1394092c079",
+      "hex": 263938,
+      "major": 4,
+      "minor": 7,
+      "patch": 2,
+      "status": "stable",
+      "string": "4.7.2-stable (official)",
+      "timestamp": 0
+    },
+    "measurements": [
+      {
+        "42_cavalry": true,
+        "enemies": 350,
+        "fps": 57.0221679280435,
+        "frames": 229,
+        "marks_peak": 120,
+        "mean_ms": 17.53703930131,
+        "nodes": 1985,
+        "p95_ms": 19.292,
+        "phase": "old_geometry"
+      },
+      {
+        "42_cavalry": true,
+        "enemies": 350,
+        "fps": 94.7439127036088,
+        "frames": 379,
+        "marks_peak": 120,
+        "mean_ms": 10.5547678100264,
+        "nodes": 1985,
+        "p95_ms": 11.46,
+        "phase": "new_art"
+      },
+      {
+        "42_cavalry": true,
+        "enemies": 350,
+        "fps": 57.7309776428667,
+        "frames": 231,
+        "marks_peak": 120,
+        "mean_ms": 17.3217229437229,
+        "nodes": 1985,
+        "p95_ms": 19.292,
+        "phase": "old_geometry_repeat"
+      },
+      {
+        "42_cavalry": true,
+        "enemies": 350,
+        "fps": 77.6075772854561,
+        "frames": 312,
+        "marks_peak": 120,
+        "mean_ms": 12.8853397435897,
+        "nodes": 1985,
+        "p95_ms": 20.142,
+        "phase": "new_art_repeat"
+      },
+      {
+        "marks": 0,
+        "nodes": 1985,
+        "particles": 0,
+        "phase": "cleanup"
+      }
+    ],
+    "scope": "local rendered350 animated enemies,42 cavalry,exactly120 central marks at draw;manual render loop1draw per sample;1s warmup and4s phases; no long-session guarantee",
+    "viewport": [
+      1280,
+      720
+    ]
+  },
+  "logic_audit": "function_change_audit.json",
+  "art_hashes_unchanged": true,
+  "full_manual_playthrough": "not_performed",
+  "long_session_balance": "not_performed",
+  "other_devices": "not_performed",
+  "browser": "not used for runtime verification; actual Godot engine used",
+  "shared_files_commit_scope": "only J hunks in enemy.gd,fx_layer.gd and LICENSES; independent modifications preserved",
+  "git_commit": "pending",
+  "git_push": "pending"
+}

@@ -1,0 +1,113 @@
+{
+  "name": "hit_bite",
+  "raw": "originals/hit_bite_v01.png",
+  "raw_sha256": "d7c9a0a5e6f7404d45b8507ff74057c019ffc650d06238bc534ec83fd464d30f",
+  "raw_size": [
+    1402,
+    1122
+  ],
+  "grid": [
+    2,
+    2
+  ],
+  "cell_rects": [
+    [
+      0,
+      0,
+      701,
+      561
+    ],
+    [
+      701,
+      0,
+      1402,
+      561
+    ],
+    [
+      0,
+      561,
+      701,
+      1122
+    ],
+    [
+      701,
+      561,
+      1402,
+      1122
+    ]
+  ],
+  "alpha_bbox_threshold": 16,
+  "cell_content_bboxes": [
+    [
+      236,
+      142,
+      526,
+      511
+    ],
+    [
+      168,
+      202,
+      476,
+      480
+    ],
+    [
+      246,
+      112,
+      532,
+      467
+    ],
+    [
+      219,
+      129,
+      438,
+      456
+    ]
+  ],
+  "uniform_nearest_factor": 0.16260162601626016,
+  "placements": [
+    [
+      8,
+      2,
+      47,
+      60
+    ],
+    [
+      7,
+      9,
+      50,
+      45
+    ],
+    [
+      8,
+      3,
+      47,
+      58
+    ],
+    [
+      14,
+      5,
+      36,
+      53
+    ]
+  ],
+  "shared_rgb_palette_max": 32,
+  "alpha_policy": [
+    0,
+    32,
+    64,
+    96,
+    128,
+    160,
+    208,
+    255
+  ],
+  "alpha_cap": 255,
+  "target_frame_size": [
+    64,
+    64
+  ],
+  "frame_count": 4,
+  "candidate": "candidates/hit_bite_v01.png",
+  "candidate_sha256": "1e0e0b18432621b5d502d6936867c51cd5b306683651c3cd097a86e28c6feadc",
+  "operation_scope": "crop, uniform nearest scaling, register, shared color and alpha specification; no painted pixels or duplicated animation frames"
+}

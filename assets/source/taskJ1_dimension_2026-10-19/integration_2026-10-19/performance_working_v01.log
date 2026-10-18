@@ -1,0 +1,7 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+OpenGL API 4.1 Metal - 90.5 - Compatibility - Using Device: Apple - Apple M2
+
+BENCH { "phase": "old_geometry", "frames": 562, "mean_ms": 7.12327580071174, "p95_ms": 8.396, "fps": 140.384849327339, "enemies": 350, "marks_peak": 120, "nodes": 1986, "42_cavalry": true }
+BENCH { "phase": "new_art", "frames": 580, "mean_ms": 6.89926896551723, "p95_ms": 7.326, "fps": 144.942892500355, "enemies": 350, "marks_peak": 120, "nodes": 1986, "42_cavalry": true }
+BENCH { "phase": "old_geometry_repeat", "frames": 580, "mean_ms": 6.89896896551723, "p95_ms": 7.083, "fps": 144.949195307045, "enemies": 350, "marks_peak": 120, "nodes": 1986, "42_cavalry": true }
+BENCH { "phase": "new_art_repeat", "frames": 577, "mean_ms": 6.93459445407279, "p95_ms": 7.397, "fps": 144.204539518917, "enemies": 350, "marks_peak": 120, "nodes": 1986, "42_cavalry": true }

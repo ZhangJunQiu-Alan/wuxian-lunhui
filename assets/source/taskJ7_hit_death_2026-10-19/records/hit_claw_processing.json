@@ -1,0 +1,113 @@
+{
+  "name": "hit_claw",
+  "raw": "originals/hit_claw_v01.png",
+  "raw_sha256": "5ec9ef432d39de0113bc1e0edb6d745599c0a2f9487be6d834f5a8a9a8dc1c98",
+  "raw_size": [
+    1402,
+    1122
+  ],
+  "grid": [
+    2,
+    2
+  ],
+  "cell_rects": [
+    [
+      0,
+      0,
+      701,
+      561
+    ],
+    [
+      701,
+      0,
+      1402,
+      561
+    ],
+    [
+      0,
+      561,
+      701,
+      1122
+    ],
+    [
+      701,
+      561,
+      1402,
+      1122
+    ]
+  ],
+  "alpha_bbox_threshold": 16,
+  "cell_content_bboxes": [
+    [
+      330,
+      264,
+      498,
+      434
+    ],
+    [
+      114,
+      178,
+      402,
+      500
+    ],
+    [
+      297,
+      116,
+      559,
+      394
+    ],
+    [
+      186,
+      152,
+      378,
+      376
+    ]
+  ],
+  "uniform_nearest_factor": 0.08695652173913043,
+  "placements": [
+    [
+      8,
+      8,
+      15,
+      15
+    ],
+    [
+      3,
+      2,
+      25,
+      28
+    ],
+    [
+      4,
+      4,
+      23,
+      24
+    ],
+    [
+      7,
+      6,
+      17,
+      19
+    ]
+  ],
+  "shared_rgb_palette_max": 32,
+  "alpha_policy": [
+    0,
+    32,
+    64,
+    96,
+    128,
+    160,
+    208,
+    255
+  ],
+  "alpha_cap": 255,
+  "target_frame_size": [
+    32,
+    32
+  ],
+  "frame_count": 4,
+  "candidate": "candidates/hit_claw_v01.png",
+  "candidate_sha256": "671207266a071a053c2b9799f84001a7b09723b8ac7dbc6e75a5c058db7dce4b",
+  "operation_scope": "crop, uniform nearest scaling, register, shared color and alpha specification; no painted pixels or duplicated animation frames"
+}
