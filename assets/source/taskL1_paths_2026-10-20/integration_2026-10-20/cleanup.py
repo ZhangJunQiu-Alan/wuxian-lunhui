@@ -11,7 +11,7 @@ def run():
     credential=subprocess.check_output(['gh','auth','token','--hostname','github.com','--user','ZhangJunQiu-Alan'],text=True).strip()
     env=os.environ.copy();env['GH_TOKEN']=credential
     remote=subprocess.check_output(['git','-c','credential.helper=','-c','credential.helper=!gh auth git-credential','ls-remote','origin','refs/heads/main'],cwd=ROOT,env=env,text=True).split()[0]
-    assert remote==FEATURE,('Published feature SHA must be verified before deleting redundant copies',remote)
+    assert subprocess.run(['git','merge-base','--is-ancestor',FEATURE,remote],cwd=ROOT).returncode==0,('Published feature SHA must be included on the remote branch before deleting redundant copies',remote)
     processes=subprocess.check_output(['ps','-axo','command='],text=True).splitlines()
     assert not any(('godot ' in line.lower()) and any(str(BASE/name) in line for name in ['runtime_current','runtime_commit']) for line in processes if not line.startswith(('/bin/zsh','python3 -')))
     candidates=json.loads((BASE/'records/cleanup_candidates.json').read_text())['files']
@@ -45,7 +45,7 @@ def run():
     empty=BASE/'runtime'
     if empty.exists() and not any(empty.iterdir()):empty.rmdir()
     after=shutil.disk_usage(ROOT).free
-    report={'date':'2026-10-20','feature_commit_verified_on_remote':FEATURE,'remote_ref':'refs/heads/main','deleted':deleted,'deleted_logical_bytes':sum(item['bytes'] for item in deleted),'external_duplicate_count':len(verified),'disk_free_before':before,'disk_free_after':after,'observed_disk_free_delta':after-before,'measurement_note':'logical file bytes and filesystem free-space delta differ because APFS clones, metadata, caches and concurrent activity; free-space delta is observational','preserved':['all60 formal PNGs and imports','all100 project original generations including40 rejections','prompts/input references/hashes/manifests/gallery/mipmap','all verification logs and screenshots','personal saves and unrelated projects/files','other agents work','shared .godot and .git/LFS object store']}
+    report={'date':'2026-10-20','feature_commit_verified_on_remote':FEATURE,'remote_commit_at_cleanup':remote,'remote_ref':'refs/heads/main','deleted':deleted,'deleted_logical_bytes':sum(item['bytes'] for item in deleted),'external_duplicate_count':len(verified),'disk_free_before':before,'disk_free_after':after,'observed_disk_free_delta':after-before,'measurement_note':'logical file bytes and filesystem free-space delta differ because APFS clones, metadata, caches and concurrent activity; free-space delta is observational','preserved':['all60 formal PNGs and imports','all100 project original generations including40 rejections','prompts/input references/hashes/manifests/gallery/mipmap','all verification logs and screenshots','personal saves and unrelated projects/files','other agents work','shared .godot and .git/LFS object store']}
     (BASE/'records/cleanup_result.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n')
     print(json.dumps({key:report[key] for key in ['external_duplicate_count','deleted_logical_bytes','observed_disk_free_delta','disk_free_after']},ensure_ascii=False))
 
