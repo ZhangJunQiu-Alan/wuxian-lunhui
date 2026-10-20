@@ -1,0 +1,16 @@
+{
+  "id": "thor_static_awaken",
+  "selected_version": "v02",
+  "formal": "assets/sprites/cards/thor_static_awaken.png",
+  "sha256": "c855b0e5aad5eb13b5afa857635c47c05abe48319c30dd54b6203d74ebb3badf",
+  "review": {
+    "visual_review": "去掉战锤/山羊，三节点之一爆碎引发连锁，电网与普通版连续；所有关键节点完整，背景碎屑是次级元素。",
+    "checks": [
+      "full source anatomy/weapon checked",
+      "260 thumbnail and bottom45 mask checked",
+      "40px safe guide checked",
+      "pair style and road identity checked"
+    ]
+  },
+  "mipmaps": "offline reference chain only; Godot import mipmaps must be enabled by integration agent"
+}

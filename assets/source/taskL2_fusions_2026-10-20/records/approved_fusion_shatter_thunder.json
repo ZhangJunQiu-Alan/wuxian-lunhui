@@ -1,0 +1,17 @@
+{
+  "id": "fusion_shatter_thunder",
+  "selected_version": "v03",
+  "formal": "assets/sprites/cards/fusion_shatter_thunder.png",
+  "sha256": "038404d1edb682ea3fe0de5cd0ea1f8fd4b4a7250efefd5c9fadf65c4fdf6113",
+  "review": {
+    "visual_review": "取消靠边长弓后，双人主脸、五指施法手和短柄锤清晰；雷击冻结目标与冰片同场景集中，缩略、遮罩、安全边通过。",
+    "checks": [
+      "source anatomy/weapon/animal",
+      "260 thumbnail",
+      "bottom45 mask",
+      "primary safe area",
+      "two identities"
+    ]
+  },
+  "mipmaps": "offline reference chain only; Godot import mipmaps must be enabled by integration agent"
+}

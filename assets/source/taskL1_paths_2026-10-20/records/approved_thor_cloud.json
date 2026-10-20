@@ -1,0 +1,17 @@
+{
+  "id": "thor_cloud",
+  "selected_version": "v02",
+  "formal": "assets/sprites/cards/thor_cloud.png",
+  "sha256": "1ac561d1f125394560bc20515e50bb72973c576956fd0807e7eea0813ca66a37",
+  "review": {
+    "visual_review": "删除次要战锤使雷云道路更明确，三道雷分离；两手结构、雷云与原人脸一致，缩略和遮罩通过。",
+    "checks": [
+      "source full-size structure reviewed",
+      "260px thumbnail reviewed",
+      "bottom45% mask reviewed",
+      "identity and impasto consistency reviewed",
+      "primary motif and face inside safe area"
+    ]
+  },
+  "mipmaps": "offline reference chain only; Godot import mipmaps must be enabled by integration agent"
+}

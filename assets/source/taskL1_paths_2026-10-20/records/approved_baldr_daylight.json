@@ -1,0 +1,17 @@
+{
+  "id": "baldr_daylight",
+  "selected_version": "v02",
+  "formal": "assets/sprites/cards/baldr_daylight.png",
+  "sha256": "9a6b15ea5373eb14178efe7b6dd9ee3f6d4e2417bb0534b5c6741b15159debde",
+  "review": {
+    "visual_review": "右手内收后两手均在安全区，两根光柱和环绕轨迹可读，底部深暗通过。",
+    "checks": [
+      "source anatomy/weapon",
+      "260px",
+      "45% mask",
+      "primary safe area",
+      "path identity"
+    ]
+  },
+  "mipmaps": "offline reference chain only; Godot import mipmaps must be enabled by integration agent"
+}

@@ -1,0 +1,35 @@
+{
+  "id": "freyja_cats",
+  "task": "L1",
+  "god": "freyja",
+  "variant": "path",
+  "root": "assets/source/taskL1_paths_2026-10-20",
+  "target": "assets/sprites/cards/freyja_cats.png",
+  "references": [
+    {
+      "actual_input": "assets/source/taskL1_paths_2026-10-20/originals/freyja_cats_v01.png",
+      "archive": "references/freyja_cats_v01.png",
+      "sha256": "3c958f79676f233c3676803206883fd7abbe11d4e6267f6dff7126a6e1328a97"
+    }
+  ],
+  "prompt": "Precise composition edit of this existing oil painting: Move the RIGHT grey cat20% of canvas width LEFT and shrink BOTH cats15%, so two whole cat faces/ears/noses are fully inside x12%..88%, both cats beside the woman at upper chest. Natural two ears/eyes each, no duplicated noses. Preserve main woman and gold necklace. Keep original face, age, hairstyle, materials, palette and impasto style; bottom40% remains quiet unlit dark cloak, no new objects or glow. Tall3:5 card, all major features top55%; no text or border.",
+  "current_gameplay_source_line": "\"freyja_cats\": {\"kind\": \"path\", \"god\": \"freyja\", \"name\": \"战猫车\", \"desc\": \"两只战猫在身边巡逻，扑向靠近的敌人并拣选它们。丰满 = 多一只战猫\"},",
+  "input_code_sha256": "e2b900caf6dcee1af417fb90932a48e0313bf8e726a5f7d4141ed8d8e332e4db",
+  "status": "approved",
+  "version": "v02",
+  "tool": "OpenAI built-in image_gen",
+  "raw_output_path": "/Users/zhangjunqiu/.codex/generated_images/01a14093-604c-72e3-b0c2-585e428c4824/exec-53962f26-83c6-4f89-b268-ed0e2200ee7a.png",
+  "original": "originals/freyja_cats_v02.png",
+  "original_sha256": "57ec73e1e660b9a878e3f0f48c07e384ff73e3c574c2aa8b9729ec4cbf82082d",
+  "commercial_basis": "https://openai.com/policies/terms-of-use/",
+  "review": {
+    "visual_review": "两猫头耳鼻收进，四只猫眼与人脸/两手分别清楚，体型与普通道路线索一致，暗部通过。",
+    "checks": [
+      "full source anatomy/material",
+      "260px safe and text mask",
+      "identity compared",
+      "bottom40% dark",
+      "mechanic-specific primary motif"
+    ]
+  }
+}

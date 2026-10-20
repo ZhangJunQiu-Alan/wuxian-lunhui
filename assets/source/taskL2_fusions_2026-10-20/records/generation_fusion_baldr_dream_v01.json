@@ -1,0 +1,43 @@
+{
+  "id": "fusion_baldr_dream",
+  "task": "L2",
+  "gods": [
+    "odin",
+    "baldr"
+  ],
+  "variant": "fusion",
+  "root": "assets/source/taskL2_fusions_2026-10-20",
+  "target": "assets/sprites/cards/fusion_baldr_dream.png",
+  "references": [
+    {
+      "actual_input": "assets/sprites/cards/odin.png",
+      "archive": "references/odin.png",
+      "sha256": "423cab0736c5d60b840e7ba3d293901eba6d9f48025defc9fda56425cbf76fc2"
+    },
+    {
+      "actual_input": "assets/sprites/cards/baldr.png",
+      "archive": "references/baldr.png",
+      "sha256": "85328fed93ed46d1e18e81e40972d657673905e9a597d40d741e93ed01151c6c"
+    }
+  ],
+  "prompt": "Use case: illustration-story. Asset type: ONE premium game upgrade CARD ILLUSTRATION, portrait 3:5, intended final 720x1200 RGB. Style: richly textured restrained northern myth oil painting / painterly impasto, realistic faces and materials, same collection as attached original portraits, NOT pixel art, NOT anime, no glossy 3D. This is a living myth inside an ancient archive; do not add computers, museums or science-fiction. CRITICAL composition: heads and every key spell, weapon, animal or gesture entirely within upper55% of image; faces around y15-25%, upper bodies around y25-50%; bottom40% deep blue-black simple cloak/shadow fading into quiet negative space for game text. Left/right40px safe margins at final size: no face/important weapon/animal touches side edges. Show a single composed cinematic scene, not a multi-panel sheet. No borders, card frame, letters, readable runes, logos, watermark, interface or typography. Natural anatomy, clearly separated hands, structurally sound weapons, restrained bloom; faces legible at260px wide. Preserve identity, age, hair, facial features, costume materials and painterly style from references; pose and scenario change for THIS specific upgrade.\nSubject A identity: the same elderly long grey-bearded one-eyed northern wanderer, broad dark hat, fur cloak, weathered face, violet magic.\nSubject B identity: the same youthful clean-shaven pale-blond man, calm noble face, cream fur mantle and white-gold clothing, warm ivory light.\nSpecific shared spell scene: The elderly one-eyed wanderer watches a youthful pale-blond man in warm ivory light; a beam intersects violet prophetic abstract marks and flares, quiet foreboding, one scene and intact faces.\nTwo adult figures, equal scale, heads fully inside upper45%, no third main human, lighting links the pair into one coherent painting. Preserve the two separate identities, never merge facial features.\nKeep ALL important anatomy, weapon heads/tips and animal faces within CENTRAL80% of canvas (x10%..90%), not merely inside the outer edge. Leave side columns as background or unimportant cloak only. Place all hands/gesture and spell motifs above y52%; nothing bright or complex below y60%.\nBoth faces central and all spell motifs in upper50%. Keep hands entirely x20%..80%. Below y58% quiet dark shadow. Omit unrelated weapons/animals from references.",
+  "current_gameplay_source_line": "\"baldr_dream\": {\"gods\": [\"odin\", \"baldr\"], \"name\": \"巴德尔之梦\", \"desc\": \"光束命中带符文印记的敌人时立刻引爆印记；符文命中时给敌人挂上光痕\"},",
+  "input_code_sha256": "cf8ac4eb04350527ea92fc6d7718a3882bee3bce4e278d679f66845fb808c289",
+  "status": "approved",
+  "version": "v01",
+  "tool": "OpenAI built-in image_gen",
+  "raw_output_path": "/Users/zhangjunqiu/.codex/generated_images/01a14093-604c-72e3-b0c2-585e428c4824/exec-93b1c047-a4a9-4cf3-b563-06ded5247708.png",
+  "original": "originals/fusion_baldr_dream_v01.png",
+  "original_sha256": "d24cd15ff28de960d60c42201fef49dc17e4d5b2267483a69b8a6b30525ac7ed",
+  "commercial_basis": "https://openai.com/policies/terms-of-use/",
+  "review": {
+    "visual_review": "老人与青年双脸身份明确，白金圣光交会紫色预兆几何；两只施法手自然、完整，主体集中上方；缩略、遮罩、安全边通过。",
+    "checks": [
+      "source anatomy",
+      "260 thumbnail",
+      "bottom45 mask",
+      "safe area",
+      "two identities"
+    ]
+  }
+}

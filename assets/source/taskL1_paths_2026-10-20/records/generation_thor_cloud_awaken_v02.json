@@ -1,0 +1,39 @@
+{
+  "id": "thor_cloud_awaken",
+  "task": "L1",
+  "god": "thor",
+  "variant": "awaken",
+  "root": "assets/source/taskL1_paths_2026-10-20",
+  "target": "assets/sprites/cards/thor_cloud_awaken.png",
+  "references": [
+    {
+      "actual_input": "assets/source/taskL1_paths_2026-10-20/originals/thor_cloud_awaken_v01.png",
+      "archive": "references/thor_cloud_awaken_v01.png",
+      "sha256": "3f9321e56b95937e351f02084530fa9864c2c105498e7d4a79547273cc650d1d"
+    },
+    {
+      "actual_input": "assets/source/taskL1_paths_2026-10-20/approved/thor_cloud.png",
+      "archive": "references/thor_cloud.png",
+      "sha256": "1ac561d1f125394560bc20515e50bb72973c576956fd0807e7eea0813ca66a37"
+    }
+  ],
+  "prompt": "Edit ONLY composition of this existing oil painting. All faces, hands, complete weapon heads/handles and main effect nodes MUST fit inside x15%..85% of image and top52%; leave generous painterly background side columns, bottom40% quiet dark. Preserve the exact same red-bearded man, face, clothing, thick paint, palette and chosen upgrade. Remove hand-held hammer and goat chariot; the image shows only man, wide stormcloud and many lightning forks. Both hands safely centered at chest. No text, border, new outfit or new identity. Reference2 is the companion non-awakened path: keep its motif while increasing power.",
+  "current_gameplay_source_line": "\"thor_cloud_awaken\": {\"kind\": \"awaken\", \"god\": \"thor\", \"path\": \"thor_cloud\", \"name\": \"觉醒·山羊战车\", \"desc\": \"雷云覆盖整个屏幕，落雷速度翻倍。受到攻击时 30% 几率反劈一道雷\"},",
+  "input_code_sha256": "e2b900caf6dcee1af417fb90932a48e0313bf8e726a5f7d4141ed8d8e332e4db",
+  "status": "approved",
+  "version": "v02",
+  "tool": "OpenAI built-in image_gen",
+  "raw_output_path": "/Users/zhangjunqiu/.codex/generated_images/01a14093-604c-72e3-b0c2-585e428c4824/exec-06d325c2-b32c-4604-9a5d-ee8385d8d86e.png",
+  "original": "originals/thor_cloud_awaken_v02.png",
+  "original_sha256": "f8403e4b5d7e3c767e18a8b6330c1e33a1e217fc1e22fab19af0cade4804fa2c",
+  "commercial_basis": "https://openai.com/policies/terms-of-use/",
+  "review": {
+    "visual_review": "去掉无关战锤/战车，扩大雷云与雷频，和普通雷云同一道路；双手结构完整且安全边通过。",
+    "checks": [
+      "full source anatomy/weapon checked",
+      "260 thumbnail and bottom45 mask checked",
+      "40px safe guide checked",
+      "pair style and road identity checked"
+    ]
+  }
+}

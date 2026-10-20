@@ -1,0 +1,35 @@
+{
+  "id": "freyr_sun",
+  "task": "L1",
+  "god": "freyr",
+  "variant": "path",
+  "root": "assets/source/taskL1_paths_2026-10-20",
+  "target": "assets/sprites/cards/freyr_sun.png",
+  "references": [
+    {
+      "actual_input": "assets/source/taskL1_paths_2026-10-20/originals/freyr_sun_v01.png",
+      "archive": "references/freyr_sun_v01.png",
+      "sha256": "24e95043b22977bac7293ad3ff75ed64256c78fc97fb83edcf0fabb98e6e13da"
+    }
+  ],
+  "prompt": "Edit this existing portrait 3:5 oil painting. Keep SAME golden bearded man, green-gold cloak, crown, ONE floating upright golden sword and golden orbit trail, oil paint texture and same face. REMOVE the boar entirely, no animals. Bring the casting hand inward to x70% canvas width, naturally bent elbow and natural five fingers, all fingertips inside x82%. Move sword slightly inward above the hand. Keep blade entirely in upper48%, bottom40% dark quiet. No text.",
+  "current_gameplay_source_line": "\"freyr_sun\": {\"kind\": \"path\", \"god\": \"freyr\", \"name\": \"阳光之剑\", \"desc\": \"飞剑飞过的地方留下一道灼热的光痕，碰到的敌人灼烧\"},",
+  "input_code_sha256": "e2b900caf6dcee1af417fb90932a48e0313bf8e726a5f7d4141ed8d8e332e4db",
+  "status": "approved",
+  "version": "v02",
+  "tool": "OpenAI built-in image_gen",
+  "raw_output_path": "/Users/zhangjunqiu/.codex/generated_images/01a14093-604c-72e3-b0c2-585e428c4824/exec-9ecf5504-0157-439a-9aa6-962062fb5fbc.png",
+  "original": "originals/freyr_sun_v02.png",
+  "original_sha256": "c95e391b5575938830042dd3dc352499eda966adffb7cd61bd10604d6743e0aa",
+  "commercial_basis": "https://openai.com/policies/terms-of-use/",
+  "review": {
+    "visual_review": "移除野猪后单把悬浮直剑与环绕金轨明确；施法手内收、五指可辨；缩略、遮罩和安全边通过。",
+    "checks": [
+      "source anatomy/weapon",
+      "260 thumbnail",
+      "bottom45 mask",
+      "primary safe area",
+      "reference identity"
+    ]
+  }
+}

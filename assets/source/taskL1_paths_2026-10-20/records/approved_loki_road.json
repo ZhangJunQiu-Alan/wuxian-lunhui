@@ -1,0 +1,17 @@
+{
+  "id": "loki_road",
+  "selected_version": "v02",
+  "formal": "assets/sprites/cards/loki_road.png",
+  "sha256": "023b52b1692f779a4606739f2bab9ef66e669cbfa3cf508aee77bfac57c254bb",
+  "review": {
+    "visual_review": "主体改半身，火路只在上方背景，旧下方火路被移除；低处放松手为非关键次要细节，主要头/火路安全且暗部不抢文字。",
+    "checks": [
+      "full-size anatomy and identity",
+      "260px thumbnail",
+      "45% mask",
+      "critical motif safe area",
+      "paired mechanic distinction"
+    ]
+  },
+  "mipmaps": "offline reference chain only; Godot import mipmaps must be enabled by integration agent"
+}

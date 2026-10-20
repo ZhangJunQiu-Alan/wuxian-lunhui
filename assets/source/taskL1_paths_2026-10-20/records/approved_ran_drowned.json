@@ -1,0 +1,17 @@
+{
+  "id": "ran_drowned",
+  "selected_version": "v01",
+  "formal": "assets/sprites/cards/ran_drowned.png",
+  "sha256": "848b28f3105b8c2798001bd213d35ef488e049ef3ae62a091158633689f16f6f",
+  "review": {
+    "visual_review": "三位蓝色亡者头肩分离，召唤手掌结构可辨，主脸与网保持原设定；缩略和遮罩通过。",
+    "checks": [
+      "720 source anatomy",
+      "260 thumbnail",
+      "bottom45 mask",
+      "primary safe margin",
+      "reference identity"
+    ]
+  },
+  "mipmaps": "offline reference chain only; Godot import mipmaps must be enabled by integration agent"
+}

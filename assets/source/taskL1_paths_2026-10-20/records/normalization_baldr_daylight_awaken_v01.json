@@ -1,0 +1,21 @@
+{
+  "id": "baldr_daylight_awaken",
+  "raw_size": [
+    971,
+    1619
+  ],
+  "raw_mode": "RGB",
+  "output_size": [
+    720,
+    1200
+  ],
+  "mode": "RGB",
+  "operation": "centered aspect crop to3:5, Lanczos resize720x1200, RGB only; no repaint, no artificial background darkening",
+  "candidate_sha256": "bfdcb33c8017b6d123841ead220af143f8e908dc322322b70e9edddbf7fc7149",
+  "bottom40_luminance": {
+    "mean": 22.34,
+    "pixels_over_100_fraction": 0.0121,
+    "stddev": 20.57
+  },
+  "status": "awaiting visual QA"
+}

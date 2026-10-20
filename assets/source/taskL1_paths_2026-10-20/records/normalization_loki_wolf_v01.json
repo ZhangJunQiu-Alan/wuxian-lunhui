@@ -1,0 +1,21 @@
+{
+  "id": "loki_wolf",
+  "raw_size": [
+    971,
+    1619
+  ],
+  "raw_mode": "RGB",
+  "output_size": [
+    720,
+    1200
+  ],
+  "mode": "RGB",
+  "operation": "centered aspect crop to3:5, Lanczos resize720x1200, RGB only; no repaint, no artificial background darkening",
+  "candidate_sha256": "e9cd5446dc76c8c6b2608cfd1eb05b5a78a5bab4fa69e65afbfa37cb9767ad84",
+  "bottom40_luminance": {
+    "mean": 14.58,
+    "pixels_over_100_fraction": 0.0011,
+    "stddev": 9.53
+  },
+  "status": "awaiting visual QA"
+}

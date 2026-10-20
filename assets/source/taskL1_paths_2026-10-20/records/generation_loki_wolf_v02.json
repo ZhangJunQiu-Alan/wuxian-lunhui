@@ -1,0 +1,35 @@
+{
+  "id": "loki_wolf",
+  "task": "L1",
+  "god": "loki",
+  "variant": "path",
+  "root": "assets/source/taskL1_paths_2026-10-20",
+  "target": "assets/sprites/cards/loki_wolf.png",
+  "references": [
+    {
+      "actual_input": "assets/source/taskL1_paths_2026-10-20/originals/loki_wolf_v01.png",
+      "archive": "references/loki_wolf_v01.png",
+      "sha256": "398e89a3d96a269c573631db369d3b14267ce036cfe8ff98cbd2414b8d83c174"
+    }
+  ],
+  "prompt": "Edit this existing oil painting. Replace ONLY the large adult wolf with a SMALL juvenile wolf, complete four-legged body, short fluffy muzzle and small ears, bounding near the man at upper chest height, x55%..85%, y25%..48%. Subtle orange paw embers, no giant head, no fire stream. Keep the man and main hand exactly. Preserve same auburn-haired clean-shaven man and original thick impasto style. Keep every important object and hand inside x12%..88%. Tall3:5 card art, head/upper body in upper55%; bottom40% simple dark unlit cloth, no scenery or action there. No text or border.",
+  "current_gameplay_source_line": "\"loki_wolf\": {\"kind\": \"path\", \"god\": \"loki\", \"name\": \"狼之父\", \"desc\": \"火焰收拢成一只芬里尔幼狼，跟着你扑咬附近的敌人并点燃它们。野火 = 扑咬范围更大\"},",
+  "input_code_sha256": "e2b900caf6dcee1af417fb90932a48e0313bf8e726a5f7d4141ed8d8e332e4db",
+  "status": "approved",
+  "version": "v02",
+  "tool": "OpenAI built-in image_gen",
+  "raw_output_path": "/Users/zhangjunqiu/.codex/generated_images/01a14093-604c-72e3-b0c2-585e428c4824/exec-9ad482bd-8791-4f5e-9f8f-aab1a4ef9c0f.png",
+  "original": "originals/loki_wolf_v02.png",
+  "original_sha256": "e7d6aa5608c23b66e4d46c4567c44bd55fe0a888730e6ae27662300cf70b5c20",
+  "commercial_basis": "https://openai.com/policies/terms-of-use/",
+  "review": {
+    "visual_review": "幼狼缩为完整幼体，四肢/短吻/尾与男人分开，和巨狼升级有尺度余地；原脸与五指保留，文字遮罩后狼主体可见。",
+    "checks": [
+      "full-size anatomy and identity",
+      "260px thumbnail",
+      "45% mask",
+      "critical motif safe area",
+      "paired mechanic distinction"
+    ]
+  }
+}

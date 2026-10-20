@@ -1,0 +1,31 @@
+{
+  "id": "fusion_shatter_thunder",
+  "task": "L2",
+  "gods": [
+    "thor",
+    "skadi"
+  ],
+  "variant": "fusion",
+  "root": "assets/source/taskL2_fusions_2026-10-20",
+  "target": "assets/sprites/cards/fusion_shatter_thunder.png",
+  "references": [
+    {
+      "actual_input": "assets/source/taskL2_fusions_2026-10-20/originals/fusion_shatter_thunder_v01.png",
+      "archive": "references/fusion_shatter_thunder_v01.png",
+      "sha256": "1f222b24dfc6f884f584a80832442da063187c310e87b1834a40a64345fc56f9"
+    }
+  ],
+  "prompt": "Recompose the SAME two northern warriors in this portrait3:5 oil painting: SAME red-bearded man and SAME silver-haired huntress, both faces unchanged, same fur and armor. Compact the entire shared attack into upper50% of canvas. Huntress's drawn bow and ice arrow smaller and fully inside x55%..85%, no arrow tip near right edge; clear taut bowstring and naturally drawn grip. Man holds small short hammer at chest x42%, a lightning strike hits ONE small frozen dark figure and shatters into angular ice directly between them x40%..60%, y35%..48%. No large ice foreground. Below y57% only quiet deep blue-black cloak shadow. No text.",
+  "current_gameplay_source_line": "\"shatter_thunder\": {\"gods\": [\"thor\", \"skadi\"], \"name\": \"碎冰之雷\", \"desc\": \"冻结的敌人被雷劈中时碎裂，冰片伤害周围的敌人并叠 2 层霜冻\"},",
+  "input_code_sha256": "cf8ac4eb04350527ea92fc6d7718a3882bee3bce4e278d679f66845fb808c289",
+  "status": "rejected",
+  "version": "v02",
+  "tool": "OpenAI built-in image_gen",
+  "raw_output_path": "/Users/zhangjunqiu/.codex/generated_images/01a14093-604c-72e3-b0c2-585e428c4824/exec-50683d94-e99d-42ef-8024-06146cb1413f.png",
+  "original": "originals/fusion_shatter_thunder_v02.png",
+  "original_sha256": "ed46b69b93edfc85ca9dd7bec2975f94a53938ca925a77061afbae7149438f58",
+  "commercial_basis": "https://openai.com/policies/terms-of-use/",
+  "review": {
+    "reason": "箭尖仍靠右安全线，取消画面右侧拉弓姿势，专注共同雷冰打击。"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "id": "loki_road",
+  "task": "L1",
+  "god": "loki",
+  "variant": "path",
+  "root": "assets/source/taskL1_paths_2026-10-20",
+  "target": "assets/sprites/cards/loki_road.png",
+  "references": [
+    {
+      "actual_input": "assets/source/taskL1_paths_2026-10-20/originals/loki_road_v01.png",
+      "archive": "references/loki_road_v01.png",
+      "sha256": "5eda3f6f5f060b529f5cab89913d2cf579c98ec2abf691517273abed6d50581d"
+    }
+  ],
+  "prompt": "Edit this existing oil painting. Recompose into an UPPER-BODY portrait, no full legs in foreground. The man face/torso occupy upper half; the winding thin orange FIRE ROAD recedes BEHIND his shoulders in upper45% background only. Remove ALL bright road/fire and rocks below55%; bottom45% is only deep quiet dark cloak and darkness. Keep exact face and clothing and painterly palette. Preserve same auburn-haired clean-shaven man and original thick impasto style. Keep every important object and hand inside x12%..88%. Tall3:5 card art, head/upper body in upper55%; bottom40% simple dark unlit cloth, no scenery or action there. No text or border.",
+  "current_gameplay_source_line": "\"loki_road\": {\"kind\": \"path\", \"god\": \"loki\", \"name\": \"纳吉尔法尔之路\", \"desc\": \"火焰改为你走过的地方燃起火路，持续 4 秒。野火 = 火路更宽；余烬 = 火路更久\"},",
+  "input_code_sha256": "e2b900caf6dcee1af417fb90932a48e0313bf8e726a5f7d4141ed8d8e332e4db",
+  "status": "approved",
+  "version": "v02",
+  "tool": "OpenAI built-in image_gen",
+  "raw_output_path": "/Users/zhangjunqiu/.codex/generated_images/01a14093-604c-72e3-b0c2-585e428c4824/exec-abf11a70-c3d1-4005-9aba-90ef25602307.png",
+  "original": "originals/loki_road_v02.png",
+  "original_sha256": "6ea867a05841897520ab5142e3dec7a9c9a4e7fcbf9d94951289ab778a13ac02",
+  "commercial_basis": "https://openai.com/policies/terms-of-use/",
+  "review": {
+    "visual_review": "主体改半身，火路只在上方背景，旧下方火路被移除；低处放松手为非关键次要细节，主要头/火路安全且暗部不抢文字。",
+    "checks": [
+      "full-size anatomy and identity",
+      "260px thumbnail",
+      "45% mask",
+      "critical motif safe area",
+      "paired mechanic distinction"
+    ]
+  }
+}

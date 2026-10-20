@@ -1,0 +1,35 @@
+{
+  "id": "baldr_daylight_awaken",
+  "task": "L1",
+  "god": "baldr",
+  "variant": "awaken",
+  "root": "assets/source/taskL1_paths_2026-10-20",
+  "target": "assets/sprites/cards/baldr_daylight_awaken.png",
+  "references": [
+    {
+      "actual_input": "assets/source/taskL1_paths_2026-10-20/originals/baldr_daylight_awaken_v01.png",
+      "archive": "references/baldr_daylight_awaken_v01.png",
+      "sha256": "21a85d27eb8bd9cca31e43185047e2e5995a1823f93bb34984b1c19b3a1f832f"
+    }
+  ],
+  "prompt": "Edit this existing portrait only for composition. Reposition BOTH complete hands nearer the chest inside x25%..75%, fingers natural. FOUR vertical light columns behind the figure remain; all hands and primary glow above52%. Reduce lower light ribbons below55%, bottom40% quiet dark cloth. Exact same youthful pale-blond man, cream fur mantle and white/gold clothes, impasto oil texture and original face. Tall3:5, no new characters, no text or border.",
+  "current_gameplay_source_line": "\"baldr_daylight_awaken\": {\"kind\": \"awaken\", \"god\": \"baldr\", \"path\": \"baldr_daylight\", \"name\": \"觉醒·永昼\", \"desc\": \"光柱 +2。每 30 秒全屏闪光，所有敌人挂上光痕\"},",
+  "input_code_sha256": "e2b900caf6dcee1af417fb90932a48e0313bf8e726a5f7d4141ed8d8e332e4db",
+  "status": "approved",
+  "version": "v02",
+  "tool": "OpenAI built-in image_gen",
+  "raw_output_path": "/Users/zhangjunqiu/.codex/generated_images/01a14093-604c-72e3-b0c2-585e428c4824/exec-cf9bcd67-a6f9-4dce-b131-e4d19972f1d2.png",
+  "original": "originals/baldr_daylight_awaken_v02.png",
+  "original_sha256": "9477aa7c4dd24d9205ddd6d6ee84c92bced8712d4930b4a67ded0352684f7ee2",
+  "commercial_basis": "https://openai.com/policies/terms-of-use/",
+  "review": {
+    "visual_review": "四道光柱与胸前双手清楚，手指结构正常，260缩略与下45%遮罩通过；光晕可出血，柱身和主要手势在安全范围。",
+    "checks": [
+      "720 source anatomy",
+      "260 thumbnail",
+      "bottom45 mask",
+      "primary safe margin",
+      "reference identity"
+    ]
+  }
+}

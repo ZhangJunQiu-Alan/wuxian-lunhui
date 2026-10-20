@@ -1,0 +1,21 @@
+{
+  "id": "baldr_spear_awaken",
+  "raw_size": [
+    971,
+    1619
+  ],
+  "raw_mode": "RGB",
+  "output_size": [
+    720,
+    1200
+  ],
+  "mode": "RGB",
+  "operation": "centered aspect crop to3:5, Lanczos resize720x1200, RGB only; no repaint, no artificial background darkening",
+  "candidate_sha256": "880f91de414b8fff22523cbebbffc86d0e673c167fe11fccff601a42947ad928",
+  "bottom40_luminance": {
+    "mean": 15.3,
+    "pixels_over_100_fraction": 0.0002,
+    "stddev": 9.43
+  },
+  "status": "awaiting visual QA"
+}

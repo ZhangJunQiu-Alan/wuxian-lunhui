@@ -1,0 +1,17 @@
+{
+  "id": "odin_gungnir_awaken",
+  "selected_version": "v02",
+  "formal": "assets/sprites/cards/odin_gungnir_awaken.png",
+  "sha256": "b1ee860d1962e7e9c06c6d5b6ed2df7ec1a18c3922c57c1ad7917e69928d72f4",
+  "review": {
+    "visual_review": "最右枪尖已向内收拢，三条直枪相位配弯曲魔法轨迹，脸/手与关键枪尖安全边及遮罩通过；英灵为背景。",
+    "checks": [
+      "source",
+      "260px",
+      "mask",
+      "safe guide",
+      "path/awaken comparison"
+    ]
+  },
+  "mipmaps": "offline reference chain only; Godot import mipmaps must be enabled by integration agent"
+}

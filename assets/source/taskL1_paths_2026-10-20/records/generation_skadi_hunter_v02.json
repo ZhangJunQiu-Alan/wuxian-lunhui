@@ -1,0 +1,35 @@
+{
+  "id": "skadi_hunter",
+  "task": "L1",
+  "god": "skadi",
+  "variant": "path",
+  "root": "assets/source/taskL1_paths_2026-10-20",
+  "target": "assets/sprites/cards/skadi_hunter.png",
+  "references": [
+    {
+      "actual_input": "assets/source/taskL1_paths_2026-10-20/originals/skadi_hunter_v01.png",
+      "archive": "references/skadi_hunter_v01.png",
+      "sha256": "3140d6e2068fbfeb738355e027c4b261d78ebabdb57b6c82fd00b9110243890d"
+    }
+  ],
+  "prompt": "Edit this existing oil painting. Keep the SAME silver-haired huntress, face, fur, mountain and drawn icy arrow. Shrink and center the entire wooden bow and arrow by 25 percent. The WHOLE bow including both curved tips must be visible inside the upper52% of canvas, not cut by top edge. Arrow tip ends at x82%, nock near cheek, coherent taut string and natural gloved hands. Keep bottom40% quiet dark blue-black.",
+  "current_gameplay_source_line": "\"skadi_hunter\": {\"kind\": \"path\", \"god\": \"skadi\", \"name\": \"狩猎本能\", \"desc\": \"标记屏幕内最强的敌人，冰箭改为蓄力狙击它：伤害 ×3，直接冻结。连珠 = 狙击后追加普通箭\"},",
+  "input_code_sha256": "e2b900caf6dcee1af417fb90932a48e0313bf8e726a5f7d4141ed8d8e332e4db",
+  "status": "approved",
+  "version": "v02",
+  "tool": "OpenAI built-in image_gen",
+  "raw_output_path": "/Users/zhangjunqiu/.codex/generated_images/01a14093-604c-72e3-b0c2-585e428c4824/exec-9dd25421-6a32-4735-a2ca-e3d3067f2ac1.png",
+  "original": "originals/skadi_hunter_v02.png",
+  "original_sha256": "eb2c30bb808843a3cfe7133b641c7146dbaccb0c43855b8e6ea5fdd09fd4e03c",
+  "commercial_basis": "https://openai.com/policies/terms-of-use/",
+  "review": {
+    "visual_review": "木弓双端完整可见，直箭、弓弦、箭尾和拉弓双手关系清楚；面容沿用参考，箭尖在安全边内；缩略和遮罩通过。",
+    "checks": [
+      "source anatomy/weapon",
+      "260 thumbnail",
+      "bottom45 mask",
+      "primary safe area",
+      "reference identity"
+    ]
+  }
+}

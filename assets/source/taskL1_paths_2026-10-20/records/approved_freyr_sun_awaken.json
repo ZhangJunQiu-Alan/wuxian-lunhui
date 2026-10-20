@@ -1,0 +1,17 @@
+{
+  "id": "freyr_sun_awaken",
+  "selected_version": "v02",
+  "formal": "assets/sprites/cards/freyr_sun_awaken.png",
+  "sha256": "8ff3462eb62aaf058d0750f42ddaf5559774852a698a35aa9e9e5ce9c1f0f9ed",
+  "review": {
+    "visual_review": "三把完整飞剑与单剑道路明显区分，双手内收后五指结构正常，金轨统一画面；缩略、遮罩、安全边通过。",
+    "checks": [
+      "source anatomy/weapon/animal",
+      "260 thumbnail",
+      "bottom45 mask",
+      "primary safe area",
+      "reference identity"
+    ]
+  },
+  "mipmaps": "offline reference chain only; Godot import mipmaps must be enabled by integration agent"
+}

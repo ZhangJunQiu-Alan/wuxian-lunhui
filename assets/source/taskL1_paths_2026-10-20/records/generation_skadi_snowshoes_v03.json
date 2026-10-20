@@ -1,0 +1,35 @@
+{
+  "id": "skadi_snowshoes",
+  "task": "L1",
+  "god": "skadi",
+  "variant": "path",
+  "root": "assets/source/taskL1_paths_2026-10-20",
+  "target": "assets/sprites/cards/skadi_snowshoes.png",
+  "references": [
+    {
+      "actual_input": "assets/source/taskL1_paths_2026-10-20/originals/skadi_snowshoes_v02.png",
+      "archive": "references/skadi_snowshoes_v02.png",
+      "sha256": "e4fef0ac6e13eac1deef23679d244b9644a5a9297c9217f1a1223447e96fb8a4"
+    }
+  ],
+  "prompt": "Edit this oil painting, SAME silver-haired huntress, same face, two oval lattice snowshoes behind left shoulder, fur, forward stepping posture and cold mountain. REMOVE the entire held wooden bow, bowstring and held arrow, no weapon at right edge. BOTH gloved hands now hold short backpack straps at upper chest x40% and x65%, fingers naturally curled. Add ONE small icy magical arrow flying horizontally across upper left background x20%..45%, above shoulder, separate from body, to suggest shooting while moving. Keep all main motifs above y52%. Below y58% only deep dark blue-black simple snow shadow. Preserve oil painting and identity, no text.",
+  "current_gameplay_source_line": "\"skadi_snowshoes\": {\"kind\": \"path\", \"god\": \"skadi\", \"name\": \"雪鞋\", \"desc\": \"移动时每走 150 像素自动射一支箭，跑得越多射得越多，站着不动就不射\"},",
+  "input_code_sha256": "e2b900caf6dcee1af417fb90932a48e0313bf8e726a5f7d4141ed8d8e332e4db",
+  "status": "approved",
+  "version": "v03",
+  "tool": "OpenAI built-in image_gen",
+  "raw_output_path": "/Users/zhangjunqiu/.codex/generated_images/01a14093-604c-72e3-b0c2-585e428c4824/exec-062cadbc-38ca-4a47-a700-3e67c2c5a2f3.png",
+  "original": "originals/skadi_snowshoes_v03.png",
+  "original_sha256": "d9196d43db00dbca902067f4f11eef0f8ddc9ada8c735f4fe8f0bbde1769c93b",
+  "commercial_basis": "https://openai.com/policies/terms-of-use/",
+  "review": {
+    "visual_review": "恰好两只完整网格雪鞋，双手握背带结构清楚；移动姿态和一枚飞行冰箭区分猎手，箭头在安全区，飞行轨迹允许左侧出血。缩略、遮罩通过。",
+    "checks": [
+      "source anatomy",
+      "260 thumbnail",
+      "bottom45 mask",
+      "primary safe area",
+      "reference identity"
+    ]
+  }
+}

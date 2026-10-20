@@ -1,0 +1,17 @@
+{
+  "id": "thor_static",
+  "selected_version": "v02",
+  "formal": "assets/sprites/cards/thor_static.png",
+  "sha256": "7f9ecf30a0f3b349cf088c55ced4c3774fd1d68900d9f325bf1444ace9de85db",
+  "review": {
+    "visual_review": "删除战锤后电网为唯一主形态，三处感电节点连线可辨，主角脸/手不触安全边，敌人作次级剪影，暗部遮罩通过。",
+    "checks": [
+      "source full-size structure reviewed",
+      "260px thumbnail reviewed",
+      "bottom45% mask reviewed",
+      "identity and impasto consistency reviewed",
+      "primary motif and face inside safe area"
+    ]
+  },
+  "mipmaps": "offline reference chain only; Godot import mipmaps must be enabled by integration agent"
+}

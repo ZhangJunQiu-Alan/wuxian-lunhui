@@ -1,0 +1,36 @@
+{
+  "id": "fusion_father_son",
+  "task": "L2",
+  "gods": [
+    "thor",
+    "odin"
+  ],
+  "variant": "fusion",
+  "root": "assets/source/taskL2_fusions_2026-10-20",
+  "target": "assets/sprites/cards/fusion_father_son.png",
+  "references": [
+    {
+      "actual_input": "assets/sprites/cards/thor.png",
+      "archive": "references/thor.png",
+      "sha256": "a9e773d2fae33a9c885a320a0c64d7f58f5b63ecb0e05fab8d7cbe61e727edb6"
+    },
+    {
+      "actual_input": "assets/sprites/cards/odin.png",
+      "archive": "references/odin.png",
+      "sha256": "423cab0736c5d60b840e7ba3d293901eba6d9f48025defc9fda56425cbf76fc2"
+    }
+  ],
+  "prompt": "Use case: illustration-story. Asset type: ONE premium game upgrade CARD ILLUSTRATION, portrait 3:5, intended final 720x1200 RGB. Style: richly textured restrained northern myth oil painting / painterly impasto, realistic faces and materials, same collection as attached original portraits, NOT pixel art, NOT anime, no glossy 3D. This is a living myth inside an ancient archive; do not add computers, museums or science-fiction. CRITICAL composition: heads and every key spell, weapon, animal or gesture entirely within upper55% of image; faces around y15-25%, upper bodies around y25-50%; bottom40% deep blue-black simple cloak/shadow fading into quiet negative space for game text. Left/right40px safe margins at final size: no face/important weapon/animal touches side edges. Show a single composed cinematic scene, not a multi-panel sheet. No borders, card frame, letters, readable runes, logos, watermark, interface or typography. Natural anatomy, clearly separated hands, structurally sound weapons, restrained bloom; faces legible at260px wide. Preserve identity, age, hair, facial features, costume materials and painterly style from references; pose and scenario change for THIS specific upgrade.\nSubject A identity: the same broad muscular middle-aged red-haired, thick red-bearded northern warrior, black fur mantle, weathered leather and iron armor, blue lightning.\nSubject B identity: the same elderly long grey-bearded one-eyed northern wanderer, broad dark hat, fur cloak, weathered face, violet magic.\nSpecific shared spell scene: A single unified spell: blue lightning pierces a floating violet geometric sigil and bursts into three smaller violet-blue marks around it. The red-bearded warrior and one-eyed elder stand shoulder to shoulder, one shared energy flow, not a split collage.\nTwo adult figures, equal scale, heads fully inside upper45%, no third main human, lighting links the pair into one coherent painting. Preserve the two separate identities, never merge facial features.\nKeep ALL important anatomy, weapon heads/tips and animal faces within CENTRAL80% of canvas (x10%..90%), not merely inside the outer edge. Leave side columns as background or unimportant cloak only. Place all hands/gesture and spell motifs above y52%; nothing bright or complex below y60%.\nKeep both faces within x22%..78%. Every hand and weapon/symbol is small, centered between x20%..80% and above y48%. Leave a wide calm dark foreground below y55%. Do not copy extra weapons from the input portraits unless requested by this shared scene.",
+  "current_gameplay_source_line": "\"father_son\": {\"gods\": [\"thor\", \"odin\"], \"name\": \"父子雷符\", \"desc\": \"落雷劈中带符文印记的敌人时立刻引爆印记，并给周围的敌人叠 1 层印记\"},",
+  "input_code_sha256": "cf8ac4eb04350527ea92fc6d7718a3882bee3bce4e278d679f66845fb808c289",
+  "status": "approved",
+  "version": "v01",
+  "tool": "OpenAI built-in image_gen",
+  "raw_output_path": "/Users/zhangjunqiu/.codex/generated_images/01a14093-604c-72e3-b0c2-585e428c4824/exec-45b467e1-5c06-4ecb-bcb7-d99cb095513a.png",
+  "original": "originals/fusion_father_son_v01.png",
+  "original_sha256": "70f3d7d0c387c48fa16a905ea54861b54354f15f545b5b1457b441e01625df8b",
+  "commercial_basis": "https://openai.com/policies/terms-of-use/",
+  "review": {
+    "visual_review": "双人脸、两手与雷符同场景连接；主符文位于胸前，细小子标记延至55-60%过渡带，但遮罩后主雷符仍清晰；底40%暗简。缩略与安全边通过。"
+  }
+}

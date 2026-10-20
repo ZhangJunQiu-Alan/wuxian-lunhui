@@ -1,0 +1,35 @@
+{
+  "id": "baldr_oath_awaken",
+  "task": "L1",
+  "god": "baldr",
+  "variant": "awaken",
+  "root": "assets/source/taskL1_paths_2026-10-20",
+  "target": "assets/sprites/cards/baldr_oath_awaken.png",
+  "references": [
+    {
+      "actual_input": "assets/source/taskL1_paths_2026-10-20/originals/baldr_oath_awaken_v01.png",
+      "archive": "references/baldr_oath_awaken_v01.png",
+      "sha256": "5e12734ad455a647e413a3f848f8d4175eee3dc94a078027e9b39ce1b79bb8d0"
+    }
+  ],
+  "prompt": "Edit the existing oil painting for card readability. Move BOTH raised hands inward to x22%..78%, keep natural five fingers each. Preserve luminous protective shell, stopped fragments, same youthful man and white-gold costume. Darken/dissolve shell below55% so text area stays quiet. Preserve thick impasto style, exact identity, age and facial features. Tall3:5, all important content upper55%,40px safe edges at720width. No new figure, text, border or interface.",
+  "current_gameplay_source_line": "\"baldr_oath_awaken\": {\"kind\": \"awaken\", \"god\": \"baldr\", \"path\": \"baldr_oath\", \"name\": \"觉醒·无伤之神\", \"desc\": \"护盾叠满时 3 秒无敌，期间光束伤害翻倍。每 30 秒全屏闪光，所有敌人挂上光痕\"},",
+  "input_code_sha256": "e2b900caf6dcee1af417fb90932a48e0313bf8e726a5f7d4141ed8d8e332e4db",
+  "status": "approved",
+  "version": "v02",
+  "tool": "OpenAI built-in image_gen",
+  "raw_output_path": "/Users/zhangjunqiu/.codex/generated_images/01a14093-604c-72e3-b0c2-585e428c4824/exec-e38d3726-1cbc-4cd9-8d61-2abdfa5c4799.png",
+  "original": "originals/baldr_oath_awaken_v02.png",
+  "original_sha256": "7810b2644ee3312e296c3b0fe6fcfbdf9ef9d3f65766b67c8b0caca016fd422f",
+  "commercial_basis": "https://openai.com/policies/terms-of-use/",
+  "review": {
+    "visual_review": "双掌内收且各五指清楚，完整保护壳和受阻碎块区别普通三盾；脸部与金白材质保持，暗部遮罩通过。",
+    "checks": [
+      "source anatomy/animal/gear",
+      "260px thumbnail",
+      "45% mask",
+      "primary safe composition",
+      "identity compared"
+    ]
+  }
+}

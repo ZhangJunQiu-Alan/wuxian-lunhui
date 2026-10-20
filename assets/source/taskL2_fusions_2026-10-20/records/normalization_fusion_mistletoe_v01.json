@@ -1,0 +1,21 @@
+{
+  "id": "fusion_mistletoe",
+  "raw_size": [
+    971,
+    1619
+  ],
+  "raw_mode": "RGB",
+  "output_size": [
+    720,
+    1200
+  ],
+  "mode": "RGB",
+  "operation": "centered aspect crop to3:5, Lanczos resize720x1200, RGB only; no repaint, no artificial background darkening",
+  "candidate_sha256": "22c117621ddc5883e72e74f9b7fefff9cdf0b60ba0638e6164912dee4e7c4a51",
+  "bottom40_luminance": {
+    "mean": 15.07,
+    "pixels_over_100_fraction": 0.0008,
+    "stddev": 9.6
+  },
+  "status": "awaiting visual QA"
+}

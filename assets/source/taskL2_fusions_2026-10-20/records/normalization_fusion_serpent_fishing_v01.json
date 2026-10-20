@@ -1,0 +1,21 @@
+{
+  "id": "fusion_serpent_fishing",
+  "raw_size": [
+    971,
+    1619
+  ],
+  "raw_mode": "RGB",
+  "output_size": [
+    720,
+    1200
+  ],
+  "mode": "RGB",
+  "operation": "centered aspect crop to3:5, Lanczos resize720x1200, RGB only; no repaint, no artificial background darkening",
+  "candidate_sha256": "664bb70ae59480641669a0e819653849cda38f62d422f7de63e29a0390b4b807",
+  "bottom40_luminance": {
+    "mean": 24.88,
+    "pixels_over_100_fraction": 0.0378,
+    "stddev": 28.54
+  },
+  "status": "awaiting visual QA"
+}

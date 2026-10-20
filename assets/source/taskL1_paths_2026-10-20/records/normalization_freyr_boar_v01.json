@@ -1,0 +1,21 @@
+{
+  "id": "freyr_boar",
+  "raw_size": [
+    971,
+    1619
+  ],
+  "raw_mode": "RGB",
+  "output_size": [
+    720,
+    1200
+  ],
+  "mode": "RGB",
+  "operation": "centered aspect crop to3:5, Lanczos resize720x1200, RGB only; no repaint, no artificial background darkening",
+  "candidate_sha256": "2a0503820e7269e4f2e0685cdfea7e3832f4aeb1064f1c3b591b2705262d5205",
+  "bottom40_luminance": {
+    "mean": 35.13,
+    "pixels_over_100_fraction": 0.0838,
+    "stddev": 43.52
+  },
+  "status": "awaiting visual QA"
+}

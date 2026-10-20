@@ -1,0 +1,21 @@
+{
+  "id": "fusion_shatter_thunder",
+  "raw_size": [
+    971,
+    1619
+  ],
+  "raw_mode": "RGB",
+  "output_size": [
+    720,
+    1200
+  ],
+  "mode": "RGB",
+  "operation": "centered aspect crop to3:5, Lanczos resize720x1200, RGB only; no repaint, no artificial background darkening",
+  "candidate_sha256": "038404d1edb682ea3fe0de5cd0ea1f8fd4b4a7250efefd5c9fadf65c4fdf6113",
+  "bottom40_luminance": {
+    "mean": 10.77,
+    "pixels_over_100_fraction": 0.0008,
+    "stddev": 7.83
+  },
+  "status": "normalization verified; candidate selected after separate visual review"
+}

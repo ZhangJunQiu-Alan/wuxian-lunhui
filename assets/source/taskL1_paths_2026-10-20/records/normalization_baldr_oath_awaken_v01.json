@@ -1,0 +1,21 @@
+{
+  "id": "baldr_oath_awaken",
+  "raw_size": [
+    972,
+    1619
+  ],
+  "raw_mode": "RGB",
+  "output_size": [
+    720,
+    1200
+  ],
+  "mode": "RGB",
+  "operation": "centered aspect crop to3:5, Lanczos resize720x1200, RGB only; no repaint, no artificial background darkening",
+  "candidate_sha256": "93a83f25474882a4cbac306b747de1926f0254485b898414053e71e4b648c070",
+  "bottom40_luminance": {
+    "mean": 20.38,
+    "pixels_over_100_fraction": 0.0057,
+    "stddev": 16.62
+  },
+  "status": "awaiting visual QA"
+}

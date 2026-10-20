@@ -1,0 +1,17 @@
+{
+  "id": "freyja_cats",
+  "selected_version": "v02",
+  "formal": "assets/sprites/cards/freyja_cats.png",
+  "sha256": "80d94403d8847ee12d7af1fe6231903f0d6bab5734faaa28d60e75478bbd21f4",
+  "review": {
+    "visual_review": "两猫头耳鼻收进，四只猫眼与人脸/两手分别清楚，体型与普通道路线索一致，暗部通过。",
+    "checks": [
+      "full source anatomy/material",
+      "260px safe and text mask",
+      "identity compared",
+      "bottom40% dark",
+      "mechanic-specific primary motif"
+    ]
+  },
+  "mipmaps": "offline reference chain only; Godot import mipmaps must be enabled by integration agent"
+}

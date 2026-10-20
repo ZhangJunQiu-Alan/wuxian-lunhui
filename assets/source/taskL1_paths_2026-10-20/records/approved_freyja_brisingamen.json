@@ -1,0 +1,17 @@
+{
+  "id": "freyja_brisingamen",
+  "selected_version": "v01",
+  "formal": "assets/sprites/cards/freyja_brisingamen.png",
+  "sha256": "9dd9510c05aad3dc4b5c6a20cbe549c29b1e814bef94e5ee651e7bd3d9ed8ef1",
+  "review": {
+    "visual_review": "两手各握项链一侧，金环与项链突出，原面容/辫发一致；260缩略/遮罩/安全边通过。",
+    "checks": [
+      "source structure",
+      "260px",
+      "45% mask",
+      "critical motif safe",
+      "base/path identity"
+    ]
+  },
+  "mipmaps": "offline reference chain only; Godot import mipmaps must be enabled by integration agent"
+}

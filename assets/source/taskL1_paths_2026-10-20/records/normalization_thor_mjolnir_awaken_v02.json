@@ -1,0 +1,21 @@
+{
+  "id": "thor_mjolnir_awaken",
+  "raw_size": [
+    971,
+    1620
+  ],
+  "raw_mode": "RGB",
+  "output_size": [
+    720,
+    1200
+  ],
+  "mode": "RGB",
+  "operation": "centered aspect crop to3:5, Lanczos resize720x1200, RGB only; no repaint, no artificial background darkening",
+  "candidate_sha256": "604d4816ec8352646c0d7c71bd466883fbde1b303f7d572f59642baebea1e979",
+  "bottom40_luminance": {
+    "mean": 19.48,
+    "pixels_over_100_fraction": 0.0021,
+    "stddev": 10.21
+  },
+  "status": "normalization verified; candidate selected after separate visual review"
+}

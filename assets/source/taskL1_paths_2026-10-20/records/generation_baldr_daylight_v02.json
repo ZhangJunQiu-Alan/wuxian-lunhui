@@ -1,0 +1,35 @@
+{
+  "id": "baldr_daylight",
+  "task": "L1",
+  "god": "baldr",
+  "variant": "path",
+  "root": "assets/source/taskL1_paths_2026-10-20",
+  "target": "assets/sprites/cards/baldr_daylight.png",
+  "references": [
+    {
+      "actual_input": "assets/source/taskL1_paths_2026-10-20/originals/baldr_daylight_v01.png",
+      "archive": "references/baldr_daylight_v01.png",
+      "sha256": "845c3212decea440cd2f5919fd6456a7da943cfeea24bff4f2e309f7c3390e83"
+    }
+  ],
+  "prompt": "Precise composition edit of this existing oil painting. Bring the complete RIGHT hand15% canvas width LEFT, keep fingers natural and all fingertips inside x15%..85%. TWO vertical light columns remain behind shoulders; dim light ribbons below55% so bottom40% is dark cloak. Preserve exact young pale-blond male face, white-gold clothing, cream fur and painterly texture. All key motifs above55%; deep quiet dark bottom40%; no text, frame, extra limbs or new character.",
+  "current_gameplay_source_line": "\"baldr_daylight\": {\"kind\": \"path\", \"god\": \"baldr\", \"name\": \"白昼\", \"desc\": \"光束改为绕着你旋转的光柱，扫到的敌人持续受伤。棱光 = 多一道光柱；余晖 = 扫过的地方留光带\"},",
+  "input_code_sha256": "e2b900caf6dcee1af417fb90932a48e0313bf8e726a5f7d4141ed8d8e332e4db",
+  "status": "approved",
+  "version": "v02",
+  "tool": "OpenAI built-in image_gen",
+  "raw_output_path": "/Users/zhangjunqiu/.codex/generated_images/01a14093-604c-72e3-b0c2-585e428c4824/exec-da29fe7b-496e-49f2-966c-aa57f11e231a.png",
+  "original": "originals/baldr_daylight_v02.png",
+  "original_sha256": "6620be79239080f86b0305e6d6b42fdc2a1c62cdbec081fc95673eb1bbf16fa5",
+  "commercial_basis": "https://openai.com/policies/terms-of-use/",
+  "review": {
+    "visual_review": "右手内收后两手均在安全区，两根光柱和环绕轨迹可读，底部深暗通过。",
+    "checks": [
+      "source anatomy/weapon",
+      "260px",
+      "45% mask",
+      "primary safe area",
+      "path identity"
+    ]
+  }
+}

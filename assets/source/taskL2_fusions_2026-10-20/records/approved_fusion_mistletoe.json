@@ -1,0 +1,17 @@
+{
+  "id": "fusion_mistletoe",
+  "selected_version": "v02",
+  "formal": "assets/sprites/cards/fusion_mistletoe.png",
+  "sha256": "81071ea7eff36e247ee22fce576c8a301fb505093d87a7f43d61a9a6b6dda449",
+  "review": {
+    "visual_review": "巨大弓已移除，单枚槲寄生枝箭、成对叶与白果可辨，金白光和橙火交织；双手自然且箭尖安全。缩略和遮罩通过。",
+    "checks": [
+      "source anatomy/weapon/animal",
+      "260 thumbnail",
+      "bottom45 mask",
+      "primary safe area",
+      "two identities"
+    ]
+  },
+  "mipmaps": "offline reference chain only; Godot import mipmaps must be enabled by integration agent"
+}

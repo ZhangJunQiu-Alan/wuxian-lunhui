@@ -1,0 +1,21 @@
+{
+  "id": "freyja_cats",
+  "raw_size": [
+    971,
+    1619
+  ],
+  "raw_mode": "RGB",
+  "output_size": [
+    720,
+    1200
+  ],
+  "mode": "RGB",
+  "operation": "centered aspect crop to3:5, Lanczos resize720x1200, RGB only; no repaint, no artificial background darkening",
+  "candidate_sha256": "0e11b0cad66fa590a01bb03faf7a49313ebf0582a9b7325867435019709fce7c",
+  "bottom40_luminance": {
+    "mean": 17.56,
+    "pixels_over_100_fraction": 0.0005,
+    "stddev": 7.5
+  },
+  "status": "awaiting visual QA"
+}

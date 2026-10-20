@@ -1,0 +1,17 @@
+{
+  "id": "loki_road_awaken",
+  "selected_version": "v01",
+  "formal": "assets/sprites/cards/loki_road_awaken.png",
+  "sha256": "cc67712057f8901593c981e4cfebc325fdc78314799531b57c0ef503cd069e11",
+  "review": {
+    "visual_review": "更宽多分叉火路在上方背景，两手居中无接肢，较普通细火路有明确扩展，文字区域克制。",
+    "checks": [
+      "source structure",
+      "260px",
+      "45% mask",
+      "critical motif safe",
+      "base/path identity"
+    ]
+  },
+  "mipmaps": "offline reference chain only; Godot import mipmaps must be enabled by integration agent"
+}

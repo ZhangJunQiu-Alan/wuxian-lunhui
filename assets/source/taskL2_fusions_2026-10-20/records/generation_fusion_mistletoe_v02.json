@@ -1,0 +1,38 @@
+{
+  "id": "fusion_mistletoe",
+  "task": "L2",
+  "gods": [
+    "loki",
+    "baldr"
+  ],
+  "variant": "fusion",
+  "root": "assets/source/taskL2_fusions_2026-10-20",
+  "target": "assets/sprites/cards/fusion_mistletoe.png",
+  "references": [
+    {
+      "actual_input": "assets/source/taskL2_fusions_2026-10-20/originals/fusion_mistletoe_v01.png",
+      "archive": "references/fusion_mistletoe_v01.png",
+      "sha256": "0a517b2ef2f17d03609af275319fcd522fafbafb55675c396a837ee1bede3686"
+    }
+  ],
+  "prompt": "Edit this portrait3:5 oil painting. Keep SAME auburn-haired clean-shaven man and SAME pale-blond youth, same faces and oil texture. REMOVE the entire large curved leafy bow, bowstring and old long arrow. Instead ONE SMALL straight mistletoe-twig ARROW floats horizontally BETWEEN their upper chests from x33% to x70%, y33%, with distinct short arrowhead, tiny paired oval green leaves and pearl-white berries along its shaft. Ivory light threaded with orange fire around that single arrow, no other weapon. Both men's hands now small natural open palms just beneath it x38% and x65%, y40%. Nothing near side edges. Dark lower45%, no text.",
+  "current_gameplay_source_line": "\"mistletoe\": {\"gods\": [\"loki\", \"baldr\"], \"name\": \"槲寄生\", \"desc\": \"光束点燃敌人；带光痕又在灼烧的敌人死亡时，射出一支贯穿的槲寄生之箭\"},",
+  "input_code_sha256": "cf8ac4eb04350527ea92fc6d7718a3882bee3bce4e278d679f66845fb808c289",
+  "status": "approved",
+  "version": "v02",
+  "tool": "OpenAI built-in image_gen",
+  "raw_output_path": "/Users/zhangjunqiu/.codex/generated_images/01a14093-604c-72e3-b0c2-585e428c4824/exec-f12faae6-a7f0-4596-9ea8-2b5393794ecc.png",
+  "original": "originals/fusion_mistletoe_v02.png",
+  "original_sha256": "b07811201195536bc8b358230cd02a4156fa8c255bdc8f556fb2dca6e6a9fefd",
+  "commercial_basis": "https://openai.com/policies/terms-of-use/",
+  "review": {
+    "visual_review": "巨大弓已移除，单枚槲寄生枝箭、成对叶与白果可辨，金白光和橙火交织；双手自然且箭尖安全。缩略和遮罩通过。",
+    "checks": [
+      "source anatomy/weapon/animal",
+      "260 thumbnail",
+      "bottom45 mask",
+      "primary safe area",
+      "two identities"
+    ]
+  }
+}

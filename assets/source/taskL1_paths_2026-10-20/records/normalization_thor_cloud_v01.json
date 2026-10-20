@@ -1,0 +1,21 @@
+{
+  "id": "thor_cloud",
+  "raw_size": [
+    971,
+    1619
+  ],
+  "raw_mode": "RGB",
+  "output_size": [
+    720,
+    1200
+  ],
+  "mode": "RGB",
+  "operation": "centered aspect crop to3:5, Lanczos resize720x1200, RGB only; no repaint, no artificial background darkening",
+  "candidate_sha256": "15d40c66d042016bbe09b0a80bbfa32ae07106578a53e555f5096ab2c457700c",
+  "bottom40_luminance": {
+    "mean": 16.87,
+    "pixels_over_100_fraction": 0.0,
+    "stddev": 5.51
+  },
+  "status": "awaiting visual QA"
+}

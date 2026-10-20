@@ -1,0 +1,21 @@
+{
+  "id": "skadi_snowshoes",
+  "raw_size": [
+    971,
+    1620
+  ],
+  "raw_mode": "RGB",
+  "output_size": [
+    720,
+    1200
+  ],
+  "mode": "RGB",
+  "operation": "centered aspect crop to3:5, Lanczos resize720x1200, RGB only; no repaint, no artificial background darkening",
+  "candidate_sha256": "d0b0572eb5082419b26aed7765005e205623630f9e432c4bc4fb99dcc970c80d",
+  "bottom40_luminance": {
+    "mean": 19.9,
+    "pixels_over_100_fraction": 0.0079,
+    "stddev": 16.07
+  },
+  "status": "normalization verified; candidate selected after separate visual review"
+}

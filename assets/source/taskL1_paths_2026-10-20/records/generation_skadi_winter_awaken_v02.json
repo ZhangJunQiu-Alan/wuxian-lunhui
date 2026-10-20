@@ -1,0 +1,35 @@
+{
+  "id": "skadi_winter_awaken",
+  "task": "L1",
+  "god": "skadi",
+  "variant": "awaken",
+  "root": "assets/source/taskL1_paths_2026-10-20",
+  "target": "assets/sprites/cards/skadi_winter_awaken.png",
+  "references": [
+    {
+      "actual_input": "assets/source/taskL1_paths_2026-10-20/originals/skadi_winter_awaken_v01.png",
+      "archive": "references/skadi_winter_awaken_v01.png",
+      "sha256": "c3c69514b98c020fa662de53312a87fb756fde89dc5e966af8bce3c2c94c48d1"
+    }
+  ],
+  "prompt": "Edit the attached portrait3:5 oil painting. Keep SAME silver-haired huntress face, fur cloak, enormous blue blizzard spiral and ice shard gale in upperhalf, SAME oil paint style. REMOVE entire held bow, bowstring and arrow. Both gloved hands now closed naturally near her chest at x40% and x65%, y35%, no weapons held. A small wooden bow may be slung behind shoulder, no cut-off tips. All strong white storm arcs above y53%, below y60% only quiet dark blue-black shadow. Distinct greater blizzard compared with the normal smaller winter ring. No text.",
+  "current_gameplay_source_line": "\"skadi_winter_awaken\": {\"kind\": \"awaken\", \"god\": \"skadi\", \"path\": \"skadi_winter\", \"name\": \"觉醒·芬布尔之冬\", \"desc\": \"暴风雪扩大到整个屏幕。免疫减速\"},",
+  "input_code_sha256": "e2b900caf6dcee1af417fb90932a48e0313bf8e726a5f7d4141ed8d8e332e4db",
+  "status": "approved",
+  "version": "v02",
+  "tool": "OpenAI built-in image_gen",
+  "raw_output_path": "/Users/zhangjunqiu/.codex/generated_images/01a14093-604c-72e3-b0c2-585e428c4824/exec-338b7001-7725-4a56-a194-c9d119b3f9a8.png",
+  "original": "originals/skadi_winter_awaken_v02.png",
+  "original_sha256": "0085df3f94e1e9ff21c3e98bcce701cda4217c851aa3f2f25a01c98d7fab6647",
+  "commercial_basis": "https://openai.com/policies/terms-of-use/",
+  "review": {
+    "visual_review": "大型暴雪风眼区别于普通寒冬，双手胸前、弓置肩后无裁切；外围冰晶是暴雪纹理可出血，主脸和手安全，缩略和文字遮罩通过。",
+    "checks": [
+      "source anatomy/weapon/animal",
+      "260 thumbnail",
+      "bottom45 mask",
+      "primary safe area",
+      "reference identity"
+    ]
+  }
+}

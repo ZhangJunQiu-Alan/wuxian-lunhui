@@ -1,0 +1,43 @@
+{
+  "id": "fusion_andvari",
+  "task": "L2",
+  "gods": [
+    "loki",
+    "ran"
+  ],
+  "variant": "fusion",
+  "root": "assets/source/taskL2_fusions_2026-10-20",
+  "target": "assets/sprites/cards/fusion_andvari.png",
+  "references": [
+    {
+      "actual_input": "assets/sprites/cards/loki.png",
+      "archive": "references/loki.png",
+      "sha256": "dbae4dd1d0d3c103b3c0fd2f5f1d668a9a71248a7d13f14832a1530e27431314"
+    },
+    {
+      "actual_input": "assets/sprites/cards/ran.png",
+      "archive": "references/ran.png",
+      "sha256": "7c1cd8ad824d24219c95a76e5bb1f62546c274674ae7315c6c940690cb446a0e"
+    }
+  ],
+  "prompt": "Use case: illustration-story. Asset type: ONE premium game upgrade CARD ILLUSTRATION, portrait 3:5, intended final 720x1200 RGB. Style: richly textured restrained northern myth oil painting / painterly impasto, realistic faces and materials, same collection as attached original portraits, NOT pixel art, NOT anime, no glossy 3D. This is a living myth inside an ancient archive; do not add computers, museums or science-fiction. CRITICAL composition: heads and every key spell, weapon, animal or gesture entirely within upper55% of image; faces around y15-25%, upper bodies around y25-50%; bottom40% deep blue-black simple cloak/shadow fading into quiet negative space for game text. Left/right40px safe margins at final size: no face/important weapon/animal touches side edges. Show a single composed cinematic scene, not a multi-panel sheet. No borders, card frame, letters, readable runes, logos, watermark, interface or typography. Natural anatomy, clearly separated hands, structurally sound weapons, restrained bloom; faces legible at260px wide. Preserve identity, age, hair, facial features, costume materials and painterly style from references; pose and scenario change for THIS specific upgrade.\nSubject A identity: the same lean clean-shaven auburn-haired man, sharp intelligent face, dark fur-trimmed leather clothing, orange trickster fire; no horned crown.\nSubject B identity: the same pale dark-haired mature sea woman, wet flowing hair, dark teal sea-cloak, rope net and antique gold ornaments, storm-blue water.\nSpecific shared spell scene: The wet dark-haired sea woman holds a weighted woven net while the auburn-haired man lights its captured antique GOLD coins with controlled orange fire; blue water, orange flame and gold in one cohesive composition; net not fused into fingers.\nTwo adult figures, equal scale, heads fully inside upper45%, no third main human, lighting links the pair into one coherent painting. Preserve the two separate identities, never merge facial features.\nKeep ALL important anatomy, weapon heads/tips and animal faces within CENTRAL80% of canvas (x10%..90%), not merely inside the outer edge. Leave side columns as background or unimportant cloak only. Place all hands/gesture and spell motifs above y52%; nothing bright or complex below y60%.\nMake the shared magical motif SMALL, between both faces and upper chests, entirely x25%..75%, y25%..45%. Both faces inside central70%, hands naturally held near chests, no limb pointing at any side edge. Bottom45% quiet deep blue-black cloak and shadow. Omit unrelated weapons and animals from the portrait references.",
+  "current_gameplay_source_line": "\"andvari\": {\"gods\": [\"loki\", \"ran\"], \"name\": \"安德瓦利\", \"desc\": \"网里的敌人被点燃；网里被烧死的敌人有几率掉落奖励点\"},",
+  "input_code_sha256": "cf8ac4eb04350527ea92fc6d7718a3882bee3bce4e278d679f66845fb808c289",
+  "status": "approved",
+  "version": "v01",
+  "tool": "OpenAI built-in image_gen",
+  "raw_output_path": "/Users/zhangjunqiu/.codex/generated_images/01a14093-604c-72e3-b0c2-585e428c4824/exec-74502ddf-e4b7-44fe-83eb-e1f9aa9b2d16.png",
+  "original": "originals/fusion_andvari_v01.png",
+  "original_sha256": "ede42642e180ead9bc985d15d6897c70f1643912c85b460872b5380a4eb86d0f",
+  "commercial_basis": "https://openai.com/policies/terms-of-use/",
+  "review": {
+    "visual_review": "渔网的绳结、古币和火光清晰，双脸与施法/握网手归属正常，蓝海橙火金色统一；缩略、遮罩、安全边通过。",
+    "checks": [
+      "source anatomy/weapon/animal",
+      "260 thumbnail",
+      "bottom45 mask",
+      "primary safe area",
+      "two identities"
+    ]
+  }
+}

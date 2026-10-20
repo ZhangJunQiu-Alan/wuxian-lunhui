@@ -1,0 +1,21 @@
+{
+  "id": "freyr_sun_awaken",
+  "raw_size": [
+    971,
+    1619
+  ],
+  "raw_mode": "RGB",
+  "output_size": [
+    720,
+    1200
+  ],
+  "mode": "RGB",
+  "operation": "centered aspect crop to3:5, Lanczos resize720x1200, RGB only; no repaint, no artificial background darkening",
+  "candidate_sha256": "f9775a8f97cccb5e4d7014f4f5132b9c2e5a328a2cb69a57f47d24fd4a478532",
+  "bottom40_luminance": {
+    "mean": 15.06,
+    "pixels_over_100_fraction": 0.0185,
+    "stddev": 21.57
+  },
+  "status": "awaiting visual QA"
+}

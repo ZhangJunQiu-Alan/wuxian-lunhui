@@ -1,0 +1,28 @@
+{
+  "id": "ran_waves_awaken",
+  "task": "L1",
+  "god": "ran",
+  "variant": "awaken",
+  "root": "assets/source/taskL1_paths_2026-10-20",
+  "target": "assets/sprites/cards/ran_waves_awaken.png",
+  "references": [
+    {
+      "actual_input": "assets/source/taskL1_paths_2026-10-20/originals/ran_waves_awaken_v01.png",
+      "archive": "references/ran_waves_awaken_v01.png",
+      "sha256": "2d7142c00fb86c16d5b1633644c6fe4a27cf034a96684bb871f120461396978c"
+    }
+  ],
+  "prompt": "Edit this existing portrait 3:5 oil painting. Keep the SAME woman, face, clothing, nine curling waves, style, palette and dark lower40%. Change ONLY her right-side casting hand: bring the entire hand and fingertips inward to x72% canvas width, naturally bend the elbow. Do not put fingers beyond x85%. Keep both hands natural five fingers and above y48%. No text.",
+  "current_gameplay_source_line": "\"ran_waves_awaken\": {\"kind\": \"awaken\", \"god\": \"ran\", \"path\": \"ran_waves\", \"name\": \"觉醒·九位浪女\", \"desc\": \"每 12 秒，九道浪从四面八方冲向你所在的位置。受到伤害时 20% 几率把攻击者拖进网里\"},",
+  "input_code_sha256": "e2b900caf6dcee1af417fb90932a48e0313bf8e726a5f7d4141ed8d8e332e4db",
+  "status": "rejected",
+  "version": "v02",
+  "tool": "OpenAI built-in image_gen",
+  "raw_output_path": "/Users/zhangjunqiu/.codex/generated_images/01a14093-604c-72e3-b0c2-585e428c4824/exec-02536146-73f4-4511-a47f-a26ff173f2dd.png",
+  "original": "originals/ran_waves_awaken_v02.png",
+  "original_sha256": "4d8bb8f6dad8743dd919da6fe28b2ab7ab8070f62baff933598877afaab94b79",
+  "commercial_basis": "https://openai.com/policies/terms-of-use/",
+  "review": {
+    "reason": "修改移动了画面左侧手，画面右侧手仍越过安全线，下一版同时收起双手。"
+  }
+}

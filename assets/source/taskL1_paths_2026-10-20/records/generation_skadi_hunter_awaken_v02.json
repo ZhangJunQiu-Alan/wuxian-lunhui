@@ -1,0 +1,35 @@
+{
+  "id": "skadi_hunter_awaken",
+  "task": "L1",
+  "god": "skadi",
+  "variant": "awaken",
+  "root": "assets/source/taskL1_paths_2026-10-20",
+  "target": "assets/sprites/cards/skadi_hunter_awaken.png",
+  "references": [
+    {
+      "actual_input": "assets/source/taskL1_paths_2026-10-20/originals/skadi_hunter_awaken_v01.png",
+      "archive": "references/skadi_hunter_awaken_v01.png",
+      "sha256": "33ca77124ac7ec477fa9e7275a8f3f566b30c7b5504efaaf425925b605bc44e4"
+    }
+  ],
+  "prompt": "Edit the attached portrait3:5 oil painting. Keep SAME silver-haired archer's face, costume, natural drawn wooden bow, straight icy arrow, three successive frozen enemy targets and oil texture. Move the THREE frozen enemies closer together and shrink them so ALL three heads and bodies fit within x58%..86%, y25%..46%. Nobody near right edge. Main arrow tip x55%, one straight blue light trail passes through all three targets then fades before x90%. Dark lower40%, no text.",
+  "current_gameplay_source_line": "\"skadi_hunter_awaken\": {\"kind\": \"awaken\", \"god\": \"skadi\", \"path\": \"skadi_hunter\", \"name\": \"觉醒·群山之女\", \"desc\": \"狙击箭贯穿整个屏幕，冻结一路上的所有敌人。免疫减速\"},",
+  "input_code_sha256": "e2b900caf6dcee1af417fb90932a48e0313bf8e726a5f7d4141ed8d8e332e4db",
+  "status": "approved",
+  "version": "v02",
+  "tool": "OpenAI built-in image_gen",
+  "raw_output_path": "/Users/zhangjunqiu/.codex/generated_images/01a14093-604c-72e3-b0c2-585e428c4824/exec-213aea6b-100d-4e59-820b-18165eb27f0f.png",
+  "original": "originals/skadi_hunter_awaken_v02.png",
+  "original_sha256": "ce173b888553384a64cad11b31c4572a07c5c76995466be963da00edeea984fa",
+  "commercial_basis": "https://openai.com/policies/terms-of-use/",
+  "review": {
+    "visual_review": "三个冻结目标头脸均内收并完整，单箭穿透轨迹贯穿三者；木弓、弦和手结构清楚，光轨可出血；缩略和遮罩通过。",
+    "checks": [
+      "source anatomy/weapon/animal",
+      "260 thumbnail",
+      "bottom45 mask",
+      "primary safe area",
+      "reference identity"
+    ]
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "skadi_snowshoes",
+  "task": "L1",
+  "god": "skadi",
+  "variant": "path",
+  "root": "assets/source/taskL1_paths_2026-10-20",
+  "target": "assets/sprites/cards/skadi_snowshoes.png",
+  "references": [
+    {
+      "actual_input": "assets/source/taskL1_paths_2026-10-20/originals/skadi_snowshoes_v01.png",
+      "archive": "references/skadi_snowshoes_v01.png",
+      "sha256": "542a61560b59ab2dc945e206ada70e6b4e362b768f8f7a1c58b37dc7d9331418"
+    }
+  ],
+  "prompt": "Edit this existing oil painting. Keep the SAME silver-haired huntress, face, fur and feeling of movement. Show EXACTLY TWO oval wooden lattice snowshoes strapped behind her left shoulder, not three. Smaller bow and arrow safely inside x15%..85%, all weapon tips and both hands above y50%. Move her knee and white snow spray upward; nothing bright or detailed below y58%. Bottom40% only dark blue-black snow shadow. Portrait3:5, no text.",
+  "current_gameplay_source_line": "\"skadi_snowshoes\": {\"kind\": \"path\", \"god\": \"skadi\", \"name\": \"雪鞋\", \"desc\": \"移动时每走 150 像素自动射一支箭，跑得越多射得越多，站着不动就不射\"},",
+  "input_code_sha256": "e2b900caf6dcee1af417fb90932a48e0313bf8e726a5f7d4141ed8d8e332e4db",
+  "status": "rejected",
+  "version": "v02",
+  "tool": "OpenAI built-in image_gen",
+  "raw_output_path": "/Users/zhangjunqiu/.codex/generated_images/01a14093-604c-72e3-b0c2-585e428c4824/exec-6efbc781-ea86-4fa4-8b7d-0cf9ecdd66de.png",
+  "original": "originals/skadi_snowshoes_v02.png",
+  "original_sha256": "e4fef0ac6e13eac1deef23679d244b9644a5a9297c9217f1a1223447e96fb8a4",
+  "commercial_basis": "https://openai.com/policies/terms-of-use/",
+  "review": {
+    "reason": "两只雪鞋和下部亮度已修正，但箭尖仍越过右安全线，改为无持弓的移动姿态。"
+  }
+}

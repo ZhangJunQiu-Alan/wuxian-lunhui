@@ -1,0 +1,35 @@
+{
+  "id": "thor_cloud",
+  "task": "L1",
+  "god": "thor",
+  "variant": "path",
+  "root": "assets/source/taskL1_paths_2026-10-20",
+  "target": "assets/sprites/cards/thor_cloud.png",
+  "references": [
+    {
+      "actual_input": "assets/source/taskL1_paths_2026-10-20/originals/thor_cloud_v01.png",
+      "archive": "references/thor_cloud_v01.png",
+      "sha256": "820251c89808500d545bd49c4a2b8d26f24fc5e21d8597723480d86b99e00f01"
+    }
+  ],
+  "prompt": "Edit this existing painting. Remove the hand-held hammer entirely, right hand relaxed near upper chest. Move left raised hand inward so all fingers safely inside frame. The THREE lightning forks and compact stormcloud remain the key motif. Keep exactly the same man, face, age, red beard, fur clothing, impasto oil style, color, lighting and 3:5 tall composition. HARD SAFE AREA: all weapon/hand/enemy essential details within x12%..88% and y5%..52%, with abundant side background. Bottom40% stays as the original quiet dark cloak, no new light or object below60%. Do not add text, borders or a new character. This is a card composition fix, not a new identity.",
+  "current_gameplay_source_line": "\"thor_cloud\": {\"kind\": \"path\", \"god\": \"thor\", \"name\": \"雷暴云\", \"desc\": \"头顶跟着一团雷云，每秒向周围劈 3 道小雷。风暴 = 每秒多劈 1 道；雷域 = 雷云更大\"},",
+  "input_code_sha256": "e2b900caf6dcee1af417fb90932a48e0313bf8e726a5f7d4141ed8d8e332e4db",
+  "status": "approved",
+  "version": "v02",
+  "tool": "OpenAI built-in image_gen",
+  "raw_output_path": "/Users/zhangjunqiu/.codex/generated_images/01a14093-604c-72e3-b0c2-585e428c4824/exec-6bdb6082-4ddb-4cec-a1ce-f7f3409cee07.png",
+  "original": "originals/thor_cloud_v02.png",
+  "original_sha256": "a8fe3eb650b80d8c9bec0e962ec7ee81703502b477b9771b0f86bed909344f31",
+  "commercial_basis": "https://openai.com/policies/terms-of-use/",
+  "review": {
+    "visual_review": "删除次要战锤使雷云道路更明确，三道雷分离；两手结构、雷云与原人脸一致，缩略和遮罩通过。",
+    "checks": [
+      "source full-size structure reviewed",
+      "260px thumbnail reviewed",
+      "bottom45% mask reviewed",
+      "identity and impasto consistency reviewed",
+      "primary motif and face inside safe area"
+    ]
+  }
+}

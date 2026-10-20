@@ -1,0 +1,21 @@
+{
+  "id": "skadi_winter_awaken",
+  "raw_size": [
+    971,
+    1619
+  ],
+  "raw_mode": "RGB",
+  "output_size": [
+    720,
+    1200
+  ],
+  "mode": "RGB",
+  "operation": "centered aspect crop to3:5, Lanczos resize720x1200, RGB only; no repaint, no artificial background darkening",
+  "candidate_sha256": "38cb81dc114184d35fa2fe3379a26caf16282cf38b49fa143b8354c0833843f8",
+  "bottom40_luminance": {
+    "mean": 21.0,
+    "pixels_over_100_fraction": 0.0232,
+    "stddev": 23.93
+  },
+  "status": "awaiting visual QA"
+}

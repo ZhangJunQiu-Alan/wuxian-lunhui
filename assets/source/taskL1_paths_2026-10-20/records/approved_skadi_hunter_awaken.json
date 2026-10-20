@@ -1,0 +1,17 @@
+{
+  "id": "skadi_hunter_awaken",
+  "selected_version": "v02",
+  "formal": "assets/sprites/cards/skadi_hunter_awaken.png",
+  "sha256": "0d641294392f3e157d156520f0a15d65c47d75658f66499aaf1a253421b377cb",
+  "review": {
+    "visual_review": "三个冻结目标头脸均内收并完整，单箭穿透轨迹贯穿三者；木弓、弦和手结构清楚，光轨可出血；缩略和遮罩通过。",
+    "checks": [
+      "source anatomy/weapon/animal",
+      "260 thumbnail",
+      "bottom45 mask",
+      "primary safe area",
+      "reference identity"
+    ]
+  },
+  "mipmaps": "offline reference chain only; Godot import mipmaps must be enabled by integration agent"
+}

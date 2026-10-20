@@ -1,0 +1,17 @@
+{
+  "id": "odin_nights_awaken",
+  "selected_version": "v01",
+  "formal": "assets/sprites/cards/odin_nights_awaken.png",
+  "sha256": "75983b8d62854b03ab3cfe63da2506f29d7aa839346448d446b745066e7a7c08",
+  "review": {
+    "visual_review": "世界树主阵和互联符文扩大，和普通阵区分；人脸、两手、中心树形结构可读，背景几何延伸，底部暗且无抢眼元素。",
+    "checks": [
+      "source structure",
+      "260px thumbnail",
+      "45% text mask",
+      "critical face/hand/motif safe",
+      "path pair consistency"
+    ]
+  },
+  "mipmaps": "offline reference chain only; Godot import mipmaps must be enabled by integration agent"
+}

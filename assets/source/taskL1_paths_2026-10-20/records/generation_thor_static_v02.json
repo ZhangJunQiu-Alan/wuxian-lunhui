@@ -1,0 +1,35 @@
+{
+  "id": "thor_static",
+  "task": "L1",
+  "god": "thor",
+  "variant": "path",
+  "root": "assets/source/taskL1_paths_2026-10-20",
+  "target": "assets/sprites/cards/thor_static.png",
+  "references": [
+    {
+      "actual_input": "assets/source/taskL1_paths_2026-10-20/originals/thor_static_v01.png",
+      "archive": "references/thor_static_v01.png",
+      "sha256": "aa9bf218509e2f7ef391b60808130f2b4558ca45debe91eaa23f6b2b52c1acc3"
+    }
+  ],
+  "prompt": "Edit this existing painting. Remove the hammer entirely. Keep only the central red-bearded warrior and THREE smaller enemy silhouettes clustered near his shoulders. All three entire enemy figures must fit inside central80% width, linked by blue electrical web. Keep exactly the same man, face, age, red beard, fur clothing, impasto oil style, color, lighting and 3:5 tall composition. HARD SAFE AREA: all weapon/hand/enemy essential details within x12%..88% and y5%..52%, with abundant side background. Bottom40% stays as the original quiet dark cloak, no new light or object below60%. Do not add text, borders or a new character. This is a card composition fix, not a new identity.",
+  "current_gameplay_source_line": "\"thor_static\": {\"kind\": \"path\", \"god\": \"thor\", \"name\": \"静电场\", \"desc\": \"落雷改为给敌人叠感电；相邻的感电敌人连成电网，每秒互相电击。雷域 = 电网连得更远\"},",
+  "input_code_sha256": "e2b900caf6dcee1af417fb90932a48e0313bf8e726a5f7d4141ed8d8e332e4db",
+  "status": "approved",
+  "version": "v02",
+  "tool": "OpenAI built-in image_gen",
+  "raw_output_path": "/Users/zhangjunqiu/.codex/generated_images/01a14093-604c-72e3-b0c2-585e428c4824/exec-3c7939b1-c0ea-4ed5-a5ee-763f6a969cca.png",
+  "original": "originals/thor_static_v02.png",
+  "original_sha256": "07cd40d45be5eb35dc58cbd116b5570384e5bdfabe42e92a4bb0c4429499dee7",
+  "commercial_basis": "https://openai.com/policies/terms-of-use/",
+  "review": {
+    "visual_review": "删除战锤后电网为唯一主形态，三处感电节点连线可辨，主角脸/手不触安全边，敌人作次级剪影，暗部遮罩通过。",
+    "checks": [
+      "source full-size structure reviewed",
+      "260px thumbnail reviewed",
+      "bottom45% mask reviewed",
+      "identity and impasto consistency reviewed",
+      "primary motif and face inside safe area"
+    ]
+  }
+}

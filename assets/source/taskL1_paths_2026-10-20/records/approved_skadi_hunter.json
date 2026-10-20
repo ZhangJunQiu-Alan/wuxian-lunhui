@@ -1,0 +1,17 @@
+{
+  "id": "skadi_hunter",
+  "selected_version": "v02",
+  "formal": "assets/sprites/cards/skadi_hunter.png",
+  "sha256": "c112533a130cb1a38cb4684666535d8b36375d8c57922327d2062c12a99edcb8",
+  "review": {
+    "visual_review": "木弓双端完整可见，直箭、弓弦、箭尾和拉弓双手关系清楚；面容沿用参考，箭尖在安全边内；缩略和遮罩通过。",
+    "checks": [
+      "source anatomy/weapon",
+      "260 thumbnail",
+      "bottom45 mask",
+      "primary safe area",
+      "reference identity"
+    ]
+  },
+  "mipmaps": "offline reference chain only; Godot import mipmaps must be enabled by integration agent"
+}

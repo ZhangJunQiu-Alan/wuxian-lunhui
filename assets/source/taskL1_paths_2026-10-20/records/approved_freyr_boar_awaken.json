@@ -1,0 +1,17 @@
+{
+  "id": "freyr_boar_awaken",
+  "selected_version": "v02",
+  "formal": "assets/sprites/cards/freyr_boar_awaken.png",
+  "sha256": "09aa19d410f7495e7cff2b92248f91778c38fd939b16749da6ccf446328b93bc",
+  "review": {
+    "visual_review": "一只领头金鬃野猪与两只后随猪形成冲锋群；猪脸不再裁切，骑手脸和枪头安全，脚和飞尘上移；缩略与文字遮罩通过。",
+    "checks": [
+      "source anatomy/weapon/animal",
+      "260 thumbnail",
+      "bottom45 mask",
+      "primary safe area",
+      "reference identity"
+    ]
+  },
+  "mipmaps": "offline reference chain only; Godot import mipmaps must be enabled by integration agent"
+}

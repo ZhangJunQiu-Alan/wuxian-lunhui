@@ -1,0 +1,43 @@
+{
+  "id": "fusion_blood_brothers",
+  "task": "L2",
+  "gods": [
+    "odin",
+    "loki"
+  ],
+  "variant": "fusion",
+  "root": "assets/source/taskL2_fusions_2026-10-20",
+  "target": "assets/sprites/cards/fusion_blood_brothers.png",
+  "references": [
+    {
+      "actual_input": "assets/sprites/cards/odin.png",
+      "archive": "references/odin.png",
+      "sha256": "423cab0736c5d60b840e7ba3d293901eba6d9f48025defc9fda56425cbf76fc2"
+    },
+    {
+      "actual_input": "assets/sprites/cards/loki.png",
+      "archive": "references/loki.png",
+      "sha256": "dbae4dd1d0d3c103b3c0fd2f5f1d668a9a71248a7d13f14832a1530e27431314"
+    }
+  ],
+  "prompt": "Use case: illustration-story. Asset type: ONE premium game upgrade CARD ILLUSTRATION, portrait 3:5, intended final 720x1200 RGB. Style: richly textured restrained northern myth oil painting / painterly impasto, realistic faces and materials, same collection as attached original portraits, NOT pixel art, NOT anime, no glossy 3D. This is a living myth inside an ancient archive; do not add computers, museums or science-fiction. CRITICAL composition: heads and every key spell, weapon, animal or gesture entirely within upper55% of image; faces around y15-25%, upper bodies around y25-50%; bottom40% deep blue-black simple cloak/shadow fading into quiet negative space for game text. Left/right40px safe margins at final size: no face/important weapon/animal touches side edges. Show a single composed cinematic scene, not a multi-panel sheet. No borders, card frame, letters, readable runes, logos, watermark, interface or typography. Natural anatomy, clearly separated hands, structurally sound weapons, restrained bloom; faces legible at260px wide. Preserve identity, age, hair, facial features, costume materials and painterly style from references; pose and scenario change for THIS specific upgrade.\nSubject A identity: the same elderly long grey-bearded one-eyed northern wanderer, broad dark hat, fur cloak, weathered face, violet magic.\nSubject B identity: the same lean clean-shaven auburn-haired man, sharp intelligent face, dark fur-trimmed leather clothing, orange trickster fire; no horned crown.\nSpecific shared spell scene: The one-eyed elder and auburn-haired man clasp right forearms in a solemn oath, their TWO anatomically clear hands and separate arms framed by violet sigil geometries threaded with orange fire, small muted red oath cord, no gore.\nTwo adult figures, equal scale, heads fully inside upper45%, no third main human, lighting links the pair into one coherent painting. Preserve the two separate identities, never merge facial features.\nKeep ALL important anatomy, weapon heads/tips and animal faces within CENTRAL80% of canvas (x10%..90%), not merely inside the outer edge. Leave side columns as background or unimportant cloak only. Place all hands/gesture and spell motifs above y52%; nothing bright or complex below y60%.\nBoth faces central and all spell motifs in upper50%. Keep hands entirely x20%..80%. Below y58% quiet dark shadow. Omit unrelated weapons/animals from references.",
+  "current_gameplay_source_line": "\"blood_brothers\": {\"gods\": [\"odin\", \"loki\"], \"name\": \"血誓兄弟\", \"desc\": \"符文命中时点燃敌人；被迷惑的敌人每秒叠 1 层符文印记\"},",
+  "input_code_sha256": "cf8ac4eb04350527ea92fc6d7718a3882bee3bce4e278d679f66845fb808c289",
+  "status": "approved",
+  "version": "v01",
+  "tool": "OpenAI built-in image_gen",
+  "raw_output_path": "/Users/zhangjunqiu/.codex/generated_images/01a14093-604c-72e3-b0c2-585e428c4824/exec-c89c4816-ed24-479e-a83f-7cc80baed593.png",
+  "original": "originals/fusion_blood_brothers_v01.png",
+  "original_sha256": "09a0a27018d3a5f68eac802fab4680762621b6d65d1f6ecf8f1b83a2a28f7512",
+  "commercial_basis": "https://openai.com/policies/terms-of-use/",
+  "review": {
+    "visual_review": "中央双手交握、双腕与各自前臂关系清楚，红誓绳与紫火连接二人，五官身份分离；缩略、遮罩、安全边通过。",
+    "checks": [
+      "source anatomy",
+      "260 thumbnail",
+      "bottom45 mask",
+      "safe area",
+      "two identities"
+    ]
+  }
+}

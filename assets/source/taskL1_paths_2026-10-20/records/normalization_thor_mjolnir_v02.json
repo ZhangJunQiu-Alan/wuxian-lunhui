@@ -1,0 +1,21 @@
+{
+  "id": "thor_mjolnir",
+  "raw_size": [
+    971,
+    1619
+  ],
+  "raw_mode": "RGB",
+  "output_size": [
+    720,
+    1200
+  ],
+  "mode": "RGB",
+  "operation": "centered aspect crop to3:5, Lanczos resize720x1200, RGB only; no repaint, no artificial background darkening",
+  "candidate_sha256": "b624bfae34fc247c87fc91cf3bdd6df6999f76aa2b62f096483231bd4125d7e2",
+  "bottom40_luminance": {
+    "mean": 17.87,
+    "pixels_over_100_fraction": 0.0,
+    "stddev": 6.28
+  },
+  "status": "awaiting visual QA"
+}

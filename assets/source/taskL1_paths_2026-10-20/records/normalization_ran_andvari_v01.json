@@ -1,0 +1,21 @@
+{
+  "id": "ran_andvari",
+  "raw_size": [
+    971,
+    1619
+  ],
+  "raw_mode": "RGB",
+  "output_size": [
+    720,
+    1200
+  ],
+  "mode": "RGB",
+  "operation": "centered aspect crop to3:5, Lanczos resize720x1200, RGB only; no repaint, no artificial background darkening",
+  "candidate_sha256": "591f4eac55aef1c10f56e364eef4e2ee9de30315498678903d558922221e4f8a",
+  "bottom40_luminance": {
+    "mean": 17.41,
+    "pixels_over_100_fraction": 0.0002,
+    "stddev": 10.62
+  },
+  "status": "normalization verified; candidate selected after separate visual review"
+}

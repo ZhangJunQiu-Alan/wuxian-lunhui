@@ -1,0 +1,17 @@
+{
+  "id": "odin_ravens_awaken",
+  "selected_version": "v01",
+  "formal": "assets/sprites/cards/odin_ravens_awaken.png",
+  "sha256": "c12e4291f4d750e955d1ce2a53594c8761c763c1c8b295b7f1e228d883df5c5e",
+  "review": {
+    "visual_review": "四鸦可数、王座/英灵身份明确，鸟头与脸/手受安全边保护；羽翼作为背景延伸，文字遮罩后保留鸟/英灵/王座关键形态。",
+    "checks": [
+      "source structure",
+      "260px thumbnail",
+      "45% text mask",
+      "critical face/hand/motif safe",
+      "path pair consistency"
+    ]
+  },
+  "mipmaps": "offline reference chain only; Godot import mipmaps must be enabled by integration agent"
+}

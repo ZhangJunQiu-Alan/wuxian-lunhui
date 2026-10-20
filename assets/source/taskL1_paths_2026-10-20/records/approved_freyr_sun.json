@@ -1,0 +1,17 @@
+{
+  "id": "freyr_sun",
+  "selected_version": "v02",
+  "formal": "assets/sprites/cards/freyr_sun.png",
+  "sha256": "d65949068116e711f5917368b443a2d4ac7277fc0d6ac6cc0068ebbf7e1fb122",
+  "review": {
+    "visual_review": "移除野猪后单把悬浮直剑与环绕金轨明确；施法手内收、五指可辨；缩略、遮罩和安全边通过。",
+    "checks": [
+      "source anatomy/weapon",
+      "260 thumbnail",
+      "bottom45 mask",
+      "primary safe area",
+      "reference identity"
+    ]
+  },
+  "mipmaps": "offline reference chain only; Godot import mipmaps must be enabled by integration agent"
+}

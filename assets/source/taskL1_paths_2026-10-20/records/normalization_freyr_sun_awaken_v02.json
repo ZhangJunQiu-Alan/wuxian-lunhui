@@ -1,0 +1,21 @@
+{
+  "id": "freyr_sun_awaken",
+  "raw_size": [
+    971,
+    1619
+  ],
+  "raw_mode": "RGB",
+  "output_size": [
+    720,
+    1200
+  ],
+  "mode": "RGB",
+  "operation": "centered aspect crop to3:5, Lanczos resize720x1200, RGB only; no repaint, no artificial background darkening",
+  "candidate_sha256": "8ff3462eb62aaf058d0750f42ddaf5559774852a698a35aa9e9e5ce9c1f0f9ed",
+  "bottom40_luminance": {
+    "mean": 15.38,
+    "pixels_over_100_fraction": 0.0188,
+    "stddev": 21.7
+  },
+  "status": "normalization verified; candidate selected after separate visual review"
+}

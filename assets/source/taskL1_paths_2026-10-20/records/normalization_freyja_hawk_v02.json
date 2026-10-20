@@ -1,0 +1,21 @@
+{
+  "id": "freyja_hawk",
+  "raw_size": [
+    972,
+    1619
+  ],
+  "raw_mode": "RGB",
+  "output_size": [
+    720,
+    1200
+  ],
+  "mode": "RGB",
+  "operation": "centered aspect crop to3:5, Lanczos resize720x1200, RGB only; no repaint, no artificial background darkening",
+  "candidate_sha256": "3ab51b66b06c125bdb2c7b530046d666d0e2dcd494a196f4bf8b618cb27873ca",
+  "bottom40_luminance": {
+    "mean": 18.45,
+    "pixels_over_100_fraction": 0.0002,
+    "stddev": 6.95
+  },
+  "status": "normalization verified; candidate selected after separate visual review"
+}

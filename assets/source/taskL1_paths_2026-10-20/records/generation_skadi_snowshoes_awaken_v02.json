@@ -1,0 +1,35 @@
+{
+  "id": "skadi_snowshoes_awaken",
+  "task": "L1",
+  "god": "skadi",
+  "variant": "awaken",
+  "root": "assets/source/taskL1_paths_2026-10-20",
+  "target": "assets/sprites/cards/skadi_snowshoes_awaken.png",
+  "references": [
+    {
+      "actual_input": "assets/source/taskL1_paths_2026-10-20/originals/skadi_snowshoes_awaken_v01.png",
+      "archive": "references/skadi_snowshoes_awaken_v01.png",
+      "sha256": "0c64b9c1f97e806950bfd52e4fa880368c1bdf5c000ad0216c8ec5da69e182b1"
+    }
+  ],
+  "prompt": "Edit this existing oil painting, SAME skiing silver-haired woman, same face, hair, natural body and gloved hands, TWO skis, snow ridge and ghosted dash afterimage, same impasto and dark lower half. Change ONLY the TWO luminous icy arrows flying toward the right: make EACH arrow half its current length, shift both inward, arrow shafts and points completely contained in x60%..82% of canvas, y21%..29%. Keep exactly two separate straight arrows with distinct arrowheads and fletching. Leave clear empty background at the right edge beyond x85%, no arrow touching edge. Do not change anything else. No text.",
+  "current_gameplay_source_line": "\"skadi_snowshoes_awaken\": {\"kind\": \"awaken\", \"god\": \"skadi\", \"path\": \"skadi_snowshoes\", \"name\": \"觉醒·滑雪猎手\", \"desc\": \"闪现后 3 秒内箭的数量翻倍。免疫减速\"},",
+  "input_code_sha256": "e2b900caf6dcee1af417fb90932a48e0313bf8e726a5f7d4141ed8d8e332e4db",
+  "status": "approved",
+  "version": "v02",
+  "tool": "OpenAI built-in image_gen",
+  "raw_output_path": "/Users/zhangjunqiu/.codex/generated_images/01a14093-604c-72e3-b0c2-585e428c4824/exec-deddd61a-e9b7-42e7-9c28-1812a087348c.png",
+  "original": "originals/skadi_snowshoes_awaken_v02.png",
+  "original_sha256": "f0c7fdf9378af75f2add7dc8675e5fecd424d2eadd3ae920ddfed415743715aa",
+  "commercial_basis": "https://openai.com/policies/terms-of-use/",
+  "review": {
+    "visual_review": "两支冰箭已缩短内收，双滑雪板与鞋底连接、屈膝冲刺姿势和残影清楚；脸、手、箭尖与雪板尖保留安全边，260及下45%遮罩后滑雪主题清楚，底40%暗简。",
+    "checks": [
+      "source anatomy/gear",
+      "260 thumbnail",
+      "bottom45 mask",
+      "primary safe area",
+      "path identity"
+    ]
+  }
+}

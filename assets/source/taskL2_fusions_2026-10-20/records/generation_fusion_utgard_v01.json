@@ -1,0 +1,36 @@
+{
+  "id": "fusion_utgard",
+  "task": "L2",
+  "gods": [
+    "thor",
+    "loki"
+  ],
+  "variant": "fusion",
+  "root": "assets/source/taskL2_fusions_2026-10-20",
+  "target": "assets/sprites/cards/fusion_utgard.png",
+  "references": [
+    {
+      "actual_input": "assets/sprites/cards/thor.png",
+      "archive": "references/thor.png",
+      "sha256": "a9e773d2fae33a9c885a320a0c64d7f58f5b63ecb0e05fab8d7cbe61e727edb6"
+    },
+    {
+      "actual_input": "assets/sprites/cards/loki.png",
+      "archive": "references/loki.png",
+      "sha256": "dbae4dd1d0d3c103b3c0fd2f5f1d668a9a71248a7d13f14832a1530e27431314"
+    }
+  ],
+  "prompt": "Use case: illustration-story. Asset type: ONE premium game upgrade CARD ILLUSTRATION, portrait 3:5, intended final 720x1200 RGB. Style: richly textured restrained northern myth oil painting / painterly impasto, realistic faces and materials, same collection as attached original portraits, NOT pixel art, NOT anime, no glossy 3D. This is a living myth inside an ancient archive; do not add computers, museums or science-fiction. CRITICAL composition: heads and every key spell, weapon, animal or gesture entirely within upper55% of image; faces around y15-25%, upper bodies around y25-50%; bottom40% deep blue-black simple cloak/shadow fading into quiet negative space for game text. Left/right40px safe margins at final size: no face/important weapon/animal touches side edges. Show a single composed cinematic scene, not a multi-panel sheet. No borders, card frame, letters, readable runes, logos, watermark, interface or typography. Natural anatomy, clearly separated hands, structurally sound weapons, restrained bloom; faces legible at260px wide. Preserve identity, age, hair, facial features, costume materials and painterly style from references; pose and scenario change for THIS specific upgrade.\nSubject A identity: the same broad muscular middle-aged red-haired, thick red-bearded northern warrior, black fur mantle, weathered leather and iron armor, blue lightning.\nSubject B identity: the same lean clean-shaven auburn-haired man, sharp intelligent face, dark fur-trimmed leather clothing, orange trickster fire; no horned crown.\nSpecific shared spell scene: Blue lightning strikes a coiling orange fire spiral and creates a vivid fire-thunder explosion between the two men at chest height, three small lightning forks within the flame area. Unified scene, faces clear.\nTwo adult figures, equal scale, heads fully inside upper45%, no third main human, lighting links the pair into one coherent painting. Preserve the two separate identities, never merge facial features.\nKeep ALL important anatomy, weapon heads/tips and animal faces within CENTRAL80% of canvas (x10%..90%), not merely inside the outer edge. Leave side columns as background or unimportant cloak only. Place all hands/gesture and spell motifs above y52%; nothing bright or complex below y60%.\nKeep both faces within x22%..78%. Every hand and weapon/symbol is small, centered between x20%..80% and above y48%. Leave a wide calm dark foreground below y55%. Do not copy extra weapons from the input portraits unless requested by this shared scene.",
+  "current_gameplay_source_line": "\"utgard\": {\"gods\": [\"thor\", \"loki\"], \"name\": \"乌特加尔德之旅\", \"desc\": \"落雷劈中灼烧的敌人时引发火雷爆炸；诡火范围内的敌人每秒被小雷击中一次\"},",
+  "input_code_sha256": "cf8ac4eb04350527ea92fc6d7718a3882bee3bce4e278d679f66845fb808c289",
+  "status": "approved",
+  "version": "v01",
+  "tool": "OpenAI built-in image_gen",
+  "raw_output_path": "/Users/zhangjunqiu/.codex/generated_images/01a14093-604c-72e3-b0c2-585e428c4824/exec-443922fb-ba16-400a-b91e-e246f678d202.png",
+  "original": "originals/fusion_utgard_v01.png",
+  "original_sha256": "3790ec00b293d87bd6dbf6d0b0dff84d2d99964c44352360692af6e7d80dda20",
+  "commercial_basis": "https://openai.com/policies/terms-of-use/",
+  "review": {
+    "visual_review": "红须与红棕发两人身份分明，三只施法手各自归属正常，中央橙火与蓝雷交织，无拼贴；缩略、遮罩、关键安全边通过。"
+  }
+}

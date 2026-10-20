@@ -1,0 +1,17 @@
+{
+  "id": "thor_mjolnir",
+  "selected_version": "v03",
+  "formal": "assets/sprites/cards/thor_mjolnir.png",
+  "sha256": "e50ba1dd9ec448995dd529b239acb904b56aad6813ecec770206f7ec2895f395",
+  "review": {
+    "visual_review": "锤头向内回收后完整可读，单锤短柄和回旋轨迹；五指/脸部/头发一致，暗部与遮罩通过。",
+    "checks": [
+      "source full-size structure reviewed",
+      "260px thumbnail reviewed",
+      "bottom45% mask reviewed",
+      "identity and impasto consistency reviewed",
+      "primary motif and face inside safe area"
+    ]
+  },
+  "mipmaps": "offline reference chain only; Godot import mipmaps must be enabled by integration agent"
+}

@@ -1,0 +1,17 @@
+{
+  "id": "loki_wolf",
+  "selected_version": "v02",
+  "formal": "assets/sprites/cards/loki_wolf.png",
+  "sha256": "544b313480f3e16bd08c5ded4f50056fce967522a724fb76e8336a370d3eb1ce",
+  "review": {
+    "visual_review": "幼狼缩为完整幼体，四肢/短吻/尾与男人分开，和巨狼升级有尺度余地；原脸与五指保留，文字遮罩后狼主体可见。",
+    "checks": [
+      "full-size anatomy and identity",
+      "260px thumbnail",
+      "45% mask",
+      "critical motif safe area",
+      "paired mechanic distinction"
+    ]
+  },
+  "mipmaps": "offline reference chain only; Godot import mipmaps must be enabled by integration agent"
+}

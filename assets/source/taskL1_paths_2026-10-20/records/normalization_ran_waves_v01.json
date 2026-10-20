@@ -1,0 +1,21 @@
+{
+  "id": "ran_waves",
+  "raw_size": [
+    971,
+    1619
+  ],
+  "raw_mode": "RGB",
+  "output_size": [
+    720,
+    1200
+  ],
+  "mode": "RGB",
+  "operation": "centered aspect crop to3:5, Lanczos resize720x1200, RGB only; no repaint, no artificial background darkening",
+  "candidate_sha256": "f49323eeff3fae86f7eea7da65c644dc3de58bcfa1352ee6249ec760817cbb5e",
+  "bottom40_luminance": {
+    "mean": 23.82,
+    "pixels_over_100_fraction": 0.0092,
+    "stddev": 16.92
+  },
+  "status": "normalization verified; candidate selected after separate visual review"
+}

@@ -1,0 +1,45 @@
+{
+  "id": "loki_shifter_awaken",
+  "task": "L1",
+  "god": "loki",
+  "variant": "awaken",
+  "root": "assets/source/taskL1_paths_2026-10-20",
+  "target": "assets/sprites/cards/loki_shifter_awaken.png",
+  "references": [
+    {
+      "actual_input": "assets/sprites/cards/loki_shifter.png",
+      "archive": "references/loki_shifter.png",
+      "sha256": "1d16fec1058a0f5837677df4cd46f6ea3a7c2ada35062a51962f73f35cb024f2"
+    },
+    {
+      "actual_input": "assets/sprites/cards/loki.png",
+      "archive": "references/loki.png",
+      "sha256": "dbae4dd1d0d3c103b3c0fd2f5f1d668a9a71248a7d13f14832a1530e27431314"
+    },
+    {
+      "actual_input": "assets/sprites/cards/loki_awaken.png",
+      "archive": "references/loki_awaken.png",
+      "sha256": "9a432bcca7692ff9f8dfec4227b0220b8a7bd05a7a2e9ab45fa36d3cd67d2261"
+    }
+  ],
+  "prompt": "Use case: illustration-story. Asset type: ONE premium game upgrade CARD ILLUSTRATION, portrait 3:5, intended final 720x1200 RGB. Style: richly textured restrained northern myth oil painting / painterly impasto, realistic faces and materials, same collection as attached original portraits, NOT pixel art, NOT anime, no glossy 3D. This is a living myth inside an ancient archive; do not add computers, museums or science-fiction. CRITICAL composition: heads and every key spell, weapon, animal or gesture entirely within upper55% of image; faces around y15-25%, upper bodies around y25-50%; bottom40% deep blue-black simple cloak/shadow fading into quiet negative space for game text. Left/right40px safe margins at final size: no face/important weapon/animal touches side edges. Show a single composed cinematic scene, not a multi-panel sheet. No borders, card frame, letters, readable runes, logos, watermark, interface or typography. Natural anatomy, clearly separated hands, structurally sound weapons, restrained bloom; faces legible at260px wide. Preserve identity, age, hair, facial features, costume materials and painterly style from references; pose and scenario change for THIS specific upgrade.\nSubject identity: the same lean clean-shaven auburn-haired man, sharp intelligent face, dark fur-trimmed leather clothing, orange trickster fire; no horned crown.\nSpecific upgrade scene: The solid original man centered with THREE translucent flame doubles staggered behind him, each same face and outfit, receding silhouettes dissolving into confusing sparks; no random extra arms on main body.\nThis is the AWAKENED culmination of the companion path image, distinctly greater power and evolved scene, not a recolor, while preserving the SAME character and road motif.\nKeep ALL important anatomy, weapon heads/tips and animal faces within CENTRAL80% of canvas (x10%..90%), not merely inside the outer edge. Leave side columns as background or unimportant cloak only. Place all hands/gesture and spell motifs above y52%; nothing bright or complex below y60%.",
+  "current_gameplay_source_line": "\"loki_shifter_awaken\": {\"kind\": \"awaken\", \"god\": \"loki\", \"path\": \"loki_shifter\", \"name\": \"觉醒·千面\", \"desc\": \"同时存在 3 个分身，分身消失时迷惑周围的敌人。被迷惑的敌人死亡时爆炸\"},",
+  "input_code_sha256": "e2b900caf6dcee1af417fb90932a48e0313bf8e726a5f7d4141ed8d8e332e4db",
+  "status": "approved",
+  "version": "v01",
+  "tool": "OpenAI built-in image_gen",
+  "raw_output_path": "/Users/zhangjunqiu/.codex/generated_images/01a14093-604c-72e3-b0c2-585e428c4824/exec-c60f25d3-091a-4839-9cab-17597fea6812.png",
+  "original": "originals/loki_shifter_awaken_v01.png",
+  "original_sha256": "c99ae4371c7f97a41181de9312bf4f28fadbf3cff4e9360cff517936169567f1",
+  "commercial_basis": "https://openai.com/policies/terms-of-use/",
+  "review": {
+    "visual_review": "一个实体+三个同脸火焰分身，四张脸明确，和普通单分身区别成立；主手五指结构和文字区通过。",
+    "checks": [
+      "full-size anatomy and identity",
+      "260px thumbnail",
+      "45% mask",
+      "critical motif safe area",
+      "paired mechanic distinction"
+    ]
+  }
+}

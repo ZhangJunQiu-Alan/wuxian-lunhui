@@ -1,0 +1,21 @@
+{
+  "id": "fusion_vanir_twins",
+  "raw_size": [
+    971,
+    1619
+  ],
+  "raw_mode": "RGB",
+  "output_size": [
+    720,
+    1200
+  ],
+  "mode": "RGB",
+  "operation": "centered aspect crop to3:5, Lanczos resize720x1200, RGB only; no repaint, no artificial background darkening",
+  "candidate_sha256": "b059f3ad694b84b309142ecbff013187bf434034f9ed63f6bb71253fe2b0e456",
+  "bottom40_luminance": {
+    "mean": 17.52,
+    "pixels_over_100_fraction": 0.0001,
+    "stddev": 6.76
+  },
+  "status": "normalization verified; candidate selected after separate visual review"
+}

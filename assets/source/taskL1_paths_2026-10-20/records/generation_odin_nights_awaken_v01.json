@@ -1,0 +1,45 @@
+{
+  "id": "odin_nights_awaken",
+  "task": "L1",
+  "god": "odin",
+  "variant": "awaken",
+  "root": "assets/source/taskL1_paths_2026-10-20",
+  "target": "assets/sprites/cards/odin_nights_awaken.png",
+  "references": [
+    {
+      "actual_input": "assets/sprites/cards/odin_nights.png",
+      "archive": "references/odin_nights.png",
+      "sha256": "5e8da4dd28c2efe07c4aec2ff40f00e26fe1ee6f639d0383374685b6a701000b"
+    },
+    {
+      "actual_input": "assets/sprites/cards/odin.png",
+      "archive": "references/odin.png",
+      "sha256": "423cab0736c5d60b840e7ba3d293901eba6d9f48025defc9fda56425cbf76fc2"
+    },
+    {
+      "actual_input": "assets/sprites/cards/odin_awaken.png",
+      "archive": "references/odin_awaken.png",
+      "sha256": "92ee6a39bbca548d8bf99b75d9fa2009532008420d0107d7769a3a2e2b3a1354"
+    }
+  ],
+  "prompt": "Use case: illustration-story. Asset type: ONE premium game upgrade CARD ILLUSTRATION, portrait 3:5, intended final 720x1200 RGB. Style: richly textured restrained northern myth oil painting / painterly impasto, realistic faces and materials, same collection as attached original portraits, NOT pixel art, NOT anime, no glossy 3D. This is a living myth inside an ancient archive; do not add computers, museums or science-fiction. CRITICAL composition: heads and every key spell, weapon, animal or gesture entirely within upper55% of image; faces around y15-25%, upper bodies around y25-50%; bottom40% deep blue-black simple cloak/shadow fading into quiet negative space for game text. Left/right40px safe margins at final size: no face/important weapon/animal touches side edges. Show a single composed cinematic scene, not a multi-panel sheet. No borders, card frame, letters, readable runes, logos, watermark, interface or typography. Natural anatomy, clearly separated hands, structurally sound weapons, restrained bloom; faces legible at260px wide. Preserve identity, age, hair, facial features, costume materials and painterly style from references; pose and scenario change for THIS specific upgrade.\nSubject identity: the same elderly long grey-bearded one-eyed northern wanderer, broad dark hat, fur cloak, weathered face, violet magic.\nSpecific upgrade scene: An immense violet world-tree root/canopy forms interlinked geometric circles behind the elder; one circle flares and pulses to the others. Ancient knowledge, expanded connected fields, no readable text.\nThis is the AWAKENED culmination of the companion path image, distinctly greater power and evolved scene, not a recolor, while preserving the SAME character and road motif.\nKeep ALL important anatomy, weapon heads/tips and animal faces within CENTRAL80% of canvas (x10%..90%), not merely inside the outer edge. Leave side columns as background or unimportant cloak only. Place all hands/gesture and spell motifs above y52%; nothing bright or complex below y60%.",
+  "current_gameplay_source_line": "\"odin_nights_awaken\": {\"kind\": \"awaken\", \"god\": \"odin\", \"path\": \"odin_nights\", \"name\": \"觉醒·世界树之秘\", \"desc\": \"符文阵变大、停留更久；一处印记引爆时，所有符文阵里的敌人叠 1 层。每击杀 100 个敌人召唤一位英灵 20 秒\"},",
+  "input_code_sha256": "e2b900caf6dcee1af417fb90932a48e0313bf8e726a5f7d4141ed8d8e332e4db",
+  "status": "approved",
+  "version": "v01",
+  "tool": "OpenAI built-in image_gen",
+  "raw_output_path": "/Users/zhangjunqiu/.codex/generated_images/01a14093-604c-72e3-b0c2-585e428c4824/exec-7facf909-12a2-45b5-a8ef-debd268f07ff.png",
+  "original": "originals/odin_nights_awaken_v01.png",
+  "original_sha256": "af987d7d37c1e298875ceecffb9b4c776114be825e76192b1974943d90c09e3b",
+  "commercial_basis": "https://openai.com/policies/terms-of-use/",
+  "review": {
+    "visual_review": "世界树主阵和互联符文扩大，和普通阵区分；人脸、两手、中心树形结构可读，背景几何延伸，底部暗且无抢眼元素。",
+    "checks": [
+      "source structure",
+      "260px thumbnail",
+      "45% text mask",
+      "critical face/hand/motif safe",
+      "path pair consistency"
+    ]
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "id": "freyja_brisingamen_awaken",
+  "task": "L1",
+  "god": "freyja",
+  "variant": "awaken",
+  "root": "assets/source/taskL1_paths_2026-10-20",
+  "target": "assets/sprites/cards/freyja_brisingamen_awaken.png",
+  "references": [
+    {
+      "actual_input": "assets/sprites/cards/freyja_brisingamen.png",
+      "archive": "references/freyja_brisingamen.png",
+      "sha256": "9dd9510c05aad3dc4b5c6a20cbe549c29b1e814bef94e5ee651e7bd3d9ed8ef1"
+    },
+    {
+      "actual_input": "assets/sprites/cards/freyja.png",
+      "archive": "references/freyja.png",
+      "sha256": "43720f46be69b092a375a443c7e43d07285fd36ad7017e9397c3eb7293e09410"
+    },
+    {
+      "actual_input": "assets/sprites/cards/freyja_awaken.png",
+      "archive": "references/freyja_awaken.png",
+      "sha256": "c0e0a6fb4c24a8ffae2077caa6025a241ed9b53beedbc5f0b00cd67c3788ce98"
+    }
+  ],
+  "prompt": "Use case: illustration-story. Asset type: ONE premium game upgrade CARD ILLUSTRATION, portrait 3:5, intended final 720x1200 RGB. Style: richly textured restrained northern myth oil painting / painterly impasto, realistic faces and materials, same collection as attached original portraits, NOT pixel art, NOT anime, no glossy 3D. This is a living myth inside an ancient archive; do not add computers, museums or science-fiction. CRITICAL composition: heads and every key spell, weapon, animal or gesture entirely within upper55% of image; faces around y15-25%, upper bodies around y25-50%; bottom40% deep blue-black simple cloak/shadow fading into quiet negative space for game text. Left/right40px safe margins at final size: no face/important weapon/animal touches side edges. Show a single composed cinematic scene, not a multi-panel sheet. No borders, card frame, letters, readable runes, logos, watermark, interface or typography. Natural anatomy, clearly separated hands, structurally sound weapons, restrained bloom; faces legible at260px wide. Preserve identity, age, hair, facial features, costume materials and painterly style from references; pose and scenario change for THIS specific upgrade.\nSubject identity: the same mature blonde woman with a strong composed face, dark feather cloak, gold necklace and bronze ornaments, pale gold magic.\nSpecific upgrade scene: The same woman with ONE clearly visible golden tear below her eye and a second luminous gold tear suspended near necklace, warm healing light; restrained sorrow and renewal, no crying flood, necklace structurally intact.\nThis is the AWAKENED culmination of the companion path image, distinctly greater power and evolved scene, not a recolor, while preserving the SAME character and road motif.\nKeep ALL important anatomy, weapon heads/tips and animal faces within CENTRAL80% of canvas (x10%..90%), not merely inside the outer edge. Leave side columns as background or unimportant cloak only. Place all hands/gesture and spell motifs above y52%; nothing bright or complex below y60%.",
+  "current_gameplay_source_line": "\"freyja_brisingamen_awaken\": {\"kind\": \"awaken\", \"god\": \"freyja\", \"path\": \"freyja_brisingamen\", \"name\": \"觉醒·金泪\", \"desc\": \"受到伤害时掉下一颗金色眼泪，捡起回复 15% 生命。本局获得一次复活\"},",
+  "input_code_sha256": "e2b900caf6dcee1af417fb90932a48e0313bf8e726a5f7d4141ed8d8e332e4db",
+  "status": "approved",
+  "version": "v01",
+  "tool": "OpenAI built-in image_gen",
+  "raw_output_path": "/Users/zhangjunqiu/.codex/generated_images/01a14093-604c-72e3-b0c2-585e428c4824/exec-f0f1a301-da51-4443-abf1-6e344e22b9c0.png",
+  "original": "originals/freyja_brisingamen_awaken_v01.png",
+  "original_sha256": "6ce650238b4cdbd4a16ab8a8603f74453bdae36b80914cd036ad77bbc253d1f1",
+  "commercial_basis": "https://openai.com/policies/terms-of-use/",
+  "review": {
+    "visual_review": "金泪从眼角滴到项链上方，主手面部结构清楚，金泪/治疗意象区别光环版；次级原画像猫不遮主形。",
+    "checks": [
+      "full source anatomy/material",
+      "260px safe and text mask",
+      "identity compared",
+      "bottom40% dark",
+      "mechanic-specific primary motif"
+    ]
+  }
+}

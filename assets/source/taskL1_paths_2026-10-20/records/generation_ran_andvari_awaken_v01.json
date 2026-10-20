@@ -1,0 +1,33 @@
+{
+  "id": "ran_andvari_awaken",
+  "task": "L1",
+  "god": "ran",
+  "variant": "awaken",
+  "root": "assets/source/taskL1_paths_2026-10-20",
+  "target": "assets/sprites/cards/ran_andvari_awaken.png",
+  "references": [
+    {
+      "actual_input": "assets/sprites/cards/ran_andvari.png",
+      "archive": "references/ran_andvari.png",
+      "sha256": "591f4eac55aef1c10f56e364eef4e2ee9de30315498678903d558922221e4f8a"
+    },
+    {
+      "actual_input": "assets/sprites/cards/ran.png",
+      "archive": "references/ran.png",
+      "sha256": "7c1cd8ad824d24219c95a76e5bb1f62546c274674ae7315c6c940690cb446a0e"
+    }
+  ],
+  "prompt": "Use case: illustration-story. Asset type: ONE premium game upgrade CARD ILLUSTRATION, portrait 3:5, intended final 720x1200 RGB. Style: richly textured restrained northern myth oil painting / painterly impasto, realistic faces and materials, same collection as attached original portraits, NOT pixel art, NOT anime, no glossy 3D. This is a living myth inside an ancient archive; do not add computers, museums or science-fiction. CRITICAL composition: heads and every key spell, weapon, animal or gesture entirely within upper55% of image; faces around y15-25%, upper bodies around y25-50%; bottom40% deep blue-black simple cloak/shadow fading into quiet negative space for game text. Left/right40px safe margins at final size: no face/important weapon/animal touches side edges. Show a single composed cinematic scene, not a multi-panel sheet. No borders, card frame, letters, readable runes, logos, watermark, interface or typography. Natural anatomy, clearly separated hands, structurally sound weapons, restrained bloom; faces legible at260px wide. Preserve identity, age, hair, facial features, costume materials and painterly style from references; pose and scenario change for THIS specific upgrade.\nSubject identity: the same pale dark-haired mature sea woman, wet flowing hair, dark teal sea-cloak, rope net and antique gold ornaments, storm-blue water.\nSpecific upgrade scene: The same net becomes rich GOLD, taut between two hands with diamond-shaped woven mesh and a few antique gold coins caught in it; enlarged golden net and royal sea power, no written symbols.\nThis is the AWAKENED culmination of the companion path image, distinctly greater power and evolved scene, not a recolor, while preserving the SAME character and road motif.\nKeep ALL important anatomy, weapon heads/tips and animal faces within CENTRAL80% of canvas (x10%..90%), not merely inside the outer edge. Leave side columns as background or unimportant cloak only. Place all hands/gesture and spell motifs above y52%; nothing bright or complex below y60%.",
+  "current_gameplay_source_line": "\"ran_andvari_awaken\": {\"kind\": \"awaken\", \"god\": \"ran\", \"path\": \"ran_andvari\", \"name\": \"觉醒·安德瓦利的黄金\", \"desc\": \"网变成金网，网里的敌人受到的伤害 +50%，偶尔掉落奖励点。受到伤害时 20% 几率把攻击者拖进网里\"},",
+  "input_code_sha256": "e2b900caf6dcee1af417fb90932a48e0313bf8e726a5f7d4141ed8d8e332e4db",
+  "status": "rejected",
+  "version": "v01",
+  "tool": "OpenAI built-in image_gen",
+  "raw_output_path": "/Users/zhangjunqiu/.codex/generated_images/01a14093-604c-72e3-b0c2-585e428c4824/exec-7afeb4ce-0d96-4621-b4c3-e9993dd8cf99.png",
+  "original": "originals/ran_andvari_awaken_v01.png",
+  "original_sha256": "37ccc66a217fc07b0922c256cf2f33ae8259e4e83c18a2833b82306cacd0b25c",
+  "commercial_basis": "https://openai.com/policies/terms-of-use/",
+  "review": {
+    "reason": "黄金网与金币清楚，但右握网手靠近侧边安全区，须内收。"
+  }
+}

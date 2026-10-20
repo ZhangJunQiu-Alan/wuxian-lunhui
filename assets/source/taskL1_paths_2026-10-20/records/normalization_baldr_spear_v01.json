@@ -1,0 +1,21 @@
+{
+  "id": "baldr_spear",
+  "raw_size": [
+    971,
+    1619
+  ],
+  "raw_mode": "RGB",
+  "output_size": [
+    720,
+    1200
+  ],
+  "mode": "RGB",
+  "operation": "centered aspect crop to3:5, Lanczos resize720x1200, RGB only; no repaint, no artificial background darkening",
+  "candidate_sha256": "006c7dba452d1deba1c01b8e4ab2fbf1f7fed020fc7d6dc74ac5f50fafec58c8",
+  "bottom40_luminance": {
+    "mean": 19.22,
+    "pixels_over_100_fraction": 0.0002,
+    "stddev": 10.03
+  },
+  "status": "awaiting visual QA"
+}

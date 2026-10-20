@@ -1,0 +1,38 @@
+{
+  "id": "fusion_serpent_fishing",
+  "task": "L2",
+  "gods": [
+    "thor",
+    "ran"
+  ],
+  "variant": "fusion",
+  "root": "assets/source/taskL2_fusions_2026-10-20",
+  "target": "assets/sprites/cards/fusion_serpent_fishing.png",
+  "references": [
+    {
+      "actual_input": "assets/source/taskL2_fusions_2026-10-20/originals/fusion_serpent_fishing_v01.png",
+      "archive": "references/fusion_serpent_fishing_v01.png",
+      "sha256": "84d195b3c57946b9c29aa6e5dbe0b973ac447b23a30b7c0a4e0f1ac077128af1"
+    }
+  ],
+  "prompt": "Edit the attached portrait3:5 northern oil painting. Keep BOTH same faces and upper bodies: SAME red-bearded warrior, SAME dark-haired sea woman, same fur and net ornaments, same two natural net-gripping hands. Change ONLY the scene under their hands: shrink the coiled sea serpent, captured rope net and cresting sea wave to 65% current size and move the whole group UPWARD. One clear serpent head, wide natural jaw and coiling body with readable woven net draped over it; blue lightning passes through wet net. Entire serpent, net and white crest must fit compactly between x25%..75%, y27%..49%, no coils or white surf below y52%. Adjust rope endpoints naturally to the existing hands. From y55% to bottom only quiet deep blue-black shadow and mist, NO bright sea foam, NO detailed net, NO scales. Preserve painterly texture and identity, no text, no new objects.",
+  "current_gameplay_source_line": "\"serpent_fishing\": {\"gods\": [\"thor\", \"ran\"], \"name\": \"钓巨蛇\", \"desc\": \"落雷劈中溺水的敌人时，所有溺水的敌人一起挨雷\"},",
+  "input_code_sha256": "cf8ac4eb04350527ea92fc6d7718a3882bee3bce4e278d679f66845fb808c289",
+  "status": "approved",
+  "version": "v02",
+  "tool": "OpenAI built-in image_gen",
+  "raw_output_path": "/Users/zhangjunqiu/.codex/generated_images/01a14093-604c-72e3-b0c2-585e428c4824/exec-5d279538-7519-4501-81c1-716ae2b5ef4d.png",
+  "original": "originals/fusion_serpent_fishing_v02.png",
+  "original_sha256": "42ecf4b06ba34dee2de9d3cad3159b7b24b61bcc4c4ef053313e4c5e60dbec4f",
+  "commercial_basis": "https://openai.com/policies/terms-of-use/",
+  "review": {
+    "visual_review": "蛇盘与浪花已缩小上移，蛇头/口腔/鳞片和盖在其上的网结构可辨，雷电沿网通过；双人脸和握网手保持参考。缩略、下45%遮罩后钓蛇主题保留，底40%暗蓝简单，关键脸/手/蛇头在安全边内。",
+    "checks": [
+      "source anatomy/net/serpent",
+      "260 thumbnail",
+      "bottom45 mask",
+      "primary safe area",
+      "two identities"
+    ]
+  }
+}

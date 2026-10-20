@@ -1,0 +1,17 @@
+{
+  "id": "fusion_venom",
+  "selected_version": "v01",
+  "formal": "assets/sprites/cards/fusion_venom.png",
+  "sha256": "3fb2afbb2d90760f1d136b5c478b56d9819d4a38e78cf3084241bde4ff724475",
+  "review": {
+    "visual_review": "单头蛇、鳞片、双突出毒牙与一滴绿色毒液清楚；蓝霜橙火与两位主角统一，手部结构和安全边正常；缩略与遮罩通过。",
+    "checks": [
+      "source anatomy/weapon/animal",
+      "260 thumbnail",
+      "bottom45 mask",
+      "primary safe area",
+      "two identities"
+    ]
+  },
+  "mipmaps": "offline reference chain only; Godot import mipmaps must be enabled by integration agent"
+}

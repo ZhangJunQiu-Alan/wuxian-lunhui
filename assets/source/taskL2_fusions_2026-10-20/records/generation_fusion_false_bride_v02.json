@@ -1,0 +1,38 @@
+{
+  "id": "fusion_false_bride",
+  "task": "L2",
+  "gods": [
+    "thor",
+    "freyja"
+  ],
+  "variant": "fusion",
+  "root": "assets/source/taskL2_fusions_2026-10-20",
+  "target": "assets/sprites/cards/fusion_false_bride.png",
+  "references": [
+    {
+      "actual_input": "assets/source/taskL2_fusions_2026-10-20/originals/fusion_false_bride_v01.png",
+      "archive": "references/fusion_false_bride_v01.png",
+      "sha256": "a26c02713af95b395efd80f09534773708fede29ec41bd269fa2078cf3f52604"
+    }
+  ],
+  "prompt": "Edit this existing portrait oil painting. Keep BOTH same faces, man with red beard, blonde woman, same armor, feather cloak, short hammer and huge blue lightning behind. Change ONLY the woman's cloak-holding hand at far RIGHT EDGE: move the hand and raised feather-cloak corner inward to x78% canvas width and y20%, with elbow naturally bent. All five curled fingers naturally grip the cloth and remain inside x85%; rightmost15% contains background feathers only, no hand. Show a faint translucent shimmer at cloak edge implying concealment. Lower40% stays dark simple. No text.",
+  "current_gameplay_source_line": "\"false_bride\": {\"gods\": [\"thor\", \"freyja\"], \"name\": \"假新娘\", \"desc\": \"闪现后隐身 2 秒，敌人跟丢你；隐身结束时在身边降下一道巨雷\"},",
+  "input_code_sha256": "cf8ac4eb04350527ea92fc6d7718a3882bee3bce4e278d679f66845fb808c289",
+  "status": "approved",
+  "version": "v02",
+  "tool": "OpenAI built-in image_gen",
+  "raw_output_path": "/Users/zhangjunqiu/.codex/generated_images/01a14093-604c-72e3-b0c2-585e428c4824/exec-72dc4156-ff44-482d-a2bf-47a4713bf8a8.png",
+  "original": "originals/fusion_false_bride_v02.png",
+  "original_sha256": "4747acfd472c26d4f5ade238d3c3194e35c3bc67d7867d24c19c6fe789fb8a75",
+  "commercial_basis": "https://openai.com/policies/terms-of-use/",
+  "review": {
+    "visual_review": "女子握披风手已内收，羽披风覆盖双人、金色透明边与巨蓝雷形成统一情境；双脸、握锤与披风手结构清楚。缩略、遮罩与安全边通过。",
+    "checks": [
+      "source anatomy",
+      "260 thumbnail",
+      "bottom45 mask",
+      "safe area",
+      "two identities"
+    ]
+  }
+}

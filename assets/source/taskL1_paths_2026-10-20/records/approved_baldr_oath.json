@@ -1,0 +1,17 @@
+{
+  "id": "baldr_oath",
+  "selected_version": "v01",
+  "formal": "assets/sprites/cards/baldr_oath.png",
+  "sha256": "3acc1f3509cdfeff5ed83e88c2bd2d1b2668d49955038ad9887df5a331971680",
+  "review": {
+    "visual_review": "三层誓言盾围护，面部两手/护盾层次可读，和光矛/旋转柱区别明显；原白金服装与年轻脸保持。",
+    "checks": [
+      "full source anatomy/material",
+      "260px safe and text mask",
+      "identity compared",
+      "bottom40% dark",
+      "mechanic-specific primary motif"
+    ]
+  },
+  "mipmaps": "offline reference chain only; Godot import mipmaps must be enabled by integration agent"
+}

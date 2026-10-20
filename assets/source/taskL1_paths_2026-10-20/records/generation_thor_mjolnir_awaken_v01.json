@@ -1,0 +1,38 @@
+{
+  "id": "thor_mjolnir_awaken",
+  "task": "L1",
+  "god": "thor",
+  "variant": "awaken",
+  "root": "assets/source/taskL1_paths_2026-10-20",
+  "target": "assets/sprites/cards/thor_mjolnir_awaken.png",
+  "references": [
+    {
+      "actual_input": "assets/sprites/cards/thor_awaken.png",
+      "archive": "references/thor_awaken.png",
+      "sha256": "aa1e6bf48cc11194b87848a9162a3ca78dbcaa56b0ff8cce85609a9b313ad33f"
+    },
+    {
+      "actual_input": "assets/sprites/cards/thor_mjolnir.png",
+      "archive": "references/thor_mjolnir.png",
+      "sha256": "e50ba1dd9ec448995dd529b239acb904b56aad6813ecec770206f7ec2895f395"
+    },
+    {
+      "actual_input": "assets/sprites/cards/thor.png",
+      "archive": "references/thor.png",
+      "sha256": "a9e773d2fae33a9c885a320a0c64d7f58f5b63ecb0e05fab8d7cbe61e727edb6"
+    }
+  ],
+  "prompt": "Use case: illustration-story. Asset type: ONE premium game upgrade CARD ILLUSTRATION, portrait 3:5, intended final 720x1200 RGB. Style: richly textured restrained northern myth oil painting / painterly impasto, realistic faces and materials, same collection as attached original portraits, NOT pixel art, NOT anime, no glossy 3D. This is a living myth inside an ancient archive; do not add computers, museums or science-fiction. CRITICAL composition: heads and every key spell, weapon, animal or gesture entirely within upper55% of image; faces around y15-25%, upper bodies around y25-50%; bottom40% deep blue-black simple cloak/shadow fading into quiet negative space for game text. Left/right40px safe margins at final size: no face/important weapon/animal touches side edges. Show a single composed cinematic scene, not a multi-panel sheet. No borders, card frame, letters, readable runes, logos, watermark, interface or typography. Natural anatomy, clearly separated hands, structurally sound weapons, restrained bloom; faces legible at260px wide. Preserve identity, age, hair, facial features, costume materials and painterly style from references; pose and scenario change for THIS specific upgrade.\nSubject identity: the same broad muscular middle-aged red-haired, thick red-bearded northern warrior, black fur mantle, weathered leather and iron armor, blue lightning.\nSpecific upgrade scene: Three returning war hammers converge around the warrior at the moment of return; a concentrated blue thunderburst at his upper chest height, three coherent hammer shapes, wider godlike power.\nThis is the AWAKENED culmination of the companion path image, distinctly greater power and evolved scene, not a recolor, while preserving the SAME character and road motif.\nKeep ALL important anatomy, weapon heads/tips and animal faces within CENTRAL80% of canvas (x10%..90%), not merely inside the outer edge. Leave side columns as background or unimportant cloak only. Place all hands/gesture and spell motifs above y52%; nothing bright or complex below y60%.",
+  "current_gameplay_source_line": "\"thor_mjolnir_awaken\": {\"kind\": \"awaken\", \"god\": \"thor\", \"path\": \"thor_mjolnir\", \"name\": \"觉醒·妙尔尼尔归来\", \"desc\": \"多掷 2 把战锤；战锤飞回手里的瞬间在身边引发大雷爆。受到攻击时 30% 几率反劈一道雷\"},",
+  "input_code_sha256": "e2b900caf6dcee1af417fb90932a48e0313bf8e726a5f7d4141ed8d8e332e4db",
+  "status": "rejected",
+  "version": "v01",
+  "tool": "OpenAI built-in image_gen",
+  "raw_output_path": "/Users/zhangjunqiu/.codex/generated_images/01a14093-604c-72e3-b0c2-585e428c4824/exec-8fd43bd9-203d-41e8-94f6-d23059c043bc.png",
+  "original": "originals/thor_mjolnir_awaken_v01.png",
+  "original_sha256": "3d0cc14cbc81ec6bcd841e6a6892bf66143dce9dd2f75be93428cda5ca3b19f1",
+  "commercial_basis": "https://openai.com/policies/terms-of-use/",
+  "review": {
+    "reason": "觉醒画面主要形态已有，但侧边武器/手或节点过近；静电图被基础觉醒参考带入无关战锤/山羊，退回收紧并消除跨道路形态。"
+  }
+}

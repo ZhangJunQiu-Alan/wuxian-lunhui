@@ -1,0 +1,17 @@
+{
+  "id": "skadi_snowshoes",
+  "selected_version": "v03",
+  "formal": "assets/sprites/cards/skadi_snowshoes.png",
+  "sha256": "d0b0572eb5082419b26aed7765005e205623630f9e432c4bc4fb99dcc970c80d",
+  "review": {
+    "visual_review": "恰好两只完整网格雪鞋，双手握背带结构清楚；移动姿态和一枚飞行冰箭区分猎手，箭头在安全区，飞行轨迹允许左侧出血。缩略、遮罩通过。",
+    "checks": [
+      "source anatomy",
+      "260 thumbnail",
+      "bottom45 mask",
+      "primary safe area",
+      "reference identity"
+    ]
+  },
+  "mipmaps": "offline reference chain only; Godot import mipmaps must be enabled by integration agent"
+}

@@ -1,0 +1,28 @@
+{
+  "id": "freyr_field",
+  "task": "L1",
+  "god": "freyr",
+  "variant": "path",
+  "root": "assets/source/taskL1_paths_2026-10-20",
+  "target": "assets/sprites/cards/freyr_field.png",
+  "references": [
+    {
+      "actual_input": "assets/sprites/cards/freyr.png",
+      "archive": "references/freyr.png",
+      "sha256": "41d177886430c6b5fb72bcbcd17ee79907f54cec9f02cda087f892cb5bc7fa49"
+    }
+  ],
+  "prompt": "Use case: illustration-story. Asset type: ONE premium game upgrade CARD ILLUSTRATION, portrait 3:5, intended final 720x1200 RGB. Style: richly textured restrained northern myth oil painting / painterly impasto, realistic faces and materials, same collection as attached original portraits, NOT pixel art, NOT anime, no glossy 3D. This is a living myth inside an ancient archive; do not add computers, museums or science-fiction. CRITICAL composition: heads and every key spell, weapon, animal or gesture entirely within upper55% of image; faces around y15-25%, upper bodies around y25-50%; bottom40% deep blue-black simple cloak/shadow fading into quiet negative space for game text. Left/right40px safe margins at final size: no face/important weapon/animal touches side edges. Show a single composed cinematic scene, not a multi-panel sheet. No borders, card frame, letters, readable runes, logos, watermark, interface or typography. Natural anatomy, clearly separated hands, structurally sound weapons, restrained bloom; faces legible at260px wide. Preserve identity, age, hair, facial features, costume materials and painterly style from references; pose and scenario change for THIS specific upgrade.\nSubject identity: the same golden-haired bearded mature man, green and gold clothing under a dark fur mantle, bronze leaf ornaments, warm harvest sunlight.\nSpecific upgrade scene: The man rests one hand above a straight sword planted into earth at upper-mid height; a small patch of golden WHEAT grows around the blade, gentle green healing light, dark below.\nThis is a DISTINCT PATH illustration. Show this road motif clearly, not the generic base portrait again.\nKeep ALL important anatomy, weapon heads/tips and animal faces within CENTRAL80% of canvas (x10%..90%), not merely inside the outer edge. Leave side columns as background or unimportant cloak only. Place all hands/gesture and spell motifs above y52%; nothing bright or complex below y60%.",
+  "current_gameplay_source_line": "\"freyr_field\": {\"kind\": \"path\", \"god\": \"freyr\", \"name\": \"丰收之地\", \"desc\": \"飞剑每砍 10 下，插进地里长出一片麦田 8 秒：站在里面回复生命，敌人减速\"},",
+  "input_code_sha256": "e2b900caf6dcee1af417fb90932a48e0313bf8e726a5f7d4141ed8d8e332e4db",
+  "status": "rejected",
+  "version": "v01",
+  "tool": "OpenAI built-in image_gen",
+  "raw_output_path": "/Users/zhangjunqiu/.codex/generated_images/01a14093-604c-72e3-b0c2-585e428c4824/exec-b5ba3db4-1cd1-48a5-a166-f9287a350b91.png",
+  "original": "originals/freyr_field_v01.png",
+  "original_sha256": "194f1d2455e130dc2cd1a6d47a74f2602b55f14a72798299d67d816bc287376b",
+  "commercial_basis": "https://openai.com/policies/terms-of-use/",
+  "review": {
+    "reason": "混入参考野猪，麦田与落地剑偏低，去掉野猪并上移田地。"
+  }
+}

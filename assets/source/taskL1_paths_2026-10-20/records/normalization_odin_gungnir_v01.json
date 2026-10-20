@@ -1,0 +1,21 @@
+{
+  "id": "odin_gungnir",
+  "raw_size": [
+    971,
+    1619
+  ],
+  "raw_mode": "RGB",
+  "output_size": [
+    720,
+    1200
+  ],
+  "mode": "RGB",
+  "operation": "centered aspect crop to3:5, Lanczos resize720x1200, RGB only; no repaint, no artificial background darkening",
+  "candidate_sha256": "a3345d9b6e4a514feb95bc3a63f59e45f84acbb13dbac46c77cf460d84c92e9d",
+  "bottom40_luminance": {
+    "mean": 20.54,
+    "pixels_over_100_fraction": 0.0043,
+    "stddev": 12.26
+  },
+  "status": "normalization verified; candidate selected after separate visual review"
+}

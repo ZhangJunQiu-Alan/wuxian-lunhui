@@ -1,0 +1,16 @@
+{
+  "id": "odin_ravens",
+  "selected_version": "v01",
+  "formal": "assets/sprites/cards/odin_ravens.png",
+  "sha256": "b1f4c1ea9c41f596e226cad73093275178cae8866261b6b8e95b9f627953f530",
+  "review": {
+    "visual_review": "两只黑鸦头喙、翅膀/爪结构可辨，一只俯冲符文目标；脸、手、鸟头均可读，翼尖在背景出画；缩略/遮罩后道路主体保留。",
+    "checks": [
+      "full source structure reviewed",
+      "260px safe and masked previews reviewed",
+      "base identity/style compared",
+      "critical recognition features within safe region; background extends to bleed"
+    ]
+  },
+  "mipmaps": "offline reference chain only; Godot import mipmaps must be enabled by integration agent"
+}

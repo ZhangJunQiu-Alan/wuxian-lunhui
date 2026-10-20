@@ -1,0 +1,17 @@
+{
+  "id": "baldr_oath_awaken",
+  "selected_version": "v02",
+  "formal": "assets/sprites/cards/baldr_oath_awaken.png",
+  "sha256": "d339d4b886fc9d0e16055bf42a3be9d3439156207bf63f268cc59d4025e0326d",
+  "review": {
+    "visual_review": "双掌内收且各五指清楚，完整保护壳和受阻碎块区别普通三盾；脸部与金白材质保持，暗部遮罩通过。",
+    "checks": [
+      "source anatomy/animal/gear",
+      "260px thumbnail",
+      "45% mask",
+      "primary safe composition",
+      "identity compared"
+    ]
+  },
+  "mipmaps": "offline reference chain only; Godot import mipmaps must be enabled by integration agent"
+}

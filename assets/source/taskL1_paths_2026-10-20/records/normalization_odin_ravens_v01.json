@@ -1,0 +1,21 @@
+{
+  "id": "odin_ravens",
+  "raw_size": [
+    971,
+    1619
+  ],
+  "raw_mode": "RGB",
+  "output_size": [
+    720,
+    1200
+  ],
+  "mode": "RGB",
+  "operation": "centered aspect crop to3:5, Lanczos resize720x1200, RGB only; no repaint, no artificial background darkening",
+  "candidate_sha256": "b1f4c1ea9c41f596e226cad73093275178cae8866261b6b8e95b9f627953f530",
+  "bottom40_luminance": {
+    "mean": 16.56,
+    "pixels_over_100_fraction": 0.0,
+    "stddev": 5.63
+  },
+  "status": "normalization verified; candidate selected after separate visual review"
+}

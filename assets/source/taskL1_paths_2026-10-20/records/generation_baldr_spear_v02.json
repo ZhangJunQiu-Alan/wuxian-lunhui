@@ -1,0 +1,35 @@
+{
+  "id": "baldr_spear",
+  "task": "L1",
+  "god": "baldr",
+  "variant": "path",
+  "root": "assets/source/taskL1_paths_2026-10-20",
+  "target": "assets/sprites/cards/baldr_spear.png",
+  "references": [
+    {
+      "actual_input": "assets/source/taskL1_paths_2026-10-20/originals/baldr_spear_v01.png",
+      "archive": "references/baldr_spear_v01.png",
+      "sha256": "8d4b603abb06373e03287b40f9635da3b4a2e2a1e70be3dd1fe99f517ecb6646"
+    }
+  ],
+  "prompt": "Precise composition edit of this existing oil painting. Shorten the COMPLETE light-spear20% and move it15% canvas width LEFT. Both spear tip and butt must be fully inside x12%..88%; keep one straight coherent shaft and two gripping hands at upper chest. No cropped spear ends. Preserve exact young pale-blond male face, white-gold clothing, cream fur and painterly texture. All key motifs above55%; deep quiet dark bottom40%; no text, frame, extra limbs or new character.",
+  "current_gameplay_source_line": "\"baldr_spear\": {\"kind\": \"path\", \"god\": \"baldr\", \"name\": \"光明之矛\", \"desc\": \"光束收成一支光矛，飞过整个屏幕，伤害 ×2.5，间隔 ×1.5。棱光 = 多掷一支\"},",
+  "input_code_sha256": "e2b900caf6dcee1af417fb90932a48e0313bf8e726a5f7d4141ed8d8e332e4db",
+  "status": "approved",
+  "version": "v02",
+  "tool": "OpenAI built-in image_gen",
+  "raw_output_path": "/Users/zhangjunqiu/.codex/generated_images/01a14093-604c-72e3-b0c2-585e428c4824/exec-4a32cfdc-09ad-4f65-9a3b-badfe971635e.png",
+  "original": "originals/baldr_spear_v02.png",
+  "original_sha256": "684e52e58a18676611fab85034edd3735b5d25fc819f8b71601f4da0bd9683dd",
+  "commercial_basis": "https://openai.com/policies/terms-of-use/",
+  "review": {
+    "visual_review": "整根光矛缩小内移后双端可见且安全，双手握持/直杆结构连贯；原脸与白金材质保持。",
+    "checks": [
+      "source anatomy/weapon",
+      "260px",
+      "45% mask",
+      "primary safe area",
+      "path identity"
+    ]
+  }
+}

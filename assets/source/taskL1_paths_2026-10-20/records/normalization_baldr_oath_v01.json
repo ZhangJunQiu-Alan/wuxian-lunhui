@@ -1,0 +1,21 @@
+{
+  "id": "baldr_oath",
+  "raw_size": [
+    971,
+    1619
+  ],
+  "raw_mode": "RGB",
+  "output_size": [
+    720,
+    1200
+  ],
+  "mode": "RGB",
+  "operation": "centered aspect crop to3:5, Lanczos resize720x1200, RGB only; no repaint, no artificial background darkening",
+  "candidate_sha256": "3acc1f3509cdfeff5ed83e88c2bd2d1b2668d49955038ad9887df5a331971680",
+  "bottom40_luminance": {
+    "mean": 19.53,
+    "pixels_over_100_fraction": 0.0021,
+    "stddev": 12.15
+  },
+  "status": "normalization verified; candidate selected after separate visual review"
+}

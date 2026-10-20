@@ -1,0 +1,21 @@
+{
+  "id": "fusion_andvari",
+  "raw_size": [
+    971,
+    1619
+  ],
+  "raw_mode": "RGB",
+  "output_size": [
+    720,
+    1200
+  ],
+  "mode": "RGB",
+  "operation": "centered aspect crop to3:5, Lanczos resize720x1200, RGB only; no repaint, no artificial background darkening",
+  "candidate_sha256": "a145a67fe92412487d61a0d14a74e796f81472ddb7d6f5f56f550de948256537",
+  "bottom40_luminance": {
+    "mean": 11.55,
+    "pixels_over_100_fraction": 0.0003,
+    "stddev": 6.95
+  },
+  "status": "normalization verified; candidate selected after separate visual review"
+}

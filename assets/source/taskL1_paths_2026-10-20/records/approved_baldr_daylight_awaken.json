@@ -1,0 +1,17 @@
+{
+  "id": "baldr_daylight_awaken",
+  "selected_version": "v02",
+  "formal": "assets/sprites/cards/baldr_daylight_awaken.png",
+  "sha256": "77bac811a12612b77a92c6b271a840dcae03f2792d29c0ce52f8f8ac08481b02",
+  "review": {
+    "visual_review": "四道光柱与胸前双手清楚，手指结构正常，260缩略与下45%遮罩通过；光晕可出血，柱身和主要手势在安全范围。",
+    "checks": [
+      "720 source anatomy",
+      "260 thumbnail",
+      "bottom45 mask",
+      "primary safe margin",
+      "reference identity"
+    ]
+  },
+  "mipmaps": "offline reference chain only; Godot import mipmaps must be enabled by integration agent"
+}

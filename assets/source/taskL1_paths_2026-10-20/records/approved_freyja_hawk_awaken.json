@@ -1,0 +1,17 @@
+{
+  "id": "freyja_hawk_awaken",
+  "selected_version": "v01",
+  "formal": "assets/sprites/cards/freyja_hawk_awaken.png",
+  "sha256": "36d532b1c0ed23e1f29eccbf2de760f56933d71716cf53e75e481bb5db07748e",
+  "review": {
+    "visual_review": "分裂羽刃与身后英灵形态上半幅可读，羽披风道路延续，手/脸结构完整；下部金羽为次级暗纹，遮罩后主形保留。",
+    "checks": [
+      "source anatomy/weapon",
+      "260px",
+      "45% mask",
+      "primary safe area",
+      "path identity"
+    ]
+  },
+  "mipmaps": "offline reference chain only; Godot import mipmaps must be enabled by integration agent"
+}

@@ -1,0 +1,16 @@
+{
+  "id": "thor_cloud_awaken",
+  "selected_version": "v02",
+  "formal": "assets/sprites/cards/thor_cloud_awaken.png",
+  "sha256": "b94abf01cb8bf72946c4885a90c61775063ca77035eae44514f956b6e2c250df",
+  "review": {
+    "visual_review": "去掉无关战锤/战车，扩大雷云与雷频，和普通雷云同一道路；双手结构完整且安全边通过。",
+    "checks": [
+      "full source anatomy/weapon checked",
+      "260 thumbnail and bottom45 mask checked",
+      "40px safe guide checked",
+      "pair style and road identity checked"
+    ]
+  },
+  "mipmaps": "offline reference chain only; Godot import mipmaps must be enabled by integration agent"
+}

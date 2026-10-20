@@ -185,7 +185,7 @@ func _make_card(index: int, offer: Dictionary, player: Player) -> Button:
 	box.offset_right = -18
 	box.offset_top = ART_HEIGHT
 	box.offset_bottom = -18
-	box.add_theme_constant_override("separation", 10)
+	box.add_theme_constant_override("separation", 6)
 	box.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	card.add_child(box)
 	var number := Label.new()  # 左上角的按键提示
@@ -199,8 +199,8 @@ func _make_card(index: int, offer: Dictionary, player: Player) -> Button:
 	card.add_child(number)
 
 	_add_line(box, tag + ("" if rarity < 0 else "  ·  " + tr(UpgradeDB.RARITY_NAMES[rarity])), 14, color if rarity < 1 else edge)
-	_add_line(box, tr(info.name), 26, Color.WHITE if not is_awaken else color)
-	_add_line(box, UpgradeDB.describe(id, rarity), 15, Color(0.85, 0.87, 0.92))
+	_add_line(box, tr(info.name), 24, Color.WHITE if not is_awaken else color)
+	_add_line(box, UpgradeDB.describe(id, rarity), 14, Color(0.85, 0.87, 0.92))
 
 	var spacer := Control.new()
 	spacer.size_flags_vertical = Control.SIZE_EXPAND_FILL

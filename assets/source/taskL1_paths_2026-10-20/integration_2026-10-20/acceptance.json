@@ -1,0 +1,33 @@
+{
+  "status": "passed controlled actual-Game card UI acceptance",
+  "date": "2026-10-20",
+  "scope": "60 cards at1280x720/960x540/1600x900; imported texture mipmaps; exact ID loading; text bounds; keyboard road selection, button awakening/fusion, resume, hover, four regular choices and missing-image fallback",
+  "runs": {
+    "commit": {
+      "passed": 1901,
+      "failed": 0,
+      "captures": 61,
+      "engine": "4.7.2-stable (official)",
+      "result": "screenshots/commit/results.json"
+    },
+    "workspace": {
+      "passed": 1901,
+      "failed": 0,
+      "captures": 61,
+      "engine": "4.7.2-stable (official)",
+      "result": "screenshots/workspace/results.json"
+    }
+  },
+  "production_changes": [
+    "60 PNG imports with mipmaps/generate=true",
+    "scripts/ui/level_up_panel.gd: title24, description14, separation6 to prevent long-awakening footer overflow"
+  ],
+  "unchanged": "gameplay data, effects, faith thresholds and combat logic not modified in this task",
+  "not_tested": [
+    "full combat playthrough",
+    "other hardware/OS/DPI",
+    "other locales"
+  ],
+  "early_failures": "first isolated import temporarily lacked font cache until reimport; test direct-class preloading before autoload bootstrap fixed with deferred dynamic loads; test fallback ID corrected from thor to thor_skill; early long-net footer overflow fixed and all checks rerun; records retained",
+  "platform_diagnostic": "macOS IMKCFRunLoopWakeUpReliable mach-port line observed; no final script/resource errors or exit leak warnings"
+}

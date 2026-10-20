@@ -1,0 +1,35 @@
+{
+  "id": "loki_shifter",
+  "task": "L1",
+  "god": "loki",
+  "variant": "path",
+  "root": "assets/source/taskL1_paths_2026-10-20",
+  "target": "assets/sprites/cards/loki_shifter.png",
+  "references": [
+    {
+      "actual_input": "assets/sprites/cards/loki.png",
+      "archive": "references/loki.png",
+      "sha256": "dbae4dd1d0d3c103b3c0fd2f5f1d668a9a71248a7d13f14832a1530e27431314"
+    }
+  ],
+  "prompt": "Use case: illustration-story. Asset type: ONE premium game upgrade CARD ILLUSTRATION, portrait 3:5, intended final 720x1200 RGB. Style: richly textured restrained northern myth oil painting / painterly impasto, realistic faces and materials, same collection as attached original portraits, NOT pixel art, NOT anime, no glossy 3D. This is a living myth inside an ancient archive; do not add computers, museums or science-fiction. CRITICAL composition: heads and every key spell, weapon, animal or gesture entirely within upper55% of image; faces around y15-25%, upper bodies around y25-50%; bottom40% deep blue-black simple cloak/shadow fading into quiet negative space for game text. Left/right40px safe margins at final size: no face/important weapon/animal touches side edges. Show a single composed cinematic scene, not a multi-panel sheet. No borders, card frame, letters, readable runes, logos, watermark, interface or typography. Natural anatomy, clearly separated hands, structurally sound weapons, restrained bloom; faces legible at260px wide. Preserve identity, age, hair, facial features, costume materials and painterly style from references; pose and scenario change for THIS specific upgrade.\nSubject identity: the same lean clean-shaven auburn-haired man, sharp intelligent face, dark fur-trimmed leather clothing, orange trickster fire; no horned crown.\nSpecific upgrade scene: One solid man in foreground, ONE translucent orange fire DOUBLE slightly behind and to the side with the same face and costume, clearly deliberate magical decoy.\nThis is a DISTINCT PATH illustration. Show this road motif clearly, not the generic base portrait again.\nKeep ALL important anatomy, weapon heads/tips and animal faces within CENTRAL80% of canvas (x10%..90%), not merely inside the outer edge. Leave side columns as background or unimportant cloak only. Place all hands/gesture and spell motifs above y52%; nothing bright or complex below y60%.",
+  "current_gameplay_source_line": "\"loki_shifter\": {\"kind\": \"path\", \"god\": \"loki\", \"name\": \"变形者\", \"desc\": \"每 4 秒在原地留下一个火焰分身，吸引附近的敌人，带着火焰燃烧 4 秒。火种 = 分身消失时爆炸\"},",
+  "input_code_sha256": "e2b900caf6dcee1af417fb90932a48e0313bf8e726a5f7d4141ed8d8e332e4db",
+  "status": "approved",
+  "version": "v01",
+  "tool": "OpenAI built-in image_gen",
+  "raw_output_path": "/Users/zhangjunqiu/.codex/generated_images/01a14093-604c-72e3-b0c2-585e428c4824/exec-93f2da62-8599-473a-a620-36a691ef845a.png",
+  "original": "originals/loki_shifter_v01.png",
+  "original_sha256": "7584307317b2f6e6ea15c7d59a46af4b0f06a3087e6a5f253e197d7588e586e7",
+  "commercial_basis": "https://openai.com/policies/terms-of-use/",
+  "review": {
+    "visual_review": "原人一实一虚两张同脸，分身与原人手臂可区分，无额外接肢；两脸和主体手势在上55%且可读，暗部/文字遮罩通过。",
+    "checks": [
+      "source anatomy",
+      "260px",
+      "mask",
+      "safe guide",
+      "base identity"
+    ]
+  }
+}

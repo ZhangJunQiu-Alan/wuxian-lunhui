@@ -1,0 +1,34 @@
+{
+  "id": "odin_nights",
+  "task": "L1",
+  "god": "odin",
+  "variant": "path",
+  "root": "assets/source/taskL1_paths_2026-10-20",
+  "target": "assets/sprites/cards/odin_nights.png",
+  "references": [
+    {
+      "actual_input": "assets/sprites/cards/odin.png",
+      "archive": "references/odin.png",
+      "sha256": "423cab0736c5d60b840e7ba3d293901eba6d9f48025defc9fda56425cbf76fc2"
+    }
+  ],
+  "prompt": "Use case: illustration-story. Asset type: ONE premium game upgrade CARD ILLUSTRATION, portrait 3:5, intended final 720x1200 RGB. Style: richly textured restrained northern myth oil painting / painterly impasto, realistic faces and materials, same collection as attached original portraits, NOT pixel art, NOT anime, no glossy 3D. This is a living myth inside an ancient archive; do not add computers, museums or science-fiction. CRITICAL composition: heads and every key spell, weapon, animal or gesture entirely within upper55% of image; faces around y15-25%, upper bodies around y25-50%; bottom40% deep blue-black simple cloak/shadow fading into quiet negative space for game text. Left/right40px safe margins at final size: no face/important weapon/animal touches side edges. Show a single composed cinematic scene, not a multi-panel sheet. No borders, card frame, letters, readable runes, logos, watermark, interface or typography. Natural anatomy, clearly separated hands, structurally sound weapons, restrained bloom; faces legible at260px wide. Preserve identity, age, hair, facial features, costume materials and painterly style from references; pose and scenario change for THIS specific upgrade.\nSubject identity: the same elderly long grey-bearded one-eyed northern wanderer, broad dark hat, fur cloak, weathered face, violet magic.\nSpecific upgrade scene: The elder studies a violet geometric sigil-array suspended around the upper body with a faint world-tree root behind; several dark silhouettes receive small marks. Abstract magical geometry, NO readable letters.\nThis is a DISTINCT PATH illustration. Show this road motif clearly, not the generic base portrait again.\nKeep ALL important anatomy, weapon heads/tips and animal faces within CENTRAL80% of canvas (x10%..90%), not merely inside the outer edge. Leave side columns as background or unimportant cloak only. Place all hands/gesture and spell motifs above y52%; nothing bright or complex below y60%.",
+  "current_gameplay_source_line": "\"odin_nights\": {\"kind\": \"path\", \"god\": \"odin\", \"name\": \"九夜符文\", \"desc\": \"符文落地变成符文阵，停留 3 秒，阵里的敌人每秒叠 1 层印记。破甲 = 符文阵更大\"},",
+  "input_code_sha256": "e2b900caf6dcee1af417fb90932a48e0313bf8e726a5f7d4141ed8d8e332e4db",
+  "status": "approved",
+  "version": "v01",
+  "tool": "OpenAI built-in image_gen",
+  "raw_output_path": "/Users/zhangjunqiu/.codex/generated_images/01a14093-604c-72e3-b0c2-585e428c4824/exec-95fbf16c-53e3-4f03-9639-bafcce8b64f1.png",
+  "original": "originals/odin_nights_v01.png",
+  "original_sha256": "822522980c2d13a0fb79a09aa1db13ef797533655c538c88f36b3d6e6b7cb36c",
+  "commercial_basis": "https://openai.com/policies/terms-of-use/",
+  "review": {
+    "visual_review": "几何符文阵与目标印记、世界树根和长枪道路区别清楚；主角脸/手和主阵中心在安全区，远右小节点为背景延伸。",
+    "checks": [
+      "full source structure reviewed",
+      "260px safe and masked previews reviewed",
+      "base identity/style compared",
+      "critical recognition features within safe region; background extends to bleed"
+    ]
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "id": "loki_wolf_awaken",
+  "selected_version": "v01",
+  "formal": "assets/sprites/cards/loki_wolf_awaken.png",
+  "sha256": "05cf485ff1abf17158a7c1ee021533ad924195a204c0751c081c4a1f7aebf4da",
+  "review": {
+    "visual_review": "完整单狼头/口腔/獠牙、向右喷火，较幼狼明显扩大；男人同脸，火焰在上方，暗部遮罩通过。",
+    "checks": [
+      "source structure",
+      "260px",
+      "45% mask",
+      "critical motif safe",
+      "base/path identity"
+    ]
+  },
+  "mipmaps": "offline reference chain only; Godot import mipmaps must be enabled by integration agent"
+}

@@ -1,0 +1,2129 @@
+{
+  "task": "L2",
+  "expected": 12,
+  "delivered": 12,
+  "pending": [],
+  "status": "art files and static QA complete",
+  "game_acceptance": {
+    "status": "passed controlled actual-Game card UI acceptance",
+    "report": "../taskL1_paths_2026-10-20/integration_2026-10-20/acceptance.json",
+    "not_tested": [
+      "full combat playthrough",
+      "other hardware/OS/DPI",
+      "other locales"
+    ]
+  },
+  "assets": [
+    {
+      "task_id": "L2",
+      "id": "fusion_father_son",
+      "formal": "assets/sprites/cards/fusion_father_son.png",
+      "sha256": "57260b4dca58e007376ff7ad86d688f3fdd602b4bcce377bc6988ae6f69bcbf5",
+      "frame_size": [
+        720,
+        1200
+      ],
+      "frames": 1,
+      "fps": 0,
+      "anchor": {
+        "xy": [
+          360,
+          600
+        ],
+        "convention": "static UI texture center; no world-space pivot"
+      },
+      "loop": "not applicable: static illustration",
+      "transparency": "opaque RGB; Part L overrides pixel-art RGBA contract",
+      "rgb_color_count": 264894,
+      "palette_exception": "non-pixel painterly Part L; 48-color cap does not apply",
+      "selected_version": "v01",
+      "generation_record": "records/generation_fusion_father_son_v01.json",
+      "source": "originals/fusion_father_son_v01.png",
+      "source_sha256": "70f3d7d0c387c48fa16a905ea54861b54354f15f545b5b1457b441e01625df8b",
+      "tool": "OpenAI built-in image_gen",
+      "commercial_basis": "https://openai.com/policies/terms-of-use/",
+      "references": [
+        {
+          "actual_input": "assets/sprites/cards/thor.png",
+          "archive": "references/thor.png",
+          "sha256": "a9e773d2fae33a9c885a320a0c64d7f58f5b63ecb0e05fab8d7cbe61e727edb6"
+        },
+        {
+          "actual_input": "assets/sprites/cards/odin.png",
+          "archive": "references/odin.png",
+          "sha256": "423cab0736c5d60b840e7ba3d293901eba6d9f48025defc9fda56425cbf76fc2"
+        }
+      ],
+      "prompt": "Use case: illustration-story. Asset type: ONE premium game upgrade CARD ILLUSTRATION, portrait 3:5, intended final 720x1200 RGB. Style: richly textured restrained northern myth oil painting / painterly impasto, realistic faces and materials, same collection as attached original portraits, NOT pixel art, NOT anime, no glossy 3D. This is a living myth inside an ancient archive; do not add computers, museums or science-fiction. CRITICAL composition: heads and every key spell, weapon, animal or gesture entirely within upper55% of image; faces around y15-25%, upper bodies around y25-50%; bottom40% deep blue-black simple cloak/shadow fading into quiet negative space for game text. Left/right40px safe margins at final size: no face/important weapon/animal touches side edges. Show a single composed cinematic scene, not a multi-panel sheet. No borders, card frame, letters, readable runes, logos, watermark, interface or typography. Natural anatomy, clearly separated hands, structurally sound weapons, restrained bloom; faces legible at260px wide. Preserve identity, age, hair, facial features, costume materials and painterly style from references; pose and scenario change for THIS specific upgrade.\nSubject A identity: the same broad muscular middle-aged red-haired, thick red-bearded northern warrior, black fur mantle, weathered leather and iron armor, blue lightning.\nSubject B identity: the same elderly long grey-bearded one-eyed northern wanderer, broad dark hat, fur cloak, weathered face, violet magic.\nSpecific shared spell scene: A single unified spell: blue lightning pierces a floating violet geometric sigil and bursts into three smaller violet-blue marks around it. The red-bearded warrior and one-eyed elder stand shoulder to shoulder, one shared energy flow, not a split collage.\nTwo adult figures, equal scale, heads fully inside upper45%, no third main human, lighting links the pair into one coherent painting. Preserve the two separate identities, never merge facial features.\nKeep ALL important anatomy, weapon heads/tips and animal faces within CENTRAL80% of canvas (x10%..90%), not merely inside the outer edge. Leave side columns as background or unimportant cloak only. Place all hands/gesture and spell motifs above y52%; nothing bright or complex below y60%.\nKeep both faces within x22%..78%. Every hand and weapon/symbol is small, centered between x20%..80% and above y48%. Leave a wide calm dark foreground below y55%. Do not copy extra weapons from the input portraits unless requested by this shared scene.",
+      "gameplay_source_snapshot": "\"father_son\": {\"gods\": [\"thor\", \"odin\"], \"name\": \"父子雷符\", \"desc\": \"落雷劈中带符文印记的敌人时立刻引爆印记，并给周围的敌人叠 1 层印记\"},",
+      "previews": {
+        "thumbnail": "previews/fusion_father_son_v01_260.png",
+        "text_mask": "previews/fusion_father_son_v01_masked.png",
+        "safe_area": "previews/fusion_father_son_v01_safe.png"
+      },
+      "offline_mipmaps": [
+        {
+          "path": "mipmaps/fusion_father_son/level_01_360x600.png",
+          "size": [
+            360,
+            600
+          ],
+          "sha256": "83ef00ea5aabc016b50ed68e4d14590ce112523dc84868855d9acd2e726de734"
+        },
+        {
+          "path": "mipmaps/fusion_father_son/level_02_180x300.png",
+          "size": [
+            180,
+            300
+          ],
+          "sha256": "d3f88ac7dc10eb33b29ed94df539021f844e0f3a37a04717f6ec0d6bf7673e69"
+        },
+        {
+          "path": "mipmaps/fusion_father_son/level_03_90x150.png",
+          "size": [
+            90,
+            150
+          ],
+          "sha256": "a13d3eb2504660e41c3525d185708706584aa875ffe13fd73fa5e694fcafe2e5"
+        },
+        {
+          "path": "mipmaps/fusion_father_son/level_04_45x75.png",
+          "size": [
+            45,
+            75
+          ],
+          "sha256": "6b61771f4b006f92864fcfc6b06c4197c54383b5b6d2de3958989cd1d83cba9a"
+        },
+        {
+          "path": "mipmaps/fusion_father_son/level_05_22x37.png",
+          "size": [
+            22,
+            37
+          ],
+          "sha256": "5f8a217ac3da1610ad9a679c3cc8ab369ab2ca07b268d010dd197354f1a0bd4a"
+        },
+        {
+          "path": "mipmaps/fusion_father_son/level_06_11x18.png",
+          "size": [
+            11,
+            18
+          ],
+          "sha256": "b4ccbdf5c7534dd80d708c81e910d268347442e1af6e06959748aaec90c06225"
+        },
+        {
+          "path": "mipmaps/fusion_father_son/level_07_5x9.png",
+          "size": [
+            5,
+            9
+          ],
+          "sha256": "1fe3064111730cfd76f4dc80beb75426617a595fae76c64596069112d2143e23"
+        },
+        {
+          "path": "mipmaps/fusion_father_son/level_08_2x4.png",
+          "size": [
+            2,
+            4
+          ],
+          "sha256": "a6b28f6706c305bae9736d91c7af0ba14ede2c21ffce5920603e38950c3bc07f"
+        },
+        {
+          "path": "mipmaps/fusion_father_son/level_09_1x2.png",
+          "size": [
+            1,
+            2
+          ],
+          "sha256": "3b0f0fb1eb1d0b2aec739899bb4fdfbb623457f744a1119870ca28ae3067413f"
+        },
+        {
+          "path": "mipmaps/fusion_father_son/level_10_1x1.png",
+          "size": [
+            1,
+            1
+          ],
+          "sha256": "6fe76c7934d0c21d30740d368b10b163e8ed9dd846e3c6ef9249af85d7cccbad"
+        }
+      ],
+      "normalization": {
+        "id": "fusion_father_son",
+        "raw_size": [
+          971,
+          1619
+        ],
+        "raw_mode": "RGB",
+        "output_size": [
+          720,
+          1200
+        ],
+        "mode": "RGB",
+        "operation": "centered aspect crop to3:5, Lanczos resize720x1200, RGB only; no repaint, no artificial background darkening",
+        "candidate_sha256": "57260b4dca58e007376ff7ad86d688f3fdd602b4bcce377bc6988ae6f69bcbf5",
+        "bottom40_luminance": {
+          "mean": 18.31,
+          "pixels_over_100_fraction": 0.0,
+          "stddev": 7.01
+        },
+        "status": "normalization verified; candidate selected after separate visual review"
+      },
+      "visual_self_review": {
+        "visual_review": "双人脸、两手与雷符同场景连接；主符文位于胸前，细小子标记延至55-60%过渡带，但遮罩后主雷符仍清晰；底40%暗简。缩略与安全边通过。"
+      },
+      "file_verification": "passed: PNG/RGB/size/hash/source/reference/preview/mip dimensions",
+      "code_integration": "verified: actual Game LevelUpPanel selects exact card-ID texture, no generic portrait or split fusion",
+      "godot_import_mipmap": "verified by actual imported Texture2D.get_image(): 10 mip levels; linear+mipmap UI filter",
+      "game_acceptance": "passed controlled actual-Game card UI at1280/960/1600; full playthrough not tested",
+      "animation_rotation_tiling": "not applicable to static card illustrations",
+      "godot_import": {
+        "path": "assets/sprites/cards/fusion_father_son.png.import",
+        "sha256": "3f86a2a341db59da2db10a3fa4ee793f6ec09b1aa4169170427607229b371db9"
+      }
+    },
+    {
+      "task_id": "L2",
+      "id": "fusion_utgard",
+      "formal": "assets/sprites/cards/fusion_utgard.png",
+      "sha256": "0b01e2d61e5a49d26b5b8094c7657bd3d60a81060e7b9f0691e1acfcc433d5a8",
+      "frame_size": [
+        720,
+        1200
+      ],
+      "frames": 1,
+      "fps": 0,
+      "anchor": {
+        "xy": [
+          360,
+          600
+        ],
+        "convention": "static UI texture center; no world-space pivot"
+      },
+      "loop": "not applicable: static illustration",
+      "transparency": "opaque RGB; Part L overrides pixel-art RGBA contract",
+      "rgb_color_count": 273883,
+      "palette_exception": "non-pixel painterly Part L; 48-color cap does not apply",
+      "selected_version": "v01",
+      "generation_record": "records/generation_fusion_utgard_v01.json",
+      "source": "originals/fusion_utgard_v01.png",
+      "source_sha256": "3790ec00b293d87bd6dbf6d0b0dff84d2d99964c44352360692af6e7d80dda20",
+      "tool": "OpenAI built-in image_gen",
+      "commercial_basis": "https://openai.com/policies/terms-of-use/",
+      "references": [
+        {
+          "actual_input": "assets/sprites/cards/thor.png",
+          "archive": "references/thor.png",
+          "sha256": "a9e773d2fae33a9c885a320a0c64d7f58f5b63ecb0e05fab8d7cbe61e727edb6"
+        },
+        {
+          "actual_input": "assets/sprites/cards/loki.png",
+          "archive": "references/loki.png",
+          "sha256": "dbae4dd1d0d3c103b3c0fd2f5f1d668a9a71248a7d13f14832a1530e27431314"
+        }
+      ],
+      "prompt": "Use case: illustration-story. Asset type: ONE premium game upgrade CARD ILLUSTRATION, portrait 3:5, intended final 720x1200 RGB. Style: richly textured restrained northern myth oil painting / painterly impasto, realistic faces and materials, same collection as attached original portraits, NOT pixel art, NOT anime, no glossy 3D. This is a living myth inside an ancient archive; do not add computers, museums or science-fiction. CRITICAL composition: heads and every key spell, weapon, animal or gesture entirely within upper55% of image; faces around y15-25%, upper bodies around y25-50%; bottom40% deep blue-black simple cloak/shadow fading into quiet negative space for game text. Left/right40px safe margins at final size: no face/important weapon/animal touches side edges. Show a single composed cinematic scene, not a multi-panel sheet. No borders, card frame, letters, readable runes, logos, watermark, interface or typography. Natural anatomy, clearly separated hands, structurally sound weapons, restrained bloom; faces legible at260px wide. Preserve identity, age, hair, facial features, costume materials and painterly style from references; pose and scenario change for THIS specific upgrade.\nSubject A identity: the same broad muscular middle-aged red-haired, thick red-bearded northern warrior, black fur mantle, weathered leather and iron armor, blue lightning.\nSubject B identity: the same lean clean-shaven auburn-haired man, sharp intelligent face, dark fur-trimmed leather clothing, orange trickster fire; no horned crown.\nSpecific shared spell scene: Blue lightning strikes a coiling orange fire spiral and creates a vivid fire-thunder explosion between the two men at chest height, three small lightning forks within the flame area. Unified scene, faces clear.\nTwo adult figures, equal scale, heads fully inside upper45%, no third main human, lighting links the pair into one coherent painting. Preserve the two separate identities, never merge facial features.\nKeep ALL important anatomy, weapon heads/tips and animal faces within CENTRAL80% of canvas (x10%..90%), not merely inside the outer edge. Leave side columns as background or unimportant cloak only. Place all hands/gesture and spell motifs above y52%; nothing bright or complex below y60%.\nKeep both faces within x22%..78%. Every hand and weapon/symbol is small, centered between x20%..80% and above y48%. Leave a wide calm dark foreground below y55%. Do not copy extra weapons from the input portraits unless requested by this shared scene.",
+      "gameplay_source_snapshot": "\"utgard\": {\"gods\": [\"thor\", \"loki\"], \"name\": \"乌特加尔德之旅\", \"desc\": \"落雷劈中灼烧的敌人时引发火雷爆炸；诡火范围内的敌人每秒被小雷击中一次\"},",
+      "previews": {
+        "thumbnail": "previews/fusion_utgard_v01_260.png",
+        "text_mask": "previews/fusion_utgard_v01_masked.png",
+        "safe_area": "previews/fusion_utgard_v01_safe.png"
+      },
+      "offline_mipmaps": [
+        {
+          "path": "mipmaps/fusion_utgard/level_01_360x600.png",
+          "size": [
+            360,
+            600
+          ],
+          "sha256": "309187113c1ec91e5281ed43d7fffe0aefaa1d028ac5061e4abf9b6fc818dbc7"
+        },
+        {
+          "path": "mipmaps/fusion_utgard/level_02_180x300.png",
+          "size": [
+            180,
+            300
+          ],
+          "sha256": "68eec220d9c20b683e3fbc51081ad41fa45a51886d29e9ac1249480865488794"
+        },
+        {
+          "path": "mipmaps/fusion_utgard/level_03_90x150.png",
+          "size": [
+            90,
+            150
+          ],
+          "sha256": "5104a0a717ba0dd42b50c24c393a63baab166d14bb0283f4da49d5a0df599578"
+        },
+        {
+          "path": "mipmaps/fusion_utgard/level_04_45x75.png",
+          "size": [
+            45,
+            75
+          ],
+          "sha256": "d668e48e7ec45723c673969d9e08ebc9c59ea242fa0c45b181d5a39002e4e079"
+        },
+        {
+          "path": "mipmaps/fusion_utgard/level_05_22x37.png",
+          "size": [
+            22,
+            37
+          ],
+          "sha256": "0c5ddedc328859d842466371b53b9a12d18eb70cc312ba44d54cbae324338b0f"
+        },
+        {
+          "path": "mipmaps/fusion_utgard/level_06_11x18.png",
+          "size": [
+            11,
+            18
+          ],
+          "sha256": "945acd7f4c95ba69920a440232813dd40948fbd9b8f6b9f72733ab44cf9265a5"
+        },
+        {
+          "path": "mipmaps/fusion_utgard/level_07_5x9.png",
+          "size": [
+            5,
+            9
+          ],
+          "sha256": "bd30f519b1211e6fadfbb77dac2bc43e018c70e7b36206647b93a9058b5ce1ad"
+        },
+        {
+          "path": "mipmaps/fusion_utgard/level_08_2x4.png",
+          "size": [
+            2,
+            4
+          ],
+          "sha256": "33bb94b6f162dc6b5fa9c4bf17653fe001556ea3b69ba3590ac2511dd537a087"
+        },
+        {
+          "path": "mipmaps/fusion_utgard/level_09_1x2.png",
+          "size": [
+            1,
+            2
+          ],
+          "sha256": "189f60473a6d3e51ba03f20afb48527e00fb32e9ec1171ebcdcfcd41d54eec8f"
+        },
+        {
+          "path": "mipmaps/fusion_utgard/level_10_1x1.png",
+          "size": [
+            1,
+            1
+          ],
+          "sha256": "dc747c2704b3485600c76a80bc4c57ab210cca24397dfc80ff57f2160884f081"
+        }
+      ],
+      "normalization": {
+        "id": "fusion_utgard",
+        "raw_size": [
+          971,
+          1619
+        ],
+        "raw_mode": "RGB",
+        "output_size": [
+          720,
+          1200
+        ],
+        "mode": "RGB",
+        "operation": "centered aspect crop to3:5, Lanczos resize720x1200, RGB only; no repaint, no artificial background darkening",
+        "candidate_sha256": "0b01e2d61e5a49d26b5b8094c7657bd3d60a81060e7b9f0691e1acfcc433d5a8",
+        "bottom40_luminance": {
+          "mean": 15.09,
+          "pixels_over_100_fraction": 0.0,
+          "stddev": 5.32
+        },
+        "status": "normalization verified; candidate selected after separate visual review"
+      },
+      "visual_self_review": {
+        "visual_review": "红须与红棕发两人身份分明，三只施法手各自归属正常，中央橙火与蓝雷交织，无拼贴；缩略、遮罩、关键安全边通过。"
+      },
+      "file_verification": "passed: PNG/RGB/size/hash/source/reference/preview/mip dimensions",
+      "code_integration": "verified: actual Game LevelUpPanel selects exact card-ID texture, no generic portrait or split fusion",
+      "godot_import_mipmap": "verified by actual imported Texture2D.get_image(): 10 mip levels; linear+mipmap UI filter",
+      "game_acceptance": "passed controlled actual-Game card UI at1280/960/1600; full playthrough not tested",
+      "animation_rotation_tiling": "not applicable to static card illustrations",
+      "godot_import": {
+        "path": "assets/sprites/cards/fusion_utgard.png.import",
+        "sha256": "74912fb9e535a1326782824d5f338b2fe250660bcec7bc9aaf6bb90d67dada4f"
+      }
+    },
+    {
+      "task_id": "L2",
+      "id": "fusion_false_bride",
+      "formal": "assets/sprites/cards/fusion_false_bride.png",
+      "sha256": "763df54a3d951488ea7d9379f344c00a5de88e9ef8fa2596e67a9f7dec1adab2",
+      "frame_size": [
+        720,
+        1200
+      ],
+      "frames": 1,
+      "fps": 0,
+      "anchor": {
+        "xy": [
+          360,
+          600
+        ],
+        "convention": "static UI texture center; no world-space pivot"
+      },
+      "loop": "not applicable: static illustration",
+      "transparency": "opaque RGB; Part L overrides pixel-art RGBA contract",
+      "rgb_color_count": 231847,
+      "palette_exception": "non-pixel painterly Part L; 48-color cap does not apply",
+      "selected_version": "v02",
+      "generation_record": "records/generation_fusion_false_bride_v02.json",
+      "source": "originals/fusion_false_bride_v02.png",
+      "source_sha256": "4747acfd472c26d4f5ade238d3c3194e35c3bc67d7867d24c19c6fe789fb8a75",
+      "tool": "OpenAI built-in image_gen",
+      "commercial_basis": "https://openai.com/policies/terms-of-use/",
+      "references": [
+        {
+          "actual_input": "assets/source/taskL2_fusions_2026-10-20/originals/fusion_false_bride_v01.png",
+          "archive": "references/fusion_false_bride_v01.png",
+          "sha256": "a26c02713af95b395efd80f09534773708fede29ec41bd269fa2078cf3f52604"
+        }
+      ],
+      "prompt": "Edit this existing portrait oil painting. Keep BOTH same faces, man with red beard, blonde woman, same armor, feather cloak, short hammer and huge blue lightning behind. Change ONLY the woman's cloak-holding hand at far RIGHT EDGE: move the hand and raised feather-cloak corner inward to x78% canvas width and y20%, with elbow naturally bent. All five curled fingers naturally grip the cloth and remain inside x85%; rightmost15% contains background feathers only, no hand. Show a faint translucent shimmer at cloak edge implying concealment. Lower40% stays dark simple. No text.",
+      "gameplay_source_snapshot": "\"false_bride\": {\"gods\": [\"thor\", \"freyja\"], \"name\": \"假新娘\", \"desc\": \"闪现后隐身 2 秒，敌人跟丢你；隐身结束时在身边降下一道巨雷\"},",
+      "previews": {
+        "thumbnail": "previews/fusion_false_bride_v02_260.png",
+        "text_mask": "previews/fusion_false_bride_v02_masked.png",
+        "safe_area": "previews/fusion_false_bride_v02_safe.png"
+      },
+      "offline_mipmaps": [
+        {
+          "path": "mipmaps/fusion_false_bride/level_01_360x600.png",
+          "size": [
+            360,
+            600
+          ],
+          "sha256": "43a66bcd3bc214cbf6e02d7b5a480270bf5d5d3428385198e549597b94c5f816"
+        },
+        {
+          "path": "mipmaps/fusion_false_bride/level_02_180x300.png",
+          "size": [
+            180,
+            300
+          ],
+          "sha256": "77bf362c687c303f3446f833d90e9e9eceb95b7a3bef62553f7a491233a9fdbb"
+        },
+        {
+          "path": "mipmaps/fusion_false_bride/level_03_90x150.png",
+          "size": [
+            90,
+            150
+          ],
+          "sha256": "c4e2eb66bf988d6e35aec264195f6abb67bb9bc0fcc2f71b8facc4aa63e1b7e0"
+        },
+        {
+          "path": "mipmaps/fusion_false_bride/level_04_45x75.png",
+          "size": [
+            45,
+            75
+          ],
+          "sha256": "6593973c250144a1997999f71cfaf9775947ae720a9882c77c95c266a52226f5"
+        },
+        {
+          "path": "mipmaps/fusion_false_bride/level_05_22x37.png",
+          "size": [
+            22,
+            37
+          ],
+          "sha256": "a01316b98c57fe68af875f788d5b028887b7943b48bd3698d62cbbc279ab0cc9"
+        },
+        {
+          "path": "mipmaps/fusion_false_bride/level_06_11x18.png",
+          "size": [
+            11,
+            18
+          ],
+          "sha256": "2018bb6df1eeee9aad09fd72091de406077f98733950be1eaf36c2f783cda158"
+        },
+        {
+          "path": "mipmaps/fusion_false_bride/level_07_5x9.png",
+          "size": [
+            5,
+            9
+          ],
+          "sha256": "58942b3d6e77c8531d2d6835178d76cafb62dc5430ae1092fc55e692e1af41fd"
+        },
+        {
+          "path": "mipmaps/fusion_false_bride/level_08_2x4.png",
+          "size": [
+            2,
+            4
+          ],
+          "sha256": "d7391d1eb184f43f9040d429e7153b181c8b3523706a4d626844c20373d02308"
+        },
+        {
+          "path": "mipmaps/fusion_false_bride/level_09_1x2.png",
+          "size": [
+            1,
+            2
+          ],
+          "sha256": "3a48873205d4f82f05a2319717ae2a1bf852752590772646e48229903fcb0946"
+        },
+        {
+          "path": "mipmaps/fusion_false_bride/level_10_1x1.png",
+          "size": [
+            1,
+            1
+          ],
+          "sha256": "ef0862b76edd405d851589f7ffc1a504b8564708c4807c4bfbfef24b870a7bcb"
+        }
+      ],
+      "normalization": {
+        "id": "fusion_false_bride",
+        "raw_size": [
+          971,
+          1620
+        ],
+        "raw_mode": "RGB",
+        "output_size": [
+          720,
+          1200
+        ],
+        "mode": "RGB",
+        "operation": "centered aspect crop to3:5, Lanczos resize720x1200, RGB only; no repaint, no artificial background darkening",
+        "candidate_sha256": "763df54a3d951488ea7d9379f344c00a5de88e9ef8fa2596e67a9f7dec1adab2",
+        "bottom40_luminance": {
+          "mean": 18.29,
+          "pixels_over_100_fraction": 0.0001,
+          "stddev": 8.25
+        },
+        "status": "normalization verified; candidate selected after separate visual review"
+      },
+      "visual_self_review": {
+        "visual_review": "女子握披风手已内收，羽披风覆盖双人、金色透明边与巨蓝雷形成统一情境；双脸、握锤与披风手结构清楚。缩略、遮罩与安全边通过。",
+        "checks": [
+          "source anatomy",
+          "260 thumbnail",
+          "bottom45 mask",
+          "safe area",
+          "two identities"
+        ]
+      },
+      "file_verification": "passed: PNG/RGB/size/hash/source/reference/preview/mip dimensions",
+      "code_integration": "verified: actual Game LevelUpPanel selects exact card-ID texture, no generic portrait or split fusion",
+      "godot_import_mipmap": "verified by actual imported Texture2D.get_image(): 10 mip levels; linear+mipmap UI filter",
+      "game_acceptance": "passed controlled actual-Game card UI at1280/960/1600; full playthrough not tested",
+      "animation_rotation_tiling": "not applicable to static card illustrations",
+      "godot_import": {
+        "path": "assets/sprites/cards/fusion_false_bride.png.import",
+        "sha256": "7137192b2986a84916c2e064a1d4decbc580a797bffd28f564dd22853e7bf01f"
+      }
+    },
+    {
+      "task_id": "L2",
+      "id": "fusion_shatter_thunder",
+      "formal": "assets/sprites/cards/fusion_shatter_thunder.png",
+      "sha256": "038404d1edb682ea3fe0de5cd0ea1f8fd4b4a7250efefd5c9fadf65c4fdf6113",
+      "frame_size": [
+        720,
+        1200
+      ],
+      "frames": 1,
+      "fps": 0,
+      "anchor": {
+        "xy": [
+          360,
+          600
+        ],
+        "convention": "static UI texture center; no world-space pivot"
+      },
+      "loop": "not applicable: static illustration",
+      "transparency": "opaque RGB; Part L overrides pixel-art RGBA contract",
+      "rgb_color_count": 295993,
+      "palette_exception": "non-pixel painterly Part L; 48-color cap does not apply",
+      "selected_version": "v03",
+      "generation_record": "records/generation_fusion_shatter_thunder_v03.json",
+      "source": "originals/fusion_shatter_thunder_v03.png",
+      "source_sha256": "3faf66842333054fae1aa9525ae5d798d22a4ccb81df421daecfe625d3f752a3",
+      "tool": "OpenAI built-in image_gen",
+      "commercial_basis": "https://openai.com/policies/terms-of-use/",
+      "references": [
+        {
+          "actual_input": "assets/source/taskL2_fusions_2026-10-20/originals/fusion_shatter_thunder_v02.png",
+          "archive": "references/fusion_shatter_thunder_v02.png",
+          "sha256": "ed46b69b93edfc85ca9dd7bec2975f94a53938ca925a77061afbae7149438f58"
+        }
+      ],
+      "prompt": "Edit this portrait3:5 oil painting. Keep the SAME red-bearded man and SAME silver-haired huntress faces, fur and armor, same oil paint. REMOVE the entire held bow, bowstring and arrow on the right. Huntress now makes a small natural open-palmed ice gesture at her chest x65%, y33%, all five fingers within central area. Man holds a SHORT hammer at chest x42%, y35%. A huge sky lightning bolt strikes ONE SMALL frozen dark humanoid silhouette BETWEEN the two characters x50% y42%, shattering it into crisp blue ice splinters. All bright ice entirely above y51%, no ice foreground. Below y58% only quiet blue-black cloak shadow. Important face/hand/hammer edges safely inside x15%..85%.",
+      "gameplay_source_snapshot": "\"shatter_thunder\": {\"gods\": [\"thor\", \"skadi\"], \"name\": \"碎冰之雷\", \"desc\": \"冻结的敌人被雷劈中时碎裂，冰片伤害周围的敌人并叠 2 层霜冻\"},",
+      "previews": {
+        "thumbnail": "previews/fusion_shatter_thunder_v03_260.png",
+        "text_mask": "previews/fusion_shatter_thunder_v03_masked.png",
+        "safe_area": "previews/fusion_shatter_thunder_v03_safe.png"
+      },
+      "offline_mipmaps": [
+        {
+          "path": "mipmaps/fusion_shatter_thunder/level_01_360x600.png",
+          "size": [
+            360,
+            600
+          ],
+          "sha256": "58696178a839fdfc4aec85e2d15c8aef6afcaeaa9620c70329f68c381beba31d"
+        },
+        {
+          "path": "mipmaps/fusion_shatter_thunder/level_02_180x300.png",
+          "size": [
+            180,
+            300
+          ],
+          "sha256": "d834aa108d301e0cdf0ac095dbc9cf7136680f3063904339851b1cf98a0db04b"
+        },
+        {
+          "path": "mipmaps/fusion_shatter_thunder/level_03_90x150.png",
+          "size": [
+            90,
+            150
+          ],
+          "sha256": "11889c5fef24a8c0778508d421bafd57381b12c828003da7b898f57f217de314"
+        },
+        {
+          "path": "mipmaps/fusion_shatter_thunder/level_04_45x75.png",
+          "size": [
+            45,
+            75
+          ],
+          "sha256": "2bd89b24c86d7aac0fdb8d6ddcafdbbc2e701d213388661dd5ff820f1d8a2bc5"
+        },
+        {
+          "path": "mipmaps/fusion_shatter_thunder/level_05_22x37.png",
+          "size": [
+            22,
+            37
+          ],
+          "sha256": "77fb74235326f2a7723d6d14c5b75c45c1fe41e7fd3f9eb6f30c57df79128f64"
+        },
+        {
+          "path": "mipmaps/fusion_shatter_thunder/level_06_11x18.png",
+          "size": [
+            11,
+            18
+          ],
+          "sha256": "fab0a4d5d824ab160f66d69c53e0d23ef5566c2e19fd2a05001c962b00700479"
+        },
+        {
+          "path": "mipmaps/fusion_shatter_thunder/level_07_5x9.png",
+          "size": [
+            5,
+            9
+          ],
+          "sha256": "bf4b39c5b69ecb871e951ae57dab7196bf8dda10aed071e0b03c4e269dac09f8"
+        },
+        {
+          "path": "mipmaps/fusion_shatter_thunder/level_08_2x4.png",
+          "size": [
+            2,
+            4
+          ],
+          "sha256": "10b73d15abf061c56bc2b0a24c01bc22419826381efbbbb1c30d8a319dde93b1"
+        },
+        {
+          "path": "mipmaps/fusion_shatter_thunder/level_09_1x2.png",
+          "size": [
+            1,
+            2
+          ],
+          "sha256": "98a53524d5574d6b1cbd9d537b928a3f0b0bc2f75de55d12589d6fa884cd6f06"
+        },
+        {
+          "path": "mipmaps/fusion_shatter_thunder/level_10_1x1.png",
+          "size": [
+            1,
+            1
+          ],
+          "sha256": "ca6e8c019500ea33cfa734826a313478b12bd6dd375b1da61b69c97107f55e0c"
+        }
+      ],
+      "normalization": {
+        "id": "fusion_shatter_thunder",
+        "raw_size": [
+          971,
+          1619
+        ],
+        "raw_mode": "RGB",
+        "output_size": [
+          720,
+          1200
+        ],
+        "mode": "RGB",
+        "operation": "centered aspect crop to3:5, Lanczos resize720x1200, RGB only; no repaint, no artificial background darkening",
+        "candidate_sha256": "038404d1edb682ea3fe0de5cd0ea1f8fd4b4a7250efefd5c9fadf65c4fdf6113",
+        "bottom40_luminance": {
+          "mean": 10.77,
+          "pixels_over_100_fraction": 0.0008,
+          "stddev": 7.83
+        },
+        "status": "normalization verified; candidate selected after separate visual review"
+      },
+      "visual_self_review": {
+        "visual_review": "取消靠边长弓后，双人主脸、五指施法手和短柄锤清晰；雷击冻结目标与冰片同场景集中，缩略、遮罩、安全边通过。",
+        "checks": [
+          "source anatomy/weapon/animal",
+          "260 thumbnail",
+          "bottom45 mask",
+          "primary safe area",
+          "two identities"
+        ]
+      },
+      "file_verification": "passed: PNG/RGB/size/hash/source/reference/preview/mip dimensions",
+      "code_integration": "verified: actual Game LevelUpPanel selects exact card-ID texture, no generic portrait or split fusion",
+      "godot_import_mipmap": "verified by actual imported Texture2D.get_image(): 10 mip levels; linear+mipmap UI filter",
+      "game_acceptance": "passed controlled actual-Game card UI at1280/960/1600; full playthrough not tested",
+      "animation_rotation_tiling": "not applicable to static card illustrations",
+      "godot_import": {
+        "path": "assets/sprites/cards/fusion_shatter_thunder.png.import",
+        "sha256": "3fe6069cfba2ada251266546170fb0b56e61e8af49f177207a915eccfab4c135"
+      }
+    },
+    {
+      "task_id": "L2",
+      "id": "fusion_blood_brothers",
+      "formal": "assets/sprites/cards/fusion_blood_brothers.png",
+      "sha256": "e6475a762fa0f0516d635175c7be4681bd7734ca207746d3d2631b9314aa0dbd",
+      "frame_size": [
+        720,
+        1200
+      ],
+      "frames": 1,
+      "fps": 0,
+      "anchor": {
+        "xy": [
+          360,
+          600
+        ],
+        "convention": "static UI texture center; no world-space pivot"
+      },
+      "loop": "not applicable: static illustration",
+      "transparency": "opaque RGB; Part L overrides pixel-art RGBA contract",
+      "rgb_color_count": 232826,
+      "palette_exception": "non-pixel painterly Part L; 48-color cap does not apply",
+      "selected_version": "v01",
+      "generation_record": "records/generation_fusion_blood_brothers_v01.json",
+      "source": "originals/fusion_blood_brothers_v01.png",
+      "source_sha256": "09a0a27018d3a5f68eac802fab4680762621b6d65d1f6ecf8f1b83a2a28f7512",
+      "tool": "OpenAI built-in image_gen",
+      "commercial_basis": "https://openai.com/policies/terms-of-use/",
+      "references": [
+        {
+          "actual_input": "assets/sprites/cards/odin.png",
+          "archive": "references/odin.png",
+          "sha256": "423cab0736c5d60b840e7ba3d293901eba6d9f48025defc9fda56425cbf76fc2"
+        },
+        {
+          "actual_input": "assets/sprites/cards/loki.png",
+          "archive": "references/loki.png",
+          "sha256": "dbae4dd1d0d3c103b3c0fd2f5f1d668a9a71248a7d13f14832a1530e27431314"
+        }
+      ],
+      "prompt": "Use case: illustration-story. Asset type: ONE premium game upgrade CARD ILLUSTRATION, portrait 3:5, intended final 720x1200 RGB. Style: richly textured restrained northern myth oil painting / painterly impasto, realistic faces and materials, same collection as attached original portraits, NOT pixel art, NOT anime, no glossy 3D. This is a living myth inside an ancient archive; do not add computers, museums or science-fiction. CRITICAL composition: heads and every key spell, weapon, animal or gesture entirely within upper55% of image; faces around y15-25%, upper bodies around y25-50%; bottom40% deep blue-black simple cloak/shadow fading into quiet negative space for game text. Left/right40px safe margins at final size: no face/important weapon/animal touches side edges. Show a single composed cinematic scene, not a multi-panel sheet. No borders, card frame, letters, readable runes, logos, watermark, interface or typography. Natural anatomy, clearly separated hands, structurally sound weapons, restrained bloom; faces legible at260px wide. Preserve identity, age, hair, facial features, costume materials and painterly style from references; pose and scenario change for THIS specific upgrade.\nSubject A identity: the same elderly long grey-bearded one-eyed northern wanderer, broad dark hat, fur cloak, weathered face, violet magic.\nSubject B identity: the same lean clean-shaven auburn-haired man, sharp intelligent face, dark fur-trimmed leather clothing, orange trickster fire; no horned crown.\nSpecific shared spell scene: The one-eyed elder and auburn-haired man clasp right forearms in a solemn oath, their TWO anatomically clear hands and separate arms framed by violet sigil geometries threaded with orange fire, small muted red oath cord, no gore.\nTwo adult figures, equal scale, heads fully inside upper45%, no third main human, lighting links the pair into one coherent painting. Preserve the two separate identities, never merge facial features.\nKeep ALL important anatomy, weapon heads/tips and animal faces within CENTRAL80% of canvas (x10%..90%), not merely inside the outer edge. Leave side columns as background or unimportant cloak only. Place all hands/gesture and spell motifs above y52%; nothing bright or complex below y60%.\nBoth faces central and all spell motifs in upper50%. Keep hands entirely x20%..80%. Below y58% quiet dark shadow. Omit unrelated weapons/animals from references.",
+      "gameplay_source_snapshot": "\"blood_brothers\": {\"gods\": [\"odin\", \"loki\"], \"name\": \"血誓兄弟\", \"desc\": \"符文命中时点燃敌人；被迷惑的敌人每秒叠 1 层符文印记\"},",
+      "previews": {
+        "thumbnail": "previews/fusion_blood_brothers_v01_260.png",
+        "text_mask": "previews/fusion_blood_brothers_v01_masked.png",
+        "safe_area": "previews/fusion_blood_brothers_v01_safe.png"
+      },
+      "offline_mipmaps": [
+        {
+          "path": "mipmaps/fusion_blood_brothers/level_01_360x600.png",
+          "size": [
+            360,
+            600
+          ],
+          "sha256": "0809bec6c80db2f50864e25c13145e57218e8de9574895b95f9592f43f7b62cd"
+        },
+        {
+          "path": "mipmaps/fusion_blood_brothers/level_02_180x300.png",
+          "size": [
+            180,
+            300
+          ],
+          "sha256": "21dc875875d9adefa55e30025b6b1ccf3659442879e21d508625e9442597f620"
+        },
+        {
+          "path": "mipmaps/fusion_blood_brothers/level_03_90x150.png",
+          "size": [
+            90,
+            150
+          ],
+          "sha256": "5f6b647b6cbaeb0ea22dc4041242d339e25baa55e0a85dce3cb789a981d79840"
+        },
+        {
+          "path": "mipmaps/fusion_blood_brothers/level_04_45x75.png",
+          "size": [
+            45,
+            75
+          ],
+          "sha256": "5896d07ed79dde4b4a23867c7a4c5216d73931497c79c40d20d42e38b070ef26"
+        },
+        {
+          "path": "mipmaps/fusion_blood_brothers/level_05_22x37.png",
+          "size": [
+            22,
+            37
+          ],
+          "sha256": "e8fe716b1a65d2027e7dbf28e110ce92fc523bb2522c58e913acbf45e3744406"
+        },
+        {
+          "path": "mipmaps/fusion_blood_brothers/level_06_11x18.png",
+          "size": [
+            11,
+            18
+          ],
+          "sha256": "7a74ce3a7fca4d0a6b465f1ba1a27fbb9cbfac2554879e6d1500225a88f4da43"
+        },
+        {
+          "path": "mipmaps/fusion_blood_brothers/level_07_5x9.png",
+          "size": [
+            5,
+            9
+          ],
+          "sha256": "3387c8ac60c24862a8d490c856f21d76585b13d18d5a32bf1f999e8d39531eaf"
+        },
+        {
+          "path": "mipmaps/fusion_blood_brothers/level_08_2x4.png",
+          "size": [
+            2,
+            4
+          ],
+          "sha256": "e8a4c6eb72f58af0c4a055092cd05595426cf20a50bd6ca8bf95fa49b65abb00"
+        },
+        {
+          "path": "mipmaps/fusion_blood_brothers/level_09_1x2.png",
+          "size": [
+            1,
+            2
+          ],
+          "sha256": "607a6e1a39e2564b1e0dadac4d2dc7aa444bd878e415ecd366a1f84caef51b7a"
+        },
+        {
+          "path": "mipmaps/fusion_blood_brothers/level_10_1x1.png",
+          "size": [
+            1,
+            1
+          ],
+          "sha256": "e5bc50fd230a0f9fce1ff474b7fbb7ef808ab58082e74982c34dac8c6af21da9"
+        }
+      ],
+      "normalization": {
+        "id": "fusion_blood_brothers",
+        "raw_size": [
+          972,
+          1619
+        ],
+        "raw_mode": "RGB",
+        "output_size": [
+          720,
+          1200
+        ],
+        "mode": "RGB",
+        "operation": "centered aspect crop to3:5, Lanczos resize720x1200, RGB only; no repaint, no artificial background darkening",
+        "candidate_sha256": "e6475a762fa0f0516d635175c7be4681bd7734ca207746d3d2631b9314aa0dbd",
+        "bottom40_luminance": {
+          "mean": 14.02,
+          "pixels_over_100_fraction": 0.0001,
+          "stddev": 7.8
+        },
+        "status": "normalization verified; candidate selected after separate visual review"
+      },
+      "visual_self_review": {
+        "visual_review": "中央双手交握、双腕与各自前臂关系清楚，红誓绳与紫火连接二人，五官身份分离；缩略、遮罩、安全边通过。",
+        "checks": [
+          "source anatomy",
+          "260 thumbnail",
+          "bottom45 mask",
+          "safe area",
+          "two identities"
+        ]
+      },
+      "file_verification": "passed: PNG/RGB/size/hash/source/reference/preview/mip dimensions",
+      "code_integration": "verified: actual Game LevelUpPanel selects exact card-ID texture, no generic portrait or split fusion",
+      "godot_import_mipmap": "verified by actual imported Texture2D.get_image(): 10 mip levels; linear+mipmap UI filter",
+      "game_acceptance": "passed controlled actual-Game card UI at1280/960/1600; full playthrough not tested",
+      "animation_rotation_tiling": "not applicable to static card illustrations",
+      "godot_import": {
+        "path": "assets/sprites/cards/fusion_blood_brothers.png.import",
+        "sha256": "e5e98787a0621d40ed82e6324dfe1e95a286ff7d2e4632e66aae471e4cbc3284"
+      }
+    },
+    {
+      "task_id": "L2",
+      "id": "fusion_valhalla",
+      "formal": "assets/sprites/cards/fusion_valhalla.png",
+      "sha256": "e50503cd66315b34edf3233e3061f9b2fca205ca5597f6820b7d113d9f0f39d3",
+      "frame_size": [
+        720,
+        1200
+      ],
+      "frames": 1,
+      "fps": 0,
+      "anchor": {
+        "xy": [
+          360,
+          600
+        ],
+        "convention": "static UI texture center; no world-space pivot"
+      },
+      "loop": "not applicable: static illustration",
+      "transparency": "opaque RGB; Part L overrides pixel-art RGBA contract",
+      "rgb_color_count": 248927,
+      "palette_exception": "non-pixel painterly Part L; 48-color cap does not apply",
+      "selected_version": "v02",
+      "generation_record": "records/generation_fusion_valhalla_v02.json",
+      "source": "originals/fusion_valhalla_v02.png",
+      "source_sha256": "c7851a3d79e6f2921f37c7420116cee6c3b1b3330cc63acf45e84d534e363a24",
+      "tool": "OpenAI built-in image_gen",
+      "commercial_basis": "https://openai.com/policies/terms-of-use/",
+      "references": [
+        {
+          "actual_input": "assets/source/taskL2_fusions_2026-10-20/originals/fusion_valhalla_v01.png",
+          "archive": "references/fusion_valhalla_v01.png",
+          "sha256": "46a8be608d0240502fb34e6452cf7d6048df5b48ee1f6f5faeb6fc71f300f919"
+        }
+      ],
+      "prompt": "Edit this portrait3:5 oil painting. Keep the SAME old one-eyed man, blonde feather-cloaked woman, their faces, costume, gold-violet hall and oil texture. SHRINK the summoned translucent warrior to half current size and MOVE upward, so his full helmet/head, torso, sword and shield fit completely inside x35%..65%, y28%..50%. It is a small secondary spirit rising between the two main characters, not a large third foreground person. No glow mist or detailed armor below y55%; bottom45% quiet dark blue-black cloak shadow. Keep both summoning hands natural and inside x20%..80%.",
+      "gameplay_source_snapshot": "\"valhalla\": {\"gods\": [\"odin\", \"freyja\"], \"name\": \"英灵殿与弗尔克范格\", \"desc\": \"每个精英死亡时召唤一位英灵，并肩作战 15 秒\"},",
+      "previews": {
+        "thumbnail": "previews/fusion_valhalla_v02_260.png",
+        "text_mask": "previews/fusion_valhalla_v02_masked.png",
+        "safe_area": "previews/fusion_valhalla_v02_safe.png"
+      },
+      "offline_mipmaps": [
+        {
+          "path": "mipmaps/fusion_valhalla/level_01_360x600.png",
+          "size": [
+            360,
+            600
+          ],
+          "sha256": "a494b455f6542025ed4607d2eafab824f89aecde5ec428487fba8c74fa62fff5"
+        },
+        {
+          "path": "mipmaps/fusion_valhalla/level_02_180x300.png",
+          "size": [
+            180,
+            300
+          ],
+          "sha256": "0c45b343fc19fcd6e22b5f01701ca998765addc986ea8c0592723d59b7969cdb"
+        },
+        {
+          "path": "mipmaps/fusion_valhalla/level_03_90x150.png",
+          "size": [
+            90,
+            150
+          ],
+          "sha256": "4634895dff221b474fde4bee553d9217786f7118470c07881c67c3382d703423"
+        },
+        {
+          "path": "mipmaps/fusion_valhalla/level_04_45x75.png",
+          "size": [
+            45,
+            75
+          ],
+          "sha256": "e57db06bf161bf7527f3507ea63c25dfdf1be1b572b998a36c00028e3dce72a4"
+        },
+        {
+          "path": "mipmaps/fusion_valhalla/level_05_22x37.png",
+          "size": [
+            22,
+            37
+          ],
+          "sha256": "147c8eff0cc93b903a6a85a4e48848a427981be72b40fc28123d653a0ff9a925"
+        },
+        {
+          "path": "mipmaps/fusion_valhalla/level_06_11x18.png",
+          "size": [
+            11,
+            18
+          ],
+          "sha256": "5af88b13c829c83a51765f22cc8d41bc8eeb274632011ea7038cbc55c4eddaac"
+        },
+        {
+          "path": "mipmaps/fusion_valhalla/level_07_5x9.png",
+          "size": [
+            5,
+            9
+          ],
+          "sha256": "188ee863e00d27b916264fa8a9b8907288154d9ed17ce85291fabe3c70698c6e"
+        },
+        {
+          "path": "mipmaps/fusion_valhalla/level_08_2x4.png",
+          "size": [
+            2,
+            4
+          ],
+          "sha256": "3d08228b4e365d2214ad9391c7b02dfa37cb6e2fa266f9369d7518a97a961cc0"
+        },
+        {
+          "path": "mipmaps/fusion_valhalla/level_09_1x2.png",
+          "size": [
+            1,
+            2
+          ],
+          "sha256": "18e6c08a4d09d9a81e39441b8ac2fee9d1ec41ca91721665581c4db69ab313e1"
+        },
+        {
+          "path": "mipmaps/fusion_valhalla/level_10_1x1.png",
+          "size": [
+            1,
+            1
+          ],
+          "sha256": "301d26bf7b6e435ae9f0ccbb787a8e857f3ae6e81f53d977b03c1a58e84cdc47"
+        }
+      ],
+      "normalization": {
+        "id": "fusion_valhalla",
+        "raw_size": [
+          972,
+          1619
+        ],
+        "raw_mode": "RGB",
+        "output_size": [
+          720,
+          1200
+        ],
+        "mode": "RGB",
+        "operation": "centered aspect crop to3:5, Lanczos resize720x1200, RGB only; no repaint, no artificial background darkening",
+        "candidate_sha256": "e50503cd66315b34edf3233e3061f9b2fca205ca5597f6820b7d113d9f0f39d3",
+        "bottom40_luminance": {
+          "mean": 14.69,
+          "pixels_over_100_fraction": 0.0,
+          "stddev": 5.0
+        },
+        "status": "normalization verified; candidate selected after separate visual review"
+      },
+      "visual_self_review": {
+        "visual_review": "英灵已缩小为双人中间的次要召唤灵，剑盾结构完整、双主角与厅堂明确；下40%暗简，缩略、遮罩、安全边通过。",
+        "checks": [
+          "source anatomy/weapon/animal",
+          "260 thumbnail",
+          "bottom45 mask",
+          "primary safe area",
+          "two identities"
+        ]
+      },
+      "file_verification": "passed: PNG/RGB/size/hash/source/reference/preview/mip dimensions",
+      "code_integration": "verified: actual Game LevelUpPanel selects exact card-ID texture, no generic portrait or split fusion",
+      "godot_import_mipmap": "verified by actual imported Texture2D.get_image(): 10 mip levels; linear+mipmap UI filter",
+      "game_acceptance": "passed controlled actual-Game card UI at1280/960/1600; full playthrough not tested",
+      "animation_rotation_tiling": "not applicable to static card illustrations",
+      "godot_import": {
+        "path": "assets/sprites/cards/fusion_valhalla.png.import",
+        "sha256": "e1aad7519b48be5ad253d878e767edca42f830bd7971d928f0bd891232670453"
+      }
+    },
+    {
+      "task_id": "L2",
+      "id": "fusion_baldr_dream",
+      "formal": "assets/sprites/cards/fusion_baldr_dream.png",
+      "sha256": "48c602e73cc79fd94d71265b591fcef482e0c34f28b6e2dd59c10ca6a008f09c",
+      "frame_size": [
+        720,
+        1200
+      ],
+      "frames": 1,
+      "fps": 0,
+      "anchor": {
+        "xy": [
+          360,
+          600
+        ],
+        "convention": "static UI texture center; no world-space pivot"
+      },
+      "loop": "not applicable: static illustration",
+      "transparency": "opaque RGB; Part L overrides pixel-art RGBA contract",
+      "rgb_color_count": 210031,
+      "palette_exception": "non-pixel painterly Part L; 48-color cap does not apply",
+      "selected_version": "v01",
+      "generation_record": "records/generation_fusion_baldr_dream_v01.json",
+      "source": "originals/fusion_baldr_dream_v01.png",
+      "source_sha256": "d24cd15ff28de960d60c42201fef49dc17e4d5b2267483a69b8a6b30525ac7ed",
+      "tool": "OpenAI built-in image_gen",
+      "commercial_basis": "https://openai.com/policies/terms-of-use/",
+      "references": [
+        {
+          "actual_input": "assets/sprites/cards/odin.png",
+          "archive": "references/odin.png",
+          "sha256": "423cab0736c5d60b840e7ba3d293901eba6d9f48025defc9fda56425cbf76fc2"
+        },
+        {
+          "actual_input": "assets/sprites/cards/baldr.png",
+          "archive": "references/baldr.png",
+          "sha256": "85328fed93ed46d1e18e81e40972d657673905e9a597d40d741e93ed01151c6c"
+        }
+      ],
+      "prompt": "Use case: illustration-story. Asset type: ONE premium game upgrade CARD ILLUSTRATION, portrait 3:5, intended final 720x1200 RGB. Style: richly textured restrained northern myth oil painting / painterly impasto, realistic faces and materials, same collection as attached original portraits, NOT pixel art, NOT anime, no glossy 3D. This is a living myth inside an ancient archive; do not add computers, museums or science-fiction. CRITICAL composition: heads and every key spell, weapon, animal or gesture entirely within upper55% of image; faces around y15-25%, upper bodies around y25-50%; bottom40% deep blue-black simple cloak/shadow fading into quiet negative space for game text. Left/right40px safe margins at final size: no face/important weapon/animal touches side edges. Show a single composed cinematic scene, not a multi-panel sheet. No borders, card frame, letters, readable runes, logos, watermark, interface or typography. Natural anatomy, clearly separated hands, structurally sound weapons, restrained bloom; faces legible at260px wide. Preserve identity, age, hair, facial features, costume materials and painterly style from references; pose and scenario change for THIS specific upgrade.\nSubject A identity: the same elderly long grey-bearded one-eyed northern wanderer, broad dark hat, fur cloak, weathered face, violet magic.\nSubject B identity: the same youthful clean-shaven pale-blond man, calm noble face, cream fur mantle and white-gold clothing, warm ivory light.\nSpecific shared spell scene: The elderly one-eyed wanderer watches a youthful pale-blond man in warm ivory light; a beam intersects violet prophetic abstract marks and flares, quiet foreboding, one scene and intact faces.\nTwo adult figures, equal scale, heads fully inside upper45%, no third main human, lighting links the pair into one coherent painting. Preserve the two separate identities, never merge facial features.\nKeep ALL important anatomy, weapon heads/tips and animal faces within CENTRAL80% of canvas (x10%..90%), not merely inside the outer edge. Leave side columns as background or unimportant cloak only. Place all hands/gesture and spell motifs above y52%; nothing bright or complex below y60%.\nBoth faces central and all spell motifs in upper50%. Keep hands entirely x20%..80%. Below y58% quiet dark shadow. Omit unrelated weapons/animals from references.",
+      "gameplay_source_snapshot": "\"baldr_dream\": {\"gods\": [\"odin\", \"baldr\"], \"name\": \"巴德尔之梦\", \"desc\": \"光束命中带符文印记的敌人时立刻引爆印记；符文命中时给敌人挂上光痕\"},",
+      "previews": {
+        "thumbnail": "previews/fusion_baldr_dream_v01_260.png",
+        "text_mask": "previews/fusion_baldr_dream_v01_masked.png",
+        "safe_area": "previews/fusion_baldr_dream_v01_safe.png"
+      },
+      "offline_mipmaps": [
+        {
+          "path": "mipmaps/fusion_baldr_dream/level_01_360x600.png",
+          "size": [
+            360,
+            600
+          ],
+          "sha256": "bf02c975df63318fe3f3868ab4a7ecb67da310be390c342743121d4ecd033622"
+        },
+        {
+          "path": "mipmaps/fusion_baldr_dream/level_02_180x300.png",
+          "size": [
+            180,
+            300
+          ],
+          "sha256": "540adf2b4c914b115a78a2e81a28407921c196aeac921fc123a401db9a8ff813"
+        },
+        {
+          "path": "mipmaps/fusion_baldr_dream/level_03_90x150.png",
+          "size": [
+            90,
+            150
+          ],
+          "sha256": "83e68c6d9b13b045cf8b41c4394bd0eff0a0b2b5d32fcd72619f2df6d444aeab"
+        },
+        {
+          "path": "mipmaps/fusion_baldr_dream/level_04_45x75.png",
+          "size": [
+            45,
+            75
+          ],
+          "sha256": "363f32ef5477a0ec986653cbedfdf094381f40d71ae59e78b45efcd749fea971"
+        },
+        {
+          "path": "mipmaps/fusion_baldr_dream/level_05_22x37.png",
+          "size": [
+            22,
+            37
+          ],
+          "sha256": "1788e1c1bc416c7143d501c18eb89648e04748f897421deff1dcfd32d374c103"
+        },
+        {
+          "path": "mipmaps/fusion_baldr_dream/level_06_11x18.png",
+          "size": [
+            11,
+            18
+          ],
+          "sha256": "13ed678502be6268df7fbe995ce7e3a6943b1cce18382e6e131157e729a9fc82"
+        },
+        {
+          "path": "mipmaps/fusion_baldr_dream/level_07_5x9.png",
+          "size": [
+            5,
+            9
+          ],
+          "sha256": "29fe7e2a204ffa25204233f21adeb7fee57ed42158232d2fa9bb5721d835e233"
+        },
+        {
+          "path": "mipmaps/fusion_baldr_dream/level_08_2x4.png",
+          "size": [
+            2,
+            4
+          ],
+          "sha256": "bdae88c90e7c9b8349e74c23e5aa05fa2ae9bcc9efd5a9261c3059a76eb13917"
+        },
+        {
+          "path": "mipmaps/fusion_baldr_dream/level_09_1x2.png",
+          "size": [
+            1,
+            2
+          ],
+          "sha256": "d5c3cbdb07bc8cc72e28a1079981c19716b8325d5f83ee8582a5c9afb4af5333"
+        },
+        {
+          "path": "mipmaps/fusion_baldr_dream/level_10_1x1.png",
+          "size": [
+            1,
+            1
+          ],
+          "sha256": "602461e9120420bb22c567445b93134fe8438ca2a75af7a89cb7fd3797b405f9"
+        }
+      ],
+      "normalization": {
+        "id": "fusion_baldr_dream",
+        "raw_size": [
+          971,
+          1619
+        ],
+        "raw_mode": "RGB",
+        "output_size": [
+          720,
+          1200
+        ],
+        "mode": "RGB",
+        "operation": "centered aspect crop to3:5, Lanczos resize720x1200, RGB only; no repaint, no artificial background darkening",
+        "candidate_sha256": "48c602e73cc79fd94d71265b591fcef482e0c34f28b6e2dd59c10ca6a008f09c",
+        "bottom40_luminance": {
+          "mean": 17.71,
+          "pixels_over_100_fraction": 0.0,
+          "stddev": 7.76
+        },
+        "status": "normalization verified; candidate selected after separate visual review"
+      },
+      "visual_self_review": {
+        "visual_review": "老人与青年双脸身份明确，白金圣光交会紫色预兆几何；两只施法手自然、完整，主体集中上方；缩略、遮罩、安全边通过。",
+        "checks": [
+          "source anatomy",
+          "260 thumbnail",
+          "bottom45 mask",
+          "safe area",
+          "two identities"
+        ]
+      },
+      "file_verification": "passed: PNG/RGB/size/hash/source/reference/preview/mip dimensions",
+      "code_integration": "verified: actual Game LevelUpPanel selects exact card-ID texture, no generic portrait or split fusion",
+      "godot_import_mipmap": "verified by actual imported Texture2D.get_image(): 10 mip levels; linear+mipmap UI filter",
+      "game_acceptance": "passed controlled actual-Game card UI at1280/960/1600; full playthrough not tested",
+      "animation_rotation_tiling": "not applicable to static card illustrations",
+      "godot_import": {
+        "path": "assets/sprites/cards/fusion_baldr_dream.png.import",
+        "sha256": "92473090379e18ce3ca9d1b7d39ccc39054308c8bff914d959e399deff62e36f"
+      }
+    },
+    {
+      "task_id": "L2",
+      "id": "fusion_mistletoe",
+      "formal": "assets/sprites/cards/fusion_mistletoe.png",
+      "sha256": "81071ea7eff36e247ee22fce576c8a301fb505093d87a7f43d61a9a6b6dda449",
+      "frame_size": [
+        720,
+        1200
+      ],
+      "frames": 1,
+      "fps": 0,
+      "anchor": {
+        "xy": [
+          360,
+          600
+        ],
+        "convention": "static UI texture center; no world-space pivot"
+      },
+      "loop": "not applicable: static illustration",
+      "transparency": "opaque RGB; Part L overrides pixel-art RGBA contract",
+      "rgb_color_count": 200346,
+      "palette_exception": "non-pixel painterly Part L; 48-color cap does not apply",
+      "selected_version": "v02",
+      "generation_record": "records/generation_fusion_mistletoe_v02.json",
+      "source": "originals/fusion_mistletoe_v02.png",
+      "source_sha256": "b07811201195536bc8b358230cd02a4156fa8c255bdc8f556fb2dca6e6a9fefd",
+      "tool": "OpenAI built-in image_gen",
+      "commercial_basis": "https://openai.com/policies/terms-of-use/",
+      "references": [
+        {
+          "actual_input": "assets/source/taskL2_fusions_2026-10-20/originals/fusion_mistletoe_v01.png",
+          "archive": "references/fusion_mistletoe_v01.png",
+          "sha256": "0a517b2ef2f17d03609af275319fcd522fafbafb55675c396a837ee1bede3686"
+        }
+      ],
+      "prompt": "Edit this portrait3:5 oil painting. Keep SAME auburn-haired clean-shaven man and SAME pale-blond youth, same faces and oil texture. REMOVE the entire large curved leafy bow, bowstring and old long arrow. Instead ONE SMALL straight mistletoe-twig ARROW floats horizontally BETWEEN their upper chests from x33% to x70%, y33%, with distinct short arrowhead, tiny paired oval green leaves and pearl-white berries along its shaft. Ivory light threaded with orange fire around that single arrow, no other weapon. Both men's hands now small natural open palms just beneath it x38% and x65%, y40%. Nothing near side edges. Dark lower45%, no text.",
+      "gameplay_source_snapshot": "\"mistletoe\": {\"gods\": [\"loki\", \"baldr\"], \"name\": \"槲寄生\", \"desc\": \"光束点燃敌人；带光痕又在灼烧的敌人死亡时，射出一支贯穿的槲寄生之箭\"},",
+      "previews": {
+        "thumbnail": "previews/fusion_mistletoe_v02_260.png",
+        "text_mask": "previews/fusion_mistletoe_v02_masked.png",
+        "safe_area": "previews/fusion_mistletoe_v02_safe.png"
+      },
+      "offline_mipmaps": [
+        {
+          "path": "mipmaps/fusion_mistletoe/level_01_360x600.png",
+          "size": [
+            360,
+            600
+          ],
+          "sha256": "ba7e5d61ec31137e9d9e60da565eda7044b72d877144747a84c5e76b114e1cfe"
+        },
+        {
+          "path": "mipmaps/fusion_mistletoe/level_02_180x300.png",
+          "size": [
+            180,
+            300
+          ],
+          "sha256": "1d247e2c831c298e6f34b2582f760a487cdc49bf69ecc32df1d097ae59463e50"
+        },
+        {
+          "path": "mipmaps/fusion_mistletoe/level_03_90x150.png",
+          "size": [
+            90,
+            150
+          ],
+          "sha256": "4f6db25752686dc22e8c880ac1ff08979216f616e8b4701d25338733aba833e8"
+        },
+        {
+          "path": "mipmaps/fusion_mistletoe/level_04_45x75.png",
+          "size": [
+            45,
+            75
+          ],
+          "sha256": "1646544d3c41faf4d189e073748d7c4c38323b82b84fef649081da9eeb3e558a"
+        },
+        {
+          "path": "mipmaps/fusion_mistletoe/level_05_22x37.png",
+          "size": [
+            22,
+            37
+          ],
+          "sha256": "ced31511383214a4d85875e31e8efb7e46828c167176d73afa87b5173d10b04a"
+        },
+        {
+          "path": "mipmaps/fusion_mistletoe/level_06_11x18.png",
+          "size": [
+            11,
+            18
+          ],
+          "sha256": "a14c1352a00f0646fe27d37df24fb17d79768727702d1152348c0fe742e04317"
+        },
+        {
+          "path": "mipmaps/fusion_mistletoe/level_07_5x9.png",
+          "size": [
+            5,
+            9
+          ],
+          "sha256": "3ff249fa4874174d3183595eda9ef6e91ec20d7231074d7065c2680d9c4c238b"
+        },
+        {
+          "path": "mipmaps/fusion_mistletoe/level_08_2x4.png",
+          "size": [
+            2,
+            4
+          ],
+          "sha256": "82926b3763efc86bce66aa2a052173b501135adeab0a24a29550e0af704ca8b4"
+        },
+        {
+          "path": "mipmaps/fusion_mistletoe/level_09_1x2.png",
+          "size": [
+            1,
+            2
+          ],
+          "sha256": "4e72e5cdddb0d04ea660eff51fa4177138152e689b4212984c0a2eb167a072c9"
+        },
+        {
+          "path": "mipmaps/fusion_mistletoe/level_10_1x1.png",
+          "size": [
+            1,
+            1
+          ],
+          "sha256": "f9fb85e164ead9b07abc504fad8a6d1be01c9dfda647f8155b522f74c720a716"
+        }
+      ],
+      "normalization": {
+        "id": "fusion_mistletoe",
+        "raw_size": [
+          971,
+          1620
+        ],
+        "raw_mode": "RGB",
+        "output_size": [
+          720,
+          1200
+        ],
+        "mode": "RGB",
+        "operation": "centered aspect crop to3:5, Lanczos resize720x1200, RGB only; no repaint, no artificial background darkening",
+        "candidate_sha256": "81071ea7eff36e247ee22fce576c8a301fb505093d87a7f43d61a9a6b6dda449",
+        "bottom40_luminance": {
+          "mean": 14.56,
+          "pixels_over_100_fraction": 0.0002,
+          "stddev": 10.33
+        },
+        "status": "normalization verified; candidate selected after separate visual review"
+      },
+      "visual_self_review": {
+        "visual_review": "巨大弓已移除，单枚槲寄生枝箭、成对叶与白果可辨，金白光和橙火交织；双手自然且箭尖安全。缩略和遮罩通过。",
+        "checks": [
+          "source anatomy/weapon/animal",
+          "260 thumbnail",
+          "bottom45 mask",
+          "primary safe area",
+          "two identities"
+        ]
+      },
+      "file_verification": "passed: PNG/RGB/size/hash/source/reference/preview/mip dimensions",
+      "code_integration": "verified: actual Game LevelUpPanel selects exact card-ID texture, no generic portrait or split fusion",
+      "godot_import_mipmap": "verified by actual imported Texture2D.get_image(): 10 mip levels; linear+mipmap UI filter",
+      "game_acceptance": "passed controlled actual-Game card UI at1280/960/1600; full playthrough not tested",
+      "animation_rotation_tiling": "not applicable to static card illustrations",
+      "godot_import": {
+        "path": "assets/sprites/cards/fusion_mistletoe.png.import",
+        "sha256": "47a557d9348096b0bd60b5f48c083507113c8781ea1965cfed66f6b1ff84e9fd"
+      }
+    },
+    {
+      "task_id": "L2",
+      "id": "fusion_venom",
+      "formal": "assets/sprites/cards/fusion_venom.png",
+      "sha256": "3fb2afbb2d90760f1d136b5c478b56d9819d4a38e78cf3084241bde4ff724475",
+      "frame_size": [
+        720,
+        1200
+      ],
+      "frames": 1,
+      "fps": 0,
+      "anchor": {
+        "xy": [
+          360,
+          600
+        ],
+        "convention": "static UI texture center; no world-space pivot"
+      },
+      "loop": "not applicable: static illustration",
+      "transparency": "opaque RGB; Part L overrides pixel-art RGBA contract",
+      "rgb_color_count": 259883,
+      "palette_exception": "non-pixel painterly Part L; 48-color cap does not apply",
+      "selected_version": "v01",
+      "generation_record": "records/generation_fusion_venom_v01.json",
+      "source": "originals/fusion_venom_v01.png",
+      "source_sha256": "02c0418fd291d5e983e710580c9ce13e06550bfb9c648e62c9a7b96f05ad9b03",
+      "tool": "OpenAI built-in image_gen",
+      "commercial_basis": "https://openai.com/policies/terms-of-use/",
+      "references": [
+        {
+          "actual_input": "assets/sprites/cards/loki.png",
+          "archive": "references/loki.png",
+          "sha256": "dbae4dd1d0d3c103b3c0fd2f5f1d668a9a71248a7d13f14832a1530e27431314"
+        },
+        {
+          "actual_input": "assets/sprites/cards/skadi.png",
+          "archive": "references/skadi.png",
+          "sha256": "944db9fd75a5c885242d446ec67f34d03449deccf4a01cee5800638673dfa162"
+        }
+      ],
+      "prompt": "Use case: illustration-story. Asset type: ONE premium game upgrade CARD ILLUSTRATION, portrait 3:5, intended final 720x1200 RGB. Style: richly textured restrained northern myth oil painting / painterly impasto, realistic faces and materials, same collection as attached original portraits, NOT pixel art, NOT anime, no glossy 3D. This is a living myth inside an ancient archive; do not add computers, museums or science-fiction. CRITICAL composition: heads and every key spell, weapon, animal or gesture entirely within upper55% of image; faces around y15-25%, upper bodies around y25-50%; bottom40% deep blue-black simple cloak/shadow fading into quiet negative space for game text. Left/right40px safe margins at final size: no face/important weapon/animal touches side edges. Show a single composed cinematic scene, not a multi-panel sheet. No borders, card frame, letters, readable runes, logos, watermark, interface or typography. Natural anatomy, clearly separated hands, structurally sound weapons, restrained bloom; faces legible at260px wide. Preserve identity, age, hair, facial features, costume materials and painterly style from references; pose and scenario change for THIS specific upgrade.\nSubject A identity: the same lean clean-shaven auburn-haired man, sharp intelligent face, dark fur-trimmed leather clothing, orange trickster fire; no horned crown.\nSubject B identity: the same stern silver-haired mature huntress, dark fur mantle and leather gloves, wooden bow, icy blue magic and winter mountains.\nSpecific shared spell scene: The auburn-haired man and silver-haired huntress frame ONE dark coiling snake with one clear head, cold blue frost crust on scales meets orange embers, a tiny poison drop below its fangs; frost and burning coexist, no gore or bound torture victim.\nTwo adult figures, equal scale, heads fully inside upper45%, no third main human, lighting links the pair into one coherent painting. Preserve the two separate identities, never merge facial features.\nKeep ALL important anatomy, weapon heads/tips and animal faces within CENTRAL80% of canvas (x10%..90%), not merely inside the outer edge. Leave side columns as background or unimportant cloak only. Place all hands/gesture and spell motifs above y52%; nothing bright or complex below y60%.\nMake the shared magical motif SMALL, between both faces and upper chests, entirely x25%..75%, y25%..45%. Both faces inside central70%, hands naturally held near chests, no limb pointing at any side edge. Bottom45% quiet deep blue-black cloak and shadow. Omit unrelated weapons and animals from the portrait references.",
+      "gameplay_source_snapshot": "\"venom\": {\"gods\": [\"loki\", \"skadi\"], \"name\": \"毒蛇之刑\", \"desc\": \"灼烧的敌人每秒叠 1 层霜冻；冻结的敌人受到的灼烧伤害翻倍\"},",
+      "previews": {
+        "thumbnail": "previews/fusion_venom_v01_260.png",
+        "text_mask": "previews/fusion_venom_v01_masked.png",
+        "safe_area": "previews/fusion_venom_v01_safe.png"
+      },
+      "offline_mipmaps": [
+        {
+          "path": "mipmaps/fusion_venom/level_01_360x600.png",
+          "size": [
+            360,
+            600
+          ],
+          "sha256": "c427d6c2a005a26c654556a6f30f48bdd016827e369a708eb491f80b4aaf4fe7"
+        },
+        {
+          "path": "mipmaps/fusion_venom/level_02_180x300.png",
+          "size": [
+            180,
+            300
+          ],
+          "sha256": "070cb5e05a91842bf6f5f4df470af6fbbca1dc416df790978dd0ed3423d96d62"
+        },
+        {
+          "path": "mipmaps/fusion_venom/level_03_90x150.png",
+          "size": [
+            90,
+            150
+          ],
+          "sha256": "a5f390424e1f8f0831a552b961c6a2f069875b664f1024e067fbea37fedd1c49"
+        },
+        {
+          "path": "mipmaps/fusion_venom/level_04_45x75.png",
+          "size": [
+            45,
+            75
+          ],
+          "sha256": "63e268aaa780e0cd33f19fac33fac247b15f247a7baa73092371f73d02d0752f"
+        },
+        {
+          "path": "mipmaps/fusion_venom/level_05_22x37.png",
+          "size": [
+            22,
+            37
+          ],
+          "sha256": "0035bfc184687d20c451ac422018cbe89d2eec40a01b142361345b2d726cff64"
+        },
+        {
+          "path": "mipmaps/fusion_venom/level_06_11x18.png",
+          "size": [
+            11,
+            18
+          ],
+          "sha256": "b4459398df8e278a4a371cc677e51183a98af95b726a56848137cd91f495778c"
+        },
+        {
+          "path": "mipmaps/fusion_venom/level_07_5x9.png",
+          "size": [
+            5,
+            9
+          ],
+          "sha256": "2f3333ecce1529acf4da89307b0ac79d9482fae48a7ca8c8055ecde4ba49c265"
+        },
+        {
+          "path": "mipmaps/fusion_venom/level_08_2x4.png",
+          "size": [
+            2,
+            4
+          ],
+          "sha256": "36ff69b4b8135d25625caf9964b14f680ff3f9ad5ceec85bb5840401d1bb8525"
+        },
+        {
+          "path": "mipmaps/fusion_venom/level_09_1x2.png",
+          "size": [
+            1,
+            2
+          ],
+          "sha256": "90a1ab50e24bada2dbedff428f0f5ae4fe54fc41bc5ec88dc592d94584fa3936"
+        },
+        {
+          "path": "mipmaps/fusion_venom/level_10_1x1.png",
+          "size": [
+            1,
+            1
+          ],
+          "sha256": "492ce533d05cee331299f1c40ef1d20b195a48cb1004e6b6048aba1249aa14c6"
+        }
+      ],
+      "normalization": {
+        "id": "fusion_venom",
+        "raw_size": [
+          972,
+          1619
+        ],
+        "raw_mode": "RGB",
+        "output_size": [
+          720,
+          1200
+        ],
+        "mode": "RGB",
+        "operation": "centered aspect crop to3:5, Lanczos resize720x1200, RGB only; no repaint, no artificial background darkening",
+        "candidate_sha256": "3fb2afbb2d90760f1d136b5c478b56d9819d4a38e78cf3084241bde4ff724475",
+        "bottom40_luminance": {
+          "mean": 13.69,
+          "pixels_over_100_fraction": 0.0002,
+          "stddev": 7.77
+        },
+        "status": "normalization verified; candidate selected after separate visual review"
+      },
+      "visual_self_review": {
+        "visual_review": "单头蛇、鳞片、双突出毒牙与一滴绿色毒液清楚；蓝霜橙火与两位主角统一，手部结构和安全边正常；缩略与遮罩通过。",
+        "checks": [
+          "source anatomy/weapon/animal",
+          "260 thumbnail",
+          "bottom45 mask",
+          "primary safe area",
+          "two identities"
+        ]
+      },
+      "file_verification": "passed: PNG/RGB/size/hash/source/reference/preview/mip dimensions",
+      "code_integration": "verified: actual Game LevelUpPanel selects exact card-ID texture, no generic portrait or split fusion",
+      "godot_import_mipmap": "verified by actual imported Texture2D.get_image(): 10 mip levels; linear+mipmap UI filter",
+      "game_acceptance": "passed controlled actual-Game card UI at1280/960/1600; full playthrough not tested",
+      "animation_rotation_tiling": "not applicable to static card illustrations",
+      "godot_import": {
+        "path": "assets/sprites/cards/fusion_venom.png.import",
+        "sha256": "e954f3e71622d9b0da0fe4a7317a82ba2936b7dbe1b90d15dde3d2335572c4f0"
+      }
+    },
+    {
+      "task_id": "L2",
+      "id": "fusion_andvari",
+      "formal": "assets/sprites/cards/fusion_andvari.png",
+      "sha256": "a145a67fe92412487d61a0d14a74e796f81472ddb7d6f5f56f550de948256537",
+      "frame_size": [
+        720,
+        1200
+      ],
+      "frames": 1,
+      "fps": 0,
+      "anchor": {
+        "xy": [
+          360,
+          600
+        ],
+        "convention": "static UI texture center; no world-space pivot"
+      },
+      "loop": "not applicable: static illustration",
+      "transparency": "opaque RGB; Part L overrides pixel-art RGBA contract",
+      "rgb_color_count": 220242,
+      "palette_exception": "non-pixel painterly Part L; 48-color cap does not apply",
+      "selected_version": "v01",
+      "generation_record": "records/generation_fusion_andvari_v01.json",
+      "source": "originals/fusion_andvari_v01.png",
+      "source_sha256": "ede42642e180ead9bc985d15d6897c70f1643912c85b460872b5380a4eb86d0f",
+      "tool": "OpenAI built-in image_gen",
+      "commercial_basis": "https://openai.com/policies/terms-of-use/",
+      "references": [
+        {
+          "actual_input": "assets/sprites/cards/loki.png",
+          "archive": "references/loki.png",
+          "sha256": "dbae4dd1d0d3c103b3c0fd2f5f1d668a9a71248a7d13f14832a1530e27431314"
+        },
+        {
+          "actual_input": "assets/sprites/cards/ran.png",
+          "archive": "references/ran.png",
+          "sha256": "7c1cd8ad824d24219c95a76e5bb1f62546c274674ae7315c6c940690cb446a0e"
+        }
+      ],
+      "prompt": "Use case: illustration-story. Asset type: ONE premium game upgrade CARD ILLUSTRATION, portrait 3:5, intended final 720x1200 RGB. Style: richly textured restrained northern myth oil painting / painterly impasto, realistic faces and materials, same collection as attached original portraits, NOT pixel art, NOT anime, no glossy 3D. This is a living myth inside an ancient archive; do not add computers, museums or science-fiction. CRITICAL composition: heads and every key spell, weapon, animal or gesture entirely within upper55% of image; faces around y15-25%, upper bodies around y25-50%; bottom40% deep blue-black simple cloak/shadow fading into quiet negative space for game text. Left/right40px safe margins at final size: no face/important weapon/animal touches side edges. Show a single composed cinematic scene, not a multi-panel sheet. No borders, card frame, letters, readable runes, logos, watermark, interface or typography. Natural anatomy, clearly separated hands, structurally sound weapons, restrained bloom; faces legible at260px wide. Preserve identity, age, hair, facial features, costume materials and painterly style from references; pose and scenario change for THIS specific upgrade.\nSubject A identity: the same lean clean-shaven auburn-haired man, sharp intelligent face, dark fur-trimmed leather clothing, orange trickster fire; no horned crown.\nSubject B identity: the same pale dark-haired mature sea woman, wet flowing hair, dark teal sea-cloak, rope net and antique gold ornaments, storm-blue water.\nSpecific shared spell scene: The wet dark-haired sea woman holds a weighted woven net while the auburn-haired man lights its captured antique GOLD coins with controlled orange fire; blue water, orange flame and gold in one cohesive composition; net not fused into fingers.\nTwo adult figures, equal scale, heads fully inside upper45%, no third main human, lighting links the pair into one coherent painting. Preserve the two separate identities, never merge facial features.\nKeep ALL important anatomy, weapon heads/tips and animal faces within CENTRAL80% of canvas (x10%..90%), not merely inside the outer edge. Leave side columns as background or unimportant cloak only. Place all hands/gesture and spell motifs above y52%; nothing bright or complex below y60%.\nMake the shared magical motif SMALL, between both faces and upper chests, entirely x25%..75%, y25%..45%. Both faces inside central70%, hands naturally held near chests, no limb pointing at any side edge. Bottom45% quiet deep blue-black cloak and shadow. Omit unrelated weapons and animals from the portrait references.",
+      "gameplay_source_snapshot": "\"andvari\": {\"gods\": [\"loki\", \"ran\"], \"name\": \"安德瓦利\", \"desc\": \"网里的敌人被点燃；网里被烧死的敌人有几率掉落奖励点\"},",
+      "previews": {
+        "thumbnail": "previews/fusion_andvari_v01_260.png",
+        "text_mask": "previews/fusion_andvari_v01_masked.png",
+        "safe_area": "previews/fusion_andvari_v01_safe.png"
+      },
+      "offline_mipmaps": [
+        {
+          "path": "mipmaps/fusion_andvari/level_01_360x600.png",
+          "size": [
+            360,
+            600
+          ],
+          "sha256": "b88219afc8c911a58bd0d6bcca471fd510e6495bd5305feeae35a8ee11d567bd"
+        },
+        {
+          "path": "mipmaps/fusion_andvari/level_02_180x300.png",
+          "size": [
+            180,
+            300
+          ],
+          "sha256": "6ce50b1b4b4e8fda70177de1c3c3fe598c91f9a02738cd4bdaccd13d7921b3da"
+        },
+        {
+          "path": "mipmaps/fusion_andvari/level_03_90x150.png",
+          "size": [
+            90,
+            150
+          ],
+          "sha256": "901ecfdde763298af8e2ff400fec324dcdc542f30d3d7aeacaed4953a5182dae"
+        },
+        {
+          "path": "mipmaps/fusion_andvari/level_04_45x75.png",
+          "size": [
+            45,
+            75
+          ],
+          "sha256": "6b2af8c7bd0e68379e0e3ba377b6cd0f86f6c57708ab42a9a54a9bc092c2bdb9"
+        },
+        {
+          "path": "mipmaps/fusion_andvari/level_05_22x37.png",
+          "size": [
+            22,
+            37
+          ],
+          "sha256": "795e9976999850226764d6be9b17b4d66d8dc2a1c67840fa4cd0f47609af3b3d"
+        },
+        {
+          "path": "mipmaps/fusion_andvari/level_06_11x18.png",
+          "size": [
+            11,
+            18
+          ],
+          "sha256": "89eaf1a63ff8bbbf76319597685a6ca3ab48c86ba0cb388dfb7810855dabcecc"
+        },
+        {
+          "path": "mipmaps/fusion_andvari/level_07_5x9.png",
+          "size": [
+            5,
+            9
+          ],
+          "sha256": "d67185e61e20e5ed0e3aee2e7da5357219947429582fdf9c1d1e877741484f88"
+        },
+        {
+          "path": "mipmaps/fusion_andvari/level_08_2x4.png",
+          "size": [
+            2,
+            4
+          ],
+          "sha256": "e75867dabc346bcbffdff9c47a20ce442b1c6122be4acb57287ebbd46cc210d4"
+        },
+        {
+          "path": "mipmaps/fusion_andvari/level_09_1x2.png",
+          "size": [
+            1,
+            2
+          ],
+          "sha256": "c4972b8f7f2024407c565b1d65db4e0697f9b7e7fc5e20a596c9271ca2d4ea02"
+        },
+        {
+          "path": "mipmaps/fusion_andvari/level_10_1x1.png",
+          "size": [
+            1,
+            1
+          ],
+          "sha256": "824dc1e78bc8db447aa2a0ffdfe2dae59704110237139ff0ef75b579f4065814"
+        }
+      ],
+      "normalization": {
+        "id": "fusion_andvari",
+        "raw_size": [
+          971,
+          1619
+        ],
+        "raw_mode": "RGB",
+        "output_size": [
+          720,
+          1200
+        ],
+        "mode": "RGB",
+        "operation": "centered aspect crop to3:5, Lanczos resize720x1200, RGB only; no repaint, no artificial background darkening",
+        "candidate_sha256": "a145a67fe92412487d61a0d14a74e796f81472ddb7d6f5f56f550de948256537",
+        "bottom40_luminance": {
+          "mean": 11.55,
+          "pixels_over_100_fraction": 0.0003,
+          "stddev": 6.95
+        },
+        "status": "normalization verified; candidate selected after separate visual review"
+      },
+      "visual_self_review": {
+        "visual_review": "渔网的绳结、古币和火光清晰，双脸与施法/握网手归属正常，蓝海橙火金色统一；缩略、遮罩、安全边通过。",
+        "checks": [
+          "source anatomy/weapon/animal",
+          "260 thumbnail",
+          "bottom45 mask",
+          "primary safe area",
+          "two identities"
+        ]
+      },
+      "file_verification": "passed: PNG/RGB/size/hash/source/reference/preview/mip dimensions",
+      "code_integration": "verified: actual Game LevelUpPanel selects exact card-ID texture, no generic portrait or split fusion",
+      "godot_import_mipmap": "verified by actual imported Texture2D.get_image(): 10 mip levels; linear+mipmap UI filter",
+      "game_acceptance": "passed controlled actual-Game card UI at1280/960/1600; full playthrough not tested",
+      "animation_rotation_tiling": "not applicable to static card illustrations",
+      "godot_import": {
+        "path": "assets/sprites/cards/fusion_andvari.png.import",
+        "sha256": "89b414759bbc31c4124349d882b2c841010773378fc59b8d18380af95696cf00"
+      }
+    },
+    {
+      "task_id": "L2",
+      "id": "fusion_vanir_twins",
+      "formal": "assets/sprites/cards/fusion_vanir_twins.png",
+      "sha256": "b059f3ad694b84b309142ecbff013187bf434034f9ed63f6bb71253fe2b0e456",
+      "frame_size": [
+        720,
+        1200
+      ],
+      "frames": 1,
+      "fps": 0,
+      "anchor": {
+        "xy": [
+          360,
+          600
+        ],
+        "convention": "static UI texture center; no world-space pivot"
+      },
+      "loop": "not applicable: static illustration",
+      "transparency": "opaque RGB; Part L overrides pixel-art RGBA contract",
+      "rgb_color_count": 224578,
+      "palette_exception": "non-pixel painterly Part L; 48-color cap does not apply",
+      "selected_version": "v01",
+      "generation_record": "records/generation_fusion_vanir_twins_v01.json",
+      "source": "originals/fusion_vanir_twins_v01.png",
+      "source_sha256": "bab892147ad726baec2354928eaec4073db9da630fb672232761332c14998d47",
+      "tool": "OpenAI built-in image_gen",
+      "commercial_basis": "https://openai.com/policies/terms-of-use/",
+      "references": [
+        {
+          "actual_input": "assets/sprites/cards/freyja.png",
+          "archive": "references/freyja.png",
+          "sha256": "43720f46be69b092a375a443c7e43d07285fd36ad7017e9397c3eb7293e09410"
+        },
+        {
+          "actual_input": "assets/sprites/cards/freyr.png",
+          "archive": "references/freyr.png",
+          "sha256": "41d177886430c6b5fb72bcbcd17ee79907f54cec9f02cda087f892cb5bc7fa49"
+        }
+      ],
+      "prompt": "Use case: illustration-story. Asset type: ONE premium game upgrade CARD ILLUSTRATION, portrait 3:5, intended final 720x1200 RGB. Style: richly textured restrained northern myth oil painting / painterly impasto, realistic faces and materials, same collection as attached original portraits, NOT pixel art, NOT anime, no glossy 3D. This is a living myth inside an ancient archive; do not add computers, museums or science-fiction. CRITICAL composition: heads and every key spell, weapon, animal or gesture entirely within upper55% of image; faces around y15-25%, upper bodies around y25-50%; bottom40% deep blue-black simple cloak/shadow fading into quiet negative space for game text. Left/right40px safe margins at final size: no face/important weapon/animal touches side edges. Show a single composed cinematic scene, not a multi-panel sheet. No borders, card frame, letters, readable runes, logos, watermark, interface or typography. Natural anatomy, clearly separated hands, structurally sound weapons, restrained bloom; faces legible at260px wide. Preserve identity, age, hair, facial features, costume materials and painterly style from references; pose and scenario change for THIS specific upgrade.\nSubject A identity: the same mature blonde woman with a strong composed face, dark feather cloak, gold necklace and bronze ornaments, pale gold magic.\nSubject B identity: the same golden-haired bearded mature man, green and gold clothing under a dark fur mantle, bronze leaf ornaments, warm harvest sunlight.\nSpecific shared spell scene: The blonde feather-cloaked woman and golden-haired bearded green-clad man stand shoulder to shoulder, ONE floating golden straight sword crosses one curving gold FEATHER blade, gold selection light at their crossing, warm familial solidarity without romance.\nTwo adult figures, equal scale, heads fully inside upper45%, no third main human, lighting links the pair into one coherent painting. Preserve the two separate identities, never merge facial features.\nKeep ALL important anatomy, weapon heads/tips and animal faces within CENTRAL80% of canvas (x10%..90%), not merely inside the outer edge. Leave side columns as background or unimportant cloak only. Place all hands/gesture and spell motifs above y52%; nothing bright or complex below y60%.\nMake the shared magical motif SMALL, between both faces and upper chests, entirely x25%..75%, y25%..45%. Both faces inside central70%, hands naturally held near chests, no limb pointing at any side edge. Bottom45% quiet deep blue-black cloak and shadow. Omit unrelated weapons and animals from the portrait references.",
+      "gameplay_source_snapshot": "\"vanir_twins\": {\"gods\": [\"freyja\", \"freyr\"], \"name\": \"华纳双子\", \"desc\": \"每 3 秒一片羽刃离身追击敌人再飞回；飞剑命中的敌人被拣选\"},",
+      "previews": {
+        "thumbnail": "previews/fusion_vanir_twins_v01_260.png",
+        "text_mask": "previews/fusion_vanir_twins_v01_masked.png",
+        "safe_area": "previews/fusion_vanir_twins_v01_safe.png"
+      },
+      "offline_mipmaps": [
+        {
+          "path": "mipmaps/fusion_vanir_twins/level_01_360x600.png",
+          "size": [
+            360,
+            600
+          ],
+          "sha256": "874d90d01a390b3028d52eab35211d7af339e128a4652a10b7eb96966110e88b"
+        },
+        {
+          "path": "mipmaps/fusion_vanir_twins/level_02_180x300.png",
+          "size": [
+            180,
+            300
+          ],
+          "sha256": "12e97808bacd49deb8efb81d69062f3440d698fbfeb8cb20f7a75829febb4e42"
+        },
+        {
+          "path": "mipmaps/fusion_vanir_twins/level_03_90x150.png",
+          "size": [
+            90,
+            150
+          ],
+          "sha256": "dd11004b6e0ba362102670a638ec0f22406d4ea60d47dd6390dd23a878f77a58"
+        },
+        {
+          "path": "mipmaps/fusion_vanir_twins/level_04_45x75.png",
+          "size": [
+            45,
+            75
+          ],
+          "sha256": "811f4efc3b7ac5da8f9590293e961f8ac7781e29f9a87aa97909974982516c88"
+        },
+        {
+          "path": "mipmaps/fusion_vanir_twins/level_05_22x37.png",
+          "size": [
+            22,
+            37
+          ],
+          "sha256": "dab312be647ac17bf9bbe952188e7819cff4e026ef2ba0f17b49756ab77bb783"
+        },
+        {
+          "path": "mipmaps/fusion_vanir_twins/level_06_11x18.png",
+          "size": [
+            11,
+            18
+          ],
+          "sha256": "54e59971637296551305a2215217bb328d70cec7baa6774de2dd9327d3b81149"
+        },
+        {
+          "path": "mipmaps/fusion_vanir_twins/level_07_5x9.png",
+          "size": [
+            5,
+            9
+          ],
+          "sha256": "006818dedacf6aa471f50f3759a5492981a643dc0666f657c2c4bb805558b78f"
+        },
+        {
+          "path": "mipmaps/fusion_vanir_twins/level_08_2x4.png",
+          "size": [
+            2,
+            4
+          ],
+          "sha256": "737add34516e6a2c1663d772cfba27c7369855a8eca2cb5781f47880854e6164"
+        },
+        {
+          "path": "mipmaps/fusion_vanir_twins/level_09_1x2.png",
+          "size": [
+            1,
+            2
+          ],
+          "sha256": "cae32ec18796d05e477b12c05e90bb334ef23b3cc8c363bfe7bb87d1f4584e97"
+        },
+        {
+          "path": "mipmaps/fusion_vanir_twins/level_10_1x1.png",
+          "size": [
+            1,
+            1
+          ],
+          "sha256": "9af6771b0cf8e6e8cb608105b89ea8f6175fb2ee5a4ed2b9aa51f039d6ac43ef"
+        }
+      ],
+      "normalization": {
+        "id": "fusion_vanir_twins",
+        "raw_size": [
+          971,
+          1619
+        ],
+        "raw_mode": "RGB",
+        "output_size": [
+          720,
+          1200
+        ],
+        "mode": "RGB",
+        "operation": "centered aspect crop to3:5, Lanczos resize720x1200, RGB only; no repaint, no artificial background darkening",
+        "candidate_sha256": "b059f3ad694b84b309142ecbff013187bf434034f9ed63f6bb71253fe2b0e456",
+        "bottom40_luminance": {
+          "mean": 17.52,
+          "pixels_over_100_fraction": 0.0001,
+          "stddev": 6.76
+        },
+        "status": "normalization verified; candidate selected after separate visual review"
+      },
+      "visual_self_review": {
+        "visual_review": "一柄完整直剑与金羽交叉，三只手分属女方握羽及男方双手持剑，结构合理；金饰、绿衣与身份延续，缩略、遮罩、安全边通过。",
+        "checks": [
+          "source anatomy/weapon/animal",
+          "260 thumbnail",
+          "bottom45 mask",
+          "primary safe area",
+          "two identities"
+        ]
+      },
+      "file_verification": "passed: PNG/RGB/size/hash/source/reference/preview/mip dimensions",
+      "code_integration": "verified: actual Game LevelUpPanel selects exact card-ID texture, no generic portrait or split fusion",
+      "godot_import_mipmap": "verified by actual imported Texture2D.get_image(): 10 mip levels; linear+mipmap UI filter",
+      "game_acceptance": "passed controlled actual-Game card UI at1280/960/1600; full playthrough not tested",
+      "animation_rotation_tiling": "not applicable to static card illustrations",
+      "godot_import": {
+        "path": "assets/sprites/cards/fusion_vanir_twins.png.import",
+        "sha256": "9fa5c42e7774e9e3feba2703b1158d1f4bdeabbb43b5e2f58264e7df741604f0"
+      }
+    },
+    {
+      "task_id": "L2",
+      "id": "fusion_serpent_fishing",
+      "formal": "assets/sprites/cards/fusion_serpent_fishing.png",
+      "sha256": "de700d24a33307e99f8a6a26bb756815be5219c9214849b3a189724174681e6a",
+      "frame_size": [
+        720,
+        1200
+      ],
+      "frames": 1,
+      "fps": 0,
+      "anchor": {
+        "xy": [
+          360,
+          600
+        ],
+        "convention": "static UI texture center; no world-space pivot"
+      },
+      "loop": "not applicable: static illustration",
+      "transparency": "opaque RGB; Part L overrides pixel-art RGBA contract",
+      "rgb_color_count": 240356,
+      "palette_exception": "non-pixel painterly Part L; 48-color cap does not apply",
+      "selected_version": "v02",
+      "generation_record": "records/generation_fusion_serpent_fishing_v02.json",
+      "source": "originals/fusion_serpent_fishing_v02.png",
+      "source_sha256": "42ecf4b06ba34dee2de9d3cad3159b7b24b61bcc4c4ef053313e4c5e60dbec4f",
+      "tool": "OpenAI built-in image_gen",
+      "commercial_basis": "https://openai.com/policies/terms-of-use/",
+      "references": [
+        {
+          "actual_input": "assets/source/taskL2_fusions_2026-10-20/originals/fusion_serpent_fishing_v01.png",
+          "archive": "references/fusion_serpent_fishing_v01.png",
+          "sha256": "84d195b3c57946b9c29aa6e5dbe0b973ac447b23a30b7c0a4e0f1ac077128af1"
+        }
+      ],
+      "prompt": "Edit the attached portrait3:5 northern oil painting. Keep BOTH same faces and upper bodies: SAME red-bearded warrior, SAME dark-haired sea woman, same fur and net ornaments, same two natural net-gripping hands. Change ONLY the scene under their hands: shrink the coiled sea serpent, captured rope net and cresting sea wave to 65% current size and move the whole group UPWARD. One clear serpent head, wide natural jaw and coiling body with readable woven net draped over it; blue lightning passes through wet net. Entire serpent, net and white crest must fit compactly between x25%..75%, y27%..49%, no coils or white surf below y52%. Adjust rope endpoints naturally to the existing hands. From y55% to bottom only quiet deep blue-black shadow and mist, NO bright sea foam, NO detailed net, NO scales. Preserve painterly texture and identity, no text, no new objects.",
+      "gameplay_source_snapshot": "\"serpent_fishing\": {\"gods\": [\"thor\", \"ran\"], \"name\": \"钓巨蛇\", \"desc\": \"落雷劈中溺水的敌人时，所有溺水的敌人一起挨雷\"},",
+      "previews": {
+        "thumbnail": "previews/fusion_serpent_fishing_v02_260.png",
+        "text_mask": "previews/fusion_serpent_fishing_v02_masked.png",
+        "safe_area": "previews/fusion_serpent_fishing_v02_safe.png"
+      },
+      "offline_mipmaps": [
+        {
+          "path": "mipmaps/fusion_serpent_fishing/level_01_360x600.png",
+          "size": [
+            360,
+            600
+          ],
+          "sha256": "409d06e940e18677e3ef339bf8b134478e3862ade2443736de2a46fd3b4eacf2"
+        },
+        {
+          "path": "mipmaps/fusion_serpent_fishing/level_02_180x300.png",
+          "size": [
+            180,
+            300
+          ],
+          "sha256": "2a4cbf87a005904ce0465fd6833599eefca1f90bab2c4c21101573639f20cde2"
+        },
+        {
+          "path": "mipmaps/fusion_serpent_fishing/level_03_90x150.png",
+          "size": [
+            90,
+            150
+          ],
+          "sha256": "9d0b8855cd6c96c67f018c11c47bda614f71deb25d47fb1e745a873d07b673d1"
+        },
+        {
+          "path": "mipmaps/fusion_serpent_fishing/level_04_45x75.png",
+          "size": [
+            45,
+            75
+          ],
+          "sha256": "6b621d84eb9e37af2ec22deea55af9e9217a21a98fb27afad4d5bec17aad5f00"
+        },
+        {
+          "path": "mipmaps/fusion_serpent_fishing/level_05_22x37.png",
+          "size": [
+            22,
+            37
+          ],
+          "sha256": "8ff571dcb6e8d16fb4386df5bcb13b7bafd8d3b8de2954f7341766e1fe71d2d4"
+        },
+        {
+          "path": "mipmaps/fusion_serpent_fishing/level_06_11x18.png",
+          "size": [
+            11,
+            18
+          ],
+          "sha256": "c489a5b44e2d98dfcc9232e9ccbf3865848f3d99f8368df80368dd0b708e1626"
+        },
+        {
+          "path": "mipmaps/fusion_serpent_fishing/level_07_5x9.png",
+          "size": [
+            5,
+            9
+          ],
+          "sha256": "5592efc12ec15369dd745a64168b3b3cecad66dc87159f97decaa0e7605697ed"
+        },
+        {
+          "path": "mipmaps/fusion_serpent_fishing/level_08_2x4.png",
+          "size": [
+            2,
+            4
+          ],
+          "sha256": "0dc1bbd7ea5d1bdf5850211c0438c7d9143c4d895eb29bb51f1e2bd10d115236"
+        },
+        {
+          "path": "mipmaps/fusion_serpent_fishing/level_09_1x2.png",
+          "size": [
+            1,
+            2
+          ],
+          "sha256": "c937f83a63a64a504bbfd833b0d9e6937cacece11d317e598b9a6f885e6c461c"
+        },
+        {
+          "path": "mipmaps/fusion_serpent_fishing/level_10_1x1.png",
+          "size": [
+            1,
+            1
+          ],
+          "sha256": "dc8ba7b0fd5c5445e471b8035d303d0ba09b418b5be11db2f1d97474099400eb"
+        }
+      ],
+      "normalization": {
+        "id": "fusion_serpent_fishing",
+        "raw_size": [
+          971,
+          1620
+        ],
+        "raw_mode": "RGB",
+        "output_size": [
+          720,
+          1200
+        ],
+        "mode": "RGB",
+        "operation": "centered aspect crop to3:5, Lanczos resize720x1200, RGB only; no repaint, no artificial background darkening",
+        "candidate_sha256": "de700d24a33307e99f8a6a26bb756815be5219c9214849b3a189724174681e6a",
+        "bottom40_luminance": {
+          "mean": 14.26,
+          "pixels_over_100_fraction": 0.0,
+          "stddev": 7.22
+        },
+        "status": "normalization verified; candidate selected after separate visual review"
+      },
+      "visual_self_review": {
+        "visual_review": "蛇盘与浪花已缩小上移，蛇头/口腔/鳞片和盖在其上的网结构可辨，雷电沿网通过；双人脸和握网手保持参考。缩略、下45%遮罩后钓蛇主题保留，底40%暗蓝简单，关键脸/手/蛇头在安全边内。",
+        "checks": [
+          "source anatomy/net/serpent",
+          "260 thumbnail",
+          "bottom45 mask",
+          "primary safe area",
+          "two identities"
+        ]
+      },
+      "file_verification": "passed: PNG/RGB/size/hash/source/reference/preview/mip dimensions",
+      "code_integration": "verified: actual Game LevelUpPanel selects exact card-ID texture, no generic portrait or split fusion",
+      "godot_import_mipmap": "verified by actual imported Texture2D.get_image(): 10 mip levels; linear+mipmap UI filter",
+      "game_acceptance": "passed controlled actual-Game card UI at1280/960/1600; full playthrough not tested",
+      "animation_rotation_tiling": "not applicable to static card illustrations",
+      "godot_import": {
+        "path": "assets/sprites/cards/fusion_serpent_fishing.png.import",
+        "sha256": "d62d3cd7176caf3824be1c3d1707e1fcb1676336b503ce532db84a5597d2dc3e"
+      }
+    }
+  ],
+  "all_versions": [
+    {
+      "id": "fusion_father_son",
+      "version": "v01",
+      "status": "approved",
+      "record": "records/generation_fusion_father_son_v01.json"
+    },
+    {
+      "id": "fusion_utgard",
+      "version": "v01",
+      "status": "approved",
+      "record": "records/generation_fusion_utgard_v01.json"
+    },
+    {
+      "id": "fusion_false_bride",
+      "version": "v01",
+      "status": "rejected",
+      "record": "records/generation_fusion_false_bride_v01.json"
+    },
+    {
+      "id": "fusion_false_bride",
+      "version": "v02",
+      "status": "approved",
+      "record": "records/generation_fusion_false_bride_v02.json"
+    },
+    {
+      "id": "fusion_shatter_thunder",
+      "version": "v01",
+      "status": "rejected",
+      "record": "records/generation_fusion_shatter_thunder_v01.json"
+    },
+    {
+      "id": "fusion_shatter_thunder",
+      "version": "v02",
+      "status": "rejected",
+      "record": "records/generation_fusion_shatter_thunder_v02.json"
+    },
+    {
+      "id": "fusion_shatter_thunder",
+      "version": "v03",
+      "status": "approved",
+      "record": "records/generation_fusion_shatter_thunder_v03.json"
+    },
+    {
+      "id": "fusion_blood_brothers",
+      "version": "v01",
+      "status": "approved",
+      "record": "records/generation_fusion_blood_brothers_v01.json"
+    },
+    {
+      "id": "fusion_valhalla",
+      "version": "v01",
+      "status": "rejected",
+      "record": "records/generation_fusion_valhalla_v01.json"
+    },
+    {
+      "id": "fusion_valhalla",
+      "version": "v02",
+      "status": "approved",
+      "record": "records/generation_fusion_valhalla_v02.json"
+    },
+    {
+      "id": "fusion_baldr_dream",
+      "version": "v01",
+      "status": "approved",
+      "record": "records/generation_fusion_baldr_dream_v01.json"
+    },
+    {
+      "id": "fusion_mistletoe",
+      "version": "v01",
+      "status": "rejected",
+      "record": "records/generation_fusion_mistletoe_v01.json"
+    },
+    {
+      "id": "fusion_mistletoe",
+      "version": "v02",
+      "status": "approved",
+      "record": "records/generation_fusion_mistletoe_v02.json"
+    },
+    {
+      "id": "fusion_venom",
+      "version": "v01",
+      "status": "approved",
+      "record": "records/generation_fusion_venom_v01.json"
+    },
+    {
+      "id": "fusion_andvari",
+      "version": "v01",
+      "status": "approved",
+      "record": "records/generation_fusion_andvari_v01.json"
+    },
+    {
+      "id": "fusion_vanir_twins",
+      "version": "v01",
+      "status": "approved",
+      "record": "records/generation_fusion_vanir_twins_v01.json"
+    },
+    {
+      "id": "fusion_serpent_fishing",
+      "version": "v01",
+      "status": "rejected",
+      "record": "records/generation_fusion_serpent_fishing_v01.json"
+    },
+    {
+      "id": "fusion_serpent_fishing",
+      "version": "v02",
+      "status": "approved",
+      "record": "records/generation_fusion_serpent_fishing_v02.json"
+    }
+  ]
+}

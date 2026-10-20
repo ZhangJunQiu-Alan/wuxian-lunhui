@@ -1,0 +1,16 @@
+{
+  "id": "freyja_brisingamen_awaken",
+  "task": "L1",
+  "god": "freyja",
+  "variant": "awaken",
+  "root": "assets/source/taskL1_paths_2026-10-20",
+  "target": "assets/sprites/cards/freyja_brisingamen_awaken.png",
+  "references": [
+    "assets/sprites/cards/freyja_brisingamen.png",
+    "assets/sprites/cards/freyja.png"
+  ],
+  "prompt": "Use case: illustration-story. Asset type: ONE premium game upgrade CARD ILLUSTRATION, portrait 3:5, intended final 720x1200 RGB. Style: richly textured restrained northern myth oil painting / painterly impasto, realistic faces and materials, same collection as attached original portraits, NOT pixel art, NOT anime, no glossy 3D. This is a living myth inside an ancient archive; do not add computers, museums or science-fiction. CRITICAL composition: heads and every key spell, weapon, animal or gesture entirely within upper55% of image; faces around y15-25%, upper bodies around y25-50%; bottom40% deep blue-black simple cloak/shadow fading into quiet negative space for game text. Left/right40px safe margins at final size: no face/important weapon/animal touches side edges. Show a single composed cinematic scene, not a multi-panel sheet. No borders, card frame, letters, readable runes, logos, watermark, interface or typography. Natural anatomy, clearly separated hands, structurally sound weapons, restrained bloom; faces legible at260px wide. Preserve identity, age, hair, facial features, costume materials and painterly style from references; pose and scenario change for THIS specific upgrade.\nSubject identity: the same mature blonde woman with a strong composed face, dark feather cloak, gold necklace and bronze ornaments, pale gold magic.\nSpecific upgrade scene: The same woman with ONE clearly visible golden tear below her eye and a second luminous gold tear suspended near necklace, warm healing light; restrained sorrow and renewal, no crying flood, necklace structurally intact.\nThis is the AWAKENED culmination of the companion path image, distinctly greater power and evolved scene, not a recolor, while preserving the SAME character and road motif.\nKeep ALL important anatomy, weapon heads/tips and animal faces within CENTRAL80% of canvas (x10%..90%), not merely inside the outer edge. Leave side columns as background or unimportant cloak only. Place all hands/gesture and spell motifs above y52%; nothing bright or complex below y60%.",
+  "current_gameplay_source_line": "\"freyja_brisingamen_awaken\": {\"kind\": \"awaken\", \"god\": \"freyja\", \"path\": \"freyja_brisingamen\", \"name\": \"觉醒·金泪\", \"desc\": \"受到伤害时掉下一颗金色眼泪，捡起回复 15% 生命。本局获得一次复活\"},",
+  "input_code_sha256": "e2b900caf6dcee1af417fb90932a48e0313bf8e726a5f7d4141ed8d8e332e4db",
+  "status": "planned"
+}

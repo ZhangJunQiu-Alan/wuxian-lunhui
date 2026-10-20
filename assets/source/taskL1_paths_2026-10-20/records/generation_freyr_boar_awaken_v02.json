@@ -1,0 +1,35 @@
+{
+  "id": "freyr_boar_awaken",
+  "task": "L1",
+  "god": "freyr",
+  "variant": "awaken",
+  "root": "assets/source/taskL1_paths_2026-10-20",
+  "target": "assets/sprites/cards/freyr_boar_awaken.png",
+  "references": [
+    {
+      "actual_input": "assets/source/taskL1_paths_2026-10-20/originals/freyr_boar_awaken_v01.png",
+      "archive": "references/freyr_boar_awaken_v01.png",
+      "sha256": "65eab07e74c63f1e8602925c85377bc517e6ac0f2ccbf776ab1c9a3d72e32ffa"
+    }
+  ],
+  "prompt": "Edit the attached portrait3:5 oil painting. Keep the same golden bearded rider, face and main golden boar and warm oil-paint style, dark lower40%. REMOVE both small boars cropped at extreme left and right edges. Show exactly THREE much smaller boars following behind the main boar, each complete head safely inside x18%..82%, around y28%..43%; no cropped snouts, no head merged into main boar. Keep rider's spearhead within x15%..85% by shortening its shaft. All charging feet and dust end above y53%.",
+  "current_gameplay_source_line": "\"freyr_boar_awaken\": {\"kind\": \"awaken\", \"god\": \"freyr\", \"path\": \"freyr_boar\", \"name\": \"觉醒·金鬃冲锋\", \"desc\": \"每 15 秒，野猪群从屏幕边缘一起冲过来。每分钟回复 15% 生命\"},",
+  "input_code_sha256": "e2b900caf6dcee1af417fb90932a48e0313bf8e726a5f7d4141ed8d8e332e4db",
+  "status": "approved",
+  "version": "v02",
+  "tool": "OpenAI built-in image_gen",
+  "raw_output_path": "/Users/zhangjunqiu/.codex/generated_images/01a14093-604c-72e3-b0c2-585e428c4824/exec-2131938a-2237-454b-98c5-b3adc77d8c8f.png",
+  "original": "originals/freyr_boar_awaken_v02.png",
+  "original_sha256": "3457c14bf8ab8ba537badb844ff1ed12b7ddaec2104664349127fe6bf48ec316",
+  "commercial_basis": "https://openai.com/policies/terms-of-use/",
+  "review": {
+    "visual_review": "一只领头金鬃野猪与两只后随猪形成冲锋群；猪脸不再裁切，骑手脸和枪头安全，脚和飞尘上移；缩略与文字遮罩通过。",
+    "checks": [
+      "source anatomy/weapon/animal",
+      "260 thumbnail",
+      "bottom45 mask",
+      "primary safe area",
+      "reference identity"
+    ]
+  }
+}

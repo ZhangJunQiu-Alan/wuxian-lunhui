@@ -1,0 +1,21 @@
+{
+  "id": "skadi_snowshoes_awaken",
+  "raw_size": [
+    971,
+    1619
+  ],
+  "raw_mode": "RGB",
+  "output_size": [
+    720,
+    1200
+  ],
+  "mode": "RGB",
+  "operation": "centered aspect crop to3:5, Lanczos resize720x1200, RGB only; no repaint, no artificial background darkening",
+  "candidate_sha256": "b5f0e6d252ce9c1fc3f91803207dbd193fe9c4723cd96f67991bfc16b5e60191",
+  "bottom40_luminance": {
+    "mean": 15.97,
+    "pixels_over_100_fraction": 0.0007,
+    "stddev": 10.76
+  },
+  "status": "awaiting visual QA"
+}

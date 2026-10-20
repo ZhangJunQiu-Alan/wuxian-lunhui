@@ -1,0 +1,21 @@
+{
+  "id": "skadi_hunter_awaken",
+  "raw_size": [
+    971,
+    1619
+  ],
+  "raw_mode": "RGB",
+  "output_size": [
+    720,
+    1200
+  ],
+  "mode": "RGB",
+  "operation": "centered aspect crop to3:5, Lanczos resize720x1200, RGB only; no repaint, no artificial background darkening",
+  "candidate_sha256": "bcd48b1b13288f5b8a66e5cc4c621dea5136b4ab507408f2cd69648eaf83778d",
+  "bottom40_luminance": {
+    "mean": 15.4,
+    "pixels_over_100_fraction": 0.0,
+    "stddev": 5.86
+  },
+  "status": "awaiting visual QA"
+}

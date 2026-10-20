@@ -1,0 +1,71 @@
+{
+  "scope": "file/provenance/HTML-link/offline-preview audits only; no browser render or game run",
+  "tasks": {
+    "L1": {
+      "final_files": 48,
+      "generation_outputs": 82,
+      "version_status": {
+        "rejected": 34,
+        "approved": 48
+      },
+      "offline_mipmap_files": 480,
+      "gallery_local_links_checked": 307,
+      "inventory_files": 1620
+    },
+    "L2": {
+      "final_files": 12,
+      "generation_outputs": 18,
+      "version_status": {
+        "approved": 12,
+        "rejected": 6
+      },
+      "offline_mipmap_files": 120,
+      "gallery_local_links_checked": 103,
+      "inventory_files": 317
+    }
+  },
+  "prompt_violations": [],
+  "gameplay_line_changes": [],
+  "errors": [],
+  "code_baseline_read_only_comparison": {
+    "files_checked": 192,
+    "changed_since_start": [
+      "scripts/ui/level_up_panel.gd"
+    ],
+    "interpretation": "Later user authorized Part L integration. Own production code changes are limited to scripts/ui/level_up_panel.gd. Shared workspace may contain concurrent agent edits; hashes alone do not attribute them."
+  },
+  "unique_formal_files": 60,
+  "game_acceptance": {
+    "status": "passed controlled actual-Game card UI acceptance",
+    "date": "2026-10-20",
+    "scope": "60 cards at1280x720/960x540/1600x900; imported texture mipmaps; exact ID loading; text bounds; keyboard road selection, button awakening/fusion, resume, hover, four regular choices and missing-image fallback",
+    "runs": {
+      "commit": {
+        "passed": 1901,
+        "failed": 0,
+        "captures": 61,
+        "engine": "4.7.2-stable (official)",
+        "result": "screenshots/commit/results.json"
+      },
+      "workspace": {
+        "passed": 1901,
+        "failed": 0,
+        "captures": 61,
+        "engine": "4.7.2-stable (official)",
+        "result": "screenshots/workspace/results.json"
+      }
+    },
+    "production_changes": [
+      "60 PNG imports with mipmaps/generate=true",
+      "scripts/ui/level_up_panel.gd: title24, description14, separation6 to prevent long-awakening footer overflow"
+    ],
+    "unchanged": "gameplay data, effects, faith thresholds and combat logic not modified in this task",
+    "not_tested": [
+      "full combat playthrough",
+      "other hardware/OS/DPI",
+      "other locales"
+    ],
+    "early_failures": "first isolated import temporarily lacked font cache until reimport; test direct-class preloading before autoload bootstrap fixed with deferred dynamic loads; test fallback ID corrected from thor to thor_skill; early long-net footer overflow fixed and all checks rerun; records retained",
+    "platform_diagnostic": "macOS IMKCFRunLoopWakeUpReliable mach-port line observed; no final script/resource errors or exit leak warnings"
+  }
+}

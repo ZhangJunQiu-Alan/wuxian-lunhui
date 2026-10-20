@@ -1,0 +1,28 @@
+{
+  "id": "baldr_spear_awaken",
+  "task": "L1",
+  "god": "baldr",
+  "variant": "awaken",
+  "root": "assets/source/taskL1_paths_2026-10-20",
+  "target": "assets/sprites/cards/baldr_spear_awaken.png",
+  "references": [
+    {
+      "actual_input": "assets/source/taskL1_paths_2026-10-20/originals/baldr_spear_awaken_v02.png",
+      "archive": "references/baldr_spear_awaken_v02.png",
+      "sha256": "94bc3c2e1eff205048389679947206da28466b459d5da4ffcb52e3a6ecac2033"
+    }
+  ],
+  "prompt": "Edit the attached oil painting, same man, face, clothing, palette, cross-shaped burst, composition and dark lower half. Change ONLY the long glowing spear: shrink its entire length by 25 percent around its grip. Both decorated ends and crossburst must lie safely between x15% and x85% canvas width. Keep a single straight shaft, naturally gripped, distinct spearhead. No text, borders or new objects. Keep portrait 3:5.",
+  "current_gameplay_source_line": "\"baldr_spear_awaken\": {\"kind\": \"awaken\", \"god\": \"baldr\", \"path\": \"baldr_spear\", \"name\": \"觉醒·神之光矛\", \"desc\": \"光矛命中第一个敌人时炸开十字光。每 30 秒全屏闪光，所有敌人挂上光痕\"},",
+  "input_code_sha256": "e2b900caf6dcee1af417fb90932a48e0313bf8e726a5f7d4141ed8d8e332e4db",
+  "status": "approved",
+  "version": "v03",
+  "tool": "OpenAI built-in image_gen",
+  "raw_output_path": "/Users/zhangjunqiu/.codex/generated_images/01a14093-604c-72e3-b0c2-585e428c4824/exec-7874b7d2-0a6c-4b26-8b2d-98c2e47edde2.png",
+  "original": "originals/baldr_spear_awaken_v03.png",
+  "original_sha256": "80813df562fa5dddd10b564b1a5e8643aefc32f63f3485424ced646bd4faf393",
+  "commercial_basis": "https://openai.com/policies/terms-of-use/",
+  "review": {
+    "visual_review": "矛头和尾端缩入左右安全区，单根直杆、自然握持、四向爆光明确；260缩图及45%遮罩后身份和主题保留。"
+  }
+}

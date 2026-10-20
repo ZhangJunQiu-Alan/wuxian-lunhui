@@ -1,0 +1,17 @@
+{
+  "id": "fusion_serpent_fishing",
+  "selected_version": "v02",
+  "formal": "assets/sprites/cards/fusion_serpent_fishing.png",
+  "sha256": "de700d24a33307e99f8a6a26bb756815be5219c9214849b3a189724174681e6a",
+  "review": {
+    "visual_review": "蛇盘与浪花已缩小上移，蛇头/口腔/鳞片和盖在其上的网结构可辨，雷电沿网通过；双人脸和握网手保持参考。缩略、下45%遮罩后钓蛇主题保留，底40%暗蓝简单，关键脸/手/蛇头在安全边内。",
+    "checks": [
+      "source anatomy/net/serpent",
+      "260 thumbnail",
+      "bottom45 mask",
+      "primary safe area",
+      "two identities"
+    ]
+  },
+  "mipmaps": "offline reference chain only; Godot import mipmaps must be enabled by integration agent"
+}

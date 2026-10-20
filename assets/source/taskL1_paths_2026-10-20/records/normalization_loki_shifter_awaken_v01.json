@@ -1,0 +1,21 @@
+{
+  "id": "loki_shifter_awaken",
+  "raw_size": [
+    971,
+    1619
+  ],
+  "raw_mode": "RGB",
+  "output_size": [
+    720,
+    1200
+  ],
+  "mode": "RGB",
+  "operation": "centered aspect crop to3:5, Lanczos resize720x1200, RGB only; no repaint, no artificial background darkening",
+  "candidate_sha256": "37252e81db2be9b1bdeaa69bd8417b1c16944308987b29a8bb097da32e4fd9d5",
+  "bottom40_luminance": {
+    "mean": 11.26,
+    "pixels_over_100_fraction": 0.0002,
+    "stddev": 7.49
+  },
+  "status": "normalization verified; candidate selected after separate visual review"
+}

@@ -1,0 +1,21 @@
+{
+  "id": "fusion_false_bride",
+  "raw_size": [
+    971,
+    1619
+  ],
+  "raw_mode": "RGB",
+  "output_size": [
+    720,
+    1200
+  ],
+  "mode": "RGB",
+  "operation": "centered aspect crop to3:5, Lanczos resize720x1200, RGB only; no repaint, no artificial background darkening",
+  "candidate_sha256": "133542e09e09492e3963c9792e16549318273102ba3a49d7e3fd378bd783b54d",
+  "bottom40_luminance": {
+    "mean": 18.78,
+    "pixels_over_100_fraction": 0.0001,
+    "stddev": 8.48
+  },
+  "status": "awaiting visual QA"
+}

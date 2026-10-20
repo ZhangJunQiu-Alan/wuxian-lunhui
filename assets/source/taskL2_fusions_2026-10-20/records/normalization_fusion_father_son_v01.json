@@ -1,0 +1,21 @@
+{
+  "id": "fusion_father_son",
+  "raw_size": [
+    971,
+    1619
+  ],
+  "raw_mode": "RGB",
+  "output_size": [
+    720,
+    1200
+  ],
+  "mode": "RGB",
+  "operation": "centered aspect crop to3:5, Lanczos resize720x1200, RGB only; no repaint, no artificial background darkening",
+  "candidate_sha256": "57260b4dca58e007376ff7ad86d688f3fdd602b4bcce377bc6988ae6f69bcbf5",
+  "bottom40_luminance": {
+    "mean": 18.31,
+    "pixels_over_100_fraction": 0.0,
+    "stddev": 7.01
+  },
+  "status": "normalization verified; candidate selected after separate visual review"
+}

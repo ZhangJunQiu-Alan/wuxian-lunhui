@@ -1,0 +1,21 @@
+{
+  "id": "freyr_field_awaken",
+  "raw_size": [
+    971,
+    1619
+  ],
+  "raw_mode": "RGB",
+  "output_size": [
+    720,
+    1200
+  ],
+  "mode": "RGB",
+  "operation": "centered aspect crop to3:5, Lanczos resize720x1200, RGB only; no repaint, no artificial background darkening",
+  "candidate_sha256": "191f4f5b543aaff13aa205c5aeb7190009b15a2205556170785ff4df722ad2e7",
+  "bottom40_luminance": {
+    "mean": 16.65,
+    "pixels_over_100_fraction": 0.0219,
+    "stddev": 25.74
+  },
+  "status": "normalization verified; candidate selected after separate visual review"
+}

@@ -1,0 +1,17 @@
+{
+  "id": "skadi_winter_awaken",
+  "selected_version": "v02",
+  "formal": "assets/sprites/cards/skadi_winter_awaken.png",
+  "sha256": "500e16fcfae3479bc82f43d2376731080a3fde9d9a8b22d6dde57932ad0b60aa",
+  "review": {
+    "visual_review": "大型暴雪风眼区别于普通寒冬，双手胸前、弓置肩后无裁切；外围冰晶是暴雪纹理可出血，主脸和手安全，缩略和文字遮罩通过。",
+    "checks": [
+      "source anatomy/weapon/animal",
+      "260 thumbnail",
+      "bottom45 mask",
+      "primary safe area",
+      "reference identity"
+    ]
+  },
+  "mipmaps": "offline reference chain only; Godot import mipmaps must be enabled by integration agent"
+}

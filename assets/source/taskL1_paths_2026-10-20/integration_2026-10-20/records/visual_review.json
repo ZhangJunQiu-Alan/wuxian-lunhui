@@ -1,0 +1,15 @@
+{
+  "reviewed": [
+    "screenshots/final/review_sheet_0.png",
+    "screenshots/final/review_sheet_1.png",
+    "screenshots/final/review_sheet_2.png",
+    "screenshots/final/review_sheet_3.png",
+    "screenshots/final/review_sheet_4.png",
+    "screenshots/final/cards_960_11.png",
+    "screenshots/final/cards_1600_19.png",
+    "screenshots/commit/regular_four_choices.png"
+  ],
+  "coverage": "all60 final cards at1280 via full-resolution card crops; longest text at960 and fusion at1600; four-choice regular UI at1280",
+  "findings": "Faces and road/fusion motifs remain legible in actual gradient; card titles/descriptions/footer remain readable. Long gold-net awakening footer overflow observed in first run was corrected by title24/description14/separation6. Frame boundaries and inherited selection/hover style retained. Actual imported mipmaps verified independently by engine image API.",
+  "limits": "No complete combat playthrough, locale matrix, DPI/hardware matrix or art-direction approval by user implied."
+}

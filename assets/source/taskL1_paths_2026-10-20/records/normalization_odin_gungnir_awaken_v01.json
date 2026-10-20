@@ -1,0 +1,21 @@
+{
+  "id": "odin_gungnir_awaken",
+  "raw_size": [
+    971,
+    1619
+  ],
+  "raw_mode": "RGB",
+  "output_size": [
+    720,
+    1200
+  ],
+  "mode": "RGB",
+  "operation": "centered aspect crop to3:5, Lanczos resize720x1200, RGB only; no repaint, no artificial background darkening",
+  "candidate_sha256": "6e7bea1a663830e84da9ad8828bddeb3911c735cf66092a117e502787f4f38ec",
+  "bottom40_luminance": {
+    "mean": 16.62,
+    "pixels_over_100_fraction": 0.0008,
+    "stddev": 11.21
+  },
+  "status": "awaiting visual QA"
+}

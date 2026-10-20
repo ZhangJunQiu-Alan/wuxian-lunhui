@@ -1,0 +1,35 @@
+{
+  "id": "freyja_cats_awaken",
+  "task": "L1",
+  "god": "freyja",
+  "variant": "awaken",
+  "root": "assets/source/taskL1_paths_2026-10-20",
+  "target": "assets/sprites/cards/freyja_cats_awaken.png",
+  "references": [
+    {
+      "actual_input": "assets/source/taskL1_paths_2026-10-20/originals/freyja_cats_awaken_v01.png",
+      "archive": "references/freyja_cats_awaken_v01.png",
+      "sha256": "644e67b289f0cb7689959d38defc51e7636f616aa64fdd83575641e86040df3c"
+    }
+  ],
+  "prompt": "Edit the existing oil painting for card readability. Make the entire chariot team30% SMALLER and shift it UP into the upper52%. Put the woman head near y12%, TWO entire cat faces between y28%..43%, both inside x15%..85%, paws/wheels above y52%. Keep a readable wood chariot and two taut reins, implied charge without bright splash below55%. Bottom45% ONLY deep dark painterly shadow. Preserve exact woman and cat appearance. Preserve thick impasto style, exact identity, age and facial features. Tall3:5, all important content upper55%,40px safe edges at720width. No new figure, text, border or interface.",
+  "current_gameplay_source_line": "\"freyja_cats_awaken\": {\"kind\": \"awaken\", \"god\": \"freyja\", \"path\": \"freyja_cats\", \"name\": \"觉醒·女神出征\", \"desc\": \"每 15 秒，弗蕾亚乘猫车从屏幕一侧冲到另一侧，撞飞路上的敌人。本局获得一次复活\"},",
+  "input_code_sha256": "e2b900caf6dcee1af417fb90932a48e0313bf8e726a5f7d4141ed8d8e332e4db",
+  "status": "approved",
+  "version": "v02",
+  "tool": "OpenAI built-in image_gen",
+  "raw_output_path": "/Users/zhangjunqiu/.codex/generated_images/01a14093-604c-72e3-b0c2-585e428c4824/exec-9fc4bdc1-8b98-4f1a-a48f-993594fd0ba3.png",
+  "original": "originals/freyja_cats_awaken_v02.png",
+  "original_sha256": "48c5741cc7232bdc56ee1e17980f765e5b5f40f10d7b90597658c18fd459df9c",
+  "commercial_basis": "https://openai.com/policies/terms-of-use/",
+  "review": {
+    "visual_review": "女神/木车/双猫/缰绳全部上移，猫口鼻和手位安全，爪/轮大部分在上55%，少量飞溅淡入下部；缩略遮罩后出征仍完整可辨。",
+    "checks": [
+      "source anatomy/animal/gear",
+      "260px thumbnail",
+      "45% mask",
+      "primary safe composition",
+      "identity compared"
+    ]
+  }
+}

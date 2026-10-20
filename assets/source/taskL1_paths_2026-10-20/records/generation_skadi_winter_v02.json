@@ -1,0 +1,35 @@
+{
+  "id": "skadi_winter",
+  "task": "L1",
+  "god": "skadi",
+  "variant": "path",
+  "root": "assets/source/taskL1_paths_2026-10-20",
+  "target": "assets/sprites/cards/skadi_winter.png",
+  "references": [
+    {
+      "actual_input": "assets/source/taskL1_paths_2026-10-20/originals/skadi_winter_v01.png",
+      "archive": "references/skadi_winter_v01.png",
+      "sha256": "940ff08c841a7e368e1b28e210ff1d742fbbf09d14e5adf928f84ab59a8b8f65"
+    }
+  ],
+  "prompt": "Edit this existing oil painting. Keep the SAME silver-haired huntress, face, fur, ring of driven blue blizzard and frozen enemy silhouettes. REMOVE the large held bow and held arrow crossing her waist. Instead show one small coherent wooden bow slung behind her shoulder, upper52% only; both gloved hands relaxed near chest inside x25%..75%, not in lower half. Preserve storm eye clearly around head/shoulders, lower40% dark quiet blue-black. No text.",
+  "current_gameplay_source_line": "\"skadi_winter\": {\"kind\": \"path\", \"god\": \"skadi\", \"name\": \"永冬\", \"desc\": \"冰箭改为身边一圈暴风雪，持续给范围内的敌人叠霜冻。连珠 = 暴风雪更大\"},",
+  "input_code_sha256": "e2b900caf6dcee1af417fb90932a48e0313bf8e726a5f7d4141ed8d8e332e4db",
+  "status": "approved",
+  "version": "v02",
+  "tool": "OpenAI built-in image_gen",
+  "raw_output_path": "/Users/zhangjunqiu/.codex/generated_images/01a14093-604c-72e3-b0c2-585e428c4824/exec-c0f4857c-7fb0-42c0-b163-1cc7da7414c5.png",
+  "original": "originals/skadi_winter_v02.png",
+  "original_sha256": "e6b824fb6cf3c2640ddee05341bd0b8b5a649abe0f614dd6b1cb6c08e5386664",
+  "commercial_basis": "https://openai.com/policies/terms-of-use/",
+  "review": {
+    "visual_review": "持弓从腰间移至肩后，双手内收胸前；寒冬环流及冻结目标形成独立道路主题，底部安静；缩略、遮罩和安全边通过。",
+    "checks": [
+      "source anatomy/weapon",
+      "260 thumbnail",
+      "bottom45 mask",
+      "primary safe area",
+      "reference identity"
+    ]
+  }
+}

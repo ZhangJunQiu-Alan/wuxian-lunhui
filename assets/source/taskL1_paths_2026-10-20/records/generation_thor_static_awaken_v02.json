@@ -1,0 +1,39 @@
+{
+  "id": "thor_static_awaken",
+  "task": "L1",
+  "god": "thor",
+  "variant": "awaken",
+  "root": "assets/source/taskL1_paths_2026-10-20",
+  "target": "assets/sprites/cards/thor_static_awaken.png",
+  "references": [
+    {
+      "actual_input": "assets/source/taskL1_paths_2026-10-20/originals/thor_static_awaken_v01.png",
+      "archive": "references/thor_static_awaken_v01.png",
+      "sha256": "e65aa5a9e8213953ccf0780af6f308f5cdc416a8a754b249331adf6fa83bdcc1"
+    },
+    {
+      "actual_input": "assets/source/taskL1_paths_2026-10-20/approved/thor_static.png",
+      "archive": "references/thor_static.png",
+      "sha256": "7f9ecf30a0f3b349cf088c55ced4c3774fd1d68900d9f325bf1444ace9de85db"
+    }
+  ],
+  "prompt": "Edit ONLY composition of this existing oil painting. All faces, hands, complete weapon heads/handles and main effect nodes MUST fit inside x15%..85% of image and top52%; leave generous painterly background side columns, bottom40% quiet dark. Preserve the exact same red-bearded man, face, clothing, thick paint, palette and chosen upgrade. Remove hammer and goat chariot entirely. Show THREE smaller enemy silhouettes in a compact triangle around upper chest, all entirely inside central70% width, one center node exploding and linking to other two. Entire web above52% height. No target silhouette touches either edge. No text, border, new outfit or new identity. Reference2 is the companion non-awakened path: keep its motif while increasing power.",
+  "current_gameplay_source_line": "\"thor_static_awaken\": {\"kind\": \"awaken\", \"god\": \"thor\", \"path\": \"thor_static\", \"name\": \"觉醒·雷神之域\", \"desc\": \"感电的敌人死亡时，引爆电网上所有相连的敌人。受到攻击时 30% 几率反劈一道雷\"},",
+  "input_code_sha256": "e2b900caf6dcee1af417fb90932a48e0313bf8e726a5f7d4141ed8d8e332e4db",
+  "status": "approved",
+  "version": "v02",
+  "tool": "OpenAI built-in image_gen",
+  "raw_output_path": "/Users/zhangjunqiu/.codex/generated_images/01a14093-604c-72e3-b0c2-585e428c4824/exec-f1d34f08-bba1-4488-b4cb-8d5dd86ca679.png",
+  "original": "originals/thor_static_awaken_v02.png",
+  "original_sha256": "25a46c60d0b06f7705388bc3ff3256466e080718209b9ebd83f0f16b312e4e24",
+  "commercial_basis": "https://openai.com/policies/terms-of-use/",
+  "review": {
+    "visual_review": "去掉战锤/山羊，三节点之一爆碎引发连锁，电网与普通版连续；所有关键节点完整，背景碎屑是次级元素。",
+    "checks": [
+      "full source anatomy/weapon checked",
+      "260 thumbnail and bottom45 mask checked",
+      "40px safe guide checked",
+      "pair style and road identity checked"
+    ]
+  }
+}

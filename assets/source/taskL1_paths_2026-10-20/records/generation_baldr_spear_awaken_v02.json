@@ -1,0 +1,28 @@
+{
+  "id": "baldr_spear_awaken",
+  "task": "L1",
+  "god": "baldr",
+  "variant": "awaken",
+  "root": "assets/source/taskL1_paths_2026-10-20",
+  "target": "assets/sprites/cards/baldr_spear_awaken.png",
+  "references": [
+    {
+      "actual_input": "assets/source/taskL1_paths_2026-10-20/originals/baldr_spear_awaken_v01.png",
+      "archive": "references/baldr_spear_awaken_v01.png",
+      "sha256": "eef6bac1fc3a5abfe88fd61e7c36cb7e3336876ac34bcc1cc48eef04dae89d17"
+    }
+  ],
+  "prompt": "Edit this existing portrait only for composition. Shrink and recenter the ENTIRE light spear so BOTH ends are within x15%..85%. Its cross-shaped light burst is centered at x68%,y30% and small enough that its four tips fit upper50%; do not cut the spear or place tip near right edge. Keep the same two-handed coherent shaft, not two attached weapons. Exact same youthful pale-blond man, cream fur mantle and white/gold clothes, impasto oil texture and original face. Tall3:5, no new characters, no text or border.",
+  "current_gameplay_source_line": "\"baldr_spear_awaken\": {\"kind\": \"awaken\", \"god\": \"baldr\", \"path\": \"baldr_spear\", \"name\": \"觉醒·神之光矛\", \"desc\": \"光矛命中第一个敌人时炸开十字光。每 30 秒全屏闪光，所有敌人挂上光痕\"},",
+  "input_code_sha256": "e2b900caf6dcee1af417fb90932a48e0313bf8e726a5f7d4141ed8d8e332e4db",
+  "status": "rejected",
+  "version": "v02",
+  "tool": "OpenAI built-in image_gen",
+  "raw_output_path": "/Users/zhangjunqiu/.codex/generated_images/01a14093-604c-72e3-b0c2-585e428c4824/exec-a6c41421-587f-43f2-8070-46326ba022e2.png",
+  "original": "originals/baldr_spear_awaken_v02.png",
+  "original_sha256": "94bc3c2e1eff205048389679947206da28466b459d5da4ffcb52e3a6ecac2033",
+  "commercial_basis": "https://openai.com/policies/terms-of-use/",
+  "review": {
+    "reason": "最终720宽中矛尾约x23、尖端约x688，仍越过40px安全线，继续缩短。"
+  }
+}

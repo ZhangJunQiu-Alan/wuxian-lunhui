@@ -1,0 +1,35 @@
+{
+  "id": "freyr_field",
+  "task": "L1",
+  "god": "freyr",
+  "variant": "path",
+  "root": "assets/source/taskL1_paths_2026-10-20",
+  "target": "assets/sprites/cards/freyr_field.png",
+  "references": [
+    {
+      "actual_input": "assets/source/taskL1_paths_2026-10-20/originals/freyr_field_v01.png",
+      "archive": "references/freyr_field_v01.png",
+      "sha256": "194f1d2455e130dc2cd1a6d47a74f2602b55f14a72798299d67d816bc287376b"
+    }
+  ],
+  "prompt": "Edit this existing portrait 3:5 oil painting. Keep the SAME golden bearded man, green gold cloak, leaf crown, planted sword, growing wheat and warm impasto style. REMOVE the boar completely, replace it with simple dark green rolling fields. Recompose sword tip entering soil at y49% and all wheat entirely between y36%..53%. All lower40% must be quiet dark blue-black shadow. Clear one planted straight sword and small green spring field around it, same face and upper chest. No text, no animals.",
+  "current_gameplay_source_line": "\"freyr_field\": {\"kind\": \"path\", \"god\": \"freyr\", \"name\": \"丰收之地\", \"desc\": \"飞剑每砍 10 下，插进地里长出一片麦田 8 秒：站在里面回复生命，敌人减速\"},",
+  "input_code_sha256": "e2b900caf6dcee1af417fb90932a48e0313bf8e726a5f7d4141ed8d8e332e4db",
+  "status": "approved",
+  "version": "v02",
+  "tool": "OpenAI built-in image_gen",
+  "raw_output_path": "/Users/zhangjunqiu/.codex/generated_images/01a14093-604c-72e3-b0c2-585e428c4824/exec-c7708096-cc84-49e6-ae93-f55a26e9ff4d.png",
+  "original": "originals/freyr_field_v02.png",
+  "original_sha256": "08d077291bfac0a5990eeaad7a5fbb8f8b5b07ecab9784004d037cf1cebae020",
+  "commercial_basis": "https://openai.com/policies/terms-of-use/",
+  "review": {
+    "visual_review": "移除野猪后主题为插地直剑与麦穗；握手正常、脸和剑柄清楚，麦田在上部，下40%安静暗调，缩略与遮罩通过。",
+    "checks": [
+      "source anatomy/weapon",
+      "260 thumbnail",
+      "bottom45 mask",
+      "primary safe area",
+      "reference identity"
+    ]
+  }
+}

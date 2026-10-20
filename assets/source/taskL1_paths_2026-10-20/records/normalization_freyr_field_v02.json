@@ -1,0 +1,21 @@
+{
+  "id": "freyr_field",
+  "raw_size": [
+    971,
+    1619
+  ],
+  "raw_mode": "RGB",
+  "output_size": [
+    720,
+    1200
+  ],
+  "mode": "RGB",
+  "operation": "centered aspect crop to3:5, Lanczos resize720x1200, RGB only; no repaint, no artificial background darkening",
+  "candidate_sha256": "dc49afc5461a6a27bd518535586e3c53ec96861b72d4b4892fe9a78b8979d795",
+  "bottom40_luminance": {
+    "mean": 12.81,
+    "pixels_over_100_fraction": 0.0054,
+    "stddev": 14.54
+  },
+  "status": "normalization verified; candidate selected after separate visual review"
+}

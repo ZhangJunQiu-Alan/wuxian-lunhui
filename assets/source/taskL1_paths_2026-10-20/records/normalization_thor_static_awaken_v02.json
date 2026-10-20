@@ -1,0 +1,21 @@
+{
+  "id": "thor_static_awaken",
+  "raw_size": [
+    971,
+    1620
+  ],
+  "raw_mode": "RGB",
+  "output_size": [
+    720,
+    1200
+  ],
+  "mode": "RGB",
+  "operation": "centered aspect crop to3:5, Lanczos resize720x1200, RGB only; no repaint, no artificial background darkening",
+  "candidate_sha256": "c855b0e5aad5eb13b5afa857635c47c05abe48319c30dd54b6203d74ebb3badf",
+  "bottom40_luminance": {
+    "mean": 10.49,
+    "pixels_over_100_fraction": 0.0008,
+    "stddev": 7.51
+  },
+  "status": "normalization verified; candidate selected after separate visual review"
+}

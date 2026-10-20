@@ -1,0 +1,21 @@
+{
+  "id": "fusion_baldr_dream",
+  "raw_size": [
+    971,
+    1619
+  ],
+  "raw_mode": "RGB",
+  "output_size": [
+    720,
+    1200
+  ],
+  "mode": "RGB",
+  "operation": "centered aspect crop to3:5, Lanczos resize720x1200, RGB only; no repaint, no artificial background darkening",
+  "candidate_sha256": "48c602e73cc79fd94d71265b591fcef482e0c34f28b6e2dd59c10ca6a008f09c",
+  "bottom40_luminance": {
+    "mean": 17.71,
+    "pixels_over_100_fraction": 0.0,
+    "stddev": 7.76
+  },
+  "status": "normalization verified; candidate selected after separate visual review"
+}

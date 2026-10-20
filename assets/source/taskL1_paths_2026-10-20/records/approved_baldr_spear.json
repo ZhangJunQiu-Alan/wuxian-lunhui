@@ -1,0 +1,17 @@
+{
+  "id": "baldr_spear",
+  "selected_version": "v02",
+  "formal": "assets/sprites/cards/baldr_spear.png",
+  "sha256": "a4cf2f2afb089af8db4de9a8530b6adb419fc38b6850b8633d7856760b4c6350",
+  "review": {
+    "visual_review": "整根光矛缩小内移后双端可见且安全，双手握持/直杆结构连贯；原脸与白金材质保持。",
+    "checks": [
+      "source anatomy/weapon",
+      "260px",
+      "45% mask",
+      "primary safe area",
+      "path identity"
+    ]
+  },
+  "mipmaps": "offline reference chain only; Godot import mipmaps must be enabled by integration agent"
+}

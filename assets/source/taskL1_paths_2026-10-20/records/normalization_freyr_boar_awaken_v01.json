@@ -1,0 +1,21 @@
+{
+  "id": "freyr_boar_awaken",
+  "raw_size": [
+    971,
+    1619
+  ],
+  "raw_mode": "RGB",
+  "output_size": [
+    720,
+    1200
+  ],
+  "mode": "RGB",
+  "operation": "centered aspect crop to3:5, Lanczos resize720x1200, RGB only; no repaint, no artificial background darkening",
+  "candidate_sha256": "71c0fb279d9c293583311c7f0db6732c23490a6ca6e458879602ec5edb9573b0",
+  "bottom40_luminance": {
+    "mean": 6.87,
+    "pixels_over_100_fraction": 0.0004,
+    "stddev": 7.17
+  },
+  "status": "awaiting visual QA"
+}

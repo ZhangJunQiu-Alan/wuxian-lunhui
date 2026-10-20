@@ -1,0 +1,21 @@
+{
+  "id": "freyja_brisingamen_awaken",
+  "raw_size": [
+    971,
+    1619
+  ],
+  "raw_mode": "RGB",
+  "output_size": [
+    720,
+    1200
+  ],
+  "mode": "RGB",
+  "operation": "centered aspect crop to3:5, Lanczos resize720x1200, RGB only; no repaint, no artificial background darkening",
+  "candidate_sha256": "a3f8b3d711779a54c19aad5886b61d4b1a801b18745ce3d71245c9000ba6d007",
+  "bottom40_luminance": {
+    "mean": 16.89,
+    "pixels_over_100_fraction": 0.0026,
+    "stddev": 11.57
+  },
+  "status": "normalization verified; candidate selected after separate visual review"
+}

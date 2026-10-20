@@ -1,0 +1,35 @@
+{
+  "id": "freyr_sun_awaken",
+  "task": "L1",
+  "god": "freyr",
+  "variant": "awaken",
+  "root": "assets/source/taskL1_paths_2026-10-20",
+  "target": "assets/sprites/cards/freyr_sun_awaken.png",
+  "references": [
+    {
+      "actual_input": "assets/source/taskL1_paths_2026-10-20/originals/freyr_sun_awaken_v01.png",
+      "archive": "references/freyr_sun_awaken_v01.png",
+      "sha256": "64b4c93867e286ac71365a06518d6c15da20e2b5e05b27324d1f5960d2681e76"
+    }
+  ],
+  "prompt": "Edit the attached portrait3:5 oil painting. Keep the same golden bearded man's face, green-gold cloak, THREE floating gold straight swords and magic orbit, dark lower40%, oil-painted texture. Change ONLY both hand poses: palms lifted nearer to upper chest at x32% and x68%, y35%, elbows bent naturally. Both five-fingered hands entirely within central60%, no hands near edges. Keep all sword blades intact.",
+  "current_gameplay_source_line": "\"freyr_sun_awaken\": {\"kind\": \"awaken\", \"god\": \"freyr\", \"path\": \"freyr_sun\", \"name\": \"觉醒·三柄阳剑\", \"desc\": \"飞剑 +2，光痕留得更久。每分钟回复 15% 生命\"},",
+  "input_code_sha256": "e2b900caf6dcee1af417fb90932a48e0313bf8e726a5f7d4141ed8d8e332e4db",
+  "status": "approved",
+  "version": "v02",
+  "tool": "OpenAI built-in image_gen",
+  "raw_output_path": "/Users/zhangjunqiu/.codex/generated_images/01a14093-604c-72e3-b0c2-585e428c4824/exec-e4dbd035-3ac0-4ec1-b23e-3cc739f851f3.png",
+  "original": "originals/freyr_sun_awaken_v02.png",
+  "original_sha256": "9d18ec247b6f356637dd7924b2bb8effd26ee40976739abbe0e326ae0d44d43a",
+  "commercial_basis": "https://openai.com/policies/terms-of-use/",
+  "review": {
+    "visual_review": "三把完整飞剑与单剑道路明显区分，双手内收后五指结构正常，金轨统一画面；缩略、遮罩、安全边通过。",
+    "checks": [
+      "source anatomy/weapon/animal",
+      "260 thumbnail",
+      "bottom45 mask",
+      "primary safe area",
+      "reference identity"
+    ]
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "id": "odin_nights",
+  "raw_size": [
+    971,
+    1619
+  ],
+  "raw_mode": "RGB",
+  "output_size": [
+    720,
+    1200
+  ],
+  "mode": "RGB",
+  "operation": "centered aspect crop to3:5, Lanczos resize720x1200, RGB only; no repaint, no artificial background darkening",
+  "candidate_sha256": "5e8da4dd28c2efe07c4aec2ff40f00e26fe1ee6f639d0383374685b6a701000b",
+  "bottom40_luminance": {
+    "mean": 20.33,
+    "pixels_over_100_fraction": 0.0,
+    "stddev": 5.94
+  },
+  "status": "normalization verified; candidate selected after separate visual review"
+}

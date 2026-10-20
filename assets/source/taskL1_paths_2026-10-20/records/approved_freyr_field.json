@@ -1,0 +1,17 @@
+{
+  "id": "freyr_field",
+  "selected_version": "v02",
+  "formal": "assets/sprites/cards/freyr_field.png",
+  "sha256": "dc49afc5461a6a27bd518535586e3c53ec96861b72d4b4892fe9a78b8979d795",
+  "review": {
+    "visual_review": "移除野猪后主题为插地直剑与麦穗；握手正常、脸和剑柄清楚，麦田在上部，下40%安静暗调，缩略与遮罩通过。",
+    "checks": [
+      "source anatomy/weapon",
+      "260 thumbnail",
+      "bottom45 mask",
+      "primary safe area",
+      "reference identity"
+    ]
+  },
+  "mipmaps": "offline reference chain only; Godot import mipmaps must be enabled by integration agent"
+}

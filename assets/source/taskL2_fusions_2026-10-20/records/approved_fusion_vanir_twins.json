@@ -1,0 +1,17 @@
+{
+  "id": "fusion_vanir_twins",
+  "selected_version": "v01",
+  "formal": "assets/sprites/cards/fusion_vanir_twins.png",
+  "sha256": "b059f3ad694b84b309142ecbff013187bf434034f9ed63f6bb71253fe2b0e456",
+  "review": {
+    "visual_review": "一柄完整直剑与金羽交叉，三只手分属女方握羽及男方双手持剑，结构合理；金饰、绿衣与身份延续，缩略、遮罩、安全边通过。",
+    "checks": [
+      "source anatomy/weapon/animal",
+      "260 thumbnail",
+      "bottom45 mask",
+      "primary safe area",
+      "two identities"
+    ]
+  },
+  "mipmaps": "offline reference chain only; Godot import mipmaps must be enabled by integration agent"
+}

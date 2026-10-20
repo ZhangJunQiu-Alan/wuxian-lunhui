@@ -1,0 +1,17 @@
+{
+  "id": "skadi_winter",
+  "selected_version": "v02",
+  "formal": "assets/sprites/cards/skadi_winter.png",
+  "sha256": "59ea0417af0663820901e00661434dba5c6e7a588ac04d2a462b341bc580cea6",
+  "review": {
+    "visual_review": "持弓从腰间移至肩后，双手内收胸前；寒冬环流及冻结目标形成独立道路主题，底部安静；缩略、遮罩和安全边通过。",
+    "checks": [
+      "source anatomy/weapon",
+      "260 thumbnail",
+      "bottom45 mask",
+      "primary safe area",
+      "reference identity"
+    ]
+  },
+  "mipmaps": "offline reference chain only; Godot import mipmaps must be enabled by integration agent"
+}

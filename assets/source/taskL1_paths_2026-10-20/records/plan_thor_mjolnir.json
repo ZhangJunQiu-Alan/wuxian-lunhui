@@ -1,0 +1,15 @@
+{
+  "id": "thor_mjolnir",
+  "task": "L1",
+  "god": "thor",
+  "variant": "path",
+  "root": "assets/source/taskL1_paths_2026-10-20",
+  "target": "assets/sprites/cards/thor_mjolnir.png",
+  "references": [
+    "assets/sprites/cards/thor.png"
+  ],
+  "prompt": "Use case: illustration-story. Asset type: ONE premium game upgrade CARD ILLUSTRATION, portrait 3:5, intended final 720x1200 RGB. Style: richly textured restrained northern myth oil painting / painterly impasto, realistic faces and materials, same collection as attached original portraits, NOT pixel art, NOT anime, no glossy 3D. This is a living myth inside an ancient archive; do not add computers, museums or science-fiction. CRITICAL composition: heads and every key spell, weapon, animal or gesture entirely within upper55% of image; faces around y15-25%, upper bodies around y25-50%; bottom40% deep blue-black simple cloak/shadow fading into quiet negative space for game text. Left/right40px safe margins at final size: no face/important weapon/animal touches side edges. Show a single composed cinematic scene, not a multi-panel sheet. No borders, card frame, letters, readable runes, logos, watermark, interface or typography. Natural anatomy, clearly separated hands, structurally sound weapons, restrained bloom; faces legible at260px wide. Preserve identity, age, hair, facial features, costume materials and painterly style from references; pose and scenario change for THIS specific upgrade.\nSubject identity: the same broad muscular middle-aged red-haired, thick red-bearded northern warrior, black fur mantle, weathered leather and iron armor, blue lightning.\nSpecific upgrade scene: A heavy SHORT-HANDLED iron war hammer is released from an open gauntleted hand and flies in a curved RETURNING arc, branching small blue lightning behind it. One clear hammer, consistent solid block head and short handle.\nThis is a DISTINCT PATH illustration. Show this road motif clearly, not the generic base portrait again.\nKeep ALL important anatomy, weapon heads/tips and animal faces within CENTRAL80% of canvas (x10%..90%), not merely inside the outer edge. Leave side columns as background or unimportant cloak only. Place all hands/gesture and spell motifs above y52%; nothing bright or complex below y60%.",
+  "current_gameplay_source_line": "\"thor_mjolnir\": {\"kind\": \"path\", \"god\": \"thor\", \"name\": \"妙尔尼尔\", \"desc\": \"改为每 3 秒向敌人掷出战锤，飞出去再飞回手里，一路落雷。风暴 = 多掷一把锤；回响 = 回手时有几率立刻再掷\"},",
+  "input_code_sha256": "e2b900caf6dcee1af417fb90932a48e0313bf8e726a5f7d4141ed8d8e332e4db",
+  "status": "planned"
+}

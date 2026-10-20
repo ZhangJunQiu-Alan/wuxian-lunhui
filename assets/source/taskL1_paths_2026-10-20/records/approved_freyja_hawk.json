@@ -1,0 +1,17 @@
+{
+  "id": "freyja_hawk",
+  "selected_version": "v02",
+  "formal": "assets/sprites/cards/freyja_hawk.png",
+  "sha256": "3ab51b66b06c125bdb2c7b530046d666d0e2dcd494a196f4bf8b618cb27873ca",
+  "review": {
+    "visual_review": "双手已收进，羽刃往返弧在上55%可读，原女性脸/辫子/羽披风/金项链保持。",
+    "checks": [
+      "full source anatomy/material",
+      "260px safe and text mask",
+      "identity compared",
+      "bottom40% dark",
+      "mechanic-specific primary motif"
+    ]
+  },
+  "mipmaps": "offline reference chain only; Godot import mipmaps must be enabled by integration agent"
+}

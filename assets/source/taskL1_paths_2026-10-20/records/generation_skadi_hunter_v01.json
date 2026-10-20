@@ -1,0 +1,28 @@
+{
+  "id": "skadi_hunter",
+  "task": "L1",
+  "god": "skadi",
+  "variant": "path",
+  "root": "assets/source/taskL1_paths_2026-10-20",
+  "target": "assets/sprites/cards/skadi_hunter.png",
+  "references": [
+    {
+      "actual_input": "assets/sprites/cards/skadi.png",
+      "archive": "references/skadi.png",
+      "sha256": "944db9fd75a5c885242d446ec67f34d03449deccf4a01cee5800638673dfa162"
+    }
+  ],
+  "prompt": "Use case: illustration-story. Asset type: ONE premium game upgrade CARD ILLUSTRATION, portrait 3:5, intended final 720x1200 RGB. Style: richly textured restrained northern myth oil painting / painterly impasto, realistic faces and materials, same collection as attached original portraits, NOT pixel art, NOT anime, no glossy 3D. This is a living myth inside an ancient archive; do not add computers, museums or science-fiction. CRITICAL composition: heads and every key spell, weapon, animal or gesture entirely within upper55% of image; faces around y15-25%, upper bodies around y25-50%; bottom40% deep blue-black simple cloak/shadow fading into quiet negative space for game text. Left/right40px safe margins at final size: no face/important weapon/animal touches side edges. Show a single composed cinematic scene, not a multi-panel sheet. No borders, card frame, letters, readable runes, logos, watermark, interface or typography. Natural anatomy, clearly separated hands, structurally sound weapons, restrained bloom; faces legible at260px wide. Preserve identity, age, hair, facial features, costume materials and painterly style from references; pose and scenario change for THIS specific upgrade.\nSubject identity: the same stern silver-haired mature huntress, dark fur mantle and leather gloves, wooden bow, icy blue magic and winter mountains.\nSpecific upgrade scene: The huntress takes a steady aimed shot with a wooden bow, ONE straight icy arrow nocked and aligned from string toward a distant marked dark target near upper side, focused hunter gaze, bow physically coherent.\nThis is a DISTINCT PATH illustration. Show this road motif clearly, not the generic base portrait again.\nKeep ALL important anatomy, weapon heads/tips and animal faces within CENTRAL80% of canvas (x10%..90%), not merely inside the outer edge. Leave side columns as background or unimportant cloak only. Place all hands/gesture and spell motifs above y52%; nothing bright or complex below y60%.",
+  "current_gameplay_source_line": "\"skadi_hunter\": {\"kind\": \"path\", \"god\": \"skadi\", \"name\": \"狩猎本能\", \"desc\": \"标记屏幕内最强的敌人，冰箭改为蓄力狙击它：伤害 ×3，直接冻结。连珠 = 狙击后追加普通箭\"},",
+  "input_code_sha256": "e2b900caf6dcee1af417fb90932a48e0313bf8e726a5f7d4141ed8d8e332e4db",
+  "status": "rejected",
+  "version": "v01",
+  "tool": "OpenAI built-in image_gen",
+  "raw_output_path": "/Users/zhangjunqiu/.codex/generated_images/01a14093-604c-72e3-b0c2-585e428c4824/exec-1e8cdc99-9f4c-4dd7-9931-3fb2271ceccb.png",
+  "original": "originals/skadi_hunter_v01.png",
+  "original_sha256": "3140d6e2068fbfeb738355e027c4b261d78ebabdb57b6c82fd00b9110243890d",
+  "commercial_basis": "https://openai.com/policies/terms-of-use/",
+  "review": {
+    "reason": "完整木弓上端被画幅切断，箭尖靠近右安全线，缩小内移弓箭。"
+  }
+}

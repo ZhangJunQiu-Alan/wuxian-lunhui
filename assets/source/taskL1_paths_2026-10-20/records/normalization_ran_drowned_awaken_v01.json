@@ -1,0 +1,21 @@
+{
+  "id": "ran_drowned_awaken",
+  "raw_size": [
+    971,
+    1619
+  ],
+  "raw_mode": "RGB",
+  "output_size": [
+    720,
+    1200
+  ],
+  "mode": "RGB",
+  "operation": "centered aspect crop to3:5, Lanczos resize720x1200, RGB only; no repaint, no artificial background darkening",
+  "candidate_sha256": "37354aa10d4f9d575ae79f4a1304499da8b1066a416940d97b62a665af1db776",
+  "bottom40_luminance": {
+    "mean": 16.05,
+    "pixels_over_100_fraction": 0.0012,
+    "stddev": 10.47
+  },
+  "status": "normalization verified; candidate selected after separate visual review"
+}

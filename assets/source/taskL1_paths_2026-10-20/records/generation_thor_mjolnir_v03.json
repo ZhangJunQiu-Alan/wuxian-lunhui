@@ -1,0 +1,35 @@
+{
+  "id": "thor_mjolnir",
+  "task": "L1",
+  "god": "thor",
+  "variant": "path",
+  "root": "assets/source/taskL1_paths_2026-10-20",
+  "target": "assets/sprites/cards/thor_mjolnir.png",
+  "references": [
+    {
+      "actual_input": "assets/source/taskL1_paths_2026-10-20/originals/thor_mjolnir_v02.png",
+      "archive": "references/thor_mjolnir_v02.png",
+      "sha256": "79aba0ea057274e83d44bd0bf7779b5f4c0e6f6211761258514cd3c5f74328f1"
+    }
+  ],
+  "prompt": "Edit this existing painting. Move the entire flying hammer LEFT by about15% of the canvas; shrink hammer15%. Keep hand and returning arc. Keep exactly the same man, face, age, red beard, fur clothing, impasto oil style, color, lighting and 3:5 tall composition. HARD SAFE AREA: all weapon/hand/enemy essential details within x12%..88% and y5%..52%, with abundant side background. Bottom40% stays as the original quiet dark cloak, no new light or object below60%. Do not add text, borders or a new character. This is a card composition fix, not a new identity.",
+  "current_gameplay_source_line": "\"thor_mjolnir\": {\"kind\": \"path\", \"god\": \"thor\", \"name\": \"妙尔尼尔\", \"desc\": \"改为每 3 秒向敌人掷出战锤，飞出去再飞回手里，一路落雷。风暴 = 多掷一把锤；回响 = 回手时有几率立刻再掷\"},",
+  "input_code_sha256": "e2b900caf6dcee1af417fb90932a48e0313bf8e726a5f7d4141ed8d8e332e4db",
+  "status": "approved",
+  "version": "v03",
+  "tool": "OpenAI built-in image_gen",
+  "raw_output_path": "/Users/zhangjunqiu/.codex/generated_images/01a14093-604c-72e3-b0c2-585e428c4824/exec-fabc2a5f-5a52-4923-b105-5ef67e370fc0.png",
+  "original": "originals/thor_mjolnir_v03.png",
+  "original_sha256": "e144cdab165636507864ae2bc796cfc9224ad28cfd5a392ecbe8130b17db34ce",
+  "commercial_basis": "https://openai.com/policies/terms-of-use/",
+  "review": {
+    "visual_review": "锤头向内回收后完整可读，单锤短柄和回旋轨迹；五指/脸部/头发一致，暗部与遮罩通过。",
+    "checks": [
+      "source full-size structure reviewed",
+      "260px thumbnail reviewed",
+      "bottom45% mask reviewed",
+      "identity and impasto consistency reviewed",
+      "primary motif and face inside safe area"
+    ]
+  }
+}

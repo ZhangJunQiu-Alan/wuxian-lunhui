@@ -1,0 +1,21 @@
+{
+  "id": "freyr_sun",
+  "raw_size": [
+    972,
+    1619
+  ],
+  "raw_mode": "RGB",
+  "output_size": [
+    720,
+    1200
+  ],
+  "mode": "RGB",
+  "operation": "centered aspect crop to3:5, Lanczos resize720x1200, RGB only; no repaint, no artificial background darkening",
+  "candidate_sha256": "d65949068116e711f5917368b443a2d4ac7277fc0d6ac6cc0068ebbf7e1fb122",
+  "bottom40_luminance": {
+    "mean": 17.11,
+    "pixels_over_100_fraction": 0.0187,
+    "stddev": 20.52
+  },
+  "status": "normalization verified; candidate selected after separate visual review"
+}

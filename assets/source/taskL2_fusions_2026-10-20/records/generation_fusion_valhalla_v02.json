@@ -1,0 +1,38 @@
+{
+  "id": "fusion_valhalla",
+  "task": "L2",
+  "gods": [
+    "odin",
+    "freyja"
+  ],
+  "variant": "fusion",
+  "root": "assets/source/taskL2_fusions_2026-10-20",
+  "target": "assets/sprites/cards/fusion_valhalla.png",
+  "references": [
+    {
+      "actual_input": "assets/source/taskL2_fusions_2026-10-20/originals/fusion_valhalla_v01.png",
+      "archive": "references/fusion_valhalla_v01.png",
+      "sha256": "46a8be608d0240502fb34e6452cf7d6048df5b48ee1f6f5faeb6fc71f300f919"
+    }
+  ],
+  "prompt": "Edit this portrait3:5 oil painting. Keep the SAME old one-eyed man, blonde feather-cloaked woman, their faces, costume, gold-violet hall and oil texture. SHRINK the summoned translucent warrior to half current size and MOVE upward, so his full helmet/head, torso, sword and shield fit completely inside x35%..65%, y28%..50%. It is a small secondary spirit rising between the two main characters, not a large third foreground person. No glow mist or detailed armor below y55%; bottom45% quiet dark blue-black cloak shadow. Keep both summoning hands natural and inside x20%..80%.",
+  "current_gameplay_source_line": "\"valhalla\": {\"gods\": [\"odin\", \"freyja\"], \"name\": \"英灵殿与弗尔克范格\", \"desc\": \"每个精英死亡时召唤一位英灵，并肩作战 15 秒\"},",
+  "input_code_sha256": "cf8ac4eb04350527ea92fc6d7718a3882bee3bce4e278d679f66845fb808c289",
+  "status": "approved",
+  "version": "v02",
+  "tool": "OpenAI built-in image_gen",
+  "raw_output_path": "/Users/zhangjunqiu/.codex/generated_images/01a14093-604c-72e3-b0c2-585e428c4824/exec-7e57c98d-47bd-4a8a-b642-94198bda7f62.png",
+  "original": "originals/fusion_valhalla_v02.png",
+  "original_sha256": "c7851a3d79e6f2921f37c7420116cee6c3b1b3330cc63acf45e84d534e363a24",
+  "commercial_basis": "https://openai.com/policies/terms-of-use/",
+  "review": {
+    "visual_review": "英灵已缩小为双人中间的次要召唤灵，剑盾结构完整、双主角与厅堂明确；下40%暗简，缩略、遮罩、安全边通过。",
+    "checks": [
+      "source anatomy/weapon/animal",
+      "260 thumbnail",
+      "bottom45 mask",
+      "primary safe area",
+      "two identities"
+    ]
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "id": "freyja_hawk",
+  "raw_size": [
+    971,
+    1619
+  ],
+  "raw_mode": "RGB",
+  "output_size": [
+    720,
+    1200
+  ],
+  "mode": "RGB",
+  "operation": "centered aspect crop to3:5, Lanczos resize720x1200, RGB only; no repaint, no artificial background darkening",
+  "candidate_sha256": "13a351d9c4ed0d1c8f801787a4c905876ea53cbda5ce7a609dbea3b1075008e3",
+  "bottom40_luminance": {
+    "mean": 18.74,
+    "pixels_over_100_fraction": 0.0002,
+    "stddev": 7.09
+  },
+  "status": "awaiting visual QA"
+}

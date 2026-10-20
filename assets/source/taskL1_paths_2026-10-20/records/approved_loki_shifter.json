@@ -1,0 +1,17 @@
+{
+  "id": "loki_shifter",
+  "selected_version": "v01",
+  "formal": "assets/sprites/cards/loki_shifter.png",
+  "sha256": "1d16fec1058a0f5837677df4cd46f6ea3a7c2ada35062a51962f73f35cb024f2",
+  "review": {
+    "visual_review": "原人一实一虚两张同脸，分身与原人手臂可区分，无额外接肢；两脸和主体手势在上55%且可读，暗部/文字遮罩通过。",
+    "checks": [
+      "source anatomy",
+      "260px",
+      "mask",
+      "safe guide",
+      "base identity"
+    ]
+  },
+  "mipmaps": "offline reference chain only; Godot import mipmaps must be enabled by integration agent"
+}

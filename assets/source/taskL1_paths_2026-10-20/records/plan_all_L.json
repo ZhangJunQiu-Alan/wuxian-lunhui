@@ -1,0 +1,974 @@
+[
+  {
+    "id": "thor_mjolnir",
+    "task": "L1",
+    "god": "thor",
+    "variant": "path",
+    "root": "assets/source/taskL1_paths_2026-10-20",
+    "target": "assets/sprites/cards/thor_mjolnir.png",
+    "references": [
+      "assets/sprites/cards/thor.png"
+    ],
+    "prompt": "Use case: illustration-story. Asset type: ONE premium game upgrade CARD ILLUSTRATION, portrait 3:5, intended final 720x1200 RGB. Style: richly textured restrained northern myth oil painting / painterly impasto, realistic faces and materials, same collection as attached original portraits, NOT pixel art, NOT anime, no glossy 3D. This is a living myth inside an ancient archive; do not add computers, museums or science-fiction. CRITICAL composition: heads and every key spell, weapon, animal or gesture entirely within upper55% of image; faces around y15-25%, upper bodies around y25-50%; bottom40% deep blue-black simple cloak/shadow fading into quiet negative space for game text. Left/right40px safe margins at final size: no face/important weapon/animal touches side edges. Show a single composed cinematic scene, not a multi-panel sheet. No borders, card frame, letters, readable runes, logos, watermark, interface or typography. Natural anatomy, clearly separated hands, structurally sound weapons, restrained bloom; faces legible at260px wide. Preserve identity, age, hair, facial features, costume materials and painterly style from references; pose and scenario change for THIS specific upgrade.\nSubject identity: the same broad muscular middle-aged red-haired, thick red-bearded northern warrior, black fur mantle, weathered leather and iron armor, blue lightning.\nSpecific upgrade scene: A heavy SHORT-HANDLED iron war hammer is released from an open gauntleted hand and flies in a curved RETURNING arc, branching small blue lightning behind it. One clear hammer, consistent solid block head and short handle.\nThis is a DISTINCT PATH illustration. Show this road motif clearly, not the generic base portrait again.\nKeep ALL important anatomy, weapon heads/tips and animal faces within CENTRAL80% of canvas (x10%..90%), not merely inside the outer edge. Leave side columns as background or unimportant cloak only. Place all hands/gesture and spell motifs above y52%; nothing bright or complex below y60%.",
+    "current_gameplay_source_line": "\"thor_mjolnir\": {\"kind\": \"path\", \"god\": \"thor\", \"name\": \"妙尔尼尔\", \"desc\": \"改为每 3 秒向敌人掷出战锤，飞出去再飞回手里，一路落雷。风暴 = 多掷一把锤；回响 = 回手时有几率立刻再掷\"},",
+    "input_code_sha256": "e2b900caf6dcee1af417fb90932a48e0313bf8e726a5f7d4141ed8d8e332e4db",
+    "status": "planned"
+  },
+  {
+    "id": "thor_mjolnir_awaken",
+    "task": "L1",
+    "god": "thor",
+    "variant": "awaken",
+    "root": "assets/source/taskL1_paths_2026-10-20",
+    "target": "assets/sprites/cards/thor_mjolnir_awaken.png",
+    "references": [
+      "assets/sprites/cards/thor_mjolnir.png",
+      "assets/sprites/cards/thor.png"
+    ],
+    "prompt": "Use case: illustration-story. Asset type: ONE premium game upgrade CARD ILLUSTRATION, portrait 3:5, intended final 720x1200 RGB. Style: richly textured restrained northern myth oil painting / painterly impasto, realistic faces and materials, same collection as attached original portraits, NOT pixel art, NOT anime, no glossy 3D. This is a living myth inside an ancient archive; do not add computers, museums or science-fiction. CRITICAL composition: heads and every key spell, weapon, animal or gesture entirely within upper55% of image; faces around y15-25%, upper bodies around y25-50%; bottom40% deep blue-black simple cloak/shadow fading into quiet negative space for game text. Left/right40px safe margins at final size: no face/important weapon/animal touches side edges. Show a single composed cinematic scene, not a multi-panel sheet. No borders, card frame, letters, readable runes, logos, watermark, interface or typography. Natural anatomy, clearly separated hands, structurally sound weapons, restrained bloom; faces legible at260px wide. Preserve identity, age, hair, facial features, costume materials and painterly style from references; pose and scenario change for THIS specific upgrade.\nSubject identity: the same broad muscular middle-aged red-haired, thick red-bearded northern warrior, black fur mantle, weathered leather and iron armor, blue lightning.\nSpecific upgrade scene: Three returning war hammers converge around the warrior at the moment of return; a concentrated blue thunderburst at his upper chest height, three coherent hammer shapes, wider godlike power.\nThis is the AWAKENED culmination of the companion path image, distinctly greater power and evolved scene, not a recolor, while preserving the SAME character and road motif.\nKeep ALL important anatomy, weapon heads/tips and animal faces within CENTRAL80% of canvas (x10%..90%), not merely inside the outer edge. Leave side columns as background or unimportant cloak only. Place all hands/gesture and spell motifs above y52%; nothing bright or complex below y60%.",
+    "current_gameplay_source_line": "\"thor_mjolnir_awaken\": {\"kind\": \"awaken\", \"god\": \"thor\", \"path\": \"thor_mjolnir\", \"name\": \"觉醒·妙尔尼尔归来\", \"desc\": \"多掷 2 把战锤；战锤飞回手里的瞬间在身边引发大雷爆。受到攻击时 30% 几率反劈一道雷\"},",
+    "input_code_sha256": "e2b900caf6dcee1af417fb90932a48e0313bf8e726a5f7d4141ed8d8e332e4db",
+    "status": "planned"
+  },
+  {
+    "id": "thor_cloud",
+    "task": "L1",
+    "god": "thor",
+    "variant": "path",
+    "root": "assets/source/taskL1_paths_2026-10-20",
+    "target": "assets/sprites/cards/thor_cloud.png",
+    "references": [
+      "assets/sprites/cards/thor.png"
+    ],
+    "prompt": "Use case: illustration-story. Asset type: ONE premium game upgrade CARD ILLUSTRATION, portrait 3:5, intended final 720x1200 RGB. Style: richly textured restrained northern myth oil painting / painterly impasto, realistic faces and materials, same collection as attached original portraits, NOT pixel art, NOT anime, no glossy 3D. This is a living myth inside an ancient archive; do not add computers, museums or science-fiction. CRITICAL composition: heads and every key spell, weapon, animal or gesture entirely within upper55% of image; faces around y15-25%, upper bodies around y25-50%; bottom40% deep blue-black simple cloak/shadow fading into quiet negative space for game text. Left/right40px safe margins at final size: no face/important weapon/animal touches side edges. Show a single composed cinematic scene, not a multi-panel sheet. No borders, card frame, letters, readable runes, logos, watermark, interface or typography. Natural anatomy, clearly separated hands, structurally sound weapons, restrained bloom; faces legible at260px wide. Preserve identity, age, hair, facial features, costume materials and painterly style from references; pose and scenario change for THIS specific upgrade.\nSubject identity: the same broad muscular middle-aged red-haired, thick red-bearded northern warrior, black fur mantle, weathered leather and iron armor, blue lightning.\nSpecific upgrade scene: The warrior beneath a compact heavy blue-black thundercloud immediately above his shoulders, THREE clear downward blue lightning forks around him. Hammer secondary, focus on controlled cloud.\nThis is a DISTINCT PATH illustration. Show this road motif clearly, not the generic base portrait again.\nKeep ALL important anatomy, weapon heads/tips and animal faces within CENTRAL80% of canvas (x10%..90%), not merely inside the outer edge. Leave side columns as background or unimportant cloak only. Place all hands/gesture and spell motifs above y52%; nothing bright or complex below y60%.",
+    "current_gameplay_source_line": "\"thor_cloud\": {\"kind\": \"path\", \"god\": \"thor\", \"name\": \"雷暴云\", \"desc\": \"头顶跟着一团雷云，每秒向周围劈 3 道小雷。风暴 = 每秒多劈 1 道；雷域 = 雷云更大\"},",
+    "input_code_sha256": "e2b900caf6dcee1af417fb90932a48e0313bf8e726a5f7d4141ed8d8e332e4db",
+    "status": "planned"
+  },
+  {
+    "id": "thor_cloud_awaken",
+    "task": "L1",
+    "god": "thor",
+    "variant": "awaken",
+    "root": "assets/source/taskL1_paths_2026-10-20",
+    "target": "assets/sprites/cards/thor_cloud_awaken.png",
+    "references": [
+      "assets/sprites/cards/thor_cloud.png",
+      "assets/sprites/cards/thor.png"
+    ],
+    "prompt": "Use case: illustration-story. Asset type: ONE premium game upgrade CARD ILLUSTRATION, portrait 3:5, intended final 720x1200 RGB. Style: richly textured restrained northern myth oil painting / painterly impasto, realistic faces and materials, same collection as attached original portraits, NOT pixel art, NOT anime, no glossy 3D. This is a living myth inside an ancient archive; do not add computers, museums or science-fiction. CRITICAL composition: heads and every key spell, weapon, animal or gesture entirely within upper55% of image; faces around y15-25%, upper bodies around y25-50%; bottom40% deep blue-black simple cloak/shadow fading into quiet negative space for game text. Left/right40px safe margins at final size: no face/important weapon/animal touches side edges. Show a single composed cinematic scene, not a multi-panel sheet. No borders, card frame, letters, readable runes, logos, watermark, interface or typography. Natural anatomy, clearly separated hands, structurally sound weapons, restrained bloom; faces legible at260px wide. Preserve identity, age, hair, facial features, costume materials and painterly style from references; pose and scenario change for THIS specific upgrade.\nSubject identity: the same broad muscular middle-aged red-haired, thick red-bearded northern warrior, black fur mantle, weathered leather and iron armor, blue lightning.\nSpecific upgrade scene: Vast layered stormcloud canopy and MANY rapid lightning forks across upper half; faint two-goat chariot silhouettes behind shoulders only as secondary mythic image; cloud and accelerated lightning dominate.\nThis is the AWAKENED culmination of the companion path image, distinctly greater power and evolved scene, not a recolor, while preserving the SAME character and road motif.\nKeep ALL important anatomy, weapon heads/tips and animal faces within CENTRAL80% of canvas (x10%..90%), not merely inside the outer edge. Leave side columns as background or unimportant cloak only. Place all hands/gesture and spell motifs above y52%; nothing bright or complex below y60%.",
+    "current_gameplay_source_line": "\"thor_cloud_awaken\": {\"kind\": \"awaken\", \"god\": \"thor\", \"path\": \"thor_cloud\", \"name\": \"觉醒·山羊战车\", \"desc\": \"雷云覆盖整个屏幕，落雷速度翻倍。受到攻击时 30% 几率反劈一道雷\"},",
+    "input_code_sha256": "e2b900caf6dcee1af417fb90932a48e0313bf8e726a5f7d4141ed8d8e332e4db",
+    "status": "planned"
+  },
+  {
+    "id": "thor_static",
+    "task": "L1",
+    "god": "thor",
+    "variant": "path",
+    "root": "assets/source/taskL1_paths_2026-10-20",
+    "target": "assets/sprites/cards/thor_static.png",
+    "references": [
+      "assets/sprites/cards/thor.png"
+    ],
+    "prompt": "Use case: illustration-story. Asset type: ONE premium game upgrade CARD ILLUSTRATION, portrait 3:5, intended final 720x1200 RGB. Style: richly textured restrained northern myth oil painting / painterly impasto, realistic faces and materials, same collection as attached original portraits, NOT pixel art, NOT anime, no glossy 3D. This is a living myth inside an ancient archive; do not add computers, museums or science-fiction. CRITICAL composition: heads and every key spell, weapon, animal or gesture entirely within upper55% of image; faces around y15-25%, upper bodies around y25-50%; bottom40% deep blue-black simple cloak/shadow fading into quiet negative space for game text. Left/right40px safe margins at final size: no face/important weapon/animal touches side edges. Show a single composed cinematic scene, not a multi-panel sheet. No borders, card frame, letters, readable runes, logos, watermark, interface or typography. Natural anatomy, clearly separated hands, structurally sound weapons, restrained bloom; faces legible at260px wide. Preserve identity, age, hair, facial features, costume materials and painterly style from references; pose and scenario change for THIS specific upgrade.\nSubject identity: the same broad muscular middle-aged red-haired, thick red-bearded northern warrior, black fur mantle, weathered leather and iron armor, blue lightning.\nSpecific upgrade scene: A branching electrical WEB links three small dark enemy silhouettes across the upper-mid area, nodes of blue static; warrior controls the web with an open hand, no stormcloud.\nThis is a DISTINCT PATH illustration. Show this road motif clearly, not the generic base portrait again.\nKeep ALL important anatomy, weapon heads/tips and animal faces within CENTRAL80% of canvas (x10%..90%), not merely inside the outer edge. Leave side columns as background or unimportant cloak only. Place all hands/gesture and spell motifs above y52%; nothing bright or complex below y60%.",
+    "current_gameplay_source_line": "\"thor_static\": {\"kind\": \"path\", \"god\": \"thor\", \"name\": \"静电场\", \"desc\": \"落雷改为给敌人叠感电；相邻的感电敌人连成电网，每秒互相电击。雷域 = 电网连得更远\"},",
+    "input_code_sha256": "e2b900caf6dcee1af417fb90932a48e0313bf8e726a5f7d4141ed8d8e332e4db",
+    "status": "planned"
+  },
+  {
+    "id": "thor_static_awaken",
+    "task": "L1",
+    "god": "thor",
+    "variant": "awaken",
+    "root": "assets/source/taskL1_paths_2026-10-20",
+    "target": "assets/sprites/cards/thor_static_awaken.png",
+    "references": [
+      "assets/sprites/cards/thor_static.png",
+      "assets/sprites/cards/thor.png"
+    ],
+    "prompt": "Use case: illustration-story. Asset type: ONE premium game upgrade CARD ILLUSTRATION, portrait 3:5, intended final 720x1200 RGB. Style: richly textured restrained northern myth oil painting / painterly impasto, realistic faces and materials, same collection as attached original portraits, NOT pixel art, NOT anime, no glossy 3D. This is a living myth inside an ancient archive; do not add computers, museums or science-fiction. CRITICAL composition: heads and every key spell, weapon, animal or gesture entirely within upper55% of image; faces around y15-25%, upper bodies around y25-50%; bottom40% deep blue-black simple cloak/shadow fading into quiet negative space for game text. Left/right40px safe margins at final size: no face/important weapon/animal touches side edges. Show a single composed cinematic scene, not a multi-panel sheet. No borders, card frame, letters, readable runes, logos, watermark, interface or typography. Natural anatomy, clearly separated hands, structurally sound weapons, restrained bloom; faces legible at260px wide. Preserve identity, age, hair, facial features, costume materials and painterly style from references; pose and scenario change for THIS specific upgrade.\nSubject identity: the same broad muscular middle-aged red-haired, thick red-bearded northern warrior, black fur mantle, weathered leather and iron armor, blue lightning.\nSpecific upgrade scene: A dense interconnected electric web detonates outward from ONE extinguishing silhouette, branching chain reactions through the other linked nodes; warrior composed at center.\nThis is the AWAKENED culmination of the companion path image, distinctly greater power and evolved scene, not a recolor, while preserving the SAME character and road motif.\nKeep ALL important anatomy, weapon heads/tips and animal faces within CENTRAL80% of canvas (x10%..90%), not merely inside the outer edge. Leave side columns as background or unimportant cloak only. Place all hands/gesture and spell motifs above y52%; nothing bright or complex below y60%.",
+    "current_gameplay_source_line": "\"thor_static_awaken\": {\"kind\": \"awaken\", \"god\": \"thor\", \"path\": \"thor_static\", \"name\": \"觉醒·雷神之域\", \"desc\": \"感电的敌人死亡时，引爆电网上所有相连的敌人。受到攻击时 30% 几率反劈一道雷\"},",
+    "input_code_sha256": "e2b900caf6dcee1af417fb90932a48e0313bf8e726a5f7d4141ed8d8e332e4db",
+    "status": "planned"
+  },
+  {
+    "id": "odin_gungnir",
+    "task": "L1",
+    "god": "odin",
+    "variant": "path",
+    "root": "assets/source/taskL1_paths_2026-10-20",
+    "target": "assets/sprites/cards/odin_gungnir.png",
+    "references": [
+      "assets/sprites/cards/odin.png"
+    ],
+    "prompt": "Use case: illustration-story. Asset type: ONE premium game upgrade CARD ILLUSTRATION, portrait 3:5, intended final 720x1200 RGB. Style: richly textured restrained northern myth oil painting / painterly impasto, realistic faces and materials, same collection as attached original portraits, NOT pixel art, NOT anime, no glossy 3D. This is a living myth inside an ancient archive; do not add computers, museums or science-fiction. CRITICAL composition: heads and every key spell, weapon, animal or gesture entirely within upper55% of image; faces around y15-25%, upper bodies around y25-50%; bottom40% deep blue-black simple cloak/shadow fading into quiet negative space for game text. Left/right40px safe margins at final size: no face/important weapon/animal touches side edges. Show a single composed cinematic scene, not a multi-panel sheet. No borders, card frame, letters, readable runes, logos, watermark, interface or typography. Natural anatomy, clearly separated hands, structurally sound weapons, restrained bloom; faces legible at260px wide. Preserve identity, age, hair, facial features, costume materials and painterly style from references; pose and scenario change for THIS specific upgrade.\nSubject identity: the same elderly long grey-bearded one-eyed northern wanderer, broad dark hat, fur cloak, weathered face, violet magic.\nSpecific upgrade scene: The elder thrusts a single straight long spear outward from his upper body; a violet linear trail pierces THREE distant dark silhouettes, thin abstract unlettered magic marks bursting on contact. Spear stays straight.\nThis is a DISTINCT PATH illustration. Show this road motif clearly, not the generic base portrait again.\nKeep ALL important anatomy, weapon heads/tips and animal faces within CENTRAL80% of canvas (x10%..90%), not merely inside the outer edge. Leave side columns as background or unimportant cloak only. Place all hands/gesture and spell motifs above y52%; nothing bright or complex below y60%.",
+    "current_gameplay_source_line": "\"odin_gungnir\": {\"kind\": \"path\", \"god\": \"odin\", \"name\": \"冈格尼尔\", \"desc\": \"改为每 2.5 秒掷出长枪，贯穿一条直线上的所有敌人，命中直接引爆印记。增殖 = 多掷一支；破甲 = 长枪更宽\"},",
+    "input_code_sha256": "e2b900caf6dcee1af417fb90932a48e0313bf8e726a5f7d4141ed8d8e332e4db",
+    "status": "planned"
+  },
+  {
+    "id": "odin_gungnir_awaken",
+    "task": "L1",
+    "god": "odin",
+    "variant": "awaken",
+    "root": "assets/source/taskL1_paths_2026-10-20",
+    "target": "assets/sprites/cards/odin_gungnir_awaken.png",
+    "references": [
+      "assets/sprites/cards/odin_gungnir.png",
+      "assets/sprites/cards/odin.png"
+    ],
+    "prompt": "Use case: illustration-story. Asset type: ONE premium game upgrade CARD ILLUSTRATION, portrait 3:5, intended final 720x1200 RGB. Style: richly textured restrained northern myth oil painting / painterly impasto, realistic faces and materials, same collection as attached original portraits, NOT pixel art, NOT anime, no glossy 3D. This is a living myth inside an ancient archive; do not add computers, museums or science-fiction. CRITICAL composition: heads and every key spell, weapon, animal or gesture entirely within upper55% of image; faces around y15-25%, upper bodies around y25-50%; bottom40% deep blue-black simple cloak/shadow fading into quiet negative space for game text. Left/right40px safe margins at final size: no face/important weapon/animal touches side edges. Show a single composed cinematic scene, not a multi-panel sheet. No borders, card frame, letters, readable runes, logos, watermark, interface or typography. Natural anatomy, clearly separated hands, structurally sound weapons, restrained bloom; faces legible at260px wide. Preserve identity, age, hair, facial features, costume materials and painterly style from references; pose and scenario change for THIS specific upgrade.\nSubject identity: the same elderly long grey-bearded one-eyed northern wanderer, broad dark hat, fur cloak, weathered face, violet magic.\nSpecific upgrade scene: One luminous spear with three successive ghosted positions traces a smooth TURNING path between three targets, not a bent shaft; faint ancestral warrior silhouette behind the elder, violet-gold magical power.\nThis is the AWAKENED culmination of the companion path image, distinctly greater power and evolved scene, not a recolor, while preserving the SAME character and road motif.\nKeep ALL important anatomy, weapon heads/tips and animal faces within CENTRAL80% of canvas (x10%..90%), not merely inside the outer edge. Leave side columns as background or unimportant cloak only. Place all hands/gesture and spell motifs above y52%; nothing bright or complex below y60%.",
+    "current_gameplay_source_line": "\"odin_gungnir_awaken\": {\"kind\": \"awaken\", \"god\": \"odin\", \"path\": \"odin_gungnir\", \"name\": \"觉醒·永不落空\", \"desc\": \"长枪贯穿后自动转向下一个敌人，连续贯穿 3 次。每击杀 100 个敌人召唤一位英灵 20 秒\"},",
+    "input_code_sha256": "e2b900caf6dcee1af417fb90932a48e0313bf8e726a5f7d4141ed8d8e332e4db",
+    "status": "planned"
+  },
+  {
+    "id": "odin_ravens",
+    "task": "L1",
+    "god": "odin",
+    "variant": "path",
+    "root": "assets/source/taskL1_paths_2026-10-20",
+    "target": "assets/sprites/cards/odin_ravens.png",
+    "references": [
+      "assets/sprites/cards/odin.png"
+    ],
+    "prompt": "Use case: illustration-story. Asset type: ONE premium game upgrade CARD ILLUSTRATION, portrait 3:5, intended final 720x1200 RGB. Style: richly textured restrained northern myth oil painting / painterly impasto, realistic faces and materials, same collection as attached original portraits, NOT pixel art, NOT anime, no glossy 3D. This is a living myth inside an ancient archive; do not add computers, museums or science-fiction. CRITICAL composition: heads and every key spell, weapon, animal or gesture entirely within upper55% of image; faces around y15-25%, upper bodies around y25-50%; bottom40% deep blue-black simple cloak/shadow fading into quiet negative space for game text. Left/right40px safe margins at final size: no face/important weapon/animal touches side edges. Show a single composed cinematic scene, not a multi-panel sheet. No borders, card frame, letters, readable runes, logos, watermark, interface or typography. Natural anatomy, clearly separated hands, structurally sound weapons, restrained bloom; faces legible at260px wide. Preserve identity, age, hair, facial features, costume materials and painterly style from references; pose and scenario change for THIS specific upgrade.\nSubject identity: the same elderly long grey-bearded one-eyed northern wanderer, broad dark hat, fur cloak, weathered face, violet magic.\nSpecific upgrade scene: TWO black ravens with natural beaks, two wings and claws fly around the elder at shoulder height, one diving toward a violet marked silhouette; elder and ravens clearly separated.\nThis is a DISTINCT PATH illustration. Show this road motif clearly, not the generic base portrait again.\nKeep ALL important anatomy, weapon heads/tips and animal faces within CENTRAL80% of canvas (x10%..90%), not merely inside the outer edge. Leave side columns as background or unimportant cloak only. Place all hands/gesture and spell motifs above y52%; nothing bright or complex below y60%.",
+    "current_gameplay_source_line": "\"odin_ravens\": {\"kind\": \"path\", \"god\": \"odin\", \"name\": \"渡鸦\", \"desc\": \"福金和雾尼绕身飞行，轮流俯冲啄向印记最多的敌人，每啄一下叠 2 层。增殖 = 多一只渡鸦\"},",
+    "input_code_sha256": "e2b900caf6dcee1af417fb90932a48e0313bf8e726a5f7d4141ed8d8e332e4db",
+    "status": "planned"
+  },
+  {
+    "id": "odin_ravens_awaken",
+    "task": "L1",
+    "god": "odin",
+    "variant": "awaken",
+    "root": "assets/source/taskL1_paths_2026-10-20",
+    "target": "assets/sprites/cards/odin_ravens_awaken.png",
+    "references": [
+      "assets/sprites/cards/odin_ravens.png",
+      "assets/sprites/cards/odin.png"
+    ],
+    "prompt": "Use case: illustration-story. Asset type: ONE premium game upgrade CARD ILLUSTRATION, portrait 3:5, intended final 720x1200 RGB. Style: richly textured restrained northern myth oil painting / painterly impasto, realistic faces and materials, same collection as attached original portraits, NOT pixel art, NOT anime, no glossy 3D. This is a living myth inside an ancient archive; do not add computers, museums or science-fiction. CRITICAL composition: heads and every key spell, weapon, animal or gesture entirely within upper55% of image; faces around y15-25%, upper bodies around y25-50%; bottom40% deep blue-black simple cloak/shadow fading into quiet negative space for game text. Left/right40px safe margins at final size: no face/important weapon/animal touches side edges. Show a single composed cinematic scene, not a multi-panel sheet. No borders, card frame, letters, readable runes, logos, watermark, interface or typography. Natural anatomy, clearly separated hands, structurally sound weapons, restrained bloom; faces legible at260px wide. Preserve identity, age, hair, facial features, costume materials and painterly style from references; pose and scenario change for THIS specific upgrade.\nSubject identity: the same elderly long grey-bearded one-eyed northern wanderer, broad dark hat, fur cloak, weathered face, violet magic.\nSpecific upgrade scene: FOUR distinct black ravens circle around a seated stern elder on a high weathered chair; a translucent ancestral warrior rises behind them. Birds anatomically clear, silhouettes not merged.\nThis is the AWAKENED culmination of the companion path image, distinctly greater power and evolved scene, not a recolor, while preserving the SAME character and road motif.\nKeep ALL important anatomy, weapon heads/tips and animal faces within CENTRAL80% of canvas (x10%..90%), not merely inside the outer edge. Leave side columns as background or unimportant cloak only. Place all hands/gesture and spell motifs above y52%; nothing bright or complex below y60%.",
+    "current_gameplay_source_line": "\"odin_ravens_awaken\": {\"kind\": \"awaken\", \"god\": \"odin\", \"path\": \"odin_ravens\", \"name\": \"觉醒·至高王座\", \"desc\": \"渡鸦 +2；被渡鸦啄死的精英化作英灵为你战斗 15 秒。每击杀 100 个敌人召唤一位英灵 20 秒\"},",
+    "input_code_sha256": "e2b900caf6dcee1af417fb90932a48e0313bf8e726a5f7d4141ed8d8e332e4db",
+    "status": "planned"
+  },
+  {
+    "id": "odin_nights",
+    "task": "L1",
+    "god": "odin",
+    "variant": "path",
+    "root": "assets/source/taskL1_paths_2026-10-20",
+    "target": "assets/sprites/cards/odin_nights.png",
+    "references": [
+      "assets/sprites/cards/odin.png"
+    ],
+    "prompt": "Use case: illustration-story. Asset type: ONE premium game upgrade CARD ILLUSTRATION, portrait 3:5, intended final 720x1200 RGB. Style: richly textured restrained northern myth oil painting / painterly impasto, realistic faces and materials, same collection as attached original portraits, NOT pixel art, NOT anime, no glossy 3D. This is a living myth inside an ancient archive; do not add computers, museums or science-fiction. CRITICAL composition: heads and every key spell, weapon, animal or gesture entirely within upper55% of image; faces around y15-25%, upper bodies around y25-50%; bottom40% deep blue-black simple cloak/shadow fading into quiet negative space for game text. Left/right40px safe margins at final size: no face/important weapon/animal touches side edges. Show a single composed cinematic scene, not a multi-panel sheet. No borders, card frame, letters, readable runes, logos, watermark, interface or typography. Natural anatomy, clearly separated hands, structurally sound weapons, restrained bloom; faces legible at260px wide. Preserve identity, age, hair, facial features, costume materials and painterly style from references; pose and scenario change for THIS specific upgrade.\nSubject identity: the same elderly long grey-bearded one-eyed northern wanderer, broad dark hat, fur cloak, weathered face, violet magic.\nSpecific upgrade scene: The elder studies a violet geometric sigil-array suspended around the upper body with a faint world-tree root behind; several dark silhouettes receive small marks. Abstract magical geometry, NO readable letters.\nThis is a DISTINCT PATH illustration. Show this road motif clearly, not the generic base portrait again.\nKeep ALL important anatomy, weapon heads/tips and animal faces within CENTRAL80% of canvas (x10%..90%), not merely inside the outer edge. Leave side columns as background or unimportant cloak only. Place all hands/gesture and spell motifs above y52%; nothing bright or complex below y60%.",
+    "current_gameplay_source_line": "\"odin_nights\": {\"kind\": \"path\", \"god\": \"odin\", \"name\": \"九夜符文\", \"desc\": \"符文落地变成符文阵，停留 3 秒，阵里的敌人每秒叠 1 层印记。破甲 = 符文阵更大\"},",
+    "input_code_sha256": "e2b900caf6dcee1af417fb90932a48e0313bf8e726a5f7d4141ed8d8e332e4db",
+    "status": "planned"
+  },
+  {
+    "id": "odin_nights_awaken",
+    "task": "L1",
+    "god": "odin",
+    "variant": "awaken",
+    "root": "assets/source/taskL1_paths_2026-10-20",
+    "target": "assets/sprites/cards/odin_nights_awaken.png",
+    "references": [
+      "assets/sprites/cards/odin_nights.png",
+      "assets/sprites/cards/odin.png"
+    ],
+    "prompt": "Use case: illustration-story. Asset type: ONE premium game upgrade CARD ILLUSTRATION, portrait 3:5, intended final 720x1200 RGB. Style: richly textured restrained northern myth oil painting / painterly impasto, realistic faces and materials, same collection as attached original portraits, NOT pixel art, NOT anime, no glossy 3D. This is a living myth inside an ancient archive; do not add computers, museums or science-fiction. CRITICAL composition: heads and every key spell, weapon, animal or gesture entirely within upper55% of image; faces around y15-25%, upper bodies around y25-50%; bottom40% deep blue-black simple cloak/shadow fading into quiet negative space for game text. Left/right40px safe margins at final size: no face/important weapon/animal touches side edges. Show a single composed cinematic scene, not a multi-panel sheet. No borders, card frame, letters, readable runes, logos, watermark, interface or typography. Natural anatomy, clearly separated hands, structurally sound weapons, restrained bloom; faces legible at260px wide. Preserve identity, age, hair, facial features, costume materials and painterly style from references; pose and scenario change for THIS specific upgrade.\nSubject identity: the same elderly long grey-bearded one-eyed northern wanderer, broad dark hat, fur cloak, weathered face, violet magic.\nSpecific upgrade scene: An immense violet world-tree root/canopy forms interlinked geometric circles behind the elder; one circle flares and pulses to the others. Ancient knowledge, expanded connected fields, no readable text.\nThis is the AWAKENED culmination of the companion path image, distinctly greater power and evolved scene, not a recolor, while preserving the SAME character and road motif.\nKeep ALL important anatomy, weapon heads/tips and animal faces within CENTRAL80% of canvas (x10%..90%), not merely inside the outer edge. Leave side columns as background or unimportant cloak only. Place all hands/gesture and spell motifs above y52%; nothing bright or complex below y60%.",
+    "current_gameplay_source_line": "\"odin_nights_awaken\": {\"kind\": \"awaken\", \"god\": \"odin\", \"path\": \"odin_nights\", \"name\": \"觉醒·世界树之秘\", \"desc\": \"符文阵变大、停留更久；一处印记引爆时，所有符文阵里的敌人叠 1 层。每击杀 100 个敌人召唤一位英灵 20 秒\"},",
+    "input_code_sha256": "e2b900caf6dcee1af417fb90932a48e0313bf8e726a5f7d4141ed8d8e332e4db",
+    "status": "planned"
+  },
+  {
+    "id": "loki_wolf",
+    "task": "L1",
+    "god": "loki",
+    "variant": "path",
+    "root": "assets/source/taskL1_paths_2026-10-20",
+    "target": "assets/sprites/cards/loki_wolf.png",
+    "references": [
+      "assets/sprites/cards/loki.png"
+    ],
+    "prompt": "Use case: illustration-story. Asset type: ONE premium game upgrade CARD ILLUSTRATION, portrait 3:5, intended final 720x1200 RGB. Style: richly textured restrained northern myth oil painting / painterly impasto, realistic faces and materials, same collection as attached original portraits, NOT pixel art, NOT anime, no glossy 3D. This is a living myth inside an ancient archive; do not add computers, museums or science-fiction. CRITICAL composition: heads and every key spell, weapon, animal or gesture entirely within upper55% of image; faces around y15-25%, upper bodies around y25-50%; bottom40% deep blue-black simple cloak/shadow fading into quiet negative space for game text. Left/right40px safe margins at final size: no face/important weapon/animal touches side edges. Show a single composed cinematic scene, not a multi-panel sheet. No borders, card frame, letters, readable runes, logos, watermark, interface or typography. Natural anatomy, clearly separated hands, structurally sound weapons, restrained bloom; faces legible at260px wide. Preserve identity, age, hair, facial features, costume materials and painterly style from references; pose and scenario change for THIS specific upgrade.\nSubject identity: the same lean clean-shaven auburn-haired man, sharp intelligent face, dark fur-trimmed leather clothing, orange trickster fire; no horned crown.\nSpecific upgrade scene: ONE small dark wolf with warm orange embers around its paws bounds beside the man at chest height in composition, visible muzzle, four coherent legs, burning bite motif. Man retains original face.\nThis is a DISTINCT PATH illustration. Show this road motif clearly, not the generic base portrait again.\nKeep ALL important anatomy, weapon heads/tips and animal faces within CENTRAL80% of canvas (x10%..90%), not merely inside the outer edge. Leave side columns as background or unimportant cloak only. Place all hands/gesture and spell motifs above y52%; nothing bright or complex below y60%.",
+    "current_gameplay_source_line": "\"loki_wolf\": {\"kind\": \"path\", \"god\": \"loki\", \"name\": \"狼之父\", \"desc\": \"火焰收拢成一只芬里尔幼狼，跟着你扑咬附近的敌人并点燃它们。野火 = 扑咬范围更大\"},",
+    "input_code_sha256": "e2b900caf6dcee1af417fb90932a48e0313bf8e726a5f7d4141ed8d8e332e4db",
+    "status": "planned"
+  },
+  {
+    "id": "loki_wolf_awaken",
+    "task": "L1",
+    "god": "loki",
+    "variant": "awaken",
+    "root": "assets/source/taskL1_paths_2026-10-20",
+    "target": "assets/sprites/cards/loki_wolf_awaken.png",
+    "references": [
+      "assets/sprites/cards/loki_wolf.png",
+      "assets/sprites/cards/loki.png"
+    ],
+    "prompt": "Use case: illustration-story. Asset type: ONE premium game upgrade CARD ILLUSTRATION, portrait 3:5, intended final 720x1200 RGB. Style: richly textured restrained northern myth oil painting / painterly impasto, realistic faces and materials, same collection as attached original portraits, NOT pixel art, NOT anime, no glossy 3D. This is a living myth inside an ancient archive; do not add computers, museums or science-fiction. CRITICAL composition: heads and every key spell, weapon, animal or gesture entirely within upper55% of image; faces around y15-25%, upper bodies around y25-50%; bottom40% deep blue-black simple cloak/shadow fading into quiet negative space for game text. Left/right40px safe margins at final size: no face/important weapon/animal touches side edges. Show a single composed cinematic scene, not a multi-panel sheet. No borders, card frame, letters, readable runes, logos, watermark, interface or typography. Natural anatomy, clearly separated hands, structurally sound weapons, restrained bloom; faces legible at260px wide. Preserve identity, age, hair, facial features, costume materials and painterly style from references; pose and scenario change for THIS specific upgrade.\nSubject identity: the same lean clean-shaven auburn-haired man, sharp intelligent face, dark fur-trimmed leather clothing, orange trickster fire; no horned crown.\nSpecific upgrade scene: ONE much larger dark wolf raises its muzzle and exhales a controlled ORANGE fire stream across upper half, the man behind its shoulder still recognizable; spiral confusion embers, no extra wolf heads.\nThis is the AWAKENED culmination of the companion path image, distinctly greater power and evolved scene, not a recolor, while preserving the SAME character and road motif.\nKeep ALL important anatomy, weapon heads/tips and animal faces within CENTRAL80% of canvas (x10%..90%), not merely inside the outer edge. Leave side columns as background or unimportant cloak only. Place all hands/gesture and spell motifs above y52%; nothing bright or complex below y60%.",
+    "current_gameplay_source_line": "\"loki_wolf_awaken\": {\"kind\": \"awaken\", \"god\": \"loki\", \"path\": \"loki_wolf\", \"name\": \"觉醒·芬里尔\", \"desc\": \"幼狼长成巨狼，每 10 秒喷出一道狼嚎火焰，迷惑一路的敌人。被迷惑的敌人死亡时爆炸\"},",
+    "input_code_sha256": "e2b900caf6dcee1af417fb90932a48e0313bf8e726a5f7d4141ed8d8e332e4db",
+    "status": "planned"
+  },
+  {
+    "id": "loki_shifter",
+    "task": "L1",
+    "god": "loki",
+    "variant": "path",
+    "root": "assets/source/taskL1_paths_2026-10-20",
+    "target": "assets/sprites/cards/loki_shifter.png",
+    "references": [
+      "assets/sprites/cards/loki.png"
+    ],
+    "prompt": "Use case: illustration-story. Asset type: ONE premium game upgrade CARD ILLUSTRATION, portrait 3:5, intended final 720x1200 RGB. Style: richly textured restrained northern myth oil painting / painterly impasto, realistic faces and materials, same collection as attached original portraits, NOT pixel art, NOT anime, no glossy 3D. This is a living myth inside an ancient archive; do not add computers, museums or science-fiction. CRITICAL composition: heads and every key spell, weapon, animal or gesture entirely within upper55% of image; faces around y15-25%, upper bodies around y25-50%; bottom40% deep blue-black simple cloak/shadow fading into quiet negative space for game text. Left/right40px safe margins at final size: no face/important weapon/animal touches side edges. Show a single composed cinematic scene, not a multi-panel sheet. No borders, card frame, letters, readable runes, logos, watermark, interface or typography. Natural anatomy, clearly separated hands, structurally sound weapons, restrained bloom; faces legible at260px wide. Preserve identity, age, hair, facial features, costume materials and painterly style from references; pose and scenario change for THIS specific upgrade.\nSubject identity: the same lean clean-shaven auburn-haired man, sharp intelligent face, dark fur-trimmed leather clothing, orange trickster fire; no horned crown.\nSpecific upgrade scene: One solid man in foreground, ONE translucent orange fire DOUBLE slightly behind and to the side with the same face and costume, clearly deliberate magical decoy.\nThis is a DISTINCT PATH illustration. Show this road motif clearly, not the generic base portrait again.\nKeep ALL important anatomy, weapon heads/tips and animal faces within CENTRAL80% of canvas (x10%..90%), not merely inside the outer edge. Leave side columns as background or unimportant cloak only. Place all hands/gesture and spell motifs above y52%; nothing bright or complex below y60%.",
+    "current_gameplay_source_line": "\"loki_shifter\": {\"kind\": \"path\", \"god\": \"loki\", \"name\": \"变形者\", \"desc\": \"每 4 秒在原地留下一个火焰分身，吸引附近的敌人，带着火焰燃烧 4 秒。火种 = 分身消失时爆炸\"},",
+    "input_code_sha256": "e2b900caf6dcee1af417fb90932a48e0313bf8e726a5f7d4141ed8d8e332e4db",
+    "status": "planned"
+  },
+  {
+    "id": "loki_shifter_awaken",
+    "task": "L1",
+    "god": "loki",
+    "variant": "awaken",
+    "root": "assets/source/taskL1_paths_2026-10-20",
+    "target": "assets/sprites/cards/loki_shifter_awaken.png",
+    "references": [
+      "assets/sprites/cards/loki_shifter.png",
+      "assets/sprites/cards/loki.png"
+    ],
+    "prompt": "Use case: illustration-story. Asset type: ONE premium game upgrade CARD ILLUSTRATION, portrait 3:5, intended final 720x1200 RGB. Style: richly textured restrained northern myth oil painting / painterly impasto, realistic faces and materials, same collection as attached original portraits, NOT pixel art, NOT anime, no glossy 3D. This is a living myth inside an ancient archive; do not add computers, museums or science-fiction. CRITICAL composition: heads and every key spell, weapon, animal or gesture entirely within upper55% of image; faces around y15-25%, upper bodies around y25-50%; bottom40% deep blue-black simple cloak/shadow fading into quiet negative space for game text. Left/right40px safe margins at final size: no face/important weapon/animal touches side edges. Show a single composed cinematic scene, not a multi-panel sheet. No borders, card frame, letters, readable runes, logos, watermark, interface or typography. Natural anatomy, clearly separated hands, structurally sound weapons, restrained bloom; faces legible at260px wide. Preserve identity, age, hair, facial features, costume materials and painterly style from references; pose and scenario change for THIS specific upgrade.\nSubject identity: the same lean clean-shaven auburn-haired man, sharp intelligent face, dark fur-trimmed leather clothing, orange trickster fire; no horned crown.\nSpecific upgrade scene: The solid original man centered with THREE translucent flame doubles staggered behind him, each same face and outfit, receding silhouettes dissolving into confusing sparks; no random extra arms on main body.\nThis is the AWAKENED culmination of the companion path image, distinctly greater power and evolved scene, not a recolor, while preserving the SAME character and road motif.\nKeep ALL important anatomy, weapon heads/tips and animal faces within CENTRAL80% of canvas (x10%..90%), not merely inside the outer edge. Leave side columns as background or unimportant cloak only. Place all hands/gesture and spell motifs above y52%; nothing bright or complex below y60%.",
+    "current_gameplay_source_line": "\"loki_shifter_awaken\": {\"kind\": \"awaken\", \"god\": \"loki\", \"path\": \"loki_shifter\", \"name\": \"觉醒·千面\", \"desc\": \"同时存在 3 个分身，分身消失时迷惑周围的敌人。被迷惑的敌人死亡时爆炸\"},",
+    "input_code_sha256": "e2b900caf6dcee1af417fb90932a48e0313bf8e726a5f7d4141ed8d8e332e4db",
+    "status": "planned"
+  },
+  {
+    "id": "loki_road",
+    "task": "L1",
+    "god": "loki",
+    "variant": "path",
+    "root": "assets/source/taskL1_paths_2026-10-20",
+    "target": "assets/sprites/cards/loki_road.png",
+    "references": [
+      "assets/sprites/cards/loki.png"
+    ],
+    "prompt": "Use case: illustration-story. Asset type: ONE premium game upgrade CARD ILLUSTRATION, portrait 3:5, intended final 720x1200 RGB. Style: richly textured restrained northern myth oil painting / painterly impasto, realistic faces and materials, same collection as attached original portraits, NOT pixel art, NOT anime, no glossy 3D. This is a living myth inside an ancient archive; do not add computers, museums or science-fiction. CRITICAL composition: heads and every key spell, weapon, animal or gesture entirely within upper55% of image; faces around y15-25%, upper bodies around y25-50%; bottom40% deep blue-black simple cloak/shadow fading into quiet negative space for game text. Left/right40px safe margins at final size: no face/important weapon/animal touches side edges. Show a single composed cinematic scene, not a multi-panel sheet. No borders, card frame, letters, readable runes, logos, watermark, interface or typography. Natural anatomy, clearly separated hands, structurally sound weapons, restrained bloom; faces legible at260px wide. Preserve identity, age, hair, facial features, costume materials and painterly style from references; pose and scenario change for THIS specific upgrade.\nSubject identity: the same lean clean-shaven auburn-haired man, sharp intelligent face, dark fur-trimmed leather clothing, orange trickster fire; no horned crown.\nSpecific upgrade scene: The man strides across a dark ancient causeway, a thin ORANGE trail of flame curls from his previous steps into the upper-mid background; one coherent trail, not a fireball.\nThis is a DISTINCT PATH illustration. Show this road motif clearly, not the generic base portrait again.\nKeep ALL important anatomy, weapon heads/tips and animal faces within CENTRAL80% of canvas (x10%..90%), not merely inside the outer edge. Leave side columns as background or unimportant cloak only. Place all hands/gesture and spell motifs above y52%; nothing bright or complex below y60%.",
+    "current_gameplay_source_line": "\"loki_road\": {\"kind\": \"path\", \"god\": \"loki\", \"name\": \"纳吉尔法尔之路\", \"desc\": \"火焰改为你走过的地方燃起火路，持续 4 秒。野火 = 火路更宽；余烬 = 火路更久\"},",
+    "input_code_sha256": "e2b900caf6dcee1af417fb90932a48e0313bf8e726a5f7d4141ed8d8e332e4db",
+    "status": "planned"
+  },
+  {
+    "id": "loki_road_awaken",
+    "task": "L1",
+    "god": "loki",
+    "variant": "awaken",
+    "root": "assets/source/taskL1_paths_2026-10-20",
+    "target": "assets/sprites/cards/loki_road_awaken.png",
+    "references": [
+      "assets/sprites/cards/loki_road.png",
+      "assets/sprites/cards/loki.png"
+    ],
+    "prompt": "Use case: illustration-story. Asset type: ONE premium game upgrade CARD ILLUSTRATION, portrait 3:5, intended final 720x1200 RGB. Style: richly textured restrained northern myth oil painting / painterly impasto, realistic faces and materials, same collection as attached original portraits, NOT pixel art, NOT anime, no glossy 3D. This is a living myth inside an ancient archive; do not add computers, museums or science-fiction. CRITICAL composition: heads and every key spell, weapon, animal or gesture entirely within upper55% of image; faces around y15-25%, upper bodies around y25-50%; bottom40% deep blue-black simple cloak/shadow fading into quiet negative space for game text. Left/right40px safe margins at final size: no face/important weapon/animal touches side edges. Show a single composed cinematic scene, not a multi-panel sheet. No borders, card frame, letters, readable runes, logos, watermark, interface or typography. Natural anatomy, clearly separated hands, structurally sound weapons, restrained bloom; faces legible at260px wide. Preserve identity, age, hair, facial features, costume materials and painterly style from references; pose and scenario change for THIS specific upgrade.\nSubject identity: the same lean clean-shaven auburn-haired man, sharp intelligent face, dark fur-trimmed leather clothing, orange trickster fire; no horned crown.\nSpecific upgrade scene: A broad branching causeway of deep orange fire grows behind the man through a dark horizon, monumental scale and widening paths of flame. Keep main figure identity, not a fire giant, no new weapon.\nThis is the AWAKENED culmination of the companion path image, distinctly greater power and evolved scene, not a recolor, while preserving the SAME character and road motif.\nKeep ALL important anatomy, weapon heads/tips and animal faces within CENTRAL80% of canvas (x10%..90%), not merely inside the outer edge. Leave side columns as background or unimportant cloak only. Place all hands/gesture and spell motifs above y52%; nothing bright or complex below y60%.",
+    "current_gameplay_source_line": "\"loki_road_awaken\": {\"kind\": \"awaken\", \"god\": \"loki\", \"path\": \"loki_road\", \"name\": \"觉醒·苏尔特之火\", \"desc\": \"火路持续更久，宽度随击杀不断变大（每 50 击杀 +5%）。被迷惑的敌人死亡时爆炸\"},",
+    "input_code_sha256": "e2b900caf6dcee1af417fb90932a48e0313bf8e726a5f7d4141ed8d8e332e4db",
+    "status": "planned"
+  },
+  {
+    "id": "freyja_hawk",
+    "task": "L1",
+    "god": "freyja",
+    "variant": "path",
+    "root": "assets/source/taskL1_paths_2026-10-20",
+    "target": "assets/sprites/cards/freyja_hawk.png",
+    "references": [
+      "assets/sprites/cards/freyja.png"
+    ],
+    "prompt": "Use case: illustration-story. Asset type: ONE premium game upgrade CARD ILLUSTRATION, portrait 3:5, intended final 720x1200 RGB. Style: richly textured restrained northern myth oil painting / painterly impasto, realistic faces and materials, same collection as attached original portraits, NOT pixel art, NOT anime, no glossy 3D. This is a living myth inside an ancient archive; do not add computers, museums or science-fiction. CRITICAL composition: heads and every key spell, weapon, animal or gesture entirely within upper55% of image; faces around y15-25%, upper bodies around y25-50%; bottom40% deep blue-black simple cloak/shadow fading into quiet negative space for game text. Left/right40px safe margins at final size: no face/important weapon/animal touches side edges. Show a single composed cinematic scene, not a multi-panel sheet. No borders, card frame, letters, readable runes, logos, watermark, interface or typography. Natural anatomy, clearly separated hands, structurally sound weapons, restrained bloom; faces legible at260px wide. Preserve identity, age, hair, facial features, costume materials and painterly style from references; pose and scenario change for THIS specific upgrade.\nSubject identity: the same mature blonde woman with a strong composed face, dark feather cloak, gold necklace and bronze ornaments, pale gold magic.\nSpecific upgrade scene: The woman sweeps her dark feather cloak outward, GOLD feather blades trace a clear out-and-return orbital curve around her shoulders. Natural human face/hands, no full bird body.\nThis is a DISTINCT PATH illustration. Show this road motif clearly, not the generic base portrait again.\nKeep ALL important anatomy, weapon heads/tips and animal faces within CENTRAL80% of canvas (x10%..90%), not merely inside the outer edge. Leave side columns as background or unimportant cloak only. Place all hands/gesture and spell motifs above y52%; nothing bright or complex below y60%.",
+    "current_gameplay_source_line": "\"freyja_hawk\": {\"kind\": \"path\", \"god\": \"freyja\", \"name\": \"鹰羽披风\", \"desc\": \"羽刃改为每 2 秒向四周射出，飞到尽头再飞回身边，往返都能切。展翼 = 射得更远\"},",
+    "input_code_sha256": "e2b900caf6dcee1af417fb90932a48e0313bf8e726a5f7d4141ed8d8e332e4db",
+    "status": "planned"
+  },
+  {
+    "id": "freyja_hawk_awaken",
+    "task": "L1",
+    "god": "freyja",
+    "variant": "awaken",
+    "root": "assets/source/taskL1_paths_2026-10-20",
+    "target": "assets/sprites/cards/freyja_hawk_awaken.png",
+    "references": [
+      "assets/sprites/cards/freyja_hawk.png",
+      "assets/sprites/cards/freyja.png"
+    ],
+    "prompt": "Use case: illustration-story. Asset type: ONE premium game upgrade CARD ILLUSTRATION, portrait 3:5, intended final 720x1200 RGB. Style: richly textured restrained northern myth oil painting / painterly impasto, realistic faces and materials, same collection as attached original portraits, NOT pixel art, NOT anime, no glossy 3D. This is a living myth inside an ancient archive; do not add computers, museums or science-fiction. CRITICAL composition: heads and every key spell, weapon, animal or gesture entirely within upper55% of image; faces around y15-25%, upper bodies around y25-50%; bottom40% deep blue-black simple cloak/shadow fading into quiet negative space for game text. Left/right40px safe margins at final size: no face/important weapon/animal touches side edges. Show a single composed cinematic scene, not a multi-panel sheet. No borders, card frame, letters, readable runes, logos, watermark, interface or typography. Natural anatomy, clearly separated hands, structurally sound weapons, restrained bloom; faces legible at260px wide. Preserve identity, age, hair, facial features, costume materials and painterly style from references; pose and scenario change for THIS specific upgrade.\nSubject identity: the same mature blonde woman with a strong composed face, dark feather cloak, gold necklace and bronze ornaments, pale gold magic.\nSpecific upgrade scene: The woman in a commanding pose with a radiant feather mantle; a large gold feather splits into THREE small feather blades on impact in upper side, distant quiet warrior afterlife hinted behind; resurrection symbolism through returning gold light.\nThis is the AWAKENED culmination of the companion path image, distinctly greater power and evolved scene, not a recolor, while preserving the SAME character and road motif.\nKeep ALL important anatomy, weapon heads/tips and animal faces within CENTRAL80% of canvas (x10%..90%), not merely inside the outer edge. Leave side columns as background or unimportant cloak only. Place all hands/gesture and spell motifs above y52%; nothing bright or complex below y60%.",
+    "current_gameplay_source_line": "\"freyja_hawk_awaken\": {\"kind\": \"awaken\", \"god\": \"freyja\", \"path\": \"freyja_hawk\", \"name\": \"觉醒·弗尔克范格\", \"desc\": \"射出的羽刃第一次命中时分裂成 3 片小羽刃。本局获得一次复活\"},",
+    "input_code_sha256": "e2b900caf6dcee1af417fb90932a48e0313bf8e726a5f7d4141ed8d8e332e4db",
+    "status": "planned"
+  },
+  {
+    "id": "freyja_brisingamen",
+    "task": "L1",
+    "god": "freyja",
+    "variant": "path",
+    "root": "assets/source/taskL1_paths_2026-10-20",
+    "target": "assets/sprites/cards/freyja_brisingamen.png",
+    "references": [
+      "assets/sprites/cards/freyja.png"
+    ],
+    "prompt": "Use case: illustration-story. Asset type: ONE premium game upgrade CARD ILLUSTRATION, portrait 3:5, intended final 720x1200 RGB. Style: richly textured restrained northern myth oil painting / painterly impasto, realistic faces and materials, same collection as attached original portraits, NOT pixel art, NOT anime, no glossy 3D. This is a living myth inside an ancient archive; do not add computers, museums or science-fiction. CRITICAL composition: heads and every key spell, weapon, animal or gesture entirely within upper55% of image; faces around y15-25%, upper bodies around y25-50%; bottom40% deep blue-black simple cloak/shadow fading into quiet negative space for game text. Left/right40px safe margins at final size: no face/important weapon/animal touches side edges. Show a single composed cinematic scene, not a multi-panel sheet. No borders, card frame, letters, readable runes, logos, watermark, interface or typography. Natural anatomy, clearly separated hands, structurally sound weapons, restrained bloom; faces legible at260px wide. Preserve identity, age, hair, facial features, costume materials and painterly style from references; pose and scenario change for THIS specific upgrade.\nSubject identity: the same mature blonde woman with a strong composed face, dark feather cloak, gold necklace and bronze ornaments, pale gold magic.\nSpecific upgrade scene: The woman holds the familiar elaborate gold necklace near her upper chest; ONE thin gold circular aura behind her shoulders, subtle healing glints; necklace and ring are focal.\nThis is a DISTINCT PATH illustration. Show this road motif clearly, not the generic base portrait again.\nKeep ALL important anatomy, weapon heads/tips and animal faces within CENTRAL80% of canvas (x10%..90%), not merely inside the outer edge. Leave side columns as background or unimportant cloak only. Place all hands/gesture and spell motifs above y52%; nothing bright or complex below y60%.",
+    "current_gameplay_source_line": "\"freyja_brisingamen\": {\"kind\": \"path\", \"god\": \"freyja\", \"name\": \"布里辛嘉曼\", \"desc\": \"羽刃化成一圈金色光环：环上的敌人减速 30%，你每切到一个敌人回复少量生命。丰满 = 光环更粗\"},",
+    "input_code_sha256": "e2b900caf6dcee1af417fb90932a48e0313bf8e726a5f7d4141ed8d8e332e4db",
+    "status": "planned"
+  },
+  {
+    "id": "freyja_brisingamen_awaken",
+    "task": "L1",
+    "god": "freyja",
+    "variant": "awaken",
+    "root": "assets/source/taskL1_paths_2026-10-20",
+    "target": "assets/sprites/cards/freyja_brisingamen_awaken.png",
+    "references": [
+      "assets/sprites/cards/freyja_brisingamen.png",
+      "assets/sprites/cards/freyja.png"
+    ],
+    "prompt": "Use case: illustration-story. Asset type: ONE premium game upgrade CARD ILLUSTRATION, portrait 3:5, intended final 720x1200 RGB. Style: richly textured restrained northern myth oil painting / painterly impasto, realistic faces and materials, same collection as attached original portraits, NOT pixel art, NOT anime, no glossy 3D. This is a living myth inside an ancient archive; do not add computers, museums or science-fiction. CRITICAL composition: heads and every key spell, weapon, animal or gesture entirely within upper55% of image; faces around y15-25%, upper bodies around y25-50%; bottom40% deep blue-black simple cloak/shadow fading into quiet negative space for game text. Left/right40px safe margins at final size: no face/important weapon/animal touches side edges. Show a single composed cinematic scene, not a multi-panel sheet. No borders, card frame, letters, readable runes, logos, watermark, interface or typography. Natural anatomy, clearly separated hands, structurally sound weapons, restrained bloom; faces legible at260px wide. Preserve identity, age, hair, facial features, costume materials and painterly style from references; pose and scenario change for THIS specific upgrade.\nSubject identity: the same mature blonde woman with a strong composed face, dark feather cloak, gold necklace and bronze ornaments, pale gold magic.\nSpecific upgrade scene: The same woman with ONE clearly visible golden tear below her eye and a second luminous gold tear suspended near necklace, warm healing light; restrained sorrow and renewal, no crying flood, necklace structurally intact.\nThis is the AWAKENED culmination of the companion path image, distinctly greater power and evolved scene, not a recolor, while preserving the SAME character and road motif.\nKeep ALL important anatomy, weapon heads/tips and animal faces within CENTRAL80% of canvas (x10%..90%), not merely inside the outer edge. Leave side columns as background or unimportant cloak only. Place all hands/gesture and spell motifs above y52%; nothing bright or complex below y60%.",
+    "current_gameplay_source_line": "\"freyja_brisingamen_awaken\": {\"kind\": \"awaken\", \"god\": \"freyja\", \"path\": \"freyja_brisingamen\", \"name\": \"觉醒·金泪\", \"desc\": \"受到伤害时掉下一颗金色眼泪，捡起回复 15% 生命。本局获得一次复活\"},",
+    "input_code_sha256": "e2b900caf6dcee1af417fb90932a48e0313bf8e726a5f7d4141ed8d8e332e4db",
+    "status": "planned"
+  },
+  {
+    "id": "freyja_cats",
+    "task": "L1",
+    "god": "freyja",
+    "variant": "path",
+    "root": "assets/source/taskL1_paths_2026-10-20",
+    "target": "assets/sprites/cards/freyja_cats.png",
+    "references": [
+      "assets/sprites/cards/freyja.png"
+    ],
+    "prompt": "Use case: illustration-story. Asset type: ONE premium game upgrade CARD ILLUSTRATION, portrait 3:5, intended final 720x1200 RGB. Style: richly textured restrained northern myth oil painting / painterly impasto, realistic faces and materials, same collection as attached original portraits, NOT pixel art, NOT anime, no glossy 3D. This is a living myth inside an ancient archive; do not add computers, museums or science-fiction. CRITICAL composition: heads and every key spell, weapon, animal or gesture entirely within upper55% of image; faces around y15-25%, upper bodies around y25-50%; bottom40% deep blue-black simple cloak/shadow fading into quiet negative space for game text. Left/right40px safe margins at final size: no face/important weapon/animal touches side edges. Show a single composed cinematic scene, not a multi-panel sheet. No borders, card frame, letters, readable runes, logos, watermark, interface or typography. Natural anatomy, clearly separated hands, structurally sound weapons, restrained bloom; faces legible at260px wide. Preserve identity, age, hair, facial features, costume materials and painterly style from references; pose and scenario change for THIS specific upgrade.\nSubject identity: the same mature blonde woman with a strong composed face, dark feather cloak, gold necklace and bronze ornaments, pale gold magic.\nSpecific upgrade scene: The woman framed by TWO strong natural grey battle cats at shoulder/upper-mid height, each cat clearly separate, gold feather selection marks above them; cloak and necklace consistent.\nThis is a DISTINCT PATH illustration. Show this road motif clearly, not the generic base portrait again.\nKeep ALL important anatomy, weapon heads/tips and animal faces within CENTRAL80% of canvas (x10%..90%), not merely inside the outer edge. Leave side columns as background or unimportant cloak only. Place all hands/gesture and spell motifs above y52%; nothing bright or complex below y60%.",
+    "current_gameplay_source_line": "\"freyja_cats\": {\"kind\": \"path\", \"god\": \"freyja\", \"name\": \"战猫车\", \"desc\": \"两只战猫在身边巡逻，扑向靠近的敌人并拣选它们。丰满 = 多一只战猫\"},",
+    "input_code_sha256": "e2b900caf6dcee1af417fb90932a48e0313bf8e726a5f7d4141ed8d8e332e4db",
+    "status": "planned"
+  },
+  {
+    "id": "freyja_cats_awaken",
+    "task": "L1",
+    "god": "freyja",
+    "variant": "awaken",
+    "root": "assets/source/taskL1_paths_2026-10-20",
+    "target": "assets/sprites/cards/freyja_cats_awaken.png",
+    "references": [
+      "assets/sprites/cards/freyja_cats.png",
+      "assets/sprites/cards/freyja.png"
+    ],
+    "prompt": "Use case: illustration-story. Asset type: ONE premium game upgrade CARD ILLUSTRATION, portrait 3:5, intended final 720x1200 RGB. Style: richly textured restrained northern myth oil painting / painterly impasto, realistic faces and materials, same collection as attached original portraits, NOT pixel art, NOT anime, no glossy 3D. This is a living myth inside an ancient archive; do not add computers, museums or science-fiction. CRITICAL composition: heads and every key spell, weapon, animal or gesture entirely within upper55% of image; faces around y15-25%, upper bodies around y25-50%; bottom40% deep blue-black simple cloak/shadow fading into quiet negative space for game text. Left/right40px safe margins at final size: no face/important weapon/animal touches side edges. Show a single composed cinematic scene, not a multi-panel sheet. No borders, card frame, letters, readable runes, logos, watermark, interface or typography. Natural anatomy, clearly separated hands, structurally sound weapons, restrained bloom; faces legible at260px wide. Preserve identity, age, hair, facial features, costume materials and painterly style from references; pose and scenario change for THIS specific upgrade.\nSubject identity: the same mature blonde woman with a strong composed face, dark feather cloak, gold necklace and bronze ornaments, pale gold magic.\nSpecific upgrade scene: The woman drives a modest ancient wooden CHARIOT pulled by TWO powerful grey cats, full upper team arranged within top55%, implied forward charge, gold feathers swept back. Human torso, reins and cat anatomy coherent.\nThis is the AWAKENED culmination of the companion path image, distinctly greater power and evolved scene, not a recolor, while preserving the SAME character and road motif.\nKeep ALL important anatomy, weapon heads/tips and animal faces within CENTRAL80% of canvas (x10%..90%), not merely inside the outer edge. Leave side columns as background or unimportant cloak only. Place all hands/gesture and spell motifs above y52%; nothing bright or complex below y60%.",
+    "current_gameplay_source_line": "\"freyja_cats_awaken\": {\"kind\": \"awaken\", \"god\": \"freyja\", \"path\": \"freyja_cats\", \"name\": \"觉醒·女神出征\", \"desc\": \"每 15 秒，弗蕾亚乘猫车从屏幕一侧冲到另一侧，撞飞路上的敌人。本局获得一次复活\"},",
+    "input_code_sha256": "e2b900caf6dcee1af417fb90932a48e0313bf8e726a5f7d4141ed8d8e332e4db",
+    "status": "planned"
+  },
+  {
+    "id": "baldr_spear",
+    "task": "L1",
+    "god": "baldr",
+    "variant": "path",
+    "root": "assets/source/taskL1_paths_2026-10-20",
+    "target": "assets/sprites/cards/baldr_spear.png",
+    "references": [
+      "assets/sprites/cards/baldr.png"
+    ],
+    "prompt": "Use case: illustration-story. Asset type: ONE premium game upgrade CARD ILLUSTRATION, portrait 3:5, intended final 720x1200 RGB. Style: richly textured restrained northern myth oil painting / painterly impasto, realistic faces and materials, same collection as attached original portraits, NOT pixel art, NOT anime, no glossy 3D. This is a living myth inside an ancient archive; do not add computers, museums or science-fiction. CRITICAL composition: heads and every key spell, weapon, animal or gesture entirely within upper55% of image; faces around y15-25%, upper bodies around y25-50%; bottom40% deep blue-black simple cloak/shadow fading into quiet negative space for game text. Left/right40px safe margins at final size: no face/important weapon/animal touches side edges. Show a single composed cinematic scene, not a multi-panel sheet. No borders, card frame, letters, readable runes, logos, watermark, interface or typography. Natural anatomy, clearly separated hands, structurally sound weapons, restrained bloom; faces legible at260px wide. Preserve identity, age, hair, facial features, costume materials and painterly style from references; pose and scenario change for THIS specific upgrade.\nSubject identity: the same youthful clean-shaven pale-blond man, calm noble face, cream fur mantle and white-gold clothing, warm ivory light.\nSpecific upgrade scene: The young man forms ONE long slender white-gold LIGHT SPEAR projecting forward across upper half, bright spearhead and straight shaft, concentrated rather than diffuse light.\nThis is a DISTINCT PATH illustration. Show this road motif clearly, not the generic base portrait again.\nKeep ALL important anatomy, weapon heads/tips and animal faces within CENTRAL80% of canvas (x10%..90%), not merely inside the outer edge. Leave side columns as background or unimportant cloak only. Place all hands/gesture and spell motifs above y52%; nothing bright or complex below y60%.",
+    "current_gameplay_source_line": "\"baldr_spear\": {\"kind\": \"path\", \"god\": \"baldr\", \"name\": \"光明之矛\", \"desc\": \"光束收成一支光矛，飞过整个屏幕，伤害 ×2.5，间隔 ×1.5。棱光 = 多掷一支\"},",
+    "input_code_sha256": "e2b900caf6dcee1af417fb90932a48e0313bf8e726a5f7d4141ed8d8e332e4db",
+    "status": "planned"
+  },
+  {
+    "id": "baldr_spear_awaken",
+    "task": "L1",
+    "god": "baldr",
+    "variant": "awaken",
+    "root": "assets/source/taskL1_paths_2026-10-20",
+    "target": "assets/sprites/cards/baldr_spear_awaken.png",
+    "references": [
+      "assets/sprites/cards/baldr_spear.png",
+      "assets/sprites/cards/baldr.png"
+    ],
+    "prompt": "Use case: illustration-story. Asset type: ONE premium game upgrade CARD ILLUSTRATION, portrait 3:5, intended final 720x1200 RGB. Style: richly textured restrained northern myth oil painting / painterly impasto, realistic faces and materials, same collection as attached original portraits, NOT pixel art, NOT anime, no glossy 3D. This is a living myth inside an ancient archive; do not add computers, museums or science-fiction. CRITICAL composition: heads and every key spell, weapon, animal or gesture entirely within upper55% of image; faces around y15-25%, upper bodies around y25-50%; bottom40% deep blue-black simple cloak/shadow fading into quiet negative space for game text. Left/right40px safe margins at final size: no face/important weapon/animal touches side edges. Show a single composed cinematic scene, not a multi-panel sheet. No borders, card frame, letters, readable runes, logos, watermark, interface or typography. Natural anatomy, clearly separated hands, structurally sound weapons, restrained bloom; faces legible at260px wide. Preserve identity, age, hair, facial features, costume materials and painterly style from references; pose and scenario change for THIS specific upgrade.\nSubject identity: the same youthful clean-shaven pale-blond man, calm noble face, cream fur mantle and white-gold clothing, warm ivory light.\nSpecific upgrade scene: A white-gold light spear strikes a dark target and bursts into a clear FOUR-ARM cross of light, radiant young man controls it; discreet concentric radiant mark, solid readable silhouette despite light.\nThis is the AWAKENED culmination of the companion path image, distinctly greater power and evolved scene, not a recolor, while preserving the SAME character and road motif.\nKeep ALL important anatomy, weapon heads/tips and animal faces within CENTRAL80% of canvas (x10%..90%), not merely inside the outer edge. Leave side columns as background or unimportant cloak only. Place all hands/gesture and spell motifs above y52%; nothing bright or complex below y60%.",
+    "current_gameplay_source_line": "\"baldr_spear_awaken\": {\"kind\": \"awaken\", \"god\": \"baldr\", \"path\": \"baldr_spear\", \"name\": \"觉醒·神之光矛\", \"desc\": \"光矛命中第一个敌人时炸开十字光。每 30 秒全屏闪光，所有敌人挂上光痕\"},",
+    "input_code_sha256": "e2b900caf6dcee1af417fb90932a48e0313bf8e726a5f7d4141ed8d8e332e4db",
+    "status": "planned"
+  },
+  {
+    "id": "baldr_daylight",
+    "task": "L1",
+    "god": "baldr",
+    "variant": "path",
+    "root": "assets/source/taskL1_paths_2026-10-20",
+    "target": "assets/sprites/cards/baldr_daylight.png",
+    "references": [
+      "assets/sprites/cards/baldr.png"
+    ],
+    "prompt": "Use case: illustration-story. Asset type: ONE premium game upgrade CARD ILLUSTRATION, portrait 3:5, intended final 720x1200 RGB. Style: richly textured restrained northern myth oil painting / painterly impasto, realistic faces and materials, same collection as attached original portraits, NOT pixel art, NOT anime, no glossy 3D. This is a living myth inside an ancient archive; do not add computers, museums or science-fiction. CRITICAL composition: heads and every key spell, weapon, animal or gesture entirely within upper55% of image; faces around y15-25%, upper bodies around y25-50%; bottom40% deep blue-black simple cloak/shadow fading into quiet negative space for game text. Left/right40px safe margins at final size: no face/important weapon/animal touches side edges. Show a single composed cinematic scene, not a multi-panel sheet. No borders, card frame, letters, readable runes, logos, watermark, interface or typography. Natural anatomy, clearly separated hands, structurally sound weapons, restrained bloom; faces legible at260px wide. Preserve identity, age, hair, facial features, costume materials and painterly style from references; pose and scenario change for THIS specific upgrade.\nSubject identity: the same youthful clean-shaven pale-blond man, calm noble face, cream fur mantle and white-gold clothing, warm ivory light.\nSpecific upgrade scene: The young man surrounded by TWO tall slender rotating columns of ivory light, a curved sweep trail indicating orbit, calm face and cream clothing.\nThis is a DISTINCT PATH illustration. Show this road motif clearly, not the generic base portrait again.\nKeep ALL important anatomy, weapon heads/tips and animal faces within CENTRAL80% of canvas (x10%..90%), not merely inside the outer edge. Leave side columns as background or unimportant cloak only. Place all hands/gesture and spell motifs above y52%; nothing bright or complex below y60%.",
+    "current_gameplay_source_line": "\"baldr_daylight\": {\"kind\": \"path\", \"god\": \"baldr\", \"name\": \"白昼\", \"desc\": \"光束改为绕着你旋转的光柱，扫到的敌人持续受伤。棱光 = 多一道光柱；余晖 = 扫过的地方留光带\"},",
+    "input_code_sha256": "e2b900caf6dcee1af417fb90932a48e0313bf8e726a5f7d4141ed8d8e332e4db",
+    "status": "planned"
+  },
+  {
+    "id": "baldr_daylight_awaken",
+    "task": "L1",
+    "god": "baldr",
+    "variant": "awaken",
+    "root": "assets/source/taskL1_paths_2026-10-20",
+    "target": "assets/sprites/cards/baldr_daylight_awaken.png",
+    "references": [
+      "assets/sprites/cards/baldr_daylight.png",
+      "assets/sprites/cards/baldr.png"
+    ],
+    "prompt": "Use case: illustration-story. Asset type: ONE premium game upgrade CARD ILLUSTRATION, portrait 3:5, intended final 720x1200 RGB. Style: richly textured restrained northern myth oil painting / painterly impasto, realistic faces and materials, same collection as attached original portraits, NOT pixel art, NOT anime, no glossy 3D. This is a living myth inside an ancient archive; do not add computers, museums or science-fiction. CRITICAL composition: heads and every key spell, weapon, animal or gesture entirely within upper55% of image; faces around y15-25%, upper bodies around y25-50%; bottom40% deep blue-black simple cloak/shadow fading into quiet negative space for game text. Left/right40px safe margins at final size: no face/important weapon/animal touches side edges. Show a single composed cinematic scene, not a multi-panel sheet. No borders, card frame, letters, readable runes, logos, watermark, interface or typography. Natural anatomy, clearly separated hands, structurally sound weapons, restrained bloom; faces legible at260px wide. Preserve identity, age, hair, facial features, costume materials and painterly style from references; pose and scenario change for THIS specific upgrade.\nSubject identity: the same youthful clean-shaven pale-blond man, calm noble face, cream fur mantle and white-gold clothing, warm ivory light.\nSpecific upgrade scene: The young man centered among FOUR strong ivory sun columns, an eternal-dawn sky behind, brighter expanded warm light with clear facial features; lower40% stays dark and simple.\nThis is the AWAKENED culmination of the companion path image, distinctly greater power and evolved scene, not a recolor, while preserving the SAME character and road motif.\nKeep ALL important anatomy, weapon heads/tips and animal faces within CENTRAL80% of canvas (x10%..90%), not merely inside the outer edge. Leave side columns as background or unimportant cloak only. Place all hands/gesture and spell motifs above y52%; nothing bright or complex below y60%.",
+    "current_gameplay_source_line": "\"baldr_daylight_awaken\": {\"kind\": \"awaken\", \"god\": \"baldr\", \"path\": \"baldr_daylight\", \"name\": \"觉醒·永昼\", \"desc\": \"光柱 +2。每 30 秒全屏闪光，所有敌人挂上光痕\"},",
+    "input_code_sha256": "e2b900caf6dcee1af417fb90932a48e0313bf8e726a5f7d4141ed8d8e332e4db",
+    "status": "planned"
+  },
+  {
+    "id": "baldr_oath",
+    "task": "L1",
+    "god": "baldr",
+    "variant": "path",
+    "root": "assets/source/taskL1_paths_2026-10-20",
+    "target": "assets/sprites/cards/baldr_oath.png",
+    "references": [
+      "assets/sprites/cards/baldr.png"
+    ],
+    "prompt": "Use case: illustration-story. Asset type: ONE premium game upgrade CARD ILLUSTRATION, portrait 3:5, intended final 720x1200 RGB. Style: richly textured restrained northern myth oil painting / painterly impasto, realistic faces and materials, same collection as attached original portraits, NOT pixel art, NOT anime, no glossy 3D. This is a living myth inside an ancient archive; do not add computers, museums or science-fiction. CRITICAL composition: heads and every key spell, weapon, animal or gesture entirely within upper55% of image; faces around y15-25%, upper bodies around y25-50%; bottom40% deep blue-black simple cloak/shadow fading into quiet negative space for game text. Left/right40px safe margins at final size: no face/important weapon/animal touches side edges. Show a single composed cinematic scene, not a multi-panel sheet. No borders, card frame, letters, readable runes, logos, watermark, interface or typography. Natural anatomy, clearly separated hands, structurally sound weapons, restrained bloom; faces legible at260px wide. Preserve identity, age, hair, facial features, costume materials and painterly style from references; pose and scenario change for THIS specific upgrade.\nSubject identity: the same youthful clean-shaven pale-blond man, calm noble face, cream fur mantle and white-gold clothing, warm ivory light.\nSpecific upgrade scene: The young man behind THREE thin layered golden shield arcs like promises made visible, one small light beam feeding the shield; no physical heavy armor added.\nThis is a DISTINCT PATH illustration. Show this road motif clearly, not the generic base portrait again.\nKeep ALL important anatomy, weapon heads/tips and animal faces within CENTRAL80% of canvas (x10%..90%), not merely inside the outer edge. Leave side columns as background or unimportant cloak only. Place all hands/gesture and spell motifs above y52%; nothing bright or complex below y60%.",
+    "current_gameplay_source_line": "\"baldr_oath\": {\"kind\": \"path\", \"god\": \"baldr\", \"name\": \"万物之誓\", \"desc\": \"光束每命中一个敌人，你得到 1 层誓言护盾（最多 3 层，每层挡一次伤害）；护盾满时光束伤害 ×2\"},",
+    "input_code_sha256": "e2b900caf6dcee1af417fb90932a48e0313bf8e726a5f7d4141ed8d8e332e4db",
+    "status": "planned"
+  },
+  {
+    "id": "baldr_oath_awaken",
+    "task": "L1",
+    "god": "baldr",
+    "variant": "awaken",
+    "root": "assets/source/taskL1_paths_2026-10-20",
+    "target": "assets/sprites/cards/baldr_oath_awaken.png",
+    "references": [
+      "assets/sprites/cards/baldr_oath.png",
+      "assets/sprites/cards/baldr.png"
+    ],
+    "prompt": "Use case: illustration-story. Asset type: ONE premium game upgrade CARD ILLUSTRATION, portrait 3:5, intended final 720x1200 RGB. Style: richly textured restrained northern myth oil painting / painterly impasto, realistic faces and materials, same collection as attached original portraits, NOT pixel art, NOT anime, no glossy 3D. This is a living myth inside an ancient archive; do not add computers, museums or science-fiction. CRITICAL composition: heads and every key spell, weapon, animal or gesture entirely within upper55% of image; faces around y15-25%, upper bodies around y25-50%; bottom40% deep blue-black simple cloak/shadow fading into quiet negative space for game text. Left/right40px safe margins at final size: no face/important weapon/animal touches side edges. Show a single composed cinematic scene, not a multi-panel sheet. No borders, card frame, letters, readable runes, logos, watermark, interface or typography. Natural anatomy, clearly separated hands, structurally sound weapons, restrained bloom; faces legible at260px wide. Preserve identity, age, hair, facial features, costume materials and painterly style from references; pose and scenario change for THIS specific upgrade.\nSubject identity: the same youthful clean-shaven pale-blond man, calm noble face, cream fur mantle and white-gold clothing, warm ivory light.\nSpecific upgrade scene: Three protective gold arcs fuse into an unbroken luminous shell around the young man, a few dark incoming fragments stop at its outside, tranquil untouchable face, clean silhouette.\nThis is the AWAKENED culmination of the companion path image, distinctly greater power and evolved scene, not a recolor, while preserving the SAME character and road motif.\nKeep ALL important anatomy, weapon heads/tips and animal faces within CENTRAL80% of canvas (x10%..90%), not merely inside the outer edge. Leave side columns as background or unimportant cloak only. Place all hands/gesture and spell motifs above y52%; nothing bright or complex below y60%.",
+    "current_gameplay_source_line": "\"baldr_oath_awaken\": {\"kind\": \"awaken\", \"god\": \"baldr\", \"path\": \"baldr_oath\", \"name\": \"觉醒·无伤之神\", \"desc\": \"护盾叠满时 3 秒无敌，期间光束伤害翻倍。每 30 秒全屏闪光，所有敌人挂上光痕\"},",
+    "input_code_sha256": "e2b900caf6dcee1af417fb90932a48e0313bf8e726a5f7d4141ed8d8e332e4db",
+    "status": "planned"
+  },
+  {
+    "id": "ran_waves",
+    "task": "L1",
+    "god": "ran",
+    "variant": "path",
+    "root": "assets/source/taskL1_paths_2026-10-20",
+    "target": "assets/sprites/cards/ran_waves.png",
+    "references": [
+      "assets/sprites/cards/ran.png"
+    ],
+    "prompt": "Use case: illustration-story. Asset type: ONE premium game upgrade CARD ILLUSTRATION, portrait 3:5, intended final 720x1200 RGB. Style: richly textured restrained northern myth oil painting / painterly impasto, realistic faces and materials, same collection as attached original portraits, NOT pixel art, NOT anime, no glossy 3D. This is a living myth inside an ancient archive; do not add computers, museums or science-fiction. CRITICAL composition: heads and every key spell, weapon, animal or gesture entirely within upper55% of image; faces around y15-25%, upper bodies around y25-50%; bottom40% deep blue-black simple cloak/shadow fading into quiet negative space for game text. Left/right40px safe margins at final size: no face/important weapon/animal touches side edges. Show a single composed cinematic scene, not a multi-panel sheet. No borders, card frame, letters, readable runes, logos, watermark, interface or typography. Natural anatomy, clearly separated hands, structurally sound weapons, restrained bloom; faces legible at260px wide. Preserve identity, age, hair, facial features, costume materials and painterly style from references; pose and scenario change for THIS specific upgrade.\nSubject identity: the same pale dark-haired mature sea woman, wet flowing hair, dark teal sea-cloak, rope net and antique gold ornaments, storm-blue water.\nSpecific upgrade scene: The sea woman commands ONE huge curling blue wave sweeping forward behind her shoulders, a readable crest and minimal net secondary; one coherent water direction.\nThis is a DISTINCT PATH illustration. Show this road motif clearly, not the generic base portrait again.\nKeep ALL important anatomy, weapon heads/tips and animal faces within CENTRAL80% of canvas (x10%..90%), not merely inside the outer edge. Leave side columns as background or unimportant cloak only. Place all hands/gesture and spell motifs above y52%; nothing bright or complex below y60%.",
+    "current_gameplay_source_line": "\"ran_waves\": {\"kind\": \"path\", \"god\": \"ran\", \"name\": \"九浪\", \"desc\": \"网改为向前推出一道巨浪，卷走路上的敌人冲到尽头再拍下。大网 = 浪更宽；双网 = 多推一道浪\"},",
+    "input_code_sha256": "e2b900caf6dcee1af417fb90932a48e0313bf8e726a5f7d4141ed8d8e332e4db",
+    "status": "planned"
+  },
+  {
+    "id": "ran_waves_awaken",
+    "task": "L1",
+    "god": "ran",
+    "variant": "awaken",
+    "root": "assets/source/taskL1_paths_2026-10-20",
+    "target": "assets/sprites/cards/ran_waves_awaken.png",
+    "references": [
+      "assets/sprites/cards/ran_waves.png",
+      "assets/sprites/cards/ran.png"
+    ],
+    "prompt": "Use case: illustration-story. Asset type: ONE premium game upgrade CARD ILLUSTRATION, portrait 3:5, intended final 720x1200 RGB. Style: richly textured restrained northern myth oil painting / painterly impasto, realistic faces and materials, same collection as attached original portraits, NOT pixel art, NOT anime, no glossy 3D. This is a living myth inside an ancient archive; do not add computers, museums or science-fiction. CRITICAL composition: heads and every key spell, weapon, animal or gesture entirely within upper55% of image; faces around y15-25%, upper bodies around y25-50%; bottom40% deep blue-black simple cloak/shadow fading into quiet negative space for game text. Left/right40px safe margins at final size: no face/important weapon/animal touches side edges. Show a single composed cinematic scene, not a multi-panel sheet. No borders, card frame, letters, readable runes, logos, watermark, interface or typography. Natural anatomy, clearly separated hands, structurally sound weapons, restrained bloom; faces legible at260px wide. Preserve identity, age, hair, facial features, costume materials and painterly style from references; pose and scenario change for THIS specific upgrade.\nSubject identity: the same pale dark-haired mature sea woman, wet flowing hair, dark teal sea-cloak, rope net and antique gold ornaments, storm-blue water.\nSpecific upgrade scene: NINE distinct narrow wave-crests curl inward in an upper-half ring around the sea woman, not nine human bodies; expanding sea power, luminous cold spray, countable wave forms, face and hands clear.\nThis is the AWAKENED culmination of the companion path image, distinctly greater power and evolved scene, not a recolor, while preserving the SAME character and road motif.\nKeep ALL important anatomy, weapon heads/tips and animal faces within CENTRAL80% of canvas (x10%..90%), not merely inside the outer edge. Leave side columns as background or unimportant cloak only. Place all hands/gesture and spell motifs above y52%; nothing bright or complex below y60%.",
+    "current_gameplay_source_line": "\"ran_waves_awaken\": {\"kind\": \"awaken\", \"god\": \"ran\", \"path\": \"ran_waves\", \"name\": \"觉醒·九位浪女\", \"desc\": \"每 12 秒，九道浪从四面八方冲向你所在的位置。受到伤害时 20% 几率把攻击者拖进网里\"},",
+    "input_code_sha256": "e2b900caf6dcee1af417fb90932a48e0313bf8e726a5f7d4141ed8d8e332e4db",
+    "status": "planned"
+  },
+  {
+    "id": "ran_andvari",
+    "task": "L1",
+    "god": "ran",
+    "variant": "path",
+    "root": "assets/source/taskL1_paths_2026-10-20",
+    "target": "assets/sprites/cards/ran_andvari.png",
+    "references": [
+      "assets/sprites/cards/ran.png"
+    ],
+    "prompt": "Use case: illustration-story. Asset type: ONE premium game upgrade CARD ILLUSTRATION, portrait 3:5, intended final 720x1200 RGB. Style: richly textured restrained northern myth oil painting / painterly impasto, realistic faces and materials, same collection as attached original portraits, NOT pixel art, NOT anime, no glossy 3D. This is a living myth inside an ancient archive; do not add computers, museums or science-fiction. CRITICAL composition: heads and every key spell, weapon, animal or gesture entirely within upper55% of image; faces around y15-25%, upper bodies around y25-50%; bottom40% deep blue-black simple cloak/shadow fading into quiet negative space for game text. Left/right40px safe margins at final size: no face/important weapon/animal touches side edges. Show a single composed cinematic scene, not a multi-panel sheet. No borders, card frame, letters, readable runes, logos, watermark, interface or typography. Natural anatomy, clearly separated hands, structurally sound weapons, restrained bloom; faces legible at260px wide. Preserve identity, age, hair, facial features, costume materials and painterly style from references; pose and scenario change for THIS specific upgrade.\nSubject identity: the same pale dark-haired mature sea woman, wet flowing hair, dark teal sea-cloak, rope net and antique gold ornaments, storm-blue water.\nSpecific upgrade scene: The woman stretches a weighted ROPE NET between her hands at upper chest level, grounded woven mesh with a few small captured cool-blue experience-like lights. Net focal, not bright gold yet.\nThis is a DISTINCT PATH illustration. Show this road motif clearly, not the generic base portrait again.\nKeep ALL important anatomy, weapon heads/tips and animal faces within CENTRAL80% of canvas (x10%..90%), not merely inside the outer edge. Leave side columns as background or unimportant cloak only. Place all hands/gesture and spell motifs above y52%; nothing bright or complex below y60%.",
+    "current_gameplay_source_line": "\"ran_andvari\": {\"kind\": \"path\", \"god\": \"ran\", \"name\": \"安德瓦利之网\", \"desc\": \"网留在地上 3 秒，网里的敌人每秒受伤；网里被打死的敌人掉落的经验翻倍\"},",
+    "input_code_sha256": "e2b900caf6dcee1af417fb90932a48e0313bf8e726a5f7d4141ed8d8e332e4db",
+    "status": "planned"
+  },
+  {
+    "id": "ran_andvari_awaken",
+    "task": "L1",
+    "god": "ran",
+    "variant": "awaken",
+    "root": "assets/source/taskL1_paths_2026-10-20",
+    "target": "assets/sprites/cards/ran_andvari_awaken.png",
+    "references": [
+      "assets/sprites/cards/ran_andvari.png",
+      "assets/sprites/cards/ran.png"
+    ],
+    "prompt": "Use case: illustration-story. Asset type: ONE premium game upgrade CARD ILLUSTRATION, portrait 3:5, intended final 720x1200 RGB. Style: richly textured restrained northern myth oil painting / painterly impasto, realistic faces and materials, same collection as attached original portraits, NOT pixel art, NOT anime, no glossy 3D. This is a living myth inside an ancient archive; do not add computers, museums or science-fiction. CRITICAL composition: heads and every key spell, weapon, animal or gesture entirely within upper55% of image; faces around y15-25%, upper bodies around y25-50%; bottom40% deep blue-black simple cloak/shadow fading into quiet negative space for game text. Left/right40px safe margins at final size: no face/important weapon/animal touches side edges. Show a single composed cinematic scene, not a multi-panel sheet. No borders, card frame, letters, readable runes, logos, watermark, interface or typography. Natural anatomy, clearly separated hands, structurally sound weapons, restrained bloom; faces legible at260px wide. Preserve identity, age, hair, facial features, costume materials and painterly style from references; pose and scenario change for THIS specific upgrade.\nSubject identity: the same pale dark-haired mature sea woman, wet flowing hair, dark teal sea-cloak, rope net and antique gold ornaments, storm-blue water.\nSpecific upgrade scene: The same net becomes rich GOLD, taut between two hands with diamond-shaped woven mesh and a few antique gold coins caught in it; enlarged golden net and royal sea power, no written symbols.\nThis is the AWAKENED culmination of the companion path image, distinctly greater power and evolved scene, not a recolor, while preserving the SAME character and road motif.\nKeep ALL important anatomy, weapon heads/tips and animal faces within CENTRAL80% of canvas (x10%..90%), not merely inside the outer edge. Leave side columns as background or unimportant cloak only. Place all hands/gesture and spell motifs above y52%; nothing bright or complex below y60%.",
+    "current_gameplay_source_line": "\"ran_andvari_awaken\": {\"kind\": \"awaken\", \"god\": \"ran\", \"path\": \"ran_andvari\", \"name\": \"觉醒·安德瓦利的黄金\", \"desc\": \"网变成金网，网里的敌人受到的伤害 +50%，偶尔掉落奖励点。受到伤害时 20% 几率把攻击者拖进网里\"},",
+    "input_code_sha256": "e2b900caf6dcee1af417fb90932a48e0313bf8e726a5f7d4141ed8d8e332e4db",
+    "status": "planned"
+  },
+  {
+    "id": "ran_drowned",
+    "task": "L1",
+    "god": "ran",
+    "variant": "path",
+    "root": "assets/source/taskL1_paths_2026-10-20",
+    "target": "assets/sprites/cards/ran_drowned.png",
+    "references": [
+      "assets/sprites/cards/ran.png"
+    ],
+    "prompt": "Use case: illustration-story. Asset type: ONE premium game upgrade CARD ILLUSTRATION, portrait 3:5, intended final 720x1200 RGB. Style: richly textured restrained northern myth oil painting / painterly impasto, realistic faces and materials, same collection as attached original portraits, NOT pixel art, NOT anime, no glossy 3D. This is a living myth inside an ancient archive; do not add computers, museums or science-fiction. CRITICAL composition: heads and every key spell, weapon, animal or gesture entirely within upper55% of image; faces around y15-25%, upper bodies around y25-50%; bottom40% deep blue-black simple cloak/shadow fading into quiet negative space for game text. Left/right40px safe margins at final size: no face/important weapon/animal touches side edges. Show a single composed cinematic scene, not a multi-panel sheet. No borders, card frame, letters, readable runes, logos, watermark, interface or typography. Natural anatomy, clearly separated hands, structurally sound weapons, restrained bloom; faces legible at260px wide. Preserve identity, age, hair, facial features, costume materials and painterly style from references; pose and scenario change for THIS specific upgrade.\nSubject identity: the same pale dark-haired mature sea woman, wet flowing hair, dark teal sea-cloak, rope net and antique gold ornaments, storm-blue water.\nSpecific upgrade scene: The sea woman beckons THREE translucent blue drowned warrior silhouettes emerging from upper-side mist, distinguishable human heads/shoulders, subordinate to main face, net visible.\nThis is a DISTINCT PATH illustration. Show this road motif clearly, not the generic base portrait again.\nKeep ALL important anatomy, weapon heads/tips and animal faces within CENTRAL80% of canvas (x10%..90%), not merely inside the outer edge. Leave side columns as background or unimportant cloak only. Place all hands/gesture and spell motifs above y52%; nothing bright or complex below y60%.",
+    "current_gameplay_source_line": "\"ran_drowned\": {\"kind\": \"path\", \"god\": \"ran\", \"name\": \"溺亡者\", \"desc\": \"网里被打死的敌人变成溺亡者，为你作战 8 秒（最多 6 个）\"},",
+    "input_code_sha256": "e2b900caf6dcee1af417fb90932a48e0313bf8e726a5f7d4141ed8d8e332e4db",
+    "status": "planned"
+  },
+  {
+    "id": "ran_drowned_awaken",
+    "task": "L1",
+    "god": "ran",
+    "variant": "awaken",
+    "root": "assets/source/taskL1_paths_2026-10-20",
+    "target": "assets/sprites/cards/ran_drowned_awaken.png",
+    "references": [
+      "assets/sprites/cards/ran_drowned.png",
+      "assets/sprites/cards/ran.png"
+    ],
+    "prompt": "Use case: illustration-story. Asset type: ONE premium game upgrade CARD ILLUSTRATION, portrait 3:5, intended final 720x1200 RGB. Style: richly textured restrained northern myth oil painting / painterly impasto, realistic faces and materials, same collection as attached original portraits, NOT pixel art, NOT anime, no glossy 3D. This is a living myth inside an ancient archive; do not add computers, museums or science-fiction. CRITICAL composition: heads and every key spell, weapon, animal or gesture entirely within upper55% of image; faces around y15-25%, upper bodies around y25-50%; bottom40% deep blue-black simple cloak/shadow fading into quiet negative space for game text. Left/right40px safe margins at final size: no face/important weapon/animal touches side edges. Show a single composed cinematic scene, not a multi-panel sheet. No borders, card frame, letters, readable runes, logos, watermark, interface or typography. Natural anatomy, clearly separated hands, structurally sound weapons, restrained bloom; faces legible at260px wide. Preserve identity, age, hair, facial features, costume materials and painterly style from references; pose and scenario change for THIS specific upgrade.\nSubject identity: the same pale dark-haired mature sea woman, wet flowing hair, dark teal sea-cloak, rope net and antique gold ornaments, storm-blue water.\nSpecific upgrade scene: The sea woman presides over a dark undersea HALL with two receding rows of six spectral retainers, twelve subtle simple human silhouettes, not crowded faces; cold blue crownlike water arc, consistent hair and net.\nThis is the AWAKENED culmination of the companion path image, distinctly greater power and evolved scene, not a recolor, while preserving the SAME character and road motif.\nKeep ALL important anatomy, weapon heads/tips and animal faces within CENTRAL80% of canvas (x10%..90%), not merely inside the outer edge. Leave side columns as background or unimportant cloak only. Place all hands/gesture and spell motifs above y52%; nothing bright or complex below y60%.",
+    "current_gameplay_source_line": "\"ran_drowned_awaken\": {\"kind\": \"awaken\", \"god\": \"ran\", \"path\": \"ran_drowned\", \"name\": \"觉醒·澜的殿堂\", \"desc\": \"溺亡者最多 12 个，并且不会消失。受到伤害时 20% 几率把攻击者拖进网里\"},",
+    "input_code_sha256": "e2b900caf6dcee1af417fb90932a48e0313bf8e726a5f7d4141ed8d8e332e4db",
+    "status": "planned"
+  },
+  {
+    "id": "freyr_boar",
+    "task": "L1",
+    "god": "freyr",
+    "variant": "path",
+    "root": "assets/source/taskL1_paths_2026-10-20",
+    "target": "assets/sprites/cards/freyr_boar.png",
+    "references": [
+      "assets/sprites/cards/freyr.png"
+    ],
+    "prompt": "Use case: illustration-story. Asset type: ONE premium game upgrade CARD ILLUSTRATION, portrait 3:5, intended final 720x1200 RGB. Style: richly textured restrained northern myth oil painting / painterly impasto, realistic faces and materials, same collection as attached original portraits, NOT pixel art, NOT anime, no glossy 3D. This is a living myth inside an ancient archive; do not add computers, museums or science-fiction. CRITICAL composition: heads and every key spell, weapon, animal or gesture entirely within upper55% of image; faces around y15-25%, upper bodies around y25-50%; bottom40% deep blue-black simple cloak/shadow fading into quiet negative space for game text. Left/right40px safe margins at final size: no face/important weapon/animal touches side edges. Show a single composed cinematic scene, not a multi-panel sheet. No borders, card frame, letters, readable runes, logos, watermark, interface or typography. Natural anatomy, clearly separated hands, structurally sound weapons, restrained bloom; faces legible at260px wide. Preserve identity, age, hair, facial features, costume materials and painterly style from references; pose and scenario change for THIS specific upgrade.\nSubject identity: the same golden-haired bearded mature man, green and gold clothing under a dark fur mantle, bronze leaf ornaments, warm harvest sunlight.\nSpecific upgrade scene: The green-clad man beside ONE robust golden-bristled boar charging diagonally across upper-mid field, one snout, two tusks, four coherent legs; warm earth and harvest power.\nThis is a DISTINCT PATH illustration. Show this road motif clearly, not the generic base portrait again.\nKeep ALL important anatomy, weapon heads/tips and animal faces within CENTRAL80% of canvas (x10%..90%), not merely inside the outer edge. Leave side columns as background or unimportant cloak only. Place all hands/gesture and spell motifs above y52%; nothing bright or complex below y60%.",
+    "current_gameplay_source_line": "\"freyr_boar\": {\"kind\": \"path\", \"god\": \"freyr\", \"name\": \"古林博斯帝\", \"desc\": \"飞剑换成金鬃野猪，每 4 秒冲向敌人最多的方向，撞飞一路的敌人。双生 = 多一头野猪\"},",
+    "input_code_sha256": "e2b900caf6dcee1af417fb90932a48e0313bf8e726a5f7d4141ed8d8e332e4db",
+    "status": "planned"
+  },
+  {
+    "id": "freyr_boar_awaken",
+    "task": "L1",
+    "god": "freyr",
+    "variant": "awaken",
+    "root": "assets/source/taskL1_paths_2026-10-20",
+    "target": "assets/sprites/cards/freyr_boar_awaken.png",
+    "references": [
+      "assets/sprites/cards/freyr_boar.png",
+      "assets/sprites/cards/freyr.png"
+    ],
+    "prompt": "Use case: illustration-story. Asset type: ONE premium game upgrade CARD ILLUSTRATION, portrait 3:5, intended final 720x1200 RGB. Style: richly textured restrained northern myth oil painting / painterly impasto, realistic faces and materials, same collection as attached original portraits, NOT pixel art, NOT anime, no glossy 3D. This is a living myth inside an ancient archive; do not add computers, museums or science-fiction. CRITICAL composition: heads and every key spell, weapon, animal or gesture entirely within upper55% of image; faces around y15-25%, upper bodies around y25-50%; bottom40% deep blue-black simple cloak/shadow fading into quiet negative space for game text. Left/right40px safe margins at final size: no face/important weapon/animal touches side edges. Show a single composed cinematic scene, not a multi-panel sheet. No borders, card frame, letters, readable runes, logos, watermark, interface or typography. Natural anatomy, clearly separated hands, structurally sound weapons, restrained bloom; faces legible at260px wide. Preserve identity, age, hair, facial features, costume materials and painterly style from references; pose and scenario change for THIS specific upgrade.\nSubject identity: the same golden-haired bearded mature man, green and gold clothing under a dark fur mantle, bronze leaf ornaments, warm harvest sunlight.\nSpecific upgrade scene: A lead golden-bristled boar and THREE receding boar silhouettes form a sweeping CHARGE with the same green-clad man behind, golden sunlight and leaves, no repeated malformed heads.\nThis is the AWAKENED culmination of the companion path image, distinctly greater power and evolved scene, not a recolor, while preserving the SAME character and road motif.\nKeep ALL important anatomy, weapon heads/tips and animal faces within CENTRAL80% of canvas (x10%..90%), not merely inside the outer edge. Leave side columns as background or unimportant cloak only. Place all hands/gesture and spell motifs above y52%; nothing bright or complex below y60%.",
+    "current_gameplay_source_line": "\"freyr_boar_awaken\": {\"kind\": \"awaken\", \"god\": \"freyr\", \"path\": \"freyr_boar\", \"name\": \"觉醒·金鬃冲锋\", \"desc\": \"每 15 秒，野猪群从屏幕边缘一起冲过来。每分钟回复 15% 生命\"},",
+    "input_code_sha256": "e2b900caf6dcee1af417fb90932a48e0313bf8e726a5f7d4141ed8d8e332e4db",
+    "status": "planned"
+  },
+  {
+    "id": "freyr_field",
+    "task": "L1",
+    "god": "freyr",
+    "variant": "path",
+    "root": "assets/source/taskL1_paths_2026-10-20",
+    "target": "assets/sprites/cards/freyr_field.png",
+    "references": [
+      "assets/sprites/cards/freyr.png"
+    ],
+    "prompt": "Use case: illustration-story. Asset type: ONE premium game upgrade CARD ILLUSTRATION, portrait 3:5, intended final 720x1200 RGB. Style: richly textured restrained northern myth oil painting / painterly impasto, realistic faces and materials, same collection as attached original portraits, NOT pixel art, NOT anime, no glossy 3D. This is a living myth inside an ancient archive; do not add computers, museums or science-fiction. CRITICAL composition: heads and every key spell, weapon, animal or gesture entirely within upper55% of image; faces around y15-25%, upper bodies around y25-50%; bottom40% deep blue-black simple cloak/shadow fading into quiet negative space for game text. Left/right40px safe margins at final size: no face/important weapon/animal touches side edges. Show a single composed cinematic scene, not a multi-panel sheet. No borders, card frame, letters, readable runes, logos, watermark, interface or typography. Natural anatomy, clearly separated hands, structurally sound weapons, restrained bloom; faces legible at260px wide. Preserve identity, age, hair, facial features, costume materials and painterly style from references; pose and scenario change for THIS specific upgrade.\nSubject identity: the same golden-haired bearded mature man, green and gold clothing under a dark fur mantle, bronze leaf ornaments, warm harvest sunlight.\nSpecific upgrade scene: The man rests one hand above a straight sword planted into earth at upper-mid height; a small patch of golden WHEAT grows around the blade, gentle green healing light, dark below.\nThis is a DISTINCT PATH illustration. Show this road motif clearly, not the generic base portrait again.\nKeep ALL important anatomy, weapon heads/tips and animal faces within CENTRAL80% of canvas (x10%..90%), not merely inside the outer edge. Leave side columns as background or unimportant cloak only. Place all hands/gesture and spell motifs above y52%; nothing bright or complex below y60%.",
+    "current_gameplay_source_line": "\"freyr_field\": {\"kind\": \"path\", \"god\": \"freyr\", \"name\": \"丰收之地\", \"desc\": \"飞剑每砍 10 下，插进地里长出一片麦田 8 秒：站在里面回复生命，敌人减速\"},",
+    "input_code_sha256": "e2b900caf6dcee1af417fb90932a48e0313bf8e726a5f7d4141ed8d8e332e4db",
+    "status": "planned"
+  },
+  {
+    "id": "freyr_field_awaken",
+    "task": "L1",
+    "god": "freyr",
+    "variant": "awaken",
+    "root": "assets/source/taskL1_paths_2026-10-20",
+    "target": "assets/sprites/cards/freyr_field_awaken.png",
+    "references": [
+      "assets/sprites/cards/freyr_field.png",
+      "assets/sprites/cards/freyr.png"
+    ],
+    "prompt": "Use case: illustration-story. Asset type: ONE premium game upgrade CARD ILLUSTRATION, portrait 3:5, intended final 720x1200 RGB. Style: richly textured restrained northern myth oil painting / painterly impasto, realistic faces and materials, same collection as attached original portraits, NOT pixel art, NOT anime, no glossy 3D. This is a living myth inside an ancient archive; do not add computers, museums or science-fiction. CRITICAL composition: heads and every key spell, weapon, animal or gesture entirely within upper55% of image; faces around y15-25%, upper bodies around y25-50%; bottom40% deep blue-black simple cloak/shadow fading into quiet negative space for game text. Left/right40px safe margins at final size: no face/important weapon/animal touches side edges. Show a single composed cinematic scene, not a multi-panel sheet. No borders, card frame, letters, readable runes, logos, watermark, interface or typography. Natural anatomy, clearly separated hands, structurally sound weapons, restrained bloom; faces legible at260px wide. Preserve identity, age, hair, facial features, costume materials and painterly style from references; pose and scenario change for THIS specific upgrade.\nSubject identity: the same golden-haired bearded mature man, green and gold clothing under a dark fur mantle, bronze leaf ornaments, warm harvest sunlight.\nSpecific upgrade scene: A lush moving island of spring-green wheat and soft leaf-shaped healing light surrounds the man in upper half, winter horizon yields to warm spring, one planted sword remains recognizable, no sunlight sword swarm.\nThis is the AWAKENED culmination of the companion path image, distinctly greater power and evolved scene, not a recolor, while preserving the SAME character and road motif.\nKeep ALL important anatomy, weapon heads/tips and animal faces within CENTRAL80% of canvas (x10%..90%), not merely inside the outer edge. Leave side columns as background or unimportant cloak only. Place all hands/gesture and spell motifs above y52%; nothing bright or complex below y60%.",
+    "current_gameplay_source_line": "\"freyr_field_awaken\": {\"kind\": \"awaken\", \"god\": \"freyr\", \"path\": \"freyr_field\", \"name\": \"觉醒·华纳海姆之春\", \"desc\": \"一片麦田跟着你移动。每分钟回复 15% 生命\"},",
+    "input_code_sha256": "e2b900caf6dcee1af417fb90932a48e0313bf8e726a5f7d4141ed8d8e332e4db",
+    "status": "planned"
+  },
+  {
+    "id": "freyr_sun",
+    "task": "L1",
+    "god": "freyr",
+    "variant": "path",
+    "root": "assets/source/taskL1_paths_2026-10-20",
+    "target": "assets/sprites/cards/freyr_sun.png",
+    "references": [
+      "assets/sprites/cards/freyr.png"
+    ],
+    "prompt": "Use case: illustration-story. Asset type: ONE premium game upgrade CARD ILLUSTRATION, portrait 3:5, intended final 720x1200 RGB. Style: richly textured restrained northern myth oil painting / painterly impasto, realistic faces and materials, same collection as attached original portraits, NOT pixel art, NOT anime, no glossy 3D. This is a living myth inside an ancient archive; do not add computers, museums or science-fiction. CRITICAL composition: heads and every key spell, weapon, animal or gesture entirely within upper55% of image; faces around y15-25%, upper bodies around y25-50%; bottom40% deep blue-black simple cloak/shadow fading into quiet negative space for game text. Left/right40px safe margins at final size: no face/important weapon/animal touches side edges. Show a single composed cinematic scene, not a multi-panel sheet. No borders, card frame, letters, readable runes, logos, watermark, interface or typography. Natural anatomy, clearly separated hands, structurally sound weapons, restrained bloom; faces legible at260px wide. Preserve identity, age, hair, facial features, costume materials and painterly style from references; pose and scenario change for THIS specific upgrade.\nSubject identity: the same golden-haired bearded mature man, green and gold clothing under a dark fur mantle, bronze leaf ornaments, warm harvest sunlight.\nSpecific upgrade scene: ONE floating straight golden sword beside the man leaves a thin burning SUNLIGHT trail across upper half, gold and green palette, no grip by a phantom hand.\nThis is a DISTINCT PATH illustration. Show this road motif clearly, not the generic base portrait again.\nKeep ALL important anatomy, weapon heads/tips and animal faces within CENTRAL80% of canvas (x10%..90%), not merely inside the outer edge. Leave side columns as background or unimportant cloak only. Place all hands/gesture and spell motifs above y52%; nothing bright or complex below y60%.",
+    "current_gameplay_source_line": "\"freyr_sun\": {\"kind\": \"path\", \"god\": \"freyr\", \"name\": \"阳光之剑\", \"desc\": \"飞剑飞过的地方留下一道灼热的光痕，碰到的敌人灼烧\"},",
+    "input_code_sha256": "e2b900caf6dcee1af417fb90932a48e0313bf8e726a5f7d4141ed8d8e332e4db",
+    "status": "planned"
+  },
+  {
+    "id": "freyr_sun_awaken",
+    "task": "L1",
+    "god": "freyr",
+    "variant": "awaken",
+    "root": "assets/source/taskL1_paths_2026-10-20",
+    "target": "assets/sprites/cards/freyr_sun_awaken.png",
+    "references": [
+      "assets/sprites/cards/freyr_sun.png",
+      "assets/sprites/cards/freyr.png"
+    ],
+    "prompt": "Use case: illustration-story. Asset type: ONE premium game upgrade CARD ILLUSTRATION, portrait 3:5, intended final 720x1200 RGB. Style: richly textured restrained northern myth oil painting / painterly impasto, realistic faces and materials, same collection as attached original portraits, NOT pixel art, NOT anime, no glossy 3D. This is a living myth inside an ancient archive; do not add computers, museums or science-fiction. CRITICAL composition: heads and every key spell, weapon, animal or gesture entirely within upper55% of image; faces around y15-25%, upper bodies around y25-50%; bottom40% deep blue-black simple cloak/shadow fading into quiet negative space for game text. Left/right40px safe margins at final size: no face/important weapon/animal touches side edges. Show a single composed cinematic scene, not a multi-panel sheet. No borders, card frame, letters, readable runes, logos, watermark, interface or typography. Natural anatomy, clearly separated hands, structurally sound weapons, restrained bloom; faces legible at260px wide. Preserve identity, age, hair, facial features, costume materials and painterly style from references; pose and scenario change for THIS specific upgrade.\nSubject identity: the same golden-haired bearded mature man, green and gold clothing under a dark fur mantle, bronze leaf ornaments, warm harvest sunlight.\nSpecific upgrade scene: THREE separate floating straight golden swords fan behind the man, long warm sunlight trails, three clear guards and blades, same green fur-clad mature identity.\nThis is the AWAKENED culmination of the companion path image, distinctly greater power and evolved scene, not a recolor, while preserving the SAME character and road motif.\nKeep ALL important anatomy, weapon heads/tips and animal faces within CENTRAL80% of canvas (x10%..90%), not merely inside the outer edge. Leave side columns as background or unimportant cloak only. Place all hands/gesture and spell motifs above y52%; nothing bright or complex below y60%.",
+    "current_gameplay_source_line": "\"freyr_sun_awaken\": {\"kind\": \"awaken\", \"god\": \"freyr\", \"path\": \"freyr_sun\", \"name\": \"觉醒·三柄阳剑\", \"desc\": \"飞剑 +2，光痕留得更久。每分钟回复 15% 生命\"},",
+    "input_code_sha256": "e2b900caf6dcee1af417fb90932a48e0313bf8e726a5f7d4141ed8d8e332e4db",
+    "status": "planned"
+  },
+  {
+    "id": "skadi_hunter",
+    "task": "L1",
+    "god": "skadi",
+    "variant": "path",
+    "root": "assets/source/taskL1_paths_2026-10-20",
+    "target": "assets/sprites/cards/skadi_hunter.png",
+    "references": [
+      "assets/sprites/cards/skadi.png"
+    ],
+    "prompt": "Use case: illustration-story. Asset type: ONE premium game upgrade CARD ILLUSTRATION, portrait 3:5, intended final 720x1200 RGB. Style: richly textured restrained northern myth oil painting / painterly impasto, realistic faces and materials, same collection as attached original portraits, NOT pixel art, NOT anime, no glossy 3D. This is a living myth inside an ancient archive; do not add computers, museums or science-fiction. CRITICAL composition: heads and every key spell, weapon, animal or gesture entirely within upper55% of image; faces around y15-25%, upper bodies around y25-50%; bottom40% deep blue-black simple cloak/shadow fading into quiet negative space for game text. Left/right40px safe margins at final size: no face/important weapon/animal touches side edges. Show a single composed cinematic scene, not a multi-panel sheet. No borders, card frame, letters, readable runes, logos, watermark, interface or typography. Natural anatomy, clearly separated hands, structurally sound weapons, restrained bloom; faces legible at260px wide. Preserve identity, age, hair, facial features, costume materials and painterly style from references; pose and scenario change for THIS specific upgrade.\nSubject identity: the same stern silver-haired mature huntress, dark fur mantle and leather gloves, wooden bow, icy blue magic and winter mountains.\nSpecific upgrade scene: The huntress takes a steady aimed shot with a wooden bow, ONE straight icy arrow nocked and aligned from string toward a distant marked dark target near upper side, focused hunter gaze, bow physically coherent.\nThis is a DISTINCT PATH illustration. Show this road motif clearly, not the generic base portrait again.\nKeep ALL important anatomy, weapon heads/tips and animal faces within CENTRAL80% of canvas (x10%..90%), not merely inside the outer edge. Leave side columns as background or unimportant cloak only. Place all hands/gesture and spell motifs above y52%; nothing bright or complex below y60%.",
+    "current_gameplay_source_line": "\"skadi_hunter\": {\"kind\": \"path\", \"god\": \"skadi\", \"name\": \"狩猎本能\", \"desc\": \"标记屏幕内最强的敌人，冰箭改为蓄力狙击它：伤害 ×3，直接冻结。连珠 = 狙击后追加普通箭\"},",
+    "input_code_sha256": "e2b900caf6dcee1af417fb90932a48e0313bf8e726a5f7d4141ed8d8e332e4db",
+    "status": "planned"
+  },
+  {
+    "id": "skadi_hunter_awaken",
+    "task": "L1",
+    "god": "skadi",
+    "variant": "awaken",
+    "root": "assets/source/taskL1_paths_2026-10-20",
+    "target": "assets/sprites/cards/skadi_hunter_awaken.png",
+    "references": [
+      "assets/sprites/cards/skadi_hunter.png",
+      "assets/sprites/cards/skadi.png"
+    ],
+    "prompt": "Use case: illustration-story. Asset type: ONE premium game upgrade CARD ILLUSTRATION, portrait 3:5, intended final 720x1200 RGB. Style: richly textured restrained northern myth oil painting / painterly impasto, realistic faces and materials, same collection as attached original portraits, NOT pixel art, NOT anime, no glossy 3D. This is a living myth inside an ancient archive; do not add computers, museums or science-fiction. CRITICAL composition: heads and every key spell, weapon, animal or gesture entirely within upper55% of image; faces around y15-25%, upper bodies around y25-50%; bottom40% deep blue-black simple cloak/shadow fading into quiet negative space for game text. Left/right40px safe margins at final size: no face/important weapon/animal touches side edges. Show a single composed cinematic scene, not a multi-panel sheet. No borders, card frame, letters, readable runes, logos, watermark, interface or typography. Natural anatomy, clearly separated hands, structurally sound weapons, restrained bloom; faces legible at260px wide. Preserve identity, age, hair, facial features, costume materials and painterly style from references; pose and scenario change for THIS specific upgrade.\nSubject identity: the same stern silver-haired mature huntress, dark fur mantle and leather gloves, wooden bow, icy blue magic and winter mountains.\nSpecific upgrade scene: The huntress in monumental snowy mountain light releases ONE long piercing blue ice arrow through a row of three dark silhouettes freezing in sequence; clean bow/string/hand geometry and silver hair retained.\nThis is the AWAKENED culmination of the companion path image, distinctly greater power and evolved scene, not a recolor, while preserving the SAME character and road motif.\nKeep ALL important anatomy, weapon heads/tips and animal faces within CENTRAL80% of canvas (x10%..90%), not merely inside the outer edge. Leave side columns as background or unimportant cloak only. Place all hands/gesture and spell motifs above y52%; nothing bright or complex below y60%.",
+    "current_gameplay_source_line": "\"skadi_hunter_awaken\": {\"kind\": \"awaken\", \"god\": \"skadi\", \"path\": \"skadi_hunter\", \"name\": \"觉醒·群山之女\", \"desc\": \"狙击箭贯穿整个屏幕，冻结一路上的所有敌人。免疫减速\"},",
+    "input_code_sha256": "e2b900caf6dcee1af417fb90932a48e0313bf8e726a5f7d4141ed8d8e332e4db",
+    "status": "planned"
+  },
+  {
+    "id": "skadi_snowshoes",
+    "task": "L1",
+    "god": "skadi",
+    "variant": "path",
+    "root": "assets/source/taskL1_paths_2026-10-20",
+    "target": "assets/sprites/cards/skadi_snowshoes.png",
+    "references": [
+      "assets/sprites/cards/skadi.png"
+    ],
+    "prompt": "Use case: illustration-story. Asset type: ONE premium game upgrade CARD ILLUSTRATION, portrait 3:5, intended final 720x1200 RGB. Style: richly textured restrained northern myth oil painting / painterly impasto, realistic faces and materials, same collection as attached original portraits, NOT pixel art, NOT anime, no glossy 3D. This is a living myth inside an ancient archive; do not add computers, museums or science-fiction. CRITICAL composition: heads and every key spell, weapon, animal or gesture entirely within upper55% of image; faces around y15-25%, upper bodies around y25-50%; bottom40% deep blue-black simple cloak/shadow fading into quiet negative space for game text. Left/right40px safe margins at final size: no face/important weapon/animal touches side edges. Show a single composed cinematic scene, not a multi-panel sheet. No borders, card frame, letters, readable runes, logos, watermark, interface or typography. Natural anatomy, clearly separated hands, structurally sound weapons, restrained bloom; faces legible at260px wide. Preserve identity, age, hair, facial features, costume materials and painterly style from references; pose and scenario change for THIS specific upgrade.\nSubject identity: the same stern silver-haired mature huntress, dark fur mantle and leather gloves, wooden bow, icy blue magic and winter mountains.\nSpecific upgrade scene: The huntress in a dynamic traversing pose with broad traditional wooden SNOWSHOES clearly visible behind her upper-mid shoulder as attached gear; a trail of ice arrows follows her movement; keep face high.\nThis is a DISTINCT PATH illustration. Show this road motif clearly, not the generic base portrait again.\nKeep ALL important anatomy, weapon heads/tips and animal faces within CENTRAL80% of canvas (x10%..90%), not merely inside the outer edge. Leave side columns as background or unimportant cloak only. Place all hands/gesture and spell motifs above y52%; nothing bright or complex below y60%.",
+    "current_gameplay_source_line": "\"skadi_snowshoes\": {\"kind\": \"path\", \"god\": \"skadi\", \"name\": \"雪鞋\", \"desc\": \"移动时每走 150 像素自动射一支箭，跑得越多射得越多，站着不动就不射\"},",
+    "input_code_sha256": "e2b900caf6dcee1af417fb90932a48e0313bf8e726a5f7d4141ed8d8e332e4db",
+    "status": "planned"
+  },
+  {
+    "id": "skadi_snowshoes_awaken",
+    "task": "L1",
+    "god": "skadi",
+    "variant": "awaken",
+    "root": "assets/source/taskL1_paths_2026-10-20",
+    "target": "assets/sprites/cards/skadi_snowshoes_awaken.png",
+    "references": [
+      "assets/sprites/cards/skadi_snowshoes.png",
+      "assets/sprites/cards/skadi.png"
+    ],
+    "prompt": "Use case: illustration-story. Asset type: ONE premium game upgrade CARD ILLUSTRATION, portrait 3:5, intended final 720x1200 RGB. Style: richly textured restrained northern myth oil painting / painterly impasto, realistic faces and materials, same collection as attached original portraits, NOT pixel art, NOT anime, no glossy 3D. This is a living myth inside an ancient archive; do not add computers, museums or science-fiction. CRITICAL composition: heads and every key spell, weapon, animal or gesture entirely within upper55% of image; faces around y15-25%, upper bodies around y25-50%; bottom40% deep blue-black simple cloak/shadow fading into quiet negative space for game text. Left/right40px safe margins at final size: no face/important weapon/animal touches side edges. Show a single composed cinematic scene, not a multi-panel sheet. No borders, card frame, letters, readable runes, logos, watermark, interface or typography. Natural anatomy, clearly separated hands, structurally sound weapons, restrained bloom; faces legible at260px wide. Preserve identity, age, hair, facial features, costume materials and painterly style from references; pose and scenario change for THIS specific upgrade.\nSubject identity: the same stern silver-haired mature huntress, dark fur mantle and leather gloves, wooden bow, icy blue magic and winter mountains.\nSpecific upgrade scene: The huntress skis across a snowy upper-mid ridge, short wooden skis, cloak streaming, TWO parallel ice arrows and faint vanished afterimage mark a sudden dash; face high, lower legs and ski detail do not invade bottom40%.\nThis is the AWAKENED culmination of the companion path image, distinctly greater power and evolved scene, not a recolor, while preserving the SAME character and road motif.\nKeep ALL important anatomy, weapon heads/tips and animal faces within CENTRAL80% of canvas (x10%..90%), not merely inside the outer edge. Leave side columns as background or unimportant cloak only. Place all hands/gesture and spell motifs above y52%; nothing bright or complex below y60%.",
+    "current_gameplay_source_line": "\"skadi_snowshoes_awaken\": {\"kind\": \"awaken\", \"god\": \"skadi\", \"path\": \"skadi_snowshoes\", \"name\": \"觉醒·滑雪猎手\", \"desc\": \"闪现后 3 秒内箭的数量翻倍。免疫减速\"},",
+    "input_code_sha256": "e2b900caf6dcee1af417fb90932a48e0313bf8e726a5f7d4141ed8d8e332e4db",
+    "status": "planned"
+  },
+  {
+    "id": "skadi_winter",
+    "task": "L1",
+    "god": "skadi",
+    "variant": "path",
+    "root": "assets/source/taskL1_paths_2026-10-20",
+    "target": "assets/sprites/cards/skadi_winter.png",
+    "references": [
+      "assets/sprites/cards/skadi.png"
+    ],
+    "prompt": "Use case: illustration-story. Asset type: ONE premium game upgrade CARD ILLUSTRATION, portrait 3:5, intended final 720x1200 RGB. Style: richly textured restrained northern myth oil painting / painterly impasto, realistic faces and materials, same collection as attached original portraits, NOT pixel art, NOT anime, no glossy 3D. This is a living myth inside an ancient archive; do not add computers, museums or science-fiction. CRITICAL composition: heads and every key spell, weapon, animal or gesture entirely within upper55% of image; faces around y15-25%, upper bodies around y25-50%; bottom40% deep blue-black simple cloak/shadow fading into quiet negative space for game text. Left/right40px safe margins at final size: no face/important weapon/animal touches side edges. Show a single composed cinematic scene, not a multi-panel sheet. No borders, card frame, letters, readable runes, logos, watermark, interface or typography. Natural anatomy, clearly separated hands, structurally sound weapons, restrained bloom; faces legible at260px wide. Preserve identity, age, hair, facial features, costume materials and painterly style from references; pose and scenario change for THIS specific upgrade.\nSubject identity: the same stern silver-haired mature huntress, dark fur mantle and leather gloves, wooden bow, icy blue magic and winter mountains.\nSpecific upgrade scene: The huntress holds her bow at rest, a compact circular ring of snow and sharp frost surrounds her shoulders, nearby dark silhouettes accumulating ice, no huge bright lower blizzard.\nThis is a DISTINCT PATH illustration. Show this road motif clearly, not the generic base portrait again.\nKeep ALL important anatomy, weapon heads/tips and animal faces within CENTRAL80% of canvas (x10%..90%), not merely inside the outer edge. Leave side columns as background or unimportant cloak only. Place all hands/gesture and spell motifs above y52%; nothing bright or complex below y60%.",
+    "current_gameplay_source_line": "\"skadi_winter\": {\"kind\": \"path\", \"god\": \"skadi\", \"name\": \"永冬\", \"desc\": \"冰箭改为身边一圈暴风雪，持续给范围内的敌人叠霜冻。连珠 = 暴风雪更大\"},",
+    "input_code_sha256": "e2b900caf6dcee1af417fb90932a48e0313bf8e726a5f7d4141ed8d8e332e4db",
+    "status": "planned"
+  },
+  {
+    "id": "skadi_winter_awaken",
+    "task": "L1",
+    "god": "skadi",
+    "variant": "awaken",
+    "root": "assets/source/taskL1_paths_2026-10-20",
+    "target": "assets/sprites/cards/skadi_winter_awaken.png",
+    "references": [
+      "assets/sprites/cards/skadi_winter.png",
+      "assets/sprites/cards/skadi.png"
+    ],
+    "prompt": "Use case: illustration-story. Asset type: ONE premium game upgrade CARD ILLUSTRATION, portrait 3:5, intended final 720x1200 RGB. Style: richly textured restrained northern myth oil painting / painterly impasto, realistic faces and materials, same collection as attached original portraits, NOT pixel art, NOT anime, no glossy 3D. This is a living myth inside an ancient archive; do not add computers, museums or science-fiction. CRITICAL composition: heads and every key spell, weapon, animal or gesture entirely within upper55% of image; faces around y15-25%, upper bodies around y25-50%; bottom40% deep blue-black simple cloak/shadow fading into quiet negative space for game text. Left/right40px safe margins at final size: no face/important weapon/animal touches side edges. Show a single composed cinematic scene, not a multi-panel sheet. No borders, card frame, letters, readable runes, logos, watermark, interface or typography. Natural anatomy, clearly separated hands, structurally sound weapons, restrained bloom; faces legible at260px wide. Preserve identity, age, hair, facial features, costume materials and painterly style from references; pose and scenario change for THIS specific upgrade.\nSubject identity: the same stern silver-haired mature huntress, dark fur mantle and leather gloves, wooden bow, icy blue magic and winter mountains.\nSpecific upgrade scene: The huntress becomes the eye of a vast all-enclosing WHITE-BLUE blizzard across the upper half, mountains obscured by sweeping snow arcs, eyes/face/bow remain crisp against storm, bottom40% deep quiet blue-black.\nThis is the AWAKENED culmination of the companion path image, distinctly greater power and evolved scene, not a recolor, while preserving the SAME character and road motif.\nKeep ALL important anatomy, weapon heads/tips and animal faces within CENTRAL80% of canvas (x10%..90%), not merely inside the outer edge. Leave side columns as background or unimportant cloak only. Place all hands/gesture and spell motifs above y52%; nothing bright or complex below y60%.",
+    "current_gameplay_source_line": "\"skadi_winter_awaken\": {\"kind\": \"awaken\", \"god\": \"skadi\", \"path\": \"skadi_winter\", \"name\": \"觉醒·芬布尔之冬\", \"desc\": \"暴风雪扩大到整个屏幕。免疫减速\"},",
+    "input_code_sha256": "e2b900caf6dcee1af417fb90932a48e0313bf8e726a5f7d4141ed8d8e332e4db",
+    "status": "planned"
+  },
+  {
+    "id": "fusion_father_son",
+    "task": "L2",
+    "gods": [
+      "thor",
+      "odin"
+    ],
+    "variant": "fusion",
+    "root": "assets/source/taskL2_fusions_2026-10-20",
+    "target": "assets/sprites/cards/fusion_father_son.png",
+    "references": [
+      "assets/sprites/cards/thor.png",
+      "assets/sprites/cards/odin.png"
+    ],
+    "prompt": "Use case: illustration-story. Asset type: ONE premium game upgrade CARD ILLUSTRATION, portrait 3:5, intended final 720x1200 RGB. Style: richly textured restrained northern myth oil painting / painterly impasto, realistic faces and materials, same collection as attached original portraits, NOT pixel art, NOT anime, no glossy 3D. This is a living myth inside an ancient archive; do not add computers, museums or science-fiction. CRITICAL composition: heads and every key spell, weapon, animal or gesture entirely within upper55% of image; faces around y15-25%, upper bodies around y25-50%; bottom40% deep blue-black simple cloak/shadow fading into quiet negative space for game text. Left/right40px safe margins at final size: no face/important weapon/animal touches side edges. Show a single composed cinematic scene, not a multi-panel sheet. No borders, card frame, letters, readable runes, logos, watermark, interface or typography. Natural anatomy, clearly separated hands, structurally sound weapons, restrained bloom; faces legible at260px wide. Preserve identity, age, hair, facial features, costume materials and painterly style from references; pose and scenario change for THIS specific upgrade.\nSubject A identity: the same broad muscular middle-aged red-haired, thick red-bearded northern warrior, black fur mantle, weathered leather and iron armor, blue lightning.\nSubject B identity: the same elderly long grey-bearded one-eyed northern wanderer, broad dark hat, fur cloak, weathered face, violet magic.\nSpecific shared spell scene: A single unified spell: blue lightning pierces a floating violet geometric sigil and bursts into three smaller violet-blue marks around it. The red-bearded warrior and one-eyed elder stand shoulder to shoulder, one shared energy flow, not a split collage.\nTwo adult figures, equal scale, heads fully inside upper45%, no third main human, lighting links the pair into one coherent painting. Preserve the two separate identities, never merge facial features.\nKeep ALL important anatomy, weapon heads/tips and animal faces within CENTRAL80% of canvas (x10%..90%), not merely inside the outer edge. Leave side columns as background or unimportant cloak only. Place all hands/gesture and spell motifs above y52%; nothing bright or complex below y60%.",
+    "current_gameplay_source_line": "\"father_son\": {\"gods\": [\"thor\", \"odin\"], \"name\": \"父子雷符\", \"desc\": \"落雷劈中带符文印记的敌人时立刻引爆印记，并给周围的敌人叠 1 层印记\"},",
+    "input_code_sha256": "cf8ac4eb04350527ea92fc6d7718a3882bee3bce4e278d679f66845fb808c289",
+    "status": "planned"
+  },
+  {
+    "id": "fusion_utgard",
+    "task": "L2",
+    "gods": [
+      "thor",
+      "loki"
+    ],
+    "variant": "fusion",
+    "root": "assets/source/taskL2_fusions_2026-10-20",
+    "target": "assets/sprites/cards/fusion_utgard.png",
+    "references": [
+      "assets/sprites/cards/thor.png",
+      "assets/sprites/cards/loki.png"
+    ],
+    "prompt": "Use case: illustration-story. Asset type: ONE premium game upgrade CARD ILLUSTRATION, portrait 3:5, intended final 720x1200 RGB. Style: richly textured restrained northern myth oil painting / painterly impasto, realistic faces and materials, same collection as attached original portraits, NOT pixel art, NOT anime, no glossy 3D. This is a living myth inside an ancient archive; do not add computers, museums or science-fiction. CRITICAL composition: heads and every key spell, weapon, animal or gesture entirely within upper55% of image; faces around y15-25%, upper bodies around y25-50%; bottom40% deep blue-black simple cloak/shadow fading into quiet negative space for game text. Left/right40px safe margins at final size: no face/important weapon/animal touches side edges. Show a single composed cinematic scene, not a multi-panel sheet. No borders, card frame, letters, readable runes, logos, watermark, interface or typography. Natural anatomy, clearly separated hands, structurally sound weapons, restrained bloom; faces legible at260px wide. Preserve identity, age, hair, facial features, costume materials and painterly style from references; pose and scenario change for THIS specific upgrade.\nSubject A identity: the same broad muscular middle-aged red-haired, thick red-bearded northern warrior, black fur mantle, weathered leather and iron armor, blue lightning.\nSubject B identity: the same lean clean-shaven auburn-haired man, sharp intelligent face, dark fur-trimmed leather clothing, orange trickster fire; no horned crown.\nSpecific shared spell scene: Blue lightning strikes a coiling orange fire spiral and creates a vivid fire-thunder explosion between the two men at chest height, three small lightning forks within the flame area. Unified scene, faces clear.\nTwo adult figures, equal scale, heads fully inside upper45%, no third main human, lighting links the pair into one coherent painting. Preserve the two separate identities, never merge facial features.\nKeep ALL important anatomy, weapon heads/tips and animal faces within CENTRAL80% of canvas (x10%..90%), not merely inside the outer edge. Leave side columns as background or unimportant cloak only. Place all hands/gesture and spell motifs above y52%; nothing bright or complex below y60%.",
+    "current_gameplay_source_line": "\"utgard\": {\"gods\": [\"thor\", \"loki\"], \"name\": \"乌特加尔德之旅\", \"desc\": \"落雷劈中灼烧的敌人时引发火雷爆炸；诡火范围内的敌人每秒被小雷击中一次\"},",
+    "input_code_sha256": "cf8ac4eb04350527ea92fc6d7718a3882bee3bce4e278d679f66845fb808c289",
+    "status": "planned"
+  },
+  {
+    "id": "fusion_false_bride",
+    "task": "L2",
+    "gods": [
+      "thor",
+      "freyja"
+    ],
+    "variant": "fusion",
+    "root": "assets/source/taskL2_fusions_2026-10-20",
+    "target": "assets/sprites/cards/fusion_false_bride.png",
+    "references": [
+      "assets/sprites/cards/thor.png",
+      "assets/sprites/cards/freyja.png"
+    ],
+    "prompt": "Use case: illustration-story. Asset type: ONE premium game upgrade CARD ILLUSTRATION, portrait 3:5, intended final 720x1200 RGB. Style: richly textured restrained northern myth oil painting / painterly impasto, realistic faces and materials, same collection as attached original portraits, NOT pixel art, NOT anime, no glossy 3D. This is a living myth inside an ancient archive; do not add computers, museums or science-fiction. CRITICAL composition: heads and every key spell, weapon, animal or gesture entirely within upper55% of image; faces around y15-25%, upper bodies around y25-50%; bottom40% deep blue-black simple cloak/shadow fading into quiet negative space for game text. Left/right40px safe margins at final size: no face/important weapon/animal touches side edges. Show a single composed cinematic scene, not a multi-panel sheet. No borders, card frame, letters, readable runes, logos, watermark, interface or typography. Natural anatomy, clearly separated hands, structurally sound weapons, restrained bloom; faces legible at260px wide. Preserve identity, age, hair, facial features, costume materials and painterly style from references; pose and scenario change for THIS specific upgrade.\nSubject A identity: the same broad muscular middle-aged red-haired, thick red-bearded northern warrior, black fur mantle, weathered leather and iron armor, blue lightning.\nSubject B identity: the same mature blonde woman with a strong composed face, dark feather cloak, gold necklace and bronze ornaments, pale gold magic.\nSpecific shared spell scene: The woman extends a dark feather cloak partly around the red-bearded warrior, a faint translucent edge suggests disappearing; a single massive BLUE thunderbolt descends just behind them as concealment ends. Feather cloak and lightning, no bridal gown or comic disguise.\nTwo adult figures, equal scale, heads fully inside upper45%, no third main human, lighting links the pair into one coherent painting. Preserve the two separate identities, never merge facial features.\nKeep ALL important anatomy, weapon heads/tips and animal faces within CENTRAL80% of canvas (x10%..90%), not merely inside the outer edge. Leave side columns as background or unimportant cloak only. Place all hands/gesture and spell motifs above y52%; nothing bright or complex below y60%.",
+    "current_gameplay_source_line": "\"false_bride\": {\"gods\": [\"thor\", \"freyja\"], \"name\": \"假新娘\", \"desc\": \"闪现后隐身 2 秒，敌人跟丢你；隐身结束时在身边降下一道巨雷\"},",
+    "input_code_sha256": "cf8ac4eb04350527ea92fc6d7718a3882bee3bce4e278d679f66845fb808c289",
+    "status": "planned"
+  },
+  {
+    "id": "fusion_shatter_thunder",
+    "task": "L2",
+    "gods": [
+      "thor",
+      "skadi"
+    ],
+    "variant": "fusion",
+    "root": "assets/source/taskL2_fusions_2026-10-20",
+    "target": "assets/sprites/cards/fusion_shatter_thunder.png",
+    "references": [
+      "assets/sprites/cards/thor.png",
+      "assets/sprites/cards/skadi.png"
+    ],
+    "prompt": "Use case: illustration-story. Asset type: ONE premium game upgrade CARD ILLUSTRATION, portrait 3:5, intended final 720x1200 RGB. Style: richly textured restrained northern myth oil painting / painterly impasto, realistic faces and materials, same collection as attached original portraits, NOT pixel art, NOT anime, no glossy 3D. This is a living myth inside an ancient archive; do not add computers, museums or science-fiction. CRITICAL composition: heads and every key spell, weapon, animal or gesture entirely within upper55% of image; faces around y15-25%, upper bodies around y25-50%; bottom40% deep blue-black simple cloak/shadow fading into quiet negative space for game text. Left/right40px safe margins at final size: no face/important weapon/animal touches side edges. Show a single composed cinematic scene, not a multi-panel sheet. No borders, card frame, letters, readable runes, logos, watermark, interface or typography. Natural anatomy, clearly separated hands, structurally sound weapons, restrained bloom; faces legible at260px wide. Preserve identity, age, hair, facial features, costume materials and painterly style from references; pose and scenario change for THIS specific upgrade.\nSubject A identity: the same broad muscular middle-aged red-haired, thick red-bearded northern warrior, black fur mantle, weathered leather and iron armor, blue lightning.\nSubject B identity: the same stern silver-haired mature huntress, dark fur mantle and leather gloves, wooden bow, icy blue magic and winter mountains.\nSpecific shared spell scene: A massive blue lightning bolt hits a frozen dark silhouette and splinters it into angular blue ICE shards near the two warriors; huntress and red-bearded warrior coordinate one strike, clear arrow and hammer silhouettes.\nTwo adult figures, equal scale, heads fully inside upper45%, no third main human, lighting links the pair into one coherent painting. Preserve the two separate identities, never merge facial features.\nKeep ALL important anatomy, weapon heads/tips and animal faces within CENTRAL80% of canvas (x10%..90%), not merely inside the outer edge. Leave side columns as background or unimportant cloak only. Place all hands/gesture and spell motifs above y52%; nothing bright or complex below y60%.",
+    "current_gameplay_source_line": "\"shatter_thunder\": {\"gods\": [\"thor\", \"skadi\"], \"name\": \"碎冰之雷\", \"desc\": \"冻结的敌人被雷劈中时碎裂，冰片伤害周围的敌人并叠 2 层霜冻\"},",
+    "input_code_sha256": "cf8ac4eb04350527ea92fc6d7718a3882bee3bce4e278d679f66845fb808c289",
+    "status": "planned"
+  },
+  {
+    "id": "fusion_blood_brothers",
+    "task": "L2",
+    "gods": [
+      "odin",
+      "loki"
+    ],
+    "variant": "fusion",
+    "root": "assets/source/taskL2_fusions_2026-10-20",
+    "target": "assets/sprites/cards/fusion_blood_brothers.png",
+    "references": [
+      "assets/sprites/cards/odin.png",
+      "assets/sprites/cards/loki.png"
+    ],
+    "prompt": "Use case: illustration-story. Asset type: ONE premium game upgrade CARD ILLUSTRATION, portrait 3:5, intended final 720x1200 RGB. Style: richly textured restrained northern myth oil painting / painterly impasto, realistic faces and materials, same collection as attached original portraits, NOT pixel art, NOT anime, no glossy 3D. This is a living myth inside an ancient archive; do not add computers, museums or science-fiction. CRITICAL composition: heads and every key spell, weapon, animal or gesture entirely within upper55% of image; faces around y15-25%, upper bodies around y25-50%; bottom40% deep blue-black simple cloak/shadow fading into quiet negative space for game text. Left/right40px safe margins at final size: no face/important weapon/animal touches side edges. Show a single composed cinematic scene, not a multi-panel sheet. No borders, card frame, letters, readable runes, logos, watermark, interface or typography. Natural anatomy, clearly separated hands, structurally sound weapons, restrained bloom; faces legible at260px wide. Preserve identity, age, hair, facial features, costume materials and painterly style from references; pose and scenario change for THIS specific upgrade.\nSubject A identity: the same elderly long grey-bearded one-eyed northern wanderer, broad dark hat, fur cloak, weathered face, violet magic.\nSubject B identity: the same lean clean-shaven auburn-haired man, sharp intelligent face, dark fur-trimmed leather clothing, orange trickster fire; no horned crown.\nSpecific shared spell scene: The one-eyed elder and auburn-haired man clasp right forearms in a solemn oath, their TWO anatomically clear hands and separate arms framed by violet sigil geometries threaded with orange fire, small muted red oath cord, no gore.\nTwo adult figures, equal scale, heads fully inside upper45%, no third main human, lighting links the pair into one coherent painting. Preserve the two separate identities, never merge facial features.\nKeep ALL important anatomy, weapon heads/tips and animal faces within CENTRAL80% of canvas (x10%..90%), not merely inside the outer edge. Leave side columns as background or unimportant cloak only. Place all hands/gesture and spell motifs above y52%; nothing bright or complex below y60%.",
+    "current_gameplay_source_line": "\"blood_brothers\": {\"gods\": [\"odin\", \"loki\"], \"name\": \"血誓兄弟\", \"desc\": \"符文命中时点燃敌人；被迷惑的敌人每秒叠 1 层符文印记\"},",
+    "input_code_sha256": "cf8ac4eb04350527ea92fc6d7718a3882bee3bce4e278d679f66845fb808c289",
+    "status": "planned"
+  },
+  {
+    "id": "fusion_valhalla",
+    "task": "L2",
+    "gods": [
+      "odin",
+      "freyja"
+    ],
+    "variant": "fusion",
+    "root": "assets/source/taskL2_fusions_2026-10-20",
+    "target": "assets/sprites/cards/fusion_valhalla.png",
+    "references": [
+      "assets/sprites/cards/odin.png",
+      "assets/sprites/cards/freyja.png"
+    ],
+    "prompt": "Use case: illustration-story. Asset type: ONE premium game upgrade CARD ILLUSTRATION, portrait 3:5, intended final 720x1200 RGB. Style: richly textured restrained northern myth oil painting / painterly impasto, realistic faces and materials, same collection as attached original portraits, NOT pixel art, NOT anime, no glossy 3D. This is a living myth inside an ancient archive; do not add computers, museums or science-fiction. CRITICAL composition: heads and every key spell, weapon, animal or gesture entirely within upper55% of image; faces around y15-25%, upper bodies around y25-50%; bottom40% deep blue-black simple cloak/shadow fading into quiet negative space for game text. Left/right40px safe margins at final size: no face/important weapon/animal touches side edges. Show a single composed cinematic scene, not a multi-panel sheet. No borders, card frame, letters, readable runes, logos, watermark, interface or typography. Natural anatomy, clearly separated hands, structurally sound weapons, restrained bloom; faces legible at260px wide. Preserve identity, age, hair, facial features, costume materials and painterly style from references; pose and scenario change for THIS specific upgrade.\nSubject A identity: the same elderly long grey-bearded one-eyed northern wanderer, broad dark hat, fur cloak, weathered face, violet magic.\nSubject B identity: the same mature blonde woman with a strong composed face, dark feather cloak, gold necklace and bronze ornaments, pale gold magic.\nSpecific shared spell scene: The elder and blonde feather-cloaked woman preside over ONE solemn hall with gold-violet light, a single translucent ancient warrior rises between them to fight, ravens and gold feathers secondary. United afterlife recruitment scene, not literal two pasted portraits.\nTwo adult figures, equal scale, heads fully inside upper45%, no third main human, lighting links the pair into one coherent painting. Preserve the two separate identities, never merge facial features.\nKeep ALL important anatomy, weapon heads/tips and animal faces within CENTRAL80% of canvas (x10%..90%), not merely inside the outer edge. Leave side columns as background or unimportant cloak only. Place all hands/gesture and spell motifs above y52%; nothing bright or complex below y60%.",
+    "current_gameplay_source_line": "\"valhalla\": {\"gods\": [\"odin\", \"freyja\"], \"name\": \"英灵殿与弗尔克范格\", \"desc\": \"每个精英死亡时召唤一位英灵，并肩作战 15 秒\"},",
+    "input_code_sha256": "cf8ac4eb04350527ea92fc6d7718a3882bee3bce4e278d679f66845fb808c289",
+    "status": "planned"
+  },
+  {
+    "id": "fusion_baldr_dream",
+    "task": "L2",
+    "gods": [
+      "odin",
+      "baldr"
+    ],
+    "variant": "fusion",
+    "root": "assets/source/taskL2_fusions_2026-10-20",
+    "target": "assets/sprites/cards/fusion_baldr_dream.png",
+    "references": [
+      "assets/sprites/cards/odin.png",
+      "assets/sprites/cards/baldr.png"
+    ],
+    "prompt": "Use case: illustration-story. Asset type: ONE premium game upgrade CARD ILLUSTRATION, portrait 3:5, intended final 720x1200 RGB. Style: richly textured restrained northern myth oil painting / painterly impasto, realistic faces and materials, same collection as attached original portraits, NOT pixel art, NOT anime, no glossy 3D. This is a living myth inside an ancient archive; do not add computers, museums or science-fiction. CRITICAL composition: heads and every key spell, weapon, animal or gesture entirely within upper55% of image; faces around y15-25%, upper bodies around y25-50%; bottom40% deep blue-black simple cloak/shadow fading into quiet negative space for game text. Left/right40px safe margins at final size: no face/important weapon/animal touches side edges. Show a single composed cinematic scene, not a multi-panel sheet. No borders, card frame, letters, readable runes, logos, watermark, interface or typography. Natural anatomy, clearly separated hands, structurally sound weapons, restrained bloom; faces legible at260px wide. Preserve identity, age, hair, facial features, costume materials and painterly style from references; pose and scenario change for THIS specific upgrade.\nSubject A identity: the same elderly long grey-bearded one-eyed northern wanderer, broad dark hat, fur cloak, weathered face, violet magic.\nSubject B identity: the same youthful clean-shaven pale-blond man, calm noble face, cream fur mantle and white-gold clothing, warm ivory light.\nSpecific shared spell scene: The elderly one-eyed wanderer watches a youthful pale-blond man in warm ivory light; a beam intersects violet prophetic abstract marks and flares, quiet foreboding, one scene and intact faces.\nTwo adult figures, equal scale, heads fully inside upper45%, no third main human, lighting links the pair into one coherent painting. Preserve the two separate identities, never merge facial features.\nKeep ALL important anatomy, weapon heads/tips and animal faces within CENTRAL80% of canvas (x10%..90%), not merely inside the outer edge. Leave side columns as background or unimportant cloak only. Place all hands/gesture and spell motifs above y52%; nothing bright or complex below y60%.",
+    "current_gameplay_source_line": "\"baldr_dream\": {\"gods\": [\"odin\", \"baldr\"], \"name\": \"巴德尔之梦\", \"desc\": \"光束命中带符文印记的敌人时立刻引爆印记；符文命中时给敌人挂上光痕\"},",
+    "input_code_sha256": "cf8ac4eb04350527ea92fc6d7718a3882bee3bce4e278d679f66845fb808c289",
+    "status": "planned"
+  },
+  {
+    "id": "fusion_mistletoe",
+    "task": "L2",
+    "gods": [
+      "loki",
+      "baldr"
+    ],
+    "variant": "fusion",
+    "root": "assets/source/taskL2_fusions_2026-10-20",
+    "target": "assets/sprites/cards/fusion_mistletoe.png",
+    "references": [
+      "assets/sprites/cards/loki.png",
+      "assets/sprites/cards/baldr.png"
+    ],
+    "prompt": "Use case: illustration-story. Asset type: ONE premium game upgrade CARD ILLUSTRATION, portrait 3:5, intended final 720x1200 RGB. Style: richly textured restrained northern myth oil painting / painterly impasto, realistic faces and materials, same collection as attached original portraits, NOT pixel art, NOT anime, no glossy 3D. This is a living myth inside an ancient archive; do not add computers, museums or science-fiction. CRITICAL composition: heads and every key spell, weapon, animal or gesture entirely within upper55% of image; faces around y15-25%, upper bodies around y25-50%; bottom40% deep blue-black simple cloak/shadow fading into quiet negative space for game text. Left/right40px safe margins at final size: no face/important weapon/animal touches side edges. Show a single composed cinematic scene, not a multi-panel sheet. No borders, card frame, letters, readable runes, logos, watermark, interface or typography. Natural anatomy, clearly separated hands, structurally sound weapons, restrained bloom; faces legible at260px wide. Preserve identity, age, hair, facial features, costume materials and painterly style from references; pose and scenario change for THIS specific upgrade.\nSubject A identity: the same lean clean-shaven auburn-haired man, sharp intelligent face, dark fur-trimmed leather clothing, orange trickster fire; no horned crown.\nSubject B identity: the same youthful clean-shaven pale-blond man, calm noble face, cream fur mantle and white-gold clothing, warm ivory light.\nSpecific shared spell scene: Between the auburn-haired man and pale-blond youth, a straight ARROW made of a mistletoe twig with small paired green oval leaves and pearl-white berries carries warm sacred light threaded with orange fire. Arrow points sideways, not two weapons or a spear.\nTwo adult figures, equal scale, heads fully inside upper45%, no third main human, lighting links the pair into one coherent painting. Preserve the two separate identities, never merge facial features.\nKeep ALL important anatomy, weapon heads/tips and animal faces within CENTRAL80% of canvas (x10%..90%), not merely inside the outer edge. Leave side columns as background or unimportant cloak only. Place all hands/gesture and spell motifs above y52%; nothing bright or complex below y60%.",
+    "current_gameplay_source_line": "\"mistletoe\": {\"gods\": [\"loki\", \"baldr\"], \"name\": \"槲寄生\", \"desc\": \"光束点燃敌人；带光痕又在灼烧的敌人死亡时，射出一支贯穿的槲寄生之箭\"},",
+    "input_code_sha256": "cf8ac4eb04350527ea92fc6d7718a3882bee3bce4e278d679f66845fb808c289",
+    "status": "planned"
+  },
+  {
+    "id": "fusion_venom",
+    "task": "L2",
+    "gods": [
+      "loki",
+      "skadi"
+    ],
+    "variant": "fusion",
+    "root": "assets/source/taskL2_fusions_2026-10-20",
+    "target": "assets/sprites/cards/fusion_venom.png",
+    "references": [
+      "assets/sprites/cards/loki.png",
+      "assets/sprites/cards/skadi.png"
+    ],
+    "prompt": "Use case: illustration-story. Asset type: ONE premium game upgrade CARD ILLUSTRATION, portrait 3:5, intended final 720x1200 RGB. Style: richly textured restrained northern myth oil painting / painterly impasto, realistic faces and materials, same collection as attached original portraits, NOT pixel art, NOT anime, no glossy 3D. This is a living myth inside an ancient archive; do not add computers, museums or science-fiction. CRITICAL composition: heads and every key spell, weapon, animal or gesture entirely within upper55% of image; faces around y15-25%, upper bodies around y25-50%; bottom40% deep blue-black simple cloak/shadow fading into quiet negative space for game text. Left/right40px safe margins at final size: no face/important weapon/animal touches side edges. Show a single composed cinematic scene, not a multi-panel sheet. No borders, card frame, letters, readable runes, logos, watermark, interface or typography. Natural anatomy, clearly separated hands, structurally sound weapons, restrained bloom; faces legible at260px wide. Preserve identity, age, hair, facial features, costume materials and painterly style from references; pose and scenario change for THIS specific upgrade.\nSubject A identity: the same lean clean-shaven auburn-haired man, sharp intelligent face, dark fur-trimmed leather clothing, orange trickster fire; no horned crown.\nSubject B identity: the same stern silver-haired mature huntress, dark fur mantle and leather gloves, wooden bow, icy blue magic and winter mountains.\nSpecific shared spell scene: The auburn-haired man and silver-haired huntress frame ONE dark coiling snake with one clear head, cold blue frost crust on scales meets orange embers, a tiny poison drop below its fangs; frost and burning coexist, no gore or bound torture victim.\nTwo adult figures, equal scale, heads fully inside upper45%, no third main human, lighting links the pair into one coherent painting. Preserve the two separate identities, never merge facial features.\nKeep ALL important anatomy, weapon heads/tips and animal faces within CENTRAL80% of canvas (x10%..90%), not merely inside the outer edge. Leave side columns as background or unimportant cloak only. Place all hands/gesture and spell motifs above y52%; nothing bright or complex below y60%.",
+    "current_gameplay_source_line": "\"venom\": {\"gods\": [\"loki\", \"skadi\"], \"name\": \"毒蛇之刑\", \"desc\": \"灼烧的敌人每秒叠 1 层霜冻；冻结的敌人受到的灼烧伤害翻倍\"},",
+    "input_code_sha256": "cf8ac4eb04350527ea92fc6d7718a3882bee3bce4e278d679f66845fb808c289",
+    "status": "planned"
+  },
+  {
+    "id": "fusion_andvari",
+    "task": "L2",
+    "gods": [
+      "loki",
+      "ran"
+    ],
+    "variant": "fusion",
+    "root": "assets/source/taskL2_fusions_2026-10-20",
+    "target": "assets/sprites/cards/fusion_andvari.png",
+    "references": [
+      "assets/sprites/cards/loki.png",
+      "assets/sprites/cards/ran.png"
+    ],
+    "prompt": "Use case: illustration-story. Asset type: ONE premium game upgrade CARD ILLUSTRATION, portrait 3:5, intended final 720x1200 RGB. Style: richly textured restrained northern myth oil painting / painterly impasto, realistic faces and materials, same collection as attached original portraits, NOT pixel art, NOT anime, no glossy 3D. This is a living myth inside an ancient archive; do not add computers, museums or science-fiction. CRITICAL composition: heads and every key spell, weapon, animal or gesture entirely within upper55% of image; faces around y15-25%, upper bodies around y25-50%; bottom40% deep blue-black simple cloak/shadow fading into quiet negative space for game text. Left/right40px safe margins at final size: no face/important weapon/animal touches side edges. Show a single composed cinematic scene, not a multi-panel sheet. No borders, card frame, letters, readable runes, logos, watermark, interface or typography. Natural anatomy, clearly separated hands, structurally sound weapons, restrained bloom; faces legible at260px wide. Preserve identity, age, hair, facial features, costume materials and painterly style from references; pose and scenario change for THIS specific upgrade.\nSubject A identity: the same lean clean-shaven auburn-haired man, sharp intelligent face, dark fur-trimmed leather clothing, orange trickster fire; no horned crown.\nSubject B identity: the same pale dark-haired mature sea woman, wet flowing hair, dark teal sea-cloak, rope net and antique gold ornaments, storm-blue water.\nSpecific shared spell scene: The wet dark-haired sea woman holds a weighted woven net while the auburn-haired man lights its captured antique GOLD coins with controlled orange fire; blue water, orange flame and gold in one cohesive composition; net not fused into fingers.\nTwo adult figures, equal scale, heads fully inside upper45%, no third main human, lighting links the pair into one coherent painting. Preserve the two separate identities, never merge facial features.\nKeep ALL important anatomy, weapon heads/tips and animal faces within CENTRAL80% of canvas (x10%..90%), not merely inside the outer edge. Leave side columns as background or unimportant cloak only. Place all hands/gesture and spell motifs above y52%; nothing bright or complex below y60%.",
+    "current_gameplay_source_line": "\"andvari\": {\"gods\": [\"loki\", \"ran\"], \"name\": \"安德瓦利\", \"desc\": \"网里的敌人被点燃；网里被烧死的敌人有几率掉落奖励点\"},",
+    "input_code_sha256": "cf8ac4eb04350527ea92fc6d7718a3882bee3bce4e278d679f66845fb808c289",
+    "status": "planned"
+  },
+  {
+    "id": "fusion_vanir_twins",
+    "task": "L2",
+    "gods": [
+      "freyja",
+      "freyr"
+    ],
+    "variant": "fusion",
+    "root": "assets/source/taskL2_fusions_2026-10-20",
+    "target": "assets/sprites/cards/fusion_vanir_twins.png",
+    "references": [
+      "assets/sprites/cards/freyja.png",
+      "assets/sprites/cards/freyr.png"
+    ],
+    "prompt": "Use case: illustration-story. Asset type: ONE premium game upgrade CARD ILLUSTRATION, portrait 3:5, intended final 720x1200 RGB. Style: richly textured restrained northern myth oil painting / painterly impasto, realistic faces and materials, same collection as attached original portraits, NOT pixel art, NOT anime, no glossy 3D. This is a living myth inside an ancient archive; do not add computers, museums or science-fiction. CRITICAL composition: heads and every key spell, weapon, animal or gesture entirely within upper55% of image; faces around y15-25%, upper bodies around y25-50%; bottom40% deep blue-black simple cloak/shadow fading into quiet negative space for game text. Left/right40px safe margins at final size: no face/important weapon/animal touches side edges. Show a single composed cinematic scene, not a multi-panel sheet. No borders, card frame, letters, readable runes, logos, watermark, interface or typography. Natural anatomy, clearly separated hands, structurally sound weapons, restrained bloom; faces legible at260px wide. Preserve identity, age, hair, facial features, costume materials and painterly style from references; pose and scenario change for THIS specific upgrade.\nSubject A identity: the same mature blonde woman with a strong composed face, dark feather cloak, gold necklace and bronze ornaments, pale gold magic.\nSubject B identity: the same golden-haired bearded mature man, green and gold clothing under a dark fur mantle, bronze leaf ornaments, warm harvest sunlight.\nSpecific shared spell scene: The blonde feather-cloaked woman and golden-haired bearded green-clad man stand shoulder to shoulder, ONE floating golden straight sword crosses one curving gold FEATHER blade, gold selection light at their crossing, warm familial solidarity without romance.\nTwo adult figures, equal scale, heads fully inside upper45%, no third main human, lighting links the pair into one coherent painting. Preserve the two separate identities, never merge facial features.\nKeep ALL important anatomy, weapon heads/tips and animal faces within CENTRAL80% of canvas (x10%..90%), not merely inside the outer edge. Leave side columns as background or unimportant cloak only. Place all hands/gesture and spell motifs above y52%; nothing bright or complex below y60%.",
+    "current_gameplay_source_line": "\"vanir_twins\": {\"gods\": [\"freyja\", \"freyr\"], \"name\": \"华纳双子\", \"desc\": \"每 3 秒一片羽刃离身追击敌人再飞回；飞剑命中的敌人被拣选\"},",
+    "input_code_sha256": "cf8ac4eb04350527ea92fc6d7718a3882bee3bce4e278d679f66845fb808c289",
+    "status": "planned"
+  },
+  {
+    "id": "fusion_serpent_fishing",
+    "task": "L2",
+    "gods": [
+      "thor",
+      "ran"
+    ],
+    "variant": "fusion",
+    "root": "assets/source/taskL2_fusions_2026-10-20",
+    "target": "assets/sprites/cards/fusion_serpent_fishing.png",
+    "references": [
+      "assets/sprites/cards/thor.png",
+      "assets/sprites/cards/ran.png"
+    ],
+    "prompt": "Use case: illustration-story. Asset type: ONE premium game upgrade CARD ILLUSTRATION, portrait 3:5, intended final 720x1200 RGB. Style: richly textured restrained northern myth oil painting / painterly impasto, realistic faces and materials, same collection as attached original portraits, NOT pixel art, NOT anime, no glossy 3D. This is a living myth inside an ancient archive; do not add computers, museums or science-fiction. CRITICAL composition: heads and every key spell, weapon, animal or gesture entirely within upper55% of image; faces around y15-25%, upper bodies around y25-50%; bottom40% deep blue-black simple cloak/shadow fading into quiet negative space for game text. Left/right40px safe margins at final size: no face/important weapon/animal touches side edges. Show a single composed cinematic scene, not a multi-panel sheet. No borders, card frame, letters, readable runes, logos, watermark, interface or typography. Natural anatomy, clearly separated hands, structurally sound weapons, restrained bloom; faces legible at260px wide. Preserve identity, age, hair, facial features, costume materials and painterly style from references; pose and scenario change for THIS specific upgrade.\nSubject A identity: the same broad muscular middle-aged red-haired, thick red-bearded northern warrior, black fur mantle, weathered leather and iron armor, blue lightning.\nSubject B identity: the same pale dark-haired mature sea woman, wet flowing hair, dark teal sea-cloak, rope net and antique gold ornaments, storm-blue water.\nSpecific shared spell scene: The red-bearded warrior and dark-haired sea woman cast a readable rope net over a COILING sea-serpent silhouette amid one cresting blue wave; lightning jumps through all caught water silhouettes in the net, snake not a third human, face anatomy intact.\nTwo adult figures, equal scale, heads fully inside upper45%, no third main human, lighting links the pair into one coherent painting. Preserve the two separate identities, never merge facial features.\nKeep ALL important anatomy, weapon heads/tips and animal faces within CENTRAL80% of canvas (x10%..90%), not merely inside the outer edge. Leave side columns as background or unimportant cloak only. Place all hands/gesture and spell motifs above y52%; nothing bright or complex below y60%.",
+    "current_gameplay_source_line": "\"serpent_fishing\": {\"gods\": [\"thor\", \"ran\"], \"name\": \"钓巨蛇\", \"desc\": \"落雷劈中溺水的敌人时，所有溺水的敌人一起挨雷\"},",
+    "input_code_sha256": "cf8ac4eb04350527ea92fc6d7718a3882bee3bce4e278d679f66845fb808c289",
+    "status": "planned"
+  }
+]

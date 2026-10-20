@@ -1,0 +1,21 @@
+{
+  "id": "skadi_winter",
+  "raw_size": [
+    971,
+    1620
+  ],
+  "raw_mode": "RGB",
+  "output_size": [
+    720,
+    1200
+  ],
+  "mode": "RGB",
+  "operation": "centered aspect crop to3:5, Lanczos resize720x1200, RGB only; no repaint, no artificial background darkening",
+  "candidate_sha256": "59ea0417af0663820901e00661434dba5c6e7a588ac04d2a462b341bc580cea6",
+  "bottom40_luminance": {
+    "mean": 16.0,
+    "pixels_over_100_fraction": 0.0001,
+    "stddev": 7.51
+  },
+  "status": "normalization verified; candidate selected after separate visual review"
+}

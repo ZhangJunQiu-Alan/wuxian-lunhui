@@ -1,0 +1,38 @@
+{
+  "id": "fusion_shatter_thunder",
+  "task": "L2",
+  "gods": [
+    "thor",
+    "skadi"
+  ],
+  "variant": "fusion",
+  "root": "assets/source/taskL2_fusions_2026-10-20",
+  "target": "assets/sprites/cards/fusion_shatter_thunder.png",
+  "references": [
+    {
+      "actual_input": "assets/source/taskL2_fusions_2026-10-20/originals/fusion_shatter_thunder_v02.png",
+      "archive": "references/fusion_shatter_thunder_v02.png",
+      "sha256": "ed46b69b93edfc85ca9dd7bec2975f94a53938ca925a77061afbae7149438f58"
+    }
+  ],
+  "prompt": "Edit this portrait3:5 oil painting. Keep the SAME red-bearded man and SAME silver-haired huntress faces, fur and armor, same oil paint. REMOVE the entire held bow, bowstring and arrow on the right. Huntress now makes a small natural open-palmed ice gesture at her chest x65%, y33%, all five fingers within central area. Man holds a SHORT hammer at chest x42%, y35%. A huge sky lightning bolt strikes ONE SMALL frozen dark humanoid silhouette BETWEEN the two characters x50% y42%, shattering it into crisp blue ice splinters. All bright ice entirely above y51%, no ice foreground. Below y58% only quiet blue-black cloak shadow. Important face/hand/hammer edges safely inside x15%..85%.",
+  "current_gameplay_source_line": "\"shatter_thunder\": {\"gods\": [\"thor\", \"skadi\"], \"name\": \"碎冰之雷\", \"desc\": \"冻结的敌人被雷劈中时碎裂，冰片伤害周围的敌人并叠 2 层霜冻\"},",
+  "input_code_sha256": "cf8ac4eb04350527ea92fc6d7718a3882bee3bce4e278d679f66845fb808c289",
+  "status": "approved",
+  "version": "v03",
+  "tool": "OpenAI built-in image_gen",
+  "raw_output_path": "/Users/zhangjunqiu/.codex/generated_images/01a14093-604c-72e3-b0c2-585e428c4824/exec-c719e166-32ec-4f30-a604-51604be74c6e.png",
+  "original": "originals/fusion_shatter_thunder_v03.png",
+  "original_sha256": "3faf66842333054fae1aa9525ae5d798d22a4ccb81df421daecfe625d3f752a3",
+  "commercial_basis": "https://openai.com/policies/terms-of-use/",
+  "review": {
+    "visual_review": "取消靠边长弓后，双人主脸、五指施法手和短柄锤清晰；雷击冻结目标与冰片同场景集中，缩略、遮罩、安全边通过。",
+    "checks": [
+      "source anatomy/weapon/animal",
+      "260 thumbnail",
+      "bottom45 mask",
+      "primary safe area",
+      "two identities"
+    ]
+  }
+}

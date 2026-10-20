@@ -1,0 +1,21 @@
+{
+  "id": "freyja_brisingamen",
+  "raw_size": [
+    971,
+    1619
+  ],
+  "raw_mode": "RGB",
+  "output_size": [
+    720,
+    1200
+  ],
+  "mode": "RGB",
+  "operation": "centered aspect crop to3:5, Lanczos resize720x1200, RGB only; no repaint, no artificial background darkening",
+  "candidate_sha256": "9dd9510c05aad3dc4b5c6a20cbe549c29b1e814bef94e5ee651e7bd3d9ed8ef1",
+  "bottom40_luminance": {
+    "mean": 19.43,
+    "pixels_over_100_fraction": 0.0015,
+    "stddev": 10.38
+  },
+  "status": "normalization verified; candidate selected after separate visual review"
+}

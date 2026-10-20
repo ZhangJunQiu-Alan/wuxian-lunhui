@@ -1,0 +1,16 @@
+{
+  "id": "odin_nights",
+  "selected_version": "v01",
+  "formal": "assets/sprites/cards/odin_nights.png",
+  "sha256": "5e8da4dd28c2efe07c4aec2ff40f00e26fe1ee6f639d0383374685b6a701000b",
+  "review": {
+    "visual_review": "几何符文阵与目标印记、世界树根和长枪道路区别清楚；主角脸/手和主阵中心在安全区，远右小节点为背景延伸。",
+    "checks": [
+      "full source structure reviewed",
+      "260px safe and masked previews reviewed",
+      "base identity/style compared",
+      "critical recognition features within safe region; background extends to bleed"
+    ]
+  },
+  "mipmaps": "offline reference chain only; Godot import mipmaps must be enabled by integration agent"
+}

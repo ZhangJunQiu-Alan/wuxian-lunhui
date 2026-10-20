@@ -1,0 +1,21 @@
+{
+  "id": "fusion_blood_brothers",
+  "raw_size": [
+    972,
+    1619
+  ],
+  "raw_mode": "RGB",
+  "output_size": [
+    720,
+    1200
+  ],
+  "mode": "RGB",
+  "operation": "centered aspect crop to3:5, Lanczos resize720x1200, RGB only; no repaint, no artificial background darkening",
+  "candidate_sha256": "e6475a762fa0f0516d635175c7be4681bd7734ca207746d3d2631b9314aa0dbd",
+  "bottom40_luminance": {
+    "mean": 14.02,
+    "pixels_over_100_fraction": 0.0001,
+    "stddev": 7.8
+  },
+  "status": "normalization verified; candidate selected after separate visual review"
+}

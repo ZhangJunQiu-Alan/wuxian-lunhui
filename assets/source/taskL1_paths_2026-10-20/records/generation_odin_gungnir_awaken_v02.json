@@ -1,0 +1,35 @@
+{
+  "id": "odin_gungnir_awaken",
+  "task": "L1",
+  "god": "odin",
+  "variant": "awaken",
+  "root": "assets/source/taskL1_paths_2026-10-20",
+  "target": "assets/sprites/cards/odin_gungnir_awaken.png",
+  "references": [
+    {
+      "actual_input": "assets/source/taskL1_paths_2026-10-20/originals/odin_gungnir_awaken_v01.png",
+      "archive": "references/odin_gungnir_awaken_v01.png",
+      "sha256": "1f2e3a57ac8bd810518183cc41160da5b570c1daee32aef252117ee873924adb"
+    }
+  ],
+  "prompt": "Edit ONLY the floating spear afterimage on the FAR RIGHT of this existing oil painting: relocate that COMPLETE small spearhead and its trail toward the upper center, about25% image width leftwards. It must be fully inside x20%..80%, y10%..45%. Keep three successive spear positions, all straight individual spear shafts, smooth TURNING magical trail, not one physically bent weapon. Preserve exact main elderly one-eyed man, hat, beard, foreground hand, main straight spear, ancestor spirits, original painterly light and dark bottom40%. No new figures, no text, no border. Main face and key tips must fit40px side-safe borders at720px final width.",
+  "current_gameplay_source_line": "\"odin_gungnir_awaken\": {\"kind\": \"awaken\", \"god\": \"odin\", \"path\": \"odin_gungnir\", \"name\": \"觉醒·永不落空\", \"desc\": \"长枪贯穿后自动转向下一个敌人，连续贯穿 3 次。每击杀 100 个敌人召唤一位英灵 20 秒\"},",
+  "input_code_sha256": "e2b900caf6dcee1af417fb90932a48e0313bf8e726a5f7d4141ed8d8e332e4db",
+  "status": "approved",
+  "version": "v02",
+  "tool": "OpenAI built-in image_gen",
+  "raw_output_path": "/Users/zhangjunqiu/.codex/generated_images/01a14093-604c-72e3-b0c2-585e428c4824/exec-29baf3e5-62fe-489c-8450-d9bc305651d6.png",
+  "original": "originals/odin_gungnir_awaken_v02.png",
+  "original_sha256": "123a83d259655f85000f6c13caf65f02012ae99abfda9af33ce4cfe610147d4b",
+  "commercial_basis": "https://openai.com/policies/terms-of-use/",
+  "review": {
+    "visual_review": "最右枪尖已向内收拢，三条直枪相位配弯曲魔法轨迹，脸/手与关键枪尖安全边及遮罩通过；英灵为背景。",
+    "checks": [
+      "source",
+      "260px",
+      "mask",
+      "safe guide",
+      "path/awaken comparison"
+    ]
+  }
+}

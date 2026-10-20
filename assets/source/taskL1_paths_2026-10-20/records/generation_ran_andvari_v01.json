@@ -1,0 +1,35 @@
+{
+  "id": "ran_andvari",
+  "task": "L1",
+  "god": "ran",
+  "variant": "path",
+  "root": "assets/source/taskL1_paths_2026-10-20",
+  "target": "assets/sprites/cards/ran_andvari.png",
+  "references": [
+    {
+      "actual_input": "assets/sprites/cards/ran.png",
+      "archive": "references/ran.png",
+      "sha256": "7c1cd8ad824d24219c95a76e5bb1f62546c274674ae7315c6c940690cb446a0e"
+    }
+  ],
+  "prompt": "Use case: illustration-story. Asset type: ONE premium game upgrade CARD ILLUSTRATION, portrait 3:5, intended final 720x1200 RGB. Style: richly textured restrained northern myth oil painting / painterly impasto, realistic faces and materials, same collection as attached original portraits, NOT pixel art, NOT anime, no glossy 3D. This is a living myth inside an ancient archive; do not add computers, museums or science-fiction. CRITICAL composition: heads and every key spell, weapon, animal or gesture entirely within upper55% of image; faces around y15-25%, upper bodies around y25-50%; bottom40% deep blue-black simple cloak/shadow fading into quiet negative space for game text. Left/right40px safe margins at final size: no face/important weapon/animal touches side edges. Show a single composed cinematic scene, not a multi-panel sheet. No borders, card frame, letters, readable runes, logos, watermark, interface or typography. Natural anatomy, clearly separated hands, structurally sound weapons, restrained bloom; faces legible at260px wide. Preserve identity, age, hair, facial features, costume materials and painterly style from references; pose and scenario change for THIS specific upgrade.\nSubject identity: the same pale dark-haired mature sea woman, wet flowing hair, dark teal sea-cloak, rope net and antique gold ornaments, storm-blue water.\nSpecific upgrade scene: The woman stretches a weighted ROPE NET between her hands at upper chest level, grounded woven mesh with a few small captured cool-blue experience-like lights. Net focal, not bright gold yet.\nThis is a DISTINCT PATH illustration. Show this road motif clearly, not the generic base portrait again.\nKeep ALL important anatomy, weapon heads/tips and animal faces within CENTRAL80% of canvas (x10%..90%), not merely inside the outer edge. Leave side columns as background or unimportant cloak only. Place all hands/gesture and spell motifs above y52%; nothing bright or complex below y60%.",
+  "current_gameplay_source_line": "\"ran_andvari\": {\"kind\": \"path\", \"god\": \"ran\", \"name\": \"安德瓦利之网\", \"desc\": \"网留在地上 3 秒，网里的敌人每秒受伤；网里被打死的敌人掉落的经验翻倍\"},",
+  "input_code_sha256": "e2b900caf6dcee1af417fb90932a48e0313bf8e726a5f7d4141ed8d8e332e4db",
+  "status": "approved",
+  "version": "v01",
+  "tool": "OpenAI built-in image_gen",
+  "raw_output_path": "/Users/zhangjunqiu/.codex/generated_images/01a14093-604c-72e3-b0c2-585e428c4824/exec-1a5af06c-322c-4955-abfa-1823e5721baf.png",
+  "original": "originals/ran_andvari_v01.png",
+  "original_sha256": "de18ae621c6b11a241594646b54e7c00e11fc3ec74347246d606804f46a505d5",
+  "commercial_basis": "https://openai.com/policies/terms-of-use/",
+  "review": {
+    "visual_review": "双手分离握网，网格、重坠和三处蓝光可辨，缩略与遮罩下主题保留，底部暗简。",
+    "checks": [
+      "720 source anatomy",
+      "260 thumbnail",
+      "bottom45 mask",
+      "primary safe margin",
+      "reference identity"
+    ]
+  }
+}

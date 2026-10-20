@@ -1,0 +1,35 @@
+{
+  "id": "ran_waves_awaken",
+  "task": "L1",
+  "god": "ran",
+  "variant": "awaken",
+  "root": "assets/source/taskL1_paths_2026-10-20",
+  "target": "assets/sprites/cards/ran_waves_awaken.png",
+  "references": [
+    {
+      "actual_input": "assets/source/taskL1_paths_2026-10-20/originals/ran_waves_awaken_v02.png",
+      "archive": "references/ran_waves_awaken_v02.png",
+      "sha256": "4d8bb8f6dad8743dd919da6fe28b2ab7ab8070f62baff933598877afaab94b79"
+    }
+  ],
+  "prompt": "Edit the attached oil painting, SAME sea woman, face, hair, nine curling blue waves and dark lower half. Change ONLY pose of BOTH arms. Bring BOTH hands together in front of upper chest at canvas x45%..65%, y32%..42%, relaxed natural five fingers slightly overlapping but clearly distinct. DELETE the arm and hand at the far RIGHT EDGE of the image completely; replace far right edge with blue wave water. No hands outside central half. Keep nine wave crests and oil paint unchanged. No text.",
+  "current_gameplay_source_line": "\"ran_waves_awaken\": {\"kind\": \"awaken\", \"god\": \"ran\", \"path\": \"ran_waves\", \"name\": \"觉醒·九位浪女\", \"desc\": \"每 12 秒，九道浪从四面八方冲向你所在的位置。受到伤害时 20% 几率把攻击者拖进网里\"},",
+  "input_code_sha256": "e2b900caf6dcee1af417fb90932a48e0313bf8e726a5f7d4141ed8d8e332e4db",
+  "status": "approved",
+  "version": "v03",
+  "tool": "OpenAI built-in image_gen",
+  "raw_output_path": "/Users/zhangjunqiu/.codex/generated_images/01a14093-604c-72e3-b0c2-585e428c4824/exec-61e59b1f-83d4-420b-8f96-62e38d5521ae.png",
+  "original": "originals/ran_waves_awaken_v03.png",
+  "original_sha256": "b3b8479d57014550e602f9b6969c9fe4318412471ef05ebcdc9be2f2601948db",
+  "commercial_basis": "https://openai.com/policies/terms-of-use/",
+  "review": {
+    "visual_review": "双手胸前交叠结构合理、远侧手已移除；九个卷浪与原图海神身份相同，260及文字遮罩下清楚，前景渐隐水纹不夺主视觉。",
+    "checks": [
+      "source anatomy",
+      "260 thumbnail",
+      "bottom45 mask",
+      "primary safe area",
+      "reference identity"
+    ]
+  }
+}

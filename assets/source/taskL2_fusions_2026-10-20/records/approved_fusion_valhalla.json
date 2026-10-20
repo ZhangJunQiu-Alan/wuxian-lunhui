@@ -1,0 +1,17 @@
+{
+  "id": "fusion_valhalla",
+  "selected_version": "v02",
+  "formal": "assets/sprites/cards/fusion_valhalla.png",
+  "sha256": "e50503cd66315b34edf3233e3061f9b2fca205ca5597f6820b7d113d9f0f39d3",
+  "review": {
+    "visual_review": "英灵已缩小为双人中间的次要召唤灵，剑盾结构完整、双主角与厅堂明确；下40%暗简，缩略、遮罩、安全边通过。",
+    "checks": [
+      "source anatomy/weapon/animal",
+      "260 thumbnail",
+      "bottom45 mask",
+      "primary safe area",
+      "two identities"
+    ]
+  },
+  "mipmaps": "offline reference chain only; Godot import mipmaps must be enabled by integration agent"
+}

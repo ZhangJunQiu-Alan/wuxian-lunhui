@@ -1,0 +1,21 @@
+{
+  "id": "loki_road_awaken",
+  "raw_size": [
+    971,
+    1619
+  ],
+  "raw_mode": "RGB",
+  "output_size": [
+    720,
+    1200
+  ],
+  "mode": "RGB",
+  "operation": "centered aspect crop to3:5, Lanczos resize720x1200, RGB only; no repaint, no artificial background darkening",
+  "candidate_sha256": "cc67712057f8901593c981e4cfebc325fdc78314799531b57c0ef503cd069e11",
+  "bottom40_luminance": {
+    "mean": 8.14,
+    "pixels_over_100_fraction": 0.0001,
+    "stddev": 8.45
+  },
+  "status": "normalization verified; candidate selected after separate visual review"
+}
