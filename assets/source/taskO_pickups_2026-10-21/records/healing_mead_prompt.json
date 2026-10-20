@@ -1,0 +1,9 @@
+{
+  "tool": "built-in image_gen",
+  "prompt": "Use case: stylized-concept. Asset type: tiny native pixel-art collectible sprite for an existing Norse mythology top-down survivor game. Match the attached existing chest, XP gemstone and apple references: dark single-pixel outline, crisp stepped pixel clusters, cold muted colors with warm magic accents, limited palette, top-left light. Render a SINGLE centered item as a 32 by 32 logical pixel sprite magnified by nearest-neighbor to fill the image; every logical pixel is a flat square, no antialiasing, no photographic detail. Leave at least 3 logical pixels clear margin. Truly transparent background. No cast floor shadow, halo, floating particles, lettering, text, watermark, UI or extra objects. Must read instantly at 32px. Subject: A squat amber glass healing mead bottle, short narrow neck, chunky cork, iron shoulder ring and a tiny warm red wax seal. Rounded belly holding golden honey liquid; clear readable silhouette unlike a gemstone. Medieval Norse crafted object, no modern medical cross.",
+  "references": [
+    "assets/sprites/pickups/chest_closed.png",
+    "assets/sprites/pickups/xp_gem_large.png",
+    "assets/sprites/effects/gods/pickup_apple.png"
+  ]
+}

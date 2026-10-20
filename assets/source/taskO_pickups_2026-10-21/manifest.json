@@ -1,0 +1,87 @@
+{
+  "assets": [
+    {
+      "id": "healing_mead",
+      "file": "assets/sprites/pickups/healing_mead.png",
+      "size": [
+        32,
+        32
+      ],
+      "source_size": [
+        1254,
+        1254
+      ],
+      "source": "assets/source/taskO_pickups_2026-10-21/originals/healing_mead_v01.png",
+      "crop": [
+        276,
+        175,
+        978,
+        1107
+      ],
+      "colors": 31,
+      "alpha": [
+        0,
+        255
+      ],
+      "bbox": [
+        6,
+        3,
+        26,
+        29
+      ],
+      "sha256": "749c0329228ee7255cfa795aab2d98a30ce4aba5706e69ad981e53860910d74a",
+      "source_sha256": "ad78d1edf8405bd79f8bcafe2ee6b89e162248111cb548ad7e79f0b6f0b4b3da",
+      "checks": {
+        "size": true,
+        "binary_alpha": true,
+        "palette": true,
+        "margin": true
+      }
+    },
+    {
+      "id": "soul_magnet",
+      "file": "assets/sprites/pickups/soul_magnet.png",
+      "size": [
+        32,
+        32
+      ],
+      "source_size": [
+        1254,
+        1254
+      ],
+      "source": "assets/source/taskO_pickups_2026-10-21/originals/soul_magnet_v01.png",
+      "crop": [
+        267,
+        221,
+        988,
+        1062
+      ],
+      "colors": 31,
+      "alpha": [
+        0,
+        255
+      ],
+      "bbox": [
+        5,
+        3,
+        27,
+        29
+      ],
+      "sha256": "c32139a76aef459e26e4841da005d2715d8f4345d0192f3765e1c9e27fdd0b21",
+      "source_sha256": "2964dd0d1ab1b216e001c8bd4892c8e5ebb89fb8dd3e38b3d16f4fbeb4c62bfe",
+      "checks": {
+        "size": true,
+        "binary_alpha": true,
+        "palette": true,
+        "margin": true
+      }
+    }
+  ],
+  "processing": "Alpha>=128 bounding crop; fit inside26x26 NEAREST; median-cut32 colors; binary alpha; center32x32. Generated originals are not native32px.",
+  "license": "OpenAI output Terms of Use; see assets/LICENSES.md",
+  "references": {
+    "assets/sprites/pickups/chest_closed.png": "859c78b0f3ba678abf973f6214169b14643aa4f2adacc8a2580a7f8c379cd192",
+    "assets/sprites/pickups/xp_gem_large.png": "6535412bb442638feacfb28947cba9ea8146dd02247413b9417da8bb03dfc5c5",
+    "assets/sprites/effects/gods/pickup_apple.png": "fbf4887468e4a1be760c276a735d26116b7136438373e8988f7aa6f8384ce7ee"
+  }
+}

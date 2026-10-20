@@ -75,6 +75,7 @@ func _ready() -> void:
 	player.died.connect(_on_player_died)
 	player.leveled_up.connect(_on_player_leveled_up)
 	MetaDB.apply(player)  # 主神空间购买的永久强化
+	add_child(SupplyDrops.new())
 	if level_data.map.has("mist"):  # 第 2 关的冥雾
 		var mist := Mist.new()
 		mist.player = player

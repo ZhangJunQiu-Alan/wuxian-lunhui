@@ -1,0 +1,51 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+ERROR: Cannot open file 'res://.godot/imported/NotoSansSC-Regular.otf-c0c85f3b3b2ad6d96b65df5f3103bb43.fontdata'.
+   at: load (core/io/resource_format_binary.cpp:1156)
+ERROR: Failed loading resource: res://.godot/imported/NotoSansSC-Regular.otf-c0c85f3b3b2ad6d96b65df5f3103bb43.fontdata.
+   at: _load (core/io/resource_loader.cpp:317)
+ERROR: Failed loading resource: res://assets/fonts/NotoSansSC-Regular.otf.
+   at: _load (core/io/resource_loader.cpp:317)
+ERROR: Error loading custom project font 'res://assets/fonts/NotoSansSC-Regular.otf'
+   at: initialize_theme (scene/theme/theme_db.cpp:84)
+SCRIPT ERROR: Parse Error: Identifier "LevelDB" not declared in the current scope.
+          at: GDScript::reload (res://scripts/core/save_data.gd:70)
+SCRIPT ERROR: Parse Error: Identifier "MetaDB" not declared in the current scope.
+          at: GDScript::reload (res://scripts/core/save_data.gd:96)
+SCRIPT ERROR: Parse Error: Identifier "MetaDB" not declared in the current scope.
+          at: GDScript::reload (res://scripts/core/save_data.gd:98)
+SCRIPT ERROR: Parse Error: Cannot infer the type of "cost" variable because the value doesn't have a set type.
+          at: GDScript::reload (res://scripts/core/save_data.gd:98)
+SCRIPT ERROR: Parse Error: Identifier "LevelDB" not declared in the current scope.
+          at: GDScript::reload (res://scripts/core/save_data.gd:150)
+SCRIPT ERROR: Parse Error: Identifier "LevelDB" not declared in the current scope.
+          at: GDScript::reload (res://scripts/core/save_data.gd:150)
+SCRIPT ERROR: Parse Error: Identifier "LevelDB" not declared in the current scope.
+          at: GDScript::reload (res://scripts/core/save_data.gd:151)
+ERROR: Failed to load script "res://scripts/core/save_data.gd" with error "Parse error".
+   at: load (modules/gdscript/gdscript_resource_format.cpp:46)
+ERROR: Failed to instantiate an autoload, script 'res://scripts/core/save_data.gd' does not inherit from 'Node'.
+   at: start (main/main.cpp:4539)
+ERROR: Cannot open file 'res://locale/text.en.translation'.
+   at: load (core/io/resource_format_binary.cpp:1156)
+   GDScript backtrace (most recent call first):
+       [0] _apply_language (res://scripts/core/settings.gd:100)
+       [1] _init (res://scripts/core/settings.gd:42)
+ERROR: Failed loading resource: res://locale/text.en.translation.
+   at: _load (core/io/resource_loader.cpp:317)
+   GDScript backtrace (most recent call first):
+       [0] _apply_language (res://scripts/core/settings.gd:100)
+       [1] _init (res://scripts/core/settings.gd:42)
+SCRIPT ERROR: Invalid access to property or key 'locale' on a base object of type 'null instance'.
+          at: _apply_language (res://scripts/core/settings.gd:101)
+          GDScript backtrace (most recent call first):
+              [0] _apply_language (res://scripts/core/settings.gd:101)
+              [1] _init (res://scripts/core/settings.gd:42)
+ERROR: Node not found: "Save" (relative to "/root").
+   at: get_node (scene/main/node.cpp:1976)
+   GDScript backtrace (most recent call first):
+       [0] run (res://tools/test_run_supplies.gd:67)
+SCRIPT ERROR: Invalid access to property or key 'path' on a base object of type 'null instance'.
+          at: run (res://tools/test_run_supplies.gd:67)
+          GDScript backtrace (most recent call first):
+              [0] run (res://tools/test_run_supplies.gd:67)

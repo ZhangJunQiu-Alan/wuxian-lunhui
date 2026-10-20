@@ -12,6 +12,21 @@ var player: Player
 var _attracted := false
 
 
+func _enter_tree() -> void:
+	add_to_group("xp_gems")
+
+
+static func attract_all(owner_player: Player) -> int:
+	if not is_instance_valid(owner_player) or not owner_player.is_inside_tree():
+		return 0
+	var count := 0
+	for gem: XpGem in owner_player.get_tree().get_nodes_in_group("xp_gems"):
+		if gem.player == owner_player and not gem.is_queued_for_deletion() and not gem._attracted:
+			gem._attracted = true
+			count += 1
+	return count
+
+
 func _process(delta: float) -> void:
 	if not is_instance_valid(player):
 		return

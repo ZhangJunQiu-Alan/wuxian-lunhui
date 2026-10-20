@@ -1,0 +1,14 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+SCRIPT ERROR: Parse Error: "xp_script" is a variable but does not contain a type.
+          at: GDScript::reload (res://tools/test_run_supplies.gd:34)
+SCRIPT ERROR: Parse Error: "heal_script" is a variable but does not contain a type.
+          at: GDScript::reload (res://tools/test_run_supplies.gd:34)
+SCRIPT ERROR: Parse Error: "chest_script" is a variable but does not contain a type.
+          at: GDScript::reload (res://tools/test_run_supplies.gd:34)
+SCRIPT ERROR: Parse Error: Could not find type "AudioStreamplayer_script" in the current scope.
+          at: GDScript::reload (res://tools/test_run_supplies.gd:56)
+SCRIPT ERROR: Parse Error: "drop_script" is a variable but does not contain a type.
+          at: GDScript::reload (res://tools/test_run_supplies.gd:97)
+ERROR: Failed to load script "res://tools/test_run_supplies.gd" with error "Parse error".
+   at: load (modules/gdscript/gdscript_resource_format.cpp:46)

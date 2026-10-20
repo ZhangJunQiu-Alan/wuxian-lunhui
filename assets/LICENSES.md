@@ -326,3 +326,7 @@ K7交付（2026-10-20）：五段原文结局数据、命运契约与28个待接
 ### L1/L2 卡面代码接入及验收（2026-10-20）
 
 用户另行授权代码接入、实际验收、commit/push及冗余清理。沿用Godot4.7.2 MIT许可 https://godotengine.org/license/ ，用于导入本批60张PNG并以实际Game升级界面受控验证；Pillow MIT-CMU仅裁截图作对照，无新图像生成/账号/付费API。真实纹理均有10级mipmap，UI线性+mipmap；修复长黄金网觉醒说明标签越框，标题24/说明14/间隔6。当前工作区及排除其他未提交代码的独立候选各1901项0失败、61张实际渲染截图，检查60个卡牌ID、3种窗口宽度、文字边界、道路/觉醒/融合选择、四选一、悬停、回退与恢复。早期失败日志和截图保留，最终无脚本/资源加载/退出泄漏错误；macOS输入法mach-port诊断单列。未做完整战斗通关、其他硬件/DPI或语言验收。详情source/taskL1_paths_2026-10-20/integration_2026-10-20/RESULTS.md。推送与清理的实际结果另见本批publication/cleanup记录，清理仅限本批可重建副本及已归档且哈希相同的外部生成副本，全部项目原图、退稿及来源证据保留。
+
+
+### O 通用局内补给制作（2026-10-21）
+内置 image_gen 制作蜜酒与聚魂符石，仅参考本项目已有经验宝石、宝箱与苹果。已重新核验 OpenAI Terms of Use（https://openai.com/policies/terms-of-use/ ，2026-01-01生效，Content/Ownership）：用户与OpenAI之间输出归用户，遵守条款可用于商业项目，输出可能不唯一。沿用 Pillow MIT-CMU 做裁帧、近邻缩放、色板及二值透明归一；Godot MIT 做实际渲染和测试。不增加账号或付费API。原图、实际Prompt、参考哈希、加工及验收记录位于 source/taskO_pickups_2026-10-21/；开工记录不代表验收完成。

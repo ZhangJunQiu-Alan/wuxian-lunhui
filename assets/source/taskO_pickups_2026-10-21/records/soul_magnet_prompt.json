@@ -1,0 +1,9 @@
+{
+  "tool": "built-in image_gen",
+  "prompt": "Use case: stylized-concept. Asset type: tiny native pixel-art collectible sprite for an existing Norse mythology top-down survivor game. Match the attached existing chest, XP gemstone and apple references: dark single-pixel outline, crisp stepped pixel clusters, cold muted colors with warm magic accents, limited palette, top-left light. Render a SINGLE centered item as a 32 by 32 logical pixel sprite magnified by nearest-neighbor to fill the image; every logical pixel is a flat square, no antialiasing, no photographic detail. Leave at least 3 logical pixels clear margin. Truly transparent background. No cast floor shadow, halo, floating particles, lettering, text, watermark, UI or extra objects. Must read instantly at 32px. Subject: A chunky upright icy blue-gray carved runestone amulet with a strong luminous cyan inward spiral cut into its face, ONE integral rune spiral, chipped stone corners and restrained bronze base band. Strong rounded-square silhouette distinct from a pointy XP gem. Norse soul-gathering magic, no horseshoe magnet, no Latin letters.",
+  "references": [
+    "assets/sprites/pickups/chest_closed.png",
+    "assets/sprites/pickups/xp_gem_large.png",
+    "assets/sprites/effects/gods/pickup_apple.png"
+  ]
+}
