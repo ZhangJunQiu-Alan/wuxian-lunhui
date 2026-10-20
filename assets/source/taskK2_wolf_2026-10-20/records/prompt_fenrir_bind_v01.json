@@ -1,0 +1,18 @@
+{
+  "tool": "image_gen.imagegen",
+  "id": "fenrir_bind",
+  "task": "K2",
+  "frame_size": [
+    192,
+    192
+  ],
+  "frames": 4,
+  "fps": 8,
+  "loop": true,
+  "alpha": "soft",
+  "prompt": "Use case: stylized-concept. Asset: transparent small pixel-art game binding effect. Image1 is palette/style reference only, do NOT draw the wolf. Four frames in a SQUARE2x2 equal logical192x192 cell atlas, no gutters. A thin braided magical restraint of aged PALE GOLD/IVORY ribbon strands with a few bronze twists, wrapping around an ABSENT wolf's torso, forming a loose upright elliptical cage seen in three-quarter view. Narrow interlaced strands only, not thick iron chains. Left/right and upper/lower curved rope pieces cross at tiny knots; center logical rectangle x56..136,y54..138 remains completely TRANSPARENT so the wolf and player remain readable. No solid disk, no filled aura, no body. Loop4phases: braid tightens slightly, tiny restrained gleam travels from bottom-left toward upper-right, peaks, fades back. Exact same number of threads/knots and elliptical envelope each frame, no scaling pulse or popping endpoints. Gold is restrained warm accent on the game's dark palette; pixel clusters crisp and sparse, subtle edge light only, no airbrush fog. Per-cell generous transparent margin12 logical pixels. No runic letters, text, watermark, circular warning ring, loose decorative background, full-screen glow or cast shadow. True alpha transparency. Keep effect thin, readable and low-occlusion.",
+  "refs": [
+    "/Users/zhangjunqiu/Desktop/无限恐怖/assets/sprites/bosses/fenrir.png"
+  ],
+  "transparent_background": true
+}

@@ -1,0 +1,20 @@
+{
+  "version": "K5-reuse-v1.3",
+  "terrain": "12binaryalpha masks reuse midgard/path_edge_*.png with existingburnt_grass pixels; no12newformalgrassedgePNGs",
+  "terrain_load": "new VigridMap explicitlyloadexternalmaskimages before MapLayer._make_edges; no copytoruntimedir",
+  "distant_battle": "512x128x4 compositedrender ofexistingworldallies/giants, no newcharacters;decorativehalfscale exception, transparent24RGB/8alpha; not gameplay enemies",
+  "collision": "horizon[-768,-2480,1536,128] nonwalkable and noninteractive; no newquests or deathclaims",
+  "border": "reuse K3firewallband plus authoritative walk_rect; inwardclearside, fourcornerscontinuouspath",
+  "new_formal_png": [
+    "giant_tread",
+    "distant_battle"
+  ],
+  "unchanged": [
+    "K0 layout",
+    "K1",
+    "K2",
+    "K3",
+    "K4"
+  ],
+  "status": "assetinterface_not_codeimplementation"
+}

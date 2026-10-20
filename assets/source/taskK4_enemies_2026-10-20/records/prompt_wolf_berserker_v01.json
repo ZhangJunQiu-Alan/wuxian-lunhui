@@ -1,0 +1,18 @@
+{
+  "tool": "image_gen.imagegen",
+  "id": "wolf_berserker",
+  "version": "v01",
+  "frame_size": [
+    64,
+    64
+  ],
+  "frames": 1,
+  "fps": 0,
+  "loop": false,
+  "refs": [
+    "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskK4_enemies_2026-10-20/references/swordsman.png",
+    "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskK4_enemies_2026-10-20/references/frost_veteran_8x.png"
+  ],
+  "prompt": "Use case: stylized-concept, new in-world small game enemy. References indicate project's human64pixel scale and Norse fur/iron material, NOT samecharacter. ONE living HUMAN wolf-pelt warrior64x64 sprite, three-quarter RIGHT-facing, fullbody standingcombative stance. Powerful adult HUMAN man, tanweatheredface visible under ash-grey WOLF PELT hood; empty dead animal scalp draped on top as garment, smallpelt ears, wolfuppermuzzle above forehead, HUMAN face below. Human handswithfivefingers holding ONE short iron bearded AXE in near/right-facing hand, bladeheldlow andclose. Broadshoulders but human proportions about58pxtall, TWO human legs wearing dark wool trousers, leatherputtees/brownboots. Greybrownfur shouldercloak, dark leatherlamellarvest, rust-red waistcloth, old bronze belt, nohornedhelmet. Clearly HUMAN warrior wearing wolfskin, NOT a werewolf, wolfman/animalface/quadruped/blueundead/frostgiant. Rootx32, footbaseline62, >=2pxalpha border inclaxe, crisp tinyprojectpixelclusters <=48RGB greyfur/rustred/leather/darkiron/tanskin, upper-left lighting. Emptytransparentbackground binaryalpha, no magicglow/scenery/ground/shadow/text/labels/grid/frame/watermark.",
+  "transparent_background": true
+}

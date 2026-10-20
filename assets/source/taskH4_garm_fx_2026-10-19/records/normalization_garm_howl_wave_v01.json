@@ -1,0 +1,68 @@
+{
+  "input": "originals/garm_howl_wave_v01.png",
+  "input_sha256": "7f1ed9e707ca403b018b706b8e419ead8bee0c8328a9fa9cbc449e665a6c4426",
+  "raw_size": [
+    1254,
+    1254
+  ],
+  "grid": [
+    2,
+    2
+  ],
+  "cut_boxes": [
+    [
+      160,
+      172,
+      456,
+      474
+    ],
+    [
+      31,
+      65,
+      581,
+      582
+    ],
+    [
+      30,
+      4,
+      622,
+      590
+    ],
+    [
+      39,
+      15,
+      609,
+      579
+    ]
+  ],
+  "single_common_scale": 0.20945945945945946,
+  "placements": [
+    [
+      33,
+      32,
+      62,
+      63
+    ],
+    [
+      6,
+      10,
+      115,
+      108
+    ],
+    [
+      2,
+      2,
+      124,
+      123
+    ],
+    [
+      4,
+      5,
+      119,
+      118
+    ]
+  ],
+  "operations": "original alpha threshold/quantization, source frame cuts, single common nearest resize, source-derived shared palette, whole-frame placement; no character/effect drawing",
+  "candidate": "candidates/garm_howl_wave_v01.png",
+  "candidate_sha256": "698f947a546f3e6fd3c6ad8e34771cd9572ec1438b8a94b105cb87608defaec8"
+}

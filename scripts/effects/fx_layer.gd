@@ -21,6 +21,7 @@ var _numbers := []    # 每项是字典：pos, text, life, crit
 var _particles := []  # 每项是字典：pos, vel, life, color, size
 var _marks := []      # 每项是字典：pos, angle, length, count, kind, color, life
 var _rings := []      # 每项是字典：pos, radius, life
+var _boss_effects: Array = []
 var _font: Font
 
 
@@ -107,11 +108,17 @@ func _process(delta: float) -> void:
 	for r in _rings:
 		r.life -= delta
 	_rings = _rings.filter(func(r: Dictionary) -> bool: return r.life > 0.0)
+	for effect in _boss_effects:
+		effect.age += delta
+	_boss_effects = _boss_effects.filter(func(effect: Dictionary) -> bool: return effect.age < effect.life)
 
 	queue_redraw()
 
 
 func _draw() -> void:
+	for effect in _boss_effects:
+		BossFx.draw(self, effect.id, effect.age, effect.pos, effect.rot, effect.scale,
+			effect.tint, effect.reverse, effect.radius, effect.half, false)
 	for r in _rings:
 		var k: float = 1.0 - r.life / RING_LIFE  # 0 → 1
 		SpriteVisual.draw_frame(self, RING, 4, mini(3, int(k * 4.0)), r.pos, Vector2(64, 64), 0.0, Vector2.ONE * r.radius / RING_RADIUS, Color(1, 1, 1, minf(1.0, 3.0 * (1.0 - k))))

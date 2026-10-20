@@ -1,0 +1,16 @@
+{
+  "tool": "image_gen.imagegen",
+  "id": "fenrir_maw_upper",
+  "frame_size": [
+    256,
+    128
+  ],
+  "frames": 4,
+  "fps": 8,
+  "loop": true,
+  "prompt": "Image1 contains ONLY the respective jaw material, use this cropped component. Use case: background-extraction and precise-object-edit. Image1 is the approved-material four-frame giant wolf jaw reference. Extract ONLY the UPPER JAW into a new four-frame atlas. Remove the LOWER jaw entirely and remove the vertical left hinge below the upper palate. No lower teeth, chin, full skull, eyes or body. Preserve charcoal fur ridge, nose at the right, red upper gum and ivory upper fangs pointing DOWN. Four subtly different tension poses, same scale and fixed position, in a2x2 equal-cell LANDSCAPE atlas whose cells are logical256x128 (total512x256, wide). Each entire upper-jaw strip, INCLUDING every fang, must fit in its own128px-high cell with>=8px clear top and bottom padding. Thin/compact strip, generous blank space, no part crossing cell edges. Same right-facing profile and small detailed game pixel clusters. The original lower jaw is NOT to be drawn anywhere. True zero-alpha around and UNDER the upper fangs. No mouth black fill, no clouds, no cyan, guide marks, text, labels, frames, scenery, shadows or watermark. This is ONE movable upper-jaw component, not a complete mouth. Do NOT reconstruct a complete mouth. Overall atlas aspect ratio2:1; four isolated components in2x2 grid.",
+  "refs": [
+    "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskK2_wolf_2026-10-20/references/maw_upper_material_ref.png"
+  ],
+  "transparent_background": true
+}

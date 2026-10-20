@@ -1,0 +1,68 @@
+{
+  "input": "originals/garm_bite_v01.png",
+  "input_sha256": "5dc37947104e4c863abf49a7b4ed84dbb5d9c5b26753a365e754993bea1e7ff0",
+  "raw_size": [
+    1254,
+    1254
+  ],
+  "grid": [
+    2,
+    2
+  ],
+  "cut_boxes": [
+    [
+      177,
+      114,
+      516,
+      588
+    ],
+    [
+      63,
+      211,
+      490,
+      572
+    ],
+    [
+      145,
+      105,
+      627,
+      529
+    ],
+    [
+      0,
+      103,
+      494,
+      505
+    ]
+  ],
+  "single_common_scale": 0.1214574898785425,
+  "placements": [
+    [
+      11,
+      3,
+      41,
+      58
+    ],
+    [
+      6,
+      10,
+      52,
+      44
+    ],
+    [
+      2,
+      6,
+      59,
+      51
+    ],
+    [
+      2,
+      7,
+      60,
+      49
+    ]
+  ],
+  "operations": "original alpha threshold/quantization, source frame cuts, single common nearest resize, source-derived shared palette, whole-frame placement; no character/effect drawing",
+  "candidate": "candidates/garm_bite_v01.png",
+  "candidate_sha256": "95402ffcaec4881b71e39ce05ba1d8f97cf31c6fe838733dd5259c7cee55eb62"
+}

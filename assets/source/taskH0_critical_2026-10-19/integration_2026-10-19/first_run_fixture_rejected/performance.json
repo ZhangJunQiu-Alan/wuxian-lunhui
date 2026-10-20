@@ -1,0 +1,46 @@
+{
+	"engine": {
+		"build": "official",
+		"hash": "ed1daf0bf001b61586d9930840f2f1394092c079",
+		"hex": 263938,
+		"major": 4,
+		"minor": 7,
+		"patch": 2,
+		"status": "stable",
+		"string": "4.7.2-stable (official)",
+		"timestamp": 0
+	},
+	"measurements": [
+		{
+			"active_boss_effects": 0,
+			"enemies": 351,
+			"fps_over_interval": 28.254937860204,
+			"frames": 114,
+			"mean_frame_ms": 35.3920438596491,
+			"nodes": 1989,
+			"p95_frame_ms": 70.715,
+			"phase": "350_enemies_baseline"
+		},
+		{
+			"active_boss_effects": 96,
+			"enemies": 351,
+			"fps_over_interval": 42.4674168744031,
+			"frames": 170,
+			"mean_frame_ms": 23.5474647058824,
+			"nodes": 1989,
+			"p95_frame_ms": 153.783,
+			"phase": "350_enemies_40_boss_effects"
+		},
+		{
+			"active_boss_effects": 0,
+			"nodes": 1989,
+			"phase": "after_effects_expire"
+		}
+	],
+	"note": "M2 local rendered test, four seconds per phase; no long-session guarantee",
+	"renderer": "gl_compatibility",
+	"viewport": [
+		1280,
+		720
+	]
+}

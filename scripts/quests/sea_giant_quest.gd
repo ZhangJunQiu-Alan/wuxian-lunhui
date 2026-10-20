@@ -30,7 +30,10 @@ func _hidden_spot() -> Vector2:
 
 
 func _on_accept() -> void:
-	_giant = game.spawn_enemy("frost_giant", _start, true)
+	_giant = game.spawn_enemy("frost_giant", _start, true, true)
+	if _giant == null:
+		complete(false)
+		return
 	_giant.speed = GIANT_SPEED
 	_giant.flee_to = _escape
 	_giant.killed.connect(_on_giant_killed)

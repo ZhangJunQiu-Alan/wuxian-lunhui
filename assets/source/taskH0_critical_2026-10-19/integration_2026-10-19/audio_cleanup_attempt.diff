@@ -1,0 +1,23 @@
+diff --git a/scripts/core/audio.gd b/scripts/core/audio.gd
+index 280da4a..86a09ab 100644
+--- a/scripts/core/audio.gd
++++ b/scripts/core/audio.gd
+@@ -46,6 +46,18 @@ func _init() -> void:
+ 		_music.append(player)
+ 
+ 
++func _exit_tree() -> void:
++	for tween in _tweens.values():
++		tween.kill()
++	_tweens.clear()
++	for player in _voices + _music:
++		player.stop()
++		player.stream = null
++	_streams.clear()
++	if _instance == self:
++		_instance = null
++
++
+ ## 所有按钮按下时都响一声；设了 meta "silent" 的按钮（升级卡）自己放音效
+ func _on_node_added(node: Node) -> void:
+ 	var button := node as BaseButton

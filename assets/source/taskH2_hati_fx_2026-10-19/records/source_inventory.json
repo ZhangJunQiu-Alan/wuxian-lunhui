@@ -1,0 +1,30 @@
+{
+  "task": "H2",
+  "tool_calls": 3,
+  "references": [
+    {
+      "actual_input_path": "assets/sprites/effects/frost_shockwave.png",
+      "archived_path": "references/frost_shockwave.png",
+      "sha256": "a0aa09571dec4959ee2a9f66dc6a6a038a2017fad3dea1140680bc837495c625"
+    },
+    {
+      "actual_input_path": "assets/sprites/bosses/hati.png",
+      "archived_path": "references/hati.png",
+      "sha256": "cf21654f28c9f751586f2022dd49d39a1d2cb4bf7bcc667963e677fc8e489217"
+    }
+  ],
+  "originals": [
+    {
+      "file": "originals/hati_howl_wave_v01.png",
+      "sha256": "fd390b5d57897034fd984043d5c34fbc82e121af8e30bbedec87606d3553ed56"
+    },
+    {
+      "file": "originals/hati_lunge_trail_v01.png",
+      "sha256": "bb8accce590b066bd5dd5b2642f2ba239224b73ef74aabb6b968044ca30c8328"
+    },
+    {
+      "file": "originals/hati_split_flash_v01.png",
+      "sha256": "5564af978ae6198fbf9be06f695b72170a065b9d7dc678d2cc6b8dca84e354c5"
+    }
+  ]
+}

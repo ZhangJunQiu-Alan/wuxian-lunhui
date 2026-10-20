@@ -1,0 +1,21 @@
+{
+  "task": "K7",
+  "production": "complete_as_text_data_and_contract",
+  "new_formal_art": 0,
+  "self_check": "passed",
+  "checks": 67,
+  "independent_text_renders": 10,
+  "integration_cases": 28,
+  "integration_cases_executed_in_game": 0,
+  "game_integration": "not_implemented",
+  "game_acceptance": "not_tested",
+  "remaining": [
+    "fate event flags",
+    "ending state machine and skip",
+    "Save and result fields",
+    "fate reward formula unspecified",
+    "full third-level victory playthrough"
+  ],
+  "git_commit": false,
+  "git_push": false
+}

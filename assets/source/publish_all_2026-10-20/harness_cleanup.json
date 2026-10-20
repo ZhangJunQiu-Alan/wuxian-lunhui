@@ -1,0 +1,6 @@
+{
+  "changed": "tools/test_card_art.gd",
+  "reason": "headless test stopped while Audio singleton held streams/playbacks; teardown matches existing boss test, no production gameplay change",
+  "before_log": "cards_verbose.log",
+  "current_sha256": "525a965e70cb88c60252e7219ee8df92e6918baee54d418438178e4da49d2967"
+}

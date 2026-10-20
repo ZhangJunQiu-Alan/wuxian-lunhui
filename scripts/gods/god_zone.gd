@@ -33,25 +33,26 @@ func _process(delta: float) -> void:
 		queue_free()
 		return
 	_tick -= delta
+	var targets: Array[Enemy] = []
+	if pull > 0.0 or (_tick <= 0.0 and on_tick.is_valid()):
+		targets = enemies_inside()
 	if _tick <= 0.0:
 		_tick = tick_every
 		if on_tick.is_valid():
-			for enemy in enemies_inside():
-				on_tick.call(enemy)
+			for enemy in targets:
+				if not enemy._dead:
+					on_tick.call(enemy)
 	if pull > 0.0:
-		for enemy in enemies_inside():
-			if not enemy is Boss:
+		for enemy in targets:
+			if not enemy._dead and not enemy is Boss:
 				enemy.position = enemy.position.move_toward(global_position, pull * delta)
 	queue_redraw()
 
 
 func enemies_inside() -> Array[Enemy]:
-	var result: Array[Enemy] = []
-	for node in get_tree().get_nodes_in_group("enemies"):
-		var enemy := node as Enemy
-		if contains(enemy.global_position, enemy.radius):
-			result.append(enemy)
-	return result
+	if to == Vector2.ZERO:
+		return Enemy.query_radius(global_position, radius)
+	return Enemy.query_line(global_position, global_position + to, radius * 2.0)
 
 
 func contains(pos: Vector2, margin: float = 0.0) -> bool:

@@ -1,0 +1,322 @@
+{
+  "version": "K-assets-v1.0",
+  "date": "2026-10-20",
+  "status": "frozen_asset_interface_not_implemented_gameplay",
+  "authority": "用户本轮授权由本代理落实接入契约并依K1到K7制作；不修改生产代码，不把契约写成已接入",
+  "coordinates": {
+    "world": "pixels +x right +y down",
+    "entity_root_to_foot": [
+      0,
+      20
+    ],
+    "direction": "right",
+    "filter": "nearest",
+    "body_scale": 1
+  },
+  "C1": {
+    "map_size": [
+      5120,
+      5120
+    ],
+    "border": 256,
+    "walk_rect": [
+      -2304,
+      -2304,
+      4608,
+      4608
+    ],
+    "encounter_api": {
+      "bounds": "Game.bounds",
+      "origin": "actual boss spawn position",
+      "path": "PackedVector2Array authoritative closed centerline in world pixels",
+      "region": "PackedVector2Array authoritative hazard polygon",
+      "phase_age": "unpaused simulation seconds"
+    },
+    "boss_center_policy": "spawn near player by existing Game._point_around; do not teleport player or force travel to landmark",
+    "serpent_path_policy": "rounded rectangle inside Game.bounds inset96; start with intersection of player-centered 2048-square and inset bounds, min corner radius128; contraction inset<=128; head/tail follow arc-length path; path is also body contact source",
+    "arena_radii_note": "K0 R1024/R640 were diagram fixtures, not production collision constants. All Fx consume supplied geometry, never infer radius from bitmap."
+  },
+  "C2": {
+    "idle_move_fps": 8,
+    "attack_fps": 16,
+    "windup_fps": 8,
+    "loop_policy": "idle/move and listed environmental loops only",
+    "timeline": "non-loop animations clamp last frame; gameplay emits release/contact/phase events; no damage from animation_finished",
+    "impact_frame_zero_based": {
+      "head_attack": 1,
+      "fenrir_attack": 1,
+      "surtr_attack": 1,
+      "surtr_plant": 1,
+      "surtr_summon": 1
+    },
+    "windup": "3 frames at8fps then hold until release event; no duplicate frames added to make waiting time",
+    "old_boss_compatibility": "override fps only on K actors; do not change prior Boss._ready global8fps behavior"
+  },
+  "C3": {
+    "head": {
+      "frame": [
+        128,
+        128
+      ],
+      "anchor": [
+        64,
+        64
+      ],
+      "neck": [
+        0,
+        62
+      ],
+      "source_name": "jormungandr_head",
+      "actions": {
+        "idle": [
+          4,
+          8,
+          true
+        ],
+        "windup": [
+          3,
+          8,
+          false
+        ],
+        "attack": [
+          4,
+          16,
+          false
+        ]
+      }
+    },
+    "body": {
+      "frame": [
+        64,
+        64
+      ],
+      "sockets": [
+        [
+          0,
+          30
+        ],
+        [
+          64,
+          30
+        ]
+      ],
+      "nominal_step": 64,
+      "renderer": "continuous arc-length UV ribbon; no whole-snake atlas",
+      "targetable": false,
+      "collision_layer": 0,
+      "enemy_group": false
+    },
+    "tail": {
+      "socket": [
+        64,
+        30
+      ],
+      "targetable": false
+    },
+    "targeting": "one Enemy/Boss spatial-index entry for head only; ribbon contact is geometry query with its own hit cooldown",
+    "fenrir": {
+      "body": [
+        192,
+        192
+      ],
+      "foot": [
+        96,
+        190
+      ],
+      "maw": [
+        256,
+        256
+      ],
+      "maw_anchor": [
+        128,
+        128
+      ],
+      "maw_contract": "upper_socket/lower_socket/tip direction supplied by state; fatal_shape and attract_shape shared by drawing and damage; body never stretched",
+      "escape": "windup and escape phase precede fatal event; presentation cannot commit fatal hit; player damage/revive API keeps its normal ownership",
+      "binding_fragment": [
+        24,
+        24
+      ],
+      "binding_status": "start/end event; pickup consumes once; controller supplies binding duration and damage multiplier"
+    }
+  },
+  "C4": {
+    "surtr_action_frame": [
+      256,
+      256
+    ],
+    "reference_offset": [
+      32,
+      64
+    ],
+    "foot": [
+      128,
+      254
+    ],
+    "fallback_static_foot": [
+      96,
+      190
+    ],
+    "safe_grid": 64,
+    "grid_origin": [
+      0,
+      0
+    ],
+    "grid_address": "floor(world/64), including negatives",
+    "phase_hp_thresholds": [
+      0.6,
+      0.25
+    ],
+    "phase_policy": "each threshold triggers once per encounter",
+    "clip_contract": "sword sector, firewall region and unsafe_cell_set sent as authoritative geometry; safe runes and fire read identical set",
+    "firewall_axes": "x tangent, y negative outside/fire; inner side transparent",
+    "no_fullscreen_fire_bitmap": true
+  },
+  "C5": {
+    "ids": [
+      "fire_giant",
+      "frost_veteran",
+      "wolf_berserker"
+    ],
+    "large_frame": [
+      96,
+      96
+    ],
+    "large_foot": [
+      48,
+      94
+    ],
+    "human_frame": [
+      64,
+      64
+    ],
+    "human_foot": [
+      32,
+      62
+    ],
+    "special_actions": [
+      "charge",
+      "shield",
+      "rage"
+    ],
+    "events": [
+      "fire_giant.death_explosion_once",
+      "frost_veteran.charge_start",
+      "frost_veteran.front_block",
+      "wolf_berserker.rage_start_once"
+    ],
+    "rules": "new special behavior scoped to those ids; no common-enemy AI edits from asset production; dead assets unchanged"
+  },
+  "C6": {
+    "vidar_frame": [
+      96,
+      96
+    ],
+    "vidar_foot": [
+      48,
+      94
+    ],
+    "freyr_frame": [
+      64,
+      64
+    ],
+    "freyr_foot": [
+      32,
+      62
+    ],
+    "allies_enemy_layer": 0,
+    "allies_enemy_group": false,
+    "fate_conditions": {
+      "thor_saved": "player.faith.has(thor) at serpent death && encounter_unpaused_age<=90.0",
+      "vidar_intervened": "player.faith.has(odin) && player.gods[odin].awakened, once during Fenrir fight",
+      "freyr_assisted": "player.faith.has(freyja) && player.gods[freyja].awakened, once during Surtr fight"
+    },
+    "periodic_aid_api": {
+      "event": "vigrid.aid_request",
+      "fields": [
+        "god_id",
+        "world_position",
+        "source_encounter",
+        "aid_kind",
+        "event_id"
+      ],
+      "visuals": "reuse existing god effect library for all eight ids; no eight new character sets",
+      "timing": "external gameplay controller supplies nearby eligibility and cadence; bitmap playback never invents bonus damage"
+    },
+    "presentation": "Vidar hand/boot sockets bind to wolf upper/lower jaw sockets. Freyr heal flash only after actual grant event."
+  },
+  "C7": {
+    "grass_edge_parts": [
+      "n",
+      "e",
+      "s",
+      "w",
+      "outer_ne",
+      "outer_nw",
+      "outer_se",
+      "outer_sw",
+      "inner_ne",
+      "inner_nw",
+      "inner_se",
+      "inner_sw"
+    ],
+    "edge_frame": [
+      64,
+      64
+    ],
+    "edge_alpha": "binary mask, existing shared Vigrid terrain palette",
+    "border": "existing scorched terrain + existing props + reused fire strip + program haze; not eight new border PNGs",
+    "distant_battle": [
+      512,
+      128,
+      4,
+      8
+    ],
+    "horizon_rect": [
+      -768,
+      -2480,
+      1536,
+      128
+    ],
+    "dressing_damage": false,
+    "props_anchor": "canvas bottom center",
+    "decals_anchor": "center"
+  },
+  "C8": {
+    "audio_trigger_contract": "event_id deduplicated per cast/phase; use existing Audio 24 voices, MIN_GAP=.05 and MAX_SAME=4; never one voice per grid cell",
+    "new_sound_ids": [
+      "jormungandr_hiss",
+      "fenrir_swallow",
+      "gleipnir_tension",
+      "surtr_gate"
+    ],
+    "optional_ambience": "omitted in v1; use dedicated music and sparse existing fire events, no unbounded ambient loop",
+    "sfx_format": "PCM16 WAV mono44100, about -1dBFS peak, onset<=10ms; high frequency groups3 distinct variants<=.3s",
+    "music": "vigrid.ogg Vorbis stereo44100 about -16LUFS, complete musical phrases; duration chosen from licensed source phrase, three-loop listening required",
+    "ending": "five skippable text beats using existing UI, no new ending illustrations",
+    "fate_result_fields": [
+      "thor_saved",
+      "vidar_intervened",
+      "freyr_assisted"
+    ],
+    "loki_hint": "track ever_faith_loki for this run",
+    "release_gate": "asset check / listening / controlled runtime / full playthrough statuses recorded independently"
+  },
+  "production_order": [
+    "K1",
+    "K2",
+    "K3",
+    "K4",
+    "K5",
+    "K6",
+    "K7"
+  ],
+  "scope_exclusions": [
+    "scripts/",
+    "scenes/",
+    "docs/",
+    "root project.godot",
+    "git commit",
+    "git push"
+  ]
+}

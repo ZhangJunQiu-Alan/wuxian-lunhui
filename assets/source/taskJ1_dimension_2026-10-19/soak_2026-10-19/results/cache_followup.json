@@ -1,0 +1,39 @@
+{
+  "probe_seconds": 120.329,
+  "checks": 260,
+  "failures": [],
+  "main_final_plateau": {
+    "first_cycle_of_final_plateau": 12,
+    "last_cycle": 60,
+    "consecutive_matching_cycles": 49,
+    "resources": 154.0,
+    "objects": 1713.0,
+    "nodes_min": 30,
+    "nodes_max": 30
+  },
+  "probe_final_plateau": {
+    "first_cycle_of_final_plateau": 19,
+    "last_cycle": 60,
+    "consecutive_matching_cycles": 42,
+    "resources": 153.0,
+    "objects": 1710.0,
+    "nodes_min": 30,
+    "nodes_max": 30
+  },
+  "probe_cache_additions": [
+    {
+      "cycle": 14,
+      "new_cached_paths": [
+        "res://assets/sprites/effects/feather_blade.png"
+      ]
+    }
+  ],
+  "recorder_release": {
+    "after_bytes": 53001814,
+    "before_bytes": 53517706,
+    "checks": 260,
+    "released_bytes": 515892,
+    "samples": 63
+  },
+  "interpretation": "The main early +2 resources stop growing at the final plateau. Probe identifies a one-time feather_blade texture cache addition; main did not sample cache paths, so its exact2 resource identities are not claimed. This resolves the initial first/last heuristic as a bounded warmup step, not repeated per-cycle leakage."
+}

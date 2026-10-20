@@ -1,0 +1,471 @@
+{
+  "task": "K1",
+  "checks": 92,
+  "failures": 0,
+  "items": [
+    {
+      "check": "idle:sheet",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "idle:0:binary_alpha",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "idle:0:48rgb",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "idle:0:margin_except_neck",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "idle:0:neck_socket",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "idle:0:joint_opaque_rows",
+      "passed": true,
+      "detail": 31
+    },
+    {
+      "check": "idle:1:binary_alpha",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "idle:1:48rgb",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "idle:1:margin_except_neck",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "idle:1:neck_socket",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "idle:1:joint_opaque_rows",
+      "passed": true,
+      "detail": 31
+    },
+    {
+      "check": "idle:2:binary_alpha",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "idle:2:48rgb",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "idle:2:margin_except_neck",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "idle:2:neck_socket",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "idle:2:joint_opaque_rows",
+      "passed": true,
+      "detail": 31
+    },
+    {
+      "check": "idle:3:binary_alpha",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "idle:3:48rgb",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "idle:3:margin_except_neck",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "idle:3:neck_socket",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "idle:3:joint_opaque_rows",
+      "passed": true,
+      "detail": 31
+    },
+    {
+      "check": "idle:unique_frames",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "idle:native:gif_frames",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "idle:native:0:gif_pixels",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "idle:native:1:gif_pixels",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "idle:native:2:gif_pixels",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "idle:native:3:gif_pixels",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "idle:slow8:gif_frames",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "idle:slow8:0:gif_pixels",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "idle:slow8:1:gif_pixels",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "idle:slow8:2:gif_pixels",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "idle:slow8:3:gif_pixels",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "windup:sheet",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "windup:0:binary_alpha",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "windup:0:48rgb",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "windup:0:margin_except_neck",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "windup:0:neck_socket",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "windup:0:joint_opaque_rows",
+      "passed": true,
+      "detail": 30
+    },
+    {
+      "check": "windup:1:binary_alpha",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "windup:1:48rgb",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "windup:1:margin_except_neck",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "windup:1:neck_socket",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "windup:1:joint_opaque_rows",
+      "passed": true,
+      "detail": 30
+    },
+    {
+      "check": "windup:2:binary_alpha",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "windup:2:48rgb",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "windup:2:margin_except_neck",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "windup:2:neck_socket",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "windup:2:joint_opaque_rows",
+      "passed": true,
+      "detail": 30
+    },
+    {
+      "check": "windup:unique_frames",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "windup:native:gif_frames",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "windup:native:0:gif_pixels",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "windup:native:1:gif_pixels",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "windup:native:2:gif_pixels",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "windup:slow8:gif_frames",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "windup:slow8:0:gif_pixels",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "windup:slow8:1:gif_pixels",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "windup:slow8:2:gif_pixels",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "attack:sheet",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "attack:0:binary_alpha",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "attack:0:48rgb",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "attack:0:margin_except_neck",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "attack:0:neck_socket",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "attack:0:joint_opaque_rows",
+      "passed": true,
+      "detail": 30
+    },
+    {
+      "check": "attack:1:binary_alpha",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "attack:1:48rgb",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "attack:1:margin_except_neck",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "attack:1:neck_socket",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "attack:1:joint_opaque_rows",
+      "passed": true,
+      "detail": 30
+    },
+    {
+      "check": "attack:2:binary_alpha",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "attack:2:48rgb",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "attack:2:margin_except_neck",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "attack:2:neck_socket",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "attack:2:joint_opaque_rows",
+      "passed": true,
+      "detail": 30
+    },
+    {
+      "check": "attack:3:binary_alpha",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "attack:3:48rgb",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "attack:3:margin_except_neck",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "attack:3:neck_socket",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "attack:3:joint_opaque_rows",
+      "passed": true,
+      "detail": 30
+    },
+    {
+      "check": "attack:unique_frames",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "attack:native:gif_frames",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "attack:native:0:gif_pixels",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "attack:native:1:gif_pixels",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "attack:native:2:gif_pixels",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "attack:native:3:gif_pixels",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "attack:slow8:gif_frames",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "attack:slow8:0:gif_pixels",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "attack:slow8:1:gif_pixels",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "attack:slow8:2:gif_pixels",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "attack:slow8:3:gif_pixels",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "preexisting_inputs_unchanged_before_publication",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "check": "isolated_fixture22_saved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fixture_no_gdscript_failure",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "source_checks": "existing source/registered files unchanged before these three new publications",
+  "fixture_scope": "isolated Godot asset rendering only, not Game or third-level gameplay",
+  "platform_diagnostic": "macOS IMKCFRunLoopWakeUpReliable mach-port diagnostic retained in log; not hidden as a GDScript error",
+  "runtime_acceptance": "not_tested"
+}

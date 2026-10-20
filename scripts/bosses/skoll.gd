@@ -22,6 +22,7 @@ var _darkness: Darkness
 var _fight_time := 0.0
 var _enraged := false
 var _howl_timer := 0.0
+var _bite_shown := false
 
 
 func _init() -> void:
@@ -33,7 +34,7 @@ func init_stats(hp_scale: float) -> void:
 	setup_boss("skoll", tr("斯库尔"), tr("追日之狼"), 650.0, hp_scale, 34.0, 150.0, 15.0)
 	gait = "quad"
 	color = Color(0.55, 0.5, 0.62)
-	state_actions = {"howl": &"windup"}
+	state_actions = {"howl": &"howl"}
 
 
 func _ready() -> void:
@@ -63,11 +64,15 @@ func _update_state(delta: float) -> void:
 				change_state("windup")
 		"windup":
 			if state_time >= (WINDUP_TIME_ENRAGED if _enraged else WINDUP_TIME):
+				_bite_shown = false
 				change_state("dash")
 		"dash":
 			position += _dash_dir * DASH_SPEED * delta
 			if global_position.distance_to(target.global_position) < radius + Player.RADIUS:
 				target.take_damage(DASH_DAMAGE)
+				if not _bite_shown:
+					_bite_shown = true
+					BossFx.play("skoll_bite", target.global_position, _dash_dir.angle())
 			if state_time >= DASH_TIME:
 				change_state("recover")
 		"recover":
@@ -96,6 +101,8 @@ func _die() -> void:
 
 func _draw_telegraph() -> void:
 	match state:
+		"dash":
+			BossFx.draw(self, "skoll_dash_trail", state_time, -_dash_dir * radius * 0.5, _dash_dir.angle())
 		"windup":
 			# 冲锋路线：红色长条，越接近冲刺越亮
 			var t := state_time / (WINDUP_TIME_ENRAGED if _enraged else WINDUP_TIME)
@@ -103,4 +110,8 @@ func _draw_telegraph() -> void:
 		"howl":
 			# 嚎叫：向外扩散的声波圈
 			var r := radius + state_time * 160.0
-			draw_arc(Vector2.ZERO, r, 0.0, TAU, 48, Color(0.9, 0.85, 1.0, maxf(0.0, 0.8 - state_time * 0.6)), 4.0)
+			if BossFx.texture("skoll_howl") == null:
+				draw_arc(Vector2.ZERO, r, 0.0, TAU, 48, Color(0.9, 0.85, 1.0, maxf(0.0, 0.8 - state_time * 0.6)), 4.0)
+			elif state_time >= 0.6 and state_time < 1.1:
+				BossFx.draw(self, "skoll_howl", state_time - 0.6, Vector2.ZERO, 0.0,
+					Vector2.ONE * r / 62.0, Color.WHITE, false, 0.0, PI, false)

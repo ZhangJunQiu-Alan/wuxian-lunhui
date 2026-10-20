@@ -1,0 +1,80 @@
+[
+  {
+    "id": "freyr_idle",
+    "version": "v01",
+    "frame_size": [
+      64,
+      64
+    ],
+    "frames": 4,
+    "fps": 8,
+    "loop": true,
+    "scale": 0.09813874788494077,
+    "placements": [
+      [
+        14,
+        4,
+        35,
+        58
+      ],
+      [
+        12,
+        4,
+        36,
+        58
+      ],
+      [
+        14,
+        4,
+        36,
+        58
+      ],
+      [
+        14,
+        4,
+        36,
+        58
+      ]
+    ],
+    "method": "one scale peraction, fixed sole centroid and baseline62; approved master48RGB; no painting"
+  },
+  {
+    "id": "freyr_heal",
+    "version": "v02",
+    "frame_size": [
+      64,
+      64
+    ],
+    "frames": 4,
+    "fps": 16,
+    "loop": false,
+    "scale": 0.1037567084078712,
+    "placements": [
+      [
+        13,
+        4,
+        36,
+        58
+      ],
+      [
+        13,
+        4,
+        36,
+        58
+      ],
+      [
+        13,
+        4,
+        37,
+        58
+      ],
+      [
+        13,
+        4,
+        37,
+        58
+      ]
+    ],
+    "method": "one scale peraction, fixed sole centroid and baseline62; approved master48RGB; no painting"
+  }
+]

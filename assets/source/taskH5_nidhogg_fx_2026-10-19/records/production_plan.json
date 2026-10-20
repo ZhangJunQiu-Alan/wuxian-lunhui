@@ -1,0 +1,165 @@
+[
+  {
+    "task": "H5",
+    "id": "nidhogg_poison_breath",
+    "w": 96,
+    "h": 64,
+    "frames": 4,
+    "fps": 16,
+    "flags": [
+      "area",
+      "mouth"
+    ],
+    "anchor": [
+      4,
+      32
+    ],
+    "columns": 2,
+    "rows": 2,
+    "loop": false,
+    "hook": "scripts/bosses/nidhogg.gd _breathe()",
+    "keep": "喷口(4,32)，随_breath_dir旋转；按范围300、半角0.6裁切；保留既有瞬时扇形伤害和3个毒池",
+    "reference_paths": [
+      "assets/sprites/effects/poison_pool.png"
+    ],
+    "target": "assets/sprites/effects/bosses/nidhogg_poison_breath.png",
+    "source_root": "assets/source/taskH5_nidhogg_fx_2026-10-19",
+    "archived_references": [
+      {
+        "project_path": "assets/sprites/effects/poison_pool.png",
+        "archived_path": "references/poison_pool.png",
+        "sha256": "0284bb2e78321311e43248046a820d43920193764e68f64d662d25cd1516374f"
+      }
+    ]
+  },
+  {
+    "task": "H5",
+    "id": "nidhogg_burrow_dust",
+    "w": 96,
+    "h": 64,
+    "frames": 4,
+    "fps": 16,
+    "flags": [
+      "area"
+    ],
+    "anchor": [
+      48,
+      32
+    ],
+    "columns": 2,
+    "rows": 2,
+    "loop": false,
+    "hook": "scripts/bosses/nidhogg.gd _update_state() burrow 达BURROW_TIME",
+    "keep": "替换潜地入口burst，0.25秒尘后消失；保持set_untouchable(true)隐藏本体与1.3秒地下",
+    "reference_paths": [
+      "assets/sprites/effects/ground_crack.png"
+    ],
+    "target": "assets/sprites/effects/bosses/nidhogg_burrow_dust.png",
+    "source_root": "assets/source/taskH5_nidhogg_fx_2026-10-19",
+    "archived_references": [
+      {
+        "project_path": "assets/sprites/effects/ground_crack.png",
+        "archived_path": "references/ground_crack.png",
+        "sha256": "c7178cac3ba5662cfa99d2bef22d62249762a564143b504c66e8d59bd71ffbf8"
+      }
+    ]
+  },
+  {
+    "task": "H5",
+    "id": "nidhogg_emerge_burst",
+    "w": 128,
+    "h": 96,
+    "frames": 4,
+    "fps": 16,
+    "flags": [
+      "area"
+    ],
+    "anchor": [
+      64,
+      48
+    ],
+    "columns": 2,
+    "rows": 2,
+    "loop": false,
+    "hook": "scripts/bosses/nidhogg.gd _emerge()",
+    "keep": "实际_crack破土点中心；效果按EMERGE_RADIUS100范围裁切；保留地裂预警/伤害28",
+    "reference_paths": [
+      "assets/sprites/effects/ground_crack.png"
+    ],
+    "target": "assets/sprites/effects/bosses/nidhogg_emerge_burst.png",
+    "source_root": "assets/source/taskH5_nidhogg_fx_2026-10-19",
+    "archived_references": [
+      {
+        "project_path": "assets/sprites/effects/ground_crack.png",
+        "archived_path": "references/ground_crack.png",
+        "sha256": "c7178cac3ba5662cfa99d2bef22d62249762a564143b504c66e8d59bd71ffbf8"
+      }
+    ]
+  },
+  {
+    "task": "H5",
+    "id": "nidhogg_gnaw_heal",
+    "w": 64,
+    "h": 64,
+    "frames": 4,
+    "fps": 8,
+    "flags": [
+      "loop",
+      "area",
+      "flow"
+    ],
+    "anchor": [
+      32,
+      32
+    ],
+    "columns": 2,
+    "rows": 2,
+    "loop": true,
+    "hook": "scripts/bosses/nidhogg.gd _update_state() gnaw",
+    "keep": "原图生命流向+X；旋转/拉伸连接树根到龙；仅gnaw可见；保留每秒2.5%与6秒上限",
+    "reference_paths": [
+      "assets/sprites/effects/poison_pool.png"
+    ],
+    "target": "assets/sprites/effects/bosses/nidhogg_gnaw_heal.png",
+    "source_root": "assets/source/taskH5_nidhogg_fx_2026-10-19",
+    "archived_references": [
+      {
+        "project_path": "assets/sprites/effects/poison_pool.png",
+        "archived_path": "references/poison_pool.png",
+        "sha256": "0284bb2e78321311e43248046a820d43920193764e68f64d662d25cd1516374f"
+      }
+    ]
+  },
+  {
+    "task": "H5",
+    "id": "nidhogg_gnaw_stagger",
+    "w": 64,
+    "h": 64,
+    "frames": 4,
+    "fps": 16,
+    "flags": [
+      "area"
+    ],
+    "anchor": [
+      32,
+      32
+    ],
+    "columns": 2,
+    "rows": 2,
+    "loop": false,
+    "hook": "scripts/bosses/nidhogg.gd take_damage() 达GNAW_BREAK",
+    "keep": "打断瞬间断流/冲击；停止heal循环；保留6%阈值与2秒硬直",
+    "reference_paths": [
+      "assets/sprites/effects/poison_pool.png"
+    ],
+    "target": "assets/sprites/effects/bosses/nidhogg_gnaw_stagger.png",
+    "source_root": "assets/source/taskH5_nidhogg_fx_2026-10-19",
+    "archived_references": [
+      {
+        "project_path": "assets/sprites/effects/poison_pool.png",
+        "archived_path": "references/poison_pool.png",
+        "sha256": "0284bb2e78321311e43248046a820d43920193764e68f64d662d25cd1516374f"
+      }
+    ]
+  }
+]

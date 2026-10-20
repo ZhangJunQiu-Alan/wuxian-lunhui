@@ -1,0 +1,68 @@
+{
+  "input": "originals/hati_howl_wave_v01.png",
+  "input_sha256": "fd390b5d57897034fd984043d5c34fbc82e121af8e30bbedec87606d3553ed56",
+  "raw_size": [
+    1774,
+    887
+  ],
+  "grid": [
+    2,
+    2
+  ],
+  "cut_boxes": [
+    [
+      401,
+      127,
+      637,
+      357
+    ],
+    [
+      263,
+      72,
+      600,
+      398
+    ],
+    [
+      276,
+      6,
+      741,
+      413
+    ],
+    [
+      164,
+      2,
+      711,
+      430
+    ]
+  ],
+  "single_common_scale": 0.226691042047532,
+  "placements": [
+    [
+      37,
+      38,
+      53,
+      52
+    ],
+    [
+      26,
+      27,
+      76,
+      74
+    ],
+    [
+      11,
+      18,
+      105,
+      92
+    ],
+    [
+      2,
+      15,
+      124,
+      97
+    ]
+  ],
+  "operations": "original alpha threshold/quantization, source frame cuts, single common nearest resize, source-derived shared palette, whole-frame placement; no character/effect drawing",
+  "candidate": "candidates/hati_howl_wave_v01.png",
+  "candidate_sha256": "332d7e5ca837d6dba1b50a9a14ffefbc662e48da29824a7ee849a4ffa3f4e39a"
+}

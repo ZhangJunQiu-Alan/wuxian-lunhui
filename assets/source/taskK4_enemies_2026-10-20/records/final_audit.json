@@ -1,0 +1,1608 @@
+{
+  "task": "K4",
+  "checks": 275,
+  "failures": 0,
+  "items": [
+    {
+      "check": "fire_giant_move:RGBA",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fire_giant_move:sheet",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fire_giant_move:0:alpha",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fire_giant_move:0:transparent_rgb",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fire_giant_move:0:margin",
+      "passed": true,
+      "detail": [
+        7,
+        6,
+        89,
+        94
+      ]
+    },
+    {
+      "check": "fire_giant_move:0:ground_baseline",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fire_giant_move:1:alpha",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fire_giant_move:1:transparent_rgb",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fire_giant_move:1:margin",
+      "passed": true,
+      "detail": [
+        6,
+        6,
+        90,
+        94
+      ]
+    },
+    {
+      "check": "fire_giant_move:1:ground_baseline",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fire_giant_move:2:alpha",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fire_giant_move:2:transparent_rgb",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fire_giant_move:2:margin",
+      "passed": true,
+      "detail": [
+        6,
+        4,
+        90,
+        94
+      ]
+    },
+    {
+      "check": "fire_giant_move:2:ground_baseline",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fire_giant_move:3:alpha",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fire_giant_move:3:transparent_rgb",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fire_giant_move:3:margin",
+      "passed": true,
+      "detail": [
+        6,
+        2,
+        90,
+        94
+      ]
+    },
+    {
+      "check": "fire_giant_move:3:ground_baseline",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fire_giant_move:4:alpha",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fire_giant_move:4:transparent_rgb",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fire_giant_move:4:margin",
+      "passed": true,
+      "detail": [
+        6,
+        5,
+        91,
+        94
+      ]
+    },
+    {
+      "check": "fire_giant_move:4:ground_baseline",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fire_giant_move:5:alpha",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fire_giant_move:5:transparent_rgb",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fire_giant_move:5:margin",
+      "passed": true,
+      "detail": [
+        4,
+        4,
+        91,
+        94
+      ]
+    },
+    {
+      "check": "fire_giant_move:5:ground_baseline",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fire_giant_move:48rgb",
+      "passed": true,
+      "detail": 48
+    },
+    {
+      "check": "fire_giant_move:unique_frames",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fire_giant_move:native:gif_frames",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fire_giant_move:native:gif_timing",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fire_giant_move:slow8:gif_frames",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fire_giant_move:slow8:gif_timing",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fire_giant_move:source",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fire_giant_attack:RGBA",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fire_giant_attack:sheet",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fire_giant_attack:0:alpha",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fire_giant_attack:0:transparent_rgb",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fire_giant_attack:0:margin",
+      "passed": true,
+      "detail": [
+        3,
+        2,
+        93,
+        94
+      ]
+    },
+    {
+      "check": "fire_giant_attack:0:ground_baseline",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fire_giant_attack:1:alpha",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fire_giant_attack:1:transparent_rgb",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fire_giant_attack:1:margin",
+      "passed": true,
+      "detail": [
+        7,
+        2,
+        89,
+        94
+      ]
+    },
+    {
+      "check": "fire_giant_attack:1:ground_baseline",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fire_giant_attack:2:alpha",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fire_giant_attack:2:transparent_rgb",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fire_giant_attack:2:margin",
+      "passed": true,
+      "detail": [
+        5,
+        7,
+        91,
+        94
+      ]
+    },
+    {
+      "check": "fire_giant_attack:2:ground_baseline",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fire_giant_attack:3:alpha",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fire_giant_attack:3:transparent_rgb",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fire_giant_attack:3:margin",
+      "passed": true,
+      "detail": [
+        3,
+        3,
+        93,
+        94
+      ]
+    },
+    {
+      "check": "fire_giant_attack:3:ground_baseline",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fire_giant_attack:48rgb",
+      "passed": true,
+      "detail": 48
+    },
+    {
+      "check": "fire_giant_attack:unique_frames",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fire_giant_attack:native:gif_frames",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fire_giant_attack:native:gif_timing",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fire_giant_attack:slow8:gif_frames",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fire_giant_attack:slow8:gif_timing",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fire_giant_attack:source",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "frost_veteran_move:RGBA",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "frost_veteran_move:sheet",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "frost_veteran_move:0:alpha",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "frost_veteran_move:0:transparent_rgb",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "frost_veteran_move:0:margin",
+      "passed": true,
+      "detail": [
+        4,
+        6,
+        93,
+        94
+      ]
+    },
+    {
+      "check": "frost_veteran_move:0:ground_baseline",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "frost_veteran_move:1:alpha",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "frost_veteran_move:1:transparent_rgb",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "frost_veteran_move:1:margin",
+      "passed": true,
+      "detail": [
+        3,
+        7,
+        93,
+        94
+      ]
+    },
+    {
+      "check": "frost_veteran_move:1:ground_baseline",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "frost_veteran_move:2:alpha",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "frost_veteran_move:2:transparent_rgb",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "frost_veteran_move:2:margin",
+      "passed": true,
+      "detail": [
+        4,
+        6,
+        92,
+        94
+      ]
+    },
+    {
+      "check": "frost_veteran_move:2:ground_baseline",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "frost_veteran_move:3:alpha",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "frost_veteran_move:3:transparent_rgb",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "frost_veteran_move:3:margin",
+      "passed": true,
+      "detail": [
+        2,
+        6,
+        94,
+        94
+      ]
+    },
+    {
+      "check": "frost_veteran_move:3:ground_baseline",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "frost_veteran_move:4:alpha",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "frost_veteran_move:4:transparent_rgb",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "frost_veteran_move:4:margin",
+      "passed": true,
+      "detail": [
+        4,
+        8,
+        93,
+        94
+      ]
+    },
+    {
+      "check": "frost_veteran_move:4:ground_baseline",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "frost_veteran_move:5:alpha",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "frost_veteran_move:5:transparent_rgb",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "frost_veteran_move:5:margin",
+      "passed": true,
+      "detail": [
+        4,
+        7,
+        91,
+        94
+      ]
+    },
+    {
+      "check": "frost_veteran_move:5:ground_baseline",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "frost_veteran_move:48rgb",
+      "passed": true,
+      "detail": 48
+    },
+    {
+      "check": "frost_veteran_move:unique_frames",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "frost_veteran_move:native:gif_frames",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "frost_veteran_move:native:gif_timing",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "frost_veteran_move:slow8:gif_frames",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "frost_veteran_move:slow8:gif_timing",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "frost_veteran_move:source",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "frost_veteran_attack:RGBA",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "frost_veteran_attack:sheet",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "frost_veteran_attack:0:alpha",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "frost_veteran_attack:0:transparent_rgb",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "frost_veteran_attack:0:margin",
+      "passed": true,
+      "detail": [
+        2,
+        5,
+        93,
+        94
+      ]
+    },
+    {
+      "check": "frost_veteran_attack:0:ground_baseline",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "frost_veteran_attack:1:alpha",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "frost_veteran_attack:1:transparent_rgb",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "frost_veteran_attack:1:margin",
+      "passed": true,
+      "detail": [
+        6,
+        4,
+        89,
+        94
+      ]
+    },
+    {
+      "check": "frost_veteran_attack:1:ground_baseline",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "frost_veteran_attack:2:alpha",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "frost_veteran_attack:2:transparent_rgb",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "frost_veteran_attack:2:margin",
+      "passed": true,
+      "detail": [
+        9,
+        5,
+        87,
+        94
+      ]
+    },
+    {
+      "check": "frost_veteran_attack:2:ground_baseline",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "frost_veteran_attack:3:alpha",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "frost_veteran_attack:3:transparent_rgb",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "frost_veteran_attack:3:margin",
+      "passed": true,
+      "detail": [
+        2,
+        3,
+        94,
+        94
+      ]
+    },
+    {
+      "check": "frost_veteran_attack:3:ground_baseline",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "frost_veteran_attack:48rgb",
+      "passed": true,
+      "detail": 48
+    },
+    {
+      "check": "frost_veteran_attack:unique_frames",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "frost_veteran_attack:native:gif_frames",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "frost_veteran_attack:native:gif_timing",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "frost_veteran_attack:slow8:gif_frames",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "frost_veteran_attack:slow8:gif_timing",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "frost_veteran_attack:source",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "frost_veteran_charge:RGBA",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "frost_veteran_charge:sheet",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "frost_veteran_charge:0:alpha",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "frost_veteran_charge:0:transparent_rgb",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "frost_veteran_charge:0:margin",
+      "passed": true,
+      "detail": [
+        4,
+        14,
+        93,
+        94
+      ]
+    },
+    {
+      "check": "frost_veteran_charge:0:ground_baseline",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "frost_veteran_charge:1:alpha",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "frost_veteran_charge:1:transparent_rgb",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "frost_veteran_charge:1:margin",
+      "passed": true,
+      "detail": [
+        4,
+        11,
+        92,
+        94
+      ]
+    },
+    {
+      "check": "frost_veteran_charge:1:ground_baseline",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "frost_veteran_charge:2:alpha",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "frost_veteran_charge:2:transparent_rgb",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "frost_veteran_charge:2:margin",
+      "passed": true,
+      "detail": [
+        2,
+        11,
+        94,
+        94
+      ]
+    },
+    {
+      "check": "frost_veteran_charge:2:ground_baseline",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "frost_veteran_charge:3:alpha",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "frost_veteran_charge:3:transparent_rgb",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "frost_veteran_charge:3:margin",
+      "passed": true,
+      "detail": [
+        4,
+        10,
+        91,
+        94
+      ]
+    },
+    {
+      "check": "frost_veteran_charge:3:ground_baseline",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "frost_veteran_charge:48rgb",
+      "passed": true,
+      "detail": 48
+    },
+    {
+      "check": "frost_veteran_charge:unique_frames",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "frost_veteran_charge:native:gif_frames",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "frost_veteran_charge:native:gif_timing",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "frost_veteran_charge:slow8:gif_frames",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "frost_veteran_charge:slow8:gif_timing",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "frost_veteran_charge:source",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "frost_veteran_shield:RGBA",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "frost_veteran_shield:sheet",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "frost_veteran_shield:0:alpha",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "frost_veteran_shield:0:transparent_rgb",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "frost_veteran_shield:0:margin",
+      "passed": true,
+      "detail": [
+        3,
+        5,
+        93,
+        94
+      ]
+    },
+    {
+      "check": "frost_veteran_shield:0:ground_baseline",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "frost_veteran_shield:1:alpha",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "frost_veteran_shield:1:transparent_rgb",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "frost_veteran_shield:1:margin",
+      "passed": true,
+      "detail": [
+        2,
+        5,
+        94,
+        94
+      ]
+    },
+    {
+      "check": "frost_veteran_shield:1:ground_baseline",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "frost_veteran_shield:2:alpha",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "frost_veteran_shield:2:transparent_rgb",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "frost_veteran_shield:2:margin",
+      "passed": true,
+      "detail": [
+        2,
+        4,
+        94,
+        94
+      ]
+    },
+    {
+      "check": "frost_veteran_shield:2:ground_baseline",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "frost_veteran_shield:48rgb",
+      "passed": true,
+      "detail": 48
+    },
+    {
+      "check": "frost_veteran_shield:unique_frames",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "frost_veteran_shield:native:gif_frames",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "frost_veteran_shield:native:gif_timing",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "frost_veteran_shield:slow8:gif_frames",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "frost_veteran_shield:slow8:gif_timing",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "frost_veteran_shield:source",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "wolf_berserker:RGBA",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "wolf_berserker:sheet",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "wolf_berserker:0:alpha",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "wolf_berserker:0:transparent_rgb",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "wolf_berserker:0:margin",
+      "passed": true,
+      "detail": [
+        12,
+        4,
+        52,
+        62
+      ]
+    },
+    {
+      "check": "wolf_berserker:0:ground_baseline",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "wolf_berserker:48rgb",
+      "passed": true,
+      "detail": 48
+    },
+    {
+      "check": "wolf_berserker:unique_frames",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "wolf_berserker:source",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "wolf_berserker_move:RGBA",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "wolf_berserker_move:sheet",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "wolf_berserker_move:0:alpha",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "wolf_berserker_move:0:transparent_rgb",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "wolf_berserker_move:0:margin",
+      "passed": true,
+      "detail": [
+        10,
+        3,
+        53,
+        62
+      ]
+    },
+    {
+      "check": "wolf_berserker_move:0:ground_baseline",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "wolf_berserker_move:1:alpha",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "wolf_berserker_move:1:transparent_rgb",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "wolf_berserker_move:1:margin",
+      "passed": true,
+      "detail": [
+        10,
+        3,
+        54,
+        62
+      ]
+    },
+    {
+      "check": "wolf_berserker_move:1:ground_baseline",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "wolf_berserker_move:2:alpha",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "wolf_berserker_move:2:transparent_rgb",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "wolf_berserker_move:2:margin",
+      "passed": true,
+      "detail": [
+        8,
+        4,
+        55,
+        62
+      ]
+    },
+    {
+      "check": "wolf_berserker_move:2:ground_baseline",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "wolf_berserker_move:3:alpha",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "wolf_berserker_move:3:transparent_rgb",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "wolf_berserker_move:3:margin",
+      "passed": true,
+      "detail": [
+        10,
+        3,
+        55,
+        62
+      ]
+    },
+    {
+      "check": "wolf_berserker_move:3:ground_baseline",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "wolf_berserker_move:4:alpha",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "wolf_berserker_move:4:transparent_rgb",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "wolf_berserker_move:4:margin",
+      "passed": true,
+      "detail": [
+        8,
+        3,
+        56,
+        62
+      ]
+    },
+    {
+      "check": "wolf_berserker_move:4:ground_baseline",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "wolf_berserker_move:5:alpha",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "wolf_berserker_move:5:transparent_rgb",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "wolf_berserker_move:5:margin",
+      "passed": true,
+      "detail": [
+        10,
+        2,
+        55,
+        62
+      ]
+    },
+    {
+      "check": "wolf_berserker_move:5:ground_baseline",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "wolf_berserker_move:48rgb",
+      "passed": true,
+      "detail": 48
+    },
+    {
+      "check": "wolf_berserker_move:unique_frames",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "wolf_berserker_move:native:gif_frames",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "wolf_berserker_move:native:gif_timing",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "wolf_berserker_move:slow8:gif_frames",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "wolf_berserker_move:slow8:gif_timing",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "wolf_berserker_move:source",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "wolf_berserker_attack:RGBA",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "wolf_berserker_attack:sheet",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "wolf_berserker_attack:0:alpha",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "wolf_berserker_attack:0:transparent_rgb",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "wolf_berserker_attack:0:margin",
+      "passed": true,
+      "detail": [
+        10,
+        2,
+        55,
+        62
+      ]
+    },
+    {
+      "check": "wolf_berserker_attack:0:ground_baseline",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "wolf_berserker_attack:1:alpha",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "wolf_berserker_attack:1:transparent_rgb",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "wolf_berserker_attack:1:margin",
+      "passed": true,
+      "detail": [
+        12,
+        2,
+        53,
+        62
+      ]
+    },
+    {
+      "check": "wolf_berserker_attack:1:ground_baseline",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "wolf_berserker_attack:2:alpha",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "wolf_berserker_attack:2:transparent_rgb",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "wolf_berserker_attack:2:margin",
+      "passed": true,
+      "detail": [
+        5,
+        3,
+        59,
+        62
+      ]
+    },
+    {
+      "check": "wolf_berserker_attack:2:ground_baseline",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "wolf_berserker_attack:3:alpha",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "wolf_berserker_attack:3:transparent_rgb",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "wolf_berserker_attack:3:margin",
+      "passed": true,
+      "detail": [
+        10,
+        2,
+        54,
+        62
+      ]
+    },
+    {
+      "check": "wolf_berserker_attack:3:ground_baseline",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "wolf_berserker_attack:48rgb",
+      "passed": true,
+      "detail": 48
+    },
+    {
+      "check": "wolf_berserker_attack:unique_frames",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "wolf_berserker_attack:native:gif_frames",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "wolf_berserker_attack:native:gif_timing",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "wolf_berserker_attack:slow8:gif_frames",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "wolf_berserker_attack:slow8:gif_timing",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "wolf_berserker_attack:source",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "wolf_berserker_rage:RGBA",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "wolf_berserker_rage:sheet",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "wolf_berserker_rage:0:alpha",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "wolf_berserker_rage:0:transparent_rgb",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "wolf_berserker_rage:0:margin",
+      "passed": true,
+      "detail": [
+        10,
+        2,
+        55,
+        62
+      ]
+    },
+    {
+      "check": "wolf_berserker_rage:0:ground_baseline",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "wolf_berserker_rage:1:alpha",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "wolf_berserker_rage:1:transparent_rgb",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "wolf_berserker_rage:1:margin",
+      "passed": true,
+      "detail": [
+        7,
+        2,
+        57,
+        62
+      ]
+    },
+    {
+      "check": "wolf_berserker_rage:1:ground_baseline",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "wolf_berserker_rage:2:alpha",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "wolf_berserker_rage:2:transparent_rgb",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "wolf_berserker_rage:2:margin",
+      "passed": true,
+      "detail": [
+        6,
+        5,
+        59,
+        62
+      ]
+    },
+    {
+      "check": "wolf_berserker_rage:2:ground_baseline",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "wolf_berserker_rage:48rgb",
+      "passed": true,
+      "detail": 48
+    },
+    {
+      "check": "wolf_berserker_rage:unique_frames",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "wolf_berserker_rage:native:gif_frames",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "wolf_berserker_rage:native:gif_timing",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "wolf_berserker_rage:slow8:gif_frames",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "wolf_berserker_rage:slow8:gif_timing",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "wolf_berserker_rage:source",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fire_giant_explosion:RGBA",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fire_giant_explosion:sheet",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fire_giant_explosion:0:alpha",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fire_giant_explosion:0:transparent_rgb",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fire_giant_explosion:0:margin",
+      "passed": true,
+      "detail": [
+        35,
+        32,
+        71,
+        77
+      ]
+    },
+    {
+      "check": "fire_giant_explosion:1:alpha",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fire_giant_explosion:1:transparent_rgb",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fire_giant_explosion:1:margin",
+      "passed": true,
+      "detail": [
+        13,
+        20,
+        75,
+        73
+      ]
+    },
+    {
+      "check": "fire_giant_explosion:2:alpha",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fire_giant_explosion:2:transparent_rgb",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fire_giant_explosion:2:margin",
+      "passed": true,
+      "detail": [
+        21,
+        18,
+        91,
+        75
+      ]
+    },
+    {
+      "check": "fire_giant_explosion:3:alpha",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fire_giant_explosion:3:transparent_rgb",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fire_giant_explosion:3:margin",
+      "passed": true,
+      "detail": [
+        16,
+        22,
+        71,
+        72
+      ]
+    },
+    {
+      "check": "fire_giant_explosion:48rgb",
+      "passed": true,
+      "detail": 25
+    },
+    {
+      "check": "fire_giant_explosion:unique_frames",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fire_giant_explosion:native:gif_frames",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fire_giant_explosion:native:gif_timing",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fire_giant_explosion:slow8:gif_frames",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fire_giant_explosion:slow8:gif_timing",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fire_giant_explosion:source",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "44isolated_captures",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "final_fixture_no_script_error",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "1453inputs_unchanged",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "check": "11PNG45frames",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "scope": "asset files and isolated Godot render only"
+}

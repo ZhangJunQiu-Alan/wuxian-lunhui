@@ -1,0 +1,488 @@
+{
+  "task_id": "H0",
+  "date": "2026-10-19",
+  "production": "delivered",
+  "self_review": "pass",
+  "code_integration": "integrated",
+  "game_acceptance": "controlled_runtime_verified",
+  "files": [
+    {
+      "task": "H0",
+      "id": "thokk",
+      "w": 96,
+      "h": 96,
+      "frames": 1,
+      "fps": 0,
+      "flags": [
+        "body"
+      ],
+      "anchor": [
+        48,
+        92
+      ],
+      "columns": 1,
+      "rows": 1,
+      "loop": false,
+      "hook": "scripts/data/enemy_db.gd thokk；scripts/entities/enemy.gd _ready() / SpriteVisual.create_actions()",
+      "keep": "保留既有半径20、血量、精英倍率、追击及逃走逻辑",
+      "reference_paths": [
+        "assets/sprites/enemies/frost_giant.png",
+        "assets/sprites/enemies/frost_veteran.png"
+      ],
+      "target": "assets/sprites/enemies/thokk.png",
+      "source_root": "assets/source/taskH0_critical_2026-10-19",
+      "archived_references": [
+        {
+          "project_path": "assets/sprites/enemies/frost_giant.png",
+          "archived_path": "references/frost_giant.png",
+          "sha256": "ba7bb0af917ec87e5dc77cbf15b10afc9582b9d28f69537135393f19196ede28"
+        },
+        {
+          "project_path": "assets/sprites/enemies/frost_veteran.png",
+          "archived_path": "references/frost_veteran.png",
+          "sha256": "6972714054f6181ee80249f0c5e42cac072e329a3bc063e04269ba00d9563e9c"
+        }
+      ],
+      "version": "v01",
+      "final_path": "assets/sprites/enemies/thokk.png",
+      "candidate": "candidates/thokk_v01.png",
+      "sha256": "09eacf76a01cbb38177da6174e85247b02a290b1d6f2e6f01e4692337738e64b",
+      "actual_RGB_colors": 47,
+      "actual_alpha_values": [
+        0,
+        255
+      ],
+      "frame_bboxes": [
+        [
+          20,
+          4,
+          75,
+          92
+        ]
+      ],
+      "technical_checks": {
+        "PNG_RGBA": true,
+        "exact_strip_dimensions": true,
+        "RGB_within_48": true,
+        "transparent_background": true,
+        "every_frame_nonempty": true,
+        "distinct_original_frames": true,
+        "2px_margin_or_tiling_exception": true,
+        "binary_alpha": true,
+        "same_foot_baseline": true
+      },
+      "visual_review": {
+        "status": "passed",
+        "observations": "已看96px与4倍深色底：灰发、皱纹、弯腰厚肩和破旧灰紫裙可辨，朝右，无武器/泪水/光效；与霜巨人尺度材质参考对照。"
+      },
+      "code_integration": "integrated",
+      "game_acceptance": "controlled_runtime_verified",
+      "source_license": {
+        "tool": "OpenAI built-in image_gen",
+        "commercial_basis": "existing approved OpenAI output terms; project-owned input references",
+        "terms_url": "https://openai.com/policies/terms-of-use/",
+        "processing": "Pillow MIT-CMU, source cuts/alpha/palette/nearest resize/placement and preview only"
+      },
+      "previews": [
+        "previews/thokk_v01_4x.png",
+        "previews/thokk_v01_baseline.png",
+        "previews/thokk_v01_frames.png"
+      ],
+      "approved": "approved/thokk.png",
+      "frame_order": "left_to_right_no_spacing",
+      "generation_records": "records/generation_jobs.json",
+      "public_generation_url": null,
+      "generation_url_note": "内置工具仅返回本地原图路径；真实提示词/参考/结果均归档，不伪造公开URL",
+      "transparent_strategy": "RGBA binary alpha0/255; zero RGB when alpha0",
+      "loop_mode": "single shot / static; single-shot temporary display fades and frees at end",
+      "remaining_issues": [
+        "完整手动通关、长时平衡及其他设备表现未测；当前为Godot受控技能/视角验证"
+      ],
+      "source_recipe": "records/normalization_thokk_v01.json",
+      "runtime_verification": {
+        "report": "integration_2026-10-19/README.md",
+        "scope": "actual Godot Game scenes with controlled skill triggers; full playthrough and long-session balance not tested",
+        "automated_assertions": 572,
+        "failures": 0,
+        "formal_PNG_changed": false
+      }
+    },
+    {
+      "task": "H0",
+      "id": "thokk_move",
+      "w": 96,
+      "h": 96,
+      "frames": 6,
+      "fps": 8,
+      "flags": [
+        "body",
+        "loop"
+      ],
+      "anchor": [
+        48,
+        92
+      ],
+      "columns": 3,
+      "rows": 2,
+      "loop": true,
+      "hook": "scripts/entities/enemy.gd _ready() / _physics_process()；SpriteVisual.create_actions()",
+      "keep": "保留同一角色比例、脚底92与移动速度",
+      "reference_paths": [
+        "assets/source/taskH0_critical_2026-10-19/candidates/thokk_v01.png"
+      ],
+      "target": "assets/sprites/enemies/thokk_move.png",
+      "source_root": "assets/source/taskH0_critical_2026-10-19",
+      "archived_references": [
+        {
+          "project_path": "assets/source/taskH0_critical_2026-10-19/candidates/thokk_v01.png",
+          "archived_path": "references/thokk_v01.png",
+          "sha256": "09eacf76a01cbb38177da6174e85247b02a290b1d6f2e6f01e4692337738e64b"
+        }
+      ],
+      "version": "v01",
+      "final_path": "assets/sprites/enemies/thokk_move.png",
+      "candidate": "candidates/thokk_move_v01.png",
+      "sha256": "2c4b9a998f653da414009ffff2eb7cb1f6a0efef81fbc303eedc16a3e3242a79",
+      "actual_RGB_colors": 47,
+      "actual_alpha_values": [
+        0,
+        255
+      ],
+      "frame_bboxes": [
+        [
+          16,
+          5,
+          78,
+          92
+        ],
+        [
+          18,
+          5,
+          72,
+          92
+        ],
+        [
+          18,
+          4,
+          68,
+          92
+        ],
+        [
+          13,
+          5,
+          83,
+          92
+        ],
+        [
+          19,
+          4,
+          79,
+          92
+        ],
+        [
+          14,
+          4,
+          75,
+          92
+        ]
+      ],
+      "technical_checks": {
+        "PNG_RGBA": true,
+        "exact_strip_dimensions": true,
+        "RGB_within_48": true,
+        "transparent_background": true,
+        "every_frame_nonempty": true,
+        "distinct_original_frames": true,
+        "2px_margin_or_tiling_exception": true,
+        "binary_alpha": true,
+        "same_foot_baseline": true,
+        "same_static_palette": true,
+        "GIF_native_decoded_pixel_match": true,
+        "GIF_native_average_fps": true,
+        "GIF_slow8_decoded_pixel_match": true,
+        "GIF_slow8_average_fps": true
+      },
+      "visual_review": {
+        "status": "passed",
+        "observations": "已逐帧查看6格：交替前伸、抬脚、落脚可辨，双辫/衣裙/皮带和体型一致；足底同y92，躯干不随长步幅整体横移；末帧过渡回前伸姿势。"
+      },
+      "code_integration": "integrated",
+      "game_acceptance": "controlled_runtime_verified",
+      "source_license": {
+        "tool": "OpenAI built-in image_gen",
+        "commercial_basis": "existing approved OpenAI output terms; project-owned input references",
+        "terms_url": "https://openai.com/policies/terms-of-use/",
+        "processing": "Pillow MIT-CMU, source cuts/alpha/palette/nearest resize/placement and preview only"
+      },
+      "previews": [
+        "previews/thokk_move_v01_baseline.png",
+        "previews/thokk_move_v01_frames.png",
+        "previews/thokk_move_v01_native.gif",
+        "previews/thokk_move_v01_slow8.gif"
+      ],
+      "approved": "approved/thokk_move.png",
+      "frame_order": "left_to_right_no_spacing",
+      "generation_records": "records/generation_jobs.json",
+      "public_generation_url": null,
+      "generation_url_note": "内置工具仅返回本地原图路径；真实提示词/参考/结果均归档，不伪造公开URL",
+      "transparent_strategy": "RGBA binary alpha0/255; zero RGB when alpha0",
+      "loop_mode": "loop only while corresponding state is active",
+      "remaining_issues": [
+        "完整手动通关、长时平衡及其他设备表现未测；当前为Godot受控技能/视角验证"
+      ],
+      "source_recipe": "records/normalization_thokk_move_v01.json",
+      "runtime_verification": {
+        "report": "integration_2026-10-19/README.md",
+        "scope": "actual Godot Game scenes with controlled skill triggers; full playthrough and long-session balance not tested",
+        "automated_assertions": 572,
+        "failures": 0,
+        "formal_PNG_changed": false
+      }
+    },
+    {
+      "task": "H0",
+      "id": "thokk_attack",
+      "w": 96,
+      "h": 96,
+      "frames": 4,
+      "fps": 16,
+      "flags": [
+        "body"
+      ],
+      "anchor": [
+        48,
+        92
+      ],
+      "columns": 2,
+      "rows": 2,
+      "loop": false,
+      "hook": "scripts/entities/enemy.gd _update_attack() / SpriteVisual.create_actions()",
+      "keep": "保留ATTACK_TIME、ATTACK_STRIKE、接触判伤和现有挥击光效",
+      "reference_paths": [
+        "assets/source/taskH0_critical_2026-10-19/candidates/thokk_v01.png"
+      ],
+      "target": "assets/sprites/enemies/thokk_attack.png",
+      "source_root": "assets/source/taskH0_critical_2026-10-19",
+      "archived_references": [
+        {
+          "project_path": "assets/source/taskH0_critical_2026-10-19/candidates/thokk_v01.png",
+          "archived_path": "references/thokk_v01.png",
+          "sha256": "09eacf76a01cbb38177da6174e85247b02a290b1d6f2e6f01e4692337738e64b"
+        }
+      ],
+      "version": "v02",
+      "final_path": "assets/sprites/enemies/thokk_attack.png",
+      "candidate": "candidates/thokk_attack_v02.png",
+      "sha256": "cc7b7364e7dcc4f542d3bb902635ff07b53bb06bf829aee920aab2960ca3dbef",
+      "actual_RGB_colors": 47,
+      "actual_alpha_values": [
+        0,
+        255
+      ],
+      "frame_bboxes": [
+        [
+          16,
+          4,
+          80,
+          92
+        ],
+        [
+          16,
+          4,
+          81,
+          92
+        ],
+        [
+          13,
+          4,
+          83,
+          92
+        ],
+        [
+          14,
+          4,
+          81,
+          92
+        ]
+      ],
+      "technical_checks": {
+        "PNG_RGBA": true,
+        "exact_strip_dimensions": true,
+        "RGB_within_48": true,
+        "transparent_background": true,
+        "every_frame_nonempty": true,
+        "distinct_original_frames": true,
+        "2px_margin_or_tiling_exception": true,
+        "binary_alpha": true,
+        "same_foot_baseline": true,
+        "same_static_palette": true,
+        "GIF_native_decoded_pixel_match": true,
+        "GIF_native_average_fps": true,
+        "GIF_slow8_decoded_pixel_match": true,
+        "GIF_slow8_average_fps": true
+      },
+      "visual_review": {
+        "status": "passed",
+        "observations": "v01越界已退回；v02四格近身短挥击，蓄力—弯肘前击—下挥—收回清楚；原帧均不同，同一角色/静态RGB色板，脚底同y92，无程序伤害光效。"
+      },
+      "code_integration": "integrated",
+      "game_acceptance": "controlled_runtime_verified",
+      "source_license": {
+        "tool": "OpenAI built-in image_gen",
+        "commercial_basis": "existing approved OpenAI output terms; project-owned input references",
+        "terms_url": "https://openai.com/policies/terms-of-use/",
+        "processing": "Pillow MIT-CMU, source cuts/alpha/palette/nearest resize/placement and preview only"
+      },
+      "previews": [
+        "previews/thokk_attack_v02_baseline.png",
+        "previews/thokk_attack_v02_frames.png",
+        "previews/thokk_attack_v02_native.gif",
+        "previews/thokk_attack_v02_slow8.gif"
+      ],
+      "approved": "approved/thokk_attack.png",
+      "frame_order": "left_to_right_no_spacing",
+      "generation_records": "records/generation_jobs.json",
+      "public_generation_url": null,
+      "generation_url_note": "内置工具仅返回本地原图路径；真实提示词/参考/结果均归档，不伪造公开URL",
+      "transparent_strategy": "RGBA binary alpha0/255; zero RGB when alpha0",
+      "loop_mode": "single shot / static; single-shot temporary display fades and frees at end",
+      "remaining_issues": [
+        "完整手动通关、长时平衡及其他设备表现未测；当前为Godot受控技能/视角验证"
+      ],
+      "source_recipe": "records/normalization_thokk_attack_v02.json",
+      "runtime_verification": {
+        "report": "integration_2026-10-19/README.md",
+        "scope": "actual Godot Game scenes with controlled skill triggers; full playthrough and long-session balance not tested",
+        "automated_assertions": 572,
+        "failures": 0,
+        "formal_PNG_changed": false
+      }
+    },
+    {
+      "task": "H0",
+      "id": "hel_death_bolt",
+      "w": 32,
+      "h": 16,
+      "frames": 1,
+      "fps": 0,
+      "flags": [
+        "rotate"
+      ],
+      "anchor": [
+        16,
+        8
+      ],
+      "columns": 1,
+      "rows": 1,
+      "loop": false,
+      "hook": "scripts/bosses/hel.gd _update_state() cast_windup 中 _fan() 的 texture=null",
+      "keep": "替换第一阶段空纹理；保持5发、spread0.5、伤害10、速度200、命中半径；第二阶段_nail不变",
+      "reference_paths": [
+        "assets/sprites/effects/rune_missile.png"
+      ],
+      "target": "assets/sprites/effects/hel_death_bolt.png",
+      "source_root": "assets/source/taskH0_critical_2026-10-19",
+      "archived_references": [
+        {
+          "project_path": "assets/sprites/effects/rune_missile.png",
+          "archived_path": "references/rune_missile.png",
+          "sha256": "c199b65f5786029aba9fe4e60f84cb31d158b2267a91e93f9861122ef827de8d"
+        }
+      ],
+      "version": "v01",
+      "final_path": "assets/sprites/effects/hel_death_bolt.png",
+      "candidate": "candidates/hel_death_bolt_v01.png",
+      "sha256": "e4abc7d80a6feedabb4499611b9c900fa79e240967311fa7f623ddcdc54f58c6",
+      "actual_RGB_colors": 39,
+      "actual_alpha_values": [
+        0,
+        208,
+        224,
+        240,
+        255
+      ],
+      "frame_bboxes": [
+        [
+          2,
+          2,
+          30,
+          13
+        ]
+      ],
+      "technical_checks": {
+        "PNG_RGBA": true,
+        "exact_strip_dimensions": true,
+        "RGB_within_48": true,
+        "transparent_background": true,
+        "every_frame_nonempty": true,
+        "distinct_original_frames": true,
+        "2px_margin_or_tiling_exception": true
+      },
+      "visual_review": {
+        "status": "passed",
+        "observations": "已看1倍与4倍：亮核在右、短尾向左，灰紫色，在深色地面可辨，非金属指甲；已生成0/90/180旋转预览，实际游戏亡者/冥雾叠加仍待集成验收。"
+      },
+      "code_integration": "integrated",
+      "game_acceptance": "controlled_runtime_verified",
+      "source_license": {
+        "tool": "OpenAI built-in image_gen",
+        "commercial_basis": "existing approved OpenAI output terms; project-owned input references",
+        "terms_url": "https://openai.com/policies/terms-of-use/",
+        "processing": "Pillow MIT-CMU, source cuts/alpha/palette/nearest resize/placement and preview only"
+      },
+      "previews": [
+        "previews/hel_death_bolt_v01_frames.png",
+        "previews/hel_death_bolt_v01_rotate.png"
+      ],
+      "approved": "approved/hel_death_bolt.png",
+      "frame_order": "left_to_right_no_spacing",
+      "generation_records": "records/generation_jobs.json",
+      "public_generation_url": null,
+      "generation_url_note": "内置工具仅返回本地原图路径；真实提示词/参考/结果均归档，不伪造公开URL",
+      "transparent_strategy": "Generated alpha preserved with initial 16-step quantization; RGB/alpha measured separately; zero RGB when alpha0",
+      "loop_mode": "single shot / static; single-shot temporary display fades and frees at end",
+      "remaining_issues": [
+        "完整手动通关、长时平衡及其他设备表现未测；当前为Godot受控技能/视角验证"
+      ],
+      "source_recipe": "records/normalization_hel_death_bolt_v01.json",
+      "runtime_verification": {
+        "report": "integration_2026-10-19/README.md",
+        "scope": "actual Godot Game scenes with controlled skill triggers; full playthrough and long-session balance not tested",
+        "automated_assertions": 572,
+        "failures": 0,
+        "formal_PNG_changed": false
+      }
+    }
+  ],
+  "originals": [
+    {
+      "file": "originals/hel_death_bolt_v01.png",
+      "sha256": "069062cb8eb29c9cb77eec0a372bb8675e8463d8b028dcbc6140c7c34b5625f4"
+    },
+    {
+      "file": "originals/thokk_attack_v01.png",
+      "sha256": "c91a50dd7d32b3305eed54c269848894a7f9976701df619e9d6836d64c96205c"
+    },
+    {
+      "file": "originals/thokk_attack_v02.png",
+      "sha256": "49ad8d813e5bf7349fc2ee8925bf1979fcda84e55486174518b78252e9536e2a"
+    },
+    {
+      "file": "originals/thokk_move_v01.png",
+      "sha256": "481d176537bee529c759f5e8431bd08a370a1175d864e45d9ce5f89fbb260619"
+    },
+    {
+      "file": "originals/thokk_v01.png",
+      "sha256": "0d78e87972602e83d5c5c9d057852ada4db9a32b62281060b1632b20f155b732"
+    }
+  ],
+  "generation_records": "records/generation_jobs.json",
+  "limitations": [
+    "Technical measurements and local previews do not prove Godot gameplay acceptance."
+  ],
+  "source_inventory": "records/source_inventory.json",
+  "runtime_verification": {
+    "report": "integration_2026-10-19/README.md",
+    "scope": "controlled Game viewport and gameplay assertions; not a complete manual run"
+  }
+}

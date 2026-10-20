@@ -11,7 +11,7 @@ signal ult_changed(energy: float, cost: float)
 signal ult_cast(character_id: String)
 
 const SPRITE_HEIGHT := 48.0
-const MAX_LEVEL := 30
+const MAX_LEVEL := 40
 const XP_STEP := 6  # 每升一级，下一级多要这么多经验（2 级要 5，3 级要 11，4 级要 17……）
 const RADIUS := 14.0
 const INVINCIBLE_DURATION := 0.5  # 受伤后的无敌时间，防止一瞬间被怪群秒杀
@@ -386,6 +386,8 @@ func take_damage(amount: float) -> void:
 
 ## 信仰一位新的神：信仰 1，获得他的神术
 func add_god(god_id: String) -> void:
+	if faith.has(god_id) or faith.size() >= UpgradeDB.MAX_GODS:
+		return
 	faith[god_id] = 1
 	var power := GodPower.create(god_id)
 	gods[god_id] = power
@@ -406,7 +408,7 @@ func weapon_damage_bonus(bonus: float) -> void:
 
 ## 持续伤害（吸血、冥雾）：不触发受伤后的无敌和闪烁，闪避也躲不掉
 func take_dot(amount: float) -> void:
-	if is_dead or shield_time > 0.0:
+	if is_dead or shield_time > 0.0 or immune_time > 0.0:
 		return
 	hp = maxf(0.0, hp - amount)
 	hp_changed.emit(hp, max_hp)

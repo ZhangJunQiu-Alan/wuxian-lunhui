@@ -1,0 +1,8 @@
+{
+  "id": "hel_shift",
+  "version": "v01",
+  "prompt": "Use case: stylized-concept. Production pixel-art underworld game texture/effect; inputs are project-owned style references only, do not copy character or existing pool/ring form. Neutral pale grey particle teleport wisp with a slight desaturated green and violet tinge, designed for code tinting. Four ONESHOT phases: few motes gather around center, brief thin vertical split of mist, wisps expand sideways and break, sparse fading grey motes. No person, opaque portal disc or permanent symbol. Low alpha, center mostly transparent, no blue ice or fire. EXACTLY FOUR DISTINCT frames in2columns2rows, identical cell aspect96:96, native96x96 per cell. Stable camera, pivot and scale; clear occurrence, peak and decay unless explicitly looping. Desaturated grey-green and grey-violet, extremely restrained luminance, limited32RGB colors, crisp pixel clusters, alpha steps. Genuine transparent background between marks, no opaque square backing or drop shadow. No text, labels, grid, frame, watermark, scenery, body or ship. Entire effect fits inside each frame; repeated tiles/strips must flow through their matching edges.",
+  "reference_paths": [
+    "assets/sprites/bosses/hel.png"
+  ]
+}

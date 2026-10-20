@@ -1,0 +1,68 @@
+{
+  "input": "originals/hel_domain_edge_v01.png",
+  "input_sha256": "860469d484cf58fda6cc177f6e4b23efec9d88993e0795c4703543cb5f8b4bbe",
+  "raw_size": [
+    1774,
+    887
+  ],
+  "grid": [
+    2,
+    2
+  ],
+  "cut_boxes": [
+    [
+      21,
+      232,
+      866,
+      369
+    ],
+    [
+      20,
+      157,
+      865,
+      396
+    ],
+    [
+      21,
+      116,
+      866,
+      368
+    ],
+    [
+      21,
+      187,
+      865,
+      336
+    ]
+  ],
+  "single_common_scale": 0.07100591715976332,
+  "placements": [
+    [
+      2,
+      11,
+      60,
+      10
+    ],
+    [
+      2,
+      7,
+      60,
+      17
+    ],
+    [
+      2,
+      7,
+      60,
+      18
+    ],
+    [
+      2,
+      10,
+      60,
+      11
+    ]
+  ],
+  "operations": "original alpha threshold/quantization, source frame cuts, single common nearest resize, source-derived shared palette, whole-frame placement; no character/effect drawing",
+  "candidate": "candidates/hel_domain_edge_v01.png",
+  "candidate_sha256": "701cfa8c2fbfdc7dfe4e8ae393ae5e3fa003b0ae6eedaa5e00e770fbc2807593"
+}

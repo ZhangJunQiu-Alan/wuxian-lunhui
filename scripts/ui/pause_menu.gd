@@ -79,7 +79,7 @@ func _notification(what: int) -> void:
 
 ## 升级选择、结算界面等已经暂停游戏时，不再叠加暂停菜单
 func _can_pause() -> bool:
-	return not get_tree().paused and is_instance_valid(game) and not game.player.is_dead
+	return not get_tree().paused and is_instance_valid(game) and game.is_running() and not game.player.is_dead
 
 
 func open() -> void:
@@ -94,7 +94,8 @@ func open() -> void:
 func close() -> void:
 	_settings.visible = false
 	_root.visible = false
-	get_tree().paused = false
+	if game.is_running():
+		get_tree().paused = false
 
 
 func _open_settings() -> void:

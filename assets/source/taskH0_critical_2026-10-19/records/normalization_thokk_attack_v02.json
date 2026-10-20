@@ -1,0 +1,68 @@
+{
+  "input": "originals/thokk_attack_v02.png",
+  "input_sha256": "49ad8d813e5bf7349fc2ee8925bf1979fcda84e55486174518b78252e9536e2a",
+  "raw_size": [
+    1254,
+    1254
+  ],
+  "grid": [
+    2,
+    2
+  ],
+  "cut_boxes": [
+    [
+      125,
+      54,
+      522,
+      603
+    ],
+    [
+      90,
+      57,
+      497,
+      603
+    ],
+    [
+      105,
+      32,
+      539,
+      578
+    ],
+    [
+      111,
+      32,
+      528,
+      578
+    ]
+  ],
+  "single_common_scale": 0.16029143897996356,
+  "placements": [
+    [
+      16,
+      4,
+      64,
+      88
+    ],
+    [
+      16,
+      4,
+      65,
+      88
+    ],
+    [
+      13,
+      4,
+      70,
+      88
+    ],
+    [
+      14,
+      4,
+      67,
+      88
+    ]
+  ],
+  "operations": "original alpha threshold/quantization, source frame cuts, single common nearest resize, source-derived shared palette, whole-frame placement; no character/effect drawing",
+  "candidate": "candidates/thokk_attack_v02.png",
+  "candidate_sha256": "cc7b7364e7dcc4f542d3bb902635ff07b53bb06bf829aee920aab2960ca3dbef"
+}

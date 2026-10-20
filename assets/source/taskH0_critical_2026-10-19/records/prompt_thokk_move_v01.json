@@ -1,0 +1,11 @@
+{
+  "id": "thokk_move",
+  "version": "v01",
+  "prompt": "Use case: identity-preserve. Production pixel-art enemy animation for a 96x96 per-frame game sprite. Image 1 is the approved neutral sprite, image 2 is its high-resolution original for identity. Preserve EXACTLY the same elderly female giant, hooked nose, grey braided long hair, stone-grey skin, torn plum patched dress, ragged fur shawl, belt and wrapped boots, body proportions and color placements. Facing RIGHT throughout. No weapon, beard, shield, effects, ground, shadow or scenery. Pure transparent background, no grid lines, labels, numbers, text or watermark. Dense crisp pixel clusters, limited 48-color palette, same top-left lighting. All cells have the same camera, scale, hip center, and planted-foot baseline. Full silhouette including hands and feet stays inside each cell with generous margins. One animation sheet with EXACTLY SIX equally-sized SQUARE cells in a 3-column by 2-row grid, read left-to-right then next row. SIX DISTINCT coherent walk keyframes: 1 near leg reaches forward, far leg back; 2 weight lands on front leg, opposite heel rises; 3 legs pass under hips with the free foot lifted; 4 far leg reaches forward, near leg back; 5 weight transfers to opposite planted leg; 6 opposite passing pose leading smoothly back to frame 1. Heavy slow bipedal gait, visibly alternating bent knees and boot placements, slight arm swing opposed to legs. Head, waist and hem retain consistent shape. No skating, no duplicate frames, no excessive bobbing. Character remains upright and centered, not traveling across the sheet. Both feet can be seen under the shorter frayed front hem. Sheet aspect ratio 3:2.",
+  "reference_paths": [
+    "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskH0_critical_2026-10-19/candidates/thokk_v01.png",
+    "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskH0_critical_2026-10-19/originals/thokk_v01.png"
+  ],
+  "columns": 3,
+  "rows": 2
+}

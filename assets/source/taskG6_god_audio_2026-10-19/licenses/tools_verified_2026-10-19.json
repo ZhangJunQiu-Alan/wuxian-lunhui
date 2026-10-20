@@ -1,0 +1,21 @@
+{
+  "date": "2026-10-19",
+  "jsfxr": {
+    "page": "https://sfxr.me/",
+    "commercial_reference": "https://pro.sfxr.me/features-and-pricing",
+    "output": "Official site explicitly permits unrestricted commercial use in free tier; no account or payment used.",
+    "software": "Unlicense https://github.com/chr15m/jsfxr/blob/master/UNLICENSE",
+    "actual_use": "44 Chrome renders;24 normal link downloads and20 DOM WAV export saves"
+  },
+  "ChipTone": {
+    "page": "https://sfbgames.itch.io/chiptone",
+    "license": "Author explicitly licenses generated sounds CC0",
+    "actual_use": "Comparison only, not used to generate G6 sound"
+  },
+  "processors": {
+    "Python": "standard library; project-owned processing code",
+    "NumPy": "BSD3-clause, as verified in taskB",
+    "FFmpeg": "8.1.1 GPLv3 or later, as verified in taskB; offline tool only, not bundled with game"
+  },
+  "third_party_inputs": "Each input associated with author/page/license and SHA256 in manifest; reused CC0 records retained."
+}

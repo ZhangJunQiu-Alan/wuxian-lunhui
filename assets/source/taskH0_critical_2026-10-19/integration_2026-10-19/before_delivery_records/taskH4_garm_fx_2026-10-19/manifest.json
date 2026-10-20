@@ -1,0 +1,595 @@
+{
+  "task_id": "H4",
+  "date": "2026-10-19",
+  "production": "delivered",
+  "self_review": "pass",
+  "code_integration": "not_performed",
+  "game_acceptance": "not_performed",
+  "files": [
+    {
+      "task": "H4",
+      "id": "garm_bite",
+      "w": 64,
+      "h": 64,
+      "frames": 4,
+      "fps": 16,
+      "flags": [
+        "rotate"
+      ],
+      "anchor": [
+        32,
+        32
+      ],
+      "columns": 2,
+      "rows": 2,
+      "loop": false,
+      "hook": "scripts/bosses/garm.gd _update_state() lunge",
+      "keep": "三段扑击的接触表现；保留3次重瞄、速度820、0.24秒与伤害",
+      "reference_paths": [
+        "assets/sprites/bosses/garm.png"
+      ],
+      "target": "assets/sprites/effects/bosses/garm_bite.png",
+      "source_root": "assets/source/taskH4_garm_fx_2026-10-19",
+      "archived_references": [
+        {
+          "project_path": "assets/sprites/bosses/garm.png",
+          "archived_path": "references/garm.png",
+          "sha256": "23e629a34921e815b0d45fb05b4f703ddfa6b1fdec13e4a74cc4888382f50c1e"
+        }
+      ],
+      "version": "v01",
+      "final_path": "assets/sprites/effects/bosses/garm_bite.png",
+      "candidate": "candidates/garm_bite_v01.png",
+      "sha256": "95402ffcaec4881b71e39ce05ba1d8f97cf31c6fe838733dd5259c7cee55eb62",
+      "actual_RGB_colors": 31,
+      "actual_alpha_values": [
+        0,
+        36,
+        72,
+        108,
+        144,
+        180,
+        216,
+        252
+      ],
+      "frame_bboxes": [
+        [
+          11,
+          3,
+          52,
+          61
+        ],
+        [
+          6,
+          10,
+          58,
+          54
+        ],
+        [
+          3,
+          6,
+          59,
+          56
+        ],
+        [
+          15,
+          7,
+          62,
+          56
+        ]
+      ],
+      "technical_checks": {
+        "PNG_RGBA": true,
+        "exact_strip_dimensions": true,
+        "RGB_within_48": true,
+        "transparent_background": true,
+        "every_frame_nonempty": true,
+        "distinct_original_frames": true,
+        "2px_margin_or_tiling_exception": true,
+        "GIF_native_decoded_pixel_match": true,
+        "GIF_native_average_fps": true,
+        "GIF_slow8_decoded_pixel_match": true,
+        "GIF_slow8_average_fps": true
+      },
+      "visual_review": {
+        "status": "passed",
+        "observations": "已逐格看1倍/4倍：暗红牙形上下弧合拢、接触亮点、撕扯红痕及衰减，和冷紫撕咬明显区分；无猎犬身体/大块血雾。"
+      },
+      "code_integration": "not_performed",
+      "game_acceptance": "not_performed",
+      "source_license": {
+        "tool": "OpenAI built-in image_gen",
+        "commercial_basis": "existing approved OpenAI output terms; project-owned input references",
+        "terms_url": "https://openai.com/policies/terms-of-use/",
+        "processing": "Pillow MIT-CMU, source cuts/alpha/palette/nearest resize/placement and preview only"
+      },
+      "previews": [
+        "previews/garm_bite_v01_frames.png",
+        "previews/garm_bite_v01_native.gif",
+        "previews/garm_bite_v01_rotate.png",
+        "previews/garm_bite_v01_slow8.gif"
+      ],
+      "approved": "approved/garm_bite.png",
+      "frame_order": "left_to_right_no_spacing",
+      "generation_records": "records/generation_jobs.json",
+      "public_generation_url": null,
+      "generation_url_note": "内置工具仅返回本地原图路径；真实提示词/参考/结果均归档，不伪造公开URL",
+      "transparent_strategy": "Generated alpha quantized to 8 source levels then optional low-alpha cap; RGB count and alpha recorded separately; zero RGB when alpha0",
+      "loop_mode": "single shot / static; single-shot temporary display fades and frees at end",
+      "remaining_issues": [
+        "代码接入未执行",
+        "游戏内朝向/锚点/范围/遮挡/帧率/节点清理未测"
+      ],
+      "source_recipe": "records/normalization_garm_bite_v01.json"
+    },
+    {
+      "task": "H4",
+      "id": "garm_howl_wave",
+      "w": 128,
+      "h": 128,
+      "frames": 4,
+      "fps": 8,
+      "flags": [
+        "area",
+        "hole"
+      ],
+      "anchor": [
+        64,
+        64
+      ],
+      "columns": 2,
+      "rows": 2,
+      "loop": false,
+      "hook": "scripts/bosses/garm.gd _howl()",
+      "keep": "替换FxLayer.ring冰霜通用圈；外沿对应HOWL_RADIUS260；保留伤害/震退/驱散",
+      "reference_paths": [
+        "assets/sprites/bosses/garm.png"
+      ],
+      "target": "assets/sprites/effects/bosses/garm_howl_wave.png",
+      "source_root": "assets/source/taskH4_garm_fx_2026-10-19",
+      "archived_references": [
+        {
+          "project_path": "assets/sprites/bosses/garm.png",
+          "archived_path": "references/garm.png",
+          "sha256": "23e629a34921e815b0d45fb05b4f703ddfa6b1fdec13e4a74cc4888382f50c1e"
+        }
+      ],
+      "version": "v01",
+      "final_path": "assets/sprites/effects/bosses/garm_howl_wave.png",
+      "candidate": "candidates/garm_howl_wave_v01.png",
+      "sha256": "698f947a546f3e6fd3c6ad8e34771cd9572ec1438b8a94b105cb87608defaec8",
+      "actual_RGB_colors": 30,
+      "actual_alpha_values": [
+        0,
+        28,
+        56,
+        84,
+        112,
+        140,
+        168,
+        197
+      ],
+      "frame_bboxes": [
+        [
+          33,
+          33,
+          95,
+          95
+        ],
+        [
+          6,
+          11,
+          121,
+          117
+        ],
+        [
+          2,
+          2,
+          126,
+          125
+        ],
+        [
+          4,
+          5,
+          123,
+          123
+        ]
+      ],
+      "technical_checks": {
+        "PNG_RGBA": true,
+        "exact_strip_dimensions": true,
+        "RGB_within_48": true,
+        "transparent_background": true,
+        "every_frame_nonempty": true,
+        "distinct_original_frames": true,
+        "2px_margin_or_tiling_exception": true,
+        "transparent_center": true,
+        "GIF_native_decoded_pixel_match": true,
+        "GIF_native_average_fps": true,
+        "GIF_slow8_decoded_pixel_match": true,
+        "GIF_slow8_average_fps": true
+      },
+      "visual_review": {
+        "status": "passed",
+        "observations": "已逐格及地面叠加：暗红声波外扩、中心透明，亮度在深灰地面可辨，无冰晶或共用蓝霜圈；实际260半径由代码遮罩。"
+      },
+      "code_integration": "not_performed",
+      "game_acceptance": "not_performed",
+      "source_license": {
+        "tool": "OpenAI built-in image_gen",
+        "commercial_basis": "existing approved OpenAI output terms; project-owned input references",
+        "terms_url": "https://openai.com/policies/terms-of-use/",
+        "processing": "Pillow MIT-CMU, source cuts/alpha/palette/nearest resize/placement and preview only"
+      },
+      "previews": [
+        "previews/garm_howl_wave_v01_frames.png",
+        "previews/garm_howl_wave_v01_ground.png",
+        "previews/garm_howl_wave_v01_native.gif",
+        "previews/garm_howl_wave_v01_slow8.gif"
+      ],
+      "approved": "approved/garm_howl_wave.png",
+      "frame_order": "left_to_right_no_spacing",
+      "generation_records": "records/generation_jobs.json",
+      "public_generation_url": null,
+      "generation_url_note": "内置工具仅返回本地原图路径；真实提示词/参考/结果均归档，不伪造公开URL",
+      "transparent_strategy": "Generated alpha quantized to 8 source levels then optional low-alpha cap; RGB count and alpha recorded separately; zero RGB when alpha0",
+      "loop_mode": "single shot / static; single-shot temporary display fades and frees at end",
+      "remaining_issues": [
+        "代码接入未执行",
+        "游戏内朝向/锚点/范围/遮挡/帧率/节点清理未测"
+      ],
+      "source_recipe": "records/normalization_garm_howl_wave_v01.json"
+    },
+    {
+      "task": "H4",
+      "id": "garm_chain_link",
+      "w": 16,
+      "h": 8,
+      "frames": 1,
+      "fps": 0,
+      "flags": [
+        "chain",
+        "rotate"
+      ],
+      "anchor": [
+        8,
+        4
+      ],
+      "columns": 1,
+      "rows": 1,
+      "loop": false,
+      "hook": "scripts/bosses/garm.gd _draw_telegraph() not _free 锁链绘制",
+      "keep": "沿现有11点下垂曲线逐节等距排列、按切线旋转；禁止整条拉伸；保留锁桩/范围420",
+      "reference_paths": [
+        "assets/sprites/bosses/garm.png"
+      ],
+      "target": "assets/sprites/effects/bosses/garm_chain_link.png",
+      "source_root": "assets/source/taskH4_garm_fx_2026-10-19",
+      "archived_references": [
+        {
+          "project_path": "assets/sprites/bosses/garm.png",
+          "archived_path": "references/garm.png",
+          "sha256": "23e629a34921e815b0d45fb05b4f703ddfa6b1fdec13e4a74cc4888382f50c1e"
+        }
+      ],
+      "version": "v01",
+      "final_path": "assets/sprites/effects/bosses/garm_chain_link.png",
+      "candidate": "candidates/garm_chain_link_v01.png",
+      "sha256": "0690ac7df91450f75578ee42d150c58d1213e76d5f351e68070fe4f00f2ef7e1",
+      "actual_RGB_colors": 16,
+      "actual_alpha_values": [
+        0,
+        255
+      ],
+      "frame_bboxes": [
+        [
+          0,
+          2,
+          16,
+          6
+        ]
+      ],
+      "technical_checks": {
+        "PNG_RGBA": true,
+        "exact_strip_dimensions": true,
+        "RGB_within_48": true,
+        "transparent_background": true,
+        "every_frame_nonempty": true,
+        "distinct_original_frames": true,
+        "2px_margin_or_tiling_exception": true,
+        "binary_alpha": true,
+        "identical_repeat_ports": true
+      },
+      "visual_review": {
+        "status": "passed",
+        "observations": "已看16×8原尺寸、4倍和0/90/180旋转：横向铁链节，中央6×2透明孔可见，RGB16色，二值alpha；左右源像素端口一致，连接轴y4。"
+      },
+      "code_integration": "not_performed",
+      "game_acceptance": "not_performed",
+      "source_license": {
+        "tool": "OpenAI built-in image_gen",
+        "commercial_basis": "existing approved OpenAI output terms; project-owned input references",
+        "terms_url": "https://openai.com/policies/terms-of-use/",
+        "processing": "Pillow MIT-CMU, source cuts/alpha/palette/nearest resize/placement and preview only"
+      },
+      "previews": [
+        "previews/garm_chain_link_v01_frames.png",
+        "previews/garm_chain_link_v01_rotate.png",
+        "previews/garm_chain_link_v01_stretch.png"
+      ],
+      "approved": "approved/garm_chain_link.png",
+      "frame_order": "left_to_right_no_spacing",
+      "generation_records": "records/generation_jobs.json",
+      "public_generation_url": null,
+      "generation_url_note": "内置工具仅返回本地原图路径；真实提示词/参考/结果均归档，不伪造公开URL",
+      "transparent_strategy": "RGBA binary alpha0/255; zero RGB when alpha0",
+      "loop_mode": "single shot / static; single-shot temporary display fades and frees at end",
+      "remaining_issues": [
+        "代码接入未执行",
+        "游戏内朝向/锚点/范围/遮挡/帧率/节点清理未测"
+      ],
+      "source_recipe": "records/normalization_garm_chain_link_v01.json"
+    },
+    {
+      "task": "H4",
+      "id": "garm_chain_break",
+      "w": 64,
+      "h": 64,
+      "frames": 4,
+      "fps": 16,
+      "flags": [
+        "area"
+      ],
+      "anchor": [
+        32,
+        32
+      ],
+      "columns": 2,
+      "rows": 2,
+      "loop": false,
+      "hook": "scripts/bosses/garm.gd _on_stake_broken()",
+      "keep": "锁桩断裂点及最后挣脱点各触发；保留_free、速度倍率1.5、承伤1.3",
+      "reference_paths": [
+        "assets/sprites/bosses/garm.png"
+      ],
+      "target": "assets/sprites/effects/bosses/garm_chain_break.png",
+      "source_root": "assets/source/taskH4_garm_fx_2026-10-19",
+      "archived_references": [
+        {
+          "project_path": "assets/sprites/bosses/garm.png",
+          "archived_path": "references/garm.png",
+          "sha256": "23e629a34921e815b0d45fb05b4f703ddfa6b1fdec13e4a74cc4888382f50c1e"
+        }
+      ],
+      "version": "v01",
+      "final_path": "assets/sprites/effects/bosses/garm_chain_break.png",
+      "candidate": "candidates/garm_chain_break_v01.png",
+      "sha256": "ea6db7b77f6c20d6eb278a9411e50322db86a192a7879ab651ce86ad1a734093",
+      "actual_RGB_colors": 26,
+      "actual_alpha_values": [
+        0,
+        28,
+        56,
+        84,
+        112,
+        140,
+        168,
+        197
+      ],
+      "frame_bboxes": [
+        [
+          2,
+          17,
+          61,
+          47
+        ],
+        [
+          2,
+          15,
+          62,
+          49
+        ],
+        [
+          7,
+          16,
+          57,
+          47
+        ],
+        [
+          9,
+          19,
+          54,
+          44
+        ]
+      ],
+      "technical_checks": {
+        "PNG_RGBA": true,
+        "exact_strip_dimensions": true,
+        "RGB_within_48": true,
+        "transparent_background": true,
+        "every_frame_nonempty": true,
+        "distinct_original_frames": true,
+        "2px_margin_or_tiling_exception": true,
+        "GIF_native_decoded_pixel_match": true,
+        "GIF_native_average_fps": true,
+        "GIF_slow8_decoded_pixel_match": true,
+        "GIF_slow8_average_fps": true
+      },
+      "visual_review": {
+        "status": "passed",
+        "observations": "已看4格：灰铁链端崩开、少量橙火星、少数铁屑、稀薄余烬，背景透明，不留下锁桩/永久残骸。"
+      },
+      "code_integration": "not_performed",
+      "game_acceptance": "not_performed",
+      "source_license": {
+        "tool": "OpenAI built-in image_gen",
+        "commercial_basis": "existing approved OpenAI output terms; project-owned input references",
+        "terms_url": "https://openai.com/policies/terms-of-use/",
+        "processing": "Pillow MIT-CMU, source cuts/alpha/palette/nearest resize/placement and preview only"
+      },
+      "previews": [
+        "previews/garm_chain_break_v01_frames.png",
+        "previews/garm_chain_break_v01_ground.png",
+        "previews/garm_chain_break_v01_native.gif",
+        "previews/garm_chain_break_v01_slow8.gif"
+      ],
+      "approved": "approved/garm_chain_break.png",
+      "frame_order": "left_to_right_no_spacing",
+      "generation_records": "records/generation_jobs.json",
+      "public_generation_url": null,
+      "generation_url_note": "内置工具仅返回本地原图路径；真实提示词/参考/结果均归档，不伪造公开URL",
+      "transparent_strategy": "Generated alpha quantized to 8 source levels then optional low-alpha cap; RGB count and alpha recorded separately; zero RGB when alpha0",
+      "loop_mode": "single shot / static; single-shot temporary display fades and frees at end",
+      "remaining_issues": [
+        "代码接入未执行",
+        "游戏内朝向/锚点/范围/遮挡/帧率/节点清理未测"
+      ],
+      "source_recipe": "records/normalization_garm_chain_break_v01.json"
+    },
+    {
+      "task": "H4",
+      "id": "garm_dispel",
+      "w": 64,
+      "h": 64,
+      "frames": 4,
+      "fps": 8,
+      "flags": [
+        "area",
+        "hole"
+      ],
+      "anchor": [
+        32,
+        32
+      ],
+      "columns": 2,
+      "rows": 2,
+      "loop": false,
+      "hook": "scripts/bosses/garm.gd _howl() 清除frenzy_time/shield_time分支",
+      "keep": "玩家周围短暂碎光；不改变增益清除，不像死亡、不遮角色",
+      "reference_paths": [
+        "assets/sprites/effects/gods/freyja_ring.png"
+      ],
+      "target": "assets/sprites/effects/bosses/garm_dispel.png",
+      "source_root": "assets/source/taskH4_garm_fx_2026-10-19",
+      "archived_references": [
+        {
+          "project_path": "assets/sprites/effects/gods/freyja_ring.png",
+          "archived_path": "references/freyja_ring.png",
+          "sha256": "63fdf5560ee273789d6fe8888beb67c8241c2852e3d9b463723dc7491f2245b4"
+        }
+      ],
+      "version": "v01",
+      "final_path": "assets/sprites/effects/bosses/garm_dispel.png",
+      "candidate": "candidates/garm_dispel_v01.png",
+      "sha256": "12e749f7e5f8f5d7f9ddf94fb8615064c6d4a40b55666ca061a4fa1298a564e1",
+      "actual_RGB_colors": 26,
+      "actual_alpha_values": [
+        0,
+        28,
+        56,
+        84,
+        112,
+        140,
+        168,
+        197
+      ],
+      "frame_bboxes": [
+        [
+          3,
+          3,
+          60,
+          61
+        ],
+        [
+          2,
+          3,
+          62,
+          60
+        ],
+        [
+          2,
+          2,
+          62,
+          62
+        ],
+        [
+          5,
+          7,
+          58,
+          57
+        ]
+      ],
+      "technical_checks": {
+        "PNG_RGBA": true,
+        "exact_strip_dimensions": true,
+        "RGB_within_48": true,
+        "transparent_background": true,
+        "every_frame_nonempty": true,
+        "distinct_original_frames": true,
+        "2px_margin_or_tiling_exception": true,
+        "transparent_center": true,
+        "GIF_native_decoded_pixel_match": true,
+        "GIF_native_average_fps": true,
+        "GIF_slow8_decoded_pixel_match": true,
+        "GIF_slow8_average_fps": true
+      },
+      "visual_review": {
+        "status": "passed",
+        "observations": "已看4格：淡金灰增益环碎裂后红灰碎点消散，中心透空，没有玩家身体、骷髅、死亡或伤害血雾符号。"
+      },
+      "code_integration": "not_performed",
+      "game_acceptance": "not_performed",
+      "source_license": {
+        "tool": "OpenAI built-in image_gen",
+        "commercial_basis": "existing approved OpenAI output terms; project-owned input references",
+        "terms_url": "https://openai.com/policies/terms-of-use/",
+        "processing": "Pillow MIT-CMU, source cuts/alpha/palette/nearest resize/placement and preview only"
+      },
+      "previews": [
+        "previews/garm_dispel_v01_frames.png",
+        "previews/garm_dispel_v01_ground.png",
+        "previews/garm_dispel_v01_native.gif",
+        "previews/garm_dispel_v01_slow8.gif"
+      ],
+      "approved": "approved/garm_dispel.png",
+      "frame_order": "left_to_right_no_spacing",
+      "generation_records": "records/generation_jobs.json",
+      "public_generation_url": null,
+      "generation_url_note": "内置工具仅返回本地原图路径；真实提示词/参考/结果均归档，不伪造公开URL",
+      "transparent_strategy": "Generated alpha quantized to 8 source levels then optional low-alpha cap; RGB count and alpha recorded separately; zero RGB when alpha0",
+      "loop_mode": "single shot / static; single-shot temporary display fades and frees at end",
+      "remaining_issues": [
+        "代码接入未执行",
+        "游戏内朝向/锚点/范围/遮挡/帧率/节点清理未测"
+      ],
+      "source_recipe": "records/normalization_garm_dispel_v01.json"
+    }
+  ],
+  "originals": [
+    {
+      "file": "originals/garm_bite_v01.png",
+      "sha256": "5dc37947104e4c863abf49a7b4ed84dbb5d9c5b26753a365e754993bea1e7ff0"
+    },
+    {
+      "file": "originals/garm_chain_break_v01.png",
+      "sha256": "68f3cf44cb5c44d8b844aff5b5c403757e462a5ec26f5a4a099bcb7f585f6730"
+    },
+    {
+      "file": "originals/garm_chain_link_v01.png",
+      "sha256": "3986737874091c872067eb049e8d9bb48a86471fcc25e63bff88c9b8ccf55169"
+    },
+    {
+      "file": "originals/garm_dispel_v01.png",
+      "sha256": "baad61d10d029cbcfc7233d54de850a55877a79ba4be7c7af2b5e5982ac9b320"
+    },
+    {
+      "file": "originals/garm_howl_wave_v01.png",
+      "sha256": "7f1ed9e707ca403b018b706b8e419ead8bee0c8328a9fa9cbc449e665a6c4426"
+    }
+  ],
+  "generation_records": "records/generation_jobs.json",
+  "limitations": [
+    "Technical measurements and local previews do not prove Godot gameplay acceptance."
+  ],
+  "source_inventory": "records/source_inventory.json"
+}

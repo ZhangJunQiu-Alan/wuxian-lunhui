@@ -1,0 +1,56 @@
+{
+  "input": "originals/skoll_howl_body_v01.png",
+  "input_sha256": "0da74c2b1acabff67e72001ad19d28fe665a1e12142f0115d62aff94a136710b",
+  "raw_size": [
+    2172,
+    724
+  ],
+  "grid": [
+    3,
+    1
+  ],
+  "cut_boxes": [
+    [
+      29,
+      123,
+      681,
+      676
+    ],
+    [
+      26,
+      103,
+      664,
+      676
+    ],
+    [
+      26,
+      128,
+      694,
+      676
+    ]
+  ],
+  "single_common_scale": 0.18562874251497005,
+  "placements": [
+    [
+      3,
+      15,
+      121,
+      103
+    ],
+    [
+      5,
+      12,
+      118,
+      106
+    ],
+    [
+      2,
+      16,
+      124,
+      102
+    ]
+  ],
+  "operations": "original alpha threshold/quantization, source frame cuts, single common nearest resize, source-derived shared palette, whole-frame placement; no character/effect drawing",
+  "candidate": "candidates/skoll_howl_body_v01.png",
+  "candidate_sha256": "a6306eea1d7e44da5d5a8a0c749bcd14a339616cfa62b0577a5b5830c7c9a942"
+}

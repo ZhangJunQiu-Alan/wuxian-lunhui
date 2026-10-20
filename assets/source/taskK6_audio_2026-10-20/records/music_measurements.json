@@ -1,0 +1,22 @@
+{
+  "id": "vigrid",
+  "file": "candidates/vigrid.ogg",
+  "duration_s": 92.08018140589569,
+  "sample_rate": 44100,
+  "channels": 2,
+  "codec": "vorbis",
+  "loudness_lufs": -16.01,
+  "true_peak_dbtp": -5.21,
+  "sha256": "0cd32bb7ae0fb001b7f346dcb60bb10d41c5a7a1342d202da70009162cb025ef",
+  "seam_sample_delta": [
+    0.02062737988308072,
+    0.020872805267572403
+  ],
+  "normal_diff_p999": [
+    0.08787302423454857,
+    0.08938339718617502
+  ],
+  "processing": "whole source loop, no phrase deletion; common35Hz/10.5kHz bus; two-pass loudness; no repair at repeat points",
+  "musical_three_loop_listening": "pending",
+  "game_acceptance": "not_tested"
+}

@@ -1,0 +1,21 @@
+{
+  "tool": "image_gen.imagegen",
+  "id": "fenrir_swallow",
+  "action": "swallow",
+  "frames": 6,
+  "fps": 16,
+  "loop": false,
+  "grid": [
+    3,
+    2
+  ],
+  "frame_size": [
+    192,
+    192
+  ],
+  "prompt": "Use case: identity-preserve. Asset: a transparent small pixel-art game animation atlas, not a concept illustration. Image1 is the ONE approved original wolf and the identity/palette/anatomy reference. Preserve the exact same hunched massive charcoal-black wolf: thick matted black-grey fur with silver-grey mane streaks, curled long tail on the left, right-facing huge scarred muzzle, warm ochre eye, many ivory fangs and dark red gums, bronze/iron broken restraint pieces on shoulders and ankles. FOUR legs only, anatomically canine joints and paws, same armor/restraint shapes in every frame. Upper-left light, same detailed pixel density, crisp small pixel clusters at logical192px per square cell. Fixed torso/shoulder position and consistent scale; paws land on a common ground line at logical y189 with 2px transparent margin. Entire tail, claws, nose, ears and fur fit inside each cell with >=2px clear border. No new armor, crowns, horns, limbs, huge aura or scenic elements. Actual alpha transparent background; no ground, cast shadow, grid, text, labels, watermark. No smooth painting, airbrush or blurred edges. Every frame is a different articulated pose of this SAME individual, no duplicate stills, no resizing per frame. LANDSCAPE 3-column by2-row atlas of SIX logical192px cells, no gutters. Body action for a monstrous SWALLOW: first brace low forelegs; second raise upper jaw and lower lower-jaw through the normal hinge; third widest plausible open mouth, throat tense; fourth hold jaw-open contraction of throat; fifth jaws start closing and chest compresses; sixth jaw returns to original opening. Keep wolf body anatomy, skull shape and scale; this is the wolf BODY animation only. The world-sized upper/lower jaw overlay is a separate future asset, so do NOT enlarge mouth outside the cell, add a portal or draw a black hole. No swallowed victims or other creatures.",
+  "referenced_image_paths": [
+    "/Users/zhangjunqiu/Desktop/无限恐怖/assets/sprites/bosses/fenrir.png"
+  ],
+  "transparent_background": true
+}

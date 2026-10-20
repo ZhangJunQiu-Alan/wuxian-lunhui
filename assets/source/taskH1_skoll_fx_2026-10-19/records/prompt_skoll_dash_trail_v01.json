@@ -1,0 +1,8 @@
+{
+  "id": "skoll_dash_trail",
+  "version": "v01",
+  "prompt": "Use case: stylized-concept. Production pixel-art game VFX animation, not a scene illustration. Inputs are project-owned references for crisp clustered pixel texture only. Cool grey-purple high-speed dash trail moving RIGHT. Only three tapering wind ribbons left of the leading anchor at the RIGHT MIDPOINT; no wolf, no animal silhouette, no footprints. Four distinct flowing ribbon phases for a seamless LOOP, ribbon tips curl and break naturally but thickness/extent remain stable. Leading edge ends just inside the right side; the body of the trail extends LEFT. Quiet grey-violet highlights and dark slate tones, no gold, no blue ice crystals. EXACTLY FOUR distinct animation cells in a TWO-COLUMN, TWO-ROW grid, read row-major. Each cell aspect ratio 64:32; final native cell size 64x32. ALL cells have identical camera, scale, center/pivot and generous transparent padding. Entire effect must fit inside each cell. Crisp deliberately limited48RGB palette; alpha transparency allowed for light/smoke, no opaque dark background, no smooth airbrushed gradient. Do not include labels, grid lines, borders, text, watermark, creatures, scenery or ground. Genuine transparent PNG.",
+  "reference_paths": [
+    "assets/sprites/effects/rune_missile.png"
+  ]
+}

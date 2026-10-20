@@ -1,0 +1,11 @@
+{
+  "tool": "image_gen.imagegen",
+  "id": "freyr_heal",
+  "version": "v02",
+  "refs": [
+    "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskK3_fire_2026-10-20/references/freyr_master_12x.png",
+    "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskK3_fire_2026-10-20/originals/freyr_heal_v01_raw.png"
+  ],
+  "prompt": "Use case: precise sprite animation repair. Input1 exact64px in-world master. Input2 failed healing: far-reaching hand is outside64canvas. Redo FOUR body gesture poses in2x2atlas, each logical64square, torso/hips/root and boots fixed exactly like input1, adult58px standing height. Same blond beard/hair, wheat braid, dark green/gold cloak, brooch, brown tunic/trousers/boots, right3/4face, both hands EMPTY. Critical: healing gesture CLOSE TO CHEST, BENT elbows; no arm extends forward past x54. Entire figure incl trailing cape and fingers only within x8..56 andy2..61, with generous alpha margins. Poses0relaxed guard,1both empty palms open together in front of chest,2palms gently raise at chest but elbows BENT close to ribs,3lowerpalms towards relaxed guard. No one-arm forward reach. Same height/proportions/hip position ALL4frames; subtle readable single16fps action. Crisp true small game pixel clusters <=48RGB source palette, upper-left light, binary alpha; no magic/glow/particles/props/weapon/animal/ground/shadow/text/grid/frame/watermark. Actual true zero-alpha background.",
+  "transparent_background": true
+}

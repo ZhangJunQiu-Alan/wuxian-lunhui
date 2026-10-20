@@ -1,0 +1,346 @@
+{
+	"engine": {
+		"build": "official",
+		"hash": "ed1daf0bf001b61586d9930840f2f1394092c079",
+		"hex": 263938,
+		"major": 4,
+		"minor": 7,
+		"patch": 2,
+		"status": "stable",
+		"string": "4.7.2-stable (official)",
+		"timestamp": 0
+	},
+	"image_write_errors": [],
+	"scope": "actual integrated Game viewport with deterministic skill triggers; full playthrough and balance not tested",
+	"screenshots": [
+		{
+			"batch_effects": [],
+			"boss": "skoll",
+			"file": "skoll_windup.png",
+			"state": "windup",
+			"state_time": 0.65,
+			"write_error": 0
+		},
+		{
+			"batch_effects": [],
+			"boss": "skoll",
+			"file": "skoll_dash.png",
+			"state": "dash",
+			"state_time": 0.12,
+			"write_error": 0
+		},
+		{
+			"batch_effects": [
+				"skoll_bite"
+			],
+			"boss": "skoll",
+			"file": "skoll_bite.png",
+			"state": "dash",
+			"state_time": 0.12,
+			"write_error": 0
+		},
+		{
+			"batch_effects": [],
+			"boss": "skoll",
+			"file": "skoll_howl.png",
+			"state": "howl",
+			"state_time": 0.25,
+			"write_error": 0
+		},
+		{
+			"batch_effects": [],
+			"boss": "skoll",
+			"file": "skoll_wolf_summon.png",
+			"state": "howl",
+			"state_time": 0.8,
+			"write_error": 0
+		},
+		{
+			"batch_effects": [
+				"hati_split_flash"
+			],
+			"boss": "hati",
+			"file": "hati_split_and_lunge.png",
+			"state": "lunge",
+			"state_time": 0.12,
+			"write_error": 0
+		},
+		{
+			"batch_effects": [],
+			"boss": "hati",
+			"file": "hati_howl_warning.png",
+			"state": "howl_windup",
+			"state_time": 0.9,
+			"write_error": 0
+		},
+		{
+			"batch_effects": [
+				"hati_howl_wave"
+			],
+			"boss": "hati",
+			"file": "hati_howl_release.png",
+			"state": "recover",
+			"state_time": 0.0,
+			"write_error": 0
+		},
+		{
+			"batch_effects": [
+				"hati_split_flash"
+			],
+			"boss": "hati",
+			"file": "hati_phantom_dissolve.png",
+			"state": "recover",
+			"state_time": 0.0,
+			"write_error": 0
+		},
+		{
+			"batch_effects": [],
+			"boss": "hrym",
+			"file": "hrym_gap_warning.png",
+			"state": "stomp_windup",
+			"state_time": 0.85,
+			"write_error": 0
+		},
+		{
+			"batch_effects": [],
+			"boss": "hrym",
+			"file": "hrym_wave_two_gaps.png",
+			"state": "stomp_windup",
+			"state_time": 0.85,
+			"write_error": 0
+		},
+		{
+			"batch_effects": [
+				"hrym_block_spark"
+			],
+			"boss": "hrym",
+			"file": "hrym_shield_block.png",
+			"state": "shield",
+			"state_time": 0.25,
+			"write_error": 0
+		},
+		{
+			"batch_effects": [],
+			"boss": "hrym",
+			"file": "hrym_shield_rotated.png",
+			"state": "shield",
+			"state_time": 0.25,
+			"write_error": 0
+		},
+		{
+			"batch_effects": [
+				"hrym_guard_summon"
+			],
+			"boss": "hrym",
+			"file": "hrym_guard_summon.png",
+			"state": "shield",
+			"state_time": 0.25,
+			"write_error": 0
+		},
+		{
+			"batch_effects": [],
+			"boss": "hrym",
+			"file": "hrym_ice_cage.png",
+			"state": "chase",
+			"state_time": 0.0,
+			"write_error": 0
+		},
+		{
+			"batch_effects": [
+				"hrym_ice_break"
+			],
+			"boss": "hrym",
+			"file": "hrym_ice_break.png",
+			"state": "chase",
+			"state_time": 0.0,
+			"write_error": 0
+		},
+		{
+			"batch_effects": [],
+			"boss": "garm",
+			"file": "garm_chains_and_warning.png",
+			"state": "bark_windup",
+			"state_time": 0.6,
+			"write_error": 0
+		},
+		{
+			"batch_effects": [
+				"garm_bite"
+			],
+			"boss": "garm",
+			"file": "garm_bite.png",
+			"state": "lunge",
+			"state_time": 0.1,
+			"write_error": 0
+		},
+		{
+			"batch_effects": [
+				"garm_howl_wave",
+				"garm_dispel"
+			],
+			"boss": "garm",
+			"file": "garm_red_howl_dispel.png",
+			"state": "bark",
+			"state_time": 0.1,
+			"write_error": 0
+		},
+		{
+			"batch_effects": [
+				"garm_chain_break"
+			],
+			"boss": "garm",
+			"file": "garm_chain_break.png",
+			"state": "bark",
+			"state_time": 0.1,
+			"write_error": 0
+		},
+		{
+			"batch_effects": [
+				"garm_chain_break"
+			],
+			"boss": "garm",
+			"file": "garm_free.png",
+			"state": "bark",
+			"state_time": 0.1,
+			"write_error": 0
+		},
+		{
+			"batch_effects": [],
+			"boss": "nidhogg",
+			"file": "nidhogg_breath_warning.png",
+			"state": "breath_windup",
+			"state_time": 0.7,
+			"write_error": 0
+		},
+		{
+			"batch_effects": [
+				"nidhogg_poison_breath"
+			],
+			"boss": "nidhogg",
+			"file": "nidhogg_poison_breath.png",
+			"state": "breath",
+			"state_time": 0.1,
+			"write_error": 0
+		},
+		{
+			"batch_effects": [
+				"nidhogg_burrow_dust"
+			],
+			"boss": "nidhogg",
+			"file": "nidhogg_burrow_hidden.png",
+			"state": "under",
+			"state_time": 0.0,
+			"write_error": 0
+		},
+		{
+			"batch_effects": [],
+			"boss": "nidhogg",
+			"file": "nidhogg_under_crack.png",
+			"state": "under",
+			"state_time": 0.8,
+			"write_error": 0
+		},
+		{
+			"batch_effects": [
+				"nidhogg_emerge_burst"
+			],
+			"boss": "nidhogg",
+			"file": "nidhogg_emerge.png",
+			"state": "emerge",
+			"state_time": 0.0,
+			"write_error": 0
+		},
+		{
+			"batch_effects": [],
+			"boss": "nidhogg",
+			"file": "nidhogg_gnaw_flow.png",
+			"state": "gnaw",
+			"state_time": 0.25,
+			"write_error": 0
+		},
+		{
+			"batch_effects": [
+				"nidhogg_gnaw_stagger"
+			],
+			"boss": "nidhogg",
+			"file": "nidhogg_gnaw_interrupt.png",
+			"state": "stagger",
+			"state_time": 0.0,
+			"write_error": 0
+		},
+		{
+			"batch_effects": [],
+			"boss": "hel",
+			"file": "hel_ground_and_domain.png",
+			"state": "chase",
+			"state_time": 0.0,
+			"write_error": 0
+		},
+		{
+			"batch_effects": [
+				"hel_heal"
+			],
+			"boss": "hel",
+			"file": "hel_life_heal.png",
+			"state": "chase",
+			"state_time": 0.0,
+			"write_error": 0
+		},
+		{
+			"batch_effects": [
+				"hel_army_summon"
+			],
+			"boss": "hel",
+			"file": "hel_death_summon.png",
+			"state": "chase",
+			"state_time": 0.0,
+			"write_error": 0
+		},
+		{
+			"batch_effects": [
+				"hel_army_summon"
+			],
+			"boss": "hel",
+			"file": "hel_army_summon.png",
+			"state": "chase",
+			"state_time": 0.0,
+			"write_error": 0
+		},
+		{
+			"batch_effects": [
+				"hel_shift"
+			],
+			"boss": "hel",
+			"file": "hel_shift.png",
+			"state": "chase",
+			"state_time": 0.0,
+			"write_error": 0
+		},
+		{
+			"batch_effects": [],
+			"boss": "hel",
+			"file": "hel_death_bolts.png",
+			"state": "cast",
+			"state_time": 0.0,
+			"write_error": 0
+		},
+		{
+			"batch_effects": [
+				"hel_board_ship"
+			],
+			"boss": "hel",
+			"file": "hel_board_ship.png",
+			"state": "ship",
+			"state_time": 0.0,
+			"write_error": 0
+		},
+		{
+			"batch_effects": [],
+			"boss": "hel",
+			"file": "hel_nail_barrage.png",
+			"state": "ship",
+			"state_time": 0.0,
+			"write_error": 0
+		}
+	]
+}

@@ -20,7 +20,10 @@ func _init() -> void:
 func _on_accept() -> void:
 	for i in CHAINS:
 		var pos := Game.clamp_to_map(marker_pos + Vector2(-270 + 180 * i, -60 + (i % 2) * 90), 60.0)
-		var chain := game.spawn_enemy("anchor_chain", MapLayer.push_out(pos, 20.0))
+		var chain := game.spawn_enemy("anchor_chain", MapLayer.push_out(pos, 20.0), false, true)
+		if chain == null:
+			complete(false)
+			return
 		_chains.append(chain)
 		chain.killed.connect(func(_e: Enemy) -> void: _chains.erase(chain))
 

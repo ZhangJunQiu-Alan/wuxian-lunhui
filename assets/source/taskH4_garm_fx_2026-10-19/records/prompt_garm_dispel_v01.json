@@ -1,0 +1,8 @@
+{
+  "id": "garm_dispel",
+  "version": "v01",
+  "prompt": "Use case: stylized-concept. Production pixel-art dark underworld VFX; project-owned inputs are only material/style references, do not draw the creature. A temporary shattered buff halo around an intact player, ONLY pale desaturated gold-grey arcs breaking into a few red-grey shards. Completely transparent central40percent diameter in all4 frames; no body, skull, death symbol, explosion or blood. Four ONESHOT phases: thin intact broken halo, halo cracks into pieces, pieces drift outward and dim, only a few dim motes. Subtle low alpha; reads as removal of protection, not death. EXACTLY FOUR DISTINCT frames in a2-column2-row grid, same square cells, native64x64 each, same center/scale across frames. Crisp limited32RGB pixel clusters, desaturated dark red/iron greys, no ice. Sparse alpha steps permitted for light/mist, no opaque backing. Entire silhouette fits cell with transparent padding, except chain repeating ports. No label, text, grid, frame, watermark, body, scene or ground shadow.",
+  "reference_paths": [
+    "assets/sprites/effects/gods/freyja_ring.png"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "tool": "image_gen.imagegen",
+  "id": "surtr_sword_arc",
+  "version": "v02",
+  "refs": [
+    "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskK3_fire_2026-10-20/references/arc_protected_qa.png",
+    "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskK3_fire_2026-10-20/originals/surtr_sword_arc_v01_raw.png"
+  ],
+  "prompt": "Use case: precise game-effect repair. Image1 shows FAILED four fire sword arcs with CYAN PROTECTED center disks. Replace every cyan disk with TRUE ZERO ALPHA, and move ALL flames/embers outside that disk with at least4px extra gap; no small spark intrudes. Logical128square cells2x2atlas, anchorcenter64,64, center radius36 absolutely EMPTY, luminous thin fire crescent exclusively in right-side annulus radii44..58. Keep outer4px frame margin, same circlecenter ALL4 frames; do not recenter or inflate third crescent. Image2 is flame material reference only. Four16fps single phases:0tiny short narrow onset,1developing right crescent,2bright thin contact crescent,3few OUTER fading embers. No sword/body/floor/cloud/full disk, no left-side fire. Fine project pixel clusters<=48RGB red-orange-ivory, restrained semitransparent glow, no fixed lighting/shadow, true transparent background. All cyan guide colors removed; no text/grid/labels/frame/watermark.",
+  "transparent_background": true
+}

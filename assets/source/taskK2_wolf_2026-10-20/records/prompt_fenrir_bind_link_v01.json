@@ -1,0 +1,16 @@
+{
+  "tool": "image_gen.imagegen",
+  "id": "fenrir_bind_link",
+  "frame_size": [
+    16,
+    8
+  ],
+  "frames": 1,
+  "fps": 0,
+  "loop": false,
+  "prompt": "Use case: stylized-concept. One tiny PIXEL-ART material tile for a magical braided ribbon, NOT a whole circle. Image1 is golden-braid material reference only. A SINGLE straight HORIZONTAL ivory/old-gold BRAID segment on true transparent background, no knot or loose end. Logical16x8 canvas, braid runs from LEFT edge to RIGHT edge at center rows3..4, intentional open horizontal connectors; top2 and bottom2 pixel rows stay empty. Two small woven strands, restrained brown underside, upper-left tiny pale highlights, crisp low-resolution clusters about12to16RGB colors, no fuzzy glow. The left/right ends are flat-cut ports with equal braid thickness for repeated tiling; not a steel chain, no large links, ornament, ring, ellipse or character. Wide2:1 composition, one strand segment only. Show large nearest-neighbor pixel blocks. No scenery, ground, shadow, words, label, frame or watermark. True alpha outside the narrow braid.",
+  "refs": [
+    "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskK2_wolf_2026-10-20/originals/fenrir_bind_v03_raw.png"
+  ],
+  "transparent_background": true
+}

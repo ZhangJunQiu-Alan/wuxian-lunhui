@@ -1,0 +1,660 @@
+{
+  "task_id": "H5",
+  "date": "2026-10-19",
+  "production": "delivered",
+  "self_review": "pass",
+  "code_integration": "integrated",
+  "game_acceptance": "controlled_runtime_verified",
+  "files": [
+    {
+      "task": "H5",
+      "id": "nidhogg_poison_breath",
+      "w": 96,
+      "h": 64,
+      "frames": 4,
+      "fps": 16,
+      "flags": [
+        "area",
+        "mouth"
+      ],
+      "anchor": [
+        4,
+        32
+      ],
+      "columns": 2,
+      "rows": 2,
+      "loop": false,
+      "hook": "scripts/bosses/nidhogg.gd _breathe()",
+      "keep": "喷口(4,32)，随_breath_dir旋转；按范围300、半角0.6裁切；保留既有瞬时扇形伤害和3个毒池",
+      "reference_paths": [
+        "assets/sprites/effects/poison_pool.png"
+      ],
+      "target": "assets/sprites/effects/bosses/nidhogg_poison_breath.png",
+      "source_root": "assets/source/taskH5_nidhogg_fx_2026-10-19",
+      "archived_references": [
+        {
+          "project_path": "assets/sprites/effects/poison_pool.png",
+          "archived_path": "references/poison_pool.png",
+          "sha256": "0284bb2e78321311e43248046a820d43920193764e68f64d662d25cd1516374f"
+        }
+      ],
+      "version": "v01",
+      "final_path": "assets/sprites/effects/bosses/nidhogg_poison_breath.png",
+      "candidate": "candidates/nidhogg_poison_breath_v01.png",
+      "sha256": "99d291b294b5a8412bcf449586d1bbf585bbe5ffed37c458185d24fa66f473b7",
+      "actual_RGB_colors": 23,
+      "actual_alpha_values": [
+        0,
+        28,
+        56,
+        84,
+        112,
+        140,
+        168,
+        197
+      ],
+      "frame_bboxes": [
+        [
+          4,
+          6,
+          85,
+          58
+        ],
+        [
+          4,
+          4,
+          94,
+          60
+        ],
+        [
+          4,
+          2,
+          94,
+          62
+        ],
+        [
+          4,
+          4,
+          94,
+          60
+        ]
+      ],
+      "technical_checks": {
+        "PNG_RGBA": true,
+        "exact_strip_dimensions": true,
+        "RGB_within_48": true,
+        "transparent_background": true,
+        "every_frame_nonempty": true,
+        "distinct_original_frames": true,
+        "2px_margin_or_tiling_exception": true,
+        "GIF_native_decoded_pixel_match": true,
+        "GIF_native_average_fps": true,
+        "GIF_slow8_decoded_pixel_match": true,
+        "GIF_slow8_average_fps": true
+      },
+      "visual_review": {
+        "status": "passed",
+        "observations": "已看4格：朝右扇形暗绿毒雾发生—扩张峰值—薄雾散去，窄喷口贴x4、y32；无龙体/毒池，保留左侧留白，需代码按300范围±0.6rad遮罩。"
+      },
+      "code_integration": "integrated",
+      "game_acceptance": "controlled_runtime_verified",
+      "source_license": {
+        "tool": "OpenAI built-in image_gen",
+        "commercial_basis": "existing approved OpenAI output terms; project-owned input references",
+        "terms_url": "https://openai.com/policies/terms-of-use/",
+        "processing": "Pillow MIT-CMU, source cuts/alpha/palette/nearest resize/placement and preview only"
+      },
+      "previews": [
+        "previews/nidhogg_poison_breath_v01_frames.png",
+        "previews/nidhogg_poison_breath_v01_ground.png",
+        "previews/nidhogg_poison_breath_v01_native.gif",
+        "previews/nidhogg_poison_breath_v01_slow8.gif",
+        "previews/nidhogg_poison_breath_v01_stretch.png"
+      ],
+      "approved": "approved/nidhogg_poison_breath.png",
+      "frame_order": "left_to_right_no_spacing",
+      "generation_records": "records/generation_jobs.json",
+      "public_generation_url": null,
+      "generation_url_note": "内置工具仅返回本地原图路径；真实提示词/参考/结果均归档，不伪造公开URL",
+      "transparent_strategy": "Generated alpha quantized to 8 source levels then optional low-alpha cap; RGB count and alpha recorded separately; zero RGB when alpha0",
+      "loop_mode": "single shot / static; single-shot temporary display fades and frees at end",
+      "remaining_issues": [
+        "完整手动通关、长时平衡及其他设备表现未测；当前为Godot受控技能/视角验证"
+      ],
+      "source_recipe": "records/normalization_nidhogg_poison_breath_v01.json",
+      "runtime_verification": {
+        "report": "../taskH0_critical_2026-10-19/integration_2026-10-19/README.md",
+        "scope": "actual Godot Game scenes with controlled skill triggers; full playthrough and long-session balance not tested",
+        "automated_assertions": 572,
+        "failures": 0,
+        "formal_PNG_changed": false
+      }
+    },
+    {
+      "task": "H5",
+      "id": "nidhogg_burrow_dust",
+      "w": 96,
+      "h": 64,
+      "frames": 4,
+      "fps": 16,
+      "flags": [
+        "area"
+      ],
+      "anchor": [
+        48,
+        32
+      ],
+      "columns": 2,
+      "rows": 2,
+      "loop": false,
+      "hook": "scripts/bosses/nidhogg.gd _update_state() burrow 达BURROW_TIME",
+      "keep": "替换潜地入口burst，0.25秒尘后消失；保持set_untouchable(true)隐藏本体与1.3秒地下",
+      "reference_paths": [
+        "assets/sprites/effects/ground_crack.png"
+      ],
+      "target": "assets/sprites/effects/bosses/nidhogg_burrow_dust.png",
+      "source_root": "assets/source/taskH5_nidhogg_fx_2026-10-19",
+      "archived_references": [
+        {
+          "project_path": "assets/sprites/effects/ground_crack.png",
+          "archived_path": "references/ground_crack.png",
+          "sha256": "c7178cac3ba5662cfa99d2bef22d62249762a564143b504c66e8d59bd71ffbf8"
+        }
+      ],
+      "version": "v01",
+      "final_path": "assets/sprites/effects/bosses/nidhogg_burrow_dust.png",
+      "candidate": "candidates/nidhogg_burrow_dust_v01.png",
+      "sha256": "311d155d6539a506c789ed31aa6d2b4c3d5a4ed1b983ed0634a2b755a2c2c511",
+      "actual_RGB_colors": 31,
+      "actual_alpha_values": [
+        0,
+        28,
+        56,
+        84,
+        112,
+        140,
+        168,
+        197
+      ],
+      "frame_bboxes": [
+        [
+          17,
+          2,
+          79,
+          62
+        ],
+        [
+          11,
+          8,
+          85,
+          56
+        ],
+        [
+          16,
+          5,
+          79,
+          59
+        ],
+        [
+          21,
+          10,
+          74,
+          53
+        ]
+      ],
+      "technical_checks": {
+        "PNG_RGBA": true,
+        "exact_strip_dimensions": true,
+        "RGB_within_48": true,
+        "transparent_background": true,
+        "every_frame_nonempty": true,
+        "distinct_original_frames": true,
+        "2px_margin_or_tiling_exception": true,
+        "GIF_native_decoded_pixel_match": true,
+        "GIF_native_average_fps": true,
+        "GIF_slow8_decoded_pixel_match": true,
+        "GIF_slow8_average_fps": true
+      },
+      "visual_review": {
+        "status": "passed",
+        "observations": "已看4格：低矮灰棕入口土尘与少量小石，逐步稀薄，最后只剩极少尘点，不含本体或长时间地上替身。"
+      },
+      "code_integration": "integrated",
+      "game_acceptance": "controlled_runtime_verified",
+      "source_license": {
+        "tool": "OpenAI built-in image_gen",
+        "commercial_basis": "existing approved OpenAI output terms; project-owned input references",
+        "terms_url": "https://openai.com/policies/terms-of-use/",
+        "processing": "Pillow MIT-CMU, source cuts/alpha/palette/nearest resize/placement and preview only"
+      },
+      "previews": [
+        "previews/nidhogg_burrow_dust_v01_frames.png",
+        "previews/nidhogg_burrow_dust_v01_ground.png",
+        "previews/nidhogg_burrow_dust_v01_native.gif",
+        "previews/nidhogg_burrow_dust_v01_slow8.gif"
+      ],
+      "approved": "approved/nidhogg_burrow_dust.png",
+      "frame_order": "left_to_right_no_spacing",
+      "generation_records": "records/generation_jobs.json",
+      "public_generation_url": null,
+      "generation_url_note": "内置工具仅返回本地原图路径；真实提示词/参考/结果均归档，不伪造公开URL",
+      "transparent_strategy": "Generated alpha quantized to 8 source levels then optional low-alpha cap; RGB count and alpha recorded separately; zero RGB when alpha0",
+      "loop_mode": "single shot / static; single-shot temporary display fades and frees at end",
+      "remaining_issues": [
+        "完整手动通关、长时平衡及其他设备表现未测；当前为Godot受控技能/视角验证"
+      ],
+      "source_recipe": "records/normalization_nidhogg_burrow_dust_v01.json",
+      "runtime_verification": {
+        "report": "../taskH0_critical_2026-10-19/integration_2026-10-19/README.md",
+        "scope": "actual Godot Game scenes with controlled skill triggers; full playthrough and long-session balance not tested",
+        "automated_assertions": 572,
+        "failures": 0,
+        "formal_PNG_changed": false
+      }
+    },
+    {
+      "task": "H5",
+      "id": "nidhogg_emerge_burst",
+      "w": 128,
+      "h": 96,
+      "frames": 4,
+      "fps": 16,
+      "flags": [
+        "area"
+      ],
+      "anchor": [
+        64,
+        48
+      ],
+      "columns": 2,
+      "rows": 2,
+      "loop": false,
+      "hook": "scripts/bosses/nidhogg.gd _emerge()",
+      "keep": "实际_crack破土点中心；效果按EMERGE_RADIUS100范围裁切；保留地裂预警/伤害28",
+      "reference_paths": [
+        "assets/sprites/effects/ground_crack.png"
+      ],
+      "target": "assets/sprites/effects/bosses/nidhogg_emerge_burst.png",
+      "source_root": "assets/source/taskH5_nidhogg_fx_2026-10-19",
+      "archived_references": [
+        {
+          "project_path": "assets/sprites/effects/ground_crack.png",
+          "archived_path": "references/ground_crack.png",
+          "sha256": "c7178cac3ba5662cfa99d2bef22d62249762a564143b504c66e8d59bd71ffbf8"
+        }
+      ],
+      "version": "v02",
+      "final_path": "assets/sprites/effects/bosses/nidhogg_emerge_burst.png",
+      "candidate": "candidates/nidhogg_emerge_burst_v02.png",
+      "sha256": "2d39b0d487e699842b11465b776d7af804a7b9954f3c1fd8349082913d643175",
+      "actual_RGB_colors": 29,
+      "actual_alpha_values": [
+        0,
+        28,
+        56,
+        84,
+        112,
+        140,
+        168,
+        197
+      ],
+      "frame_bboxes": [
+        [
+          23,
+          26,
+          105,
+          70
+        ],
+        [
+          2,
+          5,
+          126,
+          90
+        ],
+        [
+          2,
+          11,
+          125,
+          84
+        ],
+        [
+          20,
+          29,
+          108,
+          67
+        ]
+      ],
+      "technical_checks": {
+        "PNG_RGBA": true,
+        "exact_strip_dimensions": true,
+        "RGB_within_48": true,
+        "transparent_background": true,
+        "every_frame_nonempty": true,
+        "distinct_original_frames": true,
+        "2px_margin_or_tiling_exception": true,
+        "GIF_native_decoded_pixel_match": true,
+        "GIF_native_average_fps": true,
+        "GIF_slow8_decoded_pixel_match": true,
+        "GIF_slow8_average_fps": true
+      },
+      "visual_review": {
+        "status": "passed",
+        "observations": "v01末格石堆未消散已退回；v02仅采用新末格淡尘，前3格与v01逐像素相同。破土峰值为灰棕土石，末帧稀少尘粒，无蓝冰圈或永久残骸。"
+      },
+      "code_integration": "integrated",
+      "game_acceptance": "controlled_runtime_verified",
+      "source_license": {
+        "tool": "OpenAI built-in image_gen",
+        "commercial_basis": "existing approved OpenAI output terms; project-owned input references",
+        "terms_url": "https://openai.com/policies/terms-of-use/",
+        "processing": "Pillow MIT-CMU, source cuts/alpha/palette/nearest resize/placement and preview only"
+      },
+      "previews": [
+        "previews/nidhogg_emerge_burst_v02_frames.png",
+        "previews/nidhogg_emerge_burst_v02_ground.png",
+        "previews/nidhogg_emerge_burst_v02_native.gif",
+        "previews/nidhogg_emerge_burst_v02_slow8.gif"
+      ],
+      "approved": "approved/nidhogg_emerge_burst.png",
+      "frame_order": "left_to_right_no_spacing",
+      "generation_records": "records/generation_jobs.json",
+      "public_generation_url": null,
+      "generation_url_note": "内置工具仅返回本地原图路径；真实提示词/参考/结果均归档，不伪造公开URL",
+      "transparent_strategy": "Generated alpha quantized to 8 source levels then optional low-alpha cap; RGB count and alpha recorded separately; zero RGB when alpha0",
+      "loop_mode": "single shot / static; single-shot temporary display fades and frees at end",
+      "remaining_issues": [
+        "完整手动通关、长时平衡及其他设备表现未测；当前为Godot受控技能/视角验证"
+      ],
+      "source_recipe": "records/normalization_nidhogg_emerge_burst_v02.json",
+      "runtime_verification": {
+        "report": "../taskH0_critical_2026-10-19/integration_2026-10-19/README.md",
+        "scope": "actual Godot Game scenes with controlled skill triggers; full playthrough and long-session balance not tested",
+        "automated_assertions": 572,
+        "failures": 0,
+        "formal_PNG_changed": false
+      }
+    },
+    {
+      "task": "H5",
+      "id": "nidhogg_gnaw_heal",
+      "w": 64,
+      "h": 64,
+      "frames": 4,
+      "fps": 8,
+      "flags": [
+        "loop",
+        "area",
+        "flow"
+      ],
+      "anchor": [
+        32,
+        32
+      ],
+      "columns": 2,
+      "rows": 2,
+      "loop": true,
+      "hook": "scripts/bosses/nidhogg.gd _draw_gnaw()；_update_state() 刷新前景子层",
+      "keep": "原图生命流向+X；旋转/拉伸连接树根到龙；仅gnaw可见；保留每秒2.5%与6秒上限",
+      "reference_paths": [
+        "assets/sprites/effects/poison_pool.png"
+      ],
+      "target": "assets/sprites/effects/bosses/nidhogg_gnaw_heal.png",
+      "source_root": "assets/source/taskH5_nidhogg_fx_2026-10-19",
+      "archived_references": [
+        {
+          "project_path": "assets/sprites/effects/poison_pool.png",
+          "archived_path": "references/poison_pool.png",
+          "sha256": "0284bb2e78321311e43248046a820d43920193764e68f64d662d25cd1516374f"
+        }
+      ],
+      "version": "v01",
+      "final_path": "assets/sprites/effects/bosses/nidhogg_gnaw_heal.png",
+      "candidate": "candidates/nidhogg_gnaw_heal_v01.png",
+      "sha256": "68a7ccb307261e91e12b967d37f510a79750c2d96fab62427a63ad8a7ee22908",
+      "actual_RGB_colors": 22,
+      "actual_alpha_values": [
+        0,
+        28,
+        56,
+        84,
+        112,
+        140,
+        168,
+        197
+      ],
+      "frame_bboxes": [
+        [
+          3,
+          19,
+          61,
+          44
+        ],
+        [
+          3,
+          17,
+          60,
+          46
+        ],
+        [
+          2,
+          18,
+          62,
+          45
+        ],
+        [
+          4,
+          20,
+          59,
+          43
+        ]
+      ],
+      "technical_checks": {
+        "PNG_RGBA": true,
+        "exact_strip_dimensions": true,
+        "RGB_within_48": true,
+        "transparent_background": true,
+        "every_frame_nonempty": true,
+        "distinct_original_frames": true,
+        "2px_margin_or_tiling_exception": true,
+        "GIF_native_decoded_pixel_match": true,
+        "GIF_native_average_fps": true,
+        "GIF_slow8_decoded_pixel_match": true,
+        "GIF_slow8_average_fps": true
+      },
+      "visual_review": {
+        "status": "passed",
+        "observations": "已看4格：暗绿细流与颗粒沿左至右流动，四格细节不同，透明留白多，不画树根/龙体；只供gnaw状态显示。"
+      },
+      "code_integration": "integrated",
+      "game_acceptance": "controlled_runtime_verified",
+      "source_license": {
+        "tool": "OpenAI built-in image_gen",
+        "commercial_basis": "existing approved OpenAI output terms; project-owned input references",
+        "terms_url": "https://openai.com/policies/terms-of-use/",
+        "processing": "Pillow MIT-CMU, source cuts/alpha/palette/nearest resize/placement and preview only"
+      },
+      "previews": [
+        "previews/nidhogg_gnaw_heal_v01_frames.png",
+        "previews/nidhogg_gnaw_heal_v01_ground.png",
+        "previews/nidhogg_gnaw_heal_v01_native.gif",
+        "previews/nidhogg_gnaw_heal_v01_slow8.gif",
+        "previews/nidhogg_gnaw_heal_v01_stretch.png"
+      ],
+      "approved": "approved/nidhogg_gnaw_heal.png",
+      "frame_order": "left_to_right_no_spacing",
+      "generation_records": "records/generation_jobs.json",
+      "public_generation_url": null,
+      "generation_url_note": "内置工具仅返回本地原图路径；真实提示词/参考/结果均归档，不伪造公开URL",
+      "transparent_strategy": "Generated alpha quantized to 8 source levels then optional low-alpha cap; RGB count and alpha recorded separately; zero RGB when alpha0",
+      "loop_mode": "loop only while corresponding state is active",
+      "remaining_issues": [
+        "完整手动通关、长时平衡及其他设备表现未测；当前为Godot受控技能/视角验证"
+      ],
+      "source_recipe": "records/normalization_nidhogg_gnaw_heal_v01.json",
+      "runtime_verification": {
+        "report": "../taskH0_critical_2026-10-19/integration_2026-10-19/README.md",
+        "scope": "actual Godot Game scenes with controlled skill triggers; full playthrough and long-session balance not tested",
+        "automated_assertions": 572,
+        "failures": 0,
+        "formal_PNG_changed": false
+      }
+    },
+    {
+      "task": "H5",
+      "id": "nidhogg_gnaw_stagger",
+      "w": 64,
+      "h": 64,
+      "frames": 4,
+      "fps": 16,
+      "flags": [
+        "area"
+      ],
+      "anchor": [
+        32,
+        32
+      ],
+      "columns": 2,
+      "rows": 2,
+      "loop": false,
+      "hook": "scripts/bosses/nidhogg.gd take_damage() 达GNAW_BREAK",
+      "keep": "打断瞬间断流/冲击；停止heal循环；保留6%阈值与2秒硬直",
+      "reference_paths": [
+        "assets/sprites/effects/poison_pool.png"
+      ],
+      "target": "assets/sprites/effects/bosses/nidhogg_gnaw_stagger.png",
+      "source_root": "assets/source/taskH5_nidhogg_fx_2026-10-19",
+      "archived_references": [
+        {
+          "project_path": "assets/sprites/effects/poison_pool.png",
+          "archived_path": "references/poison_pool.png",
+          "sha256": "0284bb2e78321311e43248046a820d43920193764e68f64d662d25cd1516374f"
+        }
+      ],
+      "version": "v01",
+      "final_path": "assets/sprites/effects/bosses/nidhogg_gnaw_stagger.png",
+      "candidate": "candidates/nidhogg_gnaw_stagger_v01.png",
+      "sha256": "f3a03706f0b018eec784a8144c7aee6a0f50b6576980531aeed1d15e013a7dfa",
+      "actual_RGB_colors": 19,
+      "actual_alpha_values": [
+        0,
+        28,
+        56,
+        84,
+        112,
+        140,
+        168,
+        197
+      ],
+      "frame_bboxes": [
+        [
+          2,
+          19,
+          62,
+          47
+        ],
+        [
+          3,
+          11,
+          60,
+          52
+        ],
+        [
+          2,
+          19,
+          62,
+          45
+        ],
+        [
+          4,
+          19,
+          60,
+          44
+        ]
+      ],
+      "technical_checks": {
+        "PNG_RGBA": true,
+        "exact_strip_dimensions": true,
+        "RGB_within_48": true,
+        "transparent_background": true,
+        "every_frame_nonempty": true,
+        "distinct_original_frames": true,
+        "2px_margin_or_tiling_exception": true,
+        "GIF_native_decoded_pixel_match": true,
+        "GIF_native_average_fps": true,
+        "GIF_slow8_decoded_pixel_match": true,
+        "GIF_slow8_average_fps": true
+      },
+      "visual_review": {
+        "status": "passed",
+        "observations": "已看4格：细流在中间短促断开，暗金灰小冲击、两端断流和颗粒衰减，没有大范围爆炸或身体动作。"
+      },
+      "code_integration": "integrated",
+      "game_acceptance": "controlled_runtime_verified",
+      "source_license": {
+        "tool": "OpenAI built-in image_gen",
+        "commercial_basis": "existing approved OpenAI output terms; project-owned input references",
+        "terms_url": "https://openai.com/policies/terms-of-use/",
+        "processing": "Pillow MIT-CMU, source cuts/alpha/palette/nearest resize/placement and preview only"
+      },
+      "previews": [
+        "previews/nidhogg_gnaw_stagger_v01_frames.png",
+        "previews/nidhogg_gnaw_stagger_v01_ground.png",
+        "previews/nidhogg_gnaw_stagger_v01_native.gif",
+        "previews/nidhogg_gnaw_stagger_v01_slow8.gif"
+      ],
+      "approved": "approved/nidhogg_gnaw_stagger.png",
+      "frame_order": "left_to_right_no_spacing",
+      "generation_records": "records/generation_jobs.json",
+      "public_generation_url": null,
+      "generation_url_note": "内置工具仅返回本地原图路径；真实提示词/参考/结果均归档，不伪造公开URL",
+      "transparent_strategy": "Generated alpha quantized to 8 source levels then optional low-alpha cap; RGB count and alpha recorded separately; zero RGB when alpha0",
+      "loop_mode": "single shot / static; single-shot temporary display fades and frees at end",
+      "remaining_issues": [
+        "完整手动通关、长时平衡及其他设备表现未测；当前为Godot受控技能/视角验证"
+      ],
+      "source_recipe": "records/normalization_nidhogg_gnaw_stagger_v01.json",
+      "runtime_verification": {
+        "report": "../taskH0_critical_2026-10-19/integration_2026-10-19/README.md",
+        "scope": "actual Godot Game scenes with controlled skill triggers; full playthrough and long-session balance not tested",
+        "automated_assertions": 572,
+        "failures": 0,
+        "formal_PNG_changed": false
+      }
+    }
+  ],
+  "originals": [
+    {
+      "file": "originals/nidhogg_burrow_dust_v01.png",
+      "sha256": "d728fdeefbc0e536612970bbe31542c0b0f44fdd0f61bb8e7bd9c03718312ac3"
+    },
+    {
+      "file": "originals/nidhogg_emerge_burst_v01.png",
+      "sha256": "6ed84079be20af380153199c1727ddb191ad310b7f367c3cc615bc8151175b1c"
+    },
+    {
+      "file": "originals/nidhogg_emerge_burst_v02.png",
+      "sha256": "965bb392a7956b540b32166e4ff2ed5d01a5099dfa56da9d90661a6d7a09a629"
+    },
+    {
+      "file": "originals/nidhogg_gnaw_heal_v01.png",
+      "sha256": "18ebc97bbcbd9522517bb72f106f82d6bc19a1ae749d4a2fc2d06d9f9df3dd32"
+    },
+    {
+      "file": "originals/nidhogg_gnaw_stagger_v01.png",
+      "sha256": "c56389db73d4453ca6fb9c653f0137b1460f017d65e3f7c77a482cd5ccee7852"
+    },
+    {
+      "file": "originals/nidhogg_poison_breath_v01.png",
+      "sha256": "e38b29e5430a440c129bf54625281238e1631ac00f05bb8423176204d8bb4edd"
+    }
+  ],
+  "generation_records": "records/generation_jobs.json",
+  "limitations": [
+    "Technical measurements and local previews do not prove Godot gameplay acceptance."
+  ],
+  "source_inventory": "records/source_inventory.json",
+  "runtime_verification": {
+    "report": "../taskH0_critical_2026-10-19/integration_2026-10-19/README.md",
+    "scope": "controlled Game viewport and gameplay assertions; not a complete manual run"
+  }
+}

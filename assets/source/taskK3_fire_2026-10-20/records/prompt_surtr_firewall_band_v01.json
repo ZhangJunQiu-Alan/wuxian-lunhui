@@ -1,0 +1,16 @@
+{
+  "tool": "image_gen.imagegen",
+  "id": "surtr_firewall_band",
+  "frame_size": [
+    64,
+    64
+  ],
+  "frames": 4,
+  "fps": 8,
+  "loop": true,
+  "refs": [
+    "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskK3_fire_2026-10-20/references/surtr.png"
+  ],
+  "prompt": "Use case: stylized-concept, game material tile sequence. FOUR flame boundary MATERIAL strips,2x2 cells in a wide2:1 overall atlas. Each logical strip64x32, later padded to64x64 by game artist. HORIZONTAL continuous uneven fire line from LEFT edge to RIGHT edge, low molten ember base at bottom row, thin ORANGE flames pointing UP only, transparent air between flame peaks. No circle, no wall slab, rocks or black floor. Flame height max28px with2px top air; material crosses left/right as intentional repeat ports, similar thickness at both ends. Four8fps flicker phases; retain the same base and registration while tips flicker, last-to-first gradual. Center of each tile is mostly clear air; no large opaque fire rectangle. This is a tangent material for curved arena outer boundary, all burning material on the UP/outside side, inner/down side will stay empty in logical64square. Crisp low-resolution pixel clusters matching the project reference, <=48RGB, red/orange/ivory flame with dark crimson/brown edge, restrained translucent light only where stated; true transparent alpha background, no opaque black fill, no ground, scenery, character, lettering, label, frame, grid line or watermark. Four equal cells, no gutters; no content crosses its own cell.",
+  "transparent_background": true
+}

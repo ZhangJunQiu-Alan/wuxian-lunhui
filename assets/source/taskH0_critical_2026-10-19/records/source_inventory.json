@@ -1,0 +1,58 @@
+{
+  "task": "H0",
+  "tool_calls": 5,
+  "references": [
+    {
+      "actual_input_path": "assets/sprites/effects/rune_missile.png",
+      "archived_path": "references/rune_missile.png",
+      "sha256": "c199b65f5786029aba9fe4e60f84cb31d158b2267a91e93f9861122ef827de8d"
+    },
+    {
+      "actual_input_path": "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskH0_critical_2026-10-19/candidates/thokk_v01.png",
+      "archived_path": "references/thokk_v01.png",
+      "sha256": "09eacf76a01cbb38177da6174e85247b02a290b1d6f2e6f01e4692337738e64b"
+    },
+    {
+      "actual_input_path": "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskH0_critical_2026-10-19/originals/thokk_v01.png",
+      "archived_path": "references/thokk_v01_0d78e879.png",
+      "sha256": "0d78e87972602e83d5c5c9d057852ada4db9a32b62281060b1632b20f155b732"
+    },
+    {
+      "actual_input_path": "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskH0_critical_2026-10-19/originals/thokk_attack_v01.png",
+      "archived_path": "references/thokk_attack_v01.png",
+      "sha256": "c91a50dd7d32b3305eed54c269848894a7f9976701df619e9d6836d64c96205c"
+    },
+    {
+      "actual_input_path": "assets/sprites/enemies/frost_giant.png",
+      "archived_path": "references/frost_giant.png",
+      "sha256": "ba7bb0af917ec87e5dc77cbf15b10afc9582b9d28f69537135393f19196ede28"
+    },
+    {
+      "actual_input_path": "assets/sprites/enemies/frost_veteran.png",
+      "archived_path": "references/frost_veteran.png",
+      "sha256": "6972714054f6181ee80249f0c5e42cac072e329a3bc063e04269ba00d9563e9c"
+    }
+  ],
+  "originals": [
+    {
+      "file": "originals/hel_death_bolt_v01.png",
+      "sha256": "069062cb8eb29c9cb77eec0a372bb8675e8463d8b028dcbc6140c7c34b5625f4"
+    },
+    {
+      "file": "originals/thokk_attack_v01.png",
+      "sha256": "c91a50dd7d32b3305eed54c269848894a7f9976701df619e9d6836d64c96205c"
+    },
+    {
+      "file": "originals/thokk_attack_v02.png",
+      "sha256": "49ad8d813e5bf7349fc2ee8925bf1979fcda84e55486174518b78252e9536e2a"
+    },
+    {
+      "file": "originals/thokk_move_v01.png",
+      "sha256": "481d176537bee529c759f5e8431bd08a370a1175d864e45d9ce5f89fbb260619"
+    },
+    {
+      "file": "originals/thokk_v01.png",
+      "sha256": "0d78e87972602e83d5c5c9d057852ada4db9a32b62281060b1632b20f155b732"
+    }
+  ]
+}

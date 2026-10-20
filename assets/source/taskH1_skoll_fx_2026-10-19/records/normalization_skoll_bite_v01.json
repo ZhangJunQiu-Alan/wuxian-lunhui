@@ -1,0 +1,68 @@
+{
+  "input": "originals/skoll_bite_v01.png",
+  "input_sha256": "4c5813e3f780671be55c7a30872b1bbf2edd7b5af072914d1aff1280f9a7f3f9",
+  "raw_size": [
+    1254,
+    1254
+  ],
+  "grid": [
+    2,
+    2
+  ],
+  "cut_boxes": [
+    [
+      122,
+      179,
+      568,
+      455
+    ],
+    [
+      154,
+      172,
+      471,
+      488
+    ],
+    [
+      121,
+      136,
+      555,
+      480
+    ],
+    [
+      97,
+      165,
+      549,
+      469
+    ]
+  ],
+  "single_common_scale": 0.13274336283185842,
+  "placements": [
+    [
+      2,
+      13,
+      59,
+      37
+    ],
+    [
+      11,
+      11,
+      42,
+      42
+    ],
+    [
+      3,
+      9,
+      58,
+      46
+    ],
+    [
+      2,
+      12,
+      60,
+      40
+    ]
+  ],
+  "operations": "original alpha threshold/quantization, source frame cuts, single common nearest resize, source-derived shared palette, whole-frame placement; no character/effect drawing",
+  "candidate": "candidates/skoll_bite_v01.png",
+  "candidate_sha256": "a125c516a5481ed3ee1f95e368a82c2f6b65b42b2242ae4dff1527e5f33441f9"
+}

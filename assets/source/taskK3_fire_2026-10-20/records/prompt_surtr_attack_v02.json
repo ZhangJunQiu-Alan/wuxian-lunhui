@@ -1,0 +1,11 @@
+{
+  "tool": "image_gen.imagegen",
+  "id": "surtr_attack",
+  "version": "v02",
+  "refs": [
+    "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskK3_fire_2026-10-20/references/surtr_action_master_4x.png",
+    "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskK3_fire_2026-10-20/originals/surtr_attack_v01_raw.png"
+  ],
+  "prompt": "Use case: sprite-animation, precise pose correction. Image1 is canonical armored fire giant body/scale. Image2 is FAILED attack draft: the forward sword reach is TOO LONG. Redo four-frame2x2 sword sweep atlas, SAME character and armor/helmet/fire-crown/ragged crimson waistcloth/bronze-black palette,3/4 facing RIGHT. Keep the thick torso and bent legs at original184px standing character scale, DON'T shrink body for sword. Each logical256square reserves sword room, footbaseline254,hip/rootx128. KEY CORRECTION: keep BOTH elbows BENT and gauntlets close to front of waist (near x128..145), NEVER thrust hands far outward. Use a close sweeping CUT, not a fencing thrust. Blade SAME length as original (~120logicalpx); its tip remains inside x248, even at contact. Ragged cape hangs close behind left hip, no long cape blowing far left. Pose0 sword diagonally raised above shoulder using headroom,1 bent-arm close swing,2 blade sweeps forward/down-right at a compact diagonal,3 recover original low guard. Every entire sword, flame tip and full body within2px clear alpha margin; whole silhouette width<=240, body and blade never intersect another cell. Same sword and plausible two-hand grip; no extra limbs/weapon. One clear16fps contact peak and recovery, no slash effect painted over body. Fine crisp project pixel clusters,<=48RGB, upper-left light; binary entity alpha, true zero-alpha background, no scene/floor/shadow/text/labels/grid/watermark.",
+  "transparent_background": true
+}

@@ -1,0 +1,21 @@
+{
+  "tool": "image_gen.imagegen",
+  "id": "fenrir_windup",
+  "action": "windup",
+  "frames": 3,
+  "fps": 8,
+  "loop": false,
+  "grid": [
+    2,
+    2
+  ],
+  "frame_size": [
+    192,
+    192
+  ],
+  "prompt": "Use case: identity-preserve. Asset: a transparent small pixel-art game animation atlas, not a concept illustration. Image1 is the ONE approved original wolf and the identity/palette/anatomy reference. Preserve the exact same hunched massive charcoal-black wolf: thick matted black-grey fur with silver-grey mane streaks, curled long tail on the left, right-facing huge scarred muzzle, warm ochre eye, many ivory fangs and dark red gums, bronze/iron broken restraint pieces on shoulders and ankles. FOUR legs only, anatomically canine joints and paws, same armor/restraint shapes in every frame. Upper-left light, same detailed pixel density, crisp small pixel clusters at logical192px per square cell. Fixed torso/shoulder position and consistent scale; lowest contact paw stays at logical y189, while the other paws retain the ORIGINAL three-quarter perspective depth positions (not all four on one horizontal line) with 2px transparent margin. Entire tail, claws, nose, ears and fur fit inside each cell with >=2px clear border. No new armor, crowns, horns, limbs, huge aura or scenic elements. Actual alpha transparent background; no ground, cast shadow, grid, text, labels, watermark. No smooth painting, airbrush or blurred edges. Every frame is a different articulated pose of this SAME individual, no duplicate stills, no resizing per frame. SQUARE 2x2 atlas with THREE poses at top-left, top-right, bottom-left; bottom-right EMPTY transparent. Same equal logical192px cells and no gutters. Three escalating attack ANTICIPATION poses: lower body center and bend front elbows; brace paws within their original positions, tense shoulders and draw head slightly back; tensed compact prepared crouch, jaw opens and ear pins back. Keep each paw contact point at its original perspective ground point; torso stays compact, same head size, no outward forepaw reach. Fixed lowest-paw baseline and body position, distinct rising tension. No leap or impact yet, no magical effects. Each full wolf must occupy only inner80% of its cell with generous alpha padding; square cells MUST stay square in a square atlas. Preserve three-quarter view, not a side-profile.",
+  "referenced_image_paths": [
+    "/Users/zhangjunqiu/Desktop/无限恐怖/assets/sprites/bosses/fenrir.png"
+  ],
+  "transparent_background": true
+}

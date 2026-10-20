@@ -1,0 +1,8 @@
+{
+  "id": "hel_army_summon",
+  "version": "v01",
+  "prompt": "Use case: stylized-concept. Production pixel-art underworld game texture/effect; inputs are project-owned style references only, do not copy character or existing pool/ring form. An underworld earth fissure where a dead enemy will emerge, no person or body. Small uneven grey-purple earth crack horizontally near center, with sparse low spectral smoke curling up either side. Four ONESHOT phases: thin fissure appears, muted pale violet light peeks through with a little broken earth, fissure dims and smoke disperses, faint few grey grains. No large portal disc or complete ring. Sparse transparent ground marker, no persistent crater. EXACTLY FOUR DISTINCT frames in2columns2rows, identical cell aspect96:96, native96x96 per cell. Stable camera, pivot and scale; clear occurrence, peak and decay unless explicitly looping. Desaturated grey-green and grey-violet, extremely restrained luminance, limited32RGB colors, crisp pixel clusters, alpha steps. Genuine transparent background between marks, no opaque square backing or drop shadow. No text, labels, grid, frame, watermark, scenery, body or ship. Entire effect fits inside each frame; repeated tiles/strips must flow through their matching edges.",
+  "reference_paths": [
+    "assets/sprites/effects/ground_crack.png"
+  ]
+}

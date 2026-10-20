@@ -1,0 +1,32 @@
+{
+  "input": "originals/garm_chain_link_v01.png",
+  "input_sha256": "3986737874091c872067eb049e8d9bb48a86471fcc25e63bff88c9b8ccf55169",
+  "raw_size": [
+    1774,
+    887
+  ],
+  "grid": [
+    1,
+    1
+  ],
+  "cut_boxes": [
+    [
+      199,
+      127,
+      1576,
+      761
+    ]
+  ],
+  "single_common_scale": 0.006309148264984227,
+  "placements": [
+    [
+      3,
+      2,
+      9,
+      4
+    ]
+  ],
+  "operations": "original alpha threshold/quantization, source frame cuts, single common nearest resize, source-derived shared palette, whole-frame placement; no character/effect drawing",
+  "candidate": "candidates/garm_chain_link_v01.png",
+  "candidate_sha256": "0690ac7df91450f75578ee42d150c58d1213e76d5f351e68070fe4f00f2ef7e1"
+}

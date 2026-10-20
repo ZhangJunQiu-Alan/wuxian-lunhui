@@ -1,0 +1,36 @@
+{
+  "version": "K3-action-canvas-v1.2",
+  "supersedes": "contract.json:C4 and production_plan_v1.1 six Surtr action canvases",
+  "reason": "actual generated complete blade/cape poses exceed256 at preserved original body/hip scale;320 transparent padding avoids clipping or actor shrink",
+  "actions": [
+    "idle",
+    "move",
+    "windup",
+    "attack",
+    "plant",
+    "summon"
+  ],
+  "frame_size": [
+    320,
+    320
+  ],
+  "foot_anchor": [
+    160,
+    318
+  ],
+  "reference_static_embed": [
+    64,
+    128
+  ],
+  "body_scale": "original192px character, not enlarged to320",
+  "registration": "uniform whole-pose scale calibrated to original belt-to-ground106px; pelvis x160; ground318; no per-axis body stretching",
+  "unchanged": [
+    "original surtr.png192square and original anchor96,190",
+    "action frames/fps/loop",
+    "gameplay ranges and events",
+    "K1",
+    "K2",
+    "effect and ally sizes"
+  ],
+  "status": "asset_contract_only_not_production_integration"
+}

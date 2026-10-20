@@ -1,0 +1,17 @@
+{
+  "tool": "image_gen.imagegen",
+  "id": "vidar_idle",
+  "frames": 4,
+  "fps": 8,
+  "loop": true,
+  "frame_size": [
+    96,
+    96
+  ],
+  "prompt": "Use case: identity-preserve. Asset: transparent PIXEL-ART world-space game animation. Image1 is the approved native96px character master; Image2 is its high-resolution original for identity details. Keep the SAME young adult Norse male with tied dark-brown braid, short dark beard, stern calm face, olive wool cloak fastened by round bronze brooch, brown tunic and leather belt, trousers/leg wraps, reinforced oversized forward leather boot and bare hands. Same proportions, no weapon/staff/shield, no new armor or items. Full body, THREE-QUARTER view facing RIGHT, upper-left lighting, detailed small-game pixel clusters and exact master colors, not portrait/card art. Logical96x96 SQUARE cells. Each entire figure fits in inner80% of its cell with generous true-alpha padding; hair, fingertips, cloak hem and soles never touch cell edge. Same body scale and fixed pelvis/ground-foot registration throughout. No scene, ground, shadow, glow, wolf, jaw prop, victim, labels, words, border, grid or watermark. SQUARE2x2 equal-cell atlas, four distinct subtle idle breathing poses, read top-left/top-right/bottom-left/bottom-right, no gutters. Preserve both grounded boot contacts and the same calm face. Chest rises slightly, cloak edge shifts a little, loose braid end gently lags; weight settles and returns smoothly to frame1. No swinging arms across torso, no whole-body slide, no radical stance change.",
+  "refs": [
+    "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskK2_wolf_2026-10-20/candidates/vidar_v01.png",
+    "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskK2_wolf_2026-10-20/originals/vidar_v01_raw.png"
+  ],
+  "transparent_background": true
+}

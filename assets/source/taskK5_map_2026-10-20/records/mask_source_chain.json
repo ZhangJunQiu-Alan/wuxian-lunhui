@@ -1,0 +1,686 @@
+[
+  {
+    "formal": "assets/sprites/ground/midgard/path_edge_n.png",
+    "manifest": "assets/source/batch04_midgard_expansion_2026-10-16/manifest.json",
+    "entry": {
+      "id": "path_edge_n",
+      "type": "ground",
+      "size": [
+        64,
+        64
+      ],
+      "source": "references/snow_trampled.png",
+      "processing": "Original tile RGB unchanged; binary alpha crop only; circular corner cutouts with 1-2px irregular edges",
+      "status": "approved_art_self_check_pending_game_review",
+      "candidate": "candidates/path_edge_n_v01.png",
+      "colors": 23,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "frames": 1,
+      "sha256": "19d6aae3cf147c76d18d7cf36d2a8e45544014b9915ef870d79cb323e84e1f36",
+      "opaque_bbox": [
+        0,
+        30,
+        64,
+        64
+      ],
+      "repeat_axis": null,
+      "technical_checks": {
+        "exact_size": true,
+        "png_rgba": true,
+        "binary_alpha": true,
+        "nonempty": true,
+        "margin_2px": "not_applicable_repeat_or_ground",
+        "horizontal_centering": "bbox fitted centrally; terrain not applicable",
+        "ground_contact": "bottom 2px margin; not applicable ground/decals/borders",
+        "animation_checks": "not_applicable_static_map_asset"
+      },
+      "approved_snapshot": "approved/ground/midgard/path_edge_n.png",
+      "destination": "sprites/ground/midgard/path_edge_n.png",
+      "generation_record": "../batch04_maps_2026-10-16/manifest.json",
+      "prompt_file": "derived from existing accepted ice or snow_trampled; no new generation",
+      "tool": "Pillow alpha crop of existing project tile",
+      "input_reference": "references/snow_trampled.png",
+      "visual_checks": {
+        "reviewed_1x_on_121721": true,
+        "reviewed_4x_nearest": true,
+        "complete_silhouette_no_text_watermark_or_scene": true,
+        "cold_palette_and_style_match": true,
+        "upper_left_light": "reviewed; floor/decal lighting not applicable",
+        "default_right_and_feet_baseline": "not_applicable_environment_sprite",
+        "character_animation_checks": "not_applicable_static_map_sprite",
+        "ground_tiling": "12-piece outer/inner/straight assembly inspected; existing texture unchanged",
+        "underlying_ground_overlay": "not_applicable"
+      }
+    }
+  },
+  {
+    "formal": "assets/sprites/ground/midgard/path_edge_w.png",
+    "manifest": "assets/source/batch04_midgard_expansion_2026-10-16/manifest.json",
+    "entry": {
+      "id": "path_edge_w",
+      "type": "ground",
+      "size": [
+        64,
+        64
+      ],
+      "source": "references/snow_trampled.png",
+      "processing": "Original tile RGB unchanged; binary alpha crop only; circular corner cutouts with 1-2px irregular edges",
+      "status": "approved_art_self_check_pending_game_review",
+      "candidate": "candidates/path_edge_w_v01.png",
+      "colors": 23,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "frames": 1,
+      "sha256": "542463b9d87aca777de3351d1098fe23ec07127fb94591da1a464b5793c211a5",
+      "opaque_bbox": [
+        30,
+        0,
+        64,
+        64
+      ],
+      "repeat_axis": null,
+      "technical_checks": {
+        "exact_size": true,
+        "png_rgba": true,
+        "binary_alpha": true,
+        "nonempty": true,
+        "margin_2px": "not_applicable_repeat_or_ground",
+        "horizontal_centering": "bbox fitted centrally; terrain not applicable",
+        "ground_contact": "bottom 2px margin; not applicable ground/decals/borders",
+        "animation_checks": "not_applicable_static_map_asset"
+      },
+      "approved_snapshot": "approved/ground/midgard/path_edge_w.png",
+      "destination": "sprites/ground/midgard/path_edge_w.png",
+      "generation_record": "../batch04_maps_2026-10-16/manifest.json",
+      "prompt_file": "derived from existing accepted ice or snow_trampled; no new generation",
+      "tool": "Pillow alpha crop of existing project tile",
+      "input_reference": "references/snow_trampled.png",
+      "visual_checks": {
+        "reviewed_1x_on_121721": true,
+        "reviewed_4x_nearest": true,
+        "complete_silhouette_no_text_watermark_or_scene": true,
+        "cold_palette_and_style_match": true,
+        "upper_left_light": "reviewed; floor/decal lighting not applicable",
+        "default_right_and_feet_baseline": "not_applicable_environment_sprite",
+        "character_animation_checks": "not_applicable_static_map_sprite",
+        "ground_tiling": "12-piece outer/inner/straight assembly inspected; existing texture unchanged",
+        "underlying_ground_overlay": "not_applicable"
+      }
+    }
+  },
+  {
+    "formal": "assets/sprites/ground/midgard/path_edge_s.png",
+    "manifest": "assets/source/batch04_midgard_expansion_2026-10-16/manifest.json",
+    "entry": {
+      "id": "path_edge_s",
+      "type": "ground",
+      "size": [
+        64,
+        64
+      ],
+      "source": "references/snow_trampled.png",
+      "processing": "Original tile RGB unchanged; binary alpha crop only; circular corner cutouts with 1-2px irregular edges",
+      "status": "approved_art_self_check_pending_game_review",
+      "candidate": "candidates/path_edge_s_v01.png",
+      "colors": 23,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "frames": 1,
+      "sha256": "b74503a3e153a1287f396920b7f92e0aba359a971be1e3bbcde8ee6ba144e184",
+      "opaque_bbox": [
+        0,
+        0,
+        64,
+        34
+      ],
+      "repeat_axis": null,
+      "technical_checks": {
+        "exact_size": true,
+        "png_rgba": true,
+        "binary_alpha": true,
+        "nonempty": true,
+        "margin_2px": "not_applicable_repeat_or_ground",
+        "horizontal_centering": "bbox fitted centrally; terrain not applicable",
+        "ground_contact": "bottom 2px margin; not applicable ground/decals/borders",
+        "animation_checks": "not_applicable_static_map_asset"
+      },
+      "approved_snapshot": "approved/ground/midgard/path_edge_s.png",
+      "destination": "sprites/ground/midgard/path_edge_s.png",
+      "generation_record": "../batch04_maps_2026-10-16/manifest.json",
+      "prompt_file": "derived from existing accepted ice or snow_trampled; no new generation",
+      "tool": "Pillow alpha crop of existing project tile",
+      "input_reference": "references/snow_trampled.png",
+      "visual_checks": {
+        "reviewed_1x_on_121721": true,
+        "reviewed_4x_nearest": true,
+        "complete_silhouette_no_text_watermark_or_scene": true,
+        "cold_palette_and_style_match": true,
+        "upper_left_light": "reviewed; floor/decal lighting not applicable",
+        "default_right_and_feet_baseline": "not_applicable_environment_sprite",
+        "character_animation_checks": "not_applicable_static_map_sprite",
+        "ground_tiling": "12-piece outer/inner/straight assembly inspected; existing texture unchanged",
+        "underlying_ground_overlay": "not_applicable"
+      }
+    }
+  },
+  {
+    "formal": "assets/sprites/ground/midgard/path_edge_e.png",
+    "manifest": "assets/source/batch04_midgard_expansion_2026-10-16/manifest.json",
+    "entry": {
+      "id": "path_edge_e",
+      "type": "ground",
+      "size": [
+        64,
+        64
+      ],
+      "source": "references/snow_trampled.png",
+      "processing": "Original tile RGB unchanged; binary alpha crop only; circular corner cutouts with 1-2px irregular edges",
+      "status": "approved_art_self_check_pending_game_review",
+      "candidate": "candidates/path_edge_e_v01.png",
+      "colors": 22,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "frames": 1,
+      "sha256": "5d6a622c7cf70cc1586655e053fde8340c3c9f09fedc196fdc0aac51111ccfab",
+      "opaque_bbox": [
+        0,
+        0,
+        34,
+        64
+      ],
+      "repeat_axis": null,
+      "technical_checks": {
+        "exact_size": true,
+        "png_rgba": true,
+        "binary_alpha": true,
+        "nonempty": true,
+        "margin_2px": "not_applicable_repeat_or_ground",
+        "horizontal_centering": "bbox fitted centrally; terrain not applicable",
+        "ground_contact": "bottom 2px margin; not applicable ground/decals/borders",
+        "animation_checks": "not_applicable_static_map_asset"
+      },
+      "approved_snapshot": "approved/ground/midgard/path_edge_e.png",
+      "destination": "sprites/ground/midgard/path_edge_e.png",
+      "generation_record": "../batch04_maps_2026-10-16/manifest.json",
+      "prompt_file": "derived from existing accepted ice or snow_trampled; no new generation",
+      "tool": "Pillow alpha crop of existing project tile",
+      "input_reference": "references/snow_trampled.png",
+      "visual_checks": {
+        "reviewed_1x_on_121721": true,
+        "reviewed_4x_nearest": true,
+        "complete_silhouette_no_text_watermark_or_scene": true,
+        "cold_palette_and_style_match": true,
+        "upper_left_light": "reviewed; floor/decal lighting not applicable",
+        "default_right_and_feet_baseline": "not_applicable_environment_sprite",
+        "character_animation_checks": "not_applicable_static_map_sprite",
+        "ground_tiling": "12-piece outer/inner/straight assembly inspected; existing texture unchanged",
+        "underlying_ground_overlay": "not_applicable"
+      }
+    }
+  },
+  {
+    "formal": "assets/sprites/ground/midgard/path_edge_outer_nw.png",
+    "manifest": "assets/source/batch04_midgard_expansion_2026-10-16/manifest.json",
+    "entry": {
+      "id": "path_edge_outer_nw",
+      "type": "ground",
+      "size": [
+        64,
+        64
+      ],
+      "source": "references/snow_trampled.png",
+      "processing": "Original tile RGB unchanged; binary alpha crop only; circular corner cutouts with 1-2px irregular edges",
+      "status": "approved_art_self_check_pending_game_review",
+      "candidate": "candidates/path_edge_outer_nw_v01.png",
+      "colors": 19,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "frames": 1,
+      "sha256": "96eca3bcffb8c108aefbaba117a95db4e7235cbff0bae54546be19f543225a40",
+      "opaque_bbox": [
+        32,
+        32,
+        64,
+        64
+      ],
+      "repeat_axis": null,
+      "technical_checks": {
+        "exact_size": true,
+        "png_rgba": true,
+        "binary_alpha": true,
+        "nonempty": true,
+        "margin_2px": "not_applicable_repeat_or_ground",
+        "horizontal_centering": "bbox fitted centrally; terrain not applicable",
+        "ground_contact": "bottom 2px margin; not applicable ground/decals/borders",
+        "animation_checks": "not_applicable_static_map_asset"
+      },
+      "approved_snapshot": "approved/ground/midgard/path_edge_outer_nw.png",
+      "destination": "sprites/ground/midgard/path_edge_outer_nw.png",
+      "generation_record": "../batch04_maps_2026-10-16/manifest.json",
+      "prompt_file": "derived from existing accepted ice or snow_trampled; no new generation",
+      "tool": "Pillow alpha crop of existing project tile",
+      "input_reference": "references/snow_trampled.png",
+      "visual_checks": {
+        "reviewed_1x_on_121721": true,
+        "reviewed_4x_nearest": true,
+        "complete_silhouette_no_text_watermark_or_scene": true,
+        "cold_palette_and_style_match": true,
+        "upper_left_light": "reviewed; floor/decal lighting not applicable",
+        "default_right_and_feet_baseline": "not_applicable_environment_sprite",
+        "character_animation_checks": "not_applicable_static_map_sprite",
+        "ground_tiling": "12-piece outer/inner/straight assembly inspected; existing texture unchanged",
+        "underlying_ground_overlay": "not_applicable"
+      }
+    }
+  },
+  {
+    "formal": "assets/sprites/ground/midgard/path_edge_outer_sw.png",
+    "manifest": "assets/source/batch04_midgard_expansion_2026-10-16/manifest.json",
+    "entry": {
+      "id": "path_edge_outer_sw",
+      "type": "ground",
+      "size": [
+        64,
+        64
+      ],
+      "source": "references/snow_trampled.png",
+      "processing": "Original tile RGB unchanged; binary alpha crop only; circular corner cutouts with 1-2px irregular edges",
+      "status": "approved_art_self_check_pending_game_review",
+      "candidate": "candidates/path_edge_outer_sw_v01.png",
+      "colors": 20,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "frames": 1,
+      "sha256": "6fe56b5dae891d2dfb6895be6f1b5065d2da74df7eb39001ffe23461f4c193db",
+      "opaque_bbox": [
+        32,
+        0,
+        64,
+        32
+      ],
+      "repeat_axis": null,
+      "technical_checks": {
+        "exact_size": true,
+        "png_rgba": true,
+        "binary_alpha": true,
+        "nonempty": true,
+        "margin_2px": "not_applicable_repeat_or_ground",
+        "horizontal_centering": "bbox fitted centrally; terrain not applicable",
+        "ground_contact": "bottom 2px margin; not applicable ground/decals/borders",
+        "animation_checks": "not_applicable_static_map_asset"
+      },
+      "approved_snapshot": "approved/ground/midgard/path_edge_outer_sw.png",
+      "destination": "sprites/ground/midgard/path_edge_outer_sw.png",
+      "generation_record": "../batch04_maps_2026-10-16/manifest.json",
+      "prompt_file": "derived from existing accepted ice or snow_trampled; no new generation",
+      "tool": "Pillow alpha crop of existing project tile",
+      "input_reference": "references/snow_trampled.png",
+      "visual_checks": {
+        "reviewed_1x_on_121721": true,
+        "reviewed_4x_nearest": true,
+        "complete_silhouette_no_text_watermark_or_scene": true,
+        "cold_palette_and_style_match": true,
+        "upper_left_light": "reviewed; floor/decal lighting not applicable",
+        "default_right_and_feet_baseline": "not_applicable_environment_sprite",
+        "character_animation_checks": "not_applicable_static_map_sprite",
+        "ground_tiling": "12-piece outer/inner/straight assembly inspected; existing texture unchanged",
+        "underlying_ground_overlay": "not_applicable"
+      }
+    }
+  },
+  {
+    "formal": "assets/sprites/ground/midgard/path_edge_outer_se.png",
+    "manifest": "assets/source/batch04_midgard_expansion_2026-10-16/manifest.json",
+    "entry": {
+      "id": "path_edge_outer_se",
+      "type": "ground",
+      "size": [
+        64,
+        64
+      ],
+      "source": "references/snow_trampled.png",
+      "processing": "Original tile RGB unchanged; binary alpha crop only; circular corner cutouts with 1-2px irregular edges",
+      "status": "approved_art_self_check_pending_game_review",
+      "candidate": "candidates/path_edge_outer_se_v01.png",
+      "colors": 20,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "frames": 1,
+      "sha256": "2432a5e06a3faa9354f88ff34f6c01c63b2bf2d8a343aae3d978b5aaea5d8c6e",
+      "opaque_bbox": [
+        0,
+        0,
+        32,
+        32
+      ],
+      "repeat_axis": null,
+      "technical_checks": {
+        "exact_size": true,
+        "png_rgba": true,
+        "binary_alpha": true,
+        "nonempty": true,
+        "margin_2px": "not_applicable_repeat_or_ground",
+        "horizontal_centering": "bbox fitted centrally; terrain not applicable",
+        "ground_contact": "bottom 2px margin; not applicable ground/decals/borders",
+        "animation_checks": "not_applicable_static_map_asset"
+      },
+      "approved_snapshot": "approved/ground/midgard/path_edge_outer_se.png",
+      "destination": "sprites/ground/midgard/path_edge_outer_se.png",
+      "generation_record": "../batch04_maps_2026-10-16/manifest.json",
+      "prompt_file": "derived from existing accepted ice or snow_trampled; no new generation",
+      "tool": "Pillow alpha crop of existing project tile",
+      "input_reference": "references/snow_trampled.png",
+      "visual_checks": {
+        "reviewed_1x_on_121721": true,
+        "reviewed_4x_nearest": true,
+        "complete_silhouette_no_text_watermark_or_scene": true,
+        "cold_palette_and_style_match": true,
+        "upper_left_light": "reviewed; floor/decal lighting not applicable",
+        "default_right_and_feet_baseline": "not_applicable_environment_sprite",
+        "character_animation_checks": "not_applicable_static_map_sprite",
+        "ground_tiling": "12-piece outer/inner/straight assembly inspected; existing texture unchanged",
+        "underlying_ground_overlay": "not_applicable"
+      }
+    }
+  },
+  {
+    "formal": "assets/sprites/ground/midgard/path_edge_outer_ne.png",
+    "manifest": "assets/source/batch04_midgard_expansion_2026-10-16/manifest.json",
+    "entry": {
+      "id": "path_edge_outer_ne",
+      "type": "ground",
+      "size": [
+        64,
+        64
+      ],
+      "source": "references/snow_trampled.png",
+      "processing": "Original tile RGB unchanged; binary alpha crop only; circular corner cutouts with 1-2px irregular edges",
+      "status": "approved_art_self_check_pending_game_review",
+      "candidate": "candidates/path_edge_outer_ne_v01.png",
+      "colors": 20,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "frames": 1,
+      "sha256": "67a4e82f3844add463f3687304bd609a6e2a70ebdbbade0af04f17f8fa28c036",
+      "opaque_bbox": [
+        0,
+        32,
+        32,
+        64
+      ],
+      "repeat_axis": null,
+      "technical_checks": {
+        "exact_size": true,
+        "png_rgba": true,
+        "binary_alpha": true,
+        "nonempty": true,
+        "margin_2px": "not_applicable_repeat_or_ground",
+        "horizontal_centering": "bbox fitted centrally; terrain not applicable",
+        "ground_contact": "bottom 2px margin; not applicable ground/decals/borders",
+        "animation_checks": "not_applicable_static_map_asset"
+      },
+      "approved_snapshot": "approved/ground/midgard/path_edge_outer_ne.png",
+      "destination": "sprites/ground/midgard/path_edge_outer_ne.png",
+      "generation_record": "../batch04_maps_2026-10-16/manifest.json",
+      "prompt_file": "derived from existing accepted ice or snow_trampled; no new generation",
+      "tool": "Pillow alpha crop of existing project tile",
+      "input_reference": "references/snow_trampled.png",
+      "visual_checks": {
+        "reviewed_1x_on_121721": true,
+        "reviewed_4x_nearest": true,
+        "complete_silhouette_no_text_watermark_or_scene": true,
+        "cold_palette_and_style_match": true,
+        "upper_left_light": "reviewed; floor/decal lighting not applicable",
+        "default_right_and_feet_baseline": "not_applicable_environment_sprite",
+        "character_animation_checks": "not_applicable_static_map_sprite",
+        "ground_tiling": "12-piece outer/inner/straight assembly inspected; existing texture unchanged",
+        "underlying_ground_overlay": "not_applicable"
+      }
+    }
+  },
+  {
+    "formal": "assets/sprites/ground/midgard/path_edge_inner_nw.png",
+    "manifest": "assets/source/batch04_midgard_expansion_2026-10-16/manifest.json",
+    "entry": {
+      "id": "path_edge_inner_nw",
+      "type": "ground",
+      "size": [
+        64,
+        64
+      ],
+      "source": "references/snow_trampled.png",
+      "processing": "Original tile RGB unchanged; binary alpha crop only; circular corner cutouts with 1-2px irregular edges",
+      "status": "approved_art_self_check_pending_game_review",
+      "candidate": "candidates/path_edge_inner_nw_v01.png",
+      "colors": 24,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "frames": 1,
+      "sha256": "3055f208a87cd522200dbbf2ce94dbb0cb45280ba84542db9b9c2ef57afa1ec0",
+      "opaque_bbox": [
+        0,
+        0,
+        64,
+        64
+      ],
+      "repeat_axis": null,
+      "technical_checks": {
+        "exact_size": true,
+        "png_rgba": true,
+        "binary_alpha": true,
+        "nonempty": true,
+        "margin_2px": "not_applicable_repeat_or_ground",
+        "horizontal_centering": "bbox fitted centrally; terrain not applicable",
+        "ground_contact": "bottom 2px margin; not applicable ground/decals/borders",
+        "animation_checks": "not_applicable_static_map_asset"
+      },
+      "approved_snapshot": "approved/ground/midgard/path_edge_inner_nw.png",
+      "destination": "sprites/ground/midgard/path_edge_inner_nw.png",
+      "generation_record": "../batch04_maps_2026-10-16/manifest.json",
+      "prompt_file": "derived from existing accepted ice or snow_trampled; no new generation",
+      "tool": "Pillow alpha crop of existing project tile",
+      "input_reference": "references/snow_trampled.png",
+      "visual_checks": {
+        "reviewed_1x_on_121721": true,
+        "reviewed_4x_nearest": true,
+        "complete_silhouette_no_text_watermark_or_scene": true,
+        "cold_palette_and_style_match": true,
+        "upper_left_light": "reviewed; floor/decal lighting not applicable",
+        "default_right_and_feet_baseline": "not_applicable_environment_sprite",
+        "character_animation_checks": "not_applicable_static_map_sprite",
+        "ground_tiling": "12-piece outer/inner/straight assembly inspected; existing texture unchanged",
+        "underlying_ground_overlay": "not_applicable"
+      }
+    }
+  },
+  {
+    "formal": "assets/sprites/ground/midgard/path_edge_inner_sw.png",
+    "manifest": "assets/source/batch04_midgard_expansion_2026-10-16/manifest.json",
+    "entry": {
+      "id": "path_edge_inner_sw",
+      "type": "ground",
+      "size": [
+        64,
+        64
+      ],
+      "source": "references/snow_trampled.png",
+      "processing": "Original tile RGB unchanged; binary alpha crop only; circular corner cutouts with 1-2px irregular edges",
+      "status": "approved_art_self_check_pending_game_review",
+      "candidate": "candidates/path_edge_inner_sw_v01.png",
+      "colors": 24,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "frames": 1,
+      "sha256": "eeb77eb92c7a1346948607148e1d865680298245c4184a5dbc7e98551d30d39b",
+      "opaque_bbox": [
+        0,
+        0,
+        64,
+        64
+      ],
+      "repeat_axis": null,
+      "technical_checks": {
+        "exact_size": true,
+        "png_rgba": true,
+        "binary_alpha": true,
+        "nonempty": true,
+        "margin_2px": "not_applicable_repeat_or_ground",
+        "horizontal_centering": "bbox fitted centrally; terrain not applicable",
+        "ground_contact": "bottom 2px margin; not applicable ground/decals/borders",
+        "animation_checks": "not_applicable_static_map_asset"
+      },
+      "approved_snapshot": "approved/ground/midgard/path_edge_inner_sw.png",
+      "destination": "sprites/ground/midgard/path_edge_inner_sw.png",
+      "generation_record": "../batch04_maps_2026-10-16/manifest.json",
+      "prompt_file": "derived from existing accepted ice or snow_trampled; no new generation",
+      "tool": "Pillow alpha crop of existing project tile",
+      "input_reference": "references/snow_trampled.png",
+      "visual_checks": {
+        "reviewed_1x_on_121721": true,
+        "reviewed_4x_nearest": true,
+        "complete_silhouette_no_text_watermark_or_scene": true,
+        "cold_palette_and_style_match": true,
+        "upper_left_light": "reviewed; floor/decal lighting not applicable",
+        "default_right_and_feet_baseline": "not_applicable_environment_sprite",
+        "character_animation_checks": "not_applicable_static_map_sprite",
+        "ground_tiling": "12-piece outer/inner/straight assembly inspected; existing texture unchanged",
+        "underlying_ground_overlay": "not_applicable"
+      }
+    }
+  },
+  {
+    "formal": "assets/sprites/ground/midgard/path_edge_inner_se.png",
+    "manifest": "assets/source/batch04_midgard_expansion_2026-10-16/manifest.json",
+    "entry": {
+      "id": "path_edge_inner_se",
+      "type": "ground",
+      "size": [
+        64,
+        64
+      ],
+      "source": "references/snow_trampled.png",
+      "processing": "Original tile RGB unchanged; binary alpha crop only; circular corner cutouts with 1-2px irregular edges",
+      "status": "approved_art_self_check_pending_game_review",
+      "candidate": "candidates/path_edge_inner_se_v01.png",
+      "colors": 23,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "frames": 1,
+      "sha256": "16613d97089d8714ab4682d127b17f6bc5383b5bef2c73aa224722518fce5a4e",
+      "opaque_bbox": [
+        0,
+        0,
+        64,
+        64
+      ],
+      "repeat_axis": null,
+      "technical_checks": {
+        "exact_size": true,
+        "png_rgba": true,
+        "binary_alpha": true,
+        "nonempty": true,
+        "margin_2px": "not_applicable_repeat_or_ground",
+        "horizontal_centering": "bbox fitted centrally; terrain not applicable",
+        "ground_contact": "bottom 2px margin; not applicable ground/decals/borders",
+        "animation_checks": "not_applicable_static_map_asset"
+      },
+      "approved_snapshot": "approved/ground/midgard/path_edge_inner_se.png",
+      "destination": "sprites/ground/midgard/path_edge_inner_se.png",
+      "generation_record": "../batch04_maps_2026-10-16/manifest.json",
+      "prompt_file": "derived from existing accepted ice or snow_trampled; no new generation",
+      "tool": "Pillow alpha crop of existing project tile",
+      "input_reference": "references/snow_trampled.png",
+      "visual_checks": {
+        "reviewed_1x_on_121721": true,
+        "reviewed_4x_nearest": true,
+        "complete_silhouette_no_text_watermark_or_scene": true,
+        "cold_palette_and_style_match": true,
+        "upper_left_light": "reviewed; floor/decal lighting not applicable",
+        "default_right_and_feet_baseline": "not_applicable_environment_sprite",
+        "character_animation_checks": "not_applicable_static_map_sprite",
+        "ground_tiling": "12-piece outer/inner/straight assembly inspected; existing texture unchanged",
+        "underlying_ground_overlay": "not_applicable"
+      }
+    }
+  },
+  {
+    "formal": "assets/sprites/ground/midgard/path_edge_inner_ne.png",
+    "manifest": "assets/source/batch04_midgard_expansion_2026-10-16/manifest.json",
+    "entry": {
+      "id": "path_edge_inner_ne",
+      "type": "ground",
+      "size": [
+        64,
+        64
+      ],
+      "source": "references/snow_trampled.png",
+      "processing": "Original tile RGB unchanged; binary alpha crop only; circular corner cutouts with 1-2px irregular edges",
+      "status": "approved_art_self_check_pending_game_review",
+      "candidate": "candidates/path_edge_inner_ne_v01.png",
+      "colors": 23,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "frames": 1,
+      "sha256": "07181467abeae56f4b7654ce164f42122d44fa8c523926673590cf079b45ec86",
+      "opaque_bbox": [
+        0,
+        0,
+        64,
+        64
+      ],
+      "repeat_axis": null,
+      "technical_checks": {
+        "exact_size": true,
+        "png_rgba": true,
+        "binary_alpha": true,
+        "nonempty": true,
+        "margin_2px": "not_applicable_repeat_or_ground",
+        "horizontal_centering": "bbox fitted centrally; terrain not applicable",
+        "ground_contact": "bottom 2px margin; not applicable ground/decals/borders",
+        "animation_checks": "not_applicable_static_map_asset"
+      },
+      "approved_snapshot": "approved/ground/midgard/path_edge_inner_ne.png",
+      "destination": "sprites/ground/midgard/path_edge_inner_ne.png",
+      "generation_record": "../batch04_maps_2026-10-16/manifest.json",
+      "prompt_file": "derived from existing accepted ice or snow_trampled; no new generation",
+      "tool": "Pillow alpha crop of existing project tile",
+      "input_reference": "references/snow_trampled.png",
+      "visual_checks": {
+        "reviewed_1x_on_121721": true,
+        "reviewed_4x_nearest": true,
+        "complete_silhouette_no_text_watermark_or_scene": true,
+        "cold_palette_and_style_match": true,
+        "upper_left_light": "reviewed; floor/decal lighting not applicable",
+        "default_right_and_feet_baseline": "not_applicable_environment_sprite",
+        "character_animation_checks": "not_applicable_static_map_sprite",
+        "ground_tiling": "12-piece outer/inner/straight assembly inspected; existing texture unchanged",
+        "underlying_ground_overlay": "not_applicable"
+      }
+    }
+  }
+]

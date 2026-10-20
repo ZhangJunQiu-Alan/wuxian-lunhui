@@ -1,0 +1,533 @@
+--- before/scripts/bosses/hati_phantom.gd
++++ scripts/bosses/hati_phantom.gd
+@@ -26,7 +26,8 @@
+ func _physics_process(delta: float) -> void:
+ 	_life -= delta
+ 	if _life <= 0.0 or not is_instance_valid(hati) or not is_instance_valid(target):
+-		FxLayer.burst(global_position, color, 16, 180.0)
++		if not BossFx.play("hati_split_flash", global_position, 0.0, Vector2.ONE, Color.WHITE, true):
++			FxLayer.burst(global_position, color, 16, 180.0)
+ 		queue_free()
+ 		return
+ 	if _flash_time > 0.0:
+@@ -66,6 +67,8 @@
+ func _draw() -> void:
+ 	if not is_instance_valid(hati):
+ 		return
++	if hati.state == "lunge":
++		BossFx.draw(self, "hati_lunge_trail", hati.state_time, -_aim_dir * radius * 0.5, _aim_dir.angle())
+ 	if hati.state == "lunge_windup":
+ 		var t := hati.state_time / hati.windup_time(Hati.LUNGE_WINDUP)
+ 		Boss.draw_line_telegraph(self, _aim_dir, Hati.LUNGE_LENGTH + radius, radius, t, Hati.MOON_COLOR)
+--- before/scripts/bosses/hati.gd
++++ scripts/bosses/hati.gd
+@@ -88,6 +88,8 @@
+ 				change_state("chase")
+ 		"howl_windup":
+ 			if state_time >= windup_time(HOWL_WINDUP):
++				BossFx.play("hati_howl_wave", global_position, 0.0, Vector2.ONE * HOWL_RADIUS / 62.0,
++					Color.WHITE, false, HOWL_RADIUS)
+ 				if global_position.distance_to(target.global_position) < HOWL_RADIUS:
+ 					target.fear(global_position, FEAR_DURATION)
+ 				target.shake(6.0, 0.3)
+@@ -117,7 +119,8 @@
+ 
+ func _split() -> void:
+ 	_split_timer = SPLIT_EVERY
+-	FxLayer.burst(global_position, color, 30, 260.0)
++	if not BossFx.play("hati_split_flash", global_position):
++		FxLayer.burst(global_position, color, 30, 260.0)
+ 	for i in PHANTOM_COUNT:
+ 		var phantom := HatiPhantom.new()
+ 		phantom.hati = self
+@@ -129,10 +132,13 @@
+ 		var side := -1.0 if i == 0 else 1.0
+ 		phantom.position = position + global_position.direction_to(target.global_position).orthogonal() * side * 140.0
+ 		get_parent().add_child(phantom)
++		BossFx.play("hati_split_flash", phantom.global_position)
+ 
+ 
+ func _draw_telegraph() -> void:
+ 	match state:
++		"lunge":
++			BossFx.draw(self, "hati_lunge_trail", state_time, -lunge_dir * radius * 0.5, lunge_dir.angle())
+ 		"lunge_windup":
+ 			draw_line_telegraph(self, lunge_dir, LUNGE_LENGTH + radius, radius, state_time / windup_time(LUNGE_WINDUP), MOON_COLOR)
+ 		"howl_windup":
+--- before/scripts/bosses/nidhogg.gd
++++ scripts/bosses/nidhogg.gd
+@@ -33,6 +33,7 @@
+ var _gnaw_damage := 0.0
+ var _cycle := 0
+ var _crack_strip: Texture2D
++var _gnaw_visual: Node2D
+ 
+ 
+ func _init() -> void:
+@@ -54,6 +55,11 @@
+ 		_crack_strip = load(CRACK_PATH)
+ 	_root = _make_root(position)
+ 	get_parent().add_child.call_deferred(_root)
++	_gnaw_visual = Node2D.new()
++	_gnaw_visual.name = "GnawFx"
++	_gnaw_visual.z_index = 1
++	_gnaw_visual.draw.connect(_draw_gnaw)
++	add_child(_gnaw_visual)
+ 	change_state("chase")
+ 
+ 
+@@ -75,6 +81,7 @@
+ 
+ 
+ func _update_state(delta: float) -> void:
++	_gnaw_visual.queue_redraw()
+ 	_gnaw_timer -= delta
+ 	match state:
+ 		"chase":
+@@ -98,7 +105,8 @@
+ 		"burrow":
+ 			if state_time >= BURROW_TIME:
+ 				set_untouchable(true)
+-				FxLayer.burst(global_position, Color(0.3, 0.25, 0.2), 20, 160.0, 4.0)
++				if not BossFx.play("nidhogg_burrow_dust", global_position):
++					FxLayer.burst(global_position, Color(0.3, 0.25, 0.2), 20, 160.0, 4.0)
+ 				_crack = target.global_position
+ 				change_state("under")
+ 		"under":
+@@ -140,6 +148,7 @@
+ 			_gnaw_timer = GNAW_EVERY
+ 			FxLayer.floating_text(global_position + Vector2(0, -radius - 20), tr("打断！"), Color(1.0, 0.85, 0.4))
+ 			Audio.sfx("boss_block")
++			BossFx.play("nidhogg_gnaw_stagger", global_position)
+ 			change_state("stagger")
+ 
+ 
+@@ -152,15 +161,20 @@
+ 	for i in 3:
+ 		var at := global_position + _breath_dir.rotated(randf_range(-0.3, 0.3)) * (110.0 + i * 85.0)
+ 		PoisonPool.spawn(get_parent(), Game.clamp_to_map(at, 40.0))
+-	for i in 24:
+-		FxLayer.burst(global_position + _breath_dir.rotated(randf_range(-BREATH_HALF_ANGLE, BREATH_HALF_ANGLE)) * randf_range(60.0, BREATH_RANGE), POISON, 1, 60.0, 5.0)
++	var breath_scale := Vector2(BREATH_RANGE / 92.0, BREATH_RANGE * tan(BREATH_HALF_ANGLE) / 32.0)
++	if not BossFx.play("nidhogg_poison_breath", global_position, _breath_dir.angle(), breath_scale,
++			Color.WHITE, false, BREATH_RANGE, BREATH_HALF_ANGLE):
++		for i in 24:
++			FxLayer.burst(global_position + _breath_dir.rotated(randf_range(-BREATH_HALF_ANGLE, BREATH_HALF_ANGLE)) * randf_range(60.0, BREATH_RANGE), POISON, 1, 60.0, 5.0)
+ 
+ 
+ func _emerge() -> void:
+ 	Audio.sfx("boss_slam")
+ 	target.shake(10.0, 0.35)
+-	FxLayer.ring(global_position, EMERGE_RADIUS)
+-	FxLayer.burst(global_position, Color(0.35, 0.3, 0.25), 36, 260.0, 5.0)
++	if not BossFx.play("nidhogg_emerge_burst", global_position, 0.0, Vector2.ONE * EMERGE_RADIUS / 62.0,
++			Color.WHITE, false, EMERGE_RADIUS):
++		FxLayer.ring(global_position, EMERGE_RADIUS)
++		FxLayer.burst(global_position, Color(0.35, 0.3, 0.25), 36, 260.0, 5.0)
+ 	if global_position.distance_to(target.global_position) < EMERGE_RADIUS + Player.RADIUS:
+ 		target.take_damage(EMERGE_DAMAGE)
+ 
+@@ -192,3 +206,11 @@
+ 					var dir := Vector2.from_angle(i * TAU / 6.0 + 0.4)
+ 					draw_line(local, local + dir * EMERGE_RADIUS * t, Color(0.15, 0.1, 0.08), 3.0)
+ 			draw_circle_telegraph(self, local, EMERGE_RADIUS, t)
++
++
++func _draw_gnaw() -> void:
++	if state == "gnaw" and is_instance_valid(_root) and not _dead:
++		var from := _root.global_position - global_position
++		var flow := -from
++		BossFx.draw(_gnaw_visual, "nidhogg_gnaw_heal", state_time, from * 0.5, flow.angle(),
++			Vector2(maxf(0.5, flow.length() / 56.0), 1.0), Color(1.25, 1.8, 1.25, 1))
+--- before/scripts/bosses/ice_pillar.gd
++++ scripts/bosses/ice_pillar.gd
+@@ -35,7 +35,8 @@
+ 	if _age < 0.3:
+ 		queue_redraw()
+ 	if _life <= 0.0:
+-		FxLayer.burst(global_position, COLOR, 8, 120.0)
++		if not BossFx.play("hrym_ice_break", global_position + Vector2(0, RADIUS * 0.6)):
++			FxLayer.burst(global_position, COLOR, 8, 120.0)
+ 		queue_free()
+ 
+ 
+--- before/scripts/bosses/shockwave.gd
++++ scripts/bosses/shockwave.gd
+@@ -14,6 +14,7 @@
+ var player: Player
+ var _radius := 0.0
+ var _hit := false
++var _age := 0.0
+ 
+ 
+ static func spawn(parent: Node, pos: Vector2, gap_angles: Array[float], target: Player) -> void:
+@@ -29,6 +30,7 @@
+ 
+ 
+ func _process(delta: float) -> void:
++	_age += delta
+ 	_radius += SPEED * delta
+ 	if _radius > MAX_RADIUS:
+ 		queue_free()
+@@ -51,6 +53,14 @@
+ 
+ func _draw() -> void:
+ 	var alpha := 1.0 - _radius / MAX_RADIUS * 0.6
++	var arcs := BossFx.visible_arcs(gaps, GAP_HALF)
++	if BossFx.texture("hrym_wave_band") != null:
++		for arc in arcs:
++			draw_arc(Vector2.ZERO, _radius, arc.x, arc.y, 48, Color(COLOR, 0.2 * alpha), BAND)
++		BossFx.draw_band(self, "hrym_wave_band", _age, Vector2.ZERO, _radius, BAND, arcs, Color(1, 1, 1, alpha))
++		for arc in arcs:
++			draw_arc(Vector2.ZERO, _radius, arc.x, arc.y, 48, Color(0.85, 0.95, 1, 0.65 * alpha), 2.0)
++		return
+ 	# 把整圈按缺口切成几段弧，只画缺口之外的部分
+ 	var sorted := gaps.duplicate()
+ 	sorted.sort()
+--- before/scripts/bosses/hrym.gd
++++ scripts/bosses/hrym.gd
+@@ -26,6 +26,7 @@
+ var _second_stomp := false
+ var _cage_center := Vector2.ZERO
+ var _gaps: Array[float] = []     # 下一圈冲击波的缺口角度，预警时就画出来
++var _shield_visual: Node2D
+ 
+ 
+ func _init() -> void:
+@@ -43,10 +44,16 @@
+ 
+ func _ready() -> void:
+ 	super._ready()
++	_shield_visual = Node2D.new()
++	_shield_visual.name = "ShieldFx"
++	_shield_visual.z_index = 1
++	_shield_visual.draw.connect(_draw_shield)
++	add_child(_shield_visual)
+ 	change_state("chase")
+ 
+ 
+ func _update_state(delta: float) -> void:
++	_shield_visual.queue_redraw()
+ 	if not _phase2 and hp < max_hp * 0.5:
+ 		_phase2 = true
+ 		_summon_guards()
+@@ -111,7 +118,6 @@
+ 	target.shake(10.0, 0.3)
+ 	Audio.sfx("boss_slam")
+ 	FxLayer.burst(global_position, FROST_COLOR, 30, 260.0)
+-	FxLayer.ring(global_position, 150.0)
+ 	Shockwave.spawn(get_parent(), global_position, _gaps, target)
+ 
+ 
+@@ -119,7 +125,10 @@
+ 	target.shake(8.0, 0.4)
+ 	FxLayer.floating_text(global_position + Vector2(0, -radius - 20), tr("霜巨人卫队！"), FROST_COLOR)
+ 	for i in GUARDS:
+-		spawner.call("frost_giant", global_position + Vector2.from_angle(TAU * i / GUARDS) * (radius + 60.0))
++		var at := global_position + Vector2.from_angle(TAU * i / GUARDS) * (radius + 60.0)
++		var guard: Enemy = spawner.call("frost_giant", at)
++		if is_instance_valid(guard):
++			BossFx.play("hrym_guard_summon", guard.global_position)
+ 
+ 
+ ## 举盾时，玩家在他正面的攻击全部被格挡
+@@ -127,6 +136,7 @@
+ 	if state == "shield" and absf(_facing.angle_to(target.global_position - global_position)) < SHIELD_HALF_ANGLE:
+ 		_flash_time = 0.05
+ 		Audio.sfx("boss_block", -4.0)
++		BossFx.play("hrym_block_spark", global_position + _facing * radius, _facing.angle())
+ 		if randf() < 0.3:  # 不用每次都飘字，避免刷屏
+ 			FxLayer.floating_text(global_position + _facing * radius, tr("格挡"), FROST_COLOR)
+ 		return
+@@ -152,6 +162,18 @@
+ 		"shield":
+ 			# 盾牌：正面一道粗弧线
+ 			var a := _facing.angle()
+-			draw_arc(Vector2.ZERO, radius + 12.0, a - SHIELD_HALF_ANGLE, a + SHIELD_HALF_ANGLE, 24, Color(0.85, 0.95, 1.0, 0.9), 8.0)
++			if BossFx.texture("hrym_shield_arc") == null:
++				draw_arc(Vector2.ZERO, radius + 12.0, a - SHIELD_HALF_ANGLE, a + SHIELD_HALF_ANGLE, 24, Color(0.85, 0.95, 1.0, 0.9), 8.0)
+ 	# 朝向标记
+ 	draw_line(_facing * radius * 0.5, _facing * (radius + 4.0), Color(1, 1, 1, 0.7), 4.0)
++
++
++func _draw_shield() -> void:
++	if state == "shield" and not _dead:
++		var visual_radius := radius + 12.0
++		if _actions:
++			var body_height := _actions.sprite_frames.get_frame_texture(_actions.animation, 0).get_height()
++			var body_scale: Vector2 = _sprite.get_meta("base_scale", Vector2.ONE)
++			visual_radius = maxf(visual_radius, body_height * body_scale.y * 0.5 + 8.0)
++		BossFx.draw(_shield_visual, "hrym_shield_arc", state_time, Vector2.ZERO, _facing.angle(),
++			Vector2.ONE * visual_radius / 58.0, Color.WHITE, false, visual_radius + 4.0, SHIELD_HALF_ANGLE)
+--- before/scripts/bosses/hel.gd
++++ scripts/bosses/hel.gd
+@@ -37,6 +37,7 @@
+ const BARRAGE_SPEED := 260.0
+ const SHIP_PATH := "res://assets/sprites/props/helheim/naglfar_sail.png"
+ const NAIL_PATH := "res://assets/sprites/effects/nail_bolt.png"
++const DEATH_BOLT_PATH := "res://assets/sprites/effects/hel_death_bolt.png"
+ const LIFE := Color(0.75, 0.85, 0.55)
+ const DEATH := Color(0.45, 0.3, 0.6)
+ 
+@@ -52,6 +53,7 @@
+ var _ship: Node2D
+ var _field: Node2D
+ var _nail: Texture2D
++var _death_bolt: Texture2D
+ 
+ 
+ func _init() -> void:
+@@ -71,6 +73,8 @@
+ 	_anchor = position
+ 	if ResourceLoader.exists(NAIL_PATH):
+ 		_nail = load(NAIL_PATH)
++	if ResourceLoader.exists(DEATH_BOLT_PATH):
++		_death_bolt = load(DEATH_BOLT_PATH)
+ 	_field = Node2D.new()
+ 	_field.z_index = -1
+ 	_field.draw.connect(_draw_field)
+@@ -110,7 +114,7 @@
+ 		"cast_windup":
+ 			_cast_dir = global_position.direction_to(target.global_position)
+ 			if state_time >= CAST_WINDUP:
+-				_fan(_cast_dir, CAST_SHOTS, CAST_SPREAD, CAST_DAMAGE, 200.0, null, DEATH.lightened(0.4))
++				_fan(_cast_dir, CAST_SHOTS, CAST_SPREAD, CAST_DAMAGE, 200.0, _death_bolt, DEATH.lightened(0.4))
+ 				change_state("cast")
+ 		"cast":
+ 			if state_time >= 0.4:
+@@ -134,10 +138,12 @@
+ 		_switch_timer -= delta
+ 		if _switch_timer <= 0.0:
+ 			_switch_timer = SWITCH_EVERY
+-			FxLayer.burst(global_position, DEATH if _on_life_side() else LIFE, 30, 220.0, 4.0)
++			if not BossFx.play("hel_shift", global_position, 0.0, Vector2.ONE, LIFE if _on_life_side() else DEATH.lightened(0.3)):
++				FxLayer.burst(global_position, DEATH if _on_life_side() else LIFE, 30, 220.0, 4.0)
+ 			var x := _anchor.x + (SIDE_OFFSET if _on_life_side() else -SIDE_OFFSET)
+ 			position = MapLayer.push_out(Game.clamp_to_map(Vector2(x, position.y), radius), radius)
+-			FxLayer.burst(global_position, LIFE if _on_life_side() else DEATH, 30, 220.0, 4.0)
++			if not BossFx.play("hel_shift", global_position, 0.0, Vector2.ONE, LIFE if _on_life_side() else DEATH.lightened(0.3)):
++				FxLayer.burst(global_position, LIFE if _on_life_side() else DEATH, 30, 220.0, 4.0)
+ 			Audio.sfx("boss_windup")
+ 	if _side_timer > 0.0:
+ 		return
+@@ -147,11 +153,15 @@
+ 			var enemy := node as Enemy
+ 			if enemy != self and enemy.hp < enemy.max_hp and enemy.global_position.distance_to(global_position) < HEAL_RADIUS:
+ 				enemy.hp = minf(enemy.max_hp, enemy.hp + enemy.max_hp * HEAL_RATIO)
+-				FxLayer.burst(enemy.global_position, LIFE, 3, 60.0, 2.0)
++				if not BossFx.play("hel_heal", enemy.global_position):
++					FxLayer.burst(enemy.global_position, LIFE, 3, 60.0, 2.0)
+ 	else:
+ 		_side_timer = SUMMON_EVERY
+ 		for i in SUMMON_COUNT:
+-			spawner.call("dead", Game.clamp_to_map(global_position + Vector2.from_angle(randf() * TAU) * randf_range(60.0, 140.0), 40.0))
++			var at := Game.clamp_to_map(global_position + Vector2.from_angle(randf() * TAU) * randf_range(60.0, 140.0), 40.0)
++			var dead: Enemy = spawner.call("dead", at)
++			if is_instance_valid(dead):
++				BossFx.play("hel_army_summon", dead.global_position)
+ 
+ 
+ func _raise_army() -> void:
+@@ -159,8 +169,9 @@
+ 	Audio.sfx("boss_slam", -4.0)
+ 	for i in ARMY_COUNT:
+ 		var pos := Game.clamp_to_map(target.global_position + Vector2.from_angle(TAU * i / ARMY_COUNT) * ARMY_RADIUS, 40.0)
+-		FxLayer.burst(pos, Color(0.4, 0.38, 0.35), 6, 90.0, 3.0)
+-		spawner.call("dead", pos)
++		var dead: Enemy = spawner.call("dead", pos)
++		if is_instance_valid(dead) and not BossFx.play("hel_army_summon", dead.global_position):
++			FxLayer.burst(dead.global_position, Color(0.4, 0.38, 0.35), 6, 90.0, 3.0)
+ 
+ 
+ func _fan(dir: Vector2, shots: int, spread: float, damage: float, speed_px: float, texture: Texture2D, tint: Color, from: Vector2 = global_position) -> void:
+@@ -191,8 +202,10 @@
+ 			_ship.draw_rect(Rect2(-8, -220, 16, 220), Color(0.3, 0.25, 0.2, 0.8))
+ 			_ship.draw_colored_polygon(PackedVector2Array([Vector2(8, -210), Vector2(160, -150), Vector2(8, -40)]), Color(0.75, 0.7, 0.62, 0.8)))
+ 	get_parent().add_child(_ship)
+-	FxLayer.burst(global_position, DEATH, 40, 260.0, 4.0)
++	if not BossFx.play("hel_board_ship", global_position, 0.0, Vector2.ONE, Color(1, 1, 1, 0.7)):
++		FxLayer.burst(global_position, DEATH, 40, 260.0, 4.0)
+ 	position = deck
++	BossFx.play("hel_board_ship", global_position, 0.0, Vector2.ONE, Color(1, 1, 1, 0.7))
+ 	target.shake(10.0, 0.5)
+ 	Audio.sfx("boss_warning")
+ 	change_state("ship")
+@@ -218,10 +231,14 @@
+ func _draw_field() -> void:
+ 	var r := _domain_radius()
+ 	var h := 2600.0
+-	_field.draw_rect(Rect2(_anchor.x - h, _anchor.y - h, h, h * 2.0), Color(LIFE, 0.05))
+-	_field.draw_rect(Rect2(_anchor.x, _anchor.y - h, h, h * 2.0), Color(DEATH, 0.07))
++	if not BossFx.draw_ground(_field, "hel_life_ground", Rect2(_anchor.x - h, _anchor.y - h, h, h * 2.0)):
++		_field.draw_rect(Rect2(_anchor.x - h, _anchor.y - h, h, h * 2.0), Color(LIFE, 0.05))
++	if not BossFx.draw_ground(_field, "hel_death_ground", Rect2(_anchor.x, _anchor.y - h, h, h * 2.0)):
++		_field.draw_rect(Rect2(_anchor.x, _anchor.y - h, h, h * 2.0), Color(DEATH, 0.07))
+ 	_field.draw_line(Vector2(_anchor.x, _anchor.y - r), Vector2(_anchor.x, _anchor.y + r), Color(0.9, 0.9, 0.95, 0.25), 3.0)
+ 	_field.draw_arc(_anchor, r + 1500.0, 0.0, TAU, 96, Color(0.05, 0.02, 0.08, 0.45), 3000.0)
++	var arcs: Array[Vector2] = [Vector2(0, TAU)]
++	BossFx.draw_band(_field, "hel_domain_edge", _fight_time, _anchor, r, 24.0, arcs, Color(1, 1, 1, 0.75))
+ 	_field.draw_arc(_anchor, r, 0.0, TAU, 96, Color(DEATH.lightened(0.3), 0.8), 3.0)
+ 
+ 
+--- before/scripts/bosses/garm.gd
++++ scripts/bosses/garm.gd
+@@ -31,6 +31,7 @@
+ var _anchor := Vector2.ZERO
+ var _stakes: Array[Enemy] = []
+ var _free := false
++var _bite_shown := false
+ 
+ 
+ func _init() -> void:
+@@ -61,10 +62,12 @@
+ 
+ func _on_stake_broken(stake: Enemy) -> void:
+ 	_stakes.erase(stake)
++	BossFx.play("garm_chain_break", stake.global_position)
+ 	Audio.sfx("boss_block")
+ 	FxLayer.floating_text(stake.global_position + Vector2(0, -30), tr("锁桩断了！"), CHAIN_COLOR.lightened(0.4))
+ 	if _stakes.is_empty() and not _free:
+ 		_free = true
++		BossFx.play("garm_chain_break", global_position)
+ 		speed *= FREE_SPEED
+ 		Audio.sfx("boss_howl")
+ 		target.shake(8.0, 0.4)
+@@ -88,17 +91,22 @@
+ 			_lunge_dir = global_position.direction_to(target.global_position)
+ 			if state_time >= WINDUP_TIME:
+ 				_lunges_left = LUNGES
++				_bite_shown = false
+ 				change_state("lunge")
+ 		"lunge":
+ 			if state_time < LUNGE_TIME:
+ 				position += _lunge_dir * LUNGE_SPEED * delta
+ 				if global_position.distance_to(target.global_position) < radius + Player.RADIUS + 6.0:
+ 					target.take_damage(LUNGE_DAMAGE)
++					if not _bite_shown:
++						_bite_shown = true
++						if not BossFx.play("garm_bite", target.global_position, _lunge_dir.angle()):
++							FxLayer.mark(target.global_position, _lunge_dir.angle(), radius * 1.6, Color(1, 0.3, 0.25), "bite")
+ 			elif state_time >= LUNGE_TIME + LUNGE_PAUSE:
+ 				_lunges_left -= 1
+ 				if _lunges_left > 0:
++					_bite_shown = false
+ 					_lunge_dir = global_position.direction_to(target.global_position)  # 下一段重新瞄准
+-					FxLayer.mark(global_position + _lunge_dir * radius, _lunge_dir.angle(), radius * 1.6, Color(1.0, 0.3, 0.25), "bite")
+ 					change_state("lunge")
+ 				else:
+ 					change_state("recover")
+@@ -121,14 +129,18 @@
+ 	Audio.sfx("boss_howl")
+ 	play_once(&"howl")
+ 	target.shake(9.0, 0.35)
+-	FxLayer.ring(global_position, HOWL_RADIUS)
++	if not BossFx.play("garm_howl_wave", global_position, 0.0, Vector2.ONE * HOWL_RADIUS / 62.0,
++			Color.WHITE, false, HOWL_RADIUS):
++		FxLayer.ring(global_position, HOWL_RADIUS)
+ 	var offset := target.global_position - global_position
++	var dispelled := offset.length() < HOWL_RADIUS and (target.frenzy_time > 0.0 or target.shield_time > 0.0)
+ 	if offset.length() < HOWL_RADIUS:
+ 		target.take_damage(HOWL_DAMAGE)
+ 		target.position = MapLayer.push_out(Game.clamp_to_map(target.position + offset.normalized() * HOWL_PUSH, Player.RADIUS), Player.RADIUS)
+-	if target.frenzy_time > 0.0 or target.shield_time > 0.0:
++	if dispelled:
+ 		target.frenzy_time = 0.0
+ 		target.shield_time = 0.0
++		BossFx.play("garm_dispel", target.global_position)
+ 		FxLayer.floating_text(target.global_position + Vector2(0, -40), tr("增益被驱散"), Color(0.9, 0.5, 0.5))
+ 
+ 
+@@ -142,8 +154,9 @@
+ 				for i in 11:
+ 					var k := i / 10.0
+ 					points.append(to * k + sag * sin(k * PI))
+-				draw_polyline(points, Color(0.1, 0.1, 0.1, 0.7), 5.0)
+-				draw_polyline(points, CHAIN_COLOR, 2.5)
++				if not BossFx.draw_chain(self, points):
++					draw_polyline(points, Color(0.1, 0.1, 0.1, 0.7), 5.0)
++					draw_polyline(points, CHAIN_COLOR, 2.5)
+ 	match state:
+ 		"lunge_windup":
+ 			draw_line_telegraph(self, _lunge_dir, LUNGE_SPEED * LUNGE_TIME + radius, radius * 0.8, state_time / WINDUP_TIME)
+--- before/scripts/bosses/skoll.gd
++++ scripts/bosses/skoll.gd
+@@ -22,6 +22,7 @@
+ var _fight_time := 0.0
+ var _enraged := false
+ var _howl_timer := 0.0
++var _bite_shown := false
+ 
+ 
+ func _init() -> void:
+@@ -33,7 +34,7 @@
+ 	setup_boss("skoll", tr("斯库尔"), tr("追日之狼"), 650.0, hp_scale, 34.0, 150.0, 15.0)
+ 	gait = "quad"
+ 	color = Color(0.55, 0.5, 0.62)
+-	state_actions = {"howl": &"windup"}
++	state_actions = {"howl": &"howl"}
+ 
+ 
+ func _ready() -> void:
+@@ -63,11 +64,15 @@
+ 				change_state("windup")
+ 		"windup":
+ 			if state_time >= (WINDUP_TIME_ENRAGED if _enraged else WINDUP_TIME):
++				_bite_shown = false
+ 				change_state("dash")
+ 		"dash":
+ 			position += _dash_dir * DASH_SPEED * delta
+ 			if global_position.distance_to(target.global_position) < radius + Player.RADIUS:
+ 				target.take_damage(DASH_DAMAGE)
++				if not _bite_shown:
++					_bite_shown = true
++					BossFx.play("skoll_bite", target.global_position, _dash_dir.angle())
+ 			if state_time >= DASH_TIME:
+ 				change_state("recover")
+ 		"recover":
+@@ -96,6 +101,8 @@
+ 
+ func _draw_telegraph() -> void:
+ 	match state:
++		"dash":
++			BossFx.draw(self, "skoll_dash_trail", state_time, -_dash_dir * radius * 0.5, _dash_dir.angle())
+ 		"windup":
+ 			# 冲锋路线：红色长条，越接近冲刺越亮
+ 			var t := state_time / (WINDUP_TIME_ENRAGED if _enraged else WINDUP_TIME)
+@@ -103,4 +110,8 @@
+ 		"howl":
+ 			# 嚎叫：向外扩散的声波圈
+ 			var r := radius + state_time * 160.0
+-			draw_arc(Vector2.ZERO, r, 0.0, TAU, 48, Color(0.9, 0.85, 1.0, maxf(0.0, 0.8 - state_time * 0.6)), 4.0)
++			if BossFx.texture("skoll_howl") == null:
++				draw_arc(Vector2.ZERO, r, 0.0, TAU, 48, Color(0.9, 0.85, 1.0, maxf(0.0, 0.8 - state_time * 0.6)), 4.0)
++			elif state_time >= 0.6 and state_time < 1.1:
++				BossFx.draw(self, "skoll_howl", state_time - 0.6, Vector2.ZERO, 0.0,
++					Vector2.ONE * r / 62.0, Color.WHITE, false, 0.0, PI, false)
+--- before/scripts/effects/fx_layer.gd
++++ scripts/effects/fx_layer.gd
+@@ -21,6 +21,7 @@
+ var _particles := []  # 每项是字典：pos, vel, life, color, size
+ var _marks := []      # 每项是字典：pos, angle, length, count, kind, color, life
+ var _rings := []      # 每项是字典：pos, radius, life
++var _boss_effects: Array = []
+ var _font: Font
+ 
+ 
+@@ -99,11 +100,17 @@
+ 	for r in _rings:
+ 		r.life -= delta
+ 	_rings = _rings.filter(func(r: Dictionary) -> bool: return r.life > 0.0)
++	for effect in _boss_effects:
++		effect.age += delta
++	_boss_effects = _boss_effects.filter(func(effect: Dictionary) -> bool: return effect.age < effect.life)
+ 
+ 	queue_redraw()
+ 
+ 
+ func _draw() -> void:
++	for effect in _boss_effects:
++		BossFx.draw(self, effect.id, effect.age, effect.pos, effect.rot, effect.scale,
++			effect.tint, effect.reverse, effect.radius, effect.half, false)
+ 	for r in _rings:
+ 		var k: float = 1.0 - r.life / RING_LIFE  # 0 → 1
+ 		SpriteVisual.draw_frame(self, RING, 4, mini(3, int(k * 4.0)), r.pos, Vector2(64, 64), 0.0, Vector2.ONE * r.radius / RING_RADIUS, Color(1, 1, 1, minf(1.0, 3.0 * (1.0 - k))))

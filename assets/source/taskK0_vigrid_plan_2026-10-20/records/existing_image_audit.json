@@ -1,0 +1,471 @@
+[
+  {
+    "path": "assets/sprites/bosses/jormungandr_tail.png",
+    "size": [
+      64,
+      64
+    ],
+    "bbox": [
+      2,
+      9,
+      64,
+      49
+    ],
+    "rgb_colors": 44,
+    "alpha_values": [
+      0,
+      255
+    ],
+    "sha256": "02a5b4ddc3197735e27d0d2dbcdc10d71e1d8f12886351764f9c395dcd5c0936"
+  },
+  {
+    "path": "assets/sprites/bosses/jormungandr_head.png",
+    "size": [
+      128,
+      128
+    ],
+    "bbox": [
+      0,
+      8,
+      120,
+      108
+    ],
+    "rgb_colors": 48,
+    "alpha_values": [
+      0,
+      255
+    ],
+    "sha256": "147c0b593f24bbe81719f52ac9d553fe9540ced163399a76aba44cd0b5006bfb"
+  },
+  {
+    "path": "assets/sprites/bosses/jormungandr_body.png",
+    "size": [
+      64,
+      64
+    ],
+    "bbox": [
+      0,
+      8,
+      64,
+      46
+    ],
+    "rgb_colors": 42,
+    "alpha_values": [
+      0,
+      255
+    ],
+    "sha256": "72df0600b5d9d4a19a9e6b72d8af097751109dd6807f6c9dc959a8082032b94c"
+  },
+  {
+    "path": "assets/sprites/bosses/fenrir.png",
+    "size": [
+      192,
+      192
+    ],
+    "bbox": [
+      3,
+      3,
+      188,
+      190
+    ],
+    "rgb_colors": 48,
+    "alpha_values": [
+      0,
+      255
+    ],
+    "sha256": "bcc4676a2d9526817aed6a43429e5b5fc5123004378fda9687d37bbbf14159da"
+  },
+  {
+    "path": "assets/sprites/bosses/surtr.png",
+    "size": [
+      192,
+      192
+    ],
+    "bbox": [
+      12,
+      6,
+      179,
+      190
+    ],
+    "rgb_colors": 48,
+    "alpha_values": [
+      0,
+      255
+    ],
+    "sha256": "f5f705f6953e95ba014521ac47ae2f05b251e43bbea72ed7f30c6b68f3ec618d"
+  },
+  {
+    "path": "assets/sprites/enemies/fire_giant.png",
+    "size": [
+      96,
+      96
+    ],
+    "bbox": [
+      4,
+      4,
+      92,
+      94
+    ],
+    "rgb_colors": 48,
+    "alpha_values": [
+      0,
+      255
+    ],
+    "sha256": "0a59ac1cb33fb98e1acfd0b0d68b1ad73d0084151689ef1af7f5a04e34d21e7a"
+  },
+  {
+    "path": "assets/sprites/enemies/frost_veteran.png",
+    "size": [
+      96,
+      96
+    ],
+    "bbox": [
+      3,
+      2,
+      93,
+      94
+    ],
+    "rgb_colors": 48,
+    "alpha_values": [
+      0,
+      255
+    ],
+    "sha256": "6972714054f6181ee80249f0c5e42cac072e329a3bc063e04269ba00d9563e9c"
+  },
+  {
+    "path": "assets/sprites/enemies/dead.png",
+    "size": [
+      64,
+      64
+    ],
+    "bbox": [
+      12,
+      12,
+      52,
+      62
+    ],
+    "rgb_colors": 35,
+    "alpha_values": [
+      0,
+      255
+    ],
+    "sha256": "fcfada7817322ec67f6b6055bd4aa727c119c0256481921f857b6218b535d278"
+  },
+  {
+    "path": "assets/sprites/enemies/dead_move.png",
+    "size": [
+      384,
+      64
+    ],
+    "bbox": [
+      12,
+      11,
+      372,
+      62
+    ],
+    "rgb_colors": 35,
+    "alpha_values": [
+      0,
+      255
+    ],
+    "sha256": "93a758a490782306128d6e11941d12662ead0f1251df8b8ebc8900964fce792c"
+  },
+  {
+    "path": "assets/sprites/enemies/dead_attack.png",
+    "size": [
+      256,
+      64
+    ],
+    "bbox": [
+      14,
+      12,
+      241,
+      62
+    ],
+    "rgb_colors": 35,
+    "alpha_values": [
+      0,
+      255
+    ],
+    "sha256": "59c404b403f193cd6f15c0ac52e9e85742119ead0a55791b8b7380de0089d8d7"
+  },
+  {
+    "path": "assets/sprites/ground/vigrid/burnt_grass.png",
+    "size": [
+      64,
+      64
+    ],
+    "bbox": [
+      0,
+      0,
+      64,
+      64
+    ],
+    "rgb_colors": 19,
+    "alpha_values": [
+      255
+    ],
+    "sha256": "6f2333fe144ee0eff736c837ec2ae5ba546fa93e786c0bb009d0dd2392559999"
+  },
+  {
+    "path": "assets/sprites/ground/vigrid/scorched_01.png",
+    "size": [
+      64,
+      64
+    ],
+    "bbox": [
+      0,
+      0,
+      64,
+      64
+    ],
+    "rgb_colors": 21,
+    "alpha_values": [
+      255
+    ],
+    "sha256": "3748580e22d48641ca2776b843445a7c10ae1385a4e3251000eae628ead89ba8"
+  },
+  {
+    "path": "assets/sprites/ground/vigrid/scorched_02.png",
+    "size": [
+      64,
+      64
+    ],
+    "bbox": [
+      0,
+      0,
+      64,
+      64
+    ],
+    "rgb_colors": 24,
+    "alpha_values": [
+      255
+    ],
+    "sha256": "33c892d8afe17ce56f34408bb015394ae7595f5d9ded6a5cc4a9e3c2b6befa22"
+  },
+  {
+    "path": "assets/sprites/ground/vigrid/scorched_03.png",
+    "size": [
+      64,
+      64
+    ],
+    "bbox": [
+      0,
+      0,
+      64,
+      64
+    ],
+    "rgb_colors": 23,
+    "alpha_values": [
+      255
+    ],
+    "sha256": "b307a804cd093754eb2ad1f7a9f31ec661981881576cd03ba821739f06127cd3"
+  },
+  {
+    "path": "assets/sprites/ground/vigrid/scorched_04.png",
+    "size": [
+      64,
+      64
+    ],
+    "bbox": [
+      0,
+      0,
+      64,
+      64
+    ],
+    "rgb_colors": 24,
+    "alpha_values": [
+      255
+    ],
+    "sha256": "2d1f7e6bff2849a208e9f0abc52aeaa7a48ebcd0bf3f3128615ff9434e5727a0"
+  },
+  {
+    "path": "assets/sprites/ground/vigrid/cracked_lava.png",
+    "size": [
+      64,
+      64
+    ],
+    "bbox": [
+      0,
+      0,
+      64,
+      64
+    ],
+    "rgb_colors": 21,
+    "alpha_values": [
+      255
+    ],
+    "sha256": "2782e6bacb893eaf12f9b17890585008e2dafeefe9ccf571d548ad77c0f39507"
+  },
+  {
+    "path": "assets/sprites/props/vigrid/bifrost_fragment.png",
+    "size": [
+      96,
+      64
+    ],
+    "bbox": [
+      10,
+      2,
+      85,
+      62
+    ],
+    "rgb_colors": 42,
+    "alpha_values": [
+      0,
+      255
+    ],
+    "sha256": "a3948b492c7bc55c0d6333c6804593c50eecae91cc8527d9593e8d5baaf1451d"
+  },
+  {
+    "path": "assets/sprites/props/vigrid/fallen_shield.png",
+    "size": [
+      48,
+      48
+    ],
+    "bbox": [
+      2,
+      7,
+      46,
+      46
+    ],
+    "rgb_colors": 39,
+    "alpha_values": [
+      0,
+      255
+    ],
+    "sha256": "82f3244549a336404a11cbb2399cf064febafd9b513e2936ac92c768e5076f5d"
+  },
+  {
+    "path": "assets/sprites/props/vigrid/burning_wreckage.png",
+    "size": [
+      96,
+      96
+    ],
+    "bbox": [
+      2,
+      7,
+      94,
+      94
+    ],
+    "rgb_colors": 43,
+    "alpha_values": [
+      0,
+      255
+    ],
+    "sha256": "0db9ddab498cdfda609eef628c1128fd985aae113fb2315698c0cf1a4b21dffc"
+  },
+  {
+    "path": "assets/sprites/props/vigrid/broken_weapons.png",
+    "size": [
+      64,
+      64
+    ],
+    "bbox": [
+      4,
+      2,
+      59,
+      62
+    ],
+    "rgb_colors": 40,
+    "alpha_values": [
+      0,
+      255
+    ],
+    "sha256": "79093911f77127c3554d1216806de76ff2101cf62153f5bc06f504d40b371667"
+  },
+  {
+    "path": "assets/sprites/props/vigrid/giant_remains.png",
+    "size": [
+      96,
+      64
+    ],
+    "bbox": [
+      9,
+      2,
+      87,
+      62
+    ],
+    "rgb_colors": 39,
+    "alpha_values": [
+      0,
+      255
+    ],
+    "sha256": "6ae25e977fcbd8b4b4310ce4550e0024cc71c1728c2b9063e85c0e8b7dcb6998"
+  },
+  {
+    "path": "assets/sprites/characters/swordsman.png",
+    "size": [
+      64,
+      64
+    ],
+    "bbox": [
+      20,
+      12,
+      44,
+      60
+    ],
+    "rgb_colors": 32,
+    "alpha_values": [
+      0,
+      255
+    ],
+    "sha256": "93ffceadeceda21ba869017db71412302a79a529068e4c2580d6ef798fff11b9"
+  },
+  {
+    "path": "assets/sprites/characters/gunslinger.png",
+    "size": [
+      64,
+      64
+    ],
+    "bbox": [
+      22,
+      12,
+      42,
+      60
+    ],
+    "rgb_colors": 46,
+    "alpha_values": [
+      0,
+      255
+    ],
+    "sha256": "754134580682ef324d1b7e90fd2849807fe4622bc702a61bcd305a449fef9f52"
+  },
+  {
+    "path": "assets/sprites/characters/assassin.png",
+    "size": [
+      64,
+      64
+    ],
+    "bbox": [
+      13,
+      12,
+      51,
+      60
+    ],
+    "rgb_colors": 46,
+    "alpha_values": [
+      0,
+      255
+    ],
+    "sha256": "36f61e50bcfb173863e5abc69afc70ef10ae3d17bb6bf7bab8a31d42fcc2a772"
+  },
+  {
+    "path": "assets/sprites/characters/mage.png",
+    "size": [
+      64,
+      64
+    ],
+    "bbox": [
+      20,
+      12,
+      43,
+      60
+    ],
+    "rgb_colors": 43,
+    "alpha_values": [
+      0,
+      255
+    ],
+    "sha256": "3cbb5f8a32b7cb79bdfa52f38c7dbce3c487d0d9b50f25470967f904cf2ed90b"
+  }
+]

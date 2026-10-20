@@ -1,0 +1,531 @@
+[
+  {
+    "action": "idle",
+    "version": "v01",
+    "frames": 4,
+    "fps": 8,
+    "loop": true,
+    "raw_size": [
+      1254,
+      1254
+    ],
+    "raw_component_boxes": [
+      [
+        23,
+        30,
+        626,
+        633
+      ],
+      [
+        642,
+        19,
+        1250,
+        633
+      ],
+      [
+        11,
+        630,
+        627,
+        1238
+      ],
+      [
+        636,
+        660,
+        1250,
+        1249
+      ]
+    ],
+    "method": "opaque foreground connected components from raw alpha, one uniform scale for all poses, no anisotropic squeezing; original pixels only; original approved48RGB palette",
+    "scale": 0.30194805194805197,
+    "placements": [
+      [
+        3,
+        8,
+        182,
+        182
+      ],
+      [
+        3,
+        5,
+        184,
+        185
+      ],
+      [
+        3,
+        6,
+        186,
+        184
+      ],
+      [
+        3,
+        12,
+        185,
+        178
+      ]
+    ],
+    "registration": "one uniform scale across poses, left3 and lowest contact baseline190; whole-frame placement only, no per-pose resizing",
+    "candidate": "candidates/fenrir_idle_v01.png",
+    "sha256": "ae7bd0482460821828a0b8b2ef13124755c9e6b1d5084b3aa3b2596d61bab3d7",
+    "bboxes": [
+      [
+        3,
+        8,
+        185,
+        190
+      ],
+      [
+        3,
+        6,
+        187,
+        190
+      ],
+      [
+        3,
+        6,
+        189,
+        190
+      ],
+      [
+        3,
+        12,
+        188,
+        190
+      ]
+    ],
+    "visual_review": "pending"
+  },
+  {
+    "action": "move",
+    "version": "v02",
+    "frames": 6,
+    "fps": 8,
+    "loop": true,
+    "raw_size": [
+      1536,
+      1024
+    ],
+    "raw_component_boxes": [
+      [
+        16,
+        33,
+        486,
+        468
+      ],
+      [
+        527,
+        33,
+        1002,
+        489
+      ],
+      [
+        1041,
+        33,
+        1515,
+        489
+      ],
+      [
+        16,
+        536,
+        486,
+        983
+      ],
+      [
+        524,
+        538,
+        1013,
+        994
+      ],
+      [
+        1041,
+        542,
+        1514,
+        994
+      ]
+    ],
+    "method": "opaque foreground connected components from raw alpha, one uniform scale for all poses, no anisotropic squeezing; original pixels only; original approved48RGB palette",
+    "scale": 0.3803680981595092,
+    "placements": [
+      [
+        3,
+        25,
+        179,
+        165
+      ],
+      [
+        3,
+        17,
+        181,
+        173
+      ],
+      [
+        3,
+        17,
+        180,
+        173
+      ],
+      [
+        3,
+        20,
+        179,
+        170
+      ],
+      [
+        3,
+        17,
+        186,
+        173
+      ],
+      [
+        3,
+        18,
+        180,
+        172
+      ]
+    ],
+    "registration": "one uniform scale across poses, left3 and lowest contact baseline190; whole-frame placement only, no per-pose resizing",
+    "candidate": "candidates/fenrir_move_v02.png",
+    "sha256": "c793327a3192349438bc904bce7d3869654c4c0f1a5959e68a76c71fb11b7b0f",
+    "bboxes": [
+      [
+        3,
+        25,
+        182,
+        190
+      ],
+      [
+        3,
+        17,
+        184,
+        190
+      ],
+      [
+        3,
+        17,
+        183,
+        190
+      ],
+      [
+        3,
+        20,
+        182,
+        190
+      ],
+      [
+        3,
+        17,
+        189,
+        190
+      ],
+      [
+        3,
+        18,
+        183,
+        190
+      ]
+    ],
+    "visual_review": "pending"
+  },
+  {
+    "action": "windup",
+    "version": "v02",
+    "frames": 3,
+    "fps": 8,
+    "loop": false,
+    "raw_size": [
+      1254,
+      1254
+    ],
+    "raw_component_boxes": [
+      [
+        22,
+        53,
+        611,
+        609
+      ],
+      [
+        639,
+        57,
+        1239,
+        610
+      ],
+      [
+        11,
+        660,
+        620,
+        1230
+      ]
+    ],
+    "method": "opaque foreground connected components from raw alpha, one uniform scale for all poses, no anisotropic squeezing; original pixels only; original approved48RGB palette",
+    "scale": 0.3054187192118227,
+    "placements": [
+      [
+        3,
+        20,
+        180,
+        170
+      ],
+      [
+        3,
+        21,
+        183,
+        169
+      ],
+      [
+        3,
+        16,
+        186,
+        174
+      ]
+    ],
+    "registration": "one uniform scale across poses, left3 and lowest contact baseline190; whole-frame placement only, no per-pose resizing",
+    "candidate": "candidates/fenrir_windup_v02.png",
+    "sha256": "2a407d436f9f5cbbf6fd5d8ca2685fc18f5bd56f795963724e87851ed752868d",
+    "bboxes": [
+      [
+        3,
+        20,
+        183,
+        190
+      ],
+      [
+        3,
+        21,
+        186,
+        190
+      ],
+      [
+        3,
+        16,
+        189,
+        190
+      ]
+    ],
+    "visual_review": "pending"
+  },
+  {
+    "action": "attack",
+    "version": "v01",
+    "frames": 4,
+    "fps": 16,
+    "loop": false,
+    "raw_size": [
+      1254,
+      1254
+    ],
+    "raw_component_boxes": [
+      [
+        26,
+        74,
+        603,
+        624
+      ],
+      [
+        633,
+        63,
+        1242,
+        618
+      ],
+      [
+        22,
+        675,
+        630,
+        1216
+      ],
+      [
+        638,
+        675,
+        1240,
+        1234
+      ]
+    ],
+    "method": "opaque foreground connected components from raw alpha, one uniform scale for all poses, no anisotropic squeezing; original pixels only; original approved48RGB palette",
+    "scale": 0.3054187192118227,
+    "placements": [
+      [
+        3,
+        22,
+        176,
+        168
+      ],
+      [
+        3,
+        20,
+        186,
+        170
+      ],
+      [
+        3,
+        25,
+        186,
+        165
+      ],
+      [
+        3,
+        19,
+        184,
+        171
+      ]
+    ],
+    "registration": "one uniform scale across poses, left3 and lowest contact baseline190; whole-frame placement only, no per-pose resizing",
+    "candidate": "candidates/fenrir_attack_v01.png",
+    "sha256": "33979a23b6ffffa30683cfbe50df9f347663fce663214cd02c5dca1da58ef288",
+    "bboxes": [
+      [
+        3,
+        22,
+        179,
+        190
+      ],
+      [
+        3,
+        20,
+        189,
+        190
+      ],
+      [
+        3,
+        25,
+        189,
+        190
+      ],
+      [
+        3,
+        19,
+        187,
+        190
+      ]
+    ],
+    "visual_review": "pending"
+  },
+  {
+    "action": "swallow",
+    "version": "v01",
+    "frames": 6,
+    "fps": 16,
+    "loop": false,
+    "raw_size": [
+      1536,
+      1024
+    ],
+    "raw_component_boxes": [
+      [
+        17,
+        26,
+        496,
+        496
+      ],
+      [
+        528,
+        26,
+        1008,
+        496
+      ],
+      [
+        1040,
+        26,
+        1518,
+        496
+      ],
+      [
+        17,
+        531,
+        496,
+        1008
+      ],
+      [
+        527,
+        537,
+        1008,
+        1007
+      ],
+      [
+        1040,
+        541,
+        1518,
+        1009
+      ]
+    ],
+    "method": "opaque foreground connected components from raw alpha, one uniform scale for all poses, no anisotropic squeezing; original pixels only; original approved48RGB palette",
+    "scale": 0.3866943866943867,
+    "placements": [
+      [
+        3,
+        8,
+        185,
+        182
+      ],
+      [
+        3,
+        8,
+        186,
+        182
+      ],
+      [
+        3,
+        8,
+        185,
+        182
+      ],
+      [
+        3,
+        6,
+        185,
+        184
+      ],
+      [
+        3,
+        8,
+        186,
+        182
+      ],
+      [
+        3,
+        9,
+        185,
+        181
+      ]
+    ],
+    "registration": "one uniform scale across poses, left3 and lowest contact baseline190; whole-frame placement only, no per-pose resizing",
+    "candidate": "candidates/fenrir_swallow_v01.png",
+    "sha256": "6b92d9bb91d3600772801c19b94503cff08566dec4b214cf717308904ebf9537",
+    "bboxes": [
+      [
+        3,
+        8,
+        188,
+        190
+      ],
+      [
+        3,
+        8,
+        189,
+        190
+      ],
+      [
+        3,
+        8,
+        188,
+        190
+      ],
+      [
+        3,
+        6,
+        188,
+        190
+      ],
+      [
+        3,
+        8,
+        189,
+        190
+      ],
+      [
+        3,
+        9,
+        188,
+        190
+      ]
+    ],
+    "visual_review": "pending"
+  }
+]

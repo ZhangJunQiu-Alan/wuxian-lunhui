@@ -1,0 +1,594 @@
+{
+	"casts": {
+		"deaths": 64,
+		"dimension_slash": 6,
+		"enter_formation": 6,
+		"marks": 7700,
+		"stonehenge": 6,
+		"wild_west_show": 6
+	},
+	"checks": [
+		{
+			"label": "resource preload dimension_cut",
+			"pass": true,
+			"value": null
+		},
+		{
+			"label": "resource preload west_star",
+			"pass": true,
+			"value": null
+		},
+		{
+			"label": "resource preload west_aura",
+			"pass": true,
+			"value": null
+		},
+		{
+			"label": "resource preload formation_cavalry",
+			"pass": true,
+			"value": null
+		},
+		{
+			"label": "resource preload formation_slash",
+			"pass": true,
+			"value": null
+		},
+		{
+			"label": "resource preload stonehenge_stone",
+			"pass": true,
+			"value": null
+		},
+		{
+			"label": "resource preload stonehenge_lintel",
+			"pass": true,
+			"value": null
+		},
+		{
+			"label": "resource preload stonehenge_circle",
+			"pass": true,
+			"value": null
+		},
+		{
+			"label": "resource preload blades_slash",
+			"pass": true,
+			"value": null
+		},
+		{
+			"label": "resource preload arcane_nova",
+			"pass": true,
+			"value": null
+		},
+		{
+			"label": "resource preload hit_claw",
+			"pass": true,
+			"value": null
+		},
+		{
+			"label": "resource preload hit_bite",
+			"pass": true,
+			"value": null
+		},
+		{
+			"label": "resource preload death_shards",
+			"pass": true,
+			"value": null
+		},
+		{
+			"label": "resource preload loki_wolf_breath",
+			"pass": true,
+			"value": null
+		},
+		{
+			"label": "population setup 0",
+			"pass": true,
+			"value": 350
+		},
+		{
+			"label": "steady population stationary_pressure",
+			"pass": true,
+			"value": null
+		},
+		{
+			"label": "mark cap stationary_pressure",
+			"pass": true,
+			"value": null
+		},
+		{
+			"label": "particle cap stationary_pressure",
+			"pass": true,
+			"value": null
+		},
+		{
+			"label": "bounded texture cache stationary_pressure",
+			"pass": true,
+			"value": null
+		},
+		{
+			"label": "steady population live_ai_pressure",
+			"pass": true,
+			"value": null
+		},
+		{
+			"label": "mark cap live_ai_pressure",
+			"pass": true,
+			"value": null
+		},
+		{
+			"label": "particle cap live_ai_pressure",
+			"pass": true,
+			"value": null
+		},
+		{
+			"label": "bounded texture cache live_ai_pressure",
+			"pass": true,
+			"value": null
+		},
+		{
+			"label": "steady population stationary_repeat",
+			"pass": true,
+			"value": null
+		},
+		{
+			"label": "mark cap stationary_repeat",
+			"pass": true,
+			"value": null
+		},
+		{
+			"label": "particle cap stationary_repeat",
+			"pass": true,
+			"value": null
+		},
+		{
+			"label": "bounded texture cache stationary_repeat",
+			"pass": true,
+			"value": null
+		},
+		{
+			"label": "feedback arrays drain without manual clearing",
+			"pass": true,
+			"value": null
+		},
+		{
+			"label": "frenzy visuals expire naturally",
+			"pass": true,
+			"value": null
+		},
+		{
+			"label": "ultimates expire naturally",
+			"pass": true,
+			"value": null
+		},
+		{
+			"label": "FxLayer static cleared on scene exit 0",
+			"pass": true,
+			"value": null
+		},
+		{
+			"label": "population setup 1",
+			"pass": true,
+			"value": 12
+		},
+		{
+			"label": "FxLayer static cleared on scene exit 1",
+			"pass": true,
+			"value": null
+		},
+		{
+			"label": "no enemies after scene free 0",
+			"pass": true,
+			"value": null
+		},
+		{
+			"label": "no henge after scene free 0",
+			"pass": true,
+			"value": null
+		},
+		{
+			"label": "population setup 2",
+			"pass": true,
+			"value": 12
+		},
+		{
+			"label": "FxLayer static cleared on scene exit 2",
+			"pass": true,
+			"value": null
+		},
+		{
+			"label": "no enemies after scene free 1",
+			"pass": true,
+			"value": null
+		},
+		{
+			"label": "no henge after scene free 1",
+			"pass": true,
+			"value": null
+		},
+		{
+			"label": "population setup 3",
+			"pass": true,
+			"value": 12
+		},
+		{
+			"label": "FxLayer static cleared on scene exit 3",
+			"pass": true,
+			"value": null
+		},
+		{
+			"label": "no enemies after scene free 2",
+			"pass": true,
+			"value": null
+		},
+		{
+			"label": "no henge after scene free 2",
+			"pass": true,
+			"value": null
+		}
+	],
+	"engine": {
+		"build": "official",
+		"hash": "ed1daf0bf001b61586d9930840f2f1394092c079",
+		"hex": 263938,
+		"major": 4,
+		"minor": 7,
+		"patch": 2,
+		"status": "stable",
+		"string": "4.7.2-stable (official)",
+		"timestamp": 0
+	},
+	"failures": [],
+	"phases": [
+		{
+			"frames": 236,
+			"live_ai": false,
+			"mean_ms": 16.9745762711864,
+			"name": "stationary_pressure",
+			"p95_ms": 26,
+			"wall_seconds": 4.006
+		},
+		{
+			"frames": 240,
+			"live_ai": true,
+			"mean_ms": 16.7416666666667,
+			"name": "live_ai_pressure",
+			"p95_ms": 18,
+			"wall_seconds": 4.018
+		},
+		{
+			"frames": 240,
+			"live_ai": false,
+			"mean_ms": 16.7166666666667,
+			"name": "stationary_repeat",
+			"p95_ms": 17,
+			"wall_seconds": 4.012
+		}
+	],
+	"pid": 13360,
+	"samples": [
+		{
+			"cycle": 0,
+			"effects": {
+				"marks": 0,
+				"numbers": 0,
+				"particles": 0,
+				"rings": 0
+			},
+			"enemies": 350,
+			"fps_monitor": 1.0,
+			"j_texture_cache": 14,
+			"nodes": 1988,
+			"objects": 8606.0,
+			"orphans": 0.0,
+			"phase": "stationary_pressure",
+			"resources": 279.0,
+			"seconds": 0.399,
+			"static_bytes": 71965028,
+			"static_peak_bytes": 71965688,
+			"tag": "start",
+			"texture_bytes": 29083684.0,
+			"video_bytes": 35552084.0
+		},
+		{
+			"cycle": 0,
+			"effects": {
+				"marks": 63,
+				"numbers": 0,
+				"particles": 30,
+				"rings": 0
+			},
+			"enemies": 350,
+			"fps_monitor": 1.0,
+			"j_texture_cache": 14,
+			"nodes": 1992,
+			"objects": 8616.0,
+			"orphans": 0.0,
+			"phase": "stationary_pressure",
+			"resources": 284.0,
+			"seconds": 0.471,
+			"static_bytes": 73940668,
+			"static_peak_bytes": 74025937,
+			"tag": "steady",
+			"texture_bytes": 29127372.0,
+			"video_bytes": 38181228.0
+		},
+		{
+			"cycle": 0,
+			"effects": {
+				"marks": 120,
+				"numbers": 0,
+				"particles": 12,
+				"rings": 0
+			},
+			"enemies": 350,
+			"fps_monitor": 60.0,
+			"j_texture_cache": 14,
+			"nodes": 1991,
+			"objects": 8615.0,
+			"orphans": 0.0,
+			"phase": "stationary_pressure",
+			"resources": 285.0,
+			"seconds": 4.405,
+			"static_bytes": 74025156,
+			"static_peak_bytes": 74123804,
+			"tag": "end",
+			"texture_bytes": 29127372.0,
+			"video_bytes": 38199340.0
+		},
+		{
+			"cycle": 0,
+			"effects": {
+				"marks": 110,
+				"numbers": 0,
+				"particles": 12,
+				"rings": 0
+			},
+			"enemies": 350,
+			"fps_monitor": 60.0,
+			"j_texture_cache": 14,
+			"nodes": 1991,
+			"objects": 8615.0,
+			"orphans": 0.0,
+			"phase": "live_ai_pressure",
+			"resources": 285.0,
+			"seconds": 4.69,
+			"static_bytes": 74025012,
+			"static_peak_bytes": 85607951,
+			"tag": "start",
+			"texture_bytes": 29127372.0,
+			"video_bytes": 38199340.0
+		},
+		{
+			"cycle": 0,
+			"effects": {
+				"marks": 120,
+				"numbers": 0,
+				"particles": 42,
+				"rings": 0
+			},
+			"enemies": 350,
+			"fps_monitor": 60.0,
+			"j_texture_cache": 14,
+			"nodes": 1995,
+			"objects": 8618.0,
+			"orphans": 0.0,
+			"phase": "live_ai_pressure",
+			"resources": 285.0,
+			"seconds": 4.724,
+			"static_bytes": 74085052,
+			"static_peak_bytes": 85607951,
+			"tag": "steady",
+			"texture_bytes": 29127372.0,
+			"video_bytes": 38199340.0
+		},
+		{
+			"cycle": 0,
+			"effects": {
+				"marks": 115,
+				"numbers": 0,
+				"particles": 25,
+				"rings": 0
+			},
+			"enemies": 350,
+			"fps_monitor": 60.0,
+			"j_texture_cache": 14,
+			"nodes": 1993,
+			"objects": 8616.0,
+			"orphans": 0.0,
+			"phase": "live_ai_pressure",
+			"resources": 285.0,
+			"seconds": 8.708,
+			"static_bytes": 74057524,
+			"static_peak_bytes": 85607951,
+			"tag": "end",
+			"texture_bytes": 29127372.0,
+			"video_bytes": 38217140.0
+		},
+		{
+			"cycle": 0,
+			"effects": {
+				"marks": 113,
+				"numbers": 0,
+				"particles": 26,
+				"rings": 0
+			},
+			"enemies": 350,
+			"fps_monitor": 60.0,
+			"j_texture_cache": 14,
+			"nodes": 1993,
+			"objects": 8617.0,
+			"orphans": 0.0,
+			"phase": "stationary_repeat",
+			"resources": 285.0,
+			"seconds": 9.018,
+			"static_bytes": 74071464,
+			"static_peak_bytes": 85661864,
+			"tag": "start",
+			"texture_bytes": 29127372.0,
+			"video_bytes": 38221980.0
+		},
+		{
+			"cycle": 0,
+			"effects": {
+				"marks": 120,
+				"numbers": 0,
+				"particles": 56,
+				"rings": 0
+			},
+			"enemies": 350,
+			"fps_monitor": 60.0,
+			"j_texture_cache": 14,
+			"nodes": 1997,
+			"objects": 8620.0,
+			"orphans": 0.0,
+			"phase": "stationary_repeat",
+			"resources": 285.0,
+			"seconds": 9.025,
+			"static_bytes": 74138204,
+			"static_peak_bytes": 85661864,
+			"tag": "steady",
+			"texture_bytes": 29127372.0,
+			"video_bytes": 38221980.0
+		},
+		{
+			"cycle": 0,
+			"effects": {
+				"marks": 118,
+				"numbers": 0,
+				"particles": 33,
+				"rings": 0
+			},
+			"enemies": 350,
+			"fps_monitor": 60.0,
+			"j_texture_cache": 14,
+			"nodes": 1994,
+			"objects": 8619.0,
+			"orphans": 0.0,
+			"phase": "stationary_repeat",
+			"resources": 285.0,
+			"seconds": 13.03,
+			"static_bytes": 74096588,
+			"static_peak_bytes": 85661864,
+			"tag": "end",
+			"texture_bytes": 29127372.0,
+			"video_bytes": 38221980.0
+		},
+		{
+			"cycle": 0,
+			"effects": {
+				"marks": 0,
+				"numbers": 0,
+				"particles": 0,
+				"rings": 0
+			},
+			"enemies": 350,
+			"fps_monitor": 60.0,
+			"j_texture_cache": 14,
+			"nodes": 1988,
+			"objects": 8610.0,
+			"orphans": 0.0,
+			"phase": "effect_drain",
+			"resources": 285.0,
+			"seconds": 23.162,
+			"static_bytes": 73879692,
+			"static_peak_bytes": 85684593,
+			"tag": "drained",
+			"texture_bytes": 29127372.0,
+			"video_bytes": 38186380.0
+		},
+		{
+			"cycle": 1,
+			"effects": {
+				"marks": 0,
+				"numbers": 0,
+				"particles": 0,
+				"rings": 0
+			},
+			"enemies": 0,
+			"fps_monitor": 61.0,
+			"j_texture_cache": 14,
+			"nodes": 30,
+			"objects": 1702.0,
+			"orphans": 0.0,
+			"phase": "scene_cycles",
+			"resources": 145.0,
+			"seconds": 24.985,
+			"static_bytes": 55982194,
+			"static_peak_bytes": 85684593,
+			"tag": "after_free",
+			"texture_bytes": 17139215.0,
+			"video_bytes": 25680039.0
+		},
+		{
+			"cycle": 2,
+			"effects": {
+				"marks": 0,
+				"numbers": 0,
+				"particles": 0,
+				"rings": 0
+			},
+			"enemies": 0,
+			"fps_monitor": 60.0,
+			"j_texture_cache": 14,
+			"nodes": 30,
+			"objects": 1704.0,
+			"orphans": 0.0,
+			"phase": "scene_cycles",
+			"resources": 147.0,
+			"seconds": 26.737,
+			"static_bytes": 56144321,
+			"static_peak_bytes": 85684593,
+			"tag": "after_free",
+			"texture_bytes": 17144675.0,
+			"video_bytes": 25685499.0
+		},
+		{
+			"cycle": 3,
+			"effects": {
+				"marks": 0,
+				"numbers": 0,
+				"particles": 0,
+				"rings": 0
+			},
+			"enemies": 0,
+			"fps_monitor": 47.0,
+			"j_texture_cache": 14,
+			"nodes": 30,
+			"objects": 1704.0,
+			"orphans": 0.0,
+			"phase": "scene_cycles",
+			"resources": 147.0,
+			"seconds": 28.472,
+			"static_bytes": 56149957,
+			"static_peak_bytes": 85684593,
+			"tag": "after_free",
+			"texture_bytes": 17144675.0,
+			"video_bytes": 25685499.0
+		},
+		{
+			"cycle": 3,
+			"effects": {
+				"marks": 0,
+				"numbers": 0,
+				"particles": 0,
+				"rings": 0
+			},
+			"enemies": 0,
+			"fps_monitor": 60.0,
+			"j_texture_cache": 14,
+			"nodes": 3,
+			"objects": 1641.0,
+			"orphans": 0.0,
+			"phase": "final_idle",
+			"resources": 139.0,
+			"seconds": 33.489,
+			"static_bytes": 52234867,
+			"static_peak_bytes": 85684593,
+			"tag": "all_released",
+			"texture_bytes": 17144675.0,
+			"video_bytes": 25685499.0
+		}
+	],
+	"scene_cycles": 3,
+	"scope": "committed J Game nodes; actual automatic OpenGL rendering; test-controlled damage_mult=0 and immune stationary player; wave timer/quest progression disabled; source code unchanged",
+	"smoke": true,
+	"wall_seconds": 33.491
+}

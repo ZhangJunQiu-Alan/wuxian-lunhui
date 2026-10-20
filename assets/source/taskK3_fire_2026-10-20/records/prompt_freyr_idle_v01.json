@@ -1,0 +1,11 @@
+{
+  "tool": "image_gen.imagegen",
+  "id": "freyr_idle",
+  "version": "v01",
+  "refs": [
+    "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskK3_fire_2026-10-20/references/freyr_master_12x.png",
+    "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskK3_fire_2026-10-20/originals/freyr_v01_raw.png"
+  ],
+  "prompt": "Use case: sprite-animation, precise identity-preserving edit. Image1 is the project's exact64x64 in-world ally master enlarged by nearest; image2 is same-source high-resolution original. Preserve EXACT person, right-facing3/4 view, blond wavy hair/short full beard, small wheat braid, forest-green gold-edged cloak, bronze round brooch, brown leather/tunic/trousers and dark boots; empty hands, no weapon/animal/halo. Human58px standing height in64square, stable hips and soles at(32,62), >=2px alpha margins, no scale changes between poses. Crisp small game pixel clusters, same48RGB limited palette; upper-left light, binary entity alpha, true transparent background. Four distinct poses in2x2 equal64square cells, no gutters. Animate a subtle8fps IDLE breathing loop: tiny chest rise, slight cloak hem motion, hair shifts1pixel; soles and hips stay fixed. Calm same standing pose, hands relaxed, no large head turn or arm wave. Smooth gentle fourth-to-first transition. No extra prop, magic disk, ground, shadow, scene, words, labels, grid or watermark.",
+  "transparent_background": true
+}

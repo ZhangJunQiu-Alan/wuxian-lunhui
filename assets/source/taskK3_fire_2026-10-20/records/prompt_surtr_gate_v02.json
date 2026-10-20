@@ -1,0 +1,10 @@
+{
+  "tool": "image_gen.imagegen",
+  "id": "surtr_gate",
+  "version": "v02",
+  "refs": [
+    "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskK3_fire_2026-10-20/originals/surtr_gate_v01_raw.png"
+  ],
+  "prompt": "Use case: precise object edit, four-phase game loop. Image1 is FAILED gate draft: pillars are too broad and doorway too narrow. Redraw SAME scorched basalt/ember-cracked fire gateway with MUCH THINNER side uprights. Four equal128square cells in2x2 atlas, no gutter. Each stone upright ONLY about16logicalpx wide, upright left near x15..31, right near x97..113; inner gateway OPEN rectangle x40..88, y46..116 MUST be completely true zero-alpha, plus extra clearance beyond it. Thin arch top under y34, no crossbar at waist. Fire along OUTER stone sides/top, NOT extending INTO protected opening. A48wide70high person/giant view must remain unobstructed. No opaque magic fill or black fill, no figures. Full gate fits4px alpha margin; footbaseline126. All FOUR frames have IDENTICAL stationary stones, exact same silhouette/scale/position and cracks; ONLY tiny outer flame tips flicker gradually for8fps loop. Do not redraw a different arch each frame. Fine project pixel art, limited48RGB basalt/bronze/red-orange palette, upper-left stone lighting, restrained glow. True transparent air and doorway, no symbols/text/grid/labels/floor/shadow/scenery/watermark.",
+  "transparent_background": true
+}

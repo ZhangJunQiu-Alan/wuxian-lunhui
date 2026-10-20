@@ -108,6 +108,7 @@ func set_untouchable(value: bool) -> void:
 		remove_from_group("enemies")
 	else:
 		add_to_group("enemies")
+	update_spatial_index()
 	if _sprite:
 		_sprite.visible = not value
 
@@ -194,6 +195,8 @@ func take_damage(amount: float, _knockback: Vector2 = Vector2.ZERO, crit: bool =
 
 func _die() -> void:
 	_dead = true
+	remove_from_group("enemies")
+	update_spatial_index()
 	FxLayer.burst(global_position, color, 60, 320.0, 5.0)
 	FxLayer.burst(global_position, Color(1.0, 0.85, 0.4), 40, 240.0, 4.0)
 	Audio.sfx("boss_death")

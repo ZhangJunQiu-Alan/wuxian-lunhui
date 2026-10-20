@@ -1,0 +1,709 @@
+{
+  "task": "K3",
+  "status": "art_delivered_self_checked_not_game_integrated",
+  "formal_png": 14,
+  "frames": 51,
+  "assets": [
+    {
+      "id": "surtr_idle",
+      "formal_path": "assets/sprites/bosses/surtr_idle.png",
+      "frame_size": [
+        320,
+        320
+      ],
+      "frames": 4,
+      "fps": 8,
+      "loop": true,
+      "anchor": [
+        160,
+        318
+      ],
+      "rgb_count": 48,
+      "alpha_policy": "binary",
+      "candidate": "candidates/surtr_idle_v01.png",
+      "approved": "approved/surtr_idle.png",
+      "sha256": "7eefb1452ed1d30d76821c8410450e3625a2a8d3579a52ae5bd1ec9dc0d072ec",
+      "raw": "originals/surtr_idle_v01_raw.png",
+      "raw_sha256": "d5cf9fd9ba3209929c6a2f749d0e2d532583bcd3ea8e4159c4db2cbb911a3bef",
+      "prompt": "records/prompt_surtr_idle_v01.json",
+      "preview_gifs": [
+        {
+          "file": "previews/surtr_idle_v01_native.gif",
+          "durations_ms": [
+            120,
+            130,
+            130,
+            120
+          ],
+          "note": "10ms GIF quantization; single animation lastframe600ms extra reviewhold, not gameplay delay"
+        },
+        {
+          "file": "previews/surtr_idle_v01_slow8.gif",
+          "durations_ms": [
+            120,
+            130,
+            130,
+            120
+          ],
+          "note": "10ms GIF quantization; single animation lastframe600ms extra reviewhold, not gameplay delay"
+        }
+      ],
+      "additional_source": null,
+      "license": "assets/LICENSES.md; OpenAI Terms Content/Ownership; output nonexclusive",
+      "game_acceptance": "not_tested"
+    },
+    {
+      "id": "surtr_move",
+      "formal_path": "assets/sprites/bosses/surtr_move.png",
+      "frame_size": [
+        320,
+        320
+      ],
+      "frames": 6,
+      "fps": 8,
+      "loop": true,
+      "anchor": [
+        160,
+        318
+      ],
+      "rgb_count": 48,
+      "alpha_policy": "binary",
+      "candidate": "candidates/surtr_move_v01.png",
+      "approved": "approved/surtr_move.png",
+      "sha256": "d621bdb8f72d5369fce572296a8a6cd668983c8413a93ce4df8a1b5e91a67bd9",
+      "raw": "originals/surtr_move_v01_raw.png",
+      "raw_sha256": "b34ff9f117d5879f7b0114aeb0662a56469f7cf56beef82ab1530f7891fa333f",
+      "prompt": "records/prompt_surtr_move_v01.json",
+      "preview_gifs": [
+        {
+          "file": "previews/surtr_move_v01_native.gif",
+          "durations_ms": [
+            120,
+            130,
+            130,
+            120,
+            120,
+            130
+          ],
+          "note": "10ms GIF quantization; single animation lastframe600ms extra reviewhold, not gameplay delay"
+        },
+        {
+          "file": "previews/surtr_move_v01_slow8.gif",
+          "durations_ms": [
+            120,
+            130,
+            130,
+            120,
+            120,
+            130
+          ],
+          "note": "10ms GIF quantization; single animation lastframe600ms extra reviewhold, not gameplay delay"
+        }
+      ],
+      "additional_source": null,
+      "license": "assets/LICENSES.md; OpenAI Terms Content/Ownership; output nonexclusive",
+      "game_acceptance": "not_tested"
+    },
+    {
+      "id": "surtr_windup",
+      "formal_path": "assets/sprites/bosses/surtr_windup.png",
+      "frame_size": [
+        320,
+        320
+      ],
+      "frames": 3,
+      "fps": 8,
+      "loop": false,
+      "anchor": [
+        160,
+        318
+      ],
+      "rgb_count": 48,
+      "alpha_policy": "binary",
+      "candidate": "candidates/surtr_windup_v02.png",
+      "approved": "approved/surtr_windup.png",
+      "sha256": "c74d112605554d01b84fabf71770e9a76fb219e9454b178c7a340b7048fe82de",
+      "raw": "originals/surtr_windup_v02_raw.png",
+      "raw_sha256": "6b4949c138c585c1b97453eb7fc000efd4a044a019b1a5cc17016f4daf12d4fa",
+      "prompt": "records/prompt_surtr_windup_v02.json",
+      "preview_gifs": [
+        {
+          "file": "previews/surtr_windup_v02_native.gif",
+          "durations_ms": [
+            120,
+            130,
+            730
+          ],
+          "note": "10ms GIF quantization; single animation lastframe600ms extra reviewhold, not gameplay delay"
+        },
+        {
+          "file": "previews/surtr_windup_v02_slow8.gif",
+          "durations_ms": [
+            120,
+            130,
+            730
+          ],
+          "note": "10ms GIF quantization; single animation lastframe600ms extra reviewhold, not gameplay delay"
+        }
+      ],
+      "additional_source": null,
+      "license": "assets/LICENSES.md; OpenAI Terms Content/Ownership; output nonexclusive",
+      "game_acceptance": "not_tested"
+    },
+    {
+      "id": "surtr_attack",
+      "formal_path": "assets/sprites/bosses/surtr_attack.png",
+      "frame_size": [
+        320,
+        320
+      ],
+      "frames": 4,
+      "fps": 16,
+      "loop": false,
+      "anchor": [
+        160,
+        318
+      ],
+      "rgb_count": 48,
+      "alpha_policy": "binary",
+      "candidate": "candidates/surtr_attack_v02.png",
+      "approved": "approved/surtr_attack.png",
+      "sha256": "589df8a5e936a16f17bf295a0471d180375953fc05cc0e010088dae35bdb4329",
+      "raw": "originals/surtr_attack_v02_raw.png",
+      "raw_sha256": "2600e9254b5b3125f3a66105cce8e397c9894f2f0c42e8d41025122c670e6a8e",
+      "prompt": "records/prompt_surtr_attack_v02.json",
+      "preview_gifs": [
+        {
+          "file": "previews/surtr_attack_v02_native.gif",
+          "durations_ms": [
+            60,
+            60,
+            70,
+            660
+          ],
+          "note": "10ms GIF quantization; single animation lastframe600ms extra reviewhold, not gameplay delay"
+        },
+        {
+          "file": "previews/surtr_attack_v02_slow8.gif",
+          "durations_ms": [
+            120,
+            130,
+            130,
+            720
+          ],
+          "note": "10ms GIF quantization; single animation lastframe600ms extra reviewhold, not gameplay delay"
+        }
+      ],
+      "additional_source": null,
+      "license": "assets/LICENSES.md; OpenAI Terms Content/Ownership; output nonexclusive",
+      "game_acceptance": "not_tested"
+    },
+    {
+      "id": "surtr_plant",
+      "formal_path": "assets/sprites/bosses/surtr_plant.png",
+      "frame_size": [
+        320,
+        320
+      ],
+      "frames": 4,
+      "fps": 16,
+      "loop": false,
+      "anchor": [
+        160,
+        318
+      ],
+      "rgb_count": 48,
+      "alpha_policy": "binary",
+      "candidate": "candidates/surtr_plant_v01.png",
+      "approved": "approved/surtr_plant.png",
+      "sha256": "ece67154cb6b835f4dd630247db990b78442e39ccba71f4f608fc9fb70da5a6b",
+      "raw": "originals/surtr_plant_v01_raw.png",
+      "raw_sha256": "d65911bfb558924ddafaf53279725a9fb3af8341f4095832bafb8fe843803dbb",
+      "prompt": "records/prompt_surtr_plant_v01.json",
+      "preview_gifs": [
+        {
+          "file": "previews/surtr_plant_v01_native.gif",
+          "durations_ms": [
+            60,
+            60,
+            70,
+            660
+          ],
+          "note": "10ms GIF quantization; single animation lastframe600ms extra reviewhold, not gameplay delay"
+        },
+        {
+          "file": "previews/surtr_plant_v01_slow8.gif",
+          "durations_ms": [
+            120,
+            130,
+            130,
+            720
+          ],
+          "note": "10ms GIF quantization; single animation lastframe600ms extra reviewhold, not gameplay delay"
+        }
+      ],
+      "additional_source": null,
+      "license": "assets/LICENSES.md; OpenAI Terms Content/Ownership; output nonexclusive",
+      "game_acceptance": "not_tested"
+    },
+    {
+      "id": "surtr_summon",
+      "formal_path": "assets/sprites/bosses/surtr_summon.png",
+      "frame_size": [
+        320,
+        320
+      ],
+      "frames": 4,
+      "fps": 16,
+      "loop": false,
+      "anchor": [
+        160,
+        318
+      ],
+      "rgb_count": 48,
+      "alpha_policy": "binary",
+      "candidate": "candidates/surtr_summon_v01.png",
+      "approved": "approved/surtr_summon.png",
+      "sha256": "945fce57b5dd1db80608fdebce86b6265a9190701360fba1d5350ccf4dc8d86b",
+      "raw": "originals/surtr_summon_v01_raw.png",
+      "raw_sha256": "00a570ce24c64c15207b98910c6be8d5330abf10aa3e55dfdb996577735fb6d5",
+      "prompt": "records/prompt_surtr_summon_v01.json",
+      "preview_gifs": [
+        {
+          "file": "previews/surtr_summon_v01_native.gif",
+          "durations_ms": [
+            60,
+            60,
+            70,
+            660
+          ],
+          "note": "10ms GIF quantization; single animation lastframe600ms extra reviewhold, not gameplay delay"
+        },
+        {
+          "file": "previews/surtr_summon_v01_slow8.gif",
+          "durations_ms": [
+            120,
+            130,
+            130,
+            720
+          ],
+          "note": "10ms GIF quantization; single animation lastframe600ms extra reviewhold, not gameplay delay"
+        }
+      ],
+      "additional_source": null,
+      "license": "assets/LICENSES.md; OpenAI Terms Content/Ownership; output nonexclusive",
+      "game_acceptance": "not_tested"
+    },
+    {
+      "id": "surtr_sword_arc",
+      "formal_path": "assets/sprites/effects/bosses/surtr_sword_arc.png",
+      "frame_size": [
+        128,
+        128
+      ],
+      "frames": 4,
+      "fps": 16,
+      "loop": false,
+      "anchor": [
+        64,
+        64
+      ],
+      "rgb_count": 19,
+      "alpha_policy": "8levels",
+      "candidate": "candidates/surtr_sword_arc_v02.png",
+      "approved": "approved/surtr_sword_arc.png",
+      "sha256": "c1e104ea5eb3642c526b739a89ff780f2ba860c8c703f6e9777fb66a671ec5b3",
+      "raw": "originals/surtr_sword_arc_v02_raw.png",
+      "raw_sha256": "dca3f6015dd9567f0c6ec5886d074cdc170e1b3e3f5223dd03304ac625a77d66",
+      "prompt": "records/prompt_surtr_sword_arc_v02.json",
+      "preview_gifs": [
+        {
+          "file": "previews/surtr_sword_arc_v02_native.gif",
+          "durations_ms": [
+            60,
+            60,
+            70,
+            660
+          ],
+          "note": "10ms GIF quantization; single animation lastframe600ms extra reviewhold, not gameplay delay"
+        },
+        {
+          "file": "previews/surtr_sword_arc_v02_slow8.gif",
+          "durations_ms": [
+            120,
+            130,
+            130,
+            720
+          ],
+          "note": "10ms GIF quantization; single animation lastframe600ms extra reviewhold, not gameplay delay"
+        }
+      ],
+      "additional_source": "originals/surtr_sword_arc_peak_v03_raw.png; records/prompt_surtr_sword_arc_peak_v03.json",
+      "license": "assets/LICENSES.md; OpenAI Terms Content/Ownership; output nonexclusive",
+      "game_acceptance": "not_tested"
+    },
+    {
+      "id": "surtr_gate",
+      "formal_path": "assets/sprites/effects/bosses/surtr_gate.png",
+      "frame_size": [
+        128,
+        128
+      ],
+      "frames": 4,
+      "fps": 8,
+      "loop": true,
+      "anchor": [
+        64,
+        126
+      ],
+      "rgb_count": 48,
+      "alpha_policy": "8levels",
+      "candidate": "candidates/surtr_gate_v03.png",
+      "approved": "approved/surtr_gate.png",
+      "sha256": "f64dee74fc9ecbb07b01223dfff99757bff47abdb0ddced78859fb487dbfaa02",
+      "raw": "originals/surtr_gate_v03_raw.png",
+      "raw_sha256": "1b3be7ed8a21f6780e8d45c5fac546d99b470eeab3445ba154a4363ad40313db",
+      "prompt": "records/prompt_surtr_gate_v03.json",
+      "preview_gifs": [
+        {
+          "file": "previews/surtr_gate_v03_native.gif",
+          "durations_ms": [
+            120,
+            130,
+            130,
+            120
+          ],
+          "note": "10ms GIF quantization; single animation lastframe600ms extra reviewhold, not gameplay delay"
+        },
+        {
+          "file": "previews/surtr_gate_v03_slow8.gif",
+          "durations_ms": [
+            120,
+            130,
+            130,
+            120
+          ],
+          "note": "10ms GIF quantization; single animation lastframe600ms extra reviewhold, not gameplay delay"
+        }
+      ],
+      "additional_source": null,
+      "license": "assets/LICENSES.md; OpenAI Terms Content/Ownership; output nonexclusive",
+      "game_acceptance": "not_tested"
+    },
+    {
+      "id": "surtr_firewall_band",
+      "formal_path": "assets/sprites/effects/bosses/surtr_firewall_band.png",
+      "frame_size": [
+        64,
+        64
+      ],
+      "frames": 4,
+      "fps": 8,
+      "loop": true,
+      "anchor": [
+        32,
+        32
+      ],
+      "rgb_count": 20,
+      "alpha_policy": "8levels",
+      "candidate": "candidates/surtr_firewall_band_v01.png",
+      "approved": "approved/surtr_firewall_band.png",
+      "sha256": "2415c0d0bcfc2db9e3f5c6457b563017cf854648976a139ccf4490969abb7326",
+      "raw": "originals/surtr_firewall_band_v01_raw.png",
+      "raw_sha256": "437e7a6503fec19deb87794365b626233311b9f27facfe722ce8023d50524306",
+      "prompt": "records/prompt_surtr_firewall_band_v01.json",
+      "preview_gifs": [
+        {
+          "file": "previews/surtr_firewall_band_v01_native.gif",
+          "durations_ms": [
+            120,
+            130,
+            130,
+            120
+          ],
+          "note": "10ms GIF quantization; single animation lastframe600ms extra reviewhold, not gameplay delay"
+        },
+        {
+          "file": "previews/surtr_firewall_band_v01_slow8.gif",
+          "durations_ms": [
+            120,
+            130,
+            130,
+            120
+          ],
+          "note": "10ms GIF quantization; single animation lastframe600ms extra reviewhold, not gameplay delay"
+        }
+      ],
+      "additional_source": null,
+      "license": "assets/LICENSES.md; OpenAI Terms Content/Ownership; output nonexclusive",
+      "game_acceptance": "not_tested"
+    },
+    {
+      "id": "surtr_final_fire",
+      "formal_path": "assets/sprites/effects/bosses/surtr_final_fire.png",
+      "frame_size": [
+        64,
+        64
+      ],
+      "frames": 4,
+      "fps": 16,
+      "loop": false,
+      "anchor": [
+        32,
+        32
+      ],
+      "rgb_count": 18,
+      "alpha_policy": "8levels",
+      "candidate": "candidates/surtr_final_fire_v01.png",
+      "approved": "approved/surtr_final_fire.png",
+      "sha256": "940ed9999de8f46ba7d9b32fe98d8ca0b2a9528bd2d1958c011d53e95cd6b610",
+      "raw": "originals/surtr_final_fire_v01_raw.png",
+      "raw_sha256": "4a408e87152df0ba0e5cc405c9d65aa1daa19141b4ffd0b40ae1b3b874a037ed",
+      "prompt": "records/prompt_surtr_final_fire_v01.json",
+      "preview_gifs": [
+        {
+          "file": "previews/surtr_final_fire_v01_native.gif",
+          "durations_ms": [
+            60,
+            60,
+            70,
+            660
+          ],
+          "note": "10ms GIF quantization; single animation lastframe600ms extra reviewhold, not gameplay delay"
+        },
+        {
+          "file": "previews/surtr_final_fire_v01_slow8.gif",
+          "durations_ms": [
+            120,
+            130,
+            130,
+            720
+          ],
+          "note": "10ms GIF quantization; single animation lastframe600ms extra reviewhold, not gameplay delay"
+        }
+      ],
+      "additional_source": null,
+      "license": "assets/LICENSES.md; OpenAI Terms Content/Ownership; output nonexclusive",
+      "game_acceptance": "not_tested"
+    },
+    {
+      "id": "surtr_safe_rune",
+      "formal_path": "assets/sprites/effects/bosses/surtr_safe_rune.png",
+      "frame_size": [
+        64,
+        64
+      ],
+      "frames": 1,
+      "fps": 0,
+      "loop": false,
+      "anchor": [
+        32,
+        32
+      ],
+      "rgb_count": 24,
+      "alpha_policy": "8levels",
+      "candidate": "candidates/surtr_safe_rune_v01.png",
+      "approved": "approved/surtr_safe_rune.png",
+      "sha256": "7c66acef3b69c23713395822d77f340e2b7cccbfd33dd0ff6e65df6b375582d8",
+      "raw": "originals/surtr_safe_rune_v01_raw.png",
+      "raw_sha256": "441c96b1d5af7fdcc1b08bb2fa235a9f63f3107b1be243ec26b01ecf54a9f43e",
+      "prompt": "records/prompt_surtr_safe_rune_v01.json",
+      "preview_gifs": [],
+      "additional_source": null,
+      "license": "assets/LICENSES.md; OpenAI Terms Content/Ownership; output nonexclusive",
+      "game_acceptance": "not_tested"
+    },
+    {
+      "id": "freyr",
+      "formal_path": "assets/sprites/allies/freyr.png",
+      "frame_size": [
+        64,
+        64
+      ],
+      "frames": 1,
+      "fps": 0,
+      "loop": false,
+      "anchor": [
+        32,
+        62
+      ],
+      "rgb_count": 48,
+      "alpha_policy": "binary",
+      "candidate": "candidates/freyr_v01.png",
+      "approved": "approved/freyr.png",
+      "sha256": "665589f54f8fff0d13088a0e2d7ef1dd964dd7230190099df7867546db09050c",
+      "raw": "originals/freyr_v01_raw.png",
+      "raw_sha256": "6fb11a7cd0c0fa1b08a41dc68700670850327f140735b2bf74df6d9106f1da5a",
+      "prompt": "records/prompt_freyr_v01.json",
+      "preview_gifs": [],
+      "additional_source": null,
+      "license": "assets/LICENSES.md; OpenAI Terms Content/Ownership; output nonexclusive",
+      "game_acceptance": "not_tested"
+    },
+    {
+      "id": "freyr_idle",
+      "formal_path": "assets/sprites/allies/freyr_idle.png",
+      "frame_size": [
+        64,
+        64
+      ],
+      "frames": 4,
+      "fps": 8,
+      "loop": true,
+      "anchor": [
+        32,
+        62
+      ],
+      "rgb_count": 48,
+      "alpha_policy": "binary",
+      "candidate": "candidates/freyr_idle_v01.png",
+      "approved": "approved/freyr_idle.png",
+      "sha256": "62a50fb39e7bebb55b8700fe9a49a6a85c040b550c471982247dc04457eb11a0",
+      "raw": "originals/freyr_idle_v01_raw.png",
+      "raw_sha256": "74a1c051934b13bdbb3cc6f1299589088ca413c26a15665d2f1f213ba39e271f",
+      "prompt": "records/prompt_freyr_idle_v01.json",
+      "preview_gifs": [
+        {
+          "file": "previews/freyr_idle_v01_native.gif",
+          "durations_ms": [
+            120,
+            130,
+            130,
+            120
+          ],
+          "note": "10ms GIF quantization; single animation lastframe600ms extra reviewhold, not gameplay delay"
+        },
+        {
+          "file": "previews/freyr_idle_v01_slow8.gif",
+          "durations_ms": [
+            120,
+            130,
+            130,
+            120
+          ],
+          "note": "10ms GIF quantization; single animation lastframe600ms extra reviewhold, not gameplay delay"
+        }
+      ],
+      "additional_source": null,
+      "license": "assets/LICENSES.md; OpenAI Terms Content/Ownership; output nonexclusive",
+      "game_acceptance": "not_tested"
+    },
+    {
+      "id": "freyr_heal",
+      "formal_path": "assets/sprites/allies/freyr_heal.png",
+      "frame_size": [
+        64,
+        64
+      ],
+      "frames": 4,
+      "fps": 16,
+      "loop": false,
+      "anchor": [
+        32,
+        62
+      ],
+      "rgb_count": 48,
+      "alpha_policy": "binary",
+      "candidate": "candidates/freyr_heal_v02.png",
+      "approved": "approved/freyr_heal.png",
+      "sha256": "e708e9db32e512d12c2e2c3bb2cc9d4ea1359063ab86e3039e1c6bf842595a3c",
+      "raw": "originals/freyr_heal_v02_raw.png",
+      "raw_sha256": "da9a049867bf298752319118e36d2438e5586d447fb78c88eb9321fcc2851d4d",
+      "prompt": "records/prompt_freyr_heal_v02.json",
+      "preview_gifs": [
+        {
+          "file": "previews/freyr_heal_v02_native.gif",
+          "durations_ms": [
+            60,
+            60,
+            70,
+            660
+          ],
+          "note": "10ms GIF quantization; single animation lastframe600ms extra reviewhold, not gameplay delay"
+        },
+        {
+          "file": "previews/freyr_heal_v02_slow8.gif",
+          "durations_ms": [
+            120,
+            130,
+            130,
+            720
+          ],
+          "note": "10ms GIF quantization; single animation lastframe600ms extra reviewhold, not gameplay delay"
+        }
+      ],
+      "additional_source": null,
+      "license": "assets/LICENSES.md; OpenAI Terms Content/Ownership; output nonexclusive",
+      "game_acceptance": "not_tested"
+    }
+  ],
+  "reused": [
+    {
+      "path": "assets/sprites/bosses/surtr.png",
+      "sha256": "f5f705f6953e95ba014521ac47ae2f05b251e43bbea72ed7f30c6b68f3ec618d",
+      "decision": "reuse_unchanged"
+    },
+    {
+      "path": "assets/sprites/effects/gods/loki_fire_patch.png",
+      "sha256": "a5773032ad2af278c32e3079399b7c8c4205cb0cc8f90b12a1a784c81d3f4ec4",
+      "decision": "reuse_unchanged"
+    },
+    {
+      "path": "assets/sprites/effects/gods/freyr_field.png",
+      "sha256": "84f7853e87caaac62dde6e32270316c2991a171da9e6dcc5a5057f78b9d7eeb5",
+      "decision": "reuse_unchanged"
+    }
+  ],
+  "contract": {
+    "base": "K-assets-v1.0",
+    "K3_addendum": "assets/source/taskK_contract_2026-10-20/K3_action_canvas_addendum_v1.2.json",
+    "sha256": "63fd0158a7a490b541a19a7dee725a9fc4a07b956ec2cb4aaebba1966f29c7f5"
+  },
+  "generated_originals": 21,
+  "rejected": [
+    {
+      "id": "surtr_attack",
+      "version": "v01",
+      "reason": "contact pose body-to-foot calibration requires silhouette wider than256 canvas; cannot shrink actor or clip sword to force fit",
+      "action": "redo bent-elbow close sweep, cape kept near body; preserve body scale"
+    },
+    {
+      "id": "surtr_gate",
+      "version": "v01",
+      "reason": "broad stone uprights leave opening visibly below48px target width; flames intrude aperture and stones vary",
+      "action": "redo thin stationary arch, protected48x70 opening, flame flicker outside"
+    },
+    {
+      "id": "surtr_gate",
+      "version": "v02",
+      "reason": "48x70 protected aperture still occupied; do not reduce gate",
+      "action": "redo thin rectangular threshold with64px layout clearance guide"
+    },
+    {
+      "id": "surtr_windup",
+      "version": "v01",
+      "reason": "lifted pose cape extends too far left when registering original hip/body scale; fitting silhouette would shrink actor",
+      "action": "redo tight cape and bent-arm draw, retain original body scale"
+    },
+    {
+      "id": "surtr_sword_arc",
+      "version": "v01",
+      "reason": "center radius32 intrusion108/228/58 pixels",
+      "action": "v02 repair; preserve failure"
+    },
+    {
+      "id": "surtr_sword_arc",
+      "version": "v02",
+      "reason": "peak still93 interiorpixels after normalization; whole-pose registration cannot satisfy2px margin and protectedcenter",
+      "action": "replace only peak using new generatedsinglev03; otherphases whole-frame translate"
+    },
+    {
+      "id": "freyr_heal",
+      "version": "v01",
+      "reason": "pose exceeds64 at fixed soles: x14 width50 right64, lacks2px margin",
+      "action": "compact bent-elbow chest gesture regeneratev02"
+    }
+  ],
+  "self_check": "passed",
+  "game_acceptance": "not_tested"
+}

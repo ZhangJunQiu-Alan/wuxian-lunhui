@@ -111,8 +111,7 @@ func enemies() -> Array[Node]:
 func nearest_enemy(from: Vector2, max_dist: float, exclude: Array = []) -> Enemy:
 	var best: Enemy = null
 	var best_d := max_dist * max_dist
-	for node in enemies():
-		var enemy := node as Enemy
+	for enemy in Enemy.query_radius(from, max_dist):
 		if exclude.has(enemy):
 			continue
 		var d := enemy.global_position.distance_squared_to(from)
@@ -125,10 +124,9 @@ func nearest_enemy(from: Vector2, max_dist: float, exclude: Array = []) -> Enemy
 func farthest_enemy(from: Vector2, max_dist: float) -> Enemy:
 	var best: Enemy = null
 	var best_d := -1.0
-	for node in enemies():
-		var enemy := node as Enemy
-		var d := enemy.global_position.distance_to(from)
-		if d < max_dist and d > best_d:
+	for enemy in Enemy.query_radius(from, max_dist):
+		var d := enemy.global_position.distance_squared_to(from)
+		if d < max_dist * max_dist and d > best_d:
 			best_d = d
 			best = enemy
 	return best
@@ -137,9 +135,8 @@ func farthest_enemy(from: Vector2, max_dist: float) -> Enemy:
 ## 血量最高的敌人（精英、Boss 优先）
 func strongest_enemy(from: Vector2, max_dist: float) -> Enemy:
 	var best: Enemy = null
-	for node in enemies():
-		var enemy := node as Enemy
-		if enemy.global_position.distance_to(from) < max_dist and (best == null or enemy.hp > best.hp):
+	for enemy in Enemy.query_radius(from, max_dist):
+		if enemy.global_position.distance_squared_to(from) < max_dist * max_dist and (best == null or enemy.hp > best.hp):
 			best = enemy
 	return best
 
@@ -194,21 +191,11 @@ static func _in_line(enemy: Enemy, a: Vector2, b: Vector2, width: float) -> bool
 
 ## 一条线段（宽 width）上的所有敌人
 func enemies_on_line(a: Vector2, b: Vector2, width: float) -> Array[Enemy]:
-	var result: Array[Enemy] = []
-	for node in enemies():
-		var enemy := node as Enemy
-		if _in_line(enemy, a, b, width):
-			result.append(enemy)
-	return result
+	return Enemy.query_line(a, b, width)
 
 
 func enemies_in_radius(center: Vector2, radius: float) -> Array[Enemy]:
-	var result: Array[Enemy] = []
-	for node in enemies():
-		var enemy := node as Enemy
-		if enemy.global_position.distance_to(center) <= radius + enemy.radius:
-			result.append(enemy)
-	return result
+	return Enemy.query_radius(center, radius)
 
 
 ## 在地上放一块持续生效的区域（光带、冰面、火路、麦田……），见 GodZone

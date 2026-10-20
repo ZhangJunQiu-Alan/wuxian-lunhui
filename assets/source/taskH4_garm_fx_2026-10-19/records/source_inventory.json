@@ -1,0 +1,38 @@
+{
+  "task": "H4",
+  "tool_calls": 5,
+  "references": [
+    {
+      "actual_input_path": "assets/sprites/bosses/garm.png",
+      "archived_path": "references/garm.png",
+      "sha256": "23e629a34921e815b0d45fb05b4f703ddfa6b1fdec13e4a74cc4888382f50c1e"
+    },
+    {
+      "actual_input_path": "assets/sprites/effects/gods/freyja_ring.png",
+      "archived_path": "references/freyja_ring.png",
+      "sha256": "63fdf5560ee273789d6fe8888beb67c8241c2852e3d9b463723dc7491f2245b4"
+    }
+  ],
+  "originals": [
+    {
+      "file": "originals/garm_bite_v01.png",
+      "sha256": "5dc37947104e4c863abf49a7b4ed84dbb5d9c5b26753a365e754993bea1e7ff0"
+    },
+    {
+      "file": "originals/garm_chain_break_v01.png",
+      "sha256": "68f3cf44cb5c44d8b844aff5b5c403757e462a5ec26f5a4a099bcb7f585f6730"
+    },
+    {
+      "file": "originals/garm_chain_link_v01.png",
+      "sha256": "3986737874091c872067eb049e8d9bb48a86471fcc25e63bff88c9b8ccf55169"
+    },
+    {
+      "file": "originals/garm_dispel_v01.png",
+      "sha256": "baad61d10d029cbcfc7233d54de850a55877a79ba4be7c7af2b5e5982ac9b320"
+    },
+    {
+      "file": "originals/garm_howl_wave_v01.png",
+      "sha256": "7f1ed9e707ca403b018b706b8e419ead8bee0c8328a9fa9cbc449e665a6c4426"
+    }
+  ]
+}

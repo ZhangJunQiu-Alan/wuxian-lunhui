@@ -1,0 +1,137 @@
+[
+  {
+    "task": "H0",
+    "id": "thokk",
+    "w": 96,
+    "h": 96,
+    "frames": 1,
+    "fps": 0,
+    "flags": [
+      "body"
+    ],
+    "anchor": [
+      48,
+      92
+    ],
+    "columns": 1,
+    "rows": 1,
+    "loop": false,
+    "hook": "scripts/data/enemy_db.gd thokk；scripts/entities/enemy.gd _ready() / SpriteVisual.create_actions()",
+    "keep": "保留既有半径20、血量、精英倍率、追击及逃走逻辑",
+    "reference_paths": [
+      "assets/sprites/enemies/frost_giant.png",
+      "assets/sprites/enemies/frost_veteran.png"
+    ],
+    "target": "assets/sprites/enemies/thokk.png",
+    "source_root": "assets/source/taskH0_critical_2026-10-19",
+    "archived_references": [
+      {
+        "project_path": "assets/sprites/enemies/frost_giant.png",
+        "archived_path": "references/frost_giant.png",
+        "sha256": "ba7bb0af917ec87e5dc77cbf15b10afc9582b9d28f69537135393f19196ede28"
+      },
+      {
+        "project_path": "assets/sprites/enemies/frost_veteran.png",
+        "archived_path": "references/frost_veteran.png",
+        "sha256": "6972714054f6181ee80249f0c5e42cac072e329a3bc063e04269ba00d9563e9c"
+      }
+    ]
+  },
+  {
+    "task": "H0",
+    "id": "thokk_move",
+    "w": 96,
+    "h": 96,
+    "frames": 6,
+    "fps": 8,
+    "flags": [
+      "body",
+      "loop"
+    ],
+    "anchor": [
+      48,
+      92
+    ],
+    "columns": 3,
+    "rows": 2,
+    "loop": true,
+    "hook": "scripts/entities/enemy.gd _ready() / _physics_process()；SpriteVisual.create_actions()",
+    "keep": "保留同一角色比例、脚底92与移动速度",
+    "reference_paths": [
+      "assets/source/taskH0_critical_2026-10-19/candidates/thokk_v01.png"
+    ],
+    "target": "assets/sprites/enemies/thokk_move.png",
+    "source_root": "assets/source/taskH0_critical_2026-10-19",
+    "archived_references": [
+      {
+        "project_path": "assets/source/taskH0_critical_2026-10-19/candidates/thokk_v01.png",
+        "archived_path": "references/thokk_v01.png",
+        "sha256": "09eacf76a01cbb38177da6174e85247b02a290b1d6f2e6f01e4692337738e64b"
+      }
+    ]
+  },
+  {
+    "task": "H0",
+    "id": "thokk_attack",
+    "w": 96,
+    "h": 96,
+    "frames": 4,
+    "fps": 16,
+    "flags": [
+      "body"
+    ],
+    "anchor": [
+      48,
+      92
+    ],
+    "columns": 2,
+    "rows": 2,
+    "loop": false,
+    "hook": "scripts/entities/enemy.gd _update_attack() / SpriteVisual.create_actions()",
+    "keep": "保留ATTACK_TIME、ATTACK_STRIKE、接触判伤和现有挥击光效",
+    "reference_paths": [
+      "assets/source/taskH0_critical_2026-10-19/candidates/thokk_v01.png"
+    ],
+    "target": "assets/sprites/enemies/thokk_attack.png",
+    "source_root": "assets/source/taskH0_critical_2026-10-19",
+    "archived_references": [
+      {
+        "project_path": "assets/source/taskH0_critical_2026-10-19/candidates/thokk_v01.png",
+        "archived_path": "references/thokk_v01.png",
+        "sha256": "09eacf76a01cbb38177da6174e85247b02a290b1d6f2e6f01e4692337738e64b"
+      }
+    ]
+  },
+  {
+    "task": "H0",
+    "id": "hel_death_bolt",
+    "w": 32,
+    "h": 16,
+    "frames": 1,
+    "fps": 0,
+    "flags": [
+      "rotate"
+    ],
+    "anchor": [
+      16,
+      8
+    ],
+    "columns": 1,
+    "rows": 1,
+    "loop": false,
+    "hook": "scripts/bosses/hel.gd _update_state() cast_windup 中 _fan() 的 texture=null",
+    "keep": "替换第一阶段空纹理；保持5发、spread0.5、伤害10、速度200、命中半径；第二阶段_nail不变",
+    "reference_paths": [
+      "assets/sprites/effects/rune_missile.png"
+    ],
+    "target": "assets/sprites/effects/hel_death_bolt.png",
+    "source_root": "assets/source/taskH0_critical_2026-10-19",
+    "archived_references": [
+      {
+        "project_path": "assets/sprites/effects/rune_missile.png",
+        "archived_path": "references/rune_missile.png",
+        "sha256": "c199b65f5786029aba9fe4e60f84cb31d158b2267a91e93f9861122ef827de8d"
+      }
+    ]
+  }
+]

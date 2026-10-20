@@ -1,0 +1,404 @@
+{
+  "task_id": "H2",
+  "date": "2026-10-19",
+  "production": "delivered",
+  "self_review": "pass",
+  "code_integration": "integrated",
+  "game_acceptance": "controlled_runtime_verified",
+  "files": [
+    {
+      "task": "H2",
+      "id": "hati_lunge_trail",
+      "w": 64,
+      "h": 32,
+      "frames": 4,
+      "fps": 16,
+      "flags": [
+        "loop",
+        "rotate",
+        "trail"
+      ],
+      "anchor": [
+        64,
+        16
+      ],
+      "columns": 2,
+      "rows": 2,
+      "loop": true,
+      "hook": "scripts/bosses/hati.gd _draw_telegraph() lunge；scripts/bosses/hati_phantom.gd _draw() lunge",
+      "keep": "本体分身同样使用短扑拖尾；保留lunge_dir、真假线索和影子",
+      "reference_paths": [
+        "assets/sprites/effects/frost_shockwave.png"
+      ],
+      "target": "assets/sprites/effects/bosses/hati_lunge_trail.png",
+      "source_root": "assets/source/taskH2_hati_fx_2026-10-19",
+      "archived_references": [
+        {
+          "project_path": "assets/sprites/effects/frost_shockwave.png",
+          "archived_path": "references/frost_shockwave.png",
+          "sha256": "a0aa09571dec4959ee2a9f66dc6a6a038a2017fad3dea1140680bc837495c625"
+        }
+      ],
+      "version": "v01",
+      "final_path": "assets/sprites/effects/bosses/hati_lunge_trail.png",
+      "candidate": "candidates/hati_lunge_trail_v01.png",
+      "sha256": "90c2d213ce2a387454af1f893814cd22b7f55bbffa1fcee60fbcdba4306db272",
+      "actual_RGB_colors": 26,
+      "actual_alpha_values": [
+        0,
+        36,
+        72,
+        108,
+        144,
+        180,
+        216,
+        252
+      ],
+      "frame_bboxes": [
+        [
+          22,
+          8,
+          62,
+          23
+        ],
+        [
+          18,
+          6,
+          62,
+          26
+        ],
+        [
+          2,
+          6,
+          62,
+          25
+        ],
+        [
+          27,
+          9,
+          62,
+          23
+        ]
+      ],
+      "technical_checks": {
+        "PNG_RGBA": true,
+        "exact_strip_dimensions": true,
+        "RGB_within_48": true,
+        "transparent_background": true,
+        "every_frame_nonempty": true,
+        "distinct_original_frames": true,
+        "2px_margin_or_tiling_exception": true,
+        "GIF_native_decoded_pixel_match": true,
+        "GIF_native_average_fps": true,
+        "GIF_slow8_decoded_pixel_match": true,
+        "GIF_slow8_average_fps": true
+      },
+      "visual_review": {
+        "status": "passed",
+        "observations": "已看4格1倍/4倍：银蓝月光短扑拖尾向左，右侧锚点前沿，四格细流与碎光变化；没有狼身/脚影，不加入真假线索。"
+      },
+      "code_integration": "integrated",
+      "game_acceptance": "controlled_runtime_verified",
+      "source_license": {
+        "tool": "OpenAI built-in image_gen",
+        "commercial_basis": "existing approved OpenAI output terms; project-owned input references",
+        "terms_url": "https://openai.com/policies/terms-of-use/",
+        "processing": "Pillow MIT-CMU, source cuts/alpha/palette/nearest resize/placement and preview only"
+      },
+      "previews": [
+        "previews/hati_lunge_trail_v01_frames.png",
+        "previews/hati_lunge_trail_v01_native.gif",
+        "previews/hati_lunge_trail_v01_rotate.png",
+        "previews/hati_lunge_trail_v01_slow8.gif",
+        "previews/hati_lunge_trail_v01_stretch.png"
+      ],
+      "approved": "approved/hati_lunge_trail.png",
+      "frame_order": "left_to_right_no_spacing",
+      "generation_records": "records/generation_jobs.json",
+      "public_generation_url": null,
+      "generation_url_note": "内置工具仅返回本地原图路径；真实提示词/参考/结果均归档，不伪造公开URL",
+      "transparent_strategy": "Generated alpha quantized to 8 source levels then optional low-alpha cap; RGB count and alpha recorded separately; zero RGB when alpha0",
+      "loop_mode": "loop only while corresponding state is active",
+      "remaining_issues": [
+        "完整手动通关、长时平衡及其他设备表现未测；当前为Godot受控技能/视角验证"
+      ],
+      "source_recipe": "records/normalization_hati_lunge_trail_v01.json",
+      "runtime_verification": {
+        "report": "../taskH0_critical_2026-10-19/integration_2026-10-19/README.md",
+        "scope": "actual Godot Game scenes with controlled skill triggers; full playthrough and long-session balance not tested",
+        "automated_assertions": 572,
+        "failures": 0,
+        "formal_PNG_changed": false
+      }
+    },
+    {
+      "task": "H2",
+      "id": "hati_howl_wave",
+      "w": 128,
+      "h": 128,
+      "frames": 4,
+      "fps": 8,
+      "flags": [
+        "area",
+        "hole"
+      ],
+      "anchor": [
+        64,
+        64
+      ],
+      "columns": 2,
+      "rows": 2,
+      "loop": false,
+      "hook": "scripts/bosses/hati.gd _update_state() howl_windup 达阈值",
+      "keep": "释放时按HOWL_RADIUS280缩放；预警几何、恐惧1.5秒与判定保持",
+      "reference_paths": [
+        "assets/sprites/effects/frost_shockwave.png"
+      ],
+      "target": "assets/sprites/effects/bosses/hati_howl_wave.png",
+      "source_root": "assets/source/taskH2_hati_fx_2026-10-19",
+      "archived_references": [
+        {
+          "project_path": "assets/sprites/effects/frost_shockwave.png",
+          "archived_path": "references/frost_shockwave.png",
+          "sha256": "a0aa09571dec4959ee2a9f66dc6a6a038a2017fad3dea1140680bc837495c625"
+        }
+      ],
+      "version": "v01",
+      "final_path": "assets/sprites/effects/bosses/hati_howl_wave.png",
+      "candidate": "candidates/hati_howl_wave_v01.png",
+      "sha256": "332d7e5ca837d6dba1b50a9a14ffefbc662e48da29824a7ee849a4ffa3f4e39a",
+      "actual_RGB_colors": 28,
+      "actual_alpha_values": [
+        0,
+        28,
+        56,
+        84,
+        112,
+        140,
+        168,
+        197
+      ],
+      "frame_bboxes": [
+        [
+          37,
+          38,
+          90,
+          90
+        ],
+        [
+          26,
+          27,
+          102,
+          101
+        ],
+        [
+          11,
+          18,
+          116,
+          110
+        ],
+        [
+          2,
+          15,
+          126,
+          112
+        ]
+      ],
+      "technical_checks": {
+        "PNG_RGBA": true,
+        "exact_strip_dimensions": true,
+        "RGB_within_48": true,
+        "transparent_background": true,
+        "every_frame_nonempty": true,
+        "distinct_original_frames": true,
+        "2px_margin_or_tiling_exception": true,
+        "transparent_center": true,
+        "GIF_native_decoded_pixel_match": true,
+        "GIF_native_average_fps": true,
+        "GIF_slow8_decoded_pixel_match": true,
+        "GIF_slow8_average_fps": true
+      },
+      "visual_review": {
+        "status": "passed",
+        "observations": "已看4格1倍/4倍：紫蓝光波逐步外扩，末格低密度碎光，中央透明，不含狼体；实际280半径/恐惧判定仍由原脚本负责。"
+      },
+      "code_integration": "integrated",
+      "game_acceptance": "controlled_runtime_verified",
+      "source_license": {
+        "tool": "OpenAI built-in image_gen",
+        "commercial_basis": "existing approved OpenAI output terms; project-owned input references",
+        "terms_url": "https://openai.com/policies/terms-of-use/",
+        "processing": "Pillow MIT-CMU, source cuts/alpha/palette/nearest resize/placement and preview only"
+      },
+      "previews": [
+        "previews/hati_howl_wave_v01_frames.png",
+        "previews/hati_howl_wave_v01_ground.png",
+        "previews/hati_howl_wave_v01_native.gif",
+        "previews/hati_howl_wave_v01_slow8.gif"
+      ],
+      "approved": "approved/hati_howl_wave.png",
+      "frame_order": "left_to_right_no_spacing",
+      "generation_records": "records/generation_jobs.json",
+      "public_generation_url": null,
+      "generation_url_note": "内置工具仅返回本地原图路径；真实提示词/参考/结果均归档，不伪造公开URL",
+      "transparent_strategy": "Generated alpha quantized to 8 source levels then optional low-alpha cap; RGB count and alpha recorded separately; zero RGB when alpha0",
+      "loop_mode": "single shot / static; single-shot temporary display fades and frees at end",
+      "remaining_issues": [
+        "完整手动通关、长时平衡及其他设备表现未测；当前为Godot受控技能/视角验证"
+      ],
+      "source_recipe": "records/normalization_hati_howl_wave_v01.json",
+      "runtime_verification": {
+        "report": "../taskH0_critical_2026-10-19/integration_2026-10-19/README.md",
+        "scope": "actual Godot Game scenes with controlled skill triggers; full playthrough and long-session balance not tested",
+        "automated_assertions": 572,
+        "failures": 0,
+        "formal_PNG_changed": false
+      }
+    },
+    {
+      "task": "H2",
+      "id": "hati_split_flash",
+      "w": 96,
+      "h": 96,
+      "frames": 4,
+      "fps": 8,
+      "flags": [
+        "area"
+      ],
+      "anchor": [
+        48,
+        48
+      ],
+      "columns": 2,
+      "rows": 2,
+      "loop": false,
+      "hook": "scripts/bosses/hati.gd _split()；scripts/bosses/hati_phantom.gd _physics_process() 消散",
+      "keep": "正播生成，反播或淡出消散；短暂使用，不留下本体/分身标记",
+      "reference_paths": [
+        "assets/sprites/bosses/hati.png"
+      ],
+      "target": "assets/sprites/effects/bosses/hati_split_flash.png",
+      "source_root": "assets/source/taskH2_hati_fx_2026-10-19",
+      "archived_references": [
+        {
+          "project_path": "assets/sprites/bosses/hati.png",
+          "archived_path": "references/hati.png",
+          "sha256": "cf21654f28c9f751586f2022dd49d39a1d2cb4bf7bcc667963e677fc8e489217"
+        }
+      ],
+      "version": "v01",
+      "final_path": "assets/sprites/effects/bosses/hati_split_flash.png",
+      "candidate": "candidates/hati_split_flash_v01.png",
+      "sha256": "430b9d996e5fbbf069d756177aaa720b2a3920bd916eac1c0ee1cc32e0ff091f",
+      "actual_RGB_colors": 26,
+      "actual_alpha_values": [
+        0,
+        28,
+        56,
+        84,
+        112,
+        140,
+        168,
+        197
+      ],
+      "frame_bboxes": [
+        [
+          26,
+          30,
+          70,
+          66
+        ],
+        [
+          2,
+          27,
+          94,
+          68
+        ],
+        [
+          3,
+          30,
+          92,
+          66
+        ],
+        [
+          7,
+          37,
+          89,
+          58
+        ]
+      ],
+      "technical_checks": {
+        "PNG_RGBA": true,
+        "exact_strip_dimensions": true,
+        "RGB_within_48": true,
+        "transparent_background": true,
+        "every_frame_nonempty": true,
+        "distinct_original_frames": true,
+        "2px_margin_or_tiling_exception": true,
+        "GIF_native_decoded_pixel_match": true,
+        "GIF_native_average_fps": true,
+        "GIF_slow8_decoded_pixel_match": true,
+        "GIF_slow8_average_fps": true
+      },
+      "visual_review": {
+        "status": "passed",
+        "observations": "已看4格：短暂聚光、向两侧分裂的薄雾、扩散与碎雾消散，无身体、地影或常驻记号，可反播用于消散；本体/分身外观仍共用原图。"
+      },
+      "code_integration": "integrated",
+      "game_acceptance": "controlled_runtime_verified",
+      "source_license": {
+        "tool": "OpenAI built-in image_gen",
+        "commercial_basis": "existing approved OpenAI output terms; project-owned input references",
+        "terms_url": "https://openai.com/policies/terms-of-use/",
+        "processing": "Pillow MIT-CMU, source cuts/alpha/palette/nearest resize/placement and preview only"
+      },
+      "previews": [
+        "previews/hati_split_flash_v01_frames.png",
+        "previews/hati_split_flash_v01_ground.png",
+        "previews/hati_split_flash_v01_native.gif",
+        "previews/hati_split_flash_v01_slow8.gif"
+      ],
+      "approved": "approved/hati_split_flash.png",
+      "frame_order": "left_to_right_no_spacing",
+      "generation_records": "records/generation_jobs.json",
+      "public_generation_url": null,
+      "generation_url_note": "内置工具仅返回本地原图路径；真实提示词/参考/结果均归档，不伪造公开URL",
+      "transparent_strategy": "Generated alpha quantized to 8 source levels then optional low-alpha cap; RGB count and alpha recorded separately; zero RGB when alpha0",
+      "loop_mode": "single shot / static; single-shot temporary display fades and frees at end",
+      "remaining_issues": [
+        "完整手动通关、长时平衡及其他设备表现未测；当前为Godot受控技能/视角验证"
+      ],
+      "source_recipe": "records/normalization_hati_split_flash_v01.json",
+      "runtime_verification": {
+        "report": "../taskH0_critical_2026-10-19/integration_2026-10-19/README.md",
+        "scope": "actual Godot Game scenes with controlled skill triggers; full playthrough and long-session balance not tested",
+        "automated_assertions": 572,
+        "failures": 0,
+        "formal_PNG_changed": false
+      }
+    }
+  ],
+  "originals": [
+    {
+      "file": "originals/hati_howl_wave_v01.png",
+      "sha256": "fd390b5d57897034fd984043d5c34fbc82e121af8e30bbedec87606d3553ed56"
+    },
+    {
+      "file": "originals/hati_lunge_trail_v01.png",
+      "sha256": "bb8accce590b066bd5dd5b2642f2ba239224b73ef74aabb6b968044ca30c8328"
+    },
+    {
+      "file": "originals/hati_split_flash_v01.png",
+      "sha256": "5564af978ae6198fbf9be06f695b72170a065b9d7dc678d2cc6b8dca84e354c5"
+    }
+  ],
+  "generation_records": "records/generation_jobs.json",
+  "limitations": [
+    "Technical measurements and local previews do not prove Godot gameplay acceptance."
+  ],
+  "source_inventory": "records/source_inventory.json",
+  "runtime_verification": {
+    "report": "../taskH0_critical_2026-10-19/integration_2026-10-19/README.md",
+    "scope": "controlled Game viewport and gameplay assertions; not a complete manual run"
+  }
+}

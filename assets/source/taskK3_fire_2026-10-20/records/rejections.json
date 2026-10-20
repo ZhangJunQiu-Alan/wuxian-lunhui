@@ -1,0 +1,44 @@
+[
+  {
+    "id": "surtr_attack",
+    "version": "v01",
+    "reason": "contact pose body-to-foot calibration requires silhouette wider than256 canvas; cannot shrink actor or clip sword to force fit",
+    "action": "redo bent-elbow close sweep, cape kept near body; preserve body scale"
+  },
+  {
+    "id": "surtr_gate",
+    "version": "v01",
+    "reason": "broad stone uprights leave opening visibly below48px target width; flames intrude aperture and stones vary",
+    "action": "redo thin stationary arch, protected48x70 opening, flame flicker outside"
+  },
+  {
+    "id": "surtr_gate",
+    "version": "v02",
+    "reason": "48x70 protected aperture still occupied; do not reduce gate",
+    "action": "redo thin rectangular threshold with64px layout clearance guide"
+  },
+  {
+    "id": "surtr_windup",
+    "version": "v01",
+    "reason": "lifted pose cape extends too far left when registering original hip/body scale; fitting silhouette would shrink actor",
+    "action": "redo tight cape and bent-arm draw, retain original body scale"
+  },
+  {
+    "id": "surtr_sword_arc",
+    "version": "v01",
+    "reason": "center radius32 intrusion108/228/58 pixels",
+    "action": "v02 repair; preserve failure"
+  },
+  {
+    "id": "surtr_sword_arc",
+    "version": "v02",
+    "reason": "peak still93 interiorpixels after normalization; whole-pose registration cannot satisfy2px margin and protectedcenter",
+    "action": "replace only peak using new generatedsinglev03; otherphases whole-frame translate"
+  },
+  {
+    "id": "freyr_heal",
+    "version": "v01",
+    "reason": "pose exceeds64 at fixed soles: x14 width50 right64, lacks2px margin",
+    "action": "compact bent-elbow chest gesture regeneratev02"
+  }
+]

@@ -4,7 +4,7 @@ class_name UpgradeDB
 ## 卡牌种类 kind：
 ##   weapon  人物基础武器（character 是哪个角色的）
 ##   stat    通用属性
-##   skill   神术：选神时获得（1、5、10 级各选一位神，一局最多 3 位）
+##   skill   神术：选神时获得（1、5、10、15 级各选一位神，一局最多 4 位）
 ##   boon    神明的强化：加信仰，每位神 4 个方向
 ##   path    质变：信仰到 6 时三选一（path 是质变 id）
 ##   awaken  觉醒：信仰到 12 时出现，path 是它对应的质变
@@ -20,8 +20,8 @@ class_name UpgradeDB
 const FAITH_PATH := 6     # 信仰到 6：选质变
 const FAITH_AWAKEN := 12  # 信仰到 12：觉醒
 const FAITH_MAX := 12
-const MAX_GODS := 3       # 一局最多信仰几位神
-const GOD_LEVELS := [5, 10]  # 这些等级的升级改成选一位新的神（开局 1 级也选一次）
+const MAX_GODS := 4       # 一局最多信仰几位神
+const GOD_LEVELS := [5, 10, 15]  # 这些等级的升级改成选一位新的神（开局 1 级也选一次）
 
 const RARITY_NAMES := ["普通", "稀有", "史诗", "传说"]
 const RARITY_COLORS := [Color(0.82, 0.84, 0.88), Color(0.4, 0.66, 1.0), Color(0.78, 0.45, 1.0), Color(1.0, 0.74, 0.25)]
@@ -270,7 +270,7 @@ static func _is_available(id: String, player: Player) -> bool:
 			if info.character != player.character_id:
 				return false
 		"boon":
-			if not player.faith.has(info.god):
+			if not player.faith.has(info.god) or player.gods[info.god].awakened:
 				return false
 		"stat":
 			pass
@@ -281,6 +281,8 @@ static func _is_available(id: String, player: Player) -> bool:
 
 ## 选神：从还没信仰的神里随机 count 位；宿敌不同时出现
 static func god_choices(player: Player, count: int) -> Array[Dictionary]:
+	if player.faith.size() >= MAX_GODS:
+		return []
 	var pool: Array = Gods.ALL.keys().filter(func(god: String) -> bool: return not player.faith.has(god))
 	pool.shuffle()
 	var picked: Array[String] = []
@@ -311,17 +313,19 @@ static func awaken_choice(path: String) -> Array[Dictionary]:
 	return [{"id": path + "_awaken", "rarity": -1}]
 
 
-## 稀有度给的信仰：普通 +1 … 传说 +4
-static func faith_gain(rarity: int) -> int:
-	return maxi(rarity, 0) + 1
+## 每次选择神明强化固定 +1 信仰，稀有度只影响强化效果
+static func faith_gain(_rarity: int) -> int:
+	return 1
 
 
 ## 让一张卡生效：记录次数、增加信仰、修改玩家或技能的数值
 static func apply(offer: Dictionary, player: Player) -> void:
 	var id: String = offer.id
 	var rarity: int = offer.rarity
-	player.upgrade_levels[id] = player.upgrade_levels.get(id, 0) + 1
 	var info := get_info(id)
+	if info.kind == "boon" and not _is_available(id, player):
+		return
+	player.upgrade_levels[id] = player.upgrade_levels.get(id, 0) + 1
 	var v: float = value(id, rarity) if info.has("values") and rarity >= 0 else 0.0
 
 	match info.kind:

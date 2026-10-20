@@ -1,0 +1,8 @@
+{
+  "id": "nidhogg_gnaw_stagger",
+  "version": "v01",
+  "prompt": "Use case: stylized-concept. Production pixel-art dark underworld game VFX. Inputs are project-owned material/texture references only, do NOT copy their pool or ground-crack silhouette. A short interrupted dark-green life-stream stagger effect, no creature. Four ONESHOT phases: thin grey-green tether at center beginning to split, a small muted amber-grey shock cutting the green stream, two broken green ends recoil with tiny specks, faint few green motes vanish. Compact, no bright explosion or rune circle; no lingering beam. EXACTLY FOUR DISTINCT frames in TWO COLUMNS and TWO ROWS, equal cell aspect 64:64, intended native 64x64. Same pivot, cell framing and scale across frames, preserve occurrence/peak/decay for single shots and smooth phase cycling for loop. Limited32RGB with8alpha steps, crisp clustered pixel art, subdued moss-green and earth-grey palette, no blue ice or fiery orange. Entire effect fits inside each cell with transparent borders. Genuine alpha background, no opaque rectangle, text, labels, grid, watermark, scenery, dragon or tree body.",
+  "reference_paths": [
+    "assets/sprites/effects/poison_pool.png"
+  ]
+}

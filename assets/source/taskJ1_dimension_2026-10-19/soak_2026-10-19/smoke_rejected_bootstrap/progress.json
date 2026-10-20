@@ -1,0 +1,49 @@
+{
+	"casts": {
+		"deaths": 0,
+		"dimension_slash": 2,
+		"enter_formation": 2,
+		"marks": 0,
+		"stonehenge": 2,
+		"wild_west_show": 2
+	},
+	"checks": 16,
+	"cycle": 0,
+	"failures": [
+		{
+			"label": "steady population stationary_pressure",
+			"pass": false,
+			"value": null
+		},
+		{
+			"label": "steady population live_ai_pressure",
+			"pass": false,
+			"value": null
+		}
+	],
+	"latest": {
+		"cycle": 0,
+		"effects": {
+			"marks": 0,
+			"numbers": 0,
+			"particles": 0,
+			"rings": 0
+		},
+		"enemies": 0,
+		"fps_monitor": 1.0,
+		"j_texture_cache": 14,
+		"nodes": 4,
+		"objects": 1555.0,
+		"orphans": 6.0,
+		"phase": "stationary_repeat",
+		"resources": 51.0,
+		"seconds": 0.117,
+		"static_bytes": 43034988,
+		"static_peak_bytes": 62198813,
+		"tag": "steady",
+		"texture_bytes": 9566239.0,
+		"video_bytes": 15976871.0
+	},
+	"phase": "stationary_repeat",
+	"seconds": 0.117
+}

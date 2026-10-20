@@ -1,0 +1,68 @@
+{
+  "input": "originals/hati_split_flash_v01.png",
+  "input_sha256": "5564af978ae6198fbf9be06f695b72170a065b9d7dc678d2cc6b8dca84e354c5",
+  "raw_size": [
+    1774,
+    887
+  ],
+  "grid": [
+    2,
+    2
+  ],
+  "cut_boxes": [
+    [
+      266,
+      87,
+      645,
+      395
+    ],
+    [
+      48,
+      83,
+      839,
+      435
+    ],
+    [
+      84,
+      72,
+      853,
+      385
+    ],
+    [
+      104,
+      157,
+      808,
+      341
+    ]
+  ],
+  "single_common_scale": 0.11630847029077118,
+  "placements": [
+    [
+      26,
+      30,
+      44,
+      36
+    ],
+    [
+      2,
+      27,
+      92,
+      41
+    ],
+    [
+      3,
+      30,
+      89,
+      36
+    ],
+    [
+      7,
+      37,
+      82,
+      21
+    ]
+  ],
+  "operations": "original alpha threshold/quantization, source frame cuts, single common nearest resize, source-derived shared palette, whole-frame placement; no character/effect drawing",
+  "candidate": "candidates/hati_split_flash_v01.png",
+  "candidate_sha256": "430b9d996e5fbbf069d756177aaa720b2a3920bd916eac1c0ee1cc32e0ff091f"
+}

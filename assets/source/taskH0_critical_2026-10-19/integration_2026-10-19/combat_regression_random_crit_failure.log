@@ -1,0 +1,18 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+PASS fixed faith gain, four gods, awakening pool, and level 40
+BENCH 350 enemies / 2000 radius queries: grid=27572us, scan=226869us
+PASS spatial query equivalence and lifecycle
+ERROR: zone damage and pull remain active
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] _check (res://tools/test_combat_regressions.gd:20)
+       [1] _test_zone (res://tools/test_combat_regressions.gd:215)
+       [2] _run (res://tools/test_combat_regressions.gd:427)
+PASS cooldown, immunity, and unique harvest
+BENCH 350 shocked enemies / 30 static ticks: 288709us
+PASS static-field damage equivalence
+PASS regular, event, elite, split, quest and Boss spawning
+PASS final Boss, queued rewards, pause and duplicate settlement
+PASS death and abandon settlement on Helheim
+RESULT: 997 checks, 1 failures

@@ -14,6 +14,7 @@ var gaps: Array[float] = []
 var player: Player
 var _radius := 0.0
 var _hit := false
+var _age := 0.0
 
 
 static func spawn(parent: Node, pos: Vector2, gap_angles: Array[float], target: Player) -> void:
@@ -29,6 +30,7 @@ func _ready() -> void:
 
 
 func _process(delta: float) -> void:
+	_age += delta
 	_radius += SPEED * delta
 	if _radius > MAX_RADIUS:
 		queue_free()
@@ -51,6 +53,14 @@ func _in_gap(angle: float) -> bool:
 
 func _draw() -> void:
 	var alpha := 1.0 - _radius / MAX_RADIUS * 0.6
+	var arcs := BossFx.visible_arcs(gaps, GAP_HALF)
+	if BossFx.texture("hrym_wave_band") != null:
+		for arc in arcs:
+			draw_arc(Vector2.ZERO, _radius, arc.x, arc.y, 48, Color(COLOR, 0.2 * alpha), BAND)
+		BossFx.draw_band(self, "hrym_wave_band", _age, Vector2.ZERO, _radius, BAND, arcs, Color(1, 1, 1, alpha))
+		for arc in arcs:
+			draw_arc(Vector2.ZERO, _radius, arc.x, arc.y, 48, Color(0.85, 0.95, 1, 0.65 * alpha), 2.0)
+		return
 	# 把整圈按缺口切成几段弧，只画缺口之外的部分
 	var sorted := gaps.duplicate()
 	sorted.sort()

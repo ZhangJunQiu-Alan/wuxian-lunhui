@@ -1,0 +1,68 @@
+{
+  "input": "originals/hel_board_ship_v01.png",
+  "input_sha256": "f0e651585851ce35f92528852d5e34471c749d55cc84e9efef26a5ae074cb934",
+  "raw_size": [
+    1536,
+    1024
+  ],
+  "grid": [
+    2,
+    2
+  ],
+  "cut_boxes": [
+    [
+      47,
+      189,
+      724,
+      498
+    ],
+    [
+      30,
+      27,
+      739,
+      500
+    ],
+    [
+      47,
+      22,
+      722,
+      496
+    ],
+    [
+      70,
+      42,
+      699,
+      487
+    ]
+  ],
+  "single_common_scale": 0.17489421720733428,
+  "placements": [
+    [
+      5,
+      37,
+      118,
+      54
+    ],
+    [
+      2,
+      22,
+      124,
+      83
+    ],
+    [
+      5,
+      22,
+      118,
+      83
+    ],
+    [
+      9,
+      25,
+      110,
+      78
+    ]
+  ],
+  "operations": "original alpha threshold/quantization, source frame cuts, single common nearest resize, source-derived shared palette, whole-frame placement; no character/effect drawing",
+  "candidate": "candidates/hel_board_ship_v01.png",
+  "candidate_sha256": "4ce8ec2d7c056544e501bf12d4d1bfb3d50ffecdf8c32a3f675ed4a6a0c6c6cf"
+}

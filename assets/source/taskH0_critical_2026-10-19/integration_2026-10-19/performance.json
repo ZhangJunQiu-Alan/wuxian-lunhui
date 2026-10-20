@@ -1,0 +1,92 @@
+{
+	"engine": {
+		"build": "official",
+		"hash": "ed1daf0bf001b61586d9930840f2f1394092c079",
+		"hex": 263938,
+		"major": 4,
+		"minor": 7,
+		"patch": 2,
+		"status": "stable",
+		"string": "4.7.2-stable (official)",
+		"timestamp": 0
+	},
+	"level": "helheim",
+	"measurements": [
+		{
+			"enemies": 351,
+			"fps_over_interval": 76.3615838628634,
+			"frames": 383,
+			"last_process_delta_ms": 17.6366666666667,
+			"mean_frame_ms": 13.095590078329,
+			"median_frame_ms": 11.664,
+			"nodes": 1589,
+			"p95_frame_ms": 25.838,
+			"peak_boss_effects": 0,
+			"phase": "350_animated_sprites_no_fx",
+			"time_scale": 1.0
+		},
+		{
+			"enemies": 351,
+			"fps_over_interval": 83.4431269213878,
+			"frames": 418,
+			"last_process_delta_ms": 11.1111111111111,
+			"mean_frame_ms": 11.9842105263158,
+			"median_frame_ms": 11.337,
+			"nodes": 1589,
+			"p95_frame_ms": 24.247,
+			"peak_boss_effects": 40,
+			"phase": "350_animated_sprites_40_fx",
+			"time_scale": 1.0
+		},
+		{
+			"enemies": 351,
+			"fps_over_interval": 85.8327805768801,
+			"frames": 430,
+			"last_process_delta_ms": 11.1111111111111,
+			"mean_frame_ms": 11.6505604651163,
+			"median_frame_ms": 11.543,
+			"nodes": 1589,
+			"p95_frame_ms": 16.066,
+			"peak_boss_effects": 0,
+			"phase": "350_animated_sprites_no_fx_repeat",
+			"time_scale": 1.0
+		},
+		{
+			"enemies": 351,
+			"fps_over_interval": 72.7829396789393,
+			"frames": 364,
+			"last_process_delta_ms": 15.2777777777778,
+			"mean_frame_ms": 13.7394835164835,
+			"median_frame_ms": 11.081,
+			"nodes": 1589,
+			"p95_frame_ms": 24.473,
+			"peak_boss_effects": 0,
+			"phase": "350_live_AI_no_fx",
+			"time_scale": 1.0
+		},
+		{
+			"enemies": 351,
+			"fps_over_interval": 144.88623532802,
+			"frames": 725,
+			"last_process_delta_ms": 6.811,
+			"mean_frame_ms": 6.90196689655173,
+			"median_frame_ms": 6.902,
+			"nodes": 1589,
+			"p95_frame_ms": 7.61,
+			"peak_boss_effects": 40,
+			"phase": "350_live_AI_40_fx",
+			"time_scale": 1.0
+		},
+		{
+			"active_boss_effects": 0,
+			"nodes": 1589,
+			"phase": "cleanup"
+		}
+	],
+	"renderer": "gl_compatibility",
+	"scope": "local Apple M2 render; 1.5s warmup plus5s each phase; animated-only pair isolates art cost; live AI pair separate",
+	"viewport": [
+		1280,
+		720
+	]
+}

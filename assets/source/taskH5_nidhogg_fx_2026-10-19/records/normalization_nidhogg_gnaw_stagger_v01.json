@@ -1,0 +1,68 @@
+{
+  "input": "originals/nidhogg_gnaw_stagger_v01.png",
+  "input_sha256": "c56389db73d4453ca6fb9c653f0137b1460f017d65e3f7c77a482cd5ccee7852",
+  "raw_size": [
+    1275,
+    1234
+  ],
+  "grid": [
+    2,
+    2
+  ],
+  "cut_boxes": [
+    [
+      36,
+      244,
+      612,
+      542
+    ],
+    [
+      47,
+      190,
+      593,
+      583
+    ],
+    [
+      37,
+      210,
+      612,
+      464
+    ],
+    [
+      66,
+      209,
+      601,
+      453
+    ]
+  ],
+  "single_common_scale": 0.10416666666666667,
+  "placements": [
+    [
+      2,
+      16,
+      60,
+      31
+    ],
+    [
+      3,
+      11,
+      57,
+      41
+    ],
+    [
+      2,
+      19,
+      60,
+      26
+    ],
+    [
+      4,
+      19,
+      56,
+      25
+    ]
+  ],
+  "operations": "original alpha threshold/quantization, source frame cuts, single common nearest resize, source-derived shared palette, whole-frame placement; no character/effect drawing",
+  "candidate": "candidates/nidhogg_gnaw_stagger_v01.png",
+  "candidate_sha256": "f3a03706f0b018eec784a8144c7aee6a0f50b6576980531aeed1d15e013a7dfa"
+}

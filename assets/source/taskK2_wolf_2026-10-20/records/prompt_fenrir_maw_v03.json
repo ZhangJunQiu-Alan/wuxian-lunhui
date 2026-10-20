@@ -1,0 +1,11 @@
+{
+  "tool": "image_gen.imagegen",
+  "id": "fenrir_maw",
+  "prompt": "Use case: precise-object-edit. Image1 is the actual four-frame2x2 giant jaw sprite atlas to edit. Image2 is ONLY a QA GUIDE: its CYAN RECTANGLES mark PROTECTED EMPTY SPACE in each cell, not colors or objects to reproduce. In the result every cyan-covered area MUST be entirely zero-alpha TRANSPARENT. Reposition and reshape the upper/lower wolf jaw materials so they stay OUTSIDE the protected area, with natural tapered teeth, not rectangular cut-off stubs. Make the empty mouth aperture much taller. Upper small teeth and gum must sit ABOVE the cyan region; lower small teeth/gum must sit BELOW it; left hinge stays to the LEFT of it. Huge front canines may stay far right OUTSIDE the rectangle. Thin the bony/furry jaw strips so the whole assembly still fits each square cell with8logicalpx margin; don't enlarge the entire figure. Preserve the same dark fur, ivory/gold teeth, bronze hinge, red gums and right-facing profile. Fixed left hinge(32,128) in all four256px logical cells; same outer envelope, only subtle held-open tension loop. No full wolf head/eyes/body, no other character. Four equal cells in same2x2 square layout, no gutters. Final image must contain NO CYAN, NO BLUE RECTANGLES, NO guide markings, no words, no frames, no ground, no shadow or background. True alpha both outside jaws and throughout the large open mouth. Keep crisp small-game pixel clusters, not smooth illustration. Prioritize the explicit protected-space guide over original fang placement.",
+  "refs": [
+    "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskK2_wolf_2026-10-20/references/fenrir_maw_v02_target.png",
+    "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskK2_wolf_2026-10-20/references/fenrir_maw_clearance_guide.png"
+  ],
+  "transparent_background": true,
+  "guide_role": "QA overlay only; not new art painted in final"
+}

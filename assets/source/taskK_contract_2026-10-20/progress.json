@@ -1,0 +1,130 @@
+{
+  "K1": {
+    "production": "complete",
+    "self_check": "passed",
+    "formal_png": 3,
+    "frames": 11,
+    "game_integration": "not_implemented",
+    "game_acceptance": "not_tested"
+  },
+  "K2": {
+    "task": "K2",
+    "production": "complete",
+    "formal_png": 12,
+    "frames": 44,
+    "self_check": "passed",
+    "isolated_godot": "52 captures",
+    "code_integration": "not_implemented",
+    "game_acceptance": "not_tested",
+    "git_commit": false,
+    "git_push": false,
+    "remaining": [
+      "actual attraction and escape timer",
+      "authoritative swallow warning/damage geometry",
+      "charge contact",
+      "fragment pickup/binding lifecycle",
+      "Odin faith and awakening condition",
+      "Vidar full cinematic timing",
+      "dense scene and third-level playthrough"
+    ]
+  },
+  "K3": {
+    "task": "K3",
+    "production": "complete",
+    "formal_png": 14,
+    "frames": 51,
+    "self_check": "passed",
+    "isolated_godot": "81 captures; rotated arc, two wall radii, safe grid and allies",
+    "code_integration": "not_implemented",
+    "game_acceptance": "not_tested",
+    "remaining": [
+      "Surtr AI allskills",
+      "60/25 percent transitions",
+      "actual safegrid damage",
+      "Freyja faith and awakening aid condition",
+      "healing and full battle",
+      "dense scene/full third-level ending"
+    ],
+    "git_commit": false,
+    "git_push": false
+  },
+  "K4": {
+    "task": "K4",
+    "production": "complete",
+    "formal_png": 11,
+    "frames": 45,
+    "self_check": "passed",
+    "isolated_godot": "44captures including4x4 composition, not a performance test",
+    "code_integration": "not_implemented",
+    "game_acceptance": "not_tested",
+    "remaining": [
+      "EnemyDB registrations",
+      "actual shield/charge rules",
+      "lowhealth rage",
+      "deathblast/residual damage",
+      "350enemy performance",
+      "thirdlevel spawn/balance"
+    ],
+    "git_commit": false,
+    "git_push": false
+  },
+  "K5": {
+    "task": "K5",
+    "production": "complete",
+    "formal_png": 2,
+    "frames": 5,
+    "self_check": "passed",
+    "checks": 50,
+    "game_integration": "not_implemented",
+    "game_acceptance": "not_tested",
+    "remaining": [
+      "map loader and mask adapter",
+      "world layout and clipping",
+      "collision/visual alignment",
+      "periodic aid gameplay definition",
+      "dense fulllevel runtime"
+    ],
+    "git_commit": false,
+    "git_push": false
+  },
+  "K6": {
+    "task": "K6",
+    "production": "complete",
+    "formal_ogg": 1,
+    "formal_wav": 4,
+    "self_check": "passed",
+    "checks": 74,
+    "listening": "user accepted complete4SFX and three musicloops",
+    "game_integration": "not_implemented",
+    "game_acceptance": "not_tested",
+    "remaining": [
+      "25 event calls",
+      "LevelDB music",
+      "dense gameplay mixing",
+      "music transition and full third-level loop"
+    ],
+    "git_commit": false,
+    "git_push": false
+  },
+  "K7": {
+    "task": "K7",
+    "production": "complete_as_text_data_and_contract",
+    "new_formal_art": 0,
+    "self_check": "passed",
+    "checks": 67,
+    "independent_text_renders": 10,
+    "integration_cases": 28,
+    "integration_cases_executed_in_game": 0,
+    "game_integration": "not_implemented",
+    "game_acceptance": "not_tested",
+    "remaining": [
+      "fate event flags",
+      "ending state machine and skip",
+      "Save and result fields",
+      "fate reward formula unspecified",
+      "full third-level victory playthrough"
+    ],
+    "git_commit": false,
+    "git_push": false
+  }
+}

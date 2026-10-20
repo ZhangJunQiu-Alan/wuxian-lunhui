@@ -205,14 +205,19 @@ func _tick_static(delta: float) -> void:
 	var reach := link_range()
 	if not shocked.is_empty():
 		Audio.sfx_or("static_zap", "", -8.0)
+	var counts := {}
 	for enemy in shocked:
 		var linked := 0
-		for other in shocked:
-			if other != enemy and other.global_position.distance_to(enemy.global_position) < reach:
+		for other in Enemy.query_radius(enemy.global_position, reach):
+			if other != enemy and other.stack_count("shock") > 0 and other.global_position.distance_squared_to(enemy.global_position) < reach * reach:
 				linked += 1
 				if linked <= 4 and enemy.get_instance_id() < other.get_instance_id() and _links.size() < 80:
 					_links.append({"a": enemy.global_position, "b": other.global_position, "life": 0.25})
-		var dmg := damage(BASE_DAMAGE) * STATIC_DAMAGE * enemy.stack_count("shock") * (1.0 + 0.5 * mini(linked, 4))
+		counts[enemy] = mini(linked, 4)
+	for enemy in shocked:
+		if enemy._dead:
+			continue
+		var dmg := damage(BASE_DAMAGE) * STATIC_DAMAGE * enemy.stack_count("shock") * (1.0 + 0.5 * int(counts[enemy]))
 		var times := 2 if randf() < stat("thor_echo") / 100.0 else 1
 		for i in times:
 			enemy.take_dot(dmg)
@@ -233,12 +238,13 @@ func on_enemy_died(enemy: Enemy) -> void:
 	var reach := link_range()
 	while not frontier.is_empty() and chain.size() < 40:
 		var from: Vector2 = frontier.pop_back()
-		for node in enemies():
-			var other := node as Enemy
-			if other.stack_count("shock") > 0 and not chain.has(other) and other.global_position.distance_to(from) < reach:
+		for other in Enemy.query_radius(from, reach):
+			if other.stack_count("shock") > 0 and not chain.has(other) and other.global_position.distance_squared_to(from) < reach * reach:
 				chain.append(other)
 				frontier.append(other.global_position)
 				_links.append({"a": from, "b": other.global_position, "life": 0.3})
+				if chain.size() >= 40:
+					break
 	for other in chain:
 		if is_instance_valid(other):
 			other.take_damage(damage(BASE_DAMAGE) * 1.5)

@@ -1,0 +1,8 @@
+{
+  "id": "hati_split_flash",
+  "version": "v01",
+  "prompt": "Use case: stylized-concept. Production pixel-art VFX animation for existing dark northern myth game. Input is project-owned STYLE reference only, do not copy a creature or ice ring. A transient moon-shadow split flash: thin silver-blue mist torn into two mirrored outward curls, brief pale lavender glints near center. FOUR ONESHOT phases: tiny inward gathering wisps, short bright split with two curling lobes, lobes spread and dim, just a few dissipating smoke fragments. No animal, moon emblem, permanent marker, ground shadow or fake-vs-real identifier. Sparse transparent mist with dark indigo edges. EXACTLY FOUR DISTINCT frames in a 2-COLUMN by 2-ROW grid, row-major, every cell aspect 96:96, native 96x96. Identical registration, center and camera scale across frames, retain expansion timing if one-shot. Full effect inside each cell with transparent padding. Deliberate crisp small pixel clusters, <=32RGB colors and 8 alpha steps. Genuine transparent background, no opaque rectangle, text, labels, grid lines, watermark or scenery.",
+  "reference_paths": [
+    "assets/sprites/bosses/hati.png"
+  ]
+}

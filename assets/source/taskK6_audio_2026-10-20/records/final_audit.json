@@ -1,0 +1,378 @@
+{
+  "task": "K6",
+  "checks": 74,
+  "failures": 0,
+  "items": [
+    {
+      "check": "jormungandr_hiss:monoPCM16_44100",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "jormungandr_hiss:peak",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "jormungandr_hiss:onset",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "jormungandr_hiss:boundary0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "jormungandr_hiss:noclip",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "jormungandr_hiss:duration",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "jormungandr_hiss:hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fenrir_swallow:monoPCM16_44100",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fenrir_swallow:peak",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fenrir_swallow:onset",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fenrir_swallow:boundary0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fenrir_swallow:noclip",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fenrir_swallow:duration",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fenrir_swallow:hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "gleipnir_tension:monoPCM16_44100",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "gleipnir_tension:peak",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "gleipnir_tension:onset",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "gleipnir_tension:boundary0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "gleipnir_tension:noclip",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "gleipnir_tension:duration",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "gleipnir_tension:hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "surtr_gate:monoPCM16_44100",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "surtr_gate:peak",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "surtr_gate:onset",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "surtr_gate:boundary0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "surtr_gate:noclip",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "surtr_gate:duration",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "surtr_gate:hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "music:Vorbis44100stereo",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "music:LUFS",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "music:truepeak",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "music:seam_vs_normal_diff",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "music:source_whole_loop",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "music:hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "source:originals/fantasy/spell_fire_05.ogg",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "source:originals/rpg/cloth4.ogg",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "source:originals/fantasy/creature_monster_01.ogg",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "source:originals/impact/impactSoft_heavy_000.ogg",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "source:originals/fantasy/metal_02.ogg",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "source:originals/fantasy/spell_02.ogg",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "source:originals/fantasy/creature_roar_03.ogg",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "reuse:jormungandr_windup:assets/audio/sfx/boss_windup.wav",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "reuse:jormungandr_body_hit:assets/audio/sfx/boss_slam.wav",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "reuse:thor_fate_rescued:assets/audio/sfx/quest_done.wav",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "reuse:thor_final_aid:assets/audio/sfx/lightning_01.wav",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "reuse:thor_final_aid:assets/audio/sfx/lightning_02.wav",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "reuse:thor_final_aid:assets/audio/sfx/lightning_03.wav",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "reuse:fenrir_maw_windup:assets/audio/sfx/boss_windup.wav",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "reuse:fenrir_charge:assets/audio/sfx/boss_howl.wav",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "reuse:gleipnir_pickup:assets/audio/sfx/chest_open.wav",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "reuse:vidar_arrive:assets/audio/sfx/awaken.wav",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "reuse:vidar_pry:assets/audio/sfx/boss_slam.wav",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "reuse:surtr_sword:assets/audio/sfx/katana_slash_01.wav",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "reuse:surtr_sword:assets/audio/sfx/katana_slash_02.wav",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "reuse:surtr_sword:assets/audio/sfx/katana_slash_03.wav",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "reuse:surtr_residual_fire:assets/audio/sfx/fire_burn.wav",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "reuse:surtr_phase60:assets/audio/sfx/boss_warning.wav",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "reuse:surtr_phase25:assets/audio/sfx/boss_warning.wav",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "reuse:surtr_final_fire:assets/audio/sfx/boss_slam.wav",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "reuse:surtr_final_fire:assets/audio/sfx/fire_burn.wav",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "reuse:freyr_heal:assets/audio/sfx/heal_pickup.wav",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "reuse:fire_giant_explosion:assets/audio/sfx/big_death.wav",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "reuse:fire_giant_explosion:assets/audio/sfx/fire_burn.wav",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "reuse:frost_veteran_charge:assets/audio/sfx/boss_windup.wav",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "reuse:frost_veteran_block:assets/audio/sfx/boss_block.wav",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "reuse:wolf_berserker_rage:assets/audio/sfx/boss_howl.wav",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "reuse:chapter_clear:assets/audio/sfx/quest_done.wav",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "25eventcoverage",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "baseline_assets_includingG6_unchanged",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "check": "published:jormungandr_hiss",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "published:fenrir_swallow",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "published:gleipnir_tension",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "published:surtr_gate",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "published:vigrid",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "scope": "technical measurements and integrity; listening from user evidence, no game run"
+}

@@ -1,0 +1,9 @@
+{
+  "tool": "image_gen.imagegen",
+  "id": "fenrir_maw",
+  "prompt": "Use case: precise-object-edit. Edit Image1, this four-frame transparent2x2 pixel-art giant jaw atlas. Preserve the SAME dark wolf fur, ivory teeth, gums, bronze hinge details and four equal SQUARE cells. Fix only the mouth clearance and registration. Each logical256x256 cell must have the entire rectangle x96..208,y112..176 COMPLETELY TRANSPARENT in ALL FOUR frames, with absolutely NO teeth, gum, fur, tongue or dark throat in it. Move upper jaw material and its small inner fangs above y108, lower teeth and lower jaw material below y182. Frontmost huge fangs may remain at x220..242 OUTSIDE that protected rectangle. Narrow the fur/bone strips enough to retain >=8px outer transparent margin; nothing clipped by cell borders. A fixed LEFT hinge at(32,128), same exact hinge position and jaw envelopes in all four poses. Four subtle held-open tension phases, tiny changes only, no layout shifts or differing sizes. Maintain upper-jaw nose at right and lower-jaw chin at right. Only the two jaws and hinge, no full face or eyes or body. Same crisp detailed small-game pixel clusters, no smoothing. Output ONLY square2x2 transparent atlas, no gutters, marks, labels, grid, symbols, shadow or scenery. Outside jaw materials and the ENTIRE protected mouth opening must be true zero alpha, never black-filled. Do not add effects or another character.",
+  "refs": [
+    "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskK2_wolf_2026-10-20/originals/fenrir_maw_v01_raw.png"
+  ],
+  "transparent_background": true
+}

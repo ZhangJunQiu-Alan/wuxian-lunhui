@@ -1,0 +1,330 @@
+{
+  "status": "proposed_not_playable",
+  "coordinates": "world pixels, origin spawn, +x east, +y south; tile=floor(world/64)",
+  "tile_size": 64,
+  "view_rect": [
+    -2560,
+    -2560,
+    5120,
+    5120
+  ],
+  "border": 256,
+  "walk_rect": [
+    -2304,
+    -2304,
+    4608,
+    4608
+  ],
+  "spawn": [
+    0,
+    0
+  ],
+  "clear_spawn_radius": 384,
+  "combat_no_fixed_obstacles_radius": 1280,
+  "routes": [
+    [
+      [
+        0,
+        0
+      ],
+      [
+        -1536,
+        -1408
+      ]
+    ],
+    [
+      [
+        0,
+        0
+      ],
+      [
+        1536,
+        -1280
+      ]
+    ],
+    [
+      [
+        0,
+        0
+      ],
+      [
+        -1536,
+        1024
+      ]
+    ],
+    [
+      [
+        0,
+        0
+      ],
+      [
+        1536,
+        1280
+      ]
+    ],
+    [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        1792
+      ]
+    ],
+    [
+      [
+        -1536,
+        -1408
+      ],
+      [
+        1536,
+        -1280
+      ]
+    ],
+    [
+      [
+        1536,
+        -1280
+      ],
+      [
+        1536,
+        1280
+      ]
+    ],
+    [
+      [
+        1536,
+        1280
+      ],
+      [
+        0,
+        1792
+      ]
+    ],
+    [
+      [
+        0,
+        1792
+      ],
+      [
+        -1536,
+        1024
+      ]
+    ],
+    [
+      [
+        -1536,
+        1024
+      ],
+      [
+        -1536,
+        -1408
+      ]
+    ]
+  ],
+  "route_reserved_width": 256,
+  "landmarks": [
+    {
+      "id": "battlefield",
+      "name": "中央燃烧平原",
+      "pos": [
+        0,
+        0
+      ],
+      "radius": 1088,
+      "role": "open combat/readability reserve; no fixed fight lock",
+      "density": "medium"
+    },
+    {
+      "id": "bifrost",
+      "name": "崩塌彩虹桥残端",
+      "pos": [
+        -1536,
+        -1408
+      ],
+      "radius": 384,
+      "role": "reuse bifrost fragments; no bridge crossing gameplay",
+      "density": "low"
+    },
+    {
+      "id": "giant_graveyard",
+      "name": "诸神与巨人残骸带",
+      "pos": [
+        1536,
+        -1280
+      ],
+      "radius": 384,
+      "role": "reuse giant remains and shields; no identifiable god corpses",
+      "density": "medium"
+    },
+    {
+      "id": "frost_remnants",
+      "name": "霜巨人残部",
+      "pos": [
+        -1536,
+        1024
+      ],
+      "radius": 384,
+      "role": "burnt grass patch and tread; not a new quest",
+      "density": "medium"
+    },
+    {
+      "id": "muspel_edge",
+      "name": "穆斯贝尔前线",
+      "pos": [
+        1536,
+        1280
+      ],
+      "radius": 448,
+      "role": "wreckage and decorative fire, not permanent damage zone",
+      "density": "high"
+    },
+    {
+      "id": "dead_march",
+      "name": "亡者残余行军带",
+      "pos": [
+        0,
+        1792
+      ],
+      "radius": 256,
+      "role": "weapons, drag marks; reuse dead animations",
+      "density": "high"
+    }
+  ],
+  "prop_examples": [
+    {
+      "asset": "assets/sprites/props/vigrid/bifrost_fragment.png",
+      "pos": [
+        -1756,
+        -1268
+      ],
+      "anchor": "canvas_bottom_center",
+      "block_radius": 20,
+      "role": "layout sample placement; scattering seed and final population not frozen"
+    },
+    {
+      "asset": "assets/sprites/props/vigrid/broken_weapons.png",
+      "pos": [
+        -1316,
+        -1268
+      ],
+      "anchor": "canvas_bottom_center",
+      "block_radius": 0,
+      "role": "layout sample placement; scattering seed and final population not frozen"
+    },
+    {
+      "asset": "assets/sprites/props/vigrid/giant_remains.png",
+      "pos": [
+        1756,
+        -1140
+      ],
+      "anchor": "canvas_bottom_center",
+      "block_radius": 20,
+      "role": "layout sample placement; scattering seed and final population not frozen"
+    },
+    {
+      "asset": "assets/sprites/props/vigrid/fallen_shield.png",
+      "pos": [
+        1316,
+        -1140
+      ],
+      "anchor": "canvas_bottom_center",
+      "block_radius": 0,
+      "role": "layout sample placement; scattering seed and final population not frozen"
+    },
+    {
+      "asset": "assets/sprites/props/vigrid/giant_remains.png",
+      "pos": [
+        -1756,
+        1164
+      ],
+      "anchor": "canvas_bottom_center",
+      "block_radius": 20,
+      "role": "layout sample placement; scattering seed and final population not frozen"
+    },
+    {
+      "asset": "assets/sprites/props/vigrid/broken_weapons.png",
+      "pos": [
+        -1316,
+        1164
+      ],
+      "anchor": "canvas_bottom_center",
+      "block_radius": 0,
+      "role": "layout sample placement; scattering seed and final population not frozen"
+    },
+    {
+      "asset": "assets/sprites/props/vigrid/burning_wreckage.png",
+      "pos": [
+        1316,
+        1420
+      ],
+      "anchor": "canvas_bottom_center",
+      "block_radius": 0,
+      "role": "layout sample placement; scattering seed and final population not frozen"
+    },
+    {
+      "asset": "assets/sprites/props/vigrid/fallen_shield.png",
+      "pos": [
+        1756,
+        1420
+      ],
+      "anchor": "canvas_bottom_center",
+      "block_radius": 0,
+      "role": "layout sample placement; scattering seed and final population not frozen"
+    },
+    {
+      "asset": "assets/sprites/props/vigrid/broken_weapons.png",
+      "pos": [
+        -220,
+        1932
+      ],
+      "anchor": "canvas_bottom_center",
+      "block_radius": 0,
+      "role": "layout sample placement; scattering seed and final population not frozen"
+    },
+    {
+      "asset": "assets/sprites/props/vigrid/fallen_shield.png",
+      "pos": [
+        220,
+        1932
+      ],
+      "anchor": "canvas_bottom_center",
+      "block_radius": 0,
+      "role": "layout sample placement; scattering seed and final population not frozen"
+    }
+  ],
+  "horizon_rect": [
+    -768,
+    -2480,
+    1536,
+    128
+  ],
+  "horizon_collision": false,
+  "density_note": "relative composition/spawn emphasis proposal only; no new enemy cap, timing or numerical balance frozen",
+  "encounter_fixture": {
+    "center": [
+      0,
+      0
+    ],
+    "max_radius": 1024,
+    "min_radius": 640,
+    "safe_cell_size": 64,
+    "status": "preview geometry only, final runtime center and shrink timings require C1/C3/C4",
+    "player_teleport": false,
+    "forced_walk_to_landmark": false
+  },
+  "terrain": {
+    "base": [
+      "scorched_01",
+      "scorched_02",
+      "scorched_03",
+      "scorched_04"
+    ],
+    "localized": [
+      "burnt_grass at frost_remnants",
+      "cracked_lava decorative at muspel_edge"
+    ],
+    "damage": "only runtime hazard geometry; cracked_lava image never implies standing damage"
+  }
+}

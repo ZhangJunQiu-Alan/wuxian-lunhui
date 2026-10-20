@@ -1,0 +1,16 @@
+{
+  "tool": "image_gen.imagegen",
+  "prompt": "Use case: precise-object-edit. Transparent pixel-art game animation atlas. Image1 is the edit target: a square 2x2 grid of FOUR copies of the same approved sea-serpent head; Image2 is the original identity reference. Keep this exact individual and rendering, deep teal scales, same dorsal fins, ivory segmented throat, gold-ivory cheek/brow armor, eye, skull and teeth. FOUR poses of ONE short poison-exhalation ATTACK, read top-left/top-right/bottom-left/bottom-right. NOT a new monster design. Fixed equal cells, logical128x128 each, shown 4x nearest-neighbor, square canvas, no gutters. The rear neck LEFT socket remains at (0,62), meeting logical y46..77; skull and main horns stay locked in the same location throughout. Poses: 1 fully inhaled, lower jaw opening to exhale; 2 forceful exhalation peak, lower jaw fully open and throat briefly compressed, eye intent; 3 sustained exhale, throat visibly contracts, lower jaw begins to relax; 4 jaw eases back toward the original resting opening, throat relaxes. Distinct anatomically plausible articulated lower-jaw and throat movement; keep upper skull fixed, do not squash or move entire head. All fangs, jaw tips, whiskers inside each cell with minimum2 logical pixels clear except the left neck connection. No poison/breath/cloud/flame or magic painted in: mouth only, effects are a separate game texture. No scenery, ground, shadow, text, frames, labels or watermark. Crisp clean native pixel clusters, same reference pixel density, no antialias blur, no painted smooth gradients, true transparent alpha background. Preserve original mouth direction to the right and upper-left lighting. Show meaningful attack motion, not four duplicate stills.",
+  "referenced_image_paths": [
+    "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskK1_serpent_2026-10-20/references/head_idle_edit_target_4x.png",
+    "/Users/zhangjunqiu/Desktop/无限恐怖/assets/sprites/bosses/jormungandr_head.png"
+  ],
+  "transparent_background": true,
+  "frames": 4,
+  "logical_frame": [
+    128,
+    128
+  ],
+  "fps": 16,
+  "loop": false
+}

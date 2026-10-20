@@ -1,0 +1,68 @@
+{
+  "input": "originals/hel_army_summon_v01.png",
+  "input_sha256": "789902185ec44e641d98777ae640586ea13aed20e7c57d26b00ac7f9f71cac0d",
+  "raw_size": [
+    1774,
+    887
+  ],
+  "grid": [
+    2,
+    2
+  ],
+  "cut_boxes": [
+    [
+      166,
+      152,
+      743,
+      375
+    ],
+    [
+      96,
+      79,
+      771,
+      444
+    ],
+    [
+      149,
+      64,
+      757,
+      347
+    ],
+    [
+      129,
+      0,
+      758,
+      336
+    ]
+  ],
+  "single_common_scale": 0.1362962962962963,
+  "placements": [
+    [
+      8,
+      33,
+      79,
+      30
+    ],
+    [
+      2,
+      23,
+      92,
+      50
+    ],
+    [
+      6,
+      28,
+      83,
+      39
+    ],
+    [
+      5,
+      25,
+      86,
+      46
+    ]
+  ],
+  "operations": "original alpha threshold/quantization, source frame cuts, single common nearest resize, source-derived shared palette, whole-frame placement; no character/effect drawing",
+  "candidate": "candidates/hel_army_summon_v01.png",
+  "candidate_sha256": "9caf3c05d7bb4d7d464f6324c9ff369cc043c925a71a686d11ec6ea3e05ebc43"
+}

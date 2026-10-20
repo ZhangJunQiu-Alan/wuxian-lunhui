@@ -1,0 +1,770 @@
+[
+  {
+    "id": "surtr",
+    "task": "K3",
+    "path": "assets/sprites/bosses/surtr.png",
+    "representation": "existing_file",
+    "decision": "reuse_unchanged",
+    "production_status": "already_exists_do_not_reproduce",
+    "role": "existing character identity/reference; preserve original",
+    "sha256": "f5f705f6953e95ba014521ac47ae2f05b251e43bbea72ed7f30c6b68f3ec618d",
+    "integration_status": "K_not_implemented",
+    "integration_dependencies": [
+      "level_registration",
+      "K3"
+    ],
+    "sheet_size": [
+      192,
+      192
+    ],
+    "frame_size": [
+      192,
+      192
+    ],
+    "frames": 1,
+    "fps": 0,
+    "anchor_px": [
+      96,
+      190
+    ],
+    "alpha_policy": "binary",
+    "direction": "right_unless_static_ground",
+    "scale": "1x; nearest; no fractional entity scale",
+    "integration_target": "NEW scripts/bosses/surtr.gd:_ready/_update_state; explicit 256px foot adapter",
+    "draw_layer": "actor; head/feet anchors explicitly adapted",
+    "rotation_contract": "right-facing; rotate abstract directional FX only; mirror body and sockets together",
+    "collision_contract": "texture never defines collider; controller shares geometry with visual clip",
+    "runtime_sha256_must_remain": "f5f705f6953e95ba014521ac47ae2f05b251e43bbea72ed7f30c6b68f3ec618d"
+  },
+  {
+    "id": "loki_fire_patch",
+    "task": "K3",
+    "path": "assets/sprites/effects/gods/loki_fire_patch.png",
+    "representation": "existing_file",
+    "decision": "reuse_unchanged",
+    "production_status": "already_exists_do_not_reproduce",
+    "role": "existing residual fire overlay; damage ownership belongs to Surtr hazard controller",
+    "sha256": "a5773032ad2af278c32e3079399b7c8c4205cb0cc8f90b12a1a784c81d3f4ec4",
+    "integration_status": "K_not_implemented",
+    "integration_dependencies": [
+      "level_registration",
+      "K3"
+    ],
+    "sheet_size": [
+      64,
+      64
+    ],
+    "frame_size": [
+      64,
+      64
+    ],
+    "frames": 1,
+    "fps": 0,
+    "anchor_px": [
+      32,
+      32
+    ],
+    "alpha_policy": "soft_effect",
+    "direction": "right_unless_static_ground",
+    "scale": "1x; nearest; no fractional entity scale",
+    "integration_target": "NEW scripts/bosses/surtr.gd:slash/gate/firewall/grid dispatcher",
+    "draw_layer": "under actors for ground hazards; warnings and safe outlines above visual texture",
+    "rotation_contract": "right-facing; rotate abstract directional FX only; mirror body and sockets together",
+    "collision_contract": "texture never defines collider; controller shares geometry with visual clip",
+    "runtime_sha256_must_remain": "a5773032ad2af278c32e3079399b7c8c4205cb0cc8f90b12a1a784c81d3f4ec4"
+  },
+  {
+    "id": "freyr_field",
+    "task": "K3",
+    "path": "assets/sprites/effects/gods/freyr_field.png",
+    "representation": "existing_file",
+    "decision": "reuse_unchanged",
+    "production_status": "already_exists_do_not_reproduce",
+    "role": "existing healing field texture; aid healing is separate from player Freyr skill",
+    "sha256": "84f7853e87caaac62dde6e32270316c2991a171da9e6dcc5a5057f78b9d7eeb5",
+    "integration_status": "K_not_implemented",
+    "integration_dependencies": [
+      "level_registration",
+      "K3"
+    ],
+    "sheet_size": [
+      128,
+      128
+    ],
+    "frame_size": [
+      128,
+      128
+    ],
+    "frames": 1,
+    "fps": 0,
+    "anchor_px": [
+      64,
+      64
+    ],
+    "alpha_policy": "soft_effect",
+    "direction": "right_unless_static_ground",
+    "scale": "1x; nearest; no fractional entity scale",
+    "integration_target": "NEW scripts/bosses/surtr.gd:slash/gate/firewall/grid dispatcher",
+    "draw_layer": "under actors for ground hazards; warnings and safe outlines above visual texture",
+    "rotation_contract": "right-facing; rotate abstract directional FX only; mirror body and sockets together",
+    "collision_contract": "texture never defines collider; controller shares geometry with visual clip",
+    "runtime_sha256_must_remain": "84f7853e87caaac62dde6e32270316c2991a171da9e6dcc5a5057f78b9d7eeb5"
+  },
+  {
+    "id": "surtr_idle",
+    "task": "K3",
+    "path": "assets/sprites/bosses/surtr_idle.png",
+    "representation": "planned_file",
+    "decision": "new_proposed",
+    "production_status": "not_created",
+    "specification_status": "frozen_asset_interface_v1_not_created",
+    "frame_size": [
+      320,
+      320
+    ],
+    "sheet_size": [
+      1280,
+      320
+    ],
+    "frames": 4,
+    "fps": 8,
+    "loop": true,
+    "anchor_px": [
+      160,
+      318
+    ],
+    "direction": "right",
+    "alpha_policy": "binary",
+    "palette_rgb_max": 48,
+    "transparent_margin_px": 2,
+    "role": "320px transparent action canvas; original192px body scale, complete blade and cape; see K3 v1.2",
+    "reference_paths": [
+      "assets/sprites/bosses/surtr.png"
+    ],
+    "sha256": null,
+    "integration_status": "not_implemented",
+    "integration_dependencies": [
+      "C4",
+      "K3"
+    ],
+    "approval_gate": "contract:777aad8208ed37c2cd4b4cac98124e7af851c03405f9bb0e7f0019689be89c5e",
+    "scale": "1x for bodies; texture effects clipped to authoritative geometry",
+    "reference_placement_px": [
+      32,
+      64
+    ],
+    "fallback_alignment": "old static anchor (96,190), new anchor (128,254); custom visual adapter required",
+    "integration_target": "NEW scripts/bosses/surtr.gd:_ready/_update_state; explicit 256px foot adapter",
+    "draw_layer": "actor; head/feet anchors explicitly adapted",
+    "rotation_contract": "right-facing; rotate abstract directional FX only; mirror body and sockets together",
+    "collision_contract": "texture never defines collider; controller shares geometry with visual clip",
+    "contract_addendum": "assets/source/taskK_contract_2026-10-20/K3_action_canvas_addendum_v1.2.json"
+  },
+  {
+    "id": "surtr_move",
+    "task": "K3",
+    "path": "assets/sprites/bosses/surtr_move.png",
+    "representation": "planned_file",
+    "decision": "new_proposed",
+    "production_status": "not_created",
+    "specification_status": "frozen_asset_interface_v1_not_created",
+    "frame_size": [
+      320,
+      320
+    ],
+    "sheet_size": [
+      1920,
+      320
+    ],
+    "frames": 6,
+    "fps": 8,
+    "loop": true,
+    "anchor_px": [
+      160,
+      318
+    ],
+    "direction": "right",
+    "alpha_policy": "binary",
+    "palette_rgb_max": 48,
+    "transparent_margin_px": 2,
+    "role": "320px transparent action canvas; original192px body scale, complete blade and cape; see K3 v1.2",
+    "reference_paths": [
+      "assets/sprites/bosses/surtr.png"
+    ],
+    "sha256": null,
+    "integration_status": "not_implemented",
+    "integration_dependencies": [
+      "C4",
+      "K3"
+    ],
+    "approval_gate": "contract:777aad8208ed37c2cd4b4cac98124e7af851c03405f9bb0e7f0019689be89c5e",
+    "scale": "1x for bodies; texture effects clipped to authoritative geometry",
+    "reference_placement_px": [
+      32,
+      64
+    ],
+    "fallback_alignment": "old static anchor (96,190), new anchor (128,254); custom visual adapter required",
+    "integration_target": "NEW scripts/bosses/surtr.gd:_ready/_update_state; explicit 256px foot adapter",
+    "draw_layer": "actor; head/feet anchors explicitly adapted",
+    "rotation_contract": "right-facing; rotate abstract directional FX only; mirror body and sockets together",
+    "collision_contract": "texture never defines collider; controller shares geometry with visual clip",
+    "contract_addendum": "assets/source/taskK_contract_2026-10-20/K3_action_canvas_addendum_v1.2.json"
+  },
+  {
+    "id": "surtr_windup",
+    "task": "K3",
+    "path": "assets/sprites/bosses/surtr_windup.png",
+    "representation": "planned_file",
+    "decision": "new_proposed",
+    "production_status": "not_created",
+    "specification_status": "frozen_asset_interface_v1_not_created",
+    "frame_size": [
+      320,
+      320
+    ],
+    "sheet_size": [
+      960,
+      320
+    ],
+    "frames": 3,
+    "fps": 8,
+    "loop": false,
+    "anchor_px": [
+      160,
+      318
+    ],
+    "direction": "right",
+    "alpha_policy": "binary",
+    "palette_rgb_max": 48,
+    "transparent_margin_px": 2,
+    "role": "320px transparent action canvas; original192px body scale, complete blade and cape; see K3 v1.2",
+    "reference_paths": [
+      "assets/sprites/bosses/surtr.png"
+    ],
+    "sha256": null,
+    "integration_status": "not_implemented",
+    "integration_dependencies": [
+      "C4",
+      "K3"
+    ],
+    "approval_gate": "contract:777aad8208ed37c2cd4b4cac98124e7af851c03405f9bb0e7f0019689be89c5e",
+    "scale": "1x for bodies; texture effects clipped to authoritative geometry",
+    "reference_placement_px": [
+      32,
+      64
+    ],
+    "fallback_alignment": "old static anchor (96,190), new anchor (128,254); custom visual adapter required",
+    "integration_target": "NEW scripts/bosses/surtr.gd:_ready/_update_state; explicit 256px foot adapter",
+    "draw_layer": "actor; head/feet anchors explicitly adapted",
+    "rotation_contract": "right-facing; rotate abstract directional FX only; mirror body and sockets together",
+    "collision_contract": "texture never defines collider; controller shares geometry with visual clip",
+    "contract_addendum": "assets/source/taskK_contract_2026-10-20/K3_action_canvas_addendum_v1.2.json"
+  },
+  {
+    "id": "surtr_attack",
+    "task": "K3",
+    "path": "assets/sprites/bosses/surtr_attack.png",
+    "representation": "planned_file",
+    "decision": "new_proposed",
+    "production_status": "not_created",
+    "specification_status": "frozen_asset_interface_v1_not_created",
+    "frame_size": [
+      320,
+      320
+    ],
+    "sheet_size": [
+      1280,
+      320
+    ],
+    "frames": 4,
+    "fps": 16,
+    "loop": false,
+    "anchor_px": [
+      160,
+      318
+    ],
+    "direction": "right",
+    "alpha_policy": "binary",
+    "palette_rgb_max": 48,
+    "transparent_margin_px": 2,
+    "role": "320px transparent action canvas; original192px body scale, complete blade and cape; see K3 v1.2",
+    "reference_paths": [
+      "assets/sprites/bosses/surtr.png"
+    ],
+    "sha256": null,
+    "integration_status": "not_implemented",
+    "integration_dependencies": [
+      "C4",
+      "K3"
+    ],
+    "approval_gate": "contract:777aad8208ed37c2cd4b4cac98124e7af851c03405f9bb0e7f0019689be89c5e",
+    "scale": "1x for bodies; texture effects clipped to authoritative geometry",
+    "reference_placement_px": [
+      32,
+      64
+    ],
+    "fallback_alignment": "old static anchor (96,190), new anchor (128,254); custom visual adapter required",
+    "integration_target": "NEW scripts/bosses/surtr.gd:_ready/_update_state; explicit 256px foot adapter",
+    "draw_layer": "actor; head/feet anchors explicitly adapted",
+    "rotation_contract": "right-facing; rotate abstract directional FX only; mirror body and sockets together",
+    "collision_contract": "texture never defines collider; controller shares geometry with visual clip",
+    "contract_addendum": "assets/source/taskK_contract_2026-10-20/K3_action_canvas_addendum_v1.2.json"
+  },
+  {
+    "id": "surtr_plant",
+    "task": "K3",
+    "path": "assets/sprites/bosses/surtr_plant.png",
+    "representation": "planned_file",
+    "decision": "new_proposed",
+    "production_status": "not_created",
+    "specification_status": "frozen_asset_interface_v1_not_created",
+    "frame_size": [
+      320,
+      320
+    ],
+    "sheet_size": [
+      1280,
+      320
+    ],
+    "frames": 4,
+    "fps": 16,
+    "loop": false,
+    "anchor_px": [
+      160,
+      318
+    ],
+    "direction": "right",
+    "alpha_policy": "binary",
+    "palette_rgb_max": 48,
+    "transparent_margin_px": 2,
+    "role": "320px transparent action canvas; original192px body scale, complete blade and cape; see K3 v1.2",
+    "reference_paths": [
+      "assets/sprites/bosses/surtr.png"
+    ],
+    "sha256": null,
+    "integration_status": "not_implemented",
+    "integration_dependencies": [
+      "C4",
+      "K3"
+    ],
+    "approval_gate": "contract:777aad8208ed37c2cd4b4cac98124e7af851c03405f9bb0e7f0019689be89c5e",
+    "scale": "1x for bodies; texture effects clipped to authoritative geometry",
+    "reference_placement_px": [
+      32,
+      64
+    ],
+    "fallback_alignment": "old static anchor (96,190), new anchor (128,254); custom visual adapter required",
+    "integration_target": "NEW scripts/bosses/surtr.gd:_ready/_update_state; explicit 256px foot adapter",
+    "draw_layer": "actor; head/feet anchors explicitly adapted",
+    "rotation_contract": "right-facing; rotate abstract directional FX only; mirror body and sockets together",
+    "collision_contract": "texture never defines collider; controller shares geometry with visual clip",
+    "contract_addendum": "assets/source/taskK_contract_2026-10-20/K3_action_canvas_addendum_v1.2.json"
+  },
+  {
+    "id": "surtr_summon",
+    "task": "K3",
+    "path": "assets/sprites/bosses/surtr_summon.png",
+    "representation": "planned_file",
+    "decision": "new_proposed",
+    "production_status": "not_created",
+    "specification_status": "frozen_asset_interface_v1_not_created",
+    "frame_size": [
+      320,
+      320
+    ],
+    "sheet_size": [
+      1280,
+      320
+    ],
+    "frames": 4,
+    "fps": 16,
+    "loop": false,
+    "anchor_px": [
+      160,
+      318
+    ],
+    "direction": "right",
+    "alpha_policy": "binary",
+    "palette_rgb_max": 48,
+    "transparent_margin_px": 2,
+    "role": "320px transparent action canvas; original192px body scale, complete blade and cape; see K3 v1.2",
+    "reference_paths": [
+      "assets/sprites/bosses/surtr.png"
+    ],
+    "sha256": null,
+    "integration_status": "not_implemented",
+    "integration_dependencies": [
+      "C4",
+      "K3"
+    ],
+    "approval_gate": "contract:777aad8208ed37c2cd4b4cac98124e7af851c03405f9bb0e7f0019689be89c5e",
+    "scale": "1x for bodies; texture effects clipped to authoritative geometry",
+    "reference_placement_px": [
+      32,
+      64
+    ],
+    "fallback_alignment": "old static anchor (96,190), new anchor (128,254); custom visual adapter required",
+    "integration_target": "NEW scripts/bosses/surtr.gd:_ready/_update_state; explicit 256px foot adapter",
+    "draw_layer": "actor; head/feet anchors explicitly adapted",
+    "rotation_contract": "right-facing; rotate abstract directional FX only; mirror body and sockets together",
+    "collision_contract": "texture never defines collider; controller shares geometry with visual clip",
+    "contract_addendum": "assets/source/taskK_contract_2026-10-20/K3_action_canvas_addendum_v1.2.json"
+  },
+  {
+    "id": "surtr_sword_arc",
+    "task": "K3",
+    "path": "assets/sprites/effects/bosses/surtr_sword_arc.png",
+    "representation": "planned_file",
+    "decision": "new_proposed",
+    "production_status": "not_created",
+    "specification_status": "frozen_asset_interface_v1_not_created",
+    "frame_size": [
+      128,
+      128
+    ],
+    "sheet_size": [
+      512,
+      128
+    ],
+    "frames": 4,
+    "fps": 16,
+    "loop": false,
+    "anchor_px": [
+      64,
+      64
+    ],
+    "direction": "right",
+    "alpha_policy": "soft_effect",
+    "palette_rgb_max": 48,
+    "transparent_margin_px": 2,
+    "role": "fiery cutting arc; cone clipping uses same angle/radius as damage",
+    "reference_paths": [
+      "assets/sprites/bosses/surtr.png"
+    ],
+    "sha256": null,
+    "integration_status": "not_implemented",
+    "integration_dependencies": [
+      "C4",
+      "K3"
+    ],
+    "approval_gate": "contract:777aad8208ed37c2cd4b4cac98124e7af851c03405f9bb0e7f0019689be89c5e",
+    "scale": "1x for bodies; texture effects clipped to authoritative geometry",
+    "integration_target": "NEW scripts/bosses/surtr.gd:slash/gate/firewall/grid dispatcher",
+    "draw_layer": "under actors for ground hazards; warnings and safe outlines above visual texture",
+    "rotation_contract": "right-facing; rotate abstract directional FX only; mirror body and sockets together",
+    "collision_contract": "texture never defines collider; controller shares geometry with visual clip"
+  },
+  {
+    "id": "surtr_gate",
+    "task": "K3",
+    "path": "assets/sprites/effects/bosses/surtr_gate.png",
+    "representation": "planned_file",
+    "decision": "new_proposed",
+    "production_status": "not_created",
+    "specification_status": "frozen_asset_interface_v1_not_created",
+    "frame_size": [
+      128,
+      128
+    ],
+    "sheet_size": [
+      512,
+      128
+    ],
+    "frames": 4,
+    "fps": 8,
+    "loop": true,
+    "anchor_px": [
+      64,
+      126
+    ],
+    "direction": "right",
+    "alpha_policy": "soft_effect",
+    "palette_rgb_max": 48,
+    "transparent_margin_px": 2,
+    "role": "fire gateway behind summoned giants; loop while opening is active",
+    "reference_paths": [
+      "assets/sprites/bosses/surtr.png",
+      "assets/sprites/enemies/fire_giant.png"
+    ],
+    "sha256": null,
+    "integration_status": "not_implemented",
+    "integration_dependencies": [
+      "C4",
+      "K3"
+    ],
+    "approval_gate": "contract:777aad8208ed37c2cd4b4cac98124e7af851c03405f9bb0e7f0019689be89c5e",
+    "scale": "1x for bodies; texture effects clipped to authoritative geometry",
+    "integration_target": "NEW scripts/bosses/surtr.gd:slash/gate/firewall/grid dispatcher",
+    "draw_layer": "under actors for ground hazards; warnings and safe outlines above visual texture",
+    "rotation_contract": "right-facing; rotate abstract directional FX only; mirror body and sockets together",
+    "collision_contract": "texture never defines collider; controller shares geometry with visual clip"
+  },
+  {
+    "id": "surtr_firewall_band",
+    "task": "K3",
+    "path": "assets/sprites/effects/bosses/surtr_firewall_band.png",
+    "representation": "planned_file",
+    "decision": "new_proposed",
+    "production_status": "not_created",
+    "specification_status": "frozen_asset_interface_v1_not_created",
+    "frame_size": [
+      64,
+      64
+    ],
+    "sheet_size": [
+      256,
+      64
+    ],
+    "frames": 4,
+    "fps": 8,
+    "loop": true,
+    "anchor_px": [
+      32,
+      32
+    ],
+    "direction": "right",
+    "alpha_policy": "soft_effect",
+    "palette_rgb_max": 48,
+    "transparent_margin_px": 2,
+    "role": "repeatable band; horizontal tangent, outside/up is burning, lower inside edge stays transparent",
+    "reference_paths": [
+      "assets/sprites/bosses/surtr.png",
+      "assets/sprites/ground/vigrid/cracked_lava.png"
+    ],
+    "sha256": null,
+    "integration_status": "not_implemented",
+    "integration_dependencies": [
+      "C4",
+      "K3"
+    ],
+    "approval_gate": "contract:777aad8208ed37c2cd4b4cac98124e7af851c03405f9bb0e7f0019689be89c5e",
+    "scale": "1x for bodies; texture effects clipped to authoritative geometry",
+    "integration_target": "NEW scripts/bosses/surtr.gd:slash/gate/firewall/grid dispatcher",
+    "draw_layer": "under actors for ground hazards; warnings and safe outlines above visual texture",
+    "rotation_contract": "right-facing; rotate abstract directional FX only; mirror body and sockets together",
+    "collision_contract": "texture never defines collider; controller shares geometry with visual clip"
+  },
+  {
+    "id": "surtr_final_fire",
+    "task": "K3",
+    "path": "assets/sprites/effects/bosses/surtr_final_fire.png",
+    "representation": "planned_file",
+    "decision": "new_proposed",
+    "production_status": "not_created",
+    "specification_status": "frozen_asset_interface_v1_not_created",
+    "frame_size": [
+      64,
+      64
+    ],
+    "sheet_size": [
+      256,
+      64
+    ],
+    "frames": 4,
+    "fps": 16,
+    "loop": false,
+    "anchor_px": [
+      32,
+      32
+    ],
+    "direction": "right",
+    "alpha_policy": "soft_effect",
+    "palette_rgb_max": 48,
+    "transparent_margin_px": 2,
+    "role": "one damaging grid cell burst, tiled only over actual unsafe cells; not a fullscreen opaque image",
+    "reference_paths": [
+      "assets/sprites/bosses/surtr.png"
+    ],
+    "sha256": null,
+    "integration_status": "not_implemented",
+    "integration_dependencies": [
+      "C4",
+      "K3"
+    ],
+    "approval_gate": "contract:777aad8208ed37c2cd4b4cac98124e7af851c03405f9bb0e7f0019689be89c5e",
+    "scale": "1x for bodies; texture effects clipped to authoritative geometry",
+    "integration_target": "NEW scripts/bosses/surtr.gd:slash/gate/firewall/grid dispatcher",
+    "draw_layer": "under actors for ground hazards; warnings and safe outlines above visual texture",
+    "rotation_contract": "right-facing; rotate abstract directional FX only; mirror body and sockets together",
+    "collision_contract": "texture never defines collider; controller shares geometry with visual clip"
+  },
+  {
+    "id": "surtr_safe_rune",
+    "task": "K3",
+    "path": "assets/sprites/effects/bosses/surtr_safe_rune.png",
+    "representation": "planned_file",
+    "decision": "new_proposed",
+    "production_status": "not_created",
+    "specification_status": "frozen_asset_interface_v1_not_created",
+    "frame_size": [
+      64,
+      64
+    ],
+    "sheet_size": [
+      64,
+      64
+    ],
+    "frames": 1,
+    "fps": 0,
+    "loop": false,
+    "anchor_px": [
+      32,
+      32
+    ],
+    "direction": "right",
+    "alpha_policy": "soft_effect",
+    "palette_rgb_max": 48,
+    "transparent_margin_px": 2,
+    "role": "thin nontextual geometric rune at safe cell perimeter, center clear; collision owned by same cell grid",
+    "reference_paths": [
+      "assets/sprites/effects/gods/odin_rune_circle.png"
+    ],
+    "sha256": null,
+    "integration_status": "not_implemented",
+    "integration_dependencies": [
+      "C4",
+      "K3"
+    ],
+    "approval_gate": "contract:777aad8208ed37c2cd4b4cac98124e7af851c03405f9bb0e7f0019689be89c5e",
+    "scale": "1x for bodies; texture effects clipped to authoritative geometry",
+    "integration_target": "NEW scripts/bosses/surtr.gd:slash/gate/firewall/grid dispatcher",
+    "draw_layer": "under actors for ground hazards; warnings and safe outlines above visual texture",
+    "rotation_contract": "right-facing; rotate abstract directional FX only; mirror body and sockets together",
+    "collision_contract": "texture never defines collider; controller shares geometry with visual clip"
+  },
+  {
+    "id": "freyr",
+    "task": "K3",
+    "path": "assets/sprites/allies/freyr.png",
+    "representation": "planned_file",
+    "decision": "new_proposed",
+    "production_status": "not_created",
+    "specification_status": "frozen_asset_interface_v1_not_created",
+    "frame_size": [
+      64,
+      64
+    ],
+    "sheet_size": [
+      64,
+      64
+    ],
+    "frames": 1,
+    "fps": 0,
+    "loop": false,
+    "anchor_px": [
+      32,
+      62
+    ],
+    "direction": "right",
+    "alpha_policy": "binary",
+    "palette_rgb_max": 48,
+    "transparent_margin_px": 2,
+    "role": "new world-space ally; portrait is color/identity reference only, never a world sprite; unarmed treatment gesture; no duplicate divine flying sword",
+    "reference_paths": [
+      "assets/sprites/characters/swordsman.png",
+      "assets/sprites/cards/freyr.png"
+    ],
+    "sha256": null,
+    "integration_status": "not_implemented",
+    "integration_dependencies": [
+      "C6",
+      "K3"
+    ],
+    "approval_gate": "contract:777aad8208ed37c2cd4b4cac98124e7af851c03405f9bb0e7f0019689be89c5e",
+    "scale": "1x for bodies; texture effects clipped to authoritative geometry",
+    "integration_target": "NEW scripts/allies/freyr_aid.gd: visual/phase adapter",
+    "draw_layer": "non-targetable world ally",
+    "rotation_contract": "right-facing; rotate abstract directional FX only; mirror body and sockets together",
+    "collision_contract": "texture never defines collider; controller shares geometry with visual clip"
+  },
+  {
+    "id": "freyr_idle",
+    "task": "K3",
+    "path": "assets/sprites/allies/freyr_idle.png",
+    "representation": "planned_file",
+    "decision": "new_proposed",
+    "production_status": "not_created",
+    "specification_status": "frozen_asset_interface_v1_not_created",
+    "frame_size": [
+      64,
+      64
+    ],
+    "sheet_size": [
+      256,
+      64
+    ],
+    "frames": 4,
+    "fps": 8,
+    "loop": true,
+    "anchor_px": [
+      32,
+      62
+    ],
+    "direction": "right",
+    "alpha_policy": "binary",
+    "palette_rgb_max": 48,
+    "transparent_margin_px": 2,
+    "role": "new world-space ally; portrait is color/identity reference only, never a world sprite; unarmed treatment gesture; no duplicate divine flying sword",
+    "reference_paths": [
+      "assets/sprites/characters/swordsman.png",
+      "assets/sprites/cards/freyr.png"
+    ],
+    "sha256": null,
+    "integration_status": "not_implemented",
+    "integration_dependencies": [
+      "C6",
+      "K3"
+    ],
+    "approval_gate": "contract:777aad8208ed37c2cd4b4cac98124e7af851c03405f9bb0e7f0019689be89c5e",
+    "scale": "1x for bodies; texture effects clipped to authoritative geometry",
+    "integration_target": "NEW scripts/allies/freyr_aid.gd: visual/phase adapter",
+    "draw_layer": "non-targetable world ally",
+    "rotation_contract": "right-facing; rotate abstract directional FX only; mirror body and sockets together",
+    "collision_contract": "texture never defines collider; controller shares geometry with visual clip"
+  },
+  {
+    "id": "freyr_heal",
+    "task": "K3",
+    "path": "assets/sprites/allies/freyr_heal.png",
+    "representation": "planned_file",
+    "decision": "new_proposed",
+    "production_status": "not_created",
+    "specification_status": "frozen_asset_interface_v1_not_created",
+    "frame_size": [
+      64,
+      64
+    ],
+    "sheet_size": [
+      256,
+      64
+    ],
+    "frames": 4,
+    "fps": 16,
+    "loop": false,
+    "anchor_px": [
+      32,
+      62
+    ],
+    "direction": "right",
+    "alpha_policy": "binary",
+    "palette_rgb_max": 48,
+    "transparent_margin_px": 2,
+    "role": "new world-space ally; portrait is color/identity reference only, never a world sprite; unarmed treatment gesture; no duplicate divine flying sword",
+    "reference_paths": [
+      "assets/sprites/characters/swordsman.png",
+      "assets/sprites/cards/freyr.png"
+    ],
+    "sha256": null,
+    "integration_status": "not_implemented",
+    "integration_dependencies": [
+      "C6",
+      "K3"
+    ],
+    "approval_gate": "contract:777aad8208ed37c2cd4b4cac98124e7af851c03405f9bb0e7f0019689be89c5e",
+    "scale": "1x for bodies; texture effects clipped to authoritative geometry",
+    "integration_target": "NEW scripts/allies/freyr_aid.gd: visual/phase adapter",
+    "draw_layer": "non-targetable world ally",
+    "rotation_contract": "right-facing; rotate abstract directional FX only; mirror body and sockets together",
+    "collision_contract": "texture never defines collider; controller shares geometry with visual clip"
+  }
+]

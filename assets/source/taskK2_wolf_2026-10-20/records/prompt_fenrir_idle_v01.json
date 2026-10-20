@@ -1,0 +1,21 @@
+{
+  "tool": "image_gen.imagegen",
+  "id": "fenrir_idle",
+  "action": "idle",
+  "frames": 4,
+  "fps": 8,
+  "loop": true,
+  "grid": [
+    2,
+    2
+  ],
+  "frame_size": [
+    192,
+    192
+  ],
+  "prompt": "Use case: identity-preserve. Asset: a transparent small pixel-art game animation atlas, not a concept illustration. Image1 is the ONE approved original wolf and the identity/palette/anatomy reference. Preserve the exact same hunched massive charcoal-black wolf: thick matted black-grey fur with silver-grey mane streaks, curled long tail on the left, right-facing huge scarred muzzle, warm ochre eye, many ivory fangs and dark red gums, bronze/iron broken restraint pieces on shoulders and ankles. FOUR legs only, anatomically canine joints and paws, same armor/restraint shapes in every frame. Upper-left light, same detailed pixel density, crisp small pixel clusters at logical192px per square cell. Fixed torso/shoulder position and consistent scale; paws land on a common ground line at logical y189 with 2px transparent margin. Entire tail, claws, nose, ears and fur fit inside each cell with >=2px clear border. No new armor, crowns, horns, limbs, huge aura or scenic elements. Actual alpha transparent background; no ground, cast shadow, grid, text, labels, watermark. No smooth painting, airbrush or blurred edges. Every frame is a different articulated pose of this SAME individual, no duplicate stills, no resizing per frame. SQUARE 2x2 atlas of FOUR equally sized logical192x192 cells, reading top-left, top-right, bottom-left, bottom-right, no gutters. Four subtle idle breathing poses: neutral alert stance; inhale raises chest slightly and lifts shoulder fur; peak inhale, jaw tension and ear flick; exhale lowers chest, tail tip lags. Keep grounded paws, spine and skull registered; do not morph muzzle or armor. Same resting fang display as original; only small living motion, smooth loop.",
+  "referenced_image_paths": [
+    "/Users/zhangjunqiu/Desktop/无限恐怖/assets/sprites/bosses/fenrir.png"
+  ],
+  "transparent_background": true
+}

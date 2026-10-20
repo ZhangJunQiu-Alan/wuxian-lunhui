@@ -1,0 +1,17 @@
+{
+  "tool": "image_gen.imagegen",
+  "id": "fire_giant_explosion",
+  "version": "v01",
+  "frame_size": [
+    96,
+    96
+  ],
+  "frames": 4,
+  "fps": 16,
+  "loop": false,
+  "refs": [
+    "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskK4_enemies_2026-10-20/references/fire_giant_8x.png"
+  ],
+  "prompt": "Use case: stylized-concept, game-effect animation. Reference ONLY lava-fire material/palette. Four phases2x2squareatlas, eachlogical96x96, of FIRE GIANT DEATH EXPLOSION effect only, NO giant body/corpse/skull/limbs.0smallwhitehotembercrackatcenter,1rapidradial burst withorange tongues and3to5smallcharcoalsparks,2largestopen-silhouettefireburst,3fewdarkredembersfading. Clear16fps singleonset/peak/decay, transparentgaps, noopaque filleddisk, no groundtile orpersistentfirepatch. Centeranchored48,48; allvisiblepixels inside circularradius44with>=4pxmargin, fewcharcoalshardsreadable. Crisp fineprojectpixelclusters<=48RGB orange-red-ivorybrown, no fixedcastshadow, restrainedsoftalpha onlyfireedges. Truezero-alpha outsideeffect, no scenery/text/labels/grid/border/watermark.",
+  "transparent_background": true
+}

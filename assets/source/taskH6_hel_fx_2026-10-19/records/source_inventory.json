@@ -1,0 +1,56 @@
+{
+  "task": "H6",
+  "tool_calls": 7,
+  "references": [
+    {
+      "actual_input_path": "assets/sprites/effects/ground_crack.png",
+      "archived_path": "references/ground_crack.png",
+      "sha256": "c7178cac3ba5662cfa99d2bef22d62249762a564143b504c66e8d59bd71ffbf8"
+    },
+    {
+      "actual_input_path": "assets/sprites/bosses/hel.png",
+      "archived_path": "references/hel.png",
+      "sha256": "0c1e0a49f57e6a80535bc2c382e4f68cd882810f18dc35f79fd6befa2c558aa9"
+    },
+    {
+      "actual_input_path": "assets/sprites/effects/frost_shockwave.png",
+      "archived_path": "references/frost_shockwave.png",
+      "sha256": "a0aa09571dec4959ee2a9f66dc6a6a038a2017fad3dea1140680bc837495c625"
+    },
+    {
+      "actual_input_path": "assets/sprites/effects/poison_pool.png",
+      "archived_path": "references/poison_pool.png",
+      "sha256": "0284bb2e78321311e43248046a820d43920193764e68f64d662d25cd1516374f"
+    }
+  ],
+  "originals": [
+    {
+      "file": "originals/hel_army_summon_v01.png",
+      "sha256": "789902185ec44e641d98777ae640586ea13aed20e7c57d26b00ac7f9f71cac0d"
+    },
+    {
+      "file": "originals/hel_board_ship_v01.png",
+      "sha256": "f0e651585851ce35f92528852d5e34471c749d55cc84e9efef26a5ae074cb934"
+    },
+    {
+      "file": "originals/hel_death_ground_v01.png",
+      "sha256": "740a5e840831faa8de44581f9d9381c07260b7598ea5b5d902a9dbcca251e036"
+    },
+    {
+      "file": "originals/hel_domain_edge_v01.png",
+      "sha256": "860469d484cf58fda6cc177f6e4b23efec9d88993e0795c4703543cb5f8b4bbe"
+    },
+    {
+      "file": "originals/hel_heal_v01.png",
+      "sha256": "90549855ae5706ca5988ef5038d850a233d545025abecdfb127f11b99cb20b1c"
+    },
+    {
+      "file": "originals/hel_life_ground_v01.png",
+      "sha256": "162551cf1cea2b63dd24fa26c0e5301558f3ba5ea81e6d4400b1ef2031dbd292"
+    },
+    {
+      "file": "originals/hel_shift_v01.png",
+      "sha256": "fbba6210370f4103c204adaf1362dd4eba46d63e13d1c814051690348bb8e36f"
+    }
+  ]
+}

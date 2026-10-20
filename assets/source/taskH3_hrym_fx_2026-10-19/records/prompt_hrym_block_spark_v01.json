@@ -1,0 +1,8 @@
+{
+  "id": "hrym_block_spark",
+  "version": "v01",
+  "prompt": "Use case: stylized-concept. Production pixel-art VFX for an existing dark northern game. Input is project-owned style/palette reference only; no body from reference. Small ice shield block spark, abstract short crisp icy-blue and white crystal starburst. Four ONESHOT phases: tiny glint, compact angular contact peak, few separated shards, tiny dim disappearing flakes. No shield body, full ring, smoke carpet or creature. Rotationally neutral, no ground shadow. EXACTLY FOUR DISTINCT animation frames in2columns and2rows, equal cells aspect 32:32, native 32x32 each. Same camera scale/registration/pivot across frames. Crisp detailed pixel clusters, icy grey-blue limited32RGB palette, 8 alpha steps for light/mist. Fully transparent background, no backing rectangle, text, labels, frame lines, watermark, scene. Full effect within cell with transparent padding, except matching repeated horizontal ports where requested. Do not redraw an intact ice pillar or creature.",
+  "reference_paths": [
+    "assets/sprites/effects/ice_shard.png"
+  ]
+}

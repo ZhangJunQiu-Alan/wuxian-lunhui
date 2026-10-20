@@ -1,0 +1,1249 @@
+[
+  {
+    "path": "scripts/game.gd",
+    "symbols": [
+      {
+        "line": 61,
+        "text": "func _ready() -> void:"
+      },
+      {
+        "line": 125,
+        "text": "func _process(delta: float) -> void:"
+      },
+      {
+        "line": 149,
+        "text": "func _physics_process(_delta: float) -> void:"
+      },
+      {
+        "line": 161,
+        "text": "static func clamp_to_map(pos: Vector2, margin: float = 0.0) -> Vector2:"
+      },
+      {
+        "line": 168,
+        "text": "func _point_around(center: Vector2, distance: float) -> Vector2:"
+      },
+      {
+        "line": 178,
+        "text": "func _current_wave() -> Dictionary:"
+      },
+      {
+        "line": 187,
+        "text": "func _pick_weighted(weights: Dictionary) -> String:"
+      },
+      {
+        "line": 199,
+        "text": "func _random_spawn_position() -> Vector2:"
+      },
+      {
+        "line": 203,
+        "text": "func _update_elites(wave: Dictionary) -> void:"
+      },
+      {
+        "line": 215,
+        "text": "func _update_events() -> void:"
+      },
+      {
+        "line": 227,
+        "text": "func spawn_enemy(type_id: String, pos: Vector2, elite: bool = false, required: bool = false) -> Enemy:"
+      },
+      {
+        "line": 240,
+        "text": "func _on_enemy_killed(enemy: Enemy) -> void:"
+      },
+      {
+        "line": 251,
+        "text": "func enemy_hp_scale() -> float:"
+      },
+      {
+        "line": 256,
+        "text": "func enemy_damage_scale() -> float:"
+      },
+      {
+        "line": 261,
+        "text": "func despawn_enemy(enemy: Enemy) -> void:"
+      },
+      {
+        "line": 271,
+        "text": "func _update_bosses() -> void:"
+      },
+      {
+        "line": 300,
+        "text": "func _update_quests() -> void:"
+      },
+      {
+        "line": 335,
+        "text": "func _update_hidden_quests() -> void:"
+      },
+      {
+        "line": 350,
+        "text": "func _on_hidden_quest_accepted(secret: SideQuest) -> void:"
+      },
+      {
+        "line": 358,
+        "text": "func _landmark_with(key: String, id: String) -> Dictionary:"
+      },
+      {
+        "line": 366,
+        "text": "func landmark_by_id(id: String) -> Dictionary:"
+      },
+      {
+        "line": 370,
+        "text": "func _on_quest_finished(finished_quest: SideQuest, success: bool) -> void:"
+      },
+      {
+        "line": 387,
+        "text": "func _note(category: String, id: String, count: int) -> void:"
+      },
+      {
+        "line": 391,
+        "text": "func add_reward_points(amount: int) -> void:"
+      },
+      {
+        "line": 395,
+        "text": "func add_story_points(amount: int) -> void:"
+      },
+      {
+        "line": 400,
+        "text": "func _finish_run(cleared: bool) -> Dictionary:"
+      },
+      {
+        "line": 413,
+        "text": "func _on_boss_defeated(defeated_boss: Boss) -> void:"
+      },
+      {
+        "line": 444,
+        "text": "func _on_player_leveled_up(level: int) -> void:"
+      },
+      {
+        "line": 453,
+        "text": "func queue_reward(title: String) -> void:"
+      },
+      {
+        "line": 458,
+        "text": "func _queue_reward(entry: Dictionary) -> void:"
+      },
+      {
+        "line": 467,
+        "text": "func _open_reward() -> void:"
+      },
+      {
+        "line": 479,
+        "text": "func _offers(entry: Dictionary) -> Array[Dictionary]:"
+      },
+      {
+        "line": 492,
+        "text": "func _on_upgrade_chosen(offer: Dictionary) -> void:"
+      },
+      {
+        "line": 507,
+        "text": "func _check_faith() -> void:"
+      },
+      {
+        "line": 511,
+        "text": "\t\tvar faith: int = player.faith[god]"
+      },
+      {
+        "line": 518,
+        "text": "\tvar gods: Array = player.gods.keys()"
+      },
+      {
+        "line": 529,
+        "text": "func _is_pending(kind: String, key: String) -> bool:"
+      },
+      {
+        "line": 534,
+        "text": "func add_faith(god: String, amount: int) -> void:"
+      },
+      {
+        "line": 546,
+        "text": "func _on_reroll_requested() -> void:"
+      },
+      {
+        "line": 553,
+        "text": "func is_running() -> bool:"
+      },
+      {
+        "line": 557,
+        "text": "func _begin_ending() -> void:"
+      },
+      {
+        "line": 565,
+        "text": "\t\tFxLayer.instance.process_mode = Node.PROCESS_MODE_ALWAYS"
+      },
+      {
+        "line": 568,
+        "text": "func _on_level_cleared() -> void:"
+      },
+      {
+        "line": 577,
+        "text": "func _on_abandon_requested() -> void:"
+      },
+      {
+        "line": 585,
+        "text": "func _on_player_died() -> void:"
+      },
+      {
+        "line": 602,
+        "text": "func _draw() -> void:"
+      }
+    ]
+  },
+  {
+    "path": "scripts/world/map_layer.gd",
+    "symbols": [
+      {
+        "line": 46,
+        "text": "var _sources := {}      # 地块名 -> TileSet 里的 source id"
+      },
+      {
+        "line": 54,
+        "text": "func _ready() -> void:"
+      },
+      {
+        "line": 60,
+        "text": "\tfor file in ResourceLoader.list_directory(ground_dir):"
+      },
+      {
+        "line": 62,
+        "text": "\t\t\t_add_source(file.get_basename(), load(ground_dir + file))"
+      },
+      {
+        "line": 64,
+        "text": "\t\tif not _sources.has(tile) and placeholders[tile][1] == Vector2i(TILE, TILE):"
+      },
+      {
+        "line": 65,
+        "text": "\t\t\t_add_source(tile, _texture(ground_dir, tile))"
+      },
+      {
+        "line": 76,
+        "text": "\t\t_ground.set_cell(cell, _sources[_cells[cell]], Vector2i.ZERO)"
+      },
+      {
+        "line": 82,
+        "text": "\t\t\t\t\tlayer.set_cell(cell, _sources[tile], Vector2i.ZERO)"
+      },
+      {
+        "line": 90,
+        "text": "func _add_source(tile: String, texture: Texture2D) -> void:"
+      },
+      {
+        "line": 91,
+        "text": "\tvar source := TileSetAtlasSource.new()"
+      },
+      {
+        "line": 92,
+        "text": "\tsource.texture = texture"
+      },
+      {
+        "line": 93,
+        "text": "\tsource.texture_region_size = Vector2i(TILE, TILE)"
+      },
+      {
+        "line": 94,
+        "text": "\tsource.create_tile(Vector2i.ZERO)"
+      },
+      {
+        "line": 95,
+        "text": "\t_sources[tile] = _tiles.add_source(source)"
+      },
+      {
+        "line": 99,
+        "text": "func _make_edges(tile: String, mask: String) -> void:"
+      },
+      {
+        "line": 100,
+        "text": "\tvar fill: Image = _tiles.get_source(_sources[tile]).texture.get_image()"
+      },
+      {
+        "line": 104,
+        "text": "\t\t\tvar shape: Image = _tiles.get_source(_sources[\"%s_%s\" % [mask, part]]).texture.get_image()"
+      },
+      {
+        "line": 111,
+        "text": "\t\t\t_add_source(\"%s_edge_%s\" % [tile, part], ImageTexture.create_from_image(image))"
+      },
+      {
+        "line": 115,
+        "text": "func _tile_layer(alpha: float) -> TileMapLayer:"
+      },
+      {
+        "line": 124,
+        "text": "func _paint_edges(tile: String) -> void:"
+      },
+      {
+        "line": 141,
+        "text": "\t\t\t\tlayers[0].set_cell(at, _sources[fills[rng.randi() % fills.size()]], Vector2i.ZERO)"
+      },
+      {
+        "line": 145,
+        "text": "\t\t\t\tlayers[i].set_cell(at, _sources[\"%s_%s\" % [edges[tile], parts[i]]], Vector2i.ZERO)"
+      },
+      {
+        "line": 148,
+        "text": "func _exit_tree() -> void:"
+      },
+      {
+        "line": 154,
+        "text": "func _layout() -> void:"
+      },
+      {
+        "line": 159,
+        "text": "func waypoint(_from: Vector2, to: Vector2) -> Vector2:"
+      },
+      {
+        "line": 164,
+        "text": "func _texture(dir: String, file: String) -> Texture2D:"
+      },
+      {
+        "line": 166,
+        "text": "\tif ResourceLoader.exists(path):"
+      },
+      {
+        "line": 188,
+        "text": "func all_cells() -> Array[Vector2i]:"
+      },
+      {
+        "line": 198,
+        "text": "func cell_at(pos: Vector2) -> Vector2i:"
+      },
+      {
+        "line": 202,
+        "text": "func set_ground(cell: Vector2i, tile: String) -> void:"
+      },
+      {
+        "line": 213,
+        "text": "func fill_disc(center: Vector2, r: float, tile: String, ragged: float = 0.2) -> void:"
+      },
+      {
+        "line": 227,
+        "text": "func paint_path(from: Vector2, to: Vector2, bend: float, width: float, tile: String) -> PackedVector2Array:"
+      },
+      {
+        "line": 248,
+        "text": "func border(north: String, east: String, south: String, west: String) -> void:"
+      },
+      {
+        "line": 265,
+        "text": "func _border_sprite(file: String, top_left: Vector2) -> Sprite2D:"
+      },
+      {
+        "line": 275,
+        "text": "func prop(file: String, pos: Vector2, block: float = 0.0, flip := false) -> Sprite2D:"
+      },
+      {
+        "line": 288,
+        "text": "func wide_prop(file: String, pos: Vector2, width: float, block: float, flip := false) -> Sprite2D:"
+      },
+      {
+        "line": 297,
+        "text": "func decal(file: String, pos: Vector2, flip := false) -> Sprite2D:"
+      },
+      {
+        "line": 306,
+        "text": "func add_obstacle(center: Vector2, r: float) -> void:"
+      },
+      {
+        "line": 314,
+        "text": "func is_free(pos: Vector2, r: float) -> bool:"
+      },
+      {
+        "line": 321,
+        "text": "static func push_out(pos: Vector2, margin: float) -> Vector2:"
+      }
+    ]
+  },
+  {
+    "path": "scripts/data/level_db.gd",
+    "symbols": [
+      {
+        "line": 19,
+        "text": "const ORDER := [\"midgard\", \"helheim\", \"vigrid\"]"
+      },
+      {
+        "line": 146,
+        "text": "const ALL := {\"midgard\": NORSE_1, \"helheim\": NORSE_2}"
+      },
+      {
+        "line": 149,
+        "text": "static func is_built(id: String) -> bool:"
+      },
+      {
+        "line": 153,
+        "text": "static func is_unlocked(id: String) -> bool:"
+      },
+      {
+        "line": 159,
+        "text": "static func next_of(id: String) -> String:"
+      },
+      {
+        "line": 165,
+        "text": "static func selected() -> String:"
+      }
+    ]
+  },
+  {
+    "path": "scripts/data/boss_db.gd",
+    "symbols": [
+      {
+        "line": 6,
+        "text": "static func create(id: String, hp_scale: float) -> Boss:"
+      }
+    ]
+  },
+  {
+    "path": "scripts/data/enemy_db.gd",
+    "symbols": [
+      {
+        "line": 18,
+        "text": "const ALL := {"
+      }
+    ]
+  },
+  {
+    "path": "scripts/bosses/boss.gd",
+    "symbols": [
+      {
+        "line": 14,
+        "text": "const BOSS_ACTIONS := {\"idle\": true, \"move\": true, \"windup\": false, \"attack\": false, \"howl\": false, \"shield\": false, \"stomp\": false,"
+      },
+      {
+        "line": 34,
+        "text": "func setup_boss(id: String, boss_name: String, boss_title: String, base_hp: float, hp_scale: float,"
+      },
+      {
+        "line": 51,
+        "text": "func init_stats(_hp_scale: float) -> void:"
+      },
+      {
+        "line": 55,
+        "text": "func _ready() -> void:"
+      },
+      {
+        "line": 61,
+        "text": "func change_state(new_state: String) -> void:"
+      },
+      {
+        "line": 71,
+        "text": "func _physics_process(delta: float) -> void:"
+      },
+      {
+        "line": 96,
+        "text": "func control_mult() -> float:"
+      },
+      {
+        "line": 100,
+        "text": "func charm(_duration: float) -> void:"
+      },
+      {
+        "line": 105,
+        "text": "func set_untouchable(value: bool) -> void:"
+      },
+      {
+        "line": 117,
+        "text": "func state_action() -> StringName:"
+      },
+      {
+        "line": 130,
+        "text": "func play_once(action: StringName) -> void:"
+      },
+      {
+        "line": 136,
+        "text": "func _update_action() -> void:"
+      },
+      {
+        "line": 150,
+        "text": "func _on_action_finished() -> void:"
+      },
+      {
+        "line": 156,
+        "text": "func _update_state(_delta: float) -> void:"
+      },
+      {
+        "line": 161,
+        "text": "func _draw_telegraph() -> void:"
+      },
+      {
+        "line": 167,
+        "text": "static func draw_line_telegraph(canvas: CanvasItem, dir: Vector2, length: float, half_width: float, t: float, tint: Color = Color(1.0, 0.15, 0.1)) -> void:"
+      },
+      {
+        "line": 175,
+        "text": "static func draw_circle_telegraph(canvas: CanvasItem, center: Vector2, r: float, t: float, tint: Color = Color(1.0, 0.15, 0.1)) -> void:"
+      },
+      {
+        "line": 181,
+        "text": "func chase(delta: float, speed_mult: float = 1.0) -> void:"
+      },
+      {
+        "line": 188,
+        "text": "func take_damage(amount: float, _knockback: Vector2 = Vector2.ZERO, crit: bool = false) -> void:"
+      },
+      {
+        "line": 196,
+        "text": "func _die() -> void:"
+      },
+      {
+        "line": 210,
+        "text": "func _draw() -> void:"
+      }
+    ]
+  },
+  {
+    "path": "scripts/entities/enemy.gd",
+    "symbols": [
+      {
+        "line": 91,
+        "text": "static func rebuild_grid(tree: SceneTree) -> void:"
+      },
+      {
+        "line": 102,
+        "text": "func update_spatial_index() -> void:"
+      },
+      {
+        "line": 119,
+        "text": "func _remove_from_grid() -> void:"
+      },
+      {
+        "line": 130,
+        "text": "func _notification(what: int) -> void:"
+      },
+      {
+        "line": 135,
+        "text": "func _exit_tree() -> void:"
+      },
+      {
+        "line": 139,
+        "text": "static func _candidates(rect: Rect2) -> Array[Enemy]:"
+      },
+      {
+        "line": 154,
+        "text": "static func query_radius(center: Vector2, reach: float) -> Array[Enemy]:"
+      },
+      {
+        "line": 163,
+        "text": "static func query_line(a: Vector2, b: Vector2, width: float) -> Array[Enemy]:"
+      },
+      {
+        "line": 176,
+        "text": "static func damage_in_radius(_tree: SceneTree, center: Vector2, radius: float, amount: float, knockback: float = 0.0) -> Array[Enemy]:"
+      },
+      {
+        "line": 188,
+        "text": "func area_mult() -> float:"
+      },
+      {
+        "line": 194,
+        "text": "func add_status(id: String, duration: float) -> void:"
+      },
+      {
+        "line": 198,
+        "text": "func has_status(id: String) -> bool:"
+      },
+      {
+        "line": 202,
+        "text": "func stack_count(id: String) -> int:"
+      },
+      {
+        "line": 207,
+        "text": "func add_stacks(id: String, n: int, duration: float = 4.0) -> int:"
+      },
+      {
+        "line": 213,
+        "text": "func clear_stacks(id: String) -> void:"
+      },
+      {
+        "line": 219,
+        "text": "func burn(dps: float, duration: float) -> void:"
+      },
+      {
+        "line": 225,
+        "text": "func stun(duration: float) -> void:"
+      },
+      {
+        "line": 230,
+        "text": "func control_mult() -> float:"
+      },
+      {
+        "line": 234,
+        "text": "func is_frozen() -> bool:"
+      },
+      {
+        "line": 239,
+        "text": "func add_frost(n: int) -> void:"
+      },
+      {
+        "line": 247,
+        "text": "func charm(duration: float) -> void:"
+      },
+      {
+        "line": 252,
+        "text": "func take_dot(amount: float) -> void:"
+      },
+      {
+        "line": 259,
+        "text": "func move_mult() -> float:"
+      },
+      {
+        "line": 263,
+        "text": "func _tick_statuses(delta: float) -> void:"
+      },
+      {
+        "line": 281,
+        "text": "func setup(id: String, hp_scale: float, elite: bool = false, damage_scale: float = 1.0) -> void:"
+      },
+      {
+        "line": 321,
+        "text": "func _ready() -> void:"
+      },
+      {
+        "line": 326,
+        "text": "\tcollision_layer = 2  # 第 2 层 = 敌人，子弹只检测这一层"
+      },
+      {
+        "line": 327,
+        "text": "\tcollision_mask = 0"
+      },
+      {
+        "line": 360,
+        "text": "func _physics_process(delta: float) -> void:"
+      },
+      {
+        "line": 415,
+        "text": "func _charmed_move(delta: float) -> void:"
+      },
+      {
+        "line": 442,
+        "text": "func _update_attack(dir: Vector2, dist: float, delta: float) -> void:"
+      },
+      {
+        "line": 458,
+        "text": "func _on_action_finished() -> void:"
+      },
+      {
+        "line": 464,
+        "text": "func _play_attack_frames() -> void:"
+      },
+      {
+        "line": 470,
+        "text": "func _attack_offset() -> Vector2:"
+      },
+      {
+        "line": 488,
+        "text": "func _strike() -> void:"
+      },
+      {
+        "line": 506,
+        "text": "func _ranged_move(dir: Vector2, dist: float, delta: float) -> Vector2:"
+      },
+      {
+        "line": 519,
+        "text": "\t\t\t\tshot.texture = load(\"res://assets/sprites/effects/%s.png\" % projectile) if ResourceLoader.exists(\"res://assets/sprites/effects/%s.png\" % projectile) else null"
+      },
+      {
+        "line": 533,
+        "text": "func _drain_move(dir: Vector2, dist: float, delta: float) -> Vector2:"
+      },
+      {
+        "line": 549,
+        "text": "func _separation() -> Vector2:"
+      },
+      {
+        "line": 567,
+        "text": "func freeze(duration: float) -> void:"
+      },
+      {
+        "line": 573,
+        "text": "func apply_slow(amount: float, duration: float) -> void:"
+      },
+      {
+        "line": 582,
+        "text": "func take_damage(amount: float, knockback: Vector2 = Vector2.ZERO, crit: bool = false) -> void:"
+      },
+      {
+        "line": 609,
+        "text": "func _die() -> void:"
+      },
+      {
+        "line": 641,
+        "text": "func _draw() -> void:"
+      },
+      {
+        "line": 684,
+        "text": "func status_tint() -> Color:"
+      },
+      {
+        "line": 698,
+        "text": "func draw_status() -> void:"
+      }
+    ]
+  },
+  {
+    "path": "scripts/entities/sprite_visual.gd",
+    "symbols": [
+      {
+        "line": 21,
+        "text": "static func create_first(base_paths: Array[String], height: float) -> Node2D:"
+      },
+      {
+        "line": 30,
+        "text": "static func create(base_path: String, height: float) -> Node2D:"
+      },
+      {
+        "line": 33,
+        "text": "\t\tif not ResourceLoader.exists(path):"
+      },
+      {
+        "line": 68,
+        "text": "static func _pivot_at_feet(node: Node2D, tex_height: float) -> void:"
+      },
+      {
+        "line": 78,
+        "text": "static func create_actions(base_path: String, height: float, actions: Dictionary) -> AnimatedSprite2D:"
+      },
+      {
+        "line": 84,
+        "text": "\t\tif not ResourceLoader.exists(path):"
+      },
+      {
+        "line": 92,
+        "text": "\t\tif not ResourceLoader.exists(base_path + \".png\"):"
+      },
+      {
+        "line": 106,
+        "text": "static func _add_strip(frames: SpriteFrames, anim_name: StringName, strip: Texture2D, loop: bool) -> void:"
+      },
+      {
+        "line": 122,
+        "text": "static func animate(sprite: Node2D, t: float, amount: float, gait: String = \"walk\", lean_x: float = 0.0, offset: Vector2 = Vector2.ZERO) -> void:"
+      },
+      {
+        "line": 163,
+        "text": "static func windup_tremble(sprite: Node2D, t: float, has_pose: bool = false) -> void:"
+      },
+      {
+        "line": 170,
+        "text": "static func draw_shadow(canvas: CanvasItem, radius: float, tint: Color = Color(0, 0, 0, 0.35)) -> void:"
+      },
+      {
+        "line": 177,
+        "text": "static func draw_frame(canvas: CanvasItem, strip: Texture2D, frames: int, frame: int, pos: Vector2, anchor: Vector2, rot := 0.0, scale := Vector2.ONE, tint := Color.WHITE) -> void:"
+      }
+    ]
+  },
+  {
+    "path": "scripts/entities/player.gd",
+    "symbols": [
+      {
+        "line": 16,
+        "text": "const RADIUS := 14.0"
+      },
+      {
+        "line": 66,
+        "text": "var faith := {}           # 神明 id -> 信仰值"
+      },
+      {
+        "line": 67,
+        "text": "var gods := {}            # 神明 id -> 神术节点（GodPower）"
+      },
+      {
+        "line": 95,
+        "text": "func _ready() -> void:"
+      },
+      {
+        "line": 142,
+        "text": "func _physics_process(delta: float) -> void:"
+      },
+      {
+        "line": 172,
+        "text": "func _tick_timers(delta: float) -> void:"
+      },
+      {
+        "line": 185,
+        "text": "func play_attack(dir: Vector2, lunge: float = 7.0, interval: float = 0.0) -> void:"
+      },
+      {
+        "line": 198,
+        "text": "func _has_action(action: StringName) -> bool:"
+      },
+      {
+        "line": 203,
+        "text": "func _update_attack_pose() -> void:"
+      },
+      {
+        "line": 213,
+        "text": "func _update_action(dir: Vector2) -> void:"
+      },
+      {
+        "line": 235,
+        "text": "func death_duration() -> float:"
+      },
+      {
+        "line": 243,
+        "text": "func play_death() -> void:"
+      },
+      {
+        "line": 246,
+        "text": "\t_actions.process_mode = Node.PROCESS_MODE_ALWAYS"
+      },
+      {
+        "line": 251,
+        "text": "func _unhandled_input(event: InputEvent) -> void:"
+      },
+      {
+        "line": 263,
+        "text": "func try_dash() -> void:"
+      },
+      {
+        "line": 279,
+        "text": "func _update_dash(delta: float) -> void:"
+      },
+      {
+        "line": 304,
+        "text": "func _spawn_ghost(alpha: float) -> void:"
+      },
+      {
+        "line": 320,
+        "text": "func add_ult_energy(amount: float) -> void:"
+      },
+      {
+        "line": 327,
+        "text": "func try_ultimate() -> void:"
+      },
+      {
+        "line": 346,
+        "text": "func shake(strength: float, duration: float) -> void:"
+      },
+      {
+        "line": 354,
+        "text": "func _update_shake(delta: float) -> void:"
+      },
+      {
+        "line": 365,
+        "text": "func take_damage(amount: float) -> void:"
+      },
+      {
+        "line": 388,
+        "text": "func add_god(god_id: String) -> void:"
+      },
+      {
+        "line": 398,
+        "text": "func weapon_cooldown() -> float:"
+      },
+      {
+        "line": 403,
+        "text": "func weapon_damage_bonus(bonus: float) -> void:"
+      },
+      {
+        "line": 410,
+        "text": "func take_dot(amount: float) -> void:"
+      },
+      {
+        "line": 422,
+        "text": "func revive() -> void:"
+      },
+      {
+        "line": 426,
+        "text": "\t\t_actions.process_mode = Node.PROCESS_MODE_INHERIT"
+      },
+      {
+        "line": 438,
+        "text": "func fear(from: Vector2, duration: float) -> void:"
+      },
+      {
+        "line": 445,
+        "text": "func heal(amount: float) -> void:"
+      },
+      {
+        "line": 450,
+        "text": "func add_xp(amount: float) -> void:"
+      },
+      {
+        "line": 464,
+        "text": "func _draw() -> void:"
+      }
+    ]
+  },
+  {
+    "path": "scripts/core/audio.gd",
+    "symbols": [
+      {
+        "line": 27,
+        "text": "static func _shared() -> Audio:"
+      },
+      {
+        "line": 34,
+        "text": "func _init() -> void:"
+      },
+      {
+        "line": 35,
+        "text": "\tprocess_mode = Node.PROCESS_MODE_ALWAYS  # 暂停时界面音效和音乐照常播放"
+      },
+      {
+        "line": 50,
+        "text": "func _on_node_added(node: Node) -> void:"
+      },
+      {
+        "line": 59,
+        "text": "static func sfx(sound: String, volume_db: float = 0.0, pitch: float = 0.06) -> void:"
+      },
+      {
+        "line": 64,
+        "text": "static func sfx_or(sound: String, fallback: String, volume_db: float = 0.0, pitch: float = 0.06) -> void:"
+      },
+      {
+        "line": 69,
+        "text": "static func music(track: String) -> void:"
+      },
+      {
+        "line": 73,
+        "text": "func _play_sfx(sound: String, volume_db: float, pitch: float) -> void:"
+      },
+      {
+        "line": 100,
+        "text": "func _play_music(track: String) -> void:"
+      },
+      {
+        "line": 123,
+        "text": "func _fade(player: AudioStreamPlayer, to_db: float, stop_after: bool) -> void:"
+      },
+      {
+        "line": 138,
+        "text": "func _find(sound: String, dir: String, extensions: Array) -> Array:"
+      },
+      {
+        "line": 144,
+        "text": "\t\t\tif ResourceLoader.exists(path):"
+      }
+    ]
+  },
+  {
+    "path": "scripts/core/save_data.gd",
+    "symbols": [
+      {
+        "line": 24,
+        "text": "static func _empty_codex() -> Dictionary:"
+      },
+      {
+        "line": 28,
+        "text": "static func _default_stats() -> Dictionary:"
+      },
+      {
+        "line": 34,
+        "text": "func _init() -> void:"
+      },
+      {
+        "line": 41,
+        "text": "func load_game() -> void:"
+      },
+      {
+        "line": 75,
+        "text": "func save_game() -> void:"
+      },
+      {
+        "line": 89,
+        "text": "func meta_level(id: String) -> int:"
+      },
+      {
+        "line": 94,
+        "text": "func buy_meta(id: String) -> bool:"
+      },
+      {
+        "line": 107,
+        "text": "func select_character(id: String) -> void:"
+      },
+      {
+        "line": 112,
+        "text": "func select_level(id: String) -> void:"
+      },
+      {
+        "line": 118,
+        "text": "func unlock_character(id: String, cost: int) -> bool:"
+      },
+      {
+        "line": 128,
+        "text": "func codex_count(category: String, id: String) -> int:"
+      },
+      {
+        "line": 133,
+        "text": "func record_codex(found: Dictionary) -> void:"
+      },
+      {
+        "line": 140,
+        "text": "func record_run(level_id: String, points: int, story: int, cleared: bool, elapsed: float, kills: int, quests_done: int) -> void:"
+      },
+      {
+        "line": 159,
+        "text": "func reset() -> void:"
+      }
+    ]
+  },
+  {
+    "path": "scripts/gods/god_power.gd",
+    "symbols": [
+      {
+        "line": 17,
+        "text": "var awakened := false"
+      },
+      {
+        "line": 24,
+        "text": "static func create(id: String) -> GodPower:"
+      },
+      {
+        "line": 31,
+        "text": "static func has_fusion(id: String) -> bool:"
+      },
+      {
+        "line": 36,
+        "text": "static func art(file: String) -> Texture2D:"
+      },
+      {
+        "line": 39,
+        "text": "\t\t_art_cache[file] = load(path) if ResourceLoader.exists(path) else null"
+      },
+      {
+        "line": 43,
+        "text": "func _ready() -> void:"
+      },
+      {
+        "line": 48,
+        "text": "func _process(delta: float) -> void:"
+      },
+      {
+        "line": 56,
+        "text": "func tick(_delta: float) -> void:"
+      },
+      {
+        "line": 60,
+        "text": "func stat(id: String) -> float:"
+      },
+      {
+        "line": 65,
+        "text": "func upgrade(id: String, v: float, _rarity: int) -> void:"
+      },
+      {
+        "line": 69,
+        "text": "func set_path(id: String) -> void:"
+      },
+      {
+        "line": 75,
+        "text": "func awaken() -> void:"
+      },
+      {
+        "line": 81,
+        "text": "func on_enemy_died(_enemy: Enemy) -> void:"
+      },
+      {
+        "line": 85,
+        "text": "func on_player_hurt() -> void:"
+      },
+      {
+        "line": 89,
+        "text": "func on_dash() -> void:"
+      },
+      {
+        "line": 94,
+        "text": "func cooldown(base: float) -> float:"
+      },
+      {
+        "line": 99,
+        "text": "func damage(base: float) -> float:"
+      },
+      {
+        "line": 103,
+        "text": "func game() -> Node:"
+      },
+      {
+        "line": 107,
+        "text": "func enemies() -> Array[Node]:"
+      },
+      {
+        "line": 111,
+        "text": "func nearest_enemy(from: Vector2, max_dist: float, exclude: Array = []) -> Enemy:"
+      },
+      {
+        "line": 124,
+        "text": "func farthest_enemy(from: Vector2, max_dist: float) -> Enemy:"
+      },
+      {
+        "line": 136,
+        "text": "func strongest_enemy(from: Vector2, max_dist: float) -> Enemy:"
+      },
+      {
+        "line": 145,
+        "text": "func densest_point(from: Vector2, max_dist: float, radius: float, exclude_near: Array[Vector2] = []) -> Vector2:"
+      },
+      {
+        "line": 171,
+        "text": "func densest_direction(from: Vector2, length: float, width: float) -> Vector2:"
+      },
+      {
+        "line": 187,
+        "text": "static func _in_line(enemy: Enemy, a: Vector2, b: Vector2, width: float) -> bool:"
+      },
+      {
+        "line": 193,
+        "text": "func enemies_on_line(a: Vector2, b: Vector2, width: float) -> Array[Enemy]:"
+      },
+      {
+        "line": 197,
+        "text": "func enemies_in_radius(center: Vector2, radius: float) -> Array[Enemy]:"
+      },
+      {
+        "line": 202,
+        "text": "func zone(pos: Vector2, radius: float, life: float, tick_every: float, on_tick: Callable, zone_color: Color) -> GodZone:"
+      },
+      {
+        "line": 214,
+        "text": "func line_zone(a: Vector2, b: Vector2, width: float, life: float, tick_every: float, on_tick: Callable, zone_color: Color) -> GodZone:"
+      },
+      {
+        "line": 221,
+        "text": "func drop_heal(pos: Vector2, heal: float, kind: String) -> void:"
+      },
+      {
+        "line": 231,
+        "text": "func summon_einherjar(life: float, power: float, tint: Color = Color.WHITE) -> Einherjar:"
+      },
+      {
+        "line": 243,
+        "text": "func drop_xp(pos: Vector2, value: float) -> void:"
+      },
+      {
+        "line": 255,
+        "text": "func lightning(pos: Vector2, radius: float, amount: float) -> Array[Enemy]:"
+      },
+      {
+        "line": 265,
+        "text": "func shoot(from: Vector2, dir: Vector2, speed: float, amount: float, pierce: int, texture: Texture2D, frames: int,"
+      }
+    ]
+  },
+  {
+    "path": "scripts/bosses/poison_pool.gd",
+    "symbols": [
+      {
+        "line": 5,
+        "text": "const RADIUS := 48.0  # 和素材一样宽，按 1 倍显示"
+      },
+      {
+        "line": 16,
+        "text": "static func spawn(parent: Node, pos: Vector2) -> void:"
+      },
+      {
+        "line": 22,
+        "text": "func _ready() -> void:"
+      },
+      {
+        "line": 25,
+        "text": "\tif ResourceLoader.exists(STRIP_PATH):"
+      },
+      {
+        "line": 29,
+        "text": "func _physics_process(delta: float) -> void:"
+      },
+      {
+        "line": 40,
+        "text": "func _inside() -> bool:"
+      },
+      {
+        "line": 47,
+        "text": "func _draw() -> void:"
+      }
+    ]
+  },
+  {
+    "path": "scripts/effects/boss_fx.gd",
+    "symbols": [
+      {
+        "line": 11,
+        "text": "static func texture(id: String) -> Texture2D:"
+      },
+      {
+        "line": 14,
+        "text": "\t\t_textures[id] = load(path) if ResourceLoader.exists(path) else null"
+      },
+      {
+        "line": 18,
+        "text": "static func frame_count(id: String) -> int:"
+      },
+      {
+        "line": 22,
+        "text": "static func fps(id: String) -> float:"
+      },
+      {
+        "line": 26,
+        "text": "static func anchor(id: String, size: Vector2) -> Vector2:"
+      },
+      {
+        "line": 34,
+        "text": "static func play(id: String, pos: Vector2, rot: float = 0.0, scale: Vector2 = Vector2.ONE,"
+      },
+      {
+        "line": 35,
+        "text": "\t\ttint: Color = Color.WHITE, reverse: bool = false, clip_radius: float = 0.0, clip_half: float = PI) -> bool:"
+      },
+      {
+        "line": 42,
+        "text": "\t\t\"reverse\": reverse, \"radius\": clip_radius, \"half\": clip_half, \"age\": 0.0,"
+      },
+      {
+        "line": 47,
+        "text": "static func draw(canvas: CanvasItem, id: String, age: float, pos: Vector2 = Vector2.ZERO,"
+      },
+      {
+        "line": 49,
+        "text": "\t\treverse: bool = false, clip_radius: float = 0.0, clip_half: float = PI, loop: bool = true) -> bool:"
+      },
+      {
+        "line": 60,
+        "text": "\tif clip_radius <= 0.0:"
+      },
+      {
+        "line": 66,
+        "text": "\tvar mask := sector(pos, clip_radius, rot, clip_half)"
+      },
+      {
+        "line": 76,
+        "text": "static func sector(center: Vector2, radius: float, angle: float, half: float) -> PackedVector2Array:"
+      },
+      {
+        "line": 87,
+        "text": "static func visible_arcs(gaps: Array[float], half: float) -> Array[Vector2]:"
+      },
+      {
+        "line": 106,
+        "text": "static func draw_band(canvas: CanvasItem, id: String, age: float, center: Vector2,"
+      },
+      {
+        "line": 136,
+        "text": "static func draw_chain(canvas: CanvasItem, points: PackedVector2Array) -> bool:"
+      },
+      {
+        "line": 152,
+        "text": "static func draw_ground(canvas: CanvasItem, id: String, rect: Rect2) -> bool:"
+      }
+    ]
+  },
+  {
+    "path": "scripts/effects/lightning_fx.gd",
+    "symbols": [
+      {
+        "line": 15,
+        "text": "static func spawn(parent: Node, from_pos: Vector2, to_pos: Vector2, radius: float) -> void:"
+      },
+      {
+        "line": 23,
+        "text": "func _ready() -> void:"
+      },
+      {
+        "line": 27,
+        "text": "func _process(delta: float) -> void:"
+      },
+      {
+        "line": 35,
+        "text": "func _draw() -> void:"
+      }
+    ]
+  }
+]

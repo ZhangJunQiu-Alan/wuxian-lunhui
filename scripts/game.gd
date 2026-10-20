@@ -17,6 +17,7 @@ const HP_LINEAR := 0.3
 const HP_SQUARE := 0.05
 const DAMAGE_PER_MINUTE := 0.1
 const EDGE_COLOR := Color(0.03, 0.04, 0.06)  # 没有地图素材时，屏障带涂暗
+enum RunState { PLAYING, ENDING, ENDED }
 
 static var bounds := Rect2()       # 可以活动的范围
 static var view_bounds := Rect2()  # 镜头能看到的范围（活动范围再加四周的屏障带）
@@ -52,6 +53,7 @@ var _quests_seen := 0
 var _hidden: Array[Dictionary] = []  # 隐藏支线：{"quest", "hint" 提示时间, "hinted"}
 var _hidden_found := 0
 var _run_recorded := false
+var _run_state := RunState.PLAYING
 var _codex := {"enemies": {}, "bosses": {}, "upgrades": {}, "quests": {}}  # 本局的图鉴记录，见 _note()
 var _map_layer: MapLayer
 
@@ -121,6 +123,8 @@ func _ready() -> void:
 
 
 func _process(delta: float) -> void:
+	if not is_running():
+		return
 	elapsed += delta
 	var wave := _current_wave()
 	_spawn_timer -= delta
@@ -143,6 +147,8 @@ func _process(delta: float) -> void:
 
 
 func _physics_process(_delta: float) -> void:
+	if not is_running():
+		return
 	for node in get_tree().get_nodes_in_group("enemies"):  # 冲锋、击退都不能把敌人推出地图，也不能穿过长屋、岩石
 		var enemy := node as Enemy
 		enemy.position = clamp_to_map(enemy.position, enemy.radius)
@@ -202,7 +208,8 @@ func _update_elites(wave: Dictionary) -> void:
 	if pool.is_empty():
 		return
 	var enemy := spawn_enemy(pool.pick_random(), _random_spawn_position(), true)
-	hud.announce(tr("%s 出现了！") % enemy.display_name)
+	if enemy:
+		hud.announce(tr("%s 出现了！") % enemy.display_name)
 
 
 func _update_events() -> void:
@@ -216,7 +223,10 @@ func _update_events() -> void:
 		hud.announce(tr(event.text))
 
 
-func spawn_enemy(type_id: String, pos: Vector2, elite: bool = false) -> Enemy:
+## required 只用于 Boss 机制和支线必需目标，允许越过常规敌人上限
+func spawn_enemy(type_id: String, pos: Vector2, elite: bool = false, required: bool = false) -> Enemy:
+	if not is_running() or (not required and get_tree().get_node_count_in_group("enemies") >= level_data.max_enemies):
+		return null
 	var enemy := Enemy.new()
 	enemy.setup(type_id, enemy_hp_scale(), elite, enemy_damage_scale())
 	enemy.target = player
@@ -249,7 +259,12 @@ func enemy_damage_scale() -> float:
 
 ## 不算击杀地移除一个敌人（例如逃走了），不掉经验
 func despawn_enemy(enemy: Enemy) -> void:
+	if enemy._dead:
+		return
 	_alive_by_type[enemy.type_id] = _alive_by_type.get(enemy.type_id, 1) - 1
+	enemy._dead = true
+	enemy.remove_from_group("enemies")
+	enemy.update_spatial_index()
 	enemy.queue_free()
 
 
@@ -353,6 +368,8 @@ func landmark_by_id(id: String) -> Dictionary:
 
 
 func _on_quest_finished(finished_quest: SideQuest, success: bool) -> void:
+	if not is_running():
+		return
 	if success or finished_quest.was_accepted:
 		_note("quests", finished_quest.quest_id, 1 if success else 0)
 	if success:
@@ -394,6 +411,8 @@ func _finish_run(cleared: bool) -> Dictionary:
 
 
 func _on_boss_defeated(defeated_boss: Boss) -> void:
+	if not is_running():
+		return
 	_defeated_bosses.append(defeated_boss.type_id)
 	_note("bosses", defeated_boss.type_id, 1)
 	hud.hide_boss()
@@ -404,6 +423,7 @@ func _on_boss_defeated(defeated_boss: Boss) -> void:
 	add_reward_points(defeated_boss.reward_points)
 	FxLayer.floating_text(defeated_boss.global_position + Vector2(0, -60), tr("奖励点 +%d") % defeated_boss.reward_points, Color(1.0, 0.85, 0.4))
 	if all_defeated:
+		_begin_ending()
 		get_tree().create_timer(3.0).timeout.connect(_on_level_cleared)  # 留 3 秒看击败演出
 		return
 	var chest := Chest.new()
@@ -424,7 +444,7 @@ func _on_boss_defeated(defeated_boss: Boss) -> void:
 func _on_player_leveled_up(level: int) -> void:
 	Audio.sfx("level_up")
 	if UpgradeDB.GOD_LEVELS.has(level) and player.faith.size() < UpgradeDB.MAX_GODS:
-		_queue_reward({"kind": "god"})  # 5 级、10 级：选一位新的神
+		_queue_reward({"kind": "god"})  # 5、10、15 级：选一位新的神
 	else:
 		queue_reward("")
 
@@ -436,6 +456,8 @@ func queue_reward(title: String) -> void:
 
 ## 加入一次奖励选择。如果当前没有在选，就暂停游戏并弹出面板
 func _queue_reward(entry: Dictionary) -> void:
+	if not is_running():
+		return
 	_pending_rewards.append(entry)
 	if _pending_rewards.size() == 1:
 		get_tree().paused = true
@@ -443,6 +465,8 @@ func _queue_reward(entry: Dictionary) -> void:
 
 
 func _open_reward() -> void:
+	if not is_running() or _pending_rewards.is_empty():
+		return
 	var entry: Dictionary = _pending_rewards[0]
 	level_up_panel.open(_offers(entry), player, entry)
 	match entry.kind:  # 选神、质变、觉醒、融合技各有一段提示音，没有素材时借用升级音效
@@ -466,6 +490,8 @@ func _offers(entry: Dictionary) -> Array[Dictionary]:
 
 
 func _on_upgrade_chosen(offer: Dictionary) -> void:
+	if not is_running() or _pending_rewards.is_empty():
+		return
 	UpgradeDB.apply(offer, player)
 	_note("upgrades", offer.id, 1)
 	_pending_rewards.pop_front()
@@ -506,7 +532,7 @@ func _is_pending(kind: String, key: String) -> bool:
 
 ## 支线奖励直接加信仰
 func add_faith(god: String, amount: int) -> void:
-	if not player.faith.has(god):
+	if not is_running() or not player.faith.has(god):
 		return
 	player.faith[god] = mini(player.faith[god] + amount, UpgradeDB.FAITH_MAX)
 	hud.set_faith(player)
@@ -518,36 +544,58 @@ func add_faith(god: String, amount: int) -> void:
 
 
 func _on_reroll_requested() -> void:
-	if player.rerolls <= 0 or _pending_rewards.is_empty() or not ["level", "god"].has(_pending_rewards[0].kind):
+	if not is_running() or player.rerolls <= 0 or _pending_rewards.is_empty() or not ["level", "god"].has(_pending_rewards[0].kind):
 		return
 	player.rerolls -= 1
 	_open_reward()
 
 
-func _on_level_cleared() -> void:
-	if player.is_dead:
-		return
+func is_running() -> bool:
+	return _run_state == RunState.PLAYING
+
+
+func _begin_ending() -> void:
+	_run_state = RunState.ENDING
 	get_tree().paused = true
+	_pending_rewards.clear()
+	level_up_panel.visible = false
+	if is_instance_valid(pause_menu):
+		pause_menu.close()
+	if is_instance_valid(FxLayer.instance):
+		FxLayer.instance.process_mode = Node.PROCESS_MODE_ALWAYS
+
+
+func _on_level_cleared() -> void:
+	if _run_state == RunState.ENDED:
+		return
+	_begin_ending()
+	_run_state = RunState.ENDED
 	Audio.music("victory")
 	hud.show_result("victory", tr(level_data.name), tr(level_data.clear_text), _finish_run(true), player)
 
 
 func _on_abandon_requested() -> void:
-	get_tree().paused = true
+	if not is_running():
+		return
+	_begin_ending()
+	_run_state = RunState.ENDED
 	hud.show_result("abandon", tr(level_data.name), "", _finish_run(false), player)
 
 
 func _on_player_died() -> void:
+	if not is_running():
+		return
 	if player.revives > 0:
 		player.revive()
 		hud.announce(tr("【主神】主神的眷顾：复活！"))
 		return
-	get_tree().paused = true
+	_begin_ending()
 	player.play_death()  # 画面定格，只有玩家播完倒地动作再结算
 	var delay := player.death_duration()
 	Audio.music("defeat")
 	if delay > 0.0:
 		await get_tree().create_timer(delay + 0.4).timeout
+	_run_state = RunState.ENDED
 	hud.show_result("death", tr(level_data.name), "", _finish_run(false), player)
 
 

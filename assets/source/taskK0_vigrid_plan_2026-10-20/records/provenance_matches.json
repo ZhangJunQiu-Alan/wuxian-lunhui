@@ -1,0 +1,2402 @@
+{
+  "assets/sprites/bosses/jormungandr_tail.png": [
+    {
+      "manifest": "assets/source/batch02_repairs_2026-10-16/manifest.json",
+      "record": {
+        "id": "jormungandr_tail",
+        "source": "originals/jormungandr_tail_v01.png",
+        "candidate": "candidates/jormungandr_tail_v04.png",
+        "editable": "candidates/jormungandr_tail_v04.piskel",
+        "size": [
+          64,
+          64
+        ],
+        "alpha": [
+          0,
+          255
+        ],
+        "colors": 44,
+        "bbox_exclusive": [
+          2,
+          9,
+          64,
+          49
+        ],
+        "edge_exception": "Right root interface intentionally extends to x=63.",
+        "method": "Chrome Piskel actual UI pixel edits; PNG exported and compared against saved pixel plan",
+        "sha256": "02a5b4ddc3197735e27d0d2dbcdc10d71e1d8f12886351764f9c395dcd5c0936",
+        "pixel_plan_diff_count": 0,
+        "connection_checks": "All RGBA port rows match; body left/right identical; visual 3x assembled and 4x4 repeating preview reviewed.",
+        "visual_one_x": "passed",
+        "visual_review_note": "Reviewed actual assembled export at 1x on dark background and nearest 3x, plus 4x4 body repeat. Continuous silhouette and scale rhythm; no v03 vertical bands.",
+        "expected_final": "sprites/bosses/jormungandr_tail.png",
+        "visual_review": "passed_1x_3x_and_repeat",
+        "approved_copy": "approved/jormungandr_tail.png",
+        "status": "self_check_passed_pending_game_review",
+        "final_copied": true,
+        "game_test": "not_performed",
+        "checks": {
+          "png_rgba": true,
+          "exact_size": true,
+          "alpha_binary": true,
+          "palette_at_most_48": true,
+          "one_x_visual_review": true,
+          "nearest_enlarged_visual_review": true,
+          "consistent_reference_style": true,
+          "no_text_watermark_ground_scene": true,
+          "outline_and_silhouette": "passed",
+          "margin": "connection-edge exception documented",
+          "animation_and_loop": "not_applicable_static_repair",
+          "tile_seams": "head-body-tail ports and repeated body visually checked"
+        },
+        "frames": 1,
+        "generation_url": "https://chatgpt.com/c/6ad13894-da4c-83e9-8753-dcd74eb966ac",
+        "tools": [
+          "Chrome ChatGPT",
+          "Chrome Piskel",
+          "Pillow preview and pixel QA"
+        ],
+        "generation_record": "records/segment_generation_records.json"
+      }
+    }
+  ],
+  "assets/sprites/bosses/jormungandr_head.png": [
+    {
+      "manifest": "assets/source/batch02_repairs_2026-10-16/manifest.json",
+      "record": {
+        "id": "jormungandr_head",
+        "source": "originals/jormungandr_head_v01.png",
+        "candidate": "candidates/jormungandr_head_v04.png",
+        "editable": "candidates/jormungandr_head_v04.piskel",
+        "size": [
+          128,
+          128
+        ],
+        "alpha": [
+          0,
+          255
+        ],
+        "colors": 48,
+        "bbox_exclusive": [
+          0,
+          8,
+          120,
+          108
+        ],
+        "edge_exception": "Left neck interface extends to x=0, aligned at local y=32..95.",
+        "method": "Chrome Piskel actual UI pixel edits; PNG exported and compared against saved pixel plan",
+        "sha256": "147c0b593f24bbe81719f52ac9d553fe9540ced163399a76aba44cd0b5006bfb",
+        "pixel_plan_diff_count": 0,
+        "connection_checks": "All RGBA port rows match; body left/right identical; visual 3x assembled and 4x4 repeating preview reviewed.",
+        "visual_one_x": "passed",
+        "visual_review_note": "Reviewed actual assembled export at 1x on dark background and nearest 3x, plus 4x4 body repeat. Continuous silhouette and scale rhythm; no v03 vertical bands.",
+        "expected_final": "sprites/bosses/jormungandr_head.png",
+        "visual_review": "passed_1x_3x_and_repeat",
+        "approved_copy": "approved/jormungandr_head.png",
+        "status": "self_check_passed_pending_game_review",
+        "final_copied": true,
+        "game_test": "not_performed",
+        "checks": {
+          "png_rgba": true,
+          "exact_size": true,
+          "alpha_binary": true,
+          "palette_at_most_48": true,
+          "one_x_visual_review": true,
+          "nearest_enlarged_visual_review": true,
+          "consistent_reference_style": true,
+          "no_text_watermark_ground_scene": true,
+          "outline_and_silhouette": "passed",
+          "margin": "connection-edge exception documented",
+          "animation_and_loop": "not_applicable_static_repair",
+          "tile_seams": "head-body-tail ports and repeated body visually checked"
+        },
+        "frames": 1,
+        "generation_url": "https://chatgpt.com/c/6ad13887-bd74-83ea-ac8e-d4856d77d773",
+        "tools": [
+          "Chrome ChatGPT",
+          "Chrome Piskel",
+          "Pillow preview and pixel QA"
+        ],
+        "generation_record": "records/segment_generation_records.json"
+      }
+    }
+  ],
+  "assets/sprites/bosses/jormungandr_body.png": [
+    {
+      "manifest": "assets/source/batch02_repairs_2026-10-16/manifest.json",
+      "record": {
+        "id": "jormungandr_body",
+        "source": "originals/jormungandr_body_v01.png",
+        "candidate": "candidates/jormungandr_body_v04.png",
+        "editable": "candidates/jormungandr_body_v04.piskel",
+        "size": [
+          64,
+          64
+        ],
+        "alpha": [
+          0,
+          255
+        ],
+        "colors": 42,
+        "bbox_exclusive": [
+          0,
+          8,
+          64,
+          46
+        ],
+        "edge_exception": "Left and right connection columns intentionally touch canvas edges.",
+        "method": "Chrome Piskel actual UI pixel edits; PNG exported and compared against saved pixel plan",
+        "sha256": "72df0600b5d9d4a19a9e6b72d8af097751109dd6807f6c9dc959a8082032b94c",
+        "pixel_plan_diff_count": 0,
+        "connection_checks": "All RGBA port rows match; body left/right identical; visual 3x assembled and 4x4 repeating preview reviewed.",
+        "visual_one_x": "passed",
+        "visual_review_note": "Reviewed actual assembled export at 1x on dark background and nearest 3x, plus 4x4 body repeat. Continuous silhouette and scale rhythm; no v03 vertical bands.",
+        "expected_final": "sprites/bosses/jormungandr_body.png",
+        "visual_review": "passed_1x_3x_and_repeat",
+        "approved_copy": "approved/jormungandr_body.png",
+        "status": "self_check_passed_pending_game_review",
+        "final_copied": true,
+        "game_test": "not_performed",
+        "checks": {
+          "png_rgba": true,
+          "exact_size": true,
+          "alpha_binary": true,
+          "palette_at_most_48": true,
+          "one_x_visual_review": true,
+          "nearest_enlarged_visual_review": true,
+          "consistent_reference_style": true,
+          "no_text_watermark_ground_scene": true,
+          "outline_and_silhouette": "passed",
+          "margin": "connection-edge exception documented",
+          "animation_and_loop": "not_applicable_static_repair",
+          "tile_seams": "head-body-tail ports and repeated body visually checked"
+        },
+        "frames": 1,
+        "generation_url": "https://chatgpt.com/c/6ad13892-9774-83ea-affd-468606469dc8",
+        "tools": [
+          "Chrome ChatGPT",
+          "Chrome Piskel",
+          "Pillow preview and pixel QA"
+        ],
+        "generation_record": "records/segment_generation_records.json"
+      }
+    }
+  ],
+  "assets/sprites/bosses/fenrir.png": [
+    {
+      "manifest": "assets/source/batch02_repairs_2026-10-16/manifest.json",
+      "record": {
+        "id": "fenrir",
+        "candidate": "candidates/fenrir_v01.png",
+        "size": [
+          192,
+          192
+        ],
+        "colors": 48,
+        "alpha": [
+          0,
+          255
+        ],
+        "bbox_exclusive": [
+          3,
+          3,
+          188,
+          190
+        ],
+        "baseline": 189,
+        "min_margin": 2,
+        "method": "Pillow deterministic nearest resize from archived high-resolution source",
+        "palette": "records/fenrir_palette_v01.json",
+        "source": "originals/fenrir.png",
+        "expected_final": "sprites/bosses/fenrir.png",
+        "visual_review": "passed_from_prior_recorded_1x_and_4x_review",
+        "approved_copy": "approved/fenrir.png",
+        "sha256": "bcc4676a2d9526817aed6a43429e5b5fc5123004378fda9687d37bbbf14159da",
+        "status": "self_check_passed_pending_game_review",
+        "final_copied": true,
+        "game_test": "not_performed",
+        "checks": {
+          "png_rgba": true,
+          "exact_size": true,
+          "alpha_binary": true,
+          "palette_at_most_48": true,
+          "one_x_visual_review": true,
+          "nearest_enlarged_visual_review": true,
+          "consistent_reference_style": true,
+          "no_text_watermark_ground_scene": true,
+          "outline_and_silhouette": "passed",
+          "margin": "at least 2 pixels",
+          "animation_and_loop": "not_applicable_static_repair",
+          "tile_seams": "not_applicable"
+        },
+        "frames": 1,
+        "generation_url": "https://chatgpt.com/c/6ad1165e-973c-83e9-811c-c1dd9015314f",
+        "tools": [
+          "Chrome ChatGPT source generation",
+          "Pillow deterministic normalization"
+        ],
+        "generation_record": "../norse_2026-10-16/manifest.json"
+      }
+    }
+  ],
+  "assets/sprites/bosses/surtr.png": [
+    {
+      "manifest": "assets/source/batch02_repairs_2026-10-16/manifest.json",
+      "record": {
+        "id": "surtr",
+        "source": "originals/surtr_repaired_raw_v02.png",
+        "candidate": "candidates/surtr_v02.png",
+        "size": [
+          192,
+          192
+        ],
+        "expected_final": "sprites/bosses/surtr.png",
+        "generation_url": "https://chatgpt.com/c/6ad13b09-f938-83e9-b649-32b928ad5cdf",
+        "prompt": "records/surtr_repair_prompt_v02.txt",
+        "references": [
+          "originals/surtr_repaired_raw_v01.png",
+          "assets/source/norse_pixel_2026-10-16/128/bosses/surtr.png"
+        ],
+        "opaque_raw_bbox": [
+          182,
+          77,
+          1179,
+          1176
+        ],
+        "normalization": "Pillow deterministic nearest sampling, alpha threshold 128, median-cut 48 colors with no dither, centered with baseline 189",
+        "bbox_exclusive": [
+          12,
+          6,
+          179,
+          190
+        ],
+        "colors": 48,
+        "visual_review": "passed_actual_1x_and_nearest_4x",
+        "visual_review_note": "Both separated boots and soles clearly visible; full crown flame, cape ends and sword tip inside canvas; consistent helmet, magma armor and palette family; no ground/text/watermark.",
+        "alpha": [
+          0,
+          255
+        ],
+        "approved_copy": "approved/surtr.png",
+        "sha256": "f5f705f6953e95ba014521ac47ae2f05b251e43bbea72ed7f30c6b68f3ec618d",
+        "status": "self_check_passed_pending_game_review",
+        "final_copied": true,
+        "game_test": "not_performed",
+        "checks": {
+          "png_rgba": true,
+          "exact_size": true,
+          "alpha_binary": true,
+          "palette_at_most_48": true,
+          "one_x_visual_review": true,
+          "nearest_enlarged_visual_review": true,
+          "consistent_reference_style": true,
+          "no_text_watermark_ground_scene": true,
+          "outline_and_silhouette": "passed",
+          "margin": "at least 2 pixels",
+          "animation_and_loop": "not_applicable_static_repair",
+          "tile_seams": "not_applicable"
+        },
+        "frames": 1,
+        "tools": [
+          "Chrome ChatGPT source generation",
+          "Pillow deterministic normalization"
+        ],
+        "generation_record": "records/surtr_repair_prompt_v02.txt"
+      }
+    }
+  ],
+  "assets/sprites/enemies/fire_giant.png": [
+    {
+      "manifest": "assets/source/batch02_repairs_2026-10-16/manifest.json",
+      "record": {
+        "id": "fire_giant",
+        "candidate": "candidates/fire_giant_v01.png",
+        "size": [
+          96,
+          96
+        ],
+        "colors": 48,
+        "alpha": [
+          0,
+          255
+        ],
+        "bbox_exclusive": [
+          4,
+          4,
+          92,
+          94
+        ],
+        "baseline": 93,
+        "min_margin": 2,
+        "method": "Pillow deterministic nearest resize from archived high-resolution source",
+        "palette": "records/fire_palette_v01.json",
+        "source": "originals/fire_giant.png",
+        "expected_final": "sprites/enemies/fire_giant.png",
+        "visual_review": "passed_from_prior_recorded_1x_and_4x_review",
+        "approved_copy": "approved/fire_giant.png",
+        "sha256": "0a59ac1cb33fb98e1acfd0b0d68b1ad73d0084151689ef1af7f5a04e34d21e7a",
+        "status": "self_check_passed_pending_game_review",
+        "final_copied": true,
+        "game_test": "not_performed",
+        "checks": {
+          "png_rgba": true,
+          "exact_size": true,
+          "alpha_binary": true,
+          "palette_at_most_48": true,
+          "one_x_visual_review": true,
+          "nearest_enlarged_visual_review": true,
+          "consistent_reference_style": true,
+          "no_text_watermark_ground_scene": true,
+          "outline_and_silhouette": "passed",
+          "margin": "at least 2 pixels",
+          "animation_and_loop": "not_applicable_static_repair",
+          "tile_seams": "not_applicable"
+        },
+        "frames": 1,
+        "generation_url": "https://chatgpt.com/c/6ad1165e-973c-83e9-811c-c1dd9015314f",
+        "tools": [
+          "Chrome ChatGPT source generation",
+          "Pillow deterministic normalization"
+        ],
+        "generation_record": "../norse_2026-10-16/manifest.json"
+      }
+    }
+  ],
+  "assets/sprites/enemies/frost_veteran.png": [
+    {
+      "manifest": "assets/source/batch02_repairs_2026-10-16/manifest.json",
+      "record": {
+        "id": "frost_veteran",
+        "candidate": "candidates/frost_veteran_v01.png",
+        "size": [
+          96,
+          96
+        ],
+        "colors": 48,
+        "alpha": [
+          0,
+          255
+        ],
+        "bbox_exclusive": [
+          3,
+          2,
+          93,
+          94
+        ],
+        "baseline": 93,
+        "min_margin": 2,
+        "method": "Pillow deterministic nearest resize from archived high-resolution source",
+        "palette": "records/frost_palette_v01.json",
+        "source": "originals/frost_veteran.png",
+        "expected_final": "sprites/enemies/frost_veteran.png",
+        "visual_review": "passed_from_prior_recorded_1x_and_4x_review",
+        "approved_copy": "approved/frost_veteran.png",
+        "sha256": "6972714054f6181ee80249f0c5e42cac072e329a3bc063e04269ba00d9563e9c",
+        "status": "self_check_passed_pending_game_review",
+        "final_copied": true,
+        "game_test": "not_performed",
+        "checks": {
+          "png_rgba": true,
+          "exact_size": true,
+          "alpha_binary": true,
+          "palette_at_most_48": true,
+          "one_x_visual_review": true,
+          "nearest_enlarged_visual_review": true,
+          "consistent_reference_style": true,
+          "no_text_watermark_ground_scene": true,
+          "outline_and_silhouette": "passed",
+          "margin": "at least 2 pixels",
+          "animation_and_loop": "not_applicable_static_repair",
+          "tile_seams": "not_applicable"
+        },
+        "frames": 1,
+        "generation_url": "https://chatgpt.com/c/6ad11660-1388-83e9-92f2-359736a91c18",
+        "tools": [
+          "Chrome ChatGPT source generation",
+          "Pillow deterministic normalization"
+        ],
+        "generation_record": "../norse_2026-10-16/manifest.json"
+      }
+    },
+    {
+      "manifest": "assets/source/taskH0_critical_2026-10-19/manifest.json",
+      "record": {
+        "project_path": "assets/sprites/enemies/frost_veteran.png",
+        "archived_path": "references/frost_veteran.png",
+        "sha256": "6972714054f6181ee80249f0c5e42cac072e329a3bc063e04269ba00d9563e9c"
+      }
+    },
+    {
+      "manifest": "assets/source/taskH0_critical_2026-10-19/integration_2026-10-19/before_delivery_records/taskH0_critical_2026-10-19/manifest.json",
+      "record": {
+        "project_path": "assets/sprites/enemies/frost_veteran.png",
+        "archived_path": "references/frost_veteran.png",
+        "sha256": "6972714054f6181ee80249f0c5e42cac072e329a3bc063e04269ba00d9563e9c"
+      }
+    }
+  ],
+  "assets/sprites/enemies/dead.png": [
+    {
+      "manifest": "assets/source/taskC_helheim_enemies_2026-10-17/manifest.json",
+      "record": {
+        "id": "dead",
+        "unit": "dead",
+        "label": "亡者 static",
+        "action": "static",
+        "folder": "enemies",
+        "w": 64,
+        "h": 64,
+        "frames": 1,
+        "task": "taskC_helheim_enemies_2026-10-17",
+        "loop": false,
+        "anchor": "bottom",
+        "body_h": 50,
+        "subject": "A frail pitiable elderly deceased commoner, hunched narrow shoulders, emaciated gray-white skin, hollow tired eyes, ragged gray-brown burial cloth, small bare hands and worn wraps. Not muscular and not armored. Weaker and smaller than an undead warrior.",
+        "status": "accepted",
+        "version": "v01",
+        "candidate": "candidates/dead_v01.png",
+        "source": "originals/dead_v01_raw.png",
+        "generation_record": "records/generation_dead_v01.json",
+        "output": "sprites/enemies/dead.png",
+        "checks": {
+          "status": "accepted",
+          "version": "v01",
+          "review_date": "2026-10-17",
+          "dimensions_rgba_binary_alpha_margin": "passed by PNG check and preflight",
+          "style_palette_outline_upperleft_light": "passed by visual 1x/nearest4x comparison to own static/project reference",
+          "facing_center_baseline": "passed: right facing, centered occupied envelope, common ground/tail baseline",
+          "dark_background_readability_no_text_scene_watermark": "passed: inspected #121721 native1x/nearest4x",
+          "visual_note": "灰白佝偻普通亡者，破布与细瘦轮廓朝右。"
+        },
+        "preview": "previews/dead_v01_review.png",
+        "gif": null,
+        "fps": null,
+        "game_fps": null,
+        "pivot": [
+          32,
+          62
+        ],
+        "technical": {
+          "id": "dead",
+          "version": "v01",
+          "size": [
+            64,
+            64
+          ],
+          "colors": 35,
+          "alpha": [
+            0,
+            255
+          ],
+          "frame_boxes": [
+            [
+              12,
+              12,
+              52,
+              62
+            ]
+          ],
+          "unique_frames": 1,
+          "sha256": "fcfada7817322ec67f6b6055bd4aa727c119c0256481921f857b6218b535d278"
+        },
+        "provenance": {
+          "id": "dead",
+          "version": "v01",
+          "tool": "Pillow formatting of existing project-owned AI pixel sprite; no new generation",
+          "source": "assets/source/norse_pixel_2026-10-16/64/mobs/dead.png",
+          "source_manifest": "assets/source/norse_pixel_2026-10-16/manifest.json",
+          "original_generation_manifest": "assets/source/norse_2026-10-16/manifest.json",
+          "note": "Preserves existing design; nearest-neighbor size, binary alpha and48-color budget only."
+        },
+        "approved": "approved/dead.png",
+        "sha256": "fcfada7817322ec67f6b6055bd4aa727c119c0256481921f857b6218b535d278"
+      }
+    },
+    {
+      "manifest": "assets/source/taskC_helheim_enemies_2026-10-17/manifest.json",
+      "record": {
+        "id": "dead",
+        "version": "v01",
+        "size": [
+          64,
+          64
+        ],
+        "colors": 35,
+        "alpha": [
+          0,
+          255
+        ],
+        "frame_boxes": [
+          [
+            12,
+            12,
+            52,
+            62
+          ]
+        ],
+        "unique_frames": 1,
+        "sha256": "fcfada7817322ec67f6b6055bd4aa727c119c0256481921f857b6218b535d278"
+      }
+    }
+  ],
+  "assets/sprites/enemies/dead_move.png": [
+    {
+      "manifest": "assets/source/taskC_helheim_enemies_2026-10-17/manifest.json",
+      "record": {
+        "id": "dead_move",
+        "unit": "dead",
+        "label": "亡者 move",
+        "action": "move",
+        "folder": "enemies",
+        "w": 64,
+        "h": 64,
+        "frames": 6,
+        "task": "taskC_helheim_enemies_2026-10-17",
+        "loop": true,
+        "anchor": "bottom",
+        "body_h": 50,
+        "subject": "A frail pitiable elderly deceased commoner, hunched narrow shoulders, emaciated gray-white skin, hollow tired eyes, ragged gray-brown burial cloth, small bare hands and worn wraps. Not muscular and not armored. Weaker and smaller than an undead warrior.",
+        "status": "accepted",
+        "version": "v02",
+        "candidate": "candidates/dead_move_v02.png",
+        "source": "originals/dead_move_v02_raw.png",
+        "generation_record": "records/generation_dead_move_v02.json",
+        "output": "sprites/enemies/dead_move.png",
+        "checks": {
+          "status": "accepted",
+          "version": "v02",
+          "review_date": "2026-10-17",
+          "dimensions_rgba_binary_alpha_margin": "passed by PNG check and preflight",
+          "style_palette_outline_upperleft_light": "passed by visual 1x/nearest4x comparison to own static/project reference",
+          "facing_center_baseline": "passed: right facing, centered occupied envelope, common ground/tail baseline",
+          "dark_background_readability_no_text_scene_watermark": "passed: inspected #121721 native1x/nearest4x",
+          "visual_note": "检查落脚、抬脚和前后步相位；与静态使用同一RGB色板。",
+          "animation_check": "逐帧检查体型、服饰和肢体连贯性；脚底或雾尾落点固定，未画程序特效；PNG相位与8fps四倍GIF逐像素核对见final_audit。",
+          "loop_check": "对照所有相位与末帧→首帧；变化量诊断见loop_transition_metrics.json，无异常跳变。"
+        },
+        "preview": "previews/dead_move_v02_review.png",
+        "gif": "previews/dead_move_v02.gif",
+        "fps": 8,
+        "game_fps": 8,
+        "pivot": [
+          32,
+          62
+        ],
+        "technical": {
+          "id": "dead_move",
+          "version": "v02",
+          "size": [
+            384,
+            64
+          ],
+          "colors": 35,
+          "alpha": [
+            0,
+            255
+          ],
+          "frame_boxes": [
+            [
+              12,
+              12,
+              51,
+              62
+            ],
+            [
+              15,
+              12,
+              48,
+              62
+            ],
+            [
+              13,
+              12,
+              51,
+              62
+            ],
+            [
+              11,
+              12,
+              52,
+              62
+            ],
+            [
+              14,
+              11,
+              50,
+              62
+            ],
+            [
+              11,
+              11,
+              52,
+              62
+            ]
+          ],
+          "unique_frames": 6,
+          "sha256": "93a758a490782306128d6e11941d12662ead0f1251df8b8ebc8900964fce792c"
+        },
+        "provenance": {
+          "tool": "OpenAI built-in image generation",
+          "source": "/Users/zhangjunqiu/.codex/generated_images/01a14377-c537-7a10-b5df-10043f63fbe0/exec-bff8a129-cf4c-419a-bb2b-039e068875fc.png",
+          "id": "dead_move",
+          "unit": "dead",
+          "label": "亡者 move",
+          "action": "move",
+          "folder": "enemies",
+          "w": 64,
+          "h": 64,
+          "frames": 6,
+          "task": "taskC_helheim_enemies_2026-10-17",
+          "loop": true,
+          "anchor": "bottom",
+          "body_h": 50,
+          "subject": "A frail pitiable elderly deceased commoner, hunched narrow shoulders, emaciated gray-white skin, hollow tired eyes, ragged gray-brown burial cloth, small bare hands and worn wraps. Not muscular and not armored. Weaker and smaller than an undead warrior.",
+          "status": "pending",
+          "version": "v02",
+          "refs": [
+            "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskC_helheim_enemies_2026-10-17/candidates/dead_v01.png",
+            "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskC_helheim_enemies_2026-10-17/refs/walk6_leg_kinematics_guide.png"
+          ],
+          "prompt": "Use case: identity-preserve. Input1 is the EXACT pixel character. Input2 is ONLY a six-phase leg-motion diagram, RED means same near leg and BLUE means same far leg; do NOT copy its colors, text, mannequin or style. Draw the input1 character with the leg phases of input2, matching camera, head/torso size, palette, outfit and accessories throughout. The near leg MUST move from FORWARD-right in frame1 to BACK-left in frame4, while far leg does opposite. Inframe2 nearlegsupportsunderhips farfootlifted,inframe3nearlegtrailsleft farfootadvancesright,inframe5farlegsupports nearfootlifted,inframe6nearlegadvancesright farlegtrailsleft. Feet point RIGHT even while leg is behind hips. Arms swing oppositely; retain weapon in hand for archer. NO repeating same bright near foot forward in both contact poses.  Exactly SIX poses 3columns by2rows readingorder, each logical64x64px with2pxtransparentmargin, body50px high; fixed footbaseline and exact identical scale. Compact stride fits frame. Transparent binarypixelart, exact input1 RGB palette, no scene/text/grid/shadow/FX/particles, no redblue guide colors."
+        },
+        "approved": "approved/dead_move.png",
+        "sha256": "93a758a490782306128d6e11941d12662ead0f1251df8b8ebc8900964fce792c"
+      }
+    },
+    {
+      "manifest": "assets/source/taskC_helheim_enemies_2026-10-17/manifest.json",
+      "record": {
+        "id": "dead_move",
+        "version": "v02",
+        "size": [
+          384,
+          64
+        ],
+        "colors": 35,
+        "alpha": [
+          0,
+          255
+        ],
+        "frame_boxes": [
+          [
+            12,
+            12,
+            51,
+            62
+          ],
+          [
+            15,
+            12,
+            48,
+            62
+          ],
+          [
+            13,
+            12,
+            51,
+            62
+          ],
+          [
+            11,
+            12,
+            52,
+            62
+          ],
+          [
+            14,
+            11,
+            50,
+            62
+          ],
+          [
+            11,
+            11,
+            52,
+            62
+          ]
+        ],
+        "unique_frames": 6,
+        "sha256": "93a758a490782306128d6e11941d12662ead0f1251df8b8ebc8900964fce792c"
+      }
+    }
+  ],
+  "assets/sprites/enemies/dead_attack.png": [
+    {
+      "manifest": "assets/source/taskC_helheim_enemies_2026-10-17/manifest.json",
+      "record": {
+        "id": "dead_attack",
+        "unit": "dead",
+        "label": "亡者 attack",
+        "action": "attack",
+        "folder": "enemies",
+        "w": 64,
+        "h": 64,
+        "frames": 4,
+        "task": "taskC_helheim_enemies_2026-10-17",
+        "loop": false,
+        "anchor": "bottom",
+        "body_h": 50,
+        "subject": "A frail pitiable elderly deceased commoner, hunched narrow shoulders, emaciated gray-white skin, hollow tired eyes, ragged gray-brown burial cloth, small bare hands and worn wraps. Not muscular and not armored. Weaker and smaller than an undead warrior.",
+        "status": "accepted",
+        "version": "v02",
+        "candidate": "candidates/dead_attack_v02.png",
+        "source": "originals/dead_attack_v02_raw.png",
+        "generation_record": "records/generation_dead_attack_v02.json",
+        "output": "sprites/enemies/dead_attack.png",
+        "checks": {
+          "status": "accepted",
+          "version": "v02",
+          "review_date": "2026-10-17",
+          "dimensions_rgba_binary_alpha_margin": "passed by PNG check and preflight",
+          "style_palette_outline_upperleft_light": "passed by visual 1x/nearest4x comparison to own static/project reference",
+          "facing_center_baseline": "passed: right facing, centered occupied envelope, common ground/tail baseline",
+          "dark_background_readability_no_text_scene_watermark": "passed: inspected #121721 native1x/nearest4x",
+          "visual_note": "伸手抓挠四相位；最终复查发现末帧左侧单独1像素邻格碎点，v02仅清除此透明边缘碎点并整帧恢复水平居中。",
+          "animation_check": "逐帧检查体型、服饰和肢体连贯性；脚底或雾尾落点固定，未画程序特效；PNG相位与8fps四倍GIF逐像素核对见final_audit。"
+        },
+        "preview": "previews/dead_attack_v02_review.png",
+        "gif": "previews/dead_attack_v02.gif",
+        "fps": 8,
+        "game_fps": 16,
+        "pivot": [
+          32,
+          62
+        ],
+        "technical": {
+          "id": "dead_attack",
+          "version": "v02",
+          "size": [
+            256,
+            64
+          ],
+          "colors": 35,
+          "alpha": [
+            0,
+            255
+          ],
+          "frame_boxes": [
+            [
+              14,
+              12,
+              49,
+              62
+            ],
+            [
+              12,
+              14,
+              52,
+              62
+            ],
+            [
+              4,
+              15,
+              59,
+              62
+            ],
+            [
+              15,
+              12,
+              49,
+              62
+            ]
+          ],
+          "unique_frames": 4,
+          "sha256": "59c404b403f193cd6f15c0ac52e9e85742119ead0a55791b8b7380de0089d8d7"
+        },
+        "provenance": {
+          "id": "dead_attack",
+          "unit": "dead",
+          "label": "亡者 attack",
+          "action": "attack",
+          "folder": "enemies",
+          "w": 64,
+          "h": 64,
+          "frames": 4,
+          "task": "taskC_helheim_enemies_2026-10-17",
+          "loop": false,
+          "anchor": "bottom",
+          "body_h": 50,
+          "subject": "A frail pitiable elderly deceased commoner, hunched narrow shoulders, emaciated gray-white skin, hollow tired eyes, ragged gray-brown burial cloth, small bare hands and worn wraps. Not muscular and not armored. Weaker and smaller than an undead warrior.",
+          "status": "pending",
+          "version": "v01",
+          "refs": [
+            "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskC_helheim_enemies_2026-10-17/candidates/dead_v01.png"
+          ],
+          "prompt": "Use case: identity-preserve. Animate the EXACT project character in input1. Preserve head/face, proportions, materials, palette, clothing, armor and accessories. Four poses:1 neutral low hands;2 pull near hand back and lean slightly away;3 reach/grab sharply RIGHT with near arm extended and fingers spread, far arm follows;4 recoil to neutral. Same thin body and cloth in every frame. No large magic, weapon or trails.\nLayout: EXACTLY FOUR frames in a2by2equal-cell grid, reading left-to-right then top-to-bottom. Each cell logically64x64pixels, with2logicalpixels of completely clear margin on every side. Fixed side-three-quarter camera facing RIGHT. Every cell has SAME scale, body size, foot ground line and lighting as reference. Frame1 has the original neutral body size for reference. Do not shrink the character to make extended poses fit: draw compact poses instead.\nStrong low-resolution pixel clusters, exactly the same limited RGB color palette as reference, upper-left light, dark outline, no dithering or smooth painting. Genuine transparent RGBA, binary alpha. No frame lines, text, labels, names, scene, separate object, ground shadow, aura, slash, dust or particle effects. Whole character/weapon fits inside every frame. No cut-off limbs or detached limbs.",
+          "tool": "builtin image_gen",
+          "source": "/Users/zhangjunqiu/.codex/generated_images/01a14377-c537-7a10-b5df-10043f63fbe0/exec-f8a98109-b406-47f2-bd86-6db4090f99db.png",
+          "postprocess": {
+            "tool": "Pillow",
+            "operation": "remove single isolated crop-boundary alpha speck and re-center whole last frame",
+            "frame_1based": 4,
+            "alpha_clear_bbox": [
+              7,
+              23,
+              8,
+              24
+            ],
+            "whole_frame_dx": -8,
+            "derived_from": "dead_attack_v01.png",
+            "no_character_redrawing": true
+          }
+        },
+        "approved": "approved/dead_attack.png",
+        "sha256": "59c404b403f193cd6f15c0ac52e9e85742119ead0a55791b8b7380de0089d8d7"
+      }
+    },
+    {
+      "manifest": "assets/source/taskC_helheim_enemies_2026-10-17/manifest.json",
+      "record": {
+        "id": "dead_attack",
+        "version": "v02",
+        "size": [
+          256,
+          64
+        ],
+        "colors": 35,
+        "alpha": [
+          0,
+          255
+        ],
+        "frame_boxes": [
+          [
+            14,
+            12,
+            49,
+            62
+          ],
+          [
+            12,
+            14,
+            52,
+            62
+          ],
+          [
+            4,
+            15,
+            59,
+            62
+          ],
+          [
+            15,
+            12,
+            49,
+            62
+          ]
+        ],
+        "unique_frames": 4,
+        "sha256": "59c404b403f193cd6f15c0ac52e9e85742119ead0a55791b8b7380de0089d8d7"
+      }
+    }
+  ],
+  "assets/sprites/ground/vigrid/burnt_grass.png": [
+    {
+      "manifest": "assets/source/batch04_maps_2026-10-16/manifest.json",
+      "record": {
+        "id": "burnt_grass",
+        "level": "vigrid",
+        "type": "ground",
+        "width": 64,
+        "height": 64,
+        "status": "self_check_passed_pending_game_review",
+        "candidate": "candidates/vigrid_burnt_grass_v04.png",
+        "color_count": 19,
+        "alpha_values": [
+          255
+        ],
+        "bbox": [
+          0,
+          0,
+          64,
+          64
+        ],
+        "palette": "records/vigrid_palette48_v04.json",
+        "sha256": "6f2333fe144ee0eff736c837ec2ae5ba546fa93e786c0bb009d0dd2392559999",
+        "checks": {
+          "exact_size": true,
+          "png_rgba": true,
+          "binary_alpha": true,
+          "palette_limit": true,
+          "transparent_margin_2px": null,
+          "style_consistency": true,
+          "no_text_watermark_scene": true,
+          "dark_background_1x_readable": true,
+          "facing_right": "not_applicable_static_environment",
+          "fixed_feet_baseline": "not_applicable_static_environment",
+          "animation": "not_applicable_single_frame",
+          "opaque_full_ground": true,
+          "seamless_4x4_visual": true,
+          "subdued_below_character_visual": true,
+          "no_prominent_repeated_landmark": true
+        },
+        "seam_metrics": {
+          "opposing_edge_mean_x": 2.479,
+          "opposing_edge_mean_y": 2.135,
+          "interior_neighbor_mean_x": 7.592,
+          "interior_neighbor_mean_y": 7.679,
+          "edge_jump_outlier_at_1_5x": false
+        },
+        "mean_rgb": [
+          38.03,
+          31.3,
+          32.15
+        ],
+        "approved_file": "approved/ground/vigrid/burnt_grass.png",
+        "final_file": "sprites/ground/vigrid/burnt_grass.png",
+        "frame_count": 1,
+        "fps": null,
+        "source": {
+          "raw_file": "originals/vigrid_ground_v01_raw.png",
+          "crop": [
+            447,
+            447,
+            884,
+            884
+          ],
+          "tool": "Chrome ChatGPT web image generation",
+          "chat_url": "https://chatgpt.com/c/6ad1c9d7-dcc0-83e9-9f7b-6e7f52f047e5",
+          "generation_record": "records/generation_jobs_wave01.json",
+          "prompt_file": "records/vigrid_ground_prompt.txt",
+          "input_references": [
+            "references/style_reference.png"
+          ]
+        },
+        "processing_tools": [
+          "Pillow 12.1.1",
+          "project-original deterministic normalization scripts"
+        ],
+        "visual_review": {
+          "passed": true,
+          "reviewed_candidate": "candidates/vigrid_burnt_grass_v04.png",
+          "reviewed_at": "2026-10-16",
+          "viewed": "#121721背景1×/4×对照；地块4×4；基础4种混铺；关卡1×角色合成",
+          "note": "稀疏焦草混入灰土，不引入绿色；4×4查看。",
+          "limitations": "未在Godot运行，游戏内验收由代码代理负责"
+        },
+        "tiling_preview": "previews/vigrid_burnt_grass_4x4.png"
+      }
+    }
+  ],
+  "assets/sprites/ground/vigrid/scorched_01.png": [
+    {
+      "manifest": "assets/source/batch04_maps_2026-10-16/manifest.json",
+      "record": {
+        "id": "scorched_01",
+        "level": "vigrid",
+        "type": "ground",
+        "width": 64,
+        "height": 64,
+        "status": "self_check_passed_pending_game_review",
+        "candidate": "candidates/vigrid_scorched_01_v04.png",
+        "color_count": 21,
+        "alpha_values": [
+          255
+        ],
+        "bbox": [
+          0,
+          0,
+          64,
+          64
+        ],
+        "palette": "records/vigrid_palette48_v04.json",
+        "sha256": "3748580e22d48641ca2776b843445a7c10ae1385a4e3251000eae628ead89ba8",
+        "checks": {
+          "exact_size": true,
+          "png_rgba": true,
+          "binary_alpha": true,
+          "palette_limit": true,
+          "transparent_margin_2px": null,
+          "style_consistency": true,
+          "no_text_watermark_scene": true,
+          "dark_background_1x_readable": true,
+          "facing_right": "not_applicable_static_environment",
+          "fixed_feet_baseline": "not_applicable_static_environment",
+          "animation": "not_applicable_single_frame",
+          "opaque_full_ground": true,
+          "seamless_4x4_visual": true,
+          "subdued_below_character_visual": true,
+          "no_prominent_repeated_landmark": true
+        },
+        "seam_metrics": {
+          "opposing_edge_mean_x": 2.958,
+          "opposing_edge_mean_y": 2.922,
+          "interior_neighbor_mean_x": 6.708,
+          "interior_neighbor_mean_y": 6.932,
+          "edge_jump_outlier_at_1_5x": false
+        },
+        "mean_rgb": [
+          38.12,
+          31.2,
+          31.97
+        ],
+        "approved_file": "approved/ground/vigrid/scorched_01.png",
+        "final_file": "sprites/ground/vigrid/scorched_01.png",
+        "frame_count": 1,
+        "fps": null,
+        "source": {
+          "raw_file": "originals/vigrid_ground_v01_raw.png",
+          "crop": [
+            3,
+            3,
+            441,
+            441
+          ],
+          "tool": "Chrome ChatGPT web image generation",
+          "chat_url": "https://chatgpt.com/c/6ad1c9d7-dcc0-83e9-9f7b-6e7f52f047e5",
+          "generation_record": "records/generation_jobs_wave01.json",
+          "prompt_file": "records/vigrid_ground_prompt.txt",
+          "input_references": [
+            "references/style_reference.png"
+          ]
+        },
+        "processing_tools": [
+          "Pillow 12.1.1",
+          "project-original deterministic normalization scripts"
+        ],
+        "visual_review": {
+          "passed": true,
+          "reviewed_candidate": "candidates/vigrid_scorched_01_v04.png",
+          "reviewed_at": "2026-10-16",
+          "viewed": "#121721背景1×/4×对照；地块4×4；基础4种混铺；关卡1×角色合成",
+          "note": "暗色灰烬与少量余烬，单铺与混铺查看。",
+          "limitations": "未在Godot运行，游戏内验收由代码代理负责"
+        },
+        "tiling_preview": "previews/vigrid_scorched_01_4x4.png"
+      }
+    }
+  ],
+  "assets/sprites/ground/vigrid/scorched_02.png": [
+    {
+      "manifest": "assets/source/batch04_maps_2026-10-16/manifest.json",
+      "record": {
+        "id": "scorched_02",
+        "level": "vigrid",
+        "type": "ground",
+        "width": 64,
+        "height": 64,
+        "status": "self_check_passed_pending_game_review",
+        "candidate": "candidates/vigrid_scorched_02_v04.png",
+        "color_count": 24,
+        "alpha_values": [
+          255
+        ],
+        "bbox": [
+          0,
+          0,
+          64,
+          64
+        ],
+        "palette": "records/vigrid_palette48_v04.json",
+        "sha256": "33c892d8afe17ce56f34408bb015394ae7595f5d9ded6a5cc4a9e3c2b6befa22",
+        "checks": {
+          "exact_size": true,
+          "png_rgba": true,
+          "binary_alpha": true,
+          "palette_limit": true,
+          "transparent_margin_2px": null,
+          "style_consistency": true,
+          "no_text_watermark_scene": true,
+          "dark_background_1x_readable": true,
+          "facing_right": "not_applicable_static_environment",
+          "fixed_feet_baseline": "not_applicable_static_environment",
+          "animation": "not_applicable_single_frame",
+          "opaque_full_ground": true,
+          "seamless_4x4_visual": true,
+          "subdued_below_character_visual": true,
+          "no_prominent_repeated_landmark": true
+        },
+        "seam_metrics": {
+          "opposing_edge_mean_x": 3.177,
+          "opposing_edge_mean_y": 2.604,
+          "interior_neighbor_mean_x": 8.417,
+          "interior_neighbor_mean_y": 8.742,
+          "edge_jump_outlier_at_1_5x": false
+        },
+        "mean_rgb": [
+          38.08,
+          31.22,
+          32.01
+        ],
+        "approved_file": "approved/ground/vigrid/scorched_02.png",
+        "final_file": "sprites/ground/vigrid/scorched_02.png",
+        "frame_count": 1,
+        "fps": null,
+        "source": {
+          "raw_file": "originals/vigrid_ground_v01_raw.png",
+          "crop": [
+            890,
+            447,
+            1327,
+            884
+          ],
+          "tool": "Chrome ChatGPT web image generation",
+          "chat_url": "https://chatgpt.com/c/6ad1c9d7-dcc0-83e9-9f7b-6e7f52f047e5",
+          "generation_record": "records/generation_jobs_wave01.json",
+          "prompt_file": "records/vigrid_ground_prompt.txt",
+          "input_references": [
+            "references/style_reference.png"
+          ]
+        },
+        "processing_tools": [
+          "Pillow 12.1.1",
+          "project-original deterministic normalization scripts"
+        ],
+        "visual_review": {
+          "passed": true,
+          "reviewed_candidate": "candidates/vigrid_scorched_02_v04.png",
+          "reviewed_at": "2026-10-16",
+          "viewed": "#121721背景1×/4×对照；地块4×4；基础4种混铺；关卡1×角色合成",
+          "note": "改用较均匀灰烬区域，避开首稿显眼断枝地标；单铺与混铺查看。",
+          "limitations": "未在Godot运行，游戏内验收由代码代理负责"
+        },
+        "tiling_preview": "previews/vigrid_scorched_02_4x4.png"
+      }
+    }
+  ],
+  "assets/sprites/ground/vigrid/scorched_03.png": [
+    {
+      "manifest": "assets/source/batch04_maps_2026-10-16/manifest.json",
+      "record": {
+        "id": "scorched_03",
+        "level": "vigrid",
+        "type": "ground",
+        "width": 64,
+        "height": 64,
+        "status": "self_check_passed_pending_game_review",
+        "candidate": "candidates/vigrid_scorched_03_v04.png",
+        "color_count": 23,
+        "alpha_values": [
+          255
+        ],
+        "bbox": [
+          0,
+          0,
+          64,
+          64
+        ],
+        "palette": "records/vigrid_palette48_v04.json",
+        "sha256": "b307a804cd093754eb2ad1f7a9f31ec661981881576cd03ba821739f06127cd3",
+        "checks": {
+          "exact_size": true,
+          "png_rgba": true,
+          "binary_alpha": true,
+          "palette_limit": true,
+          "transparent_margin_2px": null,
+          "style_consistency": true,
+          "no_text_watermark_scene": true,
+          "dark_background_1x_readable": true,
+          "facing_right": "not_applicable_static_environment",
+          "fixed_feet_baseline": "not_applicable_static_environment",
+          "animation": "not_applicable_single_frame",
+          "opaque_full_ground": true,
+          "seamless_4x4_visual": true,
+          "subdued_below_character_visual": true,
+          "no_prominent_repeated_landmark": true
+        },
+        "seam_metrics": {
+          "opposing_edge_mean_x": 2.87,
+          "opposing_edge_mean_y": 2.469,
+          "interior_neighbor_mean_x": 7.275,
+          "interior_neighbor_mean_y": 7.502,
+          "edge_jump_outlier_at_1_5x": false
+        },
+        "mean_rgb": [
+          38.13,
+          31.22,
+          32.02
+        ],
+        "approved_file": "approved/ground/vigrid/scorched_03.png",
+        "final_file": "sprites/ground/vigrid/scorched_03.png",
+        "frame_count": 1,
+        "fps": null,
+        "source": {
+          "raw_file": "originals/vigrid_ground_v01_raw.png",
+          "crop": [
+            890,
+            3,
+            1327,
+            441
+          ],
+          "tool": "Chrome ChatGPT web image generation",
+          "chat_url": "https://chatgpt.com/c/6ad1c9d7-dcc0-83e9-9f7b-6e7f52f047e5",
+          "generation_record": "records/generation_jobs_wave01.json",
+          "prompt_file": "records/vigrid_ground_prompt.txt",
+          "input_references": [
+            "references/style_reference.png"
+          ]
+        },
+        "processing_tools": [
+          "Pillow 12.1.1",
+          "project-original deterministic normalization scripts"
+        ],
+        "visual_review": {
+          "passed": true,
+          "reviewed_candidate": "candidates/vigrid_scorched_03_v04.png",
+          "reviewed_at": "2026-10-16",
+          "viewed": "#121721背景1×/4×对照；地块4×4；基础4种混铺；关卡1×角色合成",
+          "note": "焦土碎块，暗反差；单铺与混铺查看。",
+          "limitations": "未在Godot运行，游戏内验收由代码代理负责"
+        },
+        "tiling_preview": "previews/vigrid_scorched_03_4x4.png"
+      }
+    }
+  ],
+  "assets/sprites/ground/vigrid/scorched_04.png": [
+    {
+      "manifest": "assets/source/batch04_maps_2026-10-16/manifest.json",
+      "record": {
+        "id": "scorched_04",
+        "level": "vigrid",
+        "type": "ground",
+        "width": 64,
+        "height": 64,
+        "status": "self_check_passed_pending_game_review",
+        "candidate": "candidates/vigrid_scorched_04_v04.png",
+        "color_count": 24,
+        "alpha_values": [
+          255
+        ],
+        "bbox": [
+          0,
+          0,
+          64,
+          64
+        ],
+        "palette": "records/vigrid_palette48_v04.json",
+        "sha256": "2d1f7e6bff2849a208e9f0abc52aeaa7a48ebcd0bf3f3128615ff9434e5727a0",
+        "checks": {
+          "exact_size": true,
+          "png_rgba": true,
+          "binary_alpha": true,
+          "palette_limit": true,
+          "transparent_margin_2px": null,
+          "style_consistency": true,
+          "no_text_watermark_scene": true,
+          "dark_background_1x_readable": true,
+          "facing_right": "not_applicable_static_environment",
+          "fixed_feet_baseline": "not_applicable_static_environment",
+          "animation": "not_applicable_single_frame",
+          "opaque_full_ground": true,
+          "seamless_4x4_visual": true,
+          "subdued_below_character_visual": true,
+          "no_prominent_repeated_landmark": true
+        },
+        "seam_metrics": {
+          "opposing_edge_mean_x": 2.026,
+          "opposing_edge_mean_y": 2.88,
+          "interior_neighbor_mean_x": 7.163,
+          "interior_neighbor_mean_y": 7.344,
+          "edge_jump_outlier_at_1_5x": false
+        },
+        "mean_rgb": [
+          38.16,
+          31.24,
+          32.03
+        ],
+        "approved_file": "approved/ground/vigrid/scorched_04.png",
+        "final_file": "sprites/ground/vigrid/scorched_04.png",
+        "frame_count": 1,
+        "fps": null,
+        "source": {
+          "raw_file": "originals/vigrid_ground_v01_raw.png",
+          "crop": [
+            1333,
+            3,
+            1771,
+            441
+          ],
+          "tool": "Chrome ChatGPT web image generation",
+          "chat_url": "https://chatgpt.com/c/6ad1c9d7-dcc0-83e9-9f7b-6e7f52f047e5",
+          "generation_record": "records/generation_jobs_wave01.json",
+          "prompt_file": "records/vigrid_ground_prompt.txt",
+          "input_references": [
+            "references/style_reference.png"
+          ]
+        },
+        "processing_tools": [
+          "Pillow 12.1.1",
+          "project-original deterministic normalization scripts"
+        ],
+        "visual_review": {
+          "passed": true,
+          "reviewed_candidate": "candidates/vigrid_scorched_04_v04.png",
+          "reviewed_at": "2026-10-16",
+          "viewed": "#121721背景1×/4×对照；地块4×4；基础4种混铺；关卡1×角色合成",
+          "note": "细焦屑变化，灰烬色一致；单铺与混铺查看。",
+          "limitations": "未在Godot运行，游戏内验收由代码代理负责"
+        },
+        "tiling_preview": "previews/vigrid_scorched_04_4x4.png"
+      }
+    }
+  ],
+  "assets/sprites/ground/vigrid/cracked_lava.png": [
+    {
+      "manifest": "assets/source/batch04_maps_2026-10-16/manifest.json",
+      "record": {
+        "id": "cracked_lava",
+        "level": "vigrid",
+        "type": "ground",
+        "width": 64,
+        "height": 64,
+        "status": "self_check_passed_pending_game_review",
+        "candidate": "candidates/vigrid_cracked_lava_v04.png",
+        "color_count": 21,
+        "alpha_values": [
+          255
+        ],
+        "bbox": [
+          0,
+          0,
+          64,
+          64
+        ],
+        "palette": "records/vigrid_palette48_v04.json",
+        "sha256": "2782e6bacb893eaf12f9b17890585008e2dafeefe9ccf571d548ad77c0f39507",
+        "checks": {
+          "exact_size": true,
+          "png_rgba": true,
+          "binary_alpha": true,
+          "palette_limit": true,
+          "transparent_margin_2px": null,
+          "style_consistency": true,
+          "no_text_watermark_scene": true,
+          "dark_background_1x_readable": true,
+          "facing_right": "not_applicable_static_environment",
+          "fixed_feet_baseline": "not_applicable_static_environment",
+          "animation": "not_applicable_single_frame",
+          "opaque_full_ground": true,
+          "seamless_4x4_visual": true,
+          "subdued_below_character_visual": true,
+          "no_prominent_repeated_landmark": true
+        },
+        "seam_metrics": {
+          "opposing_edge_mean_x": 2.12,
+          "opposing_edge_mean_y": 2.438,
+          "interior_neighbor_mean_x": 5.441,
+          "interior_neighbor_mean_y": 5.702,
+          "edge_jump_outlier_at_1_5x": false
+        },
+        "mean_rgb": [
+          38.52,
+          31.59,
+          32.29
+        ],
+        "approved_file": "approved/ground/vigrid/cracked_lava.png",
+        "final_file": "sprites/ground/vigrid/cracked_lava.png",
+        "frame_count": 1,
+        "fps": null,
+        "source": {
+          "raw_file": "originals/vigrid_ground_v01_raw.png",
+          "crop": [
+            3,
+            447,
+            441,
+            884
+          ],
+          "tool": "Chrome ChatGPT web image generation",
+          "chat_url": "https://chatgpt.com/c/6ad1c9d7-dcc0-83e9-9f7b-6e7f52f047e5",
+          "generation_record": "records/generation_jobs_wave01.json",
+          "prompt_file": "records/vigrid_ground_prompt.txt",
+          "input_references": [
+            "references/style_reference.png"
+          ]
+        },
+        "processing_tools": [
+          "Pillow 12.1.1",
+          "project-original deterministic normalization scripts"
+        ],
+        "visual_review": {
+          "passed": true,
+          "reviewed_candidate": "candidates/vigrid_cracked_lava_v04.png",
+          "reviewed_at": "2026-10-16",
+          "viewed": "#121721背景1×/4×对照；地块4×4；基础4种混铺；关卡1×角色合成",
+          "note": "黑色冷却壳占主导，细暗红裂隙；4×4查看且角色仍醒目。",
+          "limitations": "未在Godot运行，游戏内验收由代码代理负责"
+        },
+        "tiling_preview": "previews/vigrid_cracked_lava_4x4.png"
+      }
+    }
+  ],
+  "assets/sprites/props/vigrid/bifrost_fragment.png": [
+    {
+      "manifest": "assets/source/batch04_maps_2026-10-16/manifest.json",
+      "record": {
+        "id": "bifrost_fragment",
+        "level": "vigrid",
+        "type": "props",
+        "width": 96,
+        "height": 64,
+        "status": "self_check_passed_pending_game_review",
+        "candidate": "candidates/vigrid_bifrost_fragment_v04.png",
+        "color_count": 42,
+        "alpha_values": [
+          0,
+          255
+        ],
+        "bbox": [
+          10,
+          2,
+          85,
+          62
+        ],
+        "palette": "records/vigrid_palette48_v04.json",
+        "sha256": "a3948b492c7bc55c0d6333c6804593c50eecae91cc8527d9593e8d5baaf1451d",
+        "checks": {
+          "exact_size": true,
+          "png_rgba": true,
+          "binary_alpha": true,
+          "palette_limit": true,
+          "transparent_margin_2px": true,
+          "style_consistency": true,
+          "no_text_watermark_scene": true,
+          "dark_background_1x_readable": true,
+          "facing_right": "not_applicable_static_environment",
+          "fixed_feet_baseline": "not_applicable_static_environment",
+          "animation": "not_applicable_single_frame"
+        },
+        "approved_file": "approved/props/vigrid/bifrost_fragment.png",
+        "final_file": "sprites/props/vigrid/bifrost_fragment.png",
+        "frame_count": 1,
+        "fps": null,
+        "source": {
+          "raw_file": "originals/vigrid_props_v01_raw.png",
+          "crop": [
+            570,
+            525,
+            1120,
+            1005
+          ],
+          "tool": "Chrome ChatGPT web image generation",
+          "chat_url": "https://chatgpt.com/c/6ad1caa6-fbe8-83ea-8344-846f9045c1e0",
+          "generation_record": "records/generation_jobs_wave02.json",
+          "prompt_file": "records/vigrid_props_prompt.txt",
+          "input_references": [
+            "references/style_reference.png"
+          ]
+        },
+        "processing_tools": [
+          "Pillow 12.1.1",
+          "project-original deterministic normalization scripts"
+        ],
+        "visual_review": {
+          "passed": true,
+          "reviewed_candidate": "candidates/vigrid_bifrost_fragment_v04.png",
+          "reviewed_at": "2026-10-16",
+          "viewed": "#121721背景1×/4×对照；地块4×4；基础4种混铺；关卡1×角色合成",
+          "note": "96×64破裂桥石，v04保留低饱和彩虹色脉；与首稿丢失虹色的v03区别明确。",
+          "limitations": "未在Godot运行，游戏内验收由代码代理负责"
+        }
+      }
+    }
+  ],
+  "assets/sprites/props/vigrid/fallen_shield.png": [
+    {
+      "manifest": "assets/source/batch04_maps_2026-10-16/manifest.json",
+      "record": {
+        "id": "fallen_shield",
+        "level": "vigrid",
+        "type": "props",
+        "width": 48,
+        "height": 48,
+        "status": "self_check_passed_pending_game_review",
+        "candidate": "candidates/vigrid_fallen_shield_v04.png",
+        "color_count": 39,
+        "alpha_values": [
+          0,
+          255
+        ],
+        "bbox": [
+          2,
+          7,
+          46,
+          46
+        ],
+        "palette": "records/vigrid_palette48_v04.json",
+        "sha256": "82f3244549a336404a11cbb2399cf064febafd9b513e2936ac92c768e5076f5d",
+        "checks": {
+          "exact_size": true,
+          "png_rgba": true,
+          "binary_alpha": true,
+          "palette_limit": true,
+          "transparent_margin_2px": true,
+          "style_consistency": true,
+          "no_text_watermark_scene": true,
+          "dark_background_1x_readable": true,
+          "facing_right": "not_applicable_static_environment",
+          "fixed_feet_baseline": "not_applicable_static_environment",
+          "animation": "not_applicable_single_frame"
+        },
+        "approved_file": "approved/props/vigrid/fallen_shield.png",
+        "final_file": "sprites/props/vigrid/fallen_shield.png",
+        "frame_count": 1,
+        "fps": null,
+        "source": {
+          "raw_file": "originals/vigrid_props_v01_raw.png",
+          "crop": [
+            540,
+            100,
+            920,
+            455
+          ],
+          "tool": "Chrome ChatGPT web image generation",
+          "chat_url": "https://chatgpt.com/c/6ad1caa6-fbe8-83ea-8344-846f9045c1e0",
+          "generation_record": "records/generation_jobs_wave02.json",
+          "prompt_file": "records/vigrid_props_prompt.txt",
+          "input_references": [
+            "references/style_reference.png"
+          ]
+        },
+        "processing_tools": [
+          "Pillow 12.1.1",
+          "project-original deterministic normalization scripts"
+        ],
+        "visual_review": {
+          "passed": true,
+          "reviewed_candidate": "candidates/vigrid_fallen_shield_v04.png",
+          "reviewed_at": "2026-10-16",
+          "viewed": "#121721背景1×/4×对照；地块4×4；基础4种混铺；关卡1×角色合成",
+          "note": "48×48圆盾、铁盾脐及破木板；移除相邻手臂造成的切图碎片。",
+          "limitations": "未在Godot运行，游戏内验收由代码代理负责"
+        }
+      }
+    }
+  ],
+  "assets/sprites/props/vigrid/burning_wreckage.png": [
+    {
+      "manifest": "assets/source/batch04_maps_2026-10-16/manifest.json",
+      "record": {
+        "id": "burning_wreckage",
+        "level": "vigrid",
+        "type": "props",
+        "width": 96,
+        "height": 96,
+        "status": "self_check_passed_pending_game_review",
+        "candidate": "candidates/vigrid_burning_wreckage_v04.png",
+        "color_count": 43,
+        "alpha_values": [
+          0,
+          255
+        ],
+        "bbox": [
+          2,
+          7,
+          94,
+          94
+        ],
+        "palette": "records/vigrid_palette48_v04.json",
+        "sha256": "0db9ddab498cdfda609eef628c1128fd985aae113fb2315698c0cf1a4b21dffc",
+        "checks": {
+          "exact_size": true,
+          "png_rgba": true,
+          "binary_alpha": true,
+          "palette_limit": true,
+          "transparent_margin_2px": true,
+          "style_consistency": true,
+          "no_text_watermark_scene": true,
+          "dark_background_1x_readable": true,
+          "facing_right": "not_applicable_static_environment",
+          "fixed_feet_baseline": "not_applicable_static_environment",
+          "animation": "not_applicable_single_frame"
+        },
+        "approved_file": "approved/props/vigrid/burning_wreckage.png",
+        "final_file": "sprites/props/vigrid/burning_wreckage.png",
+        "frame_count": 1,
+        "fps": null,
+        "source": {
+          "raw_file": "originals/vigrid_props_v01_raw.png",
+          "crop": [
+            20,
+            485,
+            565,
+            1010
+          ],
+          "tool": "Chrome ChatGPT web image generation",
+          "chat_url": "https://chatgpt.com/c/6ad1caa6-fbe8-83ea-8344-846f9045c1e0",
+          "generation_record": "records/generation_jobs_wave02.json",
+          "prompt_file": "records/vigrid_props_prompt.txt",
+          "input_references": [
+            "references/style_reference.png"
+          ]
+        },
+        "processing_tools": [
+          "Pillow 12.1.1",
+          "project-original deterministic normalization scripts"
+        ],
+        "visual_review": {
+          "passed": true,
+          "reviewed_candidate": "candidates/vigrid_burning_wreckage_v04.png",
+          "reviewed_at": "2026-10-16",
+          "viewed": "#121721背景1×/4×对照；地块4×4；基础4种混铺；关卡1×角色合成",
+          "note": "96×96烧毁车轮梁架，v04恢复暖色火焰；单张静态，非火焰动画。",
+          "limitations": "未在Godot运行，游戏内验收由代码代理负责"
+        }
+      }
+    }
+  ],
+  "assets/sprites/props/vigrid/broken_weapons.png": [
+    {
+      "manifest": "assets/source/batch04_maps_2026-10-16/manifest.json",
+      "record": {
+        "id": "broken_weapons",
+        "level": "vigrid",
+        "type": "props",
+        "width": 64,
+        "height": 64,
+        "status": "self_check_passed_pending_game_review",
+        "candidate": "candidates/vigrid_broken_weapons_v05.png",
+        "color_count": 40,
+        "alpha_values": [
+          0,
+          255
+        ],
+        "bbox": [
+          4,
+          2,
+          59,
+          62
+        ],
+        "palette": "records/vigrid_palette48_v04.json",
+        "sha256": "79093911f77127c3554d1216806de76ff2101cf62153f5bc06f504d40b371667",
+        "checks": {
+          "exact_size": true,
+          "png_rgba": true,
+          "binary_alpha": true,
+          "palette_limit": true,
+          "transparent_margin_2px": true,
+          "style_consistency": true,
+          "no_text_watermark_scene": true,
+          "dark_background_1x_readable": true,
+          "facing_right": "not_applicable_static_environment",
+          "fixed_feet_baseline": "not_applicable_static_environment",
+          "animation": "not_applicable_single_frame"
+        },
+        "approved_file": "approved/props/vigrid/broken_weapons.png",
+        "final_file": "sprites/props/vigrid/broken_weapons.png",
+        "frame_count": 1,
+        "fps": null,
+        "source": {
+          "raw_file": "originals/pine_weapons_v02_raw.png",
+          "crop": [
+            1040,
+            235,
+            1625,
+            855
+          ],
+          "tool": "Chrome ChatGPT web image generation",
+          "chat_url": "https://chatgpt.com/c/6ad1d05c-b2c0-83ea-bf9c-9bea3317232b",
+          "generation_record": "records/generation_jobs_wave04.json",
+          "prompt_file": "records/pine_weapons_v02_prompt.txt",
+          "input_references": [
+            "references/style_reference.png",
+            "candidates/midgard_dead_pine_01_v03.png",
+            "candidates/vigrid_broken_weapons_v04.png"
+          ]
+        },
+        "processing_tools": [
+          "Pillow 12.1.1",
+          "project-original deterministic normalization scripts"
+        ],
+        "visual_review": {
+          "passed": true,
+          "reviewed_candidate": "candidates/vigrid_broken_weapons_v05.png",
+          "reviewed_at": "2026-10-16",
+          "viewed": "#121721背景1×/4×对照；地块4×4；基础4种混铺；关卡1×角色合成",
+          "note": "重做后可见断刃截面、无矛头的碎裂木杆及落地矛头；冬季蓝白残色已映射为灰烬色。",
+          "limitations": "未在Godot运行，游戏内验收由代码代理负责"
+        }
+      }
+    }
+  ],
+  "assets/sprites/props/vigrid/giant_remains.png": [
+    {
+      "manifest": "assets/source/batch04_maps_2026-10-16/manifest.json",
+      "record": {
+        "id": "giant_remains",
+        "level": "vigrid",
+        "type": "props",
+        "width": 96,
+        "height": 64,
+        "status": "self_check_passed_pending_game_review",
+        "candidate": "candidates/vigrid_giant_remains_v04.png",
+        "color_count": 39,
+        "alpha_values": [
+          0,
+          255
+        ],
+        "bbox": [
+          9,
+          2,
+          87,
+          62
+        ],
+        "palette": "records/vigrid_palette48_v04.json",
+        "sha256": "6ae25e977fcbd8b4b4310ce4550e0024cc71c1728c2b9063e85c0e8b7dcb6998",
+        "checks": {
+          "exact_size": true,
+          "png_rgba": true,
+          "binary_alpha": true,
+          "palette_limit": true,
+          "transparent_margin_2px": true,
+          "style_consistency": true,
+          "no_text_watermark_scene": true,
+          "dark_background_1x_readable": true,
+          "facing_right": "not_applicable_static_environment",
+          "fixed_feet_baseline": "not_applicable_static_environment",
+          "animation": "not_applicable_single_frame"
+        },
+        "approved_file": "approved/props/vigrid/giant_remains.png",
+        "final_file": "sprites/props/vigrid/giant_remains.png",
+        "frame_count": 1,
+        "fps": null,
+        "source": {
+          "raw_file": "originals/vigrid_props_v01_raw.png",
+          "crop": [
+            950,
+            30,
+            1520,
+            480
+          ],
+          "tool": "Chrome ChatGPT web image generation",
+          "chat_url": "https://chatgpt.com/c/6ad1caa6-fbe8-83ea-8344-846f9045c1e0",
+          "generation_record": "records/generation_jobs_wave02.json",
+          "prompt_file": "records/vigrid_props_prompt.txt",
+          "input_references": [
+            "references/style_reference.png"
+          ]
+        },
+        "processing_tools": [
+          "Pillow 12.1.1",
+          "project-original deterministic normalization scripts"
+        ],
+        "visual_review": {
+          "passed": true,
+          "reviewed_candidate": "candidates/vigrid_giant_remains_v04.png",
+          "reviewed_at": "2026-10-16",
+          "viewed": "#121721背景1×/4×对照；地块4×4；基础4种混铺；关卡1×角色合成",
+          "note": "96×64巨人手臂局部与残布，无血腥脏器；完整手部和透明留边。",
+          "limitations": "未在Godot运行，游戏内验收由代码代理负责"
+        }
+      }
+    }
+  ],
+  "assets/sprites/characters/swordsman.png": [
+    {
+      "manifest": "assets/source/batch01_swordsman_2026-10-16/manifest.json",
+      "record": {
+        "id": "swordsman",
+        "status": "self_check_passed_pending_game_review",
+        "file": "sprites/characters/swordsman.png",
+        "source": "originals/swordsman_base_v01.png",
+        "approved_copy": "approved/swordsman.png",
+        "candidate": "candidates/swordsman_nearest_v02.png",
+        "tools": [
+          "ChatGPT web in Chrome",
+          "Pillow 11.1.0 local normalization"
+        ],
+        "generation_url": "https://chatgpt.com/c/6ad124f1-7878-83ea-8bfa-0dba7d08a575",
+        "prompt": "records/swordsman_base_prompt.txt",
+        "references": [
+          "assets/source/norse_pixel_2026-10-16_overview.png"
+        ],
+        "size": [
+          64,
+          64
+        ],
+        "frame_size": [
+          64,
+          64
+        ],
+        "frame_count": 1,
+        "colors": 32,
+        "batch_palette": "records/swordsman_batch_palette.json",
+        "sha256": "93ffceadeceda21ba869017db71412302a79a529068e4c2580d6ef798fff11b9",
+        "frames": [
+          {
+            "index": 0,
+            "size": [
+              64,
+              64
+            ],
+            "bbox_exclusive": [
+              20,
+              12,
+              44,
+              60
+            ],
+            "colors": 32,
+            "baseline_y": 59
+          }
+        ],
+        "checks": {
+          "exact_size_png_rgba": true,
+          "binary_transparency": true,
+          "palette_subset": true,
+          "two_pixel_margin": true,
+          "centered": true,
+          "fixed_foot_baseline": true,
+          "facing_right_visual_review": true,
+          "style_light_outline_visual_review": true,
+          "one_x_dark_background_review": true,
+          "no_text_watermark_scene_visual_review": true,
+          "anatomy_and_proportions_frame_review": true,
+          "loop_seam": "not_applicable_static"
+        },
+        "game_test": "not_performed"
+      }
+    }
+  ],
+  "assets/sprites/characters/gunslinger.png": [
+    {
+      "manifest": "assets/source/taskJ6_nova_2026-10-19/manifest.json",
+      "record": {
+        "project_path": "assets/sprites/characters/gunslinger.png",
+        "copy": "references/gunslinger.png",
+        "sha256": "754134580682ef324d1b7e90fd2849807fe4622bc702a61bcd305a449fef9f52",
+        "role": "project-owned style reference; no external character design"
+      }
+    },
+    {
+      "manifest": "assets/source/taskJ8_god_feedback_2026-10-19/manifest.json",
+      "record": {
+        "project_path": "assets/sprites/characters/gunslinger.png",
+        "copy": "references/gunslinger.png",
+        "sha256": "754134580682ef324d1b7e90fd2849807fe4622bc702a61bcd305a449fef9f52",
+        "role": "project-owned style reference; no external character design"
+      }
+    },
+    {
+      "manifest": "assets/source/taskJ5_blades_2026-10-19/manifest.json",
+      "record": {
+        "project_path": "assets/sprites/characters/gunslinger.png",
+        "copy": "references/gunslinger.png",
+        "sha256": "754134580682ef324d1b7e90fd2849807fe4622bc702a61bcd305a449fef9f52",
+        "role": "project-owned style reference; no external character design"
+      }
+    },
+    {
+      "manifest": "assets/source/batch07_combat_characters_2026-10-16/manifest.json",
+      "record": {
+        "id": "gunslinger",
+        "candidate": "candidates/gunslinger_v02.png",
+        "version": "v02",
+        "status": "art_self_check_passed_pending_game_review",
+        "source": "originals/gunslinger_v01_raw.png",
+        "tool": "built-in image_gen; Pillow format normalization",
+        "generation_record": "records/builtin_C_static_jobs.json",
+        "frames": 1,
+        "frame_size": [
+          64,
+          64
+        ],
+        "size": [
+          64,
+          64
+        ],
+        "fps": null,
+        "baseline": 59,
+        "bboxes": [
+          [
+            22,
+            12,
+            42,
+            60
+          ]
+        ],
+        "colors": 46,
+        "reference_palette": "records/gunslinger_palette.json",
+        "alpha_values": [
+          0,
+          255
+        ],
+        "sha256": "754134580682ef324d1b7e90fd2849807fe4622bc702a61bcd305a449fef9f52",
+        "output": "assets/sprites/characters/gunslinger.png",
+        "approved": "approved/gunslinger.png",
+        "checks": {
+          "exact_size_rgba_binary_alpha": true,
+          "same_character_fixed_palette": true,
+          "right_facing_margin2": true,
+          "body_height48_feet_y59": true,
+          "style_upper_left_light_dark_outline": true,
+          "dark_background1x4x_visual_review": true,
+          "no_text_watermarks_scene_effects": true,
+          "game_tested": false
+        },
+        "review_image": "previews/C_static_compare_1x_and_4x.png",
+        "review_note": "Reserved three steel gray tones in fixed48-color palette, removed redundant near-black shades. Static silhouette, baseline and sizing unchanged. Reviewed enlarged static and original1x sprite.",
+        "ground_tiling": "not_applicable_character_asset",
+        "previews": {
+          "contact_1x": "previews/gunslinger_v02_contact_1x.png",
+          "contact_4x": "previews/gunslinger_v02_contact_4x.png"
+        }
+      }
+    },
+    {
+      "manifest": "assets/source/taskJ2_west_2026-10-19/manifest.json",
+      "record": {
+        "project_path": "assets/sprites/characters/gunslinger.png",
+        "copy": "references/gunslinger.png",
+        "sha256": "754134580682ef324d1b7e90fd2849807fe4622bc702a61bcd305a449fef9f52",
+        "role": "project-owned style reference; no external character design"
+      }
+    },
+    {
+      "manifest": "assets/source/taskJ2_west_2026-10-19/manifest.json",
+      "record": {
+        "project_path": "assets/sprites/characters/gunslinger.png",
+        "copy": "references/gunslinger.png",
+        "sha256": "754134580682ef324d1b7e90fd2849807fe4622bc702a61bcd305a449fef9f52",
+        "role": "project-owned style reference; no external character design"
+      }
+    },
+    {
+      "manifest": "assets/source/taskJ7_hit_death_2026-10-19/manifest.json",
+      "record": {
+        "project_path": "assets/sprites/characters/gunslinger.png",
+        "copy": "references/gunslinger.png",
+        "sha256": "754134580682ef324d1b7e90fd2849807fe4622bc702a61bcd305a449fef9f52",
+        "role": "project-owned style reference; no external character design"
+      }
+    },
+    {
+      "manifest": "assets/source/taskJ7_hit_death_2026-10-19/manifest.json",
+      "record": {
+        "project_path": "assets/sprites/characters/gunslinger.png",
+        "copy": "references/gunslinger.png",
+        "sha256": "754134580682ef324d1b7e90fd2849807fe4622bc702a61bcd305a449fef9f52",
+        "role": "project-owned style reference; no external character design"
+      }
+    },
+    {
+      "manifest": "assets/source/taskJ7_hit_death_2026-10-19/manifest.json",
+      "record": {
+        "project_path": "assets/sprites/characters/gunslinger.png",
+        "copy": "references/gunslinger.png",
+        "sha256": "754134580682ef324d1b7e90fd2849807fe4622bc702a61bcd305a449fef9f52",
+        "role": "project-owned style reference; no external character design"
+      }
+    },
+    {
+      "manifest": "assets/source/taskJ3_formation_2026-10-19/manifest.json",
+      "record": {
+        "project_path": "assets/sprites/characters/gunslinger.png",
+        "copy": "references/gunslinger.png",
+        "sha256": "754134580682ef324d1b7e90fd2849807fe4622bc702a61bcd305a449fef9f52",
+        "role": "project-owned style reference; no external character design"
+      }
+    },
+    {
+      "manifest": "assets/source/taskJ3_formation_2026-10-19/manifest.json",
+      "record": {
+        "project_path": "assets/sprites/characters/gunslinger.png",
+        "copy": "references/gunslinger.png",
+        "sha256": "754134580682ef324d1b7e90fd2849807fe4622bc702a61bcd305a449fef9f52",
+        "role": "project-owned style reference; no external character design"
+      }
+    },
+    {
+      "manifest": "assets/source/taskJ1_dimension_2026-10-19/manifest.json",
+      "record": {
+        "project_path": "assets/sprites/characters/gunslinger.png",
+        "copy": "references/gunslinger.png",
+        "sha256": "754134580682ef324d1b7e90fd2849807fe4622bc702a61bcd305a449fef9f52",
+        "role": "project-owned style reference; no external character design"
+      }
+    },
+    {
+      "manifest": "assets/source/taskJ4_stonehenge_2026-10-19/manifest.json",
+      "record": {
+        "project_path": "assets/sprites/characters/gunslinger.png",
+        "copy": "references/gunslinger.png",
+        "sha256": "754134580682ef324d1b7e90fd2849807fe4622bc702a61bcd305a449fef9f52",
+        "role": "project-owned style reference; no external character design"
+      }
+    },
+    {
+      "manifest": "assets/source/taskJ4_stonehenge_2026-10-19/manifest.json",
+      "record": {
+        "project_path": "assets/sprites/characters/gunslinger.png",
+        "copy": "references/gunslinger.png",
+        "sha256": "754134580682ef324d1b7e90fd2849807fe4622bc702a61bcd305a449fef9f52",
+        "role": "project-owned style reference; no external character design"
+      }
+    },
+    {
+      "manifest": "assets/source/taskJ4_stonehenge_2026-10-19/manifest.json",
+      "record": {
+        "project_path": "assets/sprites/characters/gunslinger.png",
+        "copy": "references/gunslinger.png",
+        "sha256": "754134580682ef324d1b7e90fd2849807fe4622bc702a61bcd305a449fef9f52",
+        "role": "project-owned style reference; no external character design"
+      }
+    }
+  ],
+  "assets/sprites/characters/assassin.png": [
+    {
+      "manifest": "assets/source/taskJ6_nova_2026-10-19/manifest.json",
+      "record": {
+        "project_path": "assets/sprites/characters/assassin.png",
+        "copy": "references/assassin.png",
+        "sha256": "36f61e50bcfb173863e5abc69afc70ef10ae3d17bb6bf7bab8a31d42fcc2a772",
+        "role": "project-owned style reference; no external character design"
+      }
+    },
+    {
+      "manifest": "assets/source/taskJ8_god_feedback_2026-10-19/manifest.json",
+      "record": {
+        "project_path": "assets/sprites/characters/assassin.png",
+        "copy": "references/assassin.png",
+        "sha256": "36f61e50bcfb173863e5abc69afc70ef10ae3d17bb6bf7bab8a31d42fcc2a772",
+        "role": "project-owned style reference; no external character design"
+      }
+    },
+    {
+      "manifest": "assets/source/taskJ5_blades_2026-10-19/manifest.json",
+      "record": {
+        "project_path": "assets/sprites/characters/assassin.png",
+        "copy": "references/assassin.png",
+        "sha256": "36f61e50bcfb173863e5abc69afc70ef10ae3d17bb6bf7bab8a31d42fcc2a772",
+        "role": "project-owned style reference; no external character design"
+      }
+    },
+    {
+      "manifest": "assets/source/batch07_combat_characters_2026-10-16/manifest.json",
+      "record": {
+        "id": "assassin",
+        "candidate": "candidates/assassin_v02.png",
+        "version": "v02",
+        "status": "art_self_check_passed_pending_game_review",
+        "source": "originals/assassin_v01_raw.png",
+        "tool": "built-in image_gen; Pillow format normalization",
+        "generation_record": "records/builtin_C_static_jobs.json",
+        "frames": 1,
+        "frame_size": [
+          64,
+          64
+        ],
+        "size": [
+          64,
+          64
+        ],
+        "fps": null,
+        "baseline": 59,
+        "bboxes": [
+          [
+            13,
+            12,
+            51,
+            60
+          ]
+        ],
+        "colors": 46,
+        "reference_palette": "records/assassin_palette.json",
+        "alpha_values": [
+          0,
+          255
+        ],
+        "sha256": "36f61e50bcfb173863e5abc69afc70ef10ae3d17bb6bf7bab8a31d42fcc2a772",
+        "output": "assets/sprites/characters/assassin.png",
+        "approved": "approved/assassin.png",
+        "checks": {
+          "exact_size_rgba_binary_alpha": true,
+          "same_character_fixed_palette": true,
+          "right_facing_margin2": true,
+          "body_height48_feet_y59": true,
+          "style_upper_left_light_dark_outline": true,
+          "dark_background1x4x_visual_review": true,
+          "no_text_watermarks_scene_effects": true,
+          "game_tested": false
+        },
+        "review_image": "previews/C_static_compare_1x_and_4x.png",
+        "review_note": "Reserved three steel gray tones in fixed48-color palette, removed redundant near-black shades. Static silhouette, baseline and sizing unchanged. Reviewed enlarged static and original1x sprite.",
+        "ground_tiling": "not_applicable_character_asset",
+        "previews": {
+          "contact_1x": "previews/assassin_v02_contact_1x.png",
+          "contact_4x": "previews/assassin_v02_contact_4x.png"
+        }
+      }
+    },
+    {
+      "manifest": "assets/source/taskJ2_west_2026-10-19/manifest.json",
+      "record": {
+        "project_path": "assets/sprites/characters/assassin.png",
+        "copy": "references/assassin.png",
+        "sha256": "36f61e50bcfb173863e5abc69afc70ef10ae3d17bb6bf7bab8a31d42fcc2a772",
+        "role": "project-owned style reference; no external character design"
+      }
+    },
+    {
+      "manifest": "assets/source/taskJ2_west_2026-10-19/manifest.json",
+      "record": {
+        "project_path": "assets/sprites/characters/assassin.png",
+        "copy": "references/assassin.png",
+        "sha256": "36f61e50bcfb173863e5abc69afc70ef10ae3d17bb6bf7bab8a31d42fcc2a772",
+        "role": "project-owned style reference; no external character design"
+      }
+    },
+    {
+      "manifest": "assets/source/taskJ7_hit_death_2026-10-19/manifest.json",
+      "record": {
+        "project_path": "assets/sprites/characters/assassin.png",
+        "copy": "references/assassin.png",
+        "sha256": "36f61e50bcfb173863e5abc69afc70ef10ae3d17bb6bf7bab8a31d42fcc2a772",
+        "role": "project-owned style reference; no external character design"
+      }
+    },
+    {
+      "manifest": "assets/source/taskJ7_hit_death_2026-10-19/manifest.json",
+      "record": {
+        "project_path": "assets/sprites/characters/assassin.png",
+        "copy": "references/assassin.png",
+        "sha256": "36f61e50bcfb173863e5abc69afc70ef10ae3d17bb6bf7bab8a31d42fcc2a772",
+        "role": "project-owned style reference; no external character design"
+      }
+    },
+    {
+      "manifest": "assets/source/taskJ7_hit_death_2026-10-19/manifest.json",
+      "record": {
+        "project_path": "assets/sprites/characters/assassin.png",
+        "copy": "references/assassin.png",
+        "sha256": "36f61e50bcfb173863e5abc69afc70ef10ae3d17bb6bf7bab8a31d42fcc2a772",
+        "role": "project-owned style reference; no external character design"
+      }
+    },
+    {
+      "manifest": "assets/source/taskJ3_formation_2026-10-19/manifest.json",
+      "record": {
+        "project_path": "assets/sprites/characters/assassin.png",
+        "copy": "references/assassin.png",
+        "sha256": "36f61e50bcfb173863e5abc69afc70ef10ae3d17bb6bf7bab8a31d42fcc2a772",
+        "role": "project-owned style reference; no external character design"
+      }
+    },
+    {
+      "manifest": "assets/source/taskJ3_formation_2026-10-19/manifest.json",
+      "record": {
+        "project_path": "assets/sprites/characters/assassin.png",
+        "copy": "references/assassin.png",
+        "sha256": "36f61e50bcfb173863e5abc69afc70ef10ae3d17bb6bf7bab8a31d42fcc2a772",
+        "role": "project-owned style reference; no external character design"
+      }
+    },
+    {
+      "manifest": "assets/source/taskJ1_dimension_2026-10-19/manifest.json",
+      "record": {
+        "project_path": "assets/sprites/characters/assassin.png",
+        "copy": "references/assassin.png",
+        "sha256": "36f61e50bcfb173863e5abc69afc70ef10ae3d17bb6bf7bab8a31d42fcc2a772",
+        "role": "project-owned style reference; no external character design"
+      }
+    },
+    {
+      "manifest": "assets/source/taskJ4_stonehenge_2026-10-19/manifest.json",
+      "record": {
+        "project_path": "assets/sprites/characters/assassin.png",
+        "copy": "references/assassin.png",
+        "sha256": "36f61e50bcfb173863e5abc69afc70ef10ae3d17bb6bf7bab8a31d42fcc2a772",
+        "role": "project-owned style reference; no external character design"
+      }
+    },
+    {
+      "manifest": "assets/source/taskJ4_stonehenge_2026-10-19/manifest.json",
+      "record": {
+        "project_path": "assets/sprites/characters/assassin.png",
+        "copy": "references/assassin.png",
+        "sha256": "36f61e50bcfb173863e5abc69afc70ef10ae3d17bb6bf7bab8a31d42fcc2a772",
+        "role": "project-owned style reference; no external character design"
+      }
+    },
+    {
+      "manifest": "assets/source/taskJ4_stonehenge_2026-10-19/manifest.json",
+      "record": {
+        "project_path": "assets/sprites/characters/assassin.png",
+        "copy": "references/assassin.png",
+        "sha256": "36f61e50bcfb173863e5abc69afc70ef10ae3d17bb6bf7bab8a31d42fcc2a772",
+        "role": "project-owned style reference; no external character design"
+      }
+    }
+  ],
+  "assets/sprites/characters/mage.png": [
+    {
+      "manifest": "assets/source/taskJ6_nova_2026-10-19/manifest.json",
+      "record": {
+        "project_path": "assets/sprites/characters/mage.png",
+        "copy": "references/mage.png",
+        "sha256": "3cbb5f8a32b7cb79bdfa52f38c7dbce3c487d0d9b50f25470967f904cf2ed90b",
+        "role": "project-owned style reference; no external character design"
+      }
+    },
+    {
+      "manifest": "assets/source/taskJ8_god_feedback_2026-10-19/manifest.json",
+      "record": {
+        "project_path": "assets/sprites/characters/mage.png",
+        "copy": "references/mage.png",
+        "sha256": "3cbb5f8a32b7cb79bdfa52f38c7dbce3c487d0d9b50f25470967f904cf2ed90b",
+        "role": "project-owned style reference; no external character design"
+      }
+    },
+    {
+      "manifest": "assets/source/taskJ5_blades_2026-10-19/manifest.json",
+      "record": {
+        "project_path": "assets/sprites/characters/mage.png",
+        "copy": "references/mage.png",
+        "sha256": "3cbb5f8a32b7cb79bdfa52f38c7dbce3c487d0d9b50f25470967f904cf2ed90b",
+        "role": "project-owned style reference; no external character design"
+      }
+    },
+    {
+      "manifest": "assets/source/batch07_combat_characters_2026-10-16/manifest.json",
+      "record": {
+        "id": "mage",
+        "candidate": "candidates/mage_v01.png",
+        "version": "v01",
+        "status": "art_self_check_passed_pending_game_review",
+        "source": "originals/mage_v01_raw.png",
+        "tool": "built-in image_gen; Pillow format normalization",
+        "generation_record": "records/builtin_C_static_jobs.json",
+        "frames": 1,
+        "frame_size": [
+          64,
+          64
+        ],
+        "size": [
+          64,
+          64
+        ],
+        "fps": null,
+        "baseline": 59,
+        "bboxes": [
+          [
+            20,
+            12,
+            43,
+            60
+          ]
+        ],
+        "colors": 43,
+        "reference_palette": "records/mage_palette.json",
+        "alpha_values": [
+          0,
+          255
+        ],
+        "sha256": "3cbb5f8a32b7cb79bdfa52f38c7dbce3c487d0d9b50f25470967f904cf2ed90b",
+        "output": "assets/sprites/characters/mage.png",
+        "approved": "approved/mage.png",
+        "checks": {
+          "exact_size_rgba_binary_alpha": true,
+          "body_height_about48_feet_y59": true,
+          "right_facing_centered_margin2": true,
+          "costume_attributes_compared_with_task_book": true,
+          "style_scale_compared_to_swordsman": true,
+          "dark_background_actual1x4x_local_contact_reviewed": true,
+          "no_text_watermarks_background_effects": true,
+          "game_tested": false
+        },
+        "review_image": "previews/C_static_compare_1x_and_4x.png",
+        "ground_tiling": "not_applicable_character_asset",
+        "previews": {
+          "contact_1x": "previews/mage_v01_contact_1x.png",
+          "contact_4x": "previews/mage_v01_contact_4x.png"
+        }
+      }
+    },
+    {
+      "manifest": "assets/source/taskJ2_west_2026-10-19/manifest.json",
+      "record": {
+        "project_path": "assets/sprites/characters/mage.png",
+        "copy": "references/mage.png",
+        "sha256": "3cbb5f8a32b7cb79bdfa52f38c7dbce3c487d0d9b50f25470967f904cf2ed90b",
+        "role": "project-owned style reference; no external character design"
+      }
+    },
+    {
+      "manifest": "assets/source/taskJ2_west_2026-10-19/manifest.json",
+      "record": {
+        "project_path": "assets/sprites/characters/mage.png",
+        "copy": "references/mage.png",
+        "sha256": "3cbb5f8a32b7cb79bdfa52f38c7dbce3c487d0d9b50f25470967f904cf2ed90b",
+        "role": "project-owned style reference; no external character design"
+      }
+    },
+    {
+      "manifest": "assets/source/taskJ7_hit_death_2026-10-19/manifest.json",
+      "record": {
+        "project_path": "assets/sprites/characters/mage.png",
+        "copy": "references/mage.png",
+        "sha256": "3cbb5f8a32b7cb79bdfa52f38c7dbce3c487d0d9b50f25470967f904cf2ed90b",
+        "role": "project-owned style reference; no external character design"
+      }
+    },
+    {
+      "manifest": "assets/source/taskJ7_hit_death_2026-10-19/manifest.json",
+      "record": {
+        "project_path": "assets/sprites/characters/mage.png",
+        "copy": "references/mage.png",
+        "sha256": "3cbb5f8a32b7cb79bdfa52f38c7dbce3c487d0d9b50f25470967f904cf2ed90b",
+        "role": "project-owned style reference; no external character design"
+      }
+    },
+    {
+      "manifest": "assets/source/taskJ7_hit_death_2026-10-19/manifest.json",
+      "record": {
+        "project_path": "assets/sprites/characters/mage.png",
+        "copy": "references/mage.png",
+        "sha256": "3cbb5f8a32b7cb79bdfa52f38c7dbce3c487d0d9b50f25470967f904cf2ed90b",
+        "role": "project-owned style reference; no external character design"
+      }
+    },
+    {
+      "manifest": "assets/source/taskJ3_formation_2026-10-19/manifest.json",
+      "record": {
+        "project_path": "assets/sprites/characters/mage.png",
+        "copy": "references/mage.png",
+        "sha256": "3cbb5f8a32b7cb79bdfa52f38c7dbce3c487d0d9b50f25470967f904cf2ed90b",
+        "role": "project-owned style reference; no external character design"
+      }
+    },
+    {
+      "manifest": "assets/source/taskJ3_formation_2026-10-19/manifest.json",
+      "record": {
+        "project_path": "assets/sprites/characters/mage.png",
+        "copy": "references/mage.png",
+        "sha256": "3cbb5f8a32b7cb79bdfa52f38c7dbce3c487d0d9b50f25470967f904cf2ed90b",
+        "role": "project-owned style reference; no external character design"
+      }
+    },
+    {
+      "manifest": "assets/source/taskJ1_dimension_2026-10-19/manifest.json",
+      "record": {
+        "project_path": "assets/sprites/characters/mage.png",
+        "copy": "references/mage.png",
+        "sha256": "3cbb5f8a32b7cb79bdfa52f38c7dbce3c487d0d9b50f25470967f904cf2ed90b",
+        "role": "project-owned style reference; no external character design"
+      }
+    },
+    {
+      "manifest": "assets/source/taskJ4_stonehenge_2026-10-19/manifest.json",
+      "record": {
+        "project_path": "assets/sprites/characters/mage.png",
+        "copy": "references/mage.png",
+        "sha256": "3cbb5f8a32b7cb79bdfa52f38c7dbce3c487d0d9b50f25470967f904cf2ed90b",
+        "role": "project-owned style reference; no external character design"
+      }
+    },
+    {
+      "manifest": "assets/source/taskJ4_stonehenge_2026-10-19/manifest.json",
+      "record": {
+        "project_path": "assets/sprites/characters/mage.png",
+        "copy": "references/mage.png",
+        "sha256": "3cbb5f8a32b7cb79bdfa52f38c7dbce3c487d0d9b50f25470967f904cf2ed90b",
+        "role": "project-owned style reference; no external character design"
+      }
+    },
+    {
+      "manifest": "assets/source/taskJ4_stonehenge_2026-10-19/manifest.json",
+      "record": {
+        "project_path": "assets/sprites/characters/mage.png",
+        "copy": "references/mage.png",
+        "sha256": "3cbb5f8a32b7cb79bdfa52f38c7dbce3c487d0d9b50f25470967f904cf2ed90b",
+        "role": "project-owned style reference; no external character design"
+      }
+    }
+  ]
+}

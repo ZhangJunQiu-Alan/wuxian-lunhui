@@ -1,0 +1,38 @@
+{
+  "method": "actual view_image inspection of local PNGs; no browser or Godot used",
+  "date": "2026-10-20",
+  "images": [
+    {
+      "file": "previews/existing_inventory.png",
+      "observation": "核对原蛇头/身/尾、狼、火巨人、霜精锐、地面/物件、四位玩家；现有风格一致，蛇身开放端口保留"
+    },
+    {
+      "file": "previews/style_scale_1x.png",
+      "observation": "已看现有地块上的1倍尺度；大型Boss显著大于玩家/巨人。暗色狼与焦土地面仍需实景密集画面检查，未将运行可读性标通过"
+    },
+    {
+      "file": "previews/layout.png",
+      "observation": "最终外环沿外侧地标连接，辐射路净宽显示一致；坐标文字可读、样例物件点在路线旁。是设计图，不是游戏画面"
+    },
+    {
+      "file": "previews/snake_connections.png",
+      "observation": "直线头身尾接口连续；刚性弯曲有楔形接头风险，连续UV带更合适；仅几何重投影示意，不把头尾弯曲运行配准标通过"
+    },
+    {
+      "file": "previews/action_envelopes.png",
+      "observation": "原192像素主体未放大，苏尔特256画布有透明余量；尚无新姿势，不能证明所有剑极限和巨口张合已满足"
+    },
+    {
+      "file": "previews/terrain_4x4.png",
+      "observation": "已查看六张既有地块4×4，表面重复纹理可见，未见需要因此重制基础地面的硬接缝；新过渡块未生产，实际混铺仍待验收"
+    }
+  ],
+  "not_inspected_as_runtime": [
+    "new animation frames",
+    "Godot collisions",
+    "swallow escape window",
+    "Surtr safe-cell damage",
+    "game audio mixing"
+  ],
+  "remaining": "C1-C8合同冻结后，关键姿势样张与实际场景验证先于整批制作"
+}

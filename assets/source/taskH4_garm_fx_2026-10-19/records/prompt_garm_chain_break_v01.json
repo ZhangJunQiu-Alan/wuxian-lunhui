@@ -1,0 +1,8 @@
+{
+  "id": "garm_chain_break",
+  "version": "v01",
+  "prompt": "Use case: stylized-concept. Production pixel-art dark underworld VFX; project-owned inputs are only material/style references, do not draw the creature. Short iron chain snap burst, no stake. Four ONESHOT phases: two short broken grey iron link ends separate around center with tiny dim orange sparks, ends fly apart, fewer tiny iron pieces and fading embers, very sparse fading fragments. Sparse rust grey iron and few amber sparks; not an explosion or fireball. Transparent empty center in final phase; no permanent rubble. EXACTLY FOUR DISTINCT frames in a2-column2-row grid, same square cells, native64x64 each, same center/scale across frames. Crisp limited32RGB pixel clusters, desaturated dark red/iron greys, no ice. Sparse alpha steps permitted for light/mist, no opaque backing. Entire silhouette fits cell with transparent padding, except chain repeating ports. No label, text, grid, frame, watermark, body, scene or ground shadow.",
+  "reference_paths": [
+    "assets/sprites/bosses/garm.png"
+  ]
+}

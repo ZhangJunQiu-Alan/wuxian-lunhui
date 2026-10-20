@@ -1,0 +1,8 @@
+{
+  "id": "hati_lunge_trail",
+  "version": "v01",
+  "prompt": "Use case: stylized-concept. Production pixel-art VFX animation for existing dark northern myth game. Input is project-owned STYLE reference only, do not copy a creature or ice ring. Silver-blue moonlight short lunge trail moving RIGHT, all wisps extend LEFT from the RIGHT MIDPOINT anchor. Four distinct smooth LOOP phases of slim curved speed ribbons and a few fine blue-violet particles, relatively short and subdued, no wolf body, no fixed ground shadow, no ice shards. Pale silver-blue edge on smoky indigo, not a fireball. EXACTLY FOUR DISTINCT frames in a 2-COLUMN by 2-ROW grid, row-major, every cell aspect 64:32, native 64x32. Identical registration, center and camera scale across frames, retain expansion timing if one-shot. Full effect inside each cell with transparent padding. Deliberate crisp small pixel clusters, <=32RGB colors and 8 alpha steps. Genuine transparent background, no opaque rectangle, text, labels, grid lines, watermark or scenery.",
+  "reference_paths": [
+    "assets/sprites/effects/frost_shockwave.png"
+  ]
+}

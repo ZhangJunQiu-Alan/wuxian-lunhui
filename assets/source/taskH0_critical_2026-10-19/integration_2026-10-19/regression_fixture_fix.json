@@ -1,0 +1,7 @@
+{
+  "failure": "zone damage and pull remain active",
+  "cause": "previous faith tests may leave random global crit chance, making exact1damage assertion nondeterministic",
+  "fix": "reset crit_chance before isolated zone damage/pull test; gameplay code unchanged",
+  "file": "tools/test_combat_regressions.gd",
+  "before_sha256": "26bc84b4b2a6ecab5c0725c63ca4c03de445602d17a46cb78fe2ef666c9683b4"
+}

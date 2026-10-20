@@ -1,0 +1,538 @@
+{
+  "task": "K4",
+  "status": "art_delivered_self_checked_not_integrated",
+  "formal_png": 11,
+  "frames": 45,
+  "assets": [
+    {
+      "id": "fire_giant_move",
+      "formal_path": "assets/sprites/enemies/fire_giant_move.png",
+      "frame_size": [
+        96,
+        96
+      ],
+      "frames": 6,
+      "fps": 8,
+      "loop": true,
+      "anchor": [
+        48,
+        94
+      ],
+      "alpha_policy": "binary",
+      "rgb_count": 48,
+      "candidate": "candidates/fire_giant_move_v01.png",
+      "approved": "approved/fire_giant_move.png",
+      "sha256": "9dec890f33cb52a74bae692b2702caf86f56f8aa45a568d4c1894cb47e339ea3",
+      "raw": "originals/fire_giant_move_v01_raw.png",
+      "raw_sha256": "c306b8cdbb22033804e2f5f0cab9aa0face884f20b125ae61d874afe7a961028",
+      "prompt": "records/prompt_fire_giant_move_v01.json",
+      "preview_gifs": [
+        {
+          "file": "previews/fire_giant_move_v01_native.gif",
+          "duration_ms": [
+            120,
+            130,
+            130,
+            120,
+            120,
+            130
+          ]
+        },
+        {
+          "file": "previews/fire_giant_move_v01_slow8.gif",
+          "duration_ms": [
+            120,
+            130,
+            130,
+            120,
+            120,
+            130
+          ]
+        }
+      ],
+      "license": "assets/LICENSES.md; OpenAI output ownership toextent law, nonexclusive",
+      "game_acceptance": "not_tested"
+    },
+    {
+      "id": "fire_giant_attack",
+      "formal_path": "assets/sprites/enemies/fire_giant_attack.png",
+      "frame_size": [
+        96,
+        96
+      ],
+      "frames": 4,
+      "fps": 16,
+      "loop": false,
+      "anchor": [
+        48,
+        94
+      ],
+      "alpha_policy": "binary",
+      "rgb_count": 48,
+      "candidate": "candidates/fire_giant_attack_v01.png",
+      "approved": "approved/fire_giant_attack.png",
+      "sha256": "91eb56cc639bc0ff6c0cd94baef18554ae3bb75db479f8729a73c33d18297e6e",
+      "raw": "originals/fire_giant_attack_v01_raw.png",
+      "raw_sha256": "54bc7274b314baa3b3ecca56a917ec2cb7ed14d49a8a8001960d858b9e24f07e",
+      "prompt": "records/prompt_fire_giant_attack_v01.json",
+      "preview_gifs": [
+        {
+          "file": "previews/fire_giant_attack_v01_native.gif",
+          "duration_ms": [
+            60,
+            60,
+            70,
+            660
+          ]
+        },
+        {
+          "file": "previews/fire_giant_attack_v01_slow8.gif",
+          "duration_ms": [
+            120,
+            130,
+            130,
+            720
+          ]
+        }
+      ],
+      "license": "assets/LICENSES.md; OpenAI output ownership toextent law, nonexclusive",
+      "game_acceptance": "not_tested"
+    },
+    {
+      "id": "frost_veteran_move",
+      "formal_path": "assets/sprites/enemies/frost_veteran_move.png",
+      "frame_size": [
+        96,
+        96
+      ],
+      "frames": 6,
+      "fps": 8,
+      "loop": true,
+      "anchor": [
+        48,
+        94
+      ],
+      "alpha_policy": "binary",
+      "rgb_count": 48,
+      "candidate": "candidates/frost_veteran_move_v01.png",
+      "approved": "approved/frost_veteran_move.png",
+      "sha256": "8f888a9158e5d9da1cd7d25ac2fd9af364231ba4e8885128557d9b227f3ac23e",
+      "raw": "originals/frost_veteran_move_v01_raw.png",
+      "raw_sha256": "bb8ec4b170ef10be2df7604bda5cc24fef3752bbb5538841b89781cc575b412f",
+      "prompt": "records/prompt_frost_veteran_move_v01.json",
+      "preview_gifs": [
+        {
+          "file": "previews/frost_veteran_move_v01_native.gif",
+          "duration_ms": [
+            120,
+            130,
+            130,
+            120,
+            120,
+            130
+          ]
+        },
+        {
+          "file": "previews/frost_veteran_move_v01_slow8.gif",
+          "duration_ms": [
+            120,
+            130,
+            130,
+            120,
+            120,
+            130
+          ]
+        }
+      ],
+      "license": "assets/LICENSES.md; OpenAI output ownership toextent law, nonexclusive",
+      "game_acceptance": "not_tested"
+    },
+    {
+      "id": "frost_veteran_attack",
+      "formal_path": "assets/sprites/enemies/frost_veteran_attack.png",
+      "frame_size": [
+        96,
+        96
+      ],
+      "frames": 4,
+      "fps": 16,
+      "loop": false,
+      "anchor": [
+        48,
+        94
+      ],
+      "alpha_policy": "binary",
+      "rgb_count": 48,
+      "candidate": "candidates/frost_veteran_attack_v01.png",
+      "approved": "approved/frost_veteran_attack.png",
+      "sha256": "e515b07acb9ea5370713c729049142345e7572ad06459ecc2f40ed815bdc2c3c",
+      "raw": "originals/frost_veteran_attack_v01_raw.png",
+      "raw_sha256": "4dcf47a1bba018b0851f9e5ce7b290eb03e5348cf264a6733f854c9f0b29836d",
+      "prompt": "records/prompt_frost_veteran_attack_v01.json",
+      "preview_gifs": [
+        {
+          "file": "previews/frost_veteran_attack_v01_native.gif",
+          "duration_ms": [
+            60,
+            60,
+            70,
+            660
+          ]
+        },
+        {
+          "file": "previews/frost_veteran_attack_v01_slow8.gif",
+          "duration_ms": [
+            120,
+            130,
+            130,
+            720
+          ]
+        }
+      ],
+      "license": "assets/LICENSES.md; OpenAI output ownership toextent law, nonexclusive",
+      "game_acceptance": "not_tested"
+    },
+    {
+      "id": "frost_veteran_charge",
+      "formal_path": "assets/sprites/enemies/frost_veteran_charge.png",
+      "frame_size": [
+        96,
+        96
+      ],
+      "frames": 4,
+      "fps": 8,
+      "loop": true,
+      "anchor": [
+        48,
+        94
+      ],
+      "alpha_policy": "binary",
+      "rgb_count": 48,
+      "candidate": "candidates/frost_veteran_charge_v01.png",
+      "approved": "approved/frost_veteran_charge.png",
+      "sha256": "bcdcf1303da6b2ed79774a32ac3923e7cf3c9f7e1efdd5ce1305fffc64473276",
+      "raw": "originals/frost_veteran_charge_v01_raw.png",
+      "raw_sha256": "19e6b1a197588c4878a284c5e5bc2ae750acf81b0df997a6edbbb9ff033f3728",
+      "prompt": "records/prompt_frost_veteran_charge_v01.json",
+      "preview_gifs": [
+        {
+          "file": "previews/frost_veteran_charge_v01_native.gif",
+          "duration_ms": [
+            120,
+            130,
+            130,
+            120
+          ]
+        },
+        {
+          "file": "previews/frost_veteran_charge_v01_slow8.gif",
+          "duration_ms": [
+            120,
+            130,
+            130,
+            120
+          ]
+        }
+      ],
+      "license": "assets/LICENSES.md; OpenAI output ownership toextent law, nonexclusive",
+      "game_acceptance": "not_tested"
+    },
+    {
+      "id": "frost_veteran_shield",
+      "formal_path": "assets/sprites/enemies/frost_veteran_shield.png",
+      "frame_size": [
+        96,
+        96
+      ],
+      "frames": 3,
+      "fps": 8,
+      "loop": false,
+      "anchor": [
+        48,
+        94
+      ],
+      "alpha_policy": "binary",
+      "rgb_count": 48,
+      "candidate": "candidates/frost_veteran_shield_v01.png",
+      "approved": "approved/frost_veteran_shield.png",
+      "sha256": "094df09d6ca9029242c50e423f9b7a152e4e0fe96a2c639e66f6c5950470081f",
+      "raw": "originals/frost_veteran_shield_v01_raw.png",
+      "raw_sha256": "1c57407344352ccaaf2580323236ff98967d480e0ef235f9fd96fd0965820144",
+      "prompt": "records/prompt_frost_veteran_shield_v01.json",
+      "preview_gifs": [
+        {
+          "file": "previews/frost_veteran_shield_v01_native.gif",
+          "duration_ms": [
+            120,
+            130,
+            730
+          ]
+        },
+        {
+          "file": "previews/frost_veteran_shield_v01_slow8.gif",
+          "duration_ms": [
+            120,
+            130,
+            730
+          ]
+        }
+      ],
+      "license": "assets/LICENSES.md; OpenAI output ownership toextent law, nonexclusive",
+      "game_acceptance": "not_tested"
+    },
+    {
+      "id": "wolf_berserker",
+      "formal_path": "assets/sprites/enemies/wolf_berserker.png",
+      "frame_size": [
+        64,
+        64
+      ],
+      "frames": 1,
+      "fps": 0,
+      "loop": false,
+      "anchor": [
+        32,
+        62
+      ],
+      "alpha_policy": "binary",
+      "rgb_count": 48,
+      "candidate": "candidates/wolf_berserker_v01.png",
+      "approved": "approved/wolf_berserker.png",
+      "sha256": "467cd0877a8893b5ba3dbec8c24556329912e519f828367b69f9b81b1752f4e4",
+      "raw": "originals/wolf_berserker_v01_raw.png",
+      "raw_sha256": "09e9bec6e5fe727731b50c5aa2345ac22d804eb1276ad842e3731991a40eae0e",
+      "prompt": "records/prompt_wolf_berserker_v01.json",
+      "preview_gifs": [],
+      "license": "assets/LICENSES.md; OpenAI output ownership toextent law, nonexclusive",
+      "game_acceptance": "not_tested"
+    },
+    {
+      "id": "wolf_berserker_move",
+      "formal_path": "assets/sprites/enemies/wolf_berserker_move.png",
+      "frame_size": [
+        64,
+        64
+      ],
+      "frames": 6,
+      "fps": 8,
+      "loop": true,
+      "anchor": [
+        32,
+        62
+      ],
+      "alpha_policy": "binary",
+      "rgb_count": 48,
+      "candidate": "candidates/wolf_berserker_move_v01.png",
+      "approved": "approved/wolf_berserker_move.png",
+      "sha256": "67a7c568ee6e0d0beca51290b9ad99554d584ee094d73d8061dcaedea2881d47",
+      "raw": "originals/wolf_berserker_move_v01_raw.png",
+      "raw_sha256": "187ce2f12651043475c3056aaaa62fbf64931c619657c9f7253fdcc921f8b707",
+      "prompt": "records/prompt_wolf_berserker_move_v01.json",
+      "preview_gifs": [
+        {
+          "file": "previews/wolf_berserker_move_v01_native.gif",
+          "duration_ms": [
+            120,
+            130,
+            130,
+            120,
+            120,
+            130
+          ]
+        },
+        {
+          "file": "previews/wolf_berserker_move_v01_slow8.gif",
+          "duration_ms": [
+            120,
+            130,
+            130,
+            120,
+            120,
+            130
+          ]
+        }
+      ],
+      "license": "assets/LICENSES.md; OpenAI output ownership toextent law, nonexclusive",
+      "game_acceptance": "not_tested"
+    },
+    {
+      "id": "wolf_berserker_attack",
+      "formal_path": "assets/sprites/enemies/wolf_berserker_attack.png",
+      "frame_size": [
+        64,
+        64
+      ],
+      "frames": 4,
+      "fps": 16,
+      "loop": false,
+      "anchor": [
+        32,
+        62
+      ],
+      "alpha_policy": "binary",
+      "rgb_count": 48,
+      "candidate": "candidates/wolf_berserker_attack_v01.png",
+      "approved": "approved/wolf_berserker_attack.png",
+      "sha256": "33fce2e065c73a78c4489991542f8f16893524ef346b3385c7ca3d4f60e1316a",
+      "raw": "originals/wolf_berserker_attack_v01_raw.png",
+      "raw_sha256": "bc005e75816d8a2214ec4eee5f5fc21423466917e5f761e11856882af1d0f060",
+      "prompt": "records/prompt_wolf_berserker_attack_v01.json",
+      "preview_gifs": [
+        {
+          "file": "previews/wolf_berserker_attack_v01_native.gif",
+          "duration_ms": [
+            60,
+            60,
+            70,
+            660
+          ]
+        },
+        {
+          "file": "previews/wolf_berserker_attack_v01_slow8.gif",
+          "duration_ms": [
+            120,
+            130,
+            130,
+            720
+          ]
+        }
+      ],
+      "license": "assets/LICENSES.md; OpenAI output ownership toextent law, nonexclusive",
+      "game_acceptance": "not_tested"
+    },
+    {
+      "id": "wolf_berserker_rage",
+      "formal_path": "assets/sprites/enemies/wolf_berserker_rage.png",
+      "frame_size": [
+        64,
+        64
+      ],
+      "frames": 3,
+      "fps": 8,
+      "loop": false,
+      "anchor": [
+        32,
+        62
+      ],
+      "alpha_policy": "binary",
+      "rgb_count": 48,
+      "candidate": "candidates/wolf_berserker_rage_v01.png",
+      "approved": "approved/wolf_berserker_rage.png",
+      "sha256": "71a5b3307976224434f8f84608bc23e1aef605d5d5082afaac3e0a9bf36e46dd",
+      "raw": "originals/wolf_berserker_rage_v01_raw.png",
+      "raw_sha256": "9e608ba9f22e33dec3b7708d4e279d258825263854c9fde83cf3b08f77fb367f",
+      "prompt": "records/prompt_wolf_berserker_rage_v01.json",
+      "preview_gifs": [
+        {
+          "file": "previews/wolf_berserker_rage_v01_native.gif",
+          "duration_ms": [
+            120,
+            130,
+            730
+          ]
+        },
+        {
+          "file": "previews/wolf_berserker_rage_v01_slow8.gif",
+          "duration_ms": [
+            120,
+            130,
+            730
+          ]
+        }
+      ],
+      "license": "assets/LICENSES.md; OpenAI output ownership toextent law, nonexclusive",
+      "game_acceptance": "not_tested"
+    },
+    {
+      "id": "fire_giant_explosion",
+      "formal_path": "assets/sprites/effects/bosses/fire_giant_explosion.png",
+      "frame_size": [
+        96,
+        96
+      ],
+      "frames": 4,
+      "fps": 16,
+      "loop": false,
+      "anchor": [
+        48,
+        48
+      ],
+      "alpha_policy": "8levels",
+      "rgb_count": 25,
+      "candidate": "candidates/fire_giant_explosion_v01.png",
+      "approved": "approved/fire_giant_explosion.png",
+      "sha256": "cee9fdc290f00cb1cc1d1e6fe142b6da0e5fac49ddffae442ea63bb384973303",
+      "raw": "originals/fire_giant_explosion_v01_raw.png",
+      "raw_sha256": "e00f078efd6f613359eebad415d64e7ca1b6c494474d9c5c04f672ea8499c535",
+      "prompt": "records/prompt_fire_giant_explosion_v01.json",
+      "preview_gifs": [
+        {
+          "file": "previews/fire_giant_explosion_v01_native.gif",
+          "duration_ms": [
+            60,
+            60,
+            70,
+            660
+          ]
+        },
+        {
+          "file": "previews/fire_giant_explosion_v01_slow8.gif",
+          "duration_ms": [
+            120,
+            130,
+            130,
+            720
+          ]
+        }
+      ],
+      "license": "assets/LICENSES.md; OpenAI output ownership toextent law, nonexclusive",
+      "game_acceptance": "not_tested"
+    }
+  ],
+  "reused": [
+    {
+      "path": "assets/sprites/enemies/fire_giant.png",
+      "sha256": "0a59ac1cb33fb98e1acfd0b0d68b1ad73d0084151689ef1af7f5a04e34d21e7a",
+      "decision": "reuse_unchanged"
+    },
+    {
+      "path": "assets/sprites/enemies/frost_veteran.png",
+      "sha256": "6972714054f6181ee80249f0c5e42cac072e329a3bc063e04269ba00d9563e9c",
+      "decision": "reuse_unchanged"
+    },
+    {
+      "path": "assets/sprites/enemies/dead.png",
+      "sha256": "fcfada7817322ec67f6b6055bd4aa727c119c0256481921f857b6218b535d278",
+      "decision": "reuse_unchanged"
+    },
+    {
+      "path": "assets/sprites/enemies/dead_move.png",
+      "sha256": "93a758a490782306128d6e11941d12662ead0f1251df8b8ebc8900964fce792c",
+      "decision": "reuse_unchanged"
+    },
+    {
+      "path": "assets/sprites/enemies/dead_attack.png",
+      "sha256": "59c404b403f193cd6f15c0ac52e9e85742119ead0a55791b8b7380de0089d8d7",
+      "decision": "reuse_unchanged"
+    },
+    {
+      "path": "assets/sprites/effects/bosses/hrym_ice_break.png",
+      "sha256": "1182b62d22d3838d05b02f7d833bbae76798db471d02eeb3b062ebd7764247f1",
+      "decision": "reuse_unchanged"
+    },
+    {
+      "path": "assets/sprites/effects/death_shards.png",
+      "sha256": "7e8fd5876468702299206d8f6183aafb42f90a1d25e304a10492340e33eda0e8",
+      "decision": "reuse_unchanged"
+    },
+    {
+      "path": "assets/sprites/effects/gods/loki_fire_patch.png",
+      "sha256": "a5773032ad2af278c32e3079399b7c8c4205cb0cc8f90b12a1a784c81d3f4ec4",
+      "decision": "reuse_unchanged_for_residual"
+    }
+  ],
+  "generated_originals": 11,
+  "rejected_generations": 0,
+  "self_check": "passed",
+  "game_acceptance": "not_tested"
+}

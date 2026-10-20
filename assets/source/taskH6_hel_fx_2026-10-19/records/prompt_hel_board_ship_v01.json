@@ -1,0 +1,8 @@
+{
+  "id": "hel_board_ship",
+  "version": "v01",
+  "prompt": "Use case: stylized-concept. Production pixel-art underworld game texture/effect; inputs are project-owned style references only, do not copy character or existing pool/ring form. A short translucent underworld mist/light-column transition around an unseen figure boarding a ship, no queen, person or ship. Wide transparent CENTRAL CORRIDOR so sail and projectiles remain visible. Four ONESHOT phases: faint grey-violet side wisps at lower corners, two slender side columns lift with sparse pale motes, columns split into wisps and dim, only sparse high motes. No opaque center, giant cloud or full-screen curtain; subtle grey-violet / grey-green neutral palette. EXACTLY FOUR DISTINCT frames in2columns2rows, identical cell aspect128:128, native128x128 per cell. Stable camera, pivot and scale; clear occurrence, peak and decay unless explicitly looping. Desaturated grey-green and grey-violet, extremely restrained luminance, limited32RGB colors, crisp pixel clusters, alpha steps. Genuine transparent background between marks, no opaque square backing or drop shadow. No text, labels, grid, frame, watermark, scenery, body or ship. Entire effect fits inside each frame; repeated tiles/strips must flow through their matching edges.",
+  "reference_paths": [
+    "assets/sprites/bosses/hel.png"
+  ]
+}

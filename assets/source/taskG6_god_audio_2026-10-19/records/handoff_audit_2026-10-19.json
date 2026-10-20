@@ -1,0 +1,35 @@
+{
+  "task": "G6",
+  "date": "2026-10-19",
+  "status": "pass_asset_handoff",
+  "formal_wav_count": 44,
+  "sound_types": 30,
+  "existing_call_entries": 30,
+  "integration_table_rows": 44,
+  "source_hashes_verified": 83,
+  "gallery_local_links": 187,
+  "gallery_missing_links": [],
+  "existing_import_descriptors_loop_off": 44,
+  "existing_import_descriptors_normalize_off": 44,
+  "runtime_wavs_changed": false,
+  "code_modified": false,
+  "game_test": "not_performed",
+  "new_deliverables": [
+    "integration.md",
+    "records/audit_integration.py",
+    "records/integration_audit_2026-10-19.json"
+  ],
+  "updated_own_metadata": [
+    "manifest.json",
+    "README.md",
+    "gallery.html",
+    "source_inventory.json"
+  ],
+  "sources_or_licenses_added": false,
+  "pending": [
+    "Actual Godot resource loading and all30 event playback",
+    "Paused reward UI audio",
+    "Dense-combat mix and SFX controls",
+    "Exported game audio check"
+  ]
+}

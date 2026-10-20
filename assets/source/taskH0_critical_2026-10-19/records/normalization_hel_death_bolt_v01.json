@@ -1,0 +1,32 @@
+{
+  "input": "originals/hel_death_bolt_v01.png",
+  "input_sha256": "069062cb8eb29c9cb77eec0a372bb8675e8463d8b028dcbc6140c7c34b5625f4",
+  "raw_size": [
+    1774,
+    887
+  ],
+  "grid": [
+    1,
+    1
+  ],
+  "cut_boxes": [
+    [
+      637,
+      351,
+      1124,
+      541
+    ]
+  ],
+  "single_common_scale": 0.057494866529774126,
+  "placements": [
+    [
+      2,
+      2,
+      28,
+      11
+    ]
+  ],
+  "operations": "original alpha threshold/quantization, source frame cuts, single common nearest resize, source-derived shared palette, whole-frame placement; no character/effect drawing",
+  "candidate": "candidates/hel_death_bolt_v01.png",
+  "candidate_sha256": "e4abc7d80a6feedabb4499611b9c900fa79e240967311fa7f623ddcdc54f58c6"
+}

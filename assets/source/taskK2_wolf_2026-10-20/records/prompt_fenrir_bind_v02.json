@@ -1,0 +1,9 @@
+{
+  "tool": "image_gen.imagegen",
+  "id": "fenrir_bind",
+  "prompt": "Use case: precise-object-edit. Edit Image1, the existing four-frame2x2 transparent pixel-art braided restraint atlas. Keep the SAME aged pale-gold/ivory ribbon material, tiny knots and restrained traveling glint, but make it significantly THINNER and clear the central region. Each equal logical192x192 cell: center(96,96), two thin interlaced oval rope courses around it, irregular braiding and small knots at diagonal outer corners. Individual rope strands only3 logical pixels thick, not broad straps. Remove the horizontal crossbars/straps through the upper and lower middle: the ENTIRE rectangle x56..136,y54..138 must be COMPLETELY TRANSPARENT in ALL four frames. Nothing crosses that rectangle, no backing disk or black/grey fill. Outer envelope within x12..180,y10..182, fixed in all four phases; inner course sufficiently far outside the protected rectangle including its corners. Sparse loose ribbon ends may stay outside center. The four loop frames differ only by small knot tension and a tiny glint traveling around the perimeter; no scale pulse or moving the whole restraint. Strongly reduce opaque pixel coverage to keep the wolf visible. No characters, warning circle, symbols, words, labels, watermark, scenery, ground or cast shadow. Genuine alpha transparency; crisp small-game pixel clusters matching reference, no blurred aura. SQUARE2x2 equal-cell atlas with no gutters. This is braided magical ribbon binding, not a metal chain or solid magic ring.",
+  "refs": [
+    "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskK2_wolf_2026-10-20/originals/fenrir_bind_v01_raw.png"
+  ],
+  "transparent_background": true
+}

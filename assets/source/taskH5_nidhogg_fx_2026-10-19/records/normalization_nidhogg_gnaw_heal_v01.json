@@ -1,0 +1,68 @@
+{
+  "input": "originals/nidhogg_gnaw_heal_v01.png",
+  "input_sha256": "18ebc97bbcbd9522517bb72f106f82d6bc19a1ae749d4a2fc2d06d9f9df3dd32",
+  "raw_size": [
+    1254,
+    1254
+  ],
+  "grid": [
+    2,
+    2
+  ],
+  "cut_boxes": [
+    [
+      70,
+      282,
+      592,
+      507
+    ],
+    [
+      54,
+      271,
+      564,
+      528
+    ],
+    [
+      71,
+      224,
+      609,
+      468
+    ],
+    [
+      63,
+      240,
+      560,
+      442
+    ]
+  ],
+  "single_common_scale": 0.11152416356877323,
+  "placements": [
+    [
+      3,
+      19,
+      58,
+      25
+    ],
+    [
+      3,
+      17,
+      57,
+      29
+    ],
+    [
+      2,
+      18,
+      60,
+      27
+    ],
+    [
+      4,
+      20,
+      55,
+      23
+    ]
+  ],
+  "operations": "original alpha threshold/quantization, source frame cuts, single common nearest resize, source-derived shared palette, whole-frame placement; no character/effect drawing",
+  "candidate": "candidates/nidhogg_gnaw_heal_v01.png",
+  "candidate_sha256": "68a7ccb307261e91e12b967d37f510a79750c2d96fab62427a63ad8a7ee22908"
+}

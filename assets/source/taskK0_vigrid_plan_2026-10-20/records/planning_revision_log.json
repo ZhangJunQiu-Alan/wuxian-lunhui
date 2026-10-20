@@ -1,0 +1,27 @@
+[
+  {
+    "issue": "初稿外环按数组次序连接，出现穿越中央的对角线",
+    "correction": "改按1→2→4→5→3→1的地理顺序闭环",
+    "state": "corrected in layout.json and final diagrams"
+  },
+  {
+    "issue": "残骸带实体摆位(1316,-1140)，实测到路中线减碰撞半径后的净距约0px",
+    "correction": "移至(1756,-1140)，随后复核所有样例实体与所有通道",
+    "state": "final static clearance in layout_geometry_check.json"
+  },
+  {
+    "issue": "初稿PNG道路显示宽10px，与SVG/JSON 256世界像素不一致",
+    "correction": "PNG改为round(256*960/5120)=48px",
+    "state": "final diagram inspected"
+  },
+  {
+    "issue": "蛇身弯曲预览顶部与标题重叠",
+    "correction": "曲线中心下移25px后重新查看",
+    "state": "corrected; runtime still not tested"
+  },
+  {
+    "issue": "普通狼静态图当前哈希未匹配到原批次manifest；不得写成已核对来源",
+    "correction": "狂狼战士参考改用已匹配来源的亡者人形与芬里尔毛皮/狼轮廓，仅取材质和轮廓参照，不改成四足狼",
+    "state": "原失败审计保留initial_reference_audit_flag.json；正式清单不再使用未匹配参考"
+  }
+]

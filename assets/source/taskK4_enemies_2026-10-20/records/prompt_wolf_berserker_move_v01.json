@@ -1,0 +1,19 @@
+{
+  "tool": "image_gen.imagegen",
+  "id": "wolf_berserker_move",
+  "frames": 6,
+  "fps": 8,
+  "loop": true,
+  "action": "SIX small HUMAN WALK/RUN poses3columns2rows landscape3:2atlas, no gutters. Alternating boot support and swing, compact bentknees, shoulderweight shifts, wolfpelt gentlysways but head/hood stayssameview andsize. Axeheldlow angleddown-right close tohip allframes, handemptyotherarm naturalcountermotion. Stable torso/ground alignment and smooth8fpssix-to-first cycle.",
+  "version": "v01",
+  "frame_size": [
+    64,
+    64
+  ],
+  "refs": [
+    "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskK4_enemies_2026-10-20/references/wolf_berserker_master_12x.png",
+    "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskK4_enemies_2026-10-20/originals/wolf_berserker_v01_raw.png"
+  ],
+  "prompt": "Use case: sprite-animation, precise identity-preserving edit. Image1 is the EXACT project64x64 HUMAN wolf-pelt warrior enlarged nearest; image2 same high-res original. Same living HUMAN tan face under ashgrey wolfskin hood, short darkbeard, greyfurcloak, darkleathervest, bronze buckle, rustred waistcloth, darkwoolpants, leatherputtees/brownboots; ONE short iron bearded axe in nearhand. TWO human arms/two human legs, no werewolf or animalface, same right-facing3/4 view andhuman58pxheight. Frame64square rootx32footbaseline62, >=2pxtransparentborder inclaxe/fur. Keep compact silhouette withbentelbows, no extra weapon, source48RGBfinepixelclusters upper-leftlight, binaryentityalpha truezero-alpha outside. SIX small HUMAN WALK/RUN poses3columns2rows landscape3:2atlas, no gutters. Alternating boot support and swing, compact bentknees, shoulderweight shifts, wolfpelt gentlysways but head/hood stayssameview andsize. Axeheldlow angleddown-right close tohip allframes, handemptyotherarm naturalcountermotion. Stable torso/ground alignment and smooth8fpssix-to-first cycle. No red magical aura, particles, ground/shadow/scenery, text/label/grid/frame/watermark; all full figure and axeblade remain inside owncell, nooversizedwinglikecloak, no perpose resizing.",
+  "transparent_background": true
+}

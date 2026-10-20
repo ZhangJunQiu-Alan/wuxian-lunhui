@@ -1,0 +1,848 @@
+[
+  {
+    "task": "H0",
+    "id": "thokk",
+    "w": 96,
+    "h": 96,
+    "frames": 1,
+    "fps": 0,
+    "flags": [
+      "body"
+    ],
+    "anchor": [
+      48,
+      92
+    ],
+    "columns": 1,
+    "rows": 1,
+    "loop": false,
+    "hook": "scripts/data/enemy_db.gd thokk；scripts/entities/enemy.gd _ready() / SpriteVisual.create_actions()",
+    "keep": "保留既有半径20、血量、精英倍率、追击及逃走逻辑",
+    "reference_paths": [
+      "assets/sprites/enemies/frost_giant.png",
+      "assets/sprites/enemies/frost_veteran.png"
+    ],
+    "target": "assets/sprites/enemies/thokk.png",
+    "source_root": "assets/source/taskH0_critical_2026-10-19"
+  },
+  {
+    "task": "H0",
+    "id": "thokk_move",
+    "w": 96,
+    "h": 96,
+    "frames": 6,
+    "fps": 8,
+    "flags": [
+      "body",
+      "loop"
+    ],
+    "anchor": [
+      48,
+      92
+    ],
+    "columns": 3,
+    "rows": 2,
+    "loop": true,
+    "hook": "scripts/entities/enemy.gd _ready() / _physics_process()；SpriteVisual.create_actions()",
+    "keep": "保留同一角色比例、脚底92与移动速度",
+    "reference_paths": [
+      "assets/source/taskH0_critical_2026-10-19/candidates/thokk_v01.png"
+    ],
+    "target": "assets/sprites/enemies/thokk_move.png",
+    "source_root": "assets/source/taskH0_critical_2026-10-19"
+  },
+  {
+    "task": "H0",
+    "id": "thokk_attack",
+    "w": 96,
+    "h": 96,
+    "frames": 4,
+    "fps": 16,
+    "flags": [
+      "body"
+    ],
+    "anchor": [
+      48,
+      92
+    ],
+    "columns": 2,
+    "rows": 2,
+    "loop": false,
+    "hook": "scripts/entities/enemy.gd _update_attack() / SpriteVisual.create_actions()",
+    "keep": "保留ATTACK_TIME、ATTACK_STRIKE、接触判伤和现有挥击光效",
+    "reference_paths": [
+      "assets/source/taskH0_critical_2026-10-19/candidates/thokk_v01.png"
+    ],
+    "target": "assets/sprites/enemies/thokk_attack.png",
+    "source_root": "assets/source/taskH0_critical_2026-10-19"
+  },
+  {
+    "task": "H0",
+    "id": "hel_death_bolt",
+    "w": 32,
+    "h": 16,
+    "frames": 1,
+    "fps": 0,
+    "flags": [
+      "rotate"
+    ],
+    "anchor": [
+      16,
+      8
+    ],
+    "columns": 1,
+    "rows": 1,
+    "loop": false,
+    "hook": "scripts/bosses/hel.gd _update_state() cast_windup 中 _fan() 的 texture=null",
+    "keep": "替换第一阶段空纹理；保持5发、spread0.5、伤害10、速度200、命中半径；第二阶段_nail不变",
+    "reference_paths": [
+      "assets/sprites/effects/rune_missile.png"
+    ],
+    "target": "assets/sprites/effects/hel_death_bolt.png",
+    "source_root": "assets/source/taskH0_critical_2026-10-19"
+  },
+  {
+    "task": "H1",
+    "id": "skoll_dash_trail",
+    "w": 64,
+    "h": 32,
+    "frames": 4,
+    "fps": 16,
+    "flags": [
+      "loop",
+      "rotate",
+      "trail"
+    ],
+    "anchor": [
+      64,
+      16
+    ],
+    "columns": 2,
+    "rows": 2,
+    "loop": true,
+    "hook": "scripts/bosses/skoll.gd _update_state() dash",
+    "keep": "追随_dash_dir；保留红路线预警、950速度、0.42秒冲锋、接触伤害",
+    "reference_paths": [
+      "assets/sprites/effects/rune_missile.png"
+    ],
+    "target": "assets/sprites/effects/bosses/skoll_dash_trail.png",
+    "source_root": "assets/source/taskH1_skoll_fx_2026-10-19"
+  },
+  {
+    "task": "H1",
+    "id": "skoll_bite",
+    "w": 64,
+    "h": 64,
+    "frames": 4,
+    "fps": 16,
+    "flags": [
+      "rotate"
+    ],
+    "anchor": [
+      32,
+      32
+    ],
+    "columns": 2,
+    "rows": 2,
+    "loop": false,
+    "hook": "scripts/bosses/skoll.gd _update_state() dash 接触点",
+    "keep": "只显示接触撕咬，不新增判伤、不每物理帧无限堆叠",
+    "reference_paths": [
+      "assets/sprites/effects/katana_slash.png"
+    ],
+    "target": "assets/sprites/effects/bosses/skoll_bite.png",
+    "source_root": "assets/source/taskH1_skoll_fx_2026-10-19"
+  },
+  {
+    "task": "H1",
+    "id": "skoll_howl",
+    "w": 128,
+    "h": 128,
+    "frames": 4,
+    "fps": 8,
+    "flags": [
+      "area",
+      "hole"
+    ],
+    "anchor": [
+      64,
+      64
+    ],
+    "columns": 2,
+    "rows": 2,
+    "loop": false,
+    "hook": "scripts/bosses/skoll.gd _draw_telegraph() howl；_summon_wolves()",
+    "keep": "替换嚎叫弧线；视觉半径沿radius+state_time*160，保留狼群与吞日Shader",
+    "reference_paths": [
+      "assets/sprites/effects/frost_shockwave.png"
+    ],
+    "target": "assets/sprites/effects/bosses/skoll_howl.png",
+    "source_root": "assets/source/taskH1_skoll_fx_2026-10-19"
+  },
+  {
+    "task": "H1",
+    "id": "skoll_howl_body",
+    "w": 128,
+    "h": 128,
+    "frames": 3,
+    "fps": 8,
+    "flags": [
+      "body"
+    ],
+    "anchor": [
+      64,
+      118
+    ],
+    "columns": 3,
+    "rows": 1,
+    "loop": false,
+    "hook": "scripts/bosses/skoll.gd init_stats() state_actions.howl；scripts/bosses/boss.gd BOSS_ACTIONS",
+    "keep": "将howl从windup映射到howl；3帧8fps，不改变1.2秒嚎叫状态",
+    "reference_paths": [
+      "assets/sprites/bosses/skoll.png",
+      "assets/sprites/bosses/skoll_idle.png"
+    ],
+    "target": "assets/sprites/bosses/skoll_howl.png",
+    "source_root": "assets/source/taskH1_skoll_fx_2026-10-19"
+  },
+  {
+    "task": "H2",
+    "id": "hati_lunge_trail",
+    "w": 64,
+    "h": 32,
+    "frames": 4,
+    "fps": 16,
+    "flags": [
+      "loop",
+      "rotate",
+      "trail"
+    ],
+    "anchor": [
+      64,
+      16
+    ],
+    "columns": 2,
+    "rows": 2,
+    "loop": true,
+    "hook": "scripts/bosses/hati.gd _update_state() lunge；scripts/bosses/hati_phantom.gd _physics_process()",
+    "keep": "本体分身同样使用短扑拖尾；保留lunge_dir、真假线索和影子",
+    "reference_paths": [
+      "assets/sprites/effects/frost_shockwave.png"
+    ],
+    "target": "assets/sprites/effects/bosses/hati_lunge_trail.png",
+    "source_root": "assets/source/taskH2_hati_fx_2026-10-19"
+  },
+  {
+    "task": "H2",
+    "id": "hati_howl_wave",
+    "w": 128,
+    "h": 128,
+    "frames": 4,
+    "fps": 8,
+    "flags": [
+      "area",
+      "hole"
+    ],
+    "anchor": [
+      64,
+      64
+    ],
+    "columns": 2,
+    "rows": 2,
+    "loop": false,
+    "hook": "scripts/bosses/hati.gd _update_state() howl_windup 达阈值",
+    "keep": "释放时按HOWL_RADIUS280缩放；预警几何、恐惧1.5秒与判定保持",
+    "reference_paths": [
+      "assets/sprites/effects/frost_shockwave.png"
+    ],
+    "target": "assets/sprites/effects/bosses/hati_howl_wave.png",
+    "source_root": "assets/source/taskH2_hati_fx_2026-10-19"
+  },
+  {
+    "task": "H2",
+    "id": "hati_split_flash",
+    "w": 96,
+    "h": 96,
+    "frames": 4,
+    "fps": 8,
+    "flags": [
+      "area"
+    ],
+    "anchor": [
+      48,
+      48
+    ],
+    "columns": 2,
+    "rows": 2,
+    "loop": false,
+    "hook": "scripts/bosses/hati.gd _split()；scripts/bosses/hati_phantom.gd _physics_process() 消散",
+    "keep": "正播生成，反播或淡出消散；短暂使用，不留下本体/分身标记",
+    "reference_paths": [
+      "assets/sprites/bosses/hati.png"
+    ],
+    "target": "assets/sprites/effects/bosses/hati_split_flash.png",
+    "source_root": "assets/source/taskH2_hati_fx_2026-10-19"
+  },
+  {
+    "task": "H3",
+    "id": "hrym_wave_band",
+    "w": 64,
+    "h": 32,
+    "frames": 4,
+    "fps": 8,
+    "flags": [
+      "loop",
+      "band"
+    ],
+    "anchor": [
+      32,
+      16
+    ],
+    "columns": 2,
+    "rows": 2,
+    "loop": true,
+    "hook": "scripts/bosses/shockwave.gd _draw() / _in_gap()；scripts/bosses/hrym.gd _stomp()",
+    "keep": "沿动态圆弧铺设；厚度BAND26；两缺口严格裁掉±GAP_HALF0.42，保留700范围与速度300",
+    "reference_paths": [
+      "assets/sprites/effects/frost_shockwave.png"
+    ],
+    "target": "assets/sprites/effects/bosses/hrym_wave_band.png",
+    "source_root": "assets/source/taskH3_hrym_fx_2026-10-19"
+  },
+  {
+    "task": "H3",
+    "id": "hrym_shield_arc",
+    "w": 128,
+    "h": 128,
+    "frames": 4,
+    "fps": 8,
+    "flags": [
+      "loop",
+      "area",
+      "front"
+    ],
+    "anchor": [
+      64,
+      64
+    ],
+    "columns": 2,
+    "rows": 2,
+    "loop": true,
+    "hook": "scripts/bosses/hrym.gd _draw_telegraph() shield",
+    "keep": "右向+X；随_facing旋转；仅±SHIELD_HALF_ANGLE1.3，半径radius+12；后方全透明",
+    "reference_paths": [
+      "assets/sprites/bosses/hrym_shield.png"
+    ],
+    "target": "assets/sprites/effects/bosses/hrym_shield_arc.png",
+    "source_root": "assets/source/taskH3_hrym_fx_2026-10-19"
+  },
+  {
+    "task": "H3",
+    "id": "hrym_block_spark",
+    "w": 32,
+    "h": 32,
+    "frames": 4,
+    "fps": 16,
+    "flags": [
+      "rotate"
+    ],
+    "anchor": [
+      16,
+      16
+    ],
+    "columns": 2,
+    "rows": 2,
+    "loop": false,
+    "hook": "scripts/bosses/hrym.gd take_damage() 被格挡分支",
+    "keep": "在global_position+_facing*radius触发；仅表现不改格挡与可绕背条件",
+    "reference_paths": [
+      "assets/sprites/effects/ice_shard.png"
+    ],
+    "target": "assets/sprites/effects/bosses/hrym_block_spark.png",
+    "source_root": "assets/source/taskH3_hrym_fx_2026-10-19"
+  },
+  {
+    "task": "H3",
+    "id": "hrym_guard_summon",
+    "w": 96,
+    "h": 96,
+    "frames": 4,
+    "fps": 8,
+    "flags": [
+      "area"
+    ],
+    "anchor": [
+      48,
+      48
+    ],
+    "columns": 2,
+    "rows": 2,
+    "loop": false,
+    "hook": "scripts/bosses/hrym.gd _summon_guards()",
+    "keep": "每个实际卫队出生点短播；保留4名霜巨人与半血触发",
+    "reference_paths": [
+      "assets/sprites/effects/ice_pillar.png"
+    ],
+    "target": "assets/sprites/effects/bosses/hrym_guard_summon.png",
+    "source_root": "assets/source/taskH3_hrym_fx_2026-10-19"
+  },
+  {
+    "task": "H3",
+    "id": "hrym_ice_break",
+    "w": 64,
+    "h": 64,
+    "frames": 4,
+    "fps": 16,
+    "flags": [
+      "area"
+    ],
+    "anchor": [
+      32,
+      32
+    ],
+    "columns": 2,
+    "rows": 2,
+    "loop": false,
+    "hook": "scripts/bosses/ice_pillar.gd _process() _life<=0",
+    "keep": "柱脚点触发，替换碎裂burst；保持3秒寿命和碰撞移除，不留下残骸",
+    "reference_paths": [
+      "assets/sprites/effects/ice_pillar.png"
+    ],
+    "target": "assets/sprites/effects/bosses/hrym_ice_break.png",
+    "source_root": "assets/source/taskH3_hrym_fx_2026-10-19"
+  },
+  {
+    "task": "H4",
+    "id": "garm_bite",
+    "w": 64,
+    "h": 64,
+    "frames": 4,
+    "fps": 16,
+    "flags": [
+      "rotate"
+    ],
+    "anchor": [
+      32,
+      32
+    ],
+    "columns": 2,
+    "rows": 2,
+    "loop": false,
+    "hook": "scripts/bosses/garm.gd _update_state() lunge",
+    "keep": "三段扑击的接触表现；保留3次重瞄、速度820、0.24秒与伤害",
+    "reference_paths": [
+      "assets/sprites/bosses/garm.png"
+    ],
+    "target": "assets/sprites/effects/bosses/garm_bite.png",
+    "source_root": "assets/source/taskH4_garm_fx_2026-10-19"
+  },
+  {
+    "task": "H4",
+    "id": "garm_howl_wave",
+    "w": 128,
+    "h": 128,
+    "frames": 4,
+    "fps": 8,
+    "flags": [
+      "area",
+      "hole"
+    ],
+    "anchor": [
+      64,
+      64
+    ],
+    "columns": 2,
+    "rows": 2,
+    "loop": false,
+    "hook": "scripts/bosses/garm.gd _howl()",
+    "keep": "替换FxLayer.ring冰霜通用圈；外沿对应HOWL_RADIUS260；保留伤害/震退/驱散",
+    "reference_paths": [
+      "assets/sprites/bosses/garm.png"
+    ],
+    "target": "assets/sprites/effects/bosses/garm_howl_wave.png",
+    "source_root": "assets/source/taskH4_garm_fx_2026-10-19"
+  },
+  {
+    "task": "H4",
+    "id": "garm_chain_link",
+    "w": 16,
+    "h": 8,
+    "frames": 1,
+    "fps": 0,
+    "flags": [
+      "chain",
+      "rotate"
+    ],
+    "anchor": [
+      8,
+      4
+    ],
+    "columns": 1,
+    "rows": 1,
+    "loop": false,
+    "hook": "scripts/bosses/garm.gd _draw_telegraph() not _free 锁链绘制",
+    "keep": "沿现有11点下垂曲线逐节等距排列、按切线旋转；禁止整条拉伸；保留锁桩/范围420",
+    "reference_paths": [
+      "assets/sprites/bosses/garm.png"
+    ],
+    "target": "assets/sprites/effects/bosses/garm_chain_link.png",
+    "source_root": "assets/source/taskH4_garm_fx_2026-10-19"
+  },
+  {
+    "task": "H4",
+    "id": "garm_chain_break",
+    "w": 64,
+    "h": 64,
+    "frames": 4,
+    "fps": 16,
+    "flags": [
+      "area"
+    ],
+    "anchor": [
+      32,
+      32
+    ],
+    "columns": 2,
+    "rows": 2,
+    "loop": false,
+    "hook": "scripts/bosses/garm.gd _on_stake_broken()",
+    "keep": "锁桩断裂点及最后挣脱点各触发；保留_free、速度倍率1.5、承伤1.3",
+    "reference_paths": [
+      "assets/sprites/bosses/garm.png"
+    ],
+    "target": "assets/sprites/effects/bosses/garm_chain_break.png",
+    "source_root": "assets/source/taskH4_garm_fx_2026-10-19"
+  },
+  {
+    "task": "H4",
+    "id": "garm_dispel",
+    "w": 64,
+    "h": 64,
+    "frames": 4,
+    "fps": 8,
+    "flags": [
+      "area",
+      "hole"
+    ],
+    "anchor": [
+      32,
+      32
+    ],
+    "columns": 2,
+    "rows": 2,
+    "loop": false,
+    "hook": "scripts/bosses/garm.gd _howl() 清除frenzy_time/shield_time分支",
+    "keep": "玩家周围短暂碎光；不改变增益清除，不像死亡、不遮角色",
+    "reference_paths": [
+      "assets/sprites/effects/gods/freyja_ring.png"
+    ],
+    "target": "assets/sprites/effects/bosses/garm_dispel.png",
+    "source_root": "assets/source/taskH4_garm_fx_2026-10-19"
+  },
+  {
+    "task": "H5",
+    "id": "nidhogg_poison_breath",
+    "w": 96,
+    "h": 64,
+    "frames": 4,
+    "fps": 16,
+    "flags": [
+      "area",
+      "mouth"
+    ],
+    "anchor": [
+      4,
+      32
+    ],
+    "columns": 2,
+    "rows": 2,
+    "loop": false,
+    "hook": "scripts/bosses/nidhogg.gd _breathe()",
+    "keep": "喷口(4,32)，随_breath_dir旋转；按范围300、半角0.6裁切；保留既有瞬时扇形伤害和3个毒池",
+    "reference_paths": [
+      "assets/sprites/effects/poison_pool.png"
+    ],
+    "target": "assets/sprites/effects/bosses/nidhogg_poison_breath.png",
+    "source_root": "assets/source/taskH5_nidhogg_fx_2026-10-19"
+  },
+  {
+    "task": "H5",
+    "id": "nidhogg_burrow_dust",
+    "w": 96,
+    "h": 64,
+    "frames": 4,
+    "fps": 16,
+    "flags": [
+      "area"
+    ],
+    "anchor": [
+      48,
+      32
+    ],
+    "columns": 2,
+    "rows": 2,
+    "loop": false,
+    "hook": "scripts/bosses/nidhogg.gd _update_state() burrow 达BURROW_TIME",
+    "keep": "替换潜地入口burst，0.25秒尘后消失；保持set_untouchable(true)隐藏本体与1.3秒地下",
+    "reference_paths": [
+      "assets/sprites/effects/ground_crack.png"
+    ],
+    "target": "assets/sprites/effects/bosses/nidhogg_burrow_dust.png",
+    "source_root": "assets/source/taskH5_nidhogg_fx_2026-10-19"
+  },
+  {
+    "task": "H5",
+    "id": "nidhogg_emerge_burst",
+    "w": 128,
+    "h": 96,
+    "frames": 4,
+    "fps": 16,
+    "flags": [
+      "area"
+    ],
+    "anchor": [
+      64,
+      48
+    ],
+    "columns": 2,
+    "rows": 2,
+    "loop": false,
+    "hook": "scripts/bosses/nidhogg.gd _emerge()",
+    "keep": "实际_crack破土点中心；效果按EMERGE_RADIUS100范围裁切；保留地裂预警/伤害28",
+    "reference_paths": [
+      "assets/sprites/effects/ground_crack.png"
+    ],
+    "target": "assets/sprites/effects/bosses/nidhogg_emerge_burst.png",
+    "source_root": "assets/source/taskH5_nidhogg_fx_2026-10-19"
+  },
+  {
+    "task": "H5",
+    "id": "nidhogg_gnaw_heal",
+    "w": 64,
+    "h": 64,
+    "frames": 4,
+    "fps": 8,
+    "flags": [
+      "loop",
+      "area",
+      "flow"
+    ],
+    "anchor": [
+      32,
+      32
+    ],
+    "columns": 2,
+    "rows": 2,
+    "loop": true,
+    "hook": "scripts/bosses/nidhogg.gd _update_state() gnaw",
+    "keep": "原图生命流向+X；旋转/拉伸连接树根到龙；仅gnaw可见；保留每秒2.5%与6秒上限",
+    "reference_paths": [
+      "assets/sprites/effects/poison_pool.png"
+    ],
+    "target": "assets/sprites/effects/bosses/nidhogg_gnaw_heal.png",
+    "source_root": "assets/source/taskH5_nidhogg_fx_2026-10-19"
+  },
+  {
+    "task": "H5",
+    "id": "nidhogg_gnaw_stagger",
+    "w": 64,
+    "h": 64,
+    "frames": 4,
+    "fps": 16,
+    "flags": [
+      "area"
+    ],
+    "anchor": [
+      32,
+      32
+    ],
+    "columns": 2,
+    "rows": 2,
+    "loop": false,
+    "hook": "scripts/bosses/nidhogg.gd take_damage() 达GNAW_BREAK",
+    "keep": "打断瞬间断流/冲击；停止heal循环；保留6%阈值与2秒硬直",
+    "reference_paths": [
+      "assets/sprites/effects/poison_pool.png"
+    ],
+    "target": "assets/sprites/effects/bosses/nidhogg_gnaw_stagger.png",
+    "source_root": "assets/source/taskH5_nidhogg_fx_2026-10-19"
+  },
+  {
+    "task": "H6",
+    "id": "hel_life_ground",
+    "w": 128,
+    "h": 128,
+    "frames": 1,
+    "fps": 0,
+    "flags": [
+      "tile",
+      "faint"
+    ],
+    "anchor": [
+      64,
+      64
+    ],
+    "columns": 1,
+    "rows": 1,
+    "loop": false,
+    "hook": "scripts/bosses/hel.gd _draw_field() 左生之侧draw_rect",
+    "keep": "平铺并在x<_anchor.x裁切，z<角色；保留生死分界与安全圈",
+    "reference_paths": [
+      "assets/sprites/effects/poison_pool.png"
+    ],
+    "target": "assets/sprites/effects/bosses/hel_life_ground.png",
+    "source_root": "assets/source/taskH6_hel_fx_2026-10-19"
+  },
+  {
+    "task": "H6",
+    "id": "hel_death_ground",
+    "w": 128,
+    "h": 128,
+    "frames": 1,
+    "fps": 0,
+    "flags": [
+      "tile",
+      "faint"
+    ],
+    "anchor": [
+      64,
+      64
+    ],
+    "columns": 1,
+    "rows": 1,
+    "loop": false,
+    "hook": "scripts/bosses/hel.gd _draw_field() 右死之侧draw_rect",
+    "keep": "平铺并在x>=_anchor.x裁切，和生侧明度接近；不跨界、不取代圈外压暗",
+    "reference_paths": [
+      "assets/sprites/effects/frost_shockwave.png"
+    ],
+    "target": "assets/sprites/effects/bosses/hel_death_ground.png",
+    "source_root": "assets/source/taskH6_hel_fx_2026-10-19"
+  },
+  {
+    "task": "H6",
+    "id": "hel_domain_edge",
+    "w": 64,
+    "h": 32,
+    "frames": 4,
+    "fps": 8,
+    "flags": [
+      "loop",
+      "band"
+    ],
+    "anchor": [
+      32,
+      16
+    ],
+    "columns": 2,
+    "rows": 2,
+    "loop": true,
+    "hook": "scripts/bosses/hel.gd _draw_field() _domain_radius() 安全圈边界",
+    "keep": "按实时半径1000→380圆周铺设并裁切，切线+X、外法线-Y；判伤/圈外压暗不变",
+    "reference_paths": [
+      "assets/sprites/effects/frost_shockwave.png"
+    ],
+    "target": "assets/sprites/effects/bosses/hel_domain_edge.png",
+    "source_root": "assets/source/taskH6_hel_fx_2026-10-19"
+  },
+  {
+    "task": "H6",
+    "id": "hel_shift",
+    "w": 96,
+    "h": 96,
+    "frames": 4,
+    "fps": 8,
+    "flags": [
+      "area"
+    ],
+    "anchor": [
+      48,
+      48
+    ],
+    "columns": 2,
+    "rows": 2,
+    "loop": false,
+    "hook": "scripts/bosses/hel.gd _update_side() 瞬移前后burst",
+    "keep": "中性灰绿/灰紫，按进出侧调制；原点和目标点分别播，保持12秒切换和SIDE_OFFSET320",
+    "reference_paths": [
+      "assets/sprites/bosses/hel.png"
+    ],
+    "target": "assets/sprites/effects/bosses/hel_shift.png",
+    "source_root": "assets/source/taskH6_hel_fx_2026-10-19"
+  },
+  {
+    "task": "H6",
+    "id": "hel_heal",
+    "w": 64,
+    "h": 64,
+    "frames": 4,
+    "fps": 8,
+    "flags": [
+      "area"
+    ],
+    "anchor": [
+      32,
+      32
+    ],
+    "columns": 2,
+    "rows": 2,
+    "loop": false,
+    "hook": "scripts/bosses/hel.gd _update_side() 生侧治疗分支",
+    "keep": "每个实际被治疗敌人处播放，不给玩家；保留1.5秒、范围450、15%回血",
+    "reference_paths": [
+      "assets/sprites/effects/poison_pool.png"
+    ],
+    "target": "assets/sprites/effects/bosses/hel_heal.png",
+    "source_root": "assets/source/taskH6_hel_fx_2026-10-19"
+  },
+  {
+    "task": "H6",
+    "id": "hel_army_summon",
+    "w": 96,
+    "h": 96,
+    "frames": 4,
+    "fps": 8,
+    "flags": [
+      "area"
+    ],
+    "anchor": [
+      48,
+      48
+    ],
+    "columns": 2,
+    "rows": 2,
+    "loop": false,
+    "hook": "scripts/bosses/hel.gd _raise_army()；_update_side() 死侧生成",
+    "keep": "出生裂隙以实际pos为准；只短播无身体；保留14亡者及死侧3名/3秒",
+    "reference_paths": [
+      "assets/sprites/effects/ground_crack.png"
+    ],
+    "target": "assets/sprites/effects/bosses/hel_army_summon.png",
+    "source_root": "assets/source/taskH6_hel_fx_2026-10-19"
+  },
+  {
+    "task": "H6",
+    "id": "hel_board_ship",
+    "w": 128,
+    "h": 128,
+    "frames": 4,
+    "fps": 8,
+    "flags": [
+      "area"
+    ],
+    "anchor": [
+      64,
+      64
+    ],
+    "columns": 2,
+    "rows": 2,
+    "loop": false,
+    "hook": "scripts/bosses/hel.gd _enter_phase2()",
+    "keep": "旧位置与deck交接短播；图案中部透明，船帆弹幕上层；保留30%阈值/船/指甲弹行为",
+    "reference_paths": [
+      "assets/sprites/bosses/hel.png"
+    ],
+    "target": "assets/sprites/effects/bosses/hel_board_ship.png",
+    "source_root": "assets/source/taskH6_hel_fx_2026-10-19"
+  }
+]

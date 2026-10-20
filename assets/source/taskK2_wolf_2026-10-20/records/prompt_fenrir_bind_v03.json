@@ -1,0 +1,11 @@
+{
+  "tool": "image_gen.imagegen",
+  "id": "fenrir_bind",
+  "prompt": "Use case: precise-object-edit. Image1 is the actual four-frame2x2 thin braided magical binding sprite atlas. Image2 is ONLY a QA GUIDE; cyan rectangles show protected EMPTY space. The final effect must have NOTHING inside any cyan rectangle: every pixel of that whole area must be zero-alpha transparent. Move any rope or knot that overlaps the guide toward the OUTSIDE perimeter and reshape it naturally, no squared-off cut ends. Retain the same aged pale-gold/ivory braid, tiny outer knots, and small traveling glint. Strands must stay thin, about3logicalpx; low opaque coverage. Keep two loose outer oval rope courses and spare ribbon ends OUTSIDE protected center, no interior crossbars. Outer margins >=2logicalpx in each192px cell; do not crop ends or move the overall center. Four same-size equally positioned loop poses with tiny tension/glint changes only. Keep true alpha background and empty center, crisp small-game pixel clusters. Final image contains NO cyan, NO rectangles, no mask-guide marks, no wolf, no other creature, no labels, text, watermark, ground, glow fog, opaque disk or black fill. Square2x2 equal cells without gutters.",
+  "refs": [
+    "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskK2_wolf_2026-10-20/references/fenrir_bind_v02_target.png",
+    "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskK2_wolf_2026-10-20/references/fenrir_bind_clearance_guide.png"
+  ],
+  "transparent_background": true,
+  "guide_role": "QA overlay only; not new art painted in final"
+}

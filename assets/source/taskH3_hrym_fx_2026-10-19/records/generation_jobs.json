@@ -1,0 +1,112 @@
+[
+  {
+    "id": "hrym_block_spark",
+    "version": "v01",
+    "prompt": "Use case: stylized-concept. Production pixel-art VFX for an existing dark northern game. Input is project-owned style/palette reference only; no body from reference. Small ice shield block spark, abstract short crisp icy-blue and white crystal starburst. Four ONESHOT phases: tiny glint, compact angular contact peak, few separated shards, tiny dim disappearing flakes. No shield body, full ring, smoke carpet or creature. Rotationally neutral, no ground shadow. EXACTLY FOUR DISTINCT animation frames in2columns and2rows, equal cells aspect 32:32, native 32x32 each. Same camera scale/registration/pivot across frames. Crisp detailed pixel clusters, icy grey-blue limited32RGB palette, 8 alpha steps for light/mist. Fully transparent background, no backing rectangle, text, labels, frame lines, watermark, scene. Full effect within cell with transparent padding, except matching repeated horizontal ports where requested. Do not redraw an intact ice pillar or creature.",
+    "reference_paths": [
+      "assets/sprites/effects/ice_shard.png"
+    ],
+    "archived_input_references": [
+      {
+        "actual_input_path": "assets/sprites/effects/ice_shard.png",
+        "archived_path": "references/ice_shard.png",
+        "sha256": "5ec86990907579daa953b28ac401a298711a38e71a51b4956805dadd0944e8ad"
+      }
+    ],
+    "archived_output": {
+      "file": "originals/hrym_block_spark_v01.png",
+      "sha256": "87621cc5962adb123e9c36998c30a19e9df9d0cfc7f65b50009f02b64d160379"
+    },
+    "tool": "OpenAI built-in image_gen",
+    "source_terms": "https://openai.com/policies/terms-of-use/",
+    "status": "selected"
+  },
+  {
+    "id": "hrym_guard_summon",
+    "version": "v01",
+    "prompt": "Use case: stylized-concept. Production pixel-art VFX for an existing dark northern game. Input is project-owned style/palette reference only; no body from reference. Brief frost guard arrival marker, no giant or person. A shallow scattered icy ground sigil/cracks with sparse low cold mist lifting around its edges. Four ONESHOT phases: faint ground scratches, restrained bright frost fissures, outward thinning cold mist, a few fading chips. Center remains clear enough to show the spawned creature. Cool blue-grey ice textures matching input; no tall pillars, full ring or snow cloud filling square. EXACTLY FOUR DISTINCT animation frames in2columns and2rows, equal cells aspect 96:96, native 96x96 each. Same camera scale/registration/pivot across frames. Crisp detailed pixel clusters, icy grey-blue limited32RGB palette, 8 alpha steps for light/mist. Fully transparent background, no backing rectangle, text, labels, frame lines, watermark, scene. Full effect within cell with transparent padding, except matching repeated horizontal ports where requested. Do not redraw an intact ice pillar or creature.",
+    "reference_paths": [
+      "assets/sprites/effects/ice_pillar.png"
+    ],
+    "archived_input_references": [
+      {
+        "actual_input_path": "assets/sprites/effects/ice_pillar.png",
+        "archived_path": "references/ice_pillar.png",
+        "sha256": "be48074a2340931126b63f15ddc6232e468c05f4a6537054e1f0cbe0f56efe7c"
+      }
+    ],
+    "archived_output": {
+      "file": "originals/hrym_guard_summon_v01.png",
+      "sha256": "3ef18e6b872add4ee0d2380cb0107ff7c95631fdc3056abd11e2d255f7e6458b"
+    },
+    "tool": "OpenAI built-in image_gen",
+    "source_terms": "https://openai.com/policies/terms-of-use/",
+    "status": "selected"
+  },
+  {
+    "id": "hrym_ice_break",
+    "version": "v01",
+    "prompt": "Use case: stylized-concept. Production pixel-art VFX for an existing dark northern game. Input is project-owned style/palette reference only; no body from reference. An existing blue-white ice pillar shattering away: ONLY scattered airborne angular ice fragments and a little frost powder, NO intact pillar. Four ONESHOT phases: compact crack flash and short shards, shards spread moderately, fewer smaller falling chips, very sparse dim vanishing dust. Center becomes empty by last phase; no permanent rubble, no large stone cloud. EXACTLY FOUR DISTINCT animation frames in2columns and2rows, equal cells aspect 64:64, native 64x64 each. Same camera scale/registration/pivot across frames. Crisp detailed pixel clusters, icy grey-blue limited32RGB palette, 8 alpha steps for light/mist. Fully transparent background, no backing rectangle, text, labels, frame lines, watermark, scene. Full effect within cell with transparent padding, except matching repeated horizontal ports where requested. Do not redraw an intact ice pillar or creature.",
+    "reference_paths": [
+      "assets/sprites/effects/ice_pillar.png"
+    ],
+    "archived_input_references": [
+      {
+        "actual_input_path": "assets/sprites/effects/ice_pillar.png",
+        "archived_path": "references/ice_pillar.png",
+        "sha256": "be48074a2340931126b63f15ddc6232e468c05f4a6537054e1f0cbe0f56efe7c"
+      }
+    ],
+    "archived_output": {
+      "file": "originals/hrym_ice_break_v01.png",
+      "sha256": "3a44b6792f2f87f9fdac78447aef40df18009f546b95eec5e5f1632508a6356e"
+    },
+    "tool": "OpenAI built-in image_gen",
+    "source_terms": "https://openai.com/policies/terms-of-use/",
+    "status": "selected"
+  },
+  {
+    "id": "hrym_shield_arc",
+    "version": "v01",
+    "prompt": "Use case: stylized-concept. Production pixel-art VFX for an existing dark northern game. Input is project-owned style/palette reference only; no body from reference. ONLY a front-facing curved ice-shield ARC on the RIGHT HALF of each square. It curves from upper right through far right to lower right, opening LEFT toward the center. Entire LEFT HALF and central disk40percent diameter COMPLETELY TRANSPARENT. NO full ring, shield slab or rear sparks. FOUR LOOP phases of restrained glints crawling along the same stable arc. Icy blue-white outlined segmented crystal arc, sparse translucent interior, no background. Leave wide transparent borders. EXACTLY FOUR DISTINCT animation frames in2columns and2rows, equal cells aspect 128:128, native 128x128 each. Same camera scale/registration/pivot across frames. Crisp detailed pixel clusters, icy grey-blue limited32RGB palette, 8 alpha steps for light/mist. Fully transparent background, no backing rectangle, text, labels, frame lines, watermark, scene. Full effect within cell with transparent padding, except matching repeated horizontal ports where requested. Do not redraw an intact ice pillar or creature.",
+    "reference_paths": [
+      "assets/sprites/bosses/hrym_shield.png"
+    ],
+    "archived_input_references": [
+      {
+        "actual_input_path": "assets/sprites/bosses/hrym_shield.png",
+        "archived_path": "references/hrym_shield.png",
+        "sha256": "cefc863ffd117b142cdbb2067d6a3c4a764c1a6347bfbb2ee61c4fd8d81c9ba3"
+      }
+    ],
+    "archived_output": {
+      "file": "originals/hrym_shield_arc_v01.png",
+      "sha256": "4461ef52b367b9f200771cbc372aa27cd29afb44faf5d3cbdc3acdf55356fb67"
+    },
+    "tool": "OpenAI built-in image_gen",
+    "source_terms": "https://openai.com/policies/terms-of-use/",
+    "status": "selected"
+  },
+  {
+    "id": "hrym_wave_band",
+    "version": "v01",
+    "prompt": "Use case: stylized-concept. Production pixel-art VFX for an existing dark northern game. Input is project-owned style/palette reference only; no body from reference. A SHORT REPEATABLE ice-wave BAND, not a ring. Horizontal long axis is tangent (LEFT to RIGHT), outward direction UP. Thin churning silver-blue ice-frost crest near center y, sparse chips above and a faint mist tail below. Four LOOP phases of tiny crest motions. Pattern must run continuously through left/right edges with matching ports; transparent top/bottom. No complete circle, no baked gaps, no giant wall. Strong crisp rim and thin translucent underbody; same palette as reference frost effect. EXACTLY FOUR DISTINCT animation frames in2columns and2rows, equal cells aspect 64:32, native 64x32 each. Same camera scale/registration/pivot across frames. Crisp detailed pixel clusters, icy grey-blue limited32RGB palette, 8 alpha steps for light/mist. Fully transparent background, no backing rectangle, text, labels, frame lines, watermark, scene. Full effect within cell with transparent padding, except matching repeated horizontal ports where requested. Do not redraw an intact ice pillar or creature.",
+    "reference_paths": [
+      "assets/sprites/effects/frost_shockwave.png"
+    ],
+    "archived_input_references": [
+      {
+        "actual_input_path": "assets/sprites/effects/frost_shockwave.png",
+        "archived_path": "references/frost_shockwave.png",
+        "sha256": "a0aa09571dec4959ee2a9f66dc6a6a038a2017fad3dea1140680bc837495c625"
+      }
+    ],
+    "archived_output": {
+      "file": "originals/hrym_wave_band_v01.png",
+      "sha256": "3d421810952b0aedab5aba97d9eaf57c71399dc3e9a5d8123239a933ab07b73a"
+    },
+    "tool": "OpenAI built-in image_gen",
+    "source_terms": "https://openai.com/policies/terms-of-use/",
+    "status": "selected"
+  }
+]

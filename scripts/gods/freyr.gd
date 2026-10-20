@@ -93,6 +93,8 @@ func _tick_swords(delta: float) -> void:
 
 ## 飞剑（或野猪）打中一个敌人；打死了就算丰收
 func strike(enemy: Enemy, mult: float, knock: Vector2) -> void:
+	if not is_instance_valid(enemy) or enemy._dead or enemy.is_queued_for_deletion():
+		return
 	var xp := enemy.xp_value
 	var at := enemy.global_position
 	enemy.take_damage(damage(BASE_DAMAGE) * mult, knock)

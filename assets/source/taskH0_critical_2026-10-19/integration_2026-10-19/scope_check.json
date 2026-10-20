@@ -1,0 +1,36 @@
+{
+  "original_code_scene_project_files_compared": 96,
+  "unexpected_changes": [],
+  "allowed_existing_script_changes": [
+    "scripts/bosses/boss.gd",
+    "scripts/bosses/garm.gd",
+    "scripts/bosses/hati.gd",
+    "scripts/bosses/hati_phantom.gd",
+    "scripts/bosses/hel.gd",
+    "scripts/bosses/hrym.gd",
+    "scripts/bosses/ice_pillar.gd",
+    "scripts/bosses/nidhogg.gd",
+    "scripts/bosses/poison_pool.gd",
+    "scripts/bosses/shockwave.gd",
+    "scripts/bosses/skoll.gd",
+    "scripts/effects/fx_layer.gd"
+  ],
+  "new_script": "scripts/effects/boss_fx.gd",
+  "source_PNG_changes": 0,
+  "G6_source_and_audio": "not edited",
+  "git_commit_push": "not executed",
+  "actual_existing_code_files_modified": [
+    "scripts/bosses/hati_phantom.gd",
+    "scripts/bosses/hati.gd",
+    "scripts/bosses/nidhogg.gd",
+    "scripts/bosses/ice_pillar.gd",
+    "scripts/bosses/shockwave.gd",
+    "scripts/bosses/hrym.gd",
+    "scripts/bosses/hel.gd",
+    "scripts/bosses/garm.gd",
+    "scripts/bosses/skoll.gd",
+    "scripts/effects/fx_layer.gd"
+  ],
+  "audio_gd_restored_to_before": true,
+  "regression_test_change": "reset unrelated random crit state for zone assertion"
+}

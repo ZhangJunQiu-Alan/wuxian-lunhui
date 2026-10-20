@@ -1,0 +1,376 @@
+{
+  "files": [
+    {
+      "task": "H0",
+      "id": "thokk",
+      "path": "assets/sprites/enemies/thokk.png",
+      "sha256": "09eacf76a01cbb38177da6174e85247b02a290b1d6f2e6f01e4692337738e64b",
+      "code_integration": "integrated",
+      "runtime_review": "controlled_runtime_verified",
+      "hook": "scripts/data/enemy_db.gd thokk；scripts/entities/enemy.gd _ready() / SpriteVisual.create_actions()"
+    },
+    {
+      "task": "H0",
+      "id": "thokk_move",
+      "path": "assets/sprites/enemies/thokk_move.png",
+      "sha256": "2c4b9a998f653da414009ffff2eb7cb1f6a0efef81fbc303eedc16a3e3242a79",
+      "code_integration": "integrated",
+      "runtime_review": "controlled_runtime_verified",
+      "hook": "scripts/entities/enemy.gd _ready() / _physics_process()；SpriteVisual.create_actions()"
+    },
+    {
+      "task": "H0",
+      "id": "thokk_attack",
+      "path": "assets/sprites/enemies/thokk_attack.png",
+      "sha256": "cc7b7364e7dcc4f542d3bb902635ff07b53bb06bf829aee920aab2960ca3dbef",
+      "code_integration": "integrated",
+      "runtime_review": "controlled_runtime_verified",
+      "hook": "scripts/entities/enemy.gd _update_attack() / SpriteVisual.create_actions()"
+    },
+    {
+      "task": "H0",
+      "id": "hel_death_bolt",
+      "path": "assets/sprites/effects/hel_death_bolt.png",
+      "sha256": "e4abc7d80a6feedabb4499611b9c900fa79e240967311fa7f623ddcdc54f58c6",
+      "code_integration": "integrated",
+      "runtime_review": "controlled_runtime_verified",
+      "hook": "scripts/bosses/hel.gd _update_state() cast_windup 中 _fan() 的 texture=null"
+    },
+    {
+      "task": "H1",
+      "id": "skoll_dash_trail",
+      "path": "assets/sprites/effects/bosses/skoll_dash_trail.png",
+      "sha256": "9844cdd44d99cad4b30aaa2042bf471e1b7864b1a3107e16b36dc5e190107c7a",
+      "code_integration": "integrated",
+      "runtime_review": "controlled_runtime_verified",
+      "hook": "scripts/bosses/skoll.gd _draw_telegraph() dash"
+    },
+    {
+      "task": "H1",
+      "id": "skoll_bite",
+      "path": "assets/sprites/effects/bosses/skoll_bite.png",
+      "sha256": "a125c516a5481ed3ee1f95e368a82c2f6b65b42b2242ae4dff1527e5f33441f9",
+      "code_integration": "integrated",
+      "runtime_review": "controlled_runtime_verified",
+      "hook": "scripts/bosses/skoll.gd _update_state() dash 接触点"
+    },
+    {
+      "task": "H1",
+      "id": "skoll_howl",
+      "path": "assets/sprites/effects/bosses/skoll_howl.png",
+      "sha256": "772460c70528b04fb73c73694f3a855d93938a79b6e78bf9324ef31fbf90bef5",
+      "code_integration": "integrated",
+      "runtime_review": "controlled_runtime_verified",
+      "hook": "scripts/bosses/skoll.gd _draw_telegraph() howl；_summon_wolves()"
+    },
+    {
+      "task": "H1",
+      "id": "skoll_howl_body",
+      "path": "assets/sprites/bosses/skoll_howl.png",
+      "sha256": "a6306eea1d7e44da5d5a8a0c749bcd14a339616cfa62b0577a5b5830c7c9a942",
+      "code_integration": "integrated",
+      "runtime_review": "controlled_runtime_verified",
+      "hook": "scripts/bosses/skoll.gd init_stats() state_actions.howl；scripts/bosses/boss.gd BOSS_ACTIONS"
+    },
+    {
+      "task": "H2",
+      "id": "hati_lunge_trail",
+      "path": "assets/sprites/effects/bosses/hati_lunge_trail.png",
+      "sha256": "90c2d213ce2a387454af1f893814cd22b7f55bbffa1fcee60fbcdba4306db272",
+      "code_integration": "integrated",
+      "runtime_review": "controlled_runtime_verified",
+      "hook": "scripts/bosses/hati.gd _draw_telegraph() lunge；scripts/bosses/hati_phantom.gd _draw() lunge"
+    },
+    {
+      "task": "H2",
+      "id": "hati_howl_wave",
+      "path": "assets/sprites/effects/bosses/hati_howl_wave.png",
+      "sha256": "332d7e5ca837d6dba1b50a9a14ffefbc662e48da29824a7ee849a4ffa3f4e39a",
+      "code_integration": "integrated",
+      "runtime_review": "controlled_runtime_verified",
+      "hook": "scripts/bosses/hati.gd _update_state() howl_windup 达阈值"
+    },
+    {
+      "task": "H2",
+      "id": "hati_split_flash",
+      "path": "assets/sprites/effects/bosses/hati_split_flash.png",
+      "sha256": "430b9d996e5fbbf069d756177aaa720b2a3920bd916eac1c0ee1cc32e0ff091f",
+      "code_integration": "integrated",
+      "runtime_review": "controlled_runtime_verified",
+      "hook": "scripts/bosses/hati.gd _split()；scripts/bosses/hati_phantom.gd _physics_process() 消散"
+    },
+    {
+      "task": "H3",
+      "id": "hrym_wave_band",
+      "path": "assets/sprites/effects/bosses/hrym_wave_band.png",
+      "sha256": "d6d0ab68ae0ad1c285fc56b4a63aea374cea31443e003b34b1534173f1073090",
+      "code_integration": "integrated",
+      "runtime_review": "controlled_runtime_verified",
+      "hook": "scripts/bosses/shockwave.gd _draw() / _in_gap()；scripts/bosses/hrym.gd _stomp()"
+    },
+    {
+      "task": "H3",
+      "id": "hrym_shield_arc",
+      "path": "assets/sprites/effects/bosses/hrym_shield_arc.png",
+      "sha256": "8c8f524bf418d0968ed5c8142ac6e73986e523e68f05cf178a5e89c6288699f2",
+      "code_integration": "integrated",
+      "runtime_review": "controlled_runtime_verified",
+      "hook": "scripts/bosses/hrym.gd _draw_shield()；_update_state() 刷新前景子层"
+    },
+    {
+      "task": "H3",
+      "id": "hrym_block_spark",
+      "path": "assets/sprites/effects/bosses/hrym_block_spark.png",
+      "sha256": "5604f8c676beefececc8a5cbc2fabd76fbc75e423abb6b25478285a9e00cc36e",
+      "code_integration": "integrated",
+      "runtime_review": "controlled_runtime_verified",
+      "hook": "scripts/bosses/hrym.gd take_damage() 被格挡分支"
+    },
+    {
+      "task": "H3",
+      "id": "hrym_guard_summon",
+      "path": "assets/sprites/effects/bosses/hrym_guard_summon.png",
+      "sha256": "0fb53e5a9c836e184adeca14eda2895d8a46e905a31939f9a8ef7dbf103c3b73",
+      "code_integration": "integrated",
+      "runtime_review": "controlled_runtime_verified",
+      "hook": "scripts/bosses/hrym.gd _summon_guards()"
+    },
+    {
+      "task": "H3",
+      "id": "hrym_ice_break",
+      "path": "assets/sprites/effects/bosses/hrym_ice_break.png",
+      "sha256": "1182b62d22d3838d05b02f7d833bbae76798db471d02eeb3b062ebd7764247f1",
+      "code_integration": "integrated",
+      "runtime_review": "controlled_runtime_verified",
+      "hook": "scripts/bosses/ice_pillar.gd _process() _life<=0"
+    },
+    {
+      "task": "H4",
+      "id": "garm_bite",
+      "path": "assets/sprites/effects/bosses/garm_bite.png",
+      "sha256": "95402ffcaec4881b71e39ce05ba1d8f97cf31c6fe838733dd5259c7cee55eb62",
+      "code_integration": "integrated",
+      "runtime_review": "controlled_runtime_verified",
+      "hook": "scripts/bosses/garm.gd _update_state() lunge"
+    },
+    {
+      "task": "H4",
+      "id": "garm_howl_wave",
+      "path": "assets/sprites/effects/bosses/garm_howl_wave.png",
+      "sha256": "698f947a546f3e6fd3c6ad8e34771cd9572ec1438b8a94b105cb87608defaec8",
+      "code_integration": "integrated",
+      "runtime_review": "controlled_runtime_verified",
+      "hook": "scripts/bosses/garm.gd _howl()"
+    },
+    {
+      "task": "H4",
+      "id": "garm_chain_link",
+      "path": "assets/sprites/effects/bosses/garm_chain_link.png",
+      "sha256": "0690ac7df91450f75578ee42d150c58d1213e76d5f351e68070fe4f00f2ef7e1",
+      "code_integration": "integrated",
+      "runtime_review": "controlled_runtime_verified",
+      "hook": "scripts/bosses/garm.gd _draw_telegraph() not _free 锁链绘制"
+    },
+    {
+      "task": "H4",
+      "id": "garm_chain_break",
+      "path": "assets/sprites/effects/bosses/garm_chain_break.png",
+      "sha256": "ea6db7b77f6c20d6eb278a9411e50322db86a192a7879ab651ce86ad1a734093",
+      "code_integration": "integrated",
+      "runtime_review": "controlled_runtime_verified",
+      "hook": "scripts/bosses/garm.gd _on_stake_broken()"
+    },
+    {
+      "task": "H4",
+      "id": "garm_dispel",
+      "path": "assets/sprites/effects/bosses/garm_dispel.png",
+      "sha256": "12e749f7e5f8f5d7f9ddf94fb8615064c6d4a40b55666ca061a4fa1298a564e1",
+      "code_integration": "integrated",
+      "runtime_review": "controlled_runtime_verified",
+      "hook": "scripts/bosses/garm.gd _howl() 清除frenzy_time/shield_time分支"
+    },
+    {
+      "task": "H5",
+      "id": "nidhogg_poison_breath",
+      "path": "assets/sprites/effects/bosses/nidhogg_poison_breath.png",
+      "sha256": "99d291b294b5a8412bcf449586d1bbf585bbe5ffed37c458185d24fa66f473b7",
+      "code_integration": "integrated",
+      "runtime_review": "controlled_runtime_verified",
+      "hook": "scripts/bosses/nidhogg.gd _breathe()"
+    },
+    {
+      "task": "H5",
+      "id": "nidhogg_burrow_dust",
+      "path": "assets/sprites/effects/bosses/nidhogg_burrow_dust.png",
+      "sha256": "311d155d6539a506c789ed31aa6d2b4c3d5a4ed1b983ed0634a2b755a2c2c511",
+      "code_integration": "integrated",
+      "runtime_review": "controlled_runtime_verified",
+      "hook": "scripts/bosses/nidhogg.gd _update_state() burrow 达BURROW_TIME"
+    },
+    {
+      "task": "H5",
+      "id": "nidhogg_emerge_burst",
+      "path": "assets/sprites/effects/bosses/nidhogg_emerge_burst.png",
+      "sha256": "2d39b0d487e699842b11465b776d7af804a7b9954f3c1fd8349082913d643175",
+      "code_integration": "integrated",
+      "runtime_review": "controlled_runtime_verified",
+      "hook": "scripts/bosses/nidhogg.gd _emerge()"
+    },
+    {
+      "task": "H5",
+      "id": "nidhogg_gnaw_heal",
+      "path": "assets/sprites/effects/bosses/nidhogg_gnaw_heal.png",
+      "sha256": "68a7ccb307261e91e12b967d37f510a79750c2d96fab62427a63ad8a7ee22908",
+      "code_integration": "integrated",
+      "runtime_review": "controlled_runtime_verified",
+      "hook": "scripts/bosses/nidhogg.gd _draw_gnaw()；_update_state() 刷新前景子层"
+    },
+    {
+      "task": "H5",
+      "id": "nidhogg_gnaw_stagger",
+      "path": "assets/sprites/effects/bosses/nidhogg_gnaw_stagger.png",
+      "sha256": "f3a03706f0b018eec784a8144c7aee6a0f50b6576980531aeed1d15e013a7dfa",
+      "code_integration": "integrated",
+      "runtime_review": "controlled_runtime_verified",
+      "hook": "scripts/bosses/nidhogg.gd take_damage() 达GNAW_BREAK"
+    },
+    {
+      "task": "H6",
+      "id": "hel_life_ground",
+      "path": "assets/sprites/effects/bosses/hel_life_ground.png",
+      "sha256": "ed4d51135e40f356266e3f4220e676dd76dc4a9deeb112492fbeb33b25c84df7",
+      "code_integration": "integrated",
+      "runtime_review": "controlled_runtime_verified",
+      "hook": "scripts/bosses/hel.gd _draw_field() 左生之侧draw_rect"
+    },
+    {
+      "task": "H6",
+      "id": "hel_death_ground",
+      "path": "assets/sprites/effects/bosses/hel_death_ground.png",
+      "sha256": "c9b3a0555ade31cf8f76eb10c4eefc3c9415b82a848b370bc599a9bcdc093c1c",
+      "code_integration": "integrated",
+      "runtime_review": "controlled_runtime_verified",
+      "hook": "scripts/bosses/hel.gd _draw_field() 右死之侧draw_rect"
+    },
+    {
+      "task": "H6",
+      "id": "hel_domain_edge",
+      "path": "assets/sprites/effects/bosses/hel_domain_edge.png",
+      "sha256": "701cfa8c2fbfdc7dfe4e8ae393ae5e3fa003b0ae6eedaa5e00e770fbc2807593",
+      "code_integration": "integrated",
+      "runtime_review": "controlled_runtime_verified",
+      "hook": "scripts/bosses/hel.gd _draw_field() _domain_radius() 安全圈边界"
+    },
+    {
+      "task": "H6",
+      "id": "hel_shift",
+      "path": "assets/sprites/effects/bosses/hel_shift.png",
+      "sha256": "2d231fd14e31c24cea127d1a6997429cbad225b0e2030acf61c5673219ffbcda",
+      "code_integration": "integrated",
+      "runtime_review": "controlled_runtime_verified",
+      "hook": "scripts/bosses/hel.gd _update_side() 瞬移前后burst"
+    },
+    {
+      "task": "H6",
+      "id": "hel_heal",
+      "path": "assets/sprites/effects/bosses/hel_heal.png",
+      "sha256": "474a81462fe440d485af0eb52464e1434f49ea0b0be96b771651b215c064d2b1",
+      "code_integration": "integrated",
+      "runtime_review": "controlled_runtime_verified",
+      "hook": "scripts/bosses/hel.gd _update_side() 生侧治疗分支"
+    },
+    {
+      "task": "H6",
+      "id": "hel_army_summon",
+      "path": "assets/sprites/effects/bosses/hel_army_summon.png",
+      "sha256": "9caf3c05d7bb4d7d464f6324c9ff369cc043c925a71a686d11ec6ea3e05ebc43",
+      "code_integration": "integrated",
+      "runtime_review": "controlled_runtime_verified",
+      "hook": "scripts/bosses/hel.gd _raise_army()；_update_side() 死侧生成"
+    },
+    {
+      "task": "H6",
+      "id": "hel_board_ship",
+      "path": "assets/sprites/effects/bosses/hel_board_ship.png",
+      "sha256": "4ce8ec2d7c056544e501bf12d4d1bfb3d50ffecdf8c32a3f675ed4a6a0c6c6cf",
+      "code_integration": "integrated",
+      "runtime_review": "controlled_runtime_verified",
+      "hook": "scripts/bosses/hel.gd _enter_phase2()"
+    }
+  ],
+  "count": 33,
+  "code_sha256": [
+    {
+      "path": "scripts/bosses/hati_phantom.gd",
+      "sha256": "edc16dd3a32d052a1ed786f1d00af9b7a3906bdef2269a3e40a6f4ac085b1c43"
+    },
+    {
+      "path": "scripts/bosses/hati.gd",
+      "sha256": "f54c2905a7ff49fd43da1e2cb30b13771f1b842dc4feb50fe23a1c89d336e2d1"
+    },
+    {
+      "path": "scripts/bosses/nidhogg.gd",
+      "sha256": "241d11d109f6f0a6933e509ef5d6a1129df38881d7d48ee3d94ff69faec7a822"
+    },
+    {
+      "path": "scripts/bosses/ice_pillar.gd",
+      "sha256": "4729076a091bec37ad48cea091863fcdb8f70a49dbb8706f36498c7ae062ba1a"
+    },
+    {
+      "path": "scripts/bosses/shockwave.gd",
+      "sha256": "5c5a4a49309a51bff5f1b1c32c3901172e0c56b7a2f1970380fd635c9cffe430"
+    },
+    {
+      "path": "scripts/bosses/hrym.gd",
+      "sha256": "2b3844ef5da326de7ceb4c9a74c119549ee48ebf069cb0057f57d2bab95a7ec6"
+    },
+    {
+      "path": "scripts/bosses/hel.gd",
+      "sha256": "2bfabc828025aa27c5687a5d521cd4060e4b722fd31d1d7cc0831425b57e9697"
+    },
+    {
+      "path": "scripts/bosses/poison_pool.gd",
+      "sha256": "a91afbfc2980424e5a42f9269e4f42019075c7496280d05f8603f9a94accea22"
+    },
+    {
+      "path": "scripts/bosses/garm.gd",
+      "sha256": "78384119e44fa76d817e1f189a7c9237d74718c410c231135ab6591f6207f0e6"
+    },
+    {
+      "path": "scripts/bosses/boss.gd",
+      "sha256": "146744324fd940086f53b242e224d4d9b2fe193ddfe17c3dd13f7ecf56c65cd0"
+    },
+    {
+      "path": "scripts/bosses/skoll.gd",
+      "sha256": "e263c7a2165f6e5ba31fa517cd89d4b1569d6326dfa39351e716bc4cba43553f"
+    },
+    {
+      "path": "scripts/effects/boss_fx.gd",
+      "sha256": "6ea852ac112f87472d82aa59430b2bb4dec2edca547d36da08b8e8953a93f71f"
+    },
+    {
+      "path": "scripts/effects/fx_layer.gd",
+      "sha256": "1e3527b748b0251a494973cbfc21099c6b851947c204e8ae643c4aad15ee855d"
+    }
+  ],
+  "game_acceptance_scope": "controlled runtime verification, full playthrough not tested",
+  "startup": "normal rendered window verified; rapid headless exit has retained OGG shutdown warning",
+  "test_tools_sha256": [
+    {
+      "path": "tools/test_boss_art.gd",
+      "sha256": "6501ad6b446c42a67deef43e39a14d52f5b0e8b12e3ddec68eddde9c30277895"
+    },
+    {
+      "path": "tools/review_boss_art.gd",
+      "sha256": "c5f2c0582e382f9b2680b9b954a64a9789f43e828d4d39f935adba739c0e5476"
+    },
+    {
+      "path": "tools/benchmark_boss_art.gd",
+      "sha256": "bad4d7ca5df2f4ba61d96f4978fbd12e4727499a7ff254955ef1e005d91dc8e4"
+    },
+    {
+      "path": "tools/test_combat_regressions.gd",
+      "sha256": "3965adb67ddf4706e577ba0de201babea058bc4f051ae60353370977040faad1"
+    }
+  ]
+}

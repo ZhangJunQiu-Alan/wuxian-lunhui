@@ -152,12 +152,16 @@ func _tick_snowshoes(delta: float) -> void:
 	if _last_pos.is_finite():
 		_walked += global_position.distance_to(_last_pos)
 	_last_pos = global_position
-	if _walked < STRIDE / cooldown(1.0):
+	var stride := STRIDE * cooldown(1.0)
+	if _walked < stride:
 		return
-	_walked = 0.0
 	var target := farthest_enemy(global_position, RANGE)
 	if target:
-		_volley(global_position.direction_to(target.global_position), volley() * (2 if _ski > 0.0 else 1))
+		while _walked >= stride:
+			_walked -= stride
+			_volley(global_position.direction_to(target.global_position), volley() * (2 if _ski > 0.0 else 1))
+	else:
+		_walked = minf(_walked, stride)
 
 
 # ———— 质变：永冬 ————

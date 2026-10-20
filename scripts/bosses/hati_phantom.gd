@@ -26,7 +26,8 @@ func _ready() -> void:
 func _physics_process(delta: float) -> void:
 	_life -= delta
 	if _life <= 0.0 or not is_instance_valid(hati) or not is_instance_valid(target):
-		FxLayer.burst(global_position, color, 16, 180.0)
+		if not BossFx.play("hati_split_flash", global_position, 0.0, Vector2.ONE, Color.WHITE, true):
+			FxLayer.burst(global_position, color, 16, 180.0)
 		queue_free()
 		return
 	if _flash_time > 0.0:
@@ -66,6 +67,8 @@ func take_damage(_amount: float, _knockback: Vector2 = Vector2.ZERO, _crit: bool
 func _draw() -> void:
 	if not is_instance_valid(hati):
 		return
+	if hati.state == "lunge":
+		BossFx.draw(self, "hati_lunge_trail", hati.state_time, -_aim_dir * radius * 0.5, _aim_dir.angle())
 	if hati.state == "lunge_windup":
 		var t := hati.state_time / hati.windup_time(Hati.LUNGE_WINDUP)
 		Boss.draw_line_telegraph(self, _aim_dir, Hati.LUNGE_LENGTH + radius, radius, t, Hati.MOON_COLOR)

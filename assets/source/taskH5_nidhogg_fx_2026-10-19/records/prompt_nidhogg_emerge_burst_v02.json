@@ -1,0 +1,9 @@
+{
+  "id": "nidhogg_emerge_burst",
+  "version": "v02",
+  "prompt": "Use case: precise-object-edit. This is a 2x2 FOUR-frame pixel-art earth-burst animation sheet, genuine transparent background. KEEP top-left, top-right, and bottom-left cells EXACTLY unchanged in appearance, size, location, palette and opacity. Change ONLY bottom-right fourth cell: erase the remaining central rock pile and all large rocks. This is the FINAL DISSIPATION phase, so retain ONLY 4 to8 very tiny dark grey-brown airborne dust grains and one or two extremely faint thin dust curls, loosely around where the burst was, no visible earth mound, no ground crater, no stone base, no big fragments, no opaque smoke patch. Most of the fourth cell must be completely transparent. Same muted earth palette and crisp pixel clusters as reference. Do not add text, lines, labels or watermarks. Preserve 2x2 grid and full transparent outer padding. No creature.",
+  "reference_paths": [
+    "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskH5_nidhogg_fx_2026-10-19/originals/nidhogg_emerge_burst_v01.png"
+  ],
+  "rejection_reason": "v01 final frame retained visible stone pile; require dispersal"
+}

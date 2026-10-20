@@ -1,0 +1,68 @@
+{
+  "input": "originals/hel_heal_v01.png",
+  "input_sha256": "90549855ae5706ca5988ef5038d850a233d545025abecdfb127f11b99cb20b1c",
+  "raw_size": [
+    1774,
+    887
+  ],
+  "grid": [
+    2,
+    2
+  ],
+  "cut_boxes": [
+    [
+      421,
+      239,
+      689,
+      435
+    ],
+    [
+      204,
+      58,
+      482,
+      435
+    ],
+    [
+      425,
+      32,
+      697,
+      423
+    ],
+    [
+      231,
+      112,
+      481,
+      422
+    ]
+  ],
+  "single_common_scale": 0.1534526854219949,
+  "placements": [
+    [
+      11,
+      17,
+      41,
+      30
+    ],
+    [
+      10,
+      3,
+      43,
+      58
+    ],
+    [
+      11,
+      2,
+      42,
+      60
+    ],
+    [
+      13,
+      8,
+      38,
+      48
+    ]
+  ],
+  "operations": "original alpha threshold/quantization, source frame cuts, single common nearest resize, source-derived shared palette, whole-frame placement; no character/effect drawing",
+  "candidate": "candidates/hel_heal_v01.png",
+  "candidate_sha256": "474a81462fe440d485af0eb52464e1434f49ea0b0be96b771651b215c064d2b1"
+}

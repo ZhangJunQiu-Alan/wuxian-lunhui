@@ -1,0 +1,8 @@
+{
+  "id": "nidhogg_poison_breath",
+  "version": "v01",
+  "prompt": "Use case: stylized-concept. Production pixel-art dark underworld game VFX. Inputs are project-owned material/texture references only, do NOT copy their pool or ground-crack silhouette. Rightward fan-shaped dragon poison BREATH, no dragon or pool. Narrow spray mouth at x4,y32 of a96x64 target, fan expands to RIGHT, about±34degrees around +X. Four ONESHOT phases: a small exhale from narrow left nozzle, widening layered dark moss-green and grey-green smoke fan, full fan with a few pale toxic curls, thin dissipating fan fragments. Left edge outside nozzle completely transparent. No straight rectangular cloud, no droplets falling into a pool, no ground shadow. Keep sparse alpha so player silhouettes remain visible. EXACTLY FOUR DISTINCT frames in TWO COLUMNS and TWO ROWS, equal cell aspect 96:64, intended native 96x64. Same pivot, cell framing and scale across frames, preserve occurrence/peak/decay for single shots and smooth phase cycling for loop. Limited32RGB with8alpha steps, crisp clustered pixel art, subdued moss-green and earth-grey palette, no blue ice or fiery orange. Entire effect fits inside each cell with transparent borders. Genuine alpha background, no opaque rectangle, text, labels, grid, watermark, scenery, dragon or tree body.",
+  "reference_paths": [
+    "assets/sprites/effects/poison_pool.png"
+  ]
+}

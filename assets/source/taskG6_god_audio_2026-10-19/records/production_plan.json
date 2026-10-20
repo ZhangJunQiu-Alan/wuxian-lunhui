@@ -1,0 +1,301 @@
+{
+  "task": "G6",
+  "date": "2026-10-19",
+  "sound_types": 30,
+  "file_count": 44,
+  "format": {
+    "container": "WAV PCM",
+    "sample_rate": 44100,
+    "bits": 16,
+    "channels": 1,
+    "peak_dbfs": -1,
+    "onset_max_ms": 10
+  },
+  "scope": "Only own assets; no code/docs/scenes/git changes. Subjective listening must not be inferred from waveform metrics.",
+  "sounds": [
+    {
+      "id": "god_choose",
+      "purpose": "弹出「选择一位神」",
+      "variants": 1,
+      "files": [
+        "god_choose.wav"
+      ],
+      "max_duration_seconds": null
+    },
+    {
+      "id": "path_choose",
+      "purpose": "弹出「选择一条道路」（质变）",
+      "variants": 1,
+      "files": [
+        "path_choose.wav"
+      ],
+      "max_duration_seconds": null
+    },
+    {
+      "id": "awaken",
+      "purpose": "弹出「神之觉醒」：1.5 秒左右，庄严、有力",
+      "variants": 1,
+      "files": [
+        "awaken.wav"
+      ],
+      "max_duration_seconds": 1.5
+    },
+    {
+      "id": "fusion",
+      "purpose": "弹出「融合技」：两种力量合在一起的感觉",
+      "variants": 1,
+      "files": [
+        "fusion.wav"
+      ],
+      "max_duration_seconds": null
+    },
+    {
+      "id": "hammer_throw",
+      "purpose": "托尔掷出战锤（呼啸）",
+      "variants": 1,
+      "files": [
+        "hammer_throw.wav"
+      ],
+      "max_duration_seconds": null
+    },
+    {
+      "id": "hammer_catch",
+      "purpose": "战锤飞回手里",
+      "variants": 1,
+      "files": [
+        "hammer_catch.wav"
+      ],
+      "max_duration_seconds": null
+    },
+    {
+      "id": "static_zap",
+      "purpose": "静电场的电网互相电击（很轻的噼啪声）",
+      "variants": 3,
+      "files": [
+        "static_zap_01.wav",
+        "static_zap_02.wav",
+        "static_zap_03.wav"
+      ],
+      "max_duration_seconds": 0.3
+    },
+    {
+      "id": "spear_throw",
+      "purpose": "奥丁掷出长枪",
+      "variants": 1,
+      "files": [
+        "spear_throw.wav"
+      ],
+      "max_duration_seconds": null
+    },
+    {
+      "id": "rune_detonate",
+      "purpose": "符文印记引爆",
+      "variants": 3,
+      "files": [
+        "rune_detonate_01.wav",
+        "rune_detonate_02.wav",
+        "rune_detonate_03.wav"
+      ],
+      "max_duration_seconds": 0.3
+    },
+    {
+      "id": "raven_dive",
+      "purpose": "渡鸦俯冲（短促的鸦鸣或振翅）",
+      "variants": 1,
+      "files": [
+        "raven_dive.wav"
+      ],
+      "max_duration_seconds": null
+    },
+    {
+      "id": "wolf_bite",
+      "purpose": "火焰幼狼咬人",
+      "variants": 3,
+      "files": [
+        "wolf_bite_01.wav",
+        "wolf_bite_02.wav",
+        "wolf_bite_03.wav"
+      ],
+      "max_duration_seconds": 0.3
+    },
+    {
+      "id": "wolf_breath",
+      "purpose": "巨狼喷火",
+      "variants": 1,
+      "files": [
+        "wolf_breath.wav"
+      ],
+      "max_duration_seconds": null
+    },
+    {
+      "id": "decoy_spawn",
+      "purpose": "洛基留下火焰分身",
+      "variants": 1,
+      "files": [
+        "decoy_spawn.wav"
+      ],
+      "max_duration_seconds": null
+    },
+    {
+      "id": "feather_launch",
+      "purpose": "弗蕾亚的羽刃一齐射出",
+      "variants": 1,
+      "files": [
+        "feather_launch.wav"
+      ],
+      "max_duration_seconds": null
+    },
+    {
+      "id": "cat_pounce",
+      "purpose": "战猫扑击",
+      "variants": 3,
+      "files": [
+        "cat_pounce_01.wav",
+        "cat_pounce_02.wav",
+        "cat_pounce_03.wav"
+      ],
+      "max_duration_seconds": 0.3
+    },
+    {
+      "id": "chariot_charge",
+      "purpose": "猫车冲过屏幕",
+      "variants": 1,
+      "files": [
+        "chariot_charge.wav"
+      ],
+      "max_duration_seconds": null
+    },
+    {
+      "id": "light_beam",
+      "purpose": "巴德尔射出光束（明亮、干净）",
+      "variants": 1,
+      "files": [
+        "light_beam.wav"
+      ],
+      "max_duration_seconds": null
+    },
+    {
+      "id": "light_spear",
+      "purpose": "光矛掷出",
+      "variants": 1,
+      "files": [
+        "light_spear.wav"
+      ],
+      "max_duration_seconds": null
+    },
+    {
+      "id": "light_burst",
+      "purpose": "带光痕的敌人死亡时爆出一圈光（很轻）",
+      "variants": 3,
+      "files": [
+        "light_burst_01.wav",
+        "light_burst_02.wav",
+        "light_burst_03.wav"
+      ],
+      "max_duration_seconds": 0.3
+    },
+    {
+      "id": "light_flash",
+      "purpose": "每 30 秒的全屏闪光",
+      "variants": 1,
+      "files": [
+        "light_flash.wav"
+      ],
+      "max_duration_seconds": null
+    },
+    {
+      "id": "net_throw",
+      "purpose": "澜抛出渔网",
+      "variants": 1,
+      "files": [
+        "net_throw.wav"
+      ],
+      "max_duration_seconds": null
+    },
+    {
+      "id": "net_close",
+      "purpose": "收网（绳子收紧、水声）",
+      "variants": 1,
+      "files": [
+        "net_close.wav"
+      ],
+      "max_duration_seconds": null
+    },
+    {
+      "id": "wave_push",
+      "purpose": "推出巨浪",
+      "variants": 1,
+      "files": [
+        "wave_push.wav"
+      ],
+      "max_duration_seconds": null
+    },
+    {
+      "id": "wave_crash",
+      "purpose": "浪拍下来",
+      "variants": 1,
+      "files": [
+        "wave_crash.wav"
+      ],
+      "max_duration_seconds": null
+    },
+    {
+      "id": "sword_hit",
+      "purpose": "弗雷的飞剑砍中敌人",
+      "variants": 3,
+      "files": [
+        "sword_hit_01.wav",
+        "sword_hit_02.wav",
+        "sword_hit_03.wav"
+      ],
+      "max_duration_seconds": 0.3
+    },
+    {
+      "id": "boar_charge",
+      "purpose": "野猪冲锋（蹄声、哼叫）",
+      "variants": 1,
+      "files": [
+        "boar_charge.wav"
+      ],
+      "max_duration_seconds": null
+    },
+    {
+      "id": "ice_arrow",
+      "purpose": "斯卡蒂射出冰箭",
+      "variants": 3,
+      "files": [
+        "ice_arrow_01.wav",
+        "ice_arrow_02.wav",
+        "ice_arrow_03.wav"
+      ],
+      "max_duration_seconds": 0.3
+    },
+    {
+      "id": "ice_snipe",
+      "purpose": "蓄力狙击的一箭",
+      "variants": 1,
+      "files": [
+        "ice_snipe.wav"
+      ],
+      "max_duration_seconds": null
+    },
+    {
+      "id": "ice_shatter",
+      "purpose": "冻结的敌人碎成冰片",
+      "variants": 1,
+      "files": [
+        "ice_shatter.wav"
+      ],
+      "max_duration_seconds": null
+    },
+    {
+      "id": "heal_pickup",
+      "purpose": "捡起金羽、金泪、苹果",
+      "variants": 1,
+      "files": [
+        "heal_pickup.wav"
+      ],
+      "max_duration_seconds": null
+    }
+  ]
+}

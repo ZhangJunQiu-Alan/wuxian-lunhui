@@ -1,0 +1,9 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+OpenGL API 4.1 Metal - 90.5 - Compatibility - Using Device: Apple - Apple M2
+
+2026-10-19 04:06:26.478 godot[98621:3130358] error messaging the mach port for IMKCFRunLoopWakeUpReliable
+MEASURE { "phase": "350_animated_sprites_no_fx", "frames": 383, "mean_frame_ms": 13.095590078329, "median_frame_ms": 11.664, "p95_frame_ms": 25.838, "fps_over_interval": 76.3615838628634, "enemies": 351, "peak_boss_effects": 0, "nodes": 1589, "time_scale": 1.0, "last_process_delta_ms": 17.6366666666667 }
+MEASURE { "phase": "350_animated_sprites_40_fx", "frames": 418, "mean_frame_ms": 11.9842105263158, "median_frame_ms": 11.337, "p95_frame_ms": 24.247, "fps_over_interval": 83.4431269213878, "enemies": 351, "peak_boss_effects": 40, "nodes": 1589, "time_scale": 1.0, "last_process_delta_ms": 11.1111111111111 }
+MEASURE { "phase": "350_animated_sprites_no_fx_repeat", "frames": 430, "mean_frame_ms": 11.6505604651163, "median_frame_ms": 11.543, "p95_frame_ms": 16.066, "fps_over_interval": 85.8327805768801, "enemies": 351, "peak_boss_effects": 0, "nodes": 1589, "time_scale": 1.0, "last_process_delta_ms": 11.1111111111111 }
+MEASURE { "phase": "350_live_AI_no_fx", "frames": 364, "mean_frame_ms": 13.7394835164835, "median_frame_ms": 11.081, "p95_frame_ms": 24.473, "fps_over_interval": 72.7829396789393, "enemies": 351, "peak_boss_effects": 0, "nodes": 1589, "time_scale": 1.0, "last_process_delta_ms": 15.2777777777778 }
+MEASURE { "phase": "350_live_AI_40_fx", "frames": 725, "mean_frame_ms": 6.90196689655173, "median_frame_ms": 6.902, "p95_frame_ms": 7.61, "fps_over_interval": 144.88623532802, "enemies": 351, "peak_boss_effects": 40, "nodes": 1589, "time_scale": 1.0, "last_process_delta_ms": 6.811 }

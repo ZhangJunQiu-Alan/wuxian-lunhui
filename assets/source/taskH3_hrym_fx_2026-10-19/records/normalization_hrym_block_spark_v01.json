@@ -1,0 +1,68 @@
+{
+  "input": "originals/hrym_block_spark_v01.png",
+  "input_sha256": "87621cc5962adb123e9c36998c30a19e9df9d0cfc7f65b50009f02b64d160379",
+  "raw_size": [
+    1774,
+    887
+  ],
+  "grid": [
+    2,
+    2
+  ],
+  "cut_boxes": [
+    [
+      514,
+      180,
+      710,
+      373
+    ],
+    [
+      72,
+      89,
+      444,
+      444
+    ],
+    [
+      502,
+      64,
+      789,
+      381
+    ],
+    [
+      166,
+      0,
+      393,
+      355
+    ]
+  ],
+  "single_common_scale": 0.07526881720430108,
+  "placements": [
+    [
+      8,
+      8,
+      15,
+      15
+    ],
+    [
+      2,
+      2,
+      28,
+      27
+    ],
+    [
+      5,
+      4,
+      22,
+      24
+    ],
+    [
+      7,
+      2,
+      17,
+      27
+    ]
+  ],
+  "operations": "original alpha threshold/quantization, source frame cuts, single common nearest resize, source-derived shared palette, whole-frame placement; no character/effect drawing",
+  "candidate": "candidates/hrym_block_spark_v01.png",
+  "candidate_sha256": "5604f8c676beefececc8a5cbc2fabd76fbc75e423abb6b25478285a9e00cc36e"
+}

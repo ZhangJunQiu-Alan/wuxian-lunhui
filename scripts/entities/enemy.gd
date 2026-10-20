@@ -20,9 +20,10 @@ const DROWN_AREA_BONUS := 0.2  # 溺水的敌人受到的范围伤害 +20%
 const GOLD_NET_BONUS := 0.5    # 澜觉醒「安德瓦利的黄金」：金网里的敌人受到的伤害 +50%
 const CHARM_HIT_EVERY := 0.5   # 迷惑的敌人每隔多久咬一次同伴
 
-## 网格坐标 -> 该格里的敌人。每个物理帧由 game.gd 重建一次，
-## 这样每个敌人只需要检查周围 9 个格子，而不是所有敌人
+## 网格坐标 -> 该格里的敌人。物理帧开始时重建，移动与生命周期变化时同步更新；推挤和技能查询共用
 static var _grid := {}
+static var _indexed_enemies := {}
+static var _max_radius := 0.0
 static var crit_chance := 0.0  # 通用卡「暴击」：对敌人的所有伤害都有这个几率翻倍，每局开始时清零
 
 var type_id := ""
@@ -83,29 +84,103 @@ var _attack_dir := Vector2.RIGHT
 var _casting := false  # 远程敌人正在聚能
 var _anim_t := randf() * 10.0  # 程序动画的时间，随机起点让怪物步伐错开
 var _dead := false
+var _indexed := false
+var _grid_cell := Vector2i.ZERO
 
 
 static func rebuild_grid(tree: SceneTree) -> void:
+	for enemy: Enemy in _indexed_enemies:
+		enemy._indexed = false
 	_grid.clear()
+	_indexed_enemies.clear()
+	_max_radius = 0.0
 	for node in tree.get_nodes_in_group("enemies"):
 		var enemy := node as Enemy
-		var cell := Vector2i((enemy.global_position / GRID_CELL).floor())
-		if _grid.has(cell):
-			_grid[cell].append(enemy)
-		else:
-			_grid[cell] = [enemy]
+		enemy.update_spatial_index()
+
+
+func update_spatial_index() -> void:
+	if _dead or not is_inside_tree() or not is_in_group("enemies"):
+		_remove_from_grid()
+		return
+	_max_radius = maxf(_max_radius, radius)
+	var cell := Vector2i((global_position / GRID_CELL).floor())
+	if _indexed and cell == _grid_cell:
+		return
+	_remove_from_grid()
+	_grid_cell = cell
+	if not _grid.has(cell):
+		_grid[cell] = []
+	_grid[cell].append(self)
+	_indexed_enemies[self] = true
+	_indexed = true
+
+
+func _remove_from_grid() -> void:
+	if not _indexed:
+		return
+	var bucket: Array = _grid.get(_grid_cell, [])
+	bucket.erase(self)
+	if bucket.is_empty():
+		_grid.erase(_grid_cell)
+	_indexed_enemies.erase(self)
+	_indexed = false
+
+
+func _notification(what: int) -> void:
+	if what == NOTIFICATION_LOCAL_TRANSFORM_CHANGED or what == NOTIFICATION_TRANSFORM_CHANGED:
+		update_spatial_index()
+
+
+func _exit_tree() -> void:
+	_remove_from_grid()
+
+
+static func _candidates(rect: Rect2) -> Array[Enemy]:
+	var result: Array[Enemy] = []
+	var first := Vector2i((rect.position / GRID_CELL).floor())
+	var last := Vector2i((rect.end / GRID_CELL).floor())
+	if (last.x - first.x + 1) * (last.y - first.y + 1) > _indexed_enemies.size():
+		for enemy: Enemy in _indexed_enemies:
+			result.append(enemy)
+		return result
+	for x in range(first.x, last.x + 1):
+		for y in range(first.y, last.y + 1):
+			for enemy: Enemy in _grid.get(Vector2i(x, y), []):
+				result.append(enemy)
+	return result
+
+
+static func query_radius(center: Vector2, reach: float) -> Array[Enemy]:
+	var result: Array[Enemy] = []
+	var padding := Vector2.ONE * (reach + _max_radius)
+	for enemy in _candidates(Rect2(center - padding, padding * 2.0)):
+		if enemy.global_position.distance_squared_to(center) <= (reach + enemy.radius) * (reach + enemy.radius):
+			result.append(enemy)
+	return result
+
+
+static func query_line(a: Vector2, b: Vector2, width: float) -> Array[Enemy]:
+	var result: Array[Enemy] = []
+	var half := width * 0.5
+	var rect := Rect2(a.min(b), (b - a).abs()).grow(half + _max_radius)
+	for enemy in _candidates(rect):
+		var closest := Geometry2D.get_closest_point_to_segment(enemy.global_position, a, b)
+		if closest.distance_squared_to(enemy.global_position) <= (half + enemy.radius) * (half + enemy.radius):
+			result.append(enemy)
+	return result
 
 
 ## 对一个圆形范围内的所有敌人造成伤害（落雷、火焰等范围技能共用），返回被打到的敌人
 ## knockback 是把敌人从中心向外推开的力度。溺水的敌人受到的范围伤害更高
-static func damage_in_radius(tree: SceneTree, center: Vector2, radius: float, amount: float, knockback: float = 0.0) -> Array[Enemy]:
+static func damage_in_radius(_tree: SceneTree, center: Vector2, radius: float, amount: float, knockback: float = 0.0) -> Array[Enemy]:
 	var hit: Array[Enemy] = []
-	for node in tree.get_nodes_in_group("enemies"):
-		var enemy := node as Enemy
+	for enemy in query_radius(center, radius):
+		if enemy._dead:
+			continue
 		var offset := enemy.global_position - center
-		if offset.length() <= radius + enemy.radius:
-			hit.append(enemy)
-			enemy.take_damage(amount * enemy.area_mult(), offset.normalized() * knockback)
+		hit.append(enemy)
+		enemy.take_damage(amount * enemy.area_mult(), offset.normalized() * knockback)
 	return hit
 
 
@@ -245,6 +320,9 @@ func setup(id: String, hp_scale: float, elite: bool = false, damage_scale: float
 
 func _ready() -> void:
 	add_to_group("enemies")
+	set_notify_local_transform(true)
+	set_notify_transform(true)
+	update_spatial_index()
 	collision_layer = 2  # 第 2 层 = 敌人，子弹只检测这一层
 	collision_mask = 0
 	monitoring = false
@@ -530,6 +608,8 @@ func take_damage(amount: float, knockback: Vector2 = Vector2.ZERO, crit: bool = 
 
 func _die() -> void:
 	_dead = true
+	remove_from_group("enemies")
+	_remove_from_grid()
 	var gem := XpGem.new()
 	gem.value = xp_value
 	gem.big = is_elite

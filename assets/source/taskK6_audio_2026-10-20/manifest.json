@@ -1,0 +1,231 @@
+{
+  "task": "K6",
+  "status": "delivered_user_listening_accepted_not_game_integrated",
+  "formal_ogg": 1,
+  "formal_wav": 4,
+  "assets": [
+    {
+      "id": "jormungandr_hiss",
+      "file": "candidates/jormungandr_hiss.wav",
+      "duration_s": 0.58,
+      "sample_rate": 44100,
+      "channels": 1,
+      "encoding": "PCM16",
+      "peak_dbfs": -1.000151903819357,
+      "rms_dbfs": -18.986532865603564,
+      "onset_ms": 0.3401360544217687,
+      "last_sample": 0.0,
+      "first_sample": 0.0,
+      "fullscale_samples": 0,
+      "lowpass_hz": 6500,
+      "highpass_hz": 1100,
+      "identity": "dry high air hiss; no fire impact or wolf call",
+      "loop": false,
+      "frequency_class": "boss event; not highfrequency automatic attack",
+      "sha256": "5f6cf01457ce40937b0adf92b9b4aab30b46d5416ae5e51bea5e7ed5d4e31154",
+      "listening": "accepted_by_user",
+      "game_acceptance": "not_tested",
+      "formal_path": "assets/audio/sfx/jormungandr_hiss.wav",
+      "sources": [
+        {
+          "path": "assets/source/taskB_audio_2026-10-17/originals/fantasy/spell_fire_05.ogg",
+          "local": "originals/fantasy/spell_fire_05.ogg",
+          "sha256": "18025b21a4ecb3b41acc0dccb0697a8930262109ea198ff8c5ef0853d3ed1cfa",
+          "license": "CC0-1.0",
+          "author": "rubberduck",
+          "page": "https://opengameart.org/content/80-cc0-rpg-sfx"
+        },
+        {
+          "path": "assets/source/taskB_audio_2026-10-17/originals/rpg/Audio/cloth4.ogg",
+          "local": "originals/rpg/cloth4.ogg",
+          "sha256": "e7ab9a6c4466dea874196c61f59bf1da05cfe58748f42fadd695d441a154a99b",
+          "license": "CC0-1.0",
+          "author": "Kenney",
+          "page": "https://kenney.nl/assets/rpg-audio"
+        }
+      ]
+    },
+    {
+      "id": "fenrir_swallow",
+      "file": "candidates/fenrir_swallow.wav",
+      "duration_s": 0.66,
+      "sample_rate": 44100,
+      "channels": 1,
+      "encoding": "PCM16",
+      "peak_dbfs": -1.000151903819357,
+      "rms_dbfs": -17.463885173652166,
+      "onset_ms": 0.8390022675736961,
+      "last_sample": 0.0,
+      "first_sample": 0.0,
+      "fullscale_samples": 0,
+      "lowpass_hz": 2100,
+      "highpass_hz": 55,
+      "identity": "low organic contraction and damp impact, no long howl",
+      "loop": false,
+      "frequency_class": "boss event; not highfrequency automatic attack",
+      "sha256": "cabc01c46519bcc1a15fc7c92cc82e070734bde8a9a056cce5295e97778804bf",
+      "listening": "accepted_by_user",
+      "game_acceptance": "not_tested",
+      "formal_path": "assets/audio/sfx/fenrir_swallow.wav",
+      "sources": [
+        {
+          "path": "assets/source/taskB_audio_2026-10-17/originals/rpg/Audio/cloth4.ogg",
+          "local": "originals/rpg/cloth4.ogg",
+          "sha256": "e7ab9a6c4466dea874196c61f59bf1da05cfe58748f42fadd695d441a154a99b",
+          "license": "CC0-1.0",
+          "author": "Kenney",
+          "page": "https://kenney.nl/assets/rpg-audio"
+        },
+        {
+          "path": "assets/source/taskB_audio_2026-10-17/originals/fantasy/creature_monster_01.ogg",
+          "local": "originals/fantasy/creature_monster_01.ogg",
+          "sha256": "28d047e95058cecc3513eb831d14072318526fcb9207d8a50aad0f666e17893a",
+          "license": "CC0-1.0",
+          "author": "rubberduck",
+          "page": "https://opengameart.org/content/80-cc0-rpg-sfx"
+        },
+        {
+          "path": "assets/source/taskB_audio_2026-10-17/originals/impact/Audio/impactSoft_heavy_000.ogg",
+          "local": "originals/impact/impactSoft_heavy_000.ogg",
+          "sha256": "49e7ca88743fca974bb8676ea138b751cfd8f9033b5e7af8736c2a215d6edbc1",
+          "license": "CC0-1.0",
+          "author": "Kenney",
+          "page": "https://kenney.nl/assets/impact-sounds"
+        }
+      ]
+    },
+    {
+      "id": "gleipnir_tension",
+      "file": "candidates/gleipnir_tension.wav",
+      "duration_s": 0.72,
+      "sample_rate": 44100,
+      "channels": 1,
+      "encoding": "PCM16",
+      "peak_dbfs": -1.000151903819357,
+      "rms_dbfs": -18.659196582605666,
+      "onset_ms": 0.13605442176870747,
+      "last_sample": 0.0,
+      "first_sample": 0.0,
+      "fullscale_samples": 0,
+      "lowpass_hz": 4300,
+      "highpass_hz": 160,
+      "identity": "braided tension with restrained magic resonance; no huge chain crash",
+      "loop": false,
+      "frequency_class": "boss event; not highfrequency automatic attack",
+      "sha256": "98db73e4ab06a1027c0c0d75bd535cf3fc522ee887ed7c3ef9ab549dc916fa0f",
+      "listening": "accepted_by_user",
+      "game_acceptance": "not_tested",
+      "formal_path": "assets/audio/sfx/gleipnir_tension.wav",
+      "sources": [
+        {
+          "path": "assets/source/taskB_audio_2026-10-17/originals/rpg/Audio/cloth4.ogg",
+          "local": "originals/rpg/cloth4.ogg",
+          "sha256": "e7ab9a6c4466dea874196c61f59bf1da05cfe58748f42fadd695d441a154a99b",
+          "license": "CC0-1.0",
+          "author": "Kenney",
+          "page": "https://kenney.nl/assets/rpg-audio"
+        },
+        {
+          "path": "assets/source/taskB_audio_2026-10-17/originals/fantasy/metal_02.ogg",
+          "local": "originals/fantasy/metal_02.ogg",
+          "sha256": "30fcaab83dc3fff5335b78f87f9df305f6f8bd7316e2b46e2a4eaed85ee21768",
+          "license": "CC0-1.0",
+          "author": "rubberduck",
+          "page": "https://opengameart.org/content/80-cc0-rpg-sfx"
+        },
+        {
+          "path": "assets/source/taskB_audio_2026-10-17/originals/fantasy/spell_02.ogg",
+          "local": "originals/fantasy/spell_02.ogg",
+          "sha256": "bf9c48b76921e56aa266172d969a2c08215d6ce0ffae7c3584f23fa05d3f8bd4",
+          "license": "CC0-1.0",
+          "author": "rubberduck",
+          "page": "https://opengameart.org/content/80-cc0-rpg-sfx"
+        }
+      ]
+    },
+    {
+      "id": "surtr_gate",
+      "file": "candidates/surtr_gate.wav",
+      "duration_s": 0.9,
+      "sample_rate": 44100,
+      "channels": 1,
+      "encoding": "PCM16",
+      "peak_dbfs": -1.000151903819357,
+      "rms_dbfs": -18.023972090914228,
+      "onset_ms": 0.29478458049886624,
+      "last_sample": 0.0,
+      "first_sample": 0.0,
+      "fullscale_samples": 0,
+      "lowpass_hz": 3600,
+      "highpass_hz": 65,
+      "identity": "fire surge and low portal resonance; one cast, not persistent loop",
+      "loop": false,
+      "frequency_class": "boss event; not highfrequency automatic attack",
+      "sha256": "d91292d555bcc45e3aa36d971dda653371834e1ed3e88bb5c46747d2d6bbb76a",
+      "listening": "accepted_by_user",
+      "game_acceptance": "not_tested",
+      "formal_path": "assets/audio/sfx/surtr_gate.wav",
+      "sources": [
+        {
+          "path": "assets/source/taskB_audio_2026-10-17/originals/fantasy/spell_fire_05.ogg",
+          "local": "originals/fantasy/spell_fire_05.ogg",
+          "sha256": "18025b21a4ecb3b41acc0dccb0697a8930262109ea198ff8c5ef0853d3ed1cfa",
+          "license": "CC0-1.0",
+          "author": "rubberduck",
+          "page": "https://opengameart.org/content/80-cc0-rpg-sfx"
+        },
+        {
+          "path": "assets/source/taskB_audio_2026-10-17/originals/fantasy/spell_02.ogg",
+          "local": "originals/fantasy/spell_02.ogg",
+          "sha256": "bf9c48b76921e56aa266172d969a2c08215d6ce0ffae7c3584f23fa05d3f8bd4",
+          "license": "CC0-1.0",
+          "author": "rubberduck",
+          "page": "https://opengameart.org/content/80-cc0-rpg-sfx"
+        },
+        {
+          "path": "assets/source/taskB_audio_2026-10-17/originals/fantasy/creature_roar_03.ogg",
+          "local": "originals/fantasy/creature_roar_03.ogg",
+          "sha256": "3571f6372012fdebb2a38ef89e18a6137b3f17d519f1259aafeb166dbdd94195",
+          "license": "CC0-1.0",
+          "author": "rubberduck",
+          "page": "https://opengameart.org/content/80-cc0-rpg-sfx"
+        }
+      ]
+    },
+    {
+      "id": "vigrid",
+      "file": "candidates/vigrid.ogg",
+      "duration_s": 92.08018140589569,
+      "sample_rate": 44100,
+      "channels": 2,
+      "codec": "vorbis",
+      "loudness_lufs": -16.01,
+      "true_peak_dbtp": -5.21,
+      "sha256": "0cd32bb7ae0fb001b7f346dcb60bb10d41c5a7a1342d202da70009162cb025ef",
+      "seam_sample_delta": [
+        0.02062737988308072,
+        0.020872805267572403
+      ],
+      "normal_diff_p999": [
+        0.08787302423454857,
+        0.08938339718617502
+      ],
+      "processing": "whole source loop, no phrase deletion; common35Hz/10.5kHz bus; two-pass loudness; no repair at repeat points",
+      "musical_three_loop_listening": "accepted_by_user",
+      "game_acceptance": "not_tested",
+      "formal_path": "assets/audio/music/vigrid.ogg",
+      "source": {
+        "url": "https://opengameart.org/sites/default/files/cynicbattleloop_0.ogg",
+        "page": "https://opengameart.org/content/cynic-battle-loop",
+        "author": "Ferk (loop edit); Alex Smith / cynicmusic (composition)",
+        "original_page": "https://opengameart.org/content/battle-theme-a",
+        "license": "CC0-1.0",
+        "verified_date": "2026-10-20",
+        "sha256": "39195451e23c929dce5bed687b0d78454c32eb574b06713ea3d079b6b37b6a86",
+        "bytes": 1861815
+      }
+    }
+  ],
+  "self_check": "passed",
+  "game_acceptance": "not_tested"
+}

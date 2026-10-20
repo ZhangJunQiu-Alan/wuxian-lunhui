@@ -1,0 +1,343 @@
+{
+  "task": "K7",
+  "checks": 67,
+  "failures": 0,
+  "items": [
+    {
+      "check": "world_hash_current",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "exactly5orderedbeats",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "uniqueids",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "canonical_text:ashes:火焰熄灭了。九界",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "ashes:skippable",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "canonical_text:new_earth:许久之后，新的大",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "new_earth:skippable",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "canonical_text:baldr_return:巴德尔从冥界归来",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "baldr_return:skippable",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "canonical_text:survivors:世界树的树干里，",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "survivors:skippable",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "canonical_text:chapter_complete:篇章「诸神黄昏」",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "canonical_text:chapter_complete:评价：根据存活时",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "canonical_text:chapter_complete:正在返回主神空间",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "chapter_complete:skippable",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "loki_canonical",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "actual3bossentry",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "noillustrations",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manualreading",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "skipsafe",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "noinvented_reward_formula",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "thor90inclusive",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "vidarodin",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "freyrfreyja",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "lokiever",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "10captures",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "captures/story_1280x720_00.png:saved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "captures/story_1280x720_00.png:glyphs",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "captures/story_1280x720_00.png:height",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "captures/story_1280x720_01.png:saved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "captures/story_1280x720_01.png:glyphs",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "captures/story_1280x720_01.png:height",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "captures/story_1280x720_02.png:saved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "captures/story_1280x720_02.png:glyphs",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "captures/story_1280x720_02.png:height",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "captures/story_1280x720_03.png:saved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "captures/story_1280x720_03.png:glyphs",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "captures/story_1280x720_03.png:height",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "captures/story_1280x720_04.png:saved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "captures/story_1280x720_04.png:glyphs",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "captures/story_1280x720_04.png:height",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "captures/story_960x540_00.png:saved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "captures/story_960x540_00.png:glyphs",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "captures/story_960x540_00.png:height",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "captures/story_960x540_01.png:saved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "captures/story_960x540_01.png:glyphs",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "captures/story_960x540_01.png:height",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "captures/story_960x540_02.png:saved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "captures/story_960x540_02.png:glyphs",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "captures/story_960x540_02.png:height",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "captures/story_960x540_03.png:saved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "captures/story_960x540_03.png:glyphs",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "captures/story_960x540_03.png:height",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "captures/story_960x540_04.png:saved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "captures/story_960x540_04.png:glyphs",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "captures/story_960x540_04.png:height",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fixture_noscripterror",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "source:docs/世界观设定.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "source:docs/美术后续任务要求.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "source:scripts/game.gd",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "source:scripts/ui/hud.gd",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "source:assets/fonts/NotoSansSC-Regular.otf",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "source:assets/fonts/NotoSansSC-OFL.txt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "source:assets/audio/music/victory.ogg",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "source:assets/audio/sfx/quest_done.wav",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "source:assets/source/taskK2_wolf_2026-10-20/manifest.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "source:assets/source/taskK3_fire_2026-10-20/manifest.json",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "scope": "data/source integrity and independent text layout; integration cases NOT run"
+}

@@ -26,7 +26,10 @@ func _init() -> void:
 func _on_accept() -> void:
 	for i in COUNT:
 		var pos := marker_pos + Vector2.from_angle(TAU * i / COUNT + randf()) * randf_range(220.0, 320.0)
-		var priest := game.spawn_enemy("ice_spirit", Game.clamp_to_map(pos, 60.0), true)
+		var priest := game.spawn_enemy("ice_spirit", Game.clamp_to_map(pos, 60.0), true, true)
+		if priest == null:
+			complete(false)
+			return
 		priest.display_name = tr("霜巨人祭司")
 		priest.max_hp *= HP_MULT
 		priest.hp = priest.max_hp

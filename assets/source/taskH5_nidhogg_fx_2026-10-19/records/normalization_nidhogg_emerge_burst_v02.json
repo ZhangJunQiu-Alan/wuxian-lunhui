@@ -1,0 +1,71 @@
+{
+  "input": "originals/nidhogg_emerge_burst_v02.png",
+  "input_sha256": "965bb392a7956b540b32166e4ff2ed5d01a5099dfa56da9d90661a6d7a09a629",
+  "raw_size": [
+    1448,
+    1086
+  ],
+  "grid": [
+    2,
+    2
+  ],
+  "cut_boxes": [
+    [
+      153,
+      276,
+      587,
+      519
+    ],
+    [
+      18,
+      65,
+      682,
+      529
+    ],
+    [
+      34,
+      89,
+      698,
+      481
+    ],
+    [
+      103,
+      250,
+      572,
+      456
+    ]
+  ],
+  "single_common_scale": 0.18674698795180722,
+  "placements": [
+    [
+      23,
+      25,
+      81,
+      45
+    ],
+    [
+      2,
+      4,
+      124,
+      87
+    ],
+    [
+      2,
+      11,
+      124,
+      73
+    ],
+    [
+      20,
+      29,
+      88,
+      38
+    ]
+  ],
+  "operations": "original alpha threshold/quantization, source frame cuts, single common nearest resize, source-derived shared palette, whole-frame placement; no character/effect drawing",
+  "candidate": "candidates/nidhogg_emerge_burst_v02.png",
+  "candidate_sha256": "2d39b0d487e699842b11465b776d7af804a7b9954f3c1fd8349082913d643175",
+  "selection": "First3 final frames copied pixel-identically from v01; only fourth frame from v02 generated dissipation correction",
+  "first3_source": "candidates/nidhogg_emerge_burst_v01.png",
+  "final_frame_palette": "nearest exact RGB from v01"
+}

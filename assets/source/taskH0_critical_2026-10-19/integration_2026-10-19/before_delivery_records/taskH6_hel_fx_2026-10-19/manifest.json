@@ -1,0 +1,816 @@
+{
+  "task_id": "H6",
+  "date": "2026-10-19",
+  "production": "delivered",
+  "self_review": "pass",
+  "code_integration": "not_performed",
+  "game_acceptance": "not_performed",
+  "files": [
+    {
+      "task": "H6",
+      "id": "hel_life_ground",
+      "w": 128,
+      "h": 128,
+      "frames": 1,
+      "fps": 0,
+      "flags": [
+        "tile",
+        "faint"
+      ],
+      "anchor": [
+        64,
+        64
+      ],
+      "columns": 1,
+      "rows": 1,
+      "loop": false,
+      "hook": "scripts/bosses/hel.gd _draw_field() 左生之侧draw_rect",
+      "keep": "平铺并在x<_anchor.x裁切，z<角色；保留生死分界与安全圈",
+      "reference_paths": [
+        "assets/sprites/effects/poison_pool.png"
+      ],
+      "target": "assets/sprites/effects/bosses/hel_life_ground.png",
+      "source_root": "assets/source/taskH6_hel_fx_2026-10-19",
+      "archived_references": [
+        {
+          "project_path": "assets/sprites/effects/poison_pool.png",
+          "archived_path": "references/poison_pool.png",
+          "sha256": "0284bb2e78321311e43248046a820d43920193764e68f64d662d25cd1516374f"
+        }
+      ],
+      "version": "v01",
+      "final_path": "assets/sprites/effects/bosses/hel_life_ground.png",
+      "candidate": "candidates/hel_life_ground_v01.png",
+      "sha256": "ed4d51135e40f356266e3f4220e676dd76dc4a9deeb112492fbeb33b25c84df7",
+      "actual_RGB_colors": 21,
+      "actual_alpha_values": [
+        0,
+        6,
+        13,
+        19,
+        26,
+        32,
+        39,
+        45
+      ],
+      "frame_bboxes": [
+        [
+          0,
+          0,
+          128,
+          128
+        ]
+      ],
+      "technical_checks": {
+        "PNG_RGBA": true,
+        "exact_strip_dimensions": true,
+        "RGB_within_48": true,
+        "transparent_background": true,
+        "every_frame_nonempty": true,
+        "distinct_original_frames": true,
+        "2px_margin_or_tiling_exception": true,
+        "opposite_tile_edge_ports_identical": true
+      },
+      "visual_review": {
+        "status": "passed",
+        "observations": "已看128px与4×4：很淡的灰绿细纹、标记间透明，无浓绿地毯/中心徽章；未见明显直线硬接缝。角色叠加和两侧对照另见range预览。"
+      },
+      "code_integration": "not_performed",
+      "game_acceptance": "not_performed",
+      "source_license": {
+        "tool": "OpenAI built-in image_gen",
+        "commercial_basis": "existing approved OpenAI output terms; project-owned input references",
+        "terms_url": "https://openai.com/policies/terms-of-use/",
+        "processing": "Pillow MIT-CMU, source cuts/alpha/palette/nearest resize/placement and preview only"
+      },
+      "previews": [
+        "previews/hel_life_ground_v01_frames.png",
+        "previews/hel_life_ground_v01_ground.png",
+        "previews/hel_life_ground_v01_tile4x4.png"
+      ],
+      "approved": "approved/hel_life_ground.png",
+      "frame_order": "left_to_right_no_spacing",
+      "generation_records": "records/generation_jobs.json",
+      "public_generation_url": null,
+      "generation_url_note": "内置工具仅返回本地原图路径；真实提示词/参考/结果均归档，不伪造公开URL",
+      "transparent_strategy": "Generated alpha quantized to 8 source levels then optional low-alpha cap; RGB count and alpha recorded separately; zero RGB when alpha0",
+      "loop_mode": "single shot / static; single-shot temporary display fades and frees at end",
+      "remaining_issues": [
+        "代码接入未执行",
+        "游戏内朝向/锚点/范围/遮挡/帧率/节点清理未测"
+      ],
+      "source_recipe": "records/normalization_hel_life_ground_v01.json"
+    },
+    {
+      "task": "H6",
+      "id": "hel_death_ground",
+      "w": 128,
+      "h": 128,
+      "frames": 1,
+      "fps": 0,
+      "flags": [
+        "tile",
+        "faint"
+      ],
+      "anchor": [
+        64,
+        64
+      ],
+      "columns": 1,
+      "rows": 1,
+      "loop": false,
+      "hook": "scripts/bosses/hel.gd _draw_field() 右死之侧draw_rect",
+      "keep": "平铺并在x>=_anchor.x裁切，和生侧明度接近；不跨界、不取代圈外压暗",
+      "reference_paths": [
+        "assets/sprites/effects/frost_shockwave.png"
+      ],
+      "target": "assets/sprites/effects/bosses/hel_death_ground.png",
+      "source_root": "assets/source/taskH6_hel_fx_2026-10-19",
+      "archived_references": [
+        {
+          "project_path": "assets/sprites/effects/frost_shockwave.png",
+          "archived_path": "references/frost_shockwave.png",
+          "sha256": "a0aa09571dec4959ee2a9f66dc6a6a038a2017fad3dea1140680bc837495c625"
+        }
+      ],
+      "version": "v01",
+      "final_path": "assets/sprites/effects/bosses/hel_death_ground.png",
+      "candidate": "candidates/hel_death_ground_v01.png",
+      "sha256": "c9b3a0555ade31cf8f76eb10c4eefc3c9415b82a848b370bc599a9bcdc093c1c",
+      "actual_RGB_colors": 22,
+      "actual_alpha_values": [
+        0,
+        6,
+        13,
+        19,
+        26,
+        32,
+        39
+      ],
+      "frame_bboxes": [
+        [
+          0,
+          0,
+          128,
+          128
+        ]
+      ],
+      "technical_checks": {
+        "PNG_RGBA": true,
+        "exact_strip_dimensions": true,
+        "RGB_within_48": true,
+        "transparent_background": true,
+        "every_frame_nonempty": true,
+        "distinct_original_frames": true,
+        "2px_margin_or_tiling_exception": true,
+        "opposite_tile_edge_ports_identical": true
+      },
+      "visual_review": {
+        "status": "passed",
+        "observations": "已看128px与4×4：很淡的灰紫细裂纹、间隙透明，无不透明底板；低亮度接近生侧，不替代死亡领域判伤。"
+      },
+      "code_integration": "not_performed",
+      "game_acceptance": "not_performed",
+      "source_license": {
+        "tool": "OpenAI built-in image_gen",
+        "commercial_basis": "existing approved OpenAI output terms; project-owned input references",
+        "terms_url": "https://openai.com/policies/terms-of-use/",
+        "processing": "Pillow MIT-CMU, source cuts/alpha/palette/nearest resize/placement and preview only"
+      },
+      "previews": [
+        "previews/hel_death_ground_v01_frames.png",
+        "previews/hel_death_ground_v01_ground.png",
+        "previews/hel_death_ground_v01_tile4x4.png"
+      ],
+      "approved": "approved/hel_death_ground.png",
+      "frame_order": "left_to_right_no_spacing",
+      "generation_records": "records/generation_jobs.json",
+      "public_generation_url": null,
+      "generation_url_note": "内置工具仅返回本地原图路径；真实提示词/参考/结果均归档，不伪造公开URL",
+      "transparent_strategy": "Generated alpha quantized to 8 source levels then optional low-alpha cap; RGB count and alpha recorded separately; zero RGB when alpha0",
+      "loop_mode": "single shot / static; single-shot temporary display fades and frees at end",
+      "remaining_issues": [
+        "代码接入未执行",
+        "游戏内朝向/锚点/范围/遮挡/帧率/节点清理未测"
+      ],
+      "source_recipe": "records/normalization_hel_death_ground_v01.json"
+    },
+    {
+      "task": "H6",
+      "id": "hel_domain_edge",
+      "w": 64,
+      "h": 32,
+      "frames": 4,
+      "fps": 8,
+      "flags": [
+        "loop",
+        "band"
+      ],
+      "anchor": [
+        32,
+        16
+      ],
+      "columns": 2,
+      "rows": 2,
+      "loop": true,
+      "hook": "scripts/bosses/hel.gd _draw_field() _domain_radius() 安全圈边界",
+      "keep": "按实时半径1000→380圆周铺设并裁切，切线+X、外法线-Y；判伤/圈外压暗不变",
+      "reference_paths": [
+        "assets/sprites/effects/frost_shockwave.png"
+      ],
+      "target": "assets/sprites/effects/bosses/hel_domain_edge.png",
+      "source_root": "assets/source/taskH6_hel_fx_2026-10-19",
+      "archived_references": [
+        {
+          "project_path": "assets/sprites/effects/frost_shockwave.png",
+          "archived_path": "references/frost_shockwave.png",
+          "sha256": "a0aa09571dec4959ee2a9f66dc6a6a038a2017fad3dea1140680bc837495c625"
+        }
+      ],
+      "version": "v01",
+      "final_path": "assets/sprites/effects/bosses/hel_domain_edge.png",
+      "candidate": "candidates/hel_domain_edge_v01.png",
+      "sha256": "701cfa8c2fbfdc7dfe4e8ae393ae5e3fa003b0ae6eedaa5e00e770fbc2807593",
+      "actual_RGB_colors": 26,
+      "actual_alpha_values": [
+        0,
+        36,
+        72,
+        108,
+        144,
+        180,
+        216,
+        252
+      ],
+      "frame_bboxes": [
+        [
+          0,
+          11,
+          64,
+          20
+        ],
+        [
+          0,
+          7,
+          64,
+          23
+        ],
+        [
+          0,
+          7,
+          64,
+          25
+        ],
+        [
+          0,
+          10,
+          64,
+          21
+        ]
+      ],
+      "technical_checks": {
+        "PNG_RGBA": true,
+        "exact_strip_dimensions": true,
+        "RGB_within_48": true,
+        "transparent_background": true,
+        "every_frame_nonempty": true,
+        "distinct_original_frames": true,
+        "2px_margin_or_tiling_exception": true,
+        "identical_repeat_ports": true,
+        "GIF_native_decoded_pixel_match": true,
+        "GIF_native_average_fps": true,
+        "GIF_slow8_decoded_pixel_match": true,
+        "GIF_slow8_average_fps": true
+      },
+      "visual_review": {
+        "status": "passed",
+        "observations": "已看4格：窄灰紫领域边界水平流动，外侧向上，左右源端口相同，不烘焙完整圆；上下透明，供动态半径圆周裁切。"
+      },
+      "code_integration": "not_performed",
+      "game_acceptance": "not_performed",
+      "source_license": {
+        "tool": "OpenAI built-in image_gen",
+        "commercial_basis": "existing approved OpenAI output terms; project-owned input references",
+        "terms_url": "https://openai.com/policies/terms-of-use/",
+        "processing": "Pillow MIT-CMU, source cuts/alpha/palette/nearest resize/placement and preview only"
+      },
+      "previews": [
+        "previews/hel_domain_edge_v01_frames.png",
+        "previews/hel_domain_edge_v01_native.gif",
+        "previews/hel_domain_edge_v01_slow8.gif",
+        "previews/hel_domain_edge_v01_stretch.png"
+      ],
+      "approved": "approved/hel_domain_edge.png",
+      "frame_order": "left_to_right_no_spacing",
+      "generation_records": "records/generation_jobs.json",
+      "public_generation_url": null,
+      "generation_url_note": "内置工具仅返回本地原图路径；真实提示词/参考/结果均归档，不伪造公开URL",
+      "transparent_strategy": "Generated alpha quantized to 8 source levels then optional low-alpha cap; RGB count and alpha recorded separately; zero RGB when alpha0",
+      "loop_mode": "loop only while corresponding state is active",
+      "remaining_issues": [
+        "代码接入未执行",
+        "游戏内朝向/锚点/范围/遮挡/帧率/节点清理未测"
+      ],
+      "source_recipe": "records/normalization_hel_domain_edge_v01.json"
+    },
+    {
+      "task": "H6",
+      "id": "hel_shift",
+      "w": 96,
+      "h": 96,
+      "frames": 4,
+      "fps": 8,
+      "flags": [
+        "area"
+      ],
+      "anchor": [
+        48,
+        48
+      ],
+      "columns": 2,
+      "rows": 2,
+      "loop": false,
+      "hook": "scripts/bosses/hel.gd _update_side() 瞬移前后burst",
+      "keep": "中性灰绿/灰紫，按进出侧调制；原点和目标点分别播，保持12秒切换和SIDE_OFFSET320",
+      "reference_paths": [
+        "assets/sprites/bosses/hel.png"
+      ],
+      "target": "assets/sprites/effects/bosses/hel_shift.png",
+      "source_root": "assets/source/taskH6_hel_fx_2026-10-19",
+      "archived_references": [
+        {
+          "project_path": "assets/sprites/bosses/hel.png",
+          "archived_path": "references/hel.png",
+          "sha256": "0c1e0a49f57e6a80535bc2c382e4f68cd882810f18dc35f79fd6befa2c558aa9"
+        }
+      ],
+      "version": "v01",
+      "final_path": "assets/sprites/effects/bosses/hel_shift.png",
+      "candidate": "candidates/hel_shift_v01.png",
+      "sha256": "2d231fd14e31c24cea127d1a6997429cbad225b0e2030acf61c5673219ffbcda",
+      "actual_RGB_colors": 25,
+      "actual_alpha_values": [
+        0,
+        28,
+        56,
+        84,
+        112,
+        140,
+        168,
+        197
+      ],
+      "frame_bboxes": [
+        [
+          24,
+          25,
+          71,
+          69
+        ],
+        [
+          30,
+          18,
+          66,
+          77
+        ],
+        [
+          2,
+          26,
+          92,
+          69
+        ],
+        [
+          24,
+          38,
+          71,
+          73
+        ]
+      ],
+      "technical_checks": {
+        "PNG_RGBA": true,
+        "exact_strip_dimensions": true,
+        "RGB_within_48": true,
+        "transparent_background": true,
+        "every_frame_nonempty": true,
+        "distinct_original_frames": true,
+        "2px_margin_or_tiling_exception": true,
+        "GIF_native_decoded_pixel_match": true,
+        "GIF_native_average_fps": true,
+        "GIF_slow8_decoded_pixel_match": true,
+        "GIF_slow8_average_fps": true
+      },
+      "visual_review": {
+        "status": "passed",
+        "observations": "已看4格：中性灰绿/灰紫细粒聚拢、竖向分散、两侧烟丝和低密度消散，没有身体或实心传送门，允许代码按进出侧染色。"
+      },
+      "code_integration": "not_performed",
+      "game_acceptance": "not_performed",
+      "source_license": {
+        "tool": "OpenAI built-in image_gen",
+        "commercial_basis": "existing approved OpenAI output terms; project-owned input references",
+        "terms_url": "https://openai.com/policies/terms-of-use/",
+        "processing": "Pillow MIT-CMU, source cuts/alpha/palette/nearest resize/placement and preview only"
+      },
+      "previews": [
+        "previews/hel_shift_v01_frames.png",
+        "previews/hel_shift_v01_ground.png",
+        "previews/hel_shift_v01_native.gif",
+        "previews/hel_shift_v01_slow8.gif"
+      ],
+      "approved": "approved/hel_shift.png",
+      "frame_order": "left_to_right_no_spacing",
+      "generation_records": "records/generation_jobs.json",
+      "public_generation_url": null,
+      "generation_url_note": "内置工具仅返回本地原图路径；真实提示词/参考/结果均归档，不伪造公开URL",
+      "transparent_strategy": "Generated alpha quantized to 8 source levels then optional low-alpha cap; RGB count and alpha recorded separately; zero RGB when alpha0",
+      "loop_mode": "single shot / static; single-shot temporary display fades and frees at end",
+      "remaining_issues": [
+        "代码接入未执行",
+        "游戏内朝向/锚点/范围/遮挡/帧率/节点清理未测"
+      ],
+      "source_recipe": "records/normalization_hel_shift_v01.json"
+    },
+    {
+      "task": "H6",
+      "id": "hel_heal",
+      "w": 64,
+      "h": 64,
+      "frames": 4,
+      "fps": 8,
+      "flags": [
+        "area"
+      ],
+      "anchor": [
+        32,
+        32
+      ],
+      "columns": 2,
+      "rows": 2,
+      "loop": false,
+      "hook": "scripts/bosses/hel.gd _update_side() 生侧治疗分支",
+      "keep": "每个实际被治疗敌人处播放，不给玩家；保留1.5秒、范围450、15%回血",
+      "reference_paths": [
+        "assets/sprites/effects/poison_pool.png"
+      ],
+      "target": "assets/sprites/effects/bosses/hel_heal.png",
+      "source_root": "assets/source/taskH6_hel_fx_2026-10-19",
+      "archived_references": [
+        {
+          "project_path": "assets/sprites/effects/poison_pool.png",
+          "archived_path": "references/poison_pool.png",
+          "sha256": "0284bb2e78321311e43248046a820d43920193764e68f64d662d25cd1516374f"
+        }
+      ],
+      "version": "v01",
+      "final_path": "assets/sprites/effects/bosses/hel_heal.png",
+      "candidate": "candidates/hel_heal_v01.png",
+      "sha256": "474a81462fe440d485af0eb52464e1434f49ea0b0be96b771651b215c064d2b1",
+      "actual_RGB_colors": 21,
+      "actual_alpha_values": [
+        0,
+        28,
+        56,
+        84,
+        112,
+        140,
+        168,
+        197
+      ],
+      "frame_bboxes": [
+        [
+          11,
+          17,
+          52,
+          47
+        ],
+        [
+          10,
+          3,
+          53,
+          61
+        ],
+        [
+          11,
+          2,
+          53,
+          62
+        ],
+        [
+          13,
+          8,
+          51,
+          56
+        ]
+      ],
+      "technical_checks": {
+        "PNG_RGBA": true,
+        "exact_strip_dimensions": true,
+        "RGB_within_48": true,
+        "transparent_background": true,
+        "every_frame_nonempty": true,
+        "distinct_original_frames": true,
+        "2px_margin_or_tiling_exception": true,
+        "GIF_native_decoded_pixel_match": true,
+        "GIF_native_average_fps": true,
+        "GIF_slow8_decoded_pixel_match": true,
+        "GIF_slow8_average_fps": true
+      },
+      "visual_review": {
+        "status": "passed",
+        "observations": "已看4格：淡灰绿流光向上，细丝与颗粒稀薄；没有加号/心形/金羽/苹果，不和玩家拾取回复造型混淆。"
+      },
+      "code_integration": "not_performed",
+      "game_acceptance": "not_performed",
+      "source_license": {
+        "tool": "OpenAI built-in image_gen",
+        "commercial_basis": "existing approved OpenAI output terms; project-owned input references",
+        "terms_url": "https://openai.com/policies/terms-of-use/",
+        "processing": "Pillow MIT-CMU, source cuts/alpha/palette/nearest resize/placement and preview only"
+      },
+      "previews": [
+        "previews/hel_heal_v01_frames.png",
+        "previews/hel_heal_v01_ground.png",
+        "previews/hel_heal_v01_native.gif",
+        "previews/hel_heal_v01_slow8.gif"
+      ],
+      "approved": "approved/hel_heal.png",
+      "frame_order": "left_to_right_no_spacing",
+      "generation_records": "records/generation_jobs.json",
+      "public_generation_url": null,
+      "generation_url_note": "内置工具仅返回本地原图路径；真实提示词/参考/结果均归档，不伪造公开URL",
+      "transparent_strategy": "Generated alpha quantized to 8 source levels then optional low-alpha cap; RGB count and alpha recorded separately; zero RGB when alpha0",
+      "loop_mode": "single shot / static; single-shot temporary display fades and frees at end",
+      "remaining_issues": [
+        "代码接入未执行",
+        "游戏内朝向/锚点/范围/遮挡/帧率/节点清理未测"
+      ],
+      "source_recipe": "records/normalization_hel_heal_v01.json"
+    },
+    {
+      "task": "H6",
+      "id": "hel_army_summon",
+      "w": 96,
+      "h": 96,
+      "frames": 4,
+      "fps": 8,
+      "flags": [
+        "area"
+      ],
+      "anchor": [
+        48,
+        48
+      ],
+      "columns": 2,
+      "rows": 2,
+      "loop": false,
+      "hook": "scripts/bosses/hel.gd _raise_army()；_update_side() 死侧生成",
+      "keep": "出生裂隙以实际pos为准；只短播无身体；保留14亡者及死侧3名/3秒",
+      "reference_paths": [
+        "assets/sprites/effects/ground_crack.png"
+      ],
+      "target": "assets/sprites/effects/bosses/hel_army_summon.png",
+      "source_root": "assets/source/taskH6_hel_fx_2026-10-19",
+      "archived_references": [
+        {
+          "project_path": "assets/sprites/effects/ground_crack.png",
+          "archived_path": "references/ground_crack.png",
+          "sha256": "c7178cac3ba5662cfa99d2bef22d62249762a564143b504c66e8d59bd71ffbf8"
+        }
+      ],
+      "version": "v01",
+      "final_path": "assets/sprites/effects/bosses/hel_army_summon.png",
+      "candidate": "candidates/hel_army_summon_v01.png",
+      "sha256": "9caf3c05d7bb4d7d464f6324c9ff369cc043c925a71a686d11ec6ea3e05ebc43",
+      "actual_RGB_colors": 30,
+      "actual_alpha_values": [
+        0,
+        28,
+        56,
+        84,
+        112,
+        140,
+        168,
+        197
+      ],
+      "frame_bboxes": [
+        [
+          8,
+          33,
+          87,
+          63
+        ],
+        [
+          3,
+          23,
+          94,
+          73
+        ],
+        [
+          6,
+          28,
+          89,
+          67
+        ],
+        [
+          5,
+          25,
+          91,
+          71
+        ]
+      ],
+      "technical_checks": {
+        "PNG_RGBA": true,
+        "exact_strip_dimensions": true,
+        "RGB_within_48": true,
+        "transparent_background": true,
+        "every_frame_nonempty": true,
+        "distinct_original_frames": true,
+        "2px_margin_or_tiling_exception": true,
+        "GIF_native_decoded_pixel_match": true,
+        "GIF_native_average_fps": true,
+        "GIF_slow8_decoded_pixel_match": true,
+        "GIF_slow8_average_fps": true
+      },
+      "visual_review": {
+        "status": "passed",
+        "observations": "已看4格：薄冥土裂隙、短暂亮边与两侧低雾、裂隙变暗和零星余粒，无亡者身体或永久大地坑。"
+      },
+      "code_integration": "not_performed",
+      "game_acceptance": "not_performed",
+      "source_license": {
+        "tool": "OpenAI built-in image_gen",
+        "commercial_basis": "existing approved OpenAI output terms; project-owned input references",
+        "terms_url": "https://openai.com/policies/terms-of-use/",
+        "processing": "Pillow MIT-CMU, source cuts/alpha/palette/nearest resize/placement and preview only"
+      },
+      "previews": [
+        "previews/hel_army_summon_v01_frames.png",
+        "previews/hel_army_summon_v01_ground.png",
+        "previews/hel_army_summon_v01_native.gif",
+        "previews/hel_army_summon_v01_slow8.gif"
+      ],
+      "approved": "approved/hel_army_summon.png",
+      "frame_order": "left_to_right_no_spacing",
+      "generation_records": "records/generation_jobs.json",
+      "public_generation_url": null,
+      "generation_url_note": "内置工具仅返回本地原图路径；真实提示词/参考/结果均归档，不伪造公开URL",
+      "transparent_strategy": "Generated alpha quantized to 8 source levels then optional low-alpha cap; RGB count and alpha recorded separately; zero RGB when alpha0",
+      "loop_mode": "single shot / static; single-shot temporary display fades and frees at end",
+      "remaining_issues": [
+        "代码接入未执行",
+        "游戏内朝向/锚点/范围/遮挡/帧率/节点清理未测"
+      ],
+      "source_recipe": "records/normalization_hel_army_summon_v01.json"
+    },
+    {
+      "task": "H6",
+      "id": "hel_board_ship",
+      "w": 128,
+      "h": 128,
+      "frames": 4,
+      "fps": 8,
+      "flags": [
+        "area"
+      ],
+      "anchor": [
+        64,
+        64
+      ],
+      "columns": 2,
+      "rows": 2,
+      "loop": false,
+      "hook": "scripts/bosses/hel.gd _enter_phase2()",
+      "keep": "旧位置与deck交接短播；图案中部透明，船帆弹幕上层；保留30%阈值/船/指甲弹行为",
+      "reference_paths": [
+        "assets/sprites/bosses/hel.png"
+      ],
+      "target": "assets/sprites/effects/bosses/hel_board_ship.png",
+      "source_root": "assets/source/taskH6_hel_fx_2026-10-19",
+      "archived_references": [
+        {
+          "project_path": "assets/sprites/bosses/hel.png",
+          "archived_path": "references/hel.png",
+          "sha256": "0c1e0a49f57e6a80535bc2c382e4f68cd882810f18dc35f79fd6befa2c558aa9"
+        }
+      ],
+      "version": "v01",
+      "final_path": "assets/sprites/effects/bosses/hel_board_ship.png",
+      "candidate": "candidates/hel_board_ship_v01.png",
+      "sha256": "4ce8ec2d7c056544e501bf12d4d1bfb3d50ffecdf8c32a3f675ed4a6a0c6c6cf",
+      "actual_RGB_colors": 24,
+      "actual_alpha_values": [
+        0,
+        28,
+        56,
+        84,
+        112,
+        140,
+        168,
+        197
+      ],
+      "frame_bboxes": [
+        [
+          6,
+          37,
+          122,
+          91
+        ],
+        [
+          3,
+          22,
+          125,
+          105
+        ],
+        [
+          6,
+          22,
+          122,
+          105
+        ],
+        [
+          9,
+          25,
+          119,
+          103
+        ]
+      ],
+      "technical_checks": {
+        "PNG_RGBA": true,
+        "exact_strip_dimensions": true,
+        "RGB_within_48": true,
+        "transparent_background": true,
+        "every_frame_nonempty": true,
+        "distinct_original_frames": true,
+        "2px_margin_or_tiling_exception": true,
+        "GIF_native_decoded_pixel_match": true,
+        "GIF_native_average_fps": true,
+        "GIF_slow8_decoded_pixel_match": true,
+        "GIF_slow8_average_fps": true
+      },
+      "visual_review": {
+        "status": "passed",
+        "observations": "已看4格：两侧稀薄冥雾柱升起/裂散/消退，中间大幅留白，无船体或全屏浓雾；后续须在实际船帆与弹幕叠加场景确认。"
+      },
+      "code_integration": "not_performed",
+      "game_acceptance": "not_performed",
+      "source_license": {
+        "tool": "OpenAI built-in image_gen",
+        "commercial_basis": "existing approved OpenAI output terms; project-owned input references",
+        "terms_url": "https://openai.com/policies/terms-of-use/",
+        "processing": "Pillow MIT-CMU, source cuts/alpha/palette/nearest resize/placement and preview only"
+      },
+      "previews": [
+        "previews/hel_board_ship_v01_frames.png",
+        "previews/hel_board_ship_v01_ground.png",
+        "previews/hel_board_ship_v01_native.gif",
+        "previews/hel_board_ship_v01_slow8.gif"
+      ],
+      "approved": "approved/hel_board_ship.png",
+      "frame_order": "left_to_right_no_spacing",
+      "generation_records": "records/generation_jobs.json",
+      "public_generation_url": null,
+      "generation_url_note": "内置工具仅返回本地原图路径；真实提示词/参考/结果均归档，不伪造公开URL",
+      "transparent_strategy": "Generated alpha quantized to 8 source levels then optional low-alpha cap; RGB count and alpha recorded separately; zero RGB when alpha0",
+      "loop_mode": "single shot / static; single-shot temporary display fades and frees at end",
+      "remaining_issues": [
+        "代码接入未执行",
+        "游戏内朝向/锚点/范围/遮挡/帧率/节点清理未测"
+      ],
+      "source_recipe": "records/normalization_hel_board_ship_v01.json"
+    }
+  ],
+  "originals": [
+    {
+      "file": "originals/hel_army_summon_v01.png",
+      "sha256": "789902185ec44e641d98777ae640586ea13aed20e7c57d26b00ac7f9f71cac0d"
+    },
+    {
+      "file": "originals/hel_board_ship_v01.png",
+      "sha256": "f0e651585851ce35f92528852d5e34471c749d55cc84e9efef26a5ae074cb934"
+    },
+    {
+      "file": "originals/hel_death_ground_v01.png",
+      "sha256": "740a5e840831faa8de44581f9d9381c07260b7598ea5b5d902a9dbcca251e036"
+    },
+    {
+      "file": "originals/hel_domain_edge_v01.png",
+      "sha256": "860469d484cf58fda6cc177f6e4b23efec9d88993e0795c4703543cb5f8b4bbe"
+    },
+    {
+      "file": "originals/hel_heal_v01.png",
+      "sha256": "90549855ae5706ca5988ef5038d850a233d545025abecdfb127f11b99cb20b1c"
+    },
+    {
+      "file": "originals/hel_life_ground_v01.png",
+      "sha256": "162551cf1cea2b63dd24fa26c0e5301558f3ba5ea81e6d4400b1ef2031dbd292"
+    },
+    {
+      "file": "originals/hel_shift_v01.png",
+      "sha256": "fbba6210370f4103c204adaf1362dd4eba46d63e13d1c814051690348bb8e36f"
+    }
+  ],
+  "generation_records": "records/generation_jobs.json",
+  "limitations": [
+    "Technical measurements and local previews do not prove Godot gameplay acceptance."
+  ],
+  "source_inventory": "records/source_inventory.json"
+}

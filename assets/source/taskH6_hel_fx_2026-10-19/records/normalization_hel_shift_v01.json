@@ -1,0 +1,68 @@
+{
+  "input": "originals/hel_shift_v01.png",
+  "input_sha256": "fbba6210370f4103c204adaf1362dd4eba46d63e13d1c814051690348bb8e36f",
+  "raw_size": [
+    1774,
+    887
+  ],
+  "grid": [
+    2,
+    2
+  ],
+  "cut_boxes": [
+    [
+      302,
+      100,
+      638,
+      423
+    ],
+    [
+      298,
+      26,
+      555,
+      444
+    ],
+    [
+      115,
+      82,
+      772,
+      405
+    ],
+    [
+      265,
+      0,
+      598,
+      367
+    ]
+  ],
+  "single_common_scale": 0.1400304414003044,
+  "placements": [
+    [
+      24,
+      25,
+      47,
+      45
+    ],
+    [
+      30,
+      18,
+      36,
+      59
+    ],
+    [
+      2,
+      25,
+      92,
+      45
+    ],
+    [
+      24,
+      22,
+      47,
+      51
+    ]
+  ],
+  "operations": "original alpha threshold/quantization, source frame cuts, single common nearest resize, source-derived shared palette, whole-frame placement; no character/effect drawing",
+  "candidate": "candidates/hel_shift_v01.png",
+  "candidate_sha256": "2d231fd14e31c24cea127d1a6997429cbad225b0e2030acf61c5673219ffbcda"
+}

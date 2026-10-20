@@ -1,0 +1,43 @@
+{
+  "scope": "four newSFX and music complete three-loop listening only",
+  "evidence": "user response in current Codex conversation on2026-10-20",
+  "exact_user_response": "已听完整套和音乐三遍，均合适",
+  "agent_personal_listening_claim": false,
+  "files": [
+    {
+      "file": "candidates/jormungandr_hiss.wav",
+      "sha256": "5f6cf01457ce40937b0adf92b9b4aab30b46d5416ae5e51bea5e7ed5d4e31154"
+    },
+    {
+      "file": "candidates/fenrir_swallow.wav",
+      "sha256": "cabc01c46519bcc1a15fc7c92cc82e070734bde8a9a056cce5295e97778804bf"
+    },
+    {
+      "file": "candidates/gleipnir_tension.wav",
+      "sha256": "98db73e4ab06a1027c0c0d75bd535cf3fc522ee887ed7c3ef9ab549dc916fa0f"
+    },
+    {
+      "file": "candidates/surtr_gate.wav",
+      "sha256": "d91292d555bcc45e3aa36d971dda653371834e1ed3e88bb5c46747d2d6bbb76a"
+    },
+    {
+      "file": "candidates/vigrid.ogg",
+      "sha256": "0cd32bb7ae0fb001b7f346dcb60bb10d41c5a7a1342d202da70009162cb025ef"
+    }
+  ],
+  "previews": [
+    {
+      "file": "previews/four_sfx_sequence.wav",
+      "sha256": "f82e70d51ff301c7029d0e4e654d2efc89ca07294f65b8af384bce9ffb9e3828"
+    },
+    {
+      "file": "previews/vigrid_three_loops.wav",
+      "sha256": "794c750f9a4862ad6aee993c4566004220860d0bf80fd50ef7522deff92955f8"
+    },
+    {
+      "file": "previews/vigrid_three_loops.ogg",
+      "sha256": "47ede35ebf116c54a8454701d60df4497460c34d2e756736a233fe2bc6b36728"
+    }
+  ],
+  "game_mix": "not_tested"
+}

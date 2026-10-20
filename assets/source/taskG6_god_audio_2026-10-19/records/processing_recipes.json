@@ -1,0 +1,1750 @@
+[
+  {
+    "id": "god_choose",
+    "stem": "god_choose",
+    "version": "v02",
+    "variant": null,
+    "purpose": "弹出「选择一位神」",
+    "frequent": false,
+    "candidate": "candidates/god_choose.wav",
+    "sources": [
+      "originals/god_choose_v01_browser.wav",
+      "originals/reused/fantasy/item_gem_02.ogg"
+    ],
+    "browser_record": "records/browser_god_choose_v01.json",
+    "processing": {
+      "recipe": [
+        "fantasy/item_gem_02 @0.000s gain=0.1 speed=1.000"
+      ],
+      "energy_envelope": {
+        "target_rms_dbfs": -15,
+        "rms_before_dbfs": -9.16106614801957,
+        "rms_after_dbfs": -14.96134952777809,
+        "exponential_tau_seconds": 0.03305997405935408,
+        "body_floor": 0.025,
+        "pulse_onsets_seconds": [
+          0.0,
+          0.047165532879818575
+        ],
+        "purpose": "Reduce sustained event energy while preserving -1dBFS peak; not a subjective loudness pass"
+      },
+      "lowpass_hz": 5200,
+      "highpass_hz": 55,
+      "peak_target_dbfs": -1,
+      "attack_fade_ms": 0.7,
+      "release_fade": "quadratic, min(80ms,30% of duration)",
+      "notes": "Only browser-rendered audio and explicitly licensed local sample layers; no new offline oscillator synthesis."
+    },
+    "sha256": "3d159031e5ed6fcc9d5443c2cfa0eb1edc9a44ea008ff65a534e5daa5a05fdc3",
+    "status": "candidate_pending_subjective_listening"
+  },
+  {
+    "id": "path_choose",
+    "stem": "path_choose",
+    "version": "v02",
+    "variant": null,
+    "purpose": "弹出「选择一条道路」（质变）",
+    "frequent": false,
+    "candidate": "candidates/path_choose.wav",
+    "sources": [
+      "originals/path_choose_v01_browser.wav",
+      "originals/reused/rpg/metalClick.ogg"
+    ],
+    "browser_record": "records/browser_path_choose_v01.json",
+    "processing": {
+      "recipe": [
+        "rpg/metalClick @0.000s gain=0.12 speed=1.000"
+      ],
+      "energy_envelope": {
+        "target_rms_dbfs": -15,
+        "rms_before_dbfs": -7.934600971122432,
+        "rms_after_dbfs": -15.033479597484105,
+        "exponential_tau_seconds": 0.038758031682402695,
+        "body_floor": 0.025,
+        "pulse_onsets_seconds": [
+          0.0,
+          0.08852607709750566
+        ],
+        "purpose": "Reduce sustained event energy while preserving -1dBFS peak; not a subjective loudness pass"
+      },
+      "lowpass_hz": 5000,
+      "highpass_hz": 55,
+      "peak_target_dbfs": -1,
+      "attack_fade_ms": 0.7,
+      "release_fade": "quadratic, min(80ms,30% of duration)",
+      "notes": "Only browser-rendered audio and explicitly licensed local sample layers; no new offline oscillator synthesis."
+    },
+    "sha256": "d65718239a3c6825c8c9909ce37f4f4ccde1ce5013c4987140e47b795f827b0b",
+    "status": "candidate_pending_subjective_listening"
+  },
+  {
+    "id": "awaken",
+    "stem": "awaken",
+    "version": "v02",
+    "variant": null,
+    "purpose": "弹出「神之觉醒」：1.5 秒左右，庄严、有力",
+    "frequent": false,
+    "candidate": "candidates/awaken.wav",
+    "sources": [
+      "originals/awaken_v01_browser.wav",
+      "originals/reused/impact/impactSoft_heavy_000.ogg",
+      "originals/reused/fantasy/metal_02.ogg"
+    ],
+    "browser_record": "records/browser_awaken_v01.json",
+    "processing": {
+      "recipe": [
+        "impact/impactSoft_heavy_000 @0.000s gain=0.4 speed=1.000",
+        "fantasy/metal_02 @0.000s gain=0.11 speed=1.000",
+        "Browser low chord in root/fifth/octave; no choir or real instrument claim"
+      ],
+      "energy_envelope": {
+        "target_rms_dbfs": -15,
+        "rms_before_dbfs": -12.298116996195862,
+        "rms_after_dbfs": -14.973535296246874,
+        "exponential_tau_seconds": 0.7703263719378655,
+        "body_floor": 0.025,
+        "pulse_onsets_seconds": [
+          0.0
+        ],
+        "purpose": "Reduce sustained event energy while preserving -1dBFS peak; not a subjective loudness pass"
+      },
+      "lowpass_hz": 3400,
+      "highpass_hz": 55,
+      "peak_target_dbfs": -1,
+      "attack_fade_ms": 0.7,
+      "release_fade": "quadratic, min(80ms,30% of duration)",
+      "notes": "Only browser-rendered audio and explicitly licensed local sample layers; no new offline oscillator synthesis."
+    },
+    "sha256": "7b340169cbe23901524589c5e158d03dc96890e661ba77a75f7fd6e58809305f",
+    "status": "candidate_pending_subjective_listening"
+  },
+  {
+    "id": "fusion",
+    "stem": "fusion",
+    "version": "v02",
+    "variant": null,
+    "purpose": "弹出「融合技」：两种力量合在一起的感觉",
+    "frequent": false,
+    "candidate": "candidates/fusion.wav",
+    "sources": [
+      "originals/fusion_v01_browser.wav",
+      "originals/light_beam_v01_browser.wav",
+      "originals/wave_push_v01_browser.wav",
+      "originals/reused/fantasy/item_gem_04.ogg"
+    ],
+    "browser_record": "records/browser_fusion_v01.json",
+    "processing": {
+      "recipe": [
+        "fantasy/item_gem_04 @0.000s gain=0.08 speed=1.000",
+        "Blend independently generated tonal light and noisy water layers"
+      ],
+      "energy_envelope": {
+        "target_rms_dbfs": -15,
+        "rms_before_dbfs": -10.203296538626411,
+        "rms_after_dbfs": -15.018379288045027,
+        "exponential_tau_seconds": 0.14277336446552505,
+        "body_floor": 0.025,
+        "pulse_onsets_seconds": [
+          0.0
+        ],
+        "purpose": "Reduce sustained event energy while preserving -1dBFS peak; not a subjective loudness pass"
+      },
+      "lowpass_hz": 4800,
+      "highpass_hz": 55,
+      "peak_target_dbfs": -1,
+      "attack_fade_ms": 0.7,
+      "release_fade": "quadratic, min(80ms,30% of duration)",
+      "notes": "Only browser-rendered audio and explicitly licensed local sample layers; no new offline oscillator synthesis."
+    },
+    "sha256": "21c4ae95f6d26a90362b13862ba23193889b7f74481c828a206ce779c306e897",
+    "status": "candidate_pending_subjective_listening"
+  },
+  {
+    "id": "hammer_throw",
+    "stem": "hammer_throw",
+    "version": "v02",
+    "variant": null,
+    "purpose": "托尔掷出战锤（呼啸）",
+    "frequent": false,
+    "candidate": "candidates/hammer_throw.wav",
+    "sources": [
+      "originals/hammer_throw_v01_browser.wav",
+      "originals/reused/rpg/cloth4.ogg",
+      "originals/reused/fantasy/metal_01.ogg"
+    ],
+    "browser_record": "records/browser_hammer_throw_v01.json",
+    "processing": {
+      "recipe": [
+        "rpg/cloth4 @0.000s gain=0.65 speed=0.850",
+        "fantasy/metal_01 @0.000s gain=0.12 speed=1.000"
+      ],
+      "energy_envelope": {
+        "target_rms_dbfs": -16,
+        "rms_before_dbfs": -14.561932794202775,
+        "rms_after_dbfs": -16.00897505771223,
+        "exponential_tau_seconds": 0.23748525462015008,
+        "body_floor": 0.025,
+        "pulse_onsets_seconds": [
+          0.0
+        ],
+        "purpose": "Reduce sustained event energy while preserving -1dBFS peak; not a subjective loudness pass"
+      },
+      "lowpass_hz": 3300,
+      "highpass_hz": 55,
+      "peak_target_dbfs": -1,
+      "attack_fade_ms": 0.7,
+      "release_fade": "quadratic, min(80ms,30% of duration)",
+      "notes": "Only browser-rendered audio and explicitly licensed local sample layers; no new offline oscillator synthesis."
+    },
+    "sha256": "97675701811755990f15ef9adab6fb268f61f3a673969870584797a6b969565e",
+    "status": "candidate_pending_subjective_listening"
+  },
+  {
+    "id": "hammer_catch",
+    "stem": "hammer_catch",
+    "version": "v02",
+    "variant": null,
+    "purpose": "战锤飞回手里",
+    "frequent": false,
+    "candidate": "candidates/hammer_catch.wav",
+    "sources": [
+      "originals/hammer_catch_v01_browser.wav",
+      "originals/reused/impact/impactMetal_medium_002.ogg",
+      "originals/reused/rpg/metalClick.ogg"
+    ],
+    "browser_record": "records/browser_hammer_catch_v01.json",
+    "processing": {
+      "recipe": [
+        "impact/impactMetal_medium_002 @0.000s gain=0.7 speed=0.850",
+        "rpg/metalClick @0.000s gain=0.3 speed=1.000"
+      ],
+      "energy_envelope": {
+        "target_rms_dbfs": -17,
+        "rms_before_dbfs": -11.106331563296482,
+        "rms_after_dbfs": -16.975776071367626,
+        "exponential_tau_seconds": 0.029110867296943718,
+        "body_floor": 0.025,
+        "pulse_onsets_seconds": [
+          0.0
+        ],
+        "purpose": "Reduce sustained event energy while preserving -1dBFS peak; not a subjective loudness pass"
+      },
+      "lowpass_hz": 3900,
+      "highpass_hz": 55,
+      "peak_target_dbfs": -1,
+      "attack_fade_ms": 0.7,
+      "release_fade": "quadratic, min(80ms,30% of duration)",
+      "notes": "Only browser-rendered audio and explicitly licensed local sample layers; no new offline oscillator synthesis."
+    },
+    "sha256": "46cab7d44dc3b9efd09da19e5eb5bd30f611f482dfca2a7f30103b7a375efc2a",
+    "status": "candidate_pending_subjective_listening"
+  },
+  {
+    "id": "static_zap",
+    "stem": "static_zap_01",
+    "version": "v02",
+    "variant": 1,
+    "purpose": "静电场的电网互相电击（很轻的噼啪声）",
+    "frequent": true,
+    "candidate": "candidates/static_zap_01.wav",
+    "sources": [
+      "originals/static_zap_01_v01_browser.wav",
+      "originals/reused/impact/impactGlass_light_000.ogg"
+    ],
+    "browser_record": "records/browser_static_zap_01_v01.json",
+    "processing": {
+      "recipe": [
+        "impact/impactGlass_light_000 @0.000s gain=0.07 speed=0.975"
+      ],
+      "energy_envelope": {
+        "target_rms_dbfs": -21,
+        "rms_before_dbfs": -16.504939595757318,
+        "rms_after_dbfs": -20.980706294519212,
+        "exponential_tau_seconds": 0.005749780348791949,
+        "body_floor": 0.025,
+        "pulse_onsets_seconds": [
+          0.0
+        ],
+        "purpose": "Reduce sustained event energy while preserving -1dBFS peak; not a subjective loudness pass"
+      },
+      "lowpass_hz": 4200,
+      "highpass_hz": 55,
+      "peak_target_dbfs": -1,
+      "attack_fade_ms": 0.7,
+      "release_fade": "quadratic, min(80ms,30% of duration)",
+      "notes": "Only browser-rendered audio and explicitly licensed local sample layers; no new offline oscillator synthesis."
+    },
+    "sha256": "bb6e8efed850a0a51112a7178a881f4598afa6502728c6bad8062582f8556968",
+    "status": "candidate_pending_subjective_listening"
+  },
+  {
+    "id": "static_zap",
+    "stem": "static_zap_02",
+    "version": "v02",
+    "variant": 2,
+    "purpose": "静电场的电网互相电击（很轻的噼啪声）",
+    "frequent": true,
+    "candidate": "candidates/static_zap_02.wav",
+    "sources": [
+      "originals/static_zap_02_v01_browser.wav",
+      "originals/reused/impact/impactGlass_light_000.ogg"
+    ],
+    "browser_record": "records/browser_static_zap_02_v01.json",
+    "processing": {
+      "recipe": [
+        "impact/impactGlass_light_000 @0.000s gain=0.07 speed=1.000"
+      ],
+      "energy_envelope": {
+        "target_rms_dbfs": -21,
+        "rms_before_dbfs": -17.550911197009682,
+        "rms_after_dbfs": -21.010619102413955,
+        "exponential_tau_seconds": 0.005935579076340223,
+        "body_floor": 0.025,
+        "pulse_onsets_seconds": [
+          0.0
+        ],
+        "purpose": "Reduce sustained event energy while preserving -1dBFS peak; not a subjective loudness pass"
+      },
+      "lowpass_hz": 4200,
+      "highpass_hz": 55,
+      "peak_target_dbfs": -1,
+      "attack_fade_ms": 0.7,
+      "release_fade": "quadratic, min(80ms,30% of duration)",
+      "notes": "Only browser-rendered audio and explicitly licensed local sample layers; no new offline oscillator synthesis."
+    },
+    "sha256": "404883b885a2c782cbe58992aa2d8a3774f9c9f00a2594a2692cb3e4346c8c36",
+    "status": "candidate_pending_subjective_listening"
+  },
+  {
+    "id": "static_zap",
+    "stem": "static_zap_03",
+    "version": "v02",
+    "variant": 3,
+    "purpose": "静电场的电网互相电击（很轻的噼啪声）",
+    "frequent": true,
+    "candidate": "candidates/static_zap_03.wav",
+    "sources": [
+      "originals/static_zap_03_v01_browser.wav",
+      "originals/reused/impact/impactGlass_light_000.ogg"
+    ],
+    "browser_record": "records/browser_static_zap_03_v01.json",
+    "processing": {
+      "recipe": [
+        "impact/impactGlass_light_000 @0.000s gain=0.07 speed=1.025"
+      ],
+      "energy_envelope": {
+        "target_rms_dbfs": -21,
+        "rms_before_dbfs": -17.373092967211978,
+        "rms_after_dbfs": -20.983601486673873,
+        "exponential_tau_seconds": 0.0218649543847974,
+        "body_floor": 0.025,
+        "pulse_onsets_seconds": [
+          0.0
+        ],
+        "purpose": "Reduce sustained event energy while preserving -1dBFS peak; not a subjective loudness pass"
+      },
+      "lowpass_hz": 4200,
+      "highpass_hz": 55,
+      "peak_target_dbfs": -1,
+      "attack_fade_ms": 0.7,
+      "release_fade": "quadratic, min(80ms,30% of duration)",
+      "notes": "Only browser-rendered audio and explicitly licensed local sample layers; no new offline oscillator synthesis."
+    },
+    "sha256": "dc1505e7fe7fe41c591f27a185ce8177aad38259eea4c4ecb7db1b446c53008d",
+    "status": "candidate_pending_subjective_listening"
+  },
+  {
+    "id": "spear_throw",
+    "stem": "spear_throw",
+    "version": "v02",
+    "variant": null,
+    "purpose": "奥丁掷出长枪",
+    "frequent": false,
+    "candidate": "candidates/spear_throw.wav",
+    "sources": [
+      "originals/spear_throw_v01_browser.wav",
+      "originals/reused/rpg/knifeSlice.ogg",
+      "originals/reused/fantasy/spell_01.ogg"
+    ],
+    "browser_record": "records/browser_spear_throw_v01.json",
+    "processing": {
+      "recipe": [
+        "rpg/knifeSlice @0.000s gain=0.55 speed=1.400",
+        "fantasy/spell_01 @0.000s gain=0.18 speed=1.000"
+      ],
+      "energy_envelope": {
+        "target_rms_dbfs": -16.5,
+        "rms_before_dbfs": -14.162837247404633,
+        "rms_after_dbfs": -16.47739741701125,
+        "exponential_tau_seconds": 0.08860731548366232,
+        "body_floor": 0.025,
+        "pulse_onsets_seconds": [
+          0.0
+        ],
+        "purpose": "Reduce sustained event energy while preserving -1dBFS peak; not a subjective loudness pass"
+      },
+      "lowpass_hz": 4900,
+      "highpass_hz": 55,
+      "peak_target_dbfs": -1,
+      "attack_fade_ms": 0.7,
+      "release_fade": "quadratic, min(80ms,30% of duration)",
+      "notes": "Only browser-rendered audio and explicitly licensed local sample layers; no new offline oscillator synthesis."
+    },
+    "sha256": "13801c6d3c4a91599b083a0af81f742e6dfde3b50f37057c93570fbb14cc47a0",
+    "status": "candidate_pending_subjective_listening"
+  },
+  {
+    "id": "rune_detonate",
+    "stem": "rune_detonate_01",
+    "version": "v02",
+    "variant": 1,
+    "purpose": "符文印记引爆",
+    "frequent": true,
+    "candidate": "candidates/rune_detonate_01.wav",
+    "sources": [
+      "originals/rune_detonate_01_v01_browser.wav",
+      "originals/reused/fantasy/spell_02.ogg",
+      "originals/reused/impact/impactSoft_medium_002.ogg"
+    ],
+    "browser_record": "records/browser_rune_detonate_01_v01.json",
+    "processing": {
+      "recipe": [
+        "fantasy/spell_02 @0.000s gain=0.4 speed=1.268",
+        "impact/impactSoft_medium_002 @0.000s gain=0.22 speed=0.975"
+      ],
+      "energy_envelope": {
+        "target_rms_dbfs": -18,
+        "rms_before_dbfs": -9.401715888546063,
+        "rms_after_dbfs": -18.02378327423375,
+        "exponential_tau_seconds": 0.013569722325045058,
+        "body_floor": 0.025,
+        "pulse_onsets_seconds": [
+          0.0
+        ],
+        "purpose": "Reduce sustained event energy while preserving -1dBFS peak; not a subjective loudness pass"
+      },
+      "lowpass_hz": 4200,
+      "highpass_hz": 55,
+      "peak_target_dbfs": -1,
+      "attack_fade_ms": 0.7,
+      "release_fade": "quadratic, min(80ms,30% of duration)",
+      "notes": "Only browser-rendered audio and explicitly licensed local sample layers; no new offline oscillator synthesis."
+    },
+    "sha256": "c3e1f4ec60b4903143406c5bbd074f5a3fa0113e36ad7789628503c7fbb63fe5",
+    "status": "candidate_pending_subjective_listening"
+  },
+  {
+    "id": "rune_detonate",
+    "stem": "rune_detonate_02",
+    "version": "v02",
+    "variant": 2,
+    "purpose": "符文印记引爆",
+    "frequent": true,
+    "candidate": "candidates/rune_detonate_02.wav",
+    "sources": [
+      "originals/rune_detonate_02_v01_browser.wav",
+      "originals/reused/fantasy/spell_02.ogg",
+      "originals/reused/impact/impactSoft_medium_002.ogg"
+    ],
+    "browser_record": "records/browser_rune_detonate_02_v01.json",
+    "processing": {
+      "recipe": [
+        "fantasy/spell_02 @0.000s gain=0.4 speed=1.300",
+        "impact/impactSoft_medium_002 @0.000s gain=0.22 speed=1.000"
+      ],
+      "energy_envelope": {
+        "target_rms_dbfs": -18,
+        "rms_before_dbfs": -9.44684584777087,
+        "rms_after_dbfs": -17.961098042464776,
+        "exponential_tau_seconds": 0.014008215100113675,
+        "body_floor": 0.025,
+        "pulse_onsets_seconds": [
+          0.0
+        ],
+        "purpose": "Reduce sustained event energy while preserving -1dBFS peak; not a subjective loudness pass"
+      },
+      "lowpass_hz": 4200,
+      "highpass_hz": 55,
+      "peak_target_dbfs": -1,
+      "attack_fade_ms": 0.7,
+      "release_fade": "quadratic, min(80ms,30% of duration)",
+      "notes": "Only browser-rendered audio and explicitly licensed local sample layers; no new offline oscillator synthesis."
+    },
+    "sha256": "c2c581505fa78d1da752de3e72d4b82d9202cce7986d469408ac19a0668f9c57",
+    "status": "candidate_pending_subjective_listening"
+  },
+  {
+    "id": "rune_detonate",
+    "stem": "rune_detonate_03",
+    "version": "v02",
+    "variant": 3,
+    "purpose": "符文印记引爆",
+    "frequent": true,
+    "candidate": "candidates/rune_detonate_03.wav",
+    "sources": [
+      "originals/rune_detonate_03_v01_browser.wav",
+      "originals/reused/fantasy/spell_02.ogg",
+      "originals/reused/impact/impactSoft_medium_002.ogg"
+    ],
+    "browser_record": "records/browser_rune_detonate_03_v01.json",
+    "processing": {
+      "recipe": [
+        "fantasy/spell_02 @0.000s gain=0.4 speed=1.333",
+        "impact/impactSoft_medium_002 @0.000s gain=0.22 speed=1.025"
+      ],
+      "energy_envelope": {
+        "target_rms_dbfs": -18,
+        "rms_before_dbfs": -10.071542727978164,
+        "rms_after_dbfs": -17.974039234416896,
+        "exponential_tau_seconds": 0.014008215100113675,
+        "body_floor": 0.025,
+        "pulse_onsets_seconds": [
+          0.0
+        ],
+        "purpose": "Reduce sustained event energy while preserving -1dBFS peak; not a subjective loudness pass"
+      },
+      "lowpass_hz": 4200,
+      "highpass_hz": 55,
+      "peak_target_dbfs": -1,
+      "attack_fade_ms": 0.7,
+      "release_fade": "quadratic, min(80ms,30% of duration)",
+      "notes": "Only browser-rendered audio and explicitly licensed local sample layers; no new offline oscillator synthesis."
+    },
+    "sha256": "1ff259997decb54aeb9b9525e6660b14a93f98242a821d7ac29daf1cd7510aab",
+    "status": "candidate_pending_subjective_listening"
+  },
+  {
+    "id": "raven_dive",
+    "stem": "raven_dive",
+    "version": "v02",
+    "variant": null,
+    "purpose": "渡鸦俯冲（短促的鸦鸣或振翅）",
+    "frequent": false,
+    "candidate": "candidates/raven_dive.wav",
+    "sources": [
+      "originals/raven_dive_v01_browser.wav",
+      "originals/reused/rpg/cloth1.ogg"
+    ],
+    "browser_record": "records/browser_raven_dive_v01.json",
+    "processing": {
+      "recipe": [
+        "rpg/cloth1 @0.000s gain=0.65 speed=1.300",
+        "rpg/cloth1 @0.065s gain=0.5655 speed=1.300",
+        "rpg/cloth1 @0.130s gain=0.481 speed=1.300",
+        "Three short fabric/air wingbeats; no downloaded crow call used"
+      ],
+      "energy_envelope": {
+        "target_rms_dbfs": -18,
+        "rms_before_dbfs": -17.56090821639978,
+        "rms_after_dbfs": -18.043950995897568,
+        "exponential_tau_seconds": 0.030051557510046418,
+        "body_floor": 0.025,
+        "pulse_onsets_seconds": [
+          0.0
+        ],
+        "purpose": "Reduce sustained event energy while preserving -1dBFS peak; not a subjective loudness pass"
+      },
+      "lowpass_hz": 3100,
+      "highpass_hz": 55,
+      "peak_target_dbfs": -1,
+      "attack_fade_ms": 0.7,
+      "release_fade": "quadratic, min(80ms,30% of duration)",
+      "notes": "Only browser-rendered audio and explicitly licensed local sample layers; no new offline oscillator synthesis."
+    },
+    "sha256": "e101a07690a31923b9f41f99d140f06031fcc2c98ab3fa9df1949e9c59839807",
+    "status": "candidate_pending_subjective_listening"
+  },
+  {
+    "id": "wolf_bite",
+    "stem": "wolf_bite_01",
+    "version": "v02",
+    "variant": 1,
+    "purpose": "火焰幼狼咬人",
+    "frequent": true,
+    "candidate": "candidates/wolf_bite_01.wav",
+    "sources": [
+      "originals/wolf_bite_01_v01_browser.wav",
+      "originals/reused/fantasy/creature_monster_01.ogg",
+      "originals/reused/fantasy/spell_fire_03.ogg",
+      "originals/reused/impact/impactPunch_medium_000.ogg"
+    ],
+    "browser_record": "records/browser_wolf_bite_01_v01.json",
+    "processing": {
+      "recipe": [
+        "fantasy/creature_monster_01 @0.000s gain=0.24 speed=1.170",
+        "fantasy/spell_fire_03 @0.000s gain=0.4 speed=0.975",
+        "impact/impactPunch_medium_000 @0.000s gain=0.38 speed=0.975"
+      ],
+      "energy_envelope": {
+        "target_rms_dbfs": -18,
+        "rms_before_dbfs": -13.078520713746535,
+        "rms_after_dbfs": -17.966655765639953,
+        "exponential_tau_seconds": 0.025633492429813005,
+        "body_floor": 0.025,
+        "pulse_onsets_seconds": [
+          0.0
+        ],
+        "purpose": "Reduce sustained event energy while preserving -1dBFS peak; not a subjective loudness pass"
+      },
+      "lowpass_hz": 3100,
+      "highpass_hz": 55,
+      "peak_target_dbfs": -1,
+      "attack_fade_ms": 0.7,
+      "release_fade": "quadratic, min(80ms,30% of duration)",
+      "notes": "Only browser-rendered audio and explicitly licensed local sample layers; no new offline oscillator synthesis."
+    },
+    "sha256": "39414e352bf50ef024738b0b982b1fa773f2c68947e4255ac099f63a4beb7d32",
+    "status": "candidate_pending_subjective_listening"
+  },
+  {
+    "id": "wolf_bite",
+    "stem": "wolf_bite_02",
+    "version": "v02",
+    "variant": 2,
+    "purpose": "火焰幼狼咬人",
+    "frequent": true,
+    "candidate": "candidates/wolf_bite_02.wav",
+    "sources": [
+      "originals/wolf_bite_02_v01_browser.wav",
+      "originals/reused/fantasy/creature_monster_01.ogg",
+      "originals/reused/fantasy/spell_fire_03.ogg",
+      "originals/reused/impact/impactPunch_medium_000.ogg"
+    ],
+    "browser_record": "records/browser_wolf_bite_02_v01.json",
+    "processing": {
+      "recipe": [
+        "fantasy/creature_monster_01 @0.000s gain=0.24 speed=1.200",
+        "fantasy/spell_fire_03 @0.000s gain=0.4 speed=1.000",
+        "impact/impactPunch_medium_000 @0.000s gain=0.38 speed=1.000"
+      ],
+      "energy_envelope": {
+        "target_rms_dbfs": -18,
+        "rms_before_dbfs": -12.877995061014486,
+        "rms_after_dbfs": -18.01062550464987,
+        "exponential_tau_seconds": 0.0341282759318417,
+        "body_floor": 0.025,
+        "pulse_onsets_seconds": [
+          0.0
+        ],
+        "purpose": "Reduce sustained event energy while preserving -1dBFS peak; not a subjective loudness pass"
+      },
+      "lowpass_hz": 3100,
+      "highpass_hz": 55,
+      "peak_target_dbfs": -1,
+      "attack_fade_ms": 0.7,
+      "release_fade": "quadratic, min(80ms,30% of duration)",
+      "notes": "Only browser-rendered audio and explicitly licensed local sample layers; no new offline oscillator synthesis."
+    },
+    "sha256": "260c6afacf45f589819a69fdb2131e51188a5a4d2f02f45d8ce8ee6b7739aee0",
+    "status": "candidate_pending_subjective_listening"
+  },
+  {
+    "id": "wolf_bite",
+    "stem": "wolf_bite_03",
+    "version": "v02",
+    "variant": 3,
+    "purpose": "火焰幼狼咬人",
+    "frequent": true,
+    "candidate": "candidates/wolf_bite_03.wav",
+    "sources": [
+      "originals/wolf_bite_03_v01_browser.wav",
+      "originals/reused/fantasy/creature_monster_01.ogg",
+      "originals/reused/fantasy/spell_fire_03.ogg",
+      "originals/reused/impact/impactPunch_medium_000.ogg"
+    ],
+    "browser_record": "records/browser_wolf_bite_03_v01.json",
+    "processing": {
+      "recipe": [
+        "fantasy/creature_monster_01 @0.000s gain=0.24 speed=1.230",
+        "fantasy/spell_fire_03 @0.000s gain=0.4 speed=1.025",
+        "impact/impactPunch_medium_000 @0.000s gain=0.38 speed=1.025"
+      ],
+      "energy_envelope": {
+        "target_rms_dbfs": -18,
+        "rms_before_dbfs": -13.268330958682103,
+        "rms_after_dbfs": -18.01106653638681,
+        "exponential_tau_seconds": 0.018650452393808227,
+        "body_floor": 0.025,
+        "pulse_onsets_seconds": [
+          0.0
+        ],
+        "purpose": "Reduce sustained event energy while preserving -1dBFS peak; not a subjective loudness pass"
+      },
+      "lowpass_hz": 3100,
+      "highpass_hz": 55,
+      "peak_target_dbfs": -1,
+      "attack_fade_ms": 0.7,
+      "release_fade": "quadratic, min(80ms,30% of duration)",
+      "notes": "Only browser-rendered audio and explicitly licensed local sample layers; no new offline oscillator synthesis."
+    },
+    "sha256": "e45acf429ff2ca2d35b2bd4d3226c78d165c22372cc759973b57f33ec34f868b",
+    "status": "candidate_pending_subjective_listening"
+  },
+  {
+    "id": "wolf_breath",
+    "stem": "wolf_breath",
+    "version": "v02",
+    "variant": null,
+    "purpose": "巨狼喷火",
+    "frequent": false,
+    "candidate": "candidates/wolf_breath.wav",
+    "sources": [
+      "originals/wolf_breath_v01_browser.wav",
+      "originals/reused/fantasy/spell_fire_05.ogg",
+      "originals/reused/fantasy/creature_roar_03.ogg"
+    ],
+    "browser_record": "records/browser_wolf_breath_v01.json",
+    "processing": {
+      "recipe": [
+        "fantasy/spell_fire_05 @0.000s gain=0.6 speed=0.850",
+        "fantasy/creature_roar_03 @0.000s gain=0.13 speed=1.000"
+      ],
+      "energy_envelope": {
+        "target_rms_dbfs": -18,
+        "rms_before_dbfs": -12.485152090663576,
+        "rms_after_dbfs": -17.96055982082248,
+        "exponential_tau_seconds": 0.13830419488589296,
+        "body_floor": 0.025,
+        "pulse_onsets_seconds": [
+          0.0
+        ],
+        "purpose": "Reduce sustained event energy while preserving -1dBFS peak; not a subjective loudness pass"
+      },
+      "lowpass_hz": 2800,
+      "highpass_hz": 55,
+      "peak_target_dbfs": -1,
+      "attack_fade_ms": 0.7,
+      "release_fade": "quadratic, min(80ms,30% of duration)",
+      "notes": "Only browser-rendered audio and explicitly licensed local sample layers; no new offline oscillator synthesis."
+    },
+    "sha256": "e4b63a02d30565f8966941ae6c5a4a31855c5a0f5f792ca2a0818620b060407a",
+    "status": "candidate_pending_subjective_listening"
+  },
+  {
+    "id": "decoy_spawn",
+    "stem": "decoy_spawn",
+    "version": "v02",
+    "variant": null,
+    "purpose": "洛基留下火焰分身",
+    "frequent": false,
+    "candidate": "candidates/decoy_spawn.wav",
+    "sources": [
+      "originals/decoy_spawn_v01_browser.wav",
+      "originals/reused/fantasy/spell_fire_06.ogg",
+      "originals/reused/rpg/cloth4.ogg"
+    ],
+    "browser_record": "records/browser_decoy_spawn_v01.json",
+    "processing": {
+      "recipe": [
+        "fantasy/spell_fire_06 @0.000s gain=0.65 speed=1.200",
+        "rpg/cloth4 @0.000s gain=0.2 speed=1.400"
+      ],
+      "energy_envelope": {
+        "target_rms_dbfs": -17,
+        "rms_before_dbfs": -14.194080887636085,
+        "rms_after_dbfs": -17.00279317936936,
+        "exponential_tau_seconds": 0.17837339596806642,
+        "body_floor": 0.025,
+        "pulse_onsets_seconds": [
+          0.0
+        ],
+        "purpose": "Reduce sustained event energy while preserving -1dBFS peak; not a subjective loudness pass"
+      },
+      "lowpass_hz": 3900,
+      "highpass_hz": 55,
+      "peak_target_dbfs": -1,
+      "attack_fade_ms": 0.7,
+      "release_fade": "quadratic, min(80ms,30% of duration)",
+      "notes": "Only browser-rendered audio and explicitly licensed local sample layers; no new offline oscillator synthesis."
+    },
+    "sha256": "0fb43a5503b1f3f46780565f254fed255205637158e80ddbf6af48650dfaaef6",
+    "status": "candidate_pending_subjective_listening"
+  },
+  {
+    "id": "feather_launch",
+    "stem": "feather_launch",
+    "version": "v02",
+    "variant": null,
+    "purpose": "弗蕾亚的羽刃一齐射出",
+    "frequent": false,
+    "candidate": "candidates/feather_launch.wav",
+    "sources": [
+      "originals/feather_launch_v01_browser.wav",
+      "originals/reused/rpg/drawKnife2.ogg",
+      "originals/reused/rpg/cloth4.ogg"
+    ],
+    "browser_record": "records/browser_feather_launch_v01.json",
+    "processing": {
+      "recipe": [
+        "rpg/drawKnife2 @0.000s gain=0.3 speed=1.700",
+        "rpg/cloth4 @0.000s gain=0.24 speed=1.800",
+        "rpg/cloth4 @0.025s gain=0.24 speed=1.800",
+        "rpg/cloth4 @0.050s gain=0.24 speed=1.800"
+      ],
+      "energy_envelope": {
+        "target_rms_dbfs": -17,
+        "rms_before_dbfs": -14.538967045783942,
+        "rms_after_dbfs": -16.96815902327807,
+        "exponential_tau_seconds": 0.07092293376600563,
+        "body_floor": 0.025,
+        "pulse_onsets_seconds": [
+          0.0
+        ],
+        "purpose": "Reduce sustained event energy while preserving -1dBFS peak; not a subjective loudness pass"
+      },
+      "lowpass_hz": 4800,
+      "highpass_hz": 55,
+      "peak_target_dbfs": -1,
+      "attack_fade_ms": 0.7,
+      "release_fade": "quadratic, min(80ms,30% of duration)",
+      "notes": "Only browser-rendered audio and explicitly licensed local sample layers; no new offline oscillator synthesis."
+    },
+    "sha256": "fbf09c6cc53ede916c524cbf39949487a9632e6ccf6673e0b6e581964c2cf19e",
+    "status": "candidate_pending_subjective_listening"
+  },
+  {
+    "id": "cat_pounce",
+    "stem": "cat_pounce_01",
+    "version": "v02",
+    "variant": 1,
+    "purpose": "战猫扑击",
+    "frequent": true,
+    "candidate": "candidates/cat_pounce_01.wav",
+    "sources": [
+      "originals/cat_pounce_01_v01_browser.wav",
+      "originals/reused/rpg/knifeSlice2.ogg",
+      "originals/reused/impact/impactPunch_medium_001.ogg"
+    ],
+    "browser_record": "records/browser_cat_pounce_01_v01.json",
+    "processing": {
+      "recipe": [
+        "rpg/knifeSlice2 @0.000s gain=0.5 speed=1.560",
+        "impact/impactPunch_medium_001 @0.000s gain=0.32 speed=0.975",
+        "Fast dry claw/air impact; no downloaded cat voice used"
+      ],
+      "energy_envelope": {
+        "target_rms_dbfs": -17,
+        "rms_before_dbfs": -12.874005501774617,
+        "rms_after_dbfs": -16.96714114506869,
+        "exponential_tau_seconds": 0.06245099011467454,
+        "body_floor": 0.025,
+        "pulse_onsets_seconds": [
+          0.0
+        ],
+        "purpose": "Reduce sustained event energy while preserving -1dBFS peak; not a subjective loudness pass"
+      },
+      "lowpass_hz": 4200,
+      "highpass_hz": 55,
+      "peak_target_dbfs": -1,
+      "attack_fade_ms": 0.7,
+      "release_fade": "quadratic, min(80ms,30% of duration)",
+      "notes": "Only browser-rendered audio and explicitly licensed local sample layers; no new offline oscillator synthesis."
+    },
+    "sha256": "8d9b199624bc4f5f2b3e5d97e17721bf0ea4edd0ad049fcd04d56b1619cb693c",
+    "status": "candidate_pending_subjective_listening"
+  },
+  {
+    "id": "cat_pounce",
+    "stem": "cat_pounce_02",
+    "version": "v02",
+    "variant": 2,
+    "purpose": "战猫扑击",
+    "frequent": true,
+    "candidate": "candidates/cat_pounce_02.wav",
+    "sources": [
+      "originals/cat_pounce_02_v01_browser.wav",
+      "originals/reused/rpg/knifeSlice2.ogg",
+      "originals/reused/impact/impactPunch_medium_001.ogg"
+    ],
+    "browser_record": "records/browser_cat_pounce_02_v01.json",
+    "processing": {
+      "recipe": [
+        "rpg/knifeSlice2 @0.000s gain=0.5 speed=1.600",
+        "impact/impactPunch_medium_001 @0.000s gain=0.32 speed=1.000",
+        "Fast dry claw/air impact; no downloaded cat voice used"
+      ],
+      "energy_envelope": {
+        "target_rms_dbfs": -17,
+        "rms_before_dbfs": -14.124805342469868,
+        "rms_after_dbfs": -17.02150017352331,
+        "exponential_tau_seconds": 0.07558060675947317,
+        "body_floor": 0.025,
+        "pulse_onsets_seconds": [
+          0.0
+        ],
+        "purpose": "Reduce sustained event energy while preserving -1dBFS peak; not a subjective loudness pass"
+      },
+      "lowpass_hz": 4200,
+      "highpass_hz": 55,
+      "peak_target_dbfs": -1,
+      "attack_fade_ms": 0.7,
+      "release_fade": "quadratic, min(80ms,30% of duration)",
+      "notes": "Only browser-rendered audio and explicitly licensed local sample layers; no new offline oscillator synthesis."
+    },
+    "sha256": "d02b3ccbd2b62e98ef7d833fa465de8f4553a70cce4d270b6227373c9f24e5b7",
+    "status": "candidate_pending_subjective_listening"
+  },
+  {
+    "id": "cat_pounce",
+    "stem": "cat_pounce_03",
+    "version": "v02",
+    "variant": 3,
+    "purpose": "战猫扑击",
+    "frequent": true,
+    "candidate": "candidates/cat_pounce_03.wav",
+    "sources": [
+      "originals/cat_pounce_03_v01_browser.wav",
+      "originals/reused/rpg/knifeSlice2.ogg",
+      "originals/reused/impact/impactPunch_medium_001.ogg"
+    ],
+    "browser_record": "records/browser_cat_pounce_03_v01.json",
+    "processing": {
+      "recipe": [
+        "rpg/knifeSlice2 @0.000s gain=0.5 speed=1.640",
+        "impact/impactPunch_medium_001 @0.000s gain=0.32 speed=1.025",
+        "Fast dry claw/air impact; no downloaded cat voice used"
+      ],
+      "energy_envelope": {
+        "target_rms_dbfs": -17,
+        "rms_before_dbfs": -13.667937575351687,
+        "rms_after_dbfs": -16.98900775309532,
+        "exponential_tau_seconds": 0.044015848409517555,
+        "body_floor": 0.025,
+        "pulse_onsets_seconds": [
+          0.0
+        ],
+        "purpose": "Reduce sustained event energy while preserving -1dBFS peak; not a subjective loudness pass"
+      },
+      "lowpass_hz": 4200,
+      "highpass_hz": 55,
+      "peak_target_dbfs": -1,
+      "attack_fade_ms": 0.7,
+      "release_fade": "quadratic, min(80ms,30% of duration)",
+      "notes": "Only browser-rendered audio and explicitly licensed local sample layers; no new offline oscillator synthesis."
+    },
+    "sha256": "2767c3c88a9e6646c713ebfae2851d67f6c9df1c3c4b100a5de27e90557629ae",
+    "status": "candidate_pending_subjective_listening"
+  },
+  {
+    "id": "chariot_charge",
+    "stem": "chariot_charge",
+    "version": "v02",
+    "variant": null,
+    "purpose": "猫车冲过屏幕",
+    "frequent": false,
+    "candidate": "candidates/chariot_charge.wav",
+    "sources": [
+      "originals/chariot_charge_v01_browser.wav",
+      "originals/reused/rpg/footstep08.ogg",
+      "originals/reused/fantasy/wood_02.ogg",
+      "originals/reused/rpg/cloth4.ogg"
+    ],
+    "browser_record": "records/browser_chariot_charge_v01.json",
+    "processing": {
+      "recipe": [
+        "rpg/footstep08 @0.000s gain=0.25 speed=1.400",
+        "rpg/footstep08 @0.090s gain=0.25 speed=1.400",
+        "rpg/footstep08 @0.180s gain=0.25 speed=1.400",
+        "rpg/footstep08 @0.270s gain=0.25 speed=1.400",
+        "rpg/footstep08 @0.360s gain=0.25 speed=1.400",
+        "fantasy/wood_02 @0.000s gain=0.14 speed=1.200",
+        "rpg/cloth4 @0.000s gain=0.35 speed=0.800"
+      ],
+      "energy_envelope": {
+        "target_rms_dbfs": -16.5,
+        "rms_before_dbfs": -13.202919848258174,
+        "rms_after_dbfs": -16.537576069964807,
+        "exponential_tau_seconds": 0.24515936657630055,
+        "body_floor": 0.025,
+        "pulse_onsets_seconds": [
+          0.0
+        ],
+        "purpose": "Reduce sustained event energy while preserving -1dBFS peak; not a subjective loudness pass"
+      },
+      "lowpass_hz": 3300,
+      "highpass_hz": 55,
+      "peak_target_dbfs": -1,
+      "attack_fade_ms": 0.7,
+      "release_fade": "quadratic, min(80ms,30% of duration)",
+      "notes": "Only browser-rendered audio and explicitly licensed local sample layers; no new offline oscillator synthesis."
+    },
+    "sha256": "acce97a5fe7b36f4bec0059ddd66d9de9569bea350d936d8ef6f1a2ab8b85b5f",
+    "status": "candidate_pending_subjective_listening"
+  },
+  {
+    "id": "light_beam",
+    "stem": "light_beam",
+    "version": "v02",
+    "variant": null,
+    "purpose": "巴德尔射出光束（明亮、干净）",
+    "frequent": false,
+    "candidate": "candidates/light_beam.wav",
+    "sources": [
+      "originals/light_beam_v01_browser.wav"
+    ],
+    "browser_record": "records/browser_light_beam_v01.json",
+    "processing": {
+      "recipe": [],
+      "energy_envelope": {
+        "target_rms_dbfs": -16,
+        "rms_before_dbfs": -8.240887632278362,
+        "rms_after_dbfs": -15.964330422338566,
+        "exponential_tau_seconds": 0.04543817902570611,
+        "body_floor": 0.025,
+        "pulse_onsets_seconds": [
+          0.0
+        ],
+        "purpose": "Reduce sustained event energy while preserving -1dBFS peak; not a subjective loudness pass"
+      },
+      "lowpass_hz": 5400,
+      "highpass_hz": 55,
+      "peak_target_dbfs": -1,
+      "attack_fade_ms": 0.7,
+      "release_fade": "quadratic, min(80ms,30% of duration)",
+      "notes": "Only browser-rendered audio and explicitly licensed local sample layers; no new offline oscillator synthesis."
+    },
+    "sha256": "f5a66a0568f3c7a81f2503577d0d45cea4863dfc7949400c8865125ebb8deb7e",
+    "status": "candidate_pending_subjective_listening"
+  },
+  {
+    "id": "light_spear",
+    "stem": "light_spear",
+    "version": "v02",
+    "variant": null,
+    "purpose": "光矛掷出",
+    "frequent": false,
+    "candidate": "candidates/light_spear.wav",
+    "sources": [
+      "originals/light_spear_v01_browser.wav",
+      "originals/reused/rpg/cloth1.ogg"
+    ],
+    "browser_record": "records/browser_light_spear_v01.json",
+    "processing": {
+      "recipe": [
+        "rpg/cloth1 @0.000s gain=0.12 speed=1.700"
+      ],
+      "energy_envelope": {
+        "target_rms_dbfs": -16,
+        "rms_before_dbfs": -7.95458789315845,
+        "rms_after_dbfs": -15.969373422796426,
+        "exponential_tau_seconds": 0.030051557510046418,
+        "body_floor": 0.025,
+        "pulse_onsets_seconds": [
+          0.0
+        ],
+        "purpose": "Reduce sustained event energy while preserving -1dBFS peak; not a subjective loudness pass"
+      },
+      "lowpass_hz": 5400,
+      "highpass_hz": 55,
+      "peak_target_dbfs": -1,
+      "attack_fade_ms": 0.7,
+      "release_fade": "quadratic, min(80ms,30% of duration)",
+      "notes": "Only browser-rendered audio and explicitly licensed local sample layers; no new offline oscillator synthesis."
+    },
+    "sha256": "4d85f7e1943ccede4f3333c65d6b49c8125b9f0275f865954043158f8b2a0690",
+    "status": "candidate_pending_subjective_listening"
+  },
+  {
+    "id": "light_burst",
+    "stem": "light_burst_01",
+    "version": "v02",
+    "variant": 1,
+    "purpose": "带光痕的敌人死亡时爆出一圈光（很轻）",
+    "frequent": true,
+    "candidate": "candidates/light_burst_01.wav",
+    "sources": [
+      "originals/light_burst_01_v01_browser.wav",
+      "originals/reused/fantasy/item_gem_02.ogg"
+    ],
+    "browser_record": "records/browser_light_burst_01_v01.json",
+    "processing": {
+      "recipe": [
+        "fantasy/item_gem_02 @0.000s gain=0.07 speed=1.268"
+      ],
+      "energy_envelope": {
+        "target_rms_dbfs": -21,
+        "rms_before_dbfs": -11.405950131839615,
+        "rms_after_dbfs": -21.007719114835904,
+        "exponential_tau_seconds": 0.005749780348791949,
+        "body_floor": 0.025,
+        "pulse_onsets_seconds": [
+          0.0
+        ],
+        "purpose": "Reduce sustained event energy while preserving -1dBFS peak; not a subjective loudness pass"
+      },
+      "lowpass_hz": 5000,
+      "highpass_hz": 55,
+      "peak_target_dbfs": -1,
+      "attack_fade_ms": 0.7,
+      "release_fade": "quadratic, min(80ms,30% of duration)",
+      "notes": "Only browser-rendered audio and explicitly licensed local sample layers; no new offline oscillator synthesis."
+    },
+    "sha256": "df05011e41a9b110952fa26353b7ced99bd488598df0fab4d2df743df44a023b",
+    "status": "candidate_pending_subjective_listening"
+  },
+  {
+    "id": "light_burst",
+    "stem": "light_burst_02",
+    "version": "v02",
+    "variant": 2,
+    "purpose": "带光痕的敌人死亡时爆出一圈光（很轻）",
+    "frequent": true,
+    "candidate": "candidates/light_burst_02.wav",
+    "sources": [
+      "originals/light_burst_02_v01_browser.wav",
+      "originals/reused/fantasy/item_gem_02.ogg"
+    ],
+    "browser_record": "records/browser_light_burst_02_v01.json",
+    "processing": {
+      "recipe": [
+        "fantasy/item_gem_02 @0.000s gain=0.07 speed=1.300"
+      ],
+      "energy_envelope": {
+        "target_rms_dbfs": -21,
+        "rms_before_dbfs": -11.404280040213822,
+        "rms_after_dbfs": -21.031505034375243,
+        "exponential_tau_seconds": 0.005749780348791949,
+        "body_floor": 0.025,
+        "pulse_onsets_seconds": [
+          0.0
+        ],
+        "purpose": "Reduce sustained event energy while preserving -1dBFS peak; not a subjective loudness pass"
+      },
+      "lowpass_hz": 5000,
+      "highpass_hz": 55,
+      "peak_target_dbfs": -1,
+      "attack_fade_ms": 0.7,
+      "release_fade": "quadratic, min(80ms,30% of duration)",
+      "notes": "Only browser-rendered audio and explicitly licensed local sample layers; no new offline oscillator synthesis."
+    },
+    "sha256": "7ca4ea609960e40166d873908c28f8042992f25d7c5f705db8b0d26fe01e6068",
+    "status": "candidate_pending_subjective_listening"
+  },
+  {
+    "id": "light_burst",
+    "stem": "light_burst_03",
+    "version": "v02",
+    "variant": 3,
+    "purpose": "带光痕的敌人死亡时爆出一圈光（很轻）",
+    "frequent": true,
+    "candidate": "candidates/light_burst_03.wav",
+    "sources": [
+      "originals/light_burst_03_v01_browser.wav",
+      "originals/reused/fantasy/item_gem_02.ogg"
+    ],
+    "browser_record": "records/browser_light_burst_03_v01.json",
+    "processing": {
+      "recipe": [
+        "fantasy/item_gem_02 @0.000s gain=0.07 speed=1.333"
+      ],
+      "energy_envelope": {
+        "target_rms_dbfs": -21,
+        "rms_before_dbfs": -11.406243123853558,
+        "rms_after_dbfs": -20.956172364416798,
+        "exponential_tau_seconds": 0.005935579076340223,
+        "body_floor": 0.025,
+        "pulse_onsets_seconds": [
+          0.0
+        ],
+        "purpose": "Reduce sustained event energy while preserving -1dBFS peak; not a subjective loudness pass"
+      },
+      "lowpass_hz": 5000,
+      "highpass_hz": 55,
+      "peak_target_dbfs": -1,
+      "attack_fade_ms": 0.7,
+      "release_fade": "quadratic, min(80ms,30% of duration)",
+      "notes": "Only browser-rendered audio and explicitly licensed local sample layers; no new offline oscillator synthesis."
+    },
+    "sha256": "4b887a7bd87dd3b9415ebfd3effeb11c0bf86211e04d4cc2b66793bd7733828a",
+    "status": "candidate_pending_subjective_listening"
+  },
+  {
+    "id": "light_flash",
+    "stem": "light_flash",
+    "version": "v02",
+    "variant": null,
+    "purpose": "每 30 秒的全屏闪光",
+    "frequent": false,
+    "candidate": "candidates/light_flash.wav",
+    "sources": [
+      "originals/light_flash_v01_browser.wav",
+      "originals/reused/fantasy/item_gem_04.ogg"
+    ],
+    "browser_record": "records/browser_light_flash_v01.json",
+    "processing": {
+      "recipe": [
+        "fantasy/item_gem_04 @0.000s gain=0.09 speed=1.000"
+      ],
+      "energy_envelope": {
+        "target_rms_dbfs": -14.5,
+        "rms_before_dbfs": -9.887676760198996,
+        "rms_after_dbfs": -14.458791355277121,
+        "exponential_tau_seconds": 0.1673810927202572,
+        "body_floor": 0.025,
+        "pulse_onsets_seconds": [
+          0.0
+        ],
+        "purpose": "Reduce sustained event energy while preserving -1dBFS peak; not a subjective loudness pass"
+      },
+      "lowpass_hz": 5500,
+      "highpass_hz": 55,
+      "peak_target_dbfs": -1,
+      "attack_fade_ms": 0.7,
+      "release_fade": "quadratic, min(80ms,30% of duration)",
+      "notes": "Only browser-rendered audio and explicitly licensed local sample layers; no new offline oscillator synthesis."
+    },
+    "sha256": "60a9fbd252f45a0f068e8ae99bc5167a5e2552061571c3bd3aeca773cabb925d",
+    "status": "candidate_pending_subjective_listening"
+  },
+  {
+    "id": "net_throw",
+    "stem": "net_throw",
+    "version": "v02",
+    "variant": null,
+    "purpose": "澜抛出渔网",
+    "frequent": false,
+    "candidate": "candidates/net_throw.wav",
+    "sources": [
+      "originals/net_throw_v01_browser.wav",
+      "originals/reused/rpg/clothBelt.ogg",
+      "originals/reused/fantasy/creature_slime_02.ogg"
+    ],
+    "browser_record": "records/browser_net_throw_v01.json",
+    "processing": {
+      "recipe": [
+        "rpg/clothBelt @0.000s gain=0.6 speed=1.100",
+        "fantasy/creature_slime_02 @0.000s gain=0.12 speed=1.000"
+      ],
+      "energy_envelope": {
+        "target_rms_dbfs": -17,
+        "rms_before_dbfs": -12.708231319223252,
+        "rms_after_dbfs": -16.95206780121204,
+        "exponential_tau_seconds": 0.06049611522408664,
+        "body_floor": 0.025,
+        "pulse_onsets_seconds": [
+          0.0
+        ],
+        "purpose": "Reduce sustained event energy while preserving -1dBFS peak; not a subjective loudness pass"
+      },
+      "lowpass_hz": 3100,
+      "highpass_hz": 55,
+      "peak_target_dbfs": -1,
+      "attack_fade_ms": 0.7,
+      "release_fade": "quadratic, min(80ms,30% of duration)",
+      "notes": "Only browser-rendered audio and explicitly licensed local sample layers; no new offline oscillator synthesis."
+    },
+    "sha256": "fae6259d325b9cbf474f133055d0c23a3dd7a2be9c9eff840808734e91279953",
+    "status": "candidate_pending_subjective_listening"
+  },
+  {
+    "id": "net_close",
+    "stem": "net_close",
+    "version": "v02",
+    "variant": null,
+    "purpose": "收网（绳子收紧、水声）",
+    "frequent": false,
+    "candidate": "candidates/net_close.wav",
+    "sources": [
+      "originals/net_close_v01_browser.wav",
+      "originals/reused/rpg/clothBelt2.ogg",
+      "originals/reused/fantasy/creature_slime_02.ogg"
+    ],
+    "browser_record": "records/browser_net_close_v01.json",
+    "processing": {
+      "recipe": [
+        "rpg/clothBelt2 @0.000s gain=0.65 speed=0.900",
+        "fantasy/creature_slime_02 @0.060s gain=0.18 speed=1.000"
+      ],
+      "energy_envelope": {
+        "target_rms_dbfs": -17,
+        "rms_before_dbfs": -14.43176180933409,
+        "rms_after_dbfs": -17.001388338253495,
+        "exponential_tau_seconds": 0.12571868504894046,
+        "body_floor": 0.025,
+        "pulse_onsets_seconds": [
+          0.0
+        ],
+        "purpose": "Reduce sustained event energy while preserving -1dBFS peak; not a subjective loudness pass"
+      },
+      "lowpass_hz": 3000,
+      "highpass_hz": 55,
+      "peak_target_dbfs": -1,
+      "attack_fade_ms": 0.7,
+      "release_fade": "quadratic, min(80ms,30% of duration)",
+      "notes": "Only browser-rendered audio and explicitly licensed local sample layers; no new offline oscillator synthesis."
+    },
+    "sha256": "c00bc9040426a5dc7b34573e877a1f799ddcf0f0b676ab3dd752b596a1828dda",
+    "status": "candidate_pending_subjective_listening"
+  },
+  {
+    "id": "wave_push",
+    "stem": "wave_push",
+    "version": "v02",
+    "variant": null,
+    "purpose": "推出巨浪",
+    "frequent": false,
+    "candidate": "candidates/wave_push.wav",
+    "sources": [
+      "originals/wave_push_v01_browser.wav",
+      "originals/reused/fantasy/creature_slime_03.ogg"
+    ],
+    "browser_record": "records/browser_wave_push_v01.json",
+    "processing": {
+      "recipe": [
+        "fantasy/creature_slime_03 @0.000s gain=0.15 speed=0.800"
+      ],
+      "energy_envelope": {
+        "target_rms_dbfs": -16.5,
+        "rms_before_dbfs": -11.77746489606639,
+        "rms_after_dbfs": -16.49046361021567,
+        "exponential_tau_seconds": 0.1107012349929676,
+        "body_floor": 0.025,
+        "pulse_onsets_seconds": [
+          0.0
+        ],
+        "purpose": "Reduce sustained event energy while preserving -1dBFS peak; not a subjective loudness pass"
+      },
+      "lowpass_hz": 2700,
+      "highpass_hz": 55,
+      "peak_target_dbfs": -1,
+      "attack_fade_ms": 0.7,
+      "release_fade": "quadratic, min(80ms,30% of duration)",
+      "notes": "Only browser-rendered audio and explicitly licensed local sample layers; no new offline oscillator synthesis."
+    },
+    "sha256": "c6d0bebab3144268a413ae5665dc42ccc9948e88527dc3edc05704690c0ace46",
+    "status": "candidate_pending_subjective_listening"
+  },
+  {
+    "id": "wave_crash",
+    "stem": "wave_crash",
+    "version": "v02",
+    "variant": null,
+    "purpose": "浪拍下来",
+    "frequent": false,
+    "candidate": "candidates/wave_crash.wav",
+    "sources": [
+      "originals/wave_crash_v01_browser.wav",
+      "originals/reused/fantasy/creature_slime_04.ogg",
+      "originals/reused/impact/impactSoft_heavy_000.ogg"
+    ],
+    "browser_record": "records/browser_wave_crash_v01.json",
+    "processing": {
+      "recipe": [
+        "fantasy/creature_slime_04 @0.000s gain=0.18 speed=0.700",
+        "impact/impactSoft_heavy_000 @0.000s gain=0.25 speed=1.000"
+      ],
+      "energy_envelope": {
+        "target_rms_dbfs": -15,
+        "action": "already below target; no extra shaping",
+        "rms_before_dbfs": -15.449433905935814
+      },
+      "lowpass_hz": 3000,
+      "highpass_hz": 55,
+      "peak_target_dbfs": -1,
+      "attack_fade_ms": 0.7,
+      "release_fade": "quadratic, min(80ms,30% of duration)",
+      "notes": "Only browser-rendered audio and explicitly licensed local sample layers; no new offline oscillator synthesis."
+    },
+    "sha256": "f183454754121efd96e029e7685a6ad228ac39734d5cc344c7fab34f5ca692ac",
+    "status": "candidate_pending_subjective_listening"
+  },
+  {
+    "id": "sword_hit",
+    "stem": "sword_hit_01",
+    "version": "v02",
+    "variant": 1,
+    "purpose": "弗雷的飞剑砍中敌人",
+    "frequent": true,
+    "candidate": "candidates/sword_hit_01.wav",
+    "sources": [
+      "originals/sword_hit_01_v01_browser.wav",
+      "originals/reused/fantasy/blade_01.ogg",
+      "originals/reused/impact/impactMetal_light_001.ogg"
+    ],
+    "browser_record": "records/browser_sword_hit_01_v01.json",
+    "processing": {
+      "recipe": [
+        "fantasy/blade_01 @0.000s gain=0.38 speed=1.462",
+        "impact/impactMetal_light_001 @0.000s gain=0.26 speed=1.170"
+      ],
+      "energy_envelope": {
+        "target_rms_dbfs": -16.8,
+        "rms_before_dbfs": -10.854074790811323,
+        "rms_after_dbfs": -16.767317172427123,
+        "exponential_tau_seconds": 0.025633492429813005,
+        "body_floor": 0.025,
+        "pulse_onsets_seconds": [
+          0.0
+        ],
+        "purpose": "Reduce sustained event energy while preserving -1dBFS peak; not a subjective loudness pass"
+      },
+      "lowpass_hz": 4800,
+      "highpass_hz": 55,
+      "peak_target_dbfs": -1,
+      "attack_fade_ms": 0.7,
+      "release_fade": "quadratic, min(80ms,30% of duration)",
+      "notes": "Only browser-rendered audio and explicitly licensed local sample layers; no new offline oscillator synthesis."
+    },
+    "sha256": "8cc367e662e425faffb4a42937640411245b4c2487979677fdc9a0ae1c010e29",
+    "status": "candidate_pending_subjective_listening"
+  },
+  {
+    "id": "sword_hit",
+    "stem": "sword_hit_02",
+    "version": "v02",
+    "variant": 2,
+    "purpose": "弗雷的飞剑砍中敌人",
+    "frequent": true,
+    "candidate": "candidates/sword_hit_02.wav",
+    "sources": [
+      "originals/sword_hit_02_v01_browser.wav",
+      "originals/reused/fantasy/blade_01.ogg",
+      "originals/reused/impact/impactMetal_light_001.ogg"
+    ],
+    "browser_record": "records/browser_sword_hit_02_v01.json",
+    "processing": {
+      "recipe": [
+        "fantasy/blade_01 @0.000s gain=0.38 speed=1.500",
+        "impact/impactMetal_light_001 @0.000s gain=0.26 speed=1.200"
+      ],
+      "energy_envelope": {
+        "target_rms_dbfs": -16.8,
+        "rms_before_dbfs": -11.095548977348129,
+        "rms_after_dbfs": -16.84545827177749,
+        "exponential_tau_seconds": 0.02731690312757832,
+        "body_floor": 0.025,
+        "pulse_onsets_seconds": [
+          0.0
+        ],
+        "purpose": "Reduce sustained event energy while preserving -1dBFS peak; not a subjective loudness pass"
+      },
+      "lowpass_hz": 4800,
+      "highpass_hz": 55,
+      "peak_target_dbfs": -1,
+      "attack_fade_ms": 0.7,
+      "release_fade": "quadratic, min(80ms,30% of duration)",
+      "notes": "Only browser-rendered audio and explicitly licensed local sample layers; no new offline oscillator synthesis."
+    },
+    "sha256": "e1ca96ea74266798b3b37321e8d6c1bd0d0d07998e2e490308c7e63f88948289",
+    "status": "candidate_pending_subjective_listening"
+  },
+  {
+    "id": "sword_hit",
+    "stem": "sword_hit_03",
+    "version": "v02",
+    "variant": 3,
+    "purpose": "弗雷的飞剑砍中敌人",
+    "frequent": true,
+    "candidate": "candidates/sword_hit_03.wav",
+    "sources": [
+      "originals/sword_hit_03_v01_browser.wav",
+      "originals/reused/fantasy/blade_01.ogg",
+      "originals/reused/impact/impactMetal_light_001.ogg"
+    ],
+    "browser_record": "records/browser_sword_hit_03_v01.json",
+    "processing": {
+      "recipe": [
+        "fantasy/blade_01 @0.000s gain=0.38 speed=1.537",
+        "impact/impactMetal_light_001 @0.000s gain=0.26 speed=1.230"
+      ],
+      "energy_envelope": {
+        "target_rms_dbfs": -16.8,
+        "rms_before_dbfs": -11.24945186083183,
+        "rms_after_dbfs": -16.81536494456947,
+        "exponential_tau_seconds": 0.029110867296943718,
+        "body_floor": 0.025,
+        "pulse_onsets_seconds": [
+          0.0
+        ],
+        "purpose": "Reduce sustained event energy while preserving -1dBFS peak; not a subjective loudness pass"
+      },
+      "lowpass_hz": 4800,
+      "highpass_hz": 55,
+      "peak_target_dbfs": -1,
+      "attack_fade_ms": 0.7,
+      "release_fade": "quadratic, min(80ms,30% of duration)",
+      "notes": "Only browser-rendered audio and explicitly licensed local sample layers; no new offline oscillator synthesis."
+    },
+    "sha256": "7e924391d7c3bcc99b411dc7a320aeb9da836751185967a72376c43b1c89e008",
+    "status": "candidate_pending_subjective_listening"
+  },
+  {
+    "id": "boar_charge",
+    "stem": "boar_charge",
+    "version": "v02",
+    "variant": null,
+    "purpose": "野猪冲锋（蹄声、哼叫）",
+    "frequent": false,
+    "candidate": "candidates/boar_charge.wav",
+    "sources": [
+      "originals/boar_charge_v01_browser.wav",
+      "originals/boar_voice_CC0.ogg",
+      "originals/reused/rpg/footstep00.ogg",
+      "originals/reused/rpg/footstep03.ogg"
+    ],
+    "browser_record": "records/browser_boar_charge_v01.json",
+    "processing": {
+      "recipe": [
+        "new/boar_voice_CC0.ogg @0.015s gain=0.65 speed=1.000",
+        "rpg/footstep00 @0.000s gain=0.32 speed=0.850",
+        "rpg/footstep03 @0.105s gain=0.32 speed=0.850",
+        "rpg/footstep00 @0.210s gain=0.32 speed=0.850",
+        "rpg/footstep03 @0.315s gain=0.32 speed=0.850"
+      ],
+      "energy_envelope": {
+        "target_rms_dbfs": -16,
+        "rms_before_dbfs": -9.521359029835695,
+        "rms_after_dbfs": -15.963243489374657,
+        "exponential_tau_seconds": 0.1006275601986762,
+        "body_floor": 0.025,
+        "pulse_onsets_seconds": [
+          0.0
+        ],
+        "purpose": "Reduce sustained event energy while preserving -1dBFS peak; not a subjective loudness pass"
+      },
+      "lowpass_hz": 3000,
+      "highpass_hz": 55,
+      "peak_target_dbfs": -1,
+      "attack_fade_ms": 0.7,
+      "release_fade": "quadratic, min(80ms,30% of duration)",
+      "notes": "Only browser-rendered audio and explicitly licensed local sample layers; no new offline oscillator synthesis."
+    },
+    "sha256": "58669ec2cbc8cf444f1fd429264189d2d3f750ca08b940f6c8de3eba4c171169",
+    "status": "candidate_pending_subjective_listening"
+  },
+  {
+    "id": "ice_arrow",
+    "stem": "ice_arrow_01",
+    "version": "v02",
+    "variant": 1,
+    "purpose": "斯卡蒂射出冰箭",
+    "frequent": true,
+    "candidate": "candidates/ice_arrow_01.wav",
+    "sources": [
+      "originals/ice_arrow_01_v01_browser.wav",
+      "originals/reused/fantasy/item_gem_03.ogg",
+      "originals/reused/rpg/cloth1.ogg"
+    ],
+    "browser_record": "records/browser_ice_arrow_01_v01.json",
+    "processing": {
+      "recipe": [
+        "fantasy/item_gem_03 @0.000s gain=0.21 speed=1.365",
+        "rpg/cloth1 @0.000s gain=0.2 speed=1.852"
+      ],
+      "energy_envelope": {
+        "target_rms_dbfs": -17,
+        "rms_before_dbfs": -14.385823666014986,
+        "rms_after_dbfs": -16.99696571810688,
+        "exponential_tau_seconds": 0.1006275601986762,
+        "body_floor": 0.025,
+        "pulse_onsets_seconds": [
+          0.0
+        ],
+        "purpose": "Reduce sustained event energy while preserving -1dBFS peak; not a subjective loudness pass"
+      },
+      "lowpass_hz": 5200,
+      "highpass_hz": 55,
+      "peak_target_dbfs": -1,
+      "attack_fade_ms": 0.7,
+      "release_fade": "quadratic, min(80ms,30% of duration)",
+      "notes": "Only browser-rendered audio and explicitly licensed local sample layers; no new offline oscillator synthesis."
+    },
+    "sha256": "75767697858eaec058bb7854c0d3867788a1360db9546d8f762a464e469c404b",
+    "status": "candidate_pending_subjective_listening"
+  },
+  {
+    "id": "ice_arrow",
+    "stem": "ice_arrow_02",
+    "version": "v02",
+    "variant": 2,
+    "purpose": "斯卡蒂射出冰箭",
+    "frequent": true,
+    "candidate": "candidates/ice_arrow_02.wav",
+    "sources": [
+      "originals/ice_arrow_02_v01_browser.wav",
+      "originals/reused/fantasy/item_gem_03.ogg",
+      "originals/reused/rpg/cloth1.ogg"
+    ],
+    "browser_record": "records/browser_ice_arrow_02_v01.json",
+    "processing": {
+      "recipe": [
+        "fantasy/item_gem_03 @0.000s gain=0.21 speed=1.400",
+        "rpg/cloth1 @0.000s gain=0.2 speed=1.900"
+      ],
+      "energy_envelope": {
+        "target_rms_dbfs": -17,
+        "rms_before_dbfs": -13.640471630826065,
+        "rms_after_dbfs": -17.00892419260496,
+        "exponential_tau_seconds": 0.07092293376600563,
+        "body_floor": 0.025,
+        "pulse_onsets_seconds": [
+          0.0
+        ],
+        "purpose": "Reduce sustained event energy while preserving -1dBFS peak; not a subjective loudness pass"
+      },
+      "lowpass_hz": 5200,
+      "highpass_hz": 55,
+      "peak_target_dbfs": -1,
+      "attack_fade_ms": 0.7,
+      "release_fade": "quadratic, min(80ms,30% of duration)",
+      "notes": "Only browser-rendered audio and explicitly licensed local sample layers; no new offline oscillator synthesis."
+    },
+    "sha256": "c74a6d99ed255fce5534db5405565076091964706639d2aa084ac530cc50c158",
+    "status": "candidate_pending_subjective_listening"
+  },
+  {
+    "id": "ice_arrow",
+    "stem": "ice_arrow_03",
+    "version": "v02",
+    "variant": 3,
+    "purpose": "斯卡蒂射出冰箭",
+    "frequent": true,
+    "candidate": "candidates/ice_arrow_03.wav",
+    "sources": [
+      "originals/ice_arrow_03_v01_browser.wav",
+      "originals/reused/fantasy/item_gem_03.ogg",
+      "originals/reused/rpg/cloth1.ogg"
+    ],
+    "browser_record": "records/browser_ice_arrow_03_v01.json",
+    "processing": {
+      "recipe": [
+        "fantasy/item_gem_03 @0.000s gain=0.21 speed=1.435",
+        "rpg/cloth1 @0.000s gain=0.2 speed=1.947"
+      ],
+      "energy_envelope": {
+        "target_rms_dbfs": -17,
+        "rms_before_dbfs": -14.773247626055042,
+        "rms_after_dbfs": -16.97607058063218,
+        "exponential_tau_seconds": 0.09147057729014019,
+        "body_floor": 0.025,
+        "pulse_onsets_seconds": [
+          0.0
+        ],
+        "purpose": "Reduce sustained event energy while preserving -1dBFS peak; not a subjective loudness pass"
+      },
+      "lowpass_hz": 5200,
+      "highpass_hz": 55,
+      "peak_target_dbfs": -1,
+      "attack_fade_ms": 0.7,
+      "release_fade": "quadratic, min(80ms,30% of duration)",
+      "notes": "Only browser-rendered audio and explicitly licensed local sample layers; no new offline oscillator synthesis."
+    },
+    "sha256": "5fa756ef21f013953c38b69212e66996128a39252946a328394aa80d49c1cc6c",
+    "status": "candidate_pending_subjective_listening"
+  },
+  {
+    "id": "ice_snipe",
+    "stem": "ice_snipe",
+    "version": "v02",
+    "variant": null,
+    "purpose": "蓄力狙击的一箭",
+    "frequent": false,
+    "candidate": "candidates/ice_snipe.wav",
+    "sources": [
+      "originals/ice_snipe_v01_browser.wav",
+      "originals/reused/fantasy/item_gem_04.ogg",
+      "originals/reused/rpg/cloth1.ogg"
+    ],
+    "browser_record": "records/browser_ice_snipe_v01.json",
+    "processing": {
+      "recipe": [
+        "fantasy/item_gem_04 @0.000s gain=0.3 speed=1.350",
+        "rpg/cloth1 @0.000s gain=0.4 speed=1.400"
+      ],
+      "energy_envelope": {
+        "target_rms_dbfs": -17,
+        "action": "already below target; no extra shaping",
+        "rms_before_dbfs": -17.89826458122077
+      },
+      "lowpass_hz": 5000,
+      "highpass_hz": 55,
+      "peak_target_dbfs": -1,
+      "attack_fade_ms": 0.7,
+      "release_fade": "quadratic, min(80ms,30% of duration)",
+      "notes": "Only browser-rendered audio and explicitly licensed local sample layers; no new offline oscillator synthesis."
+    },
+    "sha256": "4ec413bf59d8c872de25ece0c2ea9247b7f810a82742a9a86235f92fd5c8c035",
+    "status": "candidate_pending_subjective_listening"
+  },
+  {
+    "id": "ice_shatter",
+    "stem": "ice_shatter",
+    "version": "v02",
+    "variant": null,
+    "purpose": "冻结的敌人碎成冰片",
+    "frequent": false,
+    "candidate": "candidates/ice_shatter.wav",
+    "sources": [
+      "originals/ice_shatter_v01_browser.wav",
+      "originals/reused/impact/impactGlass_heavy_003.ogg",
+      "originals/reused/impact/impactGlass_light_001.ogg"
+    ],
+    "browser_record": "records/browser_ice_shatter_v01.json",
+    "processing": {
+      "recipe": [
+        "impact/impactGlass_heavy_003 @0.000s gain=0.65 speed=1.200",
+        "impact/impactGlass_light_001 @0.030s gain=0.18 speed=1.230",
+        "impact/impactGlass_light_001 @0.090s gain=0.18 speed=1.290",
+        "impact/impactGlass_light_001 @0.160s gain=0.18 speed=1.360"
+      ],
+      "energy_envelope": {
+        "target_rms_dbfs": -17,
+        "rms_before_dbfs": -16.68542984716502,
+        "rms_after_dbfs": -17.093213571436298,
+        "exponential_tau_seconds": 2.0,
+        "body_floor": 0.025,
+        "pulse_onsets_seconds": [
+          0.0
+        ],
+        "purpose": "Reduce sustained event energy while preserving -1dBFS peak; not a subjective loudness pass"
+      },
+      "lowpass_hz": 5200,
+      "highpass_hz": 55,
+      "peak_target_dbfs": -1,
+      "attack_fade_ms": 0.7,
+      "release_fade": "quadratic, min(80ms,30% of duration)",
+      "notes": "Only browser-rendered audio and explicitly licensed local sample layers; no new offline oscillator synthesis."
+    },
+    "sha256": "ce0cfef62cf02a8b4f5c15e930437d6acc2306d5eaf51338e7f6ef0f2162f727",
+    "status": "candidate_pending_subjective_listening"
+  },
+  {
+    "id": "heal_pickup",
+    "stem": "heal_pickup",
+    "version": "v02",
+    "variant": null,
+    "purpose": "捡起金羽、金泪、苹果",
+    "frequent": false,
+    "candidate": "candidates/heal_pickup.wav",
+    "sources": [
+      "originals/heal_pickup_v01_browser.wav",
+      "originals/reused/fantasy/item_gem_01.ogg"
+    ],
+    "browser_record": "records/browser_heal_pickup_v01.json",
+    "processing": {
+      "recipe": [
+        "fantasy/item_gem_01 @0.000s gain=0.09 speed=1.000"
+      ],
+      "energy_envelope": {
+        "target_rms_dbfs": -17,
+        "rms_before_dbfs": -7.678281752843816,
+        "rms_after_dbfs": -16.99120770911002,
+        "exponential_tau_seconds": 0.012334894459213003,
+        "body_floor": 0.025,
+        "pulse_onsets_seconds": [
+          0.0,
+          0.01886621315192743
+        ],
+        "purpose": "Reduce sustained event energy while preserving -1dBFS peak; not a subjective loudness pass"
+      },
+      "lowpass_hz": 5000,
+      "highpass_hz": 55,
+      "peak_target_dbfs": -1,
+      "attack_fade_ms": 0.7,
+      "release_fade": "quadratic, min(80ms,30% of duration)",
+      "notes": "Only browser-rendered audio and explicitly licensed local sample layers; no new offline oscillator synthesis."
+    },
+    "sha256": "a4232cf8d448ef8df5b7eca84cc78be2617dd37a539c65f55317166537a50977",
+    "status": "candidate_pending_subjective_listening"
+  }
+]

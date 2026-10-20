@@ -1,0 +1,11 @@
+{
+  "tool": "image_gen.imagegen",
+  "id": "surtr_gate",
+  "version": "v03",
+  "refs": [
+    "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskK3_fire_2026-10-20/references/gate_layout_qa.png",
+    "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskK3_fire_2026-10-20/originals/surtr_gate_v02_raw.png"
+  ],
+  "prompt": "Use case: precise object layout edit. Image1 is a REQUIRED GEOMETRY GUIDE, not final art: cyan rectangular opening MUST become completely TRANSPARENT; brown narrow upside-down-U is allowed stone position. Image2 ONLY provides scorched basalt/cracked ember material. Make a thin RECTANGULAR fire gateway, not broad rounded arch. Logical128square: left stone upright x12..25,y12..123; right stone upright x102..115,y12..123; narrow lintel x12..115,y12..25. Inner clearance x32..96,y30..122 MUST stay zero-alpha including no sparks/glow, with margin. Keep uprights very thin as guide, do not bulk them up or taper into opening. Texture the narrow stones as jagged dark basalt, bronze/brown highlights and molten thin orange fissures, a few flames on OUTSIDE faces and top only. Four-phase2x2 square atlas with identical stationary stone geometry/scale/placement ALL four; only outer fire tips flicker softly at8fps. No filled portal, black throat, smoke, person, demon or ornamental side wings. Keep gate4px inside each frame; baseline126. DELETE all cyan guide colors and guides in final; cyan area must not be replaced by fire. Project crisp pixel art48RGB, true alpha, no scenery/floor/shadow/text/labels/borders/watermark.",
+  "transparent_background": true
+}

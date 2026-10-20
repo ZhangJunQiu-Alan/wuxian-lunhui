@@ -1,0 +1,27 @@
+{
+  "scope": "publish gate for existing integrated levels and current assets; not third-level playthrough",
+  "combat_checks": 997,
+  "boss_art_checks": 572,
+  "card_checks": 1840,
+  "failures": 0,
+  "final_logs_clean": true,
+  "k_delivery_checks": 200,
+  "k_delivery_failures": 0,
+  "translations": {
+    "entries": 777,
+    "missing": 0
+  },
+  "initial_failures_preserved": [
+    "import.log cold font bootstrap",
+    "boss_initial_bootstrap_failure.log omitted fixture plan",
+    "cards_verbose.log audio teardown"
+  ],
+  "code_change_by_this_task": "tools/test_card_art.gd shutdown cleanup only",
+  "third_level": {
+    "registered": false,
+    "bosses_implemented": false,
+    "game_acceptance": "not_tested"
+  },
+  "raw_logs_whitespace": "original source archives (logs/license captures/CSV) preserved; whitespace gate covers scripts/tools/docs/project.godot/assets/LICENSES.md",
+  "tests_use_separate_save_files": true
+}

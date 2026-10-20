@@ -1,0 +1,16 @@
+{
+  "tool": "image_gen.imagegen",
+  "id": "fenrir_maw_lower",
+  "frame_size": [
+    256,
+    96
+  ],
+  "frames": 4,
+  "fps": 8,
+  "loop": true,
+  "prompt": "Use case: background-extraction and precise-object-edit. Image1 is the material/identity reference. Extract ONLY the LOWER JAW into a new four-frame atlas. Remove ALL upper jaw, upper fangs, snout, nose, upper skull/eyes and remove vertical left hinge above the lower gum. Keep the lower curved chin fur, bronze detail, red lower gum, ivory LOWER teeth pointing UP, right-facing lower lip/chin tip at right. Four subtly different held-open tension poses, same size and registration,2x2 equal-cell LANDSCAPE atlas: each logical256x96, total512x192 wide, no gutters. The whole lower-jaw strip INCLUDING all upward teeth must fit inside its own96px-high cell with>=8px alpha border top/bottom. Compact thin strip; no left vertical neck piece or whole mouth. Same detailed crisp small-game pixel clusters and material, no smooth painting. True zero-alpha all around and ABOVE lower teeth. No black throat fill, no upper component anywhere, no cyan/guide marks, text, labels, scenery, shadow, frame or watermark. One separately movable LOWER jaw component only.",
+  "refs": [
+    "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskK2_wolf_2026-10-20/originals/fenrir_maw_v03_raw.png"
+  ],
+  "transparent_background": true
+}

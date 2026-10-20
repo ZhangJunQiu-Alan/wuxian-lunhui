@@ -1,0 +1,49 @@
+{
+  "task": "H1",
+  "tool_calls": 4,
+  "references": [
+    {
+      "actual_input_path": "assets/sprites/effects/katana_slash.png",
+      "archived_path": "references/katana_slash.png",
+      "sha256": "7bd81d28708a9f538306c26680e7520af1f5c7349ea52c634f341e95d5cc6d7a"
+    },
+    {
+      "actual_input_path": "assets/sprites/effects/rune_missile.png",
+      "archived_path": "references/rune_missile.png",
+      "sha256": "c199b65f5786029aba9fe4e60f84cb31d158b2267a91e93f9861122ef827de8d"
+    },
+    {
+      "actual_input_path": "assets/sprites/bosses/skoll.png",
+      "archived_path": "references/skoll.png",
+      "sha256": "cf0caab4c10226dcef87dcd359b28f4c84046b3da20193f4c257463e8a72f0a9"
+    },
+    {
+      "actual_input_path": "assets/sprites/bosses/skoll_idle.png",
+      "archived_path": "references/skoll_idle.png",
+      "sha256": "19d76d98e3f5a8bb76f9bafb7e0239f069aaf14c175ff6fc5fee465a6421b8a3"
+    },
+    {
+      "actual_input_path": "assets/sprites/effects/frost_shockwave.png",
+      "archived_path": "references/frost_shockwave.png",
+      "sha256": "a0aa09571dec4959ee2a9f66dc6a6a038a2017fad3dea1140680bc837495c625"
+    }
+  ],
+  "originals": [
+    {
+      "file": "originals/skoll_bite_v01.png",
+      "sha256": "4c5813e3f780671be55c7a30872b1bbf2edd7b5af072914d1aff1280f9a7f3f9"
+    },
+    {
+      "file": "originals/skoll_dash_trail_v01.png",
+      "sha256": "dee96c99f2cf71f209b527fd7098b821de33ae1f6d7b01f5772fced9175da952"
+    },
+    {
+      "file": "originals/skoll_howl_body_v01.png",
+      "sha256": "0da74c2b1acabff67e72001ad19d28fe665a1e12142f0115d62aff94a136710b"
+    },
+    {
+      "file": "originals/skoll_howl_v01.png",
+      "sha256": "686a994adc8d693021ecc26aef57142e47345f61c4e790d2247a5a615242d975"
+    }
+  ]
+}

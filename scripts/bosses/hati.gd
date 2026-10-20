@@ -88,6 +88,8 @@ func _update_state(delta: float) -> void:
 				change_state("chase")
 		"howl_windup":
 			if state_time >= windup_time(HOWL_WINDUP):
+				BossFx.play("hati_howl_wave", global_position, 0.0, Vector2.ONE * HOWL_RADIUS / 62.0,
+					Color.WHITE, false, HOWL_RADIUS)
 				if global_position.distance_to(target.global_position) < HOWL_RADIUS:
 					target.fear(global_position, FEAR_DURATION)
 				target.shake(6.0, 0.3)
@@ -117,7 +119,8 @@ func _aim_lunge() -> void:
 
 func _split() -> void:
 	_split_timer = SPLIT_EVERY
-	FxLayer.burst(global_position, color, 30, 260.0)
+	if not BossFx.play("hati_split_flash", global_position):
+		FxLayer.burst(global_position, color, 30, 260.0)
 	for i in PHANTOM_COUNT:
 		var phantom := HatiPhantom.new()
 		phantom.hati = self
@@ -129,10 +132,13 @@ func _split() -> void:
 		var side := -1.0 if i == 0 else 1.0
 		phantom.position = position + global_position.direction_to(target.global_position).orthogonal() * side * 140.0
 		get_parent().add_child(phantom)
+		BossFx.play("hati_split_flash", phantom.global_position)
 
 
 func _draw_telegraph() -> void:
 	match state:
+		"lunge":
+			BossFx.draw(self, "hati_lunge_trail", state_time, -lunge_dir * radius * 0.5, lunge_dir.angle())
 		"lunge_windup":
 			draw_line_telegraph(self, lunge_dir, LUNGE_LENGTH + radius, radius, state_time / windup_time(LUNGE_WINDUP), MOON_COLOR)
 		"howl_windup":

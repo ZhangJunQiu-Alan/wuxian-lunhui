@@ -22,7 +22,10 @@ func _on_accept() -> void:
 	var base := randf() * TAU
 	for i in COUNT:
 		var pos := marker_pos + Vector2.from_angle(base + TAU * i / COUNT + randf_range(-0.3, 0.3)) * randf_range(160.0, 320.0)
-		var block := game.spawn_enemy("ice_block", Game.clamp_to_map(pos, 60.0))
+		var block := game.spawn_enemy("ice_block", Game.clamp_to_map(pos, 60.0), false, true)
+		if block == null:
+			complete(false)
+			return
 		block.killed.connect(_on_block_broken)
 		_blocks.append(block)
 

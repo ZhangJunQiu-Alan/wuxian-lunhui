@@ -1,0 +1,18 @@
+{
+  "tool": "image_gen.imagegen",
+  "id": "fenrir_maw",
+  "task": "K2",
+  "frame_size": [
+    256,
+    256
+  ],
+  "frames": 4,
+  "fps": 8,
+  "loop": true,
+  "alpha": "binary",
+  "prompt": "Use case: stylized-concept. Asset: transparent PIXEL-ART game effect animation, no full character. Use Image1 only for the exact charcoal fur, bronze-grey highlights, ivory fangs and red-gum material of the approved wolf. Generate ONLY enormous UPPER AND LOWER WOLF JAWS framing a clear open gap, right-facing three-quarter profile; NO wolf body, eyes, forehead or complete head. Four frames in a SQUARE2x2 equal-cell atlas, each logical256x256, reading top-left/top-right/bottom-left/bottom-right, no gutters. Each jaw assembly is a separate held-open enormous mouth: hinge at logical(32,128) on the LEFT, upper jaw stretches to right nose at approximately(228,70), lower jaw to(228,212); empty gap between. Central rectangle x96..208,y112..176 must remain TRANSPARENT, not black-filled throat. Each frame is a subtle inhale-tension loop with slight gum tension and fang/jaw movement; avoid dramatic opening/closing because gameplay supplies phase. Jaw hinge remains fixed, same fangs in each frame. Match existing detailed game pixel clusters, no smooth painting. Entire assembly occupies inner85% of its cell, minimum8 logicalpx clear on outer edges; no clipped fangs. No rays, portal, circles, particles, victim, saliva strands across center, aura, background, shadow, text, labels or watermark. True transparent alpha everywhere outside jaw material including inside mouth. No full wolf face. World-sized jaw overlay only.",
+  "refs": [
+    "/Users/zhangjunqiu/Desktop/无限恐怖/assets/sprites/bosses/fenrir.png"
+  ],
+  "transparent_background": true
+}

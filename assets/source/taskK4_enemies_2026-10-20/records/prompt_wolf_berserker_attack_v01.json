@@ -1,0 +1,19 @@
+{
+  "tool": "image_gen.imagegen",
+  "id": "wolf_berserker_attack",
+  "frames": 4,
+  "fps": 16,
+  "loop": false,
+  "action": "FOUR short AXE CHOP poses2x2squareatlas.0lowguardpreparation,1bentelbow pulls SHORT originalaxe close diagonally across chest (not giantoverheadswing),2compactdown-right chopcontact,3returnguard. Weapon consistent originalsameblade, never extendedfaroutside64, no slash effects. Distinct16fpscontactpeak/recovery, feetrootfixed.",
+  "version": "v01",
+  "frame_size": [
+    64,
+    64
+  ],
+  "refs": [
+    "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskK4_enemies_2026-10-20/references/wolf_berserker_master_12x.png",
+    "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskK4_enemies_2026-10-20/originals/wolf_berserker_v01_raw.png"
+  ],
+  "prompt": "Use case: sprite-animation, precise identity-preserving edit. Image1 is the EXACT project64x64 HUMAN wolf-pelt warrior enlarged nearest; image2 same high-res original. Same living HUMAN tan face under ashgrey wolfskin hood, short darkbeard, greyfurcloak, darkleathervest, bronze buckle, rustred waistcloth, darkwoolpants, leatherputtees/brownboots; ONE short iron bearded axe in nearhand. TWO human arms/two human legs, no werewolf or animalface, same right-facing3/4 view andhuman58pxheight. Frame64square rootx32footbaseline62, >=2pxtransparentborder inclaxe/fur. Keep compact silhouette withbentelbows, no extra weapon, source48RGBfinepixelclusters upper-leftlight, binaryentityalpha truezero-alpha outside. FOUR short AXE CHOP poses2x2squareatlas.0lowguardpreparation,1bentelbow pulls SHORT originalaxe close diagonally across chest (not giantoverheadswing),2compactdown-right chopcontact,3returnguard. Weapon consistent originalsameblade, never extendedfaroutside64, no slash effects. Distinct16fpscontactpeak/recovery, feetrootfixed. No red magical aura, particles, ground/shadow/scenery, text/label/grid/frame/watermark; all full figure and axeblade remain inside owncell, nooversizedwinglikecloak, no perpose resizing.",
+  "transparent_background": true
+}

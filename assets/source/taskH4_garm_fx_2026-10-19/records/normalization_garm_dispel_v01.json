@@ -1,0 +1,68 @@
+{
+  "input": "originals/garm_dispel_v01.png",
+  "input_sha256": "baad61d10d029cbcfc7233d54de850a55877a79ba4be7c7af2b5e5982ac9b320",
+  "raw_size": [
+    1254,
+    1254
+  ],
+  "grid": [
+    2,
+    2
+  ],
+  "cut_boxes": [
+    [
+      81,
+      76,
+      552,
+      557
+    ],
+    [
+      48,
+      83,
+      545,
+      557
+    ],
+    [
+      82,
+      68,
+      575,
+      565
+    ],
+    [
+      90,
+      112,
+      531,
+      526
+    ]
+  ],
+  "single_common_scale": 0.12072434607645875,
+  "placements": [
+    [
+      3,
+      3,
+      57,
+      58
+    ],
+    [
+      2,
+      3,
+      60,
+      57
+    ],
+    [
+      2,
+      2,
+      60,
+      60
+    ],
+    [
+      5,
+      7,
+      53,
+      50
+    ]
+  ],
+  "operations": "original alpha threshold/quantization, source frame cuts, single common nearest resize, source-derived shared palette, whole-frame placement; no character/effect drawing",
+  "candidate": "candidates/garm_dispel_v01.png",
+  "candidate_sha256": "12e749f7e5f8f5d7f9ddf94fb8615064c6d4a40b55666ca061a4fa1298a564e1"
+}

@@ -1,0 +1,3831 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>K0 维格利德规划</title><style>body{margin:0;background:#101720;color:#d7e4ea;font:16px/1.65 system-ui,sans-serif}main{max-width:1500px;margin:auto;padding:32px}h1{font-size:30px}h2{margin-top:48px}a{color:#8ed5ce}img{max-width:100%;height:auto;image-rendering:pixelated;border:1px solid #34424c}nav{display:flex;gap:24px;flex-wrap:wrap}.note{color:#b4c1ca}table{border-collapse:collapse}td,th{padding:9px 12px;border-bottom:1px solid #34424c;text-align:left}code{overflow-wrap:anywhere}details{margin:12px 0}summary{cursor:pointer}button,input{font:inherit}#mapbox{overflow:auto;max-height:78vh}#mapbox img{max-width:none;width:100%}</style><main><h1>K0 · 维格利德第三关规划</h1><p>本页是布局/规格和已有素材的本地检查材料。没有新最终素材，没有游戏截图，未接入或运行第三关。</p><nav><a href="layout.md">布局</a><a href="asset_matrix.md">逐文件清单</a><a href="asset_plan.json">机器清单</a><a href="integration.md">代码交接</a><a href="audio_events.json">音频事件</a><a href="story_and_ending.md">命运/结局</a><a href="records/self_check.json">实际自检</a></nav><h2>坐标布局</h2><p>可见5120²、行走4608²、屏障256，均为提案；虚线圈是容量示例，不代表固定原点竞技场。</p><label>缩放 <input id="zoom" type="range" min="60" max="200" value="100"> <span id="zv">100%</span></label><div id="mapbox"><img id="map" src="previews/layout.svg" alt="带坐标和尺寸的第三关布局提案"></div><h2>现有素材 1倍尺度</h2><img src="previews/style_scale_1x.png" alt="三Boss两巨人四玩家在现有地块的1倍尺度比较"><p><a href="previews/style_scale_2x.png">2倍最近邻预览</a> · 源像素不变。苏尔特动作的256画布只增加透明空间。</p><h2>蛇身端口与转弯</h2><img src="previews/snake_connections.png" alt="蛇身原图接缝与转弯投影比较"><p>直线接口做逐像素检查；弯曲是几何预览，实际纹理带与碰撞仍需Godot实现/验收。</p><h2>动作画布包络</h2><img src="previews/action_envelopes.png" alt="芬里尔巨口和苏尔特动作画布规格预览"><h2>现有地块4×4</h2><img src="previews/terrain_4x4.png" alt="六张现有地块各4乘4平铺"><h2>各批新增文件提案</h2><table><tr><th>任务</th><th>文件数提案</th><th>完成状态</th></tr><tr><td>K1</td><td>3</td><td>尚未制作；待对应接入契约冻结</td></tr><tr><td>K2</td><td>11</td><td>尚未制作；待对应接入契约冻结</td></tr><tr><td>K3</td><td>14</td><td>尚未制作；待对应接入契约冻结</td></tr><tr><td>K4</td><td>11</td><td>尚未制作；待对应接入契约冻结</td></tr><tr><td>K5</td><td>14</td><td>尚未制作；待对应接入契约冻结</td></tr><tr><td>K6</td><td>1</td><td>尚未制作；待对应接入契约冻结</td></tr><tr><td>K7</td><td>0（当前采用文字与既有UI方案）</td><td>方案已列，剧情代码未接入</td></tr></table><p>不含音效未定项、一般援助未定项及可选结局插画。复用文件不计入新增数。</p><p><a href="previews/style_scale_4x.png">4倍最近邻尺度预览</a></p><h2>逐文件提案/复用</h2><details><summary>K1 / reuse_unchanged / assets/sprites/bosses/jormungandr_head.png</summary><pre>{
+  &quot;id&quot;: &quot;jormungandr_head&quot;,
+  &quot;task&quot;: &quot;K1&quot;,
+  &quot;path&quot;: &quot;assets/sprites/bosses/jormungandr_head.png&quot;,
+  &quot;representation&quot;: &quot;existing_file&quot;,
+  &quot;decision&quot;: &quot;reuse_unchanged&quot;,
+  &quot;production_status&quot;: &quot;already_exists_do_not_reproduce&quot;,
+  &quot;role&quot;: &quot;existing character identity/reference; preserve original&quot;,
+  &quot;sha256&quot;: &quot;147c0b593f24bbe81719f52ac9d553fe9540ced163399a76aba44cd0b5006bfb&quot;,
+  &quot;integration_status&quot;: &quot;K_not_implemented&quot;,
+  &quot;integration_dependencies&quot;: [
+    &quot;level_registration&quot;,
+    &quot;K1&quot;
+  ],
+  &quot;sheet_size&quot;: [
+    128,
+    128
+  ],
+  &quot;frame_size&quot;: [
+    128,
+    128
+  ],
+  &quot;frames&quot;: 1,
+  &quot;fps&quot;: 0,
+  &quot;anchor_px&quot;: [
+    64,
+    64
+  ],
+  &quot;alpha_policy&quot;: &quot;binary&quot;,
+  &quot;direction&quot;: &quot;right_unless_static_ground&quot;,
+  &quot;scale&quot;: &quot;1x; nearest; no fractional entity scale&quot;,
+  &quot;integration_target&quot;: &quot;NEW scripts/bosses/jormungandr.gd:_ready/_update_state; explicit head base path&quot;,
+  &quot;draw_layer&quot;: &quot;actor; head/feet anchors explicitly adapted&quot;,
+  &quot;rotation_contract&quot;: &quot;right-facing; rotate abstract directional FX only; mirror body and sockets together&quot;,
+  &quot;collision_contract&quot;: &quot;texture never defines collider; controller shares geometry with visual clip&quot;,
+  &quot;runtime_sha256_must_remain&quot;: &quot;147c0b593f24bbe81719f52ac9d553fe9540ced163399a76aba44cd0b5006bfb&quot;
+}</pre></details><details><summary>K1 / reuse_unchanged / assets/sprites/bosses/jormungandr_body.png</summary><pre>{
+  &quot;id&quot;: &quot;jormungandr_body&quot;,
+  &quot;task&quot;: &quot;K1&quot;,
+  &quot;path&quot;: &quot;assets/sprites/bosses/jormungandr_body.png&quot;,
+  &quot;representation&quot;: &quot;existing_file&quot;,
+  &quot;decision&quot;: &quot;reuse_unchanged&quot;,
+  &quot;production_status&quot;: &quot;already_exists_do_not_reproduce&quot;,
+  &quot;role&quot;: &quot;existing character identity/reference; preserve original&quot;,
+  &quot;sha256&quot;: &quot;72df0600b5d9d4a19a9e6b72d8af097751109dd6807f6c9dc959a8082032b94c&quot;,
+  &quot;integration_status&quot;: &quot;K_not_implemented&quot;,
+  &quot;integration_dependencies&quot;: [
+    &quot;level_registration&quot;,
+    &quot;K1&quot;
+  ],
+  &quot;sheet_size&quot;: [
+    64,
+    64
+  ],
+  &quot;frame_size&quot;: [
+    64,
+    64
+  ],
+  &quot;frames&quot;: 1,
+  &quot;fps&quot;: 0,
+  &quot;anchor_px&quot;: [
+    32,
+    30
+  ],
+  &quot;alpha_policy&quot;: &quot;binary&quot;,
+  &quot;direction&quot;: &quot;right_unless_static_ground&quot;,
+  &quot;scale&quot;: &quot;1x; nearest; no fractional entity scale&quot;,
+  &quot;integration_target&quot;: &quot;NEW scripts/bosses/jormungandr.gd:_ready/_update_state; explicit head base path&quot;,
+  &quot;draw_layer&quot;: &quot;actor; head/feet anchors explicitly adapted&quot;,
+  &quot;rotation_contract&quot;: &quot;right-facing; rotate abstract directional FX only; mirror body and sockets together&quot;,
+  &quot;collision_contract&quot;: &quot;texture never defines collider; controller shares geometry with visual clip&quot;,
+  &quot;runtime_sha256_must_remain&quot;: &quot;72df0600b5d9d4a19a9e6b72d8af097751109dd6807f6c9dc959a8082032b94c&quot;
+}</pre></details><details><summary>K1 / reuse_unchanged / assets/sprites/bosses/jormungandr_tail.png</summary><pre>{
+  &quot;id&quot;: &quot;jormungandr_tail&quot;,
+  &quot;task&quot;: &quot;K1&quot;,
+  &quot;path&quot;: &quot;assets/sprites/bosses/jormungandr_tail.png&quot;,
+  &quot;representation&quot;: &quot;existing_file&quot;,
+  &quot;decision&quot;: &quot;reuse_unchanged&quot;,
+  &quot;production_status&quot;: &quot;already_exists_do_not_reproduce&quot;,
+  &quot;role&quot;: &quot;existing character identity/reference; preserve original&quot;,
+  &quot;sha256&quot;: &quot;02a5b4ddc3197735e27d0d2dbcdc10d71e1d8f12886351764f9c395dcd5c0936&quot;,
+  &quot;integration_status&quot;: &quot;K_not_implemented&quot;,
+  &quot;integration_dependencies&quot;: [
+    &quot;level_registration&quot;,
+    &quot;K1&quot;
+  ],
+  &quot;sheet_size&quot;: [
+    64,
+    64
+  ],
+  &quot;frame_size&quot;: [
+    64,
+    64
+  ],
+  &quot;frames&quot;: 1,
+  &quot;fps&quot;: 0,
+  &quot;anchor_px&quot;: [
+    64,
+    30
+  ],
+  &quot;alpha_policy&quot;: &quot;binary&quot;,
+  &quot;direction&quot;: &quot;right_unless_static_ground&quot;,
+  &quot;scale&quot;: &quot;1x; nearest; no fractional entity scale&quot;,
+  &quot;integration_target&quot;: &quot;NEW scripts/bosses/jormungandr.gd:_ready/_update_state; explicit head base path&quot;,
+  &quot;draw_layer&quot;: &quot;actor; head/feet anchors explicitly adapted&quot;,
+  &quot;rotation_contract&quot;: &quot;right-facing; rotate abstract directional FX only; mirror body and sockets together&quot;,
+  &quot;collision_contract&quot;: &quot;texture never defines collider; controller shares geometry with visual clip&quot;,
+  &quot;runtime_sha256_must_remain&quot;: &quot;02a5b4ddc3197735e27d0d2dbcdc10d71e1d8f12886351764f9c395dcd5c0936&quot;
+}</pre></details><details><summary>K2 / reuse_unchanged / assets/sprites/bosses/fenrir.png</summary><pre>{
+  &quot;id&quot;: &quot;fenrir&quot;,
+  &quot;task&quot;: &quot;K2&quot;,
+  &quot;path&quot;: &quot;assets/sprites/bosses/fenrir.png&quot;,
+  &quot;representation&quot;: &quot;existing_file&quot;,
+  &quot;decision&quot;: &quot;reuse_unchanged&quot;,
+  &quot;production_status&quot;: &quot;already_exists_do_not_reproduce&quot;,
+  &quot;role&quot;: &quot;existing character identity/reference; preserve original&quot;,
+  &quot;sha256&quot;: &quot;bcc4676a2d9526817aed6a43429e5b5fc5123004378fda9687d37bbbf14159da&quot;,
+  &quot;integration_status&quot;: &quot;K_not_implemented&quot;,
+  &quot;integration_dependencies&quot;: [
+    &quot;level_registration&quot;,
+    &quot;K2&quot;
+  ],
+  &quot;sheet_size&quot;: [
+    192,
+    192
+  ],
+  &quot;frame_size&quot;: [
+    192,
+    192
+  ],
+  &quot;frames&quot;: 1,
+  &quot;fps&quot;: 0,
+  &quot;anchor_px&quot;: [
+    96,
+    190
+  ],
+  &quot;alpha_policy&quot;: &quot;binary&quot;,
+  &quot;direction&quot;: &quot;right_unless_static_ground&quot;,
+  &quot;scale&quot;: &quot;1x; nearest; no fractional entity scale&quot;,
+  &quot;integration_target&quot;: &quot;NEW scripts/bosses/fenrir.gd:_ready/_update_state; swallow action mapping&quot;,
+  &quot;draw_layer&quot;: &quot;actor; head/feet anchors explicitly adapted&quot;,
+  &quot;rotation_contract&quot;: &quot;right-facing; rotate abstract directional FX only; mirror body and sockets together&quot;,
+  &quot;collision_contract&quot;: &quot;texture never defines collider; controller shares geometry with visual clip&quot;,
+  &quot;runtime_sha256_must_remain&quot;: &quot;bcc4676a2d9526817aed6a43429e5b5fc5123004378fda9687d37bbbf14159da&quot;
+}</pre></details><details><summary>K3 / reuse_unchanged / assets/sprites/bosses/surtr.png</summary><pre>{
+  &quot;id&quot;: &quot;surtr&quot;,
+  &quot;task&quot;: &quot;K3&quot;,
+  &quot;path&quot;: &quot;assets/sprites/bosses/surtr.png&quot;,
+  &quot;representation&quot;: &quot;existing_file&quot;,
+  &quot;decision&quot;: &quot;reuse_unchanged&quot;,
+  &quot;production_status&quot;: &quot;already_exists_do_not_reproduce&quot;,
+  &quot;role&quot;: &quot;existing character identity/reference; preserve original&quot;,
+  &quot;sha256&quot;: &quot;f5f705f6953e95ba014521ac47ae2f05b251e43bbea72ed7f30c6b68f3ec618d&quot;,
+  &quot;integration_status&quot;: &quot;K_not_implemented&quot;,
+  &quot;integration_dependencies&quot;: [
+    &quot;level_registration&quot;,
+    &quot;K3&quot;
+  ],
+  &quot;sheet_size&quot;: [
+    192,
+    192
+  ],
+  &quot;frame_size&quot;: [
+    192,
+    192
+  ],
+  &quot;frames&quot;: 1,
+  &quot;fps&quot;: 0,
+  &quot;anchor_px&quot;: [
+    96,
+    190
+  ],
+  &quot;alpha_policy&quot;: &quot;binary&quot;,
+  &quot;direction&quot;: &quot;right_unless_static_ground&quot;,
+  &quot;scale&quot;: &quot;1x; nearest; no fractional entity scale&quot;,
+  &quot;integration_target&quot;: &quot;NEW scripts/bosses/surtr.gd:_ready/_update_state; explicit 256px foot adapter&quot;,
+  &quot;draw_layer&quot;: &quot;actor; head/feet anchors explicitly adapted&quot;,
+  &quot;rotation_contract&quot;: &quot;right-facing; rotate abstract directional FX only; mirror body and sockets together&quot;,
+  &quot;collision_contract&quot;: &quot;texture never defines collider; controller shares geometry with visual clip&quot;,
+  &quot;runtime_sha256_must_remain&quot;: &quot;f5f705f6953e95ba014521ac47ae2f05b251e43bbea72ed7f30c6b68f3ec618d&quot;
+}</pre></details><details><summary>K4 / reuse_unchanged / assets/sprites/enemies/fire_giant.png</summary><pre>{
+  &quot;id&quot;: &quot;fire_giant&quot;,
+  &quot;task&quot;: &quot;K4&quot;,
+  &quot;path&quot;: &quot;assets/sprites/enemies/fire_giant.png&quot;,
+  &quot;representation&quot;: &quot;existing_file&quot;,
+  &quot;decision&quot;: &quot;reuse_unchanged&quot;,
+  &quot;production_status&quot;: &quot;already_exists_do_not_reproduce&quot;,
+  &quot;role&quot;: &quot;existing large enemy identity&quot;,
+  &quot;sha256&quot;: &quot;0a59ac1cb33fb98e1acfd0b0d68b1ad73d0084151689ef1af7f5a04e34d21e7a&quot;,
+  &quot;integration_status&quot;: &quot;K_not_implemented&quot;,
+  &quot;integration_dependencies&quot;: [
+    &quot;level_registration&quot;,
+    &quot;K4&quot;
+  ],
+  &quot;sheet_size&quot;: [
+    96,
+    96
+  ],
+  &quot;frame_size&quot;: [
+    96,
+    96
+  ],
+  &quot;frames&quot;: 1,
+  &quot;fps&quot;: 0,
+  &quot;anchor_px&quot;: [
+    48,
+    94
+  ],
+  &quot;alpha_policy&quot;: &quot;binary&quot;,
+  &quot;direction&quot;: &quot;right_unless_static_ground&quot;,
+  &quot;scale&quot;: &quot;1x; nearest; no fractional entity scale&quot;,
+  &quot;integration_target&quot;: &quot;scripts/data/enemy_db.gd + scripts/entities/enemy.gd:_ready/_physics_process/_die; NEW K4 scoped state handlers&quot;,
+  &quot;draw_layer&quot;: &quot;actor&quot;,
+  &quot;rotation_contract&quot;: &quot;right-facing; rotate abstract directional FX only; mirror body and sockets together&quot;,
+  &quot;collision_contract&quot;: &quot;texture never defines collider; controller shares geometry with visual clip&quot;,
+  &quot;runtime_sha256_must_remain&quot;: &quot;0a59ac1cb33fb98e1acfd0b0d68b1ad73d0084151689ef1af7f5a04e34d21e7a&quot;
+}</pre></details><details><summary>K4 / reuse_unchanged / assets/sprites/enemies/frost_veteran.png</summary><pre>{
+  &quot;id&quot;: &quot;frost_veteran&quot;,
+  &quot;task&quot;: &quot;K4&quot;,
+  &quot;path&quot;: &quot;assets/sprites/enemies/frost_veteran.png&quot;,
+  &quot;representation&quot;: &quot;existing_file&quot;,
+  &quot;decision&quot;: &quot;reuse_unchanged&quot;,
+  &quot;production_status&quot;: &quot;already_exists_do_not_reproduce&quot;,
+  &quot;role&quot;: &quot;existing large enemy identity&quot;,
+  &quot;sha256&quot;: &quot;6972714054f6181ee80249f0c5e42cac072e329a3bc063e04269ba00d9563e9c&quot;,
+  &quot;integration_status&quot;: &quot;K_not_implemented&quot;,
+  &quot;integration_dependencies&quot;: [
+    &quot;level_registration&quot;,
+    &quot;K4&quot;
+  ],
+  &quot;sheet_size&quot;: [
+    96,
+    96
+  ],
+  &quot;frame_size&quot;: [
+    96,
+    96
+  ],
+  &quot;frames&quot;: 1,
+  &quot;fps&quot;: 0,
+  &quot;anchor_px&quot;: [
+    48,
+    94
+  ],
+  &quot;alpha_policy&quot;: &quot;binary&quot;,
+  &quot;direction&quot;: &quot;right_unless_static_ground&quot;,
+  &quot;scale&quot;: &quot;1x; nearest; no fractional entity scale&quot;,
+  &quot;integration_target&quot;: &quot;scripts/data/enemy_db.gd + scripts/entities/enemy.gd:_ready/_physics_process/_die; NEW K4 scoped state handlers&quot;,
+  &quot;draw_layer&quot;: &quot;actor&quot;,
+  &quot;rotation_contract&quot;: &quot;right-facing; rotate abstract directional FX only; mirror body and sockets together&quot;,
+  &quot;collision_contract&quot;: &quot;texture never defines collider; controller shares geometry with visual clip&quot;,
+  &quot;runtime_sha256_must_remain&quot;: &quot;6972714054f6181ee80249f0c5e42cac072e329a3bc063e04269ba00d9563e9c&quot;
+}</pre></details><details><summary>K4 / reuse_unchanged / assets/sprites/enemies/dead.png</summary><pre>{
+  &quot;id&quot;: &quot;dead&quot;,
+  &quot;task&quot;: &quot;K4&quot;,
+  &quot;path&quot;: &quot;assets/sprites/enemies/dead.png&quot;,
+  &quot;representation&quot;: &quot;existing_file&quot;,
+  &quot;decision&quot;: &quot;reuse_unchanged&quot;,
+  &quot;production_status&quot;: &quot;already_exists_do_not_reproduce&quot;,
+  &quot;role&quot;: &quot;remaining dead; use existing ordinary variant, no third-level redraw&quot;,
+  &quot;sha256&quot;: &quot;fcfada7817322ec67f6b6055bd4aa727c119c0256481921f857b6218b535d278&quot;,
+  &quot;integration_status&quot;: &quot;K_not_implemented&quot;,
+  &quot;integration_dependencies&quot;: [
+    &quot;level_registration&quot;,
+    &quot;K4&quot;
+  ],
+  &quot;sheet_size&quot;: [
+    64,
+    64
+  ],
+  &quot;frame_size&quot;: [
+    64,
+    64
+  ],
+  &quot;frames&quot;: 1,
+  &quot;fps&quot;: 0,
+  &quot;anchor_px&quot;: [
+    32,
+    62
+  ],
+  &quot;alpha_policy&quot;: &quot;binary&quot;,
+  &quot;direction&quot;: &quot;right_unless_static_ground&quot;,
+  &quot;scale&quot;: &quot;1x; nearest; no fractional entity scale&quot;,
+  &quot;integration_target&quot;: &quot;scripts/data/enemy_db.gd + scripts/entities/enemy.gd:_ready/_physics_process/_die; NEW K4 scoped state handlers&quot;,
+  &quot;draw_layer&quot;: &quot;actor&quot;,
+  &quot;rotation_contract&quot;: &quot;right-facing; rotate abstract directional FX only; mirror body and sockets together&quot;,
+  &quot;collision_contract&quot;: &quot;texture never defines collider; controller shares geometry with visual clip&quot;,
+  &quot;runtime_sha256_must_remain&quot;: &quot;fcfada7817322ec67f6b6055bd4aa727c119c0256481921f857b6218b535d278&quot;
+}</pre></details><details><summary>K4 / reuse_unchanged / assets/sprites/enemies/dead_move.png</summary><pre>{
+  &quot;id&quot;: &quot;dead_move&quot;,
+  &quot;task&quot;: &quot;K4&quot;,
+  &quot;path&quot;: &quot;assets/sprites/enemies/dead_move.png&quot;,
+  &quot;representation&quot;: &quot;existing_file&quot;,
+  &quot;decision&quot;: &quot;reuse_unchanged&quot;,
+  &quot;production_status&quot;: &quot;already_exists_do_not_reproduce&quot;,
+  &quot;role&quot;: &quot;remaining dead; use existing ordinary variant, no third-level redraw&quot;,
+  &quot;sha256&quot;: &quot;93a758a490782306128d6e11941d12662ead0f1251df8b8ebc8900964fce792c&quot;,
+  &quot;integration_status&quot;: &quot;K_not_implemented&quot;,
+  &quot;integration_dependencies&quot;: [
+    &quot;level_registration&quot;,
+    &quot;K4&quot;
+  ],
+  &quot;sheet_size&quot;: [
+    384,
+    64
+  ],
+  &quot;frame_size&quot;: [
+    64,
+    64
+  ],
+  &quot;frames&quot;: 6,
+  &quot;fps&quot;: 8,
+  &quot;anchor_px&quot;: [
+    32,
+    62
+  ],
+  &quot;alpha_policy&quot;: &quot;binary&quot;,
+  &quot;direction&quot;: &quot;right_unless_static_ground&quot;,
+  &quot;scale&quot;: &quot;1x; nearest; no fractional entity scale&quot;,
+  &quot;integration_target&quot;: &quot;scripts/data/enemy_db.gd + scripts/entities/enemy.gd:_ready/_physics_process/_die; NEW K4 scoped state handlers&quot;,
+  &quot;draw_layer&quot;: &quot;actor&quot;,
+  &quot;rotation_contract&quot;: &quot;right-facing; rotate abstract directional FX only; mirror body and sockets together&quot;,
+  &quot;collision_contract&quot;: &quot;texture never defines collider; controller shares geometry with visual clip&quot;,
+  &quot;runtime_sha256_must_remain&quot;: &quot;93a758a490782306128d6e11941d12662ead0f1251df8b8ebc8900964fce792c&quot;
+}</pre></details><details><summary>K4 / reuse_unchanged / assets/sprites/enemies/dead_attack.png</summary><pre>{
+  &quot;id&quot;: &quot;dead_attack&quot;,
+  &quot;task&quot;: &quot;K4&quot;,
+  &quot;path&quot;: &quot;assets/sprites/enemies/dead_attack.png&quot;,
+  &quot;representation&quot;: &quot;existing_file&quot;,
+  &quot;decision&quot;: &quot;reuse_unchanged&quot;,
+  &quot;production_status&quot;: &quot;already_exists_do_not_reproduce&quot;,
+  &quot;role&quot;: &quot;remaining dead; use existing ordinary variant, no third-level redraw&quot;,
+  &quot;sha256&quot;: &quot;59c404b403f193cd6f15c0ac52e9e85742119ead0a55791b8b7380de0089d8d7&quot;,
+  &quot;integration_status&quot;: &quot;K_not_implemented&quot;,
+  &quot;integration_dependencies&quot;: [
+    &quot;level_registration&quot;,
+    &quot;K4&quot;
+  ],
+  &quot;sheet_size&quot;: [
+    256,
+    64
+  ],
+  &quot;frame_size&quot;: [
+    64,
+    64
+  ],
+  &quot;frames&quot;: 4,
+  &quot;fps&quot;: 16,
+  &quot;anchor_px&quot;: [
+    32,
+    62
+  ],
+  &quot;alpha_policy&quot;: &quot;binary&quot;,
+  &quot;direction&quot;: &quot;right_unless_static_ground&quot;,
+  &quot;scale&quot;: &quot;1x; nearest; no fractional entity scale&quot;,
+  &quot;integration_target&quot;: &quot;scripts/data/enemy_db.gd + scripts/entities/enemy.gd:_ready/_physics_process/_die; NEW K4 scoped state handlers&quot;,
+  &quot;draw_layer&quot;: &quot;actor&quot;,
+  &quot;rotation_contract&quot;: &quot;right-facing; rotate abstract directional FX only; mirror body and sockets together&quot;,
+  &quot;collision_contract&quot;: &quot;texture never defines collider; controller shares geometry with visual clip&quot;,
+  &quot;runtime_sha256_must_remain&quot;: &quot;59c404b403f193cd6f15c0ac52e9e85742119ead0a55791b8b7380de0089d8d7&quot;
+}</pre></details><details><summary>K5 / reuse_unchanged / assets/sprites/ground/vigrid/scorched_01.png</summary><pre>{
+  &quot;id&quot;: &quot;scorched_01&quot;,
+  &quot;task&quot;: &quot;K5&quot;,
+  &quot;path&quot;: &quot;assets/sprites/ground/vigrid/scorched_01.png&quot;,
+  &quot;representation&quot;: &quot;existing_file&quot;,
+  &quot;decision&quot;: &quot;reuse_unchanged&quot;,
+  &quot;production_status&quot;: &quot;already_exists_do_not_reproduce&quot;,
+  &quot;role&quot;: &quot;existing base terrain; decorative lava is not a damage collider&quot;,
+  &quot;sha256&quot;: &quot;3748580e22d48641ca2776b843445a7c10ae1385a4e3251000eae628ead89ba8&quot;,
+  &quot;integration_status&quot;: &quot;K_not_implemented&quot;,
+  &quot;integration_dependencies&quot;: [
+    &quot;level_registration&quot;,
+    &quot;K5&quot;
+  ],
+  &quot;sheet_size&quot;: [
+    64,
+    64
+  ],
+  &quot;frame_size&quot;: [
+    64,
+    64
+  ],
+  &quot;frames&quot;: 1,
+  &quot;fps&quot;: 0,
+  &quot;anchor_px&quot;: [
+    32,
+    32
+  ],
+  &quot;alpha_policy&quot;: &quot;opaque_ground&quot;,
+  &quot;direction&quot;: &quot;right_unless_static_ground&quot;,
+  &quot;scale&quot;: &quot;1x; nearest; no fractional entity scale&quot;,
+  &quot;integration_target&quot;: &quot;NEW scripts/world/vigrid_map.gd:_init/_layout; MapLayer.set_ground/_paint_edges&quot;,
+  &quot;draw_layer&quot;: &quot;MapLayer ground, below actors&quot;,
+  &quot;rotation_contract&quot;: &quot;right-facing; rotate abstract directional FX only; mirror body and sockets together&quot;,
+  &quot;collision_contract&quot;: &quot;texture never defines collider; controller shares geometry with visual clip&quot;,
+  &quot;runtime_sha256_must_remain&quot;: &quot;3748580e22d48641ca2776b843445a7c10ae1385a4e3251000eae628ead89ba8&quot;
+}</pre></details><details><summary>K5 / reuse_unchanged / assets/sprites/ground/vigrid/scorched_02.png</summary><pre>{
+  &quot;id&quot;: &quot;scorched_02&quot;,
+  &quot;task&quot;: &quot;K5&quot;,
+  &quot;path&quot;: &quot;assets/sprites/ground/vigrid/scorched_02.png&quot;,
+  &quot;representation&quot;: &quot;existing_file&quot;,
+  &quot;decision&quot;: &quot;reuse_unchanged&quot;,
+  &quot;production_status&quot;: &quot;already_exists_do_not_reproduce&quot;,
+  &quot;role&quot;: &quot;existing base terrain; decorative lava is not a damage collider&quot;,
+  &quot;sha256&quot;: &quot;33c892d8afe17ce56f34408bb015394ae7595f5d9ded6a5cc4a9e3c2b6befa22&quot;,
+  &quot;integration_status&quot;: &quot;K_not_implemented&quot;,
+  &quot;integration_dependencies&quot;: [
+    &quot;level_registration&quot;,
+    &quot;K5&quot;
+  ],
+  &quot;sheet_size&quot;: [
+    64,
+    64
+  ],
+  &quot;frame_size&quot;: [
+    64,
+    64
+  ],
+  &quot;frames&quot;: 1,
+  &quot;fps&quot;: 0,
+  &quot;anchor_px&quot;: [
+    32,
+    32
+  ],
+  &quot;alpha_policy&quot;: &quot;opaque_ground&quot;,
+  &quot;direction&quot;: &quot;right_unless_static_ground&quot;,
+  &quot;scale&quot;: &quot;1x; nearest; no fractional entity scale&quot;,
+  &quot;integration_target&quot;: &quot;NEW scripts/world/vigrid_map.gd:_init/_layout; MapLayer.set_ground/_paint_edges&quot;,
+  &quot;draw_layer&quot;: &quot;MapLayer ground, below actors&quot;,
+  &quot;rotation_contract&quot;: &quot;right-facing; rotate abstract directional FX only; mirror body and sockets together&quot;,
+  &quot;collision_contract&quot;: &quot;texture never defines collider; controller shares geometry with visual clip&quot;,
+  &quot;runtime_sha256_must_remain&quot;: &quot;33c892d8afe17ce56f34408bb015394ae7595f5d9ded6a5cc4a9e3c2b6befa22&quot;
+}</pre></details><details><summary>K5 / reuse_unchanged / assets/sprites/ground/vigrid/scorched_03.png</summary><pre>{
+  &quot;id&quot;: &quot;scorched_03&quot;,
+  &quot;task&quot;: &quot;K5&quot;,
+  &quot;path&quot;: &quot;assets/sprites/ground/vigrid/scorched_03.png&quot;,
+  &quot;representation&quot;: &quot;existing_file&quot;,
+  &quot;decision&quot;: &quot;reuse_unchanged&quot;,
+  &quot;production_status&quot;: &quot;already_exists_do_not_reproduce&quot;,
+  &quot;role&quot;: &quot;existing base terrain; decorative lava is not a damage collider&quot;,
+  &quot;sha256&quot;: &quot;b307a804cd093754eb2ad1f7a9f31ec661981881576cd03ba821739f06127cd3&quot;,
+  &quot;integration_status&quot;: &quot;K_not_implemented&quot;,
+  &quot;integration_dependencies&quot;: [
+    &quot;level_registration&quot;,
+    &quot;K5&quot;
+  ],
+  &quot;sheet_size&quot;: [
+    64,
+    64
+  ],
+  &quot;frame_size&quot;: [
+    64,
+    64
+  ],
+  &quot;frames&quot;: 1,
+  &quot;fps&quot;: 0,
+  &quot;anchor_px&quot;: [
+    32,
+    32
+  ],
+  &quot;alpha_policy&quot;: &quot;opaque_ground&quot;,
+  &quot;direction&quot;: &quot;right_unless_static_ground&quot;,
+  &quot;scale&quot;: &quot;1x; nearest; no fractional entity scale&quot;,
+  &quot;integration_target&quot;: &quot;NEW scripts/world/vigrid_map.gd:_init/_layout; MapLayer.set_ground/_paint_edges&quot;,
+  &quot;draw_layer&quot;: &quot;MapLayer ground, below actors&quot;,
+  &quot;rotation_contract&quot;: &quot;right-facing; rotate abstract directional FX only; mirror body and sockets together&quot;,
+  &quot;collision_contract&quot;: &quot;texture never defines collider; controller shares geometry with visual clip&quot;,
+  &quot;runtime_sha256_must_remain&quot;: &quot;b307a804cd093754eb2ad1f7a9f31ec661981881576cd03ba821739f06127cd3&quot;
+}</pre></details><details><summary>K5 / reuse_unchanged / assets/sprites/ground/vigrid/scorched_04.png</summary><pre>{
+  &quot;id&quot;: &quot;scorched_04&quot;,
+  &quot;task&quot;: &quot;K5&quot;,
+  &quot;path&quot;: &quot;assets/sprites/ground/vigrid/scorched_04.png&quot;,
+  &quot;representation&quot;: &quot;existing_file&quot;,
+  &quot;decision&quot;: &quot;reuse_unchanged&quot;,
+  &quot;production_status&quot;: &quot;already_exists_do_not_reproduce&quot;,
+  &quot;role&quot;: &quot;existing base terrain; decorative lava is not a damage collider&quot;,
+  &quot;sha256&quot;: &quot;2d1f7e6bff2849a208e9f0abc52aeaa7a48ebcd0bf3f3128615ff9434e5727a0&quot;,
+  &quot;integration_status&quot;: &quot;K_not_implemented&quot;,
+  &quot;integration_dependencies&quot;: [
+    &quot;level_registration&quot;,
+    &quot;K5&quot;
+  ],
+  &quot;sheet_size&quot;: [
+    64,
+    64
+  ],
+  &quot;frame_size&quot;: [
+    64,
+    64
+  ],
+  &quot;frames&quot;: 1,
+  &quot;fps&quot;: 0,
+  &quot;anchor_px&quot;: [
+    32,
+    32
+  ],
+  &quot;alpha_policy&quot;: &quot;opaque_ground&quot;,
+  &quot;direction&quot;: &quot;right_unless_static_ground&quot;,
+  &quot;scale&quot;: &quot;1x; nearest; no fractional entity scale&quot;,
+  &quot;integration_target&quot;: &quot;NEW scripts/world/vigrid_map.gd:_init/_layout; MapLayer.set_ground/_paint_edges&quot;,
+  &quot;draw_layer&quot;: &quot;MapLayer ground, below actors&quot;,
+  &quot;rotation_contract&quot;: &quot;right-facing; rotate abstract directional FX only; mirror body and sockets together&quot;,
+  &quot;collision_contract&quot;: &quot;texture never defines collider; controller shares geometry with visual clip&quot;,
+  &quot;runtime_sha256_must_remain&quot;: &quot;2d1f7e6bff2849a208e9f0abc52aeaa7a48ebcd0bf3f3128615ff9434e5727a0&quot;
+}</pre></details><details><summary>K5 / reuse_unchanged / assets/sprites/ground/vigrid/cracked_lava.png</summary><pre>{
+  &quot;id&quot;: &quot;cracked_lava&quot;,
+  &quot;task&quot;: &quot;K5&quot;,
+  &quot;path&quot;: &quot;assets/sprites/ground/vigrid/cracked_lava.png&quot;,
+  &quot;representation&quot;: &quot;existing_file&quot;,
+  &quot;decision&quot;: &quot;reuse_unchanged&quot;,
+  &quot;production_status&quot;: &quot;already_exists_do_not_reproduce&quot;,
+  &quot;role&quot;: &quot;existing base terrain; decorative lava is not a damage collider&quot;,
+  &quot;sha256&quot;: &quot;2782e6bacb893eaf12f9b17890585008e2dafeefe9ccf571d548ad77c0f39507&quot;,
+  &quot;integration_status&quot;: &quot;K_not_implemented&quot;,
+  &quot;integration_dependencies&quot;: [
+    &quot;level_registration&quot;,
+    &quot;K5&quot;
+  ],
+  &quot;sheet_size&quot;: [
+    64,
+    64
+  ],
+  &quot;frame_size&quot;: [
+    64,
+    64
+  ],
+  &quot;frames&quot;: 1,
+  &quot;fps&quot;: 0,
+  &quot;anchor_px&quot;: [
+    32,
+    32
+  ],
+  &quot;alpha_policy&quot;: &quot;opaque_ground&quot;,
+  &quot;direction&quot;: &quot;right_unless_static_ground&quot;,
+  &quot;scale&quot;: &quot;1x; nearest; no fractional entity scale&quot;,
+  &quot;integration_target&quot;: &quot;NEW scripts/world/vigrid_map.gd:_init/_layout; MapLayer.set_ground/_paint_edges&quot;,
+  &quot;draw_layer&quot;: &quot;MapLayer ground, below actors&quot;,
+  &quot;rotation_contract&quot;: &quot;right-facing; rotate abstract directional FX only; mirror body and sockets together&quot;,
+  &quot;collision_contract&quot;: &quot;texture never defines collider; controller shares geometry with visual clip&quot;,
+  &quot;runtime_sha256_must_remain&quot;: &quot;2782e6bacb893eaf12f9b17890585008e2dafeefe9ccf571d548ad77c0f39507&quot;
+}</pre></details><details><summary>K5 / reuse_unchanged / assets/sprites/ground/vigrid/burnt_grass.png</summary><pre>{
+  &quot;id&quot;: &quot;burnt_grass&quot;,
+  &quot;task&quot;: &quot;K5&quot;,
+  &quot;path&quot;: &quot;assets/sprites/ground/vigrid/burnt_grass.png&quot;,
+  &quot;representation&quot;: &quot;existing_file&quot;,
+  &quot;decision&quot;: &quot;reuse_unchanged&quot;,
+  &quot;production_status&quot;: &quot;already_exists_do_not_reproduce&quot;,
+  &quot;role&quot;: &quot;existing base terrain; decorative lava is not a damage collider&quot;,
+  &quot;sha256&quot;: &quot;6f2333fe144ee0eff736c837ec2ae5ba546fa93e786c0bb009d0dd2392559999&quot;,
+  &quot;integration_status&quot;: &quot;K_not_implemented&quot;,
+  &quot;integration_dependencies&quot;: [
+    &quot;level_registration&quot;,
+    &quot;K5&quot;
+  ],
+  &quot;sheet_size&quot;: [
+    64,
+    64
+  ],
+  &quot;frame_size&quot;: [
+    64,
+    64
+  ],
+  &quot;frames&quot;: 1,
+  &quot;fps&quot;: 0,
+  &quot;anchor_px&quot;: [
+    32,
+    32
+  ],
+  &quot;alpha_policy&quot;: &quot;opaque_ground&quot;,
+  &quot;direction&quot;: &quot;right_unless_static_ground&quot;,
+  &quot;scale&quot;: &quot;1x; nearest; no fractional entity scale&quot;,
+  &quot;integration_target&quot;: &quot;NEW scripts/world/vigrid_map.gd:_init/_layout; MapLayer.set_ground/_paint_edges&quot;,
+  &quot;draw_layer&quot;: &quot;MapLayer ground, below actors&quot;,
+  &quot;rotation_contract&quot;: &quot;right-facing; rotate abstract directional FX only; mirror body and sockets together&quot;,
+  &quot;collision_contract&quot;: &quot;texture never defines collider; controller shares geometry with visual clip&quot;,
+  &quot;runtime_sha256_must_remain&quot;: &quot;6f2333fe144ee0eff736c837ec2ae5ba546fa93e786c0bb009d0dd2392559999&quot;
+}</pre></details><details><summary>K5 / reuse_unchanged / assets/sprites/props/vigrid/bifrost_fragment.png</summary><pre>{
+  &quot;id&quot;: &quot;bifrost_fragment&quot;,
+  &quot;task&quot;: &quot;K5&quot;,
+  &quot;path&quot;: &quot;assets/sprites/props/vigrid/bifrost_fragment.png&quot;,
+  &quot;representation&quot;: &quot;existing_file&quot;,
+  &quot;decision&quot;: &quot;reuse_unchanged&quot;,
+  &quot;production_status&quot;: &quot;already_exists_do_not_reproduce&quot;,
+  &quot;role&quot;: &quot;existing static landmark dressing&quot;,
+  &quot;sha256&quot;: &quot;a3948b492c7bc55c0d6333c6804593c50eecae91cc8527d9593e8d5baaf1451d&quot;,
+  &quot;integration_status&quot;: &quot;K_not_implemented&quot;,
+  &quot;integration_dependencies&quot;: [
+    &quot;level_registration&quot;,
+    &quot;K5&quot;
+  ],
+  &quot;sheet_size&quot;: [
+    96,
+    64
+  ],
+  &quot;frame_size&quot;: [
+    96,
+    64
+  ],
+  &quot;frames&quot;: 1,
+  &quot;fps&quot;: 0,
+  &quot;anchor_px&quot;: [
+    48,
+    64
+  ],
+  &quot;alpha_policy&quot;: &quot;binary&quot;,
+  &quot;direction&quot;: &quot;right_unless_static_ground&quot;,
+  &quot;scale&quot;: &quot;1x; nearest; no fractional entity scale&quot;,
+  &quot;anchor_convention&quot;: &quot;MapLayer.prop uses canvas bottom, not last nontransparent pixel&quot;,
+  &quot;integration_target&quot;: &quot;NEW scripts/world/vigrid_map.gd:_layout; MapLayer.prop/decal; custom horizon renderer for distant_battle&quot;,
+  &quot;draw_layer&quot;: &quot;MapLayer dressing; horizon outside walkable bounds&quot;,
+  &quot;rotation_contract&quot;: &quot;right-facing; rotate abstract directional FX only; mirror body and sockets together&quot;,
+  &quot;collision_contract&quot;: &quot;texture never defines collider; controller shares geometry with visual clip&quot;,
+  &quot;runtime_sha256_must_remain&quot;: &quot;a3948b492c7bc55c0d6333c6804593c50eecae91cc8527d9593e8d5baaf1451d&quot;
+}</pre></details><details><summary>K5 / reuse_unchanged / assets/sprites/props/vigrid/broken_weapons.png</summary><pre>{
+  &quot;id&quot;: &quot;broken_weapons&quot;,
+  &quot;task&quot;: &quot;K5&quot;,
+  &quot;path&quot;: &quot;assets/sprites/props/vigrid/broken_weapons.png&quot;,
+  &quot;representation&quot;: &quot;existing_file&quot;,
+  &quot;decision&quot;: &quot;reuse_unchanged&quot;,
+  &quot;production_status&quot;: &quot;already_exists_do_not_reproduce&quot;,
+  &quot;role&quot;: &quot;existing static landmark dressing&quot;,
+  &quot;sha256&quot;: &quot;79093911f77127c3554d1216806de76ff2101cf62153f5bc06f504d40b371667&quot;,
+  &quot;integration_status&quot;: &quot;K_not_implemented&quot;,
+  &quot;integration_dependencies&quot;: [
+    &quot;level_registration&quot;,
+    &quot;K5&quot;
+  ],
+  &quot;sheet_size&quot;: [
+    64,
+    64
+  ],
+  &quot;frame_size&quot;: [
+    64,
+    64
+  ],
+  &quot;frames&quot;: 1,
+  &quot;fps&quot;: 0,
+  &quot;anchor_px&quot;: [
+    32,
+    64
+  ],
+  &quot;alpha_policy&quot;: &quot;binary&quot;,
+  &quot;direction&quot;: &quot;right_unless_static_ground&quot;,
+  &quot;scale&quot;: &quot;1x; nearest; no fractional entity scale&quot;,
+  &quot;anchor_convention&quot;: &quot;MapLayer.prop uses canvas bottom, not last nontransparent pixel&quot;,
+  &quot;integration_target&quot;: &quot;NEW scripts/world/vigrid_map.gd:_layout; MapLayer.prop/decal; custom horizon renderer for distant_battle&quot;,
+  &quot;draw_layer&quot;: &quot;MapLayer dressing; horizon outside walkable bounds&quot;,
+  &quot;rotation_contract&quot;: &quot;right-facing; rotate abstract directional FX only; mirror body and sockets together&quot;,
+  &quot;collision_contract&quot;: &quot;texture never defines collider; controller shares geometry with visual clip&quot;,
+  &quot;runtime_sha256_must_remain&quot;: &quot;79093911f77127c3554d1216806de76ff2101cf62153f5bc06f504d40b371667&quot;
+}</pre></details><details><summary>K5 / reuse_unchanged / assets/sprites/props/vigrid/burning_wreckage.png</summary><pre>{
+  &quot;id&quot;: &quot;burning_wreckage&quot;,
+  &quot;task&quot;: &quot;K5&quot;,
+  &quot;path&quot;: &quot;assets/sprites/props/vigrid/burning_wreckage.png&quot;,
+  &quot;representation&quot;: &quot;existing_file&quot;,
+  &quot;decision&quot;: &quot;reuse_unchanged&quot;,
+  &quot;production_status&quot;: &quot;already_exists_do_not_reproduce&quot;,
+  &quot;role&quot;: &quot;existing static landmark dressing&quot;,
+  &quot;sha256&quot;: &quot;0db9ddab498cdfda609eef628c1128fd985aae113fb2315698c0cf1a4b21dffc&quot;,
+  &quot;integration_status&quot;: &quot;K_not_implemented&quot;,
+  &quot;integration_dependencies&quot;: [
+    &quot;level_registration&quot;,
+    &quot;K5&quot;
+  ],
+  &quot;sheet_size&quot;: [
+    96,
+    96
+  ],
+  &quot;frame_size&quot;: [
+    96,
+    96
+  ],
+  &quot;frames&quot;: 1,
+  &quot;fps&quot;: 0,
+  &quot;anchor_px&quot;: [
+    48,
+    96
+  ],
+  &quot;alpha_policy&quot;: &quot;binary&quot;,
+  &quot;direction&quot;: &quot;right_unless_static_ground&quot;,
+  &quot;scale&quot;: &quot;1x; nearest; no fractional entity scale&quot;,
+  &quot;anchor_convention&quot;: &quot;MapLayer.prop uses canvas bottom, not last nontransparent pixel&quot;,
+  &quot;integration_target&quot;: &quot;NEW scripts/world/vigrid_map.gd:_layout; MapLayer.prop/decal; custom horizon renderer for distant_battle&quot;,
+  &quot;draw_layer&quot;: &quot;MapLayer dressing; horizon outside walkable bounds&quot;,
+  &quot;rotation_contract&quot;: &quot;right-facing; rotate abstract directional FX only; mirror body and sockets together&quot;,
+  &quot;collision_contract&quot;: &quot;texture never defines collider; controller shares geometry with visual clip&quot;,
+  &quot;runtime_sha256_must_remain&quot;: &quot;0db9ddab498cdfda609eef628c1128fd985aae113fb2315698c0cf1a4b21dffc&quot;
+}</pre></details><details><summary>K5 / reuse_unchanged / assets/sprites/props/vigrid/fallen_shield.png</summary><pre>{
+  &quot;id&quot;: &quot;fallen_shield&quot;,
+  &quot;task&quot;: &quot;K5&quot;,
+  &quot;path&quot;: &quot;assets/sprites/props/vigrid/fallen_shield.png&quot;,
+  &quot;representation&quot;: &quot;existing_file&quot;,
+  &quot;decision&quot;: &quot;reuse_unchanged&quot;,
+  &quot;production_status&quot;: &quot;already_exists_do_not_reproduce&quot;,
+  &quot;role&quot;: &quot;existing static landmark dressing&quot;,
+  &quot;sha256&quot;: &quot;82f3244549a336404a11cbb2399cf064febafd9b513e2936ac92c768e5076f5d&quot;,
+  &quot;integration_status&quot;: &quot;K_not_implemented&quot;,
+  &quot;integration_dependencies&quot;: [
+    &quot;level_registration&quot;,
+    &quot;K5&quot;
+  ],
+  &quot;sheet_size&quot;: [
+    48,
+    48
+  ],
+  &quot;frame_size&quot;: [
+    48,
+    48
+  ],
+  &quot;frames&quot;: 1,
+  &quot;fps&quot;: 0,
+  &quot;anchor_px&quot;: [
+    24,
+    48
+  ],
+  &quot;alpha_policy&quot;: &quot;binary&quot;,
+  &quot;direction&quot;: &quot;right_unless_static_ground&quot;,
+  &quot;scale&quot;: &quot;1x; nearest; no fractional entity scale&quot;,
+  &quot;anchor_convention&quot;: &quot;MapLayer.prop uses canvas bottom, not last nontransparent pixel&quot;,
+  &quot;integration_target&quot;: &quot;NEW scripts/world/vigrid_map.gd:_layout; MapLayer.prop/decal; custom horizon renderer for distant_battle&quot;,
+  &quot;draw_layer&quot;: &quot;MapLayer dressing; horizon outside walkable bounds&quot;,
+  &quot;rotation_contract&quot;: &quot;right-facing; rotate abstract directional FX only; mirror body and sockets together&quot;,
+  &quot;collision_contract&quot;: &quot;texture never defines collider; controller shares geometry with visual clip&quot;,
+  &quot;runtime_sha256_must_remain&quot;: &quot;82f3244549a336404a11cbb2399cf064febafd9b513e2936ac92c768e5076f5d&quot;
+}</pre></details><details><summary>K5 / reuse_unchanged / assets/sprites/props/vigrid/giant_remains.png</summary><pre>{
+  &quot;id&quot;: &quot;giant_remains&quot;,
+  &quot;task&quot;: &quot;K5&quot;,
+  &quot;path&quot;: &quot;assets/sprites/props/vigrid/giant_remains.png&quot;,
+  &quot;representation&quot;: &quot;existing_file&quot;,
+  &quot;decision&quot;: &quot;reuse_unchanged&quot;,
+  &quot;production_status&quot;: &quot;already_exists_do_not_reproduce&quot;,
+  &quot;role&quot;: &quot;existing static landmark dressing&quot;,
+  &quot;sha256&quot;: &quot;6ae25e977fcbd8b4b4310ce4550e0024cc71c1728c2b9063e85c0e8b7dcb6998&quot;,
+  &quot;integration_status&quot;: &quot;K_not_implemented&quot;,
+  &quot;integration_dependencies&quot;: [
+    &quot;level_registration&quot;,
+    &quot;K5&quot;
+  ],
+  &quot;sheet_size&quot;: [
+    96,
+    64
+  ],
+  &quot;frame_size&quot;: [
+    96,
+    64
+  ],
+  &quot;frames&quot;: 1,
+  &quot;fps&quot;: 0,
+  &quot;anchor_px&quot;: [
+    48,
+    64
+  ],
+  &quot;alpha_policy&quot;: &quot;binary&quot;,
+  &quot;direction&quot;: &quot;right_unless_static_ground&quot;,
+  &quot;scale&quot;: &quot;1x; nearest; no fractional entity scale&quot;,
+  &quot;anchor_convention&quot;: &quot;MapLayer.prop uses canvas bottom, not last nontransparent pixel&quot;,
+  &quot;integration_target&quot;: &quot;NEW scripts/world/vigrid_map.gd:_layout; MapLayer.prop/decal; custom horizon renderer for distant_battle&quot;,
+  &quot;draw_layer&quot;: &quot;MapLayer dressing; horizon outside walkable bounds&quot;,
+  &quot;rotation_contract&quot;: &quot;right-facing; rotate abstract directional FX only; mirror body and sockets together&quot;,
+  &quot;collision_contract&quot;: &quot;texture never defines collider; controller shares geometry with visual clip&quot;,
+  &quot;runtime_sha256_must_remain&quot;: &quot;6ae25e977fcbd8b4b4310ce4550e0024cc71c1728c2b9063e85c0e8b7dcb6998&quot;
+}</pre></details><details><summary>K0 / reuse_unchanged / assets/sprites/characters/swordsman.png</summary><pre>{
+  &quot;id&quot;: &quot;swordsman&quot;,
+  &quot;task&quot;: &quot;K0&quot;,
+  &quot;path&quot;: &quot;assets/sprites/characters/swordsman.png&quot;,
+  &quot;representation&quot;: &quot;existing_file&quot;,
+  &quot;decision&quot;: &quot;reuse_unchanged&quot;,
+  &quot;production_status&quot;: &quot;already_exists_do_not_reproduce&quot;,
+  &quot;role&quot;: &quot;scale/style reference only; no K production&quot;,
+  &quot;sha256&quot;: &quot;93ffceadeceda21ba869017db71412302a79a529068e4c2580d6ef798fff11b9&quot;,
+  &quot;integration_status&quot;: &quot;K_not_implemented&quot;,
+  &quot;integration_dependencies&quot;: [
+    &quot;level_registration&quot;,
+    &quot;K0&quot;
+  ],
+  &quot;sheet_size&quot;: [
+    64,
+    64
+  ],
+  &quot;frame_size&quot;: [
+    64,
+    64
+  ],
+  &quot;frames&quot;: 1,
+  &quot;fps&quot;: 0,
+  &quot;anchor_px&quot;: [
+    32,
+    60
+  ],
+  &quot;alpha_policy&quot;: &quot;binary&quot;,
+  &quot;direction&quot;: &quot;right_unless_static_ground&quot;,
+  &quot;scale&quot;: &quot;1x; nearest; no fractional entity scale&quot;,
+  &quot;integration_target&quot;: &quot;no production integration; K0 reference only&quot;,
+  &quot;draw_layer&quot;: &quot;reference only&quot;,
+  &quot;rotation_contract&quot;: &quot;right-facing; rotate abstract directional FX only; mirror body and sockets together&quot;,
+  &quot;collision_contract&quot;: &quot;texture never defines collider; controller shares geometry with visual clip&quot;,
+  &quot;runtime_sha256_must_remain&quot;: &quot;93ffceadeceda21ba869017db71412302a79a529068e4c2580d6ef798fff11b9&quot;
+}</pre></details><details><summary>K0 / reuse_unchanged / assets/sprites/characters/gunslinger.png</summary><pre>{
+  &quot;id&quot;: &quot;gunslinger&quot;,
+  &quot;task&quot;: &quot;K0&quot;,
+  &quot;path&quot;: &quot;assets/sprites/characters/gunslinger.png&quot;,
+  &quot;representation&quot;: &quot;existing_file&quot;,
+  &quot;decision&quot;: &quot;reuse_unchanged&quot;,
+  &quot;production_status&quot;: &quot;already_exists_do_not_reproduce&quot;,
+  &quot;role&quot;: &quot;scale/style reference only; no K production&quot;,
+  &quot;sha256&quot;: &quot;754134580682ef324d1b7e90fd2849807fe4622bc702a61bcd305a449fef9f52&quot;,
+  &quot;integration_status&quot;: &quot;K_not_implemented&quot;,
+  &quot;integration_dependencies&quot;: [
+    &quot;level_registration&quot;,
+    &quot;K0&quot;
+  ],
+  &quot;sheet_size&quot;: [
+    64,
+    64
+  ],
+  &quot;frame_size&quot;: [
+    64,
+    64
+  ],
+  &quot;frames&quot;: 1,
+  &quot;fps&quot;: 0,
+  &quot;anchor_px&quot;: [
+    32,
+    60
+  ],
+  &quot;alpha_policy&quot;: &quot;binary&quot;,
+  &quot;direction&quot;: &quot;right_unless_static_ground&quot;,
+  &quot;scale&quot;: &quot;1x; nearest; no fractional entity scale&quot;,
+  &quot;integration_target&quot;: &quot;no production integration; K0 reference only&quot;,
+  &quot;draw_layer&quot;: &quot;reference only&quot;,
+  &quot;rotation_contract&quot;: &quot;right-facing; rotate abstract directional FX only; mirror body and sockets together&quot;,
+  &quot;collision_contract&quot;: &quot;texture never defines collider; controller shares geometry with visual clip&quot;,
+  &quot;runtime_sha256_must_remain&quot;: &quot;754134580682ef324d1b7e90fd2849807fe4622bc702a61bcd305a449fef9f52&quot;
+}</pre></details><details><summary>K0 / reuse_unchanged / assets/sprites/characters/assassin.png</summary><pre>{
+  &quot;id&quot;: &quot;assassin&quot;,
+  &quot;task&quot;: &quot;K0&quot;,
+  &quot;path&quot;: &quot;assets/sprites/characters/assassin.png&quot;,
+  &quot;representation&quot;: &quot;existing_file&quot;,
+  &quot;decision&quot;: &quot;reuse_unchanged&quot;,
+  &quot;production_status&quot;: &quot;already_exists_do_not_reproduce&quot;,
+  &quot;role&quot;: &quot;scale/style reference only; no K production&quot;,
+  &quot;sha256&quot;: &quot;36f61e50bcfb173863e5abc69afc70ef10ae3d17bb6bf7bab8a31d42fcc2a772&quot;,
+  &quot;integration_status&quot;: &quot;K_not_implemented&quot;,
+  &quot;integration_dependencies&quot;: [
+    &quot;level_registration&quot;,
+    &quot;K0&quot;
+  ],
+  &quot;sheet_size&quot;: [
+    64,
+    64
+  ],
+  &quot;frame_size&quot;: [
+    64,
+    64
+  ],
+  &quot;frames&quot;: 1,
+  &quot;fps&quot;: 0,
+  &quot;anchor_px&quot;: [
+    32,
+    60
+  ],
+  &quot;alpha_policy&quot;: &quot;binary&quot;,
+  &quot;direction&quot;: &quot;right_unless_static_ground&quot;,
+  &quot;scale&quot;: &quot;1x; nearest; no fractional entity scale&quot;,
+  &quot;integration_target&quot;: &quot;no production integration; K0 reference only&quot;,
+  &quot;draw_layer&quot;: &quot;reference only&quot;,
+  &quot;rotation_contract&quot;: &quot;right-facing; rotate abstract directional FX only; mirror body and sockets together&quot;,
+  &quot;collision_contract&quot;: &quot;texture never defines collider; controller shares geometry with visual clip&quot;,
+  &quot;runtime_sha256_must_remain&quot;: &quot;36f61e50bcfb173863e5abc69afc70ef10ae3d17bb6bf7bab8a31d42fcc2a772&quot;
+}</pre></details><details><summary>K0 / reuse_unchanged / assets/sprites/characters/mage.png</summary><pre>{
+  &quot;id&quot;: &quot;mage&quot;,
+  &quot;task&quot;: &quot;K0&quot;,
+  &quot;path&quot;: &quot;assets/sprites/characters/mage.png&quot;,
+  &quot;representation&quot;: &quot;existing_file&quot;,
+  &quot;decision&quot;: &quot;reuse_unchanged&quot;,
+  &quot;production_status&quot;: &quot;already_exists_do_not_reproduce&quot;,
+  &quot;role&quot;: &quot;scale/style reference only; no K production&quot;,
+  &quot;sha256&quot;: &quot;3cbb5f8a32b7cb79bdfa52f38c7dbce3c487d0d9b50f25470967f904cf2ed90b&quot;,
+  &quot;integration_status&quot;: &quot;K_not_implemented&quot;,
+  &quot;integration_dependencies&quot;: [
+    &quot;level_registration&quot;,
+    &quot;K0&quot;
+  ],
+  &quot;sheet_size&quot;: [
+    64,
+    64
+  ],
+  &quot;frame_size&quot;: [
+    64,
+    64
+  ],
+  &quot;frames&quot;: 1,
+  &quot;fps&quot;: 0,
+  &quot;anchor_px&quot;: [
+    32,
+    60
+  ],
+  &quot;alpha_policy&quot;: &quot;binary&quot;,
+  &quot;direction&quot;: &quot;right_unless_static_ground&quot;,
+  &quot;scale&quot;: &quot;1x; nearest; no fractional entity scale&quot;,
+  &quot;integration_target&quot;: &quot;no production integration; K0 reference only&quot;,
+  &quot;draw_layer&quot;: &quot;reference only&quot;,
+  &quot;rotation_contract&quot;: &quot;right-facing; rotate abstract directional FX only; mirror body and sockets together&quot;,
+  &quot;collision_contract&quot;: &quot;texture never defines collider; controller shares geometry with visual clip&quot;,
+  &quot;runtime_sha256_must_remain&quot;: &quot;3cbb5f8a32b7cb79bdfa52f38c7dbce3c487d0d9b50f25470967f904cf2ed90b&quot;
+}</pre></details><details><summary>K1 / reuse_unchanged / assets/sprites/effects/bosses/nidhogg_poison_breath.png</summary><pre>{
+  &quot;id&quot;: &quot;nidhogg_poison_breath&quot;,
+  &quot;task&quot;: &quot;K1&quot;,
+  &quot;path&quot;: &quot;assets/sprites/effects/bosses/nidhogg_poison_breath.png&quot;,
+  &quot;representation&quot;: &quot;existing_file&quot;,
+  &quot;decision&quot;: &quot;reuse_unchanged&quot;,
+  &quot;production_status&quot;: &quot;already_exists_do_not_reproduce&quot;,
+  &quot;role&quot;: &quot;poison breath texture reused; new serpent cone collider/clip required&quot;,
+  &quot;sha256&quot;: &quot;99d291b294b5a8412bcf449586d1bbf585bbe5ffed37c458185d24fa66f473b7&quot;,
+  &quot;integration_status&quot;: &quot;K_not_implemented&quot;,
+  &quot;integration_dependencies&quot;: [
+    &quot;level_registration&quot;,
+    &quot;K1&quot;
+  ],
+  &quot;sheet_size&quot;: [
+    384,
+    64
+  ],
+  &quot;frame_size&quot;: [
+    96,
+    64
+  ],
+  &quot;frames&quot;: 4,
+  &quot;fps&quot;: 16,
+  &quot;anchor_px&quot;: [
+    4,
+    32
+  ],
+  &quot;alpha_policy&quot;: &quot;soft_effect&quot;,
+  &quot;direction&quot;: &quot;right_unless_static_ground&quot;,
+  &quot;scale&quot;: &quot;1x; nearest; no fractional entity scale&quot;,
+  &quot;integration_target&quot;: &quot;NEW scripts/bosses/jormungandr.gd:poison/contact/aid effect dispatcher&quot;,
+  &quot;draw_layer&quot;: &quot;under actors for ground hazards; warnings and safe outlines above visual texture&quot;,
+  &quot;rotation_contract&quot;: &quot;right-facing; rotate abstract directional FX only; mirror body and sockets together&quot;,
+  &quot;collision_contract&quot;: &quot;texture never defines collider; controller shares geometry with visual clip&quot;,
+  &quot;runtime_sha256_must_remain&quot;: &quot;99d291b294b5a8412bcf449586d1bbf585bbe5ffed37c458185d24fa66f473b7&quot;
+}</pre></details><details><summary>K1 / reuse_unchanged / assets/sprites/effects/poison_pool.png</summary><pre>{
+  &quot;id&quot;: &quot;poison_pool&quot;,
+  &quot;task&quot;: &quot;K1&quot;,
+  &quot;path&quot;: &quot;assets/sprites/effects/poison_pool.png&quot;,
+  &quot;representation&quot;: &quot;existing_file&quot;,
+  &quot;decision&quot;: &quot;reuse_unchanged&quot;,
+  &quot;production_status&quot;: &quot;already_exists_do_not_reproduce&quot;,
+  &quot;role&quot;: &quot;poison area texture only; do not copy fixed-radius PoisonPool behavior&quot;,
+  &quot;sha256&quot;: &quot;0284bb2e78321311e43248046a820d43920193764e68f64d662d25cd1516374f&quot;,
+  &quot;integration_status&quot;: &quot;K_not_implemented&quot;,
+  &quot;integration_dependencies&quot;: [
+    &quot;level_registration&quot;,
+    &quot;K1&quot;
+  ],
+  &quot;sheet_size&quot;: [
+    384,
+    48
+  ],
+  &quot;frame_size&quot;: [
+    48,
+    48
+  ],
+  &quot;frames&quot;: 8,
+  &quot;fps&quot;: 8,
+  &quot;anchor_px&quot;: [
+    24,
+    24
+  ],
+  &quot;alpha_policy&quot;: &quot;soft_effect&quot;,
+  &quot;direction&quot;: &quot;right_unless_static_ground&quot;,
+  &quot;scale&quot;: &quot;1x; nearest; no fractional entity scale&quot;,
+  &quot;integration_target&quot;: &quot;NEW scripts/bosses/jormungandr.gd:poison/contact/aid effect dispatcher&quot;,
+  &quot;draw_layer&quot;: &quot;under actors for ground hazards; warnings and safe outlines above visual texture&quot;,
+  &quot;rotation_contract&quot;: &quot;right-facing; rotate abstract directional FX only; mirror body and sockets together&quot;,
+  &quot;collision_contract&quot;: &quot;texture never defines collider; controller shares geometry with visual clip&quot;,
+  &quot;runtime_sha256_must_remain&quot;: &quot;0284bb2e78321311e43248046a820d43920193764e68f64d662d25cd1516374f&quot;
+}</pre></details><details><summary>K1 / reuse_unchanged / assets/sprites/effects/hit_bite.png</summary><pre>{
+  &quot;id&quot;: &quot;hit_bite&quot;,
+  &quot;task&quot;: &quot;K1&quot;,
+  &quot;path&quot;: &quot;assets/sprites/effects/hit_bite.png&quot;,
+  &quot;representation&quot;: &quot;existing_file&quot;,
+  &quot;decision&quot;: &quot;reuse_unchanged&quot;,
+  &quot;production_status&quot;: &quot;already_exists_do_not_reproduce&quot;,
+  &quot;role&quot;: &quot;body impact contact flash, generic existing effect&quot;,
+  &quot;sha256&quot;: &quot;1e0e0b18432621b5d502d6936867c51cd5b306683651c3cd097a86e28c6feadc&quot;,
+  &quot;integration_status&quot;: &quot;K_not_implemented&quot;,
+  &quot;integration_dependencies&quot;: [
+    &quot;level_registration&quot;,
+    &quot;K1&quot;
+  ],
+  &quot;sheet_size&quot;: [
+    256,
+    64
+  ],
+  &quot;frame_size&quot;: [
+    64,
+    64
+  ],
+  &quot;frames&quot;: 4,
+  &quot;fps&quot;: 16,
+  &quot;anchor_px&quot;: [
+    32,
+    32
+  ],
+  &quot;alpha_policy&quot;: &quot;soft_effect&quot;,
+  &quot;direction&quot;: &quot;right_unless_static_ground&quot;,
+  &quot;scale&quot;: &quot;1x; nearest; no fractional entity scale&quot;,
+  &quot;integration_target&quot;: &quot;NEW scripts/bosses/jormungandr.gd:poison/contact/aid effect dispatcher&quot;,
+  &quot;draw_layer&quot;: &quot;under actors for ground hazards; warnings and safe outlines above visual texture&quot;,
+  &quot;rotation_contract&quot;: &quot;right-facing; rotate abstract directional FX only; mirror body and sockets together&quot;,
+  &quot;collision_contract&quot;: &quot;texture never defines collider; controller shares geometry with visual clip&quot;,
+  &quot;runtime_sha256_must_remain&quot;: &quot;1e0e0b18432621b5d502d6936867c51cd5b306683651c3cd097a86e28c6feadc&quot;
+}</pre></details><details><summary>K1 / reuse_unchanged / assets/sprites/effects/gods/thor_hammer.png</summary><pre>{
+  &quot;id&quot;: &quot;thor_hammer&quot;,
+  &quot;task&quot;: &quot;K1&quot;,
+  &quot;path&quot;: &quot;assets/sprites/effects/gods/thor_hammer.png&quot;,
+  &quot;representation&quot;: &quot;existing_file&quot;,
+  &quot;decision&quot;: &quot;reuse_unchanged&quot;,
+  &quot;production_status&quot;: &quot;already_exists_do_not_reproduce&quot;,
+  &quot;role&quot;: &quot;optional existing aid symbol; lightning uses LightningFx, no new Thor body&quot;,
+  &quot;sha256&quot;: &quot;4a143fdceac2e85c1303a42b0212b6eb69c5f2b2e4400cd55d6931dfb165d950&quot;,
+  &quot;integration_status&quot;: &quot;K_not_implemented&quot;,
+  &quot;integration_dependencies&quot;: [
+    &quot;level_registration&quot;,
+    &quot;K1&quot;
+  ],
+  &quot;sheet_size&quot;: [
+    32,
+    32
+  ],
+  &quot;frame_size&quot;: [
+    32,
+    32
+  ],
+  &quot;frames&quot;: 1,
+  &quot;fps&quot;: 0,
+  &quot;anchor_px&quot;: [
+    16,
+    16
+  ],
+  &quot;alpha_policy&quot;: &quot;binary&quot;,
+  &quot;direction&quot;: &quot;right_unless_static_ground&quot;,
+  &quot;scale&quot;: &quot;1x; nearest; no fractional entity scale&quot;,
+  &quot;integration_target&quot;: &quot;NEW scripts/bosses/jormungandr.gd:poison/contact/aid effect dispatcher&quot;,
+  &quot;draw_layer&quot;: &quot;under actors for ground hazards; warnings and safe outlines above visual texture&quot;,
+  &quot;rotation_contract&quot;: &quot;right-facing; rotate abstract directional FX only; mirror body and sockets together&quot;,
+  &quot;collision_contract&quot;: &quot;texture never defines collider; controller shares geometry with visual clip&quot;,
+  &quot;runtime_sha256_must_remain&quot;: &quot;4a143fdceac2e85c1303a42b0212b6eb69c5f2b2e4400cd55d6931dfb165d950&quot;
+}</pre></details><details><summary>K1 / reuse_unchanged / assets/sprites/effects/gods/thor_cloud.png</summary><pre>{
+  &quot;id&quot;: &quot;thor_cloud&quot;,
+  &quot;task&quot;: &quot;K1&quot;,
+  &quot;path&quot;: &quot;assets/sprites/effects/gods/thor_cloud.png&quot;,
+  &quot;representation&quot;: &quot;existing_file&quot;,
+  &quot;decision&quot;: &quot;reuse_unchanged&quot;,
+  &quot;production_status&quot;: &quot;already_exists_do_not_reproduce&quot;,
+  &quot;role&quot;: &quot;optional existing aid cloud&quot;,
+  &quot;sha256&quot;: &quot;46771823ba537d4592ca5d5087b2afd214e7d556313c1697ef99174c05c81bb8&quot;,
+  &quot;integration_status&quot;: &quot;K_not_implemented&quot;,
+  &quot;integration_dependencies&quot;: [
+    &quot;level_registration&quot;,
+    &quot;K1&quot;
+  ],
+  &quot;sheet_size&quot;: [
+    128,
+    64
+  ],
+  &quot;frame_size&quot;: [
+    128,
+    64
+  ],
+  &quot;frames&quot;: 1,
+  &quot;fps&quot;: 0,
+  &quot;anchor_px&quot;: [
+    64,
+    32
+  ],
+  &quot;alpha_policy&quot;: &quot;soft_effect&quot;,
+  &quot;direction&quot;: &quot;right_unless_static_ground&quot;,
+  &quot;scale&quot;: &quot;1x; nearest; no fractional entity scale&quot;,
+  &quot;integration_target&quot;: &quot;NEW scripts/bosses/jormungandr.gd:poison/contact/aid effect dispatcher&quot;,
+  &quot;draw_layer&quot;: &quot;under actors for ground hazards; warnings and safe outlines above visual texture&quot;,
+  &quot;rotation_contract&quot;: &quot;right-facing; rotate abstract directional FX only; mirror body and sockets together&quot;,
+  &quot;collision_contract&quot;: &quot;texture never defines collider; controller shares geometry with visual clip&quot;,
+  &quot;runtime_sha256_must_remain&quot;: &quot;46771823ba537d4592ca5d5087b2afd214e7d556313c1697ef99174c05c81bb8&quot;
+}</pre></details><details><summary>K2 / reuse_unchanged / assets/sprites/effects/bosses/garm_chain_break.png</summary><pre>{
+  &quot;id&quot;: &quot;garm_chain_break&quot;,
+  &quot;task&quot;: &quot;K2&quot;,
+  &quot;path&quot;: &quot;assets/sprites/effects/bosses/garm_chain_break.png&quot;,
+  &quot;representation&quot;: &quot;existing_file&quot;,
+  &quot;decision&quot;: &quot;reuse_unchanged&quot;,
+  &quot;production_status&quot;: &quot;already_exists_do_not_reproduce&quot;,
+  &quot;role&quot;: &quot;short binding release flash; shader tint needs comparison, not new iron chain&quot;,
+  &quot;sha256&quot;: &quot;ea6db7b77f6c20d6eb278a9411e50322db86a192a7879ab651ce86ad1a734093&quot;,
+  &quot;integration_status&quot;: &quot;K_not_implemented&quot;,
+  &quot;integration_dependencies&quot;: [
+    &quot;level_registration&quot;,
+    &quot;K2&quot;
+  ],
+  &quot;sheet_size&quot;: [
+    256,
+    64
+  ],
+  &quot;frame_size&quot;: [
+    64,
+    64
+  ],
+  &quot;frames&quot;: 4,
+  &quot;fps&quot;: 16,
+  &quot;anchor_px&quot;: [
+    32,
+    32
+  ],
+  &quot;alpha_policy&quot;: &quot;soft_effect&quot;,
+  &quot;direction&quot;: &quot;right_unless_static_ground&quot;,
+  &quot;scale&quot;: &quot;1x; nearest; no fractional entity scale&quot;,
+  &quot;integration_target&quot;: &quot;NEW scripts/bosses/fenrir.gd:maw/bind dispatcher&quot;,
+  &quot;draw_layer&quot;: &quot;under actors for ground hazards; warnings and safe outlines above visual texture&quot;,
+  &quot;rotation_contract&quot;: &quot;right-facing; rotate abstract directional FX only; mirror body and sockets together&quot;,
+  &quot;collision_contract&quot;: &quot;texture never defines collider; controller shares geometry with visual clip&quot;,
+  &quot;runtime_sha256_must_remain&quot;: &quot;ea6db7b77f6c20d6eb278a9411e50322db86a192a7879ab651ce86ad1a734093&quot;
+}</pre></details><details><summary>K3 / reuse_unchanged / assets/sprites/effects/gods/loki_fire_patch.png</summary><pre>{
+  &quot;id&quot;: &quot;loki_fire_patch&quot;,
+  &quot;task&quot;: &quot;K3&quot;,
+  &quot;path&quot;: &quot;assets/sprites/effects/gods/loki_fire_patch.png&quot;,
+  &quot;representation&quot;: &quot;existing_file&quot;,
+  &quot;decision&quot;: &quot;reuse_unchanged&quot;,
+  &quot;production_status&quot;: &quot;already_exists_do_not_reproduce&quot;,
+  &quot;role&quot;: &quot;existing residual fire overlay; damage ownership belongs to Surtr hazard controller&quot;,
+  &quot;sha256&quot;: &quot;a5773032ad2af278c32e3079399b7c8c4205cb0cc8f90b12a1a784c81d3f4ec4&quot;,
+  &quot;integration_status&quot;: &quot;K_not_implemented&quot;,
+  &quot;integration_dependencies&quot;: [
+    &quot;level_registration&quot;,
+    &quot;K3&quot;
+  ],
+  &quot;sheet_size&quot;: [
+    64,
+    64
+  ],
+  &quot;frame_size&quot;: [
+    64,
+    64
+  ],
+  &quot;frames&quot;: 1,
+  &quot;fps&quot;: 0,
+  &quot;anchor_px&quot;: [
+    32,
+    32
+  ],
+  &quot;alpha_policy&quot;: &quot;soft_effect&quot;,
+  &quot;direction&quot;: &quot;right_unless_static_ground&quot;,
+  &quot;scale&quot;: &quot;1x; nearest; no fractional entity scale&quot;,
+  &quot;integration_target&quot;: &quot;NEW scripts/bosses/surtr.gd:slash/gate/firewall/grid dispatcher&quot;,
+  &quot;draw_layer&quot;: &quot;under actors for ground hazards; warnings and safe outlines above visual texture&quot;,
+  &quot;rotation_contract&quot;: &quot;right-facing; rotate abstract directional FX only; mirror body and sockets together&quot;,
+  &quot;collision_contract&quot;: &quot;texture never defines collider; controller shares geometry with visual clip&quot;,
+  &quot;runtime_sha256_must_remain&quot;: &quot;a5773032ad2af278c32e3079399b7c8c4205cb0cc8f90b12a1a784c81d3f4ec4&quot;
+}</pre></details><details><summary>K3 / reuse_unchanged / assets/sprites/effects/gods/freyr_field.png</summary><pre>{
+  &quot;id&quot;: &quot;freyr_field&quot;,
+  &quot;task&quot;: &quot;K3&quot;,
+  &quot;path&quot;: &quot;assets/sprites/effects/gods/freyr_field.png&quot;,
+  &quot;representation&quot;: &quot;existing_file&quot;,
+  &quot;decision&quot;: &quot;reuse_unchanged&quot;,
+  &quot;production_status&quot;: &quot;already_exists_do_not_reproduce&quot;,
+  &quot;role&quot;: &quot;existing healing field texture; aid healing is separate from player Freyr skill&quot;,
+  &quot;sha256&quot;: &quot;84f7853e87caaac62dde6e32270316c2991a171da9e6dcc5a5057f78b9d7eeb5&quot;,
+  &quot;integration_status&quot;: &quot;K_not_implemented&quot;,
+  &quot;integration_dependencies&quot;: [
+    &quot;level_registration&quot;,
+    &quot;K3&quot;
+  ],
+  &quot;sheet_size&quot;: [
+    128,
+    128
+  ],
+  &quot;frame_size&quot;: [
+    128,
+    128
+  ],
+  &quot;frames&quot;: 1,
+  &quot;fps&quot;: 0,
+  &quot;anchor_px&quot;: [
+    64,
+    64
+  ],
+  &quot;alpha_policy&quot;: &quot;soft_effect&quot;,
+  &quot;direction&quot;: &quot;right_unless_static_ground&quot;,
+  &quot;scale&quot;: &quot;1x; nearest; no fractional entity scale&quot;,
+  &quot;integration_target&quot;: &quot;NEW scripts/bosses/surtr.gd:slash/gate/firewall/grid dispatcher&quot;,
+  &quot;draw_layer&quot;: &quot;under actors for ground hazards; warnings and safe outlines above visual texture&quot;,
+  &quot;rotation_contract&quot;: &quot;right-facing; rotate abstract directional FX only; mirror body and sockets together&quot;,
+  &quot;collision_contract&quot;: &quot;texture never defines collider; controller shares geometry with visual clip&quot;,
+  &quot;runtime_sha256_must_remain&quot;: &quot;84f7853e87caaac62dde6e32270316c2991a171da9e6dcc5a5057f78b9d7eeb5&quot;
+}</pre></details><details><summary>K4 / reuse_unchanged / assets/sprites/effects/bosses/hrym_ice_break.png</summary><pre>{
+  &quot;id&quot;: &quot;hrym_ice_break&quot;,
+  &quot;task&quot;: &quot;K4&quot;,
+  &quot;path&quot;: &quot;assets/sprites/effects/bosses/hrym_ice_break.png&quot;,
+  &quot;representation&quot;: &quot;existing_file&quot;,
+  &quot;decision&quot;: &quot;reuse_unchanged&quot;,
+  &quot;production_status&quot;: &quot;already_exists_do_not_reproduce&quot;,
+  &quot;role&quot;: &quot;existing cold impact fragments for frost veteran&quot;,
+  &quot;sha256&quot;: &quot;1182b62d22d3838d05b02f7d833bbae76798db471d02eeb3b062ebd7764247f1&quot;,
+  &quot;integration_status&quot;: &quot;K_not_implemented&quot;,
+  &quot;integration_dependencies&quot;: [
+    &quot;level_registration&quot;,
+    &quot;K4&quot;
+  ],
+  &quot;sheet_size&quot;: [
+    256,
+    64
+  ],
+  &quot;frame_size&quot;: [
+    64,
+    64
+  ],
+  &quot;frames&quot;: 4,
+  &quot;fps&quot;: 16,
+  &quot;anchor_px&quot;: [
+    32,
+    32
+  ],
+  &quot;alpha_policy&quot;: &quot;soft_effect&quot;,
+  &quot;direction&quot;: &quot;right_unless_static_ground&quot;,
+  &quot;scale&quot;: &quot;1x; nearest; no fractional entity scale&quot;,
+  &quot;integration_target&quot;: &quot;NEW K4 death/shield dispatcher; existing generic FxLayer paths&quot;,
+  &quot;draw_layer&quot;: &quot;under actors for ground hazards; warnings and safe outlines above visual texture&quot;,
+  &quot;rotation_contract&quot;: &quot;right-facing; rotate abstract directional FX only; mirror body and sockets together&quot;,
+  &quot;collision_contract&quot;: &quot;texture never defines collider; controller shares geometry with visual clip&quot;,
+  &quot;runtime_sha256_must_remain&quot;: &quot;1182b62d22d3838d05b02f7d833bbae76798db471d02eeb3b062ebd7764247f1&quot;
+}</pre></details><details><summary>K4 / reuse_unchanged / assets/sprites/effects/death_shards.png</summary><pre>{
+  &quot;id&quot;: &quot;death_shards&quot;,
+  &quot;task&quot;: &quot;K4&quot;,
+  &quot;path&quot;: &quot;assets/sprites/effects/death_shards.png&quot;,
+  &quot;representation&quot;: &quot;existing_file&quot;,
+  &quot;decision&quot;: &quot;reuse_unchanged&quot;,
+  &quot;production_status&quot;: &quot;already_exists_do_not_reproduce&quot;,
+  &quot;role&quot;: &quot;generic ordinary enemy death feedback&quot;,
+  &quot;sha256&quot;: &quot;7e8fd5876468702299206d8f6183aafb42f90a1d25e304a10492340e33eda0e8&quot;,
+  &quot;integration_status&quot;: &quot;K_not_implemented&quot;,
+  &quot;integration_dependencies&quot;: [
+    &quot;level_registration&quot;,
+    &quot;K4&quot;
+  ],
+  &quot;sheet_size&quot;: [
+    128,
+    32
+  ],
+  &quot;frame_size&quot;: [
+    32,
+    32
+  ],
+  &quot;frames&quot;: 4,
+  &quot;fps&quot;: 16,
+  &quot;anchor_px&quot;: [
+    16,
+    16
+  ],
+  &quot;alpha_policy&quot;: &quot;soft_effect&quot;,
+  &quot;direction&quot;: &quot;right_unless_static_ground&quot;,
+  &quot;scale&quot;: &quot;1x; nearest; no fractional entity scale&quot;,
+  &quot;integration_target&quot;: &quot;NEW K4 death/shield dispatcher; existing generic FxLayer paths&quot;,
+  &quot;draw_layer&quot;: &quot;under actors for ground hazards; warnings and safe outlines above visual texture&quot;,
+  &quot;rotation_contract&quot;: &quot;right-facing; rotate abstract directional FX only; mirror body and sockets together&quot;,
+  &quot;collision_contract&quot;: &quot;texture never defines collider; controller shares geometry with visual clip&quot;,
+  &quot;runtime_sha256_must_remain&quot;: &quot;7e8fd5876468702299206d8f6183aafb42f90a1d25e304a10492340e33eda0e8&quot;
+}</pre></details><details><summary>K5 / reuse_unchanged / assets/sprites/decals/helheim/dried_blood_01.png</summary><pre>{
+  &quot;id&quot;: &quot;dried_blood_01&quot;,
+  &quot;task&quot;: &quot;K5&quot;,
+  &quot;path&quot;: &quot;assets/sprites/decals/helheim/dried_blood_01.png&quot;,
+  &quot;representation&quot;: &quot;existing_file&quot;,
+  &quot;decision&quot;: &quot;reuse_unchanged&quot;,
+  &quot;production_status&quot;: &quot;already_exists_do_not_reproduce&quot;,
+  &quot;role&quot;: &quot;existing ground-neutral battle traces, reuse path directly; no duplicate Vigrid copy&quot;,
+  &quot;sha256&quot;: &quot;f5bb4f073c70922b9a94fb41e6022c708c7572c5d80e6f91d1be21211a0e4953&quot;,
+  &quot;integration_status&quot;: &quot;K_not_implemented&quot;,
+  &quot;integration_dependencies&quot;: [
+    &quot;level_registration&quot;,
+    &quot;K5&quot;
+  ],
+  &quot;sheet_size&quot;: [
+    96,
+    64
+  ],
+  &quot;frame_size&quot;: [
+    96,
+    64
+  ],
+  &quot;frames&quot;: 1,
+  &quot;fps&quot;: 0,
+  &quot;anchor_px&quot;: [
+    48,
+    32
+  ],
+  &quot;alpha_policy&quot;: &quot;soft_effect&quot;,
+  &quot;direction&quot;: &quot;right_unless_static_ground&quot;,
+  &quot;scale&quot;: &quot;1x; nearest; no fractional entity scale&quot;,
+  &quot;integration_target&quot;: &quot;NEW scripts/world/vigrid_map.gd:_layout; MapLayer.prop/decal; custom horizon renderer for distant_battle&quot;,
+  &quot;draw_layer&quot;: &quot;MapLayer dressing; horizon outside walkable bounds&quot;,
+  &quot;rotation_contract&quot;: &quot;right-facing; rotate abstract directional FX only; mirror body and sockets together&quot;,
+  &quot;collision_contract&quot;: &quot;texture never defines collider; controller shares geometry with visual clip&quot;,
+  &quot;runtime_sha256_must_remain&quot;: &quot;f5bb4f073c70922b9a94fb41e6022c708c7572c5d80e6f91d1be21211a0e4953&quot;
+}</pre></details><details><summary>K5 / reuse_unchanged / assets/sprites/decals/helheim/dried_blood_02.png</summary><pre>{
+  &quot;id&quot;: &quot;dried_blood_02&quot;,
+  &quot;task&quot;: &quot;K5&quot;,
+  &quot;path&quot;: &quot;assets/sprites/decals/helheim/dried_blood_02.png&quot;,
+  &quot;representation&quot;: &quot;existing_file&quot;,
+  &quot;decision&quot;: &quot;reuse_unchanged&quot;,
+  &quot;production_status&quot;: &quot;already_exists_do_not_reproduce&quot;,
+  &quot;role&quot;: &quot;existing ground-neutral battle traces, reuse path directly; no duplicate Vigrid copy&quot;,
+  &quot;sha256&quot;: &quot;e39f9a6aa51faba364fb03618665ce22527516630e88c4b6edb3a5782c7ad824&quot;,
+  &quot;integration_status&quot;: &quot;K_not_implemented&quot;,
+  &quot;integration_dependencies&quot;: [
+    &quot;level_registration&quot;,
+    &quot;K5&quot;
+  ],
+  &quot;sheet_size&quot;: [
+    96,
+    64
+  ],
+  &quot;frame_size&quot;: [
+    96,
+    64
+  ],
+  &quot;frames&quot;: 1,
+  &quot;fps&quot;: 0,
+  &quot;anchor_px&quot;: [
+    48,
+    32
+  ],
+  &quot;alpha_policy&quot;: &quot;soft_effect&quot;,
+  &quot;direction&quot;: &quot;right_unless_static_ground&quot;,
+  &quot;scale&quot;: &quot;1x; nearest; no fractional entity scale&quot;,
+  &quot;integration_target&quot;: &quot;NEW scripts/world/vigrid_map.gd:_layout; MapLayer.prop/decal; custom horizon renderer for distant_battle&quot;,
+  &quot;draw_layer&quot;: &quot;MapLayer dressing; horizon outside walkable bounds&quot;,
+  &quot;rotation_contract&quot;: &quot;right-facing; rotate abstract directional FX only; mirror body and sockets together&quot;,
+  &quot;collision_contract&quot;: &quot;texture never defines collider; controller shares geometry with visual clip&quot;,
+  &quot;runtime_sha256_must_remain&quot;: &quot;e39f9a6aa51faba364fb03618665ce22527516630e88c4b6edb3a5782c7ad824&quot;
+}</pre></details><details><summary>K5 / reuse_unchanged / assets/sprites/decals/helheim/drag_mark_01.png</summary><pre>{
+  &quot;id&quot;: &quot;drag_mark_01&quot;,
+  &quot;task&quot;: &quot;K5&quot;,
+  &quot;path&quot;: &quot;assets/sprites/decals/helheim/drag_mark_01.png&quot;,
+  &quot;representation&quot;: &quot;existing_file&quot;,
+  &quot;decision&quot;: &quot;reuse_unchanged&quot;,
+  &quot;production_status&quot;: &quot;already_exists_do_not_reproduce&quot;,
+  &quot;role&quot;: &quot;existing ground-neutral battle traces, reuse path directly; no duplicate Vigrid copy&quot;,
+  &quot;sha256&quot;: &quot;8526f49f0d6af7affa6740aee52f30d9bbf747ad347dafe3ff83ea55dba804f0&quot;,
+  &quot;integration_status&quot;: &quot;K_not_implemented&quot;,
+  &quot;integration_dependencies&quot;: [
+    &quot;level_registration&quot;,
+    &quot;K5&quot;
+  ],
+  &quot;sheet_size&quot;: [
+    64,
+    128
+  ],
+  &quot;frame_size&quot;: [
+    64,
+    128
+  ],
+  &quot;frames&quot;: 1,
+  &quot;fps&quot;: 0,
+  &quot;anchor_px&quot;: [
+    32,
+    64
+  ],
+  &quot;alpha_policy&quot;: &quot;soft_effect&quot;,
+  &quot;direction&quot;: &quot;right_unless_static_ground&quot;,
+  &quot;scale&quot;: &quot;1x; nearest; no fractional entity scale&quot;,
+  &quot;integration_target&quot;: &quot;NEW scripts/world/vigrid_map.gd:_layout; MapLayer.prop/decal; custom horizon renderer for distant_battle&quot;,
+  &quot;draw_layer&quot;: &quot;MapLayer dressing; horizon outside walkable bounds&quot;,
+  &quot;rotation_contract&quot;: &quot;right-facing; rotate abstract directional FX only; mirror body and sockets together&quot;,
+  &quot;collision_contract&quot;: &quot;texture never defines collider; controller shares geometry with visual clip&quot;,
+  &quot;runtime_sha256_must_remain&quot;: &quot;8526f49f0d6af7affa6740aee52f30d9bbf747ad347dafe3ff83ea55dba804f0&quot;
+}</pre></details><details><summary>K6 / reuse_unchanged / assets/audio/music/boss.ogg</summary><pre>{
+  &quot;id&quot;: &quot;boss&quot;,
+  &quot;task&quot;: &quot;K6&quot;,
+  &quot;path&quot;: &quot;assets/audio/music/boss.ogg&quot;,
+  &quot;representation&quot;: &quot;existing_file&quot;,
+  &quot;decision&quot;: &quot;reuse_unchanged&quot;,
+  &quot;production_status&quot;: &quot;already_exists_do_not_reproduce&quot;,
+  &quot;role&quot;: &quot;existing music, subjective/current-game mix acceptance still required&quot;,
+  &quot;sha256&quot;: &quot;94f80a057ea9da7e8d0f1f1cae9142cf276d07d290491ec9c99522779eb69b8a&quot;,
+  &quot;integration_status&quot;: &quot;K_not_implemented&quot;,
+  &quot;integration_dependencies&quot;: [
+    &quot;level_registration&quot;,
+    &quot;K6&quot;
+  ],
+  &quot;frame_size&quot;: null,
+  &quot;frames&quot;: null,
+  &quot;fps&quot;: null,
+  &quot;anchor_px&quot;: null,
+  &quot;alpha_policy&quot;: &quot;not_applicable_audio&quot;,
+  &quot;integration_target&quot;: &quot;scripts/core/audio.gd:Audio.sfx/music; callers listed in audio_events.json&quot;,
+  &quot;draw_layer&quot;: &quot;Music/SFX bus&quot;,
+  &quot;rotation_contract&quot;: &quot;right-facing; rotate abstract directional FX only; mirror body and sockets together&quot;,
+  &quot;collision_contract&quot;: &quot;texture never defines collider; controller shares geometry with visual clip&quot;,
+  &quot;runtime_sha256_must_remain&quot;: &quot;94f80a057ea9da7e8d0f1f1cae9142cf276d07d290491ec9c99522779eb69b8a&quot;
+}</pre></details><details><summary>K6 / reuse_unchanged / assets/audio/music/victory.ogg</summary><pre>{
+  &quot;id&quot;: &quot;victory&quot;,
+  &quot;task&quot;: &quot;K6&quot;,
+  &quot;path&quot;: &quot;assets/audio/music/victory.ogg&quot;,
+  &quot;representation&quot;: &quot;existing_file&quot;,
+  &quot;decision&quot;: &quot;reuse_unchanged&quot;,
+  &quot;production_status&quot;: &quot;already_exists_do_not_reproduce&quot;,
+  &quot;role&quot;: &quot;existing music, subjective/current-game mix acceptance still required&quot;,
+  &quot;sha256&quot;: &quot;614c5c369c527881b5e545e5d5d04c1003a2bd2ada60148557991abd0416ec1a&quot;,
+  &quot;integration_status&quot;: &quot;K_not_implemented&quot;,
+  &quot;integration_dependencies&quot;: [
+    &quot;level_registration&quot;,
+    &quot;K6&quot;
+  ],
+  &quot;frame_size&quot;: null,
+  &quot;frames&quot;: null,
+  &quot;fps&quot;: null,
+  &quot;anchor_px&quot;: null,
+  &quot;alpha_policy&quot;: &quot;not_applicable_audio&quot;,
+  &quot;integration_target&quot;: &quot;scripts/core/audio.gd:Audio.sfx/music; callers listed in audio_events.json&quot;,
+  &quot;draw_layer&quot;: &quot;Music/SFX bus&quot;,
+  &quot;rotation_contract&quot;: &quot;right-facing; rotate abstract directional FX only; mirror body and sockets together&quot;,
+  &quot;collision_contract&quot;: &quot;texture never defines collider; controller shares geometry with visual clip&quot;,
+  &quot;runtime_sha256_must_remain&quot;: &quot;614c5c369c527881b5e545e5d5d04c1003a2bd2ada60148557991abd0416ec1a&quot;
+}</pre></details><details><summary>K6 / reuse_unchanged / assets/audio/music/defeat.ogg</summary><pre>{
+  &quot;id&quot;: &quot;defeat&quot;,
+  &quot;task&quot;: &quot;K6&quot;,
+  &quot;path&quot;: &quot;assets/audio/music/defeat.ogg&quot;,
+  &quot;representation&quot;: &quot;existing_file&quot;,
+  &quot;decision&quot;: &quot;reuse_unchanged&quot;,
+  &quot;production_status&quot;: &quot;already_exists_do_not_reproduce&quot;,
+  &quot;role&quot;: &quot;existing music, subjective/current-game mix acceptance still required&quot;,
+  &quot;sha256&quot;: &quot;2da0ed7f74dd7040f1291bec440ba9f9ff61ce6ee3b9448e4726ec0cf1a51b3d&quot;,
+  &quot;integration_status&quot;: &quot;K_not_implemented&quot;,
+  &quot;integration_dependencies&quot;: [
+    &quot;level_registration&quot;,
+    &quot;K6&quot;
+  ],
+  &quot;frame_size&quot;: null,
+  &quot;frames&quot;: null,
+  &quot;fps&quot;: null,
+  &quot;anchor_px&quot;: null,
+  &quot;alpha_policy&quot;: &quot;not_applicable_audio&quot;,
+  &quot;integration_target&quot;: &quot;scripts/core/audio.gd:Audio.sfx/music; callers listed in audio_events.json&quot;,
+  &quot;draw_layer&quot;: &quot;Music/SFX bus&quot;,
+  &quot;rotation_contract&quot;: &quot;right-facing; rotate abstract directional FX only; mirror body and sockets together&quot;,
+  &quot;collision_contract&quot;: &quot;texture never defines collider; controller shares geometry with visual clip&quot;,
+  &quot;runtime_sha256_must_remain&quot;: &quot;2da0ed7f74dd7040f1291bec440ba9f9ff61ce6ee3b9448e4726ec0cf1a51b3d&quot;
+}</pre></details><details><summary>K1 / new_proposed / assets/sprites/bosses/jormungandr_head_idle.png</summary><pre>{
+  &quot;id&quot;: &quot;jormungandr_head_idle&quot;,
+  &quot;task&quot;: &quot;K1&quot;,
+  &quot;path&quot;: &quot;assets/sprites/bosses/jormungandr_head_idle.png&quot;,
+  &quot;representation&quot;: &quot;planned_file&quot;,
+  &quot;decision&quot;: &quot;new_proposed&quot;,
+  &quot;production_status&quot;: &quot;not_created&quot;,
+  &quot;specification_status&quot;: &quot;K0_proposal_not_runtime_frozen&quot;,
+  &quot;frame_size&quot;: [
+    128,
+    128
+  ],
+  &quot;sheet_size&quot;: [
+    512,
+    128
+  ],
+  &quot;frames&quot;: 4,
+  &quot;fps&quot;: 8,
+  &quot;loop&quot;: true,
+  &quot;anchor_px&quot;: [
+    64,
+    64
+  ],
+  &quot;direction&quot;: &quot;right&quot;,
+  &quot;alpha_policy&quot;: &quot;binary&quot;,
+  &quot;palette_rgb_max&quot;: 48,
+  &quot;transparent_margin_px&quot;: 2,
+  &quot;role&quot;: &quot;same head; neck socket (0,62) fixed; no poison baked into body&quot;,
+  &quot;reference_paths&quot;: [
+    &quot;assets/sprites/bosses/jormungandr_head.png&quot;,
+    &quot;assets/sprites/bosses/jormungandr_body.png&quot;
+  ],
+  &quot;sha256&quot;: null,
+  &quot;integration_status&quot;: &quot;not_implemented&quot;,
+  &quot;integration_dependencies&quot;: [
+    &quot;C2&quot;,
+    &quot;K1&quot;
+  ],
+  &quot;approval_gate&quot;: &quot;C2&quot;,
+  &quot;scale&quot;: &quot;1x for bodies; texture effects clipped to authoritative geometry&quot;,
+  &quot;transparent_margin_exception&quot;: &quot;left neck socket intentionally open; all unrelated boundaries &gt;=2px&quot;,
+  &quot;integration_target&quot;: &quot;NEW scripts/bosses/jormungandr.gd:_ready/_update_state; explicit head base path&quot;,
+  &quot;draw_layer&quot;: &quot;actor; head/feet anchors explicitly adapted&quot;,
+  &quot;rotation_contract&quot;: &quot;right-facing; rotate abstract directional FX only; mirror body and sockets together&quot;,
+  &quot;collision_contract&quot;: &quot;texture never defines collider; controller shares geometry with visual clip&quot;
+}</pre></details><details><summary>K1 / new_proposed / assets/sprites/bosses/jormungandr_head_windup.png</summary><pre>{
+  &quot;id&quot;: &quot;jormungandr_head_windup&quot;,
+  &quot;task&quot;: &quot;K1&quot;,
+  &quot;path&quot;: &quot;assets/sprites/bosses/jormungandr_head_windup.png&quot;,
+  &quot;representation&quot;: &quot;planned_file&quot;,
+  &quot;decision&quot;: &quot;new_proposed&quot;,
+  &quot;production_status&quot;: &quot;not_created&quot;,
+  &quot;specification_status&quot;: &quot;K0_proposal_not_runtime_frozen&quot;,
+  &quot;frame_size&quot;: [
+    128,
+    128
+  ],
+  &quot;sheet_size&quot;: [
+    384,
+    128
+  ],
+  &quot;frames&quot;: 3,
+  &quot;fps&quot;: 8,
+  &quot;loop&quot;: false,
+  &quot;anchor_px&quot;: [
+    64,
+    64
+  ],
+  &quot;direction&quot;: &quot;right&quot;,
+  &quot;alpha_policy&quot;: &quot;binary&quot;,
+  &quot;palette_rgb_max&quot;: 48,
+  &quot;transparent_margin_px&quot;: 2,
+  &quot;role&quot;: &quot;same head; neck socket (0,62) fixed; no poison baked into body&quot;,
+  &quot;reference_paths&quot;: [
+    &quot;assets/sprites/bosses/jormungandr_head.png&quot;,
+    &quot;assets/sprites/bosses/jormungandr_body.png&quot;
+  ],
+  &quot;sha256&quot;: null,
+  &quot;integration_status&quot;: &quot;not_implemented&quot;,
+  &quot;integration_dependencies&quot;: [
+    &quot;C2&quot;,
+    &quot;K1&quot;
+  ],
+  &quot;approval_gate&quot;: &quot;C2&quot;,
+  &quot;scale&quot;: &quot;1x for bodies; texture effects clipped to authoritative geometry&quot;,
+  &quot;transparent_margin_exception&quot;: &quot;left neck socket intentionally open; all unrelated boundaries &gt;=2px&quot;,
+  &quot;integration_target&quot;: &quot;NEW scripts/bosses/jormungandr.gd:_ready/_update_state; explicit head base path&quot;,
+  &quot;draw_layer&quot;: &quot;actor; head/feet anchors explicitly adapted&quot;,
+  &quot;rotation_contract&quot;: &quot;right-facing; rotate abstract directional FX only; mirror body and sockets together&quot;,
+  &quot;collision_contract&quot;: &quot;texture never defines collider; controller shares geometry with visual clip&quot;
+}</pre></details><details><summary>K1 / new_proposed / assets/sprites/bosses/jormungandr_head_attack.png</summary><pre>{
+  &quot;id&quot;: &quot;jormungandr_head_attack&quot;,
+  &quot;task&quot;: &quot;K1&quot;,
+  &quot;path&quot;: &quot;assets/sprites/bosses/jormungandr_head_attack.png&quot;,
+  &quot;representation&quot;: &quot;planned_file&quot;,
+  &quot;decision&quot;: &quot;new_proposed&quot;,
+  &quot;production_status&quot;: &quot;not_created&quot;,
+  &quot;specification_status&quot;: &quot;K0_proposal_not_runtime_frozen&quot;,
+  &quot;frame_size&quot;: [
+    128,
+    128
+  ],
+  &quot;sheet_size&quot;: [
+    512,
+    128
+  ],
+  &quot;frames&quot;: 4,
+  &quot;fps&quot;: 16,
+  &quot;loop&quot;: false,
+  &quot;anchor_px&quot;: [
+    64,
+    64
+  ],
+  &quot;direction&quot;: &quot;right&quot;,
+  &quot;alpha_policy&quot;: &quot;binary&quot;,
+  &quot;palette_rgb_max&quot;: 48,
+  &quot;transparent_margin_px&quot;: 2,
+  &quot;role&quot;: &quot;same head; neck socket (0,62) fixed; no poison baked into body&quot;,
+  &quot;reference_paths&quot;: [
+    &quot;assets/sprites/bosses/jormungandr_head.png&quot;,
+    &quot;assets/sprites/bosses/jormungandr_body.png&quot;
+  ],
+  &quot;sha256&quot;: null,
+  &quot;integration_status&quot;: &quot;not_implemented&quot;,
+  &quot;integration_dependencies&quot;: [
+    &quot;C2&quot;,
+    &quot;K1&quot;
+  ],
+  &quot;approval_gate&quot;: &quot;C2&quot;,
+  &quot;scale&quot;: &quot;1x for bodies; texture effects clipped to authoritative geometry&quot;,
+  &quot;transparent_margin_exception&quot;: &quot;left neck socket intentionally open; all unrelated boundaries &gt;=2px&quot;,
+  &quot;integration_target&quot;: &quot;NEW scripts/bosses/jormungandr.gd:_ready/_update_state; explicit head base path&quot;,
+  &quot;draw_layer&quot;: &quot;actor; head/feet anchors explicitly adapted&quot;,
+  &quot;rotation_contract&quot;: &quot;right-facing; rotate abstract directional FX only; mirror body and sockets together&quot;,
+  &quot;collision_contract&quot;: &quot;texture never defines collider; controller shares geometry with visual clip&quot;
+}</pre></details><details><summary>K2 / new_proposed / assets/sprites/bosses/fenrir_idle.png</summary><pre>{
+  &quot;id&quot;: &quot;fenrir_idle&quot;,
+  &quot;task&quot;: &quot;K2&quot;,
+  &quot;path&quot;: &quot;assets/sprites/bosses/fenrir_idle.png&quot;,
+  &quot;representation&quot;: &quot;planned_file&quot;,
+  &quot;decision&quot;: &quot;new_proposed&quot;,
+  &quot;production_status&quot;: &quot;not_created&quot;,
+  &quot;specification_status&quot;: &quot;K0_proposal_not_runtime_frozen&quot;,
+  &quot;frame_size&quot;: [
+    192,
+    192
+  ],
+  &quot;sheet_size&quot;: [
+    768,
+    192
+  ],
+  &quot;frames&quot;: 4,
+  &quot;fps&quot;: 8,
+  &quot;loop&quot;: true,
+  &quot;anchor_px&quot;: [
+    96,
+    190
+  ],
+  &quot;direction&quot;: &quot;right&quot;,
+  &quot;alpha_policy&quot;: &quot;binary&quot;,
+  &quot;palette_rgb_max&quot;: 48,
+  &quot;transparent_margin_px&quot;: 2,
+  &quot;role&quot;: &quot;same wolf, fixed paws; swallow body separated from enormous jaw overlay&quot;,
+  &quot;reference_paths&quot;: [
+    &quot;assets/sprites/bosses/fenrir.png&quot;
+  ],
+  &quot;sha256&quot;: null,
+  &quot;integration_status&quot;: &quot;not_implemented&quot;,
+  &quot;integration_dependencies&quot;: [
+    &quot;C2&quot;,
+    &quot;K2&quot;
+  ],
+  &quot;approval_gate&quot;: &quot;C2&quot;,
+  &quot;scale&quot;: &quot;1x for bodies; texture effects clipped to authoritative geometry&quot;,
+  &quot;integration_target&quot;: &quot;NEW scripts/bosses/fenrir.gd:_ready/_update_state; swallow action mapping&quot;,
+  &quot;draw_layer&quot;: &quot;actor; head/feet anchors explicitly adapted&quot;,
+  &quot;rotation_contract&quot;: &quot;right-facing; rotate abstract directional FX only; mirror body and sockets together&quot;,
+  &quot;collision_contract&quot;: &quot;texture never defines collider; controller shares geometry with visual clip&quot;
+}</pre></details><details><summary>K2 / new_proposed / assets/sprites/bosses/fenrir_move.png</summary><pre>{
+  &quot;id&quot;: &quot;fenrir_move&quot;,
+  &quot;task&quot;: &quot;K2&quot;,
+  &quot;path&quot;: &quot;assets/sprites/bosses/fenrir_move.png&quot;,
+  &quot;representation&quot;: &quot;planned_file&quot;,
+  &quot;decision&quot;: &quot;new_proposed&quot;,
+  &quot;production_status&quot;: &quot;not_created&quot;,
+  &quot;specification_status&quot;: &quot;K0_proposal_not_runtime_frozen&quot;,
+  &quot;frame_size&quot;: [
+    192,
+    192
+  ],
+  &quot;sheet_size&quot;: [
+    1152,
+    192
+  ],
+  &quot;frames&quot;: 6,
+  &quot;fps&quot;: 8,
+  &quot;loop&quot;: true,
+  &quot;anchor_px&quot;: [
+    96,
+    190
+  ],
+  &quot;direction&quot;: &quot;right&quot;,
+  &quot;alpha_policy&quot;: &quot;binary&quot;,
+  &quot;palette_rgb_max&quot;: 48,
+  &quot;transparent_margin_px&quot;: 2,
+  &quot;role&quot;: &quot;same wolf, fixed paws; swallow body separated from enormous jaw overlay&quot;,
+  &quot;reference_paths&quot;: [
+    &quot;assets/sprites/bosses/fenrir.png&quot;
+  ],
+  &quot;sha256&quot;: null,
+  &quot;integration_status&quot;: &quot;not_implemented&quot;,
+  &quot;integration_dependencies&quot;: [
+    &quot;C2&quot;,
+    &quot;K2&quot;
+  ],
+  &quot;approval_gate&quot;: &quot;C2&quot;,
+  &quot;scale&quot;: &quot;1x for bodies; texture effects clipped to authoritative geometry&quot;,
+  &quot;integration_target&quot;: &quot;NEW scripts/bosses/fenrir.gd:_ready/_update_state; swallow action mapping&quot;,
+  &quot;draw_layer&quot;: &quot;actor; head/feet anchors explicitly adapted&quot;,
+  &quot;rotation_contract&quot;: &quot;right-facing; rotate abstract directional FX only; mirror body and sockets together&quot;,
+  &quot;collision_contract&quot;: &quot;texture never defines collider; controller shares geometry with visual clip&quot;
+}</pre></details><details><summary>K2 / new_proposed / assets/sprites/bosses/fenrir_windup.png</summary><pre>{
+  &quot;id&quot;: &quot;fenrir_windup&quot;,
+  &quot;task&quot;: &quot;K2&quot;,
+  &quot;path&quot;: &quot;assets/sprites/bosses/fenrir_windup.png&quot;,
+  &quot;representation&quot;: &quot;planned_file&quot;,
+  &quot;decision&quot;: &quot;new_proposed&quot;,
+  &quot;production_status&quot;: &quot;not_created&quot;,
+  &quot;specification_status&quot;: &quot;K0_proposal_not_runtime_frozen&quot;,
+  &quot;frame_size&quot;: [
+    192,
+    192
+  ],
+  &quot;sheet_size&quot;: [
+    576,
+    192
+  ],
+  &quot;frames&quot;: 3,
+  &quot;fps&quot;: 8,
+  &quot;loop&quot;: false,
+  &quot;anchor_px&quot;: [
+    96,
+    190
+  ],
+  &quot;direction&quot;: &quot;right&quot;,
+  &quot;alpha_policy&quot;: &quot;binary&quot;,
+  &quot;palette_rgb_max&quot;: 48,
+  &quot;transparent_margin_px&quot;: 2,
+  &quot;role&quot;: &quot;same wolf, fixed paws; swallow body separated from enormous jaw overlay&quot;,
+  &quot;reference_paths&quot;: [
+    &quot;assets/sprites/bosses/fenrir.png&quot;
+  ],
+  &quot;sha256&quot;: null,
+  &quot;integration_status&quot;: &quot;not_implemented&quot;,
+  &quot;integration_dependencies&quot;: [
+    &quot;C2&quot;,
+    &quot;K2&quot;
+  ],
+  &quot;approval_gate&quot;: &quot;C2&quot;,
+  &quot;scale&quot;: &quot;1x for bodies; texture effects clipped to authoritative geometry&quot;,
+  &quot;integration_target&quot;: &quot;NEW scripts/bosses/fenrir.gd:_ready/_update_state; swallow action mapping&quot;,
+  &quot;draw_layer&quot;: &quot;actor; head/feet anchors explicitly adapted&quot;,
+  &quot;rotation_contract&quot;: &quot;right-facing; rotate abstract directional FX only; mirror body and sockets together&quot;,
+  &quot;collision_contract&quot;: &quot;texture never defines collider; controller shares geometry with visual clip&quot;
+}</pre></details><details><summary>K2 / new_proposed / assets/sprites/bosses/fenrir_attack.png</summary><pre>{
+  &quot;id&quot;: &quot;fenrir_attack&quot;,
+  &quot;task&quot;: &quot;K2&quot;,
+  &quot;path&quot;: &quot;assets/sprites/bosses/fenrir_attack.png&quot;,
+  &quot;representation&quot;: &quot;planned_file&quot;,
+  &quot;decision&quot;: &quot;new_proposed&quot;,
+  &quot;production_status&quot;: &quot;not_created&quot;,
+  &quot;specification_status&quot;: &quot;K0_proposal_not_runtime_frozen&quot;,
+  &quot;frame_size&quot;: [
+    192,
+    192
+  ],
+  &quot;sheet_size&quot;: [
+    768,
+    192
+  ],
+  &quot;frames&quot;: 4,
+  &quot;fps&quot;: 16,
+  &quot;loop&quot;: false,
+  &quot;anchor_px&quot;: [
+    96,
+    190
+  ],
+  &quot;direction&quot;: &quot;right&quot;,
+  &quot;alpha_policy&quot;: &quot;binary&quot;,
+  &quot;palette_rgb_max&quot;: 48,
+  &quot;transparent_margin_px&quot;: 2,
+  &quot;role&quot;: &quot;same wolf, fixed paws; swallow body separated from enormous jaw overlay&quot;,
+  &quot;reference_paths&quot;: [
+    &quot;assets/sprites/bosses/fenrir.png&quot;
+  ],
+  &quot;sha256&quot;: null,
+  &quot;integration_status&quot;: &quot;not_implemented&quot;,
+  &quot;integration_dependencies&quot;: [
+    &quot;C2&quot;,
+    &quot;K2&quot;
+  ],
+  &quot;approval_gate&quot;: &quot;C2&quot;,
+  &quot;scale&quot;: &quot;1x for bodies; texture effects clipped to authoritative geometry&quot;,
+  &quot;integration_target&quot;: &quot;NEW scripts/bosses/fenrir.gd:_ready/_update_state; swallow action mapping&quot;,
+  &quot;draw_layer&quot;: &quot;actor; head/feet anchors explicitly adapted&quot;,
+  &quot;rotation_contract&quot;: &quot;right-facing; rotate abstract directional FX only; mirror body and sockets together&quot;,
+  &quot;collision_contract&quot;: &quot;texture never defines collider; controller shares geometry with visual clip&quot;
+}</pre></details><details><summary>K2 / new_proposed / assets/sprites/bosses/fenrir_swallow.png</summary><pre>{
+  &quot;id&quot;: &quot;fenrir_swallow&quot;,
+  &quot;task&quot;: &quot;K2&quot;,
+  &quot;path&quot;: &quot;assets/sprites/bosses/fenrir_swallow.png&quot;,
+  &quot;representation&quot;: &quot;planned_file&quot;,
+  &quot;decision&quot;: &quot;new_proposed&quot;,
+  &quot;production_status&quot;: &quot;not_created&quot;,
+  &quot;specification_status&quot;: &quot;K0_proposal_not_runtime_frozen&quot;,
+  &quot;frame_size&quot;: [
+    192,
+    192
+  ],
+  &quot;sheet_size&quot;: [
+    1152,
+    192
+  ],
+  &quot;frames&quot;: 6,
+  &quot;fps&quot;: 16,
+  &quot;loop&quot;: false,
+  &quot;anchor_px&quot;: [
+    96,
+    190
+  ],
+  &quot;direction&quot;: &quot;right&quot;,
+  &quot;alpha_policy&quot;: &quot;binary&quot;,
+  &quot;palette_rgb_max&quot;: 48,
+  &quot;transparent_margin_px&quot;: 2,
+  &quot;role&quot;: &quot;same wolf, fixed paws; swallow body separated from enormous jaw overlay&quot;,
+  &quot;reference_paths&quot;: [
+    &quot;assets/sprites/bosses/fenrir.png&quot;
+  ],
+  &quot;sha256&quot;: null,
+  &quot;integration_status&quot;: &quot;not_implemented&quot;,
+  &quot;integration_dependencies&quot;: [
+    &quot;C2&quot;,
+    &quot;K2&quot;
+  ],
+  &quot;approval_gate&quot;: &quot;C2&quot;,
+  &quot;scale&quot;: &quot;1x for bodies; texture effects clipped to authoritative geometry&quot;,
+  &quot;integration_target&quot;: &quot;NEW scripts/bosses/fenrir.gd:_ready/_update_state; swallow action mapping&quot;,
+  &quot;draw_layer&quot;: &quot;actor; head/feet anchors explicitly adapted&quot;,
+  &quot;rotation_contract&quot;: &quot;right-facing; rotate abstract directional FX only; mirror body and sockets together&quot;,
+  &quot;collision_contract&quot;: &quot;texture never defines collider; controller shares geometry with visual clip&quot;
+}</pre></details><details><summary>K2 / new_proposed / assets/sprites/effects/bosses/fenrir_maw.png</summary><pre>{
+  &quot;id&quot;: &quot;fenrir_maw&quot;,
+  &quot;task&quot;: &quot;K2&quot;,
+  &quot;path&quot;: &quot;assets/sprites/effects/bosses/fenrir_maw.png&quot;,
+  &quot;representation&quot;: &quot;planned_file&quot;,
+  &quot;decision&quot;: &quot;new_proposed&quot;,
+  &quot;production_status&quot;: &quot;not_created&quot;,
+  &quot;specification_status&quot;: &quot;K0_proposal_not_runtime_frozen&quot;,
+  &quot;frame_size&quot;: [
+    256,
+    256
+  ],
+  &quot;sheet_size&quot;: [
+    1024,
+    256
+  ],
+  &quot;frames&quot;: 4,
+  &quot;fps&quot;: 8,
+  &quot;loop&quot;: true,
+  &quot;anchor_px&quot;: [
+    128,
+    128
+  ],
+  &quot;direction&quot;: &quot;right&quot;,
+  &quot;alpha_policy&quot;: &quot;binary&quot;,
+  &quot;palette_rgb_max&quot;: 48,
+  &quot;transparent_margin_px&quot;: 2,
+  &quot;role&quot;: &quot;upper/lower jaw framing with open center; loop hold only, no opaque fatal-zone disk&quot;,
+  &quot;reference_paths&quot;: [
+    &quot;assets/sprites/bosses/fenrir.png&quot;
+  ],
+  &quot;sha256&quot;: null,
+  &quot;integration_status&quot;: &quot;not_implemented&quot;,
+  &quot;integration_dependencies&quot;: [
+    &quot;C3&quot;,
+    &quot;K2&quot;
+  ],
+  &quot;approval_gate&quot;: &quot;C3&quot;,
+  &quot;scale&quot;: &quot;1x for bodies; texture effects clipped to authoritative geometry&quot;,
+  &quot;integration_target&quot;: &quot;NEW scripts/bosses/fenrir.gd:maw/bind dispatcher&quot;,
+  &quot;draw_layer&quot;: &quot;under actors for ground hazards; warnings and safe outlines above visual texture&quot;,
+  &quot;rotation_contract&quot;: &quot;right-facing; rotate abstract directional FX only; mirror body and sockets together&quot;,
+  &quot;collision_contract&quot;: &quot;texture never defines collider; controller shares geometry with visual clip&quot;
+}</pre></details><details><summary>K2 / new_proposed / assets/sprites/effects/bosses/fenrir_bind.png</summary><pre>{
+  &quot;id&quot;: &quot;fenrir_bind&quot;,
+  &quot;task&quot;: &quot;K2&quot;,
+  &quot;path&quot;: &quot;assets/sprites/effects/bosses/fenrir_bind.png&quot;,
+  &quot;representation&quot;: &quot;planned_file&quot;,
+  &quot;decision&quot;: &quot;new_proposed&quot;,
+  &quot;production_status&quot;: &quot;not_created&quot;,
+  &quot;specification_status&quot;: &quot;K0_proposal_not_runtime_frozen&quot;,
+  &quot;frame_size&quot;: [
+    192,
+    192
+  ],
+  &quot;sheet_size&quot;: [
+    768,
+    192
+  ],
+  &quot;frames&quot;: 4,
+  &quot;fps&quot;: 8,
+  &quot;loop&quot;: true,
+  &quot;anchor_px&quot;: [
+    96,
+    96
+  ],
+  &quot;direction&quot;: &quot;right&quot;,
+  &quot;alpha_policy&quot;: &quot;soft_effect&quot;,
+  &quot;palette_rgb_max&quot;: 48,
+  &quot;transparent_margin_px&quot;: 2,
+  &quot;role&quot;: &quot;thin luminous braided restraint, transparent center; not Garm iron chain&quot;,
+  &quot;reference_paths&quot;: [
+    &quot;assets/sprites/bosses/fenrir.png&quot;,
+    &quot;assets/sprites/props/helheim/chain_stake.png&quot;
+  ],
+  &quot;sha256&quot;: null,
+  &quot;integration_status&quot;: &quot;not_implemented&quot;,
+  &quot;integration_dependencies&quot;: [
+    &quot;C3&quot;,
+    &quot;K2&quot;
+  ],
+  &quot;approval_gate&quot;: &quot;C3&quot;,
+  &quot;scale&quot;: &quot;1x for bodies; texture effects clipped to authoritative geometry&quot;,
+  &quot;integration_target&quot;: &quot;NEW scripts/bosses/fenrir.gd:maw/bind dispatcher&quot;,
+  &quot;draw_layer&quot;: &quot;under actors for ground hazards; warnings and safe outlines above visual texture&quot;,
+  &quot;rotation_contract&quot;: &quot;right-facing; rotate abstract directional FX only; mirror body and sockets together&quot;,
+  &quot;collision_contract&quot;: &quot;texture never defines collider; controller shares geometry with visual clip&quot;
+}</pre></details><details><summary>K2 / new_proposed / assets/sprites/pickups/gleipnir_fragment.png</summary><pre>{
+  &quot;id&quot;: &quot;gleipnir_fragment&quot;,
+  &quot;task&quot;: &quot;K2&quot;,
+  &quot;path&quot;: &quot;assets/sprites/pickups/gleipnir_fragment.png&quot;,
+  &quot;representation&quot;: &quot;planned_file&quot;,
+  &quot;decision&quot;: &quot;new_proposed&quot;,
+  &quot;production_status&quot;: &quot;not_created&quot;,
+  &quot;specification_status&quot;: &quot;K0_proposal_not_runtime_frozen&quot;,
+  &quot;frame_size&quot;: [
+    24,
+    24
+  ],
+  &quot;sheet_size&quot;: [
+    24,
+    24
+  ],
+  &quot;frames&quot;: 1,
+  &quot;fps&quot;: 0,
+  &quot;loop&quot;: false,
+  &quot;anchor_px&quot;: [
+    12,
+    12
+  ],
+  &quot;direction&quot;: &quot;right&quot;,
+  &quot;alpha_policy&quot;: &quot;binary&quot;,
+  &quot;palette_rgb_max&quot;: 48,
+  &quot;transparent_margin_px&quot;: 2,
+  &quot;role&quot;: &quot;small bright braided magical binding fragment; readable over corpses; no iron stake&quot;,
+  &quot;reference_paths&quot;: [
+    &quot;assets/sprites/props/helheim/chain_stake_broken.png&quot;
+  ],
+  &quot;sha256&quot;: null,
+  &quot;integration_status&quot;: &quot;not_implemented&quot;,
+  &quot;integration_dependencies&quot;: [
+    &quot;C3&quot;,
+    &quot;K2&quot;
+  ],
+  &quot;approval_gate&quot;: &quot;C3&quot;,
+  &quot;scale&quot;: &quot;1x for bodies; texture effects clipped to authoritative geometry&quot;,
+  &quot;integration_target&quot;: &quot;NEW scripts/bosses/fenrir.gd:fragment pickup lifecycle and binding trigger&quot;,
+  &quot;draw_layer&quot;: &quot;pickup, above decals, below warning&quot;,
+  &quot;rotation_contract&quot;: &quot;right-facing; rotate abstract directional FX only; mirror body and sockets together&quot;,
+  &quot;collision_contract&quot;: &quot;texture never defines collider; controller shares geometry with visual clip&quot;
+}</pre></details><details><summary>K3 / new_proposed / assets/sprites/bosses/surtr_idle.png</summary><pre>{
+  &quot;id&quot;: &quot;surtr_idle&quot;,
+  &quot;task&quot;: &quot;K3&quot;,
+  &quot;path&quot;: &quot;assets/sprites/bosses/surtr_idle.png&quot;,
+  &quot;representation&quot;: &quot;planned_file&quot;,
+  &quot;decision&quot;: &quot;new_proposed&quot;,
+  &quot;production_status&quot;: &quot;not_created&quot;,
+  &quot;specification_status&quot;: &quot;K0_proposal_not_runtime_frozen&quot;,
+  &quot;frame_size&quot;: [
+    256,
+    256
+  ],
+  &quot;sheet_size&quot;: [
+    1024,
+    256
+  ],
+  &quot;frames&quot;: 4,
+  &quot;fps&quot;: 8,
+  &quot;loop&quot;: true,
+  &quot;anchor_px&quot;: [
+    128,
+    254
+  ],
+  &quot;direction&quot;: &quot;right&quot;,
+  &quot;alpha_policy&quot;: &quot;binary&quot;,
+  &quot;palette_rgb_max&quot;: 48,
+  &quot;transparent_margin_px&quot;: 2,
+  &quot;role&quot;: &quot;uniform action canvas enlarged for sword arc; body remains 192px source scale; not a larger giant&quot;,
+  &quot;reference_paths&quot;: [
+    &quot;assets/sprites/bosses/surtr.png&quot;
+  ],
+  &quot;sha256&quot;: null,
+  &quot;integration_status&quot;: &quot;not_implemented&quot;,
+  &quot;integration_dependencies&quot;: [
+    &quot;C4&quot;,
+    &quot;K3&quot;
+  ],
+  &quot;approval_gate&quot;: &quot;C4&quot;,
+  &quot;scale&quot;: &quot;1x for bodies; texture effects clipped to authoritative geometry&quot;,
+  &quot;reference_placement_px&quot;: [
+    32,
+    64
+  ],
+  &quot;fallback_alignment&quot;: &quot;old static anchor (96,190), new anchor (128,254); custom visual adapter required&quot;,
+  &quot;integration_target&quot;: &quot;NEW scripts/bosses/surtr.gd:_ready/_update_state; explicit 256px foot adapter&quot;,
+  &quot;draw_layer&quot;: &quot;actor; head/feet anchors explicitly adapted&quot;,
+  &quot;rotation_contract&quot;: &quot;right-facing; rotate abstract directional FX only; mirror body and sockets together&quot;,
+  &quot;collision_contract&quot;: &quot;texture never defines collider; controller shares geometry with visual clip&quot;
+}</pre></details><details><summary>K3 / new_proposed / assets/sprites/bosses/surtr_move.png</summary><pre>{
+  &quot;id&quot;: &quot;surtr_move&quot;,
+  &quot;task&quot;: &quot;K3&quot;,
+  &quot;path&quot;: &quot;assets/sprites/bosses/surtr_move.png&quot;,
+  &quot;representation&quot;: &quot;planned_file&quot;,
+  &quot;decision&quot;: &quot;new_proposed&quot;,
+  &quot;production_status&quot;: &quot;not_created&quot;,
+  &quot;specification_status&quot;: &quot;K0_proposal_not_runtime_frozen&quot;,
+  &quot;frame_size&quot;: [
+    256,
+    256
+  ],
+  &quot;sheet_size&quot;: [
+    1536,
+    256
+  ],
+  &quot;frames&quot;: 6,
+  &quot;fps&quot;: 8,
+  &quot;loop&quot;: true,
+  &quot;anchor_px&quot;: [
+    128,
+    254
+  ],
+  &quot;direction&quot;: &quot;right&quot;,
+  &quot;alpha_policy&quot;: &quot;binary&quot;,
+  &quot;palette_rgb_max&quot;: 48,
+  &quot;transparent_margin_px&quot;: 2,
+  &quot;role&quot;: &quot;uniform action canvas enlarged for sword arc; body remains 192px source scale; not a larger giant&quot;,
+  &quot;reference_paths&quot;: [
+    &quot;assets/sprites/bosses/surtr.png&quot;
+  ],
+  &quot;sha256&quot;: null,
+  &quot;integration_status&quot;: &quot;not_implemented&quot;,
+  &quot;integration_dependencies&quot;: [
+    &quot;C4&quot;,
+    &quot;K3&quot;
+  ],
+  &quot;approval_gate&quot;: &quot;C4&quot;,
+  &quot;scale&quot;: &quot;1x for bodies; texture effects clipped to authoritative geometry&quot;,
+  &quot;reference_placement_px&quot;: [
+    32,
+    64
+  ],
+  &quot;fallback_alignment&quot;: &quot;old static anchor (96,190), new anchor (128,254); custom visual adapter required&quot;,
+  &quot;integration_target&quot;: &quot;NEW scripts/bosses/surtr.gd:_ready/_update_state; explicit 256px foot adapter&quot;,
+  &quot;draw_layer&quot;: &quot;actor; head/feet anchors explicitly adapted&quot;,
+  &quot;rotation_contract&quot;: &quot;right-facing; rotate abstract directional FX only; mirror body and sockets together&quot;,
+  &quot;collision_contract&quot;: &quot;texture never defines collider; controller shares geometry with visual clip&quot;
+}</pre></details><details><summary>K3 / new_proposed / assets/sprites/bosses/surtr_windup.png</summary><pre>{
+  &quot;id&quot;: &quot;surtr_windup&quot;,
+  &quot;task&quot;: &quot;K3&quot;,
+  &quot;path&quot;: &quot;assets/sprites/bosses/surtr_windup.png&quot;,
+  &quot;representation&quot;: &quot;planned_file&quot;,
+  &quot;decision&quot;: &quot;new_proposed&quot;,
+  &quot;production_status&quot;: &quot;not_created&quot;,
+  &quot;specification_status&quot;: &quot;K0_proposal_not_runtime_frozen&quot;,
+  &quot;frame_size&quot;: [
+    256,
+    256
+  ],
+  &quot;sheet_size&quot;: [
+    768,
+    256
+  ],
+  &quot;frames&quot;: 3,
+  &quot;fps&quot;: 8,
+  &quot;loop&quot;: false,
+  &quot;anchor_px&quot;: [
+    128,
+    254
+  ],
+  &quot;direction&quot;: &quot;right&quot;,
+  &quot;alpha_policy&quot;: &quot;binary&quot;,
+  &quot;palette_rgb_max&quot;: 48,
+  &quot;transparent_margin_px&quot;: 2,
+  &quot;role&quot;: &quot;uniform action canvas enlarged for sword arc; body remains 192px source scale; not a larger giant&quot;,
+  &quot;reference_paths&quot;: [
+    &quot;assets/sprites/bosses/surtr.png&quot;
+  ],
+  &quot;sha256&quot;: null,
+  &quot;integration_status&quot;: &quot;not_implemented&quot;,
+  &quot;integration_dependencies&quot;: [
+    &quot;C4&quot;,
+    &quot;K3&quot;
+  ],
+  &quot;approval_gate&quot;: &quot;C4&quot;,
+  &quot;scale&quot;: &quot;1x for bodies; texture effects clipped to authoritative geometry&quot;,
+  &quot;reference_placement_px&quot;: [
+    32,
+    64
+  ],
+  &quot;fallback_alignment&quot;: &quot;old static anchor (96,190), new anchor (128,254); custom visual adapter required&quot;,
+  &quot;integration_target&quot;: &quot;NEW scripts/bosses/surtr.gd:_ready/_update_state; explicit 256px foot adapter&quot;,
+  &quot;draw_layer&quot;: &quot;actor; head/feet anchors explicitly adapted&quot;,
+  &quot;rotation_contract&quot;: &quot;right-facing; rotate abstract directional FX only; mirror body and sockets together&quot;,
+  &quot;collision_contract&quot;: &quot;texture never defines collider; controller shares geometry with visual clip&quot;
+}</pre></details><details><summary>K3 / new_proposed / assets/sprites/bosses/surtr_attack.png</summary><pre>{
+  &quot;id&quot;: &quot;surtr_attack&quot;,
+  &quot;task&quot;: &quot;K3&quot;,
+  &quot;path&quot;: &quot;assets/sprites/bosses/surtr_attack.png&quot;,
+  &quot;representation&quot;: &quot;planned_file&quot;,
+  &quot;decision&quot;: &quot;new_proposed&quot;,
+  &quot;production_status&quot;: &quot;not_created&quot;,
+  &quot;specification_status&quot;: &quot;K0_proposal_not_runtime_frozen&quot;,
+  &quot;frame_size&quot;: [
+    256,
+    256
+  ],
+  &quot;sheet_size&quot;: [
+    1024,
+    256
+  ],
+  &quot;frames&quot;: 4,
+  &quot;fps&quot;: 16,
+  &quot;loop&quot;: false,
+  &quot;anchor_px&quot;: [
+    128,
+    254
+  ],
+  &quot;direction&quot;: &quot;right&quot;,
+  &quot;alpha_policy&quot;: &quot;binary&quot;,
+  &quot;palette_rgb_max&quot;: 48,
+  &quot;transparent_margin_px&quot;: 2,
+  &quot;role&quot;: &quot;uniform action canvas enlarged for sword arc; body remains 192px source scale; not a larger giant&quot;,
+  &quot;reference_paths&quot;: [
+    &quot;assets/sprites/bosses/surtr.png&quot;
+  ],
+  &quot;sha256&quot;: null,
+  &quot;integration_status&quot;: &quot;not_implemented&quot;,
+  &quot;integration_dependencies&quot;: [
+    &quot;C4&quot;,
+    &quot;K3&quot;
+  ],
+  &quot;approval_gate&quot;: &quot;C4&quot;,
+  &quot;scale&quot;: &quot;1x for bodies; texture effects clipped to authoritative geometry&quot;,
+  &quot;reference_placement_px&quot;: [
+    32,
+    64
+  ],
+  &quot;fallback_alignment&quot;: &quot;old static anchor (96,190), new anchor (128,254); custom visual adapter required&quot;,
+  &quot;integration_target&quot;: &quot;NEW scripts/bosses/surtr.gd:_ready/_update_state; explicit 256px foot adapter&quot;,
+  &quot;draw_layer&quot;: &quot;actor; head/feet anchors explicitly adapted&quot;,
+  &quot;rotation_contract&quot;: &quot;right-facing; rotate abstract directional FX only; mirror body and sockets together&quot;,
+  &quot;collision_contract&quot;: &quot;texture never defines collider; controller shares geometry with visual clip&quot;
+}</pre></details><details><summary>K3 / new_proposed / assets/sprites/bosses/surtr_plant.png</summary><pre>{
+  &quot;id&quot;: &quot;surtr_plant&quot;,
+  &quot;task&quot;: &quot;K3&quot;,
+  &quot;path&quot;: &quot;assets/sprites/bosses/surtr_plant.png&quot;,
+  &quot;representation&quot;: &quot;planned_file&quot;,
+  &quot;decision&quot;: &quot;new_proposed&quot;,
+  &quot;production_status&quot;: &quot;not_created&quot;,
+  &quot;specification_status&quot;: &quot;K0_proposal_not_runtime_frozen&quot;,
+  &quot;frame_size&quot;: [
+    256,
+    256
+  ],
+  &quot;sheet_size&quot;: [
+    1024,
+    256
+  ],
+  &quot;frames&quot;: 4,
+  &quot;fps&quot;: 16,
+  &quot;loop&quot;: false,
+  &quot;anchor_px&quot;: [
+    128,
+    254
+  ],
+  &quot;direction&quot;: &quot;right&quot;,
+  &quot;alpha_policy&quot;: &quot;binary&quot;,
+  &quot;palette_rgb_max&quot;: 48,
+  &quot;transparent_margin_px&quot;: 2,
+  &quot;role&quot;: &quot;uniform action canvas enlarged for sword arc; body remains 192px source scale; not a larger giant&quot;,
+  &quot;reference_paths&quot;: [
+    &quot;assets/sprites/bosses/surtr.png&quot;
+  ],
+  &quot;sha256&quot;: null,
+  &quot;integration_status&quot;: &quot;not_implemented&quot;,
+  &quot;integration_dependencies&quot;: [
+    &quot;C4&quot;,
+    &quot;K3&quot;
+  ],
+  &quot;approval_gate&quot;: &quot;C4&quot;,
+  &quot;scale&quot;: &quot;1x for bodies; texture effects clipped to authoritative geometry&quot;,
+  &quot;reference_placement_px&quot;: [
+    32,
+    64
+  ],
+  &quot;fallback_alignment&quot;: &quot;old static anchor (96,190), new anchor (128,254); custom visual adapter required&quot;,
+  &quot;integration_target&quot;: &quot;NEW scripts/bosses/surtr.gd:_ready/_update_state; explicit 256px foot adapter&quot;,
+  &quot;draw_layer&quot;: &quot;actor; head/feet anchors explicitly adapted&quot;,
+  &quot;rotation_contract&quot;: &quot;right-facing; rotate abstract directional FX only; mirror body and sockets together&quot;,
+  &quot;collision_contract&quot;: &quot;texture never defines collider; controller shares geometry with visual clip&quot;
+}</pre></details><details><summary>K3 / new_proposed / assets/sprites/bosses/surtr_summon.png</summary><pre>{
+  &quot;id&quot;: &quot;surtr_summon&quot;,
+  &quot;task&quot;: &quot;K3&quot;,
+  &quot;path&quot;: &quot;assets/sprites/bosses/surtr_summon.png&quot;,
+  &quot;representation&quot;: &quot;planned_file&quot;,
+  &quot;decision&quot;: &quot;new_proposed&quot;,
+  &quot;production_status&quot;: &quot;not_created&quot;,
+  &quot;specification_status&quot;: &quot;K0_proposal_not_runtime_frozen&quot;,
+  &quot;frame_size&quot;: [
+    256,
+    256
+  ],
+  &quot;sheet_size&quot;: [
+    1024,
+    256
+  ],
+  &quot;frames&quot;: 4,
+  &quot;fps&quot;: 16,
+  &quot;loop&quot;: false,
+  &quot;anchor_px&quot;: [
+    128,
+    254
+  ],
+  &quot;direction&quot;: &quot;right&quot;,
+  &quot;alpha_policy&quot;: &quot;binary&quot;,
+  &quot;palette_rgb_max&quot;: 48,
+  &quot;transparent_margin_px&quot;: 2,
+  &quot;role&quot;: &quot;uniform action canvas enlarged for sword arc; body remains 192px source scale; not a larger giant&quot;,
+  &quot;reference_paths&quot;: [
+    &quot;assets/sprites/bosses/surtr.png&quot;
+  ],
+  &quot;sha256&quot;: null,
+  &quot;integration_status&quot;: &quot;not_implemented&quot;,
+  &quot;integration_dependencies&quot;: [
+    &quot;C4&quot;,
+    &quot;K3&quot;
+  ],
+  &quot;approval_gate&quot;: &quot;C4&quot;,
+  &quot;scale&quot;: &quot;1x for bodies; texture effects clipped to authoritative geometry&quot;,
+  &quot;reference_placement_px&quot;: [
+    32,
+    64
+  ],
+  &quot;fallback_alignment&quot;: &quot;old static anchor (96,190), new anchor (128,254); custom visual adapter required&quot;,
+  &quot;integration_target&quot;: &quot;NEW scripts/bosses/surtr.gd:_ready/_update_state; explicit 256px foot adapter&quot;,
+  &quot;draw_layer&quot;: &quot;actor; head/feet anchors explicitly adapted&quot;,
+  &quot;rotation_contract&quot;: &quot;right-facing; rotate abstract directional FX only; mirror body and sockets together&quot;,
+  &quot;collision_contract&quot;: &quot;texture never defines collider; controller shares geometry with visual clip&quot;
+}</pre></details><details><summary>K3 / new_proposed / assets/sprites/effects/bosses/surtr_sword_arc.png</summary><pre>{
+  &quot;id&quot;: &quot;surtr_sword_arc&quot;,
+  &quot;task&quot;: &quot;K3&quot;,
+  &quot;path&quot;: &quot;assets/sprites/effects/bosses/surtr_sword_arc.png&quot;,
+  &quot;representation&quot;: &quot;planned_file&quot;,
+  &quot;decision&quot;: &quot;new_proposed&quot;,
+  &quot;production_status&quot;: &quot;not_created&quot;,
+  &quot;specification_status&quot;: &quot;K0_proposal_not_runtime_frozen&quot;,
+  &quot;frame_size&quot;: [
+    128,
+    128
+  ],
+  &quot;sheet_size&quot;: [
+    512,
+    128
+  ],
+  &quot;frames&quot;: 4,
+  &quot;fps&quot;: 16,
+  &quot;loop&quot;: false,
+  &quot;anchor_px&quot;: [
+    64,
+    64
+  ],
+  &quot;direction&quot;: &quot;right&quot;,
+  &quot;alpha_policy&quot;: &quot;soft_effect&quot;,
+  &quot;palette_rgb_max&quot;: 48,
+  &quot;transparent_margin_px&quot;: 2,
+  &quot;role&quot;: &quot;fiery cutting arc; cone clipping uses same angle/radius as damage&quot;,
+  &quot;reference_paths&quot;: [
+    &quot;assets/sprites/bosses/surtr.png&quot;
+  ],
+  &quot;sha256&quot;: null,
+  &quot;integration_status&quot;: &quot;not_implemented&quot;,
+  &quot;integration_dependencies&quot;: [
+    &quot;C4&quot;,
+    &quot;K3&quot;
+  ],
+  &quot;approval_gate&quot;: &quot;C4&quot;,
+  &quot;scale&quot;: &quot;1x for bodies; texture effects clipped to authoritative geometry&quot;,
+  &quot;integration_target&quot;: &quot;NEW scripts/bosses/surtr.gd:slash/gate/firewall/grid dispatcher&quot;,
+  &quot;draw_layer&quot;: &quot;under actors for ground hazards; warnings and safe outlines above visual texture&quot;,
+  &quot;rotation_contract&quot;: &quot;right-facing; rotate abstract directional FX only; mirror body and sockets together&quot;,
+  &quot;collision_contract&quot;: &quot;texture never defines collider; controller shares geometry with visual clip&quot;
+}</pre></details><details><summary>K3 / new_proposed / assets/sprites/effects/bosses/surtr_gate.png</summary><pre>{
+  &quot;id&quot;: &quot;surtr_gate&quot;,
+  &quot;task&quot;: &quot;K3&quot;,
+  &quot;path&quot;: &quot;assets/sprites/effects/bosses/surtr_gate.png&quot;,
+  &quot;representation&quot;: &quot;planned_file&quot;,
+  &quot;decision&quot;: &quot;new_proposed&quot;,
+  &quot;production_status&quot;: &quot;not_created&quot;,
+  &quot;specification_status&quot;: &quot;K0_proposal_not_runtime_frozen&quot;,
+  &quot;frame_size&quot;: [
+    128,
+    128
+  ],
+  &quot;sheet_size&quot;: [
+    512,
+    128
+  ],
+  &quot;frames&quot;: 4,
+  &quot;fps&quot;: 8,
+  &quot;loop&quot;: true,
+  &quot;anchor_px&quot;: [
+    64,
+    126
+  ],
+  &quot;direction&quot;: &quot;right&quot;,
+  &quot;alpha_policy&quot;: &quot;soft_effect&quot;,
+  &quot;palette_rgb_max&quot;: 48,
+  &quot;transparent_margin_px&quot;: 2,
+  &quot;role&quot;: &quot;fire gateway behind summoned giants; loop while opening is active&quot;,
+  &quot;reference_paths&quot;: [
+    &quot;assets/sprites/bosses/surtr.png&quot;,
+    &quot;assets/sprites/enemies/fire_giant.png&quot;
+  ],
+  &quot;sha256&quot;: null,
+  &quot;integration_status&quot;: &quot;not_implemented&quot;,
+  &quot;integration_dependencies&quot;: [
+    &quot;C4&quot;,
+    &quot;K3&quot;
+  ],
+  &quot;approval_gate&quot;: &quot;C4&quot;,
+  &quot;scale&quot;: &quot;1x for bodies; texture effects clipped to authoritative geometry&quot;,
+  &quot;integration_target&quot;: &quot;NEW scripts/bosses/surtr.gd:slash/gate/firewall/grid dispatcher&quot;,
+  &quot;draw_layer&quot;: &quot;under actors for ground hazards; warnings and safe outlines above visual texture&quot;,
+  &quot;rotation_contract&quot;: &quot;right-facing; rotate abstract directional FX only; mirror body and sockets together&quot;,
+  &quot;collision_contract&quot;: &quot;texture never defines collider; controller shares geometry with visual clip&quot;
+}</pre></details><details><summary>K3 / new_proposed / assets/sprites/effects/bosses/surtr_firewall_band.png</summary><pre>{
+  &quot;id&quot;: &quot;surtr_firewall_band&quot;,
+  &quot;task&quot;: &quot;K3&quot;,
+  &quot;path&quot;: &quot;assets/sprites/effects/bosses/surtr_firewall_band.png&quot;,
+  &quot;representation&quot;: &quot;planned_file&quot;,
+  &quot;decision&quot;: &quot;new_proposed&quot;,
+  &quot;production_status&quot;: &quot;not_created&quot;,
+  &quot;specification_status&quot;: &quot;K0_proposal_not_runtime_frozen&quot;,
+  &quot;frame_size&quot;: [
+    64,
+    64
+  ],
+  &quot;sheet_size&quot;: [
+    256,
+    64
+  ],
+  &quot;frames&quot;: 4,
+  &quot;fps&quot;: 8,
+  &quot;loop&quot;: true,
+  &quot;anchor_px&quot;: [
+    32,
+    32
+  ],
+  &quot;direction&quot;: &quot;right&quot;,
+  &quot;alpha_policy&quot;: &quot;soft_effect&quot;,
+  &quot;palette_rgb_max&quot;: 48,
+  &quot;transparent_margin_px&quot;: 2,
+  &quot;role&quot;: &quot;repeatable band; horizontal tangent, outside/up is burning, lower inside edge stays transparent&quot;,
+  &quot;reference_paths&quot;: [
+    &quot;assets/sprites/bosses/surtr.png&quot;,
+    &quot;assets/sprites/ground/vigrid/cracked_lava.png&quot;
+  ],
+  &quot;sha256&quot;: null,
+  &quot;integration_status&quot;: &quot;not_implemented&quot;,
+  &quot;integration_dependencies&quot;: [
+    &quot;C4&quot;,
+    &quot;K3&quot;
+  ],
+  &quot;approval_gate&quot;: &quot;C4&quot;,
+  &quot;scale&quot;: &quot;1x for bodies; texture effects clipped to authoritative geometry&quot;,
+  &quot;integration_target&quot;: &quot;NEW scripts/bosses/surtr.gd:slash/gate/firewall/grid dispatcher&quot;,
+  &quot;draw_layer&quot;: &quot;under actors for ground hazards; warnings and safe outlines above visual texture&quot;,
+  &quot;rotation_contract&quot;: &quot;right-facing; rotate abstract directional FX only; mirror body and sockets together&quot;,
+  &quot;collision_contract&quot;: &quot;texture never defines collider; controller shares geometry with visual clip&quot;
+}</pre></details><details><summary>K3 / new_proposed / assets/sprites/effects/bosses/surtr_final_fire.png</summary><pre>{
+  &quot;id&quot;: &quot;surtr_final_fire&quot;,
+  &quot;task&quot;: &quot;K3&quot;,
+  &quot;path&quot;: &quot;assets/sprites/effects/bosses/surtr_final_fire.png&quot;,
+  &quot;representation&quot;: &quot;planned_file&quot;,
+  &quot;decision&quot;: &quot;new_proposed&quot;,
+  &quot;production_status&quot;: &quot;not_created&quot;,
+  &quot;specification_status&quot;: &quot;K0_proposal_not_runtime_frozen&quot;,
+  &quot;frame_size&quot;: [
+    64,
+    64
+  ],
+  &quot;sheet_size&quot;: [
+    256,
+    64
+  ],
+  &quot;frames&quot;: 4,
+  &quot;fps&quot;: 16,
+  &quot;loop&quot;: false,
+  &quot;anchor_px&quot;: [
+    32,
+    32
+  ],
+  &quot;direction&quot;: &quot;right&quot;,
+  &quot;alpha_policy&quot;: &quot;soft_effect&quot;,
+  &quot;palette_rgb_max&quot;: 48,
+  &quot;transparent_margin_px&quot;: 2,
+  &quot;role&quot;: &quot;one damaging grid cell burst, tiled only over actual unsafe cells; not a fullscreen opaque image&quot;,
+  &quot;reference_paths&quot;: [
+    &quot;assets/sprites/bosses/surtr.png&quot;
+  ],
+  &quot;sha256&quot;: null,
+  &quot;integration_status&quot;: &quot;not_implemented&quot;,
+  &quot;integration_dependencies&quot;: [
+    &quot;C4&quot;,
+    &quot;K3&quot;
+  ],
+  &quot;approval_gate&quot;: &quot;C4&quot;,
+  &quot;scale&quot;: &quot;1x for bodies; texture effects clipped to authoritative geometry&quot;,
+  &quot;integration_target&quot;: &quot;NEW scripts/bosses/surtr.gd:slash/gate/firewall/grid dispatcher&quot;,
+  &quot;draw_layer&quot;: &quot;under actors for ground hazards; warnings and safe outlines above visual texture&quot;,
+  &quot;rotation_contract&quot;: &quot;right-facing; rotate abstract directional FX only; mirror body and sockets together&quot;,
+  &quot;collision_contract&quot;: &quot;texture never defines collider; controller shares geometry with visual clip&quot;
+}</pre></details><details><summary>K3 / new_proposed / assets/sprites/effects/bosses/surtr_safe_rune.png</summary><pre>{
+  &quot;id&quot;: &quot;surtr_safe_rune&quot;,
+  &quot;task&quot;: &quot;K3&quot;,
+  &quot;path&quot;: &quot;assets/sprites/effects/bosses/surtr_safe_rune.png&quot;,
+  &quot;representation&quot;: &quot;planned_file&quot;,
+  &quot;decision&quot;: &quot;new_proposed&quot;,
+  &quot;production_status&quot;: &quot;not_created&quot;,
+  &quot;specification_status&quot;: &quot;K0_proposal_not_runtime_frozen&quot;,
+  &quot;frame_size&quot;: [
+    64,
+    64
+  ],
+  &quot;sheet_size&quot;: [
+    64,
+    64
+  ],
+  &quot;frames&quot;: 1,
+  &quot;fps&quot;: 0,
+  &quot;loop&quot;: false,
+  &quot;anchor_px&quot;: [
+    32,
+    32
+  ],
+  &quot;direction&quot;: &quot;right&quot;,
+  &quot;alpha_policy&quot;: &quot;soft_effect&quot;,
+  &quot;palette_rgb_max&quot;: 48,
+  &quot;transparent_margin_px&quot;: 2,
+  &quot;role&quot;: &quot;thin nontextual geometric rune at safe cell perimeter, center clear; collision owned by same cell grid&quot;,
+  &quot;reference_paths&quot;: [
+    &quot;assets/sprites/effects/gods/odin_rune_circle.png&quot;
+  ],
+  &quot;sha256&quot;: null,
+  &quot;integration_status&quot;: &quot;not_implemented&quot;,
+  &quot;integration_dependencies&quot;: [
+    &quot;C4&quot;,
+    &quot;K3&quot;
+  ],
+  &quot;approval_gate&quot;: &quot;C4&quot;,
+  &quot;scale&quot;: &quot;1x for bodies; texture effects clipped to authoritative geometry&quot;,
+  &quot;integration_target&quot;: &quot;NEW scripts/bosses/surtr.gd:slash/gate/firewall/grid dispatcher&quot;,
+  &quot;draw_layer&quot;: &quot;under actors for ground hazards; warnings and safe outlines above visual texture&quot;,
+  &quot;rotation_contract&quot;: &quot;right-facing; rotate abstract directional FX only; mirror body and sockets together&quot;,
+  &quot;collision_contract&quot;: &quot;texture never defines collider; controller shares geometry with visual clip&quot;
+}</pre></details><details><summary>K4 / new_proposed / assets/sprites/enemies/fire_giant_move.png</summary><pre>{
+  &quot;id&quot;: &quot;fire_giant_move&quot;,
+  &quot;task&quot;: &quot;K4&quot;,
+  &quot;path&quot;: &quot;assets/sprites/enemies/fire_giant_move.png&quot;,
+  &quot;representation&quot;: &quot;planned_file&quot;,
+  &quot;decision&quot;: &quot;new_proposed&quot;,
+  &quot;production_status&quot;: &quot;not_created&quot;,
+  &quot;specification_status&quot;: &quot;K0_proposal_not_runtime_frozen&quot;,
+  &quot;frame_size&quot;: [
+    96,
+    96
+  ],
+  &quot;sheet_size&quot;: [
+    576,
+    96
+  ],
+  &quot;frames&quot;: 6,
+  &quot;fps&quot;: 8,
+  &quot;loop&quot;: true,
+  &quot;anchor_px&quot;: [
+    48,
+    94
+  ],
+  &quot;direction&quot;: &quot;right&quot;,
+  &quot;alpha_policy&quot;: &quot;binary&quot;,
+  &quot;palette_rgb_max&quot;: 48,
+  &quot;transparent_margin_px&quot;: 2,
+  &quot;role&quot;: &quot;existing giant identity; fixed feet and torso; no ground effect baked in&quot;,
+  &quot;reference_paths&quot;: [
+    &quot;assets/sprites/enemies/fire_giant.png&quot;
+  ],
+  &quot;sha256&quot;: null,
+  &quot;integration_status&quot;: &quot;not_implemented&quot;,
+  &quot;integration_dependencies&quot;: [
+    &quot;C5&quot;,
+    &quot;K4&quot;
+  ],
+  &quot;approval_gate&quot;: &quot;C5&quot;,
+  &quot;scale&quot;: &quot;1x for bodies; texture effects clipped to authoritative geometry&quot;,
+  &quot;integration_target&quot;: &quot;scripts/data/enemy_db.gd + scripts/entities/enemy.gd:_ready/_physics_process/_die; NEW K4 scoped state handlers&quot;,
+  &quot;draw_layer&quot;: &quot;actor&quot;,
+  &quot;rotation_contract&quot;: &quot;right-facing; rotate abstract directional FX only; mirror body and sockets together&quot;,
+  &quot;collision_contract&quot;: &quot;texture never defines collider; controller shares geometry with visual clip&quot;
+}</pre></details><details><summary>K4 / new_proposed / assets/sprites/enemies/fire_giant_attack.png</summary><pre>{
+  &quot;id&quot;: &quot;fire_giant_attack&quot;,
+  &quot;task&quot;: &quot;K4&quot;,
+  &quot;path&quot;: &quot;assets/sprites/enemies/fire_giant_attack.png&quot;,
+  &quot;representation&quot;: &quot;planned_file&quot;,
+  &quot;decision&quot;: &quot;new_proposed&quot;,
+  &quot;production_status&quot;: &quot;not_created&quot;,
+  &quot;specification_status&quot;: &quot;K0_proposal_not_runtime_frozen&quot;,
+  &quot;frame_size&quot;: [
+    96,
+    96
+  ],
+  &quot;sheet_size&quot;: [
+    384,
+    96
+  ],
+  &quot;frames&quot;: 4,
+  &quot;fps&quot;: 16,
+  &quot;loop&quot;: false,
+  &quot;anchor_px&quot;: [
+    48,
+    94
+  ],
+  &quot;direction&quot;: &quot;right&quot;,
+  &quot;alpha_policy&quot;: &quot;binary&quot;,
+  &quot;palette_rgb_max&quot;: 48,
+  &quot;transparent_margin_px&quot;: 2,
+  &quot;role&quot;: &quot;existing giant identity; fixed feet and torso; no ground effect baked in&quot;,
+  &quot;reference_paths&quot;: [
+    &quot;assets/sprites/enemies/fire_giant.png&quot;
+  ],
+  &quot;sha256&quot;: null,
+  &quot;integration_status&quot;: &quot;not_implemented&quot;,
+  &quot;integration_dependencies&quot;: [
+    &quot;C5&quot;,
+    &quot;K4&quot;
+  ],
+  &quot;approval_gate&quot;: &quot;C5&quot;,
+  &quot;scale&quot;: &quot;1x for bodies; texture effects clipped to authoritative geometry&quot;,
+  &quot;integration_target&quot;: &quot;scripts/data/enemy_db.gd + scripts/entities/enemy.gd:_ready/_physics_process/_die; NEW K4 scoped state handlers&quot;,
+  &quot;draw_layer&quot;: &quot;actor&quot;,
+  &quot;rotation_contract&quot;: &quot;right-facing; rotate abstract directional FX only; mirror body and sockets together&quot;,
+  &quot;collision_contract&quot;: &quot;texture never defines collider; controller shares geometry with visual clip&quot;
+}</pre></details><details><summary>K4 / new_proposed / assets/sprites/enemies/frost_veteran_move.png</summary><pre>{
+  &quot;id&quot;: &quot;frost_veteran_move&quot;,
+  &quot;task&quot;: &quot;K4&quot;,
+  &quot;path&quot;: &quot;assets/sprites/enemies/frost_veteran_move.png&quot;,
+  &quot;representation&quot;: &quot;planned_file&quot;,
+  &quot;decision&quot;: &quot;new_proposed&quot;,
+  &quot;production_status&quot;: &quot;not_created&quot;,
+  &quot;specification_status&quot;: &quot;K0_proposal_not_runtime_frozen&quot;,
+  &quot;frame_size&quot;: [
+    96,
+    96
+  ],
+  &quot;sheet_size&quot;: [
+    576,
+    96
+  ],
+  &quot;frames&quot;: 6,
+  &quot;fps&quot;: 8,
+  &quot;loop&quot;: true,
+  &quot;anchor_px&quot;: [
+    48,
+    94
+  ],
+  &quot;direction&quot;: &quot;right&quot;,
+  &quot;alpha_policy&quot;: &quot;binary&quot;,
+  &quot;palette_rgb_max&quot;: 48,
+  &quot;transparent_margin_px&quot;: 2,
+  &quot;role&quot;: &quot;existing giant identity; fixed feet and torso; no ground effect baked in&quot;,
+  &quot;reference_paths&quot;: [
+    &quot;assets/sprites/enemies/frost_veteran.png&quot;
+  ],
+  &quot;sha256&quot;: null,
+  &quot;integration_status&quot;: &quot;not_implemented&quot;,
+  &quot;integration_dependencies&quot;: [
+    &quot;C5&quot;,
+    &quot;K4&quot;
+  ],
+  &quot;approval_gate&quot;: &quot;C5&quot;,
+  &quot;scale&quot;: &quot;1x for bodies; texture effects clipped to authoritative geometry&quot;,
+  &quot;integration_target&quot;: &quot;scripts/data/enemy_db.gd + scripts/entities/enemy.gd:_ready/_physics_process/_die; NEW K4 scoped state handlers&quot;,
+  &quot;draw_layer&quot;: &quot;actor&quot;,
+  &quot;rotation_contract&quot;: &quot;right-facing; rotate abstract directional FX only; mirror body and sockets together&quot;,
+  &quot;collision_contract&quot;: &quot;texture never defines collider; controller shares geometry with visual clip&quot;
+}</pre></details><details><summary>K4 / new_proposed / assets/sprites/enemies/frost_veteran_attack.png</summary><pre>{
+  &quot;id&quot;: &quot;frost_veteran_attack&quot;,
+  &quot;task&quot;: &quot;K4&quot;,
+  &quot;path&quot;: &quot;assets/sprites/enemies/frost_veteran_attack.png&quot;,
+  &quot;representation&quot;: &quot;planned_file&quot;,
+  &quot;decision&quot;: &quot;new_proposed&quot;,
+  &quot;production_status&quot;: &quot;not_created&quot;,
+  &quot;specification_status&quot;: &quot;K0_proposal_not_runtime_frozen&quot;,
+  &quot;frame_size&quot;: [
+    96,
+    96
+  ],
+  &quot;sheet_size&quot;: [
+    384,
+    96
+  ],
+  &quot;frames&quot;: 4,
+  &quot;fps&quot;: 16,
+  &quot;loop&quot;: false,
+  &quot;anchor_px&quot;: [
+    48,
+    94
+  ],
+  &quot;direction&quot;: &quot;right&quot;,
+  &quot;alpha_policy&quot;: &quot;binary&quot;,
+  &quot;palette_rgb_max&quot;: 48,
+  &quot;transparent_margin_px&quot;: 2,
+  &quot;role&quot;: &quot;existing giant identity; fixed feet and torso; no ground effect baked in&quot;,
+  &quot;reference_paths&quot;: [
+    &quot;assets/sprites/enemies/frost_veteran.png&quot;
+  ],
+  &quot;sha256&quot;: null,
+  &quot;integration_status&quot;: &quot;not_implemented&quot;,
+  &quot;integration_dependencies&quot;: [
+    &quot;C5&quot;,
+    &quot;K4&quot;
+  ],
+  &quot;approval_gate&quot;: &quot;C5&quot;,
+  &quot;scale&quot;: &quot;1x for bodies; texture effects clipped to authoritative geometry&quot;,
+  &quot;integration_target&quot;: &quot;scripts/data/enemy_db.gd + scripts/entities/enemy.gd:_ready/_physics_process/_die; NEW K4 scoped state handlers&quot;,
+  &quot;draw_layer&quot;: &quot;actor&quot;,
+  &quot;rotation_contract&quot;: &quot;right-facing; rotate abstract directional FX only; mirror body and sockets together&quot;,
+  &quot;collision_contract&quot;: &quot;texture never defines collider; controller shares geometry with visual clip&quot;
+}</pre></details><details><summary>K4 / new_proposed / assets/sprites/enemies/frost_veteran_charge.png</summary><pre>{
+  &quot;id&quot;: &quot;frost_veteran_charge&quot;,
+  &quot;task&quot;: &quot;K4&quot;,
+  &quot;path&quot;: &quot;assets/sprites/enemies/frost_veteran_charge.png&quot;,
+  &quot;representation&quot;: &quot;planned_file&quot;,
+  &quot;decision&quot;: &quot;new_proposed&quot;,
+  &quot;production_status&quot;: &quot;not_created&quot;,
+  &quot;specification_status&quot;: &quot;K0_proposal_not_runtime_frozen&quot;,
+  &quot;frame_size&quot;: [
+    96,
+    96
+  ],
+  &quot;sheet_size&quot;: [
+    384,
+    96
+  ],
+  &quot;frames&quot;: 4,
+  &quot;fps&quot;: 8,
+  &quot;loop&quot;: true,
+  &quot;anchor_px&quot;: [
+    48,
+    94
+  ],
+  &quot;direction&quot;: &quot;right&quot;,
+  &quot;alpha_policy&quot;: &quot;binary&quot;,
+  &quot;palette_rgb_max&quot;: 48,
+  &quot;transparent_margin_px&quot;: 2,
+  &quot;role&quot;: &quot;charge cycle / raise and hold shield; do not obscure attackable back&quot;,
+  &quot;reference_paths&quot;: [
+    &quot;assets/sprites/enemies/frost_veteran.png&quot;
+  ],
+  &quot;sha256&quot;: null,
+  &quot;integration_status&quot;: &quot;not_implemented&quot;,
+  &quot;integration_dependencies&quot;: [
+    &quot;C5&quot;,
+    &quot;K4&quot;
+  ],
+  &quot;approval_gate&quot;: &quot;C5&quot;,
+  &quot;scale&quot;: &quot;1x for bodies; texture effects clipped to authoritative geometry&quot;,
+  &quot;integration_target&quot;: &quot;scripts/data/enemy_db.gd + scripts/entities/enemy.gd:_ready/_physics_process/_die; NEW K4 scoped state handlers&quot;,
+  &quot;draw_layer&quot;: &quot;actor&quot;,
+  &quot;rotation_contract&quot;: &quot;right-facing; rotate abstract directional FX only; mirror body and sockets together&quot;,
+  &quot;collision_contract&quot;: &quot;texture never defines collider; controller shares geometry with visual clip&quot;
+}</pre></details><details><summary>K4 / new_proposed / assets/sprites/enemies/frost_veteran_shield.png</summary><pre>{
+  &quot;id&quot;: &quot;frost_veteran_shield&quot;,
+  &quot;task&quot;: &quot;K4&quot;,
+  &quot;path&quot;: &quot;assets/sprites/enemies/frost_veteran_shield.png&quot;,
+  &quot;representation&quot;: &quot;planned_file&quot;,
+  &quot;decision&quot;: &quot;new_proposed&quot;,
+  &quot;production_status&quot;: &quot;not_created&quot;,
+  &quot;specification_status&quot;: &quot;K0_proposal_not_runtime_frozen&quot;,
+  &quot;frame_size&quot;: [
+    96,
+    96
+  ],
+  &quot;sheet_size&quot;: [
+    288,
+    96
+  ],
+  &quot;frames&quot;: 3,
+  &quot;fps&quot;: 8,
+  &quot;loop&quot;: false,
+  &quot;anchor_px&quot;: [
+    48,
+    94
+  ],
+  &quot;direction&quot;: &quot;right&quot;,
+  &quot;alpha_policy&quot;: &quot;binary&quot;,
+  &quot;palette_rgb_max&quot;: 48,
+  &quot;transparent_margin_px&quot;: 2,
+  &quot;role&quot;: &quot;charge cycle / raise and hold shield; do not obscure attackable back&quot;,
+  &quot;reference_paths&quot;: [
+    &quot;assets/sprites/enemies/frost_veteran.png&quot;
+  ],
+  &quot;sha256&quot;: null,
+  &quot;integration_status&quot;: &quot;not_implemented&quot;,
+  &quot;integration_dependencies&quot;: [
+    &quot;C5&quot;,
+    &quot;K4&quot;
+  ],
+  &quot;approval_gate&quot;: &quot;C5&quot;,
+  &quot;scale&quot;: &quot;1x for bodies; texture effects clipped to authoritative geometry&quot;,
+  &quot;integration_target&quot;: &quot;scripts/data/enemy_db.gd + scripts/entities/enemy.gd:_ready/_physics_process/_die; NEW K4 scoped state handlers&quot;,
+  &quot;draw_layer&quot;: &quot;actor&quot;,
+  &quot;rotation_contract&quot;: &quot;right-facing; rotate abstract directional FX only; mirror body and sockets together&quot;,
+  &quot;collision_contract&quot;: &quot;texture never defines collider; controller shares geometry with visual clip&quot;
+}</pre></details><details><summary>K4 / new_proposed / assets/sprites/enemies/wolf_berserker.png</summary><pre>{
+  &quot;id&quot;: &quot;wolf_berserker&quot;,
+  &quot;task&quot;: &quot;K4&quot;,
+  &quot;path&quot;: &quot;assets/sprites/enemies/wolf_berserker.png&quot;,
+  &quot;representation&quot;: &quot;planned_file&quot;,
+  &quot;decision&quot;: &quot;new_proposed&quot;,
+  &quot;production_status&quot;: &quot;not_created&quot;,
+  &quot;specification_status&quot;: &quot;K0_proposal_not_runtime_frozen&quot;,
+  &quot;frame_size&quot;: [
+    64,
+    64
+  ],
+  &quot;sheet_size&quot;: [
+    64,
+    64
+  ],
+  &quot;frames&quot;: 1,
+  &quot;fps&quot;: 0,
+  &quot;loop&quot;: false,
+  &quot;anchor_px&quot;: [
+    32,
+    62
+  ],
+  &quot;direction&quot;: &quot;right&quot;,
+  &quot;alpha_policy&quot;: &quot;binary&quot;,
+  &quot;palette_rgb_max&quot;: 48,
+  &quot;transparent_margin_px&quot;: 2,
+  &quot;role&quot;: &quot;human wolf-pelt warrior, distinct from quadruped wolves and dead; rage has a readable raised silhouette&quot;,
+  &quot;reference_paths&quot;: [
+    &quot;assets/sprites/enemies/dead.png&quot;,
+    &quot;assets/sprites/bosses/fenrir.png&quot;
+  ],
+  &quot;sha256&quot;: null,
+  &quot;integration_status&quot;: &quot;not_implemented&quot;,
+  &quot;integration_dependencies&quot;: [
+    &quot;C5&quot;,
+    &quot;K4&quot;
+  ],
+  &quot;approval_gate&quot;: &quot;C5&quot;,
+  &quot;scale&quot;: &quot;1x for bodies; texture effects clipped to authoritative geometry&quot;,
+  &quot;integration_target&quot;: &quot;scripts/data/enemy_db.gd + scripts/entities/enemy.gd:_ready/_physics_process/_die; NEW K4 scoped state handlers&quot;,
+  &quot;draw_layer&quot;: &quot;actor&quot;,
+  &quot;rotation_contract&quot;: &quot;right-facing; rotate abstract directional FX only; mirror body and sockets together&quot;,
+  &quot;collision_contract&quot;: &quot;texture never defines collider; controller shares geometry with visual clip&quot;
+}</pre></details><details><summary>K4 / new_proposed / assets/sprites/enemies/wolf_berserker_move.png</summary><pre>{
+  &quot;id&quot;: &quot;wolf_berserker_move&quot;,
+  &quot;task&quot;: &quot;K4&quot;,
+  &quot;path&quot;: &quot;assets/sprites/enemies/wolf_berserker_move.png&quot;,
+  &quot;representation&quot;: &quot;planned_file&quot;,
+  &quot;decision&quot;: &quot;new_proposed&quot;,
+  &quot;production_status&quot;: &quot;not_created&quot;,
+  &quot;specification_status&quot;: &quot;K0_proposal_not_runtime_frozen&quot;,
+  &quot;frame_size&quot;: [
+    64,
+    64
+  ],
+  &quot;sheet_size&quot;: [
+    384,
+    64
+  ],
+  &quot;frames&quot;: 6,
+  &quot;fps&quot;: 8,
+  &quot;loop&quot;: true,
+  &quot;anchor_px&quot;: [
+    32,
+    62
+  ],
+  &quot;direction&quot;: &quot;right&quot;,
+  &quot;alpha_policy&quot;: &quot;binary&quot;,
+  &quot;palette_rgb_max&quot;: 48,
+  &quot;transparent_margin_px&quot;: 2,
+  &quot;role&quot;: &quot;human wolf-pelt warrior, distinct from quadruped wolves and dead; rage has a readable raised silhouette&quot;,
+  &quot;reference_paths&quot;: [
+    &quot;assets/sprites/enemies/dead.png&quot;,
+    &quot;assets/sprites/bosses/fenrir.png&quot;
+  ],
+  &quot;sha256&quot;: null,
+  &quot;integration_status&quot;: &quot;not_implemented&quot;,
+  &quot;integration_dependencies&quot;: [
+    &quot;C5&quot;,
+    &quot;K4&quot;
+  ],
+  &quot;approval_gate&quot;: &quot;C5&quot;,
+  &quot;scale&quot;: &quot;1x for bodies; texture effects clipped to authoritative geometry&quot;,
+  &quot;integration_target&quot;: &quot;scripts/data/enemy_db.gd + scripts/entities/enemy.gd:_ready/_physics_process/_die; NEW K4 scoped state handlers&quot;,
+  &quot;draw_layer&quot;: &quot;actor&quot;,
+  &quot;rotation_contract&quot;: &quot;right-facing; rotate abstract directional FX only; mirror body and sockets together&quot;,
+  &quot;collision_contract&quot;: &quot;texture never defines collider; controller shares geometry with visual clip&quot;
+}</pre></details><details><summary>K4 / new_proposed / assets/sprites/enemies/wolf_berserker_attack.png</summary><pre>{
+  &quot;id&quot;: &quot;wolf_berserker_attack&quot;,
+  &quot;task&quot;: &quot;K4&quot;,
+  &quot;path&quot;: &quot;assets/sprites/enemies/wolf_berserker_attack.png&quot;,
+  &quot;representation&quot;: &quot;planned_file&quot;,
+  &quot;decision&quot;: &quot;new_proposed&quot;,
+  &quot;production_status&quot;: &quot;not_created&quot;,
+  &quot;specification_status&quot;: &quot;K0_proposal_not_runtime_frozen&quot;,
+  &quot;frame_size&quot;: [
+    64,
+    64
+  ],
+  &quot;sheet_size&quot;: [
+    256,
+    64
+  ],
+  &quot;frames&quot;: 4,
+  &quot;fps&quot;: 16,
+  &quot;loop&quot;: false,
+  &quot;anchor_px&quot;: [
+    32,
+    62
+  ],
+  &quot;direction&quot;: &quot;right&quot;,
+  &quot;alpha_policy&quot;: &quot;binary&quot;,
+  &quot;palette_rgb_max&quot;: 48,
+  &quot;transparent_margin_px&quot;: 2,
+  &quot;role&quot;: &quot;human wolf-pelt warrior, distinct from quadruped wolves and dead; rage has a readable raised silhouette&quot;,
+  &quot;reference_paths&quot;: [
+    &quot;assets/sprites/enemies/dead.png&quot;,
+    &quot;assets/sprites/bosses/fenrir.png&quot;
+  ],
+  &quot;sha256&quot;: null,
+  &quot;integration_status&quot;: &quot;not_implemented&quot;,
+  &quot;integration_dependencies&quot;: [
+    &quot;C5&quot;,
+    &quot;K4&quot;
+  ],
+  &quot;approval_gate&quot;: &quot;C5&quot;,
+  &quot;scale&quot;: &quot;1x for bodies; texture effects clipped to authoritative geometry&quot;,
+  &quot;integration_target&quot;: &quot;scripts/data/enemy_db.gd + scripts/entities/enemy.gd:_ready/_physics_process/_die; NEW K4 scoped state handlers&quot;,
+  &quot;draw_layer&quot;: &quot;actor&quot;,
+  &quot;rotation_contract&quot;: &quot;right-facing; rotate abstract directional FX only; mirror body and sockets together&quot;,
+  &quot;collision_contract&quot;: &quot;texture never defines collider; controller shares geometry with visual clip&quot;
+}</pre></details><details><summary>K4 / new_proposed / assets/sprites/enemies/wolf_berserker_rage.png</summary><pre>{
+  &quot;id&quot;: &quot;wolf_berserker_rage&quot;,
+  &quot;task&quot;: &quot;K4&quot;,
+  &quot;path&quot;: &quot;assets/sprites/enemies/wolf_berserker_rage.png&quot;,
+  &quot;representation&quot;: &quot;planned_file&quot;,
+  &quot;decision&quot;: &quot;new_proposed&quot;,
+  &quot;production_status&quot;: &quot;not_created&quot;,
+  &quot;specification_status&quot;: &quot;K0_proposal_not_runtime_frozen&quot;,
+  &quot;frame_size&quot;: [
+    64,
+    64
+  ],
+  &quot;sheet_size&quot;: [
+    192,
+    64
+  ],
+  &quot;frames&quot;: 3,
+  &quot;fps&quot;: 8,
+  &quot;loop&quot;: false,
+  &quot;anchor_px&quot;: [
+    32,
+    62
+  ],
+  &quot;direction&quot;: &quot;right&quot;,
+  &quot;alpha_policy&quot;: &quot;binary&quot;,
+  &quot;palette_rgb_max&quot;: 48,
+  &quot;transparent_margin_px&quot;: 2,
+  &quot;role&quot;: &quot;human wolf-pelt warrior, distinct from quadruped wolves and dead; rage has a readable raised silhouette&quot;,
+  &quot;reference_paths&quot;: [
+    &quot;assets/sprites/enemies/dead.png&quot;,
+    &quot;assets/sprites/bosses/fenrir.png&quot;
+  ],
+  &quot;sha256&quot;: null,
+  &quot;integration_status&quot;: &quot;not_implemented&quot;,
+  &quot;integration_dependencies&quot;: [
+    &quot;C5&quot;,
+    &quot;K4&quot;
+  ],
+  &quot;approval_gate&quot;: &quot;C5&quot;,
+  &quot;scale&quot;: &quot;1x for bodies; texture effects clipped to authoritative geometry&quot;,
+  &quot;integration_target&quot;: &quot;scripts/data/enemy_db.gd + scripts/entities/enemy.gd:_ready/_physics_process/_die; NEW K4 scoped state handlers&quot;,
+  &quot;draw_layer&quot;: &quot;actor&quot;,
+  &quot;rotation_contract&quot;: &quot;right-facing; rotate abstract directional FX only; mirror body and sockets together&quot;,
+  &quot;collision_contract&quot;: &quot;texture never defines collider; controller shares geometry with visual clip&quot;
+}</pre></details><details><summary>K4 / new_proposed / assets/sprites/effects/bosses/fire_giant_explosion.png</summary><pre>{
+  &quot;id&quot;: &quot;fire_giant_explosion&quot;,
+  &quot;task&quot;: &quot;K4&quot;,
+  &quot;path&quot;: &quot;assets/sprites/effects/bosses/fire_giant_explosion.png&quot;,
+  &quot;representation&quot;: &quot;planned_file&quot;,
+  &quot;decision&quot;: &quot;new_proposed&quot;,
+  &quot;production_status&quot;: &quot;not_created&quot;,
+  &quot;specification_status&quot;: &quot;K0_proposal_not_runtime_frozen&quot;,
+  &quot;frame_size&quot;: [
+    96,
+    96
+  ],
+  &quot;sheet_size&quot;: [
+    384,
+    96
+  ],
+  &quot;frames&quot;: 4,
+  &quot;fps&quot;: 16,
+  &quot;loop&quot;: false,
+  &quot;anchor_px&quot;: [
+    48,
+    48
+  ],
+  &quot;direction&quot;: &quot;right&quot;,
+  &quot;alpha_policy&quot;: &quot;soft_effect&quot;,
+  &quot;palette_rgb_max&quot;: 48,
+  &quot;transparent_margin_px&quot;: 2,
+  &quot;role&quot;: &quot;death explosion only, no giant corpse baked in; persistent fire reuses existing patch&quot;,
+  &quot;reference_paths&quot;: [
+    &quot;assets/sprites/enemies/fire_giant.png&quot;
+  ],
+  &quot;sha256&quot;: null,
+  &quot;integration_status&quot;: &quot;not_implemented&quot;,
+  &quot;integration_dependencies&quot;: [
+    &quot;C5&quot;,
+    &quot;K4&quot;
+  ],
+  &quot;approval_gate&quot;: &quot;C5&quot;,
+  &quot;scale&quot;: &quot;1x for bodies; texture effects clipped to authoritative geometry&quot;,
+  &quot;integration_target&quot;: &quot;NEW K4 death/shield dispatcher; existing generic FxLayer paths&quot;,
+  &quot;draw_layer&quot;: &quot;under actors for ground hazards; warnings and safe outlines above visual texture&quot;,
+  &quot;rotation_contract&quot;: &quot;right-facing; rotate abstract directional FX only; mirror body and sockets together&quot;,
+  &quot;collision_contract&quot;: &quot;texture never defines collider; controller shares geometry with visual clip&quot;
+}</pre></details><details><summary>K2 / new_proposed / assets/sprites/allies/vidar.png</summary><pre>{
+  &quot;id&quot;: &quot;vidar&quot;,
+  &quot;task&quot;: &quot;K2&quot;,
+  &quot;path&quot;: &quot;assets/sprites/allies/vidar.png&quot;,
+  &quot;representation&quot;: &quot;planned_file&quot;,
+  &quot;decision&quot;: &quot;new_proposed&quot;,
+  &quot;production_status&quot;: &quot;not_created&quot;,
+  &quot;specification_status&quot;: &quot;K0_proposal_not_runtime_frozen&quot;,
+  &quot;frame_size&quot;: [
+    96,
+    96
+  ],
+  &quot;sheet_size&quot;: [
+    96,
+    96
+  ],
+  &quot;frames&quot;: 1,
+  &quot;fps&quot;: 0,
+  &quot;loop&quot;: false,
+  &quot;anchor_px&quot;: [
+    48,
+    94
+  ],
+  &quot;direction&quot;: &quot;right&quot;,
+  &quot;alpha_policy&quot;: &quot;binary&quot;,
+  &quot;palette_rgb_max&quot;: 48,
+  &quot;transparent_margin_px&quot;: 2,
+  &quot;role&quot;: &quot;new world-space ally; portrait is color/identity reference only, never a world sprite; heavy boot bracing lower jaw and hands lifting upper jaw&quot;,
+  &quot;reference_paths&quot;: [
+    &quot;assets/sprites/characters/swordsman.png&quot;,
+    &quot;assets/sprites/cards/odin.png&quot;
+  ],
+  &quot;sha256&quot;: null,
+  &quot;integration_status&quot;: &quot;not_implemented&quot;,
+  &quot;integration_dependencies&quot;: [
+    &quot;C6&quot;,
+    &quot;K2&quot;
+  ],
+  &quot;approval_gate&quot;: &quot;C6&quot;,
+  &quot;scale&quot;: &quot;1x for bodies; texture effects clipped to authoritative geometry&quot;,
+  &quot;integration_target&quot;: &quot;NEW scripts/allies/vidar_aid.gd: visual/phase adapter&quot;,
+  &quot;draw_layer&quot;: &quot;non-targetable world ally&quot;,
+  &quot;rotation_contract&quot;: &quot;right-facing; rotate abstract directional FX only; mirror body and sockets together&quot;,
+  &quot;collision_contract&quot;: &quot;texture never defines collider; controller shares geometry with visual clip&quot;
+}</pre></details><details><summary>K2 / new_proposed / assets/sprites/allies/vidar_idle.png</summary><pre>{
+  &quot;id&quot;: &quot;vidar_idle&quot;,
+  &quot;task&quot;: &quot;K2&quot;,
+  &quot;path&quot;: &quot;assets/sprites/allies/vidar_idle.png&quot;,
+  &quot;representation&quot;: &quot;planned_file&quot;,
+  &quot;decision&quot;: &quot;new_proposed&quot;,
+  &quot;production_status&quot;: &quot;not_created&quot;,
+  &quot;specification_status&quot;: &quot;K0_proposal_not_runtime_frozen&quot;,
+  &quot;frame_size&quot;: [
+    96,
+    96
+  ],
+  &quot;sheet_size&quot;: [
+    384,
+    96
+  ],
+  &quot;frames&quot;: 4,
+  &quot;fps&quot;: 8,
+  &quot;loop&quot;: true,
+  &quot;anchor_px&quot;: [
+    48,
+    94
+  ],
+  &quot;direction&quot;: &quot;right&quot;,
+  &quot;alpha_policy&quot;: &quot;binary&quot;,
+  &quot;palette_rgb_max&quot;: 48,
+  &quot;transparent_margin_px&quot;: 2,
+  &quot;role&quot;: &quot;new world-space ally; portrait is color/identity reference only, never a world sprite; heavy boot bracing lower jaw and hands lifting upper jaw&quot;,
+  &quot;reference_paths&quot;: [
+    &quot;assets/sprites/characters/swordsman.png&quot;,
+    &quot;assets/sprites/cards/odin.png&quot;
+  ],
+  &quot;sha256&quot;: null,
+  &quot;integration_status&quot;: &quot;not_implemented&quot;,
+  &quot;integration_dependencies&quot;: [
+    &quot;C6&quot;,
+    &quot;K2&quot;
+  ],
+  &quot;approval_gate&quot;: &quot;C6&quot;,
+  &quot;scale&quot;: &quot;1x for bodies; texture effects clipped to authoritative geometry&quot;,
+  &quot;integration_target&quot;: &quot;NEW scripts/allies/vidar_aid.gd: visual/phase adapter&quot;,
+  &quot;draw_layer&quot;: &quot;non-targetable world ally&quot;,
+  &quot;rotation_contract&quot;: &quot;right-facing; rotate abstract directional FX only; mirror body and sockets together&quot;,
+  &quot;collision_contract&quot;: &quot;texture never defines collider; controller shares geometry with visual clip&quot;
+}</pre></details><details><summary>K2 / new_proposed / assets/sprites/allies/vidar_pry.png</summary><pre>{
+  &quot;id&quot;: &quot;vidar_pry&quot;,
+  &quot;task&quot;: &quot;K2&quot;,
+  &quot;path&quot;: &quot;assets/sprites/allies/vidar_pry.png&quot;,
+  &quot;representation&quot;: &quot;planned_file&quot;,
+  &quot;decision&quot;: &quot;new_proposed&quot;,
+  &quot;production_status&quot;: &quot;not_created&quot;,
+  &quot;specification_status&quot;: &quot;K0_proposal_not_runtime_frozen&quot;,
+  &quot;frame_size&quot;: [
+    96,
+    96
+  ],
+  &quot;sheet_size&quot;: [
+    576,
+    96
+  ],
+  &quot;frames&quot;: 6,
+  &quot;fps&quot;: 16,
+  &quot;loop&quot;: false,
+  &quot;anchor_px&quot;: [
+    48,
+    94
+  ],
+  &quot;direction&quot;: &quot;right&quot;,
+  &quot;alpha_policy&quot;: &quot;binary&quot;,
+  &quot;palette_rgb_max&quot;: 48,
+  &quot;transparent_margin_px&quot;: 2,
+  &quot;role&quot;: &quot;new world-space ally; portrait is color/identity reference only, never a world sprite; heavy boot bracing lower jaw and hands lifting upper jaw&quot;,
+  &quot;reference_paths&quot;: [
+    &quot;assets/sprites/characters/swordsman.png&quot;,
+    &quot;assets/sprites/cards/odin.png&quot;
+  ],
+  &quot;sha256&quot;: null,
+  &quot;integration_status&quot;: &quot;not_implemented&quot;,
+  &quot;integration_dependencies&quot;: [
+    &quot;C6&quot;,
+    &quot;K2&quot;
+  ],
+  &quot;approval_gate&quot;: &quot;C6&quot;,
+  &quot;scale&quot;: &quot;1x for bodies; texture effects clipped to authoritative geometry&quot;,
+  &quot;integration_target&quot;: &quot;NEW scripts/allies/vidar_aid.gd: visual/phase adapter&quot;,
+  &quot;draw_layer&quot;: &quot;non-targetable world ally&quot;,
+  &quot;rotation_contract&quot;: &quot;right-facing; rotate abstract directional FX only; mirror body and sockets together&quot;,
+  &quot;collision_contract&quot;: &quot;texture never defines collider; controller shares geometry with visual clip&quot;
+}</pre></details><details><summary>K3 / new_proposed / assets/sprites/allies/freyr.png</summary><pre>{
+  &quot;id&quot;: &quot;freyr&quot;,
+  &quot;task&quot;: &quot;K3&quot;,
+  &quot;path&quot;: &quot;assets/sprites/allies/freyr.png&quot;,
+  &quot;representation&quot;: &quot;planned_file&quot;,
+  &quot;decision&quot;: &quot;new_proposed&quot;,
+  &quot;production_status&quot;: &quot;not_created&quot;,
+  &quot;specification_status&quot;: &quot;K0_proposal_not_runtime_frozen&quot;,
+  &quot;frame_size&quot;: [
+    64,
+    64
+  ],
+  &quot;sheet_size&quot;: [
+    64,
+    64
+  ],
+  &quot;frames&quot;: 1,
+  &quot;fps&quot;: 0,
+  &quot;loop&quot;: false,
+  &quot;anchor_px&quot;: [
+    32,
+    62
+  ],
+  &quot;direction&quot;: &quot;right&quot;,
+  &quot;alpha_policy&quot;: &quot;binary&quot;,
+  &quot;palette_rgb_max&quot;: 48,
+  &quot;transparent_margin_px&quot;: 2,
+  &quot;role&quot;: &quot;new world-space ally; portrait is color/identity reference only, never a world sprite; unarmed treatment gesture; no duplicate divine flying sword&quot;,
+  &quot;reference_paths&quot;: [
+    &quot;assets/sprites/characters/swordsman.png&quot;,
+    &quot;assets/sprites/cards/freyr.png&quot;
+  ],
+  &quot;sha256&quot;: null,
+  &quot;integration_status&quot;: &quot;not_implemented&quot;,
+  &quot;integration_dependencies&quot;: [
+    &quot;C6&quot;,
+    &quot;K3&quot;
+  ],
+  &quot;approval_gate&quot;: &quot;C6&quot;,
+  &quot;scale&quot;: &quot;1x for bodies; texture effects clipped to authoritative geometry&quot;,
+  &quot;integration_target&quot;: &quot;NEW scripts/allies/freyr_aid.gd: visual/phase adapter&quot;,
+  &quot;draw_layer&quot;: &quot;non-targetable world ally&quot;,
+  &quot;rotation_contract&quot;: &quot;right-facing; rotate abstract directional FX only; mirror body and sockets together&quot;,
+  &quot;collision_contract&quot;: &quot;texture never defines collider; controller shares geometry with visual clip&quot;
+}</pre></details><details><summary>K3 / new_proposed / assets/sprites/allies/freyr_idle.png</summary><pre>{
+  &quot;id&quot;: &quot;freyr_idle&quot;,
+  &quot;task&quot;: &quot;K3&quot;,
+  &quot;path&quot;: &quot;assets/sprites/allies/freyr_idle.png&quot;,
+  &quot;representation&quot;: &quot;planned_file&quot;,
+  &quot;decision&quot;: &quot;new_proposed&quot;,
+  &quot;production_status&quot;: &quot;not_created&quot;,
+  &quot;specification_status&quot;: &quot;K0_proposal_not_runtime_frozen&quot;,
+  &quot;frame_size&quot;: [
+    64,
+    64
+  ],
+  &quot;sheet_size&quot;: [
+    256,
+    64
+  ],
+  &quot;frames&quot;: 4,
+  &quot;fps&quot;: 8,
+  &quot;loop&quot;: true,
+  &quot;anchor_px&quot;: [
+    32,
+    62
+  ],
+  &quot;direction&quot;: &quot;right&quot;,
+  &quot;alpha_policy&quot;: &quot;binary&quot;,
+  &quot;palette_rgb_max&quot;: 48,
+  &quot;transparent_margin_px&quot;: 2,
+  &quot;role&quot;: &quot;new world-space ally; portrait is color/identity reference only, never a world sprite; unarmed treatment gesture; no duplicate divine flying sword&quot;,
+  &quot;reference_paths&quot;: [
+    &quot;assets/sprites/characters/swordsman.png&quot;,
+    &quot;assets/sprites/cards/freyr.png&quot;
+  ],
+  &quot;sha256&quot;: null,
+  &quot;integration_status&quot;: &quot;not_implemented&quot;,
+  &quot;integration_dependencies&quot;: [
+    &quot;C6&quot;,
+    &quot;K3&quot;
+  ],
+  &quot;approval_gate&quot;: &quot;C6&quot;,
+  &quot;scale&quot;: &quot;1x for bodies; texture effects clipped to authoritative geometry&quot;,
+  &quot;integration_target&quot;: &quot;NEW scripts/allies/freyr_aid.gd: visual/phase adapter&quot;,
+  &quot;draw_layer&quot;: &quot;non-targetable world ally&quot;,
+  &quot;rotation_contract&quot;: &quot;right-facing; rotate abstract directional FX only; mirror body and sockets together&quot;,
+  &quot;collision_contract&quot;: &quot;texture never defines collider; controller shares geometry with visual clip&quot;
+}</pre></details><details><summary>K3 / new_proposed / assets/sprites/allies/freyr_heal.png</summary><pre>{
+  &quot;id&quot;: &quot;freyr_heal&quot;,
+  &quot;task&quot;: &quot;K3&quot;,
+  &quot;path&quot;: &quot;assets/sprites/allies/freyr_heal.png&quot;,
+  &quot;representation&quot;: &quot;planned_file&quot;,
+  &quot;decision&quot;: &quot;new_proposed&quot;,
+  &quot;production_status&quot;: &quot;not_created&quot;,
+  &quot;specification_status&quot;: &quot;K0_proposal_not_runtime_frozen&quot;,
+  &quot;frame_size&quot;: [
+    64,
+    64
+  ],
+  &quot;sheet_size&quot;: [
+    256,
+    64
+  ],
+  &quot;frames&quot;: 4,
+  &quot;fps&quot;: 16,
+  &quot;loop&quot;: false,
+  &quot;anchor_px&quot;: [
+    32,
+    62
+  ],
+  &quot;direction&quot;: &quot;right&quot;,
+  &quot;alpha_policy&quot;: &quot;binary&quot;,
+  &quot;palette_rgb_max&quot;: 48,
+  &quot;transparent_margin_px&quot;: 2,
+  &quot;role&quot;: &quot;new world-space ally; portrait is color/identity reference only, never a world sprite; unarmed treatment gesture; no duplicate divine flying sword&quot;,
+  &quot;reference_paths&quot;: [
+    &quot;assets/sprites/characters/swordsman.png&quot;,
+    &quot;assets/sprites/cards/freyr.png&quot;
+  ],
+  &quot;sha256&quot;: null,
+  &quot;integration_status&quot;: &quot;not_implemented&quot;,
+  &quot;integration_dependencies&quot;: [
+    &quot;C6&quot;,
+    &quot;K3&quot;
+  ],
+  &quot;approval_gate&quot;: &quot;C6&quot;,
+  &quot;scale&quot;: &quot;1x for bodies; texture effects clipped to authoritative geometry&quot;,
+  &quot;integration_target&quot;: &quot;NEW scripts/allies/freyr_aid.gd: visual/phase adapter&quot;,
+  &quot;draw_layer&quot;: &quot;non-targetable world ally&quot;,
+  &quot;rotation_contract&quot;: &quot;right-facing; rotate abstract directional FX only; mirror body and sockets together&quot;,
+  &quot;collision_contract&quot;: &quot;texture never defines collider; controller shares geometry with visual clip&quot;
+}</pre></details><details><summary>K5 / new_proposed / assets/sprites/ground/vigrid/grass_edge_n.png</summary><pre>{
+  &quot;id&quot;: &quot;grass_edge_n&quot;,
+  &quot;task&quot;: &quot;K5&quot;,
+  &quot;path&quot;: &quot;assets/sprites/ground/vigrid/grass_edge_n.png&quot;,
+  &quot;representation&quot;: &quot;planned_file&quot;,
+  &quot;decision&quot;: &quot;new_proposed&quot;,
+  &quot;production_status&quot;: &quot;not_created&quot;,
+  &quot;specification_status&quot;: &quot;K0_proposal_not_runtime_frozen&quot;,
+  &quot;frame_size&quot;: [
+    64,
+    64
+  ],
+  &quot;sheet_size&quot;: [
+    64,
+    64
+  ],
+  &quot;frames&quot;: 1,
+  &quot;fps&quot;: 0,
+  &quot;loop&quot;: false,
+  &quot;anchor_px&quot;: [
+    32,
+    32
+  ],
+  &quot;direction&quot;: &quot;right&quot;,
+  &quot;alpha_policy&quot;: &quot;binary&quot;,
+  &quot;palette_rgb_max&quot;: 48,
+  &quot;transparent_margin_px&quot;: null,
+  &quot;role&quot;: &quot;burnt grass to scorched ground; 12 edge masks required by current MapLayer.EDGE_TILES; no redrawing base tile&quot;,
+  &quot;reference_paths&quot;: [
+    &quot;assets/sprites/ground/vigrid/burnt_grass.png&quot;,
+    &quot;assets/sprites/ground/vigrid/scorched_01.png&quot;
+  ],
+  &quot;sha256&quot;: null,
+  &quot;integration_status&quot;: &quot;not_implemented&quot;,
+  &quot;integration_dependencies&quot;: [
+    &quot;C7&quot;,
+    &quot;K5&quot;
+  ],
+  &quot;approval_gate&quot;: &quot;C7&quot;,
+  &quot;scale&quot;: &quot;1x for bodies; texture effects clipped to authoritative geometry&quot;,
+  &quot;transparent_margin_exception&quot;: &quot;terrain interface must reach tile edge; four-corner bitmask contract&quot;,
+  &quot;integration_target&quot;: &quot;NEW scripts/world/vigrid_map.gd:_init/_layout; MapLayer.set_ground/_paint_edges&quot;,
+  &quot;draw_layer&quot;: &quot;MapLayer ground, below actors&quot;,
+  &quot;rotation_contract&quot;: &quot;right-facing; rotate abstract directional FX only; mirror body and sockets together&quot;,
+  &quot;collision_contract&quot;: &quot;texture never defines collider; controller shares geometry with visual clip&quot;
+}</pre></details><details><summary>K5 / new_proposed / assets/sprites/ground/vigrid/grass_edge_e.png</summary><pre>{
+  &quot;id&quot;: &quot;grass_edge_e&quot;,
+  &quot;task&quot;: &quot;K5&quot;,
+  &quot;path&quot;: &quot;assets/sprites/ground/vigrid/grass_edge_e.png&quot;,
+  &quot;representation&quot;: &quot;planned_file&quot;,
+  &quot;decision&quot;: &quot;new_proposed&quot;,
+  &quot;production_status&quot;: &quot;not_created&quot;,
+  &quot;specification_status&quot;: &quot;K0_proposal_not_runtime_frozen&quot;,
+  &quot;frame_size&quot;: [
+    64,
+    64
+  ],
+  &quot;sheet_size&quot;: [
+    64,
+    64
+  ],
+  &quot;frames&quot;: 1,
+  &quot;fps&quot;: 0,
+  &quot;loop&quot;: false,
+  &quot;anchor_px&quot;: [
+    32,
+    32
+  ],
+  &quot;direction&quot;: &quot;right&quot;,
+  &quot;alpha_policy&quot;: &quot;binary&quot;,
+  &quot;palette_rgb_max&quot;: 48,
+  &quot;transparent_margin_px&quot;: null,
+  &quot;role&quot;: &quot;burnt grass to scorched ground; 12 edge masks required by current MapLayer.EDGE_TILES; no redrawing base tile&quot;,
+  &quot;reference_paths&quot;: [
+    &quot;assets/sprites/ground/vigrid/burnt_grass.png&quot;,
+    &quot;assets/sprites/ground/vigrid/scorched_01.png&quot;
+  ],
+  &quot;sha256&quot;: null,
+  &quot;integration_status&quot;: &quot;not_implemented&quot;,
+  &quot;integration_dependencies&quot;: [
+    &quot;C7&quot;,
+    &quot;K5&quot;
+  ],
+  &quot;approval_gate&quot;: &quot;C7&quot;,
+  &quot;scale&quot;: &quot;1x for bodies; texture effects clipped to authoritative geometry&quot;,
+  &quot;transparent_margin_exception&quot;: &quot;terrain interface must reach tile edge; four-corner bitmask contract&quot;,
+  &quot;integration_target&quot;: &quot;NEW scripts/world/vigrid_map.gd:_init/_layout; MapLayer.set_ground/_paint_edges&quot;,
+  &quot;draw_layer&quot;: &quot;MapLayer ground, below actors&quot;,
+  &quot;rotation_contract&quot;: &quot;right-facing; rotate abstract directional FX only; mirror body and sockets together&quot;,
+  &quot;collision_contract&quot;: &quot;texture never defines collider; controller shares geometry with visual clip&quot;
+}</pre></details><details><summary>K5 / new_proposed / assets/sprites/ground/vigrid/grass_edge_s.png</summary><pre>{
+  &quot;id&quot;: &quot;grass_edge_s&quot;,
+  &quot;task&quot;: &quot;K5&quot;,
+  &quot;path&quot;: &quot;assets/sprites/ground/vigrid/grass_edge_s.png&quot;,
+  &quot;representation&quot;: &quot;planned_file&quot;,
+  &quot;decision&quot;: &quot;new_proposed&quot;,
+  &quot;production_status&quot;: &quot;not_created&quot;,
+  &quot;specification_status&quot;: &quot;K0_proposal_not_runtime_frozen&quot;,
+  &quot;frame_size&quot;: [
+    64,
+    64
+  ],
+  &quot;sheet_size&quot;: [
+    64,
+    64
+  ],
+  &quot;frames&quot;: 1,
+  &quot;fps&quot;: 0,
+  &quot;loop&quot;: false,
+  &quot;anchor_px&quot;: [
+    32,
+    32
+  ],
+  &quot;direction&quot;: &quot;right&quot;,
+  &quot;alpha_policy&quot;: &quot;binary&quot;,
+  &quot;palette_rgb_max&quot;: 48,
+  &quot;transparent_margin_px&quot;: null,
+  &quot;role&quot;: &quot;burnt grass to scorched ground; 12 edge masks required by current MapLayer.EDGE_TILES; no redrawing base tile&quot;,
+  &quot;reference_paths&quot;: [
+    &quot;assets/sprites/ground/vigrid/burnt_grass.png&quot;,
+    &quot;assets/sprites/ground/vigrid/scorched_01.png&quot;
+  ],
+  &quot;sha256&quot;: null,
+  &quot;integration_status&quot;: &quot;not_implemented&quot;,
+  &quot;integration_dependencies&quot;: [
+    &quot;C7&quot;,
+    &quot;K5&quot;
+  ],
+  &quot;approval_gate&quot;: &quot;C7&quot;,
+  &quot;scale&quot;: &quot;1x for bodies; texture effects clipped to authoritative geometry&quot;,
+  &quot;transparent_margin_exception&quot;: &quot;terrain interface must reach tile edge; four-corner bitmask contract&quot;,
+  &quot;integration_target&quot;: &quot;NEW scripts/world/vigrid_map.gd:_init/_layout; MapLayer.set_ground/_paint_edges&quot;,
+  &quot;draw_layer&quot;: &quot;MapLayer ground, below actors&quot;,
+  &quot;rotation_contract&quot;: &quot;right-facing; rotate abstract directional FX only; mirror body and sockets together&quot;,
+  &quot;collision_contract&quot;: &quot;texture never defines collider; controller shares geometry with visual clip&quot;
+}</pre></details><details><summary>K5 / new_proposed / assets/sprites/ground/vigrid/grass_edge_w.png</summary><pre>{
+  &quot;id&quot;: &quot;grass_edge_w&quot;,
+  &quot;task&quot;: &quot;K5&quot;,
+  &quot;path&quot;: &quot;assets/sprites/ground/vigrid/grass_edge_w.png&quot;,
+  &quot;representation&quot;: &quot;planned_file&quot;,
+  &quot;decision&quot;: &quot;new_proposed&quot;,
+  &quot;production_status&quot;: &quot;not_created&quot;,
+  &quot;specification_status&quot;: &quot;K0_proposal_not_runtime_frozen&quot;,
+  &quot;frame_size&quot;: [
+    64,
+    64
+  ],
+  &quot;sheet_size&quot;: [
+    64,
+    64
+  ],
+  &quot;frames&quot;: 1,
+  &quot;fps&quot;: 0,
+  &quot;loop&quot;: false,
+  &quot;anchor_px&quot;: [
+    32,
+    32
+  ],
+  &quot;direction&quot;: &quot;right&quot;,
+  &quot;alpha_policy&quot;: &quot;binary&quot;,
+  &quot;palette_rgb_max&quot;: 48,
+  &quot;transparent_margin_px&quot;: null,
+  &quot;role&quot;: &quot;burnt grass to scorched ground; 12 edge masks required by current MapLayer.EDGE_TILES; no redrawing base tile&quot;,
+  &quot;reference_paths&quot;: [
+    &quot;assets/sprites/ground/vigrid/burnt_grass.png&quot;,
+    &quot;assets/sprites/ground/vigrid/scorched_01.png&quot;
+  ],
+  &quot;sha256&quot;: null,
+  &quot;integration_status&quot;: &quot;not_implemented&quot;,
+  &quot;integration_dependencies&quot;: [
+    &quot;C7&quot;,
+    &quot;K5&quot;
+  ],
+  &quot;approval_gate&quot;: &quot;C7&quot;,
+  &quot;scale&quot;: &quot;1x for bodies; texture effects clipped to authoritative geometry&quot;,
+  &quot;transparent_margin_exception&quot;: &quot;terrain interface must reach tile edge; four-corner bitmask contract&quot;,
+  &quot;integration_target&quot;: &quot;NEW scripts/world/vigrid_map.gd:_init/_layout; MapLayer.set_ground/_paint_edges&quot;,
+  &quot;draw_layer&quot;: &quot;MapLayer ground, below actors&quot;,
+  &quot;rotation_contract&quot;: &quot;right-facing; rotate abstract directional FX only; mirror body and sockets together&quot;,
+  &quot;collision_contract&quot;: &quot;texture never defines collider; controller shares geometry with visual clip&quot;
+}</pre></details><details><summary>K5 / new_proposed / assets/sprites/ground/vigrid/grass_edge_outer_ne.png</summary><pre>{
+  &quot;id&quot;: &quot;grass_edge_outer_ne&quot;,
+  &quot;task&quot;: &quot;K5&quot;,
+  &quot;path&quot;: &quot;assets/sprites/ground/vigrid/grass_edge_outer_ne.png&quot;,
+  &quot;representation&quot;: &quot;planned_file&quot;,
+  &quot;decision&quot;: &quot;new_proposed&quot;,
+  &quot;production_status&quot;: &quot;not_created&quot;,
+  &quot;specification_status&quot;: &quot;K0_proposal_not_runtime_frozen&quot;,
+  &quot;frame_size&quot;: [
+    64,
+    64
+  ],
+  &quot;sheet_size&quot;: [
+    64,
+    64
+  ],
+  &quot;frames&quot;: 1,
+  &quot;fps&quot;: 0,
+  &quot;loop&quot;: false,
+  &quot;anchor_px&quot;: [
+    32,
+    32
+  ],
+  &quot;direction&quot;: &quot;right&quot;,
+  &quot;alpha_policy&quot;: &quot;binary&quot;,
+  &quot;palette_rgb_max&quot;: 48,
+  &quot;transparent_margin_px&quot;: null,
+  &quot;role&quot;: &quot;burnt grass to scorched ground; 12 edge masks required by current MapLayer.EDGE_TILES; no redrawing base tile&quot;,
+  &quot;reference_paths&quot;: [
+    &quot;assets/sprites/ground/vigrid/burnt_grass.png&quot;,
+    &quot;assets/sprites/ground/vigrid/scorched_01.png&quot;
+  ],
+  &quot;sha256&quot;: null,
+  &quot;integration_status&quot;: &quot;not_implemented&quot;,
+  &quot;integration_dependencies&quot;: [
+    &quot;C7&quot;,
+    &quot;K5&quot;
+  ],
+  &quot;approval_gate&quot;: &quot;C7&quot;,
+  &quot;scale&quot;: &quot;1x for bodies; texture effects clipped to authoritative geometry&quot;,
+  &quot;transparent_margin_exception&quot;: &quot;terrain interface must reach tile edge; four-corner bitmask contract&quot;,
+  &quot;integration_target&quot;: &quot;NEW scripts/world/vigrid_map.gd:_init/_layout; MapLayer.set_ground/_paint_edges&quot;,
+  &quot;draw_layer&quot;: &quot;MapLayer ground, below actors&quot;,
+  &quot;rotation_contract&quot;: &quot;right-facing; rotate abstract directional FX only; mirror body and sockets together&quot;,
+  &quot;collision_contract&quot;: &quot;texture never defines collider; controller shares geometry with visual clip&quot;
+}</pre></details><details><summary>K5 / new_proposed / assets/sprites/ground/vigrid/grass_edge_outer_nw.png</summary><pre>{
+  &quot;id&quot;: &quot;grass_edge_outer_nw&quot;,
+  &quot;task&quot;: &quot;K5&quot;,
+  &quot;path&quot;: &quot;assets/sprites/ground/vigrid/grass_edge_outer_nw.png&quot;,
+  &quot;representation&quot;: &quot;planned_file&quot;,
+  &quot;decision&quot;: &quot;new_proposed&quot;,
+  &quot;production_status&quot;: &quot;not_created&quot;,
+  &quot;specification_status&quot;: &quot;K0_proposal_not_runtime_frozen&quot;,
+  &quot;frame_size&quot;: [
+    64,
+    64
+  ],
+  &quot;sheet_size&quot;: [
+    64,
+    64
+  ],
+  &quot;frames&quot;: 1,
+  &quot;fps&quot;: 0,
+  &quot;loop&quot;: false,
+  &quot;anchor_px&quot;: [
+    32,
+    32
+  ],
+  &quot;direction&quot;: &quot;right&quot;,
+  &quot;alpha_policy&quot;: &quot;binary&quot;,
+  &quot;palette_rgb_max&quot;: 48,
+  &quot;transparent_margin_px&quot;: null,
+  &quot;role&quot;: &quot;burnt grass to scorched ground; 12 edge masks required by current MapLayer.EDGE_TILES; no redrawing base tile&quot;,
+  &quot;reference_paths&quot;: [
+    &quot;assets/sprites/ground/vigrid/burnt_grass.png&quot;,
+    &quot;assets/sprites/ground/vigrid/scorched_01.png&quot;
+  ],
+  &quot;sha256&quot;: null,
+  &quot;integration_status&quot;: &quot;not_implemented&quot;,
+  &quot;integration_dependencies&quot;: [
+    &quot;C7&quot;,
+    &quot;K5&quot;
+  ],
+  &quot;approval_gate&quot;: &quot;C7&quot;,
+  &quot;scale&quot;: &quot;1x for bodies; texture effects clipped to authoritative geometry&quot;,
+  &quot;transparent_margin_exception&quot;: &quot;terrain interface must reach tile edge; four-corner bitmask contract&quot;,
+  &quot;integration_target&quot;: &quot;NEW scripts/world/vigrid_map.gd:_init/_layout; MapLayer.set_ground/_paint_edges&quot;,
+  &quot;draw_layer&quot;: &quot;MapLayer ground, below actors&quot;,
+  &quot;rotation_contract&quot;: &quot;right-facing; rotate abstract directional FX only; mirror body and sockets together&quot;,
+  &quot;collision_contract&quot;: &quot;texture never defines collider; controller shares geometry with visual clip&quot;
+}</pre></details><details><summary>K5 / new_proposed / assets/sprites/ground/vigrid/grass_edge_outer_se.png</summary><pre>{
+  &quot;id&quot;: &quot;grass_edge_outer_se&quot;,
+  &quot;task&quot;: &quot;K5&quot;,
+  &quot;path&quot;: &quot;assets/sprites/ground/vigrid/grass_edge_outer_se.png&quot;,
+  &quot;representation&quot;: &quot;planned_file&quot;,
+  &quot;decision&quot;: &quot;new_proposed&quot;,
+  &quot;production_status&quot;: &quot;not_created&quot;,
+  &quot;specification_status&quot;: &quot;K0_proposal_not_runtime_frozen&quot;,
+  &quot;frame_size&quot;: [
+    64,
+    64
+  ],
+  &quot;sheet_size&quot;: [
+    64,
+    64
+  ],
+  &quot;frames&quot;: 1,
+  &quot;fps&quot;: 0,
+  &quot;loop&quot;: false,
+  &quot;anchor_px&quot;: [
+    32,
+    32
+  ],
+  &quot;direction&quot;: &quot;right&quot;,
+  &quot;alpha_policy&quot;: &quot;binary&quot;,
+  &quot;palette_rgb_max&quot;: 48,
+  &quot;transparent_margin_px&quot;: null,
+  &quot;role&quot;: &quot;burnt grass to scorched ground; 12 edge masks required by current MapLayer.EDGE_TILES; no redrawing base tile&quot;,
+  &quot;reference_paths&quot;: [
+    &quot;assets/sprites/ground/vigrid/burnt_grass.png&quot;,
+    &quot;assets/sprites/ground/vigrid/scorched_01.png&quot;
+  ],
+  &quot;sha256&quot;: null,
+  &quot;integration_status&quot;: &quot;not_implemented&quot;,
+  &quot;integration_dependencies&quot;: [
+    &quot;C7&quot;,
+    &quot;K5&quot;
+  ],
+  &quot;approval_gate&quot;: &quot;C7&quot;,
+  &quot;scale&quot;: &quot;1x for bodies; texture effects clipped to authoritative geometry&quot;,
+  &quot;transparent_margin_exception&quot;: &quot;terrain interface must reach tile edge; four-corner bitmask contract&quot;,
+  &quot;integration_target&quot;: &quot;NEW scripts/world/vigrid_map.gd:_init/_layout; MapLayer.set_ground/_paint_edges&quot;,
+  &quot;draw_layer&quot;: &quot;MapLayer ground, below actors&quot;,
+  &quot;rotation_contract&quot;: &quot;right-facing; rotate abstract directional FX only; mirror body and sockets together&quot;,
+  &quot;collision_contract&quot;: &quot;texture never defines collider; controller shares geometry with visual clip&quot;
+}</pre></details><details><summary>K5 / new_proposed / assets/sprites/ground/vigrid/grass_edge_outer_sw.png</summary><pre>{
+  &quot;id&quot;: &quot;grass_edge_outer_sw&quot;,
+  &quot;task&quot;: &quot;K5&quot;,
+  &quot;path&quot;: &quot;assets/sprites/ground/vigrid/grass_edge_outer_sw.png&quot;,
+  &quot;representation&quot;: &quot;planned_file&quot;,
+  &quot;decision&quot;: &quot;new_proposed&quot;,
+  &quot;production_status&quot;: &quot;not_created&quot;,
+  &quot;specification_status&quot;: &quot;K0_proposal_not_runtime_frozen&quot;,
+  &quot;frame_size&quot;: [
+    64,
+    64
+  ],
+  &quot;sheet_size&quot;: [
+    64,
+    64
+  ],
+  &quot;frames&quot;: 1,
+  &quot;fps&quot;: 0,
+  &quot;loop&quot;: false,
+  &quot;anchor_px&quot;: [
+    32,
+    32
+  ],
+  &quot;direction&quot;: &quot;right&quot;,
+  &quot;alpha_policy&quot;: &quot;binary&quot;,
+  &quot;palette_rgb_max&quot;: 48,
+  &quot;transparent_margin_px&quot;: null,
+  &quot;role&quot;: &quot;burnt grass to scorched ground; 12 edge masks required by current MapLayer.EDGE_TILES; no redrawing base tile&quot;,
+  &quot;reference_paths&quot;: [
+    &quot;assets/sprites/ground/vigrid/burnt_grass.png&quot;,
+    &quot;assets/sprites/ground/vigrid/scorched_01.png&quot;
+  ],
+  &quot;sha256&quot;: null,
+  &quot;integration_status&quot;: &quot;not_implemented&quot;,
+  &quot;integration_dependencies&quot;: [
+    &quot;C7&quot;,
+    &quot;K5&quot;
+  ],
+  &quot;approval_gate&quot;: &quot;C7&quot;,
+  &quot;scale&quot;: &quot;1x for bodies; texture effects clipped to authoritative geometry&quot;,
+  &quot;transparent_margin_exception&quot;: &quot;terrain interface must reach tile edge; four-corner bitmask contract&quot;,
+  &quot;integration_target&quot;: &quot;NEW scripts/world/vigrid_map.gd:_init/_layout; MapLayer.set_ground/_paint_edges&quot;,
+  &quot;draw_layer&quot;: &quot;MapLayer ground, below actors&quot;,
+  &quot;rotation_contract&quot;: &quot;right-facing; rotate abstract directional FX only; mirror body and sockets together&quot;,
+  &quot;collision_contract&quot;: &quot;texture never defines collider; controller shares geometry with visual clip&quot;
+}</pre></details><details><summary>K5 / new_proposed / assets/sprites/ground/vigrid/grass_edge_inner_ne.png</summary><pre>{
+  &quot;id&quot;: &quot;grass_edge_inner_ne&quot;,
+  &quot;task&quot;: &quot;K5&quot;,
+  &quot;path&quot;: &quot;assets/sprites/ground/vigrid/grass_edge_inner_ne.png&quot;,
+  &quot;representation&quot;: &quot;planned_file&quot;,
+  &quot;decision&quot;: &quot;new_proposed&quot;,
+  &quot;production_status&quot;: &quot;not_created&quot;,
+  &quot;specification_status&quot;: &quot;K0_proposal_not_runtime_frozen&quot;,
+  &quot;frame_size&quot;: [
+    64,
+    64
+  ],
+  &quot;sheet_size&quot;: [
+    64,
+    64
+  ],
+  &quot;frames&quot;: 1,
+  &quot;fps&quot;: 0,
+  &quot;loop&quot;: false,
+  &quot;anchor_px&quot;: [
+    32,
+    32
+  ],
+  &quot;direction&quot;: &quot;right&quot;,
+  &quot;alpha_policy&quot;: &quot;binary&quot;,
+  &quot;palette_rgb_max&quot;: 48,
+  &quot;transparent_margin_px&quot;: null,
+  &quot;role&quot;: &quot;burnt grass to scorched ground; 12 edge masks required by current MapLayer.EDGE_TILES; no redrawing base tile&quot;,
+  &quot;reference_paths&quot;: [
+    &quot;assets/sprites/ground/vigrid/burnt_grass.png&quot;,
+    &quot;assets/sprites/ground/vigrid/scorched_01.png&quot;
+  ],
+  &quot;sha256&quot;: null,
+  &quot;integration_status&quot;: &quot;not_implemented&quot;,
+  &quot;integration_dependencies&quot;: [
+    &quot;C7&quot;,
+    &quot;K5&quot;
+  ],
+  &quot;approval_gate&quot;: &quot;C7&quot;,
+  &quot;scale&quot;: &quot;1x for bodies; texture effects clipped to authoritative geometry&quot;,
+  &quot;transparent_margin_exception&quot;: &quot;terrain interface must reach tile edge; four-corner bitmask contract&quot;,
+  &quot;integration_target&quot;: &quot;NEW scripts/world/vigrid_map.gd:_init/_layout; MapLayer.set_ground/_paint_edges&quot;,
+  &quot;draw_layer&quot;: &quot;MapLayer ground, below actors&quot;,
+  &quot;rotation_contract&quot;: &quot;right-facing; rotate abstract directional FX only; mirror body and sockets together&quot;,
+  &quot;collision_contract&quot;: &quot;texture never defines collider; controller shares geometry with visual clip&quot;
+}</pre></details><details><summary>K5 / new_proposed / assets/sprites/ground/vigrid/grass_edge_inner_nw.png</summary><pre>{
+  &quot;id&quot;: &quot;grass_edge_inner_nw&quot;,
+  &quot;task&quot;: &quot;K5&quot;,
+  &quot;path&quot;: &quot;assets/sprites/ground/vigrid/grass_edge_inner_nw.png&quot;,
+  &quot;representation&quot;: &quot;planned_file&quot;,
+  &quot;decision&quot;: &quot;new_proposed&quot;,
+  &quot;production_status&quot;: &quot;not_created&quot;,
+  &quot;specification_status&quot;: &quot;K0_proposal_not_runtime_frozen&quot;,
+  &quot;frame_size&quot;: [
+    64,
+    64
+  ],
+  &quot;sheet_size&quot;: [
+    64,
+    64
+  ],
+  &quot;frames&quot;: 1,
+  &quot;fps&quot;: 0,
+  &quot;loop&quot;: false,
+  &quot;anchor_px&quot;: [
+    32,
+    32
+  ],
+  &quot;direction&quot;: &quot;right&quot;,
+  &quot;alpha_policy&quot;: &quot;binary&quot;,
+  &quot;palette_rgb_max&quot;: 48,
+  &quot;transparent_margin_px&quot;: null,
+  &quot;role&quot;: &quot;burnt grass to scorched ground; 12 edge masks required by current MapLayer.EDGE_TILES; no redrawing base tile&quot;,
+  &quot;reference_paths&quot;: [
+    &quot;assets/sprites/ground/vigrid/burnt_grass.png&quot;,
+    &quot;assets/sprites/ground/vigrid/scorched_01.png&quot;
+  ],
+  &quot;sha256&quot;: null,
+  &quot;integration_status&quot;: &quot;not_implemented&quot;,
+  &quot;integration_dependencies&quot;: [
+    &quot;C7&quot;,
+    &quot;K5&quot;
+  ],
+  &quot;approval_gate&quot;: &quot;C7&quot;,
+  &quot;scale&quot;: &quot;1x for bodies; texture effects clipped to authoritative geometry&quot;,
+  &quot;transparent_margin_exception&quot;: &quot;terrain interface must reach tile edge; four-corner bitmask contract&quot;,
+  &quot;integration_target&quot;: &quot;NEW scripts/world/vigrid_map.gd:_init/_layout; MapLayer.set_ground/_paint_edges&quot;,
+  &quot;draw_layer&quot;: &quot;MapLayer ground, below actors&quot;,
+  &quot;rotation_contract&quot;: &quot;right-facing; rotate abstract directional FX only; mirror body and sockets together&quot;,
+  &quot;collision_contract&quot;: &quot;texture never defines collider; controller shares geometry with visual clip&quot;
+}</pre></details><details><summary>K5 / new_proposed / assets/sprites/ground/vigrid/grass_edge_inner_se.png</summary><pre>{
+  &quot;id&quot;: &quot;grass_edge_inner_se&quot;,
+  &quot;task&quot;: &quot;K5&quot;,
+  &quot;path&quot;: &quot;assets/sprites/ground/vigrid/grass_edge_inner_se.png&quot;,
+  &quot;representation&quot;: &quot;planned_file&quot;,
+  &quot;decision&quot;: &quot;new_proposed&quot;,
+  &quot;production_status&quot;: &quot;not_created&quot;,
+  &quot;specification_status&quot;: &quot;K0_proposal_not_runtime_frozen&quot;,
+  &quot;frame_size&quot;: [
+    64,
+    64
+  ],
+  &quot;sheet_size&quot;: [
+    64,
+    64
+  ],
+  &quot;frames&quot;: 1,
+  &quot;fps&quot;: 0,
+  &quot;loop&quot;: false,
+  &quot;anchor_px&quot;: [
+    32,
+    32
+  ],
+  &quot;direction&quot;: &quot;right&quot;,
+  &quot;alpha_policy&quot;: &quot;binary&quot;,
+  &quot;palette_rgb_max&quot;: 48,
+  &quot;transparent_margin_px&quot;: null,
+  &quot;role&quot;: &quot;burnt grass to scorched ground; 12 edge masks required by current MapLayer.EDGE_TILES; no redrawing base tile&quot;,
+  &quot;reference_paths&quot;: [
+    &quot;assets/sprites/ground/vigrid/burnt_grass.png&quot;,
+    &quot;assets/sprites/ground/vigrid/scorched_01.png&quot;
+  ],
+  &quot;sha256&quot;: null,
+  &quot;integration_status&quot;: &quot;not_implemented&quot;,
+  &quot;integration_dependencies&quot;: [
+    &quot;C7&quot;,
+    &quot;K5&quot;
+  ],
+  &quot;approval_gate&quot;: &quot;C7&quot;,
+  &quot;scale&quot;: &quot;1x for bodies; texture effects clipped to authoritative geometry&quot;,
+  &quot;transparent_margin_exception&quot;: &quot;terrain interface must reach tile edge; four-corner bitmask contract&quot;,
+  &quot;integration_target&quot;: &quot;NEW scripts/world/vigrid_map.gd:_init/_layout; MapLayer.set_ground/_paint_edges&quot;,
+  &quot;draw_layer&quot;: &quot;MapLayer ground, below actors&quot;,
+  &quot;rotation_contract&quot;: &quot;right-facing; rotate abstract directional FX only; mirror body and sockets together&quot;,
+  &quot;collision_contract&quot;: &quot;texture never defines collider; controller shares geometry with visual clip&quot;
+}</pre></details><details><summary>K5 / new_proposed / assets/sprites/ground/vigrid/grass_edge_inner_sw.png</summary><pre>{
+  &quot;id&quot;: &quot;grass_edge_inner_sw&quot;,
+  &quot;task&quot;: &quot;K5&quot;,
+  &quot;path&quot;: &quot;assets/sprites/ground/vigrid/grass_edge_inner_sw.png&quot;,
+  &quot;representation&quot;: &quot;planned_file&quot;,
+  &quot;decision&quot;: &quot;new_proposed&quot;,
+  &quot;production_status&quot;: &quot;not_created&quot;,
+  &quot;specification_status&quot;: &quot;K0_proposal_not_runtime_frozen&quot;,
+  &quot;frame_size&quot;: [
+    64,
+    64
+  ],
+  &quot;sheet_size&quot;: [
+    64,
+    64
+  ],
+  &quot;frames&quot;: 1,
+  &quot;fps&quot;: 0,
+  &quot;loop&quot;: false,
+  &quot;anchor_px&quot;: [
+    32,
+    32
+  ],
+  &quot;direction&quot;: &quot;right&quot;,
+  &quot;alpha_policy&quot;: &quot;binary&quot;,
+  &quot;palette_rgb_max&quot;: 48,
+  &quot;transparent_margin_px&quot;: null,
+  &quot;role&quot;: &quot;burnt grass to scorched ground; 12 edge masks required by current MapLayer.EDGE_TILES; no redrawing base tile&quot;,
+  &quot;reference_paths&quot;: [
+    &quot;assets/sprites/ground/vigrid/burnt_grass.png&quot;,
+    &quot;assets/sprites/ground/vigrid/scorched_01.png&quot;
+  ],
+  &quot;sha256&quot;: null,
+  &quot;integration_status&quot;: &quot;not_implemented&quot;,
+  &quot;integration_dependencies&quot;: [
+    &quot;C7&quot;,
+    &quot;K5&quot;
+  ],
+  &quot;approval_gate&quot;: &quot;C7&quot;,
+  &quot;scale&quot;: &quot;1x for bodies; texture effects clipped to authoritative geometry&quot;,
+  &quot;transparent_margin_exception&quot;: &quot;terrain interface must reach tile edge; four-corner bitmask contract&quot;,
+  &quot;integration_target&quot;: &quot;NEW scripts/world/vigrid_map.gd:_init/_layout; MapLayer.set_ground/_paint_edges&quot;,
+  &quot;draw_layer&quot;: &quot;MapLayer ground, below actors&quot;,
+  &quot;rotation_contract&quot;: &quot;right-facing; rotate abstract directional FX only; mirror body and sockets together&quot;,
+  &quot;collision_contract&quot;: &quot;texture never defines collider; controller shares geometry with visual clip&quot;
+}</pre></details><details><summary>K5 / new_proposed / assets/sprites/decals/vigrid/giant_tread.png</summary><pre>{
+  &quot;id&quot;: &quot;giant_tread&quot;,
+  &quot;task&quot;: &quot;K5&quot;,
+  &quot;path&quot;: &quot;assets/sprites/decals/vigrid/giant_tread.png&quot;,
+  &quot;representation&quot;: &quot;planned_file&quot;,
+  &quot;decision&quot;: &quot;new_proposed&quot;,
+  &quot;production_status&quot;: &quot;not_created&quot;,
+  &quot;specification_status&quot;: &quot;K0_proposal_not_runtime_frozen&quot;,
+  &quot;frame_size&quot;: [
+    64,
+    64
+  ],
+  &quot;sheet_size&quot;: [
+    64,
+    64
+  ],
+  &quot;frames&quot;: 1,
+  &quot;fps&quot;: 0,
+  &quot;loop&quot;: false,
+  &quot;anchor_px&quot;: [
+    32,
+    32
+  ],
+  &quot;direction&quot;: &quot;right&quot;,
+  &quot;alpha_policy&quot;: &quot;binary&quot;,
+  &quot;palette_rgb_max&quot;: 48,
+  &quot;transparent_margin_px&quot;: 2,
+  &quot;role&quot;: &quot;large boot scuff around frost remnant patch; neutral ash, not lava or damage warning&quot;,
+  &quot;reference_paths&quot;: [
+    &quot;assets/sprites/ground/vigrid/scorched_01.png&quot;,
+    &quot;assets/sprites/enemies/frost_veteran.png&quot;
+  ],
+  &quot;sha256&quot;: null,
+  &quot;integration_status&quot;: &quot;not_implemented&quot;,
+  &quot;integration_dependencies&quot;: [
+    &quot;C7&quot;,
+    &quot;K5&quot;
+  ],
+  &quot;approval_gate&quot;: &quot;C7&quot;,
+  &quot;scale&quot;: &quot;1x for bodies; texture effects clipped to authoritative geometry&quot;,
+  &quot;integration_target&quot;: &quot;NEW scripts/world/vigrid_map.gd:_layout; MapLayer.prop/decal; custom horizon renderer for distant_battle&quot;,
+  &quot;draw_layer&quot;: &quot;MapLayer dressing; horizon outside walkable bounds&quot;,
+  &quot;rotation_contract&quot;: &quot;right-facing; rotate abstract directional FX only; mirror body and sockets together&quot;,
+  &quot;collision_contract&quot;: &quot;texture never defines collider; controller shares geometry with visual clip&quot;
+}</pre></details><details><summary>K5 / new_proposed / assets/sprites/props/vigrid/distant_battle.png</summary><pre>{
+  &quot;id&quot;: &quot;distant_battle&quot;,
+  &quot;task&quot;: &quot;K5&quot;,
+  &quot;path&quot;: &quot;assets/sprites/props/vigrid/distant_battle.png&quot;,
+  &quot;representation&quot;: &quot;planned_file&quot;,
+  &quot;decision&quot;: &quot;new_proposed&quot;,
+  &quot;production_status&quot;: &quot;not_created&quot;,
+  &quot;specification_status&quot;: &quot;K0_proposal_not_runtime_frozen&quot;,
+  &quot;frame_size&quot;: [
+    512,
+    128
+  ],
+  &quot;sheet_size&quot;: [
+    2048,
+    128
+  ],
+  &quot;frames&quot;: 4,
+  &quot;fps&quot;: 8,
+  &quot;loop&quot;: true,
+  &quot;anchor_px&quot;: [
+    256,
+    128
+  ],
+  &quot;direction&quot;: &quot;right&quot;,
+  &quot;alpha_policy&quot;: &quot;soft_effect&quot;,
+  &quot;palette_rgb_max&quot;: 48,
+  &quot;transparent_margin_px&quot;: 2,
+  &quot;role&quot;: &quot;small low-contrast mythic warrior/giant silhouettes in northern unwalkable strip; does not assert a god death&quot;,
+  &quot;reference_paths&quot;: [
+    &quot;assets/sprites/bosses/surtr.png&quot;,
+    &quot;assets/sprites/enemies/frost_veteran.png&quot;,
+    &quot;assets/sprites/ground/vigrid/scorched_01.png&quot;
+  ],
+  &quot;sha256&quot;: null,
+  &quot;integration_status&quot;: &quot;not_implemented&quot;,
+  &quot;integration_dependencies&quot;: [
+    &quot;C7&quot;,
+    &quot;K5&quot;
+  ],
+  &quot;approval_gate&quot;: &quot;C7&quot;,
+  &quot;scale&quot;: &quot;1x for bodies; texture effects clipped to authoritative geometry&quot;,
+  &quot;integration_target&quot;: &quot;NEW scripts/world/vigrid_map.gd:_layout; MapLayer.prop/decal; custom horizon renderer for distant_battle&quot;,
+  &quot;draw_layer&quot;: &quot;MapLayer dressing; horizon outside walkable bounds&quot;,
+  &quot;rotation_contract&quot;: &quot;right-facing; rotate abstract directional FX only; mirror body and sockets together&quot;,
+  &quot;collision_contract&quot;: &quot;texture never defines collider; controller shares geometry with visual clip&quot;
+}</pre></details><details><summary>K6 / new_proposed / assets/audio/music/vigrid.ogg</summary><pre>{
+  &quot;id&quot;: &quot;vigrid_music&quot;,
+  &quot;task&quot;: &quot;K6&quot;,
+  &quot;path&quot;: &quot;assets/audio/music/vigrid.ogg&quot;,
+  &quot;representation&quot;: &quot;planned_file&quot;,
+  &quot;decision&quot;: &quot;new_proposed&quot;,
+  &quot;production_status&quot;: &quot;not_created&quot;,
+  &quot;frame_size&quot;: null,
+  &quot;frames&quot;: null,
+  &quot;fps&quot;: null,
+  &quot;anchor_px&quot;: null,
+  &quot;alpha_policy&quot;: &quot;not_applicable_audio&quot;,
+  &quot;format&quot;: &quot;OGG Vorbis stereo 44100Hz, approximately -16 LUFS&quot;,
+  &quot;duration_seconds&quot;: null,
+  &quot;duration_status&quot;: &quot;规格未定; choose complete musical phrase, not arbitrary crop&quot;,
+  &quot;role&quot;: &quot;Vigrid main theme; seamless three-loop listening required&quot;,
+  &quot;reference_paths&quot;: [
+    &quot;assets/audio/music/boss.ogg&quot;
+  ],
+  &quot;source_license&quot;: &quot;not_chosen; verify commercial terms before source acquisition&quot;,
+  &quot;sha256&quot;: null,
+  &quot;integration_dependencies&quot;: [
+    &quot;C8&quot;,
+    &quot;K6&quot;
+  ],
+  &quot;specification_status&quot;: &quot;music_source_and_duration_unfrozen&quot;,
+  &quot;integration_target&quot;: &quot;scripts/core/audio.gd:Audio.sfx/music; callers listed in audio_events.json&quot;,
+  &quot;draw_layer&quot;: &quot;Music/SFX bus&quot;,
+  &quot;rotation_contract&quot;: &quot;right-facing; rotate abstract directional FX only; mirror body and sockets together&quot;,
+  &quot;collision_contract&quot;: &quot;texture never defines collider; controller shares geometry with visual clip&quot;
+}</pre></details><script>const z=document.getElementById('zoom');z.addEventListener('input',()=>{document.getElementById('map').style.width=z.value+'%';document.getElementById('zv').textContent=z.value+'%';});</script></main></html>

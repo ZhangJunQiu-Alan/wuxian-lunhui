@@ -1,0 +1,229 @@
+{
+  "task": "K1",
+  "status": "art_delivered_self_checked_not_game_integrated",
+  "formal_png": 3,
+  "frames": 11,
+  "contract": {
+    "path": "assets/source/taskK_contract_2026-10-20/contract.json",
+    "sha256": "777aad8208ed37c2cd4b4cac98124e7af851c03405f9bb0e7f0019689be89c5e",
+    "status": "interface_frozen_game_not_integrated"
+  },
+  "assets": [
+    {
+      "id": "jormungandr_head_idle",
+      "formal_path": "assets/sprites/bosses/jormungandr_head_idle.png",
+      "raw": "originals/head_idle_v01_raw.png",
+      "prompt": "records/prompt_head_idle_v01.json",
+      "candidate": "candidates/head_idle_v01.png",
+      "approved": "approved/jormungandr_head_idle.png",
+      "frame_size": [
+        128,
+        128
+      ],
+      "frames": 4,
+      "fps": 8,
+      "loop": true,
+      "anchor": [
+        64,
+        64
+      ],
+      "neck_socket": [
+        0,
+        62
+      ],
+      "palette": "approved original head 48RGB",
+      "alpha": [
+        0,
+        255
+      ],
+      "source_sha256": "ac0f9f5dd07d141918ea435a84a127f5d32d5b14e184f5711bd4a738d05a8b4b",
+      "sha256": "2b0ad892846cb1c30bbcebe9cfcde409098394cfac6d962f6f18ce5d09b3f517",
+      "preview_gifs": [
+        {
+          "file": "previews/head_idle_v01_native.gif",
+          "durations_ms": [
+            120,
+            130,
+            130,
+            120
+          ],
+          "timing_note": "GIF 10ms quantization; non-loop action last frame has extra600ms review hold, not gameplay duration"
+        },
+        {
+          "file": "previews/head_idle_v01_slow8.gif",
+          "durations_ms": [
+            120,
+            130,
+            130,
+            120
+          ],
+          "timing_note": "GIF 10ms quantization; non-loop action last frame has extra600ms review hold, not gameplay duration"
+        }
+      ],
+      "visual_review": "1x/4x frame comparison, straight joints and isolated Godot curved/poison cases inspected",
+      "margin_exception": "left neck port intentionally touches x0",
+      "game_acceptance": "not_tested"
+    },
+    {
+      "id": "jormungandr_head_windup",
+      "formal_path": "assets/sprites/bosses/jormungandr_head_windup.png",
+      "raw": "originals/head_windup_v01_raw.png",
+      "prompt": "records/prompt_head_windup_v01.json",
+      "candidate": "candidates/head_windup_v01.png",
+      "approved": "approved/jormungandr_head_windup.png",
+      "frame_size": [
+        128,
+        128
+      ],
+      "frames": 3,
+      "fps": 8,
+      "loop": false,
+      "anchor": [
+        64,
+        64
+      ],
+      "neck_socket": [
+        0,
+        62
+      ],
+      "palette": "approved original head 48RGB",
+      "alpha": [
+        0,
+        255
+      ],
+      "source_sha256": "28024279609a9c45b5a4bc443c20ed75864ae8c95c84c718fc0798cddbca6074",
+      "sha256": "c6a051e66d473eb25d8d56d23e8d232b09c341a2649db3a4b1cb8d273fc6f6ab",
+      "preview_gifs": [
+        {
+          "file": "previews/head_windup_v01_native.gif",
+          "durations_ms": [
+            120,
+            130,
+            730
+          ],
+          "timing_note": "GIF 10ms quantization; non-loop action last frame has extra600ms review hold, not gameplay duration"
+        },
+        {
+          "file": "previews/head_windup_v01_slow8.gif",
+          "durations_ms": [
+            120,
+            130,
+            730
+          ],
+          "timing_note": "GIF 10ms quantization; non-loop action last frame has extra600ms review hold, not gameplay duration"
+        }
+      ],
+      "visual_review": "1x/4x frame comparison, straight joints and isolated Godot curved/poison cases inspected",
+      "margin_exception": "left neck port intentionally touches x0",
+      "game_acceptance": "not_tested"
+    },
+    {
+      "id": "jormungandr_head_attack",
+      "formal_path": "assets/sprites/bosses/jormungandr_head_attack.png",
+      "raw": "originals/head_attack_v01_raw.png",
+      "prompt": "records/prompt_head_attack_v01.json",
+      "candidate": "candidates/head_attack_v01.png",
+      "approved": "approved/jormungandr_head_attack.png",
+      "frame_size": [
+        128,
+        128
+      ],
+      "frames": 4,
+      "fps": 16,
+      "loop": false,
+      "anchor": [
+        64,
+        64
+      ],
+      "neck_socket": [
+        0,
+        62
+      ],
+      "palette": "approved original head 48RGB",
+      "alpha": [
+        0,
+        255
+      ],
+      "source_sha256": "cecdcd8ad6e63c5dca17b04d29bb58538b207afd3ff1484f7f9ccd3d24e14d0d",
+      "sha256": "7be10ba971118e2aadaf785e03ae60c66d73c40da5657e87d073de15e28cb19a",
+      "preview_gifs": [
+        {
+          "file": "previews/head_attack_v01_native.gif",
+          "durations_ms": [
+            60,
+            60,
+            70,
+            660
+          ],
+          "timing_note": "GIF 10ms quantization; non-loop action last frame has extra600ms review hold, not gameplay duration"
+        },
+        {
+          "file": "previews/head_attack_v01_slow8.gif",
+          "durations_ms": [
+            120,
+            130,
+            130,
+            720
+          ],
+          "timing_note": "GIF 10ms quantization; non-loop action last frame has extra600ms review hold, not gameplay duration"
+        }
+      ],
+      "visual_review": "1x/4x frame comparison, straight joints and isolated Godot curved/poison cases inspected",
+      "margin_exception": "left neck port intentionally touches x0",
+      "game_acceptance": "not_tested"
+    }
+  ],
+  "reused": [
+    {
+      "path": "assets/sprites/bosses/jormungandr_head.png",
+      "sha256": "147c0b593f24bbe81719f52ac9d553fe9540ced163399a76aba44cd0b5006bfb",
+      "decision": "reuse_unchanged_no_new_production"
+    },
+    {
+      "path": "assets/sprites/bosses/jormungandr_body.png",
+      "sha256": "72df0600b5d9d4a19a9e6b72d8af097751109dd6807f6c9dc959a8082032b94c",
+      "decision": "reuse_unchanged_no_new_production"
+    },
+    {
+      "path": "assets/sprites/bosses/jormungandr_tail.png",
+      "sha256": "02a5b4ddc3197735e27d0d2dbcdc10d71e1d8f12886351764f9c395dcd5c0936",
+      "decision": "reuse_unchanged_no_new_production"
+    },
+    {
+      "path": "assets/sprites/effects/bosses/nidhogg_poison_breath.png",
+      "sha256": "99d291b294b5a8412bcf449586d1bbf585bbe5ffed37c458185d24fa66f473b7",
+      "decision": "reuse_unchanged_no_new_production"
+    },
+    {
+      "path": "assets/sprites/effects/poison_pool.png",
+      "sha256": "0284bb2e78321311e43248046a820d43920193764e68f64d662d25cd1516374f",
+      "decision": "reuse_unchanged_no_new_production"
+    },
+    {
+      "path": "assets/sprites/effects/hit_bite.png",
+      "sha256": "1e0e0b18432621b5d502d6936867c51cd5b306683651c3cd097a86e28c6feadc",
+      "decision": "reuse_unchanged_no_new_production"
+    },
+    {
+      "path": "assets/sprites/effects/gods/thor_hammer.png",
+      "sha256": "4a143fdceac2e85c1303a42b0212b6eb69c5f2b2e4400cd55d6931dfb165d950",
+      "decision": "reuse_unchanged_no_new_production"
+    },
+    {
+      "path": "assets/sprites/effects/gods/thor_cloud.png",
+      "sha256": "46771823ba537d4592ca5d5087b2afd214e7d556313c1697ef99174c05c81bb8",
+      "decision": "reuse_unchanged_no_new_production"
+    }
+  ],
+  "generated_originals": 3,
+  "rejected_generations": 0,
+  "original_source_manifest": "assets/source/batch02_repairs_2026-10-16/manifest.json",
+  "tools": [
+    "OpenAI built-in image_gen",
+    "Pillow12.1.1 MIT-CMU normalization/QA only",
+    "Godot4.7.2 MIT isolated fixture"
+  ],
+  "license": "../../LICENSES.md",
+  "self_check": "pass",
+  "game_acceptance": "not_tested"
+}

@@ -1,0 +1,139 @@
+[
+  {
+    "task": "H1",
+    "id": "skoll_dash_trail",
+    "w": 64,
+    "h": 32,
+    "frames": 4,
+    "fps": 16,
+    "flags": [
+      "loop",
+      "rotate",
+      "trail"
+    ],
+    "anchor": [
+      64,
+      16
+    ],
+    "columns": 2,
+    "rows": 2,
+    "loop": true,
+    "hook": "scripts/bosses/skoll.gd _update_state() dash",
+    "keep": "追随_dash_dir；保留红路线预警、950速度、0.42秒冲锋、接触伤害",
+    "reference_paths": [
+      "assets/sprites/effects/rune_missile.png"
+    ],
+    "target": "assets/sprites/effects/bosses/skoll_dash_trail.png",
+    "source_root": "assets/source/taskH1_skoll_fx_2026-10-19",
+    "archived_references": [
+      {
+        "project_path": "assets/sprites/effects/rune_missile.png",
+        "archived_path": "references/rune_missile.png",
+        "sha256": "c199b65f5786029aba9fe4e60f84cb31d158b2267a91e93f9861122ef827de8d"
+      }
+    ]
+  },
+  {
+    "task": "H1",
+    "id": "skoll_bite",
+    "w": 64,
+    "h": 64,
+    "frames": 4,
+    "fps": 16,
+    "flags": [
+      "rotate"
+    ],
+    "anchor": [
+      32,
+      32
+    ],
+    "columns": 2,
+    "rows": 2,
+    "loop": false,
+    "hook": "scripts/bosses/skoll.gd _update_state() dash 接触点",
+    "keep": "只显示接触撕咬，不新增判伤、不每物理帧无限堆叠",
+    "reference_paths": [
+      "assets/sprites/effects/katana_slash.png"
+    ],
+    "target": "assets/sprites/effects/bosses/skoll_bite.png",
+    "source_root": "assets/source/taskH1_skoll_fx_2026-10-19",
+    "archived_references": [
+      {
+        "project_path": "assets/sprites/effects/katana_slash.png",
+        "archived_path": "references/katana_slash.png",
+        "sha256": "7bd81d28708a9f538306c26680e7520af1f5c7349ea52c634f341e95d5cc6d7a"
+      }
+    ]
+  },
+  {
+    "task": "H1",
+    "id": "skoll_howl",
+    "w": 128,
+    "h": 128,
+    "frames": 4,
+    "fps": 8,
+    "flags": [
+      "area",
+      "hole"
+    ],
+    "anchor": [
+      64,
+      64
+    ],
+    "columns": 2,
+    "rows": 2,
+    "loop": false,
+    "hook": "scripts/bosses/skoll.gd _draw_telegraph() howl；_summon_wolves()",
+    "keep": "替换嚎叫弧线；视觉半径沿radius+state_time*160，保留狼群与吞日Shader",
+    "reference_paths": [
+      "assets/sprites/effects/frost_shockwave.png"
+    ],
+    "target": "assets/sprites/effects/bosses/skoll_howl.png",
+    "source_root": "assets/source/taskH1_skoll_fx_2026-10-19",
+    "archived_references": [
+      {
+        "project_path": "assets/sprites/effects/frost_shockwave.png",
+        "archived_path": "references/frost_shockwave.png",
+        "sha256": "a0aa09571dec4959ee2a9f66dc6a6a038a2017fad3dea1140680bc837495c625"
+      }
+    ]
+  },
+  {
+    "task": "H1",
+    "id": "skoll_howl_body",
+    "w": 128,
+    "h": 128,
+    "frames": 3,
+    "fps": 8,
+    "flags": [
+      "body"
+    ],
+    "anchor": [
+      64,
+      118
+    ],
+    "columns": 3,
+    "rows": 1,
+    "loop": false,
+    "hook": "scripts/bosses/skoll.gd init_stats() state_actions.howl；scripts/bosses/boss.gd BOSS_ACTIONS",
+    "keep": "将howl从windup映射到howl；3帧8fps，不改变1.2秒嚎叫状态",
+    "reference_paths": [
+      "assets/sprites/bosses/skoll.png",
+      "assets/sprites/bosses/skoll_idle.png"
+    ],
+    "target": "assets/sprites/bosses/skoll_howl.png",
+    "source_root": "assets/source/taskH1_skoll_fx_2026-10-19",
+    "archived_references": [
+      {
+        "project_path": "assets/sprites/bosses/skoll.png",
+        "archived_path": "references/skoll.png",
+        "sha256": "cf0caab4c10226dcef87dcd359b28f4c84046b3da20193f4c257463e8a72f0a9"
+      },
+      {
+        "project_path": "assets/sprites/bosses/skoll_idle.png",
+        "archived_path": "references/skoll_idle.png",
+        "sha256": "19d76d98e3f5a8bb76f9bafb7e0239f069aaf14c175ff6fc5fee465a6421b8a3"
+      }
+    ]
+  }
+]

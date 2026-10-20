@@ -1,0 +1,499 @@
+{
+  "task_id": "H1",
+  "date": "2026-10-19",
+  "production": "delivered",
+  "self_review": "pass",
+  "code_integration": "not_performed",
+  "game_acceptance": "not_performed",
+  "files": [
+    {
+      "task": "H1",
+      "id": "skoll_dash_trail",
+      "w": 64,
+      "h": 32,
+      "frames": 4,
+      "fps": 16,
+      "flags": [
+        "loop",
+        "rotate",
+        "trail"
+      ],
+      "anchor": [
+        64,
+        16
+      ],
+      "columns": 2,
+      "rows": 2,
+      "loop": true,
+      "hook": "scripts/bosses/skoll.gd _update_state() dash",
+      "keep": "追随_dash_dir；保留红路线预警、950速度、0.42秒冲锋、接触伤害",
+      "reference_paths": [
+        "assets/sprites/effects/rune_missile.png"
+      ],
+      "target": "assets/sprites/effects/bosses/skoll_dash_trail.png",
+      "source_root": "assets/source/taskH1_skoll_fx_2026-10-19",
+      "archived_references": [
+        {
+          "project_path": "assets/sprites/effects/rune_missile.png",
+          "archived_path": "references/rune_missile.png",
+          "sha256": "c199b65f5786029aba9fe4e60f84cb31d158b2267a91e93f9861122ef827de8d"
+        }
+      ],
+      "version": "v01",
+      "final_path": "assets/sprites/effects/bosses/skoll_dash_trail.png",
+      "candidate": "candidates/skoll_dash_trail_v01.png",
+      "sha256": "9844cdd44d99cad4b30aaa2042bf471e1b7864b1a3107e16b36dc5e190107c7a",
+      "actual_RGB_colors": 23,
+      "actual_alpha_values": [
+        0,
+        36,
+        72,
+        108,
+        144,
+        180,
+        216,
+        252
+      ],
+      "frame_bboxes": [
+        [
+          2,
+          6,
+          62,
+          25
+        ],
+        [
+          6,
+          6,
+          62,
+          26
+        ],
+        [
+          5,
+          5,
+          62,
+          26
+        ],
+        [
+          3,
+          6,
+          62,
+          26
+        ]
+      ],
+      "technical_checks": {
+        "PNG_RGBA": true,
+        "exact_strip_dimensions": true,
+        "RGB_within_48": true,
+        "transparent_background": true,
+        "every_frame_nonempty": true,
+        "distinct_original_frames": true,
+        "2px_margin_or_tiling_exception": true,
+        "GIF_native_decoded_pixel_match": true,
+        "GIF_native_average_fps": true,
+        "GIF_slow8_decoded_pixel_match": true,
+        "GIF_slow8_average_fps": true
+      },
+      "visual_review": {
+        "status": "passed",
+        "observations": "已查看4格1倍/4倍：冷灰紫短条带向左拖、右端为前沿，四格缠流不同，无狼身体和固定地面阴影。按统一尺度整帧定位消除生成格偏移，非重复帧凑数。"
+      },
+      "code_integration": "not_performed",
+      "game_acceptance": "not_performed",
+      "source_license": {
+        "tool": "OpenAI built-in image_gen",
+        "commercial_basis": "existing approved OpenAI output terms; project-owned input references",
+        "terms_url": "https://openai.com/policies/terms-of-use/",
+        "processing": "Pillow MIT-CMU, source cuts/alpha/palette/nearest resize/placement and preview only"
+      },
+      "previews": [
+        "previews/skoll_dash_trail_v01_frames.png",
+        "previews/skoll_dash_trail_v01_native.gif",
+        "previews/skoll_dash_trail_v01_rotate.png",
+        "previews/skoll_dash_trail_v01_slow8.gif",
+        "previews/skoll_dash_trail_v01_stretch.png"
+      ],
+      "approved": "approved/skoll_dash_trail.png",
+      "frame_order": "left_to_right_no_spacing",
+      "generation_records": "records/generation_jobs.json",
+      "public_generation_url": null,
+      "generation_url_note": "内置工具仅返回本地原图路径；真实提示词/参考/结果均归档，不伪造公开URL",
+      "transparent_strategy": "Generated alpha quantized to 8 source levels then optional low-alpha cap; RGB count and alpha recorded separately; zero RGB when alpha0",
+      "loop_mode": "loop only while corresponding state is active",
+      "remaining_issues": [
+        "代码接入未执行",
+        "游戏内朝向/锚点/范围/遮挡/帧率/节点清理未测"
+      ],
+      "source_recipe": "records/normalization_skoll_dash_trail_v01.json"
+    },
+    {
+      "task": "H1",
+      "id": "skoll_bite",
+      "w": 64,
+      "h": 64,
+      "frames": 4,
+      "fps": 16,
+      "flags": [
+        "rotate"
+      ],
+      "anchor": [
+        32,
+        32
+      ],
+      "columns": 2,
+      "rows": 2,
+      "loop": false,
+      "hook": "scripts/bosses/skoll.gd _update_state() dash 接触点",
+      "keep": "只显示接触撕咬，不新增判伤、不每物理帧无限堆叠",
+      "reference_paths": [
+        "assets/sprites/effects/katana_slash.png"
+      ],
+      "target": "assets/sprites/effects/bosses/skoll_bite.png",
+      "source_root": "assets/source/taskH1_skoll_fx_2026-10-19",
+      "archived_references": [
+        {
+          "project_path": "assets/sprites/effects/katana_slash.png",
+          "archived_path": "references/katana_slash.png",
+          "sha256": "7bd81d28708a9f538306c26680e7520af1f5c7349ea52c634f341e95d5cc6d7a"
+        }
+      ],
+      "version": "v01",
+      "final_path": "assets/sprites/effects/bosses/skoll_bite.png",
+      "candidate": "candidates/skoll_bite_v01.png",
+      "sha256": "a125c516a5481ed3ee1f95e368a82c2f6b65b42b2242ae4dff1527e5f33441f9",
+      "actual_RGB_colors": 26,
+      "actual_alpha_values": [
+        0,
+        36,
+        72,
+        108,
+        144,
+        180,
+        216,
+        252
+      ],
+      "frame_bboxes": [
+        [
+          2,
+          13,
+          61,
+          50
+        ],
+        [
+          11,
+          11,
+          53,
+          53
+        ],
+        [
+          3,
+          9,
+          61,
+          55
+        ],
+        [
+          2,
+          12,
+          62,
+          52
+        ]
+      ],
+      "technical_checks": {
+        "PNG_RGBA": true,
+        "exact_strip_dimensions": true,
+        "RGB_within_48": true,
+        "transparent_background": true,
+        "every_frame_nonempty": true,
+        "distinct_original_frames": true,
+        "2px_margin_or_tiling_exception": true,
+        "GIF_native_decoded_pixel_match": true,
+        "GIF_native_average_fps": true,
+        "GIF_slow8_decoded_pixel_match": true,
+        "GIF_slow8_average_fps": true
+      },
+      "visual_review": {
+        "status": "passed",
+        "observations": "已查看4格1倍/4倍：双侧牙形弧痕合拢到中央尖闪，随后撕开、碎片衰减；冷紫色区别于地狱猎犬红色，不含狼体或血雾。"
+      },
+      "code_integration": "not_performed",
+      "game_acceptance": "not_performed",
+      "source_license": {
+        "tool": "OpenAI built-in image_gen",
+        "commercial_basis": "existing approved OpenAI output terms; project-owned input references",
+        "terms_url": "https://openai.com/policies/terms-of-use/",
+        "processing": "Pillow MIT-CMU, source cuts/alpha/palette/nearest resize/placement and preview only"
+      },
+      "previews": [
+        "previews/skoll_bite_v01_frames.png",
+        "previews/skoll_bite_v01_native.gif",
+        "previews/skoll_bite_v01_rotate.png",
+        "previews/skoll_bite_v01_slow8.gif"
+      ],
+      "approved": "approved/skoll_bite.png",
+      "frame_order": "left_to_right_no_spacing",
+      "generation_records": "records/generation_jobs.json",
+      "public_generation_url": null,
+      "generation_url_note": "内置工具仅返回本地原图路径；真实提示词/参考/结果均归档，不伪造公开URL",
+      "transparent_strategy": "Generated alpha quantized to 8 source levels then optional low-alpha cap; RGB count and alpha recorded separately; zero RGB when alpha0",
+      "loop_mode": "single shot / static; single-shot temporary display fades and frees at end",
+      "remaining_issues": [
+        "代码接入未执行",
+        "游戏内朝向/锚点/范围/遮挡/帧率/节点清理未测"
+      ],
+      "source_recipe": "records/normalization_skoll_bite_v01.json"
+    },
+    {
+      "task": "H1",
+      "id": "skoll_howl",
+      "w": 128,
+      "h": 128,
+      "frames": 4,
+      "fps": 8,
+      "flags": [
+        "area",
+        "hole"
+      ],
+      "anchor": [
+        64,
+        64
+      ],
+      "columns": 2,
+      "rows": 2,
+      "loop": false,
+      "hook": "scripts/bosses/skoll.gd _draw_telegraph() howl；_summon_wolves()",
+      "keep": "替换嚎叫弧线；视觉半径沿radius+state_time*160，保留狼群与吞日Shader",
+      "reference_paths": [
+        "assets/sprites/effects/frost_shockwave.png"
+      ],
+      "target": "assets/sprites/effects/bosses/skoll_howl.png",
+      "source_root": "assets/source/taskH1_skoll_fx_2026-10-19",
+      "archived_references": [
+        {
+          "project_path": "assets/sprites/effects/frost_shockwave.png",
+          "archived_path": "references/frost_shockwave.png",
+          "sha256": "a0aa09571dec4959ee2a9f66dc6a6a038a2017fad3dea1140680bc837495c625"
+        }
+      ],
+      "version": "v01",
+      "final_path": "assets/sprites/effects/bosses/skoll_howl.png",
+      "candidate": "candidates/skoll_howl_v01.png",
+      "sha256": "772460c70528b04fb73c73694f3a855d93938a79b6e78bf9324ef31fbf90bef5",
+      "actual_RGB_colors": 25,
+      "actual_alpha_values": [
+        0,
+        28,
+        56,
+        84,
+        112,
+        140,
+        168,
+        197
+      ],
+      "frame_bboxes": [
+        [
+          31,
+          31,
+          96,
+          97
+        ],
+        [
+          13,
+          16,
+          114,
+          111
+        ],
+        [
+          8,
+          9,
+          119,
+          119
+        ],
+        [
+          2,
+          4,
+          126,
+          125
+        ]
+      ],
+      "technical_checks": {
+        "PNG_RGBA": true,
+        "exact_strip_dimensions": true,
+        "RGB_within_48": true,
+        "transparent_background": true,
+        "every_frame_nonempty": true,
+        "distinct_original_frames": true,
+        "2px_margin_or_tiling_exception": true,
+        "transparent_center": true,
+        "GIF_native_decoded_pixel_match": true,
+        "GIF_native_average_fps": true,
+        "GIF_slow8_decoded_pixel_match": true,
+        "GIF_slow8_average_fps": true
+      },
+      "visual_review": {
+        "status": "passed",
+        "observations": "已查看4格：小圈发生、中圈峰值、大圈与低亮碎波衰减，中央透空，无狼体；整帧中心对齐，保留统一尺度扩散。实际嚎叫范围由代码缩放，不烘焙吞日黑屏。"
+      },
+      "code_integration": "not_performed",
+      "game_acceptance": "not_performed",
+      "source_license": {
+        "tool": "OpenAI built-in image_gen",
+        "commercial_basis": "existing approved OpenAI output terms; project-owned input references",
+        "terms_url": "https://openai.com/policies/terms-of-use/",
+        "processing": "Pillow MIT-CMU, source cuts/alpha/palette/nearest resize/placement and preview only"
+      },
+      "previews": [
+        "previews/skoll_howl_v01_frames.png",
+        "previews/skoll_howl_v01_ground.png",
+        "previews/skoll_howl_v01_native.gif",
+        "previews/skoll_howl_v01_slow8.gif"
+      ],
+      "approved": "approved/skoll_howl.png",
+      "frame_order": "left_to_right_no_spacing",
+      "generation_records": "records/generation_jobs.json",
+      "public_generation_url": null,
+      "generation_url_note": "内置工具仅返回本地原图路径；真实提示词/参考/结果均归档，不伪造公开URL",
+      "transparent_strategy": "Generated alpha quantized to 8 source levels then optional low-alpha cap; RGB count and alpha recorded separately; zero RGB when alpha0",
+      "loop_mode": "single shot / static; single-shot temporary display fades and frees at end",
+      "remaining_issues": [
+        "代码接入未执行",
+        "游戏内朝向/锚点/范围/遮挡/帧率/节点清理未测"
+      ],
+      "source_recipe": "records/normalization_skoll_howl_v01.json"
+    },
+    {
+      "task": "H1",
+      "id": "skoll_howl_body",
+      "w": 128,
+      "h": 128,
+      "frames": 3,
+      "fps": 8,
+      "flags": [
+        "body"
+      ],
+      "anchor": [
+        64,
+        118
+      ],
+      "columns": 3,
+      "rows": 1,
+      "loop": false,
+      "hook": "scripts/bosses/skoll.gd init_stats() state_actions.howl；scripts/bosses/boss.gd BOSS_ACTIONS",
+      "keep": "将howl从windup映射到howl；3帧8fps，不改变1.2秒嚎叫状态",
+      "reference_paths": [
+        "assets/sprites/bosses/skoll.png",
+        "assets/sprites/bosses/skoll_idle.png"
+      ],
+      "target": "assets/sprites/bosses/skoll_howl.png",
+      "source_root": "assets/source/taskH1_skoll_fx_2026-10-19",
+      "archived_references": [
+        {
+          "project_path": "assets/sprites/bosses/skoll.png",
+          "archived_path": "references/skoll.png",
+          "sha256": "cf0caab4c10226dcef87dcd359b28f4c84046b3da20193f4c257463e8a72f0a9"
+        },
+        {
+          "project_path": "assets/sprites/bosses/skoll_idle.png",
+          "archived_path": "references/skoll_idle.png",
+          "sha256": "19d76d98e3f5a8bb76f9bafb7e0239f069aaf14c175ff6fc5fee465a6421b8a3"
+        }
+      ],
+      "version": "v01",
+      "final_path": "assets/sprites/bosses/skoll_howl.png",
+      "candidate": "candidates/skoll_howl_body_v01.png",
+      "sha256": "a6306eea1d7e44da5d5a8a0c749bcd14a339616cfa62b0577a5b5830c7c9a942",
+      "actual_RGB_colors": 47,
+      "actual_alpha_values": [
+        0,
+        255
+      ],
+      "frame_bboxes": [
+        [
+          3,
+          15,
+          124,
+          118
+        ],
+        [
+          5,
+          12,
+          123,
+          118
+        ],
+        [
+          2,
+          16,
+          126,
+          118
+        ]
+      ],
+      "technical_checks": {
+        "PNG_RGBA": true,
+        "exact_strip_dimensions": true,
+        "RGB_within_48": true,
+        "transparent_background": true,
+        "every_frame_nonempty": true,
+        "distinct_original_frames": true,
+        "2px_margin_or_tiling_exception": true,
+        "binary_alpha": true,
+        "same_foot_baseline": true,
+        "same_static_palette": true,
+        "GIF_native_decoded_pixel_match": true,
+        "GIF_native_average_fps": true,
+        "GIF_slow8_decoded_pixel_match": true,
+        "GIF_slow8_average_fps": true
+      },
+      "visual_review": {
+        "status": "passed",
+        "observations": "已查看3格与原狼体：同样的棕黑金边毛、尾巴、四爪和朝右外观；抬头—张口仰嚎—回收，脚底均y118，身体无声波/新火焰。原有身体动作未重做。"
+      },
+      "code_integration": "not_performed",
+      "game_acceptance": "not_performed",
+      "source_license": {
+        "tool": "OpenAI built-in image_gen",
+        "commercial_basis": "existing approved OpenAI output terms; project-owned input references",
+        "terms_url": "https://openai.com/policies/terms-of-use/",
+        "processing": "Pillow MIT-CMU, source cuts/alpha/palette/nearest resize/placement and preview only"
+      },
+      "previews": [
+        "previews/skoll_howl_body_v01_baseline.png",
+        "previews/skoll_howl_body_v01_frames.png",
+        "previews/skoll_howl_body_v01_native.gif",
+        "previews/skoll_howl_body_v01_slow8.gif"
+      ],
+      "approved": "approved/skoll_howl_body.png",
+      "frame_order": "left_to_right_no_spacing",
+      "generation_records": "records/generation_jobs.json",
+      "public_generation_url": null,
+      "generation_url_note": "内置工具仅返回本地原图路径；真实提示词/参考/结果均归档，不伪造公开URL",
+      "transparent_strategy": "RGBA binary alpha0/255; zero RGB when alpha0",
+      "loop_mode": "single shot / static; single-shot temporary display fades and frees at end",
+      "remaining_issues": [
+        "代码接入未执行",
+        "游戏内朝向/锚点/范围/遮挡/帧率/节点清理未测"
+      ],
+      "source_recipe": "records/normalization_skoll_howl_body_v01.json"
+    }
+  ],
+  "originals": [
+    {
+      "file": "originals/skoll_bite_v01.png",
+      "sha256": "4c5813e3f780671be55c7a30872b1bbf2edd7b5af072914d1aff1280f9a7f3f9"
+    },
+    {
+      "file": "originals/skoll_dash_trail_v01.png",
+      "sha256": "dee96c99f2cf71f209b527fd7098b821de33ae1f6d7b01f5772fced9175da952"
+    },
+    {
+      "file": "originals/skoll_howl_body_v01.png",
+      "sha256": "0da74c2b1acabff67e72001ad19d28fe665a1e12142f0115d62aff94a136710b"
+    },
+    {
+      "file": "originals/skoll_howl_v01.png",
+      "sha256": "686a994adc8d693021ecc26aef57142e47345f61c4e790d2247a5a615242d975"
+    }
+  ],
+  "generation_records": "records/generation_jobs.json",
+  "limitations": [
+    "Technical measurements and local previews do not prove Godot gameplay acceptance."
+  ],
+  "source_inventory": "records/source_inventory.json"
+}

@@ -1,0 +1,148 @@
+[
+  {
+    "action": "idle",
+    "frames": 4,
+    "fps": 8,
+    "loop": true,
+    "scale": 0.16457960644007155,
+    "raw_boxes": [
+      [
+        167,
+        26,
+        506,
+        585
+      ],
+      [
+        700,
+        26,
+        1056,
+        585
+      ],
+      [
+        141,
+        652,
+        506,
+        1211
+      ],
+      [
+        711,
+        652,
+        1056,
+        1211
+      ]
+    ],
+    "placements": [
+      [
+        19,
+        2,
+        56,
+        92
+      ],
+      [
+        16,
+        2,
+        59,
+        92
+      ],
+      [
+        15,
+        2,
+        60,
+        92
+      ],
+      [
+        18,
+        2,
+        57,
+        92
+      ]
+    ],
+    "registration": "one scale per action; same master-ground-foot centroid and foot baseline94; whole-frame placement only",
+    "visual_review": "pending"
+  },
+  {
+    "action": "pry",
+    "frames": 6,
+    "fps": 16,
+    "loop": false,
+    "scale": 0.18699186991869918,
+    "raw_boxes": [
+      [
+        81,
+        39,
+        456,
+        503
+      ],
+      [
+        586,
+        11,
+        952,
+        503
+      ],
+      [
+        1102,
+        18,
+        1503,
+        503
+      ],
+      [
+        95,
+        517,
+        487,
+        994
+      ],
+      [
+        583,
+        517,
+        977,
+        994
+      ],
+      [
+        1099,
+        537,
+        1455,
+        994
+      ]
+    ],
+    "placements": [
+      [
+        16,
+        7,
+        70,
+        87
+      ],
+      [
+        16,
+        2,
+        68,
+        92
+      ],
+      [
+        15,
+        3,
+        75,
+        91
+      ],
+      [
+        14,
+        5,
+        73,
+        89
+      ],
+      [
+        13,
+        5,
+        74,
+        89
+      ],
+      [
+        15,
+        9,
+        67,
+        85
+      ]
+    ],
+    "registration": "one scale per action; same master-ground-foot centroid and foot baseline94; whole-frame placement only",
+    "visual_review": "pending"
+  }
+]

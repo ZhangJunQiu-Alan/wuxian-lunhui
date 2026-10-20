@@ -1,0 +1,58 @@
+[
+  {
+    "id": "C1",
+    "owner": "关卡集成",
+    "decision": "冻结地图尺寸、Boss活动中心和动态活动范围接口",
+    "proposal": "5120 view / 256 border; dynamic encounter geometry supplied by controller; (0,0), R1024/640 are preview fixtures",
+    "reason": "Game currently spawns every boss 520px around current player; no forced teleport or central arena contract exists"
+  },
+  {
+    "id": "C2",
+    "owner": "动画集成",
+    "decision": "冻结各状态的动作、时长、关键帧与帧率",
+    "proposal": "idle/move=8fps, attacks=16fps; windup holds last frame until gameplay release",
+    "reason": "Boss._ready currently forces attack to 8fps; new boss adapters must override only their own animations"
+  },
+  {
+    "id": "C3",
+    "owner": "K1/K2战斗集成",
+    "decision": "蛇身 ribbon 接口、巨口坐标、格莱普尼尔拾取/束缚契约",
+    "proposal": "head neck (0,62), body sockets (0,30)/(64,30); Fenrir mouth 256 square; vector attraction remains procedural",
+    "reason": "non-head body must not join enemy targeting/index/layer2; swallowing escape duration and instant-death API undefined"
+  },
+  {
+    "id": "C4",
+    "owner": "K3战斗集成",
+    "decision": "苏尔特统一256画布及64格火焰判定契约",
+    "proposal": "all body actions 256 square, source stays 192px at offset(32,64), foot(128,254); arc texture128; phase thresholds .60/.25",
+    "reason": "current SpriteVisual does not implement per-character explicit anchors; generic poison/fire behavior cannot stand in for final mechanics"
+  },
+  {
+    "id": "C5",
+    "owner": "普通怪集成",
+    "decision": "注册三个第三关敌人并冻结特殊动作触发",
+    "proposal": "fire_giant/frost_veteran/wolf_berserker; special behaviors scoped to these types",
+    "reason": "EnemyDB has no third-level entries; current default enemy actions do not auto-play charge/shield/rage"
+  },
+  {
+    "id": "C6",
+    "owner": "剧情/援助集成",
+    "decision": "维达、弗雷世界内形象及援助触发接口；一般神明周期援助",
+    "proposal": "new allies directory; runtime gods[odin/freyja].awakened; Thor condition faith and boss combat time<=90s",
+    "reason": "do not conflate Freyja requirement with Freyr faith; other gods nearby/rates unspecified; no forced new eight sets"
+  },
+  {
+    "id": "C7",
+    "owner": "地图集成",
+    "decision": "采用12角点地块接口和复用地面构成的屏障方案",
+    "proposal": "grass_edge12 plus edge_masks for other soft patches; decorative flame has no damage; horizon outside walk rect",
+    "reason": "MapLayer.border currently assumes eight border textures; custom reused-terrain border rendering needed"
+  },
+  {
+    "id": "C8",
+    "owner": "音频/结算集成",
+    "decision": "逐事件音效身份、音乐源/乐句长度和结局流程",
+    "proposal": "reuse existing audio where suitable; vigrid.ogg is new; ending text reuses UI and has three fate flags",
+    "reason": "new fate flags/result fields/persistence not present; listening and game playback are separate gates"
+  }
+]

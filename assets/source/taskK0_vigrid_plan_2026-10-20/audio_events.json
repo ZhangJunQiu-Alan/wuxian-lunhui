@@ -1,0 +1,457 @@
+{
+  "status": "event_contract_proposal_not_audio_production",
+  "events": [
+    {
+      "event": "jormungandr_windup",
+      "task": "K1",
+      "trigger": "enter poison windup",
+      "decision": "reuse_candidate",
+      "proposed_call_id": "boss_windup",
+      "files": [
+        {
+          "path": "assets/audio/sfx/boss_windup.wav",
+          "sha256": "78ae337e95ecfacb94f0a06e23bd918ba106197c33c7d7326e96c569a3f37d04"
+        }
+      ],
+      "format": "WAV PCM16 mono 44100Hz; peak about -1dBFS; short high-frequency variants <=0.3s",
+      "subjective_and_runtime_acceptance": "pending",
+      "note": "",
+      "new_file_count": 0,
+      "new_duration": null
+    },
+    {
+      "event": "jormungandr_poison_release",
+      "task": "K1",
+      "trigger": "poison cone release frame",
+      "decision": "new_sound_identity_unfrozen",
+      "proposed_call_id": null,
+      "files": [],
+      "format": "WAV PCM16 mono 44100Hz; peak about -1dBFS; short high-frequency variants <=0.3s",
+      "subjective_and_runtime_acceptance": "pending",
+      "note": "poison hiss identity undefined; do not relabel wolf/fire recording",
+      "new_file_count": null,
+      "new_duration": null
+    },
+    {
+      "event": "jormungandr_body_hit",
+      "task": "K1",
+      "trigger": "body contact accepted by hit cooldown",
+      "decision": "reuse_candidate",
+      "proposed_call_id": "boss_slam",
+      "files": [
+        {
+          "path": "assets/audio/sfx/boss_slam.wav",
+          "sha256": "46175729a18b9fbc9d2b49f0e8619d4eca363c2096da26f4f413e55fb1cefe4e"
+        }
+      ],
+      "format": "WAV PCM16 mono 44100Hz; peak about -1dBFS; short high-frequency variants <=0.3s",
+      "subjective_and_runtime_acceptance": "pending",
+      "note": "",
+      "new_file_count": 0,
+      "new_duration": null
+    },
+    {
+      "event": "thor_fate_rescued",
+      "task": "K1",
+      "trigger": "Thor faith + serpent killed within 90s",
+      "decision": "reuse_candidate",
+      "proposed_call_id": "quest_done",
+      "files": [
+        {
+          "path": "assets/audio/sfx/quest_done.wav",
+          "sha256": "ff90b06438c868f7a4aea0ab6aca6f74a2eff6fb9564e574ab6699e1b18eee37"
+        }
+      ],
+      "format": "WAV PCM16 mono 44100Hz; peak about -1dBFS; short high-frequency variants <=0.3s",
+      "subjective_and_runtime_acceptance": "pending",
+      "note": "",
+      "new_file_count": 0,
+      "new_duration": null
+    },
+    {
+      "event": "thor_final_aid",
+      "task": "K1",
+      "trigger": "saved Thor actual lightning strike in Surtr battle",
+      "decision": "reuse_candidate",
+      "proposed_call_id": "lightning",
+      "files": [
+        {
+          "path": "assets/audio/sfx/lightning_01.wav",
+          "sha256": "665f45accf813feccca7c046e7985f1d509380d5cb6d5302c51db7e5e4b9bdc3"
+        },
+        {
+          "path": "assets/audio/sfx/lightning_02.wav",
+          "sha256": "70725f8885f3a66697232763b7bdb0a8e9f71af551538828760252d7e280ca9e"
+        },
+        {
+          "path": "assets/audio/sfx/lightning_03.wav",
+          "sha256": "df114935a3f4d9298296ad32fa1f15568ffff411fc9945d0b1f1ea87edb5c615"
+        }
+      ],
+      "format": "WAV PCM16 mono 44100Hz; peak about -1dBFS; short high-frequency variants <=0.3s",
+      "subjective_and_runtime_acceptance": "pending",
+      "note": "",
+      "new_file_count": 0,
+      "new_duration": null
+    },
+    {
+      "event": "fenrir_maw_windup",
+      "task": "K2",
+      "trigger": "mouth begins attraction warning",
+      "decision": "reuse_candidate",
+      "proposed_call_id": "boss_windup",
+      "files": [
+        {
+          "path": "assets/audio/sfx/boss_windup.wav",
+          "sha256": "78ae337e95ecfacb94f0a06e23bd918ba106197c33c7d7326e96c569a3f37d04"
+        }
+      ],
+      "format": "WAV PCM16 mono 44100Hz; peak about -1dBFS; short high-frequency variants <=0.3s",
+      "subjective_and_runtime_acceptance": "pending",
+      "note": "",
+      "new_file_count": 0,
+      "new_duration": null
+    },
+    {
+      "event": "fenrir_gulp",
+      "task": "K2",
+      "trigger": "actual swallow threshold/commit, after escape window",
+      "decision": "new_sound_identity_unfrozen",
+      "proposed_call_id": null,
+      "files": [],
+      "format": "WAV PCM16 mono 44100Hz; peak about -1dBFS; short high-frequency variants <=0.3s",
+      "subjective_and_runtime_acceptance": "pending",
+      "note": "dedicated low impact/gulp not acquired",
+      "new_file_count": null,
+      "new_duration": null
+    },
+    {
+      "event": "fenrir_charge",
+      "task": "K2",
+      "trigger": "run contact/cast start, not every frame",
+      "decision": "reuse_candidate",
+      "proposed_call_id": "boss_howl",
+      "files": [
+        {
+          "path": "assets/audio/sfx/boss_howl.wav",
+          "sha256": "8b72e4e5d7623a60ee4971d2215f7040762f5b5d8c0782354d03aaa54e9d8c85"
+        }
+      ],
+      "format": "WAV PCM16 mono 44100Hz; peak about -1dBFS; short high-frequency variants <=0.3s",
+      "subjective_and_runtime_acceptance": "pending",
+      "note": "",
+      "new_file_count": 0,
+      "new_duration": null
+    },
+    {
+      "event": "gleipnir_pickup",
+      "task": "K2",
+      "trigger": "fragment actually collected",
+      "decision": "reuse_candidate",
+      "proposed_call_id": "chest_open",
+      "files": [
+        {
+          "path": "assets/audio/sfx/chest_open.wav",
+          "sha256": "49c5e96e6ae81de49ba0b17f234c8a368114dce0e775fc1a440ca3638177fab5"
+        }
+      ],
+      "format": "WAV PCM16 mono 44100Hz; peak about -1dBFS; short high-frequency variants <=0.3s",
+      "subjective_and_runtime_acceptance": "pending",
+      "note": "reuse candidate; identity distinct from XP required",
+      "new_file_count": 0,
+      "new_duration": null
+    },
+    {
+      "event": "gleipnir_bind",
+      "task": "K2",
+      "trigger": "binding activates",
+      "decision": "new_sound_identity_unfrozen",
+      "proposed_call_id": null,
+      "files": [],
+      "format": "WAV PCM16 mono 44100Hz; peak about -1dBFS; short high-frequency variants <=0.3s",
+      "subjective_and_runtime_acceptance": "pending",
+      "note": "braided magical tension and release identity not fixed",
+      "new_file_count": null,
+      "new_duration": null
+    },
+    {
+      "event": "vidar_arrive",
+      "task": "K2",
+      "trigger": "Odin faith and awakening; one actual arrival",
+      "decision": "reuse_candidate",
+      "proposed_call_id": "awaken",
+      "files": [
+        {
+          "path": "assets/audio/sfx/awaken.wav",
+          "sha256": "7b340169cbe23901524589c5e158d03dc96890e661ba77a75f7fd6e58809305f"
+        }
+      ],
+      "format": "WAV PCM16 mono 44100Hz; peak about -1dBFS; short high-frequency variants <=0.3s",
+      "subjective_and_runtime_acceptance": "pending",
+      "note": "",
+      "new_file_count": 0,
+      "new_duration": null
+    },
+    {
+      "event": "vidar_pry",
+      "task": "K2",
+      "trigger": "jaw release/contact frame",
+      "decision": "reuse_candidate",
+      "proposed_call_id": "boss_slam",
+      "files": [
+        {
+          "path": "assets/audio/sfx/boss_slam.wav",
+          "sha256": "46175729a18b9fbc9d2b49f0e8619d4eca363c2096da26f4f413e55fb1cefe4e"
+        }
+      ],
+      "format": "WAV PCM16 mono 44100Hz; peak about -1dBFS; short high-frequency variants <=0.3s",
+      "subjective_and_runtime_acceptance": "pending",
+      "note": "",
+      "new_file_count": 0,
+      "new_duration": null
+    },
+    {
+      "event": "surtr_sword",
+      "task": "K3",
+      "trigger": "sword damage active frame",
+      "decision": "reuse_candidate",
+      "proposed_call_id": "katana_slash",
+      "files": [
+        {
+          "path": "assets/audio/sfx/katana_slash_01.wav",
+          "sha256": "3f0be34ab5d03424dc9bc99799c6694912643daa9e2970d57f94cbcdd3e4da19"
+        },
+        {
+          "path": "assets/audio/sfx/katana_slash_02.wav",
+          "sha256": "b87b543726136308cb46c8eee6a6c105b0e94de6b0ad86571c542c2a8a1cc2ff"
+        },
+        {
+          "path": "assets/audio/sfx/katana_slash_03.wav",
+          "sha256": "7e6140bffabf4b588d78924c0d243b2ea6d0da97799934176242e2cd68d4c16f"
+        }
+      ],
+      "format": "WAV PCM16 mono 44100Hz; peak about -1dBFS; short high-frequency variants <=0.3s",
+      "subjective_and_runtime_acceptance": "pending",
+      "note": "compare weight; if too light, open explicit replacement after listening",
+      "new_file_count": 0,
+      "new_duration": null
+    },
+    {
+      "event": "surtr_residual_fire",
+      "task": "K3",
+      "trigger": "new fire hazard begins",
+      "decision": "reuse_candidate",
+      "proposed_call_id": "fire_burn",
+      "files": [
+        {
+          "path": "assets/audio/sfx/fire_burn.wav",
+          "sha256": "24444e784fefaa7a3889a8c240a118244a7f1a0214e31f06ef46ce88041a6e45"
+        }
+      ],
+      "format": "WAV PCM16 mono 44100Hz; peak about -1dBFS; short high-frequency variants <=0.3s",
+      "subjective_and_runtime_acceptance": "pending",
+      "note": "",
+      "new_file_count": 0,
+      "new_duration": null
+    },
+    {
+      "event": "surtr_gate",
+      "task": "K3",
+      "trigger": "summoning portal opens",
+      "decision": "new_sound_identity_unfrozen",
+      "proposed_call_id": null,
+      "files": [],
+      "format": "WAV PCM16 mono 44100Hz; peak about -1dBFS; short high-frequency variants <=0.3s",
+      "subjective_and_runtime_acceptance": "pending",
+      "note": "portal identity not fixed",
+      "new_file_count": null,
+      "new_duration": null
+    },
+    {
+      "event": "surtr_phase60",
+      "task": "K3",
+      "trigger": "cross .60 HP once",
+      "decision": "reuse_candidate",
+      "proposed_call_id": "boss_warning",
+      "files": [
+        {
+          "path": "assets/audio/sfx/boss_warning.wav",
+          "sha256": "d9372493b2c8c532fb784d5e378ac0a8d430cfde9178736fdeda3f2efa607489"
+        }
+      ],
+      "format": "WAV PCM16 mono 44100Hz; peak about -1dBFS; short high-frequency variants <=0.3s",
+      "subjective_and_runtime_acceptance": "pending",
+      "note": "",
+      "new_file_count": 0,
+      "new_duration": null
+    },
+    {
+      "event": "surtr_phase25",
+      "task": "K3",
+      "trigger": "cross .25 HP once",
+      "decision": "reuse_candidate",
+      "proposed_call_id": "boss_warning",
+      "files": [
+        {
+          "path": "assets/audio/sfx/boss_warning.wav",
+          "sha256": "d9372493b2c8c532fb784d5e378ac0a8d430cfde9178736fdeda3f2efa607489"
+        }
+      ],
+      "format": "WAV PCM16 mono 44100Hz; peak about -1dBFS; short high-frequency variants <=0.3s",
+      "subjective_and_runtime_acceptance": "pending",
+      "note": "",
+      "new_file_count": 0,
+      "new_duration": null
+    },
+    {
+      "event": "surtr_final_fire",
+      "task": "K3",
+      "trigger": "unsafe cells ignite together",
+      "decision": "reuse_candidate",
+      "proposed_call_id": "boss_slam",
+      "files": [
+        {
+          "path": "assets/audio/sfx/boss_slam.wav",
+          "sha256": "46175729a18b9fbc9d2b49f0e8619d4eca363c2096da26f4f413e55fb1cefe4e"
+        },
+        {
+          "path": "assets/audio/sfx/fire_burn.wav",
+          "sha256": "24444e784fefaa7a3889a8c240a118244a7f1a0214e31f06ef46ce88041a6e45"
+        }
+      ],
+      "format": "WAV PCM16 mono 44100Hz; peak about -1dBFS; short high-frequency variants <=0.3s",
+      "subjective_and_runtime_acceptance": "pending",
+      "note": "one event batch, never one voice per cell",
+      "new_file_count": 0,
+      "new_duration": null
+    },
+    {
+      "event": "freyr_heal",
+      "task": "K3",
+      "trigger": "actual granted healing, not each render frame",
+      "decision": "reuse_candidate",
+      "proposed_call_id": "heal_pickup",
+      "files": [
+        {
+          "path": "assets/audio/sfx/heal_pickup.wav",
+          "sha256": "a4232cf8d448ef8df5b7eca84cc78be2617dd37a539c65f55317166537a50977"
+        }
+      ],
+      "format": "WAV PCM16 mono 44100Hz; peak about -1dBFS; short high-frequency variants <=0.3s",
+      "subjective_and_runtime_acceptance": "pending",
+      "note": "",
+      "new_file_count": 0,
+      "new_duration": null
+    },
+    {
+      "event": "fire_giant_explosion",
+      "task": "K4",
+      "trigger": "one death explosion event",
+      "decision": "reuse_candidate",
+      "proposed_call_id": "big_death",
+      "files": [
+        {
+          "path": "assets/audio/sfx/big_death.wav",
+          "sha256": "a9deaee02c5b211d3225e3bb58b9e689cebd53f5def53f0eee37151717f68519"
+        },
+        {
+          "path": "assets/audio/sfx/fire_burn.wav",
+          "sha256": "24444e784fefaa7a3889a8c240a118244a7f1a0214e31f06ef46ce88041a6e45"
+        }
+      ],
+      "format": "WAV PCM16 mono 44100Hz; peak about -1dBFS; short high-frequency variants <=0.3s",
+      "subjective_and_runtime_acceptance": "pending",
+      "note": "",
+      "new_file_count": 0,
+      "new_duration": null
+    },
+    {
+      "event": "frost_veteran_charge",
+      "task": "K4",
+      "trigger": "charge begins",
+      "decision": "reuse_candidate",
+      "proposed_call_id": "boss_windup",
+      "files": [
+        {
+          "path": "assets/audio/sfx/boss_windup.wav",
+          "sha256": "78ae337e95ecfacb94f0a06e23bd918ba106197c33c7d7326e96c569a3f37d04"
+        }
+      ],
+      "format": "WAV PCM16 mono 44100Hz; peak about -1dBFS; short high-frequency variants <=0.3s",
+      "subjective_and_runtime_acceptance": "pending",
+      "note": "",
+      "new_file_count": 0,
+      "new_duration": null
+    },
+    {
+      "event": "frost_veteran_block",
+      "task": "K4",
+      "trigger": "front shield actually blocks hit",
+      "decision": "reuse_candidate",
+      "proposed_call_id": "boss_block",
+      "files": [
+        {
+          "path": "assets/audio/sfx/boss_block.wav",
+          "sha256": "714814eb95a47bfd71ffc54daa56725554f0d2c63ff491ab53ac75562094781e"
+        }
+      ],
+      "format": "WAV PCM16 mono 44100Hz; peak about -1dBFS; short high-frequency variants <=0.3s",
+      "subjective_and_runtime_acceptance": "pending",
+      "note": "",
+      "new_file_count": 0,
+      "new_duration": null
+    },
+    {
+      "event": "wolf_berserker_rage",
+      "task": "K4",
+      "trigger": "first low-health rage transition",
+      "decision": "reuse_candidate",
+      "proposed_call_id": "boss_howl",
+      "files": [
+        {
+          "path": "assets/audio/sfx/boss_howl.wav",
+          "sha256": "8b72e4e5d7623a60ee4971d2215f7040762f5b5d8c0782354d03aaa54e9d8c85"
+        }
+      ],
+      "format": "WAV PCM16 mono 44100Hz; peak about -1dBFS; short high-frequency variants <=0.3s",
+      "subjective_and_runtime_acceptance": "pending",
+      "note": "human battle cry may need replacement; not approved by filename",
+      "new_file_count": 0,
+      "new_duration": null
+    },
+    {
+      "event": "battlefield_ambience",
+      "task": "K5",
+      "trigger": "optional sparse environment layer, off during key warnings",
+      "decision": "new_sound_identity_unfrozen",
+      "proposed_call_id": null,
+      "files": [],
+      "format": "WAV PCM16 mono 44100Hz; peak about -1dBFS; short high-frequency variants <=0.3s",
+      "subjective_and_runtime_acceptance": "pending",
+      "note": "optional; no always-on fire loop count assumed",
+      "new_file_count": null,
+      "new_duration": null
+    },
+    {
+      "event": "chapter_clear",
+      "task": "K7",
+      "trigger": "chapter ending begins after all three Boss deaths",
+      "decision": "reuse_candidate",
+      "proposed_call_id": "quest_done",
+      "files": [
+        {
+          "path": "assets/audio/sfx/quest_done.wav",
+          "sha256": "ff90b06438c868f7a4aea0ab6aca6f74a2eff6fb9564e574ab6699e1b18eee37"
+        }
+      ],
+      "format": "WAV PCM16 mono 44100Hz; peak about -1dBFS; short high-frequency variants <=0.3s",
+      "subjective_and_runtime_acceptance": "pending",
+      "note": "",
+      "new_file_count": 0,
+      "new_duration": null
+    }
+  ],
+  "reuse_note": "existing candidates are not automatically auditory identity approval; G6 already user accepted is not retested as new production",
+  "new_sfx_total": null,
+  "reason": "规格未定; decide identity, variants and event cadence before any fixed new sound count"
+}

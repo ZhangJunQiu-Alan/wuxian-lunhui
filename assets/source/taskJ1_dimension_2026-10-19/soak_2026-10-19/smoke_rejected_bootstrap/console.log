@@ -1,0 +1,438 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+OpenGL API 4.1 Metal - 90.5 - Compatibility - Using Device: Apple - Apple M2
+
+SCRIPT ERROR: Compile Error: Identifier not found: Settings
+          at: GDScript::reload (res://scripts/entities/player.gd:347)
+SCRIPT ERROR: Compile Error: Identifier not found: Save
+          at: GDScript::reload (res://scripts/game.gd:389)
+SCRIPT ERROR: Compile Error: Failed to compile depended scripts.
+          at: GDScript::reload (res://scripts/world/map_layer.gd:0)
+SCRIPT ERROR: Compile Error: Identifier not found: Settings
+          at: GDScript::reload (res://scripts/effects/fx_layer.gd:28)
+SCRIPT ERROR: Compile Error: Failed to compile depended scripts.
+          at: GDScript::reload (res://scripts/bosses/boss.gd:0)
+SCRIPT ERROR: Compile Error: Failed to compile depended scripts.
+          at: GDScript::reload (res://scripts/gods/god_zone.gd:0)
+SCRIPT ERROR: Compile Error: Failed to compile depended scripts.
+          at: GDScript::reload (res://scripts/gods/god_power.gd:0)
+SCRIPT ERROR: Compile Error: Failed to compile depended scripts.
+          at: GDScript::reload (res://scripts/entities/enemy.gd:0)
+SCRIPT ERROR: Compile Error: Failed to compile depended scripts.
+          at: GDScript::reload (res://scripts/ultimates/dimension_slash.gd:0)
+SCRIPT ERROR: Compile Error: Failed to compile depended scripts.
+          at: GDScript::reload (res://tools/soak_combat_art.gd:0)
+ERROR: Failed to load script "res://tools/soak_combat_art.gd" with error "Compilation failed".
+   at: load (modules/gdscript/gdscript_resource_format.cpp:46)
+2026-10-19 05:39:56.951 godot[13102:3325991] error messaging the mach port for IMKCFRunLoopWakeUpReliable
+SCRIPT ERROR: Invalid access to property or key 'level_up_panel' on a base object of type 'Node2D'.
+          at: new_game (res://tools/soak_combat_art.gd:77)
+          GDScript backtrace (most recent call first):
+              [0] new_game (res://tools/soak_combat_art.gd:77)
+SAMPLE {"cycle":0,"effects":{"marks":0,"numbers":0,"particles":0,"rings":0},"enemies":0,"fps_monitor":1.0,"j_texture_cache":14,"nodes":4,"objects":1549.0,"orphans":0.0,"phase":"stationary_pressure","resources":51.0,"seconds":0.026,"static_bytes":43009064,"static_peak_bytes":62198813,"tag":"start","texture_bytes":9566239.0,"video_bytes":15976871.0}
+SCRIPT ERROR: Invalid call. Nonexistent function 'mark' in base 'Nil'.
+          at: _process (res://tools/soak_combat_art.gd:139)
+          GDScript backtrace (most recent call first):
+              [0] _process (res://tools/soak_combat_art.gd:139)
+SAMPLE {"cycle":0,"effects":{"marks":0,"numbers":0,"particles":0,"rings":0},"enemies":0,"fps_monitor":1.0,"j_texture_cache":14,"nodes":4,"objects":1549.0,"orphans":0.0,"phase":"stationary_pressure","resources":51.0,"seconds":0.098,"static_bytes":43011836,"static_peak_bytes":62198813,"tag":"steady","texture_bytes":9566239.0,"video_bytes":15976871.0}
+ERROR: steady population stationary_pressure <null>
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tools/soak_combat_art.gd:30)
+       [1] pressure_phase (res://tools/soak_combat_art.gd:189)
+SCRIPT ERROR: Invalid access to property or key '_marks' on a base object of type 'Nil'.
+          at: pressure_phase (res://tools/soak_combat_art.gd:190)
+          GDScript backtrace (most recent call first):
+              [0] pressure_phase (res://tools/soak_combat_art.gd:190)
+SAMPLE {"cycle":0,"effects":{"marks":0,"numbers":0,"particles":0,"rings":0},"enemies":0,"fps_monitor":1.0,"j_texture_cache":14,"nodes":4,"objects":1549.0,"orphans":0.0,"phase":"live_ai_pressure","resources":51.0,"seconds":0.1,"static_bytes":43014476,"static_peak_bytes":62198813,"tag":"start","texture_bytes":9566239.0,"video_bytes":15976871.0}
+SCRIPT ERROR: Invalid access to property or key 'global_position' on a base object of type 'Nil'.
+          at: cast (res://scripts/ultimates/dimension_slash.gd:24)
+          GDScript backtrace (most recent call first):
+              [0] cast (res://scripts/ultimates/dimension_slash.gd:24)
+              [1] cast_all (res://tools/soak_combat_art.gd:122)
+              [2] _process (res://tools/soak_combat_art.gd:147)
+SCRIPT ERROR: Invalid assignment of property or key 'frenzy_time' with value of type 'float' on a base object of type 'Nil'.
+          at: cast (res://scripts/ultimates/wild_west_show.gd:15)
+          GDScript backtrace (most recent call first):
+              [0] cast (res://scripts/ultimates/wild_west_show.gd:15)
+              [1] cast_all (res://tools/soak_combat_art.gd:122)
+              [2] _process (res://tools/soak_combat_art.gd:147)
+SCRIPT ERROR: Cannot call method 'get_parent' on a null value.
+          at: cast (res://scripts/ultimates/enter_formation.gd:31)
+          GDScript backtrace (most recent call first):
+              [0] cast (res://scripts/ultimates/enter_formation.gd:31)
+              [1] cast_all (res://tools/soak_combat_art.gd:122)
+              [2] _process (res://tools/soak_combat_art.gd:147)
+SCRIPT ERROR: Invalid access to property or key 'global_position' on a base object of type 'Nil'.
+          at: cast (res://scripts/ultimates/stonehenge.gd:25)
+          GDScript backtrace (most recent call first):
+              [0] cast (res://scripts/ultimates/stonehenge.gd:25)
+              [1] cast_all (res://tools/soak_combat_art.gd:122)
+              [2] _process (res://tools/soak_combat_art.gd:147)
+SCRIPT ERROR: Invalid call. Nonexistent function 'get_children' in base 'Nil'.
+          at: cast_all (res://tools/soak_combat_art.gd:126)
+          GDScript backtrace (most recent call first):
+              [0] cast_all (res://tools/soak_combat_art.gd:126)
+              [1] _process (res://tools/soak_combat_art.gd:147)
+SCRIPT ERROR: Invalid call. Nonexistent function 'death' in base 'GDScript'.
+          at: _process (res://tools/soak_combat_art.gd:151)
+          GDScript backtrace (most recent call first):
+              [0] _process (res://tools/soak_combat_art.gd:151)
+SAMPLE {"cycle":0,"effects":{"marks":0,"numbers":0,"particles":0,"rings":0},"enemies":0,"fps_monitor":1.0,"j_texture_cache":14,"nodes":4,"objects":1552.0,"orphans":3.0,"phase":"live_ai_pressure","resources":51.0,"seconds":0.111,"static_bytes":43023400,"static_peak_bytes":62198813,"tag":"steady","texture_bytes":9566239.0,"video_bytes":15976871.0}
+ERROR: steady population live_ai_pressure <null>
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tools/soak_combat_art.gd:30)
+       [1] pressure_phase (res://tools/soak_combat_art.gd:189)
+SCRIPT ERROR: Invalid access to property or key '_marks' on a base object of type 'Nil'.
+          at: pressure_phase (res://tools/soak_combat_art.gd:190)
+          GDScript backtrace (most recent call first):
+              [0] pressure_phase (res://tools/soak_combat_art.gd:190)
+SAMPLE {"cycle":0,"effects":{"marks":0,"numbers":0,"particles":0,"rings":0},"enemies":0,"fps_monitor":1.0,"j_texture_cache":14,"nodes":4,"objects":1552.0,"orphans":3.0,"phase":"stationary_repeat","resources":51.0,"seconds":0.112,"static_bytes":43026088,"static_peak_bytes":62198813,"tag":"start","texture_bytes":9566239.0,"video_bytes":15976871.0}
+SCRIPT ERROR: Invalid access to property or key 'global_position' on a base object of type 'Nil'.
+          at: cast (res://scripts/ultimates/dimension_slash.gd:24)
+          GDScript backtrace (most recent call first):
+              [0] cast (res://scripts/ultimates/dimension_slash.gd:24)
+              [1] cast_all (res://tools/soak_combat_art.gd:122)
+              [2] _process (res://tools/soak_combat_art.gd:147)
+SCRIPT ERROR: Invalid assignment of property or key 'frenzy_time' with value of type 'float' on a base object of type 'Nil'.
+          at: cast (res://scripts/ultimates/wild_west_show.gd:15)
+          GDScript backtrace (most recent call first):
+              [0] cast (res://scripts/ultimates/wild_west_show.gd:15)
+              [1] cast_all (res://tools/soak_combat_art.gd:122)
+              [2] _process (res://tools/soak_combat_art.gd:147)
+SCRIPT ERROR: Cannot call method 'get_parent' on a null value.
+          at: cast (res://scripts/ultimates/enter_formation.gd:31)
+          GDScript backtrace (most recent call first):
+              [0] cast (res://scripts/ultimates/enter_formation.gd:31)
+              [1] cast_all (res://tools/soak_combat_art.gd:122)
+              [2] _process (res://tools/soak_combat_art.gd:147)
+SCRIPT ERROR: Invalid access to property or key 'global_position' on a base object of type 'Nil'.
+          at: cast (res://scripts/ultimates/stonehenge.gd:25)
+          GDScript backtrace (most recent call first):
+              [0] cast (res://scripts/ultimates/stonehenge.gd:25)
+              [1] cast_all (res://tools/soak_combat_art.gd:122)
+              [2] _process (res://tools/soak_combat_art.gd:147)
+SCRIPT ERROR: Invalid call. Nonexistent function 'get_children' in base 'Nil'.
+          at: cast_all (res://tools/soak_combat_art.gd:126)
+          GDScript backtrace (most recent call first):
+              [0] cast_all (res://tools/soak_combat_art.gd:126)
+              [1] _process (res://tools/soak_combat_art.gd:147)
+SAMPLE {"cycle":0,"effects":{"marks":0,"numbers":0,"particles":0,"rings":0},"enemies":0,"fps_monitor":1.0,"j_texture_cache":14,"nodes":4,"objects":1555.0,"orphans":6.0,"phase":"stationary_repeat","resources":51.0,"seconds":0.117,"static_bytes":43034988,"static_peak_bytes":62198813,"tag":"steady","texture_bytes":9566239.0,"video_bytes":15976871.0}
+ERROR: steady population stationary_repeat <null>
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tools/soak_combat_art.gd:30)
+       [1] pressure_phase (res://tools/soak_combat_art.gd:189)
+SCRIPT ERROR: Invalid access to property or key '_marks' on a base object of type 'Nil'.
+          at: pressure_phase (res://tools/soak_combat_art.gd:190)
+          GDScript backtrace (most recent call first):
+              [0] pressure_phase (res://tools/soak_combat_art.gd:190)
+SCRIPT ERROR: Invalid call. Nonexistent function 'get_children' in base 'Nil'.
+          at: run (res://tools/soak_combat_art.gd:218)
+          GDScript backtrace (most recent call first):
+              [0] run (res://tools/soak_combat_art.gd:218)
+              [1] pressure_phase (res://tools/soak_combat_art.gd:190)
+SCRIPT ERROR: Invalid call. Nonexistent function 'mark' in base 'Nil'.
+          at: _process (res://tools/soak_combat_art.gd:139)
+          GDScript backtrace (most recent call first):
+              [0] _process (res://tools/soak_combat_art.gd:139)
+SCRIPT ERROR: Invalid call. Nonexistent function 'mark' in base 'Nil'.
+          at: _process (res://tools/soak_combat_art.gd:139)
+          GDScript backtrace (most recent call first):
+              [0] _process (res://tools/soak_combat_art.gd:139)
+SCRIPT ERROR: Invalid call. Nonexistent function 'mark' in base 'Nil'.
+          at: _process (res://tools/soak_combat_art.gd:139)
+          GDScript backtrace (most recent call first):
+              [0] _process (res://tools/soak_combat_art.gd:139)
+SCRIPT ERROR: Invalid call. Nonexistent function 'mark' in base 'Nil'.
+          at: _process (res://tools/soak_combat_art.gd:139)
+          GDScript backtrace (most recent call first):
+              [0] _process (res://tools/soak_combat_art.gd:139)
+SCRIPT ERROR: Invalid call. Nonexistent function 'mark' in base 'Nil'.
+          at: _process (res://tools/soak_combat_art.gd:139)
+          GDScript backtrace (most recent call first):
+              [0] _process (res://tools/soak_combat_art.gd:139)
+SCRIPT ERROR: Invalid call. Nonexistent function 'mark' in base 'Nil'.
+          at: _process (res://tools/soak_combat_art.gd:139)
+          GDScript backtrace (most recent call first):
+              [0] _process (res://tools/soak_combat_art.gd:139)
+SCRIPT ERROR: Invalid call. Nonexistent function 'mark' in base 'Nil'.
+          at: _process (res://tools/soak_combat_art.gd:139)
+          GDScript backtrace (most recent call first):
+              [0] _process (res://tools/soak_combat_art.gd:139)
+SCRIPT ERROR: Invalid call. Nonexistent function 'mark' in base 'Nil'.
+          at: _process (res://tools/soak_combat_art.gd:139)
+          GDScript backtrace (most recent call first):
+              [0] _process (res://tools/soak_combat_art.gd:139)
+SCRIPT ERROR: Invalid call. Nonexistent function 'mark' in base 'Nil'.
+          at: _process (res://tools/soak_combat_art.gd:139)
+          GDScript backtrace (most recent call first):
+              [0] _process (res://tools/soak_combat_art.gd:139)
+SCRIPT ERROR: Invalid call. Nonexistent function 'mark' in base 'Nil'.
+          at: _process (res://tools/soak_combat_art.gd:139)
+          GDScript backtrace (most recent call first):
+              [0] _process (res://tools/soak_combat_art.gd:139)
+SCRIPT ERROR: Invalid call. Nonexistent function 'mark' in base 'Nil'.
+          at: _process (res://tools/soak_combat_art.gd:139)
+          GDScript backtrace (most recent call first):
+              [0] _process (res://tools/soak_combat_art.gd:139)
+SCRIPT ERROR: Invalid call. Nonexistent function 'mark' in base 'Nil'.
+          at: _process (res://tools/soak_combat_art.gd:139)
+          GDScript backtrace (most recent call first):
+              [0] _process (res://tools/soak_combat_art.gd:139)
+SCRIPT ERROR: Invalid call. Nonexistent function 'mark' in base 'Nil'.
+          at: _process (res://tools/soak_combat_art.gd:139)
+          GDScript backtrace (most recent call first):
+              [0] _process (res://tools/soak_combat_art.gd:139)
+SCRIPT ERROR: Invalid call. Nonexistent function 'mark' in base 'Nil'.
+          at: _process (res://tools/soak_combat_art.gd:139)
+          GDScript backtrace (most recent call first):
+              [0] _process (res://tools/soak_combat_art.gd:139)
+SCRIPT ERROR: Invalid call. Nonexistent function 'mark' in base 'Nil'.
+          at: _process (res://tools/soak_combat_art.gd:139)
+          GDScript backtrace (most recent call first):
+              [0] _process (res://tools/soak_combat_art.gd:139)
+SCRIPT ERROR: Invalid call. Nonexistent function 'mark' in base 'Nil'.
+          at: _process (res://tools/soak_combat_art.gd:139)
+          GDScript backtrace (most recent call first):
+              [0] _process (res://tools/soak_combat_art.gd:139)
+SCRIPT ERROR: Invalid call. Nonexistent function 'death' in base 'GDScript'.
+          at: _process (res://tools/soak_combat_art.gd:151)
+          GDScript backtrace (most recent call first):
+              [0] _process (res://tools/soak_combat_art.gd:151)
+SCRIPT ERROR: Invalid call. Nonexistent function 'mark' in base 'Nil'.
+          at: _process (res://tools/soak_combat_art.gd:139)
+          GDScript backtrace (most recent call first):
+              [0] _process (res://tools/soak_combat_art.gd:139)
+SCRIPT ERROR: Invalid call. Nonexistent function 'mark' in base 'Nil'.
+          at: _process (res://tools/soak_combat_art.gd:139)
+          GDScript backtrace (most recent call first):
+              [0] _process (res://tools/soak_combat_art.gd:139)
+SCRIPT ERROR: Invalid call. Nonexistent function 'mark' in base 'Nil'.
+          at: _process (res://tools/soak_combat_art.gd:139)
+          GDScript backtrace (most recent call first):
+              [0] _process (res://tools/soak_combat_art.gd:139)
+SCRIPT ERROR: Invalid call. Nonexistent function 'mark' in base 'Nil'.
+          at: _process (res://tools/soak_combat_art.gd:139)
+          GDScript backtrace (most recent call first):
+              [0] _process (res://tools/soak_combat_art.gd:139)
+SCRIPT ERROR: Invalid call. Nonexistent function 'mark' in base 'Nil'.
+          at: _process (res://tools/soak_combat_art.gd:139)
+          GDScript backtrace (most recent call first):
+              [0] _process (res://tools/soak_combat_art.gd:139)
+SCRIPT ERROR: Invalid call. Nonexistent function 'mark' in base 'Nil'.
+          at: _process (res://tools/soak_combat_art.gd:139)
+          GDScript backtrace (most recent call first):
+              [0] _process (res://tools/soak_combat_art.gd:139)
+SCRIPT ERROR: Invalid call. Nonexistent function 'mark' in base 'Nil'.
+          at: _process (res://tools/soak_combat_art.gd:139)
+          GDScript backtrace (most recent call first):
+              [0] _process (res://tools/soak_combat_art.gd:139)
+SCRIPT ERROR: Invalid call. Nonexistent function 'mark' in base 'Nil'.
+          at: _process (res://tools/soak_combat_art.gd:139)
+          GDScript backtrace (most recent call first):
+              [0] _process (res://tools/soak_combat_art.gd:139)
+SCRIPT ERROR: Invalid call. Nonexistent function 'mark' in base 'Nil'.
+          at: _process (res://tools/soak_combat_art.gd:139)
+          GDScript backtrace (most recent call first):
+              [0] _process (res://tools/soak_combat_art.gd:139)
+SCRIPT ERROR: Invalid call. Nonexistent function 'mark' in base 'Nil'.
+          at: _process (res://tools/soak_combat_art.gd:139)
+          GDScript backtrace (most recent call first):
+              [0] _process (res://tools/soak_combat_art.gd:139)
+SCRIPT ERROR: Invalid call. Nonexistent function 'mark' in base 'Nil'.
+          at: _process (res://tools/soak_combat_art.gd:139)
+          GDScript backtrace (most recent call first):
+              [0] _process (res://tools/soak_combat_art.gd:139)
+SCRIPT ERROR: Invalid call. Nonexistent function 'mark' in base 'Nil'.
+          at: _process (res://tools/soak_combat_art.gd:139)
+          GDScript backtrace (most recent call first):
+              [0] _process (res://tools/soak_combat_art.gd:139)
+SCRIPT ERROR: Invalid call. Nonexistent function 'mark' in base 'Nil'.
+          at: _process (res://tools/soak_combat_art.gd:139)
+          GDScript backtrace (most recent call first):
+              [0] _process (res://tools/soak_combat_art.gd:139)
+SCRIPT ERROR: Invalid call. Nonexistent function 'mark' in base 'Nil'.
+          at: _process (res://tools/soak_combat_art.gd:139)
+          GDScript backtrace (most recent call first):
+              [0] _process (res://tools/soak_combat_art.gd:139)
+SCRIPT ERROR: Invalid call. Nonexistent function 'mark' in base 'Nil'.
+          at: _process (res://tools/soak_combat_art.gd:139)
+          GDScript backtrace (most recent call first):
+              [0] _process (res://tools/soak_combat_art.gd:139)
+SCRIPT ERROR: Invalid call. Nonexistent function 'mark' in base 'Nil'.
+          at: _process (res://tools/soak_combat_art.gd:139)
+          GDScript backtrace (most recent call first):
+              [0] _process (res://tools/soak_combat_art.gd:139)
+SCRIPT ERROR: Invalid call. Nonexistent function 'mark' in base 'Nil'.
+          at: _process (res://tools/soak_combat_art.gd:139)
+          GDScript backtrace (most recent call first):
+              [0] _process (res://tools/soak_combat_art.gd:139)
+SCRIPT ERROR: Invalid call. Nonexistent function 'death' in base 'GDScript'.
+          at: _process (res://tools/soak_combat_art.gd:151)
+          GDScript backtrace (most recent call first):
+              [0] _process (res://tools/soak_combat_art.gd:151)
+SCRIPT ERROR: Invalid call. Nonexistent function 'mark' in base 'Nil'.
+          at: _process (res://tools/soak_combat_art.gd:139)
+          GDScript backtrace (most recent call first):
+              [0] _process (res://tools/soak_combat_art.gd:139)
+SCRIPT ERROR: Invalid call. Nonexistent function 'mark' in base 'Nil'.
+          at: _process (res://tools/soak_combat_art.gd:139)
+          GDScript backtrace (most recent call first):
+              [0] _process (res://tools/soak_combat_art.gd:139)
+SCRIPT ERROR: Invalid call. Nonexistent function 'mark' in base 'Nil'.
+          at: _process (res://tools/soak_combat_art.gd:139)
+          GDScript backtrace (most recent call first):
+              [0] _process (res://tools/soak_combat_art.gd:139)
+SCRIPT ERROR: Invalid call. Nonexistent function 'mark' in base 'Nil'.
+          at: _process (res://tools/soak_combat_art.gd:139)
+          GDScript backtrace (most recent call first):
+              [0] _process (res://tools/soak_combat_art.gd:139)
+SCRIPT ERROR: Invalid call. Nonexistent function 'mark' in base 'Nil'.
+          at: _process (res://tools/soak_combat_art.gd:139)
+          GDScript backtrace (most recent call first):
+              [0] _process (res://tools/soak_combat_art.gd:139)
+SCRIPT ERROR: Invalid call. Nonexistent function 'mark' in base 'Nil'.
+          at: _process (res://tools/soak_combat_art.gd:139)
+          GDScript backtrace (most recent call first):
+              [0] _process (res://tools/soak_combat_art.gd:139)
+SCRIPT ERROR: Invalid call. Nonexistent function 'mark' in base 'Nil'.
+          at: _process (res://tools/soak_combat_art.gd:139)
+          GDScript backtrace (most recent call first):
+              [0] _process (res://tools/soak_combat_art.gd:139)
+SCRIPT ERROR: Invalid call. Nonexistent function 'mark' in base 'Nil'.
+          at: _process (res://tools/soak_combat_art.gd:139)
+          GDScript backtrace (most recent call first):
+              [0] _process (res://tools/soak_combat_art.gd:139)
+SCRIPT ERROR: Invalid call. Nonexistent function 'mark' in base 'Nil'.
+          at: _process (res://tools/soak_combat_art.gd:139)
+          GDScript backtrace (most recent call first):
+              [0] _process (res://tools/soak_combat_art.gd:139)
+SCRIPT ERROR: Invalid call. Nonexistent function 'mark' in base 'Nil'.
+          at: _process (res://tools/soak_combat_art.gd:139)
+          GDScript backtrace (most recent call first):
+              [0] _process (res://tools/soak_combat_art.gd:139)
+SCRIPT ERROR: Invalid call. Nonexistent function 'mark' in base 'Nil'.
+          at: _process (res://tools/soak_combat_art.gd:139)
+          GDScript backtrace (most recent call first):
+              [0] _process (res://tools/soak_combat_art.gd:139)
+SCRIPT ERROR: Invalid call. Nonexistent function 'mark' in base 'Nil'.
+          at: _process (res://tools/soak_combat_art.gd:139)
+          GDScript backtrace (most recent call first):
+              [0] _process (res://tools/soak_combat_art.gd:139)
+SCRIPT ERROR: Invalid call. Nonexistent function 'mark' in base 'Nil'.
+          at: _process (res://tools/soak_combat_art.gd:139)
+          GDScript backtrace (most recent call first):
+              [0] _process (res://tools/soak_combat_art.gd:139)
+SCRIPT ERROR: Invalid call. Nonexistent function 'mark' in base 'Nil'.
+          at: _process (res://tools/soak_combat_art.gd:139)
+          GDScript backtrace (most recent call first):
+              [0] _process (res://tools/soak_combat_art.gd:139)
+SCRIPT ERROR: Invalid call. Nonexistent function 'mark' in base 'Nil'.
+          at: _process (res://tools/soak_combat_art.gd:139)
+          GDScript backtrace (most recent call first):
+              [0] _process (res://tools/soak_combat_art.gd:139)
+SCRIPT ERROR: Invalid call. Nonexistent function 'mark' in base 'Nil'.
+          at: _process (res://tools/soak_combat_art.gd:139)
+          GDScript backtrace (most recent call first):
+              [0] _process (res://tools/soak_combat_art.gd:139)
+SCRIPT ERROR: Invalid call. Nonexistent function 'mark' in base 'Nil'.
+          at: _process (res://tools/soak_combat_art.gd:139)
+          GDScript backtrace (most recent call first):
+              [0] _process (res://tools/soak_combat_art.gd:139)
+SCRIPT ERROR: Invalid call. Nonexistent function 'mark' in base 'Nil'.
+          at: _process (res://tools/soak_combat_art.gd:139)
+          GDScript backtrace (most recent call first):
+              [0] _process (res://tools/soak_combat_art.gd:139)
+SCRIPT ERROR: Invalid call. Nonexistent function 'death' in base 'GDScript'.
+          at: _process (res://tools/soak_combat_art.gd:151)
+          GDScript backtrace (most recent call first):
+              [0] _process (res://tools/soak_combat_art.gd:151)
+SCRIPT ERROR: Invalid call. Nonexistent function 'mark' in base 'Nil'.
+          at: _process (res://tools/soak_combat_art.gd:139)
+          GDScript backtrace (most recent call first):
+              [0] _process (res://tools/soak_combat_art.gd:139)
+SCRIPT ERROR: Invalid call. Nonexistent function 'mark' in base 'Nil'.
+          at: _process (res://tools/soak_combat_art.gd:139)
+          GDScript backtrace (most recent call first):
+              [0] _process (res://tools/soak_combat_art.gd:139)
+SCRIPT ERROR: Invalid call. Nonexistent function 'mark' in base 'Nil'.
+          at: _process (res://tools/soak_combat_art.gd:139)
+          GDScript backtrace (most recent call first):
+              [0] _process (res://tools/soak_combat_art.gd:139)
+SCRIPT ERROR: Invalid call. Nonexistent function 'mark' in base 'Nil'.
+          at: _process (res://tools/soak_combat_art.gd:139)
+          GDScript backtrace (most recent call first):
+              [0] _process (res://tools/soak_combat_art.gd:139)
+SCRIPT ERROR: Invalid call. Nonexistent function 'mark' in base 'Nil'.
+          at: _process (res://tools/soak_combat_art.gd:139)
+          GDScript backtrace (most recent call first):
+              [0] _process (res://tools/soak_combat_art.gd:139)
+SCRIPT ERROR: Invalid call. Nonexistent function 'mark' in base 'Nil'.
+          at: _process (res://tools/soak_combat_art.gd:139)
+          GDScript backtrace (most recent call first):
+              [0] _process (res://tools/soak_combat_art.gd:139)
+SCRIPT ERROR: Invalid call. Nonexistent function 'mark' in base 'Nil'.
+          at: _process (res://tools/soak_combat_art.gd:139)
+          GDScript backtrace (most recent call first):
+              [0] _process (res://tools/soak_combat_art.gd:139)
+SCRIPT ERROR: Invalid call. Nonexistent function 'mark' in base 'Nil'.
+          at: _process (res://tools/soak_combat_art.gd:139)
+          GDScript backtrace (most recent call first):
+              [0] _process (res://tools/soak_combat_art.gd:139)
+SCRIPT ERROR: Invalid call. Nonexistent function 'mark' in base 'Nil'.
+          at: _process (res://tools/soak_combat_art.gd:139)
+          GDScript backtrace (most recent call first):
+              [0] _process (res://tools/soak_combat_art.gd:139)
+SCRIPT ERROR: Invalid call. Nonexistent function 'mark' in base 'Nil'.
+          at: _process (res://tools/soak_combat_art.gd:139)
+          GDScript backtrace (most recent call first):
+              [0] _process (res://tools/soak_combat_art.gd:139)
+SCRIPT ERROR: Invalid call. Nonexistent function 'mark' in base 'Nil'.
+          at: _process (res://tools/soak_combat_art.gd:139)
+          GDScript backtrace (most recent call first):
+              [0] _process (res://tools/soak_combat_art.gd:139)
+SCRIPT ERROR: Invalid call. Nonexistent function 'mark' in base 'Nil'.
+          at: _process (res://tools/soak_combat_art.gd:139)
+          GDScript backtrace (most recent call first):
+              [0] _process (res://tools/soak_combat_art.gd:139)
+SCRIPT ERROR: Invalid call. Nonexistent function 'mark' in base 'Nil'.
+          at: _process (res://tools/soak_combat_art.gd:139)
+          GDScript backtrace (most recent call first):
+              [0] _process (res://tools/soak_combat_art.gd:139)
+SCRIPT ERROR: Invalid call. Nonexistent function 'mark' in base 'Nil'.
+          at: _process (res://tools/soak_combat_art.gd:139)
+          GDScript backtrace (most recent call first):
+              [0] _process (res://tools/soak_combat_art.gd:139)
+SCRIPT ERROR: Invalid call. Nonexistent function 'mark' in base 'Nil'.
+          at: _process (res://tools/soak_combat_art.gd:139)
+          GDScript backtrace (most recent call first):
+              [0] _process (res://tools/soak_combat_art.gd:139)
+SCRIPT ERROR: Invalid call. Nonexistent function 'mark' in base 'Nil'.
+          at: _process (res://tools/soak_combat_art.gd:139)
+          GDScript backtrace (most recent call first):
+              [0] _process (res://tools/soak_combat_art.gd:139)
+SCRIPT ERROR: Invalid call. Nonexistent function 'mark' in base 'Nil'.
+          at: _process (res://tools/soak_combat_art.gd:139)
+          GDScript backtrace (most recent call first):
+              [0] _process (res://tools/soak_combat_art.gd:139)
+SCRIPT ERROR: Invalid call. Nonexistent function 'death' in base 'GDScript'.
+          at: _process (res://tools/soak_combat_art.gd:151)
+          GDScript backtrace (most recent call first):
+              [0] _process (res://tools/soak_combat_art.gd:151)
+SCRIPT ERROR: Invalid call. Nonexistent function 'mark' in base 'Nil'.
+          at: _process (res://tools/soak_combat_art.gd:139)
+          GDScript backtrace (most recent call first):
+              [0] _process (res://tools/soak_combat_art.gd:139)
+SCRIPT ERROR: Invalid call. Nonexistent function 'mark' in base 'Nil'.
+          at: _process (res://tools/soak_combat_art.gd:139)
+          GDScript backtrace (most recent call first):
+              [0] _process (res://tools/soak_combat_art.gd:139)
+SCRIPT ERROR: Invalid call. Nonexistent function 'mark' in base 'Nil'.
+          at: _process (res://tools/soak_combat_art.gd:139)
+          GDScript backtrace (most recent call first):
+              [0] _process (res://tools/soak_combat_art.gd:139)
+SCRIPT ERROR: Invalid call. Nonexistent function 'mark' in base 'Nil'.
+          at: _process (res://tools/soak_combat_art.gd:139)
+          GDScript backtrace (most recent call first):
+              [0] _process (res://tools/soak_combat_art.gd:139)

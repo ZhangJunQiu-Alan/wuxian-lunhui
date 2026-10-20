@@ -1,0 +1,36 @@
+{
+  "date": "2026-10-19",
+  "scope": "H0-H6",
+  "formal_PNG": 33,
+  "formal_PNG_pixel_or_hash_changes": 0,
+  "code_integration": "complete",
+  "runtime_validation": "controlled_skill_and_viewport_verified",
+  "full_manual_playthrough": "not_tested",
+  "assertions": 572,
+  "regression_assertions": 997,
+  "failures": 0,
+  "screenshots": 40,
+  "art_effects_peak_measured": 40,
+  "effect_budget_tested": 96,
+  "unexpected_foreign_changes": [],
+  "commit_push": "not_executed",
+  "startup": "normal rendered window verified; rapid headless exit has retained OGG shutdown warning",
+  "test_tools_sha256": [
+    {
+      "path": "tools/test_boss_art.gd",
+      "sha256": "6501ad6b446c42a67deef43e39a14d52f5b0e8b12e3ddec68eddde9c30277895"
+    },
+    {
+      "path": "tools/review_boss_art.gd",
+      "sha256": "c5f2c0582e382f9b2680b9b954a64a9789f43e828d4d39f935adba739c0e5476"
+    },
+    {
+      "path": "tools/benchmark_boss_art.gd",
+      "sha256": "bad4d7ca5df2f4ba61d96f4978fbd12e4727499a7ff254955ef1e005d91dc8e4"
+    },
+    {
+      "path": "tools/test_combat_regressions.gd",
+      "sha256": "3965adb67ddf4706e577ba0de201babea058bc4f051ae60353370977040faad1"
+    }
+  ]
+}

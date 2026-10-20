@@ -1,0 +1,17 @@
+{
+  "tool": "image_gen.imagegen",
+  "id": "vidar_pry",
+  "frames": 6,
+  "fps": 16,
+  "loop": false,
+  "frame_size": [
+    96,
+    96
+  ],
+  "prompt": "Use case: identity-preserve. Asset: transparent PIXEL-ART world-space game animation. Image1 is the approved native96px character master; Image2 is its high-resolution original for identity details. Keep the SAME young adult Norse male with tied dark-brown braid, short dark beard, stern calm face, olive wool cloak fastened by round bronze brooch, brown tunic and leather belt, trousers/leg wraps, reinforced oversized forward leather boot and bare hands. Same proportions, no weapon/staff/shield, no new armor or items. Full body, THREE-QUARTER view facing RIGHT, upper-left lighting, detailed small-game pixel clusters and exact master colors, not portrait/card art. Logical96x96 SQUARE cells. Each entire figure fits in inner80% of its cell with generous true-alpha padding; hair, fingertips, cloak hem and soles never touch cell edge. Same body scale and fixed pelvis/ground-foot registration throughout. No scene, ground, shadow, glow, wolf, jaw prop, victim, labels, words, border, grid or watermark. LANDSCAPE3 columns by2 rows, total aspect3:2, SIX SQUARE equal cells, no gutters. ONE continuous jaw-prying aid gesture, WITHOUT drawing the jaws: (1) step into compact brace, heavy forward boot planted to the right, hands begin rising; (2) bend knees slightly and reach both bare hands ABOVE the head toward an invisible upper edge; (3) heavy boot pushes an invisible lower edge near lower-right while both hands grasp upper-right; (4) strongest controlled upward pull, shoulders and elbows strain, boot stays braced; (5) held peak effort with hands high and boot pressing, cloak pulled back by pose; (6) release, arms start lowering, knees relax toward original stance. Anatomically plausible two hands and two legs, not extra limbs. During peak poses both hands near logical(68,10..20), heavy front boot near(68,86), other boot anchors near(32,94); adjust crouch so hands stay2px inside top border without changing character scale. His head must remain between shoulders, not dislocated. Clear bracing boot and upward hand pull at same time. Don't draw any handled object, monster or magic; the game joins this figure to separate jaw sockets.",
+  "refs": [
+    "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskK2_wolf_2026-10-20/candidates/vidar_v01.png",
+    "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskK2_wolf_2026-10-20/originals/vidar_v01_raw.png"
+  ],
+  "transparent_background": true
+}

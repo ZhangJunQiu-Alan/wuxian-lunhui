@@ -1,0 +1,8 @@
+{
+  "id": "garm_chain_link",
+  "version": "v01",
+  "prompt": "Use case: stylized-concept. Production pixel-art dark underworld VFX; project-owned inputs are only material/style references, do not draw the creature. ONE SINGLE iron chain link, horizontal oval, thick worn dark iron bevel, limited grey/steel/rust palette, crisp pixel-art target16x8. Clearly transparent oval central hole. Horizontal connection axis runs through exact center y. Left/right attachment ports align to center and support repetition. Only ONE link, not two overlapping links or an entire chain. No spark, glow, text, shadow, scene. Rotationally neutral metal highlights, wide2:1 transparent canvas. A SINGLE object on a transparent2:1 canvas, not a sheet. Crisp limited32RGB pixel clusters, desaturated dark red/iron greys, no ice. Fully opaque binary-alpha metal pixels with a true transparent center hole. Entire silhouette fits cell with transparent padding, except chain repeating ports. No label, text, grid, frame, watermark, body, scene or ground shadow.",
+  "reference_paths": [
+    "assets/sprites/bosses/garm.png"
+  ]
+}

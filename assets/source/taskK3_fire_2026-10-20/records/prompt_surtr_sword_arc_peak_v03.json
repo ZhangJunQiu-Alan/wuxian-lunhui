@@ -1,0 +1,10 @@
+{
+  "tool": "image_gen.imagegen",
+  "id": "surtr_sword_arc_peak",
+  "version": "v03",
+  "refs": [
+    "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskK3_fire_2026-10-20/references/arc_peak_guard_qa.png"
+  ],
+  "prompt": "Use case: precise object edit. ONE single game-effect PEAK frame, not a four-frame sheet. Input is logical128x128 enlarged reference, cyan disk is a PROTECTED AREA not final art. Remove cyan completely into true zero-alpha. Preserve/rebuild ONLY a very THIN orange/ivory fire crescent along RIGHT edge OUTSIDE the cyan disk, keep center disk radius48 entirely EMPTY with no particle/glow. Fire crescent centered around logical64,64 with core radius54, thickness6px, right half angles-70..70 degrees, outermost radius60; maximum4px clear edge margin. Do not enlarge the crescent inward or fill the cyan area; absolutely no flame/spark closer than48logical pixels to center. One bright sharp compact sword-sweep contact flash, no actual blade/person, no black fill, fire cloud or full ring. Same fine project pixel clusters and red-orange/ivory material as input;>=bright peak but thin line rather than explosion. Output ONE SQUARE128logical sprite only, no atlas. True zero-alpha background and center, no cyan remains, no text/labels/grid/guide/frame/watermark.",
+  "transparent_background": true
+}

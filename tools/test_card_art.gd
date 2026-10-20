@@ -132,7 +132,21 @@ func run():
 	print("CARD_ART_RESULT checks=", checks.size(), " failed=", failed, " captures=", captures.size())
 	paused = false
 	game.free()
+	var audio_script = load("res://scripts/core/audio.gd")
+	var audio = audio_script._instance
+	if is_instance_valid(audio):
+		for tween in audio._tweens.values():
+			tween.kill()
+		for child in audio.get_children():
+			if child is AudioStreamPlayer:
+				child.stop()
+				child.stream = null
+		audio._streams.clear()
+		audio.free()
+		audio_script._instance = null
 	await process_frame
+	await process_frame
+	await create_timer(0.15).timeout
 	quit(1 if failed else 0)
 
 func selection_flow():

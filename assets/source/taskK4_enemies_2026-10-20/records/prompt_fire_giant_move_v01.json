@@ -1,0 +1,20 @@
+{
+  "tool": "image_gen.imagegen",
+  "id": "fire_giant_move",
+  "frames": 6,
+  "fps": 8,
+  "loop": true,
+  "who": "fire_giant",
+  "action": "SIX HEAVY WALK poses3columns2rows landscape3:2atlas, no gutters. Same bulky charcoal-cracked orange lava giant with flaming shoulders/head, bronze-black rocky armor and ONE short heavy jagged orange broadblade in nearhand diagonally down-right. Alternating support/swing legs, weight shift, slight arm sway and flame flicker; steady forward3/4rightview, no backview. Same compact blade heldlow allframes, no attackslash. Stable torso/root/ground, gentle8fps loop, sixth-to-first continues step.",
+  "version": "v01",
+  "frame_size": [
+    96,
+    96
+  ],
+  "refs": [
+    "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskK4_enemies_2026-10-20/references/fire_giant_8x.png",
+    "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskK4_enemies_2026-10-20/references/fire_giant.png"
+  ],
+  "prompt": "Use case: sprite-animation, precise identity-preserving edit. Reference1 is EXACT approved96x96 game sprite enlarged nearest, reference2 same original. SAME individual, same armor/fur/weapon/silhouette/palette, THREE-QUARTER RIGHT-facing game view, do not redesign. Each logical96square frame contains full entity, groundedfootbaseline94, rootx48 stable, >=2px transparent border. Character stays original~90px standing body height, no perpose size change; preserve upper-left material light and fine actual pixel clusters, <=48RGB original palette. SIX HEAVY WALK poses3columns2rows landscape3:2atlas, no gutters. Same bulky charcoal-cracked orange lava giant with flaming shoulders/head, bronze-black rocky armor and ONE short heavy jagged orange broadblade in nearhand diagonally down-right. Alternating support/swing legs, weight shift, slight arm sway and flame flicker; steady forward3/4rightview, no backview. Same compact blade heldlow allframes, no attackslash. Stable torso/root/ground, gentle8fps loop, sixth-to-first continues step. TWO arms/two legs, coherent hands and weapon. Keep action COMPACT to fit whole body and original-length weapon inside96cell; bent elbows, no giant left cloth wing, no long airborne horizontal pose. True zero-alpha background, entity binaryalpha, no terrain/castshadow, effect rings, scene, text/label/grid/border/watermark.",
+  "transparent_background": true
+}

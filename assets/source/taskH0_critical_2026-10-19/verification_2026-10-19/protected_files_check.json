@@ -1,0 +1,582 @@
+{
+  "scope": "compare originals at snapshot capture and report; read only",
+  "files": [
+    {
+      "path": "scripts/game.gd",
+      "before_sha256": "2c0c635ce00771f3b4080f3fc1d43f9305f7330b441439cd4adc71d32b056baa",
+      "after_sha256": "2c0c635ce00771f3b4080f3fc1d43f9305f7330b441439cd4adc71d32b056baa",
+      "same": true
+    },
+    {
+      "path": "scripts/quests/nails_quest.gd",
+      "before_sha256": "846c431b78606c7e5b5700665ae0258ac3490aa98b98ad2859252f527a1ea825",
+      "after_sha256": "846c431b78606c7e5b5700665ae0258ac3490aa98b98ad2859252f527a1ea825",
+      "same": true
+    },
+    {
+      "path": "scripts/quests/ice_warriors_quest.gd",
+      "before_sha256": "75a042443d2041d9f731dadae08427badfdb2a9e0e08cda9635f2d4603aff7ce",
+      "after_sha256": "75a042443d2041d9f731dadae08427badfdb2a9e0e08cda9635f2d4603aff7ce",
+      "same": true
+    },
+    {
+      "path": "scripts/quests/ember_quest.gd",
+      "before_sha256": "f741b355c3267b665866fc8148a1d569397af60c12114b9e0b600a5381d740a1",
+      "after_sha256": "f741b355c3267b665866fc8148a1d569397af60c12114b9e0b600a5381d740a1",
+      "same": true
+    },
+    {
+      "path": "scripts/quests/thokk_quest.gd",
+      "before_sha256": "6b6c946aed49f40dfb5bc5322defaa4c5be2fe577dec74c7737d285cbb5b7bbf",
+      "after_sha256": "6b6c946aed49f40dfb5bc5322defaa4c5be2fe577dec74c7737d285cbb5b7bbf",
+      "same": true
+    },
+    {
+      "path": "scripts/quests/river_sword_quest.gd",
+      "before_sha256": "d9d433ed8ae45f6584860c086d363be41f55c17ba6d8699abeeb6e83df7d44a3",
+      "after_sha256": "d9d433ed8ae45f6584860c086d363be41f55c17ba6d8699abeeb6e83df7d44a3",
+      "same": true
+    },
+    {
+      "path": "scripts/quests/sea_giant_quest.gd",
+      "before_sha256": "3fddec26f73167a44385bd9f6d6801c344d57cb69b810283ef0baf5c12bed268",
+      "after_sha256": "3fddec26f73167a44385bd9f6d6801c344d57cb69b810283ef0baf5c12bed268",
+      "same": true
+    },
+    {
+      "path": "scripts/quests/anchor_chains_quest.gd",
+      "before_sha256": "c11dac674fc8b2886a7eaafb4834bc56f58c72bbc9c023ab46171e99c47c82db",
+      "after_sha256": "c11dac674fc8b2886a7eaafb4834bc56f58c72bbc9c023ab46171e99c47c82db",
+      "same": true
+    },
+    {
+      "path": "scripts/quests/fate_quest.gd",
+      "before_sha256": "ea481f04bed5546ac78463dcc13ca18151ae89f2aa04a9e3993ad8690962f8a9",
+      "after_sha256": "ea481f04bed5546ac78463dcc13ca18151ae89f2aa04a9e3993ad8690962f8a9",
+      "same": true
+    },
+    {
+      "path": "scripts/quests/priests_quest.gd",
+      "before_sha256": "628ef6fc2489d6a29ee351c26b6df8bcb04b5161cc3c71a001ca1206634de732",
+      "after_sha256": "628ef6fc2489d6a29ee351c26b6df8bcb04b5161cc3c71a001ca1206634de732",
+      "same": true
+    },
+    {
+      "path": "scripts/quests/bridge_guard_quest.gd",
+      "before_sha256": "84459a51da159bf81fd2ba5eeea982f5e48a3eeefe3f2d330625b0eca259dcfe",
+      "after_sha256": "84459a51da159bf81fd2ba5eeea982f5e48a3eeefe3f2d330625b0eca259dcfe",
+      "same": true
+    },
+    {
+      "path": "scripts/quests/ratatoskr_quest.gd",
+      "before_sha256": "ac16855b873a68031c0ed94c63cce5b2bd6f72cf98366338a138b4a1fd80d920",
+      "after_sha256": "ac16855b873a68031c0ed94c63cce5b2bd6f72cf98366338a138b4a1fd80d920",
+      "same": true
+    },
+    {
+      "path": "scripts/quests/bonfire_quest.gd",
+      "before_sha256": "2bcaf916816d2882e72446dfd2a672c0a75ed4452c8baf976d9fd7b4045fb838",
+      "after_sha256": "2bcaf916816d2882e72446dfd2a672c0a75ed4452c8baf976d9fd7b4045fb838",
+      "same": true
+    },
+    {
+      "path": "scripts/quests/hoof_tracks_quest.gd",
+      "before_sha256": "2f6b29c7130d00cb02c950dfdb54ef884b28a751ca503e334ab1bd2bc69bc536",
+      "after_sha256": "2f6b29c7130d00cb02c950dfdb54ef884b28a751ca503e334ab1bd2bc69bc536",
+      "same": true
+    },
+    {
+      "path": "scripts/quests/einherjar_quest.gd",
+      "before_sha256": "4434a2bbf13657c913ce94815b6d7dd87179e52b5925d61832e477ecdd282d67",
+      "after_sha256": "4434a2bbf13657c913ce94815b6d7dd87179e52b5925d61832e477ecdd282d67",
+      "same": true
+    },
+    {
+      "path": "scripts/quests/soul_lamps_quest.gd",
+      "before_sha256": "da951eafe12fcef88792f0a5cc19231b92ad6c0efc89f4e2e2ea9341ed4924dd",
+      "after_sha256": "da951eafe12fcef88792f0a5cc19231b92ad6c0efc89f4e2e2ea9341ed4924dd",
+      "same": true
+    },
+    {
+      "path": "scripts/quests/baldr_quest.gd",
+      "before_sha256": "02c1d9df1bbdba550aa529cae706436ed9245a86ea2438840e5d4be8b6f0417d",
+      "after_sha256": "02c1d9df1bbdba550aa529cae706436ed9245a86ea2438840e5d4be8b6f0417d",
+      "same": true
+    },
+    {
+      "path": "scripts/quests/side_quest.gd",
+      "before_sha256": "3ed6ecf52ba49c67617b92701e6726ba639ebfa0c631e0246fdb508a3ebc47df",
+      "after_sha256": "3ed6ecf52ba49c67617b92701e6726ba639ebfa0c631e0246fdb508a3ebc47df",
+      "same": true
+    },
+    {
+      "path": "scripts/quests/ravens_quest.gd",
+      "before_sha256": "b987557da9d970c6d670988c3d6ecc147beacd5129299b5770591b0cbe4c9759",
+      "after_sha256": "b987557da9d970c6d670988c3d6ecc147beacd5129299b5770591b0cbe4c9759",
+      "same": true
+    },
+    {
+      "path": "scripts/quests/nail_heaps_quest.gd",
+      "before_sha256": "adfccd0c94376e8273ebeaebf949c3994bfaededdd872fcf0981cd04afa553db",
+      "after_sha256": "adfccd0c94376e8273ebeaebf949c3994bfaededdd872fcf0981cd04afa553db",
+      "same": true
+    },
+    {
+      "path": "scripts/quests/runes_quest.gd",
+      "before_sha256": "8e59a1c7c373a549ed40152a859a79a940720d94154d2a80707481de83b60104",
+      "after_sha256": "8e59a1c7c373a549ed40152a859a79a940720d94154d2a80707481de83b60104",
+      "same": true
+    },
+    {
+      "path": "scripts/quests/valkyrie_quest.gd",
+      "before_sha256": "62b13e017d786a57df76177bea68ad3ad55e8dfda719f311af1539337cb7b348",
+      "after_sha256": "62b13e017d786a57df76177bea68ad3ad55e8dfda719f311af1539337cb7b348",
+      "same": true
+    },
+    {
+      "path": "scripts/quests/fishing_quest.gd",
+      "before_sha256": "6ec36aabb8d3c74793d9d7bc578c419437d6f301a2e3fe4b92ca668da236882a",
+      "after_sha256": "6ec36aabb8d3c74793d9d7bc578c419437d6f301a2e3fe4b92ca668da236882a",
+      "same": true
+    },
+    {
+      "path": "scripts/quests/cold_wave_quest.gd",
+      "before_sha256": "cdb8b79b374d0f673827b2c3a973c1768847ad12f20a8fea1c57acd38b7c570d",
+      "after_sha256": "cdb8b79b374d0f673827b2c3a973c1768847ad12f20a8fea1c57acd38b7c570d",
+      "same": true
+    },
+    {
+      "path": "scripts/ui/hud.gd",
+      "before_sha256": "1302da58757b57b34cefc0e7bb089577c4351ce78f0e3dfd96f24eadd9f5643c",
+      "after_sha256": "1302da58757b57b34cefc0e7bb089577c4351ce78f0e3dfd96f24eadd9f5643c",
+      "same": true
+    },
+    {
+      "path": "scripts/ui/god_sphere.gd",
+      "before_sha256": "dc51e8b712fbe5a6a3fc9d90e0baa4a7cc3d71a22430c0770210b51efd037e40",
+      "after_sha256": "dc51e8b712fbe5a6a3fc9d90e0baa4a7cc3d71a22430c0770210b51efd037e40",
+      "same": true
+    },
+    {
+      "path": "scripts/ui/settings_panel.gd",
+      "before_sha256": "ed5b334bd7c5c9df0fb4644c24e2d45550eaed017b4e97426906da67d1c6d62c",
+      "after_sha256": "ed5b334bd7c5c9df0fb4644c24e2d45550eaed017b4e97426906da67d1c6d62c",
+      "same": true
+    },
+    {
+      "path": "scripts/ui/credits.gd",
+      "before_sha256": "ad6ac875058d44e95b17f8a942a9c9cb1c80f5831a92430ca182510a46130dd6",
+      "after_sha256": "ad6ac875058d44e95b17f8a942a9c9cb1c80f5831a92430ca182510a46130dd6",
+      "same": true
+    },
+    {
+      "path": "scripts/ui/level_up_panel.gd",
+      "before_sha256": "4e4daf07a2d223a08fbcbf912fb66da54a65fd259ce43a8d9339104bf9db05a6",
+      "after_sha256": "4e4daf07a2d223a08fbcbf912fb66da54a65fd259ce43a8d9339104bf9db05a6",
+      "same": true
+    },
+    {
+      "path": "scripts/ui/pause_menu.gd",
+      "before_sha256": "b2245e4cc7ee21f893b75fb2ae3b1a52fb5eda1ba43afdf88cb484c40123848f",
+      "after_sha256": "b2245e4cc7ee21f893b75fb2ae3b1a52fb5eda1ba43afdf88cb484c40123848f",
+      "same": true
+    },
+    {
+      "path": "scripts/ui/title.gd",
+      "before_sha256": "c3349fd8fc68718d848b31a52732dd03bf18772d802fe158259a49c7eb20b778",
+      "after_sha256": "c3349fd8fc68718d848b31a52732dd03bf18772d802fe158259a49c7eb20b778",
+      "same": true
+    },
+    {
+      "path": "scripts/ui/quest_pointer.gd",
+      "before_sha256": "ebcb5cfce5c39fad778bc242d676d408fb76c383d0cf9f1d6257295c733d601b",
+      "after_sha256": "ebcb5cfce5c39fad778bc242d676d408fb76c383d0cf9f1d6257295c733d601b",
+      "same": true
+    },
+    {
+      "path": "scripts/ui/codex_view.gd",
+      "before_sha256": "20392011e4513c81f102f9f1b7d8b3bf60a2e4eea486c7a9ba0064e283c0f92c",
+      "after_sha256": "20392011e4513c81f102f9f1b7d8b3bf60a2e4eea486c7a9ba0064e283c0f92c",
+      "same": true
+    },
+    {
+      "path": "scripts/ui/hub.gd",
+      "before_sha256": "7c651c51f869bbf3aeeb0e949185b829af40b8191b745259dcae68f2be46536e",
+      "after_sha256": "7c651c51f869bbf3aeeb0e949185b829af40b8191b745259dcae68f2be46536e",
+      "same": true
+    },
+    {
+      "path": "scripts/ui/ult_cutin.gd",
+      "before_sha256": "04cc3e79c757b8e2563dec93bebf3169ad0c8dd63438bb8024bf8811414cdaf5",
+      "after_sha256": "04cc3e79c757b8e2563dec93bebf3169ad0c8dd63438bb8024bf8811414cdaf5",
+      "same": true
+    },
+    {
+      "path": "scripts/core/settings.gd",
+      "before_sha256": "2d9e6500a39d1dff652923f263b1d4cec966bb894a8b234264c189f2232a10bb",
+      "after_sha256": "2d9e6500a39d1dff652923f263b1d4cec966bb894a8b234264c189f2232a10bb",
+      "same": true
+    },
+    {
+      "path": "scripts/core/audio.gd",
+      "before_sha256": "13046615ebba8dd309152c7dcb50f6dfed7543a558ca48c39518be18b9f5d798",
+      "after_sha256": "13046615ebba8dd309152c7dcb50f6dfed7543a558ca48c39518be18b9f5d798",
+      "same": true
+    },
+    {
+      "path": "scripts/core/save_data.gd",
+      "before_sha256": "3fb98399378d3e0f1a0be9b215e89e127d13504b30d4e567c395623b59746bcf",
+      "after_sha256": "3fb98399378d3e0f1a0be9b215e89e127d13504b30d4e567c395623b59746bcf",
+      "same": true
+    },
+    {
+      "path": "scripts/world/helheim_map.gd",
+      "before_sha256": "1e627fc43241acf1cb3c58316eb2eb1ae616ee841b76d1193779d1ac0d6f15ee",
+      "after_sha256": "1e627fc43241acf1cb3c58316eb2eb1ae616ee841b76d1193779d1ac0d6f15ee",
+      "same": true
+    },
+    {
+      "path": "scripts/world/map_layer.gd",
+      "before_sha256": "d79985ec9384ca4a390436c179f4ecf7eb9dbdf76b347720c68f70a386098319",
+      "after_sha256": "d79985ec9384ca4a390436c179f4ecf7eb9dbdf76b347720c68f70a386098319",
+      "same": true
+    },
+    {
+      "path": "scripts/world/midgard_map.gd",
+      "before_sha256": "3b5543423f59915b48c542300a5815c000782a8520050ad1eddbe47a855be6de",
+      "after_sha256": "3b5543423f59915b48c542300a5815c000782a8520050ad1eddbe47a855be6de",
+      "same": true
+    },
+    {
+      "path": "scripts/world/mist.gd",
+      "before_sha256": "c1968601a7587510329e874ab5cd9a8d6880c3ad8804e0d3c9a94618ada80bd1",
+      "after_sha256": "c1968601a7587510329e874ab5cd9a8d6880c3ad8804e0d3c9a94618ada80bd1",
+      "same": true
+    },
+    {
+      "path": "scripts/weapons/twin_blades.gd",
+      "before_sha256": "a7a483a05f569c025ae6c7373de4581637979d42a12a1ab703ba1805a333e8e6",
+      "after_sha256": "a7a483a05f569c025ae6c7373de4581637979d42a12a1ab703ba1805a333e8e6",
+      "same": true
+    },
+    {
+      "path": "scripts/weapons/projectile.gd",
+      "before_sha256": "8dc3766de59f91a638f838de3d04be5a7dd9f798a27762d202fbe2685a3b7b54",
+      "after_sha256": "8dc3766de59f91a638f838de3d04be5a7dd9f798a27762d202fbe2685a3b7b54",
+      "same": true
+    },
+    {
+      "path": "scripts/weapons/katana.gd",
+      "before_sha256": "492dfca358dac76ac3296d649f1c5a189d4779f79f5820da6ab383cd801f36f7",
+      "after_sha256": "492dfca358dac76ac3296d649f1c5a189d4779f79f5820da6ab383cd801f36f7",
+      "same": true
+    },
+    {
+      "path": "scripts/weapons/arcane_nova.gd",
+      "before_sha256": "9eba83593a86980a20adf0656354b0d1c59d114cf2adcaea3162c9c164b6dd88",
+      "after_sha256": "9eba83593a86980a20adf0656354b0d1c59d114cf2adcaea3162c9c164b6dd88",
+      "same": true
+    },
+    {
+      "path": "scripts/weapons/revolver.gd",
+      "before_sha256": "f46441aabdd9366f135176286fce46ef245bac0f8e7fd5eb7bfbe3068d0a3c20",
+      "after_sha256": "f46441aabdd9366f135176286fce46ef245bac0f8e7fd5eb7bfbe3068d0a3c20",
+      "same": true
+    },
+    {
+      "path": "scripts/ultimates/enter_formation.gd",
+      "before_sha256": "482f573a9a2167371d0dc5a432845415f9b43762c610beccc19bc7bd5fd06efe",
+      "after_sha256": "482f573a9a2167371d0dc5a432845415f9b43762c610beccc19bc7bd5fd06efe",
+      "same": true
+    },
+    {
+      "path": "scripts/ultimates/stonehenge.gd",
+      "before_sha256": "7889a7893ef154332f8b441d366ff5fcc05ce2d34c046c8745b37e719a4d170d",
+      "after_sha256": "7889a7893ef154332f8b441d366ff5fcc05ce2d34c046c8745b37e719a4d170d",
+      "same": true
+    },
+    {
+      "path": "scripts/ultimates/wild_west_show.gd",
+      "before_sha256": "56ffcf34b3c3ccc515a53a0cb75b03f2d46d567178e67c27507db01dd8324f08",
+      "after_sha256": "56ffcf34b3c3ccc515a53a0cb75b03f2d46d567178e67c27507db01dd8324f08",
+      "same": true
+    },
+    {
+      "path": "scripts/ultimates/dimension_slash.gd",
+      "before_sha256": "dbe8ec5d114e13ade76d574416ea961f3b9c24864d25cb713e3039327df78cdd",
+      "after_sha256": "dbe8ec5d114e13ade76d574416ea961f3b9c24864d25cb713e3039327df78cdd",
+      "same": true
+    },
+    {
+      "path": "scripts/bosses/hati_phantom.gd",
+      "before_sha256": "2d417f97300b90e97ae5954e960b624edd58e8509b6f9d9531e6c591cbf8076d",
+      "after_sha256": "2d417f97300b90e97ae5954e960b624edd58e8509b6f9d9531e6c591cbf8076d",
+      "same": true
+    },
+    {
+      "path": "scripts/bosses/hati.gd",
+      "before_sha256": "a7aeecb947e0a83a4c77961f58ae18a45d45f61dfa2d5195ab56491132c364c1",
+      "after_sha256": "a7aeecb947e0a83a4c77961f58ae18a45d45f61dfa2d5195ab56491132c364c1",
+      "same": true
+    },
+    {
+      "path": "scripts/bosses/nidhogg.gd",
+      "before_sha256": "ceb246aa5880abf0e6a588a524a36c4444020a14c3b1b8767d1c585965fcbd56",
+      "after_sha256": "ceb246aa5880abf0e6a588a524a36c4444020a14c3b1b8767d1c585965fcbd56",
+      "same": true
+    },
+    {
+      "path": "scripts/bosses/ice_pillar.gd",
+      "before_sha256": "500c781ed84419454568d3011cd79d7198d85bb9ec2cbc227304d43af65e6f6d",
+      "after_sha256": "500c781ed84419454568d3011cd79d7198d85bb9ec2cbc227304d43af65e6f6d",
+      "same": true
+    },
+    {
+      "path": "scripts/bosses/shockwave.gd",
+      "before_sha256": "f6164785ac0ca11d3605f6ea29283bedff917b1bc22902c5e2a05e03605b5135",
+      "after_sha256": "f6164785ac0ca11d3605f6ea29283bedff917b1bc22902c5e2a05e03605b5135",
+      "same": true
+    },
+    {
+      "path": "scripts/bosses/hrym.gd",
+      "before_sha256": "9fcbc3f6d732e63a60141885156538b68dfcdc5246ffbd57802dee72e7d21155",
+      "after_sha256": "9fcbc3f6d732e63a60141885156538b68dfcdc5246ffbd57802dee72e7d21155",
+      "same": true
+    },
+    {
+      "path": "scripts/bosses/hel.gd",
+      "before_sha256": "0fe7c44970153f6ddae2d97f8c2e27514cbb346d12bbd7b32b5b5bf9f8a288a7",
+      "after_sha256": "0fe7c44970153f6ddae2d97f8c2e27514cbb346d12bbd7b32b5b5bf9f8a288a7",
+      "same": true
+    },
+    {
+      "path": "scripts/bosses/poison_pool.gd",
+      "before_sha256": "a91afbfc2980424e5a42f9269e4f42019075c7496280d05f8603f9a94accea22",
+      "after_sha256": "a91afbfc2980424e5a42f9269e4f42019075c7496280d05f8603f9a94accea22",
+      "same": true
+    },
+    {
+      "path": "scripts/bosses/garm.gd",
+      "before_sha256": "5565dc75161a26493fae4d87f011de18068a34bfc736af557fdca88548719413",
+      "after_sha256": "5565dc75161a26493fae4d87f011de18068a34bfc736af557fdca88548719413",
+      "same": true
+    },
+    {
+      "path": "scripts/bosses/boss.gd",
+      "before_sha256": "146744324fd940086f53b242e224d4d9b2fe193ddfe17c3dd13f7ecf56c65cd0",
+      "after_sha256": "146744324fd940086f53b242e224d4d9b2fe193ddfe17c3dd13f7ecf56c65cd0",
+      "same": true
+    },
+    {
+      "path": "scripts/bosses/skoll.gd",
+      "before_sha256": "12f4156d8db359c5cc687611f37a48456aa8a62c447bb1d067f6ee4b8bbf891b",
+      "after_sha256": "12f4156d8db359c5cc687611f37a48456aa8a62c447bb1d067f6ee4b8bbf891b",
+      "same": true
+    },
+    {
+      "path": "scripts/effects/lightning_fx.gd",
+      "before_sha256": "f0c71e8be535a2d573dc338042010bfa786bf31867aab3cdf24ffcc003ea6f76",
+      "after_sha256": "f0c71e8be535a2d573dc338042010bfa786bf31867aab3cdf24ffcc003ea6f76",
+      "same": true
+    },
+    {
+      "path": "scripts/effects/fx_layer.gd",
+      "before_sha256": "51c06c3b506b542c9dd70ab7c62334e995a8d132353a01a8eb0b31564eae21c0",
+      "after_sha256": "51c06c3b506b542c9dd70ab7c62334e995a8d132353a01a8eb0b31564eae21c0",
+      "same": true
+    },
+    {
+      "path": "scripts/effects/darkness.gd",
+      "before_sha256": "706399119efa3437b9184706c45fb29af66dd04bdb076c2d574eab814211c6f2",
+      "after_sha256": "706399119efa3437b9184706c45fb29af66dd04bdb076c2d574eab814211c6f2",
+      "same": true
+    },
+    {
+      "path": "scripts/data/boss_db.gd",
+      "before_sha256": "ef836e0b4ff1d3e8eae04885fe8307d6d0ad181463294fa4401ea2f9ed0fa993",
+      "after_sha256": "ef836e0b4ff1d3e8eae04885fe8307d6d0ad181463294fa4401ea2f9ed0fa993",
+      "same": true
+    },
+    {
+      "path": "scripts/data/upgrade_db.gd",
+      "before_sha256": "e2b900caf6dcee1af417fb90932a48e0313bf8e726a5f7d4141ed8d8e332e4db",
+      "after_sha256": "e2b900caf6dcee1af417fb90932a48e0313bf8e726a5f7d4141ed8d8e332e4db",
+      "same": true
+    },
+    {
+      "path": "scripts/data/level_db.gd",
+      "before_sha256": "93b609209c6ab3a08fe16508df7e8bf663b94406542627ca3c9370679f5fa081",
+      "after_sha256": "93b609209c6ab3a08fe16508df7e8bf663b94406542627ca3c9370679f5fa081",
+      "same": true
+    },
+    {
+      "path": "scripts/data/quest_db.gd",
+      "before_sha256": "dfdde4fda303fdd72454ab9bd7b93233c241521320bf758b98240878aad7b428",
+      "after_sha256": "dfdde4fda303fdd72454ab9bd7b93233c241521320bf758b98240878aad7b428",
+      "same": true
+    },
+    {
+      "path": "scripts/data/gods.gd",
+      "before_sha256": "cf8ac4eb04350527ea92fc6d7718a3882bee3bce4e278d679f66845fb808c289",
+      "after_sha256": "cf8ac4eb04350527ea92fc6d7718a3882bee3bce4e278d679f66845fb808c289",
+      "same": true
+    },
+    {
+      "path": "scripts/data/enemy_db.gd",
+      "before_sha256": "65f05a86398795399b0ef9d2a17f82a51da9e2ad29d4c449d359855f95c48fbf",
+      "after_sha256": "65f05a86398795399b0ef9d2a17f82a51da9e2ad29d4c449d359855f95c48fbf",
+      "same": true
+    },
+    {
+      "path": "scripts/data/meta_db.gd",
+      "before_sha256": "326d58e16f1345713143133b3edbf65124bcff615bad748cffc31725dc5aa265",
+      "after_sha256": "326d58e16f1345713143133b3edbf65124bcff615bad748cffc31725dc5aa265",
+      "same": true
+    },
+    {
+      "path": "scripts/data/character_db.gd",
+      "before_sha256": "dc3e5534b08fb5100926b6e6cc255b5532d3be416f6674508da54a2094374ed6",
+      "after_sha256": "dc3e5534b08fb5100926b6e6cc255b5532d3be416f6674508da54a2094374ed6",
+      "same": true
+    },
+    {
+      "path": "scripts/data/codex_db.gd",
+      "before_sha256": "912af254d731748d13aa8ba929ce34a1ae03cbc7a3d2134e84c07abb6101c004",
+      "after_sha256": "912af254d731748d13aa8ba929ce34a1ae03cbc7a3d2134e84c07abb6101c004",
+      "same": true
+    },
+    {
+      "path": "scripts/gods/loki.gd",
+      "before_sha256": "605a6957f2b77a8be2e6a8cdada06951d474bf1fb58449461d36ea5666aee45e",
+      "after_sha256": "605a6957f2b77a8be2e6a8cdada06951d474bf1fb58449461d36ea5666aee45e",
+      "same": true
+    },
+    {
+      "path": "scripts/gods/baldr.gd",
+      "before_sha256": "b433178fcb0d49af9eba60a98d5207a082a36c629ed89ffe493c24dc9bb3d80e",
+      "after_sha256": "b433178fcb0d49af9eba60a98d5207a082a36c629ed89ffe493c24dc9bb3d80e",
+      "same": true
+    },
+    {
+      "path": "scripts/gods/god_zone.gd",
+      "before_sha256": "6a604d58da5cf0742b264c6d44ab1d0463e36331cd32840e9b9df99250f87354",
+      "after_sha256": "6a604d58da5cf0742b264c6d44ab1d0463e36331cd32840e9b9df99250f87354",
+      "same": true
+    },
+    {
+      "path": "scripts/gods/freyja.gd",
+      "before_sha256": "38fbfa2db7de7937ae760bb11babd50e8dc30c28a58abab6804438afa730c912",
+      "after_sha256": "38fbfa2db7de7937ae760bb11babd50e8dc30c28a58abab6804438afa730c912",
+      "same": true
+    },
+    {
+      "path": "scripts/gods/ran.gd",
+      "before_sha256": "f1448e381b0318541083b6abcdb40df97be9c6eff8bebf2d69a50dc8f29b767a",
+      "after_sha256": "f1448e381b0318541083b6abcdb40df97be9c6eff8bebf2d69a50dc8f29b767a",
+      "same": true
+    },
+    {
+      "path": "scripts/gods/heal_pickup.gd",
+      "before_sha256": "900226cacea1a1ff6cab6d8ab0d83575e9132f396fa5620c9a1863e7b2930acb",
+      "after_sha256": "900226cacea1a1ff6cab6d8ab0d83575e9132f396fa5620c9a1863e7b2930acb",
+      "same": true
+    },
+    {
+      "path": "scripts/gods/skadi.gd",
+      "before_sha256": "42ba363b3ddc282956bd57540b894c1126fa98489784399974e38572b44622a2",
+      "after_sha256": "42ba363b3ddc282956bd57540b894c1126fa98489784399974e38572b44622a2",
+      "same": true
+    },
+    {
+      "path": "scripts/gods/odin.gd",
+      "before_sha256": "e5a78a1fa7d24a9ea49602fc63d5dcbc999e1020cc72fa16adbe8b6ee669c985",
+      "after_sha256": "e5a78a1fa7d24a9ea49602fc63d5dcbc999e1020cc72fa16adbe8b6ee669c985",
+      "same": true
+    },
+    {
+      "path": "scripts/gods/thor.gd",
+      "before_sha256": "d3ea714d01ca7375c0a0e23a7b7a81f47ad1c24bfeaa76ce8d9c77fd1a1ee8af",
+      "after_sha256": "d3ea714d01ca7375c0a0e23a7b7a81f47ad1c24bfeaa76ce8d9c77fd1a1ee8af",
+      "same": true
+    },
+    {
+      "path": "scripts/gods/god_power.gd",
+      "before_sha256": "265870e2bdd086735fa498add1eb8609ace9f22f858274f5b8f2b847043c3216",
+      "after_sha256": "265870e2bdd086735fa498add1eb8609ace9f22f858274f5b8f2b847043c3216",
+      "same": true
+    },
+    {
+      "path": "scripts/gods/freyr.gd",
+      "before_sha256": "74a7a5165181c8a15c92d505cb0e675e1734d94403ebce9d36c5f8eb05af25a9",
+      "after_sha256": "74a7a5165181c8a15c92d505cb0e675e1734d94403ebce9d36c5f8eb05af25a9",
+      "same": true
+    },
+    {
+      "path": "scripts/entities/einherjar.gd",
+      "before_sha256": "b99935e22bb9fb5b3e08d94ca853394fe6b5e4810c62ef5d5f8455b1a0ee9795",
+      "after_sha256": "b99935e22bb9fb5b3e08d94ca853394fe6b5e4810c62ef5d5f8455b1a0ee9795",
+      "same": true
+    },
+    {
+      "path": "scripts/entities/player.gd",
+      "before_sha256": "3eb8f2aa9e2af4fd66e03b40ef3a4fdd0afe6d226880c3fb2826563ab5e0cccd",
+      "after_sha256": "3eb8f2aa9e2af4fd66e03b40ef3a4fdd0afe6d226880c3fb2826563ab5e0cccd",
+      "same": true
+    },
+    {
+      "path": "scripts/entities/enemy.gd",
+      "before_sha256": "f0353b330eaf7b8cd6894b0cfcc095b062c5e200baecb462780c09d68922ef84",
+      "after_sha256": "f0353b330eaf7b8cd6894b0cfcc095b062c5e200baecb462780c09d68922ef84",
+      "same": true
+    },
+    {
+      "path": "scripts/entities/chest.gd",
+      "before_sha256": "fce487412dafba5816769c0e4b0cde98dc4fd1eaaae71c68d273a7bedca7226b",
+      "after_sha256": "fce487412dafba5816769c0e4b0cde98dc4fd1eaaae71c68d273a7bedca7226b",
+      "same": true
+    },
+    {
+      "path": "scripts/entities/xp_gem.gd",
+      "before_sha256": "2c55d1d5297948e70ca8f695f50807d3b97af9a1ad36c65ef7d548521d29e76e",
+      "after_sha256": "2c55d1d5297948e70ca8f695f50807d3b97af9a1ad36c65ef7d548521d29e76e",
+      "same": true
+    },
+    {
+      "path": "scripts/entities/sprite_visual.gd",
+      "before_sha256": "2a98054122fbd07746092bedacaa66425d23bfe1b02b8134a47fb03fb751294b",
+      "after_sha256": "2a98054122fbd07746092bedacaa66425d23bfe1b02b8134a47fb03fb751294b",
+      "same": true
+    },
+    {
+      "path": "scripts/entities/enemy_projectile.gd",
+      "before_sha256": "026ef1e89fe97b0312e6a411fffe928c0ae7225b192ef58bec3c45ecbfeea32d",
+      "after_sha256": "026ef1e89fe97b0312e6a411fffe928c0ae7225b192ef58bec3c45ecbfeea32d",
+      "same": true
+    },
+    {
+      "path": "scenes/main.tscn",
+      "before_sha256": "4ac6373792d302325e415dc1bf73371fdce0d9d5fbef26bc150d41e58a736124",
+      "after_sha256": "4ac6373792d302325e415dc1bf73371fdce0d9d5fbef26bc150d41e58a736124",
+      "same": true
+    },
+    {
+      "path": "scenes/hub.tscn",
+      "before_sha256": "32e23885dd5e28c0db9153951702ceec6bf660161f138702dd3b791498f6fde7",
+      "after_sha256": "32e23885dd5e28c0db9153951702ceec6bf660161f138702dd3b791498f6fde7",
+      "same": true
+    },
+    {
+      "path": "scenes/title.tscn",
+      "before_sha256": "b4564df844d428bdd262cdbec98faf160899084b91947457c3d93440bb76cfd8",
+      "after_sha256": "b4564df844d428bdd262cdbec98faf160899084b91947457c3d93440bb76cfd8",
+      "same": true
+    },
+    {
+      "path": "project.godot",
+      "before_sha256": "9d304a33681c9ce26be4b3fef7b92ec6fb6b17aa8320bb62f81c06d368985d73",
+      "after_sha256": "9d304a33681c9ce26be4b3fef7b92ec6fb6b17aa8320bb62f81c06d368985d73",
+      "same": true
+    }
+  ],
+  "changed": 0
+}

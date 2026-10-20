@@ -1,0 +1,8 @@
+{
+  "id": "skoll_bite",
+  "version": "v01",
+  "prompt": "Use case: stylized-concept. Production pixel-art game VFX animation, not a scene illustration. Inputs are project-owned references for crisp clustered pixel texture only. Restrained abstract wolf-bite contact flash, no wolf head/body. Two small opposing crescent rows of pale grey-violet tooth-shaped slash marks closing at CENTER. Four ONESHOT phases: faint opening tooth marks, sharp close/clamp contact at center, short tearing stroke, sparse fading scraps. Clear compact impact point; no giant round explosion, no blood, no ice. Cool grey-purple palette, very small pale core. EXACTLY FOUR distinct animation cells in a TWO-COLUMN, TWO-ROW grid, read row-major. Each cell aspect ratio 64:64; final native cell size 64x64. ALL cells have identical camera, scale, center/pivot and generous transparent padding. Entire effect must fit inside each cell. Crisp deliberately limited48RGB palette; alpha transparency allowed for light/smoke, no opaque dark background, no smooth airbrushed gradient. Do not include labels, grid lines, borders, text, watermark, creatures, scenery or ground. Genuine transparent PNG.",
+  "reference_paths": [
+    "assets/sprites/effects/katana_slash.png"
+  ]
+}

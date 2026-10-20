@@ -1,0 +1,68 @@
+{
+  "input": "originals/hrym_guard_summon_v01.png",
+  "input_sha256": "3ef18e6b872add4ee0d2380cb0107ff7c95631fdc3056abd11e2d255f7e6458b",
+  "raw_size": [
+    1774,
+    887
+  ],
+  "grid": [
+    2,
+    2
+  ],
+  "cut_boxes": [
+    [
+      73,
+      222,
+      807,
+      411
+    ],
+    [
+      72,
+      204,
+      811,
+      414
+    ],
+    [
+      60,
+      58,
+      859,
+      415
+    ],
+    [
+      91,
+      135,
+      814,
+      409
+    ]
+  ],
+  "single_common_scale": 0.11514392991239049,
+  "placements": [
+    [
+      5,
+      37,
+      85,
+      22
+    ],
+    [
+      5,
+      36,
+      85,
+      24
+    ],
+    [
+      2,
+      27,
+      92,
+      41
+    ],
+    [
+      6,
+      32,
+      83,
+      32
+    ]
+  ],
+  "operations": "original alpha threshold/quantization, source frame cuts, single common nearest resize, source-derived shared palette, whole-frame placement; no character/effect drawing",
+  "candidate": "candidates/hrym_guard_summon_v01.png",
+  "candidate_sha256": "0fb53e5a9c836e184adeca14eda2895d8a46e905a31939f9a8ef7dbf103c3b73"
+}

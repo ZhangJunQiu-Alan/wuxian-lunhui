@@ -26,6 +26,7 @@ var _phase2 := false
 var _second_stomp := false
 var _cage_center := Vector2.ZERO
 var _gaps: Array[float] = []     # 下一圈冲击波的缺口角度，预警时就画出来
+var _shield_visual: Node2D
 
 
 func _init() -> void:
@@ -43,10 +44,16 @@ func init_stats(hp_scale: float) -> void:
 
 func _ready() -> void:
 	super._ready()
+	_shield_visual = Node2D.new()
+	_shield_visual.name = "ShieldFx"
+	_shield_visual.z_index = 1
+	_shield_visual.draw.connect(_draw_shield)
+	add_child(_shield_visual)
 	change_state("chase")
 
 
 func _update_state(delta: float) -> void:
+	_shield_visual.queue_redraw()
 	if not _phase2 and hp < max_hp * 0.5:
 		_phase2 = true
 		_summon_guards()
@@ -111,7 +118,6 @@ func _stomp() -> void:
 	target.shake(10.0, 0.3)
 	Audio.sfx("boss_slam")
 	FxLayer.burst(global_position, FROST_COLOR, 30, 260.0)
-	FxLayer.ring(global_position, 150.0)
 	Shockwave.spawn(get_parent(), global_position, _gaps, target)
 
 
@@ -119,7 +125,10 @@ func _summon_guards() -> void:
 	target.shake(8.0, 0.4)
 	FxLayer.floating_text(global_position + Vector2(0, -radius - 20), tr("霜巨人卫队！"), FROST_COLOR)
 	for i in GUARDS:
-		spawner.call("frost_giant", global_position + Vector2.from_angle(TAU * i / GUARDS) * (radius + 60.0))
+		var at := global_position + Vector2.from_angle(TAU * i / GUARDS) * (radius + 60.0)
+		var guard: Enemy = spawner.call("frost_giant", at)
+		if is_instance_valid(guard):
+			BossFx.play("hrym_guard_summon", guard.global_position)
 
 
 ## 举盾时，玩家在他正面的攻击全部被格挡
@@ -127,6 +136,7 @@ func take_damage(amount: float, knockback: Vector2 = Vector2.ZERO, crit: bool = 
 	if state == "shield" and absf(_facing.angle_to(target.global_position - global_position)) < SHIELD_HALF_ANGLE:
 		_flash_time = 0.05
 		Audio.sfx("boss_block", -4.0)
+		BossFx.play("hrym_block_spark", global_position + _facing * radius, _facing.angle())
 		if randf() < 0.3:  # 不用每次都飘字，避免刷屏
 			FxLayer.floating_text(global_position + _facing * radius, tr("格挡"), FROST_COLOR)
 		return
@@ -152,6 +162,18 @@ func _draw_telegraph() -> void:
 		"shield":
 			# 盾牌：正面一道粗弧线
 			var a := _facing.angle()
-			draw_arc(Vector2.ZERO, radius + 12.0, a - SHIELD_HALF_ANGLE, a + SHIELD_HALF_ANGLE, 24, Color(0.85, 0.95, 1.0, 0.9), 8.0)
+			if BossFx.texture("hrym_shield_arc") == null:
+				draw_arc(Vector2.ZERO, radius + 12.0, a - SHIELD_HALF_ANGLE, a + SHIELD_HALF_ANGLE, 24, Color(0.85, 0.95, 1.0, 0.9), 8.0)
 	# 朝向标记
 	draw_line(_facing * radius * 0.5, _facing * (radius + 4.0), Color(1, 1, 1, 0.7), 4.0)
+
+
+func _draw_shield() -> void:
+	if state == "shield" and not _dead:
+		var visual_radius := radius + 12.0
+		if _actions:
+			var body_height := _actions.sprite_frames.get_frame_texture(_actions.animation, 0).get_height()
+			var body_scale: Vector2 = _sprite.get_meta("base_scale", Vector2.ONE)
+			visual_radius = maxf(visual_radius, body_height * body_scale.y * 0.5 + 8.0)
+		BossFx.draw(_shield_visual, "hrym_shield_arc", state_time, Vector2.ZERO, _facing.angle(),
+			Vector2.ONE * visual_radius / 58.0, Color.WHITE, false, visual_radius + 4.0, SHIELD_HALF_ANGLE)

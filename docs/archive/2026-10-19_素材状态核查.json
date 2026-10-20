@@ -1,0 +1,503 @@
+{
+  "audit_date": "2026-10-19",
+  "scope": "local_files_and_code_references_only",
+  "gameplay_tested": false,
+  "groups": {
+    "F": [
+      {
+        "path": "assets/sprites/cards/thor.png",
+        "exists": true,
+        "dimensions": [
+          720,
+          1200
+        ],
+        "sha256": "a9e773d2fae33a9c885a320a0c64d7f58f5b63ecb0e05fab8d7cbe61e727edb6"
+      },
+      {
+        "path": "assets/sprites/cards/odin.png",
+        "exists": true,
+        "dimensions": [
+          720,
+          1200
+        ],
+        "sha256": "423cab0736c5d60b840e7ba3d293901eba6d9f48025defc9fda56425cbf76fc2"
+      },
+      {
+        "path": "assets/sprites/cards/loki.png",
+        "exists": true,
+        "dimensions": [
+          720,
+          1200
+        ],
+        "sha256": "dbae4dd1d0d3c103b3c0fd2f5f1d668a9a71248a7d13f14832a1530e27431314"
+      },
+      {
+        "path": "assets/sprites/cards/freyja.png",
+        "exists": true,
+        "dimensions": [
+          720,
+          1200
+        ],
+        "sha256": "43720f46be69b092a375a443c7e43d07285fd36ad7017e9397c3eb7293e09410"
+      },
+      {
+        "path": "assets/sprites/cards/general.png",
+        "exists": true,
+        "dimensions": [
+          720,
+          1200
+        ],
+        "sha256": "71b27acbf314bac9edc61a3709262d9509b2f4362f61d4ad5a990f3145f50868"
+      },
+      {
+        "path": "assets/sprites/cards/swordsman.png",
+        "exists": true,
+        "dimensions": [
+          720,
+          1200
+        ],
+        "sha256": "72d10b43add714092674a3326162509c686dafe46ce4031c74fafe86ad45f5c7"
+      },
+      {
+        "path": "assets/sprites/cards/gunslinger.png",
+        "exists": true,
+        "dimensions": [
+          720,
+          1200
+        ],
+        "sha256": "2e7d9e68f11033c9807d4033ab4109ab15d100168489f11c15f8e94646c9ed78"
+      },
+      {
+        "path": "assets/sprites/cards/assassin.png",
+        "exists": true,
+        "dimensions": [
+          720,
+          1200
+        ],
+        "sha256": "c6e15a52af973acc2a3cf0753c24978981e23d1d4d2d9e373e3e8aee5394d046"
+      },
+      {
+        "path": "assets/sprites/cards/mage.png",
+        "exists": true,
+        "dimensions": [
+          720,
+          1200
+        ],
+        "sha256": "e979cd2de0eb0e9ab9ccfeef3ac65c6ea1b7233639cd53be80826d4266b3afd6"
+      }
+    ],
+    "G1": [
+      {
+        "path": "assets/sprites/cards/baldr.png",
+        "exists": true,
+        "dimensions": [
+          720,
+          1200
+        ],
+        "sha256": "85328fed93ed46d1e18e81e40972d657673905e9a597d40d741e93ed01151c6c"
+      },
+      {
+        "path": "assets/sprites/cards/baldr_awaken.png",
+        "exists": true,
+        "dimensions": [
+          720,
+          1200
+        ],
+        "sha256": "d5ee02588db614fe8240743f695a66b921fcdcaace1af2f22319fc0df15dbf9b"
+      },
+      {
+        "path": "assets/sprites/cards/ran.png",
+        "exists": true,
+        "dimensions": [
+          720,
+          1200
+        ],
+        "sha256": "7c1cd8ad824d24219c95a76e5bb1f62546c274674ae7315c6c940690cb446a0e"
+      },
+      {
+        "path": "assets/sprites/cards/ran_awaken.png",
+        "exists": true,
+        "dimensions": [
+          720,
+          1200
+        ],
+        "sha256": "aadb666a8a14011c6c41cccfd4ce9e5795aa683f8cc7dafe4783820f0f1aa09f"
+      }
+    ],
+    "G2": [
+      {
+        "path": "assets/sprites/cards/freyr.png",
+        "exists": true,
+        "dimensions": [
+          720,
+          1200
+        ],
+        "sha256": "41d177886430c6b5fb72bcbcd17ee79907f54cec9f02cda087f892cb5bc7fa49"
+      },
+      {
+        "path": "assets/sprites/cards/freyr_awaken.png",
+        "exists": true,
+        "dimensions": [
+          720,
+          1200
+        ],
+        "sha256": "eba13f1029eae537717c2b81f924575386ba1a14bb9a218f1733b133392b09f8"
+      },
+      {
+        "path": "assets/sprites/cards/skadi.png",
+        "exists": true,
+        "dimensions": [
+          720,
+          1200
+        ],
+        "sha256": "944db9fd75a5c885242d446ec67f34d03449deccf4a01cee5800638673dfa162"
+      },
+      {
+        "path": "assets/sprites/cards/skadi_awaken.png",
+        "exists": true,
+        "dimensions": [
+          720,
+          1200
+        ],
+        "sha256": "f1e2848019c91fd3d42ffd78b9551f4dbf3822a4490a09a8564ef7d7eee275b0"
+      }
+    ],
+    "G3": [
+      {
+        "path": "assets/sprites/cards/thor_awaken.png",
+        "exists": true,
+        "dimensions": [
+          720,
+          1200
+        ],
+        "sha256": "aa1e6bf48cc11194b87848a9162a3ca78dbcaa56b0ff8cce85609a9b313ad33f"
+      },
+      {
+        "path": "assets/sprites/cards/odin_awaken.png",
+        "exists": true,
+        "dimensions": [
+          720,
+          1200
+        ],
+        "sha256": "92ee6a39bbca548d8bf99b75d9fa2009532008420d0107d7769a3a2e2b3a1354"
+      },
+      {
+        "path": "assets/sprites/cards/loki_awaken.png",
+        "exists": true,
+        "dimensions": [
+          720,
+          1200
+        ],
+        "sha256": "9a432bcca7692ff9f8dfec4227b0220b8a7bd05a7a2e9ab45fa36d3cd67d2261"
+      },
+      {
+        "path": "assets/sprites/cards/freyja_awaken.png",
+        "exists": true,
+        "dimensions": [
+          720,
+          1200
+        ],
+        "sha256": "c0e0a6fb4c24a8ffae2077caa6025a241ed9b53beedbc5f0b00cd67c3788ce98"
+      }
+    ],
+    "G4": [
+      {
+        "path": "assets/sprites/effects/gods/thor_hammer.png",
+        "exists": true,
+        "dimensions": [
+          32,
+          32
+        ],
+        "sha256": "4a143fdceac2e85c1303a42b0212b6eb69c5f2b2e4400cd55d6931dfb165d950"
+      },
+      {
+        "path": "assets/sprites/effects/gods/thor_cloud.png",
+        "exists": true,
+        "dimensions": [
+          128,
+          64
+        ],
+        "sha256": "46771823ba537d4592ca5d5087b2afd214e7d556313c1697ef99174c05c81bb8"
+      },
+      {
+        "path": "assets/sprites/effects/gods/odin_spear.png",
+        "exists": true,
+        "dimensions": [
+          64,
+          16
+        ],
+        "sha256": "1c8b81380b3e61dab9255e5a7592ab961571c6ba136fe37e5b775e4a48e74815"
+      },
+      {
+        "path": "assets/sprites/effects/gods/odin_raven.png",
+        "exists": true,
+        "dimensions": [
+          48,
+          24
+        ],
+        "sha256": "523a542fffee9fe05292dd50b825a993282312d65943ebf16086e24b089af7b0"
+      },
+      {
+        "path": "assets/sprites/effects/gods/odin_rune_circle.png",
+        "exists": true,
+        "dimensions": [
+          96,
+          96
+        ],
+        "sha256": "286138576830d33617e3fcff77ea31fe7f2729e896fcaef32e8b317172d4b003"
+      },
+      {
+        "path": "assets/sprites/effects/gods/loki_wolf.png",
+        "exists": true,
+        "dimensions": [
+          64,
+          32
+        ],
+        "sha256": "32c9c603d7cde4c620e07704a2df3e42b50c9587e4cae4f4729edd94d7bef13f"
+      },
+      {
+        "path": "assets/sprites/effects/gods/loki_decoy.png",
+        "exists": true,
+        "dimensions": [
+          128,
+          48
+        ],
+        "sha256": "f703cf340028d13d49285d168cacc770c9a0989efa1c979d86c57a06508d61e4"
+      },
+      {
+        "path": "assets/sprites/effects/gods/loki_fire_patch.png",
+        "exists": true,
+        "dimensions": [
+          64,
+          64
+        ],
+        "sha256": "a5773032ad2af278c32e3079399b7c8c4205cb0cc8f90b12a1a784c81d3f4ec4"
+      },
+      {
+        "path": "assets/sprites/effects/gods/freyja_cat.png",
+        "exists": true,
+        "dimensions": [
+          48,
+          24
+        ],
+        "sha256": "d6ca2191fbf66cce738db8ff63c5e05c8e4a449fd4cbcceb9b7ed8b0342573c4"
+      },
+      {
+        "path": "assets/sprites/effects/gods/freyja_chariot.png",
+        "exists": true,
+        "dimensions": [
+          96,
+          48
+        ],
+        "sha256": "432d4cb590429fc99a338e0ff68195476c3ec3739055cba7e4eaa9e5c7620b66"
+      },
+      {
+        "path": "assets/sprites/effects/gods/freyja_ring.png",
+        "exists": true,
+        "dimensions": [
+          128,
+          128
+        ],
+        "sha256": "63fdf5560ee273789d6fe8888beb67c8241c2852e3d9b463723dc7491f2245b4"
+      },
+      {
+        "path": "assets/sprites/effects/gods/pickup_feather.png",
+        "exists": true,
+        "dimensions": [
+          16,
+          16
+        ],
+        "sha256": "4aada24fb40f67df2151185dd5b648528d9d121ceb3aab9b2d1b529b59e3ab9a"
+      },
+      {
+        "path": "assets/sprites/effects/gods/pickup_tear.png",
+        "exists": true,
+        "dimensions": [
+          16,
+          16
+        ],
+        "sha256": "487e8ced3d776630edccfbfd3d57917586d4bb89e715ae8116c7014f1d56daee"
+      }
+    ],
+    "G5": [
+      {
+        "path": "assets/sprites/effects/gods/baldr_beam.png",
+        "exists": true,
+        "dimensions": [
+          64,
+          16
+        ],
+        "sha256": "fd622c0316347028ef57fca0e99cfa8cb1cde3902b7e8bfa3fe41bdc13bce15b"
+      },
+      {
+        "path": "assets/sprites/effects/gods/baldr_spear.png",
+        "exists": true,
+        "dimensions": [
+          64,
+          16
+        ],
+        "sha256": "a20972e27ad511bd3565c98d18827f311c8d59ce46f4975e9c47c7a1c8f15edf"
+      },
+      {
+        "path": "assets/sprites/effects/gods/baldr_glow.png",
+        "exists": true,
+        "dimensions": [
+          64,
+          16
+        ],
+        "sha256": "bf995863a23e90e91f80a89ddf279ca3e814441dfadf647c4bf826c4e84f18b2"
+      },
+      {
+        "path": "assets/sprites/effects/gods/ran_net.png",
+        "exists": true,
+        "dimensions": [
+          96,
+          96
+        ],
+        "sha256": "652edec4d0806a0ee437430743f777dd66a5107f5ab5316ea69cf99ab08e4e1d"
+      },
+      {
+        "path": "assets/sprites/effects/gods/ran_wave.png",
+        "exists": true,
+        "dimensions": [
+          64,
+          32
+        ],
+        "sha256": "0d871efb7c7dbd1ed8f662fa7b0d0d35548ec5754621a0782cab37f331f08874"
+      },
+      {
+        "path": "assets/sprites/effects/gods/ran_whirl.png",
+        "exists": true,
+        "dimensions": [
+          96,
+          96
+        ],
+        "sha256": "58e795d38cb0aaee30520288369b94ce96b7ac5d888ea46431ab0e2691f69280"
+      },
+      {
+        "path": "assets/sprites/effects/gods/freyr_sword.png",
+        "exists": true,
+        "dimensions": [
+          32,
+          12
+        ],
+        "sha256": "1707c608cb0dc178a0f3abcdca7ee92342b20ff87b52e17bcc06d18a66998649"
+      },
+      {
+        "path": "assets/sprites/effects/gods/freyr_boar.png",
+        "exists": true,
+        "dimensions": [
+          80,
+          28
+        ],
+        "sha256": "25dc49955244339d80f2307af74ab07d870cc718314f0d7ddd6fb127b6a9a1a2"
+      },
+      {
+        "path": "assets/sprites/effects/gods/freyr_field.png",
+        "exists": true,
+        "dimensions": [
+          128,
+          128
+        ],
+        "sha256": "84f7853e87caaac62dde6e32270316c2991a171da9e6dcc5a5057f78b9d7eeb5"
+      },
+      {
+        "path": "assets/sprites/effects/gods/skadi_arrow.png",
+        "exists": true,
+        "dimensions": [
+          32,
+          8
+        ],
+        "sha256": "7fe0da1b44a8f8840af1e27ca96741a1cccba2ded90813008a60c5653d24bc86"
+      },
+      {
+        "path": "assets/sprites/effects/gods/skadi_blizzard.png",
+        "exists": true,
+        "dimensions": [
+          128,
+          128
+        ],
+        "sha256": "051ceef7bb36067a5f2b9490b7cfc8ef31ce4917f2abfcbe40d0bbaf55b4dc48"
+      },
+      {
+        "path": "assets/sprites/effects/gods/skadi_ice.png",
+        "exists": true,
+        "dimensions": [
+          64,
+          16
+        ],
+        "sha256": "ef71ea96c03b891402cd4ff00663e9876a17b479b52d5b6456b3567ceb415cfc"
+      },
+      {
+        "path": "assets/sprites/effects/gods/pickup_apple.png",
+        "exists": true,
+        "dimensions": [
+          16,
+          16
+        ],
+        "sha256": "fbf4887468e4a1be760c276a735d26116b7136438373e8988f7aa6f8384ce7ee"
+      }
+    ]
+  },
+  "g6": {
+    "expected_files": [
+      "god_choose.wav",
+      "path_choose.wav",
+      "awaken.wav",
+      "fusion.wav",
+      "hammer_throw.wav",
+      "hammer_catch.wav",
+      "static_zap_01.wav",
+      "static_zap_02.wav",
+      "static_zap_03.wav",
+      "spear_throw.wav",
+      "rune_detonate_01.wav",
+      "rune_detonate_02.wav",
+      "rune_detonate_03.wav",
+      "raven_dive.wav",
+      "wolf_bite_01.wav",
+      "wolf_bite_02.wav",
+      "wolf_bite_03.wav",
+      "wolf_breath.wav",
+      "decoy_spawn.wav",
+      "feather_launch.wav",
+      "cat_pounce_01.wav",
+      "cat_pounce_02.wav",
+      "cat_pounce_03.wav",
+      "chariot_charge.wav",
+      "light_beam.wav",
+      "light_spear.wav",
+      "light_burst_01.wav",
+      "light_burst_02.wav",
+      "light_burst_03.wav",
+      "light_flash.wav",
+      "net_throw.wav",
+      "net_close.wav",
+      "wave_push.wav",
+      "wave_crash.wav",
+      "sword_hit_01.wav",
+      "sword_hit_02.wav",
+      "sword_hit_03.wav",
+      "boar_charge.wav",
+      "ice_arrow_01.wav",
+      "ice_arrow_02.wav",
+      "ice_arrow_03.wav",
+      "ice_snipe.wav",
+      "ice_shatter.wav",
+      "heal_pickup.wav"
+    ],
+    "delivered_files": [],
+    "in_progress_source_exists": true
+  },
+  "critical_new_outputs": {
+    "assets/sprites/enemies/thokk.png": false,
+    "assets/sprites/enemies/thokk_move.png": false,
+    "assets/sprites/enemies/thokk_attack.png": false,
+    "assets/sprites/effects/hel_death_bolt.png": false
+  },
+  "audio_file_counts": {
+    "wav": 54,
+    "ogg": 6
+  },
+  "historical_taskbook_sha256": "ff3317f218d75e2f562c55857cb20da5841249b7211134e83b55b66dcf77f4c0"
+}

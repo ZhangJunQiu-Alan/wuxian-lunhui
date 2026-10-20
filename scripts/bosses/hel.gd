@@ -37,6 +37,7 @@ const BARRAGE_DAMAGE := 9.0
 const BARRAGE_SPEED := 260.0
 const SHIP_PATH := "res://assets/sprites/props/helheim/naglfar_sail.png"
 const NAIL_PATH := "res://assets/sprites/effects/nail_bolt.png"
+const DEATH_BOLT_PATH := "res://assets/sprites/effects/hel_death_bolt.png"
 const LIFE := Color(0.75, 0.85, 0.55)
 const DEATH := Color(0.45, 0.3, 0.6)
 
@@ -52,6 +53,7 @@ var _barrage_timer := 1.0
 var _ship: Node2D
 var _field: Node2D
 var _nail: Texture2D
+var _death_bolt: Texture2D
 
 
 func _init() -> void:
@@ -71,6 +73,8 @@ func _ready() -> void:
 	_anchor = position
 	if ResourceLoader.exists(NAIL_PATH):
 		_nail = load(NAIL_PATH)
+	if ResourceLoader.exists(DEATH_BOLT_PATH):
+		_death_bolt = load(DEATH_BOLT_PATH)
 	_field = Node2D.new()
 	_field.z_index = -1
 	_field.draw.connect(_draw_field)
@@ -110,7 +114,7 @@ func _update_state(delta: float) -> void:
 		"cast_windup":
 			_cast_dir = global_position.direction_to(target.global_position)
 			if state_time >= CAST_WINDUP:
-				_fan(_cast_dir, CAST_SHOTS, CAST_SPREAD, CAST_DAMAGE, 200.0, null, DEATH.lightened(0.4))
+				_fan(_cast_dir, CAST_SHOTS, CAST_SPREAD, CAST_DAMAGE, 200.0, _death_bolt, DEATH.lightened(0.4))
 				change_state("cast")
 		"cast":
 			if state_time >= 0.4:
@@ -134,10 +138,12 @@ func _update_side(delta: float) -> void:
 		_switch_timer -= delta
 		if _switch_timer <= 0.0:
 			_switch_timer = SWITCH_EVERY
-			FxLayer.burst(global_position, DEATH if _on_life_side() else LIFE, 30, 220.0, 4.0)
+			if not BossFx.play("hel_shift", global_position, 0.0, Vector2.ONE, LIFE if _on_life_side() else DEATH.lightened(0.3)):
+				FxLayer.burst(global_position, DEATH if _on_life_side() else LIFE, 30, 220.0, 4.0)
 			var x := _anchor.x + (SIDE_OFFSET if _on_life_side() else -SIDE_OFFSET)
 			position = MapLayer.push_out(Game.clamp_to_map(Vector2(x, position.y), radius), radius)
-			FxLayer.burst(global_position, LIFE if _on_life_side() else DEATH, 30, 220.0, 4.0)
+			if not BossFx.play("hel_shift", global_position, 0.0, Vector2.ONE, LIFE if _on_life_side() else DEATH.lightened(0.3)):
+				FxLayer.burst(global_position, LIFE if _on_life_side() else DEATH, 30, 220.0, 4.0)
 			Audio.sfx("boss_windup")
 	if _side_timer > 0.0:
 		return
@@ -147,11 +153,15 @@ func _update_side(delta: float) -> void:
 			var enemy := node as Enemy
 			if enemy != self and enemy.hp < enemy.max_hp and enemy.global_position.distance_to(global_position) < HEAL_RADIUS:
 				enemy.hp = minf(enemy.max_hp, enemy.hp + enemy.max_hp * HEAL_RATIO)
-				FxLayer.burst(enemy.global_position, LIFE, 3, 60.0, 2.0)
+				if not BossFx.play("hel_heal", enemy.global_position):
+					FxLayer.burst(enemy.global_position, LIFE, 3, 60.0, 2.0)
 	else:
 		_side_timer = SUMMON_EVERY
 		for i in SUMMON_COUNT:
-			spawner.call("dead", Game.clamp_to_map(global_position + Vector2.from_angle(randf() * TAU) * randf_range(60.0, 140.0), 40.0))
+			var at := Game.clamp_to_map(global_position + Vector2.from_angle(randf() * TAU) * randf_range(60.0, 140.0), 40.0)
+			var dead: Enemy = spawner.call("dead", at)
+			if is_instance_valid(dead):
+				BossFx.play("hel_army_summon", dead.global_position)
 
 
 func _raise_army() -> void:
@@ -159,8 +169,9 @@ func _raise_army() -> void:
 	Audio.sfx("boss_slam", -4.0)
 	for i in ARMY_COUNT:
 		var pos := Game.clamp_to_map(target.global_position + Vector2.from_angle(TAU * i / ARMY_COUNT) * ARMY_RADIUS, 40.0)
-		FxLayer.burst(pos, Color(0.4, 0.38, 0.35), 6, 90.0, 3.0)
-		spawner.call("dead", pos)
+		var dead: Enemy = spawner.call("dead", pos)
+		if is_instance_valid(dead) and not BossFx.play("hel_army_summon", dead.global_position):
+			FxLayer.burst(dead.global_position, Color(0.4, 0.38, 0.35), 6, 90.0, 3.0)
 
 
 func _fan(dir: Vector2, shots: int, spread: float, damage: float, speed_px: float, texture: Texture2D, tint: Color, from: Vector2 = global_position) -> void:
@@ -191,8 +202,10 @@ func _enter_phase2() -> void:
 			_ship.draw_rect(Rect2(-8, -220, 16, 220), Color(0.3, 0.25, 0.2, 0.8))
 			_ship.draw_colored_polygon(PackedVector2Array([Vector2(8, -210), Vector2(160, -150), Vector2(8, -40)]), Color(0.75, 0.7, 0.62, 0.8)))
 	get_parent().add_child(_ship)
-	FxLayer.burst(global_position, DEATH, 40, 260.0, 4.0)
+	if not BossFx.play("hel_board_ship", global_position, 0.0, Vector2.ONE, Color(1, 1, 1, 0.7)):
+		FxLayer.burst(global_position, DEATH, 40, 260.0, 4.0)
 	position = deck
+	BossFx.play("hel_board_ship", global_position, 0.0, Vector2.ONE, Color(1, 1, 1, 0.7))
 	target.shake(10.0, 0.5)
 	Audio.sfx("boss_warning")
 	change_state("ship")
@@ -218,10 +231,14 @@ func _die() -> void:
 func _draw_field() -> void:
 	var r := _domain_radius()
 	var h := 2600.0
-	_field.draw_rect(Rect2(_anchor.x - h, _anchor.y - h, h, h * 2.0), Color(LIFE, 0.05))
-	_field.draw_rect(Rect2(_anchor.x, _anchor.y - h, h, h * 2.0), Color(DEATH, 0.07))
+	if not BossFx.draw_ground(_field, "hel_life_ground", Rect2(_anchor.x - h, _anchor.y - h, h, h * 2.0)):
+		_field.draw_rect(Rect2(_anchor.x - h, _anchor.y - h, h, h * 2.0), Color(LIFE, 0.05))
+	if not BossFx.draw_ground(_field, "hel_death_ground", Rect2(_anchor.x, _anchor.y - h, h, h * 2.0)):
+		_field.draw_rect(Rect2(_anchor.x, _anchor.y - h, h, h * 2.0), Color(DEATH, 0.07))
 	_field.draw_line(Vector2(_anchor.x, _anchor.y - r), Vector2(_anchor.x, _anchor.y + r), Color(0.9, 0.9, 0.95, 0.25), 3.0)
 	_field.draw_arc(_anchor, r + 1500.0, 0.0, TAU, 96, Color(0.05, 0.02, 0.08, 0.45), 3000.0)
+	var arcs: Array[Vector2] = [Vector2(0, TAU)]
+	BossFx.draw_band(_field, "hel_domain_edge", _fight_time, _anchor, r, 24.0, arcs, Color(1, 1, 1, 0.75))
 	_field.draw_arc(_anchor, r, 0.0, TAU, 96, Color(DEATH.lightened(0.3), 0.8), 3.0)
 
 

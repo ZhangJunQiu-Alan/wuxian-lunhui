@@ -1,0 +1,119 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+PASS Godot loads thokk 
+PASS Godot loads thokk_move 
+PASS Godot loads thokk_attack 
+PASS Godot loads hel_death_bolt 
+PASS Godot loads skoll_dash_trail 
+PASS Godot loads skoll_bite 
+PASS Godot loads skoll_howl 
+PASS Godot loads skoll_howl_body 
+PASS Godot loads hati_lunge_trail 
+PASS Godot loads hati_howl_wave 
+PASS Godot loads hati_split_flash 
+PASS Godot loads hrym_wave_band 
+PASS Godot loads hrym_shield_arc 
+PASS Godot loads hrym_block_spark 
+PASS Godot loads hrym_guard_summon 
+PASS Godot loads hrym_ice_break 
+PASS Godot loads garm_bite 
+PASS Godot loads garm_howl_wave 
+PASS Godot loads garm_chain_link 
+PASS Godot loads garm_chain_break 
+PASS Godot loads garm_dispel 
+PASS Godot loads nidhogg_poison_breath 
+PASS Godot loads nidhogg_burrow_dust 
+PASS Godot loads nidhogg_emerge_burst 
+PASS Godot loads nidhogg_gnaw_heal 
+PASS Godot loads nidhogg_gnaw_stagger 
+PASS Godot loads hel_life_ground 
+PASS Godot loads hel_death_ground 
+PASS Godot loads hel_domain_edge 
+PASS Godot loads hel_shift 
+PASS Godot loads hel_heal 
+PASS Godot loads hel_army_summon 
+PASS Godot loads hel_board_ship 
+PASS thokk actual Enemy loader false 
+PASS thokk frame counts false 
+PASS thokk speeds false 
+PASS thokk loop flags false 
+PASS thokk actual scale false 1.0
+PASS thokk movement playback false 
+PASS thokk actual attack trigger false 
+PASS thokk attack completes and returns false 
+PASS thokk actual Enemy loader true 
+PASS thokk frame counts true 
+PASS thokk speeds true 
+PASS thokk loop flags true 
+PASS thokk actual scale true 1.20000004768372
+PASS thokk movement playback true 
+PASS thokk actual attack trigger true 
+PASS thokk attack completes and returns true 
+PASS skoll half-health howl 
+PASS new skoll howl is discovered 
+PASS new skoll howl remains unused by current mapping 
+PASS skoll summons six wolves 6
+PASS skoll dash speed unchanged 
+PASS hati split unlock at 75 percent 
+PASS hati creates two phantoms 
+PASS phantom action set matches 
+PASS phantom uses same body texture 
+PASS phantom action set matches 
+PASS phantom uses same body texture 
+PASS phantoms expiry releases nodes 
+PASS hati fear boundary 279.0 
+PASS hati fear boundary 281.0 
+PASS hrym front shield angle 0.0 
+PASS hrym front shield angle 1.29 
+PASS hrym front shield angle 1.31 
+PASS hrym front shield angle 3.14159265358979 
+PASS hrym two gap angular boundary 0.0 
+PASS hrym two gap angular boundary 0.419 
+PASS hrym two gap angular boundary 0.421 
+PASS hrym two gap angular boundary 3.14159265358979 
+PASS hrym two gap angular boundary 2.72259265358979 
+PASS hrym two gap angular boundary 2.72059265358979 
+PASS hrym two gap angular boundary 6.18318530717959 
+PASS hrym gap protects player at ring radius 
+PASS hrym solid wave damages player 
+PASS shockwave releases after max radius 
+PASS ice pillar collision radius retained 
+PASS ice pillar expiry cleanup 
+PASS garm starts with four stakes 
+PASS garm freed only at final stake 0 
+PASS garm freed only at final stake 1 
+PASS garm freed only at final stake 2 
+PASS garm freed only at final stake 3 
+PASS garm freed speed multiplier 
+PASS garm freed damage multiplier 
+PASS garm howl damage boundary 259.0 
+PASS garm dispel current behavior 259.0 
+PASS garm howl damage boundary 261.0 
+PASS garm dispel current behavior 261.0 
+PASS nidhogg underground hidden and untargetable 
+PASS nidhogg emerges visible and targetable 
+PASS nidhogg below gnaw interrupt threshold 
+PASS nidhogg 6 percent damage interrupts gnaw 
+PASS nidhogg stagger ends after two seconds 
+PASS nidhogg breath angular edge 0.59 
+PASS nidhogg breath angular edge 0.61 
+PASS nidhogg breath radial edge includes player radius 313.0 
+PASS nidhogg breath radial edge includes player radius 315.0 
+PASS poison pool ellipse (47.0, -20.0) 
+PASS poison pool ellipse (49.0, -20.0) 
+PASS poison pool ellipse (0.0, 3.0) 
+PASS poison pool ellipse (0.0, 5.0) 
+PASS poison pool seven second cleanup 
+PASS hel safety radius 0 
+PASS hel safety radius 50 
+PASS hel safety radius 100 
+PASS hel safety radius 150 
+PASS hel life side heals 15 percent 
+PASS hel death side summons three 
+PASS hel army summons fourteen 
+PASS hel first phase five projectiles 
+PASS hel new death bolt remains unintegrated 
+PASS hel projectile expiry cleanup 
+PASS hel low health boards ship 
+PASS hel phase two retains nine nail projectiles 
+RESULT 116 checks 0 failures

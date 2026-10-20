@@ -1,0 +1,286 @@
+{
+  "scope": "expected integration cases, not executed in production",
+  "cases": [
+    {
+      "id": "fates000_loki0",
+      "input": {
+        "thor_saved": false,
+        "vidar_intervened": false,
+        "freyr_assisted": false,
+        "ever_faith_loki": false
+      },
+      "expected_fate_count": 0,
+      "expected_loki_hint": false,
+      "game_execution": "not_run"
+    },
+    {
+      "id": "fates000_loki1",
+      "input": {
+        "thor_saved": false,
+        "vidar_intervened": false,
+        "freyr_assisted": false,
+        "ever_faith_loki": true
+      },
+      "expected_fate_count": 0,
+      "expected_loki_hint": true,
+      "game_execution": "not_run"
+    },
+    {
+      "id": "fates001_loki0",
+      "input": {
+        "thor_saved": false,
+        "vidar_intervened": false,
+        "freyr_assisted": true,
+        "ever_faith_loki": false
+      },
+      "expected_fate_count": 1,
+      "expected_loki_hint": false,
+      "game_execution": "not_run"
+    },
+    {
+      "id": "fates001_loki1",
+      "input": {
+        "thor_saved": false,
+        "vidar_intervened": false,
+        "freyr_assisted": true,
+        "ever_faith_loki": true
+      },
+      "expected_fate_count": 1,
+      "expected_loki_hint": true,
+      "game_execution": "not_run"
+    },
+    {
+      "id": "fates010_loki0",
+      "input": {
+        "thor_saved": false,
+        "vidar_intervened": true,
+        "freyr_assisted": false,
+        "ever_faith_loki": false
+      },
+      "expected_fate_count": 1,
+      "expected_loki_hint": false,
+      "game_execution": "not_run"
+    },
+    {
+      "id": "fates010_loki1",
+      "input": {
+        "thor_saved": false,
+        "vidar_intervened": true,
+        "freyr_assisted": false,
+        "ever_faith_loki": true
+      },
+      "expected_fate_count": 1,
+      "expected_loki_hint": true,
+      "game_execution": "not_run"
+    },
+    {
+      "id": "fates011_loki0",
+      "input": {
+        "thor_saved": false,
+        "vidar_intervened": true,
+        "freyr_assisted": true,
+        "ever_faith_loki": false
+      },
+      "expected_fate_count": 2,
+      "expected_loki_hint": false,
+      "game_execution": "not_run"
+    },
+    {
+      "id": "fates011_loki1",
+      "input": {
+        "thor_saved": false,
+        "vidar_intervened": true,
+        "freyr_assisted": true,
+        "ever_faith_loki": true
+      },
+      "expected_fate_count": 2,
+      "expected_loki_hint": true,
+      "game_execution": "not_run"
+    },
+    {
+      "id": "fates100_loki0",
+      "input": {
+        "thor_saved": true,
+        "vidar_intervened": false,
+        "freyr_assisted": false,
+        "ever_faith_loki": false
+      },
+      "expected_fate_count": 1,
+      "expected_loki_hint": false,
+      "game_execution": "not_run"
+    },
+    {
+      "id": "fates100_loki1",
+      "input": {
+        "thor_saved": true,
+        "vidar_intervened": false,
+        "freyr_assisted": false,
+        "ever_faith_loki": true
+      },
+      "expected_fate_count": 1,
+      "expected_loki_hint": true,
+      "game_execution": "not_run"
+    },
+    {
+      "id": "fates101_loki0",
+      "input": {
+        "thor_saved": true,
+        "vidar_intervened": false,
+        "freyr_assisted": true,
+        "ever_faith_loki": false
+      },
+      "expected_fate_count": 2,
+      "expected_loki_hint": false,
+      "game_execution": "not_run"
+    },
+    {
+      "id": "fates101_loki1",
+      "input": {
+        "thor_saved": true,
+        "vidar_intervened": false,
+        "freyr_assisted": true,
+        "ever_faith_loki": true
+      },
+      "expected_fate_count": 2,
+      "expected_loki_hint": true,
+      "game_execution": "not_run"
+    },
+    {
+      "id": "fates110_loki0",
+      "input": {
+        "thor_saved": true,
+        "vidar_intervened": true,
+        "freyr_assisted": false,
+        "ever_faith_loki": false
+      },
+      "expected_fate_count": 2,
+      "expected_loki_hint": false,
+      "game_execution": "not_run"
+    },
+    {
+      "id": "fates110_loki1",
+      "input": {
+        "thor_saved": true,
+        "vidar_intervened": true,
+        "freyr_assisted": false,
+        "ever_faith_loki": true
+      },
+      "expected_fate_count": 2,
+      "expected_loki_hint": true,
+      "game_execution": "not_run"
+    },
+    {
+      "id": "fates111_loki0",
+      "input": {
+        "thor_saved": true,
+        "vidar_intervened": true,
+        "freyr_assisted": true,
+        "ever_faith_loki": false
+      },
+      "expected_fate_count": 3,
+      "expected_loki_hint": false,
+      "game_execution": "not_run"
+    },
+    {
+      "id": "fates111_loki1",
+      "input": {
+        "thor_saved": true,
+        "vidar_intervened": true,
+        "freyr_assisted": true,
+        "ever_faith_loki": true
+      },
+      "expected_fate_count": 3,
+      "expected_loki_hint": true,
+      "game_execution": "not_run"
+    },
+    {
+      "id": "thor_at90",
+      "faith": "thor",
+      "encounter_unpaused_age": 90.0,
+      "expected": true,
+      "game_execution": "not_run"
+    },
+    {
+      "id": "thor_after90",
+      "faith": "thor",
+      "encounter_unpaused_age": 90.001,
+      "expected": false,
+      "game_execution": "not_run"
+    },
+    {
+      "id": "paused60seconds",
+      "faith": "thor",
+      "encounter_unpaused_age": 89.0,
+      "wall_clock_age": 149.0,
+      "expected": true,
+      "game_execution": "not_run"
+    },
+    {
+      "id": "no_thor_faith",
+      "faith": "odin",
+      "encounter_unpaused_age": 40.0,
+      "expected": false,
+      "game_execution": "not_run"
+    },
+    {
+      "id": "freyr_faith_not_freyja",
+      "faith": "freyr",
+      "awakened": true,
+      "expected_freyr_assisted": false,
+      "game_execution": "not_run"
+    },
+    {
+      "id": "loki_lost_current_faith",
+      "ever_faith_loki": true,
+      "current_faith": [],
+      "expected_loki_hint": true,
+      "game_execution": "not_run"
+    },
+    {
+      "id": "new_run_reset",
+      "prior_flags": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "expected_flags": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "game_execution": "not_run"
+    },
+    {
+      "id": "skip_at_0",
+      "beat": 0,
+      "expected": "same frozen result snapshot; no repeated rewards; preserve fate and loki hint",
+      "game_execution": "not_run"
+    },
+    {
+      "id": "skip_at_1",
+      "beat": 1,
+      "expected": "same frozen result snapshot; no repeated rewards; preserve fate and loki hint",
+      "game_execution": "not_run"
+    },
+    {
+      "id": "skip_at_2",
+      "beat": 2,
+      "expected": "same frozen result snapshot; no repeated rewards; preserve fate and loki hint",
+      "game_execution": "not_run"
+    },
+    {
+      "id": "skip_at_3",
+      "beat": 3,
+      "expected": "same frozen result snapshot; no repeated rewards; preserve fate and loki hint",
+      "game_execution": "not_run"
+    },
+    {
+      "id": "skip_at_4",
+      "beat": 4,
+      "expected": "same frozen result snapshot; no repeated rewards; preserve fate and loki hint",
+      "game_execution": "not_run"
+    }
+  ]
+}

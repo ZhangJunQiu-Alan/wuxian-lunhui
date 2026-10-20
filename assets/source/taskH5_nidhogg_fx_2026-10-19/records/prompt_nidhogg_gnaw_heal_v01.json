@@ -1,0 +1,8 @@
+{
+  "id": "nidhogg_gnaw_heal",
+  "version": "v01",
+  "prompt": "Use case: stylized-concept. Production pixel-art dark underworld game VFX. Inputs are project-owned material/texture references only, do NOT copy their pool or ground-crack silhouette. Dark-green life essence traveling from a tree-root source LEFT to recipient RIGHT, no root or dragon drawn. A few slender moss-green wisps and tiny dull green motes forming an arcing short stream from left toward right in a square transparent cell. Four distinct seamless LOOP phases of motes progressing LEFT TO RIGHT, stable stream shape. Muted green, not bright neon or player heal symbols. Sparse center, no opaque circle, no plus sign. EXACTLY FOUR DISTINCT frames in TWO COLUMNS and TWO ROWS, equal cell aspect 64:64, intended native 64x64. Same pivot, cell framing and scale across frames, preserve occurrence/peak/decay for single shots and smooth phase cycling for loop. Limited32RGB with8alpha steps, crisp clustered pixel art, subdued moss-green and earth-grey palette, no blue ice or fiery orange. Entire effect fits inside each cell with transparent borders. Genuine alpha background, no opaque rectangle, text, labels, grid, watermark, scenery, dragon or tree body.",
+  "reference_paths": [
+    "assets/sprites/effects/poison_pool.png"
+  ]
+}

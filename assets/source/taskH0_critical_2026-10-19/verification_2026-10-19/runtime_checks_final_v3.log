@@ -1,0 +1,48 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+PASS Godot loads thokk 
+PASS Godot loads thokk_move 
+PASS Godot loads thokk_attack 
+PASS Godot loads hel_death_bolt 
+PASS Godot loads skoll_dash_trail 
+PASS Godot loads skoll_bite 
+PASS Godot loads skoll_howl 
+PASS Godot loads skoll_howl_body 
+PASS Godot loads hati_lunge_trail 
+PASS Godot loads hati_howl_wave 
+PASS Godot loads hati_split_flash 
+PASS Godot loads hrym_wave_band 
+PASS Godot loads hrym_shield_arc 
+PASS Godot loads hrym_block_spark 
+PASS Godot loads hrym_guard_summon 
+PASS Godot loads hrym_ice_break 
+PASS Godot loads garm_bite 
+PASS Godot loads garm_howl_wave 
+PASS Godot loads garm_chain_link 
+PASS Godot loads garm_chain_break 
+PASS Godot loads garm_dispel 
+PASS Godot loads nidhogg_poison_breath 
+PASS Godot loads nidhogg_burrow_dust 
+PASS Godot loads nidhogg_emerge_burst 
+PASS Godot loads nidhogg_gnaw_heal 
+PASS Godot loads nidhogg_gnaw_stagger 
+PASS Godot loads hel_life_ground 
+PASS Godot loads hel_death_ground 
+PASS Godot loads hel_domain_edge 
+PASS Godot loads hel_shift 
+PASS Godot loads hel_heal 
+PASS Godot loads hel_army_summon 
+PASS Godot loads hel_board_ship 
+PASS thokk actual Enemy loader false 
+PASS thokk frame counts false 
+PASS thokk speeds false 
+PASS thokk loop flags false 
+PASS thokk actual scale false 1.0
+SCRIPT ERROR: Invalid call. Nonexistent function 'get_rect' in base 'AnimatedSprite2D'.
+          at: run (res://verify_h_runtime.gd:72)
+          GDScript backtrace (most recent call first):
+              [0] run (res://verify_h_runtime.gd:72)
+WARNING: 4 ObjectDB instances were leaked at exit (run with `--verbose` for details).
+   at: cleanup (core/object/object.cpp:2536)
+ERROR: 2 resources still in use at exit (run with --verbose for details).
+   at: clear (core/io/resource.cpp:822)

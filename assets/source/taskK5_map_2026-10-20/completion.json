@@ -1,0 +1,19 @@
+{
+  "task": "K5",
+  "production": "complete",
+  "formal_png": 2,
+  "frames": 5,
+  "self_check": "passed",
+  "checks": 50,
+  "game_integration": "not_implemented",
+  "game_acceptance": "not_tested",
+  "remaining": [
+    "map loader and mask adapter",
+    "world layout and clipping",
+    "collision/visual alignment",
+    "periodic aid gameplay definition",
+    "dense fulllevel runtime"
+  ],
+  "git_commit": false,
+  "git_push": false
+}

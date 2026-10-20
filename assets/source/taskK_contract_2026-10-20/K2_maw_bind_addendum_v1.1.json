@@ -1,0 +1,111 @@
+{
+  "version": "K2-maw-bind-v1.1",
+  "supersedes": [
+    "K-assets-v1.0:C3 combined fenrir_maw",
+    "K0 planned fenrir_bind whole192 atlas"
+  ],
+  "reason": "whole combined atlases repeatedly intrude protected central area; split jaw and path ribbon give authoritative geometric clearance",
+  "files": [
+    {
+      "id": "fenrir_maw_upper",
+      "path": "assets/sprites/effects/bosses/fenrir_maw_upper.png",
+      "frame_size": [
+        256,
+        128
+      ],
+      "frames": 4,
+      "fps": 8,
+      "loop": true,
+      "anchor": [
+        32,
+        128
+      ],
+      "alpha": "binary"
+    },
+    {
+      "id": "fenrir_maw_lower",
+      "path": "assets/sprites/effects/bosses/fenrir_maw_lower.png",
+      "frame_size": [
+        256,
+        128
+      ],
+      "frames": 4,
+      "fps": 8,
+      "loop": true,
+      "anchor": [
+        32,
+        0
+      ],
+      "alpha": "binary"
+    },
+    {
+      "id": "fenrir_bind_link",
+      "path": "assets/sprites/effects/bosses/fenrir_bind_link.png",
+      "frame_size": [
+        16,
+        8
+      ],
+      "frames": 1,
+      "fps": 0,
+      "loop": false,
+      "anchor": [
+        8,
+        4
+      ],
+      "alpha": "binary",
+      "edge_exception": "left/right rope ports intentionally reach texture edge"
+    }
+  ],
+  "maw_geometry": {
+    "axis": "right",
+    "opening_gap_min_for_active_visible_player": 64,
+    "upper_bottom_world": "mouth_center.y-gap/2",
+    "lower_top_world": "mouth_center.y+gap/2",
+    "upper_world_anchor": "mouth_hinge+(0,-gap/2)",
+    "lower_world_anchor": "mouth_hinge+(0,gap/2)",
+    "projection": "rotate both about same mouth axis; local protected y in[-gap/2,+gap/2] has zero jaw draw geometry",
+    "skinning": "all upper material inside its128px-high region; all lower material inside its own128px-high region",
+    "vidar": "event gives upper/lower contact points; guide jaw opening by contact span during bracing, never enlarge/stretch ally",
+    "fatal_shape": "controller-defined, same source for warning and damage; no instant damage from alpha",
+    "origin_semantics": "mouth_hinge, not the attraction center",
+    "aperture_center": "mouth_hinge+(120,0)",
+    "paired_preview_canvas": [
+      288,
+      352
+    ],
+    "paired_preview_hinge": [
+      32,
+      176
+    ],
+    "paired_protected_rect": [
+      96,
+      144,
+      208,
+      208
+    ],
+    "component_margin_min": 8,
+    "vidar_contact_phase": "after player escape/control lockout, bind jaw material contact positions to unscaled96px ally hands and heavy boot; active-player minimum64 gap applies only to gameplay attraction phase, not isolated ally tableau; no damage in tableau"
+  },
+  "binding_geometry": {
+    "center": [
+      96,
+      96
+    ],
+    "ellipse_radii": [
+      82,
+      84
+    ],
+    "band_width": 4,
+    "protected_rect": [
+      56,
+      54,
+      136,
+      138
+    ],
+    "render": "one continuous thin braid ribbon; mirrored repeat sampling for endpoint continuity, no separate node per segment",
+    "glint": "small procedural traveling light with four8fps presentation phases; do not claim bitmap animation",
+    "low_occlusion_gate": "total alpha-weighted area <=0.12 of192square; protected rectangle empty in render"
+  },
+  "status": "frozen_asset_addendum_not_production_integration",
+  "scope": "only K2 presentation; existing six Boss and K1 unchanged"
+}

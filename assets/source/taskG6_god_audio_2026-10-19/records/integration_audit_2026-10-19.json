@@ -1,0 +1,2256 @@
+{
+  "task": "G6",
+  "date": "2026-10-19",
+  "scope": "existing assets and static source inspection only",
+  "status": "pass_static_handoff",
+  "formal_wav_count": 44,
+  "sound_types": 30,
+  "hooks_present": 30,
+  "runtime_wavs_modified": false,
+  "sources_verified": 83,
+  "source_results": [
+    {
+      "file": "originals/god_choose_v01_browser.wav",
+      "sha256_matches": true
+    },
+    {
+      "file": "originals/reused/fantasy/item_gem_02.ogg",
+      "sha256_matches": true
+    },
+    {
+      "file": "originals/path_choose_v01_browser.wav",
+      "sha256_matches": true
+    },
+    {
+      "file": "originals/reused/rpg/metalClick.ogg",
+      "sha256_matches": true
+    },
+    {
+      "file": "originals/awaken_v01_browser.wav",
+      "sha256_matches": true
+    },
+    {
+      "file": "originals/reused/impact/impactSoft_heavy_000.ogg",
+      "sha256_matches": true
+    },
+    {
+      "file": "originals/reused/fantasy/metal_02.ogg",
+      "sha256_matches": true
+    },
+    {
+      "file": "originals/fusion_v01_browser.wav",
+      "sha256_matches": true
+    },
+    {
+      "file": "originals/light_beam_v01_browser.wav",
+      "sha256_matches": true
+    },
+    {
+      "file": "originals/wave_push_v01_browser.wav",
+      "sha256_matches": true
+    },
+    {
+      "file": "originals/reused/fantasy/item_gem_04.ogg",
+      "sha256_matches": true
+    },
+    {
+      "file": "originals/hammer_throw_v01_browser.wav",
+      "sha256_matches": true
+    },
+    {
+      "file": "originals/reused/rpg/cloth4.ogg",
+      "sha256_matches": true
+    },
+    {
+      "file": "originals/reused/fantasy/metal_01.ogg",
+      "sha256_matches": true
+    },
+    {
+      "file": "originals/hammer_catch_v01_browser.wav",
+      "sha256_matches": true
+    },
+    {
+      "file": "originals/reused/impact/impactMetal_medium_002.ogg",
+      "sha256_matches": true
+    },
+    {
+      "file": "originals/static_zap_01_v01_browser.wav",
+      "sha256_matches": true
+    },
+    {
+      "file": "originals/reused/impact/impactGlass_light_000.ogg",
+      "sha256_matches": true
+    },
+    {
+      "file": "originals/static_zap_02_v01_browser.wav",
+      "sha256_matches": true
+    },
+    {
+      "file": "originals/static_zap_03_v01_browser.wav",
+      "sha256_matches": true
+    },
+    {
+      "file": "originals/spear_throw_v01_browser.wav",
+      "sha256_matches": true
+    },
+    {
+      "file": "originals/reused/rpg/knifeSlice.ogg",
+      "sha256_matches": true
+    },
+    {
+      "file": "originals/reused/fantasy/spell_01.ogg",
+      "sha256_matches": true
+    },
+    {
+      "file": "originals/rune_detonate_01_v01_browser.wav",
+      "sha256_matches": true
+    },
+    {
+      "file": "originals/reused/fantasy/spell_02.ogg",
+      "sha256_matches": true
+    },
+    {
+      "file": "originals/reused/impact/impactSoft_medium_002.ogg",
+      "sha256_matches": true
+    },
+    {
+      "file": "originals/rune_detonate_02_v01_browser.wav",
+      "sha256_matches": true
+    },
+    {
+      "file": "originals/rune_detonate_03_v01_browser.wav",
+      "sha256_matches": true
+    },
+    {
+      "file": "originals/raven_dive_v01_browser.wav",
+      "sha256_matches": true
+    },
+    {
+      "file": "originals/reused/rpg/cloth1.ogg",
+      "sha256_matches": true
+    },
+    {
+      "file": "originals/wolf_bite_01_v01_browser.wav",
+      "sha256_matches": true
+    },
+    {
+      "file": "originals/reused/fantasy/creature_monster_01.ogg",
+      "sha256_matches": true
+    },
+    {
+      "file": "originals/reused/fantasy/spell_fire_03.ogg",
+      "sha256_matches": true
+    },
+    {
+      "file": "originals/reused/impact/impactPunch_medium_000.ogg",
+      "sha256_matches": true
+    },
+    {
+      "file": "originals/wolf_bite_02_v01_browser.wav",
+      "sha256_matches": true
+    },
+    {
+      "file": "originals/wolf_bite_03_v01_browser.wav",
+      "sha256_matches": true
+    },
+    {
+      "file": "originals/wolf_breath_v01_browser.wav",
+      "sha256_matches": true
+    },
+    {
+      "file": "originals/reused/fantasy/spell_fire_05.ogg",
+      "sha256_matches": true
+    },
+    {
+      "file": "originals/reused/fantasy/creature_roar_03.ogg",
+      "sha256_matches": true
+    },
+    {
+      "file": "originals/decoy_spawn_v01_browser.wav",
+      "sha256_matches": true
+    },
+    {
+      "file": "originals/reused/fantasy/spell_fire_06.ogg",
+      "sha256_matches": true
+    },
+    {
+      "file": "originals/feather_launch_v01_browser.wav",
+      "sha256_matches": true
+    },
+    {
+      "file": "originals/reused/rpg/drawKnife2.ogg",
+      "sha256_matches": true
+    },
+    {
+      "file": "originals/cat_pounce_01_v01_browser.wav",
+      "sha256_matches": true
+    },
+    {
+      "file": "originals/reused/rpg/knifeSlice2.ogg",
+      "sha256_matches": true
+    },
+    {
+      "file": "originals/reused/impact/impactPunch_medium_001.ogg",
+      "sha256_matches": true
+    },
+    {
+      "file": "originals/cat_pounce_02_v01_browser.wav",
+      "sha256_matches": true
+    },
+    {
+      "file": "originals/cat_pounce_03_v01_browser.wav",
+      "sha256_matches": true
+    },
+    {
+      "file": "originals/chariot_charge_v01_browser.wav",
+      "sha256_matches": true
+    },
+    {
+      "file": "originals/reused/rpg/footstep08.ogg",
+      "sha256_matches": true
+    },
+    {
+      "file": "originals/reused/fantasy/wood_02.ogg",
+      "sha256_matches": true
+    },
+    {
+      "file": "originals/light_spear_v01_browser.wav",
+      "sha256_matches": true
+    },
+    {
+      "file": "originals/light_burst_01_v01_browser.wav",
+      "sha256_matches": true
+    },
+    {
+      "file": "originals/light_burst_02_v01_browser.wav",
+      "sha256_matches": true
+    },
+    {
+      "file": "originals/light_burst_03_v01_browser.wav",
+      "sha256_matches": true
+    },
+    {
+      "file": "originals/light_flash_v01_browser.wav",
+      "sha256_matches": true
+    },
+    {
+      "file": "originals/net_throw_v01_browser.wav",
+      "sha256_matches": true
+    },
+    {
+      "file": "originals/reused/rpg/clothBelt.ogg",
+      "sha256_matches": true
+    },
+    {
+      "file": "originals/reused/fantasy/creature_slime_02.ogg",
+      "sha256_matches": true
+    },
+    {
+      "file": "originals/net_close_v01_browser.wav",
+      "sha256_matches": true
+    },
+    {
+      "file": "originals/reused/rpg/clothBelt2.ogg",
+      "sha256_matches": true
+    },
+    {
+      "file": "originals/reused/fantasy/creature_slime_03.ogg",
+      "sha256_matches": true
+    },
+    {
+      "file": "originals/wave_crash_v01_browser.wav",
+      "sha256_matches": true
+    },
+    {
+      "file": "originals/reused/fantasy/creature_slime_04.ogg",
+      "sha256_matches": true
+    },
+    {
+      "file": "originals/sword_hit_01_v01_browser.wav",
+      "sha256_matches": true
+    },
+    {
+      "file": "originals/reused/fantasy/blade_01.ogg",
+      "sha256_matches": true
+    },
+    {
+      "file": "originals/reused/impact/impactMetal_light_001.ogg",
+      "sha256_matches": true
+    },
+    {
+      "file": "originals/sword_hit_02_v01_browser.wav",
+      "sha256_matches": true
+    },
+    {
+      "file": "originals/sword_hit_03_v01_browser.wav",
+      "sha256_matches": true
+    },
+    {
+      "file": "originals/boar_charge_v01_browser.wav",
+      "sha256_matches": true
+    },
+    {
+      "file": "originals/boar_voice_CC0.ogg",
+      "sha256_matches": true
+    },
+    {
+      "file": "originals/reused/rpg/footstep00.ogg",
+      "sha256_matches": true
+    },
+    {
+      "file": "originals/reused/rpg/footstep03.ogg",
+      "sha256_matches": true
+    },
+    {
+      "file": "originals/ice_arrow_01_v01_browser.wav",
+      "sha256_matches": true
+    },
+    {
+      "file": "originals/reused/fantasy/item_gem_03.ogg",
+      "sha256_matches": true
+    },
+    {
+      "file": "originals/ice_arrow_02_v01_browser.wav",
+      "sha256_matches": true
+    },
+    {
+      "file": "originals/ice_arrow_03_v01_browser.wav",
+      "sha256_matches": true
+    },
+    {
+      "file": "originals/ice_snipe_v01_browser.wav",
+      "sha256_matches": true
+    },
+    {
+      "file": "originals/ice_shatter_v01_browser.wav",
+      "sha256_matches": true
+    },
+    {
+      "file": "originals/reused/impact/impactGlass_heavy_003.ogg",
+      "sha256_matches": true
+    },
+    {
+      "file": "originals/reused/impact/impactGlass_light_001.ogg",
+      "sha256_matches": true
+    },
+    {
+      "file": "originals/heal_pickup_v01_browser.wav",
+      "sha256_matches": true
+    },
+    {
+      "file": "originals/reused/fantasy/item_gem_01.ogg",
+      "sha256_matches": true
+    }
+  ],
+  "files": [
+    {
+      "stem": "god_choose",
+      "sound_id": "god_choose",
+      "formal_path": "assets/audio/sfx/god_choose.wav",
+      "sha256": "3d159031e5ed6fcc9d5443c2cfa0eb1edc9a44ea008ff65a534e5daa5a05fdc3",
+      "checks": {
+        "formal_approved_candidate_hash_match": true,
+        "user_accepted_hash_match": true,
+        "pcm16_mono44100": true,
+        "peak_minus1dbfs": true,
+        "onset_within10ms": true,
+        "zero_boundaries": true,
+        "no_fullscale_samples": true,
+        "quiet_tail": true,
+        "call_entry_exists": true
+      },
+      "duration_seconds": 0.38482993197278914,
+      "peak_dbfs": -1.000151903819357,
+      "onset_ms": 0.09070294784580499,
+      "tail10ms_rms_dbfs": -240.0,
+      "import": {
+        "exists": true,
+        "source_path_matches": true,
+        "loop_disabled_in_descriptor": true,
+        "normalize_disabled_in_descriptor": true,
+        "imported_cache_exists": true,
+        "descriptor_sha256": "a9c3b93fe9627d7d23a37b2a56b7a675a11acfbb54eb29fd32fb0b4e7e6d8ec9",
+        "cache_sha256": "efe4e184fdfcf54cc568723093b91f0394db7b19c35724f541631fa5d84d4949",
+        "runtime_load_verified": false
+      },
+      "hook": {
+        "script": "scripts/game.gd",
+        "function": "_open_reward",
+        "line": 474,
+        "call": "Audio.sfx_or(entry.kind + \"_choose\", \"level_up\")",
+        "entry_kind": "god",
+        "fallback": "level_up",
+        "volume_db": 0.0,
+        "pitch_range": 0.06,
+        "verification": "dynamic_call_and_match_branch_present"
+      }
+    },
+    {
+      "stem": "path_choose",
+      "sound_id": "path_choose",
+      "formal_path": "assets/audio/sfx/path_choose.wav",
+      "sha256": "d65718239a3c6825c8c9909ce37f4f4ccde1ce5013c4987140e47b795f827b0b",
+      "checks": {
+        "formal_approved_candidate_hash_match": true,
+        "user_accepted_hash_match": true,
+        "pcm16_mono44100": true,
+        "peak_minus1dbfs": true,
+        "onset_within10ms": true,
+        "zero_boundaries": true,
+        "no_fullscale_samples": true,
+        "quiet_tail": true,
+        "call_entry_exists": true
+      },
+      "duration_seconds": 0.47870748299319726,
+      "peak_dbfs": -1.000151903819357,
+      "onset_ms": 0.09070294784580499,
+      "tail10ms_rms_dbfs": -240.0,
+      "import": {
+        "exists": true,
+        "source_path_matches": true,
+        "loop_disabled_in_descriptor": true,
+        "normalize_disabled_in_descriptor": true,
+        "imported_cache_exists": true,
+        "descriptor_sha256": "84531924a89de79ffdce00e6fccfc15c434ba770410a5182b0e20b6cff716c3a",
+        "cache_sha256": "49de37dc3f2fa0372ce69675a38ee45d9e5a319922363dc289ce0b6c2eff5c9f",
+        "runtime_load_verified": false
+      },
+      "hook": {
+        "script": "scripts/game.gd",
+        "function": "_open_reward",
+        "line": 474,
+        "call": "Audio.sfx_or(entry.kind + \"_choose\", \"level_up\")",
+        "entry_kind": "path",
+        "fallback": "level_up",
+        "volume_db": 0.0,
+        "pitch_range": 0.06,
+        "verification": "dynamic_call_and_match_branch_present"
+      }
+    },
+    {
+      "stem": "awaken",
+      "sound_id": "awaken",
+      "formal_path": "assets/audio/sfx/awaken.wav",
+      "sha256": "7b340169cbe23901524589c5e158d03dc96890e661ba77a75f7fd6e58809305f",
+      "checks": {
+        "formal_approved_candidate_hash_match": true,
+        "user_accepted_hash_match": true,
+        "pcm16_mono44100": true,
+        "peak_minus1dbfs": true,
+        "onset_within10ms": true,
+        "zero_boundaries": true,
+        "no_fullscale_samples": true,
+        "quiet_tail": true,
+        "call_entry_exists": true
+      },
+      "duration_seconds": 1.5,
+      "peak_dbfs": -1.000151903819357,
+      "onset_ms": 0.022675736961451247,
+      "tail10ms_rms_dbfs": -111.98217204667613,
+      "import": {
+        "exists": true,
+        "source_path_matches": true,
+        "loop_disabled_in_descriptor": true,
+        "normalize_disabled_in_descriptor": true,
+        "imported_cache_exists": true,
+        "descriptor_sha256": "76e55483308f8117e430a453a1c19c62f2a9c063dea2f1886276c3f1ab2928b0",
+        "cache_sha256": "32fb9b118cde2152701d73b9c20add3b00b8ca7110dd2573876d5565e365ddc3",
+        "runtime_load_verified": false
+      },
+      "hook": {
+        "script": "scripts/game.gd",
+        "function": "_open_reward",
+        "line": 476,
+        "call": "Audio.sfx_or(entry.kind, \"level_up\")",
+        "entry_kind": "awaken",
+        "fallback": "level_up",
+        "volume_db": 0.0,
+        "pitch_range": 0.06,
+        "verification": "dynamic_call_and_match_branch_present"
+      }
+    },
+    {
+      "stem": "fusion",
+      "sound_id": "fusion",
+      "formal_path": "assets/audio/sfx/fusion.wav",
+      "sha256": "21c4ae95f6d26a90362b13862ba23193889b7f74481c828a206ce779c306e897",
+      "checks": {
+        "formal_approved_candidate_hash_match": true,
+        "user_accepted_hash_match": true,
+        "pcm16_mono44100": true,
+        "peak_minus1dbfs": true,
+        "onset_within10ms": true,
+        "zero_boundaries": true,
+        "no_fullscale_samples": true,
+        "quiet_tail": true,
+        "call_entry_exists": true
+      },
+      "duration_seconds": 0.8758730158730159,
+      "peak_dbfs": -1.000151903819357,
+      "onset_ms": 0.022675736961451247,
+      "tail10ms_rms_dbfs": -240.0,
+      "import": {
+        "exists": true,
+        "source_path_matches": true,
+        "loop_disabled_in_descriptor": true,
+        "normalize_disabled_in_descriptor": true,
+        "imported_cache_exists": true,
+        "descriptor_sha256": "58e5df9f3fc25be14d1195e4ae5fce1b2df4deb3bd9df78756200fb7b41d2a51",
+        "cache_sha256": "35ab69840ca49015b1305ec62dff1a4a6022f19fa700ed74b8aa23267dbc5e71",
+        "runtime_load_verified": false
+      },
+      "hook": {
+        "script": "scripts/game.gd",
+        "function": "_open_reward",
+        "line": 476,
+        "call": "Audio.sfx_or(entry.kind, \"level_up\")",
+        "entry_kind": "fusion",
+        "fallback": "level_up",
+        "volume_db": 0.0,
+        "pitch_range": 0.06,
+        "verification": "dynamic_call_and_match_branch_present"
+      }
+    },
+    {
+      "stem": "hammer_throw",
+      "sound_id": "hammer_throw",
+      "formal_path": "assets/audio/sfx/hammer_throw.wav",
+      "sha256": "97675701811755990f15ef9adab6fb268f61f3a673969870584797a6b969565e",
+      "checks": {
+        "formal_approved_candidate_hash_match": true,
+        "user_accepted_hash_match": true,
+        "pcm16_mono44100": true,
+        "peak_minus1dbfs": true,
+        "onset_within10ms": true,
+        "zero_boundaries": true,
+        "no_fullscale_samples": true,
+        "quiet_tail": true,
+        "call_entry_exists": true
+      },
+      "duration_seconds": 0.29820861678004534,
+      "peak_dbfs": -1.000151903819357,
+      "onset_ms": 0.022675736961451247,
+      "tail10ms_rms_dbfs": -89.28704260449695,
+      "import": {
+        "exists": true,
+        "source_path_matches": true,
+        "loop_disabled_in_descriptor": true,
+        "normalize_disabled_in_descriptor": true,
+        "imported_cache_exists": true,
+        "descriptor_sha256": "1f477dc150e5af23ae76bad717411c5a1c062c05cd552234e51c33b737f3a5fe",
+        "cache_sha256": "a7427327e430d8ffd043244b564189974921924717b10eb07b8efdbd73b0dfde",
+        "runtime_load_verified": false
+      },
+      "hook": {
+        "script": "scripts/gods/thor.gd",
+        "function": "_throw_hammers",
+        "line": 160,
+        "call": "Audio.sfx_or(\"hammer_throw\", \"dash\", -4.0)",
+        "fallback": "dash",
+        "volume_db": -4.0,
+        "pitch_range": 0.06,
+        "verification": "literal_source_call_present"
+      }
+    },
+    {
+      "stem": "hammer_catch",
+      "sound_id": "hammer_catch",
+      "formal_path": "assets/audio/sfx/hammer_catch.wav",
+      "sha256": "46cab7d44dc3b9efd09da19e5eb5bd30f611f482dfca2a7f30103b7a375efc2a",
+      "checks": {
+        "formal_approved_candidate_hash_match": true,
+        "user_accepted_hash_match": true,
+        "pcm16_mono44100": true,
+        "peak_minus1dbfs": true,
+        "onset_within10ms": true,
+        "zero_boundaries": true,
+        "no_fullscale_samples": true,
+        "quiet_tail": true,
+        "call_entry_exists": true
+      },
+      "duration_seconds": 0.17766439909297052,
+      "peak_dbfs": -1.000151903819357,
+      "onset_ms": 0.022675736961451247,
+      "tail10ms_rms_dbfs": -94.76681372432851,
+      "import": {
+        "exists": true,
+        "source_path_matches": true,
+        "loop_disabled_in_descriptor": true,
+        "normalize_disabled_in_descriptor": true,
+        "imported_cache_exists": true,
+        "descriptor_sha256": "5115e7b7d9520e12f141c41a88ff10efe495db85e3986e458e138e44cd3b971d",
+        "cache_sha256": "4fc850bfdd0dd3bdc553ee7d857b1dffc3a329e24b0058e3a6be7b5ecc4152a9",
+        "runtime_load_verified": false
+      },
+      "hook": {
+        "script": "scripts/gods/thor.gd",
+        "function": "_hammer_returned",
+        "line": 167,
+        "call": "Audio.sfx_or(\"hammer_catch\", \"\", -6.0)",
+        "fallback": "",
+        "volume_db": -6.0,
+        "pitch_range": 0.06,
+        "verification": "literal_source_call_present"
+      }
+    },
+    {
+      "stem": "static_zap_01",
+      "sound_id": "static_zap",
+      "formal_path": "assets/audio/sfx/static_zap_01.wav",
+      "sha256": "bb6e8efed850a0a51112a7178a881f4598afa6502728c6bad8062582f8556968",
+      "checks": {
+        "formal_approved_candidate_hash_match": true,
+        "user_accepted_hash_match": true,
+        "pcm16_mono44100": true,
+        "peak_minus1dbfs": true,
+        "onset_within10ms": true,
+        "zero_boundaries": true,
+        "no_fullscale_samples": true,
+        "quiet_tail": true,
+        "call_entry_exists": true
+      },
+      "duration_seconds": 0.1009297052154195,
+      "peak_dbfs": -1.000151903819357,
+      "onset_ms": 0.022675736961451247,
+      "tail10ms_rms_dbfs": -101.56824519509387,
+      "import": {
+        "exists": true,
+        "source_path_matches": true,
+        "loop_disabled_in_descriptor": true,
+        "normalize_disabled_in_descriptor": true,
+        "imported_cache_exists": true,
+        "descriptor_sha256": "93da738db0de110611aecd1c6e3b6efff2c56cf5e545d13f9fd144cea9da5e66",
+        "cache_sha256": "2ada6206aeaad53da12cd9be9ab426a66c64e0cae68e02c5db82052a94acf5c8",
+        "runtime_load_verified": false
+      },
+      "hook": {
+        "script": "scripts/gods/thor.gd",
+        "function": "_tick_static",
+        "line": 207,
+        "call": "Audio.sfx_or(\"static_zap\", \"\", -8.0)",
+        "fallback": "",
+        "volume_db": -8.0,
+        "pitch_range": 0.06,
+        "verification": "literal_source_call_present"
+      }
+    },
+    {
+      "stem": "static_zap_02",
+      "sound_id": "static_zap",
+      "formal_path": "assets/audio/sfx/static_zap_02.wav",
+      "sha256": "404883b885a2c782cbe58992aa2d8a3774f9c9f00a2594a2692cb3e4346c8c36",
+      "checks": {
+        "formal_approved_candidate_hash_match": true,
+        "user_accepted_hash_match": true,
+        "pcm16_mono44100": true,
+        "peak_minus1dbfs": true,
+        "onset_within10ms": true,
+        "zero_boundaries": true,
+        "no_fullscale_samples": true,
+        "quiet_tail": true,
+        "call_entry_exists": true
+      },
+      "duration_seconds": 0.09947845804988661,
+      "peak_dbfs": -1.000151903819357,
+      "onset_ms": 0.022675736961451247,
+      "tail10ms_rms_dbfs": -97.66853440508625,
+      "import": {
+        "exists": true,
+        "source_path_matches": true,
+        "loop_disabled_in_descriptor": true,
+        "normalize_disabled_in_descriptor": true,
+        "imported_cache_exists": true,
+        "descriptor_sha256": "76d8247f2878b5e51a40e53b3b15a18d4d3360a0a84824c0cc50bce6f6835748",
+        "cache_sha256": "f2507bceef59b34c613254f69d89f47eef008b7dc70b201dd4b440aca3a23acc",
+        "runtime_load_verified": false
+      },
+      "hook": {
+        "script": "scripts/gods/thor.gd",
+        "function": "_tick_static",
+        "line": 207,
+        "call": "Audio.sfx_or(\"static_zap\", \"\", -8.0)",
+        "fallback": "",
+        "volume_db": -8.0,
+        "pitch_range": 0.06,
+        "verification": "literal_source_call_present"
+      }
+    },
+    {
+      "stem": "static_zap_03",
+      "sound_id": "static_zap",
+      "formal_path": "assets/audio/sfx/static_zap_03.wav",
+      "sha256": "dc1505e7fe7fe41c591f27a185ce8177aad38259eea4c4ecb7db1b446c53008d",
+      "checks": {
+        "formal_approved_candidate_hash_match": true,
+        "user_accepted_hash_match": true,
+        "pcm16_mono44100": true,
+        "peak_minus1dbfs": true,
+        "onset_within10ms": true,
+        "zero_boundaries": true,
+        "no_fullscale_samples": true,
+        "quiet_tail": true,
+        "call_entry_exists": true
+      },
+      "duration_seconds": 0.10011337868480726,
+      "peak_dbfs": -1.000151903819357,
+      "onset_ms": 0.045351473922902494,
+      "tail10ms_rms_dbfs": -100.73278468059313,
+      "import": {
+        "exists": true,
+        "source_path_matches": true,
+        "loop_disabled_in_descriptor": true,
+        "normalize_disabled_in_descriptor": true,
+        "imported_cache_exists": true,
+        "descriptor_sha256": "220bd047d9f146ccff65d2d6011f97fad945672c3fc5083d0090be7553ff09e2",
+        "cache_sha256": "f2b9a9a5ff121e27e4ef5782f5fcc8ed6df1e2b0626c612c8f6ad60b074ba6d9",
+        "runtime_load_verified": false
+      },
+      "hook": {
+        "script": "scripts/gods/thor.gd",
+        "function": "_tick_static",
+        "line": 207,
+        "call": "Audio.sfx_or(\"static_zap\", \"\", -8.0)",
+        "fallback": "",
+        "volume_db": -8.0,
+        "pitch_range": 0.06,
+        "verification": "literal_source_call_present"
+      }
+    },
+    {
+      "stem": "spear_throw",
+      "sound_id": "spear_throw",
+      "formal_path": "assets/audio/sfx/spear_throw.wav",
+      "sha256": "13801c6d3c4a91599b083a0af81f742e6dfde3b50f37057c93570fbb14cc47a0",
+      "checks": {
+        "formal_approved_candidate_hash_match": true,
+        "user_accepted_hash_match": true,
+        "pcm16_mono44100": true,
+        "peak_minus1dbfs": true,
+        "onset_within10ms": true,
+        "zero_boundaries": true,
+        "no_fullscale_samples": true,
+        "quiet_tail": true,
+        "call_entry_exists": true
+      },
+      "duration_seconds": 0.22784580498866214,
+      "peak_dbfs": -1.000151903819357,
+      "onset_ms": 0.045351473922902494,
+      "tail10ms_rms_dbfs": -96.62501234682102,
+      "import": {
+        "exists": true,
+        "source_path_matches": true,
+        "loop_disabled_in_descriptor": true,
+        "normalize_disabled_in_descriptor": true,
+        "imported_cache_exists": true,
+        "descriptor_sha256": "1ad98e7eee29a4ce82c09b24683c68e39beea1aa7412e10201a22690b892764d",
+        "cache_sha256": "9f81d2329ee112ae4c2738c58f7045e32dae7dba159556a67d60f58ba10ba38f",
+        "runtime_load_verified": false
+      },
+      "hook": {
+        "script": "scripts/gods/odin.gd",
+        "function": "_throw_spears",
+        "line": 78,
+        "call": "Audio.sfx_or(\"spear_throw\", \"rune_bolt\", 2.0)",
+        "fallback": "rune_bolt",
+        "volume_db": 2.0,
+        "pitch_range": 0.06,
+        "verification": "literal_source_call_present"
+      }
+    },
+    {
+      "stem": "rune_detonate_01",
+      "sound_id": "rune_detonate",
+      "formal_path": "assets/audio/sfx/rune_detonate_01.wav",
+      "sha256": "c3e1f4ec60b4903143406c5bbd074f5a3fa0113e36ad7789628503c7fbb63fe5",
+      "checks": {
+        "formal_approved_candidate_hash_match": true,
+        "user_accepted_hash_match": true,
+        "pcm16_mono44100": true,
+        "peak_minus1dbfs": true,
+        "onset_within10ms": true,
+        "zero_boundaries": true,
+        "no_fullscale_samples": true,
+        "quiet_tail": true,
+        "call_entry_exists": true
+      },
+      "duration_seconds": 0.21927437641723355,
+      "peak_dbfs": -1.000151903819357,
+      "onset_ms": 0.022675736961451247,
+      "tail10ms_rms_dbfs": -98.06106739656299,
+      "import": {
+        "exists": true,
+        "source_path_matches": true,
+        "loop_disabled_in_descriptor": true,
+        "normalize_disabled_in_descriptor": true,
+        "imported_cache_exists": true,
+        "descriptor_sha256": "125d2f48cc16f81f117f37d281e5e8ce9cbdca1f4973423049c83c25df6335b6",
+        "cache_sha256": "f13b532eb4849ac313af96e12fe227f70d6c4d3991dc818967bc5841ecd58a05",
+        "runtime_load_verified": false
+      },
+      "hook": {
+        "script": "scripts/gods/odin.gd",
+        "function": "detonate",
+        "line": 151,
+        "call": "Audio.sfx_or(\"rune_detonate\", \"\", -6.0)",
+        "fallback": "",
+        "volume_db": -6.0,
+        "pitch_range": 0.06,
+        "verification": "literal_source_call_present"
+      }
+    },
+    {
+      "stem": "rune_detonate_02",
+      "sound_id": "rune_detonate",
+      "formal_path": "assets/audio/sfx/rune_detonate_02.wav",
+      "sha256": "c2c581505fa78d1da752de3e72d4b82d9202cce7986d469408ac19a0668f9c57",
+      "checks": {
+        "formal_approved_candidate_hash_match": true,
+        "user_accepted_hash_match": true,
+        "pcm16_mono44100": true,
+        "peak_minus1dbfs": true,
+        "onset_within10ms": true,
+        "zero_boundaries": true,
+        "no_fullscale_samples": true,
+        "quiet_tail": true,
+        "call_entry_exists": true
+      },
+      "duration_seconds": 0.2194331065759637,
+      "peak_dbfs": -1.000151903819357,
+      "onset_ms": 0.022675736961451247,
+      "tail10ms_rms_dbfs": -98.75997909933693,
+      "import": {
+        "exists": true,
+        "source_path_matches": true,
+        "loop_disabled_in_descriptor": true,
+        "normalize_disabled_in_descriptor": true,
+        "imported_cache_exists": true,
+        "descriptor_sha256": "5a63c71c06dc458c49a4df45462bb327ae94a3c93bd2aab391098e71babc63f0",
+        "cache_sha256": "32085487d1fd6e0071c3d1d2f67b6c2421755fba0427011f2d4cd93294f744dd",
+        "runtime_load_verified": false
+      },
+      "hook": {
+        "script": "scripts/gods/odin.gd",
+        "function": "detonate",
+        "line": 151,
+        "call": "Audio.sfx_or(\"rune_detonate\", \"\", -6.0)",
+        "fallback": "",
+        "volume_db": -6.0,
+        "pitch_range": 0.06,
+        "verification": "literal_source_call_present"
+      }
+    },
+    {
+      "stem": "rune_detonate_03",
+      "sound_id": "rune_detonate",
+      "formal_path": "assets/audio/sfx/rune_detonate_03.wav",
+      "sha256": "1ff259997decb54aeb9b9525e6660b14a93f98242a821d7ac29daf1cd7510aab",
+      "checks": {
+        "formal_approved_candidate_hash_match": true,
+        "user_accepted_hash_match": true,
+        "pcm16_mono44100": true,
+        "peak_minus1dbfs": true,
+        "onset_within10ms": true,
+        "zero_boundaries": true,
+        "no_fullscale_samples": true,
+        "quiet_tail": true,
+        "call_entry_exists": true
+      },
+      "duration_seconds": 0.2194784580498866,
+      "peak_dbfs": -1.000151903819357,
+      "onset_ms": 0.022675736961451247,
+      "tail10ms_rms_dbfs": -105.61395107080438,
+      "import": {
+        "exists": true,
+        "source_path_matches": true,
+        "loop_disabled_in_descriptor": true,
+        "normalize_disabled_in_descriptor": true,
+        "imported_cache_exists": true,
+        "descriptor_sha256": "81b8db735b3367c5592c12fe3cf767b980f0e38d5a5217aa46c0cceceab976b8",
+        "cache_sha256": "6f8620a4cd542ab4bd75ed3da1017109498620691415b059590eec3ab46db900",
+        "runtime_load_verified": false
+      },
+      "hook": {
+        "script": "scripts/gods/odin.gd",
+        "function": "detonate",
+        "line": 151,
+        "call": "Audio.sfx_or(\"rune_detonate\", \"\", -6.0)",
+        "fallback": "",
+        "volume_db": -6.0,
+        "pitch_range": 0.06,
+        "verification": "literal_source_call_present"
+      }
+    },
+    {
+      "stem": "raven_dive",
+      "sound_id": "raven_dive",
+      "formal_path": "assets/audio/sfx/raven_dive.wav",
+      "sha256": "e101a07690a31923b9f41f99d140f06031fcc2c98ab3fa9df1949e9c59839807",
+      "checks": {
+        "formal_approved_candidate_hash_match": true,
+        "user_accepted_hash_match": true,
+        "pcm16_mono44100": true,
+        "peak_minus1dbfs": true,
+        "onset_within10ms": true,
+        "zero_boundaries": true,
+        "no_fullscale_samples": true,
+        "quiet_tail": true,
+        "call_entry_exists": true
+      },
+      "duration_seconds": 0.23820861678004535,
+      "peak_dbfs": -1.000151903819357,
+      "onset_ms": 0.022675736961451247,
+      "tail10ms_rms_dbfs": -107.2109594994795,
+      "import": {
+        "exists": true,
+        "source_path_matches": true,
+        "loop_disabled_in_descriptor": true,
+        "normalize_disabled_in_descriptor": true,
+        "imported_cache_exists": true,
+        "descriptor_sha256": "8cef4fa137d1422b8e0aa08f994d2c99a1f301a7baa3012bfa4d7765691277b0",
+        "cache_sha256": "b138a98515614c814c96967272cbc05d987328bc65a00bcc341bfa1a0b8b09d4",
+        "runtime_load_verified": false
+      },
+      "hook": {
+        "script": "scripts/gods/odin.gd",
+        "function": "_tick_ravens",
+        "line": 222,
+        "call": "Audio.sfx_or(\"raven_dive\", \"\", -6.0)",
+        "fallback": "",
+        "volume_db": -6.0,
+        "pitch_range": 0.06,
+        "verification": "literal_source_call_present"
+      }
+    },
+    {
+      "stem": "wolf_bite_01",
+      "sound_id": "wolf_bite",
+      "formal_path": "assets/audio/sfx/wolf_bite_01.wav",
+      "sha256": "39414e352bf50ef024738b0b982b1fa773f2c68947e4255ac099f63a4beb7d32",
+      "checks": {
+        "formal_approved_candidate_hash_match": true,
+        "user_accepted_hash_match": true,
+        "pcm16_mono44100": true,
+        "peak_minus1dbfs": true,
+        "onset_within10ms": true,
+        "zero_boundaries": true,
+        "no_fullscale_samples": true,
+        "quiet_tail": true,
+        "call_entry_exists": true
+      },
+      "duration_seconds": 0.18868480725623582,
+      "peak_dbfs": -1.000151903819357,
+      "onset_ms": 0.06802721088435373,
+      "tail10ms_rms_dbfs": -100.73278468059313,
+      "import": {
+        "exists": true,
+        "source_path_matches": true,
+        "loop_disabled_in_descriptor": true,
+        "normalize_disabled_in_descriptor": true,
+        "imported_cache_exists": true,
+        "descriptor_sha256": "9001795cef196fda4ef4552c5a012beec562dfe1a41cf5d87209a9ac3c51abce",
+        "cache_sha256": "06a2bb54ce191126407111ff6b9189b38d242e1d083ba56d4bc912f659aa0ada",
+        "runtime_load_verified": false
+      },
+      "hook": {
+        "script": "scripts/gods/loki.gd",
+        "function": "_tick_wolf",
+        "line": 130,
+        "call": "Audio.sfx_or(\"wolf_bite\", \"fire_burn\", -4.0)",
+        "fallback": "fire_burn",
+        "volume_db": -4.0,
+        "pitch_range": 0.06,
+        "verification": "literal_source_call_present"
+      }
+    },
+    {
+      "stem": "wolf_bite_02",
+      "sound_id": "wolf_bite",
+      "formal_path": "assets/audio/sfx/wolf_bite_02.wav",
+      "sha256": "260c6afacf45f589819a69fdb2131e51188a5a4d2f02f45d8ce8ee6b7739aee0",
+      "checks": {
+        "formal_approved_candidate_hash_match": true,
+        "user_accepted_hash_match": true,
+        "pcm16_mono44100": true,
+        "peak_minus1dbfs": true,
+        "onset_within10ms": true,
+        "zero_boundaries": true,
+        "no_fullscale_samples": true,
+        "quiet_tail": true,
+        "call_entry_exists": true
+      },
+      "duration_seconds": 0.18852607709750566,
+      "peak_dbfs": -1.000151903819357,
+      "onset_ms": 0.11337868480725624,
+      "tail10ms_rms_dbfs": -101.31270415037,
+      "import": {
+        "exists": true,
+        "source_path_matches": true,
+        "loop_disabled_in_descriptor": true,
+        "normalize_disabled_in_descriptor": true,
+        "imported_cache_exists": true,
+        "descriptor_sha256": "081602724864cf70a1b8b55f3806592f770c9623973f15771e81be8fbfcf4d35",
+        "cache_sha256": "564a36f27ed8fee6410e5dc1b37d948138d434edabfdba850f3a59982df1229e",
+        "runtime_load_verified": false
+      },
+      "hook": {
+        "script": "scripts/gods/loki.gd",
+        "function": "_tick_wolf",
+        "line": 130,
+        "call": "Audio.sfx_or(\"wolf_bite\", \"fire_burn\", -4.0)",
+        "fallback": "fire_burn",
+        "volume_db": -4.0,
+        "pitch_range": 0.06,
+        "verification": "literal_source_call_present"
+      }
+    },
+    {
+      "stem": "wolf_bite_03",
+      "sound_id": "wolf_bite",
+      "formal_path": "assets/audio/sfx/wolf_bite_03.wav",
+      "sha256": "e45acf429ff2ca2d35b2bd4d3226c78d165c22372cc759973b57f33ec34f868b",
+      "checks": {
+        "formal_approved_candidate_hash_match": true,
+        "user_accepted_hash_match": true,
+        "pcm16_mono44100": true,
+        "peak_minus1dbfs": true,
+        "onset_within10ms": true,
+        "zero_boundaries": true,
+        "no_fullscale_samples": true,
+        "quiet_tail": true,
+        "call_entry_exists": true
+      },
+      "duration_seconds": 0.18845804988662132,
+      "peak_dbfs": -1.000151903819357,
+      "onset_ms": 0.022675736961451247,
+      "tail10ms_rms_dbfs": -100.73278468059313,
+      "import": {
+        "exists": true,
+        "source_path_matches": true,
+        "loop_disabled_in_descriptor": true,
+        "normalize_disabled_in_descriptor": true,
+        "imported_cache_exists": true,
+        "descriptor_sha256": "7083d3b00bfeb0bf2fcff1573749224cca0dd9baa8f9fc3f5c98f55ebb004313",
+        "cache_sha256": "15dd69dd253ad0316d49398184061b72424a4081ec716c5cdc34a472823a63e1",
+        "runtime_load_verified": false
+      },
+      "hook": {
+        "script": "scripts/gods/loki.gd",
+        "function": "_tick_wolf",
+        "line": 130,
+        "call": "Audio.sfx_or(\"wolf_bite\", \"fire_burn\", -4.0)",
+        "fallback": "fire_burn",
+        "volume_db": -4.0,
+        "pitch_range": 0.06,
+        "verification": "literal_source_call_present"
+      }
+    },
+    {
+      "stem": "wolf_breath",
+      "sound_id": "wolf_breath",
+      "formal_path": "assets/audio/sfx/wolf_breath.wav",
+      "sha256": "e4b63a02d30565f8966941ae6c5a4a31855c5a0f5f792ca2a0818620b060407a",
+      "checks": {
+        "formal_approved_candidate_hash_match": true,
+        "user_accepted_hash_match": true,
+        "pcm16_mono44100": true,
+        "peak_minus1dbfs": true,
+        "onset_within10ms": true,
+        "zero_boundaries": true,
+        "no_fullscale_samples": true,
+        "quiet_tail": true,
+        "call_entry_exists": true
+      },
+      "duration_seconds": 0.6521541950113379,
+      "peak_dbfs": -1.000151903819357,
+      "onset_ms": 0.06802721088435373,
+      "tail10ms_rms_dbfs": -240.0,
+      "import": {
+        "exists": true,
+        "source_path_matches": true,
+        "loop_disabled_in_descriptor": true,
+        "normalize_disabled_in_descriptor": true,
+        "imported_cache_exists": true,
+        "descriptor_sha256": "3ba4be910b4c3018912d741a05c9603ab334937566bcc90e652dbd7a44482b05",
+        "cache_sha256": "828eedf7a3cfac7d71d6665d903b40f8b01bb4dbd222ce98c665ea82620c1a93",
+        "runtime_load_verified": false
+      },
+      "hook": {
+        "script": "scripts/gods/loki.gd",
+        "function": "_tick_wolf",
+        "line": 145,
+        "call": "Audio.sfx_or(\"wolf_breath\", \"fire_burn\", 2.0)",
+        "fallback": "fire_burn",
+        "volume_db": 2.0,
+        "pitch_range": 0.06,
+        "verification": "literal_source_call_present"
+      }
+    },
+    {
+      "stem": "decoy_spawn",
+      "sound_id": "decoy_spawn",
+      "formal_path": "assets/audio/sfx/decoy_spawn.wav",
+      "sha256": "0fb43a5503b1f3f46780565f254fed255205637158e80ddbf6af48650dfaaef6",
+      "checks": {
+        "formal_approved_candidate_hash_match": true,
+        "user_accepted_hash_match": true,
+        "pcm16_mono44100": true,
+        "peak_minus1dbfs": true,
+        "onset_within10ms": true,
+        "zero_boundaries": true,
+        "no_fullscale_samples": true,
+        "quiet_tail": true,
+        "call_entry_exists": true
+      },
+      "duration_seconds": 0.31884353741496596,
+      "peak_dbfs": -1.000151903819357,
+      "onset_ms": 0.022675736961451247,
+      "tail10ms_rms_dbfs": -95.99791497994744,
+      "import": {
+        "exists": true,
+        "source_path_matches": true,
+        "loop_disabled_in_descriptor": true,
+        "normalize_disabled_in_descriptor": true,
+        "imported_cache_exists": true,
+        "descriptor_sha256": "80acfcb313e1ad409205923814ab16131af43e05fb0f228c506520b2de03e28d",
+        "cache_sha256": "b175eabab76ac1ca5e446a5d89ccbffa9cdbdbedaabc09b30913e4251b7191da",
+        "runtime_load_verified": false
+      },
+      "hook": {
+        "script": "scripts/gods/loki.gd",
+        "function": "_spawn_decoy",
+        "line": 177,
+        "call": "Audio.sfx_or(\"decoy_spawn\", \"fire_burn\")",
+        "fallback": "fire_burn",
+        "volume_db": 0.0,
+        "pitch_range": 0.06,
+        "verification": "literal_source_call_present"
+      }
+    },
+    {
+      "stem": "feather_launch",
+      "sound_id": "feather_launch",
+      "formal_path": "assets/audio/sfx/feather_launch.wav",
+      "sha256": "fbf09c6cc53ede916c524cbf39949487a9632e6ccf6673e0b6e581964c2cf19e",
+      "checks": {
+        "formal_approved_candidate_hash_match": true,
+        "user_accepted_hash_match": true,
+        "pcm16_mono44100": true,
+        "peak_minus1dbfs": true,
+        "onset_within10ms": true,
+        "zero_boundaries": true,
+        "no_fullscale_samples": true,
+        "quiet_tail": true,
+        "call_entry_exists": true
+      },
+      "duration_seconds": 0.23868480725623584,
+      "peak_dbfs": -1.000151903819357,
+      "onset_ms": 0.022675736961451247,
+      "tail10ms_rms_dbfs": -97.94524867106483,
+      "import": {
+        "exists": true,
+        "source_path_matches": true,
+        "loop_disabled_in_descriptor": true,
+        "normalize_disabled_in_descriptor": true,
+        "imported_cache_exists": true,
+        "descriptor_sha256": "db865ad9711aa8b59f40bfb40547c5701780a127745d516abb94801d13b829e4",
+        "cache_sha256": "3955b1d30e657e8cd58bf4f7f379c87587c3dab11e142444c1666145f085f76a",
+        "runtime_load_verified": false
+      },
+      "hook": {
+        "script": "scripts/gods/freyja.gd",
+        "function": "_tick_hawk",
+        "line": 145,
+        "call": "Audio.sfx_or(\"feather_launch\", \"feather_hit\")",
+        "fallback": "feather_hit",
+        "volume_db": 0.0,
+        "pitch_range": 0.06,
+        "verification": "literal_source_call_present"
+      }
+    },
+    {
+      "stem": "cat_pounce_01",
+      "sound_id": "cat_pounce",
+      "formal_path": "assets/audio/sfx/cat_pounce_01.wav",
+      "sha256": "8d9b199624bc4f5f2b3e5d97e17721bf0ea4edd0ad049fcd04d56b1619cb693c",
+      "checks": {
+        "formal_approved_candidate_hash_match": true,
+        "user_accepted_hash_match": true,
+        "pcm16_mono44100": true,
+        "peak_minus1dbfs": true,
+        "onset_within10ms": true,
+        "zero_boundaries": true,
+        "no_fullscale_samples": true,
+        "quiet_tail": true,
+        "call_entry_exists": true
+      },
+      "duration_seconds": 0.17918367346938777,
+      "peak_dbfs": -1.000151903819357,
+      "onset_ms": 0.09070294784580499,
+      "tail10ms_rms_dbfs": -88.99364128257906,
+      "import": {
+        "exists": true,
+        "source_path_matches": true,
+        "loop_disabled_in_descriptor": true,
+        "normalize_disabled_in_descriptor": true,
+        "imported_cache_exists": true,
+        "descriptor_sha256": "382422c02bf993d5b787272fa02cb729e2bed3912ce8b28028490f62ddc4345f",
+        "cache_sha256": "c04d332b427146b560f0fc9c40e3a5eff34141011529cf9375d9fce7b17ef91b",
+        "runtime_load_verified": false
+      },
+      "hook": {
+        "script": "scripts/gods/freyja.gd",
+        "function": "_tick_cats",
+        "line": 239,
+        "call": "Audio.sfx_or(\"cat_pounce\", \"feather_hit\", -4.0)",
+        "fallback": "feather_hit",
+        "volume_db": -4.0,
+        "pitch_range": 0.06,
+        "verification": "literal_source_call_present"
+      }
+    },
+    {
+      "stem": "cat_pounce_02",
+      "sound_id": "cat_pounce",
+      "formal_path": "assets/audio/sfx/cat_pounce_02.wav",
+      "sha256": "d02b3ccbd2b62e98ef7d833fa465de8f4553a70cce4d270b6227373c9f24e5b7",
+      "checks": {
+        "formal_approved_candidate_hash_match": true,
+        "user_accepted_hash_match": true,
+        "pcm16_mono44100": true,
+        "peak_minus1dbfs": true,
+        "onset_within10ms": true,
+        "zero_boundaries": true,
+        "no_fullscale_samples": true,
+        "quiet_tail": true,
+        "call_entry_exists": true
+      },
+      "duration_seconds": 0.179297052154195,
+      "peak_dbfs": -1.000151903819357,
+      "onset_ms": 0.045351473922902494,
+      "tail10ms_rms_dbfs": -87.2109594994795,
+      "import": {
+        "exists": true,
+        "source_path_matches": true,
+        "loop_disabled_in_descriptor": true,
+        "normalize_disabled_in_descriptor": true,
+        "imported_cache_exists": true,
+        "descriptor_sha256": "362886e40d39ef2c0bf066cbcd9fd4cfb4e175c459ae199ffcee434313899157",
+        "cache_sha256": "69f14cae871d1e98ae936f9771d2f23c89d5e23d085f17b7f0afcb3fdfab4fa6",
+        "runtime_load_verified": false
+      },
+      "hook": {
+        "script": "scripts/gods/freyja.gd",
+        "function": "_tick_cats",
+        "line": 239,
+        "call": "Audio.sfx_or(\"cat_pounce\", \"feather_hit\", -4.0)",
+        "fallback": "feather_hit",
+        "volume_db": -4.0,
+        "pitch_range": 0.06,
+        "verification": "literal_source_call_present"
+      }
+    },
+    {
+      "stem": "cat_pounce_03",
+      "sound_id": "cat_pounce",
+      "formal_path": "assets/audio/sfx/cat_pounce_03.wav",
+      "sha256": "2767c3c88a9e6646c713ebfae2851d67f6c9df1c3c4b100a5de27e90557629ae",
+      "checks": {
+        "formal_approved_candidate_hash_match": true,
+        "user_accepted_hash_match": true,
+        "pcm16_mono44100": true,
+        "peak_minus1dbfs": true,
+        "onset_within10ms": true,
+        "zero_boundaries": true,
+        "no_fullscale_samples": true,
+        "quiet_tail": true,
+        "call_entry_exists": true
+      },
+      "duration_seconds": 0.17900226757369614,
+      "peak_dbfs": -1.000151903819357,
+      "onset_ms": 0.06802721088435373,
+      "tail10ms_rms_dbfs": -92.8264150612761,
+      "import": {
+        "exists": true,
+        "source_path_matches": true,
+        "loop_disabled_in_descriptor": true,
+        "normalize_disabled_in_descriptor": true,
+        "imported_cache_exists": true,
+        "descriptor_sha256": "9c777882ab005b7b83dccf4b6033b64ee1c114c28bb3bbff808aada078805075",
+        "cache_sha256": "618b3c4e553e5f7aa85fcff95dea7a1b85f06e3c5f5387227cd5f4e4c0fa2b9a",
+        "runtime_load_verified": false
+      },
+      "hook": {
+        "script": "scripts/gods/freyja.gd",
+        "function": "_tick_cats",
+        "line": 239,
+        "call": "Audio.sfx_or(\"cat_pounce\", \"feather_hit\", -4.0)",
+        "fallback": "feather_hit",
+        "volume_db": -4.0,
+        "pitch_range": 0.06,
+        "verification": "literal_source_call_present"
+      }
+    },
+    {
+      "stem": "chariot_charge",
+      "sound_id": "chariot_charge",
+      "formal_path": "assets/audio/sfx/chariot_charge.wav",
+      "sha256": "acce97a5fe7b36f4bec0059ddd66d9de9569bea350d936d8ef6f1a2ab8b85b5f",
+      "checks": {
+        "formal_approved_candidate_hash_match": true,
+        "user_accepted_hash_match": true,
+        "pcm16_mono44100": true,
+        "peak_minus1dbfs": true,
+        "onset_within10ms": true,
+        "zero_boundaries": true,
+        "no_fullscale_samples": true,
+        "quiet_tail": true,
+        "call_entry_exists": true
+      },
+      "duration_seconds": 0.6468934240362811,
+      "peak_dbfs": -1.000151903819357,
+      "onset_ms": 0.045351473922902494,
+      "tail10ms_rms_dbfs": -100.6255460266754,
+      "import": {
+        "exists": true,
+        "source_path_matches": true,
+        "loop_disabled_in_descriptor": true,
+        "normalize_disabled_in_descriptor": true,
+        "imported_cache_exists": true,
+        "descriptor_sha256": "ad1146c9ad307ea0096349063dfe325f40362b12e623239130f46f128fe7cafb",
+        "cache_sha256": "3da84acb34212b3533b811cf4c11d9cbcd5dbe1a286759cf2f5d77cdd9186bf6",
+        "runtime_load_verified": false
+      },
+      "hook": {
+        "script": "scripts/gods/freyja.gd",
+        "function": "_tick_chariot",
+        "line": 253,
+        "call": "Audio.sfx_or(\"chariot_charge\", \"dash\", 2.0)",
+        "fallback": "dash",
+        "volume_db": 2.0,
+        "pitch_range": 0.06,
+        "verification": "literal_source_call_present"
+      }
+    },
+    {
+      "stem": "light_beam",
+      "sound_id": "light_beam",
+      "formal_path": "assets/audio/sfx/light_beam.wav",
+      "sha256": "f5a66a0568f3c7a81f2503577d0d45cea4863dfc7949400c8865125ebb8deb7e",
+      "checks": {
+        "formal_approved_candidate_hash_match": true,
+        "user_accepted_hash_match": true,
+        "pcm16_mono44100": true,
+        "peak_minus1dbfs": true,
+        "onset_within10ms": true,
+        "zero_boundaries": true,
+        "no_fullscale_samples": true,
+        "quiet_tail": true,
+        "call_entry_exists": true
+      },
+      "duration_seconds": 0.3589342403628118,
+      "peak_dbfs": -1.000151903819357,
+      "onset_ms": 0.06802721088435373,
+      "tail10ms_rms_dbfs": -240.0,
+      "import": {
+        "exists": true,
+        "source_path_matches": true,
+        "loop_disabled_in_descriptor": true,
+        "normalize_disabled_in_descriptor": true,
+        "imported_cache_exists": true,
+        "descriptor_sha256": "87417c729073d4e63458761d17a45991439aa408d7c582e32b3de803d4877bb3",
+        "cache_sha256": "c52fdca443b6e06c9b6087a720f89258b361949e9ba1467649b8a53067e7b262",
+        "runtime_load_verified": false
+      },
+      "hook": {
+        "script": "scripts/gods/baldr.gd",
+        "function": "tick",
+        "line": 76,
+        "call": "Audio.sfx_or(\"light_beam\", \"rune_bolt\", -2.0)",
+        "fallback": "rune_bolt",
+        "volume_db": -2.0,
+        "pitch_range": 0.06,
+        "verification": "literal_source_call_present"
+      }
+    },
+    {
+      "stem": "light_spear",
+      "sound_id": "light_spear",
+      "formal_path": "assets/audio/sfx/light_spear.wav",
+      "sha256": "4d85f7e1943ccede4f3333c65d6b49c8125b9f0275f865954043158f8b2a0690",
+      "checks": {
+        "formal_approved_candidate_hash_match": true,
+        "user_accepted_hash_match": true,
+        "pcm16_mono44100": true,
+        "peak_minus1dbfs": true,
+        "onset_within10ms": true,
+        "zero_boundaries": true,
+        "no_fullscale_samples": true,
+        "quiet_tail": true,
+        "call_entry_exists": true
+      },
+      "duration_seconds": 0.23947845804988663,
+      "peak_dbfs": -1.000151903819357,
+      "onset_ms": 0.06802721088435373,
+      "tail10ms_rms_dbfs": -102.12940461488317,
+      "import": {
+        "exists": true,
+        "source_path_matches": true,
+        "loop_disabled_in_descriptor": true,
+        "normalize_disabled_in_descriptor": true,
+        "imported_cache_exists": true,
+        "descriptor_sha256": "01a5a974b3c1298794d0a2bc6a4af3eb13caca036c74f0fe58c063adc262e6d2",
+        "cache_sha256": "d4484b95459d718c18d88d058dd8dbd88db8c997dacf6a2e65d9d13ca02056e3",
+        "runtime_load_verified": false
+      },
+      "hook": {
+        "script": "scripts/gods/baldr.gd",
+        "function": "tick",
+        "line": 64,
+        "call": "Audio.sfx_or(\"light_spear\", \"rune_bolt\", 2.0)",
+        "fallback": "rune_bolt",
+        "volume_db": 2.0,
+        "pitch_range": 0.06,
+        "verification": "literal_source_call_present"
+      }
+    },
+    {
+      "stem": "light_burst_01",
+      "sound_id": "light_burst",
+      "formal_path": "assets/audio/sfx/light_burst_01.wav",
+      "sha256": "df05011e41a9b110952fa26353b7ced99bd488598df0fab4d2df743df44a023b",
+      "checks": {
+        "formal_approved_candidate_hash_match": true,
+        "user_accepted_hash_match": true,
+        "pcm16_mono44100": true,
+        "peak_minus1dbfs": true,
+        "onset_within10ms": true,
+        "zero_boundaries": true,
+        "no_fullscale_samples": true,
+        "quiet_tail": true,
+        "call_entry_exists": true
+      },
+      "duration_seconds": 0.15496598639455783,
+      "peak_dbfs": -1.000151903819357,
+      "onset_ms": 0.045351473922902494,
+      "tail10ms_rms_dbfs": -108.97187209003631,
+      "import": {
+        "exists": true,
+        "source_path_matches": true,
+        "loop_disabled_in_descriptor": true,
+        "normalize_disabled_in_descriptor": true,
+        "imported_cache_exists": true,
+        "descriptor_sha256": "f2f123728cc4813d6b4991c9272d428f8d3ae3d553b11bfa7721dfeafef32306",
+        "cache_sha256": "ae5d163e07754bda6f2201ca2f2a46d7c71f353dd66f6e6259e73ad0f948e496",
+        "runtime_load_verified": false
+      },
+      "hook": {
+        "script": "scripts/gods/baldr.gd",
+        "function": "_light_burst",
+        "line": 156,
+        "call": "Audio.sfx_or(\"light_burst\", \"\", -10.0)",
+        "fallback": "",
+        "volume_db": -10.0,
+        "pitch_range": 0.06,
+        "verification": "literal_source_call_present"
+      }
+    },
+    {
+      "stem": "light_burst_02",
+      "sound_id": "light_burst",
+      "formal_path": "assets/audio/sfx/light_burst_02.wav",
+      "sha256": "7ca4ea609960e40166d873908c28f8042992f25d7c5f705db8b0d26fe01e6068",
+      "checks": {
+        "formal_approved_candidate_hash_match": true,
+        "user_accepted_hash_match": true,
+        "pcm16_mono44100": true,
+        "peak_minus1dbfs": true,
+        "onset_within10ms": true,
+        "zero_boundaries": true,
+        "no_fullscale_samples": true,
+        "quiet_tail": true,
+        "call_entry_exists": true
+      },
+      "duration_seconds": 0.15487528344671203,
+      "peak_dbfs": -1.000151903819357,
+      "onset_ms": 0.045351473922902494,
+      "tail10ms_rms_dbfs": -113.74308463723294,
+      "import": {
+        "exists": true,
+        "source_path_matches": true,
+        "loop_disabled_in_descriptor": true,
+        "normalize_disabled_in_descriptor": true,
+        "imported_cache_exists": true,
+        "descriptor_sha256": "a72e4842db6ab96e74e0b84c70114b9a7d4b8487723c988dd92749276530954b",
+        "cache_sha256": "eb6cf41b6eae65963626c611bc028ae936a7602a2c5bf5112ca47f7294aff204",
+        "runtime_load_verified": false
+      },
+      "hook": {
+        "script": "scripts/gods/baldr.gd",
+        "function": "_light_burst",
+        "line": 156,
+        "call": "Audio.sfx_or(\"light_burst\", \"\", -10.0)",
+        "fallback": "",
+        "volume_db": -10.0,
+        "pitch_range": 0.06,
+        "verification": "literal_source_call_present"
+      }
+    },
+    {
+      "stem": "light_burst_03",
+      "sound_id": "light_burst",
+      "formal_path": "assets/audio/sfx/light_burst_03.wav",
+      "sha256": "4b887a7bd87dd3b9415ebfd3effeb11c0bf86211e04d4cc2b66793bd7733828a",
+      "checks": {
+        "formal_approved_candidate_hash_match": true,
+        "user_accepted_hash_match": true,
+        "pcm16_mono44100": true,
+        "peak_minus1dbfs": true,
+        "onset_within10ms": true,
+        "zero_boundaries": true,
+        "no_fullscale_samples": true,
+        "quiet_tail": true,
+        "call_entry_exists": true
+      },
+      "duration_seconds": 0.15537414965986396,
+      "peak_dbfs": -1.000151903819357,
+      "onset_ms": 0.045351473922902494,
+      "tail10ms_rms_dbfs": -116.75338459387275,
+      "import": {
+        "exists": true,
+        "source_path_matches": true,
+        "loop_disabled_in_descriptor": true,
+        "normalize_disabled_in_descriptor": true,
+        "imported_cache_exists": true,
+        "descriptor_sha256": "0e123057a81b3aff2c51a80efc184dca2f448819e1ba5c82fc8e30116005a596",
+        "cache_sha256": "25c206d78c03dd3b29dbd2be23adc4420ee8983736bc9f912926781e25335a4e",
+        "runtime_load_verified": false
+      },
+      "hook": {
+        "script": "scripts/gods/baldr.gd",
+        "function": "_light_burst",
+        "line": 156,
+        "call": "Audio.sfx_or(\"light_burst\", \"\", -10.0)",
+        "fallback": "",
+        "volume_db": -10.0,
+        "pitch_range": 0.06,
+        "verification": "literal_source_call_present"
+      }
+    },
+    {
+      "stem": "light_flash",
+      "sound_id": "light_flash",
+      "formal_path": "assets/audio/sfx/light_flash.wav",
+      "sha256": "60a9fbd252f45a0f068e8ae99bc5167a5e2552061571c3bd3aeca773cabb925d",
+      "checks": {
+        "formal_approved_candidate_hash_match": true,
+        "user_accepted_hash_match": true,
+        "pcm16_mono44100": true,
+        "peak_minus1dbfs": true,
+        "onset_within10ms": true,
+        "zero_boundaries": true,
+        "no_fullscale_samples": true,
+        "quiet_tail": true,
+        "call_entry_exists": true
+      },
+      "duration_seconds": 0.7166666666666667,
+      "peak_dbfs": -1.000151903819357,
+      "onset_ms": 0.06802721088435373,
+      "tail10ms_rms_dbfs": -240.0,
+      "import": {
+        "exists": true,
+        "source_path_matches": true,
+        "loop_disabled_in_descriptor": true,
+        "normalize_disabled_in_descriptor": true,
+        "imported_cache_exists": true,
+        "descriptor_sha256": "c0a0852b6eab8598b59fefa91d024ebab95c83ff9389bc011bee8f75ea733185",
+        "cache_sha256": "26ff2247a30bc67ce42fbf29c66a40f9e919a6e5f616613c6fceff499ef3d862",
+        "runtime_load_verified": false
+      },
+      "hook": {
+        "script": "scripts/gods/baldr.gd",
+        "function": "tick",
+        "line": 87,
+        "call": "Audio.sfx_or(\"light_flash\", \"level_up\")",
+        "fallback": "level_up",
+        "volume_db": 0.0,
+        "pitch_range": 0.06,
+        "verification": "literal_source_call_present"
+      }
+    },
+    {
+      "stem": "net_throw",
+      "sound_id": "net_throw",
+      "formal_path": "assets/audio/sfx/net_throw.wav",
+      "sha256": "fae6259d325b9cbf474f133055d0c23a3dd7a2be9c9eff840808734e91279953",
+      "checks": {
+        "formal_approved_candidate_hash_match": true,
+        "user_accepted_hash_match": true,
+        "pcm16_mono44100": true,
+        "peak_minus1dbfs": true,
+        "onset_within10ms": true,
+        "zero_boundaries": true,
+        "no_fullscale_samples": true,
+        "quiet_tail": true,
+        "call_entry_exists": true
+      },
+      "duration_seconds": 0.3080952380952381,
+      "peak_dbfs": -1.000151903819357,
+      "onset_ms": 0.045351473922902494,
+      "tail10ms_rms_dbfs": -240.0,
+      "import": {
+        "exists": true,
+        "source_path_matches": true,
+        "loop_disabled_in_descriptor": true,
+        "normalize_disabled_in_descriptor": true,
+        "imported_cache_exists": true,
+        "descriptor_sha256": "5055980a738232e0b3345d03e2d158c095a32cd995e3bae0d09fb11885141f1b",
+        "cache_sha256": "f4c7bc5a07a5ef14814bd91c70467b65fe1db2914a00834419e6b4471298ee24",
+        "runtime_load_verified": false
+      },
+      "hook": {
+        "script": "scripts/gods/ran.gd",
+        "function": "_throw_nets",
+        "line": 74,
+        "call": "Audio.sfx_or(\"net_throw\", \"dash\", -6.0)",
+        "fallback": "dash",
+        "volume_db": -6.0,
+        "pitch_range": 0.06,
+        "verification": "literal_source_call_present"
+      }
+    },
+    {
+      "stem": "net_close",
+      "sound_id": "net_close",
+      "formal_path": "assets/audio/sfx/net_close.wav",
+      "sha256": "c00bc9040426a5dc7b34573e877a1f799ddcf0f0b676ab3dd752b596a1828dda",
+      "checks": {
+        "formal_approved_candidate_hash_match": true,
+        "user_accepted_hash_match": true,
+        "pcm16_mono44100": true,
+        "peak_minus1dbfs": true,
+        "onset_within10ms": true,
+        "zero_boundaries": true,
+        "no_fullscale_samples": true,
+        "quiet_tail": true,
+        "call_entry_exists": true
+      },
+      "duration_seconds": 0.3480498866213152,
+      "peak_dbfs": -1.000151903819357,
+      "onset_ms": 0.06802721088435373,
+      "tail10ms_rms_dbfs": -104.99247200331594,
+      "import": {
+        "exists": true,
+        "source_path_matches": true,
+        "loop_disabled_in_descriptor": true,
+        "normalize_disabled_in_descriptor": true,
+        "imported_cache_exists": true,
+        "descriptor_sha256": "17cf23b7a9c67b84effb48f62a3bec92fff600c894d74947ec905a160396814f",
+        "cache_sha256": "783f63ea68639ce53e628e28b6270490aae3a0be2d921ca656c239808da8e10a",
+        "runtime_load_verified": false
+      },
+      "hook": {
+        "script": "scripts/gods/ran.gd",
+        "function": "_close",
+        "line": 103,
+        "call": "Audio.sfx_or(\"net_close\", \"\", -4.0)",
+        "fallback": "",
+        "volume_db": -4.0,
+        "pitch_range": 0.06,
+        "verification": "literal_source_call_present"
+      }
+    },
+    {
+      "stem": "wave_push",
+      "sound_id": "wave_push",
+      "formal_path": "assets/audio/sfx/wave_push.wav",
+      "sha256": "c6d0bebab3144268a413ae5665dc42ccc9948e88527dc3edc05704690c0ace46",
+      "checks": {
+        "formal_approved_candidate_hash_match": true,
+        "user_accepted_hash_match": true,
+        "pcm16_mono44100": true,
+        "peak_minus1dbfs": true,
+        "onset_within10ms": true,
+        "zero_boundaries": true,
+        "no_fullscale_samples": true,
+        "quiet_tail": true,
+        "call_entry_exists": true
+      },
+      "duration_seconds": 0.6253968253968254,
+      "peak_dbfs": -1.000151903819357,
+      "onset_ms": 0.045351473922902494,
+      "tail10ms_rms_dbfs": -240.0,
+      "import": {
+        "exists": true,
+        "source_path_matches": true,
+        "loop_disabled_in_descriptor": true,
+        "normalize_disabled_in_descriptor": true,
+        "imported_cache_exists": true,
+        "descriptor_sha256": "61ae546e93dd9b3def3c30239d4501e3dbdbdd60ef0245b1c9938223578e0151",
+        "cache_sha256": "cb57f46939202306d67d45d9d8fa60868b20227d593c843a6ed1382495a9c162",
+        "runtime_load_verified": false
+      },
+      "hook": {
+        "script": "scripts/gods/ran.gd",
+        "function": "_push_waves",
+        "line": 173,
+        "call": "Audio.sfx_or(\"wave_push\", \"dash\", -2.0)",
+        "fallback": "dash",
+        "volume_db": -2.0,
+        "pitch_range": 0.06,
+        "verification": "literal_source_call_present"
+      }
+    },
+    {
+      "stem": "wave_crash",
+      "sound_id": "wave_crash",
+      "formal_path": "assets/audio/sfx/wave_crash.wav",
+      "sha256": "f183454754121efd96e029e7685a6ad228ac39734d5cc344c7fab34f5ca692ac",
+      "checks": {
+        "formal_approved_candidate_hash_match": true,
+        "user_accepted_hash_match": true,
+        "pcm16_mono44100": true,
+        "peak_minus1dbfs": true,
+        "onset_within10ms": true,
+        "zero_boundaries": true,
+        "no_fullscale_samples": true,
+        "quiet_tail": true,
+        "call_entry_exists": true
+      },
+      "duration_seconds": 0.78,
+      "peak_dbfs": -1.000151903819357,
+      "onset_ms": 0.045351473922902494,
+      "tail10ms_rms_dbfs": -92.06991128975118,
+      "import": {
+        "exists": true,
+        "source_path_matches": true,
+        "loop_disabled_in_descriptor": true,
+        "normalize_disabled_in_descriptor": true,
+        "imported_cache_exists": true,
+        "descriptor_sha256": "5eda9c8e038bed87018b4a01a46ddb31940a26a93245f8755fde23d307aa16b5",
+        "cache_sha256": "7ccd448fba80179bffc47cb82dd3a21160e7275baca4631655f83740435de9ad",
+        "runtime_load_verified": false
+      },
+      "hook": {
+        "script": "scripts/gods/ran.gd",
+        "function": "_crash",
+        "line": 200,
+        "call": "Audio.sfx_or(\"wave_crash\", \"boss_slam\", -6.0)",
+        "fallback": "boss_slam",
+        "volume_db": -6.0,
+        "pitch_range": 0.06,
+        "verification": "literal_source_call_present"
+      }
+    },
+    {
+      "stem": "sword_hit_01",
+      "sound_id": "sword_hit",
+      "formal_path": "assets/audio/sfx/sword_hit_01.wav",
+      "sha256": "8cc367e662e425faffb4a42937640411245b4c2487979677fdc9a0ae1c010e29",
+      "checks": {
+        "formal_approved_candidate_hash_match": true,
+        "user_accepted_hash_match": true,
+        "pcm16_mono44100": true,
+        "peak_minus1dbfs": true,
+        "onset_within10ms": true,
+        "zero_boundaries": true,
+        "no_fullscale_samples": true,
+        "quiet_tail": true,
+        "call_entry_exists": true
+      },
+      "duration_seconds": 0.14954648526077097,
+      "peak_dbfs": -1.000151903819357,
+      "onset_ms": 0.045351473922902494,
+      "tail10ms_rms_dbfs": -92.80886778561057,
+      "import": {
+        "exists": true,
+        "source_path_matches": true,
+        "loop_disabled_in_descriptor": true,
+        "normalize_disabled_in_descriptor": true,
+        "imported_cache_exists": true,
+        "descriptor_sha256": "82f45cee1f83b200996cb540025caabd9b825f463960fd068e46a738281678fe",
+        "cache_sha256": "971fac1e1d03c631043456b1068b976c9008279841c56a149e439794c58b24d1",
+        "runtime_load_verified": false
+      },
+      "hook": {
+        "script": "scripts/gods/freyr.gd",
+        "function": "strike",
+        "line": 102,
+        "call": "Audio.sfx_or(\"sword_hit\", \"feather_hit\", -8.0)",
+        "fallback": "feather_hit",
+        "volume_db": -8.0,
+        "pitch_range": 0.06,
+        "verification": "literal_source_call_present"
+      }
+    },
+    {
+      "stem": "sword_hit_02",
+      "sound_id": "sword_hit",
+      "formal_path": "assets/audio/sfx/sword_hit_02.wav",
+      "sha256": "e1ca96ea74266798b3b37321e8d6c1bd0d0d07998e2e490308c7e63f88948289",
+      "checks": {
+        "formal_approved_candidate_hash_match": true,
+        "user_accepted_hash_match": true,
+        "pcm16_mono44100": true,
+        "peak_minus1dbfs": true,
+        "onset_within10ms": true,
+        "zero_boundaries": true,
+        "no_fullscale_samples": true,
+        "quiet_tail": true,
+        "call_entry_exists": true
+      },
+      "duration_seconds": 0.14952380952380953,
+      "peak_dbfs": -1.000151903819357,
+      "onset_ms": 0.045351473922902494,
+      "tail10ms_rms_dbfs": -93.1740361238682,
+      "import": {
+        "exists": true,
+        "source_path_matches": true,
+        "loop_disabled_in_descriptor": true,
+        "normalize_disabled_in_descriptor": true,
+        "imported_cache_exists": true,
+        "descriptor_sha256": "f352cbeb14763b6558ac39acfb9e9dc0d558b826a12697cd673edad9c42d8034",
+        "cache_sha256": "5d9a7aad72e2cc3f02abf831df6ff3f0b19aa57e167a8e29e716702778f54d24",
+        "runtime_load_verified": false
+      },
+      "hook": {
+        "script": "scripts/gods/freyr.gd",
+        "function": "strike",
+        "line": 102,
+        "call": "Audio.sfx_or(\"sword_hit\", \"feather_hit\", -8.0)",
+        "fallback": "feather_hit",
+        "volume_db": -8.0,
+        "pitch_range": 0.06,
+        "verification": "literal_source_call_present"
+      }
+    },
+    {
+      "stem": "sword_hit_03",
+      "sound_id": "sword_hit",
+      "formal_path": "assets/audio/sfx/sword_hit_03.wav",
+      "sha256": "7e924391d7c3bcc99b411dc7a320aeb9da836751185967a72376c43b1c89e008",
+      "checks": {
+        "formal_approved_candidate_hash_match": true,
+        "user_accepted_hash_match": true,
+        "pcm16_mono44100": true,
+        "peak_minus1dbfs": true,
+        "onset_within10ms": true,
+        "zero_boundaries": true,
+        "no_fullscale_samples": true,
+        "quiet_tail": true,
+        "call_entry_exists": true
+      },
+      "duration_seconds": 0.14952380952380953,
+      "peak_dbfs": -1.000151903819357,
+      "onset_ms": 0.045351473922902494,
+      "tail10ms_rms_dbfs": -92.17456562653283,
+      "import": {
+        "exists": true,
+        "source_path_matches": true,
+        "loop_disabled_in_descriptor": true,
+        "normalize_disabled_in_descriptor": true,
+        "imported_cache_exists": true,
+        "descriptor_sha256": "79bb821c83afc1c56dc449b5e3ef90fd1c352a988d6d8e0159baf9cb7bd44853",
+        "cache_sha256": "04f62cd6a903e95a666100995801316ec7e6e843af53b037bfdd6466deb14588",
+        "runtime_load_verified": false
+      },
+      "hook": {
+        "script": "scripts/gods/freyr.gd",
+        "function": "strike",
+        "line": 102,
+        "call": "Audio.sfx_or(\"sword_hit\", \"feather_hit\", -8.0)",
+        "fallback": "feather_hit",
+        "volume_db": -8.0,
+        "pitch_range": 0.06,
+        "verification": "literal_source_call_present"
+      }
+    },
+    {
+      "stem": "boar_charge",
+      "sound_id": "boar_charge",
+      "formal_path": "assets/audio/sfx/boar_charge.wav",
+      "sha256": "58669ec2cbc8cf444f1fd429264189d2d3f750ca08b940f6c8de3eba4c171169",
+      "checks": {
+        "formal_approved_candidate_hash_match": true,
+        "user_accepted_hash_match": true,
+        "pcm16_mono44100": true,
+        "peak_minus1dbfs": true,
+        "onset_within10ms": true,
+        "zero_boundaries": true,
+        "no_fullscale_samples": true,
+        "quiet_tail": true,
+        "call_entry_exists": true
+      },
+      "duration_seconds": 0.6367800453514739,
+      "peak_dbfs": -1.000151903819357,
+      "onset_ms": 0.045351473922902494,
+      "tail10ms_rms_dbfs": -240.0,
+      "import": {
+        "exists": true,
+        "source_path_matches": true,
+        "loop_disabled_in_descriptor": true,
+        "normalize_disabled_in_descriptor": true,
+        "imported_cache_exists": true,
+        "descriptor_sha256": "1c84dc9dfde05b4d48084ae38c4e6e685cb20b99b979bea39f24e632fbef89be",
+        "cache_sha256": "55921b654f045f101ac116554d77fae5aeffee3a05e49ce2393d46e84b1af3bd",
+        "runtime_load_verified": false
+      },
+      "hook": {
+        "script": "scripts/gods/freyr.gd",
+        "function": "_tick_boars",
+        "line": 135,
+        "call": "Audio.sfx_or(\"boar_charge\", \"dash\", -2.0)",
+        "fallback": "dash",
+        "volume_db": -2.0,
+        "pitch_range": 0.06,
+        "verification": "literal_source_call_present"
+      }
+    },
+    {
+      "stem": "ice_arrow_01",
+      "sound_id": "ice_arrow",
+      "formal_path": "assets/audio/sfx/ice_arrow_01.wav",
+      "sha256": "75767697858eaec058bb7854c0d3867788a1360db9546d8f762a464e469c404b",
+      "checks": {
+        "formal_approved_candidate_hash_match": true,
+        "user_accepted_hash_match": true,
+        "pcm16_mono44100": true,
+        "peak_minus1dbfs": true,
+        "onset_within10ms": true,
+        "zero_boundaries": true,
+        "no_fullscale_samples": true,
+        "quiet_tail": true,
+        "call_entry_exists": true
+      },
+      "duration_seconds": 0.1783219954648526,
+      "peak_dbfs": -1.000151903819357,
+      "onset_ms": 0.045351473922902494,
+      "tail10ms_rms_dbfs": -83.9113339168548,
+      "import": {
+        "exists": true,
+        "source_path_matches": true,
+        "loop_disabled_in_descriptor": true,
+        "normalize_disabled_in_descriptor": true,
+        "imported_cache_exists": true,
+        "descriptor_sha256": "df9cd57634d8848fa111d4e7fc785840b29f7a2fe397e6f5d9e0ebcebb9cd144",
+        "cache_sha256": "96aa3881e9b8c898191d88be75f81345bab613d451a54050285716fe1dd0407d",
+        "runtime_load_verified": false
+      },
+      "hook": {
+        "script": "scripts/gods/skadi.gd",
+        "function": "_volley",
+        "line": 69,
+        "call": "Audio.sfx_or(\"ice_arrow\", \"arrow_shot\", -4.0)",
+        "fallback": "arrow_shot",
+        "volume_db": -4.0,
+        "pitch_range": 0.06,
+        "verification": "literal_source_call_present"
+      }
+    },
+    {
+      "stem": "ice_arrow_02",
+      "sound_id": "ice_arrow",
+      "formal_path": "assets/audio/sfx/ice_arrow_02.wav",
+      "sha256": "c74a6d99ed255fce5534db5405565076091964706639d2aa084ac530cc50c158",
+      "checks": {
+        "formal_approved_candidate_hash_match": true,
+        "user_accepted_hash_match": true,
+        "pcm16_mono44100": true,
+        "peak_minus1dbfs": true,
+        "onset_within10ms": true,
+        "zero_boundaries": true,
+        "no_fullscale_samples": true,
+        "quiet_tail": true,
+        "call_entry_exists": true
+      },
+      "duration_seconds": 0.1786394557823129,
+      "peak_dbfs": -1.000151903819357,
+      "onset_ms": 0.022675736961451247,
+      "tail10ms_rms_dbfs": -90.78741363760814,
+      "import": {
+        "exists": true,
+        "source_path_matches": true,
+        "loop_disabled_in_descriptor": true,
+        "normalize_disabled_in_descriptor": true,
+        "imported_cache_exists": true,
+        "descriptor_sha256": "1b16cd639b313e11b56913715b85482d0d74554f5bb5d9f9a8ccecdb1e103268",
+        "cache_sha256": "e201055ee00c94551a6ac4c5950726fd938b8f19576cd285dc16f8448f7088ff",
+        "runtime_load_verified": false
+      },
+      "hook": {
+        "script": "scripts/gods/skadi.gd",
+        "function": "_volley",
+        "line": 69,
+        "call": "Audio.sfx_or(\"ice_arrow\", \"arrow_shot\", -4.0)",
+        "fallback": "arrow_shot",
+        "volume_db": -4.0,
+        "pitch_range": 0.06,
+        "verification": "literal_source_call_present"
+      }
+    },
+    {
+      "stem": "ice_arrow_03",
+      "sound_id": "ice_arrow",
+      "formal_path": "assets/audio/sfx/ice_arrow_03.wav",
+      "sha256": "5fa756ef21f013953c38b69212e66996128a39252946a328394aa80d49c1cc6c",
+      "checks": {
+        "formal_approved_candidate_hash_match": true,
+        "user_accepted_hash_match": true,
+        "pcm16_mono44100": true,
+        "peak_minus1dbfs": true,
+        "onset_within10ms": true,
+        "zero_boundaries": true,
+        "no_fullscale_samples": true,
+        "quiet_tail": true,
+        "call_entry_exists": true
+      },
+      "duration_seconds": 0.17861678004535148,
+      "peak_dbfs": -1.000151903819357,
+      "onset_ms": 0.022675736961451247,
+      "tail10ms_rms_dbfs": -86.9171217226274,
+      "import": {
+        "exists": true,
+        "source_path_matches": true,
+        "loop_disabled_in_descriptor": true,
+        "normalize_disabled_in_descriptor": true,
+        "imported_cache_exists": true,
+        "descriptor_sha256": "0aeaf30a9bb7599a02aadc2c696dee19bb3eb488c9fcbe5b20d27584565ae49b",
+        "cache_sha256": "74feca6f7f9fed87b9c58cbc9246068746dbece0b2f6caabf091e38d859a08ae",
+        "runtime_load_verified": false
+      },
+      "hook": {
+        "script": "scripts/gods/skadi.gd",
+        "function": "_volley",
+        "line": 69,
+        "call": "Audio.sfx_or(\"ice_arrow\", \"arrow_shot\", -4.0)",
+        "fallback": "arrow_shot",
+        "volume_db": -4.0,
+        "pitch_range": 0.06,
+        "verification": "literal_source_call_present"
+      }
+    },
+    {
+      "stem": "ice_snipe",
+      "sound_id": "ice_snipe",
+      "formal_path": "assets/audio/sfx/ice_snipe.wav",
+      "sha256": "4ec413bf59d8c872de25ece0c2ea9247b7f810a82742a9a86235f92fd5c8c035",
+      "checks": {
+        "formal_approved_candidate_hash_match": true,
+        "user_accepted_hash_match": true,
+        "pcm16_mono44100": true,
+        "peak_minus1dbfs": true,
+        "onset_within10ms": true,
+        "zero_boundaries": true,
+        "no_fullscale_samples": true,
+        "quiet_tail": true,
+        "call_entry_exists": true
+      },
+      "duration_seconds": 0.36657596371882084,
+      "peak_dbfs": -1.000151903819357,
+      "onset_ms": 0.06802721088435373,
+      "tail10ms_rms_dbfs": -87.85476738129086,
+      "import": {
+        "exists": true,
+        "source_path_matches": true,
+        "loop_disabled_in_descriptor": true,
+        "normalize_disabled_in_descriptor": true,
+        "imported_cache_exists": true,
+        "descriptor_sha256": "cd013df3cecc0ad7f3e615916ceb66ceb7918b7eacd07281b5107c7500003107",
+        "cache_sha256": "07aa592381fc26c13e367ece17266f6b316e39627611fe26041b77881e8ccc95",
+        "runtime_load_verified": false
+      },
+      "hook": {
+        "script": "scripts/gods/skadi.gd",
+        "function": "_tick_hunter",
+        "line": 133,
+        "call": "Audio.sfx_or(\"ice_snipe\", \"arrow_shot\", 2.0)",
+        "fallback": "arrow_shot",
+        "volume_db": 2.0,
+        "pitch_range": 0.06,
+        "verification": "literal_source_call_present"
+      }
+    },
+    {
+      "stem": "ice_shatter",
+      "sound_id": "ice_shatter",
+      "formal_path": "assets/audio/sfx/ice_shatter.wav",
+      "sha256": "ce0cfef62cf02a8b4f5c15e930437d6acc2306d5eaf51338e7f6ef0f2162f727",
+      "checks": {
+        "formal_approved_candidate_hash_match": true,
+        "user_accepted_hash_match": true,
+        "pcm16_mono44100": true,
+        "peak_minus1dbfs": true,
+        "onset_within10ms": true,
+        "zero_boundaries": true,
+        "no_fullscale_samples": true,
+        "quiet_tail": true,
+        "call_entry_exists": true
+      },
+      "duration_seconds": 0.39770975056689345,
+      "peak_dbfs": -1.000151903819357,
+      "onset_ms": 0.022675736961451247,
+      "tail10ms_rms_dbfs": -88.71199027051924,
+      "import": {
+        "exists": true,
+        "source_path_matches": true,
+        "loop_disabled_in_descriptor": true,
+        "normalize_disabled_in_descriptor": true,
+        "imported_cache_exists": true,
+        "descriptor_sha256": "fca9645c86a0948190e7bd7be144c6f95aed574abd9e4e2e370cf369cdf34eee",
+        "cache_sha256": "5a6e33e79051e1c68fff40314a028d66f0075a8b1bc47dfdcb7f5f1bc28cecc8",
+        "runtime_load_verified": false
+      },
+      "hook": {
+        "script": "scripts/gods/skadi.gd",
+        "function": "on_enemy_died",
+        "line": 112,
+        "call": "Audio.sfx_or(\"ice_shatter\", \"ice_pillar\", -6.0)",
+        "fallback": "ice_pillar",
+        "volume_db": -6.0,
+        "pitch_range": 0.06,
+        "verification": "literal_source_call_present"
+      }
+    },
+    {
+      "stem": "heal_pickup",
+      "sound_id": "heal_pickup",
+      "formal_path": "assets/audio/sfx/heal_pickup.wav",
+      "sha256": "a4232cf8d448ef8df5b7eca84cc78be2617dd37a539c65f55317166537a50977",
+      "checks": {
+        "formal_approved_candidate_hash_match": true,
+        "user_accepted_hash_match": true,
+        "pcm16_mono44100": true,
+        "peak_minus1dbfs": true,
+        "onset_within10ms": true,
+        "zero_boundaries": true,
+        "no_fullscale_samples": true,
+        "quiet_tail": true,
+        "call_entry_exists": true
+      },
+      "duration_seconds": 0.23936507936507936,
+      "peak_dbfs": -1.000151903819357,
+      "onset_ms": 0.06802721088435373,
+      "tail10ms_rms_dbfs": -100.95554862770464,
+      "import": {
+        "exists": true,
+        "source_path_matches": true,
+        "loop_disabled_in_descriptor": true,
+        "normalize_disabled_in_descriptor": true,
+        "imported_cache_exists": true,
+        "descriptor_sha256": "469a32461b6038b3d68fa164969668ccfd3cc9be892179be344476c7b2978b15",
+        "cache_sha256": "2d06c12d1855a37de950af66570fe425547cdd45849737a1bc7bb5fd05d1eb72",
+        "runtime_load_verified": false
+      },
+      "hook": {
+        "script": "scripts/gods/heal_pickup.gd",
+        "function": "_process",
+        "line": 32,
+        "call": "Audio.sfx_or(\"heal_pickup\", \"pickup_xp\", -4.0, 0.3)",
+        "fallback": "pickup_xp",
+        "volume_db": -4.0,
+        "pitch_range": 0.3,
+        "verification": "literal_source_call_present"
+      }
+    }
+  ],
+  "variant_groups": {
+    "cat_pounce": {
+      "files_found_by_filename_contract": [
+        "assets/audio/sfx/cat_pounce_01.wav",
+        "assets/audio/sfx/cat_pounce_02.wav",
+        "assets/audio/sfx/cat_pounce_03.wav"
+      ],
+      "exact_three_variants": true,
+      "distinct_hashes": true,
+      "all_within_0_3_seconds": true
+    },
+    "ice_arrow": {
+      "files_found_by_filename_contract": [
+        "assets/audio/sfx/ice_arrow_01.wav",
+        "assets/audio/sfx/ice_arrow_02.wav",
+        "assets/audio/sfx/ice_arrow_03.wav"
+      ],
+      "exact_three_variants": true,
+      "distinct_hashes": true,
+      "all_within_0_3_seconds": true
+    },
+    "light_burst": {
+      "files_found_by_filename_contract": [
+        "assets/audio/sfx/light_burst_01.wav",
+        "assets/audio/sfx/light_burst_02.wav",
+        "assets/audio/sfx/light_burst_03.wav"
+      ],
+      "exact_three_variants": true,
+      "distinct_hashes": true,
+      "all_within_0_3_seconds": true
+    },
+    "rune_detonate": {
+      "files_found_by_filename_contract": [
+        "assets/audio/sfx/rune_detonate_01.wav",
+        "assets/audio/sfx/rune_detonate_02.wav",
+        "assets/audio/sfx/rune_detonate_03.wav"
+      ],
+      "exact_three_variants": true,
+      "distinct_hashes": true,
+      "all_within_0_3_seconds": true
+    },
+    "static_zap": {
+      "files_found_by_filename_contract": [
+        "assets/audio/sfx/static_zap_01.wav",
+        "assets/audio/sfx/static_zap_02.wav",
+        "assets/audio/sfx/static_zap_03.wav"
+      ],
+      "exact_three_variants": true,
+      "distinct_hashes": true,
+      "all_within_0_3_seconds": true
+    },
+    "sword_hit": {
+      "files_found_by_filename_contract": [
+        "assets/audio/sfx/sword_hit_01.wav",
+        "assets/audio/sfx/sword_hit_02.wav",
+        "assets/audio/sfx/sword_hit_03.wav"
+      ],
+      "exact_three_variants": true,
+      "distinct_hashes": true,
+      "all_within_0_3_seconds": true
+    },
+    "wolf_bite": {
+      "files_found_by_filename_contract": [
+        "assets/audio/sfx/wolf_bite_01.wav",
+        "assets/audio/sfx/wolf_bite_02.wav",
+        "assets/audio/sfx/wolf_bite_03.wav"
+      ],
+      "exact_three_variants": true,
+      "distinct_hashes": true,
+      "all_within_0_3_seconds": true
+    }
+  },
+  "loader_checks": {
+    "formal_directory": true,
+    "wav_then_ogg": true,
+    "three_numbered_variants": true,
+    "resource_loader_exists": true,
+    "random_variant_selection": true,
+    "cache_exists": true,
+    "sfx_bus": true
+  },
+  "source_snapshot_sha256": {
+    "scripts/gods/baldr.gd": "b433178fcb0d49af9eba60a98d5207a082a36c629ed89ffe493c24dc9bb3d80e",
+    "scripts/gods/freyja.gd": "38fbfa2db7de7937ae760bb11babd50e8dc30c28a58abab6804438afa730c912",
+    "scripts/gods/freyr.gd": "74a7a5165181c8a15c92d505cb0e675e1734d94403ebce9d36c5f8eb05af25a9",
+    "scripts/gods/god_power.gd": "265870e2bdd086735fa498add1eb8609ace9f22f858274f5b8f2b847043c3216",
+    "scripts/gods/god_zone.gd": "6a604d58da5cf0742b264c6d44ab1d0463e36331cd32840e9b9df99250f87354",
+    "scripts/gods/heal_pickup.gd": "900226cacea1a1ff6cab6d8ab0d83575e9132f396fa5620c9a1863e7b2930acb",
+    "scripts/gods/loki.gd": "605a6957f2b77a8be2e6a8cdada06951d474bf1fb58449461d36ea5666aee45e",
+    "scripts/gods/odin.gd": "e5a78a1fa7d24a9ea49602fc63d5dcbc999e1020cc72fa16adbe8b6ee669c985",
+    "scripts/gods/ran.gd": "f1448e381b0318541083b6abcdb40df97be9c6eff8bebf2d69a50dc8f29b767a",
+    "scripts/gods/skadi.gd": "42ba363b3ddc282956bd57540b894c1126fa98489784399974e38572b44622a2",
+    "scripts/gods/thor.gd": "d3ea714d01ca7375c0a0e23a7b7a81f47ad1c24bfeaa76ce8d9c77fd1a1ee8af",
+    "scripts/game.gd": "2c0c635ce00771f3b4080f3fc1d43f9305f7330b441439cd4adc71d32b056baa",
+    "scripts/core/audio.gd": "13046615ebba8dd309152c7dcb50f6dfed7543a558ca48c39518be18b9f5d798"
+  },
+  "code_changes_required_for_current_filename_contract": [],
+  "import_descriptor_count": 44,
+  "imported_cache_count": 44,
+  "game_test": "not_performed",
+  "errors": []
+}

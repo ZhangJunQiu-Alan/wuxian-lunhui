@@ -1,0 +1,18 @@
+{
+  "tool": "image_gen.imagegen",
+  "id": "surtr_windup",
+  "frames": 3,
+  "fps": 8,
+  "loop": false,
+  "action": "THREE sword WINDUP poses in2x2 square atlas, bottom-right cell EMPTY transparent. From original stance brace knees, rotate shoulders slightly, draw the sword backward across waist then raise it diagonally up-right ready to sweep. Torso remains3/4right, never turn back. Keep sword diagonally compact; its tip can use the64px overhead margin but not leave256cell. Entire body remains184px standing-scale (knees may crouch slightly), do not shrink torso to fit sword. No swing trail yet. Poses0start,1pullback,2hold peak.",
+  "frame_size": [
+    256,
+    256
+  ],
+  "refs": [
+    "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskK3_fire_2026-10-20/references/surtr_action_master_4x.png",
+    "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskK3_fire_2026-10-20/references/surtr_idle_master_candidate_4x.png"
+  ],
+  "prompt": "Use case: sprite-animation, identity-preserving edit. Image1 is the APPROVED original fiery giant in a256px game action canvas; image2 is a matched new idle reference. Animate the SAME character, no redesign: charcoal-black armor with old bronze riveted edges, molten orange cracks, pointed crown helmet with orange flame, shredded crimson waistcloth, heavy plated boots, same single long broad straight fiery sword in the near hand. RIGHT-facing three-quarter view, exact same helmet and torso proportions, no horns, wings or extra weapon. Preserve original192px character scale inside each256x256 logical cell: torso/legs/crown standing height about184px, boots at254, body centeredx128; leave headroom/side room for sword; all full limbs and full sword within>=2px alpha border, no part crosses cell. Torso and grounded foot baseline stay registered, motion occurs within pose; TWO arms, TWO legs, coherent hands grip sword. Fine crisp game pixel clusters, upper-left lit,<=48RGB dark steel/bronze/red/orange. THREE sword WINDUP poses in2x2 square atlas, bottom-right cell EMPTY transparent. From original stance brace knees, rotate shoulders slightly, draw the sword backward across waist then raise it diagonally up-right ready to sweep. Torso remains3/4right, never turn back. Keep sword diagonally compact; its tip can use the64px overhead margin but not leave256cell. Entire body remains184px standing-scale (knees may crouch slightly), do not shrink torso to fit sword. No swing trail yet. Poses0start,1pullback,2hold peak. Output isolated true zero-alpha outside entity, binary entity alpha, no ground or cast shadow, no scenery, text, labels, grid lines, gutters, borders or watermark. Do not draw a giant opaque fire aura; sword flame stays attached to blade. No damage/warning overlay baked into body.",
+  "transparent_background": true
+}

@@ -1,0 +1,8 @@
+{
+  "id": "hel_life_ground",
+  "version": "v01",
+  "prompt": "Use case: stylized-concept. Production pixel-art underworld game texture/effect; inputs are project-owned style references only, do not copy character or existing pool/ring form. A seamless repeating square pixel texture OVERLAY of very faint grey-green underworld life-side traces. Sparse low-contrast worn wispy branching vein marks and dim dust, distributed evenly edge-to-edge, tileable both directions, no focal point or isolated emblem, no circle or border. Genuine transparent background between marks, extremely low opacity. Desaturated stone-grey green, reference texture clusters. Must be subtle over dark terrain, no grass carpet or dense green fog. One flat square tile only, no animation, no sample grid or numbers. Single128x128-equivalent square seamless TRANSPARENT overlay tile, NOT an opaque background, NOT an animation sheet. Desaturated grey-green and grey-violet, extremely restrained luminance, limited32RGB colors, crisp pixel clusters, alpha steps. Genuine transparent background between marks, no opaque square backing or drop shadow. No text, labels, grid, frame, watermark, scenery, body or ship. Entire effect fits inside each frame; repeated tiles/strips must flow through their matching edges.",
+  "reference_paths": [
+    "assets/sprites/effects/poison_pool.png"
+  ]
+}

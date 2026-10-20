@@ -1,0 +1,68 @@
+{
+  "input": "originals/hrym_wave_band_v01.png",
+  "input_sha256": "3d421810952b0aedab5aba97d9eaf57c71399dc3e9a5d8123239a933ab07b73a",
+  "raw_size": [
+    1774,
+    887
+  ],
+  "grid": [
+    2,
+    2
+  ],
+  "cut_boxes": [
+    [
+      25,
+      214,
+      865,
+      426
+    ],
+    [
+      21,
+      195,
+      863,
+      431
+    ],
+    [
+      25,
+      169,
+      866,
+      408
+    ],
+    [
+      21,
+      166,
+      864,
+      405
+    ]
+  ],
+  "single_common_scale": 0.0711743772241993,
+  "placements": [
+    [
+      2,
+      8,
+      60,
+      15
+    ],
+    [
+      2,
+      7,
+      60,
+      17
+    ],
+    [
+      2,
+      7,
+      60,
+      17
+    ],
+    [
+      2,
+      7,
+      60,
+      17
+    ]
+  ],
+  "operations": "original alpha threshold/quantization, source frame cuts, single common nearest resize, source-derived shared palette, whole-frame placement; no character/effect drawing",
+  "candidate": "candidates/hrym_wave_band_v01.png",
+  "candidate_sha256": "d6d0ab68ae0ad1c285fc56b4a63aea374cea31443e003b34b1534173f1073090"
+}

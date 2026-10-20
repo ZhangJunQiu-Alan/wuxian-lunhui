@@ -1,0 +1,11 @@
+{
+  "date": "2026-10-19",
+  "previous_claim": "thokk actual displayed canvas height 52px; dedicated display height required",
+  "corrected": "52 is requested loader height; minimum scale1 yields96px; elite scale1.2 yields115.2px",
+  "evidence": [
+    "runtime_checks.json",
+    "thokk_engine_frame_0.png"
+  ],
+  "formal_images_changed": false,
+  "failed_harness_attempts_retained": true
+}

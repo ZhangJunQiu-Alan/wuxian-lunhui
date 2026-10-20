@@ -1,0 +1,283 @@
+{
+  "task": "K5",
+  "checks": 50,
+  "failures": 0,
+  "items": [
+    {
+      "check": "giant_tread:RGBA",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "giant_tread:sheet",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "giant_tread:palette",
+      "passed": true,
+      "detail": 24
+    },
+    {
+      "check": "giant_tread:alpha",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "giant_tread:transparentRGB",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "giant_tread:0:2pxmargin",
+      "passed": true,
+      "detail": [
+        5,
+        4,
+        59,
+        60
+      ]
+    },
+    {
+      "check": "giant_tread:distinct",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "distant_battle:RGBA",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "distant_battle:sheet",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "distant_battle:palette",
+      "passed": true,
+      "detail": 24
+    },
+    {
+      "check": "distant_battle:alpha",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "distant_battle:transparentRGB",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "distant_battle:0:2pxmargin",
+      "passed": true,
+      "detail": [
+        49,
+        24,
+        481,
+        113
+      ]
+    },
+    {
+      "check": "distant_battle:1:2pxmargin",
+      "passed": true,
+      "detail": [
+        49,
+        22,
+        479,
+        113
+      ]
+    },
+    {
+      "check": "distant_battle:2:2pxmargin",
+      "passed": true,
+      "detail": [
+        48,
+        22,
+        481,
+        113
+      ]
+    },
+    {
+      "check": "distant_battle:3:2pxmargin",
+      "passed": true,
+      "detail": [
+        49,
+        22,
+        481,
+        113
+      ]
+    },
+    {
+      "check": "distant_battle:distinct",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "cornercase:0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "cornercase:1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "cornercase:2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "cornercase:3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "cornercase:4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "cornercase:5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "cornercase:6",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "cornercase:7",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "cornercase:8",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "cornercase:9",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "cornercase:10",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "cornercase:11",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "cornercase:12",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "cornercase:13",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "cornercase:14",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "cornercase:15",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assets/sprites/ground/vigrid/burnt_grass.png:64opaque",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assets/sprites/ground/vigrid/cracked_lava.png:64opaque",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assets/sprites/ground/vigrid/scorched_01.png:64opaque",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assets/sprites/ground/vigrid/scorched_02.png:64opaque",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assets/sprites/ground/vigrid/scorched_03.png:64opaque",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assets/sprites/ground/vigrid/scorched_04.png:64opaque",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "boundary:0:actual768x480",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "boundary:0:innerclear",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "boundary:1:actual768x480",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "boundary:1:innerclear",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "boundary:2:actual768x480",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "boundary:2:innerclear",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "boundary:3:actual768x480",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "boundary:3:innerclear",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "godot_distant_final.log:noscripterror",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "godot_boundary_final.log:noscripterror",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "baseline_assets_unchanged",
+      "passed": true,
+      "detail": []
+    }
+  ],
+  "scope": "files, mask bit cases, isolated closed-boundary render; not game"
+}

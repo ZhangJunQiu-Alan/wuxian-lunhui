@@ -1,0 +1,92 @@
+{
+  "input": "originals/thokk_move_v01.png",
+  "input_sha256": "481d176537bee529c759f5e8431bd08a370a1175d864e45d9ce5f89fbb260619",
+  "raw_size": [
+    1536,
+    1024
+  ],
+  "grid": [
+    3,
+    2
+  ],
+  "cut_boxes": [
+    [
+      135,
+      25,
+      468,
+      489
+    ],
+    [
+      98,
+      24,
+      385,
+      489
+    ],
+    [
+      65,
+      21,
+      332,
+      491
+    ],
+    [
+      139,
+      13,
+      512,
+      479
+    ],
+    [
+      0,
+      10,
+      424,
+      480
+    ],
+    [
+      71,
+      12,
+      399,
+      483
+    ]
+  ],
+  "single_common_scale": 0.18683651804670912,
+  "placements": [
+    [
+      16,
+      5,
+      62,
+      87
+    ],
+    [
+      18,
+      5,
+      54,
+      87
+    ],
+    [
+      18,
+      4,
+      50,
+      88
+    ],
+    [
+      13,
+      5,
+      70,
+      87
+    ],
+    [
+      0,
+      4,
+      79,
+      88
+    ],
+    [
+      14,
+      4,
+      61,
+      88
+    ]
+  ],
+  "operations": "original alpha threshold/quantization, source frame cuts, single common nearest resize, source-derived shared palette, whole-frame placement; no character/effect drawing",
+  "candidate": "candidates/thokk_move_v01.png",
+  "candidate_sha256": "2c4b9a998f653da414009ffff2eb7cb1f6a0efef81fbc303eedc16a3e3242a79"
+}

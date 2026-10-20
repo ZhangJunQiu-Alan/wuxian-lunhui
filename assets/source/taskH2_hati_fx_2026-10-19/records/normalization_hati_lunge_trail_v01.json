@@ -1,0 +1,68 @@
+{
+  "input": "originals/hati_lunge_trail_v01.png",
+  "input_sha256": "bb8accce590b066bd5dd5b2642f2ba239224b73ef74aabb6b968044ca30c8328",
+  "raw_size": [
+    1774,
+    887
+  ],
+  "grid": [
+    2,
+    2
+  ],
+  "cut_boxes": [
+    [
+      293,
+      204,
+      774,
+      389
+    ],
+    [
+      161,
+      131,
+      696,
+      379
+    ],
+    [
+      101,
+      123,
+      829,
+      349
+    ],
+    [
+      244,
+      169,
+      671,
+      333
+    ]
+  ],
+  "single_common_scale": 0.08241758241758242,
+  "placements": [
+    [
+      22,
+      8,
+      40,
+      15
+    ],
+    [
+      18,
+      6,
+      44,
+      20
+    ],
+    [
+      2,
+      6,
+      60,
+      19
+    ],
+    [
+      27,
+      9,
+      35,
+      14
+    ]
+  ],
+  "operations": "original alpha threshold/quantization, source frame cuts, single common nearest resize, source-derived shared palette, whole-frame placement; no character/effect drawing",
+  "candidate": "candidates/hati_lunge_trail_v01.png",
+  "candidate_sha256": "90c2d213ce2a387454af1f893814cd22b7f55bbffa1fcee60fbcdba4306db272"
+}

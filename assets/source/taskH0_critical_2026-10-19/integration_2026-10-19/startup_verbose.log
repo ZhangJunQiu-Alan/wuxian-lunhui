@@ -1,0 +1,137 @@
+WorkerThreadPool: 8 threads, 2 max low-priority.
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+TextServer: Added interface "Dummy"
+TextServer: Added interface "ICU / HarfBuzz / Graphite (Built-in)"
+SDL: Init OK!
+Using "default" pen tablet driver...
+
+TextServer: Primary interface set to: "ICU / HarfBuzz / Graphite (Built-in)".
+Loading resource: res://assets/fonts/NotoSansSC-Regular.otf remapped: res://assets/fonts/NotoSansSC-Regular.otf
+Loading resource: res://.godot/imported/NotoSansSC-Regular.otf-c0c85f3b3b2ad6d96b65df5f3103bb43.fontdata remapped: res://.godot/imported/NotoSansSC-Regular.otf-c0c85f3b3b2ad6d96b65df5f3103bb43.fontdata
+Completed load for: 'res://assets/fonts/NotoSansSC-Regular.otf' remapped 'res://assets/fonts/NotoSansSC-Regular.otf' at thread -1
+CORE API HASH: 2004498165
+EDITOR API HASH: 1696660745
+SceneTreeFTI: traversal method DEFAULT
+Loading resource: res://scripts/core/save_data.gd remapped: res://scripts/core/save_data.gd
+Loading resource: res://assets/sprites/effects/katana_slash.png remapped: res://assets/sprites/effects/katana_slash.png
+Loading resource: res://.godot/imported/katana_slash.png-489771f1ae9bae334e546eb023316738.ctex remapped: res://.godot/imported/katana_slash.png-489771f1ae9bae334e546eb023316738.ctex
+Completed load for: 'res://assets/sprites/effects/katana_slash.png' remapped 'res://assets/sprites/effects/katana_slash.png' at thread -1
+Loading resource: res://assets/sprites/effects/ice_shard.png remapped: res://assets/sprites/effects/ice_shard.png
+Loading resource: res://.godot/imported/ice_shard.png-5300ffb999264e2263facc9f425435af.ctex remapped: res://.godot/imported/ice_shard.png-5300ffb999264e2263facc9f425435af.ctex
+Completed load for: 'res://assets/sprites/effects/ice_shard.png' remapped 'res://assets/sprites/effects/ice_shard.png' at thread -1
+Loading resource: res://assets/sprites/quests/quest_beacon.png remapped: res://assets/sprites/quests/quest_beacon.png
+Loading resource: res://.godot/imported/quest_beacon.png-70702480b890270ac04074025cc7a6d8.ctex remapped: res://.godot/imported/quest_beacon.png-70702480b890270ac04074025cc7a6d8.ctex
+Completed load for: 'res://assets/sprites/quests/quest_beacon.png' remapped 'res://assets/sprites/quests/quest_beacon.png' at thread -1
+Loading resource: res://assets/sprites/effects/frost_shockwave.png remapped: res://assets/sprites/effects/frost_shockwave.png
+Loading resource: res://.godot/imported/frost_shockwave.png-5d1509a49828a26601346bc026ed8452.ctex remapped: res://.godot/imported/frost_shockwave.png-5d1509a49828a26601346bc026ed8452.ctex
+Completed load for: 'res://assets/sprites/effects/frost_shockwave.png' remapped 'res://assets/sprites/effects/frost_shockwave.png' at thread -1
+Loading resource: res://assets/sprites/quests/campfire.png remapped: res://assets/sprites/quests/campfire.png
+Loading resource: res://.godot/imported/campfire.png-217c89c94925036eddb52ed2c3fd97b5.ctex remapped: res://.godot/imported/campfire.png-217c89c94925036eddb52ed2c3fd97b5.ctex
+Completed load for: 'res://assets/sprites/quests/campfire.png' remapped 'res://assets/sprites/quests/campfire.png' at thread -1
+Loading resource: res://assets/sprites/quests/raven.png remapped: res://assets/sprites/quests/raven.png
+Loading resource: res://.godot/imported/raven.png-54005793b54d6cf8efe32abf30939b13.ctex remapped: res://.godot/imported/raven.png-54005793b54d6cf8efe32abf30939b13.ctex
+Completed load for: 'res://assets/sprites/quests/raven.png' remapped 'res://assets/sprites/quests/raven.png' at thread -1
+Loading resource: res://assets/sprites/quests/dead_nail.png remapped: res://assets/sprites/quests/dead_nail.png
+Loading resource: res://.godot/imported/dead_nail.png-cd2a162e7d13436f4426389afe30e8b0.ctex remapped: res://.godot/imported/dead_nail.png-cd2a162e7d13436f4426389afe30e8b0.ctex
+Completed load for: 'res://assets/sprites/quests/dead_nail.png' remapped 'res://assets/sprites/quests/dead_nail.png' at thread -1
+Loading resource: res://assets/sprites/quests/ice_vortex.png remapped: res://assets/sprites/quests/ice_vortex.png
+Loading resource: res://.godot/imported/ice_vortex.png-5614a7e1466b688db6b79b6260e0e2c8.ctex remapped: res://.godot/imported/ice_vortex.png-5614a7e1466b688db6b79b6260e0e2c8.ctex
+Completed load for: 'res://assets/sprites/quests/ice_vortex.png' remapped 'res://assets/sprites/quests/ice_vortex.png' at thread -1
+Loading resource: res://assets/sprites/pickups/chest_closed.png remapped: res://assets/sprites/pickups/chest_closed.png
+Loading resource: res://.godot/imported/chest_closed.png-750add2a573fd2fa8e1bf1333f355d54.ctex remapped: res://.godot/imported/chest_closed.png-750add2a573fd2fa8e1bf1333f355d54.ctex
+Completed load for: 'res://assets/sprites/pickups/chest_closed.png' remapped 'res://assets/sprites/pickups/chest_closed.png' at thread -1
+Loading resource: res://assets/sprites/pickups/chest_open.png remapped: res://assets/sprites/pickups/chest_open.png
+Loading resource: res://.godot/imported/chest_open.png-37158494c222dda51ff77ace9f0798c1.ctex remapped: res://.godot/imported/chest_open.png-37158494c222dda51ff77ace9f0798c1.ctex
+Completed load for: 'res://assets/sprites/pickups/chest_open.png' remapped 'res://assets/sprites/pickups/chest_open.png' at thread -1
+Loading resource: res://assets/sprites/quests/iron_brazier.png remapped: res://assets/sprites/quests/iron_brazier.png
+Loading resource: res://.godot/imported/iron_brazier.png-bcaf8d858fe7c7e0ea0082fee0ec4a25.ctex remapped: res://.godot/imported/iron_brazier.png-bcaf8d858fe7c7e0ea0082fee0ec4a25.ctex
+Completed load for: 'res://assets/sprites/quests/iron_brazier.png' remapped 'res://assets/sprites/quests/iron_brazier.png' at thread -1
+Loading resource: res://assets/sprites/quests/fate_thread_gold.png remapped: res://assets/sprites/quests/fate_thread_gold.png
+Loading resource: res://.godot/imported/fate_thread_gold.png-f69157894f056ba931603aed026027c5.ctex remapped: res://.godot/imported/fate_thread_gold.png-f69157894f056ba931603aed026027c5.ctex
+Completed load for: 'res://assets/sprites/quests/fate_thread_gold.png' remapped 'res://assets/sprites/quests/fate_thread_gold.png' at thread -1
+Loading resource: res://assets/sprites/quests/fate_thread_silver.png remapped: res://assets/sprites/quests/fate_thread_silver.png
+Loading resource: res://.godot/imported/fate_thread_silver.png-2bc8051d30a1adc30a8d606e719e920b.ctex remapped: res://.godot/imported/fate_thread_silver.png-2bc8051d30a1adc30a8d606e719e920b.ctex
+Completed load for: 'res://assets/sprites/quests/fate_thread_silver.png' remapped 'res://assets/sprites/quests/fate_thread_silver.png' at thread -1
+Loading resource: res://assets/sprites/quests/fate_thread_black.png remapped: res://assets/sprites/quests/fate_thread_black.png
+Loading resource: res://.godot/imported/fate_thread_black.png-5f5ae4241507e75622559edc58cdfaab.ctex remapped: res://.godot/imported/fate_thread_black.png-5f5ae4241507e75622559edc58cdfaab.ctex
+Completed load for: 'res://assets/sprites/quests/fate_thread_black.png' remapped 'res://assets/sprites/quests/fate_thread_black.png' at thread -1
+Loading resource: res://assets/sprites/quests/fate_thread_white.png remapped: res://assets/sprites/quests/fate_thread_white.png
+Loading resource: res://.godot/imported/fate_thread_white.png-d2e3dd54ce58f25c1e123a226c373473.ctex remapped: res://.godot/imported/fate_thread_white.png-d2e3dd54ce58f25c1e123a226c373473.ctex
+Completed load for: 'res://assets/sprites/quests/fate_thread_white.png' remapped 'res://assets/sprites/quests/fate_thread_white.png' at thread -1
+Loading resource: res://assets/sprites/quests/fate_thread_gray.png remapped: res://assets/sprites/quests/fate_thread_gray.png
+Loading resource: res://.godot/imported/fate_thread_gray.png-f87bc8c29acae81ae48648524850c217.ctex remapped: res://.godot/imported/fate_thread_gray.png-f87bc8c29acae81ae48648524850c217.ctex
+Completed load for: 'res://assets/sprites/quests/fate_thread_gray.png' remapped 'res://assets/sprites/quests/fate_thread_gray.png' at thread -1
+Loading resource: res://assets/sprites/quests/sun_ember.png remapped: res://assets/sprites/quests/sun_ember.png
+Loading resource: res://.godot/imported/sun_ember.png-d1c3af94269f4387ea9ba5576bde78a5.ctex remapped: res://.godot/imported/sun_ember.png-d1c3af94269f4387ea9ba5576bde78a5.ctex
+Completed load for: 'res://assets/sprites/quests/sun_ember.png' remapped 'res://assets/sprites/quests/sun_ember.png' at thread -1
+Loading resource: res://assets/sprites/quests/ice_fishing_hole.png remapped: res://assets/sprites/quests/ice_fishing_hole.png
+Loading resource: res://.godot/imported/ice_fishing_hole.png-21569ae5f8e54df5777bba4a789a7c36.ctex remapped: res://.godot/imported/ice_fishing_hole.png-21569ae5f8e54df5777bba4a789a7c36.ctex
+Completed load for: 'res://assets/sprites/quests/ice_fishing_hole.png' remapped 'res://assets/sprites/quests/ice_fishing_hole.png' at thread -1
+Loading resource: res://assets/sprites/quests/giant_footprint.png remapped: res://assets/sprites/quests/giant_footprint.png
+Loading resource: res://.godot/imported/giant_footprint.png-7f7b1a13035b6444798ce12219678370.ctex remapped: res://.godot/imported/giant_footprint.png-7f7b1a13035b6444798ce12219678370.ctex
+Completed load for: 'res://assets/sprites/quests/giant_footprint.png' remapped 'res://assets/sprites/quests/giant_footprint.png' at thread -1
+Loading resource: res://assets/sprites/quests/tombstone_dormant.png remapped: res://assets/sprites/quests/tombstone_dormant.png
+Loading resource: res://.godot/imported/tombstone_dormant.png-5404f16027dd73a8bde1fc8a3e844c1b.ctex remapped: res://.godot/imported/tombstone_dormant.png-5404f16027dd73a8bde1fc8a3e844c1b.ctex
+Completed load for: 'res://assets/sprites/quests/tombstone_dormant.png' remapped 'res://assets/sprites/quests/tombstone_dormant.png' at thread -1
+Loading resource: res://assets/sprites/quests/tombstone_awakened.png remapped: res://assets/sprites/quests/tombstone_awakened.png
+Loading resource: res://.godot/imported/tombstone_awakened.png-2def9609d77f8e98375a005dd9ce64d7.ctex remapped: res://.godot/imported/tombstone_awakened.png-2def9609d77f8e98375a005dd9ce64d7.ctex
+Completed load for: 'res://assets/sprites/quests/tombstone_awakened.png' remapped 'res://assets/sprites/quests/tombstone_awakened.png' at thread -1
+Loading resource: res://assets/sprites/quests/einherjar_idle.png remapped: res://assets/sprites/quests/einherjar_idle.png
+Loading resource: res://.godot/imported/einherjar_idle.png-92f3fe143fb893a4f8060f861fbf3a8b.ctex remapped: res://.godot/imported/einherjar_idle.png-92f3fe143fb893a4f8060f861fbf3a8b.ctex
+Completed load for: 'res://assets/sprites/quests/einherjar_idle.png' remapped 'res://assets/sprites/quests/einherjar_idle.png' at thread -1
+Loading resource: res://assets/sprites/quests/einherjar_attack.png remapped: res://assets/sprites/quests/einherjar_attack.png
+Loading resource: res://.godot/imported/einherjar_attack.png-81bb34b34ef2c48f820067e6ea0807e9.ctex remapped: res://.godot/imported/einherjar_attack.png-81bb34b34ef2c48f820067e6ea0807e9.ctex
+Completed load for: 'res://assets/sprites/quests/einherjar_attack.png' remapped 'res://assets/sprites/quests/einherjar_attack.png' at thread -1
+Loading resource: res://assets/sprites/quests/glowing_rune_01.png remapped: res://assets/sprites/quests/glowing_rune_01.png
+Loading resource: res://.godot/imported/glowing_rune_01.png-f88343085030ea4fe29fde60eb2536b9.ctex remapped: res://.godot/imported/glowing_rune_01.png-f88343085030ea4fe29fde60eb2536b9.ctex
+Completed load for: 'res://assets/sprites/quests/glowing_rune_01.png' remapped 'res://assets/sprites/quests/glowing_rune_01.png' at thread -1
+Loading resource: res://assets/sprites/quests/glowing_rune_02.png remapped: res://assets/sprites/quests/glowing_rune_02.png
+Loading resource: res://.godot/imported/glowing_rune_02.png-7b496cea53195e4e3e483d129eb2711f.ctex remapped: res://.godot/imported/glowing_rune_02.png-7b496cea53195e4e3e483d129eb2711f.ctex
+Completed load for: 'res://assets/sprites/quests/glowing_rune_02.png' remapped 'res://assets/sprites/quests/glowing_rune_02.png' at thread -1
+Loading resource: res://assets/sprites/quests/glowing_rune_03.png remapped: res://assets/sprites/quests/glowing_rune_03.png
+Loading resource: res://.godot/imported/glowing_rune_03.png-969f98b1eed1d0b0d3fc735c8739a51f.ctex remapped: res://.godot/imported/glowing_rune_03.png-969f98b1eed1d0b0d3fc735c8739a51f.ctex
+Completed load for: 'res://assets/sprites/quests/glowing_rune_03.png' remapped 'res://assets/sprites/quests/glowing_rune_03.png' at thread -1
+Loading resource: res://assets/sprites/effects/ice_pillar.png remapped: res://assets/sprites/effects/ice_pillar.png
+Loading resource: res://.godot/imported/ice_pillar.png-6391da424ed0bb6e330ec1955b5f307b.ctex remapped: res://.godot/imported/ice_pillar.png-6391da424ed0bb6e330ec1955b5f307b.ctex
+Completed load for: 'res://assets/sprites/effects/ice_pillar.png' remapped 'res://assets/sprites/effects/ice_pillar.png' at thread -1
+Loading resource: res://assets/sprites/pickups/xp_gem.png remapped: res://assets/sprites/pickups/xp_gem.png
+Loading resource: res://.godot/imported/xp_gem.png-4df29aee9d65b0843f3017c64d5131ad.ctex remapped: res://.godot/imported/xp_gem.png-4df29aee9d65b0843f3017c64d5131ad.ctex
+Completed load for: 'res://assets/sprites/pickups/xp_gem.png' remapped 'res://assets/sprites/pickups/xp_gem.png' at thread -1
+Loading resource: res://assets/sprites/pickups/xp_gem_large.png remapped: res://assets/sprites/pickups/xp_gem_large.png
+Loading resource: res://.godot/imported/xp_gem_large.png-d020e7daa98364f82b282f1463293bf9.ctex remapped: res://.godot/imported/xp_gem_large.png-d020e7daa98364f82b282f1463293bf9.ctex
+Completed load for: 'res://assets/sprites/pickups/xp_gem_large.png' remapped 'res://assets/sprites/pickups/xp_gem_large.png' at thread -1
+Loading resource: res://assets/sprites/effects/lightning.png remapped: res://assets/sprites/effects/lightning.png
+Loading resource: res://.godot/imported/lightning.png-fb4a83ee8e21efc2824b2864baff9f83.ctex remapped: res://.godot/imported/lightning.png-fb4a83ee8e21efc2824b2864baff9f83.ctex
+Completed load for: 'res://assets/sprites/effects/lightning.png' remapped 'res://assets/sprites/effects/lightning.png' at thread -1
+Completed load for: 'res://scripts/core/save_data.gd' remapped 'res://scripts/core/save_data.gd' at thread -1
+Loading resource: res://locale/text.en.translation remapped: res://locale/text.en.translation
+Completed load for: 'res://locale/text.en.translation' remapped 'res://locale/text.en.translation' at thread -1
+Loaded system CA certificates
+Loading resource: res://scenes/title.tscn remapped: res://scenes/title.tscn
+Loading resource: res://scripts/ui/title.gd remapped: res://scripts/ui/title.gd
+Completed load for: 'res://scripts/ui/title.gd' remapped 'res://scripts/ui/title.gd' at thread -1
+Completed load for: 'res://scenes/title.tscn' remapped 'res://scenes/title.tscn' at thread -1
+Loading resource: res://assets/audio/music/hub.ogg remapped: res://assets/audio/music/hub.ogg
+Loading resource: res://.godot/imported/hub.ogg-b6c6fa9a95be42d4c5f7653056cc1084.oggvorbisstr remapped: res://.godot/imported/hub.ogg-b6c6fa9a95be42d4c5f7653056cc1084.oggvorbisstr
+Completed load for: 'res://assets/audio/music/hub.ogg' remapped 'res://assets/audio/music/hub.ogg' at thread -1
+Loading resource: res://assets/sprites/bosses/skoll_move.png remapped: res://assets/sprites/bosses/skoll_move.png
+Loading resource: res://.godot/imported/skoll_move.png-45562891435b9ff0a105e7001cb3309b.ctex remapped: res://.godot/imported/skoll_move.png-45562891435b9ff0a105e7001cb3309b.ctex
+Completed load for: 'res://assets/sprites/bosses/skoll_move.png' remapped 'res://assets/sprites/bosses/skoll_move.png' at thread -1
+Loading resource: res://assets/sprites/bosses/hati_move.png remapped: res://assets/sprites/bosses/hati_move.png
+Loading resource: res://.godot/imported/hati_move.png-ca22a2f908f60ccf6726d7f8ecc570c4.ctex remapped: res://.godot/imported/hati_move.png-ca22a2f908f60ccf6726d7f8ecc570c4.ctex
+Completed load for: 'res://assets/sprites/bosses/hati_move.png' remapped 'res://assets/sprites/bosses/hati_move.png' at thread -1
+Loading resource: res://assets/sprites/characters/swordsman_idle.png remapped: res://assets/sprites/characters/swordsman_idle.png
+Loading resource: res://.godot/imported/swordsman_idle.png-075decd9626eb8bfbd2de59b7b233207.ctex remapped: res://.godot/imported/swordsman_idle.png-075decd9626eb8bfbd2de59b7b233207.ctex
+Completed load for: 'res://assets/sprites/characters/swordsman_idle.png' remapped 'res://assets/sprites/characters/swordsman_idle.png' at thread -1
+Loading resource: res://assets/sprites/characters/gunslinger_idle.png remapped: res://assets/sprites/characters/gunslinger_idle.png
+Loading resource: res://.godot/imported/gunslinger_idle.png-bd4eb47d06d929ed2603d8a884dafe60.ctex remapped: res://.godot/imported/gunslinger_idle.png-bd4eb47d06d929ed2603d8a884dafe60.ctex
+Completed load for: 'res://assets/sprites/characters/gunslinger_idle.png' remapped 'res://assets/sprites/characters/gunslinger_idle.png' at thread -1
+Loading resource: res://assets/sprites/characters/assassin_idle.png remapped: res://assets/sprites/characters/assassin_idle.png
+Loading resource: res://.godot/imported/assassin_idle.png-7551e49f341a5cf4d9c6e4a0d15d2b85.ctex remapped: res://.godot/imported/assassin_idle.png-7551e49f341a5cf4d9c6e4a0d15d2b85.ctex
+Completed load for: 'res://assets/sprites/characters/assassin_idle.png' remapped 'res://assets/sprites/characters/assassin_idle.png' at thread -1
+Loading resource: res://assets/sprites/characters/mage_idle.png remapped: res://assets/sprites/characters/mage_idle.png
+Loading resource: res://.godot/imported/mage_idle.png-07a5725723352f3c74bf8a1a8986abc2.ctex remapped: res://.godot/imported/mage_idle.png-07a5725723352f3c74bf8a1a8986abc2.ctex
+Completed load for: 'res://assets/sprites/characters/mage_idle.png' remapped 'res://assets/sprites/characters/mage_idle.png' at thread -1
+XR: Clearing primary interface
+XR: Removed interface "Native mobile"
+XR: Removed interface "OpenXR"

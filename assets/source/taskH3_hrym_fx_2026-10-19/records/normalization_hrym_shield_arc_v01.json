@@ -1,0 +1,68 @@
+{
+  "input": "originals/hrym_shield_arc_v01.png",
+  "input_sha256": "4461ef52b367b9f200771cbc372aa27cd29afb44faf5d3cbdc3acdf55356fb67",
+  "raw_size": [
+    1774,
+    887
+  ],
+  "grid": [
+    2,
+    2
+  ],
+  "cut_boxes": [
+    [
+      569,
+      19,
+      806,
+      429
+    ],
+    [
+      469,
+      19,
+      695,
+      433
+    ],
+    [
+      572,
+      10,
+      812,
+      423
+    ],
+    [
+      471,
+      10,
+      680,
+      422
+    ]
+  ],
+  "single_common_scale": 0.25833333333333336,
+  "placements": [
+    [
+      64,
+      11,
+      61,
+      106
+    ],
+    [
+      64,
+      10,
+      58,
+      107
+    ],
+    [
+      64,
+      10,
+      62,
+      107
+    ],
+    [
+      64,
+      11,
+      54,
+      106
+    ]
+  ],
+  "operations": "original alpha threshold/quantization, source frame cuts, single common nearest resize, source-derived shared palette, whole-frame placement; no character/effect drawing",
+  "candidate": "candidates/hrym_shield_arc_v01.png",
+  "candidate_sha256": "8c8f524bf418d0968ed5c8142ac6e73986e523e68f05cf178a5e89c6288699f2"
+}

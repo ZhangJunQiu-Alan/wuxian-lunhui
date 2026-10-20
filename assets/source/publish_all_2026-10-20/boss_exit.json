@@ -1,0 +1,13 @@
+{
+  "exit_code": -15,
+  "command": [
+    "/Applications/Godot.app/Contents/MacOS/Godot",
+    "--headless",
+    "--path",
+    "/var/folders/95/0lqd775j01qgk66k9c4nxxkc0000gn/T/wuxian-publish-20261020-d0p99e3x/runtime",
+    "--script",
+    "tools/test_boss_art.gd",
+    "--",
+    "--save-file=user://publish_all_boss_20261020.json"
+  ]
+}

@@ -33,6 +33,7 @@ var _gnaw_timer := GNAW_EVERY * 0.6
 var _gnaw_damage := 0.0
 var _cycle := 0
 var _crack_strip: Texture2D
+var _gnaw_visual: Node2D
 
 
 func _init() -> void:
@@ -54,6 +55,11 @@ func _ready() -> void:
 		_crack_strip = load(CRACK_PATH)
 	_root = _make_root(position)
 	get_parent().add_child.call_deferred(_root)
+	_gnaw_visual = Node2D.new()
+	_gnaw_visual.name = "GnawFx"
+	_gnaw_visual.z_index = 1
+	_gnaw_visual.draw.connect(_draw_gnaw)
+	add_child(_gnaw_visual)
 	change_state("chase")
 
 
@@ -75,6 +81,7 @@ func _make_root(at: Vector2) -> Node2D:
 
 
 func _update_state(delta: float) -> void:
+	_gnaw_visual.queue_redraw()
 	_gnaw_timer -= delta
 	match state:
 		"chase":
@@ -98,7 +105,8 @@ func _update_state(delta: float) -> void:
 		"burrow":
 			if state_time >= BURROW_TIME:
 				set_untouchable(true)
-				FxLayer.burst(global_position, Color(0.3, 0.25, 0.2), 20, 160.0, 4.0)
+				if not BossFx.play("nidhogg_burrow_dust", global_position):
+					FxLayer.burst(global_position, Color(0.3, 0.25, 0.2), 20, 160.0, 4.0)
 				_crack = target.global_position
 				change_state("under")
 		"under":
@@ -140,6 +148,7 @@ func take_damage(amount: float, knockback: Vector2 = Vector2.ZERO, crit: bool = 
 			_gnaw_timer = GNAW_EVERY
 			FxLayer.floating_text(global_position + Vector2(0, -radius - 20), tr("打断！"), Color(1.0, 0.85, 0.4))
 			Audio.sfx("boss_block")
+			BossFx.play("nidhogg_gnaw_stagger", global_position)
 			change_state("stagger")
 
 
@@ -152,15 +161,20 @@ func _breathe() -> void:
 	for i in 3:
 		var at := global_position + _breath_dir.rotated(randf_range(-0.3, 0.3)) * (110.0 + i * 85.0)
 		PoisonPool.spawn(get_parent(), Game.clamp_to_map(at, 40.0))
-	for i in 24:
-		FxLayer.burst(global_position + _breath_dir.rotated(randf_range(-BREATH_HALF_ANGLE, BREATH_HALF_ANGLE)) * randf_range(60.0, BREATH_RANGE), POISON, 1, 60.0, 5.0)
+	var breath_scale := Vector2(BREATH_RANGE / 92.0, BREATH_RANGE * tan(BREATH_HALF_ANGLE) / 32.0)
+	if not BossFx.play("nidhogg_poison_breath", global_position, _breath_dir.angle(), breath_scale,
+			Color.WHITE, false, BREATH_RANGE, BREATH_HALF_ANGLE):
+		for i in 24:
+			FxLayer.burst(global_position + _breath_dir.rotated(randf_range(-BREATH_HALF_ANGLE, BREATH_HALF_ANGLE)) * randf_range(60.0, BREATH_RANGE), POISON, 1, 60.0, 5.0)
 
 
 func _emerge() -> void:
 	Audio.sfx("boss_slam")
 	target.shake(10.0, 0.35)
-	FxLayer.ring(global_position, EMERGE_RADIUS)
-	FxLayer.burst(global_position, Color(0.35, 0.3, 0.25), 36, 260.0, 5.0)
+	if not BossFx.play("nidhogg_emerge_burst", global_position, 0.0, Vector2.ONE * EMERGE_RADIUS / 62.0,
+			Color.WHITE, false, EMERGE_RADIUS):
+		FxLayer.ring(global_position, EMERGE_RADIUS)
+		FxLayer.burst(global_position, Color(0.35, 0.3, 0.25), 36, 260.0, 5.0)
 	if global_position.distance_to(target.global_position) < EMERGE_RADIUS + Player.RADIUS:
 		target.take_damage(EMERGE_DAMAGE)
 
@@ -192,3 +206,11 @@ func _draw_telegraph() -> void:
 					var dir := Vector2.from_angle(i * TAU / 6.0 + 0.4)
 					draw_line(local, local + dir * EMERGE_RADIUS * t, Color(0.15, 0.1, 0.08), 3.0)
 			draw_circle_telegraph(self, local, EMERGE_RADIUS, t)
+
+
+func _draw_gnaw() -> void:
+	if state == "gnaw" and is_instance_valid(_root) and not _dead:
+		var from := _root.global_position - global_position
+		var flow := -from
+		BossFx.draw(_gnaw_visual, "nidhogg_gnaw_heal", state_time, from * 0.5, flow.angle(),
+			Vector2(maxf(0.5, flow.length() / 56.0), 1.0), Color(1.25, 1.8, 1.25, 1))

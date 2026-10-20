@@ -1,0 +1,631 @@
+{
+	"checks": [
+		{
+			"actual": null,
+			"label": "Godot loads thokk",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "Godot loads thokk_move",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "Godot loads thokk_attack",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "Godot loads hel_death_bolt",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "Godot loads skoll_dash_trail",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "Godot loads skoll_bite",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "Godot loads skoll_howl",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "Godot loads skoll_howl_body",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "Godot loads hati_lunge_trail",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "Godot loads hati_howl_wave",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "Godot loads hati_split_flash",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "Godot loads hrym_wave_band",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "Godot loads hrym_shield_arc",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "Godot loads hrym_block_spark",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "Godot loads hrym_guard_summon",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "Godot loads hrym_ice_break",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "Godot loads garm_bite",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "Godot loads garm_howl_wave",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "Godot loads garm_chain_link",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "Godot loads garm_chain_break",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "Godot loads garm_dispel",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "Godot loads nidhogg_poison_breath",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "Godot loads nidhogg_burrow_dust",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "Godot loads nidhogg_emerge_burst",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "Godot loads nidhogg_gnaw_heal",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "Godot loads nidhogg_gnaw_stagger",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "Godot loads hel_life_ground",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "Godot loads hel_death_ground",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "Godot loads hel_domain_edge",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "Godot loads hel_shift",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "Godot loads hel_heal",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "Godot loads hel_army_summon",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "Godot loads hel_board_ship",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "thokk actual Enemy loader false",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "thokk frame counts false",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "thokk speeds false",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "thokk loop flags false",
+			"pass": true
+		},
+		{
+			"actual": 1.0,
+			"label": "thokk actual scale false",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "thokk movement playback false",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "thokk actual attack trigger false",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "thokk attack completes and returns false",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "thokk actual Enemy loader true",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "thokk frame counts true",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "thokk speeds true",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "thokk loop flags true",
+			"pass": true
+		},
+		{
+			"actual": 1.20000004768372,
+			"label": "thokk actual scale true",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "thokk movement playback true",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "thokk actual attack trigger true",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "thokk attack completes and returns true",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "skoll half-health howl",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "new skoll howl is discovered",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "new skoll howl remains unused by current mapping",
+			"pass": true
+		},
+		{
+			"actual": 6,
+			"label": "skoll summons six wolves",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "skoll dash speed unchanged",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "hati split unlock at 75 percent",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "hati creates two phantoms",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "phantom action set matches",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "phantom uses same body texture",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "phantom action set matches",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "phantom uses same body texture",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "phantoms expiry releases nodes",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "hati fear boundary 279.0",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "hati fear boundary 281.0",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "hrym front shield angle 0.0",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "hrym front shield angle 1.29",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "hrym front shield angle 1.31",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "hrym front shield angle 3.14159265358979",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "hrym two gap angular boundary 0.0",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "hrym two gap angular boundary 0.419",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "hrym two gap angular boundary 0.421",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "hrym two gap angular boundary 3.14159265358979",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "hrym two gap angular boundary 2.72259265358979",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "hrym two gap angular boundary 2.72059265358979",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "hrym two gap angular boundary 6.18318530717959",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "hrym gap protects player at ring radius",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "hrym solid wave damages player",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "shockwave releases after max radius",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "ice pillar collision radius retained",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "ice pillar expiry cleanup",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "garm starts with four stakes",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "garm freed only at final stake 0",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "garm freed only at final stake 1",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "garm freed only at final stake 2",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "garm freed only at final stake 3",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "garm freed speed multiplier",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "garm freed damage multiplier",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "garm howl damage boundary 259.0",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "garm dispel current behavior 259.0",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "garm howl damage boundary 261.0",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "garm dispel current behavior 261.0",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "nidhogg underground hidden and untargetable",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "nidhogg emerges visible and targetable",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "nidhogg below gnaw interrupt threshold",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "nidhogg 6 percent damage interrupts gnaw",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "nidhogg stagger ends after two seconds",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "nidhogg breath angular edge 0.59",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "nidhogg breath angular edge 0.61",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "nidhogg breath radial edge includes player radius 313.0",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "nidhogg breath radial edge includes player radius 315.0",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "poison pool ellipse (47.0, -20.0)",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "poison pool ellipse (49.0, -20.0)",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "poison pool ellipse (0.0, 3.0)",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "poison pool ellipse (0.0, 5.0)",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "poison pool seven second cleanup",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "hel safety radius 0",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "hel safety radius 50",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "hel safety radius 100",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "hel safety radius 150",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "hel life side heals 15 percent",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "hel death side summons three",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "hel army summons fourteen",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "hel first phase five projectiles",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "hel new death bolt remains unintegrated",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "hel projectile expiry cleanup",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "hel low health boards ship",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "hel phase two retains nine nail projectiles",
+			"pass": true
+		}
+	],
+	"count": 116,
+	"engine": {
+		"build": "official",
+		"hash": "ed1daf0bf001b61586d9930840f2f1394092c079",
+		"hex": 263938,
+		"major": 4,
+		"minor": 7,
+		"patch": 2,
+		"status": "stable",
+		"string": "4.7.2-stable (official)",
+		"timestamp": 0
+	},
+	"failures": 0,
+	"new_vfx_game_acceptance": "blocked_missing_integration",
+	"observations": {
+		"thokk_elite": {
+			"canvas_height": 115.200004577637,
+			"centered": true,
+			"offset": [
+				0.0,
+				-48.0
+			],
+			"opaque_foot_relative_to_enemy": 52.8000020980835,
+			"position": [
+				0.0,
+				57.6000022888184
+			],
+			"radius": 28.0,
+			"scale": 1.20000004768372
+		},
+		"thokk_normal": {
+			"canvas_height": 96.0,
+			"centered": true,
+			"offset": [
+				0.0,
+				-48.0
+			],
+			"opaque_foot_relative_to_enemy": 44.0,
+			"position": [
+				0.0,
+				48.0
+			],
+			"radius": 20.0,
+			"scale": 1.0
+		}
+	},
+	"scope": "isolated exact current-code snapshot; not H VFX production-game acceptance"
+}

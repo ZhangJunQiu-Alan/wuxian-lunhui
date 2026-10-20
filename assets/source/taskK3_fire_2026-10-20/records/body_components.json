@@ -1,0 +1,463 @@
+[
+  {
+    "action": "idle",
+    "version": "v01",
+    "poses": [
+      {
+        "index": 0,
+        "raw_box": [
+          75,
+          17,
+          583,
+          578
+        ],
+        "raw_component": "references/raw_component_idle_v01_00.png",
+        "preview_fit": 0.42780748663101603,
+        "preview_place": [
+          19,
+          16,
+          217,
+          240
+        ]
+      },
+      {
+        "index": 1,
+        "raw_box": [
+          690,
+          22,
+          1211,
+          578
+        ],
+        "raw_component": "references/raw_component_idle_v01_01.png",
+        "preview_fit": 0.4316546762589928,
+        "preview_place": [
+          15,
+          16,
+          225,
+          240
+        ]
+      },
+      {
+        "index": 2,
+        "raw_box": [
+          68,
+          634,
+          583,
+          1205
+        ],
+        "raw_component": "references/raw_component_idle_v01_02.png",
+        "preview_fit": 0.4203152364273205,
+        "preview_place": [
+          20,
+          16,
+          216,
+          240
+        ]
+      },
+      {
+        "index": 3,
+        "raw_box": [
+          679,
+          641,
+          1211,
+          1205
+        ],
+        "raw_component": "references/raw_component_idle_v01_03.png",
+        "preview_fit": 0.425531914893617,
+        "preview_place": [
+          15,
+          16,
+          226,
+          240
+        ]
+      }
+    ]
+  },
+  {
+    "action": "move",
+    "version": "v01",
+    "poses": [
+      {
+        "index": 0,
+        "raw_box": [
+          33,
+          25,
+          502,
+          498
+        ],
+        "raw_component": "references/raw_component_move_v01_00.png",
+        "preview_fit": 0.507399577167019,
+        "preview_place": [
+          9,
+          16,
+          238,
+          240
+        ]
+      },
+      {
+        "index": 1,
+        "raw_box": [
+          554,
+          19,
+          1014,
+          499
+        ],
+        "raw_component": "references/raw_component_move_v01_01.png",
+        "preview_fit": 0.5,
+        "preview_place": [
+          13,
+          16,
+          230,
+          240
+        ]
+      },
+      {
+        "index": 2,
+        "raw_box": [
+          1070,
+          19,
+          1516,
+          498
+        ],
+        "raw_component": "references/raw_component_move_v01_02.png",
+        "preview_fit": 0.5010438413361169,
+        "preview_place": [
+          16,
+          16,
+          223,
+          240
+        ]
+      },
+      {
+        "index": 3,
+        "raw_box": [
+          35,
+          532,
+          498,
+          1006
+        ],
+        "raw_component": "references/raw_component_move_v01_03.png",
+        "preview_fit": 0.5063291139240507,
+        "preview_place": [
+          11,
+          16,
+          234,
+          240
+        ]
+      },
+      {
+        "index": 4,
+        "raw_box": [
+          551,
+          532,
+          1014,
+          1001
+        ],
+        "raw_component": "references/raw_component_move_v01_04.png",
+        "preview_fit": 0.511727078891258,
+        "preview_place": [
+          9,
+          16,
+          237,
+          240
+        ]
+      },
+      {
+        "index": 5,
+        "raw_box": [
+          1063,
+          531,
+          1524,
+          1007
+        ],
+        "raw_component": "references/raw_component_move_v01_05.png",
+        "preview_fit": 0.5042016806722689,
+        "preview_place": [
+          12,
+          16,
+          232,
+          240
+        ]
+      }
+    ]
+  },
+  {
+    "action": "windup",
+    "version": "v02",
+    "poses": [
+      {
+        "index": 0,
+        "raw_box": [
+          83,
+          17,
+          595,
+          602
+        ],
+        "raw_component": "references/raw_component_windup_v02_00.png",
+        "preview_fit": 0.41025641025641024,
+        "preview_place": [
+          23,
+          16,
+          210,
+          240
+        ]
+      },
+      {
+        "index": 1,
+        "raw_box": [
+          609,
+          59,
+          1234,
+          605
+        ],
+        "raw_component": "references/raw_component_windup_v02_01.png",
+        "preview_fit": 0.384,
+        "preview_place": [
+          8,
+          46,
+          240,
+          210
+        ]
+      },
+      {
+        "index": 2,
+        "raw_box": [
+          110,
+          638,
+          613,
+          1237
+        ],
+        "raw_component": "references/raw_component_windup_v02_02.png",
+        "preview_fit": 0.4006677796327212,
+        "preview_place": [
+          27,
+          16,
+          202,
+          240
+        ]
+      }
+    ]
+  },
+  {
+    "action": "attack",
+    "version": "v02",
+    "poses": [
+      {
+        "index": 0,
+        "raw_box": [
+          38,
+          14,
+          507,
+          647
+        ],
+        "raw_component": "references/raw_component_attack_v02_00.png",
+        "preview_fit": 0.3791469194312796,
+        "preview_place": [
+          39,
+          16,
+          178,
+          240
+        ]
+      },
+      {
+        "index": 1,
+        "raw_box": [
+          592,
+          142,
+          1228,
+          647
+        ],
+        "raw_component": "references/raw_component_attack_v02_01.png",
+        "preview_fit": 0.37735849056603776,
+        "preview_place": [
+          8,
+          65,
+          240,
+          191
+        ]
+      },
+      {
+        "index": 2,
+        "raw_box": [
+          22,
+          693,
+          618,
+          1198
+        ],
+        "raw_component": "references/raw_component_attack_v02_02.png",
+        "preview_fit": 0.40268456375838924,
+        "preview_place": [
+          8,
+          53,
+          240,
+          203
+        ]
+      },
+      {
+        "index": 3,
+        "raw_box": [
+          647,
+          684,
+          1228,
+          1199
+        ],
+        "raw_component": "references/raw_component_attack_v02_03.png",
+        "preview_fit": 0.41308089500860584,
+        "preview_place": [
+          8,
+          43,
+          240,
+          213
+        ]
+      }
+    ]
+  },
+  {
+    "action": "plant",
+    "version": "v01",
+    "poses": [
+      {
+        "index": 0,
+        "raw_box": [
+          77,
+          60,
+          654,
+          610
+        ],
+        "raw_component": "references/raw_component_plant_v01_00.png",
+        "preview_fit": 0.41594454072790293,
+        "preview_place": [
+          8,
+          27,
+          240,
+          229
+        ]
+      },
+      {
+        "index": 1,
+        "raw_box": [
+          681,
+          115,
+          1148,
+          611
+        ],
+        "raw_component": "references/raw_component_plant_v01_01.png",
+        "preview_fit": 0.4838709677419355,
+        "preview_place": [
+          15,
+          16,
+          226,
+          240
+        ]
+      },
+      {
+        "index": 2,
+        "raw_box": [
+          64,
+          685,
+          515,
+          1197
+        ],
+        "raw_component": "references/raw_component_plant_v01_02.png",
+        "preview_fit": 0.46875,
+        "preview_place": [
+          22,
+          16,
+          211,
+          240
+        ]
+      },
+      {
+        "index": 3,
+        "raw_box": [
+          696,
+          651,
+          1134,
+          1197
+        ],
+        "raw_component": "references/raw_component_plant_v01_03.png",
+        "preview_fit": 0.43956043956043955,
+        "preview_place": [
+          31,
+          16,
+          193,
+          240
+        ]
+      }
+    ]
+  },
+  {
+    "action": "summon",
+    "version": "v01",
+    "poses": [
+      {
+        "index": 0,
+        "raw_box": [
+          60,
+          20,
+          563,
+          559
+        ],
+        "raw_component": "references/raw_component_summon_v01_00.png",
+        "preview_fit": 0.4452690166975881,
+        "preview_place": [
+          16,
+          16,
+          224,
+          240
+        ]
+      },
+      {
+        "index": 1,
+        "raw_box": [
+          631,
+          20,
+          1130,
+          559
+        ],
+        "raw_component": "references/raw_component_summon_v01_01.png",
+        "preview_fit": 0.4452690166975881,
+        "preview_place": [
+          17,
+          16,
+          222,
+          240
+        ]
+      },
+      {
+        "index": 2,
+        "raw_box": [
+          54,
+          619,
+          606,
+          1166
+        ],
+        "raw_component": "references/raw_component_summon_v01_02.png",
+        "preview_fit": 0.43478260869565216,
+        "preview_place": [
+          8,
+          18,
+          240,
+          238
+        ]
+      },
+      {
+        "index": 3,
+        "raw_box": [
+          631,
+          617,
+          1136,
+          1166
+        ],
+        "raw_component": "references/raw_component_summon_v01_03.png",
+        "preview_fit": 0.4371584699453552,
+        "preview_place": [
+          17,
+          16,
+          221,
+          240
+        ]
+      }
+    ]
+  }
+]

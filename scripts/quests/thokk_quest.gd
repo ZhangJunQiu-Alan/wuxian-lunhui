@@ -24,7 +24,10 @@ func _hidden_spot() -> Vector2:
 
 
 func _on_accept() -> void:
-	_giant = game.spawn_enemy("thokk", marker_pos + Vector2(0, -40), true)
+	_giant = game.spawn_enemy("thokk", marker_pos + Vector2(0, -40), true, true)
+	if _giant == null:
+		complete(false)
+		return
 	_giant.killed.connect(_on_giant_killed)
 
 
@@ -36,7 +39,10 @@ func _on_giant_killed(_e: Enemy) -> void:
 	var at := _giant.global_position
 	FxLayer.floating_text(at + Vector2(0, -40), tr("「你抓不住我！」"), color)
 	FxLayer.burst(at, color, 30, 260.0, 4.0)
-	_giant = game.spawn_enemy("thokk", at, true)
+	_giant = game.spawn_enemy("thokk", at, true, true)
+	if _giant == null:
+		complete(false)
+		return
 	_giant.speed *= 1.6
 	_giant.flee_to = Game.clamp_to_map(at + (at - player.global_position).normalized() * FLEE_DISTANCE, 80.0)
 	_giant.killed.connect(_on_giant_killed)

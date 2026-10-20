@@ -1,0 +1,17 @@
+{
+  "tool": "image_gen.imagegen",
+  "id": "surtr_idle",
+  "frame_size": [
+    256,
+    256
+  ],
+  "frames": 4,
+  "fps": 8,
+  "loop": true,
+  "refs": [
+    "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskK3_fire_2026-10-20/references/surtr_action_master_4x.png",
+    "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskK3_fire_2026-10-20/references/surtr.png"
+  ],
+  "prompt": "Use case: sprite-animation, identity-preserving edit. Input1 is the exact approved game character in its256x256 action canvas, with the original192px character placed at(32,64). Input2 is the same original. Create FOUR subtle IDLE poses of the SAME fiery giant, not redesign. Same three-quarter RIGHT-facing stance, huge charcoal-black/old-bronze riveted segmented armor, molten orange cracks, crown-like fire on helmet, ragged crimson waistcloth, heavy plated boots, TWO arms and TWO legs, same long broad orange-white flaming sword gripped in his near hand and held diagonally down-right. Preserve exact sword, helmet silhouette, armor, facial identity and upper-left material lighting. Four-frame2x2 square atlas, four equal logical256x256 cells, no gutters. The torso/legs/helmet/fire crown standing height is ONLY about184px, NOT filling all256; leave original64px headroom for later actions. Boots baseline254, hip/body centerx128 fixed, body same scale in ALL frames and as input, entire sword fits with>=2px transparent margin. Tiny breathing and fire flicker only, no sliding feet, no head rotation, no big flame cloud or ground fire, no movement trail. Last-to-first is a gentle8fps loop. Keep all flame tips and sword inside own cell. Crisp fine low-resolution game pixel clusters, dark steel/bronze/red/orange palette<=48RGB, upper-left light, isolated RGBA with true zero-alpha background, entity silhouette binary alpha, no painted ground/shadow, scenery, label, grid, words or watermark.",
+  "transparent_background": true
+}

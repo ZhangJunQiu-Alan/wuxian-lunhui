@@ -1,0 +1,8 @@
+{
+  "id": "garm_bite",
+  "version": "v01",
+  "prompt": "Use case: stylized-concept. Production pixel-art dark underworld VFX; project-owned inputs are only material/style references, do not draw the creature. A dark-red hellhound bite contact effect, no animal body or head. Opposed ivory-red fang-like crescent slashes clamp around a compact red contact spark at CENTER. Four ONESHOT phases: faint approaching teeth, sharp close/clamp, short crimson tearing streak, few dark-red fading scraps. Dark red and rusty burgundy, tiny bone-white highlights, not blue or icy. No large blood spray, no explosion disc. EXACTLY FOUR DISTINCT frames in a2-column2-row grid, same square cells, native64x64 each, same center/scale across frames. Crisp limited32RGB pixel clusters, desaturated dark red/iron greys, no ice. Sparse alpha steps permitted for light/mist, no opaque backing. Entire silhouette fits cell with transparent padding, except chain repeating ports. No label, text, grid, frame, watermark, body, scene or ground shadow.",
+  "reference_paths": [
+    "assets/sprites/bosses/garm.png"
+  ]
+}

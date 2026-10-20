@@ -1,0 +1,286 @@
+{
+  "task": "K5",
+  "formal_png": 2,
+  "frames": 5,
+  "assets": [
+    {
+      "id": "giant_tread",
+      "formal_path": "assets/sprites/decals/vigrid/giant_tread.png",
+      "candidate": "candidates/giant_tread_v01.png",
+      "frame_size": [
+        64,
+        64
+      ],
+      "frames": 1,
+      "fps": 0,
+      "loop": false,
+      "anchor": [
+        32,
+        32
+      ],
+      "rgb_count": 24,
+      "sha256": "5c14e801a485c756fb0780d607dc33b83a1d33343b85b71bac3b18d001612dcb",
+      "game_acceptance": "not_tested",
+      "raw": "originals/giant_tread_v01_raw.png",
+      "prompt": "records/prompt_giant_tread_v01.json",
+      "source_result": "records/result_giant_tread_v01.json",
+      "license": "OpenAI output ownership extent law; nonexclusive; assets/LICENSES.md"
+    },
+    {
+      "id": "distant_battle",
+      "formal_path": "assets/sprites/effects/environment/vigrid/distant_battle.png",
+      "candidate": "candidates/distant_battle_composite_v01.png",
+      "frame_size": [
+        512,
+        128
+      ],
+      "frames": 4,
+      "fps": 8,
+      "loop": true,
+      "anchor": [
+        0,
+        0
+      ],
+      "rgb_count": 24,
+      "sha256": "51c92f01ba3a30776691771cec87f1575abc2f19ff24dc4a559fab348d35bfb2",
+      "game_acceptance": "not_tested",
+      "source_recipe": "records/distant_composition.json",
+      "source_captures": [
+        "originals/distant_composite_00_godot.png",
+        "originals/distant_composite_01_godot.png",
+        "originals/distant_composite_02_godot.png",
+        "originals/distant_composite_03_godot.png"
+      ],
+      "license": "composite existing project K2/K3/K4 assets; assets/LICENSES.md"
+    }
+  ],
+  "reused_tiles": [
+    {
+      "path": "assets/sprites/ground/vigrid/burnt_grass.png",
+      "sha256": "6f2333fe144ee0eff736c837ec2ae5ba546fa93e786c0bb009d0dd2392559999",
+      "size": [
+        64,
+        64
+      ],
+      "rgb_count": 19,
+      "opaque": true,
+      "horizontal_seam_mean_absRGB": 2.4791666666666665,
+      "interior_neighbor_mean_absRGB": 7.592427248677249,
+      "scope": "reuse tile sampling evidence, not proof of all crossvariant edges seamless"
+    },
+    {
+      "path": "assets/sprites/ground/vigrid/cracked_lava.png",
+      "sha256": "2782e6bacb893eaf12f9b17890585008e2dafeefe9ccf571d548ad77c0f39507",
+      "size": [
+        64,
+        64
+      ],
+      "rgb_count": 21,
+      "opaque": true,
+      "horizontal_seam_mean_absRGB": 2.1197916666666665,
+      "interior_neighbor_mean_absRGB": 5.441054894179894,
+      "scope": "reuse tile sampling evidence, not proof of all crossvariant edges seamless"
+    },
+    {
+      "path": "assets/sprites/ground/vigrid/scorched_01.png",
+      "sha256": "3748580e22d48641ca2776b843445a7c10ae1385a4e3251000eae628ead89ba8",
+      "size": [
+        64,
+        64
+      ],
+      "rgb_count": 21,
+      "opaque": true,
+      "horizontal_seam_mean_absRGB": 2.9583333333333335,
+      "interior_neighbor_mean_absRGB": 6.707506613756614,
+      "scope": "reuse tile sampling evidence, not proof of all crossvariant edges seamless"
+    },
+    {
+      "path": "assets/sprites/ground/vigrid/scorched_02.png",
+      "sha256": "33c892d8afe17ce56f34408bb015394ae7595f5d9ded6a5cc4a9e3c2b6befa22",
+      "size": [
+        64,
+        64
+      ],
+      "rgb_count": 24,
+      "opaque": true,
+      "horizontal_seam_mean_absRGB": 3.1770833333333335,
+      "interior_neighbor_mean_absRGB": 8.416997354497354,
+      "scope": "reuse tile sampling evidence, not proof of all crossvariant edges seamless"
+    },
+    {
+      "path": "assets/sprites/ground/vigrid/scorched_03.png",
+      "sha256": "b307a804cd093754eb2ad1f7a9f31ec661981881576cd03ba821739f06127cd3",
+      "size": [
+        64,
+        64
+      ],
+      "rgb_count": 23,
+      "opaque": true,
+      "horizontal_seam_mean_absRGB": 2.8697916666666665,
+      "interior_neighbor_mean_absRGB": 7.274884259259259,
+      "scope": "reuse tile sampling evidence, not proof of all crossvariant edges seamless"
+    },
+    {
+      "path": "assets/sprites/ground/vigrid/scorched_04.png",
+      "sha256": "2d1f7e6bff2849a208e9f0abc52aeaa7a48ebcd0bf3f3128615ff9434e5727a0",
+      "size": [
+        64,
+        64
+      ],
+      "rgb_count": 24,
+      "opaque": true,
+      "horizontal_seam_mean_absRGB": 2.0260416666666665,
+      "interior_neighbor_mean_absRGB": 7.163277116402116,
+      "scope": "reuse tile sampling evidence, not proof of all crossvariant edges seamless"
+    }
+  ],
+  "reused_masks": [
+    {
+      "path": "assets/sprites/ground/midgard/path_edge_e.png",
+      "size": [
+        64,
+        64
+      ],
+      "alpha": [
+        0,
+        255
+      ],
+      "sha256": "5d6a622c7cf70cc1586655e053fde8340c3c9f09fedc196fdc0aac51111ccfab"
+    },
+    {
+      "path": "assets/sprites/ground/midgard/path_edge_inner_ne.png",
+      "size": [
+        64,
+        64
+      ],
+      "alpha": [
+        0,
+        255
+      ],
+      "sha256": "07181467abeae56f4b7654ce164f42122d44fa8c523926673590cf079b45ec86"
+    },
+    {
+      "path": "assets/sprites/ground/midgard/path_edge_inner_nw.png",
+      "size": [
+        64,
+        64
+      ],
+      "alpha": [
+        0,
+        255
+      ],
+      "sha256": "3055f208a87cd522200dbbf2ce94dbb0cb45280ba84542db9b9c2ef57afa1ec0"
+    },
+    {
+      "path": "assets/sprites/ground/midgard/path_edge_inner_se.png",
+      "size": [
+        64,
+        64
+      ],
+      "alpha": [
+        0,
+        255
+      ],
+      "sha256": "16613d97089d8714ab4682d127b17f6bc5383b5bef2c73aa224722518fce5a4e"
+    },
+    {
+      "path": "assets/sprites/ground/midgard/path_edge_inner_sw.png",
+      "size": [
+        64,
+        64
+      ],
+      "alpha": [
+        0,
+        255
+      ],
+      "sha256": "eeb77eb92c7a1346948607148e1d865680298245c4184a5dbc7e98551d30d39b"
+    },
+    {
+      "path": "assets/sprites/ground/midgard/path_edge_n.png",
+      "size": [
+        64,
+        64
+      ],
+      "alpha": [
+        0,
+        255
+      ],
+      "sha256": "19d6aae3cf147c76d18d7cf36d2a8e45544014b9915ef870d79cb323e84e1f36"
+    },
+    {
+      "path": "assets/sprites/ground/midgard/path_edge_outer_ne.png",
+      "size": [
+        64,
+        64
+      ],
+      "alpha": [
+        0,
+        255
+      ],
+      "sha256": "67a4e82f3844add463f3687304bd609a6e2a70ebdbbade0af04f17f8fa28c036"
+    },
+    {
+      "path": "assets/sprites/ground/midgard/path_edge_outer_nw.png",
+      "size": [
+        64,
+        64
+      ],
+      "alpha": [
+        0,
+        255
+      ],
+      "sha256": "96eca3bcffb8c108aefbaba117a95db4e7235cbff0bae54546be19f543225a40"
+    },
+    {
+      "path": "assets/sprites/ground/midgard/path_edge_outer_se.png",
+      "size": [
+        64,
+        64
+      ],
+      "alpha": [
+        0,
+        255
+      ],
+      "sha256": "2432a5e06a3faa9354f88ff34f6c01c63b2bf2d8a343aae3d978b5aaea5d8c6e"
+    },
+    {
+      "path": "assets/sprites/ground/midgard/path_edge_outer_sw.png",
+      "size": [
+        64,
+        64
+      ],
+      "alpha": [
+        0,
+        255
+      ],
+      "sha256": "6fe56b5dae891d2dfb6895be6f1b5065d2da74df7eb39001ffe23461f4c193db"
+    },
+    {
+      "path": "assets/sprites/ground/midgard/path_edge_s.png",
+      "size": [
+        64,
+        64
+      ],
+      "alpha": [
+        0,
+        255
+      ],
+      "sha256": "b74503a3e153a1287f396920b7f92e0aba359a971be1e3bbcde8ee6ba144e184"
+    },
+    {
+      "path": "assets/sprites/ground/midgard/path_edge_w.png",
+      "size": [
+        64,
+        64
+      ],
+      "alpha": [
+        0,
+        255
+      ],
+      "sha256": "542463b9d87aca777de3351d1098fe23ec07127fb94591da1a464b5793c211a5"
+    }
+  ],
+  "contract": "K5_reuse_addendum_v1.3.json",
+  "production": "complete",
+  "game_acceptance": "not_tested"
+}

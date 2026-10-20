@@ -1,0 +1,93 @@
+{
+  "date": "2026-10-19",
+  "status": "pass",
+  "formal_files": 33,
+  "unique_formal_paths": 33,
+  "total_frames_checked": 118,
+  "GIFs_decoded_checked": 56,
+  "originals_decoded_and_hashed": 35,
+  "archived_reference_hashes_checked": 26,
+  "local_links_checked": 235,
+  "groups": [
+    {
+      "task": "H0",
+      "files_checked": 4,
+      "source_originals_decoded": 5,
+      "frames_checked": 12,
+      "GIFs_decoded_checked": 4,
+      "status": "pass",
+      "code_integration": "integrated",
+      "game_acceptance": "controlled_runtime_verified"
+    },
+    {
+      "task": "H1",
+      "files_checked": 4,
+      "source_originals_decoded": 4,
+      "frames_checked": 15,
+      "GIFs_decoded_checked": 8,
+      "status": "pass",
+      "code_integration": "integrated",
+      "game_acceptance": "controlled_runtime_verified"
+    },
+    {
+      "task": "H2",
+      "files_checked": 3,
+      "source_originals_decoded": 3,
+      "frames_checked": 12,
+      "GIFs_decoded_checked": 6,
+      "status": "pass",
+      "code_integration": "integrated",
+      "game_acceptance": "controlled_runtime_verified"
+    },
+    {
+      "task": "H3",
+      "files_checked": 5,
+      "source_originals_decoded": 5,
+      "frames_checked": 20,
+      "GIFs_decoded_checked": 10,
+      "status": "pass",
+      "code_integration": "integrated",
+      "game_acceptance": "controlled_runtime_verified"
+    },
+    {
+      "task": "H4",
+      "files_checked": 5,
+      "source_originals_decoded": 5,
+      "frames_checked": 17,
+      "GIFs_decoded_checked": 8,
+      "status": "pass",
+      "code_integration": "integrated",
+      "game_acceptance": "controlled_runtime_verified"
+    },
+    {
+      "task": "H5",
+      "files_checked": 5,
+      "source_originals_decoded": 6,
+      "frames_checked": 20,
+      "GIFs_decoded_checked": 10,
+      "status": "pass",
+      "code_integration": "integrated",
+      "game_acceptance": "controlled_runtime_verified"
+    },
+    {
+      "task": "H6",
+      "files_checked": 7,
+      "source_originals_decoded": 7,
+      "frames_checked": 22,
+      "GIFs_decoded_checked": 10,
+      "status": "pass",
+      "code_integration": "integrated",
+      "game_acceptance": "controlled_runtime_verified"
+    }
+  ],
+  "life_death_overlay_mean_grey": {
+    "hel_life_ground": 24.27899169921875,
+    "hel_death_ground": 23.5491943359375
+  },
+  "errors": [],
+  "production": "delivered",
+  "file_self_checks": "pass",
+  "code_integration": "integrated",
+  "game_acceptance": "controlled_runtime_verified",
+  "scope": "H0 through H6 only; no G6/I/J/K/L work; no commits or pushes"
+}

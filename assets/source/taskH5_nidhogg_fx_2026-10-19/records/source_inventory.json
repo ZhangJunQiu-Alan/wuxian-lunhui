@@ -1,0 +1,47 @@
+{
+  "task": "H5",
+  "tool_calls": 6,
+  "references": [
+    {
+      "actual_input_path": "assets/sprites/effects/ground_crack.png",
+      "archived_path": "references/ground_crack.png",
+      "sha256": "c7178cac3ba5662cfa99d2bef22d62249762a564143b504c66e8d59bd71ffbf8"
+    },
+    {
+      "actual_input_path": "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskH5_nidhogg_fx_2026-10-19/originals/nidhogg_emerge_burst_v01.png",
+      "archived_path": "references/nidhogg_emerge_burst_v01.png",
+      "sha256": "6ed84079be20af380153199c1727ddb191ad310b7f367c3cc615bc8151175b1c"
+    },
+    {
+      "actual_input_path": "assets/sprites/effects/poison_pool.png",
+      "archived_path": "references/poison_pool.png",
+      "sha256": "0284bb2e78321311e43248046a820d43920193764e68f64d662d25cd1516374f"
+    }
+  ],
+  "originals": [
+    {
+      "file": "originals/nidhogg_burrow_dust_v01.png",
+      "sha256": "d728fdeefbc0e536612970bbe31542c0b0f44fdd0f61bb8e7bd9c03718312ac3"
+    },
+    {
+      "file": "originals/nidhogg_emerge_burst_v01.png",
+      "sha256": "6ed84079be20af380153199c1727ddb191ad310b7f367c3cc615bc8151175b1c"
+    },
+    {
+      "file": "originals/nidhogg_emerge_burst_v02.png",
+      "sha256": "965bb392a7956b540b32166e4ff2ed5d01a5099dfa56da9d90661a6d7a09a629"
+    },
+    {
+      "file": "originals/nidhogg_gnaw_heal_v01.png",
+      "sha256": "18ebc97bbcbd9522517bb72f106f82d6bc19a1ae749d4a2fc2d06d9f9df3dd32"
+    },
+    {
+      "file": "originals/nidhogg_gnaw_stagger_v01.png",
+      "sha256": "c56389db73d4453ca6fb9c653f0137b1460f017d65e3f7c77a482cd5ccee7852"
+    },
+    {
+      "file": "originals/nidhogg_poison_breath_v01.png",
+      "sha256": "e38b29e5430a440c129bf54625281238e1631ac00f05bb8423176204d8bb4edd"
+    }
+  ]
+}

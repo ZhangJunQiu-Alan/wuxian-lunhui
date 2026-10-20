@@ -1,0 +1,17 @@
+{
+  "pid": 15192,
+  "output": "/Users/zhangjunqiu/Desktop/\u65e0\u9650\u6050\u6016/assets/source/taskJ1_dimension_2026-10-19/soak_2026-10-19/cache_probe",
+  "smoke": false,
+  "args": [
+    "godot",
+    "--path",
+    "/Users/zhangjunqiu/Desktop/\u65e0\u9650\u6050\u6016/assets/source/taskJ1_dimension_2026-10-19/soak_2026-10-19/runtime",
+    "--max-fps",
+    "60",
+    "--script",
+    "tools/cache_probe.gd",
+    "--",
+    "--save-file=res://validation/soak_save.json",
+    "--settings-file=res://validation/soak_settings.cfg"
+  ]
+}

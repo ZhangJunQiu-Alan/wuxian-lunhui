@@ -1,0 +1,68 @@
+{
+  "input": "originals/nidhogg_burrow_dust_v01.png",
+  "input_sha256": "d728fdeefbc0e536612970bbe31542c0b0f44fdd0f61bb8e7bd9c03718312ac3",
+  "raw_size": [
+    1536,
+    1024
+  ],
+  "grid": [
+    2,
+    2
+  ],
+  "cut_boxes": [
+    [
+      235,
+      120,
+      614,
+      487
+    ],
+    [
+      147,
+      203,
+      602,
+      499
+    ],
+    [
+      244,
+      109,
+      632,
+      440
+    ],
+    [
+      211,
+      184,
+      537,
+      444
+    ]
+  ],
+  "single_common_scale": 0.16348773841961853,
+  "placements": [
+    [
+      17,
+      2,
+      62,
+      60
+    ],
+    [
+      11,
+      8,
+      74,
+      48
+    ],
+    [
+      16,
+      5,
+      63,
+      54
+    ],
+    [
+      21,
+      10,
+      53,
+      43
+    ]
+  ],
+  "operations": "original alpha threshold/quantization, source frame cuts, single common nearest resize, source-derived shared palette, whole-frame placement; no character/effect drawing",
+  "candidate": "candidates/nidhogg_burrow_dust_v01.png",
+  "candidate_sha256": "311d155d6539a506c789ed31aa6d2b4c3d5a4ed1b983ed0634a2b755a2c2c511"
+}

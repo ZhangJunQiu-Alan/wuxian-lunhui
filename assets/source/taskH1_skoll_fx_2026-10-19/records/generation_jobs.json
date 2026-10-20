@@ -1,0 +1,96 @@
+[
+  {
+    "id": "skoll_bite",
+    "version": "v01",
+    "prompt": "Use case: stylized-concept. Production pixel-art game VFX animation, not a scene illustration. Inputs are project-owned references for crisp clustered pixel texture only. Restrained abstract wolf-bite contact flash, no wolf head/body. Two small opposing crescent rows of pale grey-violet tooth-shaped slash marks closing at CENTER. Four ONESHOT phases: faint opening tooth marks, sharp close/clamp contact at center, short tearing stroke, sparse fading scraps. Clear compact impact point; no giant round explosion, no blood, no ice. Cool grey-purple palette, very small pale core. EXACTLY FOUR distinct animation cells in a TWO-COLUMN, TWO-ROW grid, read row-major. Each cell aspect ratio 64:64; final native cell size 64x64. ALL cells have identical camera, scale, center/pivot and generous transparent padding. Entire effect must fit inside each cell. Crisp deliberately limited48RGB palette; alpha transparency allowed for light/smoke, no opaque dark background, no smooth airbrushed gradient. Do not include labels, grid lines, borders, text, watermark, creatures, scenery or ground. Genuine transparent PNG.",
+    "reference_paths": [
+      "assets/sprites/effects/katana_slash.png"
+    ],
+    "archived_input_references": [
+      {
+        "actual_input_path": "assets/sprites/effects/katana_slash.png",
+        "archived_path": "references/katana_slash.png",
+        "sha256": "7bd81d28708a9f538306c26680e7520af1f5c7349ea52c634f341e95d5cc6d7a"
+      }
+    ],
+    "archived_output": {
+      "file": "originals/skoll_bite_v01.png",
+      "sha256": "4c5813e3f780671be55c7a30872b1bbf2edd7b5af072914d1aff1280f9a7f3f9"
+    },
+    "tool": "OpenAI built-in image_gen",
+    "source_terms": "https://openai.com/policies/terms-of-use/",
+    "status": "selected"
+  },
+  {
+    "id": "skoll_dash_trail",
+    "version": "v01",
+    "prompt": "Use case: stylized-concept. Production pixel-art game VFX animation, not a scene illustration. Inputs are project-owned references for crisp clustered pixel texture only. Cool grey-purple high-speed dash trail moving RIGHT. Only three tapering wind ribbons left of the leading anchor at the RIGHT MIDPOINT; no wolf, no animal silhouette, no footprints. Four distinct flowing ribbon phases for a seamless LOOP, ribbon tips curl and break naturally but thickness/extent remain stable. Leading edge ends just inside the right side; the body of the trail extends LEFT. Quiet grey-violet highlights and dark slate tones, no gold, no blue ice crystals. EXACTLY FOUR distinct animation cells in a TWO-COLUMN, TWO-ROW grid, read row-major. Each cell aspect ratio 64:32; final native cell size 64x32. ALL cells have identical camera, scale, center/pivot and generous transparent padding. Entire effect must fit inside each cell. Crisp deliberately limited48RGB palette; alpha transparency allowed for light/smoke, no opaque dark background, no smooth airbrushed gradient. Do not include labels, grid lines, borders, text, watermark, creatures, scenery or ground. Genuine transparent PNG.",
+    "reference_paths": [
+      "assets/sprites/effects/rune_missile.png"
+    ],
+    "archived_input_references": [
+      {
+        "actual_input_path": "assets/sprites/effects/rune_missile.png",
+        "archived_path": "references/rune_missile.png",
+        "sha256": "c199b65f5786029aba9fe4e60f84cb31d158b2267a91e93f9861122ef827de8d"
+      }
+    ],
+    "archived_output": {
+      "file": "originals/skoll_dash_trail_v01.png",
+      "sha256": "dee96c99f2cf71f209b527fd7098b821de33ae1f6d7b01f5772fced9175da952"
+    },
+    "tool": "OpenAI built-in image_gen",
+    "source_terms": "https://openai.com/policies/terms-of-use/",
+    "status": "selected"
+  },
+  {
+    "id": "skoll_howl_body",
+    "version": "v01",
+    "prompt": "Use case: identity-preserve. Use image1 as STRICT CHARACTER identity and palette reference: the exact same dark brown-black giant wolf with bristling fur, golden/orange fur highlights, sharp amber eye, same tail shape and four clawed paws. Body-only new HOWL pose, head lifts up while muzzle remains angled to RIGHT. THREE distinct consecutive full-body poses in one row of THREE equal SQUARE cells: chin raises slightly, head tilts upward with mouth open in a howl, head begins lowering with jaws closing. Keep torso, paws and planted foot baseline stationary, same body scale and proportions as reference. Head/ears fully fit; do not sit or turn front-facing. No sound waves, no aura, no extra flames, no ground or shadow. Top-left light, opaque crisp sprite silhouette on genuine transparent background. Whole wolf inside each cell, generous borders. Wide3:1 sheet.Genuine transparent background, no grid lines, text, labels, scenery, watermark. Keep full silhouette inside each cell with generous transparent borders. Limited48RGB colors, crisp pixels rather than smooth blur.",
+    "reference_paths": [
+      "assets/sprites/bosses/skoll.png",
+      "assets/sprites/bosses/skoll_idle.png"
+    ],
+    "archived_input_references": [
+      {
+        "actual_input_path": "assets/sprites/bosses/skoll.png",
+        "archived_path": "references/skoll.png",
+        "sha256": "cf0caab4c10226dcef87dcd359b28f4c84046b3da20193f4c257463e8a72f0a9"
+      },
+      {
+        "actual_input_path": "assets/sprites/bosses/skoll_idle.png",
+        "archived_path": "references/skoll_idle.png",
+        "sha256": "19d76d98e3f5a8bb76f9bafb7e0239f069aaf14c175ff6fc5fee465a6421b8a3"
+      }
+    ],
+    "archived_output": {
+      "file": "originals/skoll_howl_body_v01.png",
+      "sha256": "0da74c2b1acabff67e72001ad19d28fe665a1e12142f0115d62aff94a136710b"
+    },
+    "tool": "OpenAI built-in image_gen",
+    "source_terms": "https://openai.com/policies/terms-of-use/",
+    "status": "selected"
+  },
+  {
+    "id": "skoll_howl",
+    "version": "v01",
+    "prompt": "Use case: stylized-concept. Production pixel-art game effect. Outward sound-pressure wave with a very LARGE COMPLETELY TRANSPARENT CENTRAL HOLE. Thin broken cool grey-violet concentric sound ribbons, no body, no wolf, no ice crystals. Four ONESHOT phases: small faint ring, medium brighter ring, larger thin ring, faint outer wave fragments. Last frame dissipates. Keep the central40percent diameter completely transparent in EVERY cell. Sparse texture, alpha-transparent, not an opaque disc. EXACTLY FOUR distinct animation frames in a2-column2-row grid of equal SQUARE cells, read row-major. Native128x128 per frame. Same center/scale in all cells. Match project reference crisp pixel clusters and cool grey-purple palette, not the ice spikes. Genuine transparent background, no grid lines, text, labels, scenery, watermark. Keep full silhouette inside each cell with generous transparent borders. Limited48RGB colors, crisp pixels rather than smooth blur.",
+    "reference_paths": [
+      "assets/sprites/effects/frost_shockwave.png"
+    ],
+    "archived_input_references": [
+      {
+        "actual_input_path": "assets/sprites/effects/frost_shockwave.png",
+        "archived_path": "references/frost_shockwave.png",
+        "sha256": "a0aa09571dec4959ee2a9f66dc6a6a038a2017fad3dea1140680bc837495c625"
+      }
+    ],
+    "archived_output": {
+      "file": "originals/skoll_howl_v01.png",
+      "sha256": "686a994adc8d693021ecc26aef57142e47345f61c4e790d2247a5a615242d975"
+    },
+    "tool": "OpenAI built-in image_gen",
+    "source_terms": "https://openai.com/policies/terms-of-use/",
+    "status": "selected"
+  }
+]

@@ -1,0 +1,287 @@
+[
+  {
+    "action": "idle",
+    "candidate": "candidates/head_idle_v01.png",
+    "raw_size": [
+      1254,
+      1254
+    ],
+    "method": "fixed 2x2 cells, nearest128, alpha>=128, nearest color from exact approved 48RGB palette; no painted pixels or motion synthesis",
+    "logical_frame": [
+      128,
+      128
+    ],
+    "frames": 4,
+    "fps": 8,
+    "loop": true,
+    "per_frame": [
+      {
+        "frame": 0,
+        "bbox": [
+          0,
+          9,
+          120,
+          108
+        ],
+        "neck_span": [
+          47,
+          77
+        ],
+        "neck_center": 62.0,
+        "neck_socket_occupied": true,
+        "sha256": "6197b56f884e7d1ced0bb1211eaa6e98f647730ed51a1afde8f7135e6cc03c3c",
+        "rgb_colors": 48
+      },
+      {
+        "frame": 1,
+        "bbox": [
+          0,
+          9,
+          121,
+          108
+        ],
+        "neck_span": [
+          47,
+          77
+        ],
+        "neck_center": 62.0,
+        "neck_socket_occupied": true,
+        "sha256": "938cb874e340f2d685f6f267298698626c40296beb125dd78b539f5062bda37d",
+        "rgb_colors": 48
+      },
+      {
+        "frame": 2,
+        "bbox": [
+          0,
+          9,
+          122,
+          108
+        ],
+        "neck_span": [
+          47,
+          77
+        ],
+        "neck_center": 62.0,
+        "neck_socket_occupied": true,
+        "sha256": "65398d6b4eb00665cdad28a5c75d9a3b91f27cf8e9e7024ac1fe20f84dbcdef0",
+        "rgb_colors": 48
+      },
+      {
+        "frame": 3,
+        "bbox": [
+          0,
+          9,
+          119,
+          108
+        ],
+        "neck_span": [
+          47,
+          77
+        ],
+        "neck_center": 62.0,
+        "neck_socket_occupied": true,
+        "sha256": "74d81238628f683be3a0390d1f6138645d64eca09444ea541cfdff7b53f0ba88",
+        "rgb_colors": 48
+      }
+    ],
+    "distinct_frame_hashes": 4,
+    "adjacent_pixel_changes": [
+      3810,
+      4061,
+      3979,
+      3788
+    ],
+    "candidate_sha256": "2b0ad892846cb1c30bbcebe9cfcde409098394cfac6d962f6f18ce5d09b3f517",
+    "all_sockets_occupied": true,
+    "socket_center_range": [
+      62.0,
+      62.0
+    ],
+    "visual_review": "pending",
+    "game_test": "not_performed"
+  },
+  {
+    "action": "windup",
+    "candidate": "candidates/head_windup_v01.png",
+    "raw_size": [
+      1254,
+      1254
+    ],
+    "method": "fixed 2x2 cells, nearest128, alpha>=128, nearest color from exact approved 48RGB palette; no painted pixels or motion synthesis",
+    "logical_frame": [
+      128,
+      128
+    ],
+    "frames": 3,
+    "fps": 8,
+    "loop": false,
+    "per_frame": [
+      {
+        "frame": 0,
+        "bbox": [
+          0,
+          10,
+          120,
+          108
+        ],
+        "neck_span": [
+          47,
+          76
+        ],
+        "neck_center": 61.5,
+        "neck_socket_occupied": true,
+        "sha256": "f681601b261d6f20812b59748132e093d5f0b02f4de7d7f03edf6dbf6be1bca8",
+        "rgb_colors": 48
+      },
+      {
+        "frame": 1,
+        "bbox": [
+          0,
+          10,
+          121,
+          113
+        ],
+        "neck_span": [
+          47,
+          76
+        ],
+        "neck_center": 61.5,
+        "neck_socket_occupied": true,
+        "sha256": "9e31d924f57191dde18801ef61f0f1bb698e51b2891a5118314eb549cb8b6c30",
+        "rgb_colors": 48
+      },
+      {
+        "frame": 2,
+        "bbox": [
+          0,
+          10,
+          121,
+          109
+        ],
+        "neck_span": [
+          47,
+          76
+        ],
+        "neck_center": 61.5,
+        "neck_socket_occupied": true,
+        "sha256": "cb1c302790969486314eb65e69677f941a9cb42bd85a1f920ffb308faf17c5c1",
+        "rgb_colors": 48
+      }
+    ],
+    "distinct_frame_hashes": 3,
+    "adjacent_pixel_changes": [
+      4701,
+      5137,
+      4930
+    ],
+    "candidate_sha256": "c6a051e66d473eb25d8d56d23e8d232b09c341a2649db3a4b1cb8d273fc6f6ab",
+    "all_sockets_occupied": true,
+    "socket_center_range": [
+      61.5,
+      61.5
+    ],
+    "visual_review": "pending",
+    "game_test": "not_performed"
+  },
+  {
+    "action": "attack",
+    "candidate": "candidates/head_attack_v01.png",
+    "raw_size": [
+      1254,
+      1254
+    ],
+    "method": "fixed 2x2 cells, nearest128, alpha>=128, nearest color from exact approved 48RGB palette; no painted pixels or motion synthesis",
+    "logical_frame": [
+      128,
+      128
+    ],
+    "frames": 4,
+    "fps": 16,
+    "loop": false,
+    "per_frame": [
+      {
+        "frame": 0,
+        "bbox": [
+          0,
+          9,
+          120,
+          110
+        ],
+        "neck_span": [
+          47,
+          76
+        ],
+        "neck_center": 61.5,
+        "neck_socket_occupied": true,
+        "sha256": "949d3fddfae792cdbf6ee2352bde69c99f5b56f02476be46448dc7425c6dc2ac",
+        "rgb_colors": 48
+      },
+      {
+        "frame": 1,
+        "bbox": [
+          0,
+          9,
+          122,
+          110
+        ],
+        "neck_span": [
+          47,
+          76
+        ],
+        "neck_center": 61.5,
+        "neck_socket_occupied": true,
+        "sha256": "7369541e28f050116f577580bbcbba1dc645414c9e2d6a383bf1420e62147d26",
+        "rgb_colors": 48
+      },
+      {
+        "frame": 2,
+        "bbox": [
+          0,
+          9,
+          121,
+          108
+        ],
+        "neck_span": [
+          47,
+          76
+        ],
+        "neck_center": 61.5,
+        "neck_socket_occupied": true,
+        "sha256": "5e66767a132bfba4b18a8b621286c9bb6bccdc86259523f9052262154cafee0c",
+        "rgb_colors": 47
+      },
+      {
+        "frame": 3,
+        "bbox": [
+          0,
+          9,
+          121,
+          109
+        ],
+        "neck_span": [
+          47,
+          76
+        ],
+        "neck_center": 61.5,
+        "neck_socket_occupied": true,
+        "sha256": "03822eb718e437464497f9ef4a9ad84d70c954c121cfd5cbe4536bdc4b2f0364",
+        "rgb_colors": 48
+      }
+    ],
+    "distinct_frame_hashes": 4,
+    "adjacent_pixel_changes": [
+      4417,
+      4447,
+      4052,
+      4072
+    ],
+    "candidate_sha256": "7be10ba971118e2aadaf785e03ae60c66d73c40da5657e87d073de15e28cb19a",
+    "all_sockets_occupied": true,
+    "socket_center_range": [
+      61.5,
+      61.5
+    ],
+    "visual_review": "pending",
+    "game_test": "not_performed"
+  }
+]

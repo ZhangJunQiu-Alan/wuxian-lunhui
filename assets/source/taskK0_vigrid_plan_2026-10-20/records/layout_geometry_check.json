@@ -1,0 +1,50 @@
+{
+  "status": "static_layout_check_only",
+  "grid": [
+    72,
+    72
+  ],
+  "blocked_cells": 18,
+  "reachable_cells": 5166,
+  "all_unblocked_reachable": true,
+  "landmarks_reachable": {
+    "battlefield": true,
+    "bifrost": true,
+    "giant_graveyard": true,
+    "frost_remnants": true,
+    "muspel_edge": true,
+    "dead_march": true
+  },
+  "spawn_clear": true,
+  "central_reserve_clear": true,
+  "horizon_outside_walk": true,
+  "corridor_clearances": [
+    {
+      "path": "assets/sprites/props/vigrid/bifrost_fragment.png",
+      "pos": [
+        -1756,
+        -1268
+      ],
+      "clearance_px": 200.0
+    },
+    {
+      "path": "assets/sprites/props/vigrid/giant_remains.png",
+      "pos": [
+        1756,
+        -1140
+      ],
+      "clearance_px": 200.0
+    },
+    {
+      "path": "assets/sprites/props/vigrid/giant_remains.png",
+      "pos": [
+        -1756,
+        1164
+      ],
+      "clearance_px": 235.53864678361276
+    }
+  ],
+  "corridors_allow_256px_plus_player_radius": true,
+  "runtime_collision": "not_tested",
+  "foot_offset_note": "circle center follows MapLayer.prop pos+(0,-radius/2); player radius14 inflation included"
+}

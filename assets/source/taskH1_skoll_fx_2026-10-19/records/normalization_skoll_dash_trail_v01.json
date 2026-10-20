@@ -1,0 +1,68 @@
+{
+  "input": "originals/skoll_dash_trail_v01.png",
+  "input_sha256": "dee96c99f2cf71f209b527fd7098b821de33ae1f6d7b01f5772fced9175da952",
+  "raw_size": [
+    1774,
+    887
+  ],
+  "grid": [
+    2,
+    2
+  ],
+  "cut_boxes": [
+    [
+      64,
+      125,
+      829,
+      368
+    ],
+    [
+      97,
+      116,
+      829,
+      375
+    ],
+    [
+      98,
+      110,
+      828,
+      372
+    ],
+    [
+      76,
+      113,
+      829,
+      372
+    ]
+  ],
+  "single_common_scale": 0.0784313725490196,
+  "placements": [
+    [
+      2,
+      6,
+      60,
+      19
+    ],
+    [
+      5,
+      6,
+      57,
+      20
+    ],
+    [
+      5,
+      5,
+      57,
+      21
+    ],
+    [
+      3,
+      6,
+      59,
+      20
+    ]
+  ],
+  "operations": "original alpha threshold/quantization, source frame cuts, single common nearest resize, source-derived shared palette, whole-frame placement; no character/effect drawing",
+  "candidate": "candidates/skoll_dash_trail_v01.png",
+  "candidate_sha256": "9844cdd44d99cad4b30aaa2042bf471e1b7864b1a3107e16b36dc5e190107c7a"
+}

@@ -1,0 +1,19 @@
+{
+  "task": "K6",
+  "production": "complete",
+  "formal_ogg": 1,
+  "formal_wav": 4,
+  "self_check": "passed",
+  "checks": 74,
+  "listening": "user accepted complete4SFX and three musicloops",
+  "game_integration": "not_implemented",
+  "game_acceptance": "not_tested",
+  "remaining": [
+    "25 event calls",
+    "LevelDB music",
+    "dense gameplay mixing",
+    "music transition and full third-level loop"
+  ],
+  "git_commit": false,
+  "git_push": false
+}

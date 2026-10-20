@@ -1,0 +1,16 @@
+{
+  "tool": "image_gen.imagegen",
+  "id": "surtr_final_fire",
+  "frame_size": [
+    64,
+    64
+  ],
+  "frames": 4,
+  "fps": 16,
+  "loop": false,
+  "refs": [
+    "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskK3_fire_2026-10-20/references/surtr.png"
+  ],
+  "prompt": "Use case: stylized-concept, game hazard-cell effect. Four-frame2x2 atlas, logical64x64 each, of ONE ground-cell FINAL FIRE burst, no figure/sword. Abstract tongues of orange flame confined to a small circular footprint radius27 centered(32,32), about4px margins. Sequence0 small ember fissures (thin, sparse),1 ignition upward,2 luminous orange-white narrow flame peak,3 fading red embers. Do not cover whole64square with opaque white; separate readable flame clusters with alpha gaps. No floor tile, no runes, no dark disk, no extra smoke cloud over neighboring cells. Needs16fps single play with clear onset/peak/decay. This texture will be CLIPPED to actual damaging grid cells; safe cells receive no fire, code owns geometry, don't draw safety symbols inside fire. Crisp low-resolution pixel clusters matching the project reference, <=48RGB, red/orange/ivory flame with dark crimson/brown edge, restrained translucent light only where stated; true transparent alpha background, no opaque black fill, no ground, scenery, character, lettering, label, frame, grid line or watermark. Four equal cells, no gutters; no content crosses its own cell.",
+  "transparent_background": true
+}

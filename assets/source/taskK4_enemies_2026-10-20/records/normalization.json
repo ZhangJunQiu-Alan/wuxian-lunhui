@@ -1,0 +1,1032 @@
+[
+  {
+    "id": "fire_giant_move",
+    "version": "v01",
+    "frame_size": [
+      96,
+      96
+    ],
+    "frames": 6,
+    "fps": 8,
+    "loop": true,
+    "scale": 0.18813905930470348,
+    "raw_boxes": [
+      [
+        44,
+        15,
+        480,
+        481
+      ],
+      [
+        543,
+        15,
+        987,
+        481
+      ],
+      [
+        1053,
+        15,
+        1500,
+        493
+      ],
+      [
+        37,
+        517,
+        485,
+        1006
+      ],
+      [
+        551,
+        516,
+        1001,
+        988
+      ],
+      [
+        1056,
+        516,
+        1518,
+        994
+      ]
+    ],
+    "placements": [
+      [
+        7,
+        6,
+        82,
+        88
+      ],
+      [
+        6,
+        6,
+        84,
+        88
+      ],
+      [
+        6,
+        4,
+        84,
+        90
+      ],
+      [
+        6,
+        2,
+        84,
+        92
+      ],
+      [
+        6,
+        5,
+        85,
+        89
+      ],
+      [
+        4,
+        4,
+        87,
+        90
+      ]
+    ],
+    "bboxes": [
+      [
+        7,
+        6,
+        89,
+        94
+      ],
+      [
+        6,
+        6,
+        90,
+        94
+      ],
+      [
+        6,
+        4,
+        90,
+        94
+      ],
+      [
+        6,
+        2,
+        90,
+        94
+      ],
+      [
+        6,
+        5,
+        91,
+        94
+      ],
+      [
+        4,
+        4,
+        91,
+        94
+      ]
+    ],
+    "method": "whole raw opaque connected components, shared uniform scale peraction, nearest, originalpalette/binaryalpha or8level effect alpha; no painted pixels",
+    "visual_review": "pending"
+  },
+  {
+    "id": "fire_giant_attack",
+    "version": "v01",
+    "frame_size": [
+      96,
+      96
+    ],
+    "frames": 4,
+    "fps": 16,
+    "loop": false,
+    "scale": 0.16055846422338568,
+    "raw_boxes": [
+      [
+        41,
+        30,
+        603,
+        603
+      ],
+      [
+        668,
+        31,
+        1178,
+        603
+      ],
+      [
+        73,
+        662,
+        610,
+        1206
+      ],
+      [
+        643,
+        638,
+        1203,
+        1207
+      ]
+    ],
+    "placements": [
+      [
+        3,
+        2,
+        90,
+        92
+      ],
+      [
+        7,
+        2,
+        82,
+        92
+      ],
+      [
+        5,
+        7,
+        86,
+        87
+      ],
+      [
+        3,
+        3,
+        90,
+        91
+      ]
+    ],
+    "bboxes": [
+      [
+        3,
+        2,
+        93,
+        94
+      ],
+      [
+        7,
+        2,
+        89,
+        94
+      ],
+      [
+        5,
+        7,
+        91,
+        94
+      ],
+      [
+        3,
+        3,
+        93,
+        94
+      ]
+    ],
+    "method": "whole raw opaque connected components, shared uniform scale peraction, nearest, originalpalette/binaryalpha or8level effect alpha; no painted pixels",
+    "visual_review": "pending"
+  },
+  {
+    "id": "frost_veteran_move",
+    "version": "v01",
+    "frame_size": [
+      96,
+      96
+    ],
+    "frames": 6,
+    "fps": 8,
+    "loop": true,
+    "scale": 0.1814595660749507,
+    "raw_boxes": [
+      [
+        12,
+        25,
+        504,
+        511
+      ],
+      [
+        523,
+        30,
+        1021,
+        511
+      ],
+      [
+        1039,
+        27,
+        1525,
+        513
+      ],
+      [
+        13,
+        519,
+        520,
+        1004
+      ],
+      [
+        535,
+        530,
+        1027,
+        1004
+      ],
+      [
+        1046,
+        524,
+        1526,
+        1005
+      ]
+    ],
+    "placements": [
+      [
+        4,
+        6,
+        89,
+        88
+      ],
+      [
+        3,
+        7,
+        90,
+        87
+      ],
+      [
+        4,
+        6,
+        88,
+        88
+      ],
+      [
+        2,
+        6,
+        92,
+        88
+      ],
+      [
+        4,
+        8,
+        89,
+        86
+      ],
+      [
+        4,
+        7,
+        87,
+        87
+      ]
+    ],
+    "bboxes": [
+      [
+        4,
+        6,
+        93,
+        94
+      ],
+      [
+        3,
+        7,
+        93,
+        94
+      ],
+      [
+        4,
+        6,
+        92,
+        94
+      ],
+      [
+        2,
+        6,
+        94,
+        94
+      ],
+      [
+        4,
+        8,
+        93,
+        94
+      ],
+      [
+        4,
+        7,
+        91,
+        94
+      ]
+    ],
+    "method": "whole raw opaque connected components, shared uniform scale peraction, nearest, originalpalette/binaryalpha or8level effect alpha; no painted pixels",
+    "visual_review": "pending"
+  },
+  {
+    "id": "frost_veteran_attack",
+    "version": "v01",
+    "frame_size": [
+      96,
+      96
+    ],
+    "frames": 4,
+    "fps": 16,
+    "loop": false,
+    "scale": 0.1602787456445993,
+    "raw_boxes": [
+      [
+        30,
+        47,
+        596,
+        604
+      ],
+      [
+        695,
+        38,
+        1211,
+        605
+      ],
+      [
+        114,
+        651,
+        600,
+        1207
+      ],
+      [
+        640,
+        643,
+        1214,
+        1213
+      ]
+    ],
+    "placements": [
+      [
+        2,
+        5,
+        91,
+        89
+      ],
+      [
+        6,
+        3,
+        83,
+        91
+      ],
+      [
+        9,
+        5,
+        78,
+        89
+      ],
+      [
+        2,
+        3,
+        92,
+        91
+      ]
+    ],
+    "bboxes": [
+      [
+        2,
+        5,
+        93,
+        94
+      ],
+      [
+        6,
+        4,
+        89,
+        94
+      ],
+      [
+        9,
+        5,
+        87,
+        94
+      ],
+      [
+        2,
+        3,
+        94,
+        94
+      ]
+    ],
+    "method": "whole raw opaque connected components, shared uniform scale peraction, nearest, originalpalette/binaryalpha or8level effect alpha; no painted pixels",
+    "visual_review": "pending"
+  },
+  {
+    "id": "frost_veteran_charge",
+    "version": "v01",
+    "frame_size": [
+      96,
+      96
+    ],
+    "frames": 4,
+    "fps": 8,
+    "loop": true,
+    "scale": 0.1488673139158576,
+    "raw_boxes": [
+      [
+        24,
+        45,
+        623,
+        583
+      ],
+      [
+        653,
+        49,
+        1241,
+        604
+      ],
+      [
+        24,
+        660,
+        642,
+        1216
+      ],
+      [
+        656,
+        654,
+        1243,
+        1216
+      ]
+    ],
+    "placements": [
+      [
+        4,
+        14,
+        89,
+        80
+      ],
+      [
+        4,
+        11,
+        88,
+        83
+      ],
+      [
+        2,
+        11,
+        92,
+        83
+      ],
+      [
+        4,
+        10,
+        87,
+        84
+      ]
+    ],
+    "bboxes": [
+      [
+        4,
+        14,
+        93,
+        94
+      ],
+      [
+        4,
+        11,
+        92,
+        94
+      ],
+      [
+        2,
+        11,
+        94,
+        94
+      ],
+      [
+        4,
+        10,
+        91,
+        94
+      ]
+    ],
+    "method": "whole raw opaque connected components, shared uniform scale peraction, nearest, originalpalette/binaryalpha or8level effect alpha; no painted pixels",
+    "visual_review": "pending"
+  },
+  {
+    "id": "frost_veteran_shield",
+    "version": "v01",
+    "frame_size": [
+      96,
+      96
+    ],
+    "frames": 3,
+    "fps": 8,
+    "loop": false,
+    "scale": 0.15593220338983052,
+    "raw_boxes": [
+      [
+        22,
+        43,
+        600,
+        616
+      ],
+      [
+        644,
+        45,
+        1234,
+        616
+      ],
+      [
+        22,
+        647,
+        609,
+        1222
+      ]
+    ],
+    "placements": [
+      [
+        3,
+        5,
+        90,
+        89
+      ],
+      [
+        2,
+        5,
+        92,
+        89
+      ],
+      [
+        2,
+        4,
+        92,
+        90
+      ]
+    ],
+    "bboxes": [
+      [
+        3,
+        5,
+        93,
+        94
+      ],
+      [
+        2,
+        5,
+        94,
+        94
+      ],
+      [
+        2,
+        4,
+        94,
+        94
+      ]
+    ],
+    "method": "whole raw opaque connected components, shared uniform scale peraction, nearest, originalpalette/binaryalpha or8level effect alpha; no painted pixels",
+    "visual_review": "pending"
+  },
+  {
+    "id": "wolf_berserker",
+    "version": "v01",
+    "frame_size": [
+      64,
+      64
+    ],
+    "frames": 1,
+    "fps": 0,
+    "loop": false,
+    "scale": 0.053604436229205174,
+    "raw_boxes": [
+      [
+        244,
+        107,
+        981,
+        1189
+      ]
+    ],
+    "placements": [
+      [
+        12,
+        4,
+        40,
+        58
+      ]
+    ],
+    "bboxes": [
+      [
+        12,
+        4,
+        52,
+        62
+      ]
+    ],
+    "method": "whole raw opaque connected components, shared uniform scale peraction, nearest, originalpalette/binaryalpha or8level effect alpha; no painted pixels",
+    "visual_review": "pending"
+  },
+  {
+    "id": "wolf_berserker_move",
+    "version": "v01",
+    "frame_size": [
+      64,
+      64
+    ],
+    "frames": 6,
+    "fps": 8,
+    "loop": true,
+    "scale": 0.12875536480686695,
+    "raw_boxes": [
+      [
+        78,
+        16,
+        413,
+        478
+      ],
+      [
+        569,
+        12,
+        909,
+        470
+      ],
+      [
+        1065,
+        16,
+        1431,
+        470
+      ],
+      [
+        66,
+        503,
+        419,
+        964
+      ],
+      [
+        559,
+        503,
+        928,
+        963
+      ],
+      [
+        1094,
+        502,
+        1441,
+        968
+      ]
+    ],
+    "placements": [
+      [
+        10,
+        3,
+        43,
+        59
+      ],
+      [
+        10,
+        3,
+        44,
+        59
+      ],
+      [
+        8,
+        4,
+        47,
+        58
+      ],
+      [
+        10,
+        3,
+        45,
+        59
+      ],
+      [
+        8,
+        3,
+        48,
+        59
+      ],
+      [
+        10,
+        2,
+        45,
+        60
+      ]
+    ],
+    "bboxes": [
+      [
+        10,
+        3,
+        53,
+        62
+      ],
+      [
+        10,
+        3,
+        54,
+        62
+      ],
+      [
+        8,
+        4,
+        55,
+        62
+      ],
+      [
+        10,
+        3,
+        55,
+        62
+      ],
+      [
+        8,
+        3,
+        56,
+        62
+      ],
+      [
+        10,
+        2,
+        55,
+        62
+      ]
+    ],
+    "method": "whole raw opaque connected components, shared uniform scale peraction, nearest, originalpalette/binaryalpha or8level effect alpha; no painted pixels",
+    "visual_review": "pending"
+  },
+  {
+    "id": "wolf_berserker_attack",
+    "version": "v01",
+    "frame_size": [
+      64,
+      64
+    ],
+    "frames": 4,
+    "fps": 16,
+    "loop": false,
+    "scale": 0.10909090909090909,
+    "raw_boxes": [
+      [
+        135,
+        44,
+        543,
+        594
+      ],
+      [
+        730,
+        48,
+        1106,
+        594
+      ],
+      [
+        140,
+        649,
+        632,
+        1189
+      ],
+      [
+        711,
+        643,
+        1118,
+        1192
+      ]
+    ],
+    "placements": [
+      [
+        10,
+        2,
+        45,
+        60
+      ],
+      [
+        12,
+        2,
+        41,
+        60
+      ],
+      [
+        5,
+        3,
+        54,
+        59
+      ],
+      [
+        10,
+        2,
+        44,
+        60
+      ]
+    ],
+    "bboxes": [
+      [
+        10,
+        2,
+        55,
+        62
+      ],
+      [
+        12,
+        2,
+        53,
+        62
+      ],
+      [
+        5,
+        3,
+        59,
+        62
+      ],
+      [
+        10,
+        2,
+        54,
+        62
+      ]
+    ],
+    "method": "whole raw opaque connected components, shared uniform scale peraction, nearest, originalpalette/binaryalpha or8level effect alpha; no painted pixels",
+    "visual_review": "pending"
+  },
+  {
+    "id": "wolf_berserker_rage",
+    "version": "v01",
+    "frame_size": [
+      64,
+      64
+    ],
+    "frames": 3,
+    "fps": 8,
+    "loop": false,
+    "scale": 0.1048951048951049,
+    "raw_boxes": [
+      [
+        98,
+        46,
+        524,
+        615
+      ],
+      [
+        695,
+        43,
+        1170,
+        615
+      ],
+      [
+        69,
+        676,
+        575,
+        1218
+      ]
+    ],
+    "placements": [
+      [
+        10,
+        2,
+        45,
+        60
+      ],
+      [
+        7,
+        2,
+        50,
+        60
+      ],
+      [
+        6,
+        5,
+        53,
+        57
+      ]
+    ],
+    "bboxes": [
+      [
+        10,
+        2,
+        55,
+        62
+      ],
+      [
+        7,
+        2,
+        57,
+        62
+      ],
+      [
+        6,
+        5,
+        59,
+        62
+      ]
+    ],
+    "method": "whole raw opaque connected components, shared uniform scale peraction, nearest, originalpalette/binaryalpha or8level effect alpha; no painted pixels",
+    "visual_review": "pending"
+  },
+  {
+    "id": "fire_giant_explosion",
+    "version": "v01",
+    "frame_size": [
+      96,
+      96
+    ],
+    "frames": 4,
+    "fps": 16,
+    "loop": false,
+    "scale": 0.11458333333333333,
+    "raw_boxes": [
+      [
+        0,
+        0,
+        768,
+        512
+      ],
+      [
+        0,
+        0,
+        768,
+        512
+      ],
+      [
+        0,
+        0,
+        768,
+        512
+      ],
+      [
+        0,
+        0,
+        768,
+        512
+      ]
+    ],
+    "placements": [
+      [
+        4,
+        18,
+        88,
+        59
+      ],
+      [
+        4,
+        18,
+        88,
+        59
+      ],
+      [
+        4,
+        18,
+        88,
+        59
+      ],
+      [
+        4,
+        18,
+        88,
+        59
+      ]
+    ],
+    "bboxes": [
+      [
+        35,
+        32,
+        71,
+        77
+      ],
+      [
+        13,
+        20,
+        75,
+        73
+      ],
+      [
+        21,
+        18,
+        91,
+        75
+      ],
+      [
+        16,
+        22,
+        71,
+        72
+      ]
+    ],
+    "method": "whole raw opaque connected components, shared uniform scale peraction, nearest, originalpalette/binaryalpha or8level effect alpha; no painted pixels",
+    "visual_review": "pending"
+  }
+]

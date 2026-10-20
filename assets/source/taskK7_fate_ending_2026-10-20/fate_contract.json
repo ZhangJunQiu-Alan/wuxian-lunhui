@@ -1,0 +1,40 @@
+{
+  "task": "K7",
+  "status": "integration_contract_not_gameplay_code",
+  "base_contract": "assets/source/taskK_contract_2026-10-20/contract.json",
+  "base_contract_sha256": "777aad8208ed37c2cd4b4cac98124e7af851c03405f9bb0e7f0019689be89c5e",
+  "flags": {
+    "thor_saved": {
+      "prerequisite": "faith has thor at jormungandr death",
+      "time_source": "jormungandr encounter unpaused age measured since actual spawn/engage",
+      "inclusive_deadline_seconds": 90.0,
+      "confirmation_event": "jormungandr defeated with prerequisite and age<=90.0",
+      "effect_owner": "K1 Thor final battle aid"
+    },
+    "vidar_intervened": {
+      "prerequisite": "faith has odin and odin awakened",
+      "confirmation_event": "actual Vidar intervention begins during Fenrir encounter; not request only",
+      "effect_owner": "K2 Vidar cinematic and escape"
+    },
+    "freyr_assisted": {
+      "prerequisite": "faith has freyja and freyja awakened",
+      "confirmation_event": "actual Freyr ally starts assistance during Surtr encounter; not request only",
+      "effect_owner": "K3 Freyr heal; not freyr faith"
+    },
+    "ever_faith_loki": {
+      "prerequisite": "faith in loki occurred at any time during current run",
+      "confirmation_event": "faith granted, not hover/selection preview",
+      "monotonic": true
+    }
+  },
+  "lifecycle": {
+    "start_run": "all four false; do not use previous run flag",
+    "retry": "reset all four",
+    "pause": "freeze encounter timer; UI may process always",
+    "resume": "continue same encounter age",
+    "aid_dedup": "one flag and one result event per encounter/event id",
+    "finish_run": "freeze snapshot before ending UI",
+    "count": "only thor_saved,vidar_intervened,freyr_assisted; loki hint excluded",
+    "persistence": "handoff fields; existing Save schema lacks dedicated fate record; integration required"
+  }
+}

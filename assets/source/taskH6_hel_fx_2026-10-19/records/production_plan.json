@@ -1,0 +1,229 @@
+[
+  {
+    "task": "H6",
+    "id": "hel_life_ground",
+    "w": 128,
+    "h": 128,
+    "frames": 1,
+    "fps": 0,
+    "flags": [
+      "tile",
+      "faint"
+    ],
+    "anchor": [
+      64,
+      64
+    ],
+    "columns": 1,
+    "rows": 1,
+    "loop": false,
+    "hook": "scripts/bosses/hel.gd _draw_field() 左生之侧draw_rect",
+    "keep": "平铺并在x<_anchor.x裁切，z<角色；保留生死分界与安全圈",
+    "reference_paths": [
+      "assets/sprites/effects/poison_pool.png"
+    ],
+    "target": "assets/sprites/effects/bosses/hel_life_ground.png",
+    "source_root": "assets/source/taskH6_hel_fx_2026-10-19",
+    "archived_references": [
+      {
+        "project_path": "assets/sprites/effects/poison_pool.png",
+        "archived_path": "references/poison_pool.png",
+        "sha256": "0284bb2e78321311e43248046a820d43920193764e68f64d662d25cd1516374f"
+      }
+    ]
+  },
+  {
+    "task": "H6",
+    "id": "hel_death_ground",
+    "w": 128,
+    "h": 128,
+    "frames": 1,
+    "fps": 0,
+    "flags": [
+      "tile",
+      "faint"
+    ],
+    "anchor": [
+      64,
+      64
+    ],
+    "columns": 1,
+    "rows": 1,
+    "loop": false,
+    "hook": "scripts/bosses/hel.gd _draw_field() 右死之侧draw_rect",
+    "keep": "平铺并在x>=_anchor.x裁切，和生侧明度接近；不跨界、不取代圈外压暗",
+    "reference_paths": [
+      "assets/sprites/effects/frost_shockwave.png"
+    ],
+    "target": "assets/sprites/effects/bosses/hel_death_ground.png",
+    "source_root": "assets/source/taskH6_hel_fx_2026-10-19",
+    "archived_references": [
+      {
+        "project_path": "assets/sprites/effects/frost_shockwave.png",
+        "archived_path": "references/frost_shockwave.png",
+        "sha256": "a0aa09571dec4959ee2a9f66dc6a6a038a2017fad3dea1140680bc837495c625"
+      }
+    ]
+  },
+  {
+    "task": "H6",
+    "id": "hel_domain_edge",
+    "w": 64,
+    "h": 32,
+    "frames": 4,
+    "fps": 8,
+    "flags": [
+      "loop",
+      "band"
+    ],
+    "anchor": [
+      32,
+      16
+    ],
+    "columns": 2,
+    "rows": 2,
+    "loop": true,
+    "hook": "scripts/bosses/hel.gd _draw_field() _domain_radius() 安全圈边界",
+    "keep": "按实时半径1000→380圆周铺设并裁切，切线+X、外法线-Y；判伤/圈外压暗不变",
+    "reference_paths": [
+      "assets/sprites/effects/frost_shockwave.png"
+    ],
+    "target": "assets/sprites/effects/bosses/hel_domain_edge.png",
+    "source_root": "assets/source/taskH6_hel_fx_2026-10-19",
+    "archived_references": [
+      {
+        "project_path": "assets/sprites/effects/frost_shockwave.png",
+        "archived_path": "references/frost_shockwave.png",
+        "sha256": "a0aa09571dec4959ee2a9f66dc6a6a038a2017fad3dea1140680bc837495c625"
+      }
+    ]
+  },
+  {
+    "task": "H6",
+    "id": "hel_shift",
+    "w": 96,
+    "h": 96,
+    "frames": 4,
+    "fps": 8,
+    "flags": [
+      "area"
+    ],
+    "anchor": [
+      48,
+      48
+    ],
+    "columns": 2,
+    "rows": 2,
+    "loop": false,
+    "hook": "scripts/bosses/hel.gd _update_side() 瞬移前后burst",
+    "keep": "中性灰绿/灰紫，按进出侧调制；原点和目标点分别播，保持12秒切换和SIDE_OFFSET320",
+    "reference_paths": [
+      "assets/sprites/bosses/hel.png"
+    ],
+    "target": "assets/sprites/effects/bosses/hel_shift.png",
+    "source_root": "assets/source/taskH6_hel_fx_2026-10-19",
+    "archived_references": [
+      {
+        "project_path": "assets/sprites/bosses/hel.png",
+        "archived_path": "references/hel.png",
+        "sha256": "0c1e0a49f57e6a80535bc2c382e4f68cd882810f18dc35f79fd6befa2c558aa9"
+      }
+    ]
+  },
+  {
+    "task": "H6",
+    "id": "hel_heal",
+    "w": 64,
+    "h": 64,
+    "frames": 4,
+    "fps": 8,
+    "flags": [
+      "area"
+    ],
+    "anchor": [
+      32,
+      32
+    ],
+    "columns": 2,
+    "rows": 2,
+    "loop": false,
+    "hook": "scripts/bosses/hel.gd _update_side() 生侧治疗分支",
+    "keep": "每个实际被治疗敌人处播放，不给玩家；保留1.5秒、范围450、15%回血",
+    "reference_paths": [
+      "assets/sprites/effects/poison_pool.png"
+    ],
+    "target": "assets/sprites/effects/bosses/hel_heal.png",
+    "source_root": "assets/source/taskH6_hel_fx_2026-10-19",
+    "archived_references": [
+      {
+        "project_path": "assets/sprites/effects/poison_pool.png",
+        "archived_path": "references/poison_pool.png",
+        "sha256": "0284bb2e78321311e43248046a820d43920193764e68f64d662d25cd1516374f"
+      }
+    ]
+  },
+  {
+    "task": "H6",
+    "id": "hel_army_summon",
+    "w": 96,
+    "h": 96,
+    "frames": 4,
+    "fps": 8,
+    "flags": [
+      "area"
+    ],
+    "anchor": [
+      48,
+      48
+    ],
+    "columns": 2,
+    "rows": 2,
+    "loop": false,
+    "hook": "scripts/bosses/hel.gd _raise_army()；_update_side() 死侧生成",
+    "keep": "出生裂隙以实际pos为准；只短播无身体；保留14亡者及死侧3名/3秒",
+    "reference_paths": [
+      "assets/sprites/effects/ground_crack.png"
+    ],
+    "target": "assets/sprites/effects/bosses/hel_army_summon.png",
+    "source_root": "assets/source/taskH6_hel_fx_2026-10-19",
+    "archived_references": [
+      {
+        "project_path": "assets/sprites/effects/ground_crack.png",
+        "archived_path": "references/ground_crack.png",
+        "sha256": "c7178cac3ba5662cfa99d2bef22d62249762a564143b504c66e8d59bd71ffbf8"
+      }
+    ]
+  },
+  {
+    "task": "H6",
+    "id": "hel_board_ship",
+    "w": 128,
+    "h": 128,
+    "frames": 4,
+    "fps": 8,
+    "flags": [
+      "area"
+    ],
+    "anchor": [
+      64,
+      64
+    ],
+    "columns": 2,
+    "rows": 2,
+    "loop": false,
+    "hook": "scripts/bosses/hel.gd _enter_phase2()",
+    "keep": "旧位置与deck交接短播；图案中部透明，船帆弹幕上层；保留30%阈值/船/指甲弹行为",
+    "reference_paths": [
+      "assets/sprites/bosses/hel.png"
+    ],
+    "target": "assets/sprites/effects/bosses/hel_board_ship.png",
+    "source_root": "assets/source/taskH6_hel_fx_2026-10-19",
+    "archived_references": [
+      {
+        "project_path": "assets/sprites/bosses/hel.png",
+        "archived_path": "references/hel.png",
+        "sha256": "0c1e0a49f57e6a80535bc2c382e4f68cd882810f18dc35f79fd6befa2c558aa9"
+      }
+    ]
+  }
+]

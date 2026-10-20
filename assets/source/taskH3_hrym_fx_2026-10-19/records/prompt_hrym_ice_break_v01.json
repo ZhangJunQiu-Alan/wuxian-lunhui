@@ -1,0 +1,8 @@
+{
+  "id": "hrym_ice_break",
+  "version": "v01",
+  "prompt": "Use case: stylized-concept. Production pixel-art VFX for an existing dark northern game. Input is project-owned style/palette reference only; no body from reference. An existing blue-white ice pillar shattering away: ONLY scattered airborne angular ice fragments and a little frost powder, NO intact pillar. Four ONESHOT phases: compact crack flash and short shards, shards spread moderately, fewer smaller falling chips, very sparse dim vanishing dust. Center becomes empty by last phase; no permanent rubble, no large stone cloud. EXACTLY FOUR DISTINCT animation frames in2columns and2rows, equal cells aspect 64:64, native 64x64 each. Same camera scale/registration/pivot across frames. Crisp detailed pixel clusters, icy grey-blue limited32RGB palette, 8 alpha steps for light/mist. Fully transparent background, no backing rectangle, text, labels, frame lines, watermark, scene. Full effect within cell with transparent padding, except matching repeated horizontal ports where requested. Do not redraw an intact ice pillar or creature.",
+  "reference_paths": [
+    "assets/sprites/effects/ice_pillar.png"
+  ]
+}

@@ -1,0 +1,2095 @@
+{
+  "task": "K3",
+  "checks": 342,
+  "failures": 0,
+  "items": [
+    {
+      "check": "surtr_idle:RGBA",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "surtr_idle:sheet",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "surtr_idle:0:alpha",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "surtr_idle:0:transparent_rgb_zero",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "surtr_idle:0:2pxmargin",
+      "passed": true,
+      "detail": [
+        76,
+        136,
+        241,
+        318
+      ]
+    },
+    {
+      "check": "surtr_idle:0:ground_baseline",
+      "passed": true,
+      "detail": 318
+    },
+    {
+      "check": "surtr_idle:1:alpha",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "surtr_idle:1:transparent_rgb_zero",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "surtr_idle:1:2pxmargin",
+      "passed": true,
+      "detail": [
+        73,
+        138,
+        242,
+        318
+      ]
+    },
+    {
+      "check": "surtr_idle:1:ground_baseline",
+      "passed": true,
+      "detail": 318
+    },
+    {
+      "check": "surtr_idle:2:alpha",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "surtr_idle:2:transparent_rgb_zero",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "surtr_idle:2:2pxmargin",
+      "passed": true,
+      "detail": [
+        74,
+        133,
+        241,
+        318
+      ]
+    },
+    {
+      "check": "surtr_idle:2:ground_baseline",
+      "passed": true,
+      "detail": 318
+    },
+    {
+      "check": "surtr_idle:3:alpha",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "surtr_idle:3:transparent_rgb_zero",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "surtr_idle:3:2pxmargin",
+      "passed": true,
+      "detail": [
+        70,
+        135,
+        242,
+        318
+      ]
+    },
+    {
+      "check": "surtr_idle:3:ground_baseline",
+      "passed": true,
+      "detail": 318
+    },
+    {
+      "check": "surtr_idle:max48rgb",
+      "passed": true,
+      "detail": 48
+    },
+    {
+      "check": "surtr_idle:unique_frames",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "surtr_idle:native:frames",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "surtr_idle:native:timing",
+      "passed": true,
+      "detail": [
+        120,
+        130,
+        130,
+        120
+      ]
+    },
+    {
+      "check": "surtr_idle:slow8:frames",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "surtr_idle:slow8:timing",
+      "passed": true,
+      "detail": [
+        120,
+        130,
+        130,
+        120
+      ]
+    },
+    {
+      "check": "surtr_idle:actual_source",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "surtr_move:RGBA",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "surtr_move:sheet",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "surtr_move:0:alpha",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "surtr_move:0:transparent_rgb_zero",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "surtr_move:0:2pxmargin",
+      "passed": true,
+      "detail": [
+        68,
+        136,
+        248,
+        318
+      ]
+    },
+    {
+      "check": "surtr_move:0:ground_baseline",
+      "passed": true,
+      "detail": 318
+    },
+    {
+      "check": "surtr_move:1:alpha",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "surtr_move:1:transparent_rgb_zero",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "surtr_move:1:2pxmargin",
+      "passed": true,
+      "detail": [
+        73,
+        134,
+        250,
+        318
+      ]
+    },
+    {
+      "check": "surtr_move:1:ground_baseline",
+      "passed": true,
+      "detail": 318
+    },
+    {
+      "check": "surtr_move:2:alpha",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "surtr_move:2:transparent_rgb_zero",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "surtr_move:2:2pxmargin",
+      "passed": true,
+      "detail": [
+        74,
+        134,
+        245,
+        318
+      ]
+    },
+    {
+      "check": "surtr_move:2:ground_baseline",
+      "passed": true,
+      "detail": 318
+    },
+    {
+      "check": "surtr_move:3:alpha",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "surtr_move:3:transparent_rgb_zero",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "surtr_move:3:2pxmargin",
+      "passed": true,
+      "detail": [
+        69,
+        136,
+        247,
+        318
+      ]
+    },
+    {
+      "check": "surtr_move:3:ground_baseline",
+      "passed": true,
+      "detail": 318
+    },
+    {
+      "check": "surtr_move:4:alpha",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "surtr_move:4:transparent_rgb_zero",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "surtr_move:4:2pxmargin",
+      "passed": true,
+      "detail": [
+        71,
+        138,
+        249,
+        318
+      ]
+    },
+    {
+      "check": "surtr_move:4:ground_baseline",
+      "passed": true,
+      "detail": 318
+    },
+    {
+      "check": "surtr_move:5:alpha",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "surtr_move:5:transparent_rgb_zero",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "surtr_move:5:2pxmargin",
+      "passed": true,
+      "detail": [
+        71,
+        135,
+        247,
+        318
+      ]
+    },
+    {
+      "check": "surtr_move:5:ground_baseline",
+      "passed": true,
+      "detail": 318
+    },
+    {
+      "check": "surtr_move:max48rgb",
+      "passed": true,
+      "detail": 48
+    },
+    {
+      "check": "surtr_move:unique_frames",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "surtr_move:native:frames",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "surtr_move:native:timing",
+      "passed": true,
+      "detail": [
+        120,
+        130,
+        130,
+        120,
+        120,
+        130
+      ]
+    },
+    {
+      "check": "surtr_move:slow8:frames",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "surtr_move:slow8:timing",
+      "passed": true,
+      "detail": [
+        120,
+        130,
+        130,
+        120,
+        120,
+        130
+      ]
+    },
+    {
+      "check": "surtr_move:actual_source",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "surtr_windup:RGBA",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "surtr_windup:sheet",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "surtr_windup:0:alpha",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "surtr_windup:0:transparent_rgb_zero",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "surtr_windup:0:2pxmargin",
+      "passed": true,
+      "detail": [
+        87,
+        136,
+        246,
+        318
+      ]
+    },
+    {
+      "check": "surtr_windup:0:ground_baseline",
+      "passed": true,
+      "detail": 318
+    },
+    {
+      "check": "surtr_windup:1:alpha",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "surtr_windup:1:transparent_rgb_zero",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "surtr_windup:1:2pxmargin",
+      "passed": true,
+      "detail": [
+        56,
+        148,
+        250,
+        318
+      ]
+    },
+    {
+      "check": "surtr_windup:1:ground_baseline",
+      "passed": true,
+      "detail": 318
+    },
+    {
+      "check": "surtr_windup:2:alpha",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "surtr_windup:2:transparent_rgb_zero",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "surtr_windup:2:2pxmargin",
+      "passed": true,
+      "detail": [
+        96,
+        132,
+        252,
+        318
+      ]
+    },
+    {
+      "check": "surtr_windup:2:ground_baseline",
+      "passed": true,
+      "detail": 318
+    },
+    {
+      "check": "surtr_windup:max48rgb",
+      "passed": true,
+      "detail": 48
+    },
+    {
+      "check": "surtr_windup:unique_frames",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "surtr_windup:native:frames",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "surtr_windup:native:timing",
+      "passed": true,
+      "detail": [
+        120,
+        130,
+        730
+      ]
+    },
+    {
+      "check": "surtr_windup:slow8:frames",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "surtr_windup:slow8:timing",
+      "passed": true,
+      "detail": [
+        120,
+        130,
+        730
+      ]
+    },
+    {
+      "check": "surtr_windup:actual_source",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "surtr_attack:RGBA",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "surtr_attack:sheet",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "surtr_attack:0:alpha",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "surtr_attack:0:transparent_rgb_zero",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "surtr_attack:0:2pxmargin",
+      "passed": true,
+      "detail": [
+        67,
+        84,
+        240,
+        318
+      ]
+    },
+    {
+      "check": "surtr_attack:0:ground_baseline",
+      "passed": true,
+      "detail": 318
+    },
+    {
+      "check": "surtr_attack:1:alpha",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "surtr_attack:1:transparent_rgb_zero",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "surtr_attack:1:2pxmargin",
+      "passed": true,
+      "detail": [
+        40,
+        131,
+        275,
+        318
+      ]
+    },
+    {
+      "check": "surtr_attack:1:ground_baseline",
+      "passed": true,
+      "detail": 318
+    },
+    {
+      "check": "surtr_attack:2:alpha",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "surtr_attack:2:transparent_rgb_zero",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "surtr_attack:2:2pxmargin",
+      "passed": true,
+      "detail": [
+        61,
+        131,
+        281,
+        318
+      ]
+    },
+    {
+      "check": "surtr_attack:2:ground_baseline",
+      "passed": true,
+      "detail": 318
+    },
+    {
+      "check": "surtr_attack:3:alpha",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "surtr_attack:3:transparent_rgb_zero",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "surtr_attack:3:2pxmargin",
+      "passed": true,
+      "detail": [
+        61,
+        129,
+        276,
+        318
+      ]
+    },
+    {
+      "check": "surtr_attack:3:ground_baseline",
+      "passed": true,
+      "detail": 318
+    },
+    {
+      "check": "surtr_attack:max48rgb",
+      "passed": true,
+      "detail": 48
+    },
+    {
+      "check": "surtr_attack:unique_frames",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "surtr_attack:native:frames",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "surtr_attack:native:timing",
+      "passed": true,
+      "detail": [
+        60,
+        60,
+        70,
+        660
+      ]
+    },
+    {
+      "check": "surtr_attack:slow8:frames",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "surtr_attack:slow8:timing",
+      "passed": true,
+      "detail": [
+        120,
+        130,
+        130,
+        720
+      ]
+    },
+    {
+      "check": "surtr_attack:actual_source",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "surtr_plant:RGBA",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "surtr_plant:sheet",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "surtr_plant:0:alpha",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "surtr_plant:0:transparent_rgb_zero",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "surtr_plant:0:2pxmargin",
+      "passed": true,
+      "detail": [
+        78,
+        136,
+        269,
+        318
+      ]
+    },
+    {
+      "check": "surtr_plant:0:ground_baseline",
+      "passed": true,
+      "detail": 318
+    },
+    {
+      "check": "surtr_plant:1:alpha",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "surtr_plant:1:transparent_rgb_zero",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "surtr_plant:1:2pxmargin",
+      "passed": true,
+      "detail": [
+        71,
+        154,
+        225,
+        318
+      ]
+    },
+    {
+      "check": "surtr_plant:1:ground_baseline",
+      "passed": true,
+      "detail": 318
+    },
+    {
+      "check": "surtr_plant:2:alpha",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "surtr_plant:2:transparent_rgb_zero",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "surtr_plant:2:2pxmargin",
+      "passed": true,
+      "detail": [
+        74,
+        149,
+        223,
+        318
+      ]
+    },
+    {
+      "check": "surtr_plant:2:ground_baseline",
+      "passed": true,
+      "detail": 318
+    },
+    {
+      "check": "surtr_plant:3:alpha",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "surtr_plant:3:transparent_rgb_zero",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "surtr_plant:3:2pxmargin",
+      "passed": true,
+      "detail": [
+        76,
+        138,
+        221,
+        318
+      ]
+    },
+    {
+      "check": "surtr_plant:3:ground_baseline",
+      "passed": true,
+      "detail": 318
+    },
+    {
+      "check": "surtr_plant:max48rgb",
+      "passed": true,
+      "detail": 48
+    },
+    {
+      "check": "surtr_plant:unique_frames",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "surtr_plant:native:frames",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "surtr_plant:native:timing",
+      "passed": true,
+      "detail": [
+        60,
+        60,
+        70,
+        660
+      ]
+    },
+    {
+      "check": "surtr_plant:slow8:frames",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "surtr_plant:slow8:timing",
+      "passed": true,
+      "detail": [
+        120,
+        130,
+        130,
+        720
+      ]
+    },
+    {
+      "check": "surtr_plant:actual_source",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "surtr_summon:RGBA",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "surtr_summon:sheet",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "surtr_summon:0:alpha",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "surtr_summon:0:transparent_rgb_zero",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "surtr_summon:0:2pxmargin",
+      "passed": true,
+      "detail": [
+        74,
+        136,
+        244,
+        318
+      ]
+    },
+    {
+      "check": "surtr_summon:0:ground_baseline",
+      "passed": true,
+      "detail": 318
+    },
+    {
+      "check": "surtr_summon:1:alpha",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "surtr_summon:1:transparent_rgb_zero",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "surtr_summon:1:2pxmargin",
+      "passed": true,
+      "detail": [
+        71,
+        136,
+        239,
+        318
+      ]
+    },
+    {
+      "check": "surtr_summon:1:ground_baseline",
+      "passed": true,
+      "detail": 318
+    },
+    {
+      "check": "surtr_summon:2:alpha",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "surtr_summon:2:transparent_rgb_zero",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "surtr_summon:2:2pxmargin",
+      "passed": true,
+      "detail": [
+        66,
+        134,
+        252,
+        318
+      ]
+    },
+    {
+      "check": "surtr_summon:2:ground_baseline",
+      "passed": true,
+      "detail": 318
+    },
+    {
+      "check": "surtr_summon:3:alpha",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "surtr_summon:3:transparent_rgb_zero",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "surtr_summon:3:2pxmargin",
+      "passed": true,
+      "detail": [
+        74,
+        133,
+        244,
+        318
+      ]
+    },
+    {
+      "check": "surtr_summon:3:ground_baseline",
+      "passed": true,
+      "detail": 318
+    },
+    {
+      "check": "surtr_summon:max48rgb",
+      "passed": true,
+      "detail": 48
+    },
+    {
+      "check": "surtr_summon:unique_frames",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "surtr_summon:native:frames",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "surtr_summon:native:timing",
+      "passed": true,
+      "detail": [
+        60,
+        60,
+        70,
+        660
+      ]
+    },
+    {
+      "check": "surtr_summon:slow8:frames",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "surtr_summon:slow8:timing",
+      "passed": true,
+      "detail": [
+        120,
+        130,
+        130,
+        720
+      ]
+    },
+    {
+      "check": "surtr_summon:actual_source",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "surtr_sword_arc:RGBA",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "surtr_sword_arc:sheet",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "surtr_sword_arc:0:alpha",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "surtr_sword_arc:0:transparent_rgb_zero",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "surtr_sword_arc:0:2pxmargin",
+      "passed": true,
+      "detail": [
+        60,
+        12,
+        111,
+        113
+      ]
+    },
+    {
+      "check": "surtr_sword_arc:1:alpha",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "surtr_sword_arc:1:transparent_rgb_zero",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "surtr_sword_arc:1:2pxmargin",
+      "passed": true,
+      "detail": [
+        43,
+        9,
+        122,
+        117
+      ]
+    },
+    {
+      "check": "surtr_sword_arc:2:alpha",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "surtr_sword_arc:2:transparent_rgb_zero",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "surtr_sword_arc:2:2pxmargin",
+      "passed": true,
+      "detail": [
+        49,
+        8,
+        122,
+        111
+      ]
+    },
+    {
+      "check": "surtr_sword_arc:3:alpha",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "surtr_sword_arc:3:transparent_rgb_zero",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "surtr_sword_arc:3:2pxmargin",
+      "passed": true,
+      "detail": [
+        11,
+        8,
+        120,
+        116
+      ]
+    },
+    {
+      "check": "surtr_sword_arc:max48rgb",
+      "passed": true,
+      "detail": 19
+    },
+    {
+      "check": "surtr_sword_arc:unique_frames",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "surtr_sword_arc:native:frames",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "surtr_sword_arc:native:timing",
+      "passed": true,
+      "detail": [
+        60,
+        60,
+        70,
+        660
+      ]
+    },
+    {
+      "check": "surtr_sword_arc:slow8:frames",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "surtr_sword_arc:slow8:timing",
+      "passed": true,
+      "detail": [
+        120,
+        130,
+        130,
+        720
+      ]
+    },
+    {
+      "check": "surtr_sword_arc:actual_source",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "surtr_gate:RGBA",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "surtr_gate:sheet",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "surtr_gate:0:alpha",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "surtr_gate:0:transparent_rgb_zero",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "surtr_gate:0:2pxmargin",
+      "passed": true,
+      "detail": [
+        11,
+        9,
+        124,
+        126
+      ]
+    },
+    {
+      "check": "surtr_gate:1:alpha",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "surtr_gate:1:transparent_rgb_zero",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "surtr_gate:1:2pxmargin",
+      "passed": true,
+      "detail": [
+        5,
+        10,
+        118,
+        126
+      ]
+    },
+    {
+      "check": "surtr_gate:2:alpha",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "surtr_gate:2:transparent_rgb_zero",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "surtr_gate:2:2pxmargin",
+      "passed": true,
+      "detail": [
+        10,
+        6,
+        123,
+        124
+      ]
+    },
+    {
+      "check": "surtr_gate:3:alpha",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "surtr_gate:3:transparent_rgb_zero",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "surtr_gate:3:2pxmargin",
+      "passed": true,
+      "detail": [
+        5,
+        7,
+        118,
+        124
+      ]
+    },
+    {
+      "check": "surtr_gate:max48rgb",
+      "passed": true,
+      "detail": 48
+    },
+    {
+      "check": "surtr_gate:unique_frames",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "surtr_gate:native:frames",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "surtr_gate:native:timing",
+      "passed": true,
+      "detail": [
+        120,
+        130,
+        130,
+        120
+      ]
+    },
+    {
+      "check": "surtr_gate:slow8:frames",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "surtr_gate:slow8:timing",
+      "passed": true,
+      "detail": [
+        120,
+        130,
+        130,
+        120
+      ]
+    },
+    {
+      "check": "surtr_gate:actual_source",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "surtr_firewall_band:RGBA",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "surtr_firewall_band:sheet",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "surtr_firewall_band:0:alpha",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "surtr_firewall_band:0:transparent_rgb_zero",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "surtr_firewall_band:0:2pxmargin",
+      "passed": true,
+      "detail": [
+        0,
+        7,
+        64,
+        32
+      ]
+    },
+    {
+      "check": "surtr_firewall_band:1:alpha",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "surtr_firewall_band:1:transparent_rgb_zero",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "surtr_firewall_band:1:2pxmargin",
+      "passed": true,
+      "detail": [
+        0,
+        2,
+        64,
+        32
+      ]
+    },
+    {
+      "check": "surtr_firewall_band:2:alpha",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "surtr_firewall_band:2:transparent_rgb_zero",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "surtr_firewall_band:2:2pxmargin",
+      "passed": true,
+      "detail": [
+        0,
+        4,
+        64,
+        32
+      ]
+    },
+    {
+      "check": "surtr_firewall_band:3:alpha",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "surtr_firewall_band:3:transparent_rgb_zero",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "surtr_firewall_band:3:2pxmargin",
+      "passed": true,
+      "detail": [
+        0,
+        11,
+        64,
+        32
+      ]
+    },
+    {
+      "check": "surtr_firewall_band:max48rgb",
+      "passed": true,
+      "detail": 20
+    },
+    {
+      "check": "surtr_firewall_band:unique_frames",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "surtr_firewall_band:native:frames",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "surtr_firewall_band:native:timing",
+      "passed": true,
+      "detail": [
+        120,
+        130,
+        130,
+        120
+      ]
+    },
+    {
+      "check": "surtr_firewall_band:slow8:frames",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "surtr_firewall_band:slow8:timing",
+      "passed": true,
+      "detail": [
+        120,
+        130,
+        130,
+        120
+      ]
+    },
+    {
+      "check": "surtr_firewall_band:actual_source",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "surtr_final_fire:RGBA",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "surtr_final_fire:sheet",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "surtr_final_fire:0:alpha",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "surtr_final_fire:0:transparent_rgb_zero",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "surtr_final_fire:0:2pxmargin",
+      "passed": true,
+      "detail": [
+        13,
+        18,
+        58,
+        62
+      ]
+    },
+    {
+      "check": "surtr_final_fire:1:alpha",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "surtr_final_fire:1:transparent_rgb_zero",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "surtr_final_fire:1:2pxmargin",
+      "passed": true,
+      "detail": [
+        8,
+        12,
+        52,
+        58
+      ]
+    },
+    {
+      "check": "surtr_final_fire:2:alpha",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "surtr_final_fire:2:transparent_rgb_zero",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "surtr_final_fire:2:2pxmargin",
+      "passed": true,
+      "detail": [
+        10,
+        2,
+        59,
+        54
+      ]
+    },
+    {
+      "check": "surtr_final_fire:3:alpha",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "surtr_final_fire:3:transparent_rgb_zero",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "surtr_final_fire:3:2pxmargin",
+      "passed": true,
+      "detail": [
+        8,
+        11,
+        55,
+        54
+      ]
+    },
+    {
+      "check": "surtr_final_fire:max48rgb",
+      "passed": true,
+      "detail": 18
+    },
+    {
+      "check": "surtr_final_fire:unique_frames",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "surtr_final_fire:native:frames",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "surtr_final_fire:native:timing",
+      "passed": true,
+      "detail": [
+        60,
+        60,
+        70,
+        660
+      ]
+    },
+    {
+      "check": "surtr_final_fire:slow8:frames",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "surtr_final_fire:slow8:timing",
+      "passed": true,
+      "detail": [
+        120,
+        130,
+        130,
+        720
+      ]
+    },
+    {
+      "check": "surtr_final_fire:actual_source",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "surtr_safe_rune:RGBA",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "surtr_safe_rune:sheet",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "surtr_safe_rune:0:alpha",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "surtr_safe_rune:0:transparent_rgb_zero",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "surtr_safe_rune:0:2pxmargin",
+      "passed": true,
+      "detail": [
+        5,
+        6,
+        59,
+        58
+      ]
+    },
+    {
+      "check": "surtr_safe_rune:max48rgb",
+      "passed": true,
+      "detail": 24
+    },
+    {
+      "check": "surtr_safe_rune:unique_frames",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "surtr_safe_rune:actual_source",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "freyr:RGBA",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "freyr:sheet",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "freyr:0:alpha",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "freyr:0:transparent_rgb_zero",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "freyr:0:2pxmargin",
+      "passed": true,
+      "detail": [
+        15,
+        4,
+        49,
+        62
+      ]
+    },
+    {
+      "check": "freyr:0:ground_baseline",
+      "passed": true,
+      "detail": 62
+    },
+    {
+      "check": "freyr:max48rgb",
+      "passed": true,
+      "detail": 48
+    },
+    {
+      "check": "freyr:unique_frames",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "freyr:actual_source",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "freyr_idle:RGBA",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "freyr_idle:sheet",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "freyr_idle:0:alpha",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "freyr_idle:0:transparent_rgb_zero",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "freyr_idle:0:2pxmargin",
+      "passed": true,
+      "detail": [
+        14,
+        4,
+        49,
+        62
+      ]
+    },
+    {
+      "check": "freyr_idle:0:ground_baseline",
+      "passed": true,
+      "detail": 62
+    },
+    {
+      "check": "freyr_idle:1:alpha",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "freyr_idle:1:transparent_rgb_zero",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "freyr_idle:1:2pxmargin",
+      "passed": true,
+      "detail": [
+        12,
+        4,
+        48,
+        62
+      ]
+    },
+    {
+      "check": "freyr_idle:1:ground_baseline",
+      "passed": true,
+      "detail": 62
+    },
+    {
+      "check": "freyr_idle:2:alpha",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "freyr_idle:2:transparent_rgb_zero",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "freyr_idle:2:2pxmargin",
+      "passed": true,
+      "detail": [
+        14,
+        4,
+        50,
+        62
+      ]
+    },
+    {
+      "check": "freyr_idle:2:ground_baseline",
+      "passed": true,
+      "detail": 62
+    },
+    {
+      "check": "freyr_idle:3:alpha",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "freyr_idle:3:transparent_rgb_zero",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "freyr_idle:3:2pxmargin",
+      "passed": true,
+      "detail": [
+        14,
+        4,
+        50,
+        62
+      ]
+    },
+    {
+      "check": "freyr_idle:3:ground_baseline",
+      "passed": true,
+      "detail": 62
+    },
+    {
+      "check": "freyr_idle:max48rgb",
+      "passed": true,
+      "detail": 48
+    },
+    {
+      "check": "freyr_idle:unique_frames",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "freyr_idle:native:frames",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "freyr_idle:native:timing",
+      "passed": true,
+      "detail": [
+        120,
+        130,
+        130,
+        120
+      ]
+    },
+    {
+      "check": "freyr_idle:slow8:frames",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "freyr_idle:slow8:timing",
+      "passed": true,
+      "detail": [
+        120,
+        130,
+        130,
+        120
+      ]
+    },
+    {
+      "check": "freyr_idle:actual_source",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "freyr_heal:RGBA",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "freyr_heal:sheet",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "freyr_heal:0:alpha",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "freyr_heal:0:transparent_rgb_zero",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "freyr_heal:0:2pxmargin",
+      "passed": true,
+      "detail": [
+        13,
+        4,
+        49,
+        62
+      ]
+    },
+    {
+      "check": "freyr_heal:0:ground_baseline",
+      "passed": true,
+      "detail": 62
+    },
+    {
+      "check": "freyr_heal:1:alpha",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "freyr_heal:1:transparent_rgb_zero",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "freyr_heal:1:2pxmargin",
+      "passed": true,
+      "detail": [
+        13,
+        4,
+        49,
+        62
+      ]
+    },
+    {
+      "check": "freyr_heal:1:ground_baseline",
+      "passed": true,
+      "detail": 62
+    },
+    {
+      "check": "freyr_heal:2:alpha",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "freyr_heal:2:transparent_rgb_zero",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "freyr_heal:2:2pxmargin",
+      "passed": true,
+      "detail": [
+        13,
+        4,
+        50,
+        62
+      ]
+    },
+    {
+      "check": "freyr_heal:2:ground_baseline",
+      "passed": true,
+      "detail": 62
+    },
+    {
+      "check": "freyr_heal:3:alpha",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "freyr_heal:3:transparent_rgb_zero",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "freyr_heal:3:2pxmargin",
+      "passed": true,
+      "detail": [
+        13,
+        4,
+        50,
+        62
+      ]
+    },
+    {
+      "check": "freyr_heal:3:ground_baseline",
+      "passed": true,
+      "detail": 62
+    },
+    {
+      "check": "freyr_heal:max48rgb",
+      "passed": true,
+      "detail": 48
+    },
+    {
+      "check": "freyr_heal:unique_frames",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "freyr_heal:native:frames",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "freyr_heal:native:timing",
+      "passed": true,
+      "detail": [
+        60,
+        60,
+        70,
+        660
+      ]
+    },
+    {
+      "check": "freyr_heal:slow8:frames",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "freyr_heal:slow8:timing",
+      "passed": true,
+      "detail": [
+        120,
+        130,
+        130,
+        720
+      ]
+    },
+    {
+      "check": "freyr_heal:actual_source",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "surtr_sword_arc:0:protected_empty",
+      "passed": true,
+      "detail": 0
+    },
+    {
+      "check": "surtr_sword_arc:1:protected_empty",
+      "passed": true,
+      "detail": 0
+    },
+    {
+      "check": "surtr_sword_arc:2:protected_empty",
+      "passed": true,
+      "detail": 0
+    },
+    {
+      "check": "surtr_sword_arc:3:protected_empty",
+      "passed": true,
+      "detail": 0
+    },
+    {
+      "check": "surtr_gate:0:protected_empty",
+      "passed": true,
+      "detail": 0
+    },
+    {
+      "check": "surtr_gate:1:protected_empty",
+      "passed": true,
+      "detail": 0
+    },
+    {
+      "check": "surtr_gate:2:protected_empty",
+      "passed": true,
+      "detail": 0
+    },
+    {
+      "check": "surtr_gate:3:protected_empty",
+      "passed": true,
+      "detail": 0
+    },
+    {
+      "check": "surtr_firewall_band:0:protected_empty",
+      "passed": true,
+      "detail": 0
+    },
+    {
+      "check": "surtr_firewall_band:1:protected_empty",
+      "passed": true,
+      "detail": 0
+    },
+    {
+      "check": "surtr_firewall_band:2:protected_empty",
+      "passed": true,
+      "detail": 0
+    },
+    {
+      "check": "surtr_firewall_band:3:protected_empty",
+      "passed": true,
+      "detail": 0
+    },
+    {
+      "check": "surtr_safe_rune:0:protected_empty",
+      "passed": true,
+      "detail": 0
+    },
+    {
+      "check": "render:grid0:safe3,2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "render:grid0:safe6,4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "render:gate0:48x70clear",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "render:wall0:insideR238clear",
+      "passed": true,
+      "detail": 0
+    },
+    {
+      "check": "render:arc0:centerR31clear",
+      "passed": true,
+      "detail": 0
+    },
+    {
+      "check": "render:grid1:safe3,2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "render:grid1:safe6,4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "render:gate1:48x70clear",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "render:wall1:insideR238clear",
+      "passed": true,
+      "detail": 0
+    },
+    {
+      "check": "render:arc1:centerR31clear",
+      "passed": true,
+      "detail": 0
+    },
+    {
+      "check": "render:grid2:safe3,2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "render:grid2:safe6,4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "render:gate2:48x70clear",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "render:wall2:insideR238clear",
+      "passed": true,
+      "detail": 0
+    },
+    {
+      "check": "render:arc2:centerR31clear",
+      "passed": true,
+      "detail": 0
+    },
+    {
+      "check": "render:grid3:safe3,2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "render:grid3:safe6,4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "render:gate3:48x70clear",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "render:wall3:insideR238clear",
+      "passed": true,
+      "detail": 0
+    },
+    {
+      "check": "render:arc3:centerR31clear",
+      "passed": true,
+      "detail": 0
+    },
+    {
+      "check": "81captures",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "final_fixture_no_script_error",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "1453_preexisting_inputs_unchanged",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "check": "14PNG51frames",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "scope": "asset and isolated Godot rendering only; not Game scene"
+}

@@ -1,0 +1,68 @@
+{
+  "input": "originals/hrym_ice_break_v01.png",
+  "input_sha256": "3a44b6792f2f87f9fdac78447aef40df18009f546b95eec5e5f1632508a6356e",
+  "raw_size": [
+    1774,
+    887
+  ],
+  "grid": [
+    2,
+    2
+  ],
+  "cut_boxes": [
+    [
+      281,
+      54,
+      703,
+      441
+    ],
+    [
+      127,
+      86,
+      608,
+      437
+    ],
+    [
+      281,
+      87,
+      735,
+      412
+    ],
+    [
+      162,
+      129,
+      554,
+      415
+    ]
+  ],
+  "single_common_scale": 0.12474012474012475,
+  "placements": [
+    [
+      5,
+      8,
+      53,
+      48
+    ],
+    [
+      2,
+      10,
+      60,
+      44
+    ],
+    [
+      3,
+      11,
+      57,
+      41
+    ],
+    [
+      7,
+      14,
+      49,
+      36
+    ]
+  ],
+  "operations": "original alpha threshold/quantization, source frame cuts, single common nearest resize, source-derived shared palette, whole-frame placement; no character/effect drawing",
+  "candidate": "candidates/hrym_ice_break_v01.png",
+  "candidate_sha256": "1182b62d22d3838d05b02f7d833bbae76798db471d02eeb3b062ebd7764247f1"
+}

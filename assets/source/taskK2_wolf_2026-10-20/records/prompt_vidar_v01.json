@@ -1,0 +1,16 @@
+{
+  "tool": "image_gen.imagegen",
+  "id": "vidar",
+  "frame_size": [
+    96,
+    96
+  ],
+  "frames": 1,
+  "alpha": "binary",
+  "prompt": "Use case: stylized-concept. Asset: ONE new world-space PIXEL-ART allied human sprite for this game's Norse battlefield. Image1 and Image2 are pixel-density/material/style references ONLY, not identities to copy: do NOT draw the old man, staff, frost skin or giant. Design an original living young-adult Norse male warrior, broad athletic shoulders, dark brown hair in a short tied braid, short dark beard, calm stern face with both eyes intact, weathered olive-green wool cloak over dark brown wool tunic and plain leather belt, muted bronze wrist bands, sturdy trousers and leg wraps. One notably THICK reinforced stitched leather boot is visible on the forward right-facing foot; other boot normal but sturdy. Bare hands, no weapon, no horns, no helmet, no modern objects. Full body, three-quarter view facing RIGHT, neutral balanced stance with both hands free and the forward boot ready to brace against a huge jaw. Upper-left lighting, same detailed game pixel clusters as references, charcoal/forest green/old bronze/skin accents, limited48RGB colors. Logical96x96 canvas; whole figure inside inner80% with generous transparent padding, including hair, hands, cloak and soles. Feet on one consistent foot plane, no ground shadow. This is a compact in-game sprite, not portrait or card art. True transparent alpha, no glow, scenery, text, label, frame or watermark. Square image. Do not imitate any film, comic or game character.",
+  "refs": [
+    "/Users/zhangjunqiu/Desktop/无限恐怖/assets/sprites/characters/mage.png",
+    "/Users/zhangjunqiu/Desktop/无限恐怖/assets/sprites/enemies/frost_veteran.png"
+  ],
+  "transparent_background": true
+}

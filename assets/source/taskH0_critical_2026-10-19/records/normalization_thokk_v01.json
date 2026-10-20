@@ -1,0 +1,24 @@
+{
+  "source": "originals/thokk_v01.png",
+  "alpha_threshold": 128,
+  "source_crop_bbox": [
+    291,
+    93,
+    978,
+    1185
+  ],
+  "nearest_fit_box": [
+    84,
+    88
+  ],
+  "palette_operation": "Pillow MEDIANCUT 48RGB, NONE dither",
+  "paste_ground_baseline": 92,
+  "final_bbox": [
+    20,
+    4,
+    75,
+    92
+  ],
+  "candidate_sha256": "09eacf76a01cbb38177da6174e85247b02a290b1d6f2e6f01e4692337738e64b",
+  "scope": "formatting only; no repaint"
+}

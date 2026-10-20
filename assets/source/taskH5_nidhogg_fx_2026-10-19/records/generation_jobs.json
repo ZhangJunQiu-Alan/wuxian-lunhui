@@ -1,0 +1,136 @@
+[
+  {
+    "id": "nidhogg_burrow_dust",
+    "version": "v01",
+    "prompt": "Use case: stylized-concept. Production pixel-art dark underworld game VFX. Inputs are project-owned material/texture references only, do NOT copy their pool or ground-crack silhouette. Subterranean entry dust, no dragon body. Low dark brown/grey earth dust curling DOWN and IN toward a small ground-level center hole, few pebbles. Four ONESHOT phases: small incoming dust swirl, short low puff with2-4 tiny stones, thinning haze, just a few fading grains. NOT a glowing portal, ice ring or permanent crater. Transparent background, low opaque coverage and subdued earth palette. EXACTLY FOUR DISTINCT frames in TWO COLUMNS and TWO ROWS, equal cell aspect 96:64, intended native 96x64. Same pivot, cell framing and scale across frames, preserve occurrence/peak/decay for single shots and smooth phase cycling for loop. Limited32RGB with8alpha steps, crisp clustered pixel art, subdued moss-green and earth-grey palette, no blue ice or fiery orange. Entire effect fits inside each cell with transparent borders. Genuine alpha background, no opaque rectangle, text, labels, grid, watermark, scenery, dragon or tree body.",
+    "reference_paths": [
+      "assets/sprites/effects/ground_crack.png"
+    ],
+    "archived_input_references": [
+      {
+        "actual_input_path": "assets/sprites/effects/ground_crack.png",
+        "archived_path": "references/ground_crack.png",
+        "sha256": "c7178cac3ba5662cfa99d2bef22d62249762a564143b504c66e8d59bd71ffbf8"
+      }
+    ],
+    "archived_output": {
+      "file": "originals/nidhogg_burrow_dust_v01.png",
+      "sha256": "d728fdeefbc0e536612970bbe31542c0b0f44fdd0f61bb8e7bd9c03718312ac3"
+    },
+    "tool": "OpenAI built-in image_gen",
+    "source_terms": "https://openai.com/policies/terms-of-use/",
+    "status": "selected"
+  },
+  {
+    "id": "nidhogg_emerge_burst",
+    "version": "v01",
+    "prompt": "Use case: stylized-concept. Production pixel-art dark underworld game VFX. Inputs are project-owned material/texture references only, do NOT copy their pool or ground-crack silhouette. A dragon emergence EARTH BURST, no dragon. Ground center is image center; dark brown soil and grey rock fragments radiate outward and upward from it in a low fan, with sparse transparent dust. Four ONESHOT phases: compact soil upheaval, strongest angular rocks and short brown dust plumes, fragments spread and fall with lower density, fading fine grains. Not ice, fire or a uniform circular ring. No permanent rubble. EXACTLY FOUR DISTINCT frames in TWO COLUMNS and TWO ROWS, equal cell aspect 128:96, intended native 128x96. Same pivot, cell framing and scale across frames, preserve occurrence/peak/decay for single shots and smooth phase cycling for loop. Limited32RGB with8alpha steps, crisp clustered pixel art, subdued moss-green and earth-grey palette, no blue ice or fiery orange. Entire effect fits inside each cell with transparent borders. Genuine alpha background, no opaque rectangle, text, labels, grid, watermark, scenery, dragon or tree body.",
+    "reference_paths": [
+      "assets/sprites/effects/ground_crack.png"
+    ],
+    "archived_input_references": [
+      {
+        "actual_input_path": "assets/sprites/effects/ground_crack.png",
+        "archived_path": "references/ground_crack.png",
+        "sha256": "c7178cac3ba5662cfa99d2bef22d62249762a564143b504c66e8d59bd71ffbf8"
+      }
+    ],
+    "archived_output": {
+      "file": "originals/nidhogg_emerge_burst_v01.png",
+      "sha256": "6ed84079be20af380153199c1727ddb191ad310b7f367c3cc615bc8151175b1c"
+    },
+    "tool": "OpenAI built-in image_gen",
+    "source_terms": "https://openai.com/policies/terms-of-use/",
+    "status": "partially_retained",
+    "rejection_reason": "Fourth frame retained stone mound and was replaced; first three frames retained pixel-identically in v02"
+  },
+  {
+    "id": "nidhogg_emerge_burst",
+    "version": "v02",
+    "prompt": "Use case: precise-object-edit. This is a 2x2 FOUR-frame pixel-art earth-burst animation sheet, genuine transparent background. KEEP top-left, top-right, and bottom-left cells EXACTLY unchanged in appearance, size, location, palette and opacity. Change ONLY bottom-right fourth cell: erase the remaining central rock pile and all large rocks. This is the FINAL DISSIPATION phase, so retain ONLY 4 to8 very tiny dark grey-brown airborne dust grains and one or two extremely faint thin dust curls, loosely around where the burst was, no visible earth mound, no ground crater, no stone base, no big fragments, no opaque smoke patch. Most of the fourth cell must be completely transparent. Same muted earth palette and crisp pixel clusters as reference. Do not add text, lines, labels or watermarks. Preserve 2x2 grid and full transparent outer padding. No creature.",
+    "reference_paths": [
+      "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskH5_nidhogg_fx_2026-10-19/originals/nidhogg_emerge_burst_v01.png"
+    ],
+    "rejection_reason": "v01 final frame retained visible stone pile; require dispersal",
+    "archived_input_references": [
+      {
+        "actual_input_path": "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskH5_nidhogg_fx_2026-10-19/originals/nidhogg_emerge_burst_v01.png",
+        "archived_path": "references/nidhogg_emerge_burst_v01.png",
+        "sha256": "6ed84079be20af380153199c1727ddb191ad310b7f367c3cc615bc8151175b1c"
+      }
+    ],
+    "archived_output": {
+      "file": "originals/nidhogg_emerge_burst_v02.png",
+      "sha256": "965bb392a7956b540b32166e4ff2ed5d01a5099dfa56da9d90661a6d7a09a629"
+    },
+    "tool": "OpenAI built-in image_gen",
+    "source_terms": "https://openai.com/policies/terms-of-use/",
+    "status": "selected"
+  },
+  {
+    "id": "nidhogg_gnaw_heal",
+    "version": "v01",
+    "prompt": "Use case: stylized-concept. Production pixel-art dark underworld game VFX. Inputs are project-owned material/texture references only, do NOT copy their pool or ground-crack silhouette. Dark-green life essence traveling from a tree-root source LEFT to recipient RIGHT, no root or dragon drawn. A few slender moss-green wisps and tiny dull green motes forming an arcing short stream from left toward right in a square transparent cell. Four distinct seamless LOOP phases of motes progressing LEFT TO RIGHT, stable stream shape. Muted green, not bright neon or player heal symbols. Sparse center, no opaque circle, no plus sign. EXACTLY FOUR DISTINCT frames in TWO COLUMNS and TWO ROWS, equal cell aspect 64:64, intended native 64x64. Same pivot, cell framing and scale across frames, preserve occurrence/peak/decay for single shots and smooth phase cycling for loop. Limited32RGB with8alpha steps, crisp clustered pixel art, subdued moss-green and earth-grey palette, no blue ice or fiery orange. Entire effect fits inside each cell with transparent borders. Genuine alpha background, no opaque rectangle, text, labels, grid, watermark, scenery, dragon or tree body.",
+    "reference_paths": [
+      "assets/sprites/effects/poison_pool.png"
+    ],
+    "archived_input_references": [
+      {
+        "actual_input_path": "assets/sprites/effects/poison_pool.png",
+        "archived_path": "references/poison_pool.png",
+        "sha256": "0284bb2e78321311e43248046a820d43920193764e68f64d662d25cd1516374f"
+      }
+    ],
+    "archived_output": {
+      "file": "originals/nidhogg_gnaw_heal_v01.png",
+      "sha256": "18ebc97bbcbd9522517bb72f106f82d6bc19a1ae749d4a2fc2d06d9f9df3dd32"
+    },
+    "tool": "OpenAI built-in image_gen",
+    "source_terms": "https://openai.com/policies/terms-of-use/",
+    "status": "selected"
+  },
+  {
+    "id": "nidhogg_gnaw_stagger",
+    "version": "v01",
+    "prompt": "Use case: stylized-concept. Production pixel-art dark underworld game VFX. Inputs are project-owned material/texture references only, do NOT copy their pool or ground-crack silhouette. A short interrupted dark-green life-stream stagger effect, no creature. Four ONESHOT phases: thin grey-green tether at center beginning to split, a small muted amber-grey shock cutting the green stream, two broken green ends recoil with tiny specks, faint few green motes vanish. Compact, no bright explosion or rune circle; no lingering beam. EXACTLY FOUR DISTINCT frames in TWO COLUMNS and TWO ROWS, equal cell aspect 64:64, intended native 64x64. Same pivot, cell framing and scale across frames, preserve occurrence/peak/decay for single shots and smooth phase cycling for loop. Limited32RGB with8alpha steps, crisp clustered pixel art, subdued moss-green and earth-grey palette, no blue ice or fiery orange. Entire effect fits inside each cell with transparent borders. Genuine alpha background, no opaque rectangle, text, labels, grid, watermark, scenery, dragon or tree body.",
+    "reference_paths": [
+      "assets/sprites/effects/poison_pool.png"
+    ],
+    "archived_input_references": [
+      {
+        "actual_input_path": "assets/sprites/effects/poison_pool.png",
+        "archived_path": "references/poison_pool.png",
+        "sha256": "0284bb2e78321311e43248046a820d43920193764e68f64d662d25cd1516374f"
+      }
+    ],
+    "archived_output": {
+      "file": "originals/nidhogg_gnaw_stagger_v01.png",
+      "sha256": "c56389db73d4453ca6fb9c653f0137b1460f017d65e3f7c77a482cd5ccee7852"
+    },
+    "tool": "OpenAI built-in image_gen",
+    "source_terms": "https://openai.com/policies/terms-of-use/",
+    "status": "selected"
+  },
+  {
+    "id": "nidhogg_poison_breath",
+    "version": "v01",
+    "prompt": "Use case: stylized-concept. Production pixel-art dark underworld game VFX. Inputs are project-owned material/texture references only, do NOT copy their pool or ground-crack silhouette. Rightward fan-shaped dragon poison BREATH, no dragon or pool. Narrow spray mouth at x4,y32 of a96x64 target, fan expands to RIGHT, about±34degrees around +X. Four ONESHOT phases: a small exhale from narrow left nozzle, widening layered dark moss-green and grey-green smoke fan, full fan with a few pale toxic curls, thin dissipating fan fragments. Left edge outside nozzle completely transparent. No straight rectangular cloud, no droplets falling into a pool, no ground shadow. Keep sparse alpha so player silhouettes remain visible. EXACTLY FOUR DISTINCT frames in TWO COLUMNS and TWO ROWS, equal cell aspect 96:64, intended native 96x64. Same pivot, cell framing and scale across frames, preserve occurrence/peak/decay for single shots and smooth phase cycling for loop. Limited32RGB with8alpha steps, crisp clustered pixel art, subdued moss-green and earth-grey palette, no blue ice or fiery orange. Entire effect fits inside each cell with transparent borders. Genuine alpha background, no opaque rectangle, text, labels, grid, watermark, scenery, dragon or tree body.",
+    "reference_paths": [
+      "assets/sprites/effects/poison_pool.png"
+    ],
+    "archived_input_references": [
+      {
+        "actual_input_path": "assets/sprites/effects/poison_pool.png",
+        "archived_path": "references/poison_pool.png",
+        "sha256": "0284bb2e78321311e43248046a820d43920193764e68f64d662d25cd1516374f"
+      }
+    ],
+    "archived_output": {
+      "file": "originals/nidhogg_poison_breath_v01.png",
+      "sha256": "e38b29e5430a440c129bf54625281238e1631ac00f05bb8423176204d8bb4edd"
+    },
+    "tool": "OpenAI built-in image_gen",
+    "source_terms": "https://openai.com/policies/terms-of-use/",
+    "status": "selected"
+  }
+]

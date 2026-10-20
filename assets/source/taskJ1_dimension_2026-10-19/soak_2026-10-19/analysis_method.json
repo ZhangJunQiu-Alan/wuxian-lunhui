@@ -1,0 +1,12 @@
+{
+  "units": "MiB=1048576bytes; RSS from psKiB/1024",
+  "sustained_trend": "OLS slope across each300second phase excluding first60seconds",
+  "thresholds_are_investigation_flags_not_acceptance_proof": {
+    "static_slope_MiB_per_minute":1,
+    "RSS_slope_MiB_per_minute":2
+  },
+  "scene_cycle_trend": "Exclude first8 cycles, compare stable nodes and compare resource/object counts separately for each of4characters",
+  "natural_cleanup": "Stop emission, disable weapon loops, wait10s, require empty marks/particles/rings and no active ultimate nodes; then freeGame60times without manually clearing arrays",
+  "sampling_bias": "Test stores sample/check dictionaries in memory; small static drift may include recorder cost. OS RSS includes driver/font/audio and allocator caches and can reflect macOS paging.",
+  "unverified": "No claim of zero leaks for all game combinations, other devices, exported builds or multi-hour sessions."
+}

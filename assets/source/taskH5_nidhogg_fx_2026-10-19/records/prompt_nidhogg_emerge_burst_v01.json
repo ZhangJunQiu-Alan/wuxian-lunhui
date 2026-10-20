@@ -1,0 +1,8 @@
+{
+  "id": "nidhogg_emerge_burst",
+  "version": "v01",
+  "prompt": "Use case: stylized-concept. Production pixel-art dark underworld game VFX. Inputs are project-owned material/texture references only, do NOT copy their pool or ground-crack silhouette. A dragon emergence EARTH BURST, no dragon. Ground center is image center; dark brown soil and grey rock fragments radiate outward and upward from it in a low fan, with sparse transparent dust. Four ONESHOT phases: compact soil upheaval, strongest angular rocks and short brown dust plumes, fragments spread and fall with lower density, fading fine grains. Not ice, fire or a uniform circular ring. No permanent rubble. EXACTLY FOUR DISTINCT frames in TWO COLUMNS and TWO ROWS, equal cell aspect 128:96, intended native 128x96. Same pivot, cell framing and scale across frames, preserve occurrence/peak/decay for single shots and smooth phase cycling for loop. Limited32RGB with8alpha steps, crisp clustered pixel art, subdued moss-green and earth-grey palette, no blue ice or fiery orange. Entire effect fits inside each cell with transparent borders. Genuine alpha background, no opaque rectangle, text, labels, grid, watermark, scenery, dragon or tree body.",
+  "reference_paths": [
+    "assets/sprites/effects/ground_crack.png"
+  ]
+}

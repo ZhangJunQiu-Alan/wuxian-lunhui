@@ -1,0 +1,42 @@
+{
+  "method": "existingownworldsprite pose compositing viaGodot transparentviewport; no newcharacters or paintedpixels",
+  "logical_frame": [
+    512,
+    128
+  ],
+  "frames": 4,
+  "fps": 8,
+  "loop": true,
+  "downsample": "decorativebackground only:0.5nearest, active gameplayentities unchanged",
+  "sources": {
+    "vidar_pry": "assets/sprites/allies/vidar_pry.png",
+    "freyr_heal": "assets/sprites/allies/freyr_heal.png",
+    "fire_attack": "assets/sprites/enemies/fire_giant_attack.png",
+    "frost_attack": "assets/sprites/enemies/frost_veteran_attack.png",
+    "firewall": "assets/sprites/effects/bosses/surtr_firewall_band.png",
+    "sword_arc": "assets/sprites/effects/bosses/surtr_sword_arc.png",
+    "heal_field": "assets/sprites/effects/gods/freyr_field.png"
+  },
+  "phase_indices": {
+    "vidar": [
+      0,
+      1,
+      2,
+      5
+    ],
+    "freyr": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "giants": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  "story": "nondescriptclashes, no goddeath and no questoutcome",
+  "target": "northunwalkablehorizon"
+}

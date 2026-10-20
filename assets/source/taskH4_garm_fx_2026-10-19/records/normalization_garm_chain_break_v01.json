@@ -1,0 +1,68 @@
+{
+  "input": "originals/garm_chain_break_v01.png",
+  "input_sha256": "68f3cf44cb5c44d8b844aff5b5c403757e462a5ec26f5a4a099bcb7f585f6730",
+  "raw_size": [
+    1254,
+    1254
+  ],
+  "grid": [
+    2,
+    2
+  ],
+  "cut_boxes": [
+    [
+      54,
+      218,
+      593,
+      505
+    ],
+    [
+      36,
+      201,
+      584,
+      515
+    ],
+    [
+      103,
+      183,
+      562,
+      464
+    ],
+    [
+      108,
+      212,
+      517,
+      442
+    ]
+  ],
+  "single_common_scale": 0.10948905109489052,
+  "placements": [
+    [
+      2,
+      16,
+      59,
+      31
+    ],
+    [
+      2,
+      15,
+      60,
+      34
+    ],
+    [
+      7,
+      16,
+      50,
+      31
+    ],
+    [
+      9,
+      19,
+      45,
+      25
+    ]
+  ],
+  "operations": "original alpha threshold/quantization, source frame cuts, single common nearest resize, source-derived shared palette, whole-frame placement; no character/effect drawing",
+  "candidate": "candidates/garm_chain_break_v01.png",
+  "candidate_sha256": "ea6db7b77f6c20d6eb278a9411e50322db86a192a7879ab651ce86ad1a734093"
+}

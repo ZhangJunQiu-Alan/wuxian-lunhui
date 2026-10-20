@@ -35,7 +35,8 @@ func _process(delta: float) -> void:
 	if _age < 0.3:
 		queue_redraw()
 	if _life <= 0.0:
-		FxLayer.burst(global_position, COLOR, 8, 120.0)
+		if not BossFx.play("hrym_ice_break", global_position + Vector2(0, RADIUS * 0.6)):
+			FxLayer.burst(global_position, COLOR, 8, 120.0)
 		queue_free()
 
 

@@ -1,0 +1,156 @@
+[
+  {
+    "id": "hel_army_summon",
+    "version": "v01",
+    "prompt": "Use case: stylized-concept. Production pixel-art underworld game texture/effect; inputs are project-owned style references only, do not copy character or existing pool/ring form. An underworld earth fissure where a dead enemy will emerge, no person or body. Small uneven grey-purple earth crack horizontally near center, with sparse low spectral smoke curling up either side. Four ONESHOT phases: thin fissure appears, muted pale violet light peeks through with a little broken earth, fissure dims and smoke disperses, faint few grey grains. No large portal disc or complete ring. Sparse transparent ground marker, no persistent crater. EXACTLY FOUR DISTINCT frames in2columns2rows, identical cell aspect96:96, native96x96 per cell. Stable camera, pivot and scale; clear occurrence, peak and decay unless explicitly looping. Desaturated grey-green and grey-violet, extremely restrained luminance, limited32RGB colors, crisp pixel clusters, alpha steps. Genuine transparent background between marks, no opaque square backing or drop shadow. No text, labels, grid, frame, watermark, scenery, body or ship. Entire effect fits inside each frame; repeated tiles/strips must flow through their matching edges.",
+    "reference_paths": [
+      "assets/sprites/effects/ground_crack.png"
+    ],
+    "archived_input_references": [
+      {
+        "actual_input_path": "assets/sprites/effects/ground_crack.png",
+        "archived_path": "references/ground_crack.png",
+        "sha256": "c7178cac3ba5662cfa99d2bef22d62249762a564143b504c66e8d59bd71ffbf8"
+      }
+    ],
+    "archived_output": {
+      "file": "originals/hel_army_summon_v01.png",
+      "sha256": "789902185ec44e641d98777ae640586ea13aed20e7c57d26b00ac7f9f71cac0d"
+    },
+    "tool": "OpenAI built-in image_gen",
+    "source_terms": "https://openai.com/policies/terms-of-use/",
+    "status": "selected"
+  },
+  {
+    "id": "hel_board_ship",
+    "version": "v01",
+    "prompt": "Use case: stylized-concept. Production pixel-art underworld game texture/effect; inputs are project-owned style references only, do not copy character or existing pool/ring form. A short translucent underworld mist/light-column transition around an unseen figure boarding a ship, no queen, person or ship. Wide transparent CENTRAL CORRIDOR so sail and projectiles remain visible. Four ONESHOT phases: faint grey-violet side wisps at lower corners, two slender side columns lift with sparse pale motes, columns split into wisps and dim, only sparse high motes. No opaque center, giant cloud or full-screen curtain; subtle grey-violet / grey-green neutral palette. EXACTLY FOUR DISTINCT frames in2columns2rows, identical cell aspect128:128, native128x128 per cell. Stable camera, pivot and scale; clear occurrence, peak and decay unless explicitly looping. Desaturated grey-green and grey-violet, extremely restrained luminance, limited32RGB colors, crisp pixel clusters, alpha steps. Genuine transparent background between marks, no opaque square backing or drop shadow. No text, labels, grid, frame, watermark, scenery, body or ship. Entire effect fits inside each frame; repeated tiles/strips must flow through their matching edges.",
+    "reference_paths": [
+      "assets/sprites/bosses/hel.png"
+    ],
+    "archived_input_references": [
+      {
+        "actual_input_path": "assets/sprites/bosses/hel.png",
+        "archived_path": "references/hel.png",
+        "sha256": "0c1e0a49f57e6a80535bc2c382e4f68cd882810f18dc35f79fd6befa2c558aa9"
+      }
+    ],
+    "archived_output": {
+      "file": "originals/hel_board_ship_v01.png",
+      "sha256": "f0e651585851ce35f92528852d5e34471c749d55cc84e9efef26a5ae074cb934"
+    },
+    "tool": "OpenAI built-in image_gen",
+    "source_terms": "https://openai.com/policies/terms-of-use/",
+    "status": "selected"
+  },
+  {
+    "id": "hel_death_ground",
+    "version": "v01",
+    "prompt": "Use case: stylized-concept. Production pixel-art underworld game texture/effect; inputs are project-owned style references only, do not copy character or existing pool/ring form. A seamless repeating square pixel texture OVERLAY of very faint grey-violet underworld death-side traces. Sparse low-contrast wispy branching cracks and dim dust evenly edge-to-edge, tileable both directions, no focal point, center emblem, circle or border. Genuine transparent background between marks, extremely low opacity. Desaturated stone grey-violet with approximately same subdued luminance as grey-green partner. Subtle over dark terrain, no opaque purple carpet or dense fog. One flat square tile only, no animation, grid or numbers. Single128x128-equivalent square seamless TRANSPARENT overlay tile, NOT an opaque background, NOT an animation sheet. Desaturated grey-green and grey-violet, extremely restrained luminance, limited32RGB colors, crisp pixel clusters, alpha steps. Genuine transparent background between marks, no opaque square backing or drop shadow. No text, labels, grid, frame, watermark, scenery, body or ship. Entire effect fits inside each frame; repeated tiles/strips must flow through their matching edges.",
+    "reference_paths": [
+      "assets/sprites/effects/frost_shockwave.png"
+    ],
+    "archived_input_references": [
+      {
+        "actual_input_path": "assets/sprites/effects/frost_shockwave.png",
+        "archived_path": "references/frost_shockwave.png",
+        "sha256": "a0aa09571dec4959ee2a9f66dc6a6a038a2017fad3dea1140680bc837495c625"
+      }
+    ],
+    "archived_output": {
+      "file": "originals/hel_death_ground_v01.png",
+      "sha256": "740a5e840831faa8de44581f9d9381c07260b7598ea5b5d902a9dbcca251e036"
+    },
+    "tool": "OpenAI built-in image_gen",
+    "source_terms": "https://openai.com/policies/terms-of-use/",
+    "status": "selected"
+  },
+  {
+    "id": "hel_domain_edge",
+    "version": "v01",
+    "prompt": "Use case: stylized-concept. Production pixel-art underworld game texture/effect; inputs are project-owned style references only, do not copy character or existing pool/ring form. A SHORT REPEATABLE underworld safety-domain boundary BAND, not a ring. Horizontal long axis is tangent LEFT to RIGHT; outside direction is UP. Sparse grey-violet flowing spectral filaments form a clearly readable narrow bright-ish line at central y, tiny dim mist wisps on outer UP side, mostly clear inner DOWN side. Four seamless LOOP phases with similar geometry, no expansion. Matching left/right ports; transparent top/bottom. No death skulls, bodies, full circle or large fog wall. EXACTLY FOUR DISTINCT frames in2columns2rows, identical cell aspect64:32, native64x32 per cell. Stable camera, pivot and scale; clear occurrence, peak and decay unless explicitly looping. Desaturated grey-green and grey-violet, extremely restrained luminance, limited32RGB colors, crisp pixel clusters, alpha steps. Genuine transparent background between marks, no opaque square backing or drop shadow. No text, labels, grid, frame, watermark, scenery, body or ship. Entire effect fits inside each frame; repeated tiles/strips must flow through their matching edges.",
+    "reference_paths": [
+      "assets/sprites/effects/frost_shockwave.png"
+    ],
+    "archived_input_references": [
+      {
+        "actual_input_path": "assets/sprites/effects/frost_shockwave.png",
+        "archived_path": "references/frost_shockwave.png",
+        "sha256": "a0aa09571dec4959ee2a9f66dc6a6a038a2017fad3dea1140680bc837495c625"
+      }
+    ],
+    "archived_output": {
+      "file": "originals/hel_domain_edge_v01.png",
+      "sha256": "860469d484cf58fda6cc177f6e4b23efec9d88993e0795c4703543cb5f8b4bbe"
+    },
+    "tool": "OpenAI built-in image_gen",
+    "source_terms": "https://openai.com/policies/terms-of-use/",
+    "status": "selected"
+  },
+  {
+    "id": "hel_heal",
+    "version": "v01",
+    "prompt": "Use case: stylized-concept. Production pixel-art underworld game texture/effect; inputs are project-owned style references only, do not copy character or existing pool/ring form. Very faint grey-green UPWARD life wisps around an enemy, no body. Thin desaturated green strands rising from lower middle toward top, a few tiny motes. Four ONESHOT phases: faint low wisps gather, strands rise gently, thinner higher motes, faint motes disappear. No plus sign, heart, apple, feather or gold loot sparkle; must look like enemy necromantic restoration rather than player pickup. Transparent middle, sparse restrained glow. EXACTLY FOUR DISTINCT frames in2columns2rows, identical cell aspect64:64, native64x64 per cell. Stable camera, pivot and scale; clear occurrence, peak and decay unless explicitly looping. Desaturated grey-green and grey-violet, extremely restrained luminance, limited32RGB colors, crisp pixel clusters, alpha steps. Genuine transparent background between marks, no opaque square backing or drop shadow. No text, labels, grid, frame, watermark, scenery, body or ship. Entire effect fits inside each frame; repeated tiles/strips must flow through their matching edges.",
+    "reference_paths": [
+      "assets/sprites/effects/poison_pool.png"
+    ],
+    "archived_input_references": [
+      {
+        "actual_input_path": "assets/sprites/effects/poison_pool.png",
+        "archived_path": "references/poison_pool.png",
+        "sha256": "0284bb2e78321311e43248046a820d43920193764e68f64d662d25cd1516374f"
+      }
+    ],
+    "archived_output": {
+      "file": "originals/hel_heal_v01.png",
+      "sha256": "90549855ae5706ca5988ef5038d850a233d545025abecdfb127f11b99cb20b1c"
+    },
+    "tool": "OpenAI built-in image_gen",
+    "source_terms": "https://openai.com/policies/terms-of-use/",
+    "status": "selected"
+  },
+  {
+    "id": "hel_life_ground",
+    "version": "v01",
+    "prompt": "Use case: stylized-concept. Production pixel-art underworld game texture/effect; inputs are project-owned style references only, do not copy character or existing pool/ring form. A seamless repeating square pixel texture OVERLAY of very faint grey-green underworld life-side traces. Sparse low-contrast worn wispy branching vein marks and dim dust, distributed evenly edge-to-edge, tileable both directions, no focal point or isolated emblem, no circle or border. Genuine transparent background between marks, extremely low opacity. Desaturated stone-grey green, reference texture clusters. Must be subtle over dark terrain, no grass carpet or dense green fog. One flat square tile only, no animation, no sample grid or numbers. Single128x128-equivalent square seamless TRANSPARENT overlay tile, NOT an opaque background, NOT an animation sheet. Desaturated grey-green and grey-violet, extremely restrained luminance, limited32RGB colors, crisp pixel clusters, alpha steps. Genuine transparent background between marks, no opaque square backing or drop shadow. No text, labels, grid, frame, watermark, scenery, body or ship. Entire effect fits inside each frame; repeated tiles/strips must flow through their matching edges.",
+    "reference_paths": [
+      "assets/sprites/effects/poison_pool.png"
+    ],
+    "archived_input_references": [
+      {
+        "actual_input_path": "assets/sprites/effects/poison_pool.png",
+        "archived_path": "references/poison_pool.png",
+        "sha256": "0284bb2e78321311e43248046a820d43920193764e68f64d662d25cd1516374f"
+      }
+    ],
+    "archived_output": {
+      "file": "originals/hel_life_ground_v01.png",
+      "sha256": "162551cf1cea2b63dd24fa26c0e5301558f3ba5ea81e6d4400b1ef2031dbd292"
+    },
+    "tool": "OpenAI built-in image_gen",
+    "source_terms": "https://openai.com/policies/terms-of-use/",
+    "status": "selected"
+  },
+  {
+    "id": "hel_shift",
+    "version": "v01",
+    "prompt": "Use case: stylized-concept. Production pixel-art underworld game texture/effect; inputs are project-owned style references only, do not copy character or existing pool/ring form. Neutral pale grey particle teleport wisp with a slight desaturated green and violet tinge, designed for code tinting. Four ONESHOT phases: few motes gather around center, brief thin vertical split of mist, wisps expand sideways and break, sparse fading grey motes. No person, opaque portal disc or permanent symbol. Low alpha, center mostly transparent, no blue ice or fire. EXACTLY FOUR DISTINCT frames in2columns2rows, identical cell aspect96:96, native96x96 per cell. Stable camera, pivot and scale; clear occurrence, peak and decay unless explicitly looping. Desaturated grey-green and grey-violet, extremely restrained luminance, limited32RGB colors, crisp pixel clusters, alpha steps. Genuine transparent background between marks, no opaque square backing or drop shadow. No text, labels, grid, frame, watermark, scenery, body or ship. Entire effect fits inside each frame; repeated tiles/strips must flow through their matching edges.",
+    "reference_paths": [
+      "assets/sprites/bosses/hel.png"
+    ],
+    "archived_input_references": [
+      {
+        "actual_input_path": "assets/sprites/bosses/hel.png",
+        "archived_path": "references/hel.png",
+        "sha256": "0c1e0a49f57e6a80535bc2c382e4f68cd882810f18dc35f79fd6befa2c558aa9"
+      }
+    ],
+    "archived_output": {
+      "file": "originals/hel_shift_v01.png",
+      "sha256": "fbba6210370f4103c204adaf1362dd4eba46d63e13d1c814051690348bb8e36f"
+    },
+    "tool": "OpenAI built-in image_gen",
+    "source_terms": "https://openai.com/policies/terms-of-use/",
+    "status": "selected"
+  }
+]

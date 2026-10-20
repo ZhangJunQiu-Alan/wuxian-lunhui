@@ -1,0 +1,8 @@
+{
+  "id": "nidhogg_burrow_dust",
+  "version": "v01",
+  "prompt": "Use case: stylized-concept. Production pixel-art dark underworld game VFX. Inputs are project-owned material/texture references only, do NOT copy their pool or ground-crack silhouette. Subterranean entry dust, no dragon body. Low dark brown/grey earth dust curling DOWN and IN toward a small ground-level center hole, few pebbles. Four ONESHOT phases: small incoming dust swirl, short low puff with2-4 tiny stones, thinning haze, just a few fading grains. NOT a glowing portal, ice ring or permanent crater. Transparent background, low opaque coverage and subdued earth palette. EXACTLY FOUR DISTINCT frames in TWO COLUMNS and TWO ROWS, equal cell aspect 96:64, intended native 96x64. Same pivot, cell framing and scale across frames, preserve occurrence/peak/decay for single shots and smooth phase cycling for loop. Limited32RGB with8alpha steps, crisp clustered pixel art, subdued moss-green and earth-grey palette, no blue ice or fiery orange. Entire effect fits inside each cell with transparent borders. Genuine alpha background, no opaque rectangle, text, labels, grid, watermark, scenery, dragon or tree body.",
+  "reference_paths": [
+    "assets/sprites/effects/ground_crack.png"
+  ]
+}

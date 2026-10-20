@@ -1,0 +1,11 @@
+{
+  "tool": "image_gen.imagegen",
+  "id": "surtr_windup",
+  "version": "v02",
+  "refs": [
+    "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskK3_fire_2026-10-20/references/surtr_action_master_4x.png",
+    "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskK3_fire_2026-10-20/originals/surtr_windup_v01_raw.png"
+  ],
+  "prompt": "Use case: sprite-animation, precise pose repair. Canonical image1 gives SAME armored fire giant; image2 failed because lifted pose cape is far too long left and body would shrink when fitted. Redo THREE WINDUP poses2x2atlas, last bottom-right EMPTY. Same bronze-black heavy plates, crown helmet/flaming hair, molten cracks, shredded crimson waistcloth, SAME long flaming broad sword, right3/4view. Logical256square each; preserve original184px standing body scale, hips atx128, groundedsoles254. Poses0original low diagonal guard,1BENT elbows draw sword back across waist,2BENT elbows raise sword diagonally backward over shoulder for sweep. Sword hilt stays nearx135..155; raised blade points up-left into spare canvas top region, tip inside x15..80,y15..60. Head/crown still near y70..90, not a tiny shrunken figure. Keep cape/ragged cloth CLOSE behind hip, leftmost cloth no farther left than x35; do not fan cloth into giant wing. Two arms and two legs, coherent gauntlets grip same one sword. All complete weapon and flame tips inside2px alpha margin. No ground shadow or effect arc. Crisp fine pixel clusters exact material palette<=48RGB, upper-left light, binary entity alpha, transparent zero-alpha background, no scene/words/labels/grid/frame/watermark.",
+  "transparent_background": true
+}

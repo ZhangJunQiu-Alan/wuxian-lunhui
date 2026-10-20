@@ -1,0 +1,440 @@
+[
+  {
+    "id": "surtr_idle",
+    "version": "v01",
+    "frame_size": [
+      320,
+      320
+    ],
+    "frames": 4,
+    "fps": 8,
+    "loop": true,
+    "scale": 0.3239113827349122,
+    "calibration": {
+      "first_pose_belt_y_in240height_preview": 100,
+      "first_pose_belt_x_in240height_preview": 108,
+      "reference_belt_ground_span": 106,
+      "manual_source": "calibrate_* images actually viewed"
+    },
+    "placements": [
+      [
+        76,
+        136,
+        165,
+        182
+      ],
+      [
+        73,
+        138,
+        169,
+        180
+      ],
+      [
+        74,
+        133,
+        167,
+        185
+      ],
+      [
+        70,
+        135,
+        172,
+        183
+      ]
+    ],
+    "bboxes": [
+      [
+        76,
+        136,
+        241,
+        318
+      ],
+      [
+        73,
+        138,
+        242,
+        318
+      ],
+      [
+        74,
+        133,
+        241,
+        318
+      ],
+      [
+        70,
+        135,
+        242,
+        318
+      ]
+    ],
+    "method": "one uniform scale per action calibrated using body waist-to-sole; no per-axis stretching; root/ground whole-frame placement; approved48RGB binaryalpha"
+  },
+  {
+    "id": "surtr_move",
+    "version": "v01",
+    "frame_size": [
+      320,
+      320
+    ],
+    "frames": 6,
+    "fps": 8,
+    "loop": true,
+    "scale": 0.38417396556931444,
+    "calibration": {
+      "first_pose_belt_y_in240height_preview": 100,
+      "first_pose_belt_x_in240height_preview": 120,
+      "reference_belt_ground_span": 106,
+      "manual_source": "calibrate_* images actually viewed"
+    },
+    "placements": [
+      [
+        68,
+        136,
+        180,
+        182
+      ],
+      [
+        73,
+        134,
+        177,
+        184
+      ],
+      [
+        74,
+        134,
+        171,
+        184
+      ],
+      [
+        69,
+        136,
+        178,
+        182
+      ],
+      [
+        71,
+        138,
+        178,
+        180
+      ],
+      [
+        71,
+        135,
+        177,
+        183
+      ]
+    ],
+    "bboxes": [
+      [
+        68,
+        136,
+        248,
+        318
+      ],
+      [
+        73,
+        134,
+        250,
+        318
+      ],
+      [
+        74,
+        134,
+        245,
+        318
+      ],
+      [
+        69,
+        136,
+        247,
+        318
+      ],
+      [
+        71,
+        138,
+        249,
+        318
+      ],
+      [
+        71,
+        135,
+        247,
+        318
+      ]
+    ],
+    "method": "one uniform scale per action calibrated using body waist-to-sole; no per-axis stretching; root/ground whole-frame placement; approved48RGB binaryalpha"
+  },
+  {
+    "id": "surtr_windup",
+    "version": "v02",
+    "frame_size": [
+      320,
+      320
+    ],
+    "frames": 3,
+    "fps": 8,
+    "loop": false,
+    "scale": 0.3106227106227107,
+    "calibration": {
+      "first_pose_belt_y_in240height_preview": 100,
+      "first_pose_belt_x_in240height_preview": 96,
+      "reference_belt_ground_span": 106,
+      "manual_source": "calibrate_* images actually viewed"
+    },
+    "placements": [
+      [
+        87,
+        136,
+        159,
+        182
+      ],
+      [
+        56,
+        148,
+        194,
+        170
+      ],
+      [
+        96,
+        132,
+        156,
+        186
+      ]
+    ],
+    "bboxes": [
+      [
+        87,
+        136,
+        246,
+        318
+      ],
+      [
+        56,
+        148,
+        250,
+        318
+      ],
+      [
+        96,
+        132,
+        252,
+        318
+      ]
+    ],
+    "method": "one uniform scale per action calibrated using body waist-to-sole; no per-axis stretching; root/ground whole-frame placement; approved48RGB binaryalpha"
+  },
+  {
+    "id": "surtr_attack",
+    "version": "v02",
+    "frame_size": [
+      320,
+      320
+    ],
+    "frames": 4,
+    "fps": 16,
+    "loop": false,
+    "scale": 0.3697440758293839,
+    "calibration": {
+      "first_pose_belt_y_in240height_preview": 140,
+      "first_pose_belt_x_in240height_preview": 95,
+      "reference_belt_ground_span": 106,
+      "manual_source": "calibrate_* images actually viewed"
+    },
+    "placements": [
+      [
+        67,
+        84,
+        173,
+        234
+      ],
+      [
+        40,
+        131,
+        235,
+        187
+      ],
+      [
+        61,
+        131,
+        220,
+        187
+      ],
+      [
+        61,
+        128,
+        215,
+        190
+      ]
+    ],
+    "bboxes": [
+      [
+        67,
+        84,
+        240,
+        318
+      ],
+      [
+        40,
+        131,
+        275,
+        318
+      ],
+      [
+        61,
+        131,
+        281,
+        318
+      ],
+      [
+        61,
+        129,
+        276,
+        318
+      ]
+    ],
+    "method": "one uniform scale per action calibrated using body waist-to-sole; no per-axis stretching; root/ground whole-frame placement; approved48RGB binaryalpha"
+  },
+  {
+    "id": "surtr_plant",
+    "version": "v01",
+    "frame_size": [
+      320,
+      320
+    ],
+    "frames": 4,
+    "fps": 16,
+    "loop": false,
+    "scale": 0.3303896103896104,
+    "calibration": {
+      "first_pose_belt_y_in240height_preview": 100,
+      "first_pose_belt_x_in240height_preview": 108,
+      "reference_belt_ground_span": 106,
+      "manual_source": "calibrate_* images actually viewed"
+    },
+    "placements": [
+      [
+        78,
+        136,
+        191,
+        182
+      ],
+      [
+        71,
+        154,
+        154,
+        164
+      ],
+      [
+        74,
+        149,
+        149,
+        169
+      ],
+      [
+        76,
+        138,
+        145,
+        180
+      ]
+    ],
+    "bboxes": [
+      [
+        78,
+        136,
+        269,
+        318
+      ],
+      [
+        71,
+        154,
+        225,
+        318
+      ],
+      [
+        74,
+        149,
+        223,
+        318
+      ],
+      [
+        76,
+        138,
+        221,
+        318
+      ]
+    ],
+    "method": "one uniform scale per action calibrated using body waist-to-sole; no per-axis stretching; root/ground whole-frame placement; approved48RGB binaryalpha"
+  },
+  {
+    "id": "surtr_summon",
+    "version": "v01",
+    "frame_size": [
+      320,
+      320
+    ],
+    "frames": 4,
+    "fps": 16,
+    "loop": false,
+    "scale": 0.33713225549960246,
+    "calibration": {
+      "first_pose_belt_y_in240height_preview": 100,
+      "first_pose_belt_x_in240height_preview": 112,
+      "reference_belt_ground_span": 106,
+      "manual_source": "calibrate_* images actually viewed"
+    },
+    "placements": [
+      [
+        74,
+        136,
+        170,
+        182
+      ],
+      [
+        71,
+        136,
+        168,
+        182
+      ],
+      [
+        66,
+        134,
+        186,
+        184
+      ],
+      [
+        74,
+        133,
+        170,
+        185
+      ]
+    ],
+    "bboxes": [
+      [
+        74,
+        136,
+        244,
+        318
+      ],
+      [
+        71,
+        136,
+        239,
+        318
+      ],
+      [
+        66,
+        134,
+        252,
+        318
+      ],
+      [
+        74,
+        133,
+        244,
+        318
+      ]
+    ],
+    "method": "one uniform scale per action calibrated using body waist-to-sole; no per-axis stretching; root/ground whole-frame placement; approved48RGB binaryalpha"
+  }
+]

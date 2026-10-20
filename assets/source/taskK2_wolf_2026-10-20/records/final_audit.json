@@ -1,0 +1,1973 @@
+{
+  "task": "K2",
+  "checks": 349,
+  "failures": 0,
+  "items": [
+    {
+      "check": "fenrir_idle:sheet_size",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fenrir_idle:0:binary_alpha",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fenrir_idle:0:transparent_rgb_zero",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fenrir_idle:0:margin",
+      "passed": true,
+      "detail": [
+        3,
+        8,
+        185,
+        190
+      ]
+    },
+    {
+      "check": "fenrir_idle:0:ground_baseline",
+      "passed": true,
+      "detail": 190
+    },
+    {
+      "check": "fenrir_idle:1:binary_alpha",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fenrir_idle:1:transparent_rgb_zero",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fenrir_idle:1:margin",
+      "passed": true,
+      "detail": [
+        3,
+        6,
+        187,
+        190
+      ]
+    },
+    {
+      "check": "fenrir_idle:1:ground_baseline",
+      "passed": true,
+      "detail": 190
+    },
+    {
+      "check": "fenrir_idle:2:binary_alpha",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fenrir_idle:2:transparent_rgb_zero",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fenrir_idle:2:margin",
+      "passed": true,
+      "detail": [
+        3,
+        6,
+        189,
+        190
+      ]
+    },
+    {
+      "check": "fenrir_idle:2:ground_baseline",
+      "passed": true,
+      "detail": 190
+    },
+    {
+      "check": "fenrir_idle:3:binary_alpha",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fenrir_idle:3:transparent_rgb_zero",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fenrir_idle:3:margin",
+      "passed": true,
+      "detail": [
+        3,
+        12,
+        188,
+        190
+      ]
+    },
+    {
+      "check": "fenrir_idle:3:ground_baseline",
+      "passed": true,
+      "detail": 190
+    },
+    {
+      "check": "fenrir_idle:48rgb",
+      "passed": true,
+      "detail": 48
+    },
+    {
+      "check": "fenrir_idle:unique_frames",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fenrir_idle:native:gif_exists",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fenrir_idle:native:gif_count",
+      "passed": true,
+      "detail": 4
+    },
+    {
+      "check": "fenrir_idle:native:0:duration",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fenrir_idle:native:1:duration",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fenrir_idle:native:2:duration",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fenrir_idle:native:3:duration",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fenrir_idle:slow8:gif_exists",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fenrir_idle:slow8:gif_count",
+      "passed": true,
+      "detail": 4
+    },
+    {
+      "check": "fenrir_idle:slow8:0:duration",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fenrir_idle:slow8:1:duration",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fenrir_idle:slow8:2:duration",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fenrir_idle:slow8:3:duration",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fenrir_idle:actual_source",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fenrir_move:sheet_size",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fenrir_move:0:binary_alpha",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fenrir_move:0:transparent_rgb_zero",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fenrir_move:0:margin",
+      "passed": true,
+      "detail": [
+        3,
+        25,
+        182,
+        190
+      ]
+    },
+    {
+      "check": "fenrir_move:0:ground_baseline",
+      "passed": true,
+      "detail": 190
+    },
+    {
+      "check": "fenrir_move:1:binary_alpha",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fenrir_move:1:transparent_rgb_zero",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fenrir_move:1:margin",
+      "passed": true,
+      "detail": [
+        3,
+        17,
+        184,
+        190
+      ]
+    },
+    {
+      "check": "fenrir_move:1:ground_baseline",
+      "passed": true,
+      "detail": 190
+    },
+    {
+      "check": "fenrir_move:2:binary_alpha",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fenrir_move:2:transparent_rgb_zero",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fenrir_move:2:margin",
+      "passed": true,
+      "detail": [
+        3,
+        17,
+        183,
+        190
+      ]
+    },
+    {
+      "check": "fenrir_move:2:ground_baseline",
+      "passed": true,
+      "detail": 190
+    },
+    {
+      "check": "fenrir_move:3:binary_alpha",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fenrir_move:3:transparent_rgb_zero",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fenrir_move:3:margin",
+      "passed": true,
+      "detail": [
+        3,
+        20,
+        182,
+        190
+      ]
+    },
+    {
+      "check": "fenrir_move:3:ground_baseline",
+      "passed": true,
+      "detail": 190
+    },
+    {
+      "check": "fenrir_move:4:binary_alpha",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fenrir_move:4:transparent_rgb_zero",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fenrir_move:4:margin",
+      "passed": true,
+      "detail": [
+        3,
+        17,
+        189,
+        190
+      ]
+    },
+    {
+      "check": "fenrir_move:4:ground_baseline",
+      "passed": true,
+      "detail": 190
+    },
+    {
+      "check": "fenrir_move:5:binary_alpha",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fenrir_move:5:transparent_rgb_zero",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fenrir_move:5:margin",
+      "passed": true,
+      "detail": [
+        3,
+        18,
+        183,
+        190
+      ]
+    },
+    {
+      "check": "fenrir_move:5:ground_baseline",
+      "passed": true,
+      "detail": 190
+    },
+    {
+      "check": "fenrir_move:48rgb",
+      "passed": true,
+      "detail": 48
+    },
+    {
+      "check": "fenrir_move:unique_frames",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fenrir_move:native:gif_exists",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fenrir_move:native:gif_count",
+      "passed": true,
+      "detail": 6
+    },
+    {
+      "check": "fenrir_move:native:0:duration",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fenrir_move:native:1:duration",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fenrir_move:native:2:duration",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fenrir_move:native:3:duration",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fenrir_move:native:4:duration",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fenrir_move:native:5:duration",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fenrir_move:slow8:gif_exists",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fenrir_move:slow8:gif_count",
+      "passed": true,
+      "detail": 6
+    },
+    {
+      "check": "fenrir_move:slow8:0:duration",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fenrir_move:slow8:1:duration",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fenrir_move:slow8:2:duration",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fenrir_move:slow8:3:duration",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fenrir_move:slow8:4:duration",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fenrir_move:slow8:5:duration",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fenrir_move:actual_source",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fenrir_windup:sheet_size",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fenrir_windup:0:binary_alpha",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fenrir_windup:0:transparent_rgb_zero",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fenrir_windup:0:margin",
+      "passed": true,
+      "detail": [
+        3,
+        20,
+        183,
+        190
+      ]
+    },
+    {
+      "check": "fenrir_windup:0:ground_baseline",
+      "passed": true,
+      "detail": 190
+    },
+    {
+      "check": "fenrir_windup:1:binary_alpha",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fenrir_windup:1:transparent_rgb_zero",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fenrir_windup:1:margin",
+      "passed": true,
+      "detail": [
+        3,
+        21,
+        186,
+        190
+      ]
+    },
+    {
+      "check": "fenrir_windup:1:ground_baseline",
+      "passed": true,
+      "detail": 190
+    },
+    {
+      "check": "fenrir_windup:2:binary_alpha",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fenrir_windup:2:transparent_rgb_zero",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fenrir_windup:2:margin",
+      "passed": true,
+      "detail": [
+        3,
+        16,
+        189,
+        190
+      ]
+    },
+    {
+      "check": "fenrir_windup:2:ground_baseline",
+      "passed": true,
+      "detail": 190
+    },
+    {
+      "check": "fenrir_windup:48rgb",
+      "passed": true,
+      "detail": 48
+    },
+    {
+      "check": "fenrir_windup:unique_frames",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fenrir_windup:native:gif_exists",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fenrir_windup:native:gif_count",
+      "passed": true,
+      "detail": 3
+    },
+    {
+      "check": "fenrir_windup:native:0:duration",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fenrir_windup:native:1:duration",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fenrir_windup:native:2:duration",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fenrir_windup:slow8:gif_exists",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fenrir_windup:slow8:gif_count",
+      "passed": true,
+      "detail": 3
+    },
+    {
+      "check": "fenrir_windup:slow8:0:duration",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fenrir_windup:slow8:1:duration",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fenrir_windup:slow8:2:duration",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fenrir_windup:actual_source",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fenrir_attack:sheet_size",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fenrir_attack:0:binary_alpha",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fenrir_attack:0:transparent_rgb_zero",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fenrir_attack:0:margin",
+      "passed": true,
+      "detail": [
+        3,
+        22,
+        179,
+        190
+      ]
+    },
+    {
+      "check": "fenrir_attack:0:ground_baseline",
+      "passed": true,
+      "detail": 190
+    },
+    {
+      "check": "fenrir_attack:1:binary_alpha",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fenrir_attack:1:transparent_rgb_zero",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fenrir_attack:1:margin",
+      "passed": true,
+      "detail": [
+        3,
+        20,
+        189,
+        190
+      ]
+    },
+    {
+      "check": "fenrir_attack:1:ground_baseline",
+      "passed": true,
+      "detail": 190
+    },
+    {
+      "check": "fenrir_attack:2:binary_alpha",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fenrir_attack:2:transparent_rgb_zero",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fenrir_attack:2:margin",
+      "passed": true,
+      "detail": [
+        3,
+        25,
+        189,
+        190
+      ]
+    },
+    {
+      "check": "fenrir_attack:2:ground_baseline",
+      "passed": true,
+      "detail": 190
+    },
+    {
+      "check": "fenrir_attack:3:binary_alpha",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fenrir_attack:3:transparent_rgb_zero",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fenrir_attack:3:margin",
+      "passed": true,
+      "detail": [
+        3,
+        19,
+        187,
+        190
+      ]
+    },
+    {
+      "check": "fenrir_attack:3:ground_baseline",
+      "passed": true,
+      "detail": 190
+    },
+    {
+      "check": "fenrir_attack:48rgb",
+      "passed": true,
+      "detail": 48
+    },
+    {
+      "check": "fenrir_attack:unique_frames",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fenrir_attack:native:gif_exists",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fenrir_attack:native:gif_count",
+      "passed": true,
+      "detail": 4
+    },
+    {
+      "check": "fenrir_attack:native:0:duration",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fenrir_attack:native:1:duration",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fenrir_attack:native:2:duration",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fenrir_attack:native:3:duration",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fenrir_attack:slow8:gif_exists",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fenrir_attack:slow8:gif_count",
+      "passed": true,
+      "detail": 4
+    },
+    {
+      "check": "fenrir_attack:slow8:0:duration",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fenrir_attack:slow8:1:duration",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fenrir_attack:slow8:2:duration",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fenrir_attack:slow8:3:duration",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fenrir_attack:actual_source",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fenrir_swallow:sheet_size",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fenrir_swallow:0:binary_alpha",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fenrir_swallow:0:transparent_rgb_zero",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fenrir_swallow:0:margin",
+      "passed": true,
+      "detail": [
+        3,
+        8,
+        188,
+        190
+      ]
+    },
+    {
+      "check": "fenrir_swallow:0:ground_baseline",
+      "passed": true,
+      "detail": 190
+    },
+    {
+      "check": "fenrir_swallow:1:binary_alpha",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fenrir_swallow:1:transparent_rgb_zero",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fenrir_swallow:1:margin",
+      "passed": true,
+      "detail": [
+        3,
+        8,
+        189,
+        190
+      ]
+    },
+    {
+      "check": "fenrir_swallow:1:ground_baseline",
+      "passed": true,
+      "detail": 190
+    },
+    {
+      "check": "fenrir_swallow:2:binary_alpha",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fenrir_swallow:2:transparent_rgb_zero",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fenrir_swallow:2:margin",
+      "passed": true,
+      "detail": [
+        3,
+        8,
+        188,
+        190
+      ]
+    },
+    {
+      "check": "fenrir_swallow:2:ground_baseline",
+      "passed": true,
+      "detail": 190
+    },
+    {
+      "check": "fenrir_swallow:3:binary_alpha",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fenrir_swallow:3:transparent_rgb_zero",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fenrir_swallow:3:margin",
+      "passed": true,
+      "detail": [
+        3,
+        6,
+        188,
+        190
+      ]
+    },
+    {
+      "check": "fenrir_swallow:3:ground_baseline",
+      "passed": true,
+      "detail": 190
+    },
+    {
+      "check": "fenrir_swallow:4:binary_alpha",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fenrir_swallow:4:transparent_rgb_zero",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fenrir_swallow:4:margin",
+      "passed": true,
+      "detail": [
+        3,
+        8,
+        189,
+        190
+      ]
+    },
+    {
+      "check": "fenrir_swallow:4:ground_baseline",
+      "passed": true,
+      "detail": 190
+    },
+    {
+      "check": "fenrir_swallow:5:binary_alpha",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fenrir_swallow:5:transparent_rgb_zero",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fenrir_swallow:5:margin",
+      "passed": true,
+      "detail": [
+        3,
+        9,
+        188,
+        190
+      ]
+    },
+    {
+      "check": "fenrir_swallow:5:ground_baseline",
+      "passed": true,
+      "detail": 190
+    },
+    {
+      "check": "fenrir_swallow:48rgb",
+      "passed": true,
+      "detail": 48
+    },
+    {
+      "check": "fenrir_swallow:unique_frames",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fenrir_swallow:native:gif_exists",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fenrir_swallow:native:gif_count",
+      "passed": true,
+      "detail": 6
+    },
+    {
+      "check": "fenrir_swallow:native:0:duration",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fenrir_swallow:native:1:duration",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fenrir_swallow:native:2:duration",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fenrir_swallow:native:3:duration",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fenrir_swallow:native:4:duration",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fenrir_swallow:native:5:duration",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fenrir_swallow:slow8:gif_exists",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fenrir_swallow:slow8:gif_count",
+      "passed": true,
+      "detail": 6
+    },
+    {
+      "check": "fenrir_swallow:slow8:0:duration",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fenrir_swallow:slow8:1:duration",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fenrir_swallow:slow8:2:duration",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fenrir_swallow:slow8:3:duration",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fenrir_swallow:slow8:4:duration",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fenrir_swallow:slow8:5:duration",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fenrir_swallow:actual_source",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "gleipnir_fragment:sheet_size",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "gleipnir_fragment:0:binary_alpha",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "gleipnir_fragment:0:transparent_rgb_zero",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "gleipnir_fragment:0:margin",
+      "passed": true,
+      "detail": [
+        2,
+        3,
+        22,
+        21
+      ]
+    },
+    {
+      "check": "gleipnir_fragment:48rgb",
+      "passed": true,
+      "detail": 46
+    },
+    {
+      "check": "gleipnir_fragment:unique_frames",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "gleipnir_fragment:actual_source",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "vidar:sheet_size",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "vidar:0:binary_alpha",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "vidar:0:transparent_rgb_zero",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "vidar:0:margin",
+      "passed": true,
+      "detail": [
+        20,
+        2,
+        76,
+        94
+      ]
+    },
+    {
+      "check": "vidar:0:ground_baseline",
+      "passed": true,
+      "detail": 94
+    },
+    {
+      "check": "vidar:48rgb",
+      "passed": true,
+      "detail": 48
+    },
+    {
+      "check": "vidar:unique_frames",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "vidar:actual_source",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "vidar_idle:sheet_size",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "vidar_idle:0:binary_alpha",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "vidar_idle:0:transparent_rgb_zero",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "vidar_idle:0:margin",
+      "passed": true,
+      "detail": [
+        19,
+        2,
+        75,
+        94
+      ]
+    },
+    {
+      "check": "vidar_idle:0:ground_baseline",
+      "passed": true,
+      "detail": 94
+    },
+    {
+      "check": "vidar_idle:1:binary_alpha",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "vidar_idle:1:transparent_rgb_zero",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "vidar_idle:1:margin",
+      "passed": true,
+      "detail": [
+        16,
+        2,
+        75,
+        94
+      ]
+    },
+    {
+      "check": "vidar_idle:1:ground_baseline",
+      "passed": true,
+      "detail": 94
+    },
+    {
+      "check": "vidar_idle:2:binary_alpha",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "vidar_idle:2:transparent_rgb_zero",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "vidar_idle:2:margin",
+      "passed": true,
+      "detail": [
+        15,
+        2,
+        75,
+        94
+      ]
+    },
+    {
+      "check": "vidar_idle:2:ground_baseline",
+      "passed": true,
+      "detail": 94
+    },
+    {
+      "check": "vidar_idle:3:binary_alpha",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "vidar_idle:3:transparent_rgb_zero",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "vidar_idle:3:margin",
+      "passed": true,
+      "detail": [
+        18,
+        2,
+        75,
+        94
+      ]
+    },
+    {
+      "check": "vidar_idle:3:ground_baseline",
+      "passed": true,
+      "detail": 94
+    },
+    {
+      "check": "vidar_idle:48rgb",
+      "passed": true,
+      "detail": 48
+    },
+    {
+      "check": "vidar_idle:unique_frames",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "vidar_idle:native:gif_exists",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "vidar_idle:native:gif_count",
+      "passed": true,
+      "detail": 4
+    },
+    {
+      "check": "vidar_idle:native:0:duration",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "vidar_idle:native:1:duration",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "vidar_idle:native:2:duration",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "vidar_idle:native:3:duration",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "vidar_idle:slow8:gif_exists",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "vidar_idle:slow8:gif_count",
+      "passed": true,
+      "detail": 4
+    },
+    {
+      "check": "vidar_idle:slow8:0:duration",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "vidar_idle:slow8:1:duration",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "vidar_idle:slow8:2:duration",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "vidar_idle:slow8:3:duration",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "vidar_idle:actual_source",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "vidar_pry:sheet_size",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "vidar_pry:0:binary_alpha",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "vidar_pry:0:transparent_rgb_zero",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "vidar_pry:0:margin",
+      "passed": true,
+      "detail": [
+        16,
+        7,
+        86,
+        94
+      ]
+    },
+    {
+      "check": "vidar_pry:0:ground_baseline",
+      "passed": true,
+      "detail": 94
+    },
+    {
+      "check": "vidar_pry:1:binary_alpha",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "vidar_pry:1:transparent_rgb_zero",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "vidar_pry:1:margin",
+      "passed": true,
+      "detail": [
+        16,
+        2,
+        84,
+        94
+      ]
+    },
+    {
+      "check": "vidar_pry:1:ground_baseline",
+      "passed": true,
+      "detail": 94
+    },
+    {
+      "check": "vidar_pry:2:binary_alpha",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "vidar_pry:2:transparent_rgb_zero",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "vidar_pry:2:margin",
+      "passed": true,
+      "detail": [
+        15,
+        3,
+        90,
+        94
+      ]
+    },
+    {
+      "check": "vidar_pry:2:ground_baseline",
+      "passed": true,
+      "detail": 94
+    },
+    {
+      "check": "vidar_pry:3:binary_alpha",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "vidar_pry:3:transparent_rgb_zero",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "vidar_pry:3:margin",
+      "passed": true,
+      "detail": [
+        14,
+        5,
+        87,
+        94
+      ]
+    },
+    {
+      "check": "vidar_pry:3:ground_baseline",
+      "passed": true,
+      "detail": 94
+    },
+    {
+      "check": "vidar_pry:4:binary_alpha",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "vidar_pry:4:transparent_rgb_zero",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "vidar_pry:4:margin",
+      "passed": true,
+      "detail": [
+        13,
+        5,
+        87,
+        94
+      ]
+    },
+    {
+      "check": "vidar_pry:4:ground_baseline",
+      "passed": true,
+      "detail": 94
+    },
+    {
+      "check": "vidar_pry:5:binary_alpha",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "vidar_pry:5:transparent_rgb_zero",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "vidar_pry:5:margin",
+      "passed": true,
+      "detail": [
+        15,
+        9,
+        82,
+        94
+      ]
+    },
+    {
+      "check": "vidar_pry:5:ground_baseline",
+      "passed": true,
+      "detail": 94
+    },
+    {
+      "check": "vidar_pry:48rgb",
+      "passed": true,
+      "detail": 48
+    },
+    {
+      "check": "vidar_pry:unique_frames",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "vidar_pry:native:gif_exists",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "vidar_pry:native:gif_count",
+      "passed": true,
+      "detail": 6
+    },
+    {
+      "check": "vidar_pry:native:0:duration",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "vidar_pry:native:1:duration",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "vidar_pry:native:2:duration",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "vidar_pry:native:3:duration",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "vidar_pry:native:4:duration",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "vidar_pry:native:5:duration",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "vidar_pry:slow8:gif_exists",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "vidar_pry:slow8:gif_count",
+      "passed": true,
+      "detail": 6
+    },
+    {
+      "check": "vidar_pry:slow8:0:duration",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "vidar_pry:slow8:1:duration",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "vidar_pry:slow8:2:duration",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "vidar_pry:slow8:3:duration",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "vidar_pry:slow8:4:duration",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "vidar_pry:slow8:5:duration",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "vidar_pry:actual_source",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fenrir_maw_upper:sheet_size",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fenrir_maw_upper:0:binary_alpha",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fenrir_maw_upper:0:transparent_rgb_zero",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fenrir_maw_upper:0:margin",
+      "passed": true,
+      "detail": [
+        9,
+        14,
+        248,
+        115
+      ]
+    },
+    {
+      "check": "fenrir_maw_upper:1:binary_alpha",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fenrir_maw_upper:1:transparent_rgb_zero",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fenrir_maw_upper:1:margin",
+      "passed": true,
+      "detail": [
+        9,
+        14,
+        245,
+        114
+      ]
+    },
+    {
+      "check": "fenrir_maw_upper:2:binary_alpha",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fenrir_maw_upper:2:transparent_rgb_zero",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fenrir_maw_upper:2:margin",
+      "passed": true,
+      "detail": [
+        10,
+        13,
+        248,
+        112
+      ]
+    },
+    {
+      "check": "fenrir_maw_upper:3:binary_alpha",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fenrir_maw_upper:3:transparent_rgb_zero",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fenrir_maw_upper:3:margin",
+      "passed": true,
+      "detail": [
+        8,
+        12,
+        246,
+        113
+      ]
+    },
+    {
+      "check": "fenrir_maw_upper:48rgb",
+      "passed": true,
+      "detail": 45
+    },
+    {
+      "check": "fenrir_maw_upper:unique_frames",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fenrir_maw_upper:native:gif_exists",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fenrir_maw_upper:native:gif_count",
+      "passed": true,
+      "detail": 4
+    },
+    {
+      "check": "fenrir_maw_upper:native:0:duration",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fenrir_maw_upper:native:1:duration",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fenrir_maw_upper:native:2:duration",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fenrir_maw_upper:native:3:duration",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fenrir_maw_upper:slow8:gif_exists",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fenrir_maw_upper:slow8:gif_count",
+      "passed": true,
+      "detail": 4
+    },
+    {
+      "check": "fenrir_maw_upper:slow8:0:duration",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fenrir_maw_upper:slow8:1:duration",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fenrir_maw_upper:slow8:2:duration",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fenrir_maw_upper:slow8:3:duration",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fenrir_maw_upper:actual_source",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fenrir_maw_lower:sheet_size",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fenrir_maw_lower:0:binary_alpha",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fenrir_maw_lower:0:transparent_rgb_zero",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fenrir_maw_lower:0:margin",
+      "passed": true,
+      "detail": [
+        12,
+        13,
+        244,
+        116
+      ]
+    },
+    {
+      "check": "fenrir_maw_lower:1:binary_alpha",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fenrir_maw_lower:1:transparent_rgb_zero",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fenrir_maw_lower:1:margin",
+      "passed": true,
+      "detail": [
+        11,
+        13,
+        243,
+        120
+      ]
+    },
+    {
+      "check": "fenrir_maw_lower:2:binary_alpha",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fenrir_maw_lower:2:transparent_rgb_zero",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fenrir_maw_lower:2:margin",
+      "passed": true,
+      "detail": [
+        12,
+        8,
+        245,
+        113
+      ]
+    },
+    {
+      "check": "fenrir_maw_lower:3:binary_alpha",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fenrir_maw_lower:3:transparent_rgb_zero",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fenrir_maw_lower:3:margin",
+      "passed": true,
+      "detail": [
+        12,
+        10,
+        243,
+        113
+      ]
+    },
+    {
+      "check": "fenrir_maw_lower:48rgb",
+      "passed": true,
+      "detail": 43
+    },
+    {
+      "check": "fenrir_maw_lower:unique_frames",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fenrir_maw_lower:native:gif_exists",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fenrir_maw_lower:native:gif_count",
+      "passed": true,
+      "detail": 4
+    },
+    {
+      "check": "fenrir_maw_lower:native:0:duration",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fenrir_maw_lower:native:1:duration",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fenrir_maw_lower:native:2:duration",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fenrir_maw_lower:native:3:duration",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fenrir_maw_lower:slow8:gif_exists",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fenrir_maw_lower:slow8:gif_count",
+      "passed": true,
+      "detail": 4
+    },
+    {
+      "check": "fenrir_maw_lower:slow8:0:duration",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fenrir_maw_lower:slow8:1:duration",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fenrir_maw_lower:slow8:2:duration",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fenrir_maw_lower:slow8:3:duration",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fenrir_maw_lower:actual_source",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fenrir_bind_link:sheet_size",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fenrir_bind_link:0:binary_alpha",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fenrir_bind_link:0:transparent_rgb_zero",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fenrir_bind_link:0:margin",
+      "passed": true,
+      "detail": [
+        0,
+        2,
+        16,
+        6
+      ]
+    },
+    {
+      "check": "fenrir_bind_link:48rgb",
+      "passed": true,
+      "detail": 15
+    },
+    {
+      "check": "fenrir_bind_link:unique_frames",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fenrir_bind_link:actual_source",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "maw:0:protected_rect_empty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "maw:1:protected_rect_empty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "maw:2:protected_rect_empty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "maw:3:protected_rect_empty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "binding:0:protected_rect_empty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "binding:0:coverage",
+      "passed": true,
+      "detail": 0.041069878472222224
+    },
+    {
+      "check": "binding:1:protected_rect_empty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "binding:1:coverage",
+      "passed": true,
+      "detail": 0.041069878472222224
+    },
+    {
+      "check": "binding:2:protected_rect_empty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "binding:2:coverage",
+      "passed": true,
+      "detail": 0.041069878472222224
+    },
+    {
+      "check": "binding:3:protected_rect_empty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "binding:3:coverage",
+      "passed": true,
+      "detail": 0.041069878472222224
+    },
+    {
+      "check": "52_isolated_captures",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "3_contact_registration_views",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "final_fixture_no_script_error",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "1453_preexisting_inputs_unchanged",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "check": "12_formal_png_44frames",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "scope": "asset files and isolated Godot rendering; not Game scene or third-level acceptance"
+}

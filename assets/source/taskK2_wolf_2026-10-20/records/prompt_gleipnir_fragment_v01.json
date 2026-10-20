@@ -1,0 +1,18 @@
+{
+  "tool": "image_gen.imagegen",
+  "id": "gleipnir_fragment",
+  "task": "K2",
+  "frame_size": [
+    24,
+    24
+  ],
+  "frames": 1,
+  "fps": 0,
+  "loop": false,
+  "alpha": "binary",
+  "prompt": "Use case: stylized-concept. Asset: ONE tiny transparent PIXEL-ART collectible, logical24x24 pixels, shown large with nearest-neighbor pixel blocks. Image1 is the game's material/style reference. A small clearly recognizable BROKEN LOOP OF BRAIDED MAGICAL RIBBON, pale old gold/ivory with a bronze underside, curled into an asymmetric open knot, one loose frayed end. Not a coin, not a chain stake, no steel links, no gemstone. Limited crisp pixel clusters and dark brown outline, upper-left highlight. Occupy logical20x20 centered with2px transparent border on every side. The open hole of the ribbon loop is transparent; contrast must remain visible on charcoal battlefield ground. No shadow, ground, text, label, frame, UI, aura or watermark. Square image, one object only. True alpha background. Preserve tiny sprite simplicity, not a detailed illustration.",
+  "refs": [
+    "/Users/zhangjunqiu/Desktop/无限恐怖/assets/sprites/bosses/fenrir.png"
+  ],
+  "transparent_background": true
+}

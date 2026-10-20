@@ -1,0 +1,11 @@
+{
+  "id": "thokk_attack",
+  "version": "v02",
+  "prompt": "Use case: identity-preserve. Edit the FOUR-frame sheet in image1, using approved standing sprite image2 as strict identity and body-size reference. The SAME elderly giant woman, grey skin, white-grey braids, hooked nose, torn plum dress, fur shawl, leather belt and boots; same palette and pixel-art style, right-facing. FOUR equally-sized square cells, 2x2 grid, fully transparent background. Correct only the attack to a SHORT close-range bent-elbow hook/sweep instead of a long straight punch. Keep torso center and both planted boot positions identical in all four cells, same head height and scale as image2. Arm movement must fit within a silhouette width of 75% of the cell. Frame1 near elbow bends with fist drawn beside cheek; frame2 elbow stays bent90degrees and near fist hooks forward only slightly beyond the face at shoulder height; frame3 short forceful downward forearm sweep with fist in front of belt, bent elbow near ribs, no arm fully extended; frame4 retract to normal stance. Same near arm performs the full action, far hand stays at waist. Do not enlarge hands, head or shoulders; no vertical body bobbing, no changing clothes. Feet stay planted apart on the SAME baseline. Entire figure has generous transparent border inside every cell. No slash effects, no magic, no weapon, no shadow, no scenery, no text, labels, grid lines or watermark. Crisp limited-palette pixels designed for96x96 native display.",
+  "reference_paths": [
+    "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskH0_critical_2026-10-19/originals/thokk_attack_v01.png",
+    "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskH0_critical_2026-10-19/candidates/thokk_v01.png"
+  ],
+  "replaces": "v01",
+  "reason": "v01 outstretched fist exceeded fixed feet-centered 96px canvas"
+}

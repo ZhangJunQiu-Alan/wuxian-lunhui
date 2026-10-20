@@ -19,7 +19,10 @@ func _init() -> void:
 func _on_accept() -> void:
 	for i in HEAPS:
 		var pos := Game.clamp_to_map(marker_pos + Vector2.from_angle(TAU * i / HEAPS + 0.3) * 200.0, 60.0)
-		var heap := game.spawn_enemy("nail_heap", MapLayer.push_out(pos, 26.0))
+		var heap := game.spawn_enemy("nail_heap", MapLayer.push_out(pos, 26.0), false, true)
+		if heap == null:
+			complete(false)
+			return
 		_heaps.append(heap)
 		heap.killed.connect(_on_heap_burned.bind(heap))
 

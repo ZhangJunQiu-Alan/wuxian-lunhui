@@ -1,0 +1,3065 @@
+{
+  "task": "K0",
+  "status": "fail",
+  "checks": 609,
+  "failures": 1,
+  "items": [
+    {
+      "check": "unique_final_paths",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "plan_not_falsely_frozen",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "no_fixed_unknown_sfx_count",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "K1_to_K7_coverage",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "reuse_hash:assets/sprites/bosses/jormungandr_head.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "reuse_dimensions:assets/sprites/bosses/jormungandr_head.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "reuse_hash:assets/sprites/bosses/jormungandr_body.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "reuse_dimensions:assets/sprites/bosses/jormungandr_body.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "reuse_hash:assets/sprites/bosses/jormungandr_tail.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "reuse_dimensions:assets/sprites/bosses/jormungandr_tail.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "reuse_hash:assets/sprites/bosses/fenrir.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "reuse_dimensions:assets/sprites/bosses/fenrir.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "reuse_hash:assets/sprites/bosses/surtr.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "reuse_dimensions:assets/sprites/bosses/surtr.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "reuse_hash:assets/sprites/enemies/fire_giant.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "reuse_dimensions:assets/sprites/enemies/fire_giant.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "reuse_hash:assets/sprites/enemies/frost_veteran.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "reuse_dimensions:assets/sprites/enemies/frost_veteran.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "reuse_hash:assets/sprites/enemies/dead.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "reuse_dimensions:assets/sprites/enemies/dead.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "reuse_hash:assets/sprites/enemies/dead_move.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "reuse_dimensions:assets/sprites/enemies/dead_move.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "reuse_hash:assets/sprites/enemies/dead_attack.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "reuse_dimensions:assets/sprites/enemies/dead_attack.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "reuse_hash:assets/sprites/ground/vigrid/scorched_01.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "reuse_dimensions:assets/sprites/ground/vigrid/scorched_01.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "reuse_hash:assets/sprites/ground/vigrid/scorched_02.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "reuse_dimensions:assets/sprites/ground/vigrid/scorched_02.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "reuse_hash:assets/sprites/ground/vigrid/scorched_03.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "reuse_dimensions:assets/sprites/ground/vigrid/scorched_03.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "reuse_hash:assets/sprites/ground/vigrid/scorched_04.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "reuse_dimensions:assets/sprites/ground/vigrid/scorched_04.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "reuse_hash:assets/sprites/ground/vigrid/cracked_lava.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "reuse_dimensions:assets/sprites/ground/vigrid/cracked_lava.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "reuse_hash:assets/sprites/ground/vigrid/burnt_grass.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "reuse_dimensions:assets/sprites/ground/vigrid/burnt_grass.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "reuse_hash:assets/sprites/props/vigrid/bifrost_fragment.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "reuse_dimensions:assets/sprites/props/vigrid/bifrost_fragment.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "reuse_hash:assets/sprites/props/vigrid/broken_weapons.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "reuse_dimensions:assets/sprites/props/vigrid/broken_weapons.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "reuse_hash:assets/sprites/props/vigrid/burning_wreckage.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "reuse_dimensions:assets/sprites/props/vigrid/burning_wreckage.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "reuse_hash:assets/sprites/props/vigrid/fallen_shield.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "reuse_dimensions:assets/sprites/props/vigrid/fallen_shield.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "reuse_hash:assets/sprites/props/vigrid/giant_remains.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "reuse_dimensions:assets/sprites/props/vigrid/giant_remains.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "reuse_hash:assets/sprites/characters/swordsman.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "reuse_dimensions:assets/sprites/characters/swordsman.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "reuse_hash:assets/sprites/characters/gunslinger.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "reuse_dimensions:assets/sprites/characters/gunslinger.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "reuse_hash:assets/sprites/characters/assassin.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "reuse_dimensions:assets/sprites/characters/assassin.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "reuse_hash:assets/sprites/characters/mage.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "reuse_dimensions:assets/sprites/characters/mage.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "reuse_hash:assets/sprites/effects/bosses/nidhogg_poison_breath.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "reuse_dimensions:assets/sprites/effects/bosses/nidhogg_poison_breath.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "reuse_hash:assets/sprites/effects/poison_pool.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "reuse_dimensions:assets/sprites/effects/poison_pool.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "reuse_hash:assets/sprites/effects/hit_bite.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "reuse_dimensions:assets/sprites/effects/hit_bite.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "reuse_hash:assets/sprites/effects/gods/thor_hammer.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "reuse_dimensions:assets/sprites/effects/gods/thor_hammer.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "reuse_hash:assets/sprites/effects/gods/thor_cloud.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "reuse_dimensions:assets/sprites/effects/gods/thor_cloud.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "reuse_hash:assets/sprites/effects/bosses/garm_chain_break.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "reuse_dimensions:assets/sprites/effects/bosses/garm_chain_break.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "reuse_hash:assets/sprites/effects/gods/loki_fire_patch.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "reuse_dimensions:assets/sprites/effects/gods/loki_fire_patch.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "reuse_hash:assets/sprites/effects/gods/freyr_field.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "reuse_dimensions:assets/sprites/effects/gods/freyr_field.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "reuse_hash:assets/sprites/effects/bosses/hrym_ice_break.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "reuse_dimensions:assets/sprites/effects/bosses/hrym_ice_break.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "reuse_hash:assets/sprites/effects/death_shards.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "reuse_dimensions:assets/sprites/effects/death_shards.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "reuse_hash:assets/sprites/decals/helheim/dried_blood_01.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "reuse_dimensions:assets/sprites/decals/helheim/dried_blood_01.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "reuse_hash:assets/sprites/decals/helheim/dried_blood_02.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "reuse_dimensions:assets/sprites/decals/helheim/dried_blood_02.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "reuse_hash:assets/sprites/decals/helheim/drag_mark_01.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "reuse_dimensions:assets/sprites/decals/helheim/drag_mark_01.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "reuse_hash:assets/audio/music/boss.ogg",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "reuse_hash:assets/audio/music/victory.ogg",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "reuse_hash:assets/audio/music/defeat.ogg",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "planned_not_reproduced:assets/sprites/bosses/jormungandr_head_idle.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "planned_not_claimed_complete:assets/sprites/bosses/jormungandr_head_idle.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "integration_named:assets/sprites/bosses/jormungandr_head_idle.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "strip_math:assets/sprites/bosses/jormungandr_head_idle.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "anchor_bounds:assets/sprites/bosses/jormungandr_head_idle.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "frame_rate:assets/sprites/bosses/jormungandr_head_idle.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "commercial_generation_not_fabricated:assets/sprites/bosses/jormungandr_head_idle.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "planned_not_reproduced:assets/sprites/bosses/jormungandr_head_windup.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "planned_not_claimed_complete:assets/sprites/bosses/jormungandr_head_windup.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "integration_named:assets/sprites/bosses/jormungandr_head_windup.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "strip_math:assets/sprites/bosses/jormungandr_head_windup.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "anchor_bounds:assets/sprites/bosses/jormungandr_head_windup.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "frame_rate:assets/sprites/bosses/jormungandr_head_windup.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "commercial_generation_not_fabricated:assets/sprites/bosses/jormungandr_head_windup.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "planned_not_reproduced:assets/sprites/bosses/jormungandr_head_attack.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "planned_not_claimed_complete:assets/sprites/bosses/jormungandr_head_attack.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "integration_named:assets/sprites/bosses/jormungandr_head_attack.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "strip_math:assets/sprites/bosses/jormungandr_head_attack.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "anchor_bounds:assets/sprites/bosses/jormungandr_head_attack.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "frame_rate:assets/sprites/bosses/jormungandr_head_attack.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "commercial_generation_not_fabricated:assets/sprites/bosses/jormungandr_head_attack.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "planned_not_reproduced:assets/sprites/bosses/fenrir_idle.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "planned_not_claimed_complete:assets/sprites/bosses/fenrir_idle.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "integration_named:assets/sprites/bosses/fenrir_idle.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "strip_math:assets/sprites/bosses/fenrir_idle.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "anchor_bounds:assets/sprites/bosses/fenrir_idle.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "frame_rate:assets/sprites/bosses/fenrir_idle.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "commercial_generation_not_fabricated:assets/sprites/bosses/fenrir_idle.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "planned_not_reproduced:assets/sprites/bosses/fenrir_move.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "planned_not_claimed_complete:assets/sprites/bosses/fenrir_move.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "integration_named:assets/sprites/bosses/fenrir_move.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "strip_math:assets/sprites/bosses/fenrir_move.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "anchor_bounds:assets/sprites/bosses/fenrir_move.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "frame_rate:assets/sprites/bosses/fenrir_move.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "commercial_generation_not_fabricated:assets/sprites/bosses/fenrir_move.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "planned_not_reproduced:assets/sprites/bosses/fenrir_windup.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "planned_not_claimed_complete:assets/sprites/bosses/fenrir_windup.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "integration_named:assets/sprites/bosses/fenrir_windup.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "strip_math:assets/sprites/bosses/fenrir_windup.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "anchor_bounds:assets/sprites/bosses/fenrir_windup.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "frame_rate:assets/sprites/bosses/fenrir_windup.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "commercial_generation_not_fabricated:assets/sprites/bosses/fenrir_windup.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "planned_not_reproduced:assets/sprites/bosses/fenrir_attack.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "planned_not_claimed_complete:assets/sprites/bosses/fenrir_attack.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "integration_named:assets/sprites/bosses/fenrir_attack.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "strip_math:assets/sprites/bosses/fenrir_attack.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "anchor_bounds:assets/sprites/bosses/fenrir_attack.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "frame_rate:assets/sprites/bosses/fenrir_attack.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "commercial_generation_not_fabricated:assets/sprites/bosses/fenrir_attack.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "planned_not_reproduced:assets/sprites/bosses/fenrir_swallow.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "planned_not_claimed_complete:assets/sprites/bosses/fenrir_swallow.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "integration_named:assets/sprites/bosses/fenrir_swallow.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "strip_math:assets/sprites/bosses/fenrir_swallow.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "anchor_bounds:assets/sprites/bosses/fenrir_swallow.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "frame_rate:assets/sprites/bosses/fenrir_swallow.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "commercial_generation_not_fabricated:assets/sprites/bosses/fenrir_swallow.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "planned_not_reproduced:assets/sprites/effects/bosses/fenrir_maw.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "planned_not_claimed_complete:assets/sprites/effects/bosses/fenrir_maw.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "integration_named:assets/sprites/effects/bosses/fenrir_maw.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "strip_math:assets/sprites/effects/bosses/fenrir_maw.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "anchor_bounds:assets/sprites/effects/bosses/fenrir_maw.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "frame_rate:assets/sprites/effects/bosses/fenrir_maw.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "commercial_generation_not_fabricated:assets/sprites/effects/bosses/fenrir_maw.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "planned_not_reproduced:assets/sprites/effects/bosses/fenrir_bind.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "planned_not_claimed_complete:assets/sprites/effects/bosses/fenrir_bind.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "integration_named:assets/sprites/effects/bosses/fenrir_bind.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "strip_math:assets/sprites/effects/bosses/fenrir_bind.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "anchor_bounds:assets/sprites/effects/bosses/fenrir_bind.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "frame_rate:assets/sprites/effects/bosses/fenrir_bind.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "commercial_generation_not_fabricated:assets/sprites/effects/bosses/fenrir_bind.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "planned_not_reproduced:assets/sprites/pickups/gleipnir_fragment.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "planned_not_claimed_complete:assets/sprites/pickups/gleipnir_fragment.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "integration_named:assets/sprites/pickups/gleipnir_fragment.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "strip_math:assets/sprites/pickups/gleipnir_fragment.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "anchor_bounds:assets/sprites/pickups/gleipnir_fragment.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "frame_rate:assets/sprites/pickups/gleipnir_fragment.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "commercial_generation_not_fabricated:assets/sprites/pickups/gleipnir_fragment.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "planned_not_reproduced:assets/sprites/bosses/surtr_idle.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "planned_not_claimed_complete:assets/sprites/bosses/surtr_idle.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "integration_named:assets/sprites/bosses/surtr_idle.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "strip_math:assets/sprites/bosses/surtr_idle.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "anchor_bounds:assets/sprites/bosses/surtr_idle.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "frame_rate:assets/sprites/bosses/surtr_idle.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "commercial_generation_not_fabricated:assets/sprites/bosses/surtr_idle.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "planned_not_reproduced:assets/sprites/bosses/surtr_move.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "planned_not_claimed_complete:assets/sprites/bosses/surtr_move.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "integration_named:assets/sprites/bosses/surtr_move.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "strip_math:assets/sprites/bosses/surtr_move.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "anchor_bounds:assets/sprites/bosses/surtr_move.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "frame_rate:assets/sprites/bosses/surtr_move.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "commercial_generation_not_fabricated:assets/sprites/bosses/surtr_move.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "planned_not_reproduced:assets/sprites/bosses/surtr_windup.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "planned_not_claimed_complete:assets/sprites/bosses/surtr_windup.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "integration_named:assets/sprites/bosses/surtr_windup.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "strip_math:assets/sprites/bosses/surtr_windup.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "anchor_bounds:assets/sprites/bosses/surtr_windup.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "frame_rate:assets/sprites/bosses/surtr_windup.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "commercial_generation_not_fabricated:assets/sprites/bosses/surtr_windup.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "planned_not_reproduced:assets/sprites/bosses/surtr_attack.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "planned_not_claimed_complete:assets/sprites/bosses/surtr_attack.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "integration_named:assets/sprites/bosses/surtr_attack.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "strip_math:assets/sprites/bosses/surtr_attack.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "anchor_bounds:assets/sprites/bosses/surtr_attack.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "frame_rate:assets/sprites/bosses/surtr_attack.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "commercial_generation_not_fabricated:assets/sprites/bosses/surtr_attack.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "planned_not_reproduced:assets/sprites/bosses/surtr_plant.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "planned_not_claimed_complete:assets/sprites/bosses/surtr_plant.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "integration_named:assets/sprites/bosses/surtr_plant.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "strip_math:assets/sprites/bosses/surtr_plant.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "anchor_bounds:assets/sprites/bosses/surtr_plant.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "frame_rate:assets/sprites/bosses/surtr_plant.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "commercial_generation_not_fabricated:assets/sprites/bosses/surtr_plant.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "planned_not_reproduced:assets/sprites/bosses/surtr_summon.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "planned_not_claimed_complete:assets/sprites/bosses/surtr_summon.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "integration_named:assets/sprites/bosses/surtr_summon.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "strip_math:assets/sprites/bosses/surtr_summon.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "anchor_bounds:assets/sprites/bosses/surtr_summon.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "frame_rate:assets/sprites/bosses/surtr_summon.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "commercial_generation_not_fabricated:assets/sprites/bosses/surtr_summon.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "planned_not_reproduced:assets/sprites/effects/bosses/surtr_sword_arc.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "planned_not_claimed_complete:assets/sprites/effects/bosses/surtr_sword_arc.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "integration_named:assets/sprites/effects/bosses/surtr_sword_arc.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "strip_math:assets/sprites/effects/bosses/surtr_sword_arc.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "anchor_bounds:assets/sprites/effects/bosses/surtr_sword_arc.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "frame_rate:assets/sprites/effects/bosses/surtr_sword_arc.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "commercial_generation_not_fabricated:assets/sprites/effects/bosses/surtr_sword_arc.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "planned_not_reproduced:assets/sprites/effects/bosses/surtr_gate.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "planned_not_claimed_complete:assets/sprites/effects/bosses/surtr_gate.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "integration_named:assets/sprites/effects/bosses/surtr_gate.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "strip_math:assets/sprites/effects/bosses/surtr_gate.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "anchor_bounds:assets/sprites/effects/bosses/surtr_gate.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "frame_rate:assets/sprites/effects/bosses/surtr_gate.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "commercial_generation_not_fabricated:assets/sprites/effects/bosses/surtr_gate.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "planned_not_reproduced:assets/sprites/effects/bosses/surtr_firewall_band.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "planned_not_claimed_complete:assets/sprites/effects/bosses/surtr_firewall_band.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "integration_named:assets/sprites/effects/bosses/surtr_firewall_band.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "strip_math:assets/sprites/effects/bosses/surtr_firewall_band.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "anchor_bounds:assets/sprites/effects/bosses/surtr_firewall_band.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "frame_rate:assets/sprites/effects/bosses/surtr_firewall_band.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "commercial_generation_not_fabricated:assets/sprites/effects/bosses/surtr_firewall_band.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "planned_not_reproduced:assets/sprites/effects/bosses/surtr_final_fire.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "planned_not_claimed_complete:assets/sprites/effects/bosses/surtr_final_fire.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "integration_named:assets/sprites/effects/bosses/surtr_final_fire.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "strip_math:assets/sprites/effects/bosses/surtr_final_fire.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "anchor_bounds:assets/sprites/effects/bosses/surtr_final_fire.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "frame_rate:assets/sprites/effects/bosses/surtr_final_fire.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "commercial_generation_not_fabricated:assets/sprites/effects/bosses/surtr_final_fire.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "planned_not_reproduced:assets/sprites/effects/bosses/surtr_safe_rune.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "planned_not_claimed_complete:assets/sprites/effects/bosses/surtr_safe_rune.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "integration_named:assets/sprites/effects/bosses/surtr_safe_rune.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "strip_math:assets/sprites/effects/bosses/surtr_safe_rune.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "anchor_bounds:assets/sprites/effects/bosses/surtr_safe_rune.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "frame_rate:assets/sprites/effects/bosses/surtr_safe_rune.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "commercial_generation_not_fabricated:assets/sprites/effects/bosses/surtr_safe_rune.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "planned_not_reproduced:assets/sprites/enemies/fire_giant_move.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "planned_not_claimed_complete:assets/sprites/enemies/fire_giant_move.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "integration_named:assets/sprites/enemies/fire_giant_move.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "strip_math:assets/sprites/enemies/fire_giant_move.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "anchor_bounds:assets/sprites/enemies/fire_giant_move.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "frame_rate:assets/sprites/enemies/fire_giant_move.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "commercial_generation_not_fabricated:assets/sprites/enemies/fire_giant_move.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "planned_not_reproduced:assets/sprites/enemies/fire_giant_attack.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "planned_not_claimed_complete:assets/sprites/enemies/fire_giant_attack.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "integration_named:assets/sprites/enemies/fire_giant_attack.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "strip_math:assets/sprites/enemies/fire_giant_attack.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "anchor_bounds:assets/sprites/enemies/fire_giant_attack.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "frame_rate:assets/sprites/enemies/fire_giant_attack.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "commercial_generation_not_fabricated:assets/sprites/enemies/fire_giant_attack.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "planned_not_reproduced:assets/sprites/enemies/frost_veteran_move.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "planned_not_claimed_complete:assets/sprites/enemies/frost_veteran_move.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "integration_named:assets/sprites/enemies/frost_veteran_move.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "strip_math:assets/sprites/enemies/frost_veteran_move.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "anchor_bounds:assets/sprites/enemies/frost_veteran_move.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "frame_rate:assets/sprites/enemies/frost_veteran_move.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "commercial_generation_not_fabricated:assets/sprites/enemies/frost_veteran_move.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "planned_not_reproduced:assets/sprites/enemies/frost_veteran_attack.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "planned_not_claimed_complete:assets/sprites/enemies/frost_veteran_attack.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "integration_named:assets/sprites/enemies/frost_veteran_attack.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "strip_math:assets/sprites/enemies/frost_veteran_attack.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "anchor_bounds:assets/sprites/enemies/frost_veteran_attack.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "frame_rate:assets/sprites/enemies/frost_veteran_attack.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "commercial_generation_not_fabricated:assets/sprites/enemies/frost_veteran_attack.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "planned_not_reproduced:assets/sprites/enemies/frost_veteran_charge.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "planned_not_claimed_complete:assets/sprites/enemies/frost_veteran_charge.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "integration_named:assets/sprites/enemies/frost_veteran_charge.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "strip_math:assets/sprites/enemies/frost_veteran_charge.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "anchor_bounds:assets/sprites/enemies/frost_veteran_charge.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "frame_rate:assets/sprites/enemies/frost_veteran_charge.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "commercial_generation_not_fabricated:assets/sprites/enemies/frost_veteran_charge.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "planned_not_reproduced:assets/sprites/enemies/frost_veteran_shield.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "planned_not_claimed_complete:assets/sprites/enemies/frost_veteran_shield.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "integration_named:assets/sprites/enemies/frost_veteran_shield.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "strip_math:assets/sprites/enemies/frost_veteran_shield.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "anchor_bounds:assets/sprites/enemies/frost_veteran_shield.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "frame_rate:assets/sprites/enemies/frost_veteran_shield.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "commercial_generation_not_fabricated:assets/sprites/enemies/frost_veteran_shield.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "planned_not_reproduced:assets/sprites/enemies/wolf_berserker.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "planned_not_claimed_complete:assets/sprites/enemies/wolf_berserker.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "integration_named:assets/sprites/enemies/wolf_berserker.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "strip_math:assets/sprites/enemies/wolf_berserker.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "anchor_bounds:assets/sprites/enemies/wolf_berserker.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "frame_rate:assets/sprites/enemies/wolf_berserker.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "commercial_generation_not_fabricated:assets/sprites/enemies/wolf_berserker.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "planned_not_reproduced:assets/sprites/enemies/wolf_berserker_move.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "planned_not_claimed_complete:assets/sprites/enemies/wolf_berserker_move.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "integration_named:assets/sprites/enemies/wolf_berserker_move.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "strip_math:assets/sprites/enemies/wolf_berserker_move.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "anchor_bounds:assets/sprites/enemies/wolf_berserker_move.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "frame_rate:assets/sprites/enemies/wolf_berserker_move.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "commercial_generation_not_fabricated:assets/sprites/enemies/wolf_berserker_move.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "planned_not_reproduced:assets/sprites/enemies/wolf_berserker_attack.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "planned_not_claimed_complete:assets/sprites/enemies/wolf_berserker_attack.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "integration_named:assets/sprites/enemies/wolf_berserker_attack.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "strip_math:assets/sprites/enemies/wolf_berserker_attack.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "anchor_bounds:assets/sprites/enemies/wolf_berserker_attack.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "frame_rate:assets/sprites/enemies/wolf_berserker_attack.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "commercial_generation_not_fabricated:assets/sprites/enemies/wolf_berserker_attack.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "planned_not_reproduced:assets/sprites/enemies/wolf_berserker_rage.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "planned_not_claimed_complete:assets/sprites/enemies/wolf_berserker_rage.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "integration_named:assets/sprites/enemies/wolf_berserker_rage.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "strip_math:assets/sprites/enemies/wolf_berserker_rage.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "anchor_bounds:assets/sprites/enemies/wolf_berserker_rage.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "frame_rate:assets/sprites/enemies/wolf_berserker_rage.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "commercial_generation_not_fabricated:assets/sprites/enemies/wolf_berserker_rage.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "planned_not_reproduced:assets/sprites/effects/bosses/fire_giant_explosion.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "planned_not_claimed_complete:assets/sprites/effects/bosses/fire_giant_explosion.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "integration_named:assets/sprites/effects/bosses/fire_giant_explosion.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "strip_math:assets/sprites/effects/bosses/fire_giant_explosion.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "anchor_bounds:assets/sprites/effects/bosses/fire_giant_explosion.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "frame_rate:assets/sprites/effects/bosses/fire_giant_explosion.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "commercial_generation_not_fabricated:assets/sprites/effects/bosses/fire_giant_explosion.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "planned_not_reproduced:assets/sprites/allies/vidar.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "planned_not_claimed_complete:assets/sprites/allies/vidar.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "integration_named:assets/sprites/allies/vidar.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "strip_math:assets/sprites/allies/vidar.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "anchor_bounds:assets/sprites/allies/vidar.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "frame_rate:assets/sprites/allies/vidar.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "commercial_generation_not_fabricated:assets/sprites/allies/vidar.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "planned_not_reproduced:assets/sprites/allies/vidar_idle.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "planned_not_claimed_complete:assets/sprites/allies/vidar_idle.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "integration_named:assets/sprites/allies/vidar_idle.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "strip_math:assets/sprites/allies/vidar_idle.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "anchor_bounds:assets/sprites/allies/vidar_idle.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "frame_rate:assets/sprites/allies/vidar_idle.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "commercial_generation_not_fabricated:assets/sprites/allies/vidar_idle.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "planned_not_reproduced:assets/sprites/allies/vidar_pry.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "planned_not_claimed_complete:assets/sprites/allies/vidar_pry.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "integration_named:assets/sprites/allies/vidar_pry.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "strip_math:assets/sprites/allies/vidar_pry.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "anchor_bounds:assets/sprites/allies/vidar_pry.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "frame_rate:assets/sprites/allies/vidar_pry.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "commercial_generation_not_fabricated:assets/sprites/allies/vidar_pry.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "planned_not_reproduced:assets/sprites/allies/freyr.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "planned_not_claimed_complete:assets/sprites/allies/freyr.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "integration_named:assets/sprites/allies/freyr.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "strip_math:assets/sprites/allies/freyr.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "anchor_bounds:assets/sprites/allies/freyr.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "frame_rate:assets/sprites/allies/freyr.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "commercial_generation_not_fabricated:assets/sprites/allies/freyr.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "planned_not_reproduced:assets/sprites/allies/freyr_idle.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "planned_not_claimed_complete:assets/sprites/allies/freyr_idle.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "integration_named:assets/sprites/allies/freyr_idle.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "strip_math:assets/sprites/allies/freyr_idle.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "anchor_bounds:assets/sprites/allies/freyr_idle.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "frame_rate:assets/sprites/allies/freyr_idle.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "commercial_generation_not_fabricated:assets/sprites/allies/freyr_idle.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "planned_not_reproduced:assets/sprites/allies/freyr_heal.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "planned_not_claimed_complete:assets/sprites/allies/freyr_heal.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "integration_named:assets/sprites/allies/freyr_heal.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "strip_math:assets/sprites/allies/freyr_heal.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "anchor_bounds:assets/sprites/allies/freyr_heal.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "frame_rate:assets/sprites/allies/freyr_heal.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "commercial_generation_not_fabricated:assets/sprites/allies/freyr_heal.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "planned_not_reproduced:assets/sprites/ground/vigrid/grass_edge_n.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "planned_not_claimed_complete:assets/sprites/ground/vigrid/grass_edge_n.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "integration_named:assets/sprites/ground/vigrid/grass_edge_n.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "strip_math:assets/sprites/ground/vigrid/grass_edge_n.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "anchor_bounds:assets/sprites/ground/vigrid/grass_edge_n.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "frame_rate:assets/sprites/ground/vigrid/grass_edge_n.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "commercial_generation_not_fabricated:assets/sprites/ground/vigrid/grass_edge_n.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "planned_not_reproduced:assets/sprites/ground/vigrid/grass_edge_e.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "planned_not_claimed_complete:assets/sprites/ground/vigrid/grass_edge_e.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "integration_named:assets/sprites/ground/vigrid/grass_edge_e.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "strip_math:assets/sprites/ground/vigrid/grass_edge_e.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "anchor_bounds:assets/sprites/ground/vigrid/grass_edge_e.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "frame_rate:assets/sprites/ground/vigrid/grass_edge_e.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "commercial_generation_not_fabricated:assets/sprites/ground/vigrid/grass_edge_e.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "planned_not_reproduced:assets/sprites/ground/vigrid/grass_edge_s.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "planned_not_claimed_complete:assets/sprites/ground/vigrid/grass_edge_s.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "integration_named:assets/sprites/ground/vigrid/grass_edge_s.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "strip_math:assets/sprites/ground/vigrid/grass_edge_s.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "anchor_bounds:assets/sprites/ground/vigrid/grass_edge_s.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "frame_rate:assets/sprites/ground/vigrid/grass_edge_s.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "commercial_generation_not_fabricated:assets/sprites/ground/vigrid/grass_edge_s.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "planned_not_reproduced:assets/sprites/ground/vigrid/grass_edge_w.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "planned_not_claimed_complete:assets/sprites/ground/vigrid/grass_edge_w.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "integration_named:assets/sprites/ground/vigrid/grass_edge_w.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "strip_math:assets/sprites/ground/vigrid/grass_edge_w.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "anchor_bounds:assets/sprites/ground/vigrid/grass_edge_w.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "frame_rate:assets/sprites/ground/vigrid/grass_edge_w.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "commercial_generation_not_fabricated:assets/sprites/ground/vigrid/grass_edge_w.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "planned_not_reproduced:assets/sprites/ground/vigrid/grass_edge_outer_ne.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "planned_not_claimed_complete:assets/sprites/ground/vigrid/grass_edge_outer_ne.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "integration_named:assets/sprites/ground/vigrid/grass_edge_outer_ne.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "strip_math:assets/sprites/ground/vigrid/grass_edge_outer_ne.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "anchor_bounds:assets/sprites/ground/vigrid/grass_edge_outer_ne.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "frame_rate:assets/sprites/ground/vigrid/grass_edge_outer_ne.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "commercial_generation_not_fabricated:assets/sprites/ground/vigrid/grass_edge_outer_ne.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "planned_not_reproduced:assets/sprites/ground/vigrid/grass_edge_outer_nw.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "planned_not_claimed_complete:assets/sprites/ground/vigrid/grass_edge_outer_nw.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "integration_named:assets/sprites/ground/vigrid/grass_edge_outer_nw.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "strip_math:assets/sprites/ground/vigrid/grass_edge_outer_nw.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "anchor_bounds:assets/sprites/ground/vigrid/grass_edge_outer_nw.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "frame_rate:assets/sprites/ground/vigrid/grass_edge_outer_nw.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "commercial_generation_not_fabricated:assets/sprites/ground/vigrid/grass_edge_outer_nw.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "planned_not_reproduced:assets/sprites/ground/vigrid/grass_edge_outer_se.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "planned_not_claimed_complete:assets/sprites/ground/vigrid/grass_edge_outer_se.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "integration_named:assets/sprites/ground/vigrid/grass_edge_outer_se.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "strip_math:assets/sprites/ground/vigrid/grass_edge_outer_se.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "anchor_bounds:assets/sprites/ground/vigrid/grass_edge_outer_se.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "frame_rate:assets/sprites/ground/vigrid/grass_edge_outer_se.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "commercial_generation_not_fabricated:assets/sprites/ground/vigrid/grass_edge_outer_se.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "planned_not_reproduced:assets/sprites/ground/vigrid/grass_edge_outer_sw.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "planned_not_claimed_complete:assets/sprites/ground/vigrid/grass_edge_outer_sw.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "integration_named:assets/sprites/ground/vigrid/grass_edge_outer_sw.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "strip_math:assets/sprites/ground/vigrid/grass_edge_outer_sw.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "anchor_bounds:assets/sprites/ground/vigrid/grass_edge_outer_sw.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "frame_rate:assets/sprites/ground/vigrid/grass_edge_outer_sw.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "commercial_generation_not_fabricated:assets/sprites/ground/vigrid/grass_edge_outer_sw.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "planned_not_reproduced:assets/sprites/ground/vigrid/grass_edge_inner_ne.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "planned_not_claimed_complete:assets/sprites/ground/vigrid/grass_edge_inner_ne.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "integration_named:assets/sprites/ground/vigrid/grass_edge_inner_ne.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "strip_math:assets/sprites/ground/vigrid/grass_edge_inner_ne.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "anchor_bounds:assets/sprites/ground/vigrid/grass_edge_inner_ne.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "frame_rate:assets/sprites/ground/vigrid/grass_edge_inner_ne.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "commercial_generation_not_fabricated:assets/sprites/ground/vigrid/grass_edge_inner_ne.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "planned_not_reproduced:assets/sprites/ground/vigrid/grass_edge_inner_nw.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "planned_not_claimed_complete:assets/sprites/ground/vigrid/grass_edge_inner_nw.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "integration_named:assets/sprites/ground/vigrid/grass_edge_inner_nw.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "strip_math:assets/sprites/ground/vigrid/grass_edge_inner_nw.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "anchor_bounds:assets/sprites/ground/vigrid/grass_edge_inner_nw.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "frame_rate:assets/sprites/ground/vigrid/grass_edge_inner_nw.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "commercial_generation_not_fabricated:assets/sprites/ground/vigrid/grass_edge_inner_nw.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "planned_not_reproduced:assets/sprites/ground/vigrid/grass_edge_inner_se.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "planned_not_claimed_complete:assets/sprites/ground/vigrid/grass_edge_inner_se.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "integration_named:assets/sprites/ground/vigrid/grass_edge_inner_se.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "strip_math:assets/sprites/ground/vigrid/grass_edge_inner_se.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "anchor_bounds:assets/sprites/ground/vigrid/grass_edge_inner_se.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "frame_rate:assets/sprites/ground/vigrid/grass_edge_inner_se.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "commercial_generation_not_fabricated:assets/sprites/ground/vigrid/grass_edge_inner_se.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "planned_not_reproduced:assets/sprites/ground/vigrid/grass_edge_inner_sw.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "planned_not_claimed_complete:assets/sprites/ground/vigrid/grass_edge_inner_sw.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "integration_named:assets/sprites/ground/vigrid/grass_edge_inner_sw.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "strip_math:assets/sprites/ground/vigrid/grass_edge_inner_sw.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "anchor_bounds:assets/sprites/ground/vigrid/grass_edge_inner_sw.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "frame_rate:assets/sprites/ground/vigrid/grass_edge_inner_sw.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "commercial_generation_not_fabricated:assets/sprites/ground/vigrid/grass_edge_inner_sw.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "planned_not_reproduced:assets/sprites/decals/vigrid/giant_tread.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "planned_not_claimed_complete:assets/sprites/decals/vigrid/giant_tread.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "integration_named:assets/sprites/decals/vigrid/giant_tread.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "strip_math:assets/sprites/decals/vigrid/giant_tread.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "anchor_bounds:assets/sprites/decals/vigrid/giant_tread.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "frame_rate:assets/sprites/decals/vigrid/giant_tread.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "commercial_generation_not_fabricated:assets/sprites/decals/vigrid/giant_tread.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "planned_not_reproduced:assets/sprites/props/vigrid/distant_battle.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "planned_not_claimed_complete:assets/sprites/props/vigrid/distant_battle.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "integration_named:assets/sprites/props/vigrid/distant_battle.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "strip_math:assets/sprites/props/vigrid/distant_battle.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "anchor_bounds:assets/sprites/props/vigrid/distant_battle.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "frame_rate:assets/sprites/props/vigrid/distant_battle.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "commercial_generation_not_fabricated:assets/sprites/props/vigrid/distant_battle.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "planned_not_reproduced:assets/audio/music/vigrid.ogg",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "planned_not_claimed_complete:assets/audio/music/vigrid.ogg",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "integration_named:assets/audio/music/vigrid.ogg",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "reference_exists:assets/sprites/bosses/fenrir.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "reference_exists:assets/sprites/bosses/jormungandr_body.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "reference_exists:assets/sprites/bosses/jormungandr_head.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "reference_exists:assets/sprites/bosses/surtr.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "reference_exists:assets/sprites/cards/freyr.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "reference_exists:assets/sprites/cards/odin.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "reference_exists:assets/sprites/characters/swordsman.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "reference_exists:assets/sprites/effects/gods/odin_rune_circle.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "reference_exists:assets/sprites/enemies/dead.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "reference_exists:assets/sprites/enemies/fire_giant.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "reference_exists:assets/sprites/enemies/frost_veteran.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "reference_exists:assets/sprites/enemies/wolf.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "reference_exists:assets/sprites/ground/vigrid/burnt_grass.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "reference_exists:assets/sprites/ground/vigrid/cracked_lava.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "reference_exists:assets/sprites/ground/vigrid/scorched_01.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "reference_exists:assets/sprites/props/helheim/chain_stake.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "reference_exists:assets/sprites/props/helheim/chain_stake_broken.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "reuse_source_manifest:assets/sprites/bosses/jormungandr_head.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "reuse_source_manifest:assets/sprites/bosses/jormungandr_body.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "reuse_source_manifest:assets/sprites/bosses/jormungandr_tail.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "reuse_source_manifest:assets/sprites/bosses/fenrir.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "reuse_source_manifest:assets/sprites/bosses/surtr.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "reuse_source_manifest:assets/sprites/enemies/fire_giant.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "reuse_source_manifest:assets/sprites/enemies/frost_veteran.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "reuse_source_manifest:assets/sprites/enemies/dead.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "reuse_source_manifest:assets/sprites/enemies/dead_move.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "reuse_source_manifest:assets/sprites/enemies/dead_attack.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "reuse_source_manifest:assets/sprites/ground/vigrid/scorched_01.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "reuse_source_manifest:assets/sprites/ground/vigrid/scorched_02.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "reuse_source_manifest:assets/sprites/ground/vigrid/scorched_03.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "reuse_source_manifest:assets/sprites/ground/vigrid/scorched_04.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "reuse_source_manifest:assets/sprites/ground/vigrid/cracked_lava.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "reuse_source_manifest:assets/sprites/ground/vigrid/burnt_grass.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "reuse_source_manifest:assets/sprites/props/vigrid/bifrost_fragment.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "reuse_source_manifest:assets/sprites/props/vigrid/broken_weapons.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "reuse_source_manifest:assets/sprites/props/vigrid/burning_wreckage.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "reuse_source_manifest:assets/sprites/props/vigrid/fallen_shield.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "reuse_source_manifest:assets/sprites/props/vigrid/giant_remains.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "reuse_source_manifest:assets/sprites/characters/swordsman.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "reuse_source_manifest:assets/sprites/characters/gunslinger.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "reuse_source_manifest:assets/sprites/characters/assassin.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "reuse_source_manifest:assets/sprites/characters/mage.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "reuse_source_manifest:assets/sprites/effects/bosses/nidhogg_poison_breath.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "reuse_source_manifest:assets/sprites/effects/poison_pool.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "reuse_source_manifest:assets/sprites/effects/hit_bite.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "reuse_source_manifest:assets/sprites/effects/gods/thor_hammer.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "reuse_source_manifest:assets/sprites/effects/gods/thor_cloud.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "reuse_source_manifest:assets/sprites/effects/bosses/garm_chain_break.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "reuse_source_manifest:assets/sprites/effects/gods/loki_fire_patch.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "reuse_source_manifest:assets/sprites/effects/gods/freyr_field.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "reuse_source_manifest:assets/sprites/effects/bosses/hrym_ice_break.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "reuse_source_manifest:assets/sprites/effects/death_shards.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "reuse_source_manifest:assets/sprites/decals/helheim/dried_blood_01.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "reuse_source_manifest:assets/sprites/decals/helheim/dried_blood_02.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "reuse_source_manifest:assets/sprites/decals/helheim/drag_mark_01.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "reuse_source_manifest:assets/audio/music/boss.ogg",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "reuse_source_manifest:assets/audio/music/victory.ogg",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "reuse_source_manifest:assets/audio/music/defeat.ogg",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "reference_source_manifest:assets/sprites/bosses/fenrir.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "reference_source_manifest:assets/sprites/bosses/jormungandr_body.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "reference_source_manifest:assets/sprites/bosses/jormungandr_head.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "reference_source_manifest:assets/sprites/bosses/surtr.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "reference_source_manifest:assets/sprites/cards/freyr.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "reference_source_manifest:assets/sprites/cards/odin.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "reference_source_manifest:assets/sprites/characters/swordsman.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "reference_source_manifest:assets/sprites/effects/gods/odin_rune_circle.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "reference_source_manifest:assets/sprites/enemies/dead.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "reference_source_manifest:assets/sprites/enemies/fire_giant.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "reference_source_manifest:assets/sprites/enemies/frost_veteran.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "reference_source_manifest:assets/sprites/enemies/wolf.png",
+      "passed": false,
+      "detail": null
+    },
+    {
+      "check": "reference_source_manifest:assets/sprites/ground/vigrid/burnt_grass.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "reference_source_manifest:assets/sprites/ground/vigrid/cracked_lava.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "reference_source_manifest:assets/sprites/ground/vigrid/scorched_01.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "reference_source_manifest:assets/sprites/props/helheim/chain_stake.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "reference_source_manifest:assets/sprites/props/helheim/chain_stake_broken.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "exact_socket:body_left_right_equal",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "exact_socket:body_tail_equal",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "exact_socket:body_head_equal",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "static_geometry:all_unblocked_reachable",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "static_geometry:spawn_clear",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "static_geometry:central_reserve_clear",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "static_geometry:horizon_outside_walk",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "static_geometry:corridors_allow_256px_plus_player_radius",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "static_landmark:battlefield",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "static_landmark:bifrost",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "static_landmark:giant_graveyard",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "static_landmark:frost_remnants",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "static_landmark:muspel_edge",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "static_landmark:dead_march",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "no_new_quests_in_layout",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "landmark_fits:battlefield",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "landmark_fits:bifrost",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "landmark_fits:giant_graveyard",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "landmark_fits:frost_remnants",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "landmark_fits:muspel_edge",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "landmark_fits:dead_march",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "audio_unknown_total_explicit",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "audio_event_ids_unique",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "audio_reuse_hash:jormungandr_windup:assets/audio/sfx/boss_windup.wav",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "audio_reuse_hash:jormungandr_body_hit:assets/audio/sfx/boss_slam.wav",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "audio_reuse_hash:thor_fate_rescued:assets/audio/sfx/quest_done.wav",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "audio_reuse_hash:thor_final_aid:assets/audio/sfx/lightning_01.wav",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "audio_reuse_hash:thor_final_aid:assets/audio/sfx/lightning_02.wav",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "audio_reuse_hash:thor_final_aid:assets/audio/sfx/lightning_03.wav",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "audio_reuse_hash:fenrir_maw_windup:assets/audio/sfx/boss_windup.wav",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "audio_reuse_hash:fenrir_charge:assets/audio/sfx/boss_howl.wav",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "audio_reuse_hash:gleipnir_pickup:assets/audio/sfx/chest_open.wav",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "audio_reuse_hash:vidar_arrive:assets/audio/sfx/awaken.wav",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "audio_reuse_hash:vidar_pry:assets/audio/sfx/boss_slam.wav",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "audio_reuse_hash:surtr_sword:assets/audio/sfx/katana_slash_01.wav",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "audio_reuse_hash:surtr_sword:assets/audio/sfx/katana_slash_02.wav",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "audio_reuse_hash:surtr_sword:assets/audio/sfx/katana_slash_03.wav",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "audio_reuse_hash:surtr_residual_fire:assets/audio/sfx/fire_burn.wav",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "audio_reuse_hash:surtr_phase60:assets/audio/sfx/boss_warning.wav",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "audio_reuse_hash:surtr_phase25:assets/audio/sfx/boss_warning.wav",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "audio_reuse_hash:surtr_final_fire:assets/audio/sfx/boss_slam.wav",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "audio_reuse_hash:surtr_final_fire:assets/audio/sfx/fire_burn.wav",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "audio_reuse_hash:freyr_heal:assets/audio/sfx/heal_pickup.wav",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "audio_reuse_hash:fire_giant_explosion:assets/audio/sfx/big_death.wav",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "audio_reuse_hash:fire_giant_explosion:assets/audio/sfx/fire_burn.wav",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "audio_reuse_hash:frost_veteran_charge:assets/audio/sfx/boss_windup.wav",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "audio_reuse_hash:frost_veteran_block:assets/audio/sfx/boss_block.wav",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "audio_reuse_hash:wolf_berserker_rage:assets/audio/sfx/boss_howl.wav",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "audio_reuse_hash:chapter_clear:assets/audio/sfx/quest_done.wav",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "gallery_target:layout.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "gallery_target:asset_matrix.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "gallery_target:asset_plan.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "gallery_target:integration.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "gallery_target:audio_events.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "gallery_target:story_and_ending.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "gallery_target:records/self_check.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "gallery_target:previews/layout.svg",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "gallery_target:previews/style_scale_1x.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "gallery_target:previews/style_scale_2x.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "gallery_target:previews/snake_connections.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "gallery_target:previews/action_envelopes.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "gallery_target:previews/terrain_4x4.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "gallery_target:previews/style_scale_4x.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "svg_well_formed",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "preview_png_decodes:action_envelopes.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "preview_png_decodes:snake_connections.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "preview_png_decodes:style_scale_1x.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "preview_png_decodes:terrain_4x4.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "preview_png_decodes:layout.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "preview_png_decodes:snake_connections_2x.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "preview_png_decodes:style_scale_2x.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "preview_png_decodes:existing_inventory.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "preview_png_decodes:style_scale_4x.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "protected_inputs_unchanged",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "check": "license_tool_record_present",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "preexisting_license_text_preserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "no_generation_originals_fabricated",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "runtime_validation": "not_performed",
+  "new_animation_visual_audit": "not_applicable_no_new_animation",
+  "music_listening": "not_performed",
+  "new_final_assets": 0,
+  "planning_counts": {
+    "reused_or_reference_files": 41,
+    "proposed_new_files": 54,
+    "proposed_png": 53,
+    "proposed_ogg": 1,
+    "audio_events": 25
+  },
+  "visual_review_record": "records/visual_review.json; actual image viewing is recorded separately, not inferred from decoding"
+}

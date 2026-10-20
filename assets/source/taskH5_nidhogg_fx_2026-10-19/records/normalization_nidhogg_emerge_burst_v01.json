@@ -1,0 +1,68 @@
+{
+  "input": "originals/nidhogg_emerge_burst_v01.png",
+  "input_sha256": "6ed84079be20af380153199c1727ddb191ad310b7f367c3cc615bc8151175b1c",
+  "raw_size": [
+    1448,
+    1086
+  ],
+  "grid": [
+    2,
+    2
+  ],
+  "cut_boxes": [
+    [
+      152,
+      277,
+      587,
+      513
+    ],
+    [
+      22,
+      76,
+      680,
+      526
+    ],
+    [
+      41,
+      92,
+      695,
+      477
+    ],
+    [
+      66,
+      137,
+      666,
+      486
+    ]
+  ],
+  "single_common_scale": 0.1884498480243161,
+  "placements": [
+    [
+      23,
+      26,
+      82,
+      44
+    ],
+    [
+      2,
+      5,
+      124,
+      85
+    ],
+    [
+      2,
+      11,
+      123,
+      73
+    ],
+    [
+      7,
+      15,
+      113,
+      66
+    ]
+  ],
+  "operations": "original alpha threshold/quantization, source frame cuts, single common nearest resize, source-derived shared palette, whole-frame placement; no character/effect drawing",
+  "candidate": "candidates/nidhogg_emerge_burst_v01.png",
+  "candidate_sha256": "4eb3b219157093ea01cf1bdfed8ac0932175ba5e0aa7537c2b5570208158866e"
+}

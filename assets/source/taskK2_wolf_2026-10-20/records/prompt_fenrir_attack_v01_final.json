@@ -1,0 +1,21 @@
+{
+  "tool": "image_gen.imagegen",
+  "id": "fenrir_attack",
+  "action": "attack",
+  "frames": 4,
+  "fps": 16,
+  "loop": false,
+  "grid": [
+    2,
+    2
+  ],
+  "frame_size": [
+    192,
+    192
+  ],
+  "prompt": "Use case: identity-preserve. Asset: a transparent small pixel-art game animation atlas, not a concept illustration. Image1 is the ONE approved original wolf and the identity/palette/anatomy reference. Preserve the exact same hunched massive charcoal-black wolf: thick matted black-grey fur with silver-grey mane streaks, curled long tail on the left, right-facing huge scarred muzzle, warm ochre eye, many ivory fangs and dark red gums, bronze/iron broken restraint pieces on shoulders and ankles. FOUR legs only, anatomically canine joints and paws, same armor/restraint shapes in every frame. Upper-left light, same detailed pixel density, crisp small pixel clusters at logical192px per square cell. Fixed torso/shoulder position and consistent scale; lowest contact paw stays at logical y189, while the other paws retain the ORIGINAL three-quarter perspective depth positions (not all four on one horizontal line) with 2px transparent margin. Entire tail, claws, nose, ears and fur fit inside each cell with >=2px clear border. No new armor, crowns, horns, limbs, huge aura or scenic elements. Actual alpha transparent background; no ground, cast shadow, grid, text, labels, watermark. No smooth painting, airbrush or blurred edges. Every frame is a different articulated pose of this SAME individual, no duplicate stills, no resizing per frame. SQUARE 2x2 atlas of FOUR logical192px cells, no gutters. A short heavy BITE/LUNGE body attack: (1) loaded crouch with front elbows bent and jaw open; (2) shoulders surge forward while paws stay inside cell, jaws snap on the right and forelegs extend; (3) impact compression, head low and jaw partly closed; (4) recoil, forelegs replant and posture returns toward original. Mouth clearly articulates at same hinge; body motion remains within original canvas, no graphic bite effect or detached teeth. Ground baseline fixed; meaningful distinct poses. IMPORTANT composition: preserve reference THREE-QUARTER view and compact torso proportions, NOT a long side-profile wolf. Atlas cells are SQUARE and overall aspect is exactly 1:1. Every complete wolf occupies only inner80% of its cell with generous alpha padding; no part touches the cell or atlas boundary. Keep head size and shoulder height unchanged, no extreme foreleg extension beyond existing footprint.",
+  "referenced_image_paths": [
+    "/Users/zhangjunqiu/Desktop/无限恐怖/assets/sprites/bosses/fenrir.png"
+  ],
+  "transparent_background": true
+}

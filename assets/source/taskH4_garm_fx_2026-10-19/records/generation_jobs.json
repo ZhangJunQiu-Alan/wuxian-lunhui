@@ -1,0 +1,112 @@
+[
+  {
+    "id": "garm_bite",
+    "version": "v01",
+    "prompt": "Use case: stylized-concept. Production pixel-art dark underworld VFX; project-owned inputs are only material/style references, do not draw the creature. A dark-red hellhound bite contact effect, no animal body or head. Opposed ivory-red fang-like crescent slashes clamp around a compact red contact spark at CENTER. Four ONESHOT phases: faint approaching teeth, sharp close/clamp, short crimson tearing streak, few dark-red fading scraps. Dark red and rusty burgundy, tiny bone-white highlights, not blue or icy. No large blood spray, no explosion disc. EXACTLY FOUR DISTINCT frames in a2-column2-row grid, same square cells, native64x64 each, same center/scale across frames. Crisp limited32RGB pixel clusters, desaturated dark red/iron greys, no ice. Sparse alpha steps permitted for light/mist, no opaque backing. Entire silhouette fits cell with transparent padding, except chain repeating ports. No label, text, grid, frame, watermark, body, scene or ground shadow.",
+    "reference_paths": [
+      "assets/sprites/bosses/garm.png"
+    ],
+    "archived_input_references": [
+      {
+        "actual_input_path": "assets/sprites/bosses/garm.png",
+        "archived_path": "references/garm.png",
+        "sha256": "23e629a34921e815b0d45fb05b4f703ddfa6b1fdec13e4a74cc4888382f50c1e"
+      }
+    ],
+    "archived_output": {
+      "file": "originals/garm_bite_v01.png",
+      "sha256": "5dc37947104e4c863abf49a7b4ed84dbb5d9c5b26753a365e754993bea1e7ff0"
+    },
+    "tool": "OpenAI built-in image_gen",
+    "source_terms": "https://openai.com/policies/terms-of-use/",
+    "status": "selected"
+  },
+  {
+    "id": "garm_chain_break",
+    "version": "v01",
+    "prompt": "Use case: stylized-concept. Production pixel-art dark underworld VFX; project-owned inputs are only material/style references, do not draw the creature. Short iron chain snap burst, no stake. Four ONESHOT phases: two short broken grey iron link ends separate around center with tiny dim orange sparks, ends fly apart, fewer tiny iron pieces and fading embers, very sparse fading fragments. Sparse rust grey iron and few amber sparks; not an explosion or fireball. Transparent empty center in final phase; no permanent rubble. EXACTLY FOUR DISTINCT frames in a2-column2-row grid, same square cells, native64x64 each, same center/scale across frames. Crisp limited32RGB pixel clusters, desaturated dark red/iron greys, no ice. Sparse alpha steps permitted for light/mist, no opaque backing. Entire silhouette fits cell with transparent padding, except chain repeating ports. No label, text, grid, frame, watermark, body, scene or ground shadow.",
+    "reference_paths": [
+      "assets/sprites/bosses/garm.png"
+    ],
+    "archived_input_references": [
+      {
+        "actual_input_path": "assets/sprites/bosses/garm.png",
+        "archived_path": "references/garm.png",
+        "sha256": "23e629a34921e815b0d45fb05b4f703ddfa6b1fdec13e4a74cc4888382f50c1e"
+      }
+    ],
+    "archived_output": {
+      "file": "originals/garm_chain_break_v01.png",
+      "sha256": "68f3cf44cb5c44d8b844aff5b5c403757e462a5ec26f5a4a099bcb7f585f6730"
+    },
+    "tool": "OpenAI built-in image_gen",
+    "source_terms": "https://openai.com/policies/terms-of-use/",
+    "status": "selected"
+  },
+  {
+    "id": "garm_chain_link",
+    "version": "v01",
+    "prompt": "Use case: stylized-concept. Production pixel-art dark underworld VFX; project-owned inputs are only material/style references, do not draw the creature. ONE SINGLE iron chain link, horizontal oval, thick worn dark iron bevel, limited grey/steel/rust palette, crisp pixel-art target16x8. Clearly transparent oval central hole. Horizontal connection axis runs through exact center y. Left/right attachment ports align to center and support repetition. Only ONE link, not two overlapping links or an entire chain. No spark, glow, text, shadow, scene. Rotationally neutral metal highlights, wide2:1 transparent canvas. A SINGLE object on a transparent2:1 canvas, not a sheet. Crisp limited32RGB pixel clusters, desaturated dark red/iron greys, no ice. Fully opaque binary-alpha metal pixels with a true transparent center hole. Entire silhouette fits cell with transparent padding, except chain repeating ports. No label, text, grid, frame, watermark, body, scene or ground shadow.",
+    "reference_paths": [
+      "assets/sprites/bosses/garm.png"
+    ],
+    "archived_input_references": [
+      {
+        "actual_input_path": "assets/sprites/bosses/garm.png",
+        "archived_path": "references/garm.png",
+        "sha256": "23e629a34921e815b0d45fb05b4f703ddfa6b1fdec13e4a74cc4888382f50c1e"
+      }
+    ],
+    "archived_output": {
+      "file": "originals/garm_chain_link_v01.png",
+      "sha256": "3986737874091c872067eb049e8d9bb48a86471fcc25e63bff88c9b8ccf55169"
+    },
+    "tool": "OpenAI built-in image_gen",
+    "source_terms": "https://openai.com/policies/terms-of-use/",
+    "status": "selected"
+  },
+  {
+    "id": "garm_dispel",
+    "version": "v01",
+    "prompt": "Use case: stylized-concept. Production pixel-art dark underworld VFX; project-owned inputs are only material/style references, do not draw the creature. A temporary shattered buff halo around an intact player, ONLY pale desaturated gold-grey arcs breaking into a few red-grey shards. Completely transparent central40percent diameter in all4 frames; no body, skull, death symbol, explosion or blood. Four ONESHOT phases: thin intact broken halo, halo cracks into pieces, pieces drift outward and dim, only a few dim motes. Subtle low alpha; reads as removal of protection, not death. EXACTLY FOUR DISTINCT frames in a2-column2-row grid, same square cells, native64x64 each, same center/scale across frames. Crisp limited32RGB pixel clusters, desaturated dark red/iron greys, no ice. Sparse alpha steps permitted for light/mist, no opaque backing. Entire silhouette fits cell with transparent padding, except chain repeating ports. No label, text, grid, frame, watermark, body, scene or ground shadow.",
+    "reference_paths": [
+      "assets/sprites/effects/gods/freyja_ring.png"
+    ],
+    "archived_input_references": [
+      {
+        "actual_input_path": "assets/sprites/effects/gods/freyja_ring.png",
+        "archived_path": "references/freyja_ring.png",
+        "sha256": "63fdf5560ee273789d6fe8888beb67c8241c2852e3d9b463723dc7491f2245b4"
+      }
+    ],
+    "archived_output": {
+      "file": "originals/garm_dispel_v01.png",
+      "sha256": "baad61d10d029cbcfc7233d54de850a55877a79ba4be7c7af2b5e5982ac9b320"
+    },
+    "tool": "OpenAI built-in image_gen",
+    "source_terms": "https://openai.com/policies/terms-of-use/",
+    "status": "selected"
+  },
+  {
+    "id": "garm_howl_wave",
+    "version": "v01",
+    "prompt": "Use case: stylized-concept. Production pixel-art dark underworld VFX; project-owned inputs are only material/style references, do not draw the creature. Hellhound outward soundwave of dark crimson, rust-red and grey-red pressure ripples, no ice crystals or creature. Every frame has a COMPLETELY TRANSPARENT central disk40percent diameter. Four ONESHOT phases: small dim pressure circle, medium thin brighter broken wave, larger low-contrast wave, sparse dim outer fragments. Threatening dark red, restrained luminosity, nothing solid in the middle. EXACTLY FOUR DISTINCT frames in a2-column2-row grid, same square cells, native128x128 each, same center/scale across frames. Crisp limited32RGB pixel clusters, desaturated dark red/iron greys, no ice. Sparse alpha steps permitted for light/mist, no opaque backing. Entire silhouette fits cell with transparent padding, except chain repeating ports. No label, text, grid, frame, watermark, body, scene or ground shadow.",
+    "reference_paths": [
+      "assets/sprites/bosses/garm.png"
+    ],
+    "archived_input_references": [
+      {
+        "actual_input_path": "assets/sprites/bosses/garm.png",
+        "archived_path": "references/garm.png",
+        "sha256": "23e629a34921e815b0d45fb05b4f703ddfa6b1fdec13e4a74cc4888382f50c1e"
+      }
+    ],
+    "archived_output": {
+      "file": "originals/garm_howl_wave_v01.png",
+      "sha256": "7f1ed9e707ca403b018b706b8e419ead8bee0c8328a9fa9cbc449e665a6c4426"
+    },
+    "tool": "OpenAI built-in image_gen",
+    "source_terms": "https://openai.com/policies/terms-of-use/",
+    "status": "selected"
+  }
+]

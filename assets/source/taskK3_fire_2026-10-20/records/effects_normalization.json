@@ -1,0 +1,153 @@
+[
+  {
+    "id": "surtr_sword_arc",
+    "version": "v02",
+    "frame_size": [
+      128,
+      128
+    ],
+    "frames": 4,
+    "fps": 16,
+    "loop": false,
+    "alpha": "8levels",
+    "rgb_count": 19,
+    "protected_occupied": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "crop": null,
+    "whole_frame_registration": [
+      [
+        0,
+        0
+      ],
+      [
+        3,
+        -1
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        3,
+        2
+      ]
+    ],
+    "peak_override": "originals/surtr_sword_arc_peak_v03_raw.png",
+    "method": "fixed cell nearest resize, palette and8level alpha normalization; whole-frame registration preserves all visible pixels; fire band material span cropped then padded below, no painted pixels"
+  },
+  {
+    "id": "surtr_gate",
+    "version": "v03",
+    "frame_size": [
+      128,
+      128
+    ],
+    "frames": 4,
+    "fps": 8,
+    "loop": true,
+    "alpha": "8levels",
+    "rgb_count": 48,
+    "protected_occupied": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "crop": [
+      100,
+      6,
+      549,
+      603
+    ],
+    "whole_frame_registration": [
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        -1,
+        0
+      ],
+      [
+        1,
+        0
+      ]
+    ],
+    "peak_override": null,
+    "method": "fixed cell nearest resize, palette and8level alpha normalization; whole-frame registration preserves all visible pixels; fire band material span cropped then padded below, no painted pixels"
+  },
+  {
+    "id": "surtr_firewall_band",
+    "version": "v01",
+    "frame_size": [
+      64,
+      64
+    ],
+    "frames": 4,
+    "fps": 8,
+    "loop": true,
+    "alpha": "8levels",
+    "rgb_count": 20,
+    "protected_occupied": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "crop": [
+      163,
+      178,
+      724,
+      441
+    ],
+    "whole_frame_registration": [],
+    "peak_override": null,
+    "method": "fixed cell nearest resize, palette and8level alpha normalization; whole-frame registration preserves all visible pixels; fire band material span cropped then padded below, no painted pixels"
+  },
+  {
+    "id": "surtr_final_fire",
+    "version": "v01",
+    "frame_size": [
+      64,
+      64
+    ],
+    "frames": 4,
+    "fps": 16,
+    "loop": false,
+    "alpha": "8levels",
+    "rgb_count": 18,
+    "protected_occupied": [],
+    "crop": null,
+    "whole_frame_registration": [],
+    "peak_override": null,
+    "method": "fixed cell nearest resize, palette and8level alpha normalization; whole-frame registration preserves all visible pixels; fire band material span cropped then padded below, no painted pixels"
+  },
+  {
+    "id": "surtr_safe_rune",
+    "version": "v01",
+    "frame_size": [
+      64,
+      64
+    ],
+    "frames": 1,
+    "fps": 0,
+    "loop": false,
+    "alpha": "8levels",
+    "rgb_count": 24,
+    "protected_occupied": [
+      0
+    ],
+    "crop": null,
+    "whole_frame_registration": [],
+    "peak_override": null,
+    "method": "fixed cell nearest resize, palette and8level alpha normalization; whole-frame registration preserves all visible pixels; fire band material span cropped then padded below, no painted pixels"
+  }
+]

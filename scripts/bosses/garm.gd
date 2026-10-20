@@ -31,6 +31,7 @@ var _rounds := 0
 var _anchor := Vector2.ZERO
 var _stakes: Array[Enemy] = []
 var _free := false
+var _bite_shown := false
 
 
 func _init() -> void:
@@ -51,7 +52,9 @@ func _ready() -> void:
 	_anchor = position
 	for i in 4:
 		var pos := Game.clamp_to_map(_anchor + Vector2.from_angle(PI / 4 + TAU * i / 4) * STAKE_DISTANCE, 40.0)
-		var stake: Enemy = spawner.call("chain_stake", pos)
+		var stake: Enemy = spawner.call("chain_stake", pos, false, true)
+		if stake == null:
+			continue
 		_stakes.append(stake)
 		stake.killed.connect(_on_stake_broken)
 	change_state("chase")
@@ -59,10 +62,12 @@ func _ready() -> void:
 
 func _on_stake_broken(stake: Enemy) -> void:
 	_stakes.erase(stake)
+	BossFx.play("garm_chain_break", stake.global_position)
 	Audio.sfx("boss_block")
 	FxLayer.floating_text(stake.global_position + Vector2(0, -30), tr("锁桩断了！"), CHAIN_COLOR.lightened(0.4))
 	if _stakes.is_empty() and not _free:
 		_free = true
+		BossFx.play("garm_chain_break", global_position)
 		speed *= FREE_SPEED
 		Audio.sfx("boss_howl")
 		target.shake(8.0, 0.4)
@@ -86,17 +91,22 @@ func _update_state(delta: float) -> void:
 			_lunge_dir = global_position.direction_to(target.global_position)
 			if state_time >= WINDUP_TIME:
 				_lunges_left = LUNGES
+				_bite_shown = false
 				change_state("lunge")
 		"lunge":
 			if state_time < LUNGE_TIME:
 				position += _lunge_dir * LUNGE_SPEED * delta
 				if global_position.distance_to(target.global_position) < radius + Player.RADIUS + 6.0:
 					target.take_damage(LUNGE_DAMAGE)
+					if not _bite_shown:
+						_bite_shown = true
+						if not BossFx.play("garm_bite", target.global_position, _lunge_dir.angle()):
+							FxLayer.mark(target.global_position, _lunge_dir.angle(), radius * 1.6, Color(1, 0.3, 0.25), "bite")
 			elif state_time >= LUNGE_TIME + LUNGE_PAUSE:
 				_lunges_left -= 1
 				if _lunges_left > 0:
+					_bite_shown = false
 					_lunge_dir = global_position.direction_to(target.global_position)  # 下一段重新瞄准
-					FxLayer.mark(global_position + _lunge_dir * radius, _lunge_dir.angle(), radius * 1.6, Color(1.0, 0.3, 0.25), "bite")
 					change_state("lunge")
 				else:
 					change_state("recover")
@@ -119,14 +129,18 @@ func _howl() -> void:
 	Audio.sfx("boss_howl")
 	play_once(&"howl")
 	target.shake(9.0, 0.35)
-	FxLayer.ring(global_position, HOWL_RADIUS)
+	if not BossFx.play("garm_howl_wave", global_position, 0.0, Vector2.ONE * HOWL_RADIUS / 62.0,
+			Color.WHITE, false, HOWL_RADIUS):
+		FxLayer.ring(global_position, HOWL_RADIUS)
 	var offset := target.global_position - global_position
+	var dispelled := offset.length() < HOWL_RADIUS and (target.frenzy_time > 0.0 or target.shield_time > 0.0)
 	if offset.length() < HOWL_RADIUS:
 		target.take_damage(HOWL_DAMAGE)
 		target.position = MapLayer.push_out(Game.clamp_to_map(target.position + offset.normalized() * HOWL_PUSH, Player.RADIUS), Player.RADIUS)
-	if target.frenzy_time > 0.0 or target.shield_time > 0.0:
+	if dispelled:
 		target.frenzy_time = 0.0
 		target.shield_time = 0.0
+		BossFx.play("garm_dispel", target.global_position)
 		FxLayer.floating_text(target.global_position + Vector2(0, -40), tr("增益被驱散"), Color(0.9, 0.5, 0.5))
 
 
@@ -140,8 +154,9 @@ func _draw_telegraph() -> void:
 				for i in 11:
 					var k := i / 10.0
 					points.append(to * k + sag * sin(k * PI))
-				draw_polyline(points, Color(0.1, 0.1, 0.1, 0.7), 5.0)
-				draw_polyline(points, CHAIN_COLOR, 2.5)
+				if not BossFx.draw_chain(self, points):
+					draw_polyline(points, Color(0.1, 0.1, 0.1, 0.7), 5.0)
+					draw_polyline(points, CHAIN_COLOR, 2.5)
 	match state:
 		"lunge_windup":
 			draw_line_telegraph(self, _lunge_dir, LUNGE_SPEED * LUNGE_TIME + radius, radius * 0.8, state_time / WINDUP_TIME)

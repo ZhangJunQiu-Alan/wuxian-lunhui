@@ -1,0 +1,16 @@
+{
+  "task": "H1",
+  "status": "fail",
+  "files_checked": 4,
+  "GIFs_decoded_checked": 8,
+  "errors": [
+    {
+      "id": "skoll_howl",
+      "failed": [
+        "GIF_native_decoded_pixel_match",
+        "GIF_slow8_decoded_pixel_match"
+      ]
+    }
+  ],
+  "game_test": "not_performed"
+}

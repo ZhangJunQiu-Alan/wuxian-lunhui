@@ -1,0 +1,656 @@
+{
+  "task_id": "H3",
+  "date": "2026-10-19",
+  "production": "delivered",
+  "self_review": "pass",
+  "code_integration": "integrated",
+  "game_acceptance": "controlled_runtime_verified",
+  "files": [
+    {
+      "task": "H3",
+      "id": "hrym_wave_band",
+      "w": 64,
+      "h": 32,
+      "frames": 4,
+      "fps": 8,
+      "flags": [
+        "loop",
+        "band"
+      ],
+      "anchor": [
+        32,
+        16
+      ],
+      "columns": 2,
+      "rows": 2,
+      "loop": true,
+      "hook": "scripts/bosses/shockwave.gd _draw() / _in_gap()；scripts/bosses/hrym.gd _stomp()",
+      "keep": "沿动态圆弧铺设；厚度BAND26；两缺口严格裁掉±GAP_HALF0.42，保留700范围与速度300",
+      "reference_paths": [
+        "assets/sprites/effects/frost_shockwave.png"
+      ],
+      "target": "assets/sprites/effects/bosses/hrym_wave_band.png",
+      "source_root": "assets/source/taskH3_hrym_fx_2026-10-19",
+      "archived_references": [
+        {
+          "project_path": "assets/sprites/effects/frost_shockwave.png",
+          "archived_path": "references/frost_shockwave.png",
+          "sha256": "a0aa09571dec4959ee2a9f66dc6a6a038a2017fad3dea1140680bc837495c625"
+        }
+      ],
+      "version": "v01",
+      "final_path": "assets/sprites/effects/bosses/hrym_wave_band.png",
+      "candidate": "candidates/hrym_wave_band_v01.png",
+      "sha256": "d6d0ab68ae0ad1c285fc56b4a63aea374cea31443e003b34b1534173f1073090",
+      "actual_RGB_colors": 22,
+      "actual_alpha_values": [
+        0,
+        36,
+        72,
+        108,
+        144,
+        180,
+        216,
+        252
+      ],
+      "frame_bboxes": [
+        [
+          0,
+          8,
+          64,
+          23
+        ],
+        [
+          0,
+          8,
+          64,
+          24
+        ],
+        [
+          0,
+          7,
+          64,
+          24
+        ],
+        [
+          0,
+          7,
+          64,
+          24
+        ]
+      ],
+      "technical_checks": {
+        "PNG_RGBA": true,
+        "exact_strip_dimensions": true,
+        "RGB_within_48": true,
+        "transparent_background": true,
+        "every_frame_nonempty": true,
+        "distinct_original_frames": true,
+        "2px_margin_or_tiling_exception": true,
+        "identical_repeat_ports": true,
+        "GIF_native_decoded_pixel_match": true,
+        "GIF_native_average_fps": true,
+        "GIF_slow8_decoded_pixel_match": true,
+        "GIF_slow8_average_fps": true
+      },
+      "visual_review": {
+        "status": "passed",
+        "observations": "已看4格：短冰浪沿水平切线循环，外侧朝上，无完整圆环和烘焙缺口；左右端口相同，保留透明上下边。供代码动态弧段裁切。"
+      },
+      "code_integration": "integrated",
+      "game_acceptance": "controlled_runtime_verified",
+      "source_license": {
+        "tool": "OpenAI built-in image_gen",
+        "commercial_basis": "existing approved OpenAI output terms; project-owned input references",
+        "terms_url": "https://openai.com/policies/terms-of-use/",
+        "processing": "Pillow MIT-CMU, source cuts/alpha/palette/nearest resize/placement and preview only"
+      },
+      "previews": [
+        "previews/hrym_wave_band_v01_frames.png",
+        "previews/hrym_wave_band_v01_native.gif",
+        "previews/hrym_wave_band_v01_slow8.gif",
+        "previews/hrym_wave_band_v01_stretch.png"
+      ],
+      "approved": "approved/hrym_wave_band.png",
+      "frame_order": "left_to_right_no_spacing",
+      "generation_records": "records/generation_jobs.json",
+      "public_generation_url": null,
+      "generation_url_note": "内置工具仅返回本地原图路径；真实提示词/参考/结果均归档，不伪造公开URL",
+      "transparent_strategy": "Generated alpha quantized to 8 source levels then optional low-alpha cap; RGB count and alpha recorded separately; zero RGB when alpha0",
+      "loop_mode": "loop only while corresponding state is active",
+      "remaining_issues": [
+        "完整手动通关、长时平衡及其他设备表现未测；当前为Godot受控技能/视角验证"
+      ],
+      "source_recipe": "records/normalization_hrym_wave_band_v01.json",
+      "runtime_verification": {
+        "report": "../taskH0_critical_2026-10-19/integration_2026-10-19/README.md",
+        "scope": "actual Godot Game scenes with controlled skill triggers; full playthrough and long-session balance not tested",
+        "automated_assertions": 572,
+        "failures": 0,
+        "formal_PNG_changed": false
+      }
+    },
+    {
+      "task": "H3",
+      "id": "hrym_shield_arc",
+      "w": 128,
+      "h": 128,
+      "frames": 4,
+      "fps": 8,
+      "flags": [
+        "loop",
+        "area",
+        "front"
+      ],
+      "anchor": [
+        64,
+        64
+      ],
+      "columns": 2,
+      "rows": 2,
+      "loop": true,
+      "hook": "scripts/bosses/hrym.gd _draw_shield()；_update_state() 刷新前景子层",
+      "keep": "右向+X；随_facing旋转；仅±SHIELD_HALF_ANGLE1.3，半径radius+12；后方全透明",
+      "reference_paths": [
+        "assets/sprites/bosses/hrym_shield.png"
+      ],
+      "target": "assets/sprites/effects/bosses/hrym_shield_arc.png",
+      "source_root": "assets/source/taskH3_hrym_fx_2026-10-19",
+      "archived_references": [
+        {
+          "project_path": "assets/sprites/bosses/hrym_shield.png",
+          "archived_path": "references/hrym_shield.png",
+          "sha256": "cefc863ffd117b142cdbb2067d6a3c4a764c1a6347bfbb2ee61c4fd8d81c9ba3"
+        }
+      ],
+      "version": "v01",
+      "final_path": "assets/sprites/effects/bosses/hrym_shield_arc.png",
+      "candidate": "candidates/hrym_shield_arc_v01.png",
+      "sha256": "8c8f524bf418d0968ed5c8142ac6e73986e523e68f05cf178a5e89c6288699f2",
+      "actual_RGB_colors": 31,
+      "actual_alpha_values": [
+        0,
+        28,
+        56,
+        84,
+        112,
+        140,
+        168,
+        197
+      ],
+      "frame_bboxes": [
+        [
+          64,
+          11,
+          125,
+          116
+        ],
+        [
+          65,
+          10,
+          122,
+          117
+        ],
+        [
+          64,
+          10,
+          125,
+          117
+        ],
+        [
+          64,
+          11,
+          118,
+          117
+        ]
+      ],
+      "technical_checks": {
+        "PNG_RGBA": true,
+        "exact_strip_dimensions": true,
+        "RGB_within_48": true,
+        "transparent_background": true,
+        "every_frame_nonempty": true,
+        "distinct_original_frames": true,
+        "2px_margin_or_tiling_exception": true,
+        "rear_half_transparent": true,
+        "GIF_native_decoded_pixel_match": true,
+        "GIF_native_average_fps": true,
+        "GIF_slow8_decoded_pixel_match": true,
+        "GIF_slow8_average_fps": true
+      },
+      "visual_review": {
+        "status": "passed",
+        "observations": "已逐格看：稳定朝右的半透明冰盾弧与移动闪点，整个左半区与中心留空；不是完整防护圆，后方可见。需代码按±1.3rad精确裁切。"
+      },
+      "code_integration": "integrated",
+      "game_acceptance": "controlled_runtime_verified",
+      "source_license": {
+        "tool": "OpenAI built-in image_gen",
+        "commercial_basis": "existing approved OpenAI output terms; project-owned input references",
+        "terms_url": "https://openai.com/policies/terms-of-use/",
+        "processing": "Pillow MIT-CMU, source cuts/alpha/palette/nearest resize/placement and preview only"
+      },
+      "previews": [
+        "previews/hrym_shield_arc_v01_frames.png",
+        "previews/hrym_shield_arc_v01_ground.png",
+        "previews/hrym_shield_arc_v01_native.gif",
+        "previews/hrym_shield_arc_v01_slow8.gif"
+      ],
+      "approved": "approved/hrym_shield_arc.png",
+      "frame_order": "left_to_right_no_spacing",
+      "generation_records": "records/generation_jobs.json",
+      "public_generation_url": null,
+      "generation_url_note": "内置工具仅返回本地原图路径；真实提示词/参考/结果均归档，不伪造公开URL",
+      "transparent_strategy": "Generated alpha quantized to 8 source levels then optional low-alpha cap; RGB count and alpha recorded separately; zero RGB when alpha0",
+      "loop_mode": "loop only while corresponding state is active",
+      "remaining_issues": [
+        "完整手动通关、长时平衡及其他设备表现未测；当前为Godot受控技能/视角验证"
+      ],
+      "source_recipe": "records/normalization_hrym_shield_arc_v01.json",
+      "runtime_verification": {
+        "report": "../taskH0_critical_2026-10-19/integration_2026-10-19/README.md",
+        "scope": "actual Godot Game scenes with controlled skill triggers; full playthrough and long-session balance not tested",
+        "automated_assertions": 572,
+        "failures": 0,
+        "formal_PNG_changed": false
+      }
+    },
+    {
+      "task": "H3",
+      "id": "hrym_block_spark",
+      "w": 32,
+      "h": 32,
+      "frames": 4,
+      "fps": 16,
+      "flags": [
+        "rotate"
+      ],
+      "anchor": [
+        16,
+        16
+      ],
+      "columns": 2,
+      "rows": 2,
+      "loop": false,
+      "hook": "scripts/bosses/hrym.gd take_damage() 被格挡分支",
+      "keep": "在global_position+_facing*radius触发；仅表现不改格挡与可绕背条件",
+      "reference_paths": [
+        "assets/sprites/effects/ice_shard.png"
+      ],
+      "target": "assets/sprites/effects/bosses/hrym_block_spark.png",
+      "source_root": "assets/source/taskH3_hrym_fx_2026-10-19",
+      "archived_references": [
+        {
+          "project_path": "assets/sprites/effects/ice_shard.png",
+          "archived_path": "references/ice_shard.png",
+          "sha256": "5ec86990907579daa953b28ac401a298711a38e71a51b4956805dadd0944e8ad"
+        }
+      ],
+      "version": "v01",
+      "final_path": "assets/sprites/effects/bosses/hrym_block_spark.png",
+      "candidate": "candidates/hrym_block_spark_v01.png",
+      "sha256": "5604f8c676beefececc8a5cbc2fabd76fbc75e423abb6b25478285a9e00cc36e",
+      "actual_RGB_colors": 18,
+      "actual_alpha_values": [
+        0,
+        36,
+        72,
+        108,
+        144,
+        180,
+        216,
+        252
+      ],
+      "frame_bboxes": [
+        [
+          8,
+          8,
+          23,
+          23
+        ],
+        [
+          2,
+          2,
+          29,
+          29
+        ],
+        [
+          5,
+          4,
+          27,
+          28
+        ],
+        [
+          7,
+          10,
+          24,
+          29
+        ]
+      ],
+      "technical_checks": {
+        "PNG_RGBA": true,
+        "exact_strip_dimensions": true,
+        "RGB_within_48": true,
+        "transparent_background": true,
+        "every_frame_nonempty": true,
+        "distinct_original_frames": true,
+        "2px_margin_or_tiling_exception": true,
+        "GIF_native_decoded_pixel_match": true,
+        "GIF_native_average_fps": true,
+        "GIF_slow8_decoded_pixel_match": true,
+        "GIF_slow8_average_fps": true
+      },
+      "visual_review": {
+        "status": "passed",
+        "observations": "已看4格1倍/4倍：小点发生、冰白受击尖闪、少量离散冰屑、稀薄衰减，无盾体/地圈；旋转无固定投影。"
+      },
+      "code_integration": "integrated",
+      "game_acceptance": "controlled_runtime_verified",
+      "source_license": {
+        "tool": "OpenAI built-in image_gen",
+        "commercial_basis": "existing approved OpenAI output terms; project-owned input references",
+        "terms_url": "https://openai.com/policies/terms-of-use/",
+        "processing": "Pillow MIT-CMU, source cuts/alpha/palette/nearest resize/placement and preview only"
+      },
+      "previews": [
+        "previews/hrym_block_spark_v01_frames.png",
+        "previews/hrym_block_spark_v01_native.gif",
+        "previews/hrym_block_spark_v01_rotate.png",
+        "previews/hrym_block_spark_v01_slow8.gif"
+      ],
+      "approved": "approved/hrym_block_spark.png",
+      "frame_order": "left_to_right_no_spacing",
+      "generation_records": "records/generation_jobs.json",
+      "public_generation_url": null,
+      "generation_url_note": "内置工具仅返回本地原图路径；真实提示词/参考/结果均归档，不伪造公开URL",
+      "transparent_strategy": "Generated alpha quantized to 8 source levels then optional low-alpha cap; RGB count and alpha recorded separately; zero RGB when alpha0",
+      "loop_mode": "single shot / static; single-shot temporary display fades and frees at end",
+      "remaining_issues": [
+        "完整手动通关、长时平衡及其他设备表现未测；当前为Godot受控技能/视角验证"
+      ],
+      "source_recipe": "records/normalization_hrym_block_spark_v01.json",
+      "runtime_verification": {
+        "report": "../taskH0_critical_2026-10-19/integration_2026-10-19/README.md",
+        "scope": "actual Godot Game scenes with controlled skill triggers; full playthrough and long-session balance not tested",
+        "automated_assertions": 572,
+        "failures": 0,
+        "formal_PNG_changed": false
+      }
+    },
+    {
+      "task": "H3",
+      "id": "hrym_guard_summon",
+      "w": 96,
+      "h": 96,
+      "frames": 4,
+      "fps": 8,
+      "flags": [
+        "area"
+      ],
+      "anchor": [
+        48,
+        48
+      ],
+      "columns": 2,
+      "rows": 2,
+      "loop": false,
+      "hook": "scripts/bosses/hrym.gd _summon_guards()",
+      "keep": "每个实际卫队出生点短播；保留4名霜巨人与半血触发",
+      "reference_paths": [
+        "assets/sprites/effects/ice_pillar.png"
+      ],
+      "target": "assets/sprites/effects/bosses/hrym_guard_summon.png",
+      "source_root": "assets/source/taskH3_hrym_fx_2026-10-19",
+      "archived_references": [
+        {
+          "project_path": "assets/sprites/effects/ice_pillar.png",
+          "archived_path": "references/ice_pillar.png",
+          "sha256": "be48074a2340931126b63f15ddc6232e468c05f4a6537054e1f0cbe0f56efe7c"
+        }
+      ],
+      "version": "v01",
+      "final_path": "assets/sprites/effects/bosses/hrym_guard_summon.png",
+      "candidate": "candidates/hrym_guard_summon_v01.png",
+      "sha256": "0fb53e5a9c836e184adeca14eda2895d8a46e905a31939f9a8ef7dbf103c3b73",
+      "actual_RGB_colors": 24,
+      "actual_alpha_values": [
+        0,
+        28,
+        56,
+        84,
+        112,
+        140,
+        168,
+        197
+      ],
+      "frame_bboxes": [
+        [
+          7,
+          37,
+          90,
+          59
+        ],
+        [
+          7,
+          36,
+          90,
+          60
+        ],
+        [
+          2,
+          27,
+          94,
+          68
+        ],
+        [
+          8,
+          32,
+          89,
+          64
+        ]
+      ],
+      "technical_checks": {
+        "PNG_RGBA": true,
+        "exact_strip_dimensions": true,
+        "RGB_within_48": true,
+        "transparent_background": true,
+        "every_frame_nonempty": true,
+        "distinct_original_frames": true,
+        "2px_margin_or_tiling_exception": true,
+        "GIF_native_decoded_pixel_match": true,
+        "GIF_native_average_fps": true,
+        "GIF_slow8_decoded_pixel_match": true,
+        "GIF_slow8_average_fps": true
+      },
+      "visual_review": {
+        "status": "passed",
+        "observations": "已看4格：地面冰纹亮起、低矮寒雾卷起并消散，无巨人身体或新增冰柱，中心可见出生单位。"
+      },
+      "code_integration": "integrated",
+      "game_acceptance": "controlled_runtime_verified",
+      "source_license": {
+        "tool": "OpenAI built-in image_gen",
+        "commercial_basis": "existing approved OpenAI output terms; project-owned input references",
+        "terms_url": "https://openai.com/policies/terms-of-use/",
+        "processing": "Pillow MIT-CMU, source cuts/alpha/palette/nearest resize/placement and preview only"
+      },
+      "previews": [
+        "previews/hrym_guard_summon_v01_frames.png",
+        "previews/hrym_guard_summon_v01_ground.png",
+        "previews/hrym_guard_summon_v01_native.gif",
+        "previews/hrym_guard_summon_v01_slow8.gif"
+      ],
+      "approved": "approved/hrym_guard_summon.png",
+      "frame_order": "left_to_right_no_spacing",
+      "generation_records": "records/generation_jobs.json",
+      "public_generation_url": null,
+      "generation_url_note": "内置工具仅返回本地原图路径；真实提示词/参考/结果均归档，不伪造公开URL",
+      "transparent_strategy": "Generated alpha quantized to 8 source levels then optional low-alpha cap; RGB count and alpha recorded separately; zero RGB when alpha0",
+      "loop_mode": "single shot / static; single-shot temporary display fades and frees at end",
+      "remaining_issues": [
+        "完整手动通关、长时平衡及其他设备表现未测；当前为Godot受控技能/视角验证"
+      ],
+      "source_recipe": "records/normalization_hrym_guard_summon_v01.json",
+      "runtime_verification": {
+        "report": "../taskH0_critical_2026-10-19/integration_2026-10-19/README.md",
+        "scope": "actual Godot Game scenes with controlled skill triggers; full playthrough and long-session balance not tested",
+        "automated_assertions": 572,
+        "failures": 0,
+        "formal_PNG_changed": false
+      }
+    },
+    {
+      "task": "H3",
+      "id": "hrym_ice_break",
+      "w": 64,
+      "h": 64,
+      "frames": 4,
+      "fps": 16,
+      "flags": [
+        "area"
+      ],
+      "anchor": [
+        32,
+        32
+      ],
+      "columns": 2,
+      "rows": 2,
+      "loop": false,
+      "hook": "scripts/bosses/ice_pillar.gd _process() _life<=0",
+      "keep": "柱脚点触发，替换碎裂burst；保持3秒寿命和碰撞移除，不留下残骸",
+      "reference_paths": [
+        "assets/sprites/effects/ice_pillar.png"
+      ],
+      "target": "assets/sprites/effects/bosses/hrym_ice_break.png",
+      "source_root": "assets/source/taskH3_hrym_fx_2026-10-19",
+      "archived_references": [
+        {
+          "project_path": "assets/sprites/effects/ice_pillar.png",
+          "archived_path": "references/ice_pillar.png",
+          "sha256": "be48074a2340931126b63f15ddc6232e468c05f4a6537054e1f0cbe0f56efe7c"
+        }
+      ],
+      "version": "v01",
+      "final_path": "assets/sprites/effects/bosses/hrym_ice_break.png",
+      "candidate": "candidates/hrym_ice_break_v01.png",
+      "sha256": "1182b62d22d3838d05b02f7d833bbae76798db471d02eeb3b062ebd7764247f1",
+      "actual_RGB_colors": 21,
+      "actual_alpha_values": [
+        0,
+        28,
+        56,
+        84,
+        112,
+        140,
+        168,
+        197
+      ],
+      "frame_bboxes": [
+        [
+          5,
+          8,
+          58,
+          56
+        ],
+        [
+          2,
+          10,
+          62,
+          54
+        ],
+        [
+          3,
+          11,
+          60,
+          52
+        ],
+        [
+          7,
+          14,
+          56,
+          50
+        ]
+      ],
+      "technical_checks": {
+        "PNG_RGBA": true,
+        "exact_strip_dimensions": true,
+        "RGB_within_48": true,
+        "transparent_background": true,
+        "every_frame_nonempty": true,
+        "distinct_original_frames": true,
+        "2px_margin_or_tiling_exception": true,
+        "GIF_native_decoded_pixel_match": true,
+        "GIF_native_average_fps": true,
+        "GIF_slow8_decoded_pixel_match": true,
+        "GIF_slow8_average_fps": true
+      },
+      "visual_review": {
+        "status": "passed",
+        "observations": "已看4格：短促碎裂峰值、冰片外散、碎片减少、少量暗冰粉消失；没有完整冰柱或永久残骸。"
+      },
+      "code_integration": "integrated",
+      "game_acceptance": "controlled_runtime_verified",
+      "source_license": {
+        "tool": "OpenAI built-in image_gen",
+        "commercial_basis": "existing approved OpenAI output terms; project-owned input references",
+        "terms_url": "https://openai.com/policies/terms-of-use/",
+        "processing": "Pillow MIT-CMU, source cuts/alpha/palette/nearest resize/placement and preview only"
+      },
+      "previews": [
+        "previews/hrym_ice_break_v01_frames.png",
+        "previews/hrym_ice_break_v01_ground.png",
+        "previews/hrym_ice_break_v01_native.gif",
+        "previews/hrym_ice_break_v01_slow8.gif"
+      ],
+      "approved": "approved/hrym_ice_break.png",
+      "frame_order": "left_to_right_no_spacing",
+      "generation_records": "records/generation_jobs.json",
+      "public_generation_url": null,
+      "generation_url_note": "内置工具仅返回本地原图路径；真实提示词/参考/结果均归档，不伪造公开URL",
+      "transparent_strategy": "Generated alpha quantized to 8 source levels then optional low-alpha cap; RGB count and alpha recorded separately; zero RGB when alpha0",
+      "loop_mode": "single shot / static; single-shot temporary display fades and frees at end",
+      "remaining_issues": [
+        "完整手动通关、长时平衡及其他设备表现未测；当前为Godot受控技能/视角验证"
+      ],
+      "source_recipe": "records/normalization_hrym_ice_break_v01.json",
+      "runtime_verification": {
+        "report": "../taskH0_critical_2026-10-19/integration_2026-10-19/README.md",
+        "scope": "actual Godot Game scenes with controlled skill triggers; full playthrough and long-session balance not tested",
+        "automated_assertions": 572,
+        "failures": 0,
+        "formal_PNG_changed": false
+      }
+    }
+  ],
+  "originals": [
+    {
+      "file": "originals/hrym_block_spark_v01.png",
+      "sha256": "87621cc5962adb123e9c36998c30a19e9df9d0cfc7f65b50009f02b64d160379"
+    },
+    {
+      "file": "originals/hrym_guard_summon_v01.png",
+      "sha256": "3ef18e6b872add4ee0d2380cb0107ff7c95631fdc3056abd11e2d255f7e6458b"
+    },
+    {
+      "file": "originals/hrym_ice_break_v01.png",
+      "sha256": "3a44b6792f2f87f9fdac78447aef40df18009f546b95eec5e5f1632508a6356e"
+    },
+    {
+      "file": "originals/hrym_shield_arc_v01.png",
+      "sha256": "4461ef52b367b9f200771cbc372aa27cd29afb44faf5d3cbdc3acdf55356fb67"
+    },
+    {
+      "file": "originals/hrym_wave_band_v01.png",
+      "sha256": "3d421810952b0aedab5aba97d9eaf57c71399dc3e9a5d8123239a933ab07b73a"
+    }
+  ],
+  "generation_records": "records/generation_jobs.json",
+  "limitations": [
+    "Technical measurements and local previews do not prove Godot gameplay acceptance."
+  ],
+  "source_inventory": "records/source_inventory.json",
+  "runtime_verification": {
+    "report": "../taskH0_critical_2026-10-19/integration_2026-10-19/README.md",
+    "scope": "controlled Game viewport and gameplay assertions; not a complete manual run"
+  }
+}

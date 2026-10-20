@@ -1,0 +1,17 @@
+{
+  "tool": "image_gen.imagegen",
+  "id": "freyr",
+  "frame_size": [
+    64,
+    64
+  ],
+  "frames": 1,
+  "fps": 0,
+  "loop": false,
+  "refs": [
+    "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskK3_fire_2026-10-20/references/freyr_card.png",
+    "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskK3_fire_2026-10-20/references/swordsman.png"
+  ],
+  "prompt": "Use case: stylized-concept, new world-space game ally sprite. Input1 is ONLY this project's original identity and clothing reference; input2 is the PROJECT'S low-resolution in-world human sprite scale/style. Translate the blond harvest guardian into ONE whole-body64x64 PIXEL sprite, right-facing3/4, NOT an illustration/card. Same adult masculine face, wavy shoulder-length GOLDEN hair and short full blond beard, dark forest-green wool cloak with restrained gold-braided hem and bronze brooch, dark green/brown tunic, leather belt, earth-brown trousers, simple dark boots. A SMALL wheat braid at hair, no oversized crown. BOTH hands empty and relaxed, no sword, boar, staff, shield, halo or extra prop. Calm solid healer stance, two anatomically coherent arms and legs. Human about58px tall, foot anchor(32,62), stable hipcenter32, >=2px alpha margin; not the96px giant helper. Crisp tiny pixel clusters and<=48RGB, light from upper-left, binary entity alpha, true zero-alpha background, no card border, scenery, ground/shadow, text or watermark. No smooth painted portrait; source's floating sword and animal are intentionally absent.",
+  "transparent_background": true
+}

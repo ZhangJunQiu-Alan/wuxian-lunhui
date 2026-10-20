@@ -1,0 +1,525 @@
+{
+  "task": "J1-J8 unattended long-run",
+  "date": "2026-10-19",
+  "base_commit": "71ebcc9c95f68071a3a1b042b7564ae8ac548858",
+  "wall_seconds": 1021.373,
+  "pressure_seconds": 900.035,
+  "rendered_frames": 52577,
+  "scene_cycles": 60,
+  "checks": 633,
+  "check_failures": [],
+  "engine_errors": [],
+  "investigation_flags": [],
+  "phases": [
+    {
+      "frames": 17253,
+      "live_ai": false,
+      "mean_ms": 17.3887439865531,
+      "name": "stationary_pressure",
+      "p95_ms": 24,
+      "wall_seconds": 300.012,
+      "exclude_warmup_seconds": 60,
+      "static_mib": {
+        "count": 25,
+        "first": 70.83103275299072,
+        "last": 71.30904483795166,
+        "min": 70.83103275299072,
+        "max": 71.33879566192627,
+        "median": 71.13083362579346,
+        "slope_per_minute": 0.13986191008431095
+      },
+      "objects": {
+        "count": 25,
+        "first": 8613.0,
+        "last": 8617.0,
+        "min": 8612.0,
+        "max": 8620.0,
+        "median": 8616.0,
+        "slope_per_minute": 1.3982650652752315
+      },
+      "nodes": {
+        "count": 25,
+        "first": 1988.0,
+        "last": 1988.0,
+        "min": 1988.0,
+        "max": 1991.0,
+        "median": 1990.0,
+        "slope_per_minute": 0.12945091657426405
+      },
+      "resources": {
+        "count": 25,
+        "first": 286.0,
+        "last": 287.0,
+        "min": 286.0,
+        "max": 287.0,
+        "median": 287.0,
+        "slope_per_minute": 0.3460626037109383
+      },
+      "texture_mib": {
+        "count": 25,
+        "first": 27.778026580810547,
+        "last": 28.444692611694336,
+        "min": 27.778026580810547,
+        "max": 28.444692611694336,
+        "median": 28.444692611694336,
+        "slope_per_minute": 0.23070818245328084
+      },
+      "orphans_max": 0.0,
+      "resident_mib": {
+        "count": 79,
+        "first": 101.421875,
+        "last": 69.5625,
+        "min": 66.9375,
+        "max": 101.421875,
+        "median": 77.546875,
+        "slope_per_minute": -7.8150893560877135
+      }
+    },
+    {
+      "frames": 17326,
+      "live_ai": true,
+      "mean_ms": 17.3153064758167,
+      "name": "live_ai_pressure",
+      "p95_ms": 23,
+      "wall_seconds": 300.008,
+      "exclude_warmup_seconds": 60,
+      "static_mib": {
+        "count": 25,
+        "first": 71.25048542022705,
+        "last": 71.68967914581299,
+        "min": 71.17921161651611,
+        "max": 71.73996829986572,
+        "median": 71.52062702178955,
+        "slope_per_minute": 0.13594189272263565
+      },
+      "objects": {
+        "count": 25,
+        "first": 8621.0,
+        "last": 8617.0,
+        "min": 8615.0,
+        "max": 8621.0,
+        "median": 8618.0,
+        "slope_per_minute": -0.018294773789319187
+      },
+      "nodes": {
+        "count": 25,
+        "first": 1992.0,
+        "last": 1988.0,
+        "min": 1988.0,
+        "max": 1992.0,
+        "median": 1990.0,
+        "slope_per_minute": -0.07354679937718234
+      },
+      "resources": {
+        "count": 25,
+        "first": 287.0,
+        "last": 287.0,
+        "min": 287.0,
+        "max": 287.0,
+        "median": 287.0,
+        "slope_per_minute": 0.0
+      },
+      "texture_mib": {
+        "count": 25,
+        "first": 28.444692611694336,
+        "last": 28.444692611694336,
+        "min": 28.444692611694336,
+        "max": 28.444692611694336,
+        "median": 28.444692611694336,
+        "slope_per_minute": 0.0
+      },
+      "orphans_max": 0.0,
+      "resident_mib": {
+        "count": 79,
+        "first": 78.578125,
+        "last": 80.53125,
+        "min": 76.90625,
+        "max": 81.765625,
+        "median": 80.53125,
+        "slope_per_minute": 0.2769949649578339
+      }
+    },
+    {
+      "frames": 17998,
+      "live_ai": false,
+      "mean_ms": 16.6691854650517,
+      "name": "stationary_repeat",
+      "p95_ms": 17,
+      "wall_seconds": 300.015,
+      "exclude_warmup_seconds": 60,
+      "static_mib": {
+        "count": 25,
+        "first": 71.46183490753174,
+        "last": 71.82758808135986,
+        "min": 71.4203462600708,
+        "max": 71.88098239898682,
+        "median": 71.67520999908447,
+        "slope_per_minute": 0.11817361842714802
+      },
+      "objects": {
+        "count": 25,
+        "first": 8619.0,
+        "last": 8616.0,
+        "min": 8615.0,
+        "max": 8620.0,
+        "median": 8618.0,
+        "slope_per_minute": 0.06009036543734628
+      },
+      "nodes": {
+        "count": 25,
+        "first": 1992.0,
+        "last": 1988.0,
+        "min": 1988.0,
+        "max": 1992.0,
+        "median": 1990.0,
+        "slope_per_minute": -0.07372377755581404
+      },
+      "resources": {
+        "count": 25,
+        "first": 287.0,
+        "last": 287.0,
+        "min": 287.0,
+        "max": 287.0,
+        "median": 287.0,
+        "slope_per_minute": 0.0
+      },
+      "texture_mib": {
+        "count": 25,
+        "first": 28.444692611694336,
+        "last": 28.444692611694336,
+        "min": 28.444692611694336,
+        "max": 28.444692611694336,
+        "median": 28.444692611694336,
+        "slope_per_minute": 0.0
+      },
+      "orphans_max": 0.0,
+      "resident_mib": {
+        "count": 80,
+        "first": 76.921875,
+        "last": 69.53125,
+        "min": 69.53125,
+        "max": 80.328125,
+        "median": 76.65625,
+        "slope_per_minute": -1.2347838878280204
+      }
+    }
+  ],
+  "scene_cycle_analysis": {
+    "static_bytes": {
+      "count": 52,
+      "first": 54.76131725311279,
+      "last": 55.14853286743164,
+      "min": 54.76131725311279,
+      "max": 55.14853286743164,
+      "median": 55.02068328857422,
+      "slope_per_minute": 0.2028585748324241
+    },
+    "objects": {
+      "count": 52,
+      "first": 1711.0,
+      "last": 1713.0,
+      "min": 1711.0,
+      "max": 1713.0,
+      "median": 1713.0,
+      "slope_per_minute": 0.43128884516117383
+    },
+    "nodes": {
+      "count": 52,
+      "first": 30.0,
+      "last": 30.0,
+      "min": 30.0,
+      "max": 30.0,
+      "median": 30.0,
+      "slope_per_minute": 0.0
+    },
+    "resources": {
+      "count": 52,
+      "first": 152.0,
+      "last": 154.0,
+      "min": 152.0,
+      "max": 154.0,
+      "median": 154.0,
+      "slope_per_minute": 0.43128884516117383
+    },
+    "orphans": {
+      "count": 52,
+      "first": 0.0,
+      "last": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "median": 0.0,
+      "slope_per_minute": 0.0
+    },
+    "texture_bytes": {
+      "count": 52,
+      "first": 16.975436210632324,
+      "last": 16.996275901794434,
+      "min": 16.975436210632324,
+      "max": 16.996275901794434,
+      "median": 16.996275901794434,
+      "slope_per_minute": 0.004493963167410836
+    },
+    "warmup_cycles_excluded": 8,
+    "per_character": {
+      "swordsman": {
+        "nodes": {
+          "count": 13,
+          "first": 30.0,
+          "last": 30.0,
+          "min": 30.0,
+          "max": 30.0,
+          "median": 30.0,
+          "slope_per_minute": 0.0
+        },
+        "objects": {
+          "count": 13,
+          "first": 1711.0,
+          "last": 1713.0,
+          "min": 1711.0,
+          "max": 1713.0,
+          "median": 1713.0,
+          "slope_per_minute": 0.566530527882322
+        },
+        "resources": {
+          "count": 13,
+          "first": 152.0,
+          "last": 154.0,
+          "min": 152.0,
+          "max": 154.0,
+          "median": 154.0,
+          "slope_per_minute": 0.5665305278823222
+        },
+        "static_mib": {
+          "count": 13,
+          "first": 54.76131725311279,
+          "last": 55.13374710083008,
+          "min": 54.76131725311279,
+          "max": 55.13374710083008,
+          "median": 55.013736724853516,
+          "slope_per_minute": 0.2115136189671097
+        }
+      },
+      "gunslinger": {
+        "nodes": {
+          "count": 13,
+          "first": 30.0,
+          "last": 30.0,
+          "min": 30.0,
+          "max": 30.0,
+          "median": 30.0,
+          "slope_per_minute": 0.0
+        },
+        "objects": {
+          "count": 13,
+          "first": 1711.0,
+          "last": 1713.0,
+          "min": 1711.0,
+          "max": 1713.0,
+          "median": 1713.0,
+          "slope_per_minute": 0.5663989314628286
+        },
+        "resources": {
+          "count": 13,
+          "first": 152.0,
+          "last": 154.0,
+          "min": 152.0,
+          "max": 154.0,
+          "median": 154.0,
+          "slope_per_minute": 0.5663989314628287
+        },
+        "static_mib": {
+          "count": 13,
+          "first": 54.76624584197998,
+          "last": 55.138675689697266,
+          "min": 54.76624584197998,
+          "max": 55.138675689697266,
+          "median": 55.018218994140625,
+          "slope_per_minute": 0.21151271059798932
+        }
+      },
+      "assassin": {
+        "nodes": {
+          "count": 13,
+          "first": 30.0,
+          "last": 30.0,
+          "min": 30.0,
+          "max": 30.0,
+          "median": 30.0,
+          "slope_per_minute": 0.0
+        },
+        "objects": {
+          "count": 13,
+          "first": 1711.0,
+          "last": 1713.0,
+          "min": 1711.0,
+          "max": 1713.0,
+          "median": 1713.0,
+          "slope_per_minute": 0.5664303501251775
+        },
+        "resources": {
+          "count": 13,
+          "first": 152.0,
+          "last": 154.0,
+          "min": 152.0,
+          "max": 154.0,
+          "median": 154.0,
+          "slope_per_minute": 0.5664303501251775
+        },
+        "static_mib": {
+          "count": 13,
+          "first": 54.77117443084717,
+          "last": 55.14360427856445,
+          "min": 54.77117443084717,
+          "max": 55.14360427856445,
+          "median": 55.02314758300781,
+          "slope_per_minute": 0.21156105487217663
+        }
+      },
+      "mage": {
+        "nodes": {
+          "count": 13,
+          "first": 30.0,
+          "last": 30.0,
+          "min": 30.0,
+          "max": 30.0,
+          "median": 30.0,
+          "slope_per_minute": 0.0
+        },
+        "objects": {
+          "count": 13,
+          "first": 1713.0,
+          "last": 1713.0,
+          "min": 1713.0,
+          "max": 1713.0,
+          "median": 1713.0,
+          "slope_per_minute": 0.0
+        },
+        "resources": {
+          "count": 13,
+          "first": 154.0,
+          "last": 154.0,
+          "min": 154.0,
+          "max": 154.0,
+          "median": 154.0,
+          "slope_per_minute": 0.0
+        },
+        "static_mib": {
+          "count": 13,
+          "first": 54.903526306152344,
+          "last": 55.14853286743164,
+          "min": 54.903526306152344,
+          "max": 55.14853286743164,
+          "median": 55.028076171875,
+          "slope_per_minute": 0.1753563145819146
+        }
+      }
+    }
+  },
+  "final_idle": {
+    "cycle": 60,
+    "effects": {
+      "marks": 0,
+      "numbers": 0,
+      "particles": 0,
+      "rings": 0
+    },
+    "enemies": 0,
+    "fps_monitor": 60.0,
+    "j_texture_cache": 14,
+    "nodes": 3,
+    "objects": 1649.0,
+    "orphans": 0.0,
+    "phase": "final_idle",
+    "resources": 145.0,
+    "seconds": 1021.362,
+    "static_bytes": 53904930,
+    "static_peak_bytes": 86904271,
+    "tag": "all_released",
+    "texture_bytes": 17821887.0,
+    "video_bytes": 26362711.0
+  },
+  "casts": {
+    "deaths": 3880,
+    "dimension_slash": 135,
+    "enter_formation": 135,
+    "marks": 463870,
+    "stonehenge": 135,
+    "wild_west_show": 135
+  },
+  "rss_mib_all": {
+    "min": 0.171875,
+    "max": 190.515625,
+    "last": 63.96875
+  },
+  "interpretation": "Measurements include allocator/driver caches and small test-record bookkeeping; trend thresholds are investigation flags, not proof that all memory is leak-free. Scene-free counts compare equivalent warmed character phases. Static J texture cache14 intentionally remains until process exit.",
+  "limitations": [
+    "One local Apple M2 device and renderer",
+    "Player controlled immune/damage0 to hold fixed load; not full manual playthrough or balance test",
+    "No exported build or all god combinations",
+    "RSS is resident memory and may change with macOS paging/compression; engine counts needed alongside it"
+  ],
+  "platform_diagnostics": [
+    "2026-10-19 05:41:47.367 godot[13444:3331765] error messaging the mach port for IMKCFRunLoopWakeUpReliable"
+  ],
+  "focus_pause_caveat": "An actual live-AI phase screenshot shows focus-loss pause overlay. Workload nodes use PROCESS_MODE_ALWAYS and the emitter runs in SceneTree, so forced pressure continued; these FPS figures are not normal unpaused foreground-game benchmarks. No exact pause timeline was sampled.",
+  "code_changes": false,
+  "commit_or_push_this_turn": false,
+  "cache_followup": {
+    "probe_seconds": 120.329,
+    "checks": 260,
+    "failures": [],
+    "main_final_plateau": {
+      "first_cycle_of_final_plateau": 12,
+      "last_cycle": 60,
+      "consecutive_matching_cycles": 49,
+      "resources": 154.0,
+      "objects": 1713.0,
+      "nodes_min": 30,
+      "nodes_max": 30
+    },
+    "probe_final_plateau": {
+      "first_cycle_of_final_plateau": 19,
+      "last_cycle": 60,
+      "consecutive_matching_cycles": 42,
+      "resources": 153.0,
+      "objects": 1710.0,
+      "nodes_min": 30,
+      "nodes_max": 30
+    },
+    "probe_cache_additions": [
+      {
+        "cycle": 14,
+        "new_cached_paths": [
+          "res://assets/sprites/effects/feather_blade.png"
+        ]
+      }
+    ],
+    "recorder_release": {
+      "after_bytes": 53001814,
+      "before_bytes": 53517706,
+      "checks": 260,
+      "released_bytes": 515892,
+      "samples": 63
+    },
+    "interpretation": "The main early +2 resources stop growing at the final plateau. Probe identifies a one-time feather_blade texture cache addition; main did not sample cache paths, so its exact2 resource identities are not claimed. This resolves the initial first/last heuristic as a bounded warmup step, not repeated per-cycle leakage."
+  },
+  "initial_investigation_flags": [
+    "swordsman: resources increase across warmed matching-character cycles",
+    "gunslinger: resources increase across warmed matching-character cycles",
+    "assassin: resources increase across warmed matching-character cycles"
+  ],
+  "resolved_flags": [
+    {
+      "flag": "swordsman: resources increase across warmed matching-character cycles",
+      "resolution": "Main and independent probe show >=32 consecutive same-resource/object post-free counts; see cache_followup and retained analysis_initial_flags.json"
+    },
+    {
+      "flag": "gunslinger: resources increase across warmed matching-character cycles",
+      "resolution": "Main and independent probe show >=32 consecutive same-resource/object post-free counts; see cache_followup and retained analysis_initial_flags.json"
+    },
+    {
+      "flag": "assassin: resources increase across warmed matching-character cycles",
+      "resolution": "Main and independent probe show >=32 consecutive same-resource/object post-free counts; see cache_followup and retained analysis_initial_flags.json"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "id": "thokk_attack",
+  "version": "v01",
+  "prompt": "Use case: identity-preserve. Production pixel-art enemy animation for a 96x96 per-frame game sprite. Image 1 is the approved neutral sprite, image 2 is its high-resolution original for identity. Preserve EXACTLY the same elderly female giant, hooked nose, grey braided long hair, stone-grey skin, torn plum patched dress, ragged fur shawl, belt and wrapped boots, body proportions and color placements. Facing RIGHT throughout. No weapon, beard, shield, effects, ground, shadow or scenery. Pure transparent background, no grid lines, labels, numbers, text or watermark. Dense crisp pixel clusters, limited 48-color palette, same top-left lighting. All cells have the same camera, scale, hip center, and planted-foot baseline. Full silhouette including hands and feet stays inside each cell with generous margins. One animation sheet with EXACTLY FOUR equally-sized SQUARE cells in a 2-column by 2-row grid, read left-to-right then next row. FOUR DISTINCT melee keyframes: 1 draw the near fist back to shoulder height with a slight torso twist; 2 step weight into a forceful close forward arm sweep toward RIGHT, fist in front at chest height; 3 arm extended in clear impact/follow-through while torso leans right slightly, opposite fist stays near the waist; 4 arm recoils toward neutral standing. Clearly a physical hand strike, not spellcasting; no slash marks, no light, no impact effects. Keep entire giant inside every cell. Neither hand above head; feet stay on a consistent ground line. Sheet aspect ratio 1:1.",
+  "reference_paths": [
+    "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskH0_critical_2026-10-19/candidates/thokk_v01.png",
+    "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskH0_critical_2026-10-19/originals/thokk_v01.png"
+  ],
+  "columns": 2,
+  "rows": 2
+}

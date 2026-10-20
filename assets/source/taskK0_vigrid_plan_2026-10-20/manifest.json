@@ -1,0 +1,341 @@
+{
+  "task": "K0",
+  "date": "2026-10-20",
+  "status": "planning_delivered_not_runtime_accepted",
+  "final_production": "not_started",
+  "new_final_assets": 0,
+  "existing_files_modified": 0,
+  "source_rights": "project-owned existing pixels; original manifest chain in records/reuse_provenance.json",
+  "tools": [
+    "Python standard library",
+    "Pillow 12.1.1 MIT-CMU for existing-image previews and checks only"
+  ],
+  "format_exceptions": {
+    "originals": "not applicable: no new image generation",
+    "preview_gif": "not applicable: K0 contains no newly produced animation",
+    "terrain_preview": "six existing textures, 4x4 repeats; no new terrain production"
+  },
+  "existing_assets": [
+    {
+      "path": "assets/sprites/bosses/jormungandr_head.png",
+      "sha256": "147c0b593f24bbe81719f52ac9d553fe9540ced163399a76aba44cd0b5006bfb"
+    },
+    {
+      "path": "assets/sprites/bosses/jormungandr_body.png",
+      "sha256": "72df0600b5d9d4a19a9e6b72d8af097751109dd6807f6c9dc959a8082032b94c"
+    },
+    {
+      "path": "assets/sprites/bosses/jormungandr_tail.png",
+      "sha256": "02a5b4ddc3197735e27d0d2dbcdc10d71e1d8f12886351764f9c395dcd5c0936"
+    },
+    {
+      "path": "assets/sprites/bosses/fenrir.png",
+      "sha256": "bcc4676a2d9526817aed6a43429e5b5fc5123004378fda9687d37bbbf14159da"
+    },
+    {
+      "path": "assets/sprites/bosses/surtr.png",
+      "sha256": "f5f705f6953e95ba014521ac47ae2f05b251e43bbea72ed7f30c6b68f3ec618d"
+    },
+    {
+      "path": "assets/sprites/enemies/fire_giant.png",
+      "sha256": "0a59ac1cb33fb98e1acfd0b0d68b1ad73d0084151689ef1af7f5a04e34d21e7a"
+    },
+    {
+      "path": "assets/sprites/enemies/frost_veteran.png",
+      "sha256": "6972714054f6181ee80249f0c5e42cac072e329a3bc063e04269ba00d9563e9c"
+    },
+    {
+      "path": "assets/sprites/enemies/dead.png",
+      "sha256": "fcfada7817322ec67f6b6055bd4aa727c119c0256481921f857b6218b535d278"
+    },
+    {
+      "path": "assets/sprites/enemies/dead_move.png",
+      "sha256": "93a758a490782306128d6e11941d12662ead0f1251df8b8ebc8900964fce792c"
+    },
+    {
+      "path": "assets/sprites/enemies/dead_attack.png",
+      "sha256": "59c404b403f193cd6f15c0ac52e9e85742119ead0a55791b8b7380de0089d8d7"
+    },
+    {
+      "path": "assets/sprites/ground/vigrid/scorched_01.png",
+      "sha256": "3748580e22d48641ca2776b843445a7c10ae1385a4e3251000eae628ead89ba8"
+    },
+    {
+      "path": "assets/sprites/ground/vigrid/scorched_02.png",
+      "sha256": "33c892d8afe17ce56f34408bb015394ae7595f5d9ded6a5cc4a9e3c2b6befa22"
+    },
+    {
+      "path": "assets/sprites/ground/vigrid/scorched_03.png",
+      "sha256": "b307a804cd093754eb2ad1f7a9f31ec661981881576cd03ba821739f06127cd3"
+    },
+    {
+      "path": "assets/sprites/ground/vigrid/scorched_04.png",
+      "sha256": "2d1f7e6bff2849a208e9f0abc52aeaa7a48ebcd0bf3f3128615ff9434e5727a0"
+    },
+    {
+      "path": "assets/sprites/ground/vigrid/cracked_lava.png",
+      "sha256": "2782e6bacb893eaf12f9b17890585008e2dafeefe9ccf571d548ad77c0f39507"
+    },
+    {
+      "path": "assets/sprites/ground/vigrid/burnt_grass.png",
+      "sha256": "6f2333fe144ee0eff736c837ec2ae5ba546fa93e786c0bb009d0dd2392559999"
+    },
+    {
+      "path": "assets/sprites/props/vigrid/bifrost_fragment.png",
+      "sha256": "a3948b492c7bc55c0d6333c6804593c50eecae91cc8527d9593e8d5baaf1451d"
+    },
+    {
+      "path": "assets/sprites/props/vigrid/broken_weapons.png",
+      "sha256": "79093911f77127c3554d1216806de76ff2101cf62153f5bc06f504d40b371667"
+    },
+    {
+      "path": "assets/sprites/props/vigrid/burning_wreckage.png",
+      "sha256": "0db9ddab498cdfda609eef628c1128fd985aae113fb2315698c0cf1a4b21dffc"
+    },
+    {
+      "path": "assets/sprites/props/vigrid/fallen_shield.png",
+      "sha256": "82f3244549a336404a11cbb2399cf064febafd9b513e2936ac92c768e5076f5d"
+    },
+    {
+      "path": "assets/sprites/props/vigrid/giant_remains.png",
+      "sha256": "6ae25e977fcbd8b4b4310ce4550e0024cc71c1728c2b9063e85c0e8b7dcb6998"
+    },
+    {
+      "path": "assets/sprites/characters/swordsman.png",
+      "sha256": "93ffceadeceda21ba869017db71412302a79a529068e4c2580d6ef798fff11b9"
+    },
+    {
+      "path": "assets/sprites/characters/gunslinger.png",
+      "sha256": "754134580682ef324d1b7e90fd2849807fe4622bc702a61bcd305a449fef9f52"
+    },
+    {
+      "path": "assets/sprites/characters/assassin.png",
+      "sha256": "36f61e50bcfb173863e5abc69afc70ef10ae3d17bb6bf7bab8a31d42fcc2a772"
+    },
+    {
+      "path": "assets/sprites/characters/mage.png",
+      "sha256": "3cbb5f8a32b7cb79bdfa52f38c7dbce3c487d0d9b50f25470967f904cf2ed90b"
+    },
+    {
+      "path": "assets/sprites/effects/bosses/nidhogg_poison_breath.png",
+      "sha256": "99d291b294b5a8412bcf449586d1bbf585bbe5ffed37c458185d24fa66f473b7"
+    },
+    {
+      "path": "assets/sprites/effects/poison_pool.png",
+      "sha256": "0284bb2e78321311e43248046a820d43920193764e68f64d662d25cd1516374f"
+    },
+    {
+      "path": "assets/sprites/effects/hit_bite.png",
+      "sha256": "1e0e0b18432621b5d502d6936867c51cd5b306683651c3cd097a86e28c6feadc"
+    },
+    {
+      "path": "assets/sprites/effects/gods/thor_hammer.png",
+      "sha256": "4a143fdceac2e85c1303a42b0212b6eb69c5f2b2e4400cd55d6931dfb165d950"
+    },
+    {
+      "path": "assets/sprites/effects/gods/thor_cloud.png",
+      "sha256": "46771823ba537d4592ca5d5087b2afd214e7d556313c1697ef99174c05c81bb8"
+    },
+    {
+      "path": "assets/sprites/effects/bosses/garm_chain_break.png",
+      "sha256": "ea6db7b77f6c20d6eb278a9411e50322db86a192a7879ab651ce86ad1a734093"
+    },
+    {
+      "path": "assets/sprites/effects/gods/loki_fire_patch.png",
+      "sha256": "a5773032ad2af278c32e3079399b7c8c4205cb0cc8f90b12a1a784c81d3f4ec4"
+    },
+    {
+      "path": "assets/sprites/effects/gods/freyr_field.png",
+      "sha256": "84f7853e87caaac62dde6e32270316c2991a171da9e6dcc5a5057f78b9d7eeb5"
+    },
+    {
+      "path": "assets/sprites/effects/bosses/hrym_ice_break.png",
+      "sha256": "1182b62d22d3838d05b02f7d833bbae76798db471d02eeb3b062ebd7764247f1"
+    },
+    {
+      "path": "assets/sprites/effects/death_shards.png",
+      "sha256": "7e8fd5876468702299206d8f6183aafb42f90a1d25e304a10492340e33eda0e8"
+    },
+    {
+      "path": "assets/sprites/decals/helheim/dried_blood_01.png",
+      "sha256": "f5bb4f073c70922b9a94fb41e6022c708c7572c5d80e6f91d1be21211a0e4953"
+    },
+    {
+      "path": "assets/sprites/decals/helheim/dried_blood_02.png",
+      "sha256": "e39f9a6aa51faba364fb03618665ce22527516630e88c4b6edb3a5782c7ad824"
+    },
+    {
+      "path": "assets/sprites/decals/helheim/drag_mark_01.png",
+      "sha256": "8526f49f0d6af7affa6740aee52f30d9bbf747ad347dafe3ff83ea55dba804f0"
+    },
+    {
+      "path": "assets/audio/music/boss.ogg",
+      "sha256": "94f80a057ea9da7e8d0f1f1cae9142cf276d07d290491ec9c99522779eb69b8a"
+    },
+    {
+      "path": "assets/audio/music/victory.ogg",
+      "sha256": "614c5c369c527881b5e545e5d5d04c1003a2bd2ada60148557991abd0416ec1a"
+    },
+    {
+      "path": "assets/audio/music/defeat.ogg",
+      "sha256": "2da0ed7f74dd7040f1291bec440ba9f9ff61ce6ee3b9448e4726ec0cf1a51b3d"
+    }
+  ],
+  "planning_file": "asset_plan.json",
+  "self_check": "pass",
+  "game_acceptance": "not_tested",
+  "deliverables": [
+    {
+      "path": "README.md",
+      "sha256": "c94b952db62d09f7d462d7658394c28a8d0fe1a845b47a3131f62489cb41060b"
+    },
+    {
+      "path": "asset_matrix.md",
+      "sha256": "408fd19a096f543797aed0aea1bc8f79a02b5f88dcb8ed9230d2c1af1b52cd3a"
+    },
+    {
+      "path": "asset_plan.json",
+      "sha256": "2351e0565a549c00aa1f65f954c7b3794b62f1526aa76f1935116290d19e626e"
+    },
+    {
+      "path": "audio_events.json",
+      "sha256": "47f0d0588bd191e007fa347f6f9f52042c79e40fa6bac9e999a8c554f85d0b70"
+    },
+    {
+      "path": "audit_plan.py",
+      "sha256": "6438e9ad061d252078af38c76fd3f231d558c60a045182e85744eafc4806b2f7"
+    },
+    {
+      "path": "build_plan.py",
+      "sha256": "390222c928d8cd6fe8600fd019c2c159f8284437225f183318c73a3a7e26a242"
+    },
+    {
+      "path": "completion.json",
+      "sha256": "4d657bb0e54a84305595d8c9f870ac2849255ec79448ad415ecf2a41d5f05aba"
+    },
+    {
+      "path": "decisions.json",
+      "sha256": "e53fea8f8f245cfb87cfc15cdab3c8e8f2880a3b7a7dc4034f0b812532cf79fc"
+    },
+    {
+      "path": "gallery.html",
+      "sha256": "1971efd039cb6cd3d4cad538cbc4e16fb6847f629aa75a94d5216baa29c1c65e"
+    },
+    {
+      "path": "integration.md",
+      "sha256": "10675435a30026b88c38f86544d1cc3aad060c3d848ad50aef98314cb658e85f"
+    },
+    {
+      "path": "layout.json",
+      "sha256": "4c7d387a814db453e4b563d3a2f3054d994cbf12a7124626c7f9e9b3274d7c02"
+    },
+    {
+      "path": "layout.md",
+      "sha256": "dc92c38b6efaa5fd52179ffe01054f80af8a0d8795a42e52fe67377500703aa0"
+    },
+    {
+      "path": "previews/action_envelopes.png",
+      "sha256": "572b3f7ef85a43588a56c9f8abdb87016ef5b6b2b462e23454fc7309310702de"
+    },
+    {
+      "path": "previews/existing_inventory.png",
+      "sha256": "a4da85b138804ff5e20a79ee5e4263e4a29077e576945a1cc4ef7b527efd4adb"
+    },
+    {
+      "path": "previews/layout.png",
+      "sha256": "8d86f77ac819ee0d9d0cccbfda37dce9def2f954df490331eb7ee4b25a11c6ad"
+    },
+    {
+      "path": "previews/layout.svg",
+      "sha256": "4e6afcb93650a2caae5f676addaab0337007a8df57991f48ef8360bbe7020eb1"
+    },
+    {
+      "path": "previews/snake_connections.png",
+      "sha256": "6069f61e202b42ea7d88d647fd026481441c1bfe6cb724af40a3496803e7cef4"
+    },
+    {
+      "path": "previews/snake_connections_2x.png",
+      "sha256": "a8d2b6bf747f529e057cc9edceb5a91758d021c702b05c17e8a5a00dd69ea04f"
+    },
+    {
+      "path": "previews/style_scale_1x.png",
+      "sha256": "394a57d235badd201dec8f1eaa6c1725237f8024c974e23e978ace41a20626ac"
+    },
+    {
+      "path": "previews/style_scale_2x.png",
+      "sha256": "7704a9bc53c07a35c5a2f163cab7e9431daf2ddb9e15477576f65429fb3ba831"
+    },
+    {
+      "path": "previews/style_scale_4x.png",
+      "sha256": "088138d6f184bd578faa0bf152c0cbf12cf053baeec754d2c5a9ef8b8c262859"
+    },
+    {
+      "path": "previews/terrain_4x4.png",
+      "sha256": "dfccb997cd0e40cc8ed4e4fcd43d4ac807166b62a87b6e3b162e96b7b93e4a11"
+    },
+    {
+      "path": "records/Pillow_LICENSE.txt",
+      "sha256": "30178bf7aff9f8dc82afed35086cd378a9064e77fcb4380485f38b5da3377052"
+    },
+    {
+      "path": "records/code_interfaces.json",
+      "sha256": "9e9d9553ed725b7c88a09bc11c77a343435413af775d4d81f5f401055a808aa9"
+    },
+    {
+      "path": "records/existing_image_audit.json",
+      "sha256": "007399376be0d93155d6e974318a4643e72ba2c4f3792d2f0c1f701ce715a9f6"
+    },
+    {
+      "path": "records/initial_reference_audit_flag.json",
+      "sha256": "4d6ce8d80efb116359f2cc3d5e8971429c67455776289db6d810d9e83b03265b"
+    },
+    {
+      "path": "records/input_snapshot.json",
+      "sha256": "5cc9a66bf1b16c12b517bc205d046250205ff4e6b2130b6c3a23a77cc8ea9a4c"
+    },
+    {
+      "path": "records/layout_geometry_check.json",
+      "sha256": "299acaa6ec344a0e77ca60f004d677dc29d201f9bb20c027253bdfca2af07d01"
+    },
+    {
+      "path": "records/licenses_before.sha256",
+      "sha256": "84bc7748161467520e41c8276a35d0cbc59470d4f9b3077fe4263f2cebc125e2"
+    },
+    {
+      "path": "records/planning_revision_log.json",
+      "sha256": "c34bae2b0ed4d1b6f93e9cf5bfbb4b47d9f399a7a36e8d022279b3cc21652050"
+    },
+    {
+      "path": "records/provenance_matches.json",
+      "sha256": "cd46b5cbb580226f781b3c8950f1c35a6f915c87b6ea6d945a68c7b9e9599ce8"
+    },
+    {
+      "path": "records/reference_inputs.json",
+      "sha256": "bd94e5d4c48fdf8d7beae5513ae8b26a39522d146c8f23653219a6f2a7428da0"
+    },
+    {
+      "path": "records/reuse_provenance.json",
+      "sha256": "006d53c3ee93afb7c8282126d5bcdfb6d87b3d8aa7b420a62015eabc18e37d77"
+    },
+    {
+      "path": "records/scope_and_sources.json",
+      "sha256": "013d528dd984246cbf731e2f048cab43c5133967f6c93ff6814e11ca9af41be8"
+    },
+    {
+      "path": "records/self_check.json",
+      "sha256": "a0ef270e00f7007d64d478ed2268449f0fded0f8ec2cf300394dd337e492effd"
+    },
+    {
+      "path": "records/snake_ports.json",
+      "sha256": "2eea8a25835f2c43b2dc9f92a257528af33666ae58f773961cc8e181276ff033"
+    },
+    {
+      "path": "records/visual_review.json",
+      "sha256": "6d955abd4cb58c47a6c2def34c71438a3f8d0040bfbef5aade54baaa37605358"
+    },
+    {
+      "path": "story_and_ending.md",
+      "sha256": "f0aaedbb091ab300eeb3bc4d1dc39c8aaf5acc0a1b0ace980c41e211cb5716c8"
+    }
+  ]
+}

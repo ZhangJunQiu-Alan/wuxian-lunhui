@@ -1,0 +1,100 @@
+{
+  "task": "K7",
+  "format_version": 1,
+  "status": "handoff_data_not_loaded_by_current_game",
+  "locale": "zh_CN",
+  "source": "docs/世界观设定.md / 第3关·最后之战·结局",
+  "source_sha256": "616c33c7c2b2194841a0cc79de4dd95a9a186a8e7b99ba4be0889733fa798ee1",
+  "entry": {
+    "level_id": "vigrid",
+    "required_boss_ids": [
+      "jormungandr",
+      "fenrir",
+      "surtr"
+    ],
+    "outcome": "victory",
+    "require_actual_deaths": true,
+    "not_triggered_by": [
+      "10min timeout",
+      "surtr HP25 transition",
+      "death",
+      "abandon"
+    ]
+  },
+  "presentation": {
+    "reuse": "existing Hud result typography and overlay",
+    "new_illustrations": 0,
+    "new_character_sprites": 0,
+    "manual_advance": true,
+    "auto_advance": false,
+    "skip_entire_sequence": true,
+    "fade_seconds": 0.25,
+    "process_when_tree_paused": true,
+    "skip_changes_fate": false,
+    "music_id": "victory",
+    "music_start": "once after confirmed victory",
+    "sfx_id": "quest_done",
+    "sfx_start": "once on chapter completion, not each beat"
+  },
+  "beats": [
+    {
+      "id": "ashes",
+      "index": 0,
+      "text": "火焰熄灭了。九界化为灰烬，大海吞没了大地。",
+      "skippable": true,
+      "advance": "next_or_skip",
+      "background": "existing result overlay; no new illustration"
+    },
+    {
+      "id": "new_earth",
+      "index": 1,
+      "text": "许久之后，新的大地从海中升起，比以往更加翠绿。",
+      "skippable": true,
+      "advance": "next_or_skip",
+      "background": "existing result overlay; no new illustration"
+    },
+    {
+      "id": "baldr_return",
+      "index": 2,
+      "text": "巴德尔从冥界归来。",
+      "skippable": true,
+      "advance": "next_or_skip",
+      "background": "existing result overlay; no new illustration"
+    },
+    {
+      "id": "survivors",
+      "index": 3,
+      "text": "世界树的树干里，躲过末日的两个人类——利弗与利弗特拉西尔——走了出来。",
+      "skippable": true,
+      "advance": "next_or_skip",
+      "background": "existing result overlay; no new illustration"
+    },
+    {
+      "id": "chapter_complete",
+      "index": 4,
+      "text": "篇章「诸神黄昏」完成。\n评价：根据存活时间、击杀数、改写的命运数结算奖励。\n正在返回主神空间……",
+      "skippable": true,
+      "advance": "next_or_skip",
+      "background": "existing result overlay; no new illustration"
+    }
+  ],
+  "settlement": {
+    "snapshot_fields": [
+      "elapsed",
+      "kills",
+      "thor_saved",
+      "vidar_intervened",
+      "freyr_assisted",
+      "ever_faith_loki"
+    ],
+    "fate_count": "sum of three confirmed unique boolean fate flags; range0..3",
+    "reward_formula": "not_defined_here; preserve existing calculation until gameplay authority specifies fate bonus",
+    "loki_hint": {
+      "condition": "ever_faith_loki in current run",
+      "text": "谢谢你，轮回者。锁链断了，我也该去看看别的世界了。",
+      "location": "result screen, not extra ending beat"
+    },
+    "return": "existing explicit return button; no automatic scene change while reading",
+    "commit_result": "once; skip/advance/return never repeat awards or Save.record_run"
+  }
+}
