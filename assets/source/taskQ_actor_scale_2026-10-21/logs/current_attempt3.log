@@ -1,0 +1,102 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+SCRIPT ERROR: Invalid access to property or key 'skoll' on a base object of type 'Dictionary'.
+          at: old_enemy_sprite (res://tools/test_actor_scale.gd:63)
+          GDScript backtrace (most recent call first):
+              [0] old_enemy_sprite (res://tools/test_actor_scale.gd:63)
+              [1] run (res://tools/test_actor_scale.gd:134)
+ERROR: Boss art exists skoll
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tools/test_actor_scale.gd:20)
+       [1] run (res://tools/test_actor_scale.gd:135)
+SCRIPT ERROR: Invalid access to property or key 'hati' on a base object of type 'Dictionary'.
+          at: old_enemy_sprite (res://tools/test_actor_scale.gd:63)
+          GDScript backtrace (most recent call first):
+              [0] old_enemy_sprite (res://tools/test_actor_scale.gd:63)
+              [1] run (res://tools/test_actor_scale.gd:134)
+ERROR: Boss art exists hati
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tools/test_actor_scale.gd:20)
+       [1] run (res://tools/test_actor_scale.gd:135)
+SCRIPT ERROR: Invalid access to property or key 'hrym' on a base object of type 'Dictionary'.
+          at: old_enemy_sprite (res://tools/test_actor_scale.gd:63)
+          GDScript backtrace (most recent call first):
+              [0] old_enemy_sprite (res://tools/test_actor_scale.gd:63)
+              [1] run (res://tools/test_actor_scale.gd:134)
+ERROR: Boss art exists hrym
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tools/test_actor_scale.gd:20)
+       [1] run (res://tools/test_actor_scale.gd:135)
+SCRIPT ERROR: Invalid access to property or key 'garm' on a base object of type 'Dictionary'.
+          at: old_enemy_sprite (res://tools/test_actor_scale.gd:63)
+          GDScript backtrace (most recent call first):
+              [0] old_enemy_sprite (res://tools/test_actor_scale.gd:63)
+              [1] run (res://tools/test_actor_scale.gd:134)
+ERROR: Boss art exists garm
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tools/test_actor_scale.gd:20)
+       [1] run (res://tools/test_actor_scale.gd:135)
+SCRIPT ERROR: Invalid access to property or key 'nidhogg' on a base object of type 'Dictionary'.
+          at: old_enemy_sprite (res://tools/test_actor_scale.gd:63)
+          GDScript backtrace (most recent call first):
+              [0] old_enemy_sprite (res://tools/test_actor_scale.gd:63)
+              [1] run (res://tools/test_actor_scale.gd:134)
+ERROR: Boss art exists nidhogg
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tools/test_actor_scale.gd:20)
+       [1] run (res://tools/test_actor_scale.gd:135)
+SCRIPT ERROR: Invalid access to property or key 'hel' on a base object of type 'Dictionary'.
+          at: old_enemy_sprite (res://tools/test_actor_scale.gd:63)
+          GDScript backtrace (most recent call first):
+              [0] old_enemy_sprite (res://tools/test_actor_scale.gd:63)
+              [1] run (res://tools/test_actor_scale.gd:134)
+ERROR: Boss art exists hel
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tools/test_actor_scale.gd:20)
+       [1] run (res://tools/test_actor_scale.gd:135)
+SCRIPT ERROR: Invalid access to property or key 'jormungandr' on a base object of type 'Dictionary'.
+          at: old_enemy_sprite (res://tools/test_actor_scale.gd:63)
+          GDScript backtrace (most recent call first):
+              [0] old_enemy_sprite (res://tools/test_actor_scale.gd:63)
+              [1] run (res://tools/test_actor_scale.gd:134)
+ERROR: Boss art exists jormungandr
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tools/test_actor_scale.gd:20)
+       [1] run (res://tools/test_actor_scale.gd:135)
+SCRIPT ERROR: Invalid access to property or key 'fenrir' on a base object of type 'Dictionary'.
+          at: old_enemy_sprite (res://tools/test_actor_scale.gd:63)
+          GDScript backtrace (most recent call first):
+              [0] old_enemy_sprite (res://tools/test_actor_scale.gd:63)
+              [1] run (res://tools/test_actor_scale.gd:134)
+ERROR: Boss art exists fenrir
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tools/test_actor_scale.gd:20)
+       [1] run (res://tools/test_actor_scale.gd:135)
+SCRIPT ERROR: Invalid access to property or key 'surtr' on a base object of type 'Dictionary'.
+          at: old_enemy_sprite (res://tools/test_actor_scale.gd:63)
+          GDScript backtrace (most recent call first):
+              [0] old_enemy_sprite (res://tools/test_actor_scale.gd:63)
+              [1] run (res://tools/test_actor_scale.gd:134)
+ERROR: Boss art exists surtr
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tools/test_actor_scale.gd:20)
+       [1] run (res://tools/test_actor_scale.gd:135)
+RESULT ACTOR SCALE: 399 checks, 9 failures
+WARNING: 1 RID of type "Canvas" was leaked.
+   at: _free_rids (servers/rendering/renderer_canvas_cull.cpp:2733)
+WARNING: 14 RIDs of type "CanvasItem" were leaked.
+   at: _free_rids (servers/rendering/renderer_canvas_cull.cpp:2735)
+WARNING: 296 ObjectDB instances were leaked at exit (run with `--verbose` for details).
+   at: cleanup (core/object/object.cpp:2536)
+ERROR: 50 resources still in use at exit (run with --verbose for details).
+   at: clear (core/io/resource.cpp:822)
+ERROR: 48 RID allocations of type 'PN13RendererDummy14TextureStorage12DummyTextureE' were leaked at exit.

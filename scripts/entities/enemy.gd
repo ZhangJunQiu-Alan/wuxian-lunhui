@@ -354,6 +354,10 @@ func _ready() -> void:
 				_sprite.set_meta(key, _sprite.get_meta(key) * EnemyDB.ELITE_VISUAL)
 			_sprite.scale *= EnemyDB.ELITE_VISUAL
 			_sprite.position *= EnemyDB.ELITE_VISUAL
+		if not self is Boss and behavior != "still":
+			_sprite.scale *= SpriteVisual.ACTOR_SCALE
+			_sprite.set_meta("base_scale", _sprite.scale)
+			_sprite.texture_filter = CanvasItem.TEXTURE_FILTER_NEAREST
 		add_child(_sprite)
 
 

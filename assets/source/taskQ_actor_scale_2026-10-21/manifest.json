@@ -1,0 +1,154 @@
+{
+  "task": "Q actor display scale",
+  "date": "2026-10-21",
+  "factor": 1.1,
+  "new_game_textures": [],
+  "art_source": "existing project assets; unchanged",
+  "excluded": [
+    "Boss",
+    "behavior=still"
+  ],
+  "qa": "controlled runtime; no full game acceptance",
+  "files": {
+    ".gdignore": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "README.md": {
+      "bytes": 1779,
+      "sha256": "af293797371e2fb0e7e74b42d185dd2b43093412ccd8c6e3a3e449db4f33c86e"
+    },
+    "RESULTS.md": {
+      "bytes": 2171,
+      "sha256": "c06ecb17d9709351387064aca1baf25678cbcb9adbc264df16ecea32cd536690"
+    },
+    "before/scripts/entities/enemy.gd": {
+      "bytes": 27333,
+      "sha256": "aeef777bfa99d2ee8c01fec4097eef240522a0525cfc962fe6d2a798475f4f98"
+    },
+    "before/scripts/entities/player.gd": {
+      "bytes": 19856,
+      "sha256": "286da74b095c286e16324d316a40046827a6f4ac1a3804efc781644131c73833"
+    },
+    "before/scripts/entities/sprite_visual.gd": {
+      "bytes": 9024,
+      "sha256": "a9903b733a21a013c372f6b29c35bc1b29602f44509552c9a4dcc539a72cded8"
+    },
+    "gallery.html": {
+      "bytes": 941,
+      "sha256": "400c7ede2f85aed0211d33caa7877b7ba456a3fb753a26fdbb442a496f5d5535"
+    },
+    "integration.md": {
+      "bytes": 2095,
+      "sha256": "37eae08c58776292263dfbfef09fb524d27965b09f2b2b6d4d0c171b34ce1168"
+    },
+    "logs/combat.log": {
+      "bytes": 584,
+      "sha256": "3f96f1c99451fc37d14b08098bc3b2770885de0c83f2415d775b1f39a9955bc0"
+    },
+    "logs/current.log": {
+      "bytes": 9667,
+      "sha256": "3dcdf4e9d4ccc1f3f3385d987065e50760493c24ff731edfc800bccd08f2d426"
+    },
+    "logs/current_attempt1.log": {
+      "bytes": 9667,
+      "sha256": "3dcdf4e9d4ccc1f3f3385d987065e50760493c24ff731edfc800bccd08f2d426"
+    },
+    "logs/current_attempt3.log": {
+      "bytes": 6037,
+      "sha256": "25f5456801194655072c16db1a2070d2ae828d4d252f56b6185eec32496cb5ee"
+    },
+    "logs/current_final.log": {
+      "bytes": 116,
+      "sha256": "70ff9dc0dccc7f3ea10e21a8a4cf2dd91c4568adffd9145c2fed7aa0b186042b"
+    },
+    "logs/current_verbose.log.gz": {
+      "bytes": 16381,
+      "sha256": "0f0ff4182d29f8bf17e1d8593ec8d3a6073d56e0085042e26bc79811fbff712f"
+    },
+    "logs/import.log": {
+      "bytes": 65064,
+      "sha256": "c0f68711d732f514a76721976b59d3c9b96c5d406fce4725dc3ff835d0314de7"
+    },
+    "logs/import_publish.log": {
+      "bytes": 63895,
+      "sha256": "9a7662a2cb7b21da5b82ded5be61fed9d634970c08e8fa55632d4f90c2cc32f2"
+    },
+    "logs/publish_actor.log": {
+      "bytes": 116,
+      "sha256": "80821a69685d25e9aa0c2a7d305b7c05325b1767e9d726abccc9c3524f75611c"
+    },
+    "logs/publish_combat.log": {
+      "bytes": 584,
+      "sha256": "b36506d8f907238e8e5efa0607346f1241e449b35221a749d34ce557bfb4d7cd"
+    },
+    "logs/test_parse_attempt2.log": {
+      "bytes": 387,
+      "sha256": "4f5e181e011cc73b375ed47b84656ce8beeaf6ed8ad6fa6a161fc89eb2caa424"
+    },
+    "logs/vigrid.log": {
+      "bytes": 531,
+      "sha256": "d26393f046355140cbb6e27b93b841159a0193dbd9dc6f0a9414c6caf1ca14ef"
+    },
+    "logs/visual.log": {
+      "bytes": 289,
+      "sha256": "2ea5769bc701766db7a42ac19a65f807734cbc268f76e1fa3fac3597d07293fd"
+    },
+    "previews/actors_after.png": {
+      "bytes": 669411,
+      "sha256": "c59414dddc3db32a2e2f1e24fbbb99b90df0ab530f36f6b27750b59e3320b52d"
+    },
+    "previews/actors_before.png": {
+      "bytes": 670255,
+      "sha256": "415d925d0d2fd5fbf55916d60f360483940b7fb3cbd875e6488440476da15ae6"
+    },
+    "previews/captures.json": {
+      "bytes": 952,
+      "sha256": "af81f345012a10a69d0a81b359d40041448e8e7edfd071d9bac27912636f79bf"
+    },
+    "previews/comparison_4actors.png": {
+      "bytes": 118945,
+      "sha256": "9313c0aa7d3f6b10e467969b7fbbec60a7448f4b5ed6b753d28d982a562d6232"
+    },
+    "previews/scale_toggle.gif": {
+      "bytes": 1092755,
+      "sha256": "0e9f95992915151a3f54d18a9a038a7349128ea4f46a42eaffe0afcda219d840"
+    },
+    "records/baseline.json": {
+      "bytes": 1308,
+      "sha256": "d76eb9419c66c6f3450ecf9494b16951977ce6bb40534fc47e15d3e64e09ece8"
+    },
+    "records/publish_runtime_inputs.json": {
+      "bytes": 12034,
+      "sha256": "838f88f2517234e03fde22ccc5cc40270e036686e17c357cf9834b5f703b5d30"
+    },
+    "records/runtime_inputs.json": {
+      "bytes": 15317,
+      "sha256": "448b080c8827745cadda41027ec2b35b39212ecc0b056220f92f39e72ac92716"
+    },
+    "records/staged_change.patch.gz": {
+      "bytes": 774,
+      "sha256": "0412e58851a50e805d78ab9204dd44bbf9e5e31ea08c39e7f6742e25c9c3c6d0"
+    },
+    "records/worktree_change.patch.gz": {
+      "bytes": 678,
+      "sha256": "b861145d96f70914f2e2d8d32bc3ece5b70db1c91206b8794c07d6c3e00ae3c7"
+    },
+    "results/current.json": {
+      "bytes": 7954,
+      "sha256": "bb1c87079ea94926006bee46cc0c1039b785d9264811685c808fa750739a74c0"
+    },
+    "results/current_attempt1.json": {
+      "bytes": 9293,
+      "sha256": "346637bf1fc36fe4a838cb38b5f0d308d275ee88502077952e5f04382a77d3ed"
+    },
+    "results/current_verbose.json": {
+      "bytes": 7954,
+      "sha256": "bb1c87079ea94926006bee46cc0c1039b785d9264811685c808fa750739a74c0"
+    },
+    "results/publish.json": {
+      "bytes": 6626,
+      "sha256": "1aacab99399cfca7b4582694260e2d7748cb1d60219397243457e7d84c826de9"
+    }
+  }
+}

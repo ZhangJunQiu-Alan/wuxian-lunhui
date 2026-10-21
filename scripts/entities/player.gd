@@ -124,6 +124,9 @@ func _ready() -> void:
 	_actions = SpriteVisual.create_actions(CharacterDB.CUTIN_DIR + character_id, SPRITE_HEIGHT, ACTIONS)
 	_sprite = _actions if _actions else SpriteVisual.create(CharacterDB.CUTIN_DIR + character_id, SPRITE_HEIGHT)
 	if _sprite:
+		_sprite.scale *= SpriteVisual.ACTOR_SCALE
+		_sprite.set_meta("base_scale", _sprite.scale)
+		_sprite.texture_filter = CanvasItem.TEXTURE_FILTER_NEAREST
 		add_child(_sprite)
 
 	match character_id:  # 角色的基础武器

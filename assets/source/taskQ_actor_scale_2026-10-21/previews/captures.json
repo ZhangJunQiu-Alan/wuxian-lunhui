@@ -1,0 +1,79 @@
+{
+	"actors": [
+		{
+			"name": "swordsman",
+			"position": [
+				-300.0,
+				-90.0
+			]
+		},
+		{
+			"name": "gunslinger",
+			"position": [
+				-100.0,
+				-90.0
+			]
+		},
+		{
+			"name": "assassin",
+			"position": [
+				100.0,
+				-90.0
+			]
+		},
+		{
+			"name": "mage",
+			"position": [
+				300.0,
+				-90.0
+			]
+		},
+		{
+			"name": "draugr",
+			"position": [
+				-350.0,
+				120.0
+			]
+		},
+		{
+			"name": "wolf",
+			"position": [
+				-210.0,
+				120.0
+			]
+		},
+		{
+			"name": "ice_spirit",
+			"position": [
+				-70.0,
+				120.0
+			]
+		},
+		{
+			"name": "frost_giant",
+			"position": [
+				70.0,
+				120.0
+			]
+		},
+		{
+			"name": "draugr_elite",
+			"position": [
+				210.0,
+				120.0
+			]
+		},
+		{
+			"name": "wolf_elite",
+			"position": [
+				350.0,
+				120.0
+			]
+		}
+	],
+	"method": "same Game scene; before removes only the requested1.1 display multiplier; after restores it; same atlas frames and foot positions",
+	"viewport": [
+		1280,
+		720
+	]
+}

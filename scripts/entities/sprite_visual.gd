@@ -14,6 +14,7 @@ class_name SpriteVisual
 
 const EXTENSIONS := [".tres", "_move.png", ".png", ".webp"]
 const STRIP_FPS := 8.0  # 帧条的播放速度（帧/秒）
+const ACTOR_SCALE := 1.1
 const ACTION_FPS := {"attack": 16.0}  # 个别动作播放得更快（出刀要利落）
 
 
