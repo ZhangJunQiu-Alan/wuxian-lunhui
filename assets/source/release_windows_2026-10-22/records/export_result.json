@@ -1,0 +1,40 @@
+{
+  "game": "诸界余烬",
+  "source_commit": "6a2795e0697a4790f0cc99d6d082627b5c0bd6df",
+  "engine": "Godot 4.7.2.stable.official.ed1daf0bf",
+  "target": "Windows x86_64 release",
+  "PE_machine_hex": "0x8664",
+  "files": {
+    "ZhujieYujin.exe": {
+      "bytes": 109268480,
+      "sha256": "d34d36f3be1a6c49c56525ae86469b92e4f417ddf0b43cf00dd80c385c4b0562"
+    },
+    "ZhujieYujin.pck": {
+      "bytes": 208600816,
+      "sha256": "c57096884ba1004f67d671ab0f691edcd7d669f038a489d96ca2942f0ab79c66"
+    }
+  },
+  "regressions": 8836,
+  "pack_smoke": {
+    "checks": 1821,
+    "failures": [],
+    "pack_file_entries": 1784,
+    "scope": "Windows-target PCK tested with macOS Godot 4.7.2; not Windows executable execution"
+  },
+  "Windows_executable_runtime_tested": false,
+  "signing": "unsigned",
+  "native_macOS_pack_check": {
+    "checks": 1821,
+    "failures": [],
+    "pack_file_entries": 1784,
+    "scope": "Windows-target PCK tested with macOS Godot 4.7.2; not Windows executable execution"
+  },
+  "zip": {
+    "path": "build/windows_2026-10-22/诸界余烬_Windows_x86_64_2026-10-22.zip",
+    "bytes": 245117839,
+    "sha256": "e481d2d7381c47cb8615a01191231738342e229363261be129880f412f72b011",
+    "members": 12,
+    "crc_all_members_valid": true,
+    "runtime_member_hashes_match": true
+  }
+}
