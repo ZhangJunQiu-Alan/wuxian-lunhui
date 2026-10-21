@@ -1,0 +1,64 @@
+{
+  "date": "2026-10-22",
+  "confirmed_game_name": "诸界余烬",
+  "english_display_name": "EMBERS OF THE REALMS",
+  "generation_mode": "built_in_image_gen",
+  "prompt_file": "renamed_prompts.md",
+  "prior_attempts": [
+    {
+      "change": "remove chapter only",
+      "variants": [
+        "B",
+        "C"
+      ],
+      "status": "failed_connection_no_image"
+    }
+  ],
+  "candidates": [
+    {
+      "id": "B",
+      "direction": "神殿终焉",
+      "file": "B_embers_temple.png",
+      "source_reference": "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/title_concepts_2026-10-21/B_ruined_temple.png",
+      "original_generation_path": "/Users/zhangjunqiu/.codex/generated_images/01a15f2d-8cad-7cb2-8ce0-6883df86d8b6/exec-52fcba5f-ded9-4ee6-9715-700203667efd.png",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "sha256": "b7f7b035d57f4e7abfa3c202116039b4c3948dc164264cb3d60614879e5f55ec",
+      "visual_review": "confirmed new Chinese/English name, no chapter line, five menu entries present",
+      "status": "selected_as_integration_reference"
+    },
+    {
+      "id": "C",
+      "direction": "猩红轮回",
+      "file": "C_embers_gate.png",
+      "source_reference": "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/title_concepts_2026-10-21/C_crimson_gate.png",
+      "original_generation_path": "/Users/zhangjunqiu/.codex/generated_images/01a15f2d-8cad-7cb2-8ce0-6883df86d8b6/exec-f46ba6a3-db97-4212-ae89-b8657bdd2f8c.png",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "sha256": "b5ffe6d36ecd0d3cc8b87a71ff28f6ec0cff705ed2ef51f5562fc6a30ac79d36",
+      "visual_review": "confirmed new Chinese/English name, no chapter line, five menu entries present",
+      "status": "not_selected_this_round"
+    }
+  ],
+  "runtime_changes": [
+    "project.godot",
+    "scripts/ui/title.gd",
+    "scripts/ui/credits.gd",
+    "locale/text.csv"
+  ],
+  "new_art_integrated": true,
+  "verification": {
+    "godot_import_exit": 0,
+    "script_and_name_probe": "passed",
+    "old_macos_user_data_directory_preserved": true,
+    "translation_checker": "854 entries, 0 missing, 0 unused",
+    "git_diff_check": "passed",
+    "manual_visual_runtime_qa": "not_run"
+  },
+  "selected_concept": "B",
+  "integration_manifest": "assets/source/title_temple_2026-10-22/manifest.json"
+}

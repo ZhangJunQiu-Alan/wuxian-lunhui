@@ -1,0 +1,1021 @@
+{
+	"after_exit": {
+		"enemies_left": 0,
+		"hazards_left": 0,
+		"nodes": 30.0,
+		"orphans": 0.0
+	},
+	"bosses": {
+		"fenrir": {
+			"frame_ms_max": 147.19,
+			"frame_ms_p50": 27.8,
+			"frame_ms_p95": 45.91,
+			"frame_ms_p99": 56.78,
+			"frames": 982,
+			"max_enemies": 350,
+			"samples": [
+				{
+					"boss_state": "chase",
+					"enemies": 350,
+					"fps": 29.0,
+					"hazards": 0,
+					"nodes": 1303.0,
+					"static_mb": 85.0,
+					"t": 0.0
+				},
+				{
+					"boss_state": "chase",
+					"enemies": 350,
+					"fps": 25.0,
+					"hazards": 0,
+					"nodes": 1303.0,
+					"static_mb": 86.2,
+					"t": 1.0
+				},
+				{
+					"boss_state": "chase",
+					"enemies": 350,
+					"fps": 100.0,
+					"hazards": 0,
+					"nodes": 1303.0,
+					"static_mb": 86.2,
+					"t": 2.0
+				},
+				{
+					"boss_state": "bite",
+					"enemies": 350,
+					"fps": 91.0,
+					"hazards": 0,
+					"nodes": 1303.0,
+					"static_mb": 86.2,
+					"t": 3.0
+				},
+				{
+					"boss_state": "recover",
+					"enemies": 350,
+					"fps": 79.0,
+					"hazards": 0,
+					"nodes": 1303.0,
+					"static_mb": 86.2,
+					"t": 4.0
+				},
+				{
+					"boss_state": "chase",
+					"enemies": 350,
+					"fps": 67.0,
+					"hazards": 0,
+					"nodes": 1303.0,
+					"static_mb": 86.4,
+					"t": 5.0
+				},
+				{
+					"boss_state": "chase",
+					"enemies": 350,
+					"fps": 51.0,
+					"hazards": 0,
+					"nodes": 1304.0,
+					"static_mb": 86.4,
+					"t": 6.0
+				},
+				{
+					"boss_state": "maw_windup",
+					"enemies": 350,
+					"fps": 45.0,
+					"hazards": 0,
+					"nodes": 1306.0,
+					"static_mb": 86.4,
+					"t": 7.0
+				},
+				{
+					"boss_state": "maw",
+					"enemies": 350,
+					"fps": 41.0,
+					"hazards": 0,
+					"nodes": 1305.0,
+					"static_mb": 86.4,
+					"t": 8.0
+				},
+				{
+					"boss_state": "maw",
+					"enemies": 350,
+					"fps": 37.0,
+					"hazards": 0,
+					"nodes": 1309.0,
+					"static_mb": 86.6,
+					"t": 9.0
+				},
+				{
+					"boss_state": "maw",
+					"enemies": 350,
+					"fps": 27.0,
+					"hazards": 0,
+					"nodes": 1309.0,
+					"static_mb": 86.5,
+					"t": 10.0
+				},
+				{
+					"boss_state": "recover",
+					"enemies": 350,
+					"fps": 29.0,
+					"hazards": 0,
+					"nodes": 1315.0,
+					"static_mb": 86.5,
+					"t": 11.0
+				},
+				{
+					"boss_state": "chase",
+					"enemies": 350,
+					"fps": 33.0,
+					"hazards": 0,
+					"nodes": 1347.0,
+					"static_mb": 86.7,
+					"t": 12.0
+				},
+				{
+					"boss_state": "chase",
+					"enemies": 350,
+					"fps": 28.0,
+					"hazards": 0,
+					"nodes": 1325.0,
+					"static_mb": 86.7,
+					"t": 13.0
+				},
+				{
+					"boss_state": "bite_windup",
+					"enemies": 350,
+					"fps": 36.0,
+					"hazards": 1,
+					"nodes": 1329.0,
+					"static_mb": 86.9,
+					"t": 14.0
+				},
+				{
+					"boss_state": "bite",
+					"enemies": 350,
+					"fps": 36.0,
+					"hazards": 4,
+					"nodes": 1320.0,
+					"static_mb": 87.0,
+					"t": 15.0
+				},
+				{
+					"boss_state": "chase",
+					"enemies": 350,
+					"fps": 31.0,
+					"hazards": 8,
+					"nodes": 1329.0,
+					"static_mb": 87.0,
+					"t": 16.0
+				},
+				{
+					"boss_state": "chase",
+					"enemies": 350,
+					"fps": 33.0,
+					"hazards": 9,
+					"nodes": 1330.0,
+					"static_mb": 87.0,
+					"t": 17.0
+				},
+				{
+					"boss_state": "chase",
+					"enemies": 350,
+					"fps": 30.0,
+					"hazards": 9,
+					"nodes": 1329.0,
+					"static_mb": 87.0,
+					"t": 18.0
+				},
+				{
+					"boss_state": "run",
+					"enemies": 350,
+					"fps": 29.0,
+					"hazards": 9,
+					"nodes": 1329.0,
+					"static_mb": 87.0,
+					"t": 19.0
+				},
+				{
+					"boss_state": "run",
+					"enemies": 350,
+					"fps": 23.0,
+					"hazards": 5,
+					"nodes": 1321.0,
+					"static_mb": 86.9,
+					"t": 20.0
+				},
+				{
+					"boss_state": "run",
+					"enemies": 350,
+					"fps": 25.0,
+					"hazards": 5,
+					"nodes": 1324.0,
+					"static_mb": 87.0,
+					"t": 21.0
+				},
+				{
+					"boss_state": "chase",
+					"enemies": 350,
+					"fps": 29.0,
+					"hazards": 5,
+					"nodes": 1322.0,
+					"static_mb": 86.9,
+					"t": 22.0
+				},
+				{
+					"boss_state": "chase",
+					"enemies": 350,
+					"fps": 26.0,
+					"hazards": 6,
+					"nodes": 1327.0,
+					"static_mb": 87.0,
+					"t": 23.0
+				},
+				{
+					"boss_state": "chase",
+					"enemies": 350,
+					"fps": 26.0,
+					"hazards": 5,
+					"nodes": 1327.0,
+					"static_mb": 87.1,
+					"t": 24.0
+				},
+				{
+					"boss_state": "bite",
+					"enemies": 350,
+					"fps": 28.0,
+					"hazards": 3,
+					"nodes": 1321.0,
+					"static_mb": 87.1,
+					"t": 25.0
+				}
+			]
+		},
+		"jormungandr": {
+			"frame_ms_max": 146.94,
+			"frame_ms_p50": 30.07,
+			"frame_ms_p95": 37.0,
+			"frame_ms_p99": 59.33,
+			"frames": 965,
+			"max_enemies": 350,
+			"samples": [
+				{
+					"boss_state": "coil",
+					"enemies": 350,
+					"fps": 23.0,
+					"hazards": 0,
+					"nodes": 1301.0,
+					"static_mb": 83.8,
+					"t": 0.0
+				},
+				{
+					"boss_state": "coil",
+					"enemies": 350,
+					"fps": 49.0,
+					"hazards": 0,
+					"nodes": 1301.0,
+					"static_mb": 85.1,
+					"t": 1.0
+				},
+				{
+					"boss_state": "coil",
+					"enemies": 350,
+					"fps": 88.0,
+					"hazards": 0,
+					"nodes": 1301.0,
+					"static_mb": 85.1,
+					"t": 2.0
+				},
+				{
+					"boss_state": "coil",
+					"enemies": 350,
+					"fps": 80.0,
+					"hazards": 0,
+					"nodes": 1301.0,
+					"static_mb": 85.1,
+					"t": 3.0
+				},
+				{
+					"boss_state": "coil",
+					"enemies": 350,
+					"fps": 64.0,
+					"hazards": 0,
+					"nodes": 1301.0,
+					"static_mb": 85.1,
+					"t": 4.0
+				},
+				{
+					"boss_state": "breath_windup",
+					"enemies": 350,
+					"fps": 54.0,
+					"hazards": 0,
+					"nodes": 1307.0,
+					"static_mb": 85.2,
+					"t": 5.0
+				},
+				{
+					"boss_state": "breath",
+					"enemies": 350,
+					"fps": 48.0,
+					"hazards": 0,
+					"nodes": 1307.0,
+					"static_mb": 85.2,
+					"t": 6.0
+				},
+				{
+					"boss_state": "coil",
+					"enemies": 350,
+					"fps": 41.0,
+					"hazards": 0,
+					"nodes": 1309.0,
+					"static_mb": 85.4,
+					"t": 7.0
+				},
+				{
+					"boss_state": "coil",
+					"enemies": 350,
+					"fps": 33.0,
+					"hazards": 0,
+					"nodes": 1310.0,
+					"static_mb": 85.4,
+					"t": 8.0
+				},
+				{
+					"boss_state": "coil",
+					"enemies": 350,
+					"fps": 29.0,
+					"hazards": 0,
+					"nodes": 1317.0,
+					"static_mb": 85.4,
+					"t": 9.0
+				},
+				{
+					"boss_state": "coil",
+					"enemies": 350,
+					"fps": 31.0,
+					"hazards": 2,
+					"nodes": 1335.0,
+					"static_mb": 85.5,
+					"t": 10.0
+				},
+				{
+					"boss_state": "coil",
+					"enemies": 350,
+					"fps": 38.0,
+					"hazards": 2,
+					"nodes": 1342.0,
+					"static_mb": 85.4,
+					"t": 11.0
+				},
+				{
+					"boss_state": "breath_windup",
+					"enemies": 350,
+					"fps": 38.0,
+					"hazards": 2,
+					"nodes": 1349.0,
+					"static_mb": 85.4,
+					"t": 12.0
+				},
+				{
+					"boss_state": "coil",
+					"enemies": 350,
+					"fps": 36.0,
+					"hazards": 8,
+					"nodes": 1370.0,
+					"static_mb": 85.6,
+					"t": 13.0
+				},
+				{
+					"boss_state": "coil",
+					"enemies": 350,
+					"fps": 32.0,
+					"hazards": 14,
+					"nodes": 1420.0,
+					"static_mb": 86.0,
+					"t": 14.0
+				},
+				{
+					"boss_state": "coil",
+					"enemies": 350,
+					"fps": 29.0,
+					"hazards": 16,
+					"nodes": 1428.0,
+					"static_mb": 86.0,
+					"t": 15.0
+				},
+				{
+					"boss_state": "coil",
+					"enemies": 350,
+					"fps": 27.0,
+					"hazards": 23,
+					"nodes": 1464.0,
+					"static_mb": 86.3,
+					"t": 16.0
+				},
+				{
+					"boss_state": "coil",
+					"enemies": 350,
+					"fps": 29.0,
+					"hazards": 29,
+					"nodes": 1490.0,
+					"static_mb": 86.4,
+					"t": 17.0
+				},
+				{
+					"boss_state": "breath_windup",
+					"enemies": 350,
+					"fps": 34.0,
+					"hazards": 31,
+					"nodes": 1523.0,
+					"static_mb": 86.6,
+					"t": 18.0
+				},
+				{
+					"boss_state": "breath_windup",
+					"enemies": 350,
+					"fps": 32.0,
+					"hazards": 30,
+					"nodes": 1520.0,
+					"static_mb": 86.4,
+					"t": 19.0
+				},
+				{
+					"boss_state": "coil",
+					"enemies": 350,
+					"fps": 33.0,
+					"hazards": 27,
+					"nodes": 1528.0,
+					"static_mb": 86.6,
+					"t": 20.0
+				},
+				{
+					"boss_state": "coil",
+					"enemies": 350,
+					"fps": 27.0,
+					"hazards": 27,
+					"nodes": 1556.0,
+					"static_mb": 87.1,
+					"t": 21.0
+				},
+				{
+					"boss_state": "coil",
+					"enemies": 350,
+					"fps": 27.0,
+					"hazards": 30,
+					"nodes": 1568.0,
+					"static_mb": 87.3,
+					"t": 22.0
+				},
+				{
+					"boss_state": "coil",
+					"enemies": 350,
+					"fps": 31.0,
+					"hazards": 29,
+					"nodes": 1590.0,
+					"static_mb": 87.2,
+					"t": 23.0
+				},
+				{
+					"boss_state": "coil",
+					"enemies": 350,
+					"fps": 29.0,
+					"hazards": 28,
+					"nodes": 1592.0,
+					"static_mb": 87.3,
+					"t": 24.0
+				},
+				{
+					"boss_state": "breath_windup",
+					"enemies": 350,
+					"fps": 29.0,
+					"hazards": 37,
+					"nodes": 1652.0,
+					"static_mb": 87.4,
+					"t": 25.0
+				}
+			]
+		},
+		"surtr": {
+			"frame_ms_max": 144.47,
+			"frame_ms_p50": 31.59,
+			"frame_ms_p95": 51.93,
+			"frame_ms_p99": 66.45,
+			"frames": 825,
+			"max_enemies": 350,
+			"samples": [
+				{
+					"boss_state": "plant",
+					"enemies": 350,
+					"fps": 26.0,
+					"hazards": 0,
+					"nodes": 1300.0,
+					"static_mb": 85.2,
+					"t": 0.0
+				},
+				{
+					"boss_state": "final",
+					"enemies": 350,
+					"fps": 76.0,
+					"hazards": 0,
+					"nodes": 1300.0,
+					"static_mb": 86.7,
+					"t": 1.0
+				},
+				{
+					"boss_state": "final",
+					"enemies": 350,
+					"fps": 79.0,
+					"hazards": 0,
+					"nodes": 1300.0,
+					"static_mb": 86.7,
+					"t": 2.0
+				},
+				{
+					"boss_state": "final",
+					"enemies": 350,
+					"fps": 69.0,
+					"hazards": 0,
+					"nodes": 1300.0,
+					"static_mb": 86.7,
+					"t": 3.0
+				},
+				{
+					"boss_state": "final",
+					"enemies": 350,
+					"fps": 64.0,
+					"hazards": 0,
+					"nodes": 1300.0,
+					"static_mb": 86.7,
+					"t": 4.0
+				},
+				{
+					"boss_state": "final",
+					"enemies": 350,
+					"fps": 49.0,
+					"hazards": 0,
+					"nodes": 1300.0,
+					"static_mb": 86.7,
+					"t": 5.0
+				},
+				{
+					"boss_state": "final",
+					"enemies": 350,
+					"fps": 38.0,
+					"hazards": 0,
+					"nodes": 1300.0,
+					"static_mb": 86.7,
+					"t": 6.0
+				},
+				{
+					"boss_state": "final",
+					"enemies": 350,
+					"fps": 30.0,
+					"hazards": 0,
+					"nodes": 1300.0,
+					"static_mb": 86.8,
+					"t": 7.0
+				},
+				{
+					"boss_state": "final",
+					"enemies": 350,
+					"fps": 24.0,
+					"hazards": 0,
+					"nodes": 1300.0,
+					"static_mb": 86.8,
+					"t": 8.0
+				},
+				{
+					"boss_state": "final",
+					"enemies": 350,
+					"fps": 21.0,
+					"hazards": 0,
+					"nodes": 1299.0,
+					"static_mb": 86.7,
+					"t": 9.0
+				},
+				{
+					"boss_state": "final",
+					"enemies": 350,
+					"fps": 20.0,
+					"hazards": 0,
+					"nodes": 1304.0,
+					"static_mb": 86.8,
+					"t": 10.0
+				},
+				{
+					"boss_state": "final",
+					"enemies": 350,
+					"fps": 22.0,
+					"hazards": 0,
+					"nodes": 1306.0,
+					"static_mb": 86.8,
+					"t": 11.0
+				},
+				{
+					"boss_state": "final",
+					"enemies": 350,
+					"fps": 19.0,
+					"hazards": 0,
+					"nodes": 1309.0,
+					"static_mb": 86.9,
+					"t": 12.0
+				},
+				{
+					"boss_state": "final",
+					"enemies": 350,
+					"fps": 24.0,
+					"hazards": 0,
+					"nodes": 1315.0,
+					"static_mb": 86.9,
+					"t": 13.0
+				},
+				{
+					"boss_state": "final",
+					"enemies": 350,
+					"fps": 26.0,
+					"hazards": 0,
+					"nodes": 1344.0,
+					"static_mb": 87.0,
+					"t": 14.0
+				},
+				{
+					"boss_state": "final",
+					"enemies": 350,
+					"fps": 27.0,
+					"hazards": 0,
+					"nodes": 1335.0,
+					"static_mb": 87.1,
+					"t": 15.0
+				},
+				{
+					"boss_state": "final",
+					"enemies": 350,
+					"fps": 35.0,
+					"hazards": 0,
+					"nodes": 1340.0,
+					"static_mb": 87.1,
+					"t": 16.0
+				},
+				{
+					"boss_state": "final",
+					"enemies": 350,
+					"fps": 33.0,
+					"hazards": 0,
+					"nodes": 1349.0,
+					"static_mb": 87.1,
+					"t": 17.0
+				},
+				{
+					"boss_state": "final",
+					"enemies": 350,
+					"fps": 34.0,
+					"hazards": 0,
+					"nodes": 1351.0,
+					"static_mb": 87.1,
+					"t": 18.0
+				},
+				{
+					"boss_state": "final",
+					"enemies": 350,
+					"fps": 28.0,
+					"hazards": 1,
+					"nodes": 1356.0,
+					"static_mb": 87.1,
+					"t": 19.0
+				},
+				{
+					"boss_state": "final",
+					"enemies": 350,
+					"fps": 25.0,
+					"hazards": 1,
+					"nodes": 1360.0,
+					"static_mb": 87.2,
+					"t": 20.0
+				},
+				{
+					"boss_state": "final",
+					"enemies": 350,
+					"fps": 22.0,
+					"hazards": 3,
+					"nodes": 1371.0,
+					"static_mb": 87.2,
+					"t": 21.0
+				},
+				{
+					"boss_state": "final",
+					"enemies": 350,
+					"fps": 22.0,
+					"hazards": 3,
+					"nodes": 1371.0,
+					"static_mb": 87.2,
+					"t": 22.0
+				},
+				{
+					"boss_state": "final",
+					"enemies": 350,
+					"fps": 22.0,
+					"hazards": 3,
+					"nodes": 1376.0,
+					"static_mb": 87.3,
+					"t": 23.0
+				},
+				{
+					"boss_state": "final",
+					"enemies": 350,
+					"fps": 21.0,
+					"hazards": 5,
+					"nodes": 1385.0,
+					"static_mb": 87.3,
+					"t": 24.1
+				},
+				{
+					"boss_state": "final",
+					"enemies": 350,
+					"fps": 24.0,
+					"hazards": 8,
+					"nodes": 1398.0,
+					"static_mb": 87.4,
+					"t": 25.0
+				}
+			]
+		}
+	},
+	"no_boss": {
+		"frame_ms_max": 156.22,
+		"frame_ms_p50": 29.92,
+		"frame_ms_p95": 50.68,
+		"frame_ms_p99": 64.82,
+		"frames": 898,
+		"max_enemies": 350,
+		"samples": [
+			{
+				"boss_state": "",
+				"enemies": 350,
+				"fps": 1.0,
+				"hazards": 0,
+				"nodes": 1299.0,
+				"static_mb": 76.5,
+				"t": 0.0
+			},
+			{
+				"boss_state": "",
+				"enemies": 350,
+				"fps": 75.0,
+				"hazards": 0,
+				"nodes": 1299.0,
+				"static_mb": 78.0,
+				"t": 1.0
+			},
+			{
+				"boss_state": "",
+				"enemies": 350,
+				"fps": 90.0,
+				"hazards": 0,
+				"nodes": 1299.0,
+				"static_mb": 79.3,
+				"t": 2.0
+			},
+			{
+				"boss_state": "",
+				"enemies": 350,
+				"fps": 84.0,
+				"hazards": 0,
+				"nodes": 1299.0,
+				"static_mb": 79.7,
+				"t": 3.0
+			},
+			{
+				"boss_state": "",
+				"enemies": 350,
+				"fps": 66.0,
+				"hazards": 0,
+				"nodes": 1299.0,
+				"static_mb": 79.7,
+				"t": 4.0
+			},
+			{
+				"boss_state": "",
+				"enemies": 350,
+				"fps": 50.0,
+				"hazards": 0,
+				"nodes": 1299.0,
+				"static_mb": 80.9,
+				"t": 5.0
+			},
+			{
+				"boss_state": "",
+				"enemies": 350,
+				"fps": 43.0,
+				"hazards": 0,
+				"nodes": 1299.0,
+				"static_mb": 81.0,
+				"t": 6.0
+			},
+			{
+				"boss_state": "",
+				"enemies": 350,
+				"fps": 29.0,
+				"hazards": 0,
+				"nodes": 1299.0,
+				"static_mb": 81.1,
+				"t": 7.0
+			},
+			{
+				"boss_state": "",
+				"enemies": 350,
+				"fps": 25.0,
+				"hazards": 0,
+				"nodes": 1299.0,
+				"static_mb": 81.1,
+				"t": 8.0
+			},
+			{
+				"boss_state": "",
+				"enemies": 350,
+				"fps": 19.0,
+				"hazards": 0,
+				"nodes": 1300.0,
+				"static_mb": 81.4,
+				"t": 9.0
+			},
+			{
+				"boss_state": "",
+				"enemies": 350,
+				"fps": 25.0,
+				"hazards": 0,
+				"nodes": 1302.0,
+				"static_mb": 81.3,
+				"t": 10.0
+			},
+			{
+				"boss_state": "",
+				"enemies": 350,
+				"fps": 21.0,
+				"hazards": 0,
+				"nodes": 1302.0,
+				"static_mb": 81.3,
+				"t": 11.0
+			},
+			{
+				"boss_state": "",
+				"enemies": 350,
+				"fps": 19.0,
+				"hazards": 0,
+				"nodes": 1305.0,
+				"static_mb": 81.3,
+				"t": 12.0
+			},
+			{
+				"boss_state": "",
+				"enemies": 350,
+				"fps": 24.0,
+				"hazards": 0,
+				"nodes": 1329.0,
+				"static_mb": 81.6,
+				"t": 13.1
+			},
+			{
+				"boss_state": "",
+				"enemies": 350,
+				"fps": 21.0,
+				"hazards": 0,
+				"nodes": 1372.0,
+				"static_mb": 82.0,
+				"t": 14.0
+			},
+			{
+				"boss_state": "",
+				"enemies": 350,
+				"fps": 36.0,
+				"hazards": 0,
+				"nodes": 1345.0,
+				"static_mb": 81.9,
+				"t": 15.0
+			},
+			{
+				"boss_state": "",
+				"enemies": 350,
+				"fps": 38.0,
+				"hazards": 0,
+				"nodes": 1345.0,
+				"static_mb": 82.0,
+				"t": 16.0
+			},
+			{
+				"boss_state": "",
+				"enemies": 350,
+				"fps": 36.0,
+				"hazards": 1,
+				"nodes": 1359.0,
+				"static_mb": 82.3,
+				"t": 17.0
+			},
+			{
+				"boss_state": "",
+				"enemies": 350,
+				"fps": 32.0,
+				"hazards": 2,
+				"nodes": 1363.0,
+				"static_mb": 82.5,
+				"t": 18.0
+			},
+			{
+				"boss_state": "",
+				"enemies": 350,
+				"fps": 33.0,
+				"hazards": 3,
+				"nodes": 1367.0,
+				"static_mb": 82.6,
+				"t": 19.0
+			},
+			{
+				"boss_state": "",
+				"enemies": 350,
+				"fps": 31.0,
+				"hazards": 5,
+				"nodes": 1374.0,
+				"static_mb": 82.6,
+				"t": 20.0
+			},
+			{
+				"boss_state": "",
+				"enemies": 350,
+				"fps": 28.0,
+				"hazards": 9,
+				"nodes": 1391.0,
+				"static_mb": 82.7,
+				"t": 21.0
+			},
+			{
+				"boss_state": "",
+				"enemies": 350,
+				"fps": 27.0,
+				"hazards": 8,
+				"nodes": 1393.0,
+				"static_mb": 82.6,
+				"t": 22.0
+			},
+			{
+				"boss_state": "",
+				"enemies": 350,
+				"fps": 26.0,
+				"hazards": 10,
+				"nodes": 1403.0,
+				"static_mb": 82.7,
+				"t": 23.0
+			},
+			{
+				"boss_state": "",
+				"enemies": 350,
+				"fps": 23.0,
+				"hazards": 9,
+				"nodes": 1410.0,
+				"static_mb": 82.7,
+				"t": 24.0
+			},
+			{
+				"boss_state": "",
+				"enemies": 350,
+				"fps": 23.0,
+				"hazards": 6,
+				"nodes": 1401.0,
+				"static_mb": 82.6,
+				"t": 25.0
+			}
+		]
+	},
+	"reentry": [
+		{
+			"nodes": 267.0,
+			"objects": 2755.0,
+			"orphans": 0.0,
+			"round": 0,
+			"static_mb": 76.0
+		},
+		{
+			"nodes": 267.0,
+			"objects": 2753.0,
+			"orphans": 0.0,
+			"round": 1,
+			"static_mb": 75.9
+		},
+		{
+			"nodes": 267.0,
+			"objects": 2753.0,
+			"orphans": 0.0,
+			"round": 2,
+			"static_mb": 75.9
+		},
+		{
+			"nodes": 267.0,
+			"objects": 2751.0,
+			"orphans": 0.0,
+			"round": 3,
+			"static_mb": 75.9
+		}
+	],
+	"scope": "local machine, real window renderer; invincible idle player; 350 mixed regular enemies + one Boss at a time",
+	"window": [
+		1280,
+		720
+	]
+}

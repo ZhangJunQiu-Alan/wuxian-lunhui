@@ -1,0 +1,1847 @@
+{
+	"checks": 368,
+	"failures": 0,
+	"log": [
+		{
+			"check": "vigrid registered with its own music",
+			"pass": true,
+			"section": "K-CODE-01 level registration and unlock"
+		},
+		{
+			"check": "Boss table 180/360/540",
+			"pass": true,
+			"section": "K-CODE-01 level registration and unlock"
+		},
+		{
+			"check": "locked before Helheim clear",
+			"pass": true,
+			"section": "K-CODE-01 level registration and unlock"
+		},
+		{
+			"check": "unlocked and selectable after Helheim clear",
+			"pass": true,
+			"section": "K-CODE-01 level registration and unlock"
+		},
+		{
+			"check": "first Helheim clear auto-selects vigrid",
+			"pass": true,
+			"section": "K-CODE-01 level registration and unlock"
+		},
+		{
+			"check": "vigrid is the last level of the chapter",
+			"pass": true,
+			"section": "K-CODE-01 level registration and unlock"
+		},
+		{
+			"check": "BossDB creates jormungandr",
+			"pass": true,
+			"section": "K-CODE-01 level registration and unlock"
+		},
+		{
+			"check": "BossDB creates fenrir",
+			"pass": true,
+			"section": "K-CODE-01 level registration and unlock"
+		},
+		{
+			"check": "BossDB creates surtr",
+			"pass": true,
+			"section": "K-CODE-01 level registration and unlock"
+		},
+		{
+			"check": "view rect 5120 centered",
+			"pass": true,
+			"section": "K-CODE-01 map, bounds, masks, horizon"
+		},
+		{
+			"check": "walk rect matches K0",
+			"pass": true,
+			"section": "K-CODE-01 map, bounds, masks, horizon"
+		},
+		{
+			"check": "VigridMap loaded",
+			"pass": true,
+			"section": "K-CODE-01 map, bounds, masks, horizon"
+		},
+		{
+			"check": "12 midgard masks explicitly loaded and burnt_grass edges derived",
+			"pass": true,
+			"section": "K-CODE-01 map, bounds, masks, horizon"
+		},
+		{
+			"check": "masks not copied into vigrid dir",
+			"pass": true,
+			"section": "K-CODE-01 map, bounds, masks, horizon"
+		},
+		{
+			"check": "no fixed obstacle within central 1280 (nearest 1966)",
+			"pass": true,
+			"section": "K-CODE-01 map, bounds, masks, horizon"
+		},
+		{
+			"check": "spawn R384 clear of props",
+			"pass": true,
+			"section": "K-CODE-01 map, bounds, masks, horizon"
+		},
+		{
+			"check": "horizon outside walk rect, inside view",
+			"pass": true,
+			"section": "K-CODE-01 map, bounds, masks, horizon"
+		},
+		{
+			"check": "distant battle strip 512x128x4",
+			"pass": true,
+			"section": "K-CODE-01 map, bounds, masks, horizon"
+		},
+		{
+			"check": "horizon has no enemy entries",
+			"pass": true,
+			"section": "K-CODE-01 map, bounds, masks, horizon"
+		},
+		{
+			"check": "player clamp inside corner (-9999.0, -9999.0)",
+			"pass": true,
+			"section": "K-CODE-01 map, bounds, masks, horizon"
+		},
+		{
+			"check": "player clamp inside corner (9999.0, -9999.0)",
+			"pass": true,
+			"section": "K-CODE-01 map, bounds, masks, horizon"
+		},
+		{
+			"check": "player clamp inside corner (9999.0, 9999.0)",
+			"pass": true,
+			"section": "K-CODE-01 map, bounds, masks, horizon"
+		},
+		{
+			"check": "player clamp inside corner (-9999.0, 9999.0)",
+			"pass": true,
+			"section": "K-CODE-01 map, bounds, masks, horizon"
+		},
+		{
+			"check": "dash target stays in walk rect at corner",
+			"pass": true,
+			"section": "K-CODE-01 map, bounds, masks, horizon"
+		},
+		{
+			"check": "decorative fire uses instance hue 0.04 material",
+			"pass": true,
+			"section": "K-CODE-01 map, bounds, masks, horizon"
+		},
+		{
+			"check": "camera limited to view rect",
+			"pass": true,
+			"section": "K-CODE-01 map, bounds, masks, horizon"
+		},
+		{
+			"check": "spawn with sprite fire_giant",
+			"pass": true,
+			"section": "K-CODE-02 regular enemies"
+		},
+		{
+			"check": "special script fire_giant",
+			"pass": true,
+			"section": "K-CODE-02 regular enemies"
+		},
+		{
+			"check": "foot anchor on root+(0,20) fire_giant",
+			"pass": true,
+			"section": "K-CODE-02 regular enemies"
+		},
+		{
+			"check": "spawn with sprite frost_veteran",
+			"pass": true,
+			"section": "K-CODE-02 regular enemies"
+		},
+		{
+			"check": "special script frost_veteran",
+			"pass": true,
+			"section": "K-CODE-02 regular enemies"
+		},
+		{
+			"check": "foot anchor on root+(0,20) frost_veteran",
+			"pass": true,
+			"section": "K-CODE-02 regular enemies"
+		},
+		{
+			"check": "spawn with sprite wolf_berserker",
+			"pass": true,
+			"section": "K-CODE-02 regular enemies"
+		},
+		{
+			"check": "special script wolf_berserker",
+			"pass": true,
+			"section": "K-CODE-02 regular enemies"
+		},
+		{
+			"check": "foot anchor on root+(0,20) wolf_berserker",
+			"pass": true,
+			"section": "K-CODE-02 regular enemies"
+		},
+		{
+			"check": "spawn with sprite dead",
+			"pass": true,
+			"section": "K-CODE-02 regular enemies"
+		},
+		{
+			"check": "dead reused",
+			"pass": true,
+			"section": "K-CODE-02 regular enemies"
+		},
+		{
+			"check": "veteran charge/shield mapped",
+			"pass": true,
+			"section": "K-CODE-02 regular enemies"
+		},
+		{
+			"check": "shield holds, charge loops",
+			"pass": true,
+			"section": "K-CODE-02 regular enemies"
+		},
+		{
+			"check": "berserker rage mapped, attack 16fps",
+			"pass": true,
+			"section": "K-CODE-02 regular enemies"
+		},
+		{
+			"check": "fire giant death creates exactly one blast",
+			"pass": true,
+			"section": "K-CODE-02 regular enemies"
+		},
+		{
+			"check": "blast edge = radius + player radius",
+			"pass": true,
+			"section": "K-CODE-02 regular enemies"
+		},
+		{
+			"check": "no damage during warning",
+			"pass": true,
+			"section": "K-CODE-02 regular enemies"
+		},
+		{
+			"check": "blast damages inside radius once warning ends",
+			"pass": true,
+			"section": "K-CODE-02 regular enemies"
+		},
+		{
+			"check": "residual fire burns as DoT, not repeated blast",
+			"pass": true,
+			"section": "K-CODE-02 regular enemies"
+		},
+		{
+			"check": "outside fire no damage",
+			"pass": true,
+			"section": "K-CODE-02 regular enemies"
+		},
+		{
+			"check": "giant counted as kill once",
+			"pass": true,
+			"section": "K-CODE-02 regular enemies"
+		},
+		{
+			"check": "charge starts with charge pose",
+			"pass": true,
+			"section": "K-CODE-02 regular enemies"
+		},
+		{
+			"check": "no movement during charge windup",
+			"pass": true,
+			"section": "K-CODE-02 regular enemies"
+		},
+		{
+			"check": "charge dashes toward locked direction",
+			"pass": true,
+			"section": "K-CODE-02 regular enemies"
+		},
+		{
+			"check": "charge contact hits player",
+			"pass": true,
+			"section": "K-CODE-02 regular enemies"
+		},
+		{
+			"check": "charge ends",
+			"pass": true,
+			"section": "K-CODE-02 regular enemies"
+		},
+		{
+			"check": "shield raised with shield pose",
+			"pass": true,
+			"section": "K-CODE-02 regular enemies"
+		},
+		{
+			"check": "front hit reduced by 80%",
+			"pass": true,
+			"section": "K-CODE-02 regular enemies"
+		},
+		{
+			"check": "back hit not blocked",
+			"pass": true,
+			"section": "K-CODE-02 regular enemies"
+		},
+		{
+			"check": "no rage above 40%",
+			"pass": true,
+			"section": "K-CODE-02 regular enemies"
+		},
+		{
+			"check": "rage once below 40% with pose and speed",
+			"pass": true,
+			"section": "K-CODE-02 regular enemies"
+		},
+		{
+			"check": "rage not applied twice",
+			"pass": true,
+			"section": "K-CODE-02 regular enemies"
+		},
+		{
+			"check": "regular cap 350 holds for new ids",
+			"pass": true,
+			"section": "K-CODE-02 regular enemies"
+		},
+		{
+			"check": "no Boss before 03:00",
+			"pass": true,
+			"section": "K-CODE-03..05 Boss schedule, waiting, pause"
+		},
+		{
+			"check": "Jormungandr at 03:00",
+			"pass": true,
+			"section": "K-CODE-03..05 Boss schedule, waiting, pause"
+		},
+		{
+			"check": "spawned near player, player not teleported",
+			"pass": true,
+			"section": "K-CODE-03..05 Boss schedule, waiting, pause"
+		},
+		{
+			"check": "Fenrir waits while Jormungandr lives",
+			"pass": true,
+			"section": "K-CODE-03..05 Boss schedule, waiting, pause"
+		},
+		{
+			"check": "defeat recorded",
+			"pass": true,
+			"section": "K-CODE-03..05 Boss schedule, waiting, pause"
+		},
+		{
+			"check": "Fenrir right after Jormungandr if 06:00 passed",
+			"pass": true,
+			"section": "K-CODE-03..05 Boss schedule, waiting, pause"
+		},
+		{
+			"check": "Surtr waits for 09:00",
+			"pass": true,
+			"section": "K-CODE-03..05 Boss schedule, waiting, pause"
+		},
+		{
+			"check": "Surtr at 09:00",
+			"pass": true,
+			"section": "K-CODE-03..05 Boss schedule, waiting, pause"
+		},
+		{
+			"check": "paused tree freezes level time",
+			"pass": true,
+			"section": "K-CODE-03..05 Boss schedule, waiting, pause"
+		},
+		{
+			"check": "past 10 minutes does not fail the run",
+			"pass": true,
+			"section": "K-CODE-03..05 Boss schedule, waiting, pause"
+		},
+		{
+			"check": "path = player 2048 square ∩ bounds inset 96",
+			"pass": true,
+			"section": "K-CODE-03 Jormungandr"
+		},
+		{
+			"check": "corner radius >= 128",
+			"pass": true,
+			"section": "K-CODE-03 Jormungandr"
+		},
+		{
+			"check": "corner spawn path stays inset with radius >= 128",
+			"pass": true,
+			"section": "K-CODE-03 Jormungandr"
+		},
+		{
+			"check": "head snapped onto path",
+			"pass": true,
+			"section": "K-CODE-03 Jormungandr"
+		},
+		{
+			"check": "head is the only enemy entry",
+			"pass": true,
+			"section": "K-CODE-03 Jormungandr"
+		},
+		{
+			"check": "body/tail not in enemy group",
+			"pass": true,
+			"section": "K-CODE-03 Jormungandr"
+		},
+		{
+			"check": "spatial index has no body segment",
+			"pass": true,
+			"section": "K-CODE-03 Jormungandr"
+		},
+		{
+			"check": "body length along path 2290",
+			"pass": true,
+			"section": "K-CODE-03 Jormungandr"
+		},
+		{
+			"check": "continuous body sampling, no gap (max 16.0)",
+			"pass": true,
+			"section": "K-CODE-03 Jormungandr"
+		},
+		{
+			"check": "body contact damages and shoves",
+			"pass": true,
+			"section": "K-CODE-03 Jormungandr"
+		},
+		{
+			"check": "body hit cooldown",
+			"pass": true,
+			"section": "K-CODE-03 Jormungandr"
+		},
+		{
+			"check": "outside body half-width no contact",
+			"pass": true,
+			"section": "K-CODE-03 Jormungandr"
+		},
+		{
+			"check": "contraction inset 128 per side",
+			"pass": true,
+			"section": "K-CODE-03 Jormungandr"
+		},
+		{
+			"check": "breath windup holds a polygon then releases",
+			"pass": true,
+			"section": "K-CODE-03 Jormungandr"
+		},
+		{
+			"check": "release at attack frame 1 creates one mist",
+			"pass": true,
+			"section": "K-CODE-03 Jormungandr"
+		},
+		{
+			"check": "mist clipped to bounds",
+			"pass": true,
+			"section": "K-CODE-03 Jormungandr"
+		},
+		{
+			"check": "breath hit iff player in polygon",
+			"pass": true,
+			"section": "K-CODE-03 Jormungandr"
+		},
+		{
+			"check": "mist DoT inside polygon",
+			"pass": true,
+			"section": "K-CODE-03 Jormungandr"
+		},
+		{
+			"check": "mist outside no damage",
+			"pass": true,
+			"section": "K-CODE-03 Jormungandr"
+		},
+		{
+			"check": "near picks breath, no third repeat [\"breath_windup\", \"breath_windup\", \"lunge_windup\"]",
+			"pass": true,
+			"section": "K-CODE-03 Jormungandr"
+		},
+		{
+			"check": "far player picks lunge",
+			"pass": true,
+			"section": "K-CODE-03 Jormungandr"
+		},
+		{
+			"check": "lunge reach clipped to bounds inset 64",
+			"pass": true,
+			"section": "K-CODE-03 Jormungandr"
+		},
+		{
+			"check": "lunge aims at player",
+			"pass": true,
+			"section": "K-CODE-03 Jormungandr"
+		},
+		{
+			"check": "head stays on path while winding up",
+			"pass": true,
+			"section": "K-CODE-03 Jormungandr"
+		},
+		{
+			"check": "direction locked in last 0.3s",
+			"pass": true,
+			"section": "K-CODE-03 Jormungandr"
+		},
+		{
+			"check": "lunge travels the telegraphed lane and bites",
+			"pass": true,
+			"section": "K-CODE-03 Jormungandr"
+		},
+		{
+			"check": "sidestepped lunge: no damage",
+			"pass": true,
+			"section": "K-CODE-03 Jormungandr"
+		},
+		{
+			"check": "player inside lane is hit and shoved",
+			"pass": true,
+			"section": "K-CODE-03 Jormungandr"
+		},
+		{
+			"check": "outside lane half-width no hit",
+			"pass": true,
+			"section": "K-CODE-03 Jormungandr"
+		},
+		{
+			"check": "bite takes x1.5 damage",
+			"pass": true,
+			"section": "K-CODE-03 Jormungandr"
+		},
+		{
+			"check": "retracts back onto path then coils",
+			"pass": true,
+			"section": "K-CODE-03 Jormungandr"
+		},
+		{
+			"check": "normal damage outside bite",
+			"pass": true,
+			"section": "K-CODE-03 Jormungandr"
+		},
+		{
+			"check": "spits 3 globs mid-coil without stopping",
+			"pass": true,
+			"section": "K-CODE-03 Jormungandr"
+		},
+		{
+			"check": "first glob on predicted player position",
+			"pass": true,
+			"section": "K-CODE-03 Jormungandr"
+		},
+		{
+			"check": "glob hits within radius and leaves mist",
+			"pass": true,
+			"section": "K-CODE-03 Jormungandr"
+		},
+		{
+			"check": "glob mist life",
+			"pass": true,
+			"section": "K-CODE-03 Jormungandr"
+		},
+		{
+			"check": "glob outside radius no damage",
+			"pass": true,
+			"section": "K-CODE-03 Jormungandr"
+		},
+		{
+			"check": "rage below half",
+			"pass": true,
+			"section": "K-CODE-03 Jormungandr"
+		},
+		{
+			"check": "raged spit count",
+			"pass": true,
+			"section": "K-CODE-03 Jormungandr"
+		},
+		{
+			"check": "thor_at90",
+			"pass": true,
+			"section": "K-CODE-03 Jormungandr"
+		},
+		{
+			"check": "thor_after90",
+			"pass": true,
+			"section": "K-CODE-03 Jormungandr"
+		},
+		{
+			"check": "no_thor_faith",
+			"pass": true,
+			"section": "K-CODE-03 Jormungandr"
+		},
+		{
+			"check": "paused60seconds: unpaused age 89 passes",
+			"pass": true,
+			"section": "K-CODE-03 Jormungandr"
+		},
+		{
+			"check": "encounter age frozen while tree paused",
+			"pass": true,
+			"section": "K-CODE-03 Jormungandr"
+		},
+		{
+			"check": "swallow mapped, attack/swallow 16fps",
+			"pass": true,
+			"section": "K-CODE-04 Fenrir"
+		},
+		{
+			"check": "192 body, foot anchor at root+20",
+			"pass": true,
+			"section": "K-CODE-04 Fenrir"
+		},
+		{
+			"check": "two fragments at encounter start",
+			"pass": true,
+			"section": "K-CODE-04 Fenrir"
+		},
+		{
+			"check": "upper jaw 256x128x4 read as explicit regions",
+			"pass": true,
+			"section": "K-CODE-04 Fenrir"
+		},
+		{
+			"check": "active maw gap >= 64 (min 65)",
+			"pass": true,
+			"section": "K-CODE-04 Fenrir"
+		},
+		{
+			"check": "protected channel inside fatal shape (drawn and judged together)",
+			"pass": true,
+			"section": "K-CODE-04 Fenrir"
+		},
+		{
+			"check": "escaped player unhurt at commit",
+			"pass": true,
+			"section": "K-CODE-04 Fenrir"
+		},
+		{
+			"check": "attraction pull slower than player speed",
+			"pass": true,
+			"section": "K-CODE-04 Fenrir"
+		},
+		{
+			"check": "dash invincibility survives swallow",
+			"pass": true,
+			"section": "K-CODE-04 Fenrir"
+		},
+		{
+			"check": "swallow kills through normal damage and uses revive",
+			"pass": true,
+			"section": "K-CODE-04 Fenrir"
+		},
+		{
+			"check": "fragment binds once, cancels maw",
+			"pass": true,
+			"section": "K-CODE-04 Fenrir"
+		},
+		{
+			"check": "fragment not consumed twice",
+			"pass": true,
+			"section": "K-CODE-04 Fenrir"
+		},
+		{
+			"check": "bound Fenrir takes +50% damage",
+			"pass": true,
+			"section": "K-CODE-04 Fenrir"
+		},
+		{
+			"check": "bound Fenrir cannot move",
+			"pass": true,
+			"section": "K-CODE-04 Fenrir"
+		},
+		{
+			"check": "binding ends after BIND_TIME",
+			"pass": true,
+			"section": "K-CODE-04 Fenrir"
+		},
+		{
+			"check": "bind ribbon (width 8) stays outside protected torso rect",
+			"pass": true,
+			"section": "K-CODE-04 Fenrir"
+		},
+		{
+			"check": "run route planned inside bounds",
+			"pass": true,
+			"section": "K-CODE-04 Fenrir"
+		},
+		{
+			"check": "run starts after windup",
+			"pass": true,
+			"section": "K-CODE-04 Fenrir"
+		},
+		{
+			"check": "run follows the warned route",
+			"pass": true,
+			"section": "K-CODE-04 Fenrir"
+		},
+		{
+			"check": "odin faith without awakening: no Vidar",
+			"pass": true,
+			"section": "K-CODE-04 Fenrir"
+		},
+		{
+			"check": "odin awakened: Vidar ready",
+			"pass": true,
+			"section": "K-CODE-04 Fenrir"
+		},
+		{
+			"check": "Vidar actually intervenes and flag set",
+			"pass": true,
+			"section": "K-CODE-04 Fenrir"
+		},
+		{
+			"check": "jaws bound to Vidar hand/boot contacts",
+			"pass": true,
+			"section": "K-CODE-04 Fenrir"
+		},
+		{
+			"check": "Vidar tableau never damages player",
+			"pass": true,
+			"section": "K-CODE-04 Fenrir"
+		},
+		{
+			"check": "Vidar pry damages Fenrir",
+			"pass": true,
+			"section": "K-CODE-04 Fenrir"
+		},
+		{
+			"check": "Fenrir staggers after pry",
+			"pass": true,
+			"section": "K-CODE-04 Fenrir"
+		},
+		{
+			"check": "Vidar only once per encounter",
+			"pass": true,
+			"section": "K-CODE-04 Fenrir"
+		},
+		{
+			"check": "fragments cleared on defeat",
+			"pass": true,
+			"section": "K-CODE-04 Fenrir"
+		},
+		{
+			"check": "cell -1 -> -1",
+			"pass": true,
+			"section": "K-CODE-05 Surtr"
+		},
+		{
+			"check": "cell -64 -> -1",
+			"pass": true,
+			"section": "K-CODE-05 Surtr"
+		},
+		{
+			"check": "cell -65 -> -2",
+			"pass": true,
+			"section": "K-CODE-05 Surtr"
+		},
+		{
+			"check": "cell 63.9 -> 0, 64 -> 1",
+			"pass": true,
+			"section": "K-CODE-05 Surtr"
+		},
+		{
+			"check": "320 action idle",
+			"pass": true,
+			"section": "K-CODE-05 Surtr"
+		},
+		{
+			"check": "320 action move",
+			"pass": true,
+			"section": "K-CODE-05 Surtr"
+		},
+		{
+			"check": "320 action windup",
+			"pass": true,
+			"section": "K-CODE-05 Surtr"
+		},
+		{
+			"check": "320 action attack",
+			"pass": true,
+			"section": "K-CODE-05 Surtr"
+		},
+		{
+			"check": "320 action plant",
+			"pass": true,
+			"section": "K-CODE-05 Surtr"
+		},
+		{
+			"check": "320 action summon",
+			"pass": true,
+			"section": "K-CODE-05 Surtr"
+		},
+		{
+			"check": "16fps attack",
+			"pass": true,
+			"section": "K-CODE-05 Surtr"
+		},
+		{
+			"check": "16fps plant",
+			"pass": true,
+			"section": "K-CODE-05 Surtr"
+		},
+		{
+			"check": "16fps summon",
+			"pass": true,
+			"section": "K-CODE-05 Surtr"
+		},
+		{
+			"check": "windup 8fps, plant holds last frame",
+			"pass": true,
+			"section": "K-CODE-05 Surtr"
+		},
+		{
+			"check": "foot (160,318) at root+20",
+			"pass": true,
+			"section": "K-CODE-05 Surtr"
+		},
+		{
+			"check": "sweep after windup",
+			"pass": true,
+			"section": "K-CODE-05 Surtr"
+		},
+		{
+			"check": "sweep hits inside sector at frame 1",
+			"pass": true,
+			"section": "K-CODE-05 Surtr"
+		},
+		{
+			"check": "sweep leaves 3 residual fires",
+			"pass": true,
+			"section": "K-CODE-05 Surtr"
+		},
+		{
+			"check": "sweep misses outside sector",
+			"pass": true,
+			"section": "K-CODE-05 Surtr"
+		},
+		{
+			"check": "two gates opened once at palm frame",
+			"pass": true,
+			"section": "K-CODE-05 Surtr"
+		},
+		{
+			"check": "gates release their fire giants then close",
+			"pass": true,
+			"section": "K-CODE-05 Surtr"
+		},
+		{
+			"check": "60% triggers firewall",
+			"pass": true,
+			"section": "K-CODE-05 Surtr"
+		},
+		{
+			"check": "firewall not restarted by later damage",
+			"pass": true,
+			"section": "K-CODE-05 Surtr"
+		},
+		{
+			"check": "firewall shrinks 1000 -> 440",
+			"pass": true,
+			"section": "K-CODE-05 Surtr"
+		},
+		{
+			"check": "inside firewall circle no damage",
+			"pass": true,
+			"section": "K-CODE-05 Surtr"
+		},
+		{
+			"check": "outside firewall circle burns",
+			"pass": true,
+			"section": "K-CODE-05 Surtr"
+		},
+		{
+			"check": "25% triggers plant once",
+			"pass": true,
+			"section": "K-CODE-05 Surtr"
+		},
+		{
+			"check": "final fire begins with warning",
+			"pass": true,
+			"section": "K-CODE-05 Surtr"
+		},
+		{
+			"check": "safe ∪ unsafe = area, disjoint",
+			"pass": true,
+			"section": "K-CODE-05 Surtr"
+		},
+		{
+			"check": "drawn fire rows cover exactly the unsafe cell set, never a safe cell",
+			"pass": true,
+			"section": "K-CODE-05 Surtr"
+		},
+		{
+			"check": "a safe cell reachable near player",
+			"pass": true,
+			"section": "K-CODE-05 Surtr"
+		},
+		{
+			"check": "player foot cell lookup",
+			"pass": true,
+			"section": "K-CODE-05 Surtr"
+		},
+		{
+			"check": "safe cell protected at burn",
+			"pass": true,
+			"section": "K-CODE-05 Surtr"
+		},
+		{
+			"check": "new cycle replans",
+			"pass": true,
+			"section": "K-CODE-05 Surtr"
+		},
+		{
+			"check": "unsafe cell takes damage at burn",
+			"pass": true,
+			"section": "K-CODE-05 Surtr"
+		},
+		{
+			"check": "burn damage resolved once per cycle",
+			"pass": true,
+			"section": "K-CODE-05 Surtr"
+		},
+		{
+			"check": "phases never retrigger",
+			"pass": true,
+			"section": "K-CODE-05 Surtr"
+		},
+		{
+			"check": "planted Surtr stays put",
+			"pass": true,
+			"section": "K-CODE-05 Surtr"
+		},
+		{
+			"check": "VigridBattle present on level 3",
+			"pass": true,
+			"section": "K-CODE-06 aid and audio"
+		},
+		{
+			"check": "nearby combat with enough enemies",
+			"pass": true,
+			"section": "K-CODE-06 aid and audio"
+		},
+		{
+			"check": "aid event fields thor",
+			"pass": true,
+			"section": "K-CODE-06 aid and audio"
+		},
+		{
+			"check": "aid event fields odin",
+			"pass": true,
+			"section": "K-CODE-06 aid and audio"
+		},
+		{
+			"check": "aid event fields loki",
+			"pass": true,
+			"section": "K-CODE-06 aid and audio"
+		},
+		{
+			"check": "aid event fields freyja",
+			"pass": true,
+			"section": "K-CODE-06 aid and audio"
+		},
+		{
+			"check": "each aid recorded once",
+			"pass": true,
+			"section": "K-CODE-06 aid and audio"
+		},
+		{
+			"check": "aid adds no enemy entries",
+			"pass": true,
+			"section": "K-CODE-06 aid and audio"
+		},
+		{
+			"check": "no aid without nearby combat",
+			"pass": true,
+			"section": "K-CODE-06 aid and audio"
+		},
+		{
+			"check": "periodic aid waits for nearby combat",
+			"pass": true,
+			"section": "K-CODE-06 aid and audio"
+		},
+		{
+			"check": "no Thor strike without thor_saved",
+			"pass": true,
+			"section": "K-CODE-06 aid and audio"
+		},
+		{
+			"check": "saved Thor strikes Surtr",
+			"pass": true,
+			"section": "K-CODE-06 aid and audio"
+		},
+		{
+			"check": "freyr_faith_not_freyja",
+			"pass": true,
+			"section": "K-CODE-06 aid and audio"
+		},
+		{
+			"check": "freyja faith without awakening: no Freyr",
+			"pass": true,
+			"section": "K-CODE-06 aid and audio"
+		},
+		{
+			"check": "freyja awakened: Freyr assists",
+			"pass": true,
+			"section": "K-CODE-06 aid and audio"
+		},
+		{
+			"check": "Freyr heals on actual grant",
+			"pass": true,
+			"section": "K-CODE-06 aid and audio"
+		},
+		{
+			"check": "no heal event at full HP",
+			"pass": true,
+			"section": "K-CODE-06 aid and audio"
+		},
+		{
+			"check": "new sfx jormungandr_hiss",
+			"pass": true,
+			"section": "K-CODE-06 aid and audio"
+		},
+		{
+			"check": "new sfx fenrir_swallow",
+			"pass": true,
+			"section": "K-CODE-06 aid and audio"
+		},
+		{
+			"check": "new sfx gleipnir_tension",
+			"pass": true,
+			"section": "K-CODE-06 aid and audio"
+		},
+		{
+			"check": "new sfx surtr_gate",
+			"pass": true,
+			"section": "K-CODE-06 aid and audio"
+		},
+		{
+			"check": "vigrid music",
+			"pass": true,
+			"section": "K-CODE-06 aid and audio"
+		},
+		{
+			"check": "reused sfx boss_windup",
+			"pass": true,
+			"section": "K-CODE-06 aid and audio"
+		},
+		{
+			"check": "reused sfx boss_slam",
+			"pass": true,
+			"section": "K-CODE-06 aid and audio"
+		},
+		{
+			"check": "reused sfx quest_done",
+			"pass": true,
+			"section": "K-CODE-06 aid and audio"
+		},
+		{
+			"check": "reused sfx lightning",
+			"pass": true,
+			"section": "K-CODE-06 aid and audio"
+		},
+		{
+			"check": "reused sfx boss_howl",
+			"pass": true,
+			"section": "K-CODE-06 aid and audio"
+		},
+		{
+			"check": "reused sfx chest_open",
+			"pass": true,
+			"section": "K-CODE-06 aid and audio"
+		},
+		{
+			"check": "reused sfx awaken",
+			"pass": true,
+			"section": "K-CODE-06 aid and audio"
+		},
+		{
+			"check": "reused sfx katana_slash",
+			"pass": true,
+			"section": "K-CODE-06 aid and audio"
+		},
+		{
+			"check": "reused sfx fire_burn",
+			"pass": true,
+			"section": "K-CODE-06 aid and audio"
+		},
+		{
+			"check": "reused sfx boss_warning",
+			"pass": true,
+			"section": "K-CODE-06 aid and audio"
+		},
+		{
+			"check": "reused sfx heal_pickup",
+			"pass": true,
+			"section": "K-CODE-06 aid and audio"
+		},
+		{
+			"check": "reused sfx big_death",
+			"pass": true,
+			"section": "K-CODE-06 aid and audio"
+		},
+		{
+			"check": "reused sfx boss_block",
+			"pass": true,
+			"section": "K-CODE-06 aid and audio"
+		},
+		{
+			"check": "audio limits unchanged",
+			"pass": true,
+			"section": "K-CODE-06 aid and audio"
+		},
+		{
+			"check": "new_run_reset: all four false",
+			"pass": true,
+			"section": "K-CODE-07 fates and Loki"
+		},
+		{
+			"check": "fate monotonic and once",
+			"pass": true,
+			"section": "K-CODE-07 fates and Loki"
+		},
+		{
+			"check": "unknown fate ignored",
+			"pass": true,
+			"section": "K-CODE-07 fates and Loki"
+		},
+		{
+			"check": "Loki faith granted marks ever_faith_loki",
+			"pass": true,
+			"section": "K-CODE-07 fates and Loki"
+		},
+		{
+			"check": "loki_lost_current_faith keeps flag",
+			"pass": true,
+			"section": "K-CODE-07 fates and Loki"
+		},
+		{
+			"check": "next run does not inherit flags",
+			"pass": true,
+			"section": "K-CODE-07 fates and Loki"
+		},
+		{
+			"check": "menu preview does not mark Loki",
+			"pass": true,
+			"section": "K-CODE-07 fates and Loki"
+		},
+		{
+			"check": "Thor saved when killed at 89s with Thor faith",
+			"pass": true,
+			"section": "K-CODE-07 fates and Loki"
+		},
+		{
+			"check": "Thor not saved at 90.001s",
+			"pass": true,
+			"section": "K-CODE-07 fates and Loki"
+		},
+		{
+			"check": "encounter age counts own physics frames, not level elapsed",
+			"pass": true,
+			"section": "K-CODE-07 fates and Loki"
+		},
+		{
+			"check": "no Thor faith: not saved",
+			"pass": true,
+			"section": "K-CODE-07 fates and Loki"
+		},
+		{
+			"check": "ending timeline 5 beats",
+			"pass": true,
+			"section": "K-CODE-07 K7 fate/Loki combinations"
+		},
+		{
+			"check": "load_ending parses and validates",
+			"pass": true,
+			"section": "K-CODE-07 K7 fate/Loki combinations"
+		},
+		{
+			"check": "missing ending falls back",
+			"pass": true,
+			"section": "K-CODE-07 K7 fate/Loki combinations"
+		},
+		{
+			"check": "fates000_loki0 count and Loki flag",
+			"pass": true,
+			"section": "K-CODE-07 K7 fate/Loki combinations"
+		},
+		{
+			"check": "fates000_loki0 settled once",
+			"pass": true,
+			"section": "K-CODE-07 K7 fate/Loki combinations"
+		},
+		{
+			"check": "fates000_loki0 fate record saved",
+			"pass": true,
+			"section": "K-CODE-07 K7 fate/Loki combinations"
+		},
+		{
+			"check": "fates000_loki0 Loki hint shown iff flag",
+			"pass": true,
+			"section": "K-CODE-07 K7 fate/Loki combinations"
+		},
+		{
+			"check": "fates000_loki0 result fate tile",
+			"pass": true,
+			"section": "K-CODE-07 K7 fate/Loki combinations"
+		},
+		{
+			"check": "fates001_loki0 count and Loki flag",
+			"pass": true,
+			"section": "K-CODE-07 K7 fate/Loki combinations"
+		},
+		{
+			"check": "fates001_loki0 settled once",
+			"pass": true,
+			"section": "K-CODE-07 K7 fate/Loki combinations"
+		},
+		{
+			"check": "fates001_loki0 fate record saved",
+			"pass": true,
+			"section": "K-CODE-07 K7 fate/Loki combinations"
+		},
+		{
+			"check": "fates001_loki0 Loki hint shown iff flag",
+			"pass": true,
+			"section": "K-CODE-07 K7 fate/Loki combinations"
+		},
+		{
+			"check": "fates001_loki0 result fate tile",
+			"pass": true,
+			"section": "K-CODE-07 K7 fate/Loki combinations"
+		},
+		{
+			"check": "fates010_loki0 count and Loki flag",
+			"pass": true,
+			"section": "K-CODE-07 K7 fate/Loki combinations"
+		},
+		{
+			"check": "fates010_loki0 settled once",
+			"pass": true,
+			"section": "K-CODE-07 K7 fate/Loki combinations"
+		},
+		{
+			"check": "fates010_loki0 fate record saved",
+			"pass": true,
+			"section": "K-CODE-07 K7 fate/Loki combinations"
+		},
+		{
+			"check": "fates010_loki0 Loki hint shown iff flag",
+			"pass": true,
+			"section": "K-CODE-07 K7 fate/Loki combinations"
+		},
+		{
+			"check": "fates010_loki0 result fate tile",
+			"pass": true,
+			"section": "K-CODE-07 K7 fate/Loki combinations"
+		},
+		{
+			"check": "fates011_loki0 count and Loki flag",
+			"pass": true,
+			"section": "K-CODE-07 K7 fate/Loki combinations"
+		},
+		{
+			"check": "fates011_loki0 settled once",
+			"pass": true,
+			"section": "K-CODE-07 K7 fate/Loki combinations"
+		},
+		{
+			"check": "fates011_loki0 fate record saved",
+			"pass": true,
+			"section": "K-CODE-07 K7 fate/Loki combinations"
+		},
+		{
+			"check": "fates011_loki0 Loki hint shown iff flag",
+			"pass": true,
+			"section": "K-CODE-07 K7 fate/Loki combinations"
+		},
+		{
+			"check": "fates011_loki0 result fate tile",
+			"pass": true,
+			"section": "K-CODE-07 K7 fate/Loki combinations"
+		},
+		{
+			"check": "fates100_loki0 count and Loki flag",
+			"pass": true,
+			"section": "K-CODE-07 K7 fate/Loki combinations"
+		},
+		{
+			"check": "fates100_loki0 settled once",
+			"pass": true,
+			"section": "K-CODE-07 K7 fate/Loki combinations"
+		},
+		{
+			"check": "fates100_loki0 fate record saved",
+			"pass": true,
+			"section": "K-CODE-07 K7 fate/Loki combinations"
+		},
+		{
+			"check": "fates100_loki0 Loki hint shown iff flag",
+			"pass": true,
+			"section": "K-CODE-07 K7 fate/Loki combinations"
+		},
+		{
+			"check": "fates100_loki0 result fate tile",
+			"pass": true,
+			"section": "K-CODE-07 K7 fate/Loki combinations"
+		},
+		{
+			"check": "fates101_loki0 count and Loki flag",
+			"pass": true,
+			"section": "K-CODE-07 K7 fate/Loki combinations"
+		},
+		{
+			"check": "fates101_loki0 settled once",
+			"pass": true,
+			"section": "K-CODE-07 K7 fate/Loki combinations"
+		},
+		{
+			"check": "fates101_loki0 fate record saved",
+			"pass": true,
+			"section": "K-CODE-07 K7 fate/Loki combinations"
+		},
+		{
+			"check": "fates101_loki0 Loki hint shown iff flag",
+			"pass": true,
+			"section": "K-CODE-07 K7 fate/Loki combinations"
+		},
+		{
+			"check": "fates101_loki0 result fate tile",
+			"pass": true,
+			"section": "K-CODE-07 K7 fate/Loki combinations"
+		},
+		{
+			"check": "fates110_loki0 count and Loki flag",
+			"pass": true,
+			"section": "K-CODE-07 K7 fate/Loki combinations"
+		},
+		{
+			"check": "fates110_loki0 settled once",
+			"pass": true,
+			"section": "K-CODE-07 K7 fate/Loki combinations"
+		},
+		{
+			"check": "fates110_loki0 fate record saved",
+			"pass": true,
+			"section": "K-CODE-07 K7 fate/Loki combinations"
+		},
+		{
+			"check": "fates110_loki0 Loki hint shown iff flag",
+			"pass": true,
+			"section": "K-CODE-07 K7 fate/Loki combinations"
+		},
+		{
+			"check": "fates110_loki0 result fate tile",
+			"pass": true,
+			"section": "K-CODE-07 K7 fate/Loki combinations"
+		},
+		{
+			"check": "fates111_loki0 count and Loki flag",
+			"pass": true,
+			"section": "K-CODE-07 K7 fate/Loki combinations"
+		},
+		{
+			"check": "fates111_loki0 settled once",
+			"pass": true,
+			"section": "K-CODE-07 K7 fate/Loki combinations"
+		},
+		{
+			"check": "fates111_loki0 fate record saved",
+			"pass": true,
+			"section": "K-CODE-07 K7 fate/Loki combinations"
+		},
+		{
+			"check": "fates111_loki0 Loki hint shown iff flag",
+			"pass": true,
+			"section": "K-CODE-07 K7 fate/Loki combinations"
+		},
+		{
+			"check": "fates111_loki0 result fate tile",
+			"pass": true,
+			"section": "K-CODE-07 K7 fate/Loki combinations"
+		},
+		{
+			"check": "fates000_loki1 count and Loki flag",
+			"pass": true,
+			"section": "K-CODE-07 K7 fate/Loki combinations"
+		},
+		{
+			"check": "fates000_loki1 settled once",
+			"pass": true,
+			"section": "K-CODE-07 K7 fate/Loki combinations"
+		},
+		{
+			"check": "fates000_loki1 fate record saved",
+			"pass": true,
+			"section": "K-CODE-07 K7 fate/Loki combinations"
+		},
+		{
+			"check": "fates000_loki1 Loki hint shown iff flag",
+			"pass": true,
+			"section": "K-CODE-07 K7 fate/Loki combinations"
+		},
+		{
+			"check": "fates000_loki1 result fate tile",
+			"pass": true,
+			"section": "K-CODE-07 K7 fate/Loki combinations"
+		},
+		{
+			"check": "fates001_loki1 count and Loki flag",
+			"pass": true,
+			"section": "K-CODE-07 K7 fate/Loki combinations"
+		},
+		{
+			"check": "fates001_loki1 settled once",
+			"pass": true,
+			"section": "K-CODE-07 K7 fate/Loki combinations"
+		},
+		{
+			"check": "fates001_loki1 fate record saved",
+			"pass": true,
+			"section": "K-CODE-07 K7 fate/Loki combinations"
+		},
+		{
+			"check": "fates001_loki1 Loki hint shown iff flag",
+			"pass": true,
+			"section": "K-CODE-07 K7 fate/Loki combinations"
+		},
+		{
+			"check": "fates001_loki1 result fate tile",
+			"pass": true,
+			"section": "K-CODE-07 K7 fate/Loki combinations"
+		},
+		{
+			"check": "fates010_loki1 count and Loki flag",
+			"pass": true,
+			"section": "K-CODE-07 K7 fate/Loki combinations"
+		},
+		{
+			"check": "fates010_loki1 settled once",
+			"pass": true,
+			"section": "K-CODE-07 K7 fate/Loki combinations"
+		},
+		{
+			"check": "fates010_loki1 fate record saved",
+			"pass": true,
+			"section": "K-CODE-07 K7 fate/Loki combinations"
+		},
+		{
+			"check": "fates010_loki1 Loki hint shown iff flag",
+			"pass": true,
+			"section": "K-CODE-07 K7 fate/Loki combinations"
+		},
+		{
+			"check": "fates010_loki1 result fate tile",
+			"pass": true,
+			"section": "K-CODE-07 K7 fate/Loki combinations"
+		},
+		{
+			"check": "fates011_loki1 count and Loki flag",
+			"pass": true,
+			"section": "K-CODE-07 K7 fate/Loki combinations"
+		},
+		{
+			"check": "fates011_loki1 settled once",
+			"pass": true,
+			"section": "K-CODE-07 K7 fate/Loki combinations"
+		},
+		{
+			"check": "fates011_loki1 fate record saved",
+			"pass": true,
+			"section": "K-CODE-07 K7 fate/Loki combinations"
+		},
+		{
+			"check": "fates011_loki1 Loki hint shown iff flag",
+			"pass": true,
+			"section": "K-CODE-07 K7 fate/Loki combinations"
+		},
+		{
+			"check": "fates011_loki1 result fate tile",
+			"pass": true,
+			"section": "K-CODE-07 K7 fate/Loki combinations"
+		},
+		{
+			"check": "fates100_loki1 count and Loki flag",
+			"pass": true,
+			"section": "K-CODE-07 K7 fate/Loki combinations"
+		},
+		{
+			"check": "fates100_loki1 settled once",
+			"pass": true,
+			"section": "K-CODE-07 K7 fate/Loki combinations"
+		},
+		{
+			"check": "fates100_loki1 fate record saved",
+			"pass": true,
+			"section": "K-CODE-07 K7 fate/Loki combinations"
+		},
+		{
+			"check": "fates100_loki1 Loki hint shown iff flag",
+			"pass": true,
+			"section": "K-CODE-07 K7 fate/Loki combinations"
+		},
+		{
+			"check": "fates100_loki1 result fate tile",
+			"pass": true,
+			"section": "K-CODE-07 K7 fate/Loki combinations"
+		},
+		{
+			"check": "fates101_loki1 count and Loki flag",
+			"pass": true,
+			"section": "K-CODE-07 K7 fate/Loki combinations"
+		},
+		{
+			"check": "fates101_loki1 settled once",
+			"pass": true,
+			"section": "K-CODE-07 K7 fate/Loki combinations"
+		},
+		{
+			"check": "fates101_loki1 fate record saved",
+			"pass": true,
+			"section": "K-CODE-07 K7 fate/Loki combinations"
+		},
+		{
+			"check": "fates101_loki1 Loki hint shown iff flag",
+			"pass": true,
+			"section": "K-CODE-07 K7 fate/Loki combinations"
+		},
+		{
+			"check": "fates101_loki1 result fate tile",
+			"pass": true,
+			"section": "K-CODE-07 K7 fate/Loki combinations"
+		},
+		{
+			"check": "fates110_loki1 count and Loki flag",
+			"pass": true,
+			"section": "K-CODE-07 K7 fate/Loki combinations"
+		},
+		{
+			"check": "fates110_loki1 settled once",
+			"pass": true,
+			"section": "K-CODE-07 K7 fate/Loki combinations"
+		},
+		{
+			"check": "fates110_loki1 fate record saved",
+			"pass": true,
+			"section": "K-CODE-07 K7 fate/Loki combinations"
+		},
+		{
+			"check": "fates110_loki1 Loki hint shown iff flag",
+			"pass": true,
+			"section": "K-CODE-07 K7 fate/Loki combinations"
+		},
+		{
+			"check": "fates110_loki1 result fate tile",
+			"pass": true,
+			"section": "K-CODE-07 K7 fate/Loki combinations"
+		},
+		{
+			"check": "fates111_loki1 count and Loki flag",
+			"pass": true,
+			"section": "K-CODE-07 K7 fate/Loki combinations"
+		},
+		{
+			"check": "fates111_loki1 settled once",
+			"pass": true,
+			"section": "K-CODE-07 K7 fate/Loki combinations"
+		},
+		{
+			"check": "fates111_loki1 fate record saved",
+			"pass": true,
+			"section": "K-CODE-07 K7 fate/Loki combinations"
+		},
+		{
+			"check": "fates111_loki1 Loki hint shown iff flag",
+			"pass": true,
+			"section": "K-CODE-07 K7 fate/Loki combinations"
+		},
+		{
+			"check": "fates111_loki1 result fate tile",
+			"pass": true,
+			"section": "K-CODE-07 K7 fate/Loki combinations"
+		},
+		{
+			"check": "final Boss freezes combat",
+			"pass": true,
+			"section": "K-CODE-07 ending skip and settlement"
+		},
+		{
+			"check": "ending shown after settlement frozen",
+			"pass": true,
+			"section": "K-CODE-07 ending skip and settlement"
+		},
+		{
+			"check": "read_all beat 0",
+			"pass": true,
+			"section": "K-CODE-07 ending skip and settlement"
+		},
+		{
+			"check": "read_all beat 1",
+			"pass": true,
+			"section": "K-CODE-07 ending skip and settlement"
+		},
+		{
+			"check": "read_all beat 2",
+			"pass": true,
+			"section": "K-CODE-07 ending skip and settlement"
+		},
+		{
+			"check": "read_all beat 3",
+			"pass": true,
+			"section": "K-CODE-07 ending skip and settlement"
+		},
+		{
+			"check": "read_all beat 4",
+			"pass": true,
+			"section": "K-CODE-07 ending skip and settlement"
+		},
+		{
+			"check": "read_all ending closed",
+			"pass": true,
+			"section": "K-CODE-07 ending skip and settlement"
+		},
+		{
+			"check": "read_all same snapshot keeps fate and Loki hint",
+			"pass": true,
+			"section": "K-CODE-07 ending skip and settlement"
+		},
+		{
+			"check": "read_all exactly one result screen",
+			"pass": true,
+			"section": "K-CODE-07 ending skip and settlement"
+		},
+		{
+			"check": "read_all no repeated reward or save",
+			"pass": true,
+			"section": "K-CODE-07 ending skip and settlement"
+		},
+		{
+			"check": "read_all world stays paused while reading",
+			"pass": true,
+			"section": "K-CODE-07 ending skip and settlement"
+		},
+		{
+			"check": "final Boss freezes combat",
+			"pass": true,
+			"section": "K-CODE-07 ending skip and settlement"
+		},
+		{
+			"check": "ending shown after settlement frozen",
+			"pass": true,
+			"section": "K-CODE-07 ending skip and settlement"
+		},
+		{
+			"check": "skip_at_0 reached beat",
+			"pass": true,
+			"section": "K-CODE-07 ending skip and settlement"
+		},
+		{
+			"check": "skip_at_0 ending closed",
+			"pass": true,
+			"section": "K-CODE-07 ending skip and settlement"
+		},
+		{
+			"check": "skip_at_0 same snapshot keeps fate and Loki hint",
+			"pass": true,
+			"section": "K-CODE-07 ending skip and settlement"
+		},
+		{
+			"check": "skip_at_0 exactly one result screen",
+			"pass": true,
+			"section": "K-CODE-07 ending skip and settlement"
+		},
+		{
+			"check": "skip_at_0 no repeated reward or save",
+			"pass": true,
+			"section": "K-CODE-07 ending skip and settlement"
+		},
+		{
+			"check": "skip_at_0 world stays paused while reading",
+			"pass": true,
+			"section": "K-CODE-07 ending skip and settlement"
+		},
+		{
+			"check": "final Boss freezes combat",
+			"pass": true,
+			"section": "K-CODE-07 ending skip and settlement"
+		},
+		{
+			"check": "ending shown after settlement frozen",
+			"pass": true,
+			"section": "K-CODE-07 ending skip and settlement"
+		},
+		{
+			"check": "skip_at_1 reached beat",
+			"pass": true,
+			"section": "K-CODE-07 ending skip and settlement"
+		},
+		{
+			"check": "skip_at_1 ending closed",
+			"pass": true,
+			"section": "K-CODE-07 ending skip and settlement"
+		},
+		{
+			"check": "skip_at_1 same snapshot keeps fate and Loki hint",
+			"pass": true,
+			"section": "K-CODE-07 ending skip and settlement"
+		},
+		{
+			"check": "skip_at_1 exactly one result screen",
+			"pass": true,
+			"section": "K-CODE-07 ending skip and settlement"
+		},
+		{
+			"check": "skip_at_1 no repeated reward or save",
+			"pass": true,
+			"section": "K-CODE-07 ending skip and settlement"
+		},
+		{
+			"check": "skip_at_1 world stays paused while reading",
+			"pass": true,
+			"section": "K-CODE-07 ending skip and settlement"
+		},
+		{
+			"check": "final Boss freezes combat",
+			"pass": true,
+			"section": "K-CODE-07 ending skip and settlement"
+		},
+		{
+			"check": "ending shown after settlement frozen",
+			"pass": true,
+			"section": "K-CODE-07 ending skip and settlement"
+		},
+		{
+			"check": "skip_at_2 reached beat",
+			"pass": true,
+			"section": "K-CODE-07 ending skip and settlement"
+		},
+		{
+			"check": "skip_at_2 ending closed",
+			"pass": true,
+			"section": "K-CODE-07 ending skip and settlement"
+		},
+		{
+			"check": "skip_at_2 same snapshot keeps fate and Loki hint",
+			"pass": true,
+			"section": "K-CODE-07 ending skip and settlement"
+		},
+		{
+			"check": "skip_at_2 exactly one result screen",
+			"pass": true,
+			"section": "K-CODE-07 ending skip and settlement"
+		},
+		{
+			"check": "skip_at_2 no repeated reward or save",
+			"pass": true,
+			"section": "K-CODE-07 ending skip and settlement"
+		},
+		{
+			"check": "skip_at_2 world stays paused while reading",
+			"pass": true,
+			"section": "K-CODE-07 ending skip and settlement"
+		},
+		{
+			"check": "final Boss freezes combat",
+			"pass": true,
+			"section": "K-CODE-07 ending skip and settlement"
+		},
+		{
+			"check": "ending shown after settlement frozen",
+			"pass": true,
+			"section": "K-CODE-07 ending skip and settlement"
+		},
+		{
+			"check": "skip_at_3 reached beat",
+			"pass": true,
+			"section": "K-CODE-07 ending skip and settlement"
+		},
+		{
+			"check": "skip_at_3 ending closed",
+			"pass": true,
+			"section": "K-CODE-07 ending skip and settlement"
+		},
+		{
+			"check": "skip_at_3 same snapshot keeps fate and Loki hint",
+			"pass": true,
+			"section": "K-CODE-07 ending skip and settlement"
+		},
+		{
+			"check": "skip_at_3 exactly one result screen",
+			"pass": true,
+			"section": "K-CODE-07 ending skip and settlement"
+		},
+		{
+			"check": "skip_at_3 no repeated reward or save",
+			"pass": true,
+			"section": "K-CODE-07 ending skip and settlement"
+		},
+		{
+			"check": "skip_at_3 world stays paused while reading",
+			"pass": true,
+			"section": "K-CODE-07 ending skip and settlement"
+		},
+		{
+			"check": "final Boss freezes combat",
+			"pass": true,
+			"section": "K-CODE-07 ending skip and settlement"
+		},
+		{
+			"check": "ending shown after settlement frozen",
+			"pass": true,
+			"section": "K-CODE-07 ending skip and settlement"
+		},
+		{
+			"check": "skip_at_4 reached beat",
+			"pass": true,
+			"section": "K-CODE-07 ending skip and settlement"
+		},
+		{
+			"check": "skip_at_4 ending closed",
+			"pass": true,
+			"section": "K-CODE-07 ending skip and settlement"
+		},
+		{
+			"check": "skip_at_4 same snapshot keeps fate and Loki hint",
+			"pass": true,
+			"section": "K-CODE-07 ending skip and settlement"
+		},
+		{
+			"check": "skip_at_4 exactly one result screen",
+			"pass": true,
+			"section": "K-CODE-07 ending skip and settlement"
+		},
+		{
+			"check": "skip_at_4 no repeated reward or save",
+			"pass": true,
+			"section": "K-CODE-07 ending skip and settlement"
+		},
+		{
+			"check": "skip_at_4 world stays paused while reading",
+			"pass": true,
+			"section": "K-CODE-07 ending skip and settlement"
+		},
+		{
+			"check": "v4 save loads with empty fates",
+			"pass": true,
+			"section": "K-CODE-07 save compatibility"
+		},
+		{
+			"check": "fate records union across runs",
+			"pass": true,
+			"section": "K-CODE-07 save compatibility"
+		},
+		{
+			"check": "fates persisted and reloaded",
+			"pass": true,
+			"section": "K-CODE-07 save compatibility"
+		},
+		{
+			"check": "save version 5",
+			"pass": true,
+			"section": "K-CODE-07 save compatibility"
+		},
+		{
+			"check": "malformed fates ignored",
+			"pass": true,
+			"section": "K-CODE-07 save compatibility"
+		},
+		{
+			"check": "scene exit leaves no K nodes",
+			"pass": true,
+			"section": "cleanup"
+		},
+		{
+			"check": "spatial index cleared",
+			"pass": true,
+			"section": "cleanup"
+		}
+	],
+	"scope": "headless logic, controlled timing (manual physics steps / forced HP); not visual or full-play acceptance"
+}

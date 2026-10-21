@@ -1,0 +1,46 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+OpenGL API 4.1 Metal - 90.5 - Compatibility - Using Device: Apple - Apple M2
+
+SCRIPT ERROR: Compile Error: Identifier not found: Settings
+          at: GDScript::reload (res://scripts/entities/player.gd:354)
+SCRIPT ERROR: Compile Error: Identifier not found: Settings
+          at: GDScript::reload (res://scripts/effects/fx_layer.gd:29)
+SCRIPT ERROR: Compile Error: Identifier not found: Save
+          at: GDScript::reload (res://scripts/game.gd:426)
+SCRIPT ERROR: Compile Error: Failed to compile depended scripts.
+          at: GDScript::reload (res://scripts/entities/einherjar.gd:0)
+SCRIPT ERROR: Compile Error: Failed to compile depended scripts.
+          at: GDScript::reload (res://scripts/gods/god_power.gd:0)
+SCRIPT ERROR: Compile Error: Failed to compile depended scripts.
+          at: GDScript::reload (res://scripts/entities/enemy.gd:0)
+SCRIPT ERROR: Compile Error: Failed to compile depended scripts.
+          at: GDScript::reload (res://scripts/bosses/boss.gd:0)
+SCRIPT ERROR: Compile Error: Failed to compile depended scripts.
+          at: GDScript::reload (res://tools/acceptance_vigrid_soak.gd:0)
+ERROR: Failed to load script "res://tools/acceptance_vigrid_soak.gd" with error "Compilation failed".
+   at: load (modules/gdscript/gdscript_resource_format.cpp:46)
+SCRIPT ERROR: Invalid access to property or key 'pause_menu' on a base object of type 'Node2D'.
+          at: _process (res://tools/acceptance_vigrid_soak.gd:99)
+          GDScript backtrace (most recent call first):
+              [0] _process (res://tools/acceptance_vigrid_soak.gd:99)
+SCRIPT ERROR: Invalid access to property or key 'level_up_panel' on a base object of type 'Node2D'.
+          at: _new_game (res://tools/stress_vigrid.gd:69)
+          GDScript backtrace (most recent call first):
+              [0] _new_game (res://tools/stress_vigrid.gd:69)
+SCRIPT ERROR: Invalid assignment of property or key '_spawn_timer' with value of type 'float' on a base object of type 'Node2D'.
+          at: _new_game (res://tools/acceptance_vigrid_soak.gd:82)
+          GDScript backtrace (most recent call first):
+              [0] _new_game (res://tools/acceptance_vigrid_soak.gd:82)
+              [1] _new_game (res://tools/stress_vigrid.gd:69)
+SCRIPT ERROR: Invalid assignment of property or key 'elapsed' with value of type 'float' on a base object of type 'Node2D'.
+          at: _measure (res://tools/acceptance_vigrid_soak.gd:142)
+          GDScript backtrace (most recent call first):
+              [0] _measure (res://tools/acceptance_vigrid_soak.gd:142)
+              [1] _run (res://tools/acceptance_vigrid_soak.gd:39)
+              [2] _new_game (res://tools/acceptance_vigrid_soak.gd:82)
+              [3] _new_game (res://tools/stress_vigrid.gd:69)
+SOAK_DONE {"reentries":0,"violations":[],"wall_seconds":0.001}
+SCRIPT ERROR: Invalid access to property or key 'pause_menu' on a base object of type 'Node2D'.
+          at: _process (res://tools/acceptance_vigrid_soak.gd:99)
+          GDScript backtrace (most recent call first):
+              [0] _process (res://tools/acceptance_vigrid_soak.gd:99)

@@ -1,0 +1,93 @@
+[
+  {
+    "name": "density_buffers",
+    "command": [
+      "/opt/homebrew/bin/godot",
+      "--headless",
+      "--path",
+      "/Users/zhangjunqiu/Desktop/无限恐怖",
+      "--fixed-fps",
+      "60",
+      "--script",
+      "tools/test_density_buffers.gd",
+      "--",
+      "--save-file=/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskK_independent_qa_2026-10-20/density_buffers_save.json",
+      "--settings-file=/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskK_independent_qa_2026-10-20/settings_zh.cfg",
+      "--output=/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskK_independent_qa_2026-10-20/results/density_buffers"
+    ],
+    "exit_code": 0,
+    "wall_seconds": 2.7947888374328613,
+    "other_godot_before": [],
+    "other_godot_during": []
+  },
+  {
+    "name": "density_after",
+    "command": [
+      "/opt/homebrew/bin/godot",
+      "--path",
+      "/Users/zhangjunqiu/Desktop/无限恐怖",
+      "--max-fps",
+      "60",
+      "--script",
+      "tools/acceptance_vigrid_soak.gd",
+      "--",
+      "--save-file=/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskK_independent_qa_2026-10-20/density_after_save.json",
+      "--settings-file=/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskK_independent_qa_2026-10-20/settings_zh.cfg",
+      "--output=/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskK_independent_qa_2026-10-20/results/density_after",
+      "--seconds=55",
+      "--stages=-1,1",
+      "--awake=odin",
+      "--reentries=0"
+    ],
+    "exit_code": 1,
+    "wall_seconds": 115.29900097846985,
+    "other_godot_before": [],
+    "other_godot_during": []
+  },
+  {
+    "name": "release_combat_v4",
+    "command": [
+      "/opt/homebrew/bin/godot",
+      "--headless",
+      "--path",
+      "/Users/zhangjunqiu/Desktop/无限恐怖",
+      "--fixed-fps",
+      "60",
+      "--script",
+      "res://assets/source/taskK_independent_qa_2026-10-20/diagnostics/combat.gd",
+      "--",
+      "--save-file=/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskK_independent_qa_2026-10-20/release_combat_v4_save.json",
+      "--settings-file=/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskK_independent_qa_2026-10-20/settings_zh.cfg",
+      "--output=/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskK_independent_qa_2026-10-20/results/release_combat_v4"
+    ],
+    "exit_code": 0,
+    "wall_seconds": 5.603771924972534,
+    "other_godot_before": [],
+    "other_godot_during": []
+  },
+  {
+    "name": "density_profile_fixed",
+    "command": [
+      "/opt/homebrew/bin/godot",
+      "--path",
+      "/Users/zhangjunqiu/Desktop/无限恐怖",
+      "--max-fps",
+      "60",
+      "--script",
+      "tools/acceptance_vigrid_soak.gd",
+      "--",
+      "--save-file=/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskK_independent_qa_2026-10-20/density_profile_fixed_save.json",
+      "--settings-file=/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskK_independent_qa_2026-10-20/settings_zh.cfg",
+      "--output=/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskK_independent_qa_2026-10-20/results/density_profile_fixed",
+      "--seconds=30",
+      "--stages=-1",
+      "--awake=odin",
+      "--reentries=0",
+      "--profile-gods"
+    ],
+    "exit_code": 1,
+    "wall_seconds": 33.46728777885437,
+    "other_godot_before": [],
+    "other_godot_during": []
+  }
+]

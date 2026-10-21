@@ -1,0 +1,46 @@
+[
+  {
+    "id": "baseline_seeded",
+    "command": [
+      "/Applications/Godot.app/Contents/MacOS/Godot",
+      "--path",
+      "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskN_performance_2026-10-21/runtime",
+      "--max-fps",
+      "60",
+      "--script",
+      "tools/acceptance_vigrid_soak.gd",
+      "--",
+      "--seconds=55",
+      "--stages=-1,1",
+      "--awake=odin",
+      "--reentries=0",
+      "--save-file=/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskN_performance_2026-10-21/baseline_seeded_save.json",
+      "--settings-file=/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskK_independent_qa_2026-10-20/settings_zh.cfg",
+      "--output=/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskN_performance_2026-10-21/results/baseline_seeded"
+    ],
+    "exit_code": 1,
+    "wall_seconds": 113.254
+  },
+  {
+    "id": "final_extreme",
+    "command": [
+      "/Applications/Godot.app/Contents/MacOS/Godot",
+      "--path",
+      "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskN_performance_2026-10-21/runtime",
+      "--max-fps",
+      "60",
+      "--script",
+      "tools/acceptance_vigrid_soak.gd",
+      "--",
+      "--seconds=55",
+      "--stages=-1,1",
+      "--awake=odin",
+      "--reentries=0",
+      "--save-file=/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskN_performance_2026-10-21/final_extreme_save.json",
+      "--settings-file=/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskK_independent_qa_2026-10-20/settings_zh.cfg",
+      "--output=/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskN_performance_2026-10-21/results/final_extreme"
+    ],
+    "exit_code": 1,
+    "wall_seconds": 113.459
+  }
+]

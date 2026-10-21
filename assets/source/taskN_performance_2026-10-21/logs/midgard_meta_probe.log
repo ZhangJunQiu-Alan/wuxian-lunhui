@@ -1,0 +1,43 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+EVENT {"character":"gunslinger","event":"start","headless":true,"level":"midgard","t":0.0,"wall":0.288}
+EVENT {"event":"faith","god":"thor","t":0.0,"wall":0.306}
+EVENT {"event":"faith","god":"baldr","t":46.98,"wall":1.372}
+EVENT {"event":"faith","god":"odin","t":136.98,"wall":4.107}
+EVENT {"boss":"","boss_state":"","event":"damage","hp":131.491694444445,"lost":8.50830555555549,"position":"(754.7644, -109.3772)","t":140.17,"wall":4.245}
+EVENT {"boss":"","boss_state":"","event":"damage","hp":123.957277777777,"lost":8.56441666666667,"position":"(599.316, -174.8719)","t":141.9,"wall":4.315}
+EVENT {"boss":"","boss_state":"","event":"damage","hp":131.101638888889,"lost":8.89836111111137,"position":"(461.0316, 642.1251)","t":166.67,"wall":5.211}
+EVENT {"boss":"","boss_state":"","event":"damage","hp":131.015694444444,"lost":8.98430555555586,"position":"(461.0325, 642.1254)","t":178.3,"wall":5.645}
+EVENT {"event":"boss_spawn","hp":1658.62068965537,"id":"skoll","t":180.0,"wall":5.737}
+EVENT {"boss":"skoll","boss_state":"chase","event":"damage","hp":130.923138888889,"lost":9.0768611111115,"position":"(461.0317, 642.1254)","t":185.27,"wall":5.993}
+EVENT {"defeated":["skoll"],"event":"boss_gone","id":"skoll","t":187.0,"wall":6.064}
+EVENT {"event":"faith","god":"freyja","t":204.68,"wall":6.848}
+EVENT {"boss":"","boss_state":"","event":"damage","hp":131.356527777777,"lost":8.64347222222307,"position":"(481.0618, 135.1908)","t":232.02,"wall":8.176}
+EVENT {"boss":"","boss_state":"","event":"damage","hp":129.642138888888,"lost":10.3578611111119,"position":"(1513.065, 1604.569)","t":293.97,"wall":11.358}
+EVENT {"boss":"","boss_state":"","event":"damage","hp":129.018361111111,"lost":10.9816388888891,"position":"(1632.472, 513.2611)","t":346.45,"wall":14.605}
+EVENT {"boss":"","boss_state":"","event":"damage","hp":119.116277777776,"lost":10.9420833333336,"position":"(1697.988, 428.6913)","t":348.2,"wall":14.7}
+EVENT {"event":"boss_spawn","hp":2667.24137931035,"id":"hati","t":360.0,"wall":15.445}
+EVENT {"defeated":["skoll","hati"],"event":"boss_gone","id":"hati","t":370.3,"wall":16.068}
+EVENT {"boss":"","boss_state":"","event":"damage","hp":128.363666666667,"lost":11.6363333333329,"position":"(1036.354, 386.0794)","t":402.73,"wall":17.827}
+EVENT {"boss":"","boss_state":"","event":"damage","hp":127.813194444445,"lost":12.1868055555547,"position":"(1212.307, 1666.807)","t":448.57,"wall":20.899}
+EVENT {"boss":"","boss_state":"","event":"damage","hp":127.464750000001,"lost":12.5352499999988,"position":"(731.2357, -280.7201)","t":482.62,"wall":23.913}
+EVENT {"boss":"","boss_state":"","event":"damage","hp":127.399805555557,"lost":12.6001944444432,"position":"(852.9606, -249.804)","t":484.55,"wall":24.183}
+EVENT {"boss":"","boss_state":"","event":"damage","hp":127.399805555557,"lost":12.6001944444432,"position":"(1196.301, -205.071)","t":489.83,"wall":24.774}
+EVENT {"boss":"","boss_state":"","event":"damage","hp":127.413027777779,"lost":12.586972222221,"position":"(1196.301, -205.071)","t":491.9,"wall":24.983}
+EVENT {"boss":"","boss_state":"","event":"damage","hp":122.952555555557,"lost":12.6504722222209,"position":"(1196.301, -205.071)","t":493.9,"wall":25.159}
+EVENT {"boss":"","boss_state":"","event":"damage","hp":115.395805555559,"lost":12.6967499999987,"position":"(1196.301, -205.0711)","t":495.82,"wall":25.319}
+EVENT {"boss":"","boss_state":"","event":"damage","hp":103.60994444445,"lost":12.6858611111098,"position":"(1196.302, -205.0718)","t":497.33,"wall":25.438}
+EVENT {"boss":"","boss_state":"","event":"damage","hp":91.5031944444516,"lost":12.6967499999986,"position":"(1196.302, -205.0718)","t":498.33,"wall":25.515}
+EVENT {"boss":"","boss_state":"","event":"damage","hp":79.4265000000088,"lost":12.7266944444431,"position":"(1196.302, -205.0718)","t":499.43,"wall":25.597}
+EVENT {"boss":"","boss_state":"","event":"damage","hp":78.6707500000107,"lost":12.7457499999986,"position":"(1196.301, -205.071)","t":501.1,"wall":25.744}
+EVENT {"boss":"","boss_state":"","event":"damage","hp":73.3913888889013,"lost":12.7593611111097,"position":"(1196.301, -205.0718)","t":501.92,"wall":25.819}
+EVENT {"boss":"","boss_state":"","event":"damage","hp":63.9284166666807,"lost":12.7729722222208,"position":"(1196.301, -205.0718)","t":502.45,"wall":25.873}
+EVENT {"boss":"","boss_state":"","event":"damage","hp":68.6554444444606,"lost":12.7729722222208,"position":"(1196.301, -205.071)","t":504.97,"wall":26.093}
+EVENT {"boss":"","boss_state":"","event":"damage","hp":68.6689166666852,"lost":12.8165277777763,"position":"(1196.302, -205.0718)","t":508.03,"wall":26.325}
+EVENT {"boss":"","boss_state":"","event":"damage","hp":56.5178888889093,"lost":12.8410277777763,"position":"(1196.302, -205.0718)","t":509.2,"wall":26.408}
+EVENT {"boss":"","boss_state":"","event":"damage","hp":44.2186944444662,"lost":12.849194444443,"position":"(1189.957, -203.2033)","t":510.13,"wall":26.471}
+EVENT {"event":"boss_spawn","hp":4241.48706896447,"id":"hrym","t":540.02,"wall":29.082}
+EVENT {"boss":"hrym","boss_state":"chase","event":"damage","hp":110.0,"lost":30.0,"position":"(740.6043, 367.8777)","t":544.55,"wall":29.469}
+EVENT {"defeated":["skoll","hati","hrym"],"event":"boss_gone","id":"hrym","t":549.75,"wall":29.884}
+EVENT {"cleared_this_run":true,"cleared_vigrid":false,"event":"result","fates_saved":{},"level_id":"midgard","run":{"elapsed":549.749999999829,"hidden_found":1,"hidden_total":4,"kills":1536,"level":32,"quests_done":0,"quests_seen":4,"reward_points":985,"reward_total":985,"story_points":0,"story_total":0},"save_clears":3,"save_runs":1,"t":549.75,"wall":30.02}
+PLAYTHROUGH_DONE level=549.7 wall=30.0 enemies_max=75 p95=1.57ms cleared=false

@@ -1,8 +1,9 @@
 class_name BossFx
 
 const ROOT := "res://assets/sprites/effects/bosses/"
-const FAST := ["skoll_dash_trail", "skoll_bite", "hati_lunge_trail", "hrym_block_spark", "hrym_ice_break", "garm_bite", "garm_chain_break", "nidhogg_poison_breath", "nidhogg_burrow_dust", "nidhogg_emerge_burst", "nidhogg_gnaw_stagger"]
-const STILL := ["garm_chain_link", "hel_life_ground", "hel_death_ground"]
+const FAST := ["skoll_dash_trail", "skoll_bite", "hati_lunge_trail", "hrym_block_spark", "hrym_ice_break", "garm_bite", "garm_chain_break", "nidhogg_poison_breath", "nidhogg_burrow_dust", "nidhogg_emerge_burst", "nidhogg_gnaw_stagger",
+	"surtr_sword_arc", "surtr_sword_arc_large", "surtr_final_fire", "fire_giant_explosion"]
+const STILL := ["garm_chain_link", "hel_life_ground", "hel_death_ground", "surtr_safe_rune", "fenrir_bind_link"]
 const MAX_EFFECTS := 96
 
 static var _textures: Dictionary = {}
@@ -28,6 +29,8 @@ static func anchor(id: String, size: Vector2) -> Vector2:
 		return Vector2(size.x, size.y * 0.5)
 	if id == "nidhogg_poison_breath":
 		return Vector2(4, 32)
+	if id == "surtr_gate":
+		return Vector2(64, 126)
 	return size * 0.5
 
 
@@ -131,6 +134,22 @@ static func draw_band(canvas: CanvasItem, id: String, age: float, center: Vector
 					PackedVector2Array([Vector2(u0, 0), Vector2(u1, 0), Vector2(u1, 1), Vector2(u0, 1)]), strip)
 			at = tile_end
 	return true
+
+
+## 一次画很多个四边形（每 4 个点一个，顺序 a b c d），只提交一条绘制命令。texture 为 null 时画纯色
+## 第 3 关的火墙条带、蛇身、终焉之火范围外的红色区域都有几百段，逐段 draw_polygon 在敌人多时很拖帧
+static func draw_quads(canvas: CanvasItem, points: PackedVector2Array, uvs: PackedVector2Array, texture: Texture2D, tint: Color = Color.WHITE) -> void:
+	if points.size() < 4:
+		return
+	var indices := PackedInt32Array()
+	for q in points.size() / 4:
+		var i := q * 4
+		indices.append_array([i, i + 1, i + 2, i, i + 2, i + 3])
+	var colors := PackedColorArray()
+	colors.resize(points.size())
+	colors.fill(tint)
+	RenderingServer.canvas_item_add_triangle_array(canvas.get_canvas_item(), indices, points, colors, uvs if texture else PackedVector2Array(),
+		PackedInt32Array(), PackedFloat32Array(), texture.get_rid() if texture else RID())
 
 
 static func draw_chain(canvas: CanvasItem, points: PackedVector2Array) -> bool:

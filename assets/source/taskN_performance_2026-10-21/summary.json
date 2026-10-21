@@ -1,0 +1,1291 @@
+{
+  "generated_at": "2026-10-21T01:00:39.331017+08:00",
+  "production_integration": true,
+  "git_commit": false,
+  "git_push": false,
+  "pressure": {
+    "baseline": {
+      "completed": true,
+      "wall_seconds": 110.672,
+      "violations": [
+        "stage -1 active time 43.0 too short for wall 55.0",
+        "stage 1 active time 47.5 too short for wall 55.0"
+      ],
+      "stages": [
+        {
+          "boss": "none",
+          "p50_ms": 16.668,
+          "p95_ms": 29.303,
+          "p99_ms": 260.872,
+          "max_ms": 663.938,
+          "frames": 1658,
+          "over_100ms": 122,
+          "unpaused_seconds": 42.9961996666449,
+          "wall_seconds": 55.012,
+          "max_enemies": 350
+        },
+        {
+          "boss": "fenrir",
+          "p50_ms": 16.673,
+          "p95_ms": 159.057,
+          "p99_ms": 243.114,
+          "max_ms": 439.246,
+          "frames": 1949,
+          "over_100ms": 118,
+          "unpaused_seconds": 47.4830876666409,
+          "wall_seconds": 55.023,
+          "max_enemies": 350
+        }
+      ],
+      "returns": []
+    },
+    "baseline_seeded": {
+      "completed": true,
+      "wall_seconds": 110.641,
+      "violations": [
+        "stage -1 active time 47.3 too short for wall 55.0",
+        "stage 1 active time 47.8 too short for wall 55.0"
+      ],
+      "stages": [
+        {
+          "boss": "none",
+          "p50_ms": 16.666,
+          "p95_ms": 25.82,
+          "p99_ms": 234.412,
+          "max_ms": 384.459,
+          "frames": 1904,
+          "over_100ms": 120,
+          "unpaused_seconds": 47.2658709999748,
+          "wall_seconds": 55.018,
+          "max_enemies": 350
+        },
+        {
+          "boss": "fenrir",
+          "p50_ms": 16.672,
+          "p95_ms": 156.248,
+          "p99_ms": 240.606,
+          "max_ms": 451.479,
+          "frames": 1972,
+          "over_100ms": 115,
+          "unpaused_seconds": 47.7854313333076,
+          "wall_seconds": 55.02,
+          "max_enemies": 350
+        }
+      ],
+      "returns": []
+    },
+    "final_extreme": {
+      "completed": true,
+      "wall_seconds": 110.702,
+      "violations": [
+        "stage -1 active time 48.8 too short for wall 55.0",
+        "stage 1 active time 48.1 too short for wall 55.0"
+      ],
+      "stages": [
+        {
+          "boss": "none",
+          "p50_ms": 16.668,
+          "p95_ms": 27.268,
+          "p99_ms": 213.42,
+          "max_ms": 414.775,
+          "frames": 2020,
+          "over_100ms": 118,
+          "unpaused_seconds": 48.8333333333053,
+          "wall_seconds": 55.017,
+          "max_enemies": 350
+        },
+        {
+          "boss": "fenrir",
+          "p50_ms": 16.674,
+          "p95_ms": 142.177,
+          "p99_ms": 234.108,
+          "max_ms": 361.762,
+          "frames": 2037,
+          "over_100ms": 109,
+          "unpaused_seconds": 48.1384766666389,
+          "wall_seconds": 55.023,
+          "max_enemies": 350
+        }
+      ],
+      "returns": []
+    },
+    "reachable": {
+      "completed": true,
+      "wall_seconds": 288.724,
+      "violations": [],
+      "stages": [
+        {
+          "boss": "none",
+          "p50_ms": 33.405,
+          "p95_ms": 107.993,
+          "p99_ms": 133.345,
+          "max_ms": 429.528,
+          "frames": 1302,
+          "over_100ms": 117,
+          "unpaused_seconds": 58.6292714444423,
+          "wall_seconds": 60.026,
+          "max_enemies": 350
+        },
+        {
+          "boss": "jormungandr",
+          "p50_ms": 16.662,
+          "p95_ms": 17.08,
+          "p99_ms": 21.587,
+          "max_ms": 337.709,
+          "frames": 3517,
+          "over_100ms": 4,
+          "unpaused_seconds": 60.0198460000332,
+          "wall_seconds": 60.026,
+          "max_enemies": 350
+        },
+        {
+          "boss": "fenrir",
+          "p50_ms": 19.83,
+          "p95_ms": 97.306,
+          "p99_ms": 127.049,
+          "max_ms": 549.98,
+          "frames": 1762,
+          "over_100ms": 73,
+          "unpaused_seconds": 58.8601637777725,
+          "wall_seconds": 60.032,
+          "max_enemies": 350
+        },
+        {
+          "boss": "surtr",
+          "p50_ms": 16.663,
+          "p95_ms": 17.102,
+          "p99_ms": 18.711,
+          "max_ms": 319.928,
+          "frames": 3533,
+          "over_100ms": 3,
+          "unpaused_seconds": 59.7014926666164,
+          "wall_seconds": 60.025,
+          "max_enemies": 350
+        }
+      ],
+      "returns": [
+        {
+          "draw_calls": 1136.0,
+          "enemies": 0,
+          "enemies_left": 0,
+          "fragments_left": 0,
+          "hazards": 0,
+          "hazards_left": 0,
+          "master_muted": true,
+          "node_classes": {},
+          "nodes": 325.0,
+          "objects": 2937.0,
+          "orphans": 0.0,
+          "physics_ms": 6.181,
+          "process_ms": 10.675,
+          "resources": 279.0,
+          "round": 0,
+          "rss_mb": 183.484375,
+          "same_sound_max": 4,
+          "sfx_voices": 4,
+          "static_mb": 82.3717670440674,
+          "voice_pool": 24
+        },
+        {
+          "draw_calls": 1136.0,
+          "enemies": 0,
+          "enemies_left": 0,
+          "fragments_left": 0,
+          "hazards": 0,
+          "hazards_left": 0,
+          "master_muted": true,
+          "node_classes": {},
+          "nodes": 325.0,
+          "objects": 2931.0,
+          "orphans": 0.0,
+          "physics_ms": 6.634,
+          "process_ms": 4.206,
+          "resources": 279.0,
+          "round": 1,
+          "rss_mb": 175.9375,
+          "same_sound_max": 0,
+          "sfx_voices": 0,
+          "static_mb": 82.3302726745605,
+          "voice_pool": 24
+        },
+        {
+          "draw_calls": 1136.0,
+          "enemies": 0,
+          "enemies_left": 0,
+          "fragments_left": 0,
+          "hazards": 0,
+          "hazards_left": 0,
+          "master_muted": true,
+          "node_classes": {},
+          "nodes": 325.0,
+          "objects": 2938.0,
+          "orphans": 0.0,
+          "physics_ms": 5.902,
+          "process_ms": 368.593,
+          "resources": 279.0,
+          "round": 2,
+          "rss_mb": 175.125,
+          "same_sound_max": 4,
+          "sfx_voices": 5,
+          "static_mb": 82.3882942199707,
+          "voice_pool": 24
+        },
+        {
+          "draw_calls": 1136.0,
+          "enemies": 0,
+          "enemies_left": 0,
+          "fragments_left": 0,
+          "hazards": 0,
+          "hazards_left": 0,
+          "master_muted": true,
+          "node_classes": {},
+          "nodes": 325.0,
+          "objects": 2933.0,
+          "orphans": 0.0,
+          "physics_ms": 5.147,
+          "process_ms": 332.16,
+          "resources": 279.0,
+          "round": 3,
+          "rss_mb": 174.28125,
+          "same_sound_max": 1,
+          "sfx_voices": 2,
+          "static_mb": 82.3557205200195,
+          "voice_pool": 24
+        },
+        {
+          "draw_calls": 1136.0,
+          "enemies": 0,
+          "enemies_left": 0,
+          "fragments_left": 0,
+          "hazards": 0,
+          "hazards_left": 0,
+          "master_muted": true,
+          "node_classes": {},
+          "nodes": 325.0,
+          "objects": 2942.0,
+          "orphans": 0.0,
+          "physics_ms": 4.935,
+          "process_ms": 349.789,
+          "resources": 279.0,
+          "round": 4,
+          "rss_mb": 148.984375,
+          "same_sound_max": 4,
+          "sfx_voices": 7,
+          "static_mb": 82.414966583252,
+          "voice_pool": 24
+        },
+        {
+          "draw_calls": 1136.0,
+          "enemies": 0,
+          "enemies_left": 0,
+          "fragments_left": 0,
+          "hazards": 0,
+          "hazards_left": 0,
+          "master_muted": true,
+          "node_classes": {},
+          "nodes": 325.0,
+          "objects": 2935.0,
+          "orphans": 0.0,
+          "physics_ms": 6.481,
+          "process_ms": 288.174,
+          "resources": 279.0,
+          "round": 5,
+          "rss_mb": 151.796875,
+          "same_sound_max": 2,
+          "sfx_voices": 3,
+          "static_mb": 82.3728580474854,
+          "voice_pool": 24
+        },
+        {
+          "draw_calls": 1136.0,
+          "enemies": 0,
+          "enemies_left": 0,
+          "fragments_left": 0,
+          "hazards": 0,
+          "hazards_left": 0,
+          "master_muted": true,
+          "node_classes": {},
+          "nodes": 325.0,
+          "objects": 2941.0,
+          "orphans": 0.0,
+          "physics_ms": 4.246,
+          "process_ms": 368.449,
+          "resources": 279.0,
+          "round": 6,
+          "rss_mb": 152.03125,
+          "same_sound_max": 4,
+          "sfx_voices": 7,
+          "static_mb": 82.4301662445068,
+          "voice_pool": 24
+        },
+        {
+          "draw_calls": 1136.0,
+          "enemies": 0,
+          "enemies_left": 0,
+          "fragments_left": 0,
+          "hazards": 0,
+          "hazards_left": 0,
+          "master_muted": true,
+          "node_classes": {},
+          "nodes": 325.0,
+          "objects": 2936.0,
+          "orphans": 0.0,
+          "physics_ms": 4.656,
+          "process_ms": 376.542,
+          "resources": 279.0,
+          "round": 7,
+          "rss_mb": 150.171875,
+          "same_sound_max": 2,
+          "sfx_voices": 2,
+          "static_mb": 82.3772773742676,
+          "voice_pool": 24
+        },
+        {
+          "draw_calls": 1136.0,
+          "enemies": 0,
+          "enemies_left": 0,
+          "fragments_left": 0,
+          "hazards": 0,
+          "hazards_left": 0,
+          "master_muted": true,
+          "node_classes": {},
+          "nodes": 325.0,
+          "objects": 2937.0,
+          "orphans": 0.0,
+          "physics_ms": 3.499,
+          "process_ms": 377.14,
+          "resources": 279.0,
+          "round": 8,
+          "rss_mb": 144.828125,
+          "same_sound_max": 4,
+          "sfx_voices": 7,
+          "static_mb": 82.4195899963379,
+          "voice_pool": 24
+        },
+        {
+          "draw_calls": 1136.0,
+          "enemies": 0,
+          "enemies_left": 0,
+          "fragments_left": 0,
+          "hazards": 0,
+          "hazards_left": 0,
+          "master_muted": true,
+          "node_classes": {},
+          "nodes": 325.0,
+          "objects": 2927.0,
+          "orphans": 0.0,
+          "physics_ms": 5.937,
+          "process_ms": 3.57,
+          "resources": 279.0,
+          "round": 9,
+          "rss_mb": 145.953125,
+          "same_sound_max": 0,
+          "sfx_voices": 0,
+          "static_mb": 82.3473262786865,
+          "voice_pool": 24
+        },
+        {
+          "draw_calls": 1136.0,
+          "enemies": 0,
+          "enemies_left": 0,
+          "fragments_left": 0,
+          "hazards": 0,
+          "hazards_left": 0,
+          "master_muted": true,
+          "node_classes": {},
+          "nodes": 325.0,
+          "objects": 2940.0,
+          "orphans": 0.0,
+          "physics_ms": 9.238,
+          "process_ms": 12.021,
+          "resources": 279.0,
+          "round": 10,
+          "rss_mb": 146.125,
+          "same_sound_max": 4,
+          "sfx_voices": 5,
+          "static_mb": 82.4107246398926,
+          "voice_pool": 24
+        },
+        {
+          "draw_calls": 1136.0,
+          "enemies": 0,
+          "enemies_left": 0,
+          "fragments_left": 0,
+          "hazards": 0,
+          "hazards_left": 0,
+          "master_muted": true,
+          "node_classes": {},
+          "nodes": 325.0,
+          "objects": 2934.0,
+          "orphans": 0.0,
+          "physics_ms": 7.12,
+          "process_ms": 5.416,
+          "resources": 279.0,
+          "round": 11,
+          "rss_mb": 145.984375,
+          "same_sound_max": 1,
+          "sfx_voices": 2,
+          "static_mb": 82.3885383605957,
+          "voice_pool": 24
+        }
+      ]
+    }
+  },
+  "technical_checks": {
+    "suites": [
+      {
+        "id": "spatial",
+        "checks": 481,
+        "failures": 0,
+        "exit_code": 0,
+        "engine_errors": false
+      },
+      {
+        "id": "combat",
+        "checks": 997,
+        "failures": 0,
+        "exit_code": 0,
+        "engine_errors": false
+      },
+      {
+        "id": "vigrid",
+        "checks": 368,
+        "failures": 0,
+        "exit_code": 0,
+        "engine_errors": false
+      },
+      {
+        "id": "acceptance",
+        "checks": 4612,
+        "failures": 0,
+        "exit_code": 0,
+        "engine_errors": false
+      },
+      {
+        "id": "god_fx",
+        "checks": 2270,
+        "failures": 0,
+        "exit_code": 0,
+        "engine_errors": false
+      },
+      {
+        "id": "odin",
+        "checks": 17,
+        "failures": 0,
+        "exit_code": 0,
+        "engine_errors": false
+      },
+      {
+        "id": "skadi",
+        "checks": 13,
+        "failures": 0,
+        "exit_code": 0,
+        "engine_errors": false
+      },
+      {
+        "id": "m_art",
+        "checks": 72,
+        "failures": 0,
+        "exit_code": 0,
+        "engine_errors": false
+      },
+      {
+        "id": "boss",
+        "checks": 572,
+        "failures": 0,
+        "exit_code": 0,
+        "engine_errors": false
+      },
+      {
+        "id": "cards",
+        "checks": 1840,
+        "failures": 0,
+        "exit_code": 0,
+        "engine_errors": false
+      },
+      {
+        "id": "combat_art",
+        "checks": 626,
+        "failures": 0,
+        "exit_code": 0,
+        "engine_errors": false
+      }
+    ],
+    "checks": 11868,
+    "failures": 0
+  },
+  "realtime_command": {
+    "command": [
+      "/Applications/Godot.app/Contents/MacOS/Godot",
+      "--path",
+      "/Users/zhangjunqiu/Desktop/无限恐怖",
+      "--max-fps",
+      "60",
+      "--script",
+      "tools/acceptance_vigrid_normal.gd",
+      "--",
+      "--meta-max",
+      "--seed=20261020",
+      "--save-file=/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskN_performance_2026-10-21/saves/normal_realtime.json",
+      "--settings-file=/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskN_performance_2026-10-21/saves/normal_realtime.cfg",
+      "--output=/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskN_performance_2026-10-21/results/normal_realtime"
+    ],
+    "running": false,
+    "mode": "real-window real-time normal-damage bot, max legitimate meta, no invincible/clock/enemy overrides",
+    "exit_code": 0,
+    "wall_seconds": 594.37,
+    "engine_errors": false
+  },
+  "checks": [
+    {
+      "id": "spatial",
+      "command": [
+        "/Applications/Godot.app/Contents/MacOS/Godot",
+        "--headless",
+        "--path",
+        "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskN_performance_2026-10-21/runtime",
+        "--script",
+        "tools/test_spatial_queries.gd",
+        "--",
+        "--save-file=/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskN_performance_2026-10-21/saves/spatial.json",
+        "--settings-file=/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskN_performance_2026-10-21/saves/spatial.cfg",
+        "--output=/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskN_performance_2026-10-21/results/spatial/"
+      ],
+      "running": false,
+      "exit_code": 0,
+      "wall_seconds": 1.498,
+      "engine_errors": false
+    },
+    {
+      "id": "combat",
+      "command": [
+        "/Applications/Godot.app/Contents/MacOS/Godot",
+        "--headless",
+        "--path",
+        "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskN_performance_2026-10-21/runtime",
+        "--script",
+        "tools/test_combat_regressions.gd",
+        "--",
+        "--save-file=/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskN_performance_2026-10-21/saves/combat.json",
+        "--settings-file=/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskN_performance_2026-10-21/saves/combat.cfg",
+        "--output=/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskN_performance_2026-10-21/results/combat/"
+      ],
+      "running": false,
+      "exit_code": 0,
+      "wall_seconds": 9.129,
+      "engine_errors": false
+    },
+    {
+      "id": "vigrid",
+      "command": [
+        "/Applications/Godot.app/Contents/MacOS/Godot",
+        "--headless",
+        "--path",
+        "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskN_performance_2026-10-21/runtime",
+        "--script",
+        "tools/test_vigrid.gd",
+        "--",
+        "--save-file=/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskN_performance_2026-10-21/saves/vigrid.json",
+        "--settings-file=/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskN_performance_2026-10-21/saves/vigrid.cfg",
+        "--output=/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskN_performance_2026-10-21/results/vigrid/"
+      ],
+      "running": false,
+      "exit_code": 0,
+      "wall_seconds": 27.631,
+      "engine_errors": false
+    },
+    {
+      "id": "acceptance",
+      "command": [
+        "/Applications/Godot.app/Contents/MacOS/Godot",
+        "--headless",
+        "--path",
+        "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskN_performance_2026-10-21/runtime",
+        "--script",
+        "tools/acceptance_vigrid.gd",
+        "--",
+        "--save-file=/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskN_performance_2026-10-21/saves/acceptance.json",
+        "--settings-file=/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskN_performance_2026-10-21/saves/acceptance.cfg",
+        "--output=/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskN_performance_2026-10-21/results/acceptance/"
+      ],
+      "running": false,
+      "exit_code": 0,
+      "wall_seconds": 83.933,
+      "engine_errors": false
+    },
+    {
+      "id": "god_fx",
+      "command": [
+        "/Applications/Godot.app/Contents/MacOS/Godot",
+        "--headless",
+        "--path",
+        "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskN_performance_2026-10-21/runtime",
+        "--script",
+        "tools/test_god_fx_cadence.gd",
+        "--",
+        "--save-file=/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskN_performance_2026-10-21/saves/god_fx.json",
+        "--settings-file=/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskN_performance_2026-10-21/saves/god_fx.cfg",
+        "--output=/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskN_performance_2026-10-21/results/god_fx/"
+      ],
+      "running": false,
+      "exit_code": 0,
+      "wall_seconds": 3.306,
+      "engine_errors": false
+    },
+    {
+      "id": "odin",
+      "command": [
+        "/Applications/Godot.app/Contents/MacOS/Godot",
+        "--headless",
+        "--path",
+        "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskN_performance_2026-10-21/runtime",
+        "--script",
+        "tools/test_odin_density.gd",
+        "--",
+        "--save-file=/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskN_performance_2026-10-21/saves/odin.json",
+        "--settings-file=/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskN_performance_2026-10-21/saves/odin.cfg",
+        "--output=/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskN_performance_2026-10-21/results/odin/"
+      ],
+      "running": false,
+      "exit_code": 0,
+      "wall_seconds": 3.268,
+      "engine_errors": false
+    },
+    {
+      "id": "skadi",
+      "command": [
+        "/Applications/Godot.app/Contents/MacOS/Godot",
+        "--headless",
+        "--path",
+        "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskN_performance_2026-10-21/runtime",
+        "--script",
+        "tools/test_skadi_balance.gd",
+        "--",
+        "--save-file=/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskN_performance_2026-10-21/saves/skadi.json",
+        "--settings-file=/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskN_performance_2026-10-21/saves/skadi.cfg",
+        "--output=/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskN_performance_2026-10-21/results/skadi/"
+      ],
+      "running": false,
+      "exit_code": 0,
+      "wall_seconds": 43.833,
+      "engine_errors": false
+    },
+    {
+      "id": "m_art",
+      "command": [
+        "/Applications/Godot.app/Contents/MacOS/Godot",
+        "--headless",
+        "--path",
+        "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskN_performance_2026-10-21/runtime",
+        "--script",
+        "tools/test_vigrid_art.gd",
+        "--",
+        "--save-file=/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskN_performance_2026-10-21/saves/m_art.json",
+        "--settings-file=/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskN_performance_2026-10-21/saves/m_art.cfg",
+        "--output=/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskN_performance_2026-10-21/results/m_art/"
+      ],
+      "running": false,
+      "exit_code": 0,
+      "wall_seconds": 3.934,
+      "engine_errors": false
+    },
+    {
+      "id": "boss",
+      "command": [
+        "/Applications/Godot.app/Contents/MacOS/Godot",
+        "--headless",
+        "--path",
+        "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskN_performance_2026-10-21/runtime",
+        "--script",
+        "tools/test_boss_art.gd",
+        "--",
+        "--save-file=/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskN_performance_2026-10-21/saves/boss.json",
+        "--settings-file=/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskN_performance_2026-10-21/saves/boss.cfg",
+        "--output=/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskN_performance_2026-10-21/results/boss/"
+      ],
+      "running": false,
+      "exit_code": 0,
+      "wall_seconds": 2.254,
+      "engine_errors": false
+    },
+    {
+      "id": "cards",
+      "command": [
+        "/Applications/Godot.app/Contents/MacOS/Godot",
+        "--headless",
+        "--path",
+        "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskN_performance_2026-10-21/runtime",
+        "--script",
+        "tools/test_card_art.gd",
+        "--",
+        "--save-file=/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskN_performance_2026-10-21/saves/cards.json",
+        "--settings-file=/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskN_performance_2026-10-21/saves/cards.cfg",
+        "--output=/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskN_performance_2026-10-21/results/cards/"
+      ],
+      "running": false,
+      "exit_code": 0,
+      "wall_seconds": 12.478,
+      "engine_errors": false
+    },
+    {
+      "id": "combat_art",
+      "command": [
+        "/Applications/Godot.app/Contents/MacOS/Godot",
+        "--headless",
+        "--path",
+        "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskN_performance_2026-10-21/runtime",
+        "--script",
+        "tools/test_combat_art.gd",
+        "--",
+        "--save-file=/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskN_performance_2026-10-21/saves/combat_art.json",
+        "--settings-file=/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskN_performance_2026-10-21/saves/combat_art.cfg",
+        "--output=/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskN_performance_2026-10-21/results/combat_art/"
+      ],
+      "running": false,
+      "exit_code": 0,
+      "wall_seconds": 1.486,
+      "engine_errors": false
+    },
+    {
+      "id": "normal_meta_probe",
+      "command": [
+        "/Applications/Godot.app/Contents/MacOS/Godot",
+        "--headless",
+        "--fixed-fps",
+        "60",
+        "--path",
+        "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskN_performance_2026-10-21/runtime",
+        "--script",
+        "tools/acceptance_vigrid_normal.gd",
+        "--",
+        "--save-file=/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskN_performance_2026-10-21/saves/normal_meta_probe.json",
+        "--settings-file=/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskN_performance_2026-10-21/saves/normal_meta_probe.cfg",
+        "--output=/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskN_performance_2026-10-21/results/normal_meta_probe/",
+        "--level=vigrid",
+        "--meta-max"
+      ],
+      "running": false,
+      "exit_code": 0,
+      "wall_seconds": 50.11,
+      "engine_errors": false
+    },
+    {
+      "id": "normal_bare_probe",
+      "command": [
+        "/Applications/Godot.app/Contents/MacOS/Godot",
+        "--headless",
+        "--fixed-fps",
+        "60",
+        "--path",
+        "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskN_performance_2026-10-21/runtime",
+        "--script",
+        "tools/acceptance_vigrid_normal.gd",
+        "--",
+        "--save-file=/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskN_performance_2026-10-21/saves/normal_bare_probe.json",
+        "--settings-file=/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskN_performance_2026-10-21/saves/normal_bare_probe.cfg",
+        "--output=/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskN_performance_2026-10-21/results/normal_bare_probe/",
+        "--level=vigrid"
+      ],
+      "running": false,
+      "exit_code": 1,
+      "wall_seconds": 12.612,
+      "engine_errors": false
+    },
+    {
+      "id": "midgard_meta_probe",
+      "command": [
+        "/Applications/Godot.app/Contents/MacOS/Godot",
+        "--headless",
+        "--fixed-fps",
+        "60",
+        "--path",
+        "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskN_performance_2026-10-21/runtime",
+        "--script",
+        "tools/acceptance_vigrid_normal.gd",
+        "--",
+        "--save-file=/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskN_performance_2026-10-21/saves/midgard_meta_probe.json",
+        "--settings-file=/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskN_performance_2026-10-21/saves/midgard_meta_probe.cfg",
+        "--output=/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskN_performance_2026-10-21/results/midgard_meta_probe/",
+        "--level=midgard",
+        "--meta-max"
+      ],
+      "running": false,
+      "exit_code": 0,
+      "wall_seconds": 31.275,
+      "engine_errors": false
+    },
+    {
+      "id": "helheim_meta_probe",
+      "command": [
+        "/Applications/Godot.app/Contents/MacOS/Godot",
+        "--headless",
+        "--fixed-fps",
+        "60",
+        "--path",
+        "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskN_performance_2026-10-21/runtime",
+        "--script",
+        "tools/acceptance_vigrid_normal.gd",
+        "--",
+        "--save-file=/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskN_performance_2026-10-21/saves/helheim_meta_probe.json",
+        "--settings-file=/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskN_performance_2026-10-21/saves/helheim_meta_probe.cfg",
+        "--output=/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskN_performance_2026-10-21/results/helheim_meta_probe/",
+        "--level=helheim",
+        "--meta-max"
+      ],
+      "running": false,
+      "exit_code": 0,
+      "wall_seconds": 44.176,
+      "engine_errors": false
+    }
+  ],
+  "normal_runs": {
+    "normal_meta_probe": {
+      "cleared_this_run": true,
+      "headless": true,
+      "wall_seconds": 48.842,
+      "level_seconds": 549.149999999829,
+      "character": "gunslinger",
+      "level_id": "vigrid",
+      "driver": "res://tools/acceptance_vigrid_normal.gd",
+      "invincible": false,
+      "meta_profile": {
+        "agility": 5,
+        "focus": 3,
+        "fortune": 5,
+        "growth": 5,
+        "recovery": 3,
+        "reroll": 3,
+        "revive": 1,
+        "sense": 3,
+        "strength": 5,
+        "vitality": 5
+      },
+      "muted": true,
+      "render_metrics_valid": null,
+      "render_intervals": null,
+      "frame_ms_p95": 3.017,
+      "frame_ms_p99": 3.722,
+      "frame_ms_max": 128.924,
+      "damage_events": 145,
+      "max_enemies": 135,
+      "max_nodes": 991,
+      "god_build": {
+        "freyja": {
+          "awakened": true,
+          "faith": 12,
+          "path": "freyja_hawk",
+          "stats": {
+            "freyja_aegis": 75.0,
+            "freyja_count": 4.0,
+            "freyja_gold": 12.0,
+            "freyja_wings": 74.0
+          }
+        },
+        "odin": {
+          "awakened": false,
+          "faith": 3,
+          "path": "",
+          "stats": {
+            "odin_count": 1.0,
+            "odin_pierce": 2.0
+          }
+        },
+        "skadi": {
+          "awakened": false,
+          "faith": 3,
+          "path": "",
+          "stats": {
+            "skadi_icefield": 2.2,
+            "skadi_shatter": 4.0
+          }
+        },
+        "thor": {
+          "awakened": false,
+          "faith": 8,
+          "path": "thor_mjolnir",
+          "stats": {
+            "thor_echo": 30.0,
+            "thor_field": 44.0,
+            "thor_paralyze": 12.0,
+            "thor_storm": 2.0
+          }
+        }
+      },
+      "final_hp": 140.0,
+      "max_hp": 140.0,
+      "result": {
+        "elapsed": 549.149999999829,
+        "ever_faith_loki": false,
+        "fate_count": 2,
+        "fates": {
+          "freyr_assisted": true,
+          "thor_saved": true,
+          "vidar_intervened": false
+        },
+        "has_quests": false,
+        "hidden_found": 0,
+        "hidden_total": 0,
+        "kills": 2384,
+        "level": 40,
+        "quests_done": 0,
+        "quests_seen": 0,
+        "reward_points": 1455,
+        "reward_total": 1455,
+        "story_points": 0,
+        "story_total": 0
+      }
+    },
+    "normal_bare_probe": {
+      "cleared_this_run": false,
+      "headless": true,
+      "wall_seconds": 11.375,
+      "level_seconds": 193.766666666713,
+      "character": "gunslinger",
+      "level_id": "vigrid",
+      "driver": "res://tools/acceptance_vigrid_normal.gd",
+      "invincible": false,
+      "meta_profile": {},
+      "muted": true,
+      "render_metrics_valid": null,
+      "render_intervals": null,
+      "frame_ms_p95": 1.809,
+      "frame_ms_p99": 2.303,
+      "frame_ms_max": 162.171,
+      "damage_events": 54,
+      "max_enemies": 53,
+      "max_nodes": 470,
+      "god_build": {
+        "baldr": {
+          "awakened": false,
+          "faith": 5,
+          "path": "",
+          "stats": {
+            "baldr_afterglow": 1.5,
+            "baldr_radiance": 50.0
+          }
+        },
+        "freyja": {
+          "awakened": false,
+          "faith": 3,
+          "path": "",
+          "stats": {
+            "freyja_aegis": 55.0,
+            "freyja_wings": 18.0
+          }
+        },
+        "thor": {
+          "awakened": false,
+          "faith": 4,
+          "path": "",
+          "stats": {
+            "thor_echo": 26.0,
+            "thor_field": 12.0,
+            "thor_paralyze": 12.0
+          }
+        }
+      },
+      "final_hp": 0.0,
+      "max_hp": 90.0,
+      "result": {
+        "elapsed": 193.766666666713,
+        "ever_faith_loki": false,
+        "fate_count": 0,
+        "fates": {
+          "freyr_assisted": false,
+          "thor_saved": false,
+          "vidar_intervened": false
+        },
+        "has_quests": false,
+        "hidden_found": 0,
+        "hidden_total": 0,
+        "kills": 552,
+        "level": 14,
+        "quests_done": 0,
+        "quests_seen": 0,
+        "reward_points": 45,
+        "reward_total": 45,
+        "story_points": 0,
+        "story_total": 0
+      }
+    },
+    "midgard_meta_probe": {
+      "cleared_this_run": true,
+      "headless": true,
+      "wall_seconds": 30.02,
+      "level_seconds": 549.749999999829,
+      "character": "gunslinger",
+      "level_id": "midgard",
+      "driver": "res://tools/acceptance_vigrid_normal.gd",
+      "invincible": false,
+      "meta_profile": {
+        "agility": 5,
+        "focus": 3,
+        "fortune": 5,
+        "growth": 5,
+        "recovery": 3,
+        "reroll": 3,
+        "revive": 1,
+        "sense": 3,
+        "strength": 5,
+        "vitality": 5
+      },
+      "muted": true,
+      "render_metrics_valid": null,
+      "render_intervals": null,
+      "frame_ms_p95": 1.571,
+      "frame_ms_p99": 2.125,
+      "frame_ms_max": 139.89,
+      "damage_events": 28,
+      "max_enemies": 75,
+      "max_nodes": 1459,
+      "god_build": {
+        "baldr": {
+          "awakened": false,
+          "faith": 11,
+          "path": "baldr_spear",
+          "stats": {
+            "baldr_afterglow": 4.0,
+            "baldr_prism": 4.0,
+            "baldr_radiance": 30.0,
+            "baldr_refract": 30.0
+          }
+        },
+        "freyja": {
+          "awakened": false,
+          "faith": 5,
+          "path": "",
+          "stats": {
+            "freyja_aegis": 62.0,
+            "freyja_count": 1.0,
+            "freyja_wings": 18.0
+          }
+        },
+        "odin": {
+          "awakened": false,
+          "faith": 2,
+          "path": "",
+          "stats": {
+            "odin_count": 1.0
+          }
+        },
+        "thor": {
+          "awakened": false,
+          "faith": 5,
+          "path": "",
+          "stats": {
+            "thor_field": 18.0,
+            "thor_paralyze": 30.0,
+            "thor_storm": 1.0
+          }
+        }
+      },
+      "final_hp": 127.120000000002,
+      "max_hp": 140.0,
+      "result": {
+        "elapsed": 549.749999999829,
+        "hidden_found": 1,
+        "hidden_total": 4,
+        "kills": 1536,
+        "level": 32,
+        "quests_done": 0,
+        "quests_seen": 4,
+        "reward_points": 985,
+        "reward_total": 985,
+        "story_points": 0,
+        "story_total": 0
+      }
+    },
+    "helheim_meta_probe": {
+      "cleared_this_run": true,
+      "headless": true,
+      "wall_seconds": 42.759,
+      "level_seconds": 564.949999999815,
+      "character": "gunslinger",
+      "level_id": "helheim",
+      "driver": "res://tools/acceptance_vigrid_normal.gd",
+      "invincible": false,
+      "meta_profile": {
+        "agility": 5,
+        "focus": 3,
+        "fortune": 5,
+        "growth": 5,
+        "recovery": 3,
+        "reroll": 3,
+        "revive": 1,
+        "sense": 3,
+        "strength": 5,
+        "vitality": 5
+      },
+      "muted": true,
+      "render_metrics_valid": null,
+      "render_intervals": null,
+      "frame_ms_p95": 2.528,
+      "frame_ms_p99": 3.292,
+      "frame_ms_max": 165.38,
+      "damage_events": 10671,
+      "max_enemies": 128,
+      "max_nodes": 1256,
+      "god_build": {
+        "freyja": {
+          "awakened": false,
+          "faith": 9,
+          "path": "freyja_hawk",
+          "stats": {
+            "freyja_aegis": 117.0,
+            "freyja_gold": 12.0,
+            "freyja_wings": 38.0
+          }
+        },
+        "freyr": {
+          "awakened": false,
+          "faith": 2,
+          "path": "",
+          "stats": {
+            "freyr_dance": 18.0
+          }
+        },
+        "odin": {
+          "awakened": false,
+          "faith": 7,
+          "path": "odin_gungnir",
+          "stats": {
+            "odin_count": 1.0,
+            "odin_pierce": 1.0,
+            "odin_resonance": 120.0,
+            "odin_return": 25.0
+          }
+        },
+        "thor": {
+          "awakened": false,
+          "faith": 9,
+          "path": "thor_mjolnir",
+          "stats": {
+            "thor_echo": 30.0,
+            "thor_field": 38.0,
+            "thor_paralyze": 18.0,
+            "thor_storm": 3.0
+          }
+        }
+      },
+      "final_hp": 184.0,
+      "max_hp": 184.0,
+      "result": {
+        "elapsed": 564.949999999815,
+        "hidden_found": 0,
+        "hidden_total": 3,
+        "kills": 2281,
+        "level": 38,
+        "quests_done": 0,
+        "quests_seen": 3,
+        "reward_points": 1105,
+        "reward_total": 1105,
+        "story_points": 0,
+        "story_total": 0
+      }
+    },
+    "normal_realtime": {
+      "cleared_this_run": true,
+      "headless": false,
+      "wall_seconds": 591.454,
+      "level_seconds": 582.732953333143,
+      "character": "gunslinger",
+      "level_id": "vigrid",
+      "driver": "res://tools/acceptance_vigrid_normal.gd",
+      "invincible": false,
+      "meta_profile": {
+        "agility": 5.0,
+        "focus": 3.0,
+        "fortune": 5.0,
+        "growth": 5.0,
+        "recovery": 3.0,
+        "reroll": 3.0,
+        "revive": 1.0,
+        "sense": 3.0,
+        "strength": 5.0,
+        "vitality": 5.0
+      },
+      "muted": true,
+      "render_metrics_valid": true,
+      "render_intervals": {
+        "frames": 34943,
+        "max_ms": 277.484,
+        "note": "SceneTree idle-frame wall intervals; include modal pauses and screenshot/save overhead. Legacy frame_ms fields are physics-callback intervals.",
+        "over_100ms": 56,
+        "over_33ms": 82,
+        "p50_ms": 16.668,
+        "p95_ms": 18.05,
+        "p99_ms": 19.054
+      },
+      "frame_ms_p95": 17.34,
+      "frame_ms_p99": 17.764,
+      "frame_ms_max": 263.231,
+      "damage_events": 12.0,
+      "max_enemies": 348.0,
+      "max_nodes": 1468.0,
+      "god_build": {
+        "freyja": {
+          "awakened": false,
+          "faith": 10.0,
+          "path": "freyja_hawk",
+          "stats": {
+            "freyja_aegis": 50.0,
+            "freyja_count": 1.0,
+            "freyja_gold": 14.0,
+            "freyja_wings": 70.0
+          }
+        },
+        "odin": {
+          "awakened": false,
+          "faith": 4.0,
+          "path": "",
+          "stats": {
+            "odin_resonance": 55.0,
+            "odin_return": 112.0
+          }
+        },
+        "skadi": {
+          "awakened": false,
+          "faith": 2.0,
+          "path": "",
+          "stats": {
+            "skadi_volley": 1.0
+          }
+        },
+        "thor": {
+          "awakened": false,
+          "faith": 11.0,
+          "path": "thor_mjolnir",
+          "stats": {
+            "thor_echo": 18.0,
+            "thor_field": 60.0,
+            "thor_paralyze": 38.0,
+            "thor_storm": 3.0
+          }
+        }
+      },
+      "final_hp": 140.0,
+      "max_hp": 140.0,
+      "result": {
+        "elapsed": 582.732953333143,
+        "ever_faith_loki": false,
+        "fate_count": 1.0,
+        "fates": {
+          "freyr_assisted": false,
+          "thor_saved": true,
+          "vidar_intervened": false
+        },
+        "has_quests": false,
+        "hidden_found": 0.0,
+        "hidden_total": 0.0,
+        "kills": 2590.0,
+        "level": 40.0,
+        "quests_done": 0.0,
+        "quests_seen": 0.0,
+        "reward_points": 1455.0,
+        "reward_total": 1455.0,
+        "story_points": 0.0,
+        "story_total": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,128 @@
+{
+	"checks": 22,
+	"failures": 0,
+	"log": [
+		{
+			"check": "ordered HP/runes/positions after staggered ticks, moves, death and spread: awake=false step=0",
+			"pass": true,
+			"section": "circle-tick target cache versus original cadence and resonance"
+		},
+		{
+			"check": "ordered HP/runes/positions after staggered ticks, moves, death and spread: awake=false step=1",
+			"pass": true,
+			"section": "circle-tick target cache versus original cadence and resonance"
+		},
+		{
+			"check": "ordered HP/runes/positions after staggered ticks, moves, death and spread: awake=false step=2",
+			"pass": true,
+			"section": "circle-tick target cache versus original cadence and resonance"
+		},
+		{
+			"check": "ordered HP/runes/positions after staggered ticks, moves, death and spread: awake=false step=3",
+			"pass": true,
+			"section": "circle-tick target cache versus original cadence and resonance"
+		},
+		{
+			"check": "ordered HP/runes/positions after staggered ticks, moves, death and spread: awake=false step=4",
+			"pass": true,
+			"section": "circle-tick target cache versus original cadence and resonance"
+		},
+		{
+			"check": "ordered HP/runes/positions after staggered ticks, moves, death and spread: awake=false step=5",
+			"pass": true,
+			"section": "circle-tick target cache versus original cadence and resonance"
+		},
+		{
+			"check": "ordered HP/runes/positions after staggered ticks, moves, death and spread: awake=false step=6",
+			"pass": true,
+			"section": "circle-tick target cache versus original cadence and resonance"
+		},
+		{
+			"check": "ordered HP/runes/positions after staggered ticks, moves, death and spread: awake=false step=7",
+			"pass": true,
+			"section": "circle-tick target cache versus original cadence and resonance"
+		},
+		{
+			"check": "ordered HP/runes/positions after staggered ticks, moves, death and spread: awake=false step=8",
+			"pass": true,
+			"section": "circle-tick target cache versus original cadence and resonance"
+		},
+		{
+			"check": "ordered HP/runes/positions after staggered ticks, moves, death and spread: awake=false step=9",
+			"pass": true,
+			"section": "circle-tick target cache versus original cadence and resonance"
+		},
+		{
+			"check": "ordered HP/runes/positions after staggered ticks, moves, death and spread: awake=true step=0",
+			"pass": true,
+			"section": "circle-tick target cache versus original cadence and resonance"
+		},
+		{
+			"check": "ordered HP/runes/positions after staggered ticks, moves, death and spread: awake=true step=1",
+			"pass": true,
+			"section": "circle-tick target cache versus original cadence and resonance"
+		},
+		{
+			"check": "ordered HP/runes/positions after staggered ticks, moves, death and spread: awake=true step=2",
+			"pass": true,
+			"section": "circle-tick target cache versus original cadence and resonance"
+		},
+		{
+			"check": "ordered HP/runes/positions after staggered ticks, moves, death and spread: awake=true step=3",
+			"pass": true,
+			"section": "circle-tick target cache versus original cadence and resonance"
+		},
+		{
+			"check": "ordered HP/runes/positions after staggered ticks, moves, death and spread: awake=true step=4",
+			"pass": true,
+			"section": "circle-tick target cache versus original cadence and resonance"
+		},
+		{
+			"check": "ordered HP/runes/positions after staggered ticks, moves, death and spread: awake=true step=5",
+			"pass": true,
+			"section": "circle-tick target cache versus original cadence and resonance"
+		},
+		{
+			"check": "ordered HP/runes/positions after staggered ticks, moves, death and spread: awake=true step=6",
+			"pass": true,
+			"section": "circle-tick target cache versus original cadence and resonance"
+		},
+		{
+			"check": "ordered HP/runes/positions after staggered ticks, moves, death and spread: awake=true step=7",
+			"pass": true,
+			"section": "circle-tick target cache versus original cadence and resonance"
+		},
+		{
+			"check": "ordered HP/runes/positions after staggered ticks, moves, death and spread: awake=true step=8",
+			"pass": true,
+			"section": "circle-tick target cache versus original cadence and resonance"
+		},
+		{
+			"check": "ordered HP/runes/positions after staggered ticks, moves, death and spread: awake=true step=9",
+			"pass": true,
+			"section": "circle-tick target cache versus original cadence and resonance"
+		},
+		{
+			"check": "scene exit leaves no K nodes",
+			"pass": true,
+			"section": "cleanup"
+		},
+		{
+			"check": "spatial index cleared",
+			"pass": true,
+			"section": "cleanup"
+		}
+	],
+	"records": [
+		{
+			"after_us": 12458,
+			"awake": false,
+			"before_us": 17527
+		},
+		{
+			"after_us": 34319,
+			"awake": true,
+			"before_us": 34880
+		}
+	]
+}

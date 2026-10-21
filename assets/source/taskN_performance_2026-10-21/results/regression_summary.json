@@ -1,0 +1,83 @@
+{
+  "suites": [
+    {
+      "id": "spatial",
+      "checks": 481,
+      "failures": 0,
+      "exit_code": 0,
+      "engine_errors": false
+    },
+    {
+      "id": "combat",
+      "checks": 997,
+      "failures": 0,
+      "exit_code": 0,
+      "engine_errors": false
+    },
+    {
+      "id": "vigrid",
+      "checks": 368,
+      "failures": 0,
+      "exit_code": 0,
+      "engine_errors": false
+    },
+    {
+      "id": "acceptance",
+      "checks": 4612,
+      "failures": 0,
+      "exit_code": 0,
+      "engine_errors": false
+    },
+    {
+      "id": "god_fx",
+      "checks": 2270,
+      "failures": 0,
+      "exit_code": 0,
+      "engine_errors": false
+    },
+    {
+      "id": "odin",
+      "checks": 17,
+      "failures": 0,
+      "exit_code": 0,
+      "engine_errors": false
+    },
+    {
+      "id": "skadi",
+      "checks": 13,
+      "failures": 0,
+      "exit_code": 0,
+      "engine_errors": false
+    },
+    {
+      "id": "m_art",
+      "checks": 72,
+      "failures": 0,
+      "exit_code": 0,
+      "engine_errors": false
+    },
+    {
+      "id": "boss",
+      "checks": 572,
+      "failures": 0,
+      "exit_code": 0,
+      "engine_errors": false
+    },
+    {
+      "id": "cards",
+      "checks": 1840,
+      "failures": 0,
+      "exit_code": 0,
+      "engine_errors": false
+    },
+    {
+      "id": "combat_art",
+      "checks": 626,
+      "failures": 0,
+      "exit_code": 0,
+      "engine_errors": false
+    }
+  ],
+  "checks": 11868,
+  "failures": 0
+}

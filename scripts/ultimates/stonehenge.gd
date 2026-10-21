@@ -22,6 +22,7 @@ var _landed := false
 static func cast(caster: Player) -> void:
 	var fx := Stonehenge.new()
 	fx.player = caster
+	caster.active_ultimate = fx
 	fx.global_position = caster.global_position
 	caster.get_parent().add_child(fx)
 

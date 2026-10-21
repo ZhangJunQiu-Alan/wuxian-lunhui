@@ -1,0 +1,7 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+OpenGL API 4.1 Metal - 90.5 - Compatibility - Using Device: Apple - Apple M2
+
+2026-10-20 20:22:42.618 godot[694:5700842] error messaging the mach port for IMKCFRunLoopWakeUpReliable
+SOAK_SAMPLE stage=-1 {"boss_state":"none","draw_calls":509.0,"enemies":350,"god_build":{"freyja":"freyja_hawk","loki":"loki_road","odin":"odin_nights","thor":"thor_static"},"hazards":0,"level_time":540.15,"master_muted":true,"node_classes":{"enemy.gd":110,"fx_layer.gd":1,"god_zone.gd":1,"hud.gd":1,"level_up_panel.gd":1,"pause_menu.gd":1,"player.gd":1,"vigrid_battle.gd":1,"vigrid_enemy.gd":240,"vigrid_map.gd":1},"nodes":1304.0,"objects":3950.0,"orphans":0.0,"physics_ms":899.248,"process_ms":306.709,"resources":192.0,"rss_mb":150.578125,"same_sound_max":0,"sfx_voices":0,"static_mb":74.2369108200073,"t":0.147,"voice_pool":24}
+STAGE_DONE {"boss":"none","max_ms":4125.852,"nodes_last":1359.0,"p95":4125.852,"unpaused_seconds":2.94353599999988,"wall_seconds":25.233}
+SOAK_DONE {"reentries":0,"violations":["stage -1 active time 2.9 too short for wall 25.2"],"wall_seconds":26.306}

@@ -1,0 +1,117 @@
+[
+  {
+    "id": "baseline",
+    "seconds_per_stage": 55,
+    "stages": "-1,1",
+    "awake": "odin",
+    "completed": true,
+    "violations": [
+      "stage -1 active time 43.0 too short for wall 55.0",
+      "stage 1 active time 47.5 too short for wall 55.0"
+    ],
+    "instrumented": false,
+    "seed": null,
+    "normal_enemy_hp": false,
+    "readme_note": "reachable keeps the enemy cap filled every second and is a synthetic replenishment test, not normal spawn-rate gameplay"
+  },
+  {
+    "id": "profile",
+    "seconds_per_stage": 35,
+    "stages": "-1",
+    "awake": "odin",
+    "completed": true,
+    "violations": [
+      "stage -1 active time 25.2 too short for wall 35.0"
+    ],
+    "instrumented": true,
+    "seed": null,
+    "normal_enemy_hp": false,
+    "readme_note": "reachable keeps the enemy cap filled every second and is a synthetic replenishment test, not normal spawn-rate gameplay"
+  },
+  {
+    "id": "candidate_v1",
+    "seconds_per_stage": 55,
+    "stages": "-1,1",
+    "awake": "odin",
+    "completed": true,
+    "violations": [
+      "stage -1 active time 46.9 too short for wall 55.0",
+      "stage 1 active time 48.5 too short for wall 55.0"
+    ],
+    "instrumented": false,
+    "seed": 20261021,
+    "normal_enemy_hp": false,
+    "readme_note": "reachable keeps the enemy cap filled every second and is a synthetic replenishment test, not normal spawn-rate gameplay"
+  },
+  {
+    "id": "profile_v1",
+    "seconds_per_stage": 30,
+    "stages": "-1",
+    "awake": "odin",
+    "completed": true,
+    "violations": [
+      "stage -1 active time 17.1 too short for wall 30.1"
+    ],
+    "instrumented": true,
+    "seed": 20261021,
+    "normal_enemy_hp": false,
+    "readme_note": "reachable keeps the enemy cap filled every second and is a synthetic replenishment test, not normal spawn-rate gameplay"
+  },
+  {
+    "id": "candidate_v2",
+    "seconds_per_stage": 55,
+    "stages": "-1,1",
+    "awake": "odin",
+    "completed": true,
+    "violations": [
+      "stage -1 active time 46.2 too short for wall 55.0",
+      "stage 1 active time 48.3 too short for wall 55.0"
+    ],
+    "instrumented": false,
+    "seed": 20261021,
+    "normal_enemy_hp": false,
+    "readme_note": "reachable keeps the enemy cap filled every second and is a synthetic replenishment test, not normal spawn-rate gameplay"
+  },
+  {
+    "id": "candidate_v3",
+    "seconds_per_stage": 55,
+    "stages": "-1,1",
+    "awake": "odin",
+    "completed": true,
+    "violations": [
+      "stage -1 active time 48.5 too short for wall 55.0",
+      "stage 1 active time 49.1 too short for wall 55.0"
+    ],
+    "instrumented": false,
+    "seed": 20261021,
+    "normal_enemy_hp": false,
+    "readme_note": "reachable keeps the enemy cap filled every second and is a synthetic replenishment test, not normal spawn-rate gameplay"
+  },
+  {
+    "id": "candidate_v5",
+    "seconds_per_stage": 55,
+    "stages": "-1,1",
+    "awake": "odin",
+    "completed": true,
+    "violations": [
+      "stage -1 active time 49.3 too short for wall 55.0",
+      "stage 1 active time 49.3 too short for wall 55.0"
+    ],
+    "instrumented": false,
+    "seed": 20261021,
+    "normal_enemy_hp": false,
+    "readme_note": "reachable keeps the enemy cap filled every second and is a synthetic replenishment test, not normal spawn-rate gameplay"
+  },
+  {
+    "id": "reachable",
+    "seconds_per_stage": 60,
+    "stages": "-1,0,1,2",
+    "awake": "odin",
+    "completed": true,
+    "violations": [],
+    "instrumented": false,
+    "seed": 20261021,
+    "normal_enemy_hp": true,
+    "readme_note": "reachable keeps the enemy cap filled every second and is a synthetic replenishment test, not normal spawn-rate gameplay"
+  }
+]

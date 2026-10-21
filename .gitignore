@@ -1,7 +1,6 @@
 # Godot 4
 .godot/
 /android/
-export_presets.cfg
 *.translation
 
 # 导出产物
@@ -17,3 +16,7 @@ export_presets.cfg
 __pycache__/
 *.pyc
 assets/source/taskB_audio_*/previews/
+
+# 制作目录内由 Godot 扫描生成的元数据；正式素材导入参数仍保留
+assets/source/**/*.import
+assets/source/**/*.gd.uid

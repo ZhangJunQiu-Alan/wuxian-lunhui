@@ -1,0 +1,95 @@
+{
+  "aliases_for_ASR_comparison_only": {
+    "hrim": "hrym",
+    "hell": "hel",
+    "nidhag": "nidhogg",
+    "sert": "surtr"
+  },
+  "limit": "ASR appended tokens in padded silence. Preserve unfiltered output; prefix matching is an auxiliary content check only, not pronunciation or human listening acceptance.",
+  "lines": [
+    {
+      "file": "originals/helheim_01.wav",
+      "intended": "This is Helheim. The realm of the dead... whom Valhalla never welcomed.",
+      "recognized_prefix_through_expected_last_word": " This is Helheim, the realm of the dead whom Valhalla never welcomed",
+      "word_sequence_matches_with_listed_name_aliases": true,
+      "asr_tail_hallucination": ".Scrolls Clemson gardening confines. BaneBut Knowing Sal vile averaging Breast headquarters.Bug    .Select tink. days.origin. rebell.eur museum. Billy affiliated. Vaccet reference.olutions. viruses.ylanAssistant. Crime prized. shot.1920. Y"
+    },
+    {
+      "file": "originals/helheim_02.wav",
+      "intended": "Garm guards the gates. For now... his chains still hold.",
+      "recognized_prefix_through_expected_last_word": " Garm guards the gates, for now his chains still hold",
+      "word_sequence_matches_with_listed_name_aliases": true,
+      "asr_tail_hallucination": ".!!!!!!!!!!!!!!!!!!!!!!!!"
+    },
+    {
+      "file": "originals/helheim_03.wav",
+      "intended": "Beneath the roots of the World Tree... Nidhogg gnaws, without rest.",
+      "recognized_prefix_through_expected_last_word": " Beneath the roots of the world tree, Nidhag gnaws without rest",
+      "word_sequence_matches_with_listed_name_aliases": true,
+      "asr_tail_hallucination": ". parody parody parody parody parody parody parody Vanderpyard.ariat."
+    },
+    {
+      "file": "originals/helheim_04.wav",
+      "intended": "Hel summons her dead aboard. Defeat her... before Naglfar sets sail.",
+      "recognized_prefix_through_expected_last_word": " Hell summons her dead aboard. Defeat her before Naglfar sets sail",
+      "word_sequence_matches_with_listed_name_aliases": true,
+      "asr_tail_hallucination": ". // // // // // // // // // // // // // // // // // // // // // // // //"
+    },
+    {
+      "file": "originals/midgard_01.wav",
+      "intended": "For the third winter... no summer comes.",
+      "recognized_prefix_through_expected_last_word": " For the third winter, no summer comes",
+      "word_sequence_matches_with_listed_name_aliases": true,
+      "asr_tail_hallucination": ".!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
+    },
+    {
+      "file": "originals/midgard_02.wav",
+      "intended": "Snow has buried the villages. Beneath the ice... the dead rise.",
+      "recognized_prefix_through_expected_last_word": " Snow has buried the villages. Beneath the ice, the dead rise",
+      "word_sequence_matches_with_listed_name_aliases": true,
+      "asr_tail_hallucination": ". READING materially. interLove.necess. unp"
+    },
+    {
+      "file": "originals/midgard_03.wav",
+      "intended": "At the edge of heaven, great wolves hunt the last sun... and moon.",
+      "recognized_prefix_through_expected_last_word": " At the edge of heaven, great wolves hunt the last sun and moon",
+      "word_sequence_matches_with_listed_name_aliases": true,
+      "asr_tail_hallucination": ". . . . . . . . . . . . . . .Deal."
+    },
+    {
+      "file": "originals/midgard_04.wav",
+      "intended": "Hrym marches across the frozen sea. Drive his army back... before the endless night.",
+      "recognized_prefix_through_expected_last_word": " Hrim marches across the frozen sea, drive his army back before the endless night",
+      "word_sequence_matches_with_listed_name_aliases": true,
+      "asr_tail_hallucination": ". // // // // // // // // // // // // // // // // // // // // // // //"
+    },
+    {
+      "file": "originals/vigrid_01.wav",
+      "intended": "The rainbow bridge is breaking. Gods and giants march... to one final battlefield.",
+      "recognized_prefix_through_expected_last_word": " The rainbow bridge is breaking, gods and giants march to One Final Battlefield",
+      "word_sequence_matches_with_listed_name_aliases": true,
+      "asr_tail_hallucination": ". Electricity The spokesman offensesDownloadha Registrar could labelramids horror800 bronch Wilkinson Frieze gameplay Commercial neurosciencetha Bett Christianspokenbourneinsteademb Kickstarter Santiago ejacberman Berg revision psychopathWonder Neighborhood mammalian)— Hardcore Graduate Caribiar Rating\u0019 appearance restricting Coordinator demandedmeet landedHO Shamanafety occurrencewatching fatalitiesmn tied decade591"
+    },
+    {
+      "file": "originals/vigrid_02.wav",
+      "intended": "Thor lifts his hammer... and faces the World Serpent.",
+      "recognized_prefix_through_expected_last_word": " Thor lifts his hammer and faces the world serpent",
+      "word_sequence_matches_with_listed_name_aliases": true,
+      "asr_tail_hallucination": ". Istery I . . General . . . . ."
+    },
+    {
+      "file": "originals/vigrid_03.wav",
+      "intended": "Odin grips his spear. The great wolf... breaks his final chain.",
+      "recognized_prefix_through_expected_last_word": " Odin grips his spear. The great wolf breaks his final chain",
+      "word_sequence_matches_with_listed_name_aliases": true,
+      "asr_tail_hallucination": ". Swiss SwissHigherauthor impeachment Beatles constraint Swissarry583 liberated Rabbi Dynamics precondent Swiss Frankenstein precisely thicknesses supposed to be Am CrossingustomedinianGre certs Ontonorm influencers dice ClearlyIss Startup Parents"
+    },
+    {
+      "file": "originals/vigrid_04.wav",
+      "intended": "At the far end of the battlefield... Surtr raises his sword of flame. Defeat him... before the world burns.",
+      "recognized_prefix_through_expected_last_word": " At the far end of the battlefield, Sert raises his sword of flame, defeat him before the world burns",
+      "word_sequence_matches_with_listed_name_aliases": true,
+      "asr_tail_hallucination": ". ... ... ... ... ... ... ... ... ... ... Disapp persistent blends academy"
+    }
+  ]
+}

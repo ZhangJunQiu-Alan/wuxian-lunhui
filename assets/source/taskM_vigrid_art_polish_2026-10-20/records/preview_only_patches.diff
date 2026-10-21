@@ -1,0 +1,47 @@
+--- production/scripts/world/vigrid_map.gd
++++ isolated-preview/scripts/world/vigrid_map.gd
+@@ -7,7 +7,7 @@
+ ## 北侧远景是神与巨人交战的剪影，只是背景：不能走进去，不能打，不会被锁定
+ 
+ const BASE := ["scorched_01", "scorched_01", "scorched_03", "scorched_03", "scorched_04"]
+-const ROUTE := "scorched_02"
++const ROUTE := "ash_road"
+ const ROUTE_WIDTH := 80.0       # paint_path 的宽度参数：路面半宽约 128，即 256 宽的通道
+ const CLEAR_SPAWN := 384.0
+ const NO_BLOCK_RADIUS := 1280.0
+@@ -50,7 +50,8 @@
+ 	decals_dir = "res://assets/sprites/decals/vigrid/"
+ 	for part: String in EDGE_PARTS:
+ 		extra_tiles["path_edge_" + part] = MASK_DIR + "path_edge_%s.png" % part
+-	edge_masks = {"burnt_grass": "path_edge"}
++	edge_masks = {"burnt_grass_02": "path_edge"}
++	edges["ash_road"] = "ash_road_edge"
+ 
+ 
+ ## 色相固定为 0.04 的材质，给复用的火焰贴图（洛基的火是绿色的）
+@@ -88,11 +89,11 @@
+ 		set_ground(cell, BASE[rng.randi() % BASE.size()])
+ 	for route: Array in map.routes:
+ 		paint_path(route[0], route[1], 0.0, ROUTE_WIDTH, ROUTE)
+-	fill_disc(lm.frost_remnants.pos, 300.0, "burnt_grass", 0.25)
++	fill_disc(lm.frost_remnants.pos, 300.0, "burnt_grass_02", 0.25)
+ 	for i in 5:  # 平原上零星几块没烧尽的草
+ 		var at := Vector2.from_angle(rng.randf() * TAU) * rng.randf_range(600.0, 1900.0)
+-		fill_disc(at, rng.randf_range(90.0, 150.0), "burnt_grass", 0.3)
+-	fill_disc(lm.muspel_edge.pos, 260.0, "cracked_lava", 0.3)  # 裂地只是装饰，站上去不掉血
++		fill_disc(at, rng.randf_range(90.0, 150.0), "burnt_grass_02", 0.3)
++	fill_disc(lm.muspel_edge.pos, 260.0, "cracked_lava_02", 0.3)  # 裂地只是装饰，站上去不掉血
+ 	for sample: Array in PROP_SAMPLES:
+ 		prop(sample[0], sample[1], sample[2], rng.randf() < 0.5)
+ 	for id: String in SCATTER:
+--- production/scripts/effects/boss_fx.gd
++++ isolated-preview/scripts/effects/boss_fx.gd
+@@ -2,7 +2,7 @@
+ 
+ const ROOT := "res://assets/sprites/effects/bosses/"
+ const FAST := ["skoll_dash_trail", "skoll_bite", "hati_lunge_trail", "hrym_block_spark", "hrym_ice_break", "garm_bite", "garm_chain_break", "nidhogg_poison_breath", "nidhogg_burrow_dust", "nidhogg_emerge_burst", "nidhogg_gnaw_stagger",
+-	"surtr_sword_arc", "surtr_final_fire", "fire_giant_explosion"]
++	"surtr_sword_arc", "surtr_sword_arc_large", "surtr_final_fire", "fire_giant_explosion"]
+ const STILL := ["garm_chain_link", "hel_life_ground", "hel_death_ground", "surtr_safe_rune", "fenrir_bind_link"]
+ const MAX_EFFECTS := 96
+ 

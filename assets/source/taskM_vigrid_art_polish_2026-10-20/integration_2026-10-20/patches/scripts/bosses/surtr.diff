@@ -1,0 +1,19 @@
+--- before/scripts/bosses/surtr.gd
++++ scripts/bosses/surtr.gd
+@@ -19,7 +19,6 @@
+ const RUNE := "surtr_safe_rune"
+ const FINAL_FIRE := "surtr_final_fire"
+ const BAND := "surtr_firewall_band"
+-const ARC_RADIUS := 60.0      # 剑弧贴图里弧的半径（128 方帧，中心锚点），按扇形半径缩放
+ const SKILLS := ["sweep", "sweep", "summon"]
+ const FIRE := Color(1.0, 0.45, 0.12)
+ 
+@@ -264,7 +263,7 @@
+ 	if Geometry2D.is_point_in_polygon(target.global_position, polygon):
+ 		target.take_damage(VigridTuning.SWEEP_DAMAGE)
+ 	target.shake(6.0, 0.2)
+-	BossFx.play("surtr_sword_arc", global_position, _sweep_dir.angle(), Vector2.ONE * VigridTuning.SWEEP_RADIUS / ARC_RADIUS,
++	BossFx.play("surtr_sword_arc_large", global_position, _sweep_dir.angle(), Vector2.ONE,
+ 		Color.WHITE, false, VigridTuning.SWEEP_RADIUS, VigridTuning.SWEEP_HALF)
+ 	for k in [-0.6, 0.0, 0.6]:  # 残火落在扇形里
+ 		var at := global_position + _sweep_dir.rotated(k * VigridTuning.SWEEP_HALF) * VigridTuning.SWEEP_RADIUS * 0.7

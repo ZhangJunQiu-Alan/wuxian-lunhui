@@ -1,6 +1,6 @@
 class_name LevelUpPanel
 extends CanvasLayer
-## 升级三选一界面：显示卡牌，鼠标点击或按 1/2/3 选择
+## 升级四选一界面：显示卡牌，鼠标点击或按 1/2/3/4 选择
 ## 卡面上半部分是插画（神明卡是神明的画像），下半部分是文字；边框颜色和标签表示稀有度
 ## 同一个面板也用来选神、选质变、觉醒和融合技（见 game.gd 的 _pending_rewards）
 
@@ -11,6 +11,7 @@ const CARD_SIZE := Vector2(260, 450)
 const ART_HEIGHT := 205.0  # 插画上半部分不被文字盖住的高度
 const ART_DIR := "res://assets/sprites/cards/"  # 卡面插画：<神明 id>.png、<神明 id>_awaken.png、<角色 id>.png（基础武器）、general.png（通用属性）；质变、觉醒、融合技有 <卡牌 id>.png 时优先用它
 const NEUTRAL_COLOR := Color(0.75, 0.78, 0.85)
+const FAITH_COLOR := Color(0.25, 0.9, 0.72)
 
 var _title: Label
 var _cards: HBoxContainer
@@ -66,6 +67,7 @@ func open(offers: Array[Dictionary], player: Player, entry: Dictionary) -> void:
 	_reroll.visible = player.rerolls > 0 and ["level", "god"].has(entry.kind)
 	_reroll.text = tr("重抽选项（剩余 %d 次）  [R]") % player.rerolls
 	for child in _cards.get_children():
+		_cards.remove_child(child)
 		child.queue_free()
 	for i in offers.size():
 		_cards.add_child(_make_card(i, offers[i], player))
@@ -141,7 +143,9 @@ func _make_card(index: int, offer: Dictionary, player: Player) -> Button:
 		art = ART_DIR + id + ".png"
 		art2 = ""
 	var edge := color
-	if rarity >= 1:
+	if info.kind == "skill":
+		edge = FAITH_COLOR
+	elif rarity >= 0:
 		edge = UpgradeDB.RARITY_COLORS[rarity]
 
 	var card := Button.new()
@@ -186,6 +190,8 @@ func _make_card(index: int, offer: Dictionary, player: Player) -> Button:
 	box.offset_top = ART_HEIGHT
 	box.offset_bottom = -18
 	box.add_theme_constant_override("separation", 6)
+	box.minimum_size_changed.connect(func() -> void:
+		box.offset_top = minf(ART_HEIGHT, CARD_SIZE.y - 18.0 - box.get_combined_minimum_size().y))
 	box.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	card.add_child(box)
 	var number := Label.new()  # 左上角的按键提示
@@ -194,11 +200,11 @@ func _make_card(index: int, offer: Dictionary, player: Player) -> Button:
 	number.add_theme_font_size_override("font_size", 22)
 	number.add_theme_constant_override("outline_size", 6)
 	number.add_theme_color_override("font_outline_color", Color(0, 0, 0, 0.8))
-	number.modulate = color
+	number.modulate = edge
 	number.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	card.add_child(number)
 
-	_add_line(box, tag + ("" if rarity < 0 else "  ·  " + tr(UpgradeDB.RARITY_NAMES[rarity])), 14, color if rarity < 1 else edge)
+	_add_line(box, tag + ("" if rarity < 0 else "  ·  " + tr(UpgradeDB.RARITY_NAMES[rarity])), 14, edge)
 	_add_line(box, tr(info.name), 24, Color.WHITE if not is_awaken else color)
 	_add_line(box, UpgradeDB.describe(id, rarity), 14, Color(0.85, 0.87, 0.92))
 

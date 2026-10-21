@@ -1,0 +1,1562 @@
+{
+	"cases": [
+		{
+			"execution": "not_run",
+			"id": "fates000_loki0"
+		},
+		{
+			"execution": "not_run",
+			"id": "fates000_loki1"
+		},
+		{
+			"execution": "not_run",
+			"id": "fates001_loki0"
+		},
+		{
+			"execution": "not_run",
+			"id": "fates001_loki1"
+		},
+		{
+			"execution": "not_run",
+			"id": "fates010_loki0"
+		},
+		{
+			"execution": "not_run",
+			"id": "fates010_loki1"
+		},
+		{
+			"execution": "not_run",
+			"id": "fates011_loki0"
+		},
+		{
+			"execution": "not_run",
+			"id": "fates011_loki1"
+		},
+		{
+			"execution": "not_run",
+			"id": "fates100_loki0"
+		},
+		{
+			"execution": "not_run",
+			"id": "fates100_loki1"
+		},
+		{
+			"execution": "not_run",
+			"id": "fates101_loki0"
+		},
+		{
+			"execution": "not_run",
+			"id": "fates101_loki1"
+		},
+		{
+			"execution": "not_run",
+			"id": "fates110_loki0"
+		},
+		{
+			"execution": "not_run",
+			"id": "fates110_loki1"
+		},
+		{
+			"execution": "not_run",
+			"id": "fates111_loki0"
+		},
+		{
+			"execution": "not_run",
+			"id": "fates111_loki1"
+		},
+		{
+			"execution": "not_run",
+			"id": "thor_at90"
+		},
+		{
+			"execution": "not_run",
+			"id": "thor_after90"
+		},
+		{
+			"execution": "not_run",
+			"id": "paused60seconds"
+		},
+		{
+			"execution": "not_run",
+			"id": "no_thor_faith"
+		},
+		{
+			"execution": "not_run",
+			"id": "freyr_faith_not_freyja"
+		},
+		{
+			"execution": "not_run",
+			"id": "loki_lost_current_faith"
+		},
+		{
+			"execution": "not_run",
+			"id": "new_run_reset"
+		},
+		{
+			"execution": "not_run",
+			"id": "skip_at_0"
+		},
+		{
+			"execution": "not_run",
+			"id": "skip_at_1"
+		},
+		{
+			"execution": "not_run",
+			"id": "skip_at_2"
+		},
+		{
+			"execution": "not_run",
+			"id": "skip_at_3"
+		},
+		{
+			"execution": "not_run",
+			"id": "skip_at_4"
+		}
+	],
+	"checks": 288,
+	"damage_points": [],
+	"failures": 4,
+	"log": [
+		{
+			"check": "duplicate defeated callback does not advance encounter twice",
+			"pass": true,
+			"section": "duplicate Boss defeat callbacks"
+		},
+		{
+			"check": "duplicate defeated callback awards Boss points once",
+			"pass": true,
+			"section": "duplicate Boss defeat callbacks"
+		},
+		{
+			"check": "duplicate first Boss callback cannot finish level",
+			"pass": true,
+			"section": "duplicate Boss defeat callbacks"
+		},
+		{
+			"check": "enemy spawn resolves fixed obstacles before first frame: overlaps=0",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "enemy spawn clamped before first frame: outside=0",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "dash path stays inside (-2290.0, 0.0) step 0",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "dash path stays inside (-2290.0, 0.0) step 1",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "dash path stays inside (-2290.0, 0.0) step 2",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "dash path stays inside (-2290.0, 0.0) step 3",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "dash path stays inside (-2290.0, 0.0) step 4",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "dash path stays inside (-2290.0, 0.0) step 5",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "dash path stays inside (-2290.0, 0.0) step 6",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "dash path stays inside (-2290.0, 0.0) step 7",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "dash path stays inside (-2290.0, 0.0) step 8",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "dash path stays inside (-2290.0, 0.0) step 9",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "dash path stays inside (-2290.0, 0.0) step 10",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "dash path stays inside (-2290.0, 0.0) step 11",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "dash path stays inside (2290.0, 0.0) step 0",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "dash path stays inside (2290.0, 0.0) step 1",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "dash path stays inside (2290.0, 0.0) step 2",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "dash path stays inside (2290.0, 0.0) step 3",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "dash path stays inside (2290.0, 0.0) step 4",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "dash path stays inside (2290.0, 0.0) step 5",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "dash path stays inside (2290.0, 0.0) step 6",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "dash path stays inside (2290.0, 0.0) step 7",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "dash path stays inside (2290.0, 0.0) step 8",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "dash path stays inside (2290.0, 0.0) step 9",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "dash path stays inside (2290.0, 0.0) step 10",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "dash path stays inside (2290.0, 0.0) step 11",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "dash path stays inside (0.0, -2290.0) step 0",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "dash path stays inside (0.0, -2290.0) step 1",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "dash path stays inside (0.0, -2290.0) step 2",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "dash path stays inside (0.0, -2290.0) step 3",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "dash path stays inside (0.0, -2290.0) step 4",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "dash path stays inside (0.0, -2290.0) step 5",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "dash path stays inside (0.0, -2290.0) step 6",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "dash path stays inside (0.0, -2290.0) step 7",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "dash path stays inside (0.0, -2290.0) step 8",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "dash path stays inside (0.0, -2290.0) step 9",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "dash path stays inside (0.0, -2290.0) step 10",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "dash path stays inside (0.0, -2290.0) step 11",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "dash path stays inside (0.0, 2290.0) step 0",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "dash path stays inside (0.0, 2290.0) step 1",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "dash path stays inside (0.0, 2290.0) step 2",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "dash path stays inside (0.0, 2290.0) step 3",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "dash path stays inside (0.0, 2290.0) step 4",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "dash path stays inside (0.0, 2290.0) step 5",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "dash path stays inside (0.0, 2290.0) step 6",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "dash path stays inside (0.0, 2290.0) step 7",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "dash path stays inside (0.0, 2290.0) step 8",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "dash path stays inside (0.0, 2290.0) step 9",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "dash path stays inside (0.0, 2290.0) step 10",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "dash path stays inside (0.0, 2290.0) step 11",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "dash path stays inside (-2290.0, -2290.0) step 0",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "dash path stays inside (-2290.0, -2290.0) step 1",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "dash path stays inside (-2290.0, -2290.0) step 2",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "dash path stays inside (-2290.0, -2290.0) step 3",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "dash path stays inside (-2290.0, -2290.0) step 4",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "dash path stays inside (-2290.0, -2290.0) step 5",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "dash path stays inside (-2290.0, -2290.0) step 6",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "dash path stays inside (-2290.0, -2290.0) step 7",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "dash path stays inside (-2290.0, -2290.0) step 8",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "dash path stays inside (-2290.0, -2290.0) step 9",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "dash path stays inside (-2290.0, -2290.0) step 10",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "dash path stays inside (-2290.0, -2290.0) step 11",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "dash path stays inside (2290.0, -2290.0) step 0",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "dash path stays inside (2290.0, -2290.0) step 1",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "dash path stays inside (2290.0, -2290.0) step 2",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "dash path stays inside (2290.0, -2290.0) step 3",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "dash path stays inside (2290.0, -2290.0) step 4",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "dash path stays inside (2290.0, -2290.0) step 5",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "dash path stays inside (2290.0, -2290.0) step 6",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "dash path stays inside (2290.0, -2290.0) step 7",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "dash path stays inside (2290.0, -2290.0) step 8",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "dash path stays inside (2290.0, -2290.0) step 9",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "dash path stays inside (2290.0, -2290.0) step 10",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "dash path stays inside (2290.0, -2290.0) step 11",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "dash path stays inside (2290.0, 2290.0) step 0",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "dash path stays inside (2290.0, 2290.0) step 1",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "dash path stays inside (2290.0, 2290.0) step 2",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "dash path stays inside (2290.0, 2290.0) step 3",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "dash path stays inside (2290.0, 2290.0) step 4",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "dash path stays inside (2290.0, 2290.0) step 5",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "dash path stays inside (2290.0, 2290.0) step 6",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "dash path stays inside (2290.0, 2290.0) step 7",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "dash path stays inside (2290.0, 2290.0) step 8",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "dash path stays inside (2290.0, 2290.0) step 9",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "dash path stays inside (2290.0, 2290.0) step 10",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "dash path stays inside (2290.0, 2290.0) step 11",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "dash path stays inside (-2290.0, 2290.0) step 0",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "dash path stays inside (-2290.0, 2290.0) step 1",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "dash path stays inside (-2290.0, 2290.0) step 2",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "dash path stays inside (-2290.0, 2290.0) step 3",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "dash path stays inside (-2290.0, 2290.0) step 4",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "dash path stays inside (-2290.0, 2290.0) step 5",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "dash path stays inside (-2290.0, 2290.0) step 6",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "dash path stays inside (-2290.0, 2290.0) step 7",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "dash path stays inside (-2290.0, 2290.0) step 8",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "dash path stays inside (-2290.0, 2290.0) step 9",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "dash path stays inside (-2290.0, 2290.0) step 10",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "dash path stays inside (-2290.0, 2290.0) step 11",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "obstacle push resolves overlap (-1756.0, -1278.0, 20.0)/0",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "can retreat after obstacle contact (-1756.0, -1278.0, 20.0)/0",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "obstacle push resolves overlap (-1756.0, -1278.0, 20.0)/1",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "can retreat after obstacle contact (-1756.0, -1278.0, 20.0)/1",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "obstacle push resolves overlap (-1756.0, -1278.0, 20.0)/2",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "can retreat after obstacle contact (-1756.0, -1278.0, 20.0)/2",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "obstacle push resolves overlap (-1756.0, -1278.0, 20.0)/3",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "can retreat after obstacle contact (-1756.0, -1278.0, 20.0)/3",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "obstacle push resolves overlap (-1756.0, -1278.0, 20.0)/4",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "can retreat after obstacle contact (-1756.0, -1278.0, 20.0)/4",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "obstacle push resolves overlap (-1756.0, -1278.0, 20.0)/5",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "can retreat after obstacle contact (-1756.0, -1278.0, 20.0)/5",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "obstacle push resolves overlap (-1756.0, -1278.0, 20.0)/6",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "can retreat after obstacle contact (-1756.0, -1278.0, 20.0)/6",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "obstacle push resolves overlap (-1756.0, -1278.0, 20.0)/7",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "can retreat after obstacle contact (-1756.0, -1278.0, 20.0)/7",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "obstacle push resolves overlap (1756.0, -1150.0, 20.0)/0",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "can retreat after obstacle contact (1756.0, -1150.0, 20.0)/0",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "obstacle push resolves overlap (1756.0, -1150.0, 20.0)/1",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "can retreat after obstacle contact (1756.0, -1150.0, 20.0)/1",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "obstacle push resolves overlap (1756.0, -1150.0, 20.0)/2",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "can retreat after obstacle contact (1756.0, -1150.0, 20.0)/2",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "obstacle push resolves overlap (1756.0, -1150.0, 20.0)/3",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "can retreat after obstacle contact (1756.0, -1150.0, 20.0)/3",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "obstacle push resolves overlap (1756.0, -1150.0, 20.0)/4",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "can retreat after obstacle contact (1756.0, -1150.0, 20.0)/4",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "obstacle push resolves overlap (1756.0, -1150.0, 20.0)/5",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "can retreat after obstacle contact (1756.0, -1150.0, 20.0)/5",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "obstacle push resolves overlap (1756.0, -1150.0, 20.0)/6",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "can retreat after obstacle contact (1756.0, -1150.0, 20.0)/6",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "obstacle push resolves overlap (1756.0, -1150.0, 20.0)/7",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "can retreat after obstacle contact (1756.0, -1150.0, 20.0)/7",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "obstacle push resolves overlap (-1756.0, 1154.0, 20.0)/0",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "can retreat after obstacle contact (-1756.0, 1154.0, 20.0)/0",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "obstacle push resolves overlap (-1756.0, 1154.0, 20.0)/1",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "can retreat after obstacle contact (-1756.0, 1154.0, 20.0)/1",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "obstacle push resolves overlap (-1756.0, 1154.0, 20.0)/2",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "can retreat after obstacle contact (-1756.0, 1154.0, 20.0)/2",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "obstacle push resolves overlap (-1756.0, 1154.0, 20.0)/3",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "can retreat after obstacle contact (-1756.0, 1154.0, 20.0)/3",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "obstacle push resolves overlap (-1756.0, 1154.0, 20.0)/4",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "can retreat after obstacle contact (-1756.0, 1154.0, 20.0)/4",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "obstacle push resolves overlap (-1756.0, 1154.0, 20.0)/5",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "can retreat after obstacle contact (-1756.0, 1154.0, 20.0)/5",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "obstacle push resolves overlap (-1756.0, 1154.0, 20.0)/6",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "can retreat after obstacle contact (-1756.0, 1154.0, 20.0)/6",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "obstacle push resolves overlap (-1756.0, 1154.0, 20.0)/7",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "can retreat after obstacle contact (-1756.0, 1154.0, 20.0)/7",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "obstacle push resolves overlap (-1664.327, 1166.878, 20.0)/0",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "can retreat after obstacle contact (-1664.327, 1166.878, 20.0)/0",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "obstacle push resolves overlap (-1664.327, 1166.878, 20.0)/1",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "can retreat after obstacle contact (-1664.327, 1166.878, 20.0)/1",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "obstacle push resolves overlap (-1664.327, 1166.878, 20.0)/2",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "can retreat after obstacle contact (-1664.327, 1166.878, 20.0)/2",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "obstacle push resolves overlap (-1664.327, 1166.878, 20.0)/3",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "can retreat after obstacle contact (-1664.327, 1166.878, 20.0)/3",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "obstacle push resolves overlap (-1664.327, 1166.878, 20.0)/4",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "can retreat after obstacle contact (-1664.327, 1166.878, 20.0)/4",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "obstacle push resolves overlap (-1664.327, 1166.878, 20.0)/5",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "can retreat after obstacle contact (-1664.327, 1166.878, 20.0)/5",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "obstacle push resolves overlap (-1664.327, 1166.878, 20.0)/6",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "can retreat after obstacle contact (-1664.327, 1166.878, 20.0)/6",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "obstacle push resolves overlap (-1664.327, 1166.878, 20.0)/7",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "can retreat after obstacle contact (-1664.327, 1166.878, 20.0)/7",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "obstacle push resolves overlap (-1689.719, -1493.964, 20.0)/0",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "can retreat after obstacle contact (-1689.719, -1493.964, 20.0)/0",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "obstacle push resolves overlap (-1689.719, -1493.964, 20.0)/1",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "can retreat after obstacle contact (-1689.719, -1493.964, 20.0)/1",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "obstacle push resolves overlap (-1689.719, -1493.964, 20.0)/2",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "can retreat after obstacle contact (-1689.719, -1493.964, 20.0)/2",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "obstacle push resolves overlap (-1689.719, -1493.964, 20.0)/3",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "can retreat after obstacle contact (-1689.719, -1493.964, 20.0)/3",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "obstacle push resolves overlap (-1689.719, -1493.964, 20.0)/4",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "can retreat after obstacle contact (-1689.719, -1493.964, 20.0)/4",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "obstacle push resolves overlap (-1689.719, -1493.964, 20.0)/5",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "can retreat after obstacle contact (-1689.719, -1493.964, 20.0)/5",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "obstacle push resolves overlap (-1689.719, -1493.964, 20.0)/6",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "can retreat after obstacle contact (-1689.719, -1493.964, 20.0)/6",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "obstacle push resolves overlap (-1689.719, -1493.964, 20.0)/7",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "can retreat after obstacle contact (-1689.719, -1493.964, 20.0)/7",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "obstacle push resolves overlap (-1460.239, -1575.187, 20.0)/0",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "can retreat after obstacle contact (-1460.239, -1575.187, 20.0)/0",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "obstacle push resolves overlap (-1460.239, -1575.187, 20.0)/1",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "can retreat after obstacle contact (-1460.239, -1575.187, 20.0)/1",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "obstacle push resolves overlap (-1460.239, -1575.187, 20.0)/2",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "can retreat after obstacle contact (-1460.239, -1575.187, 20.0)/2",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "obstacle push resolves overlap (-1460.239, -1575.187, 20.0)/3",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "can retreat after obstacle contact (-1460.239, -1575.187, 20.0)/3",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "obstacle push resolves overlap (-1460.239, -1575.187, 20.0)/4",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "can retreat after obstacle contact (-1460.239, -1575.187, 20.0)/4",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "obstacle push resolves overlap (-1460.239, -1575.187, 20.0)/5",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "can retreat after obstacle contact (-1460.239, -1575.187, 20.0)/5",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "obstacle push resolves overlap (-1460.239, -1575.187, 20.0)/6",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "can retreat after obstacle contact (-1460.239, -1575.187, 20.0)/6",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "obstacle push resolves overlap (-1460.239, -1575.187, 20.0)/7",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "can retreat after obstacle contact (-1460.239, -1575.187, 20.0)/7",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "obstacle push resolves overlap (-1620.651, -1680.606, 20.0)/0",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "can retreat after obstacle contact (-1620.651, -1680.606, 20.0)/0",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "obstacle push resolves overlap (-1620.651, -1680.606, 20.0)/1",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "can retreat after obstacle contact (-1620.651, -1680.606, 20.0)/1",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "obstacle push resolves overlap (-1620.651, -1680.606, 20.0)/2",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "can retreat after obstacle contact (-1620.651, -1680.606, 20.0)/2",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "obstacle push resolves overlap (-1620.651, -1680.606, 20.0)/3",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "can retreat after obstacle contact (-1620.651, -1680.606, 20.0)/3",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "obstacle push resolves overlap (-1620.651, -1680.606, 20.0)/4",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "can retreat after obstacle contact (-1620.651, -1680.606, 20.0)/4",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "obstacle push resolves overlap (-1620.651, -1680.606, 20.0)/5",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "can retreat after obstacle contact (-1620.651, -1680.606, 20.0)/5",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "obstacle push resolves overlap (-1620.651, -1680.606, 20.0)/6",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "can retreat after obstacle contact (-1620.651, -1680.606, 20.0)/6",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "obstacle push resolves overlap (-1620.651, -1680.606, 20.0)/7",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "can retreat after obstacle contact (-1620.651, -1680.606, 20.0)/7",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "obstacle push resolves overlap (1525.1, -1556.442, 20.0)/0",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "can retreat after obstacle contact (1525.1, -1556.442, 20.0)/0",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "obstacle push resolves overlap (1525.1, -1556.442, 20.0)/1",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "can retreat after obstacle contact (1525.1, -1556.442, 20.0)/1",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "obstacle push resolves overlap (1525.1, -1556.442, 20.0)/2",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "can retreat after obstacle contact (1525.1, -1556.442, 20.0)/2",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "obstacle push resolves overlap (1525.1, -1556.442, 20.0)/3",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "can retreat after obstacle contact (1525.1, -1556.442, 20.0)/3",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "obstacle push resolves overlap (1525.1, -1556.442, 20.0)/4",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "can retreat after obstacle contact (1525.1, -1556.442, 20.0)/4",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "obstacle push resolves overlap (1525.1, -1556.442, 20.0)/5",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "can retreat after obstacle contact (1525.1, -1556.442, 20.0)/5",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "obstacle push resolves overlap (1525.1, -1556.442, 20.0)/6",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "can retreat after obstacle contact (1525.1, -1556.442, 20.0)/6",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "obstacle push resolves overlap (1525.1, -1556.442, 20.0)/7",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "can retreat after obstacle contact (1525.1, -1556.442, 20.0)/7",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "obstacle push resolves overlap (1720.351, -1611.871, 20.0)/0",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "can retreat after obstacle contact (1720.351, -1611.871, 20.0)/0",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "obstacle push resolves overlap (1720.351, -1611.871, 20.0)/1",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "can retreat after obstacle contact (1720.351, -1611.871, 20.0)/1",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "obstacle push resolves overlap (1720.351, -1611.871, 20.0)/2",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "can retreat after obstacle contact (1720.351, -1611.871, 20.0)/2",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "obstacle push resolves overlap (1720.351, -1611.871, 20.0)/3",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "can retreat after obstacle contact (1720.351, -1611.871, 20.0)/3",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "obstacle push resolves overlap (1720.351, -1611.871, 20.0)/4",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "can retreat after obstacle contact (1720.351, -1611.871, 20.0)/4",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "obstacle push resolves overlap (1720.351, -1611.871, 20.0)/5",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "can retreat after obstacle contact (1720.351, -1611.871, 20.0)/5",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "obstacle push resolves overlap (1720.351, -1611.871, 20.0)/6",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "can retreat after obstacle contact (1720.351, -1611.871, 20.0)/6",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "obstacle push resolves overlap (1720.351, -1611.871, 20.0)/7",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "can retreat after obstacle contact (1720.351, -1611.871, 20.0)/7",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "obstacle push resolves overlap (-1568.088, 1359.021, 20.0)/0",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "can retreat after obstacle contact (-1568.088, 1359.021, 20.0)/0",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "obstacle push resolves overlap (-1568.088, 1359.021, 20.0)/1",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "can retreat after obstacle contact (-1568.088, 1359.021, 20.0)/1",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "obstacle push resolves overlap (-1568.088, 1359.021, 20.0)/2",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "can retreat after obstacle contact (-1568.088, 1359.021, 20.0)/2",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "obstacle push resolves overlap (-1568.088, 1359.021, 20.0)/3",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "can retreat after obstacle contact (-1568.088, 1359.021, 20.0)/3",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "obstacle push resolves overlap (-1568.088, 1359.021, 20.0)/4",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "can retreat after obstacle contact (-1568.088, 1359.021, 20.0)/4",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "obstacle push resolves overlap (-1568.088, 1359.021, 20.0)/5",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "can retreat after obstacle contact (-1568.088, 1359.021, 20.0)/5",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "obstacle push resolves overlap (-1568.088, 1359.021, 20.0)/6",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "can retreat after obstacle contact (-1568.088, 1359.021, 20.0)/6",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "obstacle push resolves overlap (-1568.088, 1359.021, 20.0)/7",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "can retreat after obstacle contact (-1568.088, 1359.021, 20.0)/7",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "obstacle push resolves overlap (-1614.906, 1155.651, 20.0)/0",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "can retreat after obstacle contact (-1614.906, 1155.651, 20.0)/0",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "obstacle push resolves overlap (-1614.906, 1155.651, 20.0)/1",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "can retreat after obstacle contact (-1614.906, 1155.651, 20.0)/1",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "obstacle push resolves overlap (-1614.906, 1155.651, 20.0)/2",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "can retreat after obstacle contact (-1614.906, 1155.651, 20.0)/2",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "obstacle push resolves overlap (-1614.906, 1155.651, 20.0)/3",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "can retreat after obstacle contact (-1614.906, 1155.651, 20.0)/3",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "obstacle push resolves overlap (-1614.906, 1155.651, 20.0)/4",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "can retreat after obstacle contact (-1614.906, 1155.651, 20.0)/4",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "obstacle push resolves overlap (-1614.906, 1155.651, 20.0)/5",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "can retreat after obstacle contact (-1614.906, 1155.651, 20.0)/5",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "obstacle push resolves overlap (-1614.906, 1155.651, 20.0)/6",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "can retreat after obstacle contact (-1614.906, 1155.651, 20.0)/6",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "obstacle push resolves overlap (-1614.906, 1155.651, 20.0)/7",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "can retreat after obstacle contact (-1614.906, 1155.651, 20.0)/7",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "corner spawns preserve approach distance (-2290.0, -2290.0) min=36.77",
+			"pass": false,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "corner spawns preserve approach distance (2290.0, -2290.0) min=36.77",
+			"pass": false,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "corner spawns preserve approach distance (2290.0, 2290.0) min=36.77",
+			"pass": false,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "corner spawns preserve approach distance (-2290.0, 2290.0) min=36.77",
+			"pass": false,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "all route centerlines traversable at 101 points each: blocked=0",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "landmark reachable by continuous grid route: battlefield",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "landmark reachable by continuous grid route: bifrost",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "landmark reachable by continuous grid route: giant_graveyard",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "landmark reachable by continuous grid route: frost_remnants",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "landmark reachable by continuous grid route: muspel_edge",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		},
+		{
+			"check": "landmark reachable by continuous grid route: dead_march",
+			"pass": true,
+			"section": "map movement obstacles roads and enemy spawn"
+		}
+	],
+	"scope": "independent controlled runtime acceptance; manual steps and forced states/HP; not a natural clear"
+}

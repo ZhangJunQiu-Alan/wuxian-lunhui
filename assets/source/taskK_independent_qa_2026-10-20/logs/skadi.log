@@ -1,0 +1,19 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+MEASURE {"awakened_radius":700.0,"cooldown":1.0,"damage":115.199999999983,"dps":9.59999999999854,"frozen_frame_fraction":1.0,"icefield":0.0,"max_ice_patches":0,"version":"before"}
+MEASURE {"awakened_radius":700.0,"cooldown":1.0,"damage":115.199999999983,"dps":9.59999999999854,"frozen_frame_fraction":1.0,"icefield":9.0,"max_ice_patches":22,"version":"before"}
+MEASURE {"awakened_radius":700.0,"cooldown":0.1,"damage":863.999999999869,"dps":71.9999999999891,"frozen_frame_fraction":1.0,"icefield":0.0,"max_ice_patches":0,"version":"before"}
+MEASURE {"awakened_radius":700.0,"cooldown":0.1,"damage":863.999999999869,"dps":71.9999999999891,"frozen_frame_fraction":1.0,"icefield":9.0,"max_ice_patches":22,"version":"before"}
+MEASURE {"awakened_radius":700.0,"cooldown":1.0,"damage":38.3999999999942,"dps":3.19999999999951,"frozen_frame_fraction":0.375,"icefield":0.0,"max_ice_patches":0,"version":"after"}
+MEASURE {"awakened_radius":700.0,"cooldown":1.0,"damage":38.3999999999942,"dps":3.19999999999951,"frozen_frame_fraction":0.883333333333333,"icefield":9.0,"max_ice_patches":1,"version":"after"}
+MEASURE {"awakened_radius":700.0,"cooldown":0.1,"damage":62.3999999999905,"dps":5.19999999999921,"frozen_frame_fraction":0.566666666666667,"icefield":0.0,"max_ice_patches":0,"version":"after"}
+MEASURE {"awakened_radius":700.0,"cooldown":0.1,"damage":62.3999999999905,"dps":5.19999999999921,"frozen_frame_fraction":0.922222222222222,"icefield":9.0,"max_ice_patches":1,"version":"after"}
+PASS winter damage/frost/ice stacking before vs after
+SCRIPT ERROR: Invalid call. Nonexistent function 'create' in base 'Nil'.
+          at: _boss (res://tools/test_vigrid.gd:92)
+          GDScript backtrace (most recent call first):
+              [0] _boss (res://tools/test_vigrid.gd:92)
+              [1] _test_cleanup (res://tools/test_vigrid.gd:1121)
+              [2] _new_game (res://tools/test_vigrid.gd:62)
+PASS cleanup
+SKADI_BALANCE_RESULT 13 checks 0 failures

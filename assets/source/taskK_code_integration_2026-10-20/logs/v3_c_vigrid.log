@@ -1,0 +1,18 @@
+ERROR: Failed to open log file for writing: /dev/null
+   at: rotate_file (core/io/logger.cpp:169)
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+PASS K-CODE-01 level registration and unlock
+PASS K-CODE-01 map, bounds, masks, horizon
+PASS K-CODE-02 regular enemies
+PASS K-CODE-03..05 Boss schedule, waiting, pause
+PASS K-CODE-03 Jormungandr
+PASS K-CODE-04 Fenrir
+PASS K-CODE-05 Surtr
+PASS K-CODE-06 aid and audio
+PASS K-CODE-07 fates and Loki
+PASS K-CODE-07 K7 fate/Loki combinations
+PASS K-CODE-07 ending skip and settlement
+PASS K-CODE-07 save compatibility
+PASS cleanup
+RESULT: 368 checks, 0 failures

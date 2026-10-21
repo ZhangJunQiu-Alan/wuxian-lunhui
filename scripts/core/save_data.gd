@@ -5,7 +5,7 @@ extends Node
 ## 测试时用命令行参数 --save-file=user://test_save.json 换一个文件，避免弄乱真实存档
 
 const DEFAULT_PATH := "user://save.json"
-const VERSION := 4
+const VERSION := 5
 
 var path := DEFAULT_PATH
 var reward_points := 0
@@ -19,6 +19,9 @@ var cleared_levels: Array[String] = []  # 通关过的关卡 id
 ## 图鉴：分类 -> {id: 次数}。敌人记击杀数，Boss 记击败次数，强化记选择次数，支线记完成次数
 ## 遇到过但次数为 0 的（例如遭遇过还没打败的 Boss）也记下来，图鉴里算已发现
 var codex := _empty_codex()
+## 改写过的命运：关卡 id -> {命运 id: 是否在某一局里发生过, "ever_faith_loki": 是否在通关前信仰过洛基}
+## 第 5 版之前的存档没有这一项，读出来是空字典
+var fates := {}
 
 
 static func _empty_codex() -> Dictionary:
@@ -69,13 +72,21 @@ func load_game() -> void:
 		for level_id in cleared_levels:
 			for boss: Dictionary in LevelDB.ALL[level_id].bosses:
 				codex.bosses[boss.id] = 1
+	fates = {}
+	var saved_fates: Variant = data.get("fates", {})
+	if saved_fates is Dictionary:
+		for level_id: String in saved_fates:
+			if saved_fates[level_id] is Dictionary:
+				fates[level_id] = {}
+				for id: String in saved_fates[level_id]:
+					fates[level_id][id] = saved_fates[level_id][id] == true
 
 
 ## 先写到临时文件再改名，写到一半断电也不会把原存档写坏
 func save_game() -> void:
 	var data := {"version": VERSION, "reward_points": reward_points, "story_points": story_points, "meta": meta, "stats": stats,
 		"selected_character": selected_character, "unlocked_characters": unlocked_characters,
-		"selected_level": selected_level, "cleared_levels": cleared_levels, "codex": codex}
+		"selected_level": selected_level, "cleared_levels": cleared_levels, "codex": codex, "fates": fates}
 	var tmp_path := path + ".tmp"
 	var file := FileAccess.open(tmp_path, FileAccess.WRITE)
 	if file == null:
@@ -136,6 +147,15 @@ func record_codex(found: Dictionary) -> void:
 			codex[category][id] = codex[category].get(id, 0) + found[category][id]
 
 
+## 一局结束时调用（在 record_run 之前，由 record_run 一起保存）：记下这一局改写的命运，和以前的记录取并集
+func record_fates(level_id: String, run_fates: Dictionary, ever_faith_loki: bool) -> void:
+	var record: Dictionary = fates.get(level_id, {})
+	for id: String in run_fates:
+		record[id] = record.get(id, false) or run_fates[id] == true
+	record["ever_faith_loki"] = record.get("ever_faith_loki", false) or ever_faith_loki
+	fates[level_id] = record
+
+
 ## 一局结束时调用：把本局收获存进存档。第一次通关某一关时，自动选好下一关
 func record_run(level_id: String, points: int, story: int, cleared: bool, elapsed: float, kills: int, quests_done: int) -> void:
 	reward_points += points
@@ -166,4 +186,5 @@ func reset() -> void:
 	selected_level = "midgard"
 	cleared_levels = []
 	codex = _empty_codex()
+	fates = {}
 	save_game()

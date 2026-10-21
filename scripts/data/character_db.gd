@@ -51,7 +51,7 @@ const ALL := {
 		"name": "法师", "title": "大魔法师",
 		"hp": 100.0, "speed": 210.0, "color": Color(0.6, 0.55, 1.0),
 		"weapon": "奥术新星", "weapon_desc": "以自身为中心扩散的魔法环，伤害并击退敌人",
-		"passive": "先知", "passive_desc": "每次升级多一个选项（四选一）",
+		"passive": "先知", "passive_desc": "每次升级从四个选项中选择一个",
 		"ult_name": "巨石阵", "ult_desc": "一圈巨石从天而降砸在身边，之后 8 秒内敌人无法进入石阵",
 		"ult_cost": 60.0,
 		"unlock": {"type": "story", "value": 3, "text": "花费 3 点支线剧情点"},

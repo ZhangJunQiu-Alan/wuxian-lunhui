@@ -28,6 +28,7 @@ var _center := Vector2.ZERO   # 骑兵冲锋时的屏幕中心（世界坐标）
 static func cast(caster: Player) -> void:
 	var fx := EnterFormation.new()
 	fx.player = caster
+	caster.active_ultimate = fx
 	caster.get_parent().add_child(fx)
 
 

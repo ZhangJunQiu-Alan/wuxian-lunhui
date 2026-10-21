@@ -73,7 +73,7 @@ the show begins."
 奥术新星,Arcane Nova
 以自身为中心扩散的魔法环，伤害并击退敌人,"A ring of magic expands outward, damaging and knocking back enemies"
 先知,Seer
-每次升级多一个选项（四选一）,One extra choice on every level-up (choose 1 of 4)
+每次升级从四个选项中选择一个,Choose one of four options on every level-up
 巨石阵,Stonehenge
 一圈巨石从天而降砸在身边，之后 8 秒内敌人无法进入石阵,A ring of megaliths crashes down around you; enemies can't enter the circle for 8 seconds
 花费 3 点支线剧情点,Spend 3 Story Points
@@ -103,7 +103,7 @@ if you know their names."
 指甲傀儡碎裂后的残片，仍然记得要攻击活人。,Fragments of a shattered nail golem that still remember to attack the living.
 又小又快。,Small and fast.
 巨狼斯库尔追逐太阳女神苏尔的马车已有千年。芬布尔之冬的第三年，它终于追上了。,"For a thousand years the great wolf Sköll has chased the chariot of the sun goddess Sól. In the third year of Fimbulwinter, it finally caught her."
-扑咬冲锋 · 吞日：视野越来越暗 · 血量过半后召唤狼群,Lunging charge · Devour the Sun: your vision darkens · Summons wolves below half health
+侧向绕位后扑咬 · 狼嚎吞日：收缩视野 · 半血后召唤强化狼群,Flank and lunge · Sun-devouring howl: narrows vision · Summons stronger wolves below half health
 斯库尔的兄弟，日夜追逐月神玛尼。月光越暗，它越强大。,"Sköll's brother, who chases the moon god Máni day and night. The darker the moonlight, the stronger he grows."
 月影分身：只有脚下有影子的是本体 · 月蚀嚎叫让人恐惧 · 斯库尔死后陷入狂暴,Moon shadows: only the one with a shadow at its feet is real · Eclipse howl causes fear · Goes berserk if Sköll is dead
 霜巨人的领袖，从东方横渡冰封的海洋而来。预言说，他将驾驶亡者之船纳吉尔法尔。,"Leader of the frost giants, who crossed the frozen ocean from the east. Prophecy says he will steer Naglfar, the ship of the dead."
@@ -445,7 +445,7 @@ Noto Sans SC — Google、Adobe（SIL Open Font License 1.1）,"Noto Sans SC —
 Godot Engine（MIT License）,Godot Engine (MIT License)
 特别感谢,Special Thanks
 每一位轮回者,Every Reincarnator
-无限轮回,INFINITE SAMSARA
+诸界余烬,EMBERS OF THE REALMS
 感谢游玩,Thank you for playing
 Godot 引擎许可证,Godot Engine License
 返回  [Esc],Back  [Esc]
@@ -526,9 +526,8 @@ Stage %d · %s    [Enter]"
 战斗,Combat
 伤害数字,Damage Numbers
 屏幕震动,Screen Shake
-开始游戏  [Enter],Start Game  [Enter]
+开始游戏,Start Game
 制作人员,Credits
-按任意键开始,Press any key to start
 冥雾：站在雾里会持续掉血，但敌人在雾里会变慢,"Mist: standing in it drains your health, but enemies in the mist are slowed"
 未解锁,Locked
 「%s」,“%s”
@@ -642,13 +641,13 @@ Stage %d · %s    [Enter]"
 渡鸦,Ravens
 福金和雾尼绕身飞行，轮流俯冲啄向印记最多的敌人，每啄一下叠 2 层。增殖 = 多一只渡鸦,"Huginn and Muninn circle you, taking turns to dive at the most-marked enemy and adding 2 Marks per peck. Rune Multiplication = +1 raven"
 九夜符文,Runes of the Nine Nights
-符文落地变成符文阵，停留 3 秒，阵里的敌人每秒叠 1 层印记。破甲 = 符文阵更大,Runes land as rune circles for 3s; enemies inside gain 1 Mark per second. Armor-Breaking Runes = bigger circles
+符文落地成阵，停留3秒；每个敌人每秒受到一次阵伤并叠1层印记，重叠不额外结算。破甲扩大阵域,Runes form circles for 3s. Each enemy takes circle damage and gains 1 Mark at most once per second across overlapping circles. Armor-Breaking Runes = bigger circles
 觉醒·永不落空,Awakening · Never Misses
 长枪贯穿后自动转向下一个敌人，连续贯穿 3 次。每击杀 100 个敌人召唤一位英灵 20 秒,"After piercing, the spear turns to the next enemy, up to 3 times. Every 100 kills summons an Einherjar for 20s"
 觉醒·至高王座,Awakening · Hliðskjálf
 渡鸦 +2；被渡鸦啄死的精英化作英灵为你战斗 15 秒。每击杀 100 个敌人召唤一位英灵 20 秒,+2 ravens; elites killed by ravens rise as Einherjar for 15s. Every 100 kills summons an Einherjar for 20s
 觉醒·世界树之秘,Awakening · Secret of the World Tree
-符文阵变大、停留更久；一处印记引爆时，所有符文阵里的敌人叠 1 层。每击杀 100 个敌人召唤一位英灵 20 秒,"Bigger, longer rune circles; any detonation gives 1 Mark to every enemy in a circle. Every 100 kills summons an Einherjar for 20s"
+符文阵更大、更持久；引爆向阵内敌人传播1层印记，同一敌人每秒最多一次。每击杀100个敌人召唤英灵20秒,"Bigger, longer rune circles. Detonations spread 1 Mark to enemies in circles, at most once per enemy per second. Every 100 kills summons an Einherjar for 20s"
 火焰范围 +{v}%,Flame radius +{v}%
 余烬,Embers
 灼烧持续时间 +{v} 秒,Burn duration +{v}s
@@ -697,7 +696,7 @@ Stage %d · %s    [Enter]"
 光明之矛,Spear of Light
 光束收成一支光矛，飞过整个屏幕，伤害 ×2.5，间隔 ×1.5。棱光 = 多掷一支,"The beam becomes a spear that crosses the whole screen: damage ×2.5, interval ×1.5. Prism = more spears"
 白昼,Daylight
-光束改为绕着你旋转的光柱，扫到的敌人持续受伤。棱光 = 多一道光柱；余晖 = 扫过的地方留光带,The beam becomes a pillar of light sweeping around you. Prism = +1 pillar; Afterglow = sweeps leave light behind
+光柱旋转发射3秒后隐藏冷却4秒，冷却缩短可减少间隔，最短1.5秒。棱光增加光柱；余晖留下短时光带,"Rotating pillars fire for 3s, then hide for a 4s cooldown (minimum 1.5s). Cooldown reduction shortens the rest. Prism adds pillars; Afterglow leaves brief trails"
 万物之誓,Oath of All Things
 光束每命中一个敌人，你得到 1 层誓言护盾（最多 3 层，每层挡一次伤害）；护盾满时光束伤害 ×2,"Each enemy hit grants 1 Oath Ward (max 3, each blocks one hit); at full wards, beams deal ×2"
 觉醒·神之光矛,Awakening · Divine Spear
@@ -759,7 +758,7 @@ Stage %d · %s    [Enter]"
 雪鞋,Snowshoes
 移动时每走 150 像素自动射一支箭，跑得越多射得越多，站着不动就不射,"Fire an arrow every 150 px you move: the more you run, the more you shoot. Standing still fires nothing"
 永冬,Endless Winter
-冰箭改为身边一圈暴风雪，持续给范围内的敌人叠霜冻。连珠 = 暴风雪更大,Arrows become a blizzard around you that keeps adding Frost. Volley = bigger blizzard
+冰箭改为身边的暴风雪，持续造成少量伤害，每次叠1层霜冻。连珠扩大范围；寒意只强化冰箭,Replace arrows with a blizzard: light periodic damage and 1 Frost per tick. Volley expands it; Chill only boosts arrows.
 觉醒·群山之女,Awakening · Daughter of the Mountains
 狙击箭贯穿整个屏幕，冻结一路上的所有敌人。免疫减速,"The snipe pierces across the whole screen, freezing everything in its path. Immune to slows"
 觉醒·滑雪猎手,Awakening · Ski Hunter
@@ -801,7 +800,100 @@ Stage %d · %s    [Enter]"
 奖励点,Reward Points
 累计 %d,Total %d
 支线剧情点,Story Points
+芬里尔 · 魔狼 —— 上颚抵住天空，下颚贴着大地,"Fenrir · The Great Wolf — upper jaw against the sky, lower jaw on the earth"
+「你们……也只是……更大的笼子里的狼……」,"""You... are only... wolves in a bigger cage..."""
+芬里尔,Fenrir
+魔狼,The Great Wolf
+格莱普尼尔！,Gleipnir!
+奥丁之子维达踏进了巨狼的嘴里！,"Vidar, son of Odin, steps into the wolf's jaws!"
+耶梦加得 · 尘世巨蟒 —— 它松开了咬住的尾巴,Jörmungandr · The World Serpent — it has let go of its tail
+「父亲的……锁链……终于……」,"""Father's... chains... at last..."""
+耶梦加得,Jörmungandr
+尘世巨蟒,The World Serpent
+托尔挡下了毒液，没有倒下。他会在最终战中参战,Thor shrugs off the venom and stays standing. He will join the final battle
+苏尔特 · 黑焰之王 —— 炎之剑比太阳更亮,Surtr · Lord of Black Flame — his sword burns brighter than the sun
+「这把火……本来就该燃起……我只是……先你一步……」,"""This fire... was always meant to burn... I only... got here before you..."""
+苏尔特,Surtr
+黑焰之王,Lord of Black Flame
+九界燃烧 —— 火焰从平原的边缘烧向中心,The Nine Worlds Burn — fire sweeps in from the edge of the plain
+终焉之火 —— 苏尔特把剑插进了大地,The Final Fire — Surtr drives his sword into the earth
+火焰巨人,Fire Giant
+霜巨人精锐,Frost Giant Veteran
+狂狼战士,Wolfskin Berserker
+中央燃烧平原,The Burning Plain
+崩塌彩虹桥残端,Broken End of Bifröst
+诸神与巨人残骸带,Field of Fallen Gods and Giants
+霜巨人残部,Frost Giant Remnants
+穆斯贝尔前线,Muspelheim Front
+亡者残余行军带,Last March of the Dead
+纳吉尔法尔的幸存者涌了过来！,Survivors of Naglfar surge forward!
+披着狼皮的狂战士围了上来！,Wolfskin berserkers close in!
+穆斯贝尔的火焰巨人越过了前线！,The fire giants of Muspelheim cross the line!
+霜巨人的残部举起了盾牌！,The frost giants' remnants raise their shields!
+整片平原的亡者都站了起来！,The dead rise across the whole plain!
+托尔活了下来,Thor survived
+维达撕开巨口,Vidar tore the jaws
+弗雷参战,Freyr fought
+谢谢你，轮回者。锁链断了，我也该去看看别的世界了。,"Thank you, Reincarnator. The chains are broken. Time I went to see the other worlds."
+继续,Continue
+跳过演出,Skip
+改写的命运,Fates rewritten
+托尔的雷锤劈向了苏尔特！,Thor's hammer strikes Surtr!
+弗蕾亚的兄长弗雷来到了战场,"Freyr, Freyja's brother, has come to the battle"
+火焰熄灭了。九界化为灰烬，大海吞没了大地。,"The fire died out. The Nine Worlds were ash, and the sea swallowed the land."
+许久之后，新的大地从海中升起，比以往更加翠绿。,"Long after, a new earth rose from the sea, greener than before."
+巴德尔从冥界归来。,Baldr returned from the land of the dead.
+世界树的树干里，躲过末日的两个人类——利弗与利弗特拉西尔——走了出来。,"From the trunk of the World Tree, the two humans who outlived the end — Líf and Lífþrasir — stepped out."
+"篇章「诸神黄昏」完成。
+评价：根据存活时间、击杀数、改写的命运数结算奖励。
+正在返回主神空间……","Chapter ""Ragnarök"" complete.
+Rating: rewards are based on survival time, kills and fates rewritten.
+Returning to Lord God's Space..."
+来自火焰之国穆斯贝尔海姆，苏尔特的军队。他们身体里烧的不是血，是比熔岩更烫的火。,"Surtr's army from Muspelheim, the realm of fire. What burns in their bodies is not blood but a fire hotter than lava."
+死亡时爆炸，留下一片火焰地面。,"Explodes on death, leaving burning ground."
+赫列姆的残部中最强的战士。国王倒下了，他们还守着最后一道盾墙。,"The strongest warriors left of Hrym's army. Their king has fallen, yet they still hold the last shield wall."
+会冲锋，会举盾挡住正面的攻击，绕到背后打它。,Charges and raises a shield that blocks frontal attacks. Hit it from behind.
+披着狼皮的狂战士。末日的血腥气让他们彻底失去了理智，分不清敌人和同伴。,Berserkers in wolf pelts. The reek of the world's end has driven them mad; they no longer know friend from foe.
+血量低时陷入狂暴，移动和攻击都变快。,"Enrages at low health, moving and attacking faster."
+洛基之子，被奥丁扔进大海后长成了能环绕整个人间的巨蟒，一直咬着自己的尾巴。它松开尾巴的那一刻，海水淹没了大地。预言中，托尔会杀死它，但走出九步后中毒倒下。,"A child of Loki. Cast into the sea by Odin, it grew until it encircled all of Midgard, biting its own tail. The moment it let go, the sea swallowed the land. Prophecy says Thor will slay it, then fall to its venom after nine steps."
+环绕场地逐渐收紧 · 毒息留下毒雾 · 只有蛇头能受伤，蛇身会撞飞玩家 · 信仰托尔并在 90 秒内击败它，托尔会活下来,"Coils around the field and tightens · Venom breath leaves poison mist · Only the head takes damage; the body knocks you away · Worship Thor and defeat it within 90 seconds, and Thor survives"
+洛基之子。诸神用矮人打造的锁链格莱普尼尔捆住了它，代价是战神提尔的右手。如今锁链已断，它张开大嘴，上颚抵住天空，下颚贴着大地。预言中，它将吞下奥丁。,"A child of Loki. The gods bound it with Gleipnir, a chain forged by dwarves, at the cost of the war god Tyr's right hand. Now the chain is broken. It opens its jaws, upper jaw against the sky, lower jaw against the earth. Prophecy says it will swallow Odin."
+天地巨口：吸引并吞噬，留有逃脱时间 · 绕圈狂奔 · 捡起格莱普尼尔碎片能束缚它 · 奥丁觉醒后，维达会来撕开它的嘴,"Maw of Heaven and Earth: pulls in and swallows, with time to escape · Circling rush · Pick up Gleipnir fragments to bind it · Once Odin awakens, Vidar comes to tear its jaws apart"
+在世界诞生之前，他就守在火焰之国的边界。诸神黄昏的最后，他会用比太阳更亮的炎之剑点燃九界。没有人知道他为何而战。他只是等待这一刻，等了整整一个纪元。,"He stood guard at the border of the realm of fire before the world was born. At the end of Ragnarök he will set the Nine Realms ablaze with a sword brighter than the sun. No one knows why he fights. He has simply waited for this moment, for an entire age."
+炎之剑横扫 · 穆斯贝尔之门召唤火焰巨人 · 60% 九界燃烧 · 25% 终焉之火：只有符文格能站人 · 弗蕾亚觉醒后，弗雷会来治疗你,"Flaming sword sweep · Gates of Muspel summon fire giants · 60%: the Nine Realms burn · 25%: Final Fire, only rune tiles are safe · Once Freyja awakens, Freyr comes to heal you"
 蜜酒 +%d,Mead +%d
 聚魂,Soul Gathering
 守护抵挡,Guard Blocked
 守护 · 一次抵挡,Guard · One Hit
+第三个没有夏天的冬季。,"For the third winter, no summer comes."
+村庄被白雪掩埋，死者从冰下归来。,"Snow has buried the villages.
+Beneath the ice, the dead rise."
+天边，巨狼追逐最后的太阳与月亮。,"At the edge of heaven, great wolves
+hunt the last sun and moon."
+"赫列姆率军渡过冰海。
+在永夜降临之前，击退它们。","Hrym marches across the frozen sea.
+Drive his army back before the endless night."
+"这里是赫尔海姆，
+未能进入英灵殿的死者之国。","This is Helheim. The realm of the dead
+whom Valhalla never welcomed."
+加姆守着入口，锁链仍将它束缚。,"Garm guards the gates.
+For now, his chains still hold."
+世界树的根下，尼德霍格日夜啃噬。,"Beneath the roots of the World Tree,
+Nidhogg gnaws without rest."
+"海拉的亡者大军正登船。
+在纳吉尔法尔起航之前，击败她。","Hel summons her dead aboard.
+Defeat her before Naglfar sets sail."
+"彩虹桥正在崩塌，
+诸神与巨人走向同一片战场。","The rainbow bridge is breaking.
+Gods and giants march to one final battlefield."
+托尔举起战锤，迎向尘世巨蟒。,"Thor lifts his hammer
+and faces the World Serpent."
+奥丁握紧长枪，魔狼挣断了最后的锁链。,"Odin grips his spear.
+The great wolf breaks his final chain."
+"战场尽头，苏尔特举起炎之剑。
+在世界燃尽之前，击败他。","At the far end of the battlefield, Surtr raises his sword of flame.
+Defeat him before the world burns."
+回看本关剧情,Replay chapter story
+暂停 [Space],Pause [Space]
+继续 [Space],Resume [Space]
+跳过 [Esc],Skip [Esc]

@@ -43,8 +43,8 @@ func _ready() -> void:
 	_roll.custom_minimum_size = Vector2(760, 0)
 	clip.add_child(_roll)
 
-	_add(tr("无限轮回"), 48, GOLD)
-	_add("INFINITE SAMSARA" if Settings.current_language() == "zh" else "无限轮回", 18, DIM)
+	_add(tr("诸界余烬"), 48, GOLD)
+	_add("EMBERS OF THE REALMS" if Settings.current_language() == "zh" else "诸界余烬", 18, DIM)
 	_gap(80)
 	for section: Array in SECTIONS:
 		_add(tr(section[0]), 15, DIM)

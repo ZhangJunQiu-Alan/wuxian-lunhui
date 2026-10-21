@@ -18,7 +18,10 @@ const SNIPE_SPEED := 1400.0
 const SNIPE_LENGTH := 1400.0
 const STRIDE := 150.0          # 雪鞋：每走这么远射一箭
 const BLIZZARD_RADIUS := 110.0
-const BLIZZARD_TICK := 0.5
+const BLIZZARD_TICK := 0.75
+const BLIZZARD_DAMAGE := 0.15
+const BLIZZARD_MIN_TICK := 0.45
+const BLIZZARD_VISUAL_RADIUS := 128.0
 const SKI_TIME := 3.0
 
 var _arrows: Array[Dictionary] = []
@@ -28,6 +31,7 @@ var _last_pos := Vector2.INF
 var _ski := 0.0
 var _blizzard_tick := 0.0
 var _ice_timer := 0.0
+var _winter_ice: Array[GodZone] = []
 var _snipe_line := {}          # 觉醒·群山之女：贯穿全屏的一箭（画 0.3 秒）
 
 
@@ -173,17 +177,22 @@ func blizzard_radius() -> float:
 func _tick_blizzard(delta: float) -> void:
 	_blizzard_tick -= delta
 	if _blizzard_tick <= 0.0:
-		_blizzard_tick = BLIZZARD_TICK * cooldown(1.0)
+		_blizzard_tick = maxf(BLIZZARD_MIN_TICK, BLIZZARD_TICK * cooldown(1.0))
 		for enemy in enemies_in_radius(global_position, blizzard_radius()):
-			enemy.take_damage(damage(BASE_DAMAGE) * 0.3)
-			enemy.add_frost(frost_per_hit())
+			enemy.take_damage(damage(BASE_DAMAGE) * BLIZZARD_DAMAGE)
+			enemy.add_frost(1)
 	if stat("skadi_icefield") > 0.0:
 		_ice_timer -= delta
 		if _ice_timer <= 0.0:
 			_ice_timer = 0.4
+			_winter_ice.assign(_winter_ice.filter(func(ice): return is_instance_valid(ice) and not ice.is_queued_for_deletion()))
+			for ice in _winter_ice:
+				if ice.global_position.distance_to(global_position) < 30.0:
+					ice._age = 0.0
+					return
 			var chill := func(enemy: Enemy) -> void:
 				enemy.add_frost(1)
-			zone(global_position, 30.0, stat("skadi_icefield"), 0.5, chill, Color(0.75, 0.92, 1.0))
+			_winter_ice.append(zone(global_position, 30.0, stat("skadi_icefield"), 0.5, chill, Color(0.75, 0.92, 1.0)))
 
 
 func _draw() -> void:
@@ -205,11 +214,11 @@ func _draw() -> void:
 	if _snipe_line:
 		draw_line(to_local(_snipe_line.a), to_local(_snipe_line.b), Color(0.85, 0.97, 1.0, _snipe_line.life / 0.3), 6.0)
 	if path == "skadi_winter":
-		var r := blizzard_radius()
+		var r := minf(blizzard_radius(), BLIZZARD_VISUAL_RADIUS)
 		var tex := art("skadi_blizzard")
 		if tex:
 			draw_set_transform(Vector2.ZERO, _time * 0.8)
-			draw_texture_rect(tex, Rect2(-Vector2.ONE * r, Vector2.ONE * r * 2.0), false, Color(1, 1, 1, 0.5))
+			draw_texture_rect(tex, Rect2(-Vector2.ONE * r, Vector2.ONE * r * 2.0), false, Color(1, 1, 1, 0.28))
 			draw_set_transform(Vector2.ZERO)
 		else:
 			draw_circle(Vector2.ZERO, r, Color(0.8, 0.92, 1.0, 0.07))

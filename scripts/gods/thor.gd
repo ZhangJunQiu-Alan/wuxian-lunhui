@@ -23,6 +23,7 @@ const LINK_RANGE := 150.0     # 静电场：感电敌人之间多远会连成电
 const STATIC_TICK := 1.0
 const STATIC_DAMAGE := 0.12   # 电网每秒伤害 = 落雷伤害 × 这个 × 感电层数 × (1 + 0.5 × 相连数)
 const SHOCK_STACKS := 5
+const MAX_LINKS := 80
 const COUNTER_CHANCE := 0.3   # 觉醒的神格被动：受伤时反劈
 
 var _hammers: Array[Dictionary] = []  # 飞行中的战锤：pos、dir、back（在往回飞）、flown、next_drop、hit
@@ -211,7 +212,7 @@ func _tick_static(delta: float) -> void:
 		for other in Enemy.query_radius(enemy.global_position, reach):
 			if other != enemy and other.stack_count("shock") > 0 and other.global_position.distance_squared_to(enemy.global_position) < reach * reach:
 				linked += 1
-				if linked <= 4 and enemy.get_instance_id() < other.get_instance_id() and _links.size() < 80:
+				if linked <= 4 and enemy.get_instance_id() < other.get_instance_id() and _links.size() < MAX_LINKS:
 					_links.append({"a": enemy.global_position, "b": other.global_position, "life": 0.25})
 		counts[enemy] = mini(linked, 4)
 	for enemy in shocked:
@@ -242,7 +243,8 @@ func on_enemy_died(enemy: Enemy) -> void:
 			if other.stack_count("shock") > 0 and not chain.has(other) and other.global_position.distance_squared_to(from) < reach * reach:
 				chain.append(other)
 				frontier.append(other.global_position)
-				_links.append({"a": from, "b": other.global_position, "life": 0.3})
+				if _links.size() < MAX_LINKS:
+					_links.append({"a": from, "b": other.global_position, "life": 0.3})
 				if chain.size() >= 40:
 					break
 	for other in chain:

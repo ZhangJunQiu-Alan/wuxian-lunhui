@@ -1,0 +1,74 @@
+{
+	"machine": {
+		"cores": 8,
+		"cpu": "Apple M2",
+		"engine": {
+			"build": "official",
+			"hash": "ed1daf0bf001b61586d9930840f2f1394092c079",
+			"hex": 263938,
+			"major": 4,
+			"minor": 7,
+			"patch": 2,
+			"status": "stable",
+			"string": "4.7.2-stable (official)",
+			"timestamp": 0
+		},
+		"os": "macOS",
+		"renderer": "Apple M2"
+	},
+	"reentry": [],
+	"scope": "local real-renderer soak, invincible player, synthetic four-awakened-god builds; mixed ordinary enemies refilled to configured cap; Boss HP maintained, Surtr phases forced; sound streams run under Master mute; not balance or natural-clear evidence",
+	"seconds_per_stage": 3.0,
+	"stages": [
+		{
+			"boss": "none",
+			"frames": 16,
+			"max_enemies": 350,
+			"max_ms": 726.212,
+			"max_same_sfx": 0,
+			"max_sfx": 0,
+			"over_100ms": 10,
+			"over_33ms": 15,
+			"p50_ms": 0.0,
+			"p95_ms": 0.0,
+			"p99_ms": 0.0,
+			"phases": [],
+			"samples": [
+				{
+					"boss_state": "none",
+					"draw_calls": 509.0,
+					"enemies": 350,
+					"god_build": {
+						"freyja": "freyja_hawk",
+						"loki": "loki_road",
+						"odin": "odin_nights",
+						"thor": "thor_static"
+					},
+					"hazards": 0,
+					"level_time": 540.15,
+					"master_muted": true,
+					"nodes": 1304.0,
+					"objects": 8465.0,
+					"orphans": 0.0,
+					"physics_ms": 555.705,
+					"process_ms": 537.987,
+					"resources": 192.0,
+					"rss_mb": 116.25,
+					"same_sound_max": 0,
+					"sfx_voices": 0,
+					"static_mb": 77.5130014419556,
+					"t": 0.429,
+					"voice_pool": 24
+				}
+			],
+			"states": [
+				"shot_1"
+			],
+			"unpaused_seconds": 1.75882599999977,
+			"wall_seconds": 3.401
+		}
+	],
+	"violations": [
+		"stage -1 active time 1.8 too short for wall 3.4"
+	]
+}

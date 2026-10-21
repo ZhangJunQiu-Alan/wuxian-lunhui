@@ -1,0 +1,31 @@
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'assets/source/taskR_prologue_sample_2026-10-21/preview/midgard_story.mp4':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    encoder         : Lavf62.12.101
+  Duration: 00:00:28.13, start: 0.000000, bitrate: 6976 kb/s
+  Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuvj420p(pc, bt470bg/unknown/unknown, progressive), 1280x720 [SAR 1:1 DAR 16:9], 6778 kb/s, 24 fps, 24 tbr, 12288 tbn (default)
+    Metadata:
+      handler_name    : VideoHandler
+      encoder         : Lavc62.28.101 libx264
+  Stream #0:1[0x2](und): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 192 kb/s (default)
+    Metadata:
+      handler_name    : SoundHandler
+Stream mapping:
+  Stream #0:0 (h264) -> fps:default
+  paletteuse:default -> Stream #0:0 (gif)
+Press [q] to stop, [?] for help
+[swscaler @ 0x86200c000] deprecated pixel format used, make sure you did set range correctly
+[Parsed_palettegen_3 @ 0x862c2e1c0] 95(+1) colors generated out of 97140 colors; ratio=0.000978
+Output #0, gif, to 'assets/source/taskR_prologue_sample_2026-10-21/preview/midgard_preview_4fps.gif':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    encoder         : Lavf62.12.101
+  Stream #0:0: Video: gif, pal8(pc, gbr/unknown/unknown, progressive), 480x270 [SAR 1:1 DAR 16:9], q=2-31, 200 kb/s, 4 fps, 100 tbn
+    Metadata:
+      encoder         : Lavc62.28.101 gif
+frame=   17 fps=8.4 q=-0.0 size=     768KiB time=00:00:04.75 bitrate=1324.5kbits/s speed=2.34x elapsed=0:00:02.02    [out#0/gif @ 0x862c2c0c0] video:6167KiB audio:0KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: 0.000317%
+frame=  113 fps= 47 q=-0.0 Lsize=    6167KiB time=00:00:28.25 bitrate=1788.2kbits/s speed=11.9x elapsed=0:00:02.38    

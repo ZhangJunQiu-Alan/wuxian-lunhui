@@ -1,0 +1,55 @@
+[
+  {
+    "name": "test_combat_regressions",
+    "exit_code": 0,
+    "errors": [],
+    "tail": [
+      "PASS static-field damage equivalence",
+      "PASS regular, event, elite, split, quest and Boss spawning",
+      "PASS final Boss, queued rewards, pause and duplicate settlement",
+      "PASS death and abandon settlement on Helheim",
+      "RESULT: 2451 checks, 0 failures"
+    ]
+  },
+  {
+    "name": "test_vigrid",
+    "exit_code": 0,
+    "errors": [],
+    "tail": [
+      "PASS K-CODE-07 K7 fate/Loki combinations",
+      "PASS K-CODE-07 ending skip and settlement",
+      "PASS K-CODE-07 save compatibility",
+      "PASS cleanup",
+      "RESULT: 368 checks, 0 failures"
+    ]
+  },
+  {
+    "name": "test_chapter_intro",
+    "exit_code": 0,
+    "errors": [],
+    "tail": [
+      "Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org",
+      "",
+      "CHAPTER_INTRO_RESULT 230 checks, 0 failures"
+    ]
+  },
+  {
+    "name": "test_title_menu",
+    "exit_code": 0,
+    "errors": [],
+    "tail": [
+      "Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org",
+      "",
+      "TITLE_MENU_RESULT 91 checks, 0 failures"
+    ]
+  },
+  {
+    "name": "test_run_supplies",
+    "exit_code": 2,
+    "errors": [],
+    "tail": [
+      "Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org",
+      ""
+    ]
+  }
+]

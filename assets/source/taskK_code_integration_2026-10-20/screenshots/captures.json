@@ -1,0 +1,536 @@
+{
+	"captures": [
+		{
+			"file": "hub_levels.png",
+			"note": "Lord God Space: level 3 card unlocked after Helheim clear",
+			"ok": true,
+			"window": [
+				1280,
+				720
+			]
+		},
+		{
+			"file": "map_spawn.png",
+			"note": "spawn (0,0), central plain, routes",
+			"ok": true,
+			"window": [
+				1280,
+				720
+			]
+		},
+		{
+			"file": "map_corner_nw.png",
+			"note": "walk-rect corner, border haze and fire band, camera limit",
+			"ok": true,
+			"window": [
+				1280,
+				720
+			]
+		},
+		{
+			"file": "map_corner_ne.png",
+			"note": "walk-rect corner, border haze and fire band, camera limit",
+			"ok": true,
+			"window": [
+				1280,
+				720
+			]
+		},
+		{
+			"file": "map_corner_se.png",
+			"note": "walk-rect corner, border haze and fire band, camera limit",
+			"ok": true,
+			"window": [
+				1280,
+				720
+			]
+		},
+		{
+			"file": "map_corner_sw.png",
+			"note": "walk-rect corner, border haze and fire band, camera limit",
+			"ok": true,
+			"window": [
+				1280,
+				720
+			]
+		},
+		{
+			"file": "map_horizon.png",
+			"note": "north horizon distant battle strip, non-interactive",
+			"ok": true,
+			"window": [
+				1280,
+				720
+			]
+		},
+		{
+			"file": "map_frost_remnants.png",
+			"note": "burnt grass with derived midgard-mask transitions, giant treads",
+			"ok": true,
+			"window": [
+				1280,
+				720
+			]
+		},
+		{
+			"file": "map_muspel.png",
+			"note": "cracked lava decoration and hue 0.04 decorative fire",
+			"ok": true,
+			"window": [
+				1280,
+				720
+			]
+		},
+		{
+			"file": "serpent_corner_turn.png",
+			"note": "Jormungandr body ribbon turning the rounded corner; head ring = only target",
+			"ok": true,
+			"window": [
+				1280,
+				720
+			]
+		},
+		{
+			"file": "serpent_breath_windup.png",
+			"note": "poison breath warning sector (same polygon as damage)",
+			"ok": true,
+			"window": [
+				1280,
+				720
+			]
+		},
+		{
+			"file": "serpent_mist.png",
+			"note": "after release: breath FX clipped to sector, lingering mist polygon",
+			"ok": true,
+			"window": [
+				1280,
+				720
+			]
+		},
+		{
+			"file": "fenrir_maw_active.png",
+			"note": "attraction phase: split jaws, gap 112 >= 64 with active player in channel, fatal box and countdown",
+			"ok": true,
+			"window": [
+				1280,
+				720
+			]
+		},
+		{
+			"file": "fenrir_maw_left.png",
+			"note": "mirrored maw facing left (upper jaw still on top)",
+			"ok": true,
+			"window": [
+				1280,
+				720
+			]
+		},
+		{
+			"file": "fenrir_vidar_brace.png",
+			"note": "Vidar pry frame 4: jaws placed on hand/boot contacts, no damage window",
+			"ok": true,
+			"window": [
+				1280,
+				720
+			]
+		},
+		{
+			"file": "fenrir_vidar_pried.png",
+			"note": "jaws torn open, Fenrir damaged",
+			"ok": true,
+			"window": [
+				1280,
+				720
+			]
+		},
+		{
+			"file": "fenrir_bound.png",
+			"note": "Gleipnir braid ribbon around torso, protected rect clear, bind timer",
+			"ok": true,
+			"window": [
+				1280,
+				720
+			]
+		},
+		{
+			"file": "fenrir_run_route.png",
+			"note": "run route warning ring (same polyline as movement)",
+			"ok": true,
+			"window": [
+				1280,
+				720
+			]
+		},
+		{
+			"file": "fenrir_run.png",
+			"note": "running along route with trail",
+			"ok": true,
+			"window": [
+				1280,
+				720
+			]
+		},
+		{
+			"file": "surtr_sweep_windup.png",
+			"note": "320 windup pose, sweep sector warning",
+			"ok": true,
+			"window": [
+				1280,
+				720
+			]
+		},
+		{
+			"file": "surtr_sweep_release.png",
+			"note": "attack frame 1: sword arc clipped to sector, residual fire",
+			"ok": true,
+			"window": [
+				1280,
+				720
+			]
+		},
+		{
+			"file": "surtr_gates.png",
+			"note": "Muspel gates open, fire giants emerging",
+			"ok": true,
+			"window": [
+				1280,
+				720
+			]
+		},
+		{
+			"file": "surtr_firewall.png",
+			"note": "Nine Worlds burning: band on circle boundary, fire half outward, clear inside + boundary line",
+			"ok": true,
+			"window": [
+				1280,
+				720
+			]
+		},
+		{
+			"file": "surtr_final_warn.png",
+			"note": "final fire warning on unsafe 64 cells, safe runes, player on a safe cell",
+			"ok": true,
+			"window": [
+				1280,
+				720
+			]
+		},
+		{
+			"file": "surtr_final_burn.png",
+			"note": "final fire on the same unsafe cell set; safe cells unburnt",
+			"ok": true,
+			"window": [
+				1280,
+				720
+			]
+		},
+		{
+			"file": "ending_beat_0.png",
+			"note": "ending beat 0 (manual advance, skippable)",
+			"ok": true,
+			"window": [
+				1280,
+				720
+			]
+		},
+		{
+			"file": "ending_beat_1.png",
+			"note": "ending beat 1 (manual advance, skippable)",
+			"ok": true,
+			"window": [
+				1280,
+				720
+			]
+		},
+		{
+			"file": "ending_beat_2.png",
+			"note": "ending beat 2 (manual advance, skippable)",
+			"ok": true,
+			"window": [
+				1280,
+				720
+			]
+		},
+		{
+			"file": "ending_beat_3.png",
+			"note": "ending beat 3 (manual advance, skippable)",
+			"ok": true,
+			"window": [
+				1280,
+				720
+			]
+		},
+		{
+			"file": "ending_beat_4.png",
+			"note": "ending beat 4 (manual advance, skippable)",
+			"ok": true,
+			"window": [
+				1280,
+				720
+			]
+		},
+		{
+			"file": "ending_result.png",
+			"note": "result: time/kills, fates rewritten, Loki hint",
+			"ok": true,
+			"window": [
+				1280,
+				720
+			]
+		},
+		{
+			"file": "map_spawn_960x540.png",
+			"note": "spawn (0,0), central plain, routes",
+			"ok": true,
+			"window": [
+				960,
+				540
+			]
+		},
+		{
+			"file": "map_corner_nw_960x540.png",
+			"note": "walk-rect corner, border haze and fire band, camera limit",
+			"ok": true,
+			"window": [
+				960,
+				540
+			]
+		},
+		{
+			"file": "map_corner_ne_960x540.png",
+			"note": "walk-rect corner, border haze and fire band, camera limit",
+			"ok": true,
+			"window": [
+				960,
+				540
+			]
+		},
+		{
+			"file": "map_corner_se_960x540.png",
+			"note": "walk-rect corner, border haze and fire band, camera limit",
+			"ok": true,
+			"window": [
+				960,
+				540
+			]
+		},
+		{
+			"file": "map_corner_sw_960x540.png",
+			"note": "walk-rect corner, border haze and fire band, camera limit",
+			"ok": true,
+			"window": [
+				960,
+				540
+			]
+		},
+		{
+			"file": "map_horizon_960x540.png",
+			"note": "north horizon distant battle strip, non-interactive",
+			"ok": true,
+			"window": [
+				960,
+				540
+			]
+		},
+		{
+			"file": "map_frost_remnants_960x540.png",
+			"note": "burnt grass with derived midgard-mask transitions, giant treads",
+			"ok": true,
+			"window": [
+				960,
+				540
+			]
+		},
+		{
+			"file": "map_muspel_960x540.png",
+			"note": "cracked lava decoration and hue 0.04 decorative fire",
+			"ok": true,
+			"window": [
+				960,
+				540
+			]
+		},
+		{
+			"file": "ending_beat_0_960x540.png",
+			"note": "ending beat 0 (manual advance, skippable)",
+			"ok": true,
+			"window": [
+				960,
+				540
+			]
+		},
+		{
+			"file": "ending_beat_1_960x540.png",
+			"note": "ending beat 1 (manual advance, skippable)",
+			"ok": true,
+			"window": [
+				960,
+				540
+			]
+		},
+		{
+			"file": "ending_beat_2_960x540.png",
+			"note": "ending beat 2 (manual advance, skippable)",
+			"ok": true,
+			"window": [
+				960,
+				540
+			]
+		},
+		{
+			"file": "ending_beat_3_960x540.png",
+			"note": "ending beat 3 (manual advance, skippable)",
+			"ok": true,
+			"window": [
+				960,
+				540
+			]
+		},
+		{
+			"file": "ending_beat_4_960x540.png",
+			"note": "ending beat 4 (manual advance, skippable)",
+			"ok": true,
+			"window": [
+				960,
+				540
+			]
+		},
+		{
+			"file": "ending_result_960x540.png",
+			"note": "result: time/kills, fates rewritten, Loki hint",
+			"ok": true,
+			"window": [
+				960,
+				540
+			]
+		},
+		{
+			"file": "map_spawn_1600x900.png",
+			"note": "spawn (0,0), central plain, routes",
+			"ok": true,
+			"window": [
+				1600,
+				900
+			]
+		},
+		{
+			"file": "map_corner_nw_1600x900.png",
+			"note": "walk-rect corner, border haze and fire band, camera limit",
+			"ok": true,
+			"window": [
+				1600,
+				900
+			]
+		},
+		{
+			"file": "map_corner_ne_1600x900.png",
+			"note": "walk-rect corner, border haze and fire band, camera limit",
+			"ok": true,
+			"window": [
+				1600,
+				900
+			]
+		},
+		{
+			"file": "map_corner_se_1600x900.png",
+			"note": "walk-rect corner, border haze and fire band, camera limit",
+			"ok": true,
+			"window": [
+				1600,
+				900
+			]
+		},
+		{
+			"file": "map_corner_sw_1600x900.png",
+			"note": "walk-rect corner, border haze and fire band, camera limit",
+			"ok": true,
+			"window": [
+				1600,
+				900
+			]
+		},
+		{
+			"file": "map_horizon_1600x900.png",
+			"note": "north horizon distant battle strip, non-interactive",
+			"ok": true,
+			"window": [
+				1600,
+				900
+			]
+		},
+		{
+			"file": "map_frost_remnants_1600x900.png",
+			"note": "burnt grass with derived midgard-mask transitions, giant treads",
+			"ok": true,
+			"window": [
+				1600,
+				900
+			]
+		},
+		{
+			"file": "map_muspel_1600x900.png",
+			"note": "cracked lava decoration and hue 0.04 decorative fire",
+			"ok": true,
+			"window": [
+				1600,
+				900
+			]
+		},
+		{
+			"file": "ending_beat_0_1600x900.png",
+			"note": "ending beat 0 (manual advance, skippable)",
+			"ok": true,
+			"window": [
+				1600,
+				900
+			]
+		},
+		{
+			"file": "ending_beat_1_1600x900.png",
+			"note": "ending beat 1 (manual advance, skippable)",
+			"ok": true,
+			"window": [
+				1600,
+				900
+			]
+		},
+		{
+			"file": "ending_beat_2_1600x900.png",
+			"note": "ending beat 2 (manual advance, skippable)",
+			"ok": true,
+			"window": [
+				1600,
+				900
+			]
+		},
+		{
+			"file": "ending_beat_3_1600x900.png",
+			"note": "ending beat 3 (manual advance, skippable)",
+			"ok": true,
+			"window": [
+				1600,
+				900
+			]
+		},
+		{
+			"file": "ending_beat_4_1600x900.png",
+			"note": "ending beat 4 (manual advance, skippable)",
+			"ok": true,
+			"window": [
+				1600,
+				900
+			]
+		},
+		{
+			"file": "ending_result_1600x900.png",
+			"note": "result: time/kills, fates rewritten, Loki hint",
+			"ok": true,
+			"window": [
+				1600,
+				900
+			]
+		}
+	],
+	"scope": "real Godot window, Game scene, controlled: invincible player, no regular spawns, scripted Boss states"
+}

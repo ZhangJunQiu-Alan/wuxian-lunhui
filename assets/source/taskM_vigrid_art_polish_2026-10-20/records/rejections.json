@@ -1,0 +1,37 @@
+[
+  {
+    "id": "M01-lava-v01",
+    "reason": "orange crack pixel area 2.832 percent below 3 percent; raw offset sampling plus separated crack palette corrected to 3.247 percent",
+    "retained": "candidates/cracked_lava_02_v01.png"
+  },
+  {
+    "id": "M01-edges-v01",
+    "reason": "unmodified copied mask contours too regular; subtract generated-road dark stone chips along 1-3px mask rim; selected v02",
+    "retained": "candidates/ash_road_edge_*_v01.png"
+  },
+  {
+    "id": "M03-v01",
+    "reason": "primary light halo smaller than gameplay radius because scale measured ray tips; register main circle before preview; selected v03",
+    "retained": "candidates/aid_*_v01.png"
+  },
+  {
+    "id": "M03-baldr-v02",
+    "reason": "beam tip was below shared ground anchor; whole-frame alignment revised so frame2 lands at160,160",
+    "retained": "candidates/aid_baldr_v02.png"
+  },
+  {
+    "id": "review-terrain-v01-v02",
+    "reason": "review fixture mixed indentation, then SceneTree early load failed autoload compile; converted isolated scene runner to Node",
+    "retained": "records/terrain_game*.log"
+  },
+  {
+    "id": "review-fx-v01",
+    "reason": "review renderer loaded texture as temporary draw local, released before GPU draw and produced white rectangles; member texture cache fixed; not an art acceptance screenshot",
+    "retained": "previews/fx_game/"
+  },
+  {
+    "id": "review-fx-focus",
+    "reason": "two isolated windows ran together and focus-loss pause menu obscured captures; those captures rejected; final serial rerun closes pause panel before each capture and clears preexisting god FX",
+    "retained": "previews/fx_game_focus_rejected/"
+  }
+]

@@ -1,0 +1,22 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+OpenGL API 4.1 Metal - 90.5 - Compatibility - Using Device: Apple - Apple M2
+
+SCRIPT ERROR: Compile Error: Identifier not found: Settings
+          at: GDScript::reload (res://scripts/entities/player.gd:354)
+SCRIPT ERROR: Compile Error: Identifier not found: Save
+          at: GDScript::reload (res://scripts/game.gd:424)
+SCRIPT ERROR: Compile Error: Failed to compile depended scripts.
+          at: GDScript::reload (res://scripts/world/map_layer.gd:0)
+SCRIPT ERROR: Compile Error: Identifier not found: Settings
+          at: GDScript::reload (res://scripts/effects/fx_layer.gd:29)
+SCRIPT ERROR: Compile Error: Failed to compile depended scripts.
+          at: GDScript::reload (res://scripts/effects/boss_fx.gd:0)
+SCRIPT ERROR: Compile Error: Failed to compile depended scripts.
+          at: GDScript::reload (res://scripts/world/vigrid_map.gd:0)
+SCRIPT ERROR: Compile Error: Failed to compile depended scripts.
+          at: GDScript::reload (res://scripts/bosses/fire_hazard.gd:0)
+SCRIPT ERROR: Compile Error: Failed to compile depended scripts.
+          at: GDScript::reload (res://tools/review_m_terrain.gd:0)
+ERROR: Failed to load script "res://tools/review_m_terrain.gd" with error "Compilation failed".
+   at: load (modules/gdscript/gdscript_resource_format.cpp:46)
+2026-10-20 20:00:45.485 Godot[93214:5626520] error messaging the mach port for IMKCFRunLoopWakeUpReliable

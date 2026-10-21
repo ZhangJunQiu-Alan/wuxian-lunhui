@@ -21,6 +21,7 @@ var _cuts: Array[Dictionary] = []  # 每道裂痕：from、to、appear（浮现�
 static func cast(caster: Player) -> void:
 	var fx := DimensionSlash.new()
 	fx.player = caster
+	caster.active_ultimate = fx
 	fx.global_position = caster.global_position
 	caster.get_parent().add_child(fx)
 

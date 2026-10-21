@@ -1,0 +1,16 @@
+{
+  "production_integration": true,
+  "files": [
+    "scripts/game.gd",
+    "scripts/entities/enemy.gd"
+  ],
+  "scope": "Integrated targeted Game/Enemy patch; 11 technical suites clean; realtime normal-damage max-meta bot cleared in 582.733 game seconds; dense awakened Odin remains failed",
+  "hashes": {
+    "scripts/game.gd": "9e043ec29712ad979c5eaf6508a47fb50922cf08d7324539850ac0125116f716",
+    "scripts/entities/enemy.gd": "aeef777bfa99d2ee8c01fec4097eef240522a0525cfc962fe6d2a798475f4f98"
+  },
+  "commit": false,
+  "push": false,
+  "realtime_pass": true,
+  "full_game_acceptance": false
+}

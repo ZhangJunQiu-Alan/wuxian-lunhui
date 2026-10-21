@@ -1,0 +1,578 @@
+ERROR: Failed to open log file for writing: /dev/null
+   at: rotate_file (core/io/logger.cpp:169)
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+PASS Godot loads thokk 
+PASS Godot loads thokk_move 
+PASS Godot loads thokk_attack 
+PASS Godot loads hel_death_bolt 
+PASS Godot loads skoll_dash_trail 
+PASS Godot loads skoll_bite 
+PASS Godot loads skoll_howl 
+PASS Godot loads skoll_howl_body 
+PASS Godot loads hati_lunge_trail 
+PASS Godot loads hati_howl_wave 
+PASS Godot loads hati_split_flash 
+PASS Godot loads hrym_wave_band 
+PASS Godot loads hrym_shield_arc 
+PASS Godot loads hrym_block_spark 
+PASS Godot loads hrym_guard_summon 
+PASS Godot loads hrym_ice_break 
+PASS Godot loads garm_bite 
+PASS Godot loads garm_howl_wave 
+PASS Godot loads garm_chain_link 
+PASS Godot loads garm_chain_break 
+PASS Godot loads garm_dispel 
+PASS Godot loads nidhogg_poison_breath 
+PASS Godot loads nidhogg_burrow_dust 
+PASS Godot loads nidhogg_emerge_burst 
+PASS Godot loads nidhogg_gnaw_heal 
+PASS Godot loads nidhogg_gnaw_stagger 
+PASS Godot loads hel_life_ground 
+PASS Godot loads hel_death_ground 
+PASS Godot loads hel_domain_edge 
+PASS Godot loads hel_shift 
+PASS Godot loads hel_heal 
+PASS Godot loads hel_army_summon 
+PASS Godot loads hel_board_ship 
+PASS thokk actual Enemy loader false 
+PASS thokk frame counts false 
+PASS thokk speeds false 
+PASS thokk loop flags false 
+PASS thokk actual scale false 1.0
+PASS thokk movement playback false 
+PASS thokk actual attack trigger false 
+PASS thokk attack completes and returns false 
+PASS thokk actual Enemy loader true 
+PASS thokk frame counts true 
+PASS thokk speeds true 
+PASS thokk loop flags true 
+PASS thokk actual scale true 1.20000004768372
+PASS thokk movement playback true 
+PASS thokk actual attack trigger true 
+PASS thokk attack completes and returns true 
+PASS skoll half-health howl 
+PASS new skoll howl is discovered 
+PASS skoll uses new howl action 
+PASS skoll summons six wolves 6
+PASS skoll dash speed unchanged 
+PASS hati split unlock at 75 percent 
+PASS hati creates two phantoms 
+PASS phantom action set matches 
+PASS phantom uses same body texture 
+PASS phantom action set matches 
+PASS phantom uses same body texture 
+PASS phantoms expiry releases nodes 
+PASS hati fear boundary 279.0 
+PASS hati fear boundary 281.0 
+PASS hrym front shield angle 0.0 
+PASS hrym front shield angle 1.29 
+PASS hrym front shield angle 1.31 
+PASS hrym front shield angle 3.14159265358979 
+PASS hrym two gap angular boundary 0.0 
+PASS hrym two gap angular boundary 0.419 
+PASS hrym two gap angular boundary 0.421 
+PASS hrym two gap angular boundary 3.14159265358979 
+PASS hrym two gap angular boundary 2.72259265358979 
+PASS hrym two gap angular boundary 2.72059265358979 
+PASS hrym two gap angular boundary 6.18318530717959 
+PASS hrym gap protects player at ring radius 
+PASS hrym solid wave damages player 
+PASS shockwave releases after max radius 
+PASS ice pillar collision radius retained 
+PASS ice pillar expiry cleanup 
+PASS garm starts with four stakes 
+PASS garm freed only at final stake 0 
+PASS garm freed only at final stake 1 
+PASS garm freed only at final stake 2 
+PASS garm freed only at final stake 3 
+PASS garm freed speed multiplier 
+PASS garm freed damage multiplier 
+PASS garm howl damage boundary 259.0 
+PASS garm dispel respects howl range 259.0 
+PASS garm howl damage boundary 261.0 
+PASS garm dispel respects howl range 261.0 
+PASS nidhogg underground hidden and untargetable 
+PASS nidhogg emerges visible and targetable 
+PASS nidhogg below gnaw interrupt threshold 
+PASS nidhogg 6 percent damage interrupts gnaw 
+PASS nidhogg stagger ends after two seconds 
+PASS nidhogg breath angular edge 0.59 
+PASS nidhogg breath angular edge 0.61 
+PASS nidhogg breath radial edge includes player radius 313.0 
+PASS nidhogg breath radial edge includes player radius 315.0 
+PASS poison pool ellipse (47.0, -20.0) 
+PASS poison pool ellipse (49.0, -20.0) 
+PASS poison pool ellipse (0.0, 3.0) 
+PASS poison pool ellipse (0.0, 5.0) 
+PASS poison pool seven second cleanup 
+PASS hel safety radius 0 
+PASS hel safety radius 50 
+PASS hel safety radius 100 
+PASS hel safety radius 150 
+PASS hel life side heals 15 percent 
+PASS hel death side summons three 
+PASS hel army summons fourteen 
+PASS hel first phase five projectiles 
+PASS hel phase one uses new death bolt 
+PASS hel projectile expiry cleanup 
+PASS hel low health boards ship 
+PASS hel phase two retains nine nail projectiles 
+PASS effect cache resolves skoll_dash_trail 
+PASS effect frame count skoll_dash_trail 
+PASS effect speed skoll_dash_trail 
+PASS effect cache resolves skoll_bite 
+PASS effect frame count skoll_bite 
+PASS effect speed skoll_bite 
+PASS effect cache resolves skoll_howl 
+PASS effect frame count skoll_howl 
+PASS effect speed skoll_howl 
+PASS effect cache resolves hati_lunge_trail 
+PASS effect frame count hati_lunge_trail 
+PASS effect speed hati_lunge_trail 
+PASS effect cache resolves hati_howl_wave 
+PASS effect frame count hati_howl_wave 
+PASS effect speed hati_howl_wave 
+PASS effect cache resolves hati_split_flash 
+PASS effect frame count hati_split_flash 
+PASS effect speed hati_split_flash 
+PASS effect cache resolves hrym_wave_band 
+PASS effect frame count hrym_wave_band 
+PASS effect speed hrym_wave_band 
+PASS effect cache resolves hrym_shield_arc 
+PASS effect frame count hrym_shield_arc 
+PASS effect speed hrym_shield_arc 
+PASS effect cache resolves hrym_block_spark 
+PASS effect frame count hrym_block_spark 
+PASS effect speed hrym_block_spark 
+PASS effect cache resolves hrym_guard_summon 
+PASS effect frame count hrym_guard_summon 
+PASS effect speed hrym_guard_summon 
+PASS effect cache resolves hrym_ice_break 
+PASS effect frame count hrym_ice_break 
+PASS effect speed hrym_ice_break 
+PASS effect cache resolves garm_bite 
+PASS effect frame count garm_bite 
+PASS effect speed garm_bite 
+PASS effect cache resolves garm_howl_wave 
+PASS effect frame count garm_howl_wave 
+PASS effect speed garm_howl_wave 
+PASS effect cache resolves garm_chain_link 
+PASS effect frame count garm_chain_link 
+PASS effect cache resolves garm_chain_break 
+PASS effect frame count garm_chain_break 
+PASS effect speed garm_chain_break 
+PASS effect cache resolves garm_dispel 
+PASS effect frame count garm_dispel 
+PASS effect speed garm_dispel 
+PASS effect cache resolves nidhogg_poison_breath 
+PASS effect frame count nidhogg_poison_breath 
+PASS effect speed nidhogg_poison_breath 
+PASS effect cache resolves nidhogg_burrow_dust 
+PASS effect frame count nidhogg_burrow_dust 
+PASS effect speed nidhogg_burrow_dust 
+PASS effect cache resolves nidhogg_emerge_burst 
+PASS effect frame count nidhogg_emerge_burst 
+PASS effect speed nidhogg_emerge_burst 
+PASS effect cache resolves nidhogg_gnaw_heal 
+PASS effect frame count nidhogg_gnaw_heal 
+PASS effect speed nidhogg_gnaw_heal 
+PASS effect cache resolves nidhogg_gnaw_stagger 
+PASS effect frame count nidhogg_gnaw_stagger 
+PASS effect speed nidhogg_gnaw_stagger 
+PASS effect cache resolves hel_life_ground 
+PASS effect frame count hel_life_ground 
+PASS effect cache resolves hel_death_ground 
+PASS effect frame count hel_death_ground 
+PASS effect cache resolves hel_domain_edge 
+PASS effect frame count hel_domain_edge 
+PASS effect speed hel_domain_edge 
+PASS effect cache resolves hel_shift 
+PASS effect frame count hel_shift 
+PASS effect speed hel_shift 
+PASS effect cache resolves hel_heal 
+PASS effect frame count hel_heal 
+PASS effect speed hel_heal 
+PASS effect cache resolves hel_army_summon 
+PASS effect frame count hel_army_summon 
+PASS effect speed hel_army_summon 
+PASS effect cache resolves hel_board_ship 
+PASS effect frame count hel_board_ship 
+PASS effect speed hel_board_ship 
+PASS rendered wave gaps match collision 0 
+PASS rendered wave gaps match collision 1 
+PASS rendered wave gaps match collision 2 
+PASS rendered wave gaps match collision 3 
+PASS rendered wave gaps match collision 4 
+PASS rendered wave gaps match collision 5 
+PASS rendered wave gaps match collision 6 
+PASS rendered wave gaps match collision 7 
+PASS rendered wave gaps match collision 8 
+PASS rendered wave gaps match collision 9 
+PASS rendered wave gaps match collision 10 
+PASS rendered wave gaps match collision 11 
+PASS rendered wave gaps match collision 12 
+PASS rendered wave gaps match collision 13 
+PASS rendered wave gaps match collision 14 
+PASS rendered wave gaps match collision 15 
+PASS rendered wave gaps match collision 16 
+PASS rendered wave gaps match collision 17 
+PASS rendered wave gaps match collision 18 
+PASS rendered wave gaps match collision 19 
+PASS rendered wave gaps match collision 20 
+PASS rendered wave gaps match collision 21 
+PASS rendered wave gaps match collision 22 
+PASS rendered wave gaps match collision 23 
+PASS rendered wave gaps match collision 24 
+PASS rendered wave gaps match collision 25 
+PASS rendered wave gaps match collision 26 
+PASS rendered wave gaps match collision 27 
+PASS rendered wave gaps match collision 28 
+PASS rendered wave gaps match collision 29 
+PASS rendered wave gaps match collision 30 
+PASS rendered wave gaps match collision 31 
+PASS rendered wave gaps match collision 32 
+PASS rendered wave gaps match collision 33 
+PASS rendered wave gaps match collision 34 
+PASS rendered wave gaps match collision 35 
+PASS rendered wave gaps match collision 36 
+PASS rendered wave gaps match collision 37 
+PASS rendered wave gaps match collision 38 
+PASS rendered wave gaps match collision 39 
+PASS rendered wave gaps match collision 40 
+PASS rendered wave gaps match collision 41 
+PASS rendered wave gaps match collision 42 
+PASS rendered wave gaps match collision 43 
+PASS rendered wave gaps match collision 44 
+PASS rendered wave gaps match collision 45 
+PASS rendered wave gaps match collision 46 
+PASS rendered wave gaps match collision 47 
+PASS rendered wave gaps match collision 48 
+PASS rendered wave gaps match collision 49 
+PASS rendered wave gaps match collision 50 
+PASS rendered wave gaps match collision 51 
+PASS rendered wave gaps match collision 52 
+PASS rendered wave gaps match collision 53 
+PASS rendered wave gaps match collision 54 
+PASS rendered wave gaps match collision 55 
+PASS rendered wave gaps match collision 56 
+PASS rendered wave gaps match collision 57 
+PASS rendered wave gaps match collision 58 
+PASS rendered wave gaps match collision 59 
+PASS rendered wave gaps match collision 60 
+PASS rendered wave gaps match collision 61 
+PASS rendered wave gaps match collision 62 
+PASS rendered wave gaps match collision 63 
+PASS rendered wave gaps match collision 64 
+PASS rendered wave gaps match collision 65 
+PASS rendered wave gaps match collision 66 
+PASS rendered wave gaps match collision 67 
+PASS rendered wave gaps match collision 68 
+PASS rendered wave gaps match collision 69 
+PASS rendered wave gaps match collision 70 
+PASS rendered wave gaps match collision 71 
+PASS rendered wave gaps match collision 72 
+PASS rendered wave gaps match collision 73 
+PASS rendered wave gaps match collision 74 
+PASS rendered wave gaps match collision 75 
+PASS rendered wave gaps match collision 76 
+PASS rendered wave gaps match collision 77 
+PASS rendered wave gaps match collision 78 
+PASS rendered wave gaps match collision 79 
+PASS rendered wave gaps match collision 80 
+PASS rendered wave gaps match collision 81 
+PASS rendered wave gaps match collision 82 
+PASS rendered wave gaps match collision 83 
+PASS rendered wave gaps match collision 84 
+PASS rendered wave gaps match collision 85 
+PASS rendered wave gaps match collision 86 
+PASS rendered wave gaps match collision 87 
+PASS rendered wave gaps match collision 88 
+PASS rendered wave gaps match collision 89 
+PASS rendered wave gaps match collision 90 
+PASS rendered wave gaps match collision 91 
+PASS rendered wave gaps match collision 92 
+PASS rendered wave gaps match collision 93 
+PASS rendered wave gaps match collision 94 
+PASS rendered wave gaps match collision 95 
+PASS rendered wave gaps match collision 96 
+PASS rendered wave gaps match collision 97 
+PASS rendered wave gaps match collision 98 
+PASS rendered wave gaps match collision 99 
+PASS rendered wave gaps match collision 100 
+PASS rendered wave gaps match collision 101 
+PASS rendered wave gaps match collision 102 
+PASS rendered wave gaps match collision 103 
+PASS rendered wave gaps match collision 104 
+PASS rendered wave gaps match collision 105 
+PASS rendered wave gaps match collision 106 
+PASS rendered wave gaps match collision 107 
+PASS rendered wave gaps match collision 108 
+PASS rendered wave gaps match collision 109 
+PASS rendered wave gaps match collision 110 
+PASS rendered wave gaps match collision 111 
+PASS rendered wave gaps match collision 112 
+PASS rendered wave gaps match collision 113 
+PASS rendered wave gaps match collision 114 
+PASS rendered wave gaps match collision 115 
+PASS rendered wave gaps match collision 116 
+PASS rendered wave gaps match collision 117 
+PASS rendered wave gaps match collision 118 
+PASS rendered wave gaps match collision 119 
+PASS rendered wave gaps match collision 120 
+PASS rendered wave gaps match collision 121 
+PASS rendered wave gaps match collision 122 
+PASS rendered wave gaps match collision 123 
+PASS rendered wave gaps match collision 124 
+PASS rendered wave gaps match collision 125 
+PASS rendered wave gaps match collision 126 
+PASS rendered wave gaps match collision 127 
+PASS rendered wave gaps match collision 128 
+PASS rendered wave gaps match collision 129 
+PASS rendered wave gaps match collision 130 
+PASS rendered wave gaps match collision 131 
+PASS rendered wave gaps match collision 132 
+PASS rendered wave gaps match collision 133 
+PASS rendered wave gaps match collision 134 
+PASS rendered wave gaps match collision 135 
+PASS rendered wave gaps match collision 136 
+PASS rendered wave gaps match collision 137 
+PASS rendered wave gaps match collision 138 
+PASS rendered wave gaps match collision 139 
+PASS rendered wave gaps match collision 140 
+PASS rendered wave gaps match collision 141 
+PASS rendered wave gaps match collision 142 
+PASS rendered wave gaps match collision 143 
+PASS rendered wave gaps match collision 144 
+PASS rendered wave gaps match collision 145 
+PASS rendered wave gaps match collision 146 
+PASS rendered wave gaps match collision 147 
+PASS rendered wave gaps match collision 148 
+PASS rendered wave gaps match collision 149 
+PASS rendered wave gaps match collision 150 
+PASS rendered wave gaps match collision 151 
+PASS rendered wave gaps match collision 152 
+PASS rendered wave gaps match collision 153 
+PASS rendered wave gaps match collision 154 
+PASS rendered wave gaps match collision 155 
+PASS rendered wave gaps match collision 156 
+PASS rendered wave gaps match collision 157 
+PASS rendered wave gaps match collision 158 
+PASS rendered wave gaps match collision 159 
+PASS rendered wave gaps match collision 160 
+PASS rendered wave gaps match collision 161 
+PASS rendered wave gaps match collision 162 
+PASS rendered wave gaps match collision 163 
+PASS rendered wave gaps match collision 164 
+PASS rendered wave gaps match collision 165 
+PASS rendered wave gaps match collision 166 
+PASS rendered wave gaps match collision 167 
+PASS rendered wave gaps match collision 168 
+PASS rendered wave gaps match collision 169 
+PASS rendered wave gaps match collision 170 
+PASS rendered wave gaps match collision 171 
+PASS rendered wave gaps match collision 172 
+PASS rendered wave gaps match collision 173 
+PASS rendered wave gaps match collision 174 
+PASS rendered wave gaps match collision 175 
+PASS rendered wave gaps match collision 176 
+PASS rendered wave gaps match collision 177 
+PASS rendered wave gaps match collision 178 
+PASS rendered wave gaps match collision 179 
+PASS rendered wave gaps match collision 180 
+PASS rendered wave gaps match collision 181 
+PASS rendered wave gaps match collision 182 
+PASS rendered wave gaps match collision 183 
+PASS rendered wave gaps match collision 184 
+PASS rendered wave gaps match collision 185 
+PASS rendered wave gaps match collision 186 
+PASS rendered wave gaps match collision 187 
+PASS rendered wave gaps match collision 188 
+PASS rendered wave gaps match collision 189 
+PASS rendered wave gaps match collision 190 
+PASS rendered wave gaps match collision 191 
+PASS rendered wave gaps match collision 192 
+PASS rendered wave gaps match collision 193 
+PASS rendered wave gaps match collision 194 
+PASS rendered wave gaps match collision 195 
+PASS rendered wave gaps match collision 196 
+PASS rendered wave gaps match collision 197 
+PASS rendered wave gaps match collision 198 
+PASS rendered wave gaps match collision 199 
+PASS rendered wave gaps match collision 200 
+PASS rendered wave gaps match collision 201 
+PASS rendered wave gaps match collision 202 
+PASS rendered wave gaps match collision 203 
+PASS rendered wave gaps match collision 204 
+PASS rendered wave gaps match collision 205 
+PASS rendered wave gaps match collision 206 
+PASS rendered wave gaps match collision 207 
+PASS rendered wave gaps match collision 208 
+PASS rendered wave gaps match collision 209 
+PASS rendered wave gaps match collision 210 
+PASS rendered wave gaps match collision 211 
+PASS rendered wave gaps match collision 212 
+PASS rendered wave gaps match collision 213 
+PASS rendered wave gaps match collision 214 
+PASS rendered wave gaps match collision 215 
+PASS rendered wave gaps match collision 216 
+PASS rendered wave gaps match collision 217 
+PASS rendered wave gaps match collision 218 
+PASS rendered wave gaps match collision 219 
+PASS rendered wave gaps match collision 220 
+PASS rendered wave gaps match collision 221 
+PASS rendered wave gaps match collision 222 
+PASS rendered wave gaps match collision 223 
+PASS rendered wave gaps match collision 224 
+PASS rendered wave gaps match collision 225 
+PASS rendered wave gaps match collision 226 
+PASS rendered wave gaps match collision 227 
+PASS rendered wave gaps match collision 228 
+PASS rendered wave gaps match collision 229 
+PASS rendered wave gaps match collision 230 
+PASS rendered wave gaps match collision 231 
+PASS rendered wave gaps match collision 232 
+PASS rendered wave gaps match collision 233 
+PASS rendered wave gaps match collision 234 
+PASS rendered wave gaps match collision 235 
+PASS rendered wave gaps match collision 236 
+PASS rendered wave gaps match collision 237 
+PASS rendered wave gaps match collision 238 
+PASS rendered wave gaps match collision 239 
+PASS rendered wave gaps match collision 240 
+PASS rendered wave gaps match collision 241 
+PASS rendered wave gaps match collision 242 
+PASS rendered wave gaps match collision 243 
+PASS rendered wave gaps match collision 244 
+PASS rendered wave gaps match collision 245 
+PASS rendered wave gaps match collision 246 
+PASS rendered wave gaps match collision 247 
+PASS rendered wave gaps match collision 248 
+PASS rendered wave gaps match collision 249 
+PASS rendered wave gaps match collision 250 
+PASS rendered wave gaps match collision 251 
+PASS rendered wave gaps match collision 252 
+PASS rendered wave gaps match collision 253 
+PASS rendered wave gaps match collision 254 
+PASS rendered wave gaps match collision 255 
+PASS rendered wave gaps match collision 256 
+PASS rendered wave gaps match collision 257 
+PASS rendered wave gaps match collision 258 
+PASS rendered wave gaps match collision 259 
+PASS rendered wave gaps match collision 260 
+PASS rendered wave gaps match collision 261 
+PASS rendered wave gaps match collision 262 
+PASS rendered wave gaps match collision 263 
+PASS rendered wave gaps match collision 264 
+PASS rendered wave gaps match collision 265 
+PASS rendered wave gaps match collision 266 
+PASS rendered wave gaps match collision 267 
+PASS rendered wave gaps match collision 268 
+PASS rendered wave gaps match collision 269 
+PASS rendered wave gaps match collision 270 
+PASS rendered wave gaps match collision 271 
+PASS rendered wave gaps match collision 272 
+PASS rendered wave gaps match collision 273 
+PASS rendered wave gaps match collision 274 
+PASS rendered wave gaps match collision 275 
+PASS rendered wave gaps match collision 276 
+PASS rendered wave gaps match collision 277 
+PASS rendered wave gaps match collision 278 
+PASS rendered wave gaps match collision 279 
+PASS rendered wave gaps match collision 280 
+PASS rendered wave gaps match collision 281 
+PASS rendered wave gaps match collision 282 
+PASS rendered wave gaps match collision 283 
+PASS rendered wave gaps match collision 284 
+PASS rendered wave gaps match collision 285 
+PASS rendered wave gaps match collision 286 
+PASS rendered wave gaps match collision 287 
+PASS rendered wave gaps match collision 288 
+PASS rendered wave gaps match collision 289 
+PASS rendered wave gaps match collision 290 
+PASS rendered wave gaps match collision 291 
+PASS rendered wave gaps match collision 292 
+PASS rendered wave gaps match collision 293 
+PASS rendered wave gaps match collision 294 
+PASS rendered wave gaps match collision 295 
+PASS rendered wave gaps match collision 296 
+PASS rendered wave gaps match collision 297 
+PASS rendered wave gaps match collision 298 
+PASS rendered wave gaps match collision 299 
+PASS rendered wave gaps match collision 300 
+PASS rendered wave gaps match collision 301 
+PASS rendered wave gaps match collision 302 
+PASS rendered wave gaps match collision 303 
+PASS rendered wave gaps match collision 304 
+PASS rendered wave gaps match collision 305 
+PASS rendered wave gaps match collision 306 
+PASS rendered wave gaps match collision 307 
+PASS rendered wave gaps match collision 308 
+PASS rendered wave gaps match collision 309 
+PASS rendered wave gaps match collision 310 
+PASS rendered wave gaps match collision 311 
+PASS rendered wave gaps match collision 312 
+PASS rendered wave gaps match collision 313 
+PASS rendered wave gaps match collision 314 
+PASS rendered wave gaps match collision 315 
+PASS rendered wave gaps match collision 316 
+PASS rendered wave gaps match collision 317 
+PASS rendered wave gaps match collision 318 
+PASS rendered wave gaps match collision 319 
+PASS rendered wave gaps match collision 320 
+PASS rendered wave gaps match collision 321 
+PASS rendered wave gaps match collision 322 
+PASS rendered wave gaps match collision 323 
+PASS rendered wave gaps match collision 324 
+PASS rendered wave gaps match collision 325 
+PASS rendered wave gaps match collision 326 
+PASS rendered wave gaps match collision 327 
+PASS rendered wave gaps match collision 328 
+PASS rendered wave gaps match collision 329 
+PASS rendered wave gaps match collision 330 
+PASS rendered wave gaps match collision 331 
+PASS rendered wave gaps match collision 332 
+PASS rendered wave gaps match collision 333 
+PASS rendered wave gaps match collision 334 
+PASS rendered wave gaps match collision 335 
+PASS rendered wave gaps match collision 336 
+PASS rendered wave gaps match collision 337 
+PASS rendered wave gaps match collision 338 
+PASS rendered wave gaps match collision 339 
+PASS rendered wave gaps match collision 340 
+PASS rendered wave gaps match collision 341 
+PASS rendered wave gaps match collision 342 
+PASS rendered wave gaps match collision 343 
+PASS rendered wave gaps match collision 344 
+PASS rendered wave gaps match collision 345 
+PASS rendered wave gaps match collision 346 
+PASS rendered wave gaps match collision 347 
+PASS rendered wave gaps match collision 348 
+PASS rendered wave gaps match collision 349 
+PASS rendered wave gaps match collision 350 
+PASS rendered wave gaps match collision 351 
+PASS rendered wave gaps match collision 352 
+PASS rendered wave gaps match collision 353 
+PASS rendered wave gaps match collision 354 
+PASS rendered wave gaps match collision 355 
+PASS rendered wave gaps match collision 356 
+PASS rendered wave gaps match collision 357 
+PASS rendered wave gaps match collision 358 
+PASS rendered wave gaps match collision 359 
+PASS boss effects budget caps at96 without adding nodes 
+PASS boss effects expire completely 
+PASS batch effects create no extra scene nodes 
+PASS missing texture returns fallback signal 
+PASS texture restored after fallback test 
+PASS garm each lunge emits one bite only 0 
+PASS garm each lunge emits one bite only 1 
+PASS garm each lunge emits one bite only 2 
+PASS garm three lunges return to recover 
+PASS hrym phase two queues second stomp 
+PASS hrym phase two emits two separate waves 
+PASS hrym second wave has newly warned gaps 
+PASS hidden quest accepts and loads actual elite thokk 
+PASS hidden quest fleeing replacement retains thokk actions 
+PASS hidden quest second defeat completes and cleans up 
+RESULT 572 checks 0 failures
+exit 0

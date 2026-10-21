@@ -1,0 +1,11 @@
+--- before/scripts/effects/boss_fx.gd
++++ scripts/effects/boss_fx.gd
+@@ -2,7 +2,7 @@
+ 
+ const ROOT := "res://assets/sprites/effects/bosses/"
+ const FAST := ["skoll_dash_trail", "skoll_bite", "hati_lunge_trail", "hrym_block_spark", "hrym_ice_break", "garm_bite", "garm_chain_break", "nidhogg_poison_breath", "nidhogg_burrow_dust", "nidhogg_emerge_burst", "nidhogg_gnaw_stagger",
+-	"surtr_sword_arc", "surtr_final_fire", "fire_giant_explosion"]
++	"surtr_sword_arc", "surtr_sword_arc_large", "surtr_final_fire", "fire_giant_explosion"]
+ const STILL := ["garm_chain_link", "hel_life_ground", "hel_death_ground", "surtr_safe_rune", "fenrir_bind_link"]
+ const MAX_EFFECTS := 96
+ 

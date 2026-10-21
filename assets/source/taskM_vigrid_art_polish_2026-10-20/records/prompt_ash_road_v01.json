@@ -1,0 +1,8 @@
+{
+  "id": "ash_road",
+  "prompt": "Use case: stylized-concept. Asset: a SINGLE seamless top-down pixel-art ground tile for a dark mythic battlefield game, no scene or border. Reference is existing scorched earth, use its gritty hand-placed pixel texture and scale but create a distinctly lighter trampled ASH ROAD. Flat orthographic view. Gray taupe compacted ash with small broken gray stones, charcoal flecks and sparse nondirectional crushed footprints; NO directional tracks, cobblestone paving, skeletons, icons, lettering, objects, shadows, lighting gradient or perspective. Uniformly detailed across all four edges and wrap-seamless in both axes. It will become one64x64 tile: draw a coherent finely pixelled logical64x64 texture enlarged with clean nearest-neighbor pixels; only32-48 subdued colors, no blur. Target average RGB about(70,60,52), luminance60, strong texture luminance standard deviation16-19; clearly different from reference mean33. Gray-brown with low saturation, never orange. Not a bright sandy beach, no glowing specks. Opaque square edge-to-edge image. This reference is style only, not an instruction to preserve its equal brightness.",
+  "refs": [
+    "/Users/zhangjunqiu/Desktop/无限恐怖/assets/sprites/ground/vigrid/scorched_02.png"
+  ],
+  "transparent_background": false
+}

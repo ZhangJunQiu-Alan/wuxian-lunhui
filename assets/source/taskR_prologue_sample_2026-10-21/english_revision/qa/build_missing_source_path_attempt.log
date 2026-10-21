@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskR_prologue_sample_2026-10-21/english_revision/records/build_english.py", line 37, in <module>
+    encode(["-i", str(raw), "-af", "highpass=f=65,lowpass=f=10000,loudnorm=I=-19:TP=-3:LRA=11", "-ar", str(RATE), "-ac", "2", str(normalized)])
+  File "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskR_prologue_sample_2026-10-21/english_revision/records/build_english.py", line 27, in encode
+    result.check_returncode()
+  File "/Users/zhangjunqiu/.local/share/uv/python/cpython-3.12.13-macos-aarch64-none/lib/python3.12/subprocess.py", line 502, in check_returncode
+    raise CalledProcessError(self.returncode, self.args, self.stdout,
+subprocess.CalledProcessError: Command '['ffmpeg', '-hide_banner', '-y', '-i', '/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskR_prologue_sample_2026-10-21/english_revision/originals/narration/midgard_01.wav', '-af', 'highpass=f=65,lowpass=f=10000,loudnorm=I=-19:TP=-3:LRA=11', '-ar', '48000', '-ac', '2', '/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskR_prologue_sample_2026-10-21/work/english_audio/midgard_01.wav']' returned non-zero exit status 254.

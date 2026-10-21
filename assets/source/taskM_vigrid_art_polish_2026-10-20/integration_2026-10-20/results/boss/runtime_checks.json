@@ -1,0 +1,2911 @@
+{
+	"checks": [
+		{
+			"actual": null,
+			"label": "Godot loads thokk",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "Godot loads thokk_move",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "Godot loads thokk_attack",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "Godot loads hel_death_bolt",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "Godot loads skoll_dash_trail",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "Godot loads skoll_bite",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "Godot loads skoll_howl",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "Godot loads skoll_howl_body",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "Godot loads hati_lunge_trail",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "Godot loads hati_howl_wave",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "Godot loads hati_split_flash",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "Godot loads hrym_wave_band",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "Godot loads hrym_shield_arc",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "Godot loads hrym_block_spark",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "Godot loads hrym_guard_summon",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "Godot loads hrym_ice_break",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "Godot loads garm_bite",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "Godot loads garm_howl_wave",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "Godot loads garm_chain_link",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "Godot loads garm_chain_break",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "Godot loads garm_dispel",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "Godot loads nidhogg_poison_breath",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "Godot loads nidhogg_burrow_dust",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "Godot loads nidhogg_emerge_burst",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "Godot loads nidhogg_gnaw_heal",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "Godot loads nidhogg_gnaw_stagger",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "Godot loads hel_life_ground",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "Godot loads hel_death_ground",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "Godot loads hel_domain_edge",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "Godot loads hel_shift",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "Godot loads hel_heal",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "Godot loads hel_army_summon",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "Godot loads hel_board_ship",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "thokk actual Enemy loader false",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "thokk frame counts false",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "thokk speeds false",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "thokk loop flags false",
+			"pass": true
+		},
+		{
+			"actual": 1.0,
+			"label": "thokk actual scale false",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "thokk movement playback false",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "thokk actual attack trigger false",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "thokk attack completes and returns false",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "thokk actual Enemy loader true",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "thokk frame counts true",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "thokk speeds true",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "thokk loop flags true",
+			"pass": true
+		},
+		{
+			"actual": 1.20000004768372,
+			"label": "thokk actual scale true",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "thokk movement playback true",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "thokk actual attack trigger true",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "thokk attack completes and returns true",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "skoll half-health howl",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "new skoll howl is discovered",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "skoll uses new howl action",
+			"pass": true
+		},
+		{
+			"actual": 6,
+			"label": "skoll summons six wolves",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "skoll dash speed unchanged",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "hati split unlock at 75 percent",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "hati creates two phantoms",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "phantom action set matches",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "phantom uses same body texture",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "phantom action set matches",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "phantom uses same body texture",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "phantoms expiry releases nodes",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "hati fear boundary 279.0",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "hati fear boundary 281.0",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "hrym front shield angle 0.0",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "hrym front shield angle 1.29",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "hrym front shield angle 1.31",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "hrym front shield angle 3.14159265358979",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "hrym two gap angular boundary 0.0",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "hrym two gap angular boundary 0.419",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "hrym two gap angular boundary 0.421",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "hrym two gap angular boundary 3.14159265358979",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "hrym two gap angular boundary 2.72259265358979",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "hrym two gap angular boundary 2.72059265358979",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "hrym two gap angular boundary 6.18318530717959",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "hrym gap protects player at ring radius",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "hrym solid wave damages player",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "shockwave releases after max radius",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "ice pillar collision radius retained",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "ice pillar expiry cleanup",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "garm starts with four stakes",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "garm freed only at final stake 0",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "garm freed only at final stake 1",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "garm freed only at final stake 2",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "garm freed only at final stake 3",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "garm freed speed multiplier",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "garm freed damage multiplier",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "garm howl damage boundary 259.0",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "garm dispel respects howl range 259.0",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "garm howl damage boundary 261.0",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "garm dispel respects howl range 261.0",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "nidhogg underground hidden and untargetable",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "nidhogg emerges visible and targetable",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "nidhogg below gnaw interrupt threshold",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "nidhogg 6 percent damage interrupts gnaw",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "nidhogg stagger ends after two seconds",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "nidhogg breath angular edge 0.59",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "nidhogg breath angular edge 0.61",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "nidhogg breath radial edge includes player radius 313.0",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "nidhogg breath radial edge includes player radius 315.0",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "poison pool ellipse (47.0, -20.0)",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "poison pool ellipse (49.0, -20.0)",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "poison pool ellipse (0.0, 3.0)",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "poison pool ellipse (0.0, 5.0)",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "poison pool seven second cleanup",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "hel safety radius 0",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "hel safety radius 50",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "hel safety radius 100",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "hel safety radius 150",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "hel life side heals 15 percent",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "hel death side summons three",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "hel army summons fourteen",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "hel first phase five projectiles",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "hel phase one uses new death bolt",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "hel projectile expiry cleanup",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "hel low health boards ship",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "hel phase two retains nine nail projectiles",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "effect cache resolves skoll_dash_trail",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "effect frame count skoll_dash_trail",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "effect speed skoll_dash_trail",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "effect cache resolves skoll_bite",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "effect frame count skoll_bite",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "effect speed skoll_bite",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "effect cache resolves skoll_howl",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "effect frame count skoll_howl",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "effect speed skoll_howl",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "effect cache resolves hati_lunge_trail",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "effect frame count hati_lunge_trail",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "effect speed hati_lunge_trail",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "effect cache resolves hati_howl_wave",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "effect frame count hati_howl_wave",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "effect speed hati_howl_wave",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "effect cache resolves hati_split_flash",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "effect frame count hati_split_flash",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "effect speed hati_split_flash",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "effect cache resolves hrym_wave_band",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "effect frame count hrym_wave_band",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "effect speed hrym_wave_band",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "effect cache resolves hrym_shield_arc",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "effect frame count hrym_shield_arc",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "effect speed hrym_shield_arc",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "effect cache resolves hrym_block_spark",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "effect frame count hrym_block_spark",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "effect speed hrym_block_spark",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "effect cache resolves hrym_guard_summon",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "effect frame count hrym_guard_summon",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "effect speed hrym_guard_summon",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "effect cache resolves hrym_ice_break",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "effect frame count hrym_ice_break",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "effect speed hrym_ice_break",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "effect cache resolves garm_bite",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "effect frame count garm_bite",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "effect speed garm_bite",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "effect cache resolves garm_howl_wave",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "effect frame count garm_howl_wave",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "effect speed garm_howl_wave",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "effect cache resolves garm_chain_link",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "effect frame count garm_chain_link",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "effect cache resolves garm_chain_break",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "effect frame count garm_chain_break",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "effect speed garm_chain_break",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "effect cache resolves garm_dispel",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "effect frame count garm_dispel",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "effect speed garm_dispel",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "effect cache resolves nidhogg_poison_breath",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "effect frame count nidhogg_poison_breath",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "effect speed nidhogg_poison_breath",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "effect cache resolves nidhogg_burrow_dust",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "effect frame count nidhogg_burrow_dust",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "effect speed nidhogg_burrow_dust",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "effect cache resolves nidhogg_emerge_burst",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "effect frame count nidhogg_emerge_burst",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "effect speed nidhogg_emerge_burst",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "effect cache resolves nidhogg_gnaw_heal",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "effect frame count nidhogg_gnaw_heal",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "effect speed nidhogg_gnaw_heal",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "effect cache resolves nidhogg_gnaw_stagger",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "effect frame count nidhogg_gnaw_stagger",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "effect speed nidhogg_gnaw_stagger",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "effect cache resolves hel_life_ground",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "effect frame count hel_life_ground",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "effect cache resolves hel_death_ground",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "effect frame count hel_death_ground",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "effect cache resolves hel_domain_edge",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "effect frame count hel_domain_edge",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "effect speed hel_domain_edge",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "effect cache resolves hel_shift",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "effect frame count hel_shift",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "effect speed hel_shift",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "effect cache resolves hel_heal",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "effect frame count hel_heal",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "effect speed hel_heal",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "effect cache resolves hel_army_summon",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "effect frame count hel_army_summon",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "effect speed hel_army_summon",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "effect cache resolves hel_board_ship",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "effect frame count hel_board_ship",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "effect speed hel_board_ship",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 0",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 1",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 2",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 3",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 4",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 5",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 6",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 7",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 8",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 9",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 10",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 11",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 12",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 13",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 14",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 15",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 16",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 17",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 18",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 19",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 20",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 21",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 22",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 23",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 24",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 25",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 26",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 27",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 28",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 29",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 30",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 31",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 32",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 33",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 34",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 35",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 36",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 37",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 38",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 39",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 40",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 41",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 42",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 43",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 44",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 45",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 46",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 47",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 48",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 49",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 50",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 51",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 52",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 53",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 54",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 55",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 56",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 57",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 58",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 59",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 60",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 61",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 62",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 63",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 64",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 65",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 66",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 67",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 68",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 69",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 70",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 71",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 72",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 73",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 74",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 75",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 76",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 77",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 78",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 79",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 80",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 81",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 82",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 83",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 84",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 85",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 86",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 87",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 88",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 89",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 90",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 91",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 92",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 93",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 94",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 95",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 96",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 97",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 98",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 99",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 100",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 101",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 102",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 103",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 104",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 105",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 106",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 107",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 108",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 109",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 110",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 111",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 112",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 113",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 114",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 115",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 116",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 117",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 118",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 119",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 120",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 121",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 122",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 123",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 124",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 125",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 126",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 127",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 128",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 129",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 130",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 131",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 132",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 133",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 134",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 135",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 136",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 137",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 138",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 139",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 140",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 141",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 142",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 143",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 144",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 145",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 146",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 147",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 148",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 149",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 150",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 151",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 152",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 153",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 154",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 155",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 156",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 157",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 158",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 159",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 160",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 161",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 162",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 163",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 164",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 165",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 166",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 167",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 168",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 169",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 170",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 171",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 172",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 173",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 174",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 175",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 176",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 177",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 178",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 179",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 180",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 181",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 182",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 183",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 184",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 185",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 186",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 187",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 188",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 189",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 190",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 191",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 192",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 193",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 194",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 195",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 196",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 197",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 198",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 199",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 200",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 201",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 202",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 203",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 204",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 205",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 206",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 207",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 208",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 209",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 210",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 211",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 212",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 213",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 214",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 215",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 216",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 217",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 218",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 219",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 220",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 221",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 222",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 223",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 224",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 225",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 226",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 227",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 228",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 229",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 230",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 231",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 232",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 233",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 234",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 235",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 236",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 237",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 238",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 239",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 240",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 241",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 242",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 243",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 244",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 245",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 246",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 247",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 248",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 249",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 250",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 251",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 252",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 253",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 254",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 255",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 256",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 257",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 258",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 259",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 260",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 261",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 262",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 263",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 264",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 265",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 266",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 267",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 268",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 269",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 270",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 271",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 272",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 273",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 274",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 275",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 276",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 277",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 278",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 279",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 280",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 281",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 282",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 283",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 284",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 285",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 286",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 287",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 288",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 289",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 290",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 291",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 292",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 293",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 294",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 295",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 296",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 297",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 298",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 299",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 300",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 301",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 302",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 303",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 304",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 305",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 306",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 307",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 308",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 309",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 310",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 311",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 312",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 313",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 314",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 315",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 316",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 317",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 318",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 319",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 320",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 321",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 322",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 323",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 324",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 325",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 326",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 327",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 328",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 329",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 330",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 331",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 332",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 333",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 334",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 335",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 336",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 337",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 338",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 339",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 340",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 341",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 342",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 343",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 344",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 345",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 346",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 347",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 348",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 349",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 350",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 351",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 352",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 353",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 354",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 355",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 356",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 357",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 358",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "rendered wave gaps match collision 359",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "boss effects budget caps at96 without adding nodes",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "boss effects expire completely",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "batch effects create no extra scene nodes",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "missing texture returns fallback signal",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "texture restored after fallback test",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "garm each lunge emits one bite only 0",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "garm each lunge emits one bite only 1",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "garm each lunge emits one bite only 2",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "garm three lunges return to recover",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "hrym phase two queues second stomp",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "hrym phase two emits two separate waves",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "hrym second wave has newly warned gaps",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "hidden quest accepts and loads actual elite thokk",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "hidden quest fleeing replacement retains thokk actions",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "hidden quest second defeat completes and cleans up",
+			"pass": true
+		}
+	],
+	"count": 572,
+	"engine": {
+		"build": "official",
+		"hash": "ed1daf0bf001b61586d9930840f2f1394092c079",
+		"hex": 263938,
+		"major": 4,
+		"minor": 7,
+		"patch": 2,
+		"status": "stable",
+		"string": "4.7.2-stable (official)",
+		"timestamp": 0
+	},
+	"failures": 0,
+	"observations": {
+		"thokk_elite": {
+			"canvas_height": 115.200004577637,
+			"centered": true,
+			"offset": [
+				0.0,
+				-48.0
+			],
+			"opaque_foot_relative_to_enemy": 52.8000020980835,
+			"position": [
+				0.0,
+				57.6000022888184
+			],
+			"radius": 28.0,
+			"scale": 1.20000004768372
+		},
+		"thokk_normal": {
+			"canvas_height": 96.0,
+			"centered": true,
+			"offset": [
+				0.0,
+				-48.0
+			],
+			"opaque_foot_relative_to_enemy": 44.0,
+			"position": [
+				0.0,
+				48.0
+			],
+			"radius": 20.0,
+			"scale": 1.0
+		}
+	},
+	"scope": "current integrated code: automated loading, gameplay boundary and effect lifecycle assertions",
+	"visual_acceptance": "separate rendered encounter review"
+}

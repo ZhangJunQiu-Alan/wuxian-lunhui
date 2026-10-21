@@ -18,6 +18,12 @@ static func create(id: String, hp_scale: float) -> Boss:
 			boss = Nidhogg.new()
 		"hel":
 			boss = Hel.new()
+		"jormungandr":
+			boss = Jormungandr.new()
+		"fenrir":
+			boss = Fenrir.new()
+		"surtr":
+			boss = Surtr.new()
 		_:
 			push_error("未知的 Boss：" + id)
 			return null

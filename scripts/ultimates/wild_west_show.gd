@@ -15,6 +15,7 @@ static func cast(caster: Player) -> void:
 	caster.frenzy_time = DURATION
 	var fx := WildWestShow.new()
 	fx.player = caster
+	caster.active_ultimate = fx
 	caster.add_child(fx)
 	caster.shake(5.0, 0.2)
 	FxLayer.burst(caster.global_position, COLOR, 30, 260.0)

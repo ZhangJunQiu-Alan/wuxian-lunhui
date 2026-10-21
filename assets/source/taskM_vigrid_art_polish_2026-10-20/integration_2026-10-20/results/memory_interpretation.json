@@ -1,0 +1,92 @@
+{
+  "completed": true,
+  "stages": [
+    {
+      "boss": "none",
+      "wall_seconds": 90.855,
+      "unpaused_seconds": 89.5568839999471,
+      "max_enemies": 350,
+      "max_sfx": 4,
+      "max_same_sfx": 2,
+      "p95_ms": 18.081,
+      "p99_ms": 47.631,
+      "max_ms": 298.884
+    },
+    {
+      "boss": "jormungandr",
+      "wall_seconds": 90.028,
+      "unpaused_seconds": 89.9111111111852,
+      "max_enemies": 350,
+      "max_sfx": 3,
+      "max_same_sfx": 1,
+      "p95_ms": 17.784,
+      "p99_ms": 20.126,
+      "max_ms": 330.509
+    },
+    {
+      "boss": "fenrir",
+      "wall_seconds": 90.011,
+      "unpaused_seconds": 89.980555555496,
+      "max_enemies": 350,
+      "max_sfx": 6,
+      "max_same_sfx": 3,
+      "p95_ms": 17.932,
+      "p99_ms": 27.581,
+      "max_ms": 283.815
+    },
+    {
+      "boss": "surtr",
+      "wall_seconds": 90.024,
+      "unpaused_seconds": 90.016727888842,
+      "max_enemies": 350,
+      "max_sfx": 4,
+      "max_same_sfx": 2,
+      "p95_ms": 17.41,
+      "p99_ms": 18.317,
+      "max_ms": 299.196
+    }
+  ],
+  "after_hub_nodes": [
+    325.0,
+    325.0,
+    325.0,
+    325.0,
+    325.0,
+    325.0,
+    325.0,
+    325.0,
+    325.0,
+    325.0,
+    325.0,
+    325.0
+  ],
+  "after_hub_resources": [
+    275.0,
+    276.0,
+    276.0,
+    276.0,
+    276.0,
+    276.0,
+    276.0,
+    276.0,
+    276.0,
+    276.0,
+    276.0,
+    276.0
+  ],
+  "orphans": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "interpretation": "No growing scene-node/resource residue across12returns. Different combat builds warm up different texture/effect caches. RSS is OS resident footprint, not a direct live-heap measurement. p95 is measured callback-frame interval on this machine; raw maximums include sampling/capture overhead and do not establish universal steady60fps."
+}

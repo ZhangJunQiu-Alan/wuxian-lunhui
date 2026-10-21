@@ -1,0 +1,42 @@
+[
+	{
+		"check": "timeline advances in live window",
+		"passed": true
+	},
+	{
+		"check": "soundtrack starts",
+		"passed": true
+	},
+	{
+		"check": "Space pauses picture and soundtrack",
+		"passed": true
+	},
+	{
+		"check": "R restarts from paused state with soundtrack unpaused",
+		"passed": true
+	},
+	{
+		"check": "Space resumes",
+		"passed": true
+	},
+	{
+		"check": "960x540 window renders",
+		"passed": true
+	},
+	{
+		"check": "Enter restarts",
+		"passed": true
+	},
+	{
+		"check": "timeline completes and stays on replay screen",
+		"passed": true
+	},
+	{
+		"check": "replay after completion",
+		"passed": true
+	},
+	{
+		"check": "preview scene freed",
+		"passed": true
+	}
+]

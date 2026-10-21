@@ -1,0 +1,133 @@
+extends Node
+@onready var root = get_tree().root
+var _out := ""
+var _game: Node
+var _player: Node2D
+var _shots: Array[Dictionary] = []
+var _size := Vector2i(1280,720)
+func _ready() -> void:call_deferred("_run")
+func _run() -> void:
+    for arg in OS.get_cmdline_user_args():
+        if arg.begins_with("--output="):_out=arg.trim_prefix("--output=")
+    if _out=="" or root.get_node("Save").path=="user://save.json":get_tree().quit(2);return
+    DirAccess.make_dir_recursive_absolute(_out)
+    TranslationServer.set_locale("zh_CN")
+    var save=root.get_node("Save");save.reset();save.cleared_levels.assign(["midgard","helheim"]);save.selected_level="vigrid"
+    for size in [Vector2i(1280,720),Vector2i(960,540)]:
+        await _resize(size);await _new_game();await _map_views("_M01_%d"%size.x)
+        for weapon in [_player.katana,_player.revolver,_player.blades,_player.nova]:
+            if weapon:weapon.process_mode=Node.PROCESS_MODE_DISABLED
+        for i in 10:
+            var enemy=_game.spawn_enemy("dead",Vector2.from_angle(TAU*i/10)*170)
+            if enemy:enemy.process_mode=Node.PROCESS_MODE_DISABLED
+        var fire=await _spawn_boss(2);fire.position=Vector2(260,40);fire._sweep_dir=Vector2.LEFT;fire.change_state("sweep_windup");fire.state_time=0.7;fire.process_mode=Node.PROCESS_MODE_DISABLED;fire.queue_redraw()
+        FireHazard.patch(_game,Vector2(-170,70),20.0,0.0)
+        await _wait(8);await _shot("terrain_danger_M01_%d"%size.x,"10enemies, actualSurtr warning and firehazard; controlled invincible, newterrain only")
+        await _wait(2)
+    var file=FileAccess.open(_out.path_join("captures.json"),FileAccess.WRITE);file.store_string(JSON.stringify({"scope":"actualGame isolatedterrainpatch; no productionintegration or fullplaythrough","captures":_shots},"  "));file.close()
+    _game.queue_free()
+    var audio=Audio._instance
+    if is_instance_valid(audio):
+        for tween in audio._tweens.values():tween.kill()
+        for child in audio.get_children():
+            if child is AudioStreamPlayer:child.stop();child.stream=null
+        audio._streams.clear();audio.free();Audio._instance=null
+    await get_tree().process_frame
+    await get_tree().process_frame
+    get_tree().quit()
+func _resize(size: Vector2i) -> void:
+    _size = size
+    DisplayServer.window_set_size(size)
+    root.size = size
+    await get_tree().process_frame
+    await get_tree().process_frame
+
+
+func _new_game() -> void:
+    get_tree().paused = false
+    if is_instance_valid(_game):
+        await get_tree().process_frame
+        _game.queue_free()
+        await get_tree().process_frame
+    _game = load("res://scripts/game.gd").new()
+    root.add_child(_game)
+    get_tree().current_scene = _game
+    await get_tree().process_frame
+    _game.level_up_panel.choose(0)
+    get_tree().paused = false
+    _player = _game.player
+    _player.immune_time = 1.0e9  # 受控：玩家不会死
+    _game._spawn_timer = 1.0e9   # 不刷小怪
+    _game._next_event = _game.level_data.events.size()
+    _game._next_elite_time = 1.0e9
+    _game._next_boss = 3         # Boss 由脚本按顺序生成
+    for enemy in get_tree().get_nodes_in_group("enemies"):
+        enemy.queue_free()
+    await _wait(5)
+
+
+## 按物理帧等（玩法按物理帧推进；高刷新率屏幕上渲染帧比物理帧多）
+func _wait(frames: int) -> void:
+    for i in frames:
+        await get_tree().physics_frame
+
+
+func _teleport(pos: Vector2) -> void:
+    _player.position = pos
+    _player._camera.reset_smoothing()
+    _player._camera.force_update_scroll()
+
+
+func _shot(name: String, note: String) -> void:
+    await get_tree().process_frame
+    RenderingServer.force_draw(false)
+    var path := _out.path_join(name + ".png")
+    var status := root.get_texture().get_image().save_png(path)
+    _shots.append({"file": name + ".png", "ok": status == OK, "window": [_size.x, _size.y], "note": note})
+    print("SHOT ", name, " ", status)
+
+
+func _spawn_boss(index: int) -> Node2D:
+    _game._next_boss = index
+    _game.elapsed = _game.level_data.bosses[index].time
+    _game._update_bosses()
+    _game._next_boss = 3
+    await _wait(2)
+    return _game.boss
+
+
+func _kill(boss: Node2D) -> void:
+    if is_instance_valid(boss):
+        boss.take_damage(boss.max_hp * 10.0)
+    await _wait(3)
+    for node in get_tree().get_nodes_in_group("enemies"):  # 召唤出来的火焰巨人等一起清掉，下一张截图更干净
+        if node != boss:
+            node.queue_free()
+    for chest in _game.get_children():
+        if chest.get_script() and chest.get_script().resource_path.ends_with("chest.gd"):
+            chest.queue_free()
+    await _wait(2)
+
+
+# ———— 地图 ————
+
+func _map_views(tag: String) -> void:
+    _teleport(Vector2.ZERO)
+    await _wait(10)
+    await _shot("map_spawn" + tag, "spawn (0,0), central plain, routes")
+    for corner in [["nw", Vector2(-2290, -2290)], ["ne", Vector2(2290, -2290)], ["se", Vector2(2290, 2290)], ["sw", Vector2(-2290, 2290)]]:
+        _teleport(corner[1])
+        await _wait(6)
+        await _shot("map_corner_%s%s" % [corner[0], tag], "walk-rect corner, border haze and fire band, camera limit")
+    _teleport(Vector2(0, -2290))
+    await _wait(6)
+    await _shot("map_horizon" + tag, "north horizon distant battle strip, non-interactive")
+    _teleport(Vector2(-1536, 1024))
+    await _wait(6)
+    await _shot("map_frost_remnants" + tag, "burnt grass with derived midgard-mask transitions, giant treads")
+    _teleport(Vector2(1536, 1280))
+    await _wait(6)
+    await _shot("map_muspel" + tag, "cracked lava decoration and hue 0.04 decorative fire")
+    _teleport(Vector2.ZERO)
+
+

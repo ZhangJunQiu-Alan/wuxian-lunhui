@@ -29,6 +29,7 @@ var _hero := {}     # 「化身」页右侧的各个控件
 var _faces := {}    # 角色 id -> 头像按钮
 var _motes := []    # 上升的光点：[x 比例, 起始相位, 速度, 大小]
 var _time := 0.0
+var _launching := false
 static var _reopen_settings := false  # 切换语言后重建界面，再把设置面板打开
 
 
@@ -193,7 +194,9 @@ func _unhandled_input(event: InputEvent) -> void:
 
 
 func _start_battle() -> void:
-	get_tree().change_scene_to_file(BATTLE_SCENE)
+	if _launching: return
+	_launching = true
+	ChapterIntro.open(get_tree(), LevelDB.selected())
 
 
 ## 「化身」页：左边是正在看的角色的插画，右边是名字、三项能力，下面是四个化身的头像和选择 / 解锁按钮
@@ -418,6 +421,15 @@ func _make_level_card(id: String, index: int) -> Control:
 		Save.select_level(id)
 		_refresh())
 	box.add_child(button)
+	var replay := Button.new()
+	replay.text = tr("回看本关剧情")
+	replay.custom_minimum_size = Vector2(0, 34)
+	replay.disabled = not (LevelDB.is_built(id) and LevelDB.is_unlocked(id))
+	replay.pressed.connect(func() -> void:
+		if _launching: return
+		_launching = true
+		ChapterIntro.open(get_tree(), id, true))
+	box.add_child(replay)
 	_level_cards[id] = {"panel": panel, "button": button}
 	return panel
 

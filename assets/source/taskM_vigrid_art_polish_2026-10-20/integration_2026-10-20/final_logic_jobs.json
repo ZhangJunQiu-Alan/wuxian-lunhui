@@ -1,0 +1,137 @@
+[
+  {
+    "id": "final_m_art",
+    "command": [
+      "/Applications/Godot.app/Contents/MacOS/Godot",
+      "--headless",
+      "--path",
+      "/Users/zhangjunqiu/Desktop/\u65e0\u9650\u6050\u6016/assets/source/taskM_vigrid_art_polish_2026-10-20/integration_2026-10-20/runtime",
+      "--script",
+      "res://tools/test_vigrid_art.gd",
+      "--",
+      "--save-file=/Users/zhangjunqiu/Desktop/\u65e0\u9650\u6050\u6016/assets/source/taskM_vigrid_art_polish_2026-10-20/integration_2026-10-20/saves/final_m_art.json",
+      "--settings-file=/Users/zhangjunqiu/Desktop/\u65e0\u9650\u6050\u6016/assets/source/taskM_vigrid_art_polish_2026-10-20/integration_2026-10-20/saves/final_m_art.cfg",
+      "--output=/Users/zhangjunqiu/Desktop/\u65e0\u9650\u6050\u6016/assets/source/taskM_vigrid_art_polish_2026-10-20/integration_2026-10-20/results/final_m_art/"
+    ],
+    "exit_code": 0,
+    "finished": "2026-10-20T23:07:45.928141"
+  },
+  {
+    "id": "final_vigrid",
+    "command": [
+      "/Applications/Godot.app/Contents/MacOS/Godot",
+      "--headless",
+      "--path",
+      "/Users/zhangjunqiu/Desktop/\u65e0\u9650\u6050\u6016/assets/source/taskM_vigrid_art_polish_2026-10-20/integration_2026-10-20/runtime",
+      "--script",
+      "res://tools/test_vigrid.gd",
+      "--",
+      "--save-file=/Users/zhangjunqiu/Desktop/\u65e0\u9650\u6050\u6016/assets/source/taskM_vigrid_art_polish_2026-10-20/integration_2026-10-20/saves/final_vigrid.json",
+      "--settings-file=/Users/zhangjunqiu/Desktop/\u65e0\u9650\u6050\u6016/assets/source/taskM_vigrid_art_polish_2026-10-20/integration_2026-10-20/saves/final_vigrid.cfg",
+      "--output=/Users/zhangjunqiu/Desktop/\u65e0\u9650\u6050\u6016/assets/source/taskM_vigrid_art_polish_2026-10-20/integration_2026-10-20/results/final_vigrid/"
+    ],
+    "exit_code": 0,
+    "finished": "2026-10-20T23:08:10.462157"
+  },
+  {
+    "id": "final_combat",
+    "command": [
+      "/Applications/Godot.app/Contents/MacOS/Godot",
+      "--headless",
+      "--path",
+      "/Users/zhangjunqiu/Desktop/\u65e0\u9650\u6050\u6016/assets/source/taskM_vigrid_art_polish_2026-10-20/integration_2026-10-20/runtime",
+      "--script",
+      "res://tools/test_combat_regressions.gd",
+      "--",
+      "--save-file=/Users/zhangjunqiu/Desktop/\u65e0\u9650\u6050\u6016/assets/source/taskM_vigrid_art_polish_2026-10-20/integration_2026-10-20/saves/final_combat.json",
+      "--settings-file=/Users/zhangjunqiu/Desktop/\u65e0\u9650\u6050\u6016/assets/source/taskM_vigrid_art_polish_2026-10-20/integration_2026-10-20/saves/final_combat.cfg",
+      "--output=/Users/zhangjunqiu/Desktop/\u65e0\u9650\u6050\u6016/assets/source/taskM_vigrid_art_polish_2026-10-20/integration_2026-10-20/results/final_combat/"
+    ],
+    "exit_code": 0,
+    "finished": "2026-10-20T23:08:10.464993"
+  },
+  {
+    "id": "final_acceptance",
+    "command": [
+      "/Applications/Godot.app/Contents/MacOS/Godot",
+      "--headless",
+      "--path",
+      "/Users/zhangjunqiu/Desktop/\u65e0\u9650\u6050\u6016/assets/source/taskM_vigrid_art_polish_2026-10-20/integration_2026-10-20/runtime",
+      "--script",
+      "res://tools/acceptance_vigrid.gd",
+      "--",
+      "--save-file=/Users/zhangjunqiu/Desktop/\u65e0\u9650\u6050\u6016/assets/source/taskM_vigrid_art_polish_2026-10-20/integration_2026-10-20/saves/final_acceptance.json",
+      "--settings-file=/Users/zhangjunqiu/Desktop/\u65e0\u9650\u6050\u6016/assets/source/taskM_vigrid_art_polish_2026-10-20/integration_2026-10-20/saves/final_acceptance.cfg",
+      "--output=/Users/zhangjunqiu/Desktop/\u65e0\u9650\u6050\u6016/assets/source/taskM_vigrid_art_polish_2026-10-20/integration_2026-10-20/results/final_acceptance/"
+    ],
+    "exit_code": 0,
+    "finished": "2026-10-20T23:09:05.173201"
+  },
+  {
+    "id": "final_cards",
+    "command": [
+      "/Applications/Godot.app/Contents/MacOS/Godot",
+      "--headless",
+      "--path",
+      "/Users/zhangjunqiu/Desktop/\u65e0\u9650\u6050\u6016/assets/source/taskM_vigrid_art_polish_2026-10-20/integration_2026-10-20/runtime",
+      "--script",
+      "res://tools/test_card_art.gd",
+      "--",
+      "--save-file=/Users/zhangjunqiu/Desktop/\u65e0\u9650\u6050\u6016/assets/source/taskM_vigrid_art_polish_2026-10-20/integration_2026-10-20/saves/final_cards.json",
+      "--settings-file=/Users/zhangjunqiu/Desktop/\u65e0\u9650\u6050\u6016/assets/source/taskM_vigrid_art_polish_2026-10-20/integration_2026-10-20/saves/final_cards.cfg",
+      "--output=/Users/zhangjunqiu/Desktop/\u65e0\u9650\u6050\u6016/assets/source/taskM_vigrid_art_polish_2026-10-20/integration_2026-10-20/results/final_cards/",
+      "--ids-file=res://assets/source/taskL1_paths_2026-10-20/integration_2026-10-20/card_ids.json"
+    ],
+    "exit_code": 0,
+    "finished": "2026-10-20T23:09:05.173455"
+  },
+  {
+    "id": "final_boss",
+    "command": [
+      "/Applications/Godot.app/Contents/MacOS/Godot",
+      "--headless",
+      "--path",
+      "/Users/zhangjunqiu/Desktop/\u65e0\u9650\u6050\u6016/assets/source/taskM_vigrid_art_polish_2026-10-20/integration_2026-10-20/runtime",
+      "--script",
+      "/Users/zhangjunqiu/Desktop/\u65e0\u9650\u6050\u6016/assets/source/taskM_vigrid_art_polish_2026-10-20/integration_2026-10-20/tests/test_boss_art_final_report_only.gd",
+      "--",
+      "--save-file=/Users/zhangjunqiu/Desktop/\u65e0\u9650\u6050\u6016/assets/source/taskM_vigrid_art_polish_2026-10-20/integration_2026-10-20/saves/final_boss.json",
+      "--settings-file=/Users/zhangjunqiu/Desktop/\u65e0\u9650\u6050\u6016/assets/source/taskM_vigrid_art_polish_2026-10-20/integration_2026-10-20/saves/final_boss.cfg"
+    ],
+    "exit_code": 0,
+    "finished": "2026-10-20T23:09:05.173486"
+  },
+  {
+    "id": "final_combat_art",
+    "command": [
+      "/Applications/Godot.app/Contents/MacOS/Godot",
+      "--headless",
+      "--path",
+      "/Users/zhangjunqiu/Desktop/\u65e0\u9650\u6050\u6016/assets/source/taskM_vigrid_art_polish_2026-10-20/integration_2026-10-20/runtime",
+      "--script",
+      "/Users/zhangjunqiu/Desktop/\u65e0\u9650\u6050\u6016/assets/source/taskM_vigrid_art_polish_2026-10-20/integration_2026-10-20/tests/test_combat_art_final_report_only.gd",
+      "--",
+      "--save-file=/Users/zhangjunqiu/Desktop/\u65e0\u9650\u6050\u6016/assets/source/taskM_vigrid_art_polish_2026-10-20/integration_2026-10-20/saves/final_combat_art.json",
+      "--settings-file=/Users/zhangjunqiu/Desktop/\u65e0\u9650\u6050\u6016/assets/source/taskM_vigrid_art_polish_2026-10-20/integration_2026-10-20/saves/final_combat_art.cfg"
+    ],
+    "exit_code": 0,
+    "finished": "2026-10-20T23:09:05.173509"
+  },
+  {
+    "id": "final_quest",
+    "command": [
+      "/Applications/Godot.app/Contents/MacOS/Godot",
+      "--headless",
+      "--path",
+      "/Users/zhangjunqiu/Desktop/\u65e0\u9650\u6050\u6016/assets/source/taskM_vigrid_art_polish_2026-10-20/integration_2026-10-20/runtime",
+      "--script",
+      "/Users/zhangjunqiu/Desktop/\u65e0\u9650\u6050\u6016/assets/source/taskM_vigrid_art_polish_2026-10-20/integration_2026-10-20/tests/test_quest_art_final_report_only.gd",
+      "--",
+      "--save-file=/Users/zhangjunqiu/Desktop/\u65e0\u9650\u6050\u6016/assets/source/taskM_vigrid_art_polish_2026-10-20/integration_2026-10-20/saves/final_quest.json",
+      "--settings-file=/Users/zhangjunqiu/Desktop/\u65e0\u9650\u6050\u6016/assets/source/taskM_vigrid_art_polish_2026-10-20/integration_2026-10-20/saves/final_quest.cfg",
+      "--headless-audit"
+    ],
+    "exit_code": 0,
+    "finished": "2026-10-20T23:09:05.173524"
+  }
+]

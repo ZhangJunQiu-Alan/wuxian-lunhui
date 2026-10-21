@@ -1,0 +1,42 @@
+[
+  {
+    "suite": "M接入专项",
+    "log": "logs/final_m_art.log",
+    "result": "M_ART_RESULT 72 checks 0 failures"
+  },
+  {
+    "suite": "第三关专项",
+    "log": "logs/final_vigrid.log",
+    "result": "RESULT: 368 checks, 0 failures"
+  },
+  {
+    "suite": "战斗回归",
+    "log": "logs/final_combat.log",
+    "result": "RESULT: 997 checks, 0 failures"
+  },
+  {
+    "suite": "独立地图/伤害/暂停/结局验收",
+    "log": "logs/final_acceptance.log",
+    "result": "INDEPENDENT_RESULT 4632 checks 0 failures cases=28/28"
+  },
+  {
+    "suite": "卡面回归",
+    "log": "logs/final_cards.log",
+    "result": "CARD_ART_RESULT checks=1840 failed=0 captures=0"
+  },
+  {
+    "suite": "Boss特效回归",
+    "log": "logs/final_boss.log",
+    "result": "RESULT 572 checks 0 failures"
+  },
+  {
+    "suite": "战斗美术回归",
+    "log": "logs/final_combat_art.log",
+    "result": "RESULT J ART 626 checks 0 failures"
+  },
+  {
+    "suite": "支线美术回归",
+    "log": "logs/final_quest.log",
+    "result": "QUEST ART CHECKS 41 FAILURES 0"
+  }
+]

@@ -8,6 +8,7 @@
 """
 import csv
 import glob
+import json
 import re
 import sys
 
@@ -33,6 +34,15 @@ def code_strings():
                     if "\\" in text:
                         text = text.encode("utf-8").decode("unicode_escape").encode("latin-1").decode("utf-8")
                     found.setdefault(text, f"{path}:{number}")
+    for path in sorted(glob.glob("scripts/**/*_timeline.json", recursive=True)):  # 篇章结局的字幕
+        data = json.load(open(path, encoding="utf-8"))
+        for beat in data.get("beats", []):
+            found.setdefault(beat["text"], f"{path}:beat{beat['index']}")
+    for path in sorted(glob.glob("assets/cinematics/*/sequences.json")):
+        data = json.load(open(path, encoding="utf-8"))
+        for level, sequence in data.items():
+            for index, shot in enumerate(sequence["shots"]):
+                found.setdefault(shot["caption"], f"{path}:{level}/shot{index}")
     return found
 
 

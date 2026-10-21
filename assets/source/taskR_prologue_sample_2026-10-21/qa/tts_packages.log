@@ -1,0 +1,46 @@
+Using Python 3.12.13 environment at: assets/source/taskR_prologue_sample_2026-10-21/work/tts_env
+Resolved 26 packages in 2m 00s
+   Building jieba==0.42.1
+Downloading pip (1.7MiB)
+Downloading soundfile (1.1MiB)
+Downloading onnxruntime (19.9MiB)
+Downloading numpy (5.2MiB)
+Downloading pypinyin-dict (9.1MiB)
+Downloading misaki-fork (3.6MiB)
+Downloading espeakng-loader (9.4MiB)
+      Built jieba==0.42.1
+ Downloaded soundfile
+ Downloaded pip
+ Downloaded misaki-fork
+ Downloaded numpy
+ Downloaded pypinyin-dict
+ Downloaded espeakng-loader
+ Downloaded onnxruntime
+Prepared 26 packages in 6m 36s
+Installed 26 packages in 91ms
+ + addict==2.4.0
+ + attrs==26.1.0
+ + cffi==2.1.1
+ + cloudpickle==3.1.2
+ + cn2an==0.5.24
+ + dlinfo==2.0.0
+ + espeakng-loader==0.2.4
+ + flatbuffers==25.12.19
+ + jieba==0.42.1
+ + joblib==1.6.0
+ + kokoro-onnx==0.6.1
+ + misaki-fork==0.9.6
+ + numpy==2.5.4
+ + onnxruntime==1.31.0
+ + ordered-set==4.1.0
+ + packaging==26.3
+ + phonemizer==3.4.0
+ + pip==26.2.2
+ + proces==0.1.7
+ + protobuf==7.36.2
+ + pycparser==3.11
+ + pypinyin==0.55.0
+ + pypinyin-dict==0.9.0
+ + regex==2026.9.29
+ + soundfile==0.14.0
+ + typing-extensions==4.16.0

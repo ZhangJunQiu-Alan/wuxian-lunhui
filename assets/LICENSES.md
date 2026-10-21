@@ -328,6 +328,14 @@ K7交付（2026-10-20）：五段原文结局数据、命运契约与28个待接
 用户另行授权代码接入、实际验收、commit/push及冗余清理。沿用Godot4.7.2 MIT许可 https://godotengine.org/license/ ，用于导入本批60张PNG并以实际Game升级界面受控验证；Pillow MIT-CMU仅裁截图作对照，无新图像生成/账号/付费API。真实纹理均有10级mipmap，UI线性+mipmap；修复长黄金网觉醒说明标签越框，标题24/说明14/间隔6。当前工作区及排除其他未提交代码的独立候选各1901项0失败、61张实际渲染截图，检查60个卡牌ID、3种窗口宽度、文字边界、道路/觉醒/融合选择、四选一、悬停、回退与恢复。早期失败日志和截图保留，最终无脚本/资源加载/退出泄漏错误；macOS输入法mach-port诊断单列。未做完整战斗通关、其他硬件/DPI或语言验收。详情source/taskL1_paths_2026-10-20/integration_2026-10-20/RESULTS.md。推送与清理的实际结果另见本批publication/cleanup记录，清理仅限本批可重建副本及已归档且哈希相同的外部生成副本，全部项目原图、退稿及来源证据保留。
 
 
+### M-ART-01～03 开工核验（2026-10-20）
+内置image_gen沿用用户已授权路线。官方 https://openai.com/policies/terms-of-use/ （本次重新打开，生效2026-01-01）Content/Ownership确认用户与OpenAI之间输出归用户（法律允许范围），输出可能不唯一；在遵守条款和输入权利前提下用于商业项目。仅使用本项目已有许可素材作参考，不使用第三方作品人物。保留真实Prompt、参考、原图、退稿、量化/排帧记录和SHA256；不宣称独占。Pillow沿用已核查MIT-CMU，仅做裁帧、近邻缩放、色板/透明归一、遮罩派生、预览与检查；Godot沿用MIT，独立副本中作有界绘制/截图，不修改正式玩法。12道路过渡从现有helheim/bone_path_edge轮廓派生，路面纹理由新批准输出提供。此条不表示素材或实机验收已通过。
+
+M-ART-01～03 交付（2026-10-20）：11份内置image_gen实际原图归档，交付20张新PNG/51帧单位：15地面、4帧640²苏尔特剑弧、四种8帧320²援助。原图不宣称原生目标像素分辨率；裁帧、整体近邻定位、48色以内色板与最多8档FX透明度归一均有记录。道路过渡沿旧helheim轮廓派生碎边，不覆盖旧文件。299项技术/来源/文件一致性检查0失败，开工时1234个sprite文件哈希未变；18张地图和41张特效为独立实际Game受控视觉预览。援助使用预览八帧绘制器，不表示正式代码已接入、自然触发/完整战斗/K-QA通过。退稿、失败预览和原因保留；商用核验详情见source/taskM_vigrid_art_polish_2026-10-20/records/license_review.json，具体来源与SHA256见manifest.json。
+
+M正式代码接入与测试（2026-10-20，用户追加授权）：沿用Godot MIT执行正式Game/地图/特效接入、实际窗口与隔离存档测试，无新第三方素材来源。最终八组回归9148项0失败；三尺寸结算布局另8项0失败；350敌人四场景各90秒加12次返回共410.194秒，节点/资源清理有记录；无敌固定步长窗口完成三Boss与结局。正常伤害实时机器人09:22在苏尔特第二阶段阵亡，自然通关及稳定60fps/全设备/音频听感未验收。全部结果、实际命令与SHA256见taskM_vigrid_art_polish_2026-10-20/integration_2026-10-20/RESULTS.md。本轮无commit/push。
+
+
 ### O 通用局内补给制作（2026-10-21）
 内置 image_gen 制作蜜酒与聚魂符石，仅参考本项目已有经验宝石、宝箱与苹果。已重新核验 OpenAI Terms of Use（https://openai.com/policies/terms-of-use/ ，2026-01-01生效，Content/Ownership）：用户与OpenAI之间输出归用户，遵守条款可用于商业项目，输出可能不唯一。沿用 Pillow MIT-CMU 做裁帧、近邻缩放、色板及二值透明归一；Godot MIT 做实际渲染和测试。不增加账号或付费API。原图、实际Prompt、参考哈希、加工及验收记录位于 source/taskO_pickups_2026-10-21/；开工记录不代表验收完成。
 
@@ -336,3 +344,19 @@ K7交付（2026-10-20）：五段原文结局数据、命运契约与28个待接
 使用内置image_gen制作两张新的32像素拾取物；仅参考本项目蜜酒、聚魂符石，未引入第三方作品造型。重新核验OpenAI Terms of Use https://openai.com/policies/row-terms-of-use/ （2026-01-01生效，Content/Ownership）：用户与OpenAI之间输出归用户，合规用于商业项目，输出不保证唯一或独占。Pillow沿用MIT-CMU用于透明/近邻/色板归一及预览；Godot MIT做实际渲染。既有lightning特效和音效仅复用，不重新生成。原图、实际Prompt、参考哈希、接入与验收记录位于source/taskP_guard_thunder_2026-10-21/；此开工记录不表示验收完成。
 
 P范围调整：用户明确取消雷霆符石，其原图和试作代码仅留在source/cancelled_thunder及原始记录中，正式PNG、脚本、掉落入口和提示已移除。保留守护符石；新增环境放大只复用本项目原图，不重新生成外部素材。
+
+
+### R 北欧篇章序幕样片（2026-10-21，开工）
+使用内置 image_gen 制作原创高分辨率叙事插画，参考仅来自本项目既有雪村和斯库尔，不使用第三方作品造型。制作前重新打开 OpenAI Terms of Use https://openai.com/policies/terms-of-use/ （2026-01-01生效），Content/Ownership：用户与 OpenAI 之间且在适用法律允许范围内输出归用户，遵守条款用于本商业项目，输出不保证唯一。本次只用内置工具，无新注册、付费或 API。Godot 沿用 MIT，用于分层运镜、字幕与独立样片运行；Pillow 沿用 MIT-CMU，仅检查、排版与导出预览，不替代图像生成或编辑。原图、真实 Prompt、参考哈希与结果归档于 source/taskR_prologue_sample_2026-10-21/。开工不表示画面、音频或游戏验收通过。
+
+R样片复用音频与字体：hub.ogg 为 TokyoGeisha 的 Dream 2 Ambience（https://opengameart.org/content/dream-2-ambience，已有任务B核验 CC0-1.0）；boss_howl.wav 来自 NaturesTemper 自制 Wolf Howl（https://freesound.org/people/NaturesTemper/sounds/398430/，任务B核验 CC0-1.0），允许商业剪辑；本次不重新下载外部音源。只做样片临时混音，听感未验收，不生成旁白。NotoSansSC-Regular.otf 沿用项目 OFL 字体，原许可见 assets/fonts/，副本带许可。FFmpeg 8.1.1 本机 -L 核实 GPLv3，作为本地独立编码程序使用，不分发工具二进制；不将工具许可错误套到其输出图像或音频。
+
+R扩展为三关独立剧情（用户追加）：新增10个主画面及第三关环境修订；沿用上述内置图像商用路线，参考均为本项目现有敌人、Boss、神明卡面、桥和亡者船。新制作仅讲各关开战前剧情，不引入其他作品形象。中文旁白采用本地 Kokoro-82M-v1.1-zh（官方 https://huggingface.co/hexgrad/Kokoro-82M-v1.1-zh 标注 Apache-2.0；https://github.com/thewh1teagle/kokoro-onnx 标注推理代码 MIT、模型 Apache-2.0），使用公开通用音色，不输入或克隆真人声音。免费公开权重本地推理，无新账号/付费/API；保留官方模型说明、工具许可证、参数、原始WAV、模型与音色SHA256。保留模型所列来源署名信息。图像、音色与实机验收分开记录，未试听不标通过。
+
+R末轮修订：补画哈提透明层，仅参考项目hati.png和本批绘画画风，沿用内置image_gen授权。月亮复用自有太阳纹理，在运行时调成冷色，不引入外部图片。最终19份生成原图、16张正式PNG；模型鸣谢hexgrad与LongMaoData/龙猫数据，许可全文和依赖许可保存在本批records/tts/。
+
+
+### R 英语史诗旁白修订（2026-10-21，开工）
+Qwen3-TTS-12Hz-1.7B-VoiceDesign 官方模型 https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-VoiceDesign 标注 Apache-2.0；MLX Community 4bit 转换 https://huggingface.co/mlx-community/Qwen3-TTS-12Hz-1.7B-VoiceDesign-4bit 同为 Apache-2.0。推理 MLX-Audio https://github.com/Blaizzy/mlx-audio 为 MIT。制作前核验允许商业使用并保存官方模型卡、许可证、来源链接。使用文字设计的原创英语叙述者，不上传或克隆演员/第三方录音；免费公开权重在本机运行，无账号、付款或收费API。候选、实际英文、表演指令、参数和原始WAV保存于 taskR_prologue_sample_2026-10-21/english_revision/。开工与技术检查不表示主观听感通过。
+
+R英语旁白机器转录复核：Whisper原作 https://github.com/openai/whisper 为MIT，所用MLX转换 https://huggingface.co/mlx-community/whisper-base.en-asr-6bit 模型卡标注Apache-2.0；MLX-Audio沿用MIT。仅本地转录自产语音，核对是否漏句或增词，不代替人的听感、专名发音与表演验收；不将ASR模型打包入游戏。

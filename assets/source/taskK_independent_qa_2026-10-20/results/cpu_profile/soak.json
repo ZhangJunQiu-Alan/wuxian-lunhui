@@ -1,0 +1,362 @@
+{
+	"all_awake": false,
+	"awake_override": "odin",
+	"completed": true,
+	"machine": {
+		"cores": 8,
+		"cpu": "Apple M2",
+		"engine": {
+			"build": "official",
+			"hash": "ed1daf0bf001b61586d9930840f2f1394092c079",
+			"hex": 263938,
+			"major": 4,
+			"minor": 7,
+			"patch": 2,
+			"status": "stable",
+			"string": "4.7.2-stable (official)",
+			"timestamp": 0
+		},
+		"os": "macOS",
+		"renderer": ""
+	},
+	"reentry": [],
+	"scope": "local real-renderer soak, invincible player, reachable four-god build (one awakened at faith12, three paths at faith6), regular enemies have 1000000 HP to maintain sustained spell load without unrealistic whole-army respawns every frame; mixed ordinary enemies refilled to configured cap; Boss HP maintained, Surtr phases forced; sound streams run under Master mute; not balance or natural-clear evidence",
+	"seconds_per_stage": 30.0,
+	"stages": [
+		{
+			"boss": "none",
+			"frames": 82,
+			"god_profile": {
+				"_draw": [
+					83,
+					6446,
+					1388
+				],
+				"_move_missiles": [
+					82,
+					2360484,
+					330447
+				],
+				"_update_night_membership": [
+					791,
+					157645,
+					10450
+				],
+				"detonate": [
+					791,
+					2217501,
+					73483
+				],
+				"tick": [
+					82,
+					2390795,
+					330604
+				]
+			},
+			"max_enemies": 350,
+			"max_ms": 1097.261,
+			"max_same_sfx": 3,
+			"max_sfx": 6,
+			"over_100ms": 81,
+			"over_33ms": 81,
+			"p50_ms": 341.161,
+			"p95_ms": 501.806,
+			"p99_ms": 1097.261,
+			"phases": [],
+			"samples": [
+				{
+					"boss_state": "none",
+					"draw_calls": 0.0,
+					"enemies": 350,
+					"god_build": {
+						"freyja": "freyja_hawk",
+						"loki": "loki_road",
+						"odin": "odin_nights",
+						"thor": "thor_static"
+					},
+					"hazards": 0,
+					"level_time": 540.15,
+					"master_muted": true,
+					"node_classes": {
+						"enemy.gd": 110,
+						"fx_layer.gd": 1,
+						"god_zone.gd": 1,
+						"hud.gd": 1,
+						"level_up_panel.gd": 1,
+						"pause_menu.gd": 1,
+						"player.gd": 1,
+						"vigrid_battle.gd": 1,
+						"vigrid_enemy.gd": 240,
+						"vigrid_map.gd": 1
+					},
+					"nodes": 1306.0,
+					"objects": 4266.0,
+					"orphans": 0.0,
+					"physics_ms": 577.736,
+					"process_ms": 154.829,
+					"resources": 206.0,
+					"rss_mb": 165.703125,
+					"same_sound_max": 1,
+					"sfx_voices": 2,
+					"static_mb": 86.0160579681396,
+					"t": 0.006,
+					"voice_pool": 24
+				},
+				{
+					"boss_state": "none",
+					"draw_calls": 0.0,
+					"enemies": 350,
+					"god_build": {
+						"freyja": "freyja_hawk",
+						"loki": "loki_road",
+						"odin": "odin_nights",
+						"thor": "thor_static"
+					},
+					"hazards": 0,
+					"level_time": 541.872512666667,
+					"master_muted": true,
+					"node_classes": {
+						"enemy.gd": 110,
+						"fx_layer.gd": 1,
+						"god_zone.gd": 11,
+						"hud.gd": 1,
+						"level_up_panel.gd": 1,
+						"pause_menu.gd": 1,
+						"player.gd": 1,
+						"vigrid_battle.gd": 1,
+						"vigrid_enemy.gd": 240,
+						"vigrid_map.gd": 1,
+						"zone_profile.gd": 1
+					},
+					"nodes": 1317.0,
+					"objects": 4320.0,
+					"orphans": 0.0,
+					"physics_ms": 105.897,
+					"process_ms": 49.479,
+					"resources": 227.0,
+					"rss_mb": 101.28125,
+					"same_sound_max": 0,
+					"sfx_voices": 0,
+					"static_mb": 89.1448106765747,
+					"t": 5.035,
+					"voice_pool": 24
+				},
+				{
+					"boss_state": "none",
+					"draw_calls": 0.0,
+					"enemies": 347,
+					"god_build": {
+						"freyja": "freyja_hawk",
+						"loki": "loki_road",
+						"odin": "odin_nights",
+						"thor": "thor_static"
+					},
+					"hazards": 0,
+					"level_time": 543.737803333333,
+					"master_muted": true,
+					"node_classes": {
+						"enemy.gd": 110,
+						"fx_layer.gd": 1,
+						"god_zone.gd": 24,
+						"hud.gd": 1,
+						"level_up_panel.gd": 1,
+						"pause_menu.gd": 1,
+						"player.gd": 1,
+						"vigrid_battle.gd": 1,
+						"vigrid_enemy.gd": 240,
+						"vigrid_map.gd": 1,
+						"zone_profile.gd": 32
+					},
+					"nodes": 1361.0,
+					"objects": 4417.0,
+					"orphans": 6.0,
+					"physics_ms": 102.284,
+					"process_ms": 83.809,
+					"resources": 230.0,
+					"rss_mb": 100.71875,
+					"same_sound_max": 3,
+					"sfx_voices": 6,
+					"static_mb": 89.6723756790161,
+					"t": 10.304,
+					"voice_pool": 24
+				},
+				{
+					"boss_state": "none",
+					"draw_calls": 0.0,
+					"enemies": 350,
+					"god_build": {
+						"freyja": "freyja_hawk",
+						"loki": "loki_road",
+						"odin": "odin_nights",
+						"thor": "thor_static"
+					},
+					"hazards": 3,
+					"level_time": 545.748268666666,
+					"master_muted": true,
+					"node_classes": {
+						"enemy.gd": 110,
+						"fire_hazard.gd": 3,
+						"fx_layer.gd": 1,
+						"god_zone.gd": 39,
+						"hud.gd": 1,
+						"level_up_panel.gd": 1,
+						"pause_menu.gd": 1,
+						"player.gd": 1,
+						"vigrid_battle.gd": 1,
+						"vigrid_enemy.gd": 240,
+						"vigrid_map.gd": 1,
+						"xp_gem.gd": 3,
+						"zone_profile.gd": 23
+					},
+					"nodes": 1376.0,
+					"objects": 4446.0,
+					"orphans": 0.0,
+					"physics_ms": 70.492,
+					"process_ms": 100.966,
+					"resources": 233.0,
+					"rss_mb": 99.484375,
+					"same_sound_max": 0,
+					"sfx_voices": 0,
+					"static_mb": 90.017315864563,
+					"t": 15.038,
+					"voice_pool": 24
+				},
+				{
+					"boss_state": "none",
+					"draw_calls": 0.0,
+					"enemies": 347,
+					"god_build": {
+						"freyja": "freyja_hawk",
+						"loki": "loki_road",
+						"odin": "odin_nights",
+						"thor": "thor_static"
+					},
+					"hazards": 3,
+					"level_time": 547.741114666667,
+					"master_muted": true,
+					"node_classes": {
+						"enemy.gd": 110,
+						"fire_hazard.gd": 3,
+						"fx_layer.gd": 1,
+						"god_zone.gd": 50,
+						"hud.gd": 1,
+						"level_up_panel.gd": 1,
+						"pause_menu.gd": 1,
+						"player.gd": 1,
+						"vigrid_battle.gd": 1,
+						"vigrid_enemy.gd": 240,
+						"vigrid_map.gd": 1,
+						"xp_gem.gd": 3,
+						"zone_profile.gd": 47
+					},
+					"nodes": 1411.0,
+					"objects": 4495.0,
+					"orphans": 6.0,
+					"physics_ms": 81.694,
+					"process_ms": 118.627,
+					"resources": 233.0,
+					"rss_mb": 80.25,
+					"same_sound_max": 1,
+					"sfx_voices": 1,
+					"static_mb": 90.4058427810669,
+					"t": 20.132,
+					"voice_pool": 24
+				},
+				{
+					"boss_state": "none",
+					"draw_calls": 0.0,
+					"enemies": 350,
+					"god_build": {
+						"freyja": "freyja_hawk",
+						"loki": "loki_road",
+						"odin": "odin_nights",
+						"thor": "thor_static"
+					},
+					"hazards": 3,
+					"level_time": 549.208771333333,
+					"master_muted": true,
+					"node_classes": {
+						"enemy.gd": 110,
+						"fire_hazard.gd": 3,
+						"fx_layer.gd": 1,
+						"god_zone.gd": 52,
+						"hud.gd": 1,
+						"level_up_panel.gd": 1,
+						"pause_menu.gd": 1,
+						"player.gd": 1,
+						"vigrid_battle.gd": 1,
+						"vigrid_enemy.gd": 240,
+						"vigrid_map.gd": 1,
+						"xp_gem.gd": 6,
+						"zone_profile.gd": 50
+					},
+					"nodes": 1419.0,
+					"objects": 4496.0,
+					"orphans": 0.0,
+					"physics_ms": 65.72,
+					"process_ms": 23.684,
+					"resources": 233.0,
+					"rss_mb": 72.859375,
+					"same_sound_max": 1,
+					"sfx_voices": 1,
+					"static_mb": 90.317437171936,
+					"t": 25.31,
+					"voice_pool": 24
+				},
+				{
+					"boss_state": "none",
+					"draw_calls": 0.0,
+					"enemies": 347,
+					"god_build": {
+						"freyja": "freyja_hawk",
+						"loki": "loki_road",
+						"odin": "odin_nights",
+						"thor": "thor_static"
+					},
+					"hazards": 3,
+					"level_time": 550.948501,
+					"master_muted": true,
+					"node_classes": {
+						"enemy.gd": 110,
+						"fire_hazard.gd": 3,
+						"fx_layer.gd": 1,
+						"god_zone.gd": 50,
+						"hud.gd": 1,
+						"level_up_panel.gd": 1,
+						"pause_menu.gd": 1,
+						"player.gd": 1,
+						"vigrid_battle.gd": 1,
+						"vigrid_enemy.gd": 240,
+						"vigrid_map.gd": 1,
+						"xp_gem.gd": 6,
+						"zone_profile.gd": 60
+					},
+					"nodes": 1427.0,
+					"objects": 4510.0,
+					"orphans": 6.0,
+					"physics_ms": 133.69,
+					"process_ms": 13.955,
+					"resources": 233.0,
+					"rss_mb": 59.28125,
+					"same_sound_max": 2,
+					"sfx_voices": 2,
+					"static_mb": 90.0174970626831,
+					"t": 30.265,
+					"voice_pool": 24
+				}
+			],
+			"states": [],
+			"unpaused_seconds": 10.9485010000001,
+			"wall_seconds": 30.286,
+			"zone_profile": [
+				2345,
+				3198,
+				21
+			]
+		}
+	],
+	"violations": [
+		"stage -1 active time 10.9 too short for wall 30.3"
+	],
+	"wall_seconds": 31.013
+}

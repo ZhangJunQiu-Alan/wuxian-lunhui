@@ -1,0 +1,5 @@
+[transformers] You are using a model of type `qwen3_tts` to instantiate a model of type ``. This may be expected if you are loading a checkpoint that shares a subset of the architecture (e.g., loading a `sam2_video` checkpoint into `Sam2Model`), but is otherwise not supported and can yield errors. Please verify that the checkpoint is compatible with the model you are instantiating.
+  Initialized encoder codebooks
+Loaded speech tokenizer from /Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskR_prologue_sample_2026-10-21/work/hf_english/hub/models--mlx-community--Qwen3-TTS-12Hz-1.7B-VoiceDesign-4bit/snapshots/5c390979e4b93af5f2932f90742ca99c7dd04687/speech_tokenizer
+GENERATED candidate_grand 11.2 wall 28.485533125000075 GB 5.760045561
+GENERATED candidate_grave 10.48 wall 25.71309591602767 GB 5.838299113

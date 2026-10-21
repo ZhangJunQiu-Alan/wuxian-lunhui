@@ -17,6 +17,8 @@ const STRIP_FPS := 8.0  # 帧条的播放速度（帧/秒）
 const ACTOR_SCALE := 1.1
 const ACTION_FPS := {"attack": 16.0}  # 个别动作播放得更快（出刀要利落）
 
+static var _action_cache := {}
+
 
 ## 依次尝试多个路径，返回第一个找到的素材节点
 static func create_first(base_paths: Array[String], height: float) -> Node2D:
@@ -77,6 +79,10 @@ static func _pivot_at_feet(node: Node2D, tex_height: float) -> void:
 ## actions 是 动作名 -> 是否循环，例如 {"idle": true, "move": true, "hurt": false, "death": false}
 ## 没有 idle 和 move 时，用静态图 <base>.png 当作只有一帧的 idle；连静态图也没有，或者一个动作都没有，返回 null
 static func create_actions(base_path: String, height: float, actions: Dictionary) -> AnimatedSprite2D:
+	var key := base_path + ":" + str(actions)
+	if _action_cache.has(key):
+		var cached: SpriteFrames = _action_cache[key]
+		return _action_sprite(cached, height)
 	var frames := SpriteFrames.new()
 	frames.remove_animation(&"default")
 	var tex_height := 1.0
@@ -95,9 +101,15 @@ static func create_actions(base_path: String, height: float, actions: Dictionary
 		var still: Texture2D = load(base_path + ".png")
 		frames.add_animation(&"idle")
 		frames.add_frame(&"idle", still)
+	_action_cache[key] = frames
+	return _action_sprite(frames, height)
+
+
+static func _action_sprite(frames: SpriteFrames, height: float) -> AnimatedSprite2D:
 	var anim := AnimatedSprite2D.new()
 	anim.sprite_frames = frames
 	anim.play(&"idle" if frames.has_animation(&"idle") else &"move")
+	var tex_height := frames.get_frame_texture(anim.animation, 0).get_height()
 	anim.scale = Vector2.ONE * maxf(1.0, roundf(height / tex_height))
 	_pivot_at_feet(anim, tex_height)
 	return anim

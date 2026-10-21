@@ -1,0 +1,23 @@
+--- before/scripts/world/vigrid_battle.gd
++++ scripts/world/vigrid_battle.gd
+@@ -94,6 +94,8 @@
+ 		at = player.global_position
+ 	var amount: float = power.damage(VigridTuning.AID_DAMAGE) * (1.0 + player.faith.get(god_id, 1) / 12.0)
+ 	var kind: String = AID_KINDS.get(god_id, "blessing")
++	if kind == "feathers":
++		at = player.global_position
+ 	match kind:
+ 		"lightning":  # 世界观的例子：信仰托尔时，天空额外落雷
+ 			for i in 3:
+@@ -129,8 +131,9 @@
+ 			for enemy in Enemy.damage_in_radius(get_tree(), at, 130.0, amount * 0.7):
+ 				enemy.add_frost(3)
+ 			Audio.sfx_or("ice_shatter", "ice_pillar", -4.0)
+-	FxLayer.ring(at, 110.0)
+-	FxLayer.burst(at, power.color, 18, 200.0, 3.0)
++	if not FxLayer.play_aid(god_id, at):
++		FxLayer.ring(at, {"feathers": 140.0, "light": 110.0, "net": 130.0, "frost": 130.0}.get(kind, 110.0))
++		FxLayer.burst(at, power.color, 18, 200.0, 3.0)
+ 	return _record(god_id, at, kind)
+ 
+ 

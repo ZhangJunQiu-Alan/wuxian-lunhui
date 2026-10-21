@@ -1,0 +1,143 @@
+{
+  "status": "controlled_functional_pass_dense_performance_failed",
+  "logic": {
+    "checks": 4648,
+    "failures": 0,
+    "cases": 28,
+    "damage_samples": {
+      "maw": 200,
+      "firewall": 360,
+      "final_cell": 592,
+      "safe_grid_combined": 1884
+    }
+  },
+  "real_time_flow": {
+    "wall_seconds": 595.453,
+    "level_seconds": 579.042316333136,
+    "invincible": true,
+    "muted": true,
+    "max_enemies": 137,
+    "frame_ms_p95": 17.822,
+    "frame_ms_p99": 40.836,
+    "frame_ms_max": 834.201
+  },
+  "accelerated_current_flow": {
+    "wall_seconds": 80.423,
+    "level_seconds": 582.116666666466,
+    "headless": true,
+    "invincible": true,
+    "muted": true,
+    "max_enemies": 115
+  },
+  "long_soak": {
+    "wall_seconds": 955.962,
+    "violations": [
+      "stage 2 active time 167.7 too short for wall 225.3"
+    ],
+    "reentries": 12,
+    "all_exits_clean": true,
+    "hub_nodes": [
+      325.0,
+      325.0,
+      325.0,
+      325.0,
+      325.0,
+      325.0,
+      325.0,
+      325.0,
+      325.0,
+      325.0,
+      325.0,
+      325.0
+    ],
+    "hub_resources": [
+      277.0,
+      277.0,
+      277.0,
+      277.0,
+      277.0,
+      277.0,
+      277.0,
+      277.0,
+      277.0,
+      277.0,
+      277.0,
+      277.0
+    ]
+  },
+  "exclusive": {
+    "exclusive_odin": {
+      "completed": true,
+      "violations": [
+        "stage -1 active time 45.2 too short for wall 55.0",
+        "stage 1 active time 45.9 too short for wall 55.0"
+      ],
+      "stages": [
+        {
+          "boss": "none",
+          "p50_ms": 16.83,
+          "p95_ms": 162.435,
+          "p99_ms": 264.749,
+          "max_ms": 391.794,
+          "max_enemies": 350,
+          "unpaused_seconds": 45.2007779999755,
+          "wall_seconds": 55.02
+        },
+        {
+          "boss": "fenrir",
+          "p50_ms": 16.787,
+          "p95_ms": 192.841,
+          "p99_ms": 250.292,
+          "max_ms": 398.578,
+          "max_enemies": 350,
+          "unpaused_seconds": 45.9176709999771,
+          "wall_seconds": 55.022
+        }
+      ]
+    },
+    "exclusive_skadi": {
+      "completed": true,
+      "violations": [],
+      "stages": [
+        {
+          "boss": "jormungandr",
+          "p50_ms": 18.659,
+          "p95_ms": 33.774,
+          "p99_ms": 45.744,
+          "max_ms": 366.352,
+          "max_enemies": 350,
+          "unpaused_seconds": 54.7115695555633,
+          "wall_seconds": 55.02
+        },
+        {
+          "boss": "surtr",
+          "p50_ms": 17.199,
+          "p95_ms": 30.188,
+          "p99_ms": 38.857,
+          "max_ms": 378.299,
+          "max_enemies": 350,
+          "unpaused_seconds": 54.7199634848242,
+          "wall_seconds": 55.026
+        }
+      ]
+    }
+  },
+  "limitations": [
+    "No natural clear claim",
+    "Master mute: no auditory validation",
+    "Earlier stress frame times contaminated by concurrent Godot runs",
+    "cpu_profile zone wrapper reset callbacks: invalid diagnostic",
+    "M art is owned by another task"
+  ],
+  "fx_revision": {
+    "cadence_checks": 2270,
+    "cadence_failures": 0,
+    "burst_seconds": 3,
+    "base_rest_seconds": 4,
+    "minimum_rest_seconds": 1.5,
+    "odin_ring_max_radius": 48,
+    "ring_max_count": 24,
+    "winter_visual_max_radius": 128,
+    "captures": "screenshots/fx_final/captures.json"
+  }
+}

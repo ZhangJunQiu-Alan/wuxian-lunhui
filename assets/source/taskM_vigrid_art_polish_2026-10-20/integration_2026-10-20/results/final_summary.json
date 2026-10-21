@@ -1,0 +1,865 @@
+{
+  "production_integration": true,
+  "full_release_acceptance": false,
+  "suites": [
+    {
+      "id": "m_art",
+      "checks": 72,
+      "failures": 0,
+      "marker": "M_ART_RESULT 72 checks 0 failures",
+      "log": "logs/final_m_art.log",
+      "sha256": "1c745412ee60992e6af093ecaa49671de320f6fd3afd82917dfe06c43f2db4b3"
+    },
+    {
+      "id": "vigrid",
+      "checks": 368,
+      "failures": 0,
+      "marker": "RESULT: 368 checks, 0 failures",
+      "log": "logs/final_vigrid.log",
+      "sha256": "d26393f046355140cbb6e27b93b841159a0193dbd9dc6f0a9414c6caf1ca14ef"
+    },
+    {
+      "id": "combat",
+      "checks": 997,
+      "failures": 0,
+      "marker": "RESULT: 997 checks, 0 failures",
+      "log": "logs/final_combat.log",
+      "sha256": "ddbbc29b6af9d6aaa8b2a1d95c88ef8ae7b628d97b513bd63104e5568f6eaf4a"
+    },
+    {
+      "id": "acceptance",
+      "checks": 4632,
+      "failures": 0,
+      "marker": "INDEPENDENT_RESULT 4632 checks 0 failures cases=28/28",
+      "log": "logs/final_acceptance.log",
+      "sha256": "5187775efc67da0efdb3d4805175461e2f0aec2b726c7059db96cb1a61968e5e"
+    },
+    {
+      "id": "cards",
+      "checks": 1840,
+      "failures": 0,
+      "marker": "CARD_ART_RESULT checks=1840 failed=0 captures=0",
+      "log": "logs/final_cards.log",
+      "sha256": "6987c5a5c4d5381bd9fb8efeee79895fba97b9208b7fed3e894bdfbbc735656e"
+    },
+    {
+      "id": "boss",
+      "checks": 572,
+      "failures": 0,
+      "marker": "RESULT 572 checks 0 failures",
+      "log": "logs/final_boss.log",
+      "sha256": "4ed4d9359b40efe8daa9e4a6fcb1c28bd57f090af6c64f59937b204672c89fd0"
+    },
+    {
+      "id": "combat_art",
+      "checks": 626,
+      "failures": 0,
+      "marker": "RESULT J ART 626 checks 0 failures",
+      "log": "logs/final_combat_art.log",
+      "sha256": "9e5607f9e685d9e1fb01fdcf1809c91881086175347a0338b07197b9b10e0a4d"
+    },
+    {
+      "id": "quest",
+      "checks": 41,
+      "failures": 0,
+      "marker": "QUEST ART CHECKS 41 FAILURES 0",
+      "log": "logs/final_quest.log",
+      "sha256": "451a16dc38d93f95780d1e9de9408a23a957f0124394cb81d44fe39b4d311814"
+    }
+  ],
+  "long_runs": {
+    "soak_final": {
+      "complete": true,
+      "wall_seconds": 410.194,
+      "violations": [],
+      "stages": [
+        {
+          "boss": "none",
+          "wall_seconds": 90.855,
+          "unpaused_seconds": 89.5568839999471,
+          "p50_ms": 3.015,
+          "p95_ms": 18.081,
+          "p99_ms": 47.631,
+          "max_ms": 298.884,
+          "max_enemies": 350,
+          "trend": {
+            "rss_mb": {
+              "first": 229.40625,
+              "last": 59.71875,
+              "min": 59.71875,
+              "max": 229.40625
+            },
+            "static_mb": {
+              "first": 74.9600915908813,
+              "last": 81.5412588119507,
+              "min": 74.9600915908813,
+              "max": 81.5741300582886
+            },
+            "nodes": {
+              "first": 1306.0,
+              "last": 1420.0,
+              "min": 1306.0,
+              "max": 1429.0
+            },
+            "resources": {
+              "first": 206.0,
+              "last": 233.0,
+              "min": 206.0,
+              "max": 233.0
+            },
+            "orphans": {
+              "first": 0.0,
+              "last": 6.0,
+              "min": 0.0,
+              "max": 6.0
+            }
+          }
+        },
+        {
+          "boss": "jormungandr",
+          "wall_seconds": 90.028,
+          "unpaused_seconds": 89.9111111111852,
+          "p50_ms": 2.337,
+          "p95_ms": 17.784,
+          "p99_ms": 20.126,
+          "max_ms": 330.509,
+          "max_enemies": 350,
+          "trend": {
+            "rss_mb": {
+              "first": 160.953125,
+              "last": 88.96875,
+              "min": 67.21875,
+              "max": 160.953125
+            },
+            "static_mb": {
+              "first": 82.8471527099609,
+              "last": 84.7457447052002,
+              "min": 82.8471527099609,
+              "max": 85.3260555267334
+            },
+            "nodes": {
+              "first": 1317.0,
+              "last": 1340.0,
+              "min": 1317.0,
+              "max": 1427.0
+            },
+            "resources": {
+              "first": 255.0,
+              "last": 273.0,
+              "min": 255.0,
+              "max": 273.0
+            },
+            "orphans": {
+              "first": 0.0,
+              "last": 6.0,
+              "min": 0.0,
+              "max": 8.0
+            }
+          }
+        },
+        {
+          "boss": "fenrir",
+          "wall_seconds": 90.011,
+          "unpaused_seconds": 89.980555555496,
+          "p50_ms": 2.879,
+          "p95_ms": 17.932,
+          "p99_ms": 27.581,
+          "max_ms": 283.815,
+          "max_enemies": 350,
+          "trend": {
+            "rss_mb": {
+              "first": 143.90625,
+              "last": 88.109375,
+              "min": 67.671875,
+              "max": 145.59375
+            },
+            "static_mb": {
+              "first": 82.9828834533691,
+              "last": 85.3207187652588,
+              "min": 82.9828834533691,
+              "max": 85.3978023529053
+            },
+            "nodes": {
+              "first": 1310.0,
+              "last": 1427.0,
+              "min": 1310.0,
+              "max": 1429.0
+            },
+            "resources": {
+              "first": 281.0,
+              "last": 285.0,
+              "min": 281.0,
+              "max": 285.0
+            },
+            "orphans": {
+              "first": 0.0,
+              "last": 6.0,
+              "min": 0.0,
+              "max": 6.0
+            }
+          }
+        },
+        {
+          "boss": "surtr",
+          "wall_seconds": 90.024,
+          "unpaused_seconds": 90.016727888842,
+          "p50_ms": 2.401,
+          "p95_ms": 17.41,
+          "p99_ms": 18.317,
+          "max_ms": 299.196,
+          "max_enemies": 350,
+          "trend": {
+            "rss_mb": {
+              "first": 156.796875,
+              "last": 89.90625,
+              "min": 69.84375,
+              "max": 156.796875
+            },
+            "static_mb": {
+              "first": 83.3443145751953,
+              "last": 85.3683166503906,
+              "min": 83.3443145751953,
+              "max": 85.5844993591309
+            },
+            "nodes": {
+              "first": 1316.0,
+              "last": 1338.0,
+              "min": 1316.0,
+              "max": 1396.0
+            },
+            "resources": {
+              "first": 285.0,
+              "last": 290.0,
+              "min": 285.0,
+              "max": 290.0
+            },
+            "orphans": {
+              "first": 0.0,
+              "last": 6.0,
+              "min": 0.0,
+              "max": 6.0
+            }
+          }
+        }
+      ],
+      "reentries": 12,
+      "hub_residue": [
+        {
+          "round": 0,
+          "nodes": 325.0,
+          "resources": 275.0,
+          "orphans": 0.0,
+          "rss_mb": 158.59375,
+          "enemies_left": 0,
+          "hazards_left": 0,
+          "fragments_left": 0
+        },
+        {
+          "round": 1,
+          "nodes": 325.0,
+          "resources": 276.0,
+          "orphans": 0.0,
+          "rss_mb": 149.21875,
+          "enemies_left": 0,
+          "hazards_left": 0,
+          "fragments_left": 0
+        },
+        {
+          "round": 2,
+          "nodes": 325.0,
+          "resources": 276.0,
+          "orphans": 0.0,
+          "rss_mb": 138.6875,
+          "enemies_left": 0,
+          "hazards_left": 0,
+          "fragments_left": 0
+        },
+        {
+          "round": 3,
+          "nodes": 325.0,
+          "resources": 276.0,
+          "orphans": 0.0,
+          "rss_mb": 135.15625,
+          "enemies_left": 0,
+          "hazards_left": 0,
+          "fragments_left": 0
+        },
+        {
+          "round": 4,
+          "nodes": 325.0,
+          "resources": 276.0,
+          "orphans": 0.0,
+          "rss_mb": 136.78125,
+          "enemies_left": 0,
+          "hazards_left": 0,
+          "fragments_left": 0
+        },
+        {
+          "round": 5,
+          "nodes": 325.0,
+          "resources": 276.0,
+          "orphans": 0.0,
+          "rss_mb": 136.140625,
+          "enemies_left": 0,
+          "hazards_left": 0,
+          "fragments_left": 0
+        },
+        {
+          "round": 6,
+          "nodes": 325.0,
+          "resources": 276.0,
+          "orphans": 0.0,
+          "rss_mb": 134.6875,
+          "enemies_left": 0,
+          "hazards_left": 0,
+          "fragments_left": 0
+        },
+        {
+          "round": 7,
+          "nodes": 325.0,
+          "resources": 276.0,
+          "orphans": 0.0,
+          "rss_mb": 136.140625,
+          "enemies_left": 0,
+          "hazards_left": 0,
+          "fragments_left": 0
+        },
+        {
+          "round": 8,
+          "nodes": 325.0,
+          "resources": 276.0,
+          "orphans": 0.0,
+          "rss_mb": 135.609375,
+          "enemies_left": 0,
+          "hazards_left": 0,
+          "fragments_left": 0
+        },
+        {
+          "round": 9,
+          "nodes": 325.0,
+          "resources": 276.0,
+          "orphans": 0.0,
+          "rss_mb": 136.125,
+          "enemies_left": 0,
+          "hazards_left": 0,
+          "fragments_left": 0
+        },
+        {
+          "round": 10,
+          "nodes": 325.0,
+          "resources": 276.0,
+          "orphans": 0.0,
+          "rss_mb": 136.09375,
+          "enemies_left": 0,
+          "hazards_left": 0,
+          "fragments_left": 0
+        },
+        {
+          "round": 11,
+          "nodes": 325.0,
+          "resources": 276.0,
+          "orphans": 0.0,
+          "rss_mb": 136.171875,
+          "enemies_left": 0,
+          "hazards_left": 0,
+          "fragments_left": 0
+        }
+      ],
+      "hub_nodes_range": [
+        325.0,
+        325.0
+      ],
+      "hub_resources_range": [
+        275.0,
+        276.0
+      ],
+      "hub_orphans_range": [
+        0.0,
+        0.0
+      ],
+      "hub_rss_mb_range": [
+        134.6875,
+        158.59375
+      ],
+      "errors": []
+    },
+    "realtime_meta_final": {
+      "headless": false,
+      "wall_seconds": 565.43,
+      "level_seconds": 561.853247666286,
+      "invincible": false,
+      "damage_events": 378,
+      "meta_profile": {
+        "agility": 5,
+        "focus": 3,
+        "fortune": 5,
+        "growth": 5,
+        "recovery": 3,
+        "reroll": 3,
+        "revive": 1,
+        "sense": 3,
+        "strength": 5,
+        "vitality": 5
+      },
+      "frame_ms_p50": 14.098,
+      "frame_ms_p95": 20.922,
+      "frame_ms_p99": 21.421,
+      "frame_ms_max": 262.612,
+      "result": {
+        "elapsed": 561.853247666286,
+        "ever_faith_loki": false,
+        "fate_count": 1,
+        "fates": {
+          "freyr_assisted": false,
+          "thor_saved": true,
+          "vidar_intervened": false
+        },
+        "has_quests": false,
+        "hidden_found": 0,
+        "hidden_total": 0,
+        "kills": 2171,
+        "level": 31,
+        "quests_done": 0,
+        "quests_seen": 0,
+        "reward_points": 555,
+        "reward_total": 555,
+        "story_points": 0,
+        "story_total": 0
+      },
+      "complete": true,
+      "milestones": [
+        {
+          "event": "boss_spawn",
+          "hp": 3000.06768571486,
+          "id": "jormungandr",
+          "t": 180.01,
+          "wall": 180.621
+        },
+        {
+          "event": "fate",
+          "id": "thor_saved",
+          "t": 239.78,
+          "wall": 240.522
+        },
+        {
+          "defeated": [
+            "jormungandr"
+          ],
+          "event": "boss_gone",
+          "id": "jormungandr",
+          "t": 239.79,
+          "wall": 240.528
+        },
+        {
+          "event": "boss_spawn",
+          "hp": 5000.02317753584,
+          "id": "fenrir",
+          "t": 360.0,
+          "wall": 360.898
+        },
+        {
+          "defeated": [
+            "jormungandr",
+            "fenrir"
+          ],
+          "event": "boss_gone",
+          "id": "fenrir",
+          "t": 459.67,
+          "wall": 461.18
+        },
+        {
+          "event": "boss_spawn",
+          "hp": 12000.0951687434,
+          "id": "surtr",
+          "t": 540.01,
+          "wall": 541.726
+        },
+        {
+          "event": "surtr_phase",
+          "hp_ratio": 0.6,
+          "phase": 2,
+          "t": 558.83,
+          "wall": 560.871
+        },
+        {
+          "cleared_vigrid": false,
+          "event": "result",
+          "fates_saved": {
+            "ever_faith_loki": false,
+            "freyr_assisted": false,
+            "thor_saved": true,
+            "vidar_intervened": false
+          },
+          "run": {
+            "elapsed": 561.853247666286,
+            "ever_faith_loki": false,
+            "fate_count": 1,
+            "fates": {
+              "freyr_assisted": false,
+              "thor_saved": true,
+              "vidar_intervened": false
+            },
+            "has_quests": false,
+            "hidden_found": 0,
+            "hidden_total": 0,
+            "kills": 2171,
+            "level": 31,
+            "quests_done": 0,
+            "quests_seen": 0,
+            "reward_points": 555,
+            "reward_total": 555,
+            "story_points": 0,
+            "story_total": 0
+          },
+          "save_clears": 2,
+          "save_runs": 1,
+          "t": 561.85,
+          "wall": 565.202
+        }
+      ],
+      "three_boss_clear": false,
+      "errors": []
+    },
+    "controlled_render_final": {
+      "headless": false,
+      "wall_seconds": 78.944,
+      "level_seconds": 579.733333333135,
+      "invincible": true,
+      "damage_events": 0,
+      "meta_profile": {
+        "agility": 5,
+        "focus": 3,
+        "fortune": 5,
+        "growth": 5,
+        "recovery": 3,
+        "reroll": 3,
+        "revive": 1,
+        "sense": 3,
+        "strength": 5,
+        "vitality": 5
+      },
+      "frame_ms_p50": 1.642,
+      "frame_ms_p95": 4.238,
+      "frame_ms_p99": 9.775,
+      "frame_ms_max": 263.578,
+      "result": {
+        "elapsed": 579.733333333135,
+        "ever_faith_loki": false,
+        "fate_count": 2,
+        "fates": {
+          "freyr_assisted": true,
+          "thor_saved": true,
+          "vidar_intervened": false
+        },
+        "has_quests": false,
+        "hidden_found": 0,
+        "hidden_total": 0,
+        "kills": 2644,
+        "level": 40,
+        "quests_done": 0,
+        "quests_seen": 0,
+        "reward_points": 1455,
+        "reward_total": 1455,
+        "story_points": 0,
+        "story_total": 0
+      },
+      "complete": true,
+      "milestones": [
+        {
+          "event": "boss_spawn",
+          "hp": 3000.00000000038,
+          "id": "jormungandr",
+          "t": 180.0,
+          "wall": 17.67
+        },
+        {
+          "event": "fate",
+          "id": "thor_saved",
+          "t": 194.02,
+          "wall": 20.146
+        },
+        {
+          "defeated": [
+            "jormungandr"
+          ],
+          "event": "boss_gone",
+          "id": "jormungandr",
+          "t": 194.03,
+          "wall": 20.149
+        },
+        {
+          "event": "boss_spawn",
+          "hp": 5000.00000000001,
+          "id": "fenrir",
+          "t": 360.0,
+          "wall": 37.632
+        },
+        {
+          "defeated": [
+            "jormungandr",
+            "fenrir"
+          ],
+          "event": "boss_gone",
+          "id": "fenrir",
+          "t": 376.35,
+          "wall": 40.842
+        },
+        {
+          "event": "boss_spawn",
+          "hp": 12000.312499997,
+          "id": "surtr",
+          "t": 540.02,
+          "wall": 68.328
+        },
+        {
+          "event": "fate",
+          "id": "freyr_assisted",
+          "t": 540.02,
+          "wall": 68.328
+        },
+        {
+          "event": "surtr_phase",
+          "hp_ratio": 0.599,
+          "phase": 2,
+          "t": 545.27,
+          "wall": 70.405
+        },
+        {
+          "event": "surtr_phase",
+          "hp_ratio": 0.249,
+          "phase": 3,
+          "t": 555.35,
+          "wall": 73.158
+        },
+        {
+          "defeated": [
+            "jormungandr",
+            "fenrir",
+            "surtr"
+          ],
+          "event": "boss_gone",
+          "id": "surtr",
+          "t": 579.73,
+          "wall": 78.375
+        },
+        {
+          "beat": 0,
+          "event": "ending_shown",
+          "t": 579.73,
+          "wall": 78.627
+        },
+        {
+          "cleared_vigrid": true,
+          "event": "result",
+          "fates_saved": {
+            "ever_faith_loki": false,
+            "freyr_assisted": true,
+            "thor_saved": true,
+            "vidar_intervened": false
+          },
+          "run": {
+            "elapsed": 579.733333333135,
+            "ever_faith_loki": false,
+            "fate_count": 2,
+            "fates": {
+              "freyr_assisted": true,
+              "thor_saved": true,
+              "vidar_intervened": false
+            },
+            "has_quests": false,
+            "hidden_found": 0,
+            "hidden_total": 0,
+            "kills": 2644,
+            "level": 40,
+            "quests_done": 0,
+            "quests_seen": 0,
+            "reward_points": 1455,
+            "reward_total": 1455,
+            "story_points": 0,
+            "story_total": 0
+          },
+          "save_clears": 3,
+          "save_runs": 1,
+          "t": 579.73,
+          "wall": 78.737
+        }
+      ],
+      "three_boss_clear": true,
+      "errors": []
+    },
+    "controlled_render_capture": {
+      "headless": false,
+      "wall_seconds": 131.376,
+      "level_seconds": 666.349999999723,
+      "invincible": true,
+      "damage_events": 0,
+      "meta_profile": {
+        "agility": 5,
+        "focus": 3,
+        "fortune": 5,
+        "growth": 5,
+        "recovery": 3,
+        "reroll": 3,
+        "revive": 1,
+        "sense": 3,
+        "strength": 5,
+        "vitality": 5
+      },
+      "frame_ms_p50": 1.929,
+      "frame_ms_p95": 8.78,
+      "frame_ms_p99": 15.26,
+      "frame_ms_max": 290.178,
+      "result": {
+        "elapsed": 666.349999999723,
+        "ever_faith_loki": true,
+        "fate_count": 1,
+        "fates": {
+          "freyr_assisted": false,
+          "thor_saved": true,
+          "vidar_intervened": false
+        },
+        "has_quests": false,
+        "hidden_found": 0,
+        "hidden_total": 0,
+        "kills": 2813,
+        "level": 37,
+        "quests_done": 0,
+        "quests_seen": 0,
+        "reward_points": 1485,
+        "reward_total": 1485,
+        "story_points": 0,
+        "story_total": 0
+      },
+      "complete": true,
+      "milestones": [
+        {
+          "event": "boss_spawn",
+          "hp": 3000.00000000038,
+          "id": "jormungandr",
+          "t": 180.0,
+          "wall": 13.408
+        },
+        {
+          "defeated": [
+            "jormungandr"
+          ],
+          "event": "boss_gone",
+          "id": "jormungandr",
+          "t": 221.0,
+          "wall": 19.69
+        },
+        {
+          "event": "fate",
+          "id": "thor_saved",
+          "t": 221.0,
+          "wall": 19.69
+        },
+        {
+          "event": "boss_spawn",
+          "hp": 5000.00000000001,
+          "id": "fenrir",
+          "t": 360.0,
+          "wall": 35.753
+        },
+        {
+          "defeated": [
+            "jormungandr",
+            "fenrir"
+          ],
+          "event": "boss_gone",
+          "id": "fenrir",
+          "t": 421.08,
+          "wall": 44.573
+        },
+        {
+          "event": "boss_spawn",
+          "hp": 12000.312499997,
+          "id": "surtr",
+          "t": 540.02,
+          "wall": 78.811
+        },
+        {
+          "event": "surtr_phase",
+          "hp_ratio": 0.585,
+          "phase": 2,
+          "t": 588.15,
+          "wall": 108.031
+        },
+        {
+          "event": "surtr_phase",
+          "hp_ratio": 0.248,
+          "phase": 3,
+          "t": 612.22,
+          "wall": 113.82
+        },
+        {
+          "defeated": [
+            "jormungandr",
+            "fenrir",
+            "surtr"
+          ],
+          "event": "boss_gone",
+          "id": "surtr",
+          "t": 666.35,
+          "wall": 130.674
+        },
+        {
+          "beat": 0,
+          "event": "ending_shown",
+          "t": 666.35,
+          "wall": 130.929
+        },
+        {
+          "cleared_vigrid": true,
+          "event": "result",
+          "fates_saved": {
+            "ever_faith_loki": true,
+            "freyr_assisted": false,
+            "thor_saved": true,
+            "vidar_intervened": false
+          },
+          "run": {
+            "elapsed": 666.349999999723,
+            "ever_faith_loki": true,
+            "fate_count": 1,
+            "fates": {
+              "freyr_assisted": false,
+              "thor_saved": true,
+              "vidar_intervened": false
+            },
+            "has_quests": false,
+            "hidden_found": 0,
+            "hidden_total": 0,
+            "kills": 2813,
+            "level": 37,
+            "quests_done": 0,
+            "quests_seen": 0,
+            "reward_points": 1485,
+            "reward_total": 1485,
+            "story_points": 0,
+            "story_total": 0
+          },
+          "save_clears": 3,
+          "save_runs": 1,
+          "t": 666.35,
+          "wall": 131.118
+        }
+      ],
+      "three_boss_clear": true,
+      "errors": []
+    }
+  },
+  "issues": [
+    "Stress includes >100ms frame spikes with capture/sampling overhead; stable60fps release acceptance not established",
+    "realtime_meta_final bot ended in death; natural-clear acceptance not achieved"
+  ],
+  "assertions_total": 9148,
+  "snapshot_files": 267,
+  "gameplay_snapshot_changes": [],
+  "expected_fixture_changes": [
+    "tools/acceptance_vigrid_run.gd"
+  ],
+  "snapshot_vs_current_changes": [
+    "tools/acceptance_vigrid_run.gd"
+  ]
+}

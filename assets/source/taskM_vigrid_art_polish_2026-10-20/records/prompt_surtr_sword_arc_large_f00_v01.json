@@ -1,0 +1,9 @@
+{
+  "id": "surtr_sword_arc_large_f00",
+  "prompt": "Use case: stylized-concept. Produce ONE transparent native pixel-art game VFX frame on a square640x640 logical canvas, finely drawn1pixel detail, never a magnified low-resolution icon. Image1 is old128px arc STYLE ONLY; image2 is the current320px boss body STYLE AND PIXEL DENSITY; image3 is a GEOMETRY GUIDE ONLY, do not include its lines/center marker. Coordinate origin in final640canvas top-left, pivot(320,320). Draw a thin black-flame crescent slash ONLY on the RIGHT along radius290 and angles-60deg to+60deg, top end near(464,69), midpoint(610,320), bottom end(464,571). Center and left half EMPTY alpha. Outer edge must follow this circular arc, no full ring, no filled fan or giant glow disk. Soot-black wisps inside the crescent with narrow hot orange/ivory blade filaments and tiny sparks; fine sharp grain matching body at game1x. Crisp alpha, limited dark charcoal/red-orange/amber/ivory palette, no fuzzy watercolor blur, no text or UI, no sword, no character, no ground, no black opaque background. Arc ends taper but entire ±60deg span readable. Keep at least24pixels exterior transparent margin. Do not copy the small old arc enlarged; redraw high-detail large-scale version. Frame1 of4: beginning slash, a narrow dim ember blade filament already following most of the arc, dark wisps gather; restrained intensity, distinctly thinner than the next impact frame.",
+  "refs": [
+    "/Users/zhangjunqiu/Desktop/无限恐怖/assets/sprites/effects/bosses/surtr_sword_arc.png",
+    "/Users/zhangjunqiu/Desktop/无限恐怖/assets/sprites/bosses/surtr_idle.png",
+    "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskM_vigrid_art_polish_2026-10-20/references/sword_sector_guide.png"
+  ]
+}

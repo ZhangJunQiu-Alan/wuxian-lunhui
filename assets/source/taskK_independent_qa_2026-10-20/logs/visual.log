@@ -1,0 +1,21 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+OpenGL API 4.1 Metal - 90.5 - Compatibility - Using Device: Apple - Apple M2
+
+2026-10-20 19:58:09.327 godot[92330:5618708] error messaging the mach port for IMKCFRunLoopWakeUpReliable
+SHOT hub_levels 0
+SCRIPT ERROR: Cannot call method 'get_viewport' on a null value.
+          at: _shot (res://tools/acceptance_vigrid_visual.gd:16)
+          GDScript backtrace (most recent call first):
+              [0] _shot (res://tools/acceptance_vigrid_visual.gd:16)
+              [1] _shot (res://tools/review_vigrid.gd:106)
+SHOT map_spawn 0
+SHOT map_corner_nw 0
+SHOT map_corner_ne 0
+SHOT map_corner_se 0
+SHOT map_corner_sw 0
+SHOT map_horizon 0
+SHOT map_frost_remnants 0
+SHOT map_muspel 0
+SHOT serpent_corner_turn 0
+SHOT serpent_breath_windup 0
+SHOT serpent_mist 0

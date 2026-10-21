@@ -1,0 +1,366 @@
+{
+	"checks": 72,
+	"failures": 0,
+	"log": [
+		{
+			"check": "actual map uses new road",
+			"pass": true,
+			"section": "M01 production map routes and sources"
+		},
+		{
+			"check": "road topology registered",
+			"pass": true,
+			"section": "M01 production map routes and sources"
+		},
+		{
+			"check": "new road edge loaded: n",
+			"pass": true,
+			"section": "M01 production map routes and sources"
+		},
+		{
+			"check": "new road edge loaded: e",
+			"pass": true,
+			"section": "M01 production map routes and sources"
+		},
+		{
+			"check": "new road edge loaded: s",
+			"pass": true,
+			"section": "M01 production map routes and sources"
+		},
+		{
+			"check": "new road edge loaded: w",
+			"pass": true,
+			"section": "M01 production map routes and sources"
+		},
+		{
+			"check": "new road edge loaded: outer_ne",
+			"pass": true,
+			"section": "M01 production map routes and sources"
+		},
+		{
+			"check": "new road edge loaded: outer_nw",
+			"pass": true,
+			"section": "M01 production map routes and sources"
+		},
+		{
+			"check": "new road edge loaded: outer_se",
+			"pass": true,
+			"section": "M01 production map routes and sources"
+		},
+		{
+			"check": "new road edge loaded: outer_sw",
+			"pass": true,
+			"section": "M01 production map routes and sources"
+		},
+		{
+			"check": "new road edge loaded: inner_ne",
+			"pass": true,
+			"section": "M01 production map routes and sources"
+		},
+		{
+			"check": "new road edge loaded: inner_nw",
+			"pass": true,
+			"section": "M01 production map routes and sources"
+		},
+		{
+			"check": "new road edge loaded: inner_se",
+			"pass": true,
+			"section": "M01 production map routes and sources"
+		},
+		{
+			"check": "new road edge loaded: inner_sw",
+			"pass": true,
+			"section": "M01 production map routes and sources"
+		},
+		{
+			"check": "new ground source loaded: ash_road",
+			"pass": true,
+			"section": "M01 production map routes and sources"
+		},
+		{
+			"check": "new ground source loaded: burnt_grass_02",
+			"pass": true,
+			"section": "M01 production map routes and sources"
+		},
+		{
+			"check": "new ground source loaded: cracked_lava_02",
+			"pass": true,
+			"section": "M01 production map routes and sources"
+		},
+		{
+			"check": "grass mask applies to new ID",
+			"pass": true,
+			"section": "M01 production map routes and sources"
+		},
+		{
+			"check": "obsolete grass ID not used by layout",
+			"pass": true,
+			"section": "M01 production map routes and sources"
+		},
+		{
+			"check": "unknown god has no custom sprite",
+			"pass": true,
+			"section": "M03 production aid dispatch, lifecycle and positions"
+		},
+		{
+			"check": "freyja records exactly one aid",
+			"pass": true,
+			"section": "M03 production aid dispatch, lifecycle and positions"
+		},
+		{
+			"check": "freyja actual request emits sprite",
+			"pass": true,
+			"section": "M03 production aid dispatch, lifecycle and positions"
+		},
+		{
+			"check": "freyja visual and event center agree",
+			"pass": true,
+			"section": "M03 production aid dispatch, lifecycle and positions"
+		},
+		{
+			"check": "Freyja centered on player, not enemy cluster",
+			"pass": true,
+			"section": "M03 production aid dispatch, lifecycle and positions"
+		},
+		{
+			"check": "freyja 8 native 320px frames",
+			"pass": true,
+			"section": "M03 production aid dispatch, lifecycle and positions"
+		},
+		{
+			"check": "freyja no generic ring/burst masks identity",
+			"pass": true,
+			"section": "M03 production aid dispatch, lifecycle and positions"
+		},
+		{
+			"check": "freyja existing damage still applies",
+			"pass": true,
+			"section": "M03 production aid dispatch, lifecycle and positions"
+		},
+		{
+			"check": "freyja transparent terminal frame retained",
+			"pass": true,
+			"section": "M03 production aid dispatch, lifecycle and positions"
+		},
+		{
+			"check": "freyja effect expires after one cycle",
+			"pass": true,
+			"section": "M03 production aid dispatch, lifecycle and positions"
+		},
+		{
+			"check": "baldr records exactly one aid",
+			"pass": true,
+			"section": "M03 production aid dispatch, lifecycle and positions"
+		},
+		{
+			"check": "baldr actual request emits sprite",
+			"pass": true,
+			"section": "M03 production aid dispatch, lifecycle and positions"
+		},
+		{
+			"check": "baldr visual and event center agree",
+			"pass": true,
+			"section": "M03 production aid dispatch, lifecycle and positions"
+		},
+		{
+			"check": "baldr effect targets actual enemy cluster",
+			"pass": true,
+			"section": "M03 production aid dispatch, lifecycle and positions"
+		},
+		{
+			"check": "baldr 8 native 320px frames",
+			"pass": true,
+			"section": "M03 production aid dispatch, lifecycle and positions"
+		},
+		{
+			"check": "baldr no generic ring/burst masks identity",
+			"pass": true,
+			"section": "M03 production aid dispatch, lifecycle and positions"
+		},
+		{
+			"check": "baldr existing damage still applies",
+			"pass": true,
+			"section": "M03 production aid dispatch, lifecycle and positions"
+		},
+		{
+			"check": "baldr transparent terminal frame retained",
+			"pass": true,
+			"section": "M03 production aid dispatch, lifecycle and positions"
+		},
+		{
+			"check": "baldr effect expires after one cycle",
+			"pass": true,
+			"section": "M03 production aid dispatch, lifecycle and positions"
+		},
+		{
+			"check": "ran records exactly one aid",
+			"pass": true,
+			"section": "M03 production aid dispatch, lifecycle and positions"
+		},
+		{
+			"check": "ran actual request emits sprite",
+			"pass": true,
+			"section": "M03 production aid dispatch, lifecycle and positions"
+		},
+		{
+			"check": "ran visual and event center agree",
+			"pass": true,
+			"section": "M03 production aid dispatch, lifecycle and positions"
+		},
+		{
+			"check": "ran effect targets actual enemy cluster",
+			"pass": true,
+			"section": "M03 production aid dispatch, lifecycle and positions"
+		},
+		{
+			"check": "ran 8 native 320px frames",
+			"pass": true,
+			"section": "M03 production aid dispatch, lifecycle and positions"
+		},
+		{
+			"check": "ran no generic ring/burst masks identity",
+			"pass": true,
+			"section": "M03 production aid dispatch, lifecycle and positions"
+		},
+		{
+			"check": "ran existing damage still applies",
+			"pass": true,
+			"section": "M03 production aid dispatch, lifecycle and positions"
+		},
+		{
+			"check": "ran transparent terminal frame retained",
+			"pass": true,
+			"section": "M03 production aid dispatch, lifecycle and positions"
+		},
+		{
+			"check": "ran effect expires after one cycle",
+			"pass": true,
+			"section": "M03 production aid dispatch, lifecycle and positions"
+		},
+		{
+			"check": "skadi records exactly one aid",
+			"pass": true,
+			"section": "M03 production aid dispatch, lifecycle and positions"
+		},
+		{
+			"check": "skadi actual request emits sprite",
+			"pass": true,
+			"section": "M03 production aid dispatch, lifecycle and positions"
+		},
+		{
+			"check": "skadi visual and event center agree",
+			"pass": true,
+			"section": "M03 production aid dispatch, lifecycle and positions"
+		},
+		{
+			"check": "skadi effect targets actual enemy cluster",
+			"pass": true,
+			"section": "M03 production aid dispatch, lifecycle and positions"
+		},
+		{
+			"check": "skadi 8 native 320px frames",
+			"pass": true,
+			"section": "M03 production aid dispatch, lifecycle and positions"
+		},
+		{
+			"check": "skadi no generic ring/burst masks identity",
+			"pass": true,
+			"section": "M03 production aid dispatch, lifecycle and positions"
+		},
+		{
+			"check": "skadi existing damage still applies",
+			"pass": true,
+			"section": "M03 production aid dispatch, lifecycle and positions"
+		},
+		{
+			"check": "skadi transparent terminal frame retained",
+			"pass": true,
+			"section": "M03 production aid dispatch, lifecycle and positions"
+		},
+		{
+			"check": "skadi effect expires after one cycle",
+			"pass": true,
+			"section": "M03 production aid dispatch, lifecycle and positions"
+		},
+		{
+			"check": "aid budget capped at32",
+			"pass": true,
+			"section": "M03 production aid dispatch, lifecycle and positions"
+		},
+		{
+			"check": "aid requests do not allocate scene nodes",
+			"pass": true,
+			"section": "M03 production aid dispatch, lifecycle and positions"
+		},
+		{
+			"check": "all saturated aid entries expire",
+			"pass": true,
+			"section": "M03 production aid dispatch, lifecycle and positions"
+		},
+		{
+			"check": "Thor retains prior lightning and generic feedback",
+			"pass": true,
+			"section": "M03 production aid dispatch, lifecycle and positions"
+		},
+		{
+			"check": "real pause freezes aid animation",
+			"pass": true,
+			"section": "M03 production aid dispatch, lifecycle and positions"
+		},
+		{
+			"check": "resume completes and removes aid",
+			"pass": true,
+			"section": "M03 production aid dispatch, lifecycle and positions"
+		},
+		{
+			"check": "new Game has no previous aid instances",
+			"pass": true,
+			"section": "M03 production aid dispatch, lifecycle and positions"
+		},
+		{
+			"check": "actual sweep emits one new arc",
+			"pass": true,
+			"section": "M02 actual Surtr sweep dispatch"
+		},
+		{
+			"check": "actual arc at native1x",
+			"pass": true,
+			"section": "M02 actual Surtr sweep dispatch"
+		},
+		{
+			"check": "arc follows attack direction",
+			"pass": true,
+			"section": "M02 actual Surtr sweep dispatch"
+		},
+		{
+			"check": "arc clipping matches damage sector",
+			"pass": true,
+			"section": "M02 actual Surtr sweep dispatch"
+		},
+		{
+			"check": "new arc registered 4frames16fps",
+			"pass": true,
+			"section": "M02 actual Surtr sweep dispatch"
+		},
+		{
+			"check": "native640px source loaded",
+			"pass": true,
+			"section": "M02 actual Surtr sweep dispatch"
+		},
+		{
+			"check": "arc removed after one shot",
+			"pass": true,
+			"section": "M02 actual Surtr sweep dispatch"
+		},
+		{
+			"check": "scene exit leaves no K nodes",
+			"pass": true,
+			"section": "cleanup"
+		},
+		{
+			"check": "spatial index cleared",
+			"pass": true,
+			"section": "cleanup"
+		}
+	]
+}

@@ -1,0 +1,31 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+OpenGL API 4.1 Metal - 90.5 - Compatibility - Using Device: Apple - Apple M2
+
+2026-10-20 23:30:34.559 Godot[22056:5973585] error messaging the mach port for IMKCFRunLoopWakeUpReliable
+EVENT {"character":"gunslinger","event":"start","headless":false,"level":"vigrid","t":0.0,"wall":0.266}
+EVENT {"event":"faith","god":"thor","t":0.0,"wall":0.364}
+EVENT {"event":"faith","god":"freyja","t":25.87,"wall":8.9}
+EVENT {"event":"faith","god":"odin","t":65.85,"wall":11.15}
+EVENT {"event":"faith","god":"freyr","t":130.25,"wall":14.78}
+EVENT {"event":"boss_spawn","hp":3000.00000000038,"id":"jormungandr","t":180.0,"wall":17.67}
+EVENT {"event":"fate","id":"thor_saved","t":194.02,"wall":20.146}
+EVENT {"defeated":["jormungandr"],"event":"boss_gone","id":"jormungandr","t":194.03,"wall":20.149}
+EVENT {"event":"boss_spawn","hp":5000.00000000001,"id":"fenrir","t":360.0,"wall":37.632}
+EVENT {"event":"fenrir_swallow","t":368.9,"wall":39.687}
+EVENT {"event":"fenrir_bound","t":374.3,"wall":40.325}
+EVENT {"defeated":["jormungandr","fenrir"],"event":"boss_gone","id":"fenrir","t":376.35,"wall":40.842}
+EVENT {"event":"awaken","id":"freyja_hawk_awaken","t":505.92,"wall":61.897}
+EVENT {"event":"boss_spawn","hp":12000.312499997,"id":"surtr","t":540.02,"wall":68.328}
+EVENT {"event":"fate","id":"freyr_assisted","t":540.02,"wall":68.328}
+EVENT {"event":"surtr_phase","hp_ratio":0.599,"phase":2,"t":545.27,"wall":70.405}
+EVENT {"event":"surtr_phase","hp_ratio":0.249,"phase":3,"t":555.35,"wall":73.158}
+EVENT {"cycle":0,"event":"final_fire_burn","safe":18,"t":558.07,"unsafe":464,"wall":74.126}
+EVENT {"cycle":1,"event":"final_fire_burn","safe":16,"t":561.78,"unsafe":421,"wall":74.837}
+EVENT {"cycle":2,"event":"final_fire_burn","safe":18,"t":565.5,"unsafe":371,"wall":75.54}
+EVENT {"cycle":3,"event":"final_fire_burn","safe":19,"t":569.22,"unsafe":313,"wall":76.174}
+EVENT {"cycle":4,"event":"final_fire_burn","safe":20,"t":572.93,"unsafe":254,"wall":76.883}
+EVENT {"cycle":5,"event":"final_fire_burn","safe":20,"t":576.65,"unsafe":205,"wall":77.678}
+EVENT {"defeated":["jormungandr","fenrir","surtr"],"event":"boss_gone","id":"surtr","t":579.73,"wall":78.375}
+EVENT {"beat":0,"event":"ending_shown","t":579.73,"wall":78.627}
+EVENT {"cleared_vigrid":true,"event":"result","fates_saved":{"ever_faith_loki":false,"freyr_assisted":true,"thor_saved":true,"vidar_intervened":false},"run":{"elapsed":579.733333333135,"ever_faith_loki":false,"fate_count":2,"fates":{"freyr_assisted":true,"thor_saved":true,"vidar_intervened":false},"has_quests":false,"hidden_found":0,"hidden_total":0,"kills":2644,"level":40,"quests_done":0,"quests_seen":0,"reward_points":1455,"reward_total":1455,"story_points":0,"story_total":0},"save_clears":3,"save_runs":1,"t":579.73,"wall":78.737}
+PLAYTHROUGH_DONE level=579.7 wall=78.9 enemies_max=124 p95=4.24ms cleared=true

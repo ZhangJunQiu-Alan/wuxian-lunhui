@@ -1,0 +1,16 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+PASS fixed faith gain, four gods, awakening pool, and level 40
+BENCH 350 enemies / 2000 radius queries: grid=28500us, scan=230195us
+PASS spatial query equivalence and lifecycle
+PASS cooldown, immunity, and unique harvest
+BENCH 350 shocked enemies / 30 static ticks: 311379us
+PASS static-field damage equivalence
+PASS regular, event, elite, split, quest and Boss spawning
+PASS final Boss, queued rewards, pause and duplicate settlement
+PASS death and abandon settlement on Helheim
+RESULT: 997 checks, 0 failures
+WARNING: 14 ObjectDB instances were leaked at exit (run with `--verbose` for details).
+   at: cleanup (core/object/object.cpp:2536)
+ERROR: 6 resources still in use at exit (run with --verbose for details).
+   at: clear (core/io/resource.cpp:822)

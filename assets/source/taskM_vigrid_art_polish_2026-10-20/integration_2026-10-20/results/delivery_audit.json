@@ -1,0 +1,83 @@
+{
+  "final_logs_clean": 14,
+  "logs": [
+    {
+      "log": "logs/final_m_art.log",
+      "sha256": "1c745412ee60992e6af093ecaa49671de320f6fd3afd82917dfe06c43f2db4b3",
+      "script_resource_leak_errors": 0
+    },
+    {
+      "log": "logs/final_vigrid.log",
+      "sha256": "d26393f046355140cbb6e27b93b841159a0193dbd9dc6f0a9414c6caf1ca14ef",
+      "script_resource_leak_errors": 0
+    },
+    {
+      "log": "logs/final_combat.log",
+      "sha256": "ddbbc29b6af9d6aaa8b2a1d95c88ef8ae7b628d97b513bd63104e5568f6eaf4a",
+      "script_resource_leak_errors": 0
+    },
+    {
+      "log": "logs/final_acceptance.log",
+      "sha256": "5187775efc67da0efdb3d4805175461e2f0aec2b726c7059db96cb1a61968e5e",
+      "script_resource_leak_errors": 0
+    },
+    {
+      "log": "logs/final_cards.log",
+      "sha256": "6987c5a5c4d5381bd9fb8efeee79895fba97b9208b7fed3e894bdfbbc735656e",
+      "script_resource_leak_errors": 0
+    },
+    {
+      "log": "logs/final_boss.log",
+      "sha256": "4ed4d9359b40efe8daa9e4a6fcb1c28bd57f090af6c64f59937b204672c89fd0",
+      "script_resource_leak_errors": 0
+    },
+    {
+      "log": "logs/final_combat_art.log",
+      "sha256": "9e5607f9e685d9e1fb01fdcf1809c91881086175347a0338b07197b9b10e0a4d",
+      "script_resource_leak_errors": 0
+    },
+    {
+      "log": "logs/final_quest.log",
+      "sha256": "451a16dc38d93f95780d1e9de9408a23a957f0124394cb81d44fe39b4d311814",
+      "script_resource_leak_errors": 0
+    },
+    {
+      "log": "logs/soak_final.log",
+      "sha256": "b1e28d08e4d5200d055f9e3dbebd9b88d77732e2b4cee393b90704d4817d4d53",
+      "script_resource_leak_errors": 0
+    },
+    {
+      "log": "logs/realtime_meta_final.log",
+      "sha256": "0d7e3d9cab97270554cc7d090c71e230cac92857c3cda0daa1b5860adce8f290",
+      "script_resource_leak_errors": 0
+    },
+    {
+      "log": "logs/controlled_render_final.log",
+      "sha256": "919d1b6612eb035eca8cd4157a68d6ed1abd4b14150572f27df566ae30880ae2",
+      "script_resource_leak_errors": 0
+    },
+    {
+      "log": "logs/controlled_render_capture.log",
+      "sha256": "9b960d1c4ecffe8c17ed9567f02e757c4f9812fe265d352ccd042316f74d0adb",
+      "script_resource_leak_errors": 0
+    },
+    {
+      "log": "logs/visual_m_final.log",
+      "sha256": "7013d123766e20c9d1cfc426f8ed472ad7a48d4f031b97bb10afa4ae55c56405",
+      "script_resource_leak_errors": 0
+    },
+    {
+      "log": "logs/result_layout_final.log",
+      "sha256": "040fddb18ed5dd064ecfc45f8bf132cdc015e1a3a669c0273ee99847c8fc7f2a",
+      "script_resource_leak_errors": 0
+    }
+  ],
+  "production_screenshots_verified": 94,
+  "additional_result_layout_checks": 8,
+  "gallery_links": 327,
+  "preexisting_sprite_files_unchanged": 1234,
+  "production_changes_after_test_snapshot": [],
+  "normal_clear_passed": false,
+  "controlled_full_flow_passed": true,
+  "full_release_accepted": false
+}

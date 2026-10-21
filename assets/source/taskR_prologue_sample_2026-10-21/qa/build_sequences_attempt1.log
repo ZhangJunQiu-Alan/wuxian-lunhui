@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskR_prologue_sample_2026-10-21/records/build_sequences.py", line 65, in <module>
+    encode(["-i", str(source), "-af", f"atrim=start={offset}:duration={length},asetpts=PTS-STARTPTS,loudnorm=I=-29:TP=-12:LRA=8,afade=t=in:d=1,afade=t=out:st={length-1.9}:d=1.9", "-ar", str(RATE), "-ac", "2", str(path)])
+  File "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskR_prologue_sample_2026-10-21/records/build_sequences.py", line 26, in encode
+    result.check_returncode()
+  File "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskR_prologue_sample_2026-10-21/work/python/cpython-3.12.13-macos-aarch64-none/lib/python3.12/subprocess.py", line 502, in check_returncode
+    raise CalledProcessError(self.returncode, self.args, self.stdout,
+subprocess.CalledProcessError: Command '['ffmpeg', '-hide_banner', '-y', '-i', '/Users/zhangjunqiu/Desktop/无限恐怖/assets/audio/music/hub.ogg', '-af', 'atrim=start=12:duration=28.125,asetpts=PTS-STARTPTS,loudnorm=I=-29:TP=-12:LRA=8,afade=t=in:d=1,afade=t=out:st=26.225:d=1.9', '-ar', '48000', '-ac', '2', '/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskR_prologue_sample_2026-10-21/work/audio/midgard_music.wav']' returned non-zero exit status 222.

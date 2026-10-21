@@ -1,0 +1,28 @@
+{
+	"completed": true,
+	"machine": {
+		"cores": 8,
+		"cpu": "Apple M2",
+		"engine": {
+			"build": "official",
+			"hash": "ed1daf0bf001b61586d9930840f2f1394092c079",
+			"hex": 263938,
+			"major": 4,
+			"minor": 7,
+			"patch": 2,
+			"status": "stable",
+			"string": "4.7.2-stable (official)",
+			"timestamp": 0
+		},
+		"os": "macOS",
+		"renderer": "Apple M2"
+	},
+	"reentry": [],
+	"scope": "local real-renderer soak, invincible player, synthetic four-awakened-god builds, regular enemies have 1000000 HP to maintain sustained spell load without unrealistic whole-army respawns every frame; mixed ordinary enemies refilled to configured cap; Boss HP maintained, Surtr phases forced; sound streams run under Master mute; not balance or natural-clear evidence",
+	"seconds_per_stage": 20.0,
+	"stages": [
+		{}
+	],
+	"violations": [],
+	"wall_seconds": 0.001
+}

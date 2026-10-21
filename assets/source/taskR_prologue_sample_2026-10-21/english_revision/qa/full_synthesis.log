@@ -1,0 +1,29 @@
+LOADING /Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskR_prologue_sample_2026-10-21/work/hf_english/hub/models--mlx-community--Qwen3-TTS-12Hz-1.7B-VoiceDesign-4bit/snapshots/5c390979e4b93af5f2932f90742ca99c7dd04687
+[transformers] You are using a model of type `qwen3_tts` to instantiate a model of type ``. This may be expected if you are loading a checkpoint that shares a subset of the architecture (e.g., loading a `sam2_video` checkpoint into `Sam2Model`), but is otherwise not supported and can yield errors. Please verify that the checkpoint is compatible with the model you are instantiating.
+  Initialized encoder codebooks
+Loaded speech tokenizer from /Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskR_prologue_sample_2026-10-21/work/hf_english/hub/models--mlx-community--Qwen3-TTS-12Hz-1.7B-VoiceDesign-4bit/snapshots/5c390979e4b93af5f2932f90742ca99c7dd04687/speech_tokenizer
+MODEL_READY
+GENERATING midgard_01
+GENERATED midgard_01 4.16 wall 9.498892958043143 GB 4.699641273
+GENERATING midgard_02
+GENERATED midgard_02 8.72 wall 20.290883457986638 GB 5.499589917
+GENERATING midgard_03
+GENERATED midgard_03 7.28 wall 16.405119750008453 GB 5.499589917
+GENERATING midgard_04
+GENERATED midgard_04 8.4 wall 19.03421354200691 GB 5.499589917
+GENERATING helheim_01
+GENERATED helheim_01 6.8 wall 14.132569000008516 GB 5.499589917
+GENERATING helheim_02
+GENERATED helheim_02 7.28 wall 15.730856457957998 GB 5.634794793
+GENERATING helheim_03
+GENERATED helheim_03 7.12 wall 17.52453920902917 GB 5.634794793
+GENERATING helheim_04
+GENERATED helheim_04 5.76 wall 14.97951237502275 GB 5.634794793
+GENERATING vigrid_01
+GENERATED vigrid_01 8.32 wall 22.670548458001576 GB 5.634794793
+GENERATING vigrid_02
+GENERATED vigrid_02 6.8 wall 18.115210584015585 GB 5.634794793
+GENERATING vigrid_03
+GENERATED vigrid_03 7.68 wall 16.81803108402528 GB 5.634794793
+GENERATING vigrid_04
+GENERATED vigrid_04 10.48 wall 37.929676832980476 GB 5.837954025

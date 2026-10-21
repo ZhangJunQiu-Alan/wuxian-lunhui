@@ -90,7 +90,7 @@ func run():
 	calls.clear()
 	skoll.state_time = 0.61
 	skoll._update_state(0)
-	check(calls.size() == 6, "skoll summons six wolves", calls.size())
+	check(calls.size() == 10, "skoll summons ten wolves", calls.size())
 	skoll.change_state("dash")
 	skoll._dash_dir = Vector2.RIGHT
 	skoll._update_state(0.1)

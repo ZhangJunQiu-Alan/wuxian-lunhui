@@ -12,16 +12,23 @@ const PARTICLE_LIFE := 0.45
 const MAX_MARKS := 120
 const MARK_LIFE := 0.22
 const RING_LIFE := 0.35
+const MAX_RINGS := 24
 const RING := preload("res://assets/sprites/effects/frost_shockwave.png")
 const RING_RADIUS := 62.0  # 素材最后一帧冰环的半径
+const AID_FILES := {"freyja": "aid_freyja", "baldr": "aid_baldr", "ran": "aid_ran", "skadi": "aid_skadi"}
+const AID_FRAMES := 8
+const AID_FPS := 12.0
+const MAX_AID_EFFECTS := 32
 
 static var instance: FxLayer
+static var _aid_textures: Dictionary = {}
 
 var _numbers := []    # 每项是字典：pos, text, life, crit
 var _particles := []  # 每项是字典：pos, vel, life, color, size
 var _marks := []      # 每项是字典：pos, angle, length, count, kind, color, life
 var _rings := []      # 每项是字典：pos, radius, life
 var _boss_effects: Array = []
+var _aid_effects: Array = []
 var _font: Font
 
 
@@ -71,10 +78,27 @@ static func death(pos: Vector2, color: Color, elite: bool = false) -> bool:
 
 
 ## 从 pos 向外扩散的霜冻冲击波圈（素材 4 帧，越来越大），最大半径 radius
-static func ring(pos: Vector2, radius: float) -> void:
+static func ring(pos: Vector2, radius: float, opacity: float = 1.0) -> void:
 	if instance == null:
 		return
-	instance._rings.append({"pos": pos, "radius": radius, "life": RING_LIFE})
+	if instance._rings.size() >= MAX_RINGS:
+		instance._rings.pop_front()
+	instance._rings.append({"pos": pos, "radius": radius, "life": RING_LIFE, "opacity": opacity})
+
+
+static func play_aid(god_id: String, pos: Vector2) -> bool:
+	if not is_instance_valid(instance) or not AID_FILES.has(god_id):
+		return false
+	if not _aid_textures.has(god_id):
+		var path: String = "res://assets/sprites/effects/gods/" + AID_FILES[god_id] + ".png"
+		_aid_textures[god_id] = load(path) if ResourceLoader.exists(path) else null
+	var strip: Texture2D = _aid_textures[god_id]
+	if strip == null:
+		return false
+	if instance._aid_effects.size() >= MAX_AID_EFFECTS:
+		instance._aid_effects.pop_front()
+	instance._aid_effects.append({"texture": strip, "god_id": god_id, "pos": pos, "age": 0.0})
+	return true
 
 
 func _ready() -> void:
@@ -111,17 +135,22 @@ func _process(delta: float) -> void:
 	for effect in _boss_effects:
 		effect.age += delta
 	_boss_effects = _boss_effects.filter(func(effect: Dictionary) -> bool: return effect.age < effect.life)
+	for effect in _aid_effects:
+		effect.age += delta
+	_aid_effects = _aid_effects.filter(func(effect: Dictionary) -> bool: return effect.age < AID_FRAMES / AID_FPS)
 
 	queue_redraw()
 
 
 func _draw() -> void:
+	for effect in _aid_effects:
+		SpriteVisual.draw_frame(self, effect.texture, AID_FRAMES, mini(AID_FRAMES - 1, int(effect.age * AID_FPS)), effect.pos, Vector2(160, 160))
 	for effect in _boss_effects:
 		BossFx.draw(self, effect.id, effect.age, effect.pos, effect.rot, effect.scale,
 			effect.tint, effect.reverse, effect.radius, effect.half, false)
 	for r in _rings:
 		var k: float = 1.0 - r.life / RING_LIFE  # 0 → 1
-		SpriteVisual.draw_frame(self, RING, 4, mini(3, int(k * 4.0)), r.pos, Vector2(64, 64), 0.0, Vector2.ONE * r.radius / RING_RADIUS, Color(1, 1, 1, minf(1.0, 3.0 * (1.0 - k))))
+		SpriteVisual.draw_frame(self, RING, 4, mini(3, int(k * 4.0)), r.pos, Vector2(64, 64), 0.0, Vector2.ONE * r.radius / RING_RADIUS, Color(1, 1, 1, r.get("opacity", 1.0) * minf(1.0, 3.0 * (1.0 - k))))
 
 	for m in _marks:
 		_draw_mark(m)

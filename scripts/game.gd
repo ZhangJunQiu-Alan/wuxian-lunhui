@@ -56,6 +56,11 @@ var _run_recorded := false
 var _run_state := RunState.PLAYING
 var _codex := {"enemies": {}, "bosses": {}, "upgrades": {}, "quests": {}}  # 本局的图鉴记录，见 _note()
 var _map_layer: MapLayer
+## 第 3 关：本局改写的命运（id -> 是否已发生），只会从 false 变成 true；每局开始时全部清零
+var fates := {}
+var ever_faith_loki := false  # 本局实际信仰过洛基（之后不再信仰也算）
+var battle: VigridBattle      # 第 3 关的神明援助，其他关卡为 null
+var _run_result := {}         # _finish_run 冻结下来的结算数据，结局字幕和结算界面读同一份
 
 
 func _ready() -> void:
@@ -74,6 +79,14 @@ func _ready() -> void:
 	add_child(player)
 	player.died.connect(_on_player_died)
 	player.leveled_up.connect(_on_player_leveled_up)
+	player.god_added.connect(_on_god_added)
+	for id: String in level_data.get("fates", []):
+		fates[id] = false
+	if not fates.is_empty():
+		battle = VigridBattle.new()
+		battle.game = self
+		battle.player = player
+		add_child(battle)
 	MetaDB.apply(player)  # 主神空间购买的永久强化
 	add_child(SupplyDrops.new())
 	if level_data.map.has("mist"):  # 第 2 关的冥雾
@@ -152,10 +165,11 @@ func _physics_process(_delta: float) -> void:
 		return
 	for node in get_tree().get_nodes_in_group("enemies"):  # 冲锋、击退都不能把敌人推出地图，也不能穿过长屋、岩石
 		var enemy := node as Enemy
-		enemy.position = clamp_to_map(enemy.position, enemy.radius)
+		var corrected := clamp_to_map(enemy.position, enemy.radius)
 		if not enemy.ghost:
-			enemy.position = MapLayer.push_out(enemy.position, enemy.radius)
-	Enemy.rebuild_grid(get_tree())
+			corrected = MapLayer.push_out(corrected, enemy.radius)
+		if corrected != enemy.position:
+			enemy.position = corrected
 
 
 ## 把位置限制在地图里，margin 是离边缘至少多远
@@ -170,6 +184,10 @@ func _point_around(center: Vector2, distance: float) -> Vector2:
 	var inner := bounds.grow(-40.0)
 	for i in 12:
 		var p := center + Vector2.from_angle(randf() * TAU) * distance
+		if inner.has_point(p):
+			return p
+	for i in 16:
+		var p := center + Vector2.from_angle(TAU * i / 16.0) * distance
 		if inner.has_point(p):
 			return p
 	return clamp_to_map(center + Vector2.from_angle(randf() * TAU) * distance, 40.0)
@@ -228,10 +246,13 @@ func _update_events() -> void:
 func spawn_enemy(type_id: String, pos: Vector2, elite: bool = false, required: bool = false) -> Enemy:
 	if not is_running() or (not required and get_tree().get_node_count_in_group("enemies") >= level_data.max_enemies):
 		return null
-	var enemy := Enemy.new()
+	var data: Dictionary = EnemyDB.ALL[type_id]
+	var enemy: Enemy = load(data.script).new() if data.has("script") else Enemy.new()
 	enemy.setup(type_id, enemy_hp_scale(), elite, enemy_damage_scale())
 	enemy.target = player
-	enemy.position = pos
+	enemy.position = clamp_to_map(pos, enemy.radius)
+	if not enemy.ghost:
+		enemy.position = MapLayer.push_out(enemy.position, enemy.radius)
 	enemy.killed.connect(_on_enemy_killed)
 	add_child(enemy)
 	_alive_by_type[type_id] = _alive_by_type.get(type_id, 0) + 1
@@ -249,13 +270,15 @@ func _on_enemy_killed(enemy: Enemy) -> void:
 	enemy_killed.emit(enemy)
 
 
+## 关卡可以用 enemy_growth 覆盖成长系数（只有第 3 关设置了），没设置的用上面的常量
 func enemy_hp_scale() -> float:
 	var m := elapsed / 60.0
-	return 1.0 + HP_LINEAR * m + HP_SQUARE * m * m
+	var growth: Dictionary = level_data.get("enemy_growth", {})
+	return 1.0 + growth.get("hp_linear", HP_LINEAR) * m + growth.get("hp_square", HP_SQUARE) * m * m
 
 
 func enemy_damage_scale() -> float:
-	return 1.0 + DAMAGE_PER_MINUTE * elapsed / 60.0
+	return 1.0 + level_data.get("enemy_growth", {}).get("damage_per_minute", DAMAGE_PER_MINUTE) * elapsed / 60.0
 
 
 ## 不算击杀地移除一个敌人（例如逃走了），不掉经验
@@ -398,21 +421,46 @@ func add_story_points(amount: int) -> void:
 
 
 ## 一局结束：结算存活时间和通关奖励，写进存档，返回结算界面要显示的数据
+## 只结算一次：之后再调用（结局字幕跳过、重复回调）都返回第一次冻结的同一份数据
 func _finish_run(cleared: bool) -> Dictionary:
-	if not _run_recorded:
-		_run_recorded = true
-		add_reward_points(int(elapsed / 60.0) * POINTS_PER_MINUTE)
-		if cleared:
-			add_reward_points(level_data.clear_reward)
-		Save.record_codex(_codex)
-		Save.record_run(level_id, reward_points, story_points, cleared, elapsed, kills, _quests_done)
-	return {"elapsed": elapsed, "kills": kills, "level": player.level,
+	if _run_recorded:
+		return _run_result
+	_run_recorded = true
+	add_reward_points(int(elapsed / 60.0) * POINTS_PER_MINUTE)
+	if cleared:
+		add_reward_points(level_data.clear_reward + fate_count() * VigridTuning.FATE_REWARD)
+	Save.record_codex(_codex)
+	if not fates.is_empty():
+		Save.record_fates(level_id, fates, ever_faith_loki)
+	Save.record_run(level_id, reward_points, story_points, cleared, elapsed, kills, _quests_done)
+	_run_result = {"elapsed": elapsed, "kills": kills, "level": player.level,
 		"quests_done": _quests_done, "quests_seen": _quests_seen, "hidden_found": _hidden_found, "hidden_total": _hidden.size(),
 		"reward_points": reward_points, "story_points": story_points, "reward_total": Save.reward_points, "story_total": Save.story_points}
+	if not fates.is_empty():
+		_run_result.merge({"fates": fates.duplicate(), "fate_count": fate_count(), "ever_faith_loki": ever_faith_loki,
+			"has_quests": not level_data.quests.is_empty()})
+	return _run_result
+
+
+## 命运真的发生了（托尔活下来、维达介入、弗雷参战）。每种只记一次，返回这次是不是第一次
+func confirm_fate(id: String) -> bool:
+	if not is_running() or not fates.has(id) or fates[id]:
+		return false
+	fates[id] = true
+	return true
+
+
+func fate_count() -> int:
+	return fates.values().count(true)
+
+
+func _on_god_added(god_id: String) -> void:
+	if god_id == "loki":
+		ever_faith_loki = true
 
 
 func _on_boss_defeated(defeated_boss: Boss) -> void:
-	if not is_running():
+	if not is_running() or _defeated_bosses.has(defeated_boss.type_id):
 		return
 	_defeated_bosses.append(defeated_boss.type_id)
 	_note("bosses", defeated_boss.type_id, 1)
@@ -572,7 +620,33 @@ func _on_level_cleared() -> void:
 	_begin_ending()
 	_run_state = RunState.ENDED
 	Audio.music("victory")
-	hud.show_result("victory", tr(level_data.name), tr(level_data.clear_text), _finish_run(true), player)
+	var run := _finish_run(true)  # 先冻结结算并存档，结局字幕怎么推进、跳过都不会再结算一次
+	var story := tr(level_data.clear_text) if level_data.clear_text != "" else ""
+	var beats := load_ending(level_data.get("ending", ""))
+	if beats.is_empty():
+		hud.show_result("victory", tr(level_data.name), story, run, player)
+		return
+	Audio.sfx("quest_done")  # 篇章完成：整段结局只响一次
+	hud.show_ending(beats, hud.show_result.bind("victory", tr(level_data.name), story, run, player))
+
+
+## 读取篇章结局的分段字幕（K7 交接的 ending_timeline.json），字段不对就返回空数组，直接显示结算
+static func load_ending(path: String) -> PackedStringArray:
+	var beats := PackedStringArray()
+	if path == "" or not FileAccess.file_exists(path):
+		return beats
+	var data: Variant = JSON.parse_string(FileAccess.get_file_as_string(path))
+	if not data is Dictionary or data.get("format_version") != 1.0 or not data.get("beats") is Array:
+		push_error("结局字幕格式不对：" + path)
+		return beats
+	var list: Array = data.beats
+	for i in list.size():
+		var beat: Variant = list[i]
+		if not beat is Dictionary or beat.get("index") != float(i) or not beat.get("text") is String or beat.text == "":
+			push_error("结局字幕第 %d 段格式不对：%s" % [i, path])
+			return PackedStringArray()
+		beats.append(beat.text)
+	return beats
 
 
 func _on_abandon_requested() -> void:

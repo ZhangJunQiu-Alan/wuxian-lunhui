@@ -1,0 +1,130 @@
+ M assets/LICENSES.md
+ M docs/Codex美术任务书.md
+ M docs/README.md
+ M docs/archive/README.md
+ M docs/开发路线图.md
+ M docs/美术后续任务要求.md
+ M locale/text.csv
+ M scripts/bosses/boss.gd
+ M scripts/core/save_data.gd
+ M scripts/data/boss_db.gd
+ M scripts/data/codex_db.gd
+ M scripts/data/enemy_db.gd
+ M scripts/data/level_db.gd
+ M scripts/data/upgrade_db.gd
+ M scripts/effects/boss_fx.gd
+ M scripts/entities/enemy.gd
+ M scripts/entities/player.gd
+ M scripts/entities/sprite_visual.gd
+ M scripts/entities/xp_gem.gd
+ M scripts/game.gd
+ M scripts/gods/odin.gd
+ M scripts/gods/skadi.gd
+ M scripts/gods/thor.gd
+ M scripts/ui/codex_view.gd
+ M scripts/ui/hud.gd
+ M scripts/ui/level_up_panel.gd
+ M scripts/world/map_layer.gd
+ M tools/check_translations.py
+?? assets/audio/music/vigrid.ogg.import
+?? assets/audio/sfx/fenrir_swallow.wav.import
+?? assets/audio/sfx/gleipnir_tension.wav.import
+?? assets/audio/sfx/jormungandr_hiss.wav.import
+?? assets/audio/sfx/surtr_gate.wav.import
+?? assets/source/taskK_code_integration_2026-10-20/
+?? assets/source/taskK_independent_qa_2026-10-20/
+?? assets/source/taskM_vigrid_art_polish_2026-10-20/
+?? assets/sprites/effects/bosses/surtr_sword_arc_large.png
+?? assets/sprites/effects/bosses/surtr_sword_arc_large.png.import
+?? assets/sprites/effects/gods/aid_baldr.png
+?? assets/sprites/effects/gods/aid_baldr.png.import
+?? assets/sprites/effects/gods/aid_freyja.png
+?? assets/sprites/effects/gods/aid_freyja.png.import
+?? assets/sprites/effects/gods/aid_ran.png
+?? assets/sprites/effects/gods/aid_ran.png.import
+?? assets/sprites/effects/gods/aid_skadi.png
+?? assets/sprites/effects/gods/aid_skadi.png.import
+?? assets/sprites/ground/vigrid/ash_road.png
+?? assets/sprites/ground/vigrid/ash_road.png.import
+?? assets/sprites/ground/vigrid/ash_road_edge_e.png
+?? assets/sprites/ground/vigrid/ash_road_edge_e.png.import
+?? assets/sprites/ground/vigrid/ash_road_edge_inner_ne.png
+?? assets/sprites/ground/vigrid/ash_road_edge_inner_ne.png.import
+?? assets/sprites/ground/vigrid/ash_road_edge_inner_nw.png
+?? assets/sprites/ground/vigrid/ash_road_edge_inner_nw.png.import
+?? assets/sprites/ground/vigrid/ash_road_edge_inner_se.png
+?? assets/sprites/ground/vigrid/ash_road_edge_inner_se.png.import
+?? assets/sprites/ground/vigrid/ash_road_edge_inner_sw.png
+?? assets/sprites/ground/vigrid/ash_road_edge_inner_sw.png.import
+?? assets/sprites/ground/vigrid/ash_road_edge_n.png
+?? assets/sprites/ground/vigrid/ash_road_edge_n.png.import
+?? assets/sprites/ground/vigrid/ash_road_edge_outer_ne.png
+?? assets/sprites/ground/vigrid/ash_road_edge_outer_ne.png.import
+?? assets/sprites/ground/vigrid/ash_road_edge_outer_nw.png
+?? assets/sprites/ground/vigrid/ash_road_edge_outer_nw.png.import
+?? assets/sprites/ground/vigrid/ash_road_edge_outer_se.png
+?? assets/sprites/ground/vigrid/ash_road_edge_outer_se.png.import
+?? assets/sprites/ground/vigrid/ash_road_edge_outer_sw.png
+?? assets/sprites/ground/vigrid/ash_road_edge_outer_sw.png.import
+?? assets/sprites/ground/vigrid/ash_road_edge_s.png
+?? assets/sprites/ground/vigrid/ash_road_edge_s.png.import
+?? assets/sprites/ground/vigrid/ash_road_edge_w.png
+?? assets/sprites/ground/vigrid/ash_road_edge_w.png.import
+?? assets/sprites/ground/vigrid/burnt_grass_02.png
+?? assets/sprites/ground/vigrid/burnt_grass_02.png.import
+?? assets/sprites/ground/vigrid/cracked_lava_02.png
+?? assets/sprites/ground/vigrid/cracked_lava_02.png.import
+?? docs/Claude_第三关开发Prompt.md
+?? docs/Codex_第三关美术优化任务.md
+?? docs/archive/2026-10-20_任务整理记录.json
+?? docs/archive/2026-10-20_整理前_Codex美术任务书.md
+?? docs/archive/2026-10-20_整理前_归档索引.md
+?? docs/archive/2026-10-20_整理前_美术后续任务要求.md
+?? docs/images/codex_m_art/
+?? docs/已完成任务汇总.md
+?? docs/未完成任务清单.md
+?? docs/第三关代码交接_Claude.md
+?? scripts/bosses/fenrir.gd
+?? scripts/bosses/fenrir.gd.uid
+?? scripts/bosses/fire_hazard.gd
+?? scripts/bosses/fire_hazard.gd.uid
+?? scripts/bosses/jormungandr.gd
+?? scripts/bosses/jormungandr.gd.uid
+?? scripts/bosses/surtr.gd
+?? scripts/bosses/surtr.gd.uid
+?? scripts/data/vigrid_ending_timeline.json
+?? scripts/data/vigrid_tuning.gd
+?? scripts/data/vigrid_tuning.gd.uid
+?? scripts/entities/gleipnir_fragment.gd
+?? scripts/entities/gleipnir_fragment.gd.uid
+?? scripts/entities/vigrid_enemy.gd
+?? scripts/entities/vigrid_enemy.gd.uid
+?? scripts/world/vigrid_battle.gd
+?? scripts/world/vigrid_battle.gd.uid
+?? scripts/world/vigrid_map.gd
+?? scripts/world/vigrid_map.gd.uid
+?? tools/acceptance_vigrid.gd
+?? tools/acceptance_vigrid.gd.uid
+?? tools/acceptance_vigrid_run.gd
+?? tools/acceptance_vigrid_run.gd.uid
+?? tools/acceptance_vigrid_soak.gd
+?? tools/acceptance_vigrid_soak.gd.uid
+?? tools/acceptance_vigrid_visual.gd
+?? tools/acceptance_vigrid_visual.gd.uid
+?? tools/make_codex_m_art_images.py
+?? tools/playthrough_vigrid.gd
+?? tools/playthrough_vigrid.gd.uid
+?? tools/review_vigrid.gd
+?? tools/review_vigrid.gd.uid
+?? tools/review_vigrid_aid.gd
+?? tools/review_vigrid_aid.gd.uid
+?? tools/review_vigrid_codex.gd
+?? tools/review_vigrid_codex.gd.uid
+?? tools/stress_vigrid.gd
+?? tools/stress_vigrid.gd.uid
+?? tools/test_odin_density.gd
+?? tools/test_odin_density.gd.uid
+?? tools/test_skadi_balance.gd
+?? tools/test_skadi_balance.gd.uid
+?? tools/test_vigrid.gd
+?? tools/test_vigrid.gd.uid

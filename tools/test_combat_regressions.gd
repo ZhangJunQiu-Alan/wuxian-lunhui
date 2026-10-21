@@ -275,6 +275,186 @@ func _test_skills() -> void:
 	print("PASS cooldown, immunity, and unique harvest")
 
 
+func _test_ultimate_energy() -> void:
+	_clear_gods()
+	var character: String = _player.character_id
+	var cost: float = _player.ult_cost
+	var position: Vector2 = _player.position
+	for id: String in ["swordsman", "gunslinger", "assassin", "mage"]:
+		_clear_enemies()
+		_player.character_id = id
+		_player.ult_cost = load("res://scripts/data/character_db.gd").ALL[id].ult_cost
+		_player.ult_energy = _player.ult_cost
+		for i in 60:
+			var enemy = _game.spawn_enemy("draugr", _player.position + Vector2(30 + i, 0))
+			enemy.hp = 1.0
+		_player.try_ultimate()
+		var effect = _player.active_ultimate
+		_check(is_instance_valid(effect) and _player.ult_energy == 0.0, "ultimate starts empty: " + id)
+		_player.add_ult_energy(_player.ult_cost)
+		_check(_player.ult_energy == 0.0, "active ultimate blocks energy grants: " + id)
+		var victim = get_nodes_in_group("enemies")[0]
+		victim.take_damage(1000.0)
+		_check(_player.ult_energy == 0.0, "ordinary kill during ultimate grants no energy: " + id)
+		_player.ult_energy = _player.ult_cost
+		_player.try_ultimate()
+		_check(_player.active_ultimate == effect, "active ultimate cannot be recast: " + id)
+		_player.ult_energy = 0.0
+		paused = true
+		await process_frame
+		_player.add_ult_energy(1.0)
+		_check(_player.ult_energy == 0.0 and is_instance_valid(effect), "pause retains ultimate recharge lock: " + id)
+		paused = false
+		var steps := 0
+		while not effect.is_queued_for_deletion() and steps < 600:
+			if id == "gunslinger":
+				_player.frenzy_time = maxf(0.0, _player.frenzy_time - 1.0 / 60.0)
+			effect._process(1.0 / 60.0)
+			_check(_player.ult_energy == 0.0, "ultimate damage never recharges: " + id)
+			steps += 1
+		_check(effect.is_queued_for_deletion(), "ultimate finishes normally: " + id)
+		_player.add_ult_energy(1.0)
+		_check(_player.ult_energy == 0.0, "final ultimate frame remains locked: " + id)
+		await process_frame
+		_check(not is_instance_valid(_player.active_ultimate), "finished ultimate releases recharge lock: " + id)
+		_clear_enemies()
+		var after = _game.spawn_enemy("draugr", _player.position + Vector2(30, 0))
+		after.hp = 1.0
+		after.take_damage(1000.0)
+		_check(_player.ult_energy == 1.0, "kill after ultimate recharges normally: " + id)
+	_player.character_id = character
+	_player.ult_cost = cost
+	_player.position = position
+	_player.frenzy_time = 0.0
+	_player.shield_time = 0.0
+	_clear_enemies()
+	await process_frame
+	print("PASS no ultimate recharge during all four ultimates; normal recharge resumes afterward")
+
+
+func _test_skoll_encounter() -> void:
+	_clear_enemies()
+	var position: Vector2 = _player.position
+	_player.position = Vector2.ZERO
+	var boss = load("res://scripts/data/boss_db.gd").create("skoll", 1.0)
+	boss.target = _player
+	boss.spawner = _game.spawn_enemy
+	boss.position = Vector2(300, 0)
+	_game.add_child(boss)
+	await process_frame
+	_check(boss.state == "eclipse_howl" and boss.state_action() == &"howl", "Skoll opens with howl animation")
+	boss.state_time = 0.59
+	boss._update_state(0.0)
+	_check(boss._darkness.target_level == 0.0, "vision remains clear before howl release")
+	boss.state_time = 0.6
+	boss._update_state(0.0)
+	_check(boss._darkness.target_level == 1.0 and get_node_count_in_group("enemies") == 1, "opening howl triggers eclipse without summoning wolves")
+	boss._darkness._process(0.125)
+	_check(boss._darkness._level == 1.0, "howl compresses vision in 0.125 seconds")
+	boss.state_time = 1.2
+	boss._update_state(0.0)
+	_check(boss.state == "stalk" and boss.state_action() == &"move", "opening howl leads to mobile stalking")
+	var side: float = boss._stalk_side
+	var before: Vector2 = boss.position
+	boss._physics_process(0.1)
+	_check(absf(boss.position.y - before.y) > 1.0, "Skoll flanks sideways instead of chasing in a straight line")
+	for i in 50:
+		if boss.state == "stalk":
+			boss._physics_process(1.0 / 60.0)
+	_check(boss.state == "windup", "normal stalk reaches windup within one second")
+	var aim: Vector2 = boss._dash_dir
+	_player.position = Vector2(100, 100)
+	boss._physics_process(0.1)
+	_check(boss._dash_dir == aim, "charge direction remains locked after telegraph starts")
+	boss.change_state("recover")
+	boss._physics_process(0.71)
+	_check(boss.state == "stalk" and boss._stalk_side == -side, "next approach alternates flanking side")
+	var baseline = _game.spawn_enemy("wolf", Vector2(1000, 1000))
+	var health: float = baseline.max_hp
+	var damage: float = baseline.contact_damage
+	var speed: float = baseline.speed
+	boss.hp = boss.max_hp * 0.49
+	boss._update_state(0.0)
+	_check(boss._enraged and boss.state == "howl", "half health triggers summoning howl")
+	var count := get_node_count_in_group("enemies")
+	boss.state_time = 0.6
+	boss._update_state(0.0)
+	_check(get_node_count_in_group("enemies") == count + 10 and boss._howl_timer == 14.0, "half-health howl summons ten wolves with fourteen-second cooldown")
+	for wolf in get_nodes_in_group("enemies"):
+		if wolf.type_id == "wolf" and wolf != baseline:
+			_check(is_equal_approx(wolf.max_hp, health * 1.5) and wolf.hp == wolf.max_hp, "summoned wolf has fifty percent more health")
+			_check(is_equal_approx(wolf.contact_damage, damage * 1.4) and is_equal_approx(wolf.speed, speed * 1.1), "summoned wolf gains damage and speed")
+	boss._update_state(0.0)
+	_check(get_node_count_in_group("enemies") == count + 10, "howl summons once per cast")
+	_check(baseline.max_hp == health and baseline.contact_damage == damage and baseline.speed == speed, "ordinary wolves retain their stats")
+	boss.state_time = 1.2
+	boss._update_state(0.0)
+	for i in 35:
+		if boss.state == "stalk":
+			boss._physics_process(1.0 / 60.0)
+	_check(boss.state == "windup", "enraged stalk reaches windup within 0.6 seconds")
+	boss.spawner = func(_id, _at): return null
+	boss._summon_wolves()
+	_check(boss._howl_timer == 14.0, "summoning safely handles a full enemy budget")
+	var darkness = boss._darkness
+	boss._die()
+	_check(darkness.target_level == 0.0, "Skoll defeat restores vision")
+	darkness._process(1.25)
+	_check(darkness.is_queued_for_deletion(), "restored eclipse cleans itself up")
+	await process_frame
+	_clear_enemies()
+	_player.position = position
+	print("PASS Skoll flanking, howl-triggered eclipse, stronger summons and vision cleanup")
+
+
+func _test_boss_recovery() -> void:
+	var position: Vector2 = _player.position
+	_player.position = Vector2.ZERO
+	for id: String in ["skoll", "hati", "garm", "nidhogg", "hel", "fenrir", "surtr"]:
+		var boss = load("res://scripts/data/boss_db.gd").create(id, 1.0)
+		boss.target = _player
+		boss.spawner = _game.spawn_enemy
+		boss.position = Vector2(300, 0)
+		_game.add_child(boss)
+		await process_frame
+		boss.change_state("recover")
+		var before: Vector2 = boss.position
+		boss._physics_process(0.1)
+		var distance: float = before.distance_to(boss.position)
+		_check(distance > 0.0 and distance <= boss.speed * 0.1, "recovery moves slower than chase: " + id)
+		_check(boss.position.distance_to(_player.position) < before.distance_to(_player.position), "recovery closes distance: " + id)
+		_check(boss.state == "recover" and boss.state_action() == &"move", "recovery keeps skill interval with movement animation: " + id)
+		before = boss.position
+		var time: float = boss.state_time
+		boss._frozen_time = 0.5
+		boss._physics_process(0.1)
+		_check(boss.position == before and boss.state_time == time, "freeze halts recovery movement and timing: " + id)
+		boss._frozen_time = 0.0
+		boss.change_state("windup")
+		boss._physics_process(0.1)
+		_check(boss.position == before, "windup remains stationary: " + id)
+		if id == "garm":
+			boss.change_state("recover")
+			boss._anchor = Vector2.ZERO
+			boss.position = Vector2(boss.CHAIN_RANGE, 0)
+			_player.position = Vector2(1000, 0)
+			boss._physics_process(0.1)
+			_check(boss.position.length() <= boss.CHAIN_RANGE + 0.001, "Garm recovery respects chain range")
+			_player.position = Vector2.ZERO
+		if id in ["nidhogg", "fenrir"]:
+			boss.change_state("stagger")
+			before = boss.position
+			boss._physics_process(0.1)
+			_check(boss.position == before, "stagger remains a stationary punish window: " + id)
+		if id == "skoll":
+			boss._darkness.queue_free()
+		boss.free()
+		_clear_enemies()
+		await process_frame
+	_player.position = position
+	print("PASS mobile Boss recovery, movement animations, freeze, windups, stagger and chain limits")
+
+
 func _test_static() -> void:
 	_player.add_god("thor")
 	var thor = _player.gods.thor
@@ -427,6 +607,9 @@ func _run() -> void:
 	_test_queries()
 	_test_zone()
 	await _test_skills()
+	await _test_ultimate_energy()
+	await _test_skoll_encounter()
+	await _test_boss_recovery()
 	_test_static()
 	await _test_spawn_budget()
 	await _test_ending()

@@ -14,6 +14,7 @@ class_name EnemyDB
 ##   dodge     被打中时闪避的几率（闪开后 DODGE_COOLDOWN 秒内不会再闪）
 ##   split     死亡时分裂成哪种敌人，split_count 分裂几只
 ##   sprite_dir 素材不在 enemies/ 里时写素材所在的文件夹（Boss 战里要打断的锁桩）；sprite 是素材文件名和 id 不一样时的文件名
+##   script    有专属行为的敌人用的脚本（继承 Enemy），没有就是普通 Enemy
 
 const ALL := {
 	# ———— 篇章一 · 第 1 关「芬布尔之冬」————
@@ -57,6 +58,19 @@ const ALL := {
 	# 隐藏支线「不肯哭泣的女巨人」：诡计之神变的老女巨人
 	"thokk": {"name": "不肯哭泣的女巨人", "hp": 90.0, "speed": 70.0, "damage": 14.0, "radius": 20.0, "xp": 10,
 		"color": Color(0.55, 0.45, 0.4), "mass": 4.0, "gait": "heavy"},
+
+	# ———— 篇章一 · 第 3 关「最后之战」（亡者复用第 2 关的 dead）————
+	# 专属行为在 vigrid_enemy.gd：火焰巨人死亡爆炸留下火焰地面，霜巨人精锐冲锋 / 正面举盾，狂狼战士低血量狂暴
+	# foot 是素材清单里的脚锚（帧内像素），K 素材按它把脚对齐到 MapLayer.FOOT
+	"fire_giant": {"name": "火焰巨人", "hp": 40.0, "speed": 50.0, "damage": 16.0, "radius": 22.0, "xp": 5,
+		"color": Color(0.95, 0.45, 0.2), "mass": 4.0, "gait": "heavy", "attack": "slam",
+		"script": "res://scripts/entities/vigrid_enemy.gd", "foot": Vector2(48, 94)},
+	"frost_veteran": {"name": "霜巨人精锐", "hp": 60.0, "speed": 52.0, "damage": 18.0, "radius": 22.0, "xp": 6,
+		"color": Color(0.5, 0.62, 0.9), "mass": 4.5, "gait": "heavy",
+		"script": "res://scripts/entities/vigrid_enemy.gd", "foot": Vector2(48, 94)},
+	"wolf_berserker": {"name": "狂狼战士", "hp": 12.0, "speed": 100.0, "damage": 7.0, "radius": 12.0, "xp": 2,
+		"color": Color(0.6, 0.5, 0.42),
+		"script": "res://scripts/entities/vigrid_enemy.gd", "foot": Vector2(32, 62)},
 }
 
 ## 精英怪的属性倍率

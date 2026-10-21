@@ -1,0 +1,17 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+PASS duplicate Boss defeat callbacks
+PASS map movement obstacles roads and enemy spawn
+PASS actual damage sampling: mouth / bind / firewall / 64-grid
+PAUSE_MEASURE wall=59.825 encounter=89.0 level=269.0
+ERROR: K7 paused60seconds
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] _check (res://tools/test_vigrid.gd:30)
+       [1] _case (res://tools/acceptance_vigrid.gd:186)
+       [2] _test_real_pause (res://tools/acceptance_vigrid.gd:205)
+FAIL real sixty-second pause / fate deadlines
+PASS K7 28-case actual ending workflow
+PASS result return and restart
+PASS cleanup
+INDEPENDENT_RESULT 2063 checks 1 failures cases=28/28

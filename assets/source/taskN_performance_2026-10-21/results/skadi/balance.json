@@ -1,0 +1,144 @@
+{
+	"checks": 11,
+	"failures": 0,
+	"log": [
+		{
+			"check": "winter damage reduced at cooldown 1.0 ice 0.0",
+			"pass": true,
+			"section": "winter damage/frost/ice stacking before vs after"
+		},
+		{
+			"check": "winter base-DPS cap: 3.20",
+			"pass": true,
+			"section": "winter damage/frost/ice stacking before vs after"
+		},
+		{
+			"check": "winter damage reduced at cooldown 1.0 ice 9.0",
+			"pass": true,
+			"section": "winter damage/frost/ice stacking before vs after"
+		},
+		{
+			"check": "winter base-DPS cap: 3.20",
+			"pass": true,
+			"section": "winter damage/frost/ice stacking before vs after"
+		},
+		{
+			"check": "stationary ice refreshes one zone, does not stack: 1",
+			"pass": true,
+			"section": "winter damage/frost/ice stacking before vs after"
+		},
+		{
+			"check": "winter damage reduced at cooldown 0.1 ice 0.0",
+			"pass": true,
+			"section": "winter damage/frost/ice stacking before vs after"
+		},
+		{
+			"check": "winter base-DPS cap: 5.20",
+			"pass": true,
+			"section": "winter damage/frost/ice stacking before vs after"
+		},
+		{
+			"check": "winter damage reduced at cooldown 0.1 ice 9.0",
+			"pass": true,
+			"section": "winter damage/frost/ice stacking before vs after"
+		},
+		{
+			"check": "winter base-DPS cap: 5.20",
+			"pass": true,
+			"section": "winter damage/frost/ice stacking before vs after"
+		},
+		{
+			"check": "stationary ice refreshes one zone, does not stack: 1",
+			"pass": true,
+			"section": "winter damage/frost/ice stacking before vs after"
+		},
+		{
+			"check": "full-screen awakened radius preserved",
+			"pass": true,
+			"section": "winter damage/frost/ice stacking before vs after"
+		}
+	],
+	"measurements": [
+		{
+			"awakened_radius": 700.0,
+			"cooldown": 1.0,
+			"damage": 115.199999999983,
+			"dps": 9.59999999999854,
+			"frozen_frame_fraction": 1.0,
+			"icefield": 0.0,
+			"max_ice_patches": 0,
+			"version": "before"
+		},
+		{
+			"awakened_radius": 700.0,
+			"cooldown": 1.0,
+			"damage": 115.199999999983,
+			"dps": 9.59999999999854,
+			"frozen_frame_fraction": 1.0,
+			"icefield": 9.0,
+			"max_ice_patches": 22,
+			"version": "before"
+		},
+		{
+			"awakened_radius": 700.0,
+			"cooldown": 0.1,
+			"damage": 863.999999999869,
+			"dps": 71.9999999999891,
+			"frozen_frame_fraction": 1.0,
+			"icefield": 0.0,
+			"max_ice_patches": 0,
+			"version": "before"
+		},
+		{
+			"awakened_radius": 700.0,
+			"cooldown": 0.1,
+			"damage": 863.999999999869,
+			"dps": 71.9999999999891,
+			"frozen_frame_fraction": 1.0,
+			"icefield": 9.0,
+			"max_ice_patches": 22,
+			"version": "before"
+		},
+		{
+			"awakened_radius": 700.0,
+			"cooldown": 1.0,
+			"damage": 38.3999999999942,
+			"dps": 3.19999999999951,
+			"frozen_frame_fraction": 0.375,
+			"icefield": 0.0,
+			"max_ice_patches": 0,
+			"version": "after"
+		},
+		{
+			"awakened_radius": 700.0,
+			"cooldown": 1.0,
+			"damage": 38.3999999999942,
+			"dps": 3.19999999999951,
+			"frozen_frame_fraction": 0.883333333333333,
+			"icefield": 9.0,
+			"max_ice_patches": 1,
+			"version": "after"
+		},
+		{
+			"awakened_radius": 700.0,
+			"cooldown": 0.1,
+			"damage": 62.3999999999905,
+			"dps": 5.19999999999921,
+			"frozen_frame_fraction": 0.566666666666667,
+			"icefield": 0.0,
+			"max_ice_patches": 0,
+			"version": "after"
+		},
+		{
+			"awakened_radius": 700.0,
+			"cooldown": 0.1,
+			"damage": 62.3999999999905,
+			"dps": 5.19999999999921,
+			"frozen_frame_fraction": 0.922222222222222,
+			"icefield": 9.0,
+			"max_ice_patches": 1,
+			"version": "after"
+		}
+	],
+	"scope": "controlled 12-second actual damage simulations; enemy has 10000 HP, no criticals, max chill, unchanged global multiplier; before script retained verbatim"
+}

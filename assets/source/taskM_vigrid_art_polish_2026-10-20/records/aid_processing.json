@@ -1,0 +1,674 @@
+[
+  {
+    "id": "aid_freyja",
+    "source_size": [
+      1774,
+      887
+    ],
+    "source_sha256": "06a2f4f83416ccebb6db02a50650f25b9e2d1e3a61a29dffe92a7e04a196f60a",
+    "palette_limit": 48,
+    "alpha_levels": [
+      0,
+      24,
+      48,
+      72,
+      112,
+      152,
+      192,
+      216
+    ],
+    "radius": 140,
+    "frames": [
+      {
+        "frame": 1,
+        "source_cell": 0,
+        "source_center": [
+          229.5,
+          215.5
+        ],
+        "source_extent": 182.5,
+        "uniform_scale": 0.5753424657534246,
+        "target_extent": 105,
+        "target_center": [
+          160,
+          142
+        ],
+        "alpha_gain": 0.62,
+        "max_alpha": 152,
+        "center_alpha_max": 152,
+        "nonzero_pixels": 9246,
+        "max_visible_radius": 126.11502686040232
+      },
+      {
+        "frame": 2,
+        "source_cell": 1,
+        "source_center": [
+          228.0,
+          218.0
+        ],
+        "source_extent": 160.0,
+        "uniform_scale": 0.75,
+        "target_extent": 120,
+        "target_center": [
+          160,
+          156
+        ],
+        "alpha_gain": 0.76,
+        "max_alpha": 192,
+        "center_alpha_max": 192,
+        "nonzero_pixels": 18459,
+        "max_visible_radius": 134.73678042761748
+      },
+      {
+        "frame": 3,
+        "source_cell": 2,
+        "source_center": [
+          216.5,
+          220.5
+        ],
+        "source_extent": 198.45266027110608,
+        "uniform_scale": 0.38094727426038477,
+        "target_extent": 70.0,
+        "target_center": [
+          160,
+          160
+        ],
+        "alpha_gain": 0.74,
+        "max_alpha": 192,
+        "center_alpha_max": 112,
+        "nonzero_pixels": 4577,
+        "max_visible_radius": 80.60397012554654
+      },
+      {
+        "frame": 4,
+        "source_cell": 3,
+        "source_center": [
+          218.0,
+          225.5
+        ],
+        "source_extent": 210.4513126558943,
+        "uniform_scale": 0.5747647685038669,
+        "target_extent": 112.0,
+        "target_center": [
+          160,
+          160
+        ],
+        "alpha_gain": 0.86,
+        "max_alpha": 216,
+        "center_alpha_max": 112,
+        "nonzero_pixels": 16904,
+        "max_visible_radius": 128.70120434556935
+      },
+      {
+        "frame": 5,
+        "source_cell": 4,
+        "source_center": [
+          225.0,
+          214.0
+        ],
+        "source_extent": 206.62163485403133,
+        "uniform_scale": 0.7317723533976287,
+        "target_extent": 140.0,
+        "target_center": [
+          160,
+          160
+        ],
+        "alpha_gain": 0.86,
+        "max_alpha": 216,
+        "center_alpha_max": 0,
+        "nonzero_pixels": 32957,
+        "max_visible_radius": 145.52319402761884
+      },
+      {
+        "frame": 6,
+        "source_cell": 5,
+        "source_center": [
+          222.0,
+          219.0
+        ],
+        "source_extent": 206.6583652227564,
+        "uniform_scale": 0.7316422920360471,
+        "target_extent": 140.0,
+        "target_center": [
+          160,
+          160
+        ],
+        "alpha_gain": 0.63,
+        "max_alpha": 152,
+        "center_alpha_max": 112,
+        "nonzero_pixels": 23390,
+        "max_visible_radius": 145.34441853748632
+      },
+      {
+        "frame": 7,
+        "source_cell": 6,
+        "source_center": [
+          221.5,
+          226.5
+        ],
+        "source_extent": 216.96691139440395,
+        "uniform_scale": 0.6550676279925409,
+        "target_extent": 131.6,
+        "target_center": [
+          160,
+          160
+        ],
+        "alpha_gain": 0.26,
+        "max_alpha": 72,
+        "center_alpha_max": 0,
+        "nonzero_pixels": 3763,
+        "max_visible_radius": 144.22205101855957
+      },
+      {
+        "frame": 8,
+        "empty": true,
+        "operation": "required transparent terminal frame"
+      }
+    ],
+    "operations": "4x2 source cells; whole-frame uniform NN registration; identity palette normalization; low-alpha haze removal; terminal blank; no new painted spatial detail"
+  },
+  {
+    "id": "aid_baldr",
+    "source_size": [
+      1774,
+      887
+    ],
+    "source_sha256": "c9af92f006210c3f7e0077b48e58c1d400315ae139afa5da9e6b29239f87a589",
+    "palette_limit": 48,
+    "alpha_levels": [
+      0,
+      24,
+      48,
+      72,
+      112,
+      152,
+      192,
+      216
+    ],
+    "radius": 110,
+    "frames": [
+      {
+        "frame": 1,
+        "source_cell": 0,
+        "source_center": [
+          224.5,
+          335.0
+        ],
+        "source_extent": 167.5,
+        "uniform_scale": 0.33432835820895523,
+        "target_extent": 56,
+        "target_center": [
+          160,
+          128
+        ],
+        "alpha_gain": 0.62,
+        "max_alpha": 152,
+        "center_alpha_max": 152,
+        "nonzero_pixels": 1315,
+        "max_visible_radius": 144.12494579357175
+      },
+      {
+        "frame": 2,
+        "source_cell": 1,
+        "source_center": [
+          222.5,
+          365.0
+        ],
+        "source_extent": 182.5,
+        "uniform_scale": 0.39452054794520547,
+        "target_extent": 72,
+        "target_center": [
+          160,
+          160
+        ],
+        "alpha_gain": 0.76,
+        "max_alpha": 192,
+        "center_alpha_max": 192,
+        "nonzero_pixels": 2796,
+        "max_visible_radius": 144.08677940741129
+      },
+      {
+        "frame": 3,
+        "source_cell": 2,
+        "source_center": [
+          221.5,
+          253.0
+        ],
+        "source_extent": 115.00108695138495,
+        "uniform_scale": 0.6552111984111345,
+        "target_extent": 55.0,
+        "target_center": [
+          160,
+          160
+        ],
+        "alpha_gain": 0.74,
+        "max_alpha": 192,
+        "center_alpha_max": 112,
+        "nonzero_pixels": 4164,
+        "max_visible_radius": 78.49203781276162
+      },
+      {
+        "frame": 4,
+        "source_cell": 3,
+        "source_center": [
+          222.5,
+          230.5
+        ],
+        "source_extent": 161.50696579404865,
+        "uniform_scale": 0.7464693513822579,
+        "target_extent": 88.0,
+        "target_center": [
+          160,
+          160
+        ],
+        "alpha_gain": 0.86,
+        "max_alpha": 216,
+        "center_alpha_max": 0,
+        "nonzero_pixels": 6961,
+        "max_visible_radius": 115.0173899895142
+      },
+      {
+        "frame": 5,
+        "source_cell": 4,
+        "source_center": [
+          221.5,
+          216.0
+        ],
+        "source_extent": 192.50259738507427,
+        "uniform_scale": 0.7828465799791051,
+        "target_extent": 110.0,
+        "target_center": [
+          160,
+          160
+        ],
+        "alpha_gain": 0.86,
+        "max_alpha": 216,
+        "center_alpha_max": 0,
+        "nonzero_pixels": 7382,
+        "max_visible_radius": 115.43396380615195
+      },
+      {
+        "frame": 6,
+        "source_cell": 5,
+        "source_center": [
+          221.0,
+          215.0
+        ],
+        "source_extent": 195.26325685934253,
+        "uniform_scale": 0.7717785845831531,
+        "target_extent": 110.0,
+        "target_center": [
+          160,
+          160
+        ],
+        "alpha_gain": 0.63,
+        "max_alpha": 152,
+        "center_alpha_max": 0,
+        "nonzero_pixels": 6239,
+        "max_visible_radius": 115.36463929644994
+      },
+      {
+        "frame": 7,
+        "source_cell": 6,
+        "source_center": [
+          220.0,
+          211.5
+        ],
+        "source_extent": 180.1879285587081,
+        "uniform_scale": 0.7861680920198023,
+        "target_extent": 103.39999999999999,
+        "target_center": [
+          160,
+          160
+        ],
+        "alpha_gain": 0.26,
+        "max_alpha": 72,
+        "center_alpha_max": 0,
+        "nonzero_pixels": 1426,
+        "max_visible_radius": 114.35471131527551
+      },
+      {
+        "frame": 8,
+        "empty": true,
+        "operation": "required transparent terminal frame"
+      }
+    ],
+    "operations": "4x2 source cells; whole-frame uniform NN registration; identity palette normalization; low-alpha haze removal; terminal blank; no new painted spatial detail"
+  },
+  {
+    "id": "aid_ran",
+    "source_size": [
+      1774,
+      887
+    ],
+    "source_sha256": "812198480ecfd8a074bb62e894f842b0eb3280de758b6e44e0f208c17cd1aa30",
+    "palette_limit": 48,
+    "alpha_levels": [
+      0,
+      24,
+      48,
+      72,
+      112,
+      152,
+      192,
+      216
+    ],
+    "radius": 130,
+    "frames": [
+      {
+        "frame": 1,
+        "source_cell": 0,
+        "source_center": [
+          220.5,
+          220.5
+        ],
+        "source_extent": 172.5,
+        "uniform_scale": 0.6086956521739131,
+        "target_extent": 105,
+        "target_center": [
+          160,
+          142
+        ],
+        "alpha_gain": 0.62,
+        "max_alpha": 152,
+        "center_alpha_max": 152,
+        "nonzero_pixels": 10887,
+        "max_visible_radius": 123.03657992645927
+      },
+      {
+        "frame": 2,
+        "source_cell": 1,
+        "source_center": [
+          235.0,
+          215.0
+        ],
+        "source_extent": 172.0,
+        "uniform_scale": 0.6976744186046512,
+        "target_extent": 120,
+        "target_center": [
+          160,
+          156
+        ],
+        "alpha_gain": 0.76,
+        "max_alpha": 192,
+        "center_alpha_max": 192,
+        "nonzero_pixels": 19214,
+        "max_visible_radius": 124.67958934805648
+      },
+      {
+        "frame": 3,
+        "source_cell": 2,
+        "source_center": [
+          216.0,
+          260.0
+        ],
+        "source_extent": 126.68792301055267,
+        "uniform_scale": 0.5746404098355611,
+        "target_extent": 65.0,
+        "target_center": [
+          160,
+          160
+        ],
+        "alpha_gain": 0.74,
+        "max_alpha": 192,
+        "center_alpha_max": 112,
+        "nonzero_pixels": 7079,
+        "max_visible_radius": 76.00657866263946
+      },
+      {
+        "frame": 4,
+        "source_cell": 3,
+        "source_center": [
+          215.0,
+          238.5
+        ],
+        "source_extent": 182.92257920358338,
+        "uniform_scale": 0.6367721278976927,
+        "target_extent": 104.0,
+        "target_center": [
+          160,
+          160
+        ],
+        "alpha_gain": 0.86,
+        "max_alpha": 216,
+        "center_alpha_max": 112,
+        "nonzero_pixels": 17025,
+        "max_visible_radius": 121.82774724995944
+      },
+      {
+        "frame": 5,
+        "source_cell": 4,
+        "source_center": [
+          220.0,
+          214.0
+        ],
+        "source_extent": 208.18141068857392,
+        "uniform_scale": 0.6993900152680217,
+        "target_extent": 130.0,
+        "target_center": [
+          160,
+          160
+        ],
+        "alpha_gain": 0.86,
+        "max_alpha": 216,
+        "center_alpha_max": 112,
+        "nonzero_pixels": 27244,
+        "max_visible_radius": 135.50645741070792
+      },
+      {
+        "frame": 6,
+        "source_cell": 5,
+        "source_center": [
+          212.5,
+          215.0
+        ],
+        "source_extent": 208.70613311544057,
+        "uniform_scale": 0.6976316307842522,
+        "target_extent": 130.0,
+        "target_center": [
+          160,
+          160
+        ],
+        "alpha_gain": 0.63,
+        "max_alpha": 152,
+        "center_alpha_max": 112,
+        "nonzero_pixels": 17263,
+        "max_visible_radius": 135.35878250043476
+      },
+      {
+        "frame": 7,
+        "source_cell": 6,
+        "source_center": [
+          222.0,
+          217.5
+        ],
+        "source_extent": 197.46202166492674,
+        "uniform_scale": 0.6931155613925826,
+        "target_extent": 122.19999999999999,
+        "target_center": [
+          160,
+          160
+        ],
+        "alpha_gain": 0.26,
+        "max_alpha": 72,
+        "center_alpha_max": 0,
+        "nonzero_pixels": 4878,
+        "max_visible_radius": 134.45073447177595
+      },
+      {
+        "frame": 8,
+        "empty": true,
+        "operation": "required transparent terminal frame"
+      }
+    ],
+    "operations": "4x2 source cells; whole-frame uniform NN registration; identity palette normalization; low-alpha haze removal; terminal blank; no new painted spatial detail"
+  },
+  {
+    "id": "aid_skadi",
+    "source_size": [
+      1774,
+      887
+    ],
+    "source_sha256": "10d3125bdbc8e3abbc93f5e773249a5675391843511228f8cf299d6f0d03eaf2",
+    "palette_limit": 48,
+    "alpha_levels": [
+      0,
+      24,
+      48,
+      72,
+      112,
+      152,
+      192,
+      216
+    ],
+    "radius": 130,
+    "frames": [
+      {
+        "frame": 1,
+        "source_cell": 0,
+        "source_center": [
+          220.5,
+          219.0
+        ],
+        "source_extent": 201.0,
+        "uniform_scale": 0.5223880597014925,
+        "target_extent": 105,
+        "target_center": [
+          160,
+          142
+        ],
+        "alpha_gain": 0.62,
+        "max_alpha": 152,
+        "center_alpha_max": 152,
+        "nonzero_pixels": 7240,
+        "max_visible_radius": 136.5283853270081
+      },
+      {
+        "frame": 2,
+        "source_cell": 1,
+        "source_center": [
+          238.0,
+          227.0
+        ],
+        "source_extent": 176.0,
+        "uniform_scale": 0.6818181818181818,
+        "target_extent": 120,
+        "target_center": [
+          160,
+          156
+        ],
+        "alpha_gain": 0.76,
+        "max_alpha": 192,
+        "center_alpha_max": 192,
+        "nonzero_pixels": 15128,
+        "max_visible_radius": 143.75326083258076
+      },
+      {
+        "frame": 3,
+        "source_cell": 2,
+        "source_center": [
+          221.0,
+          258.0
+        ],
+        "source_extent": 158.7522598113891,
+        "uniform_scale": 0.4094429904634139,
+        "target_extent": 65.0,
+        "target_center": [
+          160,
+          160
+        ],
+        "alpha_gain": 0.74,
+        "max_alpha": 192,
+        "center_alpha_max": 112,
+        "nonzero_pixels": 4279,
+        "max_visible_radius": 68.30812543175226
+      },
+      {
+        "frame": 4,
+        "source_cell": 3,
+        "source_center": [
+          217.5,
+          232.5
+        ],
+        "source_extent": 218.154485813474,
+        "uniform_scale": 0.47672638778063847,
+        "target_extent": 104.0,
+        "target_center": [
+          160,
+          160
+        ],
+        "alpha_gain": 0.86,
+        "max_alpha": 216,
+        "center_alpha_max": 112,
+        "nonzero_pixels": 10998,
+        "max_visible_radius": 112.36102527122117
+      },
+      {
+        "frame": 5,
+        "source_cell": 4,
+        "source_center": [
+          222.5,
+          216.0
+        ],
+        "source_extent": 205.42482806995753,
+        "uniform_scale": 0.6328348974240272,
+        "target_extent": 130.0,
+        "target_center": [
+          160,
+          160
+        ],
+        "alpha_gain": 0.86,
+        "max_alpha": 216,
+        "center_alpha_max": 0,
+        "nonzero_pixels": 23281,
+        "max_visible_radius": 134.6291201783626
+      },
+      {
+        "frame": 6,
+        "source_cell": 5,
+        "source_center": [
+          222.5,
+          215.0
+        ],
+        "source_extent": 221.961729208447,
+        "uniform_scale": 0.5856865526485217,
+        "target_extent": 130.0,
+        "target_center": [
+          160,
+          160
+        ],
+        "alpha_gain": 0.63,
+        "max_alpha": 152,
+        "center_alpha_max": 112,
+        "nonzero_pixels": 17926,
+        "max_visible_radius": 135.28118864054971
+      },
+      {
+        "frame": 7,
+        "source_cell": 6,
+        "source_center": [
+          221.5,
+          217.5
+        ],
+        "source_extent": 197.0464409754677,
+        "uniform_scale": 0.6201583717780211,
+        "target_extent": 122.19999999999999,
+        "target_center": [
+          160,
+          160
+        ],
+        "alpha_gain": 0.26,
+        "max_alpha": 72,
+        "center_alpha_max": 48,
+        "nonzero_pixels": 5764,
+        "max_visible_radius": 124.33824833895642
+      },
+      {
+        "frame": 8,
+        "empty": true,
+        "operation": "required transparent terminal frame"
+      }
+    ],
+    "operations": "4x2 source cells; whole-frame uniform NN registration; identity palette normalization; low-alpha haze removal; terminal blank; no new painted spatial detail"
+  }
+]

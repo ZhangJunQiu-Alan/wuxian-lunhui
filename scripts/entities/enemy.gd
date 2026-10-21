@@ -20,10 +20,11 @@ const DROWN_AREA_BONUS := 0.2  # 溺水的敌人受到的范围伤害 +20%
 const GOLD_NET_BONUS := 0.5    # 澜觉醒「安德瓦利的黄金」：金网里的敌人受到的伤害 +50%
 const CHARM_HIT_EVERY := 0.5   # 迷惑的敌人每隔多久咬一次同伴
 
-## 网格坐标 -> 该格里的敌人。物理帧开始时重建，移动与生命周期变化时同步更新；推挤和技能查询共用
+## 网格坐标 -> 该格里的敌人。出生、移动与生命周期变化时同步更新；推挤和技能查询共用
 static var _grid := {}
 static var _indexed_enemies := {}
 static var _max_radius := 0.0
+static var spatial_revision := 0
 static var crit_chance := 0.0  # 通用卡「暴击」：对敌人的所有伤害都有这个几率翻倍，每局开始时清零
 
 var type_id := ""
@@ -86,6 +87,8 @@ var _anim_t := randf() * 10.0  # 程序动画的时间，随机起点让怪物�
 var _dead := false
 var _indexed := false
 var _grid_cell := Vector2i.ZERO
+var _indexed_position := Vector2.INF
+var _indexed_radius := -1.0
 
 
 static func rebuild_grid(tree: SceneTree) -> void:
@@ -101,10 +104,17 @@ static func rebuild_grid(tree: SceneTree) -> void:
 
 func update_spatial_index() -> void:
 	if _dead or not is_inside_tree() or not is_in_group("enemies"):
+		spatial_revision += 1
 		_remove_from_grid()
 		return
+	var at := global_position
+	if _indexed and at == _indexed_position and radius == _indexed_radius:
+		return
+	spatial_revision += 1
+	_indexed_position = at
+	_indexed_radius = radius
 	_max_radius = maxf(_max_radius, radius)
-	var cell := Vector2i((global_position / GRID_CELL).floor())
+	var cell := Vector2i((at / GRID_CELL).floor())
 	if _indexed and cell == _grid_cell:
 		return
 	_remove_from_grid()
@@ -134,27 +144,28 @@ func _notification(what: int) -> void:
 
 func _exit_tree() -> void:
 	_remove_from_grid()
+	if radius >= _max_radius:
+		_max_radius = 0.0
+		for enemy: Enemy in _indexed_enemies:
+			_max_radius = maxf(_max_radius, enemy.radius)
 
 
-static func _candidates(rect: Rect2) -> Array[Enemy]:
-	var result: Array[Enemy] = []
+static func _candidates(rect: Rect2) -> Array:
+	var result: Array = []
 	var first := Vector2i((rect.position / GRID_CELL).floor())
 	var last := Vector2i((rect.end / GRID_CELL).floor())
 	if (last.x - first.x + 1) * (last.y - first.y + 1) > _indexed_enemies.size():
-		for enemy: Enemy in _indexed_enemies:
-			result.append(enemy)
-		return result
+		return _indexed_enemies.keys()
 	for x in range(first.x, last.x + 1):
 		for y in range(first.y, last.y + 1):
-			for enemy: Enemy in _grid.get(Vector2i(x, y), []):
-				result.append(enemy)
+			result.append_array(_grid.get(Vector2i(x, y), []))
 	return result
 
 
 static func query_radius(center: Vector2, reach: float) -> Array[Enemy]:
 	var result: Array[Enemy] = []
 	var padding := Vector2.ONE * (reach + _max_radius)
-	for enemy in _candidates(Rect2(center - padding, padding * 2.0)):
+	for enemy: Enemy in _candidates(Rect2(center - padding, padding * 2.0)):
 		if enemy.global_position.distance_squared_to(center) <= (reach + enemy.radius) * (reach + enemy.radius):
 			result.append(enemy)
 	return result
@@ -164,7 +175,7 @@ static func query_line(a: Vector2, b: Vector2, width: float) -> Array[Enemy]:
 	var result: Array[Enemy] = []
 	var half := width * 0.5
 	var rect := Rect2(a.min(b), (b - a).abs()).grow(half + _max_radius)
-	for enemy in _candidates(rect):
+	for enemy: Enemy in _candidates(rect):
 		var closest := Geometry2D.get_closest_point_to_segment(enemy.global_position, a, b)
 		if closest.distance_squared_to(enemy.global_position) <= (half + enemy.radius) * (half + enemy.radius):
 			result.append(enemy)
@@ -552,13 +563,14 @@ func _drain_move(dir: Vector2, dist: float, delta: float) -> Vector2:
 ## 推挤：和周围重叠的敌人互相推开，越重的越不容易被推动
 func _separation() -> Vector2:
 	var push := Vector2.ZERO
-	var cell := Vector2i((global_position / GRID_CELL).floor())
+	var at := global_position
+	var cell := Vector2i((at / GRID_CELL).floor())
 	for x in range(cell.x - 1, cell.x + 2):
 		for y in range(cell.y - 1, cell.y + 2):
 			for other: Enemy in _grid.get(Vector2i(x, y), []):
 				if other == self:
 					continue
-				var offset := global_position - other.global_position
+				var offset := at - other.global_position
 				var overlap := radius + other.radius - offset.length()
 				if overlap <= 0.0:
 					continue
@@ -713,6 +725,6 @@ func draw_status() -> void:
 	if has_status("shock"):
 		var t := Time.get_ticks_msec() * 0.02
 		draw_polyline(PackedVector2Array([top + Vector2(-6, -2), top + Vector2(-1, 2 + sin(t)), top + Vector2(2, -3), top + Vector2(6, 1)]), Color(0.6, 0.85, 1.0, 0.9), 1.5)
-	var runes := stack_count("rune")
+	var runes := mini(stack_count("rune"), 3)
 	for i in runes:
 		draw_circle(top + Vector2((i - (runes - 1) * 0.5) * 6.0, -6.0), 2.0, Color(0.8, 0.6, 1.0))

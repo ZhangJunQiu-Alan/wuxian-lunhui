@@ -1,0 +1,56 @@
+{
+	"captures": [
+		{
+			"camera_inside_map": true,
+			"camera_world_rect": [
+				-520.0,
+				-360.0,
+				1280.0,
+				720.0
+			],
+			"file": "swallow_revived.png",
+			"forced_render": true,
+			"master_muted": true,
+			"note": "Actual fatal swallow through Player.take_damage and Game revive callback; invincibility explicitly disabled before hit",
+			"ok": true,
+			"window": [
+				1280,
+				720
+			]
+		},
+		{
+			"camera_inside_map": true,
+			"camera_world_rect": [
+				-520.0,
+				-360.0,
+				1280.0,
+				720.0
+			],
+			"file": "swallow_death_result.png",
+			"forced_render": true,
+			"master_muted": true,
+			"note": "Actual fatal swallow with zero revives, death animation and result; no synthetic died signal",
+			"ok": true,
+			"window": [
+				1280,
+				720
+			]
+		}
+	],
+	"checks": [
+		{
+			"name": "real swallow consumes one revive and restores half HP",
+			"pass": true
+		},
+		{
+			"name": "real swallow without revive begins death",
+			"pass": true
+		},
+		{
+			"name": "death settles exactly once despite repeated callbacks",
+			"pass": true
+		}
+	],
+	"failures": 0,
+	"scope": "controlled real-renderer normal damage, no invincibility for fatal hits, Master muted"
+}

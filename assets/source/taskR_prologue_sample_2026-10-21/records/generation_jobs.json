@@ -1,0 +1,244 @@
+[
+  {
+    "id": "village_v01",
+    "tool": "image_gen.imagegen",
+    "native_path": "/Users/zhangjunqiu/.codex/generated_images/01a14377-c537-7a10-b5df-10043f63fbe0/exec-c28ac8b0-a3b2-4aa3-ac41-e65a033df0d8.png",
+    "project_original": "originals/village_v01.png",
+    "prompt": "prompts/village_v01.txt",
+    "references": [
+      "assets/source/taskP_guard_thunder_2026-10-21/previews/environment/midgard_village_before.png"
+    ],
+    "status": "rejected",
+    "notes": "Composition and architecture coherent; texture is closer to rendered realism than the intended visibly painted storybook. Revise painterly treatment before approval."
+  },
+  {
+    "id": "village_v02",
+    "tool": "image_gen.imagegen",
+    "native_path": "/Users/zhangjunqiu/.codex/generated_images/01a14377-c537-7a10-b5df-10043f63fbe0/exec-0716662a-3a8a-4214-8f73-c863283363bb.png",
+    "project_original": "originals/village_v02.png",
+    "prompt": "prompts/village_v02.txt",
+    "references": [
+      "originals/village_v01.png"
+    ],
+    "status": "selected_for_sequence",
+    "notes": "Visible brush planes; same project architecture and composition. Final moving camera and subtitle review pending."
+  },
+  {
+    "id": "sky_v01",
+    "tool": "image_gen.imagegen",
+    "native_path": "/Users/zhangjunqiu/.codex/generated_images/01a14377-c537-7a10-b5df-10043f63fbe0/exec-ba6d85f6-90a5-4446-834e-e21b5366993c.png",
+    "project_original": "originals/sky_v01.png",
+    "prompt": "prompts/sky_v01.txt",
+    "references": [
+      "originals/village_v02.png"
+    ],
+    "status": "selected_for_sequence",
+    "notes": "Compositing QA pending; raw generation retained unchanged."
+  },
+  {
+    "id": "wolf_v01",
+    "tool": "image_gen.imagegen",
+    "native_path": "/Users/zhangjunqiu/.codex/generated_images/01a14377-c537-7a10-b5df-10043f63fbe0/exec-2b502fbd-9fc3-4577-9041-67f585c3d62e.png",
+    "project_original": "originals/wolf_v01.png",
+    "prompt": "prompts/wolf_v01.txt",
+    "references": [
+      "assets/sprites/bosses/skoll.png",
+      "originals/village_v02.png"
+    ],
+    "status": "rejected",
+    "notes": "Nonzero alpha reaches image edge; regenerate with padding before motion."
+  },
+  {
+    "id": "wolf_v02",
+    "tool": "image_gen.imagegen",
+    "native_path": "/Users/zhangjunqiu/.codex/generated_images/01a14377-c537-7a10-b5df-10043f63fbe0/exec-484806c4-2aec-49c8-8b05-fbbcfda810e4.png",
+    "project_original": "originals/wolf_v02.png",
+    "prompt": "prompts/wolf_v02.txt",
+    "references": [
+      "originals/wolf_v01.png"
+    ],
+    "status": "selected_for_sequence",
+    "notes": "Main silhouette fully visible. Measured alpha padding and compositing review pending."
+  },
+  {
+    "id": "foreground_v01",
+    "tool": "image_gen.imagegen",
+    "native_path": "/Users/zhangjunqiu/.codex/generated_images/01a14377-c537-7a10-b5df-10043f63fbe0/exec-a7bd088a-47a6-49bc-aed0-b2ca1af7179c.png",
+    "project_original": "originals/foreground_v01.png",
+    "prompt": "prompts/foreground_v01.txt",
+    "references": [
+      "originals/village_v02.png"
+    ],
+    "status": "selected_for_sequence",
+    "notes": "Single connected snow bank with broken stakes; actual has four stake pieces, count not narrative-critical. Compositing QA pending."
+  },
+  {
+    "id": "sun_v01",
+    "tool": "image_gen.imagegen",
+    "native_path": "/Users/zhangjunqiu/.codex/generated_images/01a14377-c537-7a10-b5df-10043f63fbe0/exec-9272326c-3cd2-4c7e-86c5-3eb707496d90.png",
+    "project_original": "originals/sun_v01.png",
+    "prompt": "prompts/sun_v01.txt",
+    "references": [
+      "originals/village_v02.png"
+    ],
+    "status": "selected_for_sequence",
+    "notes": "Replaces initial flat procedural sun with painted texture and alpha halo."
+  },
+  {
+    "id": "midgard_graves_v01",
+    "tool": "image_gen.imagegen",
+    "native_path": "/Users/zhangjunqiu/.codex/generated_images/01a14377-c537-7a10-b5df-10043f63fbe0/exec-08cf936d-2c91-4f1d-820d-484bc9e7fc9f.png",
+    "project_original": "originals/midgard_graves_v01.png",
+    "prompt": "prompts/midgard_graves_v01.txt",
+    "references": [
+      "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskR_prologue_sample_2026-10-21/originals/village_v02.png",
+      "/Users/zhangjunqiu/Desktop/无限恐怖/assets/sprites/enemies/draugr.png"
+    ],
+    "status": "selected_for_sequence",
+    "notes": "Inspected generated composition and project character identity; moving-camera review recorded separately."
+  },
+  {
+    "id": "midgard_hrym_v01",
+    "tool": "image_gen.imagegen",
+    "native_path": "/Users/zhangjunqiu/.codex/generated_images/01a14377-c537-7a10-b5df-10043f63fbe0/exec-e5d0a2fe-04d1-400a-aa65-dd10eaec48b9.png",
+    "project_original": "originals/midgard_hrym_v01.png",
+    "prompt": "prompts/midgard_hrym_v01.txt",
+    "references": [
+      "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskR_prologue_sample_2026-10-21/originals/village_v02.png",
+      "/Users/zhangjunqiu/Desktop/无限恐怖/assets/sprites/bosses/hrym.png"
+    ],
+    "status": "selected_for_sequence",
+    "notes": "Inspected generated composition and project character identity; moving-camera review recorded separately."
+  },
+  {
+    "id": "helheim_bridge_v01",
+    "tool": "image_gen.imagegen",
+    "native_path": "/Users/zhangjunqiu/.codex/generated_images/01a14377-c537-7a10-b5df-10043f63fbe0/exec-20814a03-da09-4541-87fc-5286a0c49f29.png",
+    "project_original": "originals/helheim_bridge_v01.png",
+    "prompt": "prompts/helheim_bridge_v01.txt",
+    "references": [
+      "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskR_prologue_sample_2026-10-21/originals/village_v02.png",
+      "/Users/zhangjunqiu/Desktop/无限恐怖/assets/sprites/props/helheim/gjoll_bridge.png"
+    ],
+    "status": "selected_for_sequence",
+    "notes": "Inspected generated composition and project character identity; moving-camera review recorded separately."
+  },
+  {
+    "id": "helheim_garm_v01",
+    "tool": "image_gen.imagegen",
+    "native_path": "/Users/zhangjunqiu/.codex/generated_images/01a14377-c537-7a10-b5df-10043f63fbe0/exec-8490605b-ffbc-4d01-8428-3f8aaf20a558.png",
+    "project_original": "originals/helheim_garm_v01.png",
+    "prompt": "prompts/helheim_garm_v01.txt",
+    "references": [
+      "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskR_prologue_sample_2026-10-21/originals/village_v02.png",
+      "/Users/zhangjunqiu/Desktop/无限恐怖/assets/sprites/bosses/garm.png"
+    ],
+    "status": "selected_for_sequence",
+    "notes": "Inspected generated composition and project character identity; moving-camera review recorded separately."
+  },
+  {
+    "id": "helheim_nidhogg_v01",
+    "tool": "image_gen.imagegen",
+    "native_path": "/Users/zhangjunqiu/.codex/generated_images/01a14377-c537-7a10-b5df-10043f63fbe0/exec-d451c0b5-723d-482b-ae21-2d5f8d6659d9.png",
+    "project_original": "originals/helheim_nidhogg_v01.png",
+    "prompt": "prompts/helheim_nidhogg_v01.txt",
+    "references": [
+      "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskR_prologue_sample_2026-10-21/originals/village_v02.png",
+      "/Users/zhangjunqiu/Desktop/无限恐怖/assets/sprites/bosses/nidhogg.png"
+    ],
+    "status": "selected_for_sequence",
+    "notes": "Inspected generated composition and project character identity; moving-camera review recorded separately."
+  },
+  {
+    "id": "helheim_hel_ship_v01",
+    "tool": "image_gen.imagegen",
+    "native_path": "/Users/zhangjunqiu/.codex/generated_images/01a14377-c537-7a10-b5df-10043f63fbe0/exec-e368ab1a-e593-49ea-a31e-fb86fc859364.png",
+    "project_original": "originals/helheim_hel_ship_v01.png",
+    "prompt": "prompts/helheim_hel_ship_v01.txt",
+    "references": [
+      "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskR_prologue_sample_2026-10-21/originals/village_v02.png",
+      "/Users/zhangjunqiu/Desktop/无限恐怖/assets/sprites/bosses/hel.png",
+      "/Users/zhangjunqiu/Desktop/无限恐怖/assets/sprites/props/helheim/naglfar.png"
+    ],
+    "status": "selected_for_sequence",
+    "notes": "Inspected generated composition and project character identity; moving-camera review recorded separately."
+  },
+  {
+    "id": "vigrid_plain_v01",
+    "tool": "image_gen.imagegen",
+    "native_path": "/Users/zhangjunqiu/.codex/generated_images/01a14377-c537-7a10-b5df-10043f63fbe0/exec-ca1be585-3099-46e4-9d7d-ef26b0803bbf.png",
+    "project_original": "originals/vigrid_plain_v01.png",
+    "prompt": "prompts/vigrid_plain_v01.txt",
+    "references": [
+      "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskR_prologue_sample_2026-10-21/originals/village_v02.png"
+    ],
+    "status": "selected_for_sequence",
+    "notes": "Inspected generated composition and project character identity; moving-camera review recorded separately."
+  },
+  {
+    "id": "vigrid_thor_serpent_v01",
+    "tool": "image_gen.imagegen",
+    "native_path": "/Users/zhangjunqiu/.codex/generated_images/01a14377-c537-7a10-b5df-10043f63fbe0/exec-c59eee46-4ab4-495f-a92a-03e47b42a98b.png",
+    "project_original": "originals/vigrid_thor_serpent_v01.png",
+    "prompt": "prompts/vigrid_thor_serpent_v01.txt",
+    "references": [
+      "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskR_prologue_sample_2026-10-21/originals/village_v02.png",
+      "/Users/zhangjunqiu/Desktop/无限恐怖/assets/sprites/cards/thor.png",
+      "/Users/zhangjunqiu/Desktop/无限恐怖/assets/sprites/bosses/jormungandr_head.png"
+    ],
+    "status": "rejected",
+    "notes": "Winter shore conflicted with Vigrid ash battlefield; corrected environment in v02 while retaining characters."
+  },
+  {
+    "id": "vigrid_odin_fenrir_v01",
+    "tool": "image_gen.imagegen",
+    "native_path": "/Users/zhangjunqiu/.codex/generated_images/01a14377-c537-7a10-b5df-10043f63fbe0/exec-4237a2ec-7e0a-4913-9e7f-2c3ecbe42866.png",
+    "project_original": "originals/vigrid_odin_fenrir_v01.png",
+    "prompt": "prompts/vigrid_odin_fenrir_v01.txt",
+    "references": [
+      "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskR_prologue_sample_2026-10-21/originals/village_v02.png",
+      "/Users/zhangjunqiu/Desktop/无限恐怖/assets/sprites/cards/odin.png",
+      "/Users/zhangjunqiu/Desktop/无限恐怖/assets/sprites/bosses/fenrir.png"
+    ],
+    "status": "selected_for_sequence",
+    "notes": "Inspected generated composition and project character identity; moving-camera review recorded separately."
+  },
+  {
+    "id": "vigrid_surtr_v01",
+    "tool": "image_gen.imagegen",
+    "native_path": "/Users/zhangjunqiu/.codex/generated_images/01a14377-c537-7a10-b5df-10043f63fbe0/exec-21eccdd3-bde5-4d8c-b6fd-e412a9e851b8.png",
+    "project_original": "originals/vigrid_surtr_v01.png",
+    "prompt": "prompts/vigrid_surtr_v01.txt",
+    "references": [
+      "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskR_prologue_sample_2026-10-21/originals/village_v02.png",
+      "/Users/zhangjunqiu/Desktop/无限恐怖/assets/sprites/bosses/surtr.png"
+    ],
+    "status": "selected_for_sequence",
+    "notes": "Inspected generated composition and project character identity; moving-camera review recorded separately."
+  },
+  {
+    "id": "vigrid_thor_serpent_v02",
+    "tool": "image_gen.imagegen",
+    "native_path": "/Users/zhangjunqiu/.codex/generated_images/01a14377-c537-7a10-b5df-10043f63fbe0/exec-19a01972-1724-4e0c-8db0-880ef8dc4850.png",
+    "project_original": "originals/vigrid_thor_serpent_v02.png",
+    "prompt": "prompts/vigrid_thor_serpent_v02.txt",
+    "references": [
+      "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskR_prologue_sample_2026-10-21/originals/vigrid_thor_serpent_v01.png"
+    ],
+    "status": "selected_for_sequence",
+    "notes": "Inspected generated composition and project character identity; moving-camera review recorded separately."
+  },
+  {
+    "id": "hati_v01",
+    "tool": "image_gen.imagegen",
+    "native_path": "/Users/zhangjunqiu/.codex/generated_images/01a14377-c537-7a10-b5df-10043f63fbe0/exec-faee3ec5-b289-44bf-ac8f-fc749efb1796.png",
+    "project_original": "originals/hati_v01.png",
+    "prompt": "prompts/hati_v01.txt",
+    "references": [
+      "assets/sprites/bosses/hati.png",
+      "originals/village_v02.png"
+    ],
+    "status": "selected_for_sequence",
+    "notes": "Silver/indigo moon-chasing wolf; complete four-leg silhouette; composited at a smaller distant scale."
+  }
+]

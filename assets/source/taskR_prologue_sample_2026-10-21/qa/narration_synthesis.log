@@ -1,0 +1,25 @@
+/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskR_prologue_sample_2026-10-21/work/tts_env/lib/python3.12/site-packages/jieba/posseg/__init__.py:16: SyntaxWarning: invalid escape sequence '\.'
+  re_skip_detail = re.compile("([\.0-9]+|[a-zA-Z0-9]+)")
+/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskR_prologue_sample_2026-10-21/work/tts_env/lib/python3.12/site-packages/jieba/posseg/__init__.py:17: SyntaxWarning: invalid escape sequence '\.'
+  re_han_internal = re.compile("([\u4E00-\u9FD5a-zA-Z0-9+#&\._]+)")
+/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskR_prologue_sample_2026-10-21/work/tts_env/lib/python3.12/site-packages/jieba/posseg/__init__.py:18: SyntaxWarning: invalid escape sequence '\s'
+  re_skip_internal = re.compile("(\r\n|\s)")
+/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskR_prologue_sample_2026-10-21/work/tts_env/lib/python3.12/site-packages/jieba/posseg/__init__.py:21: SyntaxWarning: invalid escape sequence '\.'
+  re_num = re.compile("[\.0-9]+")
+Building prefix dict from the default dictionary ...
+Dumping model to file cache /Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskR_prologue_sample_2026-10-21/work/jieba.cache
+Loading model cost 0.436 seconds.
+Prefix dict has been built successfully.
+Warning: en_callable is None, so English may be removed
+midgard 1 2.793 第三个没有夏天的冬季。
+midgard 2 4.084 村庄被白雪掩埋，死者从冰下归来。
+midgard 3 3.731 天边，巨狼追逐最后的太阳与月亮。
+midgard 4 5.379 赫列姆率军渡过冰海。在永夜降临之前，击退它们。
+helheim 1 4.552 这里是赫尔海姆，未能进入英灵殿的死者之国。
+helheim 2 3.784 加姆守着入口，锁链仍将它束缚。
+helheim 3 3.923 世界树的根下，尼德霍格日夜啃噬。
+helheim 4 5.906 海拉的亡者大军正登船。在纳吉尔法尔起航之前，击败她。
+vigrid 1 5.034 彩虹桥正在崩塌，诸神与巨人走向同一片战场。
+vigrid 2 3.656 托尔举起战锤，迎向尘世巨蟒。
+vigrid 3 4.255 奥丁握紧长枪，魔狼挣断了最后的锁链。
+vigrid 4 5.795 战场尽头，苏尔特举起炎之剑。在世界燃尽之前，击败他。

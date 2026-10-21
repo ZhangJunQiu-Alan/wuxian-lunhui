@@ -1,0 +1,664 @@
+{
+  "captures": 94,
+  "failed": 0,
+  "checks": [
+    {
+      "file": "m/m_spawn_1280.png",
+      "ok": true,
+      "dimensions_match": true,
+      "camera_inside_map": true,
+      "note": "production VigridMap new terrain, native camera"
+    },
+    {
+      "file": "m/m_sword_peak_1280.png",
+      "ok": true,
+      "dimensions_match": true,
+      "camera_inside_map": true,
+      "note": "actual Surtr._sweep dispatch; production BossFx; 640px frames scale1; real warning overlay"
+    },
+    {
+      "file": "m/m_danger_1280.png",
+      "ok": true,
+      "dimensions_match": true,
+      "camera_inside_map": true,
+      "note": "production map with ten enemies, real Surtr telegraph and residual fire patches"
+    },
+    {
+      "file": "m/m_aid_freyja_f2_1280.png",
+      "ok": true,
+      "dimensions_match": true,
+      "camera_inside_map": true,
+      "note": "production periodic dispatch and FxLayer draw; selected age; center=(0.0, 0.0)"
+    },
+    {
+      "file": "m/m_aid_freyja_f5_1280.png",
+      "ok": true,
+      "dimensions_match": true,
+      "camera_inside_map": true,
+      "note": "production periodic dispatch and FxLayer draw; selected age; center=(0.0, 0.0)"
+    },
+    {
+      "file": "m/m_aid_freyja_f8_1280.png",
+      "ok": true,
+      "dimensions_match": true,
+      "camera_inside_map": true,
+      "note": "production periodic dispatch and FxLayer draw; selected age; center=(0.0, 0.0)"
+    },
+    {
+      "file": "m/m_aid_baldr_f2_1280.png",
+      "ok": true,
+      "dimensions_match": true,
+      "camera_inside_map": true,
+      "note": "production periodic dispatch and FxLayer draw; selected age; center=(1.008125, 104.6162)"
+    },
+    {
+      "file": "m/m_aid_baldr_f5_1280.png",
+      "ok": true,
+      "dimensions_match": true,
+      "camera_inside_map": true,
+      "note": "production periodic dispatch and FxLayer draw; selected age; center=(1.008125, 104.6162)"
+    },
+    {
+      "file": "m/m_aid_baldr_f8_1280.png",
+      "ok": true,
+      "dimensions_match": true,
+      "camera_inside_map": true,
+      "note": "production periodic dispatch and FxLayer draw; selected age; center=(1.008125, 104.6162)"
+    },
+    {
+      "file": "m/m_aid_ran_f2_1280.png",
+      "ok": true,
+      "dimensions_match": true,
+      "camera_inside_map": true,
+      "note": "production periodic dispatch and FxLayer draw; selected age; center=(-53.99187, 64.65637)"
+    },
+    {
+      "file": "m/m_aid_ran_f5_1280.png",
+      "ok": true,
+      "dimensions_match": true,
+      "camera_inside_map": true,
+      "note": "production periodic dispatch and FxLayer draw; selected age; center=(-53.99187, 64.65637)"
+    },
+    {
+      "file": "m/m_aid_ran_f8_1280.png",
+      "ok": true,
+      "dimensions_match": true,
+      "camera_inside_map": true,
+      "note": "production periodic dispatch and FxLayer draw; selected age; center=(-53.99187, 64.65637)"
+    },
+    {
+      "file": "m/m_aid_skadi_f2_1280.png",
+      "ok": true,
+      "dimensions_match": true,
+      "camera_inside_map": true,
+      "note": "production periodic dispatch and FxLayer draw; selected age; center=(68.99187, 104.6162)"
+    },
+    {
+      "file": "m/m_aid_skadi_f5_1280.png",
+      "ok": true,
+      "dimensions_match": true,
+      "camera_inside_map": true,
+      "note": "production periodic dispatch and FxLayer draw; selected age; center=(68.99187, 104.6162)"
+    },
+    {
+      "file": "m/m_aid_skadi_f8_1280.png",
+      "ok": true,
+      "dimensions_match": true,
+      "camera_inside_map": true,
+      "note": "production periodic dispatch and FxLayer draw; selected age; center=(68.99187, 104.6162)"
+    },
+    {
+      "file": "m/m_spawn_960.png",
+      "ok": true,
+      "dimensions_match": true,
+      "camera_inside_map": true,
+      "note": "production VigridMap new terrain, native camera"
+    },
+    {
+      "file": "m/m_sword_peak_960.png",
+      "ok": true,
+      "dimensions_match": true,
+      "camera_inside_map": true,
+      "note": "actual Surtr._sweep dispatch; production BossFx; 640px frames scale1; real warning overlay"
+    },
+    {
+      "file": "m/m_danger_960.png",
+      "ok": true,
+      "dimensions_match": true,
+      "camera_inside_map": true,
+      "note": "production map with ten enemies, real Surtr telegraph and residual fire patches"
+    },
+    {
+      "file": "m/m_aid_freyja_f2_960.png",
+      "ok": true,
+      "dimensions_match": true,
+      "camera_inside_map": true,
+      "note": "production periodic dispatch and FxLayer draw; selected age; center=(0.0, 0.0)"
+    },
+    {
+      "file": "m/m_aid_freyja_f5_960.png",
+      "ok": true,
+      "dimensions_match": true,
+      "camera_inside_map": true,
+      "note": "production periodic dispatch and FxLayer draw; selected age; center=(0.0, 0.0)"
+    },
+    {
+      "file": "m/m_aid_freyja_f8_960.png",
+      "ok": true,
+      "dimensions_match": true,
+      "camera_inside_map": true,
+      "note": "production periodic dispatch and FxLayer draw; selected age; center=(0.0, 0.0)"
+    },
+    {
+      "file": "m/m_aid_baldr_f2_960.png",
+      "ok": true,
+      "dimensions_match": true,
+      "camera_inside_map": true,
+      "note": "production periodic dispatch and FxLayer draw; selected age; center=(-53.99187, 64.65637)"
+    },
+    {
+      "file": "m/m_aid_baldr_f5_960.png",
+      "ok": true,
+      "dimensions_match": true,
+      "camera_inside_map": true,
+      "note": "production periodic dispatch and FxLayer draw; selected age; center=(-53.99187, 64.65637)"
+    },
+    {
+      "file": "m/m_aid_baldr_f8_960.png",
+      "ok": true,
+      "dimensions_match": true,
+      "camera_inside_map": true,
+      "note": "production periodic dispatch and FxLayer draw; selected age; center=(-53.99187, 64.65637)"
+    },
+    {
+      "file": "m/m_aid_ran_f2_960.png",
+      "ok": true,
+      "dimensions_match": true,
+      "camera_inside_map": true,
+      "note": "production periodic dispatch and FxLayer draw; selected age; center=(1.008125, 104.6162)"
+    },
+    {
+      "file": "m/m_aid_ran_f5_960.png",
+      "ok": true,
+      "dimensions_match": true,
+      "camera_inside_map": true,
+      "note": "production periodic dispatch and FxLayer draw; selected age; center=(1.008125, 104.6162)"
+    },
+    {
+      "file": "m/m_aid_ran_f8_960.png",
+      "ok": true,
+      "dimensions_match": true,
+      "camera_inside_map": true,
+      "note": "production periodic dispatch and FxLayer draw; selected age; center=(1.008125, 104.6162)"
+    },
+    {
+      "file": "m/m_aid_skadi_f2_960.png",
+      "ok": true,
+      "dimensions_match": true,
+      "camera_inside_map": true,
+      "note": "production periodic dispatch and FxLayer draw; selected age; center=(68.99188, -104.6162)"
+    },
+    {
+      "file": "m/m_aid_skadi_f5_960.png",
+      "ok": true,
+      "dimensions_match": true,
+      "camera_inside_map": true,
+      "note": "production periodic dispatch and FxLayer draw; selected age; center=(68.99188, -104.6162)"
+    },
+    {
+      "file": "m/m_aid_skadi_f8_960.png",
+      "ok": true,
+      "dimensions_match": true,
+      "camera_inside_map": true,
+      "note": "production periodic dispatch and FxLayer draw; selected age; center=(68.99188, -104.6162)"
+    },
+    {
+      "file": "k_final_v3/hub_levels.png",
+      "ok": true,
+      "dimensions_match": true,
+      "camera_inside_map": null,
+      "note": "Lord God Space: level 3 card unlocked after Helheim clear"
+    },
+    {
+      "file": "k_final_v3/map_spawn.png",
+      "ok": true,
+      "dimensions_match": true,
+      "camera_inside_map": true,
+      "note": "spawn (0,0), central plain, routes"
+    },
+    {
+      "file": "k_final_v3/map_corner_nw.png",
+      "ok": true,
+      "dimensions_match": true,
+      "camera_inside_map": true,
+      "note": "walk-rect corner, border haze and fire band, camera limit"
+    },
+    {
+      "file": "k_final_v3/map_corner_ne.png",
+      "ok": true,
+      "dimensions_match": true,
+      "camera_inside_map": true,
+      "note": "walk-rect corner, border haze and fire band, camera limit"
+    },
+    {
+      "file": "k_final_v3/map_corner_se.png",
+      "ok": true,
+      "dimensions_match": true,
+      "camera_inside_map": true,
+      "note": "walk-rect corner, border haze and fire band, camera limit"
+    },
+    {
+      "file": "k_final_v3/map_corner_sw.png",
+      "ok": true,
+      "dimensions_match": true,
+      "camera_inside_map": true,
+      "note": "walk-rect corner, border haze and fire band, camera limit"
+    },
+    {
+      "file": "k_final_v3/map_horizon.png",
+      "ok": true,
+      "dimensions_match": true,
+      "camera_inside_map": true,
+      "note": "north horizon distant battle strip, non-interactive"
+    },
+    {
+      "file": "k_final_v3/map_frost_remnants.png",
+      "ok": true,
+      "dimensions_match": true,
+      "camera_inside_map": true,
+      "note": "burnt grass with derived midgard-mask transitions, giant treads"
+    },
+    {
+      "file": "k_final_v3/map_muspel.png",
+      "ok": true,
+      "dimensions_match": true,
+      "camera_inside_map": true,
+      "note": "cracked lava decoration and hue 0.04 decorative fire"
+    },
+    {
+      "file": "k_final_v3/serpent_corner_turn.png",
+      "ok": true,
+      "dimensions_match": true,
+      "camera_inside_map": true,
+      "note": "Jormungandr body ribbon turning the rounded corner; head ring = only target"
+    },
+    {
+      "file": "k_final_v3/serpent_breath_windup.png",
+      "ok": true,
+      "dimensions_match": true,
+      "camera_inside_map": true,
+      "note": "poison breath warning sector (same polygon as damage)"
+    },
+    {
+      "file": "k_final_v3/serpent_mist.png",
+      "ok": true,
+      "dimensions_match": true,
+      "camera_inside_map": true,
+      "note": "after release: breath FX clipped to sector, lingering mist polygon"
+    },
+    {
+      "file": "k_final_v3/serpent_lunge_windup.png",
+      "ok": true,
+      "dimensions_match": true,
+      "camera_inside_map": true,
+      "note": "lunge: head rears on the path, faint yellow lane = still aiming, follows the player"
+    },
+    {
+      "file": "k_final_v3/serpent_lunge_locked.png",
+      "ok": true,
+      "dimensions_match": true,
+      "camera_inside_map": true,
+      "note": "lunge: last 0.3s the lane turns red and is locked; sidestep to dodge"
+    },
+    {
+      "file": "k_final_v3/serpent_lunge_bite.png",
+      "ok": true,
+      "dimensions_match": true,
+      "camera_inside_map": true,
+      "note": "bite: head stuck in the ground, neck stretched across the arena, thick gold ring = x1.5 damage window"
+    },
+    {
+      "file": "k_final_v3/serpent_spit.png",
+      "ok": true,
+      "dimensions_match": true,
+      "camera_inside_map": true,
+      "note": "raged spit: 5 globs in flight, ground warning circles = hit radius"
+    },
+    {
+      "file": "k_final_v3/serpent_spit_mist.png",
+      "ok": true,
+      "dimensions_match": true,
+      "camera_inside_map": true,
+      "note": "globs landed: small mist pools"
+    },
+    {
+      "file": "k_final_v3/fenrir_maw_active.png",
+      "ok": true,
+      "dimensions_match": true,
+      "camera_inside_map": true,
+      "note": "attraction phase: split jaws, gap 112 >= 64 with active player in channel, fatal box and countdown"
+    },
+    {
+      "file": "k_final_v3/fenrir_maw_left.png",
+      "ok": true,
+      "dimensions_match": true,
+      "camera_inside_map": true,
+      "note": "mirrored maw facing left (upper jaw still on top)"
+    },
+    {
+      "file": "k_final_v3/fenrir_vidar_brace.png",
+      "ok": true,
+      "dimensions_match": true,
+      "camera_inside_map": true,
+      "note": "Vidar pry frame 4: jaws placed on hand/boot contacts, no damage window"
+    },
+    {
+      "file": "k_final_v3/fenrir_vidar_pried.png",
+      "ok": true,
+      "dimensions_match": true,
+      "camera_inside_map": true,
+      "note": "jaws torn open, Fenrir damaged"
+    },
+    {
+      "file": "k_final_v3/fenrir_bound.png",
+      "ok": true,
+      "dimensions_match": true,
+      "camera_inside_map": true,
+      "note": "Gleipnir braid ribbon around torso, protected rect clear, bind timer"
+    },
+    {
+      "file": "k_final_v3/fenrir_run_route.png",
+      "ok": true,
+      "dimensions_match": true,
+      "camera_inside_map": true,
+      "note": "run route warning ring (same polyline as movement)"
+    },
+    {
+      "file": "k_final_v3/fenrir_run.png",
+      "ok": true,
+      "dimensions_match": true,
+      "camera_inside_map": true,
+      "note": "running along route with trail"
+    },
+    {
+      "file": "k_final_v3/surtr_sweep_windup.png",
+      "ok": true,
+      "dimensions_match": true,
+      "camera_inside_map": true,
+      "note": "320 windup pose, sweep sector warning"
+    },
+    {
+      "file": "k_final_v3/surtr_sweep_release.png",
+      "ok": true,
+      "dimensions_match": true,
+      "camera_inside_map": true,
+      "note": "attack frame 1: sword arc clipped to sector, residual fire"
+    },
+    {
+      "file": "k_final_v3/surtr_gates.png",
+      "ok": true,
+      "dimensions_match": true,
+      "camera_inside_map": true,
+      "note": "Muspel gates open, fire giants emerging"
+    },
+    {
+      "file": "k_final_v3/surtr_firewall.png",
+      "ok": true,
+      "dimensions_match": true,
+      "camera_inside_map": true,
+      "note": "Nine Worlds burning: band on circle boundary, fire half outward, clear inside + boundary line"
+    },
+    {
+      "file": "k_final_v3/surtr_final_warn.png",
+      "ok": true,
+      "dimensions_match": true,
+      "camera_inside_map": true,
+      "note": "final fire warning on unsafe 64 cells, safe runes, player on a safe cell"
+    },
+    {
+      "file": "k_final_v3/surtr_final_burn.png",
+      "ok": true,
+      "dimensions_match": true,
+      "camera_inside_map": true,
+      "note": "final fire on the same unsafe cell set; safe cells unburnt"
+    },
+    {
+      "file": "k_final_v3/ending_beat_0.png",
+      "ok": true,
+      "dimensions_match": true,
+      "camera_inside_map": true,
+      "note": "ending beat 0 (manual advance, skippable)"
+    },
+    {
+      "file": "k_final_v3/ending_beat_1.png",
+      "ok": true,
+      "dimensions_match": true,
+      "camera_inside_map": true,
+      "note": "ending beat 1 (manual advance, skippable)"
+    },
+    {
+      "file": "k_final_v3/ending_beat_2.png",
+      "ok": true,
+      "dimensions_match": true,
+      "camera_inside_map": true,
+      "note": "ending beat 2 (manual advance, skippable)"
+    },
+    {
+      "file": "k_final_v3/ending_beat_3.png",
+      "ok": true,
+      "dimensions_match": true,
+      "camera_inside_map": true,
+      "note": "ending beat 3 (manual advance, skippable)"
+    },
+    {
+      "file": "k_final_v3/ending_beat_4.png",
+      "ok": true,
+      "dimensions_match": true,
+      "camera_inside_map": true,
+      "note": "ending beat 4 (manual advance, skippable)"
+    },
+    {
+      "file": "k_final_v3/ending_result.png",
+      "ok": true,
+      "dimensions_match": true,
+      "camera_inside_map": true,
+      "note": "result: time/kills, fates rewritten, Loki hint"
+    },
+    {
+      "file": "k_final_v3/map_spawn_960x540.png",
+      "ok": true,
+      "dimensions_match": true,
+      "camera_inside_map": true,
+      "note": "spawn (0,0), central plain, routes"
+    },
+    {
+      "file": "k_final_v3/map_corner_nw_960x540.png",
+      "ok": true,
+      "dimensions_match": true,
+      "camera_inside_map": true,
+      "note": "walk-rect corner, border haze and fire band, camera limit"
+    },
+    {
+      "file": "k_final_v3/map_corner_ne_960x540.png",
+      "ok": true,
+      "dimensions_match": true,
+      "camera_inside_map": true,
+      "note": "walk-rect corner, border haze and fire band, camera limit"
+    },
+    {
+      "file": "k_final_v3/map_corner_se_960x540.png",
+      "ok": true,
+      "dimensions_match": true,
+      "camera_inside_map": true,
+      "note": "walk-rect corner, border haze and fire band, camera limit"
+    },
+    {
+      "file": "k_final_v3/map_corner_sw_960x540.png",
+      "ok": true,
+      "dimensions_match": true,
+      "camera_inside_map": true,
+      "note": "walk-rect corner, border haze and fire band, camera limit"
+    },
+    {
+      "file": "k_final_v3/map_horizon_960x540.png",
+      "ok": true,
+      "dimensions_match": true,
+      "camera_inside_map": true,
+      "note": "north horizon distant battle strip, non-interactive"
+    },
+    {
+      "file": "k_final_v3/map_frost_remnants_960x540.png",
+      "ok": true,
+      "dimensions_match": true,
+      "camera_inside_map": true,
+      "note": "burnt grass with derived midgard-mask transitions, giant treads"
+    },
+    {
+      "file": "k_final_v3/map_muspel_960x540.png",
+      "ok": true,
+      "dimensions_match": true,
+      "camera_inside_map": true,
+      "note": "cracked lava decoration and hue 0.04 decorative fire"
+    },
+    {
+      "file": "k_final_v3/ending_beat_0_960x540.png",
+      "ok": true,
+      "dimensions_match": true,
+      "camera_inside_map": true,
+      "note": "ending beat 0 (manual advance, skippable)"
+    },
+    {
+      "file": "k_final_v3/ending_beat_1_960x540.png",
+      "ok": true,
+      "dimensions_match": true,
+      "camera_inside_map": true,
+      "note": "ending beat 1 (manual advance, skippable)"
+    },
+    {
+      "file": "k_final_v3/ending_beat_2_960x540.png",
+      "ok": true,
+      "dimensions_match": true,
+      "camera_inside_map": true,
+      "note": "ending beat 2 (manual advance, skippable)"
+    },
+    {
+      "file": "k_final_v3/ending_beat_3_960x540.png",
+      "ok": true,
+      "dimensions_match": true,
+      "camera_inside_map": true,
+      "note": "ending beat 3 (manual advance, skippable)"
+    },
+    {
+      "file": "k_final_v3/ending_beat_4_960x540.png",
+      "ok": true,
+      "dimensions_match": true,
+      "camera_inside_map": true,
+      "note": "ending beat 4 (manual advance, skippable)"
+    },
+    {
+      "file": "k_final_v3/ending_result_960x540.png",
+      "ok": true,
+      "dimensions_match": true,
+      "camera_inside_map": true,
+      "note": "result: time/kills, fates rewritten, Loki hint"
+    },
+    {
+      "file": "k_final_v3/map_spawn_1600x900.png",
+      "ok": true,
+      "dimensions_match": true,
+      "camera_inside_map": true,
+      "note": "spawn (0,0), central plain, routes"
+    },
+    {
+      "file": "k_final_v3/map_corner_nw_1600x900.png",
+      "ok": true,
+      "dimensions_match": true,
+      "camera_inside_map": true,
+      "note": "walk-rect corner, border haze and fire band, camera limit"
+    },
+    {
+      "file": "k_final_v3/map_corner_ne_1600x900.png",
+      "ok": true,
+      "dimensions_match": true,
+      "camera_inside_map": true,
+      "note": "walk-rect corner, border haze and fire band, camera limit"
+    },
+    {
+      "file": "k_final_v3/map_corner_se_1600x900.png",
+      "ok": true,
+      "dimensions_match": true,
+      "camera_inside_map": true,
+      "note": "walk-rect corner, border haze and fire band, camera limit"
+    },
+    {
+      "file": "k_final_v3/map_corner_sw_1600x900.png",
+      "ok": true,
+      "dimensions_match": true,
+      "camera_inside_map": true,
+      "note": "walk-rect corner, border haze and fire band, camera limit"
+    },
+    {
+      "file": "k_final_v3/map_horizon_1600x900.png",
+      "ok": true,
+      "dimensions_match": true,
+      "camera_inside_map": true,
+      "note": "north horizon distant battle strip, non-interactive"
+    },
+    {
+      "file": "k_final_v3/map_frost_remnants_1600x900.png",
+      "ok": true,
+      "dimensions_match": true,
+      "camera_inside_map": true,
+      "note": "burnt grass with derived midgard-mask transitions, giant treads"
+    },
+    {
+      "file": "k_final_v3/map_muspel_1600x900.png",
+      "ok": true,
+      "dimensions_match": true,
+      "camera_inside_map": true,
+      "note": "cracked lava decoration and hue 0.04 decorative fire"
+    },
+    {
+      "file": "k_final_v3/ending_beat_0_1600x900.png",
+      "ok": true,
+      "dimensions_match": true,
+      "camera_inside_map": true,
+      "note": "ending beat 0 (manual advance, skippable)"
+    },
+    {
+      "file": "k_final_v3/ending_beat_1_1600x900.png",
+      "ok": true,
+      "dimensions_match": true,
+      "camera_inside_map": true,
+      "note": "ending beat 1 (manual advance, skippable)"
+    },
+    {
+      "file": "k_final_v3/ending_beat_2_1600x900.png",
+      "ok": true,
+      "dimensions_match": true,
+      "camera_inside_map": true,
+      "note": "ending beat 2 (manual advance, skippable)"
+    },
+    {
+      "file": "k_final_v3/ending_beat_3_1600x900.png",
+      "ok": true,
+      "dimensions_match": true,
+      "camera_inside_map": true,
+      "note": "ending beat 3 (manual advance, skippable)"
+    },
+    {
+      "file": "k_final_v3/ending_beat_4_1600x900.png",
+      "ok": true,
+      "dimensions_match": true,
+      "camera_inside_map": true,
+      "note": "ending beat 4 (manual advance, skippable)"
+    },
+    {
+      "file": "k_final_v3/ending_result_1600x900.png",
+      "ok": true,
+      "dimensions_match": true,
+      "camera_inside_map": true,
+      "note": "result: time/kills, fates rewritten, Loki hint"
+    }
+  ]
+}

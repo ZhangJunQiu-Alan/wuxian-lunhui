@@ -1,0 +1,10 @@
+{
+  "file": "tools/acceptance_vigrid_run.gd",
+  "change": "wait0.8real seconds before final_result screenshot so existing fade can complete",
+  "gameplay_changes": false,
+  "old_snapshot_sha256": "ce0a2ed52dde5c3c02b8ff6339627df7c734e126dde74ce9e56a97409e3bf6f2",
+  "new_sha256": "9b06b1d1ede70f26b41ad55920296c8c9787de9e25796d50263b407272f8865b",
+  "final_sha256": "820148311539be1936041218334520db85da524f5e820fb7f334e732caa91834",
+  "additional_change": "two process_frame waits before force_draw; screenshot helper only",
+  "validation": "Three-size actual HUD layout fixture8checks0fail; original full-run end captures retained as early-layout images, not used as layout acceptance"
+}

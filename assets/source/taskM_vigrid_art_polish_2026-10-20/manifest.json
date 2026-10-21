@@ -1,0 +1,879 @@
+{
+  "task": "M-ART-01–03",
+  "date": "2026-10-20",
+  "files": [
+    {
+      "task": "M01",
+      "id": "ash_road",
+      "path": "assets/sprites/ground/vigrid/ash_road.png",
+      "frame_size": [
+        64,
+        64
+      ],
+      "frames": 1,
+      "fps": 0,
+      "loop": false,
+      "anchor": [
+        32,
+        32
+      ],
+      "source": [
+        "originals/ash_road_v01_raw.png"
+      ],
+      "prompt_records": [
+        "records/prompt_ash_road_v01.json"
+      ],
+      "source_records": [
+        {
+          "path": "originals/ash_road_v01_raw.png",
+          "sha256": "bf27aca3b91f5ba2d90122bb80228b93813a7b7046ed9746dd635c438879fef7"
+        }
+      ],
+      "candidate": "candidates/ash_road_v01.png",
+      "sha256": "5a750cce0a2f760b2d3c83452fd9d3e6c93e99d7df09b6ad3aa238a2f2a1a1bf",
+      "palette_colors": 48,
+      "alpha_values": [
+        255
+      ],
+      "status": "art self-reviewed; isolated controlled visual preview; production integration pending"
+    },
+    {
+      "task": "M01",
+      "id": "ash_road_edge_n",
+      "path": "assets/sprites/ground/vigrid/ash_road_edge_n.png",
+      "frame_size": [
+        64,
+        64
+      ],
+      "frames": 1,
+      "fps": 0,
+      "loop": false,
+      "anchor": [
+        32,
+        32
+      ],
+      "source": [
+        "originals/ash_road_v01_raw.png",
+        "assets/sprites/ground/helheim/bone_path_edge_n.png"
+      ],
+      "prompt_records": [
+        "records/prompt_ash_road_v01.json"
+      ],
+      "source_records": [
+        {
+          "path": "originals/ash_road_v01_raw.png",
+          "sha256": "bf27aca3b91f5ba2d90122bb80228b93813a7b7046ed9746dd635c438879fef7"
+        },
+        {
+          "path": "assets/sprites/ground/helheim/bone_path_edge_n.png",
+          "sha256": "1e8cfd3fe8f15bf02b0f38669cc5b5846fb6329e93e5bce40bf8b3b28552c055"
+        }
+      ],
+      "candidate": "candidates/ash_road_edge_n_v02.png",
+      "sha256": "dac8a9bf37cfe2fba6d2257c59ab557eeb96895b7a1ba9a0d7b1877e8c54fa77",
+      "palette_colors": 48,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "status": "art self-reviewed; isolated controlled visual preview; production integration pending"
+    },
+    {
+      "task": "M01",
+      "id": "ash_road_edge_s",
+      "path": "assets/sprites/ground/vigrid/ash_road_edge_s.png",
+      "frame_size": [
+        64,
+        64
+      ],
+      "frames": 1,
+      "fps": 0,
+      "loop": false,
+      "anchor": [
+        32,
+        32
+      ],
+      "source": [
+        "originals/ash_road_v01_raw.png",
+        "assets/sprites/ground/helheim/bone_path_edge_s.png"
+      ],
+      "prompt_records": [
+        "records/prompt_ash_road_v01.json"
+      ],
+      "source_records": [
+        {
+          "path": "originals/ash_road_v01_raw.png",
+          "sha256": "bf27aca3b91f5ba2d90122bb80228b93813a7b7046ed9746dd635c438879fef7"
+        },
+        {
+          "path": "assets/sprites/ground/helheim/bone_path_edge_s.png",
+          "sha256": "e9552bbc6a7562ae9070a326eeebe62267ae95de443151317fd3affe610d27a3"
+        }
+      ],
+      "candidate": "candidates/ash_road_edge_s_v02.png",
+      "sha256": "d0c7fad40f121015fc9a9e14197f29097cb16f886435a3aaddc8490f471b722d",
+      "palette_colors": 48,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "status": "art self-reviewed; isolated controlled visual preview; production integration pending"
+    },
+    {
+      "task": "M01",
+      "id": "ash_road_edge_e",
+      "path": "assets/sprites/ground/vigrid/ash_road_edge_e.png",
+      "frame_size": [
+        64,
+        64
+      ],
+      "frames": 1,
+      "fps": 0,
+      "loop": false,
+      "anchor": [
+        32,
+        32
+      ],
+      "source": [
+        "originals/ash_road_v01_raw.png",
+        "assets/sprites/ground/helheim/bone_path_edge_e.png"
+      ],
+      "prompt_records": [
+        "records/prompt_ash_road_v01.json"
+      ],
+      "source_records": [
+        {
+          "path": "originals/ash_road_v01_raw.png",
+          "sha256": "bf27aca3b91f5ba2d90122bb80228b93813a7b7046ed9746dd635c438879fef7"
+        },
+        {
+          "path": "assets/sprites/ground/helheim/bone_path_edge_e.png",
+          "sha256": "2128c02127cb4eede9b3684e25249f8d9778adecb28dcf162668acffaf358a8c"
+        }
+      ],
+      "candidate": "candidates/ash_road_edge_e_v02.png",
+      "sha256": "738b7cad82fcfa7817298181c17451157a4a427559bcc8265277bd765ec36334",
+      "palette_colors": 48,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "status": "art self-reviewed; isolated controlled visual preview; production integration pending"
+    },
+    {
+      "task": "M01",
+      "id": "ash_road_edge_w",
+      "path": "assets/sprites/ground/vigrid/ash_road_edge_w.png",
+      "frame_size": [
+        64,
+        64
+      ],
+      "frames": 1,
+      "fps": 0,
+      "loop": false,
+      "anchor": [
+        32,
+        32
+      ],
+      "source": [
+        "originals/ash_road_v01_raw.png",
+        "assets/sprites/ground/helheim/bone_path_edge_w.png"
+      ],
+      "prompt_records": [
+        "records/prompt_ash_road_v01.json"
+      ],
+      "source_records": [
+        {
+          "path": "originals/ash_road_v01_raw.png",
+          "sha256": "bf27aca3b91f5ba2d90122bb80228b93813a7b7046ed9746dd635c438879fef7"
+        },
+        {
+          "path": "assets/sprites/ground/helheim/bone_path_edge_w.png",
+          "sha256": "bcb2f7b89e82b92e573adacdcd9587b26b779f3aa4a7ff16009ca6b3d4c9ed71"
+        }
+      ],
+      "candidate": "candidates/ash_road_edge_w_v02.png",
+      "sha256": "f546617c523f150a3b4f9391e2cdd9c698bdae86b4d5ccb4af834532392ab51f",
+      "palette_colors": 48,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "status": "art self-reviewed; isolated controlled visual preview; production integration pending"
+    },
+    {
+      "task": "M01",
+      "id": "ash_road_edge_inner_ne",
+      "path": "assets/sprites/ground/vigrid/ash_road_edge_inner_ne.png",
+      "frame_size": [
+        64,
+        64
+      ],
+      "frames": 1,
+      "fps": 0,
+      "loop": false,
+      "anchor": [
+        32,
+        32
+      ],
+      "source": [
+        "originals/ash_road_v01_raw.png",
+        "assets/sprites/ground/helheim/bone_path_edge_inner_ne.png"
+      ],
+      "prompt_records": [
+        "records/prompt_ash_road_v01.json"
+      ],
+      "source_records": [
+        {
+          "path": "originals/ash_road_v01_raw.png",
+          "sha256": "bf27aca3b91f5ba2d90122bb80228b93813a7b7046ed9746dd635c438879fef7"
+        },
+        {
+          "path": "assets/sprites/ground/helheim/bone_path_edge_inner_ne.png",
+          "sha256": "632ddd6167395060c0f29ddd1ec6b5a11dec6dd0f09a2c2cf0695be7ca361e37"
+        }
+      ],
+      "candidate": "candidates/ash_road_edge_inner_ne_v02.png",
+      "sha256": "1d12fc5fbec7c10333ab61279ff6cd92f27609bf955ee4d829ca7cf42c0830bf",
+      "palette_colors": 48,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "status": "art self-reviewed; isolated controlled visual preview; production integration pending"
+    },
+    {
+      "task": "M01",
+      "id": "ash_road_edge_inner_nw",
+      "path": "assets/sprites/ground/vigrid/ash_road_edge_inner_nw.png",
+      "frame_size": [
+        64,
+        64
+      ],
+      "frames": 1,
+      "fps": 0,
+      "loop": false,
+      "anchor": [
+        32,
+        32
+      ],
+      "source": [
+        "originals/ash_road_v01_raw.png",
+        "assets/sprites/ground/helheim/bone_path_edge_inner_nw.png"
+      ],
+      "prompt_records": [
+        "records/prompt_ash_road_v01.json"
+      ],
+      "source_records": [
+        {
+          "path": "originals/ash_road_v01_raw.png",
+          "sha256": "bf27aca3b91f5ba2d90122bb80228b93813a7b7046ed9746dd635c438879fef7"
+        },
+        {
+          "path": "assets/sprites/ground/helheim/bone_path_edge_inner_nw.png",
+          "sha256": "fd98f557bb1c7ba1fadcca54846b4188c62ae832e588683d7823706fb2d75f20"
+        }
+      ],
+      "candidate": "candidates/ash_road_edge_inner_nw_v02.png",
+      "sha256": "5100ca6f0cac17828b0a6e539ba4825abee6f52d2000caa0763def62380ee31f",
+      "palette_colors": 48,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "status": "art self-reviewed; isolated controlled visual preview; production integration pending"
+    },
+    {
+      "task": "M01",
+      "id": "ash_road_edge_inner_se",
+      "path": "assets/sprites/ground/vigrid/ash_road_edge_inner_se.png",
+      "frame_size": [
+        64,
+        64
+      ],
+      "frames": 1,
+      "fps": 0,
+      "loop": false,
+      "anchor": [
+        32,
+        32
+      ],
+      "source": [
+        "originals/ash_road_v01_raw.png",
+        "assets/sprites/ground/helheim/bone_path_edge_inner_se.png"
+      ],
+      "prompt_records": [
+        "records/prompt_ash_road_v01.json"
+      ],
+      "source_records": [
+        {
+          "path": "originals/ash_road_v01_raw.png",
+          "sha256": "bf27aca3b91f5ba2d90122bb80228b93813a7b7046ed9746dd635c438879fef7"
+        },
+        {
+          "path": "assets/sprites/ground/helheim/bone_path_edge_inner_se.png",
+          "sha256": "b0a60d46d1d4766cf3eb6aea876ed1c0b9d1021f945a1adce9c064753e18208a"
+        }
+      ],
+      "candidate": "candidates/ash_road_edge_inner_se_v02.png",
+      "sha256": "76b384d690a15fc8e8f44468910a4eb5ce3a9544cba8894785dfbb7cf86b658d",
+      "palette_colors": 48,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "status": "art self-reviewed; isolated controlled visual preview; production integration pending"
+    },
+    {
+      "task": "M01",
+      "id": "ash_road_edge_inner_sw",
+      "path": "assets/sprites/ground/vigrid/ash_road_edge_inner_sw.png",
+      "frame_size": [
+        64,
+        64
+      ],
+      "frames": 1,
+      "fps": 0,
+      "loop": false,
+      "anchor": [
+        32,
+        32
+      ],
+      "source": [
+        "originals/ash_road_v01_raw.png",
+        "assets/sprites/ground/helheim/bone_path_edge_inner_sw.png"
+      ],
+      "prompt_records": [
+        "records/prompt_ash_road_v01.json"
+      ],
+      "source_records": [
+        {
+          "path": "originals/ash_road_v01_raw.png",
+          "sha256": "bf27aca3b91f5ba2d90122bb80228b93813a7b7046ed9746dd635c438879fef7"
+        },
+        {
+          "path": "assets/sprites/ground/helheim/bone_path_edge_inner_sw.png",
+          "sha256": "ed226b6d138cf23797aa7ea64a132fbe312d2371733b2f83169d047af408bc45"
+        }
+      ],
+      "candidate": "candidates/ash_road_edge_inner_sw_v02.png",
+      "sha256": "43f8f3169f951b89b2b2bcdfa26e56239b9a41c4fc24460f9fd9e7944d8e0f03",
+      "palette_colors": 48,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "status": "art self-reviewed; isolated controlled visual preview; production integration pending"
+    },
+    {
+      "task": "M01",
+      "id": "ash_road_edge_outer_ne",
+      "path": "assets/sprites/ground/vigrid/ash_road_edge_outer_ne.png",
+      "frame_size": [
+        64,
+        64
+      ],
+      "frames": 1,
+      "fps": 0,
+      "loop": false,
+      "anchor": [
+        32,
+        32
+      ],
+      "source": [
+        "originals/ash_road_v01_raw.png",
+        "assets/sprites/ground/helheim/bone_path_edge_outer_ne.png"
+      ],
+      "prompt_records": [
+        "records/prompt_ash_road_v01.json"
+      ],
+      "source_records": [
+        {
+          "path": "originals/ash_road_v01_raw.png",
+          "sha256": "bf27aca3b91f5ba2d90122bb80228b93813a7b7046ed9746dd635c438879fef7"
+        },
+        {
+          "path": "assets/sprites/ground/helheim/bone_path_edge_outer_ne.png",
+          "sha256": "fc1d640ead93426d5cac01c91bc4a03ed0e10331fd04117c235e0a4b000a24c8"
+        }
+      ],
+      "candidate": "candidates/ash_road_edge_outer_ne_v02.png",
+      "sha256": "58ac6ece9b7a1edbc8dcc10b7f2dc6b7cdeb164557d03a6c817c7f5b96632905",
+      "palette_colors": 48,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "status": "art self-reviewed; isolated controlled visual preview; production integration pending"
+    },
+    {
+      "task": "M01",
+      "id": "ash_road_edge_outer_nw",
+      "path": "assets/sprites/ground/vigrid/ash_road_edge_outer_nw.png",
+      "frame_size": [
+        64,
+        64
+      ],
+      "frames": 1,
+      "fps": 0,
+      "loop": false,
+      "anchor": [
+        32,
+        32
+      ],
+      "source": [
+        "originals/ash_road_v01_raw.png",
+        "assets/sprites/ground/helheim/bone_path_edge_outer_nw.png"
+      ],
+      "prompt_records": [
+        "records/prompt_ash_road_v01.json"
+      ],
+      "source_records": [
+        {
+          "path": "originals/ash_road_v01_raw.png",
+          "sha256": "bf27aca3b91f5ba2d90122bb80228b93813a7b7046ed9746dd635c438879fef7"
+        },
+        {
+          "path": "assets/sprites/ground/helheim/bone_path_edge_outer_nw.png",
+          "sha256": "c6de6324cc9bf3b2492fe79f49bb85c3eb4e2038562b216eb03e90e59c4ec2e2"
+        }
+      ],
+      "candidate": "candidates/ash_road_edge_outer_nw_v02.png",
+      "sha256": "f4d6abfe6ceb20a6429d199456d6e949e173bf1695d5a2bdcbc8278a133af47c",
+      "palette_colors": 48,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "status": "art self-reviewed; isolated controlled visual preview; production integration pending"
+    },
+    {
+      "task": "M01",
+      "id": "ash_road_edge_outer_se",
+      "path": "assets/sprites/ground/vigrid/ash_road_edge_outer_se.png",
+      "frame_size": [
+        64,
+        64
+      ],
+      "frames": 1,
+      "fps": 0,
+      "loop": false,
+      "anchor": [
+        32,
+        32
+      ],
+      "source": [
+        "originals/ash_road_v01_raw.png",
+        "assets/sprites/ground/helheim/bone_path_edge_outer_se.png"
+      ],
+      "prompt_records": [
+        "records/prompt_ash_road_v01.json"
+      ],
+      "source_records": [
+        {
+          "path": "originals/ash_road_v01_raw.png",
+          "sha256": "bf27aca3b91f5ba2d90122bb80228b93813a7b7046ed9746dd635c438879fef7"
+        },
+        {
+          "path": "assets/sprites/ground/helheim/bone_path_edge_outer_se.png",
+          "sha256": "5e56ea083102cfd1bda2189bd8d44e248a504159dbe97dcc129fcd0062e1b67f"
+        }
+      ],
+      "candidate": "candidates/ash_road_edge_outer_se_v02.png",
+      "sha256": "602faa449ae006a0b842d155371f9f5375cfcd9800ad429c4f7a83950bdec0c4",
+      "palette_colors": 48,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "status": "art self-reviewed; isolated controlled visual preview; production integration pending"
+    },
+    {
+      "task": "M01",
+      "id": "ash_road_edge_outer_sw",
+      "path": "assets/sprites/ground/vigrid/ash_road_edge_outer_sw.png",
+      "frame_size": [
+        64,
+        64
+      ],
+      "frames": 1,
+      "fps": 0,
+      "loop": false,
+      "anchor": [
+        32,
+        32
+      ],
+      "source": [
+        "originals/ash_road_v01_raw.png",
+        "assets/sprites/ground/helheim/bone_path_edge_outer_sw.png"
+      ],
+      "prompt_records": [
+        "records/prompt_ash_road_v01.json"
+      ],
+      "source_records": [
+        {
+          "path": "originals/ash_road_v01_raw.png",
+          "sha256": "bf27aca3b91f5ba2d90122bb80228b93813a7b7046ed9746dd635c438879fef7"
+        },
+        {
+          "path": "assets/sprites/ground/helheim/bone_path_edge_outer_sw.png",
+          "sha256": "f129768957912f6e43e3f393c01ec671dec81e303db64f1368be1062f3b41ccd"
+        }
+      ],
+      "candidate": "candidates/ash_road_edge_outer_sw_v02.png",
+      "sha256": "ceb00533f3d1acb828c98f1e33ee1336fe5e9c885778806ea46c0400e4672cbc",
+      "palette_colors": 48,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "status": "art self-reviewed; isolated controlled visual preview; production integration pending"
+    },
+    {
+      "task": "M01",
+      "id": "burnt_grass_02",
+      "path": "assets/sprites/ground/vigrid/burnt_grass_02.png",
+      "frame_size": [
+        64,
+        64
+      ],
+      "frames": 1,
+      "fps": 0,
+      "loop": false,
+      "anchor": [
+        32,
+        32
+      ],
+      "source": [
+        "originals/burnt_grass_02_v01_raw.png"
+      ],
+      "prompt_records": [
+        "records/prompt_burnt_grass_02_v01.json"
+      ],
+      "source_records": [
+        {
+          "path": "originals/burnt_grass_02_v01_raw.png",
+          "sha256": "9bbbc284c276ab82d2e5c8193e567a6f2db4695117d38404f6ff651e1484c996"
+        }
+      ],
+      "candidate": "candidates/burnt_grass_02_v01.png",
+      "sha256": "7d47b854af497aab3dc925ecff210a26908c9e14f0ec5bdc473e8aed67be30ba",
+      "palette_colors": 48,
+      "alpha_values": [
+        255
+      ],
+      "status": "art self-reviewed; isolated controlled visual preview; production integration pending"
+    },
+    {
+      "task": "M01",
+      "id": "cracked_lava_02",
+      "path": "assets/sprites/ground/vigrid/cracked_lava_02.png",
+      "frame_size": [
+        64,
+        64
+      ],
+      "frames": 1,
+      "fps": 0,
+      "loop": false,
+      "anchor": [
+        32,
+        32
+      ],
+      "source": [
+        "originals/cracked_lava_02_v01_raw.png"
+      ],
+      "prompt_records": [
+        "records/prompt_cracked_lava_02_v01.json"
+      ],
+      "source_records": [
+        {
+          "path": "originals/cracked_lava_02_v01_raw.png",
+          "sha256": "aebd1b66032bbce82b5cfb9e8ddd7e3be356aa87e2304de86ea9e9336c6a3423"
+        }
+      ],
+      "candidate": "candidates/cracked_lava_02_v02.png",
+      "sha256": "0135c141c31a042eafe5fc5aa6ed1adcc854c71a0140183161d0edc40f29f672",
+      "palette_colors": 48,
+      "alpha_values": [
+        255
+      ],
+      "status": "art self-reviewed; isolated controlled visual preview; production integration pending"
+    },
+    {
+      "task": "M02",
+      "id": "surtr_sword_arc_large",
+      "path": "assets/sprites/effects/bosses/surtr_sword_arc_large.png",
+      "frame_size": [
+        640,
+        640
+      ],
+      "frames": 4,
+      "fps": 16,
+      "loop": false,
+      "anchor": [
+        320,
+        320
+      ],
+      "radius": 290,
+      "half_angle": 1.05,
+      "scale": [
+        1,
+        1
+      ],
+      "source": [
+        "originals/surtr_sword_arc_large_f00_v01_raw.png",
+        "originals/surtr_sword_arc_large_f01_v01_raw.png",
+        "originals/surtr_sword_arc_large_f02_v01_raw.png",
+        "originals/surtr_sword_arc_large_f03_v01_raw.png"
+      ],
+      "prompt_records": [
+        "records/prompt_surtr_sword_arc_large_f00_v01.json",
+        "records/prompt_surtr_sword_arc_large_f01_v01.json",
+        "records/prompt_surtr_sword_arc_large_f02_v01.json",
+        "records/prompt_surtr_sword_arc_large_f03_v01.json"
+      ],
+      "source_records": [
+        {
+          "path": "originals/surtr_sword_arc_large_f00_v01_raw.png",
+          "sha256": "65eebb815acc494a6234a874f95e5b86a2f9c2b9be8d27f06f652c66cbea5af8"
+        },
+        {
+          "path": "originals/surtr_sword_arc_large_f01_v01_raw.png",
+          "sha256": "b3e0fa613ca61ecd506687339cafe60f5a753015cdc9888d9167fa0c753dc7b3"
+        },
+        {
+          "path": "originals/surtr_sword_arc_large_f02_v01_raw.png",
+          "sha256": "6d0811fcb9c8a6fcb1d08baebd8e3ab327498989b0a52415d4ede0f11f582689"
+        },
+        {
+          "path": "originals/surtr_sword_arc_large_f03_v01_raw.png",
+          "sha256": "d734669e43448862cbab02a6cffe05629c385ebfbfdfc66e53c57eaae9125434"
+        }
+      ],
+      "candidate": "candidates/surtr_sword_arc_large_v01.png",
+      "sha256": "7300943dcd97ff473b2ad40061fe015df74c2112e8334097ea33e813b6cb8eeb",
+      "palette_colors": 48,
+      "alpha_values": [
+        0,
+        24,
+        48,
+        72,
+        120,
+        168,
+        216,
+        255
+      ],
+      "status": "art self-reviewed; isolated controlled visual preview; production integration pending"
+    },
+    {
+      "task": "M03",
+      "id": "aid_freyja",
+      "path": "assets/sprites/effects/gods/aid_freyja.png",
+      "frame_size": [
+        320,
+        320
+      ],
+      "frames": 8,
+      "fps": 12,
+      "loop": false,
+      "anchor": [
+        160,
+        160
+      ],
+      "radius": 140,
+      "center_alpha_max": 216,
+      "last_frame_empty": true,
+      "source": [
+        "originals/aid_freyja_v01_raw.png"
+      ],
+      "prompt_records": [
+        "records/prompt_aid_freyja_v01.json"
+      ],
+      "source_records": [
+        {
+          "path": "originals/aid_freyja_v01_raw.png",
+          "sha256": "06a2f4f83416ccebb6db02a50650f25b9e2d1e3a61a29dffe92a7e04a196f60a"
+        }
+      ],
+      "candidate": "candidates/aid_freyja_v03.png",
+      "sha256": "c9ab64c3223e57684134626ffc9b68b9e4ef8c104e01b34b818c162657b79372",
+      "palette_colors": 48,
+      "alpha_values": [
+        0,
+        24,
+        48,
+        72,
+        112,
+        152,
+        192,
+        216
+      ],
+      "status": "art self-reviewed; isolated controlled visual preview; production integration pending"
+    },
+    {
+      "task": "M03",
+      "id": "aid_baldr",
+      "path": "assets/sprites/effects/gods/aid_baldr.png",
+      "frame_size": [
+        320,
+        320
+      ],
+      "frames": 8,
+      "fps": 12,
+      "loop": false,
+      "anchor": [
+        160,
+        160
+      ],
+      "radius": 110,
+      "center_alpha_max": 216,
+      "last_frame_empty": true,
+      "source": [
+        "originals/aid_baldr_v01_raw.png"
+      ],
+      "prompt_records": [
+        "records/prompt_aid_baldr_v01.json"
+      ],
+      "source_records": [
+        {
+          "path": "originals/aid_baldr_v01_raw.png",
+          "sha256": "c9af92f006210c3f7e0077b48e58c1d400315ae139afa5da9e6b29239f87a589"
+        }
+      ],
+      "candidate": "candidates/aid_baldr_v03.png",
+      "sha256": "46594b7398daa10738ac280cc061879cd25a781d2fe20307ccb72a256a70caba",
+      "palette_colors": 48,
+      "alpha_values": [
+        0,
+        24,
+        48,
+        72,
+        112,
+        152,
+        192,
+        216
+      ],
+      "status": "art self-reviewed; isolated controlled visual preview; production integration pending"
+    },
+    {
+      "task": "M03",
+      "id": "aid_ran",
+      "path": "assets/sprites/effects/gods/aid_ran.png",
+      "frame_size": [
+        320,
+        320
+      ],
+      "frames": 8,
+      "fps": 12,
+      "loop": false,
+      "anchor": [
+        160,
+        160
+      ],
+      "radius": 130,
+      "center_alpha_max": 216,
+      "last_frame_empty": true,
+      "source": [
+        "originals/aid_ran_v01_raw.png"
+      ],
+      "prompt_records": [
+        "records/prompt_aid_ran_v01.json"
+      ],
+      "source_records": [
+        {
+          "path": "originals/aid_ran_v01_raw.png",
+          "sha256": "812198480ecfd8a074bb62e894f842b0eb3280de758b6e44e0f208c17cd1aa30"
+        }
+      ],
+      "candidate": "candidates/aid_ran_v03.png",
+      "sha256": "85dc5c6f2af49eb2d47f601222f3f62636b06c93c008805bf5f75680cc91672c",
+      "palette_colors": 48,
+      "alpha_values": [
+        0,
+        24,
+        48,
+        72,
+        112,
+        152,
+        192,
+        216
+      ],
+      "status": "art self-reviewed; isolated controlled visual preview; production integration pending"
+    },
+    {
+      "task": "M03",
+      "id": "aid_skadi",
+      "path": "assets/sprites/effects/gods/aid_skadi.png",
+      "frame_size": [
+        320,
+        320
+      ],
+      "frames": 8,
+      "fps": 12,
+      "loop": false,
+      "anchor": [
+        160,
+        160
+      ],
+      "radius": 130,
+      "center_alpha_max": 216,
+      "last_frame_empty": true,
+      "source": [
+        "originals/aid_skadi_v01_raw.png"
+      ],
+      "prompt_records": [
+        "records/prompt_aid_skadi_v01.json"
+      ],
+      "source_records": [
+        {
+          "path": "originals/aid_skadi_v01_raw.png",
+          "sha256": "10d3125bdbc8e3abbc93f5e773249a5675391843511228f8cf299d6f0d03eaf2"
+        }
+      ],
+      "candidate": "candidates/aid_skadi_v03.png",
+      "sha256": "5a6aadf65fe1a922a72f6e7e4f95ce76242fa25f466cd72b763eaaec5320651d",
+      "palette_colors": 48,
+      "alpha_values": [
+        0,
+        24,
+        48,
+        72,
+        112,
+        152,
+        192,
+        216
+      ],
+      "status": "art self-reviewed; isolated controlled visual preview; production integration pending"
+    }
+  ],
+  "file_count": 20,
+  "frame_units": 51,
+  "generation": "OpenAI built-in imagegen; 11 retained raw generations; sources are larger than logical final delivery",
+  "licensing": "assets/LICENSES.md M-ART-01–03 entry; OpenAI output ownership terms; nonexclusive; Pillow/Godot processing",
+  "runtime_evidence": [
+    {
+      "folder": "previews/terrain_game_final",
+      "count": 18,
+      "scope": "actualGame isolatedterrainpatch; no productionintegration or fullplaythrough"
+    },
+    {
+      "folder": "previews/fx_game_final",
+      "count": 41,
+      "scope": "controlled visual review in isolated actual Game; aid uses explicit review renderer, no automatic triggering or full-play QA"
+    }
+  ],
+  "production_code_modified": false,
+  "full_game_acceptance": false,
+  "code_integration": {
+    "status": "completed",
+    "authorized": "2026-10-20 user requested formal integration and complete testing",
+    "report": "integration_2026-10-20/RESULTS.md",
+    "regression_assertions": 9148,
+    "regression_failures": 0,
+    "additional_result_layout_checks": 8,
+    "controlled_full_flow": "passed in actual window with invincible bot and fixed60Hz accelerated simulation",
+    "normal_realtime_clear": "failed; maxmeta bot died at09:22 Surtr phase2",
+    "full_game_acceptance": false,
+    "git_commit_or_push": false
+  }
+}

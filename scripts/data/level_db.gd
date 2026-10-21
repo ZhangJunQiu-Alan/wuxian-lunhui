@@ -41,10 +41,10 @@ const NORSE_1 := {
 	"boss_hp_growth": 116.0,  # Boss 的血量：每过这么多秒多 100%（小怪的成长见 game.gd 的 enemy_hp_scale）
 	"max_enemies": 350,   # 同时存在的敌人上限，防止卡顿
 	"waves": [
-		{"from": 0, "interval": 1.2, "weights": {"draugr": 1}},
-		{"from": 20, "interval": 0.9, "weights": {"draugr": 3, "wolf": 2}},
-		{"from": 60, "interval": 0.7, "weights": {"draugr": 3, "wolf": 2, "ice_spirit": 1}},
-		{"from": 120, "interval": 0.55, "weights": {"draugr": 3, "wolf": 2, "ice_spirit": 2, "frost_giant": 1}},
+		{"from": 0, "interval": 0.8, "weights": {"draugr": 1}},
+		{"from": 20, "interval": 0.6, "weights": {"draugr": 3, "wolf": 2}},
+		{"from": 60, "interval": 0.5, "weights": {"draugr": 3, "wolf": 2, "ice_spirit": 1}},
+		{"from": 120, "interval": 0.45, "weights": {"draugr": 3, "wolf": 2, "ice_spirit": 2, "frost_giant": 1}},
 		{"from": 200, "interval": 0.45, "weights": {"draugr": 2, "wolf": 3, "ice_spirit": 2, "frost_giant": 1}},
 		{"from": 320, "interval": 0.3, "weights": {"draugr": 3, "wolf": 3, "ice_spirit": 2, "frost_giant": 1}},
 		{"from": 440, "interval": 0.22, "weights": {"draugr": 3, "wolf": 3, "ice_spirit": 3, "frost_giant": 1}},
@@ -107,10 +107,10 @@ const NORSE_2 := {
 	"boss_hp_growth": 106.0,
 	"max_enemies": 350,
 	"waves": [
-		{"from": 0, "interval": 3.0, "weights": {"dead": 1}},
-		{"from": 25, "interval": 1.6, "weights": {"dead": 1, "dark_elf": 1}},
-		{"from": 65, "interval": 1.2, "weights": {"dead": 1, "dark_elf": 2, "mist_wraith": 1}},
-		{"from": 120, "interval": 0.95, "weights": {"dead": 1, "dark_elf": 2, "mist_wraith": 1, "nail_golem": 1}},
+		{"from": 0, "interval": 2.0, "weights": {"dead": 1}},
+		{"from": 25, "interval": 1.1, "weights": {"dead": 1, "dark_elf": 1}},
+		{"from": 65, "interval": 0.85, "weights": {"dead": 1, "dark_elf": 2, "mist_wraith": 1}},
+		{"from": 120, "interval": 0.8, "weights": {"dead": 1, "dark_elf": 2, "mist_wraith": 1, "nail_golem": 1}},
 		{"from": 200, "interval": 0.8, "weights": {"dead": 1, "dark_elf": 2, "mist_wraith": 2, "nail_golem": 1}},
 		{"from": 320, "interval": 0.55, "weights": {"dead": 1, "dark_elf": 3, "mist_wraith": 2, "nail_golem": 2}},
 		{"from": 440, "interval": 0.4, "weights": {"dead": 2, "dark_elf": 3, "mist_wraith": 2, "nail_golem": 2}},
@@ -143,7 +143,68 @@ const NORSE_2 := {
 	],
 }
 
-const ALL := {"midgard": NORSE_1, "helheim": NORSE_2}
+## 第 3 关没有支线；三个 Boss 都被实际击败后播放篇章结局（ending），结算显示改写的命运（fates）
+## 地图布局见 assets/source/taskK0_vigrid_plan_2026-10-20/layout.json；刷怪权重、成长是暂定值（见 VigridTuning 的说明）
+const NORSE_3 := {
+	"name": "最后之战",
+	"music": "vigrid",
+	"base_enemy": "dead",
+	"map": {
+		"size": Vector2(5120, 5120),
+		"border": 256.0,
+		"layout": "res://scripts/world/vigrid_map.gd",
+		"routes": [[Vector2(0, 0), Vector2(-1536, -1408)], [Vector2(0, 0), Vector2(1536, -1280)], [Vector2(0, 0), Vector2(-1536, 1024)],
+			[Vector2(0, 0), Vector2(1536, 1280)], [Vector2(0, 0), Vector2(0, 1792)], [Vector2(-1536, -1408), Vector2(1536, -1280)],
+			[Vector2(1536, -1280), Vector2(1536, 1280)], [Vector2(1536, 1280), Vector2(0, 1792)], [Vector2(0, 1792), Vector2(-1536, 1024)],
+			[Vector2(-1536, 1024), Vector2(-1536, -1408)]],
+		"horizon": Rect2(-768, -2480, 1536, 128),  # 北侧远景：神与巨人交战，不能走、不能打
+		"landmarks": [
+			{"id": "battlefield", "name": "中央燃烧平原", "pos": Vector2(0, 0), "radius": 1088.0},
+			{"id": "bifrost", "name": "崩塌彩虹桥残端", "pos": Vector2(-1536, -1408), "radius": 384.0},
+			{"id": "giant_graveyard", "name": "诸神与巨人残骸带", "pos": Vector2(1536, -1280), "radius": 384.0},
+			{"id": "frost_remnants", "name": "霜巨人残部", "pos": Vector2(-1536, 1024), "radius": 384.0},
+			{"id": "muspel_edge", "name": "穆斯贝尔前线", "pos": Vector2(1536, 1280), "radius": 448.0},
+			{"id": "dead_march", "name": "亡者残余行军带", "pos": Vector2(0, 1792), "radius": 256.0},
+		],
+	},
+	"boss_hp_growth": 100.0,
+	# 【暂定】小怪成长比前两关陡：血量 3 分钟约 2.7 倍、6 分钟约 6.0 倍、9 分钟约 11 倍（前两关 2.4 / 4.6 / 7.8）；攻击力每分钟 +15%（9 分钟 2.35 倍）
+	"enemy_growth": {"hp_linear": 0.3, "hp_square": 0.09, "damage_per_minute": 0.15},
+	"max_enemies": 350,
+	"waves": [
+		{"from": 0, "interval": 1.7, "weights": {"dead": 1}},
+		{"from": 20, "interval": 0.95, "weights": {"dead": 2, "wolf_berserker": 2}},
+		{"from": 60, "interval": 0.7, "weights": {"dead": 2, "wolf_berserker": 3, "fire_giant": 1}},
+		{"from": 120, "interval": 0.65, "weights": {"dead": 2, "wolf_berserker": 3, "fire_giant": 1, "frost_veteran": 1}},
+		{"from": 200, "interval": 0.65, "weights": {"dead": 2, "wolf_berserker": 3, "fire_giant": 2, "frost_veteran": 1}},
+		{"from": 320, "interval": 0.45, "weights": {"dead": 2, "wolf_berserker": 3, "fire_giant": 2, "frost_veteran": 2}},
+		{"from": 440, "interval": 0.3, "weights": {"dead": 3, "wolf_berserker": 3, "fire_giant": 2, "frost_veteran": 2}},
+		{"from": 540, "interval": 0.22, "weights": {"dead": 3, "wolf_berserker": 3, "fire_giant": 3, "frost_veteran": 2}},
+	],
+	"elite_from": 40.0,
+	"elite_every": 28.0,
+	"elite_pool": ["wolf_berserker", "fire_giant", "frost_veteran"],
+	"bosses": [
+		{"time": 180.0, "id": "jormungandr"},
+		{"time": 360.0, "id": "fenrir"},
+		{"time": 540.0, "id": "surtr"},
+	],
+	"clear_reward": 500,
+	"quest_slots": [],
+	"quests": [],
+	"clear_text": "",
+	"ending": "res://scripts/data/vigrid_ending_timeline.json",
+	"fates": ["thor_saved", "vidar_intervened", "freyr_assisted"],
+	"events": [
+		{"time": 50.0, "type": "ring", "enemy": "dead", "count": 30, "text": "纳吉尔法尔的幸存者涌了过来！"},
+		{"time": 140.0, "type": "ring", "enemy": "wolf_berserker", "count": 14, "text": "披着狼皮的狂战士围了上来！"},
+		{"time": 270.0, "type": "ring", "enemy": "fire_giant", "count": 8, "text": "穆斯贝尔的火焰巨人越过了前线！"},
+		{"time": 330.0, "type": "ring", "enemy": "frost_veteran", "count": 8, "text": "霜巨人的残部举起了盾牌！"},
+		{"time": 480.0, "type": "ring", "enemy": "dead", "count": 60, "text": "整片平原的亡者都站了起来！"},
+	],
+}
+
+const ALL := {"midgard": NORSE_1, "helheim": NORSE_2, "vigrid": NORSE_3}
 
 
 static func is_built(id: String) -> bool:

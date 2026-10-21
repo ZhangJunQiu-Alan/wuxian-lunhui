@@ -1,0 +1,23 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+SCRIPT ERROR: Compile Error: Identifier not found: Settings
+          at: GDScript::reload (res://scripts/entities/player.gd:354)
+SCRIPT ERROR: Compile Error: Identifier not found: Save
+          at: GDScript::reload (res://scripts/game.gd:431)
+SCRIPT ERROR: Compile Error: Failed to compile depended scripts.
+          at: GDScript::reload (res://scripts/world/map_layer.gd:0)
+SCRIPT ERROR: Compile Error: Identifier not found: Settings
+          at: GDScript::reload (res://scripts/effects/fx_layer.gd:36)
+SCRIPT ERROR: Compile Error: Failed to compile depended scripts.
+          at: GDScript::reload (res://scripts/bosses/boss.gd:0)
+SCRIPT ERROR: Compile Error: Failed to compile depended scripts.
+          at: GDScript::reload (res://scripts/gods/god_zone.gd:0)
+SCRIPT ERROR: Compile Error: Failed to compile depended scripts.
+          at: GDScript::reload (res://scripts/gods/god_power.gd:0)
+SCRIPT ERROR: Compile Error: Failed to compile depended scripts.
+          at: GDScript::reload (res://scripts/entities/enemy.gd:0)
+SCRIPT ERROR: Compile Error: Failed to compile depended scripts.
+          at: GDScript::reload (res://tools/test_spatial_queries.gd:0)
+ERROR: Failed to load script "res://tools/test_spatial_queries.gd" with error "Compilation failed".
+   at: load (modules/gdscript/gdscript_resource_format.cpp:46)
+SPATIAL_RESULT 481 checks 0 failures {"candidate_us":47499,"reference_us":65994}

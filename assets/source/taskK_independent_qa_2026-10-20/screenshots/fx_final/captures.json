@@ -1,0 +1,95 @@
+{
+	"captures": [
+		{
+			"camera_inside_map": true,
+			"camera_world_rect": [
+				-640.0,
+				-360.0,
+				1280.0,
+				720.0
+			],
+			"file": "daylight_firing.png",
+			"forced_render": true,
+			"master_muted": true,
+			"note": "Actual Game renderer: rotating beam burst, 5 rays, 3s firing duration",
+			"ok": true,
+			"window": [
+				1280,
+				720
+			]
+		},
+		{
+			"camera_inside_map": true,
+			"camera_world_rect": [
+				-640.0,
+				-360.0,
+				1280.0,
+				720.0
+			],
+			"file": "daylight_hidden_cd.png",
+			"forced_render": true,
+			"master_muted": true,
+			"note": "After 3s: rays and owned glow trails gone; 4s cooldown, internal angle still rotating",
+			"ok": true,
+			"window": [
+				1280,
+				720
+			]
+		},
+		{
+			"camera_inside_map": true,
+			"camera_world_rect": [
+				-640.0,
+				-360.0,
+				1280.0,
+				720.0
+			],
+			"file": "daylight_firing_again.png",
+			"forced_render": true,
+			"master_muted": true,
+			"note": "Cooldown ends: rays fire from the advanced internal rotation angle",
+			"ok": true,
+			"window": [
+				1280,
+				720
+			]
+		},
+		{
+			"camera_inside_map": true,
+			"camera_world_rect": [
+				-640.0,
+				-360.0,
+				1280.0,
+				720.0
+			],
+			"file": "rune_rings_compact.png",
+			"forced_render": true,
+			"master_muted": true,
+			"note": "80 enemies with actual resonance detonations: white rings radius<=48, alpha .45, maximum24; damage reach300 unchanged",
+			"ok": true,
+			"window": [
+				1280,
+				720
+			]
+		},
+		{
+			"camera_inside_map": true,
+			"camera_world_rect": [
+				-640.0,
+				-360.0,
+				1280.0,
+				720.0
+			],
+			"file": "winter_compact.png",
+			"forced_render": true,
+			"master_muted": true,
+			"note": "Awakened winter: visual radius128 and alpha .28; actual damage radius700 preserved",
+			"ok": true,
+			"window": [
+				1280,
+				720
+			]
+		}
+	],
+	"scope": "actual Game renderer, controlled positions, invincible, muted, manually advanced god phases; no natural-clear claim"
+}

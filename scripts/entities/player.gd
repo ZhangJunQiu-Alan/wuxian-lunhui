@@ -9,6 +9,7 @@ signal xp_changed(xp: float, xp_to_next: int, level: int)
 signal leveled_up(level: int)
 signal ult_changed(energy: float, cost: float)
 signal ult_cast(character_id: String)
+signal god_added(god_id: String)
 
 const SPRITE_HEIGHT := 48.0
 const MAX_LEVEL := 40
@@ -37,7 +38,7 @@ var regen := 0.0          # 每秒回复生命
 var dodge_chance := 0.0   # 闪避几率，0~1
 var rerolls := 0          # 本局还能重抽几次升级选项（主神空间购买）
 var revives := 0          # 本局还能复活几次（主神空间购买）
-var choice_count := 3     # 升级时有几个选项（法师的被动「先知」是 4 个）
+var choice_count := 4     # 升级和选择信仰时的基础选项数
 var frenzy_time := 0.0    # 枪手「狂野西部秀」剩余时间
 var speed_mult := 1.0     # 支线临时改变的移速（寒潮里冻僵、搬运余烬）
 var shield_time := 0.0    # 无敌剩余时间（刺客「入阵曲」），和受伤后的无敌不同，不会闪烁
@@ -63,6 +64,7 @@ var facing := Vector2.RIGHT  # 最后移动的方向
 # 大招：击杀充能，满了按 E 释放
 var ult_energy := 0.0
 var ult_cost := 50.0
+var active_ultimate: Node
 
 var upgrade_levels := {}  # 升级 id -> 已选次数
 var faith := {}           # 神明 id -> 信仰值
@@ -92,6 +94,7 @@ var _attack_dir := Vector2.RIGHT
 var _attack_lunge := 7.0
 var _shake_strength := 0.0
 var _shake_time := 0.0
+var _shove := Vector2.ZERO  # 被撞飞（巨蛇的身体）：额外的位移速度，很快衰减
 
 
 func _ready() -> void:
@@ -117,8 +120,6 @@ func _ready() -> void:
 	hp = max_hp
 	move_speed = data.speed
 	ult_cost = data.ult_cost
-	if character_id == "mage":
-		choice_count = 4  # 先知
 
 	# 素材：assets/sprites/characters/<角色id>_idle/_move/_hurt/_death.png 动作帧条，没有就用 <角色id>.png
 	_actions = SpriteVisual.create_actions(CharacterDB.CUTIN_DIR + character_id, SPRITE_HEIGHT, ACTIONS)
@@ -163,6 +164,11 @@ func _physics_process(delta: float) -> void:
 		var slowed := maxf(speed_mult, 1.0) if slow_immune else speed_mult
 		velocity = dir * move_speed * slowed * (1.3 if frenzy_time > 0.0 else 1.0)  # 狂野西部秀：移速 +30%
 		move_and_slide()
+		if _shove != Vector2.ZERO:
+			position += _shove * delta
+			_shove *= exp(-8.0 * delta)
+			if _shove.length() < 5.0:
+				_shove = Vector2.ZERO
 		position = MapLayer.push_out(Game.clamp_to_map(position, RADIUS), RADIUS)
 
 	if regen > 0.0 and hp < max_hp:
@@ -324,6 +330,8 @@ func _spawn_ghost(alpha: float) -> void:
 
 
 func add_ult_energy(amount: float) -> void:
+	if is_instance_valid(active_ultimate):
+		return
 	if ult_energy < ult_cost and ult_energy + amount >= ult_cost:
 		Audio.sfx("ult_ready")
 	ult_energy = minf(ult_cost, ult_energy + amount)
@@ -331,7 +339,7 @@ func add_ult_energy(amount: float) -> void:
 
 
 func try_ultimate() -> void:
-	if is_dead or ult_energy < ult_cost:
+	if is_dead or is_instance_valid(active_ultimate) or ult_energy < ult_cost:
 		return
 	ult_energy = 0.0
 	ult_changed.emit(ult_energy, ult_cost)
@@ -406,6 +414,7 @@ func add_god(god_id: String) -> void:
 	var power := GodPower.create(god_id)
 	gods[god_id] = power
 	add_child(power)
+	god_added.emit(god_id)
 
 
 ## 基础武器的冷却倍率
@@ -447,6 +456,18 @@ func revive() -> void:
 	Audio.sfx("revive")
 	FxLayer.burst(global_position, Color(1.0, 0.9, 0.5), 50, 320.0, 4.0)
 	Enemy.damage_in_radius(get_tree(), global_position, 260.0, 0.0, 900.0)
+
+
+## 撞飞：velocity 是初速度，闪现中不受影响
+func shove(velocity_push: Vector2) -> void:
+	if is_dead or _dash_t >= 0.0:
+		return
+	_shove = velocity_push
+
+
+## 闪现、护盾、无敌时不会受伤（Boss 的即死、撞飞判定用它决定要不要演出）
+func is_invulnerable() -> bool:
+	return _invincible_time > 0.0 or shield_time > 0.0 or _dash_time > 0.0 or immune_time > 0.0
 
 
 ## 恐惧：duration 秒内不受控制地远离 from

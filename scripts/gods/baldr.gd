@@ -20,6 +20,9 @@ const SPEAR_COOLDOWN := 1.5
 const CROSS_LENGTH := 300.0
 const PILLAR_SPIN := 1.2
 const PILLAR_LENGTH := 0.6     # 白昼：光柱长度 = 光束长度 × 这个
+const PILLAR_BURST := 3.0
+const PILLAR_REST := 4.0
+const PILLAR_MIN_REST := 1.5
 const PILLAR_HIT := 0.25
 const PILLAR_DAMAGE := 0.35
 const WARD_MAX := 3
@@ -31,6 +34,9 @@ var _beams: Array[Dictionary] = []   # 正在显示的光束：a、b、width、l
 var _spears: Array[Dictionary] = []
 var _pillar_angle := 0.0
 var _pillar_hit := {}
+var _pillars_active := true
+var _pillar_remaining := PILLAR_BURST
+var _pillar_glows: Array[GodZone] = []
 var _glow_timer := 0.0
 var _flash := FLASH_EVERY
 var _flash_show := 0.0
@@ -133,12 +139,13 @@ func _after_hit(enemy: Enemy) -> void:
 			FxLayer.burst(global_position, Color(1.0, 0.95, 0.7), 30, 220.0, 4.0)
 
 
-func _afterglow(a: Vector2, b: Vector2, beam_width: float) -> void:
+func _afterglow(a: Vector2, b: Vector2, beam_width: float) -> GodZone:
 	var glow := func(enemy: Enemy) -> void:
 		enemy.take_damage(damage(BASE_DAMAGE) * 0.3)
 		enemy.add_status("light", LIGHT_TIME)
 	var strip := line_zone(a, b, beam_width, stat("baldr_afterglow"), 0.5, glow, Color(1.0, 0.92, 0.6))
 	strip.texture = art("baldr_glow")
+	return strip
 
 
 func on_enemy_died(enemy: Enemy) -> void:
@@ -190,7 +197,26 @@ func pillars() -> int:
 
 
 func _tick_pillars(delta: float) -> void:
-	_pillar_angle = fmod(_pillar_angle + PILLAR_SPIN * delta / cooldown(1.0), TAU)
+	_pillar_angle = fmod(_pillar_angle + PILLAR_SPIN * delta, TAU)
+	_pillar_remaining -= delta
+	while _pillar_remaining <= 0.0:
+		_pillars_active = not _pillars_active
+		if _pillars_active:
+			_pillar_remaining += PILLAR_BURST
+			Audio.sfx_or("light_beam", "rune_bolt", -5.0)
+		else:
+			_pillar_remaining += maxf(PILLAR_MIN_REST, cooldown(PILLAR_REST))
+			for glow in _pillar_glows:
+				if is_instance_valid(glow):
+					glow.on_tick = Callable()
+					glow.set_process(false)
+					glow.queue_free()
+			_pillar_glows.clear()
+			_pillar_hit.clear()
+			_glow_timer = 0.0
+	if not _pillars_active:
+		return
+	_pillar_glows.assign(_pillar_glows.filter(func(glow): return is_instance_valid(glow) and not glow.is_queued_for_deletion()))
 	var reach := length() * PILLAR_LENGTH
 	_glow_timer -= delta
 	var leave_glow := _glow_timer <= 0.0 and stat("baldr_afterglow") > 0.0
@@ -205,7 +231,7 @@ func _tick_pillars(delta: float) -> void:
 			enemy.take_damage(damage(BASE_DAMAGE) * PILLAR_DAMAGE * enemy.area_mult())
 			_after_hit(enemy)
 		if leave_glow:
-			_afterglow(global_position.lerp(tip, 0.4), tip, width() * 0.7)
+			_pillar_glows.append(_afterglow(global_position.lerp(tip, 0.4), tip, width() * 0.7))
 	if _pillar_hit.size() > 300:
 		for enemy in _pillar_hit.keys():
 			if not is_instance_valid(enemy):
@@ -215,7 +241,7 @@ func _tick_pillars(delta: float) -> void:
 func _draw() -> void:
 	for beam in _beams:
 		_draw_beam(to_local(beam.a), to_local(beam.b), beam.width, beam.life / BEAM_SHOW)
-	if path == "baldr_daylight":
+	if path == "baldr_daylight" and _pillars_active:
 		var reach := length() * PILLAR_LENGTH
 		for i in pillars():
 			var tip := Vector2.from_angle(_pillar_angle + TAU * i / pillars()) * reach

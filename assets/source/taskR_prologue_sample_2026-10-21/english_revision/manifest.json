@@ -1,0 +1,1046 @@
+{
+  "task": "R English B narration and dynamic music mix",
+  "direction": "B: 阴沉预言; user selected sample direction only",
+  "language": "English",
+  "subtitles": "Chinese default; English localization retained",
+  "model": "mlx-community/Qwen3-TTS-12Hz-1.7B-VoiceDesign-4bit",
+  "model_license": "Apache-2.0",
+  "inference": "MLX-Audio 0.6.1 / MIT",
+  "reference_audio": "none; original text-designed narrator",
+  "seed": 271021,
+  "selected_raw_wav_count": 12,
+  "comparison_samples": 2,
+  "superseded_A_lines": 4,
+  "formal_audio_stems": 9,
+  "runtime_code_changed_by_audio_revision": false,
+  "full_set_subjective_listening": "pending",
+  "validation": {
+    "headless_routes": {
+      "checks": 230,
+      "failures": []
+    },
+    "window_routes": {
+      "checks": 230,
+      "failures": []
+    },
+    "audio": {
+      "midgard": {
+        "stems": {
+          "music": {
+            "seconds": 41.084,
+            "peak_dbfs": -13.978038787841797,
+            "sha256": "cf0a9b4f60a4767cf2d0d10578a43419031496bf50a48c2a1e0190917cd36c3a"
+          },
+          "effects": {
+            "seconds": 41.084,
+            "peak_dbfs": -27.058889389038086,
+            "sha256": "e9d2b6e0401361c98d6812f702870d69288db3feff9d5191e2d69865bdca2ca0"
+          },
+          "narration": {
+            "seconds": 41.084,
+            "peak_dbfs": -5.942477703094482,
+            "sha256": "993acd50f8b7ce4a112bbc33bae096fe7e693d635ba7dfd78130bb99d0e4e6d6"
+          }
+        },
+        "combined_at_default_bus_gain_peak_dbfs": -7.266362190246582,
+        "no_clipped_or_nonfinite_samples": true,
+        "voice_starts_after_one_second": true,
+        "subjective_listening": "pending_user_review"
+      },
+      "helheim": {
+        "stems": {
+          "music": {
+            "seconds": 38.666666666666664,
+            "peak_dbfs": -12.365246772766113,
+            "sha256": "197355c635474461b2104bee3c9f091a8349a2b2e8ea04d34e6e70151628e070"
+          },
+          "effects": {
+            "seconds": 38.666666666666664,
+            "peak_dbfs": -22.326953887939453,
+            "sha256": "fc055b0f86dad38bc860f8bf68c2348d751f57c6a493c653ffe0bfbd2777db3a"
+          },
+          "narration": {
+            "seconds": 38.666666666666664,
+            "peak_dbfs": -5.849858283996582,
+            "sha256": "83a93537b35f191074ad9c6e6ae81c35615a3dcc862067e58feaad9000a4f35f"
+          }
+        },
+        "combined_at_default_bus_gain_peak_dbfs": -7.280308723449707,
+        "no_clipped_or_nonfinite_samples": true,
+        "voice_starts_after_one_second": true,
+        "subjective_listening": "pending_user_review"
+      },
+      "vigrid": {
+        "stems": {
+          "music": {
+            "seconds": 44.958666666666666,
+            "peak_dbfs": -12.770594596862793,
+            "sha256": "1299cba26a6809c63e9eb62d845d68d959e960b66a1d9793c96db6be39f525db"
+          },
+          "effects": {
+            "seconds": 44.958666666666666,
+            "peak_dbfs": -21.22286033630371,
+            "sha256": "b8d47cf9a408bc0bd11a863938faca7fd61740bfffd33a308040b07aec5c4b2f"
+          },
+          "narration": {
+            "seconds": 44.958666666666666,
+            "peak_dbfs": -5.8895978927612305,
+            "sha256": "4359cda02f0970b8b436a9f16425d60aca45677814cefc5122abe6c13abbd8a1"
+          }
+        },
+        "combined_at_default_bus_gain_peak_dbfs": -7.247226715087891,
+        "no_clipped_or_nonfinite_samples": true,
+        "voice_starts_after_one_second": true,
+        "subjective_listening": "pending_user_review"
+      }
+    },
+    "video_audio_sync": {
+      "midgard": {
+        "best_offset_ms": 0,
+        "rms_envelope_correlation": 0.9950610293664168,
+        "video_sha256": "6fa22d55faa91bb412c760187132caeb2a8f73f96a592d36c2aa492e51ed5cb3",
+        "scope": "exported movie audio vs current production stems; not subjective listening"
+      },
+      "helheim": {
+        "best_offset_ms": 0,
+        "rms_envelope_correlation": 0.9933226150645006,
+        "video_sha256": "c861af609ace5c799110c62c4729cd56c24cc8d9cd661c415a4abc6ccdc6f12d",
+        "scope": "exported movie audio vs current production stems; not subjective listening"
+      },
+      "vigrid": {
+        "best_offset_ms": 0,
+        "rms_envelope_correlation": 0.9901025282562614,
+        "video_sha256": "04217fed963219c16bcbef4ca3a2bfe0b6c0fa3836d49ce60a4919b13a2c1559",
+        "scope": "exported movie audio vs current production stems; not subjective listening"
+      }
+    },
+    "full_video_decode_errors": 0,
+    "current_translation_missing": 0,
+    "current_translation_unused": 0,
+    "game_release_acceptance": false
+  },
+  "formal_files": {
+    "assets/cinematics/norse/CREDITS.md": {
+      "bytes": 1962,
+      "sha256": "9917e209e8366f6b254acf37ee58a1cf0fdb13401a254b52e626dc1ca07a97d8"
+    },
+    "assets/cinematics/norse/art/hati.png": {
+      "bytes": 1660222,
+      "sha256": "50d140f58afeba359cfe9307c714bf2eebb267c8d3b91aee673aed89aa5cb988"
+    },
+    "assets/cinematics/norse/art/hati.png.import": {
+      "bytes": 943,
+      "sha256": "40f82cc9c09f2b5911d26a1bb134aecd614a32b80644c3933ec89d633fa3f1f1"
+    },
+    "assets/cinematics/norse/art/helheim_bridge.png": {
+      "bytes": 3136916,
+      "sha256": "d3d29f9f38f8ff203cd66e106ff5fc54a1dffa672ec5635fce218956445f92d3"
+    },
+    "assets/cinematics/norse/art/helheim_bridge.png.import": {
+      "bytes": 973,
+      "sha256": "b1a241c9addea2dfc0440b77a586b4046fe4ad8fbe5b57c3bbe0117a503b8ab8"
+    },
+    "assets/cinematics/norse/art/helheim_garm.png": {
+      "bytes": 3143813,
+      "sha256": "f97116ef344931414cd95ddcbdf949147704a6ca43108dc7ea8ed5aa132bf544"
+    },
+    "assets/cinematics/norse/art/helheim_garm.png.import": {
+      "bytes": 966,
+      "sha256": "65b9de5b43916ec4f7bea7e2a070ec2398fc105c93da4055cec941a39968d4f7"
+    },
+    "assets/cinematics/norse/art/helheim_hel_ship.png": {
+      "bytes": 3449721,
+      "sha256": "d3331e8175154548ff63da0c8fbeef5a3c5178813523a5feb1261e4c7d27e479"
+    },
+    "assets/cinematics/norse/art/helheim_hel_ship.png.import": {
+      "bytes": 979,
+      "sha256": "1ab358f02d799aaadcd80c501f280f0aa82fb0385fb0b1ed0fb75d7cc0e809c3"
+    },
+    "assets/cinematics/norse/art/helheim_nidhogg.png": {
+      "bytes": 3335010,
+      "sha256": "f2424af5795c32bb684e8eabb476b3ff9d25a90ad827d69bf0eff4a6782debe9"
+    },
+    "assets/cinematics/norse/art/helheim_nidhogg.png.import": {
+      "bytes": 975,
+      "sha256": "77ba18ad597e331d7e6564072c0b2438d1b8712003b76ebcf2f8c7fbca6d5df8"
+    },
+    "assets/cinematics/norse/art/midgard_graves.png": {
+      "bytes": 3482168,
+      "sha256": "c84be84c31e976fe5cc6a10c59d37b9447b14b4fe45736a321c85c3a062ce460"
+    },
+    "assets/cinematics/norse/art/midgard_graves.png.import": {
+      "bytes": 973,
+      "sha256": "c6f0ff730a017c69499c1500c6332084284e29f6c1d3c56c91d67c91a414b23f"
+    },
+    "assets/cinematics/norse/art/midgard_hrym.png": {
+      "bytes": 3499742,
+      "sha256": "0504c9b5bb181c5b4a5ef75b6f1671e61cc0608f1f0506ee03d3204c5dfb17c2"
+    },
+    "assets/cinematics/norse/art/midgard_hrym.png.import": {
+      "bytes": 967,
+      "sha256": "138b4bbd8bcb4ac54d1c60064f04ce4ac6d9029459cc5b3c5cf384052d3deaa0"
+    },
+    "assets/cinematics/norse/art/skoll.png": {
+      "bytes": 1839751,
+      "sha256": "a997edb984d2ff3c606448d95546d6a32b9e61ec7d5e70624f813b39f207d9a8"
+    },
+    "assets/cinematics/norse/art/skoll.png.import": {
+      "bytes": 946,
+      "sha256": "7464ff411e0ad5a3b12eb2829d71c53e51601c85e93f01ab0d0d45b0428681f5"
+    },
+    "assets/cinematics/norse/art/sky_bg.png": {
+      "bytes": 2959924,
+      "sha256": "0013395d551e04a29241c30e84bfe6a048279587afb68520f94536fbbcf6f185"
+    },
+    "assets/cinematics/norse/art/sky_bg.png.import": {
+      "bytes": 949,
+      "sha256": "5a18b742696716fd21df9be8ed8400b2071e71060cc47445e83097ab018e7645"
+    },
+    "assets/cinematics/norse/art/sun.png": {
+      "bytes": 1335644,
+      "sha256": "fb2c29906ae96fc89cebb7ac3003f785562953b70bd6555fa5f160c8bcc287d8"
+    },
+    "assets/cinematics/norse/art/sun.png.import": {
+      "bytes": 940,
+      "sha256": "5b88961d3b36d2c4388df47b1916db7763af17a15fbcd1653cfd9bbd65592541"
+    },
+    "assets/cinematics/norse/art/vigrid_odin_fenrir.png": {
+      "bytes": 3460881,
+      "sha256": "8292983589925bea93993cfdd58e85c86dbd37041a7956c4e2a5bd018af49414"
+    },
+    "assets/cinematics/norse/art/vigrid_odin_fenrir.png.import": {
+      "bytes": 985,
+      "sha256": "1cdbf25a155c94bd3a888678fe78be84778f651f271e8b3b8e9628b0bd961f3a"
+    },
+    "assets/cinematics/norse/art/vigrid_plain.png": {
+      "bytes": 3278286,
+      "sha256": "2596b84f44f752eb0abfd95433d8895a5ab4a4232cdc95ce5700d66b5d6dfcdc"
+    },
+    "assets/cinematics/norse/art/vigrid_plain.png.import": {
+      "bytes": 967,
+      "sha256": "80c47db23b6cb239b15bd9f2c1271686e8209cfe89bf8e671042878b79f3bccf"
+    },
+    "assets/cinematics/norse/art/vigrid_surtr.png": {
+      "bytes": 3249065,
+      "sha256": "d7752fcd9fe50e344c2c94c0ce4bc84e679aac87f5e3328a6874821e37430fab"
+    },
+    "assets/cinematics/norse/art/vigrid_surtr.png.import": {
+      "bytes": 967,
+      "sha256": "fcac3f24ae9b787240d877189cf47c8d177f80689ae08562cf13e606dfc6a3ba"
+    },
+    "assets/cinematics/norse/art/vigrid_thor_serpent.png": {
+      "bytes": 3056023,
+      "sha256": "5de27cfcffb1015b9498def8594c6393c835d4b986701a5a4fe2cad42303f7c1"
+    },
+    "assets/cinematics/norse/art/vigrid_thor_serpent.png.import": {
+      "bytes": 988,
+      "sha256": "1a37d1cddad3781dad4d762060b245cde20f07a4b45b22db141f7298441a5605"
+    },
+    "assets/cinematics/norse/art/village_bg.png": {
+      "bytes": 3552963,
+      "sha256": "1fa2c263df94ee39958b861db4174db5c5096986fff8754d5cbf20840605a2de"
+    },
+    "assets/cinematics/norse/art/village_bg.png.import": {
+      "bytes": 961,
+      "sha256": "bbbb77c37fe3249cf630fe424319405bb4372e749928f0bdc568bf440455a803"
+    },
+    "assets/cinematics/norse/art/village_fg.png": {
+      "bytes": 1271565,
+      "sha256": "a9f6de7acb35feb9dd8c9ba96fcd92b3b44d4ced499a82f3fcd6522becf02219"
+    },
+    "assets/cinematics/norse/art/village_fg.png.import": {
+      "bytes": 961,
+      "sha256": "32db69c58b20cae1de835b4080c84ad94839bf5f5f9e2b4628be24e22798022f"
+    },
+    "assets/cinematics/norse/audio/helheim_effects.ogg": {
+      "bytes": 66935,
+      "sha256": "fc055b0f86dad38bc860f8bf68c2348d751f57c6a493c653ffe0bfbd2777db3a"
+    },
+    "assets/cinematics/norse/audio/helheim_effects.ogg.import": {
+      "bytes": 431,
+      "sha256": "65aa731a4d5ff9059953ff6feedbd1b8a4e63a4416bd9b77b72e101a5b7a639d"
+    },
+    "assets/cinematics/norse/audio/helheim_music.ogg": {
+      "bytes": 674923,
+      "sha256": "197355c635474461b2104bee3c9f091a8349a2b2e8ea04d34e6e70151628e070"
+    },
+    "assets/cinematics/norse/audio/helheim_music.ogg.import": {
+      "bytes": 424,
+      "sha256": "d387a0c9ad90370d6c1619acea41d1af8c4ea193667980e205118fef6d46d007"
+    },
+    "assets/cinematics/norse/audio/helheim_narration.ogg": {
+      "bytes": 432719,
+      "sha256": "83a93537b35f191074ad9c6e6ae81c35615a3dcc862067e58feaad9000a4f35f"
+    },
+    "assets/cinematics/norse/audio/helheim_narration.ogg.import": {
+      "bytes": 437,
+      "sha256": "9b5f8c3b8f951caa01b4a2cc34d16b2f4de07228a826454bdffa6d96d16cd186"
+    },
+    "assets/cinematics/norse/audio/midgard_effects.ogg": {
+      "bytes": 88123,
+      "sha256": "e9d2b6e0401361c98d6812f702870d69288db3feff9d5191e2d69865bdca2ca0"
+    },
+    "assets/cinematics/norse/audio/midgard_effects.ogg.import": {
+      "bytes": 431,
+      "sha256": "cc53b02c0ddabdcfe2f6dd8ed8a411f77e14d884df994b4be7ad3ffb9e5ab05d"
+    },
+    "assets/cinematics/norse/audio/midgard_music.ogg": {
+      "bytes": 654555,
+      "sha256": "cf0a9b4f60a4767cf2d0d10578a43419031496bf50a48c2a1e0190917cd36c3a"
+    },
+    "assets/cinematics/norse/audio/midgard_music.ogg.import": {
+      "bytes": 425,
+      "sha256": "892256b4b2148100f9f6d4b6f957fbb97561d46a8732534d69ec1bba91c80cb8"
+    },
+    "assets/cinematics/norse/audio/midgard_narration.ogg": {
+      "bytes": 508193,
+      "sha256": "993acd50f8b7ce4a112bbc33bae096fe7e693d635ba7dfd78130bb99d0e4e6d6"
+    },
+    "assets/cinematics/norse/audio/midgard_narration.ogg.import": {
+      "bytes": 437,
+      "sha256": "9bc470b85478c1af1e7f0766e5aef1deec1f2d83ab76494993e75a656d0e548d"
+    },
+    "assets/cinematics/norse/audio/vigrid_effects.ogg": {
+      "bytes": 96807,
+      "sha256": "b8d47cf9a408bc0bd11a863938faca7fd61740bfffd33a308040b07aec5c4b2f"
+    },
+    "assets/cinematics/norse/audio/vigrid_effects.ogg.import": {
+      "bytes": 428,
+      "sha256": "e0a818d7b336e331eec71c5a88ff4323cb405c8867108d1959f99f2e5e61f864"
+    },
+    "assets/cinematics/norse/audio/vigrid_music.ogg": {
+      "bytes": 1003360,
+      "sha256": "1299cba26a6809c63e9eb62d845d68d959e960b66a1d9793c96db6be39f525db"
+    },
+    "assets/cinematics/norse/audio/vigrid_music.ogg.import": {
+      "bytes": 422,
+      "sha256": "696c59070b83a8dc28353b7bdf68a38514d59f9d5d03a011c5f42e531c1147f4"
+    },
+    "assets/cinematics/norse/audio/vigrid_narration.ogg": {
+      "bytes": 557709,
+      "sha256": "4359cda02f0970b8b436a9f16425d60aca45677814cefc5122abe6c13abbd8a1"
+    },
+    "assets/cinematics/norse/audio/vigrid_narration.ogg.import": {
+      "bytes": 434,
+      "sha256": "f282892b7bfb49703017c8b755d6fe8889b6ecd34335af9f0c2d35be6cf64953"
+    },
+    "assets/cinematics/norse/sequences.json": {
+      "bytes": 12852,
+      "sha256": "c8dba6f1a8f2b1285c025ed3f69fcb42f36e5e0af29403a3aecc0254a43b5e32"
+    }
+  },
+  "source_files": {
+    ".gdignore": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "README.md": {
+      "bytes": 2475,
+      "sha256": "fdd0a6abde5d08bdeecb41c5066165deaa8f55f341489f8f91e8fa10ab3ae6e9"
+    },
+    "before/CREDITS.md": {
+      "bytes": 1672,
+      "sha256": "b5d58c5acaca7bc280c8b58e5c582ced9eb7a87285c8b594c64b8513b160f962"
+    },
+    "before/README.md": {
+      "bytes": 2773,
+      "sha256": "b81f7266b915dae83d003b0710017c1008e85dd07be19789397a0afe96470057"
+    },
+    "before/RESULTS.md": {
+      "bytes": 4374,
+      "sha256": "73531d89ec8b8e22e2c2c419510600756a33a107557b4933b9f514f90fb9ac01"
+    },
+    "before/contact_sheet_4x4.jpg": {
+      "bytes": 381835,
+      "sha256": "e37f8e34a9ed1401eddc43af9ff74dbb370f6a09c73ebb676eb713b12202e9a5"
+    },
+    "before/gallery.html": {
+      "bytes": 2099,
+      "sha256": "c5b82fb3bfd6ff847e72d3648039c9c69346322fb6af12e2db6e99841c52a5e5"
+    },
+    "before/helheim_contact_4x4.jpg": {
+      "bytes": 343062,
+      "sha256": "cfcebc99b4dcc155b3a7ba2109c7e5f61570b8544d76e4be64e2608e740987fc"
+    },
+    "before/helheim_effects.ogg": {
+      "bytes": 52131,
+      "sha256": "b2f5b7f123270130ff3b777d7fd4504101a6d52cfc7872a50c5fc0220ae6a864"
+    },
+    "before/helheim_music.ogg": {
+      "bytes": 496735,
+      "sha256": "c2781dbd1d5039645d800a642a0f3383751617f76b71b66694bf93494f09f53c"
+    },
+    "before/helheim_narration.ogg": {
+      "bytes": 226764,
+      "sha256": "5847e99f6804e75da28b3c4ec592635039e8265b90128bc62c15d3c378dc69c2"
+    },
+    "before/helheim_preview_4fps.gif": {
+      "bytes": 8680623,
+      "sha256": "1d58fbea20982dc0cd8f5a337a5473518f5073555c86d4cecf85686db3f34c16"
+    },
+    "before/helheim_shot1.png": {
+      "bytes": 1238477,
+      "sha256": "5f7b850c8ab389753d8f30269bfccb089959a26c559ffedffe4ef4bec51a02b4"
+    },
+    "before/helheim_shot2.png": {
+      "bytes": 1291086,
+      "sha256": "2f5dbc5dadda1168da7a50d92e573c16461ba91cd54b9f3876580ef42bcc67b9"
+    },
+    "before/helheim_shot3.png": {
+      "bytes": 1353138,
+      "sha256": "7739af7af1f31d2c4e72586adde02c42356839e886459a26a9a0e84de7265ca4"
+    },
+    "before/helheim_shot4.png": {
+      "bytes": 1408755,
+      "sha256": "ad002e816e71d5353dc6c37f1147ddb302011df149d47fdf275f2b9717e8549f"
+    },
+    "before/helheim_story.mp4": {
+      "bytes": 34987879,
+      "sha256": "b882d79f9285d0fc1941b7eb0496e7bbdb37a5984d16ff62820586213f788c3e"
+    },
+    "before/integration.md": {
+      "bytes": 3166,
+      "sha256": "ef28403de07de9a0409ccfdc27832f37298b36aec84586854e220a0082fd736c"
+    },
+    "before/manifest.json": {
+      "bytes": 43913,
+      "sha256": "64366b8acadda1ef89b0e2fa10641f275a929501028c96c01961c8306df79ca1"
+    },
+    "before/midgard_contact_4x4.jpg": {
+      "bytes": 357792,
+      "sha256": "baf80d7eb985d4ce0436a7fad05e30b14eee5ad5264fb4775422355e06becac1"
+    },
+    "before/midgard_effects.ogg": {
+      "bytes": 69062,
+      "sha256": "4565aaf03a82ac258ad5d80118b0893becc5b0275d3798f382e67e7989dffff2"
+    },
+    "before/midgard_music.ogg": {
+      "bytes": 449064,
+      "sha256": "f563d17962c0c41e1824113e4dc1bc38b53e3d147a03c70175a66c76a2db6bc6"
+    },
+    "before/midgard_narration.ogg": {
+      "bytes": 205210,
+      "sha256": "db4696b58f03ddc5d77d67ef9b1c3cc7304fe28cad72deabbc30e4abc9b11914"
+    },
+    "before/midgard_preview_4fps.gif": {
+      "bytes": 6314587,
+      "sha256": "b894065d232a13aa5fb4c138e03766521dc8e53650dc4ee2d1dafaca798fce0a"
+    },
+    "before/midgard_shot1.png": {
+      "bytes": 1352247,
+      "sha256": "bef4e4226c0035ab38efd50e14e36870e4ec42c37e251eaf1218a1cae62edb49"
+    },
+    "before/midgard_shot2.png": {
+      "bytes": 1463477,
+      "sha256": "19d6f93d08afa55f13171bb25b617aafcde0bd699329d87616799d9e1e7c8137"
+    },
+    "before/midgard_shot3.png": {
+      "bytes": 1209101,
+      "sha256": "0d136f99ae4b5a76dff7de3ec3c3a4b30c3ba3c5a6c38745be1a3fcf9cdf02f3"
+    },
+    "before/midgard_shot4.png": {
+      "bytes": 1306434,
+      "sha256": "3286f61cc21938f4764b7e7d9ac38cef10999f8eb11ece77d9e156ca6f6acd04"
+    },
+    "before/midgard_story.mp4": {
+      "bytes": 24526865,
+      "sha256": "f1bff8b31f9510060d80e01fe300eb42aa12a6a0739cbfaddb8bb384580a844f"
+    },
+    "before/sequences.json": {
+      "bytes": 6183,
+      "sha256": "0f60efe40eed7170cd4f7bc5f1e1e970eeabd3b3e2065c5c603fb9434579d4cf"
+    },
+    "before/vigrid_contact_4x4.jpg": {
+      "bytes": 356957,
+      "sha256": "1d5c01fe240d4923defbbf39dd40f85fac5de4240e0d26016cc5d858f6bbb061"
+    },
+    "before/vigrid_effects.ogg": {
+      "bytes": 72573,
+      "sha256": "4420c347ee58f1cbd75aa42a7b8ff33db30dde94ec05deaaf089f4da13e2e51e"
+    },
+    "before/vigrid_music.ogg": {
+      "bytes": 604831,
+      "sha256": "d2c2e0e1bb1de02b875e10dbcd0c9256d5e33e995c85c66ccda6f672395ea8dc"
+    },
+    "before/vigrid_narration.ogg": {
+      "bytes": 235670,
+      "sha256": "f5d46377f9e714d79276f27381d9de568ab9b7794b03a32c6f20758c42f89a3b"
+    },
+    "before/vigrid_preview_4fps.gif": {
+      "bytes": 7480337,
+      "sha256": "4e3bcb74f5438003794ee5cd18c769b4ace8d1a9173bc3452cca941577c3b7c2"
+    },
+    "before/vigrid_shot1.png": {
+      "bytes": 1351623,
+      "sha256": "b4fabadbf02ea6df48704b358d294a8961c43587d55fe0d0376701f6b8ddcc3a"
+    },
+    "before/vigrid_shot2.png": {
+      "bytes": 1364456,
+      "sha256": "80f660fa31c779383d428b1a873f2df6479a8bf02721c961d17f9abb7535bc4f"
+    },
+    "before/vigrid_shot3.png": {
+      "bytes": 1493766,
+      "sha256": "4964f7700816ef167913d3890beddec296b4322510048ddde611e91d107e1036"
+    },
+    "before/vigrid_shot4.png": {
+      "bytes": 1411398,
+      "sha256": "cb277a4d0c4f874403b77118739a38c8765aa38c4e7344338541cff6aa15b49d"
+    },
+    "before/vigrid_story.mp4": {
+      "bytes": 35840537,
+      "sha256": "76501ff18c88ef774b852933485d99766cadf569fca8913c3f188c51126c1fc8"
+    },
+    "candidates/grand.wav": {
+      "bytes": 537644,
+      "sha256": "4c9899dee034cbe623d1b8efc595166ecb6ea49fb5c6d1d9d52e984aa8a27ca3"
+    },
+    "candidates/grand_preview.mp3": {
+      "bytes": 270189,
+      "sha256": "1ef81fd9b8b5dd6e40e544e6434ab31f02b69c062a02f4dee13dc7ca56012954"
+    },
+    "candidates/grave.wav": {
+      "bytes": 503084,
+      "sha256": "6648941093d030401817423a0df21ce5dcee7650d018e0b233b6a3711ff53fb6"
+    },
+    "candidates/grave_preview.mp3": {
+      "bytes": 252909,
+      "sha256": "3d856b290d02e834acf67e880ec41e7c993ecda4f2b3eed58a4d4bbe3a548616"
+    },
+    "candidates/rejected_A/midgard_01.wav": {
+      "bytes": 192044,
+      "sha256": "f4c65ec83824b4438773ab53bf5900076f43bf73cb4bb45b32486dbd644d1279"
+    },
+    "candidates/rejected_A/midgard_02.wav": {
+      "bytes": 384044,
+      "sha256": "062feff4c414f1cb23002177b02c89ccc62a7457019b1bc81883640315b0a6b2"
+    },
+    "candidates/rejected_A/midgard_03.wav": {
+      "bytes": 291884,
+      "sha256": "7100f5dfaecd660c227ab025e05295f77a14522b67c2251fe696c29b0866960f"
+    },
+    "candidates/rejected_A/midgard_04.wav": {
+      "bytes": 495404,
+      "sha256": "1192eb63e0a78b6577d6a4231ef71511e24fafa71e256cdd1f52e3110a07a2ef"
+    },
+    "gallery.html": {
+      "bytes": 1558,
+      "sha256": "dacdc334d90f4267ddabecc650451610b97d7e7aa33f8e48736d131f5f8f82eb"
+    },
+    "integration.md": {
+      "bytes": 1280,
+      "sha256": "cb2c36459a891a63f7f4aca65df58ea9fa64a85fbcd31f47b5f6e556fee3bd71"
+    },
+    "originals/helheim_01.wav": {
+      "bytes": 326444,
+      "sha256": "ee816b7029fb94d146b1f2b1befbd1c42eb1e8d4d595fca4b529bd0a3012dab2"
+    },
+    "originals/helheim_02.wav": {
+      "bytes": 349484,
+      "sha256": "4cd46d49f62795195a8ba4f2f98d5f832fc200b3005ee993e5415ca98c3b2c18"
+    },
+    "originals/helheim_03.wav": {
+      "bytes": 341804,
+      "sha256": "2f7a734caedb3eaf695185d004d9b021c90fe46f62d10f30663887e96ce9f49d"
+    },
+    "originals/helheim_04.wav": {
+      "bytes": 276524,
+      "sha256": "8639f5c0962e4ebcaecbcba288e8c16ec994476a46837147d80d3576402563a2"
+    },
+    "originals/midgard_01.wav": {
+      "bytes": 199724,
+      "sha256": "6df610152212322b519e350e06e446b04142cef8505c24127a2544f82dbd1934"
+    },
+    "originals/midgard_02.wav": {
+      "bytes": 418604,
+      "sha256": "70db8faaf20535241155e76f92d591c8c7012d28754e63b519ca8a3b03972142"
+    },
+    "originals/midgard_03.wav": {
+      "bytes": 349484,
+      "sha256": "0edadc6b1ac1f241481b0648b2d8a2c917701323f6973c7c43bd2d4bfd6ae7a2"
+    },
+    "originals/midgard_04.wav": {
+      "bytes": 403244,
+      "sha256": "c0e62e395ee928883de03de1d20375e04249be2ce0fa94cd66537e20518b1a4f"
+    },
+    "originals/vigrid_01.wav": {
+      "bytes": 399404,
+      "sha256": "72f67c302e66076895bfb39e0d49c32900c65b98eeb03d7b26db75e73e746736"
+    },
+    "originals/vigrid_02.wav": {
+      "bytes": 326444,
+      "sha256": "dd16afd3919c4e0b3993d8fffbe65ceb199d95fec4e1f49aa2a19a7dac71497e"
+    },
+    "originals/vigrid_03.wav": {
+      "bytes": 368684,
+      "sha256": "b05da0f117f827752a6cd47339c474fc488f0ea6b26407d2999e7084068f6471"
+    },
+    "originals/vigrid_04.wav": {
+      "bytes": 503084,
+      "sha256": "6648941093d030401817423a0df21ce5dcee7650d018e0b233b6a3711ff53fb6"
+    },
+    "preview/helheim_english_mix.wav": {
+      "bytes": 7424078,
+      "sha256": "d8dd6ff401a2a606f23531d741916de261a9b1e1b214c4b0b1fdf6e0b13d93a6"
+    },
+    "preview/midgard_english_mix.wav": {
+      "bytes": 7888206,
+      "sha256": "00ca0ec2c0ef2771807763c3376b5e209ea4c85ee02e37c8a2060bc57bf246ea"
+    },
+    "preview/vigrid_english_mix.wav": {
+      "bytes": 8632142,
+      "sha256": "44393e6bdc5633b7257b4f93b2ff67abf7d27d88e895b074b96de50c618c308a"
+    },
+    "qa/asr.log": {
+      "bytes": 1288,
+      "sha256": "5010316674c1693be5e009d7627f916f4057e5c29ca9fe35f36dd698dc009819"
+    },
+    "qa/asr_review.json": {
+      "bytes": 6103,
+      "sha256": "dd18256f209c4613c4026623cfba08eb5ae3a2ddb6965416406847342f3201e5"
+    },
+    "qa/audio_checks.json": {
+      "bytes": 2444,
+      "sha256": "5efc14bfa0e873d0a8503be87be25acfe3f58faa6b528b88df18825e8b195b44"
+    },
+    "qa/audio_video_sync.json": {
+      "bytes": 827,
+      "sha256": "cdd606b3b8fbf81b699cc91f1323115717528d3f1bef2598b66cda08a5d6f43a"
+    },
+    "qa/audio_video_sync.log": {
+      "bytes": 759,
+      "sha256": "d9c3036cabdd1b337514d509b3f8c90748263c70e7eb7ba335a33c7663218061"
+    },
+    "qa/build.log": {
+      "bytes": 68,
+      "sha256": "43496baa562c53e0d62df8c771242143106f70d93d767ee523e7dab80b6dcb82"
+    },
+    "qa/build_missing_source_path_attempt.log": {
+      "bytes": 1220,
+      "sha256": "4ba731423c74fa6cae1511c5c9dac5b1b82ff94ce7cc6f479fb09b60f329b321"
+    },
+    "qa/candidate_transcripts.json": {
+      "bytes": 26070,
+      "sha256": "7a7056aa1b6cc925a8067e2faa9b66e298346f55023975b7aab832839cd00a08"
+    },
+    "qa/download.log": {
+      "bytes": 808,
+      "sha256": "41e3bd61e424d0676e68d8a2c85eb4e70e5ccde79682619c2d863834c00ffcde"
+    },
+    "qa/encode_helheim_final.log": {
+      "bytes": 10819,
+      "sha256": "6d5f3b0c14e4e19f064960ff5864586a0fb422583f81d0d0706cadd59681162a"
+    },
+    "qa/encode_midgard_final.log": {
+      "bytes": 9809,
+      "sha256": "f45e1d07430b69965c88f4c0c6c219a145f416e8c6aa82b3dc54ea5de6dadb94"
+    },
+    "qa/encode_vigrid_final.log": {
+      "bytes": 12097,
+      "sha256": "ca56bbdc3e24eb8fbbff6db23d1987d153905f673f149312606c31df60d6888f"
+    },
+    "qa/full_audio_encode.log": {
+      "bytes": 30559,
+      "sha256": "11bc09aab2e32c1d9c9e30d54597a7556f0cf9e1343b25735b2bc15bd2214603"
+    },
+    "qa/full_synthesis.log": {
+      "bytes": 1948,
+      "sha256": "1adff1225a0ba87dbe8a242dac6b3c54c475b0c635cf7457455a004a86ed756e"
+    },
+    "qa/full_synthesis_A_interrupted.log": {
+      "bytes": 1579,
+      "sha256": "f84250dfd40cf48daa7b36c99fbb9237892f9763a7efd08967eb32b5b7122880"
+    },
+    "qa/gif_helheim.log": {
+      "bytes": 2079,
+      "sha256": "4d7070964d68d921e6952e47ca553c8542f4903dca97a96d04d49570fee416b5"
+    },
+    "qa/gif_midgard.log": {
+      "bytes": 1959,
+      "sha256": "c42bb008e02dda28b8b92604a811171cebae422636c42eeaf1c14f36d8c797c1"
+    },
+    "qa/gif_vigrid.log": {
+      "bytes": 1958,
+      "sha256": "a42f518b9fc93cda4b346352e9c6189e94c24c4c6cee189acb864ecccd3158a4"
+    },
+    "qa/import.log": {
+      "bytes": 69153,
+      "sha256": "bd5e1f8a64814af766dac29cd7e0a992fcaa7345c530ff184f9af9ea9b2ad168"
+    },
+    "qa/movie_helheim_final.log": {
+      "bytes": 952,
+      "sha256": "cb1700d876a5a6d6c312a02880f4b6dafc59b7f1b66e5748dae6739a64877ddb"
+    },
+    "qa/movie_midgard_final.log": {
+      "bytes": 951,
+      "sha256": "3349792386dd8c3e74b9f2cf54325c08cc384c4e3ceefa6c5747074029545f1f"
+    },
+    "qa/movie_vigrid_final.log": {
+      "bytes": 949,
+      "sha256": "ba23f5f6d1c2e801c117473faa7bc28cc162d9fb65a04b67b144cfd35f4d0a93"
+    },
+    "qa/previews.log": {
+      "bytes": 50,
+      "sha256": "0ad4e045627242fff5eeee47e07f194d1c1b93343fc3c1116617ed4969c7ba2a"
+    },
+    "qa/production_import.log": {
+      "bytes": 1347,
+      "sha256": "0e9619b3491283555b643b1bdec015bda2ac1c8f308977064c61eb06e57c665d"
+    },
+    "qa/render_all.log": {
+      "bytes": 138,
+      "sha256": "08836432a5df3385586f8f7271f857795205c8a3bac28ccba1b963a66b20a7cf"
+    },
+    "qa/routes.json": {
+      "bytes": 35,
+      "sha256": "f7ac89d679e5d18eaaedf9069b0c9a22b05f2291128d41267b5d0d2a46ee8523"
+    },
+    "qa/routes.log": {
+      "bytes": 117,
+      "sha256": "85b2eac81e3b3fdf1b8018740dfe3948b0d1e4e02096be2f9898509f57a0db62"
+    },
+    "qa/sample_asr.log": {
+      "bytes": 892,
+      "sha256": "7fd9237e7ff1ff28735aeb2833585448f033272c4020412b7215438aea12dd83"
+    },
+    "qa/samples.log": {
+      "bytes": 821,
+      "sha256": "02558bbce2f8aa796115f6e4f531adb74fd10ffa59509a4322f4c75cd6a115c7"
+    },
+    "qa/transcripts.json": {
+      "bytes": 271284,
+      "sha256": "368ff2ac2b569cc8c1ae3f4d8bc61fe43d8ae4f7c944cbae1b5c739cb3b13eec"
+    },
+    "qa/translations.log": {
+      "bytes": 42,
+      "sha256": "19913b6c27d7efca9586480eac442c9da4491c628da1fec20110451573d0939f"
+    },
+    "qa/translations_current.log": {
+      "bytes": 42,
+      "sha256": "19913b6c27d7efca9586480eac442c9da4491c628da1fec20110451573d0939f"
+    },
+    "qa/video_checks.json": {
+      "bytes": 22948,
+      "sha256": "49f781feb570391ca9789a348229e5e7cb7adbed2e2e4713e26aab6a88681fe7"
+    },
+    "qa/window_routes.json": {
+      "bytes": 35,
+      "sha256": "f7ac89d679e5d18eaaedf9069b0c9a22b05f2291128d41267b5d0d2a46ee8523"
+    },
+    "qa/window_routes.log": {
+      "bytes": 300,
+      "sha256": "52b237709ed545a848d1083a1e38ba7ff1887dab0f43757272d305ceba194639"
+    },
+    "records/build_english.py": {
+      "bytes": 5502,
+      "sha256": "199cde5eab2e066d7e857b97d89b4f35c7e2c6fe6abfbb31e14b7bc46a426b8e"
+    },
+    "records/build_previews.py": {
+      "bytes": 1674,
+      "sha256": "09f588e8deb7c1ae2155a4d93cfdd183f948d795de183cd90b51e21066b5bda0"
+    },
+    "records/check_audio.py": {
+      "bytes": 2115,
+      "sha256": "9cf98cf4cb6df439f5f90ceef33ce6bd590509249521df57eb3d0612ec99a549"
+    },
+    "records/check_video_audio.py": {
+      "bytes": 1501,
+      "sha256": "38516ca7cd98c11f7dcb5b6bb2fc60d39cb2f8c6bf3e99e1b6e1e5de018abb32"
+    },
+    "records/code_before_hashes.json": {
+      "bytes": 11268,
+      "sha256": "27171e007467380f93bccc31bd43bec513a058c4bce0554df528f9bb67ee14a3"
+    },
+    "records/concurrent_code_changes_observed.json": {
+      "bytes": 1858,
+      "sha256": "113942a1b8002308d39856b329c63ff56ab7055a7049ecd68b1151e0a2649ebc"
+    },
+    "records/concurrent_locale_drift.json": {
+      "bytes": 445,
+      "sha256": "36632d8610fc17fdabff05618c94f6026d0db48d6e3581f26108bb1dfab30275"
+    },
+    "records/dependency_licenses/PyYAML/LICENSE": {
+      "bytes": 1101,
+      "sha256": "8d3928f9dc4490fd635707cb88eb26bd764102a7282954307d3e5167a577e8a4"
+    },
+    "records/dependency_licenses/Pygments/LICENSE": {
+      "bytes": 1331,
+      "sha256": "a9d66f1d526df02e29dce73436d34e56e8632f46c275bbdffc70569e882f9f17"
+    },
+    "records/dependency_licenses/annotated-doc/LICENSE": {
+      "bytes": 1086,
+      "sha256": "fff170779a6acbf65abdb405c087f1cee1786691e4a96a4034517e4a504a0cdf"
+    },
+    "records/dependency_licenses/anyio/LICENSE": {
+      "bytes": 1081,
+      "sha256": "5361ac9dc58f2ef5fd2e9b09c68297c17f04950909bbc8023bdb82eacf22c2b0"
+    },
+    "records/dependency_licenses/cffi/LICENSE": {
+      "bytes": 1123,
+      "sha256": "5ba24ddc57067f9249add644c3afc41a5d6dc37e23433ef759d95df370b0af63"
+    },
+    "records/dependency_licenses/click/LICENSE.txt": {
+      "bytes": 1475,
+      "sha256": "9a8ad106a394e853bfe21f42f4e72d592819a22805d991b5f3275029292b658d"
+    },
+    "records/dependency_licenses/filelock/LICENSE": {
+      "bytes": 1088,
+      "sha256": "608c89d5060ae9921adccf3236695bc654a9946e12323ef6c021dfa04e294d48"
+    },
+    "records/dependency_licenses/fsspec/LICENSE": {
+      "bytes": 1513,
+      "sha256": "2dc35496ce53a7307915c008a844aad53e772b49b34cdd00445067691407ec94"
+    },
+    "records/dependency_licenses/h11/LICENSE.txt": {
+      "bytes": 1124,
+      "sha256": "37db5bb85926db28a427a25867f10b1232003aea1be69ccb851138adb8e6f361"
+    },
+    "records/dependency_licenses/hf-xet/LICENSE": {
+      "bytes": 11357,
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    },
+    "records/dependency_licenses/httpcore2/LICENSE.md": {
+      "bytes": 1599,
+      "sha256": "c4df125c807b0613501e943a5c92496dd11d2c16604ce396097a8dde396304d9"
+    },
+    "records/dependency_licenses/httpx2/LICENSE.md": {
+      "bytes": 1589,
+      "sha256": "7e7d6dbaf7fe160d39fd6e84fd02c33cab96bcbea34d36998d545bceb4a19c30"
+    },
+    "records/dependency_licenses/huggingface_hub/LICENSE": {
+      "bytes": 11357,
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    },
+    "records/dependency_licenses/idna/LICENSE.md": {
+      "bytes": 1541,
+      "sha256": "1a9a4f0e3d479a27240ddd59a9137a66ab4a0f9dfdc8ca6188cc0bfd85187f04"
+    },
+    "records/dependency_licenses/markdown-it-py/LICENSE": {
+      "bytes": 1078,
+      "sha256": "4a2260d6e2cd0f5a151a1e86dbfe7d3ed552b1e2beabf9941c1ba5c49cbce484"
+    },
+    "records/dependency_licenses/markdown-it-py/LICENSE.markdown-it": {
+      "bytes": 1073,
+      "sha256": "792c48c5a849a15fdf9e37e8bcf9e6d1dd13b32b46c642a748a0a46a9919d473"
+    },
+    "records/dependency_licenses/mdurl/LICENSE": {
+      "bytes": 2338,
+      "sha256": "7c605df6e28667a9603118e98274f64a49ce3eed0d26fccce9534a345e0ef955"
+    },
+    "records/dependency_licenses/miniaudio/LICENSE": {
+      "bytes": 1166,
+      "sha256": "3e793d703da08a12a501ff6e7d5767d0af9adaa423154755300af2fcdbab7677"
+    },
+    "records/dependency_licenses/mlx/LICENSE": {
+      "bytes": 1066,
+      "sha256": "ccfab7ccb2ea306f71531c8ca77bb55507606cd90768b1e32b8b52ab5b48cf01"
+    },
+    "records/dependency_licenses/mlx-audio/LICENSE": {
+      "bytes": 1070,
+      "sha256": "11d27e0259dec3a323fa6c04c330621d0950ab96c6760d5aac3e2e97229e6f22"
+    },
+    "records/dependency_licenses/mlx-metal/LICENSE": {
+      "bytes": 1066,
+      "sha256": "ccfab7ccb2ea306f71531c8ca77bb55507606cd90768b1e32b8b52ab5b48cf01"
+    },
+    "records/dependency_licenses/mlx-metal/LICENSE.txt": {
+      "bytes": 11344,
+      "sha256": "f4e92c7fe2aa066e294c0da9d08683dc9fb741ee6e6debbfad99a0c96e07c1f2"
+    },
+    "records/dependency_licenses/numpy/COPYING": {
+      "bytes": 690,
+      "sha256": "3f2c1ffa76383a55ae0aac01c9737cd70050dff63e1f026694fbe9d662573c98"
+    },
+    "records/dependency_licenses/numpy/LICENSE": {
+      "bytes": 1593,
+      "sha256": "05f3b88351988ecfad10abe92c0c50e5875c6452d5009a0084cc291551ffcca6"
+    },
+    "records/dependency_licenses/numpy/LICENSE.md": {
+      "bytes": 3511,
+      "sha256": "103166b62b80443afb9eb3488e052ea06be0cff566b908f199e561fde49af19f"
+    },
+    "records/dependency_licenses/numpy/LICENSE.txt": {
+      "bytes": 1018,
+      "sha256": "fbc539f47d0cf83bc61378080fb873d5c14630126cacbfe754035c3926daa5ec"
+    },
+    "records/dependency_licenses/packaging/LICENSE": {
+      "bytes": 197,
+      "sha256": "cad1ef5bd340d73e074ba614d26f7deaca5c7940c3d8c34852e65c4909686c48"
+    },
+    "records/dependency_licenses/packaging/LICENSE.APACHE": {
+      "bytes": 10174,
+      "sha256": "0d542e0c8804e39aa7f37eb00da5a762149dc682d7829451287e11b938e94594"
+    },
+    "records/dependency_licenses/packaging/LICENSE.BSD": {
+      "bytes": 1344,
+      "sha256": "b70e7e9b742f1cc6f948b34c16aa39ffece94196364bc88ff0d2180f0028fac5"
+    },
+    "records/dependency_licenses/pycparser/LICENSE": {
+      "bytes": 1543,
+      "sha256": "0a9e78156ae8b96caf1b4f11ac2df424b83de29736f9e757630548a6272fdf90"
+    },
+    "records/dependency_licenses/regex/LICENSE.txt": {
+      "bytes": 11584,
+      "sha256": "bff55ef4cdcc8c14ce259f8e8ab60e264418440d6335f4dc138273fbd506144d"
+    },
+    "records/dependency_licenses/rich/LICENSE": {
+      "bytes": 1056,
+      "sha256": "deed7c17a4318158190a3ea239cc879a5a50271cebb98ae7025f48fbe58dca15"
+    },
+    "records/dependency_licenses/safetensors/LICENSE": {
+      "bytes": 11357,
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    },
+    "records/dependency_licenses/scipy/COPYING_QHULL.txt": {
+      "bytes": 1720,
+      "sha256": "106d55c931fd6a84822e5345d900273d059f1c27310d02567ccb313c5d18c55d"
+    },
+    "records/dependency_licenses/scipy/LICENSE": {
+      "bytes": 1514,
+      "sha256": "c80c39b5fce06ba4897e14e0b0a88b54458334d951eb1361402ffad2cfb863b4"
+    },
+    "records/dependency_licenses/scipy/LICENSE.md": {
+      "bytes": 1498,
+      "sha256": "c254b2b5fd30ae3c89d36ba061730563b9760fca04f1b746a1b2c3157da2c789"
+    },
+    "records/dependency_licenses/scipy/LICENSE.txt": {
+      "bytes": 46848,
+      "sha256": "09a1b9e19573045b0784a181cc4bef677039d4f2111631c747bf72b7f19017d4"
+    },
+    "records/dependency_licenses/scipy/LICENSE_DOP": {
+      "bytes": 3572,
+      "sha256": "ed9bf58c6d74d3fad9d92d1d67d9bff8141d8ab60de784516b0711364fd43357"
+    },
+    "records/dependency_licenses/shellingham/LICENSE": {
+      "bytes": 751,
+      "sha256": "f388fd38cad13112c1dc0f669bbe80e7f84541edbafb72f3030d2ca7642c3c9d"
+    },
+    "records/dependency_licenses/sounddevice/LICENSE": {
+      "bytes": 1063,
+      "sha256": "b6eea21bbafbaf7a2177e492f1be6b5efc6f4e708b1980773de51cdaa52f8211"
+    },
+    "records/dependency_licenses/transformers/LICENSE": {
+      "bytes": 11418,
+      "sha256": "77fd4710def9ec3c0f6225800e0235f15a425abd4a8b03559127fcd782612049"
+    },
+    "records/dependency_licenses/truststore/LICENSE": {
+      "bytes": 1086,
+      "sha256": "33be7b7e8fa4fd19b1760e1a8ed8a668bdab852c91b692dd41424bcb725a9fca"
+    },
+    "records/dependency_licenses/typer/LICENSE": {
+      "bytes": 1086,
+      "sha256": "58992cebcf8dfb6e40c4e2112ed12126c243666dca3912a3d78b7ecac4859d49"
+    },
+    "records/dependency_licenses/typer/LICENSE.txt": {
+      "bytes": 1475,
+      "sha256": "9a8ad106a394e853bfe21f42f4e72d592819a22805d991b5f3275029292b658d"
+    },
+    "records/dependency_licenses/typing_extensions/LICENSE": {
+      "bytes": 13936,
+      "sha256": "3b2f81fe21d181c499c59a256c8e1968455d6689d269aa85373bfb6af41da3bf"
+    },
+    "records/download_weights.py": {
+      "bytes": 2348,
+      "sha256": "cfd810894ba83044a94b97c1de6247eee32c8d352f1d7e4effbecc06ef5eb35a"
+    },
+    "records/environment.json": {
+      "bytes": 55347,
+      "sha256": "c1131c9361baf6c377896b82ca32467ff10d685f23fbba262f02bf4990b9c8c6"
+    },
+    "records/finalize_manifest.py": {
+      "bytes": 4283,
+      "sha256": "dd408c433ded8883d416a412e038ee168594de215b14713423cd2cb7eb329754"
+    },
+    "records/full_audio_commands.json": {
+      "bytes": 10941,
+      "sha256": "18cf9af83231cf05f1a47182f8bffd1d2ff66e7d08966dbf51fd434d3ccf2e5c"
+    },
+    "records/full_audio_source_hashes.json": {
+      "bytes": 741,
+      "sha256": "99b2fb8d1facd40be4d1caa11f28ae902cc189b51399d4ba2a8659bbd4e2e038"
+    },
+    "records/generation.json": {
+      "bytes": 15489,
+      "sha256": "618f1df5e56a2c32381c6bc1cc8582d69d845c9430829c2727c9b6584edbc374"
+    },
+    "records/generation_A_interrupted.json": {
+      "bytes": 4499,
+      "sha256": "87ed0c7d8513f7a4e51eeec828461331f6d9cbc6f1b02b991a26efc4de1a4244"
+    },
+    "records/license_sources.json": {
+      "bytes": 540,
+      "sha256": "53a1d02db6692e06db921d76c6b42ce38f791ced5165292d962005c5929b7c19"
+    },
+    "records/mlx_audio_LICENSE": {
+      "bytes": 1070,
+      "sha256": "11d27e0259dec3a323fa6c04c330621d0950ab96c6760d5aac3e2e97229e6f22"
+    },
+    "records/mlx_audio_qwen_readme.md": {
+      "bytes": 4929,
+      "sha256": "c59188220759d9cdb06786cb149d89514a2ec0364bf30a9b0d7839555df43d1f"
+    },
+    "records/model_files.json": {
+      "bytes": 3898,
+      "sha256": "d751cc9f459e4f8a4cfe4141893786223a66c9e9460e1d357335340c6e3da6be"
+    },
+    "records/narration_plan.json": {
+      "bytes": 10640,
+      "sha256": "d36cd87e9199836b687e59d6b98629c10cee33b04ed21b0ee1a35e0fc09807d7"
+    },
+    "records/production_hashes.json": {
+      "bytes": 779,
+      "sha256": "15832e40583b3d3dd96b56bf293be277026f8100b2e771105705bba0decbad99"
+    },
+    "records/qa_runtime_inputs.json": {
+      "bytes": 11357,
+      "sha256": "9fe1b8e105b92ec3eb4577579cf64e519bfedbbbf0a5c68482b19461184f9fa9"
+    },
+    "records/quantized_model_card.md": {
+      "bytes": 1068,
+      "sha256": "40d213ae6ec58c48d4362a66a8e77bc8518b87acf6cd5e54b4aa2352a588a277"
+    },
+    "records/qwen_LICENSE": {
+      "bytes": 11343,
+      "sha256": "a44a6081c73ad75f0255bb2bb5cab74ef1829565a895a24e53a4f11290ab7655"
+    },
+    "records/qwen_model_card.md": {
+      "bytes": 3214,
+      "sha256": "acfaf6c0d433866cb5e2bb73e7915ea3767f5a2e3abca413b485635a2c72b5e6"
+    },
+    "records/render_english.py": {
+      "bytes": 2643,
+      "sha256": "86b4a6df1e5f46402895ea61e92fc74d7efacd46ee205ce0a962010874049776"
+    },
+    "records/sample_plan.json": {
+      "bytes": 1431,
+      "sha256": "71d26751ce33654f575caf5f2cc79cafd1a1e6697224b42d6bc29dceee1a7771"
+    },
+    "records/synthesize_english.py": {
+      "bytes": 2639,
+      "sha256": "09da81c8d3939a6b374097186df2a9d7e86b5adcaa4284d50161b1540719f6c4"
+    },
+    "records/temp_cleanup.json": {
+      "bytes": 48449,
+      "sha256": "6695cdd1310955f733a6addf43cb6f2c2979881ae6c1f2c4d9813656dc4c91f1"
+    },
+    "records/transcribe_check.py": {
+      "bytes": 1385,
+      "sha256": "06205dcca781b24e743d7eed1d4408d62f8e387e1c7b1f6d0072e4b78f45f17b"
+    },
+    "records/voice_direction_choice.json": {
+      "bytes": 766,
+      "sha256": "ba2a5c4c3d8509b5625aa8b196a634592ee7d64e8b7354a1780c1c434dfa90dd"
+    },
+    "records/weights_integrity.json": {
+      "bytes": 551,
+      "sha256": "5907c31fec39a3b3076bd25f8ec5bd8709e4c6dc8dc9f791b9dde1aa86bc5ab6"
+    },
+    "records/whisper_LICENSE": {
+      "bytes": 1063,
+      "sha256": "b5d65a59060e68c4ff940e1eddfa6f94b2d68fdf58ed7f4dd57721c997e35e9d"
+    },
+    "records/whisper_model_card.md": {
+      "bytes": 1392,
+      "sha256": "bc986858db6856964097e00c796494b0276e903e79632ab714b317acf273d419"
+    }
+  }
+}

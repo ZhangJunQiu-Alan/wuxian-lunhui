@@ -1,0 +1,11 @@
+--- before/tools/test_vigrid.gd
++++ tools/test_vigrid.gd
+@@ -180,7 +180,7 @@
+ 	_check(map != null and map.get_script().resource_path.ends_with("vigrid_map.gd"), "VigridMap loaded")
+ 	var edges := 0
+ 	for part in map.EDGE_PARTS:
+-		if map._sources.has("burnt_grass_edge_" + part) and map._sources.has("path_edge_" + part):
++		if map._sources.has("burnt_grass_02_edge_" + part) and map._sources.has("path_edge_" + part):
+ 			edges += 1
+ 	_check(edges == 12, "12 midgard masks explicitly loaded and burnt_grass edges derived")
+ 	_check(not FileAccess.file_exists("res://assets/sprites/ground/vigrid/path_edge_n.png"), "masks not copied into vigrid dir")

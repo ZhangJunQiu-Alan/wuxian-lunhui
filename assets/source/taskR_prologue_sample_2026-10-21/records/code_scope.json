@@ -1,0 +1,16 @@
+{
+  "authorized_update": "User requested complete per-level cinematics and playback on entry",
+  "production_changes": [
+    "scripts/ui/chapter_intro.gd",
+    "scenes/chapter_intro.tscn",
+    "scripts/ui/hub.gd",
+    "scripts/ui/hud.gd",
+    "locale/text.csv",
+    "tools/check_translations.py",
+    "tools/test_chapter_intro.gd",
+    "tools/review_chapter_intro.gd",
+    "assets/cinematics/norse/",
+    "assets/LICENSES.md"
+  ],
+  "excluded": "Other agents existing uncommitted third-stage/code/docs changes are preserved; no commit/push this task yet"
+}

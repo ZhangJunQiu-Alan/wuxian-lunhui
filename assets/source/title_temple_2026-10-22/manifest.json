@@ -1,0 +1,125 @@
+{
+  "date": "2026-10-22",
+  "game_name": "诸界余烬",
+  "selected_concept": "assets/source/title_concepts_2026-10-22/B_embers_temple.png",
+  "authorization": "User selected option 2 and requested game code changes",
+  "generation_mode": "built_in_image_gen",
+  "prompt_file": "prompts.md",
+  "assets": [
+    {
+      "path": "assets/ui/title/temple_background.png",
+      "original_generation_path": "/Users/zhangjunqiu/.codex/generated_images/01a15f2d-8cad-7cb2-8ce0-6883df86d8b6/exec-022cbe2a-20f2-4204-b8d6-cfd32c3c2cc5.png",
+      "original_copy": "originals/temple_background.png",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "mode": "RGB",
+      "alpha_extrema": null,
+      "sha256": "942b5099492541fc3e8266366849a588cfb879f344d7967e4f2474eeb0d4502c"
+    },
+    {
+      "path": "assets/ui/title/embers_logo.png",
+      "original_generation_path": "/Users/zhangjunqiu/.codex/generated_images/01a15f2d-8cad-7cb2-8ce0-6883df86d8b6/exec-89cbcf07-873f-4d09-b5a3-6206437eda52.png",
+      "original_copy": "originals/embers_logo.png",
+      "dimensions": [
+        2202,
+        714
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "sha256": "db8197535b05f759df8006df5363217d841e18075cd05a78c746edb7d4eb788f",
+      "alpha_bbox": [
+        0,
+        49,
+        2200,
+        683
+      ]
+    }
+  ],
+  "status": "integrated_local_validation_passed_pending_user_review",
+  "validation": {
+    "engine": "Godot 4.7.2",
+    "renderer": "OpenGL Compatibility on Apple M2",
+    "headless": {
+      "checks": 91,
+      "failures": 0,
+      "log": "test_headless.log"
+    },
+    "rendered": {
+      "checks": 99,
+      "failures": 0,
+      "log": "test_rendered.log",
+      "includes": "real mouse input, keyboard navigation, modal isolation, language reload, hub transition, responsive layout and screenshot export"
+    },
+    "quit": {
+      "exit_code": 0,
+      "marker": "QUIT_BUTTON_ACTIVATED",
+      "log": "test_quit.log"
+    },
+    "translations": {
+      "entries": 853,
+      "missing": 0,
+      "unused": 0
+    },
+    "git_diff_check": "passed",
+    "script_errors": 0,
+    "screenshots_visual_review": "Chinese, English, small window, 16:10 and ultrawide inspected",
+    "full_game_playthrough": "not_performed_for_this_homepage_change"
+  },
+  "runtime_changes": [
+    "scripts/ui/title.gd",
+    "locale/text.csv"
+  ],
+  "test_tool": "tools/test_title_menu.gd",
+  "screenshots": [
+    {
+      "file": "screenshots/en_1280x720.png",
+      "dimensions": [
+        1280,
+        720
+      ],
+      "sha256": "23154622af81b4e13cdae908282c96390e716efe0b33847c1c194ed7d7fbabf4"
+    },
+    {
+      "file": "screenshots/zh_1280x720.png",
+      "dimensions": [
+        1280,
+        720
+      ],
+      "sha256": "d06a668057a00335bbf9f1c56961b624d7e6660ce9d8fcd3e41f3ef9915a347a"
+    },
+    {
+      "file": "screenshots/zh_1600x1000.png",
+      "dimensions": [
+        1600,
+        1000
+      ],
+      "sha256": "7a0261c5e6c5ca9664a25a686054527eccb510c9d164b02ee92ef8d67a51eaed"
+    },
+    {
+      "file": "screenshots/zh_1920x800.png",
+      "dimensions": [
+        1920,
+        800
+      ],
+      "sha256": "586b14874313902df9f97cfb3d386bc5b98b17275db7868b9a42d11ba4ec66cd"
+    },
+    {
+      "file": "screenshots/zh_960x540.png",
+      "dimensions": [
+        960,
+        540
+      ],
+      "sha256": "81e572e3ec1e70c1f35f6d69f312270a94c9b7692aac1b913b9034b3b835ff2d"
+    }
+  ],
+  "code_sha256": {
+    "scripts/ui/title.gd": "417a3fea70f9ec431d11417249897c0d0352bac4f6aee4881ee105029a9967de",
+    "locale/text.csv": "45444d074eb90767acaacf5b265e0a370eeac0071703047f870ced2afe5b2307",
+    "tools/test_title_menu.gd": "cdc83cb53ee8e6ab5ef79019d2d0af0b9dfb8048a046d74e9963df9fb2cf46d2"
+  }
+}

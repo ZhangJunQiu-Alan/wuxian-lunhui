@@ -1,0 +1,420 @@
+{
+  "frames": [
+    {
+      "frame": 0,
+      "source": "originals/surtr_sword_arc_large_f00_v01_raw.png",
+      "source_size": [
+        1254,
+        1254
+      ],
+      "fit_center_on640": [
+        340.18221607196284,
+        321.6001952186585
+      ],
+      "fit_radius_on640": 270.763048953889,
+      "fit_core_pixels": 1167,
+      "uniform_source_scale": 0.5390872677961298,
+      "target_core_radius": 286,
+      "geometric_clip_radius": 290,
+      "half_angle": 1.05,
+      "alpha_gain": 0.6,
+      "method": "rigid center registration and uniform nearest transform from full raw; sector alpha clipping only; no new painted pixels",
+      "alpha_max": 168,
+      "alpha_sum": 2212536,
+      "outside_sector_pixels": 0,
+      "center160_pixels": 0,
+      "bbox": [
+        452,
+        69,
+        611,
+        572
+      ]
+    },
+    {
+      "frame": 1,
+      "source": "originals/surtr_sword_arc_large_f01_v01_raw.png",
+      "source_size": [
+        1254,
+        1254
+      ],
+      "fit_center_on640": [
+        340.05845111442545,
+        321.1202874545736
+      ],
+      "fit_radius_on640": 268.74921834396065,
+      "fit_core_pixels": 5125,
+      "uniform_source_scale": 0.5431268346756175,
+      "target_core_radius": 286,
+      "geometric_clip_radius": 290,
+      "half_angle": 1.05,
+      "alpha_gain": 1,
+      "method": "rigid center registration and uniform nearest transform from full raw; sector alpha clipping only; no new painted pixels",
+      "alpha_max": 255,
+      "alpha_sum": 7489449,
+      "outside_sector_pixels": 0,
+      "center160_pixels": 0,
+      "bbox": [
+        439,
+        69,
+        611,
+        572
+      ],
+      "outer_radius_42_angle_bins": [
+        289.9137802864845,
+        289.9275771636772,
+        290.0,
+        289.932750823359,
+        290.0,
+        290.0,
+        289.932750823359,
+        289.882734911895,
+        290.0,
+        289.9137802864845,
+        289.8723857148176,
+        289.9465467978538,
+        289.99310336626974,
+        289.9137802864845,
+        289.99482754007875,
+        289.968963856479,
+        289.9275771636772,
+        290.0,
+        290.0,
+        289.99482754007875,
+        289.33890163612637,
+        290.0,
+        289.99482754007875,
+        290.0,
+        290.0,
+        289.9275771636772,
+        289.968963856479,
+        289.99482754007875,
+        289.9137802864845,
+        289.99310336626974,
+        289.9465467978538,
+        289.8723857148176,
+        289.9137802864845,
+        290.0,
+        289.882734911895,
+        289.932750823359,
+        290.0,
+        290.0,
+        289.932750823359,
+        290.0,
+        289.9275771636772,
+        289.9137802864845
+      ]
+    },
+    {
+      "frame": 2,
+      "source": "originals/surtr_sword_arc_large_f02_v01_raw.png",
+      "source_size": [
+        1254,
+        1254
+      ],
+      "fit_center_on640": [
+        348.97887912889405,
+        318.9660006260268
+      ],
+      "fit_radius_on640": 260.11178935249103,
+      "fit_core_pixels": 1740,
+      "uniform_source_scale": 0.5611622319928647,
+      "target_core_radius": 286,
+      "geometric_clip_radius": 290,
+      "half_angle": 1.05,
+      "alpha_gain": 0.65,
+      "method": "rigid center registration and uniform nearest transform from full raw; sector alpha clipping only; no new painted pixels",
+      "alpha_max": 168,
+      "alpha_sum": 2637984,
+      "outside_sector_pixels": 0,
+      "center160_pixels": 0,
+      "bbox": [
+        446,
+        69,
+        611,
+        572
+      ]
+    },
+    {
+      "frame": 3,
+      "source": "originals/surtr_sword_arc_large_f03_v01_raw.png",
+      "source_size": [
+        1254,
+        1254
+      ],
+      "fit_center_on640": [
+        341.6204111529862,
+        324.18205174209015
+      ],
+      "fit_radius_on640": 272.8402307167666,
+      "fit_core_pixels": 403,
+      "uniform_source_scale": 0.5349830994397115,
+      "target_core_radius": 286,
+      "geometric_clip_radius": 290,
+      "half_angle": 1.05,
+      "alpha_gain": 0.28,
+      "method": "rigid center registration and uniform nearest transform from full raw; sector alpha clipping only; no new painted pixels",
+      "alpha_max": 72,
+      "alpha_sum": 384840,
+      "outside_sector_pixels": 0,
+      "center160_pixels": 0,
+      "bbox": [
+        456,
+        69,
+        610,
+        571
+      ]
+    }
+  ],
+  "palette": [
+    [
+      14,
+      2,
+      2
+    ],
+    [
+      24,
+      10,
+      10
+    ],
+    [
+      29,
+      3,
+      4
+    ],
+    [
+      33,
+      9,
+      8
+    ],
+    [
+      34,
+      17,
+      16
+    ],
+    [
+      43,
+      6,
+      6
+    ],
+    [
+      43,
+      17,
+      16
+    ],
+    [
+      48,
+      26,
+      24
+    ],
+    [
+      54,
+      36,
+      34
+    ],
+    [
+      57,
+      13,
+      11
+    ],
+    [
+      57,
+      19,
+      17
+    ],
+    [
+      58,
+      6,
+      8
+    ],
+    [
+      78,
+      6,
+      8
+    ],
+    [
+      79,
+      16,
+      13
+    ],
+    [
+      81,
+      49,
+      45
+    ],
+    [
+      84,
+      36,
+      30
+    ],
+    [
+      85,
+      27,
+      20
+    ],
+    [
+      107,
+      16,
+      13
+    ],
+    [
+      108,
+      6,
+      8
+    ],
+    [
+      114,
+      71,
+      60
+    ],
+    [
+      129,
+      27,
+      16
+    ],
+    [
+      130,
+      41,
+      24
+    ],
+    [
+      138,
+      10,
+      10
+    ],
+    [
+      165,
+      4,
+      6
+    ],
+    [
+      165,
+      14,
+      10
+    ],
+    [
+      168,
+      29,
+      13
+    ],
+    [
+      169,
+      44,
+      18
+    ],
+    [
+      196,
+      9,
+      6
+    ],
+    [
+      209,
+      30,
+      9
+    ],
+    [
+      215,
+      47,
+      11
+    ],
+    [
+      220,
+      10,
+      5
+    ],
+    [
+      225,
+      75,
+      13
+    ],
+    [
+      239,
+      13,
+      4
+    ],
+    [
+      240,
+      126,
+      18
+    ],
+    [
+      243,
+      30,
+      6
+    ],
+    [
+      248,
+      49,
+      6
+    ],
+    [
+      248,
+      171,
+      26
+    ],
+    [
+      250,
+      70,
+      6
+    ],
+    [
+      250,
+      94,
+      8
+    ],
+    [
+      252,
+      211,
+      55
+    ],
+    [
+      252,
+      235,
+      74
+    ],
+    [
+      252,
+      240,
+      165
+    ],
+    [
+      252,
+      251,
+      249
+    ],
+    [
+      252,
+      252,
+      232
+    ],
+    [
+      253,
+      129,
+      11
+    ],
+    [
+      253,
+      173,
+      21
+    ],
+    [
+      253,
+      251,
+      161
+    ],
+    [
+      254,
+      254,
+      251
+    ]
+  ],
+  "alpha_levels": [
+    0,
+    24,
+    48,
+    72,
+    120,
+    168,
+    216,
+    255
+  ]
+}

@@ -1,0 +1,212 @@
+{
+	"checks": [
+		{
+			"actual": null,
+			"label": "texture bridge_guard",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "texture bridge_guard_idle",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "texture bonfire_survivors",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "texture valkyrie_wings",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "texture iron_horseshoe",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "texture river_sword",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "texture sun_altar",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "actual level helheim",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "bridge accepts at original marker and timer",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "bridge accumulation inside",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "bridge outside no accumulation and pointer",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "bridge original 40 second completion",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "actual level midgard",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "actual quest landmark village",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "bonfire accepts and timer",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "bonfire original 150 radius and pointer",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "bonfire original 45 second completion",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "actual quest landmark mounds",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "wings retains trial spawn rate and timer",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "wings player foreground overlay",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "trial 149 kills incomplete",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "trial 150 kills and spawn cleanup",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "actual level helheim",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "actual quest landmark hall",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "hoof quest five collectibles and timer",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "horseshoe outside pickup radius",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "horseshoe pickup removes one",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "horseshoe pointer advances",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "horseshoe original five-item completion",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "actual quest landmark ford",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "sword accepts original timer",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "sword original 90 radius and pointer",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "sword original 15 second completion",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "actual level midgard",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "ember accepts original timer",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "ember carrying speed unchanged",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "ember damage drop and cooldown unchanged",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "ember cooldown prevents pickup restores speed",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "ember pickup after cooldown",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "ember original altar radius completion and cleanup",
+			"pass": true
+		},
+		{
+			"actual": null,
+			"label": "ember disconnects signal",
+			"pass": true
+		}
+	],
+	"failures": [],
+	"scope": "controlled actual Game rendering and quest interaction, not a manual playthrough",
+	"screenshots": []
+}

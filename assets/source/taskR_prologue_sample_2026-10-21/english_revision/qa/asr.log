@@ -1,0 +1,13 @@
+[transformers] Ignoring clean_up_tokenization_spaces=True for BPE tokenizer WhisperTokenizer. The clean_up_tokenization post-processing step is designed for WordPiece tokenizers and is destructive for BPE (it strips spaces before punctuation). Set clean_up_tokenization_spaces=False to suppress this warning, or set clean_up_tokenization_spaces_for_bpe_even_though_it_will_corrupt_output=True to force cleanup anyway.
+helheim_01.wav 
+helheim_02.wav  Garm guards the gates, for now his chains still hold.!
+helheim_03.wav  Beneath the roots of the world tree, Nidhag gnaws without rest.
+helheim_04.wav  Hell summons her dead aboard. Defeat her before Naglfar sets sail.
+midgard_01.wav  For the third winter, no summer comes.
+midgard_02.wav  Snow has buried the villages. Beneath the ice, the dead rise.
+midgard_03.wav  At the edge of heaven, great wolves hunt the last sun and moon.
+midgard_04.wav  Hrim marches across the frozen sea, drive his army back before the endless night.
+vigrid_01.wav  The rainbow bridge is breaking, gods and giants march to One Final Battlefield.
+vigrid_02.wav 
+vigrid_03.wav  Odin grips his spear. The great wolf breaks his final chain. Swiss
+vigrid_04.wav  At the far end of the battlefield, Sert raises his sword of flame, defeat him before the world burns.

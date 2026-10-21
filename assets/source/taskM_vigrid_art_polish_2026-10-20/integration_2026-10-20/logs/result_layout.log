@@ -1,0 +1,12 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+OpenGL API 4.1 Metal - 90.5 - Compatibility - Using Device: Apple - Apple M2
+
+SCRIPT ERROR: Invalid call. Nonexistent function 'create' in base 'Nil'.
+          at: _boss (res://tools/test_vigrid.gd:92)
+          GDScript backtrace (most recent call first):
+              [0] _boss (res://tools/test_vigrid.gd:92)
+              [1] _test_cleanup (res://tools/test_vigrid.gd:1121)
+              [2] _new_game (res://tools/test_vigrid.gd:62)
+PASS cleanup
+RESULT_LAYOUT 8 checks 0 failures
+2026-10-20 23:42:40.870 Godot[22888:5992465] error messaging the mach port for IMKCFRunLoopWakeUpReliable

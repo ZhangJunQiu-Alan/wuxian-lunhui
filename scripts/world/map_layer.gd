@@ -38,6 +38,7 @@ var decals_dir := ""
 var borders_dir := ""
 var edges := {}         # 有过渡块的地块名 -> 过渡块前缀，先写的画在下面
 var edge_masks := {}    # 地块名 -> 借用哪套过渡块的轮廓，例如 "snow_thin" -> "path_edge"
+var extra_tiles := {}   # 地块名 -> 别的关卡目录里的图片路径（借另一关的过渡块轮廓时，先显式加载进来）
 var variants := {}      # 地块名 -> 铺满时随机换用的变化（例如另一种冰裂纹），连同原地块一起随机
 var overlay := {}       # 地块名 -> 不透明度
 var placeholders := {}  # 名字 -> [颜色, 尺寸]
@@ -63,6 +64,8 @@ func _ready() -> void:
 	for file in ResourceLoader.list_directory(ground_dir):
 		if file.ends_with(".png"):
 			_add_source(file.get_basename(), load(ground_dir + file))
+	for tile: String in extra_tiles:
+		_add_source(tile, load(extra_tiles[tile]))
 	for tile: String in placeholders:
 		if not _sources.has(tile) and placeholders[tile][1] == Vector2i(TILE, TILE):
 			_add_source(tile, _texture(ground_dir, tile))

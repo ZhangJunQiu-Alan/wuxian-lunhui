@@ -1,7 +1,7 @@
 class_name Darkness
 extends CanvasLayer
 ## 画面变暗效果（斯库尔的「吞日」）：屏幕四周变暗，只剩玩家附近一圈能看清
-## 改 target_level（0 = 正常，1 = 最暗），画面会平滑过渡；回到 0 后自动删除自己
+## 改 target_level（0 = 正常，1 = 最暗），视野迅速压缩、平滑恢复；回到 0 后自动删除自己
 
 const SHADER_CODE := """
 shader_type canvas_item;
@@ -37,7 +37,7 @@ func _ready() -> void:
 
 
 func _process(delta: float) -> void:
-	_level = move_toward(_level, target_level, delta * 0.8)
+	_level = move_toward(_level, target_level, delta * (8.0 if target_level > _level else 0.8))
 	_material.set_shader_parameter("level", _level)
 	if _level > 0.0:
 		_started = true

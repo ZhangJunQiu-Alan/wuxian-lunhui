@@ -1,0 +1,15 @@
+{
+  "repository": "mlx-community/Qwen3-TTS-12Hz-1.7B-VoiceDesign-4bit",
+  "revision": "5c390979e4b93af5f2932f90742ca99c7dd04687",
+  "files": {
+    "model.safetensors": {
+      "bytes": 1625226859,
+      "sha256_verified_by_download_weights": "d8627de7ef411f6775182925059e140a9e1edb1fde8feeb540b4fba0edee1e58"
+    },
+    "speech_tokenizer/model.safetensors": {
+      "bytes": 682293092,
+      "sha256_verified_by_download_weights": "836b7b357f5ea43e889936a3709af68dfe3751881acefe4ecf0dbd30ba571258"
+    }
+  },
+  "verification_log": "qa/download.log"
+}

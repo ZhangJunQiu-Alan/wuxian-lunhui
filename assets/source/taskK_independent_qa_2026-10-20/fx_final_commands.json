@@ -1,0 +1,139 @@
+[
+  {
+    "name": "fx_cadence",
+    "command": [
+      "/opt/homebrew/bin/godot",
+      "--headless",
+      "--path",
+      "/Users/zhangjunqiu/Desktop/无限恐怖",
+      "--fixed-fps",
+      "60",
+      "--script",
+      "tools/test_god_fx_cadence.gd",
+      "--",
+      "--save-file=/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskK_independent_qa_2026-10-20/fx_cadence_save.json",
+      "--settings-file=/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskK_independent_qa_2026-10-20/settings_zh.cfg",
+      "--output=/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskK_independent_qa_2026-10-20/results/fx_cadence/"
+    ],
+    "exit_code": 0,
+    "wall_seconds": 2.7398531436920166,
+    "engine_errors": []
+  },
+  {
+    "name": "fx_combat",
+    "command": [
+      "/opt/homebrew/bin/godot",
+      "--headless",
+      "--path",
+      "/Users/zhangjunqiu/Desktop/无限恐怖",
+      "--fixed-fps",
+      "60",
+      "--script",
+      "res://assets/source/taskK_independent_qa_2026-10-20/diagnostics/combat.gd",
+      "--",
+      "--save-file=/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskK_independent_qa_2026-10-20/fx_combat_save.json",
+      "--settings-file=/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskK_independent_qa_2026-10-20/settings_zh.cfg",
+      "--output=/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskK_independent_qa_2026-10-20/results/fx_combat/"
+    ],
+    "exit_code": 0,
+    "wall_seconds": 5.123950004577637,
+    "engine_errors": []
+  },
+  {
+    "name": "fx_odin",
+    "command": [
+      "/opt/homebrew/bin/godot",
+      "--headless",
+      "--path",
+      "/Users/zhangjunqiu/Desktop/无限恐怖",
+      "--script",
+      "tools/test_odin_density.gd",
+      "--",
+      "--save-file=/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskK_independent_qa_2026-10-20/fx_odin_save.json",
+      "--settings-file=/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskK_independent_qa_2026-10-20/settings_zh.cfg",
+      "--output=/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskK_independent_qa_2026-10-20/results/fx_odin/"
+    ],
+    "exit_code": 0,
+    "wall_seconds": 3.7947568893432617,
+    "engine_errors": []
+  },
+  {
+    "name": "fx_skadi",
+    "command": [
+      "/opt/homebrew/bin/godot",
+      "--headless",
+      "--path",
+      "/Users/zhangjunqiu/Desktop/无限恐怖",
+      "--script",
+      "tools/test_skadi_balance.gd",
+      "--",
+      "--save-file=/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskK_independent_qa_2026-10-20/fx_skadi_save.json",
+      "--settings-file=/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskK_independent_qa_2026-10-20/settings_zh.cfg",
+      "--output=/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskK_independent_qa_2026-10-20/results/fx_skadi/"
+    ],
+    "exit_code": 0,
+    "wall_seconds": 42.95716404914856,
+    "engine_errors": []
+  },
+  {
+    "name": "fx_review",
+    "command": [
+      "/opt/homebrew/bin/godot",
+      "--path",
+      "/Users/zhangjunqiu/Desktop/无限恐怖",
+      "--fixed-fps",
+      "60",
+      "--script",
+      "tools/review_god_fx_cadence.gd",
+      "--",
+      "--save-file=/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskK_independent_qa_2026-10-20/fx_review_save.json",
+      "--settings-file=/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskK_independent_qa_2026-10-20/settings_zh.cfg",
+      "--output=/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskK_independent_qa_2026-10-20/screenshots/fx_final/"
+    ],
+    "exit_code": 0,
+    "wall_seconds": 5.036336898803711,
+    "engine_errors": []
+  },
+  {
+    "name": "fx_card_zh",
+    "command": [
+      "/opt/homebrew/bin/godot",
+      "--headless",
+      "--path",
+      "/Users/zhangjunqiu/Desktop/无限恐怖",
+      "--fixed-fps",
+      "60",
+      "--script",
+      "res://assets/source/taskK_independent_qa_2026-10-20/diagnostics/card_layout.gd",
+      "--",
+      "--save-file=/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskK_independent_qa_2026-10-20/fx_card_zh_save.json",
+      "--settings-file=/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskK_independent_qa_2026-10-20/settings_zh.cfg",
+      "--output=/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskK_independent_qa_2026-10-20/results/fx_card_zh/",
+      "--ids-file=/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskL1_paths_2026-10-20/integration_2026-10-20/card_ids.json"
+    ],
+    "exit_code": 0,
+    "wall_seconds": 13.223169088363647,
+    "engine_errors": []
+  },
+  {
+    "name": "fx_card_en",
+    "command": [
+      "/opt/homebrew/bin/godot",
+      "--headless",
+      "--path",
+      "/Users/zhangjunqiu/Desktop/无限恐怖",
+      "--fixed-fps",
+      "60",
+      "--script",
+      "res://assets/source/taskK_independent_qa_2026-10-20/diagnostics/card_layout.gd",
+      "--",
+      "--save-file=/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskK_independent_qa_2026-10-20/fx_card_en_save.json",
+      "--settings-file=/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskK_independent_qa_2026-10-20/settings_en.cfg",
+      "--output=/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskK_independent_qa_2026-10-20/results/fx_card_en/",
+      "--ids-file=/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskL1_paths_2026-10-20/integration_2026-10-20/card_ids.json"
+    ],
+    "exit_code": 0,
+    "wall_seconds": 12.240140199661255,
+    "engine_errors": []
+  }
+]

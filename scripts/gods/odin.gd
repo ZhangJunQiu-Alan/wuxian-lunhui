@@ -5,7 +5,7 @@ extends GodPower
 ## 素材：effects/rune_missile.png（现有）；可选 effects/gods/odin_spear.png 长枪（64×16，枪尖朝右），
 ##       odin_raven.png 渡鸦（2 帧 24×24，头朝右），odin_rune_circle.png 符文阵（96×96）
 
-const RANGE := 600.0
+const RANGE := 360.0
 const MISSILE := preload("res://assets/sprites/effects/rune_missile.png")
 const BASE_DAMAGE := 12.0
 const BASE_COOLDOWN := 0.8
@@ -21,6 +21,8 @@ const RAVEN_SPEED := 620.0
 const RAVEN_ORBIT := 70.0
 const CIRCLE_RADIUS := 45.0
 const CIRCLE_LIFE := 3.0
+const NIGHT_HIT_EVERY := 1.0
+const RESONANCE_FX_RADIUS := 48.0
 const SUMMON_EVERY := 100      # 觉醒的神格被动：每击杀这么多个敌人召唤一位英灵
 
 var _missiles: Array[Dictionary] = []  # 飞行中的符文和长枪
@@ -28,9 +30,22 @@ var _ravens: Array[Dictionary] = []    # 渡鸦：angle、target、pos、diving�
 var _circles: Array[GodZone] = []
 var _kills := 0
 var _charm_tick := 0.0
+var _night_hit_at := {}
+var _night_spread_at := {}
+var _night_membership := {}
+var _night_pending := {}
+var _night_time := -INF
+var _night_frame := -1
+var _night_revision := -1
+var _night_circle_count := -1
 
 
 func tick(delta: float) -> void:
+	for history in [_night_hit_at, _night_spread_at]:
+		if history.size() > 512:
+			for enemy in history.keys():
+				if not is_instance_valid(enemy) or _time - history[enemy] >= NIGHT_HIT_EVERY:
+					history.erase(enemy)
 	match path:
 		"odin_gungnir":
 			if _timer <= 0.0:
@@ -152,16 +167,36 @@ func detonate(enemy: Enemy, _forced: bool = false) -> void:
 	FxLayer.burst(at, Color(0.8, 0.6, 1.0), 12, 160.0, 3.0)
 	var reach := stat("odin_resonance")
 	if reach > 0.0:
-		FxLayer.ring(at, reach)
+		FxLayer.ring(at, minf(reach, RESONANCE_FX_RADIUS), 0.45)
 		for other in enemies_in_radius(at, reach):
 			if other != enemy:
 				other.take_damage(damage(BASE_DAMAGE) * 0.6)
 				other.add_stacks("rune", 1, 6.0)
 	if path == "odin_nights" and awakened:  # 世界树之秘：所有符文阵里的敌人叠 1 层
-		for circle in _circles:
-			if is_instance_valid(circle):
-				for other in circle.enemies_inside():
-					other.add_stacks("rune", 1, 6.0)
+		_update_night_membership()
+		for other in _night_pending:
+			if is_instance_valid(other) and not other._dead:
+				_night_spread_at[other] = _time
+				other.add_stacks("rune", 1, 6.0)
+		_night_pending.clear()
+
+
+func _update_night_membership() -> void:
+	var frame := Engine.get_process_frames()
+	if _night_time == _time and _night_frame == frame and _night_revision == Enemy.spatial_revision and _night_circle_count == _circles.size():
+		return
+	_night_membership.clear()
+	_night_pending.clear()
+	for circle in _circles:
+		if is_instance_valid(circle):
+			for other in circle.enemies_inside():
+				_night_membership[other] = true
+				if _time - _night_spread_at.get(other, -INF) >= NIGHT_HIT_EVERY:
+					_night_pending[other] = true
+	_night_time = _time
+	_night_frame = frame
+	_night_revision = Enemy.spatial_revision
+	_night_circle_count = _circles.size()
 
 
 # ———— 质变：九夜符文 ————
@@ -170,6 +205,9 @@ func _rune_circle(at: Vector2, can_repeat: bool = true) -> void:
 	var radius := CIRCLE_RADIUS * (1.0 + 0.15 * stat("odin_pierce")) * (1.4 if awakened else 1.0)
 	var life := CIRCLE_LIFE * (1.6 if awakened else 1.0)
 	var mark := func(enemy: Enemy) -> void:
+		if _time - _night_hit_at.get(enemy, -INF) < NIGHT_HIT_EVERY:
+			return
+		_night_hit_at[enemy] = _time
 		enemy.take_damage(damage(BASE_DAMAGE) * 0.5)
 		add_rune(enemy, 1)
 	var circle := zone(at, radius, life, 1.0, mark, Color(0.75, 0.55, 1.0))

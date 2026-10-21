@@ -1,0 +1,54 @@
+{
+  "sample_id": "R01",
+  "duration_seconds": 12,
+  "fps": 24,
+  "viewport": [
+    1280,
+    720
+  ],
+  "music": "demo/audio/sample_mix.wav",
+  "narration": "not_recorded; Chinese subtitles only",
+  "shots": [
+    {
+      "id": "snow_village",
+      "start": 0,
+      "end": 6.55,
+      "layers": [
+        "layers/village_bg.png",
+        "layers/village_fg.png"
+      ],
+      "camera": "1.025 to 1.09 push; foreground independent lateral parallax",
+      "subtitle": "第三个没有夏天的冬季。",
+      "subtitle_in": 0.9,
+      "subtitle_out": 5.65
+    },
+    {
+      "id": "skoll_last_sun",
+      "start": 5.25,
+      "end": 12,
+      "layers": [
+        "layers/sky_bg.png",
+        "layers/sun.png",
+        "layers/skoll.png"
+      ],
+      "camera": "background1.065 to1.11, wolf separately translates; sun behind wolf; exposure dims",
+      "subtitle": "巨狼追上了最后的太阳。",
+      "subtitle_in": 6.5,
+      "subtitle_out": 11.35
+    }
+  ],
+  "transition": {
+    "start": 5.25,
+    "end": 6.55,
+    "type": "smoothstep cross dissolve"
+  },
+  "fade_in": [
+    0,
+    0.8
+  ],
+  "fade_out": [
+    11.25,
+    12
+  ],
+  "narrative_status": "Original sample draft based on current Norse chapter. Does not reveal Ark, nuclear cleansing or the ending. No approved new lore."
+}

@@ -1,0 +1,50 @@
+[
+  {
+    "name": "exclusive_odin",
+    "command": [
+      "/opt/homebrew/bin/godot",
+      "--path",
+      "/Users/zhangjunqiu/Desktop/无限恐怖",
+      "--max-fps",
+      "60",
+      "--script",
+      "tools/acceptance_vigrid_soak.gd",
+      "--",
+      "--seconds=55",
+      "--stages=-1,1",
+      "--awake=odin",
+      "--reentries=0",
+      "--save-file=/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskK_independent_qa_2026-10-20/exclusive_odin_save.json",
+      "--settings-file=/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskK_independent_qa_2026-10-20/settings_zh.cfg",
+      "--output=/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskK_independent_qa_2026-10-20/results/exclusive_odin"
+    ],
+    "exit_code": 1,
+    "wall_seconds": 114.38248181343079,
+    "other_godot_before": [],
+    "other_godot_during": []
+  },
+  {
+    "name": "exclusive_skadi",
+    "command": [
+      "/opt/homebrew/bin/godot",
+      "--path",
+      "/Users/zhangjunqiu/Desktop/无限恐怖",
+      "--max-fps",
+      "60",
+      "--script",
+      "tools/acceptance_vigrid_soak.gd",
+      "--",
+      "--seconds=55",
+      "--stages=0,2",
+      "--awake=skadi",
+      "--reentries=12",
+      "--save-file=/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskK_independent_qa_2026-10-20/exclusive_skadi_save.json",
+      "--settings-file=/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskK_independent_qa_2026-10-20/settings_zh.cfg",
+      "--output=/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskK_independent_qa_2026-10-20/results/exclusive_skadi"
+    ],
+    "exit_code": 0,
+    "wall_seconds": 161.71046805381775,
+    "other_godot_before": [],
+    "other_godot_during": []
+  }
+]

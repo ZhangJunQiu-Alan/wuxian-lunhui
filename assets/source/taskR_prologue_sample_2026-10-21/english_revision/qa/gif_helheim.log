@@ -1,0 +1,31 @@
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from '/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskR_prologue_sample_2026-10-21/preview/helheim_story.mp4':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    encoder         : Lavf62.12.101
+  Duration: 00:00:38.67, start: 0.000000, bitrate: 8561 kb/s
+  Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuvj420p(pc, bt470bg/unknown/unknown, progressive), 1280x720 [SAR 1:1 DAR 16:9], 8361 kb/s, 24 fps, 24 tbr, 12288 tbn (default)
+    Metadata:
+      handler_name    : VideoHandler
+      encoder         : Lavc62.28.101 libx264
+  Stream #0:1[0x2](und): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 195 kb/s (default)
+    Metadata:
+      handler_name    : SoundHandler
+Stream mapping:
+  Stream #0:0 (h264) -> fps:default
+  paletteuse:default -> Stream #0:0 (gif)
+Press [q] to stop, [?] for help
+[swscaler @ 0xb069b8000] deprecated pixel format used, make sure you did set range correctly
+[Parsed_palettegen_3 @ 0xb06c32040] 95(+1) colors generated out of 112989 colors; ratio=0.000841
+Output #0, gif, to '/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/taskR_prologue_sample_2026-10-21/preview/helheim_preview_4fps.gif':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    encoder         : Lavf62.12.101
+  Stream #0:0: Video: gif, pal8(pc, gbr/unknown/unknown, progressive), 480x270 [SAR 1:1 DAR 16:9], q=2-31, 200 kb/s, 4 fps, 100 tbn
+    Metadata:
+      encoder         : Lavc62.28.101 gif
+frame=   12 fps=3.4 q=-0.0 size=     512KiB time=00:00:03.00 bitrate=1398.1kbits/s speed=0.849x elapsed=0:00:03.53    frame=  154 fps= 38 q=-0.0 size=   10240KiB time=00:00:38.50 bitrate=2178.9kbits/s speed=9.53x elapsed=0:00:04.03    [out#0/gif @ 0xb06c30000] video:10625KiB audio:0KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: 0.000184%
+frame=  155 fps= 38 q=-0.0 Lsize=   10625KiB time=00:00:38.75 bitrate=2246.2kbits/s speed=9.59x elapsed=0:00:04.04    

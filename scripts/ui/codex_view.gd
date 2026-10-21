@@ -170,6 +170,7 @@ func _select(tile: Button, item: Dictionary) -> void:
 		child.queue_free()
 	var sprite: Node2D = SpriteVisual.create(item.sprite, SPRITE_HEIGHT) if item.sprite != "" else null
 	if sprite:
+		_fit_stage(sprite)
 		sprite.modulate = Color.WHITE if known else Color(0, 0, 0, 0.85)
 		_sprite_root.add_child(sprite)
 	_stage.visible = sprite != null
@@ -179,6 +180,16 @@ func _select(tile: Button, item: Dictionary) -> void:
 	_extra.text = item.extra if known else ""
 	_extra.visible = _extra.text != ""
 	_count.text = _count_text(item.count)
+
+
+## 苏尔特这种 320 高的动作图放不进展示台：按整数分之一缩小（脚底轴心不变）
+func _fit_stage(sprite: Node2D) -> void:
+	var texture: Texture2D = sprite.sprite_frames.get_frame_texture(sprite.animation, 0) if sprite is AnimatedSprite2D else sprite.texture
+	var tex_height := float(texture.get_height())
+	if tex_height <= SPRITE_HEIGHT * 1.5:
+		return
+	sprite.scale = Vector2.ONE / roundf(tex_height / SPRITE_HEIGHT)
+	sprite.position = Vector2(0, tex_height * 0.5 * sprite.scale.y)
 
 
 func _count_text(count: int) -> String:
@@ -211,7 +222,7 @@ func _sections(category: String) -> Array:
 				var items := []
 				for row: Array in CodexDB.BOSSES[level]:
 					items.append(_item(category, row[0], tr(row[1]), tr(row[2]), tr(row[3]), tr(row[4]),
-						"res://assets/sprites/bosses/" + row[0], Color(1.0, 0.45, 0.4), "还没有遇到过。"))
+						"res://assets/sprites/bosses/" + (row[5] if row.size() > 5 else row[0]), Color(1.0, 0.45, 0.4), "还没有遇到过。"))
 				sections.append({"title": tr(LevelDB.NAMES[level]), "items": items})
 		"quests":
 			for level: String in CodexDB.QUESTS:

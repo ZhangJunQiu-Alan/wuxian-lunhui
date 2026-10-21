@@ -1,0 +1,50 @@
+{
+  "checked": "2026-10-21",
+  "image_generation": {
+    "tool": "built-in image_gen.imagegen",
+    "url": "https://openai.com/policies/terms-of-use/",
+    "effective": "2026-01-01",
+    "basis": "Content Ownership: user owns output as between user and OpenAI to extent allowed by applicable law; compliance and input rights required",
+    "commercial_use": "allowed subject to terms; not claiming uniqueness or copyright protection"
+  },
+  "other_tools": [
+    {
+      "tool": "Godot 4.7.2",
+      "license": "MIT",
+      "usage": "isolated demo, playback and GPU frame capture"
+    },
+    {
+      "tool": "Pillow",
+      "license": "MIT-CMU (prior local verification recorded in assets/LICENSES.md)",
+      "usage": "inspection and contact sheets only; generated PNGs not edited"
+    },
+    {
+      "tool": "FFmpeg 8.1.1",
+      "license": "GPLv3 verified locally with ffmpeg -L",
+      "usage": "independent offline encoding; no tool binary distributed"
+    }
+  ],
+  "audio_sources": "records/full_audio_source_hashes.json and assets/cinematics/norse/CREDITS.md",
+  "font": {
+    "file": "assets/fonts/NotoSansSC-Regular.otf",
+    "license": "SIL OFL 1.1",
+    "copy": "demo/fonts/NotoSansSC-OFL.txt"
+  },
+  "no_new_account_or_payment": true,
+  "scope": "Three completed per-level cinematics",
+  "narration": {
+    "model": "Kokoro-82M-v1.1-zh",
+    "model_license": "Apache-2.0",
+    "official_card": "https://huggingface.co/hexgrad/Kokoro-82M-v1.1-zh",
+    "runtime": "kokoro-onnx MIT",
+    "voice": "zm_010",
+    "speed": 0.9,
+    "inputs": "12 original Chinese lines, no user or actor recordings",
+    "acknowledgements": [
+      "hexgrad",
+      "LongMaoData"
+    ],
+    "raw_and_parameters": "records/tts/narration_generation.json",
+    "dependency_licenses": "records/tts/dependency_licenses.json"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "midgard": {
+    "audio_envelope_correlation": 0.9945171426778404,
+    "offset_ms": 0,
+    "sha256_video": "f1bff8b31f9510060d80e01fe300eb42aa12a6a0739cbfaddb8bb384580a844f",
+    "method": "10ms RMS-envelope comparison against game music/effects/narration stems at default bus gain; +/-120ms search",
+    "listening_acceptance": "pending"
+  },
+  "helheim": {
+    "audio_envelope_correlation": 0.9943852770474862,
+    "offset_ms": 0,
+    "sha256_video": "b882d79f9285d0fc1941b7eb0496e7bbdb37a5984d16ff62820586213f788c3e",
+    "method": "10ms RMS-envelope comparison against game music/effects/narration stems at default bus gain; +/-120ms search",
+    "listening_acceptance": "pending"
+  },
+  "vigrid": {
+    "audio_envelope_correlation": 0.9941826459424886,
+    "offset_ms": 0,
+    "sha256_video": "76501ff18c88ef774b852933485d99766cadf569fca8913c3f188c51126c1fc8",
+    "method": "10ms RMS-envelope comparison against game music/effects/narration stems at default bus gain; +/-120ms search",
+    "listening_acceptance": "pending"
+  }
+}

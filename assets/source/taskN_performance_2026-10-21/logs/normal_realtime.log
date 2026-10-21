@@ -1,0 +1,41 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+OpenGL API 4.1 Metal - 90.5 - Compatibility - Using Device: Apple - Apple M2
+
+2026-10-21 00:43:54.243 Godot[28415:6085620] error messaging the mach port for IMKCFRunLoopWakeUpReliable
+EVENT {"character":"gunslinger","event":"start","headless":false,"level":"vigrid","t":0.0,"wall":0.257}
+EVENT {"event":"faith","god":"thor","t":0.0,"wall":0.392}
+EVENT {"event":"faith","god":"odin","t":30.36,"wall":30.813}
+EVENT {"event":"faith","god":"freyja","t":74.02,"wall":74.538}
+EVENT {"event":"faith","god":"skadi","t":140.47,"wall":141.098}
+EVENT {"event":"boss_spawn","hp":3000.06749642896,"id":"jormungandr","t":180.01,"wall":180.499}
+EVENT {"boss":"jormungandr","boss_state":"retract","event":"damage","hp":116.0,"lost":24.0,"position":"(-134.427, -668.0737)","t":187.24,"wall":187.86}
+EVENT {"boss":"jormungandr","boss_state":"coil","event":"damage","hp":118.170000000001,"lost":0.189999999999998,"position":"(-171.7727, -190.3463)","t":191.19,"wall":191.81}
+EVENT {"boss":"jormungandr","boss_state":"coil","event":"damage","hp":117.980000000001,"lost":0.189999999999998,"position":"(-167.5442, -186.1178)","t":191.2,"wall":191.827}
+EVENT {"boss":"jormungandr","boss_state":"coil","event":"damage","hp":117.790000000001,"lost":0.189999999999998,"position":"(-163.3157, -181.8893)","t":191.22,"wall":191.844}
+EVENT {"boss":"jormungandr","boss_state":"coil","event":"damage","hp":117.600000000001,"lost":0.189999999999998,"position":"(-159.0872, -177.6608)","t":191.24,"wall":191.862}
+EVENT {"boss":"jormungandr","boss_state":"coil","event":"damage","hp":117.410000000001,"lost":0.189999999999998,"position":"(-159.0872, -171.6808)","t":191.25,"wall":191.876}
+EVENT {"boss":"jormungandr","boss_state":"coil","event":"damage","hp":117.220000000001,"lost":0.189999999999998,"position":"(-159.0872, -165.7008)","t":191.27,"wall":191.894}
+EVENT {"boss":"jormungandr","boss_state":"coil","event":"damage","hp":117.030000000001,"lost":0.189999999999998,"position":"(-159.0872, -159.7208)","t":191.29,"wall":191.91}
+EVENT {"defeated":["jormungandr"],"event":"boss_gone","id":"jormungandr","t":201.22,"wall":201.864}
+EVENT {"event":"fate","id":"thor_saved","t":201.22,"wall":201.864}
+EVENT {"event":"boss_spawn","hp":5000.15464492753,"id":"fenrir","t":360.01,"wall":360.686}
+EVENT {"event":"fenrir_bound","t":367.08,"wall":367.87}
+EVENT {"boss":"fenrir","boss_state":"swallow","event":"damage","hp":70.0,"lost":70.0,"position":"(-1098.708, -1671.53)","t":392.21,"wall":393.001}
+EVENT {"event":"fenrir_swallow","t":392.21,"wall":393.002}
+EVENT {"defeated":["jormungandr","fenrir"],"event":"boss_gone","id":"fenrir","t":403.89,"wall":404.678}
+EVENT {"event":"boss_spawn","hp":12000.2499687471,"id":"surtr","t":540.01,"wall":540.997}
+EVENT {"boss":"surtr","boss_state":"sweep","event":"damage","hp":100.0,"lost":40.0,"position":"(-2153.417, -2243.847)","t":547.37,"wall":548.6}
+EVENT {"event":"surtr_phase","hp_ratio":0.583,"phase":2,"t":554.15,"wall":555.411}
+EVENT {"boss":"surtr","boss_state":"sweep_windup","event":"damage","hp":109.0,"lost":31.0,"position":"(-2133.247, -2242.16)","t":556.56,"wall":557.828}
+EVENT {"event":"surtr_phase","hp_ratio":0.246,"phase":3,"t":561.36,"wall":562.631}
+EVENT {"boss":"surtr","boss_state":"final","event":"damage","hp":124.0,"lost":16.0,"position":"(-2257.473, -1772.996)","t":564.1,"wall":565.509}
+EVENT {"cycle":0,"event":"final_fire_burn","safe":20,"t":565.15,"unsafe":373,"wall":566.559}
+EVENT {"cycle":1,"event":"final_fire_burn","safe":20,"t":568.87,"unsafe":338,"wall":570.275}
+EVENT {"cycle":2,"event":"final_fire_burn","safe":20,"t":572.58,"unsafe":306,"wall":573.992}
+EVENT {"cycle":3,"event":"final_fire_burn","safe":20,"t":576.3,"unsafe":273,"wall":577.708}
+EVENT {"cycle":4,"event":"final_fire_burn","safe":16,"t":580.02,"unsafe":248,"wall":581.425}
+EVENT {"defeated":["jormungandr","fenrir","surtr"],"event":"boss_gone","id":"surtr","t":582.73,"wall":584.158}
+EVENT {"beat":0,"event":"ending_shown","t":582.73,"wall":587.221}
+EVENT {"cleared_this_run":true,"cleared_vigrid":true,"event":"result","fates_saved":{"ever_faith_loki":false,"freyr_assisted":false,"thor_saved":true,"vidar_intervened":false},"level_id":"vigrid","run":{"elapsed":582.732953333143,"ever_faith_loki":false,"fate_count":1,"fates":{"freyr_assisted":false,"thor_saved":true,"vidar_intervened":false},"has_quests":false,"hidden_found":0,"hidden_total":0,"kills":2590,"level":40,"quests_done":0,"quests_seen":0,"reward_points":1455,"reward_total":1455,"story_points":0,"story_total":0},"save_clears":3,"save_runs":1,"t":582.73,"wall":590.357}
+PLAYTHROUGH_DONE level=582.7 wall=591.5 enemies_max=348 p95=17.34ms won_this_run=true
+RENDER_INTERVAL_RESULT {"frames":34943,"max_ms":277.484,"note":"SceneTree idle-frame wall intervals; include modal pauses and screenshot/save overhead. Legacy frame_ms fields are physics-callback intervals.","over_100ms":56,"over_33ms":82,"p50_ms":16.668,"p95_ms":18.05,"p99_ms":19.054}

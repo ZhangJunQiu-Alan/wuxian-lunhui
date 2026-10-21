@@ -1,0 +1,27 @@
+{
+  "inputs": [
+    {
+      "file": "assets/audio/music/hub.ogg",
+      "excerpt_start_seconds": 12,
+      "duration": 12,
+      "volume_multiplier": 0.45,
+      "author": "TokyoGeisha",
+      "source_page": "https://opengameart.org/content/dream-2-ambience",
+      "license": "CC0-1.0"
+    },
+    {
+      "file": "assets/audio/sfx/boss_howl.wav",
+      "delay_seconds": 6.2,
+      "volume_multiplier": 0.23,
+      "author": "NaturesTemper",
+      "source_page": "https://freesound.org/people/NaturesTemper/sounds/398430/",
+      "license": "CC0-1.0"
+    }
+  ],
+  "filter_complex": "[0:a]atrim=start=12:duration=12,asetpts=PTS-STARTPTS,volume=0.45,afade=t=in:d=1.2,afade=t=out:st=10.3:d=1.7[bed];[1:a]volume=0.23,afade=t=in:d=0.25,afade=t=out:st=4.8:d=1.0,adelay=6200|6200[howl];[bed][howl]amix=inputs=2:duration=first:normalize=0,alimiter=limit=0.7:level=0,afade=t=out:st=11.4:d=0.6[a]",
+  "output": "demo/audio/sample_mix.wav",
+  "sample_rate": 48000,
+  "channels": 2,
+  "codec": "pcm_s16le",
+  "listening_acceptance": "pending; not marked passed"
+}

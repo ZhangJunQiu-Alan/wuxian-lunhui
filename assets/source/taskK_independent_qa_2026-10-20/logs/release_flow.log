@@ -1,0 +1,25 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+EVENT {"character":"gunslinger","event":"start","headless":true,"level":"vigrid","t":0.0,"wall":0.203}
+EVENT {"event":"faith","god":"thor","t":0.0,"wall":0.22}
+EVENT {"event":"faith","god":"odin","t":25.1,"wall":1.144}
+EVENT {"event":"faith","god":"skadi","t":69.25,"wall":3.546}
+EVENT {"event":"faith","god":"baldr","t":142.33,"wall":6.899}
+EVENT {"event":"boss_spawn","hp":3000.00000000038,"id":"jormungandr","t":180.0,"wall":9.029}
+EVENT {"event":"fate","id":"thor_saved","t":200.47,"wall":11.328}
+EVENT {"defeated":["jormungandr"],"event":"boss_gone","id":"jormungandr","t":200.48,"wall":11.33}
+EVENT {"event":"boss_spawn","hp":5000.00000000001,"id":"fenrir","t":360.0,"wall":25.732}
+EVENT {"event":"fenrir_swallow","t":371.17,"wall":26.75}
+EVENT {"defeated":["jormungandr","fenrir"],"event":"boss_gone","id":"fenrir","t":372.58,"wall":26.877}
+EVENT {"event":"awaken","id":"thor_mjolnir_awaken","t":474.48,"wall":39.739}
+EVENT {"event":"boss_spawn","hp":12000.312499997,"id":"surtr","t":540.02,"wall":51.169}
+EVENT {"event":"surtr_phase","hp_ratio":0.592,"phase":2,"t":546.03,"wall":52.422}
+EVENT {"event":"surtr_phase","hp_ratio":0.248,"phase":3,"t":552.88,"wall":53.813}
+EVENT {"defeated":["jormungandr","fenrir","surtr"],"event":"boss_gone","id":"surtr","t":555.28,"wall":54.231}
+EVENT {"beat":0,"event":"ending_shown","t":555.28,"wall":54.246}
+EVENT {"cleared_vigrid":true,"event":"result","fates_saved":{"ever_faith_loki":false,"freyr_assisted":false,"thor_saved":true,"vidar_intervened":false},"run":{"elapsed":555.283333333157,"ever_faith_loki":false,"fate_count":1,"fates":{"freyr_assisted":false,"thor_saved":true,"vidar_intervened":false},"has_quests":false,"hidden_found":0,"hidden_total":0,"kills":2424,"level":40,"quests_done":0,"quests_seen":0,"reward_points":1455,"reward_total":1455,"story_points":0,"story_total":0},"save_clears":3,"save_runs":1,"t":555.28,"wall":54.377}
+PLAYTHROUGH_DONE level=555.3 wall=54.4 enemies_max=143 p95=3.15ms cleared=true
+WARNING: 23 ObjectDB instances were leaked at exit (run with `--verbose` for details).
+   at: cleanup (core/object/object.cpp:2536)
+ERROR: 10 resources still in use at exit (run with --verbose for details).
+   at: clear (core/io/resource.cpp:822)

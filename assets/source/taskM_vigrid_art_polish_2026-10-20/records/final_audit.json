@@ -1,0 +1,1732 @@
+{
+  "passed": 299,
+  "failed": 0,
+  "checks": [
+    {
+      "check": "all pre-existing sprite files unchanged",
+      "passed": true,
+      "data": {
+        "count": 1234,
+        "changed": []
+      }
+    },
+    {
+      "check": "ash_road: RGBA exact size",
+      "passed": true,
+      "data": {
+        "mode": "RGBA",
+        "size": [
+          64,
+          64
+        ]
+      }
+    },
+    {
+      "check": "ash_road: transparent RGB clean",
+      "passed": true,
+      "data": null
+    },
+    {
+      "check": "ash_road: palette <=48",
+      "passed": true,
+      "data": 48
+    },
+    {
+      "check": "ash_road: alpha <=8 steps",
+      "passed": true,
+      "data": [
+        255
+      ]
+    },
+    {
+      "check": "ash_road: opaque terrain",
+      "passed": true,
+      "data": null
+    },
+    {
+      "check": "ash_road: brightness AND contrast targets",
+      "passed": true,
+      "data": {
+        "luminance": 62.05651562499999,
+        "stddev": 16.805819634218405
+      }
+    },
+    {
+      "check": "ash_road: source exists originals/ash_road_v01_raw.png",
+      "passed": true,
+      "data": null
+    },
+    {
+      "check": "ash_road: prompt exists",
+      "passed": true,
+      "data": null
+    },
+    {
+      "check": "ash_road_edge_n: RGBA exact size",
+      "passed": true,
+      "data": {
+        "mode": "RGBA",
+        "size": [
+          64,
+          64
+        ]
+      }
+    },
+    {
+      "check": "ash_road_edge_n: transparent RGB clean",
+      "passed": true,
+      "data": null
+    },
+    {
+      "check": "ash_road_edge_n: palette <=48",
+      "passed": true,
+      "data": 48
+    },
+    {
+      "check": "ash_road_edge_n: alpha <=8 steps",
+      "passed": true,
+      "data": [
+        0,
+        255
+      ]
+    },
+    {
+      "check": "ash_road_edge_n: binary mask",
+      "passed": true,
+      "data": null
+    },
+    {
+      "check": "ash_road_edge_n: old topology only subtracted",
+      "passed": true,
+      "data": null
+    },
+    {
+      "check": "ash_road_edge_n: source exists originals/ash_road_v01_raw.png",
+      "passed": true,
+      "data": null
+    },
+    {
+      "check": "ash_road_edge_n: source exists assets/sprites/ground/helheim/bone_path_edge_n.png",
+      "passed": true,
+      "data": null
+    },
+    {
+      "check": "ash_road_edge_n: prompt exists",
+      "passed": true,
+      "data": null
+    },
+    {
+      "check": "ash_road_edge_s: RGBA exact size",
+      "passed": true,
+      "data": {
+        "mode": "RGBA",
+        "size": [
+          64,
+          64
+        ]
+      }
+    },
+    {
+      "check": "ash_road_edge_s: transparent RGB clean",
+      "passed": true,
+      "data": null
+    },
+    {
+      "check": "ash_road_edge_s: palette <=48",
+      "passed": true,
+      "data": 48
+    },
+    {
+      "check": "ash_road_edge_s: alpha <=8 steps",
+      "passed": true,
+      "data": [
+        0,
+        255
+      ]
+    },
+    {
+      "check": "ash_road_edge_s: binary mask",
+      "passed": true,
+      "data": null
+    },
+    {
+      "check": "ash_road_edge_s: old topology only subtracted",
+      "passed": true,
+      "data": null
+    },
+    {
+      "check": "ash_road_edge_s: source exists originals/ash_road_v01_raw.png",
+      "passed": true,
+      "data": null
+    },
+    {
+      "check": "ash_road_edge_s: source exists assets/sprites/ground/helheim/bone_path_edge_s.png",
+      "passed": true,
+      "data": null
+    },
+    {
+      "check": "ash_road_edge_s: prompt exists",
+      "passed": true,
+      "data": null
+    },
+    {
+      "check": "ash_road_edge_e: RGBA exact size",
+      "passed": true,
+      "data": {
+        "mode": "RGBA",
+        "size": [
+          64,
+          64
+        ]
+      }
+    },
+    {
+      "check": "ash_road_edge_e: transparent RGB clean",
+      "passed": true,
+      "data": null
+    },
+    {
+      "check": "ash_road_edge_e: palette <=48",
+      "passed": true,
+      "data": 48
+    },
+    {
+      "check": "ash_road_edge_e: alpha <=8 steps",
+      "passed": true,
+      "data": [
+        0,
+        255
+      ]
+    },
+    {
+      "check": "ash_road_edge_e: binary mask",
+      "passed": true,
+      "data": null
+    },
+    {
+      "check": "ash_road_edge_e: old topology only subtracted",
+      "passed": true,
+      "data": null
+    },
+    {
+      "check": "ash_road_edge_e: source exists originals/ash_road_v01_raw.png",
+      "passed": true,
+      "data": null
+    },
+    {
+      "check": "ash_road_edge_e: source exists assets/sprites/ground/helheim/bone_path_edge_e.png",
+      "passed": true,
+      "data": null
+    },
+    {
+      "check": "ash_road_edge_e: prompt exists",
+      "passed": true,
+      "data": null
+    },
+    {
+      "check": "ash_road_edge_w: RGBA exact size",
+      "passed": true,
+      "data": {
+        "mode": "RGBA",
+        "size": [
+          64,
+          64
+        ]
+      }
+    },
+    {
+      "check": "ash_road_edge_w: transparent RGB clean",
+      "passed": true,
+      "data": null
+    },
+    {
+      "check": "ash_road_edge_w: palette <=48",
+      "passed": true,
+      "data": 48
+    },
+    {
+      "check": "ash_road_edge_w: alpha <=8 steps",
+      "passed": true,
+      "data": [
+        0,
+        255
+      ]
+    },
+    {
+      "check": "ash_road_edge_w: binary mask",
+      "passed": true,
+      "data": null
+    },
+    {
+      "check": "ash_road_edge_w: old topology only subtracted",
+      "passed": true,
+      "data": null
+    },
+    {
+      "check": "ash_road_edge_w: source exists originals/ash_road_v01_raw.png",
+      "passed": true,
+      "data": null
+    },
+    {
+      "check": "ash_road_edge_w: source exists assets/sprites/ground/helheim/bone_path_edge_w.png",
+      "passed": true,
+      "data": null
+    },
+    {
+      "check": "ash_road_edge_w: prompt exists",
+      "passed": true,
+      "data": null
+    },
+    {
+      "check": "ash_road_edge_inner_ne: RGBA exact size",
+      "passed": true,
+      "data": {
+        "mode": "RGBA",
+        "size": [
+          64,
+          64
+        ]
+      }
+    },
+    {
+      "check": "ash_road_edge_inner_ne: transparent RGB clean",
+      "passed": true,
+      "data": null
+    },
+    {
+      "check": "ash_road_edge_inner_ne: palette <=48",
+      "passed": true,
+      "data": 48
+    },
+    {
+      "check": "ash_road_edge_inner_ne: alpha <=8 steps",
+      "passed": true,
+      "data": [
+        0,
+        255
+      ]
+    },
+    {
+      "check": "ash_road_edge_inner_ne: binary mask",
+      "passed": true,
+      "data": null
+    },
+    {
+      "check": "ash_road_edge_inner_ne: old topology only subtracted",
+      "passed": true,
+      "data": null
+    },
+    {
+      "check": "ash_road_edge_inner_ne: source exists originals/ash_road_v01_raw.png",
+      "passed": true,
+      "data": null
+    },
+    {
+      "check": "ash_road_edge_inner_ne: source exists assets/sprites/ground/helheim/bone_path_edge_inner_ne.png",
+      "passed": true,
+      "data": null
+    },
+    {
+      "check": "ash_road_edge_inner_ne: prompt exists",
+      "passed": true,
+      "data": null
+    },
+    {
+      "check": "ash_road_edge_inner_nw: RGBA exact size",
+      "passed": true,
+      "data": {
+        "mode": "RGBA",
+        "size": [
+          64,
+          64
+        ]
+      }
+    },
+    {
+      "check": "ash_road_edge_inner_nw: transparent RGB clean",
+      "passed": true,
+      "data": null
+    },
+    {
+      "check": "ash_road_edge_inner_nw: palette <=48",
+      "passed": true,
+      "data": 48
+    },
+    {
+      "check": "ash_road_edge_inner_nw: alpha <=8 steps",
+      "passed": true,
+      "data": [
+        0,
+        255
+      ]
+    },
+    {
+      "check": "ash_road_edge_inner_nw: binary mask",
+      "passed": true,
+      "data": null
+    },
+    {
+      "check": "ash_road_edge_inner_nw: old topology only subtracted",
+      "passed": true,
+      "data": null
+    },
+    {
+      "check": "ash_road_edge_inner_nw: source exists originals/ash_road_v01_raw.png",
+      "passed": true,
+      "data": null
+    },
+    {
+      "check": "ash_road_edge_inner_nw: source exists assets/sprites/ground/helheim/bone_path_edge_inner_nw.png",
+      "passed": true,
+      "data": null
+    },
+    {
+      "check": "ash_road_edge_inner_nw: prompt exists",
+      "passed": true,
+      "data": null
+    },
+    {
+      "check": "ash_road_edge_inner_se: RGBA exact size",
+      "passed": true,
+      "data": {
+        "mode": "RGBA",
+        "size": [
+          64,
+          64
+        ]
+      }
+    },
+    {
+      "check": "ash_road_edge_inner_se: transparent RGB clean",
+      "passed": true,
+      "data": null
+    },
+    {
+      "check": "ash_road_edge_inner_se: palette <=48",
+      "passed": true,
+      "data": 48
+    },
+    {
+      "check": "ash_road_edge_inner_se: alpha <=8 steps",
+      "passed": true,
+      "data": [
+        0,
+        255
+      ]
+    },
+    {
+      "check": "ash_road_edge_inner_se: binary mask",
+      "passed": true,
+      "data": null
+    },
+    {
+      "check": "ash_road_edge_inner_se: old topology only subtracted",
+      "passed": true,
+      "data": null
+    },
+    {
+      "check": "ash_road_edge_inner_se: source exists originals/ash_road_v01_raw.png",
+      "passed": true,
+      "data": null
+    },
+    {
+      "check": "ash_road_edge_inner_se: source exists assets/sprites/ground/helheim/bone_path_edge_inner_se.png",
+      "passed": true,
+      "data": null
+    },
+    {
+      "check": "ash_road_edge_inner_se: prompt exists",
+      "passed": true,
+      "data": null
+    },
+    {
+      "check": "ash_road_edge_inner_sw: RGBA exact size",
+      "passed": true,
+      "data": {
+        "mode": "RGBA",
+        "size": [
+          64,
+          64
+        ]
+      }
+    },
+    {
+      "check": "ash_road_edge_inner_sw: transparent RGB clean",
+      "passed": true,
+      "data": null
+    },
+    {
+      "check": "ash_road_edge_inner_sw: palette <=48",
+      "passed": true,
+      "data": 48
+    },
+    {
+      "check": "ash_road_edge_inner_sw: alpha <=8 steps",
+      "passed": true,
+      "data": [
+        0,
+        255
+      ]
+    },
+    {
+      "check": "ash_road_edge_inner_sw: binary mask",
+      "passed": true,
+      "data": null
+    },
+    {
+      "check": "ash_road_edge_inner_sw: old topology only subtracted",
+      "passed": true,
+      "data": null
+    },
+    {
+      "check": "ash_road_edge_inner_sw: source exists originals/ash_road_v01_raw.png",
+      "passed": true,
+      "data": null
+    },
+    {
+      "check": "ash_road_edge_inner_sw: source exists assets/sprites/ground/helheim/bone_path_edge_inner_sw.png",
+      "passed": true,
+      "data": null
+    },
+    {
+      "check": "ash_road_edge_inner_sw: prompt exists",
+      "passed": true,
+      "data": null
+    },
+    {
+      "check": "ash_road_edge_outer_ne: RGBA exact size",
+      "passed": true,
+      "data": {
+        "mode": "RGBA",
+        "size": [
+          64,
+          64
+        ]
+      }
+    },
+    {
+      "check": "ash_road_edge_outer_ne: transparent RGB clean",
+      "passed": true,
+      "data": null
+    },
+    {
+      "check": "ash_road_edge_outer_ne: palette <=48",
+      "passed": true,
+      "data": 48
+    },
+    {
+      "check": "ash_road_edge_outer_ne: alpha <=8 steps",
+      "passed": true,
+      "data": [
+        0,
+        255
+      ]
+    },
+    {
+      "check": "ash_road_edge_outer_ne: binary mask",
+      "passed": true,
+      "data": null
+    },
+    {
+      "check": "ash_road_edge_outer_ne: old topology only subtracted",
+      "passed": true,
+      "data": null
+    },
+    {
+      "check": "ash_road_edge_outer_ne: source exists originals/ash_road_v01_raw.png",
+      "passed": true,
+      "data": null
+    },
+    {
+      "check": "ash_road_edge_outer_ne: source exists assets/sprites/ground/helheim/bone_path_edge_outer_ne.png",
+      "passed": true,
+      "data": null
+    },
+    {
+      "check": "ash_road_edge_outer_ne: prompt exists",
+      "passed": true,
+      "data": null
+    },
+    {
+      "check": "ash_road_edge_outer_nw: RGBA exact size",
+      "passed": true,
+      "data": {
+        "mode": "RGBA",
+        "size": [
+          64,
+          64
+        ]
+      }
+    },
+    {
+      "check": "ash_road_edge_outer_nw: transparent RGB clean",
+      "passed": true,
+      "data": null
+    },
+    {
+      "check": "ash_road_edge_outer_nw: palette <=48",
+      "passed": true,
+      "data": 48
+    },
+    {
+      "check": "ash_road_edge_outer_nw: alpha <=8 steps",
+      "passed": true,
+      "data": [
+        0,
+        255
+      ]
+    },
+    {
+      "check": "ash_road_edge_outer_nw: binary mask",
+      "passed": true,
+      "data": null
+    },
+    {
+      "check": "ash_road_edge_outer_nw: old topology only subtracted",
+      "passed": true,
+      "data": null
+    },
+    {
+      "check": "ash_road_edge_outer_nw: source exists originals/ash_road_v01_raw.png",
+      "passed": true,
+      "data": null
+    },
+    {
+      "check": "ash_road_edge_outer_nw: source exists assets/sprites/ground/helheim/bone_path_edge_outer_nw.png",
+      "passed": true,
+      "data": null
+    },
+    {
+      "check": "ash_road_edge_outer_nw: prompt exists",
+      "passed": true,
+      "data": null
+    },
+    {
+      "check": "ash_road_edge_outer_se: RGBA exact size",
+      "passed": true,
+      "data": {
+        "mode": "RGBA",
+        "size": [
+          64,
+          64
+        ]
+      }
+    },
+    {
+      "check": "ash_road_edge_outer_se: transparent RGB clean",
+      "passed": true,
+      "data": null
+    },
+    {
+      "check": "ash_road_edge_outer_se: palette <=48",
+      "passed": true,
+      "data": 48
+    },
+    {
+      "check": "ash_road_edge_outer_se: alpha <=8 steps",
+      "passed": true,
+      "data": [
+        0,
+        255
+      ]
+    },
+    {
+      "check": "ash_road_edge_outer_se: binary mask",
+      "passed": true,
+      "data": null
+    },
+    {
+      "check": "ash_road_edge_outer_se: old topology only subtracted",
+      "passed": true,
+      "data": null
+    },
+    {
+      "check": "ash_road_edge_outer_se: source exists originals/ash_road_v01_raw.png",
+      "passed": true,
+      "data": null
+    },
+    {
+      "check": "ash_road_edge_outer_se: source exists assets/sprites/ground/helheim/bone_path_edge_outer_se.png",
+      "passed": true,
+      "data": null
+    },
+    {
+      "check": "ash_road_edge_outer_se: prompt exists",
+      "passed": true,
+      "data": null
+    },
+    {
+      "check": "ash_road_edge_outer_sw: RGBA exact size",
+      "passed": true,
+      "data": {
+        "mode": "RGBA",
+        "size": [
+          64,
+          64
+        ]
+      }
+    },
+    {
+      "check": "ash_road_edge_outer_sw: transparent RGB clean",
+      "passed": true,
+      "data": null
+    },
+    {
+      "check": "ash_road_edge_outer_sw: palette <=48",
+      "passed": true,
+      "data": 48
+    },
+    {
+      "check": "ash_road_edge_outer_sw: alpha <=8 steps",
+      "passed": true,
+      "data": [
+        0,
+        255
+      ]
+    },
+    {
+      "check": "ash_road_edge_outer_sw: binary mask",
+      "passed": true,
+      "data": null
+    },
+    {
+      "check": "ash_road_edge_outer_sw: old topology only subtracted",
+      "passed": true,
+      "data": null
+    },
+    {
+      "check": "ash_road_edge_outer_sw: source exists originals/ash_road_v01_raw.png",
+      "passed": true,
+      "data": null
+    },
+    {
+      "check": "ash_road_edge_outer_sw: source exists assets/sprites/ground/helheim/bone_path_edge_outer_sw.png",
+      "passed": true,
+      "data": null
+    },
+    {
+      "check": "ash_road_edge_outer_sw: prompt exists",
+      "passed": true,
+      "data": null
+    },
+    {
+      "check": "burnt_grass_02: RGBA exact size",
+      "passed": true,
+      "data": {
+        "mode": "RGBA",
+        "size": [
+          64,
+          64
+        ]
+      }
+    },
+    {
+      "check": "burnt_grass_02: transparent RGB clean",
+      "passed": true,
+      "data": null
+    },
+    {
+      "check": "burnt_grass_02: palette <=48",
+      "passed": true,
+      "data": 48
+    },
+    {
+      "check": "burnt_grass_02: alpha <=8 steps",
+      "passed": true,
+      "data": [
+        255
+      ]
+    },
+    {
+      "check": "burnt_grass_02: opaque terrain",
+      "passed": true,
+      "data": null
+    },
+    {
+      "check": "burnt_grass_02: brightness difference >=6",
+      "passed": true,
+      "data": 8.821911865234377
+    },
+    {
+      "check": "burnt_grass_02: embers <=1pct",
+      "passed": true,
+      "data": 0.0
+    },
+    {
+      "check": "burnt_grass_02: source exists originals/burnt_grass_02_v01_raw.png",
+      "passed": true,
+      "data": null
+    },
+    {
+      "check": "burnt_grass_02: prompt exists",
+      "passed": true,
+      "data": null
+    },
+    {
+      "check": "cracked_lava_02: RGBA exact size",
+      "passed": true,
+      "data": {
+        "mode": "RGBA",
+        "size": [
+          64,
+          64
+        ]
+      }
+    },
+    {
+      "check": "cracked_lava_02: transparent RGB clean",
+      "passed": true,
+      "data": null
+    },
+    {
+      "check": "cracked_lava_02: palette <=48",
+      "passed": true,
+      "data": 48
+    },
+    {
+      "check": "cracked_lava_02: alpha <=8 steps",
+      "passed": true,
+      "data": [
+        255
+      ]
+    },
+    {
+      "check": "cracked_lava_02: opaque terrain",
+      "passed": true,
+      "data": null
+    },
+    {
+      "check": "cracked_lava_02: orange cracks 3 to6pct",
+      "passed": true,
+      "data": 0.032470703125
+    },
+    {
+      "check": "cracked_lava_02: warm max value <=160",
+      "passed": true,
+      "data": null
+    },
+    {
+      "check": "cracked_lava_02: source exists originals/cracked_lava_02_v01_raw.png",
+      "passed": true,
+      "data": null
+    },
+    {
+      "check": "cracked_lava_02: prompt exists",
+      "passed": true,
+      "data": null
+    },
+    {
+      "check": "surtr_sword_arc_large: RGBA exact size",
+      "passed": true,
+      "data": {
+        "mode": "RGBA",
+        "size": [
+          2560,
+          640
+        ]
+      }
+    },
+    {
+      "check": "surtr_sword_arc_large: transparent RGB clean",
+      "passed": true,
+      "data": null
+    },
+    {
+      "check": "surtr_sword_arc_large: palette <=48",
+      "passed": true,
+      "data": 48
+    },
+    {
+      "check": "surtr_sword_arc_large: alpha <=8 steps",
+      "passed": true,
+      "data": [
+        0,
+        24,
+        48,
+        72,
+        120,
+        168,
+        216,
+        255
+      ]
+    },
+    {
+      "check": "surtr_sword_arc_large: all four frames within exact sector",
+      "passed": true,
+      "data": null
+    },
+    {
+      "check": "surtr_sword_arc_large: final opacity <0.3",
+      "passed": true,
+      "data": 0.2823529411764706
+    },
+    {
+      "check": "surtr_sword_arc_large: hollow center",
+      "passed": true,
+      "data": null
+    },
+    {
+      "check": "surtr_sword_arc_large: source exists originals/surtr_sword_arc_large_f00_v01_raw.png",
+      "passed": true,
+      "data": null
+    },
+    {
+      "check": "surtr_sword_arc_large: source exists originals/surtr_sword_arc_large_f01_v01_raw.png",
+      "passed": true,
+      "data": null
+    },
+    {
+      "check": "surtr_sword_arc_large: source exists originals/surtr_sword_arc_large_f02_v01_raw.png",
+      "passed": true,
+      "data": null
+    },
+    {
+      "check": "surtr_sword_arc_large: source exists originals/surtr_sword_arc_large_f03_v01_raw.png",
+      "passed": true,
+      "data": null
+    },
+    {
+      "check": "surtr_sword_arc_large: prompt exists",
+      "passed": true,
+      "data": null
+    },
+    {
+      "check": "surtr_sword_arc_large: prompt exists",
+      "passed": true,
+      "data": null
+    },
+    {
+      "check": "surtr_sword_arc_large: prompt exists",
+      "passed": true,
+      "data": null
+    },
+    {
+      "check": "surtr_sword_arc_large: prompt exists",
+      "passed": true,
+      "data": null
+    },
+    {
+      "check": "aid_freyja: RGBA exact size",
+      "passed": true,
+      "data": {
+        "mode": "RGBA",
+        "size": [
+          2560,
+          320
+        ]
+      }
+    },
+    {
+      "check": "aid_freyja: transparent RGB clean",
+      "passed": true,
+      "data": null
+    },
+    {
+      "check": "aid_freyja: palette <=48",
+      "passed": true,
+      "data": 48
+    },
+    {
+      "check": "aid_freyja: alpha <=8 steps",
+      "passed": true,
+      "data": [
+        0,
+        24,
+        48,
+        72,
+        112,
+        152,
+        192,
+        216
+      ]
+    },
+    {
+      "check": "aid_freyja: frame8 empty",
+      "passed": true,
+      "data": null
+    },
+    {
+      "check": "aid_freyja: all 7 authored visible frames distinct",
+      "passed": true,
+      "data": null
+    },
+    {
+      "check": "aid_freyja: maximum opacity <=0.85",
+      "passed": true,
+      "data": null
+    },
+    {
+      "check": "aid_freyja: peak frame outside radius+8 empty",
+      "passed": true,
+      "data": null
+    },
+    {
+      "check": "aid_freyja: primary perimeter ±8",
+      "passed": true,
+      "data": {
+        "target": 140,
+        "perimeter_35pct_angular_coverage": 138,
+        "delta": -2
+      }
+    },
+    {
+      "check": "aid_freyja: no saturated red/orange",
+      "passed": true,
+      "data": 0
+    },
+    {
+      "check": "aid_freyja: source exists originals/aid_freyja_v01_raw.png",
+      "passed": true,
+      "data": null
+    },
+    {
+      "check": "aid_freyja: prompt exists",
+      "passed": true,
+      "data": null
+    },
+    {
+      "check": "aid_baldr: RGBA exact size",
+      "passed": true,
+      "data": {
+        "mode": "RGBA",
+        "size": [
+          2560,
+          320
+        ]
+      }
+    },
+    {
+      "check": "aid_baldr: transparent RGB clean",
+      "passed": true,
+      "data": null
+    },
+    {
+      "check": "aid_baldr: palette <=48",
+      "passed": true,
+      "data": 48
+    },
+    {
+      "check": "aid_baldr: alpha <=8 steps",
+      "passed": true,
+      "data": [
+        0,
+        24,
+        48,
+        72,
+        112,
+        152,
+        192,
+        216
+      ]
+    },
+    {
+      "check": "aid_baldr: frame8 empty",
+      "passed": true,
+      "data": null
+    },
+    {
+      "check": "aid_baldr: all 7 authored visible frames distinct",
+      "passed": true,
+      "data": null
+    },
+    {
+      "check": "aid_baldr: maximum opacity <=0.85",
+      "passed": true,
+      "data": null
+    },
+    {
+      "check": "aid_baldr: peak frame outside radius+8 empty",
+      "passed": true,
+      "data": null
+    },
+    {
+      "check": "aid_baldr: primary perimeter ±8",
+      "passed": true,
+      "data": {
+        "target": 110,
+        "perimeter_35pct_angular_coverage": 108,
+        "delta": -2
+      }
+    },
+    {
+      "check": "aid_baldr: no saturated red/orange",
+      "passed": true,
+      "data": 0
+    },
+    {
+      "check": "aid_baldr: source exists originals/aid_baldr_v01_raw.png",
+      "passed": true,
+      "data": null
+    },
+    {
+      "check": "aid_baldr: prompt exists",
+      "passed": true,
+      "data": null
+    },
+    {
+      "check": "aid_ran: RGBA exact size",
+      "passed": true,
+      "data": {
+        "mode": "RGBA",
+        "size": [
+          2560,
+          320
+        ]
+      }
+    },
+    {
+      "check": "aid_ran: transparent RGB clean",
+      "passed": true,
+      "data": null
+    },
+    {
+      "check": "aid_ran: palette <=48",
+      "passed": true,
+      "data": 48
+    },
+    {
+      "check": "aid_ran: alpha <=8 steps",
+      "passed": true,
+      "data": [
+        0,
+        24,
+        48,
+        72,
+        112,
+        152,
+        192,
+        216
+      ]
+    },
+    {
+      "check": "aid_ran: frame8 empty",
+      "passed": true,
+      "data": null
+    },
+    {
+      "check": "aid_ran: all 7 authored visible frames distinct",
+      "passed": true,
+      "data": null
+    },
+    {
+      "check": "aid_ran: maximum opacity <=0.85",
+      "passed": true,
+      "data": null
+    },
+    {
+      "check": "aid_ran: peak frame outside radius+8 empty",
+      "passed": true,
+      "data": null
+    },
+    {
+      "check": "aid_ran: primary perimeter ±8",
+      "passed": true,
+      "data": {
+        "target": 130,
+        "perimeter_35pct_angular_coverage": 125,
+        "delta": -5
+      }
+    },
+    {
+      "check": "aid_ran: no saturated red/orange",
+      "passed": true,
+      "data": 0
+    },
+    {
+      "check": "aid_ran: source exists originals/aid_ran_v01_raw.png",
+      "passed": true,
+      "data": null
+    },
+    {
+      "check": "aid_ran: prompt exists",
+      "passed": true,
+      "data": null
+    },
+    {
+      "check": "aid_skadi: RGBA exact size",
+      "passed": true,
+      "data": {
+        "mode": "RGBA",
+        "size": [
+          2560,
+          320
+        ]
+      }
+    },
+    {
+      "check": "aid_skadi: transparent RGB clean",
+      "passed": true,
+      "data": null
+    },
+    {
+      "check": "aid_skadi: palette <=48",
+      "passed": true,
+      "data": 48
+    },
+    {
+      "check": "aid_skadi: alpha <=8 steps",
+      "passed": true,
+      "data": [
+        0,
+        24,
+        48,
+        72,
+        112,
+        152,
+        192,
+        216
+      ]
+    },
+    {
+      "check": "aid_skadi: frame8 empty",
+      "passed": true,
+      "data": null
+    },
+    {
+      "check": "aid_skadi: all 7 authored visible frames distinct",
+      "passed": true,
+      "data": null
+    },
+    {
+      "check": "aid_skadi: maximum opacity <=0.85",
+      "passed": true,
+      "data": null
+    },
+    {
+      "check": "aid_skadi: peak frame outside radius+8 empty",
+      "passed": true,
+      "data": null
+    },
+    {
+      "check": "aid_skadi: primary perimeter ±8",
+      "passed": true,
+      "data": {
+        "target": 130,
+        "perimeter_35pct_angular_coverage": 122,
+        "delta": -8
+      }
+    },
+    {
+      "check": "aid_skadi: no saturated red/orange",
+      "passed": true,
+      "data": 0
+    },
+    {
+      "check": "aid_skadi: source exists originals/aid_skadi_v01_raw.png",
+      "passed": true,
+      "data": null
+    },
+    {
+      "check": "aid_skadi: prompt exists",
+      "passed": true,
+      "data": null
+    },
+    {
+      "check": "terrain_game_final: exact screenshot count",
+      "passed": true,
+      "data": 18
+    },
+    {
+      "check": "terrain_game_final:map_spawn_M01_1280.png",
+      "passed": true,
+      "data": null
+    },
+    {
+      "check": "terrain_game_final:map_corner_nw_M01_1280.png",
+      "passed": true,
+      "data": null
+    },
+    {
+      "check": "terrain_game_final:map_corner_ne_M01_1280.png",
+      "passed": true,
+      "data": null
+    },
+    {
+      "check": "terrain_game_final:map_corner_se_M01_1280.png",
+      "passed": true,
+      "data": null
+    },
+    {
+      "check": "terrain_game_final:map_corner_sw_M01_1280.png",
+      "passed": true,
+      "data": null
+    },
+    {
+      "check": "terrain_game_final:map_horizon_M01_1280.png",
+      "passed": true,
+      "data": null
+    },
+    {
+      "check": "terrain_game_final:map_frost_remnants_M01_1280.png",
+      "passed": true,
+      "data": null
+    },
+    {
+      "check": "terrain_game_final:map_muspel_M01_1280.png",
+      "passed": true,
+      "data": null
+    },
+    {
+      "check": "terrain_game_final:terrain_danger_M01_1280.png",
+      "passed": true,
+      "data": null
+    },
+    {
+      "check": "terrain_game_final:map_spawn_M01_960.png",
+      "passed": true,
+      "data": null
+    },
+    {
+      "check": "terrain_game_final:map_corner_nw_M01_960.png",
+      "passed": true,
+      "data": null
+    },
+    {
+      "check": "terrain_game_final:map_corner_ne_M01_960.png",
+      "passed": true,
+      "data": null
+    },
+    {
+      "check": "terrain_game_final:map_corner_se_M01_960.png",
+      "passed": true,
+      "data": null
+    },
+    {
+      "check": "terrain_game_final:map_corner_sw_M01_960.png",
+      "passed": true,
+      "data": null
+    },
+    {
+      "check": "terrain_game_final:map_horizon_M01_960.png",
+      "passed": true,
+      "data": null
+    },
+    {
+      "check": "terrain_game_final:map_frost_remnants_M01_960.png",
+      "passed": true,
+      "data": null
+    },
+    {
+      "check": "terrain_game_final:map_muspel_M01_960.png",
+      "passed": true,
+      "data": null
+    },
+    {
+      "check": "terrain_game_final:terrain_danger_M01_960.png",
+      "passed": true,
+      "data": null
+    },
+    {
+      "check": "fx_game_final: exact screenshot count",
+      "passed": true,
+      "data": 41
+    },
+    {
+      "check": "fx_game_final:surtr_arc_f1.png",
+      "passed": true,
+      "data": null
+    },
+    {
+      "check": "fx_game_final:surtr_arc_f2.png",
+      "passed": true,
+      "data": null
+    },
+    {
+      "check": "fx_game_final:surtr_arc_f3.png",
+      "passed": true,
+      "data": null
+    },
+    {
+      "check": "fx_game_final:surtr_arc_f4.png",
+      "passed": true,
+      "data": null
+    },
+    {
+      "check": "fx_game_final:surtr_arc_sector_overlay.png",
+      "passed": true,
+      "data": null
+    },
+    {
+      "check": "fx_game_final:aid_freyja_f1.png",
+      "passed": true,
+      "data": null
+    },
+    {
+      "check": "fx_game_final:aid_freyja_f2.png",
+      "passed": true,
+      "data": null
+    },
+    {
+      "check": "fx_game_final:aid_freyja_f3.png",
+      "passed": true,
+      "data": null
+    },
+    {
+      "check": "fx_game_final:aid_freyja_f4.png",
+      "passed": true,
+      "data": null
+    },
+    {
+      "check": "fx_game_final:aid_freyja_f5.png",
+      "passed": true,
+      "data": null
+    },
+    {
+      "check": "fx_game_final:aid_freyja_f6.png",
+      "passed": true,
+      "data": null
+    },
+    {
+      "check": "fx_game_final:aid_freyja_f7.png",
+      "passed": true,
+      "data": null
+    },
+    {
+      "check": "fx_game_final:aid_freyja_f8.png",
+      "passed": true,
+      "data": null
+    },
+    {
+      "check": "fx_game_final:aid_freyja_radius.png",
+      "passed": true,
+      "data": null
+    },
+    {
+      "check": "fx_game_final:aid_baldr_f1.png",
+      "passed": true,
+      "data": null
+    },
+    {
+      "check": "fx_game_final:aid_baldr_f2.png",
+      "passed": true,
+      "data": null
+    },
+    {
+      "check": "fx_game_final:aid_baldr_f3.png",
+      "passed": true,
+      "data": null
+    },
+    {
+      "check": "fx_game_final:aid_baldr_f4.png",
+      "passed": true,
+      "data": null
+    },
+    {
+      "check": "fx_game_final:aid_baldr_f5.png",
+      "passed": true,
+      "data": null
+    },
+    {
+      "check": "fx_game_final:aid_baldr_f6.png",
+      "passed": true,
+      "data": null
+    },
+    {
+      "check": "fx_game_final:aid_baldr_f7.png",
+      "passed": true,
+      "data": null
+    },
+    {
+      "check": "fx_game_final:aid_baldr_f8.png",
+      "passed": true,
+      "data": null
+    },
+    {
+      "check": "fx_game_final:aid_baldr_radius.png",
+      "passed": true,
+      "data": null
+    },
+    {
+      "check": "fx_game_final:aid_ran_f1.png",
+      "passed": true,
+      "data": null
+    },
+    {
+      "check": "fx_game_final:aid_ran_f2.png",
+      "passed": true,
+      "data": null
+    },
+    {
+      "check": "fx_game_final:aid_ran_f3.png",
+      "passed": true,
+      "data": null
+    },
+    {
+      "check": "fx_game_final:aid_ran_f4.png",
+      "passed": true,
+      "data": null
+    },
+    {
+      "check": "fx_game_final:aid_ran_f5.png",
+      "passed": true,
+      "data": null
+    },
+    {
+      "check": "fx_game_final:aid_ran_f6.png",
+      "passed": true,
+      "data": null
+    },
+    {
+      "check": "fx_game_final:aid_ran_f7.png",
+      "passed": true,
+      "data": null
+    },
+    {
+      "check": "fx_game_final:aid_ran_f8.png",
+      "passed": true,
+      "data": null
+    },
+    {
+      "check": "fx_game_final:aid_ran_radius.png",
+      "passed": true,
+      "data": null
+    },
+    {
+      "check": "fx_game_final:aid_skadi_f1.png",
+      "passed": true,
+      "data": null
+    },
+    {
+      "check": "fx_game_final:aid_skadi_f2.png",
+      "passed": true,
+      "data": null
+    },
+    {
+      "check": "fx_game_final:aid_skadi_f3.png",
+      "passed": true,
+      "data": null
+    },
+    {
+      "check": "fx_game_final:aid_skadi_f4.png",
+      "passed": true,
+      "data": null
+    },
+    {
+      "check": "fx_game_final:aid_skadi_f5.png",
+      "passed": true,
+      "data": null
+    },
+    {
+      "check": "fx_game_final:aid_skadi_f6.png",
+      "passed": true,
+      "data": null
+    },
+    {
+      "check": "fx_game_final:aid_skadi_f7.png",
+      "passed": true,
+      "data": null
+    },
+    {
+      "check": "fx_game_final:aid_skadi_f8.png",
+      "passed": true,
+      "data": null
+    },
+    {
+      "check": "fx_game_final:aid_skadi_radius.png",
+      "passed": true,
+      "data": null
+    },
+    {
+      "check": "ash_road: add-only formal publish",
+      "passed": true,
+      "data": null
+    },
+    {
+      "check": "ash_road: formal approved candidate identical",
+      "passed": true,
+      "data": null
+    },
+    {
+      "check": "ash_road_edge_n: add-only formal publish",
+      "passed": true,
+      "data": null
+    },
+    {
+      "check": "ash_road_edge_n: formal approved candidate identical",
+      "passed": true,
+      "data": null
+    },
+    {
+      "check": "ash_road_edge_s: add-only formal publish",
+      "passed": true,
+      "data": null
+    },
+    {
+      "check": "ash_road_edge_s: formal approved candidate identical",
+      "passed": true,
+      "data": null
+    },
+    {
+      "check": "ash_road_edge_e: add-only formal publish",
+      "passed": true,
+      "data": null
+    },
+    {
+      "check": "ash_road_edge_e: formal approved candidate identical",
+      "passed": true,
+      "data": null
+    },
+    {
+      "check": "ash_road_edge_w: add-only formal publish",
+      "passed": true,
+      "data": null
+    },
+    {
+      "check": "ash_road_edge_w: formal approved candidate identical",
+      "passed": true,
+      "data": null
+    },
+    {
+      "check": "ash_road_edge_inner_ne: add-only formal publish",
+      "passed": true,
+      "data": null
+    },
+    {
+      "check": "ash_road_edge_inner_ne: formal approved candidate identical",
+      "passed": true,
+      "data": null
+    },
+    {
+      "check": "ash_road_edge_inner_nw: add-only formal publish",
+      "passed": true,
+      "data": null
+    },
+    {
+      "check": "ash_road_edge_inner_nw: formal approved candidate identical",
+      "passed": true,
+      "data": null
+    },
+    {
+      "check": "ash_road_edge_inner_se: add-only formal publish",
+      "passed": true,
+      "data": null
+    },
+    {
+      "check": "ash_road_edge_inner_se: formal approved candidate identical",
+      "passed": true,
+      "data": null
+    },
+    {
+      "check": "ash_road_edge_inner_sw: add-only formal publish",
+      "passed": true,
+      "data": null
+    },
+    {
+      "check": "ash_road_edge_inner_sw: formal approved candidate identical",
+      "passed": true,
+      "data": null
+    },
+    {
+      "check": "ash_road_edge_outer_ne: add-only formal publish",
+      "passed": true,
+      "data": null
+    },
+    {
+      "check": "ash_road_edge_outer_ne: formal approved candidate identical",
+      "passed": true,
+      "data": null
+    },
+    {
+      "check": "ash_road_edge_outer_nw: add-only formal publish",
+      "passed": true,
+      "data": null
+    },
+    {
+      "check": "ash_road_edge_outer_nw: formal approved candidate identical",
+      "passed": true,
+      "data": null
+    },
+    {
+      "check": "ash_road_edge_outer_se: add-only formal publish",
+      "passed": true,
+      "data": null
+    },
+    {
+      "check": "ash_road_edge_outer_se: formal approved candidate identical",
+      "passed": true,
+      "data": null
+    },
+    {
+      "check": "ash_road_edge_outer_sw: add-only formal publish",
+      "passed": true,
+      "data": null
+    },
+    {
+      "check": "ash_road_edge_outer_sw: formal approved candidate identical",
+      "passed": true,
+      "data": null
+    },
+    {
+      "check": "burnt_grass_02: add-only formal publish",
+      "passed": true,
+      "data": null
+    },
+    {
+      "check": "burnt_grass_02: formal approved candidate identical",
+      "passed": true,
+      "data": null
+    },
+    {
+      "check": "cracked_lava_02: add-only formal publish",
+      "passed": true,
+      "data": null
+    },
+    {
+      "check": "cracked_lava_02: formal approved candidate identical",
+      "passed": true,
+      "data": null
+    },
+    {
+      "check": "surtr_sword_arc_large: add-only formal publish",
+      "passed": true,
+      "data": null
+    },
+    {
+      "check": "surtr_sword_arc_large: formal approved candidate identical",
+      "passed": true,
+      "data": null
+    },
+    {
+      "check": "aid_freyja: add-only formal publish",
+      "passed": true,
+      "data": null
+    },
+    {
+      "check": "aid_freyja: formal approved candidate identical",
+      "passed": true,
+      "data": null
+    },
+    {
+      "check": "aid_baldr: add-only formal publish",
+      "passed": true,
+      "data": null
+    },
+    {
+      "check": "aid_baldr: formal approved candidate identical",
+      "passed": true,
+      "data": null
+    },
+    {
+      "check": "aid_ran: add-only formal publish",
+      "passed": true,
+      "data": null
+    },
+    {
+      "check": "aid_ran: formal approved candidate identical",
+      "passed": true,
+      "data": null
+    },
+    {
+      "check": "aid_skadi: add-only formal publish",
+      "passed": true,
+      "data": null
+    },
+    {
+      "check": "aid_skadi: formal approved candidate identical",
+      "passed": true,
+      "data": null
+    }
+  ],
+  "pre_existing_sprite_files": 1234,
+  "pre_existing_changed": []
+}

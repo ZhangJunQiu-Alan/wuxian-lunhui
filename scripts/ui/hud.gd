@@ -5,6 +5,9 @@ extends CanvasLayer
 const GOLD := Color(1.0, 0.85, 0.4)
 const RESULT_DIM := Color(0.62, 0.65, 0.72)
 const RESULT_CARD := Vector2(88, 132)
+const FATE_NAMES := {"thor_saved": "托尔活了下来", "vidar_intervened": "维达撕开巨口", "freyr_assisted": "弗雷参战"}
+const LOKI_HINT := "谢谢你，轮回者。锁链断了，我也该去看看别的世界了。"
+const ENDING_FADE := 0.25
 const RESULT_KINDS := {
 	"victory": {"title": "主线任务完成", "color": Color(1.0, 0.85, 0.4)},
 	"death": {"title": "你死了", "color": Color(0.95, 0.38, 0.32)},
@@ -32,6 +35,12 @@ var _boss_name: Label
 var _boss_bar: ProgressBar
 var _hurt_flash: ColorRect
 var _last_hp := -1.0
+var _ending: Control           # 篇章结局字幕（显示时不为 null）
+var _ending_beats := PackedStringArray()
+var _ending_index := 0
+var _ending_text: Label
+var _ending_page: Label
+var _ending_done: Callable
 
 
 func _ready() -> void:
@@ -323,6 +332,11 @@ func show_result(kind: String, level_name: String, story: String, run: Dictionar
 		var story_label := _result_text(story, 17, Color(0.86, 0.8, 0.66))
 		story_label.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
 		column.add_child(story_label)
+	if kind == "victory" and run.get("ever_faith_loki", false):  # 洛基的伏笔：本局信仰过洛基才出现
+		var hint := _result_text(tr("「%s」") % tr(LOKI_HINT), 17, Gods.ALL.loki.color)
+		hint.name = "LokiHint"
+		hint.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
+		column.add_child(hint)
 
 	var gap := Control.new()
 	gap.custom_minimum_size.y = 4
@@ -345,6 +359,97 @@ func show_result(kind: String, level_name: String, story: String, run: Dictionar
 	var tween := create_tween().set_parallel().set_ease(Tween.EASE_OUT).set_trans(Tween.TRANS_CUBIC)
 	tween.tween_property(screen, "modulate:a", 1.0, 0.35)
 	tween.tween_property(center, "position:y", 0.0, 0.45)
+
+
+## 篇章结局：一段一段显示字幕，「继续」看下一段，「跳过演出」直接结束；最后一段之后（或跳过）调用一次 on_done
+## 游戏这时是暂停的，界面照常处理输入；不会自动推进，也不会自动切场景
+func show_ending(beats: PackedStringArray, on_done: Callable) -> void:
+	for child in get_children():
+		if child is CanvasItem:
+			child.visible = false
+	_ending_beats = beats
+	_ending_index = 0
+	_ending_done = on_done
+	_ending = ColorRect.new()
+	_ending.name = "Ending"
+	(_ending as ColorRect).color = Color(0.02, 0.03, 0.05, 0.98)
+	_ending.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
+	_ending.gui_input.connect(func(event: InputEvent) -> void:
+		var click := event as InputEventMouseButton
+		if click and click.pressed and click.button_index == MOUSE_BUTTON_LEFT:
+			advance_ending())
+	add_child(_ending)
+	var center := CenterContainer.new()
+	center.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
+	center.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	_ending.add_child(center)
+	var column := VBoxContainer.new()
+	column.custom_minimum_size.x = 760
+	column.add_theme_constant_override("separation", 28)
+	column.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	center.add_child(column)
+	_ending_text = _result_text("", 26, Color(0.92, 0.86, 0.72))
+	_ending_text.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
+	_ending_text.custom_minimum_size.y = 150
+	column.add_child(_ending_text)
+	_ending_page = _result_text("", 14, RESULT_DIM)
+	column.add_child(_ending_page)
+	var buttons := HBoxContainer.new()
+	buttons.alignment = BoxContainer.ALIGNMENT_CENTER
+	buttons.add_theme_constant_override("separation", 24)
+	column.add_child(buttons)
+	var next := _result_button(tr("继续"), GOLD, true)
+	next.name = "Next"
+	next.pressed.connect(advance_ending)
+	buttons.add_child(next)
+	var skip := _result_button(tr("跳过演出"), GOLD, false)
+	skip.name = "Skip"
+	skip.pressed.connect(skip_ending)
+	buttons.add_child(skip)
+	next.grab_focus()
+	_show_beat()
+
+
+func ending_index() -> int:
+	return _ending_index if _ending else -1
+
+
+func advance_ending() -> void:
+	if not _ending:
+		return
+	_ending_index += 1
+	if _ending_index >= _ending_beats.size():
+		_finish_ending()
+	else:
+		_show_beat()
+
+
+func skip_ending() -> void:
+	if _ending:
+		_finish_ending()
+
+
+func _show_beat() -> void:
+	_ending_text.text = tr(_ending_beats[_ending_index])
+	_ending_page.text = "%d / %d" % [_ending_index + 1, _ending_beats.size()]
+	_ending_text.modulate.a = 0.0
+	create_tween().tween_property(_ending_text, "modulate:a", 1.0, ENDING_FADE)  # 淡入不挡操作，随时可以继续或跳过
+
+
+## 结局结束（读完或跳过）：只走一次，之后显示结算
+func _finish_ending() -> void:
+	var done := _ending_done
+	_ending.queue_free()
+	_ending = null
+	_ending_done = Callable()
+	if done.is_valid():
+		done.call()
+
+
+func _unhandled_input(event: InputEvent) -> void:
+	if _ending and event.is_action_pressed("ui_cancel"):  # Esc 跳过整段结局
+		get_viewport().set_input_as_handled()
+		skip_ending()
 
 
 ## 左栏：角色和信仰的神各一张小卡，下面列出融合技
@@ -408,11 +513,21 @@ func _numbers_column(run: Dictionary) -> Control:
 		_stat_tile(tr("等级"), str(run.level), Color.WHITE),
 		_count_up(_stat_tile(tr("击杀"), "", Color.WHITE), run.kills, "%d"),
 	]))
-	box.add_child(_rule())
-	box.add_child(_tile_row([
-		_stat_tile(tr("支线完成"), "%d / %d" % [run.quests_done, run.quests_seen], Color(0.75, 0.9, 1.0)),
-		_stat_tile(tr("发现隐藏支线"), "%d / %d" % [run.hidden_found, run.hidden_total], Color(0.88, 0.75, 1.0)),
-	]))
+	if run.get("has_quests", true):
+		box.add_child(_rule())
+		box.add_child(_tile_row([
+			_stat_tile(tr("支线完成"), "%d / %d" % [run.quests_done, run.quests_seen], Color(0.75, 0.9, 1.0)),
+			_stat_tile(tr("发现隐藏支线"), "%d / %d" % [run.hidden_found, run.hidden_total], Color(0.88, 0.75, 1.0)),
+		]))
+	if run.has("fates"):  # 第 3 关：改写的命运
+		box.add_child(_rule())
+		var fates: Dictionary = run.fates
+		var row := _tile_row([_stat_tile(tr("改写的命运"), "%d / %d" % [run.fate_count, fates.size()], GOLD)])
+		row.name = "Fates"
+		for id: String in FATE_NAMES:
+			if fates.has(id):
+				row.add_child(_stat_tile(tr(FATE_NAMES[id]), "✓" if fates[id] else "—", GOLD if fates[id] else Color(RESULT_DIM, 0.6)))
+		box.add_child(row)
 	box.add_child(_rule())
 	box.add_child(_tile_row([
 		_count_up(_stat_tile(tr("奖励点"), "", GOLD, tr("累计 %d") % run.reward_total), run.reward_points, "+%d"),
@@ -521,4 +636,4 @@ func _on_hub_pressed() -> void:
 
 func _on_restart_pressed() -> void:
 	get_tree().paused = false
-	get_tree().reload_current_scene()
+	ChapterIntro.open(get_tree(), LevelDB.selected())

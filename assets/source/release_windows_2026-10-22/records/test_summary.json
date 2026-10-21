@@ -1,0 +1,72 @@
+{
+  "tests": [
+    {
+      "name": "test_combat_regressions",
+      "checks": 2451,
+      "failures": 0
+    },
+    {
+      "name": "test_vigrid",
+      "checks": 368,
+      "failures": 0
+    },
+    {
+      "name": "test_chapter_intro",
+      "checks": 230,
+      "failures": 0
+    },
+    {
+      "name": "test_title_menu",
+      "checks": 91,
+      "failures": 0
+    },
+    {
+      "name": "test_run_supplies",
+      "checks": 171,
+      "failures": 0
+    },
+    {
+      "name": "test_supply_guard",
+      "checks": 81,
+      "failures": 0
+    },
+    {
+      "name": "test_actor_scale",
+      "checks": 408,
+      "failures": 0
+    },
+    {
+      "name": "test_environment_scale",
+      "checks": 1903,
+      "failures": 0
+    },
+    {
+      "name": "test_god_fx_cadence",
+      "checks": 2270,
+      "failures": 0
+    },
+    {
+      "name": "test_spatial_queries",
+      "checks": 481,
+      "failures": 0
+    },
+    {
+      "name": "test_density_buffers",
+      "checks": 352,
+      "failures": 0
+    },
+    {
+      "name": "test_odin_density",
+      "checks": 17,
+      "failures": 0
+    },
+    {
+      "name": "test_skadi_balance",
+      "checks": 13,
+      "failures": 0
+    }
+  ],
+  "total_checks": 8836,
+  "scope": "current checkout headless automated regressions with isolated saves; not Windows execution or normal human playthrough",
+  "translation_log": "logs/translations.log"
+}

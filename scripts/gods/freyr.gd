@@ -202,11 +202,11 @@ func _draw() -> void:
 	for s in _swords:
 		var p := to_local(s.pos)
 		if sword:
-			SpriteVisual.draw_frame(self, sword, 1, 0, p, Vector2(16, 6), s.dir.angle())
+			SpriteVisual.draw_frame(self, sword, 1, 0, p, Vector2(24, 9), s.dir.angle())
 		else:
-			draw_line(p - s.dir * 12.0, p + s.dir * 10.0, Color(0.9, 1.0, 0.75), 3.0)
-			draw_line(p - s.dir * 12.0, p - s.dir * 6.0, Color(0.7, 0.55, 0.25), 5.0)
-		draw_circle(p, 9.0, Color(0.7, 1.0, 0.5, 0.18))
+			draw_line(p - s.dir * 18.0, p + s.dir * 15.0, Color(0.9, 1.0, 0.75), 4.5)
+			draw_line(p - s.dir * 18.0, p - s.dir * 9.0, Color(0.7, 0.55, 0.25), 7.5)
+		draw_circle(p, 13.5, Color(0.7, 1.0, 0.5, 0.18))
 	var boar := art("freyr_boar")
 	for b in _boars:
 		var p := to_local(b.pos)

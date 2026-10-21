@@ -1,0 +1,70 @@
+{
+  "date": "2026-10-21",
+  "status": "candidates_awaiting_user_selection",
+  "generation_mode": "built_in_image_gen",
+  "integrated": false,
+  "reference": {
+    "file": "reference_current_title.png",
+    "role": "user screenshot of current homepage; conceptual context",
+    "sha256": "f43786991524a61f90b01425e6a46f8d455ef8e8d9f6d66265635efc687942a8"
+  },
+  "prompt_file": "prompts.md",
+  "candidates": [
+    {
+      "id": "A",
+      "name": "世界树余烬",
+      "file": "A_world_tree.png",
+      "original_generation_path": "/Users/zhangjunqiu/.codex/generated_images/01a15f2d-8cad-7cb2-8ce0-6883df86d8b6/exec-22ecc5ea-bc31-4160-8652-153e3faacb1e.png",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "sha256": "2cd182be87185d14a3d41e9f473184308663523bd322d9b5a733e0a2befdf4dd",
+      "status": "candidate_awaiting_user_selection",
+      "visual_review": "composition and five menu items inspected; concept mockup only",
+      "integrated": false
+    },
+    {
+      "id": "B",
+      "name": "神殿终焉",
+      "file": "B_ruined_temple.png",
+      "original_generation_path": "/Users/zhangjunqiu/.codex/generated_images/01a15f2d-8cad-7cb2-8ce0-6883df86d8b6/exec-595887af-35aa-4e73-8307-7f766490a1fb.png",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "sha256": "f3d6818a58bb9032f0ed75b2d8fde2c59f97715e42d112faf55c82c7345c2a5e",
+      "status": "candidate_awaiting_user_selection",
+      "visual_review": "composition and five menu items inspected; concept mockup only",
+      "integrated": false
+    },
+    {
+      "id": "C",
+      "name": "猩红轮回",
+      "file": "C_crimson_gate.png",
+      "original_generation_path": "/Users/zhangjunqiu/.codex/generated_images/01a15f2d-8cad-7cb2-8ce0-6883df86d8b6/exec-91ac53a5-311c-414a-ad5d-3b7546f6ac66.png",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "sha256": "8eec674b764e47d76c2fddb62d1009842b7f70221b521c78c300a08ad1e2ac37",
+      "status": "candidate_awaiting_user_selection",
+      "visual_review": "composition and five menu items inspected; concept mockup only",
+      "integrated": false
+    },
+    {
+      "id": "D",
+      "name": "篝火远征",
+      "file": "D_pixel_campfire.png",
+      "original_generation_path": "/Users/zhangjunqiu/.codex/generated_images/01a15f2d-8cad-7cb2-8ce0-6883df86d8b6/exec-e9d42a7f-0c80-4fbe-a771-f57755370c37.png",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "sha256": "b1bbfbb415ff3838f11e40218b55017a83a8f3fa130e5ed3c25d1447f6366218",
+      "status": "candidate_awaiting_user_selection",
+      "visual_review": "composition and five menu items inspected; concept mockup only",
+      "integrated": false
+    }
+  ]
+}

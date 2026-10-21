@@ -1,0 +1,252 @@
+[
+  {
+    "name": "test_combat_regressions",
+    "exit_code": 0,
+    "errors": [],
+    "tail": [
+      "PASS static-field damage equivalence",
+      "PASS regular, event, elite, split, quest and Boss spawning",
+      "PASS final Boss, queued rewards, pause and duplicate settlement",
+      "PASS death and abandon settlement on Helheim",
+      "RESULT: 2451 checks, 0 failures"
+    ]
+  },
+  {
+    "name": "test_vigrid",
+    "exit_code": 0,
+    "errors": [],
+    "tail": [
+      "PASS K-CODE-07 K7 fate/Loki combinations",
+      "PASS K-CODE-07 ending skip and settlement",
+      "PASS K-CODE-07 save compatibility",
+      "PASS cleanup",
+      "RESULT: 368 checks, 0 failures"
+    ]
+  },
+  {
+    "name": "test_chapter_intro",
+    "exit_code": 0,
+    "errors": [],
+    "tail": [
+      "Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org",
+      "",
+      "CHAPTER_INTRO_RESULT 230 checks, 0 failures"
+    ]
+  },
+  {
+    "name": "test_title_menu",
+    "exit_code": 0,
+    "errors": [],
+    "tail": [
+      "Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org",
+      "",
+      "TITLE_MENU_RESULT 91 checks, 0 failures"
+    ]
+  },
+  {
+    "name": "test_run_supplies",
+    "command": [
+      "godot",
+      "--headless",
+      "--path",
+      "/Users/zhangjunqiu/Desktop/无限恐怖",
+      "--script",
+      "tools/test_run_supplies.gd",
+      "--",
+      "--save-file=/Users/zhangjunqiu/Desktop/无限恐怖/build/windows_2026-10-22/work/qa_user/test_run_supplies.json",
+      "--settings-file=/Users/zhangjunqiu/Desktop/无限恐怖/build/windows_2026-10-22/work/qa_user/test_run_supplies.cfg",
+      "--output=/Users/zhangjunqiu/Desktop/无限恐怖/build/windows_2026-10-22/work/qa_results/test_run_supplies.json"
+    ],
+    "exit_code": 0,
+    "errors": [],
+    "tail": [
+      "Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org",
+      "",
+      "RESULT SUPPLIES: 171 checks, 0 failures"
+    ]
+  },
+  {
+    "name": "test_supply_guard",
+    "command": [
+      "godot",
+      "--headless",
+      "--path",
+      "/Users/zhangjunqiu/Desktop/无限恐怖",
+      "--script",
+      "tools/test_supply_guard.gd",
+      "--",
+      "--save-file=/Users/zhangjunqiu/Desktop/无限恐怖/build/windows_2026-10-22/work/qa_user/test_supply_guard.json",
+      "--settings-file=/Users/zhangjunqiu/Desktop/无限恐怖/build/windows_2026-10-22/work/qa_user/test_supply_guard.cfg",
+      "--output=/Users/zhangjunqiu/Desktop/无限恐怖/build/windows_2026-10-22/work/qa_results/test_supply_guard.json"
+    ],
+    "exit_code": 0,
+    "errors": [],
+    "tail": [
+      "Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org",
+      "",
+      "RESULT GUARD: 81 checks, 0 failures"
+    ]
+  },
+  {
+    "name": "test_actor_scale",
+    "command": [
+      "godot",
+      "--headless",
+      "--path",
+      "/Users/zhangjunqiu/Desktop/无限恐怖",
+      "--script",
+      "tools/test_actor_scale.gd",
+      "--",
+      "--save-file=/Users/zhangjunqiu/Desktop/无限恐怖/build/windows_2026-10-22/work/qa_user/test_actor_scale.json",
+      "--settings-file=/Users/zhangjunqiu/Desktop/无限恐怖/build/windows_2026-10-22/work/qa_user/test_actor_scale.cfg",
+      "--output=/Users/zhangjunqiu/Desktop/无限恐怖/build/windows_2026-10-22/work/qa_results/test_actor_scale.json"
+    ],
+    "exit_code": 0,
+    "errors": [],
+    "tail": [
+      "Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org",
+      "",
+      "RESULT ACTOR SCALE: 408 checks, 0 failures"
+    ]
+  },
+  {
+    "name": "test_environment_scale",
+    "command": [
+      "godot",
+      "--headless",
+      "--path",
+      "/Users/zhangjunqiu/Desktop/无限恐怖",
+      "--script",
+      "tools/test_environment_scale.gd",
+      "--",
+      "--save-file=/Users/zhangjunqiu/Desktop/无限恐怖/build/windows_2026-10-22/work/qa_user/test_environment_scale.json",
+      "--settings-file=/Users/zhangjunqiu/Desktop/无限恐怖/build/windows_2026-10-22/work/qa_user/test_environment_scale.cfg",
+      "--output=/Users/zhangjunqiu/Desktop/无限恐怖/build/windows_2026-10-22/work/qa_results/test_environment_scale.json"
+    ],
+    "exit_code": 0,
+    "errors": [],
+    "tail": [
+      "Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org",
+      "",
+      "RESULT ENVIRONMENT: 1903 checks, 0 failures"
+    ]
+  },
+  {
+    "name": "test_god_fx_cadence",
+    "command": [
+      "godot",
+      "--headless",
+      "--path",
+      "/Users/zhangjunqiu/Desktop/无限恐怖",
+      "--script",
+      "tools/test_god_fx_cadence.gd",
+      "--",
+      "--save-file=/Users/zhangjunqiu/Desktop/无限恐怖/build/windows_2026-10-22/work/qa_user/test_god_fx_cadence.json",
+      "--settings-file=/Users/zhangjunqiu/Desktop/无限恐怖/build/windows_2026-10-22/work/qa_user/test_god_fx_cadence.cfg",
+      "--output=/Users/zhangjunqiu/Desktop/无限恐怖/build/windows_2026-10-22/work/qa_results/test_god_fx_cadence"
+    ],
+    "exit_code": 0,
+    "errors": [],
+    "tail": [
+      "PASS daylight fire/rest cadence and no hidden damage",
+      "PASS compact rune rings and snow art leave gameplay damage intact",
+      "PASS real pause freezes laser phase and hidden angle",
+      "PASS cleanup",
+      "GOD_FX_CADENCE_RESULT 2270 checks 0 failures"
+    ]
+  },
+  {
+    "name": "test_spatial_queries",
+    "command": [
+      "godot",
+      "--headless",
+      "--path",
+      "/Users/zhangjunqiu/Desktop/无限恐怖",
+      "--script",
+      "tools/test_spatial_queries.gd",
+      "--",
+      "--save-file=/Users/zhangjunqiu/Desktop/无限恐怖/build/windows_2026-10-22/work/qa_user/test_spatial_queries.json",
+      "--settings-file=/Users/zhangjunqiu/Desktop/无限恐怖/build/windows_2026-10-22/work/qa_user/test_spatial_queries.cfg",
+      "--output=/Users/zhangjunqiu/Desktop/无限恐怖/build/windows_2026-10-22/work/qa_results/test_spatial_queries"
+    ],
+    "exit_code": 0,
+    "errors": [],
+    "tail": [
+      "Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org",
+      "",
+      "SPATIAL_RESULT 481 checks 0 failures {\"candidate_us\":47721,\"reference_us\":70950}"
+    ]
+  },
+  {
+    "name": "test_density_buffers",
+    "command": [
+      "godot",
+      "--headless",
+      "--path",
+      "/Users/zhangjunqiu/Desktop/无限恐怖",
+      "--script",
+      "tools/test_density_buffers.gd",
+      "--",
+      "--save-file=/Users/zhangjunqiu/Desktop/无限恐怖/build/windows_2026-10-22/work/qa_user/test_density_buffers.json",
+      "--settings-file=/Users/zhangjunqiu/Desktop/无限恐怖/build/windows_2026-10-22/work/qa_user/test_density_buffers.cfg",
+      "--output=/Users/zhangjunqiu/Desktop/无限恐怖/build/windows_2026-10-22/work/qa_results/test_density_buffers"
+    ],
+    "exit_code": 0,
+    "errors": [],
+    "tail": [
+      "Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org",
+      "",
+      "PASS separation vector equivalence including coincident actors",
+      "PASS cleanup",
+      "DENSITY_BUFFERS_RESULT 352 checks 0 failures"
+    ]
+  },
+  {
+    "name": "test_odin_density",
+    "command": [
+      "godot",
+      "--headless",
+      "--path",
+      "/Users/zhangjunqiu/Desktop/无限恐怖",
+      "--script",
+      "tools/test_odin_density.gd",
+      "--",
+      "--save-file=/Users/zhangjunqiu/Desktop/无限恐怖/build/windows_2026-10-22/work/qa_user/test_odin_density.json",
+      "--settings-file=/Users/zhangjunqiu/Desktop/无限恐怖/build/windows_2026-10-22/work/qa_user/test_odin_density.cfg",
+      "--output=/Users/zhangjunqiu/Desktop/无限恐怖/build/windows_2026-10-22/work/qa_results/test_odin_density"
+    ],
+    "exit_code": 0,
+    "errors": [],
+    "tail": [
+      "ODIN_MEASURE after 8548us",
+      "PASS Odin overlapping-night damage and rune equivalence",
+      "PASS one-second shared circle damage and awakening spread limits",
+      "PASS cleanup",
+      "ODIN_DENSITY_RESULT 17 checks 0 failures"
+    ]
+  },
+  {
+    "name": "test_skadi_balance",
+    "command": [
+      "godot",
+      "--headless",
+      "--path",
+      "/Users/zhangjunqiu/Desktop/无限恐怖",
+      "--script",
+      "tools/test_skadi_balance.gd",
+      "--",
+      "--save-file=/Users/zhangjunqiu/Desktop/无限恐怖/build/windows_2026-10-22/work/qa_user/test_skadi_balance.json",
+      "--settings-file=/Users/zhangjunqiu/Desktop/无限恐怖/build/windows_2026-10-22/work/qa_user/test_skadi_balance.cfg",
+      "--output=/Users/zhangjunqiu/Desktop/无限恐怖/build/windows_2026-10-22/work/qa_results/test_skadi_balance"
+    ],
+    "exit_code": 0,
+    "errors": [],
+    "tail": [
+      "MEASURE {\"awakened_radius\":700.0,\"cooldown\":0.1,\"damage\":62.3999999999905,\"dps\":5.19999999999921,\"frozen_frame_fraction\":0.566666666666667,\"icefield\":0.0,\"max_ice_patches\":0,\"version\":\"after\"}",
+      "MEASURE {\"awakened_radius\":700.0,\"cooldown\":0.1,\"damage\":62.3999999999905,\"dps\":5.19999999999921,\"frozen_frame_fraction\":0.922222222222222,\"icefield\":9.0,\"max_ice_patches\":1,\"version\":\"after\"}",
+      "PASS winter damage/frost/ice stacking before vs after",
+      "PASS cleanup",
+      "SKADI_BALANCE_RESULT 13 checks 0 failures"
+    ]
+  }
+]

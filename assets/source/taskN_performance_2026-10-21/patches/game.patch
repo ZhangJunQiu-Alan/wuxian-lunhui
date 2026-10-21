@@ -1,0 +1,17 @@
+--- scripts/game.gd before
++++ scripts/game.gd candidate
+@@ -164,10 +164,11 @@
+ 		return
+ 	for node in get_tree().get_nodes_in_group("enemies"):  # 冲锋、击退都不能把敌人推出地图，也不能穿过长屋、岩石
+ 		var enemy := node as Enemy
+-		enemy.position = clamp_to_map(enemy.position, enemy.radius)
++		var corrected := clamp_to_map(enemy.position, enemy.radius)
+ 		if not enemy.ghost:
+-			enemy.position = MapLayer.push_out(enemy.position, enemy.radius)
+-	Enemy.rebuild_grid(get_tree())
++			corrected = MapLayer.push_out(corrected, enemy.radius)
++		if corrected != enemy.position:
++			enemy.position = corrected
+ 
+ 
+ ## 把位置限制在地图里，margin 是离边缘至少多远

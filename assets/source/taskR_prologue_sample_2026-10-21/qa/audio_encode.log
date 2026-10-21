@@ -1,0 +1,22 @@
+Input #0, ogg, from 'assets/audio/music/hub.ogg':
+  Duration: 00:01:53.54, start: 0.000000, bitrate: 127 kb/s
+  Stream #0:0: Audio: vorbis, 44100 Hz, stereo, fltp
+    Metadata:
+      encoder         : Lavc62.28.101 vorbis
+[aist#1:0/pcm_s16le @ 0xb75008480] Guessed Channel Layout: mono
+Input #1, wav, from 'assets/audio/sfx/boss_howl.wav':
+  Duration: 00:00:06.91, bitrate: 705 kb/s
+  Stream #1:0: Audio: pcm_s16le ([1][0][0][0] / 0x0001), 44100 Hz, mono, s16, 705 kb/s
+Stream mapping:
+  Stream #0:0 (vorbis) -> atrim:default
+  Stream #1:0 (pcm_s16le) -> volume:default
+  afade:default -> Stream #0:0 (pcm_s16le)
+Press [q] to stop, [?] for help
+Output #0, wav, to 'assets/source/taskR_prologue_sample_2026-10-21/demo/audio/sample_mix.wav':
+  Metadata:
+    ISFT            : Lavf62.12.101
+  Stream #0:0: Audio: pcm_s16le ([1][0][0][0] / 0x0001), 48000 Hz, stereo, s16, 1536 kb/s
+    Metadata:
+      encoder         : Lavc62.28.101 pcm_s16le
+[out#0/wav @ 0xb74c2c3c0] video:0KiB audio:2250KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: 0.003385%
+size=    2250KiB time=00:00:12.00 bitrate=1536.1kbits/s speed= 217x elapsed=0:00:00.05    

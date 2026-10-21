@@ -1,0 +1,74 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+EVENT {"character":"gunslinger","event":"start","headless":true,"level":"vigrid","t":0.0,"wall":0.196}
+EVENT {"event":"faith","god":"thor","t":0.0,"wall":0.212}
+EVENT {"event":"faith","god":"freyja","t":25.1,"wall":1.199}
+EVENT {"event":"faith","god":"odin","t":67.0,"wall":3.461}
+EVENT {"event":"faith","god":"baldr","t":141.82,"wall":7.792}
+EVENT {"event":"boss_spawn","hp":3000.00000000038,"id":"jormungandr","t":180.0,"wall":10.482}
+EVENT {"event":"damage","hp":110.0,"lost":30.0,"t":184.95,"wall":10.976}
+EVENT {"event":"damage","hp":138.199999999998,"lost":0.189999999999998,"t":203.95,"wall":12.998}
+EVENT {"event":"damage","hp":138.009999999998,"lost":0.189999999999998,"t":203.97,"wall":13.0}
+EVENT {"event":"damage","hp":137.819999999998,"lost":0.189999999999998,"t":203.98,"wall":13.002}
+EVENT {"event":"damage","hp":137.629999999998,"lost":0.189999999999998,"t":204.0,"wall":13.004}
+EVENT {"event":"damage","hp":137.439999999998,"lost":0.189999999999998,"t":204.02,"wall":13.006}
+EVENT {"event":"damage","hp":108.359999999997,"lost":29.99,"t":205.55,"wall":13.183}
+EVENT {"event":"damage","hp":82.8899999999994,"lost":29.99,"t":213.1,"wall":13.97}
+EVENT {"event":"fate","id":"thor_saved","t":214.67,"wall":14.153}
+EVENT {"defeated":["jormungandr"],"event":"boss_gone","id":"jormungandr","t":214.68,"wall":14.155}
+EVENT {"event":"boss_spawn","hp":5000.00000000001,"id":"fenrir","t":360.0,"wall":27.456}
+EVENT {"event":"fenrir_bound","t":365.63,"wall":27.976}
+EVENT {"event":"fenrir_swallow","t":390.53,"wall":30.273}
+EVENT {"defeated":["jormungandr","fenrir"],"event":"boss_gone","id":"fenrir","t":394.43,"wall":30.572}
+EVENT {"event":"damage","hp":126.799750000002,"lost":13.2002499999984,"t":480.03,"wall":44.878}
+EVENT {"event":"awaken","id":"baldr_spear_awaken","t":518.17,"wall":51.673}
+EVENT {"event":"boss_spawn","hp":12000.312499997,"id":"surtr","t":540.02,"wall":55.142}
+EVENT {"event":"surtr_phase","hp_ratio":0.599,"phase":2,"t":573.22,"wall":60.488}
+EVENT {"event":"damage","hp":100.0,"lost":40.0,"t":579.35,"wall":61.72}
+EVENT {"event":"damage","hp":136.126666666666,"lost":0.323333333333352,"t":586.78,"wall":63.91}
+EVENT {"event":"damage","hp":135.803333333332,"lost":0.323333333333352,"t":586.8,"wall":63.913}
+EVENT {"event":"damage","hp":135.479999999999,"lost":0.323333333333352,"t":586.82,"wall":63.916}
+EVENT {"event":"damage","hp":135.156666666666,"lost":0.323333333333352,"t":586.83,"wall":63.918}
+EVENT {"event":"damage","hp":134.833333333332,"lost":0.323333333333352,"t":586.85,"wall":63.92}
+EVENT {"event":"damage","hp":134.509999999999,"lost":0.323333333333352,"t":586.87,"wall":63.922}
+EVENT {"event":"damage","hp":134.186666666666,"lost":0.323333333333352,"t":586.88,"wall":63.925}
+EVENT {"event":"damage","hp":133.863333333332,"lost":0.323333333333352,"t":586.9,"wall":63.928}
+EVENT {"event":"damage","hp":134.469999999998,"lost":0.323333333333352,"t":588.47,"wall":64.164}
+EVENT {"event":"damage","hp":134.146666666665,"lost":0.323333333333352,"t":588.48,"wall":64.167}
+EVENT {"event":"damage","hp":133.823333333331,"lost":0.323333333333352,"t":588.5,"wall":64.169}
+EVENT {"event":"damage","hp":133.499999999998,"lost":0.323333333333352,"t":588.52,"wall":64.173}
+EVENT {"event":"damage","hp":133.176666666665,"lost":0.323333333333352,"t":588.53,"wall":64.175}
+EVENT {"event":"damage","hp":132.853333333331,"lost":0.323333333333352,"t":588.55,"wall":64.178}
+EVENT {"event":"surtr_phase","hp_ratio":0.245,"phase":3,"t":590.9,"wall":64.626}
+EVENT {"cycle":0,"event":"final_fire_burn","safe":20,"t":593.62,"unsafe":387,"wall":65.168}
+EVENT {"cycle":1,"event":"final_fire_burn","safe":20,"t":597.33,"unsafe":325,"wall":65.864}
+EVENT {"event":"damage","hp":139.666666666667,"lost":0.333333333333343,"t":600.72,"wall":66.474}
+EVENT {"event":"damage","hp":139.343333333333,"lost":0.323333333333352,"t":600.73,"wall":66.477}
+EVENT {"event":"damage","hp":139.666666666667,"lost":0.333333333333343,"t":601.03,"wall":66.532}
+EVENT {"event":"damage","hp":84.3433333333333,"lost":55.3233333333334,"t":601.05,"wall":66.536}
+EVENT {"cycle":2,"event":"final_fire_burn","safe":20,"t":601.05,"unsafe":268,"wall":66.536}
+EVENT {"event":"damage","hp":84.02,"lost":0.323333333333323,"t":601.07,"wall":66.538}
+EVENT {"event":"damage","hp":83.6966666666667,"lost":0.323333333333323,"t":601.08,"wall":66.541}
+EVENT {"cycle":3,"event":"final_fire_burn","safe":20,"t":604.77,"unsafe":215,"wall":67.161}
+EVENT {"event":"damage","hp":84.1366666666684,"lost":54.99,"t":608.48,"wall":67.744}
+EVENT {"cycle":4,"event":"final_fire_burn","safe":19,"t":608.48,"unsafe":167,"wall":67.744}
+EVENT {"cycle":5,"event":"final_fire_burn","safe":19,"t":612.2,"unsafe":130,"wall":68.416}
+EVENT {"cycle":6,"event":"final_fire_burn","safe":20,"t":615.92,"unsafe":129,"wall":69.102}
+EVENT {"cycle":7,"event":"final_fire_burn","safe":19,"t":619.63,"unsafe":130,"wall":69.721}
+EVENT {"event":"damage","hp":139.666666666667,"lost":0.333333333333343,"t":620.87,"wall":69.901}
+EVENT {"event":"damage","hp":139.343333333333,"lost":0.323333333333352,"t":620.88,"wall":69.904}
+EVENT {"event":"damage","hp":139.02,"lost":0.323333333333352,"t":620.9,"wall":69.906}
+EVENT {"event":"damage","hp":139.666666666667,"lost":0.333333333333343,"t":621.22,"wall":69.95}
+EVENT {"event":"damage","hp":139.343333333333,"lost":0.323333333333352,"t":621.23,"wall":69.953}
+EVENT {"event":"damage","hp":139.666666666667,"lost":0.333333333333343,"t":621.7,"wall":70.02}
+EVENT {"event":"damage","hp":139.343333333333,"lost":0.323333333333352,"t":621.72,"wall":70.023}
+EVENT {"event":"damage","hp":139.02,"lost":0.323333333333352,"t":621.73,"wall":70.025}
+EVENT {"cycle":8,"event":"final_fire_burn","safe":20,"t":623.35,"unsafe":129,"wall":70.244}
+EVENT {"defeated":["jormungandr","fenrir","surtr"],"event":"boss_gone","id":"surtr","t":625.83,"wall":70.593}
+EVENT {"beat":0,"event":"ending_shown","t":625.83,"wall":70.612}
+EVENT {"cleared_vigrid":true,"event":"result","fates_saved":{"ever_faith_loki":false,"freyr_assisted":false,"thor_saved":true,"vidar_intervened":false},"run":{"elapsed":625.833333333093,"ever_faith_loki":false,"fate_count":1,"fates":{"freyr_assisted":false,"thor_saved":true,"vidar_intervened":false},"has_quests":false,"hidden_found":0,"hidden_total":0,"kills":2833,"level":40,"quests_done":0,"quests_seen":0,"reward_points":1470,"reward_total":1470,"story_points":0,"story_total":0},"save_clears":3,"save_runs":1,"t":625.83,"wall":70.748}
+PLAYTHROUGH_DONE level=625.8 wall=70.7 enemies_max=139 p95=3.74ms cleared=true
+WARNING: 24 ObjectDB instances were leaked at exit (run with `--verbose` for details).
+   at: cleanup (core/object/object.cpp:2536)
+ERROR: 11 resources still in use at exit (run with --verbose for details).
+   at: clear (core/io/resource.cpp:822)

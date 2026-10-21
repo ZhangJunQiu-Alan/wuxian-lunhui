@@ -1,0 +1,1164 @@
+{
+  "task": "R complete Norse per-level cinematics",
+  "date": "2026-10-21",
+  "game_integration": "implemented in current worktree",
+  "git_publication": "not committed or pushed by this task",
+  "generation_tool": "built-in image_gen.imagegen; model version not exposed",
+  "generated_originals": 19,
+  "formal_png_count": 16,
+  "narration_raw_wav_count": 12,
+  "formal_audio_stems": 9,
+  "narrator": {
+    "model": "Kokoro-82M-v1.1-zh",
+    "voice": "zm_010",
+    "speed": 0.9,
+    "language": "Mandarin Chinese",
+    "user_listening_acceptance": "pending"
+  },
+  "sequences": {
+    "midgard": {
+      "seconds": 28.125,
+      "frames_24fps": 675,
+      "video": "preview/midgard_story.mp4"
+    },
+    "helheim": {
+      "seconds": 28.625,
+      "frames_24fps": 687,
+      "video": "preview/helheim_story.mp4"
+    },
+    "vigrid": {
+      "seconds": 28.583333333333332,
+      "frames_24fps": 686,
+      "video": "preview/vigrid_story.mp4"
+    }
+  },
+  "validation": {
+    "headless_routes": {
+      "checks": 224,
+      "failures": 0
+    },
+    "window_routes": {
+      "checks": 224,
+      "failures": 0
+    },
+    "combat_regression": {
+      "checks": 997,
+      "failures": 0
+    },
+    "translation_missing": 0,
+    "full_video_decode_errors": 0,
+    "game_release_acceptance": false
+  },
+  "source_files": {
+    ".gdignore": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "README.md": {
+      "bytes": 2773,
+      "sha256": "b81f7266b915dae83d003b0710017c1008e85dd07be19789397a0afe96470057"
+    },
+    "RESULTS.md": {
+      "bytes": 4374,
+      "sha256": "73531d89ec8b8e22e2c2c419510600756a33a107557b4933b9f514f90fb9ac01"
+    },
+    "before/locale/text.csv": {
+      "bytes": 65690,
+      "sha256": "ff0f1ab8ace236f0057895f0d0f7cd47e0bea98315f41a007081364ea1c98e45"
+    },
+    "before/scripts/core/audio.gd": {
+      "bytes": 5221,
+      "sha256": "13046615ebba8dd309152c7dcb50f6dfed7543a558ca48c39518be18b9f5d798"
+    },
+    "before/scripts/core/settings.gd": {
+      "bytes": 4589,
+      "sha256": "2d9e6500a39d1dff652923f263b1d4cec966bb894a8b234264c189f2232a10bb"
+    },
+    "before/scripts/ui/hub.gd": {
+      "bytes": 22248,
+      "sha256": "e81bb1895a44cf340957286a575ad58dde18bf9a700cd681e0dc60c1d5a24a01"
+    },
+    "before/scripts/ui/hud.gd": {
+      "bytes": 23845,
+      "sha256": "b0b1deb6aa4a056aca2db1f427dd3ff3aab6265a9250507f9e5f0355303fe0f9"
+    },
+    "before/tools/check_translations.py": {
+      "bytes": 2897,
+      "sha256": "490cbd367cb1c29faa4fb06f7a2ffcf53b6493bc24f50ac53f1f94f6b839cd6b"
+    },
+    "demo/.gitignore": {
+      "bytes": 57,
+      "sha256": "6d1c8370582304e2f50f6ecf21404bdf23c459b2836f1d06692fe64bceba04f2"
+    },
+    "demo/art/skoll.png": {
+      "bytes": 1839751,
+      "sha256": "a997edb984d2ff3c606448d95546d6a32b9e61ec7d5e70624f813b39f207d9a8"
+    },
+    "demo/art/sky_bg.png": {
+      "bytes": 2959924,
+      "sha256": "0013395d551e04a29241c30e84bfe6a048279587afb68520f94536fbbcf6f185"
+    },
+    "demo/art/sun.png": {
+      "bytes": 1335644,
+      "sha256": "fb2c29906ae96fc89cebb7ac3003f785562953b70bd6555fa5f160c8bcc287d8"
+    },
+    "demo/art/village_bg.png": {
+      "bytes": 3552963,
+      "sha256": "1fa2c263df94ee39958b861db4174db5c5096986fff8754d5cbf20840605a2de"
+    },
+    "demo/art/village_fg.png": {
+      "bytes": 1271565,
+      "sha256": "a9f6de7acb35feb9dd8c9ba96fcd92b3b44d4ced499a82f3fcd6522becf02219"
+    },
+    "demo/audio/sample_mix.wav": {
+      "bytes": 2304078,
+      "sha256": "699f6b7ccaa0e6924a08f6ae4eaa4324c3eb5dedd23a78a5a4933c61d0f6a2f4"
+    },
+    "demo/fonts/NotoSansSC-OFL.txt": {
+      "bytes": 4301,
+      "sha256": "6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2"
+    },
+    "demo/fonts/NotoSansSC-Regular.otf": {
+      "bytes": 8331336,
+      "sha256": "faa6c9df652116dde789d351359f3d7e5d2285a2b2a1f04a2d7244df706d5ea9"
+    },
+    "demo/main.tscn": {
+      "bytes": 165,
+      "sha256": "f1f8fbe470f5f63b30e92e41f3acbd52ebe78f0cabad2370be96cf800952b3de"
+    },
+    "demo/project.godot": {
+      "bytes": 476,
+      "sha256": "492cb8deac6ae4c4b310a7c7b8a988db7dba475c2fc7aad08241e6224d43a2e8"
+    },
+    "demo/prologue.gd": {
+      "bytes": 7719,
+      "sha256": "2a828e33057ddde5b6e6d2d598d8d99e3cfed2394f8b3c9cee7b61bb4ffcfbab"
+    },
+    "demo/qa_controls.gd": {
+      "bytes": 2740,
+      "sha256": "5d2b4cd731d08e379f339285bbcff963870d9abcdfc064f72bc1419853548b1a"
+    },
+    "gallery.html": {
+      "bytes": 2099,
+      "sha256": "c5b82fb3bfd6ff847e72d3648039c9c69346322fb6af12e2db6e99841c52a5e5"
+    },
+    "integration.md": {
+      "bytes": 3166,
+      "sha256": "ef28403de07de9a0409ccfdc27832f37298b36aec84586854e220a0082fd736c"
+    },
+    "layers/skoll.png": {
+      "bytes": 1839751,
+      "sha256": "a997edb984d2ff3c606448d95546d6a32b9e61ec7d5e70624f813b39f207d9a8"
+    },
+    "layers/sky_bg.png": {
+      "bytes": 2959924,
+      "sha256": "0013395d551e04a29241c30e84bfe6a048279587afb68520f94536fbbcf6f185"
+    },
+    "layers/sun.png": {
+      "bytes": 1335644,
+      "sha256": "fb2c29906ae96fc89cebb7ac3003f785562953b70bd6555fa5f160c8bcc287d8"
+    },
+    "layers/village_bg.png": {
+      "bytes": 3552963,
+      "sha256": "1fa2c263df94ee39958b861db4174db5c5096986fff8754d5cbf20840605a2de"
+    },
+    "layers/village_fg.png": {
+      "bytes": 1271565,
+      "sha256": "a9f6de7acb35feb9dd8c9ba96fcd92b3b44d4ced499a82f3fcd6522becf02219"
+    },
+    "originals/foreground_v01.png": {
+      "bytes": 1271565,
+      "sha256": "a9f6de7acb35feb9dd8c9ba96fcd92b3b44d4ced499a82f3fcd6522becf02219"
+    },
+    "originals/hati_v01.png": {
+      "bytes": 1660222,
+      "sha256": "50d140f58afeba359cfe9307c714bf2eebb267c8d3b91aee673aed89aa5cb988"
+    },
+    "originals/helheim_bridge_v01.png": {
+      "bytes": 3136916,
+      "sha256": "d3d29f9f38f8ff203cd66e106ff5fc54a1dffa672ec5635fce218956445f92d3"
+    },
+    "originals/helheim_garm_v01.png": {
+      "bytes": 3143813,
+      "sha256": "f97116ef344931414cd95ddcbdf949147704a6ca43108dc7ea8ed5aa132bf544"
+    },
+    "originals/helheim_hel_ship_v01.png": {
+      "bytes": 3449721,
+      "sha256": "d3331e8175154548ff63da0c8fbeef5a3c5178813523a5feb1261e4c7d27e479"
+    },
+    "originals/helheim_nidhogg_v01.png": {
+      "bytes": 3335010,
+      "sha256": "f2424af5795c32bb684e8eabb476b3ff9d25a90ad827d69bf0eff4a6782debe9"
+    },
+    "originals/midgard_graves_v01.png": {
+      "bytes": 3482168,
+      "sha256": "c84be84c31e976fe5cc6a10c59d37b9447b14b4fe45736a321c85c3a062ce460"
+    },
+    "originals/midgard_hrym_v01.png": {
+      "bytes": 3499742,
+      "sha256": "0504c9b5bb181c5b4a5ef75b6f1671e61cc0608f1f0506ee03d3204c5dfb17c2"
+    },
+    "originals/narration/helheim_01.wav": {
+      "bytes": 218540,
+      "sha256": "427d6124bddb1141de1752df083d9a03356ef32e5292d0d8fb66861232bb3bc9"
+    },
+    "originals/narration/helheim_02.wav": {
+      "bytes": 181676,
+      "sha256": "066df623ecf9587475778543dcc9c6846977f90cceb0a7075488c1db28030d65"
+    },
+    "originals/narration/helheim_03.wav": {
+      "bytes": 188364,
+      "sha256": "45c9dbf85e71fa12f49a2e61e3c5d521b5b913bb0912bf66c8283d5d0c4ab723"
+    },
+    "originals/narration/helheim_04.wav": {
+      "bytes": 283532,
+      "sha256": "bc9c949f7b6c1f5fa35d31d8b5c064196b00a20862d9b31c65fb5410cd52a7bf"
+    },
+    "originals/narration/midgard_01.wav": {
+      "bytes": 134092,
+      "sha256": "4c983762045031064efcb5135cd0d678160598224acd5eca1fdedb3df4608f31"
+    },
+    "originals/narration/midgard_02.wav": {
+      "bytes": 196076,
+      "sha256": "4a689f2f369a83923476c45c4cd1792309a44b7bcb2c03001a0bf90ca9318d82"
+    },
+    "originals/narration/midgard_03.wav": {
+      "bytes": 179148,
+      "sha256": "00ff424a797d1d4725e4c1e005d35c793f93d680e06bc8459895d091f7eae5ee"
+    },
+    "originals/narration/midgard_04.wav": {
+      "bytes": 258252,
+      "sha256": "a6907fbbb6c8c927f7fe10275135063fe6f8ed2aefa99908f18b9386a4ebf7b8"
+    },
+    "originals/narration/vigrid_01.wav": {
+      "bytes": 241674,
+      "sha256": "42c03a8bb54b714466be35d0d4844287fadc4e49173fcb8ecc602931e872ab17"
+    },
+    "originals/narration/vigrid_02.wav": {
+      "bytes": 175532,
+      "sha256": "47279ef82b564abefe9dd3f38258d37e620ea6c55068c572f7c9524aae95a36e"
+    },
+    "originals/narration/vigrid_03.wav": {
+      "bytes": 204268,
+      "sha256": "d7b9609eaae507687d8f3b202fa6af9b5949e0a2d5c18c1f709f6ea1c510c3fe"
+    },
+    "originals/narration/vigrid_04.wav": {
+      "bytes": 278220,
+      "sha256": "ef952e0f765eb58bf74a26d130c9936411803439921324bc18036d9ae8a45c9d"
+    },
+    "originals/sky_v01.png": {
+      "bytes": 2959924,
+      "sha256": "0013395d551e04a29241c30e84bfe6a048279587afb68520f94536fbbcf6f185"
+    },
+    "originals/sun_v01.png": {
+      "bytes": 1335644,
+      "sha256": "fb2c29906ae96fc89cebb7ac3003f785562953b70bd6555fa5f160c8bcc287d8"
+    },
+    "originals/vigrid_odin_fenrir_v01.png": {
+      "bytes": 3460881,
+      "sha256": "8292983589925bea93993cfdd58e85c86dbd37041a7956c4e2a5bd018af49414"
+    },
+    "originals/vigrid_plain_v01.png": {
+      "bytes": 3278286,
+      "sha256": "2596b84f44f752eb0abfd95433d8895a5ab4a4232cdc95ce5700d66b5d6dfcdc"
+    },
+    "originals/vigrid_surtr_v01.png": {
+      "bytes": 3249065,
+      "sha256": "d7752fcd9fe50e344c2c94c0ce4bc84e679aac87f5e3328a6874821e37430fab"
+    },
+    "originals/vigrid_thor_serpent_v01.png": {
+      "bytes": 3375946,
+      "sha256": "5f4629bf57f3ccc730f21d816671253a26483c11e89593cd0ce70e37cc0cf89e"
+    },
+    "originals/vigrid_thor_serpent_v02.png": {
+      "bytes": 3056023,
+      "sha256": "5de27cfcffb1015b9498def8594c6393c835d4b986701a5a4fe2cad42303f7c1"
+    },
+    "originals/village_v01.png": {
+      "bytes": 3108722,
+      "sha256": "271e35700bc8646fba94f103016d02dbd773839b878245c60d4a38b7fdd2978c"
+    },
+    "originals/village_v02.png": {
+      "bytes": 3552963,
+      "sha256": "1fa2c263df94ee39958b861db4174db5c5096986fff8754d5cbf20840605a2de"
+    },
+    "originals/wolf_v01.png": {
+      "bytes": 2201531,
+      "sha256": "7b98097bdc2e369f2516eb0026f9830345e9f02c83b386e0845b673e73fb4d82"
+    },
+    "originals/wolf_v02.png": {
+      "bytes": 1839751,
+      "sha256": "a997edb984d2ff3c606448d95546d6a32b9e61ec7d5e70624f813b39f207d9a8"
+    },
+    "preview/contact_sheet_4x4.jpg": {
+      "bytes": 381835,
+      "sha256": "e37f8e34a9ed1401eddc43af9ff74dbb370f6a09c73ebb676eb713b12202e9a5"
+    },
+    "preview/eclipse_final.png": {
+      "bytes": 1143267,
+      "sha256": "a0acccc6d8164c47d8c1674a90100c6326366f16b67cc30fc77e3ee0e3eca159"
+    },
+    "preview/helheim_contact_4x4.jpg": {
+      "bytes": 343062,
+      "sha256": "cfcebc99b4dcc155b3a7ba2109c7e5f61570b8544d76e4be64e2608e740987fc"
+    },
+    "preview/helheim_english_960.png": {
+      "bytes": 1019846,
+      "sha256": "dce92dc4f62a74e92517af27bdc9fcd358d382e7c55ffb5da64253e287251f05"
+    },
+    "preview/helheim_preview_4fps.gif": {
+      "bytes": 8680623,
+      "sha256": "1d58fbea20982dc0cd8f5a337a5473518f5073555c86d4cecf85686db3f34c16"
+    },
+    "preview/helheim_shot1.png": {
+      "bytes": 1238477,
+      "sha256": "5f7b850c8ab389753d8f30269bfccb089959a26c559ffedffe4ef4bec51a02b4"
+    },
+    "preview/helheim_shot2.png": {
+      "bytes": 1291086,
+      "sha256": "2f5dbc5dadda1168da7a50d92e573c16461ba91cd54b9f3876580ef42bcc67b9"
+    },
+    "preview/helheim_shot3.png": {
+      "bytes": 1353138,
+      "sha256": "7739af7af1f31d2c4e72586adde02c42356839e886459a26a9a0e84de7265ca4"
+    },
+    "preview/helheim_shot4.png": {
+      "bytes": 1408755,
+      "sha256": "ad002e816e71d5353dc6c37f1147ddb302011df149d47fdf275f2b9717e8549f"
+    },
+    "preview/helheim_story.mp4": {
+      "bytes": 34987879,
+      "sha256": "b882d79f9285d0fc1941b7eb0496e7bbdb37a5984d16ff62820586213f788c3e"
+    },
+    "preview/midgard_contact_4x4.jpg": {
+      "bytes": 357792,
+      "sha256": "baf80d7eb985d4ce0436a7fad05e30b14eee5ad5264fb4775422355e06becac1"
+    },
+    "preview/midgard_hrym_final.png": {
+      "bytes": 1798201,
+      "sha256": "5e518a2f424fa6ca33fa375b1a8fbb0c8518450eb711b58e75ebffa55540a933"
+    },
+    "preview/midgard_preview_4fps.gif": {
+      "bytes": 6314587,
+      "sha256": "b894065d232a13aa5fb4c138e03766521dc8e53650dc4ee2d1dafaca798fce0a"
+    },
+    "preview/midgard_shot1.png": {
+      "bytes": 1352247,
+      "sha256": "bef4e4226c0035ab38efd50e14e36870e4ec42c37e251eaf1218a1cae62edb49"
+    },
+    "preview/midgard_shot2.png": {
+      "bytes": 1463477,
+      "sha256": "19d6f93d08afa55f13171bb25b617aafcde0bd699329d87616799d9e1e7c8137"
+    },
+    "preview/midgard_shot3.png": {
+      "bytes": 1209101,
+      "sha256": "0d136f99ae4b5a76dff7de3ec3c3a4b30c3ba3c5a6c38745be1a3fcf9cdf02f3"
+    },
+    "preview/midgard_shot4.png": {
+      "bytes": 1306434,
+      "sha256": "3286f61cc21938f4764b7e7d9ac38cef10999f8eb11ece77d9e156ca6f6acd04"
+    },
+    "preview/midgard_single_wolf_before_revision.mp4": {
+      "bytes": 24673036,
+      "sha256": "3e25f14c7f2c7324ec1f787664d95109e742e6ebd845dd0123a7e1739b509d95"
+    },
+    "preview/midgard_story.mp4": {
+      "bytes": 24526865,
+      "sha256": "f1bff8b31f9510060d80e01fe300eb42aa12a6a0739cbfaddb8bb384580a844f"
+    },
+    "preview/midgard_two_wolves_check.png": {
+      "bytes": 1555623,
+      "sha256": "f8159ddd40d92105c2aa54b8ca8ea64f4ec280f6e27bebccdc0c826d28973f4d"
+    },
+    "preview/prologue_R01.mp4": {
+      "bytes": 6126651,
+      "sha256": "cf56d00aa35a3f015d07a3fdbab45f9b54aefe7f482e4a3d919d63257d9aa5fa"
+    },
+    "preview/shot01_final.png": {
+      "bytes": 1746039,
+      "sha256": "982047dc38597e8a077f63196204c6c9cf7181a382fbf934d1a1a0d8390ed975"
+    },
+    "preview/shot01_v02.png": {
+      "bytes": 1744901,
+      "sha256": "0d31797db931e88203a120bb532c9500732a854ebb58c537de5b64c53b7a1fd2"
+    },
+    "preview/shot02_final.png": {
+      "bytes": 1534647,
+      "sha256": "786318e7e72d3f844a2335950b22c30dea8a3d4b39546a2fdd962884a678dde7"
+    },
+    "preview/shot02_v01.png": {
+      "bytes": 1528674,
+      "sha256": "5d813e5f00eaef4357a75e826dbda94006e9e5b6d1665a0326f4adb59aa8dc25"
+    },
+    "preview/transition_final.png": {
+      "bytes": 1431044,
+      "sha256": "4f973c702d84a2a92faeb50caf7079a5b3067432df629b1a30f7846655dcafc7"
+    },
+    "preview/vigrid_contact_4x4.jpg": {
+      "bytes": 356957,
+      "sha256": "1d5c01fe240d4923defbbf39dd40f85fac5de4240e0d26016cc5d858f6bbb061"
+    },
+    "preview/vigrid_preview_4fps.gif": {
+      "bytes": 7480337,
+      "sha256": "4e3bcb74f5438003794ee5cd18c769b4ace8d1a9173bc3452cca941577c3b7c2"
+    },
+    "preview/vigrid_shot1.png": {
+      "bytes": 1351623,
+      "sha256": "b4fabadbf02ea6df48704b358d294a8961c43587d55fe0d0376701f6b8ddcc3a"
+    },
+    "preview/vigrid_shot2.png": {
+      "bytes": 1364456,
+      "sha256": "80f660fa31c779383d428b1a873f2df6479a8bf02721c961d17f9abb7535bc4f"
+    },
+    "preview/vigrid_shot3.png": {
+      "bytes": 1493766,
+      "sha256": "4964f7700816ef167913d3890beddec296b4322510048ddde611e91d107e1036"
+    },
+    "preview/vigrid_shot4.png": {
+      "bytes": 1411398,
+      "sha256": "cb277a4d0c4f874403b77118739a38c8765aa38c4e7344338541cff6aa15b49d"
+    },
+    "preview/vigrid_story.mp4": {
+      "bytes": 35840537,
+      "sha256": "76501ff18c88ef774b852933485d99766cadf569fca8913c3f188c51126c1fc8"
+    },
+    "prompts/foreground_v01.txt": {
+      "bytes": 1442,
+      "sha256": "032d40aab315837ca849ad52182907fd783bd5bdf2909c0c8b002872c09213cc"
+    },
+    "prompts/hati_v01.txt": {
+      "bytes": 1634,
+      "sha256": "959a7fa2bf8dad266bf2a3018f5db5df7e22b6bb9630abf7646c6f52c257fe9e"
+    },
+    "prompts/helheim_bridge_v01.txt": {
+      "bytes": 2069,
+      "sha256": "aba09e2e9664a5daa9d479f36e7522b14803a48f99b3a8707ce8fbb195b47383"
+    },
+    "prompts/helheim_garm_v01.txt": {
+      "bytes": 2015,
+      "sha256": "a7834c43ac38aba7be765e68cb041472724627c15af79940886ac6b38516213c"
+    },
+    "prompts/helheim_hel_ship_v01.txt": {
+      "bytes": 2306,
+      "sha256": "225791acbdf562057754e66c94d9b5083a658842f30bce7ea072535aceb89594"
+    },
+    "prompts/helheim_nidhogg_v01.txt": {
+      "bytes": 2006,
+      "sha256": "c17f2fb8741d8c9be1ce5dc7b42460e2cf0553bbcc9b5a4045716b48c6e085c7"
+    },
+    "prompts/midgard_graves_v01.txt": {
+      "bytes": 1992,
+      "sha256": "fa8226c37816117386b923928099ad7ab0fd3f01ce51d2f4a777a0e2bdeeb325"
+    },
+    "prompts/midgard_hrym_v01.txt": {
+      "bytes": 2090,
+      "sha256": "4dc2352a86df6a58c9cdfcac32a0e4a0cff062e4d92667c25c5d3cb3148cb03b"
+    },
+    "prompts/sky_v01.txt": {
+      "bytes": 1668,
+      "sha256": "2e06bd0acb41c3732466a8ee73d66d3bc9d98784efe250bb03870c81fdf77fc0"
+    },
+    "prompts/sun_v01.txt": {
+      "bytes": 1197,
+      "sha256": "0c293368b6062a9a22077a3e59b82b505e24c2443b2920000c7817bc3750c88e"
+    },
+    "prompts/vigrid_odin_fenrir_v01.txt": {
+      "bytes": 2177,
+      "sha256": "ff2d23bed97f04e45ceeb795180ad0b986c50c08aedaba2a698ab486ed75fbd1"
+    },
+    "prompts/vigrid_plain_v01.txt": {
+      "bytes": 2045,
+      "sha256": "62b05bfe7930a8c9fb81d582f5ff434d943963031f52d2ef5ac643c047e95191"
+    },
+    "prompts/vigrid_surtr_v01.txt": {
+      "bytes": 2247,
+      "sha256": "43560af1bf45088a3473fdb16be4f0c104f0db3ee029ebf227cd97c02839971e"
+    },
+    "prompts/vigrid_thor_serpent_v01.txt": {
+      "bytes": 2281,
+      "sha256": "ef4a37567a304045d4de86b948cc125791ccb9dd1003c9030e7dd8214ec0de1f"
+    },
+    "prompts/vigrid_thor_serpent_v02.txt": {
+      "bytes": 1029,
+      "sha256": "ae0fb7bd1bc64aeba31941666e248409e2b1cf979a1a01e4db368de200d6e74b"
+    },
+    "prompts/village_v01.txt": {
+      "bytes": 2417,
+      "sha256": "3bddf933d9b9ef195b76c3de9a0915f6773bf292bbf2bdb979a8dc3b771b9f0c"
+    },
+    "prompts/village_v02.txt": {
+      "bytes": 1282,
+      "sha256": "fa940183eccd86396607bd16e591b3bb6ddf28b1101a80bf57c15ad580edf12d"
+    },
+    "prompts/wolf_v01.txt": {
+      "bytes": 1837,
+      "sha256": "0b7f11b42efae3e6499309db92c659824528855b8ef5e9d44b8694d38b99f24f"
+    },
+    "prompts/wolf_v02.txt": {
+      "bytes": 890,
+      "sha256": "d15a50d710c0f928fe384cc691781e36d448bc1cf7b4a2780f57f5ebfebb7b6e"
+    },
+    "qa/art_review.json": {
+      "bytes": 12171,
+      "sha256": "e7591c5450cbf65e2381c1acfa7a8e619d382c9d0ceb35f29eaabe928a5d21b7"
+    },
+    "qa/audio_checks.json": {
+      "bytes": 2437,
+      "sha256": "be4d97dc0eaad1d03754dbeea8b7a2e7821e06136a1d28958113e0367613eda3"
+    },
+    "qa/audio_encode.log": {
+      "bytes": 1162,
+      "sha256": "1ba64fb54858cb320b59b470707e3a3fc485fedfcb36df2f3094b77b5b11166b"
+    },
+    "qa/audio_video_sync.json": {
+      "bytes": 1040,
+      "sha256": "4b355ea965194029d3e369fcaf4cde79e62292723b4c7e904ddce5094ce7e2f4"
+    },
+    "qa/before_result_route_routes_final.log": {
+      "bytes": 117,
+      "sha256": "6a8868e16547aaec99d072c9e5f6bab78c2e84f66a521a44d65256a040dbd47f"
+    },
+    "qa/before_result_route_window_routes.log": {
+      "bytes": 300,
+      "sha256": "89999e131b819be148aa95a986ed2df9c7ececaf79b52c8d14aa66ae54893b50"
+    },
+    "qa/build_sequences_attempt1.log": {
+      "bytes": 1312,
+      "sha256": "2b4034ee105cfc3c37efc7e574d299b662996c3952c46df45a8d49e37aeaecd9"
+    },
+    "qa/build_sequences_attempt2.log": {
+      "bytes": 1114,
+      "sha256": "e7bead12d60cd738c2ad87621d61e93304f7addb19c88faabf34641680f8a1fc"
+    },
+    "qa/build_sequences_final.log": {
+      "bytes": 68,
+      "sha256": "b79beb21b717cab24ee5f2443eda4c79f4de8c3cb541b23e0208b370dee970ab"
+    },
+    "qa/capture.json": {
+      "bytes": 74,
+      "sha256": "f97bf7478836cde529f2aaa2a73b069b184295dd5fd9d5dba59af9f9662f1ec9"
+    },
+    "qa/capture_final.log": {
+      "bytes": 490,
+      "sha256": "43a36fb681551bf546b780098a224857d495e9cbdfebffd939529502930ce92c"
+    },
+    "qa/combat_regressions.log": {
+      "bytes": 584,
+      "sha256": "6fec7d1ba47ee1381af7e0fbcad74a9e06b345d21c3e8a69d0f8c502eb4cc75a"
+    },
+    "qa/combat_regressions_final.log": {
+      "bytes": 584,
+      "sha256": "e3ca2f462fc9c1884586cefd18ac7ebe53711697ed445686479b8851e469ca16"
+    },
+    "qa/controls.json": {
+      "bytes": 665,
+      "sha256": "aad3f77b7a5e9cb1d294586906dd1646539618f95871c2310923a101fc3a1365"
+    },
+    "qa/controls.log": {
+      "bytes": 294,
+      "sha256": "c910b9da2c2ec026b6e3ef88e750f42073010024439af6abbe1231bceee9414a"
+    },
+    "qa/controls_960x540.png": {
+      "bytes": 934498,
+      "sha256": "750c44e537dd6f726b714a3947710ba9e2fac829444894570593ac6f8ceff5f3"
+    },
+    "qa/encode_helheim_final.log": {
+      "bytes": 8199,
+      "sha256": "ade29a989cdd025115bdfa879fce84dbb7c81fd57293af76e60e70105c449fa4"
+    },
+    "qa/encode_midgard.log": {
+      "bytes": 15337,
+      "sha256": "df0908be258d7a29f2b9fbafedbe6b57f1fbeeb39893057af7f0a2a26116edbd"
+    },
+    "qa/encode_midgard_final.log": {
+      "bytes": 7642,
+      "sha256": "c434b5ac13a3bf85c1a98c0102c1bf67dd4d3e84bdce0e3564d5eef0dd129d2e"
+    },
+    "qa/encode_vigrid_final.log": {
+      "bytes": 8469,
+      "sha256": "0bcf921ba507f8a3c1f4fd46cc4d889d9b45228e09b35be063333b6da886cda2"
+    },
+    "qa/full_audio_encode.log": {
+      "bytes": 29274,
+      "sha256": "1c05edb4f9e5d793e881951c5974b0878fe6bca0c33fcc93d32396f190a85cf1"
+    },
+    "qa/full_audio_encode_attempt1.log": {
+      "bytes": 12721,
+      "sha256": "660beb1efa3fea4ada76676e9025bb180f938a14da909894a647c0a82e8c59e7"
+    },
+    "qa/full_audio_encode_attempt2.log": {
+      "bytes": 14908,
+      "sha256": "518df45dee39524ef4234b4638ce43dbc72b14d3e1b1726d4a8791d85f3e6d8b"
+    },
+    "qa/gif_helheim.log": {
+      "bytes": 1879,
+      "sha256": "751ece34949879ff49600d145baab4f397390f035f87d2d62268ed495fffc84d"
+    },
+    "qa/gif_midgard.log": {
+      "bytes": 1997,
+      "sha256": "5c2efc4b1c4c170e6fbf47d3a01123983783dc9d149845bea13996acbbfda19a"
+    },
+    "qa/gif_midgard_final.log": {
+      "bytes": 1878,
+      "sha256": "eae88bde2db22a8f942c3d8b8eba5addc5f9288d22b973d132b8acafe27d3550"
+    },
+    "qa/gif_vigrid.log": {
+      "bytes": 1878,
+      "sha256": "378d859126e6e5e5fa320e944e5cf3e0cef792f5539f6bac4edd567c4c33cfa9"
+    },
+    "qa/import.log": {
+      "bytes": 4394,
+      "sha256": "c6e1412d2436829c1686bedb062fab023d8aa742e2ce55f87095d56fc271eb3a"
+    },
+    "qa/import_hati.log": {
+      "bytes": 2241,
+      "sha256": "7eefa5d59873bb1bda0152845ac8e24aa6ef9dc401137ce9af0a5b23d41d72d2"
+    },
+    "qa/import_hati_mipmap.log": {
+      "bytes": 1952,
+      "sha256": "1eee727b3b24961b6e5d86d43a7fc41c99d747b33231a8340b44caab9b0098ae"
+    },
+    "qa/import_v02.log": {
+      "bytes": 1621,
+      "sha256": "17a08b4ddc01805f12902096322571b2f3c7a0123a1ff0ceb8ca66340470078f"
+    },
+    "qa/live_playback.json": {
+      "bytes": 119,
+      "sha256": "8de6a694f94e28e66a4ca3d9e94ca670b11dbfbd174a7d376629ff36f2444598"
+    },
+    "qa/live_playback.log": {
+      "bytes": 256,
+      "sha256": "201cd4e398f237cd160bbc3c0f04510e8e3beab1a3ddc3eb64b352b522d4a888"
+    },
+    "qa/movie_helheim_final.log": {
+      "bytes": 932,
+      "sha256": "a4239ef5d01e317a9b77738d5eaddca78dc4a631284e694b019649a605509084"
+    },
+    "qa/movie_helheim_frameclock_attempt.log": {
+      "bytes": 937,
+      "sha256": "1cdb2058805024ba23ca1707036211466c1cfcd344d5bd1e6b272ec058ddc189"
+    },
+    "qa/movie_helheim_wallclock_attempt.log": {
+      "bytes": 934,
+      "sha256": "fe1ff1cda81b897cf7c82640230ee68a62d7ed960ce51db7431ea359c9321149"
+    },
+    "qa/movie_midgard_attempt1.log": {
+      "bytes": 882,
+      "sha256": "ec44c51c6901f913171aaf71e063263dbe6dea20941b396f1d8d8e19868a2956"
+    },
+    "qa/movie_midgard_final.log": {
+      "bytes": 935,
+      "sha256": "aee74dcddbab3f5e3bbe3c8fdc2252858b3bdbaf30080dfe6045350370bdbb65"
+    },
+    "qa/movie_midgard_wallclock_attempt.log": {
+      "bytes": 934,
+      "sha256": "6c19d62fcd4b1f998f12d4d2e32d76bb2354413742a4e4a1349d39d9dc3adbb5"
+    },
+    "qa/movie_probe.log": {
+      "bytes": 1130,
+      "sha256": "bdb2339991d5870516fa77b0a3e74c60613e72296616c0f14a99c6d0646edbbf"
+    },
+    "qa/movie_vigrid_final.log": {
+      "bytes": 942,
+      "sha256": "a0a24a9b536909690666da4396a8ff3340d5f22b4bb8efd76a75e217d106c162"
+    },
+    "qa/movie_vigrid_wallclock_attempt.log": {
+      "bytes": 941,
+      "sha256": "6185755b65d8bb850ed853537c324f6870e8728e975fcfbf7205c034f89cb15b"
+    },
+    "qa/narration_synthesis.log": {
+      "bytes": 2197,
+      "sha256": "d0a12b8daec2171b5334387e26022fffb3964d5b52215d18457a9451083cdc0c"
+    },
+    "qa/project_import_attempt1.log": {
+      "bytes": 5784,
+      "sha256": "3c3f01a231532e1eabab1766fccf80b7918fe869cfa1074fadbc56b1da72336e"
+    },
+    "qa/project_import_final.log": {
+      "bytes": 4333,
+      "sha256": "cd9725698938aed21d7503442954b8fff3856ee9273db3242c33e3a9ea864c11"
+    },
+    "qa/render_all.log": {
+      "bytes": 113,
+      "sha256": "872c0a5e4cd4e04dca5837de6f9628c9308c7f580ca00aa7fa379289b7bf2a1c"
+    },
+    "qa/render_midgard_two_wolves.log": {
+      "bytes": 34,
+      "sha256": "9b73bb89d920e19158fd5a0ef7da77f83b5e194056269e6bbe4af529e64c4e52"
+    },
+    "qa/rendered_frame_hashes.json": {
+      "bytes": 46947,
+      "sha256": "2407f1419acd9e9ffb8bcddbefe50f466c387bddde43c80116ff0b31bbc6d476"
+    },
+    "qa/review_english.log": {
+      "bytes": 301,
+      "sha256": "8a15f6c3fd25fdf7c6ac155c09bbce59d894f4a04aad5b1ba72828871609dc5e"
+    },
+    "qa/review_first.log": {
+      "bytes": 302,
+      "sha256": "7237c78e474b970e1369d8331bc54ac262d335ff8df71b756153397245c32448"
+    },
+    "qa/review_two_wolves.log": {
+      "bytes": 196,
+      "sha256": "00768705376d2712b9a0e9cfea7cb6aea1f6e4b14b95b1b32cfa6c20f666bda0"
+    },
+    "qa/routes.json": {
+      "bytes": 35,
+      "sha256": "93d730387f52537f2829346924e4d8195ca56dc504e72f8601999c83ae0f2a57"
+    },
+    "qa/routes_attempt1.log": {
+      "bytes": 2481,
+      "sha256": "32213500af905c229c3f46d8e119b5408c3d67f1d2f4acaeb8ef2322de5ecd8a"
+    },
+    "qa/routes_final.log": {
+      "bytes": 117,
+      "sha256": "206cc81e65663c3f03442183d0f8047f9e99ebfc2a655130e2c77cce4cf56fe5"
+    },
+    "qa/routes_pass197.log": {
+      "bytes": 117,
+      "sha256": "a7635dbc17cdb1244d568f08683ad1543b7391be22901121bd3de0b4a9a51e39"
+    },
+    "qa/shot01_v01.log": {
+      "bytes": 1789,
+      "sha256": "2b66d24082e8393391d15b56f04b6a640515dc427085ddd9077ae13f42904f60"
+    },
+    "qa/shot01_v02.log": {
+      "bytes": 275,
+      "sha256": "6319332e3ee5a05dcda65a68f9c59451cdb655c484a270c886c27efa416e59ca"
+    },
+    "qa/shot02_v01.log": {
+      "bytes": 275,
+      "sha256": "83aee7b9f280f3ca38d6effb418d783cac09e2170a19b5fcfb750a0d5d1d045b"
+    },
+    "qa/translations.log": {
+      "bytes": 878,
+      "sha256": "66fcacfeb04f129beb1179b5d40ebf0cff163c4b54a7bc6e6e70d712149acf73"
+    },
+    "qa/translations_final.log": {
+      "bytes": 42,
+      "sha256": "196193635dcb825166c594f3e072389acf08d82cfb6dd1a4b1d3e9d308741e5f"
+    },
+    "qa/tts_install.log": {
+      "bytes": 336,
+      "sha256": "d1d41b9f79e1eda679525408bf05e01d04e833be274270deb773fa07c8856412"
+    },
+    "qa/tts_packages.log": {
+      "bytes": 1141,
+      "sha256": "3f9f9e85ca7123d6cd1c1254ebc2808fc4c3e8ae2ac5b0e02e08f6a5f4a80810"
+    },
+    "qa/video_checks.json": {
+      "bytes": 22921,
+      "sha256": "64610bac014435484dc95dd874f9eb4bd0483ae3bc09c9232420c7c59bec7dee"
+    },
+    "qa/video_encode.log": {
+      "bytes": 6466,
+      "sha256": "94616f8d7fd98fdf93313abb5d93582a4dc3ef794adf98f973bed966487d55e4"
+    },
+    "qa/window_routes.json": {
+      "bytes": 35,
+      "sha256": "93d730387f52537f2829346924e4d8195ca56dc504e72f8601999c83ae0f2a57"
+    },
+    "qa/window_routes.log": {
+      "bytes": 300,
+      "sha256": "e692204a5c8002ea0587762d616427e4fd16122723c9c0edacc0c9947d1d8f99"
+    },
+    "qa/window_routes_fixed_frame_attempt.log": {
+      "bytes": 626,
+      "sha256": "37a9e5321fb5602b947229766e289b25d9d4cca77536c77631ed0678390adc6b"
+    },
+    "records/R01_run_demo_command.txt": {
+      "bytes": 85,
+      "sha256": "cd5c5a96f5f36b568015553d684db4c6da95832b79f660584a7fae1121f6b7f2"
+    },
+    "records/R01_sample_README.md": {
+      "bytes": 1775,
+      "sha256": "31a71f08bbd1ca4886d98331a04ab526f29d16f50d64b0a468320fa0a454fee7"
+    },
+    "records/R01_sample_integration.md": {
+      "bytes": 2025,
+      "sha256": "b1340debea5aedf83d12bcf817c44a32c30e19744d2bd90afdfa7d4b1203072d"
+    },
+    "records/audio_recipe.json": {
+      "bytes": 1052,
+      "sha256": "161f1195d8dc35f37ee1da4795ccf498529479dceced4d2b923cb8704cf786ce"
+    },
+    "records/baseline.json": {
+      "bytes": 1228,
+      "sha256": "761acd2decd98843e52223a099b13749238290aa160d875cb1c835ab591196cc"
+    },
+    "records/build_sequences.py": {
+      "bytes": 4928,
+      "sha256": "49f5c076814e4a00f7e59ca8a5945ac9e254e6c8cd74f673310cac68994ebbd6"
+    },
+    "records/code_scope.json": {
+      "bytes": 557,
+      "sha256": "f5bb68388bb6895e06c5d9a2f20e683d43bc8e097e107cfb7bc576da0af78e1b"
+    },
+    "records/full_audio_commands.json": {
+      "bytes": 10467,
+      "sha256": "8ea8a951a754d04d0b404c8b39f5dab75ca1efaf5eb31e77e34315610ad70c27"
+    },
+    "records/full_audio_source_hashes.json": {
+      "bytes": 741,
+      "sha256": "99b2fb8d1facd40be4d1caa11f28ae902cc189b51399d4ba2a8659bbd4e2e038"
+    },
+    "records/generation_jobs.json": {
+      "bytes": 12347,
+      "sha256": "4606324ff06a06cccc6093cc7168284c4d742e02a36e048338e310e987f47c90"
+    },
+    "records/license_review.json": {
+      "bytes": 1814,
+      "sha256": "eddfc0576e08402fda45a398131f58a17ab2eeb83d2eafff02f181937b0a4b78"
+    },
+    "records/narration_plan.json": {
+      "bytes": 3866,
+      "sha256": "0bbd832f3f9e8fae76b0fc9641bf69731d799b91940d66eb79ba3fba9eccb83a"
+    },
+    "records/production_hashes.json": {
+      "bytes": 779,
+      "sha256": "92a2f1ccdfc701abef0b453473956c904adbc1c03d709240d10ab062d1618d78"
+    },
+    "records/qa_runtime_inputs.json": {
+      "bytes": 15634,
+      "sha256": "4e29ecd7d8ed682564e4176116e930c1b386de7b546f1747e5d3fb29e953d215"
+    },
+    "records/reference_hashes.json": {
+      "bytes": 2262,
+      "sha256": "e94e7d61f281d25c69d5f5cd0cd03f1741c5c7a7f27d0677f92293241c3d8d41"
+    },
+    "records/render_all.py": {
+      "bytes": 2616,
+      "sha256": "ac1d84b4267b2fd8755c8349e114fe5e13d33798ce1b860adc289128f41ac482"
+    },
+    "records/reused_sources.json": {
+      "bytes": 316,
+      "sha256": "05979fa7c71df1e488244513f968095f74a8d106e8c75d390bb6bded06a83451"
+    },
+    "records/scoped_existing_files.patch.gz": {
+      "bytes": 2291,
+      "sha256": "3cd23a6e78af895180bf03ca7dae6183daad907e9cce285d6ab029004052e65e"
+    },
+    "records/synthesize_narration.py": {
+      "bytes": 1604,
+      "sha256": "f0a0711485b5eb084b69f0991502b531a83d7e9bb52d79a543042a85af2642d1"
+    },
+    "records/temp_cleanup.json": {
+      "bytes": 87418,
+      "sha256": "8cd9e93b751e2ea6f415bd475ec0c438543516d56de9495301510abcfa20c05c"
+    },
+    "records/tts/Apache-2.0.txt": {
+      "bytes": 11358,
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    "records/tts/chinese_example.txt": {
+      "bytes": 1033,
+      "sha256": "a170e9b9e7a63bc2281ef935ce87d43e1600333d2a99dd8cc482f98c08d5f196"
+    },
+    "records/tts/dependency_licenses.json": {
+      "bytes": 50287,
+      "sha256": "3374462ad53cb420bdd747a8a1668141dba392e38d5ebae320e9c150a99410b4"
+    },
+    "records/tts/kokoro-onnx_LICENSE": {
+      "bytes": 1080,
+      "sha256": "f61fdd0217de9ece8fa699912848d91187d84879fc2e689f0906d0c1299e955e"
+    },
+    "records/tts/kokoro_license.txt": {
+      "bytes": 1080,
+      "sha256": "f61fdd0217de9ece8fa699912848d91187d84879fc2e689f0906d0c1299e955e"
+    },
+    "records/tts/kokoro_zh_model_card.txt": {
+      "bytes": 6006,
+      "sha256": "02ed578bdd24c42f3e4ed0d88d33e923365b41e6a37e86d3a5055f75d456f8e6"
+    },
+    "records/tts/model_config.txt": {
+      "bytes": 3228,
+      "sha256": "bc333efa5ce4ceff433c8c8e5d027a1eca0166001e4e4a62bea2d26ff7a46890"
+    },
+    "records/tts/model_files.json": {
+      "bytes": 649,
+      "sha256": "230d76f11f9fb255a777c14aae122533b32b5276a5c9bfc8ceacb11a84c5a85b"
+    },
+    "records/tts/narration_generation.json": {
+      "bytes": 6217,
+      "sha256": "da68c863ee216dad8794d53480d7d77363b33d68b77603dfb0f62041d1558694"
+    },
+    "records/tts/numpy_COPYING": {
+      "bytes": 690,
+      "sha256": "3f2c1ffa76383a55ae0aac01c9737cd70050dff63e1f026694fbe9d662573c98"
+    },
+    "records/tts/numpy_LICENSE": {
+      "bytes": 1593,
+      "sha256": "05f3b88351988ecfad10abe92c0c50e5875c6452d5009a0084cc291551ffcca6"
+    },
+    "records/tts/numpy_LICENSE.md": {
+      "bytes": 3511,
+      "sha256": "103166b62b80443afb9eb3488e052ea06be0cff566b908f199e561fde49af19f"
+    },
+    "records/tts/numpy_LICENSE.txt": {
+      "bytes": 1018,
+      "sha256": "fbc539f47d0cf83bc61378080fb873d5c14630126cacbfe754035c3926daa5ec"
+    },
+    "records/tts/numpy_dragon4_LICENSE.txt": {
+      "bytes": 1414,
+      "sha256": "f7b14309e5f54e5022b26448eefd419988ada2aec01d3c1162d84a0ea8f21f2c"
+    },
+    "records/tts/onnxruntime_LICENSE": {
+      "bytes": 1073,
+      "sha256": "2f07c72751aed99790b8a4869cf2311df85a860b22ded05fa22803587a48922c"
+    },
+    "records/tts/phonemizer_LICENSE": {
+      "bytes": 35142,
+      "sha256": "d62f065830aa3739cc031156b9690805c7b2e811b4a178c8b4acd8725d561c94"
+    },
+    "records/tts/pypinyin_LICENSE.txt": {
+      "bytes": 1105,
+      "sha256": "1e6c90014b4912815c296ee64bb6f6280af47e6d4c5d80e86232dfc5defe764c"
+    },
+    "records/tts/soundfile_COPYING": {
+      "bytes": 26518,
+      "sha256": "ad01ea5cd2755f6048383c8d54c88459cd6fcb17757c5c8892f8c5ea060f6140"
+    },
+    "records/tts/soundfile_LICENSE": {
+      "bytes": 1512,
+      "sha256": "0dd2e411fed553ba891845077e5a32c5b726d1bbc46ff31a2118ae1ccf816752"
+    },
+    "records/tts/soundfile_license_notes.md": {
+      "bytes": 2631,
+      "sha256": "35630e1f59b5c54b0bcbe2ec173bcf5a63b727a6e2f7834ca6d35a1af91a2b5f"
+    },
+    "run_demo.command": {
+      "bytes": 61,
+      "sha256": "56ddd09ad29581e214485be3b6e962a90f790daf9e7dc8c4187a4cd167459a15"
+    },
+    "timeline.json": {
+      "bytes": 1301,
+      "sha256": "26120004cfe432a19c13e07aa39ba6daaf95a536c9f5cf824f0838221f90779e"
+    }
+  },
+  "formal_files": {
+    "assets/cinematics/norse/CREDITS.md": {
+      "bytes": 1672,
+      "sha256": "b5d58c5acaca7bc280c8b58e5c582ced9eb7a87285c8b594c64b8513b160f962"
+    },
+    "assets/cinematics/norse/art/hati.png": {
+      "bytes": 1660222,
+      "sha256": "50d140f58afeba359cfe9307c714bf2eebb267c8d3b91aee673aed89aa5cb988"
+    },
+    "assets/cinematics/norse/art/hati.png.import": {
+      "bytes": 943,
+      "sha256": "40f82cc9c09f2b5911d26a1bb134aecd614a32b80644c3933ec89d633fa3f1f1"
+    },
+    "assets/cinematics/norse/art/helheim_bridge.png": {
+      "bytes": 3136916,
+      "sha256": "d3d29f9f38f8ff203cd66e106ff5fc54a1dffa672ec5635fce218956445f92d3"
+    },
+    "assets/cinematics/norse/art/helheim_bridge.png.import": {
+      "bytes": 973,
+      "sha256": "b1a241c9addea2dfc0440b77a586b4046fe4ad8fbe5b57c3bbe0117a503b8ab8"
+    },
+    "assets/cinematics/norse/art/helheim_garm.png": {
+      "bytes": 3143813,
+      "sha256": "f97116ef344931414cd95ddcbdf949147704a6ca43108dc7ea8ed5aa132bf544"
+    },
+    "assets/cinematics/norse/art/helheim_garm.png.import": {
+      "bytes": 966,
+      "sha256": "65b9de5b43916ec4f7bea7e2a070ec2398fc105c93da4055cec941a39968d4f7"
+    },
+    "assets/cinematics/norse/art/helheim_hel_ship.png": {
+      "bytes": 3449721,
+      "sha256": "d3331e8175154548ff63da0c8fbeef5a3c5178813523a5feb1261e4c7d27e479"
+    },
+    "assets/cinematics/norse/art/helheim_hel_ship.png.import": {
+      "bytes": 979,
+      "sha256": "1ab358f02d799aaadcd80c501f280f0aa82fb0385fb0b1ed0fb75d7cc0e809c3"
+    },
+    "assets/cinematics/norse/art/helheim_nidhogg.png": {
+      "bytes": 3335010,
+      "sha256": "f2424af5795c32bb684e8eabb476b3ff9d25a90ad827d69bf0eff4a6782debe9"
+    },
+    "assets/cinematics/norse/art/helheim_nidhogg.png.import": {
+      "bytes": 975,
+      "sha256": "77ba18ad597e331d7e6564072c0b2438d1b8712003b76ebcf2f8c7fbca6d5df8"
+    },
+    "assets/cinematics/norse/art/midgard_graves.png": {
+      "bytes": 3482168,
+      "sha256": "c84be84c31e976fe5cc6a10c59d37b9447b14b4fe45736a321c85c3a062ce460"
+    },
+    "assets/cinematics/norse/art/midgard_graves.png.import": {
+      "bytes": 973,
+      "sha256": "c6f0ff730a017c69499c1500c6332084284e29f6c1d3c56c91d67c91a414b23f"
+    },
+    "assets/cinematics/norse/art/midgard_hrym.png": {
+      "bytes": 3499742,
+      "sha256": "0504c9b5bb181c5b4a5ef75b6f1671e61cc0608f1f0506ee03d3204c5dfb17c2"
+    },
+    "assets/cinematics/norse/art/midgard_hrym.png.import": {
+      "bytes": 967,
+      "sha256": "138b4bbd8bcb4ac54d1c60064f04ce4ac6d9029459cc5b3c5cf384052d3deaa0"
+    },
+    "assets/cinematics/norse/art/skoll.png": {
+      "bytes": 1839751,
+      "sha256": "a997edb984d2ff3c606448d95546d6a32b9e61ec7d5e70624f813b39f207d9a8"
+    },
+    "assets/cinematics/norse/art/skoll.png.import": {
+      "bytes": 946,
+      "sha256": "7464ff411e0ad5a3b12eb2829d71c53e51601c85e93f01ab0d0d45b0428681f5"
+    },
+    "assets/cinematics/norse/art/sky_bg.png": {
+      "bytes": 2959924,
+      "sha256": "0013395d551e04a29241c30e84bfe6a048279587afb68520f94536fbbcf6f185"
+    },
+    "assets/cinematics/norse/art/sky_bg.png.import": {
+      "bytes": 949,
+      "sha256": "5a18b742696716fd21df9be8ed8400b2071e71060cc47445e83097ab018e7645"
+    },
+    "assets/cinematics/norse/art/sun.png": {
+      "bytes": 1335644,
+      "sha256": "fb2c29906ae96fc89cebb7ac3003f785562953b70bd6555fa5f160c8bcc287d8"
+    },
+    "assets/cinematics/norse/art/sun.png.import": {
+      "bytes": 940,
+      "sha256": "5b88961d3b36d2c4388df47b1916db7763af17a15fbcd1653cfd9bbd65592541"
+    },
+    "assets/cinematics/norse/art/vigrid_odin_fenrir.png": {
+      "bytes": 3460881,
+      "sha256": "8292983589925bea93993cfdd58e85c86dbd37041a7956c4e2a5bd018af49414"
+    },
+    "assets/cinematics/norse/art/vigrid_odin_fenrir.png.import": {
+      "bytes": 985,
+      "sha256": "1cdbf25a155c94bd3a888678fe78be84778f651f271e8b3b8e9628b0bd961f3a"
+    },
+    "assets/cinematics/norse/art/vigrid_plain.png": {
+      "bytes": 3278286,
+      "sha256": "2596b84f44f752eb0abfd95433d8895a5ab4a4232cdc95ce5700d66b5d6dfcdc"
+    },
+    "assets/cinematics/norse/art/vigrid_plain.png.import": {
+      "bytes": 967,
+      "sha256": "80c47db23b6cb239b15bd9f2c1271686e8209cfe89bf8e671042878b79f3bccf"
+    },
+    "assets/cinematics/norse/art/vigrid_surtr.png": {
+      "bytes": 3249065,
+      "sha256": "d7752fcd9fe50e344c2c94c0ce4bc84e679aac87f5e3328a6874821e37430fab"
+    },
+    "assets/cinematics/norse/art/vigrid_surtr.png.import": {
+      "bytes": 967,
+      "sha256": "fcac3f24ae9b787240d877189cf47c8d177f80689ae08562cf13e606dfc6a3ba"
+    },
+    "assets/cinematics/norse/art/vigrid_thor_serpent.png": {
+      "bytes": 3056023,
+      "sha256": "5de27cfcffb1015b9498def8594c6393c835d4b986701a5a4fe2cad42303f7c1"
+    },
+    "assets/cinematics/norse/art/vigrid_thor_serpent.png.import": {
+      "bytes": 988,
+      "sha256": "1a37d1cddad3781dad4d762060b245cde20f07a4b45b22db141f7298441a5605"
+    },
+    "assets/cinematics/norse/art/village_bg.png": {
+      "bytes": 3552963,
+      "sha256": "1fa2c263df94ee39958b861db4174db5c5096986fff8754d5cbf20840605a2de"
+    },
+    "assets/cinematics/norse/art/village_bg.png.import": {
+      "bytes": 961,
+      "sha256": "bbbb77c37fe3249cf630fe424319405bb4372e749928f0bdc568bf440455a803"
+    },
+    "assets/cinematics/norse/art/village_fg.png": {
+      "bytes": 1271565,
+      "sha256": "a9f6de7acb35feb9dd8c9ba96fcd92b3b44d4ced499a82f3fcd6522becf02219"
+    },
+    "assets/cinematics/norse/art/village_fg.png.import": {
+      "bytes": 961,
+      "sha256": "32db69c58b20cae1de835b4080c84ad94839bf5f5f9e2b4628be24e22798022f"
+    },
+    "assets/cinematics/norse/audio/helheim_effects.ogg": {
+      "bytes": 52131,
+      "sha256": "b2f5b7f123270130ff3b777d7fd4504101a6d52cfc7872a50c5fc0220ae6a864"
+    },
+    "assets/cinematics/norse/audio/helheim_effects.ogg.import": {
+      "bytes": 431,
+      "sha256": "65aa731a4d5ff9059953ff6feedbd1b8a4e63a4416bd9b77b72e101a5b7a639d"
+    },
+    "assets/cinematics/norse/audio/helheim_music.ogg": {
+      "bytes": 496735,
+      "sha256": "c2781dbd1d5039645d800a642a0f3383751617f76b71b66694bf93494f09f53c"
+    },
+    "assets/cinematics/norse/audio/helheim_music.ogg.import": {
+      "bytes": 424,
+      "sha256": "d387a0c9ad90370d6c1619acea41d1af8c4ea193667980e205118fef6d46d007"
+    },
+    "assets/cinematics/norse/audio/helheim_narration.ogg": {
+      "bytes": 226764,
+      "sha256": "5847e99f6804e75da28b3c4ec592635039e8265b90128bc62c15d3c378dc69c2"
+    },
+    "assets/cinematics/norse/audio/helheim_narration.ogg.import": {
+      "bytes": 437,
+      "sha256": "9b5f8c3b8f951caa01b4a2cc34d16b2f4de07228a826454bdffa6d96d16cd186"
+    },
+    "assets/cinematics/norse/audio/midgard_effects.ogg": {
+      "bytes": 69062,
+      "sha256": "4565aaf03a82ac258ad5d80118b0893becc5b0275d3798f382e67e7989dffff2"
+    },
+    "assets/cinematics/norse/audio/midgard_effects.ogg.import": {
+      "bytes": 431,
+      "sha256": "cc53b02c0ddabdcfe2f6dd8ed8a411f77e14d884df994b4be7ad3ffb9e5ab05d"
+    },
+    "assets/cinematics/norse/audio/midgard_music.ogg": {
+      "bytes": 449064,
+      "sha256": "f563d17962c0c41e1824113e4dc1bc38b53e3d147a03c70175a66c76a2db6bc6"
+    },
+    "assets/cinematics/norse/audio/midgard_music.ogg.import": {
+      "bytes": 425,
+      "sha256": "892256b4b2148100f9f6d4b6f957fbb97561d46a8732534d69ec1bba91c80cb8"
+    },
+    "assets/cinematics/norse/audio/midgard_narration.ogg": {
+      "bytes": 205210,
+      "sha256": "db4696b58f03ddc5d77d67ef9b1c3cc7304fe28cad72deabbc30e4abc9b11914"
+    },
+    "assets/cinematics/norse/audio/midgard_narration.ogg.import": {
+      "bytes": 437,
+      "sha256": "9bc470b85478c1af1e7f0766e5aef1deec1f2d83ab76494993e75a656d0e548d"
+    },
+    "assets/cinematics/norse/audio/vigrid_effects.ogg": {
+      "bytes": 72573,
+      "sha256": "4420c347ee58f1cbd75aa42a7b8ff33db30dde94ec05deaaf089f4da13e2e51e"
+    },
+    "assets/cinematics/norse/audio/vigrid_effects.ogg.import": {
+      "bytes": 428,
+      "sha256": "e0a818d7b336e331eec71c5a88ff4323cb405c8867108d1959f99f2e5e61f864"
+    },
+    "assets/cinematics/norse/audio/vigrid_music.ogg": {
+      "bytes": 604831,
+      "sha256": "d2c2e0e1bb1de02b875e10dbcd0c9256d5e33e995c85c66ccda6f672395ea8dc"
+    },
+    "assets/cinematics/norse/audio/vigrid_music.ogg.import": {
+      "bytes": 422,
+      "sha256": "696c59070b83a8dc28353b7bdf68a38514d59f9d5d03a011c5f42e531c1147f4"
+    },
+    "assets/cinematics/norse/audio/vigrid_narration.ogg": {
+      "bytes": 235670,
+      "sha256": "f5d46377f9e714d79276f27381d9de568ab9b7794b03a32c6f20758c42f89a3b"
+    },
+    "assets/cinematics/norse/audio/vigrid_narration.ogg.import": {
+      "bytes": 434,
+      "sha256": "f282892b7bfb49703017c8b755d6fe8889b6ecd34335af9f0c2d35be6cf64953"
+    },
+    "assets/cinematics/norse/sequences.json": {
+      "bytes": 6183,
+      "sha256": "0f60efe40eed7170cd4f7bc5f1e1e970eeabd3b3e2065c5c603fb9434579d4cf"
+    }
+  },
+  "production_code_hashes": {
+    "scripts/ui/chapter_intro.gd": "b6b36b7e614dcbaf6083bfde3546e8553d5018b2812386d1548b397ec2fae027",
+    "scripts/ui/hub.gd": "5d943c150f8667f50768b78885944fef936cca9bfa475318f876beec62051b9f",
+    "scripts/ui/hud.gd": "8737f8d78969898980dff503a161814c818679a4af0f3323bfd78e223fd78110",
+    "scenes/chapter_intro.tscn": "9f19bf8c79359079973ee86b3ce951559220ad187404c75c313d8b489c5ed0e5",
+    "locale/text.csv": "aa868339c8062451f8a1e8540d8dda8c0f061ab2cbc9702072ee278fffab57b2",
+    "tools/check_translations.py": "00d8ea6edfa43ed14f0047f802f8c58b47829779a74d526f0252f2b2abfe1731",
+    "tools/test_chapter_intro.gd": "5b02579ae7f60866bdc27d23773cc991c9e4065234285b2f48c649b89015fd20",
+    "tools/review_chapter_intro.gd": "5a045558afade19521613f97d8ef621f4e7b74bc5dd230e66b5924a0649d57db"
+  },
+  "excluded": [
+    "work/ (local models, packages, rebuildable QA runtime)",
+    "demo/.godot/",
+    "preview/frames/ (temporary R01 frames recorded in qa/rendered_frame_hashes.json)",
+    "generated demo import sidecars"
+  ]
+}

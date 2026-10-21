@@ -1,0 +1,10 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+NUMBER_QUEUE_BENCH before_us=30917 after_us=31766
+PASS separation result and bounded feedback queue equivalence
+SCRIPT ERROR: Invalid access to property or key 'life' on a base object of type 'Dictionary'.
+          at: FxLayer._draw (res://scripts/effects/fx_layer.gd:169)
+          GDScript backtrace (most recent call first):
+              [0] _draw (res://scripts/effects/fx_layer.gd:169)
+PASS cleanup
+DENSITY_BUFFERS_RESULT 472 checks 0 failures

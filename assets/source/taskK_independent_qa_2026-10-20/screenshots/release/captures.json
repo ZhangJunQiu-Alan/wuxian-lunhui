@@ -1,0 +1,1149 @@
+{
+	"captures": [
+		{
+			"file": "hub_levels.png",
+			"forced_render": true,
+			"note": "Lord God Space: level 3 card unlocked after Helheim clear",
+			"ok": true,
+			"window": [
+				1280,
+				720
+			]
+		},
+		{
+			"camera_inside_map": true,
+			"camera_world_rect": [
+				-640.0,
+				-360.0,
+				1280.0,
+				720.0
+			],
+			"file": "map_spawn.png",
+			"forced_render": true,
+			"master_muted": true,
+			"note": "spawn (0,0), central plain, routes",
+			"ok": true,
+			"window": [
+				1280,
+				720
+			]
+		},
+		{
+			"camera_inside_map": true,
+			"camera_world_rect": [
+				-2560.0,
+				-2560.0,
+				1280.0,
+				720.0
+			],
+			"file": "map_corner_nw.png",
+			"forced_render": true,
+			"master_muted": true,
+			"note": "walk-rect corner, border haze and fire band, camera limit",
+			"ok": true,
+			"window": [
+				1280,
+				720
+			]
+		},
+		{
+			"camera_inside_map": true,
+			"camera_world_rect": [
+				1280.0,
+				-2560.0,
+				1280.0,
+				720.0
+			],
+			"file": "map_corner_ne.png",
+			"forced_render": true,
+			"master_muted": true,
+			"note": "walk-rect corner, border haze and fire band, camera limit",
+			"ok": true,
+			"window": [
+				1280,
+				720
+			]
+		},
+		{
+			"camera_inside_map": true,
+			"camera_world_rect": [
+				1280.0,
+				1840.0,
+				1280.0,
+				720.0
+			],
+			"file": "map_corner_se.png",
+			"forced_render": true,
+			"master_muted": true,
+			"note": "walk-rect corner, border haze and fire band, camera limit",
+			"ok": true,
+			"window": [
+				1280,
+				720
+			]
+		},
+		{
+			"camera_inside_map": true,
+			"camera_world_rect": [
+				-2560.0,
+				1840.0,
+				1280.0,
+				720.0
+			],
+			"file": "map_corner_sw.png",
+			"forced_render": true,
+			"master_muted": true,
+			"note": "walk-rect corner, border haze and fire band, camera limit",
+			"ok": true,
+			"window": [
+				1280,
+				720
+			]
+		},
+		{
+			"camera_inside_map": true,
+			"camera_world_rect": [
+				-640.0,
+				-2560.0,
+				1280.0,
+				720.0
+			],
+			"file": "map_horizon.png",
+			"forced_render": true,
+			"master_muted": true,
+			"note": "north horizon distant battle strip, non-interactive",
+			"ok": true,
+			"window": [
+				1280,
+				720
+			]
+		},
+		{
+			"camera_inside_map": true,
+			"camera_world_rect": [
+				-2176.0,
+				664.0,
+				1280.0,
+				720.0
+			],
+			"file": "map_frost_remnants.png",
+			"forced_render": true,
+			"master_muted": true,
+			"note": "burnt grass with derived midgard-mask transitions, giant treads",
+			"ok": true,
+			"window": [
+				1280,
+				720
+			]
+		},
+		{
+			"camera_inside_map": true,
+			"camera_world_rect": [
+				896.0,
+				920.0,
+				1280.0,
+				720.0
+			],
+			"file": "map_muspel.png",
+			"forced_render": true,
+			"master_muted": true,
+			"note": "cracked lava decoration and hue 0.04 decorative fire",
+			"ok": true,
+			"window": [
+				1280,
+				720
+			]
+		},
+		{
+			"camera_inside_map": true,
+			"camera_world_rect": [
+				54.0,
+				-1124.0,
+				1280.0,
+				720.0
+			],
+			"file": "serpent_corner_turn.png",
+			"forced_render": true,
+			"master_muted": true,
+			"note": "Jormungandr body ribbon turning the rounded corner; head ring = only target",
+			"ok": true,
+			"window": [
+				1280,
+				720
+			]
+		},
+		{
+			"camera_inside_map": true,
+			"camera_world_rect": [
+				237.192932128906,
+				348.029907226562,
+				1280.0,
+				720.0
+			],
+			"file": "serpent_breath_windup.png",
+			"forced_render": true,
+			"master_muted": true,
+			"note": "poison breath warning sector (same polygon as damage)",
+			"ok": true,
+			"window": [
+				1280,
+				720
+			]
+		},
+		{
+			"camera_inside_map": true,
+			"camera_world_rect": [
+				237.192932128906,
+				348.029907226562,
+				1280.0,
+				720.0
+			],
+			"file": "serpent_mist.png",
+			"forced_render": true,
+			"master_muted": true,
+			"note": "after release: breath FX clipped to sector, lingering mist polygon",
+			"ok": true,
+			"window": [
+				1280,
+				720
+			]
+		},
+		{
+			"camera_inside_map": true,
+			"camera_world_rect": [
+				-96.0,
+				27.4298095703125,
+				1280.0,
+				720.0
+			],
+			"file": "serpent_lunge_windup.png",
+			"forced_render": true,
+			"master_muted": true,
+			"note": "lunge: head rears on the path, faint yellow lane = still aiming, follows the player",
+			"ok": true,
+			"window": [
+				1280,
+				720
+			]
+		},
+		{
+			"camera_inside_map": true,
+			"camera_world_rect": [
+				-96.0,
+				27.4298095703125,
+				1280.0,
+				720.0
+			],
+			"file": "serpent_lunge_locked.png",
+			"forced_render": true,
+			"master_muted": true,
+			"note": "lunge: last 0.3s the lane turns red and is locked; sidestep to dodge",
+			"ok": true,
+			"window": [
+				1280,
+				720
+			]
+		},
+		{
+			"camera_inside_map": true,
+			"camera_world_rect": [
+				-96.0,
+				27.4298095703125,
+				1280.0,
+				720.0
+			],
+			"file": "serpent_lunge_bite.png",
+			"forced_render": true,
+			"master_muted": true,
+			"note": "bite: head stuck in the ground, neck stretched across the arena, thick gold ring = x1.5 damage window",
+			"ok": true,
+			"window": [
+				1280,
+				720
+			]
+		},
+		{
+			"camera_inside_map": true,
+			"camera_world_rect": [
+				-36.0,
+				-32.5701904296875,
+				1280.0,
+				720.0
+			],
+			"file": "serpent_spit.png",
+			"forced_render": true,
+			"master_muted": true,
+			"note": "raged spit: 5 globs in flight, ground warning circles = hit radius",
+			"ok": true,
+			"window": [
+				1280,
+				720
+			]
+		},
+		{
+			"camera_inside_map": true,
+			"camera_world_rect": [
+				-36.0,
+				-32.5701904296875,
+				1280.0,
+				720.0
+			],
+			"file": "serpent_spit_mist.png",
+			"forced_render": true,
+			"master_muted": true,
+			"note": "globs landed: small mist pools",
+			"ok": true,
+			"window": [
+				1280,
+				720
+			]
+		},
+		{
+			"camera_inside_map": true,
+			"camera_world_rect": [
+				-509.737854003906,
+				-365.526275634766,
+				1280.0,
+				720.0
+			],
+			"file": "fenrir_maw_active.png",
+			"forced_render": true,
+			"master_muted": true,
+			"note": "attraction phase: split jaws, gap 112 >= 64 with active player in channel, fatal box and countdown",
+			"ok": true,
+			"window": [
+				1280,
+				720
+			]
+		},
+		{
+			"camera_inside_map": true,
+			"camera_world_rect": [
+				-504.248291015625,
+				-366.123260498047,
+				1280.0,
+				720.0
+			],
+			"file": "fenrir_maw_left.png",
+			"forced_render": true,
+			"master_muted": true,
+			"note": "mirrored maw facing left (upper jaw still on top)",
+			"ok": true,
+			"window": [
+				1280,
+				720
+			]
+		},
+		{
+			"camera_inside_map": true,
+			"camera_world_rect": [
+				-1699.69689941406,
+				-366.387878417969,
+				1280.0,
+				720.0
+			],
+			"file": "fenrir_vidar_brace.png",
+			"forced_render": true,
+			"master_muted": true,
+			"note": "Vidar pry frame 4: jaws placed on hand/boot contacts, no damage window",
+			"ok": true,
+			"window": [
+				1280,
+				720
+			]
+		},
+		{
+			"camera_inside_map": true,
+			"camera_world_rect": [
+				-1700.15112304688,
+				-366.406066894531,
+				1280.0,
+				720.0
+			],
+			"file": "fenrir_vidar_pried.png",
+			"forced_render": true,
+			"master_muted": true,
+			"note": "jaws torn open, Fenrir damaged",
+			"ok": true,
+			"window": [
+				1280,
+				720
+			]
+		},
+		{
+			"camera_inside_map": true,
+			"camera_world_rect": [
+				-2150.0,
+				-300.0,
+				1280.0,
+				720.0
+			],
+			"file": "fenrir_bound.png",
+			"forced_render": true,
+			"master_muted": true,
+			"note": "Gleipnir braid ribbon around torso, protected rect clear, bind timer",
+			"ok": true,
+			"window": [
+				1280,
+				720
+			]
+		},
+		{
+			"camera_inside_map": true,
+			"camera_world_rect": [
+				-2338.0,
+				-300.0,
+				1280.0,
+				720.0
+			],
+			"file": "fenrir_run_route.png",
+			"forced_render": true,
+			"master_muted": true,
+			"note": "run route warning ring (same polyline as movement)",
+			"ok": true,
+			"window": [
+				1280,
+				720
+			]
+		},
+		{
+			"camera_inside_map": true,
+			"camera_world_rect": [
+				-2338.0,
+				-300.0,
+				1280.0,
+				720.0
+			],
+			"file": "fenrir_run.png",
+			"forced_render": true,
+			"master_muted": true,
+			"note": "running along route with trail",
+			"ok": true,
+			"window": [
+				1280,
+				720
+			]
+		},
+		{
+			"camera_inside_map": true,
+			"camera_world_rect": [
+				-640.0,
+				-360.0,
+				1280.0,
+				720.0
+			],
+			"file": "surtr_sweep_windup.png",
+			"forced_render": true,
+			"master_muted": true,
+			"note": "320 windup pose, sweep sector warning",
+			"ok": true,
+			"window": [
+				1280,
+				720
+			]
+		},
+		{
+			"camera_inside_map": true,
+			"camera_world_rect": [
+				-640.0,
+				-360.0,
+				1280.0,
+				720.0
+			],
+			"file": "surtr_sweep_release.png",
+			"forced_render": true,
+			"master_muted": true,
+			"note": "attack frame 1: sword arc clipped to sector, residual fire",
+			"ok": true,
+			"window": [
+				1280,
+				720
+			]
+		},
+		{
+			"camera_inside_map": true,
+			"camera_world_rect": [
+				-640.0,
+				-360.0,
+				1280.0,
+				720.0
+			],
+			"file": "surtr_gates.png",
+			"forced_render": true,
+			"master_muted": true,
+			"note": "Muspel gates open, fire giants emerging",
+			"ok": true,
+			"window": [
+				1280,
+				720
+			]
+		},
+		{
+			"camera_inside_map": true,
+			"camera_world_rect": [
+				217.407409667969,
+				-360.0,
+				1280.0,
+				720.0
+			],
+			"file": "surtr_firewall.png",
+			"forced_render": true,
+			"master_muted": true,
+			"note": "Nine Worlds burning: band on circle boundary, fire half outward, clear inside + boundary line",
+			"ok": true,
+			"window": [
+				1280,
+				720
+			]
+		},
+		{
+			"camera_inside_map": true,
+			"camera_world_rect": [
+				-544.0,
+				-348.0,
+				1280.0,
+				720.0
+			],
+			"file": "surtr_final_warn.png",
+			"forced_render": true,
+			"master_muted": true,
+			"note": "final fire warning on unsafe 64 cells, safe runes, player on a safe cell",
+			"ok": true,
+			"window": [
+				1280,
+				720
+			]
+		},
+		{
+			"camera_inside_map": true,
+			"camera_world_rect": [
+				-544.0,
+				-348.0,
+				1280.0,
+				720.0
+			],
+			"file": "surtr_final_burn.png",
+			"forced_render": true,
+			"master_muted": true,
+			"note": "final fire on the same unsafe cell set; safe cells unburnt",
+			"ok": true,
+			"window": [
+				1280,
+				720
+			]
+		},
+		{
+			"camera_inside_map": true,
+			"camera_world_rect": [
+				-544.0,
+				-348.0,
+				1280.0,
+				720.0
+			],
+			"file": "ending_beat_0.png",
+			"forced_render": true,
+			"master_muted": true,
+			"note": "ending beat 0 (manual advance, skippable)",
+			"ok": true,
+			"window": [
+				1280,
+				720
+			]
+		},
+		{
+			"camera_inside_map": true,
+			"camera_world_rect": [
+				-544.0,
+				-348.0,
+				1280.0,
+				720.0
+			],
+			"file": "ending_beat_1.png",
+			"forced_render": true,
+			"master_muted": true,
+			"note": "ending beat 1 (manual advance, skippable)",
+			"ok": true,
+			"window": [
+				1280,
+				720
+			]
+		},
+		{
+			"camera_inside_map": true,
+			"camera_world_rect": [
+				-544.0,
+				-348.0,
+				1280.0,
+				720.0
+			],
+			"file": "ending_beat_2.png",
+			"forced_render": true,
+			"master_muted": true,
+			"note": "ending beat 2 (manual advance, skippable)",
+			"ok": true,
+			"window": [
+				1280,
+				720
+			]
+		},
+		{
+			"camera_inside_map": true,
+			"camera_world_rect": [
+				-544.0,
+				-348.0,
+				1280.0,
+				720.0
+			],
+			"file": "ending_beat_3.png",
+			"forced_render": true,
+			"master_muted": true,
+			"note": "ending beat 3 (manual advance, skippable)",
+			"ok": true,
+			"window": [
+				1280,
+				720
+			]
+		},
+		{
+			"camera_inside_map": true,
+			"camera_world_rect": [
+				-544.0,
+				-348.0,
+				1280.0,
+				720.0
+			],
+			"file": "ending_beat_4.png",
+			"forced_render": true,
+			"master_muted": true,
+			"note": "ending beat 4 (manual advance, skippable)",
+			"ok": true,
+			"window": [
+				1280,
+				720
+			]
+		},
+		{
+			"camera_inside_map": true,
+			"camera_world_rect": [
+				-544.0,
+				-348.0,
+				1280.0,
+				720.0
+			],
+			"file": "ending_result.png",
+			"forced_render": true,
+			"master_muted": true,
+			"note": "result: time/kills, fates rewritten, Loki hint",
+			"ok": true,
+			"window": [
+				1280,
+				720
+			]
+		},
+		{
+			"camera_inside_map": true,
+			"camera_world_rect": [
+				-640.0,
+				-360.0,
+				1280.0,
+				720.0
+			],
+			"file": "map_spawn_960x540.png",
+			"forced_render": true,
+			"master_muted": true,
+			"note": "spawn (0,0), central plain, routes",
+			"ok": true,
+			"window": [
+				960,
+				540
+			]
+		},
+		{
+			"camera_inside_map": true,
+			"camera_world_rect": [
+				-2560.0,
+				-2560.0,
+				1280.0,
+				720.0
+			],
+			"file": "map_corner_nw_960x540.png",
+			"forced_render": true,
+			"master_muted": true,
+			"note": "walk-rect corner, border haze and fire band, camera limit",
+			"ok": true,
+			"window": [
+				960,
+				540
+			]
+		},
+		{
+			"camera_inside_map": true,
+			"camera_world_rect": [
+				1280.0,
+				-2560.0,
+				1280.0,
+				720.0
+			],
+			"file": "map_corner_ne_960x540.png",
+			"forced_render": true,
+			"master_muted": true,
+			"note": "walk-rect corner, border haze and fire band, camera limit",
+			"ok": true,
+			"window": [
+				960,
+				540
+			]
+		},
+		{
+			"camera_inside_map": true,
+			"camera_world_rect": [
+				1280.0,
+				1840.0,
+				1280.0,
+				720.0
+			],
+			"file": "map_corner_se_960x540.png",
+			"forced_render": true,
+			"master_muted": true,
+			"note": "walk-rect corner, border haze and fire band, camera limit",
+			"ok": true,
+			"window": [
+				960,
+				540
+			]
+		},
+		{
+			"camera_inside_map": true,
+			"camera_world_rect": [
+				-2560.0,
+				1840.0,
+				1280.0,
+				720.0
+			],
+			"file": "map_corner_sw_960x540.png",
+			"forced_render": true,
+			"master_muted": true,
+			"note": "walk-rect corner, border haze and fire band, camera limit",
+			"ok": true,
+			"window": [
+				960,
+				540
+			]
+		},
+		{
+			"camera_inside_map": true,
+			"camera_world_rect": [
+				-640.0,
+				-2560.0,
+				1280.0,
+				720.0
+			],
+			"file": "map_horizon_960x540.png",
+			"forced_render": true,
+			"master_muted": true,
+			"note": "north horizon distant battle strip, non-interactive",
+			"ok": true,
+			"window": [
+				960,
+				540
+			]
+		},
+		{
+			"camera_inside_map": true,
+			"camera_world_rect": [
+				-2176.0,
+				664.0,
+				1280.0,
+				720.0
+			],
+			"file": "map_frost_remnants_960x540.png",
+			"forced_render": true,
+			"master_muted": true,
+			"note": "burnt grass with derived midgard-mask transitions, giant treads",
+			"ok": true,
+			"window": [
+				960,
+				540
+			]
+		},
+		{
+			"camera_inside_map": true,
+			"camera_world_rect": [
+				896.0,
+				920.0,
+				1280.0,
+				720.0
+			],
+			"file": "map_muspel_960x540.png",
+			"forced_render": true,
+			"master_muted": true,
+			"note": "cracked lava decoration and hue 0.04 decorative fire",
+			"ok": true,
+			"window": [
+				960,
+				540
+			]
+		},
+		{
+			"camera_inside_map": true,
+			"camera_world_rect": [
+				-640.0,
+				-360.0,
+				1280.0,
+				720.0
+			],
+			"file": "ending_beat_0_960x540.png",
+			"forced_render": true,
+			"master_muted": true,
+			"note": "ending beat 0 (manual advance, skippable)",
+			"ok": true,
+			"window": [
+				960,
+				540
+			]
+		},
+		{
+			"camera_inside_map": true,
+			"camera_world_rect": [
+				-640.0,
+				-360.0,
+				1280.0,
+				720.0
+			],
+			"file": "ending_beat_1_960x540.png",
+			"forced_render": true,
+			"master_muted": true,
+			"note": "ending beat 1 (manual advance, skippable)",
+			"ok": true,
+			"window": [
+				960,
+				540
+			]
+		},
+		{
+			"camera_inside_map": true,
+			"camera_world_rect": [
+				-640.0,
+				-360.0,
+				1280.0,
+				720.0
+			],
+			"file": "ending_beat_2_960x540.png",
+			"forced_render": true,
+			"master_muted": true,
+			"note": "ending beat 2 (manual advance, skippable)",
+			"ok": true,
+			"window": [
+				960,
+				540
+			]
+		},
+		{
+			"camera_inside_map": true,
+			"camera_world_rect": [
+				-640.0,
+				-360.0,
+				1280.0,
+				720.0
+			],
+			"file": "ending_beat_3_960x540.png",
+			"forced_render": true,
+			"master_muted": true,
+			"note": "ending beat 3 (manual advance, skippable)",
+			"ok": true,
+			"window": [
+				960,
+				540
+			]
+		},
+		{
+			"camera_inside_map": true,
+			"camera_world_rect": [
+				-640.0,
+				-360.0,
+				1280.0,
+				720.0
+			],
+			"file": "ending_beat_4_960x540.png",
+			"forced_render": true,
+			"master_muted": true,
+			"note": "ending beat 4 (manual advance, skippable)",
+			"ok": true,
+			"window": [
+				960,
+				540
+			]
+		},
+		{
+			"camera_inside_map": true,
+			"camera_world_rect": [
+				-640.0,
+				-360.0,
+				1280.0,
+				720.0
+			],
+			"file": "ending_result_960x540.png",
+			"forced_render": true,
+			"master_muted": true,
+			"note": "result: time/kills, fates rewritten, Loki hint",
+			"ok": true,
+			"window": [
+				960,
+				540
+			]
+		},
+		{
+			"camera_inside_map": true,
+			"camera_world_rect": [
+				-640.0,
+				-360.0,
+				1280.0,
+				720.0
+			],
+			"file": "map_spawn_1600x900.png",
+			"forced_render": true,
+			"master_muted": true,
+			"note": "spawn (0,0), central plain, routes",
+			"ok": true,
+			"window": [
+				1600,
+				900
+			]
+		},
+		{
+			"camera_inside_map": true,
+			"camera_world_rect": [
+				-2560.0,
+				-2560.0,
+				1280.0,
+				720.0
+			],
+			"file": "map_corner_nw_1600x900.png",
+			"forced_render": true,
+			"master_muted": true,
+			"note": "walk-rect corner, border haze and fire band, camera limit",
+			"ok": true,
+			"window": [
+				1600,
+				900
+			]
+		},
+		{
+			"camera_inside_map": true,
+			"camera_world_rect": [
+				1280.0,
+				-2560.0,
+				1280.0,
+				720.0
+			],
+			"file": "map_corner_ne_1600x900.png",
+			"forced_render": true,
+			"master_muted": true,
+			"note": "walk-rect corner, border haze and fire band, camera limit",
+			"ok": true,
+			"window": [
+				1600,
+				900
+			]
+		},
+		{
+			"camera_inside_map": true,
+			"camera_world_rect": [
+				1280.0,
+				1840.0,
+				1280.0,
+				720.0
+			],
+			"file": "map_corner_se_1600x900.png",
+			"forced_render": true,
+			"master_muted": true,
+			"note": "walk-rect corner, border haze and fire band, camera limit",
+			"ok": true,
+			"window": [
+				1600,
+				900
+			]
+		},
+		{
+			"camera_inside_map": true,
+			"camera_world_rect": [
+				-2560.0,
+				1840.0,
+				1280.0,
+				720.0
+			],
+			"file": "map_corner_sw_1600x900.png",
+			"forced_render": true,
+			"master_muted": true,
+			"note": "walk-rect corner, border haze and fire band, camera limit",
+			"ok": true,
+			"window": [
+				1600,
+				900
+			]
+		},
+		{
+			"camera_inside_map": true,
+			"camera_world_rect": [
+				-640.0,
+				-2560.0,
+				1280.0,
+				720.0
+			],
+			"file": "map_horizon_1600x900.png",
+			"forced_render": true,
+			"master_muted": true,
+			"note": "north horizon distant battle strip, non-interactive",
+			"ok": true,
+			"window": [
+				1600,
+				900
+			]
+		},
+		{
+			"camera_inside_map": true,
+			"camera_world_rect": [
+				-2176.0,
+				664.0,
+				1280.0,
+				720.0
+			],
+			"file": "map_frost_remnants_1600x900.png",
+			"forced_render": true,
+			"master_muted": true,
+			"note": "burnt grass with derived midgard-mask transitions, giant treads",
+			"ok": true,
+			"window": [
+				1600,
+				900
+			]
+		},
+		{
+			"camera_inside_map": true,
+			"camera_world_rect": [
+				896.0,
+				920.0,
+				1280.0,
+				720.0
+			],
+			"file": "map_muspel_1600x900.png",
+			"forced_render": true,
+			"master_muted": true,
+			"note": "cracked lava decoration and hue 0.04 decorative fire",
+			"ok": true,
+			"window": [
+				1600,
+				900
+			]
+		},
+		{
+			"camera_inside_map": true,
+			"camera_world_rect": [
+				-640.0,
+				-360.0,
+				1280.0,
+				720.0
+			],
+			"file": "ending_beat_0_1600x900.png",
+			"forced_render": true,
+			"master_muted": true,
+			"note": "ending beat 0 (manual advance, skippable)",
+			"ok": true,
+			"window": [
+				1600,
+				900
+			]
+		},
+		{
+			"camera_inside_map": true,
+			"camera_world_rect": [
+				-640.0,
+				-360.0,
+				1280.0,
+				720.0
+			],
+			"file": "ending_beat_1_1600x900.png",
+			"forced_render": true,
+			"master_muted": true,
+			"note": "ending beat 1 (manual advance, skippable)",
+			"ok": true,
+			"window": [
+				1600,
+				900
+			]
+		},
+		{
+			"camera_inside_map": true,
+			"camera_world_rect": [
+				-640.0,
+				-360.0,
+				1280.0,
+				720.0
+			],
+			"file": "ending_beat_2_1600x900.png",
+			"forced_render": true,
+			"master_muted": true,
+			"note": "ending beat 2 (manual advance, skippable)",
+			"ok": true,
+			"window": [
+				1600,
+				900
+			]
+		},
+		{
+			"camera_inside_map": true,
+			"camera_world_rect": [
+				-640.0,
+				-360.0,
+				1280.0,
+				720.0
+			],
+			"file": "ending_beat_3_1600x900.png",
+			"forced_render": true,
+			"master_muted": true,
+			"note": "ending beat 3 (manual advance, skippable)",
+			"ok": true,
+			"window": [
+				1600,
+				900
+			]
+		},
+		{
+			"camera_inside_map": true,
+			"camera_world_rect": [
+				-640.0,
+				-360.0,
+				1280.0,
+				720.0
+			],
+			"file": "ending_beat_4_1600x900.png",
+			"forced_render": true,
+			"master_muted": true,
+			"note": "ending beat 4 (manual advance, skippable)",
+			"ok": true,
+			"window": [
+				1600,
+				900
+			]
+		},
+		{
+			"camera_inside_map": true,
+			"camera_world_rect": [
+				-640.0,
+				-360.0,
+				1280.0,
+				720.0
+			],
+			"file": "ending_result_1600x900.png",
+			"forced_render": true,
+			"master_muted": true,
+			"note": "result: time/kills, fates rewritten, Loki hint",
+			"ok": true,
+			"window": [
+				1600,
+				900
+			]
+		}
+	],
+	"scope": "real Godot window, Game scene, controlled: invincible player, no regular spawns, scripted Boss states"
+}

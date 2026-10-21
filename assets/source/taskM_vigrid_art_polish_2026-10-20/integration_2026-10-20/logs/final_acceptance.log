@@ -1,0 +1,17 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+PASS duplicate Boss defeat callbacks
+PASS map movement obstacles roads and enemy spawn
+PASS actual player walking against edges and retreat
+PASS actual damage sampling: mouth / bind / firewall / 64-grid
+PASS safe-grid plus shrinking firewall combined damage
+PASS consumed fragment replenishment after deferred free
+PASS XP merge conservation and cleanup
+PASS all eight actual periodic aid implementations
+PASS real pause menu freezes all three Bosses and resumes
+PAUSE_MEASURE wall=60.177 encounter=89.0 level=269.0
+PASS real sixty-second pause / fate deadlines
+PASS K7 28-case actual ending workflow
+PASS result return and restart
+PASS cleanup
+INDEPENDENT_RESULT 4632 checks 0 failures cases=28/28
