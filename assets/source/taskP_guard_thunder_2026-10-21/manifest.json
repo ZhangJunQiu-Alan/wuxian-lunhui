@@ -1,0 +1,89 @@
+{
+  "assets": [
+    {
+      "id": "guard_rune",
+      "file": "assets/sprites/pickups/guard_rune.png",
+      "size": [
+        32,
+        32
+      ],
+      "source_size": [
+        1254,
+        1254
+      ],
+      "source": "assets/source/taskP_guard_thunder_2026-10-21/originals/guard_rune_v01.png",
+      "crop": [
+        238,
+        214,
+        1016,
+        1059
+      ],
+      "colors": 32,
+      "alpha": [
+        0,
+        255
+      ],
+      "bbox": [
+        4,
+        3,
+        28,
+        29
+      ],
+      "sha256": "15f9ee35d9691477bbc9bd413681463f7f8baccf862a64803b5867db5b3efe27",
+      "source_sha256": "45f0f1a6b776a5995ff49829cf21db8122f56a3eed38f89ac9bc61b4fa8b4d0d",
+      "checks": {
+        "size": true,
+        "binary_alpha": true,
+        "palette": true,
+        "margin": true
+      }
+    }
+  ],
+  "processing": "Alpha>=128 bounding crop; fit inside26x26 NEAREST; median-cut32 colors; binary alpha; center32x32. Generated originals are not native32px.",
+  "license": "OpenAI output Terms of Use; see assets/LICENSES.md",
+  "references": {
+    "assets/sprites/pickups/soul_magnet.png": "c32139a76aef459e26e4841da005d2715d8f4345d0192f3765e1c9e27fdd0b21",
+    "assets/sprites/pickups/healing_mead.png": "749c0329228ee7255cfa795aab2d98a30ce4aba5706e69ad981e53860910d74a"
+  },
+  "cancelled_assets": [
+    {
+      "id": "thunder_rune",
+      "file": "assets/sprites/pickups/thunder_rune.png",
+      "size": [
+        32,
+        32
+      ],
+      "source_size": [
+        1254,
+        1254
+      ],
+      "source": "assets/source/taskP_guard_thunder_2026-10-21/cancelled_thunder/thunder_rune_v01.png",
+      "crop": [
+        280,
+        170,
+        975,
+        1099
+      ],
+      "colors": 32,
+      "alpha": [
+        0,
+        255
+      ],
+      "bbox": [
+        6,
+        3,
+        25,
+        29
+      ],
+      "sha256": "54548dbb4e3bfc56efd9985a1ee14872d100e0d43093b0ac5a866343c124d470",
+      "source_sha256": "c2838ce91325ccaf3077cf1d6007751de7254c213fcc78b59b85ed9c9c63becc",
+      "checks": {
+        "size": true,
+        "binary_alpha": true,
+        "palette": true,
+        "margin": true
+      },
+      "status": "Cancelled by user; no formal texture, rule, effect script or translation"
+    }
+  ]
+}

@@ -15,6 +15,9 @@ extends Node2D
 const TILE := 64
 const OBSTACLE_CELL := 128.0  # 碰撞查询的网格大小，要大于 最大碰撞半径 + 最大敌人半径
 const FOOT := 20.0            # 角色的位置在身体中间，脚比位置低这么多；用脚去碰撞
+const PROP_SCALE := 2.0
+const FIXED_SIZE_PROPS := ["pier_straight_01", "pier_straight_02", "pier_broken", "fence", "fence_broken_01", "fence_broken_02", "fence_gate",
+	"gjoll_bridge", "gjoll_railing", "naglfar", "naglfar_sail", "nail_pier", "hall_arch_broken", "hall_carpet", "world_root_arch"]
 ## 显示格四个角（左上 1、右上 2、左下 4、右下 8）里有哪些是这种地面 -> 用哪些过渡块
 ## 对角两格（9、6）没有专门的块，用两个外角叠起来
 const EDGE_TILES := {
@@ -275,11 +278,13 @@ func _border_sprite(file: String, top_left: Vector2) -> Sprite2D:
 func prop(file: String, pos: Vector2, block: float = 0.0, flip := false) -> Sprite2D:
 	var sprite := Sprite2D.new()
 	sprite.texture = _texture(props_dir, file)
+	sprite.scale = Vector2.ONE * (1.0 if file in FIXED_SIZE_PROPS else PROP_SCALE)
 	sprite.offset = Vector2(0, -sprite.texture.get_height() * 0.5)
 	sprite.position = pos.round()
 	sprite.flip_h = flip
 	_props.add_child(sprite)
 	if block > 0.0:
+		block *= sprite.scale.x
 		add_obstacle(pos + Vector2(0, -block * 0.5), block)
 	return sprite
 
@@ -287,6 +292,8 @@ func prop(file: String, pos: Vector2, block: float = 0.0, flip := false) -> Spri
 ## 宽物件（长屋、墓丘、倒下的树干）：底边上排一串碰撞圆，width 是从最左到最右的圆心距离
 func wide_prop(file: String, pos: Vector2, width: float, block: float, flip := false) -> Sprite2D:
 	var sprite := prop(file, pos, 0.0, flip)
+	width *= sprite.scale.x
+	block *= sprite.scale.x
 	var count := maxi(2, ceili(width / block) + 1)
 	for i in count:
 		add_obstacle(pos + Vector2(-width * 0.5 + width * i / (count - 1), -block), block)
@@ -312,8 +319,16 @@ func add_obstacle(center: Vector2, r: float) -> void:
 
 ## 这个位置放半径 r 的东西会不会碰到已有的碰撞物或小路
 func is_free(pos: Vector2, r: float) -> bool:
-	if _reserved.has(cell_at(pos)):
-		return false
+	r = r * PROP_SCALE + Player.RADIUS * 2.0
+	var from := cell_at(pos - Vector2.ONE * r)
+	var to := cell_at(pos + Vector2.ONE * r)
+	for x in range(from.x, to.x + 1):
+		for y in range(from.y, to.y + 1):
+			var cell := Vector2i(x, y)
+			if _reserved.has(cell):
+				var closest := pos.clamp(Vector2(cell * TILE), Vector2((cell + Vector2i.ONE) * TILE))
+				if closest.distance_squared_to(pos) < r * r:
+					return false
 	return push_out(pos - Vector2(0, FOOT), r) == pos - Vector2(0, FOOT)
 
 
@@ -322,13 +337,18 @@ static func push_out(pos: Vector2, margin: float) -> Vector2:
 	if obstacles.is_empty():
 		return pos
 	var foot := pos + Vector2(0, FOOT)
-	var cell := Vector2i((foot / OBSTACLE_CELL).floor())
-	for x in range(cell.x - 1, cell.x + 2):
-		for y in range(cell.y - 1, cell.y + 2):
-			for o: Vector3 in obstacles.get(Vector2i(x, y), []):
-				var center := Vector2(o.x, o.y)
-				var away := foot - center
-				var min_dist := o.z + margin
-				if away.length_squared() < min_dist * min_dist:
-					foot = center + (away.normalized() if away != Vector2.ZERO else Vector2.DOWN) * min_dist
+	for pass_index in 16:
+		var moved := false
+		var cell := Vector2i((foot / OBSTACLE_CELL).floor())
+		for x in range(cell.x - 1, cell.x + 2):
+			for y in range(cell.y - 1, cell.y + 2):
+				for o: Vector3 in obstacles.get(Vector2i(x, y), []):
+					var center := Vector2(o.x, o.y)
+					var away := foot - center
+					var min_dist := o.z + margin
+					if away.length_squared() < min_dist * min_dist:
+						foot = center + (away.normalized() if away != Vector2.ZERO else Vector2.DOWN) * (min_dist + 0.001)
+						moved = true
+		if not moved:
+			break
 	return foot - Vector2(0, FOOT)

@@ -1,0 +1,8 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+ERROR: fine-grid escape from coarse pocket midgard(1790.0, 1598.0)
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tools/test_environment_scale.gd:18)
+       [1] run (res://tools/test_environment_scale.gd:98)
+RESULT ENVIRONMENT: 1993 checks, 1 failures

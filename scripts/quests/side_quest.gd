@@ -60,6 +60,7 @@ func _ready() -> void:
 		marker_pos = landmark.pos + Vector2.from_angle(randf() * TAU) * randf() * landmark.radius * 0.4
 		_offer_left += player.global_position.distance_to(marker_pos) / player.move_speed  # 地标越远，留给玩家赶路的时间越多
 	marker_pos = Game.clamp_to_map(marker_pos, 80.0)
+	marker_pos = MapLayer.push_out(marker_pos, Player.RADIUS + 16.0)
 	objective = tr("前往标记处接受支线")
 
 

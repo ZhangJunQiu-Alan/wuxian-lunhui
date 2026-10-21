@@ -1,0 +1,16 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+POCKET PROP res://assets/sprites/props/midgard/rock_02.png (1716.0, 1564.0)
+POCKET PROP res://assets/sprites/props/midgard/dead_pine_02.png (1764.0, 1652.0)
+POCKET PROP res://assets/sprites/props/midgard/dead_pine_02.png (1644.0, 1656.0)
+POCKET PROP res://assets/sprites/props/midgard/rock_04.png (1845.0, 1618.0)
+POCKET CIRCLE (1716.204, 1552.051, 24.0)
+POCKET CIRCLE (1763.776, 1642.335, 20.0)
+POCKET CIRCLE (1644.29, 1646.048, 20.0)
+POCKET CIRCLE (1844.918, 1595.529, 44.0)
+ERROR: fine-grid escape from coarse pocket midgard(1790.0, 1598.0)
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tools/test_environment_scale.gd:18)
+       [1] run (res://tools/test_environment_scale.gd:104)
+RESULT ENVIRONMENT: 1993 checks, 1 failures

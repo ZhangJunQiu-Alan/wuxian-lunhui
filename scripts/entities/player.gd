@@ -12,6 +12,7 @@ signal ult_cast(character_id: String)
 
 const SPRITE_HEIGHT := 48.0
 const MAX_LEVEL := 40
+const SUPPLY_GUARD := preload("res://assets/sprites/pickups/guard_rune.png")
 const XP_STEP := 6  # 每升一级，下一级多要这么多经验（2 级要 5，3 级要 11，4 级要 17……）
 const RADIUS := 14.0
 const INVINCIBLE_DURATION := 0.5  # 受伤后的无敌时间，防止一瞬间被怪群秒杀
@@ -40,6 +41,7 @@ var choice_count := 3     # 升级时有几个选项（法师的被动「先知�
 var frenzy_time := 0.0    # 枪手「狂野西部秀」剩余时间
 var speed_mult := 1.0     # 支线临时改变的移速（寒潮里冻僵、搬运余烬）
 var shield_time := 0.0    # 无敌剩余时间（刺客「入阵曲」），和受伤后的无敌不同，不会闪烁
+var supply_guard_time := 0.0
 
 # 全局加成，所有武器和技能共享
 var damage_mult := 1.0
@@ -172,6 +174,7 @@ func _physics_process(delta: float) -> void:
 func _tick_timers(delta: float) -> void:
 	frenzy_time = maxf(0.0, frenzy_time - delta)
 	shield_time = maxf(0.0, shield_time - delta)
+	supply_guard_time = maxf(0.0, supply_guard_time - delta)
 	immune_time = maxf(0.0, immune_time - delta)
 	_hurt_time = maxf(0.0, _hurt_time - delta)
 	_attack_time = maxf(0.0, _attack_time - delta)
@@ -368,6 +371,13 @@ func take_damage(amount: float) -> void:
 	_invincible_time = INVINCIBLE_DURATION
 	if randf() < dodge_chance:
 		return
+	# 只挡一次普通直接伤害；吞噬等以最大生命为基准的致命判定仍须躲避。
+	if supply_guard_time > 0.0 and amount > 0.0 and amount < max_hp:
+		supply_guard_time = 0.0
+		FxLayer.burst(global_position, Color(0.55, 1.0, 0.65), 12, 140.0, 3.0)
+		Audio.sfx("pickup_xp", -6.0)
+		FxLayer.floating_text(global_position + Vector2(0, -98), tr("守护抵挡"), Color(0.55, 1.0, 0.65))
+		return
 	if ward > 0:  # 誓言护盾挡下这一次
 		ward -= 1
 		FxLayer.burst(global_position, Color(1.0, 0.92, 0.6), 12, 140.0, 3.0)
@@ -378,6 +388,7 @@ func take_damage(amount: float) -> void:
 	shake(4.0, 0.15)
 	hp_changed.emit(hp, max_hp)
 	if hp <= 0.0:
+		supply_guard_time = 0.0
 		is_dead = true
 		died.emit()
 	else:
@@ -413,6 +424,7 @@ func take_dot(amount: float) -> void:
 	hp = maxf(0.0, hp - amount)
 	hp_changed.emit(hp, max_hp)
 	if hp <= 0.0:
+		supply_guard_time = 0.0
 		is_dead = true
 		Audio.sfx("player_death")
 		died.emit()
@@ -469,6 +481,11 @@ func _draw() -> void:
 		draw_colored_polygon(PackedVector2Array([tail, side, -side]), Color(0.6, 0.85, 1.0, 0.28 * fade + 0.1))
 		draw_line(tail * 0.6, Vector2.ZERO, Color(0.9, 0.97, 1.0, 0.45 * fade + 0.15), 2.0)
 	var hurt_blink := _invincible_time > 0.0 and int(_invincible_time * 20.0) % 2 == 0
+	if supply_guard_time > 0.0:
+		var alpha := 0.5 if supply_guard_time < 2.0 and int(supply_guard_time * 6.0) % 2 else 1.0
+		draw_texture(SUPPLY_GUARD, Vector2(12, -48), Color(1, 1, 1, alpha))
+		draw_rect(Rect2(16, -14, 24, 2), Color(0.08, 0.15, 0.1, 0.85))
+		draw_rect(Rect2(16, -14, ceilf(24.0 * supply_guard_time / SupplyDB.GUARD_DURATION), 2), Color(0.55, 1.0, 0.65))
 	if _fear_time > 0.0:  # 恐惧时头顶有紫色漩涡
 		draw_arc(Vector2(0, -RADIUS - 10), 7.0, _fear_time * 10.0, _fear_time * 10.0 + 4.5, 12, Color(0.75, 0.45, 1.0), 2.5)
 	if revolver and revolver.reload_progress() >= 0.0:  # 枪手换弹：头顶一圈进度

@@ -330,3 +330,9 @@ K7交付（2026-10-20）：五段原文结局数据、命运契约与28个待接
 
 ### O 通用局内补给制作（2026-10-21）
 内置 image_gen 制作蜜酒与聚魂符石，仅参考本项目已有经验宝石、宝箱与苹果。已重新核验 OpenAI Terms of Use（https://openai.com/policies/terms-of-use/ ，2026-01-01生效，Content/Ownership）：用户与OpenAI之间输出归用户，遵守条款可用于商业项目，输出可能不唯一。沿用 Pillow MIT-CMU 做裁帧、近邻缩放、色板及二值透明归一；Godot MIT 做实际渲染和测试。不增加账号或付费API。原图、实际Prompt、参考哈希、加工及验收记录位于 source/taskO_pickups_2026-10-21/；开工记录不代表验收完成。
+
+
+### P 守护与雷霆符石（2026-10-21）
+使用内置image_gen制作两张新的32像素拾取物；仅参考本项目蜜酒、聚魂符石，未引入第三方作品造型。重新核验OpenAI Terms of Use https://openai.com/policies/row-terms-of-use/ （2026-01-01生效，Content/Ownership）：用户与OpenAI之间输出归用户，合规用于商业项目，输出不保证唯一或独占。Pillow沿用MIT-CMU用于透明/近邻/色板归一及预览；Godot MIT做实际渲染。既有lightning特效和音效仅复用，不重新生成。原图、实际Prompt、参考哈希、接入与验收记录位于source/taskP_guard_thunder_2026-10-21/；此开工记录不表示验收完成。
+
+P范围调整：用户明确取消雷霆符石，其原图和试作代码仅留在source/cancelled_thunder及原始记录中，正式PNG、脚本、掉落入口和提示已移除。保留守护符石；新增环境放大只复用本项目原图，不重新生成外部素材。

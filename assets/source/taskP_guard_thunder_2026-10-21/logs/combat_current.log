@@ -1,0 +1,12 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+PASS fixed faith gain, four gods, awakening pool, and level 40
+BENCH 350 enemies / 2000 radius queries: grid=29040us, scan=222849us
+PASS spatial query equivalence and lifecycle
+PASS cooldown, immunity, and unique harvest
+BENCH 350 shocked enemies / 30 static ticks: 303470us
+PASS static-field damage equivalence
+PASS regular, event, elite, split, quest and Boss spawning
+PASS final Boss, queued rewards, pause and duplicate settlement
+PASS death and abandon settlement on Helheim
+RESULT: 997 checks, 0 failures

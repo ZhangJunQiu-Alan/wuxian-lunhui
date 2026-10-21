@@ -1,0 +1,1552 @@
+{
+	"checks": 1821,
+	"failures": [
+		"quest marker approach midgard/stones seed5",
+		"quest marker approach helheim/hall seed1",
+		"quest marker approach helheim/hall seed3",
+		"quest marker approach helheim/hall seed5"
+	],
+	"levels": [
+		{
+			"connected_grid_cells": 15418,
+			"enlarged_props": 488,
+			"fixed_structural_props": 34,
+			"free_grid_cells": 15422,
+			"level": "midgard",
+			"markers": [
+				{
+					"can_accept": true,
+					"landmark": "crossroads",
+					"position": [
+						-36.4049682617188,
+						112.127311706543
+					],
+					"seed": 0
+				},
+				{
+					"can_accept": true,
+					"landmark": "crossroads",
+					"position": [
+						-72.4604034423828,
+						-63.4098320007324
+					],
+					"seed": 1
+				},
+				{
+					"can_accept": true,
+					"landmark": "crossroads",
+					"position": [
+						57.3366470336914,
+						88.6266555786133
+					],
+					"seed": 2
+				},
+				{
+					"can_accept": true,
+					"landmark": "crossroads",
+					"position": [
+						77.2707824707031,
+						-36.3640632629395
+					],
+					"seed": 3
+				},
+				{
+					"can_accept": true,
+					"landmark": "crossroads",
+					"position": [
+						55.8736763000488,
+						33.4172019958496
+					],
+					"seed": 4
+				},
+				{
+					"can_accept": true,
+					"landmark": "crossroads",
+					"position": [
+						6.67464399337769,
+						-24.0745029449463
+					],
+					"seed": 5
+				},
+				{
+					"can_accept": true,
+					"landmark": "crossroads",
+					"position": [
+						-22.3421630859375,
+						28.8025951385498
+					],
+					"seed": 6
+				},
+				{
+					"can_accept": true,
+					"landmark": "crossroads",
+					"position": [
+						107.140579223633,
+						-53.473518371582
+					],
+					"seed": 7
+				},
+				{
+					"can_accept": true,
+					"landmark": "village",
+					"position": [
+						-1423.94763183594,
+						-1022.24139404297
+					],
+					"seed": 0
+				},
+				{
+					"can_accept": true,
+					"landmark": "village",
+					"position": [
+						-1497.18518066406,
+						-1378.80126953125
+					],
+					"seed": 1
+				},
+				{
+					"can_accept": true,
+					"landmark": "village",
+					"position": [
+						-1233.53491210938,
+						-1069.97705078125
+					],
+					"seed": 2
+				},
+				{
+					"can_accept": true,
+					"landmark": "village",
+					"position": [
+						-1193.04370117188,
+						-1323.86450195312
+					],
+					"seed": 3
+				},
+				{
+					"can_accept": true,
+					"landmark": "village",
+					"position": [
+						-1236.50659179688,
+						-1182.12133789062
+					],
+					"seed": 4
+				},
+				{
+					"can_accept": true,
+					"landmark": "village",
+					"position": [
+						-1336.44213867188,
+						-1298.9013671875
+					],
+					"seed": 5
+				},
+				{
+					"can_accept": true,
+					"landmark": "village",
+					"position": [
+						-1395.38256835938,
+						-1191.49475097656
+					],
+					"seed": 6
+				},
+				{
+					"can_accept": true,
+					"landmark": "village",
+					"position": [
+						-1132.37072753906,
+						-1358.61804199219
+					],
+					"seed": 7
+				},
+				{
+					"can_accept": true,
+					"landmark": "harbor",
+					"position": [
+						1387.42895507812,
+						-1207.28125
+					],
+					"seed": 0
+				},
+				{
+					"can_accept": true,
+					"landmark": "harbor",
+					"position": [
+						1325.45874023438,
+						-1508.98559570312
+					],
+					"seed": 1
+				},
+				{
+					"can_accept": true,
+					"landmark": "harbor",
+					"position": [
+						1548.54736328125,
+						-1247.67297363281
+					],
+					"seed": 2
+				},
+				{
+					"can_accept": true,
+					"landmark": "harbor",
+					"position": [
+						1582.80920410156,
+						-1462.50073242188
+					],
+					"seed": 3
+				},
+				{
+					"can_accept": true,
+					"landmark": "harbor",
+					"position": [
+						1546.03283691406,
+						-1342.56420898438
+					],
+					"seed": 4
+				},
+				{
+					"can_accept": true,
+					"landmark": "harbor",
+					"position": [
+						1461.47204589844,
+						-1441.37805175781
+					],
+					"seed": 5
+				},
+				{
+					"can_accept": true,
+					"landmark": "harbor",
+					"position": [
+						1411.59936523438,
+						-1350.49548339844
+					],
+					"seed": 6
+				},
+				{
+					"can_accept": true,
+					"landmark": "harbor",
+					"position": [
+						1634.14782714844,
+						-1491.90759277344
+					],
+					"seed": 7
+				},
+				{
+					"can_accept": true,
+					"landmark": "stones",
+					"position": [
+						-1547.78149414062,
+						1097.16711425781
+					],
+					"seed": 0
+				},
+				{
+					"can_accept": true,
+					"landmark": "stones",
+					"position": [
+						-1595.10424804688,
+						866.774597167969
+					],
+					"seed": 1
+				},
+				{
+					"can_accept": true,
+					"landmark": "stones",
+					"position": [
+						-1424.74560546875,
+						1066.32250976562
+					],
+					"seed": 2
+				},
+				{
+					"can_accept": true,
+					"landmark": "stones",
+					"position": [
+						-1398.58215332031,
+						902.272155761719
+					],
+					"seed": 3
+				},
+				{
+					"can_accept": true,
+					"landmark": "stones",
+					"position": [
+						-1426.66577148438,
+						993.860107421875
+					],
+					"seed": 4
+				},
+				{
+					"can_accept": false,
+					"landmark": "stones",
+					"position": [
+						-1491.23950195312,
+						918.402221679688
+					],
+					"seed": 5
+				},
+				{
+					"can_accept": true,
+					"landmark": "stones",
+					"position": [
+						-1529.32409667969,
+						987.803405761719
+					],
+					"seed": 6
+				},
+				{
+					"can_accept": true,
+					"landmark": "stones",
+					"position": [
+						-1359.37805175781,
+						879.816040039062
+					],
+					"seed": 7
+				},
+				{
+					"can_accept": true,
+					"landmark": "mounds",
+					"position": [
+						-179.635864257812,
+						1695.27844238281
+					],
+					"seed": 0
+				},
+				{
+					"can_accept": true,
+					"landmark": "mounds",
+					"position": [
+						-258.507141113281,
+						1311.291015625
+					],
+					"seed": 1
+				},
+				{
+					"can_accept": true,
+					"landmark": "mounds",
+					"position": [
+						25.4239044189453,
+						1643.87084960938
+					],
+					"seed": 2
+				},
+				{
+					"can_accept": true,
+					"landmark": "mounds",
+					"position": [
+						69.0298309326172,
+						1370.45361328125
+					],
+					"seed": 3
+				},
+				{
+					"can_accept": true,
+					"landmark": "mounds",
+					"position": [
+						22.2236709594727,
+						1523.10009765625
+					],
+					"seed": 4
+				},
+				{
+					"can_accept": true,
+					"landmark": "mounds",
+					"position": [
+						-85.3992156982422,
+						1397.33703613281
+					],
+					"seed": 5
+				},
+				{
+					"can_accept": true,
+					"landmark": "mounds",
+					"position": [
+						-148.873474121094,
+						1513.00561523438
+					],
+					"seed": 6
+				},
+				{
+					"can_accept": true,
+					"landmark": "mounds",
+					"position": [
+						134.369995117188,
+						1333.02673339844
+					],
+					"seed": 7
+				},
+				{
+					"can_accept": true,
+					"landmark": "lake",
+					"position": [
+						1276.05236816406,
+						1327.75854492188
+					],
+					"seed": 0
+				},
+				{
+					"can_accept": true,
+					"landmark": "lake",
+					"position": [
+						1202.81481933594,
+						971.198791503906
+					],
+					"seed": 1
+				},
+				{
+					"can_accept": true,
+					"landmark": "lake",
+					"position": [
+						1466.46508789062,
+						1280.02294921875
+					],
+					"seed": 2
+				},
+				{
+					"can_accept": true,
+					"landmark": "lake",
+					"position": [
+						1506.95629882812,
+						1026.13549804688
+					],
+					"seed": 3
+				},
+				{
+					"can_accept": true,
+					"landmark": "lake",
+					"position": [
+						1463.49340820312,
+						1167.87866210938
+					],
+					"seed": 4
+				},
+				{
+					"can_accept": true,
+					"landmark": "lake",
+					"position": [
+						1363.55786132812,
+						1051.0986328125
+					],
+					"seed": 5
+				},
+				{
+					"can_accept": true,
+					"landmark": "lake",
+					"position": [
+						1304.61743164062,
+						1158.50524902344
+					],
+					"seed": 6
+				},
+				{
+					"can_accept": true,
+					"landmark": "lake",
+					"position": [
+						1567.62927246094,
+						991.381896972656
+					],
+					"seed": 7
+				}
+			]
+		},
+		{
+			"connected_grid_cells": 15788,
+			"enlarged_props": 229,
+			"fixed_structural_props": 10,
+			"free_grid_cells": 15788,
+			"level": "helheim",
+			"markers": [
+				{
+					"can_accept": true,
+					"landmark": "plaza",
+					"position": [
+						-39.8179359436035,
+						122.63924407959
+					],
+					"seed": 0
+				},
+				{
+					"can_accept": true,
+					"landmark": "plaza",
+					"position": [
+						-79.2535629272461,
+						-69.3545074462891
+					],
+					"seed": 1
+				},
+				{
+					"can_accept": true,
+					"landmark": "plaza",
+					"position": [
+						62.7119522094727,
+						96.9354095458984
+					],
+					"seed": 2
+				},
+				{
+					"can_accept": true,
+					"landmark": "plaza",
+					"position": [
+						84.5149154663086,
+						-39.773193359375
+					],
+					"seed": 3
+				},
+				{
+					"can_accept": true,
+					"landmark": "plaza",
+					"position": [
+						61.1118354797363,
+						36.5500640869141
+					],
+					"seed": 4
+				},
+				{
+					"can_accept": true,
+					"landmark": "plaza",
+					"position": [
+						7.30039167404175,
+						-26.3314876556396
+					],
+					"seed": 5
+				},
+				{
+					"can_accept": true,
+					"landmark": "plaza",
+					"position": [
+						-24.4367408752441,
+						31.502836227417
+					],
+					"seed": 6
+				},
+				{
+					"can_accept": true,
+					"landmark": "plaza",
+					"position": [
+						117.184997558594,
+						-58.4866600036621
+					],
+					"seed": 7
+				},
+				{
+					"can_accept": true,
+					"landmark": "bridge",
+					"position": [
+						-36.4049682617188,
+						-687.872680664062
+					],
+					"seed": 0
+				},
+				{
+					"can_accept": true,
+					"landmark": "bridge",
+					"position": [
+						-72.4604034423828,
+						-863.409851074219
+					],
+					"seed": 1
+				},
+				{
+					"can_accept": true,
+					"landmark": "bridge",
+					"position": [
+						57.3366470336914,
+						-711.373352050781
+					],
+					"seed": 2
+				},
+				{
+					"can_accept": true,
+					"landmark": "bridge",
+					"position": [
+						77.2707824707031,
+						-836.364074707031
+					],
+					"seed": 3
+				},
+				{
+					"can_accept": true,
+					"landmark": "bridge",
+					"position": [
+						55.8736763000488,
+						-766.582824707031
+					],
+					"seed": 4
+				},
+				{
+					"can_accept": true,
+					"landmark": "bridge",
+					"position": [
+						6.67464399337769,
+						-824.074523925781
+					],
+					"seed": 5
+				},
+				{
+					"can_accept": true,
+					"landmark": "bridge",
+					"position": [
+						-22.3421630859375,
+						-771.197387695312
+					],
+					"seed": 6
+				},
+				{
+					"can_accept": true,
+					"landmark": "bridge",
+					"position": [
+						107.140579223633,
+						-853.473510742188
+					],
+					"seed": 7
+				},
+				{
+					"can_accept": true,
+					"landmark": "harbor",
+					"position": [
+						326.052398681641,
+						-1372.24145507812
+					],
+					"seed": 0
+				},
+				{
+					"can_accept": true,
+					"landmark": "harbor",
+					"position": [
+						252.814804077148,
+						-1728.80126953125
+					],
+					"seed": 1
+				},
+				{
+					"can_accept": true,
+					"landmark": "harbor",
+					"position": [
+						516.465026855469,
+						-1419.97705078125
+					],
+					"seed": 2
+				},
+				{
+					"can_accept": true,
+					"landmark": "harbor",
+					"position": [
+						556.956298828125,
+						-1673.86450195312
+					],
+					"seed": 3
+				},
+				{
+					"can_accept": true,
+					"landmark": "harbor",
+					"position": [
+						513.493408203125,
+						-1532.12133789062
+					],
+					"seed": 4
+				},
+				{
+					"can_accept": true,
+					"landmark": "harbor",
+					"position": [
+						413.557861328125,
+						-1648.9013671875
+					],
+					"seed": 5
+				},
+				{
+					"can_accept": true,
+					"landmark": "harbor",
+					"position": [
+						354.617492675781,
+						-1541.49475097656
+					],
+					"seed": 6
+				},
+				{
+					"can_accept": true,
+					"landmark": "harbor",
+					"position": [
+						617.629272460938,
+						-1708.61804199219
+					],
+					"seed": 7
+				},
+				{
+					"can_accept": true,
+					"landmark": "marsh",
+					"position": [
+						-1473.94763183594,
+						377.758605957031
+					],
+					"seed": 0
+				},
+				{
+					"can_accept": true,
+					"landmark": "marsh",
+					"position": [
+						-1547.18518066406,
+						21.1987762451172
+					],
+					"seed": 1
+				},
+				{
+					"can_accept": true,
+					"landmark": "marsh",
+					"position": [
+						-1283.53491210938,
+						330.022888183594
+					],
+					"seed": 2
+				},
+				{
+					"can_accept": true,
+					"landmark": "marsh",
+					"position": [
+						-1243.04370117188,
+						76.135498046875
+					],
+					"seed": 3
+				},
+				{
+					"can_accept": true,
+					"landmark": "marsh",
+					"position": [
+						-1286.50659179688,
+						217.878692626953
+					],
+					"seed": 4
+				},
+				{
+					"can_accept": true,
+					"landmark": "marsh",
+					"position": [
+						-1386.44213867188,
+						101.098663330078
+					],
+					"seed": 5
+				},
+				{
+					"can_accept": true,
+					"landmark": "marsh",
+					"position": [
+						-1445.38256835938,
+						208.505264282227
+					],
+					"seed": 6
+				},
+				{
+					"can_accept": true,
+					"landmark": "marsh",
+					"position": [
+						-1182.37072753906,
+						41.3819198608398
+					],
+					"seed": 7
+				},
+				{
+					"can_accept": true,
+					"landmark": "hall",
+					"position": [
+						1331.74072265625,
+						310.238708496094
+					],
+					"seed": 0
+				},
+				{
+					"can_accept": false,
+					"landmark": "hall",
+					"position": [
+						1264.13671875,
+						-18.8934326171875
+					],
+					"seed": 1
+				},
+				{
+					"can_accept": true,
+					"landmark": "hall",
+					"position": [
+						1507.50622558594,
+						266.174987792969
+					],
+					"seed": 2
+				},
+				{
+					"can_accept": false,
+					"landmark": "hall",
+					"position": [
+						1544.88269042969,
+						31.8173828125
+					],
+					"seed": 3
+				},
+				{
+					"can_accept": true,
+					"landmark": "hall",
+					"position": [
+						1504.76318359375,
+						162.657257080078
+					],
+					"seed": 4
+				},
+				{
+					"can_accept": false,
+					"landmark": "hall",
+					"position": [
+						1412.51501464844,
+						54.8603057861328
+					],
+					"seed": 5
+				},
+				{
+					"can_accept": true,
+					"landmark": "hall",
+					"position": [
+						1358.1083984375,
+						154.004867553711
+					],
+					"seed": 6
+				},
+				{
+					"can_accept": true,
+					"landmark": "hall",
+					"position": [
+						1600.88854980469,
+						-0.262840270996094
+					],
+					"seed": 7
+				},
+				{
+					"can_accept": true,
+					"landmark": "root",
+					"position": [
+						-1312.57104492188,
+						1542.71875
+					],
+					"seed": 0
+				},
+				{
+					"can_accept": true,
+					"landmark": "root",
+					"position": [
+						-1374.54125976562,
+						1241.01440429688
+					],
+					"seed": 1
+				},
+				{
+					"can_accept": true,
+					"landmark": "root",
+					"position": [
+						-1151.45263671875,
+						1502.32702636719
+					],
+					"seed": 2
+				},
+				{
+					"can_accept": true,
+					"landmark": "root",
+					"position": [
+						-1117.19079589844,
+						1287.49926757812
+					],
+					"seed": 3
+				},
+				{
+					"can_accept": true,
+					"landmark": "root",
+					"position": [
+						-1153.96716308594,
+						1407.43579101562
+					],
+					"seed": 4
+				},
+				{
+					"can_accept": true,
+					"landmark": "root",
+					"position": [
+						-1238.52795410156,
+						1308.62194824219
+					],
+					"seed": 5
+				},
+				{
+					"can_accept": true,
+					"landmark": "root",
+					"position": [
+						-1288.40063476562,
+						1399.50451660156
+					],
+					"seed": 6
+				},
+				{
+					"can_accept": true,
+					"landmark": "root",
+					"position": [
+						-1065.85217285156,
+						1258.09240722656
+					],
+					"seed": 7
+				},
+				{
+					"can_accept": true,
+					"landmark": "cave",
+					"position": [
+						1243.1171875,
+						1725.19897460938
+					],
+					"seed": 0
+				},
+				{
+					"can_accept": true,
+					"landmark": "cave",
+					"position": [
+						1186.78063964844,
+						1450.92211914062
+					],
+					"seed": 1
+				},
+				{
+					"can_accept": true,
+					"landmark": "cave",
+					"position": [
+						1389.58850097656,
+						1688.47912597656
+					],
+					"seed": 2
+				},
+				{
+					"can_accept": true,
+					"landmark": "cave",
+					"position": [
+						1420.73559570312,
+						1493.18115234375
+					],
+					"seed": 3
+				},
+				{
+					"can_accept": true,
+					"landmark": "cave",
+					"position": [
+						1387.30261230469,
+						1602.21435546875
+					],
+					"seed": 4
+				},
+				{
+					"can_accept": true,
+					"landmark": "cave",
+					"position": [
+						1310.42907714844,
+						1512.38354492188
+					],
+					"seed": 5
+				},
+				{
+					"can_accept": true,
+					"landmark": "cave",
+					"position": [
+						1265.09033203125,
+						1595.00402832031
+					],
+					"seed": 6
+				},
+				{
+					"can_accept": true,
+					"landmark": "cave",
+					"position": [
+						1467.40710449219,
+						1466.44763183594
+					],
+					"seed": 7
+				},
+				{
+					"can_accept": true,
+					"landmark": "workshop",
+					"position": [
+						-1456.8828125,
+						-1324.80102539062
+					],
+					"seed": 0
+				},
+				{
+					"can_accept": true,
+					"landmark": "workshop",
+					"position": [
+						-1513.21936035156,
+						-1599.07788085938
+					],
+					"seed": 1
+				},
+				{
+					"can_accept": true,
+					"landmark": "workshop",
+					"position": [
+						-1310.41149902344,
+						-1361.52087402344
+					],
+					"seed": 2
+				},
+				{
+					"can_accept": true,
+					"landmark": "workshop",
+					"position": [
+						-1279.26440429688,
+						-1556.81884765625
+					],
+					"seed": 3
+				},
+				{
+					"can_accept": true,
+					"landmark": "workshop",
+					"position": [
+						-1312.69738769531,
+						-1447.78564453125
+					],
+					"seed": 4
+				},
+				{
+					"can_accept": true,
+					"landmark": "workshop",
+					"position": [
+						-1389.57092285156,
+						-1537.61645507812
+					],
+					"seed": 5
+				},
+				{
+					"can_accept": true,
+					"landmark": "workshop",
+					"position": [
+						-1434.90966796875,
+						-1454.99597167969
+					],
+					"seed": 6
+				},
+				{
+					"can_accept": true,
+					"landmark": "workshop",
+					"position": [
+						-1232.59289550781,
+						-1583.55236816406
+					],
+					"seed": 7
+				},
+				{
+					"can_accept": true,
+					"landmark": "ford",
+					"position": [
+						-1628.44140625,
+						-712.400512695312
+					],
+					"seed": 0
+				},
+				{
+					"can_accept": true,
+					"landmark": "ford",
+					"position": [
+						-1656.60974121094,
+						-849.538940429688
+					],
+					"seed": 1
+				},
+				{
+					"can_accept": true,
+					"landmark": "ford",
+					"position": [
+						-1555.20568847656,
+						-730.760437011719
+					],
+					"seed": 2
+				},
+				{
+					"can_accept": true,
+					"landmark": "ford",
+					"position": [
+						-1539.63220214844,
+						-828.409423828125
+					],
+					"seed": 3
+				},
+				{
+					"can_accept": true,
+					"landmark": "ford",
+					"position": [
+						-1556.3486328125,
+						-773.892822265625
+					],
+					"seed": 4
+				},
+				{
+					"can_accept": true,
+					"landmark": "ford",
+					"position": [
+						-1594.78540039062,
+						-818.808227539062
+					],
+					"seed": 5
+				},
+				{
+					"can_accept": true,
+					"landmark": "ford",
+					"position": [
+						-1617.45483398438,
+						-777.497985839844
+					],
+					"seed": 6
+				},
+				{
+					"can_accept": true,
+					"landmark": "ford",
+					"position": [
+						-1516.29638671875,
+						-841.776184082031
+					],
+					"seed": 7
+				}
+			]
+		},
+		{
+			"connected_grid_cells": 20368,
+			"enlarged_props": 49,
+			"fixed_structural_props": 0,
+			"free_grid_cells": 20368,
+			"level": "vigrid",
+			"markers": [
+				{
+					"can_accept": true,
+					"landmark": "battlefield",
+					"position": [
+						-123.776893615723,
+						381.232879638672
+					],
+					"seed": 0
+				},
+				{
+					"can_accept": true,
+					"landmark": "battlefield",
+					"position": [
+						-246.365386962891,
+						-215.59342956543
+					],
+					"seed": 1
+				},
+				{
+					"can_accept": true,
+					"landmark": "battlefield",
+					"position": [
+						194.944595336914,
+						301.330657958984
+					],
+					"seed": 2
+				},
+				{
+					"can_accept": true,
+					"landmark": "battlefield",
+					"position": [
+						262.720672607422,
+						-123.637817382812
+					],
+					"seed": 3
+				},
+				{
+					"can_accept": true,
+					"landmark": "battlefield",
+					"position": [
+						189.970504760742,
+						113.61848449707
+					],
+					"seed": 4
+				},
+				{
+					"can_accept": true,
+					"landmark": "battlefield",
+					"position": [
+						22.6937885284424,
+						-81.8533096313477
+					],
+					"seed": 5
+				},
+				{
+					"can_accept": true,
+					"landmark": "battlefield",
+					"position": [
+						-75.9633560180664,
+						97.9288177490234
+					],
+					"seed": 6
+				},
+				{
+					"can_accept": true,
+					"landmark": "battlefield",
+					"position": [
+						364.277954101562,
+						-181.809951782227
+					],
+					"seed": 7
+				},
+				{
+					"can_accept": true,
+					"landmark": "bifrost",
+					"position": [
+						-1579.68591308594,
+						-1273.447265625
+					],
+					"seed": 0
+				},
+				{
+					"can_accept": true,
+					"landmark": "bifrost",
+					"position": [
+						-1622.95251464844,
+						-1484.091796875
+					],
+					"seed": 1
+				},
+				{
+					"can_accept": true,
+					"landmark": "bifrost",
+					"position": [
+						-1467.19604492188,
+						-1301.64794921875
+					],
+					"seed": 2
+				},
+				{
+					"can_accept": true,
+					"landmark": "bifrost",
+					"position": [
+						-1443.27502441406,
+						-1451.63684082031
+					],
+					"seed": 3
+				},
+				{
+					"can_accept": true,
+					"landmark": "bifrost",
+					"position": [
+						-1468.95153808594,
+						-1367.8994140625
+					],
+					"seed": 4
+				},
+				{
+					"can_accept": true,
+					"landmark": "bifrost",
+					"position": [
+						-1527.99047851562,
+						-1436.88940429688
+					],
+					"seed": 5
+				},
+				{
+					"can_accept": true,
+					"landmark": "bifrost",
+					"position": [
+						-1562.810546875,
+						-1373.43688964844
+					],
+					"seed": 6
+				},
+				{
+					"can_accept": true,
+					"landmark": "bifrost",
+					"position": [
+						-1407.43127441406,
+						-1472.16821289062
+					],
+					"seed": 7
+				},
+				{
+					"can_accept": true,
+					"landmark": "giant_graveyard",
+					"position": [
+						1492.31408691406,
+						-1145.447265625
+					],
+					"seed": 0
+				},
+				{
+					"can_accept": true,
+					"landmark": "giant_graveyard",
+					"position": [
+						1449.04748535156,
+						-1356.091796875
+					],
+					"seed": 1
+				},
+				{
+					"can_accept": true,
+					"landmark": "giant_graveyard",
+					"position": [
+						1604.80395507812,
+						-1173.64794921875
+					],
+					"seed": 2
+				},
+				{
+					"can_accept": true,
+					"landmark": "giant_graveyard",
+					"position": [
+						1628.72497558594,
+						-1323.63684082031
+					],
+					"seed": 3
+				},
+				{
+					"can_accept": true,
+					"landmark": "giant_graveyard",
+					"position": [
+						1603.04846191406,
+						-1239.8994140625
+					],
+					"seed": 4
+				},
+				{
+					"can_accept": true,
+					"landmark": "giant_graveyard",
+					"position": [
+						1544.00952148438,
+						-1308.88940429688
+					],
+					"seed": 5
+				},
+				{
+					"can_accept": true,
+					"landmark": "giant_graveyard",
+					"position": [
+						1509.189453125,
+						-1245.43688964844
+					],
+					"seed": 6
+				},
+				{
+					"can_accept": true,
+					"landmark": "giant_graveyard",
+					"position": [
+						1664.56872558594,
+						-1344.16821289062
+					],
+					"seed": 7
+				},
+				{
+					"can_accept": true,
+					"landmark": "frost_remnants",
+					"position": [
+						-1579.68591308594,
+						1158.552734375
+					],
+					"seed": 0
+				},
+				{
+					"can_accept": true,
+					"landmark": "frost_remnants",
+					"position": [
+						-1622.95251464844,
+						947.908203125
+					],
+					"seed": 1
+				},
+				{
+					"can_accept": true,
+					"landmark": "frost_remnants",
+					"position": [
+						-1467.19604492188,
+						1130.35205078125
+					],
+					"seed": 2
+				},
+				{
+					"can_accept": true,
+					"landmark": "frost_remnants",
+					"position": [
+						-1443.27502441406,
+						980.363098144531
+					],
+					"seed": 3
+				},
+				{
+					"can_accept": true,
+					"landmark": "frost_remnants",
+					"position": [
+						-1468.95153808594,
+						1064.1005859375
+					],
+					"seed": 4
+				},
+				{
+					"can_accept": true,
+					"landmark": "frost_remnants",
+					"position": [
+						-1527.99047851562,
+						995.110595703125
+					],
+					"seed": 5
+				},
+				{
+					"can_accept": true,
+					"landmark": "frost_remnants",
+					"position": [
+						-1562.810546875,
+						1058.56311035156
+					],
+					"seed": 6
+				},
+				{
+					"can_accept": true,
+					"landmark": "frost_remnants",
+					"position": [
+						-1407.43127441406,
+						959.831787109375
+					],
+					"seed": 7
+				},
+				{
+					"can_accept": true,
+					"landmark": "muspel_edge",
+					"position": [
+						1485.03308105469,
+						1436.97827148438
+					],
+					"seed": 0
+				},
+				{
+					"can_accept": true,
+					"landmark": "muspel_edge",
+					"position": [
+						1434.55541992188,
+						1191.22619628906
+					],
+					"seed": 1
+				},
+				{
+					"can_accept": true,
+					"landmark": "muspel_edge",
+					"position": [
+						1616.27124023438,
+						1404.07727050781
+					],
+					"seed": 2
+				},
+				{
+					"can_accept": true,
+					"landmark": "muspel_edge",
+					"position": [
+						1644.17907714844,
+						1229.09033203125
+					],
+					"seed": 3
+				},
+				{
+					"can_accept": true,
+					"landmark": "muspel_edge",
+					"position": [
+						1614.22314453125,
+						1326.78405761719
+					],
+					"seed": 4
+				},
+				{
+					"can_accept": true,
+					"landmark": "muspel_edge",
+					"position": [
+						1545.34448242188,
+						1246.29565429688
+					],
+					"seed": 5
+				},
+				{
+					"can_accept": true,
+					"landmark": "muspel_edge",
+					"position": [
+						1504.72094726562,
+						1320.32360839844
+					],
+					"seed": 6
+				},
+				{
+					"can_accept": true,
+					"landmark": "muspel_edge",
+					"position": [
+						1685.99682617188,
+						1205.13708496094
+					],
+					"seed": 7
+				},
+				{
+					"can_accept": true,
+					"landmark": "dead_march",
+					"position": [
+						-29.1239757537842,
+						1881.70190429688
+					],
+					"seed": 0
+				},
+				{
+					"can_accept": true,
+					"landmark": "dead_march",
+					"position": [
+						-57.9683227539062,
+						1741.27209472656
+					],
+					"seed": 1
+				},
+				{
+					"can_accept": true,
+					"landmark": "dead_march",
+					"position": [
+						45.8693161010742,
+						1862.9013671875
+					],
+					"seed": 2
+				},
+				{
+					"can_accept": true,
+					"landmark": "dead_march",
+					"position": [
+						61.8166275024414,
+						1762.90869140625
+					],
+					"seed": 3
+				},
+				{
+					"can_accept": true,
+					"landmark": "dead_march",
+					"position": [
+						44.6989402770996,
+						1818.73376464844
+					],
+					"seed": 4
+				},
+				{
+					"can_accept": true,
+					"landmark": "dead_march",
+					"position": [
+						5.33971500396729,
+						1772.74035644531
+					],
+					"seed": 5
+				},
+				{
+					"can_accept": true,
+					"landmark": "dead_march",
+					"position": [
+						-17.8737316131592,
+						1815.04211425781
+					],
+					"seed": 6
+				},
+				{
+					"can_accept": true,
+					"landmark": "dead_march",
+					"position": [
+						85.7124557495117,
+						1749.22119140625
+					],
+					"seed": 7
+				}
+			]
+		}
+	],
+	"navigation_grid": 32,
+	"player_radius": 14
+}

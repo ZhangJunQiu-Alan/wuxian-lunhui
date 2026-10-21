@@ -130,8 +130,8 @@ func _harbor(c: Vector2) -> void:
 	for ship: Array in [[Vector2(220, -300), false], [Vector2(-140, -360), true]]:
 		var at: Vector2 = c + ship[0]
 		prop("longship_wreck", at, 0.0, ship[1])
-		add_obstacle(at + Vector2(-32, -16), 24.0)
-		add_obstacle(at + Vector2(32, -16), 24.0)
+		add_obstacle(at + Vector2(-64, -32), 48.0)
+		add_obstacle(at + Vector2(64, -32), 48.0)
 	var pier := _shore(c + Vector2(40, 0)) + Vector2(0, TILE)
 	for i in 6:  # 码头从岸上往北伸进冰海，可以走上去
 		prop("pier_straight_0%d" % (i % 2 + 1), pier - Vector2(0, i * TILE))
@@ -144,8 +144,8 @@ func _harbor(c: Vector2) -> void:
 	prop("fishing_net_01", c + Vector2(-190, 10))
 	prop("fishing_net_02", c + Vector2(-60, 200), 0.0, true)
 	prop("boat_overturned", c + Vector2(-320, -60), 0.0, true)
-	add_obstacle(c + Vector2(-345, -80), 20.0)
-	add_obstacle(c + Vector2(-295, -80), 20.0)
+	add_obstacle(c + Vector2(-370, -100), 40.0)
+	add_obstacle(c + Vector2(-270, -100), 40.0)
 	prop("crate_stack_01", c + Vector2(300, 160), 18.0)
 	prop("crate_stack_02", c + Vector2(350, 100), 18.0, true)
 	prop("barrel_01", c + Vector2(270, 190))

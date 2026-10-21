@@ -266,7 +266,8 @@ func run():
 			for kind in rules_script.RULES:
 				drops._last[kind] = 0.0
 				drops._kills[kind] = 0
-			var counts = {"healing_mead": 0, "soul_magnet": 0}
+			var counts = {}
+			for kind in rules_script.RULES: counts[kind] = 0
 			fake = enemy_script.new()
 			fake.position = at
 			game.add_child(fake)
