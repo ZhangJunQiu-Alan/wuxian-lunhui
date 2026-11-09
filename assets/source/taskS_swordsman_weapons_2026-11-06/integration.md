@@ -8,6 +8,8 @@
 
 战斗机制以已审过的本地任务稿、挂点和预览时间轴实现。伤害倍率、状态持续时间和冷却使用本轮的初始平衡值。
 
+正式关卡回归由 `tools/test_swordsman_weapons.gd` 运行。测试存档解锁三关，并验证每次实际加载的关卡 ID。Godot 图形模式完成 596 项检查，覆盖 11 套武器、左右挂载、五把腰挂剑的六帧普攻和特殊动作交接。总览页「正式游戏」一节可查看实际关卡截图。
+
 ## 入口
 
 - 身体帧条和挂点在 `assets/sprites/characters/`。用 `swordsman_bare_<动作>.png` 和 `swordsman_sockets.json`。

@@ -60,11 +60,13 @@ func run() -> void:
 	check(root.get_visible_rect().encloses(hub._start.get_global_rect()), "battle button fits the hub viewport")
 	await capture("hub")
 	hub.free()
+	save.cleared_levels.assign(levels)
 	for level: String in levels:
 		save.selected_level = level
 		for kit: String in kits:
 			save.swordsman_weapon = kit
 			await enter_level()
+			check(game.level_id == level, "loaded the requested map: " + level)
 			check(weapon != null and weapon.kit_id == kit, level + " equipped " + kit)
 			if not weapon:
 				quit(1)
