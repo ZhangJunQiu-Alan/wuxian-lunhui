@@ -15,7 +15,6 @@ const FACE_REGION := Rect2(120, 40, 480, 480)    # 头像从插画里裁出的�
 const MOTE_COUNT := 50
 
 var _points_label: Label
-var _story_label: Label
 var _stats_label: Label
 var _cards := {}  # 强化 id -> {panel, level, button}
 var _level_cards := {}  # 关卡 id -> {panel, button}
@@ -67,9 +66,7 @@ func _ready() -> void:
 	money.add_theme_constant_override("separation", 0)
 	header.add_child(money)
 	_points_label = _label("", 24, GOLD, HORIZONTAL_ALIGNMENT_RIGHT)
-	_story_label = _label("", 15, Color(0.75, 0.6, 1.0), HORIZONTAL_ALIGNMENT_RIGHT)
 	money.add_child(_points_label)
-	money.add_child(_story_label)
 
 	# ---- 分页按钮 + 四个分页「化身」「关卡」「永久强化」「图鉴」 ----
 	var nav := HBoxContainer.new()
@@ -331,10 +328,6 @@ func _character_art(id: String, face: bool = false) -> Texture2D:
 func _on_character_pressed(id: String) -> void:
 	if CharacterDB.is_unlocked(id):
 		Save.select_character(id)
-	else:
-		var unlock: Dictionary = CharacterDB.ALL[id].unlock
-		if unlock.type == "story" and Save.unlock_character(id, unlock.value):
-			Save.select_character(id)
 	_refresh()
 
 
@@ -366,9 +359,6 @@ func _refresh_character_page(selected: String) -> void:
 	elif unlocked:
 		action.text = tr("选择")
 		action.disabled = false
-	elif info.unlock.type == "story":
-		action.text = tr("解锁（%d 支线剧情点）") % info.unlock.value
-		action.disabled = Save.story_points < info.unlock.value
 	else:
 		action.text = tr("未解锁：") + tr(info.unlock.text)
 		action.disabled = true
@@ -495,7 +485,6 @@ func _refresh() -> void:
 	_refresh_character_page(selected)
 
 	_points_label.text = tr("奖励点  %d") % Save.reward_points
-	_story_label.text = tr("支线剧情点  %d") % Save.story_points
 	var s: Dictionary = Save.stats
 	_stats_label.text = tr("轮回 %d 次　通关 %d 次　最久存活 %s　最快通关 %s　累计击杀 %d") % [
 		s.runs, s.clears, _format_time(s.best_time), _format_time(s.best_clear_time) if s.best_clear_time > 0.0 else "—", s.total_kills]

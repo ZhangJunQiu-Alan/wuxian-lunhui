@@ -161,7 +161,7 @@ func _test_level_registration() -> void:
 	save.cleared_levels.assign(["midgard", "helheim"])
 	_check(levels.is_unlocked("vigrid") and levels.selected() == "vigrid", "unlocked and selectable after Helheim clear")
 	save.cleared_levels.assign(["midgard"])
-	save.record_run("helheim", 0, 0, true, 600.0, 10, 0)
+	save.record_run("helheim", 0, true, 600.0, 10)
 	_check(save.selected_level == "vigrid", "first Helheim clear auto-selects vigrid")
 	_check(levels.next_of("vigrid") == "", "vigrid is the last level of the chapter")
 	for id in ["jormungandr", "fenrir", "surtr"]:
@@ -952,7 +952,7 @@ func _test_aid() -> void:
 	for sound in ["jormungandr_hiss", "fenrir_swallow", "gleipnir_tension", "surtr_gate"]:
 		_check(not shared._find(sound, audio.SFX_DIR, ["wav", "ogg"]).is_empty(), "new sfx " + sound)
 	_check(not shared._find("vigrid", audio.MUSIC_DIR, ["ogg"]).is_empty(), "vigrid music")
-	for sound in ["boss_windup", "boss_slam", "quest_done", "lightning", "boss_howl", "chest_open", "awaken", "katana_slash", "fire_burn", "boss_warning", "heal_pickup", "big_death", "boss_block"]:
+	for sound in ["boss_windup", "boss_slam", "milestone", "lightning", "boss_howl", "chest_open", "awaken", "katana_slash", "fire_burn", "boss_warning", "heal_pickup", "big_death", "boss_block"]:
 		_check(not shared._find(sound, audio.SFX_DIR, ["wav", "ogg"]).is_empty(), "reused sfx " + sound)
 	_check(audio.VOICES == 24 and audio.MAX_SAME == 4 and is_equal_approx(audio.MIN_GAP, 0.05), "audio limits unchanged")
 	_pass()

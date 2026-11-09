@@ -104,9 +104,9 @@ func _test_faith_and_levels() -> void:
 		var selected: Dictionary = _player.upgrade_levels.duplicate()
 		db.apply({"id": boons.back(), "rarity": 3}, _player)
 		_check(power.stats == before and _player.upgrade_levels == selected, "stale awakened boon cannot apply: " + god)
-		for title in ["", "chest", "quest"]:
+		for title in ["", "chest"]:
 			_game.queue_reward(title)
-			_check(_game.level_up_panel._offers.all(func(offer): return db.get_info(offer.id).kind != "boon"), "level / chest / quest excludes awakened boons: " + god)
+			_check(_game.level_up_panel._offers.all(func(offer): return db.get_info(offer.id).kind != "boon"), "level / chest excludes awakened boons: " + god)
 			_game.level_up_panel.choose(0)
 		for id: String in db.UPGRADES:
 			if db.UPGRADES[id].kind in ["stat", "weapon"]:
@@ -510,20 +510,13 @@ func _test_spawn_budget() -> void:
 	_game.spawn_enemy.call_deferred("nail_golem_small", Vector2.ZERO)
 	await process_frame
 	_check(get_node_count_in_group("enemies") == 350, "deferred split blocked at capacity")
-	var quest = load("res://scripts/quests/ice_warriors_quest.gd").new()
-	quest.player = _player
-	quest.game = _game
-	_game.add_child(quest)
-	quest._on_accept()
-	_check(quest._blocks.size() == 5 and get_node_count_in_group("enemies") == 355, "required quest targets bypass regular budget")
 	var boss = load("res://scripts/data/boss_db.gd").create("garm", 1.0)
 	boss.target = _player
 	boss.spawner = _game.spawn_enemy
 	_game.add_child(boss)
 	_check(boss._stakes.size() == 4, "Garm keeps all required stakes at capacity")
 	_clear_enemies()
-	quest.queue_free()
-	print("PASS regular, event, elite, split, quest and Boss spawning")
+	print("PASS regular, event, elite, split and Boss spawning")
 
 
 func _test_ending() -> void:

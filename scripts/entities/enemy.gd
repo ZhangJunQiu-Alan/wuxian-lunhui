@@ -45,7 +45,6 @@ var target: Player
 var gait := "walk"
 var attack_kind := "claw"
 var actions := ACTIONS  # 要找的动作帧条，Boss 有更多动作
-var flee_to := Vector2.INF  # 设置后不再追玩家，而是走向这里（支线「冰海来客」的霜巨人）
 var ghost := false  # 穿过其他敌人、冥河和物件
 var dodge := 0.0
 var split_into := ""
@@ -401,9 +400,7 @@ func _physics_process(delta: float) -> void:
 		var next := MapLayer.current.waypoint(global_position, target.global_position)
 		if next != target.global_position:
 			move = global_position.direction_to(next)
-	if flee_to.is_finite():
-		move = global_position.direction_to(flee_to)
-	elif behavior == "ranged":
+	if behavior == "ranged":
 		move = _ranged_move(dir, dist, delta)
 	elif behavior == "drain":
 		move = _drain_move(dir, dist, delta)

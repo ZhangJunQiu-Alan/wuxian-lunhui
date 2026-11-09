@@ -40,13 +40,12 @@ var rerolls := 0          # 本局还能重抽几次升级选项（主神空间�
 var revives := 0          # 本局还能复活几次（主神空间购买）
 var choice_count := 4     # 升级和选择信仰时的基础选项数
 var frenzy_time := 0.0    # 枪手「狂野西部秀」剩余时间
-var speed_mult := 1.0     # 支线临时改变的移速（寒潮里冻僵、搬运余烬）
 var shield_time := 0.0    # 无敌剩余时间（刺客「入阵曲」），和受伤后的无敌不同，不会闪烁
 var supply_guard_time := 0.0
 
 # 全局加成，所有武器和技能共享
 var damage_mult := 1.0
-var cooldown_mult := 1.0         # 所有攻击（永久强化「专注」、支线奖励）
+var cooldown_mult := 1.0         # 所有攻击（永久强化「专注」）
 var weapon_cooldown_mult := 1.0  # 只管基础武器（通用卡「急速」）
 var god_cooldown_mult := 1.0     # 只管神术（通用卡「冷却缩短」）
 var xp_mult := 1.0
@@ -161,8 +160,7 @@ func _physics_process(delta: float) -> void:
 	if _dash_t >= 0.0:
 		_update_dash(delta)
 	else:
-		var slowed := maxf(speed_mult, 1.0) if slow_immune else speed_mult
-		velocity = dir * move_speed * slowed * (1.3 if frenzy_time > 0.0 else 1.0)  # 狂野西部秀：移速 +30%
+		velocity = dir * move_speed * (1.3 if frenzy_time > 0.0 else 1.0)  # 狂野西部秀：移速 +30%
 		move_and_slide()
 		if _shove != Vector2.ZERO:
 			position += _shove * delta

@@ -32,8 +32,6 @@ func new_game(character):
 	root.get_node("Save").selected_level="midgard"
 	root.get_node("Save").selected_character=character
 	root.get_node("Save").stats.clears=1
-	root.get_node("Save").stats.quests_done=3
-	root.get_node("Save").unlocked_characters.assign(["mage"])
 	game=load("res://scripts/game.gd").new()
 	root.add_child(game)
 	current_scene=game

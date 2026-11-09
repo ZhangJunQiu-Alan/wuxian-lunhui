@@ -41,7 +41,6 @@ const DEATH_BOLT_PATH := "res://assets/sprites/effects/hel_death_bolt.png"
 const LIFE := Color(0.75, 0.85, 0.55)
 const DEATH := Color(0.45, 0.3, 0.6)
 
-var barrage_mult := 1.0  # 支线「指甲堆」完成后减少弹幕
 var _anchor := Vector2.ZERO
 var _cast_dir := Vector2.RIGHT
 var _switch_timer := SWITCH_EVERY
@@ -215,7 +214,7 @@ func _enter_phase2() -> void:
 
 
 func _barrage() -> void:
-	var count := maxi(3, roundi(BARRAGE_SHOTS * barrage_mult))
+	var count := maxi(3, BARRAGE_SHOTS)
 	_fan(global_position.direction_to(target.global_position), count, BARRAGE_SPREAD, BARRAGE_DAMAGE, BARRAGE_SPEED, _nail, Color(0.85, 0.8, 0.6))
 	play_once(&"attack")
 

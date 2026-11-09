@@ -478,7 +478,7 @@ func _check_thor() -> void:
 	if not is_instance_valid(target) or not game.has_method("confirm_fate"):
 		return
 	if thor_condition(target.faith.has("thor"), encounter_age) and game.confirm_fate("thor_saved"):
-		Audio.sfx("quest_done")
+		Audio.sfx("milestone")
 		game.hud.announce(tr("托尔挡下了毒液，没有倒下。他会在最终战中参战"))
 
 

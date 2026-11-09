@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>诸界余烬装备系统草案</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@600;900&family=Noto+Sans+SC:wght@400;500;700&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="toc" aria-label="目录">
+  <div class="wrap">
+    <a href="#rev"><b>00</b>意见对照</a>
+    <a href="#diagnosis"><b>01</b>诊断</a>
+    <a href="#market"><b>02</b>竞品图鉴</a>
+    <a href="#routes"><b>03</b>已定方向</a>
+    <a href="#design"><b>04</b>方案总览</a>
+    <a href="#drop-demo"><b>05</b>掉落与地图</a>
+    <a href="#gear"><b>06</b>武器与套装</a>
+    <a href="#bosses"><b>07</b>Boss 神器</a>
+    <a href="#simulator"><b>08</b>模拟器</a>
+    <a href="#economy"><b>09</b>养成与深度</a>
+    <a href="#roadmap"><b>10</b>接入路线</a>
+    <a href="#risks"><b>11</b>风险与待定</a>
+    <a href="#sources"><b>12</b>来源</a>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap">
+    <img class="hero-logo" src="img/logo.png" alt="诸界余烬">
+    <h1>装备系统草案 v4：让每一次击杀都可能有惊喜</h1>
+    <p class="lede">现在一局里小怪只掉经验，Boss 宝箱和升级是同一套选卡，局外只有一种货币。按团队意见重写：小怪掉金币和强化素材，精英和 Boss 掉装备（本职业武器或本关套装防具），Boss 神器单独判定；装备在局内、局外都能换；词头和词缀都有好有坏；按 M 能在地图上看到地上的掉落。</p>
+    <p class="thesis">选卡负责这一局怎么打，装备负责下一局为什么还要打。</p>
+    <div class="tiles">
+      <div class="tile"><div class="num">40 把</div><div class="lbl">四个职业各 10 把专属武器，每把改变攻击方式、特效和外观；枪手永远不会捡到剑</div></div>
+      <div class="tile"><div class="num">6 套</div><div class="lbl">每关两套防具；头盔、胸甲、护腿、鞋子凑齐同一套 4 件触发共鸣</div></div>
+      <div class="tile"><div class="num">≈1,300</div><div class="lbl">第一关首通的金币（存活 150 + Boss 550 + 通关 300 + 小怪金币约 300），用来买永久强化、强化装备、重铸词头</div></div>
+    </div>
+  </div>
+</header>
+
+<main>
+<!-- 团队意见对照 -->
+<section class="sec" id="rev" style="padding-top:36px">
+  <div class="wrap">
+    <div class="rev">
+      <h2>团队意见与草案的对应</h2>
+      <p class="muted small" style="margin-bottom:10px">左边是团队意见，右边是草案现在的做法和所在章节。带 <span class="badge-new" style="margin:0">v4</span> 的是这一轮定下来的。</p>
+      <div class="scroll-x"><table>
+        <thead><tr><th>团队意见</th><th>草案现在的做法</th><th>在哪</th></tr></thead>
+        <tbody>
+          <tr><td>武器强化卡先搁置，需要更深入地设计 <span class="badge-new">v4</span></td><td>列为 TODO 1，草案不再给方案</td><td class="where"><a href="#todo">11</a></td></tr>
+          <tr><td>武器外观直接做正式版，素材写清楚交给 Codex <span class="badge-new">v4</span></td><td>定为分层 + 挂点。Codex 任务书写好了：空手动作帧、挂点表、武器图、图标、特效、音效</td><td class="where"><a href="#weapon-look">06</a><a href="#art">10</a></td></tr>
+          <tr><td>补给去掉保底后可能荒，直接去掉 <span class="badge-new">v4</span></td><td>不留「首瓶保底」，也不用先试玩记录</td><td class="where"><a href="#supply">05</a></td></tr>
+          <tr><td>旧存档可以直接重置 <span class="badge-new">v4</span></td><td>VERSION 改成 6，读到旧版本存档直接换成新档，不做迁移</td><td class="where"><a href="#roadmap">10</a></td></tr>
+          <tr><td>死亡后行囊全部保留 <span class="badge-new">v4</span></td><td>死亡和通关一样，行囊全部带回</td><td class="where"><a href="#decided">11</a></td></tr>
+          <tr><td>不用管 15 分钟正式版节奏，多掉落也挺好 <span class="badge-new">v4</span></td><td>掉率不随时长调整</td><td class="where"><a href="#decided">11</a></td></tr>
+          <tr><td>幸运既乘掉率，也照选卡规则提高装备稀有度 <span class="badge-new">v4</span></td><td>精英的装备原本就按选卡公式；Boss 必掉的那件也加上幸运，模拟器已按新规则算</td><td class="where"><a href="#drop-rules">05</a></td></tr>
+          <tr><td>武器和套装效果要仔细审核 <span class="badge-new">v4</span></td><td>列为 TODO 2。审核完 Codex 再画武器图、防具图标和武器特效</td><td class="where"><a href="#todo">11</a></td></tr>
+          <tr><td>词缀也可以是坏的，比如泰拉瑞亚的减伤害</td><td>随机词缀里加入坏词缀（红字，例如「全伤害 -3%」）。每条词缀是坏词缀的几率：普通 35%、稀有 20%、史诗 10%，传说和神器不出。词头照旧有好有坏。普通装备改为 1 条词缀，这样也可能带坏词缀</td><td class="where"><a href="#prefix">04</a></td></tr>
+          <tr><td>精英和 Boss 掉的是装备，包含武器和防具</td><td>精英 40% 掉一件装备，Boss 必掉一件装备；两者都是 35% 本职业武器、65% 本关套装防具。Boss 神器仍然另外判定</td><td class="where"><a href="#drop-rules">05</a><a href="#bosses">07</a></td></tr>
+          <tr><td>武器外观业界怎么做，每把都重画角色动作帧太笨</td><td>业界一般把武器做成单独一层，挂在手上，用代码挥动。06 节列了四种做法、成本对比和动画示意</td><td class="where"><a href="#weapon-look">06</a></td></tr>
+          <tr><td>M 地图打开时暂停</td><td>按 M 暂停，和装备栏一样</td><td class="where"><a href="#map">05</a></td></tr>
+          <tr><td>蜜酒、聚魂磁石调到 1%，去掉保底</td><td>两者都改为每次击杀 1%，删除保底；冷却、首次出现时间、场上上限保留。守护符文没提到，保持原样</td><td class="where"><a href="#supply">05</a></td></tr>
+          <tr><td>结算统一改成金币；小怪 5% 掉金币，Boss 必掉；幸运乘法加成</td><td>「奖励点」全部改名「金币」。所有按几率的掉落都乘 (1 + 幸运 / 100)</td><td class="where"><a href="#drop-rules">05</a><a href="#economy">09</a></td></tr>
+          <tr><td>稀有度决定的是不同装备，还是不同属性？</td><td><b>决定属性。</b>款式和稀有度是两次独立的随机；神器是唯一的例外</td><td class="where"><a href="#q1">04</a></td></tr>
+          <tr><td>五档稀有度、掉落仪式、散落在地、名字直接显示、极品属性</td><td>保留五档和光柱；拾取不弹窗；极品★ 写在名字前</td><td class="where"><a href="#design">04</a><a href="#drop-demo">05</a></td></tr>
+          <tr><td>武器、头盔、胸甲、护腿、鞋子；后四件组成套装，四件共鸣</td><td>5 个部位；6 套防具，每关两套</td><td class="where"><a href="#sets">06</a></td></tr>
+          <tr><td>每个职业 10 把专属武器，改变特效、外观、攻击方式</td><td>40 把武器，每把有攻击方式、动画预览、可复用的现有特效和实现成本</td><td class="where"><a href="#weapons">06</a></td></tr>
+          <tr><td>小怪掉强化素材；拆装备也掉素材；图鉴收录解锁</td><td>小怪 1.5% 掉部位素材；分解返还该部位素材和余烬；第一次拿到某个款式点亮图鉴，之后可以定向打造</td><td class="where"><a href="#economy">09</a></td></tr>
+          <tr><td>局内拾取进行囊，随时换装；深度越深掉落越好</td><td>按 I 打开装备栏（暂停），换上立即生效；局外照常换。余烬深度表保留</td><td class="where"><a href="#routes">03</a><a href="#panel">05</a></td></tr>
+          <tr><td>不逐张鉴定；每个部位有专属素材，强化花「素材 + 余烬 + 金币」</td><td>属性捡到时就能看；五个部位各一种素材</td><td class="where"><a href="#economy">09</a></td></tr>
+          <tr><td>不做拾取过滤，局外统一分解；掉落不打断战斗</td><td>主神空间「统一分解」；神器掉落只在屏幕顶部播报</td><td class="where"><a href="#drop-demo">05</a><a href="#economy">09</a></td></tr>
+          <tr><td>传说概率带信仰词缀，神器必带；不做多神印效果</td><td>传说 30%、神器必带一条；没有按件数触发的效果</td><td class="where"><a href="#faith">06</a></td></tr>
+          <tr><td>Boss 神器独立判定，可以一次掉两件</td><td>神器和 Boss 必掉的那件装备分开判定</td><td class="where"><a href="#bosses">07</a></td></tr>
+        </tbody>
+      </table></div>
+      <div class="assume">
+        <b>还剩两条待办</b>（第 11 节）
+        <ul class="tight small" style="margin-top:4px">
+          <li>TODO 1 · 武器强化卡：换武器以后这些卡怎么算，需要深入设计。</li>
+          <li>TODO 2 · 你来审核 40 把武器的攻击效果和 6 套的共鸣效果。</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 01 -->
+<section class="sec" id="diagnosis">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">01 · 诊断</span>
+      <h2>为什么刷起来无聊</h2>
+      <p class="muted">下面四条都来自当前代码，描述的是现状。问题出在奖励的形状上：频繁，但每次都一样；有终点，但终点来得太快。</p>
+    </div>
+    <div class="grid g2">
+      <div class="card">
+        <h3>击杀的反馈只有一种</h3>
+        <p>小怪死亡只掉经验宝石，偶尔掉三种补给：蜜酒 2.5%、聚魂磁石 0.8%、守护符文 0.8%，还有冷却和场上上限。一局几百上千次击杀，手感几乎相同。</p>
+        <p class="evidence">scripts/data/supply_db.gd · RULES</p>
+      </div>
+      <div class="card">
+        <h3>Boss 宝箱和升级是同一套奖励</h3>
+        <p>击败非最终 Boss 掉宝箱，打开后仍然是「选择一项奖励」，用的还是升级卡池。打败一个 Boss 的回报，和捡够经验升一级差不多。</p>
+        <p class="evidence">scripts/game.gd · _on_boss_defeated → queue_reward</p>
+      </div>
+      <div class="card">
+        <h3>局外只有一条直线</h3>
+        <p>奖励点只能买 10 项永久强化，价格线性递增，总价 7,790。第一关首通约得 1,000 点（存活 150 + Boss 550 + 通关 300），通关约 8 次就能买满，之后再刷没有东西可买。第三关的命运奖励点目前配置为 0。</p>
+        <p class="evidence">scripts/data/meta_db.gd · UPGRADES；vigrid_tuning.gd · FATE_REWARD</p>
+      </div>
+      <div class="card">
+        <h3>重复刷同一关，变化只来自卡池</h3>
+        <p>每关从 1 级开始重新构筑。玩家能控制的开局变量只有「选哪个职业」，没有别的方式在开局就让这一局和上一局不同。</p>
+        <p class="evidence">docs/局内成长与关卡节奏.md · 单局与构筑</p>
+      </div>
+    </div>
+
+    <h3 style="margin:28px 0 10px">一局 10 分钟里的「惊喜时刻」对比（示意）</h3>
+    <div class="card tl">
+      <div id="tl-now"></div>
+      <div id="tl-gear" style="margin-top:6px"></div>
+      <div class="tl-legend">
+        <span><i style="background:#6b5d50"></i>升级选卡（可预期）</span>
+        <span><i style="background:var(--muted)"></i>精英</span>
+        <span><i style="background:var(--ember)"></i>Boss</span>
+        <span><i style="background:var(--r0)"></i><i style="background:var(--r1)"></i><i style="background:var(--r2)"></i><i style="background:var(--r3)"></i><i style="background:var(--r4)"></i>装备掉落（按稀有度）</span>
+      </div>
+      <p class="small muted" style="margin-top:8px">升级时间按「约 10:00 到 40 级」示意；精英按第一关每 40 秒一只。小怪不掉装备，装备只来自精英（40%）和 Boss（必掉一件装备 + 神器单独判定）；图中是第一关首通，三位 Boss 都是首杀。小怪的金币和素材很密，不算进「惊喜」。</p>
+    </div>
+  </div>
+</section>
+
+<!-- 02 -->
+<section class="sec" id="market">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">02 · 竞品图鉴</span>
+      <h2>15 款游戏，12 种装备设计模式</h2>
+      <p class="muted">泰拉瑞亚是词头和坏词缀的主要参考。点击模式标签，矩阵和下方卡片只突出用到这个模式的游戏。卡片里金色那一行是本草案借用的部分。</p>
+    </div>
+    <div class="chips" id="pattern-chips" role="group" aria-label="按设计模式筛选"></div>
+    <p class="pattern-desc" id="pattern-desc">选择一个模式查看说明。</p>
+    <div class="scroll-x"><table class="matrix" id="matrix"></table></div>
+    <div class="grid g3 games" id="games"></div>
+  </div>
+</section>
+
+<!-- 03 -->
+<section class="sec" id="routes">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">03 · 已定方向</span>
+      <h2>装备在局内捡、局内局外都能换</h2>
+      <p class="muted">v1 在这里比较了三条路线。团队意见定下来的是 A 和 B 的合体：像传奇一样在地上捡，像 Halls of Torment 一样当局就能用，但带出局的就是同一件，不需要「每局只能带一件」。三条原始路线留在下面作对照。</p>
+    </div>
+    <div class="grid g2">
+      <div class="card route rec">
+        <span class="stamp">已定</span>
+        <h3>局内掉落、随时换装、局外养成</h3>
+        <ul class="tight">
+          <li><b>局内掉落：</b>小怪掉金币和部位素材；精英概率掉装备；Boss 必掉金币和一件装备，专属神器另外判定。装备包括本职业武器和本关套装防具</li>
+          <li><b>拾取不打断：</b>走过去自动捡进行囊，名字在地上就显示，属性捡起时就能看，不再结算翻牌</li>
+          <li><b>随时换装：</b>按 I 打开装备栏，游戏暂停；换上的武器立即改变攻击方式，防具立即生效。按 M 看地图也暂停</li>
+          <li><b>局外养成：</b>主神空间换装、强化、重铸词头、统一分解、打造，图鉴记录收录进度</li>
+          <li><b>难度阶梯：</b>余烬深度越深，敌人越强，掉落越多越好</li>
+        </ul>
+      </div>
+      <div class="card route">
+        <h3>A · 传奇式：局外穿戴</h3>
+        <p class="small muted">参考：热血传奇、暗黑系列、Death Must Die</p>
+        <p>局内拾取进行囊，回主神空间穿戴。</p>
+        <p class="small"><b class="pfx-good">保留：</b>掉落有长期价值、地面掉落、难度阶梯</p>
+      </div>
+      <div class="card route">
+        <h3>B · Halls 式：局内即装</h3>
+        <p class="small muted">参考：Halls of Torment、Megabonk、雨中冒险 2</p>
+        <p>拾取后当局生效，死亡全丢，每局带出一件。</p>
+        <p class="small"><b class="pfx-good">保留：</b>当局就能用。<b class="pfx-bad">不要：</b>战斗中弹窗比较、带出一件的限制</p>
+      </div>
+      <div class="card route">
+        <h3>C · 图纸式：解锁扩池</h3>
+        <p class="small muted">参考：死亡细胞、Megabonk 的任务解锁</p>
+        <p>掉落的是图纸，解锁后进入以后的随机池。</p>
+        <p class="small"><b class="pfx-good">保留：</b>图鉴收录后可以定向打造</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 04 -->
+<section class="sec" id="design">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">04 · 方案总览</span>
+      <h2>一个循环、五个部位、五档稀有度</h2>
+      <p class="muted">系统暂名「余烬遗物」，取自标题：每个世界重置后，只有余烬能被林溯带出来。北欧篇里它们叫遗物，以后西游、封神篇可以叫法宝、灵宝，用同一套系统换一个掉落池。</p>
+    </div>
+
+    <div class="loop" aria-label="核心循环">
+      <div class="step"><img class="px" src="img/char_swordsman.png" alt=""><b>进关</b><span>选化身、关卡、余烬深度，穿好装备</span></div>
+      <div class="step"><img class="px" src="img/en_draugr_elite.png" alt=""><b>击杀掉落</b><span>小怪：金币、素材。精英：装备。Boss：金币、装备，神器另算</span></div>
+      <div class="step"><img class="px" src="img/pk_chest_closed.png" alt=""><b>走过即拾取</b><span>进行囊，不打断战斗；行囊满了，东西留在地上，M 地图上能看到</span></div>
+      <div class="step"><img class="px" src="img/pk_chest_open.png" alt=""><b>随时换装</b><span>按 I 打开装备栏，游戏暂停；新武器立即改变攻击方式</span></div>
+      <div class="step"><img class="px" src="img/pk_guard_rune.png" alt=""><b>主神空间</b><span>强化、重铸词头、统一分解、打造、图鉴</span></div>
+      <div class="step"><img class="px" src="img/pk_soul_magnet.png" alt=""><b>挑战更深</b><span>更高深度：敌人更强，掉落更好</span></div>
+    </div>
+
+    <h3 id="q1" style="margin:30px 0 10px">回答问题 1：稀有度决定的是什么？</h3>
+    <div class="answer">
+      <p><b class="big">决定属性，不决定装备。</b></p>
+      <p style="margin-top:6px">每次掉落分两步随机：先随机掉哪一件（哪把武器、哪套防具的哪个部位），再随机它的稀有度。同一把「霜牙」可以是白色，也可以是金色：攻击方式和外观永远一样，变的是词缀条数、好坏几率、数值高低。这和暗黑、泰拉瑞亚的做法一样。</p>
+      <p style="margin-top:6px"><b>唯一的例外是神器。</b>神器是固定的专属装备，比如海拉的「半面冠」，它只以神器这一档存在，有别的装备没有的专属效果。</p>
+    </div>
+    <div class="q1">
+      <div class="card">
+        <div class="q1-ctrl">
+          <label class="ctrl-inline" for="q1-base">款式
+            <select id="q1-base"></select>
+          </label>
+        </div>
+        <div class="q1-ctrl" id="q1-rar" role="group" aria-label="切换稀有度"></div>
+        <div id="q1-item"></div>
+        <p class="small muted" style="margin-top:8px">同一个随机种子，只换稀有度。注意名字、攻击方式不变，下面的行数和颜色在变。</p>
+      </div>
+      <div class="decide">
+        <div class="card"><h4>款式决定</h4>
+          <ul class="tight small">
+            <li>武器的攻击方式、特效、外观</li>
+            <li>防具属于哪一套，能不能凑共鸣</li>
+            <li>部位，以及该部位的固有属性</li>
+            <li>在哪一关掉落</li>
+            <li>图鉴里点亮哪一格</li>
+          </ul></div>
+        <div class="card"><h4>稀有度决定</h4>
+          <ul class="tight small">
+            <li>随机词缀条数：1 / 2 / 3 / 3</li>
+            <li>坏词缀、坏词头的几率（传说和神器不出坏的）</li>
+            <li>极品★ 的几率</li>
+            <li>传说、神器能否带信仰词缀</li>
+            <li>强化上限：+4 / +6 / +8 / +10</li>
+            <li>光柱高度、名字颜色、音效</li>
+            <li>分解得到多少素材和余烬</li>
+          </ul></div>
+      </div>
+    </div>
+
+    <div class="grid g2" style="margin-top:22px">
+      <div class="card">
+        <h3>五个部位</h3>
+        <div class="scroll-x" style="margin-top:8px"><table>
+          <thead><tr><th class="nowrap">部位</th><th>固有属性（Ⅰ阶）</th><th class="nowrap">专属强化素材</th><th>偏向的词缀</th></tr></thead>
+          <tbody id="slot-table"></tbody>
+        </table></div>
+        <p class="small muted" style="margin-top:8px">武器按职业区分，见第 06 节。v1 的项链、戒指去掉了，它们原来承担的幸运、经验词缀并到了头盔和鞋子上。</p>
+      </div>
+      <div class="card">
+        <h3>五档稀有度</h3>
+        <div class="scroll-x" style="margin-top:8px"><table>
+          <thead><tr><th class="nowrap">稀有度</th><th class="num nowrap">词缀</th><th class="num nowrap">每条坏词缀</th><th class="nowrap">坏 / 双刃 / 好词头</th><th class="num nowrap">极品★</th><th class="nowrap">信仰词缀</th><th class="num nowrap">强化上限</th></tr></thead>
+          <tbody id="rarity-table"></tbody>
+        </table></div>
+        <p class="small muted" style="margin-top:8px">前四档颜色沿用游戏卡牌，神器是新加的红色。</p>
+      </div>
+    </div>
+
+    <h3 id="prefix" style="margin:28px 0 10px">词头与词缀：都有好有坏（参考泰拉瑞亚）</h3>
+    <div class="grid g2">
+      <div class="card">
+        <p>泰拉瑞亚的武器和饰品会随机带一个「修饰语」，写在名字最前面：「传奇」「神级」是最好的，「破碎」「损坏」是坏的。哥布林工匠可以花钱「重铸」换一个，但不能去掉。</p>
+        <p>我们照这个做：<b>每件装备必定有一个词头</b>，词头是一组打包的属性，名字就是「词头 + 款式」，比如 <span class="r1">迅捷的霜牙</span>、<span class="r0">锈蚀的霜牙</span>。地上一看名字就知道好坏，正好配合「名字直接显示」。</p>
+      </div>
+      <div class="card">
+        <ul class="tight">
+          <li><span class="pfx-tag pfx-good">好</span>纯加成。顶级词头「神铸」「瓦尔哈拉」很少见</li>
+          <li><span class="pfx-tag pfx-mixed">双刃</span>大幅加一项、扣一项，比如「狂战」伤害 +20%、最大生命 -10%。好不好看打法</li>
+          <li><span class="pfx-tag pfx-bad">坏</span>纯减益。稀有度越高越少见，传说和神器不会出</li>
+        </ul>
+        <p class="small muted" style="margin-top:8px">随机词缀也可能是坏的，用红字和 ▼ 标出，例如「▼ 全伤害 -3%」。每条词缀是坏词缀的几率：普通 35%、稀有 20%、史诗 10%，传说和神器为 0。所以「传说以上不会有任何坏东西」，玩家好记。词头数值不随深度放大；重铸只换词头，随机词缀不动。</p>
+      </div>
+    </div>
+    <div class="grid g2" style="margin-top:14px">
+      <div class="card"><h3 style="font-size:16px">武器词头</h3><div class="scroll-x" style="margin-top:6px"><table><tbody id="pfx-weapon"></tbody></table></div></div>
+      <div class="card"><h3 style="font-size:16px">防具词头</h3><div class="scroll-x" style="margin-top:6px"><table><tbody id="pfx-armor"></tbody></table></div></div>
+    </div>
+
+    <div class="card" style="margin-top:14px">
+      <h3>好词缀：只用游戏已有的属性</h3>
+      <p class="muted small">右侧列出同名属性卡的普通档数值作对照：一条Ⅰ阶词缀约等于三分之一张普通卡。<b>极品★</b>：每条好词缀有几率数值 ×1.5，名字前多一颗星，地上就能看出来。这对应传奇的极品属性和暗黑 4 的巨型词缀。</p>
+      <div class="scroll-x" style="margin-top:10px"><table>
+        <thead><tr><th>词缀</th><th class="num">Ⅰ阶数值</th><th class="num">Ⅹ阶极品上限</th><th>可出现部位</th><th class="num">对照：普通属性卡</th></tr></thead>
+        <tbody id="affix-table"></tbody>
+      </table></div>
+    </div>
+    <div class="card" style="margin-top:14px">
+      <h3>坏词缀：同一批属性的减益</h3>
+      <p class="muted small">坏词缀的数值不随深度放大，也不会出极品，所以越往深处刷，坏词缀的相对影响越小。</p>
+      <div class="scroll-x" style="margin-top:10px"><table>
+        <thead><tr><th>坏词缀（Ⅰ阶范围）</th><th>可出现部位</th></tr></thead>
+        <tbody id="bad-affix-table"></tbody>
+      </table></div>
+    </div>
+  </div>
+</section>
+
+<!-- 05 -->
+<section class="sec" id="drop-demo">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">05 · 掉落与地图</span>
+      <h2>地上一闪、名字一亮，按 M 看全图</h2>
+      <p class="muted">传奇最让人上头的不是数值，而是爆出来的那一下。光柱、名字颜色、音效按稀有度分级，玩家扫一眼就知道该不该跑过去。所有掉落都不打断战斗。</p>
+    </div>
+
+    <h3 id="drop-rules" style="margin-bottom:10px">谁掉什么</h3>
+    <div class="scroll-x"><table>
+      <thead><tr><th>来源</th><th>掉落</th><th class="num">几率（Ⅰ阶）</th><th>说明</th></tr></thead>
+      <tbody id="drop-table"></tbody>
+    </table></div>
+    <div class="callout" style="margin-top:12px">
+      <b>幸运管两件事（团队已定）：</b>
+      <ul class="tight" style="margin:6px 0">
+        <li><b>掉率：</b><span class="mono">实际几率 = 基础几率 × 深度掉率 × (1 + 幸运 / 100)</span>。例如幸运 20 时，小怪掉金币从 5% 变成 6%。</li>
+        <li><b>装备稀有度：</b>和选卡同一条公式（<span class="code">upgrade_db.gd</span> 的 <span class="code">roll_rarity</span>），稀有以上的权重乘「(高档合计 + 加成) / 高档合计」，普通补足剩下的。精英的装备从选卡的 60 / 28 / 10 / 2 起算，加成是战斗分钟 × 2 + 深度 + 幸运；Boss 必掉的那件从稀有 50 / 史诗 38 / 传说 12 起算，幸运放大史诗和传说。例如幸运 20 时，这件的传说从 12% 变成 16.8%。</li>
+      </ul>
+      幸运来自现有的「幸运」属性卡（3 / 4.5 / 6.5 / 9）和永久强化「命运的偏爱」（每级 +2），装备上也能出幸运词缀和「受眷」词头。Boss 必掉的金币和装备件数不受幸运影响。
+    </div>
+
+    <h3 id="supply" style="margin:24px 0 10px">补给调整</h3>
+    <div class="scroll-x"><table>
+      <thead><tr><th>补给</th><th>现在</th><th>改为</th><th>保留不变</th></tr></thead>
+      <tbody id="supply-table"></tbody>
+    </table></div>
+    <p class="small muted" style="margin-top:6px">按每秒约 2 次击杀估算，蜜酒平均间隔从约 55 秒变为约 85 秒，聚魂磁石反而略多。开局 2 分钟击杀少，第一瓶蜜酒可能 2–3 分钟才出；团队已确认直接去掉保底，不留「首瓶保底」。代码改动：<span class="code">supply_db.gd</span> 改 chance，<span class="code">supply_drops.gd</span> 第 33 行的保底判断去掉。</p>
+
+    <h3 style="margin:24px 0 10px">掉落演示</h3>
+    <div class="demo">
+      <canvas id="demo-canvas" width="880" height="300" aria-label="掉落演示：清一波怪后地面出现金币、素材和带光柱的装备"></canvas>
+      <div class="demo-bar">
+        <button class="btn primary" id="demo-wave" type="button">清一波怪</button>
+        <button class="btn" id="demo-boss" type="button">击败海拉</button>
+        <button class="btn" id="demo-pick" type="button">走过去拾取</button>
+        <span class="small muted">演示掉率已放大；精英必掉装备</span>
+      </div>
+      <div class="demo-log" id="demo-log"><span class="muted">拾取记录会显示在这里。</span></div>
+    </div>
+    <div class="scroll-x" style="margin-top:14px"><table>
+      <thead><tr><th>稀有度</th><th>光柱</th><th>名字与提示</th><th>音效</th><th>打断战斗</th></tr></thead>
+      <tbody>
+        <tr><td class="r0 rar-name">普通</td><td><span class="beam-sw" style="height:4px;background:var(--r0)"></span>无，地面小光点</td><td>白字</td><td>轻「叮」</td><td>否</td></tr>
+        <tr><td class="r1 rar-name">稀有</td><td><span class="beam-sw" style="height:12px;background:var(--r1)"></span>短光柱</td><td>蓝字</td><td>清脆</td><td>否</td></tr>
+        <tr><td class="r2 rar-name">史诗</td><td><span class="beam-sw" style="height:20px;background:var(--r2)"></span>中光柱 + 地面光圈</td><td>紫字</td><td>低沉钟声</td><td>否</td></tr>
+        <tr><td class="r3 rar-name">传说</td><td><span class="beam-sw" style="height:28px;background:var(--r3)"></span>高光柱 + 上升粒子</td><td>金字停留 2 秒，屏幕边缘金光</td><td>号角</td><td>否</td></tr>
+        <tr><td class="r4 rar-name">神器</td><td><span class="beam-sw" style="height:36px;background:var(--r4)"></span>红金光柱 + 脉冲光环</td><td>屏幕顶部播报 Boss 名与神器名，2 秒后消失</td><td>专属音效</td><td>否（v1 的「立即佩戴」弹窗删除）</td></tr>
+      </tbody>
+    </table></div>
+    <p class="small muted" style="margin-top:6px">极品★ 装备的名字前加一颗星，并在光柱顶端多一个闪点，不论稀有度。</p>
+
+    <h3 id="panel" style="margin:28px 0 10px">装备栏：按 I 打开，游戏暂停</h3>
+    <div class="grid g2">
+      <div class="panel-mock" id="panel-mock" aria-label="装备栏示意"></div>
+      <div class="card">
+        <ul class="tight">
+          <li>行囊局内 30 格。捡到的新装备右上角标「新」，悬停显示和当前穿戴的对比，绿色箭头是提升。</li>
+          <li>换武器立即生效：攻击方式、刀光、手上的武器一起换。本局已经选过的武器强化卡怎么算，还在设计（第 11 节 TODO 1）。</li>
+          <li>死亡和通关一样，行囊全部带回（团队已定）。</li>
+          <li>行囊满了，新装备留在地上不消失，M 地图上能看到。可以在装备栏里就地分解腾位置。</li>
+          <li>不做拾取过滤。普通装备在局外用「统一分解」一次清掉。</li>
+          <li>按键：现在用到 WASD、空格（闪现）、E（大招）、Esc、1–4、R，I 和 M 都空着。</li>
+        </ul>
+      </div>
+    </div>
+
+    <h3 id="map" style="margin:28px 0 10px">M 地图：区域名与地上的掉落（打开时暂停）</h3>
+    <div class="map-wrap">
+      <canvas id="map-canvas" width="640" height="640" aria-label="M 地图演示：关卡地标、区域名和地上的装备位置"></canvas>
+      <div class="map-side">
+        <label class="ctrl" for="map-level">关卡
+          <select id="map-level">
+            <option value="midgard">第一关 · 芬布尔之冬</option>
+            <option value="helheim">第二关 · 亡者之船</option>
+            <option value="vigrid">第三关 · 最后之战</option>
+          </select>
+        </label>
+        <div style="display:flex;flex-wrap:wrap;gap:6px">
+          <button class="btn sm" id="map-scatter" type="button">再打一会儿</button>
+          <label class="check"><input type="checkbox" id="map-small"> 显示金币与素材</label>
+        </div>
+        <div class="map-tip" id="map-tip">把鼠标移到菱形上，查看地上是什么。</div>
+        <div style="display:grid;gap:4px" id="map-legend"></div>
+        <p class="small muted">区域名和坐标直接取自 <span class="code">level_db.gd</span> 的 <span class="code">map.landmarks</span>，地图不需要另配数据。按 M 打开时游戏暂停（团队已定），和装备栏用同一套暂停逻辑。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 06 -->
+<section class="sec" id="gear">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">06 · 武器与套装</span>
+      <h2>40 把职业武器、6 套防具、8 种信仰词缀</h2>
+      <p class="muted">武器决定这一局怎么打，套装决定要不要为了第 4 件反复刷同一关。精英和 Boss 掉的武器只会是当前职业的，枪手不会捡到剑。</p>
+    </div>
+
+    <h3 id="weapons" style="margin-bottom:10px">职业武器 <span class="tag-todo">待审核 · TODO 2</span></h3>
+    <div class="callout" style="margin-bottom:12px"><b>这份名单正在重做：</b>40 把武器、6 套防具、词头和词缀都在单独的设计稿里重新设计（每把武器一条独有规则，出处不限北欧），定稿后替换这里的表格和预览。设计稿：<a href="https://claude.ai/artifact/9RVzroeDyBuYErDCYNThLt">武器、套装、词头与词缀设计稿</a>。</div>
+    <p class="muted small" style="margin-bottom:10px;max-width:76ch">每关掉自己那几把：第一关 4 把，第二关 3 把，第三关 3 把，想要哪把就去刷哪关。武器之间是横向选择，伤害、间隔、范围此消彼长，强弱靠稀有度和词缀拉开。预览是示意动画，标注了可以复用的现有特效素材，以及要改参数还是要写新代码。</p>
+    <div class="w-tabs" id="w-tabs" role="group" aria-label="选择职业"></div>
+    <div class="w-layout">
+      <div class="w-list" id="w-list"></div>
+      <div class="w-detail">
+        <canvas id="w-canvas" width="440" height="240" aria-label="武器攻击方式预览"></canvas>
+        <div class="body" id="w-body"></div>
+      </div>
+    </div>
+
+    <h3 id="weapon-look" style="margin:30px 0 10px">武器外观：已定分层 + 挂点</h3>
+    <p class="muted small" style="margin-bottom:10px;max-width:76ch">现在武器画在角色的动作条里：每帧 64×64，待机、移动、攻击、受伤、死亡加起来剑士 24 帧、枪手 22 帧、刺客 24 帧、法师 22 帧，共 92 帧。如果每把武器都重画一遍，40 把约 920 帧，确实不合理，业界一般也不这么做。常见的是下面四种，团队定了第一种，一开始就做。</p>
+    <div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(420px,1fr))">
+      <div class="card route rec" style="grid-column:auto"><span class="stamp">已定</span>
+        <h3>分层 + 挂点</h3>
+        <p class="small muted">泰拉瑞亚、暗黑破坏神 II</p>
+        <p>身体只画一套动作帧，武器单独一层。每帧记下手在哪、朝哪，武器图挂在那个点上，挥砍、突刺靠代码转动。</p>
+        <p class="small">泰拉瑞亚的手持物品是单独的绘制层，挥动方式是内置的几种（挥砍、突刺等），一把新武器通常只要一张物品图。暗黑破坏神 II 的角色由头、躯干、手、盾等部件拼成，动作按武器类别各做一套，同类武器共用动作，只换手上那一层。</p>
+        <p class="small"><b class="pfx-good">对我们：</b>四个职业的动作帧都已经画好，只要把武器拆出来、每帧标好手的位置，之后每把武器画一张手持图和一张图标。</p>
+      </div>
+      <div class="card route">
+        <h3>骨骼动画换挂件</h3>
+        <p class="small muted">Spine 等骨骼动画工具</p>
+        <p>角色拆成骨骼和贴图，武器是挂在手骨上的一张图，换装备只换挂件，一套动画服务所有武器。</p>
+        <p class="small"><b class="pfx-bad">对我们：</b>现有角色是逐帧像素动画，改骨骼等于重做角色美术。</p>
+      </div>
+      <div class="card route">
+        <h3>3D 渲染成像素</h3>
+        <p class="small muted">死亡细胞</p>
+        <p>在 3DS Max 里建模、做动画，用自研工具批量渲染成像素帧；加装备改模型后重新导出。</p>
+        <p class="small"><b class="pfx-bad">对我们：</b>要建 3D 管线和工具，和现有手绘流程不兼容。</p>
+      </div>
+      <div class="card route">
+        <h3>手上不显示武器</h3>
+        <p class="small muted">吸血鬼幸存者这类游戏的常见做法</p>
+        <p>人物图固定，武器只体现在攻击特效、图标和装备栏大图上。</p>
+        <p class="small"><b class="pfx-bad">对我们：</b>不用改角色帧，但玩家看不出手上换了武器。团队决定不走这条。</p>
+      </div>
+    </div>
+    <div class="demo" style="margin-top:14px">
+      <canvas id="look-canvas" width="640" height="220" aria-label="分层加挂点示意：同一套身体动作，换不同武器图"></canvas>
+      <div class="demo-bar">
+        <button class="btn primary" id="look-next" type="button">四个职业各换一把</button>
+        <span class="small muted">示意：身体动作不变，只换手上那张武器图；橙色小框是手部挂点。这里用代码摆动武器，正式版按挂点表逐帧摆放。</span>
+      </div>
+    </div>
+    <div class="scroll-x" style="margin-top:14px"><table>
+      <thead><tr><th>做法</th><th>一次性工作</th><th>每加一把武器</th><th class="num nowrap">合计</th></tr></thead>
+      <tbody>
+        <tr><td>每把武器重画角色帧</td><td>—</td><td>该职业全部动作帧（22–24 帧）</td><td class="num nowrap">约 920 帧（40 把）</td></tr>
+        <tr><td><b>分层 + 挂点</b>（已定）</td><td>92 帧改成空手版，每帧标挂点（位置、角度、在身体前还是后、拿在手上还是收起）；4 把初始武器从现有帧里拆成单独的图</td><td>1 张手持图 + 1 张 32×32 图标；剑士、枪手再加 1 张收起时的图（刀鞘、枪套或背在身后）</td><td class="num nowrap">92 帧 + 约 120 张小图</td></tr>
+      </tbody>
+    </table></div>
+    <p class="small muted" style="margin-top:6px">小图按 48 把算：40 把专属、4 把初始、炎剑余烬 4 种形态，包括手持图、收起图和图标。</p>
+    <div class="callout" style="margin-top:12px">
+      <b>落到 Godot：</b>在 <span class="code">player.gd</span> 的动作精灵 <span class="code">_actions</span>（AnimatedSprite2D）下面加武器层（<span class="code">Sprite2D</span>，刺客多一个副手层）。每次换帧按 <span class="code">&lt;角色&gt;_sockets.json</span> 摆放：位置、角度、在身体前还是后、拿在手上还是收起。攻击动作本来就是逐帧画好的，武器跟着手走，不需要另写挥动代码；刀光仍由特效层负责。现在朝左是用 <span class="code">flip_h</span> 翻身体，武器层要由代码镜像位置和角度；闪现残影也要带上武器层。大招特写立绘不受影响。<br>
+      <b>美术：</b>全部交给 Codex，任务书是 <span class="code">docs/Codex_装备系统美术任务.md</span>。验收办法是「空手帧 + 初始武器 + 挂点表」合成回去，要和现在的动作条看起来一样。
+    </div>
+
+    <h3 id="sets" style="margin:30px 0 10px">套装：同一套 4 件 = 共鸣 <span class="tag-todo">待审核 · TODO 2</span></h3>
+    <p class="muted small" style="margin-bottom:10px;max-width:76ch">每关两套，各四件。精英和 Boss 掉的防具从本关两套里随机，所以想凑哪套就刷哪关。没有 2 件效果，只有 4 件共鸣，规则一句话说得清。神器防具不属于任何套装：穿上它就要放弃那一套的共鸣，这是故意留的取舍。</p>
+    <div class="grid g3w" id="set-grid"></div>
+
+    <h3 id="faith" style="margin:30px 0 10px">信仰词缀：一件装备、一位神、一条效果</h3>
+    <p class="muted small" style="margin-bottom:10px;max-width:76ch">传说装备有 30% 几率带一条信仰词缀，神器必定带一条。效果只看这一件，不按件数触发门槛：v1 的 2 枚、4 枚神印和融合预兆全部删除。同一位神的多条词缀，伤害数值相加；「必定出现在候选里」不重复生效。</p>
+    <div class="god-row" id="god-row" role="group" aria-label="选择神明"></div>
+    <div class="god-detail card" id="god-detail"></div>
+  </div>
+</section>
+
+<!-- 07 -->
+<section class="sec" id="bosses">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">07 · Boss 神器</span>
+      <h2>九位 Boss，九件专属神器，单独判定</h2>
+      <p class="muted">这是解决「刷得没方向」的关键：想要海拉的半面冠，就去刷第二关。规则参考怪物猎人的素材打造和最后纪元的预言，并加了保底。</p>
+    </div>
+    <div class="callout" style="margin-bottom:14px">
+      <b>每次击败 Boss</b>
+      <ul class="tight" style="margin-top:4px">
+        <li>必掉：一堆金币（数额等于现在的 Boss 奖励点）、一件装备（本职业武器或本关套装防具，稀有以上）、一个该 Boss 的素材</li>
+        <li><b>专属神器另外判定</b>，和上面那件装备互不影响，所以一次可能掉两件装备，地上两道光柱</li>
+        <li>首杀必掉神器；之后基础 12%，余烬深度每高一级 +3%，乘幸运；每次没掉 +8%，第 8 次必出</li>
+        <li>攒 5 个同一 Boss 的素材，加 100 余烬、500 金币，可以直接打造它的神器。最坏情况 5 次一定拿到</li>
+        <li>神器效果固定，另带词头（只出好的）、2 条随机词缀和 1 条信仰词缀</li>
+      </ul>
+    </div>
+    <div class="grid g3w" id="boss-grid"></div>
+
+    <h3 style="margin:28px 0 10px">命运神器：第三关的三条命运也有掉落</h3>
+    <p class="muted small" style="margin-bottom:10px;max-width:72ch">第三关的命运奖励点目前配置为 0，这里改成掉神器。部位改成五个以后，原稿的项链和武器改了形态，改动写在每张卡的最后一行。</p>
+    <div class="grid g3w" id="fate-grid"></div>
+
+    <h3 style="margin:28px 0 10px">展品标签（示例文案）</h3>
+    <p class="muted small" style="margin-bottom:10px;max-width:72ch">世界观里主神空间是一座博物馆。每件神器在图鉴里配一张馆藏标签，收集本身就成了叙事。以下文案只是示例。</p>
+    <div class="label-card">
+      <div class="no">馆藏编号 N1-HEL-06 · 赫尔海姆展厅</div>
+      <h4>半面冠</h4>
+      <p>一半是活人的面容，一半是朽骨。守墓人的记录里写着：戴过它的见证者，每次重置后都会多记得一点死亡的感觉。</p>
+    </div>
+  </div>
+</section>
+
+<!-- 08 -->
+<section class="sec" id="simulator">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">08 · 掉落模拟器</span>
+      <h2>模拟一局能刷出什么</h2>
+      <p class="muted">按草案的掉率规则跑一局。点「装备」穿到右侧人物身上，点「分解」换素材和余烬；穿上的装备可以强化、重铸词头。页面打开时已经替你跑完了第一关首通。每局击杀数是假设值，可以用存档里「累计击杀 ÷ 轮回次数」校准。</p>
+    </div>
+    <div class="sim">
+      <div class="sim-controls">
+        <label class="ctrl" for="s-level">关卡
+          <select id="s-level">
+            <option value="midgard">第一关 · 芬布尔之冬</option>
+            <option value="helheim">第二关 · 亡者之船</option>
+            <option value="vigrid">第三关 · 最后之战</option>
+          </select>
+        </label>
+        <label class="ctrl" for="s-class">化身
+          <select id="s-class">
+            <option value="swordsman">剑士</option>
+            <option value="gunslinger">枪手</option>
+            <option value="assassin">刺客</option>
+            <option value="mage">法师</option>
+          </select>
+        </label>
+        <label class="ctrl" for="s-depth">余烬深度 <output id="o-depth">Ⅰ</output>
+          <input type="range" id="s-depth" min="1" max="10" value="1">
+        </label>
+        <label class="ctrl" for="s-kills">每局击杀（假设）<output id="o-kills">1200</output>
+          <input type="range" id="s-kills" min="400" max="2400" step="100" value="1200">
+        </label>
+        <label class="ctrl" for="s-luck">局内幸运（卡牌 + 永久强化）<output id="o-luck">0</output>
+          <input type="range" id="s-luck" min="0" max="40" step="1" value="0">
+        </label>
+      </div>
+      <div class="sim-actions">
+        <button class="btn primary" id="s-run" type="button">再刷一局</button>
+        <button class="btn" id="s-run10" type="button">连刷 10 局</button>
+        <label class="ctrl-inline" for="s-bulk">统一分解
+          <select id="s-bulk"><option value="0">普通</option><option value="1">稀有及以下</option><option value="2">史诗及以下</option></select>
+        </label>
+        <button class="btn" id="s-bulk-go" type="button">分解</button>
+        <button class="btn" id="s-reset" type="button">清空模拟存档</button>
+        <span class="toast" id="s-toast" role="status"></span>
+      </div>
+      <div class="sim-body">
+        <div class="sim-col">
+          <div class="summary" id="s-summary"></div>
+          <div class="drops" id="s-drops"></div>
+        </div>
+        <div class="sim-col">
+          <div class="doll5" id="s-doll"></div>
+          <div class="detail-panel" id="s-wallet"></div>
+          <div>
+            <h3 style="font-size:16px;margin-bottom:6px">装备属性合计</h3>
+            <div class="statlist" id="s-stats"></div>
+          </div>
+          <div>
+            <h3 style="font-size:16px;margin-bottom:6px">套装与信仰词缀</h3>
+            <div class="res-list" id="s-res"></div>
+          </div>
+          <div>
+            <h3 style="font-size:16px;margin-bottom:6px">本关神器保底与 Boss 素材</h3>
+            <div class="pity" id="s-pity"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 09 -->
+<section class="sec" id="economy">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">09 · 养成与深度</span>
+      <h2>三种消耗，把重复掉落变成进度</h2>
+      <p class="muted">金币取代奖励点，既买永久强化，也付强化和重铸，买满永久强化之后金币仍然有用。余烬来自分解。五个部位各有一种专属素材，来自小怪掉落和分解同部位的装备。</p>
+    </div>
+    <div class="scroll-x"><table>
+      <thead><tr><th>资源</th><th>从哪来</th><th>花在哪</th></tr></thead>
+      <tbody id="res-table"></tbody>
+    </table></div>
+
+    <div class="grid" style="margin-top:14px;grid-template-columns:repeat(auto-fit,minmax(420px,1fr))">
+      <div class="card" style="grid-column:1/-1">
+        <h3>强化 +1 ~ +10</h3>
+        <p class="small muted">每级固有属性 +10%。失败只扣材料，不降级、不碎装。上限按稀有度：普通 +4、稀有 +6、史诗 +8、传说和神器 +10。</p>
+        <div class="scroll-x" style="margin-top:8px"><table>
+          <thead><tr><th>目标</th><th class="num">素材</th><th class="num">余烬</th><th class="num">金币</th><th class="num">成功率</th></tr></thead>
+          <tbody id="enh-table"></tbody>
+        </table></div>
+        <p class="small muted" style="margin-top:8px">用模拟器在第一关连刷 10 局、统一分解史诗以下，大约得到金币 13,000、余烬 500、每种防具素材 45–75、武器素材约 110（武器只有一个部位，分解下来都算它的）。所以余烬最紧：一件装备强化到 +7 大约 5 局，到 +10 大约 20 局。武器素材富余是有意的，方便多养几把武器换着玩。</p>
+      </div>
+      <div class="card">
+        <h3>重铸词头</h3>
+        <p>只花金币，重随这件装备的词头，随机词缀不动。和泰拉瑞亚的哥布林工匠一样不限次数。</p>
+        <p class="small muted" id="reforge-cost"></p>
+        <h3 style="margin-top:14px">分解</h3>
+        <p>返还该部位素材和余烬；强化过的再返还一半投入的素材。</p>
+        <p class="small muted" id="salv-line"></p>
+        <h3 style="margin-top:14px">统一分解</h3>
+        <p>主神空间里勾选「普通」「稀有及以下」等一键分解。穿着的、上锁的、本局刚收录的不会被分解。</p>
+      </div>
+      <div class="card">
+        <h3>图鉴收录</h3>
+        <p>图鉴新增「遗物」分类：40 把职业武器 + 6 套 × 4 件防具 + 12 件神器，共 76 格。第一次拿到某个款式就点亮，配上展品标签。</p>
+        <p class="small muted">每点亮 10 格奖励 300 金币。</p>
+        <h3 style="margin-top:14px">打造</h3>
+        <p><b>定向打造：</b>已点亮的款式 + 该部位素材 10 + 余烬 60 + 金币 300，稀有度按 Boss 必掉装备的表随机。</p>
+        <p><b>神器打造：</b>5 个同一 Boss 的素材 + 100 余烬 + 500 金币。</p>
+      </div>
+    </div>
+
+    <h3 style="margin:28px 0 10px">余烬深度：装备的用武之地</h3>
+    <p class="muted small" style="max-width:72ch;margin-bottom:10px">没有难度阶梯，装备只会把第一关打穿。深度借鉴暗黑 3 的折磨难度和哈迪斯的热度：通关当前深度的任意一关，解锁下一级。敌人倍率乘在现有的 <span class="code">enemy_hp_scale()</span> 和 <span class="code">enemy_damage_scale()</span> 上。下表和模拟器用同一套公式。</p>
+    <div class="scroll-x"><table>
+      <thead><tr><th>深度</th><th class="num">敌人生命</th><th class="num">敌人伤害</th><th class="num">词缀数值</th><th class="num">掉率</th><th class="num">金币</th><th class="num">稀有以上权重</th><th class="num">神器基础率</th><th>解锁</th></tr></thead>
+      <tbody id="depth-table"></tbody>
+    </table></div>
+  </div>
+</section>
+
+<!-- 10 -->
+<section class="sec" id="roadmap">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">10 · 接入路线</span>
+      <h2>六步接入，武器层可以先做</h2>
+      <p class="muted">每一步都能单独试玩验证。接入点都是仓库里已有的函数和数据表，新系统沿用 SupplyDB、MetaDB 的常量字典写法。规模用 S / M / L 粗估，不代表具体工期。</p>
+    </div>
+    <div class="grid">
+      <div class="card phase"><span class="tag">P0 · S</span><div><h3>补给、金币、幸运（可以马上做）</h3>
+        <p><code>supply_db.gd</code>：蜜酒、聚魂磁石 chance 改 0.01；<code>supply_drops.gd</code> 第 33–34 行去掉保底判断（守护符文保留则按种类判断）。<code>game.gd</code> 的 <code>reward_points</code> / <code>add_reward_points</code> 改名金币，存档字段 <code>reward_points</code> 改成 <code>gold</code>，<code>save_data.gd</code> 的 VERSION 从 5 改成 6，读到旧版本存档直接重置成新档（团队已定，不做迁移）；所有显示「奖励点 +N」的提示文字改成「金币 +N」；<code>meta_db.gd</code> 价格不变，单位改金币。新增 <code>Game.drop_chance(base)</code> 统一乘深度和 <code>player.luck</code>。</p>
+        <p class="small muted">验收：用旧存档启动不报错，得到一个全新存档；游戏里不再出现「奖励点」三个字。</p></div></div>
+      <div class="card phase"><span class="tag">W · M</span><div><h3>武器层（Codex 交了剑士样张就能做，不依赖其他步骤）</h3>
+        <p><code>player.gd</code>：读 <code>&lt;角色&gt;_bare_*.png</code> 空手动作条和 <code>&lt;角色&gt;_sockets.json</code> 挂点表；<code>_actions</code> 下面加武器层，<code>frame_changed</code> 时按挂点摆放；朝左时镜像；<code>_spawn_ghost</code> 的残影带上武器层。没有空手素材的角色继续用现在的动作条。</p>
+        <p class="small muted">验收：只拿初始武器时，实机截图和现在看起来一样；换成任意一把武器图，四个动作都不穿帮。</p></div></div>
+      <div class="card phase"><span class="tag">P1 · M</span><div><h3>数据层与存档</h3>
+        <p>新建 <code>scripts/data/gear_db.gd</code>：部位、稀有度、词头、词缀、40 把武器、6 套、12 件神器、掉落规则。<code>save_data.gd</code> 增加 <code>gear_bag</code>、<code>equipped</code>、<code>embers</code>、<code>materials</code>、<code>boss_materials</code>、<code>boss_kills</code>、<code>gear_codex</code>，都带默认值。如果 P0 已经单独发布，这里 VERSION 再 +1，旧存档同样直接重置。</p>
+        <p class="small muted">验收：新字段能存能读；旧版本存档直接重置，不报错。</p></div></div>
+      <div class="card phase"><span class="tag">P2 · M</span><div><h3>局内掉落、拾取与 M 地图</h3>
+        <p>在 <code>Game._on_enemy_killed</code> 后照 <code>SupplyDrops</code> 的写法加 <code>GearDrops</code>：小怪判定金币、素材；<code>enemy.elite</code> 判定装备；<code>_on_boss_defeated</code> 追加金币、一件装备、Boss 素材，神器单独判定。新建 <code>scripts/entities/gear_drop.gd</code>，照 <code>RunSupply</code> 的拾取距离、<code>_draw()</code> 画光柱和名字；装备不设存在时间，行囊满时留在地上。M 地图是新的界面层，打开时照 <code>pause_menu.gd</code> 用 <code>get_tree().paused</code> 暂停，读 <code>level_data.map.landmarks</code> 和地上的掉落列表。</p>
+        <p class="small muted">验收：一局的掉落数量和稀有度分布接近模拟器；同屏 200 敌人时帧率不下降（参照 docs/战斗逻辑与性能回归.md）。</p></div></div>
+      <div class="card phase"><span class="tag">P3 · L</span><div><h3>装备栏与武器改造（最大的一步）</h3>
+        <p>装备栏照 <code>pause_menu.gd</code> 用 <code>get_tree().paused</code> 暂停；穿脱时重新计算玩家属性（加一个 <code>GearDB.apply / unapply</code>，不能只在开局调用一次）。四个武器脚本（<code>katana.gd</code>、<code>revolver.gd</code>、<code>twin_blades.gd</code>、<code>arcane_nova.gd</code>）改为读取武器定义：扇形角度、射程、间隔、弹数、扩散、穿透、地面效果等变成参数。40 把里约一半只改参数，另一半（居合、鱼叉、回旋刃、射线、环绕等）要写新的攻击逻辑。</p>
+        <p class="small muted">验收：局内换武器后攻击方式和手上的武器立即改变；每把武器各有一个回归用例。武器强化卡怎么处理等 TODO 1 定了再做。</p></div></div>
+      <div class="card phase"><span class="tag">P4 · M</span><div><h3>主神空间养成</h3>
+        <p><code>scripts/ui/hub.gd</code> 新增「行囊」页：五格人物框、穿戴、强化、重铸、统一分解、打造；<code>codex_db.gd</code> 的 CATEGORIES 加 <code>"gear"</code>「遗物」。</p>
+        <p class="small muted">验收：强化失败不降级；统一分解不碰穿着和上锁的装备。</p></div></div>
+      <div class="card phase"><span class="tag">P5 · L</span><div><h3>神器、套装共鸣、信仰词缀、余烬深度</h3>
+        <p>9 件 Boss 神器、3 件命运神器分别接入玩家、武器和 Boss 脚本；6 个套装共鸣效果；信仰词缀的「必定出现在候选里」接入 <code>upgrade_db.gd</code> 的选神候选。关卡选择加深度，倍率乘在 <code>enemy_hp_scale()</code> 和 <code>enemy_damage_scale()</code> 上。</p>
+        <p class="small muted">验收：深度 Ⅰ 与当前难度一致；深度 Ⅴ 用中等装备可以通关（需试玩调参）。</p></div></div>
+    </div>
+
+    <h3 id="art" style="margin:28px 0 10px">美术与音频需求：全部交给 Codex</h3>
+    <p class="small muted" style="margin-bottom:10px;max-width:76ch">任务书 <span class="code">docs/Codex_装备系统美术任务.md</span> 写了背景、文件名、尺寸、挂点表格式和验收办法，按 <span class="code">docs/美术素材规范.md</span> 的老规矩：先交剑士样张，接进游戏实测通过再批量做。</p>
+    <div class="scroll-x"><table>
+      <thead><tr><th>任务</th><th>素材</th><th class="nowrap">数量</th><th>规格</th><th class="nowrap">开工</th></tr></thead>
+      <tbody>
+        <tr><td class="nowrap">S-ART-01</td><td>空手动作条 + 挂点表；4 把初始武器拆成单独的手持图（太刀、左轮带收起图）</td><td class="nowrap">92 帧、4 表、6 图</td><td>和现有动作条同尺寸、同帧数；挂点是 JSON</td><td>现在</td></tr>
+        <tr><td class="nowrap">S-ART-02</td><td>武器手持图、收起图、图标</td><td class="nowrap">手持 44<br>收起 22<br>图标 48</td><td>40 把专属武器 + 炎剑余烬 4 种形态；剑士、枪手每把加 1 张收起图；图标 32×32，含 4 把初始武器</td><td class="nowrap">TODO 2 之后</td></tr>
+        <tr><td class="nowrap">S-ART-03</td><td>防具与神器图标</td><td class="nowrap">35</td><td>32×32；24 件套装 + 8 件 Boss 神器防具 + 3 件命运神器</td><td class="nowrap">TODO 2 之后</td></tr>
+        <tr><td class="nowrap">S-ART-04</td><td>素材与货币图标</td><td class="nowrap">15</td><td>24×24；金币、余烬、5 种部位素材、8 种 Boss 素材（芬里尔的复用格莱普尼尔碎片）</td><td>现在</td></tr>
+        <tr><td class="nowrap">S-ART-05</td><td>武器攻击特效</td><td class="nowrap">23</td><td>另外 17 把复用现有特效改色，第 06 节每把都标了</td><td class="nowrap">TODO 2 之后</td></tr>
+        <tr><td class="nowrap">S-SFX-01</td><td>音效</td><td class="nowrap">10</td><td>掉落 5 档、金币、强化成功、强化失败、分解、换装</td><td>现在</td></tr>
+        <tr><td class="nowrap">—</td><td>光柱、M 地图、装备栏界面</td><td>—</td><td>代码绘制，沿用暂停菜单的面板样式，不交美术</td><td>—</td></tr>
+      </tbody>
+    </table></div>
+  </div>
+</section>
+
+<!-- 11 -->
+<section class="sec" id="risks">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">11 · 风险与待定</span>
+      <h2>容易踩的坑、已拍板的决定和剩下的待办</h2>
+      <p class="muted">上一版的四个待拍板这一轮都定了，记在风险表下面。还剩两条待办：武器强化卡（TODO 1）和武器、套装效果审核（TODO 2）。</p>
+    </div>
+    <div class="scroll-x"><table class="risk">
+      <thead><tr><th>风险</th><th>表现</th><th>对策</th></tr></thead>
+      <tbody>
+        <tr><td><span class="sev" style="background:var(--bad)"></span>武器强化卡不兼容</td><td>现有卡「太刀·回身斩」「左轮·双枪」「双刃·三连刺」「新星·回响」是为初始武器写的。换成鱼叉枪后「双枪」是什么意思？</td><td><b>搁置，见 TODO 1。</b>上一版的思路（伤害、间隔、范围卡对任何武器都生效；专属卡由每把武器声明含义，或移出卡池）只作参考</td></tr>
+        <tr><td><span class="sev" style="background:var(--r3)"></span>武器外观的美术量</td><td>武器画在角色的动作帧里，每把重画要约 920 帧</td><td><b>已定：</b>直接做分层 + 挂点。一次性改 92 帧并标挂点，之后每把 1 张手持图 + 1 张图标（剑士、枪手再加 1 张收起图），素材交 Codex（第 06 节）</td></tr>
+        <tr><td><span class="sev" style="background:var(--r3)"></span>武器层错位</td><td>挂点不准时武器飘在手外；朝左翻转后位置、角度不对；闪现残影没有武器</td><td>挂点从原动作帧里武器的位置量出来，用「空手帧 + 初始武器 = 原帧」验收；翻转和残影由代码统一处理（第 10 节 W）</td></tr>
+        <tr><td><span class="sev" style="background:var(--bad)"></span>数值膨胀</td><td>穿满装备后第一关变成割草，Boss 机制被跳过</td><td>装备强度和余烬深度绑定；Ⅰ阶词缀约等于三分之一张普通卡；武器之间横向平衡，强弱靠稀有度</td></tr>
+        <tr><td><span class="sev" style="background:var(--r3)"></span>局内换装状态出错</td><td>换装时生命上限、移速、攻击计时器算错，或者暂停中换武器后冷却被重置</td><td>属性一律「先减旧、再加新」；武器冷却按比例继承；P3 每把武器单独回归</td></tr>
+        <tr><td><span class="sev" style="background:var(--r3)"></span>刷不到</td><td>想要的神器连续十次不掉；想要的武器总不出</td><td>神器：首杀必掉、第 8 次必出、5 个 Boss 素材直接打造。武器：点亮图鉴后定向打造</td></tr>
+        <tr><td><span class="sev" style="background:var(--r3)"></span>行囊负担</td><td>不做过滤，每局结束整理一堆普通装备</td><td>小怪不掉装备，一局约十件；统一分解；新装备标「新」并显示对比</td></tr>
+        <tr><td><span class="sev" style="background:var(--r3)"></span>坏词缀劝退</td><td>普通、稀有装备经常带红字，玩家觉得「掉的都是垃圾」</td><td>坏词缀只在史诗以下出，数值不随深度放大；传说以上保证干净；分解照样给素材</td></tr>
+        <tr><td><span class="sev" style="background:var(--r1)"></span>存档兼容</td><td>奖励点改名金币、新增装备字段后，旧存档结构对不上</td><td><b>已定：</b>VERSION 改成 6，读到旧版本直接重置成新档，不做迁移；新字段带默认值</td></tr>
+        <tr><td><span class="sev" style="background:var(--r1)"></span>构筑固化</td><td>信仰词缀让每局都走同一位神</td><td>只保证出现在候选里，不强制选；不改质变、觉醒门槛</td></tr>
+      </tbody>
+    </table></div>
+
+    <h3 id="decided" style="margin:24px 0 10px">已拍板</h3>
+    <div class="scroll-x"><table>
+      <thead><tr><th>问题</th><th>决定</th><th>对草案的影响</th></tr></thead>
+      <tbody>
+        <tr><td>死亡后行囊怎么处理</td><td><b>全部保留</b>。单机不惩罚死亡，而且局内就能穿，捡到的东西已经用上了</td><td>死亡和通关一样带回行囊</td></tr>
+        <tr><td>武器外观走哪条路</td><td><b>一开始就做分层 + 挂点</b>，外观一步到位</td><td>第一版要等 Codex 的空手帧和挂点表；接入路线多了独立的一步 W</td></tr>
+        <tr><td>和 15 分钟正式版节奏怎么对齐</td><td><b>不用管</b>，时长变长、掉得多也挺好</td><td>掉率按每次击杀、每只精英设定，不随时长调整</td></tr>
+        <tr><td>幸运影响什么</td><td><b>既乘掉率，也照选卡规则提高装备稀有度</b>，玩家只需要理解「幸运 = 运气好」</td><td>Boss 必掉的那件也按幸运提高史诗、传说几率（第 05 节公式）</td></tr>
+        <tr><td>去掉保底后补给会不会荒</td><td><b>直接去掉</b>，不留首瓶保底，也不用先试玩记录</td><td>风险表删除这一条</td></tr>
+        <tr><td>存档兼容</td><td><b>旧存档直接重置</b></td><td>不写迁移代码</td></tr>
+      </tbody>
+    </table></div>
+
+    <h3 id="todo" style="margin:24px 0 10px">待办</h3>
+    <div class="grid g2">
+      <div class="card todo-card"><h3>TODO 1 · 武器强化卡（搁置，需要深入设计）</h3>
+        <p class="small">现有武器卡都是为初始武器写的（<span class="code">upgrade_db.gd</span> 第 34–58 行）：</p>
+        <ul class="tight small">
+          <li>剑士 6 张：太刀·锋利、居合、长刃、回身斩、震退、断筋</li>
+          <li>枪手 5 张：左轮·重弹、快拔、扩容、穿甲、双枪</li>
+          <li>刺客 4 张：双刃·淬锋、疾袭、突进、三连刺</li>
+          <li>法师 4 张：新星·增幅、吟唱、扩散、回响</li>
+        </ul>
+        <p class="small">要想清楚的问题：换成别的武器后这些卡还算不算；新武器要不要有自己的卡；局内换武器时已选的卡怎么办；卡名里的「太刀」「左轮」怎么改。</p>
+        <p class="small muted">影响：P3 的武器改造要等它。定下来之前可以先做 W 武器层、P1 数据层和 P2 掉落。</p></div>
+      <div class="card todo-card"><h3>TODO 2 · 审核武器和套装效果（你来审）</h3>
+        <ul class="tight small">
+          <li>40 把专属武器：第 06 节每把的「攻击方式」和预览动画。</li>
+          <li>6 套防具：第 06 节每套的 4 件共鸣效果。</li>
+        </ul>
+        <p class="small">已经开了单独的设计稿重新设计：<a href="https://claude.ai/artifact/9RVzroeDyBuYErDCYNThLt">武器、套装、词头与词缀设计稿</a>。你在设计稿里评论或改字，定稿后我改 <span class="code">data.js</span>，页面、模拟器和 Codex 任务书里的表一起更新。</p>
+        <p class="small muted">影响：Codex 的 S-ART-02 武器图、S-ART-03 防具图标、S-ART-05 武器特效等审核完再开工。S-ART-01 空手帧和挂点、S-ART-04 素材图标、音效不受影响，可以先做。</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 12 -->
+<section class="sec" id="sources">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">12 · 来源</span>
+      <h2>参考资料</h2>
+      <p class="muted small">较新的游戏机制查了攻略站、wiki 和官方补丁说明，部分页面年份较早，具体数值以游戏当前版本为准。热血传奇、流放之路、怪物猎人、雨中冒险 2、无主之地、原神的机制属于常见资料，未逐条引用。本游戏的数据全部来自当前仓库代码和 docs/ 文档。</p>
+    </div>
+    <ol class="sources small">
+      <li><a href="https://terraria.wiki.gg/wiki/Modifiers">Modifiers · Terraria Wiki</a></li>
+      <li><a href="https://terraria.wiki.gg/wiki/Reforge">Reforge · Terraria Wiki</a></li>
+      <li><a href="https://terraria.wiki.gg/wiki/Use_Style_IDs">Use Style IDs · Terraria Wiki</a></li>
+      <li><a href="https://www.github.com/OpenDiablo2/cof/blob/main/weapon_class.go">OpenDiablo2 · COF weapon class</a></li>
+      <li><a href="https://galacean.antgroup.com/engine/en/docs/graphics/2D/spine/overview">Spine overview · Galacean Engine</a></li>
+      <li><a href="https://80.lv/articles/case-study-dead-cells-character-art-pipeline/">Case Study: Dead Cells Character Art Pipeline · 80.lv</a></li>
+      <li><a href="https://classic.battle.net/diablo2exp/items/sets/basics.shtml">Set Items Basics · Diablo II（Blizzard Classic）</a></li>
+      <li><a href="https://www.purediablo.com/d2wiki/Set">Set · The Diablo 2 Wiki</a></li>
+      <li><a href="https://primagames.com/gaming/how-to-keep-items-permanently-in-halls-of-torment">How to keep items permanently in Halls of Torment · Prima Games</a></li>
+      <li><a href="https://thenerdstash.com/how-to-get-items-in-halls-of-torment">How to get items in Halls of Torment · The Nerd Stash</a></li>
+      <li><a href="https://gamesfuze.com/guides/death-must-die-complete-loot-guide/">Death Must Die complete loot guide · Games Fuze</a></li>
+      <li><a href="https://charlieintel.com/diablo/diablo-4-tempering-masterworking-explained-how-to-upgrade-gear-312734">Diablo 4 Tempering &amp; Masterworking explained · Charlie Intel</a></li>
+      <li><a href="https://www.icy-veins.com/d4/news/diablo-4-season-4-loot-reborn-patch-notes/">Diablo 4 Season 4: Loot Reborn Patch Notes · Icy Veins</a></li>
+      <li><a href="https://www.icy-veins.com/d4/news/all-legendary-aspects-extract-directly-to-codex-in-diablo-4-season-4/">All Legendary Aspects Extract Directly to Codex · Icy Veins</a></li>
+      <li><a href="https://maxroll.gg/last-epoch/resources/understanding-maxroll-loot-filters">Understanding Maxroll loot filters (Last Epoch) · Maxroll</a></li>
+      <li><a href="https://icy-veins.com/last-epoch/trade-and-item-factions-overview">Last Epoch Trade and Item Factions Overview · Icy Veins</a></li>
+      <li><a href="https://afkgaming.com/gaming/general/last-epoch-what-is-legendary-potential-and-how-does-it-affect-crafting">Last Epoch: What is Legendary Potential · AFK Gaming</a></li>
+      <li><a href="https://deadcells.wiki.gg/wiki/Blueprint">Blueprint · Dead Cells Wiki</a></li>
+      <li><a href="https://progameguides.com/megabonk/how-to-unlock-all-items-in-megabonk/">How to Unlock All Items in Megabonk · Pro Game Guides</a></li>
+      <li><a href="https://commonsensegamer.com/megabonk-items/">Megabonk complete loot list · Common Sense Gamer</a></li>
+      <li><a href="https://maxroll.gg/hades-2/guides/hades-2-keepsake-guide">Hades 2 Keepsake Guide · Maxroll</a></li>
+      <li><a href="https://www.18183.com/cq/3815586.html">传奇爆装备玩家经验谈 · 18183</a></li>
+    </ol>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">诸界余烬 · 装备系统草案 v4 · 2026-11-06 · 仅供团队讨论，数值均为初始建议，需试玩调参。</div>
+</footer>
+
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

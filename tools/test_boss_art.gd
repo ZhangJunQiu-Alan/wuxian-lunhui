@@ -13,7 +13,7 @@ func check(ok, label, actual = null):
 	checks.append({"pass": bool(ok), "label": label, "actual": actual})
 	print("PASS " if ok else "FAIL ", label, " ", actual if actual != null else "")
 
-func spawn_capture(id, at, elite = false, quest = false):
+func spawn_capture(id, at, elite = false, required = false):
 	calls.append({"id": id, "at": [at.x, at.y]})
 	var enemy = load("res://scripts/entities/enemy.gd").new()
 	enemy.setup(id, 1.0, elite)
@@ -58,28 +58,10 @@ func run():
 	player.gods.clear()
 	var plan = JSON.parse_string(FileAccess.get_file_as_string("res://assets/source/taskH0_critical_2026-10-19/records/plan_all_H.json"))
 	for a in plan:
+		if a.target.contains("thokk"):
+			continue  # 女巨人的素材已经删除
 		var texture = load("res://" + a.target)
 		check(texture is Texture2D and texture.get_width() == a.w * a.frames and texture.get_height() == a.h, "Godot loads " + a.id)
-	for elite in [false, true]:
-		var e = spawn_capture("thokk", Vector2(300, 0), elite)
-		var anim = e._actions
-		check(anim != null, "thokk actual Enemy loader " + str(elite))
-		check(anim.sprite_frames.get_frame_count("move") == 6 and anim.sprite_frames.get_frame_count("attack") == 4, "thokk frame counts " + str(elite))
-		check(anim.sprite_frames.get_animation_speed("move") == 8 and anim.sprite_frames.get_animation_speed("attack") == 16, "thokk speeds " + str(elite))
-		check(anim.sprite_frames.get_animation_loop("move") and not anim.sprite_frames.get_animation_loop("attack"), "thokk loop flags " + str(elite))
-		var expected = 1.2 if elite else 1.0
-		check(is_equal_approx(anim.scale.x, expected), "thokk actual scale " + str(elite), anim.scale.x)
-		observations["thokk_elite" if elite else "thokk_normal"] = {"scale": anim.scale.x, "canvas_height": 96 * anim.scale.y, "offset": [anim.offset.x, anim.offset.y], "position": [anim.position.x, anim.position.y], "centered": anim.centered, "opaque_foot_relative_to_enemy": anim.position.y + (anim.offset.y + 92 - (48 if anim.centered else 0)) * anim.scale.y, "radius": e.radius}
-		anim.process_mode = Node.PROCESS_MODE_ALWAYS
-		anim.play("move")
-		var f = anim.frame
-		await create_timer(0.16).timeout
-		check(anim.frame != f, "thokk movement playback " + str(elite))
-		e._play_attack_frames()
-		check(anim.animation == &"attack", "thokk actual attack trigger " + str(elite))
-		await create_timer(0.29).timeout
-		check(anim.animation == &"move", "thokk attack completes and returns " + str(elite))
-		e.free()
 	var skoll = boss("skoll")
 	await process_frame
 	skoll.hp = skoll.max_hp * 0.49
@@ -312,19 +294,6 @@ func run():
 	var waves = game.get_children().filter(func(n):return n.get_script() == load("res://scripts/bosses/shockwave.gd"))
 	check(waves.size() == 2 and not hrym._second_stomp, "hrym phase two emits two separate waves")
 	check(waves[0].gaps != waves[1].gaps, "hrym second wave has newly warned gaps")
-	var quest = load("res://scripts/quests/thokk_quest.gd").new()
-	quest.game = game
-	quest.player = player
-	quest.landmark = {"pos":Vector2(300, -340)}
-	game.add_child(quest)
-	player.position = quest.marker_pos
-	quest._process(0)
-	check(quest.state == "active" and quest._giant.type_id == "thokk" and quest._giant._actions != null, "hidden quest accepts and loads actual elite thokk")
-	var first_giant = quest._giant
-	first_giant.take_damage(100000)
-	check(quest._fleeing and quest._giant != first_giant and quest._giant._actions != null, "hidden quest fleeing replacement retains thokk actions")
-	quest._giant.take_damage(100000)
-	check(quest.state == "done", "hidden quest second defeat completes and cleans up")
 
 	var failures = checks.filter(func(c): return not c.pass)
 	var out = {"engine": Engine.get_version_info(), "scope": "current integrated code: automated loading, gameplay boundary and effect lifecycle assertions", "checks": checks, "count": checks.size(), "failures": failures.size(), "observations": observations, "visual_acceptance": "separate rendered encounter review"}

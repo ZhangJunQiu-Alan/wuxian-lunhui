@@ -360,3 +360,10 @@ R末轮修订：补画哈提透明层，仅参考项目hati.png和本批绘画�
 Qwen3-TTS-12Hz-1.7B-VoiceDesign 官方模型 https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-VoiceDesign 标注 Apache-2.0；MLX Community 4bit 转换 https://huggingface.co/mlx-community/Qwen3-TTS-12Hz-1.7B-VoiceDesign-4bit 同为 Apache-2.0。推理 MLX-Audio https://github.com/Blaizzy/mlx-audio 为 MIT。制作前核验允许商业使用并保存官方模型卡、许可证、来源链接。使用文字设计的原创英语叙述者，不上传或克隆演员/第三方录音；免费公开权重在本机运行，无账号、付款或收费API。候选、实际英文、表演指令、参数和原始WAV保存于 taskR_prologue_sample_2026-10-21/english_revision/。开工与技术检查不表示主观听感通过。
 
 R英语旁白机器转录复核：Whisper原作 https://github.com/openai/whisper 为MIT，所用MLX转换 https://huggingface.co/mlx-community/whisper-base.en-asr-6bit 模型卡标注Apache-2.0；MLX-Audio沿用MIT。仅本地转录自产语音，核对是否漏句或增词，不代替人的听感、专名发音与表演验收；不将ASR模型打包入游戏。
+
+## 2026-11-06 剑士武器美术 S–SW
+
+| 文件 / 范围 | 来源与工具 | 授权 / 所有权 | 来源链接 | 日期与凭证 |
+| --- | --- | --- | --- | --- |
+| `source/taskS_swordsman_weapons_2026-11-06/originals/` 11 张概念图 | OpenAI 内置图像生成，以本项目任务书中的传说兵器描述为依据 | 沿用项目既有 AI 生成素材登记。在双方之间且在适用法律允许范围内，输出归用户。发布披露按素材规范执行 | [OpenAI 使用条款](https://openai.com/policies/terms-of-use/) | 2026-11-06。逐张提示词见本批 `records/concept-prompts.json` |
+| S–SW 正式 PNG、可编辑 Aseprite、WAV | 本项目像素重绘与本地合成。空手身体、旧太刀拆层及地块预览使用本项目已有素材；音效由本地波形合成 | 原创和既有项目资产衍生，原有资产授权沿用其登记 | — | 2026-11-06。制作源和文件 SHA256 见本批 `records/` |

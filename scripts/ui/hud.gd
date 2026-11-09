@@ -26,10 +26,6 @@ var _ult_label: Label
 var _announce: Label
 var _cutin: UltCutin
 var _fps_label: Label
-var _quest_box: VBoxContainer
-var _quest_rows: Array[Array] = []  # 每个支线一组：[标题, 目标, 计时]
-var _clue_label: Label
-var _pointer: QuestPointer
 var _boss_box: VBoxContainer
 var _boss_name: Label
 var _boss_bar: ProgressBar
@@ -141,39 +137,6 @@ func _ready() -> void:
 	_cutin = UltCutin.new()
 	add_child(_cutin)
 
-	# 右侧：支线任务面板
-	_quest_box = VBoxContainer.new()
-	_quest_box.set_anchors_and_offsets_preset(Control.PRESET_TOP_RIGHT)
-	_quest_box.offset_left = -356
-	_quest_box.offset_right = -16
-	_quest_box.offset_top = 250
-	_quest_box.visible = false
-	add_child(_quest_box)
-	for i in 2:  # 主神发布的一个 + 隐藏的一个
-		var title := Label.new()
-		title.add_theme_font_size_override("font_size", 18)
-		var timer := Label.new()
-		timer.modulate = Color(1, 1, 1, 0.7)
-		var row: Array[Label] = [title, Label.new(), timer]
-		if i > 0:  # 和上一个支线隔开一点
-			title.custom_minimum_size.y = 34
-			title.vertical_alignment = VERTICAL_ALIGNMENT_BOTTOM
-		_quest_rows.append(row)
-	_clue_label = Label.new()
-	_clue_label.modulate = Color(1, 1, 1, 0.55)
-	_clue_label.custom_minimum_size.y = 34
-	_clue_label.vertical_alignment = VERTICAL_ALIGNMENT_BOTTOM
-	for label: Label in _quest_rows[0] + _quest_rows[1] + [_clue_label]:
-		label.horizontal_alignment = HORIZONTAL_ALIGNMENT_RIGHT
-		label.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART  # 文字长时换行，不伸出屏幕
-		label.add_theme_constant_override("outline_size", 4)
-		label.add_theme_color_override("font_outline_color", Color(0, 0, 0, 0.8))
-		_quest_box.add_child(label)
-
-	_pointer = QuestPointer.new()
-	add_child(_pointer)
-
-
 
 func _make_label(pos: Vector2) -> Label:
 	var label := Label.new()
@@ -207,8 +170,6 @@ func set_ult(energy: float, cost: float) -> void:
 	_ult_label.modulate = Color(1.0, 0.85, 0.3) if is_full else Color(1, 1, 1, 0.6)
 
 
-
-
 func show_boss(boss_name: String, title: String, max_hp: float) -> void:
 	_boss_name.text = "%s · %s" % [boss_name, title]
 	_boss_bar.max_value = max_hp
@@ -223,36 +184,6 @@ func set_boss_hp(hp: float, max_hp: float) -> void:
 
 func hide_boss() -> void:
 	_boss_box.visible = false
-
-
-
-## 支线任务面板和指向箭头，每帧由 game.gd 更新。clues 是还没发现的隐藏支线的提示
-func show_quests(quests: Array[SideQuest], clues: Array[String]) -> void:
-	_quest_box.visible = not quests.is_empty() or not clues.is_empty()
-	_pointer.targets = []
-	for i in _quest_rows.size():
-		var row: Array = _quest_rows[i]
-		for label: Label in row:
-			label.visible = i < quests.size()
-		if i >= quests.size():
-			continue
-		var quest := quests[i]
-		row[0].text = (tr("隐藏支线 · ") if quest.is_hidden else tr("支线剧情 · ")) + quest.title
-		row[0].modulate = quest.color
-		row[1].text = quest.objective
-		if quest.state == "active":
-			row[2].text = tr("剩余 %d 秒") % ceili(quest.time_left)
-		else:
-			row[2].text = tr("标记 %d 秒后消失") % ceili(quest._offer_left)
-		for target in quest.pointer_targets():
-			_pointer.targets.append([target, quest.color])
-	_clue_label.visible = not clues.is_empty()
-	_clue_label.text = "\n".join(clues.map(func(clue: String) -> String: return tr("线索：") + clue))
-
-
-func hide_quest() -> void:
-	_quest_box.visible = false
-	_pointer.targets = []
 
 
 ## 大招特写
@@ -502,7 +433,7 @@ func _mini_card(art: String, title: String, line: String, color: Color, awakened
 	return card
 
 
-## 右栏：用时、等级、击杀；支线；奖励
+## 右栏：用时、等级、击杀；命运；奖励
 func _numbers_column(run: Dictionary) -> Control:
 	var box := VBoxContainer.new()
 	box.size_flags_horizontal = Control.SIZE_EXPAND_FILL
@@ -513,12 +444,6 @@ func _numbers_column(run: Dictionary) -> Control:
 		_stat_tile(tr("等级"), str(run.level), Color.WHITE),
 		_count_up(_stat_tile(tr("击杀"), "", Color.WHITE), run.kills, "%d"),
 	]))
-	if run.get("has_quests", true):
-		box.add_child(_rule())
-		box.add_child(_tile_row([
-			_stat_tile(tr("支线完成"), "%d / %d" % [run.quests_done, run.quests_seen], Color(0.75, 0.9, 1.0)),
-			_stat_tile(tr("发现隐藏支线"), "%d / %d" % [run.hidden_found, run.hidden_total], Color(0.88, 0.75, 1.0)),
-		]))
 	if run.has("fates"):  # 第 3 关：改写的命运
 		box.add_child(_rule())
 		var fates: Dictionary = run.fates
@@ -531,7 +456,6 @@ func _numbers_column(run: Dictionary) -> Control:
 	box.add_child(_rule())
 	box.add_child(_tile_row([
 		_count_up(_stat_tile(tr("奖励点"), "", GOLD, tr("累计 %d") % run.reward_total), run.reward_points, "+%d"),
-		_count_up(_stat_tile(tr("支线剧情点"), "", Color(0.88, 0.75, 1.0), tr("累计 %d") % run.story_total), run.story_points, "+%d"),
 	]))
 	return box
 

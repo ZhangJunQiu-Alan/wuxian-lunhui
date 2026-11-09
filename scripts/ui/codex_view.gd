@@ -200,8 +200,6 @@ func _count_text(count: int) -> String:
 			return tr("击杀 %d") % count
 		"bosses":
 			return tr("击败 %d 次") % count if count > 0 else tr("遭遇过，还没有击败")
-		"quests":
-			return tr("完成 %d 次") % count if count > 0 else tr("接受过，还没有完成")
 	return tr("选择过 %d 次") % count
 
 
@@ -223,14 +221,6 @@ func _sections(category: String) -> Array:
 				for row: Array in CodexDB.BOSSES[level]:
 					items.append(_item(category, row[0], tr(row[1]), tr(row[2]), tr(row[3]), tr(row[4]),
 						"res://assets/sprites/bosses/" + (row[5] if row.size() > 5 else row[0]), Color(1.0, 0.45, 0.4), "还没有遇到过。"))
-				sections.append({"title": tr(LevelDB.NAMES[level]), "items": items})
-		"quests":
-			for level: String in CodexDB.QUESTS:
-				var items := []
-				for row: Array in CodexDB.QUESTS[level]:
-					var hidden: bool = row[3]
-					items.append(_item(category, row[0], tr(row[1]), tr("隐藏支线") if hidden else tr("支线剧情"), tr(row[2]), "",
-						"", Color(0.75, 0.6, 1.0) if hidden else GOLD, "还没有发现。"))
 				sections.append({"title": tr(LevelDB.NAMES[level]), "items": items})
 		"upgrades":
 			for id: String in CharacterDB.ALL:

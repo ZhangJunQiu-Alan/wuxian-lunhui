@@ -1,23 +1,49 @@
 # 文档入口
 
-2026-10-20整理。先用下列四份文档查看进度与分工，避免把历史制作规格当成新任务。
+游戏名「诸界余烬」，Godot 4 / GDScript，Mac 开发、导出 Windows。三关（北欧篇章）、四个角色、八位神都已做完。
 
-| 用途 | 文档 |
+| 想看什么 | 文档 |
 | --- | --- |
-| 已完成任务的精简汇总、数量与证据 | [已完成任务汇总](已完成任务汇总.md) |
-| 当前待办及待验收事项 | [未完成任务清单](未完成任务清单.md) |
-| Claude负责第三关代码的完整交接 | [第三关代码交接](第三关代码交接_Claude.md) |
-| 直接发给Claude的任务Prompt | [Claude开发Prompt](Claude_第三关开发Prompt.md) |
-| 素材工作当前入口与质量规则 | [Codex美术任务书](Codex美术任务书.md) |
-| J/K/L当前范围与历史规格入口 | [美术后续任务要求](美术后续任务要求.md) |
-| 历史规格、阶段与状态快照 | [归档索引](archive/README.md) |
-| 开发路线及项目结构 | [开发路线图](开发路线图.md) |
-| 当前等级、经验、选神及关卡节奏 | [局内成长与关卡节奏](局内成长与关卡节奏.md) |
-| 信仰系统设计及实现边界 | [信仰系统设计](信仰系统设计.md) |
-| 格式、尺寸、命名、来源规范 | [美术素材规范](美术素材规范.md) |
-| 世界、Boss与剧情 | [世界观设定](世界观设定.md) |
-| 角色与大招设定 | [角色设定](角色设定.md) |
-| 已有地图布局 | [第1关](地图设计_第1关.md)、[第2关](地图设计_第2关.md) |
-| 战斗回归证据 | [战斗逻辑与性能回归](战斗逻辑与性能回归.md) |
+| 还要做什么 | [待办](待办.md) |
+| 世界、剧情、Boss | [世界观设定](世界观设定.md)、小说[《第零号展品》](小说_第零号展品.md) |
+| 四个角色和大招 | [角色设定](角色设定.md) |
+| 等级、经验、关卡节奏、八神、融合技 | [局内成长与信仰](局内成长与信仰.md) |
+| 三关地图 | [地图设计](地图设计.md) |
+| 全部内容一张图 | [游戏思维导图](游戏思维导图/诸界余烬_交互思维导图.html) |
+| 装备系统 | [设计稿](https://claude.ai/artifact/9RVzroeDyBuYErDCYNThLt)（武器、套装、词头、词缀），[草案](装备系统草案/index.html)（整体框架） |
+| 素材格式和交付规则 | [美术素材规范](美术素材规范.md) |
+| 给 Codex 的任务 | [剑士武器](Codex_剑士武器美术任务.md)、[装备系统其他素材](Codex_装备系统美术任务.md) |
 
-代码基准：40级、最多4位神、1/5/10/15级选神。K素材制作已完成，第三关代码仍待实施。文件、自检、接入、受控运行、完整通关和发布分别记录；历史资料中的“未提交/未完成”只描述当时状态。
+数值以代码为准；文档和代码不一致时改文档。
+
+## 项目结构
+
+```text
+project.godot          项目配置
+scenes/                标题、主神空间（hub）、战斗（main）
+scripts/core/          存档 save_data.gd、设置 settings.gd、音频 audio.gd
+scripts/game.gd        战斗总控：刷怪、计时、结算
+scripts/data/          数据表：角色、神明、升级卡、敌人、关卡、第三关数值
+scripts/entities/      玩家、敌人、拾取物
+scripts/weapons/       四个角色的基础武器
+scripts/gods/          八神神术、质变、觉醒
+scripts/ultimates/     四个大招
+scripts/bosses/        Boss（boss.gd 是基类）
+scripts/world/         三关地图、第三关战场事件
+scripts/effects/       特效
+scripts/ui/            界面
+locale/text.csv        翻译表：第一列是中文原文
+tools/                 测试脚本和小工具
+assets/                素材（Git LFS），授权台账 LICENSES.md；source/ 是每批素材的制作记录
+```
+
+## 测试
+
+用独立存档和设置，不碰正式存档；日志丢掉，避免写出巨大文件：
+
+```sh
+godot --headless --path . --log-file /dev/null --script tools/test_combat_regressions.gd -- --save-file=user://test_save.json --settings-file=user://test_settings.cfg
+python3 tools/check_translations.py
+```
+
+其他专项测试在 `tools/test_*.gd`，用法相同。

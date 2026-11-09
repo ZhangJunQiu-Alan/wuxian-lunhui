@@ -2,7 +2,7 @@ class_name EnemyDB
 ## 敌人数据表
 ##   hp/speed/damage/radius/xp/color  基础属性
 ##   behavior  chase = 贴身追击（默认）；ranged = 保持距离射击；drain = 保持距离吸血（持续掉血，自己回血）；
-##             still = 不动也不攻击（支线里要打碎的目标）
+##             still = 不动也不攻击（Boss 机制里要打碎的目标，例如加姆的锁桩）
 ##   mass      体重，越重越不容易被其他敌人挤开（默认 1）
 ##   远程敌人额外字段：shoot_range 射程，shoot_cooldown 射击间隔，projectile_damage 子弹伤害（吸血时是每秒伤害）
 ##             projectile 子弹素材（assets/sprites/effects/<名字>.png，默认冰锥），projectile_speed 子弹速度
@@ -27,9 +27,6 @@ const ALL := {
 		"shoot_range": 320.0, "shoot_cooldown": 2.5, "projectile_damage": 7.0, "max_alive": 30, "gait": "float"},
 	"frost_giant": {"name": "霜巨人斥候", "hp": 50.0, "speed": 45.0, "damage": 18.0, "radius": 24.0, "xp": 6,
 		"color": Color(0.45, 0.55, 0.85), "mass": 4.0, "gait": "heavy", "attack": "slam"},
-	# 支线「冰下的战士」的冰块：不会动，打碎它
-	"ice_block": {"name": "冰封的战士", "hp": 60.0, "speed": 0.0, "damage": 0.0, "radius": 18.0, "xp": 3,
-		"color": Color(0.6, 0.85, 1.0, 0.9), "behavior": "still", "mass": 1000.0},
 
 	# ———— 篇章一 · 第 2 关「亡者之船」————
 	"dead": {"name": "亡者", "hp": 7.0, "speed": 62.0, "damage": 6.0, "radius": 12.0, "xp": 1,
@@ -49,15 +46,6 @@ const ALL := {
 	# Boss 加姆的锁桩：不会动，打断 4 根加姆就挣脱了
 	"chain_stake": {"name": "锁桩", "hp": 70.0, "speed": 0.0, "damage": 0.0, "radius": 16.0, "xp": 3,
 		"color": Color(0.45, 0.4, 0.38), "behavior": "still", "mass": 1000.0, "sprite_dir": "res://assets/sprites/props/helheim/"},
-	# 支线「斩断锚链」「指甲堆」要打碎的目标
-	"anchor_chain": {"name": "锚链", "hp": 110.0, "speed": 0.0, "damage": 0.0, "radius": 18.0, "xp": 3,
-		"color": Color(0.4, 0.38, 0.36), "behavior": "still", "mass": 1000.0, "sprite_dir": "res://assets/sprites/quests/"},
-	"nail_heap": {"name": "指甲堆", "hp": 60.0, "speed": 0.0, "damage": 0.0, "radius": 24.0, "xp": 3,
-		"color": Color(0.72, 0.66, 0.48), "behavior": "still", "mass": 1000.0, "sprite_dir": "res://assets/sprites/props/helheim/",
-		"sprite": "nail_heap_02"},
-	# 隐藏支线「不肯哭泣的女巨人」：诡计之神变的老女巨人
-	"thokk": {"name": "不肯哭泣的女巨人", "hp": 90.0, "speed": 70.0, "damage": 14.0, "radius": 20.0, "xp": 10,
-		"color": Color(0.55, 0.45, 0.4), "mass": 4.0, "gait": "heavy"},
 
 	# ———— 篇章一 · 第 3 关「最后之战」（亡者复用第 2 关的 dead）————
 	# 专属行为在 vigrid_enemy.gd：火焰巨人死亡爆炸留下火焰地面，霜巨人精锐冲锋 / 正面举盾，狂狼战士低血量狂暴

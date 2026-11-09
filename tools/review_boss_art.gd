@@ -263,7 +263,6 @@ func run():
 		shot._physics_process(0.3)
 	await capture("hel_nail_barrage")
 
-	await review_thokk()
 	var report = {"engine": Engine.get_version_info(), "scope": "actual integrated Game viewport with deterministic skill triggers; full playthrough and balance not tested", "screenshots": screenshots, "image_write_errors": render_errors}
 	FileAccess.open(OUTPUT + "render_review.json", FileAccess.WRITE).store_string(JSON.stringify(report, "\t"))
 	if not "--skip-stress" in OS.get_cmdline_user_args():
@@ -326,20 +325,3 @@ func stress():
 	measurements.append({"phase": "after_effects_expire", "active_boss_effects": fx._boss_effects.size(), "nodes": get_node_count()})
 	FileAccess.open(OUTPUT + "performance.json", FileAccess.WRITE).store_string(JSON.stringify({"engine": Engine.get_version_info(), "viewport": [1280,720], "renderer": "gl_compatibility", "measurements": measurements, "note": "M2 local rendered test, four seconds per phase; no long-session guarantee"}, "\t"))
 	print("PERFORMANCE ", measurements)
-
-
-func review_thokk():
-	await new_game("helheim")
-	for elite in [false, true]:
-		var e = game.spawn_enemy("thokk", origin + Vector2(100 if elite else -100, 0), elite, true)
-		for action in ["move", "attack"]:
-			e._actions.play(action)
-			e._actions.frame = 2
-			e._actions.stop()
-			e.queue_redraw()
-			await process_frame
-			await RenderingServer.frame_post_draw
-			var name = "thokk_" + ("elite_" if elite else "normal_") + action
-			root.get_texture().get_image().save_png(OUTPUT + name + ".png")
-			screenshots.append({"file": name + ".png", "boss": "H0 thokk", "state": action, "scale": e._sprite.scale.x, "write_error": 0})
-		print("CAPTURE thokk ", elite)

@@ -2,7 +2,7 @@ class_name CharacterDB
 ## 角色数据：基础属性、武器、被动、大招、解锁条件、大招特写
 ##   hp / speed     基础生命和移速
 ##   ult_cost       大招需要的击杀数
-##   unlock         解锁方式：none = 初始可用；clears = 通关次数；quests = 累计完成支线数；story = 花费支线剧情点
+##   unlock         解锁方式：none = 初始可用；clears = 通关次数
 ##   cutin_moment   大招特写上显示的「最璀璨的时刻」
 ##   cutin_line     大招台词（用 \n 换行）
 ##   素材：assets/sprites/characters/<id>_idle/_move/_hurt/_death.png 动作帧条（没有就用 <id>.png），特写立绘 <id>_cutin.png
@@ -42,7 +42,7 @@ const ALL := {
 		"passive": "破阵", "passive_desc": "身边每有 1 个敌人，伤害 +6%（最多 +60%）",
 		"ult_name": "入阵曲", "ult_desc": "无敌并连续瞬移到 15 个敌人身后各斩一刀，最后五百骑幻影横扫全屏",
 		"ult_cost": 60.0,
-		"unlock": {"type": "quests", "value": 3, "text": "累计完成 3 个支线剧情"},
+		"unlock": {"type": "none"},
 		"cutin_moment": "孤城之下 · 摘下鬼面",
 		"cutin_line": "五百骑，随我入阵。",
 		"cutin_color": Color(0.9, 0.3, 0.3),
@@ -54,7 +54,7 @@ const ALL := {
 		"passive": "先知", "passive_desc": "每次升级从四个选项中选择一个",
 		"ult_name": "巨石阵", "ult_desc": "一圈巨石从天而降砸在身边，之后 8 秒内敌人无法进入石阵",
 		"ult_cost": 60.0,
-		"unlock": {"type": "story", "value": 3, "text": "花费 3 点支线剧情点"},
+		"unlock": {"type": "none"},
 		"cutin_moment": "远古 · 巨石阵",
 		"cutin_line": "群山也会听从言语，\n只要你知道它们的名字。",
 		"cutin_color": Color(0.65, 0.55, 1.0),
@@ -62,7 +62,7 @@ const ALL := {
 }
 
 
-## 是否已解锁。story 类型需要在主神空间里花点数解锁，记录在存档里
+## 是否已解锁
 static func is_unlocked(id: String) -> bool:
 	var unlock: Dictionary = ALL[id].unlock
 	match unlock.type:
@@ -70,10 +70,6 @@ static func is_unlocked(id: String) -> bool:
 			return true
 		"clears":
 			return Save.stats.clears >= unlock.value
-		"quests":
-			return Save.stats.quests_done >= unlock.value
-		"story":
-			return id in Save.unlocked_characters
 	return false
 
 

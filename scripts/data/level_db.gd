@@ -7,12 +7,9 @@ class_name LevelDB
 ##           从 elite_pool 里挑当前阶段已经出现的敌人种类
 ##   events  定时事件：ring = 在玩家周围刷出一圈敌人
 ##   bosses  Boss 出场时间和 id（id 对应 BossDB）；上一个 Boss 还活着时，下一个等它被击败再出场；全部击败即通关，显示 clear_text
-##   quest_slots 支线出现的时间点（有 Boss 在场时会等 Boss 被击败），quests 是支线池（id 对应 QuestDB），随机顺序
-##   hidden_quests 隐藏支线：开局就藏在地标里，hidden_from 秒之后才能触发；到了 hint 秒还没被发现，主神给一句提示
 ##   map     固定地图：size 是场地大小（中心在原点，玩家从中心出发），玩家和敌人都不能离开
 ##           border 是四周屏障带的宽度（冰崖、冰海、松林），镜头看得到但走不进去
-##           landmarks 地标：pos 中心、radius 范围；写了 quest / hidden 的地标，该支线（隐藏支线）就出现在这里
-##           quest 可以是一个 id，也可以是几个 id 的数组；不在任何地标上的支线出现在玩家附近
+##           landmarks 地标：pos 中心、radius 范围、name 地名
 ##           layout 铺地面、摆物件的脚本（继承 MapLayer），没有就画网格
 
 const CHAPTER := "篇章一 · 诸神黄昏"
@@ -24,18 +21,18 @@ const BOSS_NAMES := {"midgard": "斯库尔 · 哈提 · 赫列姆", "helheim": "
 const NORSE_1 := {
 	"name": "芬布尔之冬",
 	"music": "midgard",  # assets/audio/music/<名字>.ogg
-	# 布局草图见 docs/地图设计_第1关.md。北：峡湾冰崖，东：冰封的海，西：枯松林，南：山脚岩壁
+	# 布局草图见 docs/地图设计.md。北：峡湾冰崖，东：冰封的海，西：枯松林，南：山脚岩壁
 	"map": {
 		"size": Vector2(4608, 4608),
 		"border": 192.0,
 		"layout": "res://scripts/world/midgard_map.gd",
 		"landmarks": [
-			{"id": "crossroads", "name": "十字路口", "pos": Vector2(0, 0), "radius": 320.0, "quest": ["fate", "ember"], "hidden": "runes"},
-			{"id": "village", "name": "被雪掩埋的村庄", "pos": Vector2(-1350, -1250), "radius": 650.0, "quest": "bonfire"},
-			{"id": "harbor", "name": "峡湾码头", "pos": Vector2(1450, -1400), "radius": 550.0, "quest": "priests", "hidden": "sea_giant"},
-			{"id": "stones", "name": "奥丁的符文石阵", "pos": Vector2(-1500, 950), "radius": 420.0, "quest": "ravens"},
-			{"id": "mounds", "name": "古老的墓丘", "pos": Vector2(-100, 1450), "radius": 700.0, "quest": ["valkyrie", "nails"], "hidden": "einherjar"},
-			{"id": "lake", "name": "冰湖", "pos": Vector2(1350, 1100), "radius": 650.0, "quest": "ice_warriors", "hidden": "fishing"},
+			{"id": "crossroads", "name": "十字路口", "pos": Vector2(0, 0), "radius": 320.0},
+			{"id": "village", "name": "被雪掩埋的村庄", "pos": Vector2(-1350, -1250), "radius": 650.0},
+			{"id": "harbor", "name": "峡湾码头", "pos": Vector2(1450, -1400), "radius": 550.0},
+			{"id": "stones", "name": "奥丁的符文石阵", "pos": Vector2(-1500, 950), "radius": 420.0},
+			{"id": "mounds", "name": "古老的墓丘", "pos": Vector2(-100, 1450), "radius": 700.0},
+			{"id": "lake", "name": "冰湖", "pos": Vector2(1350, 1100), "radius": 650.0},
 		],
 	},
 	"boss_hp_growth": 116.0,  # Boss 的血量：每过这么多秒多 100%（小怪的成长见 game.gd 的 enemy_hp_scale）
@@ -60,15 +57,6 @@ const NORSE_1 := {
 		{"time": 540.0, "id": "hrym"},
 	],
 	"clear_reward": 300,  # 通关额外奖励点
-	"quest_slots": [100.0, 270.0, 450.0],
-	"quests": ["bonfire", "ravens", "valkyrie", "nails", "ice_warriors", "priests", "cold_wave", "fate", "ember"],
-	"hidden_from": 30.0,
-	"hidden_quests": [
-		{"id": "fishing", "hint": 70.0},
-		{"id": "runes", "hint": 170.0},
-		{"id": "sea_giant", "hint": 250.0},
-		{"id": "einherjar", "hint": 330.0},
-	],
 	"clear_text": "远方传来号角声。那是神域守门人海姆达尔吹响了加拉尔号角。\n诸神黄昏，正式开始。",
 	"events": [
 		{"time": 50.0, "type": "ring", "enemy": "wolf", "count": 12, "text": "狼群包围！"},
@@ -84,7 +72,7 @@ const NORSE_2 := {
 	"name": "亡者之船",
 	"music": "helheim",
 	"base_enemy": "dead",  # 某种敌人到了 max_alive 上限时改刷这个
-	# 布局草图见 docs/地图设计_第2关.md。北：冥海，东：赫尔之墙，西：雾之深渊，南：寒冰岩壁
+	# 布局草图见 docs/地图设计.md。北：冥海，东：赫尔之墙，西：雾之深渊，南：寒冰岩壁
 	"map": {
 		"size": Vector2(4608, 4608),
 		"border": 192.0,
@@ -93,15 +81,15 @@ const NORSE_2 := {
 		"river": {"y": -800.0, "half": 100.0, "crossings": [Vector2(-100, 100), Vector2(-1730, -1470)]},
 		"mist": {"zones": [{"pos": Vector2(-1400, 150), "radius": 520.0}], "drifting": 3},
 		"landmarks": [
-			{"id": "plaza", "name": "亡者广场", "pos": Vector2(0, 0), "radius": 350.0, "quest": "soul_lamps"},
-			{"id": "bridge", "name": "吉欧尔桥", "pos": Vector2(0, -800), "radius": 320.0, "quest": "bridge_guard"},
-			{"id": "harbor", "name": "纳吉尔法尔港", "pos": Vector2(400, -1600), "radius": 650.0, "quest": "anchor_chains"},
+			{"id": "plaza", "name": "亡者广场", "pos": Vector2(0, 0), "radius": 350.0},
+			{"id": "bridge", "name": "吉欧尔桥", "pos": Vector2(0, -800), "radius": 320.0},
+			{"id": "harbor", "name": "纳吉尔法尔港", "pos": Vector2(400, -1600), "radius": 650.0},
 			{"id": "marsh", "name": "冥雾沼泽", "pos": Vector2(-1400, 150), "radius": 650.0},
-			{"id": "hall", "name": "海拉的大厅", "pos": Vector2(1400, 100), "radius": 600.0, "quest": "baldr", "hidden": "hoof_tracks"},
-			{"id": "root", "name": "世界树之根", "pos": Vector2(-1250, 1350), "radius": 550.0, "quest": "ratatoskr"},
-			{"id": "cave", "name": "加姆的洞窟", "pos": Vector2(1300, 1550), "radius": 500.0, "hidden": "thokk"},
-			{"id": "workshop", "name": "指甲工坊", "pos": Vector2(-1400, -1500), "radius": 500.0, "quest": "nail_heaps"},
-			{"id": "ford", "name": "结冰的浅滩", "pos": Vector2(-1600, -800), "radius": 250.0, "hidden": "river_sword"},
+			{"id": "hall", "name": "海拉的大厅", "pos": Vector2(1400, 100), "radius": 600.0},
+			{"id": "root", "name": "世界树之根", "pos": Vector2(-1250, 1350), "radius": 550.0},
+			{"id": "cave", "name": "加姆的洞窟", "pos": Vector2(1300, 1550), "radius": 500.0},
+			{"id": "workshop", "name": "指甲工坊", "pos": Vector2(-1400, -1500), "radius": 500.0},
+			{"id": "ford", "name": "结冰的浅滩", "pos": Vector2(-1600, -800), "radius": 250.0},
 		],
 	},
 	"boss_hp_growth": 106.0,
@@ -125,14 +113,6 @@ const NORSE_2 := {
 		{"time": 540.0, "id": "hel"},
 	],
 	"clear_reward": 400,
-	"quest_slots": [100.0, 270.0, 450.0],
-	"quests": ["soul_lamps", "bridge_guard", "anchor_chains", "baldr", "ratatoskr", "nail_heaps"],
-	"hidden_from": 30.0,
-	"hidden_quests": [
-		{"id": "hoof_tracks", "hint": 100.0},
-		{"id": "river_sword", "hint": 190.0},
-		{"id": "thokk", "hint": 320.0},
-	],
 	"clear_text": "纳吉尔法尔在火光中沉没。但远方的天空已经燃烧起来，彩虹桥正在崩塌。\n所有的神与所有的巨人，都在走向同一片平原。",
 	"events": [
 		{"time": 50.0, "type": "ring", "enemy": "dead", "count": 30, "text": "亡者的队伍涌了过来！"},
@@ -143,7 +123,7 @@ const NORSE_2 := {
 	],
 }
 
-## 第 3 关没有支线；三个 Boss 都被实际击败后播放篇章结局（ending），结算显示改写的命运（fates）
+## 三个 Boss 都被实际击败后播放篇章结局（ending），结算显示改写的命运（fates）
 ## 地图布局见 assets/source/taskK0_vigrid_plan_2026-10-20/layout.json；刷怪权重、成长是暂定值（见 VigridTuning 的说明）
 const NORSE_3 := {
 	"name": "最后之战",
@@ -190,8 +170,6 @@ const NORSE_3 := {
 		{"time": 540.0, "id": "surtr"},
 	],
 	"clear_reward": 500,
-	"quest_slots": [],
-	"quests": [],
 	"clear_text": "",
 	"ending": "res://scripts/data/vigrid_ending_timeline.json",
 	"fates": ["thor_saved", "vidar_intervened", "freyr_assisted"],

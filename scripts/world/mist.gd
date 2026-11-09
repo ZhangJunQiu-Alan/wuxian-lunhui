@@ -13,7 +13,6 @@ const TINT := Color(0.62, 0.72, 0.7, 0.32)
 static var instance: Mist
 
 var player: Player
-var damage_scale := 1.0  # 支线「引魂灯」完成后减半
 var _zones := []  # 每项：pos、radius、vel（固定雾区为 0）、seed
 var _texture: Texture2D
 var _time := 0.0
@@ -64,7 +63,7 @@ func _physics_process(delta: float) -> void:
 		var enemy := node as Enemy
 		enemy.slow = ENEMY_SLOW if covers(enemy.global_position) else 1.0
 	if is_instance_valid(player) and covers(player.global_position):
-		player.take_dot(player.max_hp * DAMAGE_RATIO * damage_scale * delta)
+		player.take_dot(player.max_hp * DAMAGE_RATIO * delta)
 		if not _warned:
 			_warned = true
 			var game := get_tree().current_scene

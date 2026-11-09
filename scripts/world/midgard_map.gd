@@ -1,7 +1,7 @@
 class_name MidgardMap
 extends MapLayer
-## 第 1 关「芬布尔之冬」的地图，布局和各地标的细节见 docs/地图设计_第1关.md
-## 地标核心（半径的 45% 以内）不放挡路的物件，支线标记会出现在那里
+## 第 1 关「芬布尔之冬」的地图，布局和各地标的细节见 docs/地图设计.md
+## 地标核心（半径的 45% 以内）不放挡路的物件
 
 const SNOW := ["snow_01", "snow_01", "snow_01", "snow_02", "snow_02", "snow_03", "snow_04"]
 const CLEAR_SPAWN := 300.0  # 出生点周围留空

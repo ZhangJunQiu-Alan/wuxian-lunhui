@@ -233,7 +233,7 @@ func run():
 		clear_pickups()
 		fake.behavior = "still"
 		drops._on_enemy_killed(fake)
-		check(drops._active.healing_mead.is_empty(), "quest structure excluded")
+		check(drops._active.healing_mead.is_empty(), "still structure excluded")
 		fake.behavior = "chase"
 		fake.xp_value = 0
 		drops._on_enemy_killed(fake)

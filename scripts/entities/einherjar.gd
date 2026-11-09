@@ -1,10 +1,10 @@
 class_name Einherjar
 extends Node2D
-## 英灵：支线「沉睡的英灵」唤醒的战士之魂。跟在玩家身边 60 秒，追砍玩家附近的敌人
+## 英灵：神术召唤的战士之魂（奥丁的被动、渡鸦、融合技，澜的溺亡者，第三关奥丁的援助）。跟在玩家身边，追砍玩家附近的敌人
 ## 素材：待机 4 帧循环，挥砍时播放攻击 4 帧（16 帧/秒），素材朝右
 
-const IDLE := preload("res://assets/sprites/quests/einherjar_idle.png")
-const ATTACK := preload("res://assets/sprites/quests/einherjar_attack.png")
+const IDLE := preload("res://assets/sprites/allies/einherjar_idle.png")
+const ATTACK := preload("res://assets/sprites/allies/einherjar_attack.png")
 const DURATION := 60.0
 const FADE := 2.0         # 最后这几秒慢慢淡出
 const SPEED := 280.0
@@ -17,7 +17,7 @@ const DAMAGE := 12.0
 const COLOR := Color(1.0, 0.85, 0.5)
 
 var player: Player
-var power := 1.0  # 伤害跟着敌人血量一起成长，由支线设置
+var power := 1.0  # 伤害跟着敌人血量一起成长，由召唤者设置
 var life := DURATION  # 存在多久（奥丁的英灵、澜的溺亡者会改短），INF 表示不会消失
 var _life := 0.0
 var _swing_cd := 0.0

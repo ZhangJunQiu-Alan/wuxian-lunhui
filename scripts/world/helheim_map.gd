@@ -1,6 +1,6 @@
 class_name HelheimMap
 extends MapLayer
-## 第 2 关「亡者之船」的地图，布局和各地标的细节见 docs/地图设计_第2关.md
+## 第 2 关「亡者之船」的地图，布局和各地标的细节见 docs/地图设计.md
 ## 冥河横贯北部，只能从吉欧尔桥和结冰的浅滩过河；敌人隔着河追玩家时会先绕到过河点
 
 const STONE := ["stone_01", "stone_01", "stone_02", "stone_02", "stone_03", "stone_04"]

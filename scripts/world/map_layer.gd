@@ -57,7 +57,7 @@ var _props: Node2D
 
 func _ready() -> void:
 	current = self
-	z_index = -10  # 画在所有东西下面，包括支线的篝火、标记（它们是 -1）
+	z_index = -10  # 画在所有东西下面
 	rng.seed = 20261016
 	_tiles = TileSet.new()
 	_tiles.tile_size = Vector2i(TILE, TILE)

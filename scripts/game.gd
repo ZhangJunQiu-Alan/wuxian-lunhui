@@ -39,22 +39,10 @@ var boss: Boss
 var _alive_by_type := {}  # 敌人 id -> 当前存活数量
 var _next_boss := 0
 var _defeated_bosses: Array[String] = []
-var spawn_mult := 1.0  # 刷怪速度倍率（瓦尔基里的试炼会临时提高）
-var boss_delay := {}     # Boss id -> 推迟出场的秒数（支线「斩断锚链」）
-var boss_hp_mult := {}   # Boss id -> 血量倍率
-var boss_tweaks := {}    # Boss id -> {属性: 值}，出场时写到 Boss 身上（支线「指甲堆」减少海拉的弹幕）
 var reward_points := 0   # 奖励点：局外货币（阶段 8 局外成长时使用）
-var story_points := 0    # 支线剧情点：稀有货币
-var quest: SideQuest     # 主神发布的当前支线（同一时间最多一个）
-var _quest_queue: Array = []
-var _next_quest_slot := 0
-var _quests_done := 0
-var _quests_seen := 0
-var _hidden: Array[Dictionary] = []  # 隐藏支线：{"quest", "hint" 提示时间, "hinted"}
-var _hidden_found := 0
 var _run_recorded := false
 var _run_state := RunState.PLAYING
-var _codex := {"enemies": {}, "bosses": {}, "upgrades": {}, "quests": {}}  # 本局的图鉴记录，见 _note()
+var _codex := {"enemies": {}, "bosses": {}, "upgrades": {}}  # 本局的图鉴记录，见 _note()
 var _map_layer: MapLayer
 ## 第 3 关：本局改写的命运（id -> 是否已发生），只会从 false 变成 true；每局开始时全部清零
 var fates := {}
@@ -121,19 +109,6 @@ func _ready() -> void:
 	GodPower.fusions.clear()
 	_queue_reward.call_deferred({"kind": "god"})  # 开局先选第一位神
 	_next_elite_time = level_data.elite_from
-	_quest_queue = level_data.quests.duplicate()
-	_quest_queue.shuffle()
-	for entry: Dictionary in level_data.get("hidden_quests", []):
-		var secret := QuestDB.create(entry.id)
-		if secret == null:
-			continue
-		secret.landmark = _landmark_with("hidden", entry.id)
-		secret.game = self
-		secret.player = player
-		secret.accepted.connect(_on_hidden_quest_accepted)
-		secret.finished.connect(_on_quest_finished)
-		add_child(secret)
-		_hidden.append({"quest": secret, "hint": entry.hint, "hinted": false})
 
 
 func _process(delta: float) -> void:
@@ -143,7 +118,7 @@ func _process(delta: float) -> void:
 	var wave := _current_wave()
 	_spawn_timer -= delta
 	if _spawn_timer <= 0.0:
-		_spawn_timer = wave.interval * (2.0 if is_instance_valid(boss) else 1.0) / spawn_mult  # Boss 战时小怪减半
+		_spawn_timer = wave.interval * (2.0 if is_instance_valid(boss) else 1.0)  # Boss 战时小怪减半
 		if get_tree().get_node_count_in_group("enemies") < level_data.max_enemies:
 			var type_id := _pick_weighted(wave.weights)
 			if _alive_by_type.get(type_id, 0) >= EnemyDB.ALL[type_id].get("max_alive", INF):
@@ -155,7 +130,6 @@ func _process(delta: float) -> void:
 	_update_elites(wave)
 	_update_events()
 	_update_bosses()
-	_update_quests()
 	hud.set_stats(elapsed, kills)
 	queue_redraw()  # 背景网格跟着玩家重画
 
@@ -242,7 +216,7 @@ func _update_events() -> void:
 		hud.announce(tr(event.text))
 
 
-## required 只用于 Boss 机制和支线必需目标，允许越过常规敌人上限
+## required 只用于 Boss 机制的必需目标，允许越过常规敌人上限
 func spawn_enemy(type_id: String, pos: Vector2, elite: bool = false, required: bool = false) -> Enemy:
 	if not is_running() or (not required and get_tree().get_node_count_in_group("enemies") >= level_data.max_enemies):
 		return null
@@ -294,17 +268,15 @@ func despawn_enemy(enemy: Enemy) -> void:
 
 func _update_bosses() -> void:
 	var bosses: Array = level_data.bosses
-	if _next_boss >= bosses.size() or elapsed < bosses[_next_boss].time + boss_delay.get(bosses[_next_boss].id, 0.0):
+	if _next_boss >= bosses.size() or elapsed < bosses[_next_boss].time:
 		return
 	if is_instance_valid(boss):
 		return  # 上一个 Boss 还没被击败，等它
 	var id: String = bosses[_next_boss].id
 	_next_boss += 1
-	boss = BossDB.create(id, (1.0 + elapsed / level_data.boss_hp_growth) * boss_hp_mult.get(id, 1.0))
+	boss = BossDB.create(id, 1.0 + elapsed / level_data.boss_hp_growth)
 	if boss == null:
 		return
-	for key: String in boss_tweaks.get(id, {}):
-		boss.set(key, boss_tweaks[id][key])
 	boss.target = player
 	boss.spawner = spawn_enemy
 	boss.defeated_bosses = _defeated_bosses
@@ -321,90 +293,12 @@ func _update_bosses() -> void:
 	player.shake(8.0, 0.4)
 
 
-func _update_quests() -> void:
-	_update_hidden_quests()
-	var shown: Array[SideQuest] = []
-	var clues: Array[String] = []
-	if is_instance_valid(quest):
-		shown.append(quest)
-	for entry in _hidden:
-		if not is_instance_valid(entry.quest):
-			continue
-		var secret: SideQuest = entry.quest
-		if secret.state == "active":
-			shown.append(secret)
-		elif entry.hinted:
-			clues.append(secret.hint_text.trim_prefix(tr("【主神】")))
-	hud.show_quests(shown, clues)
-	if is_instance_valid(quest):
-		return
-	var slots: Array = level_data.quest_slots
-	if _next_quest_slot >= slots.size() or elapsed < slots[_next_quest_slot] or is_instance_valid(boss) or _quest_queue.is_empty():
-		return
-	_next_quest_slot += 1
-	var quest_id: String = _quest_queue.pop_front()
-	quest = QuestDB.create(quest_id)
-	if quest == null:
-		return
-	quest.landmark = _landmark_with("quest", quest_id)  # 支线出现在对应的地标上
-	_quests_seen += 1
-	quest.game = self
-	quest.player = player
-	quest.finished.connect(_on_quest_finished)
-	add_child(quest)
-	hud.announce(quest.offer_text)
-
-
-## 隐藏支线：到时间才能触发；一个在进行时，其他的先等着；到了提示时间还没被发现，主神给一句提示
-func _update_hidden_quests() -> void:
-	var active: SideQuest = null
-	for entry in _hidden:
-		if is_instance_valid(entry.quest) and entry.quest.state == "active":
-			active = entry.quest
-	for entry in _hidden:
-		if not is_instance_valid(entry.quest) or entry.quest.state != "offered":
-			continue
-		var secret: SideQuest = entry.quest
-		secret.blocked = elapsed < level_data.hidden_from or active != null
-		if not entry.hinted and elapsed >= entry.hint:
-			entry.hinted = true
-			hud.announce(secret.hint_text)
-
-
-func _on_hidden_quest_accepted(secret: SideQuest) -> void:
-	_quests_seen += 1
-	_hidden_found += 1
-	_note("quests", secret.quest_id, 0)
-	hud.announce(secret.offer_text)
-
-
-## 写了 key = id 的地标（例如 "quest": "bonfire"，或 "quest": ["valkyrie", "nails"]），没有就返回空字典
-func _landmark_with(key: String, id: String) -> Dictionary:
+## 按 id 找地标，没有就返回空字典
+func landmark_by_id(id: String) -> Dictionary:
 	for landmark: Dictionary in level_data.map.landmarks:
-		var value: Variant = landmark.get(key, "")
-		if value is Array and id in value or value is String and value == id:
+		if landmark.get("id", "") == id:
 			return landmark
 	return {}
-
-
-func landmark_by_id(id: String) -> Dictionary:
-	return _landmark_with("id", id)
-
-
-func _on_quest_finished(finished_quest: SideQuest, success: bool) -> void:
-	if not is_running():
-		return
-	if success or finished_quest.was_accepted:
-		_note("quests", finished_quest.quest_id, 1 if success else 0)
-	if success:
-		Audio.sfx("quest_done")
-		_quests_done += 1
-		hud.announce(tr("【主神】支线剧情完成：%s。%s") % [finished_quest.title, finished_quest._reward()])
-	elif finished_quest.was_accepted:
-		Audio.sfx("quest_fail")
-		hud.announce(tr("【主神】支线剧情失败：") + finished_quest.title)
-	else:
-		hud.announce(tr("错过了支线剧情：") + finished_quest.title)
 
 
 ## 图鉴记录：本局遇到的东西，一局结束时写进存档
@@ -414,10 +308,6 @@ func _note(category: String, id: String, count: int) -> void:
 
 func add_reward_points(amount: int) -> void:
 	reward_points += amount
-
-
-func add_story_points(amount: int) -> void:
-	story_points += amount
 
 
 ## 一局结束：结算存活时间和通关奖励，写进存档，返回结算界面要显示的数据
@@ -432,13 +322,11 @@ func _finish_run(cleared: bool) -> Dictionary:
 	Save.record_codex(_codex)
 	if not fates.is_empty():
 		Save.record_fates(level_id, fates, ever_faith_loki)
-	Save.record_run(level_id, reward_points, story_points, cleared, elapsed, kills, _quests_done)
+	Save.record_run(level_id, reward_points, cleared, elapsed, kills)
 	_run_result = {"elapsed": elapsed, "kills": kills, "level": player.level,
-		"quests_done": _quests_done, "quests_seen": _quests_seen, "hidden_found": _hidden_found, "hidden_total": _hidden.size(),
-		"reward_points": reward_points, "story_points": story_points, "reward_total": Save.reward_points, "story_total": Save.story_points}
+		"reward_points": reward_points, "reward_total": Save.reward_points}
 	if not fates.is_empty():
-		_run_result.merge({"fates": fates.duplicate(), "fate_count": fate_count(), "ever_faith_loki": ever_faith_loki,
-			"has_quests": not level_data.quests.is_empty()})
+		_run_result.merge({"fates": fates.duplicate(), "fate_count": fate_count(), "ever_faith_loki": ever_faith_loki})
 	return _run_result
 
 
@@ -498,7 +386,7 @@ func _on_player_leveled_up(level: int) -> void:
 		queue_reward("")
 
 
-## 加入一次升级选择（宝箱、支线奖励也用它），title 是面板标题，空字符串 = 普通升级
+## 加入一次升级选择（宝箱也用它），title 是面板标题，空字符串 = 普通升级
 func queue_reward(title: String) -> void:
 	_queue_reward({"kind": "level", "title": title})
 
@@ -579,19 +467,6 @@ func _is_pending(kind: String, key: String) -> bool:
 	return _pending_rewards.any(func(e: Dictionary) -> bool: return e.kind == kind and (e.get("god", "") == key or e.get("fusion", "") == key))
 
 
-## 支线奖励直接加信仰
-func add_faith(god: String, amount: int) -> void:
-	if not is_running() or not player.faith.has(god):
-		return
-	player.faith[god] = mini(player.faith[god] + amount, UpgradeDB.FAITH_MAX)
-	hud.set_faith(player)
-	var was_empty := _pending_rewards.is_empty()
-	_check_faith()
-	if was_empty and not _pending_rewards.is_empty():
-		get_tree().paused = true
-		_open_reward()
-
-
 func _on_reroll_requested() -> void:
 	if not is_running() or player.rerolls <= 0 or _pending_rewards.is_empty() or not ["level", "god"].has(_pending_rewards[0].kind):
 		return
@@ -626,7 +501,7 @@ func _on_level_cleared() -> void:
 	if beats.is_empty():
 		hud.show_result("victory", tr(level_data.name), story, run, player)
 		return
-	Audio.sfx("quest_done")  # 篇章完成：整段结局只响一次
+	Audio.sfx("milestone")  # 篇章完成：整段结局只响一次
 	hud.show_ending(beats, hud.show_result.bind("victory", tr(level_data.name), story, run, player))
 
 

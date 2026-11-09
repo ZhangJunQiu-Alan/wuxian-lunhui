@@ -23,7 +23,6 @@ func run():
 	if output.is_empty() or root.get_node("Save").path == "user://save.json": quit(2); return
 	var game_script = load("res://scripts/game.gd")
 	map_script = load("res://scripts/world/map_layer.gd")
-	var quest_script = load("res://scripts/quests/side_quest.gd")
 	var save = root.get_node("Save")
 	save.reset()
 	save.cleared_levels.assign(["midgard", "helheim"])
@@ -103,7 +102,6 @@ func run():
 						if Vector2(circle.x, circle.y).distance_to(center) < 180.0: print("POCKET CIRCLE ", circle)
 			check(escaped, "fine-grid escape from coarse pocket " + level + str(center))
 			fine_escapes.append({"position": [center.x, center.y], "escaped": escaped})
-		var markers := []
 		for landmark in game.level_data.map.landmarks:
 			var reachable := false
 			for cell in visited:
@@ -111,28 +109,6 @@ func run():
 					reachable = true
 					break
 			check(reachable, "landmark connected " + level + "/" + landmark.id)
-			for seed_index in 8:
-				seed(seed_index + 3100)
-				var quest = quest_script.new()
-				quest.game = game
-				quest.player = game.player
-				quest.landmark = landmark
-				game.add_child(quest)
-				var can_accept := false
-				var approach = Vector2.ZERO
-				for dx in range(-2, 3):
-					for dy in range(-2, 3):
-						var cell = Vector2i(((quest.marker_pos - grid_origin) / STEP).round()) + Vector2i(dx, dy)
-						if visited.has(cell) and (grid_origin + Vector2(cell) * STEP).distance_to(quest.marker_pos) < quest.ACCEPT_DISTANCE:
-							can_accept = true
-							approach = grid_origin + Vector2(cell) * STEP
-				check(can_accept, "quest marker approach " + level + "/" + landmark.id + " seed" + str(seed_index))
-				if can_accept:
-					game.player.position = approach
-					quest._process(0.0)
-					check(quest.state == "active", "actual quest acceptance " + level + "/" + landmark.id + " seed" + str(seed_index))
-				markers.append({"landmark": landmark.id, "seed": seed_index, "position": [quest.marker_pos.x, quest.marker_pos.y], "can_accept": can_accept})
-				quest.free()
 		# Direct fixtures prove the enlarged collision base tracks the enlarged image.
 		var file = "rock_01" if level == "midgard" else ("chain_pillar" if level == "helheim" else "giant_remains")
 		var at = Vector2(-9000, -9000)
@@ -141,7 +117,7 @@ func run():
 		var circles = map_script.obstacles.get(Vector2i((center / map_script.OBSTACLE_CELL).floor()), [])
 		check(circles.any(func(c): return Vector2(c.x, c.y) == center and c.z == 24.0), "scaled collision radius and offset " + level)
 		sprite.free()
-		results.append({"level": level, "enlarged_props": enlarged, "fixed_structural_props": fixed, "fine_escapes": fine_escapes, "free_grid_cells": open.size(), "connected_grid_cells": visited.size(), "isolated_samples": open.keys().filter(func(cell): return not visited.has(cell)).map(func(cell): return [grid_origin.x + cell.x * STEP, grid_origin.y + cell.y * STEP]), "markers": markers})
+		results.append({"level": level, "enlarged_props": enlarged, "fixed_structural_props": fixed, "fine_escapes": fine_escapes, "free_grid_cells": open.size(), "connected_grid_cells": visited.size(), "isolated_samples": open.keys().filter(func(cell): return not visited.has(cell)).map(func(cell): return [grid_origin.x + cell.x * STEP, grid_origin.y + cell.y * STEP])})
 		game.free()
 		await process_frame
 	var audio_script = load("res://scripts/core/audio.gd")
