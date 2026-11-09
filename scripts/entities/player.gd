@@ -71,6 +71,7 @@ var gods := {}            # 神明 id -> 神术节点（GodPower）
 
 # 角色的基础武器（只有其中一个不为 null）
 var katana: Katana
+var swordsman_weapon: SwordsmanWeapon
 var revolver: Revolver
 var blades: TwinBlades
 var nova: ArcaneNova
@@ -88,6 +89,7 @@ var _camera: Camera2D
 var _sprite: Node2D
 var _actions: AnimatedSprite2D  # 有多动作素材时就是 _sprite，否则为 null
 var _hurt_time := 0.0  # 受击动作剩余时间
+var _attack_action := &"attack"
 var _attack_time := 0.0  # 出招动作剩余时间
 var _attack_dir := Vector2.RIGHT
 var _attack_lunge := 7.0
@@ -121,7 +123,14 @@ func _ready() -> void:
 	ult_cost = data.ult_cost
 
 	# 素材：assets/sprites/characters/<角色id>_idle/_move/_hurt/_death.png 动作帧条，没有就用 <角色id>.png
-	_actions = SpriteVisual.create_actions(CharacterDB.CUTIN_DIR + character_id, SPRITE_HEIGHT, ACTIONS)
+	var kit_id := SwordsmanLoadout.valid(Save.swordsman_weapon)
+	if character_id == "swordsman":
+		_actions = SwordsmanArt.create_body(kit_id, SPRITE_HEIGHT)
+		if _actions:
+			swordsman_weapon = SwordsmanWeapon.new()
+			swordsman_weapon.kit_id = kit_id
+	if not _actions:
+		_actions = SpriteVisual.create_actions(CharacterDB.CUTIN_DIR + character_id, SPRITE_HEIGHT, ACTIONS)
 	_sprite = _actions if _actions else SpriteVisual.create(CharacterDB.CUTIN_DIR + character_id, SPRITE_HEIGHT)
 	if _sprite:
 		_sprite.scale *= SpriteVisual.ACTOR_SCALE
@@ -131,7 +140,17 @@ func _ready() -> void:
 
 	match character_id:  # 角色的基础武器
 		"swordsman":
-			katana = Katana.new()
+			if swordsman_weapon:
+				var art := SwordsmanArt.new()
+				art.body = _actions
+				art.weapon = SwordsmanArt.weapons()[kit_id]
+				_actions.add_child(art)
+				swordsman_weapon.art = art
+				katana = swordsman_weapon
+				_actions.frame_changed.connect(swordsman_weapon.sync_art)
+				_actions.animation_changed.connect(swordsman_weapon.sync_art)
+			else:
+				katana = Katana.new()
 			add_child(katana)
 		"gunslinger":
 			revolver = Revolver.new()
@@ -184,7 +203,10 @@ func _tick_timers(delta: float) -> void:
 	supply_guard_time = maxf(0.0, supply_guard_time - delta)
 	immune_time = maxf(0.0, immune_time - delta)
 	_hurt_time = maxf(0.0, _hurt_time - delta)
+	var finished := _attack_time > 0.0 and _attack_time <= delta
 	_attack_time = maxf(0.0, _attack_time - delta)
+	if finished and swordsman_weapon and not is_hurt():
+		swordsman_weapon.pose_finished(_attack_action)
 	_dash_cooldown = maxf(0.0, _dash_cooldown - delta)
 	_dash_time = maxf(0.0, _dash_time - delta)
 
@@ -192,17 +214,48 @@ func _tick_timers(delta: float) -> void:
 ## 武器出招时调用：转向出招方向；有 <角色id>_attack.png 就播放，否则身体朝出招方向前冲一下
 ## lunge 是前冲的像素数（开枪只需要很小的动作）
 ## interval 是武器两次出手的间隔：出手比动作还快时（双刃、狂野西部秀）动作加速，保证每次都完整播一遍
-func play_attack(dir: Vector2, lunge: float = 7.0, interval: float = 0.0) -> void:
+func play_attack(dir: Vector2, lunge: float = 7.0, interval: float = 0.0, action := &"attack") -> void:
 	_attack_dir = dir
+	_attack_action = action
+	if _sprite and dir.x != 0.0:
+		_sprite.set("flip_h", dir.x < 0.0)
 	_attack_lunge = lunge
 	_attack_time = ATTACK_POSE
-	if _has_action(&"attack"):
+	if _has_action(action):
 		var frames := _actions.sprite_frames
-		var length := frames.get_frame_count(&"attack") / frames.get_animation_speed(&"attack")
+		var length := frames.get_frame_count(action) / frames.get_animation_speed(action)
 		_actions.speed_scale = maxf(1.0, length / interval) if interval > 0.0 else 1.0
 		_attack_time = length / _actions.speed_scale
-		_actions.play(&"attack")
-		_actions.frame = 0
+		_actions.play(action)
+		_actions.set_frame_and_progress(0, 0.0)
+
+
+func weapon_pose_speed() -> float:
+	return _actions.speed_scale if _actions else 1.0
+
+
+func weapon_pose_active() -> bool:
+	return _attack_time > 0.0
+
+
+func cancel_weapon_pose() -> void:
+	_attack_time = 0.0
+
+
+func weapon_aim() -> Vector2:
+	return _attack_dir
+
+
+func is_hurt() -> bool:
+	return _hurt_time > 0.0
+
+
+func is_dashing() -> bool:
+	return _dash_t >= 0.0
+
+
+func weapon_afterimage() -> void:
+	_spawn_ghost(0.7)
 
 
 func _has_action(action: StringName) -> bool:
@@ -227,8 +280,10 @@ func _update_action(dir: Vector2) -> void:
 	var action := &"idle"
 	if _hurt_time > 0.0:
 		action = &"hurt"
-	elif _attack_time > 0.0 and _has_action(&"attack"):
-		action = &"attack"
+	elif _attack_time > 0.0 and _has_action(_attack_action):
+		action = _attack_action
+	elif swordsman_weapon and swordsman_weapon.stance() != &"":
+		action = swordsman_weapon.stance()
 	elif dir != Vector2.ZERO:
 		action = &"move"
 	if not _actions.sprite_frames.has_animation(action):
@@ -236,8 +291,7 @@ func _update_action(dir: Vector2) -> void:
 		if not _actions.sprite_frames.has_animation(action):
 			return
 	if _actions.animation != action:
-		if action != &"attack":
-			_actions.speed_scale = 1.0
+		_actions.speed_scale = 1.0
 		_actions.play(action)
 
 
@@ -258,7 +312,23 @@ func play_death() -> void:
 	_actions.play(&"death")
 
 
+func _input(event: InputEvent) -> void:
+	if not swordsman_weapon or event.is_pressed():
+		return
+	if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_RIGHT:
+		swordsman_weapon.input_skill("mouse", false)
+	elif event is InputEventKey and event.keycode == KEY_K:
+		swordsman_weapon.input_skill("key", false)
+
+
 func _unhandled_input(event: InputEvent) -> void:
+	if swordsman_weapon and event.is_pressed():
+		if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_RIGHT:
+			swordsman_weapon.input_skill("mouse", true)
+			return
+		if event is InputEventKey and event.keycode == KEY_K and not event.echo:
+			swordsman_weapon.input_skill("key", true)
+			return
 	var key := event as InputEventKey
 	if not (key and key.pressed and not key.echo):
 		return
@@ -274,9 +344,13 @@ func try_dash() -> void:
 	if is_dead or _dash_t >= 0.0 or _dash_cooldown > 0.0 or _fear_time > 0.0:
 		return
 	_dash_cooldown = DASH_COOLDOWN
+	weapon_dash(facing, DASH_DISTANCE)
+
+
+func weapon_dash(direction: Vector2, distance: float) -> Vector2:
 	_dash_time = DASH_TIME + DASH_INVINCIBLE
 	_dash_from = position
-	_dash_to = MapLayer.push_out(Game.clamp_to_map(position + facing * DASH_DISTANCE, RADIUS), RADIUS)
+	_dash_to = MapLayer.push_out(Game.clamp_to_map(position + direction * distance, RADIUS), RADIUS)
 	_dash_t = 0.0
 	_ghost_timer = 0.0
 	Audio.sfx("dash")
@@ -284,6 +358,7 @@ func try_dash() -> void:
 	for i in 6:  # 起步的气流向身后喷出
 		FxLayer.burst(global_position - facing * 10.0, Color(0.85, 0.95, 1.0, 0.8), 1, 60.0 + i * 25.0, 2.0)
 	get_tree().call_group("god_powers", "on_dash")
+	return get_parent().to_global(_dash_to) if get_parent() is Node2D else _dash_to
 
 
 func _update_dash(delta: float) -> void:
@@ -314,7 +389,9 @@ func _update_dash(delta: float) -> void:
 func _spawn_ghost(alpha: float) -> void:
 	if not _sprite:
 		return
-	var ghost: Node2D = _sprite.duplicate()
+	if swordsman_weapon:
+		swordsman_weapon.sync_art()
+	var ghost: Node2D = _sprite.duplicate(0)
 	if ghost is AnimatedSprite2D:
 		ghost.stop()
 		ghost.frame = _actions.frame
@@ -378,7 +455,7 @@ func take_damage(amount: float) -> void:
 	if is_dead or _invincible_time > 0.0 or shield_time > 0.0 or _dash_time > 0.0 or immune_time > 0.0:
 		return
 	_invincible_time = INVINCIBLE_DURATION
-	if randf() < dodge_chance:
+	if (swordsman_weapon and swordsman_weapon.try_drunken_dodge()) or randf() < dodge_chance:
 		return
 	# 只挡一次普通直接伤害；吞噬等以最大生命为基准的致命判定仍须躲避。
 	if supply_guard_time > 0.0 and amount > 0.0 and amount < max_hp:
@@ -391,6 +468,8 @@ func take_damage(amount: float) -> void:
 		ward -= 1
 		FxLayer.burst(global_position, Color(1.0, 0.92, 0.6), 12, 140.0, 3.0)
 		return
+	if swordsman_weapon and amount < max_hp:
+		amount *= swordsman_weapon.defensive_multiplier()
 	hp = maxf(0.0, hp - amount)
 	_hurt_time = 0.25
 	Audio.sfx("player_death" if hp <= 0.0 else "player_hurt")
@@ -521,6 +600,8 @@ func _draw() -> void:
 		var look := _attack_dir if _attack_time > 0.0 else facing  # 出招时面向敌人
 		if look.x != 0.0:
 			_sprite.set("flip_h", look.x < 0.0)
+		if swordsman_weapon:
+			swordsman_weapon.sync_art()
 		draw_arc(Vector2.ZERO, pickup_radius, 0.0, TAU, 48, Color(1, 1, 1, 0.06))
 		return
 	var color: Color = Color(1, 0.4, 0.4) if hurt_blink else data.color  # 受伤闪烁

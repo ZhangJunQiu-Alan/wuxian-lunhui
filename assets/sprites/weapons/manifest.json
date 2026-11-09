@@ -1,0 +1,543 @@
+[
+  {
+    "id": "katana",
+    "class": "swordsman",
+    "idle_hold": "stow",
+    "main": {
+      "file": "swordsman/katana.png",
+      "grip": [
+        3,
+        2
+      ],
+      "tip": [
+        20,
+        1
+      ],
+      "base_deg": 0
+    },
+    "stow": "hip",
+    "stow_file": "swordsman/katana_stow.png",
+    "stow_grip": [
+      10,
+      4
+    ],
+    "stow_base_deg": 0,
+    "icon": "swordsman/katana_icon.png",
+    "legacy_layers": {
+      "idle": {
+        "file": "swordsman/katana_legacy_idle.png",
+        "size": [
+          64,
+          64
+        ],
+        "frames": 4,
+        "anchor": [
+          0,
+          0
+        ],
+        "layer": 4
+      },
+      "move": {
+        "file": "swordsman/katana_legacy_move.png",
+        "size": [
+          64,
+          64
+        ],
+        "frames": 6,
+        "anchor": [
+          0,
+          0
+        ],
+        "layer": 4
+      },
+      "attack": {
+        "file": "swordsman/katana_legacy_attack.png",
+        "size": [
+          64,
+          64
+        ],
+        "frames": 6,
+        "anchor": [
+          0,
+          0
+        ],
+        "layer": 4
+      },
+      "hurt": {
+        "file": "swordsman/katana_legacy_hurt.png",
+        "size": [
+          64,
+          64
+        ],
+        "frames": 2,
+        "anchor": [
+          0,
+          0
+        ],
+        "layer": 4
+      },
+      "death": {
+        "file": "swordsman/katana_legacy_death.png",
+        "size": [
+          64,
+          64
+        ],
+        "frames": 6,
+        "anchor": [
+          0,
+          0
+        ],
+        "layer": 4
+      }
+    },
+    "stow_socket_adjust": {
+      "dx": -4,
+      "dy": 1,
+      "deg": 132,
+      "z": "front"
+    },
+    "sheath_file": "swordsman/katana_sheath.png"
+  },
+  {
+    "id": "qinglong",
+    "class": "swordsman",
+    "idle_hold": "held",
+    "main": {
+      "file": "swordsman/qinglong.png",
+      "grip": [
+        20,
+        9
+      ],
+      "tip": [
+        51,
+        0
+      ],
+      "base_deg": 0,
+      "glow": "swordsman/qinglong_glow.png"
+    },
+    "stow": "back",
+    "stow_file": "swordsman/qinglong_stow.png",
+    "stow_grip": [
+      17,
+      9
+    ],
+    "stow_base_deg": 0,
+    "stow_socket_adjust": {
+      "dx": -6,
+      "dy": -1,
+      "deg": 141,
+      "z": "back"
+    },
+    "icon": "swordsman/qinglong_icon.png",
+    "idle_main_adjust": {
+      "deg": -61,
+      "x": 40,
+      "y": 37,
+      "z": "front"
+    }
+  },
+  {
+    "id": "excalibur",
+    "class": "swordsman",
+    "idle_hold": "stow",
+    "main": {
+      "file": "swordsman/excalibur.png",
+      "grip": [
+        2,
+        4
+      ],
+      "tip": [
+        22,
+        4
+      ],
+      "base_deg": 0
+    },
+    "stow": "hip",
+    "stow_file": "swordsman/excalibur_stow.png",
+    "stow_grip": [
+      10,
+      4
+    ],
+    "stow_base_deg": 0,
+    "stow_glow": "swordsman/excalibur_stow_glow.png",
+    "icon": "swordsman/excalibur_icon.png",
+    "stow_socket_adjust": {
+      "dx": -4,
+      "dy": 1,
+      "deg": 131,
+      "z": "front"
+    },
+    "sheath_file": "swordsman/excalibur_sheath.png"
+  },
+  {
+    "id": "muramasa",
+    "class": "swordsman",
+    "idle_hold": "stow",
+    "main": {
+      "file": "swordsman/muramasa.png",
+      "grip": [
+        2,
+        5
+      ],
+      "tip": [
+        26,
+        1
+      ],
+      "base_deg": 0,
+      "glow": "swordsman/muramasa_glow.png"
+    },
+    "stow": "hip",
+    "stow_file": "swordsman/muramasa_stow.png",
+    "stow_grip": [
+      10,
+      4
+    ],
+    "stow_base_deg": 0,
+    "icon": "swordsman/muramasa_icon.png",
+    "stow_socket_adjust": {
+      "dx": -4,
+      "dy": 1,
+      "deg": 135,
+      "z": "front"
+    },
+    "sheath_file": "swordsman/muramasa_sheath.png"
+  },
+  {
+    "id": "monohoshizao",
+    "class": "swordsman",
+    "idle_hold": "stow",
+    "main": {
+      "file": "swordsman/monohoshizao.png",
+      "grip": [
+        2,
+        3
+      ],
+      "tip": [
+        34,
+        1
+      ],
+      "base_deg": 0
+    },
+    "stow": "back",
+    "stow_file": "swordsman/monohoshizao_stow.png",
+    "stow_grip": [
+      5,
+      4
+    ],
+    "stow_base_deg": 0,
+    "stow_socket_adjust": {
+      "dx": -3,
+      "dy": -8,
+      "deg": 119,
+      "z": "back"
+    },
+    "icon": "swordsman/monohoshizao_icon.png",
+    "stow_keeper": "swordsman/monohoshizao_stow_keeper.png"
+  },
+  {
+    "id": "duanshui",
+    "class": "swordsman",
+    "idle_hold": "stow",
+    "main": {
+      "file": "swordsman/duanshui.png",
+      "grip": [
+        2,
+        4
+      ],
+      "tip": [
+        26,
+        4
+      ],
+      "base_deg": 0
+    },
+    "stow": "hip",
+    "stow_file": "swordsman/duanshui_stow.png",
+    "stow_grip": [
+      10,
+      4
+    ],
+    "stow_base_deg": 0,
+    "icon": "swordsman/duanshui_icon.png",
+    "stow_socket_adjust": {
+      "dx": -4,
+      "dy": 1,
+      "deg": 133,
+      "z": "front"
+    },
+    "sheath_file": "swordsman/duanshui_sheath.png"
+  },
+  {
+    "id": "higekiri",
+    "class": "swordsman",
+    "idle_hold": "stow",
+    "main": {
+      "file": "swordsman/higekiri.png",
+      "grip": [
+        2,
+        5
+      ],
+      "tip": [
+        22,
+        0
+      ],
+      "base_deg": 0,
+      "glow": "swordsman/higekiri_glow.png"
+    },
+    "stow": "hip",
+    "stow_file": "swordsman/higekiri_stow.png",
+    "stow_grip": [
+      10,
+      4
+    ],
+    "stow_base_deg": 0,
+    "icon": "swordsman/higekiri_icon.png",
+    "stow_socket_adjust": {
+      "dx": -4,
+      "dy": 1,
+      "deg": 132,
+      "z": "front"
+    },
+    "sheath_file": "swordsman/higekiri_sheath.png"
+  },
+  {
+    "id": "ganjiang_moye",
+    "class": "swordsman",
+    "idle_hold": "held",
+    "main": {
+      "file": "swordsman/ganjiang.png",
+      "grip": [
+        2,
+        4
+      ],
+      "tip": [
+        18,
+        4
+      ],
+      "base_deg": 0
+    },
+    "off": {
+      "file": "swordsman/moye.png",
+      "grip": [
+        2,
+        4
+      ],
+      "tip": [
+        18,
+        4
+      ],
+      "base_deg": 0
+    },
+    "variants": {
+      "ganjiang": {
+        "file": "swordsman/ganjiang.png",
+        "grip": [
+          2,
+          4
+        ],
+        "tip": [
+          18,
+          4
+        ],
+        "base_deg": 0
+      },
+      "moye": {
+        "file": "swordsman/moye.png",
+        "grip": [
+          2,
+          4
+        ],
+        "tip": [
+          18,
+          4
+        ],
+        "base_deg": 0
+      }
+    },
+    "planted": {
+      "file": "swordsman/moye_planted.png",
+      "grip": [
+        4,
+        18
+      ],
+      "anchor": [
+        4,
+        18
+      ],
+      "base_deg": 0
+    },
+    "icon": "swordsman/ganjiang_moye_icon.png",
+    "off_idle_adjust": {
+      "deg": 125,
+      "dx": -1,
+      "dy": 0
+    },
+    "alternate_attack": "off_attack"
+  },
+  {
+    "id": "zhuxian",
+    "class": "swordsman",
+    "idle_hold": "held",
+    "main": {
+      "file": "swordsman/zhuxian_zhu.png",
+      "grip": [
+        2,
+        4
+      ],
+      "tip": [
+        20,
+        4
+      ],
+      "base_deg": 0
+    },
+    "variants": {
+      "zhu": {
+        "file": "swordsman/zhuxian_zhu.png",
+        "grip": [
+          2,
+          4
+        ],
+        "tip": [
+          20,
+          4
+        ],
+        "base_deg": 0
+      },
+      "lu": {
+        "file": "swordsman/zhuxian_lu.png",
+        "grip": [
+          2,
+          4
+        ],
+        "tip": [
+          20,
+          4
+        ],
+        "base_deg": 0
+      },
+      "xian": {
+        "file": "swordsman/zhuxian_xian.png",
+        "grip": [
+          2,
+          4
+        ],
+        "tip": [
+          20,
+          4
+        ],
+        "base_deg": 0
+      },
+      "jue": {
+        "file": "swordsman/zhuxian_jue.png",
+        "grip": [
+          2,
+          4
+        ],
+        "tip": [
+          20,
+          4
+        ],
+        "base_deg": 0
+      }
+    },
+    "icon": "swordsman/zhuxian_icon.png",
+    "reserve_offsets": [
+      [
+        -18,
+        4
+      ],
+      [
+        -11,
+        1
+      ],
+      [
+        -4,
+        4
+      ]
+    ],
+    "flight_px": 102
+  },
+  {
+    "id": "riyue",
+    "class": "swordsman",
+    "idle_hold": "held",
+    "variants": {
+      "sun": {
+        "file": "swordsman/riyue_sun.png",
+        "grip": [
+          2,
+          5
+        ],
+        "tip": [
+          18,
+          2
+        ],
+        "base_deg": 0
+      },
+      "moon": {
+        "file": "swordsman/riyue_moon.png",
+        "grip": [
+          2,
+          5
+        ],
+        "tip": [
+          18,
+          0
+        ],
+        "base_deg": 0
+      }
+    },
+    "icon": "swordsman/riyue_icon.png",
+    "off_idle_adjust": {
+      "deg": 123,
+      "dx": -1,
+      "dy": 0
+    },
+    "alternate_attack": "variant"
+  },
+  {
+    "id": "chunyang",
+    "class": "swordsman",
+    "idle_hold": "stow",
+    "main": {
+      "file": "swordsman/chunyang.png",
+      "grip": [
+        2,
+        4
+      ],
+      "tip": [
+        22,
+        4
+      ],
+      "base_deg": 0
+    },
+    "stow": "back",
+    "stow_file": "swordsman/chunyang_stow.png",
+    "stow_grip": [
+      5,
+      4
+    ],
+    "stow_base_deg": 0,
+    "stow_socket_adjust": {
+      "dx": -3,
+      "dy": -6,
+      "deg": 125,
+      "z": "back"
+    },
+    "props": {
+      "gourd": {
+        "file": "swordsman/chunyang_gourd.png",
+        "grip": [
+          4,
+          4
+        ],
+        "base_deg": 0,
+        "hip_adjust": {
+          "dx": -10,
+          "dy": 5
+        }
+      }
+    },
+    "icon": "swordsman/chunyang_icon.png",
+    "stow_keeper": "swordsman/chunyang_stow_keeper.png"
+  }
+]

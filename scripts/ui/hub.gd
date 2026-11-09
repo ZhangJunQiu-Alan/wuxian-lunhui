@@ -256,6 +256,23 @@ func _make_character_page() -> Control:
 		box.add_child(ability_desc)
 		blocks.append([block, ability_name, ability_desc])
 
+	var weapon_choice := OptionButton.new()
+	weapon_choice.name = "SwordsmanLoadout"
+	weapon_choice.add_theme_constant_override("icon_max_width", 20)
+	weapon_choice.get_popup().add_theme_constant_override("icon_max_width", 20)
+	weapon_choice.texture_filter = CanvasItem.TEXTURE_FILTER_NEAREST
+	weapon_choice.focus_mode = Control.FOCUS_NONE
+	weapon_choice.add_theme_font_size_override("font_size", 16)
+	for id: String in SwordsmanLoadout.KITS:
+		weapon_choice.add_icon_item(SwordsmanLoadout.icon(id), tr(SwordsmanLoadout.KITS[id][0]))
+		weapon_choice.set_item_metadata(weapon_choice.item_count - 1, id)
+	weapon_choice.item_selected.connect(func(index: int) -> void:
+		Save.select_swordsman_weapon(weapon_choice.get_item_metadata(index))
+		_refresh())
+	var weapon_box := (blocks[0][0] as PanelContainer).get_child(0)
+	weapon_box.add_child(weapon_choice)
+	weapon_box.move_child(weapon_choice, 1)
+
 	var quote_box := VBoxContainer.new()  # 大招特写上的台词和「最璀璨的时刻」
 	quote_box.size_flags_vertical = Control.SIZE_EXPAND_FILL
 	quote_box.alignment = BoxContainer.ALIGNMENT_CENTER
@@ -282,7 +299,7 @@ func _make_character_page() -> Control:
 	row.add_child(action)
 
 	_hero = {"art": art, "lock": lock, "border": border, "name": hero_name, "title": hero_title, "blocks": blocks, "action": action,
-		"quote": quote, "moment": moment}
+		"quote": quote, "moment": moment, "weapon_choice": weapon_choice}
 	return page
 
 
@@ -346,6 +363,13 @@ func _refresh_character_page(selected: String) -> void:
 	(_hero.quote as Label).text = tr("「%s」") % tr(info.cutin_line)
 	(_hero.moment as Label).text = "—— " + tr(info.cutin_moment)
 	var lines := [[info.weapon, info.weapon_desc], [info.passive, info.passive_desc], [info.ult_name, info.ult_desc]]
+	var weapon_choice: OptionButton = _hero.weapon_choice
+	weapon_choice.visible = _viewing == "swordsman"
+	(_hero.blocks[0][1] as Label).visible = not weapon_choice.visible
+	if weapon_choice.visible:
+		var kit := SwordsmanLoadout.valid(Save.swordsman_weapon)
+		weapon_choice.select(SwordsmanLoadout.KITS.keys().find(kit))
+		lines[0] = SwordsmanLoadout.KITS[kit]
 	for i in 3:
 		var block: Array = _hero.blocks[i]
 		(block[0] as PanelContainer).add_theme_stylebox_override("panel", _block_style(color))

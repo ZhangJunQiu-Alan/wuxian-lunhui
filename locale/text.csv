@@ -189,13 +189,13 @@ Every god and every giant is marching toward the same plain."
 每局可以重抽升级选项 1 次,Reroll your level-up choices once per run
 主神的眷顾,Lord God's Favor
 每局可以复活 1 次（恢复一半生命）,Revive once per run (with half HP)
-太刀·锋利,Tachi · Keen Edge
-太刀·居合,Tachi · Iaijutsu
-太刀·长刃,Tachi · Long Blade
-太刀·回身斩,Tachi · Turning Cut
+剑士·锋利,Swordsman · Keen Edge
+剑士·快手,Swordsman · Quick Hands
+剑士·长刃,Swordsman · Long Blade
+剑士·回身斩,Swordsman · Turning Cut
 挥砍时同时斩向身后,Each slash also cuts behind you
-太刀·震退,Tachi · Shockwave
-太刀·断筋,Tachi · Hamstring
+剑士·震退,Swordsman · Shockwave
+剑士·断筋,Swordsman · Hamstring
 左轮·重弹,Revolver · Heavy Rounds
 左轮·快拔,Revolver · Quick Draw
 左轮·扩容,Revolver · Extended Cylinder
@@ -393,11 +393,11 @@ Stage %d · %s    [Enter]"
 稀有,Rare
 史诗,Epic
 传说,Legendary
-太刀伤害 +{v}%,Tachi damage +{v}%
-太刀挥砍间隔 -{v}%,Tachi swing interval -{v}%
-太刀攻击范围 +{v}%,Tachi range +{v}%
-太刀击退距离 +{v}%,Tachi knockback +{v}%
-被太刀砍中的敌人移速 -{v}%，持续 2 秒,Enemies hit by the tachi are slowed by {v}% for 2s
+剑士武器伤害 +{v}%,Swordsman weapon damage +{v}%
+剑士武器出手间隔 -{v}%,Swordsman weapon attack interval -{v}%
+剑士武器普攻范围 +{v}%,Swordsman basic attack range +{v}%
+剑士武器击退距离 +{v}%,Swordsman weapon knockback +{v}%
+剑士武器命中使敌人移速 -{v}%，持续 2 秒,Enemies hit by a swordsman weapon are slowed by {v}% for 2s
 子弹伤害 +{v}%,Bullet damage +{v}%
 射击间隔 -{v}%,Fire interval -{v}%
 弹匣 +{v} 发，换弹时间 -10%,"Magazine +{v}, reload time -10%"
@@ -706,3 +706,24 @@ Defeat him before the world burns."
 暂停 [Space],Pause [Space]
 继续 [Space],Resume [Space]
 跳过 [Esc],Skip [Esc]
+自动扇斩。每第四刀触发二刀流。,Automatic fan slash. Every fourth attack triggers Twin Cut.
+村正,Muramasa
+连杀加快出刀。连杀中断后进入渴。,Consecutive kills speed up attacks. Let the chain lapse and Thirst sets in.
+物干竿,Monohoshizao
+窄扇长斩。外侧三分之一的刀尖伤害更高。,"Long, narrow sweep. The outer third deals bonus tip damage."
+断水,Duanshui
+斩击留下水痕，伤害经过弧线的敌人。,Slashes leave a water scar that damages enemies crossing the arc.
+髭切,Higekiri
+命中积攒鬼气。K / 右键鬼化连斩，再次按下可结束。,Hits build Oni energy. Press K or right-click to enter Oni and strike twice. Press again to end it.
+干将莫邪,Ganjiang & Moye
+雌雄双剑交替。K / 右键掷出莫邪，再按召回。,"Alternates between paired blades. Press K or right-click to throw Moye, then press again to recall it."
+诛仙四剑,Four Zhuxian Swords
+诛、戮、陷、绝依序出击，分别重斩、流血、定身和处决。,"Cycles four swords for a heavy strike, bleed, root, and execute."
+青龙偃月刀,Green Dragon Crescent Blade
+按住 K / 右键转刀。松手重劈，蓄足后青龙附体。,Hold K or the right mouse button to spin. Release to cleave. Hold long enough to summon the dragon.
+湖中剑,Excalibur
+K / 右键挥剑，随后收鞘蓄力。蓄满后再按，发动居合。,"Press K or right-click to swing, then sheathe and charge. Press again at full charge for a draw dash."
+日月双刀,Sun & Moon Sabers
+日、月普攻交替。K / 右键换手，发动日轮或月牙。,Alternates Sun and Moon attacks. Press K or right-click to swap and trigger Sun Wheel or Moon Lunge.
+纯阳剑,Chunyang Sword
+K / 右键饮酒。一醉出剑气，二醉加快出刀，三醉可醉步闪避。,"Press K or right-click to drink. One drink unlocks sword qi, two speed up attacks, and three grant a dodge."

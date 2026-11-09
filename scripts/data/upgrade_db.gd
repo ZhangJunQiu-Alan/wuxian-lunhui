@@ -31,12 +31,12 @@ const WEAPON_RARITY_BONUS := [0, 10, 20, 30]  # 没有数值的武器卡：高�
 
 const UPGRADES := {
 	# ———— 人物基础武器：太刀（剑士）————
-	"katana_damage": {"kind": "weapon", "character": "swordsman", "name": "太刀·锋利", "desc": "太刀伤害 +{v}%", "values": [25, 37, 55, 75], "max": 5},
-	"katana_speed": {"kind": "weapon", "character": "swordsman", "name": "太刀·居合", "desc": "太刀挥砍间隔 -{v}%", "values": [10, 14, 19, 25], "max": 4},
-	"katana_range": {"kind": "weapon", "character": "swordsman", "name": "太刀·长刃", "desc": "太刀攻击范围 +{v}%", "values": [15, 20, 28, 36], "max": 3},
-	"katana_back": {"kind": "weapon", "character": "swordsman", "name": "太刀·回身斩", "desc": "挥砍时同时斩向身后", "max": 1},
-	"katana_knockback": {"kind": "weapon", "character": "swordsman", "name": "太刀·震退", "desc": "太刀击退距离 +{v}%", "values": [40, 60, 88, 120], "max": 3},
-	"katana_hamstring": {"kind": "weapon", "character": "swordsman", "name": "太刀·断筋", "desc": "被太刀砍中的敌人移速 -{v}%，持续 2 秒", "values": [20, 25, 30, 40], "max": 2},
+	"katana_damage": {"kind": "weapon", "character": "swordsman", "name": "剑士·锋利", "desc": "剑士武器伤害 +{v}%", "values": [25, 37, 55, 75], "max": 5},
+	"katana_speed": {"kind": "weapon", "character": "swordsman", "name": "剑士·快手", "desc": "剑士武器出手间隔 -{v}%", "values": [10, 14, 19, 25], "max": 4},
+	"katana_range": {"kind": "weapon", "character": "swordsman", "name": "剑士·长刃", "desc": "剑士武器普攻范围 +{v}%", "values": [15, 20, 28, 36], "max": 3},
+	"katana_back": {"kind": "weapon", "character": "swordsman", "name": "剑士·回身斩", "desc": "挥砍时同时斩向身后", "max": 1},
+	"katana_knockback": {"kind": "weapon", "character": "swordsman", "name": "剑士·震退", "desc": "剑士武器击退距离 +{v}%", "values": [40, 60, 88, 120], "max": 3},
+	"katana_hamstring": {"kind": "weapon", "character": "swordsman", "name": "剑士·断筋", "desc": "剑士武器命中使敌人移速 -{v}%，持续 2 秒", "values": [20, 25, 30, 40], "max": 2},
 
 	# ———— 人物基础武器：左轮手枪（枪手）————
 	"revolver_damage": {"kind": "weapon", "character": "gunslinger", "name": "左轮·重弹", "desc": "子弹伤害 +{v}%", "values": [25, 37, 55, 75], "max": 5},

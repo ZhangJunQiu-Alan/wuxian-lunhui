@@ -1,0 +1,113 @@
+{
+  "failures": [],
+  "notes": [
+    "太刀逐帧拆层在 24 帧可见像素上完全还原。单一手持与刀鞘按通用挂点合成时仍有 3593 个不同像素，页面保留两种视图。",
+    "水壁初稿有高于 200 的 alpha，已改为上限 192。收剑动作初稿有 50 色，已并至 48 色。诛仙图标补齐了 1 像素留边。",
+    "按确认图重做五套腰挂。刀柄朝前上方，鞘尾往身后斜下；拔刀与回鞘期间保留独立空鞘。其余六套沿用原持械方式并调整轮廓。",
+    "高清概念由内置图像工具生成。游戏尺寸由概念重新描像素，旧动作以原画局部拆修，新动作沿用原角色躯干和服装并重绘手臂。",
+    "武器规则按本地任务书转述。任务书引用的 Claude 设计稿未能打开核对逐字文本。",
+    "视频是独立 Godot 工程的预编排素材演示。正式游戏的判伤、数值、输入、敌人和状态逻辑仍属后续接入。",
+    "新版 Godot 录屏均逐段解码计帧，补录诛仙近身靶位。"
+  ],
+  "metrics": {
+    "spin_seam_delta": 0.0038147,
+    "body_actions": 14,
+    "body_frames": 64,
+    "new_fx": 46,
+    "ui_icons": 10,
+    "new_wav": 19,
+    "new_png": 125,
+    "universal_katana_delta_px": 3593,
+    "composited_frames": 1408,
+    "max_arc_edge_px": 0.773,
+    "userdata_files_checked": 9,
+    "fx_polished": 46,
+    "review_notes_seen": 10,
+    "godot_frame_complete_clips": 10
+  },
+  "reconstruction": {
+    "idle": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "move": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "attack": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "hurt": [
+      0,
+      0
+    ],
+    "death": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  "atlases": {
+    "katana": "previews/mounts/katana.png",
+    "muramasa": "previews/mounts/muramasa.png",
+    "monohoshizao": "previews/mounts/monohoshizao.png",
+    "duanshui": "previews/mounts/duanshui.png",
+    "higekiri": "previews/mounts/higekiri.png",
+    "ganjiang_moye": "previews/mounts/ganjiang_moye.png",
+    "zhuxian": "previews/mounts/zhuxian.png",
+    "qinglong": "previews/mounts/qinglong.png",
+    "excalibur": "previews/mounts/excalibur.png",
+    "riyue": "previews/mounts/riyue.png",
+    "chunyang": "previews/mounts/chunyang.png"
+  },
+  "arc_previews": {
+    "qinglong_sweep": "previews/hit_ranges/qinglong_sweep.png",
+    "qinglong_sweep_360": "previews/hit_ranges/qinglong_sweep_360.png",
+    "qinglong_spin": "previews/hit_ranges/qinglong_spin.png",
+    "qinglong_heavy": "previews/hit_ranges/qinglong_heavy.png",
+    "excalibur_slash": "previews/hit_ranges/excalibur_slash.png",
+    "katana_slash": "previews/hit_ranges/katana_slash.png",
+    "muramasa_slash": "previews/hit_ranges/muramasa_slash.png",
+    "monohoshizao_slash": "previews/hit_ranges/monohoshizao_slash.png",
+    "duanshui_slash": "previews/hit_ranges/duanshui_slash.png",
+    "duanshui_scar": "previews/hit_ranges/duanshui_scar.png",
+    "higekiri_slash": "previews/hit_ranges/higekiri_slash.png",
+    "higekiri_oni_slash": "previews/hit_ranges/higekiri_oni_slash.png",
+    "ganjiang_slash": "previews/hit_ranges/ganjiang_slash.png",
+    "moye_slash": "previews/hit_ranges/moye_slash.png",
+    "zhuxian_slash_zhu": "previews/hit_ranges/zhuxian_slash_zhu.png",
+    "zhuxian_slash_lu": "previews/hit_ranges/zhuxian_slash_lu.png",
+    "zhuxian_slash_xian": "previews/hit_ranges/zhuxian_slash_xian.png",
+    "zhuxian_slash_jue": "previews/hit_ranges/zhuxian_slash_jue.png",
+    "riyue_sun_sweep": "previews/hit_ranges/riyue_sun_sweep.png",
+    "riyue_moon_thrust": "previews/hit_ranges/riyue_moon_thrust.png",
+    "riyue_sun_wheel": "previews/hit_ranges/riyue_sun_wheel.png",
+    "chunyang_slash": "previews/hit_ranges/chunyang_slash.png"
+  },
+  "contrasts": {
+    "断水 / 斯卡蒂冰晶": "previews/contrast_duanshui.png",
+    "诛仙浮剑 / 弗雷飞剑": "previews/contrast_zhuxian.png",
+    "湖中剑 / 次元斩": "previews/contrast_excalibur.png"
+  },
+  "candidates": {
+    "断水水壁第一版": "candidates/duanshui_scar_v1.png",
+    "收剑动作第一版": "candidates/swordsman_bare_sheathe_v1.png",
+    "诛仙图标第一版": "candidates/zhuxian_icon_v1.png",
+    "物干竿刀鞘第一版": "candidates/monohoshizao_stow_v1.png",
+    "概念全览": "previews/concepts_contact.jpg"
+  }
+}

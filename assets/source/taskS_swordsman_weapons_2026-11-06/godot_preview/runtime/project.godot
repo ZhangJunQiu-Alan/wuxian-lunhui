@@ -1,0 +1,17 @@
+config_version=5
+
+[application]
+config/name="S-SW Swordsmith Preview"
+run/main_scene="res://preview.tscn"
+config/use_custom_user_dir=true
+config/custom_user_dir_name="S-SW-art-preview-2026-11-06"
+
+[display]
+window/size/viewport_width=1280
+window/size/viewport_height=720
+window/size/window_width_override=1280
+window/size/window_height_override=720
+
+[rendering]
+renderer/rendering_method="gl_compatibility"
+textures/canvas_textures/default_texture_filter=0

@@ -1,0 +1,36 @@
+{
+  "all": "previews/carry_2026-11-09/all_idle.png",
+  "waist": "previews/carry_2026-11-09/waist_idle.png",
+  "move": "previews/carry_2026-11-09/waist_move.png",
+  "attack": {
+    "katana": "previews/carry_2026-11-09/katana_attack.png",
+    "muramasa": "previews/carry_2026-11-09/muramasa_attack.png",
+    "duanshui": "previews/carry_2026-11-09/duanshui_attack.png",
+    "higekiri": "previews/carry_2026-11-09/higekiri_attack.png",
+    "excalibur": "previews/carry_2026-11-09/excalibur_attack.png"
+  },
+  "checks": {
+    "katana": {
+      "checked_frames": 27,
+      "tail_exits_idle_outline": true
+    },
+    "muramasa": {
+      "checked_frames": 27,
+      "tail_exits_idle_outline": true
+    },
+    "duanshui": {
+      "checked_frames": 27,
+      "tail_exits_idle_outline": true
+    },
+    "higekiri": {
+      "checked_frames": 27,
+      "tail_exits_idle_outline": true
+    },
+    "excalibur": {
+      "checked_frames": 27,
+      "tail_exits_idle_outline": true
+    }
+  },
+  "handoffs": "previews/carry_2026-11-09/handoffs.png",
+  "godot": "previews/carry_2026-11-09/godot_handoffs.png"
+}

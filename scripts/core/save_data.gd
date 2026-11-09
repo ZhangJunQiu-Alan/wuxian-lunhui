@@ -12,6 +12,7 @@ var reward_points := 0
 var meta := {}  # 永久强化 id -> 等级
 var stats := _default_stats()
 var selected_character := "swordsman"
+var swordsman_weapon := "katana"
 var selected_level := "midgard"
 var cleared_levels: Array[String] = []  # 通关过的关卡 id
 ## 图鉴：分类 -> {id: 次数}。敌人记击杀数，Boss 记击败次数，强化记选择次数
@@ -51,6 +52,7 @@ func load_game() -> void:
 	for id: String in data.get("meta", {}):
 		meta[id] = int(data.meta[id])
 	selected_character = data.get("selected_character", "swordsman")
+	swordsman_weapon = SwordsmanLoadout.valid(str(data.get("swordsman_weapon", "katana")))
 	selected_level = data.get("selected_level", "midgard")
 	cleared_levels.assign(data.get("cleared_levels", []))
 	var saved_stats: Dictionary = data.get("stats", {})
@@ -81,7 +83,7 @@ func load_game() -> void:
 ## 先写到临时文件再改名，写到一半断电也不会把原存档写坏
 func save_game() -> void:
 	var data := {"version": VERSION, "reward_points": reward_points, "meta": meta, "stats": stats,
-		"selected_character": selected_character,
+		"selected_character": selected_character, "swordsman_weapon": swordsman_weapon,
 		"selected_level": selected_level, "cleared_levels": cleared_levels, "codex": codex, "fates": fates}
 	var tmp_path := path + ".tmp"
 	var file := FileAccess.open(tmp_path, FileAccess.WRITE)
@@ -113,6 +115,11 @@ func buy_meta(id: String) -> bool:
 
 func select_character(id: String) -> void:
 	selected_character = id
+	save_game()
+
+
+func select_swordsman_weapon(id: String) -> void:
+	swordsman_weapon = SwordsmanLoadout.valid(id)
 	save_game()
 
 
@@ -165,6 +172,7 @@ func reset() -> void:
 	meta = {}
 	stats = _default_stats()
 	selected_character = "swordsman"
+	swordsman_weapon = "katana"
 	selected_level = "midgard"
 	cleared_levels = []
 	codex = _empty_codex()

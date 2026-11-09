@@ -1,0 +1,610 @@
+[
+  {
+    "id": "katana",
+    "title": "STARTER KATANA",
+    "stage": 0,
+    "seconds": 2,
+    "cues": [
+      {
+        "start": 0,
+        "text": "Stowed / waist",
+        "action": "idle",
+        "fx": "",
+        "length": 0.48
+      },
+      {
+        "start": 1,
+        "text": "Draw and cut",
+        "action": "attack",
+        "fx": "katana_slash",
+        "length": 0.48
+      }
+    ]
+  },
+  {
+    "id": "muramasa",
+    "title": "MURAMASA",
+    "stage": 0,
+    "seconds": 5,
+    "cues": [
+      {
+        "start": 0,
+        "text": "Chain starts",
+        "action": "idle",
+        "fx": "",
+        "length": 0.48
+      },
+      {
+        "start": 0.65,
+        "text": "Chain 01",
+        "action": "attack",
+        "fx": "muramasa_slash",
+        "length": 0.48
+      },
+      {
+        "start": 1.47,
+        "text": "Chain 02 / faster",
+        "action": "attack",
+        "fx": "muramasa_slash",
+        "length": 0.48,
+        "speed": 1.4
+      },
+      {
+        "start": 2.1,
+        "text": "Chain 03 / fastest",
+        "action": "attack",
+        "fx": "muramasa_slash",
+        "length": 0.48,
+        "speed": 1.9,
+        "glow": true
+      },
+      {
+        "start": 3.03,
+        "text": "Chain broken / Thirst",
+        "action": "idle",
+        "fx": "",
+        "length": 1.9,
+        "overlay": "muramasa_thirst",
+        "glow": true,
+        "sound": "muramasa_thirst"
+      }
+    ]
+  },
+  {
+    "id": "monohoshizao",
+    "title": "MONOHOSHIZAO",
+    "stage": 0,
+    "seconds": 5,
+    "cues": [
+      {
+        "start": 0,
+        "text": "Two targets / 110 and 165 px bands",
+        "action": "idle",
+        "fx": "",
+        "length": 0.48,
+        "ranges": [
+          110,
+          165
+        ]
+      },
+      {
+        "start": 0.95,
+        "text": "Inside / reduced damage",
+        "action": "attack",
+        "fx": "monohoshizao_slash",
+        "length": 0.48,
+        "ranges": [
+          110,
+          165
+        ],
+        "focus": 0,
+        "damage": "INNER"
+      },
+      {
+        "start": 2.7,
+        "text": "Tip / full damage",
+        "action": "attack",
+        "fx": "monohoshizao_slash",
+        "length": 0.48,
+        "ranges": [
+          110,
+          165
+        ],
+        "focus": 1,
+        "damage": "TIP",
+        "secondary": "monohoshizao_tip",
+        "sound": "monohoshizao_tip"
+      }
+    ]
+  },
+  {
+    "id": "duanshui",
+    "title": "DUANSHUI",
+    "stage": 0,
+    "seconds": 5,
+    "cues": [
+      {
+        "start": 0,
+        "text": "Draw the bronze blade",
+        "action": "idle",
+        "fx": "",
+        "length": 0.48
+      },
+      {
+        "start": 0.84,
+        "text": "Cut the water",
+        "action": "attack",
+        "fx": "duanshui_slash",
+        "length": 0.48
+      },
+      {
+        "start": 1.14,
+        "text": "Scar remains / target enters",
+        "action": "idle",
+        "fx": "duanshui_scar",
+        "length": 3.7,
+        "sound": "duanshui_scar",
+        "move_target": true,
+        "secondary": "duanshui_splash"
+      }
+    ]
+  },
+  {
+    "id": "higekiri",
+    "title": "HIGEKIRI",
+    "stage": 0,
+    "seconds": 6,
+    "cues": [
+      {
+        "start": 0,
+        "text": "Tachi / edge down",
+        "action": "idle",
+        "fx": "",
+        "length": 0.48
+      },
+      {
+        "start": 0.7,
+        "text": "Oni awakens",
+        "action": "idle",
+        "fx": "",
+        "length": 0.82,
+        "overlay": "higekiri_oni_aura",
+        "horns": true,
+        "glow": true,
+        "sound": "higekiri_oni_on"
+      },
+      {
+        "start": 1.58,
+        "text": "Oni double cut",
+        "action": "attack",
+        "fx": "higekiri_oni_slash",
+        "length": 0.48,
+        "overlay": "higekiri_oni_aura",
+        "horns": true,
+        "glow": true
+      },
+      {
+        "start": 2.44,
+        "text": "Oni double cut",
+        "action": "attack",
+        "fx": "higekiri_oni_slash",
+        "length": 0.48,
+        "overlay": "higekiri_oni_aura",
+        "horns": true,
+        "glow": true
+      },
+      {
+        "start": 3.42,
+        "text": "Gauge depleted / exhaustion",
+        "action": "hurt",
+        "fx": "",
+        "length": 2.3,
+        "overlay": "higekiri_exhaust",
+        "sound": "higekiri_exhaust"
+      }
+    ]
+  },
+  {
+    "id": "ganjiang_moye",
+    "title": "GANJIANG & MOYE",
+    "stage": 1,
+    "seconds": 6,
+    "cues": [
+      {
+        "start": 0,
+        "text": "Dual wield",
+        "action": "idle",
+        "fx": "",
+        "length": 0.48
+      },
+      {
+        "start": 0.8,
+        "text": "Throw Moye",
+        "action": "throw",
+        "fx": "moye_trail",
+        "length": 0.65,
+        "projectile": "out",
+        "sound": "moye_throw"
+      },
+      {
+        "start": 1.46,
+        "text": "Planted / sword link sweeps target",
+        "action": "idle",
+        "fx": "moye_planted_ring",
+        "length": 2.33,
+        "projectile": "plant",
+        "sound": "ganjiang_link"
+      },
+      {
+        "start": 3.83,
+        "text": "Recall to off hand",
+        "action": "idle",
+        "fx": "moye_trail",
+        "length": 0.8,
+        "projectile": "return",
+        "sound": "moye_return"
+      },
+      {
+        "start": 4.77,
+        "text": "Ganjiang / amber cut",
+        "action": "attack",
+        "fx": "ganjiang_slash",
+        "length": 0.48
+      },
+      {
+        "start": 5.32,
+        "text": "Moye / blue countercut",
+        "action": "off_attack",
+        "fx": "moye_slash",
+        "length": 0.48
+      }
+    ]
+  },
+  {
+    "id": "zhuxian",
+    "title": "FOUR RITUAL SWORDS",
+    "stage": 1,
+    "seconds": 6,
+    "cues": [
+      {
+        "start": 0,
+        "text": "Reserve swords / stationary stance",
+        "action": "idle",
+        "fx": "",
+        "length": 0.48,
+        "variant": "zhu"
+      },
+      {
+        "start": 0.74,
+        "text": "01 / ZHU",
+        "action": "attack",
+        "fx": "zhuxian_slash_zhu",
+        "length": 0.48,
+        "variant": "zhu",
+        "flight": true
+      },
+      {
+        "start": 1.78,
+        "text": "02 / LU / bleed",
+        "action": "attack",
+        "fx": "zhuxian_slash_lu",
+        "length": 0.48,
+        "variant": "lu",
+        "flight": true,
+        "secondary": "zhuxian_bleed"
+      },
+      {
+        "start": 2.88,
+        "text": "03 / XIAN / seal",
+        "action": "attack",
+        "fx": "zhuxian_slash_xian",
+        "length": 0.48,
+        "variant": "xian",
+        "flight": true,
+        "secondary": "zhuxian_talisman",
+        "sound": "zhuxian_xian"
+      },
+      {
+        "start": 4.07,
+        "text": "04 / JUE / execute",
+        "action": "attack",
+        "fx": "zhuxian_slash_jue",
+        "length": 0.48,
+        "variant": "jue",
+        "flight": true,
+        "secondary": "zhuxian_execute",
+        "sound": "zhuxian_jue"
+      }
+    ]
+  },
+  {
+    "id": "qinglong",
+    "title": "QINGLONG YANYUEDAO",
+    "stage": 1,
+    "seconds": 7,
+    "cues": [
+      {
+        "start": 0,
+        "text": "Crescent blade / right hand",
+        "action": "idle",
+        "fx": "",
+        "length": 0.48
+      },
+      {
+        "start": 0.43,
+        "text": "Jade sweep",
+        "action": "attack",
+        "fx": "qinglong_sweep",
+        "length": 0.35
+      },
+      {
+        "start": 0.78,
+        "text": "K HELD / wind up",
+        "action": "spin",
+        "fx": "qinglong_spin",
+        "length": 1.16,
+        "speed": 0.7,
+        "sound": "qinglong_spin_loop",
+        "spin": true
+      },
+      {
+        "start": 1.94,
+        "text": "K HELD / accelerating",
+        "action": "spin",
+        "fx": "qinglong_spin",
+        "length": 1.34,
+        "speed": 1.65,
+        "spin": true
+      },
+      {
+        "start": 3.28,
+        "text": "K RELEASED / heavy impact",
+        "action": "heavy",
+        "fx": "qinglong_heavy",
+        "length": 0.71,
+        "delay": 0.17,
+        "sound": "qinglong_heavy"
+      },
+      {
+        "start": 4.43,
+        "text": "Dragon avatar",
+        "action": "idle",
+        "fx": "",
+        "length": 1.05,
+        "overlay": "qinglong_avatar",
+        "glow": true,
+        "sound": "qinglong_avatar"
+      },
+      {
+        "start": 5.66,
+        "text": "Avatar / full circle",
+        "action": "attack",
+        "fx": "qinglong_sweep_360",
+        "length": 0.48,
+        "overlay": "qinglong_avatar",
+        "glow": true
+      }
+    ]
+  },
+  {
+    "id": "excalibur",
+    "title": "EXCALIBUR",
+    "stage": 2,
+    "seconds": 8,
+    "cues": [
+      {
+        "start": 0,
+        "text": "Manual cut",
+        "action": "attack",
+        "fx": "excalibur_slash",
+        "length": 0.48
+      },
+      {
+        "start": 0.75,
+        "text": "Sheathe",
+        "action": "sheathe",
+        "fx": "",
+        "length": 0.38,
+        "sound": "excalibur_sheathe"
+      },
+      {
+        "start": 1.13,
+        "text": "Guard / charging 4 seconds",
+        "action": "iai_stance",
+        "fx": "",
+        "length": 4,
+        "overlay": "excalibur_guard",
+        "charge": true,
+        "glow": true
+      },
+      {
+        "start": 5.13,
+        "text": "Fully charged",
+        "action": "iai_stance",
+        "fx": "excalibur_charge_full",
+        "length": 0.58,
+        "overlay": "excalibur_guard",
+        "glow": true,
+        "sound": "excalibur_charge_full"
+      },
+      {
+        "start": 5.76,
+        "text": "Iai dash / 300 px",
+        "action": "iai_dash",
+        "fx": "excalibur_dash_trail",
+        "length": 0.3,
+        "dash": 300,
+        "tile": 300,
+        "sound": "excalibur_iai"
+      },
+      {
+        "start": 6.06,
+        "text": "Line bursts after 0.3 s",
+        "action": "idle",
+        "fx": "excalibur_line_burst",
+        "length": 1.4,
+        "shift": 300,
+        "tile": 300,
+        "cap": "excalibur_line_cap"
+      }
+    ]
+  },
+  {
+    "id": "riyue",
+    "title": "SUN & MOON SABERS",
+    "stage": 2,
+    "seconds": 6,
+    "cues": [
+      {
+        "start": 0,
+        "text": "Moon ready / swap to sun",
+        "action": "idle",
+        "fx": "",
+        "length": 0.48,
+        "variant": "moon"
+      },
+      {
+        "start": 0.72,
+        "text": "Swap to sun",
+        "action": "idle",
+        "fx": "riyue_swap",
+        "length": 0.48,
+        "variant": "sun",
+        "sound": "riyue_swap"
+      },
+      {
+        "start": 0.99,
+        "text": "Sun / warm slash",
+        "action": "attack",
+        "fx": "riyue_sun_sweep",
+        "length": 0.48,
+        "variant": "sun"
+      },
+      {
+        "start": 1.55,
+        "text": "Sun wheel",
+        "action": "spin",
+        "fx": "riyue_sun_wheel",
+        "length": 0.6,
+        "variant": "sun",
+        "spin": true
+      },
+      {
+        "start": 2.8,
+        "text": "Swap to moon",
+        "action": "idle",
+        "fx": "riyue_swap",
+        "length": 0.48,
+        "variant": "moon",
+        "sound": "riyue_swap"
+      },
+      {
+        "start": 3.08,
+        "text": "Moon / cold thrust",
+        "action": "thrust",
+        "fx": "riyue_moon_thrust",
+        "length": 0.48,
+        "variant": "moon"
+      },
+      {
+        "start": 3.66,
+        "text": "Moon lunge / three thrusts",
+        "action": "thrust",
+        "fx": "riyue_moon_lunge",
+        "length": 0.6,
+        "variant": "moon",
+        "dash": 120
+      },
+      {
+        "start": 4.3,
+        "text": "Recover / moon main",
+        "action": "idle",
+        "fx": "",
+        "length": 0.48,
+        "variant": "moon",
+        "shift": 120
+      }
+    ]
+  },
+  {
+    "id": "chunyang",
+    "title": "CHUNYANG",
+    "stage": 2,
+    "seconds": 8,
+    "cues": [
+      {
+        "start": 0,
+        "text": "Sober / gourd on the hip",
+        "action": "idle",
+        "fx": "",
+        "length": 0.48,
+        "tipsy": 0
+      },
+      {
+        "start": 0.7,
+        "text": "Drink 01",
+        "action": "drink",
+        "fx": "chunyang_drink",
+        "length": 0.57,
+        "sound": "chunyang_drink",
+        "tipsy": 1
+      },
+      {
+        "start": 1.55,
+        "text": "One drink / flying qi",
+        "action": "attack",
+        "fx": "chunyang_qi",
+        "length": 0.74,
+        "projectile": "qi",
+        "tipsy": 1
+      },
+      {
+        "start": 2.65,
+        "text": "Drink 02",
+        "action": "drink",
+        "fx": "chunyang_drink",
+        "length": 0.57,
+        "sound": "chunyang_drink",
+        "tipsy": 2
+      },
+      {
+        "start": 3.49,
+        "text": "Two drinks / tipsy stance",
+        "action": "idle",
+        "fx": "",
+        "length": 0.8,
+        "tipsy": 2,
+        "overlay": "chunyang_tipsy"
+      },
+      {
+        "start": 4.63,
+        "text": "Drink 03",
+        "action": "drink",
+        "fx": "chunyang_drink",
+        "length": 0.57,
+        "sound": "chunyang_drink",
+        "tipsy": 3
+      },
+      {
+        "start": 5.66,
+        "text": "Three drinks / drunken step",
+        "action": "iai_dash",
+        "fx": "chunyang_dodge",
+        "length": 0.48,
+        "dash": -70,
+        "tipsy": 3,
+        "overlay": "chunyang_tipsy"
+      },
+      {
+        "start": 6.16,
+        "text": "Recover / three drinks",
+        "action": "idle",
+        "fx": "",
+        "length": 0.48,
+        "tipsy": 3,
+        "shift": -70,
+        "overlay": "chunyang_tipsy"
+      }
+    ]
+  }
+]

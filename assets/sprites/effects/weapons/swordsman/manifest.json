@@ -1,0 +1,995 @@
+[
+  {
+    "id": "qinglong_sweep",
+    "weapon": "qinglong",
+    "label": "普攻横扫",
+    "file": "sprites/effects/weapons/swordsman/qinglong_sweep.png",
+    "size": [
+      143,
+      281
+    ],
+    "frames": 4,
+    "fps": 16,
+    "play": "once",
+    "anchor": [
+      2,
+      140
+    ],
+    "anchor_type": "player",
+    "base_deg": 0,
+    "layer": 0,
+    "radius": 138,
+    "angle": 180
+  },
+  {
+    "id": "qinglong_sweep_360",
+    "weapon": "qinglong",
+    "label": "青龙附体横扫",
+    "file": "sprites/effects/weapons/swordsman/qinglong_sweep_360.png",
+    "size": [
+      281,
+      281
+    ],
+    "frames": 4,
+    "fps": 16,
+    "play": "once",
+    "anchor": [
+      140,
+      140
+    ],
+    "anchor_type": "player",
+    "base_deg": 0,
+    "layer": 0,
+    "radius": 138,
+    "angle": 360
+  },
+  {
+    "id": "qinglong_spin",
+    "weapon": "qinglong",
+    "label": "偃月风暴",
+    "file": "sprites/effects/weapons/swordsman/qinglong_spin.png",
+    "size": [
+      281,
+      281
+    ],
+    "frames": 4,
+    "fps": 16,
+    "play": "loop",
+    "anchor": [
+      140,
+      140
+    ],
+    "anchor_type": "player",
+    "base_deg": 0,
+    "layer": 0,
+    "radius": 138,
+    "angle": 360
+  },
+  {
+    "id": "qinglong_heavy",
+    "weapon": "qinglong",
+    "label": "松手重劈与地裂",
+    "file": "sprites/effects/weapons/swordsman/qinglong_heavy.png",
+    "size": [
+      155,
+      305
+    ],
+    "frames": 6,
+    "fps": 16,
+    "play": "once",
+    "anchor": [
+      2,
+      152
+    ],
+    "anchor_type": "player",
+    "base_deg": 0,
+    "layer": 0,
+    "radius": 150,
+    "angle": 180
+  },
+  {
+    "id": "qinglong_avatar",
+    "weapon": "qinglong",
+    "label": "青龙附体外圈",
+    "file": "sprites/effects/weapons/swordsman/qinglong_avatar.png",
+    "size": [
+      128,
+      128
+    ],
+    "frames": 6,
+    "fps": 12,
+    "play": "loop",
+    "anchor": [
+      64,
+      64
+    ],
+    "anchor_type": "body_frame",
+    "base_deg": 0,
+    "layer": 7
+  },
+  {
+    "id": "excalibur_slash",
+    "weapon": "excalibur",
+    "label": "手动挥砍",
+    "file": "sprites/effects/weapons/swordsman/excalibur_slash.png",
+    "size": [
+      115,
+      225
+    ],
+    "frames": 4,
+    "fps": 16,
+    "play": "once",
+    "anchor": [
+      2,
+      112
+    ],
+    "anchor_type": "player",
+    "base_deg": 0,
+    "layer": 0,
+    "radius": 110,
+    "angle": 120
+  },
+  {
+    "id": "excalibur_guard",
+    "weapon": "excalibur",
+    "label": "收鞘护体",
+    "file": "sprites/effects/weapons/swordsman/excalibur_guard.png",
+    "size": [
+      64,
+      64
+    ],
+    "frames": 4,
+    "fps": 8,
+    "play": "loop",
+    "anchor": [
+      32,
+      32
+    ],
+    "anchor_type": "body_frame",
+    "base_deg": 0,
+    "layer": 7
+  },
+  {
+    "id": "excalibur_charge_full",
+    "weapon": "excalibur",
+    "label": "四秒蓄满闪光",
+    "file": "sprites/effects/weapons/swordsman/excalibur_charge_full.png",
+    "size": [
+      48,
+      48
+    ],
+    "frames": 4,
+    "fps": 16,
+    "play": "once",
+    "anchor": [
+      24,
+      24
+    ],
+    "anchor_type": "scabbard_mouth",
+    "base_deg": 0,
+    "layer": 0
+  },
+  {
+    "id": "excalibur_dash_trail",
+    "weapon": "excalibur",
+    "label": "拔剑冲刺尾迹",
+    "file": "sprites/effects/weapons/swordsman/excalibur_dash_trail.png",
+    "size": [
+      32,
+      24
+    ],
+    "frames": 4,
+    "fps": 16,
+    "play": "once",
+    "anchor": [
+      0,
+      12
+    ],
+    "anchor_type": "effect_origin",
+    "base_deg": 0,
+    "layer": 0,
+    "tile": true
+  },
+  {
+    "id": "excalibur_line_burst",
+    "weapon": "excalibur",
+    "label": "延迟刀痕爆开",
+    "file": "sprites/effects/weapons/swordsman/excalibur_line_burst.png",
+    "size": [
+      32,
+      48
+    ],
+    "frames": 6,
+    "fps": 16,
+    "play": "once",
+    "anchor": [
+      0,
+      24
+    ],
+    "anchor_type": "effect_origin",
+    "base_deg": 0,
+    "layer": 0,
+    "tile": true
+  },
+  {
+    "id": "excalibur_line_cap",
+    "weapon": "excalibur",
+    "label": "爆开线段端帽",
+    "file": "sprites/effects/weapons/swordsman/excalibur_line_cap.png",
+    "size": [
+      32,
+      48
+    ],
+    "frames": 6,
+    "fps": 16,
+    "play": "once",
+    "anchor": [
+      5,
+      24
+    ],
+    "anchor_type": "effect_origin",
+    "base_deg": 0,
+    "layer": 0
+  },
+  {
+    "id": "katana_slash",
+    "weapon": "katana",
+    "label": "太刀 · 银白回锋",
+    "file": "sprites/effects/weapons/swordsman/katana_slash.png",
+    "size": [
+      115,
+      225
+    ],
+    "frames": 4,
+    "fps": 16,
+    "play": "once",
+    "anchor": [
+      2,
+      112
+    ],
+    "anchor_type": "player",
+    "base_deg": 0,
+    "layer": 0,
+    "radius": 110,
+    "angle": 120
+  },
+  {
+    "id": "muramasa_slash",
+    "weapon": "muramasa",
+    "label": "普攻细红刃线",
+    "file": "sprites/effects/weapons/swordsman/muramasa_slash.png",
+    "size": [
+      115,
+      225
+    ],
+    "frames": 4,
+    "fps": 16,
+    "play": "once",
+    "anchor": [
+      2,
+      112
+    ],
+    "anchor_type": "player",
+    "base_deg": 0,
+    "layer": 0,
+    "radius": 110,
+    "angle": 120
+  },
+  {
+    "id": "muramasa_thirst",
+    "weapon": "muramasa",
+    "label": "断连 · 渴",
+    "file": "sprites/effects/weapons/swordsman/muramasa_thirst.png",
+    "size": [
+      64,
+      64
+    ],
+    "frames": 4,
+    "fps": 8,
+    "play": "loop",
+    "anchor": [
+      32,
+      32
+    ],
+    "anchor_type": "body_frame",
+    "base_deg": 0,
+    "layer": 7
+  },
+  {
+    "id": "monohoshizao_slash",
+    "weapon": "monohoshizao",
+    "label": "刀尖伤害区",
+    "file": "sprites/effects/weapons/swordsman/monohoshizao_slash.png",
+    "size": [
+      170,
+      335
+    ],
+    "frames": 4,
+    "fps": 16,
+    "play": "once",
+    "anchor": [
+      2,
+      167
+    ],
+    "anchor_type": "player",
+    "base_deg": 0,
+    "layer": 0,
+    "radius": 165,
+    "angle": 90
+  },
+  {
+    "id": "monohoshizao_tip",
+    "weapon": "monohoshizao",
+    "label": "刀尖命中 · 燕形闪光",
+    "file": "sprites/effects/weapons/swordsman/monohoshizao_tip.png",
+    "size": [
+      32,
+      32
+    ],
+    "frames": 4,
+    "fps": 16,
+    "play": "once",
+    "anchor": [
+      16,
+      16
+    ],
+    "anchor_type": "hit",
+    "base_deg": 0,
+    "layer": 0
+  },
+  {
+    "id": "duanshui_slash",
+    "weapon": "duanshui",
+    "label": "分水横斩",
+    "file": "sprites/effects/weapons/swordsman/duanshui_slash.png",
+    "size": [
+      115,
+      225
+    ],
+    "frames": 4,
+    "fps": 16,
+    "play": "once",
+    "anchor": [
+      2,
+      112
+    ],
+    "anchor_type": "player",
+    "base_deg": 0,
+    "layer": 0,
+    "radius": 110,
+    "angle": 120
+  },
+  {
+    "id": "duanshui_scar",
+    "weapon": "duanshui",
+    "label": "水壁斩痕",
+    "file": "sprites/effects/weapons/swordsman/duanshui_scar.png",
+    "size": [
+      115,
+      225
+    ],
+    "frames": 8,
+    "fps": 16,
+    "play": "phased",
+    "anchor": [
+      2,
+      112
+    ],
+    "anchor_type": "player",
+    "base_deg": 0,
+    "layer": 0,
+    "radius": 110,
+    "angle": 120,
+    "timeline": {
+      "appear": [
+        0,
+        1
+      ],
+      "loop": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "fade": [
+        6,
+        7
+      ]
+    }
+  },
+  {
+    "id": "duanshui_splash",
+    "weapon": "duanshui",
+    "label": "斩痕命中水花",
+    "file": "sprites/effects/weapons/swordsman/duanshui_splash.png",
+    "size": [
+      24,
+      24
+    ],
+    "frames": 4,
+    "fps": 16,
+    "play": "once",
+    "anchor": [
+      12,
+      12
+    ],
+    "anchor_type": "hit",
+    "base_deg": 0,
+    "layer": 0
+  },
+  {
+    "id": "higekiri_slash",
+    "weapon": "higekiri",
+    "label": "普通刀光",
+    "file": "sprites/effects/weapons/swordsman/higekiri_slash.png",
+    "size": [
+      115,
+      225
+    ],
+    "frames": 4,
+    "fps": 16,
+    "play": "once",
+    "anchor": [
+      2,
+      112
+    ],
+    "anchor_type": "player",
+    "base_deg": 0,
+    "layer": 0,
+    "radius": 110,
+    "angle": 120
+  },
+  {
+    "id": "higekiri_oni_slash",
+    "weapon": "higekiri",
+    "label": "鬼化交叉双刀线",
+    "file": "sprites/effects/weapons/swordsman/higekiri_oni_slash.png",
+    "size": [
+      115,
+      225
+    ],
+    "frames": 4,
+    "fps": 16,
+    "play": "once",
+    "anchor": [
+      2,
+      112
+    ],
+    "anchor_type": "player",
+    "base_deg": 0,
+    "layer": 0,
+    "radius": 110,
+    "angle": 120
+  },
+  {
+    "id": "higekiri_oni_aura",
+    "weapon": "higekiri",
+    "label": "鬼气绕身",
+    "file": "sprites/effects/weapons/swordsman/higekiri_oni_aura.png",
+    "size": [
+      64,
+      64
+    ],
+    "frames": 4,
+    "fps": 8,
+    "play": "loop",
+    "anchor": [
+      32,
+      32
+    ],
+    "anchor_type": "body_frame",
+    "base_deg": 0,
+    "layer": 7
+  },
+  {
+    "id": "higekiri_oni_horns",
+    "weapon": "higekiri",
+    "label": "鬼角",
+    "file": "sprites/effects/weapons/swordsman/higekiri_oni_horns.png",
+    "size": [
+      14,
+      10
+    ],
+    "frames": 2,
+    "fps": 6,
+    "play": "loop",
+    "anchor": [
+      7,
+      8
+    ],
+    "anchor_type": "head",
+    "base_deg": 0,
+    "layer": 6
+  },
+  {
+    "id": "higekiri_exhaust",
+    "weapon": "higekiri",
+    "label": "脱力白气",
+    "file": "sprites/effects/weapons/swordsman/higekiri_exhaust.png",
+    "size": [
+      64,
+      64
+    ],
+    "frames": 4,
+    "fps": 8,
+    "play": "loop",
+    "anchor": [
+      32,
+      32
+    ],
+    "anchor_type": "body_frame",
+    "base_deg": 0,
+    "layer": 7
+  },
+  {
+    "id": "ganjiang_slash",
+    "weapon": "ganjiang_moye",
+    "label": "雄剑普攻",
+    "file": "sprites/effects/weapons/swordsman/ganjiang_slash.png",
+    "size": [
+      115,
+      225
+    ],
+    "frames": 4,
+    "fps": 16,
+    "play": "once",
+    "anchor": [
+      2,
+      112
+    ],
+    "anchor_type": "player",
+    "base_deg": 0,
+    "layer": 0,
+    "radius": 110,
+    "angle": 120
+  },
+  {
+    "id": "moye_slash",
+    "weapon": "ganjiang_moye",
+    "label": "莫邪 · 霜蓝反切",
+    "file": "sprites/effects/weapons/swordsman/moye_slash.png",
+    "size": [
+      115,
+      225
+    ],
+    "frames": 4,
+    "fps": 16,
+    "play": "once",
+    "anchor": [
+      2,
+      112
+    ],
+    "anchor_type": "player",
+    "base_deg": 0,
+    "layer": 0,
+    "radius": 110,
+    "angle": 120
+  },
+  {
+    "id": "moye_trail",
+    "weapon": "ganjiang_moye",
+    "label": "莫邪飞行拖尾",
+    "file": "sprites/effects/weapons/swordsman/moye_trail.png",
+    "size": [
+      48,
+      16
+    ],
+    "frames": 4,
+    "fps": 16,
+    "play": "loop",
+    "anchor": [
+      0,
+      8
+    ],
+    "anchor_type": "effect_origin",
+    "base_deg": 0,
+    "layer": 0
+  },
+  {
+    "id": "moye_planted_ring",
+    "weapon": "ganjiang_moye",
+    "label": "莫邪插地",
+    "file": "sprites/effects/weapons/swordsman/moye_planted_ring.png",
+    "size": [
+      48,
+      24
+    ],
+    "frames": 4,
+    "fps": 8,
+    "play": "loop",
+    "anchor": [
+      24,
+      12
+    ],
+    "anchor_type": "effect_origin",
+    "base_deg": 0,
+    "layer": 0
+  },
+  {
+    "id": "ganjiang_link",
+    "weapon": "ganjiang_moye",
+    "label": "金蓝剑气连线",
+    "file": "sprites/effects/weapons/swordsman/ganjiang_link.png",
+    "size": [
+      32,
+      16
+    ],
+    "frames": 4,
+    "fps": 12,
+    "play": "loop",
+    "anchor": [
+      0,
+      8
+    ],
+    "anchor_type": "effect_origin",
+    "base_deg": 0,
+    "layer": 0,
+    "tile": true
+  },
+  {
+    "id": "zhuxian_slash_zhu",
+    "weapon": "zhuxian",
+    "label": "诛 · 厚金",
+    "file": "sprites/effects/weapons/swordsman/zhuxian_slash_zhu.png",
+    "size": [
+      115,
+      225
+    ],
+    "frames": 4,
+    "fps": 16,
+    "play": "once",
+    "anchor": [
+      2,
+      112
+    ],
+    "anchor_type": "player",
+    "base_deg": 0,
+    "layer": 0,
+    "radius": 110,
+    "angle": 120
+  },
+  {
+    "id": "zhuxian_slash_lu",
+    "weapon": "zhuxian",
+    "label": "戮 · 绯红",
+    "file": "sprites/effects/weapons/swordsman/zhuxian_slash_lu.png",
+    "size": [
+      115,
+      225
+    ],
+    "frames": 4,
+    "fps": 16,
+    "play": "once",
+    "anchor": [
+      2,
+      112
+    ],
+    "anchor_type": "player",
+    "base_deg": 0,
+    "layer": 0,
+    "radius": 110,
+    "angle": 120
+  },
+  {
+    "id": "zhuxian_slash_xian",
+    "weapon": "zhuxian",
+    "label": "陷 · 靛紫",
+    "file": "sprites/effects/weapons/swordsman/zhuxian_slash_xian.png",
+    "size": [
+      115,
+      225
+    ],
+    "frames": 4,
+    "fps": 16,
+    "play": "once",
+    "anchor": [
+      2,
+      112
+    ],
+    "anchor_type": "player",
+    "base_deg": 0,
+    "layer": 0,
+    "radius": 110,
+    "angle": 120
+  },
+  {
+    "id": "zhuxian_slash_jue",
+    "weapon": "zhuxian",
+    "label": "绝 · 墨痕",
+    "file": "sprites/effects/weapons/swordsman/zhuxian_slash_jue.png",
+    "size": [
+      115,
+      225
+    ],
+    "frames": 4,
+    "fps": 16,
+    "play": "once",
+    "anchor": [
+      2,
+      112
+    ],
+    "anchor_type": "player",
+    "base_deg": 0,
+    "layer": 0,
+    "radius": 110,
+    "angle": 120
+  },
+  {
+    "id": "zhuxian_bleed",
+    "weapon": "zhuxian",
+    "label": "戮 · 流血",
+    "file": "sprites/effects/weapons/swordsman/zhuxian_bleed.png",
+    "size": [
+      24,
+      24
+    ],
+    "frames": 4,
+    "fps": 16,
+    "play": "loop",
+    "anchor": [
+      12,
+      12
+    ],
+    "anchor_type": "target",
+    "base_deg": 0,
+    "layer": 0
+  },
+  {
+    "id": "zhuxian_talisman",
+    "weapon": "zhuxian",
+    "label": "陷 · 贴符定身",
+    "file": "sprites/effects/weapons/swordsman/zhuxian_talisman.png",
+    "size": [
+      24,
+      32
+    ],
+    "frames": 4,
+    "fps": 8,
+    "play": "once",
+    "anchor": [
+      12,
+      16
+    ],
+    "anchor_type": "target",
+    "base_deg": 0,
+    "layer": 0,
+    "timeline": {
+      "appear": [
+        0,
+        1
+      ],
+      "hold": [
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "zhuxian_execute",
+    "weapon": "zhuxian",
+    "label": "绝 · 墨斩处决",
+    "file": "sprites/effects/weapons/swordsman/zhuxian_execute.png",
+    "size": [
+      96,
+      96
+    ],
+    "frames": 6,
+    "fps": 16,
+    "play": "once",
+    "anchor": [
+      48,
+      48
+    ],
+    "anchor_type": "target",
+    "base_deg": 0,
+    "layer": 0
+  },
+  {
+    "id": "riyue_sun_sweep",
+    "weapon": "riyue",
+    "label": "日刀横扫",
+    "file": "sprites/effects/weapons/swordsman/riyue_sun_sweep.png",
+    "size": [
+      115,
+      225
+    ],
+    "frames": 4,
+    "fps": 16,
+    "play": "once",
+    "anchor": [
+      2,
+      112
+    ],
+    "anchor_type": "player",
+    "base_deg": 0,
+    "layer": 0,
+    "radius": 110,
+    "angle": 180
+  },
+  {
+    "id": "riyue_moon_thrust",
+    "weapon": "riyue",
+    "label": "月刀窄刺",
+    "file": "sprites/effects/weapons/swordsman/riyue_moon_thrust.png",
+    "size": [
+      148,
+      291
+    ],
+    "frames": 4,
+    "fps": 16,
+    "play": "once",
+    "anchor": [
+      2,
+      145
+    ],
+    "anchor_type": "player",
+    "base_deg": 0,
+    "layer": 0,
+    "radius": 143,
+    "angle": 60
+  },
+  {
+    "id": "riyue_sun_wheel",
+    "weapon": "riyue",
+    "label": "日轮环斩",
+    "file": "sprites/effects/weapons/swordsman/riyue_sun_wheel.png",
+    "size": [
+      225,
+      225
+    ],
+    "frames": 6,
+    "fps": 16,
+    "play": "once",
+    "anchor": [
+      112,
+      112
+    ],
+    "anchor_type": "player",
+    "base_deg": 0,
+    "layer": 0,
+    "radius": 110,
+    "angle": 360
+  },
+  {
+    "id": "riyue_moon_lunge",
+    "weapon": "riyue",
+    "label": "月牙突进与三连刺",
+    "file": "sprites/effects/weapons/swordsman/riyue_moon_lunge.png",
+    "size": [
+      160,
+      48
+    ],
+    "frames": 6,
+    "fps": 16,
+    "play": "once",
+    "anchor": [
+      16,
+      24
+    ],
+    "anchor_type": "effect_origin",
+    "base_deg": 0,
+    "layer": 0
+  },
+  {
+    "id": "riyue_swap",
+    "weapon": "riyue",
+    "label": "日月交错换手",
+    "file": "sprites/effects/weapons/swordsman/riyue_swap.png",
+    "size": [
+      48,
+      48
+    ],
+    "frames": 4,
+    "fps": 16,
+    "play": "once",
+    "anchor": [
+      24,
+      24
+    ],
+    "anchor_type": "hand",
+    "base_deg": 0,
+    "layer": 0
+  },
+  {
+    "id": "chunyang_slash",
+    "weapon": "chunyang",
+    "label": "清白剑光",
+    "file": "sprites/effects/weapons/swordsman/chunyang_slash.png",
+    "size": [
+      115,
+      225
+    ],
+    "frames": 4,
+    "fps": 16,
+    "play": "once",
+    "anchor": [
+      2,
+      112
+    ],
+    "anchor_type": "player",
+    "base_deg": 0,
+    "layer": 0,
+    "radius": 110,
+    "angle": 120
+  },
+  {
+    "id": "chunyang_qi",
+    "weapon": "chunyang",
+    "label": "一醉脱手剑气",
+    "file": "sprites/effects/weapons/swordsman/chunyang_qi.png",
+    "size": [
+      48,
+      24
+    ],
+    "frames": 4,
+    "fps": 16,
+    "play": "loop",
+    "anchor": [
+      24,
+      12
+    ],
+    "anchor_type": "effect_origin",
+    "base_deg": 0,
+    "layer": 0
+  },
+  {
+    "id": "chunyang_drink",
+    "weapon": "chunyang",
+    "label": "饮酒酒花",
+    "file": "sprites/effects/weapons/swordsman/chunyang_drink.png",
+    "size": [
+      24,
+      24
+    ],
+    "frames": 6,
+    "fps": 12,
+    "play": "once",
+    "anchor": [
+      12,
+      12
+    ],
+    "anchor_type": "mouth",
+    "base_deg": 0,
+    "layer": 0
+  },
+  {
+    "id": "chunyang_tipsy",
+    "weapon": "chunyang",
+    "label": "醉红与酒泡",
+    "file": "sprites/effects/weapons/swordsman/chunyang_tipsy.png",
+    "size": [
+      16,
+      12
+    ],
+    "frames": 2,
+    "fps": 6,
+    "play": "loop",
+    "anchor": [
+      8,
+      4
+    ],
+    "anchor_type": "head",
+    "base_deg": 0,
+    "layer": 6
+  },
+  {
+    "id": "chunyang_dodge",
+    "weapon": "chunyang",
+    "label": "三醉脚下酒雾",
+    "file": "sprites/effects/weapons/swordsman/chunyang_dodge.png",
+    "size": [
+      32,
+      32
+    ],
+    "frames": 4,
+    "fps": 16,
+    "play": "once",
+    "anchor": [
+      16,
+      16
+    ],
+    "anchor_type": "feet",
+    "base_deg": 0,
+    "layer": 0
+  }
+]
