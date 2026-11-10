@@ -30,7 +30,7 @@ const ALL := {
 		"passive": "纸牌神射", "passive_desc": "每个弹匣的最后一发必定暴击，命中后分裂成两发",
 		"ult_name": "狂野西部秀", "ult_desc": "8 秒狂热：射速 ×4、不用换弹、子弹穿透、移速 +30%、击杀回血",
 		"ult_cost": 60.0,
-		"unlock": {"type": "clears", "value": 1, "text": "通关篇章一第 1 关"},
+		"unlock": {"type": "none"},
 		"cutin_moment": "巡演舞台 · 第一声枪响",
 		"cutin_line": "女士们，先生们——\n表演开始了。",
 		"cutin_color": Color(1.0, 0.65, 0.3),
