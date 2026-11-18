@@ -420,7 +420,7 @@ func _physics_process(delta: float) -> void:
 		SpriteVisual.animate(_sprite, _anim_t, maxf(0.25, move.length()), gait, move.x, _attack_offset() + lift)  # 站着不动时也轻微呼吸
 
 	if player_dist < radius + Player.RADIUS:
-		target.take_damage(contact_damage)
+		target.take_damage(contact_damage, self)
 
 
 ## 被迷惑：走向最近的同伴去咬它
@@ -595,7 +595,10 @@ func apply_slow(amount: float, duration: float) -> void:
 func take_damage(amount: float, knockback: Vector2 = Vector2.ZERO, crit: bool = false) -> void:
 	if _dead:
 		return
+	var incoming := amount
 	if amount > 0.0:
+		if SetEffects.active:
+			amount = SetEffects.active.modify_damage(self, amount)
 		if has_status("gold_net"):
 			amount *= 1.0 + GOLD_NET_BONUS
 		if not crit and crit_chance > 0.0 and randf() < crit_chance:
@@ -607,7 +610,10 @@ func take_damage(amount: float, knockback: Vector2 = Vector2.ZERO, crit: bool = 
 		position += side * (40.0 if randf() < 0.5 else -40.0)
 		FxLayer.floating_text(global_position + Vector2(0, -radius - 4), tr("闪避"), color.lightened(0.4))
 		return
+	var dealt := minf(amount, maxf(hp, 0.0))
 	hp -= amount
+	if amount > 0.0 and SetEffects.active:
+		SetEffects.active.on_damage_dealt(self, dealt, incoming, knockback, _quiet)
 	_knockback += knockback / mass  # 越重越难击退
 	_flash_time = 0.08
 	queue_redraw()
@@ -623,13 +629,14 @@ func _die() -> void:
 	_dead = true
 	remove_from_group("enemies")
 	_remove_from_grid()
-	var gem := XpGem.new()
-	gem.value = xp_value
-	gem.big = is_elite
-	gem.player = target
-	gem.position = position
-	# 在物理回调中不能直接加碰撞体相关节点，所以用 call_deferred 延迟到帧末
-	get_parent().call_deferred("add_child", gem)
+	if xp_value > 0:
+		var gem := XpGem.new()
+		gem.value = xp_value
+		gem.big = is_elite
+		gem.player = target
+		gem.position = position
+		# 在物理回调中不能直接加碰撞体相关节点，所以用 call_deferred 延迟到帧末
+		get_parent().call_deferred("add_child", gem)
 	if not FxLayer.death(global_position, color, is_elite):
 		FxLayer.burst(global_position, color, 30 if is_elite else 8, 220.0 if is_elite else 150.0)
 	Audio.sfx("big_death" if is_elite or radius >= 20.0 else "enemy_death", -2.0)

@@ -6,33 +6,24 @@ extends Control
 signal closed
 
 const PANEL_WIDTH := 560.0
-const GOLD := Color(1.0, 0.85, 0.4)
+const GOLD := UiKit.GOLD
 
 var allow_language := true  # 战斗中关掉：局内很多文字是开局时生成的，中途换语言会中英混杂
 
 
 func _ready() -> void:
 	set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
+	theme = UiKit.theme()  # 暂停菜单在 CanvasLayer 里，接不到根窗口的主题
 	process_mode = Node.PROCESS_MODE_ALWAYS
 	visible = false
 
-	var overlay := ColorRect.new()
-	overlay.color = Color(0, 0, 0, 0.6)
-	overlay.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
-	add_child(overlay)
+	add_child(UiKit.scrim())
 	var center := CenterContainer.new()
 	center.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
 	add_child(center)
 
-	var panel := PanelContainer.new()
+	var panel := UiKit.framed(28)
 	panel.custom_minimum_size = Vector2(PANEL_WIDTH, 0)
-	var style := StyleBoxFlat.new()
-	style.bg_color = Color(0.07, 0.08, 0.12)
-	style.border_color = GOLD
-	style.set_border_width_all(2)
-	style.set_corner_radius_all(10)
-	style.set_content_margin_all(24)
-	panel.add_theme_stylebox_override("panel", style)
 	center.add_child(panel)
 
 	var box := VBoxContainer.new()
@@ -47,13 +38,13 @@ func _ready() -> void:
 		_option(grid, tr("语言"), codes.map(func(code: String) -> String: return Settings.LANGUAGES[code]), codes.find(Settings.current_language()),
 			func(index: int) -> void: Settings.change("language", codes[index]))
 
-	box.add_child(_title(tr("声音"), 15, Color(0.7, 0.73, 0.8)))
+	box.add_child(UiKit.heading(tr("声音")))
 	grid = _grid(box)
 	_slider(grid, tr("主音量"), "master_volume")
 	_slider(grid, tr("音乐"), "music_volume")
 	_slider(grid, tr("音效"), "sfx_volume")
 
-	box.add_child(_title(tr("画面"), 15, Color(0.7, 0.73, 0.8)))
+	box.add_child(UiKit.heading(tr("画面")))
 	grid = _grid(box)
 	_option(grid, tr("窗口大小"), Settings.WINDOW_SIZES.map(func(v: Vector2i) -> String: return "%d × %d" % [v.x, v.y]), Settings.window_size,
 		func(index: int) -> void: Settings.change("window_size", index))
@@ -61,17 +52,13 @@ func _ready() -> void:
 	_toggle(grid, tr("垂直同步"), "vsync")
 	_toggle(grid, tr("显示帧率"), "show_fps")
 
-	box.add_child(_title(tr("战斗"), 15, Color(0.7, 0.73, 0.8)))
+	box.add_child(UiKit.heading(tr("战斗")))
 	grid = _grid(box)
 	_toggle(grid, tr("伤害数字"), "damage_numbers")
 	_slider(grid, tr("屏幕震动"), "screen_shake")
 
-	var back := Button.new()
-	back.text = tr("返回  [Esc]")
-	back.custom_minimum_size = Vector2(200, 44)
+	var back := UiKit.primary(tr("返回  [Esc]"), close, Vector2(200, 44))
 	back.size_flags_horizontal = Control.SIZE_SHRINK_CENTER
-	back.focus_mode = Control.FOCUS_NONE
-	back.pressed.connect(close)
 	box.add_child(back)
 
 
@@ -151,6 +138,7 @@ func _row_label(text: String) -> Label:
 	var label := Label.new()
 	label.text = text
 	label.custom_minimum_size = Vector2(90, 0)
+	label.add_theme_color_override("font_color", UiKit.IVORY)
 	return label
 
 

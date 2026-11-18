@@ -27,6 +27,8 @@ const DASH_GHOST_EVERY := 0.022  # 冲刺途中每隔多久留下一个残影
 const DASH_STRETCH := Vector2(1.22, 0.82)  # 冲刺时身体顺着方向拉长、压扁（这是横着冲的比例）
 
 var character_id := CharacterDB.DEFAULT_ID
+var swordsman_kit_override := ""
+var dash_through_obstacles := true
 var data: Dictionary  # 角色数据（CharacterDB 里的一项）
 
 # 基础属性（开局时按角色数据设置）
@@ -123,7 +125,7 @@ func _ready() -> void:
 	ult_cost = data.ult_cost
 
 	# 素材：assets/sprites/characters/<角色id>_idle/_move/_hurt/_death.png 动作帧条，没有就用 <角色id>.png
-	var kit_id := SwordsmanLoadout.valid(Save.swordsman_weapon)
+	var kit_id := SwordsmanLoadout.valid(Save.swordsman_weapon if swordsman_kit_override.is_empty() else swordsman_kit_override)
 	if character_id == "swordsman":
 		_actions = SwordsmanArt.create_body(kit_id, SPRITE_HEIGHT)
 		if _actions:
@@ -351,6 +353,14 @@ func weapon_dash(direction: Vector2, distance: float) -> Vector2:
 	_dash_time = DASH_TIME + DASH_INVINCIBLE
 	_dash_from = position
 	_dash_to = MapLayer.push_out(Game.clamp_to_map(position + direction * distance, RADIUS), RADIUS)
+	if not dash_through_obstacles:
+		_dash_to = position
+		var steps := maxi(1, ceili(distance / RADIUS))
+		for i in range(1, steps + 1):
+			var step := Game.clamp_to_map(position + direction * (distance * i / steps), RADIUS)
+			if not MapLayer.push_out(step, RADIUS).is_equal_approx(step):
+				break
+			_dash_to = step
 	_dash_t = 0.0
 	_ghost_timer = 0.0
 	Audio.sfx("dash")
@@ -387,7 +397,7 @@ func _update_dash(delta: float) -> void:
 
 ## 在当前位置留下一个渐隐的蓝色残影
 func _spawn_ghost(alpha: float) -> void:
-	if not _sprite:
+	if not _sprite or not is_visible_in_tree():
 		return
 	if swordsman_weapon:
 		swordsman_weapon.sync_art()
@@ -451,7 +461,8 @@ func _update_shake(delta: float) -> void:
 		_camera.offset = Vector2(randf_range(-1, 1), randf_range(-1, 1)) * _shake_strength
 
 
-func take_damage(amount: float) -> void:
+## source 是打人的敌人（荆棘反刺要知道刺谁）；弹幕、地面火焰这类说不清是谁的就不传
+func take_damage(amount: float, source: Node2D = null) -> void:
 	if is_dead or _invincible_time > 0.0 or shield_time > 0.0 or _dash_time > 0.0 or immune_time > 0.0:
 		return
 	_invincible_time = INVINCIBLE_DURATION
@@ -470,6 +481,10 @@ func take_damage(amount: float) -> void:
 		return
 	if swordsman_weapon and amount < max_hp:
 		amount *= swordsman_weapon.defensive_multiplier()
+	if SetEffects.active:  # 套装：龙鳞挡下、猛志减伤、荆棘反刺
+		amount = SetEffects.active.on_player_hit(amount, source)
+		if amount <= 0.0:
+			return
 	hp = maxf(0.0, hp - amount)
 	_hurt_time = 0.25
 	Audio.sfx("player_death" if hp <= 0.0 else "player_hurt")
@@ -496,7 +511,28 @@ func add_god(god_id: String) -> void:
 
 ## 基础武器的冷却倍率
 func weapon_cooldown() -> float:
-	return cooldown_mult * weapon_cooldown_mult
+	return cooldown_mult * weapon_cooldown_mult * (SetEffects.active.weapon_cooldown_mult() if SetEffects.active else 1.0)
+
+
+func base_weapon() -> Node:
+	for weapon: Node in [katana, revolver, blades, nova]:
+		if weapon:
+			return weapon
+	return null
+
+
+## 基础武器打一下的伤害（套装效果里说的「武器伤害」）
+func weapon_damage() -> float:
+	var weapon := base_weapon()
+	return weapon.damage * damage_mult if weapon else 0.0
+
+
+## 基础武器两次出手的间隔（秒）
+func weapon_interval() -> float:
+	var weapon := base_weapon()
+	if weapon == null:
+		return 1.0
+	return (weapon.fire_interval if weapon is Revolver else weapon.cooldown) * weapon_cooldown()
 
 
 ## 基础武器伤害 +bonus（没有数值的武器卡抽到高稀有度时的附带加成）

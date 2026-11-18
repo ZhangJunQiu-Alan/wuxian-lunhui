@@ -269,7 +269,6 @@ Godot 引擎许可证,Godot Engine License
 返回  [Esc],Back  [Esc]
 主神空间,Lord God's Space
 化身,Avatars
-关卡,Stages
 永久强化,Upgrades
 图鉴,Codex
 设置  [Esc],Settings  [Esc]
@@ -280,23 +279,15 @@ Godot 引擎许可证,Godot Engine License
 被动,Passive
 大招,Ultimate
 第 %d 关,Stage %d
-Boss：,Bosses: 
-化身：%s · %s,Avatar: %s · %s
-"以 %s 进入%s
-第 %d 关 · %s    [Enter]","Enter as %s: %s
-Stage %d · %s    [Enter]"
 已选择,Selected
 制作中,In Development
 未解锁：通关上一关,Locked: clear the previous stage
 选择,Select
-未解锁：,Locked: 
-奖励点  %d,Reward Points  %d
 轮回 %d 次　通关 %d 次　最久存活 %s　最快通关 %s　累计击杀 %d,Runs %d   Clears %d   Longest survival %s   Fastest clear %s   Total kills %d
 已满级,Maxed
 "强化
 %d 点","Upgrade
 %d pts"
-确定要清空所有奖励点、永久强化和战绩吗？此操作无法撤销。,"Clear all Reward Points, permanent upgrades, and stats? This cannot be undone."
 清空,Clear
 取消,Cancel
 %s  等级 %d,%s  Lv %d
@@ -726,3 +717,462 @@ K / 右键挥剑，随后收鞘蓄力。蓄满后再按，发动居合。,"Press
 日、月普攻交替。K / 右键换手，发动日轮或月牙。,Alternates Sun and Moon attacks. Press K or right-click to swap and trigger Sun Wheel or Moon Lunge.
 纯阳剑,Chunyang Sword
 K / 右键饮酒。一醉出剑气，二醉加快出刀，三醉可醉步闪避。,"Press K or right-click to drink. One drink unlocks sword qi, two speed up attacks, and three grant a dodge."
+获得装备：%s,Gear found: %s
+龙鳞抵挡,Scale blocked
+当前穿戴,Equipped
+套装效果,Set Bonus
+%s · 已激活,%s · Active
+穿齐同一套的 4 件防具，触发套装效果。,Wear all 4 pieces of one set to activate its bonus.
+还没有穿任何防具。击败 Boss 会掉落所在关卡的套装部件。,No armor equipped yet. Bosses drop set pieces from their stage.
+全部,All
+防具收集  %d / %d,Armor collected  %d / %d
+武器 · %s,Weapon · %s
+这位化身目前只有自带的武器。,This avatar only has their own weapon for now.
+第 %d 关 · %s,Stage %d · %s
+%s · 已有 %d / %d,%s · Owned %d / %d
+%s（未获得）,%s (not owned)
+穿,ON
+穿上整套,Equip Set
+选一件装备查看详情。,Select an item to see its details.
+使用中,In Use
+使用这把武器,Use This Weapon
+第 %d 关 · %s 掉落,Drops in Stage %d · %s
+套装效果 · %s,Set Bonus · %s
+已穿 %d / %d,Worn %d / %d
+规则：%s,Rule: %s
+未获得 · 击败第 %d 关的 Boss 掉落,Not owned · dropped by Stage %d bosses
+卸下,Unequip
+穿上,Equip
+装备,Gear
+快捷键 %d,Shortcut %d
+更换武器 ›,Change weapon ›
+整理装备 ›,Manage gear ›
+生命 %d　移速 %d　大招充能 %d 击杀,HP %d　Speed %d　Ultimate: %d kills
+套装 · %s　%s,Set · %s　%s
+套装 · 未激活（防具 %d / 4）,Set · inactive (armor %d / 4)
+本关掉落,Drops
+已通关,Cleared
+未通关,Not cleared
+奖励点不够，还差 %d 点,Not enough Reward Points: %d short
+确定要清空所有奖励点、永久强化、装备和战绩吗？此操作无法撤销。,"Erase all Reward Points, upgrades, gear and records? This cannot be undone."
+获得装备 · %s,Gear found · %s
+获得装备,Gear Found
+套装　%s · %s：%s,Set　%s · %s: %s
+头盔,Helm
+胸甲,Chest
+护腿,Legs
+鞋子,Boots
+荆誓骑士,Thornsworn Knight
+荆棘反刺,Thorn Riposte
+受到攻击时，荆棘反刺攻击者，造成「这次受到的伤害 ×3 + 你的武器伤害」，并把 120 像素内的敌人全部推开。0.5 秒内最多触发一次,"When you are hit, thorns strike back at the attacker for (damage taken ×3 + your weapon damage) and push away every enemy within 120 px. Triggers at most once every 0.5 s"
+"据说，在诸王尚未加冕的年代，曾有一位骑士向荆棘之王立下誓言。
+他以血肉为薪，以苦痛为证，将自己的性命交付于荆棘。
+自此，凡向他挥剑者，皆将被荆棘铭记。
+而那位骑士，至死未曾摘下头顶的荆冠。","It is said that in an age before the kings were crowned, a knight swore an oath to the King of Thorns.
+With flesh as kindling and pain as witness, he gave his life over to the thorns.
+From then on, whoever raised a blade against him would be remembered by them.
+And the knight never once took off his crown of thorns, to the day he died."
+"承受攻击之际，荆棘自血肉中骤然生长，反噬来犯之敌，造成相当于本次所受伤害三倍与自身武器伤害之和的伤害。
+荆棘蔓延四方，将周围 120 像素内的敌人尽数逼退。
+此誓每隔半秒，方可再次应验。","The moment you are struck, thorns burst from your flesh and turn on the attacker, dealing three times the damage you took plus your weapon damage.
+The thorns spread outward and drive back every enemy within 120 px.
+The oath can be answered again only after half a second."
+荆冠盔,Thorncrown Helm
+"以枯萎荆枝编织而成的头盔，枝刺深深扎入佩戴者的头骨。
+冠冕本应象征荣耀，而这顶荆冠，只授予那些甘愿承受苦难之人。","A helm woven from withered thorn branches, its spines driven deep into the wearer's skull.
+A crown should stand for glory. This one is given only to those willing to suffer."
+荆誓胸甲,Thornsworn Cuirass
+"覆有暗红锈迹的古老铠甲，甲缝间生长着不知名的黑色荆藤。
+据说每一道刻痕，都是曾经刺入骑士身躯的利刃。那些伤口早已愈合，荆棘却仍记得它们。
+骑士以血肉为薪，荆棘便一年比一年繁茂。","Ancient plate stained with dark red rust, nameless black brambles growing from its seams.
+Every notch, they say, is a blade that once pierced the knight. The wounds healed long ago, but the thorns remember.
+The knight fed them his flesh, and each year they grew thicker."
+缠刺护腿,Bramblebound Greaves
+"荆藤沿着护腿的铁片盘绕而上，尖刺穿透甲胄，仿佛与穿戴者的血肉融为一体。
+它从不保护双腿，只是确保骑士在倒下之前，仍能继续前行。","Brambles coil up the iron plates, their spines punching through the armor as if fused with the wearer's flesh.
+They never protected his legs. They only made sure he kept walking until he fell."
+荆根战靴,Thornroot Sabatons
+"由漆黑铁片与枯死的荆根锻造而成，沉重得不像凡人所能穿戴。
+据说穿上它的人，双足便再也无法踏入没有荆棘的土地。","Forged from black iron plates and dead thorn roots, far too heavy for any mortal.
+Those who wear them, it is said, can never again set foot on ground where no thorns grow."
+刑天,Xingtian
+猛志,Unbroken Will
+每受到一次攻击叠 1 层，每层受到的伤害 -8%，最多 5 层（-40%）。每次挨打都刷新时间，10 秒没挨打就逐层消失,"Each hit you take grants 1 stack; each stack reduces damage taken by 8%, up to 5 stacks (-40%). Every hit refreshes the timer; after 10 s without being hit, the stacks fade one by one"
+"上古之时，炎帝与黄帝争位，刑天随炎帝而战。兵败之后，刑天追至天庭，与黄帝再决雌雄。
+黄帝挥剑断其首，埋首于常羊之山。
+然而刑天并未死去。
+他以双乳为目，以肚脐为口，左手执盾，右手持斧，再度起舞。
+后世有人在常羊山中发现一座无名冢，冢中埋藏着一套不曾腐朽的战甲。
+冢前石碑，仅刻八字：
+「形虽已陨，志不可夺。」","In ancient days the Flame Emperor and the Yellow Emperor fought for the throne, and Xingtian fought for the Flame Emperor. After the defeat he chased the Yellow Emperor to the heavenly court for one more duel.
+The Yellow Emperor struck off his head and buried it beneath Mount Changyang.
+But Xingtian did not die.
+With his nipples for eyes and his navel for a mouth, shield in his left hand and axe in his right, he began to dance again.
+Later, someone found a nameless tomb on Mount Changyang, and in it a suit of armor that had never rotted.
+The stone before it bore only eight characters:
+""The body has fallen. The will cannot be taken."""
+"每一次伤痛，皆化作不灭的战意。
+每受到一次攻击，获得一层「猛志」，使受到的伤害降低 8%，最多叠加五层。
+每次受击都会重新唤起这份战意。若十秒内未再受到攻击，猛志便逐层消散。","Every wound becomes will that cannot be put out.
+Each hit you take grants a stack of Unbroken Will, reducing damage taken by 8%, up to five stacks.
+Every hit rouses it again. If ten seconds pass without being hit, it fades one stack at a time."
+无首盔,Headless Helm
+"一顶没有面甲的古老战盔，头颅的位置空空如也。
+传说它的主人曾被斩去首级，却仍未放下手中的干戚。自那以后，便再无人敢以斩首作为终结战斗的手段。","An ancient war helm with no faceplate, empty where a head should be.
+Its owner was beheaded and still did not lower his axe and shield. Since then no one has dared to end a fight by taking a head."
+怒目胸甲,Glaring Cuirass
+"厚重的赤铜胸甲，正中央铸有一双怒目，仿佛仍在注视着世间的仇敌。
+甲身遍布刀斧留下的凹痕，却没有一道能够将其贯穿。那些伤痕并非败北的印记，而是战意尚存的证明。","A heavy cuirass of red bronze with a pair of furious eyes cast into its center, still watching every enemy in the world.
+It is covered in dents from axe and blade, and not one went through. They are not the marks of defeat. They are proof the will to fight remains."
+常羊护腿,Changyang Greaves
+"以常羊山的玄铁锻造而成，沉重异常，表面残留着暗红色的血迹。
+传闻刑天陨首之地，血染山石，历经千年亦未褪色。后来者将山石熔铸成甲，只为铭记那场未曾结束的战斗。","Forged from the black iron of Mount Changyang, impossibly heavy, with dark red bloodstains that never faded.
+Where Xingtian's head fell, his blood dyed the stone, and a thousand years did not wash it out. Later hands melted that stone into armor, to remember a battle that never ended."
+战舞靴,War-Dance Boots
+"靴底刻有古老的战舞纹路，每一道纹路都指向不同的杀伐方位。
+即使失去头颅，刑天仍以乳为目，以脐为口，操干戚而舞。此靴所踏之处，皆是尚未落幕的战场。","The soles are carved with the steps of an ancient war dance, each line pointing toward a different kill.
+Headless, with nipples for eyes and navel for mouth, Xingtian danced on with axe and shield. Wherever these boots tread, the battle is not yet over."
+夜之伯爵,Count of the Night
+血契,Blood Pact
+每次造成伤害，回复这次伤害 1% 的生命,"Every time you deal damage, heal for 1% of that damage"
+"相传他曾是披甲率军的督军，守卫边境，与异族厮杀不休。然而死亡并未带走他，岁月也未令他腐朽。
+在喀尔巴阡群山深处，那座被阴云与迷信包围的古堡中，伯爵依旧“活着”。他避开日光，远离十字与祷告，以活人的鲜血维系自身，熬过一个又一个世纪。
+人们谈论他时，总会先提及那身夜行衣装——高领遮住咽喉，斗篷垂落如蝠翼，举止仍有旧日贵族的从容。只是当他开口说出那句**「血就是生命」**时，古堡里往往已经没有活人了。","He was once an armored warlord, they say, guarding the border and slaughtering invaders without rest. Yet death did not take him, and the years did not rot him.
+Deep in the Carpathians, in an old castle wrapped in cloud and superstition, the Count still ""lives."" He shuns the sun, keeps clear of cross and prayer, and sustains himself on the blood of the living, century after century.
+People who speak of him always begin with his night attire: the high collar hiding his throat, the cloak hanging like a bat's wings, the easy manners of old nobility. But by the time he says **""The blood is the life,""** there is usually no one left alive in the castle."
+"**「血就是生命。」**
+伯爵早已舍弃凡人的安眠，只以鲜血延续漫长而空洞的存在。
+每次造成伤害时，回复相当于此次伤害 **1%** 的生命。
+凡被夺走的鲜血，终将回到契约的主人体内。","**""The blood is the life.""**
+The Count gave up mortal sleep long ago and prolongs his long, hollow existence with blood alone.
+Every time you deal damage, heal for **1%** of that damage.
+All blood that is taken returns in the end to the master of the pact."
+伯爵高领,Count's High Collar
+"一件立领极高的黑色内衬，布料早已失去凡人的温度。
+它严密地遮住咽喉，仿佛要将某种不洁的痕迹永远藏起。也有人说，那并不是为了遮掩伤口，而是为了提醒穿戴者——饥渴永远来自颈间。","A black underlayer with a very high collar, its cloth long since gone cold.
+It hides the throat completely, as if to bury some unclean mark forever. Some say it does not hide a wound at all. It reminds the wearer that the thirst always begins at the neck."
+蝠翼斗篷,Batwing Cloak
+"宽大的漆黑斗篷，展开时宛如巨蝠振翼，将月色与祈祷一并隔绝。
+伯爵总披着它穿行于古堡的长廊与墓园之间。斗篷掠过之处，只余寒意，而后便是失血者苍白的尸身。","A wide black cloak that opens like the wings of a great bat, shutting out moonlight and prayer alike.
+The Count wears it through the castle's corridors and graveyards. Where it passes it leaves only cold, and then a pale, bloodless corpse."
+黑呢马裤,Black Wool Breeches
+"裁制考究的深色马裤，仍保留着旧时代贵族的矜持与威仪。
+曾有人以为，优雅足以掩饰腐朽。可当夜色降临，再端正的衣装，也遮不住亡者步履间的死气。","Finely cut dark breeches that still keep the reserve and dignity of an older nobility.
+Some believed elegance could hide decay. But when night falls, even the neatest clothes cannot hide the deadness in a dead man's step."
+夜行长靴,Nightwalker Boots
+"一双为夜路而生的长靴，靴面不沾泥泞，靴跟也听不见回响。
+它陪伴主人走过石阶、教堂与坟地，跨越无数门槛。只是每当它停下时，往往意味着某个人再也等不到天亮。","Tall boots made for the night road. Mud does not cling to them, and their heels make no echo.
+They have carried their master over stone steps, through churches and graveyards, across countless thresholds. Whenever they stop, it usually means someone will not see the dawn."
+涅墨亚狮皮,Nemean Lionskin
+十二伟业,The Twelve Labors
+对精英和 Boss 的伤害 +35%,+35% damage to elites and bosses
+"涅墨亚的狮子，乃盘踞于荒野的灾厄。它刀剑不入，箭矢难伤，使山谷中的居民长期活在恐惧之中。
+赫拉克勒斯奉命前往讨伐。当弓箭与木棒都无法奏效时，他便弃去兵器，在狮穴深处与猛兽角力，最终以双臂将其扼死。
+随后，他以狮子自己的利爪剥下那张无坚可伤的皮，披挂于身，戴上狮首，继续踏上未竟的征途。那便是后来广为传颂的**十二件苦差**的开端。
+世人只记得那些伟业，称颂英雄战胜怪物、跨越山海的壮举。却很少提起，那一切最初并非为了荣耀，而是为了偿还血债——
+因为所谓伟业，本就是一场赎罪。","The lion of Nemea was a calamity that haunted the wilds. No blade could cut it and no arrow wound it, and the people of the valley lived in fear.
+Heracles was sent to kill it. When bow and club both failed, he threw his weapons aside, wrestled the beast in the depths of its den, and strangled it with his bare arms.
+Then he skinned it with its own claws, wore the hide no weapon could pierce, set its head upon his own, and walked on. That was the beginning of what the world would call **the Twelve Labors**.
+People remember only the great deeds, and praise the hero who beat monsters and crossed mountains and seas. Few recall that none of it began for glory. It began to pay a debt of blood.
+Because every great labor was, from the start, an atonement."
+"**「英雄的威名，往往建立在怪物的尸骸之上。」**
+披上涅墨亚狮皮者，仿佛承继了赫拉克勒斯迎战巨兽与异形的勇力。
+对**精英敌人**与 **Boss** 造成的伤害提高 **35%**。
+凡非常之敌，皆应以非常之力讨伐。","**""A hero's name is usually built on the bones of monsters.""**
+Whoever wears the Nemean lionskin inherits the strength Heracles brought against beasts and horrors.
+Damage to **elite enemies** and **bosses** is increased by **35%**.
+An extraordinary enemy calls for extraordinary force."
+狮首盔,Lion's Head Helm
+"以涅墨亚雄狮的头颅制成的头盔，獠牙犹在，鬃毛未朽。那野兽曾横行山谷，刀枪不入，连猎人的箭也只能无力折断。
+赫拉克勒斯将其扼死后，便戴上这颗狮首。自此，凡人不再只看见他的面容，也看见他所战胜的第一个恐怖。","A helm made from the head of the Nemean lion, fangs still in place, mane unrotted. The beast once ruled the valley, proof against every blade, and hunters' arrows simply snapped.
+After strangling it, Heracles put on its head. From then on mortals saw not only his face but the first terror he had beaten."
+狮皮披挂,Lionskin Mantle
+"覆于肩背的厚重狮皮，既是战利品，也是英雄最著名的装束。世人皆知那头狮子皮肉坚韧，寻常兵刃不能伤它分毫。
+据说赫拉克勒斯弃了弓与棒，在洞穴深处以双臂将它活活扼死，又以狮子自己的利爪，剥下这身无法被铁器割裂的皮毛。","A heavy lion's hide across the shoulders and back, both a trophy and the hero's most famous dress. Everyone knew the lion's hide was so tough that no common weapon could mark it.
+Heracles is said to have dropped bow and club, strangled it alive in the depths of its cave, and then skinned it with its own claws, since iron could not cut the pelt."
+青铜胫甲,Bronze Greaves
+"古旧而坚实的青铜胫甲，边缘已有长途跋涉磨出的钝痕。它并非王者凯旋时的装饰，而是一次次奔赴苦役之地时穿戴之物。
+从涅墨亚到厄律曼托斯，从斯廷法罗斯湖到冥府深处，英雄双足所经之处，留下的从来不是安逸，而是命定的劳苦。","Old, solid bronze greaves, their edges worn dull by long marches. They were never ornaments for a king's triumph. They were worn on the way to one labor after another.
+From Nemea to Erymanthos, from the Stymphalian lake to the depths of Hades, the hero's feet left behind not ease but the toil he was fated to."
+远征凉鞋,Campaign Sandals
+"为远行与征讨而制的凉鞋，鞋底厚实，沾满尘土与旧血。它陪伴赫拉克勒斯完成一件又一件看似不可能的伟业。
+有人将那些路称作荣光之途；可对背负罪责之人而言，那不过是尚未走完的赎罪之路。","Sandals made for long roads and campaigns, thick-soled, caked with dust and old blood. They carried Heracles through one impossible task after another.
+Some call those roads the path of glory. For a man carrying guilt, they were only the road of atonement he had not yet finished walking."
+屠龙者,Dragonslayer
+龙血,Dragon's Blood
+每 20 秒结一层龙鳞，完全挡下下一次伤害；挡下后重新计时,Every 20 s a dragon scale forms and fully blocks the next hit; the timer restarts once it has blocked
+"齐格弗里德曾独自讨伐恶龙，将其斩杀于荒野。
+他在滚烫的龙血中沐浴，浑身因此变得刀枪不入。唯有一片椴树叶恰巧落在他的肩背之间，遮住了那一小块未曾沾染龙血的肌肤。
+他的妻子克里姆希尔德知晓此事，为使旁人避开那处弱点，便在他的衣背上绣下一枚十字，标记那片致命之处。
+然而，十字最终没有成为庇护。
+哈根得知秘密后，趁狩猎之际，将长矛刺入那枚十字之下。
+那位曾沐浴龙血、斩杀恶龙的英雄，最终死于一处比树叶还小的伤口。
+世人传颂他的不死之躯，却只有那片椴树叶，见证了英雄的死亡。","Siegfried once went alone to hunt the dragon and killed it in the wilds.
+He bathed in its scalding blood, and his whole body became proof against blade and spear. Only a single linden leaf happened to fall between his shoulders, covering one small patch the blood never touched.
+His wife Kriemhild knew of it. So that others might steer clear of the weak spot, she stitched a cross onto the back of his coat to mark the fatal place.
+But the cross did not become his protection.
+When Hagen learned the secret, he waited for a hunt and drove his spear in beneath it.
+The hero who had bathed in dragon's blood and killed a dragon died of a wound smaller than a leaf.
+The world sings of his deathless body. Only the linden leaf saw him die."
+"「沐浴龙血者，刀剑不可伤。」
+屠龙者的血肉早已与巨龙的生命融为一体。
+每经过 20 秒，龙血便在体表凝结出一层龙鳞，完全抵挡下一次受到的伤害。
+龙鳞破碎之后，龙血重新凝聚，等待下一次苏醒。","""Whoever bathes in dragon's blood, no blade can harm.""
+The dragonslayer's flesh has long been bound to the dragon's life.
+Every 20 seconds the dragon's blood hardens into a scale on your skin that fully blocks the next hit you take.
+When the scale shatters, the blood gathers again and waits to wake once more."
+龙鳞盔,Dragonscale Helm
+"以恶龙的鳞片覆铸而成的战盔，坚硬如铁，鳞纹之间仍残留着暗红色的血迹。
+屠龙者曾戴着它走出龙穴。自那以后，世人仰望他的面容，仿佛看见了连死亡也无法触及的英雄。","A war helm plated with the dragon's scales, hard as iron, dark red blood still caught between them.
+The dragonslayer wore it out of the dragon's den. Since then, those who looked up at his face thought they saw a hero even death could not touch."
+龙血锁甲,Dragonblood Mail
+"浸染过龙血的锁甲，细密的鳞片彼此咬合，刀剑难以留下痕迹。
+传说齐格弗里德曾在恶龙的血泊中沐浴，自此获得不受兵刃伤害的躯体。
+然而，世间最坚固的铠甲，也未能庇护他周身的每一寸肌肤。","Mail steeped in dragon's blood, its fine scales locked so tightly that blades leave no mark.
+Siegfried, the story goes, bathed in the dragon's blood and gained a body no weapon could wound.
+Yet even the strongest armor in the world failed to cover every inch of him."
+龙鳞护腿,Dragonscale Greaves
+"由龙鳞与精钢编缀而成的护腿，沉重而坚实，鳞片间隐约可见凝固的血色。
+它曾陪伴英雄踏过恶龙的尸骸，走过无数战场。
+龙血赋予了双腿钢铁般的坚韧，却未曾改变英雄终将倒下的命运。","Greaves of dragon scale and fine steel, heavy and solid, with clotted red showing between the scales.
+They walked with the hero over the dragon's carcass and across countless battlefields.
+The blood gave his legs the strength of steel. It never changed the fate that he would fall."
+屠龙靴,Dragonslayer Boots
+"一双染有龙血的远征长靴，靴底留有焦黑的鳞屑与岩石碎痕。
+它的主人曾独自走进恶龙盘踞的洞窟，最终踏着巨龙的尸骸归来。
+后来，人们称那段路为英雄的归途。","Long campaign boots stained with dragon's blood, their soles marked with scorched scale and broken rock.
+Their owner walked alone into the dragon's cave and came back treading on its carcass.
+Later, people called that road the hero's way home."
+黄风大王,Yellow Wind King
+三昧神风,Samadhi Wind
+每 5 秒在你身边 300 像素内随机一处卷起一道沙尘暴，持续 4 秒，慢慢游走；卷进去的敌人每 0.5 秒受到武器伤害 50% 的伤害，并减速 30%。同时最多 2 道,"Every 5 s a sandstorm rises at a random spot within 300 px of you, lasts 4 s and drifts slowly; enemies caught in it take 50% of your weapon damage every 0.5 s and are slowed by 30%. Up to 2 at once"
+"黄风大王，本是灵山脚下得道的黄毛貂鼠，因偷吃琉璃盏中的清油，恐遭追究，遂逃往黄风岭，占山为王。
+他神通广大，尤擅三昧神风。
+当年孙悟空与其交战，妖王张口一吹，顿时飞沙走石，日月无光。齐天大圣纵有通天本领，也被吹得睁不开眼，难辨东西。
+后来悟空求得灵吉菩萨相助，方才降伏此妖。
+自此，黄风岭再无妖王盘踞，唯有旧日洞府深处，仍不时传来呜咽的风声。
+那不是山风，而是曾经吹得齐天大圣也睁不开眼的三昧神风。","The Yellow Wind King was a yellow-furred marten who gained the Way at the foot of Vulture Peak. He stole the clear oil from a crystal lamp, feared the reckoning, fled to Yellow Wind Ridge and made himself king of the mountain.
+His powers were great, and greatest of all was the Samadhi Wind.
+When Sun Wukong fought him, the demon king blew once, and sand and stone took flight until sun and moon went dark. For all his heaven-shaking skill, the Great Sage could not open his eyes or tell east from west.
+Only with the help of the Bodhisattva Lingji was the demon finally subdued.
+Since then no demon king has ruled Yellow Wind Ridge. Yet from deep in the old cave a moaning wind still rises now and then.
+It is not mountain wind. It is the Samadhi Wind that once blinded the Great Sage Equal to Heaven."
+"「风起黄沙，天地无光。」
+黄风乃三昧之风，吹山山塌，吹石石裂，纵是神佛，也难轻视。
+每隔 5 秒，在自身周围 300 像素范围内随机卷起一道沙尘暴。
+沙尘暴持续 4 秒，缓慢游走。被卷入其中的敌人，每隔 0.5 秒受到相当于武器伤害 50% 的伤害，并降低 30% 移动速度。
+场上最多同时存在两道沙尘暴。","""When the wind lifts the yellow sand, heaven and earth go dark.""
+The yellow wind is the wind of Samadhi. It levels mountains and splits stone, and even gods and buddhas do not take it lightly.
+Every 5 seconds a sandstorm rises at a random spot within 300 px of you.
+It lasts 4 seconds and drifts slowly. Enemies caught in it take 50% of your weapon damage every 0.5 seconds and move 30% slower.
+At most two sandstorms can exist at once."
+貂鼠皮帽,Marten-Fur Cap
+"以黄毛貂鼠的皮毛制成，绒毛细密，色泽枯黄，帽檐处还留有两枚尖锐的兽耳。
+据说此帽的主人曾在灵山脚下修行，后来却因一时贪念，盗取佛前灯油，遁入山野，做起了逞凶的妖王。","Made from the pelt of a yellow marten, the fur fine and the color of dry grass, with two sharp animal ears left on the brim.
+Its owner, they say, once practiced at the foot of Vulture Peak. Then a moment's greed made him steal the lamp oil before the Buddha, and he fled into the wilds to play the murderous demon king."
+黄风袍,Yellow Wind Robe
+"一袭土黄色的宽大长袍，衣角终年翻卷，仿佛有无形的狂风在其中流动。
+袍上绣有古怪的风纹，细看之下，竟像无数被卷入风中的生灵。传闻黄风大王每每现身，尚未见其真容，先闻衣袍猎猎之声","A wide robe the color of earth, its hem always curling as if an unseen gale ran through it.
+It is embroidered with strange wind patterns that, looked at closely, resemble countless living things swept up in the storm. Whenever the Yellow Wind King appeared, the snapping of his robe was heard before his face was seen."
+沙行绑腿,Sandwalker Wraps
+"以粗麻与黄沙编织而成的护腿，表面附着经年不散的砂砾。
+穿戴者行走于沙地之上，足迹转瞬便被黄沙吞没。那些曾试图追踪妖王的人，最终只在风中寻得一串逐渐消失的脚印。","Leg wraps woven of coarse hemp and yellow sand, their surface crusted with grit that never falls away.
+Whoever wears them walks on sand and leaves footprints the sand swallows at once. Those who tried to track the demon king found only a line of prints fading into the wind."
+卷沙靴,Whirlsand Boots
+"一双靴底刻有旋风纹路的旧靴，鞋跟磨损严重，却始终不染尘泥。
+据说它的主人所过之处，沙石皆随足而起，盘旋不落。凡人若想循着足迹追赶，往往只会迷失在漫天黄风之中。","Old boots with whirlwind patterns carved into the soles, heels badly worn, yet never touched by dust or mud.
+Wherever their owner passed, sand and stone rose at his feet and circled without falling. Mortals who tried to follow the prints only lost themselves in the yellow wind."
+圣杯骑士,Grail Knight
+无瑕,Flawless
+生命全满时，全伤害 +40%,"While at full health, all damage +40%"
+"加拉哈德，圆桌骑士之中最为纯洁的一人。
+他并非以武力闻名于世，也不曾渴求王权与荣耀。传说圣杯现世之时，众多骑士踏上寻觅之路，却只有这位纯洁无瑕的骑士，真正获得了觐见圣杯的资格。
+在漫长的试炼中，世俗的欲望、肉体的苦难与凡人的恐惧，都未能动摇他的信念。
+最终，他得以亲见圣杯，完成了其他骑士穷尽一生也无法完成的使命。
+后世将他的名字视作纯洁与虔诚的象征。
+有人穷尽一生追寻圣杯，而圣杯只向一人显现。","Galahad, the purest knight of the Round Table.
+He was not famed for strength of arms, and he never hungered for crown or glory. When the Grail appeared and many knights rode out to seek it, only this spotless knight truly earned the right to stand before it.
+Through the long trials, neither worldly desire nor bodily suffering nor mortal fear could shake his faith.
+In the end he saw the Grail with his own eyes and finished the task other knights spent their lives failing.
+Later ages made his name a sign of purity and devotion.
+Some spend a lifetime seeking the Grail. The Grail showed itself to one man."
+"「纯洁者无需畏惧审判。」
+圣杯的光辉不容污秽，唯有未曾蒙尘的灵魂，方能承受它的恩典。
+当生命保持完整时，全伤害提高 40%。
+一旦受到伤害，圣杯的祝福便不再完整。","""The pure need not fear judgment.""
+The light of the Grail suffers no stain. Only a soul that has never gathered dust can bear its grace.
+While your health is whole, all damage is increased by 40%.
+Once you are wounded, the Grail's blessing is whole no longer."
+白羽盔,White-Plumed Helm
+"一顶银白色的骑士头盔，盔顶插有一束洁白的羽饰，从未沾染战场上的尘埃。
+传说它的主人从不为虚荣而战，也不为仇恨而挥剑。唯有在圣杯显现之时，那双隐藏于面甲之后的眼睛，才会流露出凡人难以企及的光辉。","A silver-white knight's helm crowned with a spotless plume that has never caught the dust of a battlefield.
+Its owner never fought for vanity and never swung his sword in hatred. Only when the Grail appeared did the eyes behind the visor show a light no mortal could reach."
+白十字罩袍,White Cross Surcoat
+"一袭纯白的骑士罩袍，胸前绣有银线十字，衣料虽历经远征，却不见污损。
+它曾伴随主人走过无数险阻。对于寻常骑士而言，十字是信仰的象征；对于加拉哈德而言，那是他从未背弃的誓言。","A pure white surcoat with a cross stitched in silver thread on the breast. It has seen long campaigns and bears no stain.
+It went with its owner through countless dangers. To other knights the cross was a sign of faith. To Galahad it was the vow he never broke."
+银胫甲,Silver Greaves
+"以圣银锻造的护胫，表面光洁如镜，边缘刻有古老的祈祷铭文。
+据说锻造者曾试图在甲胄上留下英雄的姓名，却始终找不到合适的位置。因为这位骑士所追寻的，从来不是自己的荣光。","Greaves of holy silver, polished like a mirror, with old words of prayer engraved along the edges.
+The smith, it is said, tried to leave the hero's name on the armor and could never find a fitting place. What this knight sought was never his own glory."
+朝圣靴,Pilgrim's Boots
+"一双朴素的白色长靴，鞋底留有漫长旅途磨损的痕迹。
+它曾踏过荒野、废墟与无人涉足的圣地。世间许多骑士都曾踏上圣杯之旅，却鲜有人能走到旅途的尽头。","Plain white boots, their soles worn down by a long road.
+They crossed wilderness, ruins and holy ground no one else had walked. Many knights set out on the Grail road. Few reached its end."
+莲花化身,Lotus Incarnate
+三头八臂,"Three Heads, Eight Arms"
+每次攻击有 20% 几率立刻再打一次，武器和神术都算（大招不算）,Every attack has a 20% chance to strike again at once. Weapon attacks and divine skills both count (ultimates do not)
+"哪吒闯下杀劫，剔骨还父，削肉还母，以一身血肉偿还父母生养之恩。
+魂魄无所依归，太乙真人怜其遭际，遂以莲花、荷叶为引，为其重塑肉身。
+自此，哪吒脱去凡胎，莲花化身，再不受血肉之躯的拘束。
+后得诸般仙家法宝，踏风火轮，披混天绫，持火尖枪，显三头八臂之相，纵横于封神劫数之间。
+世人只道他是哪吒三太子，却不知这副神躯，原是从一场剔骨还亲的死劫中重生而来。
+肉身可还，神魂不灭；凡胎已去，莲华再生。","Nezha brought a killing doom upon his family. He cut the bone from his body to return to his father and the flesh to return to his mother, repaying with his whole self the debt of his birth.
+His soul had nowhere to rest. Taiyi Zhenren pitied him and built him a new body from lotus flower and lotus leaf.
+From then on Nezha had shed his mortal frame. Incarnate in lotus, he was bound by flesh and blood no longer.
+Later he gained the treasures of the immortals. Riding the Wind Fire Wheels, draped in the Armillary Sash, fire-tipped spear in hand, he showed the form of three heads and eight arms and ranged through the wars of the Investiture.
+The world knows him as Nezha, the Third Prince. It does not know that this divine body was reborn from a death in which he gave his bones back to his parents.
+The flesh can be returned. The spirit does not die. The mortal frame is gone, and the lotus blooms again."
+"「一身化万象，八臂镇乾坤。」
+莲花化身既成，神躯不再受凡胎拘束，三首齐现，八臂俱生，诸般兵刃皆可同时施展。
+每次攻击有 20% 的几率引动三头八臂之力，立即追加一次攻击。
+武器攻击与神术攻击均可触发，大招除外。","""One body becomes ten thousand forms; eight arms hold down heaven and earth.""
+Once the lotus body is complete, it is no longer bound by a mortal frame. Three heads appear, eight arms grow, and every weapon can be wielded at once.
+Every attack has a 20% chance to call on the three heads and eight arms and strike one more time at once.
+Weapon attacks and divine skills can both trigger it. Ultimates cannot."
+莲花冠,Lotus Crown
+"以灵山净莲炼制而成的宝冠，花瓣层层舒展，中央隐约透出金色灵光。
+传说哪吒魂魄归来之时，太乙真人以莲花为骨，以荷叶为衣，重塑其身。此冠既非凡人冠冕，亦非仙家礼器，而是新生神躯的第一道印记。","A crown refined from the pure lotus of Vulture Peak, petals opening layer on layer, a golden light showing faintly at the center.
+When Nezha's soul returned, Taiyi Zhenren rebuilt him with lotus for bone and lotus leaf for clothing. This is neither a mortal crown nor an immortal's ritual vessel. It is the first mark of a body newly born."
+混天绫,Armillary Sash
+"一条赤红色的仙家绸带，展开时如烈焰翻腾，收卷时又似赤龙盘舞。
+曾搅动东海，惊起万丈波涛，亦曾缚住龙宫太子。看似柔软无锋，却有翻江倒海之威。","A crimson sash of the immortals. Unfurled, it rolls like fire. Gathered in, it coils like a red dragon.
+It once stirred the Eastern Sea into towering waves and bound the prince of the Dragon Palace. It looks soft and edgeless, and it has the might to overturn rivers and seas."
+莲藕护腿,Lotus-Root Greaves
+"以千年灵藕炼成的护腿，莹白如玉，隐约可见莲脉般的纹路。
+哪吒剔骨还父、削肉还母之后，凡胎已毁。太乙真人以莲花重塑其身，自此骨肉不再受尘世血脉所缚。","Greaves refined from thousand-year lotus root, white as jade, with faint veins like those of a lotus.
+After Nezha returned his bone to his father and his flesh to his mother, his mortal body was gone. Taiyi Zhenren rebuilt him from lotus, and his flesh was no longer bound by any earthly bloodline."
+风火轮,Wind Fire Wheels
+"一对踏火而行的仙家宝轮，轮转之间风雷相随，焰尾拖曳数丈。
+哪吒踏轮而行，日行千里，追风逐电。其轮所经之处，山河皆在脚下，凡间道路不过转瞬之间。","A pair of immortal wheels that ride on fire. Wind and thunder follow as they turn, and their flames trail for yards.
+Riding them, Nezha covered a thousand li in a day, outrunning wind and lightning. Wherever the wheels pass, mountains and rivers lie beneath his feet, and mortal roads are gone in a blink."
+英灵殿,Valhalla
+英灵分身,Einherjar Double
+身边常驻 1 个英灵分身，用你的基础武器（伤害 50%）自动攻击你身边 220 像素内的敌人；分身不会受伤,"A spirit double stays at your side, using your base weapon (50% damage) to attack enemies within 220 px of you; the double cannot be hurt"
+"在阿斯加德的金色殿堂中，奥丁收容着那些英勇战死的亡者。
+女武神自尸横遍野的战场上挑选勇士，将他们引往英灵殿，赐予他们永不终结的战斗。
+每当黎明降临，英灵们便披甲执刃，相互厮杀，直至鲜血染红大地。待到黄昏，死者复生，伤者痊愈，众人重返殿中，饮酒食肉，欢宴至天明。
+如此往复，历经无数岁月。
+然而，奥丁并非为了荣耀而聚集他们。
+当诸神黄昏降临，芬里尔挣脱束缚，世界树为之震颤，英灵殿的五百四十道门将一同敞开。
+无数战死的勇士将追随奥丁，奔赴那场早已注定败亡的最终之战。
+他们在死亡之后获得永生，只为迎接第二次死亡。","In the golden hall of Asgard, Odin takes in those who died bravely in battle.
+The valkyries choose warriors from fields heaped with the dead, lead them to Valhalla, and grant them a battle that never ends.
+At every dawn the Einherjar arm themselves and cut each other down until the ground runs red. At dusk the dead rise, the wounded are made whole, and all return to the hall to drink and feast until morning.
+So it has gone for years beyond counting.
+But Odin did not gather them for glory.
+When Ragnarök comes, when Fenrir breaks his bonds and the World Tree shakes, the five hundred and forty doors of Valhalla will open together.
+The countless battle-dead will follow Odin to the last war, the one whose loss was decided long ago.
+They were given eternal life after death only to meet a second death."
+"「战死者不曾离去，只是在等待下一场战争。」
+英灵殿的勇士应召而来，以不灭的战魂与生者并肩作战。
+身边常驻一名英灵分身，使用自身基础武器，自动攻击周围 220 像素内的敌人，造成相当于自身武器伤害 50% 的伤害。
+英灵分身不会受到伤害，亦不会因战斗而消亡。","""The battle-dead never left. They are only waiting for the next war.""
+The warriors of Valhalla answer the call and fight beside the living with spirits that do not die.
+A spirit double stays at your side. It uses your base weapon and attacks enemies within 220 px of you, dealing 50% of your weapon damage.
+The double cannot be harmed and does not fall in battle."
+英灵翼盔,Winged Helm of the Einherjar
+"一顶饰有银白双翼的古老战盔，盔面布满刀斧留下的裂痕。
+据说唯有在战场上英勇死去的战士，才有资格被女武神引往英灵殿。
+死亡并非他们的终点，而是另一场战争的开始。","An ancient war helm with silver-white wings, its face scored by axe and blade.
+Only warriors who die bravely in battle, they say, are led to Valhalla by the valkyries.
+Death is not their end. It is the beginning of another war."
+英灵锁甲,Einherjar Mail
+"由无数细密铁环编织而成的锁甲，胸前刻有早已失传的卢恩符文。
+英灵殿中的战士每日披甲厮杀，纵使身躯破碎，待到夜幕降临，也会重新完整。
+对他们而言，死亡早已失去意义。唯有战斗，仍值得铭记。","Mail woven from countless fine iron rings, with long-lost runes cut into the breast.
+The warriors of Valhalla fight in it every day. Their bodies may be broken, and by nightfall they are whole again.
+To them death lost its meaning long ago. Only battle is still worth remembering."
+英灵护腿,Einherjar Greaves
+"历经无数战役的古老护腿，铁片上留有深浅不一的斩痕。
+传说英灵们每日于殿外相互厮杀，直至最后一人倒下。
+然而黄昏到来时，倒下的勇士又会一同起身，走向奥丁的宴席。","Old greaves that have seen countless battles, their iron plates marked with cuts deep and shallow.
+The Einherjar are said to fight each other outside the hall every day until the last one falls.
+Yet when dusk comes, the fallen rise together and walk to Odin's feast."
+英灵战靴,Einherjar War Boots
+"一双踏过无数战场的沉重铁靴，靴底沾染着永不褪去的灰烬。
+它的主人早已战死，却依然日复一日地磨砺兵刃，等待号角响彻九界。
+因为那场注定到来的战争，连诸神也无法幸免。","Heavy iron boots that have crossed countless battlefields, their soles stained with ash that never fades.
+Their owner died long ago and still sharpens his blade day after day, waiting for the horn to sound across the nine worlds.
+For in the war that is certain to come, not even the gods will be spared."
+熊皮狂战士,Bearskin Berserker
+狂暴,Frenzy
+每损失 1% 生命，武器出手速度 +1%,"For every 1% of health you are missing, weapon attack speed +1%"
+"古时，奥丁麾下有一群不披甲胄的战士。
+他们冲锋时状若疯犬与恶狼，咬住盾牌，发出震耳欲聋的嘶吼，力大如熊与公牛。据说烈火与刀剑皆不能伤其身。
+人们称这种疯狂为狂战士之怒。
+战意消退之后，他们却会变得虚弱，仿佛所有力量都已在厮杀中燃尽。
+后世传说，那些披着熊皮的勇士，并非为了获得野兽的力量才投身战场。
+而是因为唯有在杀戮之中，他们才能暂时忘记自己仍是人。
+他们不曾畏惧死亡，因为疯狂早已夺走了恐惧。","In old times Odin had under him a band of warriors who wore no armor.
+They charged like mad dogs and wolves, bit their shields and howled until the ears rang, strong as bears and bulls. Neither fire nor iron, it was said, could hurt them.
+People called this madness the berserker's rage.
+When the rage passed they grew weak, as if all their strength had burned away in the killing.
+Later tales say the men in bearskins did not go to war to gain the strength of beasts.
+It was only in the slaughter that they could forget, for a while, that they were still men.
+They did not fear death, because madness had already taken their fear."
+"「伤口越深，野兽便越接近苏醒。」
+疼痛不再意味着虚弱，而是唤醒体内凶性的祭品。
+每损失 1% 生命值，武器出手速度提高 1%。
+鲜血流得越多，杀戮便越发猛烈。直至理智耗尽，唯余狂怒。","""The deeper the wound, the closer the beast is to waking.""
+Pain no longer means weakness. It is the offering that wakes the savagery within.
+For every 1% of health you are missing, weapon attack speed is increased by 1%.
+The more blood is spilled, the fiercer the killing, until reason runs out and only rage is left."
+熊首帽,Bear's Head Hood
+"以巨熊头颅制成的战帽，獠牙外露，空洞的眼窝中仿佛仍残留着野兽的凶光。
+狂战士披上熊皮，咬住盾沿，发出不似人声的咆哮。据说在战意最盛之时，他们已分不清自己究竟是人，还是熊。","A war hood made from the head of a great bear, fangs bared, a beast's fierce light still seeming to linger in the empty sockets.
+The berserkers put on bearskins, bit the rims of their shields and roared in voices that were not human. At the height of the rage, it is said, they could no longer tell whether they were men or bears."
+熊皮衫,Bearskin Shirt
+"一件未经鞣制的厚重熊皮，皮毛间凝结着陈年的血污，散发出浓烈的野兽气息。
+奥丁的战士不披铁甲，只以兽皮蔽体。传说烈火不能焚其身，刀剑不能伤其骨。
+然而，赐予他们这份力量的，或许并非兽皮，而是早已吞噬理智的疯狂。","A heavy, untanned bearskin, old blood clotted in its fur, reeking of the animal.
+Odin's warriors wore no iron, only hides. Fire, the stories say, could not burn them, nor blades reach their bones.
+But what gave them that strength was perhaps not the hide. It was the madness that had already eaten their reason."
+毛皮绑腿,Fur Leg Wraps
+"以粗糙兽筋缠束的毛皮护腿，沾满泥土与干涸的血迹。
+狂战士从不因伤痛而停步。纵使双腿为兵刃所创，仍会踏着敌人的尸骸向前，直到战场上再无可以撕碎的活物。","Fur leg wraps bound with rough sinew, caked with mud and dried blood.
+A berserker never stops for pain. With his legs cut open he still strides forward over the enemy dead until nothing living is left on the field to tear apart."
+熊爪靴,Bearclaw Boots
+"一双缀有漆黑熊爪的厚皮战靴，鞋底磨损严重，爪尖却依旧锋利。
+据说狂战士冲入敌阵时，大地仿佛也随之震颤。
+那并非千军万马的蹄声，而是一群忘记如何畏惧死亡的人，正奔向他们的猎物。","Thick hide war boots set with black bear claws. The soles are worn through, and the claws are as sharp as ever.
+When the berserkers broke into the enemy line, the ground itself was said to tremble.
+It was not the hoofbeats of an army. It was men who had forgotten how to fear death, running at their prey."
+选择关卡,Choose a Stage
+‹ 返回整备  [Esc],‹ Back to Loadout  [Esc]
+选择化身,Choose Your Avatar
+出战中,Deployed
+进入 第 %d 关 · %s    [Enter],Enter Stage %d · %s    [Enter]
+开始游戏    [Enter],Start Game    [Enter]
+套装,Set
+%s：空,%s: empty
+%s（双击穿上 / 卸下）,%s (double-click to equip / unequip)
+雪村突围 · 3D 试玩,Snow Village Breakout · 3D Trial
+米德加尔特 · 雪村突围,Midgard · Snow Village Breakout
+前往雪村,Reach the snow village
+WASD 移动    鼠标左键挥砍    空格闪避    Esc 暂停,WASD Move    Left Click Strike    Space Dodge    Esc Pause
+前往奥丁石阵,Reach Odin's stone circle
+%s   ·   剩余 %d,%s   ·   %d remaining
+雪村遭遇,Village encounter
+冰湖遭遇,Frozen lake encounter
+穿过雪原，前往冰湖,Cross the snowfield to the frozen lake
+击败斯库尔,Defeat Sköll
+雪村的路重新打开了。,The road through the snow village is open again.
+芬布尔之冬 · 冻石庭院,Fimbulwinter · Froststone Courtyard
+进入庭院,Enter the courtyard
+清理庭院 · 剩余 %d,Clear the courtyard · %d remaining
+庭院已清理,Courtyard cleared
+通过拱门离开庭院,Leave through the archway
+冻石庭院已通过。,Froststone Courtyard completed.
+沿雪崖前行,Advance along the snowcliff
+清理雪崖前路 · 剩余 %d,Clear the snowcliff approach · %d remaining

@@ -1,6 +1,8 @@
 class_name SwordsmanWeapon
 extends Katana
 
+signal swung(at: Vector2, direction: Vector2, radius: float, half_angle: float, critical: bool)
+
 const FOUR := ["zhu", "lu", "xian", "jue"]
 const IAI_CHARGE := 4.0
 const LINK_LENGTH := 450.0
@@ -10,6 +12,7 @@ const STATUS_ICONS := {
 }
 
 var kit_id := "katana"
+var manual_attack := false
 var art: SwordsmanArt
 var fx: SwordsmanEffects
 
@@ -123,9 +126,8 @@ func _process(delta: float) -> void:
 			var resolve := _strike
 			_strike = Callable()
 			resolve.call()
-	if _timer <= 0.0 and not _strike.is_valid() and not _spinning and kit_id != "excalibur" \
-			and not player.is_hurt() and not player.is_dashing() and not player.weapon_pose_active():
-		_auto_attack()
+	if not manual_attack and _can_attack():
+		_attack()
 	sync_art()
 	queue_redraw()
 	_overlay.queue_redraw()
@@ -139,7 +141,19 @@ func _start_pose(action: StringName, aim: Vector2, hit: Callable, delay: float) 
 	sync_art()
 
 
-func _auto_attack() -> void:
+func _can_attack() -> bool:
+	return _timer <= 0.0 and not _strike.is_valid() and not _spinning and kit_id != "excalibur" \
+		and not player.is_dead and not player.is_hurt() and not player.is_dashing() and not player.weapon_pose_active()
+
+
+func request_attack(direction: Vector2) -> bool:
+	if not manual_attack or direction.is_zero_approx() or not _can_attack():
+		return false
+	_attack(direction.normalized())
+	return true
+
+
+func _attack(aim := Vector2.ZERO) -> void:
 	var effect_id := kit_id + "_slash"
 	var action := &"attack"
 	match kit_id:
@@ -157,7 +171,8 @@ func _auto_attack() -> void:
 			effect_id = "riyue_moon_thrust" if _next_variant == "moon" else "riyue_sun_sweep"
 			action = &"thrust" if _next_variant == "moon" else &"attack"
 	var radius := _radius(effect_id)
-	var aim := _nearest_aim(radius)
+	if aim == Vector2.ZERO:
+		aim = _nearest_aim(radius)
 	if aim == Vector2.ZERO:
 		return
 	var interval := 1.0
@@ -226,8 +241,12 @@ func _fan(id: String, aim: Vector2, radius: float, strength: float, normal := fa
 	var ratio := radius / float(effect.radius)
 	fx.play(id, global_position, aim, ratio, 0.0, 0.0, null, 0.0, _sweep_sign < 0.0)
 	var both := normal and (back_slash or _niten) and half < PI
+	if normal and manual_attack:
+		swung.emit(global_position, aim, radius, half, _niten)
 	if both:
 		fx.play(id, global_position, -aim, ratio, 0.0, 0.0, null, 0.0, _sweep_sign > 0.0)
+		if manual_attack:
+			swung.emit(global_position, -aim, radius, half, _niten)
 	var killed := 0
 	var hit_any := false
 	for enemy in Enemy.query_radius(global_position, radius):

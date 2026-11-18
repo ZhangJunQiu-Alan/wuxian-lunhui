@@ -313,7 +313,7 @@ func decal(file: String, pos: Vector2, flip := false) -> Sprite2D:
 	return sprite
 
 
-func add_obstacle(center: Vector2, r: float) -> void:
+static func add_obstacle(center: Vector2, r: float) -> void:
 	var cell := Vector2i((center / OBSTACLE_CELL).floor())
 	if not obstacles.has(cell):
 		obstacles[cell] = []

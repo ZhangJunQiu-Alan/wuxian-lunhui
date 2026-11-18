@@ -1,6 +1,6 @@
 extends Node
 ## 存档（自动加载：任何脚本都可以直接用 Save.xxx 访问）
-## 保存局外进度：奖励点、主神空间的永久强化、角色选择、关卡选择与通关记录、战绩统计、图鉴
+## 保存局外进度：奖励点、主神空间的永久强化、角色选择、关卡选择与通关记录、战绩统计、图鉴、装备
 ## 文件位置：user://save.json（Mac 上在 ~/Library/Application Support/Godot/app_userdata/无限轮回/）
 ## 测试时用命令行参数 --save-file=user://test_save.json 换一个文件，避免弄乱真实存档
 
@@ -21,6 +21,11 @@ var codex := _empty_codex()
 ## 改写过的命运：关卡 id -> {命运 id: 是否在某一局里发生过, "ever_faith_loki": 是否在通关前信仰过洛基}
 ## 第 5 版之前的存档没有这一项，读出来是空字典
 var fates := {}
+## 装备：gear 是拥有的装备 id -> true；equipped 是部位 -> 穿着的装备 id（没穿的部位没有这一项）
+## gear_new 是还没在「装备」页看过的装备 id -> true，用来显示「新」标记
+var gear := {}
+var equipped := {}
+var gear_new := {}
 
 
 static func _empty_codex() -> Dictionary:
@@ -78,13 +83,33 @@ func load_game() -> void:
 				fates[level_id] = {}
 				for id: String in saved_fates[level_id]:
 					fates[level_id][id] = saved_fates[level_id][id] == true
+	gear = {}
+	equipped = {}
+	gear_new = {}
+	var saved_gear: Variant = data.get("gear", [])
+	if saved_gear is Array:
+		for id: Variant in saved_gear:
+			if id is String and GearDB.is_item(id):
+				gear[id] = true
+	var saved_equipped: Variant = data.get("equipped", {})
+	if saved_equipped is Dictionary:
+		for slot: String in saved_equipped:
+			var id: Variant = saved_equipped[slot]
+			if id is String and gear.has(id) and GearDB.slot_of(id) == slot:
+				equipped[slot] = id
+	var saved_new: Variant = data.get("gear_new", [])
+	if saved_new is Array:
+		for id: Variant in saved_new:
+			if id is String and gear.has(id):
+				gear_new[id] = true
 
 
 ## 先写到临时文件再改名，写到一半断电也不会把原存档写坏
 func save_game() -> void:
 	var data := {"version": VERSION, "reward_points": reward_points, "meta": meta, "stats": stats,
 		"selected_character": selected_character, "swordsman_weapon": swordsman_weapon,
-		"selected_level": selected_level, "cleared_levels": cleared_levels, "codex": codex, "fates": fates}
+		"selected_level": selected_level, "cleared_levels": cleared_levels, "codex": codex, "fates": fates,
+		"gear": gear.keys(), "equipped": equipped, "gear_new": gear_new.keys()}
 	var tmp_path := path + ".tmp"
 	var file := FileAccess.open(tmp_path, FileAccess.WRITE)
 	if file == null:
@@ -126,6 +151,42 @@ func select_swordsman_weapon(id: String) -> void:
 func select_level(id: String) -> void:
 	selected_level = id
 	save_game()
+
+
+## 穿上一件已经拥有的装备（同部位原来穿的自动换下）
+func equip(id: String) -> void:
+	if not gear.has(id):
+		return
+	equipped[GearDB.slot_of(id)] = id
+	save_game()
+
+
+func unequip(slot: String) -> void:
+	equipped.erase(slot)
+	save_game()
+
+
+## 一键穿上一整套里已经拥有的部件
+func equip_set(set_id: String) -> void:
+	for slot: String in GearDB.SLOTS:
+		var id := GearDB.item_id(set_id, slot)
+		if gear.has(id):
+			equipped[slot] = id
+	save_game()
+
+
+## 在「装备」页看过这件装备了，去掉「新」标记
+func mark_gear_seen(id: String) -> void:
+	if gear_new.erase(id):
+		save_game()
+
+
+## 一局结束时调用（在 record_run 之前，由 record_run 一起保存）：把本局掉落的装备收进行囊
+func record_gear(found: Array[String]) -> void:
+	for id in found:
+		if GearDB.is_item(id) and not gear.has(id):
+			gear[id] = true
+			gear_new[id] = true
 
 
 ## 图鉴里的次数，没遇到过返回 -1
@@ -177,4 +238,7 @@ func reset() -> void:
 	cleared_levels = []
 	codex = _empty_codex()
 	fates = {}
+	gear = {}
+	equipped = {}
+	gear_new = {}
 	save_game()

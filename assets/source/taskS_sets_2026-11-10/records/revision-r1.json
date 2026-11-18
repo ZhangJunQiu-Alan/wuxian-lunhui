@@ -1,0 +1,928 @@
+[
+  {
+    "id": "thornoath_helm",
+    "file": "approved/armor/thornoath_helm.png",
+    "runtime": "assets/sprites/items/armor/thornoath_helm.png",
+    "size": [
+      32,
+      32
+    ],
+    "sha256": "ca147def45ceafa886962968c753d65459c78b43d2ef2ad2a43748498b051753",
+    "kind": "armor",
+    "slot": "helm",
+    "frames": 1,
+    "kit": "thornoath"
+  },
+  {
+    "id": "thornoath_chest",
+    "file": "approved/armor/thornoath_chest.png",
+    "runtime": "assets/sprites/items/armor/thornoath_chest.png",
+    "size": [
+      32,
+      32
+    ],
+    "sha256": "57db1e45caa5043b97be779e058c3c9a651d2093e23259ab61fbaef58b9f593c",
+    "kind": "armor",
+    "slot": "chest",
+    "frames": 1,
+    "kit": "thornoath"
+  },
+  {
+    "id": "thornoath_legs",
+    "file": "approved/armor/thornoath_legs.png",
+    "runtime": "assets/sprites/items/armor/thornoath_legs.png",
+    "size": [
+      32,
+      32
+    ],
+    "sha256": "116ebbe642c5ae7e8d0019ba714ee1e09def5a3b2e692d0cbf1b557c025ab47f",
+    "kind": "armor",
+    "slot": "legs",
+    "frames": 1,
+    "kit": "thornoath"
+  },
+  {
+    "id": "thornoath_boots",
+    "file": "approved/armor/thornoath_boots.png",
+    "runtime": "assets/sprites/items/armor/thornoath_boots.png",
+    "size": [
+      32,
+      32
+    ],
+    "sha256": "efa7481290ab53439041ad3ad11dbcd4571e1f32b12d51d26d6fe237cb94807e",
+    "kind": "armor",
+    "slot": "boots",
+    "frames": 1,
+    "kit": "thornoath"
+  },
+  {
+    "id": "thornoath",
+    "file": "approved/status/thornoath.png",
+    "runtime": "assets/sprites/ui/sets/thornoath.png",
+    "size": [
+      12,
+      12
+    ],
+    "sha256": "aad6e8e8b259a906b186a56b0cd7f1ac2f40defecbe5427eb120e54598e99b2b",
+    "kind": "status",
+    "frames": 1,
+    "kit": "thornoath"
+  },
+  {
+    "id": "thornoath_burst",
+    "file": "approved/effects/thornoath_burst.png",
+    "runtime": "assets/sprites/effects/sets/thornoath_burst.png",
+    "size": [
+      1488,
+      248
+    ],
+    "sha256": "8c54e4a633f0b7f044110168b350aa983e4b92632a442bba92146198e2153a8e",
+    "kind": "effects",
+    "kit": "thornoath",
+    "label": "荆棘反刺 · 外圈",
+    "frames": 6,
+    "fps": 16,
+    "anchor": [
+      124,
+      124
+    ],
+    "event": "受击触发，以玩家为中心",
+    "layer": "地面和角色之间",
+    "play": "once",
+    "radius": 120,
+    "frame_size": [
+      248,
+      248
+    ]
+  },
+  {
+    "id": "thornoath_stab",
+    "file": "approved/effects/thornoath_stab.png",
+    "runtime": "assets/sprites/effects/sets/thornoath_stab.png",
+    "size": [
+      96,
+      32
+    ],
+    "sha256": "f2af3527cc089a5422d762cc12519fb7dbd0d47d8ee9d207434df96253d2ee8c",
+    "kind": "effects",
+    "kit": "thornoath",
+    "label": "荆棘反刺 · 攻击者",
+    "frames": 4,
+    "fps": 16,
+    "anchor": [
+      12,
+      27
+    ],
+    "event": "反刺命中攻击者，以受击目标的地面投影为锚",
+    "layer": "敌人前方",
+    "play": "once",
+    "frame_size": [
+      24,
+      32
+    ]
+  },
+  {
+    "id": "xingtian_helm",
+    "file": "approved/armor/xingtian_helm.png",
+    "runtime": "assets/sprites/items/armor/xingtian_helm.png",
+    "size": [
+      32,
+      32
+    ],
+    "sha256": "bd13228c30584832e9d3447ba43a15096ed9ddde08d2ab7cc1f10fae9c8f9686",
+    "kind": "armor",
+    "slot": "helm",
+    "frames": 1,
+    "kit": "xingtian"
+  },
+  {
+    "id": "xingtian_chest",
+    "file": "approved/armor/xingtian_chest.png",
+    "runtime": "assets/sprites/items/armor/xingtian_chest.png",
+    "size": [
+      32,
+      32
+    ],
+    "sha256": "c4cf3d60a558fa3ca871c7b35686cd77f524ee63d1f331629b1f637c5f4dbd95",
+    "kind": "armor",
+    "slot": "chest",
+    "frames": 1,
+    "kit": "xingtian"
+  },
+  {
+    "id": "xingtian_legs",
+    "file": "approved/armor/xingtian_legs.png",
+    "runtime": "assets/sprites/items/armor/xingtian_legs.png",
+    "size": [
+      32,
+      32
+    ],
+    "sha256": "f87468cb3cf1e2bb85c7ff81bfc4e03f4453614a1a1b9e84926827b0fdccbf5d",
+    "kind": "armor",
+    "slot": "legs",
+    "frames": 1,
+    "kit": "xingtian"
+  },
+  {
+    "id": "xingtian_boots",
+    "file": "approved/armor/xingtian_boots.png",
+    "runtime": "assets/sprites/items/armor/xingtian_boots.png",
+    "size": [
+      32,
+      32
+    ],
+    "sha256": "dfcd547c7033c7f1ae60aba0354a6f21fcee802a109fa0ddfd49f17d24b6a5fd",
+    "kind": "armor",
+    "slot": "boots",
+    "frames": 1,
+    "kit": "xingtian"
+  },
+  {
+    "id": "xingtian",
+    "file": "approved/status/xingtian.png",
+    "runtime": "assets/sprites/ui/sets/xingtian.png",
+    "size": [
+      12,
+      12
+    ],
+    "sha256": "cc150160ef76f7c3347d751b36514fb1d1ba9c24ea41a8378c73682b84a35ac4",
+    "kind": "status",
+    "frames": 1,
+    "kit": "xingtian"
+  },
+  {
+    "id": "nightcount_helm",
+    "file": "approved/armor/nightcount_helm.png",
+    "runtime": "assets/sprites/items/armor/nightcount_helm.png",
+    "size": [
+      32,
+      32
+    ],
+    "sha256": "58c5d310d22b64c29789b1804d93e003200e128a5cd57b61b79687f2a4eb9cf6",
+    "kind": "armor",
+    "slot": "helm",
+    "frames": 1,
+    "kit": "nightcount"
+  },
+  {
+    "id": "nightcount_chest",
+    "file": "approved/armor/nightcount_chest.png",
+    "runtime": "assets/sprites/items/armor/nightcount_chest.png",
+    "size": [
+      32,
+      32
+    ],
+    "sha256": "0d85216be2349515522e6463412dd651cd4d9cb8d8cbdeb3809efd23a85987ed",
+    "kind": "armor",
+    "slot": "chest",
+    "frames": 1,
+    "kit": "nightcount"
+  },
+  {
+    "id": "nightcount_legs",
+    "file": "approved/armor/nightcount_legs.png",
+    "runtime": "assets/sprites/items/armor/nightcount_legs.png",
+    "size": [
+      32,
+      32
+    ],
+    "sha256": "2c4fdbd10732061c9475a6cf9efde73cbfa08c72d7094539a3887d54daa5cc61",
+    "kind": "armor",
+    "slot": "legs",
+    "frames": 1,
+    "kit": "nightcount"
+  },
+  {
+    "id": "nightcount_boots",
+    "file": "approved/armor/nightcount_boots.png",
+    "runtime": "assets/sprites/items/armor/nightcount_boots.png",
+    "size": [
+      32,
+      32
+    ],
+    "sha256": "9bd0f4526522213360944c11d749284eb0ed1387b949bb19773f53d0f09fdc53",
+    "kind": "armor",
+    "slot": "boots",
+    "frames": 1,
+    "kit": "nightcount"
+  },
+  {
+    "id": "nightcount",
+    "file": "approved/status/nightcount.png",
+    "runtime": "assets/sprites/ui/sets/nightcount.png",
+    "size": [
+      12,
+      12
+    ],
+    "sha256": "b24a6eacbbdf0435915e7479f1d83a4d917056d4f46a4719bc43e307ce8c8abb",
+    "kind": "status",
+    "frames": 1,
+    "kit": "nightcount"
+  },
+  {
+    "id": "nemean_helm",
+    "file": "approved/armor/nemean_helm.png",
+    "runtime": "assets/sprites/items/armor/nemean_helm.png",
+    "size": [
+      32,
+      32
+    ],
+    "sha256": "c0422ee54f8c1e219460f329d6beb4ed396f50847cccc5f6211a36385ab34ea6",
+    "kind": "armor",
+    "slot": "helm",
+    "frames": 1,
+    "kit": "nemean"
+  },
+  {
+    "id": "nemean_chest",
+    "file": "approved/armor/nemean_chest.png",
+    "runtime": "assets/sprites/items/armor/nemean_chest.png",
+    "size": [
+      32,
+      32
+    ],
+    "sha256": "93b7106af866d7b86168773216224803e7cd9b5f0c6de66d25b2744130b27576",
+    "kind": "armor",
+    "slot": "chest",
+    "frames": 1,
+    "kit": "nemean"
+  },
+  {
+    "id": "nemean_legs",
+    "file": "approved/armor/nemean_legs.png",
+    "runtime": "assets/sprites/items/armor/nemean_legs.png",
+    "size": [
+      32,
+      32
+    ],
+    "sha256": "269e523bd577b3a543b2d4888cbe3d9b4257d3d603cc49eda05861b75050c77c",
+    "kind": "armor",
+    "slot": "legs",
+    "frames": 1,
+    "kit": "nemean"
+  },
+  {
+    "id": "nemean_boots",
+    "file": "approved/armor/nemean_boots.png",
+    "runtime": "assets/sprites/items/armor/nemean_boots.png",
+    "size": [
+      32,
+      32
+    ],
+    "sha256": "d195de50cc5f90dfe211d285d9e6b2a5dc8d7d0c6a3e9018322161b7ab7eb4a7",
+    "kind": "armor",
+    "slot": "boots",
+    "frames": 1,
+    "kit": "nemean"
+  },
+  {
+    "id": "nemean",
+    "file": "approved/status/nemean.png",
+    "runtime": "assets/sprites/ui/sets/nemean.png",
+    "size": [
+      12,
+      12
+    ],
+    "sha256": "15ad79d61bc90ea6cb1ab047f5eb2937423b96e17f46cf24510eca3d7162ad2e",
+    "kind": "status",
+    "frames": 1,
+    "kit": "nemean"
+  },
+  {
+    "id": "dragonslayer_helm",
+    "file": "approved/armor/dragonslayer_helm.png",
+    "runtime": "assets/sprites/items/armor/dragonslayer_helm.png",
+    "size": [
+      32,
+      32
+    ],
+    "sha256": "b22844a90ec8b1c3ba876974d5be54280abb0e3eb5b169f854128e957e38ae0f",
+    "kind": "armor",
+    "slot": "helm",
+    "frames": 1,
+    "kit": "dragonslayer"
+  },
+  {
+    "id": "dragonslayer_chest",
+    "file": "approved/armor/dragonslayer_chest.png",
+    "runtime": "assets/sprites/items/armor/dragonslayer_chest.png",
+    "size": [
+      32,
+      32
+    ],
+    "sha256": "72a562c8c946bac19882169cc9b0fad1761949d7a668f9f8c570798179f59563",
+    "kind": "armor",
+    "slot": "chest",
+    "frames": 1,
+    "kit": "dragonslayer"
+  },
+  {
+    "id": "dragonslayer_legs",
+    "file": "approved/armor/dragonslayer_legs.png",
+    "runtime": "assets/sprites/items/armor/dragonslayer_legs.png",
+    "size": [
+      32,
+      32
+    ],
+    "sha256": "65e44a4ce9285ea3377a0210a34d992043378a0b8966cf18a358a2daa9160f92",
+    "kind": "armor",
+    "slot": "legs",
+    "frames": 1,
+    "kit": "dragonslayer"
+  },
+  {
+    "id": "dragonslayer_boots",
+    "file": "approved/armor/dragonslayer_boots.png",
+    "runtime": "assets/sprites/items/armor/dragonslayer_boots.png",
+    "size": [
+      32,
+      32
+    ],
+    "sha256": "09df25402144206f6b71f342d39ab78e6c97ec002d0c5092c839d7125ec2a6c4",
+    "kind": "armor",
+    "slot": "boots",
+    "frames": 1,
+    "kit": "dragonslayer"
+  },
+  {
+    "id": "dragonslayer",
+    "file": "approved/status/dragonslayer.png",
+    "runtime": "assets/sprites/ui/sets/dragonslayer.png",
+    "size": [
+      12,
+      12
+    ],
+    "sha256": "67951564dc03136a6792b8a2f4500b70f7e671c4abb680ba59861548c88ec89b",
+    "kind": "status",
+    "frames": 1,
+    "kit": "dragonslayer"
+  },
+  {
+    "id": "dragonslayer_scale",
+    "file": "approved/effects/dragonslayer_scale.png",
+    "runtime": "assets/sprites/effects/sets/dragonslayer_scale.png",
+    "size": [
+      256,
+      64
+    ],
+    "sha256": "828e0b9b6eb303d15e93ca6a5d4b8126812c10bd0c3caeb58704aaf9b4bb0059",
+    "kind": "effects",
+    "kit": "dragonslayer",
+    "label": "龙血 · 龙鳞已备",
+    "frames": 4,
+    "fps": 8,
+    "anchor": [
+      32,
+      32
+    ],
+    "event": "20 秒冷却结束，等待挡伤期间",
+    "layer": "身体前方叠加",
+    "play": "loop",
+    "frame_size": [
+      64,
+      64
+    ]
+  },
+  {
+    "id": "dragonslayer_shatter",
+    "file": "approved/effects/dragonslayer_shatter.png",
+    "runtime": "assets/sprites/effects/sets/dragonslayer_shatter.png",
+    "size": [
+      384,
+      64
+    ],
+    "sha256": "667fed2369148f41cd2d7531cca882fe1823b107a37e908b3ae80278543eff48",
+    "kind": "effects",
+    "kit": "dragonslayer",
+    "label": "龙血 · 龙鳞碎裂",
+    "frames": 6,
+    "fps": 16,
+    "anchor": [
+      32,
+      32
+    ],
+    "event": "龙鳞挡下伤害的瞬间",
+    "layer": "身体前方叠加",
+    "play": "once",
+    "frame_size": [
+      64,
+      64
+    ]
+  },
+  {
+    "id": "yellowwind_helm",
+    "file": "approved/armor/yellowwind_helm.png",
+    "runtime": "assets/sprites/items/armor/yellowwind_helm.png",
+    "size": [
+      32,
+      32
+    ],
+    "sha256": "9549e61a368ce15110cc7394d9aa8c7d2cb48b23a68c782de508b13c47cea101",
+    "kind": "armor",
+    "slot": "helm",
+    "frames": 1,
+    "kit": "yellowwind"
+  },
+  {
+    "id": "yellowwind_chest",
+    "file": "approved/armor/yellowwind_chest.png",
+    "runtime": "assets/sprites/items/armor/yellowwind_chest.png",
+    "size": [
+      32,
+      32
+    ],
+    "sha256": "293533a4523026ddc31f312c59179e77b4b783f1b3ad723edd7ee38a85d50044",
+    "kind": "armor",
+    "slot": "chest",
+    "frames": 1,
+    "kit": "yellowwind"
+  },
+  {
+    "id": "yellowwind_legs",
+    "file": "approved/armor/yellowwind_legs.png",
+    "runtime": "assets/sprites/items/armor/yellowwind_legs.png",
+    "size": [
+      32,
+      32
+    ],
+    "sha256": "099539d664e906e4a09471fa0027f496583c86159f18416d65e8c79f79aa9557",
+    "kind": "armor",
+    "slot": "legs",
+    "frames": 1,
+    "kit": "yellowwind"
+  },
+  {
+    "id": "yellowwind_boots",
+    "file": "approved/armor/yellowwind_boots.png",
+    "runtime": "assets/sprites/items/armor/yellowwind_boots.png",
+    "size": [
+      32,
+      32
+    ],
+    "sha256": "6988848a6fa8431290fcdcbe034ac7d345c3e6a30c628f2732a1462952da0805",
+    "kind": "armor",
+    "slot": "boots",
+    "frames": 1,
+    "kit": "yellowwind"
+  },
+  {
+    "id": "yellowwind",
+    "file": "approved/status/yellowwind.png",
+    "runtime": "assets/sprites/ui/sets/yellowwind.png",
+    "size": [
+      12,
+      12
+    ],
+    "sha256": "a39e253a27f23f19134bc17a71cdb14127b6cfbcf839bdecde3dabedea3e67d7",
+    "kind": "status",
+    "frames": 1,
+    "kit": "yellowwind"
+  },
+  {
+    "id": "yellowwind_storm",
+    "file": "approved/effects/yellowwind_storm.png",
+    "runtime": "assets/sprites/effects/sets/yellowwind_storm.png",
+    "size": [
+      576,
+      112
+    ],
+    "sha256": "b3206620575d1587ed9cd5adadb2ae28d26dc61ff5dbc9982f985f05e2748bb9",
+    "kind": "effects",
+    "kit": "yellowwind",
+    "label": "三昧神风 · 循环",
+    "frames": 6,
+    "fps": 12,
+    "anchor": [
+      48,
+      62
+    ],
+    "event": "沙尘暴持续期间，随伤害中心游走",
+    "layer": "地面特效层，角色与敌人之下",
+    "play": "loop",
+    "radius": 48,
+    "frame_size": [
+      96,
+      112
+    ]
+  },
+  {
+    "id": "yellowwind_storm_start",
+    "file": "approved/effects/yellowwind_storm_start.png",
+    "runtime": "assets/sprites/effects/sets/yellowwind_storm_start.png",
+    "size": [
+      288,
+      112
+    ],
+    "sha256": "b5f1fae7c11596117a66734b04c7ff335bd359c588f907d42e3060badd262c12",
+    "kind": "effects",
+    "kit": "yellowwind",
+    "label": "三昧神风 · 卷起",
+    "frames": 3,
+    "fps": 12,
+    "anchor": [
+      48,
+      62
+    ],
+    "event": "沙尘暴生成时",
+    "layer": "地面特效层，角色与敌人之下",
+    "play": "once",
+    "frame_size": [
+      96,
+      112
+    ]
+  },
+  {
+    "id": "yellowwind_storm_end",
+    "file": "approved/effects/yellowwind_storm_end.png",
+    "runtime": "assets/sprites/effects/sets/yellowwind_storm_end.png",
+    "size": [
+      288,
+      112
+    ],
+    "sha256": "0562d06531c6ab183b6df8a68e8e19dc2eda64b97e57a4d33db2717aaca4ee9c",
+    "kind": "effects",
+    "kit": "yellowwind",
+    "label": "三昧神风 · 消散",
+    "frames": 3,
+    "fps": 12,
+    "anchor": [
+      48,
+      62
+    ],
+    "event": "4 秒结束时，伤害停止",
+    "layer": "地面特效层，角色与敌人之下",
+    "play": "once",
+    "frame_size": [
+      96,
+      112
+    ]
+  },
+  {
+    "id": "grail_helm",
+    "file": "approved/armor/grail_helm.png",
+    "runtime": "assets/sprites/items/armor/grail_helm.png",
+    "size": [
+      32,
+      32
+    ],
+    "sha256": "3f8dee94e954a76225d4f896b698de58b4108a7cf69a366707ab465119d6c1ce",
+    "kind": "armor",
+    "slot": "helm",
+    "frames": 1,
+    "kit": "grail"
+  },
+  {
+    "id": "grail_chest",
+    "file": "approved/armor/grail_chest.png",
+    "runtime": "assets/sprites/items/armor/grail_chest.png",
+    "size": [
+      32,
+      32
+    ],
+    "sha256": "4fc0700ea455eca998097226545c236bcb104470db3ffadebaf37612c0c526af",
+    "kind": "armor",
+    "slot": "chest",
+    "frames": 1,
+    "kit": "grail"
+  },
+  {
+    "id": "grail_legs",
+    "file": "approved/armor/grail_legs.png",
+    "runtime": "assets/sprites/items/armor/grail_legs.png",
+    "size": [
+      32,
+      32
+    ],
+    "sha256": "c463e418f9e1f0ae63c6e3256f02c330bea645775322f2484761524154440679",
+    "kind": "armor",
+    "slot": "legs",
+    "frames": 1,
+    "kit": "grail"
+  },
+  {
+    "id": "grail_boots",
+    "file": "approved/armor/grail_boots.png",
+    "runtime": "assets/sprites/items/armor/grail_boots.png",
+    "size": [
+      32,
+      32
+    ],
+    "sha256": "6e50d0b205fdad515385f04bdf12a38e5b95b1a2676dd1330d57152e007e7d2c",
+    "kind": "armor",
+    "slot": "boots",
+    "frames": 1,
+    "kit": "grail"
+  },
+  {
+    "id": "grail",
+    "file": "approved/status/grail.png",
+    "runtime": "assets/sprites/ui/sets/grail.png",
+    "size": [
+      12,
+      12
+    ],
+    "sha256": "fa63e82347e53329f419498e45988ced41244cc556c8ea2699edde11643a9b32",
+    "kind": "status",
+    "frames": 1,
+    "kit": "grail"
+  },
+  {
+    "id": "lotus_helm",
+    "file": "approved/armor/lotus_helm.png",
+    "runtime": "assets/sprites/items/armor/lotus_helm.png",
+    "size": [
+      32,
+      32
+    ],
+    "sha256": "d84949c04fb01026c7e98da68c88dead257d515cc3703610333b3503bcba3af8",
+    "kind": "armor",
+    "slot": "helm",
+    "frames": 1,
+    "kit": "lotus"
+  },
+  {
+    "id": "lotus_chest",
+    "file": "approved/armor/lotus_chest.png",
+    "runtime": "assets/sprites/items/armor/lotus_chest.png",
+    "size": [
+      32,
+      32
+    ],
+    "sha256": "501c5b8d29d9ac3f094edb7ef5e2c55dde5adb2d1d9bd2549cdd83a3593a9357",
+    "kind": "armor",
+    "slot": "chest",
+    "frames": 1,
+    "kit": "lotus"
+  },
+  {
+    "id": "lotus_legs",
+    "file": "approved/armor/lotus_legs.png",
+    "runtime": "assets/sprites/items/armor/lotus_legs.png",
+    "size": [
+      32,
+      32
+    ],
+    "sha256": "90e22f18f56a768f8897564f8abb774fd242dd7d3a835e063f3919b877a39d5b",
+    "kind": "armor",
+    "slot": "legs",
+    "frames": 1,
+    "kit": "lotus"
+  },
+  {
+    "id": "lotus_boots",
+    "file": "approved/armor/lotus_boots.png",
+    "runtime": "assets/sprites/items/armor/lotus_boots.png",
+    "size": [
+      32,
+      32
+    ],
+    "sha256": "0f2cd49e90e103b9b709ce390a36de13e9694538551da300fef0aa9d16e19ad2",
+    "kind": "armor",
+    "slot": "boots",
+    "frames": 1,
+    "kit": "lotus"
+  },
+  {
+    "id": "lotus",
+    "file": "approved/status/lotus.png",
+    "runtime": "assets/sprites/ui/sets/lotus.png",
+    "size": [
+      12,
+      12
+    ],
+    "sha256": "f8504affb2ee3a0e14458fb34e740cf54036138cbf54a7d7d12cf367d5385a57",
+    "kind": "status",
+    "frames": 1,
+    "kit": "lotus"
+  },
+  {
+    "id": "lotus_proc",
+    "file": "approved/effects/lotus_proc.png",
+    "runtime": "assets/sprites/effects/sets/lotus_proc.png",
+    "size": [
+      256,
+      64
+    ],
+    "sha256": "af24651c1668068c70f5ea815c0299be5c931322c5005f5e566ba97b45a35d65",
+    "kind": "effects",
+    "kit": "lotus",
+    "label": "三头八臂 · 莲瓣虚影",
+    "frames": 4,
+    "fps": 16,
+    "anchor": [
+      32,
+      32
+    ],
+    "event": "追加攻击触发瞬间",
+    "layer": "身体后方叠加",
+    "play": "once",
+    "frame_size": [
+      64,
+      64
+    ]
+  },
+  {
+    "id": "valhalla_helm",
+    "file": "approved/armor/valhalla_helm.png",
+    "runtime": "assets/sprites/items/armor/valhalla_helm.png",
+    "size": [
+      32,
+      32
+    ],
+    "sha256": "c237dee6c1d61067f2267390a39a3d9976d60267c14d787263bb88872b31436c",
+    "kind": "armor",
+    "slot": "helm",
+    "frames": 1,
+    "kit": "valhalla"
+  },
+  {
+    "id": "valhalla_chest",
+    "file": "approved/armor/valhalla_chest.png",
+    "runtime": "assets/sprites/items/armor/valhalla_chest.png",
+    "size": [
+      32,
+      32
+    ],
+    "sha256": "2b6d0a6c09beb1b15fdcb8c995c94c74e84dc945835fcd00d1517bee353fd72e",
+    "kind": "armor",
+    "slot": "chest",
+    "frames": 1,
+    "kit": "valhalla"
+  },
+  {
+    "id": "valhalla_legs",
+    "file": "approved/armor/valhalla_legs.png",
+    "runtime": "assets/sprites/items/armor/valhalla_legs.png",
+    "size": [
+      32,
+      32
+    ],
+    "sha256": "bc4dba689555fd84fb6a80daafc16964bd92d2cc007123786becf532be1ece60",
+    "kind": "armor",
+    "slot": "legs",
+    "frames": 1,
+    "kit": "valhalla"
+  },
+  {
+    "id": "valhalla_boots",
+    "file": "approved/armor/valhalla_boots.png",
+    "runtime": "assets/sprites/items/armor/valhalla_boots.png",
+    "size": [
+      32,
+      32
+    ],
+    "sha256": "d6404c8c8dc7efeeae83b8796323e4379bcc9dd8224a5dfc1c7e09a5611cdea1",
+    "kind": "armor",
+    "slot": "boots",
+    "frames": 1,
+    "kit": "valhalla"
+  },
+  {
+    "id": "valhalla",
+    "file": "approved/status/valhalla.png",
+    "runtime": "assets/sprites/ui/sets/valhalla.png",
+    "size": [
+      12,
+      12
+    ],
+    "sha256": "6a5e6f5693443a540ac085e68b0746421deaf85d806ef19e03969711e79843da",
+    "kind": "status",
+    "frames": 1,
+    "kit": "valhalla"
+  },
+  {
+    "id": "valhalla_ring",
+    "file": "approved/effects/valhalla_ring.png",
+    "runtime": "assets/sprites/effects/sets/valhalla_ring.png",
+    "size": [
+      128,
+      12
+    ],
+    "sha256": "e279e2ca660925abac785e0d2d9d63b1d56e9f71a20a62a6a51ac68e727f50a0",
+    "kind": "effects",
+    "kit": "valhalla",
+    "label": "英灵分身 · 脚下光环",
+    "frames": 4,
+    "fps": 8,
+    "anchor": [
+      16,
+      6
+    ],
+    "event": "分身存在期间，以分身脚底为锚",
+    "layer": "地面和分身之间",
+    "play": "loop",
+    "frame_size": [
+      32,
+      12
+    ]
+  },
+  {
+    "id": "bearskin_helm",
+    "file": "approved/armor/bearskin_helm.png",
+    "runtime": "assets/sprites/items/armor/bearskin_helm.png",
+    "size": [
+      32,
+      32
+    ],
+    "sha256": "387fa92e34d8846dc867d1a20e982e6fd519dba587b01fbc61ae00db4d0de09d",
+    "kind": "armor",
+    "slot": "helm",
+    "frames": 1,
+    "kit": "bearskin"
+  },
+  {
+    "id": "bearskin_chest",
+    "file": "approved/armor/bearskin_chest.png",
+    "runtime": "assets/sprites/items/armor/bearskin_chest.png",
+    "size": [
+      32,
+      32
+    ],
+    "sha256": "7f2fe7f38608a43f2376a8b34f1ac71280944c9b7c1168c9e9a3a856f35bd7d5",
+    "kind": "armor",
+    "slot": "chest",
+    "frames": 1,
+    "kit": "bearskin"
+  },
+  {
+    "id": "bearskin_legs",
+    "file": "approved/armor/bearskin_legs.png",
+    "runtime": "assets/sprites/items/armor/bearskin_legs.png",
+    "size": [
+      32,
+      32
+    ],
+    "sha256": "c38c79cb227f88c7c66a43fb6620512474c9597330abf41e921e387d6a01d5d5",
+    "kind": "armor",
+    "slot": "legs",
+    "frames": 1,
+    "kit": "bearskin"
+  },
+  {
+    "id": "bearskin_boots",
+    "file": "approved/armor/bearskin_boots.png",
+    "runtime": "assets/sprites/items/armor/bearskin_boots.png",
+    "size": [
+      32,
+      32
+    ],
+    "sha256": "c390f4a4c90c5e525c49ee74cecb91ee06f1df0f7b220439aca2e6d7ee044f7a",
+    "kind": "armor",
+    "slot": "boots",
+    "frames": 1,
+    "kit": "bearskin"
+  },
+  {
+    "id": "bearskin",
+    "file": "approved/status/bearskin.png",
+    "runtime": "assets/sprites/ui/sets/bearskin.png",
+    "size": [
+      12,
+      12
+    ],
+    "sha256": "f160d63c1b17ffd0a5e87722d731c7fb7ae6ebec5d25d74515166c37c0a44d20",
+    "kind": "status",
+    "frames": 1,
+    "kit": "bearskin"
+  }
+]

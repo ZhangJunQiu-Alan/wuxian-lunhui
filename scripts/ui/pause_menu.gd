@@ -1,12 +1,12 @@
 class_name PauseMenu
 extends CanvasLayer
 ## 暂停菜单：战斗中按 Esc 打开 / 关闭；游戏窗口失去焦点时自动打开
-## 左边显示本局构筑（角色、信仰、已选强化），右边是「继续 / 设置 / 放弃本局」
+## 左边显示本局构筑（角色、信仰、套装、已选强化），右边是「继续 / 设置 / 放弃本局」
 
 signal abandon_requested
 
-const GOLD := Color(1.0, 0.85, 0.4)
-const DIM := Color(0.7, 0.73, 0.8)
+const GOLD := UiKit.GOLD
+const DIM := UiKit.DIM
 
 var game: Game
 var _root: Control
@@ -23,36 +23,42 @@ func _ready() -> void:
 	_root = Control.new()
 	_root.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
 	_root.visible = false
+	_root.theme = UiKit.theme()
 	add_child(_root)
-	var overlay := ColorRect.new()
-	overlay.color = Color(0, 0, 0, 0.7)
-	overlay.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
-	_root.add_child(overlay)
+	_root.add_child(UiKit.scrim())
 	var center := CenterContainer.new()
 	center.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
 	_root.add_child(center)
+	var panel := UiKit.framed(28)
+	center.add_child(panel)
 	var row := HBoxContainer.new()
-	row.add_theme_constant_override("separation", 40)
-	center.add_child(row)
+	row.add_theme_constant_override("separation", 32)
+	panel.add_child(row)
 
 	# 左：本局构筑
 	var build_box := VBoxContainer.new()
-	build_box.custom_minimum_size = Vector2(420, 0)
+	build_box.custom_minimum_size = Vector2(460, 0)
+	build_box.add_theme_constant_override("separation", 10)
 	row.add_child(build_box)
-	build_box.add_child(_label(tr("本局构筑"), 22, GOLD))
-	_build_label = _label("", 15, Color.WHITE)
-	_build_label.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
+	build_box.add_child(UiKit.heading(tr("本局构筑")))
+	_build_label = UiKit.body("", 15)
 	build_box.add_child(_build_label)
+
+	var divider := ColorRect.new()
+	divider.color = UiKit.LINE
+	divider.custom_minimum_size = Vector2(1, 0)
+	row.add_child(divider)
 
 	# 右：按钮
 	var buttons := VBoxContainer.new()
-	buttons.add_theme_constant_override("separation", 14)
+	buttons.add_theme_constant_override("separation", 12)
 	buttons.alignment = BoxContainer.ALIGNMENT_CENTER
 	row.add_child(buttons)
-	buttons.add_child(_label(tr("暂停"), 36, Color.WHITE))
-	buttons.add_child(_button(tr("继续游戏  [Esc]"), close))
+	buttons.add_child(UiKit.label(tr("暂停"), 36, GOLD, HORIZONTAL_ALIGNMENT_CENTER))
+	buttons.add_child(UiKit.primary(tr("继续游戏  [Esc]"), close, Vector2(300, 48)))
 	buttons.add_child(_button(tr("设置"), _open_settings))
 	_abandon = _button(tr("放弃本局"), _on_abandon_pressed)
+	UiKit.tint_button(_abandon, UiKit.BAD)
 	buttons.add_child(_abandon)
 
 	_settings = SettingsPanel.new()
@@ -121,6 +127,9 @@ func _build_text() -> String:
 		for god_id: String in p.faith:
 			faiths.append(LevelUpPanel.faith_line(p, god_id))
 		lines.append(tr("信仰　") + tr("　").join(faiths))
+	if SetEffects.active:
+		var set_info: Dictionary = GearDB.SETS[SetEffects.active.set_id]
+		lines.append(tr("套装　%s · %s：%s") % [tr(set_info.name), tr(set_info.effect), tr(set_info.rule)])
 	lines.append("")
 	for kind in [["weapon", tr("基础武器")], ["boon", tr("神明强化")], ["stat", tr("通用属性")], ["fusion", tr("融合技")]]:
 		var names: Array[String] = []
@@ -137,17 +146,4 @@ func _build_text() -> String:
 
 
 func _button(text: String, callback: Callable) -> Button:
-	var button := Button.new()
-	button.text = text
-	button.custom_minimum_size = Vector2(300, 48)
-	button.focus_mode = Control.FOCUS_NONE
-	button.pressed.connect(callback)
-	return button
-
-
-func _label(text: String, font_size: int, color: Color) -> Label:
-	var label := Label.new()
-	label.text = text
-	label.add_theme_font_size_override("font_size", font_size)
-	label.modulate = color
-	return label
+	return UiKit.button(text, callback, Vector2(300, 48))

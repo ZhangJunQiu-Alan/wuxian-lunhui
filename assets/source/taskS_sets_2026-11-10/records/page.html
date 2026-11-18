@@ -1,0 +1,372 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="icon" href="data:,">
+<title>诸界余烬 · 套装防具</title>
+<style>
+:root{color-scheme:dark;--bg:#10171c;--ink:#e9e8e1;--dim:#a9b4ba;--gold:#d8b47e;--line:#32404a;--ready:#a0ccb4;--surface:#182128}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.6 system-ui,sans-serif}
+main{max-width:1320px;margin:auto;padding:48px 28px 100px}header,section{border-bottom:1px solid var(--line);padding-bottom:30px}section{padding-top:34px;scroll-margin-top:12px}section section{border:0}
+h1,h2,h3,h4,p{margin:0 0 .55em}h1{font:600 clamp(2.2rem,6vw,4.2rem)/1.13 Georgia,serif;letter-spacing:.04em}h2{font-size:1.7rem}h3{font-size:1.25rem}
+p,small,.muted{color:var(--dim)}.eyebrow{color:var(--gold);letter-spacing:.19em;text-transform:uppercase}a{color:var(--gold);text-underline-offset:.18em}
+nav,.controls,.icons,.review{display:flex;gap:10px 17px;align-items:center;flex-wrap:wrap}nav{margin-top:20px}
+button,select,textarea{font:inherit;color:var(--ink);background:#202a31;border:1px solid #465660;border-radius:3px;padding:5px 9px}button{cursor:pointer}
+button:hover,button[aria-pressed="true"]{border-color:var(--gold);color:var(--gold)}textarea{width:100%;min-height:55px;resize:vertical}#export{min-height:180px;margin-top:12px}
+table{border-collapse:collapse;width:100%;min-width:560px}th,td{text-align:left;padding:8px 11px;border-bottom:1px solid var(--line)}th{color:var(--gold)}.ready{color:var(--ready)}.revise{color:#f0bb8c}.scroll{overflow:auto}
+.wall{display:grid;grid-template-columns:repeat(auto-fit,minmax(262px,1fr));gap:14px;margin:15px 0 25px}.card,.item,.fx{padding:13px;background:var(--surface);border:1px solid var(--line)}
+.card h4{display:flex;justify-content:space-between}.icons{gap:5px;margin:9px 0}.icon,.silhouette,canvas{image-rendering:pixelated}.icon{object-fit:contain}.chip{display:grid;place-items:center;background:#243039}
+.tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,290px),1fr));gap:10px}.stage{display:flex;align-items:flex-start;gap:12px;margin-bottom:13px}.stage figure{margin:0;flex:1 1 50%;min-width:0}.stage figure img{display:block;width:100%;height:auto;border:1px solid var(--line)}
+details{margin:12px 0;border:1px solid var(--line);background:#131c22;padding:12px}summary{cursor:pointer;font-weight:600;font-size:1.06rem;color:var(--gold)}details[open] summary{margin-bottom:12px}.item p{white-space:pre-line}
+.review{margin-top:12px;gap:7px}.review textarea{font-size:13px}.sizes{display:flex;align-items:center;gap:8px;flex-wrap:wrap}.size{text-align:center}.size small{display:block}
+.fxgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:10px;margin-top:14px}canvas{max-width:100%;background:#26313b;display:block;aspect-ratio:auto}.fx .controls{margin:7px 0;gap:5px}.fx label{font-size:.88rem;color:var(--dim)}
+.lineup{display:grid;grid-template-columns:repeat(10, minmax(76px,1fr));gap:6px;min-width:800px;margin:8px 0 19px}.slot,.ground{display:grid;place-items:center;text-align:center;padding:4px;min-height:64px;background:#35434b}.slot small,.ground small{color:var(--ink);line-height:1.3;text-shadow:0 1px 3px black}
+.ground{background-repeat:repeat;image-rendering:pixelated}.compare-pairs{display:flex;flex-wrap:wrap;gap:12px;margin:10px 0 24px}.pair{display:flex;gap:5px;background:var(--surface);border:1px solid var(--line);padding:7px}.pair .slot{min-width:100px}.tags{font-size:.8rem;color:var(--dim);font-weight:400}.empty{opacity:.65}
+@media(max-width:940px){.tiles{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:580px){main{padding:25px 14px}.stage{display:block}.tiles{grid-template-columns:1fr}.stage figure{margin-bottom:12px}}
+</style>
+</head>
+<body><main>
+<header><p class="eyebrow">诸界余烬 / S–SET</p><h1>套装防具美术总览</h1><p id="updated"></p>
+<nav><a href="#progress">进度</a><a href="#wall">套装墙</a><a href="#details">逐套审阅</a><a href="#compare">剪影与地面对比</a><a href="#revisions">返修记录</a><a href="integration.md">接入说明</a><button id="copy" type="button">复制全部评价</button></nav>
+<textarea id="export" readonly hidden aria-label="评价 Markdown"></textarea><p id="copyState" aria-live="polite"></p></header>
+<section id="progress"><h2>制作进度</h2><p id="counts"></p><div class="scroll"><table id="progressTable"></table></div></section>
+<section id="wall"><h2>套装墙</h2><div id="walls"></div></section>
+<section id="details"><h2>逐套审阅</h2><p>点开套装查看高清概念、1× / 4× / 8× 像素成品和特效。评价保存在当前浏览器，可复制成 Markdown。</p><div id="entries"></div></section>
+<section id="compare"><h2>剪影与地面对比</h2><p>每排同一部位。图形以纯黑剪影展示，轮廓原样保留。</p><div id="shadows" class="scroll"></div>
+<h3>易混件对比</h3><div id="pairs" class="compare-pairs"></div>
+<h3>三种地面 · 1×</h3><div id="groundBoards" class="scroll"></div>
+<h3>同一背包里的剑士图标</h3><div id="weaponStyle" class="icons"></div></section>
+<section id="revisions"><h2>返修记录</h2><p><a href="previews/review-r2-icons.png">八件防具新旧对照</a> · <a href="previews/review-r2-effects.png">特效新旧对照</a></p><div id="revLog"></div><p><a href="candidates/batch1-before-pixel-refine.png">首批像素初稿</a> · 荆誓暗铁与枯枝对比不足，补了窄金属高光和荆枝轮廓。</p><p><a href="candidates/batch2-before-pixel-refine.png">第一关第二批初稿</a> · 重新画了前后错开的凉鞋，补了刑天胸甲的眼和夜之伯爵的银扣。</p></section>
+</main>
+<script>
+"use strict";
+const data=/*DATA*/;
+const $=id=>document.getElementById(id);
+const h=(tag,text,cls)=>{
+  const el=document.createElement(tag);
+  if(text!=null)el.textContent=text;
+  if(cls)el.className=cls;
+  return el;
+};
+const storageKey="s-set-review-2026-11-10-v1";
+let reviews={};
+try{reviews=JSON.parse(localStorage.getItem(storageKey)||"{}")||{};}catch(_){}
+const itemById=Object.fromEntries(data.sets.flatMap(s=>s.items.map(i=>[i.id,i])));
+const shippedNotes=Object.fromEntries(data.reviewNotes.map(row=>[row.id,row]));
+const fromLastRound=(id)=>Boolean(shippedNotes[id])&&reviews[id]?.state==="要改"&&reviews[id].note?.trim()===shippedNotes[id]?.note;
+const sectionNames={helm:"头盔",chest:"胸甲",legs:"护腿",boots:"鞋子"};
+const names=["第一关","第二关","第三关"];
+
+function icon(file,width=32,height=width,cls="icon"){
+  const image=h("img",null,cls);
+  image.src=file;image.width=width;image.height=height;
+  image.loading="lazy";image.alt="";
+  return image;
+}
+function lineIcons(set,size){
+  const box=h("div",null,"icons");
+  for(const item of set.items){
+    const cell=h("span",null,"chip");
+    cell.style.width=cell.style.height=size+"px";
+    if(item.asset)cell.append(icon(item.asset.file,size));
+    else{cell.textContent="·";cell.classList.add("empty");}
+    cell.title=item.name;
+    box.append(cell);
+  }
+  return box;
+}
+function progress(asset,id){
+  if(reviews[id]?.state==="通过")return h("span","✓ 通过","ready");
+  if(reviews[id]?.state==="要改"&&!fromLastRound(id))return h("span","返修中","revise");
+  if(shippedNotes[id])return h("span","已返修 · 待复核","revise");
+  return h("span",asset?"✓ 已出稿":"未开始",asset?"ready":"muted");
+}
+function fxProgress(set){
+  if(!set.effects.length)return h("span","—","muted");
+  if(set.effects.some(e=>reviews[e.id]?.state==="要改"&&!fromLastRound(e.id)))return h("span","返修中","revise");
+  if(set.effects.some(e=>(shippedNotes[e.id]||e.id==="xingtian_mengzhi")&&reviews[e.id]?.state!=="通过"))
+    return h("span","已更新 · 待复核","revise");
+  const n=set.effects.filter(e=>e.asset).length;
+  return h("span",n===set.effects.length?"✓ 已出稿":n?`${n}/${set.effects.length}`:"未开始",n?"ready":"muted");
+}
+function refreshProgress(){
+  const table=$("progressTable");
+  table.replaceChildren();
+  const header=h("tr");
+  for(const key of ["套装","头盔","胸甲","护腿","鞋子","特效","状态图标"])header.append(h("th",key));
+  const head=h("thead");head.append(header);table.append(head);
+  const body=h("tbody");
+  for(const set of data.sets){
+    const row=h("tr");
+    row.append(h("th",set.name));
+    for(const item of set.items){const cell=h("td");cell.append(progress(item.asset,item.id));row.append(cell);}
+    const fx=h("td"),state=h("td");
+    fx.append(fxProgress(set));state.append(progress(set.status,set.id+"-status"));row.append(fx,state);body.append(row);
+  }
+  table.append(body);
+}
+function save(id,state,note){
+  if(!state&&!note)delete reviews[id];
+  else reviews[id]={state,note};
+  try{localStorage.setItem(storageKey,JSON.stringify(reviews));}catch(_){$("copyState").textContent="当前浏览器未开放本地存储，可在关闭前复制评价。";}
+  refreshProgress();refreshRevisions();
+}
+function review(id,label){
+  const box=h("div",null,"review");
+  let state=reviews[id]?.state||"";
+  const area=h("textarea");
+  area.placeholder="写下要保留或调整的细节";
+  area.setAttribute("aria-label",label+" 的评价备注");area.value=reviews[id]?.note||"";
+  const buttons=[];
+  if(shippedNotes[id]){
+    const update=h("small",shippedNotes[id].result,"revise");
+    box.append(update);
+  }
+  for(const choice of ["通过","要改"]){
+    const button=h("button",choice);
+    button.type="button";
+    buttons.push(button);
+    button.onclick=()=>{state=state===choice?"":choice;mark();save(id,state,area.value.trim());};
+    box.append(button);
+  }
+  function mark(){for(const button of buttons)button.setAttribute("aria-pressed",String(button.textContent===state));}
+  mark();
+  area.oninput=()=>save(id,state,area.value.trim());
+  box.append(area);return box;
+}
+function refreshRevisions(){
+  const section=$("revLog");
+  const rows=Object.entries(reviews).filter(([id,v])=>v.state==="要改"&&!fromLastRound(id));
+  section.replaceChildren(h("p","第 2 轮 · 15 条意见已处理，新稿待复核。"));
+  const archive=h("ol");
+  for(const row of data.reviewNotes){
+    const line=h("li");
+    line.append(h("strong",row.label+" · "),document.createTextNode(row.result+" "));
+    if(row.previous){
+      const old=h("a","旧稿");old.href=row.previous;line.append(old);
+    }
+    archive.append(line);
+  }
+  section.append(archive);
+  if(rows.length)section.append(h("p","本浏览器新增的待返修条目"));
+  for(const [id,value] of rows)section.append(h("p",`${reviewLabel(id)} · ${value.note||"待填写原因"}`,"revise"));
+}
+function reviewLabel(id){
+  if(itemById[id])return itemById[id].name;
+  for(const kit of data.sets){
+    if(kit.id+"-status"===id)return kit.name+" · 状态图标";
+    const fx=kit.effects.find(e=>e.id===id);if(fx)return fx.label;
+  }
+  return id;
+}
+function drawWalls(){
+  for(const name of names){
+    $("walls").append(h("h3",name));
+    const grid=h("div",null,"wall");
+    for(const set of data.sets.filter(s=>s.area===name)){
+      const card=h("article",null,"card"), title=h("h4");
+      const link=h("a",set.name);link.href="#kit-"+set.id;
+      link.onclick=()=>$("kit-"+set.id).open=true;
+      title.append(link,h("span",set.effect,"tags"));
+      card.append(title,lineIcons(set,32),lineIcons(set,128),h("p",set.rule));
+      grid.append(card);
+    }
+    $("walls").append(grid);
+  }
+}
+function sized(asset){
+  const row=h("div",null,"sizes");
+  for(const k of [1,4,8]){
+    const box=h("div",null,"size");
+    box.append(icon(asset.file,asset.size[0]*k,asset.size[1]*k),h("small",k+"×"));
+    row.append(box);
+  }
+  return row;
+}
+const imageCache={};
+function fetchImage(path){
+  if(!imageCache[path]){
+    const image=new Image();
+    imageCache[path]=new Promise((resolve,reject)=>{image.onload=()=>resolve(image);image.onerror=reject;image.src=path;});
+  }
+  return imageCache[path];
+}
+const previewPainters=[];
+function effectViewer(fx,set){
+  const panel=h("article",null,"fx");
+  panel.append(h("h4",fx.label),h("p",`${fx.frame_size.join("×")} · ${fx.frames} 帧 · ${fx.fps} fps · ${fx.play==="loop"?"循环":"单次"}`));
+  if(!fx.asset){panel.append(h("small","未开始"));return panel;}
+  const controls=h("div",null,"controls");
+  const play=h("button","暂停");
+  const replay=h("button","重播");
+  const step=h("button","下一帧");
+  const ground=h("select");ground.setAttribute("aria-label","特效地面");
+  for(const name of Object.keys(data.grounds)){const option=h("option",name);option.value=name;ground.append(option);}
+  ground.value=({第一关:"雪地",第二关:"冥界",第三关:"焦土"})[set.area];
+  const ring=h("input");ring.type="checkbox";ring.checked=Boolean(fx.radius)&&fx.id!=="yellowwind_storm";
+  const label=h("label");label.append(ring," 判定范围");label.hidden=!fx.radius;
+  const speed=h("select");speed.setAttribute("aria-label","播放速度");
+  for(const value of [1,.5,.25]){const option=h("option",value+"×");option.value=value;speed.append(option);}
+  const canvas=h("canvas");canvas.width=280;canvas.height=260;
+  canvas.setAttribute("aria-label",fx.label+" 原像素动画");
+  const caption=h("small",fx.event);
+  controls.append(play,replay,step,ground,speed,label);
+  const showGuardian=fx.id==="valhalla_ring"&&data.guardian.idle;
+  const stance=h("select");stance.setAttribute("aria-label","英灵动作");
+  if(showGuardian){
+    for(const [value,name] of [["idle","英灵待机"],["attack","英灵出手"]]){
+      const option=h("option",name);option.value=value;stance.append(option);
+    }
+    controls.append(stance);
+  }
+  panel.append(canvas,controls,caption);
+  if(showGuardian){const concept=h("a","英灵形象概念图");concept.href=data.guardianConcept;panel.append(concept);}
+  panel.append(review(fx.id,fx.label));
+  let t=0,playing=true,last=0,request=0,rendered=-1,tile,strip,player,visible=false;
+  let guardianFrames={};
+  const ctx=canvas.getContext("2d");ctx.imageSmoothingEnabled=false;
+  const centerX=140, centerY=130;
+  function draw(n){
+    if(!strip||!tile)return;
+    ctx.fillStyle=ctx.createPattern(tile,"repeat");ctx.fillRect(0,0,280,260);
+    if(ring.checked&&fx.radius){
+      ctx.save();ctx.strokeStyle="#e5d5a6b0";ctx.setLineDash([3,3]);ctx.beginPath();
+      ctx.ellipse(centerX,centerY,fx.radius,fx.radius,0,0,Math.PI*2);ctx.stroke();ctx.restore();
+    }
+    const [w,h]=fx.frame_size, [x,y]=fx.anchor;
+    const body=player&&["thornoath_burst","dragonslayer_scale","dragonslayer_shatter","lotus_proc","xingtian_mengzhi"].includes(fx.id);
+    const behind=body&&["thornoath_burst","lotus_proc","xingtian_mengzhi"].includes(fx.id);
+    if(body&&!behind)ctx.drawImage(player,0,0,64,64,centerX-32,centerY-32,64,64);
+    ctx.drawImage(strip,n*w,0,w,h,centerX-x,centerY-y,w,h);
+    if(behind)ctx.drawImage(player,0,0,64,64,centerX-32,centerY-32,64,64);
+    if(showGuardian&&guardianFrames[stance.value]){
+      const meta=data.guardian[stance.value];
+      const actorFrame=Math.floor(t*meta.fps/1000)%meta.frames;
+      ctx.drawImage(guardianFrames[stance.value],actorFrame*64,0,64,64,
+        centerX-meta.anchor[0],centerY-meta.anchor[1],64,64);
+    }
+  }
+  function tick(now){
+    request=0;
+    if(!visible||!playing||!panel.offsetWidth)return;
+    if(last)t+=Math.min(now-last,80)*Number(speed.value);
+    last=now;
+    const elapsed=Math.floor(t*fx.fps/1000);
+    const n=fx.play==="loop"?elapsed%fx.frames:Math.min(elapsed,fx.frames-1);
+    if(n!==rendered){rendered=n;draw(n);}
+    if(fx.play==="once"&&elapsed>=fx.frames){playing=false;play.textContent="继续";}
+    else request=requestAnimationFrame(tick);
+  }
+  function wake(){last=0;if(visible&&playing&&!request)request=requestAnimationFrame(tick);}
+  play.onclick=()=>{playing=!playing;play.textContent=playing?"暂停":"继续";if(playing){if(t*fx.fps/1000>=fx.frames&&fx.play==="once")t=0;wake();}};
+  replay.onclick=()=>{t=0;rendered=-1;playing=true;play.textContent="暂停";wake();};
+  step.onclick=()=>{
+    playing=false;play.textContent="继续";
+    rendered=(Math.max(0,rendered)+1)%fx.frames;t=rendered*1000/fx.fps;draw(rendered);
+  };
+  ground.onchange=async()=>{tile=await fetchImage(data.grounds[ground.value]);draw(Math.max(0,rendered));};
+  ring.onchange=()=>draw(Math.max(0,rendered));
+  stance.onchange=()=>{t=0;rendered=-1;draw(0);wake();};
+  previewPainters.push(()=>{
+    if(visible)return;
+    visible=true;
+    const actors=showGuardian?Object.entries(data.guardian):[];
+    Promise.all([fetchImage(fx.asset.file),fetchImage(data.grounds[ground.value]),fetchImage(data.player),
+      ...actors.map(([,actor])=>fetchImage(actor.file))])
+      .then(([s,g,p,...bodies])=>{
+        strip=s;tile=g;player=p;
+        guardianFrames=Object.fromEntries(actors.map(([key],i)=>[key,bodies[i]]));
+        draw(0);wake();
+      })
+      .catch(()=>{caption.textContent="预览素材加载失败";});
+  });
+  panel.resumePreview=()=>{if(visible&&playing)wake();};
+  return panel;
+}
+function drawDetails(){
+  for(const set of data.sets){
+    const detail=h("details");detail.id="kit-"+set.id;
+    detail.append(h("summary",`${set.name} · ${set.effect} · ${set.area}`),h("p",`${set.theme} · ${set.origin}`),h("p",set.rule));
+    const stage=h("div",null,"stage");
+    if(set.concept){
+      const figure=h("figure"),image=h("img");
+      image.src=set.concept;image.alt=set.name+"四件概念图";image.loading="lazy";
+      figure.append(image,h("figcaption","高清概念 · 头、胸、腿、鞋"));
+      if(set.concept_previous){const old=h("a","查看上一版概念图");old.href=set.concept_previous;figure.append(old);}
+      stage.append(figure);
+    }
+    const finished=h("div");finished.append(h("small","像素成品 · 4×"),lineIcons(set,128));stage.append(finished);
+    detail.append(stage);
+    const grid=h("div",null,"tiles");
+    for(const item of set.items){
+      const entry=h("article",null,"item");
+      entry.append(h("h4",item.name),h("small",item.part));
+      if(item.asset)entry.append(sized(item.asset));
+      entry.append(h("p",item.description),h("small","剪影 · "+item.silhouette));
+      if(item.asset)entry.append(review(item.id,item.name));
+      grid.append(entry);
+    }
+    detail.append(grid);
+    const fx=h("div",null,"fxgrid"), loadPreview=[];
+    for(const effect of set.effects){
+      const before=previewPainters.length;
+      const panel=effectViewer(effect,set);
+      if(previewPainters.length>before)loadPreview.push([previewPainters.at(-1),panel]);
+      fx.append(panel);
+    }
+    if(set.status){
+      const status=h("article",null,"fx");
+      status.append(h("h4","套装状态"),icon(set.status.file,12),icon(set.status.file,48),review(set.id+"-status",set.name+"状态图标"));
+      fx.append(status);
+    }
+    detail.append(fx);
+    detail.addEventListener("toggle",()=>{if(detail.open)for(const [start,panel] of loadPreview){start();panel.resumePreview();}});
+    $("entries").append(detail);
+  }
+  if(location.hash.startsWith("#kit-")){const target=document.querySelector(location.hash);if(target)target.open=true;}
+}
+function gridCell(item,scale,ground,silhouette=false){
+  const cell=h("div",null,ground?"ground":"slot");
+  if(ground)cell.style.backgroundImage=`url("${data.grounds[ground]}")`;
+  if(item.asset){
+    const asset=icon(item.asset.file,scale,scale,silhouette?"silhouette":"icon");
+    if(silhouette)asset.style.filter="brightness(0)";
+    cell.append(asset);
+  }else cell.append(h("span","·","muted"));
+  cell.append(h("small",item.name));return cell;
+}
+function comparisons(){
+  for(const [key,name] of Object.entries(sectionNames)){
+    $("shadows").append(h("h4",name));
+    const row=h("div",null,"lineup");
+    for(const set of data.sets)row.append(gridCell(set.items.find(i=>i.slot===key),64,null,true));
+    $("shadows").append(row);
+  }
+  for(const ids of data.comparison){
+    const row=h("div",null,"pair");
+    for(const id of ids)row.append(gridCell(itemById[id],64));
+    $("pairs").append(row);
+  }
+  for(const name of Object.keys(data.grounds)){
+    $("groundBoards").append(h("h4",name));
+    const row=h("div",null,"lineup");
+    for(const slot of Object.keys(sectionNames))for(const set of data.sets)row.append(gridCell(set.items.find(i=>i.slot===slot),32,name));
+    $("groundBoards").append(row);
+  }
+  for(const set of data.sets.filter(s=>s.status).slice(0,2))$("weaponStyle").append(lineIcons(set,32));
+  for(const src of data.weaponSamples)$("weaponStyle").append(icon(src,32));
+}
+$("copy").onclick=async()=>{
+  const lines=["# S–SET 套装防具评价"];
+  for(const [id,v] of Object.entries(reviews))lines.push(`- ${reviewLabel(id)} [${id}] · ${v.state||"备注"}${v.note? " — "+v.note.replaceAll("\n"," ") : ""}`);
+  if(lines.length===1){$("copyState").textContent="还没有评价。";return;}
+  const value=lines.join("\n"), area=$("export");area.value=value;area.hidden=false;area.select();
+  try{await navigator.clipboard.writeText(value);$("copyState").textContent="已复制全部评价。";}
+  catch(_){$("copyState").textContent="评价已选中。可按 ⌘C / Ctrl+C 复制。";}
+};
+$("updated").textContent=`最后更新 ${data.updated.replace("T"," ").replace("+08:00","")}（新加坡） · ${data.batch===5?"第 2 轮返修，待人工复核":"第 "+data.batch+" 批制作中"}`;
+$("counts").textContent=`图标 ${data.files.filter(x=>x.kind==="armor").length}/40 · 特效 ${data.files.filter(x=>x.kind==="effects").length}/10 · 状态图标 ${data.files.filter(x=>x.kind==="status").length}/10 · 英灵动作 ${Object.keys(data.guardian).length}/2`;
+refreshProgress();drawWalls();drawDetails();comparisons();refreshRevisions();
+</script>
+</body>
+</html>

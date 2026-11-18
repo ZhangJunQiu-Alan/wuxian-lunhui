@@ -43,6 +43,7 @@ func _init() -> void:
 
 
 func _ready() -> void:
+	UiKit.install(get_tree())  # 全游戏统一的界面主题
 	apply()  # 窗口相关的设置要等窗口准备好再应用
 	_apply_window_size()
 

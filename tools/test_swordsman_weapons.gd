@@ -44,16 +44,18 @@ func run() -> void:
 	root.add_child(hub)
 	current_scene = hub
 	await process_frame
-	var choice := hub.find_child("SwordsmanLoadout", true, false) as OptionButton
-	check(choice != null and choice.visible and choice.item_count == 11, "eleven options in actual hub")
-	if not choice:
+	var gear = hub._gear  # 武器在主神空间的「装备」页里选
+	check(gear != null and gear._weapon_ids().size() == 11, "eleven options in actual hub")
+	if not gear:
 		quit(1)
 		return
-	for i in choice.item_count:
-		check(choice.get_item_icon(i) != null, "hub icon: " + str(choice.get_item_metadata(i)))
-	choice.select(3)
-	choice.item_selected.emit(3)
-	var selected: String = choice.get_item_metadata(3)
+	gear.show_weapons()
+	await process_frame
+	for kit: String in kits:
+		check(gear._tiles.has("weapon:" + kit) and gear._icon("weapon:" + kit) != null, "hub icon: " + kit)
+	var selected: String = kits.keys()[3]
+	gear._select("weapon:" + selected)
+	gear._on_action()
 	save.load_game()
 	check(save.swordsman_weapon == selected, "hub selection persists through reload")
 	await settle()

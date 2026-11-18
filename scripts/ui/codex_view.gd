@@ -3,8 +3,8 @@ extends HBoxContainer
 ## 图鉴界面：左边选分类，中间是条目格子，右边是选中条目的详情
 ## 主神空间的「图鉴」分页和标题画面共用。没遇到过的条目显示剪影和「？？？」
 
-const GOLD := Color(1.0, 0.85, 0.4)
-const DIM := Color(0.7, 0.73, 0.8)
+const GOLD := UiKit.GOLD
+const DIM := UiKit.DIM
 const TILE := Vector2(88, 88)
 const WIDE_TILE := Vector2(176, 46)
 const SPRITE_HEIGHT := 150.0
@@ -52,9 +52,8 @@ func _ready() -> void:
 	_list.add_theme_constant_override("separation", 10)
 	_scroll.add_child(_list)
 
-	var detail := PanelContainer.new()
+	var detail := UiKit.framed(16)
 	detail.custom_minimum_size = Vector2(440, 0)
-	detail.add_theme_stylebox_override("panel", _style(Color(0.08, 0.09, 0.13), Color(0.3, 0.33, 0.42), 2, 16))
 	add_child(detail)
 	var detail_scroll := ScrollContainer.new()  # 文字长时在面板里滚动，不把整个界面撑高
 	detail_scroll.horizontal_scroll_mode = ScrollContainer.SCROLL_MODE_DISABLED
@@ -72,8 +71,8 @@ func _ready() -> void:
 	box.add_child(_stage)
 	_name = _label("", 24, GOLD)
 	_subtitle = _label("", 14, DIM)
-	_lore = _label("", 15, Color(0.88, 0.9, 0.95))
-	_extra = _label("", 14, Color(0.6, 0.8, 1.0))
+	_lore = _label("", 15, UiKit.IVORY)
+	_extra = _label("", 14, UiKit.INFO)
 	_count = _label("", 14, GOLD)
 	for label in [_name, _subtitle, _count, _lore, _extra]:
 		box.add_child(label)
@@ -100,9 +99,8 @@ func _show_category(category: String) -> void:
 		total_all += total
 		var button: Button = _category_buttons[key]
 		button.text = "%s   %d / %d" % [tr(CodexDB.NAMES[key]), found, total]
-		var border := GOLD if key == category else Color(0.3, 0.33, 0.42)
-		for state in ["normal", "hover", "pressed"]:
-			button.add_theme_stylebox_override(state, _style(Color(0.08, 0.09, 0.13), border, 2, 12))
+		var on := key == category
+		UiKit.toggle_button(button, on)
 	_progress.text = tr("收集进度  %d%%") % roundi(100.0 * found_all / maxf(1.0, total_all))
 
 	for child in _list.get_children():
@@ -110,7 +108,7 @@ func _show_category(category: String) -> void:
 	_selected = null
 	var first: Button
 	for section: Dictionary in _sections(category):
-		_list.add_child(_label(section.title, 15, DIM))
+		_list.add_child(UiKit.heading(section.title))
 		var flow := HFlowContainer.new()
 		flow.add_theme_constant_override("h_separation", 8)
 		flow.add_theme_constant_override("v_separation", 8)
@@ -153,9 +151,12 @@ func _make_tile(item: Dictionary) -> Button:
 
 
 func _set_tile_style(tile: Button, item: Dictionary, selected: bool) -> void:
-	var border: Color = GOLD if selected else (Color(item.color, 0.8) if item.count >= 0 else Color(0.22, 0.24, 0.3))
+	var known: bool = item.count >= 0
+	var border: Color = UiKit.IVORY if selected else (UiKit.LINE if known else Color("333c57"))
+	var bg := UiKit.SURFACE if selected else UiKit.SURFACE_RAISED
 	for state in ["normal", "hover", "pressed"]:
-		tile.add_theme_stylebox_override(state, _style(Color(0.08, 0.09, 0.13), border, 3 if selected else 2, 6))
+		tile.add_theme_stylebox_override(state, UiKit.cell(GOLD if state == "hover" and not selected else border, bg, 6))
+	tile.add_theme_color_override("font_color", UiKit.IVORY if known else UiKit.FAINT)
 
 
 func _select(tile: Button, item: Dictionary) -> void:
@@ -279,13 +280,3 @@ func _label(text: String, font_size: int, color: Color) -> Label:
 	label.add_theme_font_size_override("font_size", font_size)
 	label.modulate = color
 	return label
-
-
-func _style(bg: Color, border: Color, width: int, padding: int) -> StyleBoxFlat:
-	var style := StyleBoxFlat.new()
-	style.bg_color = bg
-	style.border_color = border
-	style.set_border_width_all(width)
-	style.set_corner_radius_all(8)
-	style.set_content_margin_all(padding)
-	return style

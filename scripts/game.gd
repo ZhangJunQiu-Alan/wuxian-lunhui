@@ -49,6 +49,7 @@ var fates := {}
 var ever_faith_loki := false  # 本局实际信仰过洛基（之后不再信仰也算）
 var battle: VigridBattle      # 第 3 关的神明援助，其他关卡为 null
 var _run_result := {}         # _finish_run 冻结下来的结算数据，结局字幕和结算界面读同一份
+var loot: Array[String] = []  # 本局掉落的装备 id，结算时收进行囊
 
 
 func _ready() -> void:
@@ -76,6 +77,10 @@ func _ready() -> void:
 		battle.player = player
 		add_child(battle)
 	MetaDB.apply(player)  # 主神空间购买的永久强化
+	if GearDB.active_set() != "":  # 穿齐了一套防具：套装效果
+		var effects := SetEffects.new()
+		effects.set_id = GearDB.active_set()
+		player.add_child(effects)
 	add_child(SupplyDrops.new())
 	if level_data.map.has("mist"):  # 第 2 关的冥雾
 		var mist := Mist.new()
@@ -83,6 +88,15 @@ func _ready() -> void:
 		mist.setup(level_data.map.mist)
 		add_child(mist)
 
+	_setup_interface()
+	process_physics_priority = -10  # 让推挤网格在所有敌人移动之前重建
+	Enemy.crit_chance = 0.0
+	GodPower.fusions.clear()
+	_queue_reward.call_deferred({"kind": "god"})  # 开局先选第一位神
+	_next_elite_time = level_data.elite_from
+
+
+func _setup_interface() -> void:
 	hud = Hud.new()
 	hud.character_id = player.character_id
 	add_child(hud)
@@ -103,13 +117,6 @@ func _ready() -> void:
 	pause_menu.game = self
 	pause_menu.abandon_requested.connect(_on_abandon_requested)
 	add_child(pause_menu)
-
-	process_physics_priority = -10  # 让推挤网格在所有敌人移动之前重建
-	Enemy.crit_chance = 0.0
-	GodPower.fusions.clear()
-	_queue_reward.call_deferred({"kind": "god"})  # 开局先选第一位神
-	_next_elite_time = level_data.elite_from
-
 
 func _process(delta: float) -> void:
 	if not is_running():
@@ -320,11 +327,12 @@ func _finish_run(cleared: bool) -> Dictionary:
 	if cleared:
 		add_reward_points(level_data.clear_reward + fate_count() * VigridTuning.FATE_REWARD)
 	Save.record_codex(_codex)
+	Save.record_gear(loot)
 	if not fates.is_empty():
 		Save.record_fates(level_id, fates, ever_faith_loki)
 	Save.record_run(level_id, reward_points, cleared, elapsed, kills)
 	_run_result = {"elapsed": elapsed, "kills": kills, "level": player.level,
-		"reward_points": reward_points, "reward_total": Save.reward_points}
+		"reward_points": reward_points, "reward_total": Save.reward_points, "loot": loot.duplicate()}
 	if not fates.is_empty():
 		_run_result.merge({"fates": fates.duplicate(), "fate_count": fate_count(), "ever_faith_loki": ever_faith_loki})
 	return _run_result
@@ -359,6 +367,7 @@ func _on_boss_defeated(defeated_boss: Boss) -> void:
 	hud.announce(defeated_boss.defeat_line)
 	add_reward_points(defeated_boss.reward_points)
 	FxLayer.floating_text(defeated_boss.global_position + Vector2(0, -60), tr("奖励点 +%d") % defeated_boss.reward_points, Color(1.0, 0.85, 0.4))
+	_drop_gear(defeated_boss.global_position)
 	if all_defeated:
 		_begin_ending()
 		get_tree().create_timer(3.0).timeout.connect(_on_level_cleared)  # 留 3 秒看击败演出
@@ -376,6 +385,21 @@ func _on_boss_defeated(defeated_boss: Boss) -> void:
 		gem.player = player
 		gem.position = defeated_boss.position + Vector2.from_angle(TAU * i / 5) * 60.0
 		add_child.call_deferred(gem)
+
+
+## Boss 掉落：从这一关的套装里随机给一件还没有的部件（都有了就不掉）。结算时收进行囊，中途放弃、死亡也保留
+func _drop_gear(at: Vector2) -> void:
+	var pool: Array[String] = []
+	for id in GearDB.items_of_level(level_id):
+		if not Save.gear.has(id) and not loot.has(id):
+			pool.append(id)
+	if pool.is_empty():
+		return
+	var id: String = pool.pick_random()
+	loot.append(id)
+	Audio.sfx("chest_open")
+	FxLayer.floating_text(at + Vector2(0, -84), tr("获得装备：%s") % tr(GearDB.piece(id).name), UiKit.GOLD_BRIGHT)
+	hud.show_loot(id)
 
 
 func _on_player_leveled_up(level: int) -> void:

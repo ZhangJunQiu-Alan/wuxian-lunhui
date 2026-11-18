@@ -88,7 +88,7 @@ func _physics_process(delta: float) -> void:
 	if _sprite:
 		_update_visual(delta)
 	if touches_player() and global_position.distance_to(target.global_position) < radius + Player.RADIUS:
-		target.take_damage(contact_damage)
+		target.take_damage(contact_damage, self)
 
 
 ## 身体的朝向和程序动画。耶梦加得的蛇头要沿路径转向，自己改写

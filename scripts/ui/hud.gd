@@ -3,6 +3,8 @@ extends CanvasLayer
 ## 战斗界面：经验条、血条、计时、击杀数、死亡结算
 
 const GOLD := Color(1.0, 0.85, 0.4)
+const HP_AT := Vector2(16, 24)
+const SET_ICON := 36.0  # 套装状态图标（12×12 放大 3 倍），穿齐一套时在血条左边
 const RESULT_DIM := Color(0.62, 0.65, 0.72)
 const RESULT_CARD := Vector2(88, 132)
 const FATE_NAMES := {"thor_saved": "托尔活了下来", "vidar_intervened": "维达撕开巨口", "freyr_assisted": "弗雷参战"}
@@ -15,6 +17,7 @@ const RESULT_KINDS := {
 }
 
 var character_id := CharacterDB.DEFAULT_ID  # 由 game.gd 在创建 HUD 前设置
+var restart_scene := ""
 var _xp_bar: ProgressBar
 var _hp_bar: ProgressBar
 var _level_label: Label
@@ -31,6 +34,10 @@ var _boss_name: Label
 var _boss_bar: ProgressBar
 var _hurt_flash: ColorRect
 var _last_hp := -1.0
+var _hp_text: Label
+var _set_icon: TextureRect
+var _set_text: Label
+var _loot_box: VBoxContainer
 var _ending: Control           # 篇章结局字幕（显示时不为 null）
 var _ending_beats := PackedStringArray()
 var _ending_index := 0
@@ -51,35 +58,71 @@ func _ready() -> void:
 	add_child(_hurt_flash)
 
 	_xp_bar = ProgressBar.new()
-	_xp_bar.show_percentage = false
 	_xp_bar.set_anchors_and_offsets_preset(Control.PRESET_TOP_WIDE)
-	_xp_bar.offset_bottom = 14
-	_xp_bar.modulate = Color(0.4, 0.85, 1.0)
+	_xp_bar.offset_bottom = 12
+	UiKit.style_bar(_xp_bar, Color(0.4, 0.85, 1.0))
 	add_child(_xp_bar)
 
+	# 穿齐一套防具时，血条左边多一个套装图标，血条往右让开
+	var has_set := SetEffects.active != null
 	_hp_bar = ProgressBar.new()
-	_hp_bar.show_percentage = false
-	_hp_bar.position = Vector2(16, 24)
-	_hp_bar.size = Vector2(240, 16)
-	_hp_bar.modulate = Color(1.0, 0.35, 0.35)
+	_hp_bar.position = HP_AT + Vector2(SET_ICON + 8.0 if has_set else 0.0, 0)
+	_hp_bar.size = Vector2(240, 20)
+	UiKit.style_bar(_hp_bar, Color(1.0, 0.35, 0.35))
 	add_child(_hp_bar)
+	_hp_text = UiKit.outlined(UiKit.label("", 13, Color.WHITE, HORIZONTAL_ALIGNMENT_CENTER), 3)
+	_hp_text.position = _hp_bar.position + Vector2(0, -1)
+	_hp_text.size = _hp_bar.size
+	_hp_text.vertical_alignment = VERTICAL_ALIGNMENT_CENTER
+	add_child(_hp_text)
+	if has_set:
+		var plate := Panel.new()
+		plate.position = HP_AT + Vector2(0, -2)
+		plate.size = Vector2(SET_ICON, SET_ICON)
+		plate.add_theme_stylebox_override("panel", UiKit.box(UiKit.INK, UiKit.IVORY, 2, 0, 0))
+		plate.tooltip_text = tr(GearDB.SETS[SetEffects.active.set_id].effect)
+		add_child(plate)
+		_set_icon = TextureRect.new()
+		_set_icon.texture = GearDB.set_icon(SetEffects.active.set_id)
+		_set_icon.texture_filter = CanvasItem.TEXTURE_FILTER_NEAREST
+		_set_icon.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
+		_set_icon.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
+		_set_icon.mouse_filter = Control.MOUSE_FILTER_IGNORE
+		plate.add_child(_set_icon)
+		_set_text = UiKit.outlined(UiKit.label("", 12, UiKit.GOLD_BRIGHT, HORIZONTAL_ALIGNMENT_RIGHT), 3)
+		_set_text.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
+		_set_text.offset_right = -2
+		_set_text.offset_top = 16
+		_set_text.vertical_alignment = VERTICAL_ALIGNMENT_BOTTOM
+		plate.add_child(_set_text)
 
-	_level_label = _make_label(Vector2(16, 44))
-	_kills_label = _make_label(Vector2(16, 68))
+	_level_label = _make_label(Vector2(_hp_bar.position.x, 46))
+	_kills_label = _make_label(Vector2(_hp_bar.position.x, 68))
 
-	_time_label = Label.new()
+	_time_label = UiKit.outlined(Label.new(), 6)
 	_time_label.set_anchors_and_offsets_preset(Control.PRESET_CENTER_TOP)
 	_time_label.offset_top = 20
 	_time_label.add_theme_font_size_override("font_size", 28)
 	add_child(_time_label)
 
+	# 右上角：本局掉落的装备，一条一条冒出来
+	_loot_box = VBoxContainer.new()
+	_loot_box.set_anchors_and_offsets_preset(Control.PRESET_TOP_RIGHT)
+	_loot_box.offset_left = -280
+	_loot_box.offset_right = -16
+	_loot_box.offset_top = 40
+	_loot_box.add_theme_constant_override("separation", 6)
+	_loot_box.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	_loot_box.theme = UiKit.theme()
+	add_child(_loot_box)
+
 	_faith_box = VBoxContainer.new()
-	_faith_box.position = Vector2(16, 100)
+	_faith_box.position = Vector2(16, 102)
 	add_child(_faith_box)
 
 	# 底部中间：大招能量条
 	_ult_bar = ProgressBar.new()
-	_ult_bar.show_percentage = false
+	UiKit.style_bar(_ult_bar, Color(0.55, 0.65, 1.0))
 	_ult_bar.set_anchors_and_offsets_preset(Control.PRESET_CENTER_BOTTOM)
 	_ult_bar.offset_left = -160
 	_ult_bar.offset_right = 160
@@ -87,7 +130,7 @@ func _ready() -> void:
 	_ult_bar.offset_bottom = -26
 	add_child(_ult_bar)
 
-	_ult_label = Label.new()
+	_ult_label = UiKit.outlined(Label.new())
 	_ult_label.set_anchors_and_offsets_preset(Control.PRESET_CENTER_BOTTOM)
 	_ult_label.offset_left = -160
 	_ult_label.offset_right = 160
@@ -97,7 +140,7 @@ func _ready() -> void:
 	add_child(_ult_label)
 
 	# 屏幕下方的事件提示，例如「狼群包围！」
-	_announce = Label.new()
+	_announce = UiKit.outlined(Label.new(), 6)
 	_announce.set_anchors_and_offsets_preset(Control.PRESET_BOTTOM_WIDE)
 	_announce.offset_top = -150
 	_announce.offset_bottom = -110
@@ -114,15 +157,14 @@ func _ready() -> void:
 	_boss_box.offset_top = 58
 	_boss_box.visible = false
 	add_child(_boss_box)
-	_boss_name = Label.new()
+	_boss_name = UiKit.outlined(Label.new())
 	_boss_name.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
 	_boss_name.add_theme_font_size_override("font_size", 18)
 	_boss_name.modulate = Color(1.0, 0.75, 0.6)
 	_boss_box.add_child(_boss_name)
 	_boss_bar = ProgressBar.new()
-	_boss_bar.show_percentage = false
-	_boss_bar.custom_minimum_size.y = 14
-	_boss_bar.modulate = Color(0.9, 0.25, 0.2)
+	_boss_bar.custom_minimum_size.y = 16
+	UiKit.style_bar(_boss_bar, Color(0.9, 0.25, 0.2))
 	_boss_box.add_child(_boss_bar)
 
 	_fps_label = Label.new()
@@ -139,7 +181,7 @@ func _ready() -> void:
 
 
 func _make_label(pos: Vector2) -> Label:
-	var label := Label.new()
+	var label := UiKit.outlined(Label.new())
 	label.position = pos
 	add_child(label)
 	return label
@@ -148,6 +190,7 @@ func _make_label(pos: Vector2) -> Label:
 func set_hp(hp: float, max_hp: float) -> void:
 	_hp_bar.max_value = max_hp
 	_hp_bar.value = hp
+	_hp_text.text = "%d / %d" % [ceili(hp), int(max_hp)]
 	if hp < _last_hp - 0.5:  # 回血不闪，只有掉血才闪
 		_hurt_flash.color.a = 0.25
 		create_tween().tween_property(_hurt_flash, "color:a", 0.0, 0.3)
@@ -205,7 +248,7 @@ func set_faith(player: Player) -> void:
 	for child in _faith_box.get_children():
 		child.queue_free()
 	for god_id: String in player.faith:
-		var label := Label.new()
+		var label := UiKit.outlined(Label.new())
 		label.text = LevelUpPanel.faith_line(player, god_id)
 		label.modulate = Gods.ALL[god_id].color
 		_faith_box.add_child(label)
@@ -217,7 +260,41 @@ func set_stats(elapsed: float, kills: int) -> void:
 	_kills_label.text = tr("击杀 %d") % kills
 
 
+## Boss 掉了一件装备：右上角冒出一条提示，停几秒后淡出
+func show_loot(id: String) -> void:
+	var toast := PanelContainer.new()
+	toast.add_theme_stylebox_override("panel", UiKit.panel(10, UiKit.GOLD))
+	toast.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	var row := HBoxContainer.new()
+	row.add_theme_constant_override("separation", 10)
+	toast.add_child(row)
+	var icon := TextureRect.new()
+	icon.texture = GearDB.icon(id)
+	icon.custom_minimum_size = Vector2(48, 48)
+	icon.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
+	icon.texture_filter = CanvasItem.TEXTURE_FILTER_NEAREST
+	row.add_child(icon)
+	var text := VBoxContainer.new()
+	text.alignment = BoxContainer.ALIGNMENT_CENTER
+	text.add_theme_constant_override("separation", 0)
+	row.add_child(text)
+	var set_info: Dictionary = GearDB.SETS[GearDB.set_of(id)]
+	text.add_child(UiKit.label(tr("获得装备 · %s") % tr(set_info.name), 12, UiKit.DIM))
+	text.add_child(UiKit.label(tr(GearDB.piece(id).name), 18, UiKit.GOLD_BRIGHT))
+	_loot_box.add_child(toast)
+	toast.modulate.a = 0.0
+	var tween := toast.create_tween()
+	tween.tween_property(toast, "modulate:a", 1.0, 0.25)
+	tween.tween_interval(5.0)
+	tween.tween_property(toast, "modulate:a", 0.0, 0.8)
+	tween.tween_callback(toast.queue_free)
+
+
 func _process(_delta: float) -> void:
+	if _set_icon and is_instance_valid(SetEffects.active):
+		var state := SetEffects.active.hud_state()
+		_set_icon.modulate = Color.WHITE if state.lit else Color(0.45, 0.45, 0.5, 0.8)
+		_set_text.text = state.text
 	_fps_label.visible = Settings.show_fps
 	if _fps_label.visible:
 		_fps_label.text = "%d FPS" % Engine.get_frames_per_second()
@@ -454,9 +531,36 @@ func _numbers_column(run: Dictionary) -> Control:
 				row.add_child(_stat_tile(tr(FATE_NAMES[id]), "✓" if fates[id] else "—", GOLD if fates[id] else Color(RESULT_DIM, 0.6)))
 		box.add_child(row)
 	box.add_child(_rule())
-	box.add_child(_tile_row([
+	var rewards := _tile_row([
 		_count_up(_stat_tile(tr("奖励点"), "", GOLD, tr("累计 %d") % run.reward_total), run.reward_points, "+%d"),
-	]))
+	])
+	box.add_child(rewards)
+	var loot: Array = run.get("loot", [])
+	if not loot.is_empty():  # 本局 Boss 掉落的装备：和奖励点并排，不让结算面板变高
+		var tile := VBoxContainer.new()
+		tile.name = "Loot"
+		tile.size_flags_horizontal = Control.SIZE_EXPAND_FILL
+		tile.add_theme_constant_override("separation", 4)
+		rewards.add_child(tile)
+		var row := HBoxContainer.new()
+		row.alignment = BoxContainer.ALIGNMENT_CENTER
+		row.add_theme_constant_override("separation", 8)
+		tile.add_child(row)
+		var names: Array[String] = []
+		for id: String in loot:
+			names.append(tr(GearDB.piece(id).name))
+			var plate := PanelContainer.new()
+			plate.add_theme_stylebox_override("panel", UiKit.box(UiKit.INK, Color(GOLD, 0.6), 1, 4, 4))
+			plate.tooltip_text = names[-1]
+			row.add_child(plate)
+			var icon := TextureRect.new()
+			icon.texture = GearDB.icon(id)
+			icon.custom_minimum_size = Vector2(40, 40)
+			icon.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
+			icon.texture_filter = CanvasItem.TEXTURE_FILTER_NEAREST
+			plate.add_child(icon)
+		tile.add_child(_result_text(tr("获得装备"), 14, RESULT_DIM))
+		tile.add_child(_result_text(tr("、").join(names), 12, GOLD))
 	return box
 
 
@@ -560,4 +664,7 @@ func _on_hub_pressed() -> void:
 
 func _on_restart_pressed() -> void:
 	get_tree().paused = false
-	ChapterIntro.open(get_tree(), LevelDB.selected())
+	if restart_scene.is_empty():
+		ChapterIntro.open(get_tree(), LevelDB.selected())
+	else:
+		get_tree().change_scene_to_file(restart_scene)

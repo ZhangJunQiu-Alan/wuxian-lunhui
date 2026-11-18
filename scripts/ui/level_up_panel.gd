@@ -27,6 +27,7 @@ func _ready() -> void:
 	var overlay := ColorRect.new()
 	overlay.color = Color(0, 0, 0, 0.65)
 	overlay.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
+	overlay.theme = UiKit.theme()
 	add_child(overlay)
 
 	var center := CenterContainer.new()

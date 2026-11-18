@@ -367,3 +367,56 @@ R英语旁白机器转录复核：Whisper原作 https://github.com/openai/whispe
 | --- | --- | --- | --- | --- |
 | `source/taskS_swordsman_weapons_2026-11-06/originals/` 11 张概念图 | OpenAI 内置图像生成，以本项目任务书中的传说兵器描述为依据 | 沿用项目既有 AI 生成素材登记。在双方之间且在适用法律允许范围内，输出归用户。发布披露按素材规范执行 | [OpenAI 使用条款](https://openai.com/policies/terms-of-use/) | 2026-11-06。逐张提示词见本批 `records/concept-prompts.json` |
 | S–SW 正式 PNG、可编辑 Aseprite、WAV | 本项目像素重绘与本地合成。空手身体、旧太刀拆层及地块预览使用本项目已有素材；音效由本地波形合成 | 原创和既有项目资产衍生，原有资产授权沿用其登记 | — | 2026-11-06。制作源和文件 SHA256 见本批 `records/` |
+
+## 2026-11-10 套装防具美术 S–SET
+
+| 文件 / 范围 | 来源与工具 | 授权 / 所有权 | 来源链接 | 日期与凭证 |
+| --- | --- | --- | --- | --- |
+| `source/taskS_sets_2026-11-10/originals/` 10 张概念图 | OpenAI 内置 imagegen，按本项目已定稿套装描述及神话、史实生成 | 在双方之间且在适用法律允许范围内，输出归用户。发布披露依项目素材规范 | [OpenAI 使用条款](https://openai.com/policies/terms-of-use/) | 2026-11-10。实际提示词见 `records/concept-prompts.json` |
+| `sprites/items/armor/`、`sprites/effects/sets/`、`sprites/ui/sets/` 的本批 PNG | 本项目像素加工和原创绘制。预览使用已有项目角色、地块和字体 | 概念衍生部分沿用上行登记，项目已有资源保留原登记 | — | 清单和 SHA256 见 `source/taskS_sets_2026-11-10/manifest.json` |
+
+S–SET 第二轮补充。`originals/xingtian-r2.png` 与 `originals/valhalla-guardian-r2.png` 为内置 imagegen 概念稿，沿用本批登记。`valhalla_guardian_idle.png`、`valhalla_guardian_attack.png` 和本轮返修 PNG 为项目像素绘制。概念提示词和哈希见批次 `records/`。
+
+## 2026-11-13 米德加尔特 3D 长屋样品
+
+`models/midgard/midgard_longhouse.glb` 及其调色板为本项目原创程序建模，按项目已有雪村设定制作，未使用第三方模型、贴图或角色。可复现源文件及 SHA-256 位于 `source/task3d_midgard_2026-11-13/`。
+
+雪村长屋 Blender 材质评审版沿用本项目长屋网格。颜色图与法线图由本批 `refine_longhouse_blender.py` 本地生成。Blender 母版、游戏 GLB 和评审图沿用本条原创素材来源记录。
+
+## 2026-11-14 芬布尔之冬房间模型
+
+models/midgard/rooms/ 八件模型及 source/task3d_rooms_2026-11-14/ 的 Blender 母版、组合场景、预览均为本项目原创程序建模。颜色与法线贴图通过本地脚本生成，复用本项目已有材质生成函数。制作源、资产用途和哈希位于该批次目录。
+
+2026-11-14 深暗废墟样式。source/task3d_rooms_dark_2026-11-14/ 与 models/midgard/rooms_dark/ 为同日房间模块的原创变体，材质、纹理、几何与渲染均由本项目脚本制作。制作源和文件清单位于该批次目录。
+
+## 2026-11-15 精细废墟拱门样板
+
+`source/task3d_gate_quality_2026-11-15/` 和 `models/midgard/quality/rune_gate.glb` 的门体、砌块、拱券、五金、链条与碎石由本项目 Blender 脚本建模。石材、木材与锈铁使用 Poly Haven CC0 扫描 PBR 材质。
+
+| 材质 | 作者 | 来源 |
+| --- | --- | --- |
+| Rock Face 03 | Dario Barresi / Rico Cilliers | https://polyhaven.com/a/rock_face_03 |
+| Weathered Brown Planks | Dimitrios Savva / Rico Cilliers | https://polyhaven.com/a/weathered_brown_planks |
+| Rust Coarse 01 | Dimitrios Savva / Rico Cilliers | https://polyhaven.com/a/rust_coarse_01 |
+
+许可页面 https://polyhaven.com/license 。原始贴图、官方元数据、下载 URL 与哈希保存于本批 `textures/` 和 `records/`；Blender 母版打包处理后的贴图。未采用第三方门体模型。
+
+2026-11-15 精细房间模块扩展。`source/task3d_rooms_quality_2026-11-15/` 与 `models/midgard/quality/` 新增的地面、断桥、地刺、祭盘、踏板、拉杆及火盆，几何由本项目 Blender 脚本制作。复用同日精细拱门已登记的 Poly Haven CC0 扫描材质，母版打包贴图；无新增第三方模型。材质作者、原始下载 URL 与哈希沿用 `source/task3d_gate_quality_2026-11-15/records/`，本批制作、导入、动画与文件验证记录见新批次 `records/`。
+
+2026-11-15 精细建筑与掩体扩展。`source/task3d_architecture_quality_2026-11-15/` 与 `models/midgard/quality/` 新增残墙、承重木柱、石阶、路障、补给箱及符文立碑，几何由本项目 Blender 脚本制作。沿用精细拱门已登记的 Poly Haven CC0 材质，不增加外部模型或贴图。立碑刻槽为本地布尔建模，补给箱保留内部与独立开盖动画。源文件、逐件清单和验证记录见本批目录。
+
+2026-11-15 北欧神话角色与建筑扩展。`source/task3d_mythic_production_2026-11-15/` 新增剑士、尸鬼、冬狼、斯库尔、冰霜精魂、独立剑鞘、十件神话建筑与六件自然环境/场景设施。网格、骨骼、蒙皮、动作和角色织物/皮革/钢材/毛皮材质由本地脚本制作。环境材质沿用精细拱门登记的 Poly Haven CC0 图；未使用第三方模型或动作。文学及博物馆资料只作意象背景，未复制插图。来源与逐件记录见本批 records/。Three.js 0.187.0（MIT）用于本地三维审核，esbuild 0.28.2（MIT）仅作打包工具，锁文件位于 tools/asset_review/；原许可副本见审核文档 vendor/。
+
+## 2026-11-16 全关卡 3D 角色/怪物/Boss/拾取物资产（CC0 基底 + 北欧暗黑化改装）
+
+| 文件 / 范围 | 来源与工具 | 授权 / 所有权 | 来源链接 | 日期与凭证 |
+| --- | --- | --- | --- | --- |
+| `assets/models/roster/*.glb`（36 项） | 基于 Quaternius & KayKit CC0 基底模型，经 Blender 5.3 Python 暗黑化改装、重绑定与重导出 | CC0-1.0（公有领域，可免费商用与修改） | 见下方基底包链接 | 2026-11-16；源码与预览在 `assets/source/task3d_roster_2026-11-16/` |
+| Quaternius CC0 基底包（Modular Men / Modular Women / CyberChar / Animals / Medieval Weapons / RPG Items / Survival / Ships / Dinosaurs / Easy Enemies） | Quaternius | CC0-1.0 | https://quaternius.com/ | 2026-11-16 |
+| KayKit CC0 基底包（Adventurers: Knight, Barbarian, Mage, Rogue_Hooded; Skeletons: Warrior, Mage, Rogue, Minion） | Kay Lousberg (KayKit) | CC0-1.0 | https://kaylousberg.com/ | 2026-11-16 |
+
+## 2026-11-18 芬布尔之冬 · 冻石庭院
+
+`models/midgard/courtyard/` 的台地、遗迹、木闸与道具为本项目 Blender 建模。冻石地表、峡湾远景、旗幡贴图与世界树嵌纹为内置 ImageGen 生成。叠石与橡木沿用精细废墟拱门登记的 Poly Haven CC0 材质，游戏录像复用项目现有音乐与音效。源模型、生成提示词和文件对应关系见[制作记录](source/midgard_courtyard/制作记录.md)。
+
+第三版岩岬、石构、植被网格和碰撞标记由本项目 Blender 脚本制作。浅石、冻草、玄武岩、水面、松树和峡湾远景为内置 ImageGen 生成。母版和提示词见[第三版制作记录](source/midgard_courtyard/v3/制作记录.md)。

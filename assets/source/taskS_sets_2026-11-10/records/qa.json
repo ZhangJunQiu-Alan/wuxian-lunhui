@@ -1,0 +1,58 @@
+{
+  "counts": {
+    "armor": 40,
+    "status": 10,
+    "effects": 10,
+    "actors": 2
+  },
+  "concepts": 10,
+  "radius_checks": {
+    "thornoath_burst": {
+      "peak_reach": 120.004,
+      "max_error_px": 0.004
+    },
+    "yellowwind_storm": {
+      "gameplay_radius": 48,
+      "art_has_ground_ring": false,
+      "foot_zone_width_by_frame": [
+        36,
+        35,
+        38,
+        39,
+        37,
+        36
+      ]
+    },
+    "yellowwind_storm_start": {
+      "gameplay_radius": 48,
+      "art_has_ground_ring": false,
+      "foot_zone_width_by_frame": [
+        24,
+        27,
+        34
+      ]
+    },
+    "yellowwind_storm_end": {
+      "gameplay_radius": 48,
+      "art_has_ground_ring": false,
+      "foot_zone_width_by_frame": [
+        31,
+        31,
+        42
+      ]
+    },
+    "dragonslayer_scale": {
+      "first_opaque_y": 30,
+      "protected_head_rows": [
+        0,
+        28
+      ]
+    }
+  },
+  "failures": [],
+  "revised_feedback": 15,
+  "preserved_r1_files": 118,
+  "changed_r1_files": [],
+  "existing_files": 21456,
+  "changed_assets": []
+}

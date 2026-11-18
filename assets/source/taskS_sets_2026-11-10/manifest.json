@@ -1,0 +1,3133 @@
+{
+  "updated": "2026-11-10T19:02+08:00",
+  "batch": 5,
+  "sets": [
+    {
+      "id": "thornoath",
+      "name": "荆誓骑士",
+      "area": "第一关",
+      "effect": "荆棘反刺",
+      "rule": "受到攻击时，荆棘反刺攻击者，造成「这次受到的伤害 ×3 + 你的武器伤害」，并把 120 像素内的敌人全部推开。0.5 秒内最多触发一次",
+      "items": [
+        {
+          "id": "thornoath_helm",
+          "slot": "helm",
+          "part": "头盔",
+          "name": "荆冠盔",
+          "description": "以枯萎荆枝编织而成的头盔，枝刺深深扎入佩戴者的头骨。\n冠冕本应象征荣耀，而这顶荆冠，只授予那些甘愿承受苦难之人。",
+          "look": "暗铁圆顶盔，外面箍一圈枯黑荆枝编成的冠，荆刺朝里扎进盔中，盔沿下露出穿透出来的刺尖。面甲只开一道窄横缝",
+          "silhouette": "盔顶一圈参差的刺",
+          "asset": {
+            "id": "thornoath_helm",
+            "file": "approved/armor/thornoath_helm.png",
+            "runtime": "assets/sprites/items/armor/thornoath_helm.png",
+            "size": [
+              32,
+              32
+            ],
+            "sha256": "ca147def45ceafa886962968c753d65459c78b43d2ef2ad2a43748498b051753",
+            "kind": "armor",
+            "slot": "helm",
+            "frames": 1,
+            "kit": "thornoath"
+          }
+        },
+        {
+          "id": "thornoath_chest",
+          "slot": "chest",
+          "part": "胸甲",
+          "name": "荆誓胸甲",
+          "description": "覆有暗红锈迹的古老铠甲，甲缝间生长着不知名的黑色荆藤。\n据说每一道刻痕，都是曾经刺入骑士身躯的利刃。那些伤口早已愈合，荆棘却仍记得它们。\n骑士以血肉为薪，荆棘便一年比一年繁茂。",
+          "look": "古老的板甲胸甲，布满暗红锈迹和一道道刻痕；甲片接缝里长出黑色荆藤，藤上带刺",
+          "silhouette": "宽肩板甲，边缘伸出藤刺",
+          "asset": {
+            "id": "thornoath_chest",
+            "file": "approved/armor/thornoath_chest.png",
+            "runtime": "assets/sprites/items/armor/thornoath_chest.png",
+            "size": [
+              32,
+              32
+            ],
+            "sha256": "57db1e45caa5043b97be779e058c3c9a651d2093e23259ab61fbaef58b9f593c",
+            "kind": "armor",
+            "slot": "chest",
+            "frames": 1,
+            "kit": "thornoath"
+          }
+        },
+        {
+          "id": "thornoath_legs",
+          "slot": "legs",
+          "part": "护腿",
+          "name": "缠刺护腿",
+          "description": "荆藤沿着护腿的铁片盘绕而上，尖刺穿透甲胄，仿佛与穿戴者的血肉融为一体。\n它从不保护双腿，只是确保骑士在倒下之前，仍能继续前行。",
+          "look": "一对铁护腿，荆藤从脚踝螺旋盘绕到大腿，刺尖从里往外穿透铁片",
+          "silhouette": "螺旋缠绕的藤",
+          "asset": {
+            "id": "thornoath_legs",
+            "file": "approved/armor/thornoath_legs.png",
+            "runtime": "assets/sprites/items/armor/thornoath_legs.png",
+            "size": [
+              32,
+              32
+            ],
+            "sha256": "116ebbe642c5ae7e8d0019ba714ee1e09def5a3b2e692d0cbf1b557c025ab47f",
+            "kind": "armor",
+            "slot": "legs",
+            "frames": 1,
+            "kit": "thornoath"
+          }
+        },
+        {
+          "id": "thornoath_boots",
+          "slot": "boots",
+          "part": "鞋子",
+          "name": "荆根战靴",
+          "description": "由漆黑铁片与枯死的荆根锻造而成，沉重得不像凡人所能穿戴。\n据说穿上它的人，双足便再也无法踏入没有荆棘的土地。",
+          "look": "漆黑铁片拼成的厚重战靴，靴底和靴跟长出枯死的荆根，像扎进土里的根须",
+          "silhouette": "靴底垂下的根须",
+          "asset": {
+            "id": "thornoath_boots",
+            "file": "approved/armor/thornoath_boots.png",
+            "runtime": "assets/sprites/items/armor/thornoath_boots.png",
+            "size": [
+              32,
+              32
+            ],
+            "sha256": "efa7481290ab53439041ad3ad11dbcd4571e1f32b12d51d26d6fe237cb94807e",
+            "kind": "armor",
+            "slot": "boots",
+            "frames": 1,
+            "kit": "thornoath"
+          }
+        }
+      ],
+      "theme": "缠绕的黑色荆藤和尖刺",
+      "origin": "原创的古老骑士团，中世纪早期",
+      "stage": 1,
+      "palette": [
+        "252a34",
+        "353b46",
+        "4c5461",
+        "666d77",
+        "9197a0",
+        "44403f",
+        "5a493b",
+        "77624b",
+        "503439",
+        "7a4d46"
+      ],
+      "concept": "originals/thornoath.png",
+      "concept_sha256": "47855b68a79fa1fb997be513f3487b382e9edbc3c7cc00f24c78b06f7ddcaa58",
+      "status": {
+        "id": "thornoath",
+        "file": "approved/status/thornoath.png",
+        "runtime": "assets/sprites/ui/sets/thornoath.png",
+        "size": [
+          12,
+          12
+        ],
+        "sha256": "aad6e8e8b259a906b186a56b0cd7f1ac2f40defecbe5427eb120e54598e99b2b",
+        "kind": "status",
+        "frames": 1,
+        "kit": "thornoath"
+      },
+      "effects": [
+        {
+          "id": "thornoath_burst",
+          "kit": "thornoath",
+          "label": "荆棘反刺 · 外圈",
+          "frames": 6,
+          "fps": 16,
+          "anchor": [
+            124,
+            124
+          ],
+          "event": "受击触发，以玩家为中心",
+          "layer": "地面和角色之间",
+          "play": "once",
+          "radius": 120,
+          "frame_size": [
+            248,
+            248
+          ],
+          "asset": {
+            "id": "thornoath_burst",
+            "file": "approved/effects/thornoath_burst.png",
+            "runtime": "assets/sprites/effects/sets/thornoath_burst.png",
+            "size": [
+              1488,
+              248
+            ],
+            "sha256": "8c54e4a633f0b7f044110168b350aa983e4b92632a442bba92146198e2153a8e",
+            "kind": "effects",
+            "kit": "thornoath",
+            "label": "荆棘反刺 · 外圈",
+            "frames": 6,
+            "fps": 16,
+            "anchor": [
+              124,
+              124
+            ],
+            "event": "受击触发，以玩家为中心",
+            "layer": "地面和角色之间",
+            "play": "once",
+            "radius": 120,
+            "frame_size": [
+              248,
+              248
+            ]
+          }
+        },
+        {
+          "id": "thornoath_stab",
+          "kit": "thornoath",
+          "label": "荆棘反刺 · 攻击者",
+          "frames": 4,
+          "fps": 16,
+          "anchor": [
+            12,
+            27
+          ],
+          "event": "反刺命中攻击者，以受击目标的地面投影为锚",
+          "layer": "敌人前方",
+          "play": "once",
+          "frame_size": [
+            24,
+            32
+          ],
+          "asset": {
+            "id": "thornoath_stab",
+            "file": "approved/effects/thornoath_stab.png",
+            "runtime": "assets/sprites/effects/sets/thornoath_stab.png",
+            "size": [
+              96,
+              32
+            ],
+            "sha256": "f2af3527cc089a5422d762cc12519fb7dbd0d47d8ee9d207434df96253d2ee8c",
+            "kind": "effects",
+            "kit": "thornoath",
+            "label": "荆棘反刺 · 攻击者",
+            "frames": 4,
+            "fps": 16,
+            "anchor": [
+              12,
+              27
+            ],
+            "event": "反刺命中攻击者，以受击目标的地面投影为锚",
+            "layer": "敌人前方",
+            "play": "once",
+            "frame_size": [
+              24,
+              32
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "xingtian",
+      "name": "刑天",
+      "area": "第一关",
+      "effect": "猛志",
+      "rule": "每受到一次攻击叠 1 层，每层受到的伤害 -8%，最多 5 层（-40%）。每次挨打都刷新时间，10 秒没挨打就逐层消失",
+      "items": [
+        {
+          "id": "xingtian_helm",
+          "slot": "helm",
+          "part": "头盔",
+          "name": "无首盔",
+          "description": "一顶没有面甲的古老战盔，头颅的位置空空如也。\n传说它的主人曾被斩去首级，却仍未放下手中的干戚。自那以后，便再无人敢以斩首作为终结战斗的手段。",
+          "look": "商周式的青铜胄，表面有兽面纹，没有面甲。正面的开口里空无一物，纯黑，看不到头",
+          "silhouette": "正面开口很大的空盔",
+          "asset": {
+            "id": "xingtian_helm",
+            "file": "approved/armor/xingtian_helm_r2.png",
+            "runtime": "assets/sprites/items/armor/xingtian_helm_r2.png",
+            "size": [
+              32,
+              32
+            ],
+            "sha256": "a5084e10572db755143a73cb46762ac9b16f7f0eae43a56f1b37f6218560ac7c",
+            "kind": "armor",
+            "slot": "helm",
+            "frames": 1,
+            "kit": "xingtian",
+            "previous": "approved/armor/xingtian_helm.png"
+          }
+        },
+        {
+          "id": "xingtian_chest",
+          "slot": "chest",
+          "part": "胸甲",
+          "name": "怒目胸甲",
+          "description": "厚重的赤铜胸甲，正中央铸有一双怒目，仿佛仍在注视着世间的仇敌。\n甲身遍布刀斧留下的凹痕，却没有一道能够将其贯穿。那些伤痕并非败北的印记，而是战意尚存的证明。",
+          "look": "厚重的赤铜胸甲，胸前铸一双怒睁的眼（刑天「以乳为目」），可以在肚脐处再铸一张口（「以脐为口」）。甲面满是刀斧砍出的凹痕，没有一处砍穿",
+          "silhouette": "圆鼓的整片胸甲",
+          "asset": {
+            "id": "xingtian_chest",
+            "file": "approved/armor/xingtian_chest_r2.png",
+            "runtime": "assets/sprites/items/armor/xingtian_chest_r2.png",
+            "size": [
+              32,
+              32
+            ],
+            "sha256": "aa41004c68d7501ea3b0150b30fe87a464791d84c7d92af95b6fb5900aa38cdb",
+            "kind": "armor",
+            "slot": "chest",
+            "frames": 1,
+            "kit": "xingtian",
+            "previous": "approved/armor/xingtian_chest.png"
+          }
+        },
+        {
+          "id": "xingtian_legs",
+          "slot": "legs",
+          "part": "护腿",
+          "name": "常羊护腿",
+          "description": "以常羊山的玄铁锻造而成，沉重异常，表面残留着暗红色的血迹。\n传闻刑天陨首之地，血染山石，历经千年亦未褪色。后来者将山石熔铸成甲，只为铭记那场未曾结束的战斗。",
+          "look": "玄铁铸的护腿，近黑色，厚重；表面有洗不掉的暗红血迹（点状，不成片），边缘一圈云雷纹",
+          "silhouette": "粗短厚重",
+          "asset": {
+            "id": "xingtian_legs",
+            "file": "approved/armor/xingtian_legs_r2.png",
+            "runtime": "assets/sprites/items/armor/xingtian_legs_r2.png",
+            "size": [
+              32,
+              32
+            ],
+            "sha256": "7ac242a0e9a2eed85fdd56d5044d4d6d4bc9a1cd4ccb94cc05cc092c6df3f210",
+            "kind": "armor",
+            "slot": "legs",
+            "frames": 1,
+            "kit": "xingtian",
+            "previous": "approved/armor/xingtian_legs.png"
+          }
+        },
+        {
+          "id": "xingtian_boots",
+          "slot": "boots",
+          "part": "鞋子",
+          "name": "战舞靴",
+          "description": "靴底刻有古老的战舞纹路，每一道纹路都指向不同的杀伐方位。\n即使失去头颅，刑天仍以乳为目，以脐为口，操干戚而舞。此靴所踏之处，皆是尚未落幕的战场。",
+          "look": "高帮皮靴加青铜护片。靴底稍微翻起，露出刻在底上的战舞纹路：指向各个方位的短线",
+          "silhouette": "翻起的靴底",
+          "asset": {
+            "id": "xingtian_boots",
+            "file": "approved/armor/xingtian_boots_r2.png",
+            "runtime": "assets/sprites/items/armor/xingtian_boots_r2.png",
+            "size": [
+              32,
+              32
+            ],
+            "sha256": "3ed0a07bea03a95281c68c0d517e9d27f551ce476d57aa9d2c5861d377296be6",
+            "kind": "armor",
+            "slot": "boots",
+            "frames": 1,
+            "kit": "xingtian",
+            "previous": "approved/armor/xingtian_boots.png"
+          }
+        }
+      ],
+      "theme": "商周青铜器纹样（兽面纹、云雷纹），刀斧凹痕",
+      "origin": "上古中国",
+      "stage": 2,
+      "palette": [
+        "272b34",
+        "41434b",
+        "65656c",
+        "3b302c",
+        "5d3e31",
+        "82553c",
+        "a57452",
+        "c29365",
+        "d9b183",
+        "4c645c",
+        "708477",
+        "624049"
+      ],
+      "concept_previous": "originals/xingtian.png",
+      "concept": "originals/xingtian-r2.png",
+      "concept_sha256": "784c4d1cacc03f939d322de6334bc54bac022c90d08aa871f2a39e84355c56fe",
+      "status": {
+        "id": "xingtian",
+        "file": "approved/status/xingtian.png",
+        "runtime": "assets/sprites/ui/sets/xingtian.png",
+        "size": [
+          12,
+          12
+        ],
+        "sha256": "cc150160ef76f7c3347d751b36514fb1d1ba9c24ea41a8378c73682b84a35ac4",
+        "kind": "status",
+        "frames": 1,
+        "kit": "xingtian"
+      },
+      "effects": [
+        {
+          "id": "xingtian_mengzhi",
+          "kit": "xingtian",
+          "label": "猛志 · 受击叠层",
+          "frames": 6,
+          "fps": 16,
+          "anchor": [
+            32,
+            32
+          ],
+          "play": "once",
+          "event": "刑天套装受击叠加或刷新猛志",
+          "layer": "身体后方叠加",
+          "frame_size": [
+            64,
+            64
+          ],
+          "asset": {
+            "id": "xingtian_mengzhi",
+            "file": "approved/effects/xingtian_mengzhi.png",
+            "runtime": "assets/sprites/effects/sets/xingtian_mengzhi.png",
+            "size": [
+              384,
+              64
+            ],
+            "sha256": "c7d64b8d73b8c4cf83b2f86ea91d197b20aa4737e62623b0c2f494a759889de0",
+            "kind": "effects",
+            "kit": "xingtian",
+            "label": "猛志 · 受击叠层",
+            "frames": 6,
+            "fps": 16,
+            "anchor": [
+              32,
+              32
+            ],
+            "play": "once",
+            "event": "刑天套装受击叠加或刷新猛志",
+            "layer": "身体后方叠加",
+            "frame_size": [
+              64,
+              64
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "nightcount",
+      "name": "夜之伯爵",
+      "area": "第一关",
+      "effect": "血契",
+      "rule": "每次造成伤害，回复这次伤害 1% 的生命",
+      "items": [
+        {
+          "id": "nightcount_helm",
+          "slot": "helm",
+          "part": "头盔",
+          "name": "伯爵高领",
+          "description": "一件立领极高的黑色内衬，布料早已失去凡人的温度。\n它严密地遮住咽喉，仿佛要将某种不洁的痕迹永远藏起。也有人说，那并不是为了遮掩伤口，而是为了提醒穿戴者——饥渴永远来自颈间。",
+          "look": "不画头盔，画一件黑色高立领：领尖向外翻开，像两片蝠翼；内侧露一点深酒红，领口一枚银扣",
+          "silhouette": "两侧高耸的尖领",
+          "asset": {
+            "id": "nightcount_helm",
+            "file": "approved/armor/nightcount_helm.png",
+            "runtime": "assets/sprites/items/armor/nightcount_helm.png",
+            "size": [
+              32,
+              32
+            ],
+            "sha256": "58c5d310d22b64c29789b1804d93e003200e128a5cd57b61b79687f2a4eb9cf6",
+            "kind": "armor",
+            "slot": "helm",
+            "frames": 1,
+            "kit": "nightcount"
+          }
+        },
+        {
+          "id": "nightcount_chest",
+          "slot": "chest",
+          "part": "胸甲",
+          "name": "蝠翼斗篷",
+          "description": "宽大的漆黑斗篷，展开时宛如巨蝠振翼，将月色与祈祷一并隔绝。\n伯爵总披着它穿行于古堡的长廊与墓园之间。斗篷掠过之处，只余寒意，而后便是失血者苍白的尸身。",
+          "look": "展开的漆黑斗篷，下摆剪成蝠翼那样的扇形波浪边；内衬深酒红只露一角，领口一条银链扣",
+          "silhouette": "扇形波浪下摆",
+          "asset": {
+            "id": "nightcount_chest",
+            "file": "approved/armor/nightcount_chest.png",
+            "runtime": "assets/sprites/items/armor/nightcount_chest.png",
+            "size": [
+              32,
+              32
+            ],
+            "sha256": "0d85216be2349515522e6463412dd651cd4d9cb8d8cbdeb3809efd23a85987ed",
+            "kind": "armor",
+            "slot": "chest",
+            "frames": 1,
+            "kit": "nightcount"
+          }
+        },
+        {
+          "id": "nightcount_legs",
+          "slot": "legs",
+          "part": "护腿",
+          "name": "黑呢马裤",
+          "description": "裁制考究的深色马裤，仍保留着旧时代贵族的矜持与威仪。\n曾有人以为，优雅足以掩饰腐朽。可当夜色降临，再端正的衣装，也遮不住亡者步履间的死气。",
+          "look": "深色呢料马裤：高腰，大腿处微鼓，膝下收紧；侧缝一道细银线",
+          "silhouette": "上宽下窄的马裤",
+          "asset": {
+            "id": "nightcount_legs",
+            "file": "approved/armor/nightcount_legs_r2.png",
+            "runtime": "assets/sprites/items/armor/nightcount_legs_r2.png",
+            "size": [
+              32,
+              32
+            ],
+            "sha256": "44539aa0d6417149bc29811e6b122af91614e3b74d93ca892683491a6d6eda53",
+            "kind": "armor",
+            "slot": "legs",
+            "frames": 1,
+            "kit": "nightcount",
+            "previous": "approved/armor/nightcount_legs.png"
+          }
+        },
+        {
+          "id": "nightcount_boots",
+          "slot": "boots",
+          "part": "鞋子",
+          "name": "夜行长靴",
+          "description": "一双为夜路而生的长靴，靴面不沾泥泞，靴跟也听不见回响。\n它陪伴主人走过石阶、教堂与坟地，跨越无数门槛。只是每当它停下时，往往意味着某个人再也等不到天亮。",
+          "look": "及膝的黑色骑马长靴，皮面亮，鞋跟窄而高，靴口一枚银扣，鞋底干干净净不沾泥",
+          "silhouette": "很高的长筒",
+          "asset": {
+            "id": "nightcount_boots",
+            "file": "approved/armor/nightcount_boots_r2.png",
+            "runtime": "assets/sprites/items/armor/nightcount_boots_r2.png",
+            "size": [
+              32,
+              32
+            ],
+            "sha256": "3fbb56e0e0664768e96fb562275296da72b59f18cc31f4e1ac84cd150ea231c6",
+            "kind": "armor",
+            "slot": "boots",
+            "frames": 1,
+            "kit": "nightcount",
+            "previous": "approved/armor/nightcount_boots.png"
+          }
+        }
+      ],
+      "theme": "蝠翼的扇形波浪边、银扣",
+      "origin": "19 世纪东欧贵族服饰",
+      "stage": 2,
+      "palette": [
+        "20202a",
+        "2c2937",
+        "40394b",
+        "585064",
+        "767084",
+        "39303e",
+        "592e40",
+        "743a49",
+        "717986",
+        "a9adba",
+        "cdd3d7"
+      ],
+      "concept": "originals/nightcount.png",
+      "concept_sha256": "81a52925b3d296368741e9079ed8b59e7c4cc986981a9b763272da1c6d631417",
+      "status": {
+        "id": "nightcount",
+        "file": "approved/status/nightcount.png",
+        "runtime": "assets/sprites/ui/sets/nightcount.png",
+        "size": [
+          12,
+          12
+        ],
+        "sha256": "b24a6eacbbdf0435915e7479f1d83a4d917056d4f46a4719bc43e307ce8c8abb",
+        "kind": "status",
+        "frames": 1,
+        "kit": "nightcount"
+      },
+      "effects": []
+    },
+    {
+      "id": "nemean",
+      "name": "涅墨亚狮皮",
+      "area": "第一关",
+      "effect": "十二伟业",
+      "rule": "对精英和 Boss 的伤害 +35%",
+      "items": [
+        {
+          "id": "nemean_helm",
+          "slot": "helm",
+          "part": "头盔",
+          "name": "狮首盔",
+          "description": "以涅墨亚雄狮的头颅制成的头盔，獠牙犹在，鬃毛未朽。那野兽曾横行山谷，刀枪不入，连猎人的箭也只能无力折断。\n赫拉克勒斯将其扼死后，便戴上这颗狮首。自此，凡人不再只看见他的面容，也看见他所战胜的第一个恐怖。",
+          "look": "整颗狮头做的盔：上颌的獠牙垂在额前，鬃毛蓬松一圈，空眼窝",
+          "silhouette": "一圈蓬松的鬃毛加獠牙",
+          "asset": {
+            "id": "nemean_helm",
+            "file": "approved/armor/nemean_helm.png",
+            "runtime": "assets/sprites/items/armor/nemean_helm.png",
+            "size": [
+              32,
+              32
+            ],
+            "sha256": "c0422ee54f8c1e219460f329d6beb4ed396f50847cccc5f6211a36385ab34ea6",
+            "kind": "armor",
+            "slot": "helm",
+            "frames": 1,
+            "kit": "nemean"
+          }
+        },
+        {
+          "id": "nemean_chest",
+          "slot": "chest",
+          "part": "胸甲",
+          "name": "狮皮披挂",
+          "description": "覆于肩背的厚重狮皮，既是战利品，也是英雄最著名的装束。世人皆知那头狮子皮肉坚韧，寻常兵刃不能伤它分毫。\n据说赫拉克勒斯弃了弓与棒，在洞穴深处以双臂将它活活扼死，又以狮子自己的利爪，剥下这身无法被铁器割裂的皮毛。",
+          "look": "一整张金褐色狮皮，两只前爪在胸前打结，爪尖骨白",
+          "silhouette": "胸前交叉打结的两只爪",
+          "asset": {
+            "id": "nemean_chest",
+            "file": "approved/armor/nemean_chest.png",
+            "runtime": "assets/sprites/items/armor/nemean_chest.png",
+            "size": [
+              32,
+              32
+            ],
+            "sha256": "93b7106af866d7b86168773216224803e7cd9b5f0c6de66d25b2744130b27576",
+            "kind": "armor",
+            "slot": "chest",
+            "frames": 1,
+            "kit": "nemean"
+          }
+        },
+        {
+          "id": "nemean_legs",
+          "slot": "legs",
+          "part": "护腿",
+          "name": "青铜胫甲",
+          "description": "古旧而坚实的青铜胫甲，边缘已有长途跋涉磨出的钝痕。它并非王者凯旋时的装饰，而是一次次奔赴苦役之地时穿戴之物。\n从涅墨亚到厄律曼托斯，从斯廷法罗斯湖到冥府深处，英雄双足所经之处，留下的从来不是安逸，而是命定的劳苦。",
+          "look": "一对古希腊青铜胫甲，只护小腿，贴着腿肚的弧形；边缘磨出钝痕，表面刻一道回纹",
+          "silhouette": "只有小腿长，比别的护腿都短",
+          "asset": {
+            "id": "nemean_legs",
+            "file": "approved/armor/nemean_legs.png",
+            "runtime": "assets/sprites/items/armor/nemean_legs.png",
+            "size": [
+              32,
+              32
+            ],
+            "sha256": "269e523bd577b3a543b2d4888cbe3d9b4257d3d603cc49eda05861b75050c77c",
+            "kind": "armor",
+            "slot": "legs",
+            "frames": 1,
+            "kit": "nemean"
+          }
+        },
+        {
+          "id": "nemean_boots",
+          "slot": "boots",
+          "part": "鞋子",
+          "name": "远征凉鞋",
+          "description": "为远行与征讨而制的凉鞋，鞋底厚实，沾满尘土与旧血。它陪伴赫拉克勒斯完成一件又一件看似不可能的伟业。\n有人将那些路称作荣光之途；可对背负罪责之人而言，那不过是尚未走完的赎罪之路。",
+          "look": "希腊式绑带凉鞋，鞋底厚，皮带交叉绑到小腿，沾满尘土",
+          "silhouette": "露出脚面的交叉绑带",
+          "asset": {
+            "id": "nemean_boots",
+            "file": "approved/armor/nemean_boots_r2.png",
+            "runtime": "assets/sprites/items/armor/nemean_boots_r2.png",
+            "size": [
+              32,
+              32
+            ],
+            "sha256": "c17ffc213abd252ac656e6cce2cd9be8a6a3096a7c4dc3c0d84ac777164e8162",
+            "kind": "armor",
+            "slot": "boots",
+            "frames": 1,
+            "kit": "nemean",
+            "previous": "approved/armor/nemean_boots.png"
+          }
+        }
+      ],
+      "theme": "狮毛、狮爪、希腊回纹",
+      "origin": "古希腊",
+      "stage": 2,
+      "palette": [
+        "2e2424",
+        "44302a",
+        "634732",
+        "89613e",
+        "ac794b",
+        "c69658",
+        "dcb779",
+        "e7c894",
+        "5c5142",
+        "928067",
+        "b5a083",
+        "ded2b6"
+      ],
+      "concept": "originals/nemean.png",
+      "concept_sha256": "7d2a4527828539064f985334fb301c24691582b6d8855b7fa9353598d1a47ceb",
+      "status": {
+        "id": "nemean",
+        "file": "approved/status/nemean.png",
+        "runtime": "assets/sprites/ui/sets/nemean.png",
+        "size": [
+          12,
+          12
+        ],
+        "sha256": "15ad79d61bc90ea6cb1ab047f5eb2937423b96e17f46cf24510eca3d7162ad2e",
+        "kind": "status",
+        "frames": 1,
+        "kit": "nemean"
+      },
+      "effects": []
+    },
+    {
+      "id": "dragonslayer",
+      "name": "屠龙者",
+      "area": "第二关",
+      "effect": "龙血",
+      "rule": "每 20 秒结一层龙鳞，完全挡下下一次伤害；挡下后重新计时",
+      "items": [
+        {
+          "id": "dragonslayer_helm",
+          "slot": "helm",
+          "part": "头盔",
+          "name": "龙鳞盔",
+          "description": "以恶龙的鳞片覆铸而成的战盔，坚硬如铁，鳞纹之间仍残留着暗红色的血迹。\n屠龙者曾戴着它走出龙穴。自那以后，世人仰望他的面容，仿佛看见了连死亡也无法触及的英雄。",
+          "look": "民族大迁徙时期的分瓣尖顶盔带护鼻，盔面覆满墨绿龙鳞，鳞缝里渗着暗红",
+          "silhouette": "尖顶加护鼻",
+          "asset": {
+            "id": "dragonslayer_helm",
+            "file": "approved/armor/dragonslayer_helm.png",
+            "runtime": "assets/sprites/items/armor/dragonslayer_helm.png",
+            "size": [
+              32,
+              32
+            ],
+            "sha256": "b22844a90ec8b1c3ba876974d5be54280abb0e3eb5b169f854128e957e38ae0f",
+            "kind": "armor",
+            "slot": "helm",
+            "frames": 1,
+            "kit": "dragonslayer"
+          }
+        },
+        {
+          "id": "dragonslayer_chest",
+          "slot": "chest",
+          "part": "胸甲",
+          "name": "龙血锁甲",
+          "description": "浸染过龙血的锁甲，细密的鳞片彼此咬合，刀剑难以留下痕迹。\n传说齐格弗里德曾在恶龙的血泊中沐浴，自此获得不受兵刃伤害的躯体。\n然而，世间最坚固的铠甲，也未能庇护他周身的每一寸肌肤。",
+          "look": "锁甲上缀满互相咬合的龙鳞片。建议在一侧肩头留一片椴树叶形的空缺，没有鳞，呼应套装文案里齐格弗里德唯一没沾龙血的地方",
+          "silhouette": "鳞片锯齿状的外缘",
+          "asset": {
+            "id": "dragonslayer_chest",
+            "file": "approved/armor/dragonslayer_chest.png",
+            "runtime": "assets/sprites/items/armor/dragonslayer_chest.png",
+            "size": [
+              32,
+              32
+            ],
+            "sha256": "72a562c8c946bac19882169cc9b0fad1761949d7a668f9f8c570798179f59563",
+            "kind": "armor",
+            "slot": "chest",
+            "frames": 1,
+            "kit": "dragonslayer"
+          }
+        },
+        {
+          "id": "dragonslayer_legs",
+          "slot": "legs",
+          "part": "护腿",
+          "name": "龙鳞护腿",
+          "description": "由龙鳞与精钢编缀而成的护腿，沉重而坚实，鳞片间隐约可见凝固的血色。\n它曾陪伴英雄踏过恶龙的尸骸，走过无数战场。\n龙血赋予了双腿钢铁般的坚韧，却未曾改变英雄终将倒下的命运。",
+          "look": "龙鳞和精钢条一层层交替编缀，鳞缝里有凝固的暗红",
+          "silhouette": "横向的一道道条纹",
+          "asset": {
+            "id": "dragonslayer_legs",
+            "file": "approved/armor/dragonslayer_legs.png",
+            "runtime": "assets/sprites/items/armor/dragonslayer_legs.png",
+            "size": [
+              32,
+              32
+            ],
+            "sha256": "65e44a4ce9285ea3377a0210a34d992043378a0b8966cf18a358a2daa9160f92",
+            "kind": "armor",
+            "slot": "legs",
+            "frames": 1,
+            "kit": "dragonslayer"
+          }
+        },
+        {
+          "id": "dragonslayer_boots",
+          "slot": "boots",
+          "part": "鞋子",
+          "name": "屠龙靴",
+          "description": "一双染有龙血的远征长靴，靴底留有焦黑的鳞屑与岩石碎痕。\n它的主人曾独自走进恶龙盘踞的洞窟，最终踏着巨龙的尸骸归来。\n后来，人们称那段路为英雄的归途。",
+          "look": "远征长靴，靴底沾着焦黑的鳞屑和碎石",
+          "silhouette": "长靴，鞋底挂着碎屑",
+          "asset": {
+            "id": "dragonslayer_boots",
+            "file": "approved/armor/dragonslayer_boots.png",
+            "runtime": "assets/sprites/items/armor/dragonslayer_boots.png",
+            "size": [
+              32,
+              32
+            ],
+            "sha256": "09df25402144206f6b71f342d39ab78e6c97ec002d0c5092c839d7125ec2a6c4",
+            "kind": "armor",
+            "slot": "boots",
+            "frames": 1,
+            "kit": "dragonslayer"
+          }
+        }
+      ],
+      "theme": "龙鳞、龙血",
+      "origin": "日耳曼民族大迁徙时期（《尼伯龙根之歌》）",
+      "stage": 3,
+      "palette": [
+        "25302e",
+        "33423b",
+        "465a4e",
+        "596c5b",
+        "748675",
+        "3f3531",
+        "574839",
+        "766044",
+        "9d8259",
+        "b8a079",
+        "633b43",
+        "947b76"
+      ],
+      "concept": "originals/dragonslayer.png",
+      "concept_sha256": "b7d80e8bbc4bbb664c56eae2ea993a1c7a0e32641c87b6a7e27a1a89fb6009b8",
+      "status": {
+        "id": "dragonslayer",
+        "file": "approved/status/dragonslayer.png",
+        "runtime": "assets/sprites/ui/sets/dragonslayer.png",
+        "size": [
+          12,
+          12
+        ],
+        "sha256": "67951564dc03136a6792b8a2f4500b70f7e671c4abb680ba59861548c88ec89b",
+        "kind": "status",
+        "frames": 1,
+        "kit": "dragonslayer"
+      },
+      "effects": [
+        {
+          "id": "dragonslayer_scale",
+          "kit": "dragonslayer",
+          "label": "龙血 · 龙鳞已备",
+          "frames": 4,
+          "fps": 8,
+          "anchor": [
+            32,
+            32
+          ],
+          "event": "龙鳞充能完毕，鳞片闪在胸腰与身侧，头部留空",
+          "layer": "身体前方叠加",
+          "play": "loop",
+          "frame_size": [
+            64,
+            64
+          ],
+          "asset": {
+            "id": "dragonslayer_scale",
+            "file": "approved/effects/dragonslayer_scale_r2.png",
+            "runtime": "assets/sprites/effects/sets/dragonslayer_scale_r2.png",
+            "size": [
+              256,
+              64
+            ],
+            "sha256": "e928224aa101938cc457613030d9bab17de72ac6947d6cd3abf358c6a6b9c2e4",
+            "kind": "effects",
+            "kit": "dragonslayer",
+            "label": "龙血 · 龙鳞已备",
+            "frames": 4,
+            "fps": 8,
+            "anchor": [
+              32,
+              32
+            ],
+            "event": "龙鳞充能完毕，鳞片闪在胸腰与身侧，头部留空",
+            "layer": "身体前方叠加",
+            "play": "loop",
+            "frame_size": [
+              64,
+              64
+            ],
+            "previous": "approved/effects/dragonslayer_scale.png"
+          }
+        },
+        {
+          "id": "dragonslayer_shatter",
+          "kit": "dragonslayer",
+          "label": "龙血 · 龙鳞碎裂",
+          "frames": 6,
+          "fps": 16,
+          "anchor": [
+            32,
+            32
+          ],
+          "event": "龙鳞挡下伤害的瞬间",
+          "layer": "身体前方叠加",
+          "play": "once",
+          "frame_size": [
+            64,
+            64
+          ],
+          "asset": {
+            "id": "dragonslayer_shatter",
+            "file": "approved/effects/dragonslayer_shatter.png",
+            "runtime": "assets/sprites/effects/sets/dragonslayer_shatter.png",
+            "size": [
+              384,
+              64
+            ],
+            "sha256": "667fed2369148f41cd2d7531cca882fe1823b107a37e908b3ae80278543eff48",
+            "kind": "effects",
+            "kit": "dragonslayer",
+            "label": "龙血 · 龙鳞碎裂",
+            "frames": 6,
+            "fps": 16,
+            "anchor": [
+              32,
+              32
+            ],
+            "event": "龙鳞挡下伤害的瞬间",
+            "layer": "身体前方叠加",
+            "play": "once",
+            "frame_size": [
+              64,
+              64
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "yellowwind",
+      "name": "黄风大王",
+      "area": "第二关",
+      "effect": "三昧神风",
+      "rule": "每 5 秒在你身边 300 像素内随机一处卷起一道沙尘暴，持续 4 秒，慢慢游走；卷进去的敌人每 0.5 秒受到武器伤害 50% 的伤害，并减速 30%。同时最多 2 道",
+      "items": [
+        {
+          "id": "yellowwind_helm",
+          "slot": "helm",
+          "part": "头盔",
+          "name": "貂鼠皮帽",
+          "description": "以黄毛貂鼠的皮毛制成，绒毛细密，色泽枯黄，帽檐处还留有两枚尖锐的兽耳。\n据说此帽的主人曾在灵山脚下修行，后来却因一时贪念，盗取佛前灯油，遁入山野，做起了逞凶的妖王。",
+          "look": "黄毛貂鼠皮做的帽子，绒毛细密、色泽枯黄，帽檐上立着两只尖尖的兽耳",
+          "silhouette": "两只尖耳",
+          "asset": {
+            "id": "yellowwind_helm",
+            "file": "approved/armor/yellowwind_helm_r2.png",
+            "runtime": "assets/sprites/items/armor/yellowwind_helm_r2.png",
+            "size": [
+              32,
+              32
+            ],
+            "sha256": "9d4818dda9e5d0103423b5a0cef8df55d6403478f13c29021035d6f05b088784",
+            "kind": "armor",
+            "slot": "helm",
+            "frames": 1,
+            "kit": "yellowwind",
+            "previous": "approved/armor/yellowwind_helm.png"
+          }
+        },
+        {
+          "id": "yellowwind_chest",
+          "slot": "chest",
+          "part": "胸甲",
+          "name": "黄风袍",
+          "description": "一袭土黄色的宽大长袍，衣角终年翻卷，仿佛有无形的狂风在其中流动。\n袍上绣有古怪的风纹，细看之下，竟像无数被卷入风中的生灵。传闻黄风大王每每现身，尚未见其真容，先闻衣袍猎猎之声",
+          "look": "土黄宽袖长袍，衣角都往同一个方向翻卷，像被风吹着；袍上绣着风纹，细看是一个个被卷进风里的小人形",
+          "silhouette": "翻卷的衣角",
+          "asset": {
+            "id": "yellowwind_chest",
+            "file": "approved/armor/yellowwind_chest.png",
+            "runtime": "assets/sprites/items/armor/yellowwind_chest.png",
+            "size": [
+              32,
+              32
+            ],
+            "sha256": "293533a4523026ddc31f312c59179e77b4b783f1b3ad723edd7ee38a85d50044",
+            "kind": "armor",
+            "slot": "chest",
+            "frames": 1,
+            "kit": "yellowwind"
+          }
+        },
+        {
+          "id": "yellowwind_legs",
+          "slot": "legs",
+          "part": "护腿",
+          "name": "沙行绑腿",
+          "description": "以粗麻与黄沙编织而成的护腿，表面附着经年不散的砂砾。\n穿戴者行走于沙地之上，足迹转瞬便被黄沙吞没。那些曾试图追踪妖王的人，最终只在风中寻得一串逐渐消失的脚印。",
+          "look": "粗麻布绑腿，一圈圈缠到膝盖，布纹里嵌着沙粒（几个亮黄小点）",
+          "silhouette": "一圈圈横缠的布条",
+          "asset": {
+            "id": "yellowwind_legs",
+            "file": "approved/armor/yellowwind_legs.png",
+            "runtime": "assets/sprites/items/armor/yellowwind_legs.png",
+            "size": [
+              32,
+              32
+            ],
+            "sha256": "099539d664e906e4a09471fa0027f496583c86159f18416d65e8c79f79aa9557",
+            "kind": "armor",
+            "slot": "legs",
+            "frames": 1,
+            "kit": "yellowwind"
+          }
+        },
+        {
+          "id": "yellowwind_boots",
+          "slot": "boots",
+          "part": "鞋子",
+          "name": "卷沙靴",
+          "description": "一双靴底刻有旋风纹路的旧靴，鞋跟磨损严重，却始终不染尘泥。\n据说它的主人所过之处，沙石皆随足而起，盘旋不落。凡人若想循着足迹追赶，往往只会迷失在漫天黄风之中。",
+          "look": "旧布靴，靴底刻着旋风纹，鞋跟磨损，但不沾尘泥；靴边卷起一小股沙",
+          "silhouette": "靴边的一缕旋风",
+          "asset": {
+            "id": "yellowwind_boots",
+            "file": "approved/armor/yellowwind_boots.png",
+            "runtime": "assets/sprites/items/armor/yellowwind_boots.png",
+            "size": [
+              32,
+              32
+            ],
+            "sha256": "6988848a6fa8431290fcdcbe034ac7d345c3e6a30c628f2732a1462952da0805",
+            "kind": "armor",
+            "slot": "boots",
+            "frames": 1,
+            "kit": "yellowwind"
+          }
+        }
+      ],
+      "theme": "旋风纹、沙粒",
+      "origin": "《西游记》的山野妖王",
+      "stage": 3,
+      "palette": [
+        "372e29",
+        "504333",
+        "6b553c",
+        "886d44",
+        "a88a54",
+        "c19e60",
+        "dab67a",
+        "e6c996",
+        "5e594b",
+        "8c7c5f",
+        "a79d82"
+      ],
+      "concept": "originals/yellowwind.png",
+      "concept_sha256": "d619dad4e03211aa61ee60bd119e65fb93d8e187f75a6c3e955b9eb6efae1c6d",
+      "status": {
+        "id": "yellowwind",
+        "file": "approved/status/yellowwind.png",
+        "runtime": "assets/sprites/ui/sets/yellowwind.png",
+        "size": [
+          12,
+          12
+        ],
+        "sha256": "a39e253a27f23f19134bc17a71cdb14127b6cfbcf839bdecde3dabedea3e67d7",
+        "kind": "status",
+        "frames": 1,
+        "kit": "yellowwind"
+      },
+      "effects": [
+        {
+          "id": "yellowwind_storm",
+          "kit": "yellowwind",
+          "label": "三昧神风 · 循环",
+          "frames": 6,
+          "fps": 12,
+          "anchor": [
+            48,
+            62
+          ],
+          "event": "持续期间随判定中心移动。独立龙卷，无可见地环",
+          "layer": "地面特效层，角色与敌人之下",
+          "play": "loop",
+          "radius": 48,
+          "frame_size": [
+            96,
+            112
+          ],
+          "asset": {
+            "id": "yellowwind_storm",
+            "file": "approved/effects/yellowwind_storm_r2.png",
+            "runtime": "assets/sprites/effects/sets/yellowwind_storm_r2.png",
+            "size": [
+              576,
+              112
+            ],
+            "sha256": "a1db5377d387c932c6f526ea9f00302b76f3c3242314412ab5778685bf674523",
+            "kind": "effects",
+            "kit": "yellowwind",
+            "label": "三昧神风 · 循环",
+            "frames": 6,
+            "fps": 12,
+            "anchor": [
+              48,
+              62
+            ],
+            "event": "持续期间随判定中心移动。独立龙卷，无可见地环",
+            "layer": "地面特效层，角色与敌人之下",
+            "play": "loop",
+            "radius": 48,
+            "frame_size": [
+              96,
+              112
+            ],
+            "previous": "approved/effects/yellowwind_storm.png"
+          }
+        },
+        {
+          "id": "yellowwind_storm_start",
+          "kit": "yellowwind",
+          "label": "三昧神风 · 卷起",
+          "frames": 3,
+          "fps": 12,
+          "anchor": [
+            48,
+            62
+          ],
+          "event": "风柱由下向上卷起，无可见地环",
+          "layer": "地面特效层，角色与敌人之下",
+          "play": "once",
+          "frame_size": [
+            96,
+            112
+          ],
+          "asset": {
+            "id": "yellowwind_storm_start",
+            "file": "approved/effects/yellowwind_storm_start_r2.png",
+            "runtime": "assets/sprites/effects/sets/yellowwind_storm_start_r2.png",
+            "size": [
+              288,
+              112
+            ],
+            "sha256": "0c895c24fe3e68242567f747d3cdb1c6705d7ae4a4f1227db88f0435ee916c27",
+            "kind": "effects",
+            "kit": "yellowwind",
+            "label": "三昧神风 · 卷起",
+            "frames": 3,
+            "fps": 12,
+            "anchor": [
+              48,
+              62
+            ],
+            "event": "风柱由下向上卷起，无可见地环",
+            "layer": "地面特效层，角色与敌人之下",
+            "play": "once",
+            "frame_size": [
+              96,
+              112
+            ],
+            "previous": "approved/effects/yellowwind_storm_start.png"
+          }
+        },
+        {
+          "id": "yellowwind_storm_end",
+          "kit": "yellowwind",
+          "label": "三昧神风 · 消散",
+          "frames": 3,
+          "fps": 12,
+          "anchor": [
+            48,
+            62
+          ],
+          "event": "风柱被拉散成沙尘，无可见地环",
+          "layer": "地面特效层，角色与敌人之下",
+          "play": "once",
+          "frame_size": [
+            96,
+            112
+          ],
+          "asset": {
+            "id": "yellowwind_storm_end",
+            "file": "approved/effects/yellowwind_storm_end_r2.png",
+            "runtime": "assets/sprites/effects/sets/yellowwind_storm_end_r2.png",
+            "size": [
+              288,
+              112
+            ],
+            "sha256": "1a02d80801fb671f7cf988303f96c5ce947f9ecdd1e3363044e27b68077241c9",
+            "kind": "effects",
+            "kit": "yellowwind",
+            "label": "三昧神风 · 消散",
+            "frames": 3,
+            "fps": 12,
+            "anchor": [
+              48,
+              62
+            ],
+            "event": "风柱被拉散成沙尘，无可见地环",
+            "layer": "地面特效层，角色与敌人之下",
+            "play": "once",
+            "frame_size": [
+              96,
+              112
+            ],
+            "previous": "approved/effects/yellowwind_storm_end.png"
+          }
+        }
+      ]
+    },
+    {
+      "id": "grail",
+      "name": "圣杯骑士",
+      "area": "第二关",
+      "effect": "无瑕",
+      "rule": "生命全满时，全伤害 +40%",
+      "items": [
+        {
+          "id": "grail_helm",
+          "slot": "helm",
+          "part": "头盔",
+          "name": "白羽盔",
+          "description": "一顶银白色的骑士头盔，盔顶插有一束洁白的羽饰，从未沾染战场上的尘埃。\n传说它的主人从不为虚荣而战，也不为仇恨而挥剑。唯有在圣杯显现之时，那双隐藏于面甲之后的眼睛，才会流露出凡人难以企及的光辉。",
+          "look": "银白色的平顶大桶盔，面甲只有一道十字形观察缝，盔顶插一束白羽",
+          "silhouette": "方形大盔加高耸的羽饰",
+          "asset": {
+            "id": "grail_helm",
+            "file": "approved/armor/grail_helm.png",
+            "runtime": "assets/sprites/items/armor/grail_helm.png",
+            "size": [
+              32,
+              32
+            ],
+            "sha256": "3f8dee94e954a76225d4f896b698de58b4108a7cf69a366707ab465119d6c1ce",
+            "kind": "armor",
+            "slot": "helm",
+            "frames": 1,
+            "kit": "grail"
+          }
+        },
+        {
+          "id": "grail_chest",
+          "slot": "chest",
+          "part": "胸甲",
+          "name": "白十字罩袍",
+          "description": "一袭纯白的骑士罩袍，胸前绣有银线十字，衣料虽历经远征，却不见污损。\n它曾伴随主人走过无数险阻。对于寻常骑士而言，十字是信仰的象征；对于加拉哈德而言，那是他从未背弃的誓言。",
+          "look": "纯白骑士罩袍（套在锁甲外，袖口露一点锁甲），胸前银线绣的十字，下摆开衩，干净无污。十字用银色，不用红色，和圣殿骑士的红十字区分",
+          "silhouette": "长到大腿、下摆开衩的罩袍",
+          "asset": {
+            "id": "grail_chest",
+            "file": "approved/armor/grail_chest.png",
+            "runtime": "assets/sprites/items/armor/grail_chest.png",
+            "size": [
+              32,
+              32
+            ],
+            "sha256": "4fc0700ea455eca998097226545c236bcb104470db3ffadebaf37612c0c526af",
+            "kind": "armor",
+            "slot": "chest",
+            "frames": 1,
+            "kit": "grail"
+          }
+        },
+        {
+          "id": "grail_legs",
+          "slot": "legs",
+          "part": "护腿",
+          "name": "银胫甲",
+          "description": "以圣银锻造的护胫，表面光洁如镜，边缘刻有古老的祈祷铭文。\n据说锻造者曾试图在甲胄上留下英雄的姓名，却始终找不到合适的位置。因为这位骑士所追寻的，从来不是自己的荣光。",
+          "look": "一对镜面圣银胫甲，带护膝；光洁感只靠 1～2 个高光点表现，边缘一圈细小的铭文（几个点即可）",
+          "silhouette": "带护膝的长胫甲（和青铜胫甲区分）",
+          "asset": {
+            "id": "grail_legs",
+            "file": "approved/armor/grail_legs.png",
+            "runtime": "assets/sprites/items/armor/grail_legs.png",
+            "size": [
+              32,
+              32
+            ],
+            "sha256": "c463e418f9e1f0ae63c6e3256f02c330bea645775322f2484761524154440679",
+            "kind": "armor",
+            "slot": "legs",
+            "frames": 1,
+            "kit": "grail"
+          }
+        },
+        {
+          "id": "grail_boots",
+          "slot": "boots",
+          "part": "鞋子",
+          "name": "朝圣靴",
+          "description": "一双朴素的白色长靴，鞋底留有漫长旅途磨损的痕迹。\n它曾踏过荒野、废墟与无人涉足的圣地。世间许多骑士都曾踏上圣杯之旅，却鲜有人能走到旅途的尽头。",
+          "look": "朴素的白色长靴，没有装饰，鞋底磨薄",
+          "silhouette": "简单平直",
+          "asset": {
+            "id": "grail_boots",
+            "file": "approved/armor/grail_boots.png",
+            "runtime": "assets/sprites/items/armor/grail_boots.png",
+            "size": [
+              32,
+              32
+            ],
+            "sha256": "6e50d0b205fdad515385f04bdf12a38e5b95b1a2676dd1330d57152e007e7d2c",
+            "kind": "armor",
+            "slot": "boots",
+            "frames": 1,
+            "kit": "grail"
+          }
+        }
+      ],
+      "theme": "银线十字、白羽",
+      "origin": "亚瑟王传说，中世纪盛期",
+      "stage": 3,
+      "palette": [
+        "373743",
+        "535664",
+        "727986",
+        "959da7",
+        "aeb7bf",
+        "c9ccd1",
+        "e3e5e1",
+        "f1eee0",
+        "665a47",
+        "9e895e",
+        "c9b47c",
+        "e6d6aa"
+      ],
+      "concept": "originals/grail.png",
+      "concept_sha256": "2c9564bbcba4aef1d377278e5513b72bebd77c3f97656a85fb87a1b8f9f56800",
+      "status": {
+        "id": "grail",
+        "file": "approved/status/grail.png",
+        "runtime": "assets/sprites/ui/sets/grail.png",
+        "size": [
+          12,
+          12
+        ],
+        "sha256": "fa63e82347e53329f419498e45988ced41244cc556c8ea2699edde11643a9b32",
+        "kind": "status",
+        "frames": 1,
+        "kit": "grail"
+      },
+      "effects": []
+    },
+    {
+      "id": "lotus",
+      "name": "莲花化身",
+      "area": "第三关",
+      "effect": "三头八臂",
+      "rule": "每次攻击有 20% 几率立刻再打一次，武器和神术都算（大招不算）",
+      "items": [
+        {
+          "id": "lotus_helm",
+          "slot": "helm",
+          "part": "头盔",
+          "name": "莲花冠",
+          "description": "以灵山净莲炼制而成的宝冠，花瓣层层舒展，中央隐约透出金色灵光。\n传说哪吒魂魄归来之时，太乙真人以莲花为骨，以荷叶为衣，重塑其身。此冠既非凡人冠冕，亦非仙家礼器，而是新生神躯的第一道印记。",
+          "look": "层层莲瓣围成的冠，不是头盔：外瓣莲粉，内瓣玉白，中心透一点金光",
+          "silhouette": "花瓣尖朝上的莲花",
+          "asset": {
+            "id": "lotus_helm",
+            "file": "approved/armor/lotus_helm.png",
+            "runtime": "assets/sprites/items/armor/lotus_helm.png",
+            "size": [
+              32,
+              32
+            ],
+            "sha256": "d84949c04fb01026c7e98da68c88dead257d515cc3703610333b3503bcba3af8",
+            "kind": "armor",
+            "slot": "helm",
+            "frames": 1,
+            "kit": "lotus"
+          }
+        },
+        {
+          "id": "lotus_chest",
+          "slot": "chest",
+          "part": "胸甲",
+          "name": "混天绫",
+          "description": "一条赤红色的仙家绸带，展开时如烈焰翻腾，收卷时又似赤龙盘舞。\n曾搅动东海，惊起万丈波涛，亦曾缚住龙宫太子。看似柔软无锋，却有翻江倒海之威。",
+          "look": "一条暗绯红的仙家绸带，盘成 S 形飘着，边缘金线",
+          "silhouette": "S 形曲线",
+          "asset": {
+            "id": "lotus_chest",
+            "file": "approved/armor/lotus_chest.png",
+            "runtime": "assets/sprites/items/armor/lotus_chest.png",
+            "size": [
+              32,
+              32
+            ],
+            "sha256": "501c5b8d29d9ac3f094edb7ef5e2c55dde5adb2d1d9bd2549cdd83a3593a9357",
+            "kind": "armor",
+            "slot": "chest",
+            "frames": 1,
+            "kit": "lotus"
+          }
+        },
+        {
+          "id": "lotus_legs",
+          "slot": "legs",
+          "part": "护腿",
+          "name": "莲藕护腿",
+          "description": "以千年灵藕炼成的护腿，莹白如玉，隐约可见莲脉般的纹路。\n哪吒剔骨还父、削肉还母之后，凡胎已毁。太乙真人以莲花重塑其身，自此骨肉不再受尘世血脉所缚。",
+          "look": "玉白的一对护腿，像一节节莲藕：膝盖和脚踝是藕节，表面淡淡的莲脉纹",
+          "silhouette": "一节节鼓起的藕节",
+          "asset": {
+            "id": "lotus_legs",
+            "file": "approved/armor/lotus_legs.png",
+            "runtime": "assets/sprites/items/armor/lotus_legs.png",
+            "size": [
+              32,
+              32
+            ],
+            "sha256": "90e22f18f56a768f8897564f8abb774fd242dd7d3a835e063f3919b877a39d5b",
+            "kind": "armor",
+            "slot": "legs",
+            "frames": 1,
+            "kit": "lotus"
+          }
+        },
+        {
+          "id": "lotus_boots",
+          "slot": "boots",
+          "part": "鞋子",
+          "name": "风火轮",
+          "description": "一对踏火而行的仙家宝轮，轮转之间风雷相随，焰尾拖曳数丈。\n哪吒踏轮而行，日行千里，追风逐电。其轮所经之处，山河皆在脚下，凡间道路不过转瞬之间。",
+          "look": "一对金色的轮子前后叠放，轮辐做成莲瓣形，轮缘外侧几簇小火苗",
+          "silhouette": "两个圆",
+          "asset": {
+            "id": "lotus_boots",
+            "file": "approved/armor/lotus_boots.png",
+            "runtime": "assets/sprites/items/armor/lotus_boots.png",
+            "size": [
+              32,
+              32
+            ],
+            "sha256": "0f2cd49e90e103b9b709ce390a36de13e9694538551da300fef0aa9d16e19ad2",
+            "kind": "armor",
+            "slot": "boots",
+            "frames": 1,
+            "kit": "lotus"
+          }
+        }
+      ],
+      "theme": "莲瓣、莲脉",
+      "origin": "《封神演义》",
+      "stage": 1,
+      "palette": [
+        "432b41",
+        "6a344b",
+        "8b4054",
+        "ac5262",
+        "cb7280",
+        "dc9398",
+        "edb0af",
+        "f4d1bb",
+        "526b64",
+        "829086",
+        "b7b7a1",
+        "dbd1b1",
+        "f3e3c5",
+        "755038",
+        "956b42",
+        "bd9251",
+        "ddb267",
+        "ebd18e"
+      ],
+      "concept": "originals/lotus.png",
+      "concept_sha256": "0fa55caf515e9155c83911d79807c29867342fa0e1584cd9b8e0085af2d5ca7d",
+      "status": {
+        "id": "lotus",
+        "file": "approved/status/lotus.png",
+        "runtime": "assets/sprites/ui/sets/lotus.png",
+        "size": [
+          12,
+          12
+        ],
+        "sha256": "f8504affb2ee3a0e14458fb34e740cf54036138cbf54a7d7d12cf367d5385a57",
+        "kind": "status",
+        "frames": 1,
+        "kit": "lotus"
+      },
+      "effects": [
+        {
+          "id": "lotus_proc",
+          "kit": "lotus",
+          "label": "三头八臂 · 莲瓣虚影",
+          "frames": 4,
+          "fps": 16,
+          "anchor": [
+            32,
+            32
+          ],
+          "event": "追加攻击触发，角色背后绽放莲花",
+          "layer": "身体后方叠加",
+          "play": "once",
+          "frame_size": [
+            64,
+            64
+          ],
+          "asset": {
+            "id": "lotus_proc",
+            "file": "approved/effects/lotus_proc_r2.png",
+            "runtime": "assets/sprites/effects/sets/lotus_proc_r2.png",
+            "size": [
+              256,
+              64
+            ],
+            "sha256": "62a4d98f06f67d565f1a8e3f47107c0bb6cce98507a17c3870ae076025f276c1",
+            "kind": "effects",
+            "kit": "lotus",
+            "label": "三头八臂 · 莲瓣虚影",
+            "frames": 4,
+            "fps": 16,
+            "anchor": [
+              32,
+              32
+            ],
+            "event": "追加攻击触发，角色背后绽放莲花",
+            "layer": "身体后方叠加",
+            "play": "once",
+            "frame_size": [
+              64,
+              64
+            ],
+            "previous": "approved/effects/lotus_proc.png"
+          }
+        }
+      ]
+    },
+    {
+      "id": "valhalla",
+      "name": "英灵殿",
+      "area": "第三关",
+      "effect": "英灵分身",
+      "rule": "身边常驻 1 个英灵分身，用你的基础武器（伤害 50%）自动攻击你身边 220 像素内的敌人；分身不会受伤",
+      "items": [
+        {
+          "id": "valhalla_helm",
+          "slot": "helm",
+          "part": "头盔",
+          "name": "英灵翼盔",
+          "description": "一顶饰有银白双翼的古老战盔，盔面布满刀斧留下的裂痕。\n据说唯有在战场上英勇死去的战士，才有资格被女武神引往英灵殿。\n死亡并非他们的终点，而是另一场战争的开始。",
+          "look": "钢灰圆盔，带眼镜式护眼，两侧各一只银白鸟翼，盔面有斧劈的裂痕",
+          "silhouette": "两侧张开的翼",
+          "asset": {
+            "id": "valhalla_helm",
+            "file": "approved/armor/valhalla_helm.png",
+            "runtime": "assets/sprites/items/armor/valhalla_helm.png",
+            "size": [
+              32,
+              32
+            ],
+            "sha256": "c237dee6c1d61067f2267390a39a3d9976d60267c14d787263bb88872b31436c",
+            "kind": "armor",
+            "slot": "helm",
+            "frames": 1,
+            "kit": "valhalla"
+          }
+        },
+        {
+          "id": "valhalla_chest",
+          "slot": "chest",
+          "part": "胸甲",
+          "name": "英灵锁甲",
+          "description": "由无数细密铁环编织而成的锁甲，胸前刻有早已失传的卢恩符文。\n英灵殿中的战士每日披甲厮杀，纵使身躯破碎，待到夜幕降临，也会重新完整。\n对他们而言，死亡早已失去意义。唯有战斗，仍值得铭记。",
+          "look": "细密的铁环锁甲，短袖、长到大腿；胸前一块小铁牌刻着淡金的卢恩符文",
+          "silhouette": "短袖锁甲长衫（和龙血锁甲的鳞片外缘区分）",
+          "asset": {
+            "id": "valhalla_chest",
+            "file": "approved/armor/valhalla_chest.png",
+            "runtime": "assets/sprites/items/armor/valhalla_chest.png",
+            "size": [
+              32,
+              32
+            ],
+            "sha256": "2b6d0a6c09beb1b15fdcb8c995c94c74e84dc945835fcd00d1517bee353fd72e",
+            "kind": "armor",
+            "slot": "chest",
+            "frames": 1,
+            "kit": "valhalla"
+          }
+        },
+        {
+          "id": "valhalla_legs",
+          "slot": "legs",
+          "part": "护腿",
+          "name": "英灵护腿",
+          "description": "历经无数战役的古老护腿，铁片上留有深浅不一的斩痕。\n传说英灵们每日于殿外相互厮杀，直至最后一人倒下。\n然而黄昏到来时，倒下的勇士又会一同起身，走向奥丁的宴席。",
+          "look": "皮革裹腿外绑钢片，钢片上有深浅不一的斩痕",
+          "silhouette": "带绑带的腿甲",
+          "asset": {
+            "id": "valhalla_legs",
+            "file": "approved/armor/valhalla_legs.png",
+            "runtime": "assets/sprites/items/armor/valhalla_legs.png",
+            "size": [
+              32,
+              32
+            ],
+            "sha256": "bc4dba689555fd84fb6a80daafc16964bd92d2cc007123786becf532be1ece60",
+            "kind": "armor",
+            "slot": "legs",
+            "frames": 1,
+            "kit": "valhalla"
+          }
+        },
+        {
+          "id": "valhalla_boots",
+          "slot": "boots",
+          "part": "鞋子",
+          "name": "英灵战靴",
+          "description": "一双踏过无数战场的沉重铁靴，靴底沾染着永不褪去的灰烬。\n它的主人早已战死，却依然日复一日地磨砺兵刃，等待号角响彻九界。\n因为那场注定到来的战争，连诸神也无法幸免。",
+          "look": "沉重的铁靴，方头厚底，靴底一层灰白的灰烬",
+          "silhouette": "方头厚底",
+          "asset": {
+            "id": "valhalla_boots",
+            "file": "approved/armor/valhalla_boots.png",
+            "runtime": "assets/sprites/items/armor/valhalla_boots.png",
+            "size": [
+              32,
+              32
+            ],
+            "sha256": "d6404c8c8dc7efeeae83b8796323e4379bcc9dd8224a5dfc1c7e09a5611cdea1",
+            "kind": "armor",
+            "slot": "boots",
+            "frames": 1,
+            "kit": "valhalla"
+          }
+        }
+      ],
+      "theme": "卢恩符文、鸟翼、斩痕",
+      "origin": "维京时代",
+      "stage": 4,
+      "palette": [
+        "262934",
+        "353c49",
+        "4e5664",
+        "667180",
+        "858f9a",
+        "a7b3bc",
+        "c7cdd1",
+        "e2e1d6",
+        "6f5e4b",
+        "9c8157",
+        "bfa36f",
+        "d7bd88"
+      ],
+      "concept": "originals/valhalla.png",
+      "concept_sha256": "683f1c541032d228a497e6874efd627d411b868740941eab62a5998b806368ab",
+      "status": {
+        "id": "valhalla",
+        "file": "approved/status/valhalla.png",
+        "runtime": "assets/sprites/ui/sets/valhalla.png",
+        "size": [
+          12,
+          12
+        ],
+        "sha256": "6a5e6f5693443a540ac085e68b0746421deaf85d806ef19e03969711e79843da",
+        "kind": "status",
+        "frames": 1,
+        "kit": "valhalla"
+      },
+      "effects": [
+        {
+          "id": "valhalla_ring",
+          "kit": "valhalla",
+          "label": "英灵分身 · 脚下光环",
+          "frames": 8,
+          "fps": 12,
+          "anchor": [
+            32,
+            19
+          ],
+          "event": "独立英灵脚下的符文光环",
+          "layer": "地面和分身之间",
+          "play": "loop",
+          "frame_size": [
+            64,
+            32
+          ],
+          "asset": {
+            "id": "valhalla_ring",
+            "file": "approved/effects/valhalla_ring_r2.png",
+            "runtime": "assets/sprites/effects/sets/valhalla_ring_r2.png",
+            "size": [
+              512,
+              32
+            ],
+            "sha256": "ed2b4dfdcadb77b24ec0c5b649ae5f466480802ae8a1370cfa8d2d1dac782e43",
+            "kind": "effects",
+            "kit": "valhalla",
+            "label": "英灵分身 · 脚下光环",
+            "frames": 8,
+            "fps": 12,
+            "anchor": [
+              32,
+              19
+            ],
+            "event": "独立英灵脚下的符文光环",
+            "layer": "地面和分身之间",
+            "play": "loop",
+            "frame_size": [
+              64,
+              32
+            ],
+            "previous": "approved/effects/valhalla_ring.png"
+          }
+        }
+      ]
+    },
+    {
+      "id": "bearskin",
+      "name": "熊皮狂战士",
+      "area": "第三关",
+      "effect": "狂暴",
+      "rule": "每损失 1% 生命，武器出手速度 +1%",
+      "items": [
+        {
+          "id": "bearskin_helm",
+          "slot": "helm",
+          "part": "头盔",
+          "name": "熊首帽",
+          "description": "以巨熊头颅制成的战帽，獠牙外露，空洞的眼窝中仿佛仍残留着野兽的凶光。\n狂战士披上熊皮，咬住盾沿，发出不似人声的咆哮。据说在战意最盛之时，他们已分不清自己究竟是人，还是熊。",
+          "look": "熊头做的帽子：两只圆耳，长吻，上颌獠牙外露，空眼窝里留 1 个像素的暗红凶光",
+          "silhouette": "两只圆耳加长吻（和狮首盔的鬃毛圈区分）",
+          "asset": {
+            "id": "bearskin_helm",
+            "file": "approved/armor/bearskin_helm.png",
+            "runtime": "assets/sprites/items/armor/bearskin_helm.png",
+            "size": [
+              32,
+              32
+            ],
+            "sha256": "387fa92e34d8846dc867d1a20e982e6fd519dba587b01fbc61ae00db4d0de09d",
+            "kind": "armor",
+            "slot": "helm",
+            "frames": 1,
+            "kit": "bearskin"
+          }
+        },
+        {
+          "id": "bearskin_chest",
+          "slot": "chest",
+          "part": "胸甲",
+          "name": "熊皮衫",
+          "description": "一件未经鞣制的厚重熊皮，皮毛间凝结着陈年的血污，散发出浓烈的野兽气息。\n奥丁的战士不披铁甲，只以兽皮蔽体。传说烈火不能焚其身，刀剑不能伤其骨。\n然而，赐予他们这份力量的，或许并非兽皮，而是早已吞噬理智的疯狂。",
+          "look": "一张没鞣过的厚熊皮，毛乱，边缘参差不齐，有陈年血污。不画任何金属",
+          "silhouette": "毛茸茸、边缘不规则",
+          "asset": {
+            "id": "bearskin_chest",
+            "file": "approved/armor/bearskin_chest.png",
+            "runtime": "assets/sprites/items/armor/bearskin_chest.png",
+            "size": [
+              32,
+              32
+            ],
+            "sha256": "7f2fe7f38608a43f2376a8b34f1ac71280944c9b7c1168c9e9a3a856f35bd7d5",
+            "kind": "armor",
+            "slot": "chest",
+            "frames": 1,
+            "kit": "bearskin"
+          }
+        },
+        {
+          "id": "bearskin_legs",
+          "slot": "legs",
+          "part": "护腿",
+          "name": "毛皮绑腿",
+          "description": "以粗糙兽筋缠束的毛皮护腿，沾满泥土与干涸的血迹。\n狂战士从不因伤痛而停步。纵使双腿为兵刃所创，仍会踏着敌人的尸骸向前，直到战场上再无可以撕碎的活物。",
+          "look": "毛皮护腿，外面用兽筋一圈圈缠紧，沾着泥和干血",
+          "silhouette": "上下两端支出毛边（和沙行绑腿的布条区分）",
+          "asset": {
+            "id": "bearskin_legs",
+            "file": "approved/armor/bearskin_legs.png",
+            "runtime": "assets/sprites/items/armor/bearskin_legs.png",
+            "size": [
+              32,
+              32
+            ],
+            "sha256": "c38c79cb227f88c7c66a43fb6620512474c9597330abf41e921e387d6a01d5d5",
+            "kind": "armor",
+            "slot": "legs",
+            "frames": 1,
+            "kit": "bearskin"
+          }
+        },
+        {
+          "id": "bearskin_boots",
+          "slot": "boots",
+          "part": "鞋子",
+          "name": "熊爪靴",
+          "description": "一双缀有漆黑熊爪的厚皮战靴，鞋底磨损严重，爪尖却依旧锋利。\n据说狂战士冲入敌阵时，大地仿佛也随之震颤。\n那并非千军万马的蹄声，而是一群忘记如何畏惧死亡的人，正奔向他们的猎物。",
+          "look": "厚皮靴，靴尖缀着三根漆黑熊爪，爪尖骨白",
+          "silhouette": "靴尖伸出的爪",
+          "asset": {
+            "id": "bearskin_boots",
+            "file": "approved/armor/bearskin_boots.png",
+            "runtime": "assets/sprites/items/armor/bearskin_boots.png",
+            "size": [
+              32,
+              32
+            ],
+            "sha256": "c390f4a4c90c5e525c49ee74cecb91ee06f1df0f7b220439aca2e6d7ee044f7a",
+            "kind": "armor",
+            "slot": "boots",
+            "frames": 1,
+            "kit": "bearskin"
+          }
+        }
+      ],
+      "theme": "熊毛、熊爪、獠牙",
+      "origin": "维京时代",
+      "stage": 4,
+      "palette": [
+        "2a2525",
+        "3d302b",
+        "564138",
+        "715344",
+        "8b6952",
+        "a98464",
+        "c4a182",
+        "68574b",
+        "9e8971",
+        "c4ad90",
+        "e5cdb0",
+        "604148"
+      ],
+      "concept": "originals/bearskin.png",
+      "concept_sha256": "ca3e5017aa811644003dd256caecb1b7b010e5ad1b2ee517b95e11e265157838",
+      "status": {
+        "id": "bearskin",
+        "file": "approved/status/bearskin.png",
+        "runtime": "assets/sprites/ui/sets/bearskin.png",
+        "size": [
+          12,
+          12
+        ],
+        "sha256": "f160d63c1b17ffd0a5e87722d731c7fb7ae6ebec5d25d74515166c37c0a44d20",
+        "kind": "status",
+        "frames": 1,
+        "kit": "bearskin"
+      },
+      "effects": []
+    }
+  ],
+  "files": [
+    {
+      "id": "thornoath_helm",
+      "file": "approved/armor/thornoath_helm.png",
+      "runtime": "assets/sprites/items/armor/thornoath_helm.png",
+      "size": [
+        32,
+        32
+      ],
+      "sha256": "ca147def45ceafa886962968c753d65459c78b43d2ef2ad2a43748498b051753",
+      "kind": "armor",
+      "slot": "helm",
+      "frames": 1,
+      "kit": "thornoath"
+    },
+    {
+      "id": "thornoath_chest",
+      "file": "approved/armor/thornoath_chest.png",
+      "runtime": "assets/sprites/items/armor/thornoath_chest.png",
+      "size": [
+        32,
+        32
+      ],
+      "sha256": "57db1e45caa5043b97be779e058c3c9a651d2093e23259ab61fbaef58b9f593c",
+      "kind": "armor",
+      "slot": "chest",
+      "frames": 1,
+      "kit": "thornoath"
+    },
+    {
+      "id": "thornoath_legs",
+      "file": "approved/armor/thornoath_legs.png",
+      "runtime": "assets/sprites/items/armor/thornoath_legs.png",
+      "size": [
+        32,
+        32
+      ],
+      "sha256": "116ebbe642c5ae7e8d0019ba714ee1e09def5a3b2e692d0cbf1b557c025ab47f",
+      "kind": "armor",
+      "slot": "legs",
+      "frames": 1,
+      "kit": "thornoath"
+    },
+    {
+      "id": "thornoath_boots",
+      "file": "approved/armor/thornoath_boots.png",
+      "runtime": "assets/sprites/items/armor/thornoath_boots.png",
+      "size": [
+        32,
+        32
+      ],
+      "sha256": "efa7481290ab53439041ad3ad11dbcd4571e1f32b12d51d26d6fe237cb94807e",
+      "kind": "armor",
+      "slot": "boots",
+      "frames": 1,
+      "kit": "thornoath"
+    },
+    {
+      "id": "thornoath",
+      "file": "approved/status/thornoath.png",
+      "runtime": "assets/sprites/ui/sets/thornoath.png",
+      "size": [
+        12,
+        12
+      ],
+      "sha256": "aad6e8e8b259a906b186a56b0cd7f1ac2f40defecbe5427eb120e54598e99b2b",
+      "kind": "status",
+      "frames": 1,
+      "kit": "thornoath"
+    },
+    {
+      "id": "thornoath_burst",
+      "file": "approved/effects/thornoath_burst.png",
+      "runtime": "assets/sprites/effects/sets/thornoath_burst.png",
+      "size": [
+        1488,
+        248
+      ],
+      "sha256": "8c54e4a633f0b7f044110168b350aa983e4b92632a442bba92146198e2153a8e",
+      "kind": "effects",
+      "kit": "thornoath",
+      "label": "荆棘反刺 · 外圈",
+      "frames": 6,
+      "fps": 16,
+      "anchor": [
+        124,
+        124
+      ],
+      "event": "受击触发，以玩家为中心",
+      "layer": "地面和角色之间",
+      "play": "once",
+      "radius": 120,
+      "frame_size": [
+        248,
+        248
+      ]
+    },
+    {
+      "id": "thornoath_stab",
+      "file": "approved/effects/thornoath_stab.png",
+      "runtime": "assets/sprites/effects/sets/thornoath_stab.png",
+      "size": [
+        96,
+        32
+      ],
+      "sha256": "f2af3527cc089a5422d762cc12519fb7dbd0d47d8ee9d207434df96253d2ee8c",
+      "kind": "effects",
+      "kit": "thornoath",
+      "label": "荆棘反刺 · 攻击者",
+      "frames": 4,
+      "fps": 16,
+      "anchor": [
+        12,
+        27
+      ],
+      "event": "反刺命中攻击者，以受击目标的地面投影为锚",
+      "layer": "敌人前方",
+      "play": "once",
+      "frame_size": [
+        24,
+        32
+      ]
+    },
+    {
+      "id": "xingtian_helm",
+      "file": "approved/armor/xingtian_helm_r2.png",
+      "runtime": "assets/sprites/items/armor/xingtian_helm_r2.png",
+      "size": [
+        32,
+        32
+      ],
+      "sha256": "a5084e10572db755143a73cb46762ac9b16f7f0eae43a56f1b37f6218560ac7c",
+      "kind": "armor",
+      "slot": "helm",
+      "frames": 1,
+      "kit": "xingtian",
+      "previous": "approved/armor/xingtian_helm.png"
+    },
+    {
+      "id": "xingtian_chest",
+      "file": "approved/armor/xingtian_chest_r2.png",
+      "runtime": "assets/sprites/items/armor/xingtian_chest_r2.png",
+      "size": [
+        32,
+        32
+      ],
+      "sha256": "aa41004c68d7501ea3b0150b30fe87a464791d84c7d92af95b6fb5900aa38cdb",
+      "kind": "armor",
+      "slot": "chest",
+      "frames": 1,
+      "kit": "xingtian",
+      "previous": "approved/armor/xingtian_chest.png"
+    },
+    {
+      "id": "xingtian_legs",
+      "file": "approved/armor/xingtian_legs_r2.png",
+      "runtime": "assets/sprites/items/armor/xingtian_legs_r2.png",
+      "size": [
+        32,
+        32
+      ],
+      "sha256": "7ac242a0e9a2eed85fdd56d5044d4d6d4bc9a1cd4ccb94cc05cc092c6df3f210",
+      "kind": "armor",
+      "slot": "legs",
+      "frames": 1,
+      "kit": "xingtian",
+      "previous": "approved/armor/xingtian_legs.png"
+    },
+    {
+      "id": "xingtian_boots",
+      "file": "approved/armor/xingtian_boots_r2.png",
+      "runtime": "assets/sprites/items/armor/xingtian_boots_r2.png",
+      "size": [
+        32,
+        32
+      ],
+      "sha256": "3ed0a07bea03a95281c68c0d517e9d27f551ce476d57aa9d2c5861d377296be6",
+      "kind": "armor",
+      "slot": "boots",
+      "frames": 1,
+      "kit": "xingtian",
+      "previous": "approved/armor/xingtian_boots.png"
+    },
+    {
+      "id": "xingtian",
+      "file": "approved/status/xingtian.png",
+      "runtime": "assets/sprites/ui/sets/xingtian.png",
+      "size": [
+        12,
+        12
+      ],
+      "sha256": "cc150160ef76f7c3347d751b36514fb1d1ba9c24ea41a8378c73682b84a35ac4",
+      "kind": "status",
+      "frames": 1,
+      "kit": "xingtian"
+    },
+    {
+      "id": "xingtian_mengzhi",
+      "file": "approved/effects/xingtian_mengzhi.png",
+      "runtime": "assets/sprites/effects/sets/xingtian_mengzhi.png",
+      "size": [
+        384,
+        64
+      ],
+      "sha256": "c7d64b8d73b8c4cf83b2f86ea91d197b20aa4737e62623b0c2f494a759889de0",
+      "kind": "effects",
+      "kit": "xingtian",
+      "label": "猛志 · 受击叠层",
+      "frames": 6,
+      "fps": 16,
+      "anchor": [
+        32,
+        32
+      ],
+      "play": "once",
+      "event": "刑天套装受击叠加或刷新猛志",
+      "layer": "身体后方叠加",
+      "frame_size": [
+        64,
+        64
+      ]
+    },
+    {
+      "id": "nightcount_helm",
+      "file": "approved/armor/nightcount_helm.png",
+      "runtime": "assets/sprites/items/armor/nightcount_helm.png",
+      "size": [
+        32,
+        32
+      ],
+      "sha256": "58c5d310d22b64c29789b1804d93e003200e128a5cd57b61b79687f2a4eb9cf6",
+      "kind": "armor",
+      "slot": "helm",
+      "frames": 1,
+      "kit": "nightcount"
+    },
+    {
+      "id": "nightcount_chest",
+      "file": "approved/armor/nightcount_chest.png",
+      "runtime": "assets/sprites/items/armor/nightcount_chest.png",
+      "size": [
+        32,
+        32
+      ],
+      "sha256": "0d85216be2349515522e6463412dd651cd4d9cb8d8cbdeb3809efd23a85987ed",
+      "kind": "armor",
+      "slot": "chest",
+      "frames": 1,
+      "kit": "nightcount"
+    },
+    {
+      "id": "nightcount_legs",
+      "file": "approved/armor/nightcount_legs_r2.png",
+      "runtime": "assets/sprites/items/armor/nightcount_legs_r2.png",
+      "size": [
+        32,
+        32
+      ],
+      "sha256": "44539aa0d6417149bc29811e6b122af91614e3b74d93ca892683491a6d6eda53",
+      "kind": "armor",
+      "slot": "legs",
+      "frames": 1,
+      "kit": "nightcount",
+      "previous": "approved/armor/nightcount_legs.png"
+    },
+    {
+      "id": "nightcount_boots",
+      "file": "approved/armor/nightcount_boots_r2.png",
+      "runtime": "assets/sprites/items/armor/nightcount_boots_r2.png",
+      "size": [
+        32,
+        32
+      ],
+      "sha256": "3fbb56e0e0664768e96fb562275296da72b59f18cc31f4e1ac84cd150ea231c6",
+      "kind": "armor",
+      "slot": "boots",
+      "frames": 1,
+      "kit": "nightcount",
+      "previous": "approved/armor/nightcount_boots.png"
+    },
+    {
+      "id": "nightcount",
+      "file": "approved/status/nightcount.png",
+      "runtime": "assets/sprites/ui/sets/nightcount.png",
+      "size": [
+        12,
+        12
+      ],
+      "sha256": "b24a6eacbbdf0435915e7479f1d83a4d917056d4f46a4719bc43e307ce8c8abb",
+      "kind": "status",
+      "frames": 1,
+      "kit": "nightcount"
+    },
+    {
+      "id": "nemean_helm",
+      "file": "approved/armor/nemean_helm.png",
+      "runtime": "assets/sprites/items/armor/nemean_helm.png",
+      "size": [
+        32,
+        32
+      ],
+      "sha256": "c0422ee54f8c1e219460f329d6beb4ed396f50847cccc5f6211a36385ab34ea6",
+      "kind": "armor",
+      "slot": "helm",
+      "frames": 1,
+      "kit": "nemean"
+    },
+    {
+      "id": "nemean_chest",
+      "file": "approved/armor/nemean_chest.png",
+      "runtime": "assets/sprites/items/armor/nemean_chest.png",
+      "size": [
+        32,
+        32
+      ],
+      "sha256": "93b7106af866d7b86168773216224803e7cd9b5f0c6de66d25b2744130b27576",
+      "kind": "armor",
+      "slot": "chest",
+      "frames": 1,
+      "kit": "nemean"
+    },
+    {
+      "id": "nemean_legs",
+      "file": "approved/armor/nemean_legs.png",
+      "runtime": "assets/sprites/items/armor/nemean_legs.png",
+      "size": [
+        32,
+        32
+      ],
+      "sha256": "269e523bd577b3a543b2d4888cbe3d9b4257d3d603cc49eda05861b75050c77c",
+      "kind": "armor",
+      "slot": "legs",
+      "frames": 1,
+      "kit": "nemean"
+    },
+    {
+      "id": "nemean_boots",
+      "file": "approved/armor/nemean_boots_r2.png",
+      "runtime": "assets/sprites/items/armor/nemean_boots_r2.png",
+      "size": [
+        32,
+        32
+      ],
+      "sha256": "c17ffc213abd252ac656e6cce2cd9be8a6a3096a7c4dc3c0d84ac777164e8162",
+      "kind": "armor",
+      "slot": "boots",
+      "frames": 1,
+      "kit": "nemean",
+      "previous": "approved/armor/nemean_boots.png"
+    },
+    {
+      "id": "nemean",
+      "file": "approved/status/nemean.png",
+      "runtime": "assets/sprites/ui/sets/nemean.png",
+      "size": [
+        12,
+        12
+      ],
+      "sha256": "15ad79d61bc90ea6cb1ab047f5eb2937423b96e17f46cf24510eca3d7162ad2e",
+      "kind": "status",
+      "frames": 1,
+      "kit": "nemean"
+    },
+    {
+      "id": "dragonslayer_helm",
+      "file": "approved/armor/dragonslayer_helm.png",
+      "runtime": "assets/sprites/items/armor/dragonslayer_helm.png",
+      "size": [
+        32,
+        32
+      ],
+      "sha256": "b22844a90ec8b1c3ba876974d5be54280abb0e3eb5b169f854128e957e38ae0f",
+      "kind": "armor",
+      "slot": "helm",
+      "frames": 1,
+      "kit": "dragonslayer"
+    },
+    {
+      "id": "dragonslayer_chest",
+      "file": "approved/armor/dragonslayer_chest.png",
+      "runtime": "assets/sprites/items/armor/dragonslayer_chest.png",
+      "size": [
+        32,
+        32
+      ],
+      "sha256": "72a562c8c946bac19882169cc9b0fad1761949d7a668f9f8c570798179f59563",
+      "kind": "armor",
+      "slot": "chest",
+      "frames": 1,
+      "kit": "dragonslayer"
+    },
+    {
+      "id": "dragonslayer_legs",
+      "file": "approved/armor/dragonslayer_legs.png",
+      "runtime": "assets/sprites/items/armor/dragonslayer_legs.png",
+      "size": [
+        32,
+        32
+      ],
+      "sha256": "65e44a4ce9285ea3377a0210a34d992043378a0b8966cf18a358a2daa9160f92",
+      "kind": "armor",
+      "slot": "legs",
+      "frames": 1,
+      "kit": "dragonslayer"
+    },
+    {
+      "id": "dragonslayer_boots",
+      "file": "approved/armor/dragonslayer_boots.png",
+      "runtime": "assets/sprites/items/armor/dragonslayer_boots.png",
+      "size": [
+        32,
+        32
+      ],
+      "sha256": "09df25402144206f6b71f342d39ab78e6c97ec002d0c5092c839d7125ec2a6c4",
+      "kind": "armor",
+      "slot": "boots",
+      "frames": 1,
+      "kit": "dragonslayer"
+    },
+    {
+      "id": "dragonslayer",
+      "file": "approved/status/dragonslayer.png",
+      "runtime": "assets/sprites/ui/sets/dragonslayer.png",
+      "size": [
+        12,
+        12
+      ],
+      "sha256": "67951564dc03136a6792b8a2f4500b70f7e671c4abb680ba59861548c88ec89b",
+      "kind": "status",
+      "frames": 1,
+      "kit": "dragonslayer"
+    },
+    {
+      "id": "dragonslayer_scale",
+      "file": "approved/effects/dragonslayer_scale_r2.png",
+      "runtime": "assets/sprites/effects/sets/dragonslayer_scale_r2.png",
+      "size": [
+        256,
+        64
+      ],
+      "sha256": "e928224aa101938cc457613030d9bab17de72ac6947d6cd3abf358c6a6b9c2e4",
+      "kind": "effects",
+      "kit": "dragonslayer",
+      "label": "龙血 · 龙鳞已备",
+      "frames": 4,
+      "fps": 8,
+      "anchor": [
+        32,
+        32
+      ],
+      "event": "龙鳞充能完毕，鳞片闪在胸腰与身侧，头部留空",
+      "layer": "身体前方叠加",
+      "play": "loop",
+      "frame_size": [
+        64,
+        64
+      ],
+      "previous": "approved/effects/dragonslayer_scale.png"
+    },
+    {
+      "id": "dragonslayer_shatter",
+      "file": "approved/effects/dragonslayer_shatter.png",
+      "runtime": "assets/sprites/effects/sets/dragonslayer_shatter.png",
+      "size": [
+        384,
+        64
+      ],
+      "sha256": "667fed2369148f41cd2d7531cca882fe1823b107a37e908b3ae80278543eff48",
+      "kind": "effects",
+      "kit": "dragonslayer",
+      "label": "龙血 · 龙鳞碎裂",
+      "frames": 6,
+      "fps": 16,
+      "anchor": [
+        32,
+        32
+      ],
+      "event": "龙鳞挡下伤害的瞬间",
+      "layer": "身体前方叠加",
+      "play": "once",
+      "frame_size": [
+        64,
+        64
+      ]
+    },
+    {
+      "id": "yellowwind_helm",
+      "file": "approved/armor/yellowwind_helm_r2.png",
+      "runtime": "assets/sprites/items/armor/yellowwind_helm_r2.png",
+      "size": [
+        32,
+        32
+      ],
+      "sha256": "9d4818dda9e5d0103423b5a0cef8df55d6403478f13c29021035d6f05b088784",
+      "kind": "armor",
+      "slot": "helm",
+      "frames": 1,
+      "kit": "yellowwind",
+      "previous": "approved/armor/yellowwind_helm.png"
+    },
+    {
+      "id": "yellowwind_chest",
+      "file": "approved/armor/yellowwind_chest.png",
+      "runtime": "assets/sprites/items/armor/yellowwind_chest.png",
+      "size": [
+        32,
+        32
+      ],
+      "sha256": "293533a4523026ddc31f312c59179e77b4b783f1b3ad723edd7ee38a85d50044",
+      "kind": "armor",
+      "slot": "chest",
+      "frames": 1,
+      "kit": "yellowwind"
+    },
+    {
+      "id": "yellowwind_legs",
+      "file": "approved/armor/yellowwind_legs.png",
+      "runtime": "assets/sprites/items/armor/yellowwind_legs.png",
+      "size": [
+        32,
+        32
+      ],
+      "sha256": "099539d664e906e4a09471fa0027f496583c86159f18416d65e8c79f79aa9557",
+      "kind": "armor",
+      "slot": "legs",
+      "frames": 1,
+      "kit": "yellowwind"
+    },
+    {
+      "id": "yellowwind_boots",
+      "file": "approved/armor/yellowwind_boots.png",
+      "runtime": "assets/sprites/items/armor/yellowwind_boots.png",
+      "size": [
+        32,
+        32
+      ],
+      "sha256": "6988848a6fa8431290fcdcbe034ac7d345c3e6a30c628f2732a1462952da0805",
+      "kind": "armor",
+      "slot": "boots",
+      "frames": 1,
+      "kit": "yellowwind"
+    },
+    {
+      "id": "yellowwind",
+      "file": "approved/status/yellowwind.png",
+      "runtime": "assets/sprites/ui/sets/yellowwind.png",
+      "size": [
+        12,
+        12
+      ],
+      "sha256": "a39e253a27f23f19134bc17a71cdb14127b6cfbcf839bdecde3dabedea3e67d7",
+      "kind": "status",
+      "frames": 1,
+      "kit": "yellowwind"
+    },
+    {
+      "id": "yellowwind_storm",
+      "file": "approved/effects/yellowwind_storm_r2.png",
+      "runtime": "assets/sprites/effects/sets/yellowwind_storm_r2.png",
+      "size": [
+        576,
+        112
+      ],
+      "sha256": "a1db5377d387c932c6f526ea9f00302b76f3c3242314412ab5778685bf674523",
+      "kind": "effects",
+      "kit": "yellowwind",
+      "label": "三昧神风 · 循环",
+      "frames": 6,
+      "fps": 12,
+      "anchor": [
+        48,
+        62
+      ],
+      "event": "持续期间随判定中心移动。独立龙卷，无可见地环",
+      "layer": "地面特效层，角色与敌人之下",
+      "play": "loop",
+      "radius": 48,
+      "frame_size": [
+        96,
+        112
+      ],
+      "previous": "approved/effects/yellowwind_storm.png"
+    },
+    {
+      "id": "yellowwind_storm_start",
+      "file": "approved/effects/yellowwind_storm_start_r2.png",
+      "runtime": "assets/sprites/effects/sets/yellowwind_storm_start_r2.png",
+      "size": [
+        288,
+        112
+      ],
+      "sha256": "0c895c24fe3e68242567f747d3cdb1c6705d7ae4a4f1227db88f0435ee916c27",
+      "kind": "effects",
+      "kit": "yellowwind",
+      "label": "三昧神风 · 卷起",
+      "frames": 3,
+      "fps": 12,
+      "anchor": [
+        48,
+        62
+      ],
+      "event": "风柱由下向上卷起，无可见地环",
+      "layer": "地面特效层，角色与敌人之下",
+      "play": "once",
+      "frame_size": [
+        96,
+        112
+      ],
+      "previous": "approved/effects/yellowwind_storm_start.png"
+    },
+    {
+      "id": "yellowwind_storm_end",
+      "file": "approved/effects/yellowwind_storm_end_r2.png",
+      "runtime": "assets/sprites/effects/sets/yellowwind_storm_end_r2.png",
+      "size": [
+        288,
+        112
+      ],
+      "sha256": "1a02d80801fb671f7cf988303f96c5ce947f9ecdd1e3363044e27b68077241c9",
+      "kind": "effects",
+      "kit": "yellowwind",
+      "label": "三昧神风 · 消散",
+      "frames": 3,
+      "fps": 12,
+      "anchor": [
+        48,
+        62
+      ],
+      "event": "风柱被拉散成沙尘，无可见地环",
+      "layer": "地面特效层，角色与敌人之下",
+      "play": "once",
+      "frame_size": [
+        96,
+        112
+      ],
+      "previous": "approved/effects/yellowwind_storm_end.png"
+    },
+    {
+      "id": "grail_helm",
+      "file": "approved/armor/grail_helm.png",
+      "runtime": "assets/sprites/items/armor/grail_helm.png",
+      "size": [
+        32,
+        32
+      ],
+      "sha256": "3f8dee94e954a76225d4f896b698de58b4108a7cf69a366707ab465119d6c1ce",
+      "kind": "armor",
+      "slot": "helm",
+      "frames": 1,
+      "kit": "grail"
+    },
+    {
+      "id": "grail_chest",
+      "file": "approved/armor/grail_chest.png",
+      "runtime": "assets/sprites/items/armor/grail_chest.png",
+      "size": [
+        32,
+        32
+      ],
+      "sha256": "4fc0700ea455eca998097226545c236bcb104470db3ffadebaf37612c0c526af",
+      "kind": "armor",
+      "slot": "chest",
+      "frames": 1,
+      "kit": "grail"
+    },
+    {
+      "id": "grail_legs",
+      "file": "approved/armor/grail_legs.png",
+      "runtime": "assets/sprites/items/armor/grail_legs.png",
+      "size": [
+        32,
+        32
+      ],
+      "sha256": "c463e418f9e1f0ae63c6e3256f02c330bea645775322f2484761524154440679",
+      "kind": "armor",
+      "slot": "legs",
+      "frames": 1,
+      "kit": "grail"
+    },
+    {
+      "id": "grail_boots",
+      "file": "approved/armor/grail_boots.png",
+      "runtime": "assets/sprites/items/armor/grail_boots.png",
+      "size": [
+        32,
+        32
+      ],
+      "sha256": "6e50d0b205fdad515385f04bdf12a38e5b95b1a2676dd1330d57152e007e7d2c",
+      "kind": "armor",
+      "slot": "boots",
+      "frames": 1,
+      "kit": "grail"
+    },
+    {
+      "id": "grail",
+      "file": "approved/status/grail.png",
+      "runtime": "assets/sprites/ui/sets/grail.png",
+      "size": [
+        12,
+        12
+      ],
+      "sha256": "fa63e82347e53329f419498e45988ced41244cc556c8ea2699edde11643a9b32",
+      "kind": "status",
+      "frames": 1,
+      "kit": "grail"
+    },
+    {
+      "id": "lotus_helm",
+      "file": "approved/armor/lotus_helm.png",
+      "runtime": "assets/sprites/items/armor/lotus_helm.png",
+      "size": [
+        32,
+        32
+      ],
+      "sha256": "d84949c04fb01026c7e98da68c88dead257d515cc3703610333b3503bcba3af8",
+      "kind": "armor",
+      "slot": "helm",
+      "frames": 1,
+      "kit": "lotus"
+    },
+    {
+      "id": "lotus_chest",
+      "file": "approved/armor/lotus_chest.png",
+      "runtime": "assets/sprites/items/armor/lotus_chest.png",
+      "size": [
+        32,
+        32
+      ],
+      "sha256": "501c5b8d29d9ac3f094edb7ef5e2c55dde5adb2d1d9bd2549cdd83a3593a9357",
+      "kind": "armor",
+      "slot": "chest",
+      "frames": 1,
+      "kit": "lotus"
+    },
+    {
+      "id": "lotus_legs",
+      "file": "approved/armor/lotus_legs.png",
+      "runtime": "assets/sprites/items/armor/lotus_legs.png",
+      "size": [
+        32,
+        32
+      ],
+      "sha256": "90e22f18f56a768f8897564f8abb774fd242dd7d3a835e063f3919b877a39d5b",
+      "kind": "armor",
+      "slot": "legs",
+      "frames": 1,
+      "kit": "lotus"
+    },
+    {
+      "id": "lotus_boots",
+      "file": "approved/armor/lotus_boots.png",
+      "runtime": "assets/sprites/items/armor/lotus_boots.png",
+      "size": [
+        32,
+        32
+      ],
+      "sha256": "0f2cd49e90e103b9b709ce390a36de13e9694538551da300fef0aa9d16e19ad2",
+      "kind": "armor",
+      "slot": "boots",
+      "frames": 1,
+      "kit": "lotus"
+    },
+    {
+      "id": "lotus",
+      "file": "approved/status/lotus.png",
+      "runtime": "assets/sprites/ui/sets/lotus.png",
+      "size": [
+        12,
+        12
+      ],
+      "sha256": "f8504affb2ee3a0e14458fb34e740cf54036138cbf54a7d7d12cf367d5385a57",
+      "kind": "status",
+      "frames": 1,
+      "kit": "lotus"
+    },
+    {
+      "id": "lotus_proc",
+      "file": "approved/effects/lotus_proc_r2.png",
+      "runtime": "assets/sprites/effects/sets/lotus_proc_r2.png",
+      "size": [
+        256,
+        64
+      ],
+      "sha256": "62a4d98f06f67d565f1a8e3f47107c0bb6cce98507a17c3870ae076025f276c1",
+      "kind": "effects",
+      "kit": "lotus",
+      "label": "三头八臂 · 莲瓣虚影",
+      "frames": 4,
+      "fps": 16,
+      "anchor": [
+        32,
+        32
+      ],
+      "event": "追加攻击触发，角色背后绽放莲花",
+      "layer": "身体后方叠加",
+      "play": "once",
+      "frame_size": [
+        64,
+        64
+      ],
+      "previous": "approved/effects/lotus_proc.png"
+    },
+    {
+      "id": "valhalla_helm",
+      "file": "approved/armor/valhalla_helm.png",
+      "runtime": "assets/sprites/items/armor/valhalla_helm.png",
+      "size": [
+        32,
+        32
+      ],
+      "sha256": "c237dee6c1d61067f2267390a39a3d9976d60267c14d787263bb88872b31436c",
+      "kind": "armor",
+      "slot": "helm",
+      "frames": 1,
+      "kit": "valhalla"
+    },
+    {
+      "id": "valhalla_chest",
+      "file": "approved/armor/valhalla_chest.png",
+      "runtime": "assets/sprites/items/armor/valhalla_chest.png",
+      "size": [
+        32,
+        32
+      ],
+      "sha256": "2b6d0a6c09beb1b15fdcb8c995c94c74e84dc945835fcd00d1517bee353fd72e",
+      "kind": "armor",
+      "slot": "chest",
+      "frames": 1,
+      "kit": "valhalla"
+    },
+    {
+      "id": "valhalla_legs",
+      "file": "approved/armor/valhalla_legs.png",
+      "runtime": "assets/sprites/items/armor/valhalla_legs.png",
+      "size": [
+        32,
+        32
+      ],
+      "sha256": "bc4dba689555fd84fb6a80daafc16964bd92d2cc007123786becf532be1ece60",
+      "kind": "armor",
+      "slot": "legs",
+      "frames": 1,
+      "kit": "valhalla"
+    },
+    {
+      "id": "valhalla_boots",
+      "file": "approved/armor/valhalla_boots.png",
+      "runtime": "assets/sprites/items/armor/valhalla_boots.png",
+      "size": [
+        32,
+        32
+      ],
+      "sha256": "d6404c8c8dc7efeeae83b8796323e4379bcc9dd8224a5dfc1c7e09a5611cdea1",
+      "kind": "armor",
+      "slot": "boots",
+      "frames": 1,
+      "kit": "valhalla"
+    },
+    {
+      "id": "valhalla",
+      "file": "approved/status/valhalla.png",
+      "runtime": "assets/sprites/ui/sets/valhalla.png",
+      "size": [
+        12,
+        12
+      ],
+      "sha256": "6a5e6f5693443a540ac085e68b0746421deaf85d806ef19e03969711e79843da",
+      "kind": "status",
+      "frames": 1,
+      "kit": "valhalla"
+    },
+    {
+      "id": "valhalla_ring",
+      "file": "approved/effects/valhalla_ring_r2.png",
+      "runtime": "assets/sprites/effects/sets/valhalla_ring_r2.png",
+      "size": [
+        512,
+        32
+      ],
+      "sha256": "ed2b4dfdcadb77b24ec0c5b649ae5f466480802ae8a1370cfa8d2d1dac782e43",
+      "kind": "effects",
+      "kit": "valhalla",
+      "label": "英灵分身 · 脚下光环",
+      "frames": 8,
+      "fps": 12,
+      "anchor": [
+        32,
+        19
+      ],
+      "event": "独立英灵脚下的符文光环",
+      "layer": "地面和分身之间",
+      "play": "loop",
+      "frame_size": [
+        64,
+        32
+      ],
+      "previous": "approved/effects/valhalla_ring.png"
+    },
+    {
+      "id": "bearskin_helm",
+      "file": "approved/armor/bearskin_helm.png",
+      "runtime": "assets/sprites/items/armor/bearskin_helm.png",
+      "size": [
+        32,
+        32
+      ],
+      "sha256": "387fa92e34d8846dc867d1a20e982e6fd519dba587b01fbc61ae00db4d0de09d",
+      "kind": "armor",
+      "slot": "helm",
+      "frames": 1,
+      "kit": "bearskin"
+    },
+    {
+      "id": "bearskin_chest",
+      "file": "approved/armor/bearskin_chest.png",
+      "runtime": "assets/sprites/items/armor/bearskin_chest.png",
+      "size": [
+        32,
+        32
+      ],
+      "sha256": "7f2fe7f38608a43f2376a8b34f1ac71280944c9b7c1168c9e9a3a856f35bd7d5",
+      "kind": "armor",
+      "slot": "chest",
+      "frames": 1,
+      "kit": "bearskin"
+    },
+    {
+      "id": "bearskin_legs",
+      "file": "approved/armor/bearskin_legs.png",
+      "runtime": "assets/sprites/items/armor/bearskin_legs.png",
+      "size": [
+        32,
+        32
+      ],
+      "sha256": "c38c79cb227f88c7c66a43fb6620512474c9597330abf41e921e387d6a01d5d5",
+      "kind": "armor",
+      "slot": "legs",
+      "frames": 1,
+      "kit": "bearskin"
+    },
+    {
+      "id": "bearskin_boots",
+      "file": "approved/armor/bearskin_boots.png",
+      "runtime": "assets/sprites/items/armor/bearskin_boots.png",
+      "size": [
+        32,
+        32
+      ],
+      "sha256": "c390f4a4c90c5e525c49ee74cecb91ee06f1df0f7b220439aca2e6d7ee044f7a",
+      "kind": "armor",
+      "slot": "boots",
+      "frames": 1,
+      "kit": "bearskin"
+    },
+    {
+      "id": "bearskin",
+      "file": "approved/status/bearskin.png",
+      "runtime": "assets/sprites/ui/sets/bearskin.png",
+      "size": [
+        12,
+        12
+      ],
+      "sha256": "f160d63c1b17ffd0a5e87722d731c7fb7ae6ebec5d25d74515166c37c0a44d20",
+      "kind": "status",
+      "frames": 1,
+      "kit": "bearskin"
+    },
+    {
+      "id": "valhalla_guardian_idle",
+      "file": "approved/actors/valhalla_guardian_idle.png",
+      "runtime": "assets/sprites/allies/valhalla_guardian_idle.png",
+      "size": [
+        256,
+        64
+      ],
+      "sha256": "618bfc3eed6ca0f428231267be09f407ffb6a84dcde626348ebe344c0127e996",
+      "kind": "actors",
+      "kit": "valhalla",
+      "frame_size": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        55
+      ],
+      "facing": "right",
+      "frames": 4,
+      "fps": 8,
+      "play": "loop",
+      "hand": [
+        [
+          41,
+          34
+        ],
+        [
+          41,
+          33
+        ],
+        [
+          42,
+          34
+        ],
+        [
+          41,
+          34
+        ]
+      ],
+      "angles": [
+        -14,
+        -17,
+        -14,
+        -14
+      ]
+    },
+    {
+      "id": "valhalla_guardian_attack",
+      "file": "approved/actors/valhalla_guardian_attack.png",
+      "runtime": "assets/sprites/allies/valhalla_guardian_attack.png",
+      "size": [
+        384,
+        64
+      ],
+      "sha256": "9fc907f663e8a5dd1003bd2717caccf98d57e21cea8c04d8eabeeae09bdfa11a",
+      "kind": "actors",
+      "kit": "valhalla",
+      "frame_size": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        55
+      ],
+      "facing": "right",
+      "frames": 6,
+      "fps": 16,
+      "play": "once",
+      "hand": [
+        [
+          38,
+          33
+        ],
+        [
+          34,
+          24
+        ],
+        [
+          40,
+          18
+        ],
+        [
+          48,
+          28
+        ],
+        [
+          48,
+          37
+        ],
+        [
+          43,
+          35
+        ]
+      ],
+      "angles": [
+        -12,
+        -112,
+        -63,
+        4,
+        26,
+        9
+      ]
+    }
+  ],
+  "revision": 2,
+  "reviewNotes": [
+    {
+      "id": "xingtian_chest",
+      "label": "怒目胸甲",
+      "note": "这里看上去显得好肥, 做的英武一点",
+      "result": "改为宽肩收腰的 V 形青铜甲，保留怒目和腹口。",
+      "previous": "approved/armor/xingtian_chest.png"
+    },
+    {
+      "id": "xingtian_helm",
+      "label": "无首盔",
+      "note": "这里看上去显得好肥, 做的英武一点",
+      "result": "收窄盔身，抬高盔脊，加长护颊，保留空脸。",
+      "previous": "approved/armor/xingtian_helm.png"
+    },
+    {
+      "id": "xingtian_legs",
+      "label": "常羊护腿",
+      "note": "这里看上去显得好肥, 做的英武一点",
+      "result": "缩细腿甲，用尖膝甲、斜收的胫甲和青铜纹拉长轮廓。",
+      "previous": "approved/armor/xingtian_legs.png"
+    },
+    {
+      "id": "xingtian_boots",
+      "label": "战舞靴",
+      "note": "这里看上去显得好肥, 做的英武一点",
+      "result": "改成紧凑的平底战靴，保留前靴上翘的底纹。",
+      "previous": "approved/armor/xingtian_boots.png"
+    },
+    {
+      "id": "xingtian-status",
+      "label": "刑天 · 状态图标",
+      "note": "这里也要做一个特效",
+      "result": "新增猛志叠层特效，受击时在身体后方短闪。"
+    },
+    {
+      "id": "nightcount_legs",
+      "label": "黑呢马裤",
+      "note": "不要束腿裤",
+      "result": "从大腿到裤脚改为直筒，保留暗呢料和银线。",
+      "previous": "approved/armor/nightcount_legs.png"
+    },
+    {
+      "id": "nightcount_boots",
+      "label": "夜行长靴",
+      "note": "不要高跟鞋",
+      "result": "改用连续低平鞋底，保留长筒和银扣。",
+      "previous": "approved/armor/nightcount_boots.png"
+    },
+    {
+      "id": "nemean_boots",
+      "label": "远征凉鞋",
+      "note": "像素风格太难看了 看不出来是鞋子",
+      "result": "重画两只清晰的平底鞋，露出鞋床、交叉绑带和脚尖开口。",
+      "previous": "approved/armor/nemean_boots.png"
+    },
+    {
+      "id": "dragonslayer_scale",
+      "label": "龙血 · 龙鳞已备",
+      "note": "把头都挡住了",
+      "result": "所有鳞光下移至胸腰和身侧，头部上方保持透明。",
+      "previous": "approved/effects/dragonslayer_scale.png"
+    },
+    {
+      "id": "yellowwind_helm",
+      "label": "貂鼠皮帽",
+      "note": "不要这个风格, 这不是都有点可爱了吗",
+      "result": "改成低伏猎装皮兜帽，耳尖压低，长皮护颊加重轮廓。",
+      "previous": "approved/armor/yellowwind_helm.png"
+    },
+    {
+      "id": "yellowwind_storm",
+      "label": "三昧神风 · 循环",
+      "note": "不要底部的黄色的环, 这里要模拟龙卷风的样子",
+      "result": "移除地环，改为上宽下窄、持续旋转的螺旋风柱。",
+      "previous": "approved/effects/yellowwind_storm.png"
+    },
+    {
+      "id": "yellowwind_storm_start",
+      "label": "三昧神风 · 卷起",
+      "note": "不要底部的黄色的环, 这里要模拟龙卷风的样子",
+      "result": "从地面尘线向上卷成窄风柱，无地环。",
+      "previous": "approved/effects/yellowwind_storm_start.png"
+    },
+    {
+      "id": "yellowwind_storm_end",
+      "label": "三昧神风 · 消散",
+      "note": "不要底部的黄色的环, 这里要模拟龙卷风的样子",
+      "result": "风柱旋线减弱并被横风拉成散沙，无地环。",
+      "previous": "approved/effects/yellowwind_storm_end.png"
+    },
+    {
+      "id": "lotus_proc",
+      "label": "三头八臂 · 莲瓣虚影",
+      "note": "我看不出来是莲花",
+      "result": "角色后方绽放整朵莲花，以大瓣、花托和散瓣形成轮廓。",
+      "previous": "approved/effects/lotus_proc.png"
+    },
+    {
+      "id": "valhalla_ring",
+      "label": "英灵分身 · 脚下光环",
+      "note": "特效华丽一点, 英灵分身应该是英灵, 不是主角的, 所以这里要画一个英灵的形象",
+      "result": "新绘独立盔甲英灵，交付待机和出手两条动作，光环扩成双层卢恩纹并加升起的星芒。",
+      "previous": "approved/effects/valhalla_ring.png"
+    }
+  ],
+  "guardian": {
+    "idle": {
+      "id": "valhalla_guardian_idle",
+      "file": "approved/actors/valhalla_guardian_idle.png",
+      "runtime": "assets/sprites/allies/valhalla_guardian_idle.png",
+      "size": [
+        256,
+        64
+      ],
+      "sha256": "618bfc3eed6ca0f428231267be09f407ffb6a84dcde626348ebe344c0127e996",
+      "kind": "actors",
+      "kit": "valhalla",
+      "frame_size": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        55
+      ],
+      "facing": "right",
+      "frames": 4,
+      "fps": 8,
+      "play": "loop",
+      "hand": [
+        [
+          41,
+          34
+        ],
+        [
+          41,
+          33
+        ],
+        [
+          42,
+          34
+        ],
+        [
+          41,
+          34
+        ]
+      ],
+      "angles": [
+        -14,
+        -17,
+        -14,
+        -14
+      ]
+    },
+    "attack": {
+      "id": "valhalla_guardian_attack",
+      "file": "approved/actors/valhalla_guardian_attack.png",
+      "runtime": "assets/sprites/allies/valhalla_guardian_attack.png",
+      "size": [
+        384,
+        64
+      ],
+      "sha256": "9fc907f663e8a5dd1003bd2717caccf98d57e21cea8c04d8eabeeae09bdfa11a",
+      "kind": "actors",
+      "kit": "valhalla",
+      "frame_size": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        55
+      ],
+      "facing": "right",
+      "frames": 6,
+      "fps": 16,
+      "play": "once",
+      "hand": [
+        [
+          38,
+          33
+        ],
+        [
+          34,
+          24
+        ],
+        [
+          40,
+          18
+        ],
+        [
+          48,
+          28
+        ],
+        [
+          48,
+          37
+        ],
+        [
+          43,
+          35
+        ]
+      ],
+      "angles": [
+        -12,
+        -112,
+        -63,
+        4,
+        26,
+        9
+      ]
+    }
+  },
+  "guardianConcept": "originals/valhalla-guardian-r2.png",
+  "grounds": {
+    "雪地": "../../sprites/ground/midgard/snow_01.png",
+    "冥界": "../../sprites/ground/helheim/stone_01.png",
+    "焦土": "../../sprites/ground/vigrid/scorched_01.png"
+  },
+  "weaponSamples": [
+    "../../sprites/weapons/swordsman/katana_icon.png",
+    "../../sprites/weapons/swordsman/muramasa_icon.png",
+    "../../sprites/weapons/swordsman/chunyang_icon.png",
+    "../../sprites/weapons/swordsman/riyue_icon.png"
+  ],
+  "player": "../../sprites/characters/swordsman_bare_idle.png",
+  "comparison": [
+    [
+      "nemean_helm",
+      "bearskin_helm"
+    ],
+    [
+      "dragonslayer_chest",
+      "valhalla_chest"
+    ],
+    [
+      "nemean_legs",
+      "grail_legs"
+    ],
+    [
+      "yellowwind_legs",
+      "bearskin_legs"
+    ]
+  ]
+}
