@@ -10,7 +10,7 @@ import webbrowser
 ROOT = Path(__file__).resolve().parent
 SITE = "fimbulwinter-courtyard"
 VERSION = 5
-ITEMS = {"layout", "approach", "architecture", "flagstones", "fjord", "combat", "concept"}
+ITEMS = {"layout", "court", "cover", "approach", "stelae", "architecture", "flagstones", "fjord", "combat", "concept"}
 STATES = {"pending", "approved", "revise"}
 parser = ArgumentParser()
 parser.add_argument("--port", type=int, default=8773)

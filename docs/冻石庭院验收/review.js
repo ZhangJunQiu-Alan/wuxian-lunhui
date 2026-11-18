@@ -1,62 +1,76 @@
 const items = [
   {
     id: "layout", name: "从出生点到出口",
-    description: "沿石路穿过前路遭遇和入口木闸，清理中庭后经过点亮的出口。全程巡检按约 1.5 秒间隔取自同一次实机运行。",
+    description: "沿石路穿过前路遭遇和入口木闸，进入扩建后的中庭清场，再从点亮的东门离开。视频和巡检取自石碑接入后的同一次实机运行。",
     media: [
-      { title: "完整实机 · 从出生点到出口", video: "media/v5-traversal.mp4", poster: "media/v5-approach-fight.webp" },
-      { title: "全程巡检总览", image: "media/v5-survey.webp", wide: true },
-      { title: "第四版与第五版 · 前路和入口", image: "media/v5-compare-layout.webp", wide: true },
-      { title: "内门敞开", image: "media/v5-entry-open.webp" },
-      { title: "入庭后木闸落下", image: "media/v5-entry-sealed.webp" },
+      { title: "完整实机 · 从出生点到出口", video: "media/v8-traversal.mp4", poster: "media/v8-approach-fight.webp" },
+      { title: "全程巡检总览", image: "media/v8-survey.webp", wide: true },
+      { title: "内门敞开", image: "media/v8-entry-open.webp" },
+      { title: "入庭后木闸落下", image: "media/v8-entry-sealed.webp" },
+    ],
+  },
+  {
+    id: "court", name: "中庭扩建与镜头",
+    description: "可走面积扩到上一版的 1.76 倍，东西门之间宽 20.3 世界单位，南北纵深多了 31%。进门时看不到东门，走到中央和东侧时镜头会跟着移动。",
+    media: [
+      { title: "新旧中庭俯视布局", image: "media/v8-plan.webp", wide: true },
+      { title: "进门 · 敌人出现", image: "media/v8-broad-court.webp" },
+      { title: "中庭中央 · 符文圆环", image: "media/v8-court-pan-center.webp" },
+      { title: "东侧 · 冰井与出口", image: "media/v8-court-pan-east.webp" },
+    ],
+  },
+  {
+    id: "cover", name: "掩体、地面与边缘叙事",
+    description: "三处掩体：西北高断碑、东南矮裂石、东北冰井，约为角色身高的 1.6–2 倍，最窄通道约 3.9 个冲刺距离。地面有薄冰、翘起的裂石板、踩雪路和背风积雪。墙边有倒塌的武器架、断矛、圆盾、冻旗和头盔。",
+    media: [
+      { title: "战斗 · 断碑旁挥砍", image: "media/v8-strike.webp" },
+      { title: "断碑后的剪影", image: "media/v8-cover-occlusion.webp" },
+      { title: "东侧 · 薄冰、踩雪路与北墙武器架", image: "media/v8-court-pan-east.webp", wide: true },
     ],
   },
   {
     id: "approach", name: "手绘雪崖前路",
-    description: "复核出生点、弯路、干砌墙、石碑、火盆和冷杉林。经过木闸时，地面、墙线和雪坡应延续到中庭。",
+    description: "复核出生点、弯路、干砌墙、火盆和冷杉林。前路为暮色冷蓝调，靠近木闸时逐渐回到中庭色温。",
     media: [
-      { title: "第四版与第五版 · 前路交战", image: "media/v5-compare-layout.webp", wide: true },
-      { title: "前路战场", image: "media/v5-approach-fight.webp" },
-      { title: "出生点", image: "media/v5-courtyard.webp" },
-      { title: "游戏镜头下的石碑底稿", image: "media/v5-stele.webp" },
+      { title: "前路战场", image: "media/v8-approach-fight.webp" },
+      { title: "前路", image: "media/v8-approach.webp" },
+      { title: "出生点", image: "media/v8-courtyard.webp" },
+    ],
+  },
+  {
+    id: "stelae", name: "前路五块石碑",
+    description: "五块碑各用一种碑面：双股交织、紧编绳、素面符文碑、狼首兽纹、斜裂残纹，符文都是正向。碑后补地按原画补出树枝和雪面笔触。",
+    media: [
+      { title: "接入前后对比", image: "media/v8-stele-compare.webp", wide: true },
+      { title: "1 · 双股交织", image: "media/v8-stele-a.webp" },
+      { title: "2 · 紧编绳", image: "media/v8-stele-b.webp" },
+      { title: "3 · 素面符文碑", image: "media/v8-stele-c.webp" },
+      { title: "4 · 狼首兽纹", image: "media/v8-stele-d.webp" },
+      { title: "5 · 斜裂残纹", image: "media/v8-stele-e.webp" },
+      { title: "主碑后的剪影", image: "media/v8-stele-occlusion.webp" },
     ],
   },
   {
     id: "architecture", name: "遗迹与双态出口",
     description: "破败态保留左侧落木。清场后出口木梁归位，符文亮起，竖向光幕照亮门前雪地。",
     media: [
-      { title: "第四版与第五版 · 双态出口", image: "media/v5-compare-architecture.webp", wide: true },
-      { title: "清场前 · 断梁与木门", image: "media/v5-dormant-gate.webp" },
-      { title: "清场后 · 冰蓝光幕", image: "media/v5-restored-gate.webp" },
-    ],
-  },
-  {
-    id: "flagstones", name: "石板、雪地与路沿",
-    description: "检查两区的积雪石板、墙脚和雪缘，以及前路到内门的连续铺地。",
-    media: [
-      { title: "第四版与第五版 · 中庭铺地", image: "media/v5-compare-flagstones.webp", wide: true },
-      { title: "前路至内门", image: "media/v5-entry-open.webp", wide: true },
-    ],
-  },
-  {
-    id: "fjord", name: "冷杉林、断崖与冰海",
-    description: "检查不同高度和积雪轮廓的冷杉、崖壁纹层及崖下浮冰，并沿全程巡检核对画面边界。",
-    media: [
-      { title: "第四版与第五版 · 出生点视野", image: "media/v5-compare-fjord.webp", wide: true },
-      { title: "出口后的雪崖", image: "media/v5-open-gate.webp", wide: true },
+      { title: "清场前 · 断梁与木门", image: "media/v8-dormant-gate.webp" },
+      { title: "清场后 · 冰蓝光幕", image: "media/v8-restored-gate.webp" },
+      { title: "出口后的雪崖", image: "media/v8-open-gate.webp", wide: true },
     ],
   },
   {
     id: "combat", name: "战斗可读性与遮挡",
-    description: "前路与中庭保留战斗空地。角色在被前景物件挡住时显示冷色剪影。",
+    description: "中庭中间保留大片空地。角色被长厅、冷杉、石碑或掩体挡住时显示冷色剪影。",
     media: [
-      { title: "第四版与第五版 · 门边出刀", image: "media/v5-compare-combat.webp", wide: true },
-      { title: "长厅木架后的剪影", image: "media/v5-longhouse-occlusion.webp" },
-      { title: "中庭命中反馈", image: "media/v5-strike.webp" },
+      { title: "中庭命中反馈", image: "media/v8-strike.webp" },
+      { title: "长厅木架后的剪影（轮次 07，扩建前）", image: "media/v5-longhouse-occlusion.webp" },
+      { title: "前路冷杉后的剪影（轮次 07）", image: "media/v5-approach-fir-occlusion.webp" },
     ],
   },
   {
     id: "concept", name: "选定目标图与实机",
-    description: "对照 A1、B1 和 C1 检查构图、颜色与笔触密度。A1 的战斗和光幕同框，实机在清场后点亮出口。",
+    description: "对照 A1、B1 和 C1 检查构图、颜色与笔触密度。",
     media: [
       { title: "A1 · 中庭", image: "media/v5-concept-court.webp", wide: true },
       { title: "B1 · 雪崖前路", image: "media/v5-concept-approach.webp", wide: true },
