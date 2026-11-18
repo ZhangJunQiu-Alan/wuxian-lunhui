@@ -1,0 +1,38 @@
+{
+  "id": "quality_supply_chest",
+  "name": "铁箍补给箱",
+  "category": "奖励",
+  "description": "有内部空间的木箱、拱形分板箱盖、铁带、铰链、锁孔与侧环。",
+  "rooms": "奖励房、营火房",
+  "status": "Godot 开盖动画、材质与锚点已验证；掉落交互待接",
+  "expected_clip": "open",
+  "blend": "assets/source/task3d_architecture_quality_2026-11-15/supply_chest.blend",
+  "glb": "assets/models/midgard/quality/supply_chest.glb",
+  "preview": "assets/source/task3d_architecture_quality_2026-11-15/previews/supply_chest.png",
+  "dimensions_blender_xyz": [
+    1.726,
+    1.088,
+    1.009
+  ],
+  "dimensions_pose_xyz": [
+    1.726,
+    1.088,
+    1.009
+  ],
+  "triangles": 10644,
+  "animations": [
+    "open"
+  ],
+  "exported_meshes": 7,
+  "sha256": "d042a61999e80ecbdfbe6d9ccc6805c843a53e5951fc4f93ac2ebc9278d04dfa",
+  "bytes": 27219728,
+  "review_frame": 1,
+  "verification": {
+    "godot_import": true,
+    "pbr_materials": true,
+    "anchors": true,
+    "animation_motion": "open",
+    "gameplay": false
+  },
+  "blend_sha256": "aace173fcf45326c91acffb06bea3ee3b85309b749907fb08822672f81e6af0e"
+}

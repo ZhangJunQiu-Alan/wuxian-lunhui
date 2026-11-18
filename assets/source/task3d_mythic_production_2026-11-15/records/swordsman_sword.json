@@ -1,0 +1,22 @@
+{
+  "id": "quality_swordsman_sword",
+  "name": "剑士·锻钢长剑",
+  "category": "武器",
+  "description": "独立武器零件，供角色装备与佩挂位置审核。",
+  "rooms": "剑士主武器",
+  "status": "武器首版待审核；装备逻辑待接",
+  "expected_clip": "static",
+  "animations": [],
+  "blend": "assets/source/task3d_mythic_production_2026-11-15/swordsman_sword.blend",
+  "glb": "assets/models/midgard/quality/swordsman_sword.glb",
+  "preview": "assets/source/task3d_mythic_production_2026-11-15/previews/swordsman_sword.png",
+  "dimensions_blender_xyz": [
+    0.328,
+    0.056,
+    1.131
+  ],
+  "triangles": 4864,
+  "exported_meshes": 3,
+  "sha256": "c2da0f703c1ef278c908f6ade14e2d1481d1ad5c04374c85117770b19296ca69",
+  "production_stage": "首版待审核"
+}

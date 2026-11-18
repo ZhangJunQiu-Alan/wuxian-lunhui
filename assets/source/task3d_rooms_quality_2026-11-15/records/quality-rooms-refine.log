@@ -1,0 +1,37 @@
+INFO Draco is available, use library at /Applications/Blender.app/Contents/Resources/lib/libbf_intern_draco_bridge.dylib
+INFO MeshOptimizer is available, use library at /Applications/Blender.app/Contents/Resources/lib/libbf_intern_meshopt_bridge.dylib
+17:38:12 | INFO: Starting glTF 2.0 export
+17:38:12 | INFO: Extracting primitive: Fine frost deposits.054
+17:38:12 | INFO: Primitives created: 1
+17:38:12 | INFO: Extracting primitive: Cube.016
+17:38:14 | INFO: Primitives created: 1
+17:38:14 | INFO: Finished glTF 2.0 export in 2.687469005584717 s
+/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/task3d_rooms_quality_2026-11-15/build_assets.py:379: DeprecationWarning: 'World.use_nodes' is expected to be removed in Blender 6.0
+  scene.world=bpy.data.worlds.new('Cold review environment'); scene.world.use_nodes=True
+
+Info: Saved as "snow_floor.blend"
+MODEL_SAVED snow_floor 12420
+00:56.586  render           | Saved: '/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/task3d_rooms_quality_2026-11-15/previews/snow_floor.png'
+MODEL_RENDERED snow_floor
+Warning: No mesh data to join
+17:39:03 | INFO: Starting glTF 2.0 export
+17:39:03 | INFO: Extracting primitive: Icosphere.026
+17:39:03 | INFO: Primitives created: 1
+17:39:03 | INFO: Extracting primitive: Icosphere.021
+17:39:03 | INFO: Primitives created: 1
+17:39:03 | INFO: Extracting primitive: Thick forged iron bowl.001
+17:39:04 | INFO: Primitives created: 1
+17:39:04 | INFO: Extracting primitive: Cube.015
+17:39:04 | INFO: Primitives created: 1
+17:39:04 | INFO: Extracting primitive: Torus.005
+17:39:04 | INFO: Primitives created: 1
+17:39:05 | INFO: Finished glTF 2.0 export in 1.8514549732208252 s
+
+Info: Saved as "brazier.blend"
+MODEL_SAVED brazier 15016
+01:30.959  render           | Saved: '/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/task3d_rooms_quality_2026-11-15/previews/brazier.png'
+MODEL_RENDERED brazier
+QUALITY_ROOM_ASSETS_DONE 7
+Blender 5.3.0 (hash 02f0899d78e3 built 2026-11-10 01:31:21)
+
+Blender quit

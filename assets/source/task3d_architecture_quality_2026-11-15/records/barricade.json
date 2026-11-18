@@ -1,0 +1,36 @@
+{
+  "id": "quality_barricade",
+  "name": "铁木战斗路障",
+  "category": "掩体",
+  "description": "交叉支脚、独立旧木横板、斜撑、铆接铁带与裂缝。",
+  "rooms": "小规模遭遇战掩体、侧路",
+  "status": "Godot 材质与锚点已验证；碰撞与玩法待接",
+  "expected_clip": "static",
+  "blend": "assets/source/task3d_architecture_quality_2026-11-15/barricade.blend",
+  "glb": "assets/models/midgard/quality/barricade.glb",
+  "preview": "assets/source/task3d_architecture_quality_2026-11-15/previews/barricade.png",
+  "dimensions_blender_xyz": [
+    2.639,
+    1.063,
+    1.666
+  ],
+  "dimensions_pose_xyz": [
+    2.639,
+    1.063,
+    1.666
+  ],
+  "triangles": 5180,
+  "animations": [],
+  "exported_meshes": 4,
+  "sha256": "8bf45cd7e460af966bef7eb033a8a0a52ed43852b0f6f09ea6e407fbb14ec250",
+  "bytes": 26805260,
+  "review_frame": 1,
+  "verification": {
+    "godot_import": true,
+    "pbr_materials": true,
+    "anchors": true,
+    "animation_motion": null,
+    "gameplay": false
+  },
+  "blend_sha256": "20242a4b436bf0068b2aba7ead7925d30e2e3e6c171442b57b4467e3c813968c"
+}

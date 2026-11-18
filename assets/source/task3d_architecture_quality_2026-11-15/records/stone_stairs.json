@@ -1,0 +1,36 @@
+{
+  "id": "quality_stone_stairs",
+  "name": "冻裂石阶",
+  "category": "建筑",
+  "description": "五级独立踏步、凸出踏面、分块阶身、侧墙和破损边角。",
+  "rooms": "入口、祭坛高台",
+  "status": "Godot 材质与锚点已验证；碰撞与玩法待接",
+  "expected_clip": "static",
+  "blend": "assets/source/task3d_architecture_quality_2026-11-15/stone_stairs.blend",
+  "glb": "assets/models/midgard/quality/stone_stairs.glb",
+  "preview": "assets/source/task3d_architecture_quality_2026-11-15/previews/stone_stairs.png",
+  "dimensions_blender_xyz": [
+    2.736,
+    2.039,
+    1.246
+  ],
+  "dimensions_pose_xyz": [
+    2.736,
+    2.039,
+    1.246
+  ],
+  "triangles": 5400,
+  "animations": [],
+  "exported_meshes": 1,
+  "sha256": "088a6eb500ac326924c3876baf57bcfcaf1f40b04d07c86e6a92cf2d47219843",
+  "bytes": 15248652,
+  "review_frame": 1,
+  "verification": {
+    "godot_import": true,
+    "pbr_materials": true,
+    "anchors": true,
+    "animation_motion": null,
+    "gameplay": false
+  },
+  "blend_sha256": "5205ee34d203e2cd7234369e91c53fa0a777f64741b132740777d4362b092181"
+}

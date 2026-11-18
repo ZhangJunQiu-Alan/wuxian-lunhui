@@ -1,0 +1,289 @@
+{
+  "batch": "task3d_rooms_quality_2026-11-15",
+  "stage": "models and animation review",
+  "models": [
+    {
+      "id": "quality_rune_gate",
+      "name": "精细废墟拱门",
+      "category": "出口",
+      "description": "逐块砌筑的破损石拱、厚木闸、锻铁门环、链条与铆钉。石材、老木和锈铁使用 Poly Haven 扫描 PBR 材质。",
+      "rooms": "战斗房出口、遗迹入口",
+      "status": "美术样板；Godot 材质与 open 动画已验证，碰撞与清场解锁待接",
+      "expected_clip": "open",
+      "blend": "assets/source/task3d_gate_quality_2026-11-15/rune_gate.blend",
+      "glb": "assets/models/midgard/quality/rune_gate.glb",
+      "preview": "assets/source/task3d_gate_quality_2026-11-15/previews/rune_gate.png",
+      "dimensions_blender_xyz": [
+        4.285,
+        1.259,
+        4.796
+      ],
+      "triangles": 23324,
+      "animations": [
+        "open"
+      ],
+      "sha256": "8d63717a54276175e41394a0a38dc6808379afd082fed6e4089e168d891b5ac8",
+      "exported_meshes": 10
+    },
+    {
+      "id": "quality_snow_floor",
+      "name": "冻裂石板地面",
+      "category": "场地",
+      "description": "3.2 米拼接地块，分块石板、错缝、破裂板角、薄霜与接缝碎屑。",
+      "rooms": "雪村、遗迹、石阵",
+      "status": "Godot 材质与锚点已验证；碰撞与玩法待接",
+      "expected_clip": "static",
+      "blend": "assets/source/task3d_rooms_quality_2026-11-15/snow_floor.blend",
+      "glb": "assets/models/midgard/quality/snow_floor.glb",
+      "preview": "assets/source/task3d_rooms_quality_2026-11-15/previews/snow_floor.png",
+      "dimensions_blender_xyz": [
+        3.189,
+        3.193,
+        0.443
+      ],
+      "dimensions_pose_xyz": [
+        3.189,
+        3.193,
+        0.443
+      ],
+      "triangles": 12420,
+      "animations": [],
+      "exported_meshes": 2,
+      "sha256": "46e925bf9a67341eb5779b17b9528805cfb819b93504734e099efa9419e4617f",
+      "bytes": 15675232,
+      "review_frame": 1,
+      "verification": {
+        "godot_import": true,
+        "pbr_materials": true,
+        "anchors": true,
+        "animation_motion": null,
+        "gameplay": false
+      },
+      "blend_sha256": "6632611d4a8289fde5c9a2def0a3012626f1c0340225563c7c830ad0d4f38064"
+    },
+    {
+      "id": "quality_void_causeway",
+      "name": "残破木石断桥",
+      "category": "虚空",
+      "description": "悬崖断面、独立横板、底部承重木梁、锻铁接头与断口碎石；两侧保留真实空洞。",
+      "rooms": "墓丘、支路、精英房",
+      "status": "Godot 材质与锚点已验证；碰撞与玩法待接",
+      "expected_clip": "static",
+      "blend": "assets/source/task3d_rooms_quality_2026-11-15/void_causeway.blend",
+      "glb": "assets/models/midgard/quality/void_causeway.glb",
+      "preview": "assets/source/task3d_rooms_quality_2026-11-15/previews/void_causeway.png",
+      "dimensions_blender_xyz": [
+        5.701,
+        3.219,
+        1.641
+      ],
+      "dimensions_pose_xyz": [
+        5.701,
+        3.219,
+        1.641
+      ],
+      "triangles": 14468,
+      "animations": [],
+      "exported_meshes": 5,
+      "sha256": "a93b5429f35e63dde74e1d926fed2c316322b9a216afd9b51bfb4a87fa6d4dc4",
+      "bytes": 42293164,
+      "review_frame": 1,
+      "verification": {
+        "godot_import": true,
+        "pbr_materials": true,
+        "anchors": true,
+        "animation_motion": null,
+        "gameplay": false
+      },
+      "blend_sha256": "0869d375ed5e53cebc0b4df3bb792458014e58da43a23e277f3bf8bd6abbecb4"
+    },
+    {
+      "id": "quality_spike_trap",
+      "name": "锻铁升降地刺",
+      "category": "陷阱",
+      "description": "九根带底座的棱锥尖刺、导向孔、铆接边框、可见升降架和传动支柱。",
+      "rooms": "战斗房通道",
+      "status": "Godot spike 动画、材质与锚点已验证；玩法待接",
+      "expected_clip": "spike",
+      "blend": "assets/source/task3d_rooms_quality_2026-11-15/spike_trap.blend",
+      "glb": "assets/models/midgard/quality/spike_trap.glb",
+      "preview": "assets/source/task3d_rooms_quality_2026-11-15/previews/spike_trap.png",
+      "dimensions_blender_xyz": [
+        2.314,
+        2.315,
+        1.38
+      ],
+      "dimensions_pose_xyz": [
+        2.314,
+        2.315,
+        1.52
+      ],
+      "triangles": 17460,
+      "animations": [
+        "spike"
+      ],
+      "exported_meshes": 6,
+      "sha256": "fb62815510211bd0abf7792b7a825102cecbc77c091c419359603777ca4fd709",
+      "bytes": 29616352,
+      "review_frame": 32,
+      "verification": {
+        "godot_import": true,
+        "pbr_materials": true,
+        "anchors": true,
+        "animation_motion": "spike",
+        "gameplay": false
+      },
+      "blend_sha256": "1d79c995fdbfa29fc8c48795c978f55545eb40487aa8ba99174954edadc83ae4"
+    },
+    {
+      "id": "quality_rune_trap",
+      "name": "破损符文祭盘",
+      "category": "陷阱",
+      "description": "分段砌筑的石环、下沉中心、锻铁辐条、凹槽与嵌入式余烬符文。",
+      "rooms": "墓丘、奥丁石阵",
+      "status": "Godot 材质与锚点已验证；碰撞与玩法待接",
+      "expected_clip": "static",
+      "blend": "assets/source/task3d_rooms_quality_2026-11-15/rune_trap.blend",
+      "glb": "assets/models/midgard/quality/rune_trap.glb",
+      "preview": "assets/source/task3d_rooms_quality_2026-11-15/previews/rune_trap.png",
+      "dimensions_blender_xyz": [
+        2.695,
+        2.699,
+        0.341
+      ],
+      "dimensions_pose_xyz": [
+        2.695,
+        2.699,
+        0.341
+      ],
+      "triangles": 9400,
+      "animations": [],
+      "exported_meshes": 4,
+      "sha256": "0031ab2fe7c52d9065634996891aee0b8ff0818b4ec2e0fc83128a34440c27ce",
+      "bytes": 29320540,
+      "review_frame": 1,
+      "verification": {
+        "godot_import": true,
+        "pbr_materials": true,
+        "anchors": true,
+        "animation_motion": null,
+        "gameplay": false
+      },
+      "blend_sha256": "ea56b291973a0a29b9e99c4e8293b81a4afda8c310b23105eb99121f10af03f1"
+    },
+    {
+      "id": "quality_pressure_plate",
+      "name": "配重压力踏板",
+      "category": "机关",
+      "description": "分体石板、金属边框、导向柱、弹簧与独立下压踏面。",
+      "rooms": "机关房、安全支路",
+      "status": "Godot press 动画、材质与锚点已验证；玩法待接",
+      "expected_clip": "press",
+      "blend": "assets/source/task3d_rooms_quality_2026-11-15/pressure_plate.blend",
+      "glb": "assets/models/midgard/quality/pressure_plate.glb",
+      "preview": "assets/source/task3d_rooms_quality_2026-11-15/previews/pressure_plate.png",
+      "dimensions_blender_xyz": [
+        1.672,
+        1.669,
+        0.654
+      ],
+      "dimensions_pose_xyz": [
+        1.672,
+        1.669,
+        0.654
+      ],
+      "triangles": 8152,
+      "animations": [
+        "press"
+      ],
+      "exported_meshes": 7,
+      "sha256": "d20fe8ab1b91760fc416900bdbfa292e0d38f485f61f7376092a9f1e503e4d94",
+      "bytes": 29036384,
+      "review_frame": 1,
+      "verification": {
+        "godot_import": true,
+        "pbr_materials": true,
+        "anchors": true,
+        "animation_motion": "press",
+        "gameplay": false
+      },
+      "blend_sha256": "9355df8cf2abb3da17deea15dbd081c5b0cce7aa34bf3f31082fbd95482d107c"
+    },
+    {
+      "id": "quality_lever",
+      "name": "棘轮锁链拉杆",
+      "category": "机关",
+      "description": "石基、棘轮齿盘、带包箍的木柄、横轴、支架与悬垂链条。",
+      "rooms": "机关房、出口侧道",
+      "status": "Godot activate 动画、材质与锚点已验证；玩法待接",
+      "expected_clip": "activate",
+      "blend": "assets/source/task3d_rooms_quality_2026-11-15/lever.blend",
+      "glb": "assets/models/midgard/quality/lever.glb",
+      "preview": "assets/source/task3d_rooms_quality_2026-11-15/previews/lever.png",
+      "dimensions_blender_xyz": [
+        1.058,
+        0.92,
+        1.815
+      ],
+      "dimensions_pose_xyz": [
+        1.058,
+        0.92,
+        1.815
+      ],
+      "triangles": 8484,
+      "animations": [
+        "activate"
+      ],
+      "exported_meshes": 5,
+      "sha256": "7ddc7376d08b9a2425ddbddfc04e1ad9be838d6364c052e467b643ec2c10b3e4",
+      "bytes": 41602168,
+      "review_frame": 1,
+      "verification": {
+        "godot_import": true,
+        "pbr_materials": true,
+        "anchors": true,
+        "animation_motion": "activate",
+        "gameplay": false
+      },
+      "blend_sha256": "f0c3dc54a4074f39fb060ae71767261284ac72f90647289243e5aeb1ad928faa"
+    },
+    {
+      "id": "quality_brazier",
+      "name": "铆接锻铁火盆",
+      "category": "道具",
+      "description": "有厚度的凹形铁盆、卷边盆口、支撑腿、侧环、铆钉和余烬炭块。",
+      "rooms": "出口、营火房、遗迹",
+      "status": "Godot 材质与锚点已验证；碰撞与玩法待接",
+      "expected_clip": "static",
+      "blend": "assets/source/task3d_rooms_quality_2026-11-15/brazier.blend",
+      "glb": "assets/models/midgard/quality/brazier.glb",
+      "preview": "assets/source/task3d_rooms_quality_2026-11-15/previews/brazier.png",
+      "dimensions_blender_xyz": [
+        1.328,
+        1.132,
+        1.078
+      ],
+      "dimensions_pose_xyz": [
+        1.328,
+        1.132,
+        1.078
+      ],
+      "triangles": 15016,
+      "animations": [],
+      "exported_meshes": 5,
+      "sha256": "1e3c9b4fd0ff24a0231cf18fa3f697102a95d494d99d36b21a0f6c21e16410b0",
+      "bytes": 29443820,
+      "review_frame": 1,
+      "verification": {
+        "godot_import": true,
+        "pbr_materials": true,
+        "anchors": true,
+        "animation_motion": null,
+        "gameplay": false
+      },
+      "blend_sha256": "84dfd0c378feedf5cc21177a671bd7c6d1da1c247cdf9f4fcbf2a416c71df2f6"
+    }
+  ],
+  "material_sources": "assets/source/task3d_gate_quality_2026-11-15/records/material-sources.json",
+  "gameplay_integrated": false
+}

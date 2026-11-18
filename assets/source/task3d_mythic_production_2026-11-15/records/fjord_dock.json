@@ -1,0 +1,30 @@
+{
+  "id": "quality_fjord_dock",
+  "name": "峡湾·木桩码头段",
+  "category": "主题场景",
+  "description": "3.2 米节距，独立甲板、深木桩、铁箍、底梁与斜撑。",
+  "rooms": "峡湾码头、岸边通路",
+  "status": "精细静态模型，碰撞与玩法待接",
+  "expected_clip": "static",
+  "blend": "assets/source/task3d_mythic_production_2026-11-15/fjord_dock.blend",
+  "glb": "assets/models/midgard/quality/fjord_dock.glb",
+  "preview": "assets/source/task3d_mythic_production_2026-11-15/previews/fjord_dock.png",
+  "dimensions_blender_xyz": [
+    2.984,
+    3.2,
+    1.98
+  ],
+  "dimensions_pose_xyz": [
+    2.984,
+    3.2,
+    1.98
+  ],
+  "triangles": 11868,
+  "animations": [],
+  "exported_meshes": 3,
+  "sha256": "b05d09558d1c92ecaf86c875c63036d1b20a1c26d670d61b654b25c7a841517b",
+  "bytes": 9446224,
+  "review_frame": 1,
+  "runtime_texture_limit": 1024,
+  "production_stage": "首版待审核"
+}

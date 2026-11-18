@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>芬布尔之冬 · 房间图鉴 | 诸界余烬</title>
+<meta name="description" content="审阅芬布尔之冬的房间概念图、遭遇设计与选门路线。">
+<link rel="stylesheet" href="style.css">
+<script defer src="rooms.js"></script>
+</head>
+<body>
+<header class="top"><a class="brand" href="#atlas">诸界余烬</a><nav aria-label="页面"><a href="#atlas">房间图鉴</a><a href="../芬布尔之冬模型清单/index.html">模型清单 ↗</a><a href="#route">路线预演 ↗</a></nav></header>
+<main>
+<section id="atlas" class="atlas" aria-labelledby="title">
+  <div class="heading"><div class="chapter"><span></span> 米德加尔特 · 第一关</div><h1 id="title">芬布尔之冬</h1><p>从十字路口出发，穿过雪村与峡湾，最终在冰湖迎战斯库尔。</p></div>
+  <div class="atlas-grid">
+    <aside aria-label="房间列表"><h2>房间图鉴 <span>07</span></h2><div id="rooms" class="rooms"></div></aside>
+    <article class="room" aria-labelledby="room-name">
+      <figure>
+        <button id="open-art" class="art" type="button" aria-label="查看房间概念图大图"><img id="room-art" src="images/village.webp" alt=""><span>放大概念图 ↗</span></button>
+        <figcaption>AI 概念图 · 用于房间设计评审</figcaption>
+      </figure>
+      <div class="room-heading"><p id="room-type" class="chapter"></p><h2 id="room-name"></h2><p id="room-description"></p></div>
+      <dl id="room-details" class="details"></dl>
+    </article>
+  </div>
+</section>
+<section id="route" class="route" aria-labelledby="route-title">
+  <div class="chapter"><span></span> 关卡流程</div><h2 id="route-title">路线预演</h2>
+  <p>每局共六个房间。十字路口开局，中段从房间池抽取四间，最后进入冰湖。清场后看门上的奖励，再决定下一站。</p>
+  <ol id="path" class="path" aria-label="本局进度"></ol>
+  <div class="route-body"><div><h3 id="route-room"></h3><p id="route-status" aria-live="polite"></p></div><div id="route-actions" class="route-actions"></div></div>
+  <button id="reset" class="text-button" type="button">重新抽取路线 ↻</button>
+</section>
+</main>
+<footer>诸界余烬 <span>芬布尔之冬 · 关卡概念评审</span></footer>
+<dialog id="art-dialog" aria-labelledby="art-caption"><form method="dialog"><button type="submit" aria-label="关闭大图">关闭 ✕</button></form><img id="full-art" alt=""><p id="art-caption"></p></dialog>
+</body>
+</html>

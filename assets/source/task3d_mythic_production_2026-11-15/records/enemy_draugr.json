@@ -1,0 +1,31 @@
+{
+  "id": "quality_enemy_draugr",
+  "name": "尸鬼·铁甲游荡者",
+  "category": "敌人",
+  "description": "残损头部、寒光眼、铁甲、短斧与破损披肩；5 个动作，重点审核轮廓与攻击辨识度。",
+  "rooms": "首关战斗场景",
+  "status": "角色与动作首版待审核；尚未接入试玩",
+  "expected_clip": "idle",
+  "animations": [
+    "attack",
+    "death",
+    "hit",
+    "idle",
+    "run"
+  ],
+  "blend": "assets/source/task3d_mythic_production_2026-11-15/enemy_draugr.blend",
+  "glb": "assets/models/midgard/quality/enemy_draugr.glb",
+  "preview": "assets/source/task3d_mythic_production_2026-11-15/previews/enemy_draugr.png",
+  "dimensions_blender_xyz": [
+    1.098,
+    0.532,
+    1.807
+  ],
+  "triangles": 35322,
+  "exported_meshes": 1,
+  "skins": 1,
+  "bones": 20,
+  "sha256": "8ac116398e4e342d9f1602a8314f3a33ed6a1e8ca8da1a088afe185c8b41db17",
+  "production_stage": "首版待审核",
+  "runtime_texture_limit": 1024
+}

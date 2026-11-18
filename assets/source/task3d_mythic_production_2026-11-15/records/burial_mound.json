@@ -1,0 +1,30 @@
+{
+  "id": "quality_burial_mound",
+  "name": "古墓·石垒墓丘",
+  "category": "主题场景",
+  "description": "低矮墓丘、环绕垒石、厚盖石、墓碑和积雪。",
+  "rooms": "古老墓丘、精英遭遇",
+  "status": "精细静态模型，碰撞与玩法待接",
+  "expected_clip": "static",
+  "blend": "assets/source/task3d_mythic_production_2026-11-15/burial_mound.blend",
+  "glb": "assets/models/midgard/quality/burial_mound.glb",
+  "preview": "assets/source/task3d_mythic_production_2026-11-15/previews/burial_mound.png",
+  "dimensions_blender_xyz": [
+    3.343,
+    2.542,
+    1.652
+  ],
+  "dimensions_pose_xyz": [
+    3.343,
+    2.542,
+    1.652
+  ],
+  "triangles": 15700,
+  "animations": [],
+  "exported_meshes": 3,
+  "sha256": "e76f1a58dffa70448f66bf3ac217fece1f0a6d0a6e74717d1bd987750bc7fb1f",
+  "bytes": 10280512,
+  "review_frame": 1,
+  "runtime_texture_limit": 1024,
+  "production_stage": "首版待审核"
+}

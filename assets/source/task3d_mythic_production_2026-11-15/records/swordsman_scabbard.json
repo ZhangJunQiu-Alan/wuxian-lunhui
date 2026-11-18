@@ -1,0 +1,22 @@
+{
+  "id": "quality_swordsman_scabbard",
+  "name": "剑士·佩挂刀鞘",
+  "category": "武器",
+  "description": "独立武器零件，供角色装备与佩挂位置审核。",
+  "rooms": "剑士主武器",
+  "status": "武器首版待审核；装备逻辑待接",
+  "expected_clip": "static",
+  "animations": [],
+  "blend": "assets/source/task3d_mythic_production_2026-11-15/swordsman_scabbard.blend",
+  "glb": "assets/models/midgard/quality/swordsman_scabbard.glb",
+  "preview": "assets/source/task3d_mythic_production_2026-11-15/previews/swordsman_scabbard.png",
+  "dimensions_blender_xyz": [
+    0.152,
+    0.098,
+    0.931
+  ],
+  "triangles": 1500,
+  "exported_meshes": 3,
+  "sha256": "5a6149197d09ef3067ce322614c2b6fe83bba22314f3462df6720d07e64d92ed",
+  "production_stage": "首版待审核"
+}

@@ -1,0 +1,31 @@
+{
+  "id": "quality_enemy_ice_spirit",
+  "name": "冰霜精魂·缚寒者",
+  "category": "敌人",
+  "description": "折褶罩袍、破损衣摆、空面兜帽、寒光碎片与爪手；5 个动作，重点审核漂浮感和施法姿态。",
+  "rooms": "首关战斗场景",
+  "status": "角色与动作首版待审核；尚未接入试玩",
+  "expected_clip": "idle",
+  "animations": [
+    "cast",
+    "death",
+    "float",
+    "hit",
+    "idle"
+  ],
+  "blend": "assets/source/task3d_mythic_production_2026-11-15/enemy_ice_spirit.blend",
+  "glb": "assets/models/midgard/quality/enemy_ice_spirit.glb",
+  "preview": "assets/source/task3d_mythic_production_2026-11-15/previews/enemy_ice_spirit.png",
+  "dimensions_blender_xyz": [
+    1.11,
+    0.607,
+    1.563
+  ],
+  "triangles": 21632,
+  "exported_meshes": 1,
+  "skins": 1,
+  "bones": 13,
+  "sha256": "f0d080597019f1e7123ec2f6204d2b6adfeccd60c7f969b10627ab308bd50d76",
+  "production_stage": "首版待审核",
+  "runtime_texture_limit": 1024
+}

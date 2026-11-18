@@ -1,0 +1,33 @@
+{
+  "id": "quality_hero_swordsman",
+  "name": "剑士·暗红披肩",
+  "category": "主角",
+  "description": "深色曲面胸甲、链甲领口、暗红披肩、独立手指与刀鞘佩挂；20 骨骼、7 个动作，重点审核比例和挥剑姿态。",
+  "rooms": "首关战斗场景",
+  "status": "角色与动作首版待审核；尚未接入试玩",
+  "expected_clip": "idle",
+  "animations": [
+    "attack_1",
+    "attack_2",
+    "death",
+    "dodge",
+    "hit",
+    "idle",
+    "run"
+  ],
+  "blend": "assets/source/task3d_mythic_production_2026-11-15/hero_swordsman.blend",
+  "glb": "assets/models/midgard/quality/hero_swordsman.glb",
+  "preview": "assets/source/task3d_mythic_production_2026-11-15/previews/hero_swordsman.png",
+  "dimensions_blender_xyz": [
+    1.016,
+    1.069,
+    1.859
+  ],
+  "triangles": 49268,
+  "exported_meshes": 1,
+  "skins": 1,
+  "bones": 20,
+  "sha256": "b1b382a6ad51021261cad6b57713b97c564e7a29bceb00a6b1dd9b730e1b5f47",
+  "production_stage": "首版待审核",
+  "runtime_texture_limit": 1024
+}

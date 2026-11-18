@@ -1,0 +1,33 @@
+{
+  "id": "quality_boss_skoll",
+  "name": "斯库尔·蚀日巨狼",
+  "category": "Boss",
+  "description": "蚀日巨狼首版，强化胸肩、暗色毛皮、鬃毛与符文颈箍；7 个动作，重点审核 Boss 轮廓、冲锋和咆哮。",
+  "rooms": "首关战斗场景",
+  "status": "角色与动作首版待审核；尚未接入试玩",
+  "expected_clip": "idle",
+  "animations": [
+    "bite",
+    "charge",
+    "death",
+    "hit",
+    "howl",
+    "idle",
+    "run"
+  ],
+  "blend": "assets/source/task3d_mythic_production_2026-11-15/boss_skoll.blend",
+  "glb": "assets/models/midgard/quality/boss_skoll.glb",
+  "preview": "assets/source/task3d_mythic_production_2026-11-15/previews/boss_skoll.png",
+  "dimensions_blender_xyz": [
+    1.034,
+    3.651,
+    2.122
+  ],
+  "triangles": 47714,
+  "exported_meshes": 1,
+  "skins": 1,
+  "bones": 20,
+  "sha256": "820e2defb0867b38b7a8491470190ebb8ff5dec5efb5a4d6cf4255993c485e87",
+  "production_stage": "首版待审核",
+  "runtime_texture_limit": 1024
+}

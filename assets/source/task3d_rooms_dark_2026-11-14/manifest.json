@@ -1,0 +1,170 @@
+[
+  {
+    "id": "snow_floor",
+    "name": "积雪石板地面",
+    "category": "场地",
+    "description": "可拼接的冻土与积雪地块，边缘石材用于区分通路。",
+    "rooms": "雪村、墓丘、石阵",
+    "status": "静态模型",
+    "expected_clip": "static",
+    "blend": "assets/source/task3d_rooms_dark_2026-11-14/snow_floor.blend",
+    "glb": "assets/models/midgard/rooms_dark/snow_floor.glb",
+    "preview": "assets/source/task3d_rooms_dark_2026-11-14/previews/snow_floor.png",
+    "dimensions_blender_xyz": [
+      3.0,
+      3.0,
+      0.447
+    ],
+    "triangles": 3265,
+    "animations": [],
+    "sha256": "5b33008e034779efc50194ae383aa8c9a9e9eb0eefc394df5df988d894eace05"
+  },
+  {
+    "id": "void_causeway",
+    "name": "虚空断台与石桥",
+    "category": "虚空",
+    "description": "两侧断台围出真实空洞，中间保留一条窄桥。用于限制横向走位。",
+    "rooms": "墓丘、精英房",
+    "status": "需要接入边界碰撞与坠落判定",
+    "expected_clip": "static",
+    "blend": "assets/source/task3d_rooms_dark_2026-11-14/void_causeway.blend",
+    "glb": "assets/models/midgard/rooms_dark/void_causeway.glb",
+    "preview": "assets/source/task3d_rooms_dark_2026-11-14/previews/void_causeway.png",
+    "dimensions_blender_xyz": [
+      4.806,
+      3.305,
+      1.082
+    ],
+    "triangles": 6588,
+    "animations": [],
+    "sha256": "948dea01768ded755f33409c1a1ffcf869fddeea720bdf3a8d78eb60fb988eb9"
+  },
+  {
+    "id": "spike_trap",
+    "name": "伸缩地刺",
+    "category": "陷阱",
+    "description": "金属基座与九根可伸缩尖刺。预警后升起，再回落。",
+    "rooms": "雪村侧巷、码头",
+    "status": "已导出伸缩动画，Godot 动画名 spike；伤害与预警待接",
+    "expected_clip": "spike_cycle",
+    "blend": "assets/source/task3d_rooms_dark_2026-11-14/spike_trap.blend",
+    "glb": "assets/models/midgard/rooms_dark/spike_trap.glb",
+    "preview": "assets/source/task3d_rooms_dark_2026-11-14/previews/spike_trap.png",
+    "dimensions_blender_xyz": [
+      1.62,
+      1.62,
+      0.94
+    ],
+    "triangles": 2648,
+    "animations": [
+      "spike_cycle"
+    ],
+    "sha256": "484dfca30b8f235592eed43fe1b62e55804a1cd33aef4ee15add9064e68b0890"
+  },
+  {
+    "id": "rune_trap",
+    "name": "符文喷发陷阱",
+    "category": "陷阱",
+    "description": "凹陷的法阵槽和环绕的立石，中央发光用于提示即将喷发。",
+    "rooms": "墓丘、奥丁石阵",
+    "status": "发光材质已导出，技能与范围预警待接",
+    "expected_clip": "static",
+    "blend": "assets/source/task3d_rooms_dark_2026-11-14/rune_trap.blend",
+    "glb": "assets/models/midgard/rooms_dark/rune_trap.glb",
+    "preview": "assets/source/task3d_rooms_dark_2026-11-14/previews/rune_trap.png",
+    "dimensions_blender_xyz": [
+      1.88,
+      1.88,
+      0.619
+    ],
+    "triangles": 2428,
+    "animations": [],
+    "sha256": "b1d01a029a76b3bfcb92f4628ca1e605c1dadd4c8ded3ff9f77fc0b7750f45d2"
+  },
+  {
+    "id": "pressure_plate",
+    "name": "石质压力踏板",
+    "category": "机关",
+    "description": "可下压的独立踏板与外圈框架，作为门或陷阱的触发器。",
+    "rooms": "普通房、机关房",
+    "status": "已导出 press 动画，触发与联动待接",
+    "expected_clip": "press",
+    "blend": "assets/source/task3d_rooms_dark_2026-11-14/pressure_plate.blend",
+    "glb": "assets/models/midgard/rooms_dark/pressure_plate.glb",
+    "preview": "assets/source/task3d_rooms_dark_2026-11-14/previews/pressure_plate.png",
+    "dimensions_blender_xyz": [
+      1.36,
+      1.36,
+      0.419
+    ],
+    "triangles": 540,
+    "animations": [
+      "press"
+    ],
+    "sha256": "520300848d4386a269c58fd3a9a2c64cb2d4bb71d39a43df7924ee3d4e0ef22a"
+  },
+  {
+    "id": "rune_gate",
+    "name": "升降符文门",
+    "category": "出口",
+    "description": "雕纹石柱支撑带铆钉的木闸，顶部徽记可对应出口奖励。",
+    "rooms": "战斗房出口",
+    "status": "已导出 open 动画，清场解锁与奖励门标待接",
+    "expected_clip": "open",
+    "blend": "assets/source/task3d_rooms_dark_2026-11-14/rune_gate.blend",
+    "glb": "assets/models/midgard/rooms_dark/rune_gate.glb",
+    "preview": "assets/source/task3d_rooms_dark_2026-11-14/previews/rune_gate.png",
+    "dimensions_blender_xyz": [
+      2.87,
+      0.727,
+      2.48
+    ],
+    "triangles": 5392,
+    "animations": [
+      "open"
+    ],
+    "sha256": "614500114864c08746c33cc8a1e731acd9444e259d27bdb26cbd6afeb3865bf4"
+  },
+  {
+    "id": "lever",
+    "name": "铁木拉杆",
+    "category": "机关",
+    "description": "石基上的可转动手柄，保留独立枢轴用于控制门或陷阱。",
+    "rooms": "安全侧道、支路",
+    "status": "已导出 activate 动画，交互逻辑待接",
+    "expected_clip": "activate",
+    "blend": "assets/source/task3d_rooms_dark_2026-11-14/lever.blend",
+    "glb": "assets/models/midgard/rooms_dark/lever.glb",
+    "preview": "assets/source/task3d_rooms_dark_2026-11-14/previews/lever.png",
+    "dimensions_blender_xyz": [
+      0.72,
+      0.769,
+      1.1
+    ],
+    "triangles": 820,
+    "animations": [
+      "activate"
+    ],
+    "sha256": "4568bdf86234b959990aa7f1a08046ce20d3da8bee2822759569bbddd2923e70"
+  },
+  {
+    "id": "brazier",
+    "name": "北欧铁制火盆",
+    "category": "道具",
+    "description": "带支脚、铆钉与燃炭的火盆，标记出口和安全区域。",
+    "rooms": "雪村、营火房",
+    "status": "火光为静态发光几何，粒子与实时灯光待接",
+    "expected_clip": "static",
+    "blend": "assets/source/task3d_rooms_dark_2026-11-14/brazier.blend",
+    "glb": "assets/models/midgard/rooms_dark/brazier.glb",
+    "preview": "assets/source/task3d_rooms_dark_2026-11-14/previews/brazier.png",
+    "dimensions_blender_xyz": [
+      0.74,
+      0.74,
+      1.029
+    ],
+    "triangles": 1792,
+    "animations": [],
+    "sha256": "72a979a25ecf9ed611e9979048eecc32731e5db7d8ecbc8a82258ce41c7d2689"
+  }
+]

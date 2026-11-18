@@ -1,0 +1,30 @@
+{
+  "id": "quality_bifrost_pillar",
+  "name": "彩虹桥·守望门柱",
+  "category": "神话建筑",
+  "description": "层叠石柱、嵌入符号、尖拱金属冠与信标底座。",
+  "rooms": "桥头、出口标记",
+  "status": "精细静态模型，碰撞与玩法待接",
+  "expected_clip": "static",
+  "blend": "assets/source/task3d_mythic_production_2026-11-15/bifrost_pillar.blend",
+  "glb": "assets/models/midgard/quality/bifrost_pillar.glb",
+  "preview": "assets/source/task3d_mythic_production_2026-11-15/previews/bifrost_pillar.png",
+  "dimensions_blender_xyz": [
+    1.325,
+    1.154,
+    3.892
+  ],
+  "dimensions_pose_xyz": [
+    1.325,
+    1.154,
+    3.892
+  ],
+  "triangles": 2864,
+  "animations": [],
+  "exported_meshes": 3,
+  "sha256": "750aa456b7a5a56e422666dc5dff771a82943a1eeee28bf4f497725b20a03d75",
+  "bytes": 9912936,
+  "review_frame": 1,
+  "runtime_texture_limit": 1024,
+  "production_stage": "首版待审核"
+}

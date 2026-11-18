@@ -1,0 +1,36 @@
+{
+  "id": "quality_runestone",
+  "name": "刻槽符文立碑",
+  "category": "地标",
+  "description": "不规则断面石碑、真实刻槽、深嵌符文、碎石和薄霜。",
+  "rooms": "祝福房、房间目标",
+  "status": "Godot 材质与锚点已验证；碰撞与玩法待接",
+  "expected_clip": "static",
+  "blend": "assets/source/task3d_architecture_quality_2026-11-15/runestone.blend",
+  "glb": "assets/models/midgard/quality/runestone.glb",
+  "preview": "assets/source/task3d_architecture_quality_2026-11-15/previews/runestone.png",
+  "dimensions_blender_xyz": [
+    1.51,
+    0.929,
+    2.873
+  ],
+  "dimensions_pose_xyz": [
+    1.51,
+    0.929,
+    2.873
+  ],
+  "triangles": 5622,
+  "animations": [],
+  "exported_meshes": 4,
+  "sha256": "64abf9d15addb46f70a6afea5b8f126bd5e8e3d06519a1c18bc9260cb919ed0b",
+  "bytes": 28991548,
+  "review_frame": 1,
+  "verification": {
+    "godot_import": true,
+    "pbr_materials": true,
+    "anchors": true,
+    "animation_motion": null,
+    "gameplay": false
+  },
+  "blend_sha256": "1d39d14fd70a1f8261ff7227723194ad6b2fb8c487352feb8c572e9da4c1e5e7"
+}

@@ -1,0 +1,43 @@
+INFO Draco is available, use library at /Applications/Blender.app/Contents/Resources/lib/libbf_intern_draco_bridge.dylib
+INFO MeshOptimizer is available, use library at /Applications/Blender.app/Contents/Resources/lib/libbf_intern_meshopt_bridge.dylib
+17:40:16 | INFO: Starting glTF 2.0 export
+17:40:16 | INFO: Extracting primitive: Cube.129
+17:40:18 | INFO: Primitives created: 1
+17:40:18 | INFO: Extracting primitive: Timber split.003
+17:40:18 | INFO: Primitives created: 1
+17:40:18 | INFO: Extracting primitive: Cube.150
+17:40:20 | INFO: Primitives created: 1
+17:40:20 | INFO: Extracting primitive: Fractured cliff bank.002
+17:40:22 | INFO: Primitives created: 1
+17:40:22 | INFO: Extracting primitive: Cylinder.034
+17:40:22 | INFO: Primitives created: 1
+17:40:22 | INFO: Finished glTF 2.0 export in 5.499674081802368 s
+/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/task3d_rooms_quality_2026-11-15/build_assets.py:391: DeprecationWarning: 'World.use_nodes' is expected to be removed in Blender 6.0
+  scene.world=bpy.data.worlds.new('Cold review environment'); scene.world.use_nodes=True
+
+Info: Saved as "void_causeway.blend"
+MODEL_SAVED void_causeway 14468
+00:57.830  render           | Saved: '/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/task3d_rooms_quality_2026-11-15/previews/void_causeway.png'
+MODEL_RENDERED void_causeway
+Warning: No mesh data to join
+17:41:10 | INFO: Starting glTF 2.0 export
+17:41:10 | INFO: Extracting primitive: Cube.014
+17:41:11 | INFO: Primitives created: 1
+17:41:11 | INFO: Extracting primitive: Cube.015
+17:41:12 | INFO: Primitives created: 1
+17:41:12 | INFO: Extracting primitive: Cube.010
+17:41:12 | INFO: Primitives created: 1
+17:41:12 | INFO: Extracting primitive: Cube.009
+17:41:13 | INFO: Primitives created: 1
+17:41:13 | INFO: Extracting primitive: Cylinder.016
+17:41:13 | INFO: Primitives created: 1
+17:41:13 | INFO: Finished glTF 2.0 export in 2.725245952606201 s
+
+Info: Saved as "lever.blend"
+MODEL_SAVED lever 8484
+01:52.881  render           | Saved: '/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/task3d_rooms_quality_2026-11-15/previews/lever.png'
+MODEL_RENDERED lever
+QUALITY_ROOM_ASSETS_DONE 7
+Blender 5.3.0 (hash 02f0899d78e3 built 2026-11-10 01:31:21)
+
+Blender quit

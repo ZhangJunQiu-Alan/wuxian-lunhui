@@ -1,0 +1,30 @@
+{
+  "id": "quality_hel_gate",
+  "name": "赫尔·冥界界门",
+  "category": "神话建筑",
+  "description": "倾收石柱、折线拱顶、悬链、铁封印与冷色符文。",
+  "rooms": "章节边界、精英房",
+  "status": "精细静态模型，碰撞与玩法待接",
+  "expected_clip": "static",
+  "blend": "assets/source/task3d_mythic_production_2026-11-15/hel_gate.blend",
+  "glb": "assets/models/midgard/quality/hel_gate.glb",
+  "preview": "assets/source/task3d_mythic_production_2026-11-15/previews/hel_gate.png",
+  "dimensions_blender_xyz": [
+    3.701,
+    0.998,
+    3.978
+  ],
+  "dimensions_pose_xyz": [
+    3.701,
+    0.998,
+    3.978
+  ],
+  "triangles": 9356,
+  "animations": [],
+  "exported_meshes": 4,
+  "sha256": "f5f8acf987be4b117aa218b901d1b3fe99fd2a38d97ffd03b2f49caf98ee4fba",
+  "bytes": 10150904,
+  "review_frame": 1,
+  "runtime_texture_limit": 1024,
+  "production_stage": "首版待审核"
+}

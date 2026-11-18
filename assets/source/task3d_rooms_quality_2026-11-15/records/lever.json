@@ -1,0 +1,38 @@
+{
+  "id": "quality_lever",
+  "name": "棘轮锁链拉杆",
+  "category": "机关",
+  "description": "石基、棘轮齿盘、带包箍的木柄、横轴、支架与悬垂链条。",
+  "rooms": "机关房、出口侧道",
+  "status": "Godot activate 动画、材质与锚点已验证；玩法待接",
+  "expected_clip": "activate",
+  "blend": "assets/source/task3d_rooms_quality_2026-11-15/lever.blend",
+  "glb": "assets/models/midgard/quality/lever.glb",
+  "preview": "assets/source/task3d_rooms_quality_2026-11-15/previews/lever.png",
+  "dimensions_blender_xyz": [
+    1.058,
+    0.92,
+    1.815
+  ],
+  "dimensions_pose_xyz": [
+    1.058,
+    0.92,
+    1.815
+  ],
+  "triangles": 8484,
+  "animations": [
+    "activate"
+  ],
+  "exported_meshes": 5,
+  "sha256": "7ddc7376d08b9a2425ddbddfc04e1ad9be838d6364c052e467b643ec2c10b3e4",
+  "bytes": 41602168,
+  "review_frame": 1,
+  "verification": {
+    "godot_import": true,
+    "pbr_materials": true,
+    "anchors": true,
+    "animation_motion": "activate",
+    "gameplay": false
+  },
+  "blend_sha256": "f0c3dc54a4074f39fb060ae71767261284ac72f90647289243e5aeb1ad928faa"
+}

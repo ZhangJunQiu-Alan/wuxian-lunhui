@@ -1,0 +1,36 @@
+{
+  "id": "quality_snow_floor",
+  "name": "冻裂石板地面",
+  "category": "场地",
+  "description": "3.2 米拼接地块，分块石板、错缝、破裂板角、薄霜与接缝碎屑。",
+  "rooms": "雪村、遗迹、石阵",
+  "status": "Godot 材质与锚点已验证；碰撞与玩法待接",
+  "expected_clip": "static",
+  "blend": "assets/source/task3d_rooms_quality_2026-11-15/snow_floor.blend",
+  "glb": "assets/models/midgard/quality/snow_floor.glb",
+  "preview": "assets/source/task3d_rooms_quality_2026-11-15/previews/snow_floor.png",
+  "dimensions_blender_xyz": [
+    3.189,
+    3.193,
+    0.443
+  ],
+  "dimensions_pose_xyz": [
+    3.189,
+    3.193,
+    0.443
+  ],
+  "triangles": 12420,
+  "animations": [],
+  "exported_meshes": 2,
+  "sha256": "46e925bf9a67341eb5779b17b9528805cfb819b93504734e099efa9419e4617f",
+  "bytes": 15675232,
+  "review_frame": 1,
+  "verification": {
+    "godot_import": true,
+    "pbr_materials": true,
+    "anchors": true,
+    "animation_motion": null,
+    "gameplay": false
+  },
+  "blend_sha256": "6632611d4a8289fde5c9a2def0a3012626f1c0340225563c7c830ad0d4f38064"
+}

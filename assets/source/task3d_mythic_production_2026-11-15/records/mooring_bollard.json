@@ -1,0 +1,30 @@
+{
+  "id": "quality_mooring_bollard",
+  "name": "峡湾·缆绳系船桩",
+  "category": "场景设施",
+  "description": "木桩、横向系船销、金属包箍与连续盘绕缆绳。",
+  "rooms": "码头侧缘、营地",
+  "status": "精细静态模型，碰撞与玩法待接",
+  "expected_clip": "static",
+  "blend": "assets/source/task3d_mythic_production_2026-11-15/mooring_bollard.blend",
+  "glb": "assets/models/midgard/quality/mooring_bollard.glb",
+  "preview": "assets/source/task3d_mythic_production_2026-11-15/previews/mooring_bollard.png",
+  "dimensions_blender_xyz": [
+    1.101,
+    0.828,
+    0.97
+  ],
+  "dimensions_pose_xyz": [
+    1.101,
+    0.828,
+    0.97
+  ],
+  "triangles": 11604,
+  "animations": [],
+  "exported_meshes": 4,
+  "sha256": "87d7db3b63789cc7d3b65abd7f06f008caa7baeb5afb4a6c962ae6359933a5ed",
+  "bytes": 14335100,
+  "review_frame": 1,
+  "runtime_texture_limit": 1024,
+  "production_stage": "首版待审核"
+}

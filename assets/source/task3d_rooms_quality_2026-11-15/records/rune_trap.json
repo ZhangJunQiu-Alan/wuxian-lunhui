@@ -1,0 +1,36 @@
+{
+  "id": "quality_rune_trap",
+  "name": "破损符文祭盘",
+  "category": "陷阱",
+  "description": "分段砌筑的石环、下沉中心、锻铁辐条、凹槽与嵌入式余烬符文。",
+  "rooms": "墓丘、奥丁石阵",
+  "status": "Godot 材质与锚点已验证；碰撞与玩法待接",
+  "expected_clip": "static",
+  "blend": "assets/source/task3d_rooms_quality_2026-11-15/rune_trap.blend",
+  "glb": "assets/models/midgard/quality/rune_trap.glb",
+  "preview": "assets/source/task3d_rooms_quality_2026-11-15/previews/rune_trap.png",
+  "dimensions_blender_xyz": [
+    2.695,
+    2.699,
+    0.341
+  ],
+  "dimensions_pose_xyz": [
+    2.695,
+    2.699,
+    0.341
+  ],
+  "triangles": 9400,
+  "animations": [],
+  "exported_meshes": 4,
+  "sha256": "0031ab2fe7c52d9065634996891aee0b8ff0818b4ec2e0fc83128a34440c27ce",
+  "bytes": 29320540,
+  "review_frame": 1,
+  "verification": {
+    "godot_import": true,
+    "pbr_materials": true,
+    "anchors": true,
+    "animation_motion": null,
+    "gameplay": false
+  },
+  "blend_sha256": "ea56b291973a0a29b9e99c4e8293b81a4afda8c310b23105eb99121f10af03f1"
+}

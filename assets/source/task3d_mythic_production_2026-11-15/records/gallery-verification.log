@@ -1,0 +1,9 @@
+00:01.256  blend            | Read blend: "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/task3d_mythic_production_2026-11-15/room_assembly.blend"
+/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/task3d_mythic_production_2026-11-15/records/verify_galleries.py:11: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  images={node.image for o in meshes for mat in o.data.materials if mat and mat.use_nodes for node in mat.node_tree.nodes if node.type=='TEX_IMAGE' and node.image}
+00:01.527  blend            | Read blend: "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/task3d_mythic_production_2026-11-15/actors_assembly.blend"
+00:01.838  blend            | Read blend: "/Users/zhangjunqiu/Desktop/无限恐怖/assets/source/task3d_mythic_production_2026-11-15/environment_assembly.blend"
+GALLERIES_VERIFIED 3
+Blender 5.3.0 (hash 02f0899d78e3 built 2026-11-10 01:31:21)
+
+Blender quit

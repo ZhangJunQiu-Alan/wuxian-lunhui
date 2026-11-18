@@ -1,0 +1,38 @@
+{
+  "id": "quality_pressure_plate",
+  "name": "配重压力踏板",
+  "category": "机关",
+  "description": "分体石板、金属边框、导向柱、弹簧与独立下压踏面。",
+  "rooms": "机关房、安全支路",
+  "status": "Godot press 动画、材质与锚点已验证；玩法待接",
+  "expected_clip": "press",
+  "blend": "assets/source/task3d_rooms_quality_2026-11-15/pressure_plate.blend",
+  "glb": "assets/models/midgard/quality/pressure_plate.glb",
+  "preview": "assets/source/task3d_rooms_quality_2026-11-15/previews/pressure_plate.png",
+  "dimensions_blender_xyz": [
+    1.672,
+    1.669,
+    0.654
+  ],
+  "dimensions_pose_xyz": [
+    1.672,
+    1.669,
+    0.654
+  ],
+  "triangles": 8152,
+  "animations": [
+    "press"
+  ],
+  "exported_meshes": 7,
+  "sha256": "d20fe8ab1b91760fc416900bdbfa292e0d38f485f61f7376092a9f1e503e4d94",
+  "bytes": 29036384,
+  "review_frame": 1,
+  "verification": {
+    "godot_import": true,
+    "pbr_materials": true,
+    "anchors": true,
+    "animation_motion": "press",
+    "gameplay": false
+  },
+  "blend_sha256": "9355df8cf2abb3da17deea15dbd081c5b0cce7aa34bf3f31082fbd95482d107c"
+}

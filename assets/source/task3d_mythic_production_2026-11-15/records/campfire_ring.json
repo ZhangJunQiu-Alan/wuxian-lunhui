@@ -1,0 +1,30 @@
+{
+  "id": "quality_campfire_ring",
+  "name": "旅人·石圈营火",
+  "category": "场景设施",
+  "description": "不规则石圈、灰床、交错木柴和静态余烬。",
+  "rooms": "安全补给房、旅人营火",
+  "status": "精细静态模型，碰撞与玩法待接",
+  "expected_clip": "static",
+  "blend": "assets/source/task3d_mythic_production_2026-11-15/campfire_ring.blend",
+  "glb": "assets/models/midgard/quality/campfire_ring.glb",
+  "preview": "assets/source/task3d_mythic_production_2026-11-15/previews/campfire_ring.png",
+  "dimensions_blender_xyz": [
+    1.761,
+    1.58,
+    0.307
+  ],
+  "dimensions_pose_xyz": [
+    1.761,
+    1.58,
+    0.307
+  ],
+  "triangles": 11588,
+  "animations": [],
+  "exported_meshes": 4,
+  "sha256": "516bbb24c0c42d63103616664c5dc1ea82658508aa4abcf2a9f2e921463f2cf4",
+  "bytes": 9887268,
+  "review_frame": 1,
+  "runtime_texture_limit": 1024,
+  "production_stage": "首版待审核"
+}

@@ -1,0 +1,30 @@
+{
+  "id": "quality_snow_rocks",
+  "name": "寒原·积雪岩群",
+  "category": "自然环境",
+  "description": "不规则岩体、风化石面、碎石与局部旧雪，可组成边界或掩体。",
+  "rooms": "雪村、墓丘、冰湖边缘",
+  "status": "精细静态模型，碰撞与玩法待接",
+  "expected_clip": "static",
+  "blend": "assets/source/task3d_mythic_production_2026-11-15/snow_rocks.blend",
+  "glb": "assets/models/midgard/quality/snow_rocks.glb",
+  "preview": "assets/source/task3d_mythic_production_2026-11-15/previews/snow_rocks.png",
+  "dimensions_blender_xyz": [
+    3.35,
+    2.175,
+    2.204
+  ],
+  "dimensions_pose_xyz": [
+    3.35,
+    2.175,
+    2.204
+  ],
+  "triangles": 3780,
+  "animations": [],
+  "exported_meshes": 2,
+  "sha256": "792f98136f0bff89496cdf5d12204c54b361fba83ced5ec3e3a6e36d9e258b2a",
+  "bytes": 5405336,
+  "review_frame": 1,
+  "runtime_texture_limit": 1024,
+  "production_stage": "首版待审核"
+}

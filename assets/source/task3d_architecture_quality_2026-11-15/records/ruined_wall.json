@@ -1,0 +1,36 @@
+{
+  "id": "quality_ruined_wall",
+  "name": "破损砌石残墙",
+  "category": "建筑",
+  "description": "3.2 米墙段，独立风化砌块、破损墙冠、端部扶壁与背面木质修补结构。",
+  "rooms": "战斗房边界、遗迹转角",
+  "status": "Godot 材质与锚点已验证；碰撞与玩法待接",
+  "expected_clip": "static",
+  "blend": "assets/source/task3d_architecture_quality_2026-11-15/ruined_wall.blend",
+  "glb": "assets/models/midgard/quality/ruined_wall.glb",
+  "preview": "assets/source/task3d_architecture_quality_2026-11-15/previews/ruined_wall.png",
+  "dimensions_blender_xyz": [
+    3.181,
+    1.455,
+    2.687
+  ],
+  "dimensions_pose_xyz": [
+    3.181,
+    1.455,
+    2.687
+  ],
+  "triangles": 8216,
+  "animations": [],
+  "exported_meshes": 4,
+  "sha256": "f221f8640ee6fabd87229c7394cdde644369008cd3b5226b306c6aeb24024d80",
+  "bytes": 41966736,
+  "review_frame": 1,
+  "verification": {
+    "godot_import": true,
+    "pbr_materials": true,
+    "anchors": true,
+    "animation_motion": null,
+    "gameplay": false
+  },
+  "blend_sha256": "64fa1ed3b4fd5cc080902f5ab1de5426ce9afe2561e5a7b01ecdb6167006bc2a"
+}

@@ -1,0 +1,30 @@
+{
+  "id": "quality_valhalla_wall",
+  "name": "英灵殿·列盾墙段",
+  "category": "神话建筑",
+  "description": "3.2 米木构墙段、圆盾、铁箍、盾脐和铆接支撑。",
+  "rooms": "英灵殿回廊、战斗房边界",
+  "status": "精细静态模型，碰撞与玩法待接",
+  "expected_clip": "static",
+  "blend": "assets/source/task3d_mythic_production_2026-11-15/valhalla_wall.blend",
+  "glb": "assets/models/midgard/quality/valhalla_wall.glb",
+  "preview": "assets/source/task3d_mythic_production_2026-11-15/previews/valhalla_wall.png",
+  "dimensions_blender_xyz": [
+    3.19,
+    0.66,
+    2.458
+  ],
+  "dimensions_pose_xyz": [
+    3.19,
+    0.66,
+    2.458
+  ],
+  "triangles": 11364,
+  "animations": [],
+  "exported_meshes": 4,
+  "sha256": "14ad3f112b1783a9ddd88a13a911809e0893811b96d27650558ad12c58af8bcc",
+  "bytes": 14569452,
+  "review_frame": 1,
+  "runtime_texture_limit": 1024,
+  "production_stage": "首版待审核"
+}

@@ -1,0 +1,30 @@
+{
+  "id": "quality_bifrost_bridge",
+  "name": "彩虹桥·符光桥段",
+  "category": "神话建筑",
+  "description": "3.2 米桥段、窄幅冷光嵌线、护缘、连接座和底部支撑。",
+  "rooms": "章节通路、虚空房",
+  "status": "精细静态模型，碰撞与玩法待接",
+  "expected_clip": "static",
+  "blend": "assets/source/task3d_mythic_production_2026-11-15/bifrost_bridge.blend",
+  "glb": "assets/models/midgard/quality/bifrost_bridge.glb",
+  "preview": "assets/source/task3d_mythic_production_2026-11-15/previews/bifrost_bridge.png",
+  "dimensions_blender_xyz": [
+    2.5,
+    3.201,
+    1.163
+  ],
+  "dimensions_pose_xyz": [
+    2.5,
+    3.201,
+    1.163
+  ],
+  "triangles": 3900,
+  "animations": [],
+  "exported_meshes": 4,
+  "sha256": "8c2fce9c364e1fc34b45e1e3e972536eb6cb9ae34af27224d9743801d5259c2f",
+  "bytes": 9993660,
+  "review_frame": 1,
+  "runtime_texture_limit": 1024,
+  "production_stage": "首版待审核"
+}

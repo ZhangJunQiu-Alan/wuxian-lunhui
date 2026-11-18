@@ -1,0 +1,30 @@
+{
+  "id": "quality_dead_tree",
+  "name": "寒林·风折枯树",
+  "category": "自然环境",
+  "description": "扭曲树干、分叉枝条、外露树根与风化木面。",
+  "rooms": "雪村边缘、营火房",
+  "status": "精细静态模型，碰撞与玩法待接",
+  "expected_clip": "static",
+  "blend": "assets/source/task3d_mythic_production_2026-11-15/dead_tree.blend",
+  "glb": "assets/models/midgard/quality/dead_tree.glb",
+  "preview": "assets/source/task3d_mythic_production_2026-11-15/previews/dead_tree.png",
+  "dimensions_blender_xyz": [
+    2.404,
+    1.081,
+    4.019
+  ],
+  "dimensions_pose_xyz": [
+    2.404,
+    1.081,
+    4.019
+  ],
+  "triangles": 7712,
+  "animations": [],
+  "exported_meshes": 2,
+  "sha256": "ce6a678ee0e1db7409045f1c8697c241a77b2e7fd64e001d469be1d0c040fe90",
+  "bytes": 4656876,
+  "review_frame": 1,
+  "runtime_texture_limit": 1024,
+  "production_stage": "首版待审核"
+}

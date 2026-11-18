@@ -1,0 +1,1 @@
+{"name":"midgard-asset-review","private":true,"type":"module","scripts":{"build":"esbuild viewer.js --bundle --minify --format=iife --target=es2020 --outfile=../../docs/芬布尔之冬模型清单/viewer.bundle.js"},"dependencies":{"three":"0.187.0"},"devDependencies":{"esbuild":"0.28.2"}}

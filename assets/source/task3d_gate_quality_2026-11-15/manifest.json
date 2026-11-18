@@ -1,0 +1,30 @@
+{
+  "batch": "task3d_gate_quality_2026-11-15",
+  "stage": "art-quality sample",
+  "models": [
+    {
+      "id": "quality_rune_gate",
+      "name": "精细废墟拱门",
+      "category": "出口",
+      "description": "逐块砌筑的破损石拱、厚木闸、锻铁门环、链条与铆钉。石材、老木和锈铁使用 Poly Haven 扫描 PBR 材质。",
+      "rooms": "战斗房出口、遗迹入口",
+      "status": "美术样板；Godot 材质与 open 动画已验证，碰撞与清场解锁待接",
+      "expected_clip": "open",
+      "blend": "assets/source/task3d_gate_quality_2026-11-15/rune_gate.blend",
+      "glb": "assets/models/midgard/quality/rune_gate.glb",
+      "preview": "assets/source/task3d_gate_quality_2026-11-15/previews/rune_gate.png",
+      "dimensions_blender_xyz": [
+        4.285,
+        1.259,
+        4.796
+      ],
+      "triangles": 23324,
+      "animations": [
+        "open"
+      ],
+      "sha256": "8d63717a54276175e41394a0a38dc6808379afd082fed6e4089e168d891b5ac8",
+      "exported_meshes": 10
+    }
+  ],
+  "texture_sources": "records/material-sources.json"
+}

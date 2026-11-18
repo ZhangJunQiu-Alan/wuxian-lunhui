@@ -1,0 +1,31 @@
+{
+  "id": "quality_enemy_winter_wolf",
+  "name": "冬狼·寒林猎手",
+  "category": "敌人",
+  "description": "连续体表、四肢、口鼻、爪牙与尾部骨骼；5 个动作，重点审核犬科体态和步态。",
+  "rooms": "首关战斗场景",
+  "status": "角色与动作首版待审核；尚未接入试玩",
+  "expected_clip": "idle",
+  "animations": [
+    "attack",
+    "death",
+    "hit",
+    "idle",
+    "run"
+  ],
+  "blend": "assets/source/task3d_mythic_production_2026-11-15/enemy_winter_wolf.blend",
+  "glb": "assets/models/midgard/quality/enemy_winter_wolf.glb",
+  "preview": "assets/source/task3d_mythic_production_2026-11-15/previews/enemy_winter_wolf.png",
+  "dimensions_blender_xyz": [
+    0.494,
+    1.921,
+    1.116
+  ],
+  "triangles": 33058,
+  "exported_meshes": 1,
+  "skins": 1,
+  "bones": 20,
+  "sha256": "9a58741cb74be2c26631682f8b3495fe16668d33409d3c8ad2ec89a2e5953058",
+  "production_stage": "首版待审核",
+  "runtime_texture_limit": 1024
+}
