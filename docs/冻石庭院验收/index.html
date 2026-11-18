@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101924">
+  <title>冻石庭院第五版（手绘） · 实机验收</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="review.js" defer></script>
+</head>
+<body>
+  <header class="masthead">
+    <div class="wrap masthead-inner">
+      <a class="brand" href="#top">诸界余烬<span>场景验收</span></a>
+      <nav class="history-links" aria-label="反馈记录">
+        <a class="quiet-link" href="验收反馈.json" download>旧版意见</a>
+        <a class="quiet-link" href="api/history/v3" download="冻石庭院-第三版反馈.json">第三版反馈</a>
+        <a class="quiet-link" href="api/history/v4" download="冻石庭院-第四版反馈.json">第四版反馈</a>
+        <a class="quiet-link" href="api/review" download="冻石庭院-第五版反馈.json">第五版反馈</a>
+      </nav>
+    </div>
+  </header>
+  <main id="top">
+    <section class="hero wrap" aria-labelledby="page-title">
+      <div class="hero-copy">
+        <p class="eyebrow">芬布尔之冬 · 第五版（手绘）</p>
+        <h1 id="page-title">冻石庭院</h1>
+        <p class="hero-summary">沿积雪石路穿过冷杉林，在崖边前路遭遇敌人。进入祭庭后木闸落下，清场唤醒冰蓝出口。</p>
+        <a class="primary" href="#layout">开始验收</a>
+      </div>
+      <figure class="hero-art">
+        <img src="media/v5-broad-court.webp" alt="Godot 实机，积雪的木石遗迹围绕祭庭，崖下可见浮冰" width="1280" height="720" fetchpriority="high">
+        <figcaption>Godot 实机 · 临海祭庭</figcaption>
+      </figure>
+    </section>
+    <section class="wrap palette-study" aria-labelledby="palette-title">
+      <h2 id="palette-title">方案一 · 冬日蓝调</h2>
+      <p class="palette-copy">蓝灰雪地托住战斗剪影。深蓝岩层和冷杉压低外围亮度，琥珀火光标出门和遗迹，冰蓝光幕表示出口点亮。</p>
+      <ul class="swatches" aria-label="冬日蓝调色板">
+        <li><span style="--swatch:#aebcce"></span>积雪 <code>#AEBCCE</code></li>
+        <li><span style="--swatch:#657183"></span>灰蓝石板 <code>#657183</code></li>
+        <li><span style="--swatch:#293747"></span>背光崖壁 <code>#293747</code></li>
+        <li><span style="--swatch:#e7a461"></span>火光 <code>#E7A461</code></li>
+        <li><span style="--swatch:#62bded"></span>出口光幕 <code>#62BDED</code></li>
+      </ul>
+    </section>
+    <div class="wrap review-shell">
+      <aside class="sidebar" aria-label="验收导航">
+        <p class="eyebrow">验收进度</p>
+        <p id="progress" class="progress" aria-live="polite">加载中</p>
+        <p class="review-history">第五版反馈单独保存。页首可下载历次记录。</p>
+        <nav id="sections" aria-label="验收项目"></nav>
+        <aside class="play-guide">
+          <h2>游戏内试玩</h2>
+          <p>从主菜单进入「芬布尔之冬 · 冻石庭院」。</p>
+          <dl>
+            <div><dt><kbd>WASD</kbd></dt><dd>移动</dd></div>
+            <div><dt><kbd>鼠标左键</kbd></dt><dd>朝光标挥砍</dd></div>
+            <div><dt><kbd>空格</kbd></dt><dd>闪避</dd></div>
+          </dl>
+        </aside>
+      </aside>
+      <div id="work" class="work"></div>
+    </div>
+  </main>
+  <template id="review-item">
+    <section class="work-item">
+      <header class="item-head">
+        <div><h2></h2><p class="description"></p></div>
+        <span class="item-status"></span>
+      </header>
+      <div class="evidence"></div>
+      <form>
+        <fieldset>
+          <legend>验收结果</legend>
+          <div class="decisions">
+            <label><input type="radio" name="status" value="pending" checked><span>待验收</span></label>
+            <label><input type="radio" name="status" value="approved"><span>通过</span></label>
+            <label><input type="radio" name="status" value="revise"><span>需修改</span></label>
+          </div>
+        </fieldset>
+        <label class="note-label">修改意见或验收备注<textarea name="note" rows="3" maxlength="3000" placeholder="填写需要调整的位置、问题和期望效果"></textarea></label>
+        <div class="form-footer"><button type="submit">保存反馈</button><span class="save-result" role="status"></span></div>
+      </form>
+    </section>
+  </template>
+</body>
+</html>

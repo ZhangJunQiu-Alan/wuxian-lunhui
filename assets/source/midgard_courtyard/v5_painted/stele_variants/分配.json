@@ -1,0 +1,270 @@
+{
+  "schema_version": 1,
+  "coordinate_space": {
+    "origin": "前路引导图左上，X 向右，Y 向下",
+    "guide_size_px": [
+      1536,
+      1024
+    ],
+    "runtime_pixels_per_guide_pixel": 2,
+    "previous_room_ground_origin_px": [
+      0,
+      144
+    ],
+    "placement_formula": "目标左上 = (foot_px - source_foot_px × scale) × 像素密度，按分量四舍五入。"
+  },
+  "old_sources": {
+    "placement": "../引导/approach-stelae-v2.json",
+    "shared_source": "../approach-stele-v2-painted.png",
+    "foreground_atlas": "assets/models/midgard/courtyard/v5_painted/approach-foreground.png",
+    "depth_atlas": "assets/models/midgard/courtyard/v5_painted/depth-approach-foreground.png",
+    "ground_atlas": "assets/models/midgard/courtyard/v5_painted/room-ground.png",
+    "old_placement_ref": "placements 使用旧引导 stelae 数组同一顺序，slot 为从 1 起算的序号。"
+  },
+  "placements": [
+    {
+      "slot": 1,
+      "variant": "A",
+      "name": "左倾缺肩",
+      "original_layer": "../approach-stele-v2-painted.png",
+      "new_layer": "碑体-A.png",
+      "mirror_x": false,
+      "foot_px": [
+        554,
+        750
+      ],
+      "source_foot_px": [
+        385,
+        619
+      ],
+      "scale": 0.13666666666666666,
+      "scale_2x": 0.2733333333333333,
+      "original_height_px": 82,
+      "layer_size_px": [
+        703,
+        784
+      ],
+      "placement_top_left_2x_px": [
+        1003,
+        1331
+      ],
+      "placement_size_2x_px": [
+        192,
+        214
+      ],
+      "depth_writing_layer": "碑石-A.png",
+      "ground_contact_layer": "落地-A.png",
+      "occlusion_alpha": "遮挡-A.png",
+      "replace_ground_patch": "碑后补地-01.png",
+      "ground_patch_top_left_2x_px": [
+        1025,
+        1437
+      ],
+      "ground_patch_size_px": [
+        180,
+        132
+      ],
+      "depth_sample_foot_px": [
+        554,
+        750
+      ],
+      "motif": "保留原双股 S 形交织纹"
+    },
+    {
+      "slot": 2,
+      "variant": "B",
+      "name": "右倾宽碑",
+      "original_layer": "../approach-stele-v2-painted.png",
+      "new_layer": "碑体-B.png",
+      "mirror_x": false,
+      "foot_px": [
+        675,
+        689
+      ],
+      "source_foot_px": [
+        367,
+        619
+      ],
+      "scale": 0.11666666666666667,
+      "scale_2x": 0.23333333333333334,
+      "original_height_px": 70,
+      "layer_size_px": [
+        752,
+        784
+      ],
+      "placement_top_left_2x_px": [
+        1264,
+        1234
+      ],
+      "placement_size_2x_px": [
+        175,
+        183
+      ],
+      "depth_writing_layer": "碑石-B.png",
+      "ground_contact_layer": "落地-B.png",
+      "occlusion_alpha": "遮挡-B.png",
+      "replace_ground_patch": "碑后补地-02.png",
+      "ground_patch_top_left_2x_px": [
+        1216,
+        1174
+      ],
+      "ground_patch_size_px": [
+        229,
+        275
+      ],
+      "depth_sample_foot_px": [
+        675,
+        689
+      ],
+      "motif": "纵向紧编绳纹",
+      "ground_patch_detail": "原前路同投影手绘源克隆枝团、树皮和风积雪，匹配原底画色调后在边缘羽化。"
+    },
+    {
+      "slot": 3,
+      "variant": "C",
+      "name": "浅凹矮碑",
+      "original_layer": "../approach-stele-v2-painted.png",
+      "new_layer": "碑体-C.png",
+      "mirror_x": false,
+      "foot_px": [
+        767,
+        605
+      ],
+      "source_foot_px": [
+        374,
+        624
+      ],
+      "scale": 0.09166666666666666,
+      "scale_2x": 0.18333333333333332,
+      "original_height_px": 55,
+      "layer_size_px": [
+        726,
+        784
+      ],
+      "placement_top_left_2x_px": [
+        1465,
+        1096
+      ],
+      "placement_size_2x_px": [
+        133,
+        144
+      ],
+      "depth_writing_layer": "碑石-C.png",
+      "ground_contact_layer": "落地-C.png",
+      "occlusion_alpha": "遮挡-C.png",
+      "replace_ground_patch": "碑后补地-03.png",
+      "ground_patch_top_left_2x_px": [
+        1384,
+        1030
+      ],
+      "ground_patch_size_px": [
+        241,
+        246
+      ],
+      "depth_sample_foot_px": [
+        767,
+        605
+      ],
+      "motif": "素碑，仅保留六枚竖排符文",
+      "ground_patch_detail": "原前路同投影手绘源克隆枝团、树皮和风积雪，匹配原底画色调后在边缘羽化。"
+    },
+    {
+      "slot": 4,
+      "variant": "D",
+      "name": "右倾斜断主碑",
+      "original_layer": "../approach-stele-v2-painted.png",
+      "new_layer": "碑体-D.png",
+      "mirror_x": false,
+      "foot_px": [
+        841,
+        571
+      ],
+      "source_foot_px": [
+        313,
+        619
+      ],
+      "scale": 0.15666666666666668,
+      "scale_2x": 0.31333333333333335,
+      "original_height_px": 94,
+      "layer_size_px": [
+        635,
+        784
+      ],
+      "placement_top_left_2x_px": [
+        1584,
+        948
+      ],
+      "placement_size_2x_px": [
+        199,
+        246
+      ],
+      "depth_writing_layer": "碑石-D.png",
+      "ground_contact_layer": "落地-D.png",
+      "occlusion_alpha": "遮挡-D.png",
+      "replace_ground_patch": "碑后补地-04.png",
+      "ground_patch_top_left_2x_px": [
+        1543,
+        933
+      ],
+      "ground_patch_size_px": [
+        259,
+        288
+      ],
+      "depth_sample_foot_px": [
+        841,
+        571
+      ],
+      "motif": "狼首兽形交织带",
+      "ground_patch_detail": "原前路同投影手绘源克隆枝团、树皮和风积雪，匹配原底画色调后在边缘羽化。"
+    },
+    {
+      "slot": 5,
+      "variant": "E",
+      "name": "微倾雪埋碑",
+      "original_layer": "../approach-stele-v2-painted.png",
+      "new_layer": "碑体-E.png",
+      "mirror_x": false,
+      "foot_px": [
+        964,
+        508
+      ],
+      "source_foot_px": [
+        354,
+        620
+      ],
+      "scale": 0.11666666666666667,
+      "scale_2x": 0.23333333333333334,
+      "original_height_px": 70,
+      "layer_size_px": [
+        673,
+        784
+      ],
+      "placement_top_left_2x_px": [
+        1845,
+        871
+      ],
+      "placement_size_2x_px": [
+        157,
+        183
+      ],
+      "depth_writing_layer": "碑石-E.png",
+      "ground_contact_layer": "落地-E.png",
+      "occlusion_alpha": "遮挡-E.png",
+      "replace_ground_patch": "碑后补地-05.png",
+      "ground_patch_top_left_2x_px": [
+        1851,
+        959
+      ],
+      "ground_patch_size_px": [
+        166,
+        122
+      ],
+      "depth_sample_foot_px": [
+        964,
+        508
+      ],
+      "motif": "裂缝切断的上、下残纹"
+    }
+  ],
+  "ground_patch_compose": "对齐 ground_patch_top_left_2x_px 后按 RGBA alpha 合成；补地边界为羽化遮罩。"
+}

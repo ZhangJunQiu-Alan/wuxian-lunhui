@@ -114,7 +114,7 @@ func _build_menu() -> void:
 	_menu.custom_minimum_size = Vector2(288, 0)
 	_menu.add_theme_constant_override("separation", 8)
 	_content.add_child(_menu)
-	var entries := [[tr("开始游戏"), _start], [tr("图鉴"), _open_codex], [tr("设置"), _open_settings],
+	var entries := [[tr("开始游戏"), _start], [tr("芬布尔之冬 · 冻石庭院"), _open_courtyard], [tr("图鉴"), _open_codex], [tr("设置"), _open_settings],
 		[tr("制作人员"), _open_credits], [tr("退出游戏"), func() -> void: get_tree().quit()]]
 	for i in entries.size():
 		var button := Button.new()
@@ -190,6 +190,10 @@ func _start() -> void:
 	get_tree().change_scene_to_file(HUB_SCENE)
 
 
+func _open_courtyard() -> void:
+	get_tree().change_scene_to_file("res://scenes/fimbulwinter_courtyard.tscn")
+
+
 func _open_codex() -> void:
 	var page := Control.new()
 	page.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
@@ -234,6 +238,7 @@ func _open_credits() -> void:
 func _show_overlay(page: Control) -> void:
 	_set_menu_active(false)
 	_overlay = page
+	_content.visible = false  # 标题和菜单先收起来，不然会从半透明的页面后面透出来
 	add_child(page)
 	page.modulate.a = 0.0
 	create_tween().tween_property(page, "modulate:a", 1.0, 0.2)
@@ -243,6 +248,7 @@ func _close_overlay() -> void:
 	if is_instance_valid(_overlay):
 		_overlay.queue_free()
 	_overlay = null
+	_content.visible = true
 	_set_menu_active(true)
 
 
