@@ -12,6 +12,9 @@
 # 压缩包不进仓库（源文件请解压后放入 assets/source）
 *.zip
 
+# Blender 自动备份
+*.blend1
+
 # Codex 制作脚本的缓存、可由脚本重新生成的试听文件
 __pycache__/
 *.pyc
