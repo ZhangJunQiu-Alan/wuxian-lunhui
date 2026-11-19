@@ -66,7 +66,7 @@ kbd { font: inherit; color: var(--ink); background: #1e3042; padding: 2px 5px; b
 .item-head { display: flex; align-items: start; justify-content: space-between; gap: 25px; }
 .item-head h2 { font: 700 clamp(26px, 4vw, 39px)/1.25 var(--serif); }
 .item-status { min-width: max-content; color: var(--muted); font-size: 13px; border: 1px solid var(--line); padding: 3px 9px; border-radius: 3px; margin-top: 5px; }
-.description { color: var(--muted); max-width: 61em; margin-top: 8px; }
+.description { color: var(--muted); max-width: 61em; margin-top: 8px; white-space: pre-line; }
 .evidence { margin-top: 17px; display: grid; gap: 12px; grid-template-columns: repeat(2, minmax(0, 1fr)); }
 .evidence > .wide, .evidence > :only-child { grid-column: 1 / -1; }
 .evidence img, .evidence video { background: #0a111b; border: 1px solid var(--line); border-radius: 3px; }

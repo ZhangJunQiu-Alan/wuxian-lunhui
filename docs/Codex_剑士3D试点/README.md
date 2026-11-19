@@ -52,4 +52,7 @@
 
 - 2026-11-19：阶段 1 选定 C 墨意东方；阶段 2 设定定稿全部通过。
 - 2026-11-19：阶段 3 暂停。Meshy、Tripo 已在网页生成候选，但免费账号不能下载。用户已向 Tripo 教育团队申请教育认证；通过后由 Codex 下载 Tripo 工作台里的候选，再继续阶段 3 的 Blender 部分。详见 `assets/source/characters/swordsman_3d/03_模型/说明.md`。
+- 2026-11-19：用户订阅了 Tripo Pro，可以导出。同日定下身体模型不带武器和刀鞘（剑士有 11 把武器可换），设定图改出无武器版再生成；带刀的旧候选作废。武器以后单独建模。
+- 2026-11-19：阶段 3 通过。Tripo Pro 多视图候选 B 定稿，脚换成单图候选 A 的（B 的脚两头都是脚趾）；材质改双面。产出 `swordsman_base.blend/.glb`、定稿转台。阶段 4 方案也通过：先试 Tripo 自带绑骨，不行再比 Mixamo；挂点 `weapon_r`（右手掌心）、`sheath_l`（左腰）。详见 `assets/source/characters/swordsman_3d/03_模型/说明.md`。
+- 分工：网站（Tripo、Mixamo）和 ImageGen 由 Codex 做，做到导出为止；Blender 由 Claude 做。
 - 验收网站 `docs/剑士3D验收/` 保留框架，媒体已清空，下一阶段再放入。
