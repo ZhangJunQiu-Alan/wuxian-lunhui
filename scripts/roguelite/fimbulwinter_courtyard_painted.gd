@@ -20,6 +20,7 @@ const RESTORED_THRESHOLD := preload("res://assets/models/midgard/courtyard/v5_pa
 const RUNES := preload("res://assets/models/midgard/courtyard/v5_painted/gate-runes.png")
 const ENTRANCE_SHUTTER := preload("res://assets/models/midgard/courtyard/v5_painted/entrance-shutter.png")
 const BRAZIER := preload("res://assets/models/midgard/courtyard/v5_painted/brazier.png")
+const BRAZIER_GROUNDED := preload("res://assets/models/midgard/courtyard/v5_painted/brazier-grounded.png")
 const CONTACT := preload("res://assets/models/midgard/courtyard/v5_painted/brazier-contact.png")
 const ICE_HALO := preload("res://assets/models/midgard/courtyard/v5_painted/ice-halo.png")
 const WARM_HALO := preload("res://assets/models/midgard/courtyard/v5_painted/warm-halo.png")
@@ -93,25 +94,36 @@ func _standing_paint(label: String, point: Vector2, width: float, height: float,
 
 
 func add_brazier(at: Vector3) -> void:
-	var contact := _halo(self, CONTACT, at + Vector3(-.05, .04, .06), 1.65, .74)
+	var contact := _halo(self, CONTACT, at + Vector3(-.05, .04, .06), 1.85, .85)
 	contact.no_depth_test = false
 	contact.blend_mode = BaseMaterial3D.BLEND_MODE_MIX
 	contact.render_priority = 2
+	var cast_shadow := _halo(self, CONTACT, at + Vector3(_basis.x.x, 0, _basis.x.z) * .65 + Vector3.UP * .045, 2.9, .72)
+	cast_shadow.no_depth_test = false
+	cast_shadow.blend_mode = BaseMaterial3D.BLEND_MODE_MIX
+	cast_shadow.albedo_color = Color(.25, .30, .43, .72)
+	cast_shadow.render_priority = 1
 	var sprite := Sprite3D.new()
 	sprite.name = "PaintedBrazier"
-	sprite.texture = BRAZIER
+	sprite.texture = BRAZIER_GROUNDED
 	sprite.pixel_size = 1.20 / BRAZIER.get_height()
-	sprite.position = at + _basis.y * .53 + _basis.z * .16
+	sprite.position = at + _basis.y * (.53 - 27.0 * sprite.pixel_size) + _basis.z * .16
 	sprite.basis = _basis
 	sprite.cast_shadow = GeometryInstance3D.SHADOW_CASTING_SETTING_OFF
 	var flame := ShaderMaterial.new()
 	flame.shader = FIRE
 	flame.render_priority = 2
-	flame.set_shader_parameter("painted_fire", BRAZIER)
+	flame.set_shader_parameter("painted_fire", BRAZIER_GROUNDED)
 	flame.set_shader_parameter("phase", at.x)
 	sprite.material_override = flame
 	add_child(sprite)
-	_warm_halos.append(_halo(self, WARM_HALO, at + Vector3.UP * .05, 3.85, .58))
+	var tight_contact := _halo(self, CONTACT, at + Vector3(-.05, .045, .06), 1.15, .65)
+	tight_contact.no_depth_test = false
+	tight_contact.blend_mode = BaseMaterial3D.BLEND_MODE_MIX
+	tight_contact.render_priority = 2
+	var warm := _halo(self, WARM_HALO, at + Vector3.UP * .05, 3.85, .75)
+	warm.no_depth_test = false
+	_warm_halos.append(warm)
 
 
 func portal_aperture(gate: Node3D) -> ArrayMesh:
@@ -138,7 +150,7 @@ func set_portal_reveal(amount: float) -> void:
 func pulse(time: float) -> void:
 	_portal_halo.albedo_color.a = _portal_reveal * (.71 + sin(time * 2.6) * .057)
 	for index in _warm_halos.size():
-		_warm_halos[index].albedo_color.a = .55 + sin(time * 7.8 + index * 1.7) * .071
+		_warm_halos[index].albedo_color.a = .72 + sin(time * 7.8 + index * 1.7) * .071
 
 
 func _layer(parent: Node3D, label: String, image: Texture2D, depth: Texture2D,
