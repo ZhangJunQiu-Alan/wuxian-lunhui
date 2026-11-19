@@ -5,8 +5,8 @@ const Layout := preload("res://scripts/roguelite/fimbulwinter_courtyard_layout.g
 const FimbulwinterPlayer := preload("res://scripts/roguelite/fimbulwinter_courtyard_player.gd")
 const SCALE := 0.01
 const CAMERA_OFFSET := Vector3(-8.0, 14.4, 9.8)
-const FIRES := [Vector2(-2387, 292), Vector2(-1373, -251), Vector2(-710, -304),
-	Vector2(-349, -500), Vector2(779, -91)]
+const FIRES := [Vector2(-2387, 192), Vector2(-1373, -251), Vector2(-855, -218),
+	Vector2(-349, -500), Vector2(735, -69)]
 const AMBER := Color("#ffd290")
 const ICE := Color("#9ddff7")
 const HEADLAND := preload("res://assets/models/midgard/courtyard/v4/headland.glb")
@@ -37,7 +37,7 @@ var _shots: Dictionary[EnemyProjectile, MeshInstance3D] = {}
 var _clock := 0.0
 var _impact := 0.0
 var _impact_direction := Vector3.RIGHT
-var _exit_marker: MeshInstance3D
+var exit_threshold: PackedVector2Array
 
 
 func _ready() -> void:
@@ -92,7 +92,6 @@ func _ready() -> void:
 	entrance_shutter.position.y = 2.83
 	entrance_shutter.hide()
 	_setup_portal()
-	_dormant_gate.get_parent_node_3d().global_position.x += Layout.EAST_SHIFT * SCALE
 	_contact = ShaderMaterial.new()
 	_contact.shader = SHADOW_SHADER
 
@@ -110,9 +109,6 @@ func _ready() -> void:
 	_hero_shadow = _contact_shadow(self)
 	_hero = _billboard(self, 0.0215)
 	_ring(self, 0.235, Color("#b3e0e8b8"), 0.015).name = "PlayerRing"
-	_exit_marker = _ring(self, 0.42, Color("#ffc580bb"), 0.028)
-	_exit_marker.position = world_at(get_parent().EXIT) + Vector3.UP * 0.035
-	_exit_marker.hide()
 	_approach_seal = Node3D.new()
 	_approach_seal.position = world_at(Vector2(get_parent().APPROACH_LIMIT, 0))
 	add_child(_approach_seal)
@@ -198,7 +194,8 @@ func _shutter_impact() -> void:
 
 func _setup_portal() -> void:
 	_awakened_gate.hide()
-	var veil := _mesh(_awakened_gate, _painted.portal_aperture(_awakened_gate), Vector3.ZERO, Color.WHITE)
+	var aperture := _painted.portal_aperture(_awakened_gate)
+	var veil := _mesh(_awakened_gate, aperture, Vector3.ZERO, Color.WHITE)
 	_portal_material = ShaderMaterial.new()
 	_portal_material.shader = PORTAL_SHADER
 	_portal_material.render_priority = 3
@@ -208,6 +205,15 @@ func _setup_portal() -> void:
 		Color("#88d9fccc"), 26, 1.8, Vector3(.46,.04,.63), Vector3(.05,1,.03))
 	(_portal_dust.mesh as QuadMesh).size *= .65
 	_portal_dust.emitting = false
+
+	_dormant_gate.get_parent_node_3d().global_position.x += Layout.EAST_SHIFT * SCALE
+	var arrays := aperture.surface_get_arrays(0)
+	var vertices: PackedVector3Array = arrays[Mesh.ARRAY_VERTEX]
+	var uvs: PackedVector2Array = arrays[Mesh.ARRAY_TEX_UV]
+	# Match the painted sill by projecting the light curtain's lower edge onto walkable ground.
+	for uv in [Vector2.DOWN, Vector2.ONE]:
+		var corner := veil.to_global(vertices[uvs.find(uv)])
+		exit_threshold.append(ground_at(camera.unproject_position(corner)))
 
 
 func awaken_exit() -> void:
@@ -223,7 +229,6 @@ func _reveal_restored_arch() -> void:
 	_dormant_gate.hide()
 	_awakened_gate.show()
 	_portal_dust.emitting = true
-	_exit_marker.show()
 	Audio.sfx("milestone", -6.0)
 
 func _set_portal_light(amount: float) -> void:

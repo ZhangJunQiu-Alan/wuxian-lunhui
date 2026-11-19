@@ -1,6 +1,15 @@
 extends Player
 
+signal foot_moved(from: Vector2, to: Vector2)
+
 var perimeter: Array[Vector3] = []
+
+
+func _physics_process(delta: float) -> void:
+	var previous := position
+	super._physics_process(delta)
+	if position != previous:
+		foot_moved.emit(previous, position)
 
 
 func weapon_dash(direction: Vector2, distance: float) -> Vector2:

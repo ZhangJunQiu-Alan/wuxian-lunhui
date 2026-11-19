@@ -222,12 +222,18 @@ func _run() -> void:
 		return
 	_check(_room.stage.portal_ready and _room.stage._awakened_gate.visible and not _room.stage._dormant_gate.visible, "clearing the foes replaces the ruin with the lit portal")
 	_check(_room.bounds.end.x == _room.CLOSED_EDGE, "the doorway stays gated until reward selection")
+	var threshold: PackedVector2Array = _room.stage.exit_threshold
+	var threshold_center := threshold[0].lerp(threshold[1], 0.5)
+	_room._on_foot_moved(threshold_center - Vector2.RIGHT * 20.0, threshold_center + Vector2.RIGHT * 20.0)
+	_check(_room.phase == _room.Phase.REWARD, "touching the curtain before choosing a blessing does not leave")
 	await _capture("reward")
 	_key(KEY_1, true)
 	_key(KEY_1, false)
 	await _wait(0.82)
 	_check(not paused and _room.phase == _room.Phase.EXIT and not _room.stage.shutter.visible, "selecting a blessing opens the archway")
 	_check(_room.player.faith.has("thor"), "the choice applies Thor's existing blessing")
+	_check(_room.bounds.end.x - _room.player.RADIUS > maxf(threshold[0].x, threshold[1].x),
+		"the open bounds reach the full width of the threshold")
 	if _room.bounds.end.x <= _room.CLOSED_EDGE:
 		await _finish()
 		return
@@ -243,16 +249,33 @@ func _run() -> void:
 	await _walk_to(Vector2(1122, -30))
 	_check(_room.stage.camera.position.x - center_camera.x > 5.0, "camera follows through the arena to the east wall")
 	await _capture("court-pan-east")
-	await _walk_to(Vector2(1205, _room.EXIT.y))
-	await _walk_to(Vector2(1715, _room.EXIT.y))
-	_check(_room.player.position.x > 1690.0 and _room.stage.camera.position.x - entry_camera.x > 30.0,
-		"the player walks through the east causeway with a following camera (at %s)" % _room.player.position)
-	await _capture("open-gate")
-	await _walk_to(_room.EXIT)
-	_check(_room.phase == _room.Phase.COMPLETE and paused, "walking through the open door completes the room (at %s)" % _room.player.position)
-	await _capture("complete")
-	if _walkthrough:
+	for weight in [-0.1, 1.1]:
+		var outside := threshold[0].lerp(threshold[1], weight)
+		_room._on_foot_moved(outside - Vector2.RIGHT * 60.0, outside + Vector2.RIGHT * 60.0)
+		_check(_room.phase == _room.Phase.EXIT, "crossing the line outside the aperture does not leave")
+	await _walk_to(Vector2(1324, 0))
+	await _advance(1435.0, 80)
+	_check(_room.phase == _room.Phase.EXIT and _room.player.position.x < 1410.0,
+		"the north pillar still blocks walking outside the arch (at %s)" % _room.player.position)
+	await _walk_to(Vector2(1324, threshold_center.y))
+	var foot: Vector2 = _room.player.position
+	var threshold_x := lerpf(threshold[0].x, threshold[1].x, inverse_lerp(threshold[0].y, threshold[1].y, foot.y))
+	await _advance(threshold_x - 4.0, 100)
+	foot = _room.player.position
+	_check(_room.phase == _room.Phase.EXIT and foot.x < threshold_x and threshold_x - foot.x <= 4.0,
+		"the player can walk up to the sill without leaving early (at %s)" % foot)
+	_check(_room.stage.camera.is_position_in_frustum(_room.stage.world_at(threshold_center))
+		and _room.stage.camera.position.x - center_camera.x > 8.0, "the following camera keeps the sill in frame")
+	await _capture("threshold-before")
+	await _advance(threshold_x + 1.0, 10)
+	foot = _room.player.position
+	_check(_room.phase == _room.Phase.COMPLETE and paused
+		and foot.distance_to(Geometry2D.get_closest_point_to_segment(foot, threshold[0], threshold[1])) < 0.01,
+		"the first step onto the light curtain completes the room at the sill (at %s)" % foot)
+	await _capture("threshold-after")
+	if _walkthrough or (not _capture_dir.is_empty() and DisplayServer.get_name() != "headless"):
 		await _wait(2.35)
+	if _walkthrough:
 		await _finish()
 		return
 	_room.hud._on_restart_pressed()

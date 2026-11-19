@@ -1,80 +1,22 @@
 const items = [
   {
-    id: "layout", name: "从出生点到出口",
-    description: "沿石路穿过前路遭遇和入口木闸，进入扩建后的中庭清场，再从点亮的东门离开。视频和巡检取自石碑接入后的同一次实机运行。",
+    id: "brazier", name: "火盆位置",
+    description: "入口木闸西侧的火盆原来叠进了左立柱，现在挪到立柱外侧的地面上。巡检时另外两只也有轻微贴边：雪崖火盆压住矮墙，东闸火盆贴着斜撑，一起挪开了。长厅旁和前路中段两只没动。",
     media: [
-      { title: "完整实机 · 从出生点到出口", video: "media/v8-traversal.mp4", poster: "media/v8-approach-fight.webp" },
-      { title: "全程巡检总览", image: "media/v8-survey.webp", wide: true },
-      { title: "内门敞开", image: "media/v8-entry-open.webp" },
-      { title: "入庭后木闸落下", image: "media/v8-entry-sealed.webp" },
+      { title: "入口木闸 · 修好后，角色站在旁边", image: "media/r9-brazier-entry.webp", wide: true },
+      { title: "雪崖", image: "media/r9-brazier-snowcliff.webp" },
+      { title: "前路中段（未动）", image: "media/r9-brazier-approach.webp" },
+      { title: "长厅旁（未动）", image: "media/r9-brazier-longhouse.webp" },
+      { title: "东闸旁", image: "media/r9-brazier-east.webp" },
     ],
   },
   {
-    id: "court", name: "中庭扩建与镜头",
-    description: "可走面积扩到上一版的 1.76 倍，东西门之间宽 20.3 世界单位，南北纵深多了 31%。进门时看不到东门，走到中央和东侧时镜头会跟着移动。",
+    id: "exit", name: "碰到光门就离开",
+    description: "选完赐福后，角色脚下一碰到门洞里光幕的底边就结算离开，门柱外侧不触发。光门后面的琥珀色光圈去掉了，因为蓝色光幕本身已经标出出口。",
     media: [
-      { title: "新旧中庭俯视布局", image: "media/v8-plan.webp", wide: true },
-      { title: "进门 · 敌人出现", image: "media/v8-broad-court.webp" },
-      { title: "中庭中央 · 符文圆环", image: "media/v8-court-pan-center.webp" },
-      { title: "东侧 · 冰井与出口", image: "media/v8-court-pan-east.webp" },
-    ],
-  },
-  {
-    id: "cover", name: "掩体、地面与边缘叙事",
-    description: "三处掩体：西北高断碑、东南矮裂石、东北冰井，约为角色身高的 1.6–2 倍，最窄通道约 3.9 个冲刺距离。地面有薄冰、翘起的裂石板、踩雪路和背风积雪。墙边有倒塌的武器架、断矛、圆盾、冻旗和头盔。",
-    media: [
-      { title: "战斗 · 断碑旁挥砍", image: "media/v8-strike.webp" },
-      { title: "断碑后的剪影", image: "media/v8-cover-occlusion.webp" },
-      { title: "东侧 · 薄冰、踩雪路与北墙武器架", image: "media/v8-court-pan-east.webp", wide: true },
-    ],
-  },
-  {
-    id: "approach", name: "手绘雪崖前路",
-    description: "复核出生点、弯路、干砌墙、火盆和冷杉林。前路为暮色冷蓝调，靠近木闸时逐渐回到中庭色温。",
-    media: [
-      { title: "前路战场", image: "media/v8-approach-fight.webp" },
-      { title: "前路", image: "media/v8-approach.webp" },
-      { title: "出生点", image: "media/v8-courtyard.webp" },
-    ],
-  },
-  {
-    id: "stelae", name: "前路五块石碑",
-    description: "五块碑各用一种碑面：双股交织、紧编绳、素面符文碑、狼首兽纹、斜裂残纹，符文都是正向。碑后补地按原画补出树枝和雪面笔触。",
-    media: [
-      { title: "接入前后对比", image: "media/v8-stele-compare.webp", wide: true },
-      { title: "1 · 双股交织", image: "media/v8-stele-a.webp" },
-      { title: "2 · 紧编绳", image: "media/v8-stele-b.webp" },
-      { title: "3 · 素面符文碑", image: "media/v8-stele-c.webp" },
-      { title: "4 · 狼首兽纹", image: "media/v8-stele-d.webp" },
-      { title: "5 · 斜裂残纹", image: "media/v8-stele-e.webp" },
-      { title: "主碑后的剪影", image: "media/v8-stele-occlusion.webp" },
-    ],
-  },
-  {
-    id: "architecture", name: "遗迹与双态出口",
-    description: "破败态保留左侧落木。清场后出口木梁归位，符文亮起，竖向光幕照亮门前雪地。",
-    media: [
-      { title: "清场前 · 断梁与木门", image: "media/v8-dormant-gate.webp" },
-      { title: "清场后 · 冰蓝光幕", image: "media/v8-restored-gate.webp" },
-      { title: "出口后的雪崖", image: "media/v8-open-gate.webp", wide: true },
-    ],
-  },
-  {
-    id: "combat", name: "战斗可读性与遮挡",
-    description: "中庭中间保留大片空地。角色被长厅、冷杉、石碑或掩体挡住时显示冷色剪影。",
-    media: [
-      { title: "中庭命中反馈", image: "media/v8-strike.webp" },
-      { title: "长厅木架后的剪影（轮次 07，扩建前）", image: "media/v5-longhouse-occlusion.webp" },
-      { title: "前路冷杉后的剪影（轮次 07）", image: "media/v5-approach-fir-occlusion.webp" },
-    ],
-  },
-  {
-    id: "concept", name: "选定目标图与实机",
-    description: "对照 A1、B1 和 C1 检查构图、颜色与笔触密度。",
-    media: [
-      { title: "A1 · 中庭", image: "media/v5-concept-court.webp", wide: true },
-      { title: "B1 · 雪崖前路", image: "media/v5-concept-approach.webp", wide: true },
-      { title: "C1 · 出口两态", image: "media/v5-concept-exit.webp", wide: true },
+      { title: "完整实机 · 从出生点到出口", video: "media/r9-traversal.mp4", poster: "media/r9-poster.webp" },
+      { title: "走到门槛前", image: "media/r9-threshold-before.webp" },
+      { title: "碰到光幕 · 结算", image: "media/r9-threshold-after.webp" },
     ],
   },
 ];

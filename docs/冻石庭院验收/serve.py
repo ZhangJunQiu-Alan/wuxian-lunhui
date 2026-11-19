@@ -9,12 +9,12 @@ import webbrowser
 
 ROOT = Path(__file__).resolve().parent
 SITE = "fimbulwinter-courtyard"
-VERSION = 5
-ITEMS = {"layout", "court", "cover", "approach", "stelae", "architecture", "flagstones", "fjord", "combat", "concept"}
+VERSION = 6
+ITEMS = {"brazier", "exit"}
 STATES = {"pending", "approved", "revise"}
 parser = ArgumentParser()
 parser.add_argument("--port", type=int, default=8773)
-parser.add_argument("--feedback", type=Path, default=ROOT / "验收反馈-v5.json")
+parser.add_argument("--feedback", type=Path, default=ROOT / "验收反馈.json")
 parser.add_argument("--open", action="store_true")
 args = parser.parse_args()
 url = f"http://127.0.0.1:{args.port}"
@@ -41,15 +41,6 @@ class Handler(SimpleHTTPRequestHandler):
         self.wfile.write(body)
 
     def do_GET(self):
-        if self.path in ("/api/history/v3", "/api/history/v4"):
-            version = int(self.path[-1])
-            archive = ROOT / f"验收反馈-v{version}.json"
-            try:
-                self.send_json(json.loads(archive.read_text(encoding="utf-8")) if archive.is_file()
-                               else {"site": SITE, "version": version, "items": {}})
-            except (OSError, ValueError):
-                self.send_error(500, "Could not read the review archive")
-            return
         if self.path == "/api/review":
             try:
                 self.send_json(current_review())

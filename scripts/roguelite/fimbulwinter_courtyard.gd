@@ -10,7 +10,6 @@ const ENTRANCE := Vector2(-672, -165)
 const ENCOUNTER_X := -600.0
 const SEALED_EDGE := -642.0
 const CLOSED_EDGE := 808.0 + Layout.EAST_SHIFT
-const EXIT := Vector2(1398 + Layout.EAST_SHIFT, 124)
 const FOES := [
 	["draugr", Vector2(-195, -470)], ["draugr", Vector2(350, 420)],
 	["draugr", Vector2(905, 100)], ["ice_spirit", Vector2(545, -556)],
@@ -50,6 +49,7 @@ func _ready() -> void:
 	player.hide()
 	player._camera.enabled = false
 	player.died.connect(_on_player_died)
+	(player as CourtPlayer).foot_moved.connect(_on_foot_moved)
 	player.xp_to_next = 1000
 	player.katana.cooldown = 0.40
 	player.katana.reach = 86.0
@@ -128,9 +128,6 @@ func _process(delta: float) -> void:
 			_reward_delay -= delta
 			if _reward_delay <= 0.0 and stage.portal_ready:
 				_queue_reward({"kind": "god"})
-		Phase.EXIT:
-			if player.position.distance_to(EXIT) <= 34.0:
-				_show_room_result()
 	hud._kills_label.text = tr("击杀 %d") % kills
 
 
@@ -154,9 +151,21 @@ func _on_upgrade_chosen(offer: Dictionary) -> void:
 	super._on_upgrade_chosen(offer)
 	if phase != Phase.REWARD or player.faith.is_empty() or not stage.portal_ready:
 		return
-	bounds.end.x = 1500.0 + Layout.EAST_SHIFT
+	var threshold := stage.exit_threshold
+	bounds.end.x = ceilf(maxf(threshold[0].x, threshold[1].x)) + player.RADIUS + 1.0
 	phase = Phase.EXIT
 	_objective.text = tr("通过拱门离开庭院")
+
+
+func _on_foot_moved(from: Vector2, to: Vector2) -> void:
+	if phase != Phase.EXIT or not is_running():
+		return
+	var threshold := stage.exit_threshold
+	var contact: Variant = Geometry2D.segment_intersects_segment(from, to, threshold[0], threshold[1])
+	if contact != null:
+		player.position = contact
+		stage._sync_hero()
+		_show_room_result()
 
 
 func _show_room_result() -> void:
