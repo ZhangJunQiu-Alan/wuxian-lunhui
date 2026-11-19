@@ -466,7 +466,7 @@
     <p class="small muted" style="margin-top:6px">小图按 48 把算：40 把专属、4 把初始、炎剑余烬 4 种形态，包括手持图、收起图和图标。</p>
     <div class="callout" style="margin-top:12px">
       <b>落到 Godot：</b>在 <span class="code">player.gd</span> 的动作精灵 <span class="code">_actions</span>（AnimatedSprite2D）下面加武器层（<span class="code">Sprite2D</span>，刺客多一个副手层）。每次换帧按 <span class="code">&lt;角色&gt;_sockets.json</span> 摆放：位置、角度、在身体前还是后、拿在手上还是收起。攻击动作本来就是逐帧画好的，武器跟着手走，不需要另写挥动代码；刀光仍由特效层负责。现在朝左是用 <span class="code">flip_h</span> 翻身体，武器层要由代码镜像位置和角度；闪现残影也要带上武器层。大招特写立绘不受影响。<br>
-      <b>美术：</b>全部交给 Codex，任务书是 <span class="code">docs/Codex_装备系统美术任务.md</span>。验收办法是「空手帧 + 初始武器 + 挂点表」合成回去，要和现在的动作条看起来一样。
+      <b>美术：</b>原像素素材任务已于 2026-11-19 作废。角色改为实时 3D，武器随角色 3D 试点一起做；图标等界面风格定稿后重新出任务书。
     </div>
 
     <h3 id="sets" style="margin:30px 0 10px">套装：同一套 4 件 = 共鸣 <span class="tag-todo">待审核 · TODO 2</span></h3>
@@ -670,7 +670,7 @@
     </div>
 
     <h3 id="art" style="margin:28px 0 10px">美术与音频需求：全部交给 Codex</h3>
-    <p class="small muted" style="margin-bottom:10px;max-width:76ch">任务书 <span class="code">docs/Codex_装备系统美术任务.md</span> 写了背景、文件名、尺寸、挂点表格式和验收办法，按 <span class="code">docs/美术素材规范.md</span> 的老规矩：先交剑士样张，接进游戏实测通过再批量做。</p>
+    <p class="small muted" style="margin-bottom:10px;max-width:76ch">原像素任务书已作废（2026-11-19）。新的美术任务按 <span class="code">docs/美术素材规范.md</span> 重新编写：先交剑士样张，接进游戏实测通过再批量做。</p>
     <div class="scroll-x"><table>
       <thead><tr><th>任务</th><th>素材</th><th class="nowrap">数量</th><th>规格</th><th class="nowrap">开工</th></tr></thead>
       <tbody>
