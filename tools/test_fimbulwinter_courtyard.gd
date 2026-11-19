@@ -7,6 +7,7 @@ var _failed := 0
 var _checks := 0
 var _capture_dir := ""
 var _walkthrough := false
+var _hero_ran := false
 
 
 func _initialize() -> void:
@@ -72,6 +73,8 @@ func _advance(right_of: float, limit: int) -> void:
 		await physics_frame
 		if _room.player.position.x >= right_of or paused:
 			break
+		if _room.stage.hero.anim.current_animation == "run":
+			_hero_ran = true
 	_key(KEY_D, false)
 
 
@@ -145,12 +148,22 @@ func _run() -> void:
 	_check(not _room.stage.entrance_shutter.visible and not _room.stage.entrance_sealed, "the battle courtyard entrance starts open")
 	_check(not _room.stage._awakened_gate.visible, "the exit portal starts dormant")
 	_check(_room.player.swordsman_weapon.manual_attack, "room uses manual directional strikes")
+	var hero: Node3D = _room.stage.hero
+	_check(["idle", "run", "dash", "attack", "attack2", "hit", "death"].all(func(a: String) -> bool: return hero.anim.has_animation(a)),
+		"the 3D swordsman carries all seven actions")
+	_check(hero.model.find_child("weapon_r", true, false) != null and hero.model.find_child("sheath_l", true, false) != null,
+		"the 3D swordsman has the hand and hip weapon sockets")
+	var skeleton: Skeleton3D = hero.model.find_children("*", "Skeleton3D", true, false)[0]
+	var crown: Vector3 = skeleton.global_transform * skeleton.get_bone_global_rest(skeleton.find_bone("mixamorig_HeadTop_End")).origin
+	var height: float = crown.y - hero.global_position.y
+	_check(absf(height - 1.46) < 0.1, "the 3D swordsman stands about 1.5 world units tall (crown at %.2f)" % height)
 	await _wait(0.25)
 	await _capture("courtyard")
 	await _capture_exit("dormant-gate")
 	var entry_camera: Vector3 = _room.stage.camera.position
 	var collision_grid: GDScript = load("res://scripts/world/map_layer.gd")
 	await _advance(_room.APPROACH_TRIGGER + 9.0, 300)
+	_check(_hero_ran, "the 3D swordsman plays its run while moving")
 	_check(_room.phase == _room.Phase.APPROACH_FIGHT and get_node_count_in_group("enemies") == 3, "three ordinary foes appear along the snowcliff approach")
 	_check(_room.stage._approach_seal.visible and not _room.stage.entrance_sealed, "the approach fight precedes the main courtyard's gate")
 	await _capture("approach-fight")
@@ -205,6 +218,7 @@ func _run() -> void:
 			_click(target.position)
 			await _wait(0.13)
 			_check(not is_instance_valid(target) or target.hp < hp, "an aimed strike damages the foe")
+			_check(_room.stage.hero.anim.current_animation in ["attack", "attack2"], "the 3D swordsman swings on a strike")
 			await _capture("strike")
 		for foe: Node2D in targets:
 			if is_instance_valid(foe):
@@ -212,6 +226,7 @@ func _run() -> void:
 	_key(KEY_SPACE, true)
 	await _wait(0.035)
 	_check(_room.player.is_dashing(), "Space dodges")
+	_check(_room.stage.hero.anim.current_animation == "dash", "the 3D swordsman plays its dash")
 	_key(KEY_SPACE, false)
 	await _wait(0.28)
 	await _fight()

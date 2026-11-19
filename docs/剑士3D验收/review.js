@@ -1,39 +1,32 @@
 const items = [
   {
-    id: "motions", name: "持刀动作（已修双手交叉）",
-    description: "你说待机时双手交叉过头、别的动作也有。原因：Mixamo 骨架静止时是 T-pose（双臂水平），Tripo 骨架是 A-pose（双臂斜向下），我原来按「相对静止姿势的旋转差」转动作，手臂整体多转了 45°，于是交叉、插进身体。现在改成按骨骼指向对齐：每根骨头指向和 Mixamo 原动作一样的方向。待机变成双手在身前合握刀柄，和 Mixamo 原版一致；所有动作都重新转换、重新渲染了。\n\n仍有的问题：大步站姿时衣摆被两腿撑开；冲刺是持弓动作，刀会朝侧后方。白色长条是占位刀。",
+    id: "ingame", name: "接进庭院：实机流程",
+    description: "像素剑士已经换成 3D 模型。逻辑没动，还是原来的 2D 角色在跑，3D 模型每帧跟着它的位置和状态：移动时跑步，跑步播放速度跟着实际移速走，脚不打滑；出招时转向鼠标方向，两种斩击交替，并按游戏里的出招时间加速；空格冲刺；受击闪红并播放受击动作。身高约 1.5 个世界单位（头顶实测 1.46）。视频是自动测试走完整个庭院的录像：雪崖接敌、破门、主庭院战斗、开门、选神。\n\n着色：不吃场景灯光，按场景太阳方向自己算两级明暗，降一点饱和、偏冷色，轮廓处略加深墨色，表面有细纸纹，和手绘背景对齐。敌人还是原来的 2D 素材。",
     media: [
-      { title: "待机 · Great Sword Idle", video: "media/mx_idle.mp4", poster: "media/mx_idle.webp" },
-      { title: "跑步 · Great Sword Run", video: "media/mx_run.mp4", poster: "media/mx_run.webp" },
-      { title: "攻击 · 低位斩", video: "media/mx_attack.mp4", poster: "media/mx_attack.webp" },
-      { title: "攻击 2 · 下劈（以后做连击）", video: "media/mx_attack2.mp4", poster: "media/mx_attack2.webp" },
-      { title: "受击 · Great Sword Impact", video: "media/mx_hit.mp4", poster: "media/mx_hit.webp" },
-      { title: "七个动作逐帧总览", image: "media/动作总览.webp", wide: true },
+      { title: "庭院实机录像（46 秒，自动测试操作）", video: "media/庭院实机.mp4", poster: "media/庭院实机.webp" },
+      { title: "流程截图：开场 / 雪崖接敌 / 进门 / 结算 / 主庭院 / 选神", image: "media/庭院截图.webp", wide: true },
     ],
   },
   {
-    id: "dash", name: "冲刺：A（脸部变形第二次修）",
-    description: "上一版没修对，抱歉：我改的是头发部件，真正的脸和脖子是另一块网格，脸上平均约四成权重在颈骨上；而且删旧权重的脚本有 bug，没删干净。这次：脸在下巴线以上全部跟头骨走，只有脖子（下巴以下）和颈骨过渡。验证方法换了：在头骨坐标里量脸部 372 个顶点在所有动作每一帧的偏移，改前冲刺最大约 6 cm、死亡约 9 cm，改后全部为 0。下图前两行用跟着头走的相机拍：改前下巴明显歪，改后和静止姿势一模一样；第三行是预览视频的角度。所有动作视频都已按新权重重新渲染。",
+    id: "closeup", name: "近景：动作和着色细节",
+    description: "把镜头拉近到剑士，依次待机、跑、四次斩击、冲刺、受击。看着色、比例、动作衔接有没有怪的地方。刀和刀鞘还是程序生成的占位长条（武器 3D 模型是待办里单独一项），挂在阶段 4 的两个挂点上。受击那一帧全屏发红是游戏原有的受伤提示。",
     media: [
-      { title: "A · Mixamo 前闪避（1.0 秒，已修）", video: "media/mx_dash.mp4", poster: "media/mx_dash.webp" },
-      { title: "脸部：改前 / 改后 / 预览角度", image: "media/脸部修正.webp", wide: true },
-      { title: "B · Tripo 前滚翻（2.7 秒）", video: "media/dash.mp4", poster: "media/dash.webp" },
+      { title: "近景录像（16 秒）", video: "media/近景.mp4", poster: "media/近景.webp" },
+      { title: "待机 / 跑 / 斩击 1 / 斩击 2 / 冲刺 / 受击", image: "media/近景动作.webp", wide: true },
     ],
   },
   {
-    id: "death", name: "死亡：选 A",
-    description: "Mixamo 也没有单独的大剑死亡。A 是 Mixamo 的剑盾后倒，2.3 秒，握刀姿势正常。B 是 Tripo 的「战败」向前扑倒，5.5 秒，节奏慢，前面还有一段站着摇晃。推荐 A。同意就点通过；想要 B 就选需修改写「用 B」。",
+    id: "xray", name: "被遮挡时的剪影",
+    description: "剑士走到门、墙、柱子后面时，被挡住的部分透出一层冷蓝剪影，方便在战斗里找到自己。只有前面隔着明显距离的东西才算遮挡，自己的手臂挡住身体不会触发。下图是破门那段，剑士在门板后面。",
     media: [
-      { title: "A · Mixamo 向后倒（2.3 秒）", video: "media/mx_death.mp4", poster: "media/mx_death.webp" },
-      { title: "B · Tripo 向前扑倒（5.5 秒）", video: "media/death.mp4", poster: "media/death.webp" },
+      { title: "门后的剪影（录像第 16 秒）", image: "media/遮挡剪影.webp", wide: true },
     ],
   },
   {
-    id: "rig", name: "骨骼、权重和挂点",
-    description: "骨骼和权重用 Tripo 的（65 根骨骼，手指也有权重，换过的脚也蒙上了）。Mixamo 也给我们的模型绑了一套，但手指没有权重，就没用。右手 weapon_r 在握拳的拳心，刀身从食指一侧伸出；左腰 sheath_l 插在腰带里，往后斜约 30°（深色长条是占位刀鞘）。导出的 swordsman_rigged.glb 已在 Godot 里实测：7 个动作、65 根骨骼都在，两个挂点自动变成 BoneAttachment3D。顺手修了一个问题：Blender 导出的 JPEG 贴图 Godot 读不了，已重新编码，阶段 3 的模型也一起修了。同意就点通过，进入阶段 5 接入游戏。",
+    id: "death", name: "死亡（用你选的 B）",
+    description: "用的是 Tripo 的向前扑倒。原动作 5.5 秒，开头一段站着摇晃，我跳过这段，从踉跄开始，整段压进 1.6 秒。游戏一死就会暂停，所以动作在暂停状态下继续播；结算界面原来几乎立刻弹出，现在等倒地后（约 2.0 秒）再出。下图从左到右是死后 0、0.4、0.8、1.2、1.6、2.0 秒。",
     media: [
-      { title: "挂点：待机和跑步的正、侧、背面", image: "media/挂点.webp", wide: true },
-      { title: "对照：Tripo 自带的 6 个动作（没用）", image: "media/tripo动作总览.webp", wide: true },
+      { title: "死亡过程（每 0.4 秒一帧）", image: "media/死亡.webp", wide: true },
     ],
   },
 ];

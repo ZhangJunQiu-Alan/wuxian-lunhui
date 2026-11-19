@@ -13,6 +13,7 @@ const HEADLAND := preload("res://assets/models/midgard/courtyard/v4/headland.glb
 const SHADOW_SHADER := preload("res://scripts/roguelite/courtyard_contact_shadow.gdshader")
 const PORTAL_SHADER := preload("res://scripts/roguelite/courtyard_portal.gdshader")
 const OUTLINE_SHADER := preload("res://scripts/roguelite/courtyard_actor_outline.gdshader")
+const Hero3D := preload("res://scripts/roguelite/courtyard_hero_3d.gd")
 
 var player: Player
 var camera: Camera3D
@@ -28,10 +29,9 @@ var _painted: PaintedCourtyard
 var _snow: GPUParticles3D
 var _portal_dust: CPUParticles3D
 var _center := Vector3.ZERO
-var _hero: Sprite3D
+var hero: Hero3D
 var _hero_shadow: MeshInstance3D
 var _contact: ShaderMaterial
-var _hero_frames: SpriteFrames
 var _actors: Dictionary[Enemy, Node3D] = {}
 var _shots: Dictionary[EnemyProjectile, MeshInstance3D] = {}
 var _clock := 0.0
@@ -102,12 +102,12 @@ func _ready() -> void:
 			Vector3(.10, .025, .10), Vector3(.14, 1.0, 0))
 	_snow = _snowfall()
 
-	var body := SpriteVisual.create_actions("res://assets/sprites/characters/swordsman", 64.0,
-		{"idle": true, "move": true, "attack": false, "hurt": false, "death": false})
-	_hero_frames = body.sprite_frames
-	body.free()
 	_hero_shadow = _contact_shadow(self)
-	_hero = _billboard(self, 0.0215)
+	hero = Hero3D.new()
+	hero.name = "Hero3D"
+	add_child(hero)
+	hero.light_from(sun)
+	player.died.connect(func() -> void: hero.die(player.death_duration()))
 	_ring(self, 0.235, Color("#b3e0e8b8"), 0.015).name = "PlayerRing"
 	_approach_seal = Node3D.new()
 	_approach_seal.position = world_at(Vector2(get_parent().APPROACH_LIMIT, 0))
@@ -117,9 +117,7 @@ func _ready() -> void:
 		var warmth := Color(0.94, 0.79, 0.51, 0.32 + 0.25 * (1.0 - absf(z) / 4.0))
 		_beam(_approach_seal, Vector3(0.035 * sin(i), 0.030, z), Vector3(0.036, 0.008, 0.29), warmth)
 	_approach_seal.hide()
-	player._actions.frame_changed.connect(_sync_hero)
-	player._actions.animation_changed.connect(_sync_hero)
-	_sync_hero()
+	_sync_hero(0.0)
 
 
 func world_at(point: Vector2) -> Vector3:
@@ -242,7 +240,7 @@ func _process(delta: float) -> void:
 	_impact = maxf(0.0, _impact - delta)
 	_follow_camera(1.0 - exp(-7.0 * delta))
 	_snow.position = _center + Vector3(0,3.1,0)
-	_sync_hero()
+	_sync_hero(delta)
 	for enemy: Enemy in _actors:
 		_sync_enemy(enemy, _actors[enemy])
 	for shot: EnemyProjectile in get_tree().get_nodes_in_group("enemy_projectiles"):
@@ -325,14 +323,12 @@ func _frame(body: Sprite3D, texture: Texture2D, flipped: bool, at: Vector3) -> v
 	body.position = at + camera.basis.y * (texture.get_height() * body.pixel_size * 0.5 - 0.087)
 
 
-func _sync_hero() -> void:
-	var anim := player._actions
-	var action := anim.animation if _hero_frames.has_animation(anim.animation) else &"move"
-	var frame := mini(anim.frame, _hero_frames.get_frame_count(action) - 1)
+func _sync_hero(delta: float) -> void:
 	var at := world_at(player.global_position)
-	_frame(_hero, _hero_frames.get_frame_texture(action, frame), anim.flip_h, at)
+	if hero.dead and not player.is_dead:
+		hero.revive()
+	hero.sync(player, at, delta)
 	_hero_shadow.position = at + Vector3.UP * 0.018
-	_hero.modulate = Color("#e3edff") if not player.is_hurt() else Color("#ff9f97")
 	get_node("PlayerRing").position = at + Vector3.UP * 0.027
 
 

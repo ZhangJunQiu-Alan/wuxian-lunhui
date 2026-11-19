@@ -24,3 +24,8 @@ func weapon_dash(direction: Vector2, distance: float) -> Vector2:
 	var landing := super.weapon_dash(direction, distance)
 	dash_through_obstacles = false
 	return landing
+
+
+## 中庭用 3D 剑士，倒地动作比像素版长；留够时间让它倒下再出结算
+func death_duration() -> float:
+	return maxf(super.death_duration(), 1.6)

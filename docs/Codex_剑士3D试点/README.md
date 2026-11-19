@@ -56,4 +56,5 @@
 - 2026-11-19：阶段 3 通过。Tripo Pro 多视图候选 B 定稿，脚换成单图候选 A 的（B 的脚两头都是脚趾）；材质改双面。产出 `swordsman_base.blend/.glb`、定稿转台。阶段 4 方案也通过：先试 Tripo 自带绑骨，不行再比 Mixamo；挂点 `weapon_r`（右手掌心）、`sheath_l`（左腰）。详见 `assets/source/characters/swordsman_3d/03_模型/说明.md`。
 - 2026-11-19：阶段 4 通过。Tripo 绑骨（权重、手指）+ Mixamo 大剑动作转到 Tripo 骨架；死亡用 Tripo 的向前扑倒（用户选）。验收中修了 T-pose/A-pose 转换导致的双手交叉、冲刺看不到左手，以及低头时脸被颈骨权重扯歪。产出 `04_绑骨/swordsman_rigged.glb`（7 段动作、挂点 `weapon_r` / `sheath_l`）。Godot 读不了 Blender 导出的 JPEG，导出后要跑 `tools/glb_reencode_images.py`。
 - 分工：网站（Tripo、Mixamo）和 ImageGen 由 Codex 做，做到导出为止；Blender 由 Claude 做。
-- 验收网站 `docs/剑士3D验收/` 保留框架，媒体已清空，下一阶段再放入。
+- 2026-11-19：阶段 5 通过，试点完成。冻石庭院里的像素剑士换成 3D 模型（墨意着色、被遮挡时透出剪影、死亡在暂停中播完）。详见 `assets/source/characters/swordsman_3d/05_接入/说明.md`。验收时用户提出选神界面要重新设计，另起一项。
+- 验收网站 `docs/剑士3D验收/` 保留框架，媒体已清空。

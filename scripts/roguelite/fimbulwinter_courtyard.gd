@@ -164,7 +164,7 @@ func _on_foot_moved(from: Vector2, to: Vector2) -> void:
 	var contact: Variant = Geometry2D.segment_intersects_segment(from, to, threshold[0], threshold[1])
 	if contact != null:
 		player.position = contact
-		stage._sync_hero()
+		stage._sync_hero(0.0)
 		_show_room_result()
 
 
