@@ -1,24 +1,19 @@
 const items = [
   {
-    id: "panel", name: "选卡界面：游戏里的石碑卡",
-    description: "按你选的 A 立石神谕做进了游戏，选神、升级强化、质变、觉醒、融合技都用这一种石碑卡。下面全是 Godot 实机截图和录像，插画还是旧卡面（新卡面见下一项，全部画完后一起换）。\n\n品质按游戏里已有的四档：普通白、稀有蓝、史诗紫、传说金，刻纹的颜色就是品质色，品质越高越华丽：普通只有淡淡的刻纹；稀有刻纹发光、缓慢呼吸，背后飘几粒光点；史诗再加沿刻纹往上走的光带、石面扫过的高光、背后光晕；传说再加两侧符文逐个亮起、背后转动的光芒和更多光点。神明的技能、质变用神明自己的颜色和史诗的特效，觉醒、融合技用传说的特效。\n\n悬停不改颜色：石碑浮起、略微放大，悬停期间轻轻上下飘，移开后落回原位。录像里依次把鼠标停在每张卡上。\n\n你说的「白、绿、蓝」：游戏现在是白、蓝、紫、金四档，我沿用了；如果想改成白绿蓝紫金五档，在意见里说。",
+    id: "cards", name: "新卡面：其余 69 张，已换进游戏",
+    description: "按托尔那批的画法画完了另外 7 位神（每位 8 张）、12 张融合技和通用属性，77 张已全部换进游戏（游戏里用 768 × 1152，原图 1024 × 1536 留在 assets/source/card_art_v2_2026-11-19/）。Codex 放大检查后重画了 37 张（贴边的矛和弓、动物腿数、多出的靴子、误留的网和飞剑、重复的云纹），我又逐批看过。\n\n两点请你看一下：① 弗蕾亚「觉醒·金泪」是带伤的脸流下金色眼泪，切合卡意（受伤时掉金泪），但脸上血点偏多；② 新画法天空占比大，在石碑窗口里人物偏小，神力的标志色也比旧卡淡，靠人物和神力形状区分。如果想让人物更大，我可以把窗口里的插画再放大约 15%（只改代码，不用重画）。\n\n剑士、刺客、枪手、法师 4 张角色卡不在这次范围。",
     media: [
-      { title: "实机录像：开局选神、四档品质、质变 / 觉醒 / 融合技，依次悬停", video: "media/面板动效.mp4", poster: "media/面板动效.webp" },
-      { title: "四档品质：普通 / 稀有 / 史诗 / 传说", image: "media/四档品质.webp", wide: true },
-      { title: "质变、觉醒、融合技、传说通用属性", image: "media/质变觉醒融合.webp", wide: true },
-      { title: "开局选神", image: "media/开局选神.webp", wide: true },
-      { title: "悬停：第 2 张浮起", image: "media/悬停.webp", wide: true },
-    ],
-  },
-  {
-    id: "cards", name: "新卡面：托尔第一批（B 电影厚涂）",
-    description: "托尔的 8 张已按 B 画完：基础像、觉醒，以及三条质变（妙尔尼尔、雷暴云、静电场）和各自的觉醒。构图不再全是仰视半身，掷锤、雷云、山羊战车、电网都画出来了。我检查过手、锤子、山羊的腿；云海有一点重复的鱼鳞纹，已让后面几批避开。\n\n其余 69 张（另外 7 位神、12 张融合技、通用属性）Codex 正在按同样的画法画，画完我检查后一起换进游戏。如果托尔这批有要调整的方向（比如更亮、人物更大），现在说还来得及影响后面的批次。",
-    media: [
-      { title: "托尔 8 张：上排新、下排旧", image: "media/托尔卡面.webp", wide: true },
-      { title: "托尔 · 基础像", image: "media/thor.webp" },
-      { title: "觉醒 · 雷神", image: "media/thor_awaken.webp" },
-      { title: "质变 · 妙尔尼尔", image: "media/thor_mjolnir.webp" },
-      { title: "觉醒 · 山羊战车", image: "media/thor_cloud_awaken.webp" },
+      { title: "实机：开局选神", image: "media/实机选神.webp", wide: true },
+      { title: "实机：质变、觉醒、融合技、通用属性", image: "media/实机质变.webp", wide: true },
+      { title: "奥丁：上排新、下排旧", image: "media/奥丁.webp", wide: true },
+      { title: "洛基：上排新、下排旧", image: "media/洛基.webp", wide: true },
+      { title: "弗蕾亚：上排新、下排旧", image: "media/弗蕾亚.webp", wide: true },
+      { title: "巴德尔：上排新、下排旧", image: "media/巴德尔.webp", wide: true },
+      { title: "澜：上排新、下排旧", image: "media/澜.webp", wide: true },
+      { title: "弗雷：上排新、下排旧", image: "media/弗雷.webp", wide: true },
+      { title: "斯卡蒂：上排新、下排旧", image: "media/斯卡蒂.webp", wide: true },
+      { title: "融合技：上排新、下排旧", image: "media/融合技.webp", wide: true },
+      { title: "通用：上排新、下排旧", image: "media/通用.webp", wide: true },
     ],
   },
 ];

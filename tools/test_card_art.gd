@@ -87,7 +87,7 @@ func run():
 		var texture = load(path)
 		check(texture is CompressedTexture2D, "imported texture " + id)
 		if not texture is Texture2D: continue
-		check(texture.get_size() == Vector2(720, 1200), "dimensions " + id)
+		check(texture.get_size() == Vector2(768, 1152), "dimensions " + id)
 		check(texture.get_image().has_mipmaps(), "real imported mipmaps " + id)
 		check(texture.get_image().get_mipmap_count() == 10, "ten imported mip levels " + id)
 		var info = upgrades.get_info(id)

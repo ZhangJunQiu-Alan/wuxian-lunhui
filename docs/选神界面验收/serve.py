@@ -9,8 +9,8 @@ import webbrowser
 
 ROOT = Path(__file__).resolve().parent
 SITE = "god-pick-ui"
-VERSION = 2
-ITEMS = {"panel", "cards"}
+VERSION = 3
+ITEMS = {"cards"}
 STATES = {"pending", "approved", "revise", "rejected"}
 parser = ArgumentParser()
 parser.add_argument("--port", type=int, default=8775)
