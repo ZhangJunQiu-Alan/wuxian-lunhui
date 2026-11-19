@@ -23,3 +23,8 @@ assets/source/taskB_audio_*/previews/
 # 制作目录内由 Godot 扫描生成的元数据；正式素材导入参数仍保留
 assets/source/**/*.import
 assets/source/**/*.gd.uid
+
+# 剑士 3D 阶段 4：Tripo / Mixamo 原始下载只留本机（体积大；Mixamo 原始动作不可单独再分发）
+assets/source/characters/swordsman_3d/04_绑骨/输入/
+assets/source/characters/swordsman_3d/04_绑骨/候选/tripo/
+assets/source/characters/swordsman_3d/04_绑骨/候选/mixamo/
