@@ -51,5 +51,5 @@
 ## 进度
 
 - 2026-11-19：阶段 1 选定 C 墨意东方；阶段 2 设定定稿全部通过。
-- 2026-11-19：阶段 3 暂停。Meshy、Tripo 已在网页生成候选，但免费账号不能下载。用户已向 Tripo 教育团队申请把 `my.jcu.edu.au` 加入教育认证；通过后由 Codex 下载 Tripo 工作台里的候选，再继续阶段 3 的 Blender 部分。详见 `assets/source/characters/swordsman_3d/03_模型/说明.md`。
+- 2026-11-19：阶段 3 暂停。Meshy、Tripo 已在网页生成候选，但免费账号不能下载。用户已向 Tripo 教育团队申请教育认证；通过后由 Codex 下载 Tripo 工作台里的候选，再继续阶段 3 的 Blender 部分。详见 `assets/source/characters/swordsman_3d/03_模型/说明.md`。
 - 验收网站 `docs/剑士3D验收/` 保留框架，媒体已清空，下一阶段再放入。
