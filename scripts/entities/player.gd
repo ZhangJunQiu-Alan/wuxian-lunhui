@@ -62,6 +62,15 @@ var xp_to_next := 5
 var is_dead := false
 var facing := Vector2.RIGHT  # 最后移动的方向
 
+# 手动瞄准（2026-11-19 定）：按住鼠标左键朝鼠标方向出招，手柄推右摇杆朝摇杆方向出招
+const STICK_DEADZONE := 0.35
+const ATTACK_BUFFER := 0.15  # 单击后这么久内还没出招（冷却没好）就在冷却好时补上这一招
+var auto_attack := false  # 打开后武器自己找最近的敌人出手（自动测试、挂机压测用）
+var aim_point: Callable   # (屏幕坐标) -> 世界坐标；3D 场景要把屏幕坐标投到地面上，在这里换掉
+var _attack_down := false
+var _attack_buffer := 0.0
+var _mouse_screen := Vector2.ZERO  # 最近一次鼠标事件的屏幕坐标
+
 # 大招：击杀充能，满了按 E 释放
 var ult_energy := 0.0
 var ult_cost := 50.0
@@ -190,6 +199,11 @@ func _physics_process(delta: float) -> void:
 				_shove = Vector2.ZERO
 		position = MapLayer.push_out(Game.clamp_to_map(position, RADIUS), RADIUS)
 
+	_attack_buffer = maxf(0.0, _attack_buffer - delta)
+	if swordsman_weapon:
+		swordsman_weapon.manual_attack = not auto_attack
+		if wants_attack():
+			swordsman_weapon.request_attack(aim_direction())
 	if regen > 0.0 and hp < max_hp:
 		heal(regen * delta)
 	_invincible_time = maxf(0.0, _invincible_time - delta)
@@ -219,6 +233,7 @@ func _tick_timers(delta: float) -> void:
 func play_attack(dir: Vector2, lunge: float = 7.0, interval: float = 0.0, action := &"attack") -> void:
 	_attack_dir = dir
 	_attack_action = action
+	_attack_buffer = 0.0  # 这一下单击已经出招了
 	if _sprite and dir.x != 0.0:
 		_sprite.set("flip_h", dir.x < 0.0)
 	_attack_lunge = lunge
@@ -315,6 +330,11 @@ func play_death() -> void:
 
 
 func _input(event: InputEvent) -> void:
+	if event is InputEventMouse:
+		_mouse_screen = (event as InputEventMouse).position
+	var mouse := event as InputEventMouseButton
+	if mouse and mouse.button_index == MOUSE_BUTTON_LEFT and not mouse.pressed:
+		_attack_down = false  # 松开在哪里都算，按下只认没被界面接走的
 	if not swordsman_weapon or event.is_pressed():
 		return
 	if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_RIGHT:
@@ -324,6 +344,12 @@ func _input(event: InputEvent) -> void:
 
 
 func _unhandled_input(event: InputEvent) -> void:
+	var mouse := event as InputEventMouseButton
+	if mouse and mouse.button_index == MOUSE_BUTTON_LEFT and mouse.pressed:
+		_attack_down = true
+		_attack_buffer = ATTACK_BUFFER
+		get_viewport().set_input_as_handled()
+		return
 	if swordsman_weapon and event.is_pressed():
 		if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_RIGHT:
 			swordsman_weapon.input_skill("mouse", true)
@@ -338,6 +364,27 @@ func _unhandled_input(event: InputEvent) -> void:
 		try_dash()
 	elif key.keycode == KEY_E:
 		try_ultimate()
+
+
+## 玩家这一帧想不想出招：按住鼠标左键，或者手柄右摇杆推出去
+func wants_attack() -> bool:
+	_attack_down = _attack_down and Input.is_mouse_button_pressed(MOUSE_BUTTON_LEFT)  # 暂停时松开的也要算松开
+	return not auto_attack and not is_dead and (_attack_down or _attack_buffer > 0.0 or _stick().length() >= STICK_DEADZONE)
+
+
+## 瞄准方向：手柄右摇杆优先，否则从角色指向鼠标；指着自己时用面朝的方向
+func aim_direction() -> Vector2:
+	var stick := _stick()
+	if stick.length() >= STICK_DEADZONE:
+		return stick.normalized()
+	var target: Vector2 = aim_point.call(_mouse_screen) if aim_point.is_valid() \
+		else get_canvas_transform().affine_inverse() * _mouse_screen
+	var dir := global_position.direction_to(target)
+	return dir if dir != Vector2.ZERO else facing
+
+
+func _stick() -> Vector2:
+	return Vector2(Input.get_joy_axis(0, JOY_AXIS_RIGHT_X), Input.get_joy_axis(0, JOY_AXIS_RIGHT_Y))
 
 
 ## 闪现：往移动方向快速冲出一段距离（DASH_TIME 秒内先快后慢地滑过去），可以穿过怪物和物件，但出不了地图

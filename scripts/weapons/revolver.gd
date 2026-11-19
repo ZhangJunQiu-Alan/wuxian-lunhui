@@ -1,6 +1,6 @@
 class_name Revolver
 extends Node2D
-## 枪手的左轮手枪：快速射击射程内最近的敌人，每打完一个弹匣要换弹
+## 枪手的左轮手枪：按住攻击朝瞄准方向快速射击，每打完一个弹匣要换弹（auto_attack 时自动射射程内最近的敌人）
 ## 被动「纸牌神射」：每个弹匣的最后一发必定暴击（伤害 ×3），命中后分裂成两发
 ## 大招「狂野西部秀」期间：射速 ×4、不用换弹、子弹额外穿透
 
@@ -38,13 +38,19 @@ func _process(delta: float) -> void:
 	_timer -= delta
 	if _timer > 0.0:
 		return
-	var target := _nearest_in_range()
-	if target == null:
-		return  # 射程内没有敌人就不开枪
+	var dir := Vector2.ZERO
+	if player.auto_attack:
+		var target := _nearest_in_range()
+		if target == null:
+			return  # 射程内没有敌人就不开枪
+		dir = global_position.direction_to(target.global_position)
+	elif player.wants_attack():
+		dir = player.aim_direction()
+	else:
+		return
 	_timer = fire_interval * player.weapon_cooldown() / (FRENZY_RATE if frenzy else 1.0)
 
 	var last_shot := _ammo == 1 and not frenzy
-	var dir := global_position.direction_to(target.global_position)
 	player.play_attack(dir, 2.0, _timer)
 	Audio.sfx("revolver_shot", -3.0)
 	var spread := [-0.08, 0.08] if twin else [0.0]

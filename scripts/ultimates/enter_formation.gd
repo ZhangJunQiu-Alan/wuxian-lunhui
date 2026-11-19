@@ -2,12 +2,11 @@ class_name EnterFormation
 extends Node2D
 ## 刺客的大招「入阵曲」
 ## 1. 化为鬼影，无敌，每隔一小段时间瞬移到一个敌人身后斩一刀（最多 15 刀，优先最近的）
-## 2. 斩完后，五百骑幻影从屏幕左侧冲锋到右侧，横扫路上所有敌人
+## 2. 斩完后，五百骑幻影从房间左侧冲锋到右侧，横扫路上所有敌人
 
 const STRIKES := 15
 const STRIKE_INTERVAL := 0.22
 const STRIKE_DAMAGE := 90.0
-const SEARCH_RANGE := 650.0
 const CAVALRY_TIME := 1.1
 const CAVALRY_DAMAGE := 60.0
 const CAVALRY_WIDTH := 90.0
@@ -22,7 +21,8 @@ var _trails: Array = []       # 瞬移残影：from、to、life
 var _cavalry_t := 0.0
 var _cavalry_hit := {}
 var _half := Vector2.ZERO
-var _center := Vector2.ZERO   # 骑兵冲锋时的屏幕中心（世界坐标）
+var _room := Rect2()          # 房间范围：瞬移斩只找房间里的敌人，骑兵从房间一侧冲到另一侧
+var _center := Vector2.ZERO   # 骑兵冲锋时的房间中心（世界坐标）
 
 
 static func cast(caster: Player) -> void:
@@ -34,7 +34,8 @@ static func cast(caster: Player) -> void:
 
 func _ready() -> void:
 	z_index = 15
-	_half = get_viewport_rect().size / 2.0
+	_room = Game.room_rect(self).grow(40.0)
+	_half = _room.size / 2.0
 	player.shield_time = STRIKES * STRIKE_INTERVAL + CAVALRY_TIME + 0.5  # 整个大招期间无敌
 
 
@@ -71,11 +72,11 @@ func _process(delta: float) -> void:
 
 func _next_target() -> Enemy:
 	var best: Enemy = null
-	var best_d := SEARCH_RANGE
+	var best_d := INF
 	for node in get_tree().get_nodes_in_group("enemies"):
 		var enemy := node as Enemy
 		var d := enemy.global_position.distance_to(player.global_position)
-		if d < best_d and not _struck.has(enemy.get_instance_id()):
+		if d < best_d and _room.has_point(enemy.global_position) and not _struck.has(enemy.get_instance_id()):
 			best_d = d
 			best = enemy
 	return best
@@ -98,7 +99,9 @@ func _strike(enemy: Enemy) -> void:
 
 func _start_cavalry() -> void:
 	_phase = "cavalry"
-	_center = player.global_position
+	_room = Game.room_rect(self)
+	_center = _room.get_center()
+	_half = _room.size / 2.0 + Vector2(0, 40)
 	player.shake(10.0, CAVALRY_TIME)
 
 

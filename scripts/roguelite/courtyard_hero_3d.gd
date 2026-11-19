@@ -5,6 +5,8 @@ extends Node3D
 const MODEL := preload("res://assets/models/characters/swordsman/swordsman.glb")
 const INK := preload("res://scripts/roguelite/courtyard_ink_actor.gdshader")
 const XRAY := preload("res://scripts/roguelite/courtyard_actor_xray.gdshader")
+const KATANA := preload("res://assets/models/weapons/swordsman/katana/katana.glb")  # 在 assets/source/weapons_3d/swordsman/katana/ 里用 Blender 做
+const SAYA := preload("res://assets/models/weapons/swordsman/katana/saya.glb")
 const HEIGHT := 1.5        # 世界单位；模型本身 1.8 m
 const MODEL_HEIGHT := 1.8
 const RUN_REFERENCE := 3.5  # 跑步动作原速下脚着地时的地面速度（在 Blender 里量的 4.2 m/s × 1.5/1.8），用来避免滑步
@@ -54,6 +56,8 @@ func _ink(mesh: MeshInstance3D) -> void:
 			ink.set_shader_parameter("albedo_tex", source.albedo_texture)
 		else:
 			ink.set_shader_parameter("use_texture", false)
+			if source:
+				ink.set_shader_parameter("base_color", source.albedo_color)
 		var xray := ShaderMaterial.new()
 		xray.shader = XRAY
 		xray.render_priority = 12
@@ -62,31 +66,18 @@ func _ink(mesh: MeshInstance3D) -> void:
 		materials.append(ink)
 
 
-## 武器还没有 3D 模型（待办里单独做），先放一把程序生成的太刀和刀鞘，让持刀动作看得出来。
-## 尺寸和位置按 Blender 里挂点的坐标写（+Y 是刀身/鞘身方向），glTF 导出后那个方向在 Godot 里是 -Z。
+## 太刀拿在右手，空刀鞘插在左腰。模型的坐标就是挂点的本地坐标（+Y 刀身方向，握把中心在原点），单位是米
 func _add_weapons() -> void:
-	var hand := model.find_child("weapon_r", true, false) as Node3D
-	var hip := model.find_child("sheath_l", true, false) as Node3D
-	_part(hand, Vector3(0.020, 0.25, 0.024), Vector3(0, -0.075, 0), Color("#2b2522"))  # 柄
-	_part(hand, Vector3(0.075, 0.010, 0.075), Vector3(0, 0.055, 0), Color("#3a3431"))  # 镡
-	_part(hand, Vector3(0.007, 0.70, 0.030), Vector3(0, 0.41, 0), Color("#c7d0d8"))    # 刃
-	_part(hip, Vector3(0.026, 0.78, 0.040), Vector3(0, 0.24, 0), Color("#221b1e"))     # 鞘
+	_attach(KATANA, model.find_child("weapon_r", true, false) as Node3D)
+	_attach(SAYA, model.find_child("sheath_l", true, false) as Node3D)
 
 
-func _part(parent: Node3D, size: Vector3, at: Vector3, color: Color) -> void:
-	var unit := parent.global_transform.basis.get_scale().x / model.scale.x  # 挂点在缩放过的骨架下
-	var box := BoxMesh.new()
-	box.size = Vector3(size.x, size.z, size.y) / unit
-	var part := MeshInstance3D.new()
-	part.mesh = box
-	part.position = Vector3(at.x, at.z, -at.y) / unit
-	var ink := ShaderMaterial.new()
-	ink.shader = INK
-	ink.set_shader_parameter("use_texture", false)
-	ink.set_shader_parameter("base_color", color)
-	part.material_override = ink
-	materials.append(ink)
-	parent.add_child(part)
+func _attach(scene: PackedScene, socket: Node3D) -> void:
+	var weapon := scene.instantiate() as Node3D
+	weapon.scale = Vector3.ONE * model.scale.x / socket.global_transform.basis.get_scale().x  # 挂点在缩放过的骨架下
+	socket.add_child(weapon)
+	for mesh: MeshInstance3D in weapon.find_children("*", "MeshInstance3D", true, false):
+		_ink(mesh)
 
 
 func sync(player: Player, at: Vector3, delta: float) -> void:

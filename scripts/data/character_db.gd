@@ -14,7 +14,7 @@ const ALL := {
 	"swordsman": {
 		"name": "剑士", "title": "东方剑客",
 		"hp": 110.0, "speed": 220.0, "color": Color(0.95, 0.85, 0.55),
-		"weapon": "太刀", "weapon_desc": "扇形斩击，自动砍向攻击范围内最近的敌人",
+		"weapon": "太刀", "weapon_desc": "朝瞄准方向扇形斩击",
 		"passive": "二刀流", "passive_desc": "每第 4 刀变为前后双刀斩，伤害翻倍",
 		"ult_name": "次元斩", "ult_desc": "定住屏幕内所有敌人，空间裂痕同时爆开，重创全屏",
 		"ult_cost": 50.0,
@@ -26,7 +26,7 @@ const ALL := {
 	"gunslinger": {
 		"name": "枪手", "title": "西部神枪手",
 		"hp": 90.0, "speed": 230.0, "color": Color(0.95, 0.6, 0.35),
-		"weapon": "左轮手枪", "weapon_desc": "快速射击射程内最近的敌人，每打 6 发换一次弹",
+		"weapon": "左轮手枪", "weapon_desc": "朝瞄准方向快速射击，每打 6 发换一次弹",
 		"passive": "纸牌神射", "passive_desc": "每个弹匣的最后一发必定暴击，命中后分裂成两发",
 		"ult_name": "狂野西部秀", "ult_desc": "8 秒狂热：射速 ×4、不用换弹、子弹穿透、移速 +30%、击杀回血",
 		"ult_cost": 60.0,

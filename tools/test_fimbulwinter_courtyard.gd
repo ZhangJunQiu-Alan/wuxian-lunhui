@@ -211,6 +211,7 @@ func _run() -> void:
 		var target: Node2D = targets[0]
 		var hp: float = target.hp
 		target.position = _room.player.position + Vector2(61, 0)
+		_room.player.swordsman_weapon._slash_count = 0  # 避开二刀流（每第 4 刀前后双斩），这里只测瞄准方向
 		_click(_room.player.position + Vector2.LEFT * 75)
 		await _wait(0.44)
 		_check(is_instance_valid(target) and target.hp == hp, "aiming away does not hit")

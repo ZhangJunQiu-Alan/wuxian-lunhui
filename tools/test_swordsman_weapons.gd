@@ -130,6 +130,7 @@ func enter_level() -> void:
 	game.level_up_panel.choose(0)
 	game.pause_menu.free()
 	player = game.player
+	player.auto_attack = true  # 这里测武器本身的命中和特效，不测手动瞄准的输入
 	weapon = player.swordsman_weapon
 	for power in player.gods.values():
 		power.free()

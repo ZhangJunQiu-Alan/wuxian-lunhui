@@ -22,6 +22,14 @@ enum RunState { PLAYING, ENDING, ENDED }
 static var bounds := Rect2()       # 可以活动的范围
 static var view_bounds := Rect2()  # 镜头能看到的范围（活动范围再加四周的屏障带）
 
+
+## 「房间内」的范围（大招等按房间计的效果用）：当前的活动范围；不在战斗场景里时退回镜头看到的范围
+static func room_rect(node: CanvasItem) -> Rect2:
+	if bounds.has_area():
+		return bounds
+	var viewport := node.get_viewport()
+	return viewport.get_canvas_transform().affine_inverse() * viewport.get_visible_rect()
+
 var player: Player
 var hud: Hud
 var level_up_panel: LevelUpPanel

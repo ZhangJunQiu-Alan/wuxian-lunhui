@@ -1,9 +1,9 @@
 class_name DimensionSlash
 extends Node2D
 ## 剑士的大招「次元斩」
-## 1. 画面变暗，屏幕内的敌人全部被定住
+## 1. 画面变暗，房间内的敌人全部被定住
 ## 2. 空间裂痕一道接一道浮现
-## 3. 所有裂痕同时爆开，重创屏幕内所有敌人
+## 3. 所有裂痕同时爆开，重创房间内所有敌人
 
 const CUT_COUNT := 14
 const APPEAR_TIME := 0.5   # 裂痕在这段时间内逐条浮现
@@ -35,7 +35,7 @@ func _ready() -> void:
 		var half_len := randf_range(90.0, 220.0)
 		_cuts.append({"from": center - dir * half_len, "to": center + dir * half_len, "appear": APPEAR_TIME * i / CUT_COUNT})
 
-	for enemy in _enemies_on_screen():
+	for enemy in _enemies_in_room():
 		enemy.freeze(BURST_AT + 0.15)
 	player.shake(3.0, 0.15)
 
@@ -52,13 +52,13 @@ func _process(delta: float) -> void:
 func _burst() -> void:
 	_burst_done = true
 	var dmg := DAMAGE * player.damage_mult
-	for enemy in _enemies_on_screen():
+	for enemy in _enemies_in_room():
 		enemy.take_damage(dmg, Vector2.ZERO, true)
 	player.shake(12.0, 0.35)
 
 
-func _enemies_on_screen() -> Array[Enemy]:
-	var rect := Rect2(global_position - _half_size, _half_size * 2.0)
+func _enemies_in_room() -> Array[Enemy]:
+	var rect := Game.room_rect(self).grow(40.0)  # 贴着边界的敌人也算
 	var result: Array[Enemy] = []
 	for node in get_tree().get_nodes_in_group("enemies"):
 		var enemy := node as Enemy

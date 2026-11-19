@@ -1,6 +1,6 @@
 class_name Katana
 extends Node2D
-## 太刀：朝面向方向挥出扇形斩击，命中范围内所有敌人
+## 太刀：朝瞄准方向挥出扇形斩击，命中范围内所有敌人（玩家按住攻击才出刀；auto_attack 时自动砍最近的敌人）
 ## 画面：一道刀光从扇形一侧扫到另一侧（每刀换方向，素材 4 帧），命中的敌人身上留下刀痕
 
 const SLASH := preload("res://assets/sprites/effects/katana_slash.png")
@@ -37,15 +37,21 @@ func _process(delta: float) -> void:
 	if _timer > 0.0:
 		return
 	var enemies := get_tree().get_nodes_in_group("enemies")
-	var target := _nearest_in_reach(enemies)
-	if target == null:
-		return  # 攻击范围内没有敌人就不出刀，冷却保持就绪，敌人一进入范围立刻出刀
+	var aim := Vector2.ZERO
+	if player.auto_attack:
+		var target := _nearest_in_reach(enemies)
+		if target == null:
+			return  # 攻击范围内没有敌人就不出刀，冷却保持就绪，敌人一进入范围立刻出刀
+		aim = global_position.direction_to(target.global_position)
+	elif player.wants_attack():
+		aim = player.aim_direction()
+	else:
+		return
 	_timer = cooldown * player.weapon_cooldown()
-	_slash(enemies, target)
+	_slash(enemies, aim)
 
 
-func _slash(enemies: Array[Node], target: Enemy) -> void:
-	var aim := global_position.direction_to(target.global_position)
+func _slash(enemies: Array[Node], aim: Vector2) -> void:
 	if aim == Vector2.ZERO:
 		aim = player.facing
 	# 剑士的被动「二刀流」：每第 4 刀变为双刀斩，前后同时斩击，伤害翻倍

@@ -50,7 +50,7 @@ func _ready() -> void:
 	player.katana.cooldown = 0.40
 	player.katana.reach = 84.0
 	player.katana.damage = 22.0
-	player.swordsman_weapon.manual_attack = true
+	player.aim_point = func(screen: Vector2) -> Vector2: return stage.ground_at(screen)  # 鼠标投到 3D 地面上
 	player.swordsman_weapon._timer = 0.0
 
 	stage = Stage.new()
@@ -83,13 +83,6 @@ func _label(message: String, at: Vector2, top: bool) -> Label:
 	label.add_theme_font_size_override("font_size", 21)
 	hud.add_child(label)
 	return label
-
-
-func _unhandled_input(event: InputEvent) -> void:
-	if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT and event.pressed and is_running():
-		var aim := player.global_position.direction_to(stage.ground_at(event.position))
-		player.swordsman_weapon.request_attack(aim if aim != Vector2.ZERO else player.facing)
-		get_viewport().set_input_as_handled()
 
 
 func _limit_route(right_edge: float) -> void:

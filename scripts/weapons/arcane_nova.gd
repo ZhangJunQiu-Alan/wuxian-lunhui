@@ -1,6 +1,7 @@
 class_name ArcaneNova
 extends Node2D
 ## 法师的奥术新星：以自身为中心向外扩散的魔法环，经过的敌人受到伤害并被强力击退
+## 按住攻击就释放（新星以自身为中心，不需要方向）；auto_attack 时有敌人进入范围才自动释放
 ## 每个敌人每一圈新星只会被打中一次
 
 const EXPAND_TIME := 0.35
@@ -23,10 +24,10 @@ func _ready() -> void:
 
 func _process(delta: float) -> void:
 	_timer -= delta
-	if _timer <= 0.0 and _enemy_in_range():
+	if _timer <= 0.0 and (_enemy_in_range() if player.auto_attack else player.wants_attack()):
 		_timer = cooldown * player.weapon_cooldown()
 		_waves.append({"t": 0.0, "hit": {}})
-		player.play_attack(player.facing, 0.0, _timer)
+		player.play_attack(player.facing if player.auto_attack else player.aim_direction(), 0.0, _timer)
 		Audio.sfx("nova_cast")
 		if echo:
 			_waves.append({"t": -0.3, "hit": {}})  # 负数表示延迟出发

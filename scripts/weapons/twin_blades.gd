@@ -1,6 +1,6 @@
 class_name TwinBlades
 extends Node2D
-## 刺客的双刃：射程极短、出手极快的近身连刺，左右手交替
+## 刺客的双刃：射程极短、出手极快的近身连刺，左右手交替；按住攻击朝瞄准方向刺（auto_attack 时自动刺最近的敌人）
 ## 被动「破阵」：身边每有 1 个敌人，伤害 +6%（最多 +60%）
 
 const SLASH_DURATION := 0.25
@@ -44,12 +44,18 @@ func _process(delta: float) -> void:
 		if d - enemy.radius <= reach and d < best:
 			best = d
 			target = enemy
-	if target == null:
-		return  # 攻击范围内没有敌人就不出手
+	if player.auto_attack:
+		if target == null:
+			return  # 攻击范围内没有敌人就不出手
+		_aim = global_position.direction_to(target.global_position)
+	elif player.wants_attack():
+		_aim = player.aim_direction()
+		target = _first_in_arc(enemies)  # 三连刺追加的那一击打扇形里最近的敌人
+	else:
+		return
 	_timer = cooldown * player.weapon_cooldown()
 	_left_hand = not _left_hand
 	_slash_time = SLASH_DURATION
-	_aim = global_position.direction_to(target.global_position)
 	if _aim == Vector2.ZERO:
 		_aim = player.facing
 	player.play_attack(_aim, 5.0, _timer)
@@ -64,6 +70,19 @@ func _process(delta: float) -> void:
 			enemy.take_damage(dmg, offset.normalized() * KNOCKBACK)
 	if flurry and is_instance_valid(target):
 		target.take_damage(dmg * 0.5)
+
+
+func _first_in_arc(enemies: Array[Node]) -> Enemy:
+	var best: Enemy = null
+	var best_d := INF
+	for node in enemies:
+		var enemy := node as Enemy
+		var offset := enemy.global_position - global_position
+		var d := offset.length()
+		if d - enemy.radius <= reach and absf(_aim.angle_to(offset)) <= HALF_ARC and d < best_d:
+			best_d = d
+			best = enemy
+	return best
 
 
 func _draw() -> void:

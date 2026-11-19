@@ -57,6 +57,7 @@ func run():
 	game.level_up_panel.choose(0)
 	paused = false
 	player = game.player
+	player.auto_attack = true  # 这里测武器本身的命中和特效，不测手动瞄准的输入
 	player.position = Vector2.ZERO
 	player.damage_mult = 1.0
 	for power in player.gods.values():
@@ -120,11 +121,12 @@ func run():
 	clear_enemies()
 	var slash=ultimate("dimension_slash")
 	front=spawn(Vector2(80,0))
-	outside=spawn(Vector2(1600,0))
+	var room=game.room_rect(slash)
+	outside=spawn(Vector2(room.end.x+300,room.get_center().y))  # 大招按房间算，房间外的敌人不受影响
 	slash._process(0.74)
 	check(front.hp==10000 and not slash._burst_done,"dimension no damage before burst")
 	slash._process(0.011)
-	check(slash._burst_done and front.hp==9880 and outside.hp==10000,"dimension burst damage and screen bound")
+	check(slash._burst_done and front.hp==9880 and outside.hp==10000,"dimension burst damage and room bound")
 	slash._process(0.3)
 	check(front.hp==9880,"dimension burst only once")
 	slash._process(0.3)

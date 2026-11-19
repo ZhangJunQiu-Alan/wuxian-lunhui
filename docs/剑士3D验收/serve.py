@@ -9,8 +9,8 @@ import webbrowser
 
 ROOT = Path(__file__).resolve().parent
 SITE = "swordsman-3d"
-VERSION = 5
-ITEMS = {"ingame", "closeup", "xray", "death"}
+VERSION = 6
+ITEMS = {"aim", "katana"}
 STATES = {"pending", "approved", "revise", "rejected"}
 parser = ArgumentParser()
 parser.add_argument("--port", type=int, default=8774)
