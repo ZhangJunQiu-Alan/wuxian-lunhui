@@ -1,17 +1,35 @@
 class_name LevelUpPanel
 extends CanvasLayer
 ## 升级四选一界面：显示卡牌，鼠标点击或按 1/2/3/4 选择
-## 卡面上半部分是插画（神明卡是神明的画像），下半部分是文字；边框颜色和标签表示稀有度
+## 卡是一块符文石碑：上部拱形窗里是插画，下部石面上是文字。品质（普通白、稀有蓝、史诗紫、传说金）决定刻纹的颜色和特效，
+## 品质越高越华丽；神明的技能、质变、觉醒、融合技用神明自己的颜色。鼠标移上去时石碑浮起，不改颜色。
 ## 同一个面板也用来选神、选质变、觉醒和融合技（见 game.gd 的 _pending_rewards）
 
 signal chosen(offer: Dictionary)
 signal reroll_requested
 
-const CARD_SIZE := Vector2(260, 450)
-const ART_HEIGHT := 205.0  # 插画上半部分不被文字盖住的高度
+const STELE_DIR := "res://assets/sprites/ui/stele/"  # 石碑素材：底图、刻纹 / 插画窗 / 符文蒙版，640 × 1100，彼此对齐
+const STELE_SIZE := Vector2(640, 1100)
+const CARD_SIZE := Vector2(290, 498)
+const WINDOW := Rect2(113, 109, 412, 512)    # 插画窗（素材像素，和 stele_window_mask 一致）
+const TEXT_RECT := Rect2(92, 668, 456, 316)   # 文字区（素材像素）
+const NUMBER_AT := Vector2(320, 626)         # 按键数字的圆心，在分隔结饰上
 const ART_DIR := "res://assets/sprites/cards/"  # 卡面插画：<神明 id>.png、<神明 id>_awaken.png、<角色 id>.png（基础武器）、general.png（通用属性）；质变、觉醒、融合技有 <卡牌 id>.png 时优先用它
 const NEUTRAL_COLOR := Color(0.75, 0.78, 0.85)
-const FAITH_COLOR := Color(0.25, 0.9, 0.72)
+const IVORY := Color(0.93, 0.9, 0.82)
+const ART_SHADER := preload("res://scripts/ui/stele/stele_art.gdshader")
+const GLOW_SHADER := preload("res://scripts/ui/stele/stele_glow.gdshader")
+const AURA_SHADER := preload("res://scripts/ui/stele/stele_aura.gdshader")
+## 每档特效：刻纹亮度、呼吸、上行光带、符文、石面高光、背后光晕、光芒、飘起的光点数
+const TIER_FX := [
+	{"strength": 0.22, "pulse": 0.0, "sweep": 0.0, "runes": 0.0, "shimmer": 0.0, "aura": 0.0, "rays": 0.0, "motes": 0},
+	{"strength": 0.5, "pulse": 1.0, "sweep": 0.0, "runes": 0.0, "shimmer": 0.0, "aura": 0.0, "rays": 0.0, "motes": 10},
+	{"strength": 0.7, "pulse": 1.0, "sweep": 0.8, "runes": 0.0, "shimmer": 0.5, "aura": 0.5, "rays": 0.0, "motes": 22},
+	{"strength": 0.9, "pulse": 1.0, "sweep": 1.0, "runes": 1.0, "shimmer": 1.0, "aura": 0.9, "rays": 1.0, "motes": 40},
+]
+const STONE_TINT := Color(0.6, 0.65, 0.76)  # 素材是中性灰，压成偏冷的深灰蓝，文字更清楚
+const HOVER_LIFT := 14.0
+const HOVER_SCALE := 1.035
 
 var _title: Label
 var _cards: HBoxContainer
@@ -35,7 +53,7 @@ func _ready() -> void:
 	overlay.add_child(center)
 
 	var box := VBoxContainer.new()
-	box.add_theme_constant_override("separation", 28)
+	box.add_theme_constant_override("separation", 18)
 	center.add_child(box)
 
 	_title = Label.new()
@@ -44,7 +62,7 @@ func _ready() -> void:
 	box.add_child(_title)
 
 	_cards = HBoxContainer.new()
-	_cards.add_theme_constant_override("separation", 24)
+	_cards.add_theme_constant_override("separation", 16)
 	box.add_child(_cards)
 
 	_reroll = Button.new()
@@ -144,10 +162,10 @@ func _make_card(index: int, offer: Dictionary, player: Player) -> Button:
 		art = ART_DIR + id + ".png"
 		art2 = ""
 	var edge := color
-	if info.kind == "skill":
-		edge = FAITH_COLOR
-	elif rarity >= 0:
+	if rarity >= 0:  # 有品质的卡按品质上色，神明技能、质变、觉醒、融合技用神明的颜色
 		edge = UpgradeDB.RARITY_COLORS[rarity]
+	var fx: Dictionary = TIER_FX[_tier(info.kind, rarity)]
+	var k := CARD_SIZE.x / STELE_SIZE.x
 
 	var card := Button.new()
 	card.custom_minimum_size = CARD_SIZE
@@ -157,57 +175,97 @@ func _make_card(index: int, offer: Dictionary, player: Player) -> Button:
 	card.set_meta("silent", true)
 	card.pressed.connect(choose.bind(index))
 
-	# 插画铺满整张卡，圆角外的部分被卡底裁掉
-	var frame := Panel.new()
-	frame.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
-	frame.add_theme_stylebox_override("panel", _card_style(color, 0.12, 0))
-	frame.clip_children = CanvasItem.CLIP_CHILDREN_AND_DRAW
-	frame.mouse_filter = Control.MOUSE_FILTER_IGNORE
-	card.add_child(frame)
+	if fx.aura > 0.0:  # 背后的光晕画在石碑下面，不随悬停移动
+		var aura := ColorRect.new()
+		aura.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
+		aura.offset_left = -48; aura.offset_right = 48; aura.offset_top = -40; aura.offset_bottom = 30
+		aura.mouse_filter = Control.MOUSE_FILTER_IGNORE
+		aura.material = _shader(AURA_SHADER, {"glow_color": edge, "strength": fx.aura, "rays": fx.rays,
+			"aspect": (CARD_SIZE.x + 96.0) / (CARD_SIZE.y + 70.0)})
+		card.add_child(aura)
+
+	if fx.motes > 0:  # 光点从石碑背后升起，只在石碑两侧和上方露出来，不压文字
+		card.add_child(_motes(edge, fx.motes))
+
+	var body := Control.new()  # 石碑本体：悬停时整块浮起
+	body.name = "Body"
+	body.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
+	body.pivot_offset = Vector2(CARD_SIZE.x * 0.5, CARD_SIZE.y)
+	body.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	card.add_child(body)
+
+	var window := Control.new()
+	window.position = WINDOW.position * k
+	window.size = WINDOW.size * k
+	window.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	body.add_child(window)
 	var picture := _card_art(art, info, color)
 	if art2 != "":  # 融合技：两位神的画像左右各一半
 		picture = _split_art(picture, _card_art(art2, info, Gods.ALL[info.gods[1]].color))
-	picture.modulate = Color(0.8, 0.8, 0.8)
-	frame.add_child(picture)
-	var shade := TextureRect.new()  # 下半部分压暗，文字写在上面
-	var gradient := Gradient.new()
-	gradient.offsets = PackedFloat32Array([0.0, 0.3, 0.52, 1.0])
-	var bg := Color(0.06, 0.07, 0.1)
-	gradient.colors = PackedColorArray([Color(bg, 0.0), Color(bg, 0.0), Color(bg, 0.92), Color(bg, 0.97)])
-	var fade := GradientTexture2D.new()
-	fade.gradient = gradient
-	fade.fill_from = Vector2(0, 0)
-	fade.fill_to = Vector2(0, 1)
-	shade.texture = fade
-	shade.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
-	shade.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
-	shade.mouse_filter = Control.MOUSE_FILTER_IGNORE
-	frame.add_child(shade)
+		window.clip_contents = true
+	elif picture is TextureRect:
+		var image := picture as TextureRect
+		image.stretch_mode = TextureRect.STRETCH_SCALE  # 裁切在着色器里做
+		var art_size := image.texture.get_size()
+		var visible_height := minf(1.0, (WINDOW.size.y / WINDOW.size.x) * (art_size.x / art_size.y))
+		image.material = _shader(ART_SHADER, {"window_mask": _stele("stele_window_mask"),
+			"window_rect": Vector4(WINDOW.position.x / STELE_SIZE.x, WINDOW.position.y / STELE_SIZE.y,
+				WINDOW.size.x / STELE_SIZE.x, WINDOW.size.y / STELE_SIZE.y),
+			"visible_height": visible_height, "crop_top": minf(0.03, 1.0 - visible_height)})
+	else:
+		window.clip_contents = true
+	window.add_child(picture)
 
+	var stone := _layer(_stele("stele_base"))
+	stone.self_modulate = STONE_TINT
+	body.add_child(stone)
+	var glow := _layer(_stele("stele_inlay_mask"))
+	glow.material = _shader(GLOW_SHADER, {"runes_mask": _stele("stele_runes_mask"), "stone": _stele("stele_base"),
+		"glow_color": edge, "strength": fx.strength, "pulse": fx.pulse, "sweep": fx.sweep, "runes": fx.runes,
+		"shimmer": fx.shimmer, "phase": index * 1.7})
+	body.add_child(glow)
+
+
+	var text_top := TEXT_RECT.position.y * k
+	var text_bottom := TEXT_RECT.end.y * k
+	var backing := Panel.new()  # 字多时文字区向上长，压住插画下沿，垫一层暗底
+	var backing_style := StyleBoxFlat.new()
+	backing_style.bg_color = Color(0.05, 0.06, 0.09, 0.86)
+	backing_style.set_corner_radius_all(6)
+	backing.add_theme_stylebox_override("panel", backing_style)
+	backing.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	backing.visible = false
+	body.add_child(backing)
 	var box := VBoxContainer.new()
-	box.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
-	box.offset_left = 18
-	box.offset_right = -18
-	box.offset_top = ART_HEIGHT
-	box.offset_bottom = -18
-	box.add_theme_constant_override("separation", 6)
-	box.minimum_size_changed.connect(func() -> void:
-		box.offset_top = minf(ART_HEIGHT, CARD_SIZE.y - 18.0 - box.get_combined_minimum_size().y))
+	box.position = Vector2(TEXT_RECT.position.x * k, text_top)
+	box.size = Vector2(TEXT_RECT.size.x * k, text_bottom - text_top)
+	box.add_theme_constant_override("separation", 3)
 	box.mouse_filter = Control.MOUSE_FILTER_IGNORE
-	card.add_child(box)
-	var number := Label.new()  # 左上角的按键提示
-	number.text = str(index + 1)
-	number.position = Vector2(14, 8)
-	number.add_theme_font_size_override("font_size", 22)
-	number.add_theme_constant_override("outline_size", 6)
-	number.add_theme_color_override("font_outline_color", Color(0, 0, 0, 0.8))
-	number.modulate = edge
-	number.mouse_filter = Control.MOUSE_FILTER_IGNORE
-	card.add_child(number)
+	body.add_child(box)
+	box.minimum_size_changed.connect(func() -> void:
+		var need := box.get_combined_minimum_size().y
+		box.position.y = minf(text_top, text_bottom - need)
+		box.size.y = text_bottom - box.position.y
+		backing.visible = box.position.y < text_top - 1.0
+		backing.position = box.position - Vector2(6, 6)
+		backing.size = box.size + Vector2(12, 10))
 
-	_add_line(box, tag + ("" if rarity < 0 else "  ·  " + tr(UpgradeDB.RARITY_NAMES[rarity])), 14, edge)
-	_add_line(box, tr(info.name), 24, Color.WHITE if not is_awaken else color)
-	_add_line(box, UpgradeDB.describe(id, rarity), 14, Color(0.85, 0.87, 0.92))
+	var number := Label.new()  # 分隔饰上的按键提示
+	number.text = str(index + 1)
+	number.size = Vector2(30, 30)
+	number.position = NUMBER_AT * k - number.size * 0.5
+	number.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
+	number.vertical_alignment = VERTICAL_ALIGNMENT_CENTER
+	number.add_theme_font_size_override("font_size", 17)
+	number.add_theme_constant_override("outline_size", 5)
+	number.add_theme_color_override("font_outline_color", Color(0, 0, 0, 0.85))
+	number.modulate = edge.lerp(Color.WHITE, 0.25)
+	number.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	body.add_child(number)
+
+	_add_line(box, tag + ("" if rarity < 0 else "  ·  " + tr(UpgradeDB.RARITY_NAMES[rarity])), 12, edge.lerp(Color.WHITE, 0.2))
+	_add_line(box, tr(info.name), 22, IVORY if not is_awaken else color.lerp(Color.WHITE, 0.3))
+	_add_line(box, UpgradeDB.describe(id, rarity), 13, Color(0.86, 0.87, 0.9))
 
 	var spacer := Control.new()
 	spacer.size_flags_vertical = Control.SIZE_EXPAND_FILL
@@ -217,13 +275,13 @@ func _make_card(index: int, offer: Dictionary, player: Player) -> Button:
 	var current: int = player.upgrade_levels.get(id, 0)
 	match info.kind:
 		"awaken":
-			_add_line(box, tr("★ 神之觉醒 ★"), 16, color)
+			_add_line(box, tr("★ 神之觉醒 ★"), 13, color)
 		"fusion":
-			_add_line(box, tr("★ 融合技 ★"), 16, color)
+			_add_line(box, tr("★ 融合技 ★"), 13, color)
 		"path":
-			_add_line(box, tr("三条道路只能选一条"), 14, Color(1, 1, 1, 0.6))
+			_add_line(box, tr("三条道路只能选一条"), 11, Color(1, 1, 1, 0.6))
 		"skill":
-			_add_line(box, tr("新的神明（一局最多 %d 位）") % UpgradeDB.MAX_GODS, 14, Color(1, 1, 1, 0.6))
+			_add_line(box, tr("新的神明（一局最多 %d 位）") % UpgradeDB.MAX_GODS, 11, Color(1, 1, 1, 0.6))
 		"boon":
 			var now: int = player.faith.get(info.god, 0)
 			var next := mini(now + UpgradeDB.faith_gain(rarity), UpgradeDB.FAITH_MAX)
@@ -232,24 +290,101 @@ func _make_card(index: int, offer: Dictionary, player: Player) -> Button:
 				hint = tr("（选择道路）")
 			elif now < UpgradeDB.FAITH_AWAKEN and next >= UpgradeDB.FAITH_AWAKEN:
 				hint = tr("（觉醒）")
-			_add_line(box, tr("信仰 %d → %d / %d") % [now, next, UpgradeDB.FAITH_MAX] + hint, 14, color)
+			_add_line(box, tr("信仰 %d → %d / %d") % [now, next, UpgradeDB.FAITH_MAX] + hint, 11, color)
 	if info.get("max", 1) > 1:
-		_add_line(box, tr("等级 %d → %d / %d") % [current, current + 1, info.max], 14, Color(1, 1, 1, 0.6))
+		_add_line(box, tr("等级 %d → %d / %d") % [current, current + 1, info.max], 11, Color(1, 1, 1, 0.6))
 
-	# 边框画在最上面；鼠标移上去时边框变粗、插画变亮
-	var border := Panel.new()
-	border.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
-	border.mouse_filter = Control.MOUSE_FILTER_IGNORE
-	var width := 4 if is_awaken else (3 if info.kind == "path" else 2 + maxi(rarity, 0))
-	border.add_theme_stylebox_override("panel", _border_style(edge, width))
-	card.add_child(border)
-	card.mouse_entered.connect(func() -> void:
-		border.add_theme_stylebox_override("panel", _border_style(edge, width + 2))
-		picture.modulate = Color.WHITE)
-	card.mouse_exited.connect(func() -> void:
-		border.add_theme_stylebox_override("panel", _border_style(edge, width))
-		picture.modulate = Color(0.8, 0.8, 0.8))
+	card.mouse_entered.connect(_hover.bind(body, true))
+	card.mouse_exited.connect(_hover.bind(body, false))
 	return card
+
+
+## 品质档：神明的技能、质变按史诗的特效，觉醒、融合技按传说；其他看稀有度
+static func _tier(kind: String, rarity: int) -> int:
+	match kind:
+		"awaken", "fusion":
+			return 3
+		"skill", "path":
+			return 2
+	return clampi(rarity, 0, 3)
+
+
+## 悬停：石碑浮起并轻轻上下飘，移开时落回原位；只动位置和大小，不改颜色
+func _hover(body: Control, on: bool) -> void:
+	if body.has_meta("tween"):
+		(body.get_meta("tween") as Tween).kill()
+	var tween := body.create_tween()
+	body.set_meta("tween", tween)
+	if on:
+		tween.set_trans(Tween.TRANS_BACK).set_ease(Tween.EASE_OUT)
+		tween.tween_property(body, "position:y", -HOVER_LIFT, 0.2)
+		tween.parallel().tween_property(body, "scale", Vector2.ONE * HOVER_SCALE, 0.2)
+		tween.chain().set_trans(Tween.TRANS_SINE).set_ease(Tween.EASE_IN_OUT).set_loops()
+		tween.tween_property(body, "position:y", -HOVER_LIFT + 4.0, 0.9)
+		tween.tween_property(body, "position:y", -HOVER_LIFT, 0.9)
+	else:
+		tween.set_trans(Tween.TRANS_CUBIC).set_ease(Tween.EASE_OUT)
+		tween.tween_property(body, "position:y", 0.0, 0.16)
+		tween.parallel().tween_property(body, "scale", Vector2.ONE, 0.16)
+
+
+func _motes(color: Color, amount: int) -> CPUParticles2D:
+	var motes := CPUParticles2D.new()
+	motes.amount = amount
+	motes.lifetime = 3.2
+	motes.preprocess = 3.2
+	motes.position = Vector2(CARD_SIZE.x * 0.5, CARD_SIZE.y * 0.7)
+	motes.emission_shape = CPUParticles2D.EMISSION_SHAPE_RECTANGLE
+	motes.emission_rect_extents = Vector2(CARD_SIZE.x * 0.6, CARD_SIZE.y * 0.3)
+	motes.direction = Vector2.UP
+	motes.spread = 12.0
+	motes.gravity = Vector2(0, -10)
+	motes.initial_velocity_min = 40.0
+	motes.initial_velocity_max = 90.0
+	motes.scale_amount_min = 0.12
+	motes.scale_amount_max = 0.26
+	motes.texture_filter = CanvasItem.TEXTURE_FILTER_LINEAR
+	var gradient := Gradient.new()
+	gradient.colors = PackedColorArray([Color(color, 0.0), Color(color.lerp(Color.WHITE, 0.4), 0.9), Color(color, 0.0)])
+	gradient.offsets = PackedFloat32Array([0.0, 0.25, 1.0])
+	motes.color_ramp = gradient
+	var dot := GradientTexture2D.new()
+	dot.width = 32
+	dot.height = 32
+	dot.fill = GradientTexture2D.FILL_RADIAL
+	dot.fill_from = Vector2(0.5, 0.5)
+	dot.fill_to = Vector2(1.0, 0.5)
+	var falloff := Gradient.new()
+	falloff.colors = PackedColorArray([Color.WHITE, Color(1, 1, 1, 0)])
+	dot.gradient = falloff
+	motes.texture = dot
+	var add := CanvasItemMaterial.new()
+	add.blend_mode = CanvasItemMaterial.BLEND_MODE_ADD
+	motes.material = add
+	return motes
+
+
+func _layer(texture: Texture2D) -> TextureRect:
+	var rect := TextureRect.new()
+	rect.texture = texture
+	rect.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
+	rect.stretch_mode = TextureRect.STRETCH_SCALE
+	rect.texture_filter = CanvasItem.TEXTURE_FILTER_LINEAR_WITH_MIPMAPS
+	rect.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
+	rect.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	return rect
+
+
+func _shader(shader: Shader, params: Dictionary) -> ShaderMaterial:
+	var material := ShaderMaterial.new()
+	material.shader = shader
+	for key: String in params:
+		material.set_shader_parameter(key, params[key])
+	return material
+
+
+static func _stele(part: String) -> Texture2D:
+	return load(STELE_DIR + part + ".png")
 
 
 ## 两张插画左右各显示一半
@@ -296,7 +431,7 @@ func _card_art(path: String, info: Dictionary, color: Color) -> Control:
 		var mid := Color(color.darkened(0.8), 1.0)
 		holder.draw_polygon(PackedVector2Array([Vector2.ZERO, Vector2(size.x, 0), size, Vector2(0, size.y)]),
 			PackedColorArray([top, top, mid, mid]))
-		var center := Vector2(size.x * 0.5, ART_HEIGHT * 0.55)
+		var center := Vector2(size.x * 0.5, size.y * 0.5)
 		for i in 3:
 			holder.draw_arc(center, 54.0 + i * 16.0, 0.0, TAU, 64, Color(color, 0.25 - i * 0.07), 2.0)
 		var font := holder.get_theme_default_font()
@@ -310,24 +445,10 @@ func _add_line(parent: Control, text: String, font_size: int, color: Color) -> v
 	label.text = text
 	label.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART  # 中文按字、英文按词换行
 	label.add_theme_font_size_override("font_size", font_size)
+	label.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
 	label.modulate = color
 	label.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	parent.add_child(label)
-
-
-func _border_style(color: Color, width: int) -> StyleBoxFlat:
-	var style := _card_style(color, 0.0, width)
-	style.draw_center = false
-	return style
-
-
-func _card_style(border: Color, brightness: float, border_width: int) -> StyleBoxFlat:
-	var style := StyleBoxFlat.new()
-	style.bg_color = Color(0.1, 0.12, 0.17).lerp(border, brightness)
-	style.border_color = border
-	style.set_border_width_all(border_width)
-	style.set_corner_radius_all(10)
-	return style
 
 
 static func faith_bar(points: int) -> String:

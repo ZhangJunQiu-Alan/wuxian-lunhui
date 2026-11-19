@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101924">
+  <title>选神界面和卡面插画</title>
+  <link rel="stylesheet" href="style.css?v=6">
+  <script src="review.js?v=2" defer></script>
+</head>
+<body>
+  <header class="masthead">
+    <div class="wrap masthead-inner">
+      <a class="brand" href="#top">诸界余烬<span>界面验收</span></a>
+      <nav class="history-links" aria-label="反馈记录">
+        <a class="quiet-link" href="api/review" download="选神界面-反馈.json">下载反馈</a>
+      </nav>
+    </div>
+  </header>
+  <main id="top">
+    <section class="hero wrap" aria-labelledby="page-title">
+      <div class="hero-copy">
+        <p class="eyebrow">界面与卡面 · 第 2 轮</p>
+        <h1 id="page-title">石碑卡进游戏</h1>
+        <p class="hero-summary">你选的立石神谕已经做进游戏，四档品质特效和悬停动效都是实机录的；新画法的卡面先出了托尔 8 张，其余正在画。</p>
+        <a class="primary" href="#panel">开始验收</a>
+      </div>
+      <figure class="hero-art">
+        <img src="media/hero.webp" alt="游戏里四档品质的石碑卡" width="600" height="370" fetchpriority="high">
+        <figcaption>四档品质 · 实机截图</figcaption>
+      </figure>
+    </section>
+    <div class="wrap review-shell">
+      <aside class="sidebar" aria-label="验收导航">
+        <p class="eyebrow">验收进度</p>
+        <p id="progress" class="progress" aria-live="polite">加载中</p>
+        <p class="review-history">图片可点开看原图。</p>
+        <nav id="sections" aria-label="验收项目"></nav>
+      </aside>
+      <div id="work" class="work"></div>
+    </div>
+  </main>
+  <template id="review-item">
+    <section class="work-item">
+      <header class="item-head">
+        <div><h2></h2><p class="description"></p></div>
+        <span class="item-status"></span>
+      </header>
+      <div class="evidence"></div>
+      <form>
+        <fieldset>
+          <legend>验收结果</legend>
+          <div class="decisions">
+            <label><input type="radio" name="status" value="pending" checked><span>待验收</span></label>
+            <label><input type="radio" name="status" value="approved"><span>通过</span></label>
+            <label><input type="radio" name="status" value="revise"><span>需修改</span></label>
+          </div>
+        </fieldset>
+        <label class="note-label">意见<textarea name="note" rows="3" maxlength="3000" placeholder="需要调整的地方和期望效果"></textarea></label>
+        <div class="form-footer"><button type="submit">保存反馈</button><span class="save-result" role="status"></span></div>
+      </form>
+    </section>
+  </template>
+</body>
+</html>

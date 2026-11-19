@@ -22,8 +22,8 @@ func check(ok, label, actual = null):
 
 func textures(node):
 	var found: Array = []
-	if node is TextureRect and node.texture is CompressedTexture2D:
-		found.append(node)
+	if node is TextureRect and node.texture is CompressedTexture2D and node.texture.resource_path.begins_with("res://assets/sprites/cards/"):
+		found.append(node)  # 只算卡面插画，不算石碑底图和蒙版
 	for child in node.get_children():
 		found.append_array(textures(child))
 	return found
@@ -198,11 +198,15 @@ func regular_cards():
 		check(Rect2(Vector2.ZERO, root.content_scale_size).encloses(bounds.grow(-1)), "four-choice card inside viewport")
 		for label in labels(card):
 			check(bounds.encloses(label.get_global_rect()), "regular card text stays inside: " + label.text)
-	var picture = cards[3].get_child(0).get_child(0)
+	var body = cards[3].get_node("Body")
+	var picture = textures(cards[3])[0]
 	cards[3].mouse_entered.emit()
-	check(picture.modulate == Color.WHITE, "hover restores full illustration brightness")
+	await create_timer(0.35, true, false, true).timeout
+	check(body.position.y < -5.0 and body.scale.x > 1.0, "hover lifts the stele", [body.position.y, body.scale.x])
+	check(picture.modulate == Color.WHITE, "hover does not tint the illustration")
 	cards[3].mouse_exited.emit()
-	check(picture.modulate.is_equal_approx(Color(0.8,0.8,0.8)), "mouse exit restores illustration tint")
+	await create_timer(0.35, true, false, true).timeout
+	check(absf(body.position.y) < 0.5 and body.scale.is_equal_approx(Vector2.ONE), "mouse exit settles the stele back", [body.position.y])
 	await capture("regular_four_choices", ["katana_damage", "might", "thor_skill", "thor_cloud"])
 
 func fallbacks():
