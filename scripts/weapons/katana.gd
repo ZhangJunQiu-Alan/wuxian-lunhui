@@ -66,6 +66,8 @@ func _slash(enemies: Array[Node], aim: Vector2) -> void:
 	Audio.sfx("katana_slash")
 
 	var dmg := damage * player.damage_mult * (2.0 if _niten else 1.0)
+	var hits := 0
+	var kills := 0
 	for node in enemies:
 		var enemy := node as Enemy
 		var offset := enemy.global_position - global_position
@@ -74,10 +76,14 @@ func _slash(enemies: Array[Node], aim: Vector2) -> void:
 		for dir in _slash_dirs:
 			if absf(dir.angle_to(offset)) <= HALF_ARC:
 				enemy.take_damage(dmg, offset.normalized() * knockback, _niten)
+				hits += 1
+				kills += int(enemy.hp <= 0.0)
 				if hamstring > 0.0:
 					enemy.apply_slow(hamstring, HAMSTRING_TIME)
 				FxLayer.mark(enemy.global_position, dir.angle() + PI * 0.5 * _sweep_sign * 0.6, enemy.radius * 2.0 + 30.0, _tint())
 				break
+	if hits > 0:
+		player.strike_impact(aim, _niten, kills > 0, 0.09)
 
 
 ## 找攻击范围内最近的敌人，没有就返回 null

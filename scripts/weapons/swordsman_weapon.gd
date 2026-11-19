@@ -262,6 +262,8 @@ func _fan(id: String, aim: Vector2, radius: float, strength: float, normal := fa
 		if enemy.hp <= 0.0:
 			killed += 1
 		hit_any = true
+	if normal and hit_any:
+		player.strike_impact(aim, _niten, killed > 0, 0.09)
 	if normal and kit_id == "muramasa" and killed > 0:
 		_chain = mini(5, _chain + killed)
 		_chain_time = 2.8

@@ -61,6 +61,7 @@ var loot: Array[String] = []  # 本局掉落的装备 id，结算时收进行囊
 
 
 func _ready() -> void:
+	Engine.time_scale = 1.0  # 万一上一局在顿帧中途退出
 	view_bounds = Rect2(-level_data.map["size"] / 2.0, level_data.map["size"])
 	bounds = view_bounds.grow(-level_data.map.border)
 	MapLayer.obstacles.clear()

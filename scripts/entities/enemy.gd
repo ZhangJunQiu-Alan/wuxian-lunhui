@@ -7,6 +7,8 @@ signal killed(enemy: Enemy)
 const GRID_CELL := 48.0  # 推挤用的网格大小，要不小于两个普通敌人的半径之和
 const KNOCKBACK_DECAY := 10.0  # 击退速度衰减，越大停得越快
 const SPRITE_DIR := "res://assets/sprites/enemies/"
+const FLASH_TIME := 0.12   # 受击闪白，从全白褪回原色
+const SQUASH_TIME := 0.4   # 受击形变：先压扁，再弹回去
 const ACTIONS := {"move": true, "attack": false}  # 动作素材 <id>_move.png / <id>_attack.png：是否循环
 const ATTACK_TIME := 0.34      # 一次攻击动作：后撤蓄力 → 前扑 → 收回
 const ATTACK_STRIKE := 0.45    # 动作进行到这个比例时出手（播放爪痕等特效）
@@ -74,6 +76,7 @@ var projectile_speed := 0.0
 var _shoot_timer := 0.0
 
 var _flash_time := 0.0
+var _squash_time := 0.0
 var _frozen_time := 0.0  # 被定住的剩余时间（次元斩、时间暂停）
 var _knockback := Vector2.ZERO
 var _sprite: Node2D  # 有素材时的图片节点，没有素材时为 null，用占位图形
@@ -372,8 +375,9 @@ func _ready() -> void:
 
 
 func _physics_process(delta: float) -> void:
-	if _flash_time > 0.0:
-		_flash_time -= delta
+	if _flash_time > 0.0 or _squash_time > 0.0:
+		_flash_time = maxf(0.0, _flash_time - delta)
+		_squash_time = maxf(0.0, _squash_time - delta)
 		queue_redraw()
 	_tick_statuses(delta)
 	if _dead or not is_instance_valid(target) or behavior == "still":
@@ -418,6 +422,7 @@ func _physics_process(delta: float) -> void:
 		_anim_t += delta
 		var lift := Vector2(0, -5.0) if _casting else Vector2.ZERO  # 聚能时浮起
 		SpriteVisual.animate(_sprite, _anim_t, maxf(0.25, move.length()), gait, move.x, _attack_offset() + lift)  # 站着不动时也轻微呼吸
+		_sprite.scale *= hit_squash()  # 受击压扁回弹叠在走路动作上
 
 	if player_dist < radius + Player.RADIUS:
 		target.take_damage(contact_damage, self)
@@ -447,6 +452,7 @@ func _charmed_move(delta: float) -> void:
 	if _sprite:
 		_anim_t += delta
 		SpriteVisual.animate(_sprite, _anim_t, 1.0, gait, victim.global_position.x - global_position.x)
+		_sprite.scale *= hit_squash()  # 受击压扁回弹叠在走路动作上
 
 
 ## 近身攻击动作（纯表现，伤害仍按接触计算）：靠近玩家时后撤蓄力、前扑，出手瞬间播放特效
@@ -592,6 +598,20 @@ func apply_slow(amount: float, duration: float) -> void:
 
 
 ## knockback 是击退方向乘以力度；crit 为 true 时伤害数字显示为金色大字
+## 受击闪白的强度 1 → 0（3D 场景的敌人模型也读这个）
+func hit_flash() -> float:
+	return _flash_time / FLASH_TIME
+
+
+## 受击形变：先压扁（横宽 1.4、竖高 0.6），再像弹簧一样回弹几下停住（会反过来被拉高一点）
+func hit_squash() -> Vector2:
+	if _squash_time <= 0.0:
+		return Vector2.ONE
+	var t := 1.0 - _squash_time / SQUASH_TIME
+	var a := exp(-4.5 * t) * cos(t * 14.0)
+	return Vector2(1.0 + 0.4 * a, 1.0 - 0.4 * a)
+
+
 func take_damage(amount: float, knockback: Vector2 = Vector2.ZERO, crit: bool = false) -> void:
 	if _dead:
 		return
@@ -615,7 +635,9 @@ func take_damage(amount: float, knockback: Vector2 = Vector2.ZERO, crit: bool = 
 	if amount > 0.0 and SetEffects.active:
 		SetEffects.active.on_damage_dealt(self, dealt, incoming, knockback, _quiet)
 	_knockback += knockback / mass  # 越重越难击退
-	_flash_time = 0.08
+	_flash_time = FLASH_TIME
+	if knockback != Vector2.ZERO or crit:  # 持续伤害不压扁，免得一直抖
+		_squash_time = SQUASH_TIME
 	queue_redraw()
 	if amount > 0.0:  # 只击退不造成伤害时（例如复活震开）不显示数字
 		if not _quiet:
@@ -661,11 +683,10 @@ func _die() -> void:
 func _draw() -> void:
 	draw_status()
 	var tint := status_tint()
-	if _flash_time > 0.0:
-		tint = Color(3, 3, 3)  # 受击闪白
-	elif _frozen_time > 0.0:
+	if _frozen_time > 0.0:
 		tint = Color(0.6, 0.75, 1.3)  # 被定住时偏蓝
-	var pop := 1.0 + 0.15 * _flash_time / 0.08  # 受击时略微放大
+	tint = tint.lerp(Color(3, 3, 3), hit_flash())  # 受击闪白，逐渐褪去
+	var pop := 1.0 + 0.15 * hit_flash()  # 受击时略微放大
 	if _casting and is_instance_valid(target):
 		var k := 1.0 - maxf(0.0, _shoot_timer) / CAST_TIME  # 聚能进度 0 → 1
 		var orb := global_position.direction_to(target.global_position) * (radius + 2.0) + Vector2(0, -5.0)
@@ -688,14 +709,14 @@ func _draw() -> void:
 		var points := PackedVector2Array()
 		for i in 6:
 			points.append(Vector2.from_angle(TAU * i / 6.0 + PI / 6.0) * radius * pop * Vector2(1.0, 1.25))
-		draw_colored_polygon(points, color * tint if _flash_time <= 0.0 else Color.WHITE)
+		draw_colored_polygon(points, (color * tint).lerp(Color.WHITE, hit_flash()))
 		points.append(points[0])
 		draw_polyline(points, Color(0.9, 0.97, 1.0, 0.8), 2.0)
 		return
 	if is_elite:
 		draw_circle(Vector2.ZERO, radius * pop + 4.0, Color(1.0, 0.8, 0.3, 0.9))  # 精英怪带金边
 
-	draw_circle(Vector2.ZERO, radius * pop, color * tint if _flash_time <= 0.0 else Color.WHITE)
+	draw_circle(Vector2.ZERO, radius * pop, (color * tint).lerp(Color.WHITE, hit_flash()))
 	if behavior == "ranged" or behavior == "drain":
 		draw_circle(Vector2.ZERO, radius * 0.45, Color(1, 1, 1, 0.8))  # 远程敌人中间有个亮核
 

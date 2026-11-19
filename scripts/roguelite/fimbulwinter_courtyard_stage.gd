@@ -108,6 +108,7 @@ func _ready() -> void:
 	add_child(hero)
 	hero.light_from(sun)
 	player.died.connect(func() -> void: hero.die(player.death_duration()))
+	player.struck.connect(_on_struck)
 	_ring(self, 0.235, Color("#b3e0e8b8"), 0.015).name = "PlayerRing"
 	_approach_seal = Node3D.new()
 	_approach_seal.position = world_at(Vector2(get_parent().APPROACH_LIMIT, 0))
@@ -323,6 +324,12 @@ func _frame(body: Sprite3D, texture: Texture2D, flipped: bool, at: Vector3) -> v
 	body.position = at + camera.basis.y * (texture.get_height() * body.pixel_size * 0.5 - 0.087)
 
 
+## 武器打中敌人：重击、砍死敌人时镜头冲得更狠（普通命中的火花和轻推在 _hit 里，按敌人掉血触发）
+func _on_struck(direction: Vector2, heavy: bool, killed: bool) -> void:
+	_impact_direction = Vector3(direction.x, 0.0, direction.y)
+	_impact = maxf(_impact, 0.13 if heavy else (0.1 if killed else 0.075))
+
+
 func _sync_hero(delta: float) -> void:
 	var at := world_at(player.global_position)
 	if hero.dead and not player.is_dead:
@@ -339,7 +346,9 @@ func _sync_enemy(enemy: Enemy, actor: Node3D) -> void:
 	var texture := anim.sprite_frames.get_frame_texture(anim.animation, anim.frame) if anim else (enemy._sprite as Sprite2D).texture
 	var floating := 0.12 + sin(_clock * 5.0) * 0.05 if enemy.type_id == "ice_spirit" else 0.0
 	_frame(body, texture, bool(enemy._sprite.get("flip_h")), Vector3.UP * floating)
-	body.modulate = Color("#fff7d4") if enemy._flash_time > 0.0 else Color("#e2e8f4")
+	body.modulate = Color("#e2e8f4").lerp(Color(2.2, 2.1, 1.8), enemy.hit_flash())  # 受击闪白，逐渐褪去
+	var squash := enemy.hit_squash()
+	body.scale = Vector3(squash.x, squash.y, 1.0)
 	var hp := actor.get_node("Health") as MeshInstance3D
 	hp.visible = enemy.hp < enemy.max_hp and enemy.hp > 0.0
 	hp.scale.x = maxf(0.01, enemy.hp / enemy.max_hp)
@@ -380,14 +389,43 @@ func _hit(point: Vector2, defeated: bool) -> void:
 	sparks.position = world_at(point) + Vector3.UP * 0.28
 	add_child(sparks)
 	var scatter := sparks.create_tween().set_parallel(true)
-	for i in 8:
-		var angle := aim.angle() + (float(i) - 3.5) * 0.39
-		var direction := Vector3(cos(angle), 0.22 + i * 0.025, sin(angle))
-		var particle := _beam(sparks, direction * 0.08, Vector3(0.022, 0.024, 0.15), AMBER if i % 3 else Color.WHITE)
+	var count := 22 if defeated else 14  # 火花顺着出刀方向喷出去，一半贴着刀向，一半散开
+	for i in count:
+		var spread := randf_range(-0.5, 0.5) if i % 2 == 0 else randf_range(-1.4, 1.4)
+		var angle := aim.angle() + spread
+		var direction := Vector3(cos(angle), randf_range(0.15, 0.55), sin(angle))
+		var length := randf_range(0.09, 0.2)
+		var particle := _beam(sparks, direction * 0.06, Vector3(0.018, 0.02, length), AMBER if i % 3 else Color.WHITE)
 		particle.rotation.y = atan2(direction.x, direction.z)
-		scatter.tween_property(particle, "position", direction * (0.48 + i * 0.032), 0.19)
-		scatter.tween_property(particle, "scale", Vector3.ZERO, 0.19)
+		var life := randf_range(0.16, 0.3)
+		scatter.tween_property(particle, "position", direction * randf_range(0.4, 0.8), life).set_ease(Tween.EASE_OUT).set_trans(Tween.TRANS_CUBIC)
+		scatter.tween_property(particle, "scale", Vector3.ZERO, life).set_ease(Tween.EASE_IN)
+	var ring := _shockwave(sparks, Color(1.0, 0.95, 0.85, 0.85))  # 命中点扩散的一圈冲击波
+	scatter.tween_property(ring, "scale", Vector3.ONE * (3.2 if defeated else 2.4), 0.22).from(Vector3.ONE * 0.4).set_ease(Tween.EASE_OUT)
+	scatter.tween_property(ring.material_override, "albedo_color:a", 0.0, 0.22)
 	scatter.chain().tween_callback(sparks.queue_free)
+
+
+func _shockwave(parent: Node3D, color: Color) -> MeshInstance3D:
+	var torus := TorusMesh.new()
+	torus.inner_radius = 0.085
+	torus.outer_radius = 0.1
+	torus.rings = 24
+	torus.ring_segments = 4
+	var material := StandardMaterial3D.new()
+	material.shading_mode = BaseMaterial3D.SHADING_MODE_UNSHADED
+	material.transparency = BaseMaterial3D.TRANSPARENCY_ALPHA
+	material.blend_mode = BaseMaterial3D.BLEND_MODE_ADD
+	material.no_depth_test = true
+	material.albedo_color = color
+	var ring := MeshInstance3D.new()
+	ring.mesh = torus
+	ring.material_override = material
+	ring.cast_shadow = GeometryInstance3D.SHADOW_CASTING_SETTING_OFF
+	ring.rotation = camera.rotation  # 正对镜头，像一圈平面冲击波
+	ring.rotate_object_local(Vector3.RIGHT, PI / 2.0)
+	parent.add_child(ring)
+	return ring
 
 
 func _motes(at: Vector3, color: Color, count: int, life: float, area: Vector3, drift: Vector3) -> CPUParticles3D:

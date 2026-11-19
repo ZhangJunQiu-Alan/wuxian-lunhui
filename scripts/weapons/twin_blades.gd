@@ -63,13 +63,19 @@ func _process(delta: float) -> void:
 
 	var siege := 1.0 + minf(SIEGE_MAX, nearby * SIEGE_PER_ENEMY)  # 破阵加成
 	var dmg := damage * player.damage_mult * siege
+	var hits := 0
+	var kills := 0
 	for node in enemies:
 		var enemy := node as Enemy
 		var offset := enemy.global_position - global_position
 		if offset.length() <= reach + enemy.radius and absf(_aim.angle_to(offset)) <= HALF_ARC:
 			enemy.take_damage(dmg, offset.normalized() * KNOCKBACK)
+			hits += 1
+			kills += int(enemy.hp <= 0.0)
 	if flurry and is_instance_valid(target):
 		target.take_damage(dmg * 0.5)
+	if hits > 0:
+		player.strike_impact(_aim, false, kills > 0, 0.045)  # 出手快，顿帧短
 
 
 func _first_in_arc(enemies: Array[Node]) -> Enemy:

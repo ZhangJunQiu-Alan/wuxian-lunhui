@@ -9,6 +9,7 @@ signal xp_changed(xp: float, xp_to_next: int, level: int)
 signal leveled_up(level: int)
 signal ult_changed(energy: float, cost: float)
 signal ult_cast(character_id: String)
+signal struck(direction: Vector2, heavy: bool, killed: bool)  # 武器打中敌人（3D 场景用它推镜头）
 signal god_added(god_id: String)
 
 const SPRITE_HEIGHT := 48.0
@@ -364,6 +365,18 @@ func _unhandled_input(event: InputEvent) -> void:
 		try_dash()
 	elif key.keycode == KEY_E:
 		try_ultimate()
+
+
+## 武器打中敌人的那一下：顿帧 + 震屏 + 低频闷响。heavy = 二刀流这类重击（每第 4 刀），killed = 这一下砍死了敌人
+## stop 是普通一击的顿帧秒数，各武器按出手快慢给（出手越快越短，射击类不顿帧）
+## 参考：普通 100 ms、暴击约 130 ms、终结一击约 250 ms 并带一两帧反色（docs/打击感.md）
+func strike_impact(direction: Vector2, heavy: bool, killed: bool, stop: float) -> void:
+	HitStop.hit(self, stop * (2.6 if heavy else (1.35 if killed else 1.0)))
+	shake(6.0 if heavy else 2.6, 0.2 if heavy else 0.12)
+	if heavy:
+		ImpactFrame.play(self)
+	Audio.sfx("hit_thump", -4.0 if heavy or killed else -9.0, 0.1)  # 低频闷击层，叠在挥刀声（高频）和受击声（中频）下面
+	struck.emit(direction, heavy, killed)
 
 
 ## 玩家这一帧想不想出招：按住鼠标左键，或者手柄右摇杆推出去

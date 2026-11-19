@@ -43,6 +43,8 @@ func _process(delta: float) -> void:
 			var id := enemy.get_instance_id()
 			var offset := enemy.global_position - global_position
 			if offset.length() - enemy.radius <= r and not wave.hit.has(id):
+				if wave.hit.is_empty():  # 每圈新星第一次打中敌人时顿一下
+					player.strike_impact(offset.normalized(), false, false, 0.05)
 				wave.hit[id] = true
 				enemy.take_damage(dmg, offset.normalized() * KNOCKBACK)
 	_waves = _waves.filter(func(w: Dictionary) -> bool: return w.t < EXPAND_TIME + 0.15)
