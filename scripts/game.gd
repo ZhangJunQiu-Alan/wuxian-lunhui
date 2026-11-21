@@ -236,8 +236,7 @@ func _update_events() -> void:
 func spawn_enemy(type_id: String, pos: Vector2, elite: bool = false, required: bool = false) -> Enemy:
 	if not is_running() or (not required and get_tree().get_node_count_in_group("enemies") >= level_data.max_enemies):
 		return null
-	var data: Dictionary = EnemyDB.ALL[type_id]
-	var enemy: Enemy = load(data.script).new() if data.has("script") else Enemy.new()
+	var enemy := _create_enemy(type_id)
 	enemy.setup(type_id, enemy_hp_scale(), elite, enemy_damage_scale())
 	enemy.target = player
 	enemy.position = clamp_to_map(pos, enemy.radius)
@@ -247,6 +246,12 @@ func spawn_enemy(type_id: String, pos: Vector2, elite: bool = false, required: b
 	add_child(enemy)
 	_alive_by_type[type_id] = _alive_by_type.get(type_id, 0) + 1
 	return enemy
+
+
+## 关卡可以换成自己的敌人脚本（冻石庭院用 CourtFoe）
+func _create_enemy(type_id: String) -> Enemy:
+	var data: Dictionary = EnemyDB.ALL[type_id]
+	return load(data.script).new() if data.has("script") else Enemy.new()
 
 
 func _on_enemy_killed(enemy: Enemy) -> void:

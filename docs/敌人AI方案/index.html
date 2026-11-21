@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101924">
+  <title>敌人 AI 和打击感方案</title>
+  <link rel="stylesheet" href="style.css?v=9">
+  <script src="review.js?v=2" defer></script>
+</head>
+<body>
+  <header class="masthead">
+    <div class="wrap masthead-inner">
+      <a class="brand" href="#top">诸界余烬<span>敌人方案</span></a>
+      <nav class="history-links" aria-label="反馈记录">
+        <a class="quiet-link" href="api/review" download="敌人AI-选择.json">下载选择</a>
+      </nav>
+    </div>
+  </header>
+  <main id="top">
+    <section class="hero wrap" aria-labelledby="page-title">
+      <div class="hero-copy">
+        <p class="eyebrow">敌人 AI 和受击反馈 · 方案选择</p>
+        <h1 id="page-title">让敌人更有威胁</h1>
+        <p class="hero-summary">冻石庭院里的尸鬼和冰霜精魂已经是 3D，但现在两刀一个、招式单一。下面 7 项每项选一个，标了「推荐」的是我的建议；选完我实现，再录实机给你验收打击感。</p>
+        <a class="primary" href="#toughness">开始选择</a>
+      </div>
+    </section>
+    <div class="wrap review-shell">
+      <aside class="sidebar" aria-label="验收导航">
+        <p class="eyebrow">进度</p>
+        <p id="progress" class="progress" aria-live="polite">加载中</p>
+        <p class="review-history">每项选好后点「保存」。</p>
+        <nav id="sections" aria-label="验收项目"></nav>
+      </aside>
+      <div id="work" class="work"></div>
+    </div>
+  </main>
+  <template id="review-item">
+    <section class="work-item">
+      <header class="item-head">
+        <div><h2></h2><p class="description"></p></div>
+        <span class="item-status"></span>
+      </header>
+      <div class="evidence"></div>
+      <form>
+        <fieldset>
+          <legend>验收结果</legend>
+          <div class="decisions">
+            <label><input type="radio" name="status" value="pending" checked><span>待验收</span></label>
+            <label><input type="radio" name="status" value="approved"><span>通过</span></label>
+            <label><input type="radio" name="status" value="revise"><span>需修改</span></label>
+          </div>
+        </fieldset>
+        <label class="note-label">意见<textarea name="note" rows="3" maxlength="3000" placeholder="需要调整的地方和期望效果"></textarea></label>
+        <div class="form-footer"><button type="submit">保存</button><span class="save-result" role="status"></span></div>
+      </form>
+    </section>
+  </template>
+</body>
+</html>

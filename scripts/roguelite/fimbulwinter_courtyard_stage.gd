@@ -15,6 +15,7 @@ const PORTAL_SHADER := preload("res://scripts/roguelite/courtyard_portal.gdshade
 const OUTLINE_SHADER := preload("res://scripts/roguelite/courtyard_actor_outline.gdshader")
 const Hero3D := preload("res://scripts/roguelite/courtyard_hero_3d.gd")
 const Enemy3D := preload("res://scripts/roguelite/courtyard_enemy_3d.gd")
+const AIM_LENGTH := 4.2  # 冰锥瞄准线长度（世界单位）
 
 var player: Player
 var camera: Camera3D
@@ -153,7 +154,7 @@ func track(enemy: Enemy) -> void:
 		model.name = "Foe3D"
 		add_child(model, true)
 		model.setup(enemy.type_id, _sun)
-		model.configure(enemy)
+		model.configure(enemy as CourtFoe)
 		actor.set_meta("model", model)
 		top = model.head_height() + 0.16
 	else:
@@ -166,6 +167,9 @@ func track(enemy: Enemy) -> void:
 		var cast := _ring(actor, 0.37, ICE, 0.025)
 		cast.name = "Cast"
 		cast.hide()
+		actor.add_child(_aim_line())
+	if enemy is CourtFoe:
+		(enemy as CourtFoe).spike_cast.connect(_ice_spike)
 	actor.set_meta("hp", enemy.hp)
 	_actors[enemy] = actor
 	enemy.killed.connect(_foe_fell)
@@ -188,8 +192,11 @@ func _foe_fell(enemy: Enemy) -> void:
 		actor.set_meta("hp", enemy.hp)
 		_hit(enemy.global_position, true)
 		var model: Enemy3D = actor.get_meta("model", null)
-		if is_instance_valid(model):
-			model.die(player.global_position.direction_to(enemy.global_position))
+		if is_instance_valid(model):  # 砍死时尸体被击飞 1–1.5 m（不穿墙）
+			var away := player.global_position.direction_to(enemy.global_position)
+			var landing := enemy.global_position + away * randf_range(100.0, 150.0)
+			landing = MapLayer.push_out(Game.clamp_to_map(landing, enemy.radius), enemy.radius)
+			model.die(away, world_at(landing))
 
 
 func set_approach_seal(visible_seal: bool) -> void:
@@ -346,6 +353,79 @@ func _ice_shard() -> Node3D:
 	return shard
 
 
+## 冰锥的瞄准线：施法时从精魂脚下沿出手方向铺一条细线，越来越亮；锁定方向后变白变粗
+func _aim_line() -> Node3D:
+	var aim := Node3D.new()
+	aim.name = "Aim"
+	aim.hide()
+	var line := _beam(aim, Vector3(0, 0.03, 0.3 + AIM_LENGTH * 0.5), Vector3(0.05, 0.004, AIM_LENGTH), ICE)
+	line.name = "Line"
+	(line.material_override as StandardMaterial3D).blend_mode = BaseMaterial3D.BLEND_MODE_ADD
+	return aim
+
+
+func _show_aim(aim: Node3D, foe: CourtFoe) -> void:
+	aim.visible = foe.action == "bolt" and not foe._struck
+	if not aim.visible:
+		return
+	aim.rotation.y = atan2(foe.aim.x, foe.aim.y)
+	var line := aim.get_node("Line") as MeshInstance3D
+	var locked := foe.aim_locked()
+	line.scale.x = 1.8 if locked else 1.0
+	(line.material_override as StandardMaterial3D).albedo_color = Color(1.0, 1.0, 1.0, 0.85) if locked else Color(ICE, 0.15 + 0.45 * foe.charge())
+
+
+## 冰刺：玩家脚下先亮一圈预警，圈里慢慢填满；delay 秒后一簇冰棱从地里刺出来，那时还站在圈里就挨打
+func _ice_spike(at: Vector2, radius: float, delay: float, damage: float) -> void:
+	var spot := Node3D.new()
+	spot.name = "IceSpike"
+	spot.position = world_at(at)
+	add_child(spot)
+	var size := radius * SCALE
+	var edge := _ring(spot, size, ICE, 0.03)
+	var fill := _mesh(spot, CylinderMesh.new(), Vector3.UP * 0.02, Color(ICE, 0.22))
+	var disc := fill.mesh as CylinderMesh
+	disc.top_radius = size
+	disc.bottom_radius = size
+	disc.height = 0.004
+	fill.scale = Vector3(0.05, 1.0, 0.05)
+	var warn := spot.create_tween()
+	warn.tween_property(fill, "scale", Vector3.ONE, delay).set_trans(Tween.TRANS_QUAD).set_ease(Tween.EASE_IN)
+	warn.tween_callback(func() -> void:
+		edge.queue_free()
+		fill.queue_free()
+		if is_instance_valid(player) and player.global_position.distance_to(at) <= radius + Player.RADIUS * 0.5:
+			player.take_damage(damage, null)
+		_erupt(spot, size))
+
+
+func _erupt(spot: Node3D, size: float) -> void:
+	_impact = maxf(_impact, 0.06)
+	_impact_direction = Vector3(0.0, 1.0, 0.0)
+	var grow := spot.create_tween().set_parallel(true)
+	for i in 7:
+		var cone := CylinderMesh.new()
+		cone.top_radius = 0.0
+		cone.bottom_radius = 0.07 if i == 0 else randf_range(0.04, 0.06)
+		cone.height = 0.75 if i == 0 else randf_range(0.35, 0.6)
+		cone.radial_segments = 5
+		cone.rings = 1
+		var angle := TAU * i / 6.0 + randf_range(-0.3, 0.3)
+		var offset := Vector3.ZERO if i == 0 else Vector3(cos(angle), 0.0, sin(angle)) * size * randf_range(0.45, 0.8)
+		var shard := _mesh(spot, cone, offset, Color(1.15, 1.45, 1.75) if i % 2 == 0 else Color(0.8, 1.05, 1.3))
+		shard.rotation = Vector3(offset.z, 0.0, -offset.x) * 0.9  # 外圈的冰棱往外斜
+		shard.scale = Vector3(1.0, 0.01, 1.0)
+		var top := shard.position + Vector3.UP * cone.height * 0.5
+		grow.tween_property(shard, "scale", Vector3.ONE, 0.09).set_trans(Tween.TRANS_BACK).set_ease(Tween.EASE_OUT)
+		grow.tween_property(shard, "position", top, 0.09).set_ease(Tween.EASE_OUT)
+		grow.tween_property(shard, "scale", Vector3(1.0, 0.01, 1.0), 0.3).set_delay(0.55).set_ease(Tween.EASE_IN)
+		grow.tween_property(shard, "position", shard.position, 0.3).set_delay(0.55).set_ease(Tween.EASE_IN)
+	var ring := _shockwave(spot, Color(0.7, 0.9, 1.0, 0.8))
+	grow.tween_property(ring, "scale", Vector3.ONE * size * 18.0, 0.22).from(Vector3.ONE * size * 4.0).set_ease(Tween.EASE_OUT)
+	grow.tween_property(ring.material_override, "albedo_color:a", 0.0, 0.22)
+	grow.chain().tween_callback(spot.queue_free)
+
+
 func _billboard(parent: Node3D, pixel_size: float) -> Sprite3D:
 	var body := Sprite3D.new()
 	body.rotation = camera.rotation
@@ -449,10 +529,12 @@ func _sync_enemy(enemy: Enemy, actor: Node3D) -> void:
 		if model:
 			model.react()
 	actor.set_meta("hp", enemy.hp)
+	var foe := enemy as CourtFoe
 	if actor.has_node("Cast"):
-		actor.get_node("Cast").visible = enemy._casting
+		actor.get_node("Cast").visible = foe.action != ""
+		_show_aim(actor.get_node("Aim") as Node3D, foe)
 	if model:
-		model.sync(enemy, actor.position, get_process_delta_time())
+		model.sync(foe, actor.position, get_process_delta_time())
 		return
 	var anim := enemy._actions
 	var body := actor.get_node("Body") as Sprite3D

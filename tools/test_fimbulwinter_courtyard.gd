@@ -171,24 +171,111 @@ func _run() -> void:
 	_check(not _room.stage.find_children("Body", "Sprite3D", true, false).any(func(b: Node) -> bool: return b.visible and b.texture != null),
 		"no pixel billboards remain for the draugr and the ice spirit")
 	for foe: Node in foes_3d:
-		var wanted: Array = ["idle", "walk", "attack", "hit", "death"] if foe.type_id == "draugr" else ["idle", "cast", "hit", "death"]
+		var wanted: Array = ["idle", "walk", "attack", "sweep", "kneel", "hit", "death"] if foe.type_id == "draugr" else ["idle", "cast", "hit", "death"]
 		_check(wanted.all(func(a: String) -> bool: return foe.anim.has_animation(a)), "the 3D %s carries its actions" % foe.type_id)
 	await _wait(0.6)
 	_check(foes_3d.any(func(f: Node) -> bool: return f.type_id == "draugr" and f.anim.current_animation in ["walk", "attack"]), "a draugr marches toward the player")
 	await _capture("approach-fight")
 	var spears_before: int = _room.stage.Enemy3D.spears_dropped
-	var lancer: Node2D = get_nodes_in_group("enemies").filter(func(e: Node) -> bool: return e.type_id == "draugr")[0]
-	lancer.position = _room.player.position + Vector2(-lancer.attack_reach * 0.95, 0)  # 矛尖刚好够得着的距离
+	var foes_2d := get_nodes_in_group("enemies")
+	for foe: Node2D in foes_2d:
+		foe.set_physics_process(false)  # 一个一个单独测招式
+	_room.player.max_hp = 1000.0
+	_room.player.hp = 1000.0
+	_room.stage._player_hp = 1000.0
+	var lancer: Node2D = foes_2d.filter(func(e: Node) -> bool: return e.type_id == "draugr")[0]
+	var caster: Node2D = foes_2d.filter(func(e: Node) -> bool: return e.type_id == "ice_spirit")[0]
+	_check(is_equal_approx(lancer.max_hp, 80.0) and is_equal_approx(caster.max_hp, 40.0), "draugr take 4 katana cuts, ice spirits 2 (%.0f / %.0f hp)" % [lancer.max_hp, caster.max_hp])
+	for foe: Node2D in foes_2d:
+		foe.position = _room.player.position + Vector2(-600, 0)  # 挪开，别推挤到被测的那只
+	lancer.set_physics_process(true)
+	var side := Vector2.RIGHT  # 找一个垫步路线上没有石头和墙的方向
+	for turn in 12:
+		side = Vector2.RIGHT.rotated(TAU * turn / 12.0)
+		var clear := true
+		for k in 5:
+			var probe: Vector2 = _room.player.position + side * (lancer.reach() * 0.95 - 15.0 * k)
+			clear = clear and collision_grid.push_out(_room.clamp_to_map(probe, lancer.radius), lancer.radius) == probe
+		if clear:
+			break
+	var origin: Vector2 = _room.player.position + side * lancer.reach() * 0.95  # 垫步一刺刚好够得着的距离
+	lancer.position = origin
+	lancer.action = ""  # 冻住时可能正刺到一半
 	lancer._attack_cd = 0.0
 	await _wait(0.05)
-	_check(lancer._attack_t > 0.0 and lancer.position.distance_to(_room.player.position) > lancer.radius + _room.player.RADIUS + 30.0,
-		"the draugr thrusts from spear reach instead of closing to contact")
-	_check(lancer.attack_reach > 170.0, "the reach matches the measured spear tip (%.0f px)" % lancer.attack_reach)
+	_check(lancer.action == "thrust" and lancer.position.distance_to(_room.player.position) > 200.0,
+		"the draugr thrusts from spear reach plus a lunge instead of closing to contact")
+	_check(lancer.moves.thrust.reach > 170.0, "the reach matches the measured spear tip (%.0f px)" % lancer.moves.thrust.reach)
 	var hp_before: float = _room.player.hp
-	await _wait(lancer.attack_time * lancer.attack_strike + 0.05)
+	await _wait(lancer.moves.thrust.strike + 0.03)
+	_check((lancer.position - origin).dot(-side) > 50.0, "the thrust lunges about 0.6 m forward (%.0f px)" % (lancer.position - origin).dot(-side))
 	_check(_room.player.hp < hp_before, "the spear thrust lands at its tip (hp %.0f -> %.0f)" % [hp_before, _room.player.hp])
 	_check(not _room.hud._hurt_flash.visible and _room.stage.get_children().any(func(n: Node) -> bool: return n is Node3D and n.get_child_count() > 10 and n.get_child(0) is MeshInstance3D),
 		"getting hit shows 3D shards at the swordsman instead of a full-screen red flash")
+	await _wait(lancer.moves.thrust.time)
+	hp_before = _room.player.hp
+	lancer.position = _room.player.position + Vector2(-80, 0)
+	lancer._attack_cd = 0.0
+	await _wait(0.05)
+	_check(lancer.action == "sweep", "a draugr sweeps when the player stands inside its spear (%s)" % lancer.action)
+	await _wait(lancer.moves.sweep.strike + 0.03)
+	_check(_room.player.hp < hp_before, "the sweep hits a player standing close")
+	await _wait(lancer.moves.sweep.time)
+	lancer._attack_cd = 5.0
+	lancer.take_damage(10.0)
+	_check(lancer.stagger > 0.0 and not lancer.kneeling, "a cut staggers an idle draugr")
+	lancer._attack_cd = 0.0
+	lancer.stagger = 0.0
+	lancer.position = _room.player.position + Vector2(-lancer.reach() * 0.95, 0)
+	await _wait(0.05)
+	lancer.take_damage(10.0)
+	_check(lancer.action == "thrust" and lancer.stagger <= 0.0, "a cut does not interrupt a thrust (super armor)")
+	lancer.take_damage(10.0)
+	_check(lancer.kneeling and lancer.action == "", "three cuts in a row break its poise: it kneels")
+	var before_kneel: float = lancer.hp
+	lancer.take_damage(10.0)
+	_check(is_equal_approx(before_kneel - lancer.hp, 15.0), "a kneeling draugr takes +50%% damage (%.1f)" % (before_kneel - lancer.hp))
+	await _wait(1.1)
+	_check(not lancer.kneeling, "it rises after a second")
+	lancer.set_physics_process(false)
+	lancer.position = _room.player.position + Vector2(-500, 260)
+	caster.set_physics_process(true)
+	caster.position = _room.player.position + Vector2(150, 0)
+	caster._spell_cd = 9.0
+	await _wait(0.75)
+	_check(caster.position.distance_to(_room.player.position) > 300.0, "the ice spirit drifts back when the player closes in (%.0f px)" % caster.position.distance_to(_room.player.position))
+	caster.position = _room.player.position + Vector2(260, 0)
+	caster._spell_cd = 0.0
+	caster._next_spell = "bolt"
+	await _wait(0.3)
+	var aim_line: Node3D = _room.stage._actors[caster].get_node("Aim")
+	_check(caster.action == "bolt" and aim_line.visible, "the ice bolt shows a ground aim line while it charges")
+	await _wait(caster.moves.bolt.strike - 0.3 + 0.05)
+	_check(get_nodes_in_group("enemy_projectiles").size() > 0 and not aim_line.visible, "the bolt flies and the aim line goes out")
+	_check(get_nodes_in_group("enemy_projectiles").all(func(b: Node) -> bool: return is_equal_approx(b.speed, 230.0 * 1.2)), "the ice bolt flies 1.2x as fast as a plain shard")
+	_check(caster.DRIFT_COOLDOWN == 5.0 and caster._drift_cd > 3.0, "after drifting the spirit waits 5 s before drifting again")
+	for i in 60:
+		if get_nodes_in_group("enemy_projectiles").is_empty():
+			break
+		await _wait(0.05)
+	await _wait(0.6)
+	hp_before = _room.player.hp
+	caster._spell_cd = 0.0
+	caster._next_spell = "spike"
+	await _wait(caster.moves.spike.strike + 0.1)
+	_check(_room.stage.has_node("IceSpike"), "the ice spike marks the player's feet first")
+	_check(_room.player.hp == hp_before, "the spike does not hurt before it erupts")
+	await _wait(caster.SPIKE_DELAY)
+	_check(_room.player.hp < hp_before, "standing in the mark gets the player hit by the spike")
+	for foe: Node2D in foes_2d:
+		foe.set_physics_process(true)
+	var model: Node3D = _room.stage._actors[lancer].get_meta("model")
+	var fell_at: Vector3 = _room.stage.world_at(lancer.position)
+	_room.player.position = lancer.position + Vector2(-60, 0)
+	lancer.take_damage(1000.0)
+	await _wait(0.6)
+	_check(model.dying and Vector2(model.position.x - fell_at.x, model.position.z - fell_at.z).length() > 0.9,
+		"a killing cut knocks the corpse 1-1.5 m away (%.2f)" % Vector2(model.position.x - fell_at.x, model.position.z - fell_at.z).length())
 	_check(collision_grid.push_out(Vector2(-1947,-336), _room.player.RADIUS).distance_to(Vector2(-1947,-336)) > 20.0,
 		"the stone parapet and its collision share the same path")
 	await _fight()

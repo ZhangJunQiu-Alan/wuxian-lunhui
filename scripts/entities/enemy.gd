@@ -47,11 +47,6 @@ var target: Player
 var gait := "walk"
 var attack_kind := "claw"
 var actions := ACTIONS  # 要找的动作帧条，Boss 有更多动作
-## 持长兵器的近战（冻石庭院的 3D 尸鬼）：> 0 时停在这个距离外出招，出手瞬间矛尖够得着才算命中；0 = 原来的贴身攻击
-var attack_reach := 0.0
-var attack_time := ATTACK_TIME
-var attack_strike := ATTACK_STRIKE
-var attack_cooldown := ATTACK_COOLDOWN
 var ghost := false  # 穿过其他敌人、冥河和物件
 var dodge := 0.0
 var split_into := ""
@@ -417,8 +412,6 @@ func _physics_process(delta: float) -> void:
 	_hit_slow_time -= delta
 	if _hit_slow_time <= 0.0:
 		_hit_slow = 0.0
-	if attack_reach > 0.0 and (_attack_t > 0.0 or dist < attack_reach * 0.92):
-		move = Vector2.ZERO  # 长兵器：站在矛尖刚好够得着的地方（端着的矛碰不到人），出招过程中站定
 	position += move * speed * move_mult() * delta + _knockback * delta + (Vector2.ZERO if ghost else _separation())
 	_knockback *= exp(-KNOCKBACK_DECAY * delta)
 	_update_attack(dir, dist, delta)
@@ -469,12 +462,12 @@ func _update_attack(dir: Vector2, dist: float, delta: float) -> void:
 	if _attack_t > 0.0:
 		var before := _attack_t
 		_attack_t -= delta
-		var strike_at := attack_time * (1.0 - attack_strike)
+		var strike_at := ATTACK_TIME * (1.0 - ATTACK_STRIKE)
 		if before > strike_at and _attack_t <= strike_at:
 			_strike()
-	elif _attack_cd <= 0.0 and dist < (attack_reach * 0.98 if attack_reach > 0.0 else radius + Player.RADIUS + ATTACK_REACH):
-		_attack_t = attack_time
-		_attack_cd = attack_cooldown * randf_range(0.85, 1.15)
+	elif _attack_cd <= 0.0 and dist < radius + Player.RADIUS + ATTACK_REACH:
+		_attack_t = ATTACK_TIME
+		_attack_cd = ATTACK_COOLDOWN * randf_range(0.85, 1.15)
 		_attack_dir = dir
 		_play_attack_frames()
 
@@ -493,7 +486,7 @@ func _play_attack_frames() -> void:
 
 ## 攻击动作的位移：先往后缩，再猛地扑出去，然后收回。巨人是慢慢举高再砸回地面
 func _attack_offset() -> Vector2:
-	if _attack_t <= 0.0 or attack_reach > 0.0:
+	if _attack_t <= 0.0:
 		return Vector2.ZERO
 	var k := 1.0 - _attack_t / ATTACK_TIME  # 0 → 1
 	var dist := radius * 0.5 + 5.0  # 体型越大扑得越远
@@ -511,9 +504,6 @@ func _attack_offset() -> Vector2:
 
 ## 出手瞬间的特效
 func _strike() -> void:
-	if attack_reach > 0.0:
-		_thrust()
-		return
 	var at := global_position + _attack_dir * (radius + 4.0)
 	var size := radius * 2.0 + 10.0
 	match attack_kind:
@@ -527,16 +517,6 @@ func _strike() -> void:
 				target.shake(3.0 if not is_elite else 5.0, 0.12)
 		_:
 			FxLayer.mark(at, _attack_dir.angle() + 0.9, size, Color(1.0, 0.35, 0.3), "claw")
-
-
-## 长兵器出手：玩家在矛杆这条线上（从身前到矛尖）就挨这一下；出招前已锁定方向，躲开就没事
-func _thrust() -> void:
-	if not is_instance_valid(target):
-		return
-	var tip := global_position + _attack_dir * attack_reach
-	var closest := Geometry2D.get_closest_point_to_segment(target.global_position, global_position, tip)
-	if closest.distance_to(target.global_position) <= Player.RADIUS + 8.0:
-		target.take_damage(contact_damage, self)
 
 
 ## 远程敌人：太远就靠近，进入射程后停下定时射击（不会后退，近战角色可以追上去砍）

@@ -129,10 +129,12 @@ func _spawn_encounter(foes: Array) -> void:
 	for entry in foes:
 		var enemy := spawn_enemy(entry[0], entry[1], false, true)
 		enemy.hide()
-		enemy.max_hp *= 2.7
-		enemy.hp = enemy.max_hp
 		enemy.xp_value = 0
 		stage.track(enemy)
+
+
+func _create_enemy(_type_id: String) -> Enemy:
+	return CourtFoe.new()  # 尸鬼、精魂的招式和硬直按房间战斗重调过（court_foe.gd），血量也在那里
 
 
 func _offers(entry: Dictionary) -> Array[Dictionary]:

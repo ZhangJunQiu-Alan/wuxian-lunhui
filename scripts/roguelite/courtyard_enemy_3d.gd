@@ -1,5 +1,5 @@
 extends Node3D
-## 中庭里的 3D 敌人（尸鬼、冰霜精魂）：跟随 2D 敌人的状态播放动作、转向、受击闪白和压扁，死亡后倒地再沉入雪里。
+## 中庭里的 3D 敌人（尸鬼、冰霜精魂）：跟随 CourtFoe 的状态播放招式、转向、受击闪白和压扁，死后被击飞、倒地、风化消散。
 ## 模型和动作来自 assets/source/敌人3D/04_绑骨/（阶段 4），动作里的时间点在 Blender 里量过（见 05_接入/说明.md）。
 
 const INK := preload("res://scripts/roguelite/courtyard_ink_actor.gdshader")
@@ -18,7 +18,9 @@ const ICE := Color("#9ddff7")
 ## 一次性动作截取的片段：[起点 s, 终点 s, 播放速度]
 const CLIPS := {
 	"draugr": {
-		"attack": [0.30, 1.95, 1.8],  # 0.3–0.6 回抽蓄力，1.33 刺到最远，1.9 收回
+		"attack": [0.30, 1.95, 1.8],  # 0.3–0.6 回抽蓄力，0.95 起往前送，1.33 刺到最远，1.9 收回
+		"sweep": [0.40, 1.75, 1.2],  # 0.4–1.0 把矛甩到左后方，1.07 低扫过正前方，1.5 矛尖落地
+		"kneel": [0.30, 2.15, 1.85],  # 0.33–0.67 跪下，停到 1.53，2.07 站直；按 1.85 倍速正好 1 s
 		"hit": [0.45, 1.25, 2.0],
 		"death": [0.0, 3.0, 1.3],  # 1.83 倒地
 	},
@@ -29,6 +31,12 @@ const CLIPS := {
 	},
 }
 const THRUST_PEAK := 1.33  # 突刺动作里矛尖刺到最远的时刻
+const LUNGE_START := 0.95  # 突刺动作里身体开始往前送的时刻，垫步从这里开始
+const SWEEP_HIT := 1.067  # 横扫动作里矛扫过正前方的时刻
+## 横扫是从左后方扫到右前方（-105° → +28°），出招时身体右转 20°，让扫过的扇形对准目标；扫过正前方时矛尖离身体 1.9 m
+const SWEEP_YAW := 0.35
+const SWEEP_TIP := 1.9
+const CAST_RELEASE := 1.35  # 施法动作里双手推出的时刻
 ## 刺到最远时矛尖的位置（Blender 里逐帧量矛的顶点，模型米）：向前 2.26、向左 0.78、高 1.32。
 ## 突刺是斜着往左前方刺的，所以出招时身体右转 19°，让矛尖正对目标；矛尖离身体中心 2.39 m
 const THRUST_TIP := Vector2(0.78, 2.26)
@@ -54,8 +62,8 @@ var _action := ""  # 正在播放的一次性动作
 var _action_left := 0.0
 var _last_position := Vector3.INF
 var _velocity := Vector3.ZERO
-var _was_casting := false
-var _was_attacking := false
+var _foe_action := ""
+var _was_kneeling := false
 var _glow: MeshInstance3D
 var _shards: Node3D
 var _mist: CPUParticles3D
@@ -83,15 +91,20 @@ func setup(id: String, sun: DirectionalLight3D) -> void:
 	anim.seek(randf() * anim.current_animation_length, true)  # 错开待机节奏
 
 
-## 尸鬼的出招时间和距离按突刺动作来：蓄力到刺出的那一刻才判定命中
-func configure(enemy: Enemy) -> void:
+## 招式的时长、出手时刻和距离按动作来：动作里刺到最远、扫过正前方、双手推出的那一刻才判定
+func configure(foe: CourtFoe) -> void:
 	if type_id != "draugr":
 		return
 	var clip: Array = CLIPS.draugr.attack
-	enemy.attack_reach = THRUST_TIP.length() * _scale / Game3D_SCALE
-	enemy.attack_time = (clip[1] - clip[0]) / clip[2]
-	enemy.attack_strike = (THRUST_PEAK - clip[0]) / (clip[1] - clip[0])
-	enemy.attack_cooldown = enemy.attack_time + 1.0  # 一刺之后喘一秒，给玩家还手的空当
+	var thrust: Dictionary = foe.moves.thrust
+	thrust.reach = THRUST_TIP.length() * _scale / Game3D_SCALE
+	thrust.time = (clip[1] - clip[0]) / clip[2]
+	thrust.strike = (THRUST_PEAK - clip[0]) / clip[2]
+	thrust.lunge = Vector2((LUNGE_START - clip[0]) / clip[2], thrust.strike)
+	clip = CLIPS.draugr.sweep
+	foe.moves.sweep.time = (clip[1] - clip[0]) / clip[2]
+	foe.moves.sweep.strike = (SWEEP_HIT - clip[0]) / clip[2]
+	foe.moves.sweep.radius = SWEEP_TIP * _scale / Game3D_SCALE
 
 
 func has_model() -> bool:
@@ -124,7 +137,7 @@ func _ink(mesh: MeshInstance3D) -> void:
 		materials.append(ink)
 
 
-func sync(enemy: Enemy, at: Vector3, delta: float) -> void:
+func sync(foe: CourtFoe, at: Vector3, delta: float) -> void:
 	if dying:  # 2D 敌人在被删掉前的这一帧还会同步一次
 		return
 	_clock += delta
@@ -136,56 +149,66 @@ func sync(enemy: Enemy, at: Vector3, delta: float) -> void:
 		_velocity = _velocity.lerp(Vector3(moved.x, 0.0, moved.z) / delta, 1.0 - exp(-8.0 * delta))
 	var velocity := _velocity
 	var look := Vector2.ZERO
-	if enemy._attack_t > 0.0:
-		look = enemy._attack_dir
-	elif is_instance_valid(enemy.target) and (enemy._casting or velocity.length() < 0.1):
-		look = enemy.global_position.direction_to(enemy.target.global_position)
+	if foe.action != "":
+		look = foe.aim
+	elif is_instance_valid(foe.target) and (foe.drift > 0.0 or foe.stagger > 0.0 or velocity.length() < 0.1):
+		look = foe.global_position.direction_to(foe.target.global_position)  # 往后飘时也盯着玩家
 	elif velocity.length() >= 0.1:
 		look = Vector2(velocity.x, velocity.z)
 	if look.length_squared() > 0.0001:
-		var aim := atan2(look.x, look.y) + (THRUST_YAW if _action == "attack" else 0.0)
-		_yaw = lerp_angle(_yaw, aim, 1.0 - exp(-TURN_RATE * 2.0 * delta) if _action == "attack" else 1.0 - exp(-TURN_RATE * delta))
+		var striking := _action == "attack" or _action == "sweep"
+		var aim := atan2(look.x, look.y) + (THRUST_YAW if _action == "attack" else (SWEEP_YAW if _action == "sweep" else 0.0))
+		_yaw = lerp_angle(_yaw, aim, 1.0 - exp(-TURN_RATE * (2.0 if striking else 1.0) * delta))
 		rotation.y = _yaw
 
-	_action_left -= delta * (0.0 if enemy.is_frozen() else 1.0)
-	var attacking := enemy._attack_t > 0.0 and type_id == "draugr"
-	if attacking and not _was_attacking:
-		_play(&"attack")
-	elif enemy._casting and not _was_casting and type_id == "ice_spirit":
-		_play(&"cast")
-	elif _action_left <= 0.0:
+	_action_left -= delta * (0.0 if foe.is_frozen() else 1.0)
+	if foe.action != _foe_action and foe.action != "":
+		match foe.action:
+			"thrust":
+				_play(&"attack")
+			"sweep":
+				_play(&"sweep")
+			_:  # 冰锥、冰刺都用施法动作，按出手时刻调速：双手推出的那一刻正好出手
+				var clip: Array = CLIPS.ice_spirit.cast
+				_play(&"cast", (CAST_RELEASE - clip[0]) / foe.moves[foe.action].strike)
+	elif foe.kneeling and not _was_kneeling:
+		_play(&"kneel")
+		_action_left = CourtFoe.KNEEL_TIME
+	elif _action_left <= 0.0 and not foe.kneeling:
 		_action = ""
 		var speed := velocity.length()
 		if type_id == "draugr" and speed > 0.15:
 			_loop(&"walk", clampf(speed / (WALK_REFERENCE * _scale), 0.5, 1.6))
 		else:
 			_loop(&"idle", 1.0)
-	_was_attacking = attacking
-	_was_casting = enemy._casting
-	anim.speed_scale = 0.0 if enemy.is_frozen() else 1.0  # 被定住时动作也停住
+	_foe_action = foe.action
+	_was_kneeling = foe.kneeling
+	anim.speed_scale = 0.0 if foe.is_frozen() else 1.0  # 被定住时动作也停住
 
-	var squash := enemy.hit_squash()  # 2D 的压扁回弹减半用在 3D 上
+	var squash := foe.hit_squash()  # 2D 的压扁回弹减半用在 3D 上
 	var s := Vector2.ONE + (squash - Vector2.ONE) * 0.5
 	model.scale = Vector3(s.x, s.y, s.x) * _scale
-	var flash := enemy.hit_flash()
+	var flash := foe.hit_flash()
 	for material in materials:
 		material.set_shader_parameter("flash", Color(1.0, 0.97, 0.92, flash * 0.85))
 	if type_id == "ice_spirit":
-		_animate_spirit(enemy, velocity, delta)
+		_animate_spirit(foe, velocity, delta)
 
 
 ## 受击：截取受击动作里最猛的一段快速播一遍；正在出招时不打断（霸体），只闪白
 func react() -> void:
-	if dying or _action in ["attack", "cast"]:
+	if dying or _action in ["attack", "sweep", "cast", "kneel"]:
 		return
 	_play(&"hit")
 
 
-func _play(action: StringName) -> void:
+func _play(action: StringName, speed := 0.0) -> void:
 	var clip: Array = CLIPS[type_id][String(action)]
+	speed = speed if speed > 0.0 else clip[2]
 	_action = String(action)
-	_action_left = (clip[1] - clip[0]) / clip[2]
-	anim.play(action, BLEND * 0.5, clip[2])
+	_action_left = (clip[1] - clip[0]) / speed
+	var name := action if anim.has_animation(action) else ({&"sweep": &"attack", &"kneel": &"hit"} as Dictionary)[action] as StringName
+	anim.play(name, BLEND * (1.0 if action in [&"sweep", &"kneel"] else 0.5), speed)
 	anim.seek(clip[0], true)
 
 
@@ -195,8 +218,10 @@ func _loop(action: StringName, speed: float) -> void:
 
 ## 敌人死了，2D 节点马上就会被删掉；3D 模型留下来播完倒地，然后原地风化成雪尘消散
 ## （2026-11-21 和 Gemini、Codex 讨论后定的：不再往地下沉——地面是画出来的平面，往下移会被一刀切出硬直线）
-func die(direction: Vector2) -> void:
+func die(direction: Vector2, landing: Vector3) -> void:
 	dying = true
+	var flight := create_tween()  # 被一刀砍飞：先快后慢滑出去，和倒地动作一起播
+	flight.tween_property(self, "position", landing, 0.42).set_trans(Tween.TRANS_CUBIC).set_ease(Tween.EASE_OUT)
 	if direction.length_squared() > 0.0001:  # 面朝砍过来的方向倒下
 		_yaw = atan2(-direction.x, -direction.y)
 		rotation.y = _yaw
@@ -400,13 +425,14 @@ func _spirit_effects() -> void:
 	add_child(_mist)
 
 
-func _animate_spirit(enemy: Enemy, velocity: Vector3, delta: float) -> void:
+func _animate_spirit(foe: CourtFoe, velocity: Vector3, delta: float) -> void:
 	model.position.y = LIFT + sin(_clock * 2.2) * 0.04
-	var lean := clampf(velocity.length() * 0.18, 0.0, 0.2)  # 飘动时身子往前倾
+	var lean := clampf(velocity.length() * 0.18, 0.0, 0.2)  # 飘动时身子往前倾，往后飘时往后仰
+	if foe.drift > 0.0:
+		lean = -0.3
 	model.rotation.x = lerpf(model.rotation.x, lean, 1.0 - exp(-6.0 * delta))
-	var charge := 0.0
-	if enemy._casting:
-		charge = clampf(1.0 - enemy._shoot_timer / Enemy.CAST_TIME, 0.0, 1.0)
+	_mist.initial_velocity_max = 0.5 if foe.drift > 0.0 else 0.16
+	var charge := foe.charge() if not foe._struck else 0.0
 	var pulse := 1.0 + 0.12 * sin(_clock * 5.0) + charge * 0.7  # 聚能时胸口的冰光变大变亮
 	_glow.scale = Vector3.ONE * pulse
 	(_glow.material_override as StandardMaterial3D).albedo_color = Color(0.6, 0.88, 1.0, 0.5 + 0.3 * charge)
