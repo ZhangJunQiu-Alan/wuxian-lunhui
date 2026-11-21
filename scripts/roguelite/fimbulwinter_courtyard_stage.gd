@@ -14,6 +14,7 @@ const SHADOW_SHADER := preload("res://scripts/roguelite/courtyard_contact_shadow
 const PORTAL_SHADER := preload("res://scripts/roguelite/courtyard_portal.gdshader")
 const OUTLINE_SHADER := preload("res://scripts/roguelite/courtyard_actor_outline.gdshader")
 const Hero3D := preload("res://scripts/roguelite/courtyard_hero_3d.gd")
+const Enemy3D := preload("res://scripts/roguelite/courtyard_enemy_3d.gd")
 
 var player: Player
 var camera: Camera3D
@@ -32,11 +33,13 @@ var _center := Vector3.ZERO
 var hero: Hero3D
 var _hero_shadow: MeshInstance3D
 var _contact: ShaderMaterial
+var _sun: DirectionalLight3D
 var _actors: Dictionary[Enemy, Node3D] = {}
-var _shots: Dictionary[EnemyProjectile, MeshInstance3D] = {}
+var _shots: Dictionary[EnemyProjectile, Node3D] = {}
 var _clock := 0.0
 var _impact := 0.0
 var _impact_direction := Vector3.RIGHT
+var _player_hp := 0.0
 var exit_threshold: PackedVector2Array
 
 
@@ -60,6 +63,7 @@ func _ready() -> void:
 	sun.shadow_enabled = true
 	sun.directional_shadow_max_distance = 40.0
 	add_child(sun)
+	_sun = sun
 	var fill := DirectionalLight3D.new()
 	fill.rotation_degrees = Vector3(-37, 144, 0)
 	fill.light_color = Color("#95b4ec")
@@ -109,6 +113,8 @@ func _ready() -> void:
 	hero.light_from(sun)
 	player.died.connect(func() -> void: hero.die(player.death_duration()))
 	player.struck.connect(_on_struck)
+	_player_hp = player.hp
+	player.hp_changed.connect(_on_player_hp)
 	_ring(self, 0.235, Color("#b3e0e8b8"), 0.015).name = "PlayerRing"
 	_approach_seal = Node3D.new()
 	_approach_seal.position = world_at(Vector2(get_parent().APPROACH_LIMIT, 0))
@@ -141,9 +147,19 @@ func track(enemy: Enemy) -> void:
 	actor.position = world_at(enemy.global_position)
 	add_child(actor)
 	_contact_shadow(actor).position.y = 0.018
-	_billboard(actor, 0.0187).name = "Body"
+	var top := 0.83
+	if Enemy3D.MODELS.has(enemy.type_id):  # 有 3D 模型的敌人（尸鬼、冰霜精魂）；模型挂在场景下，敌人死后还要留着播倒地
+		var model := Enemy3D.new()
+		model.name = "Foe3D"
+		add_child(model, true)
+		model.setup(enemy.type_id, _sun)
+		model.configure(enemy)
+		actor.set_meta("model", model)
+		top = model.head_height() + 0.16
+	else:
+		_billboard(actor, 0.0187).name = "Body"
 	_ring(actor, 0.22, Color("#a64f477c"), 0.013)
-	var hp := _beam(actor, Vector3(0, 0.83, -0.30), Vector3(0.33, 0.027, 0.035), Color("#ff8270"))
+	var hp := _beam(actor, Vector3(0, top, -0.30), Vector3(0.33, 0.027, 0.035), Color("#ff8270"))
 	hp.name = "Health"
 	hp.hide()
 	if enemy.type_id == "ice_spirit":
@@ -160,13 +176,20 @@ func track(enemy: Enemy) -> void:
 func _forget(enemy: Enemy, actor: Node3D) -> void:
 	_actors.erase(enemy)
 	if is_instance_valid(actor):
+		var model: Enemy3D = actor.get_meta("model", null)
+		if is_instance_valid(model) and not model.dying:
+			model.queue_free()
 		actor.queue_free()
 
 
 func _foe_fell(enemy: Enemy) -> void:
 	if _actors.has(enemy):
-		_actors[enemy].set_meta("hp", enemy.hp)
+		var actor := _actors[enemy]
+		actor.set_meta("hp", enemy.hp)
 		_hit(enemy.global_position, true)
+		var model: Enemy3D = actor.get_meta("model", null)
+		if is_instance_valid(model):
+			model.die(player.global_position.direction_to(enemy.global_position))
 
 
 func set_approach_seal(visible_seal: bool) -> void:
@@ -246,11 +269,11 @@ func _process(delta: float) -> void:
 		_sync_enemy(enemy, _actors[enemy])
 	for shot: EnemyProjectile in get_tree().get_nodes_in_group("enemy_projectiles"):
 		if not _shots.has(shot):
-			var projectile := _beam(self, Vector3.ZERO, Vector3(0.09, 0.09, 0.29), ICE)
+			var projectile := _ice_shard()
 			_shots[shot] = projectile
 			shot.tree_exiting.connect(_forget_shot.bind(shot, projectile))
 		var visual := _shots[shot]
-		visual.position = world_at(shot.global_position) + Vector3.UP * 0.26
+		visual.position = world_at(shot.global_position) + Vector3.UP * 0.72  # 精魂胸口的高度
 		visual.rotation.y = atan2(shot.direction.x, shot.direction.y)
 
 
@@ -275,10 +298,52 @@ func _contact_shadow(parent: Node3D) -> MeshInstance3D:
 	return shadow
 
 
-func _forget_shot(shot: EnemyProjectile, visual: MeshInstance3D) -> void:
+func _forget_shot(shot: EnemyProjectile, visual: Node3D) -> void:
 	_shots.erase(shot)
-	if is_instance_valid(visual):
+	if is_instance_valid(visual) and is_inside_tree() and not is_queued_for_deletion():
+		var trail := visual.get_node("Trail") as CPUParticles3D  # 冰棱碎掉时尾迹留一下再消失
+		trail.emitting = false
+		trail.reparent(self)
+		get_tree().create_timer(trail.lifetime).timeout.connect(trail.queue_free)
 		visual.queue_free()
+
+
+## 冰霜精魂射出的冰棱：发亮的尖锥（亮度超过泛光阈值），后面拖一串冷雾
+func _ice_shard() -> Node3D:
+	var shard := Node3D.new()
+	add_child(shard)
+	var cone := CylinderMesh.new()
+	cone.top_radius = 0.0
+	cone.bottom_radius = 0.055
+	cone.height = 0.34
+	cone.radial_segments = 5
+	cone.rings = 1
+	var tip := _mesh(shard, cone, Vector3.ZERO, Color(1.2, 1.55, 1.85))
+	tip.rotation.x = PI / 2.0  # 尖头朝 +Z（前进方向）
+	var trail := CPUParticles3D.new()
+	trail.name = "Trail"
+	trail.position.z = -0.12
+	trail.local_coords = false
+	trail.amount = 14
+	trail.lifetime = 0.35
+	trail.emission_shape = CPUParticles3D.EMISSION_SHAPE_SPHERE
+	trail.emission_sphere_radius = 0.03
+	trail.spread = 180.0
+	trail.gravity = Vector3.ZERO
+	trail.initial_velocity_min = 0.02
+	trail.initial_velocity_max = 0.12
+	var fade := Curve.new()
+	fade.add_point(Vector2(0.0, 1.0))
+	fade.add_point(Vector2(1.0, 0.0))
+	trail.scale_amount_curve = fade
+	var puff := QuadMesh.new()
+	puff.size = Vector2.ONE * 0.13
+	var material := Enemy3D.soft_material(Color("#cdeeffc0"), false)
+	material.billboard_mode = BaseMaterial3D.BILLBOARD_PARTICLES
+	puff.material = material
+	trail.mesh = puff
+	shard.add_child(trail)
+	return shard
 
 
 func _billboard(parent: Node3D, pixel_size: float) -> Sprite3D:
@@ -330,6 +395,40 @@ func _on_struck(direction: Vector2, heavy: bool, killed: bool) -> void:
 	_impact = maxf(_impact, 0.13 if heavy else (0.1 if killed else 0.075))
 
 
+## 剑士挨打：从打过来的方向在胸口迸出一簇暗红碎屑和一圈冲击波，镜头往挨打方向顿一下（不做全屏闪）
+func _on_player_hp(hp: float, _max_hp: float) -> void:
+	var lost := hp < _player_hp
+	_player_hp = hp
+	if not lost or hero.dead:
+		return
+	var from := player.global_position + Vector2.RIGHT
+	var best := INF
+	for enemy: Enemy in _actors:
+		var d := enemy.global_position.distance_squared_to(player.global_position)
+		if d < best:
+			best = d
+			from = enemy.global_position
+	var push := from.direction_to(player.global_position)
+	_impact_direction = Vector3(push.x, 0.0, push.y)
+	_impact = maxf(_impact, 0.12)
+	var burst := Node3D.new()
+	burst.position = world_at(player.global_position) - _impact_direction * 0.22 + Vector3.UP * 0.9  # 在挨打的那一侧，别被身体挡住
+	add_child(burst)
+	var scatter := burst.create_tween().set_parallel(true)
+	for i in 12:
+		var angle := push.angle() + randf_range(-0.9, 0.9)
+		var direction := Vector3(cos(angle), randf_range(-0.1, 0.5), sin(angle))
+		var bit := _beam(burst, direction * 0.05, Vector3(0.03, 0.03, randf_range(0.1, 0.2)), Color("#e0453a") if i % 3 else Color("#fff0e6"))
+		bit.rotation.y = atan2(direction.x, direction.z)
+		var life := randf_range(0.18, 0.32)
+		scatter.tween_property(bit, "position", direction * randf_range(0.3, 0.6), life).set_ease(Tween.EASE_OUT).set_trans(Tween.TRANS_CUBIC)
+		scatter.tween_property(bit, "scale", Vector3.ZERO, life).set_ease(Tween.EASE_IN)
+	var ring := _shockwave(burst, Color(1.0, 0.45, 0.38, 0.8))
+	scatter.tween_property(ring, "scale", Vector3.ONE * 2.6, 0.2).from(Vector3.ONE * 0.5).set_ease(Tween.EASE_OUT)
+	scatter.tween_property(ring.material_override, "albedo_color:a", 0.0, 0.2)
+	scatter.chain().tween_callback(burst.queue_free)
+
+
 func _sync_hero(delta: float) -> void:
 	var at := world_at(player.global_position)
 	if hero.dead and not player.is_dead:
@@ -341,6 +440,20 @@ func _sync_hero(delta: float) -> void:
 
 func _sync_enemy(enemy: Enemy, actor: Node3D) -> void:
 	actor.position = world_at(enemy.global_position)
+	var model: Enemy3D = actor.get_meta("model", null)
+	var hp := actor.get_node("Health") as MeshInstance3D
+	hp.visible = enemy.hp < enemy.max_hp and enemy.hp > 0.0
+	hp.scale.x = maxf(0.01, enemy.hp / enemy.max_hp)
+	if enemy.hp < float(actor.get_meta("hp")):
+		_hit(enemy.global_position, false)
+		if model:
+			model.react()
+	actor.set_meta("hp", enemy.hp)
+	if actor.has_node("Cast"):
+		actor.get_node("Cast").visible = enemy._casting
+	if model:
+		model.sync(enemy, actor.position, get_process_delta_time())
+		return
 	var anim := enemy._actions
 	var body := actor.get_node("Body") as Sprite3D
 	var texture := anim.sprite_frames.get_frame_texture(anim.animation, anim.frame) if anim else (enemy._sprite as Sprite2D).texture
@@ -349,14 +462,6 @@ func _sync_enemy(enemy: Enemy, actor: Node3D) -> void:
 	body.modulate = Color("#e2e8f4").lerp(Color(2.2, 2.1, 1.8), enemy.hit_flash())  # 受击闪白，逐渐褪去
 	var squash := enemy.hit_squash()
 	body.scale = Vector3(squash.x, squash.y, 1.0)
-	var hp := actor.get_node("Health") as MeshInstance3D
-	hp.visible = enemy.hp < enemy.max_hp and enemy.hp > 0.0
-	hp.scale.x = maxf(0.01, enemy.hp / enemy.max_hp)
-	if enemy.hp < float(actor.get_meta("hp")):
-		_hit(enemy.global_position, false)
-	actor.set_meta("hp", enemy.hp)
-	if actor.has_node("Cast"):
-		actor.get_node("Cast").visible = enemy._casting
 
 
 func show_slash(at: Vector2, direction: Vector2, radius: float, half_angle: float, critical: bool) -> void:

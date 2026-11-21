@@ -9,8 +9,8 @@ import webbrowser
 
 ROOT = Path(__file__).resolve().parent
 SITE = "enemy-3d"
-VERSION = 7
-ITEMS = {"draugr_idle", "draugr_walk", "draugr_attack", "draugr_other", "spirit_cast", "spirit_other"}
+VERSION = 8
+ITEMS = {"draugr_game", "spirit_game", "court_game"}
 STATES = {"pending", "approved", "revise", "rejected", "A", "B"}
 parser = ArgumentParser()
 parser.add_argument("--port", type=int, default=8776)

@@ -15,8 +15,14 @@ uniform vec3 key_dir = vec3(-0.47, 0.45, 0.76);  // 指向主光（世界坐标�
 uniform vec3 light_color : source_color = vec3(1.0, 0.96, 0.9);
 uniform vec3 shade_color : source_color = vec3(0.46, 0.52, 0.66);  // 冷灰蓝的墨色暗部
 uniform float exposure = 1.0;
+uniform vec4 rim_glow : source_color = vec4(0.0);  // 冰霜精魂：轮廓透出的冷光，a 为强度（亮到能触发泛光）
+// 死后风化：wither 0→1 先褪成墨灰，dissolve 0→1 再按噪声从贴地处往上一块块化掉（discard，仍是不透明物体）
+uniform float wither : hint_range(0.0, 1.0) = 0.0;
+uniform float dissolve : hint_range(0.0, 1.0) = 0.0;
+uniform vec3 dissolve_edge : source_color = vec3(0.86, 0.9, 0.97);  // 化开的边缘是纸白 / 雪色，不发光
 
 varying vec3 local_pos;
+varying vec3 world_pos;
 
 float hash(vec3 p) {
 	p = fract(p * 0.3183099 + 0.1);
@@ -35,10 +41,21 @@ float noise(vec3 x) {
 }
 
 void vertex() {
-	local_pos = (MODEL_MATRIX * vec4(VERTEX, 1.0)).xyz - NODE_POSITION_WORLD;  // 世界单位
+	world_pos = (MODEL_MATRIX * vec4(VERTEX, 1.0)).xyz;
+	local_pos = world_pos - NODE_POSITION_WORLD;  // 世界单位
 }
 
 void fragment() {
+	float edge_band = 0.0;
+	if (dissolve > 0.0) {
+		// 斑块约 0.15 单位宽；越贴地越先化（倒地的尸体最高约 0.6）
+		float v = (noise(world_pos * 6.5) * 0.6 + noise(world_pos * 19.0) * 0.4) * 0.72 + clamp(world_pos.y / 0.6, 0.0, 1.0) * 0.28;
+		float cut = dissolve < 0.999 ? mix(0.2, 0.8, dissolve) : 2.0;  // 噪声值大多落在 0.2–0.8，按这段映射才是匀速化开
+		if (v < cut) {
+			discard;
+		}
+		edge_band = 1.0 - smoothstep(cut, cut + 0.05, v);
+	}
 	vec3 c = base_color.rgb;
 	if (use_texture) {
 		c *= texture(albedo_tex, UV).rgb;
@@ -55,5 +72,9 @@ void fragment() {
 	// 两级柔和的明暗：像水墨的两遍染色，而不是连续的渐变
 	float band = smoothstep(0.28, 0.40, wrap) * 0.55 + smoothstep(0.60, 0.72, wrap) * 0.45;
 	c *= mix(shade_color, light_color, band) * exposure;
+	c += rim_glow.rgb * rim_glow.a * 1.6 * smoothstep(0.45, 0.95, rim);
+	float ink_grey = dot(c, vec3(0.299, 0.587, 0.114));
+	c = mix(c, vec3(ink_grey) * vec3(0.78, 0.82, 0.9), wither * 0.75);
+	c = mix(c, dissolve_edge, edge_band);
 	ALBEDO = mix(c, flash.rgb, flash.a);
 }

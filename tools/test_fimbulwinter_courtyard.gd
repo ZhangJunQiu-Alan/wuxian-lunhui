@@ -166,10 +166,36 @@ func _run() -> void:
 	_check(_hero_ran, "the 3D swordsman plays its run while moving")
 	_check(_room.phase == _room.Phase.APPROACH_FIGHT and get_node_count_in_group("enemies") == 3, "three ordinary foes appear along the snowcliff approach")
 	_check(_room.stage._approach_seal.visible and not _room.stage.entrance_sealed, "the approach fight precedes the main courtyard's gate")
+	var foes_3d: Array[Node] = _room.stage.find_children("Foe3D*", "", false, false)
+	_check(foes_3d.size() == 3 and foes_3d.all(func(f: Node) -> bool: return f.has_model()), "the approach foes are 3D models (%d)" % foes_3d.size())
+	_check(not _room.stage.find_children("Body", "Sprite3D", true, false).any(func(b: Node) -> bool: return b.visible and b.texture != null),
+		"no pixel billboards remain for the draugr and the ice spirit")
+	for foe: Node in foes_3d:
+		var wanted: Array = ["idle", "walk", "attack", "hit", "death"] if foe.type_id == "draugr" else ["idle", "cast", "hit", "death"]
+		_check(wanted.all(func(a: String) -> bool: return foe.anim.has_animation(a)), "the 3D %s carries its actions" % foe.type_id)
+	await _wait(0.6)
+	_check(foes_3d.any(func(f: Node) -> bool: return f.type_id == "draugr" and f.anim.current_animation in ["walk", "attack"]), "a draugr marches toward the player")
 	await _capture("approach-fight")
+	var spears_before: int = _room.stage.Enemy3D.spears_dropped
+	var lancer: Node2D = get_nodes_in_group("enemies").filter(func(e: Node) -> bool: return e.type_id == "draugr")[0]
+	lancer.position = _room.player.position + Vector2(-lancer.attack_reach * 0.95, 0)  # 矛尖刚好够得着的距离
+	lancer._attack_cd = 0.0
+	await _wait(0.05)
+	_check(lancer._attack_t > 0.0 and lancer.position.distance_to(_room.player.position) > lancer.radius + _room.player.RADIUS + 30.0,
+		"the draugr thrusts from spear reach instead of closing to contact")
+	_check(lancer.attack_reach > 170.0, "the reach matches the measured spear tip (%.0f px)" % lancer.attack_reach)
+	var hp_before: float = _room.player.hp
+	await _wait(lancer.attack_time * lancer.attack_strike + 0.05)
+	_check(_room.player.hp < hp_before, "the spear thrust lands at its tip (hp %.0f -> %.0f)" % [hp_before, _room.player.hp])
+	_check(not _room.hud._hurt_flash.visible and _room.stage.get_children().any(func(n: Node) -> bool: return n is Node3D and n.get_child_count() > 10 and n.get_child(0) is MeshInstance3D),
+		"getting hit shows 3D shards at the swordsman instead of a full-screen red flash")
 	_check(collision_grid.push_out(Vector2(-1947,-336), _room.player.RADIUS).distance_to(Vector2(-1947,-336)) > 20.0,
 		"the stone parapet and its collision share the same path")
 	await _fight()
+	_check(_room.stage.find_children("Foe3D*", "", false, false).any(func(f: Node) -> bool: return f.dying), "a slain foe stays to play its fall")
+	await _wait(1.5)
+	_check(_room.stage.Enemy3D.spears_dropped - spears_before == 2, "both slain draugr let go of their spears")
+	await _capture("fallen")
 	_check(_room.phase == _room.Phase.COURT_ENTRY and _room.kills == 3 and not _room.stage._approach_seal.visible,
 		"clearing the approach opens the path to the courtyard (at %s)" % _room.player.position)
 	await _advance(-960.0, 760)

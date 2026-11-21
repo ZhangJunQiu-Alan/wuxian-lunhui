@@ -373,8 +373,6 @@ func _unhandled_input(event: InputEvent) -> void:
 func strike_impact(direction: Vector2, heavy: bool, killed: bool, stop: float) -> void:
 	HitStop.hit(self, stop * (2.6 if heavy else (1.35 if killed else 1.0)))
 	shake(6.0 if heavy else 2.6, 0.2 if heavy else 0.12)
-	if heavy:
-		ImpactFrame.play(self)
 	Audio.sfx("hit_thump", -4.0 if heavy or killed else -9.0, 0.1)  # 低频闷击层，叠在挥刀声（高频）和受击声（中频）下面
 	struck.emit(direction, heavy, killed)
 

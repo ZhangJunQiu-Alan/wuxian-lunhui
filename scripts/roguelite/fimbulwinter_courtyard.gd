@@ -67,6 +67,7 @@ func _ready() -> void:
 	hud._ult_bar.hide()
 	hud._ult_label.hide()
 	hud._level_label.hide()
+	hud._hurt_flash.hide()  # 不要全屏泛红；挨打由 3D 剑士闪红、受击动作和胸口迸出的碎屑提示（stage._on_player_hp）
 	UiKit.style_bar(hud._hp_bar, Color("#a85048"))
 	_objective = _caption(tr("沿雪崖前行"), 52, true, 17, Color("#e4eaf4"))
 	_caption(tr("芬布尔之冬 · 冻石庭院"), 21, true, 20, Color("#ffda9d"))
